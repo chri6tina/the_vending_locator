@@ -166,7 +166,7 @@ p {
 /* Hero Section */
 .hero {
     background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
-    padding: 120px 0 80px;
+    padding: 140px 0 100px;
     position: relative;
     overflow: hidden;
 }
@@ -178,8 +178,11 @@ p {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="%23f1f5f9" opacity="0.3"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
-    opacity: 0.5;
+    background: 
+        radial-gradient(circle at 20% 80%, rgba(96, 165, 250, 0.03) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(59, 130, 246, 0.03) 0%, transparent 50%),
+        radial-gradient(circle at 40% 40%, rgba(147, 197, 253, 0.02) 0%, transparent 50%);
+    opacity: 1;
 }
 
 .hero-container {
@@ -196,77 +199,121 @@ p {
 
 .hero-content {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1100px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 .hero-badge {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
-    background: rgba(96, 165, 250, 0.1);
-    color: #60a5fa;
-    padding: 8px 16px;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    font-weight: 500;
-    border: 1px solid rgba(96, 165, 250, 0.2);
+    gap: 10px;
+    background: linear-gradient(135deg, rgba(96, 165, 250, 0.08) 0%, rgba(59, 130, 246, 0.08) 100%);
+    color: #3b82f6;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border: 1px solid rgba(59, 130, 246, 0.15);
     margin: 0 auto;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(59, 130, 246, 0.1);
+    transition: all 0.3s ease;
+}
+
+.hero-badge:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(59, 130, 246, 0.15);
 }
 
 .badge-icon {
-    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    color: #3b82f6;
+    font-size: 0.9rem;
 }
 
 .hero-title {
-    font-size: 3.2rem;
-    font-weight: 700;
-    color: #2c3e50;
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #1e293b;
     line-height: 1.1;
     text-align: center;
     margin: 0;
+    letter-spacing: -0.02em;
 }
 
 .highlight {
-    color: #60a5fa;
+    color: #3b82f6;
+    position: relative;
+}
+
+.highlight::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #3b82f6, #60a5fa);
+    border-radius: 2px;
+    opacity: 0.3;
 }
 
 .hero-subtitle {
-    font-size: 1.2rem;
-    color: #5a6c7d;
-    line-height: 1.6;
-    max-width: 800px;
+    font-size: 1.25rem;
+    color: #64748b;
+    line-height: 1.7;
+    max-width: 900px;
     text-align: center;
     margin: 0;
+    font-weight: 400;
 }
 
 .hero-stats {
     display: flex;
     justify-content: center;
-    gap: 3rem;
+    gap: 4rem;
     margin: 0;
+    padding: 2rem 0;
 }
 
 .stat {
     text-align: center;
+    padding: 1.5rem 2rem;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 16px;
+    border: 1px solid rgba(226, 232, 240, 0.8);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.stat:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
 }
 
 .stat-number {
     display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    color: #60a5fa;
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #3b82f6;
     margin-bottom: 0.5rem;
+    letter-spacing: -0.02em;
 }
 
 .stat-label {
     font-size: 0.9rem;
-    color: #5a6c7d;
-    font-weight: 500;
+    color: #64748b;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
 
 .hero-cta {
@@ -275,28 +322,30 @@ p {
 }
 
 .btn-large {
-    padding: 16px 32px;
-    font-size: 1.1rem;
-    background: #60a5fa;
+    padding: 18px 36px;
+    font-size: 1.15rem;
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
     color: white;
     border: none;
-    border-radius: 25px;
-    font-weight: 600;
+    border-radius: 30px;
+    font-weight: 700;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 12px rgba(96, 165, 250, 0.3);
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);
+    letter-spacing: 0.02em;
 }
 
 .btn-large:hover {
-    background: #3b82f6;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(96, 165, 250, 0.4);
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(59, 130, 246, 0.4);
 }
 
 .cta-note {
     font-size: 0.9rem;
-    color: #94a3b8;
-    margin-top: 1rem;
+    color: #64748b;
+    margin-top: 1.5rem;
+    font-weight: 500;
 }
 
 .hero-social-proof {
@@ -310,12 +359,18 @@ p {
     display: flex;
     align-items: center;
     gap: 1rem;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 1rem 1.5rem;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 1.25rem 2rem;
     border-radius: 50px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(96, 165, 250, 0.1);
-    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(226, 232, 240, 0.8);
+    backdrop-filter: blur(15px);
+    transition: all 0.3s ease;
+}
+
+.live-counter:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
 }
 
 .counter-icon {
