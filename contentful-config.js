@@ -1,7 +1,7 @@
 // Contentful Configuration
 const CONTENTFUL_CONFIG = {
-    spaceId: 'your-space-id', // Replace with your actual space ID
-    accessToken: 'your-access-token', // Replace with your actual access token
+    spaceId: 'xpopyri6s8gv', // Your Contentful Space ID
+    accessToken: 'as1yT7ZCd27_ByA_MBu0lzJDQZVWmxafx2mfM-c9ooY', // Your Contentful Access Token
     environment: 'master'
 };
 
