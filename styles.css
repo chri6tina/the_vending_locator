@@ -47,9 +47,9 @@ p {
     color: #5a6c7d;
 }
 
-/* Buttons - Darker Pastel Blue Theme */
+/* Buttons - Green Theme */
 .btn-primary {
-    background: #60a5fa;
+    background: #5ada86;
     color: #ffffff;
     padding: 12px 24px;
     border: none;
@@ -60,20 +60,20 @@ p {
     transition: all 0.3s ease;
     cursor: pointer;
     font-size: 1rem;
-    box-shadow: 0 2px 4px rgba(96, 165, 250, 0.2);
+    box-shadow: 0 2px 4px rgba(90, 218, 134, 0.2);
 }
 
 .btn-primary:hover {
-    background: #3b82f6;
+    background: #4ac775;
     transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(96, 165, 250, 0.3);
+    box-shadow: 0 4px 12px rgba(90, 218, 134, 0.3);
 }
 
 .btn-secondary {
     background: transparent;
-    color: #60a5fa;
+    color: #5ada86;
     padding: 12px 24px;
-    border: 2px solid #60a5fa;
+    border: 2px solid #5ada86;
     border-radius: 20px;
     font-weight: 600;
     text-decoration: none;
@@ -84,7 +84,7 @@ p {
 }
 
 .btn-secondary:hover {
-    background: #60a5fa;
+    background: #5ada86;
     color: white;
     transform: translateY(-1px);
 }
@@ -132,11 +132,11 @@ p {
 
 .nav-link:hover,
 .nav-link.active {
-    color: #60a5fa;
+    color: #5ada86;
 }
 
 .btn-get-started {
-    background: #60a5fa;
+    background: #5ada86;
     color: white;
     padding: 8px 16px;
     border-radius: 15px;
@@ -145,7 +145,7 @@ p {
 }
 
 .btn-get-started:hover {
-    background: #3b82f6;
+    background: #4ac775;
     transform: translateY(-1px);
 }
 
@@ -200,14 +200,14 @@ p {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: rgba(96, 165, 250, 0.1);
-    color: #60a5fa;
+    background: rgba(90, 218, 134, 0.1);
+    color: #5ada86;
     padding: 8px 16px;
     border-radius: 20px;
     font-size: 0.9rem;
     font-weight: 500;
     margin-bottom: 2rem;
-    border: 1px solid rgba(96, 165, 250, 0.2);
+    border: 1px solid rgba(90, 218, 134, 0.2);
 }
 
 .badge-icon {
@@ -223,7 +223,7 @@ p {
 }
 
 .highlight {
-    color: #60a5fa;
+    color: #5ada86;
 }
 
 .hero-subtitle {
@@ -413,8 +413,8 @@ p {
 
 .form-group input:focus {
     outline: none;
-    border-color: #60a5fa;
-    box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.1);
+    border-color: #5ada86;
+    box-shadow: 0 0 0 3px rgba(90, 218, 134, 0.1);
 }
 
 /* How It Works Section */
@@ -458,18 +458,18 @@ p {
 .step-icon {
     width: 80px;
     height: 80px;
-    background: rgba(96, 165, 250, 0.1);
+    background: rgba(90, 218, 134, 0.1);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto 1.5rem;
-    border: 2px solid #60a5fa;
+    border: 2px solid #5ada86;
 }
 
 .step-icon i {
     font-size: 2rem;
-    color: #60a5fa;
+    color: #5ada86;
 }
 
 .step h3 {
@@ -510,18 +510,18 @@ p {
 .benefit-icon {
     width: 80px;
     height: 80px;
-    background: rgba(96, 165, 250, 0.1);
+    background: rgba(90, 218, 134, 0.1);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto 1.5rem;
-    border: 2px solid #60a5fa;
+    border: 2px solid #5ada86;
 }
 
 .benefit-icon i {
     font-size: 2rem;
-    color: #60a5fa;
+    color: #5ada86;
 }
 
 .benefit-card h3 {
