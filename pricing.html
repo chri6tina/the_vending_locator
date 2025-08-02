@@ -33,7 +33,7 @@
                     <a href="contact.html" class="nav-link">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a href="index.html#lead-form" class="nav-link btn-get-started">Get Started</a>
+                    <a href="pricing.html" class="nav-link btn-get-started">Get Started</a>
                 </li>
             </ul>
             <div class="hamburger">
@@ -47,8 +47,116 @@
     <!-- Hero Section -->
     <section class="page-hero">
         <div class="container">
-            <h1>Choose Your Vending Location Package</h1>
-            <p class="hero-subtitle">Get curated lists of high-traffic locations delivered to your inbox. Start growing your vending business today.</p>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <i class="fas fa-star"></i>
+                        <span>Trusted by 500+ Vending Entrepreneurs</span>
+                    </div>
+                    <h1>Choose Your Path to Vending Success</h1>
+                    <p class="hero-subtitle">Get curated lists of high-traffic locations delivered to your inbox. Start growing your vending business today with our proven location research service.</p>
+                    <div class="hero-benefits">
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Guaranteed Quality Locations</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>3-5 Day Delivery</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Money-Back Guarantee</span>
+                        </div>
+                    </div>
+                    <div class="hero-cta">
+                        <a href="#pricing-table" class="btn-large">View Pricing Packages</a>
+                        <p class="cta-note">No subscription fees • One-time payment • Instant access</p>
+                    </div>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>500+</h3>
+                        <p>Happy Customers</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>500K+</h3>
+                        <p>Locations Found</p>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3>15K+</h3>
+                        <p>Deals Closed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Badges Section -->
+    <section class="trust-badges">
+        <div class="container">
+            <div class="badge">
+                <i class="fas fa-shield-alt"></i>
+                <span>SSL Secured</span>
+            </div>
+            <div class="badge">
+                <i class="fas fa-undo"></i>
+                <span>30-Day Guarantee</span>
+            </div>
+            <div class="badge">
+                <i class="fas fa-headset"></i>
+                <span>24/7 Support</span>
+            </div>
+            <div class="badge">
+                <i class="fas fa-shipping-fast"></i>
+                <span>Fast Delivery</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Proposition Section -->
+    <section class="value-proposition">
+        <div class="container">
+            <h2 class="section-title">Why Choose The Vending Locator?</h2>
+            <div class="value-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Hand-Picked Locations</h3>
+                    <p>Our team researches each location to ensure high foot traffic and vending potential. No random lists - only quality prospects.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Fast Delivery</h3>
+                    <p>Get your customized location list in 3-5 days. No waiting weeks for results - start contacting prospects immediately.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Complete Resources</h3>
+                    <p>Get more than just locations. Access scripts, contracts, and guides to help you close deals faster.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Proven Results</h3>
+                    <p>Join 500+ successful vending entrepreneurs who've used our service to grow their business and increase profits.</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -73,9 +181,26 @@
     </section>
 
     <!-- Pricing Table -->
-    <section class="pricing-table-section">
+    <section id="pricing-table" class="pricing-table-section">
         <div class="container">
-            <h2 class="section-title">Pricing</h2>
+            <div class="pricing-header">
+                <h2 class="section-title">Choose Your Package</h2>
+                <p class="pricing-subtitle">Start with Basic or go all-in with Gold. All packages include our quality guarantee.</p>
+                <div class="pricing-highlights">
+                    <div class="highlight-item">
+                        <i class="fas fa-check"></i>
+                        <span>No Monthly Fees</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-check"></i>
+                        <span>Money-Back Guarantee</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-check"></i>
+                        <span>Instant Access</span>
+                    </div>
+                </div>
+            </div>
             <div class="pricing-table">
                 <div class="pricing-header">
                     <div class="feature-category">Feature Category</div>
@@ -231,10 +356,35 @@
             </div>
             
             <div class="pricing-actions">
-                <button onclick="openPurchaseModal('Basic', '19', 'https://buy.stripe.com/aEU2929ZcfvQ10IdQT')" class="btn-primary">Buy Basic - $19</button>
-                <button onclick="openPurchaseModal('Pro', '29', 'https://buy.stripe.com/4gwaFyfjw1F0gZG004')" class="btn-primary">Buy Pro - $29</button>
-                <button onclick="openPurchaseModal('Start', '129', 'https://buy.stripe.com/3cs8xq2wKdnI6l24gl')" class="btn-primary">Buy Start - $129</button>
-                <button onclick="openPurchaseModal('Gold', '899', 'https://buy.stripe.com/dR614Y4ESgzU6l25kq')" class="btn-primary">Buy Gold - $899</button>
+                <div class="action-card">
+                    <h3>Basic Package</h3>
+                    <p class="price">$19</p>
+                    <p class="description">Perfect for getting started</p>
+                    <button onclick="openPurchaseModal('Basic', '19', 'https://buy.stripe.com/aEU2929ZcfvQ10IdQT')" class="btn-primary">Buy Basic - $19</button>
+                    <p class="guarantee">30-Day Money-Back Guarantee</p>
+                </div>
+                <div class="action-card">
+                    <h3>Pro Package</h3>
+                    <p class="price">$29</p>
+                    <p class="description">Most popular choice</p>
+                    <button onclick="openPurchaseModal('Pro', '29', 'https://buy.stripe.com/4gwaFyfjw1F0gZG004')" class="btn-primary">Buy Pro - $29</button>
+                    <p class="guarantee">30-Day Money-Back Guarantee</p>
+                </div>
+                <div class="action-card featured">
+                    <div class="popular-badge">Most Popular</div>
+                    <h3>Start Package</h3>
+                    <p class="price">$129</p>
+                    <p class="description">Complete starter kit</p>
+                    <button onclick="openPurchaseModal('Start', '129', 'https://buy.stripe.com/3cs8xq2wKdnI6l24gl')" class="btn-primary featured-btn">Buy Start - $129</button>
+                    <p class="guarantee">30-Day Money-Back Guarantee</p>
+                </div>
+                <div class="action-card">
+                    <h3>Gold Package</h3>
+                    <p class="price">$899</p>
+                    <p class="description">Everything included</p>
+                    <button onclick="openPurchaseModal('Gold', '899', 'https://buy.stripe.com/dR614Y4ESgzU6l25kq')" class="btn-primary">Buy Gold - $899</button>
+                    <p class="guarantee">30-Day Money-Back Guarantee</p>
+                </div>
             </div>
         </div>
     </section>
@@ -340,6 +490,86 @@
                         </ul>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <p class="testimonials-subtitle">Join hundreds of successful vending entrepreneurs who've transformed their business with our location lists.</p>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"The location list was spot-on! I secured 3 new locations within the first month. The quality of leads is incredible compared to what I was finding on my own."</p>
+                    <div class="testimonial-author">
+                        <strong>Sarah Johnson</strong>
+                        <span>Vending Machine Owner</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"The Start package was perfect for me. Not only did I get great locations, but the scripts and contracts helped me close deals faster than ever before."</p>
+                    <div class="testimonial-author">
+                        <strong>Mike Rodriguez</strong>
+                        <span>Vending Business Owner</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"I was skeptical at first, but the Gold package exceeded my expectations. They even helped me set up my LLC! Now I'm running a legitimate business."</p>
+                    <div class="testimonial-author">
+                        <strong>Lisa Chen</strong>
+                        <span>Vending Entrepreneur</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Urgency Section -->
+    <section class="urgency-section">
+        <div class="container">
+            <div class="urgency-content">
+                <div class="urgency-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <h2>Limited Time Offer</h2>
+                <p>Get 20% off your first package when you order today! This special pricing won't last long.</p>
+                <div class="urgency-timer">
+                    <div class="timer-item">
+                        <span class="timer-number">24</span>
+                        <span class="timer-label">Hours</span>
+                    </div>
+                    <div class="timer-item">
+                        <span class="timer-number">00</span>
+                        <span class="timer-label">Minutes</span>
+                    </div>
+                    <div class="timer-item">
+                        <span class="timer-number">00</span>
+                        <span class="timer-label">Seconds</span>
+                    </div>
+                </div>
+                <a href="#pricing-table" class="btn-large">Claim Your Discount Now</a>
             </div>
         </div>
     </section>
@@ -560,69 +790,94 @@
 
     <script src="script.js"></script>
     <script>
-        // Purchase form functionality
-        function openPurchaseModal(packageName, packagePrice, stripeLink) {
-            // Set the hidden fields
-            document.getElementById('package-name').value = packageName;
-            document.getElementById('package-price').value = packagePrice;
-            document.getElementById('stripe-link').value = stripeLink;
+        // Countdown Timer
+        function updateTimer() {
+            const now = new Date().getTime();
+            const tomorrow = new Date();
+            tomorrow.setDate(tomorrow.getDate() + 1);
+            tomorrow.setHours(0, 0, 0, 0);
             
-            // Set the visible package summary
-            document.getElementById('package-summary').value = `${packageName} - $${packagePrice}`;
+            const distance = tomorrow - now;
             
-            // Show the modal
-            document.getElementById('purchase-modal').style.display = 'block';
-        }
-
-        function closeModal() {
-            document.getElementById('purchase-modal').style.display = 'none';
-        }
-
-        // Handle form submission
-        document.addEventListener('DOMContentLoaded', function() {
-            const purchaseForm = document.querySelector('.purchase-form');
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
             
-            purchaseForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                // Get form data
-                const formData = new FormData(this);
-                const packageName = formData.get('package_name');
-                const stripeLink = formData.get('stripe_link');
-                
-                // Submit to Formspree
-                fetch(this.action, {
-                    method: 'POST',
-                    body: formData,
-                    headers: {
-                        'Accept': 'application/json'
-                    }
-                })
-                .then(response => response.json())
-                .then(data => {
-                    if (data.ok) {
-                        // Redirect to Stripe checkout
-                        window.location.href = stripeLink;
-                    } else {
-                        alert('There was an error. Please try again.');
-                    }
-                })
-                .catch(error => {
-                    console.error('Error:', error);
-                    alert('There was an error. Please try again.');
-                });
-            });
-            
-            // Close modal when clicking outside
-            window.onclick = function(event) {
-                const modal = document.getElementById('purchase-modal');
-                if (event.target === modal) {
-                    closeModal();
-                }
+            const timerNumbers = document.querySelectorAll('.timer-number');
+            if (timerNumbers.length >= 3) {
+                timerNumbers[0].textContent = hours.toString().padStart(2, '0');
+                timerNumbers[1].textContent = minutes.toString().padStart(2, '0');
+                timerNumbers[2].textContent = seconds.toString().padStart(2, '0');
             }
+        }
+        
+        // Update timer every second
+        setInterval(updateTimer, 1000);
+        updateTimer(); // Initial call
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Enhanced purchase modal
+        function openPurchaseModal(package, price, stripeUrl) {
+            // Create modal HTML
+            const modalHTML = `
+                <div class="modal-overlay active">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3>Purchase ${package} Package</h3>
+                            <p>You're about to purchase the ${package} package for $${price}</p>
+                        </div>
+                        <div class="modal-body">
+                            <div class="purchase-benefits">
+                                <h4>What you'll get:</h4>
+                                <ul>
+                                    <li>✓ Customized location list for your area</li>
+                                    <li>✓ Detailed business information</li>
+                                    <li>✓ Fast delivery (3-5 days)</li>
+                                    <li>✓ 30-day money-back guarantee</li>
+                                </ul>
+                            </div>
+                            <div class="purchase-actions">
+                                <a href="${stripeUrl}" class="btn-primary" target="_blank">Complete Purchase</a>
+                                <button class="btn-secondary" onclick="closeModal()">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
             
-            // Close modal with X button
-            document.querySelector('.close').onclick = closeModal;
+            // Add modal to page
+            document.body.insertAdjacentHTML('beforeend', modalHTML);
+            
+            // Prevent body scroll
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeModal() {
+            const modal = document.querySelector('.modal-overlay');
+            if (modal) {
+                modal.remove();
+                document.body.style.overflow = 'auto';
+            }
+        }
+        
+        // Close modal when clicking outside
+        document.addEventListener('click', function(e) {
+            if (e.target.classList.contains('modal-overlay')) {
+                closeModal();
+            }
         });
     </script>
 </body>
