@@ -5140,3 +5140,347 @@ p {
         flex-direction: column;
     }
 }
+
+/* Enhanced Pricing Table - More Prominent */
+.pricing-table-section {
+    background: #ffffff;
+    padding: 60px 0;
+    margin-top: 40px;
+}
+
+.pricing-table {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-top: 2rem;
+    border: 1px solid #e2e8f0;
+}
+
+.pricing-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.pricing-subtitle {
+    font-size: 1.1rem;
+    color: #64748b;
+    margin-bottom: 1.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pricing-highlights {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+}
+
+.highlight-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(96, 165, 250, 0.1);
+    color: #60a5fa;
+    padding: 6px 12px;
+    border-radius: 16px;
+    font-weight: 500;
+    font-size: 0.85rem;
+}
+
+.highlight-item i {
+    font-size: 0.75rem;
+}
+
+/* Enhanced Action Cards - More Focused */
+.pricing-actions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.action-card {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    border: 2px solid #f1f5f9;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+.action-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.action-card.featured {
+    border-color: #60a5fa;
+    box-shadow: 0 4px 20px rgba(96, 165, 250, 0.15);
+}
+
+.popular-badge {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #60a5fa;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.action-card h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.action-card .price {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #60a5fa;
+    margin-bottom: 0.5rem;
+}
+
+.action-card .description {
+    color: #64748b;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.action-card .btn-primary {
+    width: 100%;
+    margin-bottom: 0.75rem;
+    padding: 12px 20px;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.featured-btn {
+    background: #60a5fa !important;
+    color: white !important;
+    box-shadow: 0 2px 8px rgba(96, 165, 250, 0.3) !important;
+}
+
+.featured-btn:hover {
+    background: #3b82f6 !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 12px rgba(96, 165, 250, 0.4) !important;
+}
+
+.action-card .guarantee {
+    font-size: 0.75rem;
+    color: #94a3b8;
+    margin: 0;
+}
+
+/* Streamlined Hero Section */
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 3rem;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-text {
+    text-align: left;
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(96, 165, 250, 0.1);
+    color: #60a5fa;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(96, 165, 250, 0.2);
+}
+
+.hero-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+}
+
+.hero-subtitle {
+    font-size: 1.1rem;
+    color: #64748b;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    max-width: 500px;
+}
+
+.hero-cta {
+    margin-top: 1.5rem;
+}
+
+.cta-note {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    margin-top: 0.5rem;
+}
+
+/* Compact Trust Badges */
+.trust-badges {
+    background: #f8fafc;
+    padding: 30px 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.trust-badges .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.trust-badges .badge {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: #ffffff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+    font-weight: 500;
+    color: #475569;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.trust-badges .badge:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.trust-badges .badge i {
+    color: #60a5fa;
+    font-size: 1rem;
+}
+
+/* Compact Quick Stats */
+.quick-stats {
+    background: #ffffff;
+    padding: 30px 0;
+}
+
+.stats-row {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.quick-stats .stat-item h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #60a5fa;
+    margin-bottom: 0.25rem;
+}
+
+.quick-stats .stat-item p {
+    color: #64748b;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* Responsive Design Updates */
+@media (max-width: 768px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+    
+    .hero-title {
+        font-size: 2.2rem;
+    }
+    
+    .hero-subtitle {
+        max-width: 100%;
+    }
+    
+    .trust-badges .container {
+        gap: 1rem;
+    }
+    
+    .trust-badges .badge {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+    
+    .stats-row {
+        gap: 2rem;
+    }
+    
+    .pricing-highlights {
+        gap: 1rem;
+    }
+    
+    .highlight-item {
+        font-size: 0.8rem;
+        padding: 4px 10px;
+    }
+    
+    .pricing-actions {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .action-card {
+        padding: 1.25rem;
+    }
+    
+    .action-card .price {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .trust-badges .badge {
+        padding: 6px 10px;
+        font-size: 0.75rem;
+    }
+    
+    .stats-row {
+        gap: 1.5rem;
+    }
+    
+    .quick-stats .stat-item h3 {
+        font-size: 1.5rem;
+    }
+    
+    .action-card {
+        padding: 1rem;
+    }
+    
+    .action-card .price {
+        font-size: 1.6rem;
+    }
+}
