@@ -200,14 +200,14 @@ p {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: rgba(90, 218, 134, 0.1);
-    color: #5ada86;
+    background: rgba(96, 165, 250, 0.1);
+    color: #60a5fa;
     padding: 8px 16px;
     border-radius: 20px;
     font-size: 0.9rem;
     font-weight: 500;
     margin-bottom: 2rem;
-    border: 1px solid rgba(90, 218, 134, 0.2);
+    border: 1px solid rgba(96, 165, 250, 0.2);
 }
 
 .badge-icon {
@@ -458,18 +458,18 @@ p {
 .step-icon {
     width: 80px;
     height: 80px;
-    background: rgba(90, 218, 134, 0.1);
+    background: rgba(96, 165, 250, 0.1);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto 1.5rem;
-    border: 2px solid #5ada86;
+    border: 2px solid #60a5fa;
 }
 
 .step-icon i {
     font-size: 2rem;
-    color: #5ada86;
+    color: #60a5fa;
 }
 
 .step h3 {
@@ -510,18 +510,18 @@ p {
 .benefit-icon {
     width: 80px;
     height: 80px;
-    background: rgba(90, 218, 134, 0.1);
+    background: rgba(96, 165, 250, 0.1);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto 1.5rem;
-    border: 2px solid #5ada86;
+    border: 2px solid #60a5fa;
 }
 
 .benefit-icon i {
     font-size: 2rem;
-    color: #5ada86;
+    color: #60a5fa;
 }
 
 .benefit-card h3 {
