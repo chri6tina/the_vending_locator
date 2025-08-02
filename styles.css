@@ -2242,15 +2242,23 @@ p {
 }
 
 .social-icons a {
-    width: 40px;
+    width: auto;
     height: 40px;
     background: #f3f4f6;
-    border-radius: 50%;
+    border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #6b7280;
     transition: all 0.3s ease;
+    padding: 0 16px;
+    gap: 8px;
+    text-decoration: none;
+}
+
+.social-icons a span {
+    font-size: 0.9rem;
+    font-weight: 500;
 }
 
 .social-icons a:hover {
@@ -2433,16 +2441,23 @@ p {
 }
 
 .social-links a {
-    width: 40px;
+    width: auto;
     height: 40px;
     background: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
+    border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #ffffff;
     text-decoration: none;
     transition: all 0.3s ease;
+    padding: 0 16px;
+    gap: 8px;
+}
+
+.social-links a span {
+    font-size: 0.9rem;
+    font-weight: 500;
 }
 
 .social-links a:hover {
