@@ -1,0 +1,15 @@
+# Redirect .html extensions to clean URLs
+/index.html /index.html 200
+/pricing.html /pricing.html 200
+/services.html /services.html 200
+/blog.html /blog.html 200
+/contact.html /contact.html 200
+
+# Handle clean URLs
+/pricing /pricing.html 200
+/services /services.html 200
+/blog /blog.html 200
+/contact /contact.html 200
+
+# Redirect root to index
+/ /index.html 200 

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Colors Test</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .test-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .test-button {
+            margin: 10px;
+            padding: 15px 30px;
+            font-size: 18px;
+        }
+        .color-box {
+            width: 100px;
+            height: 100px;
+            margin: 20px auto;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>Green Colors Test</h1>
+        <p>If you see green buttons below, the colors are working!</p>
+        
+        <div class="color-box" style="background-color: #5ada86;">
+            #5ada86
+        </div>
+        
+        <button class="btn-primary test-button">Primary Green Button</button>
+        <button class="btn-secondary test-button">Secondary Green Button</button>
+        
+        <h2>Navigation Test</h2>
+        <nav>
+            <a href="#" class="nav-link">Home</a> |
+            <a href="#" class="nav-link">Services</a> |
+            <a href="#" class="nav-link">Pricing</a> |
+            <a href="#" class="nav-link">Contact</a>
+        </nav>
+        
+        <p><strong>Expected:</strong> Buttons should be green (#5ada86), navigation links should turn green on hover.</p>
+    </div>
+</body>
+</html> 
