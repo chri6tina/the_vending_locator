@@ -278,45 +278,83 @@ p {
 
 .hero-stats {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    margin: 0;
-    padding: 1rem 0;
+    margin: 2rem 0;
     flex-wrap: wrap;
+    max-width: 100%;
+    padding: 0 1rem;
 }
 
-.stat {
+.stat-circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    padding: 1rem 1.5rem;
-    background: rgba(255, 255, 255, 0.7);
-    border-radius: 16px;
-    border: 1px solid rgba(226, 232, 240, 0.8);
-    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    padding: 1.5rem;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(59, 130, 246, 0.1);
     transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
-.stat:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+.stat-circle::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.05) 0%, rgba(37, 99, 235, 0.05) 100%);
+    border-radius: 50%;
 }
 
-.stat-number {
-    display: block;
-    font-size: 1.6rem;
-    font-weight: 800;
+.stat-circle:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(59, 130, 246, 0.2);
+    border-color: rgba(59, 130, 246, 0.3);
+}
+
+.stat-circle-icon {
+    font-size: 1.5rem;
     color: #3b82f6;
-    margin-bottom: 0.25rem;
-    letter-spacing: -0.02em;
+    margin-bottom: 0.5rem;
+    position: relative;
+    z-index: 2;
 }
 
-.stat-label {
-    font-size: 0.8rem;
+.stat-circle-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.stat-circle-number {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #1e293b;
+    margin-bottom: 0.25rem;
+    line-height: 1.2;
+}
+
+.stat-circle-label {
+    font-size: 0.7rem;
     color: #64748b;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+    line-height: 1.2;
+    max-width: 80px;
 }
 
 .hero-cta {
@@ -2546,26 +2584,23 @@ p {
     }
 
     .hero-stats {
-        flex-direction: row;
         gap: 1rem;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin: 1rem 0;
+        margin: 1.5rem 0;
     }
-    
-    .stat {
-        padding: 0.5rem 0.75rem;
-        min-width: 100px;
-        max-width: 120px;
+
+    .stat-circle {
+        width: 100px;
+        height: 100px;
+        padding: 1rem;
     }
-    
-    .stat-number {
-        font-size: 1.3rem;
+
+    .stat-circle-number {
+        font-size: 1rem;
     }
-    
-    .stat-label {
-        font-size: 0.65rem;
-        line-height: 1.2;
+
+    .stat-circle-label {
+        font-size: 0.6rem;
+        max-width: 70px;
     }
 
     .pricing-cards {
@@ -2629,19 +2664,19 @@ p {
         margin: 0.75rem 0;
     }
 
-    .stat {
-        padding: 0.4rem 0.6rem;
-        min-width: 90px;
-        max-width: 110px;
+    .stat-circle {
+        width: 80px;
+        height: 80px;
+        padding: 0.75rem;
     }
 
-    .stat-number {
-        font-size: 1.2rem;
+    .stat-circle-number {
+        font-size: 0.9rem;
     }
 
-    .stat-label {
-        font-size: 0.6rem;
-        line-height: 1.1;
+    .stat-circle-label {
+        font-size: 0.55rem;
+        max-width: 60px;
     }
 
     .hero-badge {
@@ -4980,8 +5015,7 @@ p {
 
 .featured-btn:hover {
     background: #3b82f6 !important;
-    transform: translateY(-2px) !important;
-    box-shadow: 0 6px 20px rgba(96, 165, 250, 0.4) !important;
+    transform: scale(1.08) !important;
 }
 
 .action-card .guarantee {
