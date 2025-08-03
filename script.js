@@ -40,7 +40,7 @@ function updateLiveCounter() {
     setTimeout(() => {
         counter.textContent = newCount;
         counter.style.transform = 'scale(1)';
-        counter.style.color = '#3b82f6';
+        counter.style.color = '#2c3e50';
     }, 150);
 }
 
