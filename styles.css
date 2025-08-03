@@ -2530,8 +2530,8 @@ input:focus, textarea:focus, select:focus {
 .package-button .featured-btn::before {
     content: 'Most Popular';
     position: absolute;
-    top: -8px;
-    right: -8px;
+    top: -12px;
+    right: -12px;
     background: linear-gradient(135deg, var(--muted-orange), var(--coral-accent));
     color: white;
     padding: 4px 8px;
@@ -2539,6 +2539,7 @@ input:focus, textarea:focus, select:focus {
     font-size: 0.7rem;
     font-weight: 600;
     font-family: 'Inter', sans-serif;
+    z-index: 10;
 }
 
 .package-button .featured-btn:hover {
