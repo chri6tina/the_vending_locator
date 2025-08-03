@@ -565,41 +565,7 @@
         </div>
     </footer>
 
-    <!-- Purchase Form Modal -->
-    <div id="purchase-modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Complete Your Purchase</h2>
-            <p>Please provide your information to receive your vending location list.</p>
-            
-            <form action="https://formspree.io/f/xdkgqele" method="POST" class="purchase-form">
-                <!-- Hidden fields for package info -->
-                <input type="hidden" name="package_name" id="package-name">
-                <input type="hidden" name="package_price" id="package-price">
-                <input type="hidden" name="stripe_link" id="stripe-link">
-                
-                <div class="form-group">
-                    <label for="email">Email Address *</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="zipcode">Zip Code *</label>
-                    <input type="text" id="zipcode" name="zipcode" pattern="[0-9]{5}" placeholder="12345" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="package-summary">Selected Package</label>
-                    <input type="text" id="package-summary" readonly>
-                </div>
-                
-                <div class="form-actions">
-                    <button type="submit" class="btn-primary">Proceed to Payment</button>
-                    <button type="button" class="btn-secondary" onclick="closeModal()">Cancel</button>
-                </div>
-            </form>
-        </div>
-    </div>
+
 
     <script src="script.js"></script>
     <script>
@@ -642,9 +608,9 @@
             });
         });
         
-        // Enhanced purchase modal
+        // Enhanced purchase modal with Formspree integration
         function openPurchaseModal(package, price, stripeUrl) {
-            // Create modal HTML
+            // Create modal HTML with Formspree form
             const modalHTML = `
                 <div class="modal-overlay active">
                     <div class="modal-content">
@@ -653,29 +619,66 @@
                             <p>You're about to purchase the ${package} package for $${price}</p>
                         </div>
                         <div class="modal-body">
-                            <div class="purchase-benefits">
-                                <h4>What you'll get:</h4>
-                                <ul>
+                            <form action="https://formspree.io/f/xdkgqele" method="POST" class="purchase-form" id="purchase-form">
+                                <input type="hidden" name="package_name" value="${package}">
+                                <input type="hidden" name="package_price" value="${price}">
+                                <input type="hidden" name="stripe_link" value="${stripeUrl}">
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="zipcode">Zip Code *</label>
+                                    <input type="text" id="zipcode" name="zipcode" pattern="[0-9]{5}" placeholder="12345" required>
+                                </div>
+                                <ul style="margin: 1em 0;">
                                     <li>✓ Customized location list for your area</li>
                                     <li>✓ Detailed business information</li>
                                     <li>✓ Fast delivery (3-5 days)</li>
                                     <li>✓ 30-day money-back guarantee</li>
                                 </ul>
-                            </div>
-                            <div class="purchase-actions">
-                                <a href="${stripeUrl}" class="btn-primary" target="_blank">Complete Purchase</a>
-                                <button class="btn-secondary" onclick="closeModal()">Cancel</button>
-                            </div>
+                                <div class="form-actions">
+                                    <button type="submit" class="btn-primary">Complete Purchase</button>
+                                    <button type="button" class="btn-secondary" onclick="closeModal()">Cancel</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             `;
-            
+
             // Add modal to page
             document.body.insertAdjacentHTML('beforeend', modalHTML);
-            
+
             // Prevent body scroll
             document.body.style.overflow = 'hidden';
+
+            // Handle form submission
+            const form = document.getElementById('purchase-form');
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+
+                // Get form data
+                const formData = new FormData(form);
+                const stripeLink = formData.get('stripe_link');
+
+                // Submit to Formspree
+                fetch('https://formspree.io/f/xdkgqele', {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                })
+                .then(response => {
+                    // Always redirect to Stripe after submission
+                    window.location.href = stripeLink;
+                })
+                .catch(error => {
+                    // If error, still redirect to Stripe
+                    window.location.href = stripeLink;
+                });
+            });
         }
         
         function closeModal() {
