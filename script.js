@@ -116,14 +116,23 @@ document.addEventListener('DOMContentLoaded', function() {
     // Mobile pricing accordion functionality
     const packageHeaders = document.querySelectorAll('.package-header');
     
+    console.log('Found package headers:', packageHeaders.length);
+    
     if (packageHeaders.length > 0) {
-        packageHeaders.forEach(header => {
+        packageHeaders.forEach((header, index) => {
+            console.log(`Setting up header ${index}:`, header);
+            
             header.addEventListener('click', function(e) {
                 e.preventDefault();
                 e.stopPropagation();
                 
+                console.log('Header clicked:', this);
+                
                 const content = this.nextElementSibling;
                 const icon = this.querySelector('i');
+                
+                console.log('Content element:', content);
+                console.log('Icon element:', icon);
                 
                 // Close all other packages
                 packageHeaders.forEach(otherHeader => {
@@ -141,6 +150,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Toggle current package
                 const isActive = content.classList.contains('active');
                 
+                console.log('Is active:', isActive);
+                
                 if (isActive) {
                     content.classList.remove('active');
                     this.classList.remove('active');
@@ -154,8 +165,12 @@ document.addEventListener('DOMContentLoaded', function() {
                         icon.style.transform = 'rotate(45deg)';
                     }
                 }
+                
+                console.log('After toggle - content active:', content.classList.contains('active'));
             });
         });
+    } else {
+        console.log('No package headers found');
     }
     
     // Initialize interactive pricing
