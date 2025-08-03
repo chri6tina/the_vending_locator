@@ -2116,12 +2116,13 @@ input:focus, textarea:focus, select:focus {
 .package-content {
     max-height: 0;
     overflow: hidden;
-    transition: all 0.3s ease;
+    transition: max-height 0.3s ease;
     background: var(--soft-cream);
+    padding: 0 2rem;
 }
 
 .package-content.active {
-    max-height: 1000px;
+    max-height: 500px;
     padding: 2rem;
 }
 
