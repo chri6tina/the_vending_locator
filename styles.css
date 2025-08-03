@@ -1272,112 +1272,159 @@ input:focus, textarea:focus, select:focus {
     background: var(--bg-primary);
 }
 
+/* Pricing Table - Fixed Alignment */
 .pricing-table {
     background: var(--soft-cream);
-    border-radius: var(--border-radius-medium);
-    box-shadow: 0 8px 32px var(--shadow-warm);
-    border: 2px solid var(--border-warm);
+    border-radius: var(--border-radius-large);
     overflow: hidden;
-    margin-top: 3rem;
+    box-shadow: 0 8px 32px var(--shadow-warm);
+    margin: 2rem 0;
+    border: 1px solid var(--border-warm);
 }
 
 .pricing-header {
-    background: linear-gradient(135deg, var(--muted-orange), var(--coral-accent));
-    color: white;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
-    gap: 1rem;
-    padding: 1.5rem;
+    background: linear-gradient(135deg, var(--muted-orange), var(--coral-accent));
+    color: white;
     font-weight: 600;
-    font-family: 'Inter', sans-serif;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    gap: 20px;
 }
 
 .pricing-row {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
-    gap: 1rem;
-    padding: 1.5rem;
+    padding: 1.5rem 2rem;
     border-bottom: 1px solid var(--border-warm);
-    transition: background-color 0.3s ease;
-}
-
-.pricing-row:hover {
-    background: rgba(230, 126, 34, 0.05);
+    gap: 20px;
+    align-items: center;
 }
 
 .pricing-row:last-child {
     border-bottom: none;
 }
 
+.feature-info {
+    padding-right: 1rem;
+}
+
 .feature-info h4 {
-    font-size: 1.1rem;
     color: var(--warm-charcoal);
-    margin-bottom: 0.5rem;
-    font-family: 'Inter', sans-serif;
+    margin: 0 0 0.5rem 0;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 .feature-info p {
-    font-size: 0.9rem;
     color: var(--muted-text);
+    margin: 0;
+    font-size: 0.9rem;
     line-height: 1.4;
-    font-family: 'Inter', sans-serif;
 }
 
-.basic-value, .pro-value, .start-value, .gold-value {
+/* Pricing Values - Clickable with proper alignment */
+.basic-value,
+.pro-value,
+.start-value,
+.gold-value {
     text-align: center;
-    font-weight: 600;
+    padding: 0.75rem;
+    border-radius: var(--border-radius-soft);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
     color: var(--warm-charcoal);
-    font-family: 'Inter', sans-serif;
+    position: relative;
+    background: transparent;
 }
 
-/* Responsive Design for Enhanced Sections */
+.basic-value:hover,
+.pro-value:hover,
+.start-value:hover,
+.gold-value:hover {
+    background: var(--warm-beige);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px var(--shadow-soft);
+}
+
+.basic-value::after,
+.pro-value::after,
+.start-value::after,
+.gold-value::after {
+    content: '→';
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: var(--muted-orange);
+    font-weight: bold;
+}
+
+.basic-value:hover::after,
+.pro-value:hover::after,
+.start-value:hover::after,
+.gold-value:hover::after {
+    opacity: 1;
+}
+
+/* Section Headers */
+.pricing-section-header {
+    grid-column: 1 / -1;
+    background: var(--warm-beige);
+    padding: 1rem 2rem;
+    margin: 0;
+    border-bottom: 1px solid var(--border-warm);
+}
+
+.pricing-section-header h3 {
+    color: var(--warm-charcoal);
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-    .form-row {
-        grid-template-columns: 1fr;
-    }
-    
-    .form-container {
-        padding: 2rem;
-        margin: 0 1rem;
-    }
-    
-    .form-header h2 {
-        font-size: 2rem;
-    }
-    
-    .steps-container {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-    
-    .benefits-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-    
-    .results-stats {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-    
-    .results-container {
-        padding: 2rem;
-        margin: 0 1rem;
-    }
-    
-    .results-title {
-        font-size: 2rem;
-    }
-    
     .pricing-header,
     .pricing-row {
         grid-template-columns: 1fr;
-        text-align: center;
+        gap: 10px;
+        padding: 1rem;
+    }
+    
+    .pricing-header {
+        display: none; /* Hide on mobile, use mobile pricing instead */
+    }
+    
+    .pricing-row {
+        border: 1px solid var(--border-warm);
+        border-radius: var(--border-radius-medium);
+        margin-bottom: 1rem;
+        background: white;
     }
     
     .feature-info {
-        order: -1;
-        margin-bottom: 12px;
+        padding-right: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .basic-value,
+    .pro-value,
+    .start-value,
+    .gold-value {
+        text-align: left;
+        padding: 0.5rem;
+        border-top: 1px solid var(--border-warm);
+    }
+    
+    .pricing-section-header {
+        grid-column: 1;
+        margin: 1rem 0 0.5rem 0;
     }
 }
 
