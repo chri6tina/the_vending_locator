@@ -165,34 +165,16 @@ p {
 
 /* Hero Section */
 .hero {
-    padding: 80px 0;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
+    padding: 60px 0;
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-}
-
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-    z-index: -1;
 }
 
 .hero-container {
-    max-width: 1200px;
-    margin: 0 auto;
     padding: 0 20px;
 }
 
 .hero-content {
-    max-width: 100%;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -222,24 +204,13 @@ p {
     font-size: 0.7rem;
 }
 
-.hero-main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: center;
-    margin-bottom: 3rem;
-}
-
-.hero-text {
-    text-align: left;
-}
-
 .hero-title {
-    font-size: 3.2rem;
+    font-size: 2.5rem;
     font-weight: 800;
     color: #1e293b;
     margin-bottom: 1.5rem;
     line-height: 1.2;
+    text-align: center;
 }
 
 .highlight {
@@ -259,18 +230,18 @@ p {
 }
 
 .hero-subtitle {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #64748b;
     line-height: 1.6;
-    margin-bottom: 2rem;
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto 2.5rem;
     font-weight: 400;
 }
 
 .hero-cta {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: flex-start;
+    margin-bottom: 3rem;
+    text-align: center;
 }
 
 .btn-large {
@@ -283,7 +254,7 @@ p {
     font-weight: 700;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);
     letter-spacing: 0.02em;
     text-decoration: none;
     display: inline-flex;
@@ -293,114 +264,100 @@ p {
 
 .btn-large:hover {
     background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(59, 130, 246, 0.4);
 }
 
-.sample-link {
-    color: #3b82f6;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.95rem;
-    transition: all 0.3s ease;
-}
-
-.sample-link:hover {
-    color: #2563eb;
-    transform: translateX(2px);
-}
-
-.hero-illustration {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.illustration-container {
-    position: relative;
-    width: 400px;
-    height: 300px;
-}
-
-.vending-machine {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 200px;
-    height: 250px;
-    background: linear-gradient(135deg, #3b82f6, #60a5fa);
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
-}
-
-.machine-body {
-    width: 100%;
-    height: 180px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 15px 15px 0 0;
-}
-
-.product-slots {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-    gap: 10px;
-}
-
-.slot {
-    width: 40px;
-    height: 60px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 8px;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-}
-
-.location-pin {
-    position: absolute;
-    top: 20px;
-    left: 30px;
-    font-size: 2rem;
-    color: #3b82f6;
-    animation: float 3s ease-in-out infinite;
-}
-
-.checklist {
-    position: absolute;
-    top: 40px;
-    right: 30px;
-}
-
-.clipboard {
-    background: white;
-    border-radius: 12px;
-    padding: 15px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-    border: 2px solid #e2e8f0;
-}
-
-.check-item {
-    margin: 8px 0;
-    color: #3b82f6;
-    font-size: 1.2rem;
-}
-
-.hero-testimonial {
-    text-align: center;
-    margin-top: 2rem;
-}
-
-.hero-testimonial p {
-    font-size: 1.1rem;
+.cta-note {
+    font-size: 0.85rem;
     color: #64748b;
-    font-style: italic;
+    margin-top: 1rem;
     font-weight: 500;
 }
 
-@keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
+.hero-social-proof {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.live-counter {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 1rem 1.5rem;
+    border-radius: 50px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(226, 232, 240, 0.8);
+    backdrop-filter: blur(15px);
+    transition: all 0.3s ease;
+}
+
+.live-counter:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+.counter-icon {
+    width: 40px;
+    height: 40px;
+    background: rgba(96, 165, 250, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #60a5fa;
+}
+
+.counter-icon i {
+    color: #60a5fa;
+    font-size: 1.2rem;
+}
+
+.counter-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.counter-number {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #60a5fa;
+    line-height: 1;
+}
+
+.counter-label {
+    font-size: 0.8rem;
+    color: #5a6c7d;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 0.2rem;
+}
+
+.counter-dot {
+    width: 8px;
+    height: 8px;
+    background: #60a5fa;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 /* How It Works Section */
@@ -2480,17 +2437,13 @@ p {
     .hero-subtitle {
         font-size: 1.1rem;
         max-width: 600px;
-        margin: 0 auto 2rem;
     }
 
     .hero-cta {
         align-items: center;
     }
 
-    .illustration-container {
-        width: 300px;
-        height: 250px;
-    }
+
 
     .hero-stats {
         gap: 1rem;
@@ -2561,10 +2514,7 @@ p {
         max-width: 500px;
     }
 
-    .illustration-container {
-        width: 250px;
-        height: 200px;
-    }
+
 
     .section-title {
         font-size: 1.8rem;

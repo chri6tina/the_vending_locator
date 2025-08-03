@@ -1,0 +1,10 @@
+[33me0c1887[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Redesign hero section with two-column layout, illustration, and improved design matching the sample
+[33m1496c80[m Remove all stat cards completely for a cleaner, more focused hero section
+[33m538d91b[m Redesign stat cards with clean, minimal design using dividers instead of boxes
+[33m05e705f[m Make stat cards smaller and more proportional to hero section
+[33m56c1029[m Make hero section more substantial with larger fonts, padding, and spacing
+[33m40036c4[m Redesign hero section to be compact, professional, and fit within screen without scrolling
+[33m89d1fa4[m Revert to professional rectangular stat cards with better mobile responsiveness
+[33m691ca79[m Replace hero stats with professional circular design and fix mobile overflow issues
+[33meae282e[m Require email and zip code in pricing package modal, submit to Formspree, then redirect to Stripe
+[33ma461c69[m Redesign expectations section on homepage and add lead capture form with Formspree integration

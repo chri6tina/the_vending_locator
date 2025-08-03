@@ -130,9 +130,3 @@
                   Search skips current screen.
   -A  ........  --SEARCH-SKIP-SCREEN
                   Search starts just after target line.
-  -b [_N]  ....  --buffers=[_N]
-                  Number of buffers.
-  -B  ........  --auto-buffers
-                  Don't automatically allocate buffers for pipes.
-  -c  ........  --clear-screen
-                  Repaint by clearing rather than scrolling.
