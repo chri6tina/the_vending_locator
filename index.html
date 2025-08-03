@@ -14,7 +14,9 @@
     <link rel="manifest" href="/site.webmanifest">
     
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
@@ -112,17 +114,31 @@
     <!-- Lead Form Section -->
     <section id="lead-form" class="lead-form-section">
         <div class="container">
-            <div class="form-container">
-                <h2>Stay in the Loop</h2>
-                <p>Want to get emails about our hottest leads and new location opportunities? Enter your details below.</p>
+            <div class="form-container retro-illustration">
+                <div class="form-header">
+                    <div class="form-badge">
+                        <i class="fas fa-envelope-open-text"></i>
+                        <span>Hot Leads Alert</span>
+                    </div>
+                    <h2 class="vintage-accent">Stay in the Loop</h2>
+                    <p>Want to get emails about our hottest leads and new location opportunities? Enter your details below and join our community of successful vending operators.</p>
+                </div>
                 <form class="lead-form" id="locationForm">
-                    <div class="form-group">
-                        <input type="text" id="zipcode" name="zipcode" placeholder="Enter your zip code" required>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="zipcode">Your Target Area</label>
+                            <input type="text" id="zipcode" name="zipcode" placeholder="Enter your zip code" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
-                    </div>
-                    <button type="submit" class="btn-primary">Get Hot Leads Alerts</button>
+                    <button type="submit" class="btn-primary btn-large">
+                        <i class="fas fa-paper-plane"></i>
+                        Get Hot Leads Alerts
+                    </button>
+                    <p class="form-note">Join 3,000+ vending operators getting weekly location opportunities</p>
                 </form>
             </div>
         </div>
@@ -131,27 +147,33 @@
     <!-- How It Works Section -->
     <section class="how-it-works">
         <div class="container">
-            <h2 class="section-title">How It Works</h2>
+            <div class="section-header">
+                <h2 class="section-title">How It Works</h2>
+                <p class="section-subtitle">Our simple 3-step process to find your next profitable vending locations</p>
+            </div>
             <div class="steps-container">
-                <div class="step">
+                <div class="step retro-illustration">
+                    <div class="step-number">1</div>
                     <div class="step-icon">
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
-                    <h3>1. Submit Your Area</h3>
+                    <h3>Submit Your Area</h3>
                     <p>Enter your zip code and email address to tell us where you want to expand your vending business.</p>
                 </div>
-                <div class="step">
+                <div class="step retro-illustration">
+                    <div class="step-number">2</div>
                     <div class="step-icon">
                         <i class="fas fa-search"></i>
                     </div>
-                    <h3>2. We Research Your Area</h3>
+                    <h3>We Research Your Area</h3>
                     <p>Our team researches and verifies high-traffic locations in your target area, finding the best opportunities.</p>
                 </div>
-                <div class="step">
+                <div class="step retro-illustration">
+                    <div class="step-number">3</div>
                     <div class="step-icon">
                         <i class="fas fa-list-alt"></i>
                     </div>
-                    <h3>3. Receive Your List</h3>
+                    <h3>Receive Your List</h3>
                     <p>Get a detailed list of potential locations with verified contact information and business details.</p>
                 </div>
             </div>
@@ -161,30 +183,33 @@
     <!-- Benefits Section -->
     <section class="benefits">
         <div class="container">
-            <h2 class="section-title">Why Choose The Vending Locator</h2>
+            <div class="section-header">
+                <h2 class="section-title">Why Choose The Vending Locator</h2>
+                <p class="section-subtitle">Join thousands of successful vending operators who trust our proven location research</p>
+            </div>
             <div class="benefits-grid">
-                <div class="benefit-card">
+                <div class="benefit-card retro-illustration">
                     <div class="benefit-icon">
                         <i class="fas fa-star"></i>
                     </div>
                     <h3>Curated High-Traffic Locations</h3>
                     <p>We hand-pick locations with proven foot traffic and revenue potential, saving you hours of research.</p>
                 </div>
-                <div class="benefit-card">
+                <div class="benefit-card retro-illustration">
                     <div class="benefit-icon">
                         <i class="fas fa-address-book"></i>
                     </div>
                     <h3>Up-to-Date Contact Details</h3>
                     <p>All contact information is verified and current, ensuring your outreach efforts aren't wasted.</p>
                 </div>
-                <div class="benefit-card">
+                <div class="benefit-card retro-illustration">
                     <div class="benefit-icon">
                         <i class="fas fa-rocket"></i>
                     </div>
                     <h3>Fast Delivery (3-5 Days)</h3>
                     <p>Receive your customized location list within 3-5 business days, so you can start growing immediately.</p>
                 </div>
-                <div class="benefit-card">
+                <div class="benefit-card retro-illustration">
                     <div class="benefit-icon">
                         <i class="fas fa-headset"></i>
                     </div>
@@ -252,29 +277,39 @@
     <!-- Success Results Section -->
     <section class="success-results-section">
         <div class="container">
-            <div class="results-container">
+            <div class="results-container retro-illustration">
                 <div class="results-header">
-                    <div class="results-icon">
-                        <i class="fas fa-chart-line"></i>
+                    <div class="results-badge">
+                        <i class="fas fa-trophy"></i>
+                        <span>Proven Results</span>
                     </div>
                     <h2 class="results-title">Real Results from Real Customers</h2>
                     <p class="results-subtitle">See what our vending operators achieve with our location lists</p>
                 </div>
                 
                 <div class="results-stats">
-                    <div class="stat-card">
+                    <div class="stat-card retro-illustration">
+                        <div class="stat-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
                         <div class="stat-number">5+</div>
                         <div class="stat-label">New Locations</div>
                         <div class="stat-description">Average secured within 30 days</div>
                     </div>
                     
-                    <div class="stat-card">
+                    <div class="stat-card retro-illustration">
+                        <div class="stat-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
                         <div class="stat-number">85%</div>
                         <div class="stat-label">Success Rate</div>
                         <div class="stat-description">Of customers who follow our process</div>
                     </div>
                     
-                    <div class="stat-card">
+                    <div class="stat-card retro-illustration">
+                        <div class="stat-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
                         <div class="stat-number">$2,500+</div>
                         <div class="stat-label">Monthly Revenue</div>
                         <div class="stat-description">Additional income per new location</div>
@@ -295,8 +330,10 @@
     <!-- Pricing Table Section -->
     <section class="pricing-table-section">
         <div class="container">
-            <h2 class="section-title">Choose Your Perfect Package</h2>
-            <p class="section-subtitle">Get curated lists of high-traffic locations delivered to your inbox. Start growing your vending business today.</p>
+            <div class="section-header">
+                <h2 class="section-title">Choose Your Perfect Package</h2>
+                <p class="section-subtitle">Get curated lists of high-traffic locations delivered to your inbox. Start growing your vending business today.</p>
+            </div>
             
             <div class="pricing-table">
                 <div class="pricing-header">
@@ -342,7 +379,7 @@
                 
                 <div class="pricing-row">
                     <div class="feature-info">
-                        <h4>AI-Powered Lead Scoring</h4>
+                        <h4>Advanced Lead Scoring</h4>
                         <p>Our proprietary algorithm scores each location by foot traffic, business type, and vending potential to maximize your success rate.</p>
                     </div>
                     <div class="basic-value">—</div>
