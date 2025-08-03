@@ -116,36 +116,98 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize live counter
     initLiveCounter();
 
-    // FAQ Accordion Functionality
+    // Enhanced FAQ Accordion with Fun Interactions
     const faqItems = document.querySelectorAll('.faq-accordion-item');
     
-    faqItems.forEach(item => {
+    faqItems.forEach((item, index) => {
         const question = item.querySelector('.faq-question');
         const answer = item.querySelector('.faq-answer');
         const icon = question.querySelector('i');
         
+        // Add staggered animation delay
+        item.style.animationDelay = `${index * 0.1}s`;
+        
         question.addEventListener('click', function() {
             const isActive = item.classList.contains('active');
             
-            // Close all other FAQ items
+            // Close all other FAQ items with smooth animation
             faqItems.forEach(otherItem => {
                 if (otherItem !== item) {
                     otherItem.classList.remove('active');
                     const otherIcon = otherItem.querySelector('.faq-question i');
                     otherIcon.style.transform = 'rotate(0deg)';
+                    otherIcon.style.color = 'var(--muted-orange)';
                 }
             });
             
-            // Toggle current item
+            // Toggle current item with enhanced animations
             if (isActive) {
                 item.classList.remove('active');
                 icon.style.transform = 'rotate(0deg)';
+                icon.style.color = 'var(--muted-orange)';
+                
+                // Add bounce effect when closing
+                item.style.animation = 'none';
+                item.offsetHeight; // Trigger reflow
+                item.style.animation = 'bounce 0.6s ease';
             } else {
                 item.classList.add('active');
                 icon.style.transform = 'rotate(180deg)';
+                icon.style.color = 'var(--coral-accent)';
+                
+                // Add fun entrance animation
+                item.style.animation = 'none';
+                item.offsetHeight; // Trigger reflow
+                item.style.animation = 'slideInUp 0.4s ease-out';
+            }
+        });
+        
+        // Add hover sound effect (visual only)
+        question.addEventListener('mouseenter', function() {
+            item.style.transform = 'translateY(-2px) scale(1.02)';
+        });
+        
+        question.addEventListener('mouseleave', function() {
+            if (!item.classList.contains('active')) {
+                item.style.transform = 'translateY(0) scale(1)';
             }
         });
     });
+    
+    // Add fun interaction to FAQ badge
+    const faqBadge = document.querySelector('.faq-badge');
+    if (faqBadge) {
+        faqBadge.addEventListener('click', function() {
+            // Add a fun pulse effect
+            this.style.animation = 'none';
+            this.offsetHeight; // Trigger reflow
+            this.style.animation = 'bounce 0.6s ease';
+            
+            // Scroll to first FAQ item
+            const firstFaq = document.querySelector('.faq-accordion-item');
+            if (firstFaq) {
+                firstFaq.scrollIntoView({ 
+                    behavior: 'smooth', 
+                    block: 'center' 
+                });
+            }
+        });
+        
+        // Make badge interactive
+        faqBadge.style.cursor = 'pointer';
+        faqBadge.title = 'Click to explore our FAQs!';
+    }
+    
+    // Add random sparkle effect to FAQ items
+    setInterval(() => {
+        const randomFaq = faqItems[Math.floor(Math.random() * faqItems.length)];
+        if (!randomFaq.classList.contains('active')) {
+            randomFaq.style.boxShadow = '0 8px 25px var(--shadow-soft)';
+            setTimeout(() => {
+                randomFaq.style.boxShadow = '';
+            }, 1000);
+        }
+    }, 8000); // Every 8 seconds
 });
 
 // Smooth scrolling for anchor links
