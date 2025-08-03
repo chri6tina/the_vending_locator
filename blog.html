@@ -132,28 +132,16 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
-    <!-- Contentful Integration -->
+    <!-- Scripts -->
     <script src="contentful-config.js"></script>
     <script src="contentful-service.js"></script>
     <script src="blog-renderer.js"></script>
+    <script src="script.js"></script>
     <script>
-        // Initialize blog when DOM is loaded
-        document.addEventListener('DOMContentLoaded', async function() {
-            try {
-                // Wait for Contentful SDK to load
-                if (typeof contentful === 'undefined') {
-                    console.error('Contentful SDK not loaded');
-                    return;
-                }
-
-                // Initialize blog renderer
-                if (window.blogRenderer) {
-                    await window.blogRenderer.renderBlogPosts();
-                }
-            } catch (error) {
-                console.error('Error initializing blog:', error);
-            }
+        // Initialize blog renderer when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            const blogRenderer = new BlogRenderer();
+            blogRenderer.renderBlogPosts();
         });
     </script>
 </body>

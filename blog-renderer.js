@@ -9,6 +9,11 @@ class BlogRenderer {
 
     async renderBlogPosts() {
         try {
+            // Initialize Contentful if not already done
+            if (!window.contentfulService) {
+                this.initializeContentful();
+            }
+
             // Get all blog posts
             const entries = await window.contentfulService.getBlogPosts();
             this.posts = entries.map(entry => window.contentfulService.formatBlogPost(entry));
@@ -22,6 +27,20 @@ class BlogRenderer {
         } catch (error) {
             console.error('Error rendering blog posts:', error);
             this.showError();
+        }
+    }
+
+    initializeContentful() {
+        try {
+            const client = contentful.createClient({
+                space: 'xpopyri6s8gv',
+                accessToken: 'as1yT7ZCd27_ByA_MBu0lzJDQZVWmxafx2mfM-c9ooY',
+                environment: 'master'
+            });
+            window.contentfulClient = client;
+            window.contentfulService = new ContentfulService(client);
+        } catch (error) {
+            console.error('Error initializing Contentful:', error);
         }
     }
 
