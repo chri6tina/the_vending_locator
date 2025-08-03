@@ -334,17 +334,17 @@ p {
 
 /* Live User Counter */
 .live-user-counter {
-    position: fixed;
-    top: 100px;
-    right: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
     background: rgba(255, 255, 255, 0.95);
-    border-radius: 20px;
-    padding: 15px 20px;
+    border-radius: 25px;
+    padding: 12px 20px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(226, 232, 240, 0.8);
     backdrop-filter: blur(15px);
-    z-index: 1000;
-    animation: slideInRight 0.6s ease-out;
+    margin: 2rem auto;
+    animation: slideInUp 0.6s ease-out;
 }
 
 .live-user-counter::before {
@@ -362,40 +362,40 @@ p {
 }
 
 .live-user-counter .user-icon {
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
     background: #3b82f6;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 0.8rem;
-    margin-bottom: 8px;
+    font-size: 0.7rem;
+    flex-shrink: 0;
 }
 
 .live-user-counter .counter-text {
     font-size: 0.8rem;
     color: #64748b;
     font-weight: 500;
-    text-align: center;
+    white-space: nowrap;
 }
 
 .live-user-counter .user-count {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 700;
     color: #3b82f6;
-    text-align: center;
     transition: all 0.3s ease;
+    white-space: nowrap;
 }
 
-@keyframes slideInRight {
+@keyframes slideInUp {
     from {
-        transform: translateX(100%);
+        transform: translateY(20px);
         opacity: 0;
     }
     to {
-        transform: translateX(0);
+        transform: translateY(0);
         opacity: 1;
     }
 }
@@ -2472,15 +2472,14 @@ p {
     }
     
     .live-user-counter {
-        top: 80px;
-        right: 15px;
-        padding: 12px 15px;
+        padding: 10px 15px;
+        margin: 1.5rem auto;
     }
     
     .live-user-counter .user-icon {
-        width: 25px;
-        height: 25px;
-        font-size: 0.7rem;
+        width: 24px;
+        height: 24px;
+        font-size: 0.6rem;
     }
     
     .live-user-counter .counter-text {
