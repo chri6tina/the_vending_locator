@@ -292,53 +292,7 @@ p {
     font-weight: 500;
 }
 
-.hero-stats {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0;
-    margin: 0;
-    flex-wrap: wrap;
-    max-width: 100%;
-    padding: 0 1rem;
-}
 
-.stat-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 0 1.5rem;
-    transition: all 0.3s ease;
-}
-
-.stat-item:hover {
-    transform: translateY(-1px);
-}
-
-.stat-number {
-    font-size: 1.4rem;
-    font-weight: 800;
-    color: #3b82f6;
-    margin-bottom: 0.25rem;
-    line-height: 1.2;
-}
-
-.stat-label {
-    font-size: 0.75rem;
-    color: #64748b;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    line-height: 1.2;
-}
-
-.stat-divider {
-    width: 1px;
-    height: 30px;
-    background: linear-gradient(to bottom, transparent, #e2e8f0, transparent);
-    margin: 0 0.5rem;
-}
 
 .hero-cta {
     margin: 0;
@@ -2579,22 +2533,7 @@ p {
         margin: 1.5rem 0;
     }
 
-    .stat-item {
-        padding: 0 1rem;
-    }
 
-    .stat-number {
-        font-size: 1.2rem;
-    }
-
-    .stat-label {
-        font-size: 0.65rem;
-    }
-
-    .stat-divider {
-        height: 25px;
-        margin: 0 0.25rem;
-    }
 
     .pricing-cards {
         grid-template-columns: 1fr;
@@ -2662,27 +2601,7 @@ p {
         padding: 2rem 1rem;
     }
 
-    .hero-stats {
-        gap: 0.75rem;
-        margin: 0.75rem 0;
-    }
 
-    .stat-item {
-        padding: 0 0.75rem;
-    }
-
-    .stat-number {
-        font-size: 1rem;
-    }
-
-    .stat-label {
-        font-size: 0.6rem;
-    }
-
-    .stat-divider {
-        height: 20px;
-        margin: 0 0.25rem;
-    }
 
     .stat-number {
         font-size: 1rem;
