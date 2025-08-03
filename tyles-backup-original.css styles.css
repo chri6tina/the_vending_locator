@@ -1,0 +1,5 @@
+[33m343c4b4[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Fix mobile pricing section - replaced broken accordion with clean minimalist design
+[33m21fd5b1[m Fix mobile pricing dropdown CSS - adjust max-height transition for better accordion behavior
+[33mc7cbf0a[m Add debugging for mobile pricing section visibility - check if section is being displayed
+[33mfb6ae3a[m Fix favicon 404 errors - update pricing.html and site.webmanifest to use only SVG favicon
+[33m5254016[m Add debugging to mobile pricing accordion - console logs to identify why dropdowns aren't working
