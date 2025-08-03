@@ -165,14 +165,12 @@ p {
 
 /* Navigation - Retro Style */
 .navbar {
-    background: rgba(250, 248, 243, 0.95);
-    padding: 1rem 0;
-    position: fixed;
-    top: 0;
+    background: var(--bg-primary);
+    padding: 1.5rem 0;
+    position: relative;
     width: 100%;
-    z-index: 1000;
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--border-warm);
+    border-bottom: 2px solid var(--border-warm);
+    box-shadow: 0 2px 8px rgba(139, 115, 85, 0.08);
 }
 
 .nav-container {
@@ -228,11 +226,11 @@ p {
 
 /* Hero Section - Retro Style */
 .hero {
-    padding: 140px 0 80px;
+    padding: 80px 0;
     text-align: center;
     position: relative;
     overflow: hidden;
-    min-height: 100vh;
+    min-height: 80vh;
     display: flex;
     align-items: center;
     background: linear-gradient(135deg, var(--cream-primary) 0%, var(--cream-secondary) 100%);
@@ -1610,7 +1608,7 @@ input:focus, textarea:focus, select:focus {
 /* Enhanced Pricing Page Styles */
 .page-hero {
     background: linear-gradient(135deg, var(--cream-primary) 0%, var(--warm-beige) 100%);
-    padding: 120px 0 80px 0;
+    padding: 80px 0;
     position: relative;
     overflow: hidden;
 }
@@ -1652,7 +1650,7 @@ input:focus, textarea:focus, select:focus {
 }
 
 .hero-title {
-    font-size: 3.2rem;
+    font-size: 2.8rem;
     font-weight: 700;
     color: var(--warm-charcoal);
     margin-bottom: 20px;
@@ -1741,14 +1739,29 @@ input:focus, textarea:focus, select:focus {
 
 /* Comparison Section */
 .comparison-section {
-    background: var(--bg-secondary);
+    background: linear-gradient(135deg, var(--cream-primary) 0%, var(--warm-beige) 100%);
     padding: 80px 0;
     position: relative;
+    overflow: hidden;
+}
+
+.comparison-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="%23f0f0f0" opacity="0.3"/><circle cx="75" cy="75" r="1" fill="%23f0f0f0" opacity="0.3"/><circle cx="50" cy="10" r="0.5" fill="%23f0f0f0" opacity="0.2"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    opacity: 0.4;
+    pointer-events: none;
 }
 
 .comparison-header {
     text-align: center;
     margin-bottom: 60px;
+    position: relative;
+    z-index: 2;
 }
 
 .comparison-header h2 {
@@ -1770,6 +1783,8 @@ input:focus, textarea:focus, select:focus {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 32px;
     margin-top: 48px;
+    position: relative;
+    z-index: 2;
 }
 
 .comparison-card {
@@ -1926,9 +1941,22 @@ input:focus, textarea:focus, select:focus {
 
 /* Enhanced Pricing Table Styles */
 .pricing-table-section {
-    background: var(--bg-primary);
+    background: linear-gradient(135deg, var(--cream-primary) 0%, var(--warm-beige) 100%);
     padding: 80px 0;
     position: relative;
+    overflow: hidden;
+}
+
+.pricing-table-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="%23f0f0f0" opacity="0.3"/><circle cx="75" cy="75" r="1" fill="%23f0f0f0" opacity="0.3"/><circle cx="50" cy="10" r="0.5" fill="%23f0f0f0" opacity="0.2"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    opacity: 0.4;
+    pointer-events: none;
 }
 
 .pricing-table {
@@ -1938,6 +1966,7 @@ input:focus, textarea:focus, select:focus {
     border: 1px solid var(--border-warm);
     overflow: hidden;
     position: relative;
+    z-index: 2;
 }
 
 .pricing-table::before {
