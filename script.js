@@ -118,6 +118,16 @@ document.addEventListener('DOMContentLoaded', function() {
     
     console.log('Found package headers:', packageHeaders.length);
     
+    // Debug: Check if mobile pricing section is visible
+    const mobilePricingSection = document.querySelector('.pricing-mobile');
+    if (mobilePricingSection) {
+        console.log('Mobile pricing section found:', mobilePricingSection);
+        console.log('Mobile pricing section display:', window.getComputedStyle(mobilePricingSection).display);
+        console.log('Mobile pricing section visibility:', window.getComputedStyle(mobilePricingSection).visibility);
+    } else {
+        console.log('Mobile pricing section NOT found');
+    }
+    
     if (packageHeaders.length > 0) {
         packageHeaders.forEach((header, index) => {
             console.log(`Setting up header ${index}:`, header);
