@@ -495,105 +495,66 @@
         </div>
     </section>
 
-    <!-- Mobile Pricing Accordion -->
-    <section class="pricing-mobile">
+    <!-- Mobile Pricing Section -->
+    <section class="mobile-pricing-section">
         <div class="container">
             <h2 class="section-title">Pricing</h2>
-            <div class="mobile-pricing">
+            <div class="mobile-pricing-grid">
                 <div class="mobile-package">
-                    <div class="package-header">
-                        <h3>Basic - $19</h3>
-                        <i class="fas fa-plus"></i>
+                    <div class="mobile-package-header">
+                        <h3>Basic</h3>
+                        <span class="price">$19</span>
                     </div>
-                    <div class="package-content">
-                        <p>Ideal for those seeking a straightforward list.</p>
-                        <button onclick="openPurchaseModal('Basic', '19', 'https://buy.stripe.com/aEU2929ZcfvQ10IdQT')" class="btn-primary">Buy Now</button>
-                        <ul>
-                            <li>Over 50+ potential vending machine locations customized to match your zip code region.</li>
-                            <li>Contains the business name, phone number, and address for each location.</li>
-                            <li>15 mile radius search</li>
-                            <li>5 day delivery</li>
-                            <li>List thoroughly researched for quality</li>
-                        </ul>
+                    <div class="mobile-package-content">
+                        <div class="package-info">
+                            <p class="lead-count">50+ leads</p>
+                            <p class="delivery-time">5 day delivery</p>
+                        </div>
+                        <button onclick="openPurchaseModal('Basic', '19', 'https://buy.stripe.com/aEU2929ZcfvQ10IdQT')" class="mobile-checkout-btn">Get Started</button>
                     </div>
                 </div>
                 
                 <div class="mobile-package">
-                    <div class="package-header">
-                        <h3>Pro - $29</h3>
-                        <i class="fas fa-plus"></i>
+                    <div class="mobile-package-header">
+                        <h3>Pro</h3>
+                        <span class="price">$29</span>
                     </div>
-                    <div class="package-content">
-                        <p>Ideal for those seeking optimal locations.</p>
-                        <button onclick="openPurchaseModal('Pro', '29', 'https://buy.stripe.com/4gwaFyfjw1F0gZG004')" class="btn-primary">Buy Now</button>
-                        <ul>
-                            <li>Over 200+ potential vending machine locations customized to match your zip code region.</li>
-                            <li>Contains the business name, phone number, and address for each location.</li>
-                            <li>If an email address is available on the website of the location, we will provide it.</li>
-                            <li>25 mile radius search</li>
-                            <li>3 day delivery</li>
-                            <li>List thoroughly researched for quality</li>
-                        </ul>
+                    <div class="mobile-package-content">
+                        <div class="package-info">
+                            <p class="lead-count">200+ leads</p>
+                            <p class="delivery-time">3 day delivery</p>
+                        </div>
+                        <button onclick="openPurchaseModal('Pro', '29', 'https://buy.stripe.com/4gwaFyfjw1F0gZG004')" class="mobile-checkout-btn">Get Started</button>
+                    </div>
+                </div>
+                
+                <div class="mobile-package featured">
+                    <div class="mobile-package-header">
+                        <h3>Start</h3>
+                        <span class="price">$129</span>
+                    </div>
+                    <div class="mobile-package-content">
+                        <div class="package-info">
+                            <p class="lead-count">200+ leads</p>
+                            <p class="delivery-time">3 day delivery</p>
+                            <p class="bonus">+ Sales Resources</p>
+                        </div>
+                        <button onclick="openPurchaseModal('Start', '129', 'https://buy.stripe.com/3cs8xq2wKdnI6l24gl')" class="mobile-checkout-btn featured">Get Started</button>
                     </div>
                 </div>
                 
                 <div class="mobile-package">
-                    <div class="package-header">
-                        <h3>Start - $129</h3>
-                        <i class="fas fa-plus"></i>
+                    <div class="mobile-package-header">
+                        <h3>Gold</h3>
+                        <span class="price">$899</span>
                     </div>
-                    <div class="package-content">
-                        <p>The ultimate vending starter kit!</p>
-                        <button onclick="openPurchaseModal('Start', '129', 'https://buy.stripe.com/3cs8xq2wKdnI6l24gl')" class="btn-primary">Buy Now</button>
-                        <h4>Leads</h4>
-                        <ul>
-                            <li>Over 200+ potential vending machine locations customized to match your zip code region.</li>
-                            <li>Contains the business name, phone number, and address for each location.</li>
-                            <li>If an email address is available on the website of the location, we will provide it.</li>
-                            <li>25 mile radius search</li>
-                            <li>3 day delivery</li>
-                            <li>List thoroughly researched for quality</li>
-                        </ul>
-                        <h4>Sales & Growth Resources</h4>
-                        <ul>
-                            <li>Vending eCourse</li>
-                            <li>Cold Call & Email Script</li>
-                            <li>Supplier List</li>
-                            <li>Contract Template</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="mobile-package">
-                    <div class="package-header">
-                        <h3>Gold - $899</h3>
-                        <i class="fas fa-plus"></i>
-                    </div>
-                    <div class="package-content">
-                        <p>Everything + We legally register your LLC with the government.</p>
-                        <button onclick="openPurchaseModal('Gold', '899', 'https://buy.stripe.com/dR614Y4ESgzU6l25kq')" class="btn-primary">Buy Now</button>
-                        <h4>Leads</h4>
-                        <ul>
-                            <li>Over 200 potential vending machine locations customized to match your zip code region.</li>
-                            <li>Contains the business name, phone number, and address for each location.</li>
-                            <li>If an email address is available on the website of the location, we will provide it.</li>
-                            <li>25 mile radius search</li>
-                            <li>3 day delivery</li>
-                            <li>List thoroughly researched for quality</li>
-                            <li>2 Guaranteed Leads</li>
-                        </ul>
-                        <h4>Sales & Growth Resources</h4>
-                        <ul>
-                            <li>Vending eCourse</li>
-                            <li>Cold Call & Email Script</li>
-                            <li>Supplier Lists</li>
-                            <li>Contract Template</li>
-                        </ul>
-                        <h4>Legal</h4>
-                        <ul>
-                            <li>Register your LLC and obtain an EIN from the appropriate government authority. This is necessary in order to open a bank account.</li>
-                            <li>LLC Operating Agreement Template</li>
-                        </ul>
+                    <div class="mobile-package-content">
+                        <div class="package-info">
+                            <p class="lead-count">200+ leads</p>
+                            <p class="delivery-time">3 day delivery</p>
+                            <p class="bonus">+ Legal Setup</p>
+                        </div>
+                        <button onclick="openPurchaseModal('Gold', '899', 'https://buy.stripe.com/dR614Y4ESgzU6l25kq')" class="mobile-checkout-btn">Get Started</button>
                     </div>
                 </div>
             </div>
