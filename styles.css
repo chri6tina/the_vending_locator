@@ -279,86 +279,40 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0;
+    gap: 2rem;
+    margin-top: 3rem;
 }
 
-.live-counter {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    background: rgba(255, 255, 255, 0.95);
-    padding: 1rem 1.5rem;
-    border-radius: 50px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
-    border: 1px solid rgba(226, 232, 240, 0.8);
-    backdrop-filter: blur(15px);
-    transition: all 0.3s ease;
-}
-
-.live-counter:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
-}
-
-.counter-icon {
-    width: 40px;
-    height: 40px;
-    background: rgba(96, 165, 250, 0.1);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid #60a5fa;
-}
-
-.counter-icon i {
-    color: #60a5fa;
-    font-size: 1.2rem;
-}
-
-.counter-content {
+.stat-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.counter-number {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #60a5fa;
-    line-height: 1;
-}
-
-.counter-label {
-    font-size: 0.8rem;
-    color: #5a6c7d;
-    font-weight: 500;
     text-align: center;
-    margin-top: 0.2rem;
 }
 
-.counter-dot {
-    width: 8px;
-    height: 8px;
-    background: #60a5fa;
-    border-radius: 50%;
-    animation: pulse 2s infinite;
+.stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #3b82f6;
+    line-height: 1;
+    margin-bottom: 0.5rem;
 }
 
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-        opacity: 1;
-    }
-    50% {
-        transform: scale(1.2);
-        opacity: 0.7;
-    }
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
+.stat-label {
+    font-size: 0.75rem;
+    color: #64748b;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
+
+.stat-divider {
+    width: 1px;
+    height: 40px;
+    background: linear-gradient(to bottom, transparent, #e2e8f0, transparent);
+}
+
+
 
 /* How It Works Section */
 .how-it-works {
