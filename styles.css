@@ -3053,14 +3053,14 @@ input:focus, textarea:focus, select:focus {
     }
 }
 
-/* Modal Styles */
+/* Modal Styles - Enhanced */
 .modal-overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -3068,6 +3068,7 @@ input:focus, textarea:focus, select:focus {
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
 }
 
 .modal-overlay.active {
@@ -3079,102 +3080,206 @@ input:focus, textarea:focus, select:focus {
     background: var(--soft-cream);
     border-radius: var(--border-radius-large);
     padding: 0;
-    max-width: 500px;
+    max-width: 550px;
     width: 90%;
     max-height: 90vh;
     overflow-y: auto;
-    box-shadow: 0 20px 60px var(--shadow-warm);
-    border: 1px solid var(--border-warm);
-    transform: scale(0.7);
-    transition: transform 0.3s ease;
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.3);
+    border: 2px solid var(--border-warm);
+    transform: scale(0.7) translateY(20px);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
 }
 
 .modal-overlay.active .modal-content {
-    transform: scale(1);
+    transform: scale(1) translateY(0);
 }
 
 .modal-header {
     background: linear-gradient(135deg, var(--muted-orange), var(--coral-accent));
     color: white;
-    padding: 1.5rem 2rem;
+    padding: 2rem 2rem 1.5rem;
     border-radius: var(--border-radius-large) var(--border-radius-large) 0 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.modal-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+    z-index: 1;
 }
 
 .modal-header h3 {
     margin: 0 0 0.5rem 0;
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 1.8rem;
+    font-weight: 700;
+    position: relative;
+    z-index: 2;
 }
 
 .modal-header p {
     margin: 0;
-    opacity: 0.9;
-    font-size: 1rem;
+    opacity: 0.95;
+    font-size: 1.1rem;
+    position: relative;
+    z-index: 2;
 }
 
 .modal-body {
-    padding: 2rem;
+    padding: 2.5rem 2rem;
+    background: white;
 }
 
 .purchase-form {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.75rem;
 }
 
 .form-group label {
     font-weight: 600;
     color: var(--warm-charcoal);
-    font-size: 0.9rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.form-group label::before {
+    content: '📧';
+    font-size: 1.2rem;
+}
+
+.form-group label[for="zipcode"]::before {
+    content: '📍';
 }
 
 .form-group input {
-    padding: 12px 16px;
+    padding: 16px 20px;
     border: 2px solid var(--border-warm);
-    border-radius: var(--border-radius-soft);
-    font-size: 1rem;
-    transition: border-color 0.3s ease;
+    border-radius: var(--border-radius-medium);
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
     background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .form-group input:focus {
     outline: none;
     border-color: var(--muted-orange);
-    box-shadow: 0 0 0 3px rgba(230, 126, 34, 0.1);
+    box-shadow: 0 0 0 4px rgba(230, 126, 34, 0.15);
+    transform: translateY(-1px);
+}
+
+.form-group input::placeholder {
+    color: var(--muted-text);
+    opacity: 0.7;
+}
+
+/* Enhanced Benefits Section */
+.benefits-section {
+    background: linear-gradient(135deg, var(--warm-beige), var(--soft-cream));
+    padding: 1.5rem;
+    border-radius: var(--border-radius-medium);
+    border: 1px solid var(--border-warm);
+    margin: 1rem 0;
+}
+
+.benefits-title {
+    font-weight: 600;
+    color: var(--warm-charcoal);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    background: white;
+    border-radius: var(--border-radius-soft);
+    border: 1px solid var(--border-warm);
+    font-size: 0.9rem;
+    color: var(--warm-charcoal);
+    transition: all 0.3s ease;
+}
+
+.benefit-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px var(--shadow-soft);
+}
+
+.benefit-item i {
+    color: var(--muted-orange);
+    font-size: 1rem;
 }
 
 .form-actions {
     display: flex;
     gap: 1rem;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 }
 
 .form-actions button {
     flex: 1;
-    padding: 12px 24px;
+    padding: 16px 32px;
     border: none;
-    border-radius: var(--border-radius-soft);
-    font-size: 1rem;
+    border-radius: var(--border-radius-medium);
+    font-size: 1.1rem;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.form-actions button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.6s ease;
+}
+
+.form-actions button:hover::before {
+    left: 100%;
 }
 
 .form-actions .btn-primary {
     background: linear-gradient(135deg, var(--muted-orange), var(--coral-accent));
     color: white;
+    box-shadow: 0 4px 16px var(--shadow-soft);
 }
 
 .form-actions .btn-primary:hover {
     background: linear-gradient(135deg, var(--coral-accent), var(--muted-orange));
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px var(--shadow-soft);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px var(--shadow-soft);
 }
 
 .form-actions .btn-secondary {
@@ -3186,6 +3291,7 @@ input:focus, textarea:focus, select:focus {
 .form-actions .btn-secondary:hover {
     background: var(--border-warm);
     transform: translateY(-2px);
+    box-shadow: 0 4px 12px var(--shadow-soft);
 }
 
 /* Responsive Modal */
@@ -3193,14 +3299,23 @@ input:focus, textarea:focus, select:focus {
     .modal-content {
         width: 95%;
         margin: 1rem;
+        max-width: none;
     }
     
     .modal-header {
-        padding: 1rem 1.5rem;
+        padding: 1.5rem 1.5rem 1rem;
+    }
+    
+    .modal-header h3 {
+        font-size: 1.5rem;
     }
     
     .modal-body {
-        padding: 1.5rem;
+        padding: 2rem 1.5rem;
+    }
+    
+    .benefits-grid {
+        grid-template-columns: 1fr;
     }
     
     .form-actions {
@@ -3209,5 +3324,25 @@ input:focus, textarea:focus, select:focus {
     
     .form-actions button {
         width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-content {
+        width: 98%;
+        margin: 0.5rem;
+    }
+    
+    .modal-header {
+        padding: 1.25rem 1.25rem 0.75rem;
+    }
+    
+    .modal-body {
+        padding: 1.5rem 1.25rem;
+    }
+    
+    .form-group input {
+        padding: 14px 16px;
+        font-size: 1rem;
     }
 }
