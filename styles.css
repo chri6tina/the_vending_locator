@@ -3751,3 +3751,233 @@ input:focus, textarea:focus, select:focus {
         margin: 0 0.5rem;
     }
 }
+
+/* Mobile Pricing Accordion - Fixed */
+.pricing-mobile {
+    display: none;
+    padding: 2rem 0;
+}
+
+.mobile-pricing {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.mobile-package {
+    background: var(--soft-cream);
+    border-radius: var(--border-radius-medium);
+    border: 1px solid var(--border-warm);
+    overflow: hidden;
+    box-shadow: 0 4px 16px var(--shadow-warm);
+    transition: all 0.3s ease;
+}
+
+.mobile-package:hover {
+    box-shadow: 0 8px 25px var(--shadow-warm);
+    transform: translateY(-2px);
+}
+
+.package-header {
+    background: linear-gradient(135deg, var(--muted-orange), var(--coral-accent));
+    color: white;
+    padding: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.package-header:hover {
+    background: linear-gradient(135deg, var(--coral-accent), var(--muted-orange));
+}
+
+.package-header h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+}
+
+.package-header i {
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+    color: white;
+}
+
+.package-header.active i {
+    transform: rotate(45deg);
+}
+
+.package-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    background: white;
+    padding: 0 1.5rem;
+}
+
+.package-content.active {
+    max-height: 1000px;
+    padding: 1.5rem;
+}
+
+.package-content p {
+    color: var(--muted-text);
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.package-content h4 {
+    color: var(--warm-charcoal);
+    margin: 1.5rem 0 0.75rem 0;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+}
+
+.package-content h4:first-of-type {
+    margin-top: 1rem;
+}
+
+.package-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
+}
+
+.package-content li {
+    color: var(--muted-text);
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.package-content li:before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--muted-orange);
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.package-content li:last-child {
+    margin-bottom: 0;
+}
+
+.package-content .btn-primary {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    background: linear-gradient(135deg, var(--muted-orange), var(--coral-accent));
+    color: white;
+    border: none;
+    border-radius: var(--border-radius-soft);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Inter', sans-serif;
+}
+
+.package-content .btn-primary:hover {
+    background: linear-gradient(135deg, var(--coral-accent), var(--muted-orange));
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px var(--shadow-soft);
+}
+
+/* Mobile Responsive for Pricing */
+@media (max-width: 768px) {
+    .pricing-table-section {
+        padding: 2rem 0;
+    }
+    
+    .pricing-table {
+        display: none; /* Hide desktop table on mobile */
+    }
+    
+    .pricing-mobile {
+        display: block;
+        padding: 2rem 1rem;
+    }
+    
+    .mobile-pricing {
+        gap: 1.5rem;
+    }
+    
+    .mobile-package {
+        margin-bottom: 1.5rem;
+    }
+    
+    .package-header {
+        padding: 1.5rem;
+    }
+    
+    .package-content {
+        padding: 0 1.5rem;
+    }
+    
+    .package-content.active {
+        padding: 1.5rem;
+    }
+    
+    .package-content .btn-primary {
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .pricing-mobile {
+        padding: 1.5rem 0.75rem;
+    }
+    
+    .mobile-pricing {
+        gap: 1rem;
+    }
+    
+    .mobile-package {
+        margin-bottom: 1rem;
+    }
+    
+    .package-header {
+        padding: 1.25rem;
+    }
+    
+    .package-header h3 {
+        font-size: 1.1rem;
+    }
+    
+    .package-content {
+        padding: 0 1.25rem;
+    }
+    
+    .package-content.active {
+        padding: 1.25rem;
+    }
+    
+    .package-content p {
+        font-size: 0.9rem;
+    }
+    
+    .package-content h4 {
+        font-size: 0.95rem;
+    }
+    
+    .package-content li {
+        font-size: 0.85rem;
+    }
+    
+    .package-content .btn-primary {
+        padding: 0.875rem 1.5rem;
+        font-size: 0.95rem;
+    }
+}

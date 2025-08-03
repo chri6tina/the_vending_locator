@@ -111,7 +111,7 @@ function initInteractivePricing() {
     });
 }
 
-// Mobile Pricing Accordion
+// Mobile Pricing Accordion Functionality
 document.addEventListener('DOMContentLoaded', function() {
     const packageHeaders = document.querySelectorAll('.package-header');
     
@@ -120,26 +120,36 @@ document.addEventListener('DOMContentLoaded', function() {
             const content = this.nextElementSibling;
             const icon = this.querySelector('i');
             
-            // Toggle active class on header
+            // Close all other packages
+            packageHeaders.forEach(otherHeader => {
+                if (otherHeader !== this) {
+                    const otherContent = otherHeader.nextElementSibling;
+                    const otherIcon = otherHeader.querySelector('i');
+                    otherContent.classList.remove('active');
+                    otherHeader.classList.remove('active');
+                    otherIcon.style.transform = 'rotate(0deg)';
+                }
+            });
+            
+            // Toggle current package
+            content.classList.toggle('active');
             this.classList.toggle('active');
             
-            // Toggle content visibility
-            if (content.style.display === 'block') {
-                content.style.display = 'none';
-                content.classList.remove('active');
+            // Rotate icon
+            if (content.classList.contains('active')) {
+                icon.style.transform = 'rotate(45deg)';
             } else {
-                content.style.display = 'block';
-                content.classList.add('active');
+                icon.style.transform = 'rotate(0deg)';
             }
         });
     });
-
+    
     // Initialize interactive pricing
     initInteractivePricing();
-
+    
     // Initialize live counter
-    initLiveCounter();
-
+    startLiveCounter(); // Changed from initLiveCounter() to startLiveCounter()
+    
     // Enhanced FAQ Accordion with Fun Interactions
     const faqItems = document.querySelectorAll('.faq-accordion-item');
     
