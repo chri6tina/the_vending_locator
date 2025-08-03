@@ -13,32 +13,46 @@ document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', 
     navMenu.classList.remove('active');
 }));
 
-// Live Counter Animation
-function initLiveCounter() {
-    const counterElement = document.getElementById('liveCounter');
-    if (!counterElement) return;
-
-    // Start with a random number between 20-100
-    let currentCount = Math.floor(Math.random() * 81) + 20;
-    counterElement.textContent = currentCount;
-
-    // Update counter every 3-8 seconds
-    setInterval(() => {
-        // Randomly increase or decrease by 1-3
-        const change = Math.random() > 0.5 ? 
-            Math.floor(Math.random() * 3) + 1 : 
-            -(Math.floor(Math.random() * 3) + 1);
-        
-        currentCount = Math.max(20, Math.min(100, currentCount + change));
-        counterElement.textContent = currentCount;
-        
-        // Add a subtle animation
-        counterElement.style.transform = 'scale(1.1)';
-        setTimeout(() => {
-            counterElement.style.transform = 'scale(1)';
-        }, 200);
-    }, Math.random() * 5000 + 3000); // Random interval between 3-8 seconds
+// Live User Counter
+function updateLiveCounter() {
+    const counter = document.getElementById('liveCounter');
+    if (!counter) return;
+    
+    // Realistic range of users getting their list
+    const minUsers = 18;
+    const maxUsers = 42;
+    
+    // Generate a realistic number
+    const newCount = Math.floor(Math.random() * (maxUsers - minUsers + 1)) + minUsers;
+    
+    // Animate the number change
+    counter.style.transform = 'scale(1.1)';
+    counter.style.color = '#60a5fa';
+    
+    setTimeout(() => {
+        counter.textContent = newCount;
+        counter.style.transform = 'scale(1)';
+        counter.style.color = '#3b82f6';
+    }, 150);
 }
+
+// Update counter every 3-8 seconds (realistic intervals)
+function startLiveCounter() {
+    updateLiveCounter();
+    
+    // Random interval between 3-8 seconds
+    const interval = Math.random() * 5000 + 3000;
+    setTimeout(startLiveCounter, interval);
+}
+
+// Start the live counter when page loads
+document.addEventListener('DOMContentLoaded', function() {
+    // Start the live counter after a short delay
+    setTimeout(startLiveCounter, 2000);
+    
+    // Also update immediately for better UX
+    setTimeout(updateLiveCounter, 1000);
+});
 
 // Interactive Pricing Tabs
 function initInteractivePricing() {
