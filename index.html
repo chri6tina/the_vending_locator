@@ -844,11 +844,14 @@
     </footer>
 
     <!-- Purchase Form Modal -->
-    <div id="purchase-modal" class="modal">
+    <div id="purchase-modal" class="modal-overlay">
         <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Complete Your Purchase</h2>
-            <p>Please provide your information to receive your vending location list.</p>
+            <div class="modal-header">
+                <h2>Complete Your Purchase</h2>
+                <button class="close" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Please provide your information to receive your vending location list.</p>
             
             <form action="https://formspree.io/f/xdkgqele" method="POST" class="purchase-form">
                 <!-- Hidden fields for package info -->
@@ -892,11 +895,15 @@
             document.getElementById('package-summary').value = `${packageName} - $${packagePrice}`;
             
             // Show the modal
-            document.getElementById('purchase-modal').style.display = 'block';
+            const modal = document.getElementById('purchase-modal');
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
         }
 
         function closeModal() {
-            document.getElementById('purchase-modal').style.display = 'none';
+            const modal = document.getElementById('purchase-modal');
+            modal.classList.remove('active');
+            document.body.style.overflow = 'auto';
         }
 
         // Handle form submission
@@ -941,9 +948,6 @@
                     closeModal();
                 }
             }
-            
-            // Close modal with X button
-            document.querySelector('.close').onclick = closeModal;
         });
     </script>
 </body>
