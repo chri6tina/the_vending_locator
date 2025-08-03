@@ -3164,21 +3164,23 @@ input:focus, textarea:focus, select:focus {
 /* Responsive Modal - Simplified */
 @media (max-width: 768px) {
     .modal-content {
-        width: 95%;
+        width: 90%;
         margin: 1rem;
-        max-width: none;
+        max-width: 400px;
+        max-height: 90vh;
+        overflow-y: auto;
     }
     
     .modal-header {
-        padding: 1.5rem 1.5rem 1rem;
+        padding: 1.25rem 1.25rem 0.75rem;
     }
     
     .modal-header h3 {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
     
     .modal-body {
-        padding: 1.5rem;
+        padding: 1.25rem;
     }
     
     .benefits-grid {
@@ -3198,30 +3200,40 @@ input:focus, textarea:focus, select:focus {
 
 @media (max-width: 480px) {
     .modal-content {
-        width: 98%;
+        width: 95%;
         margin: 0.5rem;
+        max-height: 85vh;
     }
     
     .modal-header {
-        padding: 1.25rem 1.25rem 0.75rem;
+        padding: 1rem 1rem 0.5rem;
+    }
+    
+    .modal-header h3 {
+        font-size: 1.2rem;
     }
     
     .modal-body {
-        padding: 1.25rem;
+        padding: 1rem;
     }
     
     .form-group input {
-        padding: 12px 14px;
+        padding: 10px 12px;
         font-size: 1rem;
     }
     
     .benefits-section {
-        padding: 1rem;
+        padding: 0.75rem;
     }
     
     .benefit-item {
         padding: 0.5rem;
         font-size: 0.8rem;
+    }
+    
+    .form-actions button {
+        padding: 12px 20px;
+        font-size: 0.9rem;
     }
 }
 
@@ -4173,6 +4185,9 @@ input:focus, textarea:focus, select:focus {
     font-weight: 600;
     font-family: 'Inter', sans-serif;
     z-index: 1;
+    max-width: 80px;
+    text-align: center;
+    line-height: 1.2;
 }
 
 .mobile-package-header {
@@ -4186,6 +4201,7 @@ input:focus, textarea:focus, select:focus {
     border-bottom: 1px solid var(--border-warm);
     position: relative;
     gap: 1rem;
+    padding-right: 6rem; /* Add space for the "Most Popular" badge */
 }
 
 .mobile-package-header::before {
@@ -4359,6 +4375,7 @@ input:focus, textarea:focus, select:focus {
     
     .mobile-package-header {
         padding: 1rem 1.5rem;
+        padding-right: 5rem; /* Ensure space for badge on mobile */
     }
     
     .mobile-package-header h3 {
@@ -4393,5 +4410,6 @@ input:focus, textarea:focus, select:focus {
         right: 6px;
         font-size: 0.65rem;
         padding: 3px 6px;
+        max-width: 70px;
     }
 }
