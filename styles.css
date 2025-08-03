@@ -4253,6 +4253,8 @@ input:focus, textarea:focus, select:focus {
 .lead-count {
     color: var(--warm-charcoal) !important;
     font-weight: 600 !important;
+    padding-top: 0.5rem !important;
+    margin-bottom: 0.25rem !important;
 }
 
 .lead-count::before {
@@ -4377,6 +4379,8 @@ input:focus, textarea:focus, select:focus {
     
     .lead-count {
         font-size: 1rem !important;
+        padding-top: 0.75rem !important;
+        margin-bottom: 0.5rem !important;
     }
     
     .mobile-checkout-btn {
