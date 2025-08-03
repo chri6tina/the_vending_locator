@@ -8,11 +8,17 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Nunito', 'Montserrat', sans-serif;
     line-height: 1.6;
     color: #2c3e50;
     background-color: #ffffff;
+    overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 .container {
@@ -400,16 +406,20 @@ p {
     }
     
     .hero-container {
-        padding: 0 15px;
+        padding: 0 20px;
         display: flex;
         justify-content: center;
         align-items: center;
+        max-width: 100%;
+        box-sizing: border-box;
     }
     
     .hero-content {
         max-width: 100%;
         width: 100%;
         text-align: center;
+        padding: 0 10px;
+        box-sizing: border-box;
     }
     
     .hero-badge {
@@ -520,15 +530,19 @@ p {
     }
 
     .hero-container {
-        padding: 0 10px;
+        padding: 0 15px;
         display: flex;
         justify-content: center;
         align-items: center;
+        max-width: 100%;
+        box-sizing: border-box;
     }
     
     .hero-content {
         width: 100%;
         text-align: center;
+        padding: 0 8px;
+        box-sizing: border-box;
     }
 
     .hero-badge {
@@ -606,14 +620,19 @@ p {
     }
     
     .hero-container {
+        padding: 0 12px;
         display: flex;
         justify-content: center;
         align-items: center;
+        max-width: 100%;
+        box-sizing: border-box;
     }
     
     .hero-content {
         width: 100%;
         text-align: center;
+        padding: 0 5px;
+        box-sizing: border-box;
     }
 
     .hero-title {
@@ -2845,6 +2864,8 @@ p {
 @media (max-width: 480px) {
     .container {
         padding: 0 15px;
+        max-width: 100%;
+        box-sizing: border-box;
     }
 
     .hero {
