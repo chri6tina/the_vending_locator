@@ -111,44 +111,62 @@ function initInteractivePricing() {
     });
 }
 
-// Mobile Pricing Accordion Functionality
+// Mobile Pricing Accordion Functionality - Fixed
 document.addEventListener('DOMContentLoaded', function() {
+    // Mobile pricing accordion functionality
     const packageHeaders = document.querySelectorAll('.package-header');
     
-    packageHeaders.forEach(header => {
-        header.addEventListener('click', function() {
-            const content = this.nextElementSibling;
-            const icon = this.querySelector('i');
-            
-            // Close all other packages
-            packageHeaders.forEach(otherHeader => {
-                if (otherHeader !== this) {
-                    const otherContent = otherHeader.nextElementSibling;
-                    const otherIcon = otherHeader.querySelector('i');
-                    otherContent.classList.remove('active');
-                    otherHeader.classList.remove('active');
-                    otherIcon.style.transform = 'rotate(0deg)';
+    if (packageHeaders.length > 0) {
+        packageHeaders.forEach(header => {
+            header.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                
+                const content = this.nextElementSibling;
+                const icon = this.querySelector('i');
+                
+                // Close all other packages
+                packageHeaders.forEach(otherHeader => {
+                    if (otherHeader !== this) {
+                        const otherContent = otherHeader.nextElementSibling;
+                        const otherIcon = otherHeader.querySelector('i');
+                        otherContent.classList.remove('active');
+                        otherHeader.classList.remove('active');
+                        if (otherIcon) {
+                            otherIcon.style.transform = 'rotate(0deg)';
+                        }
+                    }
+                });
+                
+                // Toggle current package
+                const isActive = content.classList.contains('active');
+                
+                if (isActive) {
+                    content.classList.remove('active');
+                    this.classList.remove('active');
+                    if (icon) {
+                        icon.style.transform = 'rotate(0deg)';
+                    }
+                } else {
+                    content.classList.add('active');
+                    this.classList.add('active');
+                    if (icon) {
+                        icon.style.transform = 'rotate(45deg)';
+                    }
                 }
             });
-            
-            // Toggle current package
-            content.classList.toggle('active');
-            this.classList.toggle('active');
-            
-            // Rotate icon
-            if (content.classList.contains('active')) {
-                icon.style.transform = 'rotate(45deg)';
-            } else {
-                icon.style.transform = 'rotate(0deg)';
-            }
         });
-    });
+    }
     
     // Initialize interactive pricing
-    initInteractivePricing();
+    if (typeof initInteractivePricing === 'function') {
+        initInteractivePricing();
+    }
     
     // Initialize live counter
-    startLiveCounter(); // Changed from initLiveCounter() to startLiveCounter()
+    if (typeof startLiveCounter === 'function') {
+        startLiveCounter();
+    }
     
     // Enhanced FAQ Accordion with Fun Interactions
     const faqItems = document.querySelectorAll('.faq-accordion-item');
