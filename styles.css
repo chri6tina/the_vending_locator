@@ -3170,28 +3170,16 @@ p {
     justify-content: space-between;
     align-items: center;
     padding: 1.75rem;
-    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
-    color: white;
+    background: #f8fafc;
+    color: #1e293b;
     cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
-    overflow: hidden;
+    border-bottom: 1px solid #e2e8f0;
 }
 
-.package-header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.package-header:hover::before {
-    opacity: 1;
+.package-header:hover {
+    background: #f1f5f9;
 }
 
 .package-header:hover {
@@ -3201,16 +3189,14 @@ p {
 .package-header h3 {
     margin: 0;
     font-size: 1.3rem;
-    font-weight: 700;
-    position: relative;
-    z-index: 1;
+    font-weight: 600;
+    color: #1e293b;
 }
 
 .package-header i {
     transition: all 0.3s ease;
-    position: relative;
-    z-index: 1;
     font-size: 1.1rem;
+    color: #64748b;
 }
 
 .package-header.active i {
