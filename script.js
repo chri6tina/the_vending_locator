@@ -116,23 +116,33 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize live counter
     initLiveCounter();
 
-    // FAQ Accordion
+    // FAQ Accordion Functionality
     const faqItems = document.querySelectorAll('.faq-accordion-item');
+    
     faqItems.forEach(item => {
         const question = item.querySelector('.faq-question');
         const answer = item.querySelector('.faq-answer');
+        const icon = question.querySelector('i');
         
-        question.addEventListener('click', () => {
+        question.addEventListener('click', function() {
             const isActive = item.classList.contains('active');
             
             // Close all other FAQ items
-            faqItems.forEach(faq => {
-                faq.classList.remove('active');
+            faqItems.forEach(otherItem => {
+                if (otherItem !== item) {
+                    otherItem.classList.remove('active');
+                    const otherIcon = otherItem.querySelector('.faq-question i');
+                    otherIcon.style.transform = 'rotate(0deg)';
+                }
             });
             
-            // Toggle current FAQ item
-            if (!isActive) {
+            // Toggle current item
+            if (isActive) {
+                item.classList.remove('active');
+                icon.style.transform = 'rotate(0deg)';
+            } else {
                 item.classList.add('active');
+                icon.style.transform = 'rotate(180deg)';
             }
         });
     });

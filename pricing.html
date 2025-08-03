@@ -154,7 +154,7 @@
                         <h4>Lead Radius search</h4>
                         <p>Once you share your zip code, we'll personalize the search to fit your area perfectly.</p>
                     </div>
-                    <div class="basic-value">25 miles</div>
+                    <div class="basic-value">15 miles</div>
                     <div class="pro-value">25 miles</div>
                     <div class="start-value">25 miles</div>
                     <div class="gold-value">25 miles</div>
@@ -208,6 +208,17 @@
                     <div class="gold-value">✓ Included</div>
                 </div>
                 
+                <div class="pricing-row">
+                    <div class="feature-info">
+                        <h4>Supplier List</h4>
+                        <p>Access to our curated list of reliable vending machine suppliers and product vendors.</p>
+                    </div>
+                    <div class="basic-value">—</div>
+                    <div class="pro-value">—</div>
+                    <div class="start-value">✓ Included</div>
+                    <div class="gold-value">✓ Included</div>
+                </div>
+                
                 <div class="pricing-section-header">
                     <h3>Machine Maintenance</h3>
                 </div>
@@ -253,6 +264,17 @@
                     <div class="feature-info">
                         <h4>Legally Register LLC & EIN</h4>
                         <p>To open a company bank account, you'll require an LLC and an EIN Number. We'll handle the legal formation of your company and obtain both for you. This process typically takes 7-10 business days upon receiving your information.</p>
+                    </div>
+                    <div class="basic-value">—</div>
+                    <div class="pro-value">—</div>
+                    <div class="start-value">—</div>
+                    <div class="gold-value">✓ Included</div>
+                </div>
+                
+                <div class="pricing-row">
+                    <div class="feature-info">
+                        <h4>LLC Operating Agreement Template</h4>
+                        <p>Complete template for your LLC operating agreement to ensure proper business structure.</p>
                     </div>
                     <div class="basic-value">—</div>
                     <div class="pro-value">—</div>
@@ -359,7 +381,7 @@
                             <li>Vending eCourse</li>
                             <li>Cold Call & Email Script</li>
                             <li>Supplier List</li>
-                            <li>Template for a Contract</li>
+                            <li>Contract Template</li>
                         </ul>
                     </div>
                 </div>
@@ -387,12 +409,12 @@
                             <li>Vending eCourse</li>
                             <li>Cold Call & Email Script</li>
                             <li>Supplier Lists</li>
-                            <li>Template for a Contract</li>
+                            <li>Contract Template</li>
                         </ul>
                         <h4>Legal</h4>
                         <ul>
                             <li>Register your LLC and obtain an EIN from the appropriate government authority. This is necessary in order to open a bank account.</li>
-                            <li>Template for an LLC Operating Agreement</li>
+                            <li>LLC Operating Agreement Template</li>
                         </ul>
                     </div>
                 </div>
@@ -712,6 +734,28 @@
                         block: 'start'
                     });
                 }
+            });
+        });
+        
+        // Mobile pricing accordion functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const packageHeaders = document.querySelectorAll('.package-header');
+            
+            packageHeaders.forEach(header => {
+                header.addEventListener('click', function() {
+                    const content = this.nextElementSibling;
+                    const icon = this.querySelector('i');
+                    
+                    // Toggle active class
+                    content.classList.toggle('active');
+                    
+                    // Rotate icon
+                    if (content.classList.contains('active')) {
+                        icon.style.transform = 'rotate(45deg)';
+                    } else {
+                        icon.style.transform = 'rotate(0deg)';
+                    }
+                });
             });
         });
         
