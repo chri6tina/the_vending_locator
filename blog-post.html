@@ -138,9 +138,33 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="contentful-config.js"></script>
-    <script src="contentful-service.js"></script>
-    <script src="blog-post-renderer.js"></script>
+    <script>
+        // Wait for Contentful SDK to load before initializing
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof contentful !== 'undefined') {
+                // Initialize Contentful client
+                const client = contentful.createClient({
+                    space: 'xpopyri6s8gv',
+                    accessToken: 'as1yT7ZCd27_ByA_MBu0lzJDQZVWmxafx2mfM-c9ooY',
+                    environment: 'master'
+                });
+                window.contentfulClient = client;
+                
+                // Load other scripts after Contentful is ready
+                const script1 = document.createElement('script');
+                script1.src = 'contentful-service.js';
+                document.body.appendChild(script1);
+                
+                script1.onload = function() {
+                    const script2 = document.createElement('script');
+                    script2.src = 'blog-post-renderer.js';
+                    document.body.appendChild(script2);
+                };
+            } else {
+                console.error('Contentful SDK not loaded');
+            }
+        });
+    </script>
     <script src="script.js"></script>
 </body>
 </html> 

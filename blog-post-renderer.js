@@ -7,7 +7,9 @@ class BlogPostRenderer {
 
     getSlugFromURL() {
         const path = window.location.pathname;
+        console.log('Current path:', path);
         const slug = path.split('/blog/')[1];
+        console.log('Extracted slug:', slug);
         return slug || null;
     }
 
@@ -51,17 +53,23 @@ class BlogPostRenderer {
     async loadBlogPost() {
         try {
             if (!this.slug) {
+                console.error('No slug found in URL');
                 this.showError('No blog post specified');
                 return;
             }
+
+            console.log('Loading blog post with slug:', this.slug);
 
             // Get the blog post from Contentful
             const post = await window.contentfulService.getBlogPostBySlug(this.slug);
             
             if (!post) {
+                console.error('Blog post not found in Contentful');
                 this.showError('Blog post not found');
                 return;
             }
+
+            console.log('Blog post loaded successfully:', post.title);
 
             // Update the page content
             this.updatePageContent(post);

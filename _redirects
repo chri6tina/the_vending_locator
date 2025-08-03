@@ -4,7 +4,7 @@
 /blog /blog.html 200
 /contact /contact.html 200
 
-# Handle blog post URLs
+# Handle blog post URLs - use 200 status for SPA routing
 /blog/* /blog-post.html 200
 
 # Redirect root to index
@@ -21,4 +21,7 @@
 /pricing/ /pricing.html 200
 /services/ /services.html 200
 /blog/ /blog.html 200
-/contact/ /contact.html 200 
+/contact/ /contact.html 200
+
+# Test page
+/test-blog /test-blog.html 200 
