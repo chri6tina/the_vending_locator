@@ -1150,6 +1150,7 @@ p {
 .page-hero .hero-cta {
     margin: 0;
     text-align: center;
+    margin-top: 1rem;
 }
 
 @media (max-width: 768px) {
