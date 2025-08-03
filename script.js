@@ -14,6 +14,8 @@ document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', 
 }));
 
 // Live User Counter
+let currentUserCount = 23; // Starting count
+
 function updateLiveCounter() {
     const counter = document.getElementById('liveCounter');
     if (!counter) return;
@@ -22,8 +24,14 @@ function updateLiveCounter() {
     const minUsers = 18;
     const maxUsers = 42;
     
-    // Generate a realistic number
-    const newCount = Math.floor(Math.random() * (maxUsers - minUsers + 1)) + minUsers;
+    // Change by 1-3 users (sometimes up, sometimes down)
+    const change = Math.random() > 0.5 ? 
+        Math.floor(Math.random() * 3) + 1 : 
+        -(Math.floor(Math.random() * 3) + 1);
+    
+    // Calculate new count within realistic bounds
+    const newCount = Math.max(minUsers, Math.min(maxUsers, currentUserCount + change));
+    currentUserCount = newCount;
     
     // Animate the number change
     counter.style.transform = 'scale(1.1)';
@@ -36,12 +44,12 @@ function updateLiveCounter() {
     }, 150);
 }
 
-// Update counter every 3-8 seconds (realistic intervals)
+// Update counter every 10-15 seconds (more realistic intervals)
 function startLiveCounter() {
     updateLiveCounter();
     
-    // Random interval between 3-8 seconds
-    const interval = Math.random() * 5000 + 3000;
+    // Random interval between 10-15 seconds
+    const interval = Math.random() * 5000 + 10000; // 10-15 seconds
     setTimeout(startLiveCounter, interval);
 }
 
