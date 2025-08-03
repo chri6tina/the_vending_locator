@@ -24,4 +24,7 @@
 /contact/ /contact.html 200
 
 # Test page
-/test-blog /test-blog.html 200 
+/test-blog /test-blog.html 200
+
+# Fallback for any 404s
+/* /index.html 404 
