@@ -4163,8 +4163,8 @@ input:focus, textarea:focus, select:focus {
 .mobile-package.featured::after {
     content: '⭐ Most Popular';
     position: absolute;
-    top: 12px;
-    right: 12px;
+    top: 8px;
+    right: 8px;
     background: linear-gradient(135deg, var(--muted-orange), var(--coral-accent));
     color: white;
     padding: 4px 8px;
@@ -4172,6 +4172,7 @@ input:focus, textarea:focus, select:focus {
     font-size: 0.7rem;
     font-weight: 600;
     font-family: 'Inter', sans-serif;
+    z-index: 1;
 }
 
 .mobile-package-header {
@@ -4184,6 +4185,7 @@ input:focus, textarea:focus, select:focus {
     transition: all 0.3s ease;
     border-bottom: 1px solid var(--border-warm);
     position: relative;
+    gap: 1rem;
 }
 
 .mobile-package-header::before {
@@ -4222,7 +4224,7 @@ input:focus, textarea:focus, select:focus {
 }
 
 .mobile-package-content {
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 2rem 2rem 2rem;
     background: var(--soft-cream);
 }
 
@@ -4288,7 +4290,7 @@ input:focus, textarea:focus, select:focus {
 
 .mobile-checkout-btn {
     width: 100%;
-    padding: 14px 28px;
+    padding: 16px 28px;
     font-size: 1rem;
     font-weight: 600;
     border-radius: var(--border-radius-soft);
@@ -4301,6 +4303,7 @@ input:focus, textarea:focus, select:focus {
     font-family: 'Inter', sans-serif;
     position: relative;
     overflow: hidden;
+    margin-top: 0.5rem;
 }
 
 .mobile-checkout-btn::before {
@@ -4365,7 +4368,7 @@ input:focus, textarea:focus, select:focus {
     }
     
     .mobile-package-content {
-        padding: 0 1.5rem;
+        padding: 0 1.5rem 1.5rem 1.5rem;
     }
     
     .package-info p {
@@ -4379,5 +4382,12 @@ input:focus, textarea:focus, select:focus {
     .mobile-checkout-btn {
         padding: 12px 24px;
         font-size: 0.9rem;
+    }
+    
+    .mobile-package.featured::after {
+        top: 6px;
+        right: 6px;
+        font-size: 0.65rem;
+        padding: 3px 6px;
     }
 }
