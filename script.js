@@ -590,4 +590,90 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// Make pricing table rows clickable
+document.addEventListener('DOMContentLoaded', function() {
+    // Add click handlers to pricing values
+    const pricingValues = document.querySelectorAll('.basic-value, .pro-value, .start-value, .gold-value');
+    
+    pricingValues.forEach(value => {
+        value.addEventListener('click', function() {
+            const packageName = this.className.split('-')[0].replace('value', '').charAt(0).toUpperCase() + 
+                              this.className.split('-')[0].replace('value', '').slice(1);
+            
+            let price, stripeUrl;
+            
+            switch(packageName.toLowerCase()) {
+                case 'basic':
+                    price = '19';
+                    stripeUrl = 'https://buy.stripe.com/aEU2929ZcfvQ10IdQT';
+                    break;
+                case 'pro':
+                    price = '29';
+                    stripeUrl = 'https://buy.stripe.com/4gwaFyfjw1F0gZG004';
+                    break;
+                case 'start':
+                    price = '129';
+                    stripeUrl = 'https://buy.stripe.com/3cs8xq2wKdnI6l24gl';
+                    break;
+                case 'gold':
+                    price = '899';
+                    stripeUrl = 'https://buy.stripe.com/dR614Y4ESgzU6l25kq';
+                    break;
+                default:
+                    return;
+            }
+            
+            openPurchaseModal(packageName, price, stripeUrl);
+        });
+    });
+    
+    // Add click handlers to entire pricing rows
+    const pricingRows = document.querySelectorAll('.pricing-row');
+    
+    pricingRows.forEach(row => {
+        row.addEventListener('click', function(e) {
+            // Don't trigger if clicking on a value (already handled above)
+            if (e.target.classList.contains('basic-value') || 
+                e.target.classList.contains('pro-value') || 
+                e.target.classList.contains('start-value') || 
+                e.target.classList.contains('gold-value')) {
+                return;
+            }
+            
+            // Find which column was clicked
+            const rect = this.getBoundingClientRect();
+            const clickX = e.clientX - rect.left;
+            const columnWidth = rect.width / 5; // 5 columns
+            
+            let packageName, price, stripeUrl;
+            
+            if (clickX >= columnWidth && clickX < columnWidth * 2) {
+                // Basic column
+                packageName = 'Basic';
+                price = '19';
+                stripeUrl = 'https://buy.stripe.com/aEU2929ZcfvQ10IdQT';
+            } else if (clickX >= columnWidth * 2 && clickX < columnWidth * 3) {
+                // Pro column
+                packageName = 'Pro';
+                price = '29';
+                stripeUrl = 'https://buy.stripe.com/4gwaFyfjw1F0gZG004';
+            } else if (clickX >= columnWidth * 3 && clickX < columnWidth * 4) {
+                // Start column
+                packageName = 'Start';
+                price = '129';
+                stripeUrl = 'https://buy.stripe.com/3cs8xq2wKdnI6l24gl';
+            } else if (clickX >= columnWidth * 4 && clickX < columnWidth * 5) {
+                // Gold column
+                packageName = 'Gold';
+                price = '899';
+                stripeUrl = 'https://buy.stripe.com/dR614Y4ESgzU6l25kq';
+            } else {
+                return; // Clicked on feature description column
+            }
+            
+            openPurchaseModal(packageName, price, stripeUrl);
+        });
+    });
+});
+
 console.log('The Vending Locator website loaded successfully!'); 
