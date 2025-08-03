@@ -375,6 +375,94 @@ p {
     overflow: hidden;
 }
 
+/* Enhanced Hero Social Proof Section */
+.hero-social-proof {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.social-proof-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(135deg, var(--muted-orange), var(--coral-accent));
+    color: white;
+    padding: 8px 16px;
+    border-radius: var(--border-radius-soft);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    font-family: 'Inter', sans-serif;
+    box-shadow: 0 4px 12px var(--shadow-soft);
+}
+
+.hero-stats-grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero-stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    background: rgba(250, 248, 243, 0.95);
+    border-radius: var(--border-radius-medium);
+    box-shadow: 0 4px 16px var(--shadow-warm);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--border-warm);
+    transition: all 0.3s ease;
+    min-width: 120px;
+}
+
+.hero-stat-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px var(--shadow-warm);
+}
+
+.hero-stat-icon {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, var(--muted-orange), var(--coral-accent));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-stat-number {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--muted-orange);
+    font-family: 'Playfair Display', serif;
+    line-height: 1;
+}
+
+.hero-stat-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--warm-charcoal);
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.hero-stat-divider {
+    width: 1px;
+    height: 60px;
+    background: linear-gradient(180deg, transparent, var(--border-warm), transparent);
+    opacity: 0.6;
+}
+
 .live-user-counter::before {
     content: '';
     position: absolute;
@@ -555,6 +643,28 @@ input:focus, textarea:focus, select:focus {
     .btn-large {
         padding: 16px 28px;
         font-size: 1rem;
+    }
+    
+    .hero-stats-grid {
+        gap: 1rem;
+        flex-direction: column;
+    }
+    
+    .hero-stat-item {
+        min-width: 100px;
+        padding: 0.8rem;
+    }
+    
+    .hero-stat-number {
+        font-size: 1.5rem;
+    }
+    
+    .hero-stat-label {
+        font-size: 0.7rem;
+    }
+    
+    .hero-stat-divider {
+        display: none;
     }
 }
 
