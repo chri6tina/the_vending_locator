@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Read our latest vending industry insights and tips from The Vending Locator blog.">
+    <title>Blog Post - The Vending Locator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Contentful SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>The Vending Locator</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="/" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/pricing" class="nav-link">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/blog" class="nav-link active">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/contact" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/pricing" class="nav-link btn-get-started">Get Started</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post Content -->
+    <article class="single-blog-post">
+        <div class="container">
+            <!-- Post Header -->
+            <header class="post-header">
+                <div class="post-category-badge">
+                    <span id="post-category">Vending Tips</span>
+                </div>
+                <h1 id="post-title">Loading...</h1>
+                <div class="post-meta">
+                    <span class="post-date" id="post-date">Loading...</span>
+                    <span class="post-read-time" id="post-read-time">Loading...</span>
+                </div>
+            </header>
+
+            <!-- Featured Image -->
+            <div class="post-featured-image" id="post-image">
+                <img src="https://via.placeholder.com/800x400?text=Loading..." alt="Blog post featured image">
+            </div>
+
+            <!-- Post Content -->
+            <div class="post-body">
+                <div class="post-intro" id="post-excerpt">
+                    <p>Loading...</p>
+                </div>
+                <div class="post-content" id="post-content">
+                    <p>Loading blog post content...</p>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="post-cta">
+                <h3>Ready to Find Your Next Vending Location?</h3>
+                <p>Get a curated list of high-traffic locations in your area within 3-5 days.</p>
+                <a href="/pricing" class="btn-primary btn-large">
+                    <i class="fas fa-rocket"></i>
+                    Get My Location List
+                </a>
+            </div>
+
+            <!-- Back to Blog -->
+            <div class="back-to-blog">
+                <a href="/blog" class="btn-secondary">
+                    <i class="fas fa-arrow-left"></i>
+                    Back to Blog
+                </a>
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>The Vending Locator</h3>
+                    <p>Helping vending machine business owners find profitable locations since 2023.</p>
+                    <div class="social-links">
+                        <a href="https://t.me/thevendinglocator" target="_blank" aria-label="Telegram Support">
+                            <i class="fab fa-telegram"></i>
+                            <span>@thevendinglocator</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/services">Services</a></li>
+                        <li><a href="/pricing">Pricing</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for vending tips and industry updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 The Vending Locator. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- Contentful Integration -->
+    <script src="contentful-config.js"></script>
+    <script src="contentful-service.js"></script>
+    <script>
+        // Blog Post Loader
+        class BlogPostLoader {
+            constructor() {
+                this.slug = this.getSlugFromURL();
+            }
+
+            getSlugFromURL() {
+                const path = window.location.pathname;
+                const slug = path.split('/blog/')[1];
+                return slug || null;
+            }
+
+            async loadBlogPost() {
+                try {
+                    if (!this.slug) {
+                        this.showError('No blog post specified');
+                        return;
+                    }
+
+                    // Get the blog post from Contentful
+                    const post = await window.contentfulService.getBlogPostBySlug(this.slug);
+                    
+                    if (!post) {
+                        this.showError('Blog post not found');
+                        return;
+                    }
+
+                    // Update the page content
+                    this.updatePageContent(post);
+                    
+                    // Update page title
+                    document.title = `${post.title} - The Vending Locator Blog`;
+
+                } catch (error) {
+                    console.error('Error loading blog post:', error);
+                    this.showError('Unable to load blog post');
+                }
+            }
+
+            updatePageContent(post) {
+                // Update title
+                const titleElement = document.getElementById('post-title');
+                if (titleElement) titleElement.textContent = post.title;
+
+                // Update category
+                const categoryElement = document.getElementById('post-category');
+                if (categoryElement) categoryElement.textContent = post.category || 'Vending Tips';
+
+                // Update date
+                const dateElement = document.getElementById('post-date');
+                if (dateElement) dateElement.textContent = this.formatDate(post.publishDate);
+
+                // Update read time
+                const readTimeElement = document.getElementById('post-read-time');
+                if (readTimeElement) readTimeElement.textContent = post.readTime || '5 min read';
+
+                // Update featured image
+                const imageElement = document.querySelector('#post-image img');
+                if (imageElement && post.featuredImage) {
+                    imageElement.src = post.featuredImage;
+                    imageElement.alt = post.title;
+                }
+
+                // Update excerpt
+                const excerptElement = document.getElementById('post-excerpt');
+                if (excerptElement) {
+                    excerptElement.innerHTML = `<p>${post.excerpt}</p>`;
+                }
+
+                // Update content
+                const contentElement = document.getElementById('post-content');
+                if (contentElement) {
+                    contentElement.innerHTML = post.content || '<p>Content not available.</p>';
+                }
+            }
+
+            formatDate(dateString) {
+                const date = new Date(dateString);
+                return date.toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric'
+                });
+            }
+
+            showError(message) {
+                const container = document.querySelector('.single-blog-post .container');
+                if (container) {
+                    container.innerHTML = `
+                        <div class="error-posts">
+                            <div class="error-icon">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </div>
+                            <h3>${message}</h3>
+                            <p>Please check the URL or return to the <a href="/blog">blog homepage</a>.</p>
+                        </div>
+                    `;
+                }
+            }
+        }
+
+        // Initialize blog post loader when DOM is loaded
+        document.addEventListener('DOMContentLoaded', async function() {
+            try {
+                // Wait for Contentful SDK to load
+                if (typeof contentful === 'undefined') {
+                    console.error('Contentful SDK not loaded');
+                    return;
+                }
+
+                // Initialize blog post loader
+                const blogPostLoader = new BlogPostLoader();
+                await blogPostLoader.loadBlogPost();
+
+            } catch (error) {
+                console.error('Error initializing blog post:', error);
+            }
+        });
+    </script>
+</body>
+</html> 

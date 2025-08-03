@@ -11,5 +11,8 @@
 /blog /blog.html 200
 /contact /contact.html 200
 
+# Handle blog post URLs
+/blog/* /blog-post.html 200
+
 # Redirect root to index
 / /index.html 200 
