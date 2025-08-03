@@ -2504,3 +2504,107 @@ input:focus, textarea:focus, select:focus {
         font-size: 1rem;
     }
 } 
+
+/* Pricing Actions - Minimalist Style */
+.pricing-actions {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.pricing-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+.pricing-buttons .btn-primary {
+    padding: 16px 32px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: var(--border-radius-soft);
+    background: linear-gradient(135deg, var(--muted-orange), var(--coral-accent));
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px var(--shadow-soft);
+    font-family: 'Inter', sans-serif;
+    min-width: 160px;
+}
+
+.pricing-buttons .btn-primary:hover {
+    background: linear-gradient(135deg, var(--coral-accent), var(--muted-orange));
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px var(--shadow-soft);
+}
+
+.pricing-buttons .featured-btn {
+    background: linear-gradient(135deg, var(--coral-accent), var(--muted-orange));
+    box-shadow: 0 6px 20px var(--shadow-soft);
+    position: relative;
+}
+
+.pricing-buttons .featured-btn::before {
+    content: 'Most Popular';
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: linear-gradient(135deg, var(--muted-orange), var(--coral-accent));
+    color: white;
+    padding: 4px 8px;
+    border-radius: var(--border-radius-soft);
+    font-size: 0.7rem;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+}
+
+.pricing-buttons .featured-btn:hover {
+    background: linear-gradient(135deg, var(--muted-orange), var(--coral-accent));
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px var(--shadow-soft);
+}
+
+.pricing-guarantee {
+    color: var(--muted-text);
+    font-size: 0.9rem;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    font-style: italic;
+}
+
+/* Responsive Design for Pricing Buttons */
+@media (max-width: 768px) {
+    .pricing-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+    }
+    
+    .pricing-buttons .btn-primary {
+        width: 100%;
+        max-width: 280px;
+        padding: 14px 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pricing-actions {
+        margin-top: 2rem;
+    }
+    
+    .pricing-buttons {
+        gap: 0.5rem;
+    }
+    
+    .pricing-buttons .btn-primary {
+        padding: 12px 24px;
+        font-size: 0.9rem;
+        min-width: 140px;
+    }
+    
+    .pricing-guarantee {
+        font-size: 0.8rem;
+    }
+}
