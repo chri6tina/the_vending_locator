@@ -165,7 +165,6 @@
             </div>
             <div class="steps-container">
                 <div class="step retro-illustration">
-                    <div class="step-number">1</div>
                     <div class="step-icon">
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
@@ -173,7 +172,6 @@
                     <p>Enter your zip code and email address to tell us where you want to expand your vending business.</p>
                 </div>
                 <div class="step retro-illustration">
-                    <div class="step-number">2</div>
                     <div class="step-icon">
                         <i class="fas fa-search"></i>
                     </div>
@@ -181,7 +179,6 @@
                     <p>Our team researches and verifies high-traffic locations in your target area, finding the best opportunities.</p>
                 </div>
                 <div class="step retro-illustration">
-                    <div class="step-number">3</div>
                     <div class="step-icon">
                         <i class="fas fa-list-alt"></i>
                     </div>
@@ -805,38 +802,53 @@
     <div id="purchase-modal" class="modal-overlay">
         <div class="modal-content">
             <div class="modal-header">
-                <h2>Complete Your Purchase</h2>
-                <button class="close" onclick="closeModal()">&times;</button>
+                <h3 id="modal-package-title">Purchase Package</h3>
+                <p id="modal-package-description">You're about to purchase a package</p>
             </div>
             <div class="modal-body">
-                <p>Please provide your information to receive your vending location list.</p>
-            
-            <form action="https://formspree.io/f/xdkgqele" method="POST" class="purchase-form">
-                <!-- Hidden fields for package info -->
-                <input type="hidden" name="package_name" id="package-name">
-                <input type="hidden" name="package_price" id="package-price">
-                <input type="hidden" name="stripe_link" id="stripe-link">
-                
-                <div class="form-group">
-                    <label for="email">Email Address *</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="zipcode">Zip Code *</label>
-                    <input type="text" id="zipcode" name="zipcode" pattern="[0-9]{5}" placeholder="12345" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="package-summary">Selected Package</label>
-                    <input type="text" id="package-summary" readonly>
-                </div>
-                
-                <div class="form-actions">
-                    <button type="submit" class="btn-primary">Proceed to Payment</button>
-                    <button type="button" class="btn-secondary" onclick="closeModal()">Cancel</button>
-                </div>
-            </form>
+                <form action="https://formspree.io/f/xdkgqele" method="POST" class="purchase-form" id="purchase-form">
+                    <input type="hidden" name="package_name" id="package-name">
+                    <input type="hidden" name="package_price" id="package-price">
+                    <input type="hidden" name="stripe_link" id="stripe-link">
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="zipcode">Zip Code *</label>
+                        <input type="text" id="zipcode" name="zipcode" pattern="[0-9]{5}" placeholder="12345" required>
+                    </div>
+                    
+                    <div class="benefits-section">
+                        <div class="benefits-title">What's Included:</div>
+                        <div class="benefits-grid">
+                            <div class="benefit-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Customized location list for your area</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-building"></i>
+                                <span>Detailed business information</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-shipping-fast"></i>
+                                <span>Fast delivery (3-5 days)</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>30-day money-back guarantee</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn-primary">Complete Purchase</button>
+                        <button type="button" class="btn-secondary" onclick="closeModal()">Cancel</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 
@@ -844,68 +856,72 @@
     <script>
         // Purchase form functionality
         function openPurchaseModal(packageName, packagePrice, stripeLink) {
+            // Update modal content
+            document.getElementById('modal-package-title').textContent = `Purchase ${packageName} Package`;
+            document.getElementById('modal-package-description').textContent = `You're about to purchase the ${packageName} package for $${packagePrice}`;
+            
             // Set the hidden fields
             document.getElementById('package-name').value = packageName;
             document.getElementById('package-price').value = packagePrice;
             document.getElementById('stripe-link').value = stripeLink;
             
-            // Set the visible package summary
-            document.getElementById('package-summary').value = `${packageName} - $${packagePrice}`;
-            
             // Show the modal
             const modal = document.getElementById('purchase-modal');
             modal.classList.add('active');
             document.body.style.overflow = 'hidden';
+            document.body.classList.add('modal-open');
         }
 
         function closeModal() {
             const modal = document.getElementById('purchase-modal');
-            modal.classList.remove('active');
-            document.body.style.overflow = 'auto';
+            if (modal) {
+                modal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+                document.body.classList.remove('modal-open');
+            }
         }
 
         // Handle form submission
         document.addEventListener('DOMContentLoaded', function() {
-            const purchaseForm = document.querySelector('.purchase-form');
+            const purchaseForm = document.getElementById('purchase-form');
             
-            purchaseForm.addEventListener('submit', function(e) {
-                e.preventDefault();
+            if (purchaseForm) {
+                // Remove any existing event listeners to prevent duplicates
+                const newForm = purchaseForm.cloneNode(true);
+                purchaseForm.parentNode.replaceChild(newForm, purchaseForm);
                 
-                // Get form data
-                const formData = new FormData(this);
-                const packageName = formData.get('package_name');
-                const stripeLink = formData.get('stripe_link');
-                
-                // Submit to Formspree
-                fetch(this.action, {
-                    method: 'POST',
-                    body: formData,
-                    headers: {
-                        'Accept': 'application/json'
-                    }
-                })
-                .then(response => response.json())
-                .then(data => {
-                    if (data.ok) {
-                        // Redirect to Stripe checkout
+                newForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Get form data
+                    const formData = new FormData(newForm);
+                    const stripeLink = formData.get('stripe_link');
+                    
+                    // Submit to Formspree
+                    fetch('https://formspree.io/f/xdkgqele', {
+                        method: 'POST',
+                        body: formData,
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    })
+                    .then(response => {
+                        // Always redirect to Stripe after submission
                         window.location.href = stripeLink;
-                    } else {
-                        alert('There was an error. Please try again.');
-                    }
-                })
-                .catch(error => {
-                    console.error('Error:', error);
-                    alert('There was an error. Please try again.');
+                    })
+                    .catch(error => {
+                        // If error, still redirect to Stripe
+                        window.location.href = stripeLink;
+                    });
                 });
-            });
+            }
             
             // Close modal when clicking outside
-            window.onclick = function(event) {
-                const modal = document.getElementById('purchase-modal');
-                if (event.target === modal) {
+            document.addEventListener('click', function(e) {
+                if (e.target.classList.contains('modal-overlay')) {
                     closeModal();
                 }
-            }
+            });
         });
     </script>
 </body>

@@ -595,7 +595,7 @@
         function openPurchaseModal(package, price, stripeUrl) {
             // Create modal HTML with Formspree form
             const modalHTML = `
-                <div class="modal-overlay active">
+                <div id="purchase-modal" class="modal-overlay active">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h3>Purchase ${package} Package</h3>
@@ -645,45 +645,59 @@
                 </div>
             `;
 
+            // Remove any existing modal first
+            const existingModal = document.getElementById('purchase-modal');
+            if (existingModal) {
+                existingModal.remove();
+            }
+
             // Add modal to page
             document.body.insertAdjacentHTML('beforeend', modalHTML);
 
             // Prevent body scroll
             document.body.style.overflow = 'hidden';
+            document.body.classList.add('modal-open');
 
             // Handle form submission
             const form = document.getElementById('purchase-form');
-            form.addEventListener('submit', function(e) {
-                e.preventDefault();
+            if (form) {
+                // Remove any existing event listeners to prevent duplicates
+                const newForm = form.cloneNode(true);
+                form.parentNode.replaceChild(newForm, form);
+                
+                newForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
 
-                // Get form data
-                const formData = new FormData(form);
-                const stripeLink = formData.get('stripe_link');
+                    // Get form data
+                    const formData = new FormData(newForm);
+                    const stripeLink = formData.get('stripe_link');
 
-                // Submit to Formspree
-                fetch('https://formspree.io/f/xdkgqele', {
-                    method: 'POST',
-                    body: formData,
-                    headers: {
-                        'Accept': 'application/json'
-                    }
-                })
-                .then(response => {
-                    // Always redirect to Stripe after submission
-                    window.location.href = stripeLink;
-                })
-                .catch(error => {
-                    // If error, still redirect to Stripe
-                    window.location.href = stripeLink;
+                    // Submit to Formspree
+                    fetch('https://formspree.io/f/xdkgqele', {
+                        method: 'POST',
+                        body: formData,
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    })
+                    .then(response => {
+                        // Always redirect to Stripe after submission
+                        window.location.href = stripeLink;
+                    })
+                    .catch(error => {
+                        // If error, still redirect to Stripe
+                        window.location.href = stripeLink;
+                    });
                 });
-            });
+            }
         }
         
         function closeModal() {
-            const modal = document.querySelector('.modal-overlay');
+            const modal = document.getElementById('purchase-modal');
             if (modal) {
                 modal.remove();
                 document.body.style.overflow = 'auto';
+                document.body.classList.remove('modal-open');
             }
         }
         

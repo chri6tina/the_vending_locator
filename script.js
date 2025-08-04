@@ -234,27 +234,49 @@ document.addEventListener('DOMContentLoaded', function() {
     // Lead form handling
     const locationForm = document.getElementById('locationForm');
     if (locationForm) {
-        locationForm.addEventListener('submit', function(e) {
+        locationForm.addEventListener('submit', async function(e) {
             e.preventDefault();
             
             const zipcode = document.getElementById('zipcode').value;
             const email = document.getElementById('email').value;
             
             if (zipcode && email) {
-                // Save lead to localStorage
-                const leads = JSON.parse(localStorage.getItem('vendingLeads') || '[]');
-                const newLead = {
-                    date: new Date().toISOString(),
-                    email: email,
-                    zipcode: zipcode,
-                    status: 'new'
-                };
-                leads.push(newLead);
-                localStorage.setItem('vendingLeads', JSON.stringify(leads));
-                
-                // Show success message
-                showNotification('Thank you! We\'ll send your hot leads alerts to ' + email + ' within 3-5 business days.', 'success');
-                locationForm.reset();
+                try {
+                    const response = await fetch('/.netlify/functions/subscribe', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            email: email,
+                            zipcode: zipcode,
+                            source: 'lead-form'
+                        })
+                    });
+
+                    const result = await response.json();
+                    
+                    if (result.success) {
+                        // Save lead to localStorage as backup
+                        const leads = JSON.parse(localStorage.getItem('vendingLeads') || '[]');
+                        const newLead = {
+                            date: new Date().toISOString(),
+                            email: email,
+                            zipcode: zipcode,
+                            status: 'new'
+                        };
+                        leads.push(newLead);
+                        localStorage.setItem('vendingLeads', JSON.stringify(leads));
+                        
+                        showNotification('Thank you! We\'ll research your area and send you hot leads soon. Check your email for confirmation.', 'success');
+                        locationForm.reset();
+                    } else {
+                        showNotification('Failed to submit. Please try again.', 'error');
+                    }
+                } catch (error) {
+                    console.error('Lead form error:', error);
+                    showNotification('Failed to submit. Please try again.', 'error');
+                }
             }
         });
     }
@@ -280,13 +302,38 @@ document.addEventListener('DOMContentLoaded', function() {
     // Newsletter form handling
     const newsletterForms = document.querySelectorAll('.newsletter-form');
     newsletterForms.forEach(form => {
-        form.addEventListener('submit', function(e) {
+        form.addEventListener('submit', async function(e) {
             e.preventDefault();
             
             const email = form.querySelector('input[type="email"]').value;
+            const zipcode = form.querySelector('input[name="zipcode"]')?.value || '';
+            
             if (email) {
-                showNotification('Thank you for subscribing to our newsletter!', 'success');
-                form.reset();
+                try {
+                    const response = await fetch('/.netlify/functions/subscribe', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            email: email,
+                            zipcode: zipcode,
+                            source: window.location.pathname
+                        })
+                    });
+
+                    const result = await response.json();
+                    
+                    if (result.success) {
+                        showNotification('Thank you for subscribing to our newsletter! Check your email for confirmation.', 'success');
+                        form.reset();
+                    } else {
+                        showNotification('Failed to subscribe. Please try again.', 'error');
+                    }
+                } catch (error) {
+                    console.error('Subscription error:', error);
+                    showNotification('Failed to subscribe. Please try again.', 'error');
+                }
             }
         });
     });
@@ -752,3 +799,31 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 console.log('The Vending Locator website loaded successfully!'); 
+
+// Modal functionality - Updated to work with dynamic modal creation
+function closeModal() {
+    const modal = document.getElementById('purchase-modal');
+    if (modal) {
+        modal.remove();
+        document.body.style.overflow = 'auto';
+        document.body.classList.remove('modal-open');
+    }
+}
+
+// Close modal when clicking outside
+document.addEventListener('click', function(event) {
+    const modal = document.getElementById('purchase-modal');
+    if (event.target === modal) {
+        closeModal();
+    }
+});
+
+// Close modal with Escape key
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        const modal = document.getElementById('purchase-modal');
+        if (modal && modal.classList.contains('active')) {
+            closeModal();
+        }
+    }
+}); 
