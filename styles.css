@@ -301,12 +301,14 @@ p {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     position: relative;
+    margin-bottom: 1rem;
+    display: inline-block;
 }
 
 .highlight::after {
     content: '';
     position: absolute;
-    bottom: -5px;
+    bottom: -8px;
     left: 0;
     right: 0;
     height: 3px;
