@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get instant access to hot, pre-qualified vending machine leads. Ready-to-contact locations across major cities. No research needed - just buy and start calling!">
+    <title>Hot Leads - Pre-Qualified Vending Locations | The Vending Locator</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>The Vending Locator</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="/" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/pricing" class="nav-link">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/hot-leads" class="nav-link active">Hot Leads</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/blog" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/contact" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/hot-leads" class="nav-link btn-get-started">Get Hot Leads</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero hot-leads-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-fire"></i>
+                    <span>Fresh Hot Leads - Updated Daily</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="highlight">Hot Leads</span><br>
+                    Ready to <span class="highlight">Convert</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Skip the research. Get instant access to pre-qualified vending machine locations that are ready to be contacted. No waiting, no research needed - just buy and start calling!
+                </p>
+                
+                <!-- Trust Indicators -->
+                <div class="trust-indicators">
+                    <div class="trust-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Pre-Qualified & Verified</span>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Updated Daily</span>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Money-Back Guarantee</span>
+                    </div>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">2,500+</span>
+                        <span class="stat-label">Hot Leads Available</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Cities Covered</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">95%</span>
+                        <span class="stat-label">Success Rate</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="hot-leads-search">
+        <div class="container">
+            <div class="search-container">
+                <h2>Find Hot Leads in Your Area</h2>
+                <p>Enter your zip code to see available hot leads nearby</p>
+                <div class="search-form">
+                    <input type="text" id="zip-search" placeholder="Enter your zip code (e.g., 10001)" maxlength="5">
+                    <button onclick="searchHotLeads()" class="btn-primary">Search Hot Leads</button>
+                </div>
+                <div class="search-results" id="search-results" style="display: none;">
+                    <div class="results-header">
+                        <h3>Hot Leads Found Near <span id="search-zip"></span></h3>
+                        <p><span id="lead-count">0</span> pre-qualified leads available</p>
+                    </div>
+                    <div class="results-grid" id="results-grid">
+                        <!-- Results will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Cities Section -->
+    <section class="featured-cities">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Hot Lead Cities</h2>
+                <p>Our most popular cities with the highest concentration of hot leads</p>
+            </div>
+            
+            <div class="cities-grid">
+                <div class="city-card">
+                    <div class="city-header">
+                        <h3>New York, NY</h3>
+                        <span class="lead-count">450+ Hot Leads</span>
+                    </div>
+                    <div class="city-stats">
+                        <div class="stat">
+                            <span class="stat-number">85%</span>
+                            <span class="stat-label">Success Rate</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">$2.5K</span>
+                            <span class="stat-label">Avg. Deal Value</span>
+                        </div>
+                    </div>
+                    <div class="city-categories">
+                        <span class="category-tag">Hotels</span>
+                        <span class="category-tag">Office Buildings</span>
+                        <span class="category-tag">Warehouses</span>
+                    </div>
+                    <a href="/hot-leads/new-york" class="btn-secondary">View NY Hot Leads</a>
+                </div>
+                
+                <div class="city-card">
+                    <div class="city-header">
+                        <h3>Los Angeles, CA</h3>
+                        <span class="lead-count">380+ Hot Leads</span>
+                    </div>
+                    <div class="city-stats">
+                        <div class="stat">
+                            <span class="stat-number">92%</span>
+                            <span class="stat-label">Success Rate</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">$3.1K</span>
+                            <span class="stat-label">Avg. Deal Value</span>
+                        </div>
+                    </div>
+                    <div class="city-categories">
+                        <span class="category-tag">Hotels</span>
+                        <span class="category-tag">Manufacturing</span>
+                        <span class="category-tag">Tech Companies</span>
+                    </div>
+                    <a href="/hot-leads/los-angeles" class="btn-secondary">View LA Hot Leads</a>
+                </div>
+                
+                <div class="city-card">
+                    <div class="city-header">
+                        <h3>Chicago, IL</h3>
+                        <span class="lead-count">320+ Hot Leads</span>
+                    </div>
+                    <div class="city-stats">
+                        <div class="stat">
+                            <span class="stat-number">88%</span>
+                            <span class="stat-label">Success Rate</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">$2.8K</span>
+                            <span class="stat-label">Avg. Deal Value</span>
+                        </div>
+                    </div>
+                    <div class="city-categories">
+                        <span class="category-tag">Hotels</span>
+                        <span class="category-tag">Office Buildings</span>
+                        <span class="category-tag">Distribution Centers</span>
+                    </div>
+                    <a href="/hot-leads/chicago" class="btn-secondary">View Chicago Hot Leads</a>
+                </div>
+                
+                <div class="city-card">
+                    <div class="city-header">
+                        <h3>Miami, FL</h3>
+                        <span class="lead-count">290+ Hot Leads</span>
+                    </div>
+                    <div class="city-stats">
+                        <div class="stat">
+                            <span class="stat-number">90%</span>
+                            <span class="stat-label">Success Rate</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">$2.9K</span>
+                            <span class="stat-label">Avg. Deal Value</span>
+                        </div>
+                    </div>
+                    <div class="city-categories">
+                        <span class="category-tag">Hotels</span>
+                        <span class="category-tag">Tourism</span>
+                        <span class="category-tag">Office Buildings</span>
+                    </div>
+                    <a href="/hot-leads/miami" class="btn-secondary">View Miami Hot Leads</a>
+                </div>
+                
+                <div class="city-card">
+                    <div class="city-header">
+                        <h3>Houston, TX</h3>
+                        <span class="lead-count">260+ Hot Leads</span>
+                    </div>
+                    <div class="city-stats">
+                        <div class="stat">
+                            <span class="stat-number">87%</span>
+                            <span class="stat-label">Success Rate</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">$2.7K</span>
+                            <span class="stat-label">Avg. Deal Value</span>
+                        </div>
+                    </div>
+                    <div class="city-categories">
+                        <span class="category-tag">Oil & Gas</span>
+                        <span class="category-tag">Manufacturing</span>
+                        <span class="category-tag">Office Buildings</span>
+                    </div>
+                    <a href="/hot-leads/houston" class="btn-secondary">View Houston Hot Leads</a>
+                </div>
+                
+                <div class="city-card">
+                    <div class="city-header">
+                        <h3>Phoenix, AZ</h3>
+                        <span class="lead-count">240+ Hot Leads</span>
+                    </div>
+                    <div class="city-stats">
+                        <div class="stat">
+                            <span class="stat-number">89%</span>
+                            <span class="stat-label">Success Rate</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">$2.6K</span>
+                            <span class="stat-label">Avg. Deal Value</span>
+                        </div>
+                    </div>
+                    <div class="city-categories">
+                        <span class="category-tag">Hotels</span>
+                        <span class="category-tag">Office Buildings</span>
+                        <span class="category-tag">Manufacturing</span>
+                    </div>
+                    <a href="/hot-leads/phoenix" class="btn-secondary">View Phoenix Hot Leads</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hot Leads Pricing -->
+    <section class="hot-leads-pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2>Hot Leads Pricing</h2>
+                <p>Choose the perfect package for your vending business</p>
+            </div>
+            
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <h3>Individual Leads</h3>
+                        <div class="price">$5<span>/lead</span></div>
+                    </div>
+                    <div class="card-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Pre-qualified business contact</li>
+                            <li><i class="fas fa-check"></i> Complete contact information</li>
+                            <li><i class="fas fa-check"></i> Business category & details</li>
+                            <li><i class="fas fa-check"></i> Verified phone & email</li>
+                            <li><i class="fas fa-check"></i> Instant download</li>
+                        </ul>
+                    </div>
+                    <button onclick="openHotLeadsModal('Individual', '5', 'https://buy.stripe.com/individual-leads')" class="btn-primary">Buy Individual Leads</button>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <div class="card-header">
+                        <h3>City Package</h3>
+                        <div class="price">$99<span>/city</span></div>
+                        <div class="popular-badge">Most Popular</div>
+                    </div>
+                    <div class="card-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> 50+ hot leads per city</li>
+                            <li><i class="fas fa-check"></i> All business categories</li>
+                            <li><i class="fas fa-check"></i> Complete contact details</li>
+                            <li><i class="fas fa-check"></i> Success rate guarantee</li>
+                            <li><i class="fas fa-check"></i> 30-day replacement policy</li>
+                        </ul>
+                    </div>
+                    <button onclick="openHotLeadsModal('City', '99', 'https://buy.stripe.com/city-package')" class="btn-primary">Buy City Package</button>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <h3>State Package</h3>
+                        <div class="price">$299<span>/state</span></div>
+                    </div>
+                    <div class="card-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> 200+ hot leads per state</li>
+                            <li><i class="fas fa-check"></i> Multiple cities included</li>
+                            <li><i class="fas fa-check"></i> Priority support</li>
+                            <li><i class="fas fa-check"></i> Monthly updates</li>
+                            <li><i class="fas fa-check"></i> Exclusive leads</li>
+                        </ul>
+                    </div>
+                    <button onclick="openHotLeadsModal('State', '299', 'https://buy.stripe.com/state-package')" class="btn-primary">Buy State Package</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How Hot Leads Work -->
+    <section class="how-hot-leads-work">
+        <div class="container">
+            <div class="section-header">
+                <h2>How Hot Leads Work</h2>
+                <p>Our proven process for delivering high-converting vending machine leads</p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>1. Research & Qualify</h3>
+                    <p>Our team researches thousands of businesses daily, identifying prime vending machine locations with high foot traffic and revenue potential.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>2. Contact Verification</h3>
+                    <p>We verify all contact information, ensuring phone numbers and email addresses are current and accurate for immediate outreach.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>3. Success Scoring</h3>
+                    <p>Each lead is scored based on location quality, business type, and historical success rates to maximize your conversion potential.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <h3>4. Instant Delivery</h3>
+                    <p>Get your hot leads instantly after purchase. No waiting, no research needed - just download and start calling immediately.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="success-stories">
+        <div class="container">
+            <div class="section-header">
+                <h2>Success Stories from Hot Leads</h2>
+                <p>See how our hot leads have helped vending operators grow their businesses</p>
+            </div>
+            
+            <div class="stories-grid">
+                <div class="story-card">
+                    <div class="story-header">
+                        <div class="story-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="story-info">
+                            <h4>Mike Rodriguez</h4>
+                            <span>Los Angeles, CA</span>
+                        </div>
+                    </div>
+                    <p>"Bought 50 hot leads for LA and closed 8 deals in the first month. The leads were spot-on and ready to convert. Made back my investment 3x over!"</p>
+                    <div class="story-stats">
+                        <span class="stat">8 deals closed</span>
+                        <span class="stat">$24K revenue</span>
+                    </div>
+                </div>
+                
+                <div class="story-card">
+                    <div class="story-header">
+                        <div class="story-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="story-info">
+                            <h4>Sarah Johnson</h4>
+                            <span>Chicago, IL</span>
+                        </div>
+                    </div>
+                    <p>"The Chicago hot leads package was incredible. Every business I called was actually interested. Closed 12 deals in 6 weeks. Best investment I've made!"</p>
+                    <div class="story-stats">
+                        <span class="stat">12 deals closed</span>
+                        <span class="stat">$36K revenue</span>
+                    </div>
+                </div>
+                
+                <div class="story-card">
+                    <div class="story-header">
+                        <div class="story-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="story-info">
+                            <h4>David Chen</h4>
+                            <span>Miami, FL</span>
+                        </div>
+                    </div>
+                    <p>"Hot leads saved me months of research. Bought the Miami package and had 6 machines placed within 30 days. The quality is unmatched!"</p>
+                    <div class="story-stats">
+                        <span class="stat">6 deals closed</span>
+                        <span class="stat">$18K revenue</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="hot-leads-faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Everything you need to know about our hot leads service</p>
+            </div>
+            
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What makes these "hot" leads?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our hot leads are pre-qualified businesses that have been researched for vending machine potential. We verify contact information, assess location quality, and score each lead based on success probability. These aren't just random business lists - they're carefully selected opportunities ready for immediate outreach.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How fresh are the leads?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We update our hot leads database daily. All contact information is verified within 48 hours of being added to our system. This ensures you're getting the most current and accurate information available.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What information do I get with each lead?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Each hot lead includes: business name, complete address, verified phone number, email address (when available), business category, employee count, and our success score. You'll also get notes about the location's vending potential and any special considerations.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you offer refunds if leads don't convert?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! We offer a 30-day money-back guarantee. If you're not satisfied with the quality of our hot leads, we'll either replace them with new leads or provide a full refund. We're confident in our lead quality and want you to succeed.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I buy leads for specific business types?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! Our city and state packages include leads from all major business categories (hotels, office buildings, warehouses, manufacturing, etc.). You can also request custom packages focused on specific business types if you have particular preferences.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How quickly can I start using the leads?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Immediately! All hot leads are delivered instantly after purchase. You'll receive a downloadable file with all the contact information, and you can start calling right away. No waiting period or processing time required.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="hot-leads-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Get Hot Leads?</h2>
+                <p>Join thousands of successful vending operators who've grown their businesses with our hot leads</p>
+                <div class="cta-buttons">
+                    <button onclick="scrollToSearch()" class="btn-primary">Search Your Area</button>
+                    <button onclick="openHotLeadsModal('City', '99', 'https://buy.stripe.com/city-package')" class="btn-secondary">Buy City Package</button>
+                </div>
+                <div class="cta-stats">
+                    <div class="stat">
+                        <span class="stat-number">2,500+</span>
+                        <span class="stat-label">Hot Leads Available</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">95%</span>
+                        <span class="stat-label">Success Rate</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">24hr</span>
+                        <span class="stat-label">Instant Delivery</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>The Vending Locator</h3>
+                    <p>Helping vending machine business owners find profitable locations since 2023.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/services">Services</a></li>
+                        <li><a href="/pricing">Pricing</a></li>
+                        <li><a href="/hot-leads">Hot Leads</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="/contact">Contact Us</a></li>
+                        <li><a href="/contact">Help Center</a></li>
+                        <li><a href="/contact">Refund Policy</a></li>
+                        <li><a href="/contact">Terms of Service</a></li>
+                        <li><a href="/contact">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for vending tips and industry updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 The Vending Locator. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Hot Leads Search Functionality
+        function searchHotLeads() {
+            const zipCode = document.getElementById('zip-search').value.trim();
+            if (!zipCode || zipCode.length !== 5) {
+                alert('Please enter a valid 5-digit zip code');
+                return;
+            }
+            
+            // Show loading state
+            const resultsDiv = document.getElementById('search-results');
+            const resultsGrid = document.getElementById('results-grid');
+            resultsDiv.style.display = 'block';
+            resultsGrid.innerHTML = '<div class="loading">Searching for hot leads...</div>';
+            
+            // Simulate search results (replace with actual API call)
+            setTimeout(() => {
+                displaySearchResults(zipCode);
+            }, 1500);
+        }
+        
+        function displaySearchResults(zipCode) {
+            const searchZip = document.getElementById('search-zip');
+            const leadCount = document.getElementById('lead-count');
+            const resultsGrid = document.getElementById('results-grid');
+            
+            searchZip.textContent = zipCode;
+            
+            // Mock data - replace with actual API response
+            const mockLeads = [
+                {
+                    business: "Hilton Garden Inn",
+                    address: "123 Main St, " + zipCode,
+                    phone: "(555) 123-4567",
+                    category: "Hotel",
+                    score: "95%"
+                },
+                {
+                    business: "ABC Manufacturing",
+                    address: "456 Industrial Blvd, " + zipCode,
+                    phone: "(555) 234-5678",
+                    category: "Manufacturing",
+                    score: "92%"
+                },
+                {
+                    business: "Downtown Office Complex",
+                    address: "789 Business Ave, " + zipCode,
+                    phone: "(555) 345-6789",
+                    category: "Office Building",
+                    score: "88%"
+                }
+            ];
+            
+            leadCount.textContent = mockLeads.length;
+            
+            let html = '';
+            mockLeads.forEach(lead => {
+                html += `
+                    <div class="lead-card">
+                        <div class="lead-header">
+                            <h4>${lead.business}</h4>
+                            <span class="success-score">${lead.score} Success Rate</span>
+                        </div>
+                        <div class="lead-details">
+                            <p><i class="fas fa-map-marker-alt"></i> ${lead.address}</p>
+                            <p><i class="fas fa-phone"></i> ${lead.phone}</p>
+                            <p><i class="fas fa-building"></i> ${lead.category}</p>
+                        </div>
+                        <button onclick="purchaseLead('${lead.business}', '5')" class="btn-primary">Buy This Lead - $5</button>
+                    </div>
+                `;
+            });
+            
+            resultsGrid.innerHTML = html;
+        }
+        
+        function purchaseLead(businessName, price) {
+            openHotLeadsModal('Individual', price, 'https://buy.stripe.com/individual-leads');
+        }
+        
+        function openHotLeadsModal(package, price, stripeUrl) {
+            const modalHTML = `
+                <div id="hot-leads-modal" class="modal-overlay active">
+                    <div class="modal-content">
+                        <button class="modal-close" onclick="closeHotLeadsModal()">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <div class="modal-header">
+                            <h3>${package} Hot Leads Package</h3>
+                            <div class="package-price">$${price}</div>
+                        </div>
+                        <div class="modal-body">
+                            <form action="https://formspree.io/f/xdkgqele" method="POST" class="purchase-form" id="hot-leads-form">
+                                <input type="hidden" name="package_name" value="${package} Hot Leads">
+                                <input type="hidden" name="package_price" value="${price}">
+                                <input type="hidden" name="stripe_link" value="${stripeUrl}">
+                                <div class="form-group">
+                                    <label for="hot-leads-email">Email Address *</label>
+                                    <input type="email" id="hot-leads-email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="hot-leads-zipcode">Zip Code *</label>
+                                    <input type="text" id="hot-leads-zipcode" name="zipcode" pattern="[0-9]{5}" placeholder="12345" required>
+                                </div>
+                                <div class="form-actions">
+                                    <button type="submit" class="btn-primary">Purchase Hot Leads</button>
+                                    <button type="button" class="btn-secondary" onclick="closeHotLeadsModal()">Cancel</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            // Remove any existing modal first
+            const existingModal = document.getElementById('hot-leads-modal');
+            if (existingModal) {
+                existingModal.remove();
+            }
+
+            // Add modal to page
+            document.body.insertAdjacentHTML('beforeend', modalHTML);
+
+            // Prevent body scroll
+            document.body.style.overflow = 'hidden';
+            document.body.classList.add('modal-open');
+
+            // Handle form submission
+            const form = document.getElementById('hot-leads-form');
+            if (form) {
+                const newForm = form.cloneNode(true);
+                form.parentNode.replaceChild(newForm, form);
+                
+                newForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+
+                    const formData = new FormData(newForm);
+                    const stripeLink = formData.get('stripe_link');
+
+                    fetch('https://formspree.io/f/xdkgqele', {
+                        method: 'POST',
+                        body: formData,
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    })
+                    .then(response => {
+                        window.location.href = stripeLink;
+                    })
+                    .catch(error => {
+                        window.location.href = stripeLink;
+                    });
+                });
+            }
+        }
+        
+        function closeHotLeadsModal() {
+            const modal = document.getElementById('hot-leads-modal');
+            if (modal) {
+                modal.remove();
+                document.body.style.overflow = 'auto';
+                document.body.classList.remove('modal-open');
+            }
+        }
+        
+        function scrollToSearch() {
+            document.getElementById('zip-search').scrollIntoView({
+                behavior: 'smooth',
+                block: 'center'
+            });
+            document.getElementById('zip-search').focus();
+        }
+        
+        // Close modal when clicking outside
+        document.addEventListener('click', function(e) {
+            if (e.target.classList.contains('modal-overlay')) {
+                closeHotLeadsModal();
+            }
+        });
+        
+        // FAQ Accordion
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const answer = this.nextElementSibling;
+                    const icon = this.querySelector('i');
+                    
+                    // Toggle active class
+                    answer.classList.toggle('active');
+                    
+                    // Rotate icon
+                    if (answer.classList.contains('active')) {
+                        icon.style.transform = 'rotate(180deg)';
+                    } else {
+                        icon.style.transform = 'rotate(0deg)';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html> 
