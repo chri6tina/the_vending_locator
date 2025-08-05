@@ -1,0 +1,93 @@
+[33m7ef31c4[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m Update website with retro design, admin panel, email backend, and improved styling
+[33m6da6ae3[m Update styles.css with latest changes
+[33m0c6bd92[m Fix navbar circle issue - hide hamburger menu on desktop
+[33m0c8f8fc[m Update styles.css with latest changes
+[33mdf3e037[m Update website with latest changes
+[33m86db39b[m Fix mobile pricing card spacing - improve button padding and badge positioning
+[33med5f1ff[m Add backup style files and clean styles
+[33me98312a[m Fix pricing button layout and padding issues - improve grid layout and button spacing
+[33mf2974a7[m Fix Most Popular badge collision with  price text
+[33md62f5e7[m Update styles with new design changes
+[33m343c4b4[m Fix mobile pricing section - replaced broken accordion with clean minimalist design
+[33m21fd5b1[m Fix mobile pricing dropdown CSS - adjust max-height transition for better accordion behavior
+[33mc7cbf0a[m Add debugging for mobile pricing section visibility - check if section is being displayed
+[33mfb6ae3a[m Fix favicon 404 errors - update pricing.html and site.webmanifest to use only SVG favicon
+[33m5254016[m Add debugging to mobile pricing accordion - console logs to identify why dropdowns aren't working
+[33m07a6658[m Fix favicon references - remove non-existent favicon files and use only SVG favicon
+[33mece3bec[m Fix home page modal - update modal structure to match pricing page CSS classes and functionality
+[33m7850cb3[m Add mobile pricing accordion to home page - include dropdown pricing cards for mobile users to see pricing options without navigation
+[33m2134ca2[m Fix mobile pricing dropdown functionality with minimalist design - ensure click events work properly and maintain clean aesthetic
+[33m623c0e6[m Fix mobile pricing accordion functionality - add proper dropdown behavior, smooth animations, and working purchase buttons for both home and pricing pages
+[33me6c2e6c[m Add comprehensive mobile optimization - fix navigation, hero section, pricing table, and overall mobile responsiveness for both home and pricing pages
+[33m0925dde[m Refine modal design for clean checkout - soften gradient header, improve typography hierarchy, adjust spacing, and remove scrolling for simple experience
+[33mdd34c75[m Enhance modal visibility and styling - improve contrast, add icons, replace checkmarks with grid layout, and enhance overall user experience
+[33m2019559[m Add missing modal styles - fix purchase modal visibility and functionality with proper CSS styling
+[33med0b48e[m Fix pricing table alignment and restore clickable functionality - add proper grid alignment, hover effects, and modal triggers for zip code collection
+[33m3c28b48[m Clean up pricing page - remove duplicate sections appearing under footer (Stats, CTA, Comparison, Enhanced CTA sections)
+[33m5aaf73b[m Create cool retro FAQ design with fun animations - add floating background, bouncing badge, sparkle effects, and enhanced interactions
+[33me226c1b[m Fix button alignment and add clickable pricing table - improve grid alignment and make pricing rows/values clickable with hover effects
+[33m0ad7293[m Align pricing buttons underneath each package column - create grid layout that matches pricing table structure
+[33ma9fcf38[m Redesign pricing actions to minimalist button layout - replace action cards with clean button row and single guarantee text
+[33mae5c80b[m Add retro styling to pricing page components - FAQ, stats, CTA sections, footer, and mobile pricing with interactive accordion functionality
+[33mb463673[m Fix sticky header and improve component consistency - Remove fixed positioning from navbar - Update hero section padding - Add retro texture to all sections - Improve z-index layering - Ensure consistent retro aesthetic throughout
+[33m464ea98[m Remove temporary file
+[33m70d2ea1[m Add professional enhancements to pricing page - Enhanced hero section with trust indicators - Added comparison section highlighting competitive advantages - Improved CTA section with benefits and actions - Enhanced pricing table styling - Added comprehensive responsive design
+[33meec5dae[m Fix pricing page and update partnership section
+[33mabe6899[m Redesign partnership section with retro aesthetic
+[33m6dd5743[m Fix alignment for Stay in the Loop form section - Ensure proper centering and spacing of form container - Add width: 100% to form elements for consistent alignment - Improve mobile responsiveness with proper margins - Keep form design exactly as requested while fixing layout issues
+[33m2afebd8[m Enhance hero social proof section for better cohesion - Add retro badge with 'Proven Track Record' text - Transform stat items with gradient icons and hover effects - Add warm cream backgrounds and soft shadows - Improve mobile responsiveness with stacked layout - Create cohesive visual flow with hero section
+[33ma04964e[m \Enhance pricing/results sections with retro design and remove AI references - Transform success results section with retro badges and enhanced stat cards - Add retro styling to pricing table with warm colors and gradients - Remove AI-Powered Lead Scoring, replace with Advanced Lead Scoring - Add hover effects and retro illustrations throughout - Improve mobile responsiveness for all enhanced sections"
+[33m0bd6c55[m Fix blog routing and Contentful initialization - Update _redirects for proper blog post routing - Fix Contentful SDK loading order in blog pages - Add debugging to blog post renderer - Create test page for debugging blog routing issues
+[33md1a4ef3[m Fix live user counter contrast and hero section spacing - Improve button readability with better text colors and contrast - Fix collision between hero badge and navigation bar by increasing top padding - Enhanced mobile responsiveness across all breakpoints
+[33m5e4294a[m Add additional redirects for trailing slashes to fix 404 errors
+[33m9e867e4[m Fix CTA button to clean blue design - remove purple gradient
+[33ma4e8fb8[m Make mobile pricing cards more minimalist and user-friendly with light design
+[33m6e18a4f[m Revert hero section to original beautiful minimalist design
+[33mcafd013[m Remove non-functional pricing button and upgrade mobile pricing design
+[33ma3c89cf[m Fix hero section spacing - prevent badge collision with navigation bar
+[33ma37b15b[m Fix blog functionality - add proper routing and Contentful integration
+[33m050ff7e[m Fix mobile layout - prevent content collision with sides and nav bar
+[33m41d1f39[m Fix live user counter - slower updates and realistic increments
+[33mc9e75a0[m Update hero section messaging and improve mobile responsiveness
+[33mfcd2796[m Update hero headline and subtitle for better SEO targeting
+[33ma558a73[m Move live user counter into hero section for better mobile compatibility
+[33mb486965[m Make live user counter realistic and dynamic with changing numbers
+[33mff36ffc[m Improve hero section spacing, add live user counter, and fix navbar collision
+[33m7b2bb43[m Restore missing hero section elements: stats, disclaimer, and CTA icon
+[33m0da06d4[m Revert hero section to simpler, cleaner single-column layout
+[33me0c1887[m Redesign hero section with two-column layout, illustration, and improved design matching the sample
+[33m1496c80[m Remove all stat cards completely for a cleaner, more focused hero section
+[33m538d91b[m Redesign stat cards with clean, minimal design using dividers instead of boxes
+[33m05e705f[m Make stat cards smaller and more proportional to hero section
+[33m56c1029[m Make hero section more substantial with larger fonts, padding, and spacing
+[33m40036c4[m Redesign hero section to be compact, professional, and fit within screen without scrolling
+[33m89d1fa4[m Revert to professional rectangular stat cards with better mobile responsiveness
+[33m691ca79[m Replace hero stats with professional circular design and fix mobile overflow issues
+[33meae282e[m Require email and zip code in pricing package modal, submit to Formspree, then redirect to Stripe
+[33ma461c69[m Redesign expectations section on homepage and add lead capture form with Formspree integration
+[33mb9bff1b[m Fix URL routing - ensure clean URLs work without .html extension
+[33m8c0a877[m Fix blog URL structure - use /blog/ slugs and update Contentful setup guide
+[33m4b1354f[m Add blog post template and routing - fix individual blog post display
+[33mc166013[m Fix mobile hero stats layout - prevent text collision and improve spacing
+[33m5cc9396[m Fix hero stats layout - make horizontal and more compact for better UX
+[33ma31582f[m Remove redundant sections and fix CTA spacing on pricing page
+[33ma6eaf60[m Make pricing page hero section minimalist - consistent with homepage design
+[33m132829c[m Enhance hero section with professional design - improved typography, spacing, and visual hierarchy while maintaining minimalist aesthetic
+[33m70a6df5[m Replace social media links with Telegram support - add @thevendinglocator for customer support
+[33mefe30d2[m Fix hero section layout - remove conflicting CSS that caused left alignment issues
+[33m437e9a6[m Update Contentful configuration with actual credentials
+[33m2ff5374[m Restore Contentful integration for blog functionality
+[33md0fd189[m Simplify project structure - remove unnecessary complexity and migration artifacts
+[33m1af25de[m Clean up migration artifacts and simplify project structure
+[33mcffff96[m Rebuild hero section with centered layout - fix left alignment issues
+[33m1f2d3a7[m Add favicon and improve website metadata for better professional appearance
+[33m51b84dc[m Fix URL structure for clean URLs and add _redirects file for proper routing
+[33mbc3ff2d[m Streamline pricing page to reduce visual clutter and focus attention on pricing table
+[33m699ef6a[m Add CNAME file for custom domain www.thevendinglocator.com
+[33m5ba0c66[m Enhance pricing page with compelling hero section, trust badges, value propositions, testimonials, urgency elements, and improved CTAs
+[33me336245[m Remove remaining green colors from homepage elements - hero-badge, step-icon, and benefit-icon
+[33m58bd407[m Revert color scheme back to blue theme for better contrast and visibility
+[33m0470f7e[m Update theme colors to green (#5ada86)
+[33m374da93[m Update GitHub Actions workflow to use official Pages deployment
+[33m09e8afd[m Fix GitHub Actions workflow for static site deployment
+[33m10cb246[m Initial commit - The Vending Locator website ready for deployment

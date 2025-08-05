@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get started with vending machine locations. Our Basic package delivers 50+ curated leads in 5 days for just $19. Perfect for beginners.">
+    <title>Basic Package - The Vending Locator</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16569722490">
+    </script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'AW-16569722490');
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>The Vending Locator</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="/" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/pricing" class="nav-link">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/blog" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/contact" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/pricing" class="nav-link btn-get-started">Get Started</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-rocket"></i>
+                    <span>Perfect for Beginners</span>
+                </div>
+                <h1 class="hero-title">
+                    Start Your <span class="highlight">Vending Journey</span><br>
+                    <span class="highlight">Today</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Get 50+ hand-picked vending locations delivered to your inbox in just 5 days. The perfect starting point for your vending machine business.
+                </p>
+                
+                <!-- Package Highlights -->
+                <div class="package-highlights">
+                    <div class="highlight-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>50+ Curated Locations</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-clock"></i>
+                        <span>5 Day Delivery</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-dollar-sign"></i>
+                        <span>Just $19</span>
+                    </div>
+                </div>
+                
+                <!-- CTA Button -->
+                <div class="hero-cta">
+                    <button onclick="openPurchaseModal('Basic', '19', 'https://buy.stripe.com/aEU2929ZcfvQ10IdQT')" class="btn-primary btn-large">
+                        <i class="fas fa-shopping-cart"></i>
+                        Get Basic Package - $19
+                    </button>
+                    <p class="cta-guarantee">30-Day Money-Back Guarantee</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What's Included Section -->
+    <section class="package-details">
+        <div class="container">
+            <div class="section-header">
+                <h2>What's Included in Your Basic Package</h2>
+                <p>Everything you need to get started with vending machine locations</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-list"></i>
+                    </div>
+                    <h3>50+ Location Leads</h3>
+                    <p>Hand-picked locations with high foot traffic and proven vending potential. Each location is researched and verified for optimal placement.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Delivery</h3>
+                    <p>Your complete location list delivered directly to your inbox within 5 business days. Easy to access and organize.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-map"></i>
+                    </div>
+                    <h3>Location Details</h3>
+                    <p>Complete contact information, business hours, and traffic patterns for each location to help you make informed decisions.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Basic Support</h3>
+                    <p>Email support to help you with any questions about your location list or getting started with vending.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Basic Section -->
+    <section class="why-choose">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose the Basic Package?</h2>
+                <p>Perfect for entrepreneurs just starting their vending machine journey</p>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-piggy-bank"></i>
+                    </div>
+                    <h3>Low Investment</h3>
+                    <p>Start with just $19 and see if vending machine locations are right for your business model.</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Learn the Process</h3>
+                    <p>Understand how location research works and what makes a good vending machine spot.</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Test Your Market</h3>
+                    <p>Validate your vending business idea with real location data before making larger investments.</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-arrow-up"></i>
+                    </div>
+                    <h3>Easy to Upgrade</h3>
+                    <p>Start with Basic and easily upgrade to Pro, Start, or Gold packages as your business grows.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Basic Package Customers Say</h2>
+                <p>Real feedback from entrepreneurs who started with our Basic package</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The Basic package was perfect for testing the waters. I got 50 great locations and landed my first vending machine deal within 2 weeks!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Sarah M.</strong>
+                        <span>New Vending Operator</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"For just $19, I got enough locations to start my vending business. The quality of leads was excellent and the delivery was fast."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Mike R.</strong>
+                        <span>Side Hustle Entrepreneur</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Started with Basic and upgraded to Pro after seeing the results. The Basic package gave me everything I needed to get started."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Jennifer L.</strong>
+                        <span>Vending Business Owner</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="package-faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Everything you need to know about the Basic package</p>
+            </div>
+            
+            <div class="faq-accordion">
+                <div class="faq-accordion-item">
+                    <div class="faq-question">
+                        <h3>How quickly will I receive my location list?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Your Basic package location list will be delivered to your email within 5 business days of your purchase. We take time to research and verify each location to ensure quality.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-accordion-item">
+                    <div class="faq-question">
+                        <h3>What information is included with each location?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Each location includes the business name, address, contact information, business hours, and traffic patterns. This gives you everything you need to evaluate and approach each location.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-accordion-item">
+                    <div class="faq-question">
+                        <h3>Can I upgrade to a larger package later?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutely! Many of our customers start with the Basic package and upgrade to Pro, Start, or Gold packages as their business grows. You can purchase additional packages at any time.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-accordion-item">
+                    <div class="faq-question">
+                        <h3>What if I'm not satisfied with the locations?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer a 30-day money-back guarantee on all packages. If you're not satisfied with your location list, contact our support team for a full refund.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="package-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Vending Journey?</h2>
+                <p>Get 50+ hand-picked locations delivered to your inbox in just 5 days</p>
+                <div class="cta-buttons">
+                    <button onclick="openPurchaseModal('Basic', '19', 'https://buy.stripe.com/aEU2929ZcfvQ10IdQT')" class="btn-primary btn-large">
+                        <i class="fas fa-shopping-cart"></i>
+                        Get Basic Package - $19
+                    </button>
+                    <a href="/pricing" class="btn-secondary">View All Packages</a>
+                </div>
+                <p class="cta-guarantee">30-Day Money-Back Guarantee • No Hidden Fees</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>The Vending Locator</h3>
+                    <p>Your trusted partner for vending machine location research and business growth.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/services">Services</a></li>
+                        <li><a href="/pricing">Pricing</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Packages</h4>
+                    <ul>
+                        <li><a href="/basic-package">Basic Package</a></li>
+                        <li><a href="/pro-package">Pro Package</a></li>
+                        <li><a href="/start-package">Start Package</a></li>
+                        <li><a href="/gold-package">Gold Package</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: support@thevendinglocator.com</p>
+                    <p>Response time: 24 hours</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 The Vending Locator. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Purchase Modal -->
+    <div id="purchaseModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Complete Your Purchase</h2>
+                <span class="close" onclick="closePurchaseModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="package-summary">
+                    <h3 id="modalPackageName">Basic Package</h3>
+                    <p class="package-description">50+ hand-picked vending locations delivered in 5 days</p>
+                    <div class="package-price">
+                        <span class="price-amount">$<span id="modalPrice">19</span></span>
+                        <span class="price-note">One-time payment</span>
+                    </div>
+                </div>
+                
+                <div class="package-features">
+                    <h4>What's Included:</h4>
+                    <ul>
+                        <li><i class="fas fa-check"></i> 50+ Curated Location Leads</li>
+                        <li><i class="fas fa-check"></i> 5 Day Delivery</li>
+                        <li><i class="fas fa-check"></i> Complete Contact Information</li>
+                        <li><i class="fas fa-check"></i> Traffic Pattern Analysis</li>
+                        <li><i class="fas fa-check"></i> Email Support</li>
+                        <li><i class="fas fa-check"></i> 30-Day Money-Back Guarantee</li>
+                    </ul>
+                </div>
+                
+                <div class="purchase-actions">
+                    <button id="modalCheckoutBtn" class="btn-primary btn-large">
+                        <i class="fas fa-lock"></i>
+                        Secure Checkout
+                    </button>
+                    <p class="security-note">
+                        <i class="fas fa-shield-alt"></i>
+                        Your payment is processed securely by Stripe
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

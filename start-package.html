@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Launch your vending business with our Start package. Get 200+ locations plus sales resources, machine guidance, and technical support for $129.">
+    <title>Start Package - The Vending Locator</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16569722490">
+    </script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'AW-16569722490');
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>The Vending Locator</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="/" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/pricing" class="nav-link">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/blog" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/contact" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/pricing" class="nav-link btn-get-started">Get Started</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-star"></i>
+                    <span>Most Popular Package</span>
+                </div>
+                <h1 class="hero-title">
+                    Start Package: <span class="highlight">Complete</span><br>
+                    <span class="highlight">Business Launch</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Everything you need to launch your vending business successfully. Get 200+ locations plus sales resources, machine guidance, and technical support.
+                </p>
+                
+                <!-- Package Highlights -->
+                <div class="package-highlights">
+                    <div class="highlight-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>200+ Premium Locations</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-tools"></i>
+                        <span>Machine Guidance</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-dollar-sign"></i>
+                        <span>Just $129</span>
+                    </div>
+                </div>
+                
+                <!-- CTA Button -->
+                <div class="hero-cta">
+                    <button onclick="openPurchaseModal('Start', '129', 'https://buy.stripe.com/3cs8xq2wKdnI6l24gl')" class="btn-primary btn-large">
+                        <i class="fas fa-shopping-cart"></i>
+                        Get Start Package - $129
+                    </button>
+                    <p class="cta-guarantee">30-Day Money-Back Guarantee</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What's Included Section -->
+    <section class="package-details">
+        <div class="container">
+            <div class="section-header">
+                <h2>What's Included in Your Start Package</h2>
+                <p>Complete business launch kit with everything you need to succeed</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-list"></i>
+                    </div>
+                    <h3>200+ Premium Location Leads</h3>
+                    <p>Hand-picked locations with high foot traffic and proven vending potential. Each location is researched and verified for optimal placement.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Sales Scripts & Resources</h3>
+                    <p>Professional email and phone call scripts designed to help you confidently close deals and secure prime vending locations.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Machine Guidance</h3>
+                    <p>Expert guidance to help you find the latest and most affordable vending machines for your business needs.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Technical Support</h3>
+                    <p>Access to experienced technicians who can walk you through any technical issues with your vending machines.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h3>Contract Template</h3>
+                    <p>Professional legal contract template to safeguard your vending business and ensure proper agreements with location owners.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Supplier List</h3>
+                    <p>Curated list of reliable vending machine suppliers and product vendors to help you source quality equipment and products.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Start Section -->
+    <section class="why-choose">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose the Start Package?</h2>
+                <p>Perfect for entrepreneurs ready to launch a complete vending business</p>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Complete Launch Kit</h3>
+                    <p>Everything you need in one package - locations, sales tools, machine guidance, and support to launch successfully.</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Risk Reduction</h3>
+                    <p>Professional sales scripts and legal templates help you avoid common pitfalls and protect your business from day one.</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Expert Support</h3>
+                    <p>Access to technical support and machine guidance ensures you have help when you need it most.</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Proven Success</h3>
+                    <p>Join thousands of successful vending operators who launched their business with our Start package.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Start Package Customers Say</h2>
+                <p>Real feedback from entrepreneurs who launched their business with Start</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The Start package gave me everything I needed to launch my vending business. The sales scripts were gold and I secured 3 locations within the first month!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Amanda S.</strong>
+                        <span>New Vending Business Owner</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The machine guidance and technical support were invaluable. I got quality equipment at great prices and had help when I needed it."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Carlos M.</strong>
+                        <span>Vending Operator</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Started with the Start package and never looked back. The contract template saved me from potential legal issues and the locations were top quality."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Rachel L.</strong>
+                        <span>Successful Vending Entrepreneur</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="package-faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Everything you need to know about the Start package</p>
+            </div>
+            
+            <div class="faq-accordion">
+                <div class="faq-accordion-item">
+                    <div class="faq-question">
+                        <h3>What makes Start different from Basic and Pro?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Start includes everything from Pro (200+ locations, 3-day delivery) plus sales scripts, machine guidance, technical support, contract templates, and supplier lists. It's designed as a complete business launch kit.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-accordion-item">
+                    <div class="faq-question">
+                        <h3>How do the sales scripts help me?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our professional email and phone call scripts are designed to help you confidently approach location owners, present your value proposition, and close deals effectively. They've been tested and refined by successful vending operators.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-accordion-item">
+                    <div class="faq-question">
+                        <h3>What kind of machine guidance do I get?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You'll get recommendations for the latest and most affordable vending machines, guidance on choosing the right equipment for your locations, and tips on finding reliable suppliers and manufacturers.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-accordion-item">
+                    <div class="faq-question">
+                        <h3>Is technical support included forever?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Technical support is included with your Start package purchase. Our experienced technicians are available to help you with any technical issues related to your vending machines and business setup.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="package-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Launch Your Vending Business?</h2>
+                <p>Get everything you need to start your vending business successfully</p>
+                <div class="cta-buttons">
+                    <button onclick="openPurchaseModal('Start', '129', 'https://buy.stripe.com/3cs8xq2wKdnI6l24gl')" class="btn-primary btn-large">
+                        <i class="fas fa-shopping-cart"></i>
+                        Get Start Package - $129
+                    </button>
+                    <a href="/pricing" class="btn-secondary">View All Packages</a>
+                </div>
+                <p class="cta-guarantee">30-Day Money-Back Guarantee • No Hidden Fees</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>The Vending Locator</h3>
+                    <p>Your trusted partner for vending machine location research and business growth.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/services">Services</a></li>
+                        <li><a href="/pricing">Pricing</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Packages</h4>
+                    <ul>
+                        <li><a href="/basic-package">Basic Package</a></li>
+                        <li><a href="/pro-package">Pro Package</a></li>
+                        <li><a href="/start-package">Start Package</a></li>
+                        <li><a href="/gold-package">Gold Package</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: support@thevendinglocator.com</p>
+                    <p>Response time: 24 hours</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 The Vending Locator. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Purchase Modal -->
+    <div id="purchaseModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Complete Your Purchase</h2>
+                <span class="close" onclick="closePurchaseModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="package-summary">
+                    <h3 id="modalPackageName">Start Package</h3>
+                    <p class="package-description">Complete business launch kit with 200+ locations and sales resources</p>
+                    <div class="package-price">
+                        <span class="price-amount">$<span id="modalPrice">129</span></span>
+                        <span class="price-note">One-time payment</span>
+                    </div>
+                </div>
+                
+                <div class="package-features">
+                    <h4>What's Included:</h4>
+                    <ul>
+                        <li><i class="fas fa-check"></i> 200+ Premium Location Leads</li>
+                        <li><i class="fas fa-check"></i> Sales Scripts & Resources</li>
+                        <li><i class="fas fa-check"></i> Machine Guidance</li>
+                        <li><i class="fas fa-check"></i> Technical Support</li>
+                        <li><i class="fas fa-check"></i> Contract Template</li>
+                        <li><i class="fas fa-check"></i> Supplier List</li>
+                        <li><i class="fas fa-check"></i> 30-Day Money-Back Guarantee</li>
+                    </ul>
+                </div>
+                
+                <div class="purchase-actions">
+                    <button id="modalCheckoutBtn" class="btn-primary btn-large">
+                        <i class="fas fa-lock"></i>
+                        Secure Checkout
+                    </button>
+                    <p class="security-note">
+                        <i class="fas fa-shield-alt"></i>
+                        Your payment is processed securely by Stripe
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
