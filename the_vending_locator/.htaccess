@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# Rewrite /blog/slug to blog-post.html
+RewriteRule ^blog/([^/]+)$ blog-post.html [L]
+
+# Ensure blog-post.html can access the slug parameter
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^blog/([^/]+)$ blog-post.html [L] 

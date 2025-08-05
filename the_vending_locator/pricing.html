@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Choose from our four pricing packages for vending location research. From Basic to Gold, find the perfect plan for your business needs.">
+    <title>Pricing - The Vending Locator</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>The Vending Locator</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="/" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/pricing" class="nav-link active">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/blog" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/contact" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/pricing" class="nav-link btn-get-started">Get Started</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-star"></i>
+                    <span>Trusted by 3,000+ Vending Operators</span>
+                </div>
+                <h1 class="hero-title">
+                    Choose Your <span class="highlight">Vending Success</span><br>
+                    <span class="highlight">Package</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Get curated lists of high-traffic locations delivered to your inbox. Start growing your vending business today with our proven packages.
+                </p>
+                
+                <!-- Trust Indicators -->
+                <div class="trust-indicators">
+                    <div class="trust-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>30-Day Money Back Guarantee</span>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fas fa-clock"></i>
+                        <span>3-5 Day Delivery</span>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fas fa-headset"></i>
+                        <span>Expert Support</span>
+                    </div>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Happy Customers</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">500K+</span>
+                        <span class="stat-label">Locations Found</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">15K+</span>
+                        <span class="stat-label">Deals Closed</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Table -->
+    <section id="pricing-table" class="pricing-table-section">
+        <div class="container">
+            <div class="pricing-table">
+                <div class="pricing-header">
+                    <div class="feature-category">Feature Category</div>
+                    <div class="basic-col">Basic $19</div>
+                    <div class="pro-col">Pro $29</div>
+                    <div class="start-col">Start $129</div>
+                    <div class="gold-col">Gold $899</div>
+                </div>
+                
+                <div class="pricing-row">
+                    <div class="feature-info">
+                        <h4>Number of locations</h4>
+                        <p>Compilation of potential vending machine placement locations within your zip code vicinity.</p>
+                    </div>
+                    <div class="basic-value" onclick="openPurchaseModal('Basic', '19', 'https://buy.stripe.com/aEU2929ZcfvQ10IdQT')">50+ Locations</div>
+                    <div class="pro-value" onclick="openPurchaseModal('Pro', '29', 'https://buy.stripe.com/4gwaFyfjw1F0gZG004')">200+ Locations</div>
+                    <div class="start-value" onclick="openPurchaseModal('Start', '129', 'https://buy.stripe.com/3cs8xq2wKdnI6l24gl')">200+ Locations</div>
+                    <div class="gold-value" onclick="openPurchaseModal('Gold', '899', 'https://buy.stripe.com/dR614Y4ESgzU6l25kq')">300+ Locations</div>
+                </div>
+                
+                <div class="pricing-row">
+                    <div class="feature-info">
+                        <h4>Basic Lead Details</h4>
+                        <p>Includes business name, phone number and address of each location</p>
+                    </div>
+                    <div class="basic-value" onclick="openPurchaseModal('Basic', '19', 'https://buy.stripe.com/aEU2929ZcfvQ10IdQT')">✓ Included</div>
+                    <div class="pro-value" onclick="openPurchaseModal('Pro', '29', 'https://buy.stripe.com/4gwaFyfjw1F0gZG004')">✓ Included</div>
+                    <div class="start-value" onclick="openPurchaseModal('Start', '129', 'https://buy.stripe.com/3cs8xq2wKdnI6l24gl')">✓ Included</div>
+                    <div class="gold-value" onclick="openPurchaseModal('Gold', '899', 'https://buy.stripe.com/dR614Y4ESgzU6l25kq')">✓ Included</div>
+                </div>
+                
+                <div class="pricing-row">
+                    <div class="feature-info">
+                        <h4>Lead email addresses</h4>
+                        <p>We find their email address if the email is listed on their website along with reviews and category data.</p>
+                    </div>
+                    <div class="basic-value" onclick="openPurchaseModal('Basic', '19', 'https://buy.stripe.com/aEU2929ZcfvQ10IdQT')">—</div>
+                    <div class="pro-value" onclick="openPurchaseModal('Pro', '29', 'https://buy.stripe.com/4gwaFyfjw1F0gZG004')">✓ Included</div>
+                    <div class="start-value" onclick="openPurchaseModal('Start', '129', 'https://buy.stripe.com/3cs8xq2wKdnI6l24gl')">✓ Included</div>
+                    <div class="gold-value" onclick="openPurchaseModal('Gold', '899', 'https://buy.stripe.com/dR614Y4ESgzU6l25kq')">✓ Included</div>
+                </div>
+                
+                <div class="pricing-row">
+                    <div class="feature-info">
+                        <h4>Lead Radius search</h4>
+                        <p>Once you share your zip code, we'll personalize the search to fit your area perfectly.</p>
+                    </div>
+                    <div class="basic-value" onclick="openPurchaseModal('Basic', '19', 'https://buy.stripe.com/aEU2929ZcfvQ10IdQT')">15 miles</div>
+                    <div class="pro-value" onclick="openPurchaseModal('Pro', '29', 'https://buy.stripe.com/4gwaFyfjw1F0gZG004')">25 miles</div>
+                    <div class="start-value" onclick="openPurchaseModal('Start', '129', 'https://buy.stripe.com/3cs8xq2wKdnI6l24gl')">25 miles</div>
+                    <div class="gold-value" onclick="openPurchaseModal('Gold', '899', 'https://buy.stripe.com/dR614Y4ESgzU6l25kq')">25 miles</div>
+                </div>
+                
+                <div class="pricing-row">
+                    <div class="feature-info">
+                        <h4>Delivery time</h4>
+                        <p>The order prioritization will be based on your chosen package.</p>
+                    </div>
+                    <div class="basic-value" onclick="openPurchaseModal('Basic', '19', 'https://buy.stripe.com/aEU2929ZcfvQ10IdQT')">5 Days</div>
+                    <div class="pro-value" onclick="openPurchaseModal('Pro', '29', 'https://buy.stripe.com/4gwaFyfjw1F0gZG004')">3 Days</div>
+                    <div class="start-value" onclick="openPurchaseModal('Start', '129', 'https://buy.stripe.com/3cs8xq2wKdnI6l24gl')">3 Days</div>
+                    <div class="gold-value" onclick="openPurchaseModal('Gold', '899', 'https://buy.stripe.com/dR614Y4ESgzU6l25kq')">3 Days</div>
+                </div>
+                
+                <div class="pricing-row">
+                    <div class="feature-info">
+                        <h4>Guaranteed Leads</h4>
+                        <p>We will guarantee these leads, but there is no time frame.</p>
+                    </div>
+                    <div class="basic-value" onclick="openPurchaseModal('Basic', '19', 'https://buy.stripe.com/aEU2929ZcfvQ10IdQT')">—</div>
+                    <div class="pro-value" onclick="openPurchaseModal('Pro', '29', 'https://buy.stripe.com/4gwaFyfjw1F0gZG004')">—</div>
+                    <div class="start-value" onclick="openPurchaseModal('Start', '129', 'https://buy.stripe.com/3cs8xq2wKdnI6l24gl')">—</div>
+                    <div class="gold-value" onclick="openPurchaseModal('Gold', '899', 'https://buy.stripe.com/dR614Y4ESgzU6l25kq')">2</div>
+                </div>
+                
+                <div class="pricing-section-header">
+                    <h3>Resources for Sales and Expansion</h3>
+                </div>
+                
+                <div class="pricing-row">
+                    <div class="feature-info">
+                        <h4>Vending eCourse</h4>
+                        <p>Discover the keys to vending success in our all-encompassing eCourse, which delves into selecting lucrative products and maximizing vending machine efficiency.</p>
+                    </div>
+                    <div class="basic-value" onclick="openPurchaseModal('Basic', '19', 'https://buy.stripe.com/aEU2929ZcfvQ10IdQT')">—</div>
+                    <div class="pro-value" onclick="openPurchaseModal('Pro', '29', 'https://buy.stripe.com/4gwaFyfjw1F0gZG004')">—</div>
+                    <div class="start-value" onclick="openPurchaseModal('Start', '129', 'https://buy.stripe.com/3cs8xq2wKdnI6l24gl')">✓ Included</div>
+                    <div class="gold-value" onclick="openPurchaseModal('Gold', '899', 'https://buy.stripe.com/dR614Y4ESgzU6l25kq')">✓ Included</div>
+                </div>
+                
+                <div class="pricing-row">
+                    <div class="feature-info">
+                        <h4>Cold Call & Email Script</h4>
+                        <p>Gain an advantage in securing prime locations with our email and phone call scripts, designed to assist you in confidently closing the deal.</p>
+                    </div>
+                    <div class="basic-value" onclick="openPurchaseModal('Basic', '19', 'https://buy.stripe.com/aEU2929ZcfvQ10IdQT')">—</div>
+                    <div class="pro-value" onclick="openPurchaseModal('Pro', '29', 'https://buy.stripe.com/4gwaFyfjw1F0gZG004')">—</div>
+                    <div class="start-value" onclick="openPurchaseModal('Start', '129', 'https://buy.stripe.com/3cs8xq2wKdnI6l24gl')">✓ Included</div>
+                    <div class="gold-value" onclick="openPurchaseModal('Gold', '899', 'https://buy.stripe.com/dR614Y4ESgzU6l25kq')">✓ Included</div>
+                </div>
+                
+                <div class="pricing-row">
+                    <div class="feature-info">
+                        <h4>Supplier List</h4>
+                        <p>Access to our curated list of reliable vending machine suppliers and product vendors.</p>
+                    </div>
+                    <div class="basic-value" onclick="openPurchaseModal('Basic', '19', 'https://buy.stripe.com/aEU2929ZcfvQ10IdQT')">—</div>
+                    <div class="pro-value" onclick="openPurchaseModal('Pro', '29', 'https://buy.stripe.com/4gwaFyfjw1F0gZG004')">—</div>
+                    <div class="start-value" onclick="openPurchaseModal('Start', '129', 'https://buy.stripe.com/3cs8xq2wKdnI6l24gl')">✓ Included</div>
+                    <div class="gold-value" onclick="openPurchaseModal('Gold', '899', 'https://buy.stripe.com/dR614Y4ESgzU6l25kq')">✓ Included</div>
+                </div>
+                
+                <div class="pricing-section-header">
+                    <h3>Machine Maintenance</h3>
+                </div>
+                
+                <div class="pricing-row">
+                    <div class="feature-info">
+                        <h4>Machine Guidance</h4>
+                        <p>We will help you find the latest and most affordable vending machines.</p>
+                    </div>
+                    <div class="basic-value" onclick="openPurchaseModal('Basic', '19', 'https://buy.stripe.com/aEU2929ZcfvQ10IdQT')">—</div>
+                    <div class="pro-value" onclick="openPurchaseModal('Pro', '29', 'https://buy.stripe.com/4gwaFyfjw1F0gZG004')">—</div>
+                    <div class="start-value" onclick="openPurchaseModal('Start', '129', 'https://buy.stripe.com/3cs8xq2wKdnI6l24gl')"><strong>✓ Included</strong></div>
+                    <div class="gold-value" onclick="openPurchaseModal('Gold', '899', 'https://buy.stripe.com/dR614Y4ESgzU6l25kq')">✓ Included</div>
+                </div>
+                
+                <div class="pricing-row">
+                    <div class="feature-info">
+                        <h4>Technical Help</h4>
+                        <p>We have on hand technicians that are more than eager to help walk you through any technical issues.</p>
+                    </div>
+                    <div class="basic-value" onclick="openPurchaseModal('Basic', '19', 'https://buy.stripe.com/aEU2929ZcfvQ10IdQT')">—</div>
+                    <div class="pro-value" onclick="openPurchaseModal('Pro', '29', 'https://buy.stripe.com/4gwaFyfjw1F0gZG004')">—</div>
+                    <div class="start-value" onclick="openPurchaseModal('Start', '129', 'https://buy.stripe.com/3cs8xq2wKdnI6l24gl')"><strong>✓ Included</strong></div>
+                    <div class="gold-value" onclick="openPurchaseModal('Gold', '899', 'https://buy.stripe.com/dR614Y4ESgzU6l25kq')">✓ Included</div>
+                </div>
+                
+                <div class="pricing-section-header">
+                    <h3>Legal</h3>
+                </div>
+                
+                <div class="pricing-row">
+                    <div class="feature-info">
+                        <h4>Contract Template</h4>
+                        <p>Safeguard your vending business with a meticulously drafted legal contract template.</p>
+                    </div>
+                    <div class="basic-value" onclick="openPurchaseModal('Basic', '19', 'https://buy.stripe.com/aEU2929ZcfvQ10IdQT')">—</div>
+                    <div class="pro-value" onclick="openPurchaseModal('Pro', '29', 'https://buy.stripe.com/4gwaFyfjw1F0gZG004')">—</div>
+                    <div class="start-value" onclick="openPurchaseModal('Start', '129', 'https://buy.stripe.com/3cs8xq2wKdnI6l24gl')">✓ Included</div>
+                    <div class="gold-value" onclick="openPurchaseModal('Gold', '899', 'https://buy.stripe.com/dR614Y4ESgzU6l25kq')">✓ Included</div>
+                </div>
+                
+                <div class="pricing-row">
+                    <div class="feature-info">
+                        <h4>Legally Register LLC & EIN</h4>
+                        <p>To open a company bank account, you'll require an LLC and an EIN Number. We'll handle the legal formation of your company and obtain both for you. This process typically takes 7-10 business days upon receiving your information.</p>
+                    </div>
+                    <div class="basic-value" onclick="openPurchaseModal('Basic', '19', 'https://buy.stripe.com/aEU2929ZcfvQ10IdQT')">—</div>
+                    <div class="pro-value" onclick="openPurchaseModal('Pro', '29', 'https://buy.stripe.com/4gwaFyfjw1F0gZG004')">—</div>
+                    <div class="start-value" onclick="openPurchaseModal('Start', '129', 'https://buy.stripe.com/3cs8xq2wKdnI6l24gl')">—</div>
+                    <div class="gold-value" onclick="openPurchaseModal('Gold', '899', 'https://buy.stripe.com/dR614Y4ESgzU6l25kq')">✓ Included</div>
+                </div>
+                
+                <div class="pricing-row">
+                    <div class="feature-info">
+                        <h4>LLC Operating Agreement Template</h4>
+                        <p>Complete template for your LLC operating agreement to ensure proper business structure.</p>
+                    </div>
+                    <div class="basic-value" onclick="openPurchaseModal('Basic', '19', 'https://buy.stripe.com/aEU2929ZcfvQ10IdQT')">—</div>
+                    <div class="pro-value" onclick="openPurchaseModal('Pro', '29', 'https://buy.stripe.com/4gwaFyfjw1F0gZG004')">—</div>
+                    <div class="start-value" onclick="openPurchaseModal('Start', '129', 'https://buy.stripe.com/3cs8xq2wKdnI6l24gl')">—</div>
+                    <div class="gold-value" onclick="openPurchaseModal('Gold', '899', 'https://buy.stripe.com/dR614Y4ESgzU6l25kq')">✓ Included</div>
+                </div>
+            </div>
+            
+            <div class="pricing-actions">
+                <div class="pricing-buttons-grid">
+                    <div class="package-button">
+                        <button onclick="openPurchaseModal('Basic', '19', 'https://buy.stripe.com/aEU2929ZcfvQ10IdQT')" class="btn-primary">Buy Basic - $19</button>
+                    </div>
+                    <div class="package-button">
+                        <button onclick="openPurchaseModal('Pro', '29', 'https://buy.stripe.com/4gwaFyfjw1F0gZG004')" class="btn-primary">Buy Pro - $29</button>
+                    </div>
+                    <div class="package-button">
+                        <button onclick="openPurchaseModal('Start', '129', 'https://buy.stripe.com/3cs8xq2wKdnI6l24gl')" class="btn-primary featured-btn">Buy Start - $129</button>
+                    </div>
+                    <div class="package-button">
+                        <button onclick="openPurchaseModal('Gold', '899', 'https://buy.stripe.com/dR614Y4ESgzU6l25kq')" class="btn-primary">Buy Gold - $899</button>
+                    </div>
+                </div>
+                <p class="pricing-guarantee">30-Day Money-Back Guarantee on All Packages</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile Pricing Section -->
+    <section class="mobile-pricing-section">
+        <div class="container">
+            <h2 class="section-title">Pricing</h2>
+            <div class="mobile-pricing-grid">
+                <div class="mobile-package">
+                    <div class="mobile-package-header">
+                        <h3>Basic</h3>
+                        <span class="price">$19</span>
+                    </div>
+                    <div class="mobile-package-content">
+                        <div class="package-info">
+                            <p class="lead-count">50+ leads</p>
+                            <p class="delivery-time">5 day delivery</p>
+                        </div>
+                        <button onclick="openPurchaseModal('Basic', '19', 'https://buy.stripe.com/aEU2929ZcfvQ10IdQT')" class="mobile-checkout-btn">Get Started</button>
+                    </div>
+                </div>
+                
+                <div class="mobile-package">
+                    <div class="mobile-package-header">
+                        <h3>Pro</h3>
+                        <span class="price">$29</span>
+                    </div>
+                    <div class="mobile-package-content">
+                        <div class="package-info">
+                            <p class="lead-count">200+ leads</p>
+                            <p class="delivery-time">3 day delivery</p>
+                        </div>
+                        <button onclick="openPurchaseModal('Pro', '29', 'https://buy.stripe.com/4gwaFyfjw1F0gZG004')" class="mobile-checkout-btn">Get Started</button>
+                    </div>
+                </div>
+                
+                <div class="mobile-package featured">
+                    <div class="mobile-package-header">
+                        <h3>Start</h3>
+                        <span class="price">$129</span>
+                    </div>
+                    <div class="mobile-package-content">
+                        <div class="package-info">
+                            <p class="lead-count">200+ leads</p>
+                            <p class="delivery-time">3 day delivery</p>
+                            <p class="bonus">+ Sales Resources</p>
+                        </div>
+                        <button onclick="openPurchaseModal('Start', '129', 'https://buy.stripe.com/3cs8xq2wKdnI6l24gl')" class="mobile-checkout-btn featured">Get Started</button>
+                    </div>
+                </div>
+                
+                <div class="mobile-package">
+                    <div class="mobile-package-header">
+                        <h3>Gold</h3>
+                        <span class="price">$899</span>
+                    </div>
+                    <div class="mobile-package-content">
+                        <div class="package-info">
+                            <p class="lead-count">200+ leads</p>
+                            <p class="delivery-time">3 day delivery</p>
+                            <p class="bonus">+ Legal Setup</p>
+                        </div>
+                        <button onclick="openPurchaseModal('Gold', '899', 'https://buy.stripe.com/dR614Y4ESgzU6l25kq')" class="mobile-checkout-btn">Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="pricing-faq">
+        <div class="container">
+            <div class="faq-badge">
+                <i class="fas fa-lightbulb"></i>
+                <span>Got Questions? We've Got Answers!</span>
+            </div>
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="faq-subtitle">Everything you need to know about our vending location services</p>
+            <div class="faq-accordion">
+                <div class="faq-accordion-item">
+                    <div class="faq-question">
+                        <h3>Are all pricing packages one-time payments?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Every package listed on the pricing page is a one-time payment. Each transaction is handled through a third-party card processing service and is charged immediately upon ordering. If you're unsatisfied with the list you receive, please contact our support team for a refund.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-accordion-item">
+                    <div class="faq-question">
+                        <h3>How reliable is your data?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>When you purchase a list from our vending machine locators, our team of researchers creates a custom list just for you. This ensures that the data on new locations is as up-to-date as possible, minimizing the need for replacement requests.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-accordion-item">
+                    <div class="faq-question">
+                        <h3>Is this a subscription or a single payment?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>It's a one-time fee. As a vending business owner, you won't incur any additional charges beyond the initial purchase.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-accordion-item">
+                    <div class="faq-question">
+                        <h3>What regions do you serve?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We specialize in researching high-traffic locations and large companies for vending machines globally! This encompasses "vending machine locations near me." It's worth noting that the majority of our clients are based in the United States and Canada.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-accordion-item">
+                    <div class="faq-question">
+                        <h3>Do the locations you provide already host vending machines?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>As part of our research services, we furnish details about a business including its name, address, website (if available), phone number, store rating, review count, category, and tags. If you've selected a package with email research, we also include any available email addresses. It's important to note that this information is sourced from public internet platforms, and we cannot confirm whether a specific business has vending machines or any vending services onsite. To ensure the suitability of a location, we recommend contacting the business directly by visiting the location or placing a call. As far as we know, no vending industry locator service has been able to provide such specific information.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-accordion-item">
+                    <div class="faq-question">
+                        <h3>Are the locations you offer suitable for my business?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Considering your vending business and the products you intend to sell is the initial step in our research process. With the category data included in our research, you can assess which potential locations are most likely to align with your business. For instance, if you operate a healthy vending machine, gumball machines, sticker machines, or sell honor boxes, the categories we provide will broadly match your criteria.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-accordion-item">
+                    <div class="faq-question">
+                        <h3>How do vending machine locators gather this information?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We collect all data from public databases and through research. While we don't have access to specifics like the current traffic at these locations or the number of machines already in operation, our team examines factors such as satellite images of the building to ensure that the facility can accommodate your vending machines seamlessly.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-accordion-item">
+                    <div class="faq-question">
+                        <h3>Can you determine if a specific city/zip code already has numerous vending machines installed?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We conduct research on vending machine locations based on foot traffic and common types of high-traffic locations such as hotels, warehouses, etc. However, we don't cover saturation levels or identify nearby vending machines. You would need to discover this information through your own outreach efforts.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-accordion-item">
+                    <div class="faq-question">
+                        <h3>Do you reach out to locations on behalf of vending operators?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No, we provide a meticulously researched list for you to contact directly. Our service streamlines the process by conducting the research and eliminating unsuitable locations for your vending machines. However, with our gold package, we collaborate with you in reaching out to companies. There's no set time limit for achieving the locations, but we assure you dedicated efforts until success.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-accordion-item">
+                    <div class="faq-question">
+                        <h3>Do you provide refunds?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, refunds are offered on a case-by-case basis. If you're dissatisfied with the newly delivered location list, please reach out to our support team for assistance. We'll evaluate the order to determine if our quality standards have not been met.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>The Vending Locator</h3>
+                    <p>Helping vending machine business owners find profitable locations since 2023.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/services">Services</a></li>
+                        <li><a href="/pricing">Pricing</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="/contact">Contact Us</a></li>
+                        <li><a href="/contact">Help Center</a></li>
+                        <li><a href="/contact">Refund Policy</a></li>
+                        <li><a href="/contact">Terms of Service</a></li>
+                        <li><a href="/contact">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for vending tips and industry updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 The Vending Locator. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Countdown Timer
+        function updateTimer() {
+            const now = new Date().getTime();
+            const tomorrow = new Date();
+            tomorrow.setDate(tomorrow.getDate() + 1);
+            tomorrow.setHours(0, 0, 0, 0);
+            
+            const distance = tomorrow - now;
+            
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            const timerNumbers = document.querySelectorAll('.timer-number');
+            if (timerNumbers.length >= 3) {
+                timerNumbers[0].textContent = hours.toString().padStart(2, '0');
+                timerNumbers[1].textContent = minutes.toString().padStart(2, '0');
+                timerNumbers[2].textContent = seconds.toString().padStart(2, '0');
+            }
+        }
+        
+        // Update timer every second
+        setInterval(updateTimer, 1000);
+        updateTimer(); // Initial call
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Mobile pricing accordion functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const packageHeaders = document.querySelectorAll('.package-header');
+            
+            packageHeaders.forEach(header => {
+                header.addEventListener('click', function() {
+                    const content = this.nextElementSibling;
+                    const icon = this.querySelector('i');
+                    
+                    // Toggle active class
+                    content.classList.toggle('active');
+                    
+                    // Rotate icon
+                    if (content.classList.contains('active')) {
+                        icon.style.transform = 'rotate(45deg)';
+                    } else {
+                        icon.style.transform = 'rotate(0deg)';
+                    }
+                });
+            });
+        });
+        
+        // Enhanced purchase modal with Formspree integration
+        function openPurchaseModal(package, price, stripeUrl) {
+            // Create modal HTML with Formspree form
+            const modalHTML = `
+                <div id="purchase-modal" class="modal-overlay active">
+                    <div class="modal-content">
+                        <button class="modal-close" onclick="closeModal()">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <div class="modal-header">
+                            <h3>${package} Package</h3>
+                            <div class="package-price">$${price}</div>
+                        </div>
+                        <div class="modal-body">
+                            <form action="https://formspree.io/f/xdkgqele" method="POST" class="purchase-form" id="purchase-form">
+                                <input type="hidden" name="package_name" value="${package}">
+                                <input type="hidden" name="package_price" value="${price}">
+                                <input type="hidden" name="stripe_link" value="${stripeUrl}">
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="zipcode">Zip Code *</label>
+                                    <input type="text" id="zipcode" name="zipcode" pattern="[0-9]{5}" placeholder="12345" required>
+                                </div>
+                                <div class="form-actions">
+                                    <button type="submit" class="btn-primary">Purchase Now</button>
+                                    <button type="button" class="btn-secondary" onclick="closeModal()">Cancel</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            // Remove any existing modal first
+            const existingModal = document.getElementById('purchase-modal');
+            if (existingModal) {
+                existingModal.remove();
+            }
+
+            // Add modal to page
+            document.body.insertAdjacentHTML('beforeend', modalHTML);
+
+            // Prevent body scroll
+            document.body.style.overflow = 'hidden';
+            document.body.classList.add('modal-open');
+
+            // Handle form submission
+            const form = document.getElementById('purchase-form');
+            if (form) {
+                // Remove any existing event listeners to prevent duplicates
+                const newForm = form.cloneNode(true);
+                form.parentNode.replaceChild(newForm, form);
+                
+                newForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+
+                    // Get form data
+                    const formData = new FormData(newForm);
+                    const stripeLink = formData.get('stripe_link');
+
+                    // Submit to Formspree
+                    fetch('https://formspree.io/f/xdkgqele', {
+                        method: 'POST',
+                        body: formData,
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    })
+                    .then(response => {
+                        // Always redirect to Stripe after submission
+                        window.location.href = stripeLink;
+                    })
+                    .catch(error => {
+                        // If error, still redirect to Stripe
+                        window.location.href = stripeLink;
+                    });
+                });
+            }
+        }
+        
+        function closeModal() {
+            const modal = document.getElementById('purchase-modal');
+            if (modal) {
+                modal.remove();
+                document.body.style.overflow = 'auto';
+                document.body.classList.remove('modal-open');
+            }
+        }
+        
+        // Close modal when clicking outside
+        document.addEventListener('click', function(e) {
+            if (e.target.classList.contains('modal-overlay')) {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html> 

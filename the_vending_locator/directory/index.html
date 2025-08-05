@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vending Machine Directory - Find Vending Machines Near You | The Vending Locator</title>
+    <meta name="description" content="Find vending machines near you with our comprehensive directory. Browse by location, category, or search for specific vendors. Updated daily with the latest vending machine locations.">
+    <meta name="keywords" content="vending machines, vending machine directory, find vending machines, vending machine locations, vending machine near me, vending services">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Vending Machine Directory - Find Vending Machines Near You">
+    <meta property="og:description" content="Find vending machines near you with our comprehensive directory. Browse by location, category, or search for specific vendors.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://thevendinglocator.com/directory/">
+    <meta property="og:image" content="https://thevendinglocator.com/favicon.svg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Vending Machine Directory - Find Vending Machines Near You">
+    <meta name="twitter:description" content="Find vending machines near you with our comprehensive directory.">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://thevendinglocator.com/directory/">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Vending Machine Directory",
+        "description": "Find vending machines near you with our comprehensive directory",
+        "url": "https://thevendinglocator.com/directory/",
+        "mainEntity": {
+            "@type": "ItemList",
+            "name": "Vending Machine Directory",
+            "description": "Directory of vending machines and vendors"
+        }
+    }
+    </script>
+    
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .directory-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .directory-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            background: linear-gradient(135deg, #00C5F5 0%, #0088E8 100%);
+            color: white;
+            padding: 3rem 2rem;
+            border-radius: 12px;
+        }
+        
+        .directory-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .directory-header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .search-section {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 3rem;
+        }
+        
+        .search-form {
+            display: grid;
+            grid-template-columns: 1fr 1fr auto;
+            gap: 1rem;
+            align-items: end;
+        }
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .form-group label {
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #1f2937;
+        }
+        
+        .form-group input,
+        .form-group select {
+            padding: 0.75rem;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+        
+        .btn-search {
+            background: #00C5F5;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .btn-search:hover {
+            background: #0088E8;
+        }
+        
+        .filters-section {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .filter-btn {
+            background: #f3f4f6;
+            color: #374151;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .filter-btn.active {
+            background: #00C5F5;
+            color: white;
+        }
+        
+        .filter-btn:hover {
+            background: #00C5F5;
+            color: white;
+        }
+        
+        .directory-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .vendor-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .vendor-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .vendor-image {
+            height: 200px;
+            background: linear-gradient(135deg, #00C5F5 0%, #0088E8 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+        }
+        
+        .vendor-content {
+            padding: 1.5rem;
+        }
+        
+        .vendor-name {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #1f2937;
+            margin-bottom: 0.5rem;
+        }
+        
+        .vendor-category {
+            color: #00C5F5;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .vendor-location {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+        
+        .vendor-description {
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 1rem;
+        }
+        
+        .vendor-contact {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .btn-view {
+            background: #00C5F5;
+            color: white;
+            padding: 0.75rem 1rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .btn-view:hover {
+            background: #0088E8;
+        }
+        
+        .no-results {
+            text-align: center;
+            padding: 3rem;
+            color: #666;
+        }
+        
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 3rem;
+        }
+        
+        .page-btn {
+            background: #f3f4f6;
+            color: #374151;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .page-btn.active {
+            background: #00C5F5;
+            color: white;
+        }
+        
+        .page-btn:hover {
+            background: #00C5F5;
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            .search-form {
+                grid-template-columns: 1fr;
+            }
+            
+            .directory-header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="directory-container">
+        <div class="directory-header">
+            <h1><i class="fas fa-store"></i> Vending Machine Directory</h1>
+            <p>Find vending machines near you with our comprehensive directory</p>
+        </div>
+
+        <!-- Search Section -->
+        <div class="search-section">
+            <form class="search-form" id="searchForm">
+                <div class="form-group">
+                    <label for="searchQuery">Search Vendors</label>
+                    <input type="text" id="searchQuery" placeholder="Enter vendor name or keywords">
+                </div>
+                
+                <div class="form-group">
+                    <label for="locationFilter">Location</label>
+                    <select id="locationFilter">
+                        <option value="">All Locations</option>
+                        <option value="new-york">New York</option>
+                        <option value="los-angeles">Los Angeles</option>
+                        <option value="chicago">Chicago</option>
+                        <option value="houston">Houston</option>
+                        <option value="phoenix">Phoenix</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="btn-search">
+                    <i class="fas fa-search"></i> Search
+                </button>
+            </form>
+        </div>
+
+        <!-- Filters -->
+        <div class="filters-section" id="categoryFilters">
+            <button class="filter-btn active" data-category="all">All Categories</button>
+            <button class="filter-btn" data-category="snacks">Snacks</button>
+            <button class="filter-btn" data-category="beverages">Beverages</button>
+            <button class="filter-btn" data-category="healthy">Healthy Options</button>
+            <button class="filter-btn" data-category="coffee">Coffee & Tea</button>
+            <button class="filter-btn" data-category="ice-cream">Ice Cream</button>
+        </div>
+
+        <!-- Directory Grid -->
+        <div class="directory-grid" id="vendorGrid">
+            <!-- Vendors will be loaded here -->
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination" id="pagination">
+            <!-- Pagination will be generated here -->
+        </div>
+    </div>
+
+    <script>
+        let currentVendors = [];
+        let filteredVendors = [];
+        let currentPage = 1;
+        const vendorsPerPage = 12;
+
+        document.addEventListener('DOMContentLoaded', function() {
+            loadVendors();
+            setupEventListeners();
+        });
+
+        function setupEventListeners() {
+            // Search form
+            document.getElementById('searchForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                filterVendors();
+            });
+
+            // Category filters
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    filterVendors();
+                });
+            });
+        }
+
+        function loadVendors() {
+            // Load vendors from localStorage or API
+            const vendors = JSON.parse(localStorage.getItem('vendingVendors') || '[]');
+            
+            if (vendors.length === 0) {
+                // Add some sample data for demonstration
+                const sampleVendors = [
+                    {
+                        id: 1,
+                        name: "SnackMaster Vending",
+                        category: "snacks",
+                        location: "New York",
+                        description: "Premium snack vending machines with healthy options",
+                        phone: "(555) 123-4567",
+                        email: "info@snackmaster.com",
+                        website: "https://snackmaster.com"
+                    },
+                    {
+                        id: 2,
+                        name: "Beverage Express",
+                        category: "beverages",
+                        location: "Los Angeles",
+                        description: "Cold beverages and energy drinks",
+                        phone: "(555) 234-5678",
+                        email: "contact@beverageexpress.com",
+                        website: "https://beverageexpress.com"
+                    },
+                    {
+                        id: 3,
+                        name: "Healthy Bites",
+                        category: "healthy",
+                        location: "Chicago",
+                        description: "Organic and healthy vending options",
+                        phone: "(555) 345-6789",
+                        email: "hello@healthybites.com",
+                        website: "https://healthybites.com"
+                    }
+                ];
+                
+                localStorage.setItem('vendingVendors', JSON.stringify(sampleVendors));
+                currentVendors = sampleVendors;
+            } else {
+                currentVendors = vendors;
+            }
+            
+            filteredVendors = [...currentVendors];
+            displayVendors();
+        }
+
+        function filterVendors() {
+            const searchQuery = document.getElementById('searchQuery').value.toLowerCase();
+            const locationFilter = document.getElementById('locationFilter').value;
+            const activeCategory = document.querySelector('.filter-btn.active').dataset.category;
+            
+            filteredVendors = currentVendors.filter(vendor => {
+                const matchesSearch = vendor.name.toLowerCase().includes(searchQuery) ||
+                                    vendor.description.toLowerCase().includes(searchQuery);
+                const matchesLocation = !locationFilter || vendor.location.toLowerCase() === locationFilter;
+                const matchesCategory = activeCategory === 'all' || vendor.category === activeCategory;
+                
+                return matchesSearch && matchesLocation && matchesCategory;
+            });
+            
+            currentPage = 1;
+            displayVendors();
+        }
+
+        function displayVendors() {
+            const grid = document.getElementById('vendorGrid');
+            const startIndex = (currentPage - 1) * vendorsPerPage;
+            const endIndex = startIndex + vendorsPerPage;
+            const vendorsToShow = filteredVendors.slice(startIndex, endIndex);
+            
+            if (vendorsToShow.length === 0) {
+                grid.innerHTML = `
+                    <div class="no-results">
+                        <i class="fas fa-search" style="font-size: 3rem; color: #ccc; margin-bottom: 1rem;"></i>
+                        <h3>No vendors found</h3>
+                        <p>Try adjusting your search criteria or browse all categories</p>
+                    </div>
+                `;
+            } else {
+                grid.innerHTML = vendorsToShow.map(vendor => `
+                    <div class="vendor-card">
+                        <div class="vendor-image">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <div class="vendor-content">
+                            <div class="vendor-name">${vendor.name}</div>
+                            <div class="vendor-category">${vendor.category.charAt(0).toUpperCase() + vendor.category.slice(1)}</div>
+                            <div class="vendor-location">
+                                <i class="fas fa-map-marker-alt"></i> ${vendor.location}
+                            </div>
+                            <div class="vendor-description">${vendor.description}</div>
+                            <div class="vendor-contact">
+                                <div class="contact-item">
+                                    <i class="fas fa-phone"></i> ${vendor.phone}
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-envelope"></i> ${vendor.email}
+                                </div>
+                            </div>
+                            <a href="vendor/${vendor.id}/" class="btn-view">View Details</a>
+                        </div>
+                    </div>
+                `).join('');
+            }
+            
+            displayPagination();
+        }
+
+        function displayPagination() {
+            const totalPages = Math.ceil(filteredVendors.length / vendorsPerPage);
+            const pagination = document.getElementById('pagination');
+            
+            if (totalPages <= 1) {
+                pagination.innerHTML = '';
+                return;
+            }
+            
+            let paginationHTML = '';
+            
+            // Previous button
+            if (currentPage > 1) {
+                paginationHTML += `<button class="page-btn" onclick="goToPage(${currentPage - 1})">Previous</button>`;
+            }
+            
+            // Page numbers
+            for (let i = 1; i <= totalPages; i++) {
+                if (i === currentPage) {
+                    paginationHTML += `<button class="page-btn active">${i}</button>`;
+                } else {
+                    paginationHTML += `<button class="page-btn" onclick="goToPage(${i})">${i}</button>`;
+                }
+            }
+            
+            // Next button
+            if (currentPage < totalPages) {
+                paginationHTML += `<button class="page-btn" onclick="goToPage(${currentPage + 1})">Next</button>`;
+            }
+            
+            pagination.innerHTML = paginationHTML;
+        }
+
+        function goToPage(page) {
+            currentPage = page;
+            displayVendors();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html> 

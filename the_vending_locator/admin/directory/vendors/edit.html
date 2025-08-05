@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Vendor - Admin Dashboard</title>
+    <link rel="stylesheet" href="../../../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .admin-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .admin-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+        
+        .back-link {
+            color: #00C5F5;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .back-link:hover {
+            color: #0088E8;
+        }
+        
+        .form-container {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .form-section {
+            margin-bottom: 2rem;
+        }
+        
+        .form-section h3 {
+            color: #1f2937;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #00C5F5;
+        }
+        
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .form-group.full-width {
+            grid-column: 1 / -1;
+        }
+        
+        .form-group label {
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #374151;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            padding: 0.75rem;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #00C5F5;
+            box-shadow: 0 0 0 3px rgba(0, 197, 245, 0.1);
+        }
+        
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        .required {
+            color: #dc2626;
+        }
+        
+        .form-actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: flex-end;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #e5e7eb;
+        }
+        
+        .btn-primary {
+            background: #00C5F5;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .btn-primary:hover {
+            background: #0088E8;
+        }
+        
+        .btn-secondary {
+            background: #6b7280;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .btn-secondary:hover {
+            background: #4b5563;
+        }
+        
+        .service-focus-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 0.5rem;
+        }
+        
+        .service-checkbox {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem;
+            border: 1px solid #e5e7eb;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .service-checkbox:hover {
+            background: #f9fafb;
+        }
+        
+        .service-checkbox input[type="checkbox"] {
+            margin: 0;
+        }
+        
+        .preview-section {
+            background: #f9fafb;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+        
+        .preview-title {
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #374151;
+        }
+        
+        .card-preview {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .preview-company-name {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #1f2937;
+            margin-bottom: 0.5rem;
+        }
+        
+        .preview-description {
+            color: #666;
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+        
+        .preview-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        .preview-detail {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .preview-detail i {
+            color: #00C5F5;
+            width: 16px;
+        }
+        
+        .preview-service-focus {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid #e5e7eb;
+        }
+        
+        .preview-service-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        
+        .service-tag {
+            background: #00C5F5;
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+        
+        @media (max-width: 768px) {
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .form-actions {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="admin-container">
+        <div class="admin-header">
+            <div>
+                <h1><i class="fas fa-edit"></i> Edit Vendor</h1>
+                <p>Update vendor information</p>
+            </div>
+            <a href="index.html" class="back-link">
+                <i class="fas fa-arrow-left"></i> Back to Vendors
+            </a>
+        </div>
+
+        <div class="form-container">
+            <form id="vendorForm">
+                <!-- Basic Information -->
+                <div class="form-section">
+                    <h3>Basic Information</h3>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="companyName">Company Name <span class="required">*</span></label>
+                            <input type="text" id="companyName" name="companyName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phoneNumber">Phone Number <span class="required">*</span></label>
+                            <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label for="description">Company Description <span class="required">*</span></label>
+                        <textarea id="description" name="description" required placeholder="Describe the company, their services, and what makes them unique..."></textarea>
+                    </div>
+                </div>
+
+                <!-- Location Information -->
+                <div class="form-section">
+                    <h3>Location Information</h3>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="city">City <span class="required">*</span></label>
+                            <input type="text" id="city" name="city" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="state">State <span class="required">*</span></label>
+                            <select id="state" name="state" required>
+                                <option value="">Select State</option>
+                                <option value="AL">Alabama</option>
+                                <option value="AK">Alaska</option>
+                                <option value="AZ">Arizona</option>
+                                <option value="AR">Arkansas</option>
+                                <option value="CA">California</option>
+                                <option value="CO">Colorado</option>
+                                <option value="CT">Connecticut</option>
+                                <option value="DE">Delaware</option>
+                                <option value="FL">Florida</option>
+                                <option value="GA">Georgia</option>
+                                <option value="HI">Hawaii</option>
+                                <option value="ID">Idaho</option>
+                                <option value="IL">Illinois</option>
+                                <option value="IN">Indiana</option>
+                                <option value="IA">Iowa</option>
+                                <option value="KS">Kansas</option>
+                                <option value="KY">Kentucky</option>
+                                <option value="LA">Louisiana</option>
+                                <option value="ME">Maine</option>
+                                <option value="MD">Maryland</option>
+                                <option value="MA">Massachusetts</option>
+                                <option value="MI">Michigan</option>
+                                <option value="MN">Minnesota</option>
+                                <option value="MS">Mississippi</option>
+                                <option value="MO">Missouri</option>
+                                <option value="MT">Montana</option>
+                                <option value="NE">Nebraska</option>
+                                <option value="NV">Nevada</option>
+                                <option value="NH">New Hampshire</option>
+                                <option value="NJ">New Jersey</option>
+                                <option value="NM">New Mexico</option>
+                                <option value="NY">New York</option>
+                                <option value="NC">North Carolina</option>
+                                <option value="ND">North Dakota</option>
+                                <option value="OH">Ohio</option>
+                                <option value="OK">Oklahoma</option>
+                                <option value="OR">Oregon</option>
+                                <option value="PA">Pennsylvania</option>
+                                <option value="RI">Rhode Island</option>
+                                <option value="SC">South Carolina</option>
+                                <option value="SD">South Dakota</option>
+                                <option value="TN">Tennessee</option>
+                                <option value="TX">Texas</option>
+                                <option value="UT">Utah</option>
+                                <option value="VT">Vermont</option>
+                                <option value="VA">Virginia</option>
+                                <option value="WA">Washington</option>
+                                <option value="WV">West Virginia</option>
+                                <option value="WI">Wisconsin</option>
+                                <option value="WY">Wyoming</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Business Information -->
+                <div class="form-section">
+                    <h3>Business Information</h3>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="yearsInBusiness">Years in Business</label>
+                            <input type="number" id="yearsInBusiness" name="yearsInBusiness" min="0" max="100" placeholder="e.g., 5">
+                        </div>
+                        <div class="form-group">
+                            <label for="reviewCount">Review Count</label>
+                            <input type="number" id="reviewCount" name="reviewCount" min="0" placeholder="e.g., 150">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Focus -->
+                <div class="form-section">
+                    <h3>Service Focus</h3>
+                    <div class="service-focus-grid">
+                        <label class="service-checkbox">
+                            <input type="checkbox" name="serviceFocus" value="snacks">
+                            <span>Snacks & Candy</span>
+                        </label>
+                        <label class="service-checkbox">
+                            <input type="checkbox" name="serviceFocus" value="beverages">
+                            <span>Beverages & Drinks</span>
+                        </label>
+                        <label class="service-checkbox">
+                            <input type="checkbox" name="serviceFocus" value="healthy">
+                            <span>Healthy Options</span>
+                        </label>
+                        <label class="service-checkbox">
+                            <input type="checkbox" name="serviceFocus" value="coffee">
+                            <span>Coffee & Hot Drinks</span>
+                        </label>
+                        <label class="service-checkbox">
+                            <input type="checkbox" name="serviceFocus" value="fresh">
+                            <span>Fresh Food</span>
+                        </label>
+                        <label class="service-checkbox">
+                            <input type="checkbox" name="serviceFocus" value="ice-cream">
+                            <span>Ice Cream & Frozen</span>
+                        </label>
+                        <label class="service-checkbox">
+                            <input type="checkbox" name="serviceFocus" value="electronics">
+                            <span>Electronics & Gadgets</span>
+                        </label>
+                        <label class="service-checkbox">
+                            <input type="checkbox" name="serviceFocus" value="personal-care">
+                            <span>Personal Care</span>
+                        </label>
+                        <label class="service-checkbox">
+                            <input type="checkbox" name="serviceFocus" value="office-supplies">
+                            <span>Office Supplies</span>
+                        </label>
+                        <label class="service-checkbox">
+                            <input type="checkbox" name="serviceFocus" value="specialty">
+                            <span>Specialty Items</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Card Preview -->
+                <div class="form-section">
+                    <h3>Card Preview</h3>
+                    <div class="preview-section">
+                        <div class="preview-title">How this will appear on location pages:</div>
+                        <div class="card-preview" id="cardPreview">
+                            <div class="preview-company-name" id="previewCompanyName">Company Name</div>
+                            <div class="preview-description" id="previewDescription">Company description will appear here...</div>
+                            <div class="preview-details">
+                                <div class="preview-detail">
+                                    <i class="fas fa-calendar"></i>
+                                    <span id="previewYears">Years in business</span>
+                                </div>
+                                <div class="preview-detail">
+                                    <i class="fas fa-star"></i>
+                                    <span id="previewReviews">Review count</span>
+                                </div>
+                                <div class="preview-detail">
+                                    <i class="fas fa-phone"></i>
+                                    <span id="previewPhone">Phone number</span>
+                                </div>
+                                <div class="preview-detail">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span id="previewLocation">City, State</span>
+                                </div>
+                            </div>
+                            <div class="preview-service-focus">
+                                <div class="preview-title">Service Focus:</div>
+                                <div class="preview-service-tags" id="previewServiceTags">
+                                    <span class="service-tag">Select services above</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form Actions -->
+                <div class="form-actions">
+                    <a href="index.html" class="btn-secondary">Cancel</a>
+                    <button type="submit" class="btn-primary">
+                        <i class="fas fa-save"></i> Update Vendor
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        let currentVendor = null;
+
+        document.addEventListener('DOMContentLoaded', function() {
+            loadVendorData();
+            setupFormListeners();
+        });
+
+        function loadVendorData() {
+            // Get vendor ID from URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const vendorId = parseInt(urlParams.get('id'));
+            
+            if (!vendorId) {
+                alert('No vendor ID provided');
+                window.location.href = 'index.html';
+                return;
+            }
+
+            // Load vendor data from localStorage
+            const vendors = JSON.parse(localStorage.getItem('vendingVendors') || '[]');
+            currentVendor = vendors.find(vendor => vendor.id === vendorId);
+            
+            if (!currentVendor) {
+                alert('Vendor not found');
+                window.location.href = 'index.html';
+                return;
+            }
+
+            // Populate form fields
+            populateForm(currentVendor);
+            updatePreview();
+        }
+
+        function populateForm(vendor) {
+            // Basic information
+            document.getElementById('companyName').value = vendor.companyName || vendor.name || '';
+            document.getElementById('phoneNumber').value = vendor.phoneNumber || vendor.phone || '';
+            document.getElementById('description').value = vendor.description || '';
+
+            // Location information
+            document.getElementById('city').value = vendor.city || '';
+            document.getElementById('state').value = vendor.state || '';
+
+            // Business information
+            document.getElementById('yearsInBusiness').value = vendor.yearsInBusiness || '';
+            document.getElementById('reviewCount').value = vendor.reviewCount || '';
+
+            // Service focus
+            const serviceFocus = vendor.serviceFocus || [];
+            document.querySelectorAll('input[name="serviceFocus"]').forEach(checkbox => {
+                checkbox.checked = serviceFocus.includes(checkbox.value);
+            });
+        }
+
+        function setupFormListeners() {
+            // Add listeners to all form fields for real-time preview
+            const formFields = ['companyName', 'description', 'yearsInBusiness', 'reviewCount', 'phoneNumber', 'city', 'state'];
+            
+            formFields.forEach(fieldId => {
+                const field = document.getElementById(fieldId);
+                if (field) {
+                    field.addEventListener('input', updatePreview);
+                    field.addEventListener('change', updatePreview);
+                }
+            });
+
+            // Add listeners to service focus checkboxes
+            const serviceCheckboxes = document.querySelectorAll('input[name="serviceFocus"]');
+            serviceCheckboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', updatePreview);
+            });
+
+            // Form submission
+            document.getElementById('vendorForm').addEventListener('submit', handleFormSubmit);
+        }
+
+        function updatePreview() {
+            // Update company name
+            const companyName = document.getElementById('companyName').value || 'Company Name';
+            document.getElementById('previewCompanyName').textContent = companyName;
+
+            // Update description
+            const description = document.getElementById('description').value || 'Company description will appear here...';
+            document.getElementById('previewDescription').textContent = description;
+
+            // Update years in business
+            const years = document.getElementById('yearsInBusiness').value;
+            document.getElementById('previewYears').textContent = years ? `${years} years in business` : 'Years in business';
+
+            // Update review count
+            const reviews = document.getElementById('reviewCount').value;
+            document.getElementById('previewReviews').textContent = reviews ? `${reviews} reviews` : 'Review count';
+
+            // Update phone number
+            const phone = document.getElementById('phoneNumber').value || 'Phone number';
+            document.getElementById('previewPhone').textContent = phone;
+
+            // Update location
+            const city = document.getElementById('city').value || 'City';
+            const state = document.getElementById('state').value || 'State';
+            document.getElementById('previewLocation').textContent = `${city}, ${state}`;
+
+            // Update service focus tags
+            updateServiceTags();
+        }
+
+        function updateServiceTags() {
+            const selectedServices = Array.from(document.querySelectorAll('input[name="serviceFocus"]:checked'))
+                .map(checkbox => checkbox.value);
+            
+            const tagsContainer = document.getElementById('previewServiceTags');
+            
+            if (selectedServices.length === 0) {
+                tagsContainer.innerHTML = '<span class="service-tag">Select services above</span>';
+            } else {
+                const serviceLabels = {
+                    'snacks': 'Snacks & Candy',
+                    'beverages': 'Beverages & Drinks',
+                    'healthy': 'Healthy Options',
+                    'coffee': 'Coffee & Hot Drinks',
+                    'fresh': 'Fresh Food',
+                    'ice-cream': 'Ice Cream & Frozen',
+                    'electronics': 'Electronics & Gadgets',
+                    'personal-care': 'Personal Care',
+                    'office-supplies': 'Office Supplies',
+                    'specialty': 'Specialty Items'
+                };
+                
+                tagsContainer.innerHTML = selectedServices.map(service => 
+                    `<span class="service-tag">${serviceLabels[service]}</span>`
+                ).join('');
+            }
+        }
+
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            
+            if (!currentVendor) {
+                alert('No vendor data loaded');
+                return;
+            }
+
+            // Collect form data
+            const formData = new FormData(e.target);
+            const updatedVendor = {
+                ...currentVendor,
+                companyName: formData.get('companyName'),
+                description: formData.get('description'),
+                yearsInBusiness: formData.get('yearsInBusiness'),
+                reviewCount: formData.get('reviewCount'),
+                phoneNumber: formData.get('phoneNumber'),
+                city: formData.get('city'),
+                state: formData.get('state'),
+                serviceFocus: Array.from(document.querySelectorAll('input[name="serviceFocus"]:checked'))
+                    .map(checkbox => checkbox.value)
+            };
+
+            // Validate required fields
+            if (!updatedVendor.companyName || !updatedVendor.description || !updatedVendor.phoneNumber || !updatedVendor.city || !updatedVendor.state) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+
+            // Update in localStorage
+            const vendors = JSON.parse(localStorage.getItem('vendingVendors') || '[]');
+            const vendorIndex = vendors.findIndex(vendor => vendor.id === currentVendor.id);
+            
+            if (vendorIndex !== -1) {
+                vendors[vendorIndex] = updatedVendor;
+                localStorage.setItem('vendingVendors', JSON.stringify(vendors));
+                
+                // Show success message and redirect
+                alert('Vendor updated successfully!');
+                window.location.href = 'index.html';
+            } else {
+                alert('Error updating vendor');
+            }
+        }
+    </script>
+</body>
+</html> 

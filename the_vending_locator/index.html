@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find profitable vending machine locations with our curated lists. Get 50-300+ verified locations in your area within 3-5 days. Join 3,000+ successful vending operators.">
+    <title>The Vending Locator - Find Profitable Vending Machine Locations</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>The Vending Locator</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="/" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/pricing" class="nav-link">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/blog" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/contact" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/pricing" class="nav-link btn-get-started">Get Started</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <div class="badge-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span>Trusted by 3,000+ vending operators nationwide</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="highlight">Qualified Vending Location Leads</span><br>
+                    Where Vending Operators Come to Get Results
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Get 50-300+ pre-researched, qualified vending location leads delivered to your inbox. We verify high-traffic sites so you can focus on closing deals, not cold calling.
+                </p>
+                
+                <div class="hero-cta">
+                    <a href="/pricing" class="btn-primary btn-large">
+                        <i class="fas fa-paper-plane"></i>
+                        Get My Qualified Leads
+                    </a>
+                    <p class="cta-note">Pre-researched locations • Verified contact info</p>
+                </div>
+                
+                <!-- Live User Counter -->
+                <div class="live-user-counter">
+                    <div class="user-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="counter-text">Getting qualified leads</div>
+                    <div class="user-count" id="liveCounter">23</div>
+                </div>
+                
+                <div class="hero-social-proof retro-illustration">
+                    <div class="social-proof-badge">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Proven Track Record</span>
+                    </div>
+                    <div class="hero-stats-grid">
+                        <div class="hero-stat-item">
+                            <div class="hero-stat-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="hero-stat-number">500K+</div>
+                            <div class="hero-stat-label">LOCATIONS FOUND</div>
+                        </div>
+                        <div class="hero-stat-divider"></div>
+                        <div class="hero-stat-item">
+                            <div class="hero-stat-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <div class="hero-stat-number">15K+</div>
+                            <div class="hero-stat-label">DEALS CLOSED</div>
+                        </div>
+                        <div class="hero-stat-divider"></div>
+                        <div class="hero-stat-item">
+                            <div class="hero-stat-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="hero-stat-number">4.9★</div>
+                            <div class="hero-stat-label">CLIENT RATING</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lead Form Section -->
+    <section id="lead-form" class="lead-form-section">
+        <div class="container">
+            <div class="form-container retro-illustration">
+                <div class="form-header">
+                    <div class="form-badge">
+                        <i class="fas fa-envelope-open-text"></i>
+                        <span>Hot Leads Alert</span>
+                    </div>
+                    <h2 class="vintage-accent">Stay in the Loop</h2>
+                    <p>Want to get emails about our hottest leads and new location opportunities? Enter your details below and join our community of successful vending operators.</p>
+                </div>
+                <form class="lead-form" id="locationForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="zipcode">Your Target Area</label>
+                            <input type="text" id="zipcode" name="zipcode" placeholder="Enter your zip code" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-primary btn-large">
+                        <i class="fas fa-paper-plane"></i>
+                        Get Hot Leads Alerts
+                    </button>
+                    <p class="form-note">Join 3,000+ vending operators getting weekly location opportunities</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How It Works</h2>
+                <p class="section-subtitle">Our simple 3-step process to find your next profitable vending locations</p>
+            </div>
+            <div class="steps-container">
+                <div class="step retro-illustration">
+                    <div class="step-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Submit Your Area</h3>
+                    <p>Enter your zip code and email address to tell us where you want to expand your vending business.</p>
+                </div>
+                <div class="step retro-illustration">
+                    <div class="step-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>We Research Your Area</h3>
+                    <p>Our team researches and verifies high-traffic locations in your target area, finding the best opportunities.</p>
+                </div>
+                <div class="step retro-illustration">
+                    <div class="step-icon">
+                        <i class="fas fa-list-alt"></i>
+                    </div>
+                    <h3>Receive Your List</h3>
+                    <p>Get a detailed list of potential locations with verified contact information and business details.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose The Vending Locator</h2>
+                <p class="section-subtitle">Join thousands of successful vending operators who trust our proven location research</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card retro-illustration">
+                    <div class="benefit-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Curated High-Traffic Locations</h3>
+                    <p>We hand-pick locations with proven foot traffic and revenue potential, saving you hours of research.</p>
+                </div>
+                <div class="benefit-card retro-illustration">
+                    <div class="benefit-icon">
+                        <i class="fas fa-address-book"></i>
+                    </div>
+                    <h3>Up-to-Date Contact Details</h3>
+                    <p>All contact information is verified and current, ensuring your outreach efforts aren't wasted.</p>
+                </div>
+                <div class="benefit-card retro-illustration">
+                    <div class="benefit-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Fast Delivery (3-5 Days)</h3>
+                    <p>Receive your customized location list within 3-5 business days, so you can start growing immediately.</p>
+                </div>
+                <div class="benefit-card retro-illustration">
+                    <div class="benefit-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Expert Support</h3>
+                    <p>Get ongoing support and guidance from vending industry experts who understand your business needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"The Vending Locator helped me secure 7 new locations within 30 days. Their research is spot-on and saved me countless hours of cold calling."</p>
+                    <div class="testimonial-author">
+                        <strong>Mike Johnson</strong>
+                        <span>Vending Route Owner</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"I was struggling to find good locations until I found this service. Now I have a steady pipeline of qualified leads to pursue."</p>
+                    <div class="testimonial-author">
+                        <strong>Sarah Williams</strong>
+                        <span>Independent Vending Operator</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"The contact information is always accurate and up-to-date. This service has been a game-changer for my vending business expansion."</p>
+                    <div class="testimonial-author">
+                        <strong>David Chen</strong>
+                        <span>Vending Machine Entrepreneur</span>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-stats">
+                <h3>Typical customers secure 5+ new locations within 30 days</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Results Section -->
+    <section class="success-results-section">
+        <div class="container">
+            <div class="results-container retro-illustration">
+                <div class="results-header">
+                    <div class="results-badge">
+                        <i class="fas fa-trophy"></i>
+                        <span>Proven Results</span>
+                    </div>
+                    <h2 class="results-title">Real Results from Real Customers</h2>
+                    <p class="results-subtitle">See what our vending operators achieve with our location lists</p>
+                </div>
+                
+                <div class="results-stats">
+                    <div class="stat-card retro-illustration">
+                        <div class="stat-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">New Locations</div>
+                        <div class="stat-description">Average secured within 30 days</div>
+                    </div>
+                    
+                    <div class="stat-card retro-illustration">
+                        <div class="stat-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="stat-number">85%</div>
+                        <div class="stat-label">Success Rate</div>
+                        <div class="stat-description">Of customers who follow our process</div>
+                    </div>
+                    
+                    <div class="stat-card retro-illustration">
+                        <div class="stat-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <div class="stat-number">$2,500+</div>
+                        <div class="stat-label">Monthly Revenue</div>
+                        <div class="stat-description">Additional income per new location</div>
+                    </div>
+                </div>
+                
+                <div class="results-cta">
+                    <p class="results-note">Join thousands of vending operators who are expanding their routes with our proven location lists</p>
+                    <a href="/pricing" class="btn-primary btn-large">
+                        <i class="fas fa-rocket"></i>
+                        Get My Location List
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Table Section -->
+    <section class="pricing-table-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Choose Your Perfect Package</h2>
+                <p class="section-subtitle">Get curated lists of high-traffic locations delivered to your inbox. Start growing your vending business today.</p>
+            </div>
+            
+            <div class="pricing-table">
+                <div class="pricing-header">
+                    <div class="feature-category">Feature Category</div>
+                    <div class="basic-col">Basic $19</div>
+                    <div class="pro-col">Pro $29</div>
+                    <div class="start-col">Start $129</div>
+                    <div class="gold-col">Gold $899</div>
+                </div>
+                
+                <div class="pricing-row">
+                    <div class="feature-info">
+                        <h4>Number of locations</h4>
+                        <p>Compilation of potential vending machine placement locations within your zip code vicinity.</p>
+                    </div>
+                    <div class="basic-value">50+ Locations</div>
+                    <div class="pro-value">200+ Locations</div>
+                    <div class="start-value">200+ Locations</div>
+                    <div class="gold-value">300+ Locations</div>
+                </div>
+                
+                <div class="pricing-row">
+                    <div class="feature-info">
+                        <h4>Basic Lead Details</h4>
+                        <p>Includes business name, phone number and address of each location</p>
+                    </div>
+                    <div class="basic-value">✓ Included</div>
+                    <div class="pro-value">✓ Included</div>
+                    <div class="start-value">✓ Included</div>
+                    <div class="gold-value">✓ Included</div>
+                </div>
+                
+                <div class="pricing-row">
+                    <div class="feature-info">
+                        <h4>Lead email addresses</h4>
+                        <p>We find their email address if the email is listed on their website along with reviews and category data.</p>
+                    </div>
+                    <div class="basic-value">—</div>
+                    <div class="pro-value">✓ Included</div>
+                    <div class="start-value">✓ Included</div>
+                    <div class="gold-value">✓ Included</div>
+                </div>
+                
+                <div class="pricing-row">
+                    <div class="feature-info">
+                        <h4>Advanced Lead Scoring</h4>
+                        <p>Our proprietary algorithm scores each location by foot traffic, business type, and vending potential to maximize your success rate.</p>
+                    </div>
+                    <div class="basic-value">—</div>
+                    <div class="pro-value">✓ Included</div>
+                    <div class="start-value">✓ Included</div>
+                    <div class="gold-value">✓ Included</div>
+                </div>
+                
+                <div class="pricing-row">
+                    <div class="feature-info">
+                        <h4>Vending ROI Calculator</h4>
+                        <p>Exclusive tool to calculate potential returns on each location based on machine costs, product margins, and foot traffic data.</p>
+                    </div>
+                    <div class="basic-value">—</div>
+                    <div class="pro-value">—</div>
+                    <div class="start-value">✓ Included</div>
+                    <div class="gold-value">✓ Included</div>
+                </div>
+                
+                <div class="pricing-row">
+                    <div class="feature-info">
+                        <h4>Location Analytics Dashboard</h4>
+                        <p>Visual insights showing traffic patterns, competitor analysis, and demographic data for your target areas.</p>
+                    </div>
+                    <div class="basic-value">—</div>
+                    <div class="pro-value">—</div>
+                    <div class="start-value">✓ Included</div>
+                    <div class="gold-value">✓ Included</div>
+                </div>
+                
+                <div class="pricing-section-header">
+                    <h3>Resources for Sales and Expansion</h3>
+                </div>
+                
+                <div class="pricing-row">
+                    <div class="feature-info">
+                        <h4>Vending eCourse</h4>
+                        <p>Discover the keys to vending success in our all-encompassing eCourse, which delves into selecting lucrative products and maximizing vending machine efficiency.</p>
+                    </div>
+                    <div class="basic-value">—</div>
+                    <div class="pro-value">—</div>
+                    <div class="start-value">✓ Included</div>
+                    <div class="gold-value">✓ Included</div>
+                </div>
+                
+                <div class="pricing-row">
+                    <div class="feature-info">
+                        <h4>Cold Call & Email Script</h4>
+                        <p>Gain an advantage in securing prime locations with our email and phone call scripts, designed to assist you in confidently closing the deal.</p>
+                    </div>
+                    <div class="basic-value">—</div>
+                    <div class="pro-value">—</div>
+                    <div class="start-value">✓ Included</div>
+                    <div class="gold-value">✓ Included</div>
+                </div>
+                
+                <div class="pricing-row">
+                    <div class="feature-info">
+                        <h4>Vending Industry Reports</h4>
+                        <p>Monthly reports on trending products, seasonal opportunities, and market insights to keep you ahead of the competition.</p>
+                    </div>
+                    <div class="basic-value">—</div>
+                    <div class="pro-value">—</div>
+                    <div class="start-value">✓ Included</div>
+                    <div class="gold-value">✓ Included</div>
+                </div>
+                
+                <div class="pricing-section-header">
+                    <h3>Support & Community</h3>
+                </div>
+                
+                <div class="pricing-row">
+                    <div class="feature-info">
+                        <h4>Priority Support</h4>
+                        <p>Get faster response times and dedicated support channels based on your package level.</p>
+                    </div>
+                    <div class="basic-value">Email Only</div>
+                    <div class="pro-value">Email + Chat</div>
+                    <div class="start-value">Priority Email</div>
+                    <div class="gold-value">24/7 Dedicated</div>
+                </div>
+                
+                <div class="pricing-row">
+                    <div class="feature-info">
+                        <h4>Vending Community Access</h4>
+                        <p>Join our exclusive community of successful vending operators for networking, tips, and insider knowledge.</p>
+                    </div>
+                    <div class="basic-value">—</div>
+                    <div class="pro-value">—</div>
+                    <div class="start-value">✓ Included</div>
+                    <div class="gold-value">✓ Included</div>
+                </div>
+            </div>
+            
+            <div class="pricing-actions">
+                <button onclick="openPurchaseModal('Basic', '19', 'https://buy.stripe.com/aEU2929ZcfvQ10IdQT')" class="btn-primary">Buy Basic - $19</button>
+                <button onclick="openPurchaseModal('Pro', '29', 'https://buy.stripe.com/4gwaFyfjw1F0gZG004')" class="btn-primary">Buy Pro - $29</button>
+                <button onclick="openPurchaseModal('Start', '129', 'https://buy.stripe.com/3cs8xq2wKdnI6l24gl')" class="btn-primary">Buy Start - $129</button>
+                <button onclick="openPurchaseModal('Gold', '899', 'https://buy.stripe.com/dR614Y4ESgzU6l25kq')" class="btn-primary">Buy Gold - $899</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile Pricing Section -->
+    <section class="mobile-pricing-section">
+        <div class="container">
+            <h2 class="section-title">Pricing</h2>
+            <div class="mobile-pricing-grid">
+                <div class="mobile-package">
+                    <div class="mobile-package-header">
+                        <h3>Basic</h3>
+                        <span class="price">$19</span>
+                    </div>
+                    <div class="mobile-package-content">
+                        <div class="package-info">
+                            <p class="lead-count">50+ leads</p>
+                            <p class="delivery-time">5 day delivery</p>
+                        </div>
+                        <button onclick="openPurchaseModal('Basic', '19', 'https://buy.stripe.com/aEU2929ZcfvQ10IdQT')" class="mobile-checkout-btn">Get Started</button>
+                    </div>
+                </div>
+                
+                <div class="mobile-package">
+                    <div class="mobile-package-header">
+                        <h3>Pro</h3>
+                        <span class="price">$29</span>
+                    </div>
+                    <div class="mobile-package-content">
+                        <div class="package-info">
+                            <p class="lead-count">200+ leads</p>
+                            <p class="delivery-time">3 day delivery</p>
+                        </div>
+                        <button onclick="openPurchaseModal('Pro', '29', 'https://buy.stripe.com/4gwaFyfjw1F0gZG004')" class="mobile-checkout-btn">Get Started</button>
+                    </div>
+                </div>
+                
+                <div class="mobile-package featured">
+                    <div class="mobile-package-header">
+                        <h3>Start</h3>
+                        <span class="price">$129</span>
+                    </div>
+                    <div class="mobile-package-content">
+                        <div class="package-info">
+                            <p class="lead-count">200+ leads</p>
+                            <p class="delivery-time">3 day delivery</p>
+                            <p class="bonus">+ Sales Resources</p>
+                        </div>
+                        <button onclick="openPurchaseModal('Start', '129', 'https://buy.stripe.com/3cs8xq2wKdnI6l24gl')" class="mobile-checkout-btn featured">Get Started</button>
+                    </div>
+                </div>
+                
+                <div class="mobile-package">
+                    <div class="mobile-package-header">
+                        <h3>Gold</h3>
+                        <span class="price">$899</span>
+                    </div>
+                    <div class="mobile-package-content">
+                        <div class="package-info">
+                            <p class="lead-count">200+ leads</p>
+                            <p class="delivery-time">3 day delivery</p>
+                            <p class="bonus">+ Legal Setup</p>
+                        </div>
+                        <button onclick="openPurchaseModal('Gold', '899', 'https://buy.stripe.com/dR614Y4ESgzU6l25kq')" class="mobile-checkout-btn">Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnership Promise Section -->
+    <section class="partnership-section">
+        <div class="container">
+            <div class="partnership-header">
+                <div class="header-badge">
+                    <i class="fas fa-handshake"></i>
+                    <span>Partnership Promise</span>
+                </div>
+                <h2 class="vintage-accent">What We Deliver vs. What You Own</h2>
+                <p class="partnership-subtitle">Clear expectations for a successful vending partnership. We handle the research, you handle the relationships.</p>
+            </div>
+            
+            <div class="partnership-grid">
+                <!-- Our Deliverables -->
+                <div class="deliverables-card retro-illustration">
+                    <div class="card-header">
+                        <div class="header-icon-wrapper">
+                            <i class="fas fa-gift"></i>
+                        </div>
+                        <h3>What We Deliver</h3>
+                        <p>Our commitment to your success</p>
+                    </div>
+                    
+                    <div class="deliverables-list">
+                        <div class="deliverable-item">
+                            <div class="item-icon">
+                                <i class="fas fa-search-location"></i>
+                            </div>
+                            <div class="item-content">
+                                <h4>Curated Location Lists</h4>
+                                <p>Hand-picked locations with verified contact information and business details</p>
+                            </div>
+                        </div>
+                        
+                        <div class="deliverable-item">
+                            <div class="item-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="item-content">
+                                <h4>Fast Turnaround</h4>
+                                <p>Your customized list delivered within 3-5 business days</p>
+                            </div>
+                        </div>
+                        
+                        <div class="deliverable-item">
+                            <div class="item-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="item-content">
+                                <h4>Quality Assurance</h4>
+                                <p>Every location verified for accuracy and vending potential</p>
+                            </div>
+                        </div>
+                        
+                        <div class="deliverable-item">
+                            <div class="item-icon">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <div class="item-content">
+                                <h4>Sales Resources</h4>
+                                <p>Scripts, templates, and strategies to maximize your success rate</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Your Responsibilities -->
+                <div class="responsibilities-card retro-illustration">
+                    <div class="card-header">
+                        <div class="header-icon-wrapper">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3>What You Own</h3>
+                        <p>Your role in the partnership</p>
+                    </div>
+                    
+                    <div class="responsibilities-list">
+                        <div class="responsibility-item">
+                            <div class="item-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="item-content">
+                                <h4>Outreach & Follow-up</h4>
+                                <p>Making the calls, sending emails, and building relationships with prospects</p>
+                            </div>
+                        </div>
+                        
+                        <div class="responsibility-item">
+                            <div class="item-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <div class="item-content">
+                                <h4>Deal Closing</h4>
+                                <p>Presenting your services, negotiating terms, and securing agreements</p>
+                            </div>
+                        </div>
+                        
+                        <div class="responsibility-item">
+                            <div class="item-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="item-content">
+                                <h4>Performance Tracking</h4>
+                                <p>Monitoring your success rates and optimizing your approach</p>
+                            </div>
+                        </div>
+                        
+                        <div class="responsibility-item">
+                            <div class="item-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="item-content">
+                                <h4>Relationship Management</h4>
+                                <p>Maintaining long-term partnerships with your vending locations</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Partnership CTA -->
+            <div class="partnership-cta">
+                <div class="cta-content">
+                    <h3>Ready to Start Your Partnership?</h3>
+                    <p>Get your first list of qualified locations and begin building your vending empire</p>
+                    <a href="/pricing" class="btn-primary btn-large">
+                        <i class="fas fa-rocket"></i>
+                        Get My Location List
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Roadmap Section -->
+    <section class="success-roadmap">
+        <div class="container">
+            <div class="roadmap-header">
+                <h2 class="title values">Your Success Roadmap</h2>
+                <p class="roadmap-subtitle">Follow these proven steps to maximize your vending business growth</p>
+            </div>
+            
+            <div class="roadmap-timeline">
+                <div class="roadmap-step active">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>Define Your Brand</h3>
+                        <p>Create a memorable business identity that stands out. Your brand name and story will be your first impression on potential clients.</p>
+                        <div class="step-tip">
+                            <i class="fas fa-tip"></i>
+                            <span>Pro Tip: Choose a name that reflects your values and is easy to remember</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="roadmap-step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <i class="fas fa-microphone"></i>
+                        </div>
+                        <h3>Master Your Pitch</h3>
+                        <p>Develop a compelling 30-second elevator pitch that clearly communicates your value proposition and benefits.</p>
+                        <div class="step-tip">
+                            <i class="fas fa-tip"></i>
+                            <span>Pro Tip: Practice your pitch until it feels natural and confident</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="roadmap-step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <div class="step-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Prepare for Launch</h3>
+                        <p>Set up your business systems, prepare your materials, and ensure you're ready to act quickly on opportunities.</p>
+                        <div class="step-tip">
+                            <i class="fas fa-tip"></i>
+                            <span>Pro Tip: Have your business cards, contracts, and samples ready</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="roadmap-cta">
+                <div class="cta-content">
+                    <h3>Ready to Start Your Journey?</h3>
+                    <p>Get your customized location list and begin building your vending empire today.</p>
+                    <a href="/pricing" class="btn-primary btn-large">Get My Location List</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>The Vending Locator</h3>
+                    <p>Helping vending machine business owners find profitable locations since 2023.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="/pricing">Pricing</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for vending tips and industry updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 The Vending Locator. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Purchase Form Modal -->
+    <div id="purchase-modal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-package-title">Purchase Package</h3>
+                <p id="modal-package-description">You're about to purchase a package</p>
+            </div>
+            <div class="modal-body">
+                <form action="https://formspree.io/f/xdkgqele" method="POST" class="purchase-form" id="purchase-form">
+                    <input type="hidden" name="package_name" id="package-name">
+                    <input type="hidden" name="package_price" id="package-price">
+                    <input type="hidden" name="stripe_link" id="stripe-link">
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="zipcode">Zip Code *</label>
+                        <input type="text" id="zipcode" name="zipcode" pattern="[0-9]{5}" placeholder="12345" required>
+                    </div>
+                    
+                    <div class="benefits-section">
+                        <div class="benefits-title">What's Included:</div>
+                        <div class="benefits-grid">
+                            <div class="benefit-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Customized location list for your area</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-building"></i>
+                                <span>Detailed business information</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-shipping-fast"></i>
+                                <span>Fast delivery (3-5 days)</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>30-day money-back guarantee</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn-primary">Complete Purchase</button>
+                        <button type="button" class="btn-secondary" onclick="closeModal()">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Purchase form functionality
+        function openPurchaseModal(packageName, packagePrice, stripeLink) {
+            // Update modal content
+            document.getElementById('modal-package-title').textContent = `Purchase ${packageName} Package`;
+            document.getElementById('modal-package-description').textContent = `You're about to purchase the ${packageName} package for $${packagePrice}`;
+            
+            // Set the hidden fields
+            document.getElementById('package-name').value = packageName;
+            document.getElementById('package-price').value = packagePrice;
+            document.getElementById('stripe-link').value = stripeLink;
+            
+            // Show the modal
+            const modal = document.getElementById('purchase-modal');
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+            document.body.classList.add('modal-open');
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('purchase-modal');
+            if (modal) {
+                modal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+                document.body.classList.remove('modal-open');
+            }
+        }
+
+        // Handle form submission
+        document.addEventListener('DOMContentLoaded', function() {
+            const purchaseForm = document.getElementById('purchase-form');
+            
+            if (purchaseForm) {
+                // Remove any existing event listeners to prevent duplicates
+                const newForm = purchaseForm.cloneNode(true);
+                purchaseForm.parentNode.replaceChild(newForm, purchaseForm);
+                
+                newForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Get form data
+                    const formData = new FormData(newForm);
+                    const stripeLink = formData.get('stripe_link');
+                    
+                    // Submit to Formspree
+                    fetch('https://formspree.io/f/xdkgqele', {
+                        method: 'POST',
+                        body: formData,
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    })
+                    .then(response => {
+                        // Always redirect to Stripe after submission
+                        window.location.href = stripeLink;
+                    })
+                    .catch(error => {
+                        // If error, still redirect to Stripe
+                        window.location.href = stripeLink;
+                    });
+                });
+            }
+            
+            // Close modal when clicking outside
+            document.addEventListener('click', function(e) {
+                if (e.target.classList.contains('modal-overlay')) {
+                    closeModal();
+                }
+            });
+        });
+    </script>
+</body>
+</html> 

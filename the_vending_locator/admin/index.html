@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - The Vending Locator</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .admin-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .admin-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            background: linear-gradient(135deg, #00C5F5 0%, #0088E8 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+        }
+        
+        .admin-nav {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .nav-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .nav-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .nav-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #00C5F5;
+        }
+        
+        .nav-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #1f2937;
+        }
+        
+        .nav-description {
+            color: #666;
+            line-height: 1.5;
+        }
+        
+        .admin-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+        
+        .stat-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #00C5F5;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .quick-actions {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .quick-actions h2 {
+            margin-bottom: 1.5rem;
+            color: #1f2937;
+        }
+        
+        .action-buttons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        
+        .btn-action {
+            background: #00C5F5;
+            color: white;
+            padding: 1rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+        
+        .btn-action:hover {
+            background: #0088E8;
+        }
+        
+        .btn-secondary {
+            background: #6b7280;
+        }
+        
+        .btn-secondary:hover {
+            background: #4b5563;
+        }
+    </style>
+</head>
+<body>
+    <div class="admin-container">
+        <div class="admin-header">
+            <h1><i class="fas fa-tachometer-alt"></i> The Vending Locator - Admin Dashboard</h1>
+            <p>Manage your directory, email campaigns, and analytics</p>
+        </div>
+
+        <!-- Stats Section -->
+        <div class="admin-stats">
+            <div class="stat-card">
+                <div class="stat-number" id="totalVendors">0</div>
+                <div class="stat-label">Total Vendors</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="totalSubscribers">0</div>
+                <div class="stat-label">Email Subscribers</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="totalCategories">0</div>
+                <div class="stat-label">Categories</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="totalLocations">0</div>
+                <div class="stat-label">Locations</div>
+            </div>
+        </div>
+
+        <!-- Navigation Cards -->
+        <div class="admin-nav">
+            <a href="directory/" class="nav-card">
+                <div class="nav-icon">
+                    <i class="fas fa-store"></i>
+                </div>
+                <div class="nav-title">Directory Management</div>
+                <div class="nav-description">
+                    Manage vendors, categories, and locations in your vending directory
+                </div>
+            </a>
+            
+            <a href="emails/" class="nav-card">
+                <div class="nav-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="nav-title">Email Management</div>
+                <div class="nav-description">
+                    Manage subscribers, create campaigns, and track email performance
+                </div>
+            </a>
+            
+            <a href="analytics/" class="nav-card">
+                <div class="nav-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="nav-title">Analytics & SEO</div>
+                <div class="nav-description">
+                    Track website performance, SEO metrics, and user engagement
+                </div>
+            </a>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="quick-actions">
+            <h2>Quick Actions</h2>
+            <div class="action-buttons">
+                <a href="directory/vendors/add.html" class="btn-action">
+                    <i class="fas fa-plus"></i> Add New Vendor
+                </a>
+                <a href="emails/campaigns/create.html" class="btn-action">
+                    <i class="fas fa-paper-plane"></i> Create Campaign
+                </a>
+                <a href="directory/categories/" class="btn-action btn-secondary">
+                    <i class="fas fa-tags"></i> Manage Categories
+                </a>
+                <a href="analytics/" class="btn-action btn-secondary">
+                    <i class="fas fa-eye"></i> View Analytics
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            loadDashboardStats();
+        });
+
+        async function loadDashboardStats() {
+            // Load stats from localStorage or API
+            const vendors = JSON.parse(localStorage.getItem('vendingVendors') || '[]');
+            const leads = JSON.parse(localStorage.getItem('vendingLeads') || '[]');
+            const categories = JSON.parse(localStorage.getItem('vendingCategories') || '[]');
+            const locations = JSON.parse(localStorage.getItem('vendingLocations') || '[]');
+            
+            document.getElementById('totalVendors').textContent = vendors.length;
+            document.getElementById('totalSubscribers').textContent = leads.length;
+            document.getElementById('totalCategories').textContent = categories.length;
+            document.getElementById('totalLocations').textContent = locations.length;
+        }
+    </script>
+</body>
+</html> 

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Read expert vending machine business tips and strategies from The Vending Locator. Learn how to find profitable locations and grow your vending business.">
+    <meta name="keywords" content="vending machine blog post, vending business tips, vending location strategies, vending machine business advice">
+    <meta name="author" content="The Vending Locator">
+    <meta property="og:title" content="Vending Machine Business Blog Post | The Vending Locator">
+    <meta property="og:description" content="Expert vending machine business tips and strategies to help you grow your vending business.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://thevendinglocator.com/blog-post">
+    <title>Vending Machine Business Blog Post | The Vending Locator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Contentful SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>The Vending Locator</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="/" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/pricing" class="nav-link">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/blog" class="nav-link active">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/contact" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/pricing" class="nav-link btn-get-started">Get Started</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post Content -->
+    <main class="single-blog-post">
+        <div class="container">
+            <!-- Loading State -->
+            <div class="loading-posts" id="loading-state">
+                <div class="loading-spinner">
+                    <i class="fas fa-spinner fa-spin"></i>
+                </div>
+                <h3>Loading Blog Post...</h3>
+            </div>
+
+            <!-- Error State -->
+            <div class="error-posts" id="error-state" style="display: none;">
+                <div class="error-icon">
+                    <i class="fas fa-exclamation-triangle"></i>
+                </div>
+                <h3>Unable to Load Blog Post</h3>
+                <p>We're experiencing technical difficulties. Please try again later.</p>
+                <a href="/blog" class="btn-primary">Back to Blog</a>
+            </div>
+
+            <!-- Blog Post Content -->
+            <article class="post-content" id="post-content" style="display: none;">
+                <header class="post-header">
+                    <span class="post-category" id="post-category">Vending 101</span>
+                    <h1 id="post-title">How to Find Profitable Vending Machine Locations</h1>
+                    <div class="post-meta">
+                        <span class="post-date" id="post-date">January 15, 2024</span>
+                        <span class="post-read-time" id="post-read-time">5 min read</span>
+                    </div>
+                </header>
+
+                <div class="post-featured-image">
+                    <img id="post-image" src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Vending Machine Location Strategy">
+                </div>
+
+                <div class="post-content-body" id="post-content-body">
+                    <!-- Content will be loaded here -->
+                </div>
+
+                <footer class="post-footer">
+                    <div class="post-tags" id="post-tags">
+                        <span class="tag">vending machines</span>
+                        <span class="tag">location strategy</span>
+                        <span class="tag">business tips</span>
+                    </div>
+                    <a href="/blog" class="back-to-blog">
+                        <i class="fas fa-arrow-left"></i> Back to Blog
+                    </a>
+                </footer>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>The Vending Locator</h3>
+                    <p>Helping vending machine business owners find profitable locations since 2023.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/services">Services</a></li>
+                        <li><a href="/pricing">Pricing</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for vending tips and industry updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 The Vending Locator. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script>
+        // Blog Post Renderer with Contentful Integration
+        class BlogPostRenderer {
+            constructor() {
+                this.slug = this.getSlugFromURL();
+                this.init();
+            }
+
+            getSlugFromURL() {
+                const urlParams = new URLSearchParams(window.location.search);
+                return urlParams.get('slug') || 'find-profitable-vending-locations';
+            }
+
+            async init() {
+                try {
+                    // Initialize Contentful client
+                    const client = contentful.createClient({
+                        space: 'xpopyri6s8gv',
+                        accessToken: 'as1yT7ZCd27_ByA_MBu0lzJDQZVWmxafx2mfM-c9ooY',
+                        environment: 'master'
+                    });
+                    
+                    window.contentfulClient = client;
+                    
+                    // Load Contentful service
+                    const script = document.createElement('script');
+                    script.src = 'contentful-service.js';
+                    document.body.appendChild(script);
+                    
+                    script.onload = async () => {
+                        await this.loadBlogPost();
+                    };
+                    
+                } catch (error) {
+                    console.error('Error initializing Contentful:', error);
+                    this.showError();
+                }
+            }
+
+            async loadBlogPost() {
+                try {
+                    // Wait for contentful service to be available
+                    let attempts = 0;
+                    while (!window.contentfulService && attempts < 10) {
+                        await new Promise(resolve => setTimeout(resolve, 500));
+                        attempts++;
+                    }
+
+                    if (!window.contentfulService) {
+                        throw new Error('Contentful service not available');
+                    }
+
+                    console.log('Loading blog post with slug:', this.slug);
+
+                    // Get blog post from Contentful
+                    const entry = await window.contentfulService.getBlogPostBySlug(this.slug);
+                    
+                    if (entry) {
+                        const post = window.contentfulService.formatBlogPost(entry);
+                        console.log('Loaded post from Contentful:', post.title);
+                        this.updatePageContent(post);
+                        this.showContent();
+                    } else {
+                        console.log('No post found in Contentful');
+                        this.showError();
+                    }
+                    
+                } catch (error) {
+                    console.error('Error loading blog post:', error);
+                    this.showError();
+                }
+            }
+
+            updatePageContent(post) {
+                // Update meta tags
+                document.title = `${post.title} | The Vending Locator`;
+                document.querySelector('meta[name="description"]').setAttribute('content', post.excerpt || post.title);
+                document.querySelector('meta[property="og:title"]').setAttribute('content', post.title);
+                document.querySelector('meta[property="og:description"]').setAttribute('content', post.excerpt || post.title);
+
+                // Update page content
+                document.getElementById('post-title').textContent = post.title;
+                document.getElementById('post-category').textContent = post.category || 'Vending Tips';
+                document.getElementById('post-date').textContent = this.formatDate(post.publishDate);
+                document.getElementById('post-read-time').textContent = post.readTime || '5 min read';
+                
+                if (post.featuredImage && post.featuredImage.trim()) {
+                    document.getElementById('post-image').src = post.featuredImage;
+                    document.getElementById('post-image').alt = post.title;
+                }
+
+                // Handle content - could be rich text from Contentful or plain text
+                let content = post.content || '';
+                if (typeof content === 'object' && content.content) {
+                    // This is rich text from Contentful
+                    content = this.formatRichText(content);
+                } else {
+                    // This is plain text/markdown
+                    content = this.formatContent(content);
+                }
+                
+                document.getElementById('post-content-body').innerHTML = content;
+                
+                if (post.tags && Array.isArray(post.tags) && post.tags.length > 0) {
+                    document.getElementById('post-tags').innerHTML = post.tags.map(tag => 
+                        `<span class="tag">${tag}</span>`
+                    ).join('');
+                }
+            }
+
+            formatRichText(richText) {
+                // Handle Contentful rich text format
+                if (!richText.content) return '';
+                
+                return richText.content.map(item => {
+                    if (item.nodeType === 'paragraph') {
+                        return `<p>${item.content.map(content => content.value).join('')}</p>`;
+                    } else if (item.nodeType === 'heading-2') {
+                        return `<h2>${item.content.map(content => content.value).join('')}</h2>`;
+                    } else if (item.nodeType === 'heading-3') {
+                        return `<h3>${item.content.map(content => content.value).join('')}</h3>`;
+                    } else if (item.nodeType === 'unordered-list') {
+                        return `<ul>${item.content.map(listItem => 
+                            `<li>${listItem.content.map(content => content.value).join('')}</li>`
+                        ).join('')}</ul>`;
+                    } else if (item.nodeType === 'ordered-list') {
+                        return `<ol>${item.content.map(listItem => 
+                            `<li>${listItem.content.map(content => content.value).join('')}</li>`
+                        ).join('')}</ol>`;
+                    }
+                    return '';
+                }).join('');
+            }
+
+            formatContent(content) {
+                // Convert markdown-like content to HTML
+                return content
+                    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                    .replace(/\*(.*?)\*/g, '<em>$1</em>')
+                    .replace(/## (.*?)\n/g, '<h2>$1</h2>')
+                    .replace(/### (.*?)\n/g, '<h3>$1</h3>')
+                    .replace(/\n\n/g, '</p><p>')
+                    .replace(/\n/g, '<br>')
+                    .replace(/^/, '<p>')
+                    .replace(/$/, '</p>');
+            }
+
+            formatDate(dateString) {
+                const date = new Date(dateString);
+                return date.toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric'
+                });
+            }
+
+            showContent() {
+                document.getElementById('loading-state').style.display = 'none';
+                document.getElementById('post-content').style.display = 'block';
+            }
+
+            showError() {
+                document.getElementById('loading-state').style.display = 'none';
+                document.getElementById('error-state').style.display = 'block';
+            }
+        }
+
+        // Initialize when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof contentful !== 'undefined') {
+                new BlogPostRenderer();
+            } else {
+                console.error('Contentful SDK not loaded');
+            }
+        });
+    </script>
+</body>
+</html> 

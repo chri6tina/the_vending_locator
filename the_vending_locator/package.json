@@ -1,0 +1,24 @@
+{
+  "name": "the-vending-locator",
+  "version": "1.0.0",
+  "description": "The Vending Locator website with email management backend",
+  "main": "index.html",
+  "scripts": {
+    "dev": "netlify dev",
+    "build": "echo 'No build step required'",
+    "deploy": "netlify deploy --prod"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.7"
+  },
+  "devDependencies": {
+    "netlify-cli": "^17.0.0"
+  },
+  "keywords": [
+    "vending",
+    "location-finder",
+    "email-management"
+  ],
+  "author": "The Vending Locator",
+  "license": "MIT"
+} 

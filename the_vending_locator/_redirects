@@ -1,0 +1,30 @@
+# Handle clean URLs (redirect to .html files)
+/pricing /pricing.html 200
+/services /services.html 200
+/blog /blog.html 200
+/contact /contact.html 200
+
+# Handle blog post URLs - use 200 status for SPA routing
+/blog/* /blog-post.html 200
+
+# Redirect root to index
+/ /index.html 200
+
+# Handle .html extensions (serve directly)
+/index.html /index.html 200
+/pricing.html /pricing.html 200
+/services.html /services.html 200
+/blog.html /blog.html 200
+/contact.html /contact.html 200
+
+# Additional redirects for common variations
+/pricing/ /pricing.html 200
+/services/ /services.html 200
+/blog/ /blog.html 200
+/contact/ /contact.html 200
+
+# Test page
+/test-blog /test-blog.html 200
+
+# Fallback for any 404s
+/* /index.html 404 

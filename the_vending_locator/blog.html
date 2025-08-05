@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Vending Locator blog provides expert vending machine business tips, location finding strategies, industry insights, and growth advice. Learn how to find profitable vending locations and grow your vending business.">
+    <meta name="keywords" content="vending machine blog, vending business tips, vending location strategies, vending industry insights, vending machine business advice, vending business growth, vending machine operations, vending maintenance tips">
+    <meta name="author" content="The Vending Locator">
+    <meta property="og:title" content="Vending Machine Business Blog - Expert Tips & Strategies | The Vending Locator">
+    <meta property="og:description" content="Get expert vending machine business tips, location finding strategies, and industry insights to grow your vending business. The Vending Locator blog.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://thevendinglocator.com/blog">
+    <title>Vending Machine Business Blog - Expert Tips & Strategies | The Vending Locator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Contentful SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>The Vending Locator</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="/" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/pricing" class="nav-link">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/blog" class="nav-link active">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/contact" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/pricing" class="nav-link btn-get-started">Get Started</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="blog-hero">
+        <div class="container">
+            <h1>Vending Machine Business Blog</h1>
+            <p>Expert tips, strategies, and insights to help you grow your vending machine business.</p>
+        </div>
+    </section>
+
+    <!-- Category Filters -->
+    <section class="blog-filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="all">All Posts</button>
+                <button class="filter-btn" data-category="vending-101">Vending 101</button>
+                <button class="filter-btn" data-category="finding-locations">Finding Locations</button>
+                <button class="filter-btn" data-category="buying-machines">Buying Machines</button>
+                <button class="filter-btn" data-category="snack-drinks">Snack & Drinks</button>
+                <button class="filter-btn" data-category="vending-operations">Operations</button>
+                <button class="filter-btn" data-category="vending-maintenance">Maintenance</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts Grid -->
+    <section class="blog-grid-section">
+        <div class="container">
+            <div class="blog-grid" id="blog-grid">
+                <!-- Loading state -->
+                <div class="blog-post-loading" id="loading-state">
+                    <div class="loading-spinner">
+                        <i class="fas fa-spinner fa-spin"></i>
+                    </div>
+                    <h3>Loading Blog Posts...</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="blog-newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Get Weekly Vending Tips</h2>
+                <p>Subscribe to our newsletter for expert vending machine business advice.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>The Vending Locator</h3>
+                    <p>Helping vending machine business owners find profitable locations since 2023.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/services">Services</a></li>
+                        <li><a href="/pricing">Pricing</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for vending tips and industry updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 The Vending Locator. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script>
+        // Blog Renderer with Contentful Integration
+        class BlogRenderer {
+            constructor() {
+                this.postsGrid = document.getElementById('blog-grid');
+                this.filterButtons = document.querySelectorAll('.filter-btn');
+                this.currentCategory = 'all';
+                this.posts = [];
+                this.init();
+            }
+
+            async init() {
+                try {
+                    // Initialize Contentful client
+                    const client = contentful.createClient({
+                        space: 'xpopyri6s8gv',
+                        accessToken: 'as1yT7ZCd27_ByA_MBu0lzJDQZVWmxafx2mfM-c9ooY',
+                        environment: 'master'
+                    });
+                    
+                    window.contentfulClient = client;
+                    
+                    // Load Contentful service
+                    const script = document.createElement('script');
+                    script.src = 'contentful-service.js';
+                    document.body.appendChild(script);
+                    
+                    script.onload = async () => {
+                        await this.loadBlogPosts();
+                        this.setupFilters();
+                    };
+                    
+                } catch (error) {
+                    console.error('Error initializing Contentful:', error);
+                    this.showError();
+                }
+            }
+
+            async loadBlogPosts() {
+                try {
+                    // Wait for contentful service to be available
+                    let attempts = 0;
+                    while (!window.contentfulService && attempts < 10) {
+                        await new Promise(resolve => setTimeout(resolve, 500));
+                        attempts++;
+                    }
+
+                    if (!window.contentfulService) {
+                        throw new Error('Contentful service not available');
+                    }
+
+                    // Get blog posts from Contentful
+                    const entries = await window.contentfulService.getBlogPosts();
+                    this.posts = entries.map(entry => window.contentfulService.formatBlogPost(entry));
+                    
+                    console.log('Loaded posts from Contentful:', this.posts.length);
+                    
+                    // Only render posts from Contentful - no fallback to sample data
+                    this.renderPosts(this.posts);
+                    
+                } catch (error) {
+                    console.error('Error loading blog posts:', error);
+                    this.showError();
+                }
+            }
+
+            renderPosts(posts) {
+                if (!this.postsGrid) {
+                    console.error('Blog grid container not found');
+                    return;
+                }
+
+                if (posts.length === 0) {
+                    this.showEmptyState();
+                    return;
+                }
+
+                this.postsGrid.innerHTML = posts.map(post => this.createPostHTML(post)).join('');
+            }
+
+            createPostHTML(post) {
+                const imageUrl = post.featuredImage || 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80';
+                const categoryClass = post.category ? post.category.replace(/\s+/g, '-').toLowerCase() : '';
+                
+                return `
+                    <article class="blog-post ${categoryClass}" data-category="${post.category || ''}">
+                        <a href="/blog-post.html?slug=${post.slug}" class="blog-post-link">
+                            <div class="blog-post-image">
+                                <img src="${imageUrl}" alt="${post.title}" loading="lazy">
+                            </div>
+                            <div class="blog-post-content">
+                                <h3 class="blog-post-title">${post.title}</h3>
+                                <span class="read-more-btn">
+                                    Read More <i class="fas fa-arrow-right"></i>
+                                </span>
+                            </div>
+                        </a>
+                    </article>
+                `;
+            }
+
+            setupFilters() {
+                this.filterButtons.forEach(button => {
+                    button.addEventListener('click', () => {
+                        const category = button.dataset.category;
+                        this.filterPosts(category);
+                        
+                        // Update active button
+                        this.filterButtons.forEach(btn => btn.classList.remove('active'));
+                        button.classList.add('active');
+                    });
+                });
+            }
+
+            filterPosts(category) {
+                const posts = document.querySelectorAll('.blog-post');
+                
+                posts.forEach(post => {
+                    const postCategory = post.dataset.category;
+                    
+                    if (category === 'all' || postCategory === category) {
+                        post.style.display = 'block';
+                    } else {
+                        post.style.display = 'none';
+                    }
+                });
+            }
+
+            showError() {
+                if (this.postsGrid) {
+                    this.postsGrid.innerHTML = `
+                        <div class="blog-post-loading">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <h3>Unable to Load Blog Posts</h3>
+                            <p>We're experiencing technical difficulties. Please try again later.</p>
+                        </div>
+                    `;
+                }
+            }
+
+            showEmptyState() {
+                if (this.postsGrid) {
+                    this.postsGrid.innerHTML = `
+                        <div class="blog-post-empty">
+                            <i class="fas fa-newspaper"></i>
+                            <h3>No Blog Posts Found</h3>
+                            <p>Check back soon for new vending machine business tips and insights.</p>
+                        </div>
+                    `;
+                }
+            }
+
+
+        }
+
+        // Initialize when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof contentful !== 'undefined') {
+                new BlogRenderer();
+            } else {
+                console.error('Contentful SDK not loaded');
+            }
+        });
+    </script>
+</body>
+</html> 
