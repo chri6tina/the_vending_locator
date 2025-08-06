@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>META_TITLE</title>
+    <meta name="description" content="META_DESCRIPTION">
+    <meta name="keywords" content="META_KEYWORDS">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="META_TITLE">
+    <meta property="og:description" content="META_DESCRIPTION">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://thevendinglocator.com/location/LOCATION_SLUG">
+    <meta property="og:image" content="https://thevendinglocator.com/favicon.svg">
+    <meta property="og:site_name" content="The Vending Locator">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="META_TITLE">
+    <meta name="twitter:description" content="META_DESCRIPTION">
+    <meta name="twitter:image" content="https://thevendinglocator.com/favicon.svg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://thevendinglocator.com/location/LOCATION_SLUG">
+    
+    <!-- Local Business Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Vending Services in LOCATION_NAME",
+        "description": "META_DESCRIPTION",
+        "url": "https://thevendinglocator.com/location/LOCATION_SLUG",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "LOCATION_CITY",
+            "addressRegion": "LOCATION_STATE",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "LOCATION_LAT",
+            "longitude": "LOCATION_LNG"
+        },
+        "email": "LOCATION_EMAIL",
+        "serviceArea": {
+            "@type": "City",
+            "name": "LOCATION_CITY"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Vending Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Snack Vending"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Beverage Vending"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Coffee Service"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+    
+    <!-- Breadcrumb Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://thevendinglocator.com"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Locations",
+                "item": "https://thevendinglocator.com/directory"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "LOCATION_NAME",
+                "item": "https://thevendinglocator.com/locations/LOCATION_SLUG"
+            }
+        ]
+    }
+    </script>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        /* Vendor Cards Styles */
+        .vendors-section {
+            padding: 4rem 0;
+            background: #f8f9fa;
+        }
+        
+        .vendors-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+                 .vendor-card {
+             background: white;
+             border-radius: 16px;
+             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+             overflow: hidden;
+             transition: all 0.3s ease;
+             border: 1px solid #f0f0f0;
+             position: relative;
+         }
+         
+         .vendor-card:hover {
+             transform: translateY(-6px);
+             box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+         }
+         
+         .vendor-header {
+             background: linear-gradient(135deg, #f5f5dc, #e8e6d9);
+             padding: 2rem 2rem 1.5rem 2rem;
+             position: relative;
+         }
+         
+         .vendor-logo {
+             width: 70px;
+             height: 70px;
+             background: white;
+             border-radius: 50%;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             color: #8b7355;
+             font-size: 1.75rem;
+             margin-bottom: 1.25rem;
+             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+         }
+         
+         .vendor-name {
+             font-size: 1.75rem;
+             font-weight: 700;
+             color: #1f2937;
+             margin-bottom: 0.75rem;
+             line-height: 1.2;
+         }
+         
+         .vendor-location {
+             color: #8b7355;
+             font-weight: 500;
+             margin-bottom: 0;
+             font-size: 1rem;
+         }
+         
+         .vendor-content {
+             padding: 2rem;
+         }
+         
+         .vendor-description {
+             color: #4b5563;
+             margin-bottom: 2rem;
+             line-height: 1.7;
+             font-size: 1rem;
+         }
+         
+         .vendor-stats {
+             display: grid;
+             grid-template-columns: repeat(3, 1fr);
+             gap: 1.5rem;
+             margin-bottom: 2rem;
+             padding: 1.5rem;
+             background: #fafafa;
+             border-radius: 12px;
+             border: 1px solid #f0f0f0;
+         }
+         
+         .stat-item {
+             text-align: center;
+         }
+         
+         .stat-value {
+             font-size: 1.5rem;
+             font-weight: 700;
+             color: #1f2937;
+             display: block;
+             margin-bottom: 0.25rem;
+         }
+         
+         .stat-label {
+             font-size: 0.75rem;
+             color: #6b7280;
+             text-transform: uppercase;
+             font-weight: 600;
+             letter-spacing: 0.5px;
+         }
+         
+         .vendor-services {
+             margin-bottom: 2rem;
+         }
+         
+         .services-title {
+             font-size: 0.85rem;
+             font-weight: 600;
+             color: #374151;
+             margin-bottom: 1rem;
+             text-transform: uppercase;
+             letter-spacing: 0.5px;
+         }
+         
+         .service-tags {
+             display: flex;
+             flex-wrap: wrap;
+             gap: 0.75rem;
+         }
+         
+         .service-tag {
+             background: #f8f9fa;
+             color: #374151;
+             padding: 0.5rem 1rem;
+             border-radius: 25px;
+             font-size: 0.85rem;
+             font-weight: 500;
+             border: 1px solid #e5e7eb;
+         }
+         
+         .vendor-contact {
+             display: flex;
+             gap: 1rem;
+         }
+         
+         .btn-contact {
+             flex: 1;
+             display: inline-flex;
+             align-items: center;
+             justify-content: center;
+             gap: 0.75rem;
+             padding: 1rem 1.5rem;
+             border-radius: 8px;
+             text-decoration: none;
+             font-weight: 600;
+             font-size: 0.95rem;
+             transition: all 0.3s ease;
+         }
+         
+         .btn-primary-contact {
+             background: #f5f5dc;
+             color: #8b7355;
+             border: 1px solid #d4c4a6;
+         }
+         
+         .btn-secondary-contact {
+             background: white;
+             color: #8b7355;
+             border: 1px solid #d4c4a6;
+         }
+         
+         .btn-contact:hover {
+             transform: translateY(-2px);
+             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+         }
+        
+        /* Info Section Styles */
+        .info-section {
+            padding: 4rem 0;
+            background: white;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .info-card {
+            text-align: center;
+            padding: 2rem;
+            border-radius: 12px;
+            background: #f8f9fa;
+            transition: all 0.3s ease;
+        }
+        
+        .info-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .info-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--soft-orange);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            color: white;
+            font-size: 1.5rem;
+        }
+        
+        .info-card h3 {
+            color: #1f2937;
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+        }
+        
+        .info-card p {
+            color: #6b7280;
+            line-height: 1.6;
+        }
+        
+        /* About Section Styles */
+        .about-section {
+            padding: 4rem 0;
+            background: #f8f9fa;
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+        
+        .about-text p {
+            color: #6b7280;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        
+        .about-features {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-item i {
+            color: var(--soft-orange);
+            font-size: 1.25rem;
+        }
+        
+        .feature-item span {
+            font-weight: 500;
+            color: #374151;
+        }
+        
+        /* Contact Section Styles */
+        .contact-section {
+            padding: 4rem 0;
+            background: white;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .contact-card {
+            text-align: center;
+            padding: 2rem;
+            border-radius: 12px;
+            background: #f8f9fa;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--soft-orange);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            color: white;
+            font-size: 1.5rem;
+        }
+        
+        .contact-card p {
+            color: #6b7280;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+        
+        .contact-label {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+        
+        .contact-label strong {
+            color: #1f2937;
+            font-size: 1.1rem;
+        }
+        
+        .contact-label span {
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+        
+                 /* Mobile Responsive Design */
+         @media (max-width: 768px) {
+             /* Vendor Cards Mobile */
+             .vendors-grid {
+                 grid-template-columns: 1fr;
+                 gap: 1.5rem;
+                 margin-top: 1.5rem;
+             }
+             
+             .vendor-card {
+                 border-radius: 12px;
+                 margin: 0 0.5rem;
+             }
+             
+             .vendor-header {
+                 padding: 1.5rem 1.5rem 1rem 1.5rem;
+             }
+             
+             .vendor-logo {
+                 width: 60px;
+                 height: 60px;
+                 font-size: 1.5rem;
+                 margin-bottom: 1rem;
+             }
+             
+             .vendor-name {
+                 font-size: 1.5rem;
+                 margin-bottom: 0.5rem;
+             }
+             
+             .vendor-content {
+                 padding: 1.5rem;
+             }
+             
+             .vendor-description {
+                 font-size: 0.95rem;
+                 margin-bottom: 1.5rem;
+             }
+             
+             .vendor-stats {
+                 padding: 1rem;
+                 gap: 1rem;
+                 margin-bottom: 1.5rem;
+             }
+             
+             .stat-value {
+                 font-size: 1.25rem;
+             }
+             
+             .stat-label {
+                 font-size: 0.7rem;
+             }
+             
+             .service-tags {
+                 gap: 0.5rem;
+             }
+             
+             .service-tag {
+                 padding: 0.4rem 0.8rem;
+                 font-size: 0.8rem;
+             }
+             
+             .vendor-contact {
+                 flex-direction: column;
+                 gap: 0.75rem;
+             }
+             
+             .btn-contact {
+                 padding: 0.875rem 1.25rem;
+                 font-size: 0.9rem;
+             }
+             
+             /* Info Section Mobile */
+             .info-section {
+                 padding: 3rem 0;
+             }
+             
+             .info-grid {
+                 grid-template-columns: 1fr;
+                 gap: 1.5rem;
+                 margin-top: 1.5rem;
+             }
+             
+             .info-card {
+                 padding: 1.5rem;
+                 margin: 0 0.5rem;
+             }
+             
+             .info-icon {
+                 width: 50px;
+                 height: 50px;
+                 font-size: 1.25rem;
+             }
+             
+             .info-card h3 {
+                 font-size: 1.1rem;
+             }
+             
+             .info-card p {
+                 font-size: 0.9rem;
+             }
+             
+             /* Help Section Mobile */
+             .help-section {
+                 margin: 2rem 0.5rem 0 0.5rem !important;
+                 padding: 2rem 1.5rem !important;
+             }
+             
+             .help-section h3 {
+                 font-size: 1.2rem !important;
+             }
+             
+             .help-section p {
+                 font-size: 1rem !important;
+             }
+             
+             /* Vendor Registration Mobile */
+             .vendor-registration {
+                 margin: 2rem 0.5rem 0 0.5rem !important;
+                 padding: 1.5rem !important;
+             }
+             
+             .vendor-registration h3 {
+                 font-size: 1.3rem !important;
+             }
+             
+             /* Call to Action Mobile */
+             .success-results-section {
+                 padding: 3rem 0;
+             }
+             
+             .results-container {
+                 margin: 0 1rem !important;
+                 padding: 2rem 1.5rem !important;
+             }
+             
+             .results-title {
+                 font-size: 1.5rem !important;
+             }
+             
+             .results-subtitle {
+                 font-size: 1rem !important;
+             }
+             
+             .btn-large {
+                 padding: 1rem 2rem !important;
+                 font-size: 1rem !important;
+             }
+         }
+         
+         /* Small Mobile Devices */
+         @media (max-width: 480px) {
+             .vendor-card {
+                 margin: 0 0.25rem;
+             }
+             
+             .vendor-header {
+                 padding: 1.25rem 1.25rem 0.75rem 1.25rem;
+             }
+             
+             .vendor-content {
+                 padding: 1.25rem;
+             }
+             
+             .vendor-name {
+                 font-size: 1.35rem;
+             }
+             
+             .vendor-description {
+                 font-size: 0.9rem;
+             }
+             
+             .vendor-stats {
+                 padding: 0.875rem;
+                 gap: 0.75rem;
+             }
+             
+             .stat-value {
+                 font-size: 1.1rem;
+             }
+             
+             .service-tag {
+                 padding: 0.35rem 0.7rem;
+                 font-size: 0.75rem;
+             }
+             
+             .btn-contact {
+                 padding: 0.75rem 1rem;
+                 font-size: 0.85rem;
+             }
+             
+             .info-card {
+                 padding: 1.25rem;
+                 margin: 0 0.25rem;
+             }
+             
+             .help-section {
+                 margin: 1.5rem 0.25rem 0 0.25rem !important;
+                 padding: 1.5rem 1.25rem !important;
+             }
+             
+             .vendor-registration {
+                 margin: 1.5rem 0.25rem 0 0.25rem !important;
+                 padding: 1.25rem !important;
+             }
+             
+             .results-container {
+                 margin: 0 0.5rem !important;
+                 padding: 1.5rem 1.25rem !important;
+             }
+         }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>The Vending Locator</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="/" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/pricing.html" class="nav-link">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/hot-leads.html" class="nav-link">Hot Leads</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/blog.html" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/contact.html" class="nav-link btn-get-started">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Location Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <div class="badge-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <span>Vending Services in LOCATION_NAME</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="highlight">Vending Vendors</span><br>
+                    in LOCATION_NAME
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Find local vending machine vendors and services in LOCATION_NAME
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vendor Cards Section -->
+    <section class="vendors-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Vending Vendors in LOCATION_NAME</h2>
+                <p class="section-subtitle">Local vending machine companies and services</p>
+            </div>
+            
+                         <div class="vendors-grid" id="vendorsGrid">
+                 <!-- Vendor cards will be dynamically loaded here -->
+                 <div class="vendor-card">
+                     <div class="vendor-header">
+                         <div class="vendor-logo">
+                             <i class="fas fa-store"></i>
+                         </div>
+                         <h3 class="vendor-name">Global Vending Services</h3>
+                         <div class="vendor-location">LOCATION_NAME, LOCATION_STATE</div>
+                     </div>
+                     <div class="vendor-content">
+                         <p class="vendor-description">Global Vending leads Florida's breakroom solutions with a range of services including snacks, beverages, fresh food, and self-checkout options. Serving Northern, Central, and Southern Florida, we're your comprehensive refreshment partner.</p>
+                         
+                         <div class="vendor-stats">
+                             <div class="stat-item">
+                                 <span class="stat-value">8</span>
+                                 <span class="stat-label">Years</span>
+                             </div>
+                             <div class="stat-item">
+                                 <span class="stat-value">50%</span>
+                                 <span class="stat-label">Service Focus</span>
+                             </div>
+                             <div class="stat-item">
+                                 <span class="stat-value">0</span>
+                                 <span class="stat-label">Reviews</span>
+                             </div>
+                         </div>
+                         
+                         <div class="vendor-services">
+                             <div class="services-title">Service Focus</div>
+                             <div class="service-tags">
+                                 <span class="service-tag">Snack Vending</span>
+                                 <span class="service-tag">Beverage Vending</span>
+                                 <span class="service-tag">Fresh Food</span>
+                                 <span class="service-tag">Self-Checkout</span>
+                             </div>
+                         </div>
+                         
+                         <div class="vendor-contact">
+                             <a href="tel:+18774998363" class="btn-contact btn-primary-contact">
+                                 <i class="fas fa-phone"></i> (877) 499-8363
+                             </a>
+                             <a href="/contact.html" class="btn-contact btn-secondary-contact">
+                                 <i class="fas fa-globe"></i> Visit Website
+                             </a>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+            
+            <!-- Help Section -->
+            <div class="help-section" style="margin-top: 3rem; text-align: center; padding: 2.5rem; background: linear-gradient(135deg, #f5f5dc, #e8e6d9); border-radius: 12px; border: 1px solid #d4c4a6;">
+                <div class="help-icon" style="font-size: 2rem; color: #8b7355; margin-bottom: 1rem;">
+                    <i class="fas fa-question-circle"></i>
+                </div>
+                <h3 style="color: #1f2937; margin-bottom: 1rem; font-size: 1.4rem; font-weight: 600;">Are you looking for vending machine services?</h3>
+                <p style="color: #6b7280; margin-bottom: 1.5rem; line-height: 1.6; font-size: 1.1rem;">Contact us for help to make the best decision for your business needs.</p>
+                <a href="/contact.html" class="btn-primary" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; background: white; color: #8b7355; border: 1px solid #d4c4a6; border-radius: 6px; text-decoration: none; font-weight: 500; transition: all 0.2s ease;">
+                    <i class="fas fa-phone"></i>
+                    Get Expert Advice
+                </a>
+            </div>
+            
+            <!-- Vendor Registration Section -->
+            <div class="vendor-registration" style="margin-top: 3rem; text-align: center; padding: 2rem; background: white; border-radius: 12px; border: 2px dashed #d4c4a6;">
+                <div class="registration-icon" style="font-size: 2.5rem; color: #8b7355; margin-bottom: 1rem;">
+                    <i class="fas fa-plus-circle"></i>
+                </div>
+                <h3 style="color: #1f2937; margin-bottom: 1rem; font-size: 1.5rem;">Are you a vending company that wants to be on this list?</h3>
+                <p style="color: #6b7280; margin-bottom: 1.5rem; line-height: 1.6;">Join our network of trusted vending vendors in LOCATION_NAME. We feature up to 5 top vendors per location.</p>
+                <a href="/contact.html" class="btn-primary" style="display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.5rem; background: #f5f5dc; color: #8b7355; border: 1px solid #d4c4a6; border-radius: 6px; text-decoration: none; font-weight: 500; transition: all 0.2s ease;">
+                    <i class="fas fa-paper-plane"></i>
+                    Contact Us to Join
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Information Section -->
+    <section class="info-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Vending Services in LOCATION_NAME</h2>
+                <p class="section-subtitle">Professional vending solutions tailored for your business needs</p>
+            </div>
+            
+                         <div class="info-grid">
+                 <div class="info-card">
+                     <div class="info-icon">
+                         <i class="fas fa-cookie-bite"></i>
+                     </div>
+                     <h3>Snack Vending</h3>
+                     <p>Quality snack machines stocked with fresh, popular items to keep your customers satisfied.</p>
+                 </div>
+                 <div class="info-card">
+                     <div class="info-icon">
+                         <i class="fas fa-coffee"></i>
+                     </div>
+                     <h3>Beverage Vending</h3>
+                     <p>Cold drinks, hot beverages, and coffee service to meet all refreshment needs.</p>
+                 </div>
+                 <div class="info-card">
+                     <div class="info-icon">
+                         <i class="fas fa-store"></i>
+                     </div>
+                     <h3>Micro Markets</h3>
+                     <p>Self-service convenience stores with fresh food, snacks, and beverages for your workplace.</p>
+                 </div>
+                 <div class="info-card">
+                     <div class="info-icon">
+                         <i class="fas fa-mug-hot"></i>
+                     </div>
+                     <h3>Coffee Services</h3>
+                     <p>Premium coffee machines, espresso stations, and hot beverage solutions for your office.</p>
+                 </div>
+                 <div class="info-card">
+                     <div class="info-icon">
+                         <i class="fas fa-robot"></i>
+                     </div>
+                     <h3>AI Smart Coolers</h3>
+                     <p>Intelligent vending machines with touchless payment and inventory tracking technology.</p>
+                 </div>
+                 <div class="info-card">
+                     <div class="info-icon">
+                         <i class="fas fa-leaf"></i>
+                     </div>
+                     <h3>Healthy Options</h3>
+                     <p>Nutritious snacks and beverages to support wellness in your workplace.</p>
+                 </div>
+                 <div class="info-card">
+                     <div class="info-icon">
+                         <i class="fas fa-ice-cream"></i>
+                     </div>
+                     <h3>Frozen Treats</h3>
+                     <p>Ice cream machines and frozen dessert vending for employee satisfaction.</p>
+                 </div>
+                 <div class="info-card">
+                     <div class="info-icon">
+                         <i class="fas fa-credit-card"></i>
+                     </div>
+                     <h3>Cashless Payment</h3>
+                     <p>Modern payment solutions including credit cards, mobile pay, and contactless options.</p>
+                 </div>
+                 <div class="info-card">
+                     <div class="info-icon">
+                         <i class="fas fa-tools"></i>
+                     </div>
+                     <h3>Maintenance Services</h3>
+                     <p>Regular maintenance, restocking, and technical support for all vending equipment.</p>
+                 </div>
+             </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Call to Action Section -->
+    <section class="success-results-section">
+        <div class="container" style="display: flex; justify-content: center;">
+            <div class="results-container retro-illustration" style="text-align: center; max-width: 800px; width: 100%;">
+                <div class="results-header">
+                    <div class="results-badge">
+                        <i class="fas fa-paper-plane"></i>
+                        <span>Get Started Today</span>
+                    </div>
+                    <h2 class="results-title">Need Vending Services in LOCATION_NAME?</h2>
+                    <p class="results-subtitle">Contact us to learn more about our vending solutions for your business</p>
+                </div>
+                
+                <div class="results-cta">
+                    <a href="/contact.html" class="btn-primary btn-large">
+                        <i class="fas fa-paper-plane"></i>
+                        Get Started
+                    </a>
+                    <div style="margin-top: 1.5rem;">
+                        <p class="results-note">Professional vending solutions • Quality service • Reliable support</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>The Vending Locator</h3>
+                    <p>Your trusted partner for vending machine solutions and location services.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/services.html">Services</a></li>
+                        <li><a href="/pricing.html">Pricing</a></li>
+                        <li><a href="/hot-leads.html">Hot Leads</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@thevendinglocator.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Business St, City, State</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 The Vending Locator. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/script.js"></script>
+    <script src="/seo-generator.js"></script>
+    <script src="/location-seo.js"></script>
+</body>
+</html> 

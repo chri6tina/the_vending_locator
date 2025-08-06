@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vending Machine Locations - Find Vending Services Near You | The Vending Locator</title>
+    <meta name="description" content="Find vending machine locations near you. Browse our comprehensive directory of vending services by city and state. Updated daily with the latest vending machine locations.">
+    <meta name="keywords" content="vending machine locations, vending services, find vending machines, vending machine directory, vending machine near me, vending services by location">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Vending Machine Locations - Find Vending Services Near You">
+    <meta property="og:description" content="Find vending machine locations near you. Browse our comprehensive directory of vending services by city and state.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://thevendinglocator.com/location/">
+    <meta property="og:image" content="https://thevendinglocator.com/favicon.svg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Vending Machine Locations - Find Vending Services Near You">
+    <meta name="twitter:description" content="Find vending machine locations near you. Browse our comprehensive directory of vending services by city and state.">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://thevendinglocator.com/location/">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Vending Machine Locations",
+        "description": "Find vending machine locations near you with our comprehensive directory",
+        "url": "https://thevendinglocator.com/location/",
+        "mainEntity": {
+            "@type": "ItemList",
+            "name": "Vending Machine Locations Directory",
+            "description": "Directory of vending machine locations and services"
+        }
+    }
+    </script>
+    
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .location-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .location-hero {
+            background: white;
+            padding: 4rem 2rem;
+            border-radius: 12px;
+            text-align: center;
+            margin-bottom: 3rem;
+            border: 1px solid #e5e7eb;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+        
+        .location-hero h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        
+        .location-hero p {
+            font-size: 1.1rem;
+            color: #6b7280;
+            margin-bottom: 0;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .search-section {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+            border: 1px solid #e5e7eb;
+        }
+        
+        .search-form {
+            display: grid;
+            grid-template-columns: 1fr 1fr auto;
+            gap: 1rem;
+            align-items: end;
+        }
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .form-group label {
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #374151;
+            font-size: 0.9rem;
+        }
+        
+        .form-group input,
+        .form-group select {
+            padding: 0.75rem;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+            font-size: 1rem;
+            transition: all 0.2s ease;
+            background: white;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--soft-orange);
+            box-shadow: 0 0 0 3px rgba(243, 156, 18, 0.1);
+        }
+        
+        .btn-search {
+            background: var(--soft-orange);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .btn-search:hover {
+            background: #e67e22;
+            transform: translateY(-1px);
+        }
+        
+        .filters-section {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .filter-btn {
+            background: white;
+            border: 1px solid #d1d5db;
+            color: #374151;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--soft-orange);
+            color: white;
+            border-color: var(--soft-orange);
+        }
+        
+        .location-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+        
+        .location-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: all 0.2s ease;
+            border: 1px solid #e5e7eb;
+        }
+        
+        .location-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        .location-image {
+            height: 160px;
+            background: #f3f4f6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--soft-orange);
+            font-size: 2.5rem;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        .location-content {
+            padding: 1.5rem;
+        }
+        
+        .location-name {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 0.5rem;
+        }
+        
+        .location-state {
+            color: var(--soft-orange);
+            font-weight: 500;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+        
+        .location-description {
+            color: #6b7280;
+            margin-bottom: 1rem;
+            line-height: 1.5;
+            font-size: 0.9rem;
+        }
+        
+        .location-stats {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            font-size: 0.8rem;
+            color: #6b7280;
+        }
+        
+        .stat-item {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+        
+        .stat-item i {
+            color: var(--soft-orange);
+        }
+        
+        .btn-view {
+            display: inline-block;
+            background: var(--soft-orange);
+            color: white;
+            text-decoration: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            text-align: center;
+            width: 100%;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+        
+        .btn-view:hover {
+            background: #e67e22;
+            transform: translateY(-1px);
+        }
+        
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 0.25rem;
+            margin-top: 2rem;
+        }
+        
+        .page-btn {
+            background: white;
+            border: 1px solid #d1d5db;
+            color: #374151;
+            padding: 0.5rem 0.75rem;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+        
+        .page-btn:hover,
+        .page-btn.active {
+            background: var(--soft-orange);
+            color: white;
+            border-color: var(--soft-orange);
+        }
+        
+        .no-results {
+            text-align: center;
+            padding: 3rem 2rem;
+            color: #6b7280;
+            background: white;
+            border-radius: 8px;
+            border: 1px solid #e5e7eb;
+        }
+        
+        .no-results i {
+            font-size: 2rem;
+            color: var(--soft-orange);
+            margin-bottom: 1rem;
+        }
+        
+        .loading-state {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+        
+        .loading-spinner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .loading-spinner i {
+            font-size: 2rem;
+            color: var(--soft-orange);
+        }
+        
+        .loading-spinner p {
+            color: #6b7280;
+            font-size: 1rem;
+        }
+        
+        .error-state {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 4rem 2rem;
+            background: white;
+            border-radius: 8px;
+            border: 1px solid #e5e7eb;
+        }
+        
+        .error-state i {
+            font-size: 3rem;
+            color: #ef4444;
+            margin-bottom: 1rem;
+        }
+        
+        .error-state h3 {
+            color: #1f2937;
+            margin-bottom: 0.5rem;
+        }
+        
+        .error-state p {
+            color: #6b7280;
+        }
+        
+        @media (max-width: 768px) {
+            .search-form {
+                grid-template-columns: 1fr;
+            }
+            
+            .location-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .location-hero h1 {
+                font-size: 2rem;
+            }
+            
+            .location-hero p {
+                font-size: 1rem;
+            }
+            
+            .search-section {
+                padding: 1.5rem;
+            }
+            
+            .filters-section {
+                justify-content: flex-start;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .location-hero h1 {
+                font-size: 1.75rem;
+            }
+            
+            .location-hero p {
+                font-size: 0.9rem;
+            }
+            
+            .search-section {
+                padding: 1rem;
+            }
+            
+            .location-content {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>The Vending Locator</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="/" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/pricing.html" class="nav-link">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/hot-leads.html" class="nav-link">Hot Leads</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/blog.html" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/contact.html" class="nav-link btn-get-started">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="location-container">
+        <div class="location-hero">
+            <h1>Vending Machine Locations</h1>
+            <p>Find vending services in your area with our comprehensive location directory. Browse thousands of verified locations across the United States.</p>
+        </div>
+
+        <!-- Search Section -->
+        <div class="search-section">
+            <form class="search-form" id="searchForm">
+                <div class="form-group">
+                    <label for="searchQuery">Search Locations</label>
+                    <input type="text" id="searchQuery" placeholder="Enter city or state name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="stateFilter">State</label>
+                    <select id="stateFilter">
+                        <option value="">All States</option>
+                        <option value="new-york">New York</option>
+                        <option value="california">California</option>
+                        <option value="texas">Texas</option>
+                        <option value="florida">Florida</option>
+                        <option value="illinois">Illinois</option>
+                        <option value="pennsylvania">Pennsylvania</option>
+                        <option value="ohio">Ohio</option>
+                        <option value="georgia">Georgia</option>
+                        <option value="north-carolina">North Carolina</option>
+                        <option value="michigan">Michigan</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="btn-search">
+                    <i class="fas fa-search"></i> Search
+                </button>
+            </form>
+        </div>
+
+        <!-- Location Grid -->
+        <div class="location-grid" id="locationGrid">
+            <!-- Loading state -->
+            <div class="loading-state" id="loadingState">
+                <div class="loading-spinner">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <p>Loading locations...</p>
+                </div>
+            </div>
+            
+            <!-- Error state -->
+            <div class="error-state" id="errorState" style="display: none;">
+                <i class="fas fa-exclamation-triangle"></i>
+                <h3>Unable to load locations</h3>
+                <p>Please try refreshing the page or contact support if the problem persists.</p>
+            </div>
+            
+            <!-- No results state -->
+            <div class="no-results" id="noResults" style="display: none;">
+                <i class="fas fa-search"></i>
+                <h3>No locations found</h3>
+                <p>Try adjusting your search criteria or browse all locations</p>
+            </div>
+            
+            <!-- Dynamic location cards will be loaded here -->
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination">
+            <button class="page-btn active">1</button>
+            <button class="page-btn">2</button>
+            <button class="page-btn">3</button>
+            <button class="page-btn">4</button>
+            <button class="page-btn">5</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>The Vending Locator</h3>
+                <p>Your trusted partner in finding profitable vending machine locations. Join thousands of successful vending operators nationwide.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="/services.html">Location Research</a></li>
+                    <li><a href="/hot-leads.html">Hot Leads</a></li>
+                    <li><a href="/pricing.html">Pricing Plans</a></li>
+                    <li><a href="/blog.html">Vending Blog</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="/contact.html">Contact Us</a></li>
+                    <li><a href="/faq.html">FAQ</a></li>
+                    <li><a href="/privacy.html">Privacy Policy</a></li>
+                    <li><a href="/terms.html">Terms of Service</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Stay updated with the latest vending opportunities and industry insights.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit" class="btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 The Vending Locator. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Global variables
+        let allLocations = [];
+        let filteredLocations = [];
+        let currentPage = 1;
+        const locationsPerPage = 12;
+
+        // Mobile navigation toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Load locations on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            loadLocations();
+        });
+
+        // Load locations from API
+        async function loadLocations() {
+            const loadingState = document.getElementById('loadingState');
+            const errorState = document.getElementById('errorState');
+            const locationGrid = document.getElementById('locationGrid');
+
+            try {
+                // Show loading state
+                loadingState.style.display = 'block';
+                errorState.style.display = 'none';
+
+                const response = await fetch('/.netlify/functions/get-locations');
+                const data = await response.json();
+
+                if (!response.ok) {
+                    throw new Error(data.error || 'Failed to load locations');
+                }
+
+                if (data.success && data.locations) {
+                    allLocations = data.locations;
+                    filteredLocations = [...allLocations];
+                    displayLocations();
+                } else {
+                    throw new Error('No location data received');
+                }
+
+            } catch (error) {
+                console.error('Error loading locations:', error);
+                loadingState.style.display = 'none';
+                errorState.style.display = 'block';
+            }
+        }
+
+        // Display locations
+        function displayLocations() {
+            const loadingState = document.getElementById('loadingState');
+            const errorState = document.getElementById('errorState');
+            const noResults = document.getElementById('noResults');
+            const locationGrid = document.getElementById('locationGrid');
+
+            // Hide loading and error states
+            loadingState.style.display = 'none';
+            errorState.style.display = 'none';
+
+            if (filteredLocations.length === 0) {
+                noResults.style.display = 'block';
+                return;
+            }
+
+            noResults.style.display = 'none';
+
+            // Calculate pagination
+            const startIndex = (currentPage - 1) * locationsPerPage;
+            const endIndex = startIndex + locationsPerPage;
+            const locationsToShow = filteredLocations.slice(startIndex, endIndex);
+
+            // Generate location cards
+            const locationCardsHTML = locationsToShow.map(location => {
+                const iconClass = getLocationIcon(location.category || 'default');
+                const statsHTML = generateLocationStats(location);
+                
+                return `
+                    <div class="location-card">
+                        <div class="location-image">
+                            <i class="${iconClass}"></i>
+                        </div>
+                        <div class="location-content">
+                            <h3 class="location-name">${location.name}</h3>
+                            <div class="location-state">${location.state}</div>
+                            <p class="location-description">${location.description || `Professional vending services in ${location.name}, ${location.state}`}</p>
+                            <div class="location-stats">
+                                ${statsHTML}
+                            </div>
+                            <a href="/location/${location.slug}" class="btn-view">View Details</a>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            // Clear existing cards and add new ones
+            const existingCards = locationGrid.querySelectorAll('.location-card');
+            existingCards.forEach(card => card.remove());
+            
+            locationGrid.insertAdjacentHTML('beforeend', locationCardsHTML);
+
+            // Update pagination
+            updatePagination();
+        }
+
+        // Get appropriate icon for location type
+        function getLocationIcon(category) {
+            const iconMap = {
+                'restaurants': 'fas fa-utensils',
+                'offices': 'fas fa-building',
+                'hospitals': 'fas fa-hospital',
+                'schools': 'fas fa-graduation-cap',
+                'retail': 'fas fa-shopping-bag',
+                'default': 'fas fa-map-marker-alt'
+            };
+            return iconMap[category] || iconMap.default;
+        }
+
+        // Generate location stats
+        function generateLocationStats(location) {
+            const stats = [];
+            
+            if (location.vendorCount !== undefined) {
+                stats.push(`
+                    <div class="stat-item">
+                        <i class="fas fa-store"></i>
+                        <span>${location.vendorCount} Vendors</span>
+                    </div>
+                `);
+            }
+            
+            if (location.serviceArea) {
+                stats.push(`
+                    <div class="stat-item">
+                        <i class="fas fa-map"></i>
+                        <span>${location.serviceArea}</span>
+                    </div>
+                `);
+            }
+
+            // Default stats if none provided
+            if (stats.length === 0) {
+                stats.push(`
+                    <div class="stat-item">
+                        <i class="fas fa-users"></i>
+                        <span>High Traffic Area</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-star"></i>
+                        <span>Verified Location</span>
+                    </div>
+                `);
+            }
+
+            return stats.join('');
+        }
+
+        // Update pagination
+        function updatePagination() {
+            const pagination = document.querySelector('.pagination');
+            const totalPages = Math.ceil(filteredLocations.length / locationsPerPage);
+            
+            if (totalPages <= 1) {
+                pagination.style.display = 'none';
+                return;
+            }
+
+            pagination.style.display = 'flex';
+            
+            let paginationHTML = '';
+            
+            // Previous button
+            if (currentPage > 1) {
+                paginationHTML += `<button class="page-btn" onclick="goToPage(${currentPage - 1})">Previous</button>`;
+            }
+            
+            // Page numbers
+            for (let i = 1; i <= totalPages; i++) {
+                if (i === currentPage) {
+                    paginationHTML += `<button class="page-btn active">${i}</button>`;
+                } else {
+                    paginationHTML += `<button class="page-btn" onclick="goToPage(${i})">${i}</button>`;
+                }
+            }
+            
+            // Next button
+            if (currentPage < totalPages) {
+                paginationHTML += `<button class="page-btn" onclick="goToPage(${currentPage + 1})">Next</button>`;
+            }
+            
+            pagination.innerHTML = paginationHTML;
+        }
+
+        // Go to specific page
+        function goToPage(page) {
+            currentPage = page;
+            displayLocations();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Search functionality
+        const searchForm = document.getElementById('searchForm');
+        const searchQuery = document.getElementById('searchQuery');
+        const stateFilter = document.getElementById('stateFilter');
+
+        searchForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            filterLocations();
+        });
+
+        // Real-time search (optional)
+        searchQuery.addEventListener('input', () => {
+            filterLocations();
+        });
+
+        stateFilter.addEventListener('change', () => {
+            filterLocations();
+        });
+
+        // Filter locations based on search criteria
+        function filterLocations() {
+            const query = searchQuery.value.toLowerCase();
+            const state = stateFilter.value;
+            
+            filteredLocations = allLocations.filter(location => {
+                const locationText = `${location.name} ${location.state} ${location.description || ''}`.toLowerCase();
+                const locationState = location.state.toLowerCase();
+                
+                const matchesQuery = query === '' || locationText.includes(query);
+                const matchesState = state === '' || locationState.includes(state);
+                
+                return matchesQuery && matchesState;
+            });
+            
+            currentPage = 1; // Reset to first page
+            displayLocations();
+        }
+
+        // Pagination functionality
+        const pageButtons = document.querySelectorAll('.page-btn');
+        
+        pageButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                pageButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html> 

@@ -1,8 +1,8 @@
 // Contentful Configuration
 const CONTENTFUL_CONFIG = {
-    spaceId: 'xpopyri6s8gv', // Your Contentful Space ID
-    accessToken: 'as1yT7ZCd27_ByA_MBu0lzJDQZVWmxafx2mfM-c9ooY', // Your Contentful Access Token
-    environment: 'master'
+    spaceId: process.env.CONTENTFUL_SPACE_ID || 'xpopyri6s8gv', // Your Contentful Space ID
+    accessToken: process.env.CONTENTFUL_ACCESS_TOKEN || 'as1yT7ZCd27_ByA_MBu0lzJDQZVWmxafx2mfM-c9ooY', // Your Contentful Access Token
+    environment: process.env.CONTENTFUL_ENVIRONMENT || 'master'
 };
 
 // Initialize Contentful client

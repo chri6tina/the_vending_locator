@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Form Fix</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; }
+        input, textarea { width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
+        button { padding: 10px 20px; background: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; }
+        .error { color: red; margin-top: 10px; }
+        .success { color: green; margin-top: 10px; }
+        .info { color: blue; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Test Form Fix</h1>
+    
+    <div id="status">Checking form functionality...</div>
+    
+    <form id="testForm">
+        <div class="form-group">
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="meta_title">Meta Title:</label>
+            <input type="text" id="meta_title" name="meta_title">
+        </div>
+        
+        <div class="form-group">
+            <label for="meta_description">Meta Description:</label>
+            <textarea id="meta_description" name="meta_description"></textarea>
+        </div>
+        
+        <button type="submit">Test Submit</button>
+    </form>
+    
+    <div id="result"></div>
+    
+    <script>
+        // Test if the AI form handler is working
+        document.addEventListener('DOMContentLoaded', function() {
+            const statusDiv = document.getElementById('status');
+            const cityInput = document.getElementById('city');
+            const stateInput = document.getElementById('state');
+            
+            // Test capitalization
+            cityInput.addEventListener('input', function() {
+                console.log('City input:', this.value);
+            });
+            
+            stateInput.addEventListener('input', function() {
+                console.log('State input:', this.value);
+            });
+            
+            // Test form submission
+            document.getElementById('testForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                const resultDiv = document.getElementById('result');
+                resultDiv.innerHTML = '<p class="success">Form submission working! Data collected:</p>';
+                resultDiv.innerHTML += `<p>City: ${cityInput.value}</p>`;
+                resultDiv.innerHTML += `<p>State: ${stateInput.value}</p>`;
+                resultDiv.innerHTML += `<p>Meta Title: ${document.getElementById('meta_title').value}</p>`;
+                resultDiv.innerHTML += `<p>Meta Description: ${document.getElementById('meta_description').value}</p>`;
+            });
+            
+            statusDiv.innerHTML = '<p class="success">✅ Form functionality test ready. Try typing in the fields and submitting.</p>';
+        });
+        
+        // Test if AI scripts load without errors
+        window.addEventListener('error', function(e) {
+            console.error('JavaScript error:', e.error);
+            document.getElementById('status').innerHTML = '<p class="error">❌ JavaScript error detected: ' + e.error.message + '</p>';
+        });
+    </script>
+    
+    <!-- Load AI Scripts -->
+    <script src="/ai-seo-generator.js"></script>
+    <script src="/ai-location-form.js"></script>
+</body>
+</html> 

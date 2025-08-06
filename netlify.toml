@@ -7,5 +7,15 @@
   to = "/.netlify/functions/:splat"
   status = 200
 
+[[redirects]]
+  from = "/locations/*"
+  to = "/locations/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/sitemap.xml"
+  to = "/.netlify/functions/generate-sitemap"
+  status = 200
+
 [functions]
   directory = "functions" 

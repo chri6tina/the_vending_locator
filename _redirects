@@ -26,5 +26,17 @@
 # Test page
 /test-blog /test-blog.html 200
 
+# Location pages - handle both the directory and individual location pages
+/location /location/index.html 200
+/location/ /location/index.html 200
+/location/*.html /location/*.html 200
+
+# Handle clean location URLs (without .html extension)
+/location/* /location/*.html 200
+
+# Redirect old directory to new location
+/directory /location/ 301
+/directory/ /location/ 301
+
 # Fallback for any 404s
 /* /index.html 404 

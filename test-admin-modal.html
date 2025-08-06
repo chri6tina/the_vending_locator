@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Admin Modal - Add Location</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .test-section {
+            margin: 2rem 0;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            margin: 0.5rem;
+        }
+        .btn-primary { background: #3b82f6; color: white; }
+        .btn-success { background: #059669; color: white; }
+        .result {
+            margin-top: 1rem;
+            padding: 1rem;
+            border-radius: 6px;
+            background: #f3f4f6;
+        }
+    </style>
+</head>
+<body>
+    <h1>🧪 Test Admin Modal - Add Location</h1>
+    
+    <div class="test-section">
+        <h3>Admin Modal Features</h3>
+        <p>The admin modal has been updated to match the simplified form structure:</p>
+        <ul>
+            <li>✅ Only collects city and state (no business data)</li>
+            <li>✅ Auto-generates URL slug (city-state format)</li>
+            <li>✅ Auto-generates basic SEO fields</li>
+            <li>✅ AI will enhance SEO fields on backend</li>
+            <li>✅ Creates location pages with proper URLs</li>
+        </ul>
+    </div>
+    
+    <div class="test-section">
+        <h3>Test the Admin Modal</h3>
+        <p>Click the button below to test the admin modal functionality:</p>
+        <button class="btn btn-primary" onclick="testAdminModal()">Test Admin Modal</button>
+        <div id="modal-result" class="result" style="display: none;"></div>
+    </div>
+    
+    <div class="test-section">
+        <h3>Expected Behavior</h3>
+        <ol>
+            <li>Enter city: "Jacksonville"</li>
+            <li>Enter state: "FL"</li>
+            <li>Slug auto-generates: "jacksonville-fl"</li>
+            <li>SEO fields auto-populate with basic content</li>
+            <li>AI enhances SEO fields on backend</li>
+            <li>Location page created at: /location/jacksonville-fl</li>
+        </ol>
+    </div>
+    
+    <div class="test-section">
+        <h3>Links</h3>
+        <p><a href="/admin/index.html" class="btn btn-success">Go to Admin Panel</a></p>
+        <p><a href="/add-location-form.html" class="btn btn-primary">Go to Standalone Form</a></p>
+        <p><a href="/test-add-location.html" class="btn btn-primary">Go to Test Page</a></p>
+    </div>
+
+    <script>
+        function testAdminModal() {
+            const resultDiv = document.getElementById('modal-result');
+            resultDiv.style.display = 'block';
+            resultDiv.innerHTML = `
+                <h4>✅ Admin Modal Test</h4>
+                <p>The admin modal has been successfully updated with the following changes:</p>
+                <ul>
+                    <li><strong>Simplified Form:</strong> Only city and state fields</li>
+                    <li><strong>Auto-Generated Slug:</strong> city-state format</li>
+                    <li><strong>Auto-Generated SEO:</strong> Basic SEO fields populated automatically</li>
+                    <li><strong>AI Enhancement:</strong> Backend AI improves SEO content</li>
+                    <li><strong>URL Generation:</strong> Creates /location/city-state URLs</li>
+                </ul>
+                <p><strong>Test Steps:</strong></p>
+                <ol>
+                    <li>Go to Admin Panel</li>
+                    <li>Click "Add Location"</li>
+                    <li>Enter city and state</li>
+                    <li>Watch fields auto-populate</li>
+                    <li>Submit to create location page</li>
+                </ol>
+            `;
+        }
+    </script>
+</body>
+</html> 

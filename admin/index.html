@@ -7,232 +7,2740 @@
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--warm-charcoal);
+        }
+
         .admin-container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 2rem;
+            display: flex;
+            min-height: 100vh;
         }
-        
-        .admin-header {
-            text-align: center;
-            margin-bottom: 3rem;
-            background: linear-gradient(135deg, #00C5F5 0%, #0088E8 100%);
+
+        /* Sidebar Styles */
+        .sidebar {
+            width: 280px;
+            background: var(--soft-cream);
+            color: var(--warm-charcoal);
+            padding: 2rem 0;
+            position: fixed;
+            height: 100vh;
+            overflow-y: auto;
+            border-right: 1px solid var(--border-warm);
+            box-shadow: 2px 0 10px var(--shadow-warm);
+        }
+
+        .sidebar-header {
+            padding: 0 2rem 2rem;
+            border-bottom: 1px solid var(--border-warm);
+            margin-bottom: 2rem;
+        }
+
+        .sidebar-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--muted-orange);
+        }
+
+        .sidebar-nav {
+            padding: 0 1rem;
+        }
+
+        .nav-section {
+            margin-bottom: 2rem;
+        }
+
+        .nav-section-title {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            color: var(--muted-text);
+            font-weight: 600;
+            padding: 0 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .nav-item {
+            display: flex;
+            align-items: center;
+            padding: 0.75rem 1rem;
+            color: var(--warm-charcoal);
+            text-decoration: none;
+            border-radius: var(--border-radius-soft);
+            margin-bottom: 0.25rem;
+            transition: all 0.3s ease;
+            background: transparent;
+        }
+
+        .nav-item:hover {
+            background: var(--muted-orange);
             color: white;
-            padding: 2rem;
-            border-radius: 12px;
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px var(--shadow-soft);
         }
-        
-        .admin-nav {
+
+        .nav-item.active {
+            background: var(--muted-orange);
+            color: white;
+            box-shadow: 0 4px 12px var(--shadow-soft);
+        }
+
+        .nav-icon {
+            width: 20px;
+            margin-right: 0.75rem;
+            text-align: center;
+        }
+
+        /* Main Content */
+        .main-content {
+            flex: 1;
+            margin-left: 280px;
+            padding: 2rem;
+            background: var(--bg-primary);
+        }
+
+        .page-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border-warm);
+        }
+
+        .page-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--warm-charcoal);
+        }
+
+        .user-menu {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .user-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--muted-orange);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Dashboard Cards */
+        .dashboard-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
-            margin-bottom: 3rem;
+            margin-bottom: 2rem;
         }
-        
-        .nav-card {
-            background: white;
+
+        .card {
+            background: var(--soft-cream);
+            border-radius: var(--border-radius-medium);
             padding: 2rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            transition: transform 0.3s, box-shadow 0.3s;
-            cursor: pointer;
-            text-decoration: none;
-            color: inherit;
+            box-shadow: 0 4px 12px var(--shadow-warm);
+            border: 1px solid var(--border-warm);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
         }
-        
-        .nav-card:hover {
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--muted-orange), var(--coral-accent));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 8px 25px var(--shadow-soft);
         }
-        
-        .nav-icon {
-            font-size: 3rem;
+
+        .card:hover::before {
+            opacity: 1;
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             margin-bottom: 1rem;
-            color: #00C5F5;
         }
-        
-        .nav-title {
-            font-size: 1.5rem;
+
+        .card-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--warm-charcoal);
+        }
+
+        .card-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: var(--border-radius-soft);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            color: white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-icon.analytics { background: var(--muted-orange); }
+        .card-icon.directory { background: var(--aqua-blue); }
+        .card-icon.hot-leads { background: var(--coral-accent); }
+        .card-icon.emails { background: var(--soft-teal); }
+
+        .card-value {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
             font-weight: bold;
+            color: var(--warm-charcoal);
             margin-bottom: 0.5rem;
-            color: #1f2937;
         }
-        
-        .nav-description {
-            color: #666;
-            line-height: 1.5;
+
+        .card-label {
+            color: var(--muted-text);
+            font-size: 0.9rem;
         }
-        
-        .admin-stats {
+
+        .card-change {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.875rem;
+            margin-top: 0.5rem;
+        }
+
+        .card-change.positive {
+            color: var(--aqua-blue);
+        }
+
+        .card-change.negative {
+            color: var(--coral-accent);
+        }
+
+        /* Recent Activity */
+        .recent-activity {
+            background: var(--soft-cream);
+            border-radius: var(--border-radius-medium);
+            padding: 2rem;
+            box-shadow: 0 4px 12px var(--shadow-warm);
+            border: 1px solid var(--border-warm);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .recent-activity::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--muted-orange), var(--coral-accent));
+        }
+
+        .recent-activity h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--warm-charcoal);
+        }
+
+        .activity-item {
+            display: flex;
+            align-items: center;
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--border-warm);
+            transition: all 0.3s ease;
+        }
+
+        .activity-item:hover {
+            background: var(--bg-secondary);
+            margin: 0 -1rem;
+            padding: 1rem;
+            border-radius: var(--border-radius-soft);
+        }
+
+        .activity-item:last-child {
+            border-bottom: none;
+        }
+
+        .activity-icon {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            font-size: 1.1rem;
+            color: white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .activity-content {
+            flex: 1;
+        }
+
+        .activity-title {
+            font-weight: 600;
+            color: var(--warm-charcoal);
+            margin-bottom: 0.25rem;
+        }
+
+        .activity-time {
+            color: var(--muted-text);
+            font-size: 0.875rem;
+        }
+
+        /* Section Content */
+        .section-content h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--warm-charcoal);
+        }
+
+        .section-content p {
+            color: var(--muted-text);
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .sidebar {
+                transform: translateX(-100%);
+                transition: transform 0.3s ease;
+            }
+
+            .sidebar.open {
+                transform: translateX(0);
+            }
+
+            .main-content {
+                margin-left: 0;
+            }
+
+            .dashboard-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .page-header {
+                flex-direction: column;
+                gap: 1rem;
+                align-items: flex-start;
+            }
+        }
+
+        /* Directory Styles */
+        .directory-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        .btn-primary {
+            background: var(--muted-orange);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--border-radius-soft);
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary:hover {
+            background: var(--coral-accent);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px var(--shadow-soft);
+        }
+
+        .directory-stats {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 1.5rem;
-            margin-bottom: 3rem;
+            margin-bottom: 2rem;
         }
-        
+
         .stat-card {
-            background: white;
+            background: var(--soft-cream);
+            border-radius: var(--border-radius-medium);
             padding: 1.5rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            text-align: center;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            box-shadow: 0 4px 12px var(--shadow-warm);
+            border: 1px solid var(--border-warm);
         }
-        
-        .stat-number {
-            font-size: 2.5rem;
+
+        .stat-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--muted-orange);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        .stat-value {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
             font-weight: bold;
-            color: #00C5F5;
-            margin-bottom: 0.5rem;
+            color: var(--warm-charcoal);
         }
-        
+
         .stat-label {
-            color: #666;
+            color: var(--muted-text);
             font-size: 0.9rem;
         }
-        
-        .quick-actions {
-            background: white;
+
+        .vendor-filters {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2.5rem;
+            align-items: center;
+            flex-wrap: wrap;
             padding: 2rem;
+            background: var(--bg-secondary);
+            border-radius: var(--border-radius-soft);
+            border: 1px solid var(--border-warm);
+        }
+
+        .search-box {
+            position: relative;
+            flex: 1;
+            max-width: 350px;
+            margin-right: 1.5rem;
+        }
+
+        .search-box i {
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--muted-text);
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 0.75rem 1rem 0.75rem 2.5rem;
+            border: 1px solid var(--border-warm);
+            border-radius: var(--border-radius-soft);
+            background: var(--soft-cream);
+            color: var(--warm-charcoal);
+        }
+
+        .filter-options {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .filter-options select {
+            padding: 1rem 1.5rem;
+            border: 1px solid var(--border-warm);
+            border-radius: var(--border-radius-soft);
+            background: var(--soft-cream);
+            color: var(--warm-charcoal);
+            cursor: pointer;
+            min-width: 160px;
+            font-size: 0.95rem;
+        }
+
+        .location-filters {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2.5rem;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 2rem;
+            background: var(--bg-secondary);
+            border-radius: var(--border-radius-soft);
+            border: 1px solid var(--border-warm);
+        }
+
+        .vendors-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .vendor-card {
+            background: var(--soft-cream);
+            border-radius: var(--border-radius-medium);
+            padding: 1.5rem;
+            box-shadow: 0 4px 12px var(--shadow-warm);
+            border: 1px solid var(--border-warm);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .vendor-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--muted-orange), var(--coral-accent));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .vendor-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px var(--shadow-soft);
+        }
+
+        .vendor-card:hover::before {
+            opacity: 1;
+        }
+
+        .vendor-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+
+        .vendor-info h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            color: var(--warm-charcoal);
+            margin-bottom: 0.5rem;
+        }
+
+        .vendor-category {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background: var(--muted-orange);
+            color: white;
+            border-radius: var(--border-radius-soft);
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .vendor-status {
+            padding: 0.25rem 0.75rem;
+            border-radius: var(--border-radius-soft);
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .vendor-status.active {
+            background: var(--aqua-blue);
+            color: white;
+        }
+
+        .vendor-status.pending {
+            background: var(--coral-accent);
+            color: white;
+        }
+
+        .vendor-status.inactive {
+            background: var(--muted-text);
+            color: white;
+        }
+
+        .vendor-details {
+            margin-bottom: 1rem;
+        }
+
+        .vendor-detail {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--muted-text);
+            font-size: 0.9rem;
+        }
+
+        .vendor-detail i {
+            width: 16px;
+            color: var(--muted-orange);
+        }
+        
+        .vendor-services {
+            margin: 1rem 0;
+            padding: 1rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border: 1px solid #e9ecef;
+        }
+        
+        .service-tag {
+            display: inline-block;
+            background: var(--muted-orange);
+            color: white;
+            padding: 0.25rem 0.5rem;
             border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            margin-right: 0.5rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .vendor-actions {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .btn-secondary {
+            background: white;
+            color: #6b7280;
+            border: 1px solid #e5e7eb;
+            padding: 0.625rem 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            font-size: 0.875rem;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+        }
+
+        .btn-secondary:hover {
+            background: #f9fafb;
+            color: #374151;
+            border-color: #d1d5db;
+            transform: translateY(-1px);
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         
-        .quick-actions h2 {
-            margin-bottom: 1.5rem;
-            color: #1f2937;
+        /* Location card specific button styles */
+        .location-actions .btn-secondary {
+            flex: 1;
+            justify-content: center;
+            min-height: 40px;
+            font-size: 0.8rem;
         }
         
-        .action-buttons {
+        .location-actions .btn-secondary[onclick*="editLocation"] {
+            color: #059669;
+            border-color: #10b981;
+        }
+        
+        .location-actions .btn-secondary[onclick*="editLocation"]:hover {
+            background: #ecfdf5;
+            color: #047857;
+        }
+        
+        .location-actions .btn-secondary[onclick*="viewLocation"] {
+            color: #3b82f6;
+            border-color: #60a5fa;
+        }
+        
+        .location-actions .btn-secondary[onclick*="viewLocation"]:hover {
+            background: #eff6ff;
+            color: #2563eb;
+        }
+        
+        .location-actions .btn-secondary[onclick*="createLocationPage"] {
+            color: #7c3aed;
+            border-color: #a78bfa;
+        }
+        
+        .location-actions .btn-secondary[onclick*="createLocationPage"]:hover {
+            background: #faf5ff;
+            color: #6d28d9;
+        }
+        
+        .location-actions .btn-secondary[onclick*="deleteLocation"] {
+            color: #dc2626;
+            border-color: #f87171;
+            background: #fef2f2;
+        }
+        
+        .location-actions .btn-secondary[onclick*="deleteLocation"]:hover {
+            background: #fee2e2;
+            color: #b91c1c;
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+        }
+
+        .modal-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: var(--soft-cream);
+            border-radius: var(--border-radius-medium);
+            padding: 2rem;
+            width: 90%;
+            max-width: 600px;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 8px 25px var(--shadow-soft);
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border-warm);
+        }
+
+        .modal-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: var(--warm-charcoal);
+        }
+
+        .close-modal {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--muted-text);
+            cursor: pointer;
+            padding: 0;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--warm-charcoal);
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid var(--border-warm);
+            border-radius: var(--border-radius-soft);
+            background: var(--bg-primary);
+            color: var(--warm-charcoal);
+            font-family: inherit;
+        }
+        
+        .services-checkboxes {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 0.75rem;
+            margin-top: 0.5rem;
+        }
+        
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem;
+            background: #f8f9fa;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        
+        .checkbox-label:hover {
+            background: #e9ecef;
+        }
+        
+        .checkbox-label input[type="checkbox"] {
+            margin: 0;
+        }
+
+        .modal-actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: flex-end;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border-warm);
+        }
+
+        .modal-body {
+            padding: 1.5rem 0;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid var(--border-warm);
+            border-radius: var(--border-radius-soft);
+            font-size: 1rem;
+            background: white;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--muted-orange);
+            box-shadow: 0 0 0 3px rgba(139, 115, 85, 0.1);
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
             gap: 1rem;
         }
-        
-        .btn-action {
-            background: #00C5F5;
-            color: white;
-            padding: 1rem;
+
+                 .form-actions {
+             display: flex;
+             gap: 1rem;
+             justify-content: flex-end;
+             margin-top: 2rem;
+             padding-top: 1rem;
+             border-top: 1px solid var(--border-warm);
+         }
+         
+         /* Directory Management Styles */
+         .header-buttons {
+             display: flex;
+             gap: 1rem;
+             flex-wrap: wrap;
+         }
+         
+                 .directory-tabs {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+            border-bottom: 1px solid var(--border-warm);
+            padding-bottom: 0.5rem;
+        }
+         
+                 .tab-btn {
+            background: transparent;
+            color: var(--muted-text);
             border: none;
-            border-radius: 8px;
-            font-size: 1rem;
+            padding: 1.5rem 2.5rem;
             cursor: pointer;
-            transition: background-color 0.3s;
+            transition: all 0.3s ease;
+            border-bottom: 3px solid transparent;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+         
+         .tab-btn:hover {
+             color: var(--warm-charcoal);
+         }
+         
+         .tab-btn.active {
+             color: var(--muted-orange);
+             border-bottom-color: var(--muted-orange);
+         }
+         
+         .tab-content {
+             display: block;
+         }
+         
+         /* Location Card Styles */
+         .location-card {
+             background: white;
+             border-radius: 16px;
+             padding: 1.75rem;
+             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+             border: 1px solid #f0f0f0;
+             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+             position: relative;
+             overflow: hidden;
+             margin-bottom: 1rem;
+         }
+         
+         .location-card::before {
+             content: '';
+             position: absolute;
+             top: 0;
+             left: 0;
+             right: 0;
+             height: 3px;
+             background: linear-gradient(90deg, var(--muted-orange), var(--coral-accent));
+             opacity: 0;
+             transition: opacity 0.3s ease;
+         }
+         
+         .location-card:hover {
+             transform: translateY(-2px);
+             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+             border-color: #e0e0e0;
+         }
+         
+         .location-card:hover::before {
+             opacity: 1;
+         }
+         
+         .location-header {
+             display: flex;
+             justify-content: space-between;
+             align-items: flex-start;
+             margin-bottom: 1.25rem;
+             padding-bottom: 1rem;
+             border-bottom: 1px solid #f5f5f5;
+         }
+         
+         .location-info h3 {
+             font-family: 'Inter', sans-serif;
+             font-size: 1.25rem;
+             font-weight: 600;
+             color: var(--warm-charcoal);
+             margin-bottom: 0.75rem;
+             line-height: 1.3;
+         }
+         
+         .location-type {
+             display: inline-flex;
+             align-items: center;
+             padding: 0.375rem 0.875rem;
+             background: linear-gradient(135deg, var(--aqua-blue), #4fd1c7);
+             color: white;
+             border-radius: 20px;
+             font-size: 0.8rem;
+             font-weight: 600;
+             text-transform: uppercase;
+             letter-spacing: 0.5px;
+             box-shadow: 0 2px 4px rgba(79, 209, 199, 0.3);
+         }
+         
+         .location-status {
+             padding: 0.375rem 0.875rem;
+             border-radius: 20px;
+             font-size: 0.75rem;
+             font-weight: 600;
+             text-transform: uppercase;
+             letter-spacing: 0.5px;
+             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+         }
+         
+         .location-status.active {
+             background: linear-gradient(135deg, #10b981, #059669);
+             color: white;
+         }
+         
+         .location-status.pending {
+             background: linear-gradient(135deg, var(--coral-accent), #f97316);
+             color: white;
+         }
+         
+         .location-status.inactive {
+             background: linear-gradient(135deg, #6b7280, #4b5563);
+             color: white;
+         }
+         
+         .location-details {
+             margin-bottom: 1.5rem;
+         }
+         
+         .location-detail {
+             display: flex;
+             align-items: flex-start;
+             gap: 0.75rem;
+             margin-bottom: 0.875rem;
+             color: #6b7280;
+             font-size: 0.9rem;
+             line-height: 1.5;
+         }
+         
+         .location-detail i {
+             width: 16px;
+             color: var(--muted-orange);
+             margin-top: 2px;
+             flex-shrink: 0;
+         }
+         
+         .location-detail span {
+             flex: 1;
+         }
+         
+         .location-actions {
+             display: flex;
+             gap: 0.75rem;
+             margin-top: 1.5rem;
+             padding-top: 1rem;
+             border-top: 1px solid #f5f5f5;
+         }
+
+        /* Breadcrumb Styles */
+        .breadcrumb-nav {
+            background: var(--bg-secondary);
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--border-warm);
+        }
+
+        .breadcrumb {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+        }
+
+        .breadcrumb-item {
+            display: flex;
+            align-items: center;
+        }
+
+        .breadcrumb-item:not(:last-child)::after {
+            content: '/';
+            margin: 0 0.5rem;
+            color: var(--muted-text);
+        }
+
+        .breadcrumb-item a {
+            color: var(--muted-orange);
             text-decoration: none;
-            display: inline-block;
-            text-align: center;
+            transition: color 0.3s ease;
         }
-        
-        .btn-action:hover {
-            background: #0088E8;
+
+        .breadcrumb-item a:hover {
+            color: var(--coral-accent);
         }
-        
-        .btn-secondary {
-            background: #6b7280;
+
+        .breadcrumb-item.active {
+            color: var(--muted-text);
         }
-        
-        .btn-secondary:hover {
-            background: #4b5563;
+
+        /* Form Help Text */
+        .form-help {
+            display: block;
+            margin-top: 0.25rem;
+            font-size: 0.875rem;
+            color: var(--muted-text);
+            font-style: italic;
+        }
+
+        .modal-content {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 600px;
+            width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+        }
+
+        .ai-assistance-section {
+            background: linear-gradient(135deg, #fef7ed 0%, #fff7ed 100%);
+            border: 1px solid var(--soft-orange);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .ai-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .ai-header h4 {
+            color: var(--warm-charcoal);
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .ai-header h4 i {
+            color: var(--soft-orange);
+            margin-right: 0.5rem;
+        }
+
+        .btn-ai-generate {
+            background: var(--soft-orange);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-ai-generate:hover {
+            background: #e67e22;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(243, 156, 18, 0.3);
+        }
+
+        .btn-ai-generate:disabled {
+            background: #d1d5db;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        .ai-loading {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--soft-orange);
+            font-size: 0.9rem;
+        }
+
+        .ai-loading i {
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 10000;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            border-left: 4px solid;
+            animation: slideIn 0.3s ease-out;
+        }
+
+        .notification-success {
+            border-left-color: #10b981;
+        }
+
+        .notification-error {
+            border-left-color: #ef4444;
+        }
+
+        .notification-info {
+            border-left-color: var(--soft-orange);
+        }
+
+        .notification-content {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem 1.5rem;
+            font-size: 0.9rem;
+        }
+
+        .notification-content i {
+            font-size: 1.1rem;
+        }
+
+        .notification-success .notification-content i {
+            color: #10b981;
+        }
+
+        .notification-error .notification-content i {
+            color: #ef4444;
+        }
+
+        .notification-info .notification-content i {
+            color: var(--soft-orange);
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
         }
     </style>
 </head>
 <body>
     <div class="admin-container">
-        <div class="admin-header">
-            <h1><i class="fas fa-tachometer-alt"></i> The Vending Locator - Admin Dashboard</h1>
-            <p>Manage your directory, email campaigns, and analytics</p>
-        </div>
-
-        <!-- Stats Section -->
-        <div class="admin-stats">
-            <div class="stat-card">
-                <div class="stat-number" id="totalVendors">0</div>
-                <div class="stat-label">Total Vendors</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number" id="totalSubscribers">0</div>
-                <div class="stat-label">Email Subscribers</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number" id="totalCategories">0</div>
-                <div class="stat-label">Categories</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-number" id="totalLocations">0</div>
-                <div class="stat-label">Locations</div>
-            </div>
-        </div>
-
-        <!-- Navigation Cards -->
-        <div class="admin-nav">
-            <a href="directory/" class="nav-card">
-                <div class="nav-icon">
-                    <i class="fas fa-store"></i>
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-logo">
+                    <i class="fas fa-chart-line"></i> Admin
                 </div>
-                <div class="nav-title">Directory Management</div>
-                <div class="nav-description">
-                    Manage vendors, categories, and locations in your vending directory
-                </div>
-            </a>
+            </div>
             
-            <a href="emails/" class="nav-card">
-                <div class="nav-icon">
-                    <i class="fas fa-envelope"></i>
+            <nav class="sidebar-nav">
+                <div class="nav-section">
+                    <div class="nav-section-title">Main</div>
+                    <a href="#analytics" class="nav-item active" onclick="showSection('analytics').catch(console.error)">
+                        <i class="fas fa-chart-bar nav-icon"></i>
+                        Analytics
+                    </a>
+                    <a href="#directory" class="nav-item" onclick="showSection('directory').catch(console.error)">
+                        <i class="fas fa-map-marker-alt nav-icon"></i>
+                        Directory
+                    </a>
+                    <a href="#hot-leads" class="nav-item" onclick="showSection('hot-leads').catch(console.error)">
+                        <i class="fas fa-fire nav-icon"></i>
+                        Hot Leads
+                    </a>
+                    <a href="#emails" class="nav-item" onclick="showSection('emails').catch(console.error)">
+                        <i class="fas fa-envelope nav-icon"></i>
+                        Emails
+                    </a>
                 </div>
-                <div class="nav-title">Email Management</div>
-                <div class="nav-description">
-                    Manage subscribers, create campaigns, and track email performance
-                </div>
-            </a>
-            
-            <a href="analytics/" class="nav-card">
-                <div class="nav-icon">
-                    <i class="fas fa-chart-line"></i>
-                </div>
-                <div class="nav-title">Analytics & SEO</div>
-                <div class="nav-description">
-                    Track website performance, SEO metrics, and user engagement
-                </div>
-            </a>
-        </div>
+            </nav>
+        </aside>
 
-        <!-- Quick Actions -->
-        <div class="quick-actions">
-            <h2>Quick Actions</h2>
-            <div class="action-buttons">
-                <a href="directory/vendors/add.html" class="btn-action">
-                    <i class="fas fa-plus"></i> Add New Vendor
-                </a>
-                <a href="emails/campaigns/create.html" class="btn-action">
-                    <i class="fas fa-paper-plane"></i> Create Campaign
-                </a>
-                <a href="directory/categories/" class="btn-action btn-secondary">
-                    <i class="fas fa-tags"></i> Manage Categories
-                </a>
-                <a href="analytics/" class="btn-action btn-secondary">
-                    <i class="fas fa-eye"></i> View Analytics
-                </a>
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="page-header">
+                <h1 class="page-title">Dashboard</h1>
+                <div class="user-menu">
+                    <span>Admin User</span>
+                    <div class="user-avatar">A</div>
+                </div>
+            </header>
+
+            <!-- Analytics Section -->
+            <div id="analytics" class="section-content">
+                                 <div class="dashboard-grid">
+                     <div class="card">
+                         <div class="card-header">
+                             <h3 class="card-title">Total Revenue</h3>
+                             <div class="card-icon analytics">
+                                 <i class="fas fa-dollar-sign"></i>
+                             </div>
+                         </div>
+                         <div class="card-value">$0</div>
+                         <div class="card-label">This month</div>
+                         <div class="card-change">
+                             <i class="fas fa-minus"></i>
+                             No data yet
+                         </div>
+                     </div>
+
+                     <div class="card">
+                         <div class="card-header">
+                             <h3 class="card-title">Hot Leads Sold</h3>
+                             <div class="card-icon hot-leads">
+                                 <i class="fas fa-fire"></i>
+                             </div>
+                         </div>
+                         <div class="card-value">0</div>
+                         <div class="card-label">This month</div>
+                         <div class="card-change">
+                             <i class="fas fa-minus"></i>
+                             No data yet
+                         </div>
+                     </div>
+
+                     <div class="card">
+                         <div class="card-header">
+                             <h3 class="card-title">Active Locations</h3>
+                             <div class="card-icon directory">
+                                 <i class="fas fa-map-marker-alt"></i>
+                             </div>
+                         </div>
+                         <div class="card-value">0</div>
+                         <div class="card-label">In database</div>
+                         <div class="card-change">
+                             <i class="fas fa-minus"></i>
+                             No data yet
+                         </div>
+                     </div>
+
+                     <div class="card">
+                         <div class="card-header">
+                             <h3 class="card-title">Email Subscribers</h3>
+                             <div class="card-icon emails">
+                                 <i class="fas fa-envelope"></i>
+                             </div>
+                         </div>
+                         <div class="card-value">0</div>
+                         <div class="card-label">Total subscribers</div>
+                         <div class="card-change">
+                             <i class="fas fa-minus"></i>
+                             No data yet
+                         </div>
+                     </div>
+                 </div>
+
+                 <div class="recent-activity">
+                     <h3>Recent Activity</h3>
+                     <div class="activity-item">
+                         <div class="activity-icon analytics">
+                             <i class="fas fa-info-circle"></i>
+                         </div>
+                         <div class="activity-content">
+                             <div class="activity-title">Welcome to your admin dashboard!</div>
+                             <div class="activity-time">Just now</div>
+                         </div>
+                     </div>
+                     <div class="activity-item">
+                         <div class="activity-icon directory">
+                             <i class="fas fa-plus"></i>
+                         </div>
+                         <div class="activity-content">
+                             <div class="activity-title">Ready to add your first vendor</div>
+                             <div class="activity-time">Get started</div>
+                         </div>
+                     </div>
+                     <div class="activity-item">
+                         <div class="activity-icon emails">
+                             <i class="fas fa-envelope"></i>
+                         </div>
+                         <div class="activity-content">
+                             <div class="activity-title">Email management ready</div>
+                             <div class="activity-time">Set up campaigns</div>
+                         </div>
+                     </div>
+                 </div>
             </div>
-        </div>
-    </div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            loadDashboardStats();
-        });
+                        <!-- Directory Section -->
+            <div id="directory" class="section-content" style="display: none;">
+                <div class="directory-header">
+                    <h2>Directory Management</h2>
+                    <div class="header-buttons">
+                        <button class="btn-primary" onclick="showAddVendorModal()">
+                            <i class="fas fa-plus"></i> Add New Vendor
+                        </button>
+                        <button class="btn-primary" onclick="showAddLocationModal()">
+                            <i class="fas fa-map-marker-alt"></i> Add New Location
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="directory-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-value">0</div>
+                            <div class="stat-label">Total Vendors</div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-value">0</div>
+                            <div class="stat-label">Active Locations</div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-value">0</div>
+                            <div class="stat-label">Monthly Views</div>
+                        </div>
+                    </div>
+                </div>
 
-        async function loadDashboardStats() {
-            // Load stats from localStorage or API
-            const vendors = JSON.parse(localStorage.getItem('vendingVendors') || '[]');
-            const leads = JSON.parse(localStorage.getItem('vendingLeads') || '[]');
-            const categories = JSON.parse(localStorage.getItem('vendingCategories') || '[]');
-            const locations = JSON.parse(localStorage.getItem('vendingLocations') || '[]');
-            
-            document.getElementById('totalVendors').textContent = vendors.length;
-            document.getElementById('totalSubscribers').textContent = leads.length;
-            document.getElementById('totalCategories').textContent = categories.length;
-            document.getElementById('totalLocations').textContent = locations.length;
-        }
-    </script>
-</body>
-</html> 
+                <div class="directory-tabs">
+                    <button class="tab-btn active" onclick="showTab('vendors')">Vendors</button>
+                    <button class="tab-btn" onclick="showTab('locations')">Locations</button>
+                </div>
+
+                <!-- Vendors Tab -->
+                <div id="vendors-tab" class="tab-content">
+                    <div class="vendor-filters">
+                        <div class="search-box">
+                            <i class="fas fa-search"></i>
+                            <input type="text" placeholder="Search vendors..." id="vendorSearch">
+                        </div>
+                        <div class="filter-options">
+                            <select id="statusFilter">
+                                <option value="">All Status</option>
+                                <option value="active">Active</option>
+                                <option value="pending">Pending</option>
+                                <option value="inactive">Inactive</option>
+                            </select>
+
+                        </div>
+                    </div>
+
+                    <div class="vendors-grid" id="vendorsGrid">
+                        <!-- Vendor cards will be populated here -->
+                    </div>
+                </div>
+
+                <!-- Locations Tab -->
+                <div id="locations-tab" class="tab-content" style="display: none;">
+                    <div class="location-filters">
+                        <div class="search-box">
+                            <i class="fas fa-search"></i>
+                            <input type="text" placeholder="Search locations..." id="locationSearch">
+                        </div>
+                        <div class="filter-options">
+                            <select id="locationStatusFilter">
+                                <option value="">All Status</option>
+                                <option value="active">Active</option>
+                                <option value="pending">Pending</option>
+                                <option value="inactive">Inactive</option>
+                            </select>
+                            <select id="locationTypeFilter">
+                                <option value="">All Types</option>
+                                <option value="office">Office</option>
+                                <option value="retail">Retail</option>
+                                <option value="hospitality">Hospitality</option>
+                                <option value="healthcare">Healthcare</option>
+                                <option value="education">Education</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="locations-grid" id="locationsGrid">
+                        <!-- Location cards will be populated here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hot Leads Section -->
+            <div id="hot-leads" class="section-content" style="display: none;">
+                <h2>Hot Leads Management</h2>
+                <p>Track hot leads sales and manage lead packages.</p>
+            </div>
+
+            <!-- Emails Section -->
+            <div id="emails" class="section-content" style="display: none;">
+                <h2>Email Management</h2>
+                <p>Manage email campaigns and subscriber lists.</p>
+                         </div>
+         </main>
+     </div>
+
+           <!-- Add Vendor Modal -->
+      <div id="addVendorModal" class="modal">
+          <div class="modal-content vendor-modal">
+              <div class="modal-header">
+                  <h3 class="modal-title">
+                      <i class="fas fa-store"></i>
+                      Add New Vendor
+                  </h3>
+                  <button class="close-modal" onclick="closeModal('addVendorModal')">&times;</button>
+              </div>
+              
+              <form id="addVendorForm">
+                  <!-- Basic Information Section -->
+                  <div class="form-section">
+                      <div class="section-header">
+                          <h4><i class="fas fa-info-circle"></i> Basic Information</h4>
+                          <p>Essential details about the vendor</p>
+                      </div>
+                      
+                      <div class="form-row">
+                          <div class="form-group">
+                              <label for="vendorName">Business Name *</label>
+                              <input type="text" id="vendorName" name="vendorName" required placeholder="Enter business name">
+                          </div>
+                          <div class="form-group">
+                              <label for="vendorStatus">Status</label>
+                              <select id="vendorStatus" name="vendorStatus">
+                                  <option value="active">Active</option>
+                                  <option value="pending">Pending</option>
+                                  <option value="inactive">Inactive</option>
+                              </select>
+                          </div>
+                      </div>
+                      
+                      <div class="form-row">
+                          <div class="form-group">
+                              <label for="vendorPhone">Phone Number</label>
+                              <input type="tel" id="vendorPhone" name="vendorPhone" placeholder="(555) 123-4567">
+                          </div>
+                          <div class="form-group">
+                              <label for="vendorEmail">Email Address</label>
+                              <input type="email" id="vendorEmail" name="vendorEmail" placeholder="contact@business.com">
+                          </div>
+                      </div>
+                      
+                      <div class="form-group">
+                          <label for="vendorWebsite">Website</label>
+                          <input type="url" id="vendorWebsite" name="vendorWebsite" placeholder="https://www.business.com">
+                      </div>
+                      
+                                             <div class="form-row">
+                           <div class="form-group">
+                               <label for="vendorCity">City</label>
+                               <input type="text" id="vendorCity" name="vendorCity" placeholder="Enter city">
+                           </div>
+                           <div class="form-group">
+                               <label for="vendorState">State</label>
+                               <input type="text" id="vendorState" name="vendorState" placeholder="Enter state">
+                           </div>
+                       </div>
+                  </div>
+                  
+                  <!-- Business Details Section -->
+                  <div class="form-section">
+                      <div class="section-header">
+                          <h4><i class="fas fa-chart-line"></i> Business Details</h4>
+                          <p>Performance and experience metrics</p>
+                      </div>
+                      
+                      <div class="form-row">
+                          <div class="form-group">
+                              <label for="vendorYears">Years in Business</label>
+                              <input type="number" id="vendorYears" name="vendorYears" min="0" max="50" placeholder="e.g., 8">
+                          </div>
+                          <div class="form-group">
+                              <label for="vendorServiceFocus">Service Focus (%)</label>
+                              <input type="number" id="vendorServiceFocus" name="vendorServiceFocus" min="0" max="100" placeholder="e.g., 75">
+                          </div>
+                      </div>
+                      
+                      <div class="form-group">
+                          <label for="vendorReviews">Customer Reviews</label>
+                          <input type="number" id="vendorReviews" name="vendorReviews" min="0" placeholder="e.g., 25">
+                      </div>
+                      
+                      <div class="form-group">
+                          <label for="vendorDescription">Business Description</label>
+                          <textarea id="vendorDescription" name="vendorDescription" rows="4" placeholder="Describe the business, services, and what makes it unique"></textarea>
+                      </div>
+                  </div>
+                  
+                  <!-- Services Section -->
+                  <div class="form-section">
+                      <div class="section-header">
+                          <h4><i class="fas fa-cogs"></i> Services Offered</h4>
+                          <p>Select all services this vendor provides</p>
+                      </div>
+                      
+                      <div class="services-grid">
+                          <label class="service-checkbox">
+                              <input type="checkbox" name="vendorServices" value="snack-vending">
+                              <span class="checkbox-custom"></span>
+                              <div class="service-info">
+                                  <i class="fas fa-cookie-bite"></i>
+                                  <span>Snack Vending</span>
+                              </div>
+                          </label>
+                          
+                          <label class="service-checkbox">
+                              <input type="checkbox" name="vendorServices" value="beverage-vending">
+                              <span class="checkbox-custom"></span>
+                              <div class="service-info">
+                                  <i class="fas fa-mug-hot"></i>
+                                  <span>Beverage Vending</span>
+                              </div>
+                          </label>
+                          
+                          <label class="service-checkbox">
+                              <input type="checkbox" name="vendorServices" value="coffee-service">
+                              <span class="checkbox-custom"></span>
+                              <div class="service-info">
+                                  <i class="fas fa-coffee"></i>
+                                  <span>Coffee Service</span>
+                              </div>
+                          </label>
+                          
+                          <label class="service-checkbox">
+                              <input type="checkbox" name="vendorServices" value="micro-markets">
+                              <span class="checkbox-custom"></span>
+                              <div class="service-info">
+                                  <i class="fas fa-shopping-basket"></i>
+                                  <span>Micro Markets</span>
+                              </div>
+                          </label>
+                          
+                          <label class="service-checkbox">
+                              <input type="checkbox" name="vendorServices" value="ai-coolers">
+                              <span class="checkbox-custom"></span>
+                              <div class="service-info">
+                                  <i class="fas fa-robot"></i>
+                                  <span>AI Smart Coolers</span>
+                              </div>
+                          </label>
+                          
+                          <label class="service-checkbox">
+                              <input type="checkbox" name="vendorServices" value="healthy-options">
+                              <span class="checkbox-custom"></span>
+                              <div class="service-info">
+                                  <i class="fas fa-leaf"></i>
+                                  <span>Healthy Options</span>
+                              </div>
+                          </label>
+                          
+                          <label class="service-checkbox">
+                              <input type="checkbox" name="vendorServices" value="frozen-treats">
+                              <span class="checkbox-custom"></span>
+                              <div class="service-info">
+                                  <i class="fas fa-ice-cream"></i>
+                                  <span>Frozen Treats</span>
+                              </div>
+                          </label>
+                          
+                          <label class="service-checkbox">
+                              <input type="checkbox" name="vendorServices" value="cashless-payment">
+                              <span class="checkbox-custom"></span>
+                              <div class="service-info">
+                                  <i class="fas fa-credit-card"></i>
+                                  <span>Cashless Payment</span>
+                              </div>
+                          </label>
+                          
+                          <label class="service-checkbox">
+                              <input type="checkbox" name="vendorServices" value="maintenance">
+                              <span class="checkbox-custom"></span>
+                              <div class="service-info">
+                                  <i class="fas fa-tools"></i>
+                                  <span>Maintenance Services</span>
+                              </div>
+                          </label>
+                      </div>
+                  </div>
+                  
+                  <!-- Assignment Section -->
+                  <div class="form-section">
+                      <div class="section-header">
+                          <h4><i class="fas fa-map-marker-alt"></i> Page Assignment</h4>
+                          <p>Choose where this vendor should appear</p>
+                      </div>
+                      
+                      <div class="form-row">
+                          <div class="form-group">
+                              <label for="vendorPage">Assign to Page</label>
+                              <select id="vendorPage" name="vendorPage">
+                                  <option value="">No Assignment</option>
+                                  <optgroup label="Location Pages" id="locationPagesGroup">
+                                      <!-- Location pages will be populated dynamically -->
+                                  </optgroup>
+                              </select>
+                          </div>
+                          <div class="form-group">
+                              <label for="vendorIcon">Display Icon</label>
+                              <select id="vendorIcon" name="vendorIcon">
+                                  <option value="fas fa-store">Store</option>
+                                  <option value="fas fa-coffee">Coffee</option>
+                                  <option value="fas fa-cookie-bite">Snacks</option>
+                                  <option value="fas fa-mug-hot">Beverages</option>
+                                  <option value="fas fa-robot">AI/Technology</option>
+                                  <option value="fas fa-leaf">Healthy</option>
+                                  <option value="fas fa-ice-cream">Frozen</option>
+                                  <option value="fas fa-credit-card">Payment</option>
+                                  <option value="fas fa-tools">Maintenance</option>
+                              </select>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <div class="form-actions">
+                      <button type="button" class="btn-secondary" onclick="closeModal('addVendorModal')">
+                          <i class="fas fa-times"></i> Cancel
+                      </button>
+                      <button type="submit" class="btn-primary">
+                          <i class="fas fa-plus"></i> Add Vendor
+                      </button>
+                  </div>
+              </form>
+          </div>
+      </div>
+
+      <!-- Add Location Modal -->
+      <div id="addLocationModal" class="modal">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h3 class="modal-title">Add New Location</h3>
+                  <button class="close-modal" onclick="closeModal('addLocationModal')">&times;</button>
+              </div>
+              <form id="addLocationForm">
+                  <div class="form-row">
+                      <div class="form-group">
+                          <label for="locationCity">City *</label>
+                          <input type="text" id="locationCity" name="locationCity" required placeholder="e.g., Jacksonville">
+                      </div>
+                      <div class="form-group">
+                          <label for="locationState">State *</label>
+                          <input type="text" id="locationState" name="locationState" required placeholder="e.g., FL" maxlength="2">
+                      </div>
+                  </div>
+                  
+                  <div class="form-group">
+                      <label for="locationSlug">Generated URL Slug</label>
+                      <input type="text" id="locationSlug" name="locationSlug" readonly>
+                      <small class="form-help">This will be automatically generated as: /location/city-state</small>
+                  </div>
+
+                  <div class="ai-assistance-section">
+                      <div class="ai-header">
+                          <h4><i class="fas fa-robot"></i> AI-Powered Content Generation</h4>
+                          <button type="button" class="btn-ai-generate" onclick="generateAIContent()">
+                              <i class="fas fa-magic"></i> Generate AI Content
+                          </button>
+                      </div>
+                      <small class="form-help">Click the button above to have AI generate optimized SEO content for this location</small>
+                  </div>
+
+                  <div class="form-group">
+                      <label for="locationMetaTitle">Meta Title</label>
+                      <input type="text" id="locationMetaTitle" name="locationMetaTitle" placeholder="AI will generate this automatically">
+                      <small class="form-help">SEO-optimized title for search engines</small>
+                  </div>
+
+                  <div class="form-group">
+                      <label for="locationMetaDescription">Meta Description</label>
+                      <textarea id="locationMetaDescription" name="locationMetaDescription" rows="3" placeholder="AI will generate this automatically"></textarea>
+                      <small class="form-help">SEO-optimized description for search results</small>
+                  </div>
+
+                  <div class="form-group">
+                      <label for="locationMetaKeywords">Meta Keywords</label>
+                      <input type="text" id="locationMetaKeywords" name="locationMetaKeywords" placeholder="AI will generate this automatically">
+                      <small class="form-help">Targeted keywords for better search visibility</small>
+                  </div>
+
+                  <div class="form-group">
+                      <label for="locationDescription">Location Description</label>
+                      <textarea id="locationDescription" name="locationDescription" rows="4" placeholder="AI will generate this automatically"></textarea>
+                      <small class="form-help">Detailed description of vending services in this area</small>
+                  </div>
+
+
+
+                  <div class="form-actions">
+                      <button type="button" class="btn-secondary" onclick="closeModal('addLocationModal')">Cancel</button>
+                      <button type="submit" class="btn-primary">
+                          <i class="fas fa-plus"></i> Create Location Page
+                      </button>
+                  </div>
+              </form>
+          </div>
+      </div>
+
+     <script>
+                             // Vendor data array (will be loaded from backend)
+           let vendors = [];
+           
+                     // Location data array (will be loaded from backend)
+          let locations = [];
+
+          // Auto-generate slug and SEO fields when city/state changes
+          document.addEventListener('DOMContentLoaded', function() {
+              const cityInput = document.getElementById('locationCity');
+              const stateInput = document.getElementById('locationState');
+              const slugInput = document.getElementById('locationSlug');
+              const metaTitleInput = document.getElementById('locationMetaTitle');
+              const metaDescInput = document.getElementById('locationMetaDescription');
+              const metaKeywordsInput = document.getElementById('locationMetaKeywords');
+              const descriptionInput = document.getElementById('locationDescription');
+              
+              function updateSlug() {
+                  const city = cityInput.value.trim();
+                  const state = stateInput.value.trim();
+                  
+                  if (city && state) {
+                      const citySlug = city.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+                      const stateSlug = state.toLowerCase();
+                      slugInput.value = `${citySlug}-${stateSlug}`;
+                  } else {
+                      slugInput.value = '';
+                  }
+              }
+              
+              function generateSEOFields() {
+                  const city = cityInput.value.trim();
+                  const state = stateInput.value.trim();
+                  
+                  if (city && state) {
+                      // Generate basic SEO fields (AI will enhance these)
+                      metaTitleInput.value = `Vending Services in ${city}, ${state} | The Vending Locator`;
+                      metaDescInput.value = `Find reliable vending machine services in ${city}, ${state}. We provide snack vending, beverage vending, coffee service, and healthy food options throughout ${city}. Contact us for professional vending solutions.`;
+                      metaKeywordsInput.value = `vending machines ${city}, vending services ${state}, snack vending ${city}, beverage vending ${state}, coffee service ${city}, vending machine company ${state}, office vending ${city}, healthy vending ${state}`;
+                      descriptionInput.value = `Professional vending services in ${city}, ${state}. We provide reliable snack vending, beverage vending, and coffee service throughout the ${city} area. Our team is committed to delivering quality vending solutions for businesses of all sizes.`;
+                  }
+              }
+
+              // AI Content Generation Function
+              async function generateAIContent() {
+                  const city = cityInput.value.trim();
+                  const state = stateInput.value.trim();
+                  
+                  if (!city || !state) {
+                      alert('Please enter both city and state before generating AI content.');
+                      return;
+                  }
+
+                  const aiButton = document.querySelector('.btn-ai-generate');
+                  const originalText = aiButton.innerHTML;
+                  
+                  try {
+                      // Show loading state
+                      aiButton.disabled = true;
+                      aiButton.innerHTML = '<div class="ai-loading"><i class="fas fa-spinner fa-spin"></i> Generating...</div>';
+
+                      // Call AI SEO generator
+                      const response = await fetch('/.netlify/functions/ai-seo-generator', {
+                          method: 'POST',
+                          headers: {
+                              'Content-Type': 'application/json',
+                          },
+                          body: JSON.stringify({
+                              locationData: {
+                                  city: city,
+                                  state: state
+                              }
+                          })
+                      });
+
+                      const data = await response.json();
+
+                      if (data.success && data.seoData) {
+                          // Populate fields with AI-generated content
+                          metaTitleInput.value = data.seoData.meta_title || '';
+                          metaDescInput.value = data.seoData.meta_description || '';
+                          metaKeywordsInput.value = data.seoData.meta_keywords || '';
+                          descriptionInput.value = data.seoData.description || '';
+                          
+                          // Show success message
+                          showNotification('AI content generated successfully!', 'success');
+                      } else {
+                          throw new Error(data.error || 'Failed to generate AI content');
+                      }
+
+                  } catch (error) {
+                      console.error('Error generating AI content:', error);
+                      showNotification('Failed to generate AI content. Please try again.', 'error');
+                  } finally {
+                      // Restore button state
+                      aiButton.disabled = false;
+                      aiButton.innerHTML = originalText;
+                  }
+              }
+
+              // Make generateAIContent available globally
+              window.generateAIContent = generateAIContent;
+              
+              if (cityInput && stateInput) {
+                  cityInput.addEventListener('input', () => {
+                      updateSlug();
+                      generateSEOFields();
+                  });
+                  
+                  stateInput.addEventListener('input', () => {
+                      updateSlug();
+                      generateSEOFields();
+                  });
+              }
+          });
+
+          // Global notification function
+          function showNotification(message, type = 'info') {
+              const notification = document.createElement('div');
+              notification.className = `notification notification-${type}`;
+              notification.innerHTML = `
+                  <div class="notification-content">
+                      <i class="fas fa-${type === 'success' ? 'check-circle' : type === 'error' ? 'exclamation-circle' : 'info-circle'}"></i>
+                      <span>${message}</span>
+                  </div>
+              `;
+              
+              document.body.appendChild(notification);
+              
+              // Auto-remove after 3 seconds
+              setTimeout(() => {
+                  notification.remove();
+              }, 3000);
+          }
+
+          // Load vendors from backend on page load
+          async function loadVendors() {
+              try {
+                  console.log('Loading vendors from backend...');
+                  const response = await fetch('/.netlify/functions/get-vendors');
+                  const data = await response.json();
+                  console.log('Vendors response:', data);
+                  if (data.success) {
+                      vendors = data.vendors;
+                      console.log('Loaded vendors:', vendors);
+                      console.log('Number of vendors loaded:', vendors.length);
+                      await initializeVendors();
+                  } else {
+                      console.error('Failed to load vendors:', data.error);
+                  }
+              } catch (error) {
+                  console.error('Error loading vendors:', error);
+              }
+          }
+
+          // Load vendor assignments
+          async function loadVendorAssignments(vendorId) {
+              try {
+                  const response = await fetch(`/.netlify/functions/get-vendor-assignments?vendor_id=${vendorId}`);
+                  const data = await response.json();
+                  
+                  const assignmentsElement = document.getElementById(`assignments-${vendorId}`);
+                  if (assignmentsElement) {
+                      if (data.success && data.assignments && data.assignments.length > 0) {
+                          const locationNames = data.assignments.map(assignment => 
+                              assignment.location_name || `Location ${assignment.location_id}`
+                          ).join(', ');
+                          assignmentsElement.textContent = locationNames;
+                      } else {
+                          assignmentsElement.textContent = 'No assignments';
+                      }
+                  }
+              } catch (error) {
+                  console.error('Error loading vendor assignments:', error);
+                  const assignmentsElement = document.getElementById(`assignments-${vendorId}`);
+                  if (assignmentsElement) {
+                      assignmentsElement.textContent = 'Error loading assignments';
+                  }
+              }
+          }
+
+          async function loadVendorAssignmentsForModal(vendorId) {
+              try {
+                  const response = await fetch(`/.netlify/functions/get-vendor-assignments?vendor_id=${vendorId}`);
+                  const data = await response.json();
+                  
+                  const assignmentsElement = document.getElementById(`current-assignment-${vendorId}`);
+                  if (assignmentsElement) {
+                      if (data.success && data.assignments && data.assignments.length > 0) {
+                          const locationNames = data.assignments.map(assignment => 
+                              assignment.location_name || `Location ${assignment.location_id}`
+                          ).join(', ');
+                          assignmentsElement.textContent = locationNames;
+                      } else {
+                          assignmentsElement.textContent = 'No assignments';
+                      }
+                  }
+              } catch (error) {
+                  console.error('Error loading vendor assignments for modal:', error);
+                  const assignmentsElement = document.getElementById(`current-assignment-${vendorId}`);
+                  if (assignmentsElement) {
+                      assignmentsElement.textContent = 'Error loading assignments';
+                  }
+              }
+          }
+
+          // Load locations from backend on page load
+          async function loadLocations() {
+              try {
+                  console.log('Loading locations from backend...');
+                  const response = await fetch('/.netlify/functions/get-locations');
+                  const data = await response.json();
+                  console.log('Locations response:', data);
+                  if (data.success) {
+                      locations = data.locations;
+                      console.log('Loaded locations:', locations);
+                      console.log('Number of locations loaded:', locations.length);
+                      initializeLocations();
+                      await populateLocationPagesDropdown();
+                  } else {
+                      console.error('Failed to load locations:', data.error);
+                  }
+              } catch (error) {
+                  console.error('Error loading locations:', error);
+              }
+          }
+
+          // Get created location pages (HTML files that exist)
+          async function getCreatedLocationPages() {
+              try {
+                  const response = await fetch('/.netlify/functions/get-created-location-pages');
+                  const data = await response.json();
+                  if (data.success) {
+                      return data.createdPages || [];
+                  } else {
+                      console.error('Failed to get created location pages:', data.error);
+                      return [];
+                  }
+              } catch (error) {
+                  console.error('Error getting created location pages:', error);
+                  return [];
+              }
+          }
+
+          // Populate location pages dropdown in vendor form
+          async function populateLocationPagesDropdown() {
+              const locationPagesGroup = document.getElementById('locationPagesGroup');
+              if (!locationPagesGroup) return;
+              
+              // Clear existing location options
+              locationPagesGroup.innerHTML = '';
+              
+              // Use all locations from database instead of just created HTML files
+              if (locations.length === 0) {
+                  const noLocationsOption = document.createElement('option');
+                  noLocationsOption.value = '';
+                  noLocationsOption.textContent = 'No locations available';
+                  noLocationsOption.disabled = true;
+                  locationPagesGroup.appendChild(noLocationsOption);
+                  return;
+              }
+              
+              // Add all locations from database as options
+              locations.forEach(location => {
+                  const option = document.createElement('option');
+                  option.value = location.id; // Use location ID for assignment
+                  option.textContent = `${location.city}, ${location.state}`;
+                  locationPagesGroup.appendChild(option);
+              });
+          }
+
+          // Initialize vendors grid
+          async function initializeVendors() {
+              const vendorsGrid = document.getElementById('vendorsGrid');
+              vendorsGrid.innerHTML = '';
+              
+              if (vendors.length === 0) {
+                  vendorsGrid.innerHTML = `
+                      <div class="empty-state">
+                          <i class="fas fa-store" style="font-size: 3rem; color: #d4c4a6; margin-bottom: 1rem;"></i>
+                          <h3>No vendors yet</h3>
+                          <p>Add your first vendor to get started</p>
+                          <button class="btn-primary" onclick="showAddVendorModal()">
+                              <i class="fas fa-plus"></i> Add First Vendor
+                          </button>
+                      </div>
+                  `;
+                  return;
+              }
+              
+              vendors.forEach(vendor => {
+                  const vendorCard = createVendorCard(vendor);
+                  vendorsGrid.appendChild(vendorCard);
+                  // Load assignments for this vendor
+                  loadVendorAssignments(vendor.id);
+              });
+          }
+          
+          // Initialize locations grid
+          function initializeLocations() {
+              const locationsGrid = document.getElementById('locationsGrid');
+              locationsGrid.innerHTML = '';
+              
+              console.log('Initializing locations grid with', locations.length, 'locations');
+              
+              locations.forEach(location => {
+                  console.log('Creating card for location:', location.name, location.city, location.state);
+                  const locationCard = createLocationCard(location);
+                  locationsGrid.appendChild(locationCard);
+              });
+              
+              console.log('Locations grid initialized with', locationsGrid.children.length, 'cards');
+          }
+
+          // Load vendors and locations when page loads
+          document.addEventListener('DOMContentLoaded', async function() {
+              await loadVendors();
+              await loadLocations();
+          });
+
+                   // Create vendor card
+          function createVendorCard(vendor) {
+              const card = document.createElement('div');
+              card.className = 'vendor-card';
+              
+              // Create services display
+              const servicesDisplay = vendor.services && vendor.services.length > 0 
+                  ? vendor.services.slice(0, 3).map(service => 
+                      `<span class="service-tag">${service.replace('-', ' ').replace(/\b\w/g, l => l.toUpperCase())}</span>`
+                  ).join('') + (vendor.services.length > 3 ? ` +${vendor.services.length - 3} more` : '')
+                  : `<span class="service-tag">No services specified</span>`;
+              
+              card.innerHTML = `
+                  <div class="vendor-header">
+                      <div class="vendor-info">
+                          <h3>${vendor.name}</h3>
+                      </div>
+                      <span class="vendor-status ${vendor.status}">${vendor.status}</span>
+                  </div>
+                  <div class="vendor-details">
+                      <div class="vendor-detail">
+                          <i class="fas fa-phone"></i>
+                          <span>${vendor.phone || 'N/A'}</span>
+                      </div>
+                      <div class="vendor-detail">
+                          <i class="fas fa-envelope"></i>
+                          <span>${vendor.email || 'N/A'}</span>
+                      </div>
+                      <div class="vendor-detail">
+                          <i class="fas fa-calendar"></i>
+                          <span>${vendor.years_in_business || 0} years</span>
+                      </div>
+                      <div class="vendor-detail">
+                          <i class="fas fa-star"></i>
+                          <span>${vendor.reviews || 0} reviews</span>
+                      </div>
+                      <div class="vendor-detail">
+                          <i class="fas fa-percentage"></i>
+                          <span>${vendor.service_focus || 0}% focus</span>
+                      </div>
+                      <div class="vendor-detail">
+                          <i class="fas fa-map-marker-alt"></i>
+                          <span>${vendor.city || 'N/A'}, ${vendor.state || 'N/A'}</span>
+                      </div>
+                      <div class="vendor-detail">
+                          <i class="fas fa-link"></i>
+                          <span>Assignments: <span id="assignments-${vendor.id}">Loading...</span></span>
+                      </div>
+                  </div>
+                  <div class="vendor-services">
+                      <strong>Services:</strong> ${servicesDisplay}
+                  </div>
+                  <div class="vendor-actions">
+                      <button class="btn-secondary" onclick="editVendor(${vendor.id})">
+                          <i class="fas fa-edit"></i> Edit
+                      </button>
+                      <button class="btn-secondary" onclick="viewVendor(${vendor.id})">
+                          <i class="fas fa-eye"></i> View
+                      </button>
+                      <button class="btn-secondary" onclick="assignToPage(${vendor.id})">
+                          <i class="fas fa-link"></i> Assign
+                      </button>
+                  </div>
+              `;
+              return card;
+          }
+          
+          // Create location card
+          function createLocationCard(location) {
+              const card = document.createElement('div');
+              card.className = 'location-card';
+              card.innerHTML = `
+                  <div class="location-header">
+                      <div class="location-info">
+                          <h3>${location.name}</h3>
+                          <span class="location-type">${location.city}, ${location.state}</span>
+                      </div>
+                      <span class="location-status ${location.status}">${location.status}</span>
+                  </div>
+                  <div class="location-details">
+                      <div class="location-detail">
+                          <i class="fas fa-map-marker-alt"></i>
+                          <span><strong>Location:</strong> ${location.city}, ${location.state}</span>
+                      </div>
+                      <div class="location-detail">
+                          <i class="fas fa-link"></i>
+                          <span><strong>Slug:</strong> ${location.slug}</span>
+                      </div>
+                      ${location.description ? `<div class="location-detail">
+                          <i class="fas fa-info-circle"></i>
+                          <span><strong>Description:</strong> ${location.description.substring(0, 120)}${location.description.length > 120 ? '...' : ''}</span>
+                      </div>` : ''}
+                      ${location.email ? `<div class="location-detail">
+                          <i class="fas fa-envelope"></i>
+                          <span><strong>Email:</strong> ${location.email}</span>
+                      </div>` : ''}
+                      ${location.phone ? `<div class="location-detail">
+                          <i class="fas fa-phone"></i>
+                          <span><strong>Phone:</strong> ${location.phone}</span>
+                      </div>` : ''}
+                  </div>
+                  <div class="location-actions">
+                      <button class="btn-secondary" onclick="editLocation(${location.id})">
+                          <i class="fas fa-edit"></i> Edit
+                      </button>
+                      <button class="btn-secondary" onclick="viewLocation(${location.id})">
+                          <i class="fas fa-eye"></i> View
+                      </button>
+                      <button class="btn-secondary" onclick="createLocationPage(${location.id})">
+                          <i class="fas fa-file"></i> Create Page
+                      </button>
+                      <button class="btn-secondary" onclick="deleteLocation(${location.id})">
+                          <i class="fas fa-trash"></i> Delete
+                      </button>
+                  </div>
+              `;
+              return card;
+          }
+
+                   // Modal functions
+          function showAddVendorModal() {
+              document.getElementById('addVendorModal').style.display = 'block';
+          }
+          
+          function showAddLocationModal() {
+              document.getElementById('addLocationModal').style.display = 'block';
+          }
+
+          function closeModal(modalId) {
+              document.getElementById(modalId).style.display = 'none';
+          }
+
+         // Close modal when clicking outside
+         window.onclick = function(event) {
+             const modals = document.querySelectorAll('.modal');
+             modals.forEach(modal => {
+                 if (event.target === modal) {
+                     modal.style.display = 'none';
+                 }
+             });
+         }
+
+                   // Handle vendor form submission
+          document.getElementById('addVendorForm').addEventListener('submit', async function(e) {
+              e.preventDefault();
+              
+              const formData = new FormData(this);
+              
+              // Get selected services
+              const selectedServices = [];
+              const serviceCheckboxes = this.querySelectorAll('input[name="vendorServices"]:checked');
+              serviceCheckboxes.forEach(checkbox => {
+                  selectedServices.push(checkbox.value);
+              });
+              
+              const vendorData = {
+                  name: formData.get('vendorName'),
+                  phone: formData.get('vendorPhone'),
+                  email: formData.get('vendorEmail'),
+                  website: formData.get('vendorWebsite'),
+                  address: formData.get('vendorAddress'),
+                  city: formData.get('vendorCity'),
+                  state: formData.get('vendorState'),
+                  description: formData.get('vendorDescription'),
+                  status: formData.get('vendorStatus'),
+                  icon: formData.get('vendorIcon') || 'fas fa-store',
+                  years_in_business: parseInt(formData.get('vendorYears')) || 0,
+                  service_focus: parseInt(formData.get('vendorServiceFocus')) || 0,
+                  reviews: parseInt(formData.get('vendorReviews')) || 0,
+                  services: selectedServices,
+                  service_areas: [formData.get('vendorCity'), formData.get('vendorState')].filter(Boolean)
+              };
+              
+              console.log('Submitting vendor data:', vendorData);
+              
+              // Save vendor data to backend
+              try {
+                  const saveResponse = await fetch('/.netlify/functions/save-vendor', {
+                      method: 'POST',
+                      headers: {
+                          'Content-Type': 'application/json',
+                      },
+                      body: JSON.stringify({ vendorData })
+                  });
+                  
+                  const saveData = await saveResponse.json();
+                  console.log('Save vendor response:', saveData);
+                  
+                  if (saveData.success) {
+                      // Reload vendors from backend
+                      console.log('Reloading vendors after save...');
+                      await loadVendors();
+                      closeModal('addVendorModal');
+                      this.reset();
+                      
+                      // Switch to vendors tab to show the new vendor
+                      showTab('vendors');
+                      
+                      // Show success notification
+                      showNotification('Vendor added successfully!', 'success');
+                  } else {
+                      console.error('Failed to save vendor:', saveData.error);
+                      showNotification('Error saving vendor data: ' + saveData.error, 'error');
+                  }
+              } catch (error) {
+                  console.error('Error saving vendor:', error);
+                  showNotification('Error saving vendor data. Please try again.', 'error');
+              }
+          });
+          
+          // Handle location form submission
+          document.getElementById('addLocationForm').addEventListener('submit', async function(e) {
+              e.preventDefault();
+              
+              const formData = new FormData(this);
+              const locationData = {
+                  city: formData.get('locationCity'),
+                  state: formData.get('locationState'),
+                  meta_title: formData.get('locationMetaTitle'),
+                  meta_description: formData.get('locationMetaDescription'),
+                  meta_keywords: formData.get('locationMetaKeywords'),
+                  description: formData.get('locationDescription')
+              };
+              
+              console.log('Submitting location data:', locationData);
+              
+              // Save location data to backend
+              try {
+                  const saveResponse = await fetch('/.netlify/functions/simple-save-location', {
+                      method: 'POST',
+                      headers: {
+                          'Content-Type': 'application/json',
+                      },
+                      body: JSON.stringify({ locationData })
+                  });
+                  
+                  const saveData = await saveResponse.json();
+                  console.log('Save location response:', saveData);
+                  
+                  if (saveData.success) {
+                      // Reload locations from backend
+                      console.log('Reloading locations after save...');
+                      await loadLocations();
+                      closeModal('addLocationModal');
+                      this.reset();
+                      
+                      // Switch to locations tab to show the new location
+                      showTab('locations');
+                      
+                      // Show success notification
+                      showNotification(`Location page created successfully! Visit: ${saveData.url || `/location/${saveData.location?.slug}`}`, 'success');
+                  } else {
+                      console.error('Failed to save location:', saveData.error);
+                      showNotification('Error saving location data: ' + saveData.error, 'error');
+                  }
+              } catch (error) {
+                  console.error('Error saving location:', error);
+                  showNotification('Error saving location data. Please try again.', 'error');
+              }
+          });
+
+                   // Vendor action functions
+          function editVendor(id) {
+              const vendor = vendors.find(v => v.id === id);
+              if (vendor) {
+                  alert(`Edit vendor: ${vendor.name}`);
+                  // TODO: Implement edit functionality
+              }
+          }
+
+          function viewVendor(id) {
+              const vendor = vendors.find(v => v.id === id);
+              if (vendor) {
+                  alert(`View vendor: ${vendor.name}\n\n${vendor.description}`);
+              }
+          }
+
+          async function assignToPage(id) {
+              const vendor = vendors.find(v => v.id === id);
+              if (!vendor) return;
+              
+              // Create assignment modal
+              const modal = document.createElement('div');
+              modal.className = 'modal';
+              modal.id = 'assignPageModal';
+              modal.style.display = 'block';
+              
+              const modalContent = document.createElement('div');
+              modalContent.className = 'modal-content';
+              modalContent.style.maxWidth = '500px';
+              
+              modalContent.innerHTML = `
+                  <div class="modal-header">
+                      <h3 class="modal-title">Assign ${vendor.name} to Page</h3>
+                      <button class="close-modal" onclick="closeAssignPageModal()">&times;</button>
+                  </div>
+                  <div class="modal-body">
+                      <div class="form-group">
+                          <label for="assignPageSelect">Select Page:</label>
+                          <select id="assignPageSelect" class="form-control">
+                              <option value="">No Assignment</option>
+                              <optgroup label="General Pages">
+                                  <option value="home">Homepage</option>
+                                  <option value="services">Services Page</option>
+                                  <option value="directory">Directory Page</option>
+                                  <option value="hot-leads">Hot Leads Page</option>
+                              </optgroup>
+                              <optgroup label="Location Pages" id="assignLocationPagesGroup">
+                                  <!-- Will be populated dynamically -->
+                              </optgroup>
+                          </select>
+                          <small class="form-help">Choose where this vendor should appear</small>
+                      </div>
+                      <div class="form-group">
+                          <label>Current Assignment:</label>
+                          <p style="padding: 0.5rem; background: #f8f9fa; border-radius: 4px; margin: 0;">
+                              <span id="current-assignment-${vendor.id}">Loading assignments...</span>
+                          </p>
+                      </div>
+                  </div>
+                  <div class="modal-actions">
+                      <button type="button" class="btn-secondary" onclick="closeAssignPageModal()">Cancel</button>
+                      <button type="button" class="btn-primary" onclick="confirmAssignPage(${vendor.id})">Assign Vendor</button>
+                  </div>
+              `;
+              
+              modal.appendChild(modalContent);
+              document.body.appendChild(modal);
+              
+              // Populate location pages in assignment modal
+              const assignLocationPagesGroup = document.getElementById('assignLocationPagesGroup');
+              if (assignLocationPagesGroup) {
+                  assignLocationPagesGroup.innerHTML = '';
+                  
+                  // Use all locations from database instead of just created HTML files
+                  if (locations.length === 0) {
+                      const noLocationsOption = document.createElement('option');
+                      noLocationsOption.value = '';
+                      noLocationsOption.textContent = 'No locations available';
+                      noLocationsOption.disabled = true;
+                      assignLocationPagesGroup.appendChild(noLocationsOption);
+                  } else {
+                      locations.forEach(location => {
+                          const option = document.createElement('option');
+                          option.value = location.id; // Use location ID for assignment
+                          option.textContent = `${location.city}, ${location.state}`;
+                          // Check if vendor is already assigned to this location
+                          // This will need to be updated when we implement the assignment system
+                          assignLocationPagesGroup.appendChild(option);
+                      });
+                  }
+              }
+              
+              // Load current assignments for this vendor
+              loadVendorAssignmentsForModal(vendor.id);
+          }
+          
+          function closeAssignPageModal() {
+              const modal = document.getElementById('assignPageModal');
+              if (modal) {
+                  modal.remove();
+              }
+          }
+          
+          async function confirmAssignPage(vendorId) {
+              const vendor = vendors.find(v => v.id === vendorId);
+              const assignPageSelect = document.getElementById('assignPageSelect');
+              
+              if (vendor && assignPageSelect) {
+                  const locationId = assignPageSelect.value;
+                  
+                  if (!locationId) {
+                      showNotification('Please select a location to assign', 'error');
+                      return;
+                  }
+                  
+                  try {
+                      // Call the assign-vendor function to create the assignment
+                      const response = await fetch('/.netlify/functions/assign-vendor', {
+                          method: 'POST',
+                          headers: {
+                              'Content-Type': 'application/json',
+                          },
+                          body: JSON.stringify({
+                              vendor_id: vendorId,
+                              location_id: locationId
+                          })
+                      });
+                      
+                      const data = await response.json();
+                      
+                      if (data.success) {
+                          closeAssignPageModal();
+                          showNotification(`${vendor.name} assigned successfully!`, 'success');
+                          // Reload vendor assignments to update the display
+                          await loadVendors();
+                      } else {
+                          showNotification('Error assigning vendor: ' + data.error, 'error');
+                      }
+                  } catch (error) {
+                      console.error('Error assigning vendor:', error);
+                      showNotification('Error assigning vendor. Please try again.', 'error');
+                  }
+              }
+          }
+          
+          // Location action functions
+          function editLocation(id) {
+              const location = locations.find(l => l.id === id);
+              if (location) {
+                  alert(`Edit location: ${location.name}`);
+                  // TODO: Implement edit functionality
+              }
+          }
+
+          function viewLocation(id) {
+              const location = locations.find(l => l.id === id);
+              if (location) {
+                  alert(`View location: ${location.name}\n\n${location.description}`);
+              }
+          }
+
+          function createLocationPage(id) {
+              console.log('createLocationPage called with id:', id);
+              const location = locations.find(l => l.id === id);
+              console.log('Found location:', location);
+              
+              if (location) {
+                  const requestData = {
+                      locationData: {
+                          city: location.city,
+                          state: location.state,
+                          slug: location.slug,
+                          description: location.description,
+                          latitude: location.latitude,
+                          longitude: location.longitude,
+                          meta_title: location.meta_title,
+                          meta_description: location.meta_description,
+                          meta_keywords: location.meta_keywords
+                      }
+                  };
+                  
+                  console.log('Sending request data:', requestData);
+                  
+                  // Call the Netlify function to generate the actual page
+                  fetch('/.netlify/functions/generate-location-page', {
+                      method: 'POST',
+                      headers: {
+                          'Content-Type': 'application/json',
+                      },
+                      body: JSON.stringify(requestData)
+                  })
+                  .then(response => {
+                      console.log('Response status:', response.status);
+                      return response.json();
+                  })
+                  .then(data => {
+                      console.log('Response data:', data);
+                      if (data.success) {
+                          const seoInfo = data.seo ? 
+                              `\n\nSEO Information:\nTitle: ${data.seo.title}\nDescription: ${data.seo.description}\nKeywords: ${data.seo.keywords}` : '';
+                          
+                          alert(`Location page created successfully!\n\nPage URL: ${data.url}\n\nThis page is now live at: https://thevendinglocator.com${data.url}${seoInfo}`);
+                      } else {
+                          alert('Failed to create location page. Please try again.');
+                      }
+                  })
+                  .catch(error => {
+                      console.error('Error creating location page:', error);
+                      alert('Failed to create location page. Please try again.');
+                  });
+              } else {
+                  console.error('Location not found with id:', id);
+                  alert('Location not found. Please try again.');
+              }
+          }
+
+          function deleteLocation(id) {
+              const location = locations.find(l => l.id === id);
+              if (!location) {
+                  showNotification('Location not found.', 'error');
+                  return;
+              }
+
+              // Confirm deletion
+              const confirmDelete = confirm(`Are you sure you want to delete the location page for ${location.city}, ${location.state}?\n\nThis will:\n- Delete the location from the database\n- Remove the generated HTML file\n- This action cannot be undone.`);
+              
+              if (!confirmDelete) {
+                  return;
+              }
+
+              console.log('Deleting location:', location);
+              
+              // Call the delete function
+              fetch('/.netlify/functions/delete-location', {
+                  method: 'POST',
+                  headers: {
+                      'Content-Type': 'application/json',
+                  },
+                  body: JSON.stringify({ 
+                      locationId: id,
+                      slug: location.slug,
+                      city: location.city,
+                      state: location.state
+                  })
+              })
+              .then(response => {
+                  if (!response.ok) {
+                      throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                  }
+                  return response.json();
+              })
+              .then(data => {
+                  if (data.success) {
+                      showNotification(`Location page for ${location.city}, ${location.state} has been deleted successfully.`, 'success');
+                      // Reload locations from backend
+                      loadLocations();
+                  } else {
+                      showNotification('Error deleting location: ' + data.error, 'error');
+                  }
+              })
+              .catch(error => {
+                  console.error('Error deleting location:', error);
+                  showNotification('Error deleting location: ' + error.message + '. Please check your Supabase configuration.', 'error');
+              });
+          }
+
+
+
+                   // Tab functionality
+          function showTab(tabName) {
+              console.log('Switching to tab:', tabName);
+              
+              // Hide all tab contents
+              const tabContents = document.querySelectorAll('.tab-content');
+              tabContents.forEach(content => {
+                  content.style.display = 'none';
+              });
+              
+              // Remove active class from all tab buttons
+              const tabButtons = document.querySelectorAll('.tab-btn');
+              tabButtons.forEach(btn => {
+                  btn.classList.remove('active');
+              });
+              
+              // Show selected tab content
+              const selectedTab = document.getElementById(`${tabName}-tab`);
+              if (selectedTab) {
+                  selectedTab.style.display = 'block';
+                  console.log('Showing tab content:', selectedTab.id);
+              }
+              
+              // Add active class to clicked button
+              const clickedButton = document.querySelector(`[onclick="showTab('${tabName}')"]`);
+              if (clickedButton) {
+                  clickedButton.classList.add('active');
+              }
+              
+              // Initialize the appropriate grid
+              if (tabName === 'vendors') {
+                  console.log('Initializing vendors grid');
+                  initializeVendors();
+              } else if (tabName === 'locations') {
+                  console.log('Initializing locations grid');
+                  initializeLocations();
+              }
+          }
+          
+          // Search and filter functionality for vendors
+          document.getElementById('vendorSearch').addEventListener('input', function() {
+              const searchTerm = this.value.toLowerCase();
+              const filteredVendors = vendors.filter(vendor => 
+                  vendor.name.toLowerCase().includes(searchTerm) ||
+                  vendor.email.toLowerCase().includes(searchTerm) ||
+                  (vendor.services && vendor.services.some(service => 
+                      service.toLowerCase().includes(searchTerm)
+                  ))
+              );
+              
+              const vendorsGrid = document.getElementById('vendorsGrid');
+              vendorsGrid.innerHTML = '';
+              
+              filteredVendors.forEach(vendor => {
+                  const vendorCard = createVendorCard(vendor);
+                  vendorsGrid.appendChild(vendorCard);
+              });
+          });
+          
+          // Search and filter functionality for locations
+          document.getElementById('locationSearch').addEventListener('input', function() {
+              const searchTerm = this.value.toLowerCase();
+              const filteredLocations = locations.filter(location => 
+                  location.name.toLowerCase().includes(searchTerm) ||
+                  location.city.toLowerCase().includes(searchTerm) ||
+                  location.state.toLowerCase().includes(searchTerm) ||
+                  location.slug.toLowerCase().includes(searchTerm)
+              );
+              
+              const locationsGrid = document.getElementById('locationsGrid');
+              locationsGrid.innerHTML = '';
+              
+              filteredLocations.forEach(location => {
+                  const locationCard = createLocationCard(location);
+                  locationsGrid.appendChild(locationCard);
+              });
+          });
+
+                  // Initialize when directory section is shown
+         async function showSection(sectionId) {
+             // Hide all sections
+             const sections = document.querySelectorAll('.section-content');
+             sections.forEach(section => {
+                 section.style.display = 'none';
+             });
+ 
+             // Show selected section
+             const selectedSection = document.getElementById(sectionId);
+             if (selectedSection) {
+                 selectedSection.style.display = 'block';
+             }
+ 
+             // Update active nav item
+             const navItems = document.querySelectorAll('.nav-item');
+             navItems.forEach(item => {
+                 item.classList.remove('active');
+             });
+ 
+             // Find and activate the clicked nav item
+             const clickedNavItem = document.querySelector(`[onclick*="showSection('${sectionId}')"]`);
+             if (clickedNavItem) {
+                 clickedNavItem.classList.add('active');
+             }
+ 
+             // Initialize vendors if directory section is shown
+             if (sectionId === 'directory') {
+                 initializeVendors();
+                 
+                 // Load locations if not already loaded
+                 if (!locations || locations.length === 0) {
+                     await loadLocations();
+                 }
+                 
+                 // If there are locations, show the locations tab by default
+                 if (locations && locations.length > 0) {
+                     showTab('locations');
+                 }
+             }
+         }
+
+         // Automatic slug generation for location form
+         function generateSlug() {
+             const city = document.getElementById('locationCity').value;
+             const state = document.getElementById('locationState').value;
+             const slugField = document.getElementById('locationSlug');
+             
+             if (city && state) {
+                 const slug = `${city.toLowerCase().replace(/\s+/g, '-')}-${state.toLowerCase().replace(/\s+/g, '-')}`;
+                 slugField.value = slug;
+             }
+         }
+
+         // Add event listeners for automatic slug generation
+         document.addEventListener('DOMContentLoaded', function() {
+             const cityField = document.getElementById('locationCity');
+             const stateField = document.getElementById('locationState');
+             
+             if (cityField) {
+                 cityField.addEventListener('input', generateSlug);
+             }
+             
+             if (stateField) {
+                 stateField.addEventListener('input', generateSlug);
+             }
+         });
+     </script>
+ </body>
+ </html> 
+ </html> 

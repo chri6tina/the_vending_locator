@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Slug Generation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .test-case {
+            margin: 1rem 0;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .input {
+            font-weight: bold;
+            color: #2563eb;
+        }
+        .output {
+            font-weight: bold;
+            color: #059669;
+        }
+        .url {
+            color: #dc2626;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>🧪 Test Slug Generation</h1>
+    <p>This page tests the automatic slug generation for location URLs.</p>
+    
+    <div class="test-case">
+        <h3>Test Case 1: Jacksonville, FL</h3>
+        <p><span class="input">Input:</span> City: "Jacksonville", State: "FL"</p>
+        <p><span class="output">Generated Slug:</span> jacksonville-fl</p>
+        <p><span class="url">URL:</span> /location/jacksonville-fl</p>
+    </div>
+    
+    <div class="test-case">
+        <h3>Test Case 2: New York, NY</h3>
+        <p><span class="input">Input:</span> City: "New York", State: "NY"</p>
+        <p><span class="output">Generated Slug:</span> new-york-ny</p>
+        <p><span class="url">URL:</span> /location/new-york-ny</p>
+    </div>
+    
+    <div class="test-case">
+        <h3>Test Case 3: Los Angeles, CA</h3>
+        <p><span class="input">Input:</span> City: "Los Angeles", State: "CA"</p>
+        <p><span class="output">Generated Slug:</span> los-angeles-ca</p>
+        <p><span class="url">URL:</span> /location/los-angeles-ca</p>
+    </div>
+    
+    <div class="test-case">
+        <h3>Test Case 4: Miami Beach, FL</h3>
+        <p><span class="input">Input:</span> City: "Miami Beach", State: "FL"</p>
+        <p><span class="output">Generated Slug:</span> miami-beach-fl</p>
+        <p><span class="url">URL:</span> /location/miami-beach-fl</p>
+    </div>
+    
+    <div class="test-case">
+        <h3>Test Case 5: San Francisco, CA</h3>
+        <p><span class="input">Input:</span> City: "San Francisco", State: "CA"</p>
+        <p><span class="output">Generated Slug:</span> san-francisco-ca</p>
+        <p><span class="url">URL:</span> /location/san-francisco-ca</p>
+    </div>
+    
+    <h2>✅ Slug Generation Rules</h2>
+    <ul>
+        <li>City names are converted to lowercase</li>
+        <li>Spaces are replaced with hyphens</li>
+        <li>Special characters are removed</li>
+        <li>State abbreviations are converted to lowercase</li>
+        <li>Format: <code>city-state</code></li>
+    </ul>
+    
+    <h2>🔗 Test the Form</h2>
+    <p><a href="/add-location-form.html">Go to Add Location Form</a></p>
+    <p><a href="/test-add-location.html">Go to Test Page</a></p>
+</body>
+</html> 
