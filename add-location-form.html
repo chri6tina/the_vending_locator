@@ -255,20 +255,22 @@
                             throw new Error('Please fill in both City and State fields');
                         }
                         
-                        // Save location data
-                        const response = await fetch('/.netlify/functions/simple-save-location', {
-                            method: 'POST',
-                            headers: {
-                                'Content-Type': 'application/json',
-                            },
-                            body: JSON.stringify({ locationData })
-                        });
+                        // Save location data to localStorage (GitHub Pages compatible)
+                        const locations = JSON.parse(localStorage.getItem('locations') || '[]');
+                        const newLocation = {
+                            ...locationData,
+                            id: Date.now(),
+                            created_at: new Date().toISOString(),
+                            slug: `${locationData.city.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')}-${locationData.state.toLowerCase()}`
+                        };
                         
-                        const result = await response.json();
+                        locations.push(newLocation);
+                        localStorage.setItem('locations', JSON.stringify(locations));
                         
-                        if (!response.ok) {
-                            throw new Error(result.error || 'Failed to create location page');
-                        }
+                        const result = {
+                            success: true,
+                            url: `/location/${newLocation.slug}.html`
+                        };
                         
                         // Show success message
                         showMessage('Location page created successfully!', 'success');

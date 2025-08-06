@@ -38,5 +38,9 @@
 /directory /location/ 301
 /directory/ /location/ 301
 
+# Redirect plural to singular for locations
+/locations /location/ 301
+/locations/ /location/ 301
+
 # Fallback for any 404s
 /* /index.html 404 

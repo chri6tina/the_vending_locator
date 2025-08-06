@@ -391,6 +391,12 @@
     </style>
 </head>
 <body>
+    <script>
+        // Redirect /locations to /location/ for GitHub Pages compatibility
+        if (window.location.pathname === '/locations' || window.location.pathname === '/locations/') {
+            window.location.href = '/location/';
+        }
+    </script>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
@@ -580,20 +586,32 @@
                 loadingState.style.display = 'block';
                 errorState.style.display = 'none';
 
-                const response = await fetch('/.netlify/functions/get-locations');
-                const data = await response.json();
-
-                if (!response.ok) {
-                    throw new Error(data.error || 'Failed to load locations');
-                }
-
-                if (data.success && data.locations) {
-                    allLocations = data.locations;
-                    filteredLocations = [...allLocations];
-                    displayLocations();
+                // Load locations from localStorage (GitHub Pages compatible)
+                const storedLocations = JSON.parse(localStorage.getItem('locations') || '[]');
+                
+                // Add sample locations if none exist
+                if (storedLocations.length === 0) {
+                    const sampleLocations = [
+                        {
+                            id: 1,
+                            name: 'Jacksonville',
+                            slug: 'jacksonville-fl',
+                            city: 'Jacksonville',
+                            state: 'FL',
+                            description: 'Professional vending services in Jacksonville, FL. We provide reliable snack vending, beverage vending, and coffee service throughout the Jacksonville area.',
+                            category: 'offices',
+                            vendorCount: 3,
+                            created_at: '2024-01-15T10:00:00Z'
+                        }
+                    ];
+                    localStorage.setItem('locations', JSON.stringify(sampleLocations));
+                    allLocations = sampleLocations;
                 } else {
-                    throw new Error('No location data received');
+                    allLocations = storedLocations;
                 }
+                
+                filteredLocations = [...allLocations];
+                displayLocations();
 
             } catch (error) {
                 console.error('Error loading locations:', error);

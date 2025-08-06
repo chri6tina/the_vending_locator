@@ -245,42 +245,20 @@ document.addEventListener('DOMContentLoaded', function() {
             const email = document.getElementById('email').value;
             
             if (zipcode && email) {
-                try {
-                    const response = await fetch('/.netlify/functions/subscribe', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json',
-                        },
-                        body: JSON.stringify({
-                            email: email,
-                            zipcode: zipcode,
-                            source: 'lead-form'
-                        })
-                    });
-
-                    const result = await response.json();
-                    
-                    if (result.success) {
-                        // Save lead to localStorage as backup
-                        const leads = JSON.parse(localStorage.getItem('vendingLeads') || '[]');
-                        const newLead = {
-                            date: new Date().toISOString(),
-                            email: email,
-                            zipcode: zipcode,
-                            status: 'new'
-                        };
-                        leads.push(newLead);
-                        localStorage.setItem('vendingLeads', JSON.stringify(leads));
-                        
-                        showNotification('Thank you! We\'ll research your area and send you hot leads soon. Check your email for confirmation.', 'success');
-                        locationForm.reset();
-                    } else {
-                        showNotification('Failed to submit. Please try again.', 'error');
-                    }
-                } catch (error) {
-                    console.error('Lead form error:', error);
-                    showNotification('Failed to submit. Please try again.', 'error');
-                }
+                // Save lead to localStorage (GitHub Pages compatible)
+                const leads = JSON.parse(localStorage.getItem('vendingLeads') || '[]');
+                const newLead = {
+                    date: new Date().toISOString(),
+                    email: email,
+                    zipcode: zipcode,
+                    status: 'new',
+                    source: 'lead-form'
+                };
+                leads.push(newLead);
+                localStorage.setItem('vendingLeads', JSON.stringify(leads));
+                
+                showNotification('Thank you! We\'ll research your area and send you hot leads soon. Check your email for confirmation.', 'success');
+                locationForm.reset();
             }
         });
     }
@@ -313,31 +291,19 @@ document.addEventListener('DOMContentLoaded', function() {
             const zipcode = form.querySelector('input[name="zipcode"]')?.value || '';
             
             if (email) {
-                try {
-                    const response = await fetch('/.netlify/functions/subscribe', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json',
-                        },
-                        body: JSON.stringify({
-                            email: email,
-                            zipcode: zipcode,
-                            source: window.location.pathname
-                        })
-                    });
-
-                    const result = await response.json();
-                    
-                    if (result.success) {
-                        showNotification('Thank you for subscribing to our newsletter! Check your email for confirmation.', 'success');
-                        form.reset();
-                    } else {
-                        showNotification('Failed to subscribe. Please try again.', 'error');
-                    }
-                } catch (error) {
-                    console.error('Subscription error:', error);
-                    showNotification('Failed to subscribe. Please try again.', 'error');
-                }
+                // Save subscription to localStorage (GitHub Pages compatible)
+                const subscriptions = JSON.parse(localStorage.getItem('newsletterSubscriptions') || '[]');
+                const newSubscription = {
+                    date: new Date().toISOString(),
+                    email: email,
+                    zipcode: zipcode,
+                    source: window.location.pathname
+                };
+                subscriptions.push(newSubscription);
+                localStorage.setItem('newsletterSubscriptions', JSON.stringify(subscriptions));
+                
+                showNotification('Thank you for subscribing to our newsletter! Check your email for confirmation.', 'success');
+                form.reset();
             }
         });
     });

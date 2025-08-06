@@ -17,6 +17,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <script>
+        // Redirect /locations to /location/ for GitHub Pages compatibility
+        if (window.location.pathname === '/locations' || window.location.pathname === '/locations/') {
+            window.location.href = '/location/';
+        }
+    </script>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
