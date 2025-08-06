@@ -61,7 +61,7 @@ For local development, create a `.env` file (it's already in your .gitignore):
 ```
 CONTENTFUL_SPACE_ID=xpopyri6s8gv
 CONTENTFUL_ACCESS_TOKEN=as1yT7ZCd27_ByA_MBu0lzJDQZVWmxafx2mfM-c9ooY
-OPENAI_API_KEY=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
+OPENAI_API_KEY=your_openai_api_key_here
 ```
 
 ### 6. Important Security Notes

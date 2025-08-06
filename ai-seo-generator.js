@@ -2,8 +2,8 @@
 // Uses AI to automatically generate meta titles, descriptions, and keywords
 
 const aiSEOGenerator = {
-    // OpenAI API configuration - use fallback for browser environment
-    OPENAI_API_KEY: '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',
+    // OpenAI API configuration - use environment variable or fallback
+    OPENAI_API_KEY: process.env.OPENAI_API_KEY || 'your_openai_api_key_here',
     
     // Generate AI-powered meta title
     async generateAIMetaTitle(city, state, serviceType = 'vending services') {
