@@ -441,6 +441,9 @@
                     <div class="directory-header">
                         <h2 class="directory-title">Vending Services Directory</h2>
                         <div class="header-actions">
+                            <button class="btn-primary" onclick="showAddVendorModal()">
+                                <i class="fas fa-store"></i> Add New Vendor
+                            </button>
                             <button class="btn-primary" onclick="showAddLocationModal()">
                                 <i class="fas fa-plus"></i> Add New Location
                             </button>
@@ -492,6 +495,42 @@
                 <div class="form-actions">
                     <button type="button" class="btn-secondary" onclick="closeModal('addLocationModal')">Cancel</button>
                     <button type="submit" class="btn-primary">Add Location</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Add Vendor Modal -->
+    <div id="addVendorModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Add New Vendor</h3>
+                <span class="close" onclick="closeModal('addVendorModal')">&times;</span>
+            </div>
+            <form id="addVendorForm">
+                <div class="form-group">
+                    <label for="vendorName">Vendor Name</label>
+                    <input type="text" id="vendorName" name="vendorName" required>
+                </div>
+                <div class="form-group">
+                    <label for="vendorEmail">Email</label>
+                    <input type="email" id="vendorEmail" name="vendorEmail">
+                </div>
+                <div class="form-group">
+                    <label for="vendorPhone">Phone</label>
+                    <input type="tel" id="vendorPhone" name="vendorPhone">
+                </div>
+                <div class="form-group">
+                    <label for="vendorCity">City</label>
+                    <input type="text" id="vendorCity" name="vendorCity">
+                </div>
+                <div class="form-group">
+                    <label for="vendorState">State</label>
+                    <input type="text" id="vendorState" name="vendorState">
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="btn-secondary" onclick="closeModal('addVendorModal')">Cancel</button>
+                    <button type="submit" class="btn-primary">Add Vendor</button>
                 </div>
             </form>
         </div>
@@ -681,6 +720,10 @@
             document.getElementById('addLocationModal').style.display = 'block';
         }
 
+        function showAddVendorModal() {
+            document.getElementById('addVendorModal').style.display = 'block';
+        }
+
         function closeModal(modalId) {
             document.getElementById(modalId).style.display = 'none';
         }
@@ -734,6 +777,33 @@
             // Reload the dashboard
             loadLocations();
             closeModal('addLocationModal');
+            this.reset();
+        });
+
+        // Handle vendor form submission
+        document.getElementById('addVendorForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const newVendor = {
+                id: Date.now(),
+                name: formData.get('vendorName'),
+                email: formData.get('vendorEmail'),
+                phone: formData.get('vendorPhone'),
+                city: formData.get('vendorCity'),
+                state: formData.get('vendorState'),
+                status: 'ACTIVE',
+                created_at: new Date().toISOString()
+            };
+
+            // Save to localStorage
+            const storedVendors = JSON.parse(localStorage.getItem('vendors') || '[]');
+            storedVendors.push(newVendor);
+            localStorage.setItem('vendors', JSON.stringify(storedVendors));
+
+            // Show success message
+            alert('Vendor added successfully!');
+            closeModal('addVendorModal');
             this.reset();
         });
     </script>
