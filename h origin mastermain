@@ -1,0 +1,5 @@
+[33m51337a8[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m Restore beautiful admin dashboard design - recreate sophisticated vending services cards with status badges and modern styling
+[33m63186bb[m Remove API keys from files for security
+[33m7c416f1[m Add location management system with Supabase integration and page generation
+[33m9322ce5[m Fix navigation in blog-post.html to match other pages
+[33m89a54b8[m Fix navigation consistency across all pages - add Hot Leads link and update all links to include .html extensions
