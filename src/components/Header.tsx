@@ -9,8 +9,8 @@ const navigation = [
   { name: 'Services', href: '/services' },
   { name: 'Vending Locations', href: '/vending-locations' },
   { name: 'Pricing', href: '/pricing' },
+  { name: 'Guide', href: '/guide/how-to-start-a-vending-machine-business' },
   { name: 'Hot Leads', href: '/hot-leads' },
-  { name: 'Blog', href: '/blog' },
 ]
 
 export default function Header() {

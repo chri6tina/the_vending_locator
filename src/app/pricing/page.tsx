@@ -222,94 +222,23 @@ export default function Pricing() {
         </div>
       </div>
 
-      {/* Pricing Table */}
-      <PricingTable />
-
-      {/* Vending Course Promotion */}
-      <div className="bg-gradient-to-r from-navy to-blue-900 py-16 sm:py-24 lg:py-32">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-4xl text-center">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-              className="bg-white/10 backdrop-blur-sm rounded-3xl p-6 sm:p-8 lg:p-12 border border-white/20"
-            >
-              <motion.div
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                viewport={{ once: true }}
-                className="text-4xl sm:text-6xl mb-4 sm:mb-6"
-              >
-                🎓
-              </motion.div>
-              
-              <motion.h2
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.3 }}
-                viewport={{ once: true }}
-                className="text-2xl sm:text-3xl lg:text-4xl font-playfair font-bold tracking-tight text-white mb-4 sm:mb-6 px-4 sm:px-0"
-              >
-                Looking for a Vending Course?
-              </motion.h2>
-              
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                viewport={{ once: true }}
-                className="text-base sm:text-xl leading-7 sm:leading-8 text-white/90 mb-6 sm:mb-8 max-w-3xl mx-auto px-4 sm:px-0"
-              >
-                Master the fundamentals of vending machine business with our comprehensive course. 
-                Learn location research, contract negotiation, machine selection, and profit optimization. 
-                Includes cold call scripts, legal document templates, and business guidance.
-              </motion.p>
-              
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.5 }}
-                viewport={{ once: true }}
-                className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4 sm:px-0"
-              >
-                <a
-                  href="https://gumroad.com/l/vending-course"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-coral hover:bg-coral/90 text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl w-full sm:w-auto text-center"
-                >
-                  🚀 Get the Course Now
-                </a>
-                <div className="text-white/70 text-xs sm:text-sm">
-                  <span className="font-semibold text-coral">$79</span> • Digital Download • Lifetime Updates
-                </div>
-              </motion.div>
-              
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.6 }}
-                viewport={{ once: true }}
-                className="mt-6 sm:mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 text-center px-4 sm:px-0"
-              >
-                <div className="text-white/80">
-                  <div className="text-xl sm:text-2xl mb-2">📚</div>
-                  <div className="font-semibold text-white text-sm sm:text-base">10+ Modules</div>
-                  <div className="text-xs sm:text-sm">Comprehensive Coverage</div>
-                </div>
-                <div className="text-white/80">
-                  <div className="text-xl sm:text-2xl mb-2">💎</div>
-                  <div className="font-semibold text-white text-sm sm:text-base">Bonus</div>
-                  <div className="text-xs sm:text-sm">Scripts & Legal Docs</div>
-                </div>
-              </motion.div>
-            </motion.div>
+      {/* How to Start Guide - Thin and Stretched */}
+      <div className="bg-white">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6">
+          <div className="text-center">
+            <h2 className="text-xl font-semibold text-charcoal mb-2">
+              How to Get Started with Vending Location Leads
+            </h2>
+            <p className="text-sm text-stone max-w-4xl mx-auto leading-relaxed">
+              Choose your plan below, then we'll guide you through the process of finding and securing 
+              prime vending locations. Our team handles the research while you focus on growing your business.
+            </p>
           </div>
         </div>
       </div>
+
+      {/* Pricing Table */}
+      <PricingTable />
 
       {/* FAQ Section */}
       <FAQ />
