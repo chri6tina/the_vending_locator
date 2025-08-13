@@ -248,19 +248,15 @@ export default function PricingTable() {
         {/* Desktop Table - Hidden on mobile, visible on lg+ screens */}
         <div className="hidden lg:block">
           <div className="overflow-x-auto">
-            <table className="w-full">
+            <table className="w-full border-collapse">
               <thead>
-                <tr>
-                  <th className="px-6 py-4 text-left">
-                    <span className="sr-only">Features</span>
+                <tr className="bg-warm-white border-b border-stone/30">
+                  <th className="px-6 py-6 text-left">
+                    <span className="text-base font-playfair font-bold text-charcoal">Feature Category</span>
                   </th>
                   {plans.map((plan) => (
-                    <th key={plan.name} className="px-6 py-4 text-center">
-                      <button
-                        onClick={() => handlePlanClick(plan)}
-                        className="block w-full cursor-pointer hover:bg-gray-50 transition-colors duration-150 rounded-lg p-4 -m-4"
-                        title={`Click to get ${plan.name} plan`}
-                      >
+                    <th key={plan.name} className="px-6 py-6 text-center">
+                      <div className="text-center">
                         {plan.popular && (
                           <div className="mb-3">
                             <span className="bg-navy text-white px-3 py-1 rounded-full text-sm font-semibold">
@@ -291,7 +287,7 @@ export default function PricingTable() {
                             <div>📍 {plan.radius} radius</div>
                           </div>
                         </div>
-                      </button>
+                      </div>
                     </th>
                   ))}
                 </tr>
@@ -328,19 +324,13 @@ export default function PricingTable() {
                       </td>
                       {feature.values?.map((value, planIdx) => (
                         <td key={planIdx} className="px-6 py-4 text-center">
-                          <button
-                            onClick={() => handlePlanClick(plans[planIdx])}
-                            className="block w-full h-full cursor-pointer hover:bg-gray-100 transition-colors duration-150 rounded-md p-2 -m-2"
-                            title={`Click to get ${plans[planIdx].name} plan`}
-                          >
-                            <span className={`text-base font-semibold ${
-                              value === '✓ Included' ? 'text-bronze' : 
-                              value === '—' ? 'text-gray-500' : 
-                              'text-charcoal'
-                            }`}>
-                              {value}
-                            </span>
-                          </button>
+                          <span className={`text-base font-semibold ${
+                            value === '✓ Included' ? 'text-bronze' : 
+                            value === '—' ? 'text-gray-500' : 
+                            'text-charcoal'
+                          }`}>
+                            {value}
+                          </span>
                         </td>
                       ))}
                     </tr>
