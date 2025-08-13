@@ -1,0 +1,5 @@
+[33m63c166f[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Add separate footer links for Vending Leads and Find Vendors services
+[33m52856ce[m Add Vending Locations link to footer navigation
+[33m6a7eff3[m Fix desktop pricing table - restore proper comparison structure with all features
+[33maf84d99[m Add SEO-optimized vending locations directory structure with long-tail keywords
+[33m9ad5324[m Make modal more compact for mobile: reduce padding, spacing, and overall size while maintaining functionality
