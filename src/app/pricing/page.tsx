@@ -225,6 +225,96 @@ export default function Pricing() {
       {/* Pricing Table */}
       <PricingTable />
 
+      {/* Vending Course Promotion */}
+      <div className="bg-gradient-to-r from-navy to-blue-900 py-24 sm:py-32">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-4xl text-center">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 sm:p-12 border border-white/20"
+            >
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-6xl mb-6"
+              >
+                🎓
+              </motion.div>
+              
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="text-3xl font-playfair font-bold tracking-tight text-white sm:text-4xl mb-6"
+              >
+                Looking for a Vending Course?
+              </motion.h2>
+              
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                viewport={{ once: true }}
+                className="text-xl leading-8 text-white/90 mb-8 max-w-3xl mx-auto"
+              >
+                Master the fundamentals of vending machine business with our comprehensive course. 
+                Learn location research, contract negotiation, machine selection, and profit optimization.
+              </motion.p>
+              
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.5 }}
+                viewport={{ once: true }}
+                className="flex flex-col sm:flex-row items-center justify-center gap-4"
+              >
+                <a
+                  href="https://gumroad.com/l/vending-course"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-coral hover:bg-coral/90 text-white font-semibold px-8 py-4 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                >
+                  🚀 Get the Course Now
+                </a>
+                <div className="text-white/70 text-sm">
+                  <span className="font-semibold text-coral">$97</span> • Instant Access • Lifetime Updates
+                </div>
+              </motion.div>
+              
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+                viewport={{ once: true }}
+                className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-6 text-center"
+              >
+                <div className="text-white/80">
+                  <div className="text-2xl mb-2">📚</div>
+                  <div className="font-semibold text-white">12 Modules</div>
+                  <div className="text-sm">Comprehensive Coverage</div>
+                </div>
+                <div className="text-white/80">
+                  <div className="text-2xl mb-2">⏱️</div>
+                  <div className="font-semibold text-white">8+ Hours</div>
+                  <div className="text-sm">Video Content</div>
+                </div>
+                <div className="text-white/80">
+                  <div className="text-2xl mb-2">💎</div>
+                  <div className="font-semibold text-white">Bonus</div>
+                  <div className="text-sm">Templates & Scripts</div>
+                </div>
+              </motion.div>
+            </motion.div>
+          </div>
+        </div>
+      </div>
+
       {/* FAQ Section */}
       <FAQ />
 
