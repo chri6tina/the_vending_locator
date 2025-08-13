@@ -295,47 +295,250 @@ export default function PricingTable() {
               
               {/* Feature Rows */}
               <tbody className="divide-y divide-stone/20 bg-white">
-                {features.map((feature, featureIdx) => {
-                  if (feature.section) {
-                    // Section header row
-                    return (
-                      <tr key={feature.section} className="bg-stone/10 border-b border-stone/30">
-                        <td colSpan={5} className="px-6 py-5 text-center">
-                          <h4 className="text-xl font-playfair font-bold text-charcoal">
-                            {feature.section}
-                          </h4>
-                        </td>
-                      </tr>
-                    )
-                  }
-                  
-                  // Feature row
-                  return (
-                    <tr key={feature.name} className="hover:bg-gray-50 transition-colors duration-150">
-                      <td className="px-6 py-4">
-                        <div className="max-w-md">
-                          <h5 className="text-base font-bold text-charcoal mb-2">
-                            {feature.name}
-                          </h5>
-                          <p className="text-sm text-stone leading-relaxed font-medium">
-                            {feature.description}
-                          </p>
-                        </div>
-                      </td>
-                      {feature.values?.map((value, planIdx) => (
-                        <td key={planIdx} className="px-6 py-4 text-center">
-                          <span className={`text-base font-semibold ${
-                            value === '✓ Included' ? 'text-bronze' : 
-                            value === '—' ? 'text-gray-500' : 
-                            'text-charcoal'
-                          }`}>
-                            {value}
-                          </span>
-                        </td>
-                      ))}
-                    </tr>
-                  )
-                })}
+                {/* Number of Locations */}
+                <tr className="hover:bg-gray-50 transition-colors duration-150">
+                  <td className="px-6 py-4">
+                    <div className="max-w-md">
+                      <h5 className="text-base font-bold text-charcoal mb-2">
+                        Number of locations
+                      </h5>
+                      <p className="text-sm text-stone leading-relaxed font-medium">
+                        Compilation of potential vending machine placement locations within your zip code
+                      </p>
+                    </div>
+                  </td>
+                  {plans.map((plan) => (
+                    <td key={plan.name} className="px-6 py-4 text-center">
+                      <span className="text-base font-semibold text-charcoal">
+                        {plan.location}
+                      </span>
+                    </td>
+                  ))}
+                </tr>
+
+                {/* Delivery Time */}
+                <tr className="hover:bg-gray-50 transition-colors duration-150">
+                  <td className="px-6 py-4">
+                    <div className="max-w-md">
+                      <h5 className="text-base font-bold text-charcoal mb-2">
+                        Delivery Time
+                      </h5>
+                      <p className="text-sm text-stone leading-relaxed font-medium">
+                        How quickly you'll receive your researched location leads
+                      </p>
+                    </div>
+                  </td>
+                  {plans.map((plan) => (
+                    <td key={plan.name} className="px-6 py-4 text-center">
+                      <span className="text-base font-semibold text-charcoal">
+                        {plan.deliveryTime}
+                      </span>
+                    </td>
+                  ))}
+                </tr>
+
+                {/* Search Radius */}
+                <tr className="hover:bg-gray-50 transition-colors duration-150">
+                  <td className="px-6 py-4">
+                    <div className="max-w-md">
+                      <h5 className="text-base font-bold text-charcoal mb-2">
+                        Search Radius
+                      </h5>
+                      <p className="text-sm text-stone leading-relaxed font-medium">
+                        Geographic coverage area for location research
+                      </p>
+                    </div>
+                  </td>
+                  {plans.map((plan) => (
+                    <td key={plan.name} className="px-6 py-4 text-center">
+                      <span className="text-base font-semibold text-charcoal">
+                        {plan.radius}
+                      </span>
+                    </td>
+                  ))}
+                </tr>
+
+                {/* Contact Information */}
+                <tr className="hover:bg-gray-50 transition-colors duration-150">
+                  <td className="px-6 py-4">
+                    <div className="max-w-md">
+                      <h5 className="text-base font-bold text-charcoal mb-2">
+                        Contact Information
+                      </h5>
+                      <p className="text-sm text-stone leading-relaxed font-medium">
+                        Business contact details and decision maker information
+                      </p>
+                    </div>
+                  </td>
+                  {plans.map((plan) => (
+                    <td key={plan.name} className="px-6 py-4 text-center">
+                      <span className="text-base font-semibold text-bronze">
+                        ✓ Included
+                      </span>
+                    </td>
+                  ))}
+                </tr>
+
+                {/* Email Addresses */}
+                <tr className="hover:bg-gray-50 transition-colors duration-150">
+                  <td className="px-6 py-4">
+                    <div className="max-w-md">
+                      <h5 className="text-base font-bold text-charcoal mb-2">
+                        Email Addresses
+                      </h5>
+                      <p className="text-sm text-stone leading-relaxed font-medium">
+                        Email contacts for decision makers when available
+                      </p>
+                    </div>
+                  </td>
+                  {plans.map((plan) => (
+                    <td key={plan.name} className="px-6 py-4 text-center">
+                      <span className={`text-base font-semibold ${
+                        plan.name === 'Basic' ? 'text-gray-500' : 'text-bronze'
+                      }`}>
+                        {plan.name === 'Basic' ? '—' : '✓ Included'}
+                      </span>
+                    </td>
+                  ))}
+                </tr>
+
+                {/* Vending eCourse */}
+                <tr className="hover:bg-gray-50 transition-colors duration-150">
+                  <td className="px-6 py-4">
+                    <div className="max-w-md">
+                      <h5 className="text-base font-bold text-charcoal mb-2">
+                        Vending eCourse
+                      </h5>
+                      <p className="text-sm text-stone leading-relaxed font-medium">
+                        Comprehensive vending business course with templates
+                      </p>
+                    </div>
+                  </td>
+                  {plans.map((plan) => (
+                    <td key={plan.name} className="px-6 py-4 text-center">
+                      <span className={`text-base font-semibold ${
+                        ['Start', 'Gold'].includes(plan.name) ? 'text-bronze' : 'text-gray-500'
+                      }`}>
+                        {['Start', 'Gold'].includes(plan.name) ? '✓ Included' : '—'}
+                      </span>
+                    </td>
+                  ))}
+                </tr>
+
+                {/* Cold Call Scripts */}
+                <tr className="hover:bg-gray-50 transition-colors duration-150">
+                  <td className="px-6 py-4">
+                    <div className="max-w-md">
+                      <h5 className="text-base font-bold text-charcoal mb-2">
+                        Cold Call Scripts
+                      </h5>
+                      <p className="text-sm text-stone leading-relaxed font-medium">
+                        Professional scripts for contacting business owners
+                      </p>
+                    </div>
+                  </td>
+                  {plans.map((plan) => (
+                    <td key={plan.name} className="px-6 py-4 text-center">
+                      <span className={`text-base font-semibold ${
+                        ['Start', 'Gold'].includes(plan.name) ? 'text-bronze' : 'text-gray-500'
+                      }`}>
+                        {['Start', 'Gold'].includes(plan.name) ? '✓ Included' : '—'}
+                      </span>
+                    </td>
+                  ))}
+                </tr>
+
+                {/* Contract Templates */}
+                <tr className="hover:bg-gray-50 transition-colors duration-150">
+                  <td className="px-6 py-4">
+                    <div className="max-w-md">
+                      <h5 className="text-base font-bold text-charcoal mb-2">
+                        Contract Templates
+                      </h5>
+                      <p className="text-sm text-stone leading-relaxed font-medium">
+                        Legal document templates for vending agreements
+                      </p>
+                    </div>
+                  </td>
+                  {plans.map((plan) => (
+                    <td key={plan.name} className="px-6 py-4 text-center">
+                      <span className={`text-base font-semibold ${
+                        ['Start', 'Gold'].includes(plan.name) ? 'text-bronze' : 'text-gray-500'
+                      }`}>
+                        {['Start', 'Gold'].includes(plan.name) ? '✓ Included' : '—'}
+                      </span>
+                    </td>
+                  ))}
+                </tr>
+
+                {/* Business Plan Template */}
+                <tr className="hover:bg-gray-50 transition-colors duration-150">
+                  <td className="px-6 py-4">
+                    <div className="max-w-md">
+                      <h5 className="text-base font-bold text-charcoal mb-2">
+                        Business Plan Template
+                      </h5>
+                      <p className="text-sm text-stone leading-relaxed font-medium">
+                        Professional business plan template for vending operations
+                      </p>
+                    </div>
+                  </td>
+                  {plans.map((plan) => (
+                    <td key={plan.name} className="px-6 py-4 text-center">
+                      <span className={`text-base font-semibold ${
+                        plan.name === 'Gold' ? 'text-bronze' : 'text-gray-500'
+                      }`}>
+                        {plan.name === 'Gold' ? '✓ Included' : '—'}
+                      </span>
+                    </td>
+                  ))}
+                </tr>
+
+                {/* Priority Support */}
+                <tr className="hover:bg-gray-50 transition-colors duration-150">
+                  <td className="px-6 py-4">
+                    <div className="max-w-md">
+                      <h5 className="text-base font-bold text-charcoal mb-2">
+                        Priority Support
+                      </h5>
+                      <p className="text-sm text-stone leading-relaxed font-medium">
+                        Faster response times and dedicated assistance
+                      </p>
+                    </div>
+                  </td>
+                  {plans.map((plan) => (
+                    <td key={plan.name} className="px-6 py-4 text-center">
+                      <span className={`text-base font-semibold ${
+                        ['Pro', 'Start', 'Gold'].includes(plan.name) ? 'text-bronze' : 'text-gray-500'
+                      }`}>
+                        {['Pro', 'Start', 'Gold'].includes(plan.name) ? '✓ Included' : '—'}
+                      </span>
+                    </td>
+                  ))}
+                </tr>
+
+                {/* Account Manager */}
+                <tr className="hover:bg-gray-50 transition-colors duration-150">
+                  <td className="px-6 py-4">
+                    <div className="max-w-md">
+                      <h5 className="text-base font-bold text-charcoal mb-2">
+                        Dedicated Account Manager
+                      </h5>
+                      <p className="text-sm text-stone leading-relaxed font-medium">
+                        Personal account manager for Gold plan customers
+                      </p>
+                    </div>
+                  </td>
+                  {plans.map((plan) => (
+                    <td key={plan.name} className="px-6 py-4 text-center">
+                      <span className={`text-base font-semibold ${
+                        plan.name === 'Gold' ? 'text-bronze' : 'text-gray-500'
+                      }`}>
+                        {plan.name === 'Gold' ? '✓ Included' : '—'}
+                      </span>
+                    </td>
+                  ))}
+                </tr>
               </tbody>
               
               {/* CTA Row */}
