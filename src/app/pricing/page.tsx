@@ -293,17 +293,12 @@ export default function Pricing() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.6 }}
                 viewport={{ once: true }}
-                className="mt-6 sm:mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 text-center px-4 sm:px-0"
+                className="mt-6 sm:mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 text-center px-4 sm:px-0"
               >
                 <div className="text-white/80">
                   <div className="text-xl sm:text-2xl mb-2">📚</div>
                   <div className="font-semibold text-white text-sm sm:text-base">10+ Modules</div>
                   <div className="text-xs sm:text-sm">Comprehensive Coverage</div>
-                </div>
-                <div className="text-white/80">
-                  <div className="text-xl sm:text-2xl mb-2">⏱️</div>
-                  <div className="font-semibold text-white text-sm sm:text-base">8+ Hours</div>
-                  <div className="text-xs sm:text-sm">Video Content</div>
                 </div>
                 <div className="text-white/80">
                   <div className="text-xl sm:text-2xl mb-2">💎</div>
