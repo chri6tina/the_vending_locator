@@ -82,15 +82,15 @@ export default function HotLeads() {
   }
 
   return (
-    <div id="packages" className="bg-warm-white py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <div id="packages" className="bg-warm-white py-16 sm:py-24 lg:py-32">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-3xl font-playfair font-bold tracking-tight text-charcoal sm:text-4xl"
+            className="text-2xl sm:text-3xl lg:text-4xl font-playfair font-bold tracking-tight text-charcoal px-4 sm:px-0"
           >
             Hot Location Leads
           </motion.h2>
@@ -99,7 +99,7 @@ export default function HotLeads() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
-            className="mt-6 text-lg leading-8 text-stone"
+            className="mt-4 sm:mt-6 text-base sm:text-lg leading-7 sm:leading-8 text-stone px-4 sm:px-0"
           >
             Get qualified vending machine locations delivered to your inbox. No monthly fees, just results.
           </motion.p>
@@ -110,7 +110,7 @@ export default function HotLeads() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
           viewport={{ once: true }}
-          className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2 xl:grid-cols-4"
+          className="mt-12 sm:mt-16 grid grid-cols-1 gap-6 sm:gap-8 lg:grid-cols-2 xl:grid-cols-4"
         >
           {packages.map((packageData, index) => (
             <motion.div
@@ -119,7 +119,7 @@ export default function HotLeads() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1 * index }}
               viewport={{ once: true }}
-              className={`relative bg-white rounded-2xl shadow-lg border-2 p-8 flex flex-col h-full ${
+              className={`relative bg-white rounded-2xl shadow-lg border-2 p-6 sm:p-8 flex flex-col h-full ${
                 packageData.popular
                   ? 'border-navy scale-105'
                   : 'border-gray-200 hover:border-navy/50'
@@ -127,29 +127,29 @@ export default function HotLeads() {
             >
               {packageData.popular && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <span className="bg-navy text-white px-4 py-2 rounded-full text-sm font-semibold">
+                  <span className="bg-navy text-white px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-semibold">
                     Most Popular
                   </span>
                 </div>
               )}
 
               <div className="text-center flex-1">
-                <h3 className="text-2xl font-playfair font-bold text-charcoal mb-2">
+                <h3 className="text-xl sm:text-2xl font-playfair font-bold text-charcoal mb-2 sm:mb-3 leading-tight">
                   {packageData.name}
                 </h3>
-                <div className="text-4xl font-playfair font-bold text-bronze mb-2">
+                <div className="text-3xl sm:text-4xl font-playfair font-bold text-bronze mb-2 sm:mb-3">
                   {packageData.price}
                 </div>
-                <div className="text-lg font-semibold text-navy mb-4">
+                <div className="text-base sm:text-lg font-semibold text-navy mb-3 sm:mb-4">
                   {packageData.location}
                 </div>
-                <p className="text-stone mb-6">{packageData.description}</p>
+                <p className="text-sm sm:text-base text-stone mb-4 sm:mb-6 leading-relaxed">{packageData.description}</p>
 
-                <ul className="space-y-3 mb-8 text-left">
+                <ul className="space-y-2 sm:space-y-3 mb-6 sm:mb-8 text-left">
                   {packageData.features.map((feature) => (
                     <li key={feature} className="flex items-start">
-                      <CheckIcon className="h-5 w-5 text-bronze mt-0.5 mr-3 flex-shrink-0" />
-                      <span className="text-stone">{feature}</span>
+                      <CheckIcon className="h-4 w-4 sm:h-5 sm:w-5 text-bronze mt-0.5 mr-2 sm:mr-3 flex-shrink-0" />
+                      <span className="text-sm sm:text-base text-stone leading-relaxed">{feature}</span>
                     </li>
                   ))}
                 </ul>
@@ -158,7 +158,7 @@ export default function HotLeads() {
               <div className="mt-auto">
                 <button
                   onClick={() => handlePackageClick(packageData)}
-                  className={`w-full py-3 px-6 rounded-lg font-semibold transition-all duration-200 ${
+                  className={`w-full py-3 sm:py-4 px-4 sm:px-6 rounded-lg font-semibold transition-all duration-200 text-sm sm:text-base ${
                     packageData.popular
                       ? 'bg-navy text-white hover:bg-navy-light'
                       : 'bg-charcoal text-white hover:bg-opacity-90'
@@ -176,9 +176,9 @@ export default function HotLeads() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
           viewport={{ once: true }}
-          className="mt-16 text-center"
+          className="mt-12 sm:mt-16 text-center px-4 sm:px-0"
         >
-          <p className="text-stone">
+          <p className="text-sm sm:text-base text-stone">
             Need a custom package?{' '}
             <a href="/contact" className="font-semibold text-navy hover:text-navy-light">
               Contact us

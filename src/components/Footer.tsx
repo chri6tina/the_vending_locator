@@ -42,7 +42,7 @@ const navigation = {
 export default function Footer() {
   return (
     <footer className="bg-charcoal">
-      <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
+      <div className="mx-auto max-w-7xl overflow-hidden px-4 sm:px-6 py-16 sm:py-20 lg:py-24 lg:px-8">
         <nav className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12" aria-label="Footer">
           {navigation.main.map((item) => (
             <div key={item.name} className="pb-6">
@@ -53,21 +53,21 @@ export default function Footer() {
           ))}
         </nav>
         
-        <div className="mt-10 flex justify-center space-x-10">
+        <div className="mt-8 sm:mt-10 flex justify-center space-x-8 sm:space-x-10">
           {navigation.social.map((item) => (
             <Link key={item.name} href={item.href} className="text-white hover:text-navy-light transition-colors">
               <span className="sr-only">{item.name}</span>
-              <item.icon className="h-6 w-6" aria-hidden="true" />
+              <item.icon className="h-5 w-5 sm:h-6 sm:w-6" aria-hidden="true" />
             </Link>
           ))}
         </div>
         
-        <div className="mt-10 border-t border-white/20 pt-10">
-          <div className="text-center">
+        <div className="mt-8 sm:mt-10 border-t border-white/20 pt-8 sm:pt-10">
+          <div className="text-center px-4 sm:px-0">
             <p className="text-sm leading-5 text-white">
               &copy; 2024 The Vending Locator. All rights reserved.
             </p>
-            <div className="mt-4 text-sm text-white/90">
+            <div className="mt-3 sm:mt-4 text-sm text-white/90">
               <p>Jacksonville, Florida</p>
               <p className="mt-1">Trusted by 3,000+ vending operators nationwide</p>
             </div>

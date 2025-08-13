@@ -82,13 +82,13 @@ export default function Hero() {
 
   return (
     <div className="bg-warm-white">
-      <div className="mx-auto max-w-2xl py-16 sm:py-24 lg:py-32">
+      <div className="mx-auto max-w-2xl px-4 sm:px-6 py-12 sm:py-16 lg:py-24">
         <div className="text-center">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-4xl font-playfair font-bold tracking-tight text-charcoal sm:text-6xl"
+            className="text-3xl sm:text-4xl lg:text-6xl font-playfair font-bold tracking-tight text-charcoal leading-tight"
           >
             Qualified Vending Location Leads
           </motion.h1>
@@ -97,131 +97,117 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="mt-6 text-lg leading-8 text-stone"
+            className="mt-4 sm:mt-6 text-base sm:text-lg leading-7 sm:leading-8 text-stone px-2 sm:px-0"
           >
-            Get qualified vending machine locations delivered to your inbox. 
-            No monthly fees, just results.
+            Get pre-qualified vending machine locations delivered to your inbox. 
+            No monthly fees, just results that help you grow your vending business.
           </motion.p>
 
-          {/* Trust Signals */}
+          {/* Trust Signals - Mobile Optimized */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="mt-8 flex flex-wrap justify-center gap-3"
+            className="mt-6 sm:mt-8"
           >
-            {trustSignals.map((signal, index) => (
-              <div
-                key={signal.text}
-                className="inline-flex items-center gap-2 bg-navy/10 rounded-full px-3 py-1.5 text-sm font-medium text-navy"
-              >
-                <signal.icon className="h-4 w-4" />
-                {signal.text}
-              </div>
-            ))}
+            <div className="grid grid-cols-2 gap-3 sm:gap-4 max-w-md mx-auto">
+              {trustSignals.map((signal, index) => (
+                <div key={signal.text} className="flex items-center justify-center space-x-2 bg-white/60 backdrop-blur-sm rounded-lg p-3 sm:p-4 border border-gray-200/50">
+                  <signal.icon className={`h-4 w-4 sm:h-5 sm:w-5 ${signal.color} flex-shrink-0`} />
+                  <span className="text-xs sm:text-sm font-medium text-charcoal text-center leading-tight">
+                    {signal.text}
+                  </span>
+                </div>
+              ))}
+            </div>
           </motion.div>
 
-          {/* Active Users Counter */}
+          {/* CTA Buttons - Mobile Optimized */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="mt-6"
-          >
-            <div className="inline-flex items-center gap-2 bg-bronze/10 rounded-full px-4 py-2">
-              <div className="w-2 h-2 bg-bronze rounded-full animate-pulse"></div>
-              <span className="text-sm font-medium text-bronze">
-                {activeUsers} users buying leads right now
-              </span>
-            </div>
-          </motion.div>
-          
-          {/* Call-to-Action Buttons */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.8 }}
-            className="mt-10 flex items-center justify-center gap-x-6"
+            className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 px-4 sm:px-0"
           >
             <Link
               href="/hot-leads"
-              className="btn-primary text-lg px-8 py-4"
+              className="w-full sm:w-auto btn-primary text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-lg"
             >
               Get Hot Leads
             </Link>
             <Link
               href="/pricing"
-              className="text-lg font-semibold leading-6 text-charcoal hover:text-navy transition-colors"
+              className="w-full sm:w-auto text-base sm:text-lg font-semibold leading-6 text-charcoal hover:text-navy transition-colors text-center py-3 sm:py-4"
             >
               View Pricing <span aria-hidden="true">→</span>
             </Link>
           </motion.div>
 
-          {/* Social Proof - No box, just text */}
+          {/* Social Proof - Mobile Optimized */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1.0 }}
-            className="mt-8"
+            transition={{ duration: 0.8, delay: 0.8 }}
+            className="mt-8 sm:mt-10 px-4 sm:px-0"
           >
-            <div className="flex justify-center mb-2">
+            <div className="flex justify-center mb-3 sm:mb-4">
               <div className="flex -space-x-2">
                 {[...Array(5)].map((_, i) => (
                   <div
                     key={i}
-                    className="w-8 h-8 rounded-full bg-gradient-to-br from-navy to-charcoal border-2 border-white shadow-sm"
+                    className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gradient-to-br from-navy to-charcoal border-2 border-white shadow-sm"
                   />
                 ))}
               </div>
             </div>
-            <div className="text-center mb-2">
-              <span className="text-sm font-medium text-charcoal">Join 2,847+ vending operators</span>
+            <div className="text-center mb-2 sm:mb-3">
+              <span className="text-sm sm:text-base font-medium text-charcoal">Join 2,847+ vending operators</span>
             </div>
             <div className="text-center">
-              <span className="text-xs text-stone">
-                "Found my best location in 3 days!" - <span className="font-semibold">Mike R., Texas</span>
+              <span className="text-xs sm:text-sm text-stone px-4 sm:px-0">
+                &ldquo;Found my best location in 3 days!&rdquo; - <span className="font-semibold">Mike R., Texas</span>
               </span>
             </div>
           </motion.div>
 
-          {/* Stats Grid - More compact */}
+          {/* Stats Grid - Mobile Optimized */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1.2 }}
-            className="mt-12 grid grid-cols-3 gap-6"
+            transition={{ duration: 0.8, delay: 1.0 }}
+            className="mt-10 sm:mt-12 grid grid-cols-3 gap-4 sm:gap-6 px-4 sm:px-0"
           >
             {stats.map((stat, index) => (
               <div key={stat.id} className="text-center">
-                <div className="text-2xl font-bold text-bronze">
+                <div className="text-xl sm:text-2xl font-bold text-bronze">
                   {index === 2 ? counts[index].toFixed(1) : Math.floor(counts[index])}{stat.suffix}
                 </div>
-                <div className="text-sm text-stone">{stat.name}</div>
+                <div className="text-xs sm:text-sm text-stone leading-tight">{stat.name}</div>
               </div>
             ))}
           </motion.div>
 
-          {/* Vending Business Guide Promo */}
+          {/* Vending Business Guide Promo - Mobile Optimized */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 1.4 }}
-            className="mt-16 mb-4"
+            transition={{ duration: 0.8, delay: 1.2 }}
+            className="mt-12 sm:mt-16 mb-4 px-4 sm:px-0"
           >
-            <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-200">
+            <div className="bg-white rounded-xl p-4 sm:p-6 shadow-sm border border-gray-200">
               <div className="text-center">
-                <h3 className="text-lg font-semibold text-charcoal mb-2">
+                <h3 className="text-base sm:text-lg font-semibold text-charcoal mb-2 sm:mb-3">
                   Looking for a How-to-Start Guide?
                 </h3>
-                <p className="text-sm text-stone mb-4">
-                  Get our comprehensive guide: "How to Start a Vending Machine Company in 2025" 
+                <p className="text-sm text-stone mb-4 leading-relaxed">
+                  Get our comprehensive guide: &ldquo;How to Start a Vending Machine Company in 2025&rdquo; 
                   with scripts, legal templates, and supplier discounts.
                 </p>
                 <a
                   href="https://vendflow.gumroad.com/l/rxbzy"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-navy hover:bg-navy-light text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+                  className="inline-flex items-center gap-2 bg-navy hover:bg-navy-light text-white px-4 py-3 rounded-lg text-sm font-medium transition-colors w-full sm:w-auto justify-center"
                 >
                   <span>Get the Guide</span>
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
