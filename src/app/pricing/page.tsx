@@ -264,7 +264,8 @@ export default function Pricing() {
                 className="text-base sm:text-xl leading-7 sm:leading-8 text-white/90 mb-6 sm:mb-8 max-w-3xl mx-auto px-4 sm:px-0"
               >
                 Master the fundamentals of vending machine business with our comprehensive course. 
-                Learn location research, contract negotiation, machine selection, and profit optimization.
+                Learn location research, contract negotiation, machine selection, and profit optimization. 
+                Includes cold call scripts, legal document templates, and business guidance.
               </motion.p>
               
               <motion.div
@@ -283,7 +284,7 @@ export default function Pricing() {
                   🚀 Get the Course Now
                 </a>
                 <div className="text-white/70 text-xs sm:text-sm">
-                  <span className="font-semibold text-coral">$97</span> • Digital Download • Lifetime Updates
+                  <span className="font-semibold text-coral">$79</span> • Digital Download • Lifetime Updates
                 </div>
               </motion.div>
               
@@ -296,7 +297,7 @@ export default function Pricing() {
               >
                 <div className="text-white/80">
                   <div className="text-xl sm:text-2xl mb-2">📚</div>
-                  <div className="font-semibold text-white text-sm sm:text-base">12 Modules</div>
+                  <div className="font-semibold text-white text-sm sm:text-base">10+ Modules</div>
                   <div className="text-xs sm:text-sm">Comprehensive Coverage</div>
                 </div>
                 <div className="text-white/80">
@@ -307,7 +308,7 @@ export default function Pricing() {
                 <div className="text-white/80">
                   <div className="text-xl sm:text-2xl mb-2">💎</div>
                   <div className="font-semibold text-white text-sm sm:text-base">Bonus</div>
-                  <div className="text-xs sm:text-sm">Templates & Scripts</div>
+                  <div className="text-xs sm:text-sm">Scripts & Legal Docs</div>
                 </div>
               </motion.div>
             </motion.div>
