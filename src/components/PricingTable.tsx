@@ -98,47 +98,18 @@ const features: Array<{
     values: ['—', '—', '✓ Included', '✓ Included'],
   },
   {
-    name: 'Supplier List',
-    description: 'Access to our curated list of reliable vending machine suppliers and product vendors.',
+    name: 'Contract Templates',
+    description: 'Professional contract templates to secure your vending machine placements with confidence.',
     values: ['—', '—', '✓ Included', '✓ Included'],
   },
   {
-    section: 'Machine Maintenance',
-  },
-  {
-    name: 'Machine Guidance',
-    description: 'We will help you find the latest and most affordable vending machines.',
-    values: ['—', '—', '✓ Included', '✓ Included'],
-  },
-  {
-    name: 'Technical Help',
-    description: 'We have on hand technicians that are more than eager to help walk you through any technical issues.',
-    values: ['—', '—', '✓ Included', '✓ Included'],
-  },
-  {
-    section: 'Legal',
-  },
-  {
-    name: 'Contract Template',
-    description: 'Safeguard your vending business with a meticulously drafted legal contract template.',
-    values: ['—', '—', '✓ Included', '✓ Included'],
-  },
-  {
-    name: 'Legally Register LLC & EIN',
-    description: 'To open a company bank account, you\'ll require an LLC and EIN Number. We\'ll handle the legal formation of your company and obtain both for you. This process typically takes 7-10 business days upon receiving your information.',
+    name: 'Business Plan Template',
+    description: 'A comprehensive business plan template to guide your vending business growth and secure funding.',
     values: ['—', '—', '—', '✓ Included'],
   },
   {
-    name: 'LLC Operating Agreement Template',
-    description: 'Complete template for your LLC operating agreement to ensure proper business structure.',
-    values: ['—', '—', '—', '✓ Included'],
-  },
-  {
-    section: 'Digital Presence',
-  },
-  {
-    name: '3-Page Business Website',
-    description: 'Professional website for your vending business including homepage, services page, and contact page with modern design and mobile optimization.',
+    name: 'Priority Support',
+    description: 'Get faster response times and dedicated support for your business needs.',
     values: ['—', '—', '—', '✓ Included'],
   },
 ]
@@ -147,51 +118,115 @@ export default function PricingTable() {
   const { openModal } = useZipCodeModalContext()
 
   const handlePlanClick = (plan: typeof plans[0]) => {
-    openModal({
-      name: plan.name,
-      price: plan.price,
-      description: plan.description,
-      location: plan.location,
-      href: plan.href,
-      type: plan.type,
-    })
+    if (plan.type === 'subscription') {
+      openModal()
+    } else {
+      window.open(plan.href, '_blank')
+    }
   }
 
   return (
-    <div className="bg-white py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl font-playfair font-bold tracking-tight text-charcoal sm:text-4xl">
-            Choose Your Plan
-          </h2>
-          <p className="mt-6 text-lg leading-8 text-stone">
-            Start with our Basic package and upgrade as you grow. All plans include access to qualified vending location leads.
-          </p>
+    <div className="bg-white">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        {/* Mobile Price Cards - Hidden on lg+ screens */}
+        <div className="lg:hidden space-y-6 mb-12">
+          {plans.map((plan) => (
+            <div
+              key={plan.name}
+              className={`relative bg-white rounded-2xl shadow-lg border-2 p-6 ${
+                plan.popular 
+                  ? 'border-navy bg-gradient-to-br from-navy/5 to-blue-50' 
+                  : 'border-gray-200'
+              }`}
+            >
+              {plan.popular && (
+                <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                  <span className="bg-navy text-white px-4 py-1 rounded-full text-sm font-semibold">
+                    Most Popular
+                  </span>
+                </div>
+              )}
+              
+              <div className="text-center mb-6">
+                <h3 className="text-2xl font-bold text-charcoal mb-2">{plan.name}</h3>
+                <div className="mb-4">
+                  <span className="text-4xl font-bold text-navy">{plan.price}</span>
+                  <span className="text-lg text-stone">{plan.period}</span>
+                </div>
+                <p className="text-stone text-sm mb-4">{plan.description}</p>
+                <div className="text-navy font-semibold text-lg">{plan.location}</div>
+              </div>
+
+              {/* Key Features for this plan */}
+              <div className="space-y-3 mb-6">
+                {features.slice(0, 6).map((feature, idx) => {
+                  if (feature.section) return null
+                  const value = feature.values?.[plans.indexOf(plan)]
+                  if (!value || value === '—') return null
+                  
+                  return (
+                    <div key={feature.name} className="flex items-start space-x-3">
+                      <CheckIcon className="h-5 w-5 text-bronze mt-0.5 flex-shrink-0" />
+                      <div>
+                        <div className="text-sm font-medium text-charcoal">{feature.name}</div>
+                        <div className="text-xs text-stone">{feature.description}</div>
+                      </div>
+                    </div>
+                  )
+                })}
+              </div>
+
+              <button
+                onClick={() => handlePlanClick(plan)}
+                className={`w-full py-3 px-6 rounded-lg font-semibold text-white transition-all duration-200 ${
+                  plan.popular
+                    ? 'bg-navy hover:bg-navy-light shadow-lg'
+                    : 'bg-charcoal hover:bg-opacity-90'
+                }`}
+              >
+                Get Started
+              </button>
+            </div>
+          ))}
         </div>
-        
-        {/* Pricing Table */}
-        <div className="mt-16 overflow-hidden rounded-lg border border-gray-200 shadow-sm">
+
+        {/* Desktop Table - Hidden on mobile, visible on lg+ screens */}
+        <div className="hidden lg:block">
           <div className="overflow-x-auto">
-            <table className="min-w-full divide-y divide-stone/20">
-              {/* Header Row */}
-              <thead className="bg-warm-white border-b border-stone/30">
+            <table className="w-full">
+              <thead>
                 <tr>
-                  <th className="px-6 py-6 text-left text-base font-playfair font-bold text-charcoal">
-                    Feature Category
+                  <th className="px-6 py-4 text-left">
+                    <span className="sr-only">Features</span>
                   </th>
                   {plans.map((plan) => (
-                    <th key={plan.name} className="px-6 py-6 text-center">
+                    <th key={plan.name} className="px-6 py-4 text-center">
                       <button
                         onClick={() => handlePlanClick(plan)}
-                        className="block w-full h-full cursor-pointer hover:bg-warm-white/80 transition-colors duration-150 rounded-lg p-2 -m-2"
+                        className="block w-full cursor-pointer hover:bg-gray-50 transition-colors duration-150 rounded-lg p-4 -m-4"
                         title={`Click to get ${plan.name} plan`}
                       >
-                        <div className="flex flex-col items-center">
-                          <h3 className="text-xl font-playfair font-bold text-charcoal mb-2">
+                        {plan.popular && (
+                          <div className="mb-3">
+                            <span className="bg-navy text-white px-3 py-1 rounded-full text-sm font-semibold">
+                              Most Popular
+                            </span>
+                          </div>
+                        )}
+                        <div className="mb-4">
+                          <h3 className="text-2xl font-bold text-charcoal mb-2">
                             {plan.name}
                           </h3>
-                          <p className="text-4xl font-playfair font-bold text-charcoal mb-1">
-                            {plan.price}
+                          <div className="mb-3">
+                            <span className="text-4xl font-bold text-navy">
+                              {plan.price}
+                            </span>
+                            <span className="text-lg text-stone">
+                              {plan.period}
+                            </span>
+                          </div>
+                          <p className="text-stone text-sm mb-3 max-w-[200px] mx-auto">
+                            {plan.description}
                           </p>
                           <p className="text-sm font-medium text-navy">
                             {plan.location}
