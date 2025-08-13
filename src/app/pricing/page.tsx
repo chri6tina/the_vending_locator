@@ -20,7 +20,7 @@ const faqs = [
   },
   {
     question: "How quickly do I receive my location leads?",
-    answer: "Subscription packages provide immediate access to our database. For one-time location packages, delivery typically takes 2-4 weeks depending on the package level."
+    answer: "Subscription packages provide access to our database within 3-5 business days after payment confirmation. We need time to research and qualify locations in your area."
   },
   {
     question: "Are the contact details verified?",
@@ -32,7 +32,7 @@ const faqs = [
   },
   {
     question: "Do you offer refunds?",
-    answer: "We offer a 30-day satisfaction guarantee on all subscription plans. If you're not satisfied, we'll provide a full refund."
+    answer: "Due to the digital nature of our service and the time invested in research, we do not offer refunds. However, we're committed to providing quality leads and will work to ensure your satisfaction."
   },
   {
     question: "Can I cancel my subscription anytime?",
@@ -102,8 +102,8 @@ export default function Pricing() {
   const trustSignals = [
     { icon: CheckBadgeIcon, text: 'Verified Locations', color: 'text-green-600' },
     { icon: StarIcon, text: '4.9/5 Rating', color: 'text-yellow-500' },
-    { icon: ShieldCheckIcon, text: '30-Day Guarantee', color: 'text-blue-600' },
-    { icon: ClockIcon, text: 'Instant Access', color: 'text-purple-600' },
+    { icon: ShieldCheckIcon, text: 'Quality Research', color: 'text-blue-600' },
+    { icon: ClockIcon, text: 'Professional Service', color: 'text-purple-600' },
   ]
 
   // Fluctuating active users counter
@@ -283,7 +283,7 @@ export default function Pricing() {
                   🚀 Get the Course Now
                 </a>
                 <div className="text-white/70 text-xs sm:text-sm">
-                  <span className="font-semibold text-coral">$97</span> • Instant Access • Lifetime Updates
+                  <span className="font-semibold text-coral">$97</span> • Digital Download • Lifetime Updates
                 </div>
               </motion.div>
               

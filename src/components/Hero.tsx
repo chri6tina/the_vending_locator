@@ -14,8 +14,8 @@ const stats = [
 const trustSignals = [
   { icon: CheckBadgeIcon, text: 'Verified Locations', color: 'text-green-600' },
   { icon: StarIcon, text: '4.9/5 Rating', color: 'text-yellow-500' },
-  { icon: ShieldCheckIcon, text: 'Money-Back Guarantee', color: 'text-blue-600' },
-  { icon: ClockIcon, text: '24hr Delivery', color: 'text-purple-600' },
+  { icon: ShieldCheckIcon, text: 'Secure & Reliable', color: 'text-blue-600' },
+  { icon: ClockIcon, text: 'Quality Research', color: 'text-purple-600' },
 ]
 
 export default function Hero() {

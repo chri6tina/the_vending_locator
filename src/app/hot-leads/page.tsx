@@ -30,8 +30,8 @@ export default function HotLeadsPage() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="mt-6 text-lg leading-8 text-stone"
             >
-              Get qualified vending machine locations delivered to your inbox within 24-72 hours. 
-              No monthly fees, no waiting lists - just immediate access to pre-verified business locations.
+              Get qualified vending machine locations delivered to your inbox within 3-5 business days. 
+              No monthly fees, no waiting lists - just quality research and pre-verified business locations.
             </motion.p>
 
             <motion.div
