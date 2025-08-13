@@ -2,6 +2,8 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 import { CheckIcon, StarIcon, ArrowRightIcon, PlayIcon, DocumentTextIcon, ChartBarIcon, UserGroupIcon, CurrencyDollarIcon } from '@heroicons/react/24/outline'
 
 export default function GuidePage() {
@@ -138,29 +140,31 @@ export default function GuidePage() {
   ]
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-cream">
+      <Header />
+      
       {/* Hero Section */}
-      <div className="bg-gradient-to-br from-navy via-navy/95 to-blue-900 text-white">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 sm:py-28 lg:py-36">
+      <div className="bg-white py-20 sm:py-28 lg:py-36">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             {/* Course Badge */}
             <div className="mb-8">
-              <div className="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20">
-                <StarIcon className="w-5 h-5 text-yellow-400 mr-2" />
-                <span className="text-sm font-medium">Complete Vending Business Course</span>
+              <div className="inline-flex items-center px-4 py-2 bg-navy/10 rounded-full border border-navy/20">
+                <StarIcon className="w-5 h-5 text-navy mr-2" />
+                <span className="text-sm font-medium text-navy">Complete Vending Business Course</span>
               </div>
             </div>
 
             {/* Main Heading */}
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-playfair font-bold mb-6 leading-tight">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-playfair font-bold text-chocolate mb-6 leading-tight">
               Master the Art of
-              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-400">
+              <span className="block text-navy">
                 Vending Machine Business
               </span>
             </h1>
 
             {/* Subtitle */}
-            <p className="text-xl sm:text-2xl text-blue-100 mb-10 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-xl sm:text-2xl text-stone/80 mb-10 max-w-4xl mx-auto leading-relaxed">
               Transform from complete beginner to successful vending entrepreneur with our comprehensive course. 
               Learn location research, contract negotiation, machine selection, and profit optimization strategies.
             </p>
@@ -171,13 +175,13 @@ export default function GuidePage() {
                 href="https://vendflow.gumroad.com/l/rxbzy"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-yellow-400 to-orange-500 text-navy font-bold rounded-xl hover:from-yellow-300 hover:to-orange-400 transition-all duration-300 transform hover:scale-105 shadow-2xl text-lg"
+                className="inline-flex items-center px-8 py-4 bg-navy text-white font-bold rounded-xl hover:bg-navy/90 transition-all duration-300 transform hover:scale-105 shadow-lg text-lg"
               >
                 <PlayIcon className="w-6 h-6 mr-2" />
                 Start Learning Today
                 <ArrowRightIcon className="w-5 h-5 ml-2" />
               </a>
-              <button className="inline-flex items-center px-6 py-4 bg-white/10 backdrop-blur-sm text-white font-semibold rounded-xl hover:bg-white/20 transition-all duration-300 border border-white/20">
+              <button className="inline-flex items-center px-6 py-4 bg-gray-100 text-stone font-semibold rounded-xl hover:bg-gray-200 transition-all duration-300 border border-gray-200">
                 <DocumentTextIcon className="w-5 h-5 mr-2" />
                 Download Course Outline
               </button>
@@ -186,20 +190,20 @@ export default function GuidePage() {
             {/* Course Stats */}
             <div className="grid grid-cols-1 sm:grid-cols-4 gap-6 max-w-4xl mx-auto">
               <div className="text-center">
-                <div className="text-3xl font-bold text-yellow-400">4</div>
-                <div className="text-blue-100 text-sm">Phases</div>
+                <div className="text-3xl font-bold text-navy">4</div>
+                <div className="text-stone/70 text-sm">Phases</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-yellow-400">20+</div>
-                <div className="text-blue-100 text-sm">Modules</div>
+                <div className="text-3xl font-bold text-navy">20+</div>
+                <div className="text-stone/70 text-sm">Modules</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-yellow-400">$1,000+</div>
-                <div className="text-blue-100 text-sm">Bonus Value</div>
+                <div className="text-3xl font-bold text-navy">$1,000+</div>
+                <div className="text-stone/70 text-sm">Bonus Value</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-yellow-400">Lifetime</div>
-                <div className="text-blue-100 text-sm">Access</div>
+                <div className="text-3xl font-bold text-navy">Lifetime</div>
+                <div className="text-stone/70 text-sm">Access</div>
               </div>
             </div>
           </div>
@@ -207,7 +211,7 @@ export default function GuidePage() {
       </div>
 
       {/* Course Overview Section */}
-      <div className="py-20 bg-white">
+      <div className="py-20 bg-cream">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-playfair font-bold text-chocolate mb-6">
@@ -230,7 +234,7 @@ export default function GuidePage() {
                   className={`flex items-center px-6 py-3 mx-2 mb-2 rounded-lg font-medium transition-all duration-300 ${
                     activeTab === tab.id
                       ? 'bg-navy text-white shadow-lg'
-                      : 'bg-gray-100 text-stone hover:bg-gray-200'
+                      : 'bg-white text-stone hover:bg-gray-50 border border-gray-200'
                   }`}
                 >
                   <Icon className="w-5 h-5 mr-2" />
@@ -276,7 +280,7 @@ export default function GuidePage() {
                     </div>
                   </div>
                 </div>
-                <div className="bg-gradient-to-br from-navy/5 to-blue-50 p-8 rounded-2xl border border-navy/20">
+                <div className="bg-white p-8 rounded-2xl border border-gray-200 shadow-lg">
                   <h4 className="text-xl font-bold text-navy mb-4">What You'll Achieve</h4>
                   <div className="space-y-3">
                     <div className="flex items-center text-sm">
@@ -303,7 +307,7 @@ export default function GuidePage() {
             {activeTab === 'curriculum' && (
               <div className="space-y-8">
                 {curriculumSections.map((section, index) => (
-                  <div key={index} className="bg-gray-50 rounded-2xl p-8 border border-gray-200">
+                  <div key={index} className="bg-white rounded-2xl p-8 border border-gray-200 shadow-lg">
                     <div className="flex items-center mb-6">
                       <div className="w-12 h-12 bg-navy text-white rounded-full flex items-center justify-center font-bold text-xl mr-4">
                         {index + 1}
@@ -371,7 +375,7 @@ export default function GuidePage() {
       </div>
 
       {/* Investment Section */}
-      <div className="py-20 bg-gradient-to-br from-navy/5 to-blue-50">
+      <div className="py-20 bg-white">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-playfair font-bold text-chocolate mb-6">
             Your Investment in Success
@@ -380,7 +384,7 @@ export default function GuidePage() {
             This course represents a fraction of what you'd pay for business consulting or the cost of learning through expensive mistakes.
           </p>
           
-          <div className="bg-white rounded-2xl p-8 shadow-xl border border-navy/20">
+          <div className="bg-cream rounded-2xl p-8 shadow-xl border border-gray-200">
             <div className="mb-6">
               <span className="text-4xl font-bold text-navy">$79</span>
               <span className="text-xl text-stone/60 ml-2">one-time payment</span>
@@ -395,7 +399,7 @@ export default function GuidePage() {
               href="https://vendflow.gumroad.com/l/rxbzy"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-navy to-blue-700 text-white font-bold rounded-xl hover:from-navy/90 hover:to-blue-600 transition-all duration-300 transform hover:scale-105 shadow-lg text-lg"
+              className="inline-flex items-center px-8 py-4 bg-navy text-white font-bold rounded-xl hover:bg-navy/90 transition-all duration-300 transform hover:scale-105 shadow-lg text-lg"
             >
               <CurrencyDollarIcon className="w-6 h-6 mr-2" />
               Invest in Your Future
@@ -406,7 +410,7 @@ export default function GuidePage() {
       </div>
 
       {/* FAQ Section */}
-      <div className="py-20 bg-white">
+      <div className="py-20 bg-cream">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-playfair font-bold text-chocolate mb-6">
@@ -419,7 +423,7 @@ export default function GuidePage() {
           
           <div className="space-y-6">
             {faqs.map((faq, index) => (
-              <div key={index} className="bg-gray-50 rounded-xl p-6">
+              <div key={index} className="bg-white rounded-xl p-6 shadow-lg border border-gray-200">
                 <h3 className="text-lg font-semibold text-chocolate mb-3">{faq.question}</h3>
                 <p className="text-stone/70">{faq.answer}</p>
               </div>
@@ -442,7 +446,7 @@ export default function GuidePage() {
               href="https://vendflow.gumroad.com/l/rxbzy"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-yellow-400 to-orange-500 text-navy font-bold rounded-xl hover:from-yellow-300 hover:to-orange-400 transition-all duration-300 transform hover:scale-105 shadow-2xl text-lg"
+              className="inline-flex items-center px-8 py-4 bg-coral text-white font-bold rounded-xl hover:bg-coral/90 transition-all duration-300 transform hover:scale-105 shadow-lg text-lg"
             >
               <PlayIcon className="w-6 h-6 mr-2" />
               Get Started Today
@@ -460,6 +464,8 @@ export default function GuidePage() {
           </p>
         </div>
       </div>
-    </div>
+
+      <Footer />
+    </main>
   )
 }
