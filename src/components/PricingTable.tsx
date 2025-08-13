@@ -15,6 +15,16 @@ const plans = [
     popular: false,
     href: 'https://buy.stripe.com/aEU2929ZcfvQ10IdQT',
     type: 'subscription' as const,
+    deliveryTime: '5 Days',
+    radius: '15 miles',
+    features: [
+      '50+ qualified locations per month',
+      'Basic lead details (name, phone, address)',
+      '15-mile radius search',
+      '5-day delivery',
+      'Email support',
+      'Monthly database access'
+    ]
   },
   {
     name: 'Pro',
@@ -25,6 +35,16 @@ const plans = [
     popular: false,
     href: 'https://buy.stripe.com/4gwaFyfjw1F0gZG004',
     type: 'subscription' as const,
+    deliveryTime: '3 Days',
+    radius: '25 miles',
+    features: [
+      '100+ qualified locations per month',
+      'Enhanced lead details with email addresses',
+      '25-mile radius search',
+      '3-day delivery',
+      'Priority support',
+      'Monthly database access'
+    ]
   },
   {
     name: 'Start',
@@ -35,6 +55,19 @@ const plans = [
     popular: true,
     href: 'https://buy.stripe.com/3cs8xq2wKdnI6l24gl',
     type: 'subscription' as const,
+    deliveryTime: '3 Days',
+    radius: '25 miles',
+    features: [
+      '200+ qualified locations per month',
+      'Complete lead details with email addresses',
+      '25-mile radius search',
+      '3-day delivery',
+      'Vending eCourse included',
+      'Cold call & email scripts',
+      'Contract templates',
+      'Priority support',
+      'Monthly database access'
+    ]
   },
   {
     name: 'Gold',
@@ -45,6 +78,21 @@ const plans = [
     popular: false,
     href: 'https://buy.stripe.com/dR614Y4ESgzU6l25kq',
     type: 'subscription' as const,
+    deliveryTime: '3 Days',
+    radius: '25 miles',
+    features: [
+      '200+ qualified locations per month',
+      'Complete lead details with email addresses',
+      '25-mile radius search',
+      '3-day delivery',
+      'Vending eCourse included',
+      'Cold call & email scripts',
+      'Contract templates',
+      'Business plan template',
+      'Priority support',
+      'Dedicated account manager',
+      'Monthly database access'
+    ]
   },
 ]
 
@@ -118,11 +166,15 @@ export default function PricingTable() {
   const { openModal } = useZipCodeModalContext()
 
   const handlePlanClick = (plan: typeof plans[0]) => {
-    if (plan.type === 'subscription') {
-      openModal()
-    } else {
-      window.open(plan.href, '_blank')
-    }
+    // Open modal with plan details for subscription plans
+    openModal({
+      name: plan.name,
+      price: plan.price,
+      description: plan.description,
+      location: plan.location,
+      href: plan.href,
+      type: plan.type,
+    })
   }
 
   return (
@@ -154,26 +206,29 @@ export default function PricingTable() {
                   <span className="text-lg text-stone">{plan.period}</span>
                 </div>
                 <p className="text-stone text-sm mb-4">{plan.description}</p>
-                <div className="text-navy font-semibold text-lg">{plan.location}</div>
+                <div className="text-navy font-semibold text-lg mb-3">{plan.location}</div>
+                
+                {/* Key stats */}
+                <div className="flex justify-center gap-4 text-sm">
+                  <div className="text-stone">
+                    <span className="font-semibold text-navy">{plan.deliveryTime}</span> delivery
+                  </div>
+                  <div className="text-stone">
+                    <span className="font-semibold text-navy">{plan.radius}</span> radius
+                  </div>
+                </div>
               </div>
 
-              {/* Key Features for this plan */}
+              {/* Features for this plan */}
               <div className="space-y-3 mb-6">
-                {features.slice(0, 6).map((feature, idx) => {
-                  if (feature.section) return null
-                  const value = feature.values?.[plans.indexOf(plan)]
-                  if (!value || value === '—') return null
-                  
-                  return (
-                    <div key={feature.name} className="flex items-start space-x-3">
-                      <CheckIcon className="h-5 w-5 text-bronze mt-0.5 flex-shrink-0" />
-                      <div>
-                        <div className="text-sm font-medium text-charcoal">{feature.name}</div>
-                        <div className="text-xs text-stone">{feature.description}</div>
-                      </div>
+                {plan.features.map((feature, idx) => (
+                  <div key={idx} className="flex items-start space-x-3">
+                    <CheckIcon className="h-5 w-5 text-bronze mt-0.5 flex-shrink-0" />
+                    <div>
+                      <div className="text-sm font-medium text-charcoal">{feature}</div>
                     </div>
-                  )
-                })}
+                  </div>
+                ))}
               </div>
 
               <button
@@ -228,9 +283,13 @@ export default function PricingTable() {
                           <p className="text-stone text-sm mb-3 max-w-[200px] mx-auto">
                             {plan.description}
                           </p>
-                          <p className="text-sm font-medium text-navy">
+                          <p className="text-sm font-medium text-navy mb-2">
                             {plan.location}
                           </p>
+                          <div className="text-xs text-stone space-y-1">
+                            <div>📦 {plan.deliveryTime} delivery</div>
+                            <div>📍 {plan.radius} radius</div>
+                          </div>
                         </div>
                       </button>
                     </th>
