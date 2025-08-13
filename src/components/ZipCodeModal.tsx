@@ -125,18 +125,18 @@ export default function ZipCodeModal({ isOpen, onClose, package: selectedPackage
           />
           
           {/* Modal */}
-          <div className="flex min-h-full items-center justify-center p-4">
+          <div className="flex min-h-full items-center justify-center p-3 sm:p-4">
             <motion.div
               initial={{ opacity: 0, scale: 0.95, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: 20 }}
               transition={{ type: "spring", damping: 25, stiffness: 300 }}
-              className="relative w-full max-w-md bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden"
+              className="relative w-full max-w-sm sm:max-w-md bg-white rounded-xl sm:rounded-2xl shadow-xl border border-gray-200 overflow-hidden"
             >
               {/* Header */}
-              <div className="bg-navy px-6 py-4">
+              <div className="bg-navy px-4 sm:px-6 py-3 sm:py-4">
                 <div className="flex items-center justify-between">
-                  <h2 className="text-xl font-playfair font-bold text-white">
+                  <h2 className="text-lg sm:text-xl font-playfair font-bold text-white">
                     Complete Your Purchase
                   </h2>
                   <button
@@ -144,24 +144,24 @@ export default function ZipCodeModal({ isOpen, onClose, package: selectedPackage
                     disabled={isSubmitting}
                     className="text-white/80 hover:text-white transition-colors disabled:opacity-50"
                   >
-                    <XMarkIcon className="h-6 w-6" />
+                    <XMarkIcon className="h-5 w-5 sm:h-6 sm:w-6" />
                   </button>
                 </div>
-                <p className="text-white/90 text-sm mt-1">
+                <p className="text-white/90 text-xs sm:text-sm mt-1">
                   Enter your details to get started with {selectedPackage.name}
                 </p>
               </div>
 
               {/* Package Summary */}
-              <div className="bg-warm-white px-6 py-4 border-b border-stone/20">
+              <div className="bg-warm-white px-4 sm:px-6 py-3 sm:py-4 border-b border-stone/20">
                 <div className="flex items-center justify-between">
                   <div>
-                    <h3 className="font-semibold text-charcoal">{selectedPackage.name}</h3>
-                    <p className="text-sm text-stone">{selectedPackage.description}</p>
-                    <p className="text-sm font-medium text-navy mt-1">{selectedPackage.location}</p>
+                    <h3 className="font-semibold text-charcoal text-sm sm:text-base">{selectedPackage.name}</h3>
+                    <p className="text-xs sm:text-sm text-stone">{selectedPackage.description}</p>
+                    <p className="text-xs sm:text-sm font-medium text-navy mt-1">{selectedPackage.location}</p>
                   </div>
                   <div className="text-right">
-                    <div className="text-2xl font-bold text-bronze">{selectedPackage.price}</div>
+                    <div className="text-xl sm:text-2xl font-bold text-bronze">{selectedPackage.price}</div>
                     <div className="text-xs text-stone/70">
                       {selectedPackage.type === 'subscription' ? '/month' : 'one-time'}
                     </div>
@@ -170,59 +170,59 @@ export default function ZipCodeModal({ isOpen, onClose, package: selectedPackage
               </div>
 
               {/* Form */}
-              <form onSubmit={handleSubmit} className="p-6 space-y-6">
+              <form onSubmit={handleSubmit} className="p-4 sm:p-6 space-y-4 sm:space-y-6">
                 {/* Zip Code Input */}
                 <div>
-                  <label htmlFor="zipCode" className="block text-sm font-medium text-charcoal mb-2">
+                  <label htmlFor="zipCode" className="block text-xs sm:text-sm font-medium text-charcoal mb-1 sm:mb-2">
                     Your Zip Code *
                   </label>
                   <div className="relative">
-                    <MapPinIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-stone" />
+                    <MapPinIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 sm:h-5 sm:w-5 text-stone" />
                     <input
                       type="text"
                       id="zipCode"
                       value={zipCode}
                       onChange={(e) => setZipCode(e.target.value)}
                       placeholder="Enter zip code"
-                      className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-navy focus:border-navy transition-colors ${
+                      className={`w-full pl-8 sm:pl-10 pr-3 sm:pr-4 py-2.5 sm:py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-navy focus:border-navy transition-colors text-sm sm:text-base ${
                         errors.zipCode ? 'border-red-300' : 'border-stone/30'
                       }`}
                       disabled={isSubmitting}
                     />
                   </div>
                   {errors.zipCode && (
-                    <p className="mt-1 text-sm text-red-600">{errors.zipCode}</p>
+                    <p className="mt-1 text-xs sm:text-sm text-red-600">{errors.zipCode}</p>
                   )}
                 </div>
 
                 {/* Email Input */}
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-charcoal mb-2">
+                  <label htmlFor="email" className="block text-xs sm:text-sm font-medium text-charcoal mb-1 sm:mb-2">
                     Email Address *
                   </label>
                   <div className="relative">
-                    <EnvelopeIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-stone" />
+                    <EnvelopeIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 sm:h-5 sm:w-5 text-stone" />
                     <input
                       type="email"
                       id="email"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       placeholder="Enter your email"
-                      className={`w-full pl-10 pr-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-navy focus:border-navy transition-colors ${
+                      className={`w-full pl-8 sm:pl-10 pr-3 sm:pr-4 py-2.5 sm:py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-navy focus:border-navy transition-colors text-sm sm:text-base ${
                         errors.email ? 'border-red-300' : 'border-stone/30'
                       }`}
                       disabled={isSubmitting}
                     />
                   </div>
                   {errors.email && (
-                    <p className="mt-1 text-sm text-red-600">{errors.email}</p>
+                    <p className="mt-1 text-xs sm:text-sm text-red-600">{errors.email}</p>
                   )}
                 </div>
 
                 {/* Benefits */}
-                <div className="bg-warm-white rounded-lg p-4">
-                  <h3 className="font-semibold text-charcoal mb-2">What happens next:</h3>
-                  <ul className="text-sm text-stone space-y-1">
+                <div className="bg-warm-white rounded-lg p-3 sm:p-4">
+                  <h3 className="font-semibold text-charcoal text-sm sm:text-base mb-2">What happens next:</h3>
+                  <ul className="text-xs sm:text-sm text-stone space-y-0.5 sm:space-y-1">
                     <li>• We'll collect your information securely</li>
                     <li>• Redirect you to secure Stripe checkout</li>
                     <li>• Process your payment for {selectedPackage.name}</li>
@@ -234,7 +234,7 @@ export default function ZipCodeModal({ isOpen, onClose, package: selectedPackage
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-navy text-white py-3 px-6 rounded-lg font-semibold hover:bg-navy-light transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                  className="w-full bg-navy text-white py-2.5 sm:py-3 px-4 sm:px-6 rounded-lg font-semibold hover:bg-navy-light transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 text-sm sm:text-base"
                 >
                   {isSubmitting ? (
                     <>
@@ -243,7 +243,7 @@ export default function ZipCodeModal({ isOpen, onClose, package: selectedPackage
                     </>
                   ) : (
                     <>
-                      <CreditCardIcon className="h-5 w-5" />
+                      <CreditCardIcon className="h-4 w-4 sm:h-5 sm:w-5" />
                       Continue to Checkout
                     </>
                   )}
