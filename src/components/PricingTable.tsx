@@ -97,7 +97,16 @@ const plans = [
 ]
 
 export default function PricingTable() {
-  const { openModal } = useZipCodeModalContext()
+  let openModal: (packageData: any) => void = () => {}
+  
+  try {
+    const context = useZipCodeModalContext()
+    openModal = context?.openModal || (() => {})
+  } catch (error) {
+    // Fallback if context is not available
+    openModal = () => {}
+  }
+  
   const [selectedPlan, setSelectedPlan] = useState<string | null>(null)
 
   const handlePlanClick = (plan: typeof plans[0]) => {

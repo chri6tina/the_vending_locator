@@ -1,14 +1,16 @@
 import { Metadata } from 'next'
 import PricingTable from '@/components/PricingTable'
+import HotLeads from '@/components/HotLeads'
+import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
 export const metadata: Metadata = {
-  title: 'Texas Vending Opportunities | The Vending Locator',
-  description: 'Find qualified vending machine locations in Texas. Get access to 500+ verified locations with business details, contact information, and placement opportunities.',
-  keywords: 'Texas vending, vending machine locations, vending opportunities, Texas businesses, vending placement',
+  title: 'Get Vending Machine Leads and Locations in Texas | The Vending Locator',
+  description: 'Get vending machine leads and locations across Texas. Find qualified businesses ready for vending machine placement. Access verified locations with business details and contact information.',
+  keywords: 'Texas vending machine leads, TX vending locations, Texas vending opportunities, vending machine placement Texas, Texas business locations, vending leads Texas',
   openGraph: {
-    title: 'Texas Vending Opportunities | The Vending Locator',
-    description: 'Find qualified vending machine locations in Texas. Get access to 500+ verified locations.',
+    title: 'Get Vending Machine Leads and Locations in Texas',
+    description: 'Find qualified vending machine locations across Texas with verified business details and contact information.',
     url: 'https://thevendinglocator.com/location/texas.html',
   },
 }
@@ -21,11 +23,10 @@ export default function TexasPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl font-playfair font-bold tracking-tight text-white sm:text-6xl">
-              Texas Vending Opportunities
+              Get Vending Machine Leads and Locations in Texas
             </h1>
             <p className="mt-6 text-xl leading-8 text-white/90 max-w-3xl mx-auto">
-              Discover qualified vending machine locations across Texas. From Austin to Houston, 
-              find businesses ready for vending machine placement.
+              Find qualified vending machine placement opportunities across Texas. From major cities to growing suburbs, discover businesses ready for vending machine placement with verified contact information.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <div className="bg-white/20 rounded-full px-6 py-2 text-white text-sm">
@@ -50,7 +51,7 @@ export default function TexasPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div>
-              <div className="text-3xl font-bold text-navy">500+</div>
+              <div className="text-3xl font-bold text-navy">1,000+</div>
               <div className="text-stone">Locations Available</div>
             </div>
             <div>
@@ -68,36 +69,59 @@ export default function TexasPage() {
       {/* Pricing Section */}
       <PricingTable />
 
-      {/* Location Specific Info */}
+      {/* Hot Leads Section */}
+      <HotLeads />
+
+      {/* Vending Course Section */}
+      <VendingCourse />
+
+      {/* City-Specific Content */}
       <div className="py-16 bg-warm-white">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-playfair font-bold text-charcoal">
-              Why Texas for Vending?
+              Why Texas for Vending Machine Placement?
             </h2>
             <p className="mt-4 text-lg text-stone max-w-3xl mx-auto">
-              Texas offers a booming economy, diverse industries, and growing metropolitan areas 
-              perfect for vending machine placement opportunities.
+              Texas offers a diverse business environment with major industries, growing cities, and high-traffic locations perfect for vending machine opportunities.
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-              <h3 className="text-lg font-semibold text-charcoal mb-3">Economic Growth</h3>
+              <h3 className="text-lg font-semibold text-charcoal mb-3">Energy & Oil</h3>
               <p className="text-stone text-sm">
-                Strong business environment with expanding corporate headquarters and tech companies.
+                Major energy companies, oil and gas operations, and related industries with consistent employee traffic and shift workers.
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-              <h3 className="text-lg font-semibold text-charcoal mb-3">Diverse Industries</h3>
+              <h3 className="text-lg font-semibold text-charcoal mb-3">Technology & Innovation</h3>
               <p className="text-stone text-sm">
-                Energy, healthcare, technology, and manufacturing sectors creating multiple opportunities.
+                Tech hubs, startups, and innovation centers with high-tech office environments and creative professionals.
               </p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-              <h3 className="text-lg font-semibold text-charcoal mb-3">Population Growth</h3>
+              <h3 className="text-lg font-semibold text-charcoal mb-3">Healthcare & Medical</h3>
               <p className="text-stone text-sm">
-                Rapidly growing cities with increasing demand for convenient vending solutions.
+                Medical centers, hospitals, and healthcare facilities with staff, patients, and visitor traffic.
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+              <h3 className="text-lg font-semibold text-charcoal mb-3">Manufacturing & Logistics</h3>
+              <p className="text-stone text-sm">
+                Industrial facilities, manufacturing plants, and logistics centers with shift workers and consistent traffic.
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+              <h3 className="text-lg font-semibold text-charcoal mb-3">Education & Research</h3>
+              <p className="text-stone text-sm">
+                Universities, research institutions, and educational facilities with student and faculty traffic.
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+              <h3 className="text-lg font-semibold text-charcoal mb-3">Financial Services</h3>
+              <p className="text-stone text-sm">
+                Banking institutions, investment firms, and financial services with high-traffic office environments and professional staff.
               </p>
             </div>
           </div>

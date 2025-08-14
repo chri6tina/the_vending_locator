@@ -1,7 +1,8 @@
 'use client'
 
-import { motion } from 'framer-motion'
 import Link from 'next/link'
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
 import { MapPinIcon, BuildingStorefrontIcon, UserGroupIcon } from '@heroicons/react/24/outline'
 
 const states = [
@@ -9,63 +10,63 @@ const states = [
     name: 'Texas',
     slug: 'texas',
     cities: [
-      { name: 'Austin', slug: 'austin-texas', vendorCount: '150+', businessCount: '200+' },
-      { name: 'Dallas', slug: 'dallas-texas', vendorCount: '180+', businessCount: '250+' },
-      { name: 'Houston', slug: 'houston-texas', vendorCount: '200+', businessCount: '300+' },
-      { name: 'San Antonio', slug: 'san-antonio-texas', vendorCount: '120+', businessCount: '180+' },
+      { name: 'Austin', slug: 'austin-tx' },
+      { name: 'Dallas', slug: 'dallas-tx' },
+      { name: 'Houston', slug: 'houston-tx' },
+      { name: 'San Antonio', slug: 'san-antonio-tx' },
     ]
   },
   {
     name: 'Florida',
     slug: 'florida',
     cities: [
-      { name: 'Miami', slug: 'miami-florida', vendorCount: '160+', businessCount: '220+' },
-      { name: 'Jacksonville', slug: 'jacksonville-florida', vendorCount: '90+', businessCount: '140+' },
+      { name: 'Miami', slug: 'miami-fl' },
+      { name: 'Jacksonville', slug: 'jacksonville-fl' },
     ]
   },
   {
     name: 'California',
     slug: 'california',
     cities: [
-      { name: 'Los Angeles', slug: 'los-angeles-california', vendorCount: '250+', businessCount: '400+' },
-      { name: 'San Francisco', slug: 'san-francisco-california', vendorCount: '180+', businessCount: '280+' },
-      { name: 'San Diego', slug: 'san-diego-california', vendorCount: '140+', businessCount: '220+' },
-      { name: 'San Jose', slug: 'san-jose-california', vendorCount: '120+', businessCount: '200+' },
+      { name: 'Los Angeles', slug: 'los-angeles-ca' },
+      { name: 'San Francisco', slug: 'san-francisco-ca' },
+      { name: 'San Diego', slug: 'san-diego-ca' },
+      { name: 'San Jose', slug: 'san-jose-ca' },
     ]
   },
   {
     name: 'Illinois',
     slug: 'illinois',
     cities: [
-      { name: 'Chicago', slug: 'chicago-illinois', vendorCount: '220+', businessCount: '350+' },
+      { name: 'Chicago', slug: 'chicago-il' },
     ]
   },
   {
     name: 'New York',
     slug: 'new-york',
     cities: [
-      { name: 'New York City', slug: 'new-york-new-york', vendorCount: '300+', businessCount: '500+' },
+      { name: 'New York City', slug: 'new-york-ny' },
     ]
   },
   {
     name: 'Pennsylvania',
     slug: 'pennsylvania',
     cities: [
-      { name: 'Philadelphia', slug: 'philadelphia-pennsylvania', vendorCount: '140+', businessCount: '220+' },
+      { name: 'Philadelphia', slug: 'philadelphia-pa' },
     ]
   },
   {
     name: 'Arizona',
     slug: 'arizona',
     cities: [
-      { name: 'Phoenix', slug: 'phoenix-arizona', vendorCount: '110+', businessCount: '180+' },
+      { name: 'Phoenix', slug: 'phoenix-az' },
     ]
   },
   {
     name: 'Washington',
     slug: 'washington',
     cities: [
-      { name: 'Seattle', slug: 'seattle-washington', vendorCount: '130+', businessCount: '200+' },
+      { name: 'Seattle', slug: 'seattle-wa' },
     ]
   }
 ]
@@ -73,26 +74,18 @@ const states = [
 export default function VendingLocationsPage() {
   return (
     <div className="min-h-screen bg-cream">
+      <Header />
+      
       {/* Header */}
       <div className="bg-white border-b border-gray-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
           <div className="text-center">
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="text-3xl sm:text-4xl lg:text-5xl font-playfair font-bold tracking-tight text-charcoal"
-            >
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-playfair font-bold tracking-tight text-charcoal">
               Vending Machine Locations Directory
-            </motion.h1>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="mt-4 sm:mt-6 text-lg sm:text-xl text-stone max-w-3xl mx-auto"
-            >
+            </h1>
+            <p className="mt-4 sm:mt-6 text-lg sm:text-xl text-stone max-w-3xl mx-auto">
               Find vending machine leads or connect with businesses looking for vending companies in your area
-            </motion.p>
+            </p>
           </div>
         </div>
       </div>
@@ -111,12 +104,7 @@ export default function VendingLocationsPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {/* For Vendors */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.3 }}
-              className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg border border-gray-200"
-            >
+            <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg border border-gray-200">
               <div className="text-center mb-6">
                 <BuildingStorefrontIcon className="h-16 w-16 text-navy mx-auto mb-4" />
                 <h3 className="text-xl sm:text-2xl font-bold text-charcoal mb-2">
@@ -138,15 +126,10 @@ export default function VendingLocationsPage() {
               >
                 Get Vending Machine Leads
               </Link>
-            </motion.div>
+            </div>
 
             {/* For Businesses */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg border border-gray-200"
-            >
+            <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg border border-gray-200">
               <div className="text-center mb-6">
                 <UserGroupIcon className="h-16 w-16 text-coral mx-auto mb-4" />
                 <h3 className="text-xl sm:text-2xl font-bold text-charcoal mb-2">
@@ -170,7 +153,7 @@ export default function VendingLocationsPage() {
                   We're building a directory to connect businesses with vending companies
                 </p>
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </div>
@@ -189,59 +172,48 @@ export default function VendingLocationsPage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {states.map((state, stateIdx) => (
-              <motion.div
+              <div
                 key={state.slug}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.1 * stateIdx }}
-                className="bg-warm-white rounded-xl p-6 border border-gray-200 hover:border-navy/30 transition-colors"
+                className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl hover:border-navy/20 transition-all duration-300"
               >
-                <div className="flex items-center gap-3 mb-4">
-                  <MapPinIcon className="h-6 w-6 text-navy" />
-                  <h3 className="text-lg font-bold text-charcoal">{state.name}</h3>
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="p-2 bg-navy/10 rounded-lg">
+                    <MapPinIcon className="h-6 w-6 text-navy" />
+                  </div>
+                  <h3 className="text-xl font-bold text-charcoal">{state.name}</h3>
                 </div>
                 
-                <div className="space-y-3 mb-4">
+                <div className="space-y-3 mb-6">
                   {state.cities.map((city) => (
-                    <div key={city.slug} className="space-y-2">
+                    <div key={city.slug}>
                       {/* Vending Leads Link */}
                       <Link
-                        href={`/vending-leads/${city.slug}`}
-                        className="block p-3 bg-white rounded-lg hover:bg-gray-50 transition-colors border border-gray-200"
+                        href={`/location/${city.slug}`}
+                        className="block p-4 bg-gradient-to-r from-navy/5 to-navy/10 rounded-xl hover:from-navy/10 hover:to-navy/15 transition-all duration-300 border border-navy/20 hover:border-navy/30 group"
                       >
-                        <div className="flex justify-between items-center">
-                          <span className="font-medium text-charcoal">Vending Leads in {city.name}</span>
-                          <span className="text-xs text-stone bg-stone/20 px-2 py-1 rounded">
-                            {city.vendorCount} leads
+                        <div className="flex items-center justify-between">
+                          <span className="font-semibold text-charcoal group-hover:text-navy transition-colors">
+                            {city.name} Vending Leads
                           </span>
+                          <div className="w-2 h-2 bg-navy rounded-full group-hover:scale-125 transition-transform"></div>
                         </div>
                       </Link>
-                      
-                      {/* Vending Companies Link (Coming Soon) */}
-                      <div className="block p-3 bg-gray-50 rounded-lg border border-gray-200">
-                        <div className="flex justify-between items-center">
-                          <span className="font-medium text-stone/70">Vending Companies in {city.name}</span>
-                          <span className="text-xs text-stone/50 bg-stone/10 px-2 py-1 rounded">
-                            Coming Soon
-                          </span>
-                        </div>
-                      </div>
                     </div>
                   ))}
                 </div>
 
-                <div className="space-y-2">
+                <div className="pt-4 border-t border-gray-100">
                   <Link
-                    href={`/vending-leads/${state.slug}`}
-                    className="text-sm text-navy hover:text-navy-light font-medium hover:underline block"
+                    href={`/location/${state.slug}`}
+                    className="inline-flex items-center gap-2 text-navy hover:text-navy-light font-semibold hover:underline transition-colors"
                   >
-                    View all {state.name} vending leads →
+                    View all {state.name} locations
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
                   </Link>
-                  <span className="text-sm text-stone/50 block">
-                    Vending companies directory coming soon
-                  </span>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -250,31 +222,13 @@ export default function VendingLocationsPage() {
       {/* CTA Section */}
       <div className="bg-navy py-16 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-2xl sm:text-3xl font-playfair font-bold text-white mb-4"
-          >
+          <h2 className="text-2xl sm:text-3xl font-playfair font-bold text-white mb-4">
             Ready to Find Your Next Vending Machine Location?
-          </motion.h2>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            viewport={{ once: true }}
-            className="text-lg text-white/90 mb-8 max-w-2xl mx-auto"
-          >
+          </h2>
+          <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
             Get started with our vending machine leads service and find qualified businesses in your target area
-          </motion.p>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            viewport={{ once: true }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4"
-          >
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               href="/pricing"
               className="bg-coral hover:bg-coral/90 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
@@ -287,9 +241,11 @@ export default function VendingLocationsPage() {
             >
               Contact Sales
             </Link>
-          </motion.div>
+          </div>
         </div>
       </div>
+      
+      <Footer />
     </div>
   )
 }

@@ -4,7 +4,8 @@ const navigation = {
   main: [
     { name: 'Home', href: '/' },
     { name: 'Services', href: '/services' },
-    { name: 'Vending Leads', href: '/vending-leads/austin-texas' },
+    { name: 'Locations', href: '/vending-locations' },
+    { name: 'Vending Leads', href: '/vending-leads' },
     { name: 'Find Vendors', href: '/vending-companies/austin-texas' },
     { name: 'Pricing', href: '/pricing' },
     { name: 'Hot Leads', href: '/hot-leads' },

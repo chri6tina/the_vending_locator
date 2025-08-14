@@ -3,11 +3,14 @@
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
+import HotLeads from '@/components/HotLeads'
+import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
-import { motion } from 'framer-motion'
-import { ChevronDownIcon } from '@heroicons/react/24/outline'
+import Link from 'next/link'
+import { ChevronDownIcon, MapPinIcon } from '@heroicons/react/24/outline'
 import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, UsersIcon } from '@heroicons/react/24/solid'
 import { useState, useEffect } from 'react'
+import { motion } from 'framer-motion'
 
 const faqs = [
   {
@@ -41,6 +44,38 @@ const faqs = [
   {
     question: "Do you provide support for new vending operators?",
     answer: "Yes! Our Start and Gold packages include comprehensive support including vending eCourses, cold call scripts, and business guidance to help you succeed."
+  },
+  {
+    question: "What types of vending machines do your locations support?",
+    answer: "Our locations support all types of vending machines including snack machines, beverage dispensers, coffee machines, and combination units. We research each location to ensure it's suitable for your specific equipment."
+  },
+  {
+    question: "How do you qualify locations for vending machines?",
+    answer: "We evaluate locations based on foot traffic, business hours, employee count, existing vending presence, and business type. Each location is personally researched to ensure vending machine potential."
+  },
+  {
+    question: "Do you provide locations outside the United States?",
+    answer: "Currently, we focus on locations within the United States. We cover all 50 states with particular emphasis on major metropolitan areas and business districts."
+  },
+  {
+    question: "What information is included with each lead?",
+    answer: "Each lead includes business name, address, phone number, decision-maker contact details, business hours, employee count, foot traffic estimates, and placement opportunity notes."
+  },
+  {
+    question: "How often is your database updated?",
+    answer: "Our database is updated weekly with new locations and refreshed contact information. We continuously verify existing leads to maintain accuracy and relevance."
+  },
+  {
+    question: "Can I request specific types of locations?",
+    answer: "Yes, you can specify your preferences for location types, industries, or geographic areas. We'll prioritize leads that match your criteria when available."
+  },
+  {
+    question: "Do you help with the placement process?",
+    answer: "While we provide the qualified leads, the actual placement negotiation is handled by you. However, our Gold package includes cold call scripts and business guidance to help with the process."
+  },
+  {
+    question: "What makes your leads different from competitors?",
+    answer: "Our leads are personally researched and verified, not scraped from public databases. We focus on quality over quantity, ensuring each location has genuine vending machine potential and accurate contact information."
   }
 ]
 
@@ -95,29 +130,44 @@ export default function Pricing() {
     'Tom from Illinois',
     'Jennifer in Ohio',
     'Robert from Georgia',
-    'Amanda in Michigan'
+    'Amanda in Michigan',
+    'Chris in Arizona',
+    'Maria in Washington',
+    'James in Pennsylvania',
+    'Emily in Colorado',
+    'Michael in Virginia',
+    'Jessica in Tennessee',
+    'Daniel in Missouri',
+    'Ashley in Indiana',
+    'Matthew in Wisconsin',
+    'Nicole in Minnesota',
+    'Andrew in Louisiana',
+    'Stephanie in Kentucky',
+    'Joshua in Alabama',
+    'Rebecca in Mississippi',
+    'Ryan in Arkansas',
+    'Lauren in Oklahoma',
+    'Kevin in Iowa',
+    'Michelle in Kansas',
+    'Brian in Nebraska',
+    'Amber in South Dakota',
+    'Steven in North Dakota',
+    'Heather in Montana'
   ])
   const [currentUserIndex, setCurrentUserIndex] = useState(0)
-
-  const trustSignals = [
-    { icon: CheckBadgeIcon, text: 'Verified Locations', color: 'text-green-600' },
-    { icon: StarIcon, text: '4.9/5 Rating', color: 'text-yellow-500' },
-    { icon: ShieldCheckIcon, text: 'Quality Research', color: 'text-blue-600' },
-    { icon: ClockIcon, text: 'Professional Service', color: 'text-purple-600' },
-  ]
 
   // Fluctuating active users counter
   useEffect(() => {
     const updateActiveUsers = () => {
-      const baseUsers = 8
-      const fluctuation = Math.floor(Math.random() * 6) + 1
+      const baseUsers = 12
+      const fluctuation = Math.floor(Math.random() * 8) + 1
       setActiveUsers(baseUsers + fluctuation)
     }
 
-    // Update every 3-7 seconds for natural fluctuation
+    // Update every 2-4 seconds for natural fluctuation
     const interval = setInterval(() => {
       updateActiveUsers()
-    }, Math.random() * 4000 + 3000)
+    }, Math.random() * 2000 + 2000)
 
     updateActiveUsers() // Initial update
 
@@ -128,7 +178,7 @@ export default function Pricing() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentUserIndex(prev => (prev + 1) % userNames.length)
-    }, 4000)
+    }, 3000)
 
     return () => clearInterval(interval)
   }, [userNames.length])
@@ -137,157 +187,179 @@ export default function Pricing() {
     <main className="min-h-screen bg-cream">
       <Header />
       
-      {/* Hero Section */}
+      {/* Hero Section - Original Design with Animations */}
       <div className="bg-white">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 py-16 sm:py-24 lg:py-32 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 py-12 sm:py-16 lg:py-20 lg:px-8">
           <div className="mx-auto max-w-4xl text-center">
-            {/* Trust Signals Badges */}
+            {/* Active Users Counter Pill */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-6 sm:mb-8 px-4 sm:px-0"
+              className="mb-6 p-4 bg-cream/50 backdrop-blur-sm rounded-2xl border border-gray-200 shadow-sm max-w-md mx-auto"
             >
-              {trustSignals.map((signal, index) => (
-                <motion.div
-                  key={signal.text}
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="inline-flex items-center gap-2 px-2 sm:px-3 py-2 bg-white rounded-full shadow-sm border border-gray-200"
-                >
-                  <signal.icon className={`h-3 w-3 sm:h-4 sm:w-4 ${signal.color}`} />
-                  <span className="text-xs sm:text-sm font-medium text-chocolate">{signal.text}</span>
-                </motion.div>
-              ))}
-            </motion.div>
-
-            {/* Active Users Counter */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.1 }}
-              className="mb-6 sm:mb-8 p-3 sm:p-4 bg-cream/50 backdrop-blur-sm rounded-2xl border border-gray-200 shadow-sm max-w-md mx-auto"
-            >
-              <div className="flex items-center justify-center gap-2 sm:gap-3">
-                <div className="w-2 h-2 sm:w-3 sm:h-3 bg-green-500 rounded-full animate-pulse"></div>
-                <span className="text-xs sm:text-sm font-medium text-chocolate">
+              <div className="flex items-center justify-center gap-3">
+                <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                <span className="text-sm font-medium text-chocolate">
                   <span className="font-bold text-coral">{activeUsers}</span> people are choosing plans right now
                 </span>
               </div>
-              <motion.div
+              <div
                 key={currentUserIndex}
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
                 className="mt-2 text-xs text-chocolate/70"
               >
                 Including {userNames[currentUserIndex]}
-              </motion.div>
+              </div>
             </motion.div>
 
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-2xl sm:text-3xl lg:text-4xl font-playfair font-bold tracking-tight text-chocolate px-4 sm:px-0"
+              className="text-3xl sm:text-4xl lg:text-5xl font-playfair font-bold tracking-tight text-chocolate px-4 sm:px-0"
             >
-              Simple, Transparent Pricing
+              Qualified Vending<br />Location Leads
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="mt-4 sm:mt-6 text-base sm:text-lg leading-7 sm:leading-8 text-chocolate/70 px-4 sm:px-0"
+              className="mt-4 sm:mt-6 text-lg sm:text-xl leading-8 sm:leading-9 text-chocolate/70 px-4 sm:px-0 max-w-3xl mx-auto"
             >
-              Choose the plan that fits your vending business needs. Start small and scale up as you grow.
+              Get pre-qualified vending machine locations delivered to your inbox. No monthly fees, just results that help you grow your vending business.
             </motion.p>
+
+            {/* Trust/Feature Badges */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+              className="mt-6 sm:mt-8 grid grid-cols-2 gap-4 max-w-md mx-auto"
+            >
+              <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                <div className="flex items-center gap-3">
+                  <CheckBadgeIcon className="h-5 w-5 text-green-600" />
+                  <span className="text-sm font-medium text-chocolate">Verified Locations</span>
+                </div>
+              </div>
+              <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                <div className="flex items-center gap-3">
+                  <StarIcon className="h-5 w-5 text-yellow-500" />
+                  <span className="text-sm font-medium text-chocolate">4.9/5 Rating</span>
+                </div>
+              </div>
+              <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                <div className="flex items-center gap-3">
+                  <ShieldCheckIcon className="h-5 w-5 text-blue-600" />
+                  <span className="text-sm font-medium text-chocolate">Secure & Reliable</span>
+                </div>
+              </div>
+              <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                <div className="flex items-center gap-3">
+                  <ClockIcon className="h-5 w-5 text-purple-600" />
+                  <span className="text-sm font-medium text-chocolate">Quality Research</span>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* CTA Buttons */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.8 }}
+              className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 px-4 sm:px-0"
+            >
+              <Link
+                href="/hot-leads"
+                className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors"
+              >
+                Get Hot Leads
+              </Link>
+              <Link
+                href="#pricing"
+                className="w-full sm:w-auto bg-transparent text-chocolate border-2 border-chocolate px-8 py-3 rounded-lg font-semibold hover:bg-chocolate hover:text-white transition-colors"
+              >
+                View Pricing →
+              </Link>
+            </motion.div>
 
             {/* Social Proof */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
+              transition={{ duration: 0.8, delay: 1.0 }}
               className="mt-6 sm:mt-8 px-4 sm:px-0"
             >
-              <div className="flex items-center justify-center gap-2 mb-2 sm:mb-3">
-                <UsersIcon className="h-4 w-4 sm:h-5 sm:w-5 text-coral" />
-                <span className="text-xs sm:text-sm text-chocolate/70">Trusted by 2,847+ vending operators</span>
+              <div className="flex items-center justify-center gap-3 mb-3">
+                <div className="flex -space-x-2">
+                  <div className="w-8 h-8 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full border-2 border-white shadow-sm flex items-center justify-center">
+                    <span className="text-white text-xs font-semibold">M</span>
+                  </div>
+                  <div className="w-8 h-8 bg-gradient-to-br from-green-400 to-green-600 rounded-full border-2 border-white shadow-sm flex items-center justify-center">
+                    <span className="text-white text-xs font-semibold">S</span>
+                  </div>
+                  <div className="w-8 h-8 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full border-2 border-white shadow-sm flex items-center justify-center">
+                    <span className="text-white text-xs font-semibold">D</span>
+                  </div>
+                  <div className="w-8 h-8 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full border-2 border-white shadow-sm flex items-center justify-center">
+                    <span className="text-white text-xs font-semibold">L</span>
+                  </div>
+                </div>
+                <span className="text-sm text-chocolate/70">Join 2,847+ vending operators</span>
               </div>
-              <p className="text-xs text-chocolate/60">
-                &ldquo;Saved me 3 months of research!&rdquo; - <span className="font-semibold">Mike R., Texas</span>
+              <p className="text-sm text-chocolate/60">
+                "Found my best location in 3 days!" - <span className="font-semibold">Mike R., Texas</span>
               </p>
+            </motion.div>
+
+            {/* Key Statistics */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 1.2 }}
+              className="mt-6 sm:mt-8 grid grid-cols-3 gap-6 max-w-md mx-auto"
+            >
+              <div className="text-center">
+                <div className="text-2xl font-bold text-bronze">500+</div>
+                <div className="text-sm text-chocolate/70">Locations Found</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-bronze">15+</div>
+                <div className="text-sm text-chocolate/70">Deals Closed</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-bronze">4.9★</div>
+                <div className="text-sm text-chocolate/70">Rating</div>
+              </div>
             </motion.div>
           </div>
         </div>
       </div>
 
-      {/* How to Start Guide - Thin and Stretched */}
-      <div className="bg-white">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6">
-          <div className="text-center">
-            <h2 className="text-xl font-semibold text-charcoal mb-2">
-              How to Get Started with Vending Location Leads
+      {/* Pricing Section */}
+      <div id="pricing" className="bg-cream py-16 sm:py-20 lg:py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-4xl text-center mb-12 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-playfair font-bold tracking-tight text-chocolate mb-6">
+              Choose Your Plan
             </h2>
-            <p className="text-sm text-stone max-w-4xl mx-auto leading-relaxed">
-              Choose your plan below, then we'll guide you through the process of finding and securing 
-              prime vending locations. Our team handles the research while you focus on growing your business.
+            <p className="text-lg sm:text-xl text-chocolate/70 leading-relaxed max-w-3xl mx-auto">
+              Get access to qualified vending machine locations with flexible pricing options. 
+              No long-term contracts, just results that help you grow your business.
             </p>
           </div>
+          <PricingTable />
         </div>
       </div>
 
-      {/* Pricing Table */}
-      <PricingTable />
+      {/* Hot Leads Section */}
+      <HotLeads />
+
+      {/* Vending Course Section */}
+      <VendingCourse />
 
       {/* FAQ Section */}
       <FAQ />
-
-      {/* CTA Section */}
-      <div className="bg-cream py-16 sm:py-24 lg:py-32">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl text-center">
-            <motion.h2
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-              className="text-2xl sm:text-3xl lg:text-4xl font-playfair font-bold tracking-tight text-chocolate px-4 sm:px-0"
-            >
-              Ready to Get Started?
-            </motion.h2>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              viewport={{ once: true }}
-              className="mt-4 sm:mt-6 text-base sm:text-lg leading-7 sm:leading-8 text-chocolate/70 px-4 sm:px-0"
-            >
-              Join thousands of vending operators who trust us to find their next profitable location.
-            </motion.p>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              viewport={{ once: true }}
-              className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 px-4 sm:px-0"
-            >
-              <a
-                href="/hot-leads"
-                className="btn-primary w-full sm:w-auto text-center"
-              >
-                Get Hot Leads
-              </a>
-              <a
-                href="/contact"
-                className="btn-secondary w-full sm:w-auto text-center"
-              >
-                Contact Sales
-              </a>
-            </motion.div>
-          </div>
-        </div>
-      </div>
 
       <Footer />
       
