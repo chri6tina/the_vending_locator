@@ -174,10 +174,9 @@ export default function PricingTable() {
                 ))}
               </div>
               
-              <a
-                href={plan.href}
-                target="_blank"
-                rel="noopener noreferrer"
+              {/* Get Started Button - Now triggers modal */}
+              <button
+                onClick={() => handlePlanClick(plan)}
                 className={`w-full py-3 px-6 rounded-lg font-semibold text-white transition-all duration-200 text-center block ${
                   plan.popular
                     ? 'bg-navy hover:bg-navy-light shadow-lg'
@@ -185,16 +184,7 @@ export default function PricingTable() {
                 }`}
               >
                 Get Started
-              </a>
-              
-              {/* Modal option */}
-              <div className="mt-4 text-center">
-                <button
-                  className="w-full py-2 px-4 bg-navy/10 hover:bg-navy/20 text-navy font-medium rounded-lg border border-navy/30 transition-all duration-200 text-sm"
-                >
-                  Need help? Get personalized assistance →
-                </button>
-              </div>
+              </button>
             </div>
           ))}
         </div>
@@ -217,9 +207,10 @@ export default function PricingTable() {
                           {plan.name}
                         </h3>
                         <div className="mb-2">
+                          {/* Get Started Button - Now triggers modal */}
                           <button
                             onClick={() => handlePlanClick(plan)}
-                            className="bg-charcoal hover:bg-charcoal/90 text-white px-6 py-2 rounded-lg text-base font-medium inline-block cursor-pointer transition-all duration-200"
+                            className={`bg-charcoal hover:bg-charcoal/90 text-white px-6 py-2 rounded-lg text-base font-medium inline-block cursor-pointer transition-all duration-200`}
                           >
                             {plan.price}{plan.period}
                           </button>
@@ -755,10 +746,9 @@ export default function PricingTable() {
                   {plans.map((plan) => (
                     <td key={plan.name} className="px-8 py-6 text-center">
                       <div className="flex flex-col items-center">
-                        <a
-                          href={plan.href}
-                          target="_blank"
-                          rel="noopener noreferrer"
+                        {/* Get Started Button - Now triggers modal */}
+                        <button
+                          onClick={() => handlePlanClick(plan)}
                           className={`w-32 py-3 px-6 rounded-lg font-semibold text-white transition-all duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 text-center block ${
                             plan.popular
                               ? 'bg-navy hover:bg-navy-light shadow-lg focus-visible:outline-navy'
@@ -766,16 +756,7 @@ export default function PricingTable() {
                           }`}
                         >
                           Get Started
-                        </a>
-                        
-                        {/* Modal option */}
-                        <div className="mt-2">
-                          <button
-                            className="text-xs text-navy hover:text-navy-light underline"
-                          >
-                            Need help? →
-                          </button>
-                        </div>
+                        </button>
                       </div>
                     </td>
                   ))}
