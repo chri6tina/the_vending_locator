@@ -237,7 +237,6 @@ export default function Contact() {
                 <div className="space-y-4">
                   <div>
                     <h3 className="font-semibold text-chocolate">The Vending Locator</h3>
-                    <p className="text-chocolate/70">Jacksonville, Florida</p>
                   </div>
                   
                   <div>

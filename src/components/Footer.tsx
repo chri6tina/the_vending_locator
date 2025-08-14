@@ -70,7 +70,6 @@ export default function Footer() {
               &copy; 2024 The Vending Locator. All rights reserved.
             </p>
             <div className="mt-3 sm:mt-4 text-sm text-white/90">
-              <p>Jacksonville, Florida</p>
               <p className="mt-1">Trusted by 3,000+ vending operators nationwide</p>
             </div>
           </div>
