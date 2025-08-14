@@ -114,7 +114,7 @@ export default function ZipCodeModal({ isOpen, onClose, package: selectedPackage
   return (
     <AnimatePresence>
       {isOpen && (
-        <div className="fixed inset-0 z-50 overflow-y-auto">
+        <div className="fixed inset-0 z-[9999] overflow-y-auto">
           {/* Backdrop */}
           <motion.div
             initial={{ opacity: 0 }}
@@ -131,7 +131,7 @@ export default function ZipCodeModal({ isOpen, onClose, package: selectedPackage
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: 20 }}
               transition={{ type: "spring", damping: 25, stiffness: 300 }}
-              className="relative w-full max-w-xs sm:max-w-sm bg-white rounded-xl sm:rounded-2xl shadow-xl border border-gray-200 overflow-hidden"
+              className="relative w-full max-w-xs sm:max-w-sm bg-white rounded-xl sm:rounded-2xl shadow-xl border border-gray-200 overflow-hidden z-[10000]"
             >
               {/* Header */}
               <div className="bg-navy px-3 sm:px-6 py-2.5 sm:py-4">
