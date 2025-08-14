@@ -101,7 +101,6 @@ export default function PricingTable() {
   const [selectedPlan, setSelectedPlan] = useState<string | null>(null)
 
   const handlePlanClick = (plan: typeof plans[0]) => {
-    console.log('Modal opening for plan:', plan.name) // Debug log
     setSelectedPlan(plan.name)
     openModal({
       name: plan.name,
@@ -191,7 +190,6 @@ export default function PricingTable() {
               {/* Modal option */}
               <div className="mt-4 text-center">
                 <button
-                  onClick={() => handlePlanClick(plan)}
                   className="w-full py-2 px-4 bg-navy/10 hover:bg-navy/20 text-navy font-medium rounded-lg border border-navy/30 transition-all duration-200 text-sm"
                 >
                   Need help? Get personalized assistance →
@@ -773,7 +771,6 @@ export default function PricingTable() {
                         {/* Modal option */}
                         <div className="mt-2">
                           <button
-                            onClick={() => handlePlanClick(plan)}
                             className="text-xs text-navy hover:text-navy-light underline"
                           >
                             Need help? →
