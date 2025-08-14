@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://thevendinglocator.com/sitemap.xml
+
+# Disallow admin or private areas (if any)
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# Allow important pages
+Allow: /vending-leads/
+Allow: /services/
+Allow: /pricing/
+Allow: /contact/
+Allow: /blog/
+Allow: /guide/
