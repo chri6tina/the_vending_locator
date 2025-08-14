@@ -7,6 +7,7 @@ const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  distDir: '.next',
   /* config options here */
 };
 
