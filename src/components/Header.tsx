@@ -49,12 +49,14 @@ export default function Header() {
           ))}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <Link
-            href="/contact"
-            className="btn-primary"
-          >
-            Contact
-          </Link>
+          <div className="flex items-center gap-4">
+            <Link
+              href="/contact"
+              className="btn-primary"
+            >
+              Contact
+            </Link>
+          </div>
         </div>
       </nav>
       
