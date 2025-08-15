@@ -1,23 +1,10 @@
 // Shared tracking store for API routes
-// Global store that persists across API calls in development mode
+// Simple in-memory store that should work across API calls
 
-// Use global variables to persist data across API calls
-if (typeof global !== 'undefined') {
-  // Server-side (Node.js)
-  if (!global.vendingLocatorTrackingStore) {
-    global.vendingLocatorTrackingStore = {
-      trackingData: [],
-      liveVisitors: new Map(),
-      pageViews: new Map()
-    }
-  }
-  var { trackingData, liveVisitors, pageViews } = global.vendingLocatorTrackingStore
-} else {
-  // Client-side (browser) - fallback to local variables
-  var trackingData = []
-  var liveVisitors = new Map()
-  var pageViews = new Map()
-}
+// In-memory storage
+let trackingData = []
+let liveVisitors = new Map()
+let pageViews = new Map()
 
 // Export the variables
 export { trackingData, liveVisitors, pageViews }
