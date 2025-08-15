@@ -1,6 +1,13 @@
 // Shared tracking store for API routes
-// In production, this would be replaced with a proper database
+// Uses file-based persistence to survive server restarts
+import { promises as fs } from 'fs'
+import path from 'path'
 
+const DATA_FILE = path.join(process.cwd(), 'data', 'tracking-data.json')
+const VISITORS_FILE = path.join(process.cwd(), 'data', 'live-visitors.json')
+const PAGES_FILE = path.join(process.cwd(), 'data', 'page-views.json')
+
+// In-memory storage (will be loaded from files)
 export let trackingData = []
 export let liveVisitors = new Map()
 export let pageViews = new Map()
@@ -17,18 +24,105 @@ export function setNotificationCallbacks(callbacks) {
   if (callbacks.onScroll) onScrollCallback = callbacks.onScroll
 }
 
+// Ensure data directory exists
+async function ensureDataDir() {
+  const dataDir = path.dirname(DATA_FILE)
+  try {
+    await fs.access(dataDir)
+  } catch {
+    await fs.mkdir(dataDir, { recursive: true })
+  }
+}
+
+// Load data from files
+async function loadData() {
+  try {
+    await ensureDataDir()
+    
+    // Load tracking data
+    try {
+      const trackingContent = await fs.readFile(DATA_FILE, 'utf8')
+      trackingData = JSON.parse(trackingContent)
+    } catch {
+      trackingData = []
+    }
+    
+    // Load live visitors
+    try {
+      const visitorsContent = await fs.readFile(VISITORS_FILE, 'utf8')
+      const visitorsArray = JSON.parse(visitorsContent)
+      liveVisitors = new Map(visitorsArray.map(v => [v.sessionId, v]))
+    } catch {
+      liveVisitors = new Map()
+    }
+    
+    // Load page views
+    try {
+      const pagesContent = await fs.readFile(PAGES_FILE, 'utf8')
+      const pagesArray = JSON.parse(pagesContent)
+      pageViews = new Map(pagesArray.map(([key, value]) => [key, {
+        ...value,
+        uniqueVisitors: new Set(value.uniqueVisitors)
+      }]))
+    } catch {
+      pageViews = new Map()
+    }
+    
+    console.log('Tracking data loaded:', {
+      trackingRecords: trackingData.length,
+      activeVisitors: liveVisitors.size,
+      pageViews: pageViews.size
+    })
+  } catch (error) {
+    console.error('Failed to load tracking data:', error)
+  }
+}
+
+// Save data to files
+async function saveData() {
+  try {
+    await ensureDataDir()
+    
+    // Save tracking data
+    await fs.writeFile(DATA_FILE, JSON.stringify(trackingData, null, 2))
+    
+    // Save live visitors
+    const visitorsArray = Array.from(liveVisitors.values())
+    await fs.writeFile(VISITORS_FILE, JSON.stringify(visitorsArray, null, 2))
+    
+    // Save page views (convert Set to Array for JSON)
+    const pagesArray = Array.from(pageViews.entries()).map(([key, value]) => [
+      key,
+      {
+        ...value,
+        uniqueVisitors: Array.from(value.uniqueVisitors)
+      }
+    ])
+    await fs.writeFile(PAGES_FILE, JSON.stringify(pagesArray, null, 2))
+    
+  } catch (error) {
+    console.error('Failed to save tracking data:', error)
+  }
+}
+
+// Initialize data loading
+loadData()
+
 // Helper function to add tracking data
-export function addTrackingData(data) {
+export async function addTrackingData(data) {
   trackingData.push(data)
   
   // Keep only last 1000 entries to prevent memory issues
   if (trackingData.length > 1000) {
     trackingData = trackingData.slice(-1000)
   }
+  
+  // Save to file
+  await saveData()
 }
 
 // Helper function to update live visitors
-export function updateLiveVisitors(data) {
+export async function updateLiveVisitors(data) {
   if (data.sessionId) {
     const visitorKey = data.sessionId
     const now = Date.now()
@@ -88,11 +182,14 @@ export function updateLiveVisitors(data) {
         }
       }
     }
+    
+    // Save to file
+    await saveData()
   }
 }
 
 // Helper function to update page views
-export function updatePageViews(data) {
+export async function updatePageViews(data) {
   if (data.page) {
     const pageKey = data.page
     if (!pageViews.has(pageKey)) {
@@ -104,11 +201,14 @@ export function updatePageViews(data) {
     if (data.sessionId) {
       pageData.uniqueVisitors.add(data.sessionId)
     }
+    
+    // Save to file
+    await saveData()
   }
 }
 
 // Helper function to clean up inactive visitors
-export function cleanupInactiveVisitors() {
+export async function cleanupInactiveVisitors() {
   const now = Date.now()
   const thirtyMinutesAgo = now - (30 * 60 * 1000)
   
@@ -117,4 +217,7 @@ export function cleanupInactiveVisitors() {
       liveVisitors.delete(key)
     }
   }
+  
+  // Save to file
+  await saveData()
 }

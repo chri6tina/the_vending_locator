@@ -131,6 +131,7 @@
   // Send tracking data to API
   function sendTrackingData(data) {
     console.log('Vending Locator tracking: Sending data to API:', data);
+    console.log('Vending Locator tracking: API endpoint:', TRACKING_CONFIG.apiEndpoint);
     
     fetch(TRACKING_CONFIG.apiEndpoint, {
       method: 'POST',
@@ -141,16 +142,27 @@
     })
     .then(response => {
       console.log('Vending Locator tracking: API response status:', response.status);
+      console.log('Vending Locator tracking: API response headers:', response.headers);
+      
       if (response.ok) {
         retryCount = 0; // Reset retry count on success
         console.log('Vending Locator tracking: Data sent successfully');
+        
+        // Log response body for debugging
+        response.json().then(responseData => {
+          console.log('Vending Locator tracking: API response data:', responseData);
+        }).catch(() => {
+          console.log('Vending Locator tracking: Could not parse response body');
+        });
       } else {
         console.warn('Tracking API returned error:', response.status);
+        console.warn('Tracking API error response:', response);
         handleTrackingError(data);
       }
     })
     .catch(error => {
       console.warn('Failed to send tracking data:', error);
+      console.warn('Error details:', error.message, error.stack);
       handleTrackingError(data);
     });
   }
