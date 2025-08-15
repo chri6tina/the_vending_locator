@@ -3,10 +3,16 @@ import { liveVisitors } from '@/lib/tracking-store'
 
 export async function GET() {
   try {
+    // Debug: Log the entire liveVisitors Map
+    console.log('🔍 Live visitors endpoint called')
+    console.log('🔍 liveVisitors Map size:', liveVisitors.size)
+    console.log('🔍 liveVisitors Map keys:', Array.from(liveVisitors.keys()))
+    console.log('🔍 liveVisitors Map values:', Array.from(liveVisitors.values()))
+    
     // Convert Map to array for JSON response
     const visitorsArray = Array.from(liveVisitors.values())
     
-    console.log('Live visitors endpoint called, returning:', visitorsArray.length, 'visitors')
+    console.log('🔍 Returning visitors array:', visitorsArray.length, 'visitors')
     
     return NextResponse.json(visitorsArray)
     
