@@ -40,6 +40,26 @@ interface TrackingMetrics {
   geographicData: { [key: string]: number }
 }
 
+interface Form {
+  id: string
+  page: string
+  formType: string
+  submittedAt: string
+  status: 'pending' | 'in_progress' | 'completed' | 'cancelled'
+  paymentStatus: 'unpaid' | 'paid' | 'refunded' | 'failed'
+  paymentAmount: number
+  stripePaymentId: string | null
+  taskCompleted: boolean
+  taskCompletedAt: string | null
+  notes: string
+  customerContact: {
+    name: string
+    email: string
+    phone: string
+    company: string
+  }
+}
+
 export default function AdminDashboard() {
   const [activeTab, setActiveTab] = useState('dashboard')
   const [liveVisitors, setLiveVisitors] = useState<LiveVisitor[]>([])
@@ -61,6 +81,20 @@ export default function AdminDashboard() {
   const [lastUpdated, setLastUpdated] = useState<Date>(new Date())
   const [soundsEnabled, setSoundsEnabled] = useState(true)
   const [soundVolume, setSoundVolume] = useState(0.3)
+  const [forms, setForms] = useState<Form[]>([])
+  const [selectedForm, setSelectedForm] = useState<Form | null>(null)
+  const [formFilters, setFormFilters] = useState({
+    status: '',
+    page: '',
+    paymentStatus: ''
+  })
+  const [formStats, setFormStats] = useState({
+    total: 0,
+    pending: 0,
+    completed: 0,
+    paid: 0,
+    unpaid: 0
+  })
   const updateTimeoutRef = useRef<NodeJS.Timeout | null>(null)
 
   // Set up notification callbacks for sounds
@@ -108,6 +142,13 @@ export default function AdminDashboard() {
     }
   }, [activeTab, isTracking, refreshInterval])
 
+  // Fetch forms data
+  useEffect(() => {
+    if (activeTab === 'forms') {
+      fetchForms()
+    }
+  }, [activeTab, formFilters])
+
   const fetchLiveData = async () => {
     try {
       // Only show loading on first fetch, not on refreshes
@@ -144,6 +185,36 @@ export default function AdminDashboard() {
         setIsUpdating(false)
       }, 500)
     }
+  }
+
+  const fetchForms = async () => {
+    try {
+      const queryParams = new URLSearchParams()
+      
+      if (formFilters.status) queryParams.append('status', formFilters.status)
+      if (formFilters.page) queryParams.append('page', formFilters.page)
+      if (formFilters.paymentStatus) queryParams.append('paymentStatus', formFilters.paymentStatus)
+      
+      const response = await fetch(`/api/forms?${queryParams}`)
+      const data = await response.json()
+      
+      if (data.success) {
+        setForms(data.forms)
+        calculateFormStats(data.forms)
+      }
+    } catch (error) {
+      console.error('Error fetching forms:', error)
+    }
+  }
+
+  const calculateFormStats = (formsData: Form[]) => {
+    setFormStats({
+      total: formsData.length,
+      pending: formsData.filter(f => f.status === 'pending').length,
+      completed: formsData.filter(f => f.status === 'completed').length,
+      paid: formsData.filter(f => f.paymentStatus === 'paid').length,
+      unpaid: formsData.filter(f => f.paymentStatus === 'unpaid').length
+    })
   }
 
   const startTracking = () => {
@@ -230,6 +301,23 @@ export default function AdminDashboard() {
                 <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" clipRule="evenodd" />
               </svg>
               <span className="font-medium">Spy</span>
+            </div>
+          </div>
+
+          {/* Forms Tab */}
+          <div 
+            className={`px-4 py-4 rounded-lg shadow-sm cursor-pointer transition-all ${
+              activeTab === 'forms' 
+                ? 'bg-navy text-white' 
+                : 'bg-white text-stone hover:bg-stone/5 hover:text-charcoal'
+            }`}
+            onClick={() => setActiveTab('forms')}
+          >
+            <div className="flex items-center">
+              <svg className="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clipRule="evenodd" />
+              </svg>
+              <span className="font-medium">Forms</span>
             </div>
           </div>
         </nav>
@@ -679,6 +767,234 @@ export default function AdminDashboard() {
                     </span>
                   </div>
                 </div>
+              </div>
+            </>
+          )}
+
+          {activeTab === 'forms' && (
+            <>
+              {/* Forms Header */}
+              <div className="mb-8">
+                <h1 className="text-4xl font-playfair font-bold text-charcoal mb-3">
+                  Forms Management
+                </h1>
+                <p className="text-lg text-stone max-w-3xl">
+                  Track form submissions, payments, and task completion status across your website.
+                </p>
+              </div>
+
+              {/* Forms Stats Cards */}
+              <div className="grid grid-cols-1 md:grid-cols-5 gap-4 mb-8">
+                <motion.div 
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="bg-white p-6 rounded-lg shadow-sm border border-stone-200"
+                >
+                  <div className="text-2xl font-bold text-navy">{formStats.total}</div>
+                  <div className="text-sm text-stone-600">Total Forms</div>
+                </motion.div>
+                
+                <motion.div 
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.1 }}
+                  className="bg-white p-6 rounded-lg shadow-sm border border-stone-200"
+                >
+                  <div className="text-2xl font-bold text-yellow-600">{formStats.pending}</div>
+                  <div className="text-sm text-stone-600">Pending</div>
+                </motion.div>
+                
+                <motion.div 
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.2 }}
+                  className="bg-white p-6 rounded-lg shadow-sm border border-stone-200"
+                >
+                  <div className="text-2xl font-bold text-green-600">{formStats.completed}</div>
+                  <div className="text-sm text-stone-600">Completed</div>
+                </motion.div>
+                
+                <motion.div 
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.3 }}
+                  className="bg-white p-6 rounded-lg shadow-sm border border-stone-200"
+                >
+                  <div className="text-2xl font-bold text-green-600">{formStats.paid}</div>
+                  <div className="text-sm text-stone-600">Paid</div>
+                </motion.div>
+                
+                <motion.div 
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.4 }}
+                  className="bg-white p-6 rounded-lg shadow-sm border border-stone-200"
+                >
+                  <div className="text-2xl font-bold text-red-600">{formStats.unpaid}</div>
+                  <div className="text-sm text-stone-600">Unpaid</div>
+                </motion.div>
+              </div>
+
+              {/* Forms Filters */}
+              <div className="bg-white p-6 rounded-lg shadow-sm border border-stone-200 mb-6">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <div>
+                    <label className="block text-sm font-medium text-stone-700 mb-2">Status</label>
+                    <select
+                      value={formFilters.status}
+                      onChange={(e) => setFormFilters(prev => ({ ...prev, status: e.target.value }))}
+                      className="w-full px-3 py-2 border border-stone-300 rounded-md focus:outline-none focus:ring-2 focus:ring-navy"
+                    >
+                      <option value="">All Statuses</option>
+                      <option value="pending">Pending</option>
+                      <option value="in_progress">In Progress</option>
+                      <option value="completed">Completed</option>
+                      <option value="cancelled">Cancelled</option>
+                    </select>
+                  </div>
+                  
+                  <div>
+                    <label className="block text-sm font-medium text-stone-700 mb-2">Page</label>
+                    <select
+                      value={formFilters.page}
+                      onChange={(e) => setFormFilters(prev => ({ ...prev, page: e.target.value }))}
+                      className="w-full px-3 py-2 border border-stone-300 rounded-md focus:outline-none focus:ring-2 focus:ring-navy"
+                    >
+                      <option value="">All Pages</option>
+                      <option value="/">Homepage</option>
+                      <option value="/contact">Contact</option>
+                      <option value="/pricing">Pricing</option>
+                      <option value="/services">Services</option>
+                    </select>
+                  </div>
+                  
+                  <div>
+                    <label className="block text-sm font-medium text-stone-700 mb-2">Payment Status</label>
+                    <select
+                      value={formFilters.paymentStatus}
+                      onChange={(e) => setFormFilters(prev => ({ ...prev, paymentStatus: e.target.value }))}
+                      className="w-full px-3 py-2 border border-stone-300 rounded-md focus:outline-none focus:ring-2 focus:ring-navy"
+                    >
+                      <option value="">All Payment Statuses</option>
+                      <option value="paid">Paid</option>
+                      <option value="unpaid">Unpaid</option>
+                      <option value="refunded">Refunded</option>
+                      <option value="failed">Failed</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              {/* Forms Table */}
+              <div className="bg-white rounded-lg shadow-sm border border-stone-200 overflow-hidden">
+                {forms.length === 0 ? (
+                  <div className="p-8 text-center">
+                    <p className="text-stone-600">No forms found matching your filters.</p>
+                    <button
+                      onClick={() => fetch('/api/forms/test', { method: 'POST' })}
+                      className="mt-4 px-4 py-2 bg-navy text-white rounded-md hover:bg-navy-dark transition-colors"
+                    >
+                      Add Sample Forms
+                    </button>
+                  </div>
+                ) : (
+                  <div className="overflow-x-auto">
+                    <table className="min-w-full divide-y divide-stone-200">
+                      <thead className="bg-stone-50">
+                        <tr>
+                          <th className="px-6 py-3 text-left text-xs font-medium text-stone-500 uppercase tracking-wider">
+                            Customer
+                          </th>
+                          <th className="px-6 py-3 text-left text-xs font-medium text-stone-500 uppercase tracking-wider">
+                            Page
+                          </th>
+                          <th className="px-6 py-3 text-left text-xs font-medium text-stone-500 uppercase tracking-wider">
+                            Status
+                          </th>
+                          <th className="px-6 py-3 text-left text-xs font-medium text-stone-500 uppercase tracking-wider">
+                            Payment
+                          </th>
+                          <th className="px-6 py-3 text-left text-xs font-medium text-stone-500 uppercase tracking-wider">
+                            Task
+                          </th>
+                          <th className="px-6 py-3 text-left text-xs font-medium text-stone-500 uppercase tracking-wider">
+                            Submitted
+                          </th>
+                          <th className="px-6 py-3 text-left text-xs font-medium text-stone-500 uppercase tracking-wider">
+                            Actions
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody className="bg-white divide-y divide-stone-200">
+                        {forms.map((form) => (
+                          <tr key={form.id} className="hover:bg-stone-50">
+                            <td className="px-6 py-4 whitespace-nowrap">
+                              <div>
+                                <div className="text-sm font-medium text-stone-900">
+                                  {form.customerContact.name || 'N/A'}
+                                </div>
+                                <div className="text-sm text-stone-500">
+                                  {form.customerContact.email || 'N/A'}
+                                </div>
+                              </div>
+                            </td>
+                            <td className="px-6 py-4 whitespace-nowrap">
+                              <div className="text-sm text-stone-900">{form.page}</div>
+                              <div className="text-sm text-stone-500">{form.formType}</div>
+                            </td>
+                            <td className="px-6 py-4 whitespace-nowrap">
+                              <span className={`inline-flex px-2 py-1 text-xs font-semibold rounded-full ${
+                                form.status === 'pending' ? 'bg-yellow-100 text-yellow-800' :
+                                form.status === 'in_progress' ? 'bg-blue-100 text-blue-800' :
+                                form.status === 'completed' ? 'bg-green-100 text-green-800' :
+                                'bg-red-100 text-red-800'
+                              }`}>
+                                {form.status.replace('_', ' ')}
+                              </span>
+                            </td>
+                            <td className="px-6 py-4 whitespace-nowrap">
+                              <div className="flex items-center space-x-2">
+                                <span className={`inline-flex px-2 py-1 text-xs font-semibold rounded-full ${
+                                  form.paymentStatus === 'paid' ? 'bg-green-100 text-green-800' :
+                                  form.paymentStatus === 'unpaid' ? 'bg-red-100 text-red-800' :
+                                  form.paymentStatus === 'refunded' ? 'bg-orange-100 text-orange-800' :
+                                  'bg-red-100 text-red-800'
+                                }`}>
+                                  {form.paymentStatus}
+                                </span>
+                                {form.paymentAmount > 0 && (
+                                  <span className="text-sm text-stone-600">
+                                    ${form.paymentAmount}
+                                  </span>
+                                )}
+                              </div>
+                            </td>
+                            <td className="px-6 py-4 whitespace-nowrap">
+                              <span className={`inline-flex px-2 py-1 text-xs font-semibold rounded-full ${
+                                form.taskCompleted 
+                                  ? 'bg-green-100 text-green-800' 
+                                  : 'bg-yellow-100 text-yellow-800'
+                              }`}>
+                                {form.taskCompleted ? 'Completed' : 'Pending'}
+                              </span>
+                            </td>
+                            <td className="px-6 py-4 whitespace-nowrap text-sm text-stone-500">
+                              {new Date(form.submittedAt).toLocaleDateString()}
+                            </td>
+                            <td className="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                              <button
+                                onClick={() => setSelectedForm(form)}
+                                className="text-navy hover:text-navy-dark mr-3"
+                              >
+                                View
+                              </button>
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                )}
               </div>
             </>
           )}
