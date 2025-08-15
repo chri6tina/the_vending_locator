@@ -52,39 +52,64 @@ export default function ZipCodeModal({ isOpen, onClose, package: selectedPackage
     setIsSubmitting(true)
     
     try {
-      // Submit to Formspree with package details
-      const response = await fetch('https://formspree.io/f/xdkgqele', {
+      // Create Stripe Checkout Session
+      const checkoutResponse = await fetch('/api/create-checkout-session', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          zipCode: zipCode.trim(),
           email: email.trim(),
-          packageName: selectedPackage.name,
-          packagePrice: selectedPackage.price,
-          packageType: selectedPackage.type,
-          packageDescription: selectedPackage.description,
-          packageLocation: selectedPackage.location,
-          source: 'Package Purchase Modal',
-          timestamp: new Date().toISOString(),
+          zipCode: zipCode.trim(),
+          planName: selectedPackage.name,
+          planPrice: selectedPackage.price.replace('$', '').replace('/month', ''),
+          planId: selectedPackage.name.toLowerCase()
         }),
       })
       
-      if (response.ok) {
+      if (checkoutResponse.ok) {
+        const checkoutData = await checkoutResponse.json()
+        
+        // Also submit to Formspree for lead tracking (non-critical)
+        try {
+          await fetch('https://formspree.io/f/xdkgqele', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              zipCode: zipCode.trim(),
+              email: email.trim(),
+              packageName: selectedPackage.name,
+              packagePrice: selectedPackage.price,
+              packageType: selectedPackage.type,
+              packageDescription: selectedPackage.description,
+              packageLocation: selectedPackage.location,
+              source: 'Package Purchase Modal',
+              timestamp: new Date().toISOString(),
+            }),
+          })
+        } catch (formspreeError) {
+          console.log('Formspree submission failed (non-critical):', formspreeError)
+        }
+        
         // Reset form
         setZipCode('')
         setEmail('')
         setErrors({})
         
-        // Redirect to Stripe checkout
-        window.location.href = selectedPackage.href
+        // Redirect to Stripe Checkout
+        if (checkoutData.url) {
+          window.location.href = checkoutData.url
+        } else {
+          throw new Error('No checkout URL received')
+        }
       } else {
-        throw new Error('Failed to submit')
+        throw new Error('Failed to create checkout session')
       }
     } catch (error) {
-      console.error('Error submitting form:', error)
-      setErrors({ email: 'Failed to submit. Please try again.' })
+      console.error('Error creating checkout session:', error)
+      setErrors({ email: 'Failed to create checkout session. Please try again.' })
     } finally {
       setIsSubmitting(false)
     }
