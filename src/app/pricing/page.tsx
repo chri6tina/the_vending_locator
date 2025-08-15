@@ -10,7 +10,6 @@ import Link from 'next/link'
 import { ChevronDownIcon, MapPinIcon } from '@heroicons/react/24/outline'
 import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, UsersIcon } from '@heroicons/react/24/solid'
 import { useState, useEffect } from 'react'
-import { motion } from 'framer-motion'
 
 const faqs = [
   {
@@ -31,7 +30,7 @@ const faqs = [
   },
   {
     question: "What if a location is no longer available?",
-    answer: "We provide replacement leads if a location becomes unavailable. Our database is constantly updated to ensure accuracy and availability."
+    answer: "We provide replacement leads if a location becomes unavailable. Our database is constantly updated to ensure accuracy and relevance."
   },
   {
     question: "Do you offer refunds?",
@@ -192,12 +191,7 @@ export default function Pricing() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 py-12 sm:py-16 lg:py-20 lg:px-8">
           <div className="mx-auto max-w-4xl text-center">
             {/* Active Users Counter Pill */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="mb-6 p-4 bg-cream/50 backdrop-blur-sm rounded-2xl border border-gray-200 shadow-sm max-w-md mx-auto"
-            >
+            <div className="mb-6 p-4 bg-cream/50 backdrop-blur-sm rounded-2xl border border-gray-200 shadow-sm max-w-md mx-auto">
               <div className="flex items-center justify-center gap-3">
                 <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
                 <span className="text-sm font-medium text-chocolate">
@@ -210,32 +204,17 @@ export default function Pricing() {
               >
                 Including {userNames[currentUserIndex]}
               </div>
-            </motion.div>
+            </div>
 
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-3xl sm:text-4xl lg:text-5xl font-playfair font-bold tracking-tight text-chocolate px-4 sm:px-0"
-            >
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-playfair font-bold tracking-tight text-chocolate px-4 sm:px-0">
               Qualified Vending<br />Location Leads
-            </motion.h1>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="mt-4 sm:mt-6 text-lg sm:text-xl leading-8 sm:leading-9 text-chocolate/70 px-4 sm:px-0 max-w-3xl mx-auto"
-            >
+            </h1>
+            <p className="mt-4 sm:mt-6 text-lg sm:text-xl leading-8 sm:leading-9 text-chocolate/70 px-4 sm:px-0 max-w-3xl mx-auto">
               Get pre-qualified vending machine locations delivered to your inbox. No monthly fees, just results that help you grow your vending business.
-            </motion.p>
+            </p>
 
             {/* Trust/Feature Badges */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-              className="mt-6 sm:mt-8 grid grid-cols-2 gap-4 max-w-md mx-auto"
-            >
+            <div className="mt-6 sm:mt-8 grid grid-cols-2 gap-4 max-w-md mx-auto">
               <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
                 <div className="flex items-center gap-3">
                   <CheckBadgeIcon className="h-5 w-5 text-green-600" />
@@ -260,15 +239,10 @@ export default function Pricing() {
                   <span className="text-sm font-medium text-chocolate">Quality Research</span>
                 </div>
               </div>
-            </motion.div>
+            </div>
 
             {/* CTA Buttons */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.8 }}
-              className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 px-4 sm:px-0"
-            >
+            <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 px-4 sm:px-0">
               <Link
                 href="/hot-leads"
                 className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors"
@@ -281,15 +255,10 @@ export default function Pricing() {
               >
                 View Pricing →
               </Link>
-            </motion.div>
+            </div>
 
             {/* Social Proof */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 1.0 }}
-              className="mt-6 sm:mt-8 px-4 sm:px-0"
-            >
+            <div className="mt-6 sm:mt-8 px-4 sm:px-0">
               <div className="flex items-center justify-center gap-3 mb-3">
                 <div className="flex -space-x-2">
                   <div className="w-8 h-8 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full border-2 border-white shadow-sm flex items-center justify-center">
@@ -310,15 +279,10 @@ export default function Pricing() {
               <p className="text-sm text-chocolate/60">
                 "Found my best location in 3 days!" - <span className="font-semibold">Mike R., Texas</span>
               </p>
-            </motion.div>
+            </div>
 
             {/* Key Statistics */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 1.2 }}
-              className="mt-6 sm:mt-8 grid grid-cols-3 gap-6 max-w-md mx-auto"
-            >
+            <div className="mt-6 sm:mt-8 grid grid-cols-3 gap-6 max-w-md mx-auto">
               <div className="text-center">
                 <div className="text-2xl font-bold text-bronze">500+</div>
                 <div className="text-sm text-chocolate/70">Locations Found</div>
@@ -331,7 +295,7 @@ export default function Pricing() {
                 <div className="text-2xl font-bold text-bronze">4.9★</div>
                 <div className="text-sm text-chocolate/70">Rating</div>
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </div>
