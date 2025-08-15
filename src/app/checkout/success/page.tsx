@@ -38,7 +38,7 @@ function CheckoutSuccessContent() {
       const response = await fetch(`/api/verify-session?session_id=${sessionId}`)
       const data = await response.json()
 
-      if (data.ok && data.paymentStatus === 'paid') {
+      if (data.ok && data.sessionData?.paymentStatus === 'paid') {
         setPaymentDetails({
           amount: data.amount,
           currency: data.currency,
