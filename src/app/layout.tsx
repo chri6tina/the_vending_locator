@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { ZipCodeModalProvider } from '@/contexts/ZipCodeModalContext'
-import { AuthProvider } from '@/contexts/AuthContext'
 import Script from 'next/script'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -54,11 +53,9 @@ export default function RootLayout({
           id="vending-locator-tracking"
         />
         
-        <AuthProvider>
-          <ZipCodeModalProvider>
-            {children}
-          </ZipCodeModalProvider>
-        </AuthProvider>
+        <ZipCodeModalProvider>
+          {children}
+        </ZipCodeModalProvider>
       </body>
     </html>
   )
