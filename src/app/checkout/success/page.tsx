@@ -206,6 +206,14 @@ function CheckoutSuccessContent() {
                   <p>Your location package will be delivered within 3-5 business days</p>
                 </div>
               </div>
+              
+              {/* Hot Leads Disclaimer */}
+              <div className="mt-4 p-4 bg-amber-50 border border-amber-200 rounded-lg">
+                <p className="text-sm text-amber-800">
+                  <strong>Note:</strong> Hot leads are not included in the 3-5 day delivery timeframe. 
+                  Hot leads require additional research time and will be delivered separately when ready.
+                </p>
+              </div>
             </div>
 
             {/* Action Buttons */}
