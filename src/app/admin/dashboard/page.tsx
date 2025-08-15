@@ -2,6 +2,8 @@
 
 import { useState, useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
+import { setNotificationCallbacks } from '@/lib/tracking-store'
+import notificationSounds from '@/lib/notification-sounds'
 
 interface LiveVisitor {
   id: string
@@ -57,7 +59,35 @@ export default function AdminDashboard() {
   const [isLoading, setIsLoading] = useState(false)
   const [isUpdating, setIsUpdating] = useState(false)
   const [lastUpdated, setLastUpdated] = useState<Date>(new Date())
+  const [soundsEnabled, setSoundsEnabled] = useState(true)
+  const [soundVolume, setSoundVolume] = useState(0.3)
   const updateTimeoutRef = useRef<NodeJS.Timeout | null>(null)
+
+  // Set up notification callbacks for sounds
+  useEffect(() => {
+    // Initialize notification sounds
+    notificationSounds.init()
+    
+    // Set up callbacks for different tracking events
+    setNotificationCallbacks({
+      onNewVisitor: (visitor: LiveVisitor) => {
+        console.log('🎵 New visitor detected:', visitor)
+        if (soundsEnabled) {
+          notificationSounds.playNewVisitorSound()
+        }
+      },
+      onPageView: (data: any) => {
+        if (soundsEnabled && data.action !== 'page_view') {
+          notificationSounds.playPageViewSound()
+        }
+      },
+      onScroll: (data: any) => {
+        if (soundsEnabled) {
+          notificationSounds.playScrollSound()
+        }
+      }
+    })
+  }, [soundsEnabled])
 
   // Fetch real tracking data
   useEffect(() => {
@@ -123,6 +153,17 @@ export default function AdminDashboard() {
 
   const stopTracking = () => {
     setIsTracking(false)
+  }
+
+  const toggleSounds = () => {
+    const newState = !soundsEnabled
+    setSoundsEnabled(newState)
+    notificationSounds.setEnabled(newState)
+  }
+
+  const updateSoundVolume = (volume: number) => {
+    setSoundVolume(volume)
+    notificationSounds.setVolume(volume)
   }
 
   const getDeviceIcon = (userAgent: string) => {
@@ -250,17 +291,53 @@ export default function AdminDashboard() {
                       <option value="30d">Last 30 Days</option>
                     </select>
                     
-                    {/* Tracking Controls */}
-                    <button
-                      onClick={isTracking ? stopTracking : startTracking}
-                      className={`px-4 py-2 rounded-lg font-medium transition-colors ${
-                        isTracking 
-                          ? 'bg-red-500 hover:bg-red-600 text-white' 
-                          : 'bg-green-500 hover:bg-green-600 text-white'
-                      }`}
-                    >
-                      {isTracking ? 'Stop Tracking' : 'Start Tracking'}
-                    </button>
+                                         {/* Sound Controls */}
+                     <div className="flex items-center gap-3">
+                       <button
+                         onClick={toggleSounds}
+                         className={`p-2 rounded-lg transition-colors ${
+                           soundsEnabled 
+                             ? 'bg-green-100 text-green-700 hover:bg-green-200' 
+                             : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                         }`}
+                         title={soundsEnabled ? 'Disable sounds' : 'Enable sounds'}
+                       >
+                         {soundsEnabled ? (
+                           <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                             <path fillRule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.617.794L4.5 15H2a1 1 0 01-1-1V6a1 1 0 011-1h2.5l4.883-3.794a1 1 0 011.617.794zM12.293 7.293a1 1 0 011.414 0L15 8.586l1.293-1.293a1 1 0 111.414 1.414L16.414 10l1.293 1.293a1 1 0 01-1.414 1.414L15 11.414l-1.293 1.293a1 1 0 01-1.414-1.414L13.586 10l-1.293-1.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                           </svg>
+                         ) : (
+                           <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                             <path fillRule="evenodd" d="M9.383 3.076A1 1 0 0110 4v12a1 1 0 01-1.617.794L4.5 15H2a1 1 0 01-1-1V6a1 1 0 011-1h2.5l4.883-3.794a1 1 0 011.617.794zM12.293 7.293a1 1 0 011.414 0L15 8.586l1.293-1.293a1 1 0 111.414 1.414L16.414 10l1.293 1.293a1 1 0 01-1.414 1.414L15 11.414l-1.293 1.293a1 1 0 01-1.414-1.414L13.586 10l-1.293-1.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                           </svg>
+                         )}
+                       </button>
+                       
+                       <div className="flex items-center gap-2">
+                         <span className="text-xs text-stone">Volume:</span>
+                         <input
+                           type="range"
+                           min="0"
+                           max="1"
+                           step="0.1"
+                           value={soundVolume}
+                           onChange={(e) => updateSoundVolume(parseFloat(e.target.value))}
+                           className="w-16 h-2 bg-stone/20 rounded-lg appearance-none cursor-pointer"
+                         />
+                       </div>
+                     </div>
+                     
+                     {/* Tracking Controls */}
+                     <button
+                       onClick={isTracking ? stopTracking : startTracking}
+                       className={`px-4 py-2 rounded-lg font-medium transition-colors ${
+                         isTracking 
+                           ? 'bg-red-500 hover:bg-red-600 text-white' 
+                           : 'bg-green-500 hover:bg-green-600 text-white'
+                       }`}
+                     >
+                       {isTracking ? 'Stop Tracking' : 'Start Tracking'}
+                     </button>
                   </div>
                 </div>
               </div>
@@ -353,18 +430,24 @@ export default function AdminDashboard() {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
                 {/* Live Visitors */}
                 <div className="bg-white rounded-xl border border-stone/20 p-6 shadow-sm">
-                  <div className="flex items-center justify-between mb-4">
-                    <h3 className="text-xl font-semibold text-charcoal">Live Visitors</h3>
-                    <div className="flex items-center gap-2">
-                      <span className="text-sm text-stone">Real-time activity</span>
-                      {isUpdating && (
-                        <div className="flex items-center gap-1 text-xs text-yellow-600">
-                          <div className="w-2 h-2 bg-yellow-500 rounded-full animate-pulse"></div>
-                          <span>Updating...</span>
-                        </div>
-                      )}
-                    </div>
-                  </div>
+                                     <div className="flex items-center justify-between mb-4">
+                     <h3 className="text-xl font-semibold text-charcoal">Live Visitors</h3>
+                     <div className="flex items-center gap-2">
+                       <span className="text-sm text-stone">Real-time activity</span>
+                       {isUpdating && (
+                         <div className="flex items-center gap-1 text-xs text-yellow-600">
+                           <div className="w-2 h-2 bg-yellow-500 rounded-full animate-pulse"></div>
+                           <span>Updating...</span>
+                         </div>
+                       )}
+                       {soundsEnabled && (
+                         <div className="flex items-center gap-1 text-xs text-green-600">
+                           <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                           <span>🔊 Sounds ON</span>
+                         </div>
+                       )}
+                     </div>
+                   </div>
                   {isLoading ? (
                     <div className="text-center py-12">
                       <div className="w-16 h-16 bg-stone/10 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -550,26 +633,36 @@ export default function AdminDashboard() {
               <div className="bg-white rounded-xl border border-stone/20 p-6 shadow-sm">
                 <div className="flex items-center justify-between mb-4">
                   <h3 className="text-xl font-semibold text-charcoal">Real-time Activity Feed</h3>
-                  <div className="flex items-center gap-2">
-                    <button
-                      onClick={fetchLiveData}
-                      disabled={isUpdating}
-                      className="px-3 py-1 text-xs bg-navy text-white rounded hover:bg-navy/80 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
-                    >
-                      {isUpdating ? 'Updating...' : 'Refresh Now'}
-                    </button>
-                    <span className="text-sm text-stone">Auto-refresh:</span>
-                    <select 
-                      value={refreshInterval / 1000}
-                      onChange={(e) => setRefreshInterval(parseInt(e.target.value) * 1000)}
-                      className="px-2 py-1 border border-stone rounded text-xs bg-white"
-                    >
-                      <option value={15}>15s</option>
-                      <option value={30}>30s</option>
-                      <option value={60}>1m</option>
-                      <option value={120}>2m</option>
-                    </select>
-                  </div>
+                                     <div className="flex items-center gap-2">
+                     <button
+                       onClick={fetchLiveData}
+                       disabled={isUpdating}
+                       className="px-3 py-1 text-xs bg-navy text-white rounded hover:bg-navy/80 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                     >
+                       {isUpdating ? 'Updating...' : 'Refresh Now'}
+                     </button>
+                     
+                     {/* Test Sound Button */}
+                     <button
+                       onClick={() => notificationSounds.playNewVisitorSound()}
+                       className="px-3 py-1 text-xs bg-green-600 text-white rounded hover:bg-green-700 transition-colors"
+                       title="Test notification sound"
+                     >
+                       🔊 Test Sound
+                     </button>
+                     
+                     <span className="text-sm text-stone">Auto-refresh:</span>
+                     <select 
+                       value={refreshInterval / 1000}
+                       onChange={(e) => setRefreshInterval(parseInt(e.target.value) * 1000)}
+                       className="px-2 py-1 border border-stone rounded text-xs bg-white"
+                     >
+                       <option value={15}>15s</option>
+                       <option value={30}>30s</option>
+                       <option value={60}>1m</option>
+                       <option value={120}>2m</option>
+                     </select>
+                   </div>
                 </div>
                 <div className="bg-stone/5 rounded-lg p-4">
                   <div className="flex items-center gap-2 text-sm text-stone">

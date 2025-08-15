@@ -5,6 +5,18 @@ export let trackingData = []
 export let liveVisitors = new Map()
 export let pageViews = new Map()
 
+// Callback for when new visitors arrive (for notification sounds)
+let onNewVisitorCallback = null
+let onPageViewCallback = null
+let onScrollCallback = null
+
+// Set callbacks for notification sounds
+export function setNotificationCallbacks(callbacks) {
+  if (callbacks.onNewVisitor) onNewVisitorCallback = callbacks.onNewVisitor
+  if (callbacks.onPageView) onPageViewCallback = callbacks.onPageView
+  if (callbacks.onScroll) onScrollCallback = callbacks.onScroll
+}
+
 // Helper function to add tracking data
 export function addTrackingData(data) {
   trackingData.push(data)
@@ -33,6 +45,9 @@ export function updateLiveVisitors(data) {
         }
       }
     } else if (data.action === 'page_view' || !data.action) {
+      // Check if this is a new visitor
+      const isNewVisitor = !liveVisitors.has(visitorKey)
+      
       // New page view or initial visit
       const visitor = {
         id: `visitor-${Date.now()}`,
@@ -51,11 +66,26 @@ export function updateLiveVisitors(data) {
       }
       
       liveVisitors.set(visitorKey, visitor)
+      
+      // Trigger notification sound for new visitors
+      if (isNewVisitor && onNewVisitorCallback) {
+        onNewVisitorCallback(visitor)
+      }
+      
+      // Trigger page view sound
+      if (onPageViewCallback) {
+        onPageViewCallback(data)
+      }
     } else if (data.action === 'scroll_depth') {
       // Update scroll depth
       if (liveVisitors.has(visitorKey)) {
         const visitor = liveVisitors.get(visitorKey)
         visitor.scrollDepth = Math.max(visitor.scrollDepth, data.scrollDepth || 0)
+        
+        // Trigger scroll sound for milestone scrolls
+        if (onScrollCallback && [25, 50, 75, 100].includes(data.scrollDepth)) {
+          onScrollCallback(data)
+        }
       }
     }
   }
