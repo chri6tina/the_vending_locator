@@ -151,7 +151,7 @@ function CheckoutSuccessContent() {
             </h1>
             
             <p className="mt-6 text-lg leading-8 text-chocolate/70">
-              Thank you for choosing The Vending Locator. Your {paymentDetails?.planName} package is being prepared.
+              Thank you for choosing The Vending Locator! We are diligently working on getting your leads together. We have your zip code and email address to begin working.
             </p>
           </div>
         </div>
@@ -211,15 +211,15 @@ function CheckoutSuccessContent() {
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
-                href="/admin/dashboard"
+                href="/"
                 className="flex-1 bg-navy text-white px-6 py-3 rounded-lg font-semibold text-center hover:bg-navy-light transition-colors"
               >
-                View Dashboard
+                Go Home
               </Link>
               
               <Link
                 href="/pricing"
-                className="flex-1 bg-stone-200 text-chocolate px-6 py-3 rounded-lg font-semibold text-center hover:bg-stone-300 transition-colors"
+                className="flex-1 bg-stone-200 text-chocolate px-6 py-3 rounded-lg font-semibold text-center hover:bg-stone-300 transition-colors border-2 border-stone-300"
               >
                 Browse More Plans
               </Link>
@@ -227,9 +227,9 @@ function CheckoutSuccessContent() {
           </div>
 
           {/* Support Section */}
-          <div className="mt-8 text-center">
-            <p className="text-stone-600 mb-4">
-              Questions about your order? We're here to help!
+          <div className="mt-12 text-center">
+            <p className="text-stone-600 mb-6 text-lg">
+              If you have any questions, please reach out to us on Telegram @thevendinglocator
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
