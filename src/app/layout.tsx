@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { ZipCodeModalProvider } from '@/contexts/ZipCodeModalContext'
+import { AuthProvider } from '@/contexts/AuthContext'
+import Script from 'next/script'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -30,9 +32,33 @@ export default function RootLayout({
         <link rel="alternate icon" href="/favicon.ico" />
       </head>
       <body className={inter.className}>
-        <ZipCodeModalProvider>
-          {children}
-        </ZipCodeModalProvider>
+        {/* Google Ads Conversion Tracking */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-16569722490"
+          strategy="afterInteractive"
+          id="google-ads-tracking"
+        />
+        <Script id="google-ads-config" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-16569722490');
+          `}
+        </Script>
+        
+        {/* User Activity Tracking Script */}
+        <Script
+          src="/tracking.js"
+          strategy="afterInteractive"
+          id="vending-locator-tracking"
+        />
+        
+        <AuthProvider>
+          <ZipCodeModalProvider>
+            {children}
+          </ZipCodeModalProvider>
+        </AuthProvider>
       </body>
     </html>
   )

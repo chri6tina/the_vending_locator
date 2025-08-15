@@ -7,6 +7,7 @@ import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 import Link from 'next/link'
 import { MapPinIcon } from '@heroicons/react/24/outline'
+import { trackLocationSearch } from '@/lib/conversion-tracking'
 
 export default function Home() {
   return (
@@ -33,7 +34,8 @@ export default function Home() {
               {['Texas', 'California', 'Florida', 'New York', 'Illinois', 'Arizona', 'Washington', 'Pennsylvania'].map((state, index) => (
                 <div
                   key={state}
-                  className="bg-cream rounded-lg p-4 hover:bg-navy/5 transition-colors"
+                  className="bg-cream rounded-lg p-4 hover:bg-navy/5 transition-colors cursor-pointer"
+                  onClick={() => trackLocationSearch(state, 'state_click')}
                 >
                   <div className="text-sm sm:text-base font-medium text-chocolate">{state}</div>
                 </div>

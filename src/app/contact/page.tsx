@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import { motion } from 'framer-motion'
+import { trackFormSubmission, trackContactRequest } from '@/lib/conversion-tracking'
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -31,6 +32,31 @@ export default function Contact() {
       })
       
       if (response.ok) {
+        // Track successful form submission conversion
+        trackFormSubmission('contact', '/contact')
+        trackContactRequest('form', '/contact')
+        
+        // Also submit to our forms API for admin tracking
+        try {
+          await fetch('/api/forms', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              page: '/contact',
+              formType: 'contact',
+              customerName: formData.name,
+              customerEmail: formData.email,
+              customerPhone: formData.phone,
+              customerCompany: formData.company,
+              notes: `Vending Experience: ${formData.vendingExperience}\n\nMessage: ${formData.message}`
+            }),
+          })
+        } catch (apiError) {
+          console.log('Forms API submission failed (non-critical):', apiError)
+        }
+        
         setSubmitStatus('success')
         setFormData({
           name: '',

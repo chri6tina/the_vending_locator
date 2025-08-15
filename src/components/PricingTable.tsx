@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { CheckIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
 import { useZipCodeModalContext } from '@/contexts/ZipCodeModalContext'
+import { trackPricingView, trackLeadGeneration } from '@/lib/conversion-tracking'
 
 const plans = [
   {
@@ -111,6 +112,11 @@ export default function PricingTable() {
 
   const handlePlanClick = (plan: typeof plans[0]) => {
     setSelectedPlan(plan.name)
+    
+    // Track pricing view and lead generation conversion
+    trackPricingView(plan.name, '/pricing')
+    trackLeadGeneration('pricing_click', '/pricing', parseFloat(plan.price.replace('$', '')))
+    
     openModal({
       name: plan.name,
       price: plan.price,
