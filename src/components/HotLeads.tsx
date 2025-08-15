@@ -1,6 +1,5 @@
 'use client'
 
-import { motion } from 'framer-motion'
 import { CheckIcon } from '@heroicons/react/24/outline'
 import { useZipCodeModalContext } from '@/contexts/ZipCodeModalContext'
 
@@ -85,107 +84,84 @@ export default function HotLeads() {
     <div id="packages" className="bg-warm-white py-16 sm:py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-2xl sm:text-3xl lg:text-4xl font-playfair font-bold tracking-tight text-charcoal px-4 sm:px-0"
-          >
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-playfair font-bold tracking-tight text-charcoal px-4 sm:px-0">
             Hot Location Leads
-          </motion.h2>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            viewport={{ once: true }}
-            className="mt-4 sm:mt-6 text-base sm:text-lg leading-7 sm:leading-8 text-stone px-4 sm:px-0"
-          >
-            Get qualified vending machine locations delivered to your inbox. No monthly fees, just results.
-          </motion.p>
+          </h2>
+          <p className="text-lg sm:text-xl text-chocolate/70 leading-relaxed max-w-3xl mx-auto mt-4">
+            Get immediate access to pre-verified vending machine locations. 
+            These are ready-to-place locations that have been personally researched and verified.
+          </p>
         </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          viewport={{ once: true }}
-          className="mt-12 sm:mt-16 grid grid-cols-1 gap-6 sm:gap-8 lg:grid-cols-2 xl:grid-cols-4"
-        >
+        {/* Package Cards */}
+        <div className="mt-12 sm:mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {packages.map((packageData, index) => (
-            <motion.div
+            <div
               key={packageData.name}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.1 * index }}
-              viewport={{ once: true }}
-              className={`relative bg-white rounded-2xl shadow-lg border-2 p-6 sm:p-8 flex flex-col h-full ${
-                packageData.popular
-                  ? 'border-navy scale-105'
-                  : 'border-gray-200 hover:border-navy/50'
+              className={`relative bg-white rounded-2xl shadow-lg border-2 p-6 sm:p-8 cursor-pointer transition-all duration-200 hover:shadow-xl hover:scale-105 ${
+                packageData.popular 
+                  ? 'border-navy bg-gradient-to-br from-navy/5 to-blue-50' 
+                  : 'border-gray-200 hover:border-navy/30'
               }`}
+              onClick={() => handlePackageClick(packageData)}
             >
               {packageData.popular && (
-                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <span className="bg-navy text-white px-3 sm:px-4 py-2 rounded-full text-xs sm:text-sm font-semibold">
+                <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                  <span className="bg-navy text-white px-4 py-1 rounded-full text-sm font-semibold">
                     Most Popular
                   </span>
                 </div>
               )}
-
-              <div className="text-center flex-1">
-                <h3 className="text-xl sm:text-2xl font-playfair font-bold text-charcoal mb-2 sm:mb-3 leading-tight">
-                  {packageData.name}
-                </h3>
-                <div className="text-3xl sm:text-4xl font-playfair font-bold text-bronze mb-2 sm:mb-3">
-                  {packageData.price}
+              
+              <div className="text-center mb-6">
+                <h3 className="text-xl sm:text-2xl font-bold text-charcoal mb-2">{packageData.name}</h3>
+                <div className="mb-4">
+                  <span className="text-3xl sm:text-4xl font-bold text-navy">{packageData.price}</span>
+                  <span className="text-lg text-stone"> one-time</span>
                 </div>
-                <div className="text-base sm:text-lg font-semibold text-navy mb-3 sm:mb-4">
-                  {packageData.location}
-                </div>
-                <p className="text-sm sm:text-base text-stone mb-4 sm:mb-6 leading-relaxed">{packageData.description}</p>
-
-                <ul className="space-y-2 sm:space-y-3 mb-6 sm:mb-8 text-left">
-                  {packageData.features.map((feature) => (
-                    <li key={feature} className="flex items-start">
-                      <CheckIcon className="h-4 w-4 sm:h-5 sm:w-5 text-bronze mt-0.5 mr-2 sm:mr-3 flex-shrink-0" />
-                      <span className="text-sm sm:text-base text-stone leading-relaxed">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
+                <p className="text-stone text-sm mb-4">{packageData.description}</p>
+                <div className="text-navy font-semibold text-lg mb-3">{packageData.location}</div>
               </div>
 
-              <div className="mt-auto">
-                <button
-                  onClick={() => handlePackageClick(packageData)}
-                  className={`w-full py-3 sm:py-4 px-4 sm:px-6 rounded-lg font-semibold transition-all duration-200 text-sm sm:text-base ${
-                    packageData.popular
-                      ? 'bg-navy text-white hover:bg-navy-light'
-                      : 'bg-charcoal text-white hover:bg-opacity-90'
-                  }`}
-                >
-                  Get This Package
-                </button>
+              {/* Features for this package */}
+              <div className="space-y-3 mb-6">
+                {packageData.features.map((feature, idx) => (
+                  <div key={idx} className="flex items-start space-x-3">
+                    <CheckIcon className="h-5 w-5 text-bronze mt-0.5 flex-shrink-0" />
+                    <div>
+                      <div className="text-sm font-medium text-charcoal">{feature}</div>
+                    </div>
+                  </div>
+                ))}
               </div>
-            </motion.div>
+              
+              {/* Get Started Button */}
+              <button
+                onClick={() => handlePackageClick(packageData)}
+                className={`w-full py-3 px-6 rounded-lg font-semibold text-white transition-all duration-200 text-center block ${
+                  packageData.popular
+                    ? 'bg-navy hover:bg-navy-light shadow-lg'
+                    : 'bg-charcoal hover:bg-opacity-90'
+                }`}
+              >
+                Get Started
+              </button>
+            </div>
           ))}
-        </motion.div>
+        </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          viewport={{ once: true }}
-          className="mt-12 sm:mt-16 text-center px-4 sm:px-0"
-        >
-          <p className="text-sm sm:text-base text-stone">
-            Need a custom package?{' '}
-            <a href="/contact" className="font-semibold text-navy hover:text-navy-light">
-              Contact us
-            </a>{' '}
-            for personalized solutions.
+        {/* CTA Section */}
+        <div className="mt-16 text-center">
+          <p className="text-lg text-chocolate/70 mb-6">
+            Need a custom package or have specific requirements?
           </p>
-        </motion.div>
+          <a
+            href="/contact"
+            className="inline-flex items-center px-8 py-3 bg-navy text-white rounded-lg font-semibold hover:bg-navy-light transition-colors"
+          >
+            Contact Us
+          </a>
+        </div>
       </div>
     </div>
   )

@@ -1,19 +1,12 @@
 'use client'
 
-import { motion } from 'framer-motion'
 import { ArrowRightIcon } from '@heroicons/react/24/outline'
 
 export default function VendingCourse() {
   return (
     <div className="bg-white py-16 sm:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="mx-auto max-w-2xl text-center"
-        >
+        <div className="mx-auto max-w-2xl text-center">
           <div className="bg-white rounded-2xl shadow-lg border border-gray-200 p-8 sm:p-12">
             <h2 className="text-2xl sm:text-3xl font-playfair font-bold text-chocolate mb-4">
               Looking for a How-to-Start Guide?
@@ -31,16 +24,10 @@ export default function VendingCourse() {
               <ArrowRightIcon className="h-4 w-4" />
             </a>
           </div>
-        </motion.div>
+        </div>
 
         {/* Success Graph Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          viewport={{ once: true }}
-          className="mt-16 mx-auto max-w-4xl"
-        >
+        <div className="mt-16 mx-auto max-w-4xl">
           <div className="text-center mb-12">
             <h3 className="text-2xl sm:text-3xl font-playfair font-bold text-chocolate mb-4">
               Our Success Story
@@ -101,123 +88,81 @@ export default function VendingCourse() {
                 </div>
               </div>
             </div>
-
+            
             {/* Graph Legend */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-              <div className="bg-cream/50 rounded-lg p-4">
-                <div className="text-2xl font-bold text-navy">2,847+</div>
-                <div className="text-sm text-chocolate/70">Vendors Helped</div>
-              </div>
-              <div className="bg-cream/50 rounded-lg p-4">
-                <div className="text-2xl font-bold text-navy">500K+</div>
-                <div className="text-sm text-chocolate/70">Locations Found</div>
-              </div>
-              <div className="bg-cream/50 rounded-lg p-4">
-                <div className="text-2xl font-bold text-navy">15K+</div>
-                <div className="text-sm text-chocolate/70">Deals Closed</div>
-              </div>
+            <div className="text-center">
+              <p className="text-sm text-chocolate/70">
+                <span className="font-semibold text-navy">Growth in locations found</span> for our vending operators
+              </p>
             </div>
           </div>
-        </motion.div>
+        </div>
 
-        {/* SEO Content Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          viewport={{ once: true }}
-          className="mt-16 mx-auto max-w-6xl"
-        >
-          <div className="bg-white rounded-2xl shadow-lg border border-gray-200 p-8 sm:p-12">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-              {/* Left Column */}
-              <div>
-                <h3 className="text-2xl sm:text-3xl font-playfair font-bold text-chocolate mb-6">
-                  Find Vending Machine Locations Near You
-                </h3>
-                <div className="space-y-4 text-chocolate/80">
-                  <p>
-                    Discover the best vending machine locations in your area with our comprehensive database of qualified businesses. 
-                    Whether you're looking for office buildings, retail stores, hospitals, or schools, we provide detailed information 
-                    about each location including foot traffic, business hours, and decision-maker contact details.
-                  </p>
-                  <p>
-                    Our vending machine location leads are pre-qualified and verified, saving you hours of research time. 
-                    Each lead includes essential business information, contact details, and placement opportunities that can 
-                    help you expand your vending machine business quickly and efficiently.
-                  </p>
-                  <p>
-                    From snack vending machines to beverage dispensers, we help vending operators find the perfect locations 
-                    for their equipment. Our database covers major cities across the United States, including Texas, California, 
-                    Florida, New York, and many more states.
-                  </p>
+        {/* Testimonials Section */}
+        <div className="mt-16 mx-auto max-w-4xl">
+          <div className="text-center mb-12">
+            <h3 className="text-2xl sm:text-3xl font-playfair font-bold text-chocolate mb-4">
+              What Our Users Say
+            </h3>
+            <p className="text-lg text-chocolate/70">
+              Real feedback from vending operators who found success
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Testimonial 1 */}
+            <div className="bg-white rounded-2xl shadow-lg border border-gray-200 p-6">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-navy rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">
+                  M
+                </div>
+                <div>
+                  <h4 className="font-semibold text-chocolate">Mike R.</h4>
+                  <p className="text-sm text-chocolate/70">Texas</p>
                 </div>
               </div>
-
-              {/* Right Column */}
-              <div>
-                <h4 className="text-xl sm:text-2xl font-playfair font-bold text-chocolate mb-6">
-                  Why Choose Our Vending Location Leads?
-                </h4>
-                <div className="space-y-4">
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-coral rounded-full mt-2 flex-shrink-0"></div>
-                    <div>
-                      <h5 className="font-semibold text-chocolate mb-1">Pre-Qualified Locations</h5>
-                      <p className="text-sm text-chocolate/70">Every location is researched and verified for vending machine potential</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-coral rounded-full mt-2 flex-shrink-0"></div>
-                    <div>
-                      <h5 className="font-semibold text-chocolate mb-1">Detailed Business Information</h5>
-                      <p className="text-sm text-chocolate/70">Complete business profiles with contact details and placement opportunities</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-coral rounded-full mt-2 flex-shrink-0"></div>
-                    <div>
-                      <h5 className="font-semibold text-chocolate mb-1">No Monthly Fees</h5>
-                      <p className="text-sm text-chocolate/70">Pay once and get access to our entire database of vending locations</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-coral rounded-full mt-2 flex-shrink-0"></div>
-                    <div>
-                      <h5 className="font-semibold text-chocolate mb-1">Nationwide Coverage</h5>
-                      <p className="text-sm text-chocolate/70">Locations available across all major cities and states in the US</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <p className="text-stone leading-relaxed">
+                "Found my best location in 3 days! The research was spot-on and the contact details were accurate. 
+                Closed the deal within a week."
+              </p>
             </div>
 
-            {/* Bottom Section */}
-            <div className="mt-12 pt-8 border-t border-gray-200">
-              <h4 className="text-xl sm:text-2xl font-playfair font-bold text-chocolate mb-6 text-center">
-                Popular Vending Machine Location Types
-              </h4>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div className="text-center p-4 bg-cream/30 rounded-lg">
-                  <h5 className="font-semibold text-chocolate mb-2">Office Buildings</h5>
-                  <p className="text-sm text-chocolate/70">High-traffic corporate environments</p>
+            {/* Testimonial 2 */}
+            <div className="bg-white rounded-2xl shadow-lg border border-gray-200 p-6">
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-navy rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">
+                  S
                 </div>
-                <div className="text-center p-4 bg-cream/30 rounded-lg">
-                  <h5 className="font-semibold text-chocolate mb-2">Retail Stores</h5>
-                  <p className="text-sm text-chocolate/70">Shopping centers and malls</p>
-                </div>
-                <div className="text-center p-4 bg-cream/30 rounded-lg">
-                  <h5 className="font-semibold text-chocolate mb-2">Hospitals</h5>
-                  <p className="text-sm text-chocolate/70">Medical facilities and clinics</p>
-                </div>
-                <div className="text-center p-4 bg-cream/30 rounded-lg">
-                  <h5 className="font-semibold text-chocolate mb-2">Schools & Universities</h5>
-                  <p className="text-sm text-chocolate/70">Educational institutions</p>
+                <div>
+                  <h4 className="font-semibold text-chocolate">Sarah L.</h4>
+                  <p className="text-sm text-chocolate/70">Florida</p>
                 </div>
               </div>
+              <p className="text-stone leading-relaxed">
+                "The quality of leads is incredible. Each location was properly vetted and ready for placement. 
+                Saved me weeks of research time."
+              </p>
             </div>
           </div>
-        </motion.div>
+        </div>
+
+        {/* Final CTA */}
+        <div className="mt-16 text-center">
+          <div className="bg-gradient-to-r from-navy to-navy-light rounded-2xl p-8 text-white">
+            <h3 className="text-2xl sm:text-3xl font-playfair font-bold mb-4">
+              Ready to Start Your Vending Business?
+            </h3>
+            <p className="text-lg mb-6 opacity-90">
+              Get access to qualified locations and comprehensive business resources
+            </p>
+            <a
+              href="#pricing"
+              className="inline-flex items-center px-8 py-3 bg-white text-navy rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+            >
+              View Pricing Plans
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   )
