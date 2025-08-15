@@ -18,16 +18,16 @@ export async function POST(request) {
     }
 
     // Store the tracking data
-    await addTrackingData(data)
+    addTrackingData(data)
 
     // Update live visitors
-    await updateLiveVisitors(data)
+    updateLiveVisitors(data)
 
     // Update page view counts
-    await updatePageViews(data)
+    updatePageViews(data)
 
     // Clean up inactive visitors (older than 30 minutes)
-    await cleanupInactiveVisitors()
+    cleanupInactiveVisitors()
 
     return NextResponse.json({ 
       success: true, 

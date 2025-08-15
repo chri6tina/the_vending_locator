@@ -19,9 +19,9 @@ export async function POST(request) {
     }
 
     // Add the test data
-    await addTrackingData(testData)
-    await updateLiveVisitors(testData)
-    await updatePageViews(testData)
+    addTrackingData(testData)
+    updateLiveVisitors(testData)
+    updatePageViews(testData)
 
     return NextResponse.json({ 
       success: true, 
