@@ -17,6 +17,13 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
 
 export async function POST(request: NextRequest) {
   try {
+    console.log('🚀 POST request received to /api/create-checkout-session')
+    console.log('🔍 Environment check inside POST:', {
+      hasKey: !!process.env.STRIPE_SECRET_KEY,
+      keyLength: process.env.STRIPE_SECRET_KEY?.length || 0,
+      keyStart: process.env.STRIPE_SECRET_KEY?.substring(0, 7) || 'undefined'
+    })
+    
     const { email, zipCode, planName, planPrice, planId } = await request.json()
     
     if (!email || !zipCode || !planName || !planPrice) {
