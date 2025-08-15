@@ -5,6 +5,7 @@ import { useSearchParams } from 'next/navigation'
 import { CheckCircleIcon, MapPinIcon, EnvelopeIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
 import { trackPurchase } from '@/lib/conversion-tracking'
+import Header from '@/components/Header'
 
 interface PaymentDetails {
   amount: number
@@ -138,19 +139,22 @@ function CheckoutSuccessContent() {
 
   return (
     <div className="min-h-screen bg-cream">
+      {/* Header Navigation */}
+      <Header />
+      
       {/* Success Header */}
-      <div className="bg-white">
-        <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
+      <div className="bg-white border-b border-green-200">
+        <div className="mx-auto max-w-7xl px-6 py-16 sm:py-20 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
-            <div className="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-green-100 mb-6">
-              <CheckCircleIcon className="h-10 w-10 text-green-600" />
+            <div className="mx-auto flex items-center justify-center h-20 w-20 rounded-full bg-green-100 border-2 border-green-200 mb-6">
+              <CheckCircleIcon className="h-12 w-12 text-green-600" />
             </div>
             
-            <h1 className="text-3xl font-playfair font-bold tracking-tight text-chocolate sm:text-4xl">
+            <h1 className="text-4xl font-playfair font-bold tracking-tight text-chocolate sm:text-5xl mb-4">
               Payment Successful! 🎉
             </h1>
             
-            <p className="mt-6 text-lg leading-8 text-chocolate/70">
+            <p className="text-xl leading-8 text-chocolate/80 max-w-xl mx-auto">
               Thank you for choosing The Vending Locator! We are diligently working on getting your leads together. We have your zip code and email address to begin working.
             </p>
           </div>
@@ -158,76 +162,82 @@ function CheckoutSuccessContent() {
       </div>
 
       {/* Payment Details */}
-      <div className="bg-cream py-16 sm:py-24">
-        <div className="mx-auto max-w-3xl px-6 lg:px-8">
-          <div className="bg-white rounded-2xl shadow-lg border border-stone/20 p-8">
-            <h2 className="text-2xl font-playfair font-bold text-chocolate mb-6 text-center">
+      <div className="bg-cream py-16 sm:py-20">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8">
+          <div className="bg-white rounded-3xl shadow-xl border border-stone/20 p-8 lg:p-10">
+            <h2 className="text-3xl font-playfair font-bold text-chocolate mb-8 text-center">
               Order Confirmation
             </h2>
             
-            <div className="space-y-4 mb-8">
-              <div className="flex items-center justify-between p-4 bg-stone/5 rounded-lg">
-                <span className="text-stone-600 font-medium">Plan:</span>
-                <span className="text-chocolate font-semibold">{paymentDetails?.planName}</span>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+              <div className="bg-navy/5 p-6 rounded-xl border border-navy/20">
+                <span className="text-stone-600 font-medium text-sm uppercase tracking-wide">Plan</span>
+                <p className="text-chocolate font-bold text-xl mt-1">{paymentDetails?.planName}</p>
               </div>
               
-              <div className="flex items-center justify-between p-4 bg-stone/5 rounded-lg">
-                <span className="text-stone-600 font-medium">Amount:</span>
-                <span className="text-chocolate font-semibold">
+              <div className="bg-navy/5 p-6 rounded-xl border border-navy/20">
+                <span className="text-stone-600 font-medium text-sm uppercase tracking-wide">Amount</span>
+                <p className="text-chocolate font-bold text-xl mt-1">
                   ${paymentDetails?.amount} {paymentDetails?.currency?.toUpperCase()}
-                </span>
+                </p>
               </div>
               
-              <div className="flex items-center justify-between p-4 bg-stone/5 rounded-lg">
-                <span className="text-stone-600 font-medium">Transaction ID:</span>
-                <span className="text-chocolate font-mono text-sm">{paymentDetails?.txId}</span>
+              <div className="bg-navy/5 p-6 rounded-xl border border-navy/20">
+                <span className="text-stone-600 font-medium text-sm uppercase tracking-wide">ZIP Code</span>
+                <p className="text-chocolate font-bold text-xl mt-1">{paymentDetails?.zipCode}</p>
               </div>
               
-              <div className="flex items-center justify-between p-4 bg-stone/5 rounded-lg">
-                <span className="text-stone-600 font-medium">ZIP Code:</span>
-                <span className="text-chocolate font-semibold">{paymentDetails?.zipCode}</span>
+              <div className="bg-navy/5 p-6 rounded-xl border border-navy/20">
+                <span className="text-stone-600 font-medium text-sm uppercase tracking-wide">Transaction ID</span>
+                <p className="text-chocolate font-mono text-sm mt-1 break-all">{paymentDetails?.txId}</p>
               </div>
             </div>
 
             {/* Next Steps */}
-            <div className="bg-navy/5 rounded-lg p-6 mb-8">
-              <h3 className="text-lg font-semibold text-navy mb-4">What Happens Next?</h3>
-              <div className="space-y-3 text-sm text-navy/80">
-                <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 rounded-full bg-navy mt-2 flex-none" />
-                  <p>You'll receive a confirmation email at <strong>{paymentDetails?.customerEmail}</strong></p>
+            <div className="bg-navy/5 rounded-2xl p-8 mb-8 border border-navy/20">
+              <h3 className="text-2xl font-semibold text-navy mb-6 text-center">What Happens Next?</h3>
+              <div className="space-y-4 text-navy/80">
+                <div className="flex items-start gap-4 p-4 bg-white/50 rounded-xl">
+                  <div className="w-3 h-3 rounded-full bg-navy mt-2 flex-none" />
+                  <p className="text-base">You'll receive a confirmation email at <strong className="text-navy">{paymentDetails?.customerEmail}</strong></p>
                 </div>
-                <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 rounded-full bg-navy mt-2 flex-none" />
-                  <p>Our team will research qualified vending locations in your area</p>
+                <div className="flex items-start gap-4 p-4 bg-white/50 rounded-xl">
+                  <div className="w-3 h-3 rounded-full bg-navy mt-2 flex-none" />
+                  <p className="text-base">Our team will research qualified vending locations in your area</p>
                 </div>
-                <div className="flex items-start gap-3">
-                  <div className="w-2 h-2 rounded-full bg-navy mt-2 flex-none" />
-                  <p>Your location package will be delivered within 3-5 business days</p>
+                <div className="flex items-start gap-4 p-4 bg-white/50 rounded-xl">
+                  <div className="w-3 h-3 rounded-full bg-navy mt-2 flex-none" />
+                  <p className="text-base">Your location package will be delivered within 3-5 business days</p>
                 </div>
               </div>
               
               {/* Hot Leads Disclaimer */}
-              <div className="mt-4 p-4 bg-amber-50 border border-amber-200 rounded-lg">
-                <p className="text-sm text-amber-800">
-                  <strong>Note:</strong> Hot leads are not included in the 3-5 day delivery timeframe. 
-                  Hot leads require additional research time and will be delivered separately when ready.
-                </p>
+              <div className="mt-6 p-6 bg-amber-50 border border-amber-200 rounded-xl">
+                <div className="flex items-start gap-3">
+                  <div className="w-5 h-5 rounded-full bg-amber-400 mt-0.5 flex-none" />
+                  <div>
+                    <p className="text-amber-800 font-medium mb-1">Important Note</p>
+                    <p className="text-amber-700">
+                      Hot leads are not included in the 3-5 day delivery timeframe. 
+                      Hot leads require additional research time and will be delivered separately when ready.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
 
             {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-6">
               <Link
                 href="/"
-                className="flex-1 bg-navy text-white px-6 py-3 rounded-lg font-semibold text-center hover:bg-navy-light transition-colors"
+                className="flex-1 bg-navy text-white px-8 py-4 rounded-xl font-semibold text-center hover:bg-navy-dark transition-all duration-200 shadow-lg hover:shadow-xl"
               >
                 Go Home
               </Link>
               
               <Link
                 href="/pricing"
-                className="flex-1 bg-stone-200 text-chocolate px-6 py-3 rounded-lg font-semibold text-center hover:bg-stone-300 transition-colors border-2 border-stone-300"
+                className="flex-1 bg-white text-chocolate px-8 py-4 rounded-xl font-semibold text-center hover:bg-stone-50 transition-all duration-200 border-2 border-stone-300 shadow-lg hover:shadow-xl"
               >
                 Browse More Plans
               </Link>
@@ -235,24 +245,24 @@ function CheckoutSuccessContent() {
           </div>
 
           {/* Support Section */}
-          <div className="mt-12 text-center">
-            <p className="text-stone-600 mb-6 text-lg">
+          <div className="mt-16 text-center bg-stone-50 rounded-3xl p-8 border border-stone-200">
+            <p className="text-stone-700 mb-8 text-xl font-medium">
               If you have any questions, please reach out to us on Telegram @thevendinglocator
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 bg-coral text-white px-6 py-3 rounded-lg font-semibold hover:bg-coral-dark transition-colors"
+                className="inline-flex items-center gap-3 bg-navy text-white px-8 py-4 rounded-xl font-semibold hover:bg-navy-dark transition-all duration-200 shadow-lg hover:shadow-xl"
               >
-                <EnvelopeIcon className="h-5 w-5" />
+                <EnvelopeIcon className="h-6 w-6" />
                 Contact Support
               </Link>
               
               <Link
                 href="/hot-leads"
-                className="inline-flex items-center gap-2 bg-bronze text-white px-6 py-3 rounded-lg font-semibold hover:bg-bronze-dark transition-colors"
+                className="inline-flex items-center gap-3 bg-bronze text-white px-8 py-4 rounded-xl font-semibold hover:bg-bronze-dark transition-all duration-200 shadow-lg hover:shadow-xl"
               >
-                <MapPinIcon className="h-5 w-5" />
+                <MapPinIcon className="h-6 w-6" />
                 Get Hot Leads
               </Link>
             </div>
