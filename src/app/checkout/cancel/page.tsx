@@ -1,6 +1,5 @@
 'use client'
 
-import { motion } from 'framer-motion'
 import { XCircleIcon, ArrowLeftIcon, MapPinIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
 
@@ -11,32 +10,17 @@ export default function CheckoutCancel() {
       <div className="bg-white">
         <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
-            <motion.div
-              initial={{ scale: 0 }}
-              animate={{ scale: 1 }}
-              transition={{ duration: 0.5, type: 'spring' }}
-              className="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-red-100 mb-6"
-            >
+            <div className="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-red-100 mb-6">
               <XCircleIcon className="h-10 w-10 text-red-600" />
-            </motion.div>
+            </div>
             
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-3xl font-playfair font-bold tracking-tight text-chocolate sm:text-4xl"
-            >
+            <h1 className="text-3xl font-playfair font-bold tracking-tight text-chocolate sm:text-4xl">
               Payment Cancelled
-            </motion.h1>
+            </h1>
             
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="mt-6 text-lg leading-8 text-chocolate/70"
-            >
+            <p className="mt-6 text-lg leading-8 text-chocolate/70">
               No worries! Your payment wasn't processed. You can try again anytime or explore our other options.
-            </motion.p>
+            </p>
           </div>
         </div>
       </div>
@@ -44,12 +28,7 @@ export default function CheckoutCancel() {
       {/* Main Content */}
       <div className="bg-cream py-16 sm:py-24">
         <div className="mx-auto max-w-3xl px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-            className="bg-white rounded-2xl shadow-lg border border-stone/20 p-8 text-center"
-          >
+          <div className="bg-white rounded-2xl shadow-lg border border-stone/20 p-8 text-center">
             <h2 className="text-2xl font-playfair font-bold text-chocolate mb-6">
               What Would You Like to Do?
             </h2>
@@ -93,15 +72,10 @@ export default function CheckoutCancel() {
                 Back to Homepage
               </Link>
             </div>
-          </motion.div>
+          </div>
 
           {/* Additional Options */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.8 }}
-            className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6"
-          >
+          <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Free Resources */}
             <div className="bg-white/50 backdrop-blur-sm rounded-xl p-6 border border-stone/20">
               <h3 className="text-lg font-semibold text-chocolate mb-3">
@@ -135,7 +109,7 @@ export default function CheckoutCancel() {
                 Get Support →
               </Link>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </div>
