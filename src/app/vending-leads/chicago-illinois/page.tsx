@@ -9,7 +9,7 @@ import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, TruckIcon, BanknotesIcon } from '@heroicons/react/24/solid'
+import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, TruckIcon, BanknotesIcon } from '@heroicons/react/24/outline'
 
 export default function ChicagoIllinoisVendingLeadsPage() {
   const [activeUsers, setActiveUsers] = useState(0)

@@ -9,7 +9,7 @@ import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, MountainIcon, LeafIcon } from '@heroicons/react/24/solid'
+import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CloudIcon, TreeIcon } from '@heroicons/react/24/outline'
 
 export default function BoulderColoradoVendingLeadsPage() {
   const [activeUsers, setActiveUsers] = useState(0)
@@ -323,7 +323,7 @@ export default function BoulderColoradoVendingLeadsPage() {
               </div>
               <div className="text-center p-6 bg-cream/30 rounded-xl">
                 <div className="w-12 h-12 bg-navy rounded-full flex items-center justify-center mx-auto mb-4">
-                  <MountainIcon className="w-6 h-6 text-white" />
+                  <CloudIcon className="w-6 h-6 text-white" />
                 </div>
                 <div className="text-2xl font-bold text-navy">300+</div>
                 <div className="text-sm text-chocolate/70">Trail Miles</div>
