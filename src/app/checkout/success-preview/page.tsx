@@ -21,10 +21,10 @@ export default function CheckoutSuccessPreview() {
       <Header />
       
       {/* Success Header */}
-      <div className="bg-gradient-to-br from-green-50 to-emerald-100 border-b border-green-200">
+      <div className="bg-white border-b border-green-200">
         <div className="mx-auto max-w-7xl px-6 py-16 sm:py-20 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
-            <div className="mx-auto flex items-center justify-center h-20 w-20 rounded-full bg-green-100 border-4 border-green-200 mb-6 shadow-lg">
+            <div className="mx-auto flex items-center justify-center h-20 w-20 rounded-full bg-green-100 border-2 border-green-200 mb-6">
               <CheckCircleIcon className="h-12 w-12 text-green-600" />
             </div>
             
@@ -48,31 +48,31 @@ export default function CheckoutSuccessPreview() {
             </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-              <div className="bg-gradient-to-r from-navy/5 to-navy/10 p-6 rounded-xl border border-navy/20">
+              <div className="bg-navy/5 p-6 rounded-xl border border-navy/20">
                 <span className="text-stone-600 font-medium text-sm uppercase tracking-wide">Plan</span>
                 <p className="text-chocolate font-bold text-xl mt-1">{mockPaymentDetails.planName}</p>
               </div>
               
-              <div className="bg-gradient-to-r from-navy/5 to-navy/10 p-6 rounded-xl border border-navy/20">
+              <div className="bg-navy/5 p-6 rounded-xl border border-navy/20">
                 <span className="text-stone-600 font-medium text-sm uppercase tracking-wide">Amount</span>
                 <p className="text-chocolate font-bold text-xl mt-1">
                   ${mockPaymentDetails.amount} {mockPaymentDetails.currency.toUpperCase()}
                 </p>
               </div>
               
-              <div className="bg-gradient-to-r from-navy/5 to-navy/10 p-6 rounded-xl border border-navy/20">
+              <div className="bg-navy/5 p-6 rounded-xl border border-navy/20">
                 <span className="text-stone-600 font-medium text-sm uppercase tracking-wide">ZIP Code</span>
                 <p className="text-chocolate font-bold text-xl mt-1">{mockPaymentDetails.zipCode}</p>
               </div>
               
-              <div className="bg-gradient-to-r from-navy/5 to-navy/10 p-6 rounded-xl border border-navy/20">
+              <div className="bg-navy/5 p-6 rounded-xl border border-navy/20">
                 <span className="text-stone-600 font-medium text-sm uppercase tracking-wide">Transaction ID</span>
                 <p className="text-chocolate font-mono text-sm mt-1 break-all">{mockPaymentDetails.txId}</p>
               </div>
             </div>
 
             {/* Next Steps */}
-            <div className="bg-gradient-to-r from-navy/5 to-navy/10 rounded-2xl p-8 mb-8 border border-navy/20">
+            <div className="bg-navy/5 rounded-2xl p-8 mb-8 border border-navy/20">
               <h3 className="text-2xl font-semibold text-navy mb-6 text-center">What Happens Next?</h3>
               <div className="space-y-4 text-navy/80">
                 <div className="flex items-start gap-4 p-4 bg-white/50 rounded-xl">
@@ -90,7 +90,7 @@ export default function CheckoutSuccessPreview() {
               </div>
               
               {/* Hot Leads Disclaimer */}
-              <div className="mt-6 p-6 bg-gradient-to-r from-amber-50 to-orange-50 border-2 border-amber-200 rounded-xl">
+              <div className="mt-6 p-6 bg-amber-50 border border-amber-200 rounded-xl">
                 <div className="flex items-start gap-3">
                   <div className="w-5 h-5 rounded-full bg-amber-400 mt-0.5 flex-none" />
                   <div>
@@ -108,14 +108,14 @@ export default function CheckoutSuccessPreview() {
             <div className="flex flex-col sm:flex-row gap-6">
               <Link
                 href="/"
-                className="flex-1 bg-gradient-to-r from-navy to-navy-dark text-white px-8 py-4 rounded-xl font-semibold text-center hover:from-navy-dark hover:to-navy transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                className="flex-1 bg-navy text-white px-8 py-4 rounded-xl font-semibold text-center hover:bg-navy-dark transition-all duration-200 shadow-lg hover:shadow-xl"
               >
                 Go Home
               </Link>
               
               <Link
                 href="/pricing"
-                className="flex-1 bg-white text-chocolate px-8 py-4 rounded-xl font-semibold text-center hover:bg-stone-50 transition-all duration-200 border-2 border-stone-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                className="flex-1 bg-white text-chocolate px-8 py-4 rounded-xl font-semibold text-center hover:bg-stone-50 transition-all duration-200 border-2 border-stone-300 shadow-lg hover:shadow-xl"
               >
                 Browse More Plans
               </Link>
@@ -123,22 +123,22 @@ export default function CheckoutSuccessPreview() {
           </div>
 
           {/* Support Section */}
-          <div className="mt-16 text-center bg-gradient-to-r from-stone-50 to-stone-100 rounded-3xl p-8 border border-stone-200">
+          <div className="mt-16 text-center bg-stone-50 rounded-3xl p-8 border border-stone-200">
             <p className="text-stone-700 mb-8 text-xl font-medium">
               If you have any questions, please reach out to us on Telegram @thevendinglocator
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <Link
-                href="/contact"
-                className="inline-flex items-center gap-3 bg-gradient-to-r from-coral to-coral-dark text-white px-8 py-4 rounded-xl font-semibold hover:from-coral-dark hover:to-coral transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
-              >
-                <EnvelopeIcon className="h-6 w-6" />
-                Contact Support
-              </Link>
+                             <Link
+                 href="/contact"
+                 className="inline-flex items-center gap-3 bg-navy text-white px-8 py-4 rounded-xl font-semibold hover:bg-navy-dark transition-all duration-200 shadow-lg hover:shadow-xl"
+               >
+                 <EnvelopeIcon className="h-6 w-6" />
+                 Contact Support
+               </Link>
               
               <Link
                 href="/hot-leads"
-                className="inline-flex items-center gap-3 bg-gradient-to-r from-bronze to-bronze-dark text-white px-8 py-4 rounded-xl font-semibold hover:from-bronze-dark hover:to-bronze transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+                className="inline-flex items-center gap-3 bg-bronze text-white px-8 py-4 rounded-xl font-semibold hover:bg-bronze-dark transition-all duration-200 shadow-lg hover:shadow-xl"
               >
                 <MapPinIcon className="h-6 w-6" />
                 Get Hot Leads
