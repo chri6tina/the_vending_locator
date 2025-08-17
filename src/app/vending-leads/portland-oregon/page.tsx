@@ -1,6 +1,6 @@
 'use client'
 
-import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, LeafIcon } from '@heroicons/react/24/solid'
+import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon } from '@heroicons/react/24/solid'
 import { generateCityMetadata, generateCityStructuredData } from '@/components/CityPageSEO'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
@@ -120,7 +120,7 @@ export default function PortlandOregonVendingLeadsPage() {
 
               <div className="text-center">
                 <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <LeafIcon className="w-8 h-8 text-navy" />
+                  <BuildingOfficeIcon className="w-8 h-8 text-navy" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-2">Manufacturing</h3>
                 <p className="text-stone">Strong manufacturing and industrial base</p>
