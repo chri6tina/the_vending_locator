@@ -188,7 +188,7 @@ export default function VendingLocationsPage() {
                     <div key={city.slug}>
                       {/* Vending Leads Link */}
                       <Link
-                        href={`/location/${city.slug}`}
+                        href={`/vending-leads/${city.slug}`}
                         className="block p-4 bg-gradient-to-r from-navy/5 to-navy/10 rounded-xl hover:from-navy/10 hover:to-navy/15 transition-all duration-300 border border-navy/20 hover:border-navy/30 group"
                       >
                         <div className="flex items-center justify-between">
@@ -204,7 +204,7 @@ export default function VendingLocationsPage() {
 
                 <div className="pt-4 border-t border-gray-100">
                   <Link
-                    href={`/location/${state.slug}`}
+                    href={`/vending-leads/${state.slug}`}
                     className="inline-flex items-center gap-2 text-navy hover:text-navy-light font-semibold hover:underline transition-colors"
                   >
                     View all {state.name} locations
