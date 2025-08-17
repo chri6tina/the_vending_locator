@@ -1,21 +1,11 @@
 'use client'
 
 import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon } from '@heroicons/react/24/solid'
-import { generateCityMetadata, generateCityStructuredData } from '@/components/CityPageSEO'
+import { generateCityStructuredData } from '@/components/CityPageSEO'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
-
-export const metadata = generateCityMetadata({
-  city: 'Portland',
-  state: 'Oregon',
-  stateAbbr: 'OR',
-  population: '652,503',
-  businessCount: '40,000+',
-  industries: ['Technology', 'Manufacturing', 'Healthcare', 'Food & Beverage', 'Creative Services'],
-  description: 'Portland offers excellent opportunities for vending machine placement with its growing technology sector, manufacturing base, and diverse business landscape.'
-})
 
 export default function PortlandOregonVendingLeadsPage() {
   const structuredData = generateCityStructuredData({

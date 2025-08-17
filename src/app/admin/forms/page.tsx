@@ -3,6 +3,9 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 
+// Prevent static generation during build
+export const prerender = false
+
 interface Form {
   id: string
   page: string

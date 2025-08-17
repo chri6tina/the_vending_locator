@@ -1,21 +1,11 @@
 'use client'
 
 import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, BuildingLibraryIcon } from '@heroicons/react/24/solid'
-import { generateCityMetadata, generateCityStructuredData } from '@/components/CityPageSEO'
+import { generateCityStructuredData } from '@/components/CityPageSEO'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
-
-export const metadata = generateCityMetadata({
-  city: 'Minneapolis',
-  state: 'Minnesota',
-  stateAbbr: 'MN',
-  population: '429,954',
-  businessCount: '42,000+',
-  industries: ['Healthcare', 'Financial Services', 'Manufacturing', 'Technology', 'Education'],
-  description: 'Minneapolis offers excellent opportunities for vending machine placement with its major healthcare sector, financial services industry, and diverse business landscape.'
-})
 
 export default function MinneapolisMinnesotaVendingLeadsPage() {
   const structuredData = generateCityStructuredData({

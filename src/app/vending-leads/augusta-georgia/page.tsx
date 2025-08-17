@@ -1,21 +1,11 @@
 'use client'
 
 import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, WrenchScrewdriverIcon } from '@heroicons/react/24/solid'
-import { generateCityMetadata, generateCityStructuredData } from '@/components/CityPageSEO'
+import { generateCityStructuredData } from '@/components/CityPageSEO'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
-
-export const metadata = generateCityMetadata({
-  city: 'Augusta',
-  state: 'Georgia',
-  stateAbbr: 'GA',
-  population: '202,081',
-  businessCount: '25,000+',
-  industries: ['Healthcare', 'Military', 'Education', 'Manufacturing', 'Tourism'],
-  description: 'Augusta offers excellent opportunities for vending machine placement with its major healthcare sector, military presence, and growing business landscape.'
-})
 
 export default function AugustaGeorgiaVendingLeadsPage() {
   const structuredData = generateCityStructuredData({

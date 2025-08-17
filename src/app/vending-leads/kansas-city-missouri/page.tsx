@@ -1,21 +1,11 @@
 'use client'
 
 import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, TruckIcon } from '@heroicons/react/24/solid'
-import { generateCityMetadata, generateCityStructuredData } from '@/components/CityPageSEO'
+import { generateCityStructuredData } from '@/components/CityPageSEO'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
-
-export const metadata = generateCityMetadata({
-  city: 'Kansas City',
-  state: 'Missouri',
-  stateAbbr: 'MO',
-  population: '508,090',
-  businessCount: '40,000+',
-  industries: ['Logistics', 'Manufacturing', 'Healthcare', 'Financial Services', 'Technology'],
-  description: 'Kansas City offers excellent opportunities for vending machine placement with its major logistics sector, manufacturing industry, and diverse business landscape.'
-})
 
 export default function KansasCityMissouriVendingLeadsPage() {
   const structuredData = generateCityStructuredData({

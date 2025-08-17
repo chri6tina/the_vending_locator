@@ -1,21 +1,11 @@
 'use client'
 
 import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, WrenchScrewdriverIcon } from '@heroicons/react/24/solid'
-import { generateCityMetadata, generateCityStructuredData } from '@/components/CityPageSEO'
+import { generateCityStructuredData } from '@/components/CityPageSEO'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
-
-export const metadata = generateCityMetadata({
-  city: 'Savannah',
-  state: 'Georgia',
-  stateAbbr: 'GA',
-  population: '147,780',
-  businessCount: '20,000+',
-  industries: ['Tourism', 'Logistics', 'Healthcare', 'Education', 'Manufacturing'],
-  description: 'Savannah offers excellent opportunities for vending machine placement with its major tourism sector, port logistics, and diverse business landscape.'
-})
 
 export default function SavannahGeorgiaVendingLeadsPage() {
   const structuredData = generateCityStructuredData({

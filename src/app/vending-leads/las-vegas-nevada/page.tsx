@@ -1,21 +1,11 @@
 'use client'
 
 import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, SparklesIcon } from '@heroicons/react/24/solid'
-import { generateCityMetadata, generateCityStructuredData } from '@/components/CityPageSEO'
+import { generateCityStructuredData } from '@/components/CityPageSEO'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
-
-export const metadata = generateCityMetadata({
-  city: 'Las Vegas',
-  state: 'Nevada',
-  stateAbbr: 'NV',
-  population: '651,319',
-  businessCount: '35,000+',
-  industries: ['Tourism', 'Hospitality', 'Entertainment', 'Healthcare', 'Technology'],
-  description: 'Las Vegas offers excellent opportunities for vending machine placement with its major tourism industry, hospitality sector, and diverse business landscape.'
-})
 
 export default function LasVegasNevadaVendingLeadsPage() {
   const structuredData = generateCityStructuredData({

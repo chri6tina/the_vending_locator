@@ -1,21 +1,11 @@
 'use client'
 
 import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, BeakerIcon } from '@heroicons/react/24/solid'
-import { generateCityMetadata, generateCityStructuredData } from '@/components/CityPageSEO'
+import { generateCityStructuredData } from '@/components/CityPageSEO'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
-
-export const metadata = generateCityMetadata({
-  city: 'Boston',
-  state: 'Massachusetts',
-  stateAbbr: 'MA',
-  population: '675,647',
-  businessCount: '48,000+',
-  industries: ['Healthcare', 'Education', 'Technology', 'Financial Services', 'Biotechnology'],
-  description: 'Boston offers excellent opportunities for vending machine placement with its major healthcare systems, prestigious universities, and diverse business landscape.'
-})
 
 export default function BostonMassachusettsVendingLeadsPage() {
   const structuredData = generateCityStructuredData({

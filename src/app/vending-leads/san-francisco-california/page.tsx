@@ -1,21 +1,11 @@
 'use client'
 
 import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CpuChipIcon } from '@heroicons/react/24/solid'
-import { generateCityMetadata, generateCityStructuredData } from '@/components/CityPageSEO'
+import { generateCityStructuredData } from '@/components/CityPageSEO'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
-
-export const metadata = generateCityMetadata({
-  city: 'San Francisco',
-  state: 'California',
-  stateAbbr: 'CA',
-  population: '873,965',
-  businessCount: '40,000+',
-  industries: ['Technology', 'Financial Services', 'Healthcare', 'Tourism', 'Biotechnology'],
-  description: 'San Francisco offers excellent opportunities for vending machine placement with its major technology sector, financial services, and diverse business landscape.'
-})
 
 export default function SanFranciscoCaliforniaVendingLeadsPage() {
   const structuredData = generateCityStructuredData({

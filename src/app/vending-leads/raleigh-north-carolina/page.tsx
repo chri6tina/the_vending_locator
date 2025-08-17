@@ -10,19 +10,9 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, BeakerIcon } from '@heroicons/react/24/solid'
-import { generateCityMetadata, generateCityStructuredData } from '@/components/CityPageSEO'
+import { generateCityStructuredData } from '@/components/CityPageSEO'
 
 // Generate metadata for this page
-export const metadata = generateCityMetadata({
-  city: 'Raleigh',
-  state: 'North Carolina',
-  stateAbbr: 'NC',
-  population: '474,069',
-  businessCount: '32,000+',
-  industries: ['Technology', 'Research', 'Education', 'Healthcare', 'Biotechnology'],
-  description: 'Raleigh offers excellent opportunities for vending machine placement with its Research Triangle Park, major universities, and growing technology sector.'
-})
-
 export default function RaleighNorthCarolinaVendingLeadsPage() {
   const [activeUsers, setActiveUsers] = useState(0)
   const [userNames, setUserNames] = useState([

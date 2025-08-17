@@ -10,19 +10,9 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CogIcon } from '@heroicons/react/24/solid'
-import { generateCityMetadata, generateCityStructuredData } from '@/components/CityPageSEO'
+import { generateCityStructuredData } from '@/components/CityPageSEO'
 
 // Generate metadata for this page
-export const metadata = generateCityMetadata({
-  city: 'Columbus',
-  state: 'Ohio',
-  stateAbbr: 'OH',
-  population: '898,553',
-  businessCount: '48,000+',
-  industries: ['Manufacturing', 'Education', 'Healthcare', 'Technology', 'Financial Services'],
-  description: 'Columbus offers excellent opportunities for vending machine placement with its major manufacturing sector, major universities, and growing healthcare industry.'
-})
-
 export default function ColumbusOhioVendingLeadsPage() {
   const [activeUsers, setActiveUsers] = useState(0)
   const [userNames, setUserNames] = useState([

@@ -10,18 +10,7 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, BanknotesIcon } from '@heroicons/react/24/solid'
-import { generateCityMetadata, generateCityStructuredData } from '@/components/CityPageSEO'
-
-// Generate metadata for this page
-export const metadata = generateCityMetadata({
-  city: 'Charlotte',
-  state: 'North Carolina',
-  stateAbbr: 'NC',
-  population: '885,708',
-  businessCount: '42,000+',
-  industries: ['Financial Services', 'Banking', 'Manufacturing', 'Healthcare', 'Technology'],
-  description: 'Charlotte offers excellent opportunities for vending machine placement with its major financial services sector, growing manufacturing base, and expanding healthcare industry.'
-})
+import { generateCityStructuredData } from '@/components/CityPageSEO'
 
 export default function CharlotteNorthCarolinaVendingLeadsPage() {
   const [activeUsers, setActiveUsers] = useState(0)

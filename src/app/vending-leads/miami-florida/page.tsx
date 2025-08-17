@@ -1,21 +1,11 @@
 'use client'
 
 import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, SunIcon } from '@heroicons/react/24/solid'
-import { generateCityMetadata, generateCityStructuredData } from '@/components/CityPageSEO'
+import { generateCityStructuredData } from '@/components/CityPageSEO'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
-
-export const metadata = generateCityMetadata({
-  city: 'Miami',
-  state: 'Florida',
-  stateAbbr: 'FL',
-  population: '442,241',
-  businessCount: '38,000+',
-  industries: ['Tourism', 'Healthcare', 'Financial Services', 'Technology', 'International Trade'],
-  description: 'Miami offers excellent opportunities for vending machine placement with its major tourism industry, healthcare sector, and diverse business landscape.'
-})
 
 export default function MiamiFloridaVendingLeadsPage() {
   const structuredData = generateCityStructuredData({

@@ -1,21 +1,11 @@
 'use client'
 
 import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, SparklesIcon } from '@heroicons/react/24/solid'
-import { generateCityMetadata, generateCityStructuredData } from '@/components/CityPageSEO'
+import { generateCityStructuredData } from '@/components/CityPageSEO'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
-
-export const metadata = generateCityMetadata({
-  city: 'Orlando',
-  state: 'Florida',
-  stateAbbr: 'FL',
-  population: '307,573',
-  businessCount: '32,000+',
-  industries: ['Tourism', 'Entertainment', 'Healthcare', 'Technology', 'Hospitality'],
-  description: 'Orlando offers excellent opportunities for vending machine placement with its major tourism industry, entertainment sector, and diverse business landscape.'
-})
 
 export default function OrlandoFloridaVendingLeadsPage() {
   const structuredData = generateCityStructuredData({

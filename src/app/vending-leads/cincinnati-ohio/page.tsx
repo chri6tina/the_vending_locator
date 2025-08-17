@@ -1,21 +1,11 @@
 'use client'
 
 import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, HeartIcon } from '@heroicons/react/24/solid'
-import { generateCityMetadata, generateCityStructuredData } from '@/components/CityPageSEO'
+import { generateCityStructuredData } from '@/components/CityPageSEO'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
-
-export const metadata = generateCityMetadata({
-  city: 'Cincinnati',
-  state: 'Ohio',
-  stateAbbr: 'OH',
-  population: '309,317',
-  businessCount: '33,000+',
-  industries: ['Healthcare', 'Manufacturing', 'Financial Services', 'Technology', 'Education'],
-  description: 'Cincinnati offers excellent opportunities for vending machine placement with its major healthcare sector, manufacturing industry, and diverse business landscape.'
-})
 
 export default function CincinnatiOhioVendingLeadsPage() {
   const structuredData = generateCityStructuredData({

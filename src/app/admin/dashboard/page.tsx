@@ -5,6 +5,9 @@ import { motion } from 'framer-motion'
 import { setNotificationCallbacks } from '@/lib/tracking-store'
 import notificationSounds from '@/lib/notification-sounds'
 
+// Prevent static generation during build
+export const prerender = false
+
 interface LiveVisitor {
   id: string
   sessionId: string

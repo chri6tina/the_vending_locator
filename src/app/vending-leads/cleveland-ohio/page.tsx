@@ -1,21 +1,11 @@
 'use client'
 
 import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, WrenchScrewdriverIcon } from '@heroicons/react/24/solid'
-import { generateCityMetadata, generateCityStructuredData } from '@/components/CityPageSEO'
+import { generateCityStructuredData } from '@/components/CityPageSEO'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
-
-export const metadata = generateCityMetadata({
-  city: 'Cleveland',
-  state: 'Ohio',
-  stateAbbr: 'OH',
-  population: '372,624',
-  businessCount: '35,000+',
-  industries: ['Manufacturing', 'Healthcare', 'Financial Services', 'Technology', 'Education'],
-  description: 'Cleveland offers excellent opportunities for vending machine placement with its major manufacturing sector, healthcare industry, and diverse business landscape.'
-})
 
 export default function ClevelandOhioVendingLeadsPage() {
   const structuredData = generateCityStructuredData({

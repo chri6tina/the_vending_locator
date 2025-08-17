@@ -10,19 +10,9 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, BanknotesIcon } from '@heroicons/react/24/solid'
-import { generateCityMetadata, generateCityStructuredData } from '@/components/CityPageSEO'
+import { generateCityStructuredData } from '@/components/CityPageSEO'
 
 // Generate metadata for this page
-export const metadata = generateCityMetadata({
-  city: 'Dallas',
-  state: 'Texas',
-  stateAbbr: 'TX',
-  population: '1,304,379',
-  businessCount: '55,000+',
-  industries: ['Financial Services', 'Technology', 'Healthcare', 'Transportation', 'Manufacturing'],
-  description: 'Dallas offers excellent opportunities for vending machine placement with its major financial services sector, growing technology industry, and expanding healthcare market.'
-})
-
 export default function DallasTexasVendingLeadsPage() {
   const [activeUsers, setActiveUsers] = useState(0)
   const [userNames, setUserNames] = useState([

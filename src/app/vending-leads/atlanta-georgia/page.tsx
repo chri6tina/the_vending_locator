@@ -1,21 +1,11 @@
 'use client'
 
 import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, GlobeAltIcon } from '@heroicons/react/24/solid'
-import { generateCityMetadata, generateCityStructuredData } from '@/components/CityPageSEO'
+import { generateCityStructuredData } from '@/components/CityPageSEO'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
-
-export const metadata = generateCityMetadata({
-  city: 'Atlanta',
-  state: 'Georgia',
-  stateAbbr: 'GA',
-  population: '498,715',
-  businessCount: '55,000+',
-  industries: ['Technology', 'Healthcare', 'Financial Services', 'Manufacturing', 'Transportation'],
-  description: 'Atlanta offers excellent opportunities for vending machine placement with its major technology sector, healthcare industry, and diverse business landscape.'
-})
 
 export default function AtlantaGeorgiaVendingLeadsPage() {
   const structuredData = generateCityStructuredData({

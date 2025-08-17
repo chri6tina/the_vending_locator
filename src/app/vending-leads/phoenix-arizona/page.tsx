@@ -1,21 +1,11 @@
 'use client'
 
 import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, SunIcon } from '@heroicons/react/24/solid'
-import { generateCityMetadata, generateCityStructuredData } from '@/components/CityPageSEO'
+import { generateCityStructuredData } from '@/components/CityPageSEO'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
-
-export const metadata = generateCityMetadata({
-  city: 'Phoenix',
-  state: 'Arizona',
-  stateAbbr: 'AZ',
-  population: '1,644,409',
-  businessCount: '45,000+',
-  industries: ['Technology', 'Healthcare', 'Manufacturing', 'Tourism', 'Financial Services'],
-  description: 'Phoenix offers excellent opportunities for vending machine placement with its growing technology sector, major healthcare facilities, and expanding business landscape.'
-})
 
 export default function PhoenixArizonaVendingLeadsPage() {
   const structuredData = generateCityStructuredData({

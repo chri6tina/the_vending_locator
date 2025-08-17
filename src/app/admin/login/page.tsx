@@ -6,6 +6,9 @@ import { useAuth } from '@/contexts/AuthContext'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 
+// Prevent static generation during build
+export const prerender = false
+
 export default function AdminLogin() {
   const { login } = useAuth()
   const [formData, setFormData] = useState({

@@ -1,21 +1,11 @@
 'use client'
 
 import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, BuildingLibraryIcon } from '@heroicons/react/24/solid'
-import { generateCityMetadata, generateCityStructuredData } from '@/components/CityPageSEO'
+import { generateCityStructuredData } from '@/components/CityPageSEO'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
-
-export const metadata = generateCityMetadata({
-  city: 'Philadelphia',
-  state: 'Pennsylvania',
-  stateAbbr: 'PA',
-  population: '1,603,797',
-  businessCount: '50,000+',
-  industries: ['Healthcare', 'Education', 'Financial Services', 'Manufacturing', 'Technology'],
-  description: 'Philadelphia offers excellent opportunities for vending machine placement with its major healthcare systems, prestigious universities, and diverse business landscape.'
-})
 
 export default function PhiladelphiaPennsylvaniaVendingLeadsPage() {
   const structuredData = generateCityStructuredData({

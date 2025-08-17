@@ -1,21 +1,11 @@
 'use client'
 
 import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon } from '@heroicons/react/24/solid'
-import { generateCityMetadata, generateCityStructuredData } from '@/components/CityPageSEO'
+import { generateCityStructuredData } from '@/components/CityPageSEO'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
-
-export const metadata = generateCityMetadata({
-  city: 'Denver',
-  state: 'Colorado',
-  stateAbbr: 'CO',
-  population: '727,211',
-  businessCount: '42,000+',
-  industries: ['Technology', 'Healthcare', 'Financial Services', 'Tourism', 'Aerospace'],
-  description: 'Denver offers excellent opportunities for vending machine placement with its growing technology sector, healthcare industry, and diverse business landscape.'
-})
 
 export default function DenverColoradoVendingLeadsPage() {
   const structuredData = generateCityStructuredData({

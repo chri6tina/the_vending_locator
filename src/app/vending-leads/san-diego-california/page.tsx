@@ -1,21 +1,11 @@
 'use client'
 
 import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, BeakerIcon } from '@heroicons/react/24/solid'
-import { generateCityMetadata, generateCityStructuredData } from '@/components/CityPageSEO'
+import { generateCityStructuredData } from '@/components/CityPageSEO'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
-
-export const metadata = generateCityMetadata({
-  city: 'San Diego',
-  state: 'California',
-  stateAbbr: 'CA',
-  population: '1,386,932',
-  businessCount: '52,000+',
-  industries: ['Healthcare', 'Technology', 'Tourism', 'Manufacturing', 'Biotechnology'],
-  description: 'San Diego offers excellent opportunities for vending machine placement with its major healthcare sector, technology industry, and diverse business landscape.'
-})
 
 export default function SanDiegoCaliforniaVendingLeadsPage() {
   const structuredData = generateCityStructuredData({

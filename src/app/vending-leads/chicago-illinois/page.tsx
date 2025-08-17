@@ -10,19 +10,9 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, BuildingLibraryIcon } from '@heroicons/react/24/solid'
-import { generateCityMetadata, generateCityStructuredData } from '@/components/CityPageSEO'
+import { generateCityStructuredData } from '@/components/CityPageSEO'
 
 // Generate metadata for this page
-export const metadata = generateCityMetadata({
-  city: 'Chicago',
-  state: 'Illinois',
-  stateAbbr: 'IL',
-  population: '2,746,388',
-  businessCount: '70,000+',
-  industries: ['Financial Services', 'Manufacturing', 'Healthcare', 'Transportation', 'Technology'],
-  description: 'Chicago offers excellent opportunities for vending machine placement with its major financial services sector, strong manufacturing base, and diverse business landscape.'
-})
-
 export default function ChicagoIllinoisVendingLeadsPage() {
   const [activeUsers, setActiveUsers] = useState(0)
   const [userNames, setUserNames] = useState([

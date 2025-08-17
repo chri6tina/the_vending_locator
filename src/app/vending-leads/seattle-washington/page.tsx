@@ -1,21 +1,11 @@
 'use client'
 
 import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CloudIcon } from '@heroicons/react/24/solid'
-import { generateCityMetadata, generateCityStructuredData } from '@/components/CityPageSEO'
+import { generateCityStructuredData } from '@/components/CityPageSEO'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
-
-export const metadata = generateCityMetadata({
-  city: 'Seattle',
-  state: 'Washington',
-  stateAbbr: 'WA',
-  population: '737,015',
-  businessCount: '35,000+',
-  industries: ['Technology', 'Manufacturing', 'Healthcare', 'Aerospace', 'Maritime'],
-  description: 'Seattle offers excellent opportunities for vending machine placement with its major technology sector, manufacturing base, and diverse business landscape.'
-})
 
 export default function SeattleWashingtonVendingLeadsPage() {
   const structuredData = generateCityStructuredData({

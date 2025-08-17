@@ -10,19 +10,9 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, MusicalNoteIcon } from '@heroicons/react/24/solid'
-import { generateCityMetadata, generateCityStructuredData } from '@/components/CityPageSEO'
+import { generateCityStructuredData } from '@/components/CityPageSEO'
 
 // Generate metadata for this page
-export const metadata = generateCityMetadata({
-  city: 'Nashville',
-  state: 'Tennessee',
-  stateAbbr: 'TN',
-  population: '689,447',
-  businessCount: '38,000+',
-  industries: ['Healthcare', 'Music', 'Education', 'Tourism', 'Manufacturing'],
-  description: 'Nashville offers excellent opportunities for vending machine placement with its booming healthcare sector, music industry, and growing technology scene.'
-})
-
 export default function NashvilleTennesseeVendingLeadsPage() {
   const [activeUsers, setActiveUsers] = useState(0)
   const [userNames, setUserNames] = useState([

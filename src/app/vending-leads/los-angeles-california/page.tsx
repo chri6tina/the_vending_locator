@@ -10,19 +10,9 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, FilmIcon } from '@heroicons/react/24/solid'
-import { generateCityMetadata, generateCityStructuredData } from '@/components/CityPageSEO'
+import { generateCityStructuredData } from '@/components/CityPageSEO'
 
 // Generate metadata for this page
-export const metadata = generateCityMetadata({
-  city: 'Los Angeles',
-  state: 'California',
-  stateAbbr: 'CA',
-  population: '3,898,747',
-  businessCount: '75,000+',
-  industries: ['Entertainment', 'Technology', 'Healthcare', 'Manufacturing', 'Tourism'],
-  description: 'Los Angeles offers excellent opportunities for vending machine placement with its major entertainment industry, growing technology sector, and diverse business landscape.'
-})
-
 export default function LosAngelesCaliforniaVendingLeadsPage() {
   const [activeUsers, setActiveUsers] = useState(0)
   const [userNames, setUserNames] = useState([

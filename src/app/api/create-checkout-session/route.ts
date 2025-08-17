@@ -8,15 +8,23 @@ console.log('🔍 STRIPE_SECRET_KEY starts with:', process.env.STRIPE_SECRET_KEY
 
 // More robust Stripe initialization
 if (!process.env.STRIPE_SECRET_KEY) {
-  throw new Error('STRIPE_SECRET_KEY environment variable is not set')
+  console.warn('STRIPE_SECRET_KEY not found - using placeholder for build process')
 }
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
-  apiVersion: '2023-10-16'
-})
+const stripe = process.env.STRIPE_SECRET_KEY ? new Stripe(process.env.STRIPE_SECRET_KEY, {
+  apiVersion: '2025-07-30.basil'
+}) : null
 
 export async function POST(request: NextRequest) {
   try {
+    // Check if Stripe is configured
+    if (!stripe) {
+      return NextResponse.json(
+        { error: 'Stripe not configured' },
+        { status: 500 }
+      )
+    }
+
     console.log('🚀 POST request received to /api/create-checkout-session')
     console.log('🔍 Environment check inside POST:', {
       hasKey: !!process.env.STRIPE_SECRET_KEY,

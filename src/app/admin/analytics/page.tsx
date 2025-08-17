@@ -6,6 +6,9 @@ import { useAuth } from '@/contexts/AuthContext'
 import ProtectedRoute from '@/components/ProtectedRoute'
 import AdminLayout from '@/components/AdminLayout'
 
+// Prevent static generation during build
+export const prerender = false
+
 interface AnalyticsData {
   totalRevenue: number
   monthlyGrowth: number
