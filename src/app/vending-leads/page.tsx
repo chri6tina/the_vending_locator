@@ -8,148 +8,363 @@ export default function VendingLeadsPage() {
       name: 'Texas',
       slug: 'texas',
       cities: [
-        { name: 'Austin', slug: 'austin-texas', vendorCount: '150+', businessCount: '200+', description: 'Tech hub with major corporations and startups' },
-        { name: 'Dallas', slug: 'dallas-texas', vendorCount: '180+', businessCount: '250+', description: 'Financial district and corporate headquarters' },
-        { name: 'Houston', slug: 'houston-texas', vendorCount: '200+', businessCount: '300+', description: 'Energy industry and medical center hub' },
-        { name: 'San Antonio', slug: 'san-antonio-texas', vendorCount: '120+', businessCount: '180+', description: 'Military bases and healthcare facilities' },
+        { name: 'Austin', slug: 'austin-texas', vendorCount: '200+', businessCount: '250+', description: 'Tech hub with major corporations and startups' },
+        { name: 'Dallas', slug: 'dallas-texas', vendorCount: '220+', businessCount: '300+', description: 'Financial district and corporate headquarters' },
+        { name: 'Houston', slug: 'houston-texas', vendorCount: '250+', businessCount: '350+', description: 'Energy industry and medical center hub' },
+        { name: 'San Antonio', slug: 'san-antonio-texas', vendorCount: '150+', businessCount: '220+', description: 'Military bases and healthcare facilities' },
       ]
     },
     {
       name: 'Florida',
       slug: 'florida',
       cities: [
-        { name: 'Miami', slug: 'miami-florida', vendorCount: '160+', businessCount: '220+', description: 'International business and tourism center' },
-        { name: 'Jacksonville', slug: 'jacksonville-florida', vendorCount: '140+', businessCount: '190+', description: 'Port city with logistics and healthcare' },
-        { name: 'Orlando', slug: 'orlando-florida', vendorCount: '150+', businessCount: '200+', description: 'Theme parks and technology innovation hub' },
+        { name: 'Miami', slug: 'miami-florida', vendorCount: '180+', businessCount: '250+', description: 'International business and tourism center' },
+        { name: 'Jacksonville', slug: 'jacksonville-florida', vendorCount: '160+', businessCount: '220+', description: 'Port city with logistics and healthcare' },
+        { name: 'Orlando', slug: 'orlando-florida', vendorCount: '170+', businessCount: '230+', description: 'Theme parks and technology innovation hub' },
       ]
     },
     {
       name: 'California',
       slug: 'california',
       cities: [
-        { name: 'Los Angeles', slug: 'los-angeles-california', vendorCount: '250+', businessCount: '400+', description: 'Entertainment and tech industry hub' },
-        { name: 'San Francisco', slug: 'san-francisco-california', vendorCount: '180+', businessCount: '280+', description: 'Tech startups and financial services' },
-        { name: 'San Diego', slug: 'san-diego-california', vendorCount: '160+', businessCount: '240+', description: 'Biotech and military presence' },
-        { name: 'San Jose', slug: 'san-jose-california', vendorCount: '140+', businessCount: '200+', description: 'Silicon Valley tech companies' },
+        { name: 'Los Angeles', slug: 'los-angeles-california', vendorCount: '300+', businessCount: '450+', description: 'Entertainment and tech industry hub' },
+        { name: 'San Francisco', slug: 'san-francisco-california', vendorCount: '200+', businessCount: '320+', description: 'Tech startups and financial services' },
+        { name: 'San Diego', slug: 'san-diego-california', vendorCount: '180+', businessCount: '280+', description: 'Biotech and military presence' },
+        { name: 'San Jose', slug: 'san-jose-california', vendorCount: '160+', businessCount: '240+', description: 'Silicon Valley tech companies' },
       ]
     },
     {
       name: 'New York',
       slug: 'new-york',
       cities: [
-        { name: 'New York City', slug: 'new-york-new-york', vendorCount: '300+', businessCount: '500+', description: 'Financial capital and corporate headquarters' },
+        { name: 'New York City', slug: 'new-york-new-york', vendorCount: '350+', businessCount: '550+', description: 'Financial capital and corporate headquarters' },
       ]
     },
     {
       name: 'Illinois',
       slug: 'illinois',
       cities: [
-        { name: 'Chicago', slug: 'chicago-illinois', vendorCount: '220+', businessCount: '350+', description: 'Midwest business and transportation hub' },
+        { name: 'Chicago', slug: 'chicago-illinois', vendorCount: '280+', businessCount: '400+', description: 'Midwest business and transportation hub' },
       ]
     },
     {
       name: 'Washington',
       slug: 'washington',
       cities: [
-        { name: 'Seattle', slug: 'seattle-washington', vendorCount: '170+', businessCount: '260+', description: 'Tech companies and aerospace industry' },
+        { name: 'Seattle', slug: 'seattle-washington', vendorCount: '200+', businessCount: '300+', description: 'Tech companies and aerospace industry' },
       ]
     },
     {
       name: 'Arizona',
       slug: 'arizona',
       cities: [
-        { name: 'Phoenix', slug: 'phoenix-arizona', vendorCount: '150+', businessCount: '220+', description: 'Growing tech and healthcare sector' },
+        { name: 'Phoenix', slug: 'phoenix-arizona', vendorCount: '180+', businessCount: '260+', description: 'Growing tech and healthcare sector' },
       ]
     },
     {
       name: 'Pennsylvania',
       slug: 'pennsylvania',
       cities: [
-        { name: 'Philadelphia', slug: 'philadelphia-pennsylvania', vendorCount: '160+', businessCount: '240+', description: 'Healthcare and education hub' },
-        { name: 'Pittsburgh', slug: 'pittsburgh-pennsylvania', vendorCount: '140+', businessCount: '200+', description: 'Technology and healthcare innovation' },
+        { name: 'Philadelphia', slug: 'philadelphia-pennsylvania', vendorCount: '190+', businessCount: '280+', description: 'Healthcare and education hub' },
+        { name: 'Pittsburgh', slug: 'pittsburgh-pennsylvania', vendorCount: '160+', businessCount: '240+', description: 'Technology and healthcare innovation' },
       ]
     },
     {
       name: 'Colorado',
       slug: 'colorado',
       cities: [
-        { name: 'Denver', slug: 'denver-colorado', vendorCount: '160+', businessCount: '240+', description: 'Technology and outdoor recreation hub' },
-        { name: 'Boulder', slug: 'boulder-colorado', vendorCount: '120+', businessCount: '180+', description: 'University town with tech startups and outdoor culture' },
-        { name: 'Colorado Springs', slug: 'colorado-springs-colorado', vendorCount: '140+', businessCount: '200+', description: 'Military presence and growing tech sector' }
+        { name: 'Denver', slug: 'denver-colorado', vendorCount: '180+', businessCount: '280+', description: 'Technology and outdoor recreation hub' },
+        { name: 'Boulder', slug: 'boulder-colorado', vendorCount: '140+', businessCount: '200+', description: 'University town with tech startups and outdoor culture' },
+        { name: 'Colorado Springs', slug: 'colorado-springs-colorado', vendorCount: '160+', businessCount: '240+', description: 'Military presence and growing tech sector' }
       ]
     },
     {
       name: 'Georgia',
       slug: 'georgia',
       cities: [
-        { name: 'Atlanta', slug: 'atlanta-georgia', vendorCount: '180+', businessCount: '280+', description: 'Entertainment and transportation hub' },
+        { name: 'Atlanta', slug: 'atlanta-georgia', vendorCount: '220+', businessCount: '320+', description: 'Entertainment and transportation hub' },
       ]
     },
     {
       name: 'Massachusetts',
       slug: 'massachusetts',
       cities: [
-        { name: 'Boston', slug: 'boston-massachusetts', vendorCount: '170+', businessCount: '260+', description: 'Education and healthcare excellence' },
-        { name: 'Worcester', slug: 'worcester-massachusetts', vendorCount: '120+', businessCount: '180+', description: 'Manufacturing and healthcare hub' },
-        { name: 'Springfield', slug: 'springfield-massachusetts', vendorCount: '110+', businessCount: '160+', description: 'Transportation and healthcare excellence' }
+        { name: 'Boston', slug: 'boston-massachusetts', vendorCount: '200+', businessCount: '300+', description: 'Education and healthcare excellence' },
+        { name: 'Worcester', slug: 'worcester-massachusetts', vendorCount: '140+', businessCount: '200+', description: 'Manufacturing and healthcare hub' },
+        { name: 'Springfield', slug: 'springfield-massachusetts', vendorCount: '130+', businessCount: '190+', description: 'Transportation and healthcare excellence' }
       ]
     },
     {
       name: 'Nevada',
       slug: 'nevada',
       cities: [
-        { name: 'Las Vegas', slug: 'las-vegas-nevada', vendorCount: '140+', businessCount: '200+', description: 'Hospitality and entertainment hub' },
+        { name: 'Las Vegas', slug: 'las-vegas-nevada', vendorCount: '160+', businessCount: '240+', description: 'Hospitality and entertainment hub' },
       ]
     },
     {
       name: 'Tennessee',
       slug: 'tennessee',
       cities: [
-        { name: 'Nashville', slug: 'nashville-tennessee', vendorCount: '150+', businessCount: '220+', description: 'Music industry and healthcare excellence' },
-        { name: 'Memphis', slug: 'memphis-tennessee', vendorCount: '140+', businessCount: '200+', description: 'Logistics hub and healthcare excellence' },
-        { name: 'Knoxville', slug: 'knoxville-tennessee', vendorCount: '120+', businessCount: '180+', description: 'University town with technology innovation' }
+        { name: 'Nashville', slug: 'nashville-tennessee', vendorCount: '180+', businessCount: '260+', description: 'Music industry and healthcare excellence' },
+        { name: 'Memphis', slug: 'memphis-tennessee', vendorCount: '160+', businessCount: '240+', description: 'Logistics hub and healthcare excellence' },
+        { name: 'Knoxville', slug: 'knoxville-tennessee', vendorCount: '140+', businessCount: '200+', description: 'University town with technology innovation' }
       ]
     },
     {
       name: 'Oregon',
       slug: 'oregon',
       cities: [
-        { name: 'Portland', slug: 'portland-oregon', vendorCount: '140+', businessCount: '200+', description: 'Technology and sustainability focus' },
+        { name: 'Portland', slug: 'portland-oregon', vendorCount: '160+', businessCount: '240+', description: 'Technology and sustainability focus' },
       ]
     },
     {
       name: 'North Carolina',
       slug: 'north-carolina',
       cities: [
-        { name: 'Charlotte', slug: 'charlotte-north-carolina', vendorCount: '160+', businessCount: '240+', description: 'Banking and finance excellence' },
-        { name: 'Raleigh', slug: 'raleigh-north-carolina', vendorCount: '140+', businessCount: '200+', description: 'Technology and research hub' },
-        { name: 'Greensboro', slug: 'greensboro-north-carolina', vendorCount: '120+', businessCount: '180+', description: 'Manufacturing and logistics excellence' }
+        { name: 'Charlotte', slug: 'charlotte-north-carolina', vendorCount: '190+', businessCount: '280+', description: 'Banking and finance excellence' },
+        { name: 'Raleigh', slug: 'raleigh-north-carolina', vendorCount: '170+', businessCount: '240+', description: 'Technology and research hub' },
+        { name: 'Greensboro', slug: 'greensboro-north-carolina', vendorCount: '140+', businessCount: '200+', description: 'Manufacturing and logistics excellence' }
       ]
     },
     {
       name: 'Missouri',
       slug: 'missouri',
       cities: [
-        { name: 'Kansas City', slug: 'kansas-city-missouri', vendorCount: '130+', businessCount: '180+', description: 'Logistics and healthcare hub' },
+        { name: 'Kansas City', slug: 'kansas-city-missouri', vendorCount: '150+', businessCount: '220+', description: 'Logistics and healthcare hub' },
       ]
     },
     {
       name: 'Minnesota',
       slug: 'minnesota',
       cities: [
-        { name: 'Minneapolis', slug: 'minneapolis-minnesota', vendorCount: '150+', businessCount: '220+', description: 'Healthcare and corporate excellence' },
+        { name: 'Minneapolis', slug: 'minneapolis-minnesota', vendorCount: '180+', businessCount: '260+', description: 'Healthcare and corporate excellence' },
       ]
     },
     {
       name: 'Ohio',
       slug: 'ohio',
       cities: [
-        { name: 'Cleveland', slug: 'cleveland-ohio', vendorCount: '140+', businessCount: '200+', description: 'Healthcare and manufacturing hub' },
-        { name: 'Columbus', slug: 'columbus-ohio', vendorCount: '150+', businessCount: '220+', description: 'Technology and education excellence' },
-        { name: 'Cincinnati', slug: 'cincinnati-ohio', vendorCount: '130+', businessCount: '190+', description: 'Manufacturing and logistics hub' }
+        { name: 'Cleveland', slug: 'cleveland-ohio', vendorCount: '160+', businessCount: '240+', description: 'Healthcare and manufacturing hub' },
+        { name: 'Columbus', slug: 'columbus-ohio', vendorCount: '180+', businessCount: '260+', description: 'Technology and education excellence' },
+        { name: 'Cincinnati', slug: 'cincinnati-ohio', vendorCount: '150+', businessCount: '220+', description: 'Manufacturing and logistics hub' }
+      ]
+    },
+    {
+      name: 'Indiana',
+      slug: 'indiana',
+      cities: [
+        { name: 'Indianapolis', slug: 'indianapolis-indiana', vendorCount: '160+', businessCount: '240+', description: 'Sports and healthcare hub' },
+      ]
+    },
+    {
+      name: 'Michigan',
+      slug: 'michigan',
+      cities: [
+        { name: 'Detroit', slug: 'detroit-michigan', vendorCount: '150+', businessCount: '220+', description: 'Automotive and manufacturing hub' },
+        { name: 'Grand Rapids', slug: 'grand-rapids-michigan', vendorCount: '120+', businessCount: '180+', description: 'Manufacturing and healthcare excellence' }
+      ]
+    },
+    {
+      name: 'Kentucky',
+      slug: 'kentucky',
+      cities: [
+        { name: 'Louisville', slug: 'louisville-kentucky', vendorCount: '140+', businessCount: '200+', description: 'Healthcare and logistics hub' },
+        { name: 'Lexington', slug: 'lexington-kentucky', vendorCount: '120+', businessCount: '180+', description: 'University town with healthcare focus' }
+      ]
+    },
+    {
+      name: 'Maryland',
+      slug: 'maryland',
+      cities: [
+        { name: 'Baltimore', slug: 'baltimore-maryland', vendorCount: '150+', businessCount: '220+', description: 'Port city with healthcare and education' },
+      ]
+    },
+    {
+      name: 'Wisconsin',
+      slug: 'wisconsin',
+      cities: [
+        { name: 'Milwaukee', slug: 'milwaukee-wisconsin', vendorCount: '140+', businessCount: '200+', description: 'Manufacturing and healthcare hub' },
+        { name: 'Madison', slug: 'madison-wisconsin', vendorCount: '120+', businessCount: '180+', description: 'University town with government presence' }
+      ]
+    },
+    {
+      name: 'New Mexico',
+      slug: 'new-mexico',
+      cities: [
+        { name: 'Albuquerque', slug: 'albuquerque-new-mexico', vendorCount: '130+', businessCount: '190+', description: 'Technology and healthcare hub' },
+        { name: 'Tucson', slug: 'tucson-arizona', vendorCount: '120+', businessCount: '180+', description: 'University town with research focus' }
+      ]
+    },
+    {
+      name: 'Utah',
+      slug: 'utah',
+      cities: [
+        { name: 'Salt Lake City', slug: 'salt-lake-city-utah', vendorCount: '140+', businessCount: '200+', description: 'Technology and outdoor recreation hub' },
+      ]
+    },
+    {
+      name: 'Alabama',
+      slug: 'alabama',
+      cities: [
+        { name: 'Birmingham', slug: 'birmingham-alabama', vendorCount: '130+', businessCount: '190+', description: 'Healthcare and manufacturing hub' },
+        { name: 'Montgomery', slug: 'montgomery-alabama', vendorCount: '110+', businessCount: '160+', description: 'Government and healthcare center' },
+        { name: 'Huntsville', slug: 'huntsville-alabama', vendorCount: '120+', businessCount: '180+', description: 'Aerospace and technology hub' }
+      ]
+    },
+    {
+      name: 'Arkansas',
+      slug: 'arkansas',
+      cities: [
+        { name: 'Little Rock', slug: 'little-rock-arkansas', vendorCount: '120+', businessCount: '180+', description: 'Government and healthcare hub' },
+      ]
+    },
+    {
+      name: 'Iowa',
+      slug: 'iowa',
+      cities: [
+        { name: 'Des Moines', slug: 'des-moines-iowa', vendorCount: '120+', businessCount: '180+', description: 'Insurance and financial services hub' },
+      ]
+    },
+    {
+      name: 'Kansas',
+      slug: 'kansas',
+      cities: [
+        { name: 'Wichita', slug: 'wichita-kansas', vendorCount: '120+', businessCount: '180+', description: 'Aerospace and manufacturing hub' },
+        { name: 'Overland Park', slug: 'overland-park-kansas', vendorCount: '110+', businessCount: '160+', description: 'Suburban business and healthcare center' }
+      ]
+    },
+    {
+      name: 'Louisiana',
+      slug: 'louisiana',
+      cities: [
+        { name: 'New Orleans', slug: 'new-orleans-louisiana', vendorCount: '140+', businessCount: '200+', description: 'Tourism and healthcare hub' },
+        { name: 'Baton Rouge', slug: 'baton-rouge-louisiana', vendorCount: '120+', businessCount: '180+', description: 'Government and university town' }
+      ]
+    },
+    {
+      name: 'Mississippi',
+      slug: 'mississippi',
+      cities: [
+        { name: 'Jackson', slug: 'jackson-mississippi', vendorCount: '110+', businessCount: '160+', description: 'Government and healthcare hub' },
+      ]
+    },
+    {
+      name: 'Nebraska',
+      slug: 'nebraska',
+      cities: [
+        { name: 'Omaha', slug: 'omaha-nebraska', vendorCount: '130+', businessCount: '190+', description: 'Financial services and healthcare hub' },
+      ]
+    },
+    {
+      name: 'Oklahoma',
+      slug: 'oklahoma',
+      cities: [
+        { name: 'Oklahoma City', slug: 'oklahoma-city-oklahoma', vendorCount: '140+', businessCount: '200+', description: 'Energy and healthcare hub' },
+        { name: 'Tulsa', slug: 'tulsa-oklahoma', vendorCount: '130+', businessCount: '190+', description: 'Energy and manufacturing hub' }
+      ]
+    },
+    {
+      name: 'South Carolina',
+      slug: 'south-carolina',
+      cities: [
+        { name: 'Columbia', slug: 'columbia-south-carolina', vendorCount: '120+', businessCount: '180+', description: 'Government and university town' },
+      ]
+    },
+    {
+      name: 'Virginia',
+      slug: 'virginia',
+      cities: [
+        { name: 'Richmond', slug: 'richmond-virginia', vendorCount: '130+', businessCount: '190+', description: 'Government and healthcare hub' },
+        { name: 'Virginia Beach', slug: 'virginia-beach-virginia', vendorCount: '120+', businessCount: '180+', description: 'Tourism and military presence' },
+        { name: 'Norfolk', slug: 'norfolk-virginia', vendorCount: '110+', businessCount: '160+', description: 'Port city with military presence' }
+      ]
+    },
+    {
+      name: 'West Virginia',
+      slug: 'west-virginia',
+      cities: [
+        { name: 'Charleston', slug: 'charleston-west-virginia', vendorCount: '100+', businessCount: '150+', description: 'Government and healthcare hub' },
+      ]
+    },
+    {
+      name: 'Delaware',
+      slug: 'delaware',
+      cities: [
+        { name: 'Wilmington', slug: 'wilmington-delaware', vendorCount: '110+', businessCount: '160+', description: 'Financial services and corporate hub' },
+      ]
+    },
+    {
+      name: 'Rhode Island',
+      slug: 'rhode-island',
+      cities: [
+        { name: 'Providence', slug: 'providence-rhode-island', vendorCount: '110+', businessCount: '160+', description: 'Education and healthcare hub' },
+      ]
+    },
+    {
+      name: 'Connecticut',
+      slug: 'connecticut',
+      cities: [
+        { name: 'Hartford', slug: 'hartford-connecticut', vendorCount: '120+', businessCount: '180+', description: 'Insurance and healthcare hub' },
+        { name: 'New Haven', slug: 'new-haven-connecticut', vendorCount: '110+', businessCount: '160+', description: 'University town with healthcare focus' }
+      ]
+    },
+    {
+      name: 'New Jersey',
+      slug: 'new-jersey',
+      cities: [
+        { name: 'Newark', slug: 'newark-new-jersey', vendorCount: '130+', businessCount: '190+', description: 'Port city with corporate presence' },
+        { name: 'Jersey City', slug: 'jersey-city-new-jersey', vendorCount: '120+', businessCount: '180+', description: 'Financial services and technology hub' }
+      ]
+    },
+    {
+      name: 'Vermont',
+      slug: 'vermont',
+      cities: [
+        { name: 'Burlington', slug: 'burlington-vermont', vendorCount: '100+', businessCount: '150+', description: 'University town with healthcare focus' },
+      ]
+    },
+    {
+      name: 'New Hampshire',
+      slug: 'new-hampshire',
+      cities: [
+        { name: 'Manchester', slug: 'manchester-new-hampshire', vendorCount: '100+', businessCount: '150+', description: 'Healthcare and manufacturing hub' },
+      ]
+    },
+    {
+      name: 'Maine',
+      slug: 'maine',
+      cities: [
+        { name: 'Portland', slug: 'portland-maine', vendorCount: '100+', businessCount: '150+', description: 'Port city with healthcare and education' },
+      ]
+    },
+    {
+      name: 'Alaska',
+      slug: 'alaska',
+      cities: [
+        { name: 'Anchorage', slug: 'anchorage-alaska', vendorCount: '100+', businessCount: '150+', description: 'Transportation and healthcare hub' },
+      ]
+    },
+    {
+      name: 'Hawaii',
+      slug: 'hawaii',
+      cities: [
+        { name: 'Honolulu', slug: 'honolulu-hawaii', vendorCount: '120+', businessCount: '180+', description: 'Tourism and healthcare hub' },
       ]
     }
   ]
+
+  // Calculate total counts
+  const totalCities = states.reduce((sum, state) => sum + state.cities.length, 0)
+  const totalLocations = states.reduce((sum, state) => 
+    sum + state.cities.reduce((citySum, city) => 
+      citySum + parseInt(city.vendorCount.replace('+', '')), 0
+    ), 0
+  )
+  const totalBusinesses = states.reduce((sum, state) => 
+    sum + state.cities.reduce((citySum, city) => 
+      citySum + parseInt(city.businessCount.replace('+', '')), 0
+    ), 0
+  )
 
   return (
     <>
@@ -173,20 +388,20 @@ export default function VendingLeadsPage() {
               {/* Key Stats - Matching Home Page Style */}
               <div className="mt-10 sm:mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 px-4 sm:px-0">
                 <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-bronze">4,100+</div>
+                  <div className="text-xl sm:text-2xl font-bold text-bronze">{totalLocations.toLocaleString()}+</div>
                   <div className="text-xs sm:text-sm text-stone leading-tight">Total Locations</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-bronze">37+</div>
+                  <div className="text-xl sm:text-2xl font-bold text-bronze">{totalCities}+</div>
                   <div className="text-xs sm:text-sm text-stone leading-tight">Major Cities</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-bronze">18</div>
+                  <div className="text-xl sm:text-2xl font-bold text-bronze">{states.length}</div>
                   <div className="text-xs sm:text-sm text-stone leading-tight">States</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-bronze">100%</div>
-                  <div className="text-xs sm:text-sm text-stone leading-tight">Verified</div>
+                  <div className="text-xl sm:text-2xl font-bold text-bronze">{totalBusinesses.toLocaleString()}+</div>
+                  <div className="text-xs sm:text-sm text-stone leading-tight">Businesses</div>
                 </div>
               </div>
 

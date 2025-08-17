@@ -1,202 +1,284 @@
 'use client'
 
-import Link from 'next/link'
+import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CloudIcon } from '@heroicons/react/24/solid'
+import { generateCityMetadata, generateCityStructuredData } from '@/components/CityPageSEO'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
-import VendingCourse from '@/components/VendingCourse'
-import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
-import { useState, useEffect } from 'react'
-import { motion } from 'framer-motion'
-import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon } from '@heroicons/react/24/solid'
+
+export const metadata = generateCityMetadata({
+  city: 'Seattle',
+  state: 'Washington',
+  stateAbbr: 'WA',
+  population: '737,015',
+  businessCount: '35,000+',
+  industries: ['Technology', 'Manufacturing', 'Healthcare', 'Aerospace', 'Maritime'],
+  description: 'Seattle offers excellent opportunities for vending machine placement with its major technology sector, manufacturing base, and diverse business landscape.'
+})
 
 export default function SeattleWashingtonVendingLeadsPage() {
-  const [activeUsers, setActiveUsers] = useState(0)
-  const [userNames, setUserNames] = useState([
-    'Mike from Seattle', 'Sarah in Bellevue', 'David from Redmond', 'Lisa in Kirkland',
-    'Tom in Sammamish', 'Jennifer in Issaquah', 'Robert from Mercer Island', 'Amanda in Woodinville'
-  ])
-  const [currentUserIndex, setCurrentUserIndex] = useState(0)
-
-  useEffect(() => {
-    const updateActiveUsers = () => {
-      const baseUsers = 6
-      const fluctuation = Math.floor(Math.random() * 4) + 1
-      setActiveUsers(baseUsers + fluctuation)
-    }
-
-    const interval = setInterval(() => {
-      updateActiveUsers()
-    }, Math.random() * 2000 + 2000)
-
-    updateActiveUsers()
-    return () => clearInterval(interval)
-  }, [])
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentUserIndex(prev => (prev + 1) % userNames.length)
-    }, 3000)
-
-    return () => clearInterval(interval)
-  }, [userNames.length])
+  const structuredData = generateCityStructuredData({
+    city: 'Seattle',
+    state: 'Washington',
+    stateAbbr: 'WA',
+    population: '737,015',
+    businessCount: '35,000+',
+    industries: ['Technology', 'Manufacturing', 'Healthcare', 'Aerospace', 'Maritime'],
+    description: 'Seattle offers excellent opportunities for vending machine placement with its major technology sector, manufacturing base, and diverse business landscape.'
+  })
 
   return (
     <>
+      {/* Structured Data for SEO */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData)
+        }}
+      />
+      
       <Header />
       
       <div className="min-h-screen bg-warm-white">
-        {/* Hero Section */}
-        <div className="bg-warm-white py-16 sm:py-24 lg:py-32">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        {/* Hero Section - Matching Homepage Style */}
+        <div className="bg-warm-white">
+          <div className="mx-auto max-w-2xl px-4 sm:px-6 py-12 sm:py-16 lg:py-24">
             <div className="text-center">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                className="mb-8 p-4 bg-cream/50 backdrop-blur-sm rounded-2xl border border-gray-200 shadow-sm max-w-md mx-auto"
-              >
-                <div className="flex items-center justify-center gap-3">
-                  <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                  <span className="text-sm font-medium text-chocolate">
-                    <span className="font-bold text-coral">{activeUsers}</span> Seattle vendors are choosing plans right now
-                  </span>
-                </div>
-                <div className="mt-2 text-xs text-chocolate/70">
-                  Including {userNames[currentUserIndex]}
-                </div>
-              </motion.div>
-
-              <motion.h1
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                className="text-4xl sm:text-5xl lg:text-6xl font-playfair font-bold tracking-tight text-charcoal leading-tight"
-              >
-                Vending Machine Locations<br />in Seattle, Washington
-              </motion.h1>
+              <h1 className="text-3xl sm:text-4xl lg:text-6xl font-playfair font-bold tracking-tight text-charcoal leading-tight">
+                Seattle Vending Machine Locations
+              </h1>
               
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                className="mt-6 sm:mt-8 text-lg sm:text-xl leading-8 text-stone max-w-4xl mx-auto"
-              >
-                Get pre-qualified vending machine locations in Seattle's thriving technology and healthcare economy. 
-                Access verified businesses with detailed contact information and placement opportunities.
-              </motion.p>
+              <p className="mt-4 sm:mt-6 text-base sm:text-lg leading-7 sm:leading-8 text-stone px-2 sm:px-0">
+                Discover premium vending machine placement opportunities in Seattle, Washington. 
+                Access 35,000+ businesses and the heart of Pacific Northwest technology.
+              </p>
 
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.8 }}
-                className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 px-4 sm:px-0"
-              >
-                <Link
-                  href="#pricing"
-                  className="w-full sm:w-auto btn-primary text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-lg"
-                >
-                  Get Seattle Leads
-                </Link>
-                <Link
-                  href="#seattle-content"
-                  className="w-full sm:w-auto text-base sm:text-lg font-semibold leading-6 text-charcoal hover:text-navy transition-colors text-center py-3 sm:py-4"
-                >
-                  Learn About Seattle <span aria-hidden="true">→</span>
-                </Link>
-              </motion.div>
+              {/* City Stats - Matching Homepage Counter Style */}
+              <div className="mt-10 sm:mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 px-4 sm:px-0">
+                <div className="text-center">
+                  <div className="text-xl sm:text-2xl font-bold text-bronze">35,000+</div>
+                  <div className="text-xs sm:text-sm text-stone leading-tight">Businesses</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-xl sm:text-2xl font-bold text-bronze">737K+</div>
+                  <div className="text-xs sm:text-sm text-stone leading-tight">Population</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-xl sm:text-2xl font-bold text-bronze">160+</div>
+                  <div className="text-xs sm:text-sm text-stone leading-tight">Vending Locations</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-xl sm:text-2xl font-bold text-bronze">5</div>
+                  <div className="text-xs sm:text-sm text-stone leading-tight">Major Industries</div>
+                </div>
+              </div>
+
+              {/* Trust Signals - Matching Homepage Style */}
+              <div className="mt-8 sm:mt-10 flex flex-wrap justify-center gap-4 sm:gap-6">
+                <div className="flex items-center gap-2 text-sm text-stone">
+                  <CheckBadgeIcon className="h-5 w-5 text-green-600" />
+                  <span>Verified Locations</span>
+                </div>
+                <div className="flex items-center gap-2 text-sm text-stone">
+                  <StarIcon className="h-5 w-5 text-yellow-500" />
+                  <span>4.9/5 Rating</span>
+                </div>
+                <div className="flex items-center gap-2 text-sm text-stone">
+                  <ShieldCheckIcon className="h-5 w-5 text-blue-600" />
+                  <span>Secure & Reliable</span>
+                </div>
+                <div className="flex items-center gap-2 text-sm text-stone">
+                  <ClockIcon className="h-5 w-5 text-purple-600" />
+                  <span>Quality Research</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        {/* Pricing Section */}
-        <div id="pricing" className="bg-white py-16 sm:py-20 lg:py-24">
+        {/* Business Landscape Section */}
+        <div className="bg-white py-16 sm:py-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="mx-auto max-w-4xl text-center mb-12 sm:mb-16">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-playfair font-bold tracking-tight text-chocolate mb-6">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
+                Seattle Business Landscape
+              </h2>
+              <p className="text-lg text-stone max-w-3xl mx-auto">
+                Seattle is Washington's largest city and a major technology hub, offering diverse vending opportunities across multiple thriving industries.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <CloudIcon className="w-8 h-8 text-navy" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-2">Technology Hub</h3>
+                <p className="text-stone">Major tech companies and innovative startups</p>
+              </div>
+
+              <div className="text-center">
+                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <BuildingOfficeIcon className="w-8 h-8 text-navy" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-2">Manufacturing</h3>
+                <p className="text-stone">Aerospace and industrial manufacturing</p>
+              </div>
+
+              <div className="text-center">
+                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <AcademicCapIcon className="w-8 h-8 text-navy" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-2">Healthcare</h3>
+                <p className="text-stone">Medical centers and research institutions</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Key Business Districts */}
+        <div className="bg-warm-white py-16 sm:py-20">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
+                Key Business Districts
+              </h2>
+              <p className="text-lg text-stone max-w-3xl mx-auto">
+                Strategic vending machine placement opportunities in Seattle's most active business areas.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Downtown Seattle</h3>
+                <p className="text-stone mb-3">Financial district, corporate headquarters, and retail</p>
+                <div className="text-sm text-bronze font-medium">280+ businesses</div>
+              </div>
+
+              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                <h3 className="text-xl font-semibold text-charcoal mb-3">South Lake Union</h3>
+                <p className="text-stone mb-3">Tech companies, Amazon headquarters, and startups</p>
+                <div className="text-sm text-bronze font-medium">220+ businesses</div>
+              </div>
+
+              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Belltown</h3>
+                <p className="text-stone mb-3">Entertainment, restaurants, and creative industries</p>
+                <div className="text-sm text-bronze font-medium">180+ businesses</div>
+              </div>
+
+              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Capitol Hill</h3>
+                <p className="text-stone mb-3">Healthcare facilities, universities, and retail</p>
+                <div className="text-sm text-bronze font-medium">160+ businesses</div>
+              </div>
+
+              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Fremont</h3>
+                <p className="text-stone mb-3">Tech startups, manufacturing, and creative companies</p>
+                <div className="text-sm text-bronze font-medium">140+ businesses</div>
+              </div>
+
+              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Ballard</h3>
+                <p className="text-stone mb-3">Maritime industry, manufacturing, and retail</p>
+                <div className="text-sm text-bronze font-medium">120+ businesses</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Pricing Section - Prominently Displayed */}
+        <div className="bg-white py-16 sm:py-20">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
                 Get Seattle Vending Machine Leads
               </h2>
-              <p className="text-lg sm:text-xl text-chocolate/70 leading-relaxed max-w-3xl mx-auto">
-                Access our comprehensive database of qualified Seattle vending machine locations with flexible pricing options. 
-                No long-term contracts, just results that help you grow your Seattle vending business.
+              <p className="text-lg text-stone max-w-3xl mx-auto">
+                Choose the plan that fits your business needs and start receiving qualified vending machine location leads in Seattle.
               </p>
             </div>
             <PricingTable />
           </div>
         </div>
 
-        {/* Seattle Content Section */}
-        <div id="seattle-content" className="py-16 sm:py-24 bg-warm-white">
+        {/* Hot Leads Section */}
+        <div className="bg-warm-white py-16 sm:py-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-playfair font-bold text-chocolate mb-6">
-                Why Seattle is Perfect for Vending Machines
+            <HotLeads />
+          </div>
+        </div>
+
+        {/* FAQ Section */}
+        <div className="bg-white py-16 sm:py-20">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
+                Frequently Asked Questions
               </h2>
-              <p className="text-lg sm:text-xl text-chocolate/70 max-w-4xl mx-auto leading-relaxed">
-                Seattle's unique combination of technology innovation, healthcare excellence, and educational institutions creates 
-                exceptional vending machine opportunities across diverse business sectors.
+              <p className="text-lg text-stone">
+                Everything you need to know about vending machine opportunities in Seattle.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-              <div>
-                <h3 className="text-2xl sm:text-3xl font-playfair font-bold text-chocolate mb-6">
-                  Seattle's Business Landscape
+            <div className="space-y-6">
+              <div className="bg-warm-white p-6 rounded-xl">
+                <h3 className="text-xl font-semibold text-charcoal mb-3">
+                  What types of businesses are best for vending machines in Seattle?
                 </h3>
-                <div className="space-y-4 text-chocolate/80">
-                  <p>
-                    Seattle is home to major technology companies like Microsoft, Amazon, and Boeing, creating a massive 
-                    workforce of tech professionals who frequent vending machines throughout the workday.
-                  </p>
-                  <p>
-                    The University of Washington, with over 60,000 students across multiple campuses, provides consistent demand 
-                    for snacks and beverages across student centers, libraries, and academic buildings.
-                  </p>
-                </div>
+                <p className="text-stone">
+                  Seattle offers diverse opportunities including tech companies, office buildings, healthcare facilities, 
+                  manufacturing plants, and retail centers. The major technology sector provides excellent placement opportunities.
+                </p>
               </div>
 
-              <div>
-                <h4 className="text-xl sm:text-2xl font-playfair font-bold text-chocolate mb-6">
-                  Vending Machine Opportunities in Seattle
-                </h4>
-                <div className="space-y-4">
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-coral rounded-full mt-2 flex-shrink-0"></div>
-                    <div>
-                      <h5 className="font-semibold text-chocolate mb-1">Technology Companies</h5>
-                      <p className="text-sm text-chocolate/70">High-traffic corporate environments with modern amenities</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-coral rounded-full mt-2 flex-shrink-0"></div>
-                    <div>
-                      <h5 className="font-semibold text-chocolate mb-1">University Campuses</h5>
-                      <p className="text-sm text-chocolate/70">Student centers, libraries, and academic buildings</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-coral rounded-full mt-2 flex-shrink-0"></div>
-                    <div>
-                      <h5 className="font-semibold text-chocolate mb-1">Healthcare Facilities</h5>
-                      <p className="text-sm text-chocolate/70">Hospitals, clinics, and medical office buildings</p>
-                    </div>
-                  </div>
-                </div>
+              <div className="bg-warm-white p-6 rounded-xl">
+                <h3 className="text-xl font-semibold text-charcoal mb-3">
+                  How competitive is the vending machine market in Seattle?
+                </h3>
+                <p className="text-stone">
+                  Seattle has a growing vending presence, but there's still significant opportunity 
+                  for expansion, especially in new tech developments and emerging business districts.
+                </p>
+              </div>
+
+              <div className="bg-warm-white p-6 rounded-xl">
+                <h3 className="text-xl font-semibold text-charcoal mb-3">
+                  What are the peak business hours for vending in Seattle?
+                </h3>
+                <p className="text-stone">
+                  Seattle businesses typically operate from 8 AM to 6 PM, with peak vending activity 
+                  during lunch hours (12 PM - 2 PM) and afternoon breaks (3 PM - 4 PM).
+                </p>
+              </div>
+
+              <div className="bg-warm-white p-6 rounded-xl">
+                <h3 className="text-xl font-semibold text-charcoal mb-3">
+                  Are there seasonal considerations for vending in Seattle?
+                </h3>
+                <p className="text-stone">
+                  Yes, Seattle experiences significant rainfall throughout the year, so indoor locations 
+                  are preferred. However, summer months offer more outdoor placement opportunities.
+                </p>
+              </div>
+
+              <div className="bg-warm-white p-6 rounded-xl">
+                <h3 className="text-xl font-semibold text-charcoal mb-3">
+                  What permits are required for vending machines in Seattle?
+                </h3>
+                <p className="text-stone">
+                  You'll need a business license from the City of Seattle and potentially health permits 
+                  for food vending. Specific requirements depend on your machine type and location.
+                </p>
               </div>
             </div>
           </div>
         </div>
-
-        {/* Hot Leads Section */}
-        <HotLeads />
-
-        {/* Vending Course Section */}
-        <VendingCourse />
       </div>
-
+      
       <Footer />
-      <ZipCodeModalWrapper />
     </>
   )
 }

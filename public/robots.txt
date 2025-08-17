@@ -1,18 +1,41 @@
 User-agent: *
 Allow: /
 
-# Sitemap
-Sitemap: https://thevendinglocator.com/sitemap.xml
+# Allow all major search engines
+User-agent: Googlebot
+Allow: /
 
-# Disallow admin or private areas (if any)
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# Disallow admin and private areas
+Disallow: /admin/
 Disallow: /api/
 Disallow: /_next/
-Disallow: /admin/
+Disallow: /static/
 
 # Allow important pages
 Allow: /vending-leads/
-Allow: /services/
 Allow: /pricing/
-Allow: /contact/
+Allow: /services/
 Allow: /blog/
-Allow: /guide/
+Allow: /contact/
+Allow: /hot-leads/
+
+# Sitemap location
+Sitemap: https://thevendinglocator.com/sitemap.xml
+
+# Crawl delay (optional - be respectful to servers)
+Crawl-delay: 1

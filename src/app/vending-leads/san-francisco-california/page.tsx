@@ -1,202 +1,284 @@
 'use client'
 
-import Link from 'next/link'
+import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CpuChipIcon } from '@heroicons/react/24/solid'
+import { generateCityMetadata, generateCityStructuredData } from '@/components/CityPageSEO'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
-import VendingCourse from '@/components/VendingCourse'
-import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
-import { useState, useEffect } from 'react'
-import { motion } from 'framer-motion'
-import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon } from '@heroicons/react/24/solid'
+
+export const metadata = generateCityMetadata({
+  city: 'San Francisco',
+  state: 'California',
+  stateAbbr: 'CA',
+  population: '873,965',
+  businessCount: '40,000+',
+  industries: ['Technology', 'Financial Services', 'Healthcare', 'Tourism', 'Biotechnology'],
+  description: 'San Francisco offers excellent opportunities for vending machine placement with its major technology sector, financial services, and diverse business landscape.'
+})
 
 export default function SanFranciscoCaliforniaVendingLeadsPage() {
-  const [activeUsers, setActiveUsers] = useState(0)
-  const [userNames, setUserNames] = useState([
-    'Mike from San Francisco', 'Sarah in SOMA', 'David from Mission Bay', 'Lisa in Financial District',
-    'Tom in North Beach', 'Jennifer in Hayes Valley', 'Robert from Castro', 'Amanda in Pacific Heights'
-  ])
-  const [currentUserIndex, setCurrentUserIndex] = useState(0)
-
-  useEffect(() => {
-    const updateActiveUsers = () => {
-      const baseUsers = 7
-      const fluctuation = Math.floor(Math.random() * 4) + 1
-      setActiveUsers(baseUsers + fluctuation)
-    }
-
-    const interval = setInterval(() => {
-      updateActiveUsers()
-    }, Math.random() * 2000 + 2000)
-
-    updateActiveUsers()
-    return () => clearInterval(interval)
-  }, [])
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentUserIndex(prev => (prev + 1) % userNames.length)
-    }, 3000)
-
-    return () => clearInterval(interval)
-  }, [userNames.length])
+  const structuredData = generateCityStructuredData({
+    city: 'San Francisco',
+    state: 'California',
+    stateAbbr: 'CA',
+    population: '873,965',
+    businessCount: '40,000+',
+    industries: ['Technology', 'Financial Services', 'Healthcare', 'Tourism', 'Biotechnology'],
+    description: 'San Francisco offers excellent opportunities for vending machine placement with its major technology sector, financial services, and diverse business landscape.'
+  })
 
   return (
     <>
+      {/* Structured Data for SEO */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData)
+        }}
+      />
+      
       <Header />
       
       <div className="min-h-screen bg-warm-white">
-        {/* Hero Section */}
-        <div className="bg-warm-white py-16 sm:py-24 lg:py-32">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        {/* Hero Section - Matching Homepage Style */}
+        <div className="bg-warm-white">
+          <div className="mx-auto max-w-2xl px-4 sm:px-6 py-12 sm:py-16 lg:py-24">
             <div className="text-center">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                className="mb-8 p-4 bg-cream/50 backdrop-blur-sm rounded-2xl border border-gray-200 shadow-sm max-w-md mx-auto"
-              >
-                <div className="flex items-center justify-center gap-3">
-                  <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                  <span className="text-sm font-medium text-chocolate">
-                    <span className="font-bold text-coral">{activeUsers}</span> San Francisco vendors are choosing plans right now
-                  </span>
-                </div>
-                <div className="mt-2 text-xs text-chocolate/70">
-                  Including {userNames[currentUserIndex]}
-                </div>
-              </motion.div>
-
-              <motion.h1
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                className="text-4xl sm:text-5xl lg:text-6xl font-playfair font-bold tracking-tight text-charcoal leading-tight"
-              >
-                Vending Machine Locations<br />in San Francisco, California
-              </motion.h1>
+              <h1 className="text-3xl sm:text-4xl lg:text-6xl font-playfair font-bold tracking-tight text-charcoal leading-tight">
+                San Francisco Vending Machine Locations
+              </h1>
               
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                className="mt-6 sm:mt-8 text-lg sm:text-xl leading-8 text-stone max-w-4xl mx-auto"
-              >
-                Get pre-qualified vending machine locations in San Francisco's thriving technology and startup economy. 
-                Access verified businesses with detailed contact information and placement opportunities.
-              </motion.p>
+              <p className="mt-4 sm:mt-6 text-base sm:text-lg leading-7 sm:leading-8 text-stone px-2 sm:px-0">
+                Discover premium vending machine placement opportunities in San Francisco, California. 
+                Access 40,000+ businesses and the heart of Silicon Valley technology.
+              </p>
 
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.8 }}
-                className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 px-4 sm:px-0"
-              >
-                <Link
-                  href="#pricing"
-                  className="w-full sm:w-auto btn-primary text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-lg"
-                >
-                  Get SF Leads
-                </Link>
-                <Link
-                  href="#sf-content"
-                  className="w-full sm:w-auto text-base sm:text-lg font-semibold leading-6 text-charcoal hover:text-navy transition-colors text-center py-3 sm:py-4"
-                >
-                  Learn About SF <span aria-hidden="true">→</span>
-                </Link>
-              </motion.div>
+              {/* City Stats - Matching Homepage Counter Style */}
+              <div className="mt-10 sm:mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 px-4 sm:px-0">
+                <div className="text-center">
+                  <div className="text-xl sm:text-2xl font-bold text-bronze">40,000+</div>
+                  <div className="text-xs sm:text-sm text-stone leading-tight">Businesses</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-xl sm:text-2xl font-bold text-bronze">874K+</div>
+                  <div className="text-xs sm:text-sm text-stone leading-tight">Population</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-xl sm:text-2xl font-bold text-bronze">180+</div>
+                  <div className="text-xs sm:text-sm text-stone leading-tight">Vending Locations</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-xl sm:text-2xl font-bold text-bronze">5</div>
+                  <div className="text-xs sm:text-sm text-stone leading-tight">Major Industries</div>
+                </div>
+              </div>
+
+              {/* Trust Signals - Matching Homepage Style */}
+              <div className="mt-8 sm:mt-10 flex flex-wrap justify-center gap-4 sm:gap-6">
+                <div className="flex items-center gap-2 text-sm text-stone">
+                  <CheckBadgeIcon className="h-5 w-5 text-green-600" />
+                  <span>Verified Locations</span>
+                </div>
+                <div className="flex items-center gap-2 text-sm text-stone">
+                  <StarIcon className="h-5 w-5 text-yellow-500" />
+                  <span>4.9/5 Rating</span>
+                </div>
+                <div className="flex items-center gap-2 text-sm text-stone">
+                  <ShieldCheckIcon className="h-5 w-5 text-blue-600" />
+                  <span>Secure & Reliable</span>
+                </div>
+                <div className="flex items-center gap-2 text-sm text-stone">
+                  <ClockIcon className="h-5 w-5 text-purple-600" />
+                  <span>Quality Research</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        {/* Pricing Section */}
-        <div id="pricing" className="bg-white py-16 sm:py-20 lg:py-24">
+        {/* Business Landscape Section */}
+        <div className="bg-white py-16 sm:py-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="mx-auto max-w-4xl text-center mb-12 sm:mb-16">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-playfair font-bold tracking-tight text-chocolate mb-6">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
+                San Francisco Business Landscape
+              </h2>
+              <p className="text-lg text-stone max-w-3xl mx-auto">
+                San Francisco is the technology capital of the world, offering diverse vending opportunities across multiple thriving industries.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <CpuChipIcon className="w-8 h-8 text-navy" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-2">Technology Hub</h3>
+                <p className="text-stone">Global tech companies and innovative startups</p>
+              </div>
+
+              <div className="text-center">
+                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <BuildingOfficeIcon className="w-8 h-8 text-navy" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-2">Financial Services</h3>
+                <p className="text-stone">Major banks and investment firms</p>
+              </div>
+
+              <div className="text-center">
+                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <AcademicCapIcon className="w-8 h-8 text-navy" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-2">Healthcare</h3>
+                <p className="text-stone">Medical centers and biotechnology companies</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Key Business Districts */}
+        <div className="bg-warm-white py-16 sm:py-20">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
+                Key Business Districts
+              </h2>
+              <p className="text-lg text-stone max-w-3xl mx-auto">
+                Strategic vending machine placement opportunities in San Francisco's most active business areas.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Financial District</h3>
+                <p className="text-stone mb-3">Major banks, investment firms, and corporate headquarters</p>
+                <div className="text-sm text-bronze font-medium">300+ businesses</div>
+              </div>
+
+              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                <h3 className="text-xl font-semibold text-charcoal mb-3">South of Market (SoMa)</h3>
+                <p className="text-stone mb-3">Tech companies, startups, and innovation hubs</p>
+                <div className="text-sm text-bronze font-medium">250+ businesses</div>
+              </div>
+
+              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Mission Bay</h3>
+                <p className="text-stone mb-3">Biotechnology companies and medical research</p>
+                <div className="text-sm text-bronze font-medium">120+ businesses</div>
+              </div>
+
+              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Fisherman's Wharf</h3>
+                <p className="text-stone mb-3">Tourism, retail, and hospitality businesses</p>
+                <div className="text-sm text-bronze font-medium">180+ businesses</div>
+              </div>
+
+              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                <h3 className="text-xl font-semibold text-charcoal mb-3">North Beach</h3>
+                <p className="text-stone mb-3">Restaurants, cafes, and creative industries</p>
+                <div className="text-sm text-bronze font-medium">140+ businesses</div>
+              </div>
+
+              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Marina District</h3>
+                <p className="text-stone mb-3">Professional services and retail businesses</p>
+                <div className="text-sm text-bronze font-medium">160+ businesses</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Pricing Section - Prominently Displayed */}
+        <div className="bg-white py-16 sm:py-20">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
                 Get San Francisco Vending Machine Leads
               </h2>
-              <p className="text-lg sm:text-xl text-chocolate/70 leading-relaxed max-w-3xl mx-auto">
-                Access our comprehensive database of qualified SF vending machine locations with flexible pricing options. 
-                No long-term contracts, just results that help you grow your San Francisco vending business.
+              <p className="text-lg text-stone max-w-3xl mx-auto">
+                Choose the plan that fits your business needs and start receiving qualified vending machine location leads in San Francisco.
               </p>
             </div>
             <PricingTable />
           </div>
         </div>
 
-        {/* SF Content Section */}
-        <div id="sf-content" className="py-16 sm:py-24 bg-warm-white">
+        {/* Hot Leads Section */}
+        <div className="bg-warm-white py-16 sm:py-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-playfair font-bold text-chocolate mb-6">
-                Why San Francisco is Perfect for Vending Machines
+            <HotLeads />
+          </div>
+        </div>
+
+        {/* FAQ Section */}
+        <div className="bg-white py-16 sm:py-20">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
+                Frequently Asked Questions
               </h2>
-              <p className="text-lg sm:text-xl text-chocolate/70 max-w-4xl mx-auto leading-relaxed">
-                San Francisco's unique combination of technology innovation, startup culture, and healthcare excellence creates 
-                exceptional vending machine opportunities across diverse business sectors.
+              <p className="text-lg text-stone">
+                Everything you need to know about vending machine opportunities in San Francisco.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-              <div>
-                <h3 className="text-2xl sm:text-3xl font-playfair font-bold text-chocolate mb-6">
-                  San Francisco's Business Landscape
+            <div className="space-y-6">
+              <div className="bg-warm-white p-6 rounded-xl">
+                <h3 className="text-xl font-semibold text-charcoal mb-3">
+                  What types of businesses are best for vending machines in San Francisco?
                 </h3>
-                <div className="space-y-4 text-chocolate/80">
-                  <p>
-                    San Francisco is home to major technology companies like Google, Facebook, Twitter, and Uber, creating a massive 
-                    workforce of tech professionals who frequent vending machines throughout the workday.
-                  </p>
-                  <p>
-                    The University of San Francisco and San Francisco State University, with over 30,000 combined students, 
-                    provide consistent demand for snacks and beverages across multiple campus locations.
-                  </p>
-                </div>
+                <p className="text-stone">
+                  San Francisco offers diverse opportunities including tech companies, office buildings, healthcare facilities, 
+                  retail centers, and hospitality businesses. The major technology sector provides excellent placement opportunities.
+                </p>
               </div>
 
-              <div>
-                <h4 className="text-xl sm:text-2xl font-playfair font-bold text-chocolate mb-6">
-                  Vending Machine Opportunities in SF
-                </h4>
-                <div className="space-y-4">
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-coral rounded-full mt-2 flex-shrink-0"></div>
-                    <div>
-                      <h5 className="font-semibold text-chocolate mb-1">Technology Companies</h5>
-                      <p className="text-sm text-chocolate/70">High-traffic corporate environments with modern amenities</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-coral rounded-full mt-2 flex-shrink-0"></div>
-                    <div>
-                      <h5 className="font-semibold text-chocolate mb-1">Startup Offices</h5>
-                      <p className="text-sm text-chocolate/70">Innovative companies with growing employee bases</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-coral rounded-full mt-2 flex-shrink-0"></div>
-                    <div>
-                      <h5 className="font-semibold text-chocolate mb-1">University Campuses</h5>
-                      <p className="text-sm text-chocolate/70">Student centers, libraries, and academic buildings</p>
-                    </div>
-                  </div>
-                </div>
+              <div className="bg-warm-white p-6 rounded-xl">
+                <h3 className="text-xl font-semibold text-charcoal mb-3">
+                  How competitive is the vending machine market in San Francisco?
+                </h3>
+                <p className="text-stone">
+                  San Francisco has a competitive vending presence, but there's still significant opportunity 
+                  for expansion, especially in new tech developments and emerging business districts.
+                </p>
+              </div>
+
+              <div className="bg-warm-white p-6 rounded-xl">
+                <h3 className="text-xl font-semibold text-charcoal mb-3">
+                  What are the peak business hours for vending in San Francisco?
+                </h3>
+                <p className="text-stone">
+                  San Francisco businesses typically operate from 8 AM to 6 PM, with peak vending activity 
+                  during lunch hours (12 PM - 2 PM) and afternoon breaks (3 PM - 4 PM).
+                </p>
+              </div>
+
+              <div className="bg-warm-white p-6 rounded-xl">
+                <h3 className="text-xl font-semibold text-charcoal mb-3">
+                  Are there seasonal considerations for vending in San Francisco?
+                </h3>
+                <p className="text-stone">
+                  San Francisco has mild, consistent weather year-round, making it ideal for both indoor and 
+                  outdoor vending machine placement throughout all seasons.
+                </p>
+              </div>
+
+              <div className="bg-warm-white p-6 rounded-xl">
+                <h3 className="text-xl font-semibold text-charcoal mb-3">
+                  What permits are required for vending machines in San Francisco?
+                </h3>
+                <p className="text-stone">
+                  You'll need a business license from the City of San Francisco and potentially health permits 
+                  for food vending. Specific requirements depend on your machine type and location.
+                </p>
               </div>
             </div>
           </div>
         </div>
-
-        {/* Hot Leads Section */}
-        <HotLeads />
-
-        {/* Vending Course Section */}
-        <VendingCourse />
       </div>
-
+      
       <Footer />
-      <ZipCodeModalWrapper />
     </>
   )
 }
