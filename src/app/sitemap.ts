@@ -63,41 +63,78 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: 'https://thevendinglocator.com/vending-leads/north-carolina', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
   ]
 
-  // Individual city pages - All 20 high-quality city pages
+  // Individual city pages - All actual city pages we're building
   const cityPages = [
-    // Batch 1: Phoenix, Philadelphia, San Francisco, Seattle
-    { url: 'https://thevendinglocator.com/vending-leads/phoenix-arizona', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
-    { url: 'https://thevendinglocator.com/vending-leads/philadelphia-pennsylvania', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
-    { url: 'https://thevendinglocator.com/vending-leads/san-francisco-california', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
-    { url: 'https://thevendinglocator.com/vending-leads/seattle-washington', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
-    
-    // Batch 2: Atlanta, Denver, Boston, Miami, Portland, Las Vegas, San Diego, Orlando
-    { url: 'https://thevendinglocator.com/vending-leads/atlanta-georgia', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
-    { url: 'https://thevendinglocator.com/vending-leads/denver-colorado', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
-    { url: 'https://thevendinglocator.com/vending-leads/boston-massachusetts', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
-    { url: 'https://thevendinglocator.com/vending-leads/miami-florida', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
-    { url: 'https://thevendinglocator.com/vending-leads/portland-oregon', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
-    { url: 'https://thevendinglocator.com/vending-leads/las-vegas-nevada', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
-    { url: 'https://thevendinglocator.com/vending-leads/san-diego-california', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
-    { url: 'https://thevendinglocator.com/vending-leads/orlando-florida', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
-    
-    // Batch 3: Austin (enhanced), San Jose, Tampa, Minneapolis
+    // Major cities
     { url: 'https://thevendinglocator.com/vending-leads/austin-texas', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://thevendinglocator.com/vending-leads/dallas-texas', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://thevendinglocator.com/vending-leads/houston-texas', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://thevendinglocator.com/vending-leads/san-antonio-texas', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://thevendinglocator.com/vending-leads/los-angeles-california', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://thevendinglocator.com/vending-leads/san-diego-california', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://thevendinglocator.com/vending-leads/san-francisco-california', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://thevendinglocator.com/vending-leads/san-jose-california', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://thevendinglocator.com/vending-leads/miami-florida', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://thevendinglocator.com/vending-leads/orlando-florida', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://thevendinglocator.com/vending-leads/tampa-florida', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
-    { url: 'https://thevendinglocator.com/vending-leads/minneapolis-minnesota', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
-    
-    // Batch 4: Cleveland (enhanced), Pittsburgh (enhanced), Kansas City (enhanced), Cincinnati (enhanced)
-    { url: 'https://thevendinglocator.com/vending-leads/cleveland-ohio', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
-    { url: 'https://thevendinglocator.com/vending-leads/pittsburgh-pennsylvania', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
-    { url: 'https://thevendinglocator.com/vending-leads/kansas-city-missouri', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
-    { url: 'https://thevendinglocator.com/vending-leads/cincinnati-ohio', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
-    
-    // Batch 5: New city pages - Augusta, Savannah, Knoxville, Tampa
+    { url: 'https://thevendinglocator.com/vending-leads/jacksonville-florida', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://thevendinglocator.com/vending-leads/chicago-illinois', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://thevendinglocator.com/vending-leads/new-york-new-york', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://thevendinglocator.com/vending-leads/philadelphia-pennsylvania', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://thevendinglocator.com/vending-leads/phoenix-arizona', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://thevendinglocator.com/vending-leads/seattle-washington', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://thevendinglocator.com/vending-leads/portland-oregon', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://thevendinglocator.com/vending-leads/denver-colorado', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://thevendinglocator.com/vending-leads/colorado-springs-colorado', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://thevendinglocator.com/vending-leads/boulder-colorado', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://thevendinglocator.com/vending-leads/atlanta-georgia', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://thevendinglocator.com/vending-leads/augusta-georgia', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://thevendinglocator.com/vending-leads/savannah-georgia', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://thevendinglocator.com/vending-leads/boston-massachusetts', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://thevendinglocator.com/vending-leads/springfield-massachusetts', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://thevendinglocator.com/vending-leads/worcester-massachusetts', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://thevendinglocator.com/vending-leads/las-vegas-nevada', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://thevendinglocator.com/vending-leads/salt-lake-city-utah', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://thevendinglocator.com/vending-leads/cleveland-ohio', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://thevendinglocator.com/vending-leads/columbus-ohio', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://thevendinglocator.com/vending-leads/cincinnati-ohio', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://thevendinglocator.com/vending-leads/pittsburgh-pennsylvania', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://thevendinglocator.com/vending-leads/baltimore-maryland', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://thevendinglocator.com/vending-leads/detroit-michigan', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://thevendinglocator.com/vending-leads/indianapolis-indiana', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://thevendinglocator.com/vending-leads/louisville-kentucky', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://thevendinglocator.com/vending-leads/milwaukee-wisconsin', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://thevendinglocator.com/vending-leads/minneapolis-minnesota', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://thevendinglocator.com/vending-leads/kansas-city-missouri', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://thevendinglocator.com/vending-leads/memphis-tennessee', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://thevendinglocator.com/vending-leads/nashville-tennessee', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://thevendinglocator.com/vending-leads/knoxville-tennessee', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
-    { url: 'https://thevendinglocator.com/vending-leads/tampa-florida', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://thevendinglocator.com/vending-leads/raleigh-north-carolina', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://thevendinglocator.com/vending-leads/charlotte-north-carolina', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://thevendinglocator.com/vending-leads/greensboro-north-carolina', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  ]
+
+  // Location pages (different from vending-leads)
+  const locationPages = [
+    { url: 'https://thevendinglocator.com/location', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.7 },
+    { url: 'https://thevendinglocator.com/location/austin-tx', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.7 },
+    { url: 'https://thevendinglocator.com/location/dallas-tx', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.7 },
+    { url: 'https://thevendinglocator.com/location/houston-tx', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.7 },
+    { url: 'https://thevendinglocator.com/location/san-antonio-tx', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.7 },
+    { url: 'https://thevendinglocator.com/location/los-angeles-ca', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.7 },
+    { url: 'https://thevendinglocator.com/location/san-diego-ca', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.7 },
+    { url: 'https://thevendinglocator.com/location/san-francisco-ca', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.7 },
+    { url: 'https://thevendinglocator.com/location/san-jose-ca', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.7 },
+    { url: 'https://thevendinglocator.com/location/miami-fl', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.7 },
+    { url: 'https://thevendinglocator.com/location/jacksonville-fl', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.7 },
+    { url: 'https://thevendinglocator.com/location/chicago-il', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.7 },
+    { url: 'https://thevendinglocator.com/location/new-york-ny', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.7 },
+    { url: 'https://thevendinglocator.com/location/philadelphia-pa', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.7 },
+    { url: 'https://thevendinglocator.com/location/phoenix-az', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.7 },
+    { url: 'https://thevendinglocator.com/location/seattle-wa', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.7 },
+    { url: 'https://thevendinglocator.com/location/texas.html', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.7 },
+    { url: 'https://thevendinglocator.com/location/florida.html', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.7 },
+    { url: 'https://thevendinglocator.com/location/california.html', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.7 },
   ]
 
   // Blog posts
@@ -112,11 +149,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: 'https://thevendinglocator.com/vending-companies/austin-texas', lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.7 },
   ]
 
+  // Checkout pages
+  const checkoutPages = [
+    { url: 'https://thevendinglocator.com/checkout/success', lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.5 },
+    { url: 'https://thevendinglocator.com/checkout/cancel', lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.5 },
+    { url: 'https://thevendinglocator.com/checkout/success-preview', lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.5 },
+  ]
+
   return [
     ...mainPages,
     ...statePages,
     ...cityPages,
+    ...locationPages,
     ...blogPosts,
     ...vendingCompanyPages,
+    ...checkoutPages,
   ]
 }
