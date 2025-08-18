@@ -69,6 +69,14 @@ export default function FloridaVendingLeadsPage() {
       businessCount: '200+', 
       description: 'Theme parks and technology innovation hub',
       highlights: ['Theme Parks', 'Technology', 'Tourism']
+    },
+    { 
+      name: 'Hialeah', 
+      slug: 'hialeah-florida', 
+      vendorCount: '140+', 
+      businessCount: '180+', 
+      description: 'Major retail and healthcare hub',
+      highlights: ['Retail & Shopping', 'Healthcare', 'Manufacturing']
     }
   ]
 
@@ -137,7 +145,7 @@ export default function FloridaVendingLeadsPage() {
                 <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
                   <div className="flex items-center gap-3">
                     <StarIcon className="h-5 w-5 text-yellow-500" />
-                    <span className="text-sm font-medium text-chocolate">3 Major Cities</span>
+                    <span className="text-sm font-medium text-chocolate">4 Major Cities</span>
                   </div>
                 </div>
                 <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">

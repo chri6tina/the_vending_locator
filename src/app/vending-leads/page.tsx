@@ -12,6 +12,7 @@ export default function VendingLeadsPage() {
         { name: 'Dallas', slug: 'dallas-texas', vendorCount: '220+', businessCount: '300+', description: 'Financial district and corporate headquarters' },
         { name: 'Houston', slug: 'houston-texas', vendorCount: '250+', businessCount: '350+', description: 'Energy industry and medical center hub' },
         { name: 'San Antonio', slug: 'san-antonio-texas', vendorCount: '150+', businessCount: '220+', description: 'Military bases and healthcare facilities' },
+        { name: 'El Paso', slug: 'el-paso-texas', vendorCount: '180+', businessCount: '250+', description: 'Military presence and international trade hub' },
       ]
     },
     {
@@ -21,6 +22,7 @@ export default function VendingLeadsPage() {
         { name: 'Miami', slug: 'miami-florida', vendorCount: '180+', businessCount: '250+', description: 'International business and tourism center' },
         { name: 'Jacksonville', slug: 'jacksonville-florida', vendorCount: '160+', businessCount: '220+', description: 'Port city with logistics and healthcare' },
         { name: 'Orlando', slug: 'orlando-florida', vendorCount: '170+', businessCount: '230+', description: 'Theme parks and technology innovation hub' },
+        { name: 'Hialeah', slug: 'hialeah-florida', vendorCount: '140+', businessCount: '180+', description: 'Major retail and healthcare hub' },
       ]
     },
     {
@@ -31,6 +33,7 @@ export default function VendingLeadsPage() {
         { name: 'San Francisco', slug: 'san-francisco-california', vendorCount: '200+', businessCount: '320+', description: 'Tech startups and financial services' },
         { name: 'San Diego', slug: 'san-diego-california', vendorCount: '180+', businessCount: '280+', description: 'Biotech and military presence' },
         { name: 'San Jose', slug: 'san-jose-california', vendorCount: '160+', businessCount: '240+', description: 'Silicon Valley tech companies' },
+        { name: 'Fresno', slug: 'fresno-california', vendorCount: '160+', businessCount: '220+', description: 'Agricultural and healthcare hub' },
       ]
     },
     {

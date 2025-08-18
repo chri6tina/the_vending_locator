@@ -77,6 +77,14 @@ export default function TexasVendingLeadsPage() {
       businessCount: '180+', 
       description: 'Military bases and healthcare facilities',
       highlights: ['Military Bases', 'Healthcare', 'Tourism']
+    },
+    { 
+      name: 'El Paso', 
+      slug: 'el-paso-texas', 
+      vendorCount: '180+', 
+      businessCount: '250+', 
+      description: 'Military presence and international trade hub',
+      highlights: ['Military & Defense', 'Healthcare', 'International Trade']
     }
   ]
 

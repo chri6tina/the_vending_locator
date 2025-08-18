@@ -77,6 +77,14 @@ export default function CaliforniaVendingLeadsPage() {
       businessCount: '200+', 
       description: 'Silicon Valley tech companies',
       highlights: ['Silicon Valley', 'Tech Companies', 'Innovation']
+    },
+    { 
+      name: 'Fresno', 
+      slug: 'fresno-california', 
+      vendorCount: '160+', 
+      businessCount: '220+', 
+      description: 'Agricultural and healthcare hub',
+      highlights: ['Agriculture', 'Healthcare', 'Manufacturing']
     }
   ]
 
