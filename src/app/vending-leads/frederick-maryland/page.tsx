@@ -7,24 +7,24 @@ import HotLeads from '@/components/HotLeads'
 import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CpuChipIcon } from '@heroicons/react/24/solid'
 
 export const metadata: Metadata = generateCityMetadata({
-  city: 'Baltimore',
+  city: 'Frederick',
   state: 'Maryland',
   stateAbbr: 'MD',
-  population: '580K+',
-  businessCount: '18,500+',
-  industries: ['Healthcare', 'Education', 'Manufacturing', 'Technology', 'Transportation'],
-  description: 'Baltimore offers healthcare facilities, educational institutions, manufacturing companies, technology firms, and transportation businesses perfect for vending machine placement opportunities.'
+  population: '78K+',
+  businessCount: '4,200+',
+  industries: ['Technology', 'Healthcare', 'Education', 'Manufacturing', 'Research'],
+  description: 'Frederick offers technology companies, healthcare facilities, educational institutions, manufacturing businesses, and research organizations perfect for vending machine placement opportunities.'
 })
 
-export default function BaltimoreMarylandVendingLeadsPage() {
+export default function FrederickMarylandVendingLeadsPage() {
   const structuredData = generateCityStructuredData({
-    city: 'Baltimore',
+    city: 'Frederick',
     state: 'Maryland',
     stateAbbr: 'MD',
-    population: '580K+',
-    businessCount: '18,500+',
-    industries: ['Healthcare', 'Education', 'Manufacturing', 'Technology', 'Transportation'],
-    description: 'Baltimore offers healthcare facilities, educational institutions, manufacturing companies, technology firms, and transportation businesses perfect for vending machine placement opportunities.'
+    population: '78K+',
+    businessCount: '4,200+',
+    industries: ['Technology', 'Healthcare', 'Education', 'Manufacturing', 'Research'],
+    description: 'Frederick offers technology companies, healthcare facilities, educational institutions, manufacturing businesses, and research organizations perfect for vending machine placement opportunities.'
   })
 
   return (
@@ -42,20 +42,20 @@ export default function BaltimoreMarylandVendingLeadsPage() {
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="text-center">
               <h1 className="text-4xl font-playfair font-bold tracking-tight text-white sm:text-6xl">
-                Vending Machine Leads in Baltimore, MD
+                Vending Machine Leads in Frederick, MD
               </h1>
               <p className="mt-6 text-xl leading-8 text-white/90 max-w-3xl mx-auto">
-                Get qualified vending machine leads in Baltimore, Maryland. Access verified business locations with contact information for successful vending machine placement.
+                Get qualified vending machine leads in Frederick, Maryland. Access verified business locations with contact information for successful vending machine placement.
               </p>
               <div className="mt-8 flex flex-wrap justify-center gap-4">
                 <div className="bg-white/20 rounded-full px-6 py-2 text-white text-sm">
-                  Healthcare Hub
+                  Technology Hub
                 </div>
                 <div className="bg-white/20 rounded-full px-6 py-2 text-white text-sm">
-                  Education
+                  Healthcare
                 </div>
                 <div className="bg-white/20 rounded-full px-6 py-2 text-white text-sm">
-                  Manufacturing
+                  Research
                 </div>
               </div>
             </div>
@@ -67,14 +67,21 @@ export default function BaltimoreMarylandVendingLeadsPage() {
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-playfair font-bold text-charcoal">
-                Baltimore Business Landscape
+                Frederick Business Landscape
               </h2>
               <p className="mt-4 text-lg text-stone max-w-3xl mx-auto">
-                Baltimore's economy is driven by healthcare, education, manufacturing, and technology sectors.
+                Frederick's economy is driven by technology, healthcare, education, and research sectors.
               </p>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <CpuChipIcon className="w-8 h-8 text-navy" />
+                </div>
+                <h3 className="text-lg font-semibold text-charcoal mb-2">Technology</h3>
+                <p className="text-stone text-sm">Tech companies and innovation hubs</p>
+              </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <BuildingOfficeIcon className="w-8 h-8 text-navy" />
@@ -91,17 +98,10 @@ export default function BaltimoreMarylandVendingLeadsPage() {
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <CpuChipIcon className="w-8 h-8 text-navy" />
-                </div>
-                <h3 className="text-lg font-semibold text-charcoal mb-2">Manufacturing</h3>
-                <p className="text-stone text-sm">Industrial and manufacturing facilities</p>
-              </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <UsersIcon className="w-8 h-8 text-navy" />
                 </div>
-                <h3 className="text-lg font-semibold text-charcoal mb-2">Technology</h3>
-                <p className="text-stone text-sm">Tech companies and innovation hubs</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-2">Research</h3>
+                <p className="text-stone text-sm">Research organizations and labs</p>
               </div>
             </div>
           </div>
@@ -115,7 +115,7 @@ export default function BaltimoreMarylandVendingLeadsPage() {
                 Vending Machine Lead Pricing
               </h2>
               <p className="mt-4 text-lg text-stone max-w-3xl mx-auto">
-                Get access to qualified vending machine leads in Baltimore with our flexible pricing options.
+                Get access to qualified vending machine leads in Frederick with our flexible pricing options.
               </p>
             </div>
             <PricingTable />
@@ -127,10 +127,10 @@ export default function BaltimoreMarylandVendingLeadsPage() {
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-playfair font-bold text-charcoal">
-                Hot Vending Leads in Baltimore
+                Hot Vending Leads in Frederick
               </h2>
               <p className="mt-4 text-lg text-stone max-w-3xl mx-auto">
-                Access our latest verified vending machine placement opportunities in Baltimore.
+                Access our latest verified vending machine placement opportunities in Frederick.
               </p>
             </div>
             <HotLeads />
@@ -147,16 +147,16 @@ export default function BaltimoreMarylandVendingLeadsPage() {
             </div>
             <div className="max-w-3xl mx-auto space-y-6">
               <div className="bg-warm-white p-6 rounded-lg">
-                <h3 className="text-lg font-semibold text-charcoal mb-2">What types of businesses in Baltimore need vending machines?</h3>
-                <p className="text-stone">Healthcare facilities, educational institutions, manufacturing plants, technology companies, and office buildings in Baltimore are excellent locations for vending machine placement.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-2">What types of businesses in Frederick need vending machines?</h3>
+                <p className="text-stone">Technology companies, healthcare facilities, educational institutions, manufacturing plants, and research organizations in Frederick are excellent locations for vending machine placement.</p>
               </div>
               <div className="bg-warm-white p-6 rounded-lg">
-                <h3 className="text-lg font-semibold text-charcoal mb-2">How do I get started with vending machine placement in Baltimore?</h3>
+                <h3 className="text-lg font-semibold text-charcoal mb-2">How do I get started with vending machine placement in Frederick?</h3>
                 <p className="text-stone">Start by accessing our verified business leads, then contact the businesses directly to discuss vending machine placement opportunities.</p>
               </div>
               <div className="bg-warm-white p-6 rounded-lg">
-                <h3 className="text-lg font-semibold text-charcoal mb-2">What are the best areas in Baltimore for vending machines?</h3>
-                <p className="text-stone">The downtown area, healthcare districts, educational campuses, manufacturing zones, and technology corridors offer the highest potential for vending machine success.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-2">What are the best areas in Frederick for vending machines?</h3>
+                <p className="text-stone">The downtown area, technology corridors, healthcare districts, educational campuses, and research parks offer the highest potential for vending machine success.</p>
               </div>
             </div>
           </div>
@@ -174,13 +174,13 @@ export default function BaltimoreMarylandVendingLeadsPage() {
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <a href="/vending-leads/baltimore-maryland" className="block bg-white p-6 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
+                <h3 className="text-lg font-semibold text-charcoal mb-2">Baltimore</h3>
+                <p className="text-stone text-sm">Healthcare hub with technology and education</p>
+              </a>
               <a href="/vending-leads/annapolis-maryland" className="block bg-white p-6 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
                 <h3 className="text-lg font-semibold text-charcoal mb-2">Annapolis</h3>
                 <p className="text-stone text-sm">State capital with government and tourism</p>
-              </a>
-              <a href="/vending-leads/frederick-maryland" className="block bg-white p-6 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
-                <h3 className="text-lg font-semibold text-charcoal mb-2">Frederick</h3>
-                <p className="text-stone text-sm">Technology hub with healthcare and education</p>
               </a>
               <a href="/vending-leads/rockville-maryland" className="block bg-white p-6 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
                 <h3 className="text-lg font-semibold text-charcoal mb-2">Rockville</h3>

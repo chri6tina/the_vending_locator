@@ -7,24 +7,24 @@ import HotLeads from '@/components/HotLeads'
 import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CpuChipIcon } from '@heroicons/react/24/solid'
 
 export const metadata: Metadata = generateCityMetadata({
-  city: 'Baltimore',
-  state: 'Maryland',
-  stateAbbr: 'MD',
-  population: '580K+',
-  businessCount: '18,500+',
-  industries: ['Healthcare', 'Education', 'Manufacturing', 'Technology', 'Transportation'],
-  description: 'Baltimore offers healthcare facilities, educational institutions, manufacturing companies, technology firms, and transportation businesses perfect for vending machine placement opportunities.'
+  city: 'Bridgeport',
+  state: 'Connecticut',
+  stateAbbr: 'CT',
+  population: '148K+',
+  businessCount: '6,200+',
+  industries: ['Manufacturing', 'Healthcare', 'Education', 'Transportation', 'Technology'],
+  description: 'Bridgeport offers manufacturing companies, healthcare facilities, educational institutions, transportation businesses, and technology firms perfect for vending machine placement opportunities.'
 })
 
-export default function BaltimoreMarylandVendingLeadsPage() {
+export default function BridgeportConnecticutVendingLeadsPage() {
   const structuredData = generateCityStructuredData({
-    city: 'Baltimore',
-    state: 'Maryland',
-    stateAbbr: 'MD',
-    population: '580K+',
-    businessCount: '18,500+',
-    industries: ['Healthcare', 'Education', 'Manufacturing', 'Technology', 'Transportation'],
-    description: 'Baltimore offers healthcare facilities, educational institutions, manufacturing companies, technology firms, and transportation businesses perfect for vending machine placement opportunities.'
+    city: 'Bridgeport',
+    state: 'Connecticut',
+    stateAbbr: 'CT',
+    population: '148K+',
+    businessCount: '6,200+',
+    industries: ['Manufacturing', 'Healthcare', 'Education', 'Transportation', 'Technology'],
+    description: 'Bridgeport offers manufacturing companies, healthcare facilities, educational institutions, transportation businesses, and technology firms perfect for vending machine placement opportunities.'
   })
 
   return (
@@ -42,20 +42,20 @@ export default function BaltimoreMarylandVendingLeadsPage() {
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="text-center">
               <h1 className="text-4xl font-playfair font-bold tracking-tight text-white sm:text-6xl">
-                Vending Machine Leads in Baltimore, MD
+                Vending Machine Leads in Bridgeport, CT
               </h1>
               <p className="mt-6 text-xl leading-8 text-white/90 max-w-3xl mx-auto">
-                Get qualified vending machine leads in Baltimore, Maryland. Access verified business locations with contact information for successful vending machine placement.
+                Get qualified vending machine leads in Bridgeport, Connecticut. Access verified business locations with contact information for successful vending machine placement.
               </p>
               <div className="mt-8 flex flex-wrap justify-center gap-4">
                 <div className="bg-white/20 rounded-full px-6 py-2 text-white text-sm">
-                  Healthcare Hub
+                  Manufacturing Hub
                 </div>
                 <div className="bg-white/20 rounded-full px-6 py-2 text-white text-sm">
-                  Education
+                  Healthcare
                 </div>
                 <div className="bg-white/20 rounded-full px-6 py-2 text-white text-sm">
-                  Manufacturing
+                  Transportation
                 </div>
               </div>
             </div>
@@ -67,14 +67,21 @@ export default function BaltimoreMarylandVendingLeadsPage() {
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-playfair font-bold text-charcoal">
-                Baltimore Business Landscape
+                Bridgeport Business Landscape
               </h2>
               <p className="mt-4 text-lg text-stone max-w-3xl mx-auto">
-                Baltimore's economy is driven by healthcare, education, manufacturing, and technology sectors.
+                Bridgeport's economy is driven by manufacturing, healthcare, education, and transportation sectors.
               </p>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <CpuChipIcon className="w-8 h-8 text-navy" />
+                </div>
+                <h3 className="text-lg font-semibold text-charcoal mb-2">Manufacturing</h3>
+                <p className="text-stone text-sm">Industrial and manufacturing facilities</p>
+              </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <BuildingOfficeIcon className="w-8 h-8 text-navy" />
@@ -91,17 +98,10 @@ export default function BaltimoreMarylandVendingLeadsPage() {
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <CpuChipIcon className="w-8 h-8 text-navy" />
-                </div>
-                <h3 className="text-lg font-semibold text-charcoal mb-2">Manufacturing</h3>
-                <p className="text-stone text-sm">Industrial and manufacturing facilities</p>
-              </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <UsersIcon className="w-8 h-8 text-navy" />
                 </div>
-                <h3 className="text-lg font-semibold text-charcoal mb-2">Technology</h3>
-                <p className="text-stone text-sm">Tech companies and innovation hubs</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-2">Transportation</h3>
+                <p className="text-stone text-sm">Port facilities and logistics companies</p>
               </div>
             </div>
           </div>
@@ -115,7 +115,7 @@ export default function BaltimoreMarylandVendingLeadsPage() {
                 Vending Machine Lead Pricing
               </h2>
               <p className="mt-4 text-lg text-stone max-w-3xl mx-auto">
-                Get access to qualified vending machine leads in Baltimore with our flexible pricing options.
+                Get access to qualified vending machine leads in Bridgeport with our flexible pricing options.
               </p>
             </div>
             <PricingTable />
@@ -127,10 +127,10 @@ export default function BaltimoreMarylandVendingLeadsPage() {
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-playfair font-bold text-charcoal">
-                Hot Vending Leads in Baltimore
+                Hot Vending Leads in Bridgeport
               </h2>
               <p className="mt-4 text-lg text-stone max-w-3xl mx-auto">
-                Access our latest verified vending machine placement opportunities in Baltimore.
+                Access our latest verified vending machine placement opportunities in Bridgeport.
               </p>
             </div>
             <HotLeads />
@@ -147,44 +147,44 @@ export default function BaltimoreMarylandVendingLeadsPage() {
             </div>
             <div className="max-w-3xl mx-auto space-y-6">
               <div className="bg-warm-white p-6 rounded-lg">
-                <h3 className="text-lg font-semibold text-charcoal mb-2">What types of businesses in Baltimore need vending machines?</h3>
-                <p className="text-stone">Healthcare facilities, educational institutions, manufacturing plants, technology companies, and office buildings in Baltimore are excellent locations for vending machine placement.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-2">What types of businesses in Bridgeport need vending machines?</h3>
+                <p className="text-stone">Manufacturing companies, healthcare facilities, educational institutions, transportation businesses, and office buildings in Bridgeport are excellent locations for vending machine placement.</p>
               </div>
               <div className="bg-warm-white p-6 rounded-lg">
-                <h3 className="text-lg font-semibold text-charcoal mb-2">How do I get started with vending machine placement in Baltimore?</h3>
+                <h3 className="text-lg font-semibold text-charcoal mb-2">How do I get started with vending machine placement in Bridgeport?</h3>
                 <p className="text-stone">Start by accessing our verified business leads, then contact the businesses directly to discuss vending machine placement opportunities.</p>
               </div>
               <div className="bg-warm-white p-6 rounded-lg">
-                <h3 className="text-lg font-semibold text-charcoal mb-2">What are the best areas in Baltimore for vending machines?</h3>
-                <p className="text-stone">The downtown area, healthcare districts, educational campuses, manufacturing zones, and technology corridors offer the highest potential for vending machine success.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-2">What are the best areas in Bridgeport for vending machines?</h3>
+                <p className="text-stone">The downtown area, manufacturing districts, healthcare corridors, educational campuses, and port facilities offer the highest potential for vending machine success.</p>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Other Maryland Cities Section */}
+        {/* Other Connecticut Cities Section */}
         <div className="py-16 bg-warm-white">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-playfair font-bold text-charcoal">
-                Other Maryland Cities
+                Other Connecticut Cities
               </h2>
               <p className="mt-4 text-lg text-stone max-w-3xl mx-auto">
-                Explore vending machine opportunities in other major Maryland cities.
+                Explore vending machine opportunities in other major Connecticut cities.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <a href="/vending-leads/annapolis-maryland" className="block bg-white p-6 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
-                <h3 className="text-lg font-semibold text-charcoal mb-2">Annapolis</h3>
-                <p className="text-stone text-sm">State capital with government and tourism</p>
+              <a href="/vending-leads/hartford-connecticut" className="block bg-white p-6 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
+                <h3 className="text-lg font-semibold text-charcoal mb-2">Hartford</h3>
+                <p className="text-stone text-sm">Insurance hub with healthcare and education</p>
               </a>
-              <a href="/vending-leads/frederick-maryland" className="block bg-white p-6 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
-                <h3 className="text-lg font-semibold text-charcoal mb-2">Frederick</h3>
-                <p className="text-stone text-sm">Technology hub with healthcare and education</p>
+              <a href="/vending-leads/new-haven-connecticut" className="block bg-white p-6 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
+                <h3 className="text-lg font-semibold text-charcoal mb-2">New Haven</h3>
+                <p className="text-stone text-sm">Education hub with healthcare and technology</p>
               </a>
-              <a href="/vending-leads/rockville-maryland" className="block bg-white p-6 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
-                <h3 className="text-lg font-semibold text-charcoal mb-2">Rockville</h3>
-                <p className="text-stone text-sm">Suburban business center with technology</p>
+              <a href="/vending-leads/waterbury-connecticut" className="block bg-white p-6 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
+                <h3 className="text-lg font-semibold text-charcoal mb-2">Waterbury</h3>
+                <p className="text-stone text-sm">Manufacturing hub with healthcare and education</p>
               </a>
             </div>
           </div>
