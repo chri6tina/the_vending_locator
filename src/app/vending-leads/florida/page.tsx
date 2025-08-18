@@ -77,6 +77,30 @@ export default function FloridaVendingLeadsPage() {
       businessCount: '180+', 
       description: 'Major retail and healthcare hub',
       highlights: ['Retail & Shopping', 'Healthcare', 'Manufacturing']
+    },
+    { 
+      name: 'Cape Coral', 
+      slug: 'cape-coral-florida', 
+      vendorCount: '120+', 
+      businessCount: '150+', 
+      description: 'Fastest-growing city in Southwest Florida',
+      highlights: ['Real Estate', 'Healthcare', 'Tourism']
+    },
+    { 
+      name: 'Gainesville', 
+      slug: 'gainesville-florida', 
+      vendorCount: '100+', 
+      businessCount: '120+', 
+      description: 'University and research hub',
+      highlights: ['Education', 'Healthcare', 'Research']
+    },
+    { 
+      name: 'Clearwater', 
+      slug: 'clearwater-florida', 
+      vendorCount: '90+', 
+      businessCount: '100+', 
+      description: 'Gulf Coast tourism destination',
+      highlights: ['Tourism', 'Healthcare', 'Retail']
     }
   ]
 
@@ -145,7 +169,7 @@ export default function FloridaVendingLeadsPage() {
                 <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
                   <div className="flex items-center gap-3">
                     <StarIcon className="h-5 w-5 text-yellow-500" />
-                    <span className="text-sm font-medium text-chocolate">4 Major Cities</span>
+                    <span className="text-sm font-medium text-chocolate">7 Major Cities</span>
                   </div>
                 </div>
                 <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">

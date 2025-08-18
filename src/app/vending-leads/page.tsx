@@ -10,9 +10,12 @@ export default function VendingLeadsPage() {
       cities: [
         { name: 'Austin', slug: 'austin-texas', vendorCount: '200+', businessCount: '250+', description: 'Tech hub with major corporations and startups' },
         { name: 'Dallas', slug: 'dallas-texas', vendorCount: '220+', businessCount: '300+', description: 'Financial district and corporate headquarters' },
-        { name: 'Houston', slug: 'houston-texas', vendorCount: '250+', businessCount: '350+', description: 'Energy industry and medical center hub' },
-        { name: 'San Antonio', slug: 'san-antonio-texas', vendorCount: '150+', businessCount: '220+', description: 'Military bases and healthcare facilities' },
-        { name: 'El Paso', slug: 'el-paso-texas', vendorCount: '180+', businessCount: '250+', description: 'Military presence and international trade hub' },
+                        { name: 'Houston', slug: 'houston-texas', vendorCount: '250+', businessCount: '350+', description: 'Energy industry and medical center hub' },
+                { name: 'San Antonio', slug: 'san-antonio-texas', vendorCount: '150+', businessCount: '220+', description: 'Military bases and healthcare facilities' },
+                { name: 'El Paso', slug: 'el-paso-texas', vendorCount: '180+', businessCount: '250+', description: 'Military presence and international trade hub' },
+                { name: 'Corpus Christi', slug: 'corpus-christi-texas', vendorCount: '160+', businessCount: '220+', description: 'Major Gulf Coast port and energy hub' },
+                { name: 'Lubbock', slug: 'lubbock-texas', vendorCount: '130+', businessCount: '180+', description: 'University and healthcare center' },
+                { name: 'Amarillo', slug: 'amarillo-texas', vendorCount: '110+', businessCount: '150+', description: 'Transportation and energy hub' },
       ]
     },
     {
@@ -20,9 +23,12 @@ export default function VendingLeadsPage() {
       slug: 'florida',
       cities: [
         { name: 'Miami', slug: 'miami-florida', vendorCount: '180+', businessCount: '250+', description: 'International business and tourism center' },
-        { name: 'Jacksonville', slug: 'jacksonville-florida', vendorCount: '160+', businessCount: '220+', description: 'Port city with logistics and healthcare' },
-        { name: 'Orlando', slug: 'orlando-florida', vendorCount: '170+', businessCount: '230+', description: 'Theme parks and technology innovation hub' },
-        { name: 'Hialeah', slug: 'hialeah-florida', vendorCount: '140+', businessCount: '180+', description: 'Major retail and healthcare hub' },
+                        { name: 'Jacksonville', slug: 'jacksonville-florida', vendorCount: '160+', businessCount: '220+', description: 'Port city with logistics and healthcare' },
+                { name: 'Orlando', slug: 'orlando-florida', vendorCount: '170+', businessCount: '230+', description: 'Theme parks and technology innovation hub' },
+                { name: 'Hialeah', slug: 'hialeah-florida', vendorCount: '140+', businessCount: '180+', description: 'Major retail and healthcare hub' },
+                { name: 'Cape Coral', slug: 'cape-coral-florida', vendorCount: '120+', businessCount: '150+', description: 'Fastest-growing city in Southwest Florida' },
+                { name: 'Gainesville', slug: 'gainesville-florida', vendorCount: '100+', businessCount: '120+', description: 'University and research hub' },
+                { name: 'Clearwater', slug: 'clearwater-florida', vendorCount: '90+', businessCount: '100+', description: 'Gulf Coast tourism destination' },
       ]
     },
     {
@@ -31,9 +37,12 @@ export default function VendingLeadsPage() {
       cities: [
         { name: 'Los Angeles', slug: 'los-angeles-california', vendorCount: '300+', businessCount: '450+', description: 'Entertainment and tech industry hub' },
         { name: 'San Francisco', slug: 'san-francisco-california', vendorCount: '200+', businessCount: '320+', description: 'Tech startups and financial services' },
-        { name: 'San Diego', slug: 'san-diego-california', vendorCount: '180+', businessCount: '280+', description: 'Biotech and military presence' },
-        { name: 'San Jose', slug: 'san-jose-california', vendorCount: '160+', businessCount: '240+', description: 'Silicon Valley tech companies' },
-        { name: 'Fresno', slug: 'fresno-california', vendorCount: '160+', businessCount: '220+', description: 'Agricultural and healthcare hub' },
+                        { name: 'San Diego', slug: 'san-diego-california', vendorCount: '180+', businessCount: '280+', description: 'Biotech and military presence' },
+                { name: 'San Jose', slug: 'san-jose-california', vendorCount: '160+', businessCount: '240+', description: 'Silicon Valley tech companies' },
+                { name: 'Fresno', slug: 'fresno-california', vendorCount: '160+', businessCount: '220+', description: 'Agricultural and healthcare hub' },
+                { name: 'Long Beach', slug: 'long-beach-california', vendorCount: '200+', businessCount: '280+', description: 'Major port and aerospace hub' },
+                { name: 'Bakersfield', slug: 'bakersfield-california', vendorCount: '180+', businessCount: '250+', description: 'Energy and agricultural center' },
+                { name: 'Anaheim', slug: 'anaheim-california', vendorCount: '150+', businessCount: '200+', description: 'Tourism and entertainment hub' },
       ]
     },
     {

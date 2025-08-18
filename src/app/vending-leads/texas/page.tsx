@@ -85,6 +85,30 @@ export default function TexasVendingLeadsPage() {
       businessCount: '250+', 
       description: 'Military presence and international trade hub',
       highlights: ['Military & Defense', 'Healthcare', 'International Trade']
+    },
+    { 
+      name: 'Corpus Christi', 
+      slug: 'corpus-christi-texas', 
+      vendorCount: '160+', 
+      businessCount: '220+', 
+      description: 'Major Gulf Coast port and energy hub',
+      highlights: ['Port & Shipping', 'Energy', 'Healthcare']
+    },
+    { 
+      name: 'Lubbock', 
+      slug: 'lubbock-texas', 
+      vendorCount: '130+', 
+      businessCount: '180+', 
+      description: 'University and healthcare center',
+      highlights: ['Education', 'Healthcare', 'Agriculture']
+    },
+    { 
+      name: 'Amarillo', 
+      slug: 'amarillo-texas', 
+      vendorCount: '110+', 
+      businessCount: '150+', 
+      description: 'Transportation and energy hub',
+      highlights: ['Transportation', 'Energy', 'Manufacturing']
     }
   ]
 
@@ -153,7 +177,7 @@ export default function TexasVendingLeadsPage() {
                 <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
                   <div className="flex items-center gap-3">
                     <StarIcon className="h-5 w-5 text-yellow-500" />
-                    <span className="text-sm font-medium text-chocolate">4 Major Cities</span>
+                    <span className="text-sm font-medium text-chocolate">7 Major Cities</span>
                   </div>
                 </div>
                 <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">

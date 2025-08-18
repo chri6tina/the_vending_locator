@@ -85,6 +85,30 @@ export default function CaliforniaVendingLeadsPage() {
       businessCount: '220+', 
       description: 'Agricultural and healthcare hub',
       highlights: ['Agriculture', 'Healthcare', 'Manufacturing']
+    },
+    { 
+      name: 'Long Beach', 
+      slug: 'long-beach-california', 
+      vendorCount: '200+', 
+      businessCount: '280+', 
+      description: 'Major port and aerospace hub',
+      highlights: ['Port & Shipping', 'Aerospace', 'Healthcare']
+    },
+    { 
+      name: 'Bakersfield', 
+      slug: 'bakersfield-california', 
+      vendorCount: '180+', 
+      businessCount: '250+', 
+      description: 'Energy and agricultural center',
+      highlights: ['Energy', 'Agriculture', 'Healthcare']
+    },
+    { 
+      name: 'Anaheim', 
+      slug: 'anaheim-california', 
+      vendorCount: '150+', 
+      businessCount: '200+', 
+      description: 'Tourism and entertainment hub',
+      highlights: ['Tourism', 'Healthcare', 'Technology']
     }
   ]
 
@@ -153,7 +177,7 @@ export default function CaliforniaVendingLeadsPage() {
                 <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
                   <div className="flex items-center gap-3">
                     <StarIcon className="h-5 w-5 text-yellow-500" />
-                    <span className="text-sm font-medium text-chocolate">4 Major Cities</span>
+                    <span className="text-sm font-medium text-chocolate">7 Major Cities</span>
                   </div>
                 </div>
                 <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
