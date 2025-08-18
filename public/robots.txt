@@ -35,7 +35,7 @@ Allow: /contact/
 Allow: /hot-leads/
 
 # Sitemap location
-Sitemap: https://thevendinglocator.com/sitemap.xml
+Sitemap: https://www.thevendinglocator.com/sitemap.xml
 
 # Crawl delay (optional - be respectful to servers)
 Crawl-delay: 1

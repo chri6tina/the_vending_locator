@@ -30,14 +30,11 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://thevendinglocator.com'),
-  alternates: {
-    canonical: '/',
-  },
+  metadataBase: new URL('https://www.thevendinglocator.com'),
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://thevendinglocator.com',
+    url: 'https://www.thevendinglocator.com',
     siteName: 'The Vending Locator',
     title: 'The Vending Locator - Qualified Vending Location Leads',
     description: 'Find qualified vending machine locations with verified contact information. Access 4,100+ pre-qualified locations across 37+ cities.',
@@ -106,8 +103,8 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Organization",
               "name": "The Vending Locator",
-              "url": "https://thevendinglocator.com",
-              "logo": "https://thevendinglocator.com/logo.png",
+              "url": "https://www.thevendinglocator.com",
+              "logo": "https://www.thevendinglocator.com/logo.png",
               "description": "Find qualified vending machine locations with verified contact information. Access 4,100+ pre-qualified locations across 37+ cities.",
               "address": {
                 "@type": "PostalAddress",

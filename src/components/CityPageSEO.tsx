@@ -47,7 +47,7 @@ export function generateCityMetadata({
     openGraph: {
       title,
       description: metaDescription,
-      url: `https://thevendinglocator.com/vending-leads/${city.toLowerCase().replace(/\s+/g, '-')}-${state.toLowerCase().replace(/\s+/g, '-')}`,
+              url: `https://www.thevendinglocator.com/vending-leads/${city.toLowerCase().replace(/\s+/g, '-')}-${state.toLowerCase().replace(/\s+/g, '-')}`,
       siteName: 'The Vending Locator',
       locale: 'en_US',
       type: 'website',
@@ -102,7 +102,7 @@ export function generateCityStructuredData({
     "provider": {
       "@type": "Organization",
       "name": "The Vending Locator",
-      "url": "https://thevendinglocator.com"
+              "url": "https://www.thevendinglocator.com"
     },
     "areaServed": {
       "@type": "City",
