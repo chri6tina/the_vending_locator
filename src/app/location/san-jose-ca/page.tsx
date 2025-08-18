@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Get Vending Machine Leads and Locations in San Jose, CA',
     description: 'Find qualified vending machine locations in San Jose, California with verified business details and contact information.',
-    url: 'https://thevendinglocator.com/location/san-jose-ca',
+    url: 'https://www.thevendinglocator.com/location/san-jose-ca',
   },
 }
 

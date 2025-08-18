@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Get Vending Machine Leads and Locations in New York, NY',
     description: 'Find qualified vending machine locations in New York, New York with verified business details and contact information.',
-    url: 'https://thevendinglocator.com/location/new-york-ny',
+    url: 'https://www.thevendinglocator.com/location/new-york-ny',
   },
 }
 

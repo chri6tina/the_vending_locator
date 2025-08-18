@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Get Vending Machine Leads and Locations in San Francisco, CA',
     description: 'Find qualified vending machine locations in San Francisco, California with verified business details and contact information.',
-    url: 'https://thevendinglocator.com/location/san-francisco-ca',
+    url: 'https://www.thevendinglocator.com/location/san-francisco-ca',
   },
 }
 

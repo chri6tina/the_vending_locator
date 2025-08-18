@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Get Vending Machine Leads and Locations in Phoenix, AZ',
     description: 'Find qualified vending machine locations in Phoenix, Arizona with verified business details and contact information.',
-    url: 'https://thevendinglocator.com/location/phoenix-az',
+    url: 'https://www.thevendinglocator.com/location/phoenix-az',
   },
 }
 

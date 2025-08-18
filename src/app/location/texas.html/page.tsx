@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Get Vending Machine Leads and Locations in Texas',
     description: 'Find qualified vending machine locations across Texas with verified business details and contact information.',
-    url: 'https://thevendinglocator.com/location/texas.html',
+    url: 'https://www.thevendinglocator.com/location/texas.html',
   },
 }
 

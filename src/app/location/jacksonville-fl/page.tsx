@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Get Vending Machine Leads and Locations in Jacksonville, FL',
     description: 'Find qualified vending machine locations in Jacksonville, Florida with verified business details and contact information.',
-    url: 'https://thevendinglocator.com/location/jacksonville-fl',
+    url: 'https://www.thevendinglocator.com/location/jacksonville-fl',
   },
 }
 

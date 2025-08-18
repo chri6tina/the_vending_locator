@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Get Vending Machine Leads and Locations in Philadelphia, PA',
     description: 'Find qualified vending machine locations in Philadelphia, Pennsylvania with verified business details and contact information.',
-    url: 'https://thevendinglocator.com/location/philadelphia-pa',
+    url: 'https://www.thevendinglocator.com/location/philadelphia-pa',
   },
 }
 

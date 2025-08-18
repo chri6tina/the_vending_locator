@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Get Vending Machine Leads and Locations in Chicago, IL',
     description: 'Find qualified vending machine locations in Chicago, Illinois with verified business details and contact information.',
-    url: 'https://thevendinglocator.com/location/chicago-il',
+    url: 'https://www.thevendinglocator.com/location/chicago-il',
   },
 }
 

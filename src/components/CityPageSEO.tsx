@@ -67,7 +67,7 @@ export function generateCityMetadata({
       images: [`/images/cities/${city.toLowerCase().replace(/\s+/g, '-')}-${stateAbbr.toLowerCase()}.jpg`],
     },
     alternates: {
-      canonical: `/vending-leads/${city.toLowerCase().replace(/\s+/g, '-')}-${state.toLowerCase().replace(/\s+/g, '-')}`,
+      canonical: `https://www.thevendinglocator.com/vending-leads/${city.toLowerCase().replace(/\s+/g, '-')}-${state.toLowerCase().replace(/\s+/g, '-')}`,
     },
     robots: {
       index: true,

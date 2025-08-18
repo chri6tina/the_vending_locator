@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Get Vending Machine Leads and Locations in Los Angeles, CA',
     description: 'Find qualified vending machine locations in Los Angeles, California with verified business details and contact information.',
-    url: 'https://thevendinglocator.com/location/los-angeles-ca',
+    url: 'https://www.thevendinglocator.com/location/los-angeles-ca',
   },
 }
 

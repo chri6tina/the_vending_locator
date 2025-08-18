@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Get Vending Machine Leads and Locations in Seattle, WA',
     description: 'Find qualified vending machine locations in Seattle, Washington with verified business details and contact information.',
-    url: 'https://thevendinglocator.com/location/seattle-wa',
+    url: 'https://www.thevendinglocator.com/location/seattle-wa',
   },
 }
 
