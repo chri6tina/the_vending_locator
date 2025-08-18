@@ -7,15 +7,15 @@ import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
 
-export default function KnoxvilleTennesseeVendingLeadsPage() {
+export default function HuntsvilleAlabamaVendingLeadsPage() {
   const structuredData = generateCityStructuredData({
-    city: 'Knoxville',
-    state: 'Tennessee',
-    stateAbbr: 'TN',
-    population: '190,740',
+    city: 'Huntsville',
+    state: 'Alabama',
+    stateAbbr: 'AL',
+    population: '215,006',
     businessCount: '18,000+',
-    industries: ['Education', 'Healthcare', 'Manufacturing', 'Technology', 'Research'],
-    description: 'Knoxville offers excellent opportunities for vending machine placement with its major education sector, healthcare industry, and diverse business landscape.'
+    industries: ['Aerospace', 'Technology', 'Defense', 'Manufacturing', 'Research'],
+    description: 'Huntsville offers excellent opportunities for vending machine placement with its major aerospace and defense sector, technology companies, and research institutions.'
   })
 
   return (
@@ -36,12 +36,12 @@ export default function KnoxvilleTennesseeVendingLeadsPage() {
           <div className="mx-auto max-w-2xl px-4 sm:px-6 py-12 sm:py-16 lg:py-24">
             <div className="text-center">
               <h1 className="text-3xl sm:text-4xl lg:text-6xl font-playfair font-bold tracking-tight text-charcoal leading-tight">
-                Knoxville Vending Machine Locations
+                Huntsville Vending Machine Locations
               </h1>
               
               <p className="mt-4 sm:mt-6 text-base sm:text-lg leading-7 sm:leading-8 text-stone px-2 sm:px-0">
-                Discover premium vending machine placement opportunities in Knoxville, Tennessee. 
-                Access 18,000+ businesses and the heart of Tennessee's education and research hub.
+                Discover premium vending machine placement opportunities in Huntsville, Alabama. 
+                Access 18,000+ businesses and the heart of Alabama's aerospace and technology hub.
               </p>
 
               {/* City Stats - Matching Homepage Counter Style */}
@@ -51,7 +51,7 @@ export default function KnoxvilleTennesseeVendingLeadsPage() {
                   <div className="text-xs sm:text-sm text-stone leading-tight">Businesses</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-bronze">191K+</div>
+                  <div className="text-xl sm:text-2xl font-bold text-bronze">215K+</div>
                   <div className="text-xs sm:text-sm text-stone leading-tight">Population</div>
                 </div>
                 <div className="text-center">
@@ -92,39 +92,39 @@ export default function KnoxvilleTennesseeVendingLeadsPage() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
-                Knoxville Business Landscape
+                Huntsville Business Landscape
               </h2>
               <p className="text-lg text-stone max-w-3xl mx-auto">
-                Knoxville is a major education and research center, offering diverse vending opportunities across education, healthcare, and business sectors.
+                Huntsville is Alabama's largest city and a major aerospace and defense center, offering diverse vending opportunities across technology, manufacturing, and research sectors.
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="text-center">
                 <div className="mx-auto w-16 h-16 bg-bronze/10 rounded-full flex items-center justify-center mb-4">
-                  <AcademicCapIcon className="w-8 h-8 text-bronze" />
+                  <CpuChipIcon className="w-8 h-8 text-bronze" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Education Hub</h3>
+                <h3 className="text-xl font-semibold text-charcoal mb-2">Aerospace & Defense</h3>
                 <p className="text-stone">
-                  University of Tennessee flagship campus and other educational institutions, 
-                  providing opportunities in student centers and campus facilities.
+                  Home to NASA's Marshall Space Flight Center and major defense contractors, 
+                  providing opportunities in government facilities and aerospace companies.
+                </p>
+              </div>
+
+              <div className="text-center">
+                <div className="mx-auto w-16 h-16 bg-bronze/10 rounded-full flex items-center justify-center mb-4">
+                  <BuildingOfficeIcon className="w-8 h-8 text-bronze" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-2">Technology Innovation</h3>
+                <p className="text-stone">
+                  Growing tech sector with startups and established companies, 
+                  providing opportunities in office buildings and tech campuses.
                 </p>
               </div>
 
               <div className="text-center">
                 <div className="mx-auto w-16 h-16 bg-bronze/10 rounded-full flex items-center justify-center mb-4">
                   <MapPinIcon className="w-8 h-8 text-bronze" />
-                </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Healthcare Excellence</h3>
-                <p className="text-stone">
-                  Major medical centers including UT Medical Center and other healthcare facilities, 
-                  offering placement in hospitals, clinics, and medical office buildings.
-                </p>
-              </div>
-
-              <div className="text-center">
-                <div className="mx-auto w-16 h-16 bg-bronze/10 rounded-full flex items-center justify-center mb-4">
-                  <UsersIcon className="w-8 h-8 text-bronze" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-2">Manufacturing</h3>
                 <p className="text-stone">
@@ -135,23 +135,23 @@ export default function KnoxvilleTennesseeVendingLeadsPage() {
 
               <div className="text-center">
                 <div className="mx-auto w-16 h-16 bg-bronze/10 rounded-full flex items-center justify-center mb-4">
-                  <CpuChipIcon className="w-8 h-8 text-bronze" />
+                  <UsersIcon className="w-8 h-8 text-bronze" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Technology Innovation</h3>
+                <h3 className="text-xl font-semibold text-charcoal mb-2">Research & Development</h3>
                 <p className="text-stone">
-                  Growing tech sector with research institutions and startups, 
-                  providing opportunities in office buildings and tech campuses.
+                  Major research institutions and private labs, 
+                  providing unique opportunities in research buildings and innovation centers.
                 </p>
               </div>
 
               <div className="text-center">
                 <div className="mx-auto w-16 h-16 bg-bronze/10 rounded-full flex items-center justify-center mb-4">
-                  <BuildingOfficeIcon className="w-8 h-8 text-bronze" />
+                  <AcademicCapIcon className="w-8 h-8 text-bronze" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Research & Development</h3>
+                <h3 className="text-xl font-semibold text-charcoal mb-2">Education</h3>
                 <p className="text-stone">
-                  Oak Ridge National Laboratory and other research facilities, 
-                  providing placement opportunities in research centers and laboratories.
+                  University of Alabama in Huntsville and other educational institutions, 
+                  providing opportunities in student centers and campus facilities.
                 </p>
               </div>
 
@@ -161,7 +161,7 @@ export default function KnoxvilleTennesseeVendingLeadsPage() {
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-2">Professional Services</h3>
                 <p className="text-stone">
-                  Law firms, consulting companies, and professional service providers, 
+                  Engineering firms, consulting companies, and professional service providers, 
                   offering placement in office buildings and business centers.
                 </p>
               </div>
@@ -174,10 +174,10 @@ export default function KnoxvilleTennesseeVendingLeadsPage() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
-                Get Knoxville Vending Machine Leads
+                Get Huntsville Vending Machine Leads
               </h2>
               <p className="text-lg text-stone max-w-3xl mx-auto">
-                Choose the plan that fits your business needs and start receiving qualified vending machine location leads in Knoxville.
+                Choose the plan that fits your business needs and start receiving qualified vending machine location leads in Huntsville.
               </p>
             </div>
             <PricingTable />
@@ -199,58 +199,58 @@ export default function KnoxvilleTennesseeVendingLeadsPage() {
                 Frequently Asked Questions
               </h2>
               <p className="text-lg text-stone">
-                Everything you need to know about vending machine opportunities in Knoxville.
+                Everything you need to know about vending machine opportunities in Huntsville.
               </p>
             </div>
 
             <div className="space-y-6">
               <div className="bg-warm-white p-6 rounded-xl">
                 <h3 className="text-xl font-semibold text-charcoal mb-3">
-                  What types of businesses are best for vending machines in Knoxville?
+                  What types of businesses are best for vending machines in Huntsville?
                 </h3>
                 <p className="text-stone">
-                  Knoxville offers diverse opportunities including educational institutions, healthcare facilities, 
-                  manufacturing plants, and research centers. The major education sector and healthcare industry 
+                  Huntsville offers diverse opportunities including aerospace companies, defense contractors, 
+                  technology firms, and manufacturing plants. The major aerospace sector and research institutions 
                   provide excellent placement opportunities.
                 </p>
               </div>
 
               <div className="bg-warm-white p-6 rounded-xl">
                 <h3 className="text-xl font-semibold text-charcoal mb-3">
-                  How competitive is the vending machine market in Knoxville?
+                  How competitive is the vending machine market in Huntsville?
                 </h3>
                 <p className="text-stone">
-                  Knoxville has a growing vending presence, but there's still significant opportunity 
-                  for expansion, especially in new educational buildings and healthcare facilities.
+                  Huntsville has a growing vending presence, but there's still significant opportunity 
+                  for expansion, especially in new aerospace facilities and technology campuses.
                 </p>
               </div>
 
               <div className="bg-warm-white p-6 rounded-xl">
                 <h3 className="text-xl font-semibold text-charcoal mb-3">
-                  What are the peak business hours for vending in Knoxville?
+                  What are the peak business hours for vending in Huntsville?
                 </h3>
                 <p className="text-stone">
-                  Knoxville businesses typically operate from 8 AM to 6 PM, with peak vending activity 
+                  Huntsville businesses typically operate from 8 AM to 6 PM, with peak vending activity 
                   during lunch hours (12 PM - 2 PM) and afternoon breaks (3 PM - 4 PM).
                 </p>
               </div>
 
               <div className="bg-warm-white p-6 rounded-xl">
                 <h3 className="text-xl font-semibold text-charcoal mb-3">
-                  Are there seasonal considerations for vending in Knoxville?
+                  Are there seasonal considerations for vending in Huntsville?
                 </h3>
                 <p className="text-stone">
-                  Yes, Knoxville experiences four distinct seasons with hot summers and mild winters. Indoor locations 
+                  Yes, Huntsville experiences four distinct seasons with hot summers and mild winters. Indoor locations 
                   are preferred year-round, but spring and fall offer comfortable outdoor opportunities.
                 </p>
               </div>
 
               <div className="bg-warm-white p-6 rounded-xl">
                 <h3 className="text-xl font-semibold text-charcoal mb-3">
-                  What permits are required for vending machines in Knoxville?
+                  What permits are required for vending machines in Huntsville?
                 </h3>
                 <p className="text-stone">
-                  You'll need a business license from the City of Knoxville and potentially health permits 
+                  You'll need a business license from the City of Huntsville and potentially health permits 
                   for food vending. Specific requirements depend on your machine type and location.
                 </p>
               </div>

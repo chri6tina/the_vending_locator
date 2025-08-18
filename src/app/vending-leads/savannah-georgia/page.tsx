@@ -1,6 +1,6 @@
 'use client'
 
-import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, WrenchScrewdriverIcon } from '@heroicons/react/24/solid'
+import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CpuChipIcon } from '@heroicons/react/24/solid'
 import { generateCityStructuredData } from '@/components/CityPageSEO'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
@@ -13,9 +13,9 @@ export default function SavannahGeorgiaVendingLeadsPage() {
     state: 'Georgia',
     stateAbbr: 'GA',
     population: '147,780',
-    businessCount: '20,000+',
-    industries: ['Tourism', 'Logistics', 'Healthcare', 'Education', 'Manufacturing'],
-    description: 'Savannah offers excellent opportunities for vending machine placement with its major tourism sector, port logistics, and diverse business landscape.'
+    businessCount: '15,000+',
+    industries: ['Tourism', 'Healthcare', 'Education', 'Manufacturing', 'Financial Services'],
+    description: 'Savannah offers excellent opportunities for vending machine placement with its major tourism sector, healthcare industry, and diverse business landscape.'
   })
 
   return (
@@ -41,13 +41,13 @@ export default function SavannahGeorgiaVendingLeadsPage() {
               
               <p className="mt-4 sm:mt-6 text-base sm:text-lg leading-7 sm:leading-8 text-stone px-2 sm:px-0">
                 Discover premium vending machine placement opportunities in Savannah, Georgia. 
-                Access 20,000+ businesses and the heart of Georgia's tourism and logistics hub.
+                Access 15,000+ businesses and the heart of Georgia's tourism and healthcare hub.
               </p>
 
               {/* City Stats - Matching Homepage Counter Style */}
               <div className="mt-10 sm:mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 px-4 sm:px-0">
                 <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-bronze">20,000+</div>
+                  <div className="text-xl sm:text-2xl font-bold text-bronze">15,000+</div>
                   <div className="text-xs sm:text-sm text-stone leading-tight">Businesses</div>
                 </div>
                 <div className="text-center">
@@ -55,7 +55,7 @@ export default function SavannahGeorgiaVendingLeadsPage() {
                   <div className="text-xs sm:text-sm text-stone leading-tight">Population</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-bronze">120+</div>
+                  <div className="text-xl sm:text-2xl font-bold text-bronze">90+</div>
                   <div className="text-xs sm:text-sm text-stone leading-tight">Vending Locations</div>
                 </div>
                 <div className="text-center">
@@ -95,85 +95,75 @@ export default function SavannahGeorgiaVendingLeadsPage() {
                 Savannah Business Landscape
               </h2>
               <p className="text-lg text-stone max-w-3xl mx-auto">
-                Savannah is Georgia's oldest city and a major port hub, offering diverse vending opportunities across multiple thriving industries.
+                Savannah is a major tourism and healthcare center in coastal Georgia, offering diverse vending opportunities across tourism, healthcare, and business sectors.
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               <div className="text-center">
-                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <BuildingOfficeIcon className="w-8 h-8 text-navy" />
+                <div className="mx-auto w-16 h-16 bg-bronze/10 rounded-full flex items-center justify-center mb-4">
+                  <UsersIcon className="w-8 h-8 text-bronze" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-2">Tourism Hub</h3>
-                <p className="text-stone">Historic sites, hotels, and entertainment venues</p>
+                <p className="text-stone">
+                  Major tourist destination with historic district, beaches, and attractions, 
+                  providing placement opportunities in hotels, resorts, and tourist facilities.
+                </p>
               </div>
 
               <div className="text-center">
-                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <AcademicCapIcon className="w-8 h-8 text-navy" />
+                <div className="mx-auto w-16 h-16 bg-bronze/10 rounded-full flex items-center justify-center mb-4">
+                  <MapPinIcon className="w-8 h-8 text-bronze" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Port Logistics</h3>
-                <p className="text-stone">Major shipping port and logistics companies</p>
+                <h3 className="text-xl font-semibold text-charcoal mb-2">Healthcare Excellence</h3>
+                <p className="text-stone">
+                  Major medical centers including Memorial Health University Medical Center, 
+                  offering placement in hospitals, clinics, and medical office buildings.
+                </p>
               </div>
 
               <div className="text-center">
-                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <WrenchScrewdriverIcon className="w-8 h-8 text-navy" />
+                <div className="mx-auto w-16 h-16 bg-bronze/10 rounded-full flex items-center justify-center mb-4">
+                  <AcademicCapIcon className="w-8 h-8 text-bronze" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-2">Education Hub</h3>
+                <p className="text-stone">
+                  Savannah College of Art and Design and other educational institutions, 
+                  providing opportunities in student centers and campus facilities.
+                </p>
+              </div>
+
+              <div className="text-center">
+                <div className="mx-auto w-16 h-16 bg-bronze/10 rounded-full flex items-center justify-center mb-4">
+                  <UsersIcon className="w-8 h-8 text-bronze" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-2">Manufacturing</h3>
-                <p className="text-stone">Industrial facilities and production centers</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Key Business Districts */}
-        <div className="bg-warm-white py-16 sm:py-20">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
-                Key Business Districts
-              </h2>
-              <p className="text-lg text-stone max-w-3xl mx-auto">
-                Strategic vending machine placement opportunities in Savannah's most active business areas.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Historic District</h3>
-                <p className="text-stone mb-3">Tourism, hotels, restaurants, and retail</p>
-                <div className="text-sm text-bronze font-medium">150+ businesses</div>
+                <p className="text-stone">
+                  Strong manufacturing presence including aerospace and food processing, 
+                  offering placement in factories and industrial facilities.
+                </p>
               </div>
 
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Port Area</h3>
-                <p className="text-stone mb-3">Logistics, shipping, and industrial companies</p>
-                <div className="text-sm text-bronze font-medium">130+ businesses</div>
+              <div className="text-center">
+                <div className="mx-auto w-16 h-16 bg-bronze/10 rounded-full flex items-center justify-center mb-4">
+                  <CpuChipIcon className="w-8 h-8 text-bronze" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-2">Financial Services</h3>
+                <p className="text-stone">
+                  Banking and financial institutions, 
+                  providing placement opportunities in office buildings and financial centers.
+                </p>
               </div>
 
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Midtown</h3>
-                <p className="text-stone mb-3">Healthcare, education, and professional services</p>
-                <div className="text-sm text-bronze font-medium">110+ businesses</div>
-              </div>
-
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Southside</h3>
-                <p className="text-stone mb-3">Retail, restaurants, and office buildings</p>
-                <div className="text-sm text-bronze font-medium">90+ businesses</div>
-              </div>
-
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Westside</h3>
-                <p className="text-stone mb-3">Manufacturing, logistics, and industrial companies</p>
-                <div className="text-sm text-bronze font-medium">80+ businesses</div>
-              </div>
-
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Pooler Area</h3>
-                <p className="text-stone mb-3">Suburban retail and office developments</p>
-                <div className="text-sm text-bronze font-medium">70+ businesses</div>
+              <div className="text-center">
+                <div className="mx-auto w-16 h-16 bg-bronze/10 rounded-full flex items-center justify-center mb-4">
+                  <BuildingOfficeIcon className="w-8 h-8 text-bronze" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-2">Professional Services</h3>
+                <p className="text-stone">
+                  Law firms, consulting companies, and professional service providers, 
+                  offering placement in office buildings and business centers.
+                </p>
               </div>
             </div>
           </div>
@@ -219,9 +209,9 @@ export default function SavannahGeorgiaVendingLeadsPage() {
                   What types of businesses are best for vending machines in Savannah?
                 </h3>
                 <p className="text-stone">
-                  Savannah offers diverse opportunities including hotels, restaurants, office buildings, 
-                  manufacturing plants, and retail centers. The major tourism sector and strong logistics 
-                  industry provide excellent placement opportunities.
+                  Savannah offers diverse opportunities including tourism businesses, healthcare facilities, 
+                  educational institutions, and manufacturing plants. The major tourism sector and healthcare industry 
+                  provide excellent placement opportunities.
                 </p>
               </div>
 
@@ -231,7 +221,7 @@ export default function SavannahGeorgiaVendingLeadsPage() {
                 </h3>
                 <p className="text-stone">
                   Savannah has a growing vending presence, but there's still significant opportunity 
-                  for expansion, especially in new business developments and emerging neighborhoods.
+                  for expansion, especially in new tourism developments and healthcare facilities.
                 </p>
               </div>
 
@@ -250,7 +240,7 @@ export default function SavannahGeorgiaVendingLeadsPage() {
                   Are there seasonal considerations for vending in Savannah?
                 </h3>
                 <p className="text-stone">
-                  Yes, Savannah experiences four distinct seasons with hot summers and mild winters. Indoor locations 
+                  Yes, Savannah experiences a subtropical climate with hot summers and mild winters. Indoor locations 
                   are preferred year-round, but spring and fall offer comfortable outdoor opportunities.
                 </p>
               </div>
