@@ -1,151 +1,224 @@
 'use client'
 
-import Link from 'next/link'
+import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CpuChipIcon } from '@heroicons/react/24/solid'
+import { generateCityStructuredData } from '@/components/CityPageSEO'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
-import VendingCourse from '@/components/VendingCourse'
-import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
-import { motion } from 'framer-motion'
-import { MapPinIcon, UsersIcon, BuildingOfficeIcon } from '@heroicons/react/24/solid'
 
 export default function OhioVendingLeadsPage() {
+  const structuredData = generateCityStructuredData({
+    city: 'Ohio',
+    state: 'Ohio',
+    stateAbbr: 'OH',
+    population: '11.8M',
+    businessCount: '200,000+',
+    industries: ['Manufacturing', 'Healthcare', 'Education', 'Finance', 'Transportation'],
+    description: 'Ohio offers excellent opportunities for vending machine placement with its manufacturing sector, healthcare industry, and diverse business landscape.'
+  })
+
   const cities = [
-    {
-      name: 'Cleveland',
-      slug: 'cleveland-ohio',
-      vendorCount: '140+',
-      businessCount: '200+',
-      description: 'Healthcare and manufacturing hub',
-      highlights: ['Healthcare', 'Manufacturing', 'Education']
-    },
     {
       name: 'Columbus',
       slug: 'columbus-ohio',
-      vendorCount: '150+',
-      businessCount: '220+',
-      description: 'Technology and education excellence',
-      highlights: ['Technology', 'Education', 'Healthcare']
+      vendorCount: '420+',
+      businessCount: '480+',
+      description: 'State capital with healthcare and education',
+      highlights: ['Healthcare', 'Education', 'Government']
+    },
+    {
+      name: 'Cleveland',
+      slug: 'cleveland-ohio',
+      vendorCount: '380+',
+      businessCount: '440+',
+      description: 'Major city with healthcare and manufacturing',
+      highlights: ['Healthcare', 'Manufacturing', 'Education']
     },
     {
       name: 'Cincinnati',
       slug: 'cincinnati-ohio',
-      vendorCount: '130+',
-      businessCount: '190+',
-      description: 'Manufacturing and logistics hub',
-      highlights: ['Manufacturing', 'Logistics', 'Healthcare']
+      vendorCount: '350+',
+      businessCount: '400+',
+      description: 'Financial center with healthcare and education',
+      highlights: ['Finance', 'Healthcare', 'Education']
+    },
+    {
+      name: 'Toledo',
+      slug: 'toledo-ohio',
+      vendorCount: '200+',
+      businessCount: '250+',
+      description: 'Manufacturing and healthcare hub',
+      highlights: ['Manufacturing', 'Healthcare', 'Port']
+    },
+    {
+      name: 'Akron',
+      slug: 'akron-ohio',
+      vendorCount: '180+',
+      businessCount: '220+',
+      description: 'Manufacturing and healthcare center',
+      highlights: ['Manufacturing', 'Healthcare', 'Education']
     }
   ]
 
   return (
     <>
+      {/* Structured Data for SEO */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData)
+        }}
+      />
+      
       <Header />
       
       <div className="min-h-screen bg-warm-white">
-        {/* Hero Section */}
-        <div className="bg-warm-white py-16 sm:py-24 lg:py-32">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        {/* Hero Section - Matching Homepage Style */}
+        <div className="bg-warm-white">
+          <div className="mx-auto max-w-2xl px-4 sm:px-6 py-12 sm:py-16 lg:py-24">
             <div className="text-center">
-              <motion.h1
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                className="text-4xl sm:text-5xl lg:text-6xl font-playfair font-bold tracking-tight text-charcoal leading-tight"
-              >
-                Vending Machine Leads<br />in Ohio
-              </motion.h1>
+              <h1 className="text-3xl sm:text-4xl lg:text-6xl font-playfair font-bold tracking-tight text-charcoal leading-tight">
+                Ohio Vending Machine Locations
+              </h1>
               
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                className="mt-6 sm:mt-8 text-lg sm:text-xl leading-8 text-stone max-w-4xl mx-auto"
-              >
-                Discover vending machine opportunities across Ohio's major cities. From healthcare hubs to manufacturing centers,
-                find the perfect locations to grow your vending business in the Buckeye State.
-              </motion.p>
+              <p className="mt-4 sm:mt-6 text-base sm:text-lg leading-7 sm:leading-8 text-stone px-2 sm:px-0">
+                Discover premium vending machine placement opportunities across Ohio. 
+                Access 200,000+ businesses and the heart of America's manufacturing and healthcare hub.
+              </p>
+
+              {/* State Stats - Matching Homepage Counter Style */}
+              <div className="mt-10 sm:mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 px-4 sm:px-0">
+                <div className="text-center">
+                  <div className="text-xl sm:text-2xl font-bold text-bronze">200,000+</div>
+                  <div className="text-xs sm:text-sm text-stone leading-tight">Businesses</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-xl sm:text-2xl font-bold text-bronze">11.8M+</div>
+                  <div className="text-xs sm:text-sm text-stone leading-tight">Population</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-xl sm:text-2xl font-bold text-bronze">1,530+</div>
+                  <div className="text-xs sm:text-sm text-stone leading-tight">Vending Locations</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-xl sm:text-2xl font-bold text-bronze">5</div>
+                  <div className="text-xs sm:text-sm text-stone leading-tight">Major Cities</div>
+                </div>
+              </div>
+
+              {/* Trust Signals - Matching Homepage Style */}
+              <div className="mt-8 sm:mt-10 flex flex-wrap justify-center gap-4 sm:gap-6">
+                <div className="flex items-center gap-2 text-sm text-stone">
+                  <CheckBadgeIcon className="h-5 w-5 text-green-600" />
+                  <span>Verified Locations</span>
+                </div>
+                <div className="flex items-center gap-2 text-sm text-stone">
+                  <StarIcon className="h-5 w-5 text-yellow-500" />
+                  <span>4.9/5 Rating</span>
+                </div>
+                <div className="flex items-center gap-2 text-sm text-stone">
+                  <ShieldCheckIcon className="h-5 w-5 text-blue-600" />
+                  <span>Secure & Reliable</span>
+                </div>
+                <div className="flex items-center gap-2 text-sm text-stone">
+                  <ClockIcon className="h-5 w-5 text-purple-600" />
+                  <span>Quality Research</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        {/* Cities Grid */}
-        <div className="py-16 sm:py-24 bg-white">
+        {/* Business Landscape Section */}
+        <div className="bg-white py-16 sm:py-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-playfair font-bold text-chocolate mb-6">
-                Ohio Vending Machine Locations
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
+                Ohio Business Landscape
               </h2>
-              <p className="text-lg sm:text-xl text-chocolate/70 max-w-4xl mx-auto leading-relaxed">
-                Explore vending opportunities in Ohio's major metropolitan areas, each offering unique business environments
-                and growth potential for your vending machine business.
+              <p className="text-lg text-stone max-w-3xl mx-auto">
+                Ohio is a major manufacturing and healthcare hub in the Midwest, offering diverse vending opportunities across multiple thriving industries.
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <CpuChipIcon className="w-8 h-8 text-navy" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-2">Manufacturing & Industry</h3>
+                <p className="text-stone">Automotive plants, manufacturing facilities, and industrial operations with workers, engineers, and operational schedules.</p>
+              </div>
+
+              <div className="text-center">
+                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <UsersIcon className="w-8 h-8 text-navy" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-2">Healthcare & Medical</h3>
+                <p className="text-stone">Medical centers, hospitals, and healthcare facilities with healthcare professionals, patients, and visitor traffic.</p>
+              </div>
+
+              <div className="text-center">
+                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <BuildingOfficeIcon className="w-8 h-8 text-navy" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-2">Education & Finance</h3>
+                <p className="text-stone">Universities, financial institutions, and educational facilities with students, faculty, and professionals.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Major Cities Section */}
+        <div className="bg-warm-white py-16 sm:py-20">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
+                Major Ohio Cities
+              </h2>
+              <p className="text-lg text-stone max-w-3xl mx-auto">
+                Explore vending machine opportunities in Ohio's most active business areas.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {cities.map((city) => (
-                <motion.div
-                  key={city.slug}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6 }}
-                  className="bg-warm-white rounded-2xl p-8 border border-gray-200 shadow-sm hover:shadow-md transition-shadow"
-                >
-                  <div className="text-center">
-                    <h3 className="text-2xl font-playfair font-bold text-chocolate mb-4">
-                      {city.name}
-                    </h3>
-                    <p className="text-chocolate/70 mb-6 leading-relaxed">
-                      {city.description}
-                    </p>
-                    
-                    <div className="grid grid-cols-2 gap-4 mb-6">
-                      <div className="text-center">
-                        <div className="text-lg font-bold text-bronze">{city.vendorCount}</div>
-                        <div className="text-xs text-stone">Vendors</div>
-                      </div>
-                      <div className="text-center">
-                        <div className="text-lg font-bold text-bronze">{city.businessCount}</div>
-                        <div className="text-xs text-stone">Businesses</div>
-                      </div>
-                    </div>
-
-                    <div className="mb-6">
-                      <div className="flex flex-wrap justify-center gap-2">
-                        {city.highlights.map((highlight, index) => (
-                          <span
-                            key={index}
-                            className="px-3 py-1 text-xs font-medium bg-coral/10 text-coral rounded-full"
-                          >
-                            {highlight}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-
-                    <Link
-                      href={`/vending-leads/${city.slug}`}
-                      className="btn-primary w-full text-center"
-                    >
-                      Get {city.name} Leads
-                    </Link>
+                <div key={city.slug} className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                  <h3 className="text-xl font-semibold text-charcoal mb-3">{city.name}</h3>
+                  <p className="text-stone mb-3">{city.description}</p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {city.highlights.map((highlight) => (
+                      <span key={highlight} className="px-2 py-1 bg-navy/10 text-navy text-xs rounded-full">
+                        {highlight}
+                      </span>
+                    ))}
                   </div>
-                </motion.div>
+                  <div className="flex justify-between items-center text-sm text-bronze font-medium">
+                    <span>{city.vendorCount} vendors</span>
+                    <span>{city.businessCount} businesses</span>
+                  </div>
+                  <a
+                    href={`/vending-leads/${city.slug}`}
+                    className="mt-4 inline-block bg-navy hover:bg-navy-light text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors w-full text-center"
+                  >
+                    View Locations
+                  </a>
+                </div>
               ))}
             </div>
           </div>
         </div>
 
-        {/* Pricing Section */}
-        <div className="bg-warm-white py-16 sm:py-20 lg:py-24">
+        {/* Pricing Section - Prominently Displayed */}
+        <div className="bg-white py-16 sm:py-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="mx-auto max-w-4xl text-center mb-12 sm:mb-16">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-playfair font-bold tracking-tight text-chocolate mb-6">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
                 Get Ohio Vending Machine Leads
               </h2>
-              <p className="text-lg sm:text-xl text-chocolate/70 leading-relaxed max-w-3xl mx-auto">
-                Access our comprehensive database of qualified Ohio vending machine locations with flexible pricing options.
-                No long-term contracts, just results that help you grow your Ohio vending business.
+              <p className="text-lg text-stone max-w-3xl mx-auto">
+                Access verified vending locations across Ohio with our flexible pricing options designed for vending machine entrepreneurs.
               </p>
             </div>
             <PricingTable />
@@ -153,14 +226,90 @@ export default function OhioVendingLeadsPage() {
         </div>
 
         {/* Hot Leads Section */}
-        <HotLeads />
+        <div className="bg-warm-white py-16 sm:py-20">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <HotLeads />
+          </div>
+        </div>
 
-        {/* Vending Course Section */}
-        <VendingCourse />
+        {/* FAQ Section */}
+        <div className="bg-white py-16 sm:py-20">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
+                Frequently Asked Questions
+              </h2>
+              <p className="text-lg text-stone">
+                Everything you need to know about vending machine opportunities in Ohio.
+              </p>
+            </div>
+            <div className="space-y-6">
+              <div className="bg-warm-white p-6 rounded-xl">
+                <h3 className="text-xl font-semibold text-charcoal mb-3">
+                  What types of businesses are best for vending machines in Ohio?
+                </h3>
+                <p className="text-stone">
+                  Ohio offers diverse opportunities including manufacturing plants, healthcare facilities,
+                  educational institutions, and financial centers. The major manufacturing and healthcare sectors
+                  provide excellent placement opportunities.
+                </p>
+              </div>
+              <div className="bg-warm-white p-6 rounded-xl">
+                <h3 className="text-xl font-semibold text-charcoal mb-3">
+                  How competitive is the vending machine market in Ohio?
+                </h3>
+                <p className="text-stone">
+                  Ohio has a moderate vending presence with significant opportunity for expansion,
+                  especially in new manufacturing developments and growing healthcare areas.
+                </p>
+              </div>
+              <div className="bg-warm-white p-6 rounded-xl">
+                <h3 className="text-xl font-semibold text-charcoal mb-3">
+                  What are the best vending machine types for Ohio businesses?
+                </h3>
+                <p className="text-stone">
+                  For Ohio manufacturing locations, industrial-grade snack and beverage machines work best. Healthcare facilities need reliable machines, while
+                  educational institutions prefer healthy options. We provide specific recommendations for each business type.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Other Midwest States Section */}
+        <div className="bg-warm-white py-16 sm:py-20">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
+                Other Midwest Vending Locations
+              </h2>
+              <p className="text-lg text-stone max-w-3xl mx-auto">
+                Explore vending machine leads in other major Midwest states
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {[
+                { name: 'Indiana', slug: 'indiana', count: '280+ leads' },
+                { name: 'Michigan', slug: 'michigan', count: '320+ leads' },
+                { name: 'Pennsylvania', slug: 'pennsylvania', count: '320+ leads' },
+              ].map((state) => (
+                <div key={state.slug} className="bg-white p-6 rounded-lg border border-gray-200 text-center">
+                  <h3 className="text-xl font-semibold text-charcoal mb-2">{state.name}</h3>
+                  <p className="text-stone mb-4">{state.count}</p>
+                  <a
+                    href={`/vending-leads/${state.slug}`}
+                    className="inline-block bg-navy hover:bg-navy-light text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+                  >
+                    View Locations
+                  </a>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
-
+      
       <Footer />
-      <ZipCodeModalWrapper />
     </>
   )
 }

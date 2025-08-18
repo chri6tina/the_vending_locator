@@ -7,57 +7,57 @@ import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
 
-export default function NorthCarolinaVendingLeadsPage() {
+export default function KentuckyVendingLeadsPage() {
   const structuredData = generateCityStructuredData({
-    city: 'North Carolina',
-    state: 'North Carolina',
-    stateAbbr: 'NC',
-    population: '10.7M',
-    businessCount: '160,000+',
-    industries: ['Technology', 'Healthcare', 'Manufacturing', 'Education', 'Finance'],
-    description: 'North Carolina offers excellent opportunities for vending machine placement with its technology sector, healthcare industry, and diverse business landscape.'
+    city: 'Kentucky',
+    state: 'Kentucky',
+    stateAbbr: 'KY',
+    population: '4.5M',
+    businessCount: '85,000+',
+    industries: ['Manufacturing', 'Agriculture', 'Healthcare', 'Education', 'Tourism'],
+    description: 'Kentucky offers excellent opportunities for vending machine placement with its manufacturing sector, agricultural industry, and diverse business landscape.'
   })
 
   const cities = [
     {
-      name: 'Charlotte',
-      slug: 'charlotte-north-carolina',
-      vendorCount: '380+',
-      businessCount: '450+',
-      description: 'Financial center with healthcare and technology',
-      highlights: ['Finance', 'Healthcare', 'Technology']
+      name: 'Louisville',
+      slug: 'louisville-kentucky',
+      vendorCount: '280+',
+      businessCount: '340+',
+      description: 'Largest city with manufacturing and healthcare',
+      highlights: ['Manufacturing', 'Healthcare', 'Education']
     },
     {
-      name: 'Raleigh',
-      slug: 'raleigh-north-carolina',
-      vendorCount: '320+',
-      businessCount: '380+',
-      description: 'Technology hub with education and research',
-      highlights: ['Technology', 'Education', 'Research']
-    },
-    {
-      name: 'Greensboro',
-      slug: 'greensboro-north-carolina',
+      name: 'Lexington',
+      slug: 'lexington-kentucky',
       vendorCount: '200+',
       businessCount: '250+',
-      description: 'Manufacturing and healthcare center',
-      highlights: ['Manufacturing', 'Healthcare', 'Education']
+      description: 'University city with healthcare and agriculture',
+      highlights: ['Education', 'Healthcare', 'Agriculture']
     },
     {
-      name: 'Durham',
-      slug: 'durham-north-carolina',
-      vendorCount: '180+',
-      businessCount: '220+',
-      description: 'Research triangle with healthcare and education',
-      highlights: ['Research', 'Healthcare', 'Education']
+      name: 'Bowling Green',
+      slug: 'bowling-green-kentucky',
+      vendorCount: '120+',
+      businessCount: '150+',
+      description: 'Manufacturing and education center',
+      highlights: ['Manufacturing', 'Education', 'Healthcare']
     },
     {
-      name: 'Winston-Salem',
-      slug: 'winston-salem-north-carolina',
-      vendorCount: '160+',
-      businessCount: '200+',
+      name: 'Owensboro',
+      slug: 'owensboro-kentucky',
+      vendorCount: '100+',
+      businessCount: '130+',
       description: 'Manufacturing and healthcare hub',
-      highlights: ['Manufacturing', 'Healthcare', 'Education']
+      highlights: ['Manufacturing', 'Healthcare', 'Retail']
+    },
+    {
+      name: 'Covington',
+      slug: 'covington-kentucky',
+      vendorCount: '90+',
+      businessCount: '120+',
+      description: 'Suburban city with healthcare and retail',
+      highlights: ['Healthcare', 'Retail', 'Services']
     }
   ]
 
@@ -79,26 +79,26 @@ export default function NorthCarolinaVendingLeadsPage() {
           <div className="mx-auto max-w-2xl px-4 sm:px-6 py-12 sm:py-16 lg:py-24">
             <div className="text-center">
               <h1 className="text-3xl sm:text-4xl lg:text-6xl font-playfair font-bold tracking-tight text-charcoal leading-tight">
-                North Carolina Vending Machine Locations
+                Kentucky Vending Machine Locations
               </h1>
               
               <p className="mt-4 sm:mt-6 text-base sm:text-lg leading-7 sm:leading-8 text-stone px-2 sm:px-0">
-                Discover premium vending machine placement opportunities across North Carolina. 
-                Access 160,000+ businesses and the heart of America's technology and healthcare hub.
+                Discover premium vending machine placement opportunities across Kentucky. 
+                Access 85,000+ businesses and the heart of America's manufacturing and agricultural hub.
               </p>
 
               {/* State Stats - Matching Homepage Counter Style */}
               <div className="mt-10 sm:mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 px-4 sm:px-0">
                 <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-bronze">160,000+</div>
+                  <div className="text-xl sm:text-2xl font-bold text-bronze">85,000+</div>
                   <div className="text-xs sm:text-sm text-stone leading-tight">Businesses</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-bronze">10.7M+</div>
+                  <div className="text-xl sm:text-2xl font-bold text-bronze">4.5M+</div>
                   <div className="text-xs sm:text-sm text-stone leading-tight">Population</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-bronze">1,240+</div>
+                  <div className="text-xl sm:text-2xl font-bold text-bronze">790+</div>
                   <div className="text-xs sm:text-sm text-stone leading-tight">Vending Locations</div>
                 </div>
                 <div className="text-center">
@@ -135,10 +135,10 @@ export default function NorthCarolinaVendingLeadsPage() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
-                North Carolina Business Landscape
+                Kentucky Business Landscape
               </h2>
               <p className="text-lg text-stone max-w-3xl mx-auto">
-                North Carolina is a major technology and healthcare hub in the Southeast, offering diverse vending opportunities across multiple thriving industries.
+                Kentucky is a major manufacturing and agricultural hub in the Southeast, offering diverse vending opportunities across multiple thriving industries.
               </p>
             </div>
 
@@ -147,24 +147,24 @@ export default function NorthCarolinaVendingLeadsPage() {
                 <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <CpuChipIcon className="w-8 h-8 text-navy" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Technology & Research</h3>
-                <p className="text-stone">Tech companies, research institutions, and innovation centers with developers, scientists, and creative professionals.</p>
+                <h3 className="text-xl font-semibold text-charcoal mb-2">Manufacturing & Industry</h3>
+                <p className="text-stone">Automotive plants, manufacturing facilities, and industrial operations with workers, engineers, and operational schedules.</p>
               </div>
 
               <div className="text-center">
                 <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <UsersIcon className="w-8 h-8 text-navy" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Healthcare & Medical</h3>
-                <p className="text-stone">Medical centers, hospitals, and healthcare facilities with healthcare professionals, patients, and visitor traffic.</p>
+                <h3 className="text-xl font-semibold text-charcoal mb-2">Agriculture & Food Processing</h3>
+                <p className="text-stone">Farms, food processing plants, and agricultural facilities with workers, farmers, and operational schedules.</p>
               </div>
 
               <div className="text-center">
                 <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <BuildingOfficeIcon className="w-8 h-8 text-navy" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Finance & Manufacturing</h3>
-                <p className="text-stone">Financial institutions, manufacturing plants, and industrial operations with professionals, workers, and operational schedules.</p>
+                <h3 className="text-xl font-semibold text-charcoal mb-2">Healthcare & Education</h3>
+                <p className="text-stone">Medical centers, universities, and educational institutions with healthcare professionals, students, and faculty.</p>
               </div>
             </div>
           </div>
@@ -175,10 +175,10 @@ export default function NorthCarolinaVendingLeadsPage() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
-                Major North Carolina Cities
+                Major Kentucky Cities
               </h2>
               <p className="text-lg text-stone max-w-3xl mx-auto">
-                Explore vending machine opportunities in North Carolina's most active business areas.
+                Explore vending machine opportunities in Kentucky's most active business areas.
               </p>
             </div>
 
@@ -215,10 +215,10 @@ export default function NorthCarolinaVendingLeadsPage() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
-                Get North Carolina Vending Machine Leads
+                Get Kentucky Vending Machine Leads
               </h2>
               <p className="text-lg text-stone max-w-3xl mx-auto">
-                Access verified vending locations across North Carolina with our flexible pricing options designed for vending machine entrepreneurs.
+                Access verified vending locations across Kentucky with our flexible pricing options designed for vending machine entrepreneurs.
               </p>
             </div>
             <PricingTable />
@@ -240,36 +240,36 @@ export default function NorthCarolinaVendingLeadsPage() {
                 Frequently Asked Questions
               </h2>
               <p className="text-lg text-stone">
-                Everything you need to know about vending machine opportunities in North Carolina.
+                Everything you need to know about vending machine opportunities in Kentucky.
               </p>
             </div>
             <div className="space-y-6">
               <div className="bg-warm-white p-6 rounded-xl">
                 <h3 className="text-xl font-semibold text-charcoal mb-3">
-                  What types of businesses are best for vending machines in North Carolina?
+                  What types of businesses are best for vending machines in Kentucky?
                 </h3>
                 <p className="text-stone">
-                  North Carolina offers diverse opportunities including technology companies, healthcare facilities,
-                  educational institutions, and financial centers. The major technology and healthcare sectors
+                  Kentucky offers diverse opportunities including manufacturing plants, agricultural facilities,
+                  healthcare centers, and educational institutions. The major manufacturing and agricultural sectors
                   provide excellent placement opportunities.
                 </p>
               </div>
               <div className="bg-warm-white p-6 rounded-xl">
                 <h3 className="text-xl font-semibold text-charcoal mb-3">
-                  How competitive is the vending machine market in North Carolina?
+                  How competitive is the vending machine market in Kentucky?
                 </h3>
                 <p className="text-stone">
-                  North Carolina has a moderate vending presence with significant opportunity for expansion,
-                  especially in new technology developments and growing healthcare areas.
+                  Kentucky has a moderate vending presence with significant opportunity for expansion,
+                  especially in new manufacturing developments and growing agricultural areas.
                 </p>
               </div>
               <div className="bg-warm-white p-6 rounded-xl">
                 <h3 className="text-xl font-semibold text-charcoal mb-3">
-                  What are the best vending machine types for North Carolina businesses?
+                  What are the best vending machine types for Kentucky businesses?
                 </h3>
                 <p className="text-stone">
-                  For North Carolina technology locations, healthy snack and beverage machines work best. Healthcare facilities need reliable machines, while
-                  financial institutions prefer professional options. We provide specific recommendations for each business type.
+                  For Kentucky manufacturing locations, industrial-grade snack and beverage machines work best. Agricultural facilities need reliable machines, while
+                  healthcare facilities prefer healthy options. We provide specific recommendations for each business type.
                 </p>
               </div>
             </div>
@@ -289,9 +289,9 @@ export default function NorthCarolinaVendingLeadsPage() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
-                { name: 'South Carolina', slug: 'south-carolina', count: '480+ leads' },
-                { name: 'Tennessee', slug: 'tennessee', count: '1,080+ leads' },
-                { name: 'Virginia', slug: 'virginia', count: '580+ leads' },
+                { name: 'Tennessee', slug: 'tennessee', count: '280+ leads' },
+                { name: 'Ohio', slug: 'ohio', count: '380+ leads' },
+                { name: 'Indiana', slug: 'indiana', count: '280+ leads' },
               ].map((state) => (
                 <div key={state.slug} className="bg-white p-6 rounded-lg border border-gray-200 text-center">
                   <h3 className="text-xl font-semibold text-charcoal mb-2">{state.name}</h3>

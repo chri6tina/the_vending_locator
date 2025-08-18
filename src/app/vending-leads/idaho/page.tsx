@@ -7,57 +7,57 @@ import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
 
-export default function NorthCarolinaVendingLeadsPage() {
+export default function IdahoVendingLeadsPage() {
   const structuredData = generateCityStructuredData({
-    city: 'North Carolina',
-    state: 'North Carolina',
-    stateAbbr: 'NC',
-    population: '10.7M',
-    businessCount: '160,000+',
-    industries: ['Technology', 'Healthcare', 'Manufacturing', 'Education', 'Finance'],
-    description: 'North Carolina offers excellent opportunities for vending machine placement with its technology sector, healthcare industry, and diverse business landscape.'
+    city: 'Idaho',
+    state: 'Idaho',
+    stateAbbr: 'ID',
+    population: '1.9M',
+    businessCount: '70,000+',
+    industries: ['Technology', 'Agriculture', 'Manufacturing', 'Healthcare', 'Tourism'],
+    description: 'Idaho offers excellent opportunities for vending machine placement with its technology sector, agriculture industry, and diverse business landscape.'
   })
 
   const cities = [
     {
-      name: 'Charlotte',
-      slug: 'charlotte-north-carolina',
-      vendorCount: '380+',
-      businessCount: '450+',
-      description: 'Financial center with healthcare and technology',
-      highlights: ['Finance', 'Healthcare', 'Technology']
-    },
-    {
-      name: 'Raleigh',
-      slug: 'raleigh-north-carolina',
-      vendorCount: '320+',
-      businessCount: '380+',
-      description: 'Technology hub with education and research',
-      highlights: ['Technology', 'Education', 'Research']
-    },
-    {
-      name: 'Greensboro',
-      slug: 'greensboro-north-carolina',
+      name: 'Boise',
+      slug: 'boise-idaho',
       vendorCount: '200+',
       businessCount: '250+',
-      description: 'Manufacturing and healthcare center',
-      highlights: ['Manufacturing', 'Healthcare', 'Education']
+      description: 'State capital with technology and healthcare',
+      highlights: ['Technology', 'Healthcare', 'Government']
     },
     {
-      name: 'Durham',
-      slug: 'durham-north-carolina',
-      vendorCount: '180+',
-      businessCount: '220+',
-      description: 'Research triangle with healthcare and education',
-      highlights: ['Research', 'Healthcare', 'Education']
+      name: 'Meridian',
+      slug: 'meridian-idaho',
+      vendorCount: '120+',
+      businessCount: '150+',
+      description: 'Growing suburban city',
+      highlights: ['Healthcare', 'Retail', 'Education']
     },
     {
-      name: 'Winston-Salem',
-      slug: 'winston-salem-north-carolina',
-      vendorCount: '160+',
-      businessCount: '200+',
-      description: 'Manufacturing and healthcare hub',
-      highlights: ['Manufacturing', 'Healthcare', 'Education']
+      name: 'Nampa',
+      slug: 'nampa-idaho',
+      vendorCount: '100+',
+      businessCount: '130+',
+      description: 'Agricultural and manufacturing center',
+      highlights: ['Agriculture', 'Manufacturing', 'Healthcare']
+    },
+    {
+      name: 'Idaho Falls',
+      slug: 'idaho-falls-idaho',
+      vendorCount: '90+',
+      businessCount: '110+',
+      description: 'Energy and healthcare hub',
+      highlights: ['Energy', 'Healthcare', 'Education']
+    },
+    {
+      name: 'Pocatello',
+      slug: 'pocatello-idaho',
+      vendorCount: '80+',
+      businessCount: '100+',
+      description: 'University town with education',
+      highlights: ['Education', 'Healthcare', 'Manufacturing']
     }
   ]
 
@@ -79,26 +79,26 @@ export default function NorthCarolinaVendingLeadsPage() {
           <div className="mx-auto max-w-2xl px-4 sm:px-6 py-12 sm:py-16 lg:py-24">
             <div className="text-center">
               <h1 className="text-3xl sm:text-4xl lg:text-6xl font-playfair font-bold tracking-tight text-charcoal leading-tight">
-                North Carolina Vending Machine Locations
+                Idaho Vending Machine Locations
               </h1>
               
               <p className="mt-4 sm:mt-6 text-base sm:text-lg leading-7 sm:leading-8 text-stone px-2 sm:px-0">
-                Discover premium vending machine placement opportunities across North Carolina. 
-                Access 160,000+ businesses and the heart of America's technology and healthcare hub.
+                Discover premium vending machine placement opportunities across Idaho. 
+                Access 70,000+ businesses and the heart of America's technology and agriculture hub.
               </p>
 
               {/* State Stats - Matching Homepage Counter Style */}
               <div className="mt-10 sm:mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 px-4 sm:px-0">
                 <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-bronze">160,000+</div>
+                  <div className="text-xl sm:text-2xl font-bold text-bronze">70,000+</div>
                   <div className="text-xs sm:text-sm text-stone leading-tight">Businesses</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-bronze">10.7M+</div>
+                  <div className="text-xl sm:text-2xl font-bold text-bronze">1.9M+</div>
                   <div className="text-xs sm:text-sm text-stone leading-tight">Population</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-bronze">1,240+</div>
+                  <div className="text-xl sm:text-2xl font-bold text-bronze">590+</div>
                   <div className="text-xs sm:text-sm text-stone leading-tight">Vending Locations</div>
                 </div>
                 <div className="text-center">
@@ -135,10 +135,10 @@ export default function NorthCarolinaVendingLeadsPage() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
-                North Carolina Business Landscape
+                Idaho Business Landscape
               </h2>
               <p className="text-lg text-stone max-w-3xl mx-auto">
-                North Carolina is a major technology and healthcare hub in the Southeast, offering diverse vending opportunities across multiple thriving industries.
+                Idaho is a major technology and agriculture hub in the West, offering diverse vending opportunities across multiple thriving industries.
               </p>
             </div>
 
@@ -147,24 +147,24 @@ export default function NorthCarolinaVendingLeadsPage() {
                 <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <CpuChipIcon className="w-8 h-8 text-navy" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Technology & Research</h3>
-                <p className="text-stone">Tech companies, research institutions, and innovation centers with developers, scientists, and creative professionals.</p>
+                <h3 className="text-xl font-semibold text-charcoal mb-2">Technology & Innovation</h3>
+                <p className="text-stone">Tech companies, startups, and innovation centers with developers, engineers, and creative professionals.</p>
               </div>
 
               <div className="text-center">
                 <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <UsersIcon className="w-8 h-8 text-navy" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Healthcare & Medical</h3>
-                <p className="text-stone">Medical centers, hospitals, and healthcare facilities with healthcare professionals, patients, and visitor traffic.</p>
+                <h3 className="text-xl font-semibold text-charcoal mb-2">Agriculture & Manufacturing</h3>
+                <p className="text-stone">Farms, food processing plants, and manufacturing facilities with workers and operational staff.</p>
               </div>
 
               <div className="text-center">
                 <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <BuildingOfficeIcon className="w-8 h-8 text-navy" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Finance & Manufacturing</h3>
-                <p className="text-stone">Financial institutions, manufacturing plants, and industrial operations with professionals, workers, and operational schedules.</p>
+                <h3 className="text-xl font-semibold text-charcoal mb-2">Healthcare & Education</h3>
+                <p className="text-stone">Medical facilities, universities, and educational institutions with students, faculty, and patients.</p>
               </div>
             </div>
           </div>
@@ -175,10 +175,10 @@ export default function NorthCarolinaVendingLeadsPage() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
-                Major North Carolina Cities
+                Major Idaho Cities
               </h2>
               <p className="text-lg text-stone max-w-3xl mx-auto">
-                Explore vending machine opportunities in North Carolina's most active business areas.
+                Explore vending machine opportunities in Idaho's most active business areas.
               </p>
             </div>
 
@@ -215,10 +215,10 @@ export default function NorthCarolinaVendingLeadsPage() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
-                Get North Carolina Vending Machine Leads
+                Get Idaho Vending Machine Leads
               </h2>
               <p className="text-lg text-stone max-w-3xl mx-auto">
-                Access verified vending locations across North Carolina with our flexible pricing options designed for vending machine entrepreneurs.
+                Access verified vending locations across Idaho with our flexible pricing options designed for vending machine entrepreneurs.
               </p>
             </div>
             <PricingTable />
@@ -240,58 +240,58 @@ export default function NorthCarolinaVendingLeadsPage() {
                 Frequently Asked Questions
               </h2>
               <p className="text-lg text-stone">
-                Everything you need to know about vending machine opportunities in North Carolina.
+                Everything you need to know about vending machine opportunities in Idaho.
               </p>
             </div>
             <div className="space-y-6">
               <div className="bg-warm-white p-6 rounded-xl">
                 <h3 className="text-xl font-semibold text-charcoal mb-3">
-                  What types of businesses are best for vending machines in North Carolina?
+                  What types of businesses are best for vending machines in Idaho?
                 </h3>
                 <p className="text-stone">
-                  North Carolina offers diverse opportunities including technology companies, healthcare facilities,
-                  educational institutions, and financial centers. The major technology and healthcare sectors
+                  Idaho offers diverse opportunities including technology companies, agricultural facilities,
+                  manufacturing plants, and healthcare centers. The major technology and agriculture sectors
                   provide excellent placement opportunities.
                 </p>
               </div>
               <div className="bg-warm-white p-6 rounded-xl">
                 <h3 className="text-xl font-semibold text-charcoal mb-3">
-                  How competitive is the vending machine market in North Carolina?
+                  How competitive is the vending machine market in Idaho?
                 </h3>
                 <p className="text-stone">
-                  North Carolina has a moderate vending presence with significant opportunity for expansion,
-                  especially in new technology developments and growing healthcare areas.
+                  Idaho has a moderate vending presence with significant opportunity for expansion,
+                  especially in new technology developments and growing agricultural areas.
                 </p>
               </div>
               <div className="bg-warm-white p-6 rounded-xl">
                 <h3 className="text-xl font-semibold text-charcoal mb-3">
-                  What are the best vending machine types for North Carolina businesses?
+                  What are the best vending machine types for Idaho businesses?
                 </h3>
                 <p className="text-stone">
-                  For North Carolina technology locations, healthy snack and beverage machines work best. Healthcare facilities need reliable machines, while
-                  financial institutions prefer professional options. We provide specific recommendations for each business type.
+                  For Idaho technology locations, healthy snack and beverage machines work best. Agricultural facilities need durable machines, while
+                  healthcare facilities prefer professional options. We provide specific recommendations for each business type.
                 </p>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Other Southeast States Section */}
+        {/* Other Western States Section */}
         <div className="bg-warm-white py-16 sm:py-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
-                Other Southeast Vending Locations
+                Other Western Vending Locations
               </h2>
               <p className="text-lg text-stone max-w-3xl mx-auto">
-                Explore vending machine leads in other major Southeast states
+                Explore vending machine leads in other major Western states
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
-                { name: 'South Carolina', slug: 'south-carolina', count: '480+ leads' },
-                { name: 'Tennessee', slug: 'tennessee', count: '1,080+ leads' },
-                { name: 'Virginia', slug: 'virginia', count: '580+ leads' },
+                { name: 'Washington', slug: 'washington', count: '680+ leads' },
+                { name: 'Oregon', slug: 'oregon', count: '580+ leads' },
+                { name: 'Utah', slug: 'utah', count: '480+ leads' },
               ].map((state) => (
                 <div key={state.slug} className="bg-white p-6 rounded-lg border border-gray-200 text-center">
                   <h3 className="text-xl font-semibold text-charcoal mb-2">{state.name}</h3>

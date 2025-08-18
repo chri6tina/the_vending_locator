@@ -7,57 +7,57 @@ import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
 
-export default function NorthCarolinaVendingLeadsPage() {
+export default function SouthDakotaVendingLeadsPage() {
   const structuredData = generateCityStructuredData({
-    city: 'North Carolina',
-    state: 'North Carolina',
-    stateAbbr: 'NC',
-    population: '10.7M',
-    businessCount: '160,000+',
-    industries: ['Technology', 'Healthcare', 'Manufacturing', 'Education', 'Finance'],
-    description: 'North Carolina offers excellent opportunities for vending machine placement with its technology sector, healthcare industry, and diverse business landscape.'
+    city: 'South Dakota',
+    state: 'South Dakota',
+    stateAbbr: 'SD',
+    population: '900K',
+    businessCount: '40,000+',
+    industries: ['Agriculture', 'Healthcare', 'Tourism', 'Manufacturing', 'Education'],
+    description: 'South Dakota offers excellent opportunities for vending machine placement with its agriculture sector, healthcare industry, and diverse business landscape.'
   })
 
   const cities = [
     {
-      name: 'Charlotte',
-      slug: 'charlotte-north-carolina',
-      vendorCount: '380+',
-      businessCount: '450+',
-      description: 'Financial center with healthcare and technology',
-      highlights: ['Finance', 'Healthcare', 'Technology']
+      name: 'Sioux Falls',
+      slug: 'sioux-falls-south-dakota',
+      vendorCount: '140+',
+      businessCount: '180+',
+      description: 'Largest city with healthcare and finance',
+      highlights: ['Healthcare', 'Finance', 'Manufacturing']
     },
     {
-      name: 'Raleigh',
-      slug: 'raleigh-north-carolina',
-      vendorCount: '320+',
-      businessCount: '380+',
-      description: 'Technology hub with education and research',
-      highlights: ['Technology', 'Education', 'Research']
+      name: 'Rapid City',
+      slug: 'rapid-city-south-dakota',
+      vendorCount: '100+',
+      businessCount: '130+',
+      description: 'Tourism and healthcare center',
+      highlights: ['Tourism', 'Healthcare', 'Education']
     },
     {
-      name: 'Greensboro',
-      slug: 'greensboro-north-carolina',
-      vendorCount: '200+',
-      businessCount: '250+',
+      name: 'Aberdeen',
+      slug: 'aberdeen-south-dakota',
+      vendorCount: '70+',
+      businessCount: '90+',
+      description: 'Agricultural and education hub',
+      highlights: ['Agriculture', 'Education', 'Healthcare']
+    },
+    {
+      name: 'Brookings',
+      slug: 'brookings-south-dakota',
+      vendorCount: '60+',
+      businessCount: '80+',
+      description: 'University town with education',
+      highlights: ['Education', 'Healthcare', 'Agriculture']
+    },
+    {
+      name: 'Watertown',
+      slug: 'watertown-south-dakota',
+      vendorCount: '50+',
+      businessCount: '70+',
       description: 'Manufacturing and healthcare center',
-      highlights: ['Manufacturing', 'Healthcare', 'Education']
-    },
-    {
-      name: 'Durham',
-      slug: 'durham-north-carolina',
-      vendorCount: '180+',
-      businessCount: '220+',
-      description: 'Research triangle with healthcare and education',
-      highlights: ['Research', 'Healthcare', 'Education']
-    },
-    {
-      name: 'Winston-Salem',
-      slug: 'winston-salem-north-carolina',
-      vendorCount: '160+',
-      businessCount: '200+',
-      description: 'Manufacturing and healthcare hub',
-      highlights: ['Manufacturing', 'Healthcare', 'Education']
+      highlights: ['Manufacturing', 'Healthcare', 'Agriculture']
     }
   ]
 
@@ -79,26 +79,26 @@ export default function NorthCarolinaVendingLeadsPage() {
           <div className="mx-auto max-w-2xl px-4 sm:px-6 py-12 sm:py-16 lg:py-24">
             <div className="text-center">
               <h1 className="text-3xl sm:text-4xl lg:text-6xl font-playfair font-bold tracking-tight text-charcoal leading-tight">
-                North Carolina Vending Machine Locations
+                South Dakota Vending Machine Locations
               </h1>
               
               <p className="mt-4 sm:mt-6 text-base sm:text-lg leading-7 sm:leading-8 text-stone px-2 sm:px-0">
-                Discover premium vending machine placement opportunities across North Carolina. 
-                Access 160,000+ businesses and the heart of America's technology and healthcare hub.
+                Discover premium vending machine placement opportunities across South Dakota. 
+                Access 40,000+ businesses and the heart of America's agriculture and healthcare hub.
               </p>
 
               {/* State Stats - Matching Homepage Counter Style */}
               <div className="mt-10 sm:mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 px-4 sm:px-0">
                 <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-bronze">160,000+</div>
+                  <div className="text-xl sm:text-2xl font-bold text-bronze">40,000+</div>
                   <div className="text-xs sm:text-sm text-stone leading-tight">Businesses</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-bronze">10.7M+</div>
+                  <div className="text-xl sm:text-2xl font-bold text-bronze">900K+</div>
                   <div className="text-xs sm:text-sm text-stone leading-tight">Population</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-bronze">1,240+</div>
+                  <div className="text-xl sm:text-2xl font-bold text-bronze">420+</div>
                   <div className="text-xs sm:text-sm text-stone leading-tight">Vending Locations</div>
                 </div>
                 <div className="text-center">
@@ -135,10 +135,10 @@ export default function NorthCarolinaVendingLeadsPage() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
-                North Carolina Business Landscape
+                South Dakota Business Landscape
               </h2>
               <p className="text-lg text-stone max-w-3xl mx-auto">
-                North Carolina is a major technology and healthcare hub in the Southeast, offering diverse vending opportunities across multiple thriving industries.
+                South Dakota is a major agriculture and healthcare hub in the Midwest, offering diverse vending opportunities across multiple thriving industries.
               </p>
             </div>
 
@@ -147,8 +147,8 @@ export default function NorthCarolinaVendingLeadsPage() {
                 <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <CpuChipIcon className="w-8 h-8 text-navy" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Technology & Research</h3>
-                <p className="text-stone">Tech companies, research institutions, and innovation centers with developers, scientists, and creative professionals.</p>
+                <h3 className="text-xl font-semibold text-charcoal mb-2">Agriculture & Food Processing</h3>
+                <p className="text-stone">Agricultural facilities, food processing plants, and farming operations with workers and operational staff.</p>
               </div>
 
               <div className="text-center">
@@ -163,8 +163,8 @@ export default function NorthCarolinaVendingLeadsPage() {
                 <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <BuildingOfficeIcon className="w-8 h-8 text-navy" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Finance & Manufacturing</h3>
-                <p className="text-stone">Financial institutions, manufacturing plants, and industrial operations with professionals, workers, and operational schedules.</p>
+                <h3 className="text-xl font-semibold text-charcoal mb-2">Tourism & Education</h3>
+                <p className="text-stone">Tourist destinations, universities, and educational institutions with students, faculty, and visitors.</p>
               </div>
             </div>
           </div>
@@ -175,10 +175,10 @@ export default function NorthCarolinaVendingLeadsPage() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
-                Major North Carolina Cities
+                Major South Dakota Cities
               </h2>
               <p className="text-lg text-stone max-w-3xl mx-auto">
-                Explore vending machine opportunities in North Carolina's most active business areas.
+                Explore vending machine opportunities in South Dakota's most active business areas.
               </p>
             </div>
 
@@ -215,10 +215,10 @@ export default function NorthCarolinaVendingLeadsPage() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
-                Get North Carolina Vending Machine Leads
+                Get South Dakota Vending Machine Leads
               </h2>
               <p className="text-lg text-stone max-w-3xl mx-auto">
-                Access verified vending locations across North Carolina with our flexible pricing options designed for vending machine entrepreneurs.
+                Access verified vending locations across South Dakota with our flexible pricing options designed for vending machine entrepreneurs.
               </p>
             </div>
             <PricingTable />
@@ -240,58 +240,58 @@ export default function NorthCarolinaVendingLeadsPage() {
                 Frequently Asked Questions
               </h2>
               <p className="text-lg text-stone">
-                Everything you need to know about vending machine opportunities in North Carolina.
+                Everything you need to know about vending machine opportunities in South Dakota.
               </p>
             </div>
             <div className="space-y-6">
               <div className="bg-warm-white p-6 rounded-xl">
                 <h3 className="text-xl font-semibold text-charcoal mb-3">
-                  What types of businesses are best for vending machines in North Carolina?
+                  What types of businesses are best for vending machines in South Dakota?
                 </h3>
                 <p className="text-stone">
-                  North Carolina offers diverse opportunities including technology companies, healthcare facilities,
-                  educational institutions, and financial centers. The major technology and healthcare sectors
+                  South Dakota offers diverse opportunities including agricultural facilities, healthcare centers,
+                  manufacturing plants, and educational institutions. The major agriculture and healthcare sectors
                   provide excellent placement opportunities.
                 </p>
               </div>
               <div className="bg-warm-white p-6 rounded-xl">
                 <h3 className="text-xl font-semibold text-charcoal mb-3">
-                  How competitive is the vending machine market in North Carolina?
+                  How competitive is the vending machine market in South Dakota?
                 </h3>
                 <p className="text-stone">
-                  North Carolina has a moderate vending presence with significant opportunity for expansion,
-                  especially in new technology developments and growing healthcare areas.
+                  South Dakota has a moderate vending presence with significant opportunity for expansion,
+                  especially in new agricultural developments and growing healthcare areas.
                 </p>
               </div>
               <div className="bg-warm-white p-6 rounded-xl">
                 <h3 className="text-xl font-semibold text-charcoal mb-3">
-                  What are the best vending machine types for North Carolina businesses?
+                  What are the best vending machine types for South Dakota businesses?
                 </h3>
                 <p className="text-stone">
-                  For North Carolina technology locations, healthy snack and beverage machines work best. Healthcare facilities need reliable machines, while
-                  financial institutions prefer professional options. We provide specific recommendations for each business type.
+                  For South Dakota agricultural locations, durable beverage and snack machines work best. Healthcare facilities need reliable machines, while
+                  manufacturing plants prefer industrial options. We provide specific recommendations for each business type.
                 </p>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Other Southeast States Section */}
+        {/* Other Midwest States Section */}
         <div className="bg-warm-white py-16 sm:py-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
-                Other Southeast Vending Locations
+                Other Midwest Vending Locations
               </h2>
               <p className="text-lg text-stone max-w-3xl mx-auto">
-                Explore vending machine leads in other major Southeast states
+                Explore vending machine leads in other major Midwest states
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
-                { name: 'South Carolina', slug: 'south-carolina', count: '480+ leads' },
-                { name: 'Tennessee', slug: 'tennessee', count: '1,080+ leads' },
-                { name: 'Virginia', slug: 'virginia', count: '580+ leads' },
+                { name: 'North Dakota', slug: 'north-dakota', count: '280+ leads' },
+                { name: 'Minnesota', slug: 'minnesota', count: '680+ leads' },
+                { name: 'Iowa', slug: 'iowa', count: '480+ leads' },
               ].map((state) => (
                 <div key={state.slug} className="bg-white p-6 rounded-lg border border-gray-200 text-center">
                   <h3 className="text-xl font-semibold text-charcoal mb-2">{state.name}</h3>

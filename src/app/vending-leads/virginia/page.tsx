@@ -7,57 +7,57 @@ import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
 
-export default function NorthCarolinaVendingLeadsPage() {
+export default function VirginiaVendingLeadsPage() {
   const structuredData = generateCityStructuredData({
-    city: 'North Carolina',
-    state: 'North Carolina',
-    stateAbbr: 'NC',
-    population: '10.7M',
-    businessCount: '160,000+',
-    industries: ['Technology', 'Healthcare', 'Manufacturing', 'Education', 'Finance'],
-    description: 'North Carolina offers excellent opportunities for vending machine placement with its technology sector, healthcare industry, and diverse business landscape.'
+    city: 'Virginia',
+    state: 'Virginia',
+    stateAbbr: 'VA',
+    population: '8.6M',
+    businessCount: '180,000+',
+    industries: ['Government', 'Technology', 'Healthcare', 'Education', 'Defense'],
+    description: 'Virginia offers excellent opportunities for vending machine placement with its government sector, technology industry, and diverse business landscape.'
   })
 
   const cities = [
     {
-      name: 'Charlotte',
-      slug: 'charlotte-north-carolina',
-      vendorCount: '380+',
-      businessCount: '450+',
-      description: 'Financial center with healthcare and technology',
-      highlights: ['Finance', 'Healthcare', 'Technology']
+      name: 'Virginia Beach',
+      slug: 'virginia-beach-virginia',
+      vendorCount: '280+',
+      businessCount: '320+',
+      description: 'Largest city with tourism and healthcare',
+      highlights: ['Tourism', 'Healthcare', 'Retail']
     },
     {
-      name: 'Raleigh',
-      slug: 'raleigh-north-carolina',
-      vendorCount: '320+',
-      businessCount: '380+',
-      description: 'Technology hub with education and research',
-      highlights: ['Technology', 'Education', 'Research']
-    },
-    {
-      name: 'Greensboro',
-      slug: 'greensboro-north-carolina',
+      name: 'Norfolk',
+      slug: 'norfolk-virginia',
       vendorCount: '200+',
       businessCount: '250+',
-      description: 'Manufacturing and healthcare center',
-      highlights: ['Manufacturing', 'Healthcare', 'Education']
+      description: 'Port city with military and healthcare',
+      highlights: ['Military', 'Healthcare', 'Port']
     },
     {
-      name: 'Durham',
-      slug: 'durham-north-carolina',
+      name: 'Richmond',
+      slug: 'richmond-virginia',
+      vendorCount: '220+',
+      businessCount: '270+',
+      description: 'State capital with government and finance',
+      highlights: ['Government', 'Finance', 'Healthcare']
+    },
+    {
+      name: 'Arlington',
+      slug: 'arlington-virginia',
       vendorCount: '180+',
       businessCount: '220+',
-      description: 'Research triangle with healthcare and education',
-      highlights: ['Research', 'Healthcare', 'Education']
+      description: 'Government and technology hub',
+      highlights: ['Government', 'Technology', 'Healthcare']
     },
     {
-      name: 'Winston-Salem',
-      slug: 'winston-salem-north-carolina',
-      vendorCount: '160+',
-      businessCount: '200+',
-      description: 'Manufacturing and healthcare hub',
-      highlights: ['Manufacturing', 'Healthcare', 'Education']
+      name: 'Alexandria',
+      slug: 'alexandria-virginia',
+      vendorCount: '150+',
+      businessCount: '180+',
+      description: 'Historic city with government and tourism',
+      highlights: ['Government', 'Tourism', 'Healthcare']
     }
   ]
 
@@ -79,26 +79,26 @@ export default function NorthCarolinaVendingLeadsPage() {
           <div className="mx-auto max-w-2xl px-4 sm:px-6 py-12 sm:py-16 lg:py-24">
             <div className="text-center">
               <h1 className="text-3xl sm:text-4xl lg:text-6xl font-playfair font-bold tracking-tight text-charcoal leading-tight">
-                North Carolina Vending Machine Locations
+                Virginia Vending Machine Locations
               </h1>
               
               <p className="mt-4 sm:mt-6 text-base sm:text-lg leading-7 sm:leading-8 text-stone px-2 sm:px-0">
-                Discover premium vending machine placement opportunities across North Carolina. 
-                Access 160,000+ businesses and the heart of America's technology and healthcare hub.
+                Discover premium vending machine placement opportunities across Virginia. 
+                Access 180,000+ businesses and the heart of America's government and technology hub.
               </p>
 
               {/* State Stats - Matching Homepage Counter Style */}
               <div className="mt-10 sm:mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 px-4 sm:px-0">
                 <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-bronze">160,000+</div>
+                  <div className="text-xl sm:text-2xl font-bold text-bronze">180,000+</div>
                   <div className="text-xs sm:text-sm text-stone leading-tight">Businesses</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-bronze">10.7M+</div>
+                  <div className="text-xl sm:text-2xl font-bold text-bronze">8.6M+</div>
                   <div className="text-xs sm:text-sm text-stone leading-tight">Population</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-bronze">1,240+</div>
+                  <div className="text-xl sm:text-2xl font-bold text-bronze">1,030+</div>
                   <div className="text-xs sm:text-sm text-stone leading-tight">Vending Locations</div>
                 </div>
                 <div className="text-center">
@@ -135,10 +135,10 @@ export default function NorthCarolinaVendingLeadsPage() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
-                North Carolina Business Landscape
+                Virginia Business Landscape
               </h2>
               <p className="text-lg text-stone max-w-3xl mx-auto">
-                North Carolina is a major technology and healthcare hub in the Southeast, offering diverse vending opportunities across multiple thriving industries.
+                Virginia is a major government and technology hub in the Mid-Atlantic, offering diverse vending opportunities across multiple thriving industries.
               </p>
             </div>
 
@@ -147,24 +147,24 @@ export default function NorthCarolinaVendingLeadsPage() {
                 <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <CpuChipIcon className="w-8 h-8 text-navy" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Technology & Research</h3>
-                <p className="text-stone">Tech companies, research institutions, and innovation centers with developers, scientists, and creative professionals.</p>
+                <h3 className="text-xl font-semibold text-charcoal mb-2">Government & Technology</h3>
+                <p className="text-stone">Federal agencies, defense contractors, and technology companies with government employees, engineers, and professionals.</p>
               </div>
 
               <div className="text-center">
                 <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <UsersIcon className="w-8 h-8 text-navy" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Healthcare & Medical</h3>
-                <p className="text-stone">Medical centers, hospitals, and healthcare facilities with healthcare professionals, patients, and visitor traffic.</p>
+                <h3 className="text-xl font-semibold text-charcoal mb-2">Healthcare & Education</h3>
+                <p className="text-stone">Medical centers, universities, and research institutions with healthcare professionals, students, and faculty.</p>
               </div>
 
               <div className="text-center">
                 <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <BuildingOfficeIcon className="w-8 h-8 text-navy" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Finance & Manufacturing</h3>
-                <p className="text-stone">Financial institutions, manufacturing plants, and industrial operations with professionals, workers, and operational schedules.</p>
+                <h3 className="text-xl font-semibold text-charcoal mb-2">Tourism & Military</h3>
+                <p className="text-stone">Tourist attractions, military bases, and port facilities with visitors, service members, and operational schedules.</p>
               </div>
             </div>
           </div>
@@ -175,10 +175,10 @@ export default function NorthCarolinaVendingLeadsPage() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
-                Major North Carolina Cities
+                Major Virginia Cities
               </h2>
               <p className="text-lg text-stone max-w-3xl mx-auto">
-                Explore vending machine opportunities in North Carolina's most active business areas.
+                Explore vending machine opportunities in Virginia's most active business areas.
               </p>
             </div>
 
@@ -215,10 +215,10 @@ export default function NorthCarolinaVendingLeadsPage() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
-                Get North Carolina Vending Machine Leads
+                Get Virginia Vending Machine Leads
               </h2>
               <p className="text-lg text-stone max-w-3xl mx-auto">
-                Access verified vending locations across North Carolina with our flexible pricing options designed for vending machine entrepreneurs.
+                Access verified vending locations across Virginia with our flexible pricing options designed for vending machine entrepreneurs.
               </p>
             </div>
             <PricingTable />
@@ -240,58 +240,58 @@ export default function NorthCarolinaVendingLeadsPage() {
                 Frequently Asked Questions
               </h2>
               <p className="text-lg text-stone">
-                Everything you need to know about vending machine opportunities in North Carolina.
+                Everything you need to know about vending machine opportunities in Virginia.
               </p>
             </div>
             <div className="space-y-6">
               <div className="bg-warm-white p-6 rounded-xl">
                 <h3 className="text-xl font-semibold text-charcoal mb-3">
-                  What types of businesses are best for vending machines in North Carolina?
+                  What types of businesses are best for vending machines in Virginia?
                 </h3>
                 <p className="text-stone">
-                  North Carolina offers diverse opportunities including technology companies, healthcare facilities,
-                  educational institutions, and financial centers. The major technology and healthcare sectors
+                  Virginia offers diverse opportunities including government facilities, technology companies,
+                  healthcare centers, and military bases. The major government and technology sectors
                   provide excellent placement opportunities.
                 </p>
               </div>
               <div className="bg-warm-white p-6 rounded-xl">
                 <h3 className="text-xl font-semibold text-charcoal mb-3">
-                  How competitive is the vending machine market in North Carolina?
+                  How competitive is the vending machine market in Virginia?
                 </h3>
                 <p className="text-stone">
-                  North Carolina has a moderate vending presence with significant opportunity for expansion,
-                  especially in new technology developments and growing healthcare areas.
+                  Virginia has a competitive vending presence with significant opportunity for expansion,
+                  especially in new government developments and growing technology areas.
                 </p>
               </div>
               <div className="bg-warm-white p-6 rounded-xl">
                 <h3 className="text-xl font-semibold text-charcoal mb-3">
-                  What are the best vending machine types for North Carolina businesses?
+                  What are the best vending machine types for Virginia businesses?
                 </h3>
                 <p className="text-stone">
-                  For North Carolina technology locations, healthy snack and beverage machines work best. Healthcare facilities need reliable machines, while
-                  financial institutions prefer professional options. We provide specific recommendations for each business type.
+                  For Virginia government locations, professional snack and beverage machines work best. Technology facilities need reliable machines, while
+                  healthcare facilities prefer healthy options. We provide specific recommendations for each business type.
                 </p>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Other Southeast States Section */}
+        {/* Other Mid-Atlantic States Section */}
         <div className="bg-warm-white py-16 sm:py-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
-                Other Southeast Vending Locations
+                Other Mid-Atlantic Vending Locations
               </h2>
               <p className="text-lg text-stone max-w-3xl mx-auto">
-                Explore vending machine leads in other major Southeast states
+                Explore vending machine leads in other major Mid-Atlantic states
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
-                { name: 'South Carolina', slug: 'south-carolina', count: '480+ leads' },
-                { name: 'Tennessee', slug: 'tennessee', count: '1,080+ leads' },
-                { name: 'Virginia', slug: 'virginia', count: '580+ leads' },
+                { name: 'Maryland', slug: 'maryland', count: '280+ leads' },
+                { name: 'North Carolina', slug: 'north-carolina', count: '320+ leads' },
+                { name: 'West Virginia', slug: 'west-virginia', count: '120+ leads' },
               ].map((state) => (
                 <div key={state.slug} className="bg-white p-6 rounded-lg border border-gray-200 text-center">
                   <h3 className="text-xl font-semibold text-charcoal mb-2">{state.name}</h3>

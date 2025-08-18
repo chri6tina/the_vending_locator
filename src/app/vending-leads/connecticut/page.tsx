@@ -7,57 +7,57 @@ import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
 
-export default function NorthCarolinaVendingLeadsPage() {
+export default function ConnecticutVendingLeadsPage() {
   const structuredData = generateCityStructuredData({
-    city: 'North Carolina',
-    state: 'North Carolina',
-    stateAbbr: 'NC',
-    population: '10.7M',
-    businessCount: '160,000+',
-    industries: ['Technology', 'Healthcare', 'Manufacturing', 'Education', 'Finance'],
-    description: 'North Carolina offers excellent opportunities for vending machine placement with its technology sector, healthcare industry, and diverse business landscape.'
+    city: 'Connecticut',
+    state: 'Connecticut',
+    stateAbbr: 'CT',
+    population: '3.6M',
+    businessCount: '90,000+',
+    industries: ['Insurance', 'Manufacturing', 'Healthcare', 'Finance', 'Education'],
+    description: 'Connecticut offers excellent opportunities for vending machine placement with its insurance sector, manufacturing industry, and diverse business landscape.'
   })
 
   const cities = [
     {
-      name: 'Charlotte',
-      slug: 'charlotte-north-carolina',
-      vendorCount: '380+',
-      businessCount: '450+',
-      description: 'Financial center with healthcare and technology',
-      highlights: ['Finance', 'Healthcare', 'Technology']
-    },
-    {
-      name: 'Raleigh',
-      slug: 'raleigh-north-carolina',
-      vendorCount: '320+',
-      businessCount: '380+',
-      description: 'Technology hub with education and research',
-      highlights: ['Technology', 'Education', 'Research']
-    },
-    {
-      name: 'Greensboro',
-      slug: 'greensboro-north-carolina',
+      name: 'Hartford',
+      slug: 'hartford-connecticut',
       vendorCount: '200+',
       businessCount: '250+',
-      description: 'Manufacturing and healthcare center',
-      highlights: ['Manufacturing', 'Healthcare', 'Education']
+      description: 'State capital with insurance and healthcare',
+      highlights: ['Insurance', 'Healthcare', 'Government']
     },
     {
-      name: 'Durham',
-      slug: 'durham-north-carolina',
+      name: 'Bridgeport',
+      slug: 'bridgeport-connecticut',
+      vendorCount: '150+',
+      businessCount: '180+',
+      description: 'Port city with manufacturing and healthcare',
+      highlights: ['Manufacturing', 'Healthcare', 'Port']
+    },
+    {
+      name: 'Stamford',
+      slug: 'stamford-connecticut',
       vendorCount: '180+',
       businessCount: '220+',
-      description: 'Research triangle with healthcare and education',
-      highlights: ['Research', 'Healthcare', 'Education']
+      description: 'Financial district with corporate headquarters',
+      highlights: ['Finance', 'Technology', 'Healthcare']
     },
     {
-      name: 'Winston-Salem',
-      slug: 'winston-salem-north-carolina',
-      vendorCount: '160+',
-      businessCount: '200+',
-      description: 'Manufacturing and healthcare hub',
-      highlights: ['Manufacturing', 'Healthcare', 'Education']
+      name: 'New Haven',
+      slug: 'new-haven-connecticut',
+      vendorCount: '120+',
+      businessCount: '150+',
+      description: 'University city with healthcare and research',
+      highlights: ['Education', 'Healthcare', 'Research']
+    },
+    {
+      name: 'Waterbury',
+      slug: 'waterbury-connecticut',
+      vendorCount: '100+',
+      businessCount: '120+',
+      description: 'Manufacturing and healthcare center',
+      highlights: ['Manufacturing', 'Healthcare', 'Retail']
     }
   ]
 
@@ -79,26 +79,26 @@ export default function NorthCarolinaVendingLeadsPage() {
           <div className="mx-auto max-w-2xl px-4 sm:px-6 py-12 sm:py-16 lg:py-24">
             <div className="text-center">
               <h1 className="text-3xl sm:text-4xl lg:text-6xl font-playfair font-bold tracking-tight text-charcoal leading-tight">
-                North Carolina Vending Machine Locations
+                Connecticut Vending Machine Locations
               </h1>
               
               <p className="mt-4 sm:mt-6 text-base sm:text-lg leading-7 sm:leading-8 text-stone px-2 sm:px-0">
-                Discover premium vending machine placement opportunities across North Carolina. 
-                Access 160,000+ businesses and the heart of America's technology and healthcare hub.
+                Discover premium vending machine placement opportunities across Connecticut. 
+                Access 90,000+ businesses and the heart of America's insurance and manufacturing hub.
               </p>
 
               {/* State Stats - Matching Homepage Counter Style */}
               <div className="mt-10 sm:mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 px-4 sm:px-0">
                 <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-bronze">160,000+</div>
+                  <div className="text-xl sm:text-2xl font-bold text-bronze">90,000+</div>
                   <div className="text-xs sm:text-sm text-stone leading-tight">Businesses</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-bronze">10.7M+</div>
+                  <div className="text-xl sm:text-2xl font-bold text-bronze">3.6M+</div>
                   <div className="text-xs sm:text-sm text-stone leading-tight">Population</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-bronze">1,240+</div>
+                  <div className="text-xl sm:text-2xl font-bold text-bronze">750+</div>
                   <div className="text-xs sm:text-sm text-stone leading-tight">Vending Locations</div>
                 </div>
                 <div className="text-center">
@@ -135,10 +135,10 @@ export default function NorthCarolinaVendingLeadsPage() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
-                North Carolina Business Landscape
+                Connecticut Business Landscape
               </h2>
               <p className="text-lg text-stone max-w-3xl mx-auto">
-                North Carolina is a major technology and healthcare hub in the Southeast, offering diverse vending opportunities across multiple thriving industries.
+                Connecticut is a major insurance and manufacturing hub in the Northeast, offering diverse vending opportunities across multiple thriving industries.
               </p>
             </div>
 
@@ -147,24 +147,24 @@ export default function NorthCarolinaVendingLeadsPage() {
                 <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <CpuChipIcon className="w-8 h-8 text-navy" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Technology & Research</h3>
-                <p className="text-stone">Tech companies, research institutions, and innovation centers with developers, scientists, and creative professionals.</p>
+                <h3 className="text-xl font-semibold text-charcoal mb-2">Insurance & Finance</h3>
+                <p className="text-stone">Insurance companies, financial institutions, and corporate headquarters with professionals, executives, and consistent office environments.</p>
               </div>
 
               <div className="text-center">
                 <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <UsersIcon className="w-8 h-8 text-navy" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Healthcare & Medical</h3>
-                <p className="text-stone">Medical centers, hospitals, and healthcare facilities with healthcare professionals, patients, and visitor traffic.</p>
+                <h3 className="text-xl font-semibold text-charcoal mb-2">Manufacturing & Healthcare</h3>
+                <p className="text-stone">Manufacturing plants, medical centers, and healthcare facilities with workers, healthcare professionals, and operational schedules.</p>
               </div>
 
               <div className="text-center">
                 <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <BuildingOfficeIcon className="w-8 h-8 text-navy" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Finance & Manufacturing</h3>
-                <p className="text-stone">Financial institutions, manufacturing plants, and industrial operations with professionals, workers, and operational schedules.</p>
+                <h3 className="text-xl font-semibold text-charcoal mb-2">Education & Research</h3>
+                <p className="text-stone">Universities, research institutions, and technology companies with students, faculty, and professionals in dynamic learning environments.</p>
               </div>
             </div>
           </div>
@@ -175,10 +175,10 @@ export default function NorthCarolinaVendingLeadsPage() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
-                Major North Carolina Cities
+                Major Connecticut Cities
               </h2>
               <p className="text-lg text-stone max-w-3xl mx-auto">
-                Explore vending machine opportunities in North Carolina's most active business areas.
+                Explore vending machine opportunities in Connecticut's most active business areas.
               </p>
             </div>
 
@@ -215,10 +215,10 @@ export default function NorthCarolinaVendingLeadsPage() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
-                Get North Carolina Vending Machine Leads
+                Get Connecticut Vending Machine Leads
               </h2>
               <p className="text-lg text-stone max-w-3xl mx-auto">
-                Access verified vending locations across North Carolina with our flexible pricing options designed for vending machine entrepreneurs.
+                Access verified vending locations across Connecticut with our flexible pricing options designed for vending machine entrepreneurs.
               </p>
             </div>
             <PricingTable />
@@ -240,58 +240,58 @@ export default function NorthCarolinaVendingLeadsPage() {
                 Frequently Asked Questions
               </h2>
               <p className="text-lg text-stone">
-                Everything you need to know about vending machine opportunities in North Carolina.
+                Everything you need to know about vending machine opportunities in Connecticut.
               </p>
             </div>
             <div className="space-y-6">
               <div className="bg-warm-white p-6 rounded-xl">
                 <h3 className="text-xl font-semibold text-charcoal mb-3">
-                  What types of businesses are best for vending machines in North Carolina?
+                  What types of businesses are best for vending machines in Connecticut?
                 </h3>
                 <p className="text-stone">
-                  North Carolina offers diverse opportunities including technology companies, healthcare facilities,
-                  educational institutions, and financial centers. The major technology and healthcare sectors
+                  Connecticut offers diverse opportunities including insurance companies, manufacturing plants,
+                  healthcare facilities, and educational institutions. The major insurance and manufacturing sectors
                   provide excellent placement opportunities.
                 </p>
               </div>
               <div className="bg-warm-white p-6 rounded-xl">
                 <h3 className="text-xl font-semibold text-charcoal mb-3">
-                  How competitive is the vending machine market in North Carolina?
+                  How competitive is the vending machine market in Connecticut?
                 </h3>
                 <p className="text-stone">
-                  North Carolina has a moderate vending presence with significant opportunity for expansion,
-                  especially in new technology developments and growing healthcare areas.
+                  Connecticut has a moderate vending presence with significant opportunity for expansion,
+                  especially in new insurance developments and growing manufacturing areas.
                 </p>
               </div>
               <div className="bg-warm-white p-6 rounded-xl">
                 <h3 className="text-xl font-semibold text-charcoal mb-3">
-                  What are the best vending machine types for North Carolina businesses?
+                  What are the best vending machine types for Connecticut businesses?
                 </h3>
                 <p className="text-stone">
-                  For North Carolina technology locations, healthy snack and beverage machines work best. Healthcare facilities need reliable machines, while
-                  financial institutions prefer professional options. We provide specific recommendations for each business type.
+                  For Connecticut insurance locations, professional snack and beverage machines work best. Manufacturing facilities need reliable machines, while
+                  healthcare facilities prefer healthy options. We provide specific recommendations for each business type.
                 </p>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Other Southeast States Section */}
+        {/* Other Northeast States Section */}
         <div className="bg-warm-white py-16 sm:py-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
-                Other Southeast Vending Locations
+                Other Northeast Vending Locations
               </h2>
               <p className="text-lg text-stone max-w-3xl mx-auto">
-                Explore vending machine leads in other major Southeast states
+                Explore vending machine leads in other major Northeast states
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
-                { name: 'South Carolina', slug: 'south-carolina', count: '480+ leads' },
-                { name: 'Tennessee', slug: 'tennessee', count: '1,080+ leads' },
-                { name: 'Virginia', slug: 'virginia', count: '580+ leads' },
+                { name: 'New York', slug: 'new-york', count: '450+ leads' },
+                { name: 'Massachusetts', slug: 'massachusetts', count: '280+ leads' },
+                { name: 'Rhode Island', slug: 'rhode-island', count: '120+ leads' },
               ].map((state) => (
                 <div key={state.slug} className="bg-white p-6 rounded-lg border border-gray-200 text-center">
                   <h3 className="text-xl font-semibold text-charcoal mb-2">{state.name}</h3>
