@@ -1,5 +1,5 @@
 'use client'
-import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, AnchorIcon } from '@heroicons/react/24/solid'
+import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CpuChipIcon } from '@heroicons/react/24/solid'
 import { generateCityStructuredData } from '@/components/CityPageSEO'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
@@ -93,46 +93,46 @@ export default function LongBeachCaliforniaVendingLeadsPage() {
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="bg-warm-white p-6 rounded-lg border border-gray-200">
-                <div className="flex items-center gap-3 mb-4">
-                  <AnchorIcon className="w-8 h-8 text-coral" />
-                  <h3 className="text-xl font-semibold text-charcoal">Port & Shipping</h3>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <CpuChipIcon className="w-8 h-8 text-navy" />
                 </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-2">Port & Shipping</h3>
                 <p className="text-stone">Major port operations, shipping companies, and logistics firms with high employee density and 24/7 operational hours.</p>
               </div>
-              <div className="bg-warm-white p-6 rounded-lg border border-gray-200">
-                <div className="flex items-center gap-3 mb-4">
-                  <UsersIcon className="w-8 h-8 text-coral" />
-                  <h3 className="text-xl font-semibold text-charcoal">Aerospace & Defense</h3>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <UsersIcon className="w-8 h-8 text-navy" />
                 </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-2">Aerospace & Defense</h3>
                 <p className="text-stone">Aerospace companies, defense contractors, and manufacturing facilities with engineers, technicians, and professionals.</p>
               </div>
-              <div className="bg-warm-white p-6 rounded-lg border border-gray-200">
-                <div className="flex items-center gap-3 mb-4">
-                  <BuildingOfficeIcon className="w-8 h-8 text-coral" />
-                  <h3 className="text-xl font-semibold text-charcoal">Healthcare & Medical</h3>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <BuildingOfficeIcon className="w-8 h-8 text-navy" />
                 </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-2">Healthcare & Medical</h3>
                 <p className="text-stone">Medical centers, hospitals, and healthcare facilities with staff, patients, and visitor traffic throughout the year.</p>
               </div>
-              <div className="bg-warm-white p-6 rounded-lg border border-gray-200">
-                <div className="flex items-center gap-3 mb-4">
-                  <MapPinIcon className="w-8 h-8 text-coral" />
-                  <h3 className="text-xl font-semibold text-charcoal">Tourism & Hospitality</h3>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <MapPinIcon className="w-8 h-8 text-navy" />
                 </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-2">Tourism & Hospitality</h3>
                 <p className="text-stone">Beach resorts, hotels, restaurants, and tourism-related businesses with seasonal visitor traffic and year-round local customers.</p>
               </div>
-              <div className="bg-warm-white p-6 rounded-lg border border-gray-200">
-                <div className="flex items-center gap-3 mb-4">
-                  <AcademicCapIcon className="w-8 h-8 text-coral" />
-                  <h3 className="text-xl font-semibold text-charcoal">Manufacturing</h3>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <AcademicCapIcon className="w-8 h-8 text-navy" />
                 </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-2">Manufacturing</h3>
                 <p className="text-stone">Industrial facilities and manufacturing plants with consistent employee traffic and operational hours.</p>
               </div>
-              <div className="bg-warm-white p-6 rounded-lg border border-gray-200">
-                <div className="flex items-center gap-3 mb-4">
-                  <UsersIcon className="w-8 h-8 text-coral" />
-                  <h3 className="text-xl font-semibold text-charcoal">Professional Services</h3>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <UsersIcon className="w-8 h-8 text-navy" />
                 </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-2">Professional Services</h3>
                 <p className="text-stone">Law firms, accounting offices, and professional service companies with consistent client and employee traffic.</p>
               </div>
             </div>
