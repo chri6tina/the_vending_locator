@@ -1,22 +1,41 @@
 'use client'
 
-import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CpuChipIcon } from '@heroicons/react/24/solid'
-import { generateCityStructuredData } from '@/components/CityPageSEO'
+import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CpuChipIcon, TruckIcon, FilmIcon, SunIcon, BeakerIcon, SparklesIcon, HeartIcon, CloudIcon } from '@heroicons/react/24/solid'
+import Link from 'next/link'
+import { useState, useEffect } from 'react'
+import { motion } from 'framer-motion'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
+import VendingCourse from '@/components/VendingCourse'
+import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
 export default function KansasVendingLeadsPage() {
-  const structuredData = generateCityStructuredData({
-    city: 'Kansas',
-    state: 'Kansas',
-    stateAbbr: 'KS',
-    population: '2.9M',
-    businessCount: '90,000+',
-    industries: ['Aviation', 'Agriculture', 'Healthcare', 'Manufacturing', 'Education'],
-    description: 'Kansas offers excellent opportunities for vending machine placement with its aviation sector, agricultural industry, and diverse business landscape.'
-  })
+  const [activeUsers, setActiveUsers] = useState(11)
+  const [currentUserIndex, setCurrentUserIndex] = useState(0)
+
+  const users = [
+    'Tom from Wichita',
+    'Sarah from Overland Park',
+    'Mike from Kansas City',
+    'Lisa from Olathe',
+    'David from Topeka'
+  ]
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveUsers(prev => prev + Math.floor(Math.random() * 3) - 1)
+    }, 3000)
+    return () => clearInterval(interval)
+  }, [])
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentUserIndex(prev => (prev + 1) % users.length)
+    }, 4000)
+    return () => clearInterval(interval)
+  }, [users.length])
 
   const cities = [
     {
@@ -63,253 +82,380 @@ export default function KansasVendingLeadsPage() {
 
   return (
     <>
-      {/* Structured Data for SEO */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(structuredData)
-        }}
-      />
-      
       <Header />
       
       <div className="min-h-screen bg-warm-white">
-        {/* Hero Section - Matching Homepage Style */}
+        {/* Hero Section */}
         <div className="bg-warm-white">
           <div className="mx-auto max-w-2xl px-4 sm:px-6 py-12 sm:py-16 lg:py-24">
             <div className="text-center">
-              <h1 className="text-3xl sm:text-4xl lg:text-6xl font-playfair font-bold tracking-tight text-charcoal leading-tight">
+              {/* Active Users Counter */}
+              <div className="inline-flex items-center gap-2 bg-bronze/10 text-bronze px-4 py-2 rounded-full text-sm font-medium mb-6">
+                <div className="w-2 h-2 bg-bronze rounded-full animate-pulse"></div>
+                {activeUsers} active users right now
+              </div>
+
+              <motion.h1 
+                className="text-3xl sm:text-4xl lg:text-6xl font-playfair font-bold tracking-tight text-charcoal leading-tight"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+              >
                 Kansas Vending Machine Locations
-              </h1>
+              </motion.h1>
               
-              <p className="mt-4 sm:mt-6 text-base sm:text-lg leading-7 sm:leading-8 text-stone px-2 sm:px-0">
+              <motion.p 
+                className="mt-4 sm:mt-6 text-base sm:text-lg leading-7 sm:leading-8 text-stone px-2 sm:px-0"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+              >
                 Discover premium vending machine placement opportunities across Kansas. 
                 Access 90,000+ businesses and the heart of America's aviation and agricultural hub.
-              </p>
+              </motion.p>
 
-              {/* State Stats - Matching Homepage Counter Style */}
-              <div className="mt-10 sm:mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 px-4 sm:px-0">
-                <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-bronze">90,000+</div>
-                  <div className="text-xs sm:text-sm text-stone leading-tight">Businesses</div>
+              {/* Trust Signals */}
+              <div className="mt-8 flex flex-wrap justify-center gap-4 text-sm text-stone">
+                <div className="flex items-center gap-2">
+                  <CheckBadgeIcon className="w-4 h-4 text-bronze" />
+                  530+ Verified Locations
                 </div>
-                <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-bronze">2.9M+</div>
-                  <div className="text-xs sm:text-sm text-stone leading-tight">Population</div>
+                <div className="flex items-center gap-2">
+                  <UsersIcon className="w-4 h-4 text-bronze" />
+                  90,000+ Businesses
                 </div>
-                <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-bronze">530+</div>
-                  <div className="text-xs sm:text-sm text-stone leading-tight">Vending Locations</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-bronze">5</div>
-                  <div className="text-xs sm:text-sm text-stone leading-tight">Major Cities</div>
+                <div className="flex items-center gap-2">
+                  <BuildingOfficeIcon className="w-4 h-4 text-bronze" />
+                  5 Major Industries
                 </div>
               </div>
 
-              {/* Trust Signals - Matching Homepage Style */}
-              <div className="mt-8 sm:mt-10 flex flex-wrap justify-center gap-4 sm:gap-6">
-                <div className="flex items-center gap-2 text-sm text-stone">
-                  <CheckBadgeIcon className="h-5 w-5 text-green-600" />
-                  <span>Verified Locations</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-stone">
-                  <StarIcon className="h-5 w-5 text-yellow-500" />
-                  <span>4.9/5 Rating</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-stone">
-                  <ShieldCheckIcon className="h-5 w-5 text-blue-600" />
-                  <span>Secure & Reliable</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-stone">
-                  <ClockIcon className="h-5 w-5 text-purple-600" />
-                  <span>Quality Research</span>
-                </div>
+              {/* CTA Buttons */}
+              <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+                <Link
+                  href="#pricing"
+                  className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-bronze hover:bg-bronze/90 transition-colors"
+                >
+                  View Pricing
+                </Link>
+                <Link
+                  href="#hot-leads"
+                  className="inline-flex items-center justify-center px-6 py-3 border border-bronze text-base font-medium rounded-md text-bronze bg-transparent hover:bg-bronze/10 transition-colors"
+                >
+                  Hot Leads
+                </Link>
+              </div>
+
+              {/* Current User */}
+              <div className="mt-6 text-sm text-stone">
+                <span className="text-bronze font-medium">{users[currentUserIndex]}</span> just viewed this page
               </div>
             </div>
           </div>
         </div>
 
-        {/* Business Landscape Section */}
-        <div className="bg-white py-16 sm:py-20">
+        {/* Pricing Section */}
+        <section id="pricing" className="py-16 bg-stone-50">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
-                Kansas Business Landscape
+              <h2 className="text-3xl font-bold text-charcoal mb-4">
+                Choose Your Plan
               </h2>
-              <p className="text-lg text-stone max-w-3xl mx-auto">
-                Kansas is a major aviation and agricultural hub in the Midwest, offering diverse vending opportunities across multiple thriving industries.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <CpuChipIcon className="w-8 h-8 text-navy" />
-                </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Aviation & Aerospace</h3>
-                <p className="text-stone">Aviation companies, aerospace facilities, and manufacturing operations with high employee density and consistent operational hours.</p>
-              </div>
-
-              <div className="text-center">
-                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <UsersIcon className="w-8 h-8 text-navy" />
-                </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Agriculture & Food Processing</h3>
-                <p className="text-stone">Agricultural facilities, food processing plants, and industrial operations with engineers, technicians, and professionals.</p>
-              </div>
-
-              <div className="text-center">
-                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <BuildingOfficeIcon className="w-8 h-8 text-navy" />
-                </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Healthcare & Medical</h3>
-                <p className="text-stone">Medical centers, hospitals, and healthcare facilities with staff, patients, and visitor traffic throughout the year.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Major Cities Section */}
-        <div className="bg-warm-white py-16 sm:py-20">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
-                Major Kansas Cities
-              </h2>
-              <p className="text-lg text-stone max-w-3xl mx-auto">
-                Explore vending machine opportunities in Kansas's most active business areas.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {cities.map((city) => (
-                <div key={city.slug} className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                  <h3 className="text-xl font-semibold text-charcoal mb-3">{city.name}</h3>
-                  <p className="text-stone mb-3">{city.description}</p>
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {city.highlights.map((highlight) => (
-                      <span key={highlight} className="px-2 py-1 bg-navy/10 text-navy text-xs rounded-full">
-                        {highlight}
-                      </span>
-                    ))}
-                  </div>
-                  <div className="flex justify-between items-center text-sm text-bronze font-medium">
-                    <span>{city.vendorCount} vendors</span>
-                    <span>{city.businessCount} businesses</span>
-                  </div>
-                  <a
-                    href={`/vending-leads/${city.slug}`}
-                    className="mt-4 inline-block bg-navy hover:bg-navy-light text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors w-full text-center"
-                  >
-                    View Locations
-                  </a>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        {/* Pricing Section - Prominently Displayed */}
-        <div className="bg-white py-16 sm:py-20">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
-                Get Kansas Vending Machine Leads
-              </h2>
-              <p className="text-lg text-stone max-w-3xl mx-auto">
-                Access verified vending locations across Kansas with our flexible pricing options designed for vending machine entrepreneurs.
+              <p className="text-lg text-stone">
+                Get access to Kansas's top vending machine opportunities
               </p>
             </div>
             <PricingTable />
           </div>
-        </div>
+        </section>
+
+        {/* Business Landscape */}
+        <section className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <motion.div 
+              className="text-center mb-12"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="text-3xl font-bold text-charcoal mb-4">
+                Kansas Business Landscape
+              </h2>
+              <p className="text-lg text-stone max-w-3xl mx-auto">
+                Kansas is a major aviation and agricultural hub in the Midwest, offering diverse vending 
+                opportunities across multiple thriving industries.
+              </p>
+            </motion.div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <motion.div 
+                className="text-center p-6 rounded-lg bg-stone-50"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+                viewport={{ once: true }}
+              >
+                <CpuChipIcon className="w-12 h-12 text-bronze mx-auto mb-4" />
+                <h3 className="text-xl font-semibold text-charcoal mb-2">Aviation & Aerospace</h3>
+                <p className="text-stone">Major aviation companies and aerospace facilities</p>
+              </motion.div>
+
+              <motion.div 
+                className="text-center p-6 rounded-lg bg-stone-50"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                viewport={{ once: true }}
+              >
+                <SunIcon className="w-12 h-12 text-bronze mx-auto mb-4" />
+                <h3 className="text-xl font-semibold text-charcoal mb-2">Agriculture</h3>
+                <p className="text-stone">Leading agricultural and food processing state</p>
+              </motion.div>
+
+              <motion.div 
+                className="text-center p-6 rounded-lg bg-stone-50"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+                viewport={{ once: true }}
+              >
+                <HeartIcon className="w-12 h-12 text-bronze mx-auto mb-4" />
+                <h3 className="text-xl font-semibold text-charcoal mb-2">Healthcare</h3>
+                <p className="text-stone">Growing healthcare sector with medical facilities</p>
+              </motion.div>
+
+              <motion.div 
+                className="text-center p-6 rounded-lg bg-stone-50"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+                viewport={{ once: true }}
+              >
+                <BuildingOfficeIcon className="w-12 h-12 text-bronze mx-auto mb-4" />
+                <h3 className="text-xl font-semibold text-charcoal mb-2">Manufacturing</h3>
+                <p className="text-stone">Strong manufacturing and industrial base</p>
+              </motion.div>
+
+              <motion.div 
+                className="text-center p-6 rounded-lg bg-stone-50"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.5 }}
+                viewport={{ once: true }}
+              >
+                <AcademicCapIcon className="w-12 h-12 text-bronze mx-auto mb-4" />
+                <h3 className="text-xl font-semibold text-charcoal mb-2">Education</h3>
+                <p className="text-stone">Top universities and research institutions</p>
+              </motion.div>
+
+              <motion.div 
+                className="text-center p-6 rounded-lg bg-stone-50"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.6 }}
+                viewport={{ once: true }}
+              >
+                <TruckIcon className="w-12 h-12 text-bronze mx-auto mb-4" />
+                <h3 className="text-xl font-semibold text-charcoal mb-2">Transportation</h3>
+                <p className="text-stone">Major logistics and distribution hub</p>
+              </motion.div>
+            </div>
+          </div>
+        </section>
+
+        {/* State Stats */}
+        <section className="py-16 bg-stone-50">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <motion.div 
+              className="text-center mb-12"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="text-3xl font-bold text-charcoal mb-4">
+                Kansas by the Numbers
+              </h2>
+            </motion.div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <motion.div 
+                className="text-center"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+                viewport={{ once: true }}
+              >
+                <div className="text-4xl font-bold text-bronze mb-2">2.9M+</div>
+                <div className="text-lg text-charcoal">Population</div>
+              </motion.div>
+
+              <motion.div 
+                className="text-center"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                viewport={{ once: true }}
+              >
+                <div className="text-4xl font-bold text-bronze mb-2">90,000+</div>
+                <div className="text-lg text-charcoal">Businesses</div>
+              </motion.div>
+
+              <motion.div 
+                className="text-center"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+                viewport={{ once: true }}
+              >
+                <div className="text-4xl font-bold text-bronze mb-2">6</div>
+                <div className="text-lg text-charcoal">Major Industries</div>
+              </motion.div>
+            </div>
+          </div>
+        </section>
 
         {/* Hot Leads Section */}
-        <div className="bg-warm-white py-16 sm:py-20">
+        <section id="hot-leads" className="py-16 bg-warm-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <HotLeads />
           </div>
-        </div>
+        </section>
+
+        {/* Vending Course Section */}
+        <section className="py-16 bg-stone-50">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <VendingCourse />
+          </div>
+        </section>
 
         {/* FAQ Section */}
-        <div className="bg-white py-16 sm:py-20">
+        <section className="py-16 bg-warm-white">
           <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
+            <motion.div 
+              className="text-center mb-12"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="text-3xl font-bold text-charcoal mb-4">
                 Frequently Asked Questions
               </h2>
-              <p className="text-lg text-stone">
-                Everything you need to know about vending machine opportunities in Kansas.
-              </p>
-            </div>
+            </motion.div>
+
             <div className="space-y-6">
-              <div className="bg-warm-white p-6 rounded-xl">
-                <h3 className="text-xl font-semibold text-charcoal mb-3">
-                  What types of businesses are best for vending machines in Kansas?
+              <motion.div 
+                className="bg-stone-50 rounded-lg p-6"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+                viewport={{ once: true }}
+              >
+                <h3 className="text-lg font-semibold text-charcoal mb-2">
+                  What makes Kansas a good market for vending machines?
                 </h3>
                 <p className="text-stone">
-                  Kansas offers diverse opportunities including aviation companies, agricultural facilities,
-                  healthcare centers, and manufacturing plants. The major aviation and agricultural sectors
-                  provide excellent placement opportunities.
+                  Kansas's strong aviation sector, agricultural industry, and growing healthcare 
+                  sector create ideal conditions for vending machine placement with consistent foot traffic.
                 </p>
-              </div>
-              <div className="bg-warm-white p-6 rounded-xl">
-                <h3 className="text-xl font-semibold text-charcoal mb-3">
-                  How competitive is the vending machine market in Kansas?
+              </motion.div>
+
+              <motion.div 
+                className="bg-stone-50 rounded-lg p-6"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                viewport={{ once: true }}
+              >
+                <h3 className="text-lg font-semibold text-charcoal mb-2">
+                  Which cities in Kansas have the best opportunities?
                 </h3>
                 <p className="text-stone">
-                  Kansas has a moderate vending presence with significant opportunity for expansion,
-                  especially in new aviation developments and growing agricultural areas.
+                  Wichita, Overland Park, and Kansas City offer the highest concentration of businesses 
+                  and aviation facilities, making them prime locations for vending machine placement.
                 </p>
-              </div>
-              <div className="bg-warm-white p-6 rounded-xl">
-                <h3 className="text-xl font-semibold text-charcoal mb-3">
-                  What are the best vending machine types for Kansas businesses?
+              </motion.div>
+
+              <motion.div 
+                className="bg-stone-50 rounded-lg p-6"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+                viewport={{ once: true }}
+              >
+                <h3 className="text-lg font-semibold text-charcoal mb-2">
+                  How do I get started with vending machines in Kansas?
                 </h3>
                 <p className="text-stone">
-                  For Kansas aviation locations, industrial-grade beverage and snack machines work best. Agricultural facilities need reliable machines, while
-                  healthcare facilities prefer healthy snack options. We provide specific recommendations for each business type.
+                  Start by accessing our verified business leads, then contact locations that match your 
+                  criteria. Our platform provides all the information you need to make successful placements.
                 </p>
-              </div>
+              </motion.div>
             </div>
           </div>
-        </div>
+        </section>
 
-        {/* Other Midwest States Section */}
-        <div className="bg-warm-white py-16 sm:py-20">
+        {/* Major Cities Section */}
+        <section className="py-16 bg-stone-50">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
-                Other Midwest Vending Locations
+            <motion.div 
+              className="text-center mb-12"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="text-3xl font-bold text-charcoal mb-4">
+                Major Cities in Kansas
               </h2>
-              <p className="text-lg text-stone max-w-3xl mx-auto">
-                Explore vending machine leads in other major Midwest states
+              <p className="text-lg text-stone">
+                Explore vending opportunities in Kansas's key metropolitan areas
               </p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {[
-                { name: 'Missouri', slug: 'missouri', count: '220+ leads' },
-                { name: 'Oklahoma', slug: 'oklahoma', count: '550+ leads' },
-                { name: 'Nebraska', slug: 'nebraska', count: '150+ leads' },
-              ].map((state) => (
-                <div key={state.slug} className="bg-white p-6 rounded-lg border border-gray-200 text-center">
-                  <h3 className="text-xl font-semibold text-charcoal mb-2">{state.name}</h3>
-                  <p className="text-stone mb-4">{state.count}</p>
-                  <a
-                    href={`/vending-leads/${state.slug}`}
-                    className="inline-block bg-navy hover:bg-navy-light text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+            </motion.div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {cities.map((city, index) => (
+                <motion.div
+                  key={city.slug}
+                  className="bg-warm-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                >
+                  <h3 className="text-xl font-semibold text-charcoal mb-2">{city.name}</h3>
+                  <p className="text-stone mb-4">{city.description}</p>
+                  <div className="flex justify-between text-sm text-stone mb-4">
+                    <span>{city.vendorCount} vendors</span>
+                    <span>{city.businessCount} businesses</span>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    {city.highlights.map((highlight, idx) => (
+                      <span
+                        key={idx}
+                        className="px-2 py-1 bg-bronze/10 text-bronze text-xs rounded-full"
+                      >
+                        {highlight}
+                      </span>
+                    ))}
+                  </div>
+                  <Link
+                    href={`/vending-leads/${city.slug}`}
+                    className="mt-4 inline-block text-bronze hover:text-bronze/80 font-medium"
                   >
-                    View Locations
-                  </a>
-                </div>
+                    View Details →
+                  </Link>
+                </motion.div>
               ))}
             </div>
           </div>
-        </div>
+        </section>
       </div>
       
       <Footer />
+      <ZipCodeModalWrapper />
     </>
   )
 }
