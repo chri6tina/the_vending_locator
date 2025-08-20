@@ -2,73 +2,9 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
-import { MapPinIcon, BuildingStorefrontIcon, UserGroupIcon } from '@heroicons/react/24/outline'
+import { BuildingStorefrontIcon, UserGroupIcon } from '@heroicons/react/24/outline'
 
-const states = [
-  {
-    name: 'Texas',
-    slug: 'texas',
-    cities: [
-      { name: 'Austin', slug: 'austin-texas', vendorCount: '150+', businessCount: '200+' },
-      { name: 'Dallas', slug: 'dallas-texas', vendorCount: '180+', businessCount: '250+' },
-      { name: 'Houston', slug: 'houston-texas', vendorCount: '200+', businessCount: '300+' },
-      { name: 'San Antonio', slug: 'san-antonio-texas', vendorCount: '120+', businessCount: '180+' },
-    ]
-  },
-  {
-    name: 'Florida',
-    slug: 'florida',
-    cities: [
-      { name: 'Miami', slug: 'miami-florida', vendorCount: '160+', businessCount: '220+' },
-      { name: 'Jacksonville', slug: 'jacksonville-florida', vendorCount: '90+', businessCount: '140+' },
-    ]
-  },
-  {
-    name: 'California',
-    slug: 'california',
-    cities: [
-      { name: 'Los Angeles', slug: 'los-angeles-california', vendorCount: '250+', businessCount: '400+' },
-      { name: 'San Francisco', slug: 'san-francisco-california', vendorCount: '180+', businessCount: '280+' },
-      { name: 'San Diego', slug: 'san-diego-california', vendorCount: '140+', businessCount: '220+' },
-      { name: 'San Jose', slug: 'san-jose-california', vendorCount: '120+', businessCount: '200+' },
-    ]
-  },
-  {
-    name: 'Illinois',
-    slug: 'illinois',
-    cities: [
-      { name: 'Chicago', slug: 'chicago-illinois', vendorCount: '220+', businessCount: '350+' },
-    ]
-  },
-  {
-    name: 'New York',
-    slug: 'new-york',
-    cities: [
-      { name: 'New York City', slug: 'new-york-new-york', vendorCount: '300+', businessCount: '500+' },
-    ]
-  },
-  {
-    name: 'Pennsylvania',
-    slug: 'pennsylvania',
-    cities: [
-      { name: 'Philadelphia', slug: 'philadelphia-pennsylvania', vendorCount: '140+', businessCount: '220+' },
-    ]
-  },
-  {
-    name: 'Arizona',
-    slug: 'arizona',
-    cities: [
-      { name: 'Phoenix', slug: 'phoenix-arizona', vendorCount: '110+', businessCount: '180+' },
-    ]
-  },
-  {
-    name: 'Washington',
-    slug: 'washington',
-    cities: [
-      { name: 'Seattle', slug: 'seattle-washington', vendorCount: '130+', businessCount: '200+' },
-    ]
-  }
-]
+
 
 export default function LocationsPage() {
   return (
@@ -175,60 +111,7 @@ export default function LocationsPage() {
         </div>
       </div>
 
-      {/* States Directory */}
-      <div className="bg-white py-16 sm:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-2xl sm:text-3xl font-playfair font-bold text-charcoal mb-4">
-              Browse by State
-            </h2>
-            <p className="text-lg text-stone max-w-2xl mx-auto">
-              Select your state to find vending opportunities and business locations
-            </p>
-          </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {states.map((state, stateIdx) => (
-              <motion.div
-                key={state.slug}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.1 * stateIdx }}
-                className="bg-warm-white rounded-xl p-6 border border-gray-200 hover:border-navy/30 transition-colors"
-              >
-                <div className="flex items-center gap-3 mb-4">
-                  <MapPinIcon className="h-6 w-6 text-navy" />
-                  <h3 className="text-lg font-bold text-charcoal">{state.name}</h3>
-                </div>
-                
-                <div className="space-y-3 mb-4">
-                  {state.cities.map((city) => (
-                    <Link
-                      key={city.slug}
-                      href={`/location/${city.slug}`}
-                      className="block p-3 bg-white rounded-lg hover:bg-gray-50 transition-colors border border-gray-200"
-                    >
-                      <div className="flex justify-between items-center">
-                        <span className="font-medium text-charcoal">{city.name}</span>
-                        <span className="text-xs text-stone bg-stone/20 px-2 py-1 rounded">
-                          {city.vendorCount} locations
-                        </span>
-                      </div>
-                    </Link>
-                  ))}
-                </div>
-
-                <Link
-                  href={`/location/${state.slug}`}
-                  className="text-sm text-navy hover:text-navy-light font-medium hover:underline"
-                >
-                  View all {state.name} locations →
-                </Link>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </div>
 
       {/* CTA Section */}
       <div className="bg-navy py-16 sm:py-24">
