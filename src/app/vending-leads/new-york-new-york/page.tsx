@@ -309,30 +309,40 @@ export default function NewYorkNewYorkVendingLeadsPage() {
               </p>
             </motion.div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[
-                { name: 'Buffalo', slug: 'buffalo-new-york', description: 'Manufacturing and healthcare hub' },
-                { name: 'Rochester', slug: 'rochester-new-york', description: 'Technology and healthcare center' },
-                { name: 'Yonkers', slug: 'yonkers-new-york', description: 'Suburban business center' },
-                { name: 'Syracuse', slug: 'syracuse-new-york', description: 'Education and healthcare hub' },
-                { name: 'Albany', slug: 'albany-new-york', description: 'State capital with government' },
-                { name: 'New Rochelle', slug: 'new-rochelle-new-york', description: 'Suburban business center' }
-              ].map((city, index) => (
-                <motion.div
-                  key={city.name}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, delay: index * 0.1 }}
-                  className="bg-white p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200"
-                >
-                  <Link href={`/vending-leads/${city.slug}`} className="block">
-                    <h3 className="text-lg font-semibold text-coral hover:text-coral/80 transition-colors duration-200 mb-2">
-                      {city.name}
-                    </h3>
-                    <p className="text-stone text-sm leading-relaxed">{city.description}</p>
-                  </Link>
-                </motion.div>
-              ))}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <motion.a
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.1 }}
+                viewport={{ once: true }}
+                href="/vending-leads/boston-massachusetts"
+                className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+              >
+                <h3 className="font-semibold text-navy">Boston</h3>
+                <p className="text-sm text-gray-600">Healthcare and education hub</p>
+              </motion.a>
+              <motion.a
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                href="/vending-leads/philadelphia-pennsylvania"
+                className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+              >
+                <h3 className="font-semibold text-navy">Philadelphia</h3>
+                <p className="text-sm text-gray-600">Healthcare and education hub</p>
+              </motion.a>
+              <motion.a
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+                viewport={{ once: true }}
+                href="/vending-leads/washington-dc"
+                className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+              >
+                <h3 className="font-semibold text-navy">Washington DC</h3>
+                <p className="text-sm text-gray-600">Government and policy center</p>
+              </motion.a>
             </div>
           </div>
         </section>

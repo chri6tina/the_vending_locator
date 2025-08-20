@@ -404,11 +404,11 @@ export default function BostonMassachusettsVendingLeadsPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
                 viewport={{ once: true }}
-                href="/vending-leads/lowell-massachusetts" 
+                href="/vending-leads/new-york-new-york" 
                 className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
               >
-                <h3 className="font-semibold text-navy">Lowell</h3>
-                <p className="text-sm text-gray-600">Manufacturing and education center</p>
+                <h3 className="font-semibold text-navy">New York</h3>
+                <p className="text-sm text-gray-600">Financial capital and corporate headquarters</p>
               </motion.a>
               
               <motion.a 
@@ -416,11 +416,11 @@ export default function BostonMassachusettsVendingLeadsPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.5 }}
                 viewport={{ once: true }}
-                href="/vending-leads/new-bedford-massachusetts" 
+                href="/vending-leads/philadelphia-pennsylvania" 
                 className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
               >
-                <h3 className="font-semibold text-navy">New Bedford</h3>
-                <p className="text-sm text-gray-600">Fishing and manufacturing hub</p>
+                <h3 className="font-semibold text-navy">Philadelphia</h3>
+                <p className="text-sm text-gray-600">Healthcare and education hub</p>
               </motion.a>
               
               <motion.a 

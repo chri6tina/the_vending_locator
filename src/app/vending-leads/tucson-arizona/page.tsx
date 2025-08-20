@@ -427,11 +427,11 @@ export default function TucsonArizonaVendingLeadsPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
                 viewport={{ once: true }}
-                href="/vending-leads/chandler-arizona" 
+                href="/vending-leads/phoenix-arizona" 
                 className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
               >
-                <h3 className="font-semibold text-navy">Chandler</h3>
-                <p className="text-sm text-gray-600">Technology and manufacturing hub</p>
+                <h3 className="font-semibold text-navy">Phoenix</h3>
+                <p className="text-sm text-gray-600">State capital and business hub</p>
               </motion.a>
             </div>
           </div>

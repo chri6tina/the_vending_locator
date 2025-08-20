@@ -362,77 +362,39 @@ export default function BridgeportConnecticutVendingLeadsPage() {
               Other Cities in Connecticut
             </motion.h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
-              <motion.a 
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <motion.a
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.1 }}
                 viewport={{ once: true }}
-                href="/vending-leads/hartford-connecticut" 
+                href="/vending-leads/new-haven-connecticut"
                 className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
               >
-                <h3 className="font-semibold text-navy">Hartford</h3>
-                <p className="text-sm text-gray-600">State capital and insurance hub</p>
+                <h3 className="font-semibold text-navy">New Haven</h3>
+                <p className="text-sm text-gray-600">University town and healthcare hub</p>
               </motion.a>
-              
-              <motion.a 
+              <motion.a
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
                 viewport={{ once: true }}
-                href="/vending-leads/new-haven-connecticut" 
+                href="/vending-leads/boston-massachusetts"
                 className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
               >
-                <h3 className="font-semibold text-navy">New Haven</h3>
-                <p className="text-sm text-gray-600">University town and healthcare center</p>
+                <h3 className="font-semibold text-navy">Boston</h3>
+                <p className="text-sm text-gray-600">Healthcare and education hub</p>
               </motion.a>
-              
-              <motion.a 
+              <motion.a
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
                 viewport={{ once: true }}
-                href="/vending-leads/waterbury-connecticut" 
+                href="/vending-leads/new-york-new-york"
                 className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
               >
-                <h3 className="font-semibold text-navy">Waterbury</h3>
-                <p className="text-sm text-gray-600">Manufacturing and industrial hub</p>
-              </motion.a>
-              
-              <motion.a 
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                viewport={{ once: true }}
-                href="/vending-leads/stamford-connecticut" 
-                className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
-              >
-                <h3 className="font-semibold text-navy">Stamford</h3>
-                <p className="text-sm text-gray-600">Financial services and corporate center</p>
-              </motion.a>
-              
-              <motion.a 
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.5 }}
-                viewport={{ once: true }}
-                href="/vending-leads/norwalk-connecticut" 
-                className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
-              >
-                <h3 className="font-semibold text-navy">Norwalk</h3>
-                <p className="text-sm text-gray-600">Coastal business and retail center</p>
-              </motion.a>
-              
-              <motion.a 
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.6 }}
-                viewport={{ once: true }}
-                href="/vending-leads/danbury-connecticut" 
-                className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
-              >
-                <h3 className="font-semibold text-navy">Danbury</h3>
-                <p className="text-sm text-gray-600">Technology and manufacturing hub</p>
+                <h3 className="font-semibold text-navy">New York</h3>
+                <p className="text-sm text-gray-600">Financial capital and corporate headquarters</p>
               </motion.a>
             </div>
           </div>

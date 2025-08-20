@@ -362,77 +362,39 @@ export default function ChicagoIllinoisVendingLeadsPage() {
               Other Cities in Illinois
             </motion.h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
-              <motion.a 
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <motion.a
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.1 }}
                 viewport={{ once: true }}
-                href="/vending-leads/aurora-illinois" 
+                href="/vending-leads/indianapolis-indiana"
                 className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
               >
-                <h3 className="font-semibold text-navy">Aurora</h3>
-                <p className="text-sm text-gray-600">Manufacturing and healthcare hub</p>
+                <h3 className="font-semibold text-navy">Indianapolis</h3>
+                <p className="text-sm text-gray-600">Healthcare and education hub</p>
               </motion.a>
-              
-              <motion.a 
+              <motion.a
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
                 viewport={{ once: true }}
-                href="/vending-leads/rockford-illinois" 
+                href="/vending-leads/columbus-ohio"
                 className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
               >
-                <h3 className="font-semibold text-navy">Rockford</h3>
-                <p className="text-sm text-gray-600">Manufacturing and aerospace center</p>
+                <h3 className="font-semibold text-navy">Columbus</h3>
+                <p className="text-sm text-gray-600">Government and healthcare center</p>
               </motion.a>
-              
-              <motion.a 
+              <motion.a
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
                 viewport={{ once: true }}
-                href="/vending-leads/springfield-illinois" 
+                href="/vending-leads/milwaukee-wisconsin"
                 className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
               >
-                <h3 className="font-semibold text-navy">Springfield</h3>
-                <p className="text-sm text-gray-600">State capital and government center</p>
-              </motion.a>
-              
-              <motion.a 
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                viewport={{ once: true }}
-                href="/vending-leads/peoria-illinois" 
-                className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
-              >
-                <h3 className="font-semibold text-navy">Peoria</h3>
+                <h3 className="font-semibold text-navy">Milwaukee</h3>
                 <p className="text-sm text-gray-600">Manufacturing and healthcare hub</p>
-              </motion.a>
-              
-              <motion.a 
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.5 }}
-                viewport={{ once: true }}
-                href="/vending-leads/normal-illinois" 
-                className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
-              >
-                <h3 className="font-semibold text-navy">Normal</h3>
-                <p className="text-sm text-gray-600">University town and education center</p>
-              </motion.a>
-              
-              <motion.a 
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.6 }}
-                viewport={{ once: true }}
-                href="/vending-leads/decatur-illinois" 
-                className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
-              >
-                <h3 className="font-semibold text-navy">Decatur</h3>
-                <p className="text-sm text-gray-600">Agriculture and manufacturing center</p>
               </motion.a>
             </div>
           </div>

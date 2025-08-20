@@ -362,77 +362,39 @@ export default function AugustaGeorgiaVendingLeadsPage() {
               Other Cities in Georgia
             </motion.h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
-              <motion.a 
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <motion.a
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.1 }}
                 viewport={{ once: true }}
-                href="/vending-leads/atlanta-georgia" 
+                href="/vending-leads/atlanta-georgia"
                 className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
               >
                 <h3 className="font-semibold text-navy">Atlanta</h3>
-                <p className="text-sm text-gray-600">Major business and entertainment hub</p>
+                <p className="text-sm text-gray-600">Entertainment and transportation hub</p>
               </motion.a>
-              
-              <motion.a 
+              <motion.a
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
                 viewport={{ once: true }}
-                href="/vending-leads/columbus-georgia" 
+                href="/vending-leads/savannah-georgia"
                 className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
               >
-                <h3 className="font-semibold text-navy">Columbus</h3>
-                <p className="text-sm text-gray-600">Manufacturing and military hub</p>
+                <h3 className="font-semibold text-navy">Savannah</h3>
+                <p className="text-sm text-gray-600">Historic port and tourism hub</p>
               </motion.a>
-              
-              <motion.a 
+              <motion.a
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
                 viewport={{ once: true }}
-                href="/vending-leads/savannah-georgia" 
+                href="/vending-leads/charlotte-north-carolina"
                 className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
               >
-                <h3 className="font-semibold text-navy">Savannah</h3>
-                <p className="text-sm text-gray-600">Port city and tourism center</p>
-              </motion.a>
-              
-              <motion.a 
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                viewport={{ once: true }}
-                href="/vending-leads/athens-georgia" 
-                className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
-              >
-                <h3 className="font-semibold text-navy">Athens</h3>
-                <p className="text-sm text-gray-600">University town and music hub</p>
-              </motion.a>
-              
-              <motion.a 
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.5 }}
-                viewport={{ once: true }}
-                href="/vending-leads/macon-georgia" 
-                className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
-              >
-                <h3 className="font-semibold text-navy">Macon</h3>
-                <p className="text-sm text-gray-600">Healthcare and education center</p>
-              </motion.a>
-              
-              <motion.a 
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.6 }}
-                viewport={{ once: true }}
-                href="/vending-leads/albany-georgia" 
-                className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
-              >
-                <h3 className="font-semibold text-navy">Albany</h3>
-                <p className="text-sm text-gray-600">Healthcare and manufacturing hub</p>
+                <h3 className="font-semibold text-navy">Charlotte</h3>
+                <p className="text-sm text-gray-600">Financial services and healthcare hub</p>
               </motion.a>
             </div>
           </div>

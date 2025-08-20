@@ -397,41 +397,39 @@ export default function SeattleWashingtonVendingLeadsPage() {
               Other Cities in Washington
             </motion.h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
-              <motion.a 
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              <motion.a
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.1 }}
                 viewport={{ once: true }}
-                href="/vending-leads/spokane-washington" 
+                href="/vending-leads/portland-oregon"
                 className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
               >
-                <h3 className="font-semibold text-navy">Spokane</h3>
-                <p className="text-sm text-gray-600">Healthcare and manufacturing hub</p>
+                <h3 className="font-semibold text-navy">Portland</h3>
+                <p className="text-sm text-gray-600">Technology and healthcare hub</p>
               </motion.a>
-              
-              <motion.a 
+              <motion.a
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
                 viewport={{ once: true }}
-                href="/vending-leads/tacoma-washington" 
+                href="/vending-leads/denver-colorado"
                 className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
               >
-                <h3 className="font-semibold text-navy">Tacoma</h3>
-                <p className="text-sm text-gray-600">Port and industrial center</p>
+                <h3 className="font-semibold text-navy">Denver</h3>
+                <p className="text-sm text-gray-600">Technology and outdoor recreation hub</p>
               </motion.a>
-              
-              <motion.a 
+              <motion.a
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
                 viewport={{ once: true }}
-                href="/vending-leads/vancouver-washington" 
+                href="/vending-leads/san-francisco-california"
                 className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
               >
-                <h3 className="font-semibold text-navy">Vancouver</h3>
-                <p className="text-sm text-gray-600">Technology and healthcare</p>
+                <h3 className="font-semibold text-navy">San Francisco</h3>
+                <p className="text-sm text-gray-600">Tech startups and financial services</p>
               </motion.a>
             </div>
           </div>
