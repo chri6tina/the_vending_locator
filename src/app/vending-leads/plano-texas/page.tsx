@@ -340,51 +340,7 @@ export default function PlanoTexasVendingLeadsPage() {
           </div>
         </div>
 
-        {/* Other Cities in Texas Section */}
-        <div className="bg-cream py-16 sm:py-20">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <motion.h2
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                className="text-3xl font-playfair font-bold text-chocolate mb-4"
-              >
-                Other Cities in Texas
-              </motion.h2>
-              <p className="text-lg text-chocolate/70 max-w-3xl mx-auto">
-                Explore vending machine opportunities in other Texas markets
-              </p>
-            </div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
-            >
-              {[
-                { name: 'Dallas', slug: 'dallas-texas', description: 'Major metropolitan hub' },
-                { name: 'Irving', slug: 'irving-texas', description: 'Corporate headquarters' },
-                { name: 'Fort Worth', slug: 'fort-worth-texas', description: 'Cultural district' },
-                { name: 'Houston', slug: 'houston-texas', description: 'Energy capital' },
-                { name: 'Austin', slug: 'austin-texas', description: 'Tech innovation center' },
-                { name: 'San Antonio', slug: 'san-antonio-texas', description: 'Military and tourism' },
-                { name: 'Arlington', slug: 'arlington-texas', description: 'Entertainment district' },
-                { name: 'Frisco', slug: 'frisco-texas', description: 'Fastest growing suburb' }
-              ].map((city, index) => (
-                <Link
-                  key={city.slug}
-                  href={`/vending-leads/${city.slug}`}
-                  className="bg-white p-4 rounded-lg border border-gray-200 hover:shadow-md transition-shadow"
-                >
-                  <h3 className="font-semibold text-chocolate">{city.name}</h3>
-                  <p className="text-sm text-chocolate/70">{city.description}</p>
-                </Link>
-              ))}
-            </motion.div>
-          </div>
-        </div>
       </div>
 
       <Footer />

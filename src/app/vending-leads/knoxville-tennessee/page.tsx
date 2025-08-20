@@ -340,51 +340,7 @@ export default function KnoxvilleTennesseeVendingLeadsPage() {
           </div>
         </div>
 
-        {/* Other Cities in Tennessee Section */}
-        <div className="bg-cream py-16 sm:py-20">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <motion.h2
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                className="text-3xl font-playfair font-bold text-chocolate mb-4"
-              >
-                Other Cities in Tennessee
-              </motion.h2>
-              <p className="text-lg text-chocolate/70 max-w-3xl mx-auto">
-                Explore vending machine opportunities in other Tennessee markets
-              </p>
-            </div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
-            >
-              {[
-                { name: 'Nashville', slug: 'nashville-tennessee', description: 'Music and healthcare hub' },
-                { name: 'Memphis', slug: 'memphis-tennessee', description: 'Transportation center' },
-                { name: 'Chattanooga', slug: 'chattanooga-tennessee', description: 'Tech innovation' },
-                { name: 'Clarksville', slug: 'clarksville-tennessee', description: 'Military base' },
-                { name: 'Murfreesboro', slug: 'murfreesboro-tennessee', description: 'University town' },
-                { name: 'Johnson City', slug: 'johnson-city-tennessee', description: 'Medical center' },
-                { name: 'Jackson', slug: 'jackson-tennessee', description: 'Healthcare hub' },
-                { name: 'Franklin', slug: 'franklin-tennessee', description: 'Business district' }
-              ].map((city, index) => (
-                <Link
-                  key={city.slug}
-                  href={`/vending-leads/${city.slug}`}
-                  className="bg-white p-4 rounded-lg border border-gray-200 hover:shadow-md transition-shadow"
-                >
-                  <h3 className="font-semibold text-chocolate">{city.name}</h3>
-                  <p className="text-sm text-chocolate/70">{city.description}</p>
-                </Link>
-              ))}
-            </motion.div>
-          </div>
-        </div>
       </div>
 
       <Footer />

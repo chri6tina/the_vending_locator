@@ -316,53 +316,7 @@ export default function MadisonWisconsinVendingLeadsPage() {
           </div>
         </div>
 
-        {/* Other Cities in Wisconsin Section */}
-        <div className="bg-warm-white py-16 sm:py-20">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <motion.h2
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                className="text-3xl font-playfair font-bold text-charcoal mb-4"
-              >
-                Other Cities in Wisconsin
-              </motion.h2>
-              <p className="text-lg text-stone max-w-3xl mx-auto">
-                Explore vending machine opportunities in other major Wisconsin cities.
-              </p>
-            </div>
-            <div className="flex flex-wrap justify-center gap-4">
-              {[
-                { name: 'Milwaukee', slug: 'milwaukee-wisconsin' },
-                { name: 'Green Bay', slug: 'green-bay-wisconsin' },
-                { name: 'Kenosha', slug: 'kenosha-wisconsin' },
-                { name: 'Racine', slug: 'racine-wisconsin' },
-                { name: 'Appleton', slug: 'appleton-wisconsin' },
-                { name: 'Waukesha', slug: 'waukesha-wisconsin' },
-                { name: 'Oshkosh', slug: 'oshkosh-wisconsin' },
-                { name: 'Eau Claire', slug: 'eau-claire-wisconsin' },
-                { name: 'Janesville', slug: 'janesville-wisconsin' },
-                { name: 'West Allis', slug: 'west-allis-wisconsin' },
-                { name: 'La Crosse', slug: 'la-crosse-wisconsin' },
-              ].map((city, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5, delay: index * 0.05 }}
-                >
-                  <Link
-                    href={`/vending-leads/${city.slug}`}
-                    className="btn-secondary px-6 py-3 rounded-lg text-base"
-                  >
-                    Vending Leads in {city.name}
-                  </Link>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </div>
+
 
         {/* Zip Code Modal Wrapper */}
         <ZipCodeModalWrapper />

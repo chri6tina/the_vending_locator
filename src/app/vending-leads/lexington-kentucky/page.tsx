@@ -316,53 +316,7 @@ export default function LexingtonKentuckyVendingLeadsPage() {
           </div>
         </div>
 
-        {/* Other Cities in Kentucky Section */}
-        <div className="bg-warm-white py-16 sm:py-20">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <motion.h2
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                className="text-3xl font-playfair font-bold text-charcoal mb-4"
-              >
-                Other Cities in Kentucky
-              </motion.h2>
-              <p className="text-lg text-stone max-w-3xl mx-auto">
-                Explore vending machine opportunities in other major Kentucky cities.
-              </p>
-            </div>
-            <div className="flex flex-wrap justify-center gap-4">
-              {[
-                { name: 'Louisville', slug: 'louisville-kentucky' },
-                { name: 'Bowling Green', slug: 'bowling-green-kentucky' },
-                { name: 'Owensboro', slug: 'owensboro-kentucky' },
-                { name: 'Covington', slug: 'covington-kentucky' },
-                { name: 'Richmond', slug: 'richmond-kentucky' },
-                { name: 'Georgetown', slug: 'georgetown-kentucky' },
-                { name: 'Florence', slug: 'florence-kentucky' },
-                { name: 'Elizabethtown', slug: 'elizabethtown-kentucky' },
-                { name: 'Nicholasville', slug: 'nicholasville-kentucky' },
-                { name: 'Henderson', slug: 'henderson-kentucky' },
-                { name: 'Hopkinsville', slug: 'hopkinsville-kentucky' },
-              ].map((city, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5, delay: index * 0.05 }}
-                >
-                  <Link
-                    href={`/vending-leads/${city.slug}`}
-                    className="btn-secondary px-6 py-3 rounded-lg text-base"
-                  >
-                    Vending Leads in {city.name}
-                  </Link>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </div>
+
 
         {/* Zip Code Modal Wrapper */}
         <ZipCodeModalWrapper />
