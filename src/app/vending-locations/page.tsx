@@ -10,63 +10,63 @@ const states = [
     name: 'Texas',
     slug: 'texas',
     cities: [
-      { name: 'Austin', slug: 'austin-tx' },
-      { name: 'Dallas', slug: 'dallas-tx' },
-      { name: 'Houston', slug: 'houston-tx' },
-      { name: 'San Antonio', slug: 'san-antonio-tx' },
+      { name: 'Austin', slug: 'austin-texas' },
+      { name: 'Dallas', slug: 'dallas-texas' },
+      { name: 'Houston', slug: 'houston-texas' },
+      { name: 'San Antonio', slug: 'san-antonio-texas' },
     ]
   },
   {
     name: 'Florida',
     slug: 'florida',
     cities: [
-      { name: 'Miami', slug: 'miami-fl' },
-      { name: 'Jacksonville', slug: 'jacksonville-fl' },
+      { name: 'Miami', slug: 'miami-florida' },
+      { name: 'Jacksonville', slug: 'jacksonville-florida' },
     ]
   },
   {
     name: 'California',
     slug: 'california',
     cities: [
-      { name: 'Los Angeles', slug: 'los-angeles-ca' },
-      { name: 'San Francisco', slug: 'san-francisco-ca' },
-      { name: 'San Diego', slug: 'san-diego-ca' },
-      { name: 'San Jose', slug: 'san-jose-ca' },
+      { name: 'Los Angeles', slug: 'los-angeles-california' },
+      { name: 'San Francisco', slug: 'san-francisco-california' },
+      { name: 'San Diego', slug: 'san-diego-california' },
+      { name: 'San Jose', slug: 'san-jose-california' },
     ]
   },
   {
     name: 'Illinois',
     slug: 'illinois',
     cities: [
-      { name: 'Chicago', slug: 'chicago-il' },
+      { name: 'Chicago', slug: 'chicago-illinois' },
     ]
   },
   {
     name: 'New York',
     slug: 'new-york',
     cities: [
-      { name: 'New York City', slug: 'new-york-ny' },
+      { name: 'New York City', slug: 'new-york-new-york' },
     ]
   },
   {
     name: 'Pennsylvania',
     slug: 'pennsylvania',
     cities: [
-      { name: 'Philadelphia', slug: 'philadelphia-pa' },
+      { name: 'Philadelphia', slug: 'philadelphia-pennsylvania' },
     ]
   },
   {
     name: 'Arizona',
     slug: 'arizona',
     cities: [
-      { name: 'Phoenix', slug: 'phoenix-az' },
+      { name: 'Phoenix', slug: 'phoenix-arizona' },
     ]
   },
   {
     name: 'Washington',
     slug: 'washington',
     cities: [
-      { name: 'Seattle', slug: 'seattle-wa' },
+      { name: 'Seattle', slug: 'seattle-washington' },
     ]
   }
 ]

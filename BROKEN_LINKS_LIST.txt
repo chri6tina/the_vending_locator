@@ -1,0 +1,72 @@
+BROKEN LINKS IN VENDING-LEADS PAGES
+====================================
+
+Total Broken Links: 55
+
+MARYLAND CITIES (3 missing):
+- gaithersburg-maryland
+- columbia-maryland  
+- silver-spring-maryland
+
+TEXAS CITIES (2 missing):
+- grand-prairie-texas
+- mansfield-texas
+
+ALABAMA CITIES (4 missing):
+- mobile-alabama
+- tuscaloosa-alabama
+- auburn-alabama
+- dothan-alabama
+
+IDAHO CITIES (6 missing):
+- meridian-idaho
+- nampa-idaho
+- idaho-falls-idaho
+- pocatello-idaho
+- coeur-dalene-idaho
+- twin-falls-idaho
+
+MASSACHUSETTS CITIES (2 missing):
+- cambridge-massachusetts
+- fall-river-massachusetts
+
+COLORADO CITIES (4 missing):
+- aurora-colorado
+- fort-collins-colorado
+- lakewood-colorado
+- arvada-colorado
+
+NORTH CAROLINA CITIES (4 missing):
+- winston-salem-north-carolina
+- durham-north-carolina
+- fayetteville-north-carolina
+- cary-north-carolina
+
+OHIO CITIES (3 missing):
+- akron-ohio
+- dayton-ohio
+- youngstown-ohio
+
+IOWA CITIES (6 missing):
+- cedar-rapids-iowa
+- davenport-iowa
+- sioux-city-iowa
+- waterloo-iowa
+- ames-iowa
+- iowa-city-iowa
+
+MICHIGAN CITIES (5 missing):
+- lansing-michigan
+- ann-arbor-michigan
+- flint-michigan
+- kalamazoo-michigan
+- saginaw-michigan
+
+OTHER MISSING CITIES (2 missing):
+- washington-dc
+- mesa-arizona
+
+PRIORITY ORDER:
+1. HIGH: Maryland, Colorado, Ohio cities (referenced in multiple files)
+2. MEDIUM: Washington DC, Texas cities  
+3. LOW: Single-reference cities in other states

@@ -9,63 +9,63 @@ const states = [
     name: 'Texas',
     slug: 'texas',
     cities: [
-      { name: 'Austin', slug: 'austin-tx', vendorCount: '150+', businessCount: '200+' },
-      { name: 'Dallas', slug: 'dallas-tx', vendorCount: '180+', businessCount: '250+' },
-      { name: 'Houston', slug: 'houston-tx', vendorCount: '200+', businessCount: '300+' },
-      { name: 'San Antonio', slug: 'san-antonio-tx', vendorCount: '120+', businessCount: '180+' },
+      { name: 'Austin', slug: 'austin-texas', vendorCount: '150+', businessCount: '200+' },
+      { name: 'Dallas', slug: 'dallas-texas', vendorCount: '180+', businessCount: '250+' },
+      { name: 'Houston', slug: 'houston-texas', vendorCount: '200+', businessCount: '300+' },
+      { name: 'San Antonio', slug: 'san-antonio-texas', vendorCount: '120+', businessCount: '180+' },
     ]
   },
   {
     name: 'Florida',
     slug: 'florida',
     cities: [
-      { name: 'Miami', slug: 'miami-fl', vendorCount: '160+', businessCount: '220+' },
-      { name: 'Jacksonville', slug: 'jacksonville-fl', vendorCount: '90+', businessCount: '140+' },
+      { name: 'Miami', slug: 'miami-florida', vendorCount: '160+', businessCount: '220+' },
+      { name: 'Jacksonville', slug: 'jacksonville-florida', vendorCount: '90+', businessCount: '140+' },
     ]
   },
   {
     name: 'California',
     slug: 'california',
     cities: [
-      { name: 'Los Angeles', slug: 'los-angeles-ca', vendorCount: '250+', businessCount: '400+' },
-      { name: 'San Francisco', slug: 'san-francisco-ca', vendorCount: '180+', businessCount: '280+' },
-      { name: 'San Diego', slug: 'san-diego-ca', vendorCount: '140+', businessCount: '220+' },
-      { name: 'San Jose', slug: 'san-jose-ca', vendorCount: '120+', businessCount: '200+' },
+      { name: 'Los Angeles', slug: 'los-angeles-california', vendorCount: '250+', businessCount: '400+' },
+      { name: 'San Francisco', slug: 'san-francisco-california', vendorCount: '180+', businessCount: '280+' },
+      { name: 'San Diego', slug: 'san-diego-california', vendorCount: '140+', businessCount: '220+' },
+      { name: 'San Jose', slug: 'san-jose-california', vendorCount: '120+', businessCount: '200+' },
     ]
   },
   {
     name: 'Illinois',
     slug: 'illinois',
     cities: [
-      { name: 'Chicago', slug: 'chicago-il', vendorCount: '220+', businessCount: '350+' },
+      { name: 'Chicago', slug: 'chicago-illinois', vendorCount: '220+', businessCount: '350+' },
     ]
   },
   {
     name: 'New York',
     slug: 'new-york',
     cities: [
-      { name: 'New York City', slug: 'new-york-ny', vendorCount: '300+', businessCount: '500+' },
+      { name: 'New York City', slug: 'new-york-new-york', vendorCount: '300+', businessCount: '500+' },
     ]
   },
   {
     name: 'Pennsylvania',
     slug: 'pennsylvania',
     cities: [
-      { name: 'Philadelphia', slug: 'philadelphia-pa', vendorCount: '140+', businessCount: '220+' },
+      { name: 'Philadelphia', slug: 'philadelphia-pennsylvania', vendorCount: '140+', businessCount: '220+' },
     ]
   },
   {
     name: 'Arizona',
     slug: 'arizona',
     cities: [
-      { name: 'Phoenix', slug: 'phoenix-az', vendorCount: '110+', businessCount: '180+' },
+      { name: 'Phoenix', slug: 'phoenix-arizona', vendorCount: '110+', businessCount: '180+' },
     ]
   },
   {
     name: 'Washington',
     slug: 'washington',
     cities: [
-      { name: 'Seattle', slug: 'seattle-wa', vendorCount: '130+', businessCount: '200+' },
+      { name: 'Seattle', slug: 'seattle-washington', vendorCount: '130+', businessCount: '200+' },
     ]
   }
 ]
