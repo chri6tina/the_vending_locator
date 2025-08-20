@@ -204,28 +204,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: 'https://www.thevendinglocator.com/vending-leads/mesa-arizona', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
   ]
 
-  // Location pages (different from vending-leads)
-  const locationPages = [
-    { url: 'https://www.thevendinglocator.com/location', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.7 },
-    { url: 'https://www.thevendinglocator.com/location/austin-tx', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.7 },
-    { url: 'https://www.thevendinglocator.com/location/dallas-tx', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.7 },
-    { url: 'https://www.thevendinglocator.com/location/houston-tx', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.7 },
-    { url: 'https://www.thevendinglocator.com/location/san-antonio-tx', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.7 },
-    { url: 'https://www.thevendinglocator.com/location/los-angeles-ca', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.7 },
-    { url: 'https://www.thevendinglocator.com/location/san-diego-ca', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.7 },
-    { url: 'https://www.thevendinglocator.com/location/san-francisco-ca', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.7 },
-    { url: 'https://www.thevendinglocator.com/location/san-jose-ca', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.7 },
-    { url: 'https://www.thevendinglocator.com/location/miami-fl', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.7 },
-    { url: 'https://www.thevendinglocator.com/location/jacksonville-fl', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.7 },
-    { url: 'https://www.thevendinglocator.com/location/chicago-il', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.7 },
-    { url: 'https://www.thevendinglocator.com/location/new-york-ny', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.7 },
-    { url: 'https://www.thevendinglocator.com/location/philadelphia-pa', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.7 },
-    { url: 'https://www.thevendinglocator.com/location/phoenix-az', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.7 },
-    { url: 'https://www.thevendinglocator.com/location/seattle-wa', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.7 },
-    { url: 'https://www.thevendinglocator.com/location/texas.html', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.7 },
-    { url: 'https://www.thevendinglocator.com/location/florida.html', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.7 },
-    { url: 'https://www.thevendinglocator.com/location/california.html', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.7 },
-  ]
+
 
   // Blog posts
   const blogPosts = [
@@ -250,7 +229,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...mainPages,
     ...statePages,
     ...cityPages,
-    ...locationPages,
     ...blogPosts,
     ...vendingCompanyPages,
     ...checkoutPages,
