@@ -384,58 +384,7 @@ export default function AustinTexasVendingLeadsPage() {
           </div>
         </section>
 
-        {/* Other Cities in Texas */}
-        <section className="py-16 bg-white">
-          <div className="container mx-auto px-4">
-            <motion.h2 
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-              className="text-3xl font-bold text-center mb-12 text-navy"
-            >
-              Other Cities in Texas
-            </motion.h2>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
-              <motion.a 
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.1 }}
-                viewport={{ once: true }}
-                href="/vending-leads/houston-texas" 
-                className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
-              >
-                <h3 className="font-semibold text-navy">Houston</h3>
-                <p className="text-sm text-gray-600">Energy and healthcare hub</p>
-              </motion.a>
-              
-              <motion.a 
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                viewport={{ once: true }}
-                href="/vending-leads/dallas-texas" 
-                className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
-              >
-                <h3 className="font-semibold text-navy">Dallas</h3>
-                <p className="text-sm text-gray-600">Business and technology center</p>
-              </motion.a>
-              
-              <motion.a 
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.3 }}
-                viewport={{ once: true }}
-                href="/vending-leads/san-antonio-texas" 
-                className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
-              >
-                <h3 className="font-semibold text-navy">San Antonio</h3>
-                <p className="text-sm text-gray-600">Tourism and military presence</p>
-              </motion.a>
-            </div>
-          </div>
-        </section>
+
       </div>
       
       <Footer />
