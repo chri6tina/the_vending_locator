@@ -3,249 +3,183 @@
 import Link from 'next/link'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import { MapPinIcon, BuildingStorefrontIcon, UserGroupIcon } from '@heroicons/react/24/outline'
-
-const states = [
-  {
-    name: 'Texas',
-    slug: 'texas',
-    cities: [
-      { name: 'Austin', slug: 'austin-texas' },
-      { name: 'Dallas', slug: 'dallas-texas' },
-      { name: 'Houston', slug: 'houston-texas' },
-      { name: 'San Antonio', slug: 'san-antonio-texas' },
-    ]
-  },
-  {
-    name: 'Florida',
-    slug: 'florida',
-    cities: [
-      { name: 'Miami', slug: 'miami-florida' },
-      { name: 'Jacksonville', slug: 'jacksonville-florida' },
-    ]
-  },
-  {
-    name: 'California',
-    slug: 'california',
-    cities: [
-      { name: 'Los Angeles', slug: 'los-angeles-california' },
-      { name: 'San Francisco', slug: 'san-francisco-california' },
-      { name: 'San Diego', slug: 'san-diego-california' },
-      { name: 'San Jose', slug: 'san-jose-california' },
-    ]
-  },
-  {
-    name: 'Illinois',
-    slug: 'illinois',
-    cities: [
-      { name: 'Chicago', slug: 'chicago-illinois' },
-    ]
-  },
-  {
-    name: 'New York',
-    slug: 'new-york',
-    cities: [
-      { name: 'New York City', slug: 'new-york-new-york' },
-    ]
-  },
-  {
-    name: 'Pennsylvania',
-    slug: 'pennsylvania',
-    cities: [
-      { name: 'Philadelphia', slug: 'philadelphia-pennsylvania' },
-    ]
-  },
-  {
-    name: 'Arizona',
-    slug: 'arizona',
-    cities: [
-      { name: 'Phoenix', slug: 'phoenix-arizona' },
-    ]
-  },
-  {
-    name: 'Washington',
-    slug: 'washington',
-    cities: [
-      { name: 'Seattle', slug: 'seattle-washington' },
-    ]
-  }
-]
+import { motion } from 'framer-motion'
 
 export default function VendingLocationsPage() {
   return (
-    <div className="min-h-screen bg-cream">
+    <>
       <Header />
       
-      {/* Header */}
-      <div className="bg-white border-b border-gray-200">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
-          <div className="text-center">
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-playfair font-bold tracking-tight text-charcoal">
-              Vending Machine Locations Directory
-            </h1>
-            <p className="mt-4 sm:mt-6 text-lg sm:text-xl text-stone max-w-3xl mx-auto">
-              Find vending machine leads or connect with businesses looking for vending companies in your area
-            </p>
-          </div>
-        </div>
-      </div>
-
-      {/* Service Types */}
-      <div className="bg-warm-white py-16 sm:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-2xl sm:text-3xl font-playfair font-bold text-charcoal mb-4">
-              Choose Your Service
-            </h2>
-            <p className="text-lg text-stone max-w-2xl mx-auto">
-              Whether you're a vending operator looking for leads or a business seeking vending companies, we've got you covered
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {/* For Vendors */}
-            <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg border border-gray-200">
-              <div className="text-center mb-6">
-                <BuildingStorefrontIcon className="h-16 w-16 text-navy mx-auto mb-4" />
-                <h3 className="text-xl sm:text-2xl font-bold text-charcoal mb-2">
-                  For Vending Operators
-                </h3>
-                <p className="text-stone">
-                  Find qualified vending machine leads in your target area
-                </p>
+      <div className="min-h-screen bg-gradient-to-br from-warm-white via-cream to-warm-white">
+        {/* Hero Section */}
+        <section className="relative py-20 bg-gradient-to-r from-navy to-charcoal text-white overflow-hidden">
+          <div className="absolute inset-0 bg-black/20"></div>
+          <div className="relative container mx-auto px-4 text-center">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              <h1 className="text-4xl md:text-6xl font-playfair font-bold mb-6">
+                Vending Machine<br />
+                <span className="text-coral">Locations</span>
+              </h1>
+              <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto text-gray-200">
+                Find the perfect locations for your vending machines across the United States
+              </p>
+              
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link
+                  href="/vending-leads"
+                  className="bg-coral hover:bg-coral/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-200"
+                >
+                  Browse All Locations
+                </Link>
+                <Link
+                  href="/contact"
+                  className="bg-transparent border-2 border-white hover:bg-white hover:text-navy text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-200"
+                >
+                  Get Help
+                </Link>
               </div>
-              <ul className="text-sm text-stone space-y-2 mb-6">
-                <li>• Pre-qualified business locations</li>
-                <li>• Contact information for decision makers</li>
-                <li>• Location research and analysis</li>
-                <li>• Contract templates and scripts</li>
-              </ul>
+            </motion.div>
+          </div>
+        </section>
+
+        {/* Content Section */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="text-center mb-12"
+            >
+              <h2 className="text-3xl md:text-4xl font-playfair font-bold text-charcoal mb-4">
+                Find Your Perfect Vending Locations
+              </h2>
+              <p className="text-lg text-stone max-w-3xl mx-auto">
+                Access our comprehensive database of vending machine locations across the United States. 
+                From office buildings to healthcare facilities, find the locations that match your business needs.
+              </p>
+            </motion.div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.1 }}
+                viewport={{ once: true }}
+                className="bg-warm-white p-6 rounded-lg shadow-sm border border-gray-100"
+              >
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
+                <p className="text-stone mb-4">Corporate headquarters, professional offices, and business centers with high employee density.</p>
+                <Link href="/vending-leads" className="text-coral hover:text-coral/80 font-semibold">
+                  Browse Office Locations →
+                </Link>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="bg-warm-white p-6 rounded-lg shadow-sm border border-gray-100"
+              >
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare Facilities</h3>
+                <p className="text-stone mb-4">Hospitals, medical centers, and healthcare offices with 24/7 operations.</p>
+                <Link href="/vending-leads" className="text-coral hover:text-coral/80 font-semibold">
+                  Browse Healthcare Locations →
+                </Link>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="bg-warm-white p-6 rounded-lg shadow-sm border border-gray-100"
+              >
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing & Industrial</h3>
+                <p className="text-stone mb-4">Manufacturing plants, warehouses, and industrial facilities with shift workers.</p>
+                <Link href="/vending-leads" className="text-coral hover:text-coral/80 font-semibold">
+                  Browse Industrial Locations →
+                </Link>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                viewport={{ once: true }}
+                className="bg-warm-white p-6 rounded-lg shadow-sm border border-gray-100"
+              >
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Educational Institutions</h3>
+                <p className="text-stone mb-4">Universities, colleges, and schools with large student populations.</p>
+                <Link href="/vending-leads" className="text-coral hover:text-coral/80 font-semibold">
+                  Browse Educational Locations →
+                </Link>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.5 }}
+                viewport={{ once: true }}
+                className="bg-warm-white p-6 rounded-lg shadow-sm border border-gray-100"
+              >
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Retail & Shopping Centers</h3>
+                <p className="text-stone mb-4">Malls, shopping centers, and retail establishments with high customer traffic.</p>
+                <Link href="/vending-leads" className="text-coral hover:text-coral/80 font-semibold">
+                  Browse Retail Locations →
+                </Link>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+                viewport={{ once: true }}
+                className="bg-warm-white p-6 rounded-lg shadow-sm border border-gray-100"
+              >
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Government & Municipal</h3>
+                <p className="text-stone mb-4">City offices, courthouses, and government buildings with stable operations.</p>
+                <Link href="/vending-leads" className="text-coral hover:text-coral/80 font-semibold">
+                  Browse Government Locations →
+                </Link>
+              </motion.div>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA Section */}
+        <section className="py-16 bg-gradient-to-r from-navy to-charcoal text-white">
+          <div className="container mx-auto px-4 text-center">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="text-3xl md:text-4xl font-playfair font-bold mb-6">
+                Ready to Find Your Perfect Locations?
+              </h2>
+              <p className="text-xl mb-8 max-w-2xl mx-auto text-gray-200">
+                Access our comprehensive database of vending machine locations and start growing your business today.
+              </p>
               <Link
-                href="/pricing"
-                className="w-full bg-navy text-white py-3 px-6 rounded-lg font-semibold hover:bg-navy-light transition-colors text-center block"
+                href="/vending-leads"
+                className="bg-coral hover:bg-coral/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-200"
               >
-                Get Vending Machine Leads
+                Start Browsing Locations
               </Link>
-            </div>
-
-            {/* For Businesses */}
-            <div className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg border border-gray-200">
-              <div className="text-center mb-6">
-                <UserGroupIcon className="h-16 w-16 text-coral mx-auto mb-4" />
-                <h3 className="text-xl sm:text-2xl font-bold text-charcoal mb-2">
-                  For Businesses
-                </h3>
-                <p className="text-stone">
-                  Find reliable vending machine companies for your location
-                </p>
-              </div>
-              <ul className="text-sm text-stone space-y-2 mb-6">
-                <li>• Verified vending machine companies</li>
-                <li>• Machine variety and options</li>
-                <li>• Revenue sharing opportunities</li>
-                <li>• Professional service providers</li>
-              </ul>
-              <div className="bg-gray-50 rounded-lg p-4 text-center">
-                <p className="text-sm text-stone font-medium">
-                  Coming Soon - Vending Company Directory
-                </p>
-                <p className="text-xs text-stone/70 mt-1">
-                  We're building a directory to connect businesses with vending companies
-                </p>
-              </div>
-            </div>
+            </motion.div>
           </div>
-        </div>
-      </div>
-
-      {/* States Directory */}
-      <div className="bg-white py-16 sm:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-2xl sm:text-3xl font-playfair font-bold text-charcoal mb-4">
-              Browse Vending Locations by State
-            </h2>
-            <p className="text-lg text-stone max-w-2xl mx-auto">
-              Select your state to find vending machine leads and business opportunities
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {states.map((state, stateIdx) => (
-              <div
-                key={state.slug}
-                className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl hover:border-navy/20 transition-all duration-300"
-              >
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="p-2 bg-navy/10 rounded-lg">
-                    <MapPinIcon className="h-6 w-6 text-navy" />
-                  </div>
-                  <h3 className="text-xl font-bold text-charcoal">{state.name}</h3>
-                </div>
-                
-                <div className="space-y-3 mb-6">
-                  {state.cities.map((city) => (
-                    <div key={city.slug}>
-                      {/* Vending Leads Link */}
-                      <Link
-                        href={`/vending-leads/${city.slug}`}
-                        className="block p-4 bg-gradient-to-r from-navy/5 to-navy/10 rounded-xl hover:from-navy/10 hover:to-navy/15 transition-all duration-300 border border-navy/20 hover:border-navy/30 group"
-                      >
-                        <div className="flex items-center justify-between">
-                          <span className="font-semibold text-charcoal group-hover:text-navy transition-colors">
-                            {city.name} Vending Leads
-                          </span>
-                          <div className="w-2 h-2 bg-navy rounded-full group-hover:scale-125 transition-transform"></div>
-                        </div>
-                      </Link>
-                    </div>
-                  ))}
-                </div>
-
-                <div className="pt-4 border-t border-gray-100">
-                  <Link
-                    href={`/vending-leads/${state.slug}`}
-                    className="inline-flex items-center gap-2 text-navy hover:text-navy-light font-semibold hover:underline transition-colors"
-                  >
-                    View all {state.name} locations
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                    </svg>
-                  </Link>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* CTA Section */}
-      <div className="bg-navy py-16 sm:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-2xl sm:text-3xl font-playfair font-bold text-white mb-4">
-            Ready to Find Your Next Vending Machine Location?
-          </h2>
-          <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
-            Get started with our vending machine leads service and find qualified businesses in your target area
-          </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link
-              href="/pricing"
-              className="bg-coral hover:bg-coral/90 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
-            >
-              View Vending Leads Pricing
-            </Link>
-            <Link
-              href="/contact"
-              className="text-white hover:text-coral transition-colors font-medium"
-            >
-              Contact Sales
-            </Link>
-          </div>
-        </div>
+        </section>
       </div>
       
       <Footer />
-    </div>
+    </>
   )
 }
