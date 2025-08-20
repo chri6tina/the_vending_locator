@@ -9,21 +9,21 @@ import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, SunIcon } from '@heroicons/react/24/solid'
+import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CpuChipIcon, TruckIcon, FilmIcon, SunIcon, BeakerIcon, SparklesIcon, HeartIcon, CloudIcon } from '@heroicons/react/24/solid'
 
 export default function PhoenixArizonaVendingLeadsPage() {
   const [activeUsers, setActiveUsers] = useState(0)
   const [userNames, setUserNames] = useState([
-    'Mike from Phoenix', 'Sarah in Scottsdale', 'David from Tempe', 'Lisa in Mesa',
-    'Tom in Chandler', 'Jennifer in Gilbert', 'Robert from Glendale', 'Amanda in Peoria',
-    'Chris in Surprise', 'Maria in Avondale', 'James in Goodyear', 'Emily in Buckeye'
+    'Tom from Phoenix', 'Sarah from Tucson', 'Mike from Mesa', 'Lisa from Chandler',
+    'David from Scottsdale', 'Jennifer from Glendale', 'Robert from Gilbert', 'Amanda from Tempe',
+    'Chris from Peoria', 'Maria from Surprise', 'James from Avondale', 'Emily from Goodyear'
   ])
   const [currentUserIndex, setCurrentUserIndex] = useState(0)
 
   // Fluctuating active users counter
   useEffect(() => {
     const updateActiveUsers = () => {
-      const baseUsers = 7
+      const baseUsers = 8
       const fluctuation = Math.floor(Math.random() * 3) + 1
       setActiveUsers(baseUsers + fluctuation)
     }
@@ -64,7 +64,7 @@ export default function PhoenixArizonaVendingLeadsPage() {
                 <div className="flex items-center justify-center gap-3">
                   <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
                   <span className="text-sm font-medium text-chocolate">
-                    <span className="font-bold text-coral">{activeUsers}</span> Phoenix vendors are choosing plans right now
+                    <span className="font-bold text-coral">{activeUsers}</span> Arizona vendors are choosing plans right now
                   </span>
                 </div>
                 <div
@@ -74,7 +74,7 @@ export default function PhoenixArizonaVendingLeadsPage() {
                   Including {userNames[currentUserIndex]}
                 </div>
               </motion.div>
-
+              
               <motion.h1
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -99,24 +99,25 @@ export default function PhoenixArizonaVendingLeadsPage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.6 }}
-                className="mt-8 sm:mt-10 flex flex-wrap justify-center gap-4 sm:gap-6"
+                className="mt-8 sm:mt-10 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6"
               >
-                <div className="flex items-center gap-2 text-sm text-stone">
-                  <CheckBadgeIcon className="h-5 w-5 text-green-600" />
-                  <span>180+ Verified Locations</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-stone">
-                  <StarIcon className="h-5 w-5 text-yellow-500" />
-                  <span>4.8/5 Rating</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-stone">
-                  <ShieldCheckIcon className="h-5 w-5 text-blue-600" />
-                  <span>45,000+ Businesses</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-stone">
-                  <ClockIcon className="h-5 w-5 text-purple-600" />
-                  <span>5 Major Industries</span>
-                </div>
+                {[
+                  { icon: CheckBadgeIcon, text: '100+ Verified Locations' },
+                  { icon: StarIcon, text: '24/7 Support' },
+                  { icon: ShieldCheckIcon, text: 'Money-Back Guarantee' },
+                  { icon: ClockIcon, text: 'Instant Access' }
+                ].map((signal, index) => (
+                  <motion.div
+                    key={signal.text}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 0.6 + index * 0.1 }}
+                    className="flex flex-col items-center text-center"
+                  >
+                    <signal.icon className="w-8 h-8 text-coral mb-2" />
+                    <span className="text-sm font-medium text-chocolate">{signal.text}</span>
+                  </motion.div>
+                ))}
               </motion.div>
 
               {/* CTA Buttons */}
@@ -124,190 +125,115 @@ export default function PhoenixArizonaVendingLeadsPage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.8 }}
-                className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
+                className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6"
               >
-                <a
+                <Link
                   href="#pricing"
-                  className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors"
+                  className="w-full sm:w-auto bg-coral hover:bg-coral/90 text-white px-8 py-4 rounded-lg font-semibold transition-colors text-lg"
                 >
-                  View Pricing Plans
-                </a>
-                <a
-                  href="#hot-leads"
-                  className="w-full sm:w-auto bg-transparent text-chocolate border-2 border-chocolate px-8 py-3 rounded-lg font-semibold hover:bg-chocolate hover:text-white transition-colors"
+                  Get Phoenix Leads
+                </Link>
+                <Link
+                  href="#learn-more"
+                  className="w-full sm:w-auto text-lg font-semibold leading-6 text-charcoal hover:text-navy transition-colors text-center py-4"
                 >
-                  Get Hot Leads
-                </a>
+                  Learn About Phoenix <span aria-hidden="true">→</span>
+                </Link>
               </motion.div>
             </div>
           </div>
         </div>
 
-        {/* Pricing Section - Moved to be immediately after hero for maximum prominence */}
-        <section id="pricing" className="bg-white py-16 sm:py-20 lg:py-24">
+        {/* Pricing Table Section */}
+        <div id="pricing" className="bg-white py-16 sm:py-20 lg:py-24">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-              className="text-center mb-12 sm:mb-16"
-            >
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-playfair font-bold tracking-tight text-charcoal mb-6">
-                Choose Your Plan
+            <div className="mx-auto max-w-4xl text-center mb-12 sm:mb-16">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-playfair font-bold tracking-tight text-chocolate mb-6">
+                Get Phoenix Vending Machine Leads
               </h2>
-              <p className="text-lg sm:text-xl text-stone leading-relaxed max-w-3xl mx-auto">
-                Get access to qualified vending machine locations in Phoenix with flexible pricing options. 
-                No long-term contracts, just results that help you grow your business.
+              <p className="text-lg sm:text-xl text-chocolate/70 leading-relaxed max-w-3xl mx-auto">
+                Access our comprehensive database of qualified Phoenix vending machine locations with flexible pricing options. 
+                No long-term contracts, just results that help you grow your Phoenix vending business.
               </p>
-            </motion.div>
+            </div>
             <PricingTable />
           </div>
-        </section>
+        </div>
 
         {/* Business Landscape Section */}
-        <section className="bg-warm-white py-16 sm:py-20">
+        <section id="learn-more" className="py-16 bg-warm-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-              className="text-center mb-12"
+              className="text-center mb-16"
             >
-              <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
-                Phoenix Business Landscape
+              <h2 className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal">
+                Phoenix's Business Landscape
               </h2>
-              <p className="text-lg text-stone max-w-3xl mx-auto">
-                Phoenix is Arizona's capital and largest city, offering diverse vending opportunities across multiple thriving industries.
+              <p className="mt-4 text-lg text-stone max-w-2xl mx-auto">
+                Discover the diverse industries and opportunities that make Phoenix perfect for vending machine placement.
               </p>
             </motion.div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.1 }}
-                viewport={{ once: true }}
-                className="bg-warm-white p-6 rounded-xl text-center"
-              >
-                <BuildingOfficeIcon className="h-12 w-12 text-navy mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Technology</h3>
-                <p className="text-stone">Major tech companies, startups, and innovation hubs with high employee density.</p>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                viewport={{ once: true }}
-                className="bg-warm-white p-6 rounded-xl text-center"
-              >
-                <AcademicCapIcon className="h-12 w-12 text-navy mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Healthcare</h3>
-                <p className="text-stone">Hospitals, medical centers, and healthcare facilities with 24/7 operations.</p>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.3 }}
-                viewport={{ once: true }}
-                className="bg-warm-white p-6 rounded-xl text-center"
-              >
-                <UsersIcon className="h-12 w-12 text-navy mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Manufacturing</h3>
-                <p className="text-stone">Industrial facilities, aerospace companies, and manufacturing operations with shift workers.</p>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                viewport={{ once: true }}
-                className="bg-warm-white p-6 rounded-xl text-center"
-              >
-                <SunIcon className="h-12 w-12 text-navy mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Tourism</h3>
-                <p className="text-stone">Hotels, resorts, golf courses, and tourist destinations with high visitor traffic.</p>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.5 }}
-                viewport={{ once: true }}
-                className="bg-warm-white p-6 rounded-xl text-center"
-              >
-                <MapPinIcon className="h-12 w-12 text-navy mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Financial Services</h3>
-                <p className="text-stone">Banks, investment firms, and financial institutions with professional staff.</p>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.6 }}
-                viewport={{ once: true }}
-                className="bg-warm-white p-6 rounded-xl text-center"
-              >
-                <BuildingOfficeIcon className="h-12 w-12 text-navy mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Education</h3>
-                <p className="text-stone">Universities, colleges, and educational institutions with students and staff.</p>
-              </motion.div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {[
+                { icon: CpuChipIcon, title: 'Technology & Innovation', description: 'Growing tech sector and innovation companies' },
+                { icon: HeartIcon, title: 'Healthcare & Medical', description: 'Hospitals, medical centers, and healthcare facilities' },
+                { icon: BuildingOfficeIcon, title: 'Corporate & Finance', description: 'Fortune 500 companies and financial institutions' },
+                { icon: AcademicCapIcon, title: 'Education & Research', description: 'Universities, colleges, and research institutions' },
+                { icon: UsersIcon, title: 'Office & Professional Services', description: 'Corporate offices, professional services, and business centers' },
+                { icon: TruckIcon, title: 'Logistics & Transportation', description: 'Distribution centers and transportation companies' }
+              ].map((industry, index) => (
+                <motion.div
+                  key={industry.title}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: index * 0.1 }}
+                  className="bg-white p-6 rounded-lg shadow-sm border border-gray-100 text-center"
+                >
+                  <industry.icon className="w-12 h-12 text-coral mx-auto mb-4" />
+                  <h3 className="text-lg font-semibold text-charcoal mb-2">{industry.title}</h3>
+                  <p className="text-stone text-sm leading-relaxed">{industry.description}</p>
+                </motion.div>
+              ))}
             </div>
           </div>
         </section>
 
         {/* City Stats Section */}
-        <section className="bg-white py-16 sm:py-20">
+        <section className="py-16 bg-cream/10">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
               className="text-center mb-12"
             >
-              <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
-                Phoenix by the Numbers
+              <h2 className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal">
+                Phoenix at a Glance
               </h2>
-              <p className="text-lg text-stone max-w-3xl mx-auto">
-                Key statistics that make Phoenix an excellent market for vending machine placement.
-              </p>
             </motion.div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.1 }}
-                viewport={{ once: true }}
-                className="text-center"
-              >
-                <div className="text-4xl font-bold text-navy mb-2">1,644,409</div>
-                <div className="text-gray-600">Population</div>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                viewport={{ once: true }}
-                className="text-center"
-              >
-                <div className="text-4xl font-bold text-navy mb-2">45,000+</div>
-                <div className="text-gray-600">Businesses</div>
-              </motion.div>
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.3 }}
-                viewport={{ once: true }}
-                className="text-center"
-              >
-                <div className="text-4xl font-bold text-navy mb-2">5</div>
-                <div className="text-gray-600">Major Industries</div>
-              </motion.div>
+              {[
+                { label: 'Population', value: '1.6M+', description: 'Largest city in Arizona' },
+                { label: 'Businesses', value: '45,000+', description: 'Diverse business ecosystem' },
+                { label: 'Major Industries', value: '6+', description: 'Technology, healthcare, finance, education, office, logistics' }
+              ].map((stat, index) => (
+                <motion.div
+                  key={stat.label}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: index * 0.1 }}
+                  className="bg-white p-6 rounded-lg shadow-sm border border-gray-100 text-center"
+                >
+                  <div className="text-3xl font-bold text-coral mb-2">{stat.value}</div>
+                  <div className="text-lg font-semibold text-charcoal mb-2">{stat.label}</div>
+                  <p className="text-stone text-sm">{stat.description}</p>
+                </motion.div>
+              ))}
             </div>
           </div>
         </section>
@@ -319,128 +245,100 @@ export default function PhoenixArizonaVendingLeadsPage() {
         <VendingCourse />
 
         {/* FAQ Section */}
-        <section className="py-16 bg-gray-50">
-          <div className="container mx-auto px-4">
-            <motion.h2 
+        <section className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-              className="text-3xl font-bold text-center mb-12 text-navy"
+              className="text-center mb-12"
             >
-              Frequently Asked Questions
-            </motion.h2>
-            
-            <div className="max-w-4xl mx-auto space-y-6">
-              <motion.div 
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.1 }}
-                viewport={{ once: true }}
-                className="bg-white p-6 rounded-lg shadow-sm"
-              >
-                <h3 className="text-xl font-semibold mb-3 text-navy">
-                  What types of businesses are best for vending machines in Phoenix?
-                </h3>
-                <p className="text-gray-600">
-                  Phoenix offers diverse opportunities including tech companies, healthcare facilities, office buildings, 
-                  manufacturing plants, and tourist destinations. The growing technology sector and major healthcare industry 
-                  provide excellent placement opportunities.
-                </p>
-              </motion.div>
-              
-              <motion.div 
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                viewport={{ once: true }}
-                className="bg-white p-6 rounded-lg shadow-sm"
-              >
-                <h3 className="text-xl font-semibold mb-3 text-navy">
-                  How competitive is the vending machine market in Phoenix?
-                </h3>
-                <p className="text-gray-600">
-                  Phoenix has a growing vending presence, but there's still significant opportunity 
-                  for expansion, especially in new business developments and emerging neighborhoods.
-                </p>
-              </motion.div>
-              
-              <motion.div 
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.3 }}
-                viewport={{ once: true }}
-                className="bg-white p-6 rounded-lg shadow-sm"
-              >
-                <h3 className="text-xl font-semibold mb-3 text-navy">
-                  What are the peak business hours for vending in Phoenix?
-                </h3>
-                <p className="text-gray-600">
-                  Phoenix businesses typically operate from 7 AM to 6 PM, with peak vending activity 
-                  during lunch hours (12 PM - 2 PM) and afternoon breaks (3 PM - 4 PM).
-                </p>
-              </motion.div>
+              <h2 className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal">
+                Frequently Asked Questions
+              </h2>
+            </motion.div>
+
+            <div className="space-y-6">
+              {[
+                {
+                  question: "What types of businesses are available for vending machine placement in Phoenix?",
+                  answer: "Phoenix offers diverse opportunities including technology companies, healthcare facilities, corporate headquarters, educational campuses, professional services, and logistics companies. Our leads cover all major industries across the city."
+                },
+                {
+                  question: "How quickly can I start placing vending machines in Phoenix?",
+                  answer: "With our verified leads, you can start contacting businesses within 24 hours of purchase. Each lead includes detailed contact information and business details to streamline your outreach process."
+                },
+                {
+                  question: "Are the Phoenix leads pre-qualified for vending machine placement?",
+                  answer: "Yes, all our Phoenix leads are pre-qualified businesses that have shown interest in vending machine services or have suitable locations for placement."
+                },
+                {
+                  question: "What support do you provide for Phoenix vending machine placement?",
+                  answer: "We provide comprehensive support including lead verification, business contact information, placement guidance, and ongoing assistance to ensure successful vending machine placement across Phoenix."
+                }
+              ].map((faq, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: index * 0.1 }}
+                  className="bg-white p-6 rounded-lg shadow-sm border border-gray-100"
+                >
+                  <h3 className="text-lg font-semibold text-charcoal mb-3">{faq.question}</h3>
+                  <p className="text-stone leading-relaxed">{faq.answer}</p>
+                </motion.div>
+              ))}
             </div>
           </div>
         </section>
 
-        {/* Other Cities in Arizona */}
-        <section className="py-16 bg-white">
-          <div className="container mx-auto px-4">
-            <motion.h2 
+        {/* Other Cities in Arizona Section */}
+        <section className="py-16 bg-cream/10">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              viewport={{ once: true }}
-              className="text-3xl font-bold text-center mb-12 text-navy"
+              className="text-center mb-12"
             >
-              Other Cities in Arizona
-            </motion.h2>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
-              <motion.a 
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.1 }}
-                viewport={{ once: true }}
-                href="/vending-leads/tucson-arizona" 
-                className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
-              >
-                <h3 className="font-semibold text-navy">Tucson</h3>
-                <p className="text-sm text-gray-600">University town and aerospace hub</p>
-              </motion.a>
-              
-              <motion.a 
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                viewport={{ once: true }}
-                href="/vending-leads/mesa-arizona" 
-                className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
-              >
-                <h3 className="font-semibold text-navy">Mesa</h3>
-                <p className="text-sm text-gray-600">Suburban growth and healthcare</p>
-              </motion.a>
-              
-              <motion.a 
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.3 }}
-                viewport={{ once: true }}
-                href="/vending-leads/scottsdale-arizona" 
-                className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
-              >
-                <h3 className="font-semibold text-navy">Scottsdale</h3>
-                <p className="text-sm text-gray-600">Tourism and luxury retail</p>
-              </motion.a>
+              <h2 className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal">
+                Other Cities in Arizona
+              </h2>
+              <p className="mt-4 text-lg text-stone max-w-2xl mx-auto">
+                Explore vending machine opportunities in Arizona's other major cities and metropolitan areas.
+              </p>
+            </motion.div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {[
+                { name: 'Tucson', slug: 'tucson-arizona', description: 'University town with healthcare' },
+                { name: 'Mesa', slug: 'mesa-arizona', description: 'Manufacturing and healthcare hub' },
+                { name: 'Chandler', slug: 'chandler-arizona', description: 'Technology and healthcare center' },
+                { name: 'Scottsdale', slug: 'scottsdale-arizona', description: 'Healthcare and tourism hub' },
+                { name: 'Glendale', slug: 'glendale-arizona', description: 'Healthcare and retail center' },
+                { name: 'Gilbert', slug: 'gilbert-arizona', description: 'Healthcare and education center' }
+              ].map((city, index) => (
+                <motion.div
+                  key={city.name}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: index * 0.1 }}
+                  className="bg-white p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200"
+                >
+                  <Link href={`/vending-leads/${city.slug}`} className="block">
+                    <h3 className="text-lg font-semibold text-coral hover:text-coral/80 transition-colors duration-200 mb-2">
+                      {city.name}
+                    </h3>
+                    <p className="text-stone text-sm leading-relaxed">{city.description}</p>
+                  </Link>
+                </motion.div>
+              ))}
             </div>
           </div>
         </section>
       </div>
       
       <Footer />
-      
-      {/* Zip Code Modal */}
       <ZipCodeModalWrapper />
     </>
   )

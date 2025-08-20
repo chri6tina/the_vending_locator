@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import PricingTable from '@/components/PricingTable'
+import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
 export default function VendingLeadsPage() {
   const states = [
@@ -535,6 +537,21 @@ export default function VendingLeadsPage() {
           </div>
         </div>
 
+        {/* Pricing Table Section */}
+        <div className="bg-cream py-20">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-playfair font-bold text-chocolate mb-6">
+                Vending Leads Pricing
+              </h2>
+              <p className="text-lg sm:text-xl text-chocolate/70 max-w-3xl mx-auto">
+                Choose the perfect plan for your vending machine business growth
+              </p>
+            </div>
+            <PricingTable />
+          </div>
+        </div>
+
         {/* Features Section - Matching Home Page Colors */}
         <div className="bg-cream py-20">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -589,6 +606,7 @@ export default function VendingLeadsPage() {
       </div>
 
       <Footer />
+      <ZipCodeModalWrapper />
     </>
   )
 }

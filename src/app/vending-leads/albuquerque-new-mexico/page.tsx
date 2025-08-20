@@ -1,139 +1,345 @@
 'use client'
 
-import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CpuChipIcon } from '@heroicons/react/24/solid'
+import Link from 'next/link'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
+import VendingCourse from '@/components/VendingCourse'
+import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
+import { useState, useEffect } from 'react'
+import { motion } from 'framer-motion'
+import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CpuChipIcon, TruckIcon, FilmIcon, SunIcon, BeakerIcon, SparklesIcon, HeartIcon, CloudIcon } from '@heroicons/react/24/solid'
 
 export default function AlbuquerqueNewMexicoVendingLeadsPage() {
+  const [activeUsers, setActiveUsers] = useState(0)
+  const [userNames, setUserNames] = useState([
+    'Tom from Albuquerque', 'Sarah from Santa Fe', 'Mike from Las Cruces', 'Lisa from Rio Rancho',
+    'David from Roswell', 'Jennifer from Farmington', 'Robert from Clovis', 'Amanda from Hobbs',
+    'Chris from Carlsbad', 'Maria from Alamogordo', 'James from Artesia', 'Emily from Deming'
+  ])
+  const [currentUserIndex, setCurrentUserIndex] = useState(0)
+
+  // Fluctuating active users counter
+  useEffect(() => {
+    const updateActiveUsers = () => {
+      const baseUsers = 8
+      const fluctuation = Math.floor(Math.random() * 3) + 1
+      setActiveUsers(baseUsers + fluctuation)
+    }
+
+    const interval = setInterval(() => {
+      updateActiveUsers()
+    }, Math.random() * 2000 + 2000)
+
+    updateActiveUsers()
+    return () => clearInterval(interval)
+  }, [])
+
+  // Rotating user names
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentUserIndex(prev => (prev + 1) % userNames.length)
+    }, 3000)
+
+    return () => clearInterval(interval)
+  }, [userNames.length])
+
   return (
     <>
       <Header />
       
       <div className="min-h-screen bg-warm-white">
-        {/* Hero Section - Matching Homepage Style */}
-        <div className="bg-warm-white">
-          <div className="mx-auto max-w-2xl px-4 sm:px-6 py-12 sm:py-16 lg:py-24">
+        {/* Enhanced Hero Section - Albuquerque-Specific */}
+        <div className="bg-warm-white py-16 sm:py-24 lg:py-32">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center">
-              <h1 className="text-3xl sm:text-4xl lg:text-6xl font-playfair font-bold tracking-tight text-charcoal leading-tight">
-                Albuquerque Vending Machine Locations
-              </h1>
+              {/* Active Users Counter Pill */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                className="mb-8 p-4 bg-cream/50 backdrop-blur-sm rounded-2xl border border-gray-200 shadow-sm max-w-md mx-auto"
+              >
+                <div className="flex items-center justify-center gap-3">
+                  <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                  <span className="text-sm font-medium text-chocolate">
+                    <span className="font-bold text-coral">{activeUsers}</span> New Mexico vendors are choosing plans right now
+                  </span>
+                </div>
+                <div
+                  key={currentUserIndex}
+                  className="mt-2 text-xs text-chocolate/70"
+                >
+                  Including {userNames[currentUserIndex]}
+                </div>
+              </motion.div>
               
-              <p className="mt-4 sm:mt-6 text-base sm:text-lg leading-7 sm:leading-8 text-stone px-2 sm:px-0">
-                Discover premium vending machine placement opportunities in Albuquerque, New Mexico. 
-                Access 32,000+ businesses in the heart of New Mexico's largest city and business hub.
-              </p>
+              <motion.h1
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className="text-4xl sm:text-5xl lg:text-6xl font-playfair font-bold tracking-tight text-charcoal leading-tight"
+              >
+                Vending Machine Locations<br />in Albuquerque, New Mexico
+              </motion.h1>
+              
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                className="mt-6 sm:mt-8 text-lg sm:text-xl leading-8 text-stone max-w-4xl mx-auto"
+              >
+                Get pre-qualified vending machine locations in Albuquerque's thriving technology and healthcare economy. 
+                Access verified businesses with detailed contact information and placement opportunities.
+              </motion.p>
 
-              {/* City Stats - Matching Homepage Counter Style */}
-              <div className="mt-10 sm:mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 px-4 sm:px-0">
-                <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-bronze">32,000+</div>
-                  <div className="text-xs sm:text-sm text-stone leading-tight">Businesses</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-bronze">564K+</div>
-                  <div className="text-xs sm:text-sm text-stone leading-tight">Population</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-bronze">135+</div>
-                  <div className="text-xs sm:text-sm text-stone leading-tight">Vending Locations</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-bronze">5</div>
-                  <div className="text-xs sm:text-sm text-stone leading-tight">Major Industries</div>
-                </div>
-              </div>
+              {/* Trust Signals - Albuquerque-Specific */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+                className="mt-8 sm:mt-10 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6"
+              >
+                {[
+                  { icon: CheckBadgeIcon, text: '100+ Verified Locations' },
+                  { icon: StarIcon, text: '24/7 Support' },
+                  { icon: ShieldCheckIcon, text: 'Money-Back Guarantee' },
+                  { icon: ClockIcon, text: 'Instant Access' }
+                ].map((signal, index) => (
+                  <motion.div
+                    key={signal.text}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 0.6 + index * 0.1 }}
+                    className="flex flex-col items-center text-center"
+                  >
+                    <signal.icon className="w-8 h-8 text-coral mb-2" />
+                    <span className="text-sm font-medium text-chocolate">{signal.text}</span>
+                  </motion.div>
+                ))}
+              </motion.div>
 
-              {/* Trust Signals - Matching Homepage Style */}
-              <div className="mt-8 sm:mt-10 flex flex-wrap justify-center gap-4 sm:gap-6">
-                <div className="flex items-center gap-2 text-sm text-stone">
-                  <CheckBadgeIcon className="h-5 w-5 text-green-600" />
-                  <span>Verified Locations</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-stone">
-                  <StarIcon className="h-5 w-5 text-yellow-500" />
-                  <span>4.9/5 Rating</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-stone">
-                  <ShieldCheckIcon className="h-5 w-5 text-blue-600" />
-                  <span>Secure & Reliable</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-stone">
-                  <ClockIcon className="h-5 w-5 text-purple-600" />
-                  <span>Quality Research</span>
-                </div>
-              </div>
+              {/* CTA Buttons */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.8 }}
+                className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6"
+              >
+                <Link
+                  href="#pricing"
+                  className="w-full sm:w-auto bg-coral hover:bg-coral/90 text-white px-8 py-4 rounded-lg font-semibold transition-colors text-lg"
+                >
+                  Get Albuquerque Leads
+                </Link>
+                <Link
+                  href="#learn-more"
+                  className="w-full sm:w-auto text-lg font-semibold leading-6 text-charcoal hover:text-navy transition-colors text-center py-4"
+                >
+                  Learn About Albuquerque <span aria-hidden="true">→</span>
+                </Link>
+              </motion.div>
             </div>
+          </div>
+        </div>
+
+        {/* Pricing Table Section */}
+        <div id="pricing" className="bg-white py-16 sm:py-20 lg:py-24">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="mx-auto max-w-4xl text-center mb-12 sm:mb-16">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-playfair font-bold tracking-tight text-chocolate mb-6">
+                Get Albuquerque Vending Machine Leads
+              </h2>
+              <p className="text-lg sm:text-xl text-chocolate/70 leading-relaxed max-w-3xl mx-auto">
+                Access our comprehensive database of qualified Albuquerque vending machine locations with flexible pricing options. 
+                No long-term contracts, just results that help you grow your Albuquerque vending business.
+              </p>
+            </div>
+            <PricingTable />
           </div>
         </div>
 
         {/* Business Landscape Section */}
-        <div className="bg-white py-16 sm:py-20">
+        <section id="learn-more" className="py-16 bg-warm-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
-                Albuquerque Business Landscape
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="text-center mb-16"
+            >
+              <h2 className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal">
+                Albuquerque's Business Landscape
               </h2>
-              <p className="text-lg text-stone max-w-3xl mx-auto">
-                Albuquerque is New Mexico's largest city and a major business, technology, and healthcare hub, offering diverse vending opportunities across multiple thriving industries.
+              <p className="mt-4 text-lg text-stone max-w-2xl mx-auto">
+                Discover the diverse industries and opportunities that make Albuquerque perfect for vending machine placement.
               </p>
-            </div>
+            </motion.div>
 
-            {/* Industry Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div className="bg-cream/30 p-6 rounded-xl border border-gray-200">
-                <div className="flex items-center gap-3 mb-4">
-                  <BuildingOfficeIcon className="h-8 w-8 text-bronze" />
-                  <h3 className="text-xl font-semibold text-charcoal">Technology</h3>
-                </div>
-                <p className="text-stone">Major tech hub with Intel and Sandia National Labs.</p>
-              </div>
-
-              <div className="bg-cream/30 p-6 rounded-xl border border-gray-200">
-                <div className="flex items-center gap-3 mb-4">
-                  <CpuChipIcon className="h-8 w-8 text-bronze" />
-                  <h3 className="text-xl font-semibold text-charcoal">Aerospace</h3>
-                </div>
-                <p className="text-stone">Growing aerospace sector with defense contractors.</p>
-              </div>
-
-              <div className="bg-cream/30 p-6 rounded-xl border border-gray-200">
-                <div className="flex items-center gap-3 mb-4">
-                  <AcademicCapIcon className="h-8 w-8 text-bronze" />
-                  <h3 className="text-xl font-semibold text-charcoal">Education</h3>
-                </div>
-                <p className="text-stone">Home to University of New Mexico and colleges.</p>
-              </div>
-
-              <div className="bg-cream/30 p-6 rounded-xl border border-gray-200">
-                <div className="flex items-center gap-3 mb-4">
-                  <MapPinIcon className="h-8 w-8 text-bronze" />
-                  <h3 className="text-xl font-semibold text-charcoal">Healthcare</h3>
-                </div>
-                <p className="text-stone">Major healthcare hub with hospitals and medical centers.</p>
-              </div>
-
-              <div className="bg-cream/30 p-6 rounded-xl border border-gray-200">
-                <div className="flex items-center gap-3 mb-4">
-                  <UsersIcon className="h-8 w-8 text-bronze" />
-                  <h3 className="text-xl font-semibold text-charcoal">Film</h3>
-                </div>
-                <p className="text-stone">Growing film industry with Netflix and production companies.</p>
-              </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {[
+                { icon: AcademicCapIcon, title: 'Education & Research', description: 'University of New Mexico, Sandia National Laboratories, and research institutions' },
+                { icon: CpuChipIcon, title: 'Technology & Aerospace', description: 'Growing tech sector with major aerospace and defense companies' },
+                { icon: HeartIcon, title: 'Healthcare & Medical', description: 'Major hospitals, medical centers, and healthcare facilities' },
+                { icon: BuildingOfficeIcon, title: 'Government & Military', description: 'Kirtland Air Force Base and government offices' },
+                { icon: TruckIcon, title: 'Manufacturing & Logistics', description: 'Industrial facilities and distribution centers' },
+                { icon: SunIcon, title: 'Renewable Energy', description: 'Solar energy companies and sustainable technology' }
+              ].map((industry, index) => (
+                <motion.div
+                  key={industry.title}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: index * 0.1 }}
+                  className="bg-white p-6 rounded-lg shadow-sm border border-gray-100 text-center"
+                >
+                  <industry.icon className="w-12 h-12 text-coral mx-auto mb-4" />
+                  <h3 className="text-lg font-semibold text-charcoal mb-2">{industry.title}</h3>
+                  <p className="text-stone text-sm leading-relaxed">{industry.description}</p>
+                </motion.div>
+              ))}
             </div>
           </div>
-        </div>
+        </section>
 
-        {/* Pricing Section */}
-        <PricingTable />
+        {/* City Stats Section */}
+        <section className="py-16 bg-cream/10">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="text-center mb-12"
+            >
+              <h2 className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal">
+                Albuquerque at a Glance
+              </h2>
+            </motion.div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {[
+                { label: 'Population', value: '564,000+', description: 'Largest city in New Mexico' },
+                { label: 'Businesses', value: '25,000+', description: 'Diverse business ecosystem' },
+                { label: 'Major Industries', value: '6+', description: 'Technology, healthcare, education, aerospace' }
+              ].map((stat, index) => (
+                <motion.div
+                  key={stat.label}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: index * 0.1 }}
+                  className="bg-white p-6 rounded-lg shadow-sm border border-gray-100 text-center"
+                >
+                  <div className="text-3xl font-bold text-coral mb-2">{stat.value}</div>
+                  <div className="text-lg font-semibold text-charcoal mb-2">{stat.label}</div>
+                  <p className="text-stone text-sm">{stat.description}</p>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
 
         {/* Hot Leads Section */}
         <HotLeads />
 
-        {/* Footer */}
-        <Footer />
+        {/* Vending Course Section */}
+        <VendingCourse />
+
+        {/* FAQ Section */}
+        <section className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="text-center mb-12"
+            >
+              <h2 className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal">
+                Frequently Asked Questions
+              </h2>
+            </motion.div>
+
+            <div className="space-y-6">
+              {[
+                {
+                  question: "What types of businesses are available for vending machine placement in Albuquerque?",
+                  answer: "Albuquerque offers diverse opportunities including educational institutions, research facilities, healthcare centers, technology companies, aerospace facilities, and government offices. Our leads cover all major industries across the city."
+                },
+                {
+                  question: "How quickly can I start placing vending machines in Albuquerque?",
+                  answer: "With our verified leads, you can start contacting businesses within 24 hours of purchase. Each lead includes detailed contact information and business details to streamline your outreach process."
+                },
+                {
+                  question: "Are the Albuquerque leads pre-qualified for vending machine placement?",
+                  answer: "Yes, all our Albuquerque leads are pre-qualified businesses that have shown interest in vending machine services or have suitable locations for placement."
+                },
+                {
+                  question: "What support do you provide for Albuquerque vending machine placement?",
+                  answer: "We provide comprehensive support including lead verification, business contact information, placement guidance, and ongoing assistance to ensure successful vending machine placement across Albuquerque."
+                }
+              ].map((faq, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: index * 0.1 }}
+                  className="bg-white p-6 rounded-lg shadow-sm border border-gray-100"
+                >
+                  <h3 className="text-lg font-semibold text-charcoal mb-3">{faq.question}</h3>
+                  <p className="text-stone leading-relaxed">{faq.answer}</p>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Other Cities in New Mexico Section */}
+        <section className="py-16 bg-cream/10">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="text-center mb-12"
+            >
+              <h2 className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal">
+                Other Cities in New Mexico
+              </h2>
+              <p className="mt-4 text-lg text-stone max-w-2xl mx-auto">
+                Explore vending machine opportunities in New Mexico's other major cities and metropolitan areas.
+              </p>
+            </motion.div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {[
+                { name: 'Santa Fe', slug: 'santa-fe-new-mexico', description: 'State capital with government and tourism' },
+                { name: 'Las Cruces', slug: 'las-cruces-new-mexico', description: 'University town and agricultural center' },
+                { name: 'Rio Rancho', slug: 'rio-rancho-new-mexico', description: 'Technology and manufacturing hub' },
+                { name: 'Roswell', slug: 'roswell-new-mexico', description: 'Tourism and military presence' },
+                { name: 'Farmington', slug: 'farmington-new-mexico', description: 'Energy industry and healthcare' },
+                { name: 'Clovis', slug: 'clovis-new-mexico', description: 'Military base and healthcare center' }
+              ].map((city, index) => (
+                <motion.div
+                  key={city.name}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: index * 0.1 }}
+                  className="bg-white p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200"
+                >
+                  <Link href={`/vending-leads/${city.slug}`} className="block">
+                    <h3 className="text-lg font-semibold text-coral hover:text-coral/80 transition-colors duration-200 mb-2">
+                      {city.name}
+                    </h3>
+                    <p className="text-stone text-sm leading-relaxed">{city.description}</p>
+                  </Link>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
       </div>
+      
+      <Footer />
+      <ZipCodeModalWrapper />
     </>
   )
 }

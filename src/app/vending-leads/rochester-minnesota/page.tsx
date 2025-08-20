@@ -1,196 +1,324 @@
-import { Metadata } from 'next'
-import { generateCityStructuredData, generateCityMetadata } from '@/components/CityPageSEO'
+'use client'
+
+import Link from 'next/link'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
+import VendingCourse from '@/components/VendingCourse'
+import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
+import { useState, useEffect } from 'react'
+import { motion } from 'framer-motion'
 import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CpuChipIcon } from '@heroicons/react/24/solid'
 
-export const metadata: Metadata = generateCityMetadata({
-  city: 'Rochester',
-  state: 'Minnesota',
-  stateAbbr: 'MN',
-  population: '120K+',
-  businessCount: '3,200+',
-  industries: ['Healthcare', 'Education', 'Technology', 'Manufacturing', 'Research'],
-  description: 'Rochester offers world-class healthcare facilities, educational institutions, technology companies, and research centers perfect for vending machine placement opportunities.'
-})
-
 export default function RochesterMinnesotaVendingLeadsPage() {
-  const structuredData = generateCityStructuredData({
-    city: 'Rochester',
-    state: 'Minnesota',
-    stateAbbr: 'MN',
-    population: '120K+',
-    businessCount: '3,200+',
-    industries: ['Healthcare', 'Education', 'Technology', 'Manufacturing', 'Research'],
-    description: 'Rochester offers world-class healthcare facilities, educational institutions, technology companies, and research centers perfect for vending machine placement opportunities.'
-  })
+  const [activeUsers, setActiveUsers] = useState(0)
+  const [userNames, setUserNames] = useState([
+    'Mike from Rochester', 'Sarah in Downtown', 'David in Southeast', 'Lisa in Southwest',
+    'Tom in Northwest', 'Jennifer in Northeast', 'Robert in Kutzky Park', 'Amanda in Pill Hill',
+    'Chris in Slatterly Park', 'Maria in Meadow Park', 'James in Silver Lake', 'Emily in Apache Mall'
+  ])
+  const [currentUserIndex, setCurrentUserIndex] = useState(0)
+
+  // Fluctuating active users counter
+  useEffect(() => {
+    const updateActiveUsers = () => {
+      const baseUsers = 4
+      const fluctuation = Math.floor(Math.random() * 2) + 1
+      setActiveUsers(baseUsers + fluctuation)
+    }
+
+    const interval = setInterval(() => {
+      updateActiveUsers()
+    }, Math.random() * 2000 + 2000)
+
+    updateActiveUsers()
+    return () => clearInterval(interval)
+  }, [])
+
+  // Rotating user names
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentUserIndex(prev => (prev + 1) % userNames.length)
+    }, 3000)
+
+    return () => clearInterval(interval)
+  }, [userNames.length])
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-      />
-      
       <Header />
       
-      <main>
-        {/* Hero Section */}
-        <div className="bg-gradient-to-r from-navy to-charcoal py-16 sm:py-24">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="min-h-screen bg-warm-white">
+        {/* Enhanced Hero Section - Rochester-Specific */}
+        <div className="bg-warm-white py-16 sm:py-24 lg:py-32">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center">
-              <h1 className="text-4xl font-playfair font-bold tracking-tight text-white sm:text-6xl">
-                Vending Machine Leads in Rochester, MN
-              </h1>
-              <p className="mt-6 text-xl leading-8 text-white/90 max-w-3xl mx-auto">
-                Get qualified vending machine leads in Rochester, Minnesota. Access verified business locations with contact information for successful vending machine placement.
-              </p>
-              <div className="mt-8 flex flex-wrap justify-center gap-4">
-                <div className="bg-white/20 rounded-full px-6 py-2 text-white text-sm">
-                  Healthcare Hub
+              {/* Active Users Counter Pill */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                className="mb-8 p-4 bg-cream/50 backdrop-blur-sm rounded-2xl border border-gray-200 shadow-sm max-w-md mx-auto"
+              >
+                <div className="flex items-center justify-center gap-3">
+                  <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                  <span className="text-sm font-medium text-chocolate">
+                    <span className="font-bold text-coral">{activeUsers}</span> Rochester vendors are choosing plans right now
+                  </span>
                 </div>
-                <div className="bg-white/20 rounded-full px-6 py-2 text-white text-sm">
-                  Education
+                <div
+                  key={currentUserIndex}
+                  className="mt-2 text-xs text-chocolate/70"
+                >
+                  Including {userNames[currentUserIndex]}
                 </div>
-                <div className="bg-white/20 rounded-full px-6 py-2 text-white text-sm">
-                  Technology
+              </motion.div>
+
+              <motion.h1
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className="text-4xl sm:text-5xl lg:text-6xl font-playfair font-bold tracking-tight text-charcoal leading-tight"
+              >
+                Vending Machine Locations<br />in Rochester, Minnesota
+              </motion.h1>
+              
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                className="mt-6 sm:mt-8 text-lg sm:text-xl leading-8 text-stone max-w-4xl mx-auto"
+              >
+                Get pre-qualified vending machine locations in Rochester's thriving healthcare and technology economy. 
+                Access verified businesses with detailed contact information and placement opportunities.
+              </motion.p>
+
+              {/* Trust Signals - Rochester-Specific */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+                className="mt-8 sm:mt-10 flex flex-wrap justify-center gap-4 sm:gap-6"
+              >
+                <div className="flex items-center gap-2 text-sm text-chocolate">
+                  <CheckBadgeIcon className="h-5 w-5 text-green-600" />
+                  <span>239K+ Verified Locations</span>
                 </div>
-              </div>
+                <div className="flex items-center gap-2 text-sm text-chocolate">
+                  <StarIcon className="h-5 w-5 text-yellow-500" />
+                  <span>4.9/5 Business Rating</span>
+                </div>
+                <div className="flex items-center gap-2 text-sm text-chocolate">
+                  <ShieldCheckIcon className="h-5 w-5 text-blue-600" />
+                  <span>Pre-Qualified Leads</span>
+                </div>
+                <div className="flex items-center gap-2 text-sm text-chocolate">
+                  <ClockIcon className="h-5 w-5 text-purple-600" />
+                  <span>24/7 Support</span>
+                </div>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.8 }}
+                className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 px-4 sm:px-0"
+              >
+                <Link
+                  href="#pricing"
+                  className="w-full sm:w-auto btn-primary text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-lg"
+                >
+                  Get Rochester Leads Now
+                </Link>
+                <Link
+                  href="#hot-leads"
+                  className="w-full sm:w-auto btn-secondary text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-lg"
+                >
+                  View Sample Locations
+                </Link>
+              </motion.div>
             </div>
           </div>
         </div>
 
-        {/* Business Landscape Section */}
-        <div className="py-16 bg-warm-white">
+        {/* Pricing Table Section */}
+        <div id="pricing" className="bg-cream py-20">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-playfair font-bold text-charcoal">
-                Rochester Business Landscape
+            <div className="text-center mb-16">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-playfair font-bold text-chocolate mb-6">
+                Rochester Vending Leads Pricing
               </h2>
-              <p className="mt-4 text-lg text-stone max-w-3xl mx-auto">
-                Rochester's economy is driven by healthcare, education, technology, and research sectors.
-              </p>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <BuildingOfficeIcon className="w-8 h-8 text-navy" />
-                </div>
-                <h3 className="text-lg font-semibold text-charcoal mb-2">Healthcare</h3>
-                <p className="text-stone text-sm">Mayo Clinic and medical facilities</p>
-              </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <AcademicCapIcon className="w-8 h-8 text-navy" />
-                </div>
-                <h3 className="text-lg font-semibold text-charcoal mb-2">Education</h3>
-                <p className="text-stone text-sm">Universities, colleges, and schools</p>
-              </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <CpuChipIcon className="w-8 h-8 text-navy" />
-                </div>
-                <h3 className="text-lg font-semibold text-charcoal mb-2">Technology</h3>
-                <p className="text-stone text-sm">Tech companies and innovation hubs</p>
-              </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <UsersIcon className="w-8 h-8 text-navy" />
-                </div>
-                <h3 className="text-lg font-semibold text-charcoal mb-2">Research</h3>
-                <p className="text-stone text-sm">Research institutions and laboratories</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Pricing Section */}
-        <div className="py-16 bg-white">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-playfair font-bold text-charcoal">
-                Vending Machine Lead Pricing
-              </h2>
-              <p className="mt-4 text-lg text-stone max-w-3xl mx-auto">
-                Get access to qualified vending machine leads in Rochester with our flexible pricing options.
+              <p className="text-lg sm:text-xl text-chocolate/70 max-w-3xl mx-auto">
+                Choose the perfect plan for your Rochester vending machine business growth
               </p>
             </div>
             <PricingTable />
           </div>
         </div>
 
-        {/* Hot Leads Section */}
-        <div className="py-16 bg-warm-white">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        {/* Business Landscape Section */}
+        <div className="bg-white py-16 sm:py-20">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-playfair font-bold text-charcoal">
-                Hot Vending Leads in Rochester
-              </h2>
-              <p className="mt-4 text-lg text-stone max-w-3xl mx-auto">
-                Access our latest verified vending machine placement opportunities in Rochester.
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                className="text-3xl font-playfair font-bold text-charcoal mb-4"
+              >
+                Rochester Business Landscape
+              </motion.h2>
+              <p className="text-lg text-stone max-w-3xl mx-auto">
+                Rochester is home to the world-renowned Mayo Clinic and a major healthcare and technology hub, offering diverse vending opportunities across multiple thriving industries.
               </p>
             </div>
-            <HotLeads />
+
+            {/* Industry Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {[
+                {
+                  icon: BuildingOfficeIcon,
+                  title: 'Healthcare',
+                  description: 'Home to Mayo Clinic and numerous healthcare facilities and medical research centers.'
+                },
+                {
+                  icon: CpuChipIcon,
+                  title: 'Technology',
+                  description: 'Major tech hub with IBM and other technology companies and innovation centers.'
+                },
+                {
+                  icon: AcademicCapIcon,
+                  title: 'Education',
+                  description: 'Educational institutions and medical training centers throughout the city.'
+                },
+                {
+                  icon: CpuChipIcon,
+                  title: 'Research',
+                  description: 'Medical research facilities and pharmaceutical companies.'
+                },
+                {
+                  icon: MapPinIcon,
+                  title: 'Professional Services',
+                  description: 'Financial services, consulting, and professional service companies.'
+                },
+              ].map((item, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  className="bg-cream/30 p-6 rounded-xl border border-gray-200"
+                >
+                  <div className="flex items-center gap-3 mb-4">
+                    <item.icon className="h-8 w-8 text-bronze" />
+                    <h3 className="text-xl font-semibold text-charcoal">{item.title}</h3>
+                  </div>
+                  <p className="text-stone">{item.description}</p>
+                </motion.div>
+              ))}
+            </div>
           </div>
         </div>
+
+        {/* City Stats Section */}
+        <div className="bg-warm-white py-16 sm:py-20">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                className="text-3xl font-playfair font-bold text-charcoal mb-4"
+              >
+                Rochester Vending Market at a Glance
+              </motion.h2>
+              <p className="text-lg text-stone max-w-3xl mx-auto">
+                Key statistics highlighting the potential for vending machine businesses in Rochester.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+              {[
+                { label: 'Population', value: '121K+', icon: UsersIcon },
+                { label: 'Businesses', value: '8,500+', icon: BuildingOfficeIcon },
+                { label: 'Major Industries', value: '5+', icon: CpuChipIcon },
+                { label: 'Vending Locations', value: '80+', icon: MapPinIcon },
+              ].map((stat, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  className="bg-cream/30 p-6 rounded-xl border border-gray-200 flex flex-col items-center justify-center"
+                >
+                  <stat.icon className="h-10 w-10 text-bronze mb-3" />
+                  <div className="text-3xl font-bold text-chocolate">{stat.value}</div>
+                  <div className="text-md text-stone">{stat.label}</div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Hot Leads Section */}
+        <HotLeads />
+
+        {/* Vending Course Section */}
+        <VendingCourse />
 
         {/* FAQ Section */}
-        <div className="py-16 bg-white">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="bg-white py-16 sm:py-20">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-playfair font-bold text-charcoal">
-                Frequently Asked Questions
-              </h2>
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                className="text-3xl font-playfair font-bold text-charcoal mb-4"
+              >
+                Frequently Asked Questions about Vending in Rochester
+              </motion.h2>
+              <p className="text-lg text-stone max-w-3xl mx-auto">
+                Find answers to common questions about securing vending machine locations in Rochester.
+              </p>
             </div>
-            <div className="max-w-3xl mx-auto space-y-6">
-              <div className="bg-warm-white p-6 rounded-lg">
-                <h3 className="text-lg font-semibold text-charcoal mb-2">What types of businesses in Rochester need vending machines?</h3>
-                <p className="text-stone">Healthcare facilities, educational institutions, technology companies, research centers, and office buildings in Rochester are excellent locations for vending machine placement.</p>
-              </div>
-              <div className="bg-warm-white p-6 rounded-lg">
-                <h3 className="text-lg font-semibold text-charcoal mb-2">How do I get started with vending machine placement in Rochester?</h3>
-                <p className="text-stone">Start by accessing our verified business leads, then contact the businesses directly to discuss vending machine placement opportunities.</p>
-              </div>
-              <div className="bg-warm-white p-6 rounded-lg">
-                <h3 className="text-lg font-semibold text-charcoal mb-2">What are the best areas in Rochester for vending machines?</h3>
-                <p className="text-stone">The downtown area, healthcare district, educational campuses, technology corridors, and research zones offer the highest potential for vending machine success.</p>
-              </div>
+            <div className="max-w-3xl mx-auto">
+              {[
+                {
+                  question: 'What types of businesses are good for vending machines in Rochester?',
+                  answer: 'Rochester\'s economy means opportunities in healthcare facilities like Mayo Clinic, technology companies like IBM, educational institutions, research facilities, and professional service companies throughout the city.'
+                },
+                {
+                  question: 'How are vending machine locations in Rochester identified?',
+                  answer: 'We use advanced data analytics and local market research to identify high-traffic businesses with a need for vending services, ensuring optimal placement for your machines.'
+                },
+                {
+                  question: 'Do you provide support after I get a location in Rochester?',
+                  answer: 'Yes, our support extends beyond lead generation. We offer resources and guidance to help you succeed in managing your vending machine business in Rochester.'
+                },
+                {
+                  question: 'What makes Rochester a good market for vending machines?',
+                  answer: 'Rochester\'s world-class healthcare presence, major technology companies, significant medical tourism, and daily workforce traffic create a high demand for convenient food and beverage options, making it an excellent market for vending machines.'
+                }
+              ].map((faq, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  className="mb-6 p-6 bg-cream/30 rounded-xl border border-gray-200"
+                >
+                  <h3 className="text-xl font-semibold text-charcoal mb-3">{faq.question}</h3>
+                  <p className="text-stone">{faq.answer}</p>
+                </motion.div>
+              ))}
             </div>
           </div>
         </div>
 
-        {/* Other Minnesota Cities Section */}
-        <div className="py-16 bg-warm-white">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-playfair font-bold text-charcoal">
-                Other Minnesota Cities
-              </h2>
-              <p className="mt-4 text-lg text-stone max-w-3xl mx-auto">
-                Explore vending machine opportunities in other major Minnesota cities.
-              </p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <a href="/vending-leads/minneapolis-minnesota" className="block bg-white p-6 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
-                <h3 className="text-lg font-semibold text-charcoal mb-2">Minneapolis</h3>
-                <p className="text-stone text-sm">Minnesota's largest city with diverse business opportunities</p>
-              </a>
-              <a href="/vending-leads/saint-paul-minnesota" className="block bg-white p-6 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
-                <h3 className="text-lg font-semibold text-charcoal mb-2">Saint Paul</h3>
-                <p className="text-stone text-sm">State capital with government and business centers</p>
-              </a>
-              <a href="/vending-leads/duluth-minnesota" className="block bg-white p-6 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
-                <h3 className="text-lg font-semibold text-charcoal mb-2">Duluth</h3>
-                <p className="text-stone text-sm">Healthcare and tourism hub on Lake Superior</p>
-              </a>
-            </div>
-          </div>
-        </div>
-      </main>
-      
+        {/* Zip Code Modal Wrapper */}
+        <ZipCodeModalWrapper />
+      </div>
       <Footer />
     </>
   )

@@ -9,20 +9,22 @@ import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon } from '@heroicons/react/24/solid'
+import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CpuChipIcon, TruckIcon, FilmIcon, SunIcon, BeakerIcon, SparklesIcon, HeartIcon, CloudIcon } from '@heroicons/react/24/solid'
 
 export default function NewYorkNewYorkVendingLeadsPage() {
   const [activeUsers, setActiveUsers] = useState(0)
   const [userNames, setUserNames] = useState([
-    'Mike from Manhattan', 'Sarah in Brooklyn', 'David from Queens', 'Lisa in Bronx',
-    'Tom in Staten Island', 'Jennifer in Midtown', 'Robert from Downtown', 'Amanda in Upper East Side'
+    'Tom from New York', 'Sarah from Brooklyn', 'Mike from Queens', 'Lisa from Manhattan',
+    'David from Bronx', 'Jennifer from Staten Island', 'Robert from Long Island', 'Amanda from Westchester',
+    'Chris from New Jersey', 'Maria from Connecticut', 'James from Upstate NY', 'Emily from Long Island'
   ])
   const [currentUserIndex, setCurrentUserIndex] = useState(0)
 
+  // Fluctuating active users counter
   useEffect(() => {
     const updateActiveUsers = () => {
       const baseUsers = 8
-      const fluctuation = Math.floor(Math.random() * 4) + 1
+      const fluctuation = Math.floor(Math.random() * 3) + 1
       setActiveUsers(baseUsers + fluctuation)
     }
 
@@ -34,6 +36,7 @@ export default function NewYorkNewYorkVendingLeadsPage() {
     return () => clearInterval(interval)
   }, [])
 
+  // Rotating user names
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentUserIndex(prev => (prev + 1) % userNames.length)
@@ -47,10 +50,11 @@ export default function NewYorkNewYorkVendingLeadsPage() {
       <Header />
       
       <div className="min-h-screen bg-warm-white">
-        {/* Hero Section */}
+        {/* Enhanced Hero Section - New York-Specific */}
         <div className="bg-warm-white py-16 sm:py-24 lg:py-32">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center">
+              {/* Active Users Counter Pill */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -63,18 +67,21 @@ export default function NewYorkNewYorkVendingLeadsPage() {
                     <span className="font-bold text-coral">{activeUsers}</span> New York vendors are choosing plans right now
                   </span>
                 </div>
-                <div className="mt-2 text-xs text-chocolate/70">
+                <div
+                  key={currentUserIndex}
+                  className="mt-2 text-xs text-chocolate/70"
+                >
                   Including {userNames[currentUserIndex]}
                 </div>
               </motion.div>
-
+              
               <motion.h1
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="text-4xl sm:text-5xl lg:text-6xl font-playfair font-bold tracking-tight text-charcoal leading-tight"
               >
-                Vending Machine Locations<br />in New York City
+                Vending Machine Locations<br />in New York, New York
               </motion.h1>
               
               <motion.p
@@ -83,118 +90,254 @@ export default function NewYorkNewYorkVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.4 }}
                 className="mt-6 sm:mt-8 text-lg sm:text-xl leading-8 text-stone max-w-4xl mx-auto"
               >
-                Get pre-qualified vending machine locations in New York City's thriving financial and corporate economy. 
+                Get pre-qualified vending machine locations in New York's thriving finance and technology economy. 
                 Access verified businesses with detailed contact information and placement opportunities.
               </motion.p>
 
+              {/* Trust Signals - New York-Specific */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+                className="mt-8 sm:mt-10 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6"
+              >
+                {[
+                  { icon: CheckBadgeIcon, text: '100+ Verified Locations' },
+                  { icon: StarIcon, text: '24/7 Support' },
+                  { icon: ShieldCheckIcon, text: 'Money-Back Guarantee' },
+                  { icon: ClockIcon, text: 'Instant Access' }
+                ].map((signal, index) => (
+                  <motion.div
+                    key={signal.text}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8, delay: 0.6 + index * 0.1 }}
+                    className="flex flex-col items-center text-center"
+                  >
+                    <signal.icon className="w-8 h-8 text-coral mb-2" />
+                    <span className="text-sm font-medium text-chocolate">{signal.text}</span>
+                  </motion.div>
+                ))}
+              </motion.div>
+
+              {/* CTA Buttons */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.8 }}
-                className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 px-4 sm:px-0"
+                className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6"
               >
                 <Link
                   href="#pricing"
-                  className="w-full sm:w-auto btn-primary text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-lg"
+                  className="w-full sm:w-auto bg-coral hover:bg-coral/90 text-white px-8 py-4 rounded-lg font-semibold transition-colors text-lg"
                 >
-                  Get NYC Leads
+                  Get New York Leads
                 </Link>
                 <Link
-                  href="#nyc-content"
-                  className="w-full sm:w-auto text-base sm:text-lg font-semibold leading-6 text-charcoal hover:text-navy transition-colors text-center py-3 sm:py-4"
+                  href="#learn-more"
+                  className="w-full sm:w-auto text-lg font-semibold leading-6 text-charcoal hover:text-navy transition-colors text-center py-4"
                 >
-                  Learn About NYC <span aria-hidden="true">→</span>
+                  Learn About New York <span aria-hidden="true">→</span>
                 </Link>
               </motion.div>
             </div>
           </div>
         </div>
 
-        {/* Pricing Section */}
+        {/* Pricing Table Section */}
         <div id="pricing" className="bg-white py-16 sm:py-20 lg:py-24">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="mx-auto max-w-4xl text-center mb-12 sm:mb-16">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-playfair font-bold tracking-tight text-chocolate mb-6">
-                Get New York City Vending Machine Leads
+                Get New York Vending Machine Leads
               </h2>
               <p className="text-lg sm:text-xl text-chocolate/70 leading-relaxed max-w-3xl mx-auto">
-                Access our comprehensive database of qualified NYC vending machine locations with flexible pricing options. 
-                No long-term contracts, just results that help you grow your NYC vending business.
+                Access our comprehensive database of qualified New York vending machine locations with flexible pricing options. 
+                No long-term contracts, just results that help you grow your New York vending business.
               </p>
             </div>
             <PricingTable />
           </div>
         </div>
 
-        {/* NYC Content Section */}
-        <div id="nyc-content" className="py-16 sm:py-24 bg-warm-white">
+        {/* Business Landscape Section */}
+        <section id="learn-more" className="py-16 bg-warm-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-playfair font-bold text-chocolate mb-6">
-                Why New York City is Perfect for Vending Machines
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="text-center mb-16"
+            >
+              <h2 className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal">
+                New York's Business Landscape
               </h2>
-              <p className="text-lg sm:text-xl text-chocolate/70 max-w-4xl mx-auto leading-relaxed">
-                NYC's unique combination of financial services, corporate headquarters, and healthcare excellence creates 
-                exceptional vending machine opportunities across diverse business sectors.
+              <p className="mt-4 text-lg text-stone max-w-2xl mx-auto">
+                Discover the diverse industries and opportunities that make New York perfect for vending machine placement.
               </p>
-            </div>
+            </motion.div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-              <div>
-                <h3 className="text-2xl sm:text-3xl font-playfair font-bold text-chocolate mb-6">
-                  NYC's Business Landscape
-                </h3>
-                <div className="space-y-4 text-chocolate/80">
-                  <p>
-                    New York City is home to major financial institutions like Goldman Sachs, JPMorgan Chase, and Morgan Stanley, 
-                    creating a massive workforce of finance professionals who frequent vending machines throughout the workday.
-                  </p>
-                  <p>
-                    Columbia University, NYU, and CUNY campuses, with over 100,000 combined students, provide consistent demand 
-                    for snacks and beverages across multiple campus locations throughout the five boroughs.
-                  </p>
-                </div>
-              </div>
-
-              <div>
-                <h4 className="text-xl sm:text-2xl font-playfair font-bold text-chocolate mb-6">
-                  Vending Machine Opportunities in NYC
-                </h4>
-                <div className="space-y-4">
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-coral rounded-full mt-2 flex-shrink-0"></div>
-                    <div>
-                      <h5 className="font-semibold text-chocolate mb-1">Financial Services</h5>
-                      <p className="text-sm text-chocolate/70">High-traffic corporate environments with modern amenities</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-coral rounded-full mt-2 flex-shrink-0"></div>
-                    <div>
-                      <h5 className="font-semibold text-chocolate mb-1">University Campuses</h5>
-                      <p className="text-sm text-chocolate/70">Student centers, libraries, and academic buildings</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-coral rounded-full mt-2 flex-shrink-0"></div>
-                    <div>
-                      <h5 className="font-semibold text-chocolate mb-1">Healthcare Facilities</h5>
-                      <p className="text-sm text-chocolate/70">Hospitals, clinics, and medical office buildings</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {[
+                { icon: BuildingOfficeIcon, title: 'Finance & Banking', description: 'Wall Street, major banks, and financial institutions' },
+                { icon: CpuChipIcon, title: 'Technology & Innovation', description: 'Silicon Alley, startups, and tech companies' },
+                { icon: HeartIcon, title: 'Healthcare & Medical', description: 'Major hospitals, medical centers, and healthcare facilities' },
+                { icon: AcademicCapIcon, title: 'Education & Research', description: 'Universities, colleges, and research institutions' },
+                { icon: UsersIcon, title: 'Office & Professional Services', description: 'Corporate offices, professional services, and business centers' },
+                { icon: TruckIcon, title: 'Logistics & Transportation', description: 'Distribution centers and transportation companies' }
+              ].map((industry, index) => (
+                <motion.div
+                  key={industry.title}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: index * 0.1 }}
+                  className="bg-white p-6 rounded-lg shadow-sm border border-gray-100 text-center"
+                >
+                  <industry.icon className="w-12 h-12 text-coral mx-auto mb-4" />
+                  <h3 className="text-lg font-semibold text-charcoal mb-2">{industry.title}</h3>
+                  <p className="text-stone text-sm leading-relaxed">{industry.description}</p>
+                </motion.div>
+              ))}
             </div>
           </div>
-        </div>
+        </section>
+
+        {/* City Stats Section */}
+        <section className="py-16 bg-cream/10">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="text-center mb-12"
+            >
+              <h2 className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal">
+                New York at a Glance
+              </h2>
+            </motion.div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {[
+                { label: 'Population', value: '8.8M+', description: 'Largest city in the United States' },
+                { label: 'Businesses', value: '200,000+', description: 'Diverse business ecosystem' },
+                { label: 'Major Industries', value: '6+', description: 'Finance, technology, healthcare, education, office, logistics' }
+              ].map((stat, index) => (
+                <motion.div
+                  key={stat.label}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: index * 0.1 }}
+                  className="bg-white p-6 rounded-lg shadow-sm border border-gray-100 text-center"
+                >
+                  <div className="text-3xl font-bold text-coral mb-2">{stat.value}</div>
+                  <div className="text-lg font-semibold text-charcoal mb-2">{stat.label}</div>
+                  <p className="text-stone text-sm">{stat.description}</p>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
 
         {/* Hot Leads Section */}
         <HotLeads />
 
         {/* Vending Course Section */}
         <VendingCourse />
-      </div>
 
+        {/* FAQ Section */}
+        <section className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="text-center mb-12"
+            >
+              <h2 className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal">
+                Frequently Asked Questions
+              </h2>
+            </motion.div>
+
+            <div className="space-y-6">
+              {[
+                {
+                  question: "What types of businesses are available for vending machine placement in New York?",
+                  answer: "New York offers diverse opportunities including financial institutions, technology companies, healthcare facilities, educational campuses, corporate offices, and logistics companies. Our leads cover all major industries across the city."
+                },
+                {
+                  question: "How quickly can I start placing vending machines in New York?",
+                  answer: "With our verified leads, you can start contacting businesses within 24 hours of purchase. Each lead includes detailed contact information and business details to streamline your outreach process."
+                },
+                {
+                  question: "Are the New York leads pre-qualified for vending machine placement?",
+                  answer: "Yes, all our New York leads are pre-qualified businesses that have shown interest in vending machine services or have suitable locations for placement."
+                },
+                {
+                  question: "What support do you provide for New York vending machine placement?",
+                  answer: "We provide comprehensive support including lead verification, business contact information, placement guidance, and ongoing assistance to ensure successful vending machine placement across New York."
+                }
+              ].map((faq, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: index * 0.1 }}
+                  className="bg-white p-6 rounded-lg shadow-sm border border-gray-100"
+                >
+                  <h3 className="text-lg font-semibold text-charcoal mb-3">{faq.question}</h3>
+                  <p className="text-stone leading-relaxed">{faq.answer}</p>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Other Cities in New York Section */}
+        <section className="py-16 bg-cream/10">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="text-center mb-12"
+            >
+              <h2 className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal">
+                Other Cities in New York
+              </h2>
+              <p className="mt-4 text-lg text-stone max-w-2xl mx-auto">
+                Explore vending machine opportunities in New York's other major cities and metropolitan areas.
+              </p>
+            </motion.div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {[
+                { name: 'Buffalo', slug: 'buffalo-new-york', description: 'Manufacturing and healthcare hub' },
+                { name: 'Rochester', slug: 'rochester-new-york', description: 'Technology and healthcare center' },
+                { name: 'Yonkers', slug: 'yonkers-new-york', description: 'Suburban business center' },
+                { name: 'Syracuse', slug: 'syracuse-new-york', description: 'Education and healthcare hub' },
+                { name: 'Albany', slug: 'albany-new-york', description: 'State capital with government' },
+                { name: 'New Rochelle', slug: 'new-rochelle-new-york', description: 'Suburban business center' }
+              ].map((city, index) => (
+                <motion.div
+                  key={city.name}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: index * 0.1 }}
+                  className="bg-white p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200"
+                >
+                  <Link href={`/vending-leads/${city.slug}`} className="block">
+                    <h3 className="text-lg font-semibold text-coral hover:text-coral/80 transition-colors duration-200 mb-2">
+                      {city.name}
+                    </h3>
+                    <p className="text-stone text-sm leading-relaxed">{city.description}</p>
+                  </Link>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+      </div>
+      
       <Footer />
       <ZipCodeModalWrapper />
     </>

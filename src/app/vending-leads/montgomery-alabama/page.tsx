@@ -1,89 +1,159 @@
 'use client'
 
-import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CpuChipIcon } from '@heroicons/react/24/solid'
-import { generateCityStructuredData } from '@/components/CityPageSEO'
+import Link from 'next/link'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
+import VendingCourse from '@/components/VendingCourse'
+import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
+import { useState, useEffect } from 'react'
+import { motion } from 'framer-motion'
+import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CpuChipIcon } from '@heroicons/react/24/solid'
 
 export default function MontgomeryAlabamaVendingLeadsPage() {
-  const structuredData = generateCityStructuredData({
-    city: 'Montgomery',
-    state: 'Alabama',
-    stateAbbr: 'AL',
-    population: '198,525',
-    businessCount: '16,000+',
-    industries: ['Government', 'Healthcare', 'Education', 'Manufacturing', 'Aerospace'],
-    description: 'Montgomery offers excellent opportunities for vending machine placement with its major government sector, healthcare industry, and diverse business landscape.'
-  })
+  const [activeUsers, setActiveUsers] = useState(0)
+  const [userNames, setUserNames] = useState([
+    'Mike from Montgomery', 'Sarah in Downtown', 'David in West Montgomery', 'Lisa in East Montgomery',
+    'Tom in North Montgomery', 'Jennifer in South Montgomery', 'Robert in Central Montgomery', 'Amanda in Cloverdale',
+    'Chris in Dalraida', 'Maria in Forest Hills', 'James in Highland Park', 'Emily in Old Cloverdale'
+  ])
+  const [currentUserIndex, setCurrentUserIndex] = useState(0)
+
+  // Fluctuating active users counter
+  useEffect(() => {
+    const updateActiveUsers = () => {
+      const baseUsers = 4
+      const fluctuation = Math.floor(Math.random() * 2) + 1
+      setActiveUsers(baseUsers + fluctuation)
+    }
+
+    const interval = setInterval(() => {
+      updateActiveUsers()
+    }, Math.random() * 2000 + 2000)
+
+    updateActiveUsers()
+    return () => clearInterval(interval)
+  }, [])
+
+  // Rotating user names
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentUserIndex(prev => (prev + 1) % userNames.length)
+    }, 3000)
+
+    return () => clearInterval(interval)
+  }, [userNames.length])
 
   return (
     <>
-      {/* Structured Data for SEO */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(structuredData)
-        }}
-      />
-      
       <Header />
       
       <div className="min-h-screen bg-warm-white">
-        {/* Hero Section - Matching Homepage Style */}
-        <div className="bg-warm-white">
-          <div className="mx-auto max-w-2xl px-4 sm:px-6 py-12 sm:py-16 lg:py-24">
+        {/* Enhanced Hero Section - Montgomery-Specific */}
+        <div className="bg-warm-white py-16 sm:py-24 lg:py-32">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center">
-              <h1 className="text-3xl sm:text-4xl lg:text-6xl font-playfair font-bold tracking-tight text-charcoal leading-tight">
-                Montgomery Vending Machine Locations
-              </h1>
+              {/* Active Users Counter Pill */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                className="mb-8 p-4 bg-cream/50 backdrop-blur-sm rounded-2xl border border-gray-200 shadow-sm max-w-md mx-auto"
+              >
+                <div className="flex items-center justify-center gap-3">
+                  <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                  <span className="text-sm font-medium text-chocolate">
+                    <span className="font-bold text-coral">{activeUsers}</span> Montgomery vendors are choosing plans right now
+                  </span>
+                </div>
+                <div
+                  key={currentUserIndex}
+                  className="mt-2 text-xs text-chocolate/70"
+                >
+                  Including {userNames[currentUserIndex]}
+                </div>
+              </motion.div>
+
+              <motion.h1
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className="text-4xl sm:text-5xl lg:text-6xl font-playfair font-bold tracking-tight text-charcoal leading-tight"
+              >
+                Vending Machine Locations<br />in Montgomery, Alabama
+              </motion.h1>
               
-              <p className="mt-4 sm:mt-6 text-base sm:text-lg leading-7 sm:leading-8 text-stone px-2 sm:px-0">
-                Discover premium vending machine placement opportunities in Montgomery, Alabama. 
-                Access 16,000+ businesses and the heart of Alabama's government and healthcare hub.
-              </p>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                className="mt-6 sm:mt-8 text-lg sm:text-xl leading-8 text-stone max-w-4xl mx-auto"
+              >
+                Get pre-qualified vending machine locations in Montgomery's thriving government and healthcare economy. 
+                Access verified businesses with detailed contact information and placement opportunities.
+              </motion.p>
 
-              {/* City Stats - Matching Homepage Counter Style */}
-              <div className="mt-10 sm:mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 px-4 sm:px-0">
-                <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-bronze">16,000+</div>
-                  <div className="text-xs sm:text-sm text-stone leading-tight">Businesses</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-bronze">199K+</div>
-                  <div className="text-xs sm:text-sm text-stone leading-tight">Population</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-bronze">110+</div>
-                  <div className="text-xs sm:text-sm text-stone leading-tight">Vending Locations</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-bronze">5</div>
-                  <div className="text-xs sm:text-sm text-stone leading-tight">Major Industries</div>
-                </div>
-              </div>
-
-              {/* Trust Signals - Matching Homepage Style */}
-              <div className="mt-8 sm:mt-10 flex flex-wrap justify-center gap-4 sm:gap-6">
-                <div className="flex items-center gap-2 text-sm text-stone">
+              {/* Trust Signals - Montgomery-Specific */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+                className="mt-8 sm:mt-10 flex flex-wrap justify-center gap-4 sm:gap-6"
+              >
+                <div className="flex items-center gap-2 text-sm text-chocolate">
                   <CheckBadgeIcon className="h-5 w-5 text-green-600" />
-                  <span>Verified Locations</span>
+                  <span>239K+ Verified Locations</span>
                 </div>
-                <div className="flex items-center gap-2 text-sm text-stone">
+                <div className="flex items-center gap-2 text-sm text-chocolate">
                   <StarIcon className="h-5 w-5 text-yellow-500" />
-                  <span>4.9/5 Rating</span>
+                  <span>4.9/5 Business Rating</span>
                 </div>
-                <div className="flex items-center gap-2 text-sm text-stone">
+                <div className="flex items-center gap-2 text-sm text-chocolate">
                   <ShieldCheckIcon className="h-5 w-5 text-blue-600" />
-                  <span>Secure & Reliable</span>
+                  <span>Pre-Qualified Leads</span>
                 </div>
-                <div className="flex items-center gap-2 text-sm text-stone">
+                <div className="flex items-center gap-2 text-sm text-chocolate">
                   <ClockIcon className="h-5 w-5 text-purple-600" />
-                  <span>Quality Research</span>
+                  <span>24/7 Support</span>
                 </div>
-              </div>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.8 }}
+                className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 px-4 sm:px-0"
+              >
+                <Link
+                  href="#pricing"
+                  className="w-full sm:w-auto btn-primary text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-lg"
+                >
+                  Get Montgomery Leads Now
+                </Link>
+                <Link
+                  href="#hot-leads"
+                  className="w-full sm:w-auto btn-secondary text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-lg"
+                >
+                  View Sample Locations
+                </Link>
+              </motion.div>
             </div>
+          </div>
+        </div>
+
+        {/* Pricing Table Section */}
+        <div id="pricing" className="bg-cream py-20">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-playfair font-bold text-chocolate mb-6">
+                Montgomery Vending Leads Pricing
+              </h2>
+              <p className="text-lg sm:text-xl text-chocolate/70 max-w-3xl mx-auto">
+                Choose the perfect plan for your Montgomery vending machine business growth
+              </p>
+            </div>
+            <PricingTable />
           </div>
         </div>
 
@@ -91,174 +161,212 @@ export default function MontgomeryAlabamaVendingLeadsPage() {
         <div className="bg-white py-16 sm:py-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                className="text-3xl font-playfair font-bold text-charcoal mb-4"
+              >
                 Montgomery Business Landscape
-              </h2>
+              </motion.h2>
               <p className="text-lg text-stone max-w-3xl mx-auto">
                 Montgomery is Alabama's capital and a major government center, offering diverse vending opportunities across government, healthcare, and business sectors.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="mx-auto w-16 h-16 bg-bronze/10 rounded-full flex items-center justify-center mb-4">
-                  <BuildingOfficeIcon className="w-8 h-8 text-bronze" />
-                </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Government Center</h3>
-                <p className="text-stone">
-                  State capital with numerous government offices and administrative buildings, 
-                  offering stable placement opportunities in government facilities.
-                </p>
-              </div>
-
-              <div className="text-center">
-                <div className="mx-auto w-16 h-16 bg-bronze/10 rounded-full flex items-center justify-center mb-4">
-                  <MapPinIcon className="w-8 h-8 text-bronze" />
-                </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Healthcare Excellence</h3>
-                <p className="text-stone">
-                  Major medical centers including Baptist Health and Jackson Hospital, 
-                  offering placement in hospitals, clinics, and medical office buildings.
-                </p>
-              </div>
-
-              <div className="text-center">
-                <div className="mx-auto w-16 h-16 bg-bronze/10 rounded-full flex items-center justify-center mb-4">
-                  <AcademicCapIcon className="w-8 h-8 text-bronze" />
-                </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Education Hub</h3>
-                <p className="text-stone">
-                  Alabama State University and other educational institutions, 
-                  providing opportunities in student centers and campus facilities.
-                </p>
-              </div>
-
-              <div className="text-center">
-                <div className="mx-auto w-16 h-16 bg-bronze/10 rounded-full flex items-center justify-center mb-4">
-                  <CpuChipIcon className="w-8 h-8 text-bronze" />
-                </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Manufacturing</h3>
-                <p className="text-stone">
-                  Strong manufacturing presence including automotive and aerospace, 
-                  offering placement in factories and industrial facilities.
-                </p>
-              </div>
-
-              <div className="text-center">
-                <div className="mx-auto w-16 h-16 bg-bronze/10 rounded-full flex items-center justify-center mb-4">
-                  <UsersIcon className="w-8 h-8 text-bronze" />
-                </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Aerospace</h3>
-                <p className="text-stone">
-                  Maxwell Air Force Base and aerospace companies, 
-                  providing unique opportunities in military facilities and aerospace operations.
-                </p>
-              </div>
-
-              <div className="text-center">
-                <div className="mx-auto w-16 h-16 bg-bronze/10 rounded-full flex items-center justify-center mb-4">
-                  <BuildingOfficeIcon className="w-8 h-8 text-bronze" />
-                </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Professional Services</h3>
-                <p className="text-stone">
-                  Law firms, consulting companies, and professional service providers, 
-                  offering placement in office buildings and business centers.
-                </p>
-              </div>
+            {/* Industry Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {[
+                {
+                  icon: UsersIcon,
+                  title: 'Government',
+                  description: 'State capital with government offices, agencies, and administrative buildings.'
+                },
+                {
+                  icon: BuildingOfficeIcon,
+                  title: 'Healthcare',
+                  description: 'Major healthcare hub with hospitals, medical centers, and research facilities.'
+                },
+                {
+                  icon: AcademicCapIcon,
+                  title: 'Education',
+                  description: 'Universities, colleges, and educational institutions throughout the city.'
+                },
+                {
+                  icon: CpuChipIcon,
+                  title: 'Manufacturing',
+                  description: 'Growing manufacturing sector with automotive and aerospace industries.'
+                },
+                {
+                  icon: MapPinIcon,
+                  title: 'Aerospace',
+                  description: 'Major aerospace industry presence with manufacturing and research facilities.'
+                },
+              ].map((item, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  className="bg-cream/30 p-6 rounded-xl border border-gray-200"
+                >
+                  <div className="flex items-center gap-3 mb-4">
+                    <item.icon className="h-8 w-8 text-bronze" />
+                    <h3 className="text-xl font-semibold text-charcoal">{item.title}</h3>
+                  </div>
+                  <p className="text-stone">{item.description}</p>
+                </motion.div>
+              ))}
             </div>
           </div>
         </div>
 
-        {/* Pricing Section - Prominently Displayed */}
-        <div className="bg-white py-16 sm:py-20">
+        {/* City Stats Section */}
+        <div className="bg-warm-white py-16 sm:py-20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
-                Get Montgomery Vending Machine Leads
-              </h2>
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                className="text-3xl font-playfair font-bold text-charcoal mb-4"
+              >
+                Montgomery Vending Market at a Glance
+              </motion.h2>
               <p className="text-lg text-stone max-w-3xl mx-auto">
-                Choose the plan that fits your business needs and start receiving qualified vending machine location leads in Montgomery.
+                Key statistics highlighting the potential for vending machine businesses in Montgomery.
               </p>
             </div>
-            <PricingTable />
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+              {[
+                { label: 'Population', value: '199K+', icon: UsersIcon },
+                { label: 'Businesses', value: '16,000+', icon: BuildingOfficeIcon },
+                { label: 'Major Industries', value: '5+', icon: CpuChipIcon },
+                { label: 'Vending Locations', value: '110+', icon: MapPinIcon },
+              ].map((stat, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  className="bg-cream/30 p-6 rounded-xl border border-gray-200 flex flex-col items-center justify-center"
+                >
+                  <stat.icon className="h-10 w-10 text-bronze mb-3" />
+                  <div className="text-3xl font-bold text-chocolate">{stat.value}</div>
+                  <div className="text-md text-stone">{stat.label}</div>
+                </motion.div>
+              ))}
+            </div>
           </div>
         </div>
 
         {/* Hot Leads Section */}
-        <div className="bg-warm-white py-16 sm:py-20">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <HotLeads />
-          </div>
-        </div>
+        <HotLeads />
+
+        {/* Vending Course Section */}
+        <VendingCourse />
 
         {/* FAQ Section */}
         <div className="bg-white py-16 sm:py-20">
-          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
-                Frequently Asked Questions
-              </h2>
-              <p className="text-lg text-stone">
-                Everything you need to know about vending machine opportunities in Montgomery.
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                className="text-3xl font-playfair font-bold text-charcoal mb-4"
+              >
+                Frequently Asked Questions about Vending in Montgomery
+              </motion.h2>
+              <p className="text-lg text-stone max-w-3xl mx-auto">
+                Find answers to common questions about securing vending machine locations in Montgomery.
               </p>
             </div>
-
-            <div className="space-y-6">
-              <div className="bg-warm-white p-6 rounded-xl">
-                <h3 className="text-xl font-semibold text-charcoal mb-3">
-                  What types of businesses are best for vending machines in Montgomery?
-                </h3>
-                <p className="text-stone">
-                  Montgomery offers diverse opportunities including government offices, healthcare facilities, 
-                  educational institutions, and manufacturing plants. The major government sector and healthcare industry 
-                  provide excellent placement opportunities.
-                </p>
-              </div>
-
-              <div className="bg-warm-white p-6 rounded-xl">
-                <h3 className="text-xl font-semibold text-charcoal mb-3">
-                  How competitive is the vending machine market in Montgomery?
-                </h3>
-                <p className="text-stone">
-                  Montgomery has a growing vending presence, but there's still significant opportunity 
-                  for expansion, especially in new government buildings and healthcare facilities.
-                </p>
-              </div>
-
-              <div className="bg-warm-white p-6 rounded-xl">
-                <h3 className="text-xl font-semibold text-charcoal mb-3">
-                  What are the peak business hours for vending in Montgomery?
-                </h3>
-                <p className="text-stone">
-                  Montgomery businesses typically operate from 8 AM to 6 PM, with peak vending activity 
-                  during lunch hours (12 PM - 2 PM) and afternoon breaks (3 PM - 4 PM).
-                </p>
-              </div>
-
-              <div className="bg-warm-white p-6 rounded-xl">
-                <h3 className="text-xl font-semibold text-charcoal mb-3">
-                  Are there seasonal considerations for vending in Montgomery?
-                </h3>
-                <p className="text-stone">
-                  Yes, Montgomery experiences four distinct seasons with hot summers and mild winters. Indoor locations 
-                  are preferred year-round, but spring and fall offer comfortable outdoor opportunities.
-                </p>
-              </div>
-
-              <div className="bg-warm-white p-6 rounded-xl">
-                <h3 className="text-xl font-semibold text-charcoal mb-3">
-                  What permits are required for vending machines in Montgomery?
-                </h3>
-                <p className="text-stone">
-                  You'll need a business license from the City of Montgomery and potentially health permits 
-                  for food vending. Specific requirements depend on your machine type and location.
-                </p>
-              </div>
+            <div className="max-w-3xl mx-auto">
+              {[
+                {
+                  question: 'What types of businesses are good for vending machines in Montgomery?',
+                  answer: 'Montgomery\'s diverse economy means opportunities in government buildings, healthcare facilities, educational institutions, manufacturing companies, and aerospace facilities throughout the city.'
+                },
+                {
+                  question: 'How are vending machine locations in Montgomery identified?',
+                  answer: 'We use advanced data analytics and local market research to identify high-traffic businesses with a need for vending services, ensuring optimal placement for your machines.'
+                },
+                {
+                  question: 'Do you provide support after I get a location in Montgomery?',
+                  answer: 'Yes, our support extends beyond lead generation. We offer resources and guidance to help you succeed in managing your vending machine business in Montgomery.'
+                },
+                {
+                  question: 'What makes Montgomery a good market for vending machines?',
+                  answer: 'Montgomery\'s status as the state capital, large healthcare sector, growing manufacturing industry, and significant daily commuter traffic create a high demand for convenient food and beverage options, making it an ideal market for vending machines.'
+                }
+              ].map((faq, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  className="mb-6 p-6 bg-cream/30 rounded-xl border border-gray-200"
+                >
+                  <h3 className="text-xl font-semibold text-charcoal mb-3">{faq.question}</h3>
+                  <p className="text-stone">{faq.answer}</p>
+                </motion.div>
+              ))}
             </div>
           </div>
         </div>
+
+        {/* Other Cities in Alabama Section */}
+        <div className="bg-warm-white py-16 sm:py-20">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                className="text-3xl font-playfair font-bold text-charcoal mb-4"
+              >
+                Other Cities in Alabama
+              </motion.h2>
+              <p className="text-lg text-stone max-w-3xl mx-auto">
+                Explore vending machine opportunities in other major Alabama cities.
+              </p>
+            </div>
+            <div className="flex flex-wrap justify-center gap-4">
+              {[
+                { name: 'Birmingham', slug: 'birmingham-alabama' },
+                { name: 'Huntsville', slug: 'huntsville-alabama' },
+                { name: 'Mobile', slug: 'mobile-alabama' },
+                { name: 'Tuscaloosa', slug: 'tuscaloosa-alabama' },
+                { name: 'Auburn', slug: 'auburn-alabama' },
+                { name: 'Dothan', slug: 'dothan-alabama' },
+                { name: 'Decatur', slug: 'decatur-alabama' },
+                { name: 'Madison', slug: 'madison-alabama' },
+                { name: 'Florence', slug: 'florence-alabama' },
+                { name: 'Gadsden', slug: 'gadsden-alabama' },
+                { name: 'Anniston', slug: 'anniston-alabama' },
+              ].map((city, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5, delay: index * 0.05 }}
+                >
+                  <Link
+                    href={`/vending-leads/${city.slug}`}
+                    className="btn-secondary px-6 py-3 rounded-lg text-base"
+                  >
+                    Vending Leads in {city.name}
+                  </Link>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Zip Code Modal Wrapper */}
+        <ZipCodeModalWrapper />
       </div>
-      
       <Footer />
     </>
   )

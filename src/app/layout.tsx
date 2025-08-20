@@ -30,11 +30,11 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://www.thevendinglocator.com'),
+  metadataBase: new URL('https://thevendinglocator.com'),
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://www.thevendinglocator.com',
+    url: 'https://thevendinglocator.com',
     siteName: 'The Vending Locator',
     title: 'The Vending Locator - Qualified Vending Location Leads',
     description: 'Find qualified vending machine locations with verified contact information. Access 4,100+ pre-qualified locations across 37+ cities.',
@@ -125,33 +125,18 @@ export default function RootLayout({
         />
       </head>
       <body className={inter.className}>
-        {/* Google Ads Conversion Tracking */}
+        {/* Google Analytics and Ads Tracking */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=AW-16569722490"
           strategy="afterInteractive"
-          id="google-ads-tracking"
+          id="google-tracking"
         />
-        <Script id="google-ads-config" strategy="afterInteractive">
+        <Script id="google-tracking-config" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'AW-16569722490');
-          `}
-        </Script>
-        
-        {/* Google Analytics */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
-          strategy="afterInteractive"
-          id="google-analytics"
-        />
-        <Script id="google-analytics-config" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'GA_MEASUREMENT_ID');
           `}
         </Script>
         
