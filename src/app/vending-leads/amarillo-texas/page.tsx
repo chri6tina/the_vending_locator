@@ -1,264 +1,446 @@
 'use client'
-import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, TruckIcon } from '@heroicons/react/24/solid'
-import { generateCityStructuredData } from '@/components/CityPageSEO'
+
+import Link from 'next/link'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
+import VendingCourse from '@/components/VendingCourse'
+import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
+import { useState, useEffect } from 'react'
+import { motion } from 'framer-motion'
+import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CpuChipIcon } from '@heroicons/react/24/solid'
 
 export default function AmarilloTexasVendingLeadsPage() {
-  const structuredData = generateCityStructuredData({
-    city: 'Amarillo',
-    state: 'Texas',
-    stateAbbr: 'TX',
-    population: '199,924',
-    businessCount: '15,000+',
-    industries: ['Transportation', 'Healthcare', 'Manufacturing', 'Agriculture', 'Energy'],
-    description: 'Amarillo offers excellent opportunities for vending machine placement with its major transportation hub, healthcare sector, and diverse business landscape.'
-  })
+  const [activeUsers, setActiveUsers] = useState(0)
+  const [userNames, setUserNames] = useState([
+    'Mike from Amarillo', 'Sarah in Downtown', 'David from Southwest', 'Lisa in Northwest',
+    'Tom from Northeast', 'Jennifer in Southeast', 'Robert from Central', 'Amanda in Westside',
+    'Chris in East Amarillo', 'Maria in Old Town', 'James in Wolflin', 'Emily in San Jacinto'
+  ])
+  const [currentUserIndex, setCurrentUserIndex] = useState(0)
+
+  // Fluctuating active users counter
+  useEffect(() => {
+    const updateActiveUsers = () => {
+      const baseUsers = 9
+      const fluctuation = Math.floor(Math.random() * 3) + 1
+      setActiveUsers(baseUsers + fluctuation)
+    }
+
+    const interval = setInterval(() => {
+      updateActiveUsers()
+    }, Math.random() * 2000 + 2000)
+
+    updateActiveUsers()
+    return () => clearInterval(interval)
+  }, [])
+
+  // Rotating user names
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentUserIndex(prev => (prev + 1) % userNames.length)
+    }, 3000)
+
+    return () => clearInterval(interval)
+  }, [userNames.length])
 
   return (
     <>
-      {/* Structured Data for SEO */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(structuredData)
-        }}
-      />
       <Header />
+      
       <div className="min-h-screen bg-warm-white">
-        {/* Hero Section - Matching Homepage Style */}
-        <div className="bg-warm-white">
-          <div className="mx-auto max-w-2xl px-4 sm:px-6 py-12 sm:py-16 lg:py-24">
+        {/* Enhanced Hero Section - Amarillo-Specific */}
+        <div className="bg-warm-white py-16 sm:py-24 lg:py-32">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center">
-              <h1 className="text-3xl sm:text-4xl lg:text-6xl font-playfair font-bold tracking-tight text-charcoal leading-tight">
-                Amarillo Vending Machine Locations
-              </h1>
-              <p className="mt-4 sm:mt-6 text-base sm:text-lg leading-7 sm:leading-8 text-stone px-2 sm:px-0">
-                Discover premium vending machine placement opportunities in Amarillo, Texas.
-                Access 15,000+ businesses and the heart of Texas Panhandle's transportation and energy hub.
-              </p>
-              {/* City Stats - Matching Homepage Counter Style */}
-              <div className="mt-10 sm:mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 px-4 sm:px-0">
-                <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-bronze">15,000+</div>
-                  <div className="text-xs sm:text-sm text-stone leading-tight">Businesses</div>
+              {/* Active Users Counter Pill */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                className="mb-8 p-4 bg-cream/50 backdrop-blur-sm rounded-2xl border border-gray-200 shadow-sm max-w-md mx-auto"
+              >
+                <div className="flex items-center justify-center gap-3">
+                  <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                  <span className="text-sm font-medium text-chocolate">
+                    <span className="font-bold text-coral">{activeUsers}</span> Amarillo vendors are choosing plans right now
+                  </span>
                 </div>
-                <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-bronze">200K+</div>
-                  <div className="text-xs sm:text-sm text-stone leading-tight">Population</div>
+                <div
+                  key={currentUserIndex}
+                  className="mt-2 text-xs text-chocolate/70"
+                >
+                  Including {userNames[currentUserIndex]}
                 </div>
-                <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-bronze">110+</div>
-                  <div className="text-xs sm:text-sm text-stone leading-tight">Vending Locations</div>
+              </motion.div>
+
+              <motion.h1
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className="text-4xl sm:text-5xl lg:text-6xl font-playfair font-bold tracking-tight text-charcoal leading-tight"
+              >
+                Vending Machine Locations<br />in Amarillo, Texas
+              </motion.h1>
+              
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                className="mt-6 sm:mt-8 text-lg sm:text-xl leading-8 text-stone max-w-4xl mx-auto"
+              >
+                Get pre-qualified vending machine locations in Amarillo's thriving energy and agriculture economy. 
+                Access verified businesses with detailed contact information and placement opportunities.
+              </motion.p>
+
+              {/* Trust Signals - Amarillo-Specific */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+                className="mt-8 sm:mt-10 grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-2xl mx-auto"
+              >
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <CheckBadgeIcon className="h-5 w-5 text-green-500" />
+                    <span className="text-sm font-medium text-chocolate">130+ Locations</span>
+                  </div>
                 </div>
-                <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-bronze">5</div>
-                  <div className="text-xs sm:text-sm text-stone leading-tight">Major Industries</div>
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <StarIcon className="h-5 w-5 text-yellow-500" />
+                    <span className="text-sm font-medium text-chocolate">5 Major Industries</span>
+                  </div>
                 </div>
-              </div>
-              {/* Trust Signals - Matching Homepage Style */}
-              <div className="mt-8 sm:mt-10 flex flex-wrap justify-center gap-4 sm:gap-6">
-                <div className="flex items-center gap-2 text-sm text-stone">
-                  <CheckBadgeIcon className="h-5 w-5 text-green-600" />
-                  <span>Verified Locations</span>
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <ShieldCheckIcon className="h-5 w-5 text-blue-500" />
+                    <span className="text-sm font-medium text-chocolate">100% Verified</span>
+                  </div>
                 </div>
-                <div className="flex items-center gap-2 text-sm text-stone">
-                  <StarIcon className="h-5 w-5 text-yellow-500" />
-                  <span>4.9/5 Rating</span>
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <ClockIcon className="h-5 w-5 text-purple-500" />
+                    <span className="text-sm font-medium text-chocolate">3-5 Day Delivery</span>
+                  </div>
                 </div>
-                <div className="flex items-center gap-2 text-sm text-stone">
-                  <ShieldCheckIcon className="h-5 w-5 text-blue-600" />
-                  <span>Secure & Reliable</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-sm text-stone">
-                  <ClockIcon className="h-5 w-5 text-purple-600" />
-                  <span>Quality Research</span>
-                </div>
-              </div>
+              </motion.div>
+
+              {/* CTA Buttons */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.8 }}
+                className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6"
+              >
+                <Link
+                  href="/pricing"
+                  className="w-full sm:w-auto btn-primary text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-lg"
+                >
+                  View Pricing & Get Started
+                </Link>
+                <Link
+                  href="/hot-leads"
+                  className="w-full sm:w-auto btn-secondary text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-lg"
+                >
+                  View Hot Leads
+                </Link>
+              </motion.div>
             </div>
           </div>
         </div>
 
-        {/* Business Landscape Section */}
-        <div className="bg-white py-16 sm:py-20">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
-                Amarillo Business Landscape
-              </h2>
-              <p className="text-lg text-stone max-w-3xl mx-auto">
-                Amarillo is a major transportation hub and energy center in the Texas Panhandle, offering diverse vending opportunities across multiple thriving industries.
-              </p>
-            </div>
+        {/* Business Landscape */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <motion.h2 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="text-3xl font-bold text-center mb-12 text-navy"
+            >
+              Business Landscape in Amarillo
+            </motion.h2>
+            
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="bg-warm-white p-6 rounded-lg border border-gray-200">
-                <div className="flex items-center gap-3 mb-4">
-                  <TruckIcon className="w-8 h-8 text-coral" />
-                  <h3 className="text-xl font-semibold text-charcoal">Transportation & Logistics</h3>
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.1 }}
+                viewport={{ once: true }}
+                className="text-center"
+              >
+                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <CpuChipIcon className="w-8 h-8 text-navy" />
                 </div>
-                <p className="text-stone">Major trucking companies, distribution centers, and logistics firms with high employee density and 24/7 operational hours.</p>
-              </div>
-              <div className="bg-warm-white p-6 rounded-lg border border-gray-200">
-                <div className="flex items-center gap-3 mb-4">
-                  <UsersIcon className="w-8 h-8 text-coral" />
-                  <h3 className="text-xl font-semibold text-charcoal">Healthcare & Medical</h3>
+                <h3 className="text-xl font-semibold mb-2 text-navy">Energy</h3>
+                <p className="text-gray-600">Oil and gas operations with industrial facilities and office complexes.</p>
+              </motion.div>
+              
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-center"
+              >
+                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <BuildingOfficeIcon className="w-8 h-8 text-navy" />
                 </div>
-                <p className="text-stone">Medical centers, hospitals, and healthcare facilities with staff, patients, and visitor traffic throughout the year.</p>
-              </div>
-              <div className="bg-warm-white p-6 rounded-lg border border-gray-200">
-                <div className="flex items-center gap-3 mb-4">
-                  <BuildingOfficeIcon className="w-8 h-8 text-coral" />
-                  <h3 className="text-xl font-semibold text-charcoal">Manufacturing</h3>
+                <h3 className="text-xl font-semibold mb-2 text-navy">Agriculture</h3>
+                <p className="text-gray-600">Major agricultural operations and food processing facilities.</p>
+              </motion.div>
+              
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="text-center"
+              >
+                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <AcademicCapIcon className="w-8 h-8 text-navy" />
                 </div>
-                <p className="text-stone">Industrial facilities and manufacturing plants with consistent employee traffic and operational hours.</p>
-              </div>
-              <div className="bg-warm-white p-6 rounded-lg border border-gray-200">
-                <div className="flex items-center gap-3 mb-4">
-                  <MapPinIcon className="w-8 h-8 text-coral" />
-                  <h3 className="text-xl font-semibold text-charcoal">Agriculture & Farming</h3>
+                <h3 className="text-xl font-semibold mb-2 text-navy">Healthcare</h3>
+                <p className="text-gray-600">Hospitals and medical facilities serving the growing population.</p>
+              </motion.div>
+              
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                viewport={{ once: true }}
+                className="text-center"
+              >
+                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <UsersIcon className="w-8 h-8 text-navy" />
                 </div>
-                <p className="text-stone">Agricultural operations, farming companies, and agribusiness with consistent employee traffic and seasonal workers.</p>
-              </div>
-              <div className="bg-warm-white p-6 rounded-lg border border-gray-200">
-                <div className="flex items-center gap-3 mb-4">
-                  <AcademicCapIcon className="w-8 h-8 text-coral" />
-                  <h3 className="text-xl font-semibold text-charcoal">Energy & Oil</h3>
+                <h3 className="text-xl font-semibold mb-2 text-navy">Manufacturing</h3>
+                <p className="text-gray-600">Industrial manufacturing plants and processing facilities.</p>
+              </motion.div>
+              
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.5 }}
+                viewport={{ once: true }}
+                className="text-center"
+              >
+                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <MapPinIcon className="w-8 h-8 text-navy" />
                 </div>
-                <p className="text-stone">Oil and gas operations, energy companies, and industrial facilities with consistent employee traffic and shift workers.</p>
-              </div>
-              <div className="bg-warm-white p-6 rounded-lg border border-gray-200">
-                <div className="flex items-center gap-3 mb-4">
-                  <UsersIcon className="w-8 h-8 text-coral" />
-                  <h3 className="text-xl font-semibold text-charcoal">Professional Services</h3>
+                <h3 className="text-xl font-semibold mb-2 text-navy">Transportation</h3>
+                <p className="text-gray-600">Logistics and transportation hubs serving the Panhandle.</p>
+              </motion.div>
+              
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+                viewport={{ once: true }}
+                className="text-center"
+              >
+                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <ClockIcon className="w-8 h-8 text-navy" />
                 </div>
-                <p className="text-stone">Law firms, accounting offices, and professional service companies with consistent client and employee traffic.</p>
-              </div>
+                <h3 className="text-xl font-semibold mb-2 text-navy">Education</h3>
+                <p className="text-gray-600">Universities and schools with growing student populations.</p>
+              </motion.div>
             </div>
           </div>
-        </div>
+        </section>
 
-        {/* Pricing Section */}
-        <div className="bg-warm-white py-16 sm:py-20">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
-                Choose Your Amarillo Vending Leads Package
-              </h2>
-              <p className="text-lg text-stone max-w-3xl mx-auto">
-                Get access to verified vending locations across Amarillo with our flexible pricing options designed for vending machine entrepreneurs.
-              </p>
-            </div>
-            <PricingTable />
+        {/* City Stats */}
+        <section className="py-16 bg-warm-white">
+          <div className="container mx-auto px-4">
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center"
+            >
+              <div>
+                <div className="text-4xl font-bold text-navy mb-2">199K+</div>
+                <div className="text-gray-600">Population</div>
+              </div>
+              <div>
+                <div className="text-4xl font-bold text-navy mb-2">16,000+</div>
+                <div className="text-gray-600">Businesses</div>
+              </div>
+              <div>
+                <div className="text-4xl font-bold text-navy mb-2">6</div>
+                <div className="text-gray-600">Major Industries</div>
+              </div>
+            </motion.div>
           </div>
-        </div>
+        </section>
 
-        {/* Hot Leads Section */}
-        <div className="bg-white py-16 sm:py-20">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <HotLeads />
-          </div>
-        </div>
+        {/* Pricing */}
+        <PricingTable />
+
+        {/* Hot Leads */}
+        <HotLeads />
+
+        {/* Vending Course */}
+        <VendingCourse />
 
         {/* FAQ Section */}
-        <div className="bg-warm-white py-16 sm:py-20">
-          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
-                Frequently Asked Questions
-              </h2>
-              <p className="text-lg text-stone">
-                Everything you need to know about vending machine opportunities in Amarillo, Texas.
-              </p>
-            </div>
-            <div className="space-y-6">
-              <div className="bg-white p-6 rounded-xl">
-                <h3 className="text-xl font-semibold text-charcoal mb-3">
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <motion.h2 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="text-3xl font-bold text-center mb-12 text-navy"
+            >
+              Frequently Asked Questions
+            </motion.h2>
+            
+            <div className="max-w-4xl mx-auto space-y-6">
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.1 }}
+                viewport={{ once: true }}
+                className="bg-white p-6 rounded-lg shadow-sm"
+              >
+                <h3 className="text-xl font-semibold mb-3 text-navy">
                   What types of businesses are best for vending machines in Amarillo?
                 </h3>
-                <p className="text-stone">
-                  Amarillo offers diverse opportunities including transportation companies, healthcare
-                  facilities, manufacturing plants, and agricultural operations. The major transportation
-                  hub and energy sectors provide excellent placement opportunities.
+                <p className="text-gray-600">
+                  Amarillo offers excellent opportunities in energy, agriculture, healthcare, and manufacturing sectors. The energy and agricultural operations provide stable employee bases for vending machines.
                 </p>
-              </div>
-              <div className="bg-white p-6 rounded-xl">
-                <h3 className="text-xl font-semibold text-charcoal mb-3">
+              </motion.div>
+              
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="bg-white p-6 rounded-lg shadow-sm"
+              >
+                <h3 className="text-xl font-semibold mb-3 text-navy">
                   How competitive is the vending machine market in Amarillo?
                 </h3>
-                <p className="text-stone">
-                  Amarillo has a moderate vending presence with significant opportunity for expansion,
-                  especially in new industrial developments and growing commercial areas.
+                <p className="text-gray-600">
+                  Amarillo has moderate competition with significant growth potential, especially in the expanding healthcare and education sectors, as well as new energy and industrial developments.
                 </p>
-              </div>
-              <div className="bg-white p-6 rounded-xl">
-                <h3 className="text-xl font-semibold text-charcoal mb-3">
+              </motion.div>
+              
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="bg-white p-6 rounded-lg shadow-sm"
+              >
+                <h3 className="text-xl font-semibold mb-3 text-navy">
                   What are the best vending machine types for Amarillo businesses?
                 </h3>
-                <p className="text-stone">
-                  For Amarillo transportation and manufacturing locations, industrial-grade beverage
-                  and snack machines work best. Healthcare facilities prefer healthy snack options,
-                  while agricultural operations need reliable machines. We provide specific recommendations for each business type.
+                <p className="text-gray-600">
+                  For energy and industrial facilities, industrial-grade snack and beverage machines work best. Healthcare facilities prefer healthy options, while educational institutions need student-friendly machines. We provide specific recommendations for each business type.
                 </p>
-              </div>
-              <div className="bg-white p-6 rounded-xl">
-                <h3 className="text-xl font-semibold text-charcoal mb-3">
-                  How does Amarillo's transportation hub benefit vending opportunities?
-                </h3>
-                <p className="text-stone">
-                  Amarillo's transportation hub creates 24/7 business activity with truck drivers,
-                  logistics workers, and high employee density. The energy and manufacturing sectors
-                  also provide stable customer bases for vending machines throughout the year.
-                </p>
-              </div>
-              <div className="bg-white p-6 rounded-xl">
-                <h3 className="text-xl font-semibold text-charcoal mb-3">
-                  What are average commission rates in Amarillo?
-                </h3>
-                <p className="text-stone">
-                  Amarillo commission rates vary by industry: transportation and manufacturing
-                  facilities typically offer 20-30%, healthcare facilities 25-35%, agricultural
-                  operations 20-30%, and retail locations 15-25%. Our leads include current commission rate information.
-                </p>
-              </div>
+              </motion.div>
             </div>
           </div>
-        </div>
+        </section>
 
-        {/* Other Texas Cities Section */}
-        <div className="bg-white py-16 sm:py-20">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
-                Other Texas Vending Locations
-              </h2>
-              <p className="text-lg text-stone max-w-3xl mx-auto">
-                Explore vending machine leads in other major Texas cities
-              </p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {[
-                { name: 'Houston', slug: 'houston-texas', count: '250+ leads' },
-                { name: 'Dallas', slug: 'dallas-texas', count: '200+ leads' },
-                { name: 'Austin', slug: 'austin-texas', count: '180+ leads' },
-              ].map((city) => (
-                <div key={city.slug} className="bg-warm-white p-6 rounded-lg border border-gray-200 text-center">
-                  <h3 className="text-xl font-semibold text-charcoal mb-2">{city.name}</h3>
-                  <p className="text-stone mb-4">{city.count}</p>
-                  <a
-                    href={`/vending-leads/${city.slug}`}
-                    className="inline-block bg-navy hover:bg-navy-light text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
-                  >
-                    View Locations
-                  </a>
-                </div>
-              ))}
+        {/* Other Cities in Texas */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <motion.h2 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="text-3xl font-bold text-center mb-12 text-navy"
+            >
+              Other Cities in Texas
+            </motion.h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
+              <motion.a 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.1 }}
+                viewport={{ once: true }}
+                href="/vending-leads/houston-texas" 
+                className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+              >
+                <h3 className="font-semibold text-navy">Houston</h3>
+                <p className="text-sm text-gray-600">Energy and healthcare hub</p>
+              </motion.a>
+              
+              <motion.a 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                href="/vending-leads/dallas-texas" 
+                className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+              >
+                <h3 className="font-semibold text-navy">Dallas</h3>
+                <p className="text-sm text-gray-600">Finance and technology center</p>
+              </motion.a>
+              
+              <motion.a 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+                viewport={{ once: true }}
+                href="/vending-leads/san-antonio-texas" 
+                className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+              >
+                <h3 className="font-semibold text-navy">San Antonio</h3>
+                <p className="text-sm text-gray-600">Military and healthcare center</p>
+              </motion.a>
+              
+              <motion.a 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                viewport={{ once: true }}
+                href="/vending-leads/austin-texas" 
+                className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+              >
+                <h3 className="font-semibold text-navy">Austin</h3>
+                <p className="text-sm text-gray-600">Technology and education hub</p>
+              </motion.a>
+              
+              <motion.a 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.5 }}
+                viewport={{ once: true }}
+                href="/vending-leads/fort-worth-texas" 
+                className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+              >
+                <h3 className="font-semibold text-navy">Fort Worth</h3>
+                <p className="text-sm text-gray-600">Manufacturing and logistics center</p>
+              </motion.a>
+              
+              <motion.a 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+                viewport={{ once: true }}
+                href="/vending-leads/el-paso-texas" 
+                className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+              >
+                <h3 className="font-semibold text-navy">El Paso</h3>
+                <p className="text-sm text-gray-600">Border and manufacturing hub</p>
+              </motion.a>
             </div>
           </div>
-        </div>
+        </section>
       </div>
+
       <Footer />
+      <ZipCodeModalWrapper />
     </>
   )
 }

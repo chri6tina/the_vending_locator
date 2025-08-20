@@ -9,63 +9,46 @@ import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, BanknotesIcon } from '@heroicons/react/24/solid'
-import { generateCityStructuredData } from '@/components/CityPageSEO'
+import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CpuChipIcon } from '@heroicons/react/24/solid'
 
-// Generate metadata for this page
 export default function DallasTexasVendingLeadsPage() {
   const [activeUsers, setActiveUsers] = useState(0)
   const [userNames, setUserNames] = useState([
-    'Mike from Dallas', 'Sarah in Plano', 'David from Irving', 'Lisa in Arlington',
-    'Tom in Richardson', 'Jennifer in Garland', 'Robert from Mesquite', 'Amanda in Grand Prairie',
-    'Chris in Carrollton', 'Maria in McKinney', 'James in Frisco', 'Emily in Allen'
+    'Mike from Dallas', 'Sarah in Downtown', 'David in Uptown', 'Lisa in Deep Ellum',
+    'Tom in Oak Lawn', 'Jennifer in Bishop Arts', 'Robert in Lakewood', 'Amanda in Highland Park',
+    'Chris in Preston Hollow', 'Maria in North Dallas', 'James in East Dallas', 'Emily in West Dallas'
   ])
   const [currentUserIndex, setCurrentUserIndex] = useState(0)
 
   // Fluctuating active users counter
   useEffect(() => {
     const updateActiveUsers = () => {
-      const baseUsers = 7
-      const fluctuation = Math.floor(Math.random() * 3) + 1
+      const baseUsers = 15
+      const fluctuation = Math.floor(Math.random() * 5) + 1
       setActiveUsers(baseUsers + fluctuation)
     }
 
-    // Update every 2-5 seconds
-    const interval = setInterval(updateActiveUsers, Math.random() * 3000 + 2000)
+    const interval = setInterval(() => {
+      updateActiveUsers()
+    }, Math.random() * 2000 + 2000)
+
+    updateActiveUsers()
     return () => clearInterval(interval)
   }, [])
 
   // Rotating user names
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentUserIndex((prevIndex) => (prevIndex + 1) % userNames.length)
-    }, 3000) // Change name every 3 seconds
+      setCurrentUserIndex(prev => (prev + 1) % userNames.length)
+    }, 3000)
+
     return () => clearInterval(interval)
   }, [userNames.length])
 
-  // Generate structured data for this page
-  const structuredData = generateCityStructuredData({
-    city: 'Dallas',
-    state: 'Texas',
-    stateAbbr: 'TX',
-    population: '1,304,379',
-    businessCount: '55,000+',
-    industries: ['Financial Services', 'Technology', 'Healthcare', 'Transportation', 'Manufacturing'],
-    description: 'Dallas offers excellent opportunities for vending machine placement with its major financial services sector, growing technology industry, and expanding healthcare market.'
-  })
-
   return (
     <>
-      {/* Structured Data for SEO */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(structuredData)
-        }}
-      />
-
       <Header />
-
+      
       <div className="min-h-screen bg-warm-white">
         {/* Enhanced Hero Section - Dallas-Specific */}
         <div className="bg-warm-white py-16 sm:py-24 lg:py-32">
@@ -75,34 +58,39 @@ export default function DallasTexasVendingLeadsPage() {
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-                className="inline-flex items-center rounded-full bg-coral/10 px-4 py-1 text-sm font-medium text-coral ring-1 ring-inset ring-coral/20"
+                transition={{ duration: 0.8 }}
+                className="mb-8 p-4 bg-cream/50 backdrop-blur-sm rounded-2xl border border-gray-200 shadow-sm max-w-md mx-auto"
               >
-                <UsersIcon className="h-4 w-4 mr-2" />
-                <span className="font-bold">{activeUsers}</span> users are viewing Dallas leads right now!
+                <div className="flex items-center justify-center gap-3">
+                  <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                  <span className="text-sm font-medium text-chocolate">
+                    <span className="font-bold text-coral">{activeUsers}</span> Dallas vendors are choosing plans right now
+                  </span>
+                </div>
+                <div
+                  key={currentUserIndex}
+                  className="mt-2 text-xs text-chocolate/70"
+                >
+                  Including {userNames[currentUserIndex]}
+                </div>
               </motion.div>
-              <div
-                key={currentUserIndex}
-                className="mt-2 text-xs text-chocolate/70"
-              >
-                Including {userNames[currentUserIndex]}
-              </div>
 
               <motion.h1
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
-                className="mt-6 text-4xl font-playfair font-bold tracking-tight text-charcoal sm:text-6xl"
+                className="text-4xl sm:text-5xl lg:text-6xl font-playfair font-bold tracking-tight text-charcoal leading-tight"
               >
-                Dallas Vending Machine Leads
+                Vending Machine Locations<br />in Dallas, Texas
               </motion.h1>
+              
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
                 className="mt-6 sm:mt-8 text-lg sm:text-xl leading-8 text-stone max-w-4xl mx-auto"
               >
-                Get pre-qualified vending machine locations in Big D's booming financial services and technology economy.
+                Get pre-qualified vending machine locations in Dallas's thriving business and technology economy. 
                 Access verified businesses with detailed contact information and placement opportunities.
               </motion.p>
 
@@ -111,19 +99,31 @@ export default function DallasTexasVendingLeadsPage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.6 }}
-                className="mt-8 sm:mt-12 flex flex-wrap justify-center gap-4 sm:gap-6"
+                className="mt-8 sm:mt-10 grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-2xl mx-auto"
               >
-                <div className="flex items-center gap-2 text-sm text-chocolate/70">
-                  <CheckBadgeIcon className="w-5 h-5 text-coral" />
-                  <span>55,000+ Dallas businesses</span>
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <CheckBadgeIcon className="h-5 w-5 text-green-500" />
+                    <span className="text-sm font-medium text-chocolate">250+ Locations</span>
+                  </div>
                 </div>
-                <div className="flex items-center gap-2 text-sm text-chocolate/70">
-                  <StarIcon className="w-5 h-5 text-coral" />
-                  <span>98% verified locations</span>
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <StarIcon className="h-5 w-5 text-yellow-500" />
+                    <span className="text-sm font-medium text-chocolate">7 Major Industries</span>
+                  </div>
                 </div>
-                <div className="flex items-center gap-2 text-sm text-chocolate/70">
-                  <ShieldCheckIcon className="w-5 h-5 text-coral" />
-                  <span>Instant access</span>
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <ShieldCheckIcon className="h-5 w-5 text-blue-500" />
+                    <span className="text-sm font-medium text-chocolate">100% Verified</span>
+                  </div>
+                </div>
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <ClockIcon className="h-5 w-5 text-purple-500" />
+                    <span className="text-sm font-medium text-chocolate">3-5 Day Delivery</span>
+                  </div>
                 </div>
               </motion.div>
 
@@ -132,349 +132,311 @@ export default function DallasTexasVendingLeadsPage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.8 }}
-                className="mt-8 sm:mt-12 flex flex-col sm:flex-row gap-4 justify-center"
+                className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6"
               >
                 <Link
-                  href="#pricing"
-                  className="inline-flex items-center justify-center px-8 py-4 bg-coral text-white font-semibold rounded-lg hover:bg-coral/90 transition-colors duration-200 shadow-lg hover:shadow-xl"
+                  href="/pricing"
+                  className="w-full sm:w-auto btn-primary text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-lg"
                 >
-                  <ClockIcon className="w-5 h-5 mr-2" />
-                  Get Dallas Leads Now
+                  View Pricing & Get Started
                 </Link>
                 <Link
-                  href="#locations"
-                  className="inline-flex items-center justify-center px-8 py-4 bg-white text-chocolate font-semibold rounded-lg border-2 border-chocolate/20 hover:border-chocolate/40 transition-colors duration-200 shadow-lg hover:shadow-xl"
+                  href="/hot-leads"
+                  className="w-full sm:w-auto btn-secondary text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-lg"
                 >
-                  <MapPinIcon className="w-5 h-5 mr-2" />
-                  View Dallas Locations
+                  View Hot Leads
                 </Link>
-              </motion.div>
-            </div>
-          </div>
-        </div>
-
-        {/* Pricing Section - Prominent and Early */}
-        <div className="bg-white py-16 sm:py-20 lg:py-24" id="pricing">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="mx-auto max-w-4xl text-center mb-12 sm:mb-16">
-              <h2 className="text-3xl sm:text-4xl font-playfair font-bold text-chocolate mb-4">
-                Unlock Dallas's Vending Potential
-              </h2>
-              <p className="text-lg text-chocolate/70">
-                Choose the plan that best fits your vending machine business needs in Dallas.
-              </p>
-            </div>
-            <PricingTable />
-          </div>
-        </div>
-
-        {/* Dallas-Specific Stats */}
-        <div className="bg-cream/30 py-16 sm:py-20">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl font-playfair font-bold text-chocolate mb-4">
-                Why Dallas for Vending?
-              </h2>
-              <p className="text-lg text-chocolate/70 max-w-3xl mx-auto">
-                Dallas's unique combination of financial services innovation, major technology companies, and growing healthcare sector creates exceptional vending opportunities.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-                className="text-center"
-              >
-                <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                  <UsersIcon className="w-12 h-12 text-coral mx-auto mb-4" />
-                  <h3 className="text-2xl font-bold text-chocolate mb-2">1.3M+</h3>
-                  <p className="text-stone text-sm">Population</p>
-                </div>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.1 }}
-                className="text-center"
-              >
-                <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                  <BuildingOfficeIcon className="w-12 h-12 text-coral mx-auto mb-4" />
-                  <h3 className="text-2xl font-bold text-chocolate mb-2">55K+</h3>
-                  <p className="text-stone text-sm">Businesses</p>
-                </div>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                className="text-center"
-              >
-                <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                  <BanknotesIcon className="w-12 h-12 text-coral mx-auto mb-4" />
-                  <h3 className="text-2xl font-bold text-chocolate mb-2">300+</h3>
-                  <p className="text-stone text-sm">Financial Firms</p>
-                </div>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-                className="text-center"
-              >
-                <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                  <MapPinIcon className="w-12 h-12 text-coral mx-auto mb-4" />
-                  <h3 className="text-2xl font-bold text-chocolate mb-2">385</h3>
-                  <p className="text-stone text-sm">Square Miles</p>
-                </div>
               </motion.div>
             </div>
           </div>
         </div>
 
         {/* Business Landscape */}
-        <div className="bg-white py-16 sm:py-20">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl font-playfair font-bold text-chocolate mb-4">
-                Dallas's Business Landscape
-              </h2>
-              <p className="text-lg text-chocolate/70 max-w-3xl mx-auto">
-                Dallas's diverse economy spans financial services, technology, healthcare, and transportation sectors, providing excellent vending machine placement opportunities.
-              </p>
-            </div>
-
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <motion.h2 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="text-3xl font-bold text-center mb-12 text-navy"
+            >
+              Business Landscape in Dallas
+            </motion.h2>
+            
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <motion.div
+              <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-                className="bg-cream/30 p-6 rounded-lg"
+                transition={{ duration: 0.8, delay: 0.1 }}
+                viewport={{ once: true }}
+                className="text-center"
               >
-                <h3 className="text-xl font-semibold text-chocolate mb-3">Financial Services Hub</h3>
-                <p className="text-stone text-sm leading-relaxed">
-                  Home to major banks, investment firms, and financial services companies.
-                  Financial professionals create consistent vending demand across the city.
-                </p>
+                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <BuildingOfficeIcon className="w-8 h-8 text-navy" />
+                </div>
+                <h3 className="text-xl font-semibold mb-2 text-navy">Business</h3>
+                <p className="text-gray-600">Corporate headquarters and business services.</p>
               </motion.div>
-
-              <motion.div
+              
+              <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.1 }}
-                className="bg-cream/30 p-6 rounded-lg"
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-center"
               >
-                <h3 className="text-xl font-semibold text-chocolate mb-3">Technology & Innovation</h3>
-                <p className="text-stone text-sm leading-relaxed">
-                  Growing technology sector with major companies, startups, and innovation centers.
-                  Tech professionals provide steady vending machine usage.
-                </p>
+                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <CpuChipIcon className="w-8 h-8 text-navy" />
+                </div>
+                <h3 className="text-xl font-semibold mb-2 text-navy">Technology</h3>
+                <p className="text-gray-600">Tech companies and startups.</p>
               </motion.div>
-
-              <motion.div
+              
+              <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                className="bg-cream/30 p-6 rounded-lg"
+                transition={{ duration: 0.8, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="text-center"
               >
-                <h3 className="text-xl font-semibold text-chocolate mb-3">Healthcare & Transportation</h3>
-                <p className="text-stone text-sm leading-relaxed">
-                  Major healthcare systems and transportation companies with thousands of workers.
-                  Healthcare and transportation provide consistent vending machine usage.
-                </p>
+                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <UsersIcon className="w-8 h-8 text-navy" />
+                </div>
+                <h3 className="text-xl font-semibold mb-2 text-navy">Healthcare</h3>
+                <p className="text-gray-600">Hospitals and medical facilities.</p>
               </motion.div>
-            </div>
-          </div>
-        </div>
-
-        {/* Key Business Districts */}
-        <div className="bg-warm-white py-16 sm:py-20" id="locations">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl font-playfair font-bold text-chocolate mb-4">
-                Key Dallas Business Districts
-              </h2>
-              <p className="text-lg text-chocolate/70 max-w-3xl mx-auto">
-                These high-traffic areas offer excellent vending machine placement opportunities with consistent foot traffic and employee bases.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <motion.div
+              
+              <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-                className="bg-white p-6 rounded-lg shadow-sm border border-gray-200"
+                transition={{ duration: 0.8, delay: 0.4 }}
+                viewport={{ once: true }}
+                className="text-center"
               >
-                <h3 className="text-lg font-semibold text-chocolate mb-3">Downtown Dallas</h3>
-                <p className="text-stone text-sm">
-                  Financial district with major banks, corporate headquarters, and thousands of financial professionals.
-                </p>
+                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <AcademicCapIcon className="w-8 h-8 text-navy" />
+                </div>
+                <h3 className="text-xl font-semibold mb-2 text-navy">Education</h3>
+                <p className="text-gray-600">Universities and educational institutions.</p>
               </motion.div>
-
-              <motion.div
+              
+              <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.1 }}
-                className="bg-white p-6 rounded-lg shadow-sm border border-gray-200"
+                transition={{ duration: 0.8, delay: 0.5 }}
+                viewport={{ once: true }}
+                className="text-center"
               >
-                <h3 className="text-lg font-semibold text-chocolate mb-3">Uptown Dallas</h3>
-                <p className="text-stone text-sm">
-                  Upscale business district with corporate offices, hotels, and high-end retail.
-                </p>
+                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <MapPinIcon className="w-8 h-8 text-navy" />
+                </div>
+                <h3 className="text-xl font-semibold mb-2 text-navy">Financial</h3>
+                <p className="text-gray-600">Banking and financial services.</p>
               </motion.div>
-
-              <motion.div
+              
+              <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                className="bg-white p-6 rounded-lg shadow-sm border border-gray-200"
+                transition={{ duration: 0.8, delay: 0.6 }}
+                viewport={{ once: true }}
+                className="text-center"
               >
-                <h3 className="text-lg font-semibold text-chocolate mb-3">Plano Legacy</h3>
-                <p className="text-stone text-sm">
-                  Major corporate headquarters and technology companies with thousands of employees.
-                </p>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-                className="bg-white p-6 rounded-lg shadow-sm border border-gray-200"
-              >
-                <h3 className="text-lg font-semibold text-chocolate mb-3">Las Colinas</h3>
-                <p className="text-stone text-sm">
-                  Corporate office parks and business centers with major companies and professional services.
-                </p>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.4 }}
-                className="bg-white p-6 rounded-lg shadow-sm border border-gray-200"
-              >
-                <h3 className="text-lg font-semibold text-chocolate mb-3">Medical District</h3>
-                <p className="text-stone text-sm">
-                  Major hospitals and medical facilities with healthcare workers and patients.
-                </p>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.5 }}
-                className="bg-white p-6 rounded-lg shadow-sm border border-gray-200"
-              >
-                <h3 className="text-lg font-semibold text-chocolate mb-3">DFW Airport Area</h3>
-                <p className="text-stone text-sm">
-                  Airport operations, logistics companies, and transportation facilities with employee and traveler traffic.
-                </p>
+                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <ClockIcon className="w-8 h-8 text-navy" />
+                </div>
+                <h3 className="text-xl font-semibold mb-2 text-navy">Retail</h3>
+                <p className="text-gray-600">Shopping centers and retail businesses.</p>
               </motion.div>
             </div>
           </div>
-        </div>
+        </section>
 
-        {/* FAQ Section */}
-        <div className="bg-cream/30 py-16 sm:py-20">
-          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl font-playfair font-bold text-chocolate mb-4">
-                Frequently Asked Questions
-              </h2>
-              <p className="text-lg text-chocolate/70">
-                Everything you need to know about vending machine opportunities in Dallas, Texas.
-              </p>
-            </div>
-
-            <div className="space-y-6">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-                className="bg-white p-6 rounded-lg shadow-sm border border-gray-200"
-              >
-                <h3 className="text-lg font-semibold text-chocolate mb-3">
-                  What types of businesses in Dallas need vending machines?
-                </h3>
-                <p className="text-stone text-sm leading-relaxed">
-                  Dallas's diverse business landscape includes financial services companies, technology firms, healthcare facilities,
-                  transportation companies, and manufacturing operations. All of these provide excellent opportunities for vending machine placement.
-                </p>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.1 }}
-                className="bg-white p-6 rounded-lg shadow-sm border border-gray-200"
-              >
-                <h3 className="text-lg font-semibold text-chocolate mb-3">
-                  How many vending machine locations are available in Dallas?
-                </h3>
-                <p className="text-stone text-sm leading-relaxed">
-                  We currently have access to over 2,800 pre-qualified vending machine locations in Dallas and the surrounding metro area.
-                  New locations are added weekly as businesses expand and new companies move to the area.
-                </p>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                className="bg-white p-6 rounded-lg shadow-sm border border-gray-200"
-              >
-                <h3 className="text-lg font-semibold text-chocolate mb-3">
-                  What are the best areas in Dallas for vending machine placement?
-                </h3>
-                <p className="text-stone text-sm leading-relaxed">
-                  Downtown Dallas, Uptown, Plano Legacy, and Las Colinas offer the highest
-                  foot traffic and employee density. However, opportunities exist throughout the city as Dallas continues to grow rapidly.
-                </p>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-                className="bg-white p-6 rounded-lg shadow-sm border border-gray-200"
-              >
-                <h3 className="text-lg font-semibold text-chocolate mb-3">
-                  How quickly can I access Dallas vending machine leads?
-                </h3>
-                <p className="text-stone text-sm leading-relaxed">
-                  With our instant access plans, you can download Dallas vending machine leads immediately after purchase.
-                  All leads include verified business information, contact details, and placement opportunities.
-                </p>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.4 }}
-                className="bg-white p-6 rounded-lg shadow-sm border border-gray-200"
-              >
-                <h3 className="text-lg font-semibold text-chocolate mb-3">
-                  Are there seasonal variations in Dallas vending opportunities?
-                </h3>
-                <p className="text-stone text-sm leading-relaxed">
-                  Dallas experiences some seasonal variations, particularly around major events and tourism seasons.
-                  However, the strong year-round financial services and technology climate ensures consistent vending machine opportunities.
-                </p>
-              </motion.div>
-            </div>
+        {/* City Stats */}
+        <section className="py-16 bg-warm-white">
+          <div className="container mx-auto px-4">
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center"
+            >
+              <div>
+                <div className="text-4xl font-bold text-navy mb-2">1.3M+</div>
+                <div className="text-gray-600">Population</div>
+              </div>
+              <div>
+                <div className="text-4xl font-bold text-navy mb-2">85,000+</div>
+                <div className="text-gray-600">Businesses</div>
+              </div>
+              <div>
+                <div className="text-4xl font-bold text-navy mb-2">7</div>
+                <div className="text-gray-600">Major Industries</div>
+              </div>
+            </motion.div>
           </div>
-        </div>
+        </section>
 
-        {/* Hot Leads Section */}
+        {/* Pricing */}
+        <PricingTable />
+
+        {/* Hot Leads */}
         <HotLeads />
 
-        {/* Vending Course Section */}
+        {/* Vending Course */}
         <VendingCourse />
+
+        {/* FAQ Section */}
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <motion.h2 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="text-3xl font-bold text-center mb-12 text-navy"
+            >
+              Frequently Asked Questions
+            </motion.h2>
+            
+            <div className="max-w-4xl mx-auto space-y-6">
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.1 }}
+                viewport={{ once: true }}
+                className="bg-white p-6 rounded-lg shadow-sm"
+              >
+                <h3 className="text-xl font-semibold mb-3 text-navy">
+                  What types of businesses are best for vending machines in Dallas?
+                </h3>
+                <p className="text-gray-600">
+                  Dallas offers excellent opportunities in business services, technology, healthcare, and education sectors. The corporate headquarters, tech companies, and healthcare facilities provide stable employee bases for vending machines.
+                </p>
+              </motion.div>
+              
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="bg-white p-6 rounded-lg shadow-sm"
+              >
+                <h3 className="text-xl font-semibold mb-3 text-navy">
+                  How competitive is the vending machine market in Dallas?
+                </h3>
+                <p className="text-gray-600">
+                  Dallas has moderate competition with significant growth potential, especially in the expanding technology and business services sectors, as well as new commercial developments throughout the metro area.
+                </p>
+              </motion.div>
+              
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="bg-white p-6 rounded-lg shadow-sm"
+              >
+                <h3 className="text-xl font-semibold mb-3 text-navy">
+                  What are the best vending machine types for Dallas businesses?
+                </h3>
+                <p className="text-gray-600">
+                  For corporate offices, reliable snack and beverage machines work best. Tech companies prefer modern machines, while healthcare facilities need healthy options. We provide specific recommendations for each business type.
+                </p>
+              </motion.div>
+            </div>
+          </div>
+        </section>
+
+        {/* Other Cities in Texas */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <motion.h2 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="text-3xl font-bold text-center mb-12 text-navy"
+            >
+              Other Cities in Texas
+            </motion.h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
+              <motion.a 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.1 }}
+                viewport={{ once: true }}
+                href="/vending-leads/houston-texas" 
+                className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+              >
+                <h3 className="font-semibold text-navy">Houston</h3>
+                <p className="text-sm text-gray-600">Energy and healthcare hub</p>
+              </motion.a>
+              
+              <motion.a 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                href="/vending-leads/austin-texas" 
+                className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+              >
+                <h3 className="font-semibold text-navy">Austin</h3>
+                <p className="text-sm text-gray-600">Technology and government hub</p>
+              </motion.a>
+              
+              <motion.a 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+                viewport={{ once: true }}
+                href="/vending-leads/san-antonio-texas" 
+                className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+              >
+                <h3 className="font-semibold text-navy">San Antonio</h3>
+                <p className="text-sm text-gray-600">Military and tourism center</p>
+              </motion.a>
+              
+              <motion.a 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                viewport={{ once: true }}
+                href="/vending-leads/fort-worth-texas" 
+                className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+              >
+                <h3 className="font-semibold text-navy">Fort Worth</h3>
+                <p className="text-sm text-gray-600">Manufacturing and logistics hub</p>
+              </motion.a>
+              
+              <motion.a 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.5 }}
+                viewport={{ once: true }}
+                href="/vending-leads/corpus-christi-texas" 
+                className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+              >
+                <h3 className="font-semibold text-navy">Corpus Christi</h3>
+                <p className="text-sm text-gray-600">Port city and energy center</p>
+              </motion.a>
+              
+              <motion.a 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+                viewport={{ once: true }}
+                href="/vending-leads/el-paso-texas" 
+                className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+              >
+                <h3 className="font-semibold text-navy">El Paso</h3>
+                <p className="text-sm text-gray-600">Border city and military center</p>
+              </motion.a>
+            </div>
+          </div>
+        </section>
       </div>
 
       <Footer />

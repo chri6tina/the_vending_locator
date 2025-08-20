@@ -10,10 +10,10 @@ export const metadata: Metadata = generateCityMetadata({
   city: 'Oklahoma City',
   state: 'Oklahoma',
   stateAbbr: 'OK',
-  population: '680K+',
-  businessCount: '12,500+',
+  population: '681K+',
+  businessCount: '32,500+',
   industries: ['Energy', 'Healthcare', 'Education', 'Manufacturing', 'Technology'],
-  description: 'Oklahoma City offers energy companies, healthcare facilities, educational institutions, and manufacturing businesses perfect for vending machine placement opportunities.'
+  description: 'Oklahoma City offers energy companies, healthcare facilities, educational institutions, manufacturing companies, and technology firms perfect for vending machine placement opportunities.'
 })
 
 export default function OklahomaCityOklahomaVendingLeadsPage() {
@@ -21,10 +21,10 @@ export default function OklahomaCityOklahomaVendingLeadsPage() {
     city: 'Oklahoma City',
     state: 'Oklahoma',
     stateAbbr: 'OK',
-    population: '680K+',
-    businessCount: '12,500+',
+    population: '681K+',
+    businessCount: '32,500+',
     industries: ['Energy', 'Healthcare', 'Education', 'Manufacturing', 'Technology'],
-    description: 'Oklahoma City offers energy companies, healthcare facilities, educational institutions, and manufacturing businesses perfect for vending machine placement opportunities.'
+    description: 'Oklahoma City offers energy companies, healthcare facilities, educational institutions, manufacturing companies, and technology firms perfect for vending machine placement opportunities.'
   })
 
   return (
@@ -55,7 +55,7 @@ export default function OklahomaCityOklahomaVendingLeadsPage() {
                   Healthcare
                 </div>
                 <div className="bg-white/20 rounded-full px-6 py-2 text-white text-sm">
-                  Education
+                  Technology
                 </div>
               </div>
             </div>
@@ -148,7 +148,7 @@ export default function OklahomaCityOklahomaVendingLeadsPage() {
             <div className="max-w-3xl mx-auto space-y-6">
               <div className="bg-warm-white p-6 rounded-lg">
                 <h3 className="text-lg font-semibold text-charcoal mb-2">What types of businesses in Oklahoma City need vending machines?</h3>
-                <p className="text-stone">Energy companies, healthcare facilities, educational institutions, manufacturing plants, and office buildings in Oklahoma City are excellent locations for vending machine placement.</p>
+                <p className="text-stone">Energy companies, healthcare facilities, educational institutions, manufacturing companies, and technology firms in Oklahoma City are excellent locations for vending machine placement.</p>
               </div>
               <div className="bg-warm-white p-6 rounded-lg">
                 <h3 className="text-lg font-semibold text-charcoal mb-2">How do I get started with vending machine placement in Oklahoma City?</h3>
@@ -156,7 +156,7 @@ export default function OklahomaCityOklahomaVendingLeadsPage() {
               </div>
               <div className="bg-warm-white p-6 rounded-lg">
                 <h3 className="text-lg font-semibold text-charcoal mb-2">What are the best areas in Oklahoma City for vending machines?</h3>
-                <p className="text-stone">The downtown area, energy corridors, healthcare districts, educational campuses, and manufacturing zones offer the highest potential for vending machine success.</p>
+                <p className="text-stone">The downtown area, energy districts, healthcare corridors, educational campuses, and manufacturing zones offer the highest potential for vending machine success.</p>
               </div>
             </div>
           </div>
@@ -176,15 +176,15 @@ export default function OklahomaCityOklahomaVendingLeadsPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <a href="/vending-leads/tulsa-oklahoma" className="block bg-white p-6 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
                 <h3 className="text-lg font-semibold text-charcoal mb-2">Tulsa</h3>
-                <p className="text-stone text-sm">Oklahoma's second-largest city with diverse business opportunities</p>
+                <p className="text-stone text-sm">Energy hub with healthcare and education</p>
               </a>
               <a href="/vending-leads/norman-oklahoma" className="block bg-white p-6 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
                 <h3 className="text-lg font-semibold text-charcoal mb-2">Norman</h3>
-                <p className="text-stone text-sm">University town with education and research focus</p>
+                <p className="text-stone text-sm">Education hub with technology and healthcare</p>
               </a>
-              <a href="/vending-leads/edmond-oklahoma" className="block bg-white p-6 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
-                <h3 className="text-lg font-semibold text-charcoal mb-2">Edmond</h3>
-                <p className="text-stone text-sm">Suburban business hub with growing corporate sector</p>
+              <a href="/vending-leads/broken-arrow-oklahoma" className="block bg-white p-6 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
+                <h3 className="text-lg font-semibold text-charcoal mb-2">Broken Arrow</h3>
+                <p className="text-stone text-sm">Suburban hub with manufacturing and healthcare</p>
               </a>
             </div>
           </div>

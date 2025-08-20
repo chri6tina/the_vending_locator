@@ -10,10 +10,10 @@ export const metadata: Metadata = generateCityMetadata({
   city: 'Saint Paul',
   state: 'Minnesota',
   stateAbbr: 'MN',
-  population: '310K+',
-  businessCount: '6,800+',
+  population: '311K+',
+  businessCount: '25,500+',
   industries: ['Government', 'Healthcare', 'Education', 'Manufacturing', 'Technology'],
-  description: 'Saint Paul offers government offices, healthcare facilities, educational institutions, and manufacturing businesses perfect for vending machine placement opportunities.'
+  description: 'Saint Paul offers government agencies, healthcare facilities, educational institutions, manufacturing companies, and technology firms perfect for vending machine placement opportunities.'
 })
 
 export default function SaintPaulMinnesotaVendingLeadsPage() {
@@ -21,10 +21,10 @@ export default function SaintPaulMinnesotaVendingLeadsPage() {
     city: 'Saint Paul',
     state: 'Minnesota',
     stateAbbr: 'MN',
-    population: '310K+',
-    businessCount: '6,800+',
+    population: '311K+',
+    businessCount: '25,500+',
     industries: ['Government', 'Healthcare', 'Education', 'Manufacturing', 'Technology'],
-    description: 'Saint Paul offers government offices, healthcare facilities, educational institutions, and manufacturing businesses perfect for vending machine placement opportunities.'
+    description: 'Saint Paul offers government agencies, healthcare facilities, educational institutions, manufacturing companies, and technology firms perfect for vending machine placement opportunities.'
   })
 
   return (
@@ -77,14 +77,14 @@ export default function SaintPaulMinnesotaVendingLeadsPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="text-center">
                 <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <BuildingOfficeIcon className="w-8 h-8 text-navy" />
+                  <UsersIcon className="w-8 h-8 text-navy" />
                 </div>
                 <h3 className="text-lg font-semibold text-charcoal mb-2">Government</h3>
-                <p className="text-stone text-sm">State offices, agencies, and government facilities</p>
+                <p className="text-stone text-sm">Government offices and agencies</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <UsersIcon className="w-8 h-8 text-navy" />
+                  <BuildingOfficeIcon className="w-8 h-8 text-navy" />
                 </div>
                 <h3 className="text-lg font-semibold text-charcoal mb-2">Healthcare</h3>
                 <p className="text-stone text-sm">Hospitals, clinics, and medical facilities</p>
@@ -148,7 +148,7 @@ export default function SaintPaulMinnesotaVendingLeadsPage() {
             <div className="max-w-3xl mx-auto space-y-6">
               <div className="bg-warm-white p-6 rounded-lg">
                 <h3 className="text-lg font-semibold text-charcoal mb-2">What types of businesses in Saint Paul need vending machines?</h3>
-                <p className="text-stone">Government offices, healthcare facilities, educational institutions, manufacturing plants, and office buildings in Saint Paul are excellent locations for vending machine placement.</p>
+                <p className="text-stone">Government agencies, healthcare facilities, educational institutions, manufacturing companies, and technology firms in Saint Paul are excellent locations for vending machine placement.</p>
               </div>
               <div className="bg-warm-white p-6 rounded-lg">
                 <h3 className="text-lg font-semibold text-charcoal mb-2">How do I get started with vending machine placement in Saint Paul?</h3>
@@ -176,15 +176,15 @@ export default function SaintPaulMinnesotaVendingLeadsPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <a href="/vending-leads/minneapolis-minnesota" className="block bg-white p-6 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
                 <h3 className="text-lg font-semibold text-charcoal mb-2">Minneapolis</h3>
-                <p className="text-stone text-sm">Minnesota's largest city with diverse business opportunities</p>
-              </a>
-              <a href="/vending-leads/duluth-minnesota" className="block bg-white p-6 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
-                <h3 className="text-lg font-semibold text-charcoal mb-2">Duluth</h3>
-                <p className="text-stone text-sm">Healthcare and tourism hub on Lake Superior</p>
+                <p className="text-stone text-sm">Major metropolitan hub with diverse industries</p>
               </a>
               <a href="/vending-leads/rochester-minnesota" className="block bg-white p-6 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
                 <h3 className="text-lg font-semibold text-charcoal mb-2">Rochester</h3>
-                <p className="text-stone text-sm">Healthcare hub with Mayo Clinic and medical facilities</p>
+                <p className="text-stone text-sm">Healthcare hub with education and technology</p>
+              </a>
+              <a href="/vending-leads/duluth-minnesota" className="block bg-white p-6 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
+                <h3 className="text-lg font-semibold text-charcoal mb-2">Duluth</h3>
+                <p className="text-stone text-sm">Port city with healthcare and education</p>
               </a>
             </div>
           </div>

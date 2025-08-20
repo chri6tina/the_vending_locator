@@ -1,275 +1,446 @@
 'use client'
 
-import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, WrenchScrewdriverIcon } from '@heroicons/react/24/solid'
-import { generateCityStructuredData } from '@/components/CityPageSEO'
+import Link from 'next/link'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
+import VendingCourse from '@/components/VendingCourse'
+import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
+import { useState, useEffect } from 'react'
+import { motion } from 'framer-motion'
+import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CpuChipIcon } from '@heroicons/react/24/solid'
 
 export default function ClevelandOhioVendingLeadsPage() {
-  const structuredData = generateCityStructuredData({
-    city: 'Cleveland',
-    state: 'Ohio',
-    stateAbbr: 'OH',
-    population: '372,624',
-    businessCount: '35,000+',
-    industries: ['Manufacturing', 'Healthcare', 'Financial Services', 'Technology', 'Education'],
-    description: 'Cleveland offers excellent opportunities for vending machine placement with its major manufacturing sector, healthcare industry, and diverse business landscape.'
-  })
+  const [activeUsers, setActiveUsers] = useState(0)
+  const [userNames, setUserNames] = useState([
+    'Mike from Cleveland', 'Sarah in Downtown', 'David in University Circle', 'Lisa in Ohio City',
+    'Tom in Tremont', 'Jennifer in Lakewood', 'Robert in Cleveland Heights', 'Amanda in Shaker Heights',
+    'Chris in Westlake', 'Maria in Independence', 'James in Brooklyn', 'Emily in Parma'
+  ])
+  const [currentUserIndex, setCurrentUserIndex] = useState(0)
+
+  // Fluctuating active users counter
+  useEffect(() => {
+    const updateActiveUsers = () => {
+      const baseUsers = 10
+      const fluctuation = Math.floor(Math.random() * 4) + 1
+      setActiveUsers(baseUsers + fluctuation)
+    }
+
+    const interval = setInterval(() => {
+      updateActiveUsers()
+    }, Math.random() * 2000 + 2000)
+
+    updateActiveUsers()
+    return () => clearInterval(interval)
+  }, [])
+
+  // Rotating user names
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentUserIndex(prev => (prev + 1) % userNames.length)
+    }, 3000)
+
+    return () => clearInterval(interval)
+  }, [userNames.length])
 
   return (
     <>
-      {/* Structured Data for SEO */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(structuredData)
-        }}
-      />
-      
       <Header />
       
       <div className="min-h-screen bg-warm-white">
-        {/* Hero Section - Matching Homepage Style */}
-        <div className="bg-warm-white">
-          <div className="mx-auto max-w-2xl px-4 sm:px-6 py-12 sm:py-16 lg:py-24">
+        {/* Enhanced Hero Section - Cleveland-Specific */}
+        <div className="bg-warm-white py-16 sm:py-24 lg:py-32">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center">
-              <h1 className="text-3xl sm:text-4xl lg:text-6xl font-playfair font-bold tracking-tight text-charcoal leading-tight">
-                Cleveland Vending Machine Locations
-              </h1>
+              {/* Active Users Counter Pill */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                className="mb-8 p-4 bg-cream/50 backdrop-blur-sm rounded-2xl border border-gray-200 shadow-sm max-w-md mx-auto"
+              >
+                <div className="flex items-center justify-center gap-3">
+                  <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                  <span className="text-sm font-medium text-chocolate">
+                    <span className="font-bold text-coral">{activeUsers}</span> Cleveland vendors are choosing plans right now
+                  </span>
+                </div>
+                <div
+                  key={currentUserIndex}
+                  className="mt-2 text-xs text-chocolate/70"
+                >
+                  Including {userNames[currentUserIndex]}
+                </div>
+              </motion.div>
+
+              <motion.h1
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className="text-4xl sm:text-5xl lg:text-6xl font-playfair font-bold tracking-tight text-charcoal leading-tight"
+              >
+                Vending Machine Locations<br />in Cleveland, Ohio
+              </motion.h1>
               
-              <p className="mt-4 sm:mt-6 text-base sm:text-lg leading-7 sm:leading-8 text-stone px-2 sm:px-0">
-                Discover premium vending machine placement opportunities in Cleveland, Ohio. 
-                Access 35,000+ businesses and the heart of Ohio's manufacturing and healthcare hub.
-              </p>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                className="mt-6 sm:mt-8 text-lg sm:text-xl leading-8 text-stone max-w-4xl mx-auto"
+              >
+                Get pre-qualified vending machine locations in Cleveland's thriving healthcare and manufacturing economy. 
+                Access verified businesses with detailed contact information and placement opportunities.
+              </motion.p>
 
-              {/* City Stats - Matching Homepage Counter Style */}
-              <div className="mt-10 sm:mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 px-4 sm:px-0">
-                <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-bronze">35,000+</div>
-                  <div className="text-xs sm:text-sm text-stone leading-tight">Businesses</div>
+              {/* Trust Signals - Cleveland-Specific */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+                className="mt-8 sm:mt-10 grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-2xl mx-auto"
+              >
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <CheckBadgeIcon className="h-5 w-5 text-green-500" />
+                    <span className="text-sm font-medium text-chocolate">150+ Locations</span>
+                  </div>
                 </div>
-                <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-bronze">373K+</div>
-                  <div className="text-xs sm:text-sm text-stone leading-tight">Population</div>
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <StarIcon className="h-5 w-5 text-yellow-500" />
+                    <span className="text-sm font-medium text-chocolate">6 Major Industries</span>
+                  </div>
                 </div>
-                <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-bronze">140+</div>
-                  <div className="text-xs sm:text-sm text-stone leading-tight">Vending Locations</div>
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <ShieldCheckIcon className="h-5 w-5 text-blue-500" />
+                    <span className="text-sm font-medium text-chocolate">100% Verified</span>
+                  </div>
                 </div>
-                <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-bronze">5</div>
-                  <div className="text-xs sm:text-sm text-stone leading-tight">Major Industries</div>
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <ClockIcon className="h-5 w-5 text-purple-500" />
+                    <span className="text-sm font-medium text-chocolate">3-5 Day Delivery</span>
+                  </div>
                 </div>
-              </div>
+              </motion.div>
 
-              {/* Trust Signals - Matching Homepage Style */}
-              <div className="mt-8 sm:mt-10 flex flex-wrap justify-center gap-4 sm:gap-6">
-                <div className="flex items-center gap-2 text-sm text-stone">
-                  <CheckBadgeIcon className="h-5 w-5 text-green-600" />
-                  <span>Verified Locations</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-stone">
-                  <StarIcon className="h-5 w-5 text-yellow-500" />
-                  <span>4.9/5 Rating</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-stone">
-                  <ShieldCheckIcon className="h-5 w-5 text-blue-600" />
-                  <span>Secure & Reliable</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-stone">
-                  <ClockIcon className="h-5 w-5 text-purple-600" />
-                  <span>Quality Research</span>
-                </div>
-              </div>
+              {/* CTA Buttons */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.8 }}
+                className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6"
+              >
+                <Link
+                  href="/pricing"
+                  className="w-full sm:w-auto btn-primary text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-lg"
+                >
+                  View Pricing & Get Started
+                </Link>
+                <Link
+                  href="/hot-leads"
+                  className="w-full sm:w-auto btn-secondary text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-lg"
+                >
+                  View Hot Leads
+                </Link>
+              </motion.div>
             </div>
           </div>
         </div>
 
-        {/* Business Landscape Section */}
-        <div className="bg-white py-16 sm:py-20">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
-                Cleveland Business Landscape
-              </h2>
-              <p className="text-lg text-stone max-w-3xl mx-auto">
-                Cleveland is Ohio's second-largest city and a major manufacturing hub, offering diverse vending opportunities across multiple thriving industries.
-              </p>
-            </div>
-
+        {/* Business Landscape */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <motion.h2 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="text-3xl font-bold text-center mb-12 text-navy"
+            >
+              Business Landscape in Cleveland
+            </motion.h2>
+            
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="text-center">
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.1 }}
+                viewport={{ once: true }}
+                className="text-center"
+              >
                 <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <WrenchScrewdriverIcon className="w-8 h-8 text-navy" />
+                  <UsersIcon className="w-8 h-8 text-navy" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Manufacturing Hub</h3>
-                <p className="text-stone">Steel, automotive, and industrial manufacturing</p>
-              </div>
-
-              <div className="text-center">
+                <h3 className="text-xl font-semibold mb-2 text-navy">Healthcare</h3>
+                <p className="text-gray-600">Hospitals and medical facilities.</p>
+              </motion.div>
+              
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-center"
+              >
+                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <CpuChipIcon className="w-8 h-8 text-navy" />
+                </div>
+                <h3 className="text-xl font-semibold mb-2 text-navy">Manufacturing</h3>
+                <p className="text-gray-600">Industrial and manufacturing companies.</p>
+              </motion.div>
+              
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="text-center"
+              >
                 <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <BuildingOfficeIcon className="w-8 h-8 text-navy" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Healthcare</h3>
-                <p className="text-stone">Major medical centers and research institutions</p>
-              </div>
-
-              <div className="text-center">
+                <h3 className="text-xl font-semibold mb-2 text-navy">Financial</h3>
+                <p className="text-gray-600">Banking and financial services.</p>
+              </motion.div>
+              
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                viewport={{ once: true }}
+                className="text-center"
+              >
+                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <MapPinIcon className="w-8 h-8 text-navy" />
+                </div>
+                <h3 className="text-xl font-semibold mb-2 text-navy">Transportation</h3>
+                <p className="text-gray-600">Logistics and transportation companies.</p>
+              </motion.div>
+              
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.5 }}
+                viewport={{ once: true }}
+                className="text-center"
+              >
                 <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <AcademicCapIcon className="w-8 h-8 text-navy" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Financial Services</h3>
-                <p className="text-stone">Banking, insurance, and investment firms</p>
-              </div>
+                <h3 className="text-xl font-semibold mb-2 text-navy">Education</h3>
+                <p className="text-gray-600">Universities and educational institutions.</p>
+              </motion.div>
+              
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+                viewport={{ once: true }}
+                className="text-center"
+              >
+                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <ClockIcon className="w-8 h-8 text-navy" />
+                </div>
+                <h3 className="text-xl font-semibold mb-2 text-navy">Technology</h3>
+                <p className="text-gray-600">Tech companies and startups.</p>
+              </motion.div>
             </div>
           </div>
-        </div>
+        </section>
 
-        {/* Key Business Districts */}
-        <div className="bg-warm-white py-16 sm:py-20">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
-                Key Business Districts
-              </h2>
-              <p className="text-lg text-stone max-w-3xl mx-auto">
-                Strategic vending machine placement opportunities in Cleveland's most active business areas.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Downtown Cleveland</h3>
-                <p className="text-stone mb-3">Financial district, corporate headquarters, and government offices</p>
-                <div className="text-sm text-bronze font-medium">220+ businesses</div>
+        {/* City Stats */}
+        <section className="py-16 bg-warm-white">
+          <div className="container mx-auto px-4">
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center"
+            >
+              <div>
+                <div className="text-4xl font-bold text-navy mb-2">372K+</div>
+                <div className="text-gray-600">Population</div>
               </div>
-
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                <h3 className="text-xl font-semibold text-charcoal mb-3">University Circle</h3>
-                <p className="text-stone mb-3">Healthcare facilities, universities, and research institutions</p>
-                <div className="text-sm text-bronze font-medium">200+ businesses</div>
+              <div>
+                <div className="text-4xl font-bold text-navy mb-2">28,500+</div>
+                <div className="text-gray-600">Businesses</div>
               </div>
-
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Flats</h3>
-                <p className="text-stone mb-3">Entertainment, restaurants, and office buildings</p>
-                <div className="text-sm text-bronze font-medium">180+ businesses</div>
+              <div>
+                <div className="text-4xl font-bold text-navy mb-2">6</div>
+                <div className="text-gray-600">Major Industries</div>
               </div>
-
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Midtown</h3>
-                <p className="text-stone mb-3">Healthcare, education, and professional services</p>
-                <div className="text-sm text-bronze font-medium">160+ businesses</div>
-              </div>
-
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Industrial Valley</h3>
-                <p className="text-stone mb-3">Manufacturing, logistics, and industrial companies</p>
-                <div className="text-sm text-bronze font-medium">140+ businesses</div>
-              </div>
-
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Airport Area</h3>
-                <p className="text-stone mb-3">Logistics, transportation, and hospitality businesses</p>
-                <div className="text-sm text-bronze font-medium">120+ businesses</div>
-              </div>
-            </div>
+            </motion.div>
           </div>
-        </div>
+        </section>
 
-        {/* Pricing Section - Prominently Displayed */}
-        <div className="bg-white py-16 sm:py-20">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
-                Get Cleveland Vending Machine Leads
-              </h2>
-              <p className="text-lg text-stone max-w-3xl mx-auto">
-                Choose the plan that fits your business needs and start receiving qualified vending machine location leads in Cleveland.
-              </p>
-            </div>
-            <PricingTable />
-          </div>
-        </div>
+        {/* Pricing */}
+        <PricingTable />
 
-        {/* Hot Leads Section */}
-        <div className="bg-warm-white py-16 sm:py-20">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <HotLeads />
-          </div>
-        </div>
+        {/* Hot Leads */}
+        <HotLeads />
+
+        {/* Vending Course */}
+        <VendingCourse />
 
         {/* FAQ Section */}
-        <div className="bg-white py-16 sm:py-20">
-          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
-                Frequently Asked Questions
-              </h2>
-              <p className="text-lg text-stone">
-                Everything you need to know about vending machine opportunities in Cleveland.
-              </p>
-            </div>
-
-            <div className="space-y-6">
-              <div className="bg-warm-white p-6 rounded-xl">
-                <h3 className="text-xl font-semibold text-charcoal mb-3">
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <motion.h2 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="text-3xl font-bold text-center mb-12 text-navy"
+            >
+              Frequently Asked Questions
+            </motion.h2>
+            
+            <div className="max-w-4xl mx-auto space-y-6">
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.1 }}
+                viewport={{ once: true }}
+                className="bg-white p-6 rounded-lg shadow-sm"
+              >
+                <h3 className="text-xl font-semibold mb-3 text-navy">
                   What types of businesses are best for vending machines in Cleveland?
                 </h3>
-                <p className="text-stone">
-                  Cleveland offers diverse opportunities including office buildings, healthcare facilities, 
-                  manufacturing plants, and retail centers. The major manufacturing sector and strong healthcare 
-                  industry provide excellent placement opportunities.
+                <p className="text-gray-600">
+                  Cleveland offers excellent opportunities in healthcare, manufacturing, financial services, and transportation sectors. The healthcare facilities, manufacturing plants, and financial offices provide stable employee bases for vending machines.
                 </p>
-              </div>
-
-              <div className="bg-warm-white p-6 rounded-xl">
-                <h3 className="text-xl font-semibold text-charcoal mb-3">
+              </motion.div>
+              
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="bg-white p-6 rounded-lg shadow-sm"
+              >
+                <h3 className="text-xl font-semibold mb-3 text-navy">
                   How competitive is the vending machine market in Cleveland?
                 </h3>
-                <p className="text-stone">
-                  Cleveland has a growing vending presence, but there's still significant opportunity 
-                  for expansion, especially in new business developments and emerging neighborhoods.
+                <p className="text-gray-600">
+                  Cleveland has moderate competition with significant growth potential, especially in the expanding healthcare and manufacturing sectors, as well as new commercial developments throughout the metro area.
                 </p>
-              </div>
-
-              <div className="bg-warm-white p-6 rounded-xl">
-                <h3 className="text-xl font-semibold text-charcoal mb-3">
-                  What are the peak business hours for vending in Cleveland?
+              </motion.div>
+              
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="bg-white p-6 rounded-lg shadow-sm"
+              >
+                <h3 className="text-xl font-semibold mb-3 text-navy">
+                  What are the best vending machine types for Cleveland businesses?
                 </h3>
-                <p className="text-stone">
-                  Cleveland businesses typically operate from 8 AM to 6 PM, with peak vending activity 
-                  during lunch hours (12 PM - 2 PM) and afternoon breaks (3 PM - 4 PM).
+                <p className="text-gray-600">
+                  For healthcare facilities, healthy snack and beverage machines work best. Manufacturing plants need durable machines, while financial offices prefer reliable machines. We provide specific recommendations for each business type.
                 </p>
-              </div>
-
-              <div className="bg-warm-white p-6 rounded-xl">
-                <h3 className="text-xl font-semibold text-charcoal mb-3">
-                  Are there seasonal considerations for vending in Cleveland?
-                </h3>
-                <p className="text-stone">
-                  Yes, Cleveland experiences four distinct seasons with cold winters and hot summers. Indoor locations 
-                  are preferred year-round, but spring and fall offer comfortable outdoor opportunities.
-                </p>
-              </div>
-
-              <div className="bg-warm-white p-6 rounded-xl">
-                <h3 className="text-xl font-semibold text-charcoal mb-3">
-                  What permits are required for vending machines in Cleveland?
-                </h3>
-                <p className="text-stone">
-                  You'll need a business license from the City of Cleveland and potentially health permits 
-                  for food vending. Specific requirements depend on your machine type and location.
-                </p>
-              </div>
+              </motion.div>
             </div>
           </div>
-        </div>
+        </section>
+
+        {/* Other Cities in Ohio */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <motion.h2 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="text-3xl font-bold text-center mb-12 text-navy"
+            >
+              Other Cities in Ohio
+            </motion.h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
+              <motion.a 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.1 }}
+                viewport={{ once: true }}
+                href="/vending-leads/columbus-ohio" 
+                className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+              >
+                <h3 className="font-semibold text-navy">Columbus</h3>
+                <p className="text-sm text-gray-600">State capital and research center</p>
+              </motion.a>
+              
+              <motion.a 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                href="/vending-leads/cincinnati-ohio" 
+                className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+              >
+                <h3 className="font-semibold text-navy">Cincinnati</h3>
+                <p className="text-sm text-gray-600">Manufacturing and healthcare hub</p>
+              </motion.a>
+              
+              <motion.a 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+                viewport={{ once: true }}
+                href="/vending-leads/toledo-ohio" 
+                className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+              >
+                <h3 className="font-semibold text-navy">Toledo</h3>
+                <p className="text-sm text-gray-600">Manufacturing and port city</p>
+              </motion.a>
+              
+              <motion.a 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                viewport={{ once: true }}
+                href="/vending-leads/akron-ohio" 
+                className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+              >
+                <h3 className="font-semibold text-navy">Akron</h3>
+                <p className="text-sm text-gray-600">Rubber and polymer industry hub</p>
+              </motion.a>
+              
+              <motion.a 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.5 }}
+                viewport={{ once: true }}
+                href="/vending-leads/dayton-ohio" 
+                className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+              >
+                <h3 className="font-semibold text-navy">Dayton</h3>
+                <p className="text-sm text-gray-600">Aerospace and research center</p>
+              </motion.a>
+              
+              <motion.a 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+                viewport={{ once: true }}
+                href="/vending-leads/youngstown-ohio" 
+                className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+              >
+                <h3 className="font-semibold text-navy">Youngstown</h3>
+                <p className="text-sm text-gray-600">Steel and manufacturing center</p>
+              </motion.a>
+            </div>
+          </div>
+        </section>
       </div>
-      
+
       <Footer />
+      <ZipCodeModalWrapper />
     </>
   )
 }

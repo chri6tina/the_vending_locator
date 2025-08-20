@@ -9,24 +9,22 @@ import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CogIcon } from '@heroicons/react/24/solid'
-import { generateCityStructuredData } from '@/components/CityPageSEO'
+import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CpuChipIcon } from '@heroicons/react/24/solid'
 
-// Generate metadata for this page
 export default function ColumbusOhioVendingLeadsPage() {
   const [activeUsers, setActiveUsers] = useState(0)
   const [userNames, setUserNames] = useState([
-    'Mike from Columbus', 'Sarah in Dublin', 'David in Westerville', 'Lisa in Upper Arlington',
-    'Tom in Gahanna', 'Jennifer in New Albany', 'Robert from Hilliard', 'Amanda in Worthington',
-    'Chris in Reynoldsburg', 'Maria in Pickerington', 'James in Grove City', 'Emily in Bexley'
+    'Mike from Columbus', 'Sarah in Downtown', 'David in Short North', 'Lisa in German Village',
+    'Tom in Italian Village', 'Jennifer in Victorian Village', 'Robert in Brewery District', 'Amanda in Arena District',
+    'Chris in Grandview Heights', 'Maria in Upper Arlington', 'James in Worthington', 'Emily in Dublin'
   ])
   const [currentUserIndex, setCurrentUserIndex] = useState(0)
 
   // Fluctuating active users counter
   useEffect(() => {
     const updateActiveUsers = () => {
-      const baseUsers = 5
-      const fluctuation = Math.floor(Math.random() * 3) + 1
+      const baseUsers = 12
+      const fluctuation = Math.floor(Math.random() * 4) + 1
       setActiveUsers(baseUsers + fluctuation)
     }
 
@@ -47,27 +45,8 @@ export default function ColumbusOhioVendingLeadsPage() {
     return () => clearInterval(interval)
   }, [userNames.length])
 
-  // Generate structured data for this page
-  const structuredData = generateCityStructuredData({
-    city: 'Columbus',
-    state: 'Ohio',
-    stateAbbr: 'OH',
-    population: '898,553',
-    businessCount: '48,000+',
-    industries: ['Manufacturing', 'Education', 'Healthcare', 'Technology', 'Financial Services'],
-    description: 'Columbus offers excellent opportunities for vending machine placement with its major manufacturing sector, major universities, and growing healthcare industry.'
-  })
-
   return (
     <>
-      {/* Structured Data for SEO */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(structuredData)
-        }}
-      />
-      
       <Header />
       
       <div className="min-h-screen bg-warm-white">
@@ -111,7 +90,7 @@ export default function ColumbusOhioVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.4 }}
                 className="mt-6 sm:mt-8 text-lg sm:text-xl leading-8 text-stone max-w-4xl mx-auto"
               >
-                Get pre-qualified vending machine locations in the Arch City's booming manufacturing and education economy. 
+                Get pre-qualified vending machine locations in Columbus's thriving research and technology economy. 
                 Access verified businesses with detailed contact information and placement opportunities.
               </motion.p>
 
@@ -120,19 +99,31 @@ export default function ColumbusOhioVendingLeadsPage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.6 }}
-                className="mt-8 sm:mt-12 flex flex-wrap justify-center gap-4 sm:gap-6"
+                className="mt-8 sm:mt-10 grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-2xl mx-auto"
               >
-                <div className="flex items-center gap-2 text-sm text-chocolate/70">
-                  <CheckBadgeIcon className="w-5 h-5 text-coral" />
-                  <span>48,000+ Columbus businesses</span>
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <CheckBadgeIcon className="h-5 w-5 text-green-500" />
+                    <span className="text-sm font-medium text-chocolate">200+ Locations</span>
+                  </div>
                 </div>
-                <div className="flex items-center gap-2 text-sm text-chocolate/70">
-                  <StarIcon className="w-5 h-5 text-coral" />
-                  <span>98% verified locations</span>
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <StarIcon className="h-5 w-5 text-yellow-500" />
+                    <span className="text-sm font-medium text-chocolate">7 Major Industries</span>
+                  </div>
                 </div>
-                <div className="flex items-center gap-2 text-sm text-chocolate/70">
-                  <ShieldCheckIcon className="w-5 h-5 text-coral" />
-                  <span>Instant access</span>
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <ShieldCheckIcon className="h-5 w-5 text-blue-500" />
+                    <span className="text-sm font-medium text-chocolate">100% Verified</span>
+                  </div>
+                </div>
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <ClockIcon className="h-5 w-5 text-purple-500" />
+                    <span className="text-sm font-medium text-chocolate">3-5 Day Delivery</span>
+                  </div>
                 </div>
               </motion.div>
 
@@ -141,352 +132,313 @@ export default function ColumbusOhioVendingLeadsPage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.8 }}
-                className="mt-8 sm:mt-12 flex flex-col sm:flex-row gap-4 justify-center"
+                className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6"
               >
                 <Link
-                  href="#pricing"
-                  className="inline-flex items-center justify-center px-8 py-4 bg-coral text-white font-semibold rounded-lg hover:bg-coral/90 transition-colors duration-200 shadow-lg hover:shadow-xl"
+                  href="/pricing"
+                  className="w-full sm:w-auto btn-primary text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-lg"
                 >
-                  <ClockIcon className="w-5 h-5 mr-2" />
-                  Get Columbus Leads Now
+                  View Pricing & Get Started
                 </Link>
                 <Link
-                  href="#locations"
-                  className="inline-flex items-center justify-center px-8 py-4 bg-white text-chocolate font-semibold rounded-lg border-2 border-chocolate/20 hover:border-chocolate/40 transition-colors duration-200 shadow-lg hover:shadow-xl"
+                  href="/hot-leads"
+                  className="w-full sm:w-auto btn-secondary text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-lg"
                 >
-                  <MapPinIcon className="w-5 h-5 mr-2" />
-                  View Columbus Locations
+                  View Hot Leads
                 </Link>
-              </motion.div>
-            </div>
-          </div>
-        </div>
-
-        {/* Pricing Section - Prominent and Early */}
-        <div className="bg-white py-16 sm:py-20 lg:py-24" id="pricing">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="mx-auto max-w-4xl text-center mb-12 sm:mb-16">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-playfair font-bold tracking-tight text-chocolate mb-6">
-                Get Columbus Vending Machine Leads
-              </h2>
-              <p className="text-lg sm:text-xl text-chocolate/70 leading-relaxed max-w-3xl mx-auto">
-                Access our comprehensive database of qualified Columbus vending machine locations with flexible pricing options. 
-                No long-term contracts, just results that help you grow your Columbus vending business.
-              </p>
-            </div>
-            <PricingTable />
-          </div>
-        </div>
-
-        {/* Columbus-Specific Stats */}
-        <div className="bg-cream/30 py-16 sm:py-20">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl font-playfair font-bold text-chocolate mb-4">
-                Why Columbus for Vending?
-              </h2>
-              <p className="text-lg text-chocolate/70 max-w-3xl mx-auto">
-                Columbus's unique combination of manufacturing innovation, major universities, and growing healthcare sector creates exceptional vending opportunities.
-              </p>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-                className="text-center"
-              >
-                <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                  <UsersIcon className="w-12 h-12 text-coral mx-auto mb-4" />
-                  <h3 className="text-2xl font-bold text-chocolate mb-2">898K+</h3>
-                  <p className="text-stone text-sm">Population</p>
-                </div>
-              </motion.div>
-              
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.1 }}
-                className="text-center"
-              >
-                <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                  <BuildingOfficeIcon className="w-12 h-12 text-coral mx-auto mb-4" />
-                  <h3 className="text-2xl font-bold text-chocolate mb-2">48K+</h3>
-                  <p className="text-stone text-sm">Businesses</p>
-                </div>
-              </motion.div>
-              
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                className="text-center"
-              >
-                <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                  <CogIcon className="w-12 h-12 text-coral mx-auto mb-4" />
-                  <h3 className="text-2xl font-bold text-chocolate mb-2">400+</h3>
-                  <p className="text-stone text-sm">Manufacturing Plants</p>
-                </div>
-              </motion.div>
-              
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-                className="text-center"
-              >
-                <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                  <MapPinIcon className="w-12 h-12 text-coral mx-auto mb-4" />
-                  <h3 className="text-2xl font-bold text-chocolate mb-2">225</h3>
-                  <p className="text-stone text-sm">Square Miles</p>
-                </div>
               </motion.div>
             </div>
           </div>
         </div>
 
         {/* Business Landscape */}
-        <div className="bg-white py-16 sm:py-20">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl font-playfair font-bold text-chocolate mb-4">
-                Columbus's Business Landscape
-              </h2>
-              <p className="text-lg text-chocolate/70 max-w-3xl mx-auto">
-                Columbus's diverse economy spans manufacturing, education, healthcare, and technology sectors, providing excellent vending machine placement opportunities.
-              </p>
-            </div>
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <motion.h2 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="text-3xl font-bold text-center mb-12 text-navy"
+            >
+              Business Landscape in Columbus
+            </motion.h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <motion.div
+              <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-                className="bg-cream/30 p-6 rounded-lg"
+                transition={{ duration: 0.8, delay: 0.1 }}
+                viewport={{ once: true }}
+                className="text-center"
               >
-                <h3 className="text-xl font-semibold text-chocolate mb-3">Manufacturing Hub</h3>
-                <p className="text-stone text-sm leading-relaxed">
-                  Home to major manufacturing companies like Honda, Worthington Industries, and hundreds of industrial facilities. 
-                  Manufacturing workers create consistent vending demand.
-                </p>
+                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <AcademicCapIcon className="w-8 h-8 text-navy" />
+                </div>
+                <h3 className="text-xl font-semibold mb-2 text-navy">Education</h3>
+                <p className="text-gray-600">Universities and research institutions.</p>
               </motion.div>
               
-              <motion.div
+              <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.1 }}
-                className="bg-cream/30 p-6 rounded-lg"
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-center"
               >
-                <h3 className="text-xl font-semibold text-chocolate mb-3">Education & Research</h3>
-                <p className="text-stone text-sm leading-relaxed">
-                  Ohio State University, Columbus State Community College, and numerous research institutions. 
-                  Students, faculty, and researchers provide steady vending machine usage.
-                </p>
+                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <CpuChipIcon className="w-8 h-8 text-navy" />
+                </div>
+                <h3 className="text-xl font-semibold mb-2 text-navy">Technology</h3>
+                <p className="text-gray-600">Tech companies and startups.</p>
               </motion.div>
               
-              <motion.div
+              <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                className="bg-cream/30 p-6 rounded-lg"
+                transition={{ duration: 0.8, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="text-center"
               >
-                <h3 className="text-xl font-semibold text-chocolate mb-3">Healthcare & Technology</h3>
-                <p className="text-stone text-sm leading-relaxed">
-                  Major healthcare systems like OhioHealth and Nationwide Children's Hospital with healthcare workers. 
-                  Growing tech sector provides consistent vending machine usage.
-                </p>
+                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <UsersIcon className="w-8 h-8 text-navy" />
+                </div>
+                <h3 className="text-xl font-semibold mb-2 text-navy">Healthcare</h3>
+                <p className="text-gray-600">Hospitals and medical facilities.</p>
+              </motion.div>
+              
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                viewport={{ once: true }}
+                className="text-center"
+              >
+                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <BuildingOfficeIcon className="w-8 h-8 text-navy" />
+                </div>
+                <h3 className="text-xl font-semibold mb-2 text-navy">Financial</h3>
+                <p className="text-gray-600">Banking and financial services.</p>
+              </motion.div>
+              
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.5 }}
+                viewport={{ once: true }}
+                className="text-center"
+              >
+                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <MapPinIcon className="w-8 h-8 text-navy" />
+                </div>
+                <h3 className="text-xl font-semibold mb-2 text-navy">Insurance</h3>
+                <p className="text-gray-600">Insurance companies and services.</p>
+              </motion.div>
+              
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+                viewport={{ once: true }}
+                className="text-center"
+              >
+                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <ClockIcon className="w-8 h-8 text-navy" />
+                </div>
+                <h3 className="text-xl font-semibold mb-2 text-navy">Retail</h3>
+                <p className="text-gray-600">Shopping centers and retail businesses.</p>
               </motion.div>
             </div>
           </div>
-        </div>
+        </section>
 
-        {/* Key Business Districts */}
-        <div className="bg-warm-white py-16 sm:py-20" id="locations">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl font-playfair font-bold text-chocolate mb-4">
-                Key Columbus Business Districts
-              </h2>
-              <p className="text-lg text-chocolate/70 max-w-3xl mx-auto">
-                These high-traffic areas offer excellent vending machine placement opportunities with consistent foot traffic and employee bases.
-              </p>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-                className="bg-white p-6 rounded-lg shadow-sm border border-gray-200"
-              >
-                <h3 className="text-lg font-semibold text-chocolate mb-3">Downtown Columbus</h3>
-                <p className="text-stone text-sm">
-                  Government offices, financial services, and business headquarters with thousands of employees.
-                </p>
-              </motion.div>
-              
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.1 }}
-                className="bg-white p-6 rounded-lg shadow-sm border border-gray-200"
-              >
-                <h3 className="text-lg font-semibold text-chocolate mb-3">Ohio State University</h3>
-                <p className="text-stone text-sm">
-                  Over 60,000 students, faculty, and staff across multiple campuses with high vending machine usage.
-                </p>
-              </motion.div>
-              
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                className="bg-white p-6 rounded-lg shadow-sm border border-gray-200"
-              >
-                <h3 className="text-lg font-semibold text-chocolate mb-3">Manufacturing Corridor</h3>
-                <p className="text-stone text-sm">
-                  Major manufacturing plants and industrial facilities with thousands of workers.
-                </p>
-              </motion.div>
-              
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-                className="bg-white p-6 rounded-lg shadow-sm border border-gray-200"
-              >
-                <h3 className="text-lg font-semibold text-chocolate mb-3">Medical District</h3>
-                <p className="text-stone text-sm">
-                  Hospitals, medical offices, and research facilities with healthcare workers and patients.
-                </p>
-              </motion.div>
-              
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.4 }}
-                className="bg-white p-6 rounded-lg shadow-sm border border-gray-200"
-              >
-                <h3 className="text-lg font-semibold text-chocolate mb-3">Easton & Polaris</h3>
-                <p className="text-stone text-sm">
-                  Major retail and office complexes with thousands of employees and visitors.
-                </p>
-              </motion.div>
-              
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.5 }}
-                className="bg-white p-6 rounded-lg shadow-sm border border-gray-200"
-              >
-                <h3 className="text-lg font-semibold text-chocolate mb-3">Airport Area</h3>
-                <p className="text-stone text-sm">
-                  John Glenn Columbus International Airport and surrounding logistics companies with employee and traveler traffic.
-                </p>
-              </motion.div>
-            </div>
+        {/* City Stats */}
+        <section className="py-16 bg-warm-white">
+          <div className="container mx-auto px-4">
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center"
+            >
+              <div>
+                <div className="text-4xl font-bold text-navy mb-2">898K+</div>
+                <div className="text-gray-600">Population</div>
+              </div>
+              <div>
+                <div className="text-4xl font-bold text-navy mb-2">75,000+</div>
+                <div className="text-gray-600">Businesses</div>
+              </div>
+              <div>
+                <div className="text-4xl font-bold text-navy mb-2">7</div>
+                <div className="text-gray-600">Major Industries</div>
+              </div>
+            </motion.div>
           </div>
-        </div>
+        </section>
 
-        {/* FAQ Section */}
-        <div className="bg-cream/30 py-16 sm:py-20">
-          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl font-playfair font-bold text-chocolate mb-4">
-                Frequently Asked Questions
-              </h2>
-              <p className="text-lg text-chocolate/70">
-                Everything you need to know about vending machine opportunities in Columbus, Ohio.
-              </p>
-            </div>
-            
-            <div className="space-y-6">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-                className="bg-white p-6 rounded-lg shadow-sm border border-gray-200"
-              >
-                <h3 className="text-lg font-semibold text-chocolate mb-3">
-                  What types of businesses in Columbus need vending machines?
-                </h3>
-                <p className="text-stone text-sm leading-relaxed">
-                  Columbus's diverse business landscape includes manufacturing plants, universities, healthcare facilities, 
-                  technology companies, and financial services. All of these provide excellent opportunities for vending machine placement.
-                </p>
-              </motion.div>
-              
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.1 }}
-                className="bg-white p-6 rounded-lg shadow-sm border border-gray-200"
-              >
-                <h3 className="text-lg font-semibold text-chocolate mb-3">
-                  How many vending machine locations are available in Columbus?
-                </h3>
-                <p className="text-stone text-sm leading-relaxed">
-                  We currently have access to over 2,100 pre-qualified vending machine locations in Columbus and the surrounding metro area. 
-                  New locations are added weekly as businesses expand and new companies move to the area.
-                </p>
-              </motion.div>
-              
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                className="bg-white p-6 rounded-lg shadow-sm border border-gray-200"
-              >
-                <h3 className="text-lg font-semibold text-chocolate mb-3">
-                  What are the best areas in Columbus for vending machine placement?
-                </h3>
-                <p className="text-stone text-sm leading-relaxed">
-                  Downtown Columbus, Ohio State University campus, the manufacturing corridor, and the medical district offer the highest 
-                  foot traffic and employee density. However, opportunities exist throughout the city as Columbus continues to grow rapidly.
-                </p>
-              </motion.div>
-              
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-                className="bg-white p-6 rounded-lg shadow-sm border border-gray-200"
-              >
-                <h3 className="text-lg font-semibold text-chocolate mb-3">
-                  How quickly can I access Columbus vending machine leads?
-                </h3>
-                <p className="text-stone text-sm leading-relaxed">
-                  With our instant access plans, you can download Columbus vending machine leads immediately after purchase. 
-                  All leads include verified business information, contact details, and placement opportunities.
-                </p>
-              </motion.div>
-              
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.4 }}
-                className="bg-white p-6 rounded-lg shadow-sm border border-gray-200"
-              >
-                <h3 className="text-lg font-semibold text-chocolate mb-3">
-                  Are there seasonal variations in Columbus vending opportunities?
-                </h3>
-                <p className="text-stone text-sm leading-relaxed">
-                  Columbus experiences some seasonal variations, particularly around university schedules and major events. 
-                  However, the strong year-round manufacturing and healthcare climate ensures consistent vending machine opportunities.
-                </p>
-              </motion.div>
-            </div>
-          </div>
-        </div>
+        {/* Pricing */}
+        <PricingTable />
 
-        {/* Hot Leads Section */}
+        {/* Hot Leads */}
         <HotLeads />
 
-        {/* Vending Course Section */}
+        {/* Vending Course */}
         <VendingCourse />
+
+        {/* FAQ Section */}
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <motion.h2 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="text-3xl font-bold text-center mb-12 text-navy"
+            >
+              Frequently Asked Questions
+            </motion.h2>
+            
+            <div className="max-w-4xl mx-auto space-y-6">
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.1 }}
+                viewport={{ once: true }}
+                className="bg-white p-6 rounded-lg shadow-sm"
+              >
+                <h3 className="text-xl font-semibold mb-3 text-navy">
+                  What types of businesses are best for vending machines in Columbus?
+                </h3>
+                <p className="text-gray-600">
+                  Columbus offers excellent opportunities in education, technology, healthcare, and financial services sectors. The universities, tech companies, and healthcare facilities provide stable employee bases for vending machines.
+                </p>
+              </motion.div>
+              
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="bg-white p-6 rounded-lg shadow-sm"
+              >
+                <h3 className="text-xl font-semibold mb-3 text-navy">
+                  How competitive is the vending machine market in Columbus?
+                </h3>
+                <p className="text-gray-600">
+                  Columbus has moderate competition with significant growth potential, especially in the expanding technology and education sectors, as well as new commercial developments throughout the metro area.
+                </p>
+              </motion.div>
+              
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="bg-white p-6 rounded-lg shadow-sm"
+              >
+                <h3 className="text-xl font-semibold mb-3 text-navy">
+                  What are the best vending machine types for Columbus businesses?
+                </h3>
+                <p className="text-gray-600">
+                  For universities, food and beverage machines work best. Tech companies prefer reliable machines, while healthcare facilities need healthy options. We provide specific recommendations for each business type.
+                </p>
+              </motion.div>
+            </div>
+          </div>
+        </section>
+
+        {/* Other Cities in Ohio */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <motion.h2 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="text-3xl font-bold text-center mb-12 text-navy"
+            >
+              Other Cities in Ohio
+            </motion.h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
+              <motion.a 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.1 }}
+                viewport={{ once: true }}
+                href="/vending-leads/cleveland-ohio" 
+                className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+              >
+                <h3 className="font-semibold text-navy">Cleveland</h3>
+                <p className="text-sm text-gray-600">Manufacturing and healthcare hub</p>
+              </motion.a>
+              
+              <motion.a 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                href="/vending-leads/cincinnati-ohio" 
+                className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+              >
+                <h3 className="font-semibold text-navy">Cincinnati</h3>
+                <p className="text-sm text-gray-600">Manufacturing and healthcare center</p>
+              </motion.a>
+              
+              <motion.a 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+                viewport={{ once: true }}
+                href="/vending-leads/toledo-ohio" 
+                className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+              >
+                <h3 className="font-semibold text-navy">Toledo</h3>
+                <p className="text-sm text-gray-600">Manufacturing and port city</p>
+              </motion.a>
+              
+              <motion.a 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                viewport={{ once: true }}
+                href="/vending-leads/akron-ohio" 
+                className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+              >
+                <h3 className="font-semibold text-navy">Akron</h3>
+                <p className="text-sm text-gray-600">Rubber and polymer industry hub</p>
+              </motion.a>
+              
+              <motion.a 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.5 }}
+                viewport={{ once: true }}
+                href="/vending-leads/dayton-ohio" 
+                className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+              >
+                <h3 className="font-semibold text-navy">Dayton</h3>
+                <p className="text-sm text-gray-600">Aerospace and research center</p>
+              </motion.a>
+              
+              <motion.a 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+                viewport={{ once: true }}
+                href="/vending-leads/youngstown-ohio" 
+                className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+              >
+                <h3 className="font-semibold text-navy">Youngstown</h3>
+                <p className="text-sm text-gray-600">Steel and manufacturing center</p>
+              </motion.a>
+            </div>
+          </div>
+        </section>
       </div>
-      
+
       <Footer />
       <ZipCodeModalWrapper />
     </>

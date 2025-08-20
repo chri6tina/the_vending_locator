@@ -1,204 +1,197 @@
-'use client'
-
-import Link from 'next/link'
+import { Metadata } from 'next'
+import { generateCityStructuredData, generateCityMetadata } from '@/components/CityPageSEO'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
-import VendingCourse from '@/components/VendingCourse'
-import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
-import { useState, useEffect } from 'react'
-import { motion } from 'framer-motion'
-import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon } from '@heroicons/react/24/solid'
+import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CpuChipIcon } from '@heroicons/react/24/solid'
+
+export const metadata: Metadata = generateCityMetadata({
+  city: 'Worcester',
+  state: 'Massachusetts',
+  stateAbbr: 'MA',
+  population: '206K+',
+  businessCount: '8,900+',
+  industries: ['Healthcare', 'Education', 'Manufacturing', 'Technology', 'Research'],
+  description: 'Worcester offers healthcare facilities, educational institutions, manufacturing companies, technology firms, and research organizations perfect for vending machine placement opportunities.'
+})
 
 export default function WorcesterMassachusettsVendingLeadsPage() {
-  const [activeUsers, setActiveUsers] = useState(0)
-  const [userNames, setUserNames] = useState([
-    'Mike from Worcester', 'Sarah in Downtown', 'David in West Side', 'Lisa in East Side',
-    'Tom in North Worcester', 'Jennifer in South Worcester', 'Robert in Central Worcester', 'Amanda in West Boylston'
-  ])
-  const [currentUserIndex, setCurrentUserIndex] = useState(0)
-
-  // Active users effect
-  useEffect(() => {
-    const updateActiveUsers = () => {
-      const baseUsers = 5
-      const fluctuation = Math.floor(Math.random() * 3) + 1
-      setActiveUsers(baseUsers + fluctuation)
-    }
-
-    const interval = setInterval(() => {
-      updateActiveUsers()
-    }, Math.random() * 2000 + 2000)
-
-    updateActiveUsers()
-    return () => clearInterval(interval)
-  }, [])
-
-  // Rotating names effect
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentUserIndex(prev => (prev + 1) % userNames.length)
-    }, 3000)
-
-    return () => clearInterval(interval)
-  }, [userNames.length])
+  const structuredData = generateCityStructuredData({
+    city: 'Worcester',
+    state: 'Massachusetts',
+    stateAbbr: 'MA',
+    population: '206K+',
+    businessCount: '8,900+',
+    industries: ['Healthcare', 'Education', 'Manufacturing', 'Technology', 'Research'],
+    description: 'Worcester offers healthcare facilities, educational institutions, manufacturing companies, technology firms, and research organizations perfect for vending machine placement opportunities.'
+  })
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      
       <Header />
       
-      <div className="min-h-screen bg-warm-white">
+      <main>
         {/* Hero Section */}
-        <div className="bg-warm-white py-16 sm:py-24 lg:py-32">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="bg-gradient-to-r from-navy to-charcoal py-16 sm:py-24">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="text-center">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                className="mb-8 p-4 bg-cream/50 backdrop-blur-sm rounded-2xl border border-gray-200 shadow-sm max-w-md mx-auto"
-              >
-                <div className="flex items-center justify-center gap-3">
-                  <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                  <span className="text-sm font-medium text-chocolate">
-                    <span className="font-bold text-coral">{activeUsers}</span> Worcester vendors are choosing plans right now
-                  </span>
+              <h1 className="text-4xl font-playfair font-bold tracking-tight text-white sm:text-6xl">
+                Vending Machine Leads in Worcester, MA
+              </h1>
+              <p className="mt-6 text-xl leading-8 text-white/90 max-w-3xl mx-auto">
+                Get qualified vending machine leads in Worcester, Massachusetts. Access verified business locations with contact information for successful vending machine placement.
+              </p>
+              <div className="mt-8 flex flex-wrap justify-center gap-4">
+                <div className="bg-white/20 rounded-full px-6 py-2 text-white text-sm">
+                  Healthcare Hub
                 </div>
-                <div className="mt-2 text-xs text-chocolate/70">
-                  Including {userNames[currentUserIndex]}
+                <div className="bg-white/20 rounded-full px-6 py-2 text-white text-sm">
+                  Education
                 </div>
-              </motion.div>
+                <div className="bg-white/20 rounded-full px-6 py-2 text-white text-sm">
+                  Research
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-              <motion.h1
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                className="text-4xl sm:text-5xl lg:text-6xl font-playfair font-bold tracking-tight text-charcoal leading-tight"
-              >
-                Vending Machine Locations<br />in Worcester, Massachusetts
-              </motion.h1>
-              
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                className="mt-6 sm:mt-8 text-lg sm:text-xl leading-8 text-stone max-w-4xl mx-auto"
-              >
-                Get pre-qualified vending machine locations in Worcester's thriving manufacturing and healthcare economy. 
-                Access verified businesses with detailed contact information and placement opportunities.
-              </motion.p>
-
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.8 }}
-                className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 px-4 sm:px-0"
-              >
-                <Link
-                  href="#pricing"
-                  className="w-full sm:w-auto btn-primary text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-lg"
-                >
-                  Get Worcester Leads
-                </Link>
-                <Link
-                  href="#worcester-content"
-                  className="w-full sm:w-auto text-base sm:text-lg font-semibold leading-6 text-charcoal hover:text-navy transition-colors text-center py-3 sm:py-4"
-                >
-                  Learn About Worcester <span aria-hidden="true">→</span>
-                </Link>
-              </motion.div>
+        {/* Business Landscape Section */}
+        <div className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-playfair font-bold text-charcoal">
+                Worcester Business Landscape
+              </h2>
+              <p className="mt-4 text-lg text-stone max-w-3xl mx-auto">
+                Worcester's economy is driven by healthcare, education, manufacturing, and research sectors.
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div className="text-center">
+                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <BuildingOfficeIcon className="w-8 h-8 text-navy" />
+                </div>
+                <h3 className="text-lg font-semibold text-charcoal mb-2">Healthcare</h3>
+                <p className="text-stone text-sm">Hospitals, clinics, and medical facilities</p>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <AcademicCapIcon className="w-8 h-8 text-navy" />
+                </div>
+                <h3 className="text-lg font-semibold text-charcoal mb-2">Education</h3>
+                <p className="text-stone text-sm">Universities, colleges, and schools</p>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <CpuChipIcon className="w-8 h-8 text-navy" />
+                </div>
+                <h3 className="text-lg font-semibold text-charcoal mb-2">Manufacturing</h3>
+                <p className="text-stone text-sm">Industrial and manufacturing facilities</p>
+              </div>
+              <div className="text-center">
+                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <UsersIcon className="w-8 h-8 text-navy" />
+                </div>
+                <h3 className="text-lg font-semibold text-charcoal mb-2">Research</h3>
+                <p className="text-stone text-sm">Research organizations and labs</p>
+              </div>
             </div>
           </div>
         </div>
 
         {/* Pricing Section */}
-        <div id="pricing" className="bg-white py-16 sm:py-20 lg:py-24">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="mx-auto max-w-4xl text-center mb-12 sm:mb-16">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-playfair font-bold tracking-tight text-chocolate mb-6">
-                Get Worcester Vending Machine Leads
+        <div className="py-16 bg-white">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-playfair font-bold text-charcoal">
+                Vending Machine Lead Pricing
               </h2>
-              <p className="text-lg sm:text-xl text-chocolate/70 leading-relaxed max-w-3xl mx-auto">
-                Access our comprehensive database of qualified Worcester vending machine locations with flexible pricing options. 
-                No long-term contracts, just results that help you grow your Worcester vending business.
+              <p className="mt-4 text-lg text-stone max-w-3xl mx-auto">
+                Get access to qualified vending machine leads in Worcester with our flexible pricing options.
               </p>
             </div>
             <PricingTable />
           </div>
         </div>
 
-        {/* Worcester Content Section */}
-        <div id="worcester-content" className="py-16 sm:py-24 bg-warm-white">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-playfair font-bold text-chocolate mb-6">
-                Why Worcester is Perfect for Vending Machines
+        {/* Hot Leads Section */}
+        <div className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-playfair font-bold text-charcoal">
+                Hot Vending Leads in Worcester
               </h2>
-              <p className="text-lg sm:text-xl text-chocolate/70 max-w-4xl mx-auto leading-relaxed">
-                Worcester's unique combination of manufacturing excellence, healthcare innovation, and educational institutions creates 
-                exceptional vending machine opportunities across diverse business sectors.
+              <p className="mt-4 text-lg text-stone max-w-3xl mx-auto">
+                Access our latest verified vending machine placement opportunities in Worcester.
               </p>
             </div>
+            <HotLeads />
+          </div>
+        </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-              <div>
-                <h3 className="text-2xl sm:text-3xl font-playfair font-bold text-chocolate mb-6">
-                  Worcester's Business Landscape
-                </h3>
-                <div className="space-y-4 text-chocolate/80">
-                  <p>
-                    Worcester is home to major manufacturing companies and healthcare institutions, including UMass Medical School 
-                    and Saint Vincent Hospital, creating consistent demand for snacks and beverages across medical facilities and research centers.
-                  </p>
-                  <p>
-                    The city hosts numerous manufacturing facilities and educational institutions like Worcester Polytechnic Institute, 
-                    providing high-traffic environments with modern amenities and consistent foot traffic.
-                  </p>
-                </div>
+        {/* FAQ Section */}
+        <div className="py-16 bg-white">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-playfair font-bold text-charcoal">
+                Frequently Asked Questions
+              </h2>
+            </div>
+            <div className="max-w-3xl mx-auto space-y-6">
+              <div className="bg-warm-white p-6 rounded-lg">
+                <h3 className="text-lg font-semibold text-charcoal mb-2">What types of businesses in Worcester need vending machines?</h3>
+                <p className="text-stone">Healthcare facilities, educational institutions, manufacturing plants, technology companies, and research organizations in Worcester are excellent locations for vending machine placement.</p>
               </div>
-
-              <div>
-                <h4 className="text-xl sm:text-2xl font-playfair font-bold text-chocolate mb-6">
-                  Vending Machine Opportunities in Worcester
-                </h4>
-                <div className="space-y-4">
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-coral rounded-full mt-2 flex-shrink-0"></div>
-                    <div>
-                      <h5 className="font-semibold text-chocolate mb-1">Healthcare Facilities</h5>
-                      <p className="text-sm text-chocolate/70">Hospitals, medical centers, and research facilities</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-coral rounded-full mt-2 flex-shrink-0"></div>
-                    <div>
-                      <h5 className="font-semibold text-chocolate mb-1">Manufacturing Plants</h5>
-                      <p className="text-sm text-chocolate/70">High-traffic industrial environments with shift workers</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-coral rounded-full mt-2 flex-shrink-0"></div>
-                    <div>
-                      <h5 className="font-semibold text-chocolate mb-1">Educational Institutions</h5>
-                      <p className="text-sm text-chocolate/70">Universities, colleges, and technical schools</p>
-                    </div>
-                  </div>
-                </div>
+              <div className="bg-warm-white p-6 rounded-lg">
+                <h3 className="text-lg font-semibold text-charcoal mb-2">How do I get started with vending machine placement in Worcester?</h3>
+                <p className="text-stone">Start by accessing our verified business leads, then contact the businesses directly to discuss vending machine placement opportunities.</p>
+              </div>
+              <div className="bg-warm-white p-6 rounded-lg">
+                <h3 className="text-lg font-semibold text-charcoal mb-2">What are the best areas in Worcester for vending machines?</h3>
+                <p className="text-stone">The downtown area, healthcare districts, educational campuses, manufacturing zones, and research parks offer the highest potential for vending machine success.</p>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Hot Leads Section */}
-        <HotLeads />
-
-        {/* Vending Course Section */}
-        <VendingCourse />
-      </div>
-
+        {/* Other Massachusetts Cities Section */}
+        <div className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-playfair font-bold text-charcoal">
+                Other Massachusetts Cities
+              </h2>
+              <p className="mt-4 text-lg text-stone max-w-3xl mx-auto">
+                Explore vending machine opportunities in other major Massachusetts cities.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <a href="/vending-leads/boston-massachusetts" className="block bg-white p-6 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
+                <h3 className="text-lg font-semibold text-charcoal mb-2">Boston</h3>
+                <p className="text-stone text-sm">Financial hub with healthcare and education</p>
+              </a>
+              <a href="/vending-leads/lowell-massachusetts" className="block bg-white p-6 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
+                <h3 className="text-lg font-semibold text-charcoal mb-2">Lowell</h3>
+                <p className="text-stone text-sm">Manufacturing hub with healthcare and education</p>
+              </a>
+              <a href="/vending-leads/springfield-massachusetts" className="block bg-white p-6 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
+                <h3 className="text-lg font-semibold text-charcoal mb-2">Springfield</h3>
+                <p className="text-stone text-sm">Healthcare hub with manufacturing and education</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </main>
+      
       <Footer />
-      <ZipCodeModalWrapper />
     </>
   )
 }

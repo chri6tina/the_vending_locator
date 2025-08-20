@@ -1,275 +1,446 @@
 'use client'
 
-import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon } from '@heroicons/react/24/solid'
-import { generateCityStructuredData } from '@/components/CityPageSEO'
+import Link from 'next/link'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
+import VendingCourse from '@/components/VendingCourse'
+import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
+import { useState, useEffect } from 'react'
+import { motion } from 'framer-motion'
+import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CpuChipIcon } from '@heroicons/react/24/solid'
 
 export default function DenverColoradoVendingLeadsPage() {
-  const structuredData = generateCityStructuredData({
-    city: 'Denver',
-    state: 'Colorado',
-    stateAbbr: 'CO',
-    population: '727,211',
-    businessCount: '42,000+',
-    industries: ['Technology', 'Healthcare', 'Financial Services', 'Tourism', 'Aerospace'],
-    description: 'Denver offers excellent opportunities for vending machine placement with its growing technology sector, healthcare industry, and diverse business landscape.'
-  })
+  const [activeUsers, setActiveUsers] = useState(0)
+  const [userNames, setUserNames] = useState([
+    'Mike from Denver', 'Sarah in Downtown', 'David in Capitol Hill', 'Lisa in Cherry Creek',
+    'Tom in LoDo', 'Jennifer in RiNo', 'Robert in Highland', 'Amanda in Washington Park',
+    'Chris in Park Hill', 'Maria in Five Points', 'James in Baker', 'Emily in Uptown'
+  ])
+  const [currentUserIndex, setCurrentUserIndex] = useState(0)
+
+  // Fluctuating active users counter
+  useEffect(() => {
+    const updateActiveUsers = () => {
+      const baseUsers = 12
+      const fluctuation = Math.floor(Math.random() * 4) + 1
+      setActiveUsers(baseUsers + fluctuation)
+    }
+
+    const interval = setInterval(() => {
+      updateActiveUsers()
+    }, Math.random() * 2000 + 2000)
+
+    updateActiveUsers()
+    return () => clearInterval(interval)
+  }, [])
+
+  // Rotating user names
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentUserIndex(prev => (prev + 1) % userNames.length)
+    }, 3000)
+
+    return () => clearInterval(interval)
+  }, [userNames.length])
 
   return (
     <>
-      {/* Structured Data for SEO */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(structuredData)
-        }}
-      />
-      
       <Header />
       
       <div className="min-h-screen bg-warm-white">
-        {/* Hero Section - Matching Homepage Style */}
-        <div className="bg-warm-white">
-          <div className="mx-auto max-w-2xl px-4 sm:px-6 py-12 sm:py-16 lg:py-24">
+        {/* Enhanced Hero Section - Denver-Specific */}
+        <div className="bg-warm-white py-16 sm:py-24 lg:py-32">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center">
-              <h1 className="text-3xl sm:text-4xl lg:text-6xl font-playfair font-bold tracking-tight text-charcoal leading-tight">
-                Denver Vending Machine Locations
-              </h1>
+              {/* Active Users Counter Pill */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                className="mb-8 p-4 bg-cream/50 backdrop-blur-sm rounded-2xl border border-gray-200 shadow-sm max-w-md mx-auto"
+              >
+                <div className="flex items-center justify-center gap-3">
+                  <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                  <span className="text-sm font-medium text-chocolate">
+                    <span className="font-bold text-coral">{activeUsers}</span> Denver vendors are choosing plans right now
+                  </span>
+                </div>
+                <div
+                  key={currentUserIndex}
+                  className="mt-2 text-xs text-chocolate/70"
+                >
+                  Including {userNames[currentUserIndex]}
+                </div>
+              </motion.div>
+
+              <motion.h1
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className="text-4xl sm:text-5xl lg:text-6xl font-playfair font-bold tracking-tight text-charcoal leading-tight"
+              >
+                Vending Machine Locations<br />in Denver, Colorado
+              </motion.h1>
               
-              <p className="mt-4 sm:mt-6 text-base sm:text-lg leading-7 sm:leading-8 text-stone px-2 sm:px-0">
-                Discover premium vending machine placement opportunities in Denver, Colorado. 
-                Access 42,000+ businesses and the heart of the Rocky Mountain business hub.
-              </p>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                className="mt-6 sm:mt-8 text-lg sm:text-xl leading-8 text-stone max-w-4xl mx-auto"
+              >
+                Get pre-qualified vending machine locations in Denver's thriving technology and outdoor recreation economy. 
+                Access verified businesses with detailed contact information and placement opportunities.
+              </motion.p>
 
-              {/* City Stats - Matching Homepage Counter Style */}
-              <div className="mt-10 sm:mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 px-4 sm:px-0">
-                <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-bronze">42,000+</div>
-                  <div className="text-xs sm:text-sm text-stone leading-tight">Businesses</div>
+              {/* Trust Signals - Denver-Specific */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+                className="mt-8 sm:mt-10 grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-2xl mx-auto"
+              >
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <CheckBadgeIcon className="h-5 w-5 text-green-500" />
+                    <span className="text-sm font-medium text-chocolate">180+ Locations</span>
+                  </div>
                 </div>
-                <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-bronze">727K+</div>
-                  <div className="text-xs sm:text-sm text-stone leading-tight">Population</div>
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <StarIcon className="h-5 w-5 text-yellow-500" />
+                    <span className="text-sm font-medium text-chocolate">6 Major Industries</span>
+                  </div>
                 </div>
-                <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-bronze">170+</div>
-                  <div className="text-xs sm:text-sm text-stone leading-tight">Vending Locations</div>
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <ShieldCheckIcon className="h-5 w-5 text-blue-500" />
+                    <span className="text-sm font-medium text-chocolate">100% Verified</span>
+                  </div>
                 </div>
-                <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-bronze">5</div>
-                  <div className="text-xs sm:text-sm text-stone leading-tight">Major Industries</div>
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <ClockIcon className="h-5 w-5 text-purple-500" />
+                    <span className="text-sm font-medium text-chocolate">3-5 Day Delivery</span>
+                  </div>
                 </div>
-              </div>
+              </motion.div>
 
-              {/* Trust Signals - Matching Homepage Style */}
-              <div className="mt-8 sm:mt-10 flex flex-wrap justify-center gap-4 sm:gap-6">
-                <div className="flex items-center gap-2 text-sm text-stone">
-                  <CheckBadgeIcon className="h-5 w-5 text-green-600" />
-                  <span>Verified Locations</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-stone">
-                  <StarIcon className="h-5 w-5 text-yellow-500" />
-                  <span>4.9/5 Rating</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-stone">
-                  <ShieldCheckIcon className="h-5 w-5 text-blue-600" />
-                  <span>Secure & Reliable</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-stone">
-                  <ClockIcon className="h-5 w-5 text-purple-600" />
-                  <span>Quality Research</span>
-                </div>
-              </div>
+              {/* CTA Buttons */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.8 }}
+                className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6"
+              >
+                <Link
+                  href="/pricing"
+                  className="w-full sm:w-auto btn-primary text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-lg"
+                >
+                  View Pricing & Get Started
+                </Link>
+                <Link
+                  href="/hot-leads"
+                  className="w-full sm:w-auto btn-secondary text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-lg"
+                >
+                  View Hot Leads
+                </Link>
+              </motion.div>
             </div>
           </div>
         </div>
 
-        {/* Business Landscape Section */}
-        <div className="bg-white py-16 sm:py-20">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
-                Denver Business Landscape
-              </h2>
-              <p className="text-lg text-stone max-w-3xl mx-auto">
-                Denver is Colorado's capital and largest city, offering diverse vending opportunities across multiple thriving industries.
-              </p>
-            </div>
-
+        {/* Business Landscape */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <motion.h2 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="text-3xl font-bold text-center mb-12 text-navy"
+            >
+              Business Landscape in Denver
+            </motion.h2>
+            
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="text-center">
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.1 }}
+                viewport={{ once: true }}
+                className="text-center"
+              >
+                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <CpuChipIcon className="w-8 h-8 text-navy" />
+                </div>
+                <h3 className="text-xl font-semibold mb-2 text-navy">Technology</h3>
+                <p className="text-gray-600">Tech companies and startups.</p>
+              </motion.div>
+              
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-center"
+              >
                 <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <BuildingOfficeIcon className="w-8 h-8 text-navy" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Technology Hub</h3>
-                <p className="text-stone">Growing tech sector with startups and established companies</p>
-              </div>
-
-              <div className="text-center">
+                <h3 className="text-xl font-semibold mb-2 text-navy">Outdoor Recreation</h3>
+                <p className="text-gray-600">Outdoor and recreation companies.</p>
+              </motion.div>
+              
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="text-center"
+              >
+                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <UsersIcon className="w-8 h-8 text-navy" />
+                </div>
+                <h3 className="text-xl font-semibold mb-2 text-navy">Healthcare</h3>
+                <p className="text-gray-600">Hospitals and medical facilities.</p>
+              </motion.div>
+              
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                viewport={{ once: true }}
+                className="text-center"
+              >
                 <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <AcademicCapIcon className="w-8 h-8 text-navy" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Healthcare</h3>
-                <p className="text-stone">Major medical centers and healthcare systems</p>
-              </div>
-
-              <div className="text-center">
+                <h3 className="text-xl font-semibold mb-2 text-navy">Education</h3>
+                <p className="text-gray-600">Universities and educational institutions.</p>
+              </motion.div>
+              
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.5 }}
+                viewport={{ once: true }}
+                className="text-center"
+              >
                 <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <BuildingOfficeIcon className="w-8 h-8 text-navy" />
+                  <MapPinIcon className="w-8 h-8 text-navy" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Tourism</h3>
-                <p className="text-stone">Year-round tourism and outdoor recreation industry</p>
-              </div>
+                <h3 className="text-xl font-semibold mb-2 text-navy">Financial</h3>
+                <p className="text-gray-600">Banking and financial services.</p>
+              </motion.div>
+              
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+                viewport={{ once: true }}
+                className="text-center"
+              >
+                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <ClockIcon className="w-8 h-8 text-navy" />
+                </div>
+                <h3 className="text-xl font-semibold mb-2 text-navy">Retail</h3>
+                <p className="text-gray-600">Shopping centers and retail businesses.</p>
+              </motion.div>
             </div>
           </div>
-        </div>
+        </section>
 
-        {/* Key Business Districts */}
-        <div className="bg-warm-white py-16 sm:py-20">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
-                Key Business Districts
-              </h2>
-              <p className="text-lg text-stone max-w-3xl mx-auto">
-                Strategic vending machine placement opportunities in Denver's most active business areas.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Downtown Denver</h3>
-                <p className="text-stone mb-3">Financial district, corporate headquarters, and government offices</p>
-                <div className="text-sm text-bronze font-medium">280+ businesses</div>
+        {/* City Stats */}
+        <section className="py-16 bg-warm-white">
+          <div className="container mx-auto px-4">
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center"
+            >
+              <div>
+                <div className="text-4xl font-bold text-navy mb-2">730K+</div>
+                <div className="text-gray-600">Population</div>
               </div>
-
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Cherry Creek</h3>
-                <p className="text-stone mb-3">Luxury retail, restaurants, and professional services</p>
-                <div className="text-sm text-bronze font-medium">220+ businesses</div>
+              <div>
+                <div className="text-4xl font-bold text-navy mb-2">45,000+</div>
+                <div className="text-gray-600">Businesses</div>
               </div>
-
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                <h3 className="text-xl font-semibold text-charcoal mb-3">RiNo District</h3>
-                <p className="text-stone mb-3">Creative industries, tech startups, and breweries</p>
-                <div className="text-sm text-bronze font-medium">180+ businesses</div>
+              <div>
+                <div className="text-4xl font-bold text-navy mb-2">6</div>
+                <div className="text-gray-600">Major Industries</div>
               </div>
-
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                <h3 className="text-xl font-semibold text-charcoal mb-3">LoDo</h3>
-                <p className="text-stone mb-3">Entertainment, restaurants, and hospitality businesses</p>
-                <div className="text-sm text-bronze font-medium">200+ businesses</div>
-              </div>
-
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Tech Center</h3>
-                <p className="text-stone mb-3">Technology companies, office parks, and research facilities</p>
-                <div className="text-sm text-bronze font-medium">160+ businesses</div>
-              </div>
-
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Airport Area</h3>
-                <p className="text-stone mb-3">Logistics, manufacturing, and transportation companies</p>
-                <div className="text-sm text-bronze font-medium">140+ businesses</div>
-              </div>
-            </div>
+            </motion.div>
           </div>
-        </div>
+        </section>
 
-        {/* Pricing Section - Prominently Displayed */}
-        <div className="bg-white py-16 sm:py-20">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
-                Get Denver Vending Machine Leads
-              </h2>
-              <p className="text-lg text-stone max-w-3xl mx-auto">
-                Choose the plan that fits your business needs and start receiving qualified vending machine location leads in Denver.
-              </p>
-            </div>
-            <PricingTable />
-          </div>
-        </div>
+        {/* Pricing */}
+        <PricingTable />
 
-        {/* Hot Leads Section */}
-        <div className="bg-warm-white py-16 sm:py-20">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <HotLeads />
-          </div>
-        </div>
+        {/* Hot Leads */}
+        <HotLeads />
+
+        {/* Vending Course */}
+        <VendingCourse />
 
         {/* FAQ Section */}
-        <div className="bg-white py-16 sm:py-20">
-          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
-                Frequently Asked Questions
-              </h2>
-              <p className="text-lg text-stone">
-                Everything you need to know about vending machine opportunities in Denver.
-              </p>
-            </div>
-
-            <div className="space-y-6">
-              <div className="bg-warm-white p-6 rounded-xl">
-                <h3 className="text-xl font-semibold text-charcoal mb-3">
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <motion.h2 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="text-3xl font-bold text-center mb-12 text-navy"
+            >
+              Frequently Asked Questions
+            </motion.h2>
+            
+            <div className="max-w-4xl mx-auto space-y-6">
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.1 }}
+                viewport={{ once: true }}
+                className="bg-white p-6 rounded-lg shadow-sm"
+              >
+                <h3 className="text-xl font-semibold mb-3 text-navy">
                   What types of businesses are best for vending machines in Denver?
                 </h3>
-                <p className="text-stone">
-                  Denver offers diverse opportunities including office buildings, healthcare facilities, 
-                  manufacturing plants, and retail centers. The growing tech sector and major healthcare 
-                  institutions provide excellent placement opportunities.
+                <p className="text-gray-600">
+                  Denver offers excellent opportunities in technology, outdoor recreation, healthcare, and education sectors. The tech companies, outdoor companies, and healthcare facilities provide stable employee bases for vending machines.
                 </p>
-              </div>
-
-              <div className="bg-warm-white p-6 rounded-xl">
-                <h3 className="text-xl font-semibold text-charcoal mb-3">
+              </motion.div>
+              
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="bg-white p-6 rounded-lg shadow-sm"
+              >
+                <h3 className="text-xl font-semibold mb-3 text-navy">
                   How competitive is the vending machine market in Denver?
                 </h3>
-                <p className="text-stone">
-                  Denver has a growing vending presence, but there's still significant opportunity 
-                  for expansion, especially in new business developments and emerging neighborhoods.
+                <p className="text-gray-600">
+                  Denver has moderate competition with significant growth potential, especially in the expanding technology and outdoor recreation sectors, as well as new commercial developments throughout the metro area.
                 </p>
-              </div>
-
-              <div className="bg-warm-white p-6 rounded-xl">
-                <h3 className="text-xl font-semibold text-charcoal mb-3">
-                  What are the peak business hours for vending in Denver?
+              </motion.div>
+              
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="bg-white p-6 rounded-lg shadow-sm"
+              >
+                <h3 className="text-xl font-semibold mb-3 text-navy">
+                  What are the best vending machine types for Denver businesses?
                 </h3>
-                <p className="text-stone">
-                  Denver businesses typically operate from 8 AM to 6 PM, with peak vending activity 
-                  during lunch hours (12 PM - 2 PM) and afternoon breaks (3 PM - 4 PM).
+                <p className="text-gray-600">
+                  For tech companies, modern and reliable machines work best. Outdoor companies prefer durable machines, while healthcare facilities need healthy options. We provide specific recommendations for each business type.
                 </p>
-              </div>
-
-              <div className="bg-warm-white p-6 rounded-xl">
-                <h3 className="text-xl font-semibold text-charcoal mb-3">
-                  Are there seasonal considerations for vending in Denver?
-                </h3>
-                <p className="text-stone">
-                  Yes, Denver experiences four distinct seasons with significant temperature variations. 
-                  Indoor locations are preferred year-round, but summer months offer comfortable outdoor opportunities.
-                </p>
-              </div>
-
-              <div className="bg-warm-white p-6 rounded-xl">
-                <h3 className="text-xl font-semibold text-charcoal mb-3">
-                  What permits are required for vending machines in Denver?
-                </h3>
-                <p className="text-stone">
-                  You'll need a business license from the City of Denver and potentially health permits 
-                  for food vending. Specific requirements depend on your machine type and location.
-                </p>
-              </div>
+              </motion.div>
             </div>
           </div>
-        </div>
+        </section>
+
+        {/* Other Cities in Colorado */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <motion.h2 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="text-3xl font-bold text-center mb-12 text-navy"
+            >
+              Other Cities in Colorado
+            </motion.h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
+              <motion.a 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.1 }}
+                viewport={{ once: true }}
+                href="/vending-leads/colorado-springs-colorado" 
+                className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+              >
+                <h3 className="font-semibold text-navy">Colorado Springs</h3>
+                <p className="text-sm text-gray-600">Military and aerospace hub</p>
+              </motion.a>
+              
+              <motion.a 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                href="/vending-leads/boulder-colorado" 
+                className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+              >
+                <h3 className="font-semibold text-navy">Boulder</h3>
+                <p className="text-sm text-gray-600">Technology and education center</p>
+              </motion.a>
+              
+              <motion.a 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+                viewport={{ once: true }}
+                href="/vending-leads/aurora-colorado" 
+                className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+              >
+                <h3 className="font-semibold text-navy">Aurora</h3>
+                <p className="text-sm text-gray-600">Healthcare and aerospace center</p>
+              </motion.a>
+              
+              <motion.a 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                viewport={{ once: true }}
+                href="/vending-leads/fort-collins-colorado" 
+                className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+              >
+                <h3 className="font-semibold text-navy">Fort Collins</h3>
+                <p className="text-sm text-gray-600">University and technology hub</p>
+              </motion.a>
+              
+              <motion.a 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.5 }}
+                viewport={{ once: true }}
+                href="/vending-leads/lakewood-colorado" 
+                className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+              >
+                <h3 className="font-semibold text-navy">Lakewood</h3>
+                <p className="text-sm text-gray-600">Suburban business center</p>
+              </motion.a>
+              
+              <motion.a 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+                viewport={{ once: true }}
+                href="/vending-leads/arvada-colorado" 
+                className="block p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
+              >
+                <h3 className="font-semibold text-navy">Arvada</h3>
+                <p className="text-sm text-gray-600">Growing suburban community</p>
+              </motion.a>
+            </div>
+          </div>
+        </section>
       </div>
-      
+
       <Footer />
+      <ZipCodeModalWrapper />
     </>
   )
 }

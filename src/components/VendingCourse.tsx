@@ -155,12 +155,20 @@ export default function VendingCourse() {
             <p className="text-lg mb-6 opacity-90">
               Get access to qualified locations and comprehensive business resources
             </p>
-            <a
-              href="#pricing"
-              className="inline-flex items-center px-8 py-3 bg-white text-navy rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+            <button
+              onClick={() => {
+                // Scroll to pricing section if it exists, otherwise scroll to top
+                const pricingSection = document.getElementById('pricing')
+                if (pricingSection) {
+                  pricingSection.scrollIntoView({ behavior: 'smooth' })
+                } else {
+                  window.scrollTo({ top: 0, behavior: 'smooth' })
+                }
+              }}
+              className="inline-flex items-center px-8 py-3 bg-white text-navy rounded-lg font-semibold hover:bg-gray-100 transition-colors cursor-pointer"
             >
               View Pricing Plans
-            </a>
+            </button>
           </div>
         </div>
       </div>

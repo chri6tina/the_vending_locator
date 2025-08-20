@@ -1,86 +1,61 @@
-'use client'
-
-import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CpuChipIcon } from '@heroicons/react/24/solid'
-import { generateCityStructuredData } from '@/components/CityPageSEO'
+import { Metadata } from 'next'
+import { generateCityStructuredData, generateCityMetadata } from '@/components/CityPageSEO'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
+import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CpuChipIcon } from '@heroicons/react/24/solid'
+
+export const metadata: Metadata = generateCityMetadata({
+  city: 'Wichita',
+  state: 'Kansas',
+  stateAbbr: 'KS',
+  population: '397K+',
+  businessCount: '22,500+',
+  industries: ['Aviation', 'Manufacturing', 'Healthcare', 'Education', 'Technology'],
+  description: 'Wichita offers aviation companies, manufacturing facilities, healthcare institutions, educational campuses, and technology firms perfect for vending machine placement opportunities.'
+})
 
 export default function WichitaKansasVendingLeadsPage() {
   const structuredData = generateCityStructuredData({
     city: 'Wichita',
     state: 'Kansas',
     stateAbbr: 'KS',
-    population: '397,532',
-    businessCount: '22,000+',
-    industries: ['Aerospace', 'Manufacturing', 'Healthcare', 'Education', 'Technology'],
-    description: 'Wichita offers excellent opportunities for vending machine placement with its major aerospace and manufacturing sector, healthcare industry, and diverse business landscape.'
+    population: '397K+',
+    businessCount: '22,500+',
+    industries: ['Aviation', 'Manufacturing', 'Healthcare', 'Education', 'Technology'],
+    description: 'Wichita offers aviation companies, manufacturing facilities, healthcare institutions, educational campuses, and technology firms perfect for vending machine placement opportunities.'
   })
 
   return (
     <>
-      {/* Structured Data for SEO */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(structuredData)
-        }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
       
       <Header />
       
-      <div className="min-h-screen bg-warm-white">
-        {/* Hero Section - Matching Homepage Style */}
-        <div className="bg-warm-white">
-          <div className="mx-auto max-w-2xl px-4 sm:px-6 py-12 sm:py-16 lg:py-24">
+      <main>
+        {/* Hero Section */}
+        <div className="bg-gradient-to-r from-navy to-charcoal py-16 sm:py-24">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="text-center">
-              <h1 className="text-3xl sm:text-4xl lg:text-6xl font-playfair font-bold tracking-tight text-charcoal leading-tight">
-                Wichita Vending Machine Locations
+              <h1 className="text-4xl font-playfair font-bold tracking-tight text-white sm:text-6xl">
+                Vending Machine Leads in Wichita, KS
               </h1>
-              
-              <p className="mt-4 sm:mt-6 text-base sm:text-lg leading-7 sm:leading-8 text-stone px-2 sm:px-0">
-                Discover premium vending machine placement opportunities in Wichita, Kansas. 
-                Access 22,000+ businesses and the heart of Kansas's aerospace and manufacturing hub.
+              <p className="mt-6 text-xl leading-8 text-white/90 max-w-3xl mx-auto">
+                Get qualified vending machine leads in Wichita, Kansas. Access verified business locations with contact information for successful vending machine placement.
               </p>
-
-              {/* City Stats - Matching Homepage Counter Style */}
-              <div className="mt-10 sm:mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 px-4 sm:px-0">
-                <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-bronze">22,000+</div>
-                  <div className="text-xs sm:text-sm text-stone leading-tight">Businesses</div>
+              <div className="mt-8 flex flex-wrap justify-center gap-4">
+                <div className="bg-white/20 rounded-full px-6 py-2 text-white text-sm">
+                  Air Capital
                 </div>
-                <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-bronze">398K+</div>
-                  <div className="text-xs sm:text-sm text-stone leading-tight">Population</div>
+                <div className="bg-white/20 rounded-full px-6 py-2 text-white text-sm">
+                  Manufacturing
                 </div>
-                <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-bronze">180+</div>
-                  <div className="text-xs sm:text-sm text-stone leading-tight">Vending Locations</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-bronze">5</div>
-                  <div className="text-xs sm:text-sm text-stone leading-tight">Major Industries</div>
-                </div>
-              </div>
-
-              {/* Trust Signals - Matching Homepage Style */}
-              <div className="mt-8 sm:mt-10 flex flex-wrap justify-center gap-4 sm:gap-6">
-                <div className="flex items-center gap-2 text-sm text-stone">
-                  <CheckBadgeIcon className="h-5 w-5 text-green-600" />
-                  <span>Verified Locations</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-stone">
-                  <StarIcon className="h-5 w-5 text-yellow-500" />
-                  <span>4.9/5 Rating</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-stone">
-                  <ShieldCheckIcon className="h-5 w-5 text-blue-600" />
-                  <span>Secure & Reliable</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-stone">
-                  <ClockIcon className="h-5 w-5 text-purple-600" />
-                  <span>Quality Research</span>
+                <div className="bg-white/20 rounded-full px-6 py-2 text-white text-sm">
+                  Healthcare
                 </div>
               </div>
             </div>
@@ -88,96 +63,59 @@ export default function WichitaKansasVendingLeadsPage() {
         </div>
 
         {/* Business Landscape Section */}
-        <div className="bg-white py-16 sm:py-20">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
+              <h2 className="text-3xl font-playfair font-bold text-charcoal">
                 Wichita Business Landscape
               </h2>
-              <p className="text-lg text-stone max-w-3xl mx-auto">
-                Wichita is Kansas's largest city and a major aerospace and manufacturing center, offering diverse vending opportunities across technology, healthcare, and business sectors.
+              <p className="mt-4 text-lg text-stone max-w-3xl mx-auto">
+                Wichita's economy is driven by aviation, manufacturing, healthcare, and education sectors.
               </p>
             </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="text-center">
-                <div className="mx-auto w-16 h-16 bg-bronze/10 rounded-full flex items-center justify-center mb-4">
-                  <CpuChipIcon className="w-8 h-8 text-bronze" />
+                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <CpuChipIcon className="w-8 h-8 text-navy" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Aerospace Hub</h3>
-                <p className="text-stone">
-                  Home to major aerospace companies including Spirit AeroSystems, Textron Aviation, and Bombardier, 
-                  providing opportunities in manufacturing facilities and corporate offices.
-                </p>
+                <h3 className="text-lg font-semibold text-charcoal mb-2">Aviation</h3>
+                <p className="text-stone text-sm">Aircraft manufacturing and aerospace</p>
               </div>
-
               <div className="text-center">
-                <div className="mx-auto w-16 h-16 bg-bronze/10 rounded-full flex items-center justify-center mb-4">
-                  <MapPinIcon className="w-8 h-8 text-bronze" />
+                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <UsersIcon className="w-8 h-8 text-navy" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Manufacturing</h3>
-                <p className="text-stone">
-                  Strong manufacturing presence including automotive and machinery, 
-                  offering placement in factories and industrial facilities.
-                </p>
+                <h3 className="text-lg font-semibold text-charcoal mb-2">Manufacturing</h3>
+                <p className="text-stone text-sm">Industrial and manufacturing facilities</p>
               </div>
-
               <div className="text-center">
-                <div className="mx-auto w-16 h-16 bg-bronze/10 rounded-full flex items-center justify-center mb-4">
-                  <BuildingOfficeIcon className="w-8 h-8 text-bronze" />
+                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <BuildingOfficeIcon className="w-8 h-8 text-navy" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Healthcare Excellence</h3>
-                <p className="text-stone">
-                  Major medical centers including Ascension Via Christi and Wesley Medical Center, 
-                  offering placement in hospitals, clinics, and medical office buildings.
-                </p>
+                <h3 className="text-lg font-semibold text-charcoal mb-2">Healthcare</h3>
+                <p className="text-stone text-sm">Hospitals, clinics, and medical facilities</p>
               </div>
-
               <div className="text-center">
-                <div className="mx-auto w-16 h-16 bg-bronze/10 rounded-full flex items-center justify-center mb-4">
-                  <AcademicCapIcon className="w-8 h-8 text-bronze" />
+                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <AcademicCapIcon className="w-8 h-8 text-navy" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Education Hub</h3>
-                <p className="text-stone">
-                  Wichita State University and other educational institutions, 
-                  providing opportunities in student centers and campus facilities.
-                </p>
-              </div>
-
-              <div className="text-center">
-                <div className="mx-auto w-16 h-16 bg-bronze/10 rounded-full flex items-center justify-center mb-4">
-                  <UsersIcon className="w-8 h-8 text-bronze" />
-                </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Technology Innovation</h3>
-                <p className="text-stone">
-                  Growing tech sector with startups and established companies, 
-                  providing opportunities in office buildings and tech campuses.
-                </p>
-              </div>
-
-              <div className="text-center">
-                <div className="mx-auto w-16 h-16 bg-bronze/10 rounded-full flex items-center justify-center mb-4">
-                  <BuildingOfficeIcon className="w-8 h-8 text-bronze" />
-                </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Professional Services</h3>
-                <p className="text-stone">
-                  Engineering firms, consulting companies, and professional service providers, 
-                  offering placement in office buildings and business centers.
-                </p>
+                <h3 className="text-lg font-semibold text-charcoal mb-2">Education</h3>
+                <p className="text-stone text-sm">Universities, colleges, and schools</p>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Pricing Section - Prominently Displayed */}
-        <div className="bg-white py-16 sm:py-20">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        {/* Pricing Section */}
+        <div className="py-16 bg-white">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
-                Get Wichita Vending Machine Leads
+              <h2 className="text-3xl font-playfair font-bold text-charcoal">
+                Vending Machine Lead Pricing
               </h2>
-              <p className="text-lg text-stone max-w-3xl mx-auto">
-                Choose the plan that fits your business needs and start receiving qualified vending machine location leads in Wichita.
+              <p className="mt-4 text-lg text-stone max-w-3xl mx-auto">
+                Get access to qualified vending machine leads in Wichita with our flexible pricing options.
               </p>
             </div>
             <PricingTable />
@@ -185,79 +123,73 @@ export default function WichitaKansasVendingLeadsPage() {
         </div>
 
         {/* Hot Leads Section */}
-        <div className="bg-warm-white py-16 sm:py-20">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-playfair font-bold text-charcoal">
+                Hot Vending Leads in Wichita
+              </h2>
+              <p className="mt-4 text-lg text-stone max-w-3xl mx-auto">
+                Access our latest verified vending machine placement opportunities in Wichita.
+              </p>
+            </div>
             <HotLeads />
           </div>
         </div>
 
         {/* FAQ Section */}
-        <div className="bg-white py-16 sm:py-20">
-          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <div className="py-16 bg-white">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
+              <h2 className="text-3xl font-playfair font-bold text-charcoal">
                 Frequently Asked Questions
               </h2>
-              <p className="text-lg text-stone">
-                Everything you need to know about vending machine opportunities in Wichita.
-              </p>
             </div>
-
-            <div className="space-y-6">
-              <div className="bg-warm-white p-6 rounded-xl">
-                <h3 className="text-xl font-semibold text-charcoal mb-3">
-                  What types of businesses are best for vending machines in Wichita?
-                </h3>
-                <p className="text-stone">
-                  Wichita offers diverse opportunities including aerospace companies, manufacturing plants, 
-                  healthcare facilities, and educational institutions. The major aerospace sector and manufacturing industry 
-                  provide excellent placement opportunities.
-                </p>
+            <div className="max-w-3xl mx-auto space-y-6">
+              <div className="bg-warm-white p-6 rounded-lg">
+                <h3 className="text-lg font-semibold text-charcoal mb-2">What types of businesses in Wichita need vending machines?</h3>
+                <p className="text-stone">Aviation companies, manufacturing facilities, healthcare institutions, educational campuses, and technology firms in Wichita are excellent locations for vending machine placement.</p>
               </div>
-
-              <div className="bg-warm-white p-6 rounded-xl">
-                <h3 className="text-xl font-semibold text-charcoal mb-3">
-                  How competitive is the vending machine market in Wichita?
-                </h3>
-                <p className="text-stone">
-                  Wichita has a growing vending presence, but there's still significant opportunity 
-                  for expansion, especially in new aerospace facilities and manufacturing plants.
-                </p>
+              <div className="bg-warm-white p-6 rounded-lg">
+                <h3 className="text-lg font-semibold text-charcoal mb-2">How do I get started with vending machine placement in Wichita?</h3>
+                <p className="text-stone">Start by accessing our verified business leads, then contact the businesses directly to discuss vending machine placement opportunities.</p>
               </div>
-
-              <div className="bg-warm-white p-6 rounded-xl">
-                <h3 className="text-xl font-semibold text-charcoal mb-3">
-                  What are the peak business hours for vending in Wichita?
-                </h3>
-                <p className="text-stone">
-                  Wichita businesses typically operate from 8 AM to 6 PM, with peak vending activity 
-                  during lunch hours (12 PM - 2 PM) and afternoon breaks (3 PM - 4 PM).
-                </p>
-              </div>
-
-              <div className="bg-warm-white p-6 rounded-xl">
-                <h3 className="text-xl font-semibold text-charcoal mb-3">
-                  Are there seasonal considerations for vending in Wichita?
-                </h3>
-                <p className="text-stone">
-                  Yes, Wichita experiences four distinct seasons with hot summers and cold winters. Indoor locations 
-                  are preferred year-round, but spring and fall offer comfortable outdoor opportunities.
-                </p>
-              </div>
-
-              <div className="bg-warm-white p-6 rounded-xl">
-                <h3 className="text-xl font-semibold text-charcoal mb-3">
-                  What permits are required for vending machines in Wichita?
-                </h3>
-                <p className="text-stone">
-                  You'll need a business license from the City of Wichita and potentially health permits 
-                  for food vending. Specific requirements depend on your machine type and location.
-                </p>
+              <div className="bg-warm-white p-6 rounded-lg">
+                <h3 className="text-lg font-semibold text-charcoal mb-2">What are the best areas in Wichita for vending machines?</h3>
+                <p className="text-stone">The downtown area, aviation district, manufacturing zones, healthcare corridors, and educational campuses offer the highest potential for vending machine success.</p>
               </div>
             </div>
           </div>
         </div>
-      </div>
+
+        {/* Other Kansas Cities Section */}
+        <div className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-playfair font-bold text-charcoal">
+                Other Kansas Cities
+              </h2>
+              <p className="mt-4 text-lg text-stone max-w-3xl mx-auto">
+                Explore vending machine opportunities in other major Kansas cities.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <a href="/vending-leads/overland-park-kansas" className="block bg-white p-6 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
+                <h3 className="text-lg font-semibold text-charcoal mb-2">Overland Park</h3>
+                <p className="text-stone text-sm">Suburban hub with technology and healthcare</p>
+              </a>
+              <a href="/vending-leads/kansas-city-kansas" className="block bg-white p-6 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
+                <h3 className="text-lg font-semibold text-charcoal mb-2">Kansas City</h3>
+                <p className="text-stone text-sm">Manufacturing hub with healthcare and education</p>
+              </a>
+              <a href="/vending-leads/topeka-kansas" className="block bg-white p-6 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
+                <h3 className="text-lg font-semibold text-charcoal mb-2">Topeka</h3>
+                <p className="text-stone text-sm">State capital with government and education</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </main>
       
       <Footer />
     </>

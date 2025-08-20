@@ -1,86 +1,61 @@
-'use client'
-
-import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CpuChipIcon } from '@heroicons/react/24/solid'
-import { generateCityStructuredData } from '@/components/CityPageSEO'
+import { Metadata } from 'next'
+import { generateCityStructuredData, generateCityMetadata } from '@/components/CityPageSEO'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
+import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CpuChipIcon } from '@heroicons/react/24/solid'
+
+export const metadata: Metadata = generateCityMetadata({
+  city: 'Memphis',
+  state: 'Tennessee',
+  stateAbbr: 'TN',
+  population: '651K+',
+  businessCount: '28,500+',
+  industries: ['Transportation', 'Healthcare', 'Education', 'Manufacturing', 'Logistics'],
+  description: 'Memphis offers transportation companies, healthcare facilities, educational institutions, manufacturing businesses, and logistics firms perfect for vending machine placement opportunities.'
+})
 
 export default function MemphisTennesseeVendingLeadsPage() {
   const structuredData = generateCityStructuredData({
     city: 'Memphis',
     state: 'Tennessee',
     stateAbbr: 'TN',
-    population: '651,073',
-    businessCount: '30,000+',
-    industries: ['Logistics', 'Healthcare', 'Manufacturing', 'Education', 'Financial Services'],
-    description: 'Memphis offers excellent opportunities for vending machine placement with its major logistics sector, healthcare industry, and diverse business landscape.'
+    population: '651K+',
+    businessCount: '28,500+',
+    industries: ['Transportation', 'Healthcare', 'Education', 'Manufacturing', 'Logistics'],
+    description: 'Memphis offers transportation companies, healthcare facilities, educational institutions, manufacturing businesses, and logistics firms perfect for vending machine placement opportunities.'
   })
 
   return (
     <>
-      {/* Structured Data for SEO */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(structuredData)
-        }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
       
       <Header />
       
-      <div className="min-h-screen bg-warm-white">
-        {/* Hero Section - Matching Homepage Style */}
-        <div className="bg-warm-white">
-          <div className="mx-auto max-w-2xl px-4 sm:px-6 py-12 sm:py-16 lg:py-24">
+      <main>
+        {/* Hero Section */}
+        <div className="bg-gradient-to-r from-navy to-charcoal py-16 sm:py-24">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="text-center">
-              <h1 className="text-3xl sm:text-4xl lg:text-6xl font-playfair font-bold tracking-tight text-charcoal leading-tight">
-                Memphis Vending Machine Locations
+              <h1 className="text-4xl font-playfair font-bold tracking-tight text-white sm:text-6xl">
+                Vending Machine Leads in Memphis, TN
               </h1>
-              
-              <p className="mt-4 sm:mt-6 text-base sm:text-lg leading-7 sm:leading-8 text-stone px-2 sm:px-0">
-                Discover premium vending machine placement opportunities in Memphis, Tennessee. 
-                Access 30,000+ businesses and the heart of Tennessee's logistics and healthcare hub.
+              <p className="mt-6 text-xl leading-8 text-white/90 max-w-3xl mx-auto">
+                Get qualified vending machine leads in Memphis, Tennessee. Access verified business locations with contact information for successful vending machine placement.
               </p>
-
-              {/* City Stats - Matching Homepage Counter Style */}
-              <div className="mt-10 sm:mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 px-4 sm:px-0">
-                <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-bronze">30,000+</div>
-                  <div className="text-xs sm:text-sm text-stone leading-tight">Businesses</div>
+              <div className="mt-8 flex flex-wrap justify-center gap-4">
+                <div className="bg-white/20 rounded-full px-6 py-2 text-white text-sm">
+                  Transportation Hub
                 </div>
-                <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-bronze">651K+</div>
-                  <div className="text-xs sm:text-sm text-stone leading-tight">Population</div>
+                <div className="bg-white/20 rounded-full px-6 py-2 text-white text-sm">
+                  Healthcare
                 </div>
-                <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-bronze">220+</div>
-                  <div className="text-xs sm:text-sm text-stone leading-tight">Vending Locations</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-xl sm:text-2xl font-bold text-bronze">5</div>
-                  <div className="text-xs sm:text-sm text-stone leading-tight">Major Industries</div>
-                </div>
-              </div>
-
-              {/* Trust Signals - Matching Homepage Style */}
-              <div className="mt-8 sm:mt-10 flex flex-wrap justify-center gap-4 sm:gap-6">
-                <div className="flex items-center gap-2 text-sm text-stone">
-                  <CheckBadgeIcon className="h-5 w-5 text-green-600" />
-                  <span>Verified Locations</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-stone">
-                  <StarIcon className="h-5 w-5 text-yellow-500" />
-                  <span>4.9/5 Rating</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-stone">
-                  <ShieldCheckIcon className="h-5 w-5 text-blue-600" />
-                  <span>Secure & Reliable</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-stone">
-                  <ClockIcon className="h-5 w-5 text-purple-600" />
-                  <span>Quality Research</span>
+                <div className="bg-white/20 rounded-full px-6 py-2 text-white text-sm">
+                  Logistics
                 </div>
               </div>
             </div>
@@ -88,96 +63,59 @@ export default function MemphisTennesseeVendingLeadsPage() {
         </div>
 
         {/* Business Landscape Section */}
-        <div className="bg-white py-16 sm:py-20">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
+              <h2 className="text-3xl font-playfair font-bold text-charcoal">
                 Memphis Business Landscape
               </h2>
-              <p className="text-lg text-stone max-w-3xl mx-auto">
-                Memphis is Tennessee's second-largest city and a major logistics and healthcare center, offering diverse vending opportunities across multiple thriving industries.
+              <p className="mt-4 text-lg text-stone max-w-3xl mx-auto">
+                Memphis's economy is driven by transportation, healthcare, education, and logistics sectors.
               </p>
             </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="text-center">
-                <div className="mx-auto w-16 h-16 bg-bronze/10 rounded-full flex items-center justify-center mb-4">
-                  <BuildingOfficeIcon className="w-8 h-8 text-bronze" />
+                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <CpuChipIcon className="w-8 h-8 text-navy" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Logistics Hub</h3>
-                <p className="text-stone">
-                  Major logistics center with FedEx World Hub and distribution centers, 
-                  providing placement opportunities in warehouses and logistics facilities.
-                </p>
+                <h3 className="text-lg font-semibold text-charcoal mb-2">Transportation</h3>
+                <p className="text-stone text-sm">Airports, ports, and shipping companies</p>
               </div>
-
               <div className="text-center">
-                <div className="mx-auto w-16 h-16 bg-bronze/10 rounded-full flex items-center justify-center mb-4">
-                  <MapPinIcon className="w-8 h-8 text-bronze" />
+                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <BuildingOfficeIcon className="w-8 h-8 text-navy" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Healthcare Excellence</h3>
-                <p className="text-stone">
-                  Major medical centers including Methodist Le Bonheur Healthcare and St. Jude, 
-                  offering placement in hospitals, clinics, and medical office buildings.
-                </p>
+                <h3 className="text-lg font-semibold text-charcoal mb-2">Healthcare</h3>
+                <p className="text-stone text-sm">Hospitals, clinics, and medical facilities</p>
               </div>
-
               <div className="text-center">
-                <div className="mx-auto w-16 h-16 bg-bronze/10 rounded-full flex items-center justify-center mb-4">
-                  <UsersIcon className="w-8 h-8 text-bronze" />
+                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <AcademicCapIcon className="w-8 h-8 text-navy" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Manufacturing</h3>
-                <p className="text-stone">
-                  Strong manufacturing presence including automotive and food processing, 
-                  offering placement in factories and industrial facilities.
-                </p>
+                <h3 className="text-lg font-semibold text-charcoal mb-2">Education</h3>
+                <p className="text-stone text-sm">Universities, colleges, and schools</p>
               </div>
-
               <div className="text-center">
-                <div className="mx-auto w-16 h-16 bg-bronze/10 rounded-full flex items-center justify-center mb-4">
-                  <AcademicCapIcon className="w-8 h-8 text-bronze" />
+                <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <UsersIcon className="w-8 h-8 text-navy" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Education Hub</h3>
-                <p className="text-stone">
-                  University of Memphis and other educational institutions, 
-                  providing opportunities in student centers and campus facilities.
-                </p>
-              </div>
-
-              <div className="text-center">
-                <div className="mx-auto w-16 h-16 bg-bronze/10 rounded-full flex items-center justify-center mb-4">
-                  <CpuChipIcon className="w-8 h-8 text-bronze" />
-                </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Financial Services</h3>
-                <p className="text-stone">
-                  Banking and financial institutions, 
-                  providing placement opportunities in office buildings and financial centers.
-                </p>
-              </div>
-
-              <div className="text-center">
-                <div className="mx-auto w-16 h-16 bg-bronze/10 rounded-full flex items-center justify-center mb-4">
-                  <BuildingOfficeIcon className="w-8 h-8 text-bronze" />
-                </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Professional Services</h3>
-                <p className="text-stone">
-                  Law firms, consulting companies, and professional service providers, 
-                  offering placement in office buildings and business centers.
-                </p>
+                <h3 className="text-lg font-semibold text-charcoal mb-2">Logistics</h3>
+                <p className="text-stone text-sm">Distribution centers and logistics companies</p>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Pricing Section - Prominently Displayed */}
-        <div className="bg-white py-16 sm:py-20">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        {/* Pricing Section */}
+        <div className="py-16 bg-white">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
-                Get Memphis Vending Machine Leads
+              <h2 className="text-3xl font-playfair font-bold text-charcoal">
+                Vending Machine Lead Pricing
               </h2>
-              <p className="text-lg text-stone max-w-3xl mx-auto">
-                Choose the plan that fits your business needs and start receiving qualified vending machine location leads in Memphis.
+              <p className="mt-4 text-lg text-stone max-w-3xl mx-auto">
+                Get access to qualified vending machine leads in Memphis with our flexible pricing options.
               </p>
             </div>
             <PricingTable />
@@ -185,79 +123,73 @@ export default function MemphisTennesseeVendingLeadsPage() {
         </div>
 
         {/* Hot Leads Section */}
-        <div className="bg-warm-white py-16 sm:py-20">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-playfair font-bold text-charcoal">
+                Hot Vending Leads in Memphis
+              </h2>
+              <p className="mt-4 text-lg text-stone max-w-3xl mx-auto">
+                Access our latest verified vending machine placement opportunities in Memphis.
+              </p>
+            </div>
             <HotLeads />
           </div>
         </div>
 
         {/* FAQ Section */}
-        <div className="bg-white py-16 sm:py-20">
-          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <div className="py-16 bg-white">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
+              <h2 className="text-3xl font-playfair font-bold text-charcoal">
                 Frequently Asked Questions
               </h2>
-              <p className="text-lg text-stone">
-                Everything you need to know about vending machine opportunities in Memphis.
-              </p>
             </div>
-
-            <div className="space-y-6">
-              <div className="bg-warm-white p-6 rounded-xl">
-                <h3 className="text-xl font-semibold text-charcoal mb-3">
-                  What types of businesses are best for vending machines in Memphis?
-                </h3>
-                <p className="text-stone">
-                  Memphis offers diverse opportunities including logistics facilities, healthcare centers, 
-                  manufacturing plants, and educational institutions. The major logistics sector and healthcare industry 
-                  provide excellent placement opportunities.
-                </p>
+            <div className="max-w-3xl mx-auto space-y-6">
+              <div className="bg-warm-white p-6 rounded-lg">
+                <h3 className="text-lg font-semibold text-charcoal mb-2">What types of businesses in Memphis need vending machines?</h3>
+                <p className="text-stone">Transportation companies, healthcare facilities, educational institutions, manufacturing businesses, and logistics firms in Memphis are excellent locations for vending machine placement.</p>
               </div>
-
-              <div className="bg-warm-white p-6 rounded-xl">
-                <h3 className="text-xl font-semibold text-charcoal mb-3">
-                  How competitive is the vending machine market in Memphis?
-                </h3>
-                <p className="text-stone">
-                  Memphis has a growing vending presence, but there's still significant opportunity 
-                  for expansion, especially in new logistics facilities and healthcare centers.
-                </p>
+              <div className="bg-warm-white p-6 rounded-lg">
+                <h3 className="text-lg font-semibold text-charcoal mb-2">How do I get started with vending machine placement in Memphis?</h3>
+                <p className="text-stone">Start by accessing our verified business leads, then contact the businesses directly to discuss vending machine placement opportunities.</p>
               </div>
-
-              <div className="bg-warm-white p-6 rounded-xl">
-                <h3 className="text-xl font-semibold text-charcoal mb-3">
-                  What are the peak business hours for vending in Memphis?
-                </h3>
-                <p className="text-stone">
-                  Memphis businesses typically operate from 8 AM to 6 PM, with peak vending activity 
-                  during lunch hours (12 PM - 2 PM) and afternoon breaks (3 PM - 4 PM).
-                </p>
-              </div>
-
-              <div className="bg-warm-white p-6 rounded-xl">
-                <h3 className="text-xl font-semibold text-charcoal mb-3">
-                  Are there seasonal considerations for vending in Memphis?
-                </h3>
-                <p className="text-stone">
-                  Yes, Memphis experiences four distinct seasons with hot summers and mild winters. Indoor locations 
-                  are preferred year-round, but spring and fall offer comfortable outdoor opportunities.
-                </p>
-              </div>
-
-              <div className="bg-warm-white p-6 rounded-xl">
-                <h3 className="text-xl font-semibold text-charcoal mb-3">
-                  What permits are required for vending machines in Memphis?
-                </h3>
-                <p className="text-stone">
-                  You'll need a business license from the City of Memphis and potentially health permits 
-                  for food vending. Specific requirements depend on your machine type and location.
-                </p>
+              <div className="bg-warm-white p-6 rounded-lg">
+                <h3 className="text-lg font-semibold text-charcoal mb-2">What are the best areas in Memphis for vending machines?</h3>
+                <p className="text-stone">The downtown area, transportation hubs, healthcare districts, educational campuses, and logistics centers offer the highest potential for vending machine success.</p>
               </div>
             </div>
           </div>
         </div>
-      </div>
+
+        {/* Other Tennessee Cities Section */}
+        <div className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-playfair font-bold text-charcoal">
+                Other Tennessee Cities
+              </h2>
+              <p className="mt-4 text-lg text-stone max-w-3xl mx-auto">
+                Explore vending machine opportunities in other major Tennessee cities.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <a href="/vending-leads/nashville-tennessee" className="block bg-white p-6 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
+                <h3 className="text-lg font-semibold text-charcoal mb-2">Nashville</h3>
+                <p className="text-stone text-sm">Music hub with healthcare and education</p>
+              </a>
+              <a href="/vending-leads/knoxville-tennessee" className="block bg-white p-6 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
+                <h3 className="text-lg font-semibold text-charcoal mb-2">Knoxville</h3>
+                <p className="text-stone text-sm">Education hub with technology and healthcare</p>
+              </a>
+              <a href="/vending-leads/chattanooga-tennessee" className="block bg-white p-6 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
+                <h3 className="text-lg font-semibold text-charcoal mb-2">Chattanooga</h3>
+                <p className="text-stone text-sm">Technology hub with manufacturing and tourism</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </main>
       
       <Footer />
     </>

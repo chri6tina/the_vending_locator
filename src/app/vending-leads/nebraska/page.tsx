@@ -1,317 +1,245 @@
 'use client'
 
-import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CpuChipIcon, TruckIcon, FilmIcon, SunIcon, BeakerIcon, SparklesIcon, HeartIcon, CloudIcon } from '@heroicons/react/24/solid'
 import Link from 'next/link'
-import { useState, useEffect } from 'react'
-import { motion } from 'framer-motion'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
+import { useState, useEffect } from 'react'
+import { motion } from 'framer-motion'
+import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CpuChipIcon, TruckIcon, FilmIcon, SunIcon, BeakerIcon, SparklesIcon, HeartIcon, CloudIcon } from '@heroicons/react/24/solid'
 
 export default function NebraskaVendingLeadsPage() {
-  const [activeUsers, setActiveUsers] = useState(8)
+  const [activeUsers, setActiveUsers] = useState(0)
+  const [userNames, setUserNames] = useState([
+    'Tom from Omaha', 'Sarah from Lincoln', 'Mike from Bellevue', 'Lisa from Grand Island',
+    'David from Kearney', 'Jennifer from Fremont', 'Robert from Norfolk', 'Amanda from Columbus',
+    'Chris from Hastings', 'Maria from North Platte', 'James from Scottsbluff', 'Emily from Beatrice'
+  ])
   const [currentUserIndex, setCurrentUserIndex] = useState(0)
 
-  const users = [
-    'Tom from Omaha',
-    'Sarah from Lincoln',
-    'Mike from Bellevue',
-    'Lisa from Grand Island',
-    'David from Kearney'
-  ]
-
+  // Fluctuating active users counter
   useEffect(() => {
+    const updateActiveUsers = () => {
+      const baseUsers = 9
+      const fluctuation = Math.floor(Math.random() * 3) + 1
+      setActiveUsers(baseUsers + fluctuation)
+    }
+
     const interval = setInterval(() => {
-      setActiveUsers(prev => prev + Math.floor(Math.random() * 3) - 1)
-    }, 3000)
+      updateActiveUsers()
+    }, Math.random() * 2000 + 2000)
+
+    updateActiveUsers()
     return () => clearInterval(interval)
   }, [])
 
+  // Rotating user names
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentUserIndex(prev => (prev + 1) % users.length)
-    }, 4000)
-    return () => clearInterval(interval)
-  }, [users.length])
+      setCurrentUserIndex(prev => (prev + 1) % userNames.length)
+    }, 3000)
 
-  const cities = [
-    {
-      name: 'Omaha',
-      slug: 'omaha-nebraska',
-      vendorCount: '140+',
-      businessCount: '180+',
-      description: 'Largest city with finance and healthcare',
-      highlights: ['Finance', 'Healthcare', 'Manufacturing']
-    },
-    {
-      name: 'Lincoln',
-      slug: 'lincoln-nebraska',
-      vendorCount: '100+',
-      businessCount: '130+',
-      description: 'State capital with government and education',
-      highlights: ['Government', 'Education', 'Healthcare']
-    },
-    {
-      name: 'Bellevue',
-      slug: 'bellevue-nebraska',
-      vendorCount: '70+',
-      businessCount: '90+',
-      description: 'Suburban Omaha area',
-      highlights: ['Healthcare', 'Retail', 'Manufacturing']
-    },
-    {
-      name: 'Grand Island',
-      slug: 'grand-island-nebraska',
-      vendorCount: '50+',
-      businessCount: '70+',
-      description: 'Agricultural and manufacturing center',
-      highlights: ['Agriculture', 'Manufacturing', 'Healthcare']
-    },
-    {
-      name: 'Kearney',
-      slug: 'kearney-nebraska',
-      vendorCount: '40+',
-      businessCount: '60+',
-      description: 'University and healthcare hub',
-      highlights: ['Education', 'Healthcare', 'Retail']
-    }
-  ]
+    return () => clearInterval(interval)
+  }, [userNames.length])
 
   return (
     <>
       <Header />
       
       <div className="min-h-screen bg-warm-white">
-        {/* Hero Section */}
-        <div className="bg-warm-white">
-          <div className="mx-auto max-w-2xl px-4 sm:px-6 py-12 sm:py-16 lg:py-24">
+        {/* Enhanced Hero Section - Nebraska-Specific */}
+        <div className="bg-warm-white py-16 sm:py-24 lg:py-32">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center">
-              {/* Active Users Counter */}
-              <div className="inline-flex items-center gap-2 bg-bronze/10 text-bronze px-4 py-2 rounded-full text-sm font-medium mb-6">
-                <div className="w-2 h-2 bg-bronze rounded-full animate-pulse"></div>
-                {activeUsers} active users right now
-              </div>
-
-              <motion.h1 
-                className="text-3xl sm:text-4xl lg:text-6xl font-playfair font-bold tracking-tight text-charcoal leading-tight"
+              {/* Active Users Counter Pill */}
+              <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
+                transition={{ duration: 0.8 }}
+                className="mb-8 p-4 bg-cream/50 backdrop-blur-sm rounded-2xl border border-gray-200 shadow-sm max-w-md mx-auto"
               >
-                Nebraska Vending Machine Locations
+                <div className="flex items-center justify-center gap-3">
+                  <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                  <span className="text-sm font-medium text-chocolate">
+                    <span className="font-bold text-coral">{activeUsers}</span> Nebraska vendors are choosing plans right now
+                  </span>
+                </div>
+                <div
+                  key={currentUserIndex}
+                  className="mt-2 text-xs text-chocolate/70"
+                >
+                  Including {userNames[currentUserIndex]}
+                </div>
+              </motion.div>
+
+              <motion.h1
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className="text-4xl sm:text-5xl lg:text-6xl font-playfair font-bold tracking-tight text-charcoal leading-tight"
+              >
+                Vending Machine Locations<br />in Nebraska
               </motion.h1>
               
-              <motion.p 
-                className="mt-4 sm:mt-6 text-base sm:text-lg leading-7 sm:leading-8 text-stone px-2 sm:px-0"
+              <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                className="mt-6 sm:mt-8 text-lg sm:text-xl leading-8 text-stone max-w-4xl mx-auto"
               >
-                Discover premium vending machine placement opportunities across Nebraska. 
-                Access 70,000+ businesses and the heart of America's agricultural and manufacturing hub.
+                Get pre-qualified vending machine locations in Nebraska's thriving healthcare and agriculture economy. 
+                Access verified businesses with detailed contact information and placement opportunities.
               </motion.p>
 
-              {/* Trust Signals */}
-              <div className="mt-8 flex flex-wrap justify-center gap-4 text-sm text-stone">
-                <div className="flex items-center gap-2">
-                  <CheckBadgeIcon className="w-4 h-4 text-bronze" />
-                  400+ Verified Locations
+              {/* Trust Signals - Nebraska-Specific */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+                className="mt-8 sm:mt-10 grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-3xl mx-auto"
+              >
+                <div className="flex items-center justify-center gap-3 p-3 bg-cream/30 rounded-lg">
+                  <CheckBadgeIcon className="w-5 h-5 text-coral" />
+                  <span className="text-sm font-medium text-chocolate">900+ Verified Locations</span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <UsersIcon className="w-4 h-4 text-bronze" />
-                  70,000+ Businesses
+                <div className="flex items-center justify-center gap-3 p-3 bg-cream/30 rounded-lg">
+                  <UsersIcon className="w-5 h-5 text-coral" />
+                  <span className="text-sm font-medium text-chocolate">70,000+ Businesses</span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <BuildingOfficeIcon className="w-4 h-4 text-bronze" />
-                  5 Major Industries
+                <div className="flex items-center justify-center gap-3 p-3 bg-cream/30 rounded-lg">
+                  <BuildingOfficeIcon className="w-5 h-5 text-coral" />
+                  <span className="text-sm font-medium text-chocolate">6 Major Industries</span>
                 </div>
-              </div>
+              </motion.div>
 
               {/* CTA Buttons */}
-              <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-                <Link
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.8 }}
+                className="mt-8 sm:mt-10 flex flex-col sm:flex-row gap-4 justify-center"
+              >
+                <a
                   href="#pricing"
-                  className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-bronze hover:bg-bronze/90 transition-colors"
+                  className="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-white bg-coral hover:bg-coral/90 rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl"
                 >
-                  View Pricing
-                </Link>
-                <Link
+                  View Pricing Plans
+                </a>
+                <a
                   href="#hot-leads"
-                  className="inline-flex items-center justify-center px-6 py-3 border border-bronze text-base font-medium rounded-md text-bronze bg-transparent hover:bg-bronze/10 transition-colors"
+                  className="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-coral bg-cream hover:bg-cream/80 rounded-lg transition-colors duration-200 border-2 border-coral"
                 >
-                  Hot Leads
-                </Link>
-              </div>
-
-              {/* Current User */}
-              <div className="mt-6 text-sm text-stone">
-                <span className="text-bronze font-medium">{users[currentUserIndex]}</span> just viewed this page
-              </div>
+                  See Hot Leads
+                </a>
+              </motion.div>
             </div>
           </div>
         </div>
 
-        {/* Pricing Section */}
-        <section id="pricing" className="py-16 bg-stone-50">
+        {/* Pricing Section - Immediately After Hero */}
+        <section id="pricing" className="py-16 bg-cream/20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-charcoal mb-4">
-                Choose Your Plan
-              </h2>
-              <p className="text-lg text-stone">
-                Get access to Nebraska's top vending machine opportunities
-              </p>
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal"
+              >
+                Choose Your Nebraska Vending Leads Plan
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className="mt-4 text-lg text-stone max-w-2xl mx-auto"
+              >
+                Get access to verified vending machine locations across Nebraska with our comprehensive lead packages.
+              </motion.p>
             </div>
             <PricingTable />
           </div>
         </section>
 
-        {/* Business Landscape */}
+        {/* Business Landscape Section */}
         <section className="py-16 bg-warm-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <motion.div 
-              className="text-center mb-12"
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="text-center mb-12"
             >
-              <h2 className="text-3xl font-bold text-charcoal mb-4">
+              <h2 className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal">
                 Nebraska Business Landscape
               </h2>
-              <p className="text-lg text-stone max-w-3xl mx-auto">
-                Nebraska is a major agricultural and manufacturing hub in the Midwest, offering diverse vending 
-                opportunities across multiple thriving industries.
+              <p className="mt-4 text-lg text-stone max-w-3xl mx-auto">
+                Nebraska offers diverse opportunities across multiple thriving industries, making it an ideal location for vending machine placement.
               </p>
             </motion.div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <motion.div 
-                className="text-center p-6 rounded-lg bg-stone-50"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.1 }}
-                viewport={{ once: true }}
-              >
-                <SunIcon className="w-12 h-12 text-bronze mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Agriculture</h3>
-                <p className="text-stone">Leading agricultural and food processing state</p>
-              </motion.div>
-
-              <motion.div 
-                className="text-center p-6 rounded-lg bg-stone-50"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                viewport={{ once: true }}
-              >
-                <CpuChipIcon className="w-12 h-12 text-bronze mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Manufacturing</h3>
-                <p className="text-stone">Strong manufacturing and industrial base</p>
-              </motion.div>
-
-              <motion.div 
-                className="text-center p-6 rounded-lg bg-stone-50"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-                viewport={{ once: true }}
-              >
-                <HeartIcon className="w-12 h-12 text-bronze mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Healthcare</h3>
-                <p className="text-stone">Growing healthcare sector with medical facilities</p>
-              </motion.div>
-
-              <motion.div 
-                className="text-center p-6 rounded-lg bg-stone-50"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.4 }}
-                viewport={{ once: true }}
-              >
-                <TruckIcon className="w-12 h-12 text-bronze mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Transportation</h3>
-                <p className="text-stone">Major logistics and distribution hub</p>
-              </motion.div>
-
-              <motion.div 
-                className="text-center p-6 rounded-lg bg-stone-50"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.5 }}
-                viewport={{ once: true }}
-              >
-                <AcademicCapIcon className="w-12 h-12 text-bronze mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Education</h3>
-                <p className="text-stone">Top universities and research institutions</p>
-              </motion.div>
-
-              <motion.div 
-                className="text-center p-6 rounded-lg bg-stone-50"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.6 }}
-                viewport={{ once: true }}
-              >
-                <BuildingOfficeIcon className="w-12 h-12 text-bronze mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-charcoal mb-2">Finance</h3>
-                <p className="text-stone">Major financial services hub in Omaha</p>
-              </motion.div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+              {[
+                { icon: HeartIcon, title: 'Healthcare', description: 'Medical centers and healthcare facilities', color: 'text-red-600' },
+                { icon: TruckIcon, title: 'Agriculture', description: 'Farming and food processing operations', color: 'text-green-600' },
+                { icon: AcademicCapIcon, title: 'Education', description: 'Universities and educational institutions', color: 'text-indigo-600' },
+                { icon: BuildingOfficeIcon, title: 'Manufacturing', description: 'Industrial and manufacturing operations', color: 'text-purple-600' },
+                { icon: CpuChipIcon, title: 'Technology', description: 'Tech companies and data centers', color: 'text-blue-600' },
+                { icon: SunIcon, title: 'Solar Energy', description: 'Solar power and renewable energy', color: 'text-yellow-600' }
+              ].map((industry, index) => (
+                <motion.div
+                  key={industry.title}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: index * 0.1 }}
+                  className="bg-white p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200"
+                >
+                  <div className={`w-12 h-12 bg-cream rounded-lg flex items-center justify-center mb-4`}>
+                    <industry.icon className={`w-6 h-6 ${industry.color}`} />
+                  </div>
+                  <h3 className="text-lg font-semibold text-charcoal mb-2">{industry.title}</h3>
+                  <p className="text-stone text-sm leading-relaxed">{industry.description}</p>
+                </motion.div>
+              ))}
             </div>
           </div>
         </section>
 
-        {/* State Stats */}
-        <section className="py-16 bg-stone-50">
+        {/* State Stats Section */}
+        <section className="py-16 bg-cream/10">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <motion.div 
-              className="text-center mb-12"
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="text-center mb-12"
             >
-              <h2 className="text-3xl font-bold text-charcoal mb-4">
+              <h2 className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal">
                 Nebraska by the Numbers
               </h2>
             </motion.div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <motion.div 
-                className="text-center"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.1 }}
-                viewport={{ once: true }}
-              >
-                <div className="text-4xl font-bold text-bronze mb-2">2.0M+</div>
-                <div className="text-lg text-charcoal">Population</div>
-              </motion.div>
-
-              <motion.div 
-                className="text-center"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                viewport={{ once: true }}
-              >
-                <div className="text-4xl font-bold text-bronze mb-2">70,000+</div>
-                <div className="text-lg text-charcoal">Businesses</div>
-              </motion.div>
-
-              <motion.div 
-                className="text-center"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-                viewport={{ once: true }}
-              >
-                <div className="text-4xl font-bold text-bronze mb-2">6</div>
-                <div className="text-lg text-charcoal">Major Industries</div>
-              </motion.div>
+              {[
+                { label: 'Population', value: '2.0M+', description: 'Residents across the state' },
+                { label: 'Businesses', value: '70,000+', description: 'Companies and organizations' },
+                { label: 'Major Industries', value: '6', description: 'Key economic sectors' }
+              ].map((stat, index) => (
+                <motion.div
+                  key={stat.label}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: index * 0.2 }}
+                  className="text-center"
+                >
+                  <div className="text-4xl sm:text-5xl font-bold text-coral mb-2">{stat.value}</div>
+                  <div className="text-lg font-semibold text-charcoal mb-1">{stat.label}</div>
+                  <div className="text-stone text-sm">{stat.description}</div>
+                </motion.div>
+              ))}
             </div>
           </div>
         </section>
@@ -319,12 +247,25 @@ export default function NebraskaVendingLeadsPage() {
         {/* Hot Leads Section */}
         <section id="hot-leads" className="py-16 bg-warm-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="text-center mb-12"
+            >
+              <h2 className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal">
+                Hot Nebraska Vending Leads
+              </h2>
+              <p className="mt-4 text-lg text-stone max-w-2xl mx-auto">
+                Get immediate access to the most promising vending machine placement opportunities in Nebraska.
+              </p>
+            </motion.div>
             <HotLeads />
           </div>
         </section>
 
         {/* Vending Course Section */}
-        <section className="py-16 bg-stone-50">
+        <section className="py-16 bg-cream/20">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <VendingCourse />
           </div>
@@ -333,119 +274,89 @@ export default function NebraskaVendingLeadsPage() {
         {/* FAQ Section */}
         <section className="py-16 bg-warm-white">
           <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-            <motion.div 
-              className="text-center mb-12"
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="text-center mb-12"
             >
-              <h2 className="text-3xl font-bold text-charcoal mb-4">
+              <h2 className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal">
                 Frequently Asked Questions
               </h2>
             </motion.div>
 
             <div className="space-y-6">
-              <motion.div 
-                className="bg-stone-50 rounded-lg p-6"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.1 }}
-                viewport={{ once: true }}
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-2">
-                  What makes Nebraska a good market for vending machines?
-                </h3>
-                <p className="text-stone">
-                  Nebraska's strong agricultural sector, manufacturing industry, and growing healthcare 
-                  sector create ideal conditions for vending machine placement with consistent foot traffic.
-                </p>
-              </motion.div>
-
-              <motion.div 
-                className="bg-stone-50 rounded-lg p-6"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                viewport={{ once: true }}
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-2">
-                  Which cities in Nebraska have the best opportunities?
-                </h3>
-                <p className="text-stone">
-                  Omaha and Lincoln offer the highest concentration of businesses 
-                  and manufacturing facilities, making them prime locations for vending machine placement.
-                </p>
-              </motion.div>
-
-              <motion.div 
-                className="bg-stone-50 rounded-lg p-6"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.3 }}
-                viewport={{ once: true }}
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-2">
-                  How do I get started with vending machines in Nebraska?
-                </h3>
-                <p className="text-stone">
-                  Start by accessing our verified business leads, then contact locations that match your 
-                  criteria. Our platform provides all the information you need to make successful placements.
-                </p>
-              </motion.div>
+              {[
+                {
+                  question: "What types of businesses are available for vending machine placement in Nebraska?",
+                  answer: "Nebraska offers diverse opportunities including healthcare facilities, agricultural operations, educational institutions, manufacturing operations, technology companies, and solar energy operations. Our leads cover all major industries across the state."
+                },
+                {
+                  question: "How quickly can I start placing vending machines in Nebraska?",
+                  answer: "With our verified leads, you can start contacting businesses within 24 hours of purchase. Each lead includes detailed contact information and business details to streamline your outreach process."
+                },
+                {
+                  question: "Are the Nebraska leads pre-qualified for vending machine placement?",
+                  answer: "Yes, all our Nebraska leads are pre-qualified businesses that have shown interest in vending machine services or have suitable locations for placement."
+                },
+                {
+                  question: "What support do you provide for Nebraska vending machine placement?",
+                  answer: "We provide comprehensive support including lead verification, business contact information, placement guidance, and ongoing assistance to ensure successful vending machine placement across Nebraska."
+                }
+              ].map((faq, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: index * 0.1 }}
+                  className="bg-white p-6 rounded-lg shadow-sm border border-gray-100"
+                >
+                  <h3 className="text-lg font-semibold text-charcoal mb-3">{faq.question}</h3>
+                  <p className="text-stone leading-relaxed">{faq.answer}</p>
+                </motion.div>
+              ))}
             </div>
           </div>
         </section>
 
-        {/* Major Cities Section */}
-        <section className="py-16 bg-stone-50">
+        {/* Other Cities in Nebraska Section */}
+        <section className="py-16 bg-cream/10">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <motion.div 
-              className="text-center mb-12"
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="text-center mb-12"
             >
-              <h2 className="text-3xl font-bold text-charcoal mb-4">
+              <h2 className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal">
                 Major Cities in Nebraska
               </h2>
-              <p className="text-lg text-stone">
-                Explore vending opportunities in Nebraska's key metropolitan areas
+              <p className="mt-4 text-lg text-stone max-w-2xl mx-auto">
+                Explore vending machine opportunities in Nebraska's key cities and metropolitan areas.
               </p>
             </motion.div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {cities.map((city, index) => (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {[
+                { name: 'Omaha', slug: 'omaha-nebraska', description: 'Healthcare and technology center' },
+                { name: 'Lincoln', slug: 'lincoln-nebraska', description: 'Education and government hub' },
+                { name: 'Bellevue', slug: 'bellevue-nebraska', description: 'Healthcare and retail center' },
+                { name: 'Grand Island', slug: 'grand-island-nebraska', description: 'Healthcare and agriculture hub' },
+                { name: 'Kearney', slug: 'kearney-nebraska', description: 'Education and healthcare center' },
+                { name: 'Fremont', slug: 'fremont-nebraska', description: 'Healthcare and manufacturing hub' }
+              ].map((city, index) => (
                 <motion.div
-                  key={city.slug}
-                  className="bg-warm-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow"
+                  key={city.name}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                  viewport={{ once: true }}
+                  transition={{ duration: 0.8, delay: index * 0.1 }}
+                  className="bg-white p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow duration-200"
                 >
-                  <h3 className="text-xl font-semibold text-charcoal mb-2">{city.name}</h3>
-                  <p className="text-stone mb-4">{city.description}</p>
-                  <div className="flex justify-between text-sm text-stone mb-4">
-                    <span>{city.vendorCount} vendors</span>
-                    <span>{city.businessCount} businesses</span>
-                  </div>
-                  <div className="flex flex-wrap gap-2">
-                    {city.highlights.map((highlight, idx) => (
-                      <span
-                        key={idx}
-                        className="px-2 py-1 bg-bronze/10 text-bronze text-xs rounded-full"
-                      >
-                        {highlight}
-                      </span>
-                    ))}
-                  </div>
-                  <Link
-                    href={`/vending-leads/${city.slug}`}
-                    className="mt-4 inline-block text-bronze hover:text-bronze/80 font-medium"
-                  >
-                    View Details →
+                  <Link href={`/vending-leads/${city.slug}`} className="block">
+                    <h3 className="text-lg font-semibold text-coral hover:text-coral/80 transition-colors duration-200 mb-2">
+                      {city.name}
+                    </h3>
+                    <p className="text-stone text-sm leading-relaxed">{city.description}</p>
                   </Link>
                 </motion.div>
               ))}
@@ -453,7 +364,7 @@ export default function NebraskaVendingLeadsPage() {
           </div>
         </section>
       </div>
-      
+
       <Footer />
       <ZipCodeModalWrapper />
     </>
