@@ -45,16 +45,7 @@ export default function AlaskaVendingLeadsPage() {
     return () => clearInterval(interval)
   }, [userNames.length])
 
-  const cities = [
-    {
-      name: 'Anchorage',
-      slug: 'anchorage-alaska',
-      vendorCount: '120+',
-      businessCount: '180+',
-      description: 'Largest city with healthcare and energy',
-      highlights: ['Healthcare', 'Energy', 'Education']
-    }
-  ]
+  const cities = []
 
   return (
     <>
@@ -145,281 +136,254 @@ export default function AlaskaVendingLeadsPage() {
                  </a>
                  <a
                    href="#hot-leads"
-                   className="w-full sm:w-auto bg-transparent text-chocolate border-2 border-chocolate px-8 py-3 rounded-lg font-semibold hover:bg-chocolate hover:text-white transition-colors"
+                   className="w-full sm:w-auto bg-cream hover:bg-cream-light text-navy px-8 py-3 rounded-lg font-semibold transition-colors border-2 border-navy"
                  >
-                   Get Hot Leads
+                   See Hot Leads
                  </a>
                </motion.div>
              </div>
            </div>
          </div>
 
-         {/* Pricing Section - Moved to be immediately after hero for maximum prominence */}
-         <section id="pricing" className="bg-white py-16 sm:py-20 lg:py-24">
-           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-             <motion.div
-               initial={{ opacity: 0, y: 20 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               transition={{ duration: 0.8 }}
-               viewport={{ once: true }}
-               className="text-center mb-12 sm:mb-16"
-             >
-               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-playfair font-bold tracking-tight text-charcoal mb-6">
+         {/* Pricing Section - Immediately After Hero */}
+         <section id="pricing" className="py-16 bg-cream">
+           <div className="container mx-auto px-4">
+             <div className="text-center mb-12">
+               <h2 className="text-3xl font-bold text-navy mb-4">
                  Choose Your Plan
                </h2>
-               <p className="text-lg sm:text-xl text-stone leading-relaxed max-w-3xl mx-auto">
-                 Get access to qualified vending machine locations across Alaska with flexible pricing options. 
-                 No long-term contracts, just results that help you grow your business.
+               <p className="text-lg text-chocolate/70">
+                 Get access to Alaska's top vending machine opportunities
                </p>
-             </motion.div>
+             </div>
              <PricingTable />
            </div>
          </section>
 
-         {/* Business Landscape Section */}
-         <section className="bg-warm-white py-16 sm:py-20">
-           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-             <motion.div
+         {/* Business Landscape */}
+         <section className="py-16 bg-warm-white">
+           <div className="container mx-auto px-4">
+             <motion.div 
+               className="text-center mb-12"
                initial={{ opacity: 0, y: 20 }}
                whileInView={{ opacity: 1, y: 0 }}
                transition={{ duration: 0.8 }}
                viewport={{ once: true }}
-               className="text-center mb-12"
              >
-               <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
+               <h2 className="text-3xl font-bold text-navy mb-4">
                  Alaska Business Landscape
                </h2>
-               <p className="text-lg text-stone max-w-3xl mx-auto">
-                 Alaska's economy is driven by energy, tourism, healthcare, education, and fishing sectors, offering unique vending opportunities across multiple thriving industries.
+               <p className="text-lg text-chocolate/70 max-w-3xl mx-auto">
+                 Alaska's unique economy spans energy, tourism, fishing, healthcare, and more, 
+                 creating ideal opportunities for vending machine placement.
                </p>
              </motion.div>
 
-             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-               <motion.div
+             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+               <motion.div 
+                 className="text-center p-6 rounded-lg bg-cream/30"
                  initial={{ opacity: 0, y: 20 }}
                  whileInView={{ opacity: 1, y: 0 }}
                  transition={{ duration: 0.8, delay: 0.1 }}
                  viewport={{ once: true }}
-                 className="bg-warm-white p-6 rounded-xl text-center"
                >
-                 <SparklesIcon className="h-12 w-12 text-navy mx-auto mb-4" />
-                 <h3 className="text-xl font-semibold text-charcoal mb-2">Energy</h3>
-                 <p className="text-stone">Oil fields, gas operations, and energy companies with industrial workers.</p>
+                 <SunIcon className="w-12 h-12 text-navy mx-auto mb-4" />
+                 <h3 className="text-xl font-semibold text-navy mb-2">Energy</h3>
+                 <p className="text-chocolate/70">Major oil and gas operations with high employee counts</p>
                </motion.div>
 
-               <motion.div
+               <motion.div 
+                 className="text-center p-6 rounded-lg bg-cream/30"
                  initial={{ opacity: 0, y: 20 }}
                  whileInView={{ opacity: 1, y: 0 }}
                  transition={{ duration: 0.8, delay: 0.2 }}
                  viewport={{ once: true }}
-                 className="bg-warm-white p-6 rounded-xl text-center"
                >
-                 <SunIcon className="h-12 w-12 text-navy mx-auto mb-4" />
-                 <h3 className="text-xl font-semibold text-charcoal mb-2">Tourism</h3>
-                 <p className="text-stone">Hotels, resorts, and attractions with seasonal visitor traffic.</p>
+                 <FilmIcon className="w-12 h-12 text-navy mx-auto mb-4" />
+                 <h3 className="text-xl font-semibold text-navy mb-2">Tourism</h3>
+                 <p className="text-chocolate/70">Growing tourism industry with seasonal businesses</p>
                </motion.div>
 
-               <motion.div
+               <motion.div 
+                 className="text-center p-6 rounded-lg bg-cream/30"
                  initial={{ opacity: 0, y: 20 }}
                  whileInView={{ opacity: 1, y: 0 }}
                  transition={{ duration: 0.8, delay: 0.3 }}
                  viewport={{ once: true }}
-                 className="bg-warm-white p-6 rounded-xl text-center"
                >
-                 <AcademicCapIcon className="h-12 w-12 text-navy mx-auto mb-4" />
-                 <h3 className="text-xl font-semibold text-charcoal mb-2">Healthcare</h3>
-                 <p className="text-stone">Hospitals, medical centers, and healthcare facilities with staff.</p>
+                 <BeakerIcon className="w-12 h-12 text-navy mx-auto mb-4" />
+                 <h3 className="text-xl font-semibold text-navy mb-2">Healthcare</h3>
+                 <p className="text-chocolate/70">Healthcare facilities serving remote communities</p>
                </motion.div>
 
-               <motion.div
+               <motion.div 
+                 className="text-center p-6 rounded-lg bg-cream/30"
                  initial={{ opacity: 0, y: 20 }}
                  whileInView={{ opacity: 1, y: 0 }}
                  transition={{ duration: 0.8, delay: 0.4 }}
                  viewport={{ once: true }}
-                 className="bg-warm-white p-6 rounded-xl text-center"
                >
-                 <BuildingOfficeIcon className="h-12 w-12 text-navy mx-auto mb-4" />
-                 <h3 className="text-xl font-semibold text-charcoal mb-2">Education</h3>
-                 <p className="text-stone">Universities, colleges, and schools with students and faculty.</p>
+                 <AcademicCapIcon className="w-12 h-12 text-navy mx-auto mb-4" />
+                 <h3 className="text-xl font-semibold text-navy mb-2">Education</h3>
+                 <p className="text-chocolate/70">Universities and educational institutions</p>
                </motion.div>
 
-               <motion.div
+               <motion.div 
+                 className="text-center p-6 rounded-lg bg-cream/30"
                  initial={{ opacity: 0, y: 20 }}
                  whileInView={{ opacity: 1, y: 0 }}
                  transition={{ duration: 0.8, delay: 0.5 }}
                  viewport={{ once: true }}
-                 className="bg-warm-white p-6 rounded-xl text-center"
                >
-                 <TruckIcon className="h-12 w-12 text-navy mx-auto mb-4" />
-                 <h3 className="text-xl font-semibold text-charcoal mb-2">Fishing</h3>
-                 <p className="text-stone">Fishing operations and seafood processing facilities with workers.</p>
+                 <TruckIcon className="w-12 h-12 text-navy mx-auto mb-4" />
+                 <h3 className="text-xl font-semibold text-navy mb-2">Transportation</h3>
+                 <p className="text-chocolate/70">Logistics and transportation hubs</p>
+               </motion.div>
+
+               <motion.div 
+                 className="text-center p-6 rounded-lg bg-cream/30"
+                 initial={{ opacity: 0, y: 20 }}
+                 whileInView={{ opacity: 1, y: 0 }}
+                 transition={{ duration: 0.8, delay: 0.6 }}
+                 viewport={{ once: true }}
+               >
+                 <CloudIcon className="w-12 h-12 text-navy mx-auto mb-4" />
+                 <h3 className="text-xl font-semibold text-navy mb-2">Fishing</h3>
+                 <p className="text-chocolate/70">Commercial fishing and seafood processing</p>
                </motion.div>
              </div>
            </div>
          </section>
 
-         {/* State Stats Section */}
-         <section className="bg-white py-16 sm:py-20">
-           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-             <motion.div
+         {/* State Stats */}
+         <section className="py-16 bg-cream">
+           <div className="container mx-auto px-4">
+             <motion.div 
+               className="text-center mb-12"
                initial={{ opacity: 0, y: 20 }}
                whileInView={{ opacity: 1, y: 0 }}
                transition={{ duration: 0.8 }}
                viewport={{ once: true }}
-               className="text-center mb-12"
              >
-               <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
+               <h2 className="text-3xl font-bold text-navy mb-4">
                  Alaska by the Numbers
                </h2>
-               <p className="text-lg text-stone max-w-3xl mx-auto">
-                 Key statistics that make Alaska an excellent market for vending machine placement.
-               </p>
              </motion.div>
 
              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-               <motion.div
+               <motion.div 
+                 className="text-center"
                  initial={{ opacity: 0, y: 20 }}
                  whileInView={{ opacity: 1, y: 0 }}
                  transition={{ duration: 0.8, delay: 0.1 }}
                  viewport={{ once: true }}
-                 className="text-center"
                >
                  <div className="text-4xl font-bold text-navy mb-2">730K+</div>
-                 <div className="text-gray-600">Population</div>
+                 <div className="text-lg text-chocolate/70">Population</div>
                </motion.div>
-               <motion.div
+
+               <motion.div 
+                 className="text-center"
                  initial={{ opacity: 0, y: 20 }}
                  whileInView={{ opacity: 1, y: 0 }}
                  transition={{ duration: 0.8, delay: 0.2 }}
                  viewport={{ once: true }}
-                 className="text-center"
                >
                  <div className="text-4xl font-bold text-navy mb-2">25,000+</div>
-                 <div className="text-gray-600">Businesses</div>
+                 <div className="text-lg text-chocolate/70">Businesses</div>
                </motion.div>
-               <motion.div
+
+               <motion.div 
+                 className="text-center"
                  initial={{ opacity: 0, y: 20 }}
                  whileInView={{ opacity: 1, y: 0 }}
                  transition={{ duration: 0.8, delay: 0.3 }}
                  viewport={{ once: true }}
-                 className="text-center"
                >
-                 <div className="text-4xl font-bold text-navy mb-2">5</div>
-                 <div className="text-gray-600">Major Industries</div>
+                 <div className="text-4xl font-bold text-navy mb-2">6</div>
+                 <div className="text-lg text-chocolate/70">Major Industries</div>
                </motion.div>
              </div>
            </div>
          </section>
 
          {/* Hot Leads Section */}
-         <HotLeads />
+         <section id="hot-leads" className="py-16 bg-warm-white">
+           <div className="container mx-auto px-4">
+             <HotLeads />
+           </div>
+         </section>
 
          {/* Vending Course Section */}
-         <VendingCourse />
+         <section className="py-16 bg-cream">
+           <div className="container mx-auto px-4">
+             <VendingCourse />
+           </div>
+         </section>
 
          {/* FAQ Section */}
-         <section className="py-16 bg-gray-50">
+         <section className="py-16 bg-warm-white">
            <div className="container mx-auto px-4">
-             <motion.h2 
+             <motion.div 
+               className="text-center mb-12"
                initial={{ opacity: 0, y: 20 }}
                whileInView={{ opacity: 1, y: 0 }}
                transition={{ duration: 0.8 }}
                viewport={{ once: true }}
-               className="text-3xl font-bold text-center mb-12 text-navy"
              >
-               Frequently Asked Questions
-             </motion.h2>
-             
-             <div className="max-w-4xl mx-auto space-y-6">
+               <h2 className="text-3xl font-bold text-navy mb-4">
+                 Frequently Asked Questions
+               </h2>
+             </motion.div>
+
+             <div className="space-y-6">
                <motion.div 
+                 className="bg-cream/30 rounded-lg p-6"
                  initial={{ opacity: 0, y: 20 }}
                  whileInView={{ opacity: 1, y: 0 }}
                  transition={{ duration: 0.8, delay: 0.1 }}
                  viewport={{ once: true }}
-                 className="bg-white p-6 rounded-lg shadow-sm"
                >
-                 <h3 className="text-xl font-semibold mb-3 text-navy">
-                   What types of businesses are best for vending machines in Alaska?
+                 <h3 className="text-lg font-semibold text-navy mb-2">
+                   What makes Alaska a good market for vending machines?
                  </h3>
-                 <p className="text-gray-600">
-                   Alaska offers unique opportunities including energy facilities, tourism businesses, 
-                   healthcare institutions, educational facilities, and fishing operations. 
-                   The energy and tourism sectors provide excellent placement opportunities.
+                 <p className="text-chocolate/70">
+                   Alaska's unique economy with energy operations, tourism, and healthcare facilities 
+                   creates ideal conditions for vending machine placement with high foot traffic.
                  </p>
                </motion.div>
-               
+
                <motion.div 
+                 className="bg-cream/30 rounded-lg p-6"
                  initial={{ opacity: 0, y: 20 }}
                  whileInView={{ opacity: 1, y: 0 }}
                  transition={{ duration: 0.8, delay: 0.2 }}
                  viewport={{ once: true }}
-                 className="bg-white p-6 rounded-lg shadow-sm"
                >
-                 <h3 className="text-xl font-semibold mb-3 text-navy">
-                   How competitive is the vending machine market in Alaska?
+                 <h3 className="text-lg font-semibold text-navy mb-2">
+                   Which areas in Alaska have the best opportunities?
                  </h3>
-                 <p className="text-gray-600">
-                   Alaska has a moderate vending presence with significant opportunity for expansion, 
-                   especially in new energy developments and growing tourism areas.
+                 <p className="text-chocolate/70">
+                   Anchorage, Fairbanks, and Juneau offer the highest concentration of businesses 
+                   and healthcare facilities, making them prime locations for vending machine placement.
                  </p>
                </motion.div>
-               
+
                <motion.div 
+                 className="bg-cream/30 rounded-lg p-6"
                  initial={{ opacity: 0, y: 20 }}
                  whileInView={{ opacity: 1, y: 0 }}
                  transition={{ duration: 0.8, delay: 0.3 }}
                  viewport={{ once: true }}
-                 className="bg-white p-6 rounded-lg shadow-sm"
                >
-                 <h3 className="text-xl font-semibold mb-3 text-navy">
-                   What are the peak business hours for vending in Alaska?
+                 <h3 className="text-lg font-semibold text-navy mb-2">
+                   How do I get started with vending machines in Alaska?
                  </h3>
-                 <p className="text-gray-600">
-                   Alaska businesses typically operate from 8 AM to 6 PM, with peak vending activity 
-                   during lunch hours (12 PM - 2 PM) and afternoon breaks (3 PM - 4 PM).
+                 <p className="text-chocolate/70">
+                   Start by accessing our verified business leads, then contact locations that match your 
+                   criteria. Our platform provides all the information you need to make successful placements.
                  </p>
                </motion.div>
-             </div>
-           </div>
-         </section>
-
-         {/* Major Cities in Alaska */}
-         <section className="py-16 bg-white">
-           <div className="container mx-auto px-4">
-             <motion.h2 
-               initial={{ opacity: 0, y: 20 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               transition={{ duration: 0.8 }}
-               viewport={{ once: true }}
-               className="text-3xl font-bold text-center mb-12 text-navy"
-             >
-               Major Cities in Alaska
-             </motion.h2>
-             
-             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
-               {cities.map((city, index) => (
-                 <motion.div
-                   key={city.slug}
-                   initial={{ opacity: 0, y: 20 }}
-                   whileInView={{ opacity: 1, y: 0 }}
-                   transition={{ duration: 0.8, delay: 0.1 * (index + 1) }}
-                   viewport={{ once: true }}
-                   className="bg-gray-50 p-6 rounded-lg hover:bg-gray-100 transition-colors"
-                 >
-                   <h3 className="font-semibold text-navy text-lg mb-2">{city.name}</h3>
-                   <p className="text-sm text-gray-600 mb-3">{city.description}</p>
-                   <div className="flex flex-wrap gap-2">
-                     {city.highlights.map((highlight, highlightIndex) => (
-                       <span
-                         key={highlightIndex}
-                         className="px-2 py-1 bg-navy/10 text-navy text-xs rounded-full"
-                       >
-                         {highlight}
-                       </span>
-                     ))}
-                   </div>
-                 </motion.div>
-               ))}
              </div>
            </div>
          </section>

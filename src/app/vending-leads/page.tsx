@@ -169,9 +169,7 @@ export default function VendingLeadsPage() {
     {
       name: 'South Carolina',
       slug: 'south-carolina',
-      cities: [
-        { name: 'Columbia', slug: 'columbia-south-carolina', vendorCount: '120+', businessCount: '160+', description: 'State capital with government and healthcare' },
-      ]
+      cities: []
     }
   ]
 

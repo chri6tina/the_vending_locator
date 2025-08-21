@@ -174,10 +174,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: 'https://www.thevendinglocator.com/vending-leads/saint-paul-minnesota', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     
     // South Carolina cities
-    { url: 'https://www.thevendinglocator.com/vending-leads/columbia-south-carolina', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    // Note: No individual city pages exist for South Carolina yet
     
     // Alaska cities
-    { url: 'https://www.thevendinglocator.com/vending-leads/anchorage-alaska', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    // Note: No individual city pages exist for Alaska yet
     
     // Wisconsin cities
     { url: 'https://www.thevendinglocator.com/vending-leads/milwaukee-wisconsin', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
