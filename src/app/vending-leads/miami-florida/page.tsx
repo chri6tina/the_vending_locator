@@ -161,7 +161,134 @@ export default function MiamiFloridaVendingLeadsPage() {
         </div>
 
         {/* Business Landscape Section */}
-        
+        <section className="bg-warm-white py-16 sm:py-20">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="text-center mb-12"
+            >
+              <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
+                Miami Business Landscape
+              </h2>
+              <p className="text-lg text-stone max-w-3xl mx-auto">
+                Miami offers diverse vending opportunities across multiple thriving industries with a strong focus on tourism, healthcare, and international business.
+              </p>
+            </motion.div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.1 }}
+                viewport={{ once: true }}
+                className="bg-warm-white p-6 rounded-xl text-center"
+              >
+                <SunIcon className="h-12 w-12 text-navy mx-auto mb-4" />
+                <h3 className="text-xl font-semibold text-charcoal mb-2">Tourism</h3>
+                <p className="text-stone">Hotels, resorts, and entertainment venues with high visitor density.</p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="bg-warm-white p-6 rounded-xl text-center"
+              >
+                <HeartIcon className="h-12 w-12 text-navy mx-auto mb-4" />
+                <h3 className="text-xl font-semibold text-charcoal mb-2">Healthcare</h3>
+                <p className="text-stone">Hospitals, clinics, and medical facilities serving growing healthcare needs.</p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="bg-warm-white p-6 rounded-xl text-center"
+              >
+                <BuildingOfficeIcon className="h-12 w-12 text-navy mx-auto mb-4" />
+                <h3 className="text-xl font-semibold text-charcoal mb-2">International Business</h3>
+                <p className="text-stone">Multinational companies, trade offices, and financial services with steady operations.</p>
+              </motion.div>
+            </div>
+          </div>
+        </section>
+
+        {/* Hot Leads Section */}
+        <HotLeads />
+
+        {/* Vending Course Section */}
+        <VendingCourse />
+
+        {/* FAQ Section */}
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <motion.h2 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="text-3xl font-bold text-center mb-12 text-navy"
+            >
+              Frequently Asked Questions
+            </motion.h2>
+            
+            <div className="max-w-4xl mx-auto space-y-6">
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.1 }}
+                viewport={{ once: true }}
+                className="bg-white p-6 rounded-lg shadow-sm"
+              >
+                <h3 className="text-xl font-semibold mb-3 text-navy">
+                  What types of businesses are best for vending machines in Miami?
+                </h3>
+                <p className="text-gray-600">
+                  Miami offers diverse opportunities including hotels, healthcare facilities, 
+                  office buildings, and retail centers. The strong tourism sector and growing healthcare 
+                  industry provide excellent placement opportunities.
+                </p>
+              </motion.div>
+              
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="bg-white p-6 rounded-lg shadow-sm"
+              >
+                <h3 className="text-xl font-semibold mb-3 text-navy">
+                  How competitive is the vending machine market in Miami?
+                </h3>
+                <p className="text-gray-600">
+                  Miami has a growing vending presence, but there's still significant opportunity 
+                  for expansion, especially in new business developments and emerging neighborhoods.
+                </p>
+              </motion.div>
+              
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="bg-white p-6 rounded-lg shadow-sm"
+              >
+                <h3 className="text-xl font-semibold mb-3 text-navy">
+                  What are the peak business hours for vending in Miami?
+                </h3>
+                <p className="text-gray-600">
+                  Miami businesses typically operate from 8 AM to 6 PM, with peak vending activity 
+                  during lunch hours (12 PM - 2 PM) and afternoon breaks (3 PM - 4 PM).
+                </p>
+              </motion.div>
+            </div>
+          </div>
+        </section>
       </div>
       
       <Footer />

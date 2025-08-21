@@ -141,15 +141,15 @@ export default function WestVirginiaVendingLeadsPage() {
               >
                 <div className="flex items-center justify-center gap-3 p-3 bg-cream/30 rounded-lg">
                   <CheckBadgeIcon className="w-5 h-5 text-coral" />
-                  <span className="text-sm font-medium text-chocolate">600+ Verified Locations</span>
+                  <span className="text-sm font-medium text-chocolate">500+ Verified Locations</span>
                 </div>
                 <div className="flex items-center justify-center gap-3 p-3 bg-cream/30 rounded-lg">
                   <UsersIcon className="w-5 h-5 text-coral" />
-                  <span className="text-sm font-medium text-chocolate">40,000+ Businesses</span>
+                  <span className="text-sm font-medium text-chocolate">35,000+ Businesses</span>
                 </div>
                 <div className="flex items-center justify-center gap-3 p-3 bg-cream/30 rounded-lg">
                   <BuildingOfficeIcon className="w-5 h-5 text-coral" />
-                  <span className="text-sm font-medium text-chocolate">5 Major Industries</span>
+                  <span className="text-sm font-medium text-chocolate">4 Major Industries</span>
                 </div>
               </motion.div>
 
@@ -178,7 +178,156 @@ export default function WestVirginiaVendingLeadsPage() {
         </div>
 
         {/* Pricing Section - Immediately After Hero */}
-        
+        <section id="pricing" className="bg-white py-16 sm:py-20 lg:py-24">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="text-center mb-12 sm:mb-16"
+            >
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-playfair font-bold tracking-tight text-charcoal mb-6">
+                Choose Your Plan
+              </h2>
+              <p className="text-lg sm:text-xl text-stone leading-relaxed max-w-3xl mx-auto">
+                Get access to qualified vending machine locations in West Virginia with flexible pricing options. 
+                No long-term contracts, just results that help you grow your business.
+              </p>
+            </motion.div>
+            <PricingTable />
+          </div>
+        </section>
+
+        {/* Business Landscape Section */}
+        <section className="bg-warm-white py-16 sm:py-20">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="text-center mb-12"
+            >
+              <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
+                West Virginia Business Landscape
+              </h2>
+              <p className="text-lg text-stone max-w-3xl mx-auto">
+                West Virginia offers diverse vending opportunities across multiple thriving industries with a strong focus on energy and healthcare.
+              </p>
+            </motion.div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.1 }}
+                viewport={{ once: true }}
+                className="bg-warm-white p-6 rounded-xl text-center"
+              >
+                <SunIcon className="h-12 w-12 text-navy mx-auto mb-4" />
+                <h3 className="text-xl font-semibold text-charcoal mb-2">Energy</h3>
+                <p className="text-stone">Coal, natural gas, and renewable energy facilities with high employee density.</p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="bg-warm-white p-6 rounded-xl text-center"
+              >
+                <HeartIcon className="h-12 w-12 text-navy mx-auto mb-4" />
+                <h3 className="text-xl font-semibold text-charcoal mb-2">Healthcare</h3>
+                <p className="text-stone">Hospitals, clinics, and medical facilities serving growing healthcare needs.</p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="bg-warm-white p-6 rounded-xl text-center"
+              >
+                <AcademicCapIcon className="h-12 w-12 text-navy mx-auto mb-4" />
+                <h3 className="text-xl font-semibold text-charcoal mb-2">Education</h3>
+                <p className="text-stone">Universities, colleges, and schools providing steady vending opportunities.</p>
+              </motion.div>
+            </div>
+          </div>
+        </section>
+
+        {/* Hot Leads Section */}
+        <HotLeads />
+
+        {/* Vending Course Section */}
+        <VendingCourse />
+
+        {/* FAQ Section */}
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <motion.h2 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="text-3xl font-bold text-center mb-12 text-navy"
+            >
+              Frequently Asked Questions
+            </motion.h2>
+            
+            <div className="max-w-4xl mx-auto space-y-6">
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.1 }}
+                viewport={{ once: true }}
+                className="bg-white p-6 rounded-lg shadow-sm"
+              >
+                <h3 className="text-xl font-semibold mb-3 text-navy">
+                  What types of businesses are best for vending machines in West Virginia?
+                </h3>
+                <p className="text-gray-600">
+                  West Virginia offers diverse opportunities including energy facilities, healthcare centers, 
+                  educational institutions, and manufacturing plants. The strong energy sector and growing healthcare 
+                  industry provide excellent placement opportunities.
+                </p>
+              </motion.div>
+              
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="bg-white p-6 rounded-lg shadow-sm"
+              >
+                <h3 className="text-xl font-semibold mb-3 text-navy">
+                  How competitive is the vending machine market in West Virginia?
+                </h3>
+                <p className="text-gray-600">
+                  West Virginia has a growing vending presence, but there's still significant opportunity 
+                  for expansion, especially in new business developments and emerging energy areas.
+                </p>
+              </motion.div>
+              
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="bg-white p-6 rounded-lg shadow-sm"
+              >
+                <h3 className="text-xl font-semibold mb-3 text-navy">
+                  What are the peak business hours for vending in West Virginia?
+                </h3>
+                <p className="text-gray-600">
+                  West Virginia businesses typically operate from 7 AM to 5 PM, with peak vending activity 
+                  during lunch hours (11:30 AM - 1:30 PM) and afternoon breaks (2:30 PM - 3:30 PM).
+                </p>
+              </motion.div>
+            </div>
+          </div>
+        </section>
       </div>
       
       <Footer />
