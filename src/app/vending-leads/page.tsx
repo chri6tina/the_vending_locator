@@ -175,6 +175,121 @@ export default function VendingLeadsPage() {
       name: 'South Carolina',
       slug: 'south-carolina',
       cities: []
+    },
+    {
+      name: 'North Dakota',
+      slug: 'north-dakota',
+      cities: []
+    },
+    {
+      name: 'South Dakota',
+      slug: 'south-dakota',
+      cities: []
+    },
+    {
+      name: 'Montana',
+      slug: 'montana',
+      cities: []
+    },
+    {
+      name: 'Wyoming',
+      slug: 'wyoming',
+      cities: []
+    },
+    {
+      name: 'Kentucky',
+      slug: 'kentucky',
+      cities: []
+    },
+    {
+      name: 'Wisconsin',
+      slug: 'wisconsin',
+      cities: []
+    },
+    {
+      name: 'West Virginia',
+      slug: 'west-virginia',
+      cities: []
+    },
+    {
+      name: 'Virginia',
+      slug: 'virginia',
+      cities: []
+    },
+    {
+      name: 'New Mexico',
+      slug: 'new-mexico',
+      cities: []
+    },
+    {
+      name: 'Alaska',
+      slug: 'alaska',
+      cities: []
+    },
+    {
+      name: 'Delaware',
+      slug: 'delaware',
+      cities: []
+    },
+    {
+      name: 'Rhode Island',
+      slug: 'rhode-island',
+      cities: []
+    },
+    {
+      name: 'New Hampshire',
+      slug: 'new-hampshire',
+      cities: []
+    },
+    {
+      name: 'Vermont',
+      slug: 'vermont',
+      cities: []
+    },
+    {
+      name: 'Connecticut',
+      slug: 'connecticut',
+      cities: []
+    },
+    {
+      name: 'New Jersey',
+      slug: 'new-jersey',
+      cities: []
+    },
+    {
+      name: 'Indiana',
+      slug: 'indiana',
+      cities: []
+    },
+    {
+      name: 'Nebraska',
+      slug: 'nebraska',
+      cities: []
+    },
+    {
+      name: 'Mississippi',
+      slug: 'mississippi',
+      cities: []
+    },
+    {
+      name: 'Arkansas',
+      slug: 'arkansas',
+      cities: []
+    },
+    {
+      name: 'Utah',
+      slug: 'utah',
+      cities: []
+    },
+    {
+      name: 'Hawaii',
+      slug: 'hawaii',
+      cities: []
+    },
+    {
+      name: 'Maine',
+      slug: 'maine',
+      cities: []
     }
   ]
 
