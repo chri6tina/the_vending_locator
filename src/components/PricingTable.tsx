@@ -207,25 +207,27 @@ export default function PricingTable() {
         {/* Desktop Table - Hidden on mobile, visible on lg+ screens */}
         <div className="hidden lg:block">
           {/* Beautiful bordered table container */}
-          <div className="border-2 border-gray-200 rounded-2xl shadow-lg overflow-hidden bg-white">
+          <div className="border-2 border-gray-200 rounded-2xl shadow-lg overflow-hidden bg-white max-w-full">
+            <div className="overflow-x-auto">
+              <div className="min-w-[800px]">
             <table className="w-full border-collapse">
               {/* Header Row */}
               <thead>
                 <tr className="bg-gray-50">
-                  <th className="px-8 py-6 text-left">
-                    <span className="text-base font-medium text-gray-700">Feature Category</span>
+                  <th className="px-4 lg:px-8 py-4 lg:py-6 text-left">
+                    <span className="text-sm lg:text-base font-medium text-gray-700">Feature Category</span>
                   </th>
                   {plans.map((plan) => (
-                    <th key={plan.name} className="px-8 py-6 text-center">
+                    <th key={plan.name} className="px-2 lg:px-8 py-4 lg:py-6 text-center">
                       <div className="text-center">
-                        <h3 className="text-xl font-semibold text-charcoal mb-3">
+                        <h3 className="text-lg lg:text-xl font-semibold text-charcoal mb-2 lg:mb-3">
                           {plan.name}
                         </h3>
                         <div className="mb-2">
                           {/* Get Started Button - Now triggers modal */}
                           <button
                             onClick={() => handlePlanClick(plan)}
-                            className={`bg-charcoal hover:bg-charcoal/90 text-white px-6 py-2 rounded-lg text-base font-medium inline-block cursor-pointer transition-all duration-200`}
+                            className={`bg-charcoal hover:bg-charcoal/90 text-white px-3 lg:px-6 py-2 rounded-lg text-sm lg:text-base font-medium inline-block cursor-pointer transition-all duration-200`}
                           >
                             {plan.price}{plan.period}
                           </button>
@@ -240,13 +242,13 @@ export default function PricingTable() {
               <tbody className="divide-y divide-stone/20 bg-white">
                 {/* Number of Locations */}
                 <tr className="hover:bg-gray-50 transition-colors duration-150 group">
-                  <td className="px-8 py-6">
+                  <td className="px-4 lg:px-8 py-4 lg:py-6">
                     <div className="max-w-md">
-                      <h5 className="text-base font-bold text-charcoal mb-2 flex items-center gap-2">
+                      <h5 className="text-sm lg:text-base font-bold text-charcoal mb-2 flex items-center gap-2">
                         Number of locations
                         <span className="text-xs text-stone/60 font-normal">(Click any plan to select)</span>
                       </h5>
-                      <p className="text-sm text-stone leading-relaxed font-medium">
+                      <p className="text-xs lg:text-sm text-stone leading-relaxed font-medium">
                         Compilation of potential vending machine placement locations within your zip code vicinity.
                       </p>
                     </div>
@@ -254,10 +256,10 @@ export default function PricingTable() {
                   {plans.map((plan) => (
                     <td 
                       key={plan.name} 
-                      className="px-8 py-6 text-center cursor-pointer transition-all duration-200"
+                      className="px-2 lg:px-8 py-4 lg:py-6 text-center cursor-pointer transition-all duration-200"
                       onClick={() => handleRowClick(plan.name)}
                     >
-                      <span className="text-base font-semibold text-charcoal">
+                      <span className="text-sm lg:text-base font-semibold text-charcoal">
                         {plan.location}
                       </span>
                     </td>
@@ -266,12 +268,12 @@ export default function PricingTable() {
 
                 {/* Basic Lead Details */}
                 <tr className="hover:bg-gray-50 transition-colors duration-150">
-                  <td className="px-8 py-6">
+                  <td className="px-4 lg:px-8 py-4 lg:py-6">
                     <div className="max-w-md">
-                      <h5 className="text-base font-bold text-charcoal mb-2">
+                      <h5 className="text-sm lg:text-base font-bold text-charcoal mb-2">
                         Basic Lead Details
                       </h5>
-                      <p className="text-sm text-stone leading-relaxed font-medium">
+                      <p className="text-xs lg:text-sm text-stone leading-relaxed font-medium">
                         Includes business name, phone number and address of each location
                       </p>
                     </div>
@@ -279,10 +281,10 @@ export default function PricingTable() {
                   {plans.map((plan) => (
                     <td 
                       key={plan.name} 
-                      className="px-8 py-6 text-center cursor-pointer transition-all duration-200"
+                      className="px-2 lg:px-8 py-4 lg:py-6 text-center cursor-pointer transition-all duration-200"
                       onClick={() => handleRowClick(plan.name)}
                     >
-                      <span className="text-base font-semibold text-bronze">
+                      <span className="text-sm lg:text-base font-semibold text-bronze">
                         ✓ Included
                       </span>
                     </td>
@@ -778,6 +780,8 @@ export default function PricingTable() {
                 </tr>
               </tfoot>
             </table>
+              </div>
+            </div>
           </div>
         </div>
         
