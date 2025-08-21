@@ -96,6 +96,11 @@ export default function VendingLeadsPage() {
       ]
     },
     {
+      name: 'Missouri',
+      slug: 'missouri',
+      cities: []
+    },
+    {
       name: 'North Carolina',
       slug: 'north-carolina',
       cities: [

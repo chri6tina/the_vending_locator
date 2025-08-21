@@ -33,7 +33,7 @@ export default function Home() {
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mb-8">
-              {['Texas', 'California', 'Florida', 'New York', 'Illinois', 'Arizona', 'Washington', 'Pennsylvania'].map((state, index) => (
+              {['Texas', 'California', 'Florida', 'New York', 'Illinois', 'Arizona', 'Washington', 'Pennsylvania', 'Missouri'].map((state, index) => (
                 <div
                   key={state}
                   className="bg-cream rounded-lg p-4 hover:bg-navy/5 transition-colors cursor-pointer"
