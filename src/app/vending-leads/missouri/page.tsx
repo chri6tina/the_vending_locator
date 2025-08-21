@@ -61,22 +61,6 @@ export default function MissouriVendingLeadsPage() {
       businessCount: '180+',
       description: 'Healthcare and education center',
       highlights: ['Healthcare', 'Education', 'Retail']
-    },
-    {
-      name: 'Columbia',
-      slug: 'columbia-missouri',
-      vendorCount: '120+',
-      businessCount: '150+',
-      description: 'University city with healthcare and research',
-      highlights: ['Education', 'Healthcare', 'Research']
-    },
-    {
-      name: 'Independence',
-      slug: 'independence-missouri',
-      vendorCount: '100+',
-      businessCount: '130+',
-      description: 'Suburban city with manufacturing and retail',
-      highlights: ['Manufacturing', 'Retail', 'Services']
     }
   ]
 

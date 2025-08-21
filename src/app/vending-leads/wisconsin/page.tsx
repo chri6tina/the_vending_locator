@@ -53,30 +53,6 @@ export default function WisconsinVendingLeadsPage() {
       businessCount: '300+',
       description: 'State capital with government and education',
       highlights: ['Government', 'Education', 'Healthcare']
-    },
-    {
-      name: 'Green Bay',
-      slug: 'green-bay-wisconsin',
-      vendorCount: '150+',
-      businessCount: '180+',
-      description: 'Manufacturing and healthcare center',
-      highlights: ['Manufacturing', 'Healthcare', 'Retail']
-    },
-    {
-      name: 'Kenosha',
-      slug: 'kenosha-wisconsin',
-      vendorCount: '120+',
-      businessCount: '150+',
-      description: 'Manufacturing and port city',
-      highlights: ['Manufacturing', 'Port', 'Healthcare']
-    },
-    {
-      name: 'Racine',
-      slug: 'racine-wisconsin',
-      vendorCount: '100+',
-      businessCount: '130+',
-      description: 'Manufacturing and healthcare hub',
-      highlights: ['Manufacturing', 'Healthcare', 'Retail']
     }
   ]
 

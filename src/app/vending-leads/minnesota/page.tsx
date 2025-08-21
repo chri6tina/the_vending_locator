@@ -61,22 +61,6 @@ export default function MinnesotaVendingLeadsPage() {
       businessCount: '220+',
       description: 'Healthcare hub with Mayo Clinic',
       highlights: ['Healthcare', 'Education', 'Research']
-    },
-    {
-      name: 'Duluth',
-      slug: 'duluth-minnesota',
-      vendorCount: '120+',
-      businessCount: '150+',
-      description: 'Port city with healthcare and tourism',
-      highlights: ['Healthcare', 'Tourism', 'Port']
-    },
-    {
-      name: 'Bloomington',
-      slug: 'bloomington-minnesota',
-      vendorCount: '150+',
-      businessCount: '180+',
-      description: 'Suburban city with retail and healthcare',
-      highlights: ['Retail', 'Healthcare', 'Services']
     }
   ]
 

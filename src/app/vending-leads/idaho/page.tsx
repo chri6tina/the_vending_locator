@@ -47,14 +47,6 @@ export default function IdahoVendingLeadsPage() {
 
   const cities = [
     {
-      name: 'Boise',
-      slug: 'boise-idaho',
-      vendorCount: '200+',
-      businessCount: '250+',
-      description: 'State capital with technology and healthcare',
-      highlights: ['Technology', 'Healthcare', 'Government']
-    },
-    {
       name: 'Meridian',
       slug: 'meridian-idaho',
       vendorCount: '120+',

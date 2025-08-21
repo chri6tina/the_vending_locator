@@ -53,38 +53,6 @@ export default function AlaskaVendingLeadsPage() {
       businessCount: '180+',
       description: 'Largest city with healthcare and energy',
       highlights: ['Healthcare', 'Energy', 'Education']
-    },
-    {
-      name: 'Fairbanks',
-      slug: 'fairbanks-alaska',
-      vendorCount: '80+',
-      businessCount: '120+',
-      description: 'University town with education and healthcare',
-      highlights: ['Education', 'Healthcare', 'Energy']
-    },
-    {
-      name: 'Juneau',
-      slug: 'juneau-alaska',
-      vendorCount: '60+',
-      businessCount: '90+',
-      description: 'State capital with government and tourism',
-      highlights: ['Government', 'Tourism', 'Healthcare']
-    },
-    {
-      name: 'Sitka',
-      slug: 'sitka-alaska',
-      vendorCount: '40+',
-      businessCount: '70+',
-      description: 'Tourism and fishing hub',
-      highlights: ['Tourism', 'Fishing', 'Healthcare']
-    },
-    {
-      name: 'Ketchikan',
-      slug: 'ketchikan-alaska',
-      vendorCount: '35+',
-      businessCount: '60+',
-      description: 'Tourism and fishing center',
-      highlights: ['Tourism', 'Fishing', 'Healthcare']
     }
   ]
 
