@@ -37,32 +37,7 @@ export default function MissouriVendingLeadsPage() {
     return () => clearInterval(interval)
   }, [users.length])
 
-  const cities = [
-    {
-      name: 'Kansas City',
-      slug: 'kansas-city-missouri',
-      vendorCount: '320+',
-      businessCount: '380+',
-      description: 'Major city with manufacturing and healthcare',
-      highlights: ['Manufacturing', 'Healthcare', 'Transportation']
-    },
-    {
-      name: 'St. Louis',
-      slug: 'st-louis-missouri',
-      vendorCount: '300+',
-      businessCount: '360+',
-      description: 'Gateway city with healthcare and education',
-      highlights: ['Healthcare', 'Education', 'Manufacturing']
-    },
-    {
-      name: 'Springfield',
-      slug: 'springfield-missouri',
-      vendorCount: '150+',
-      businessCount: '180+',
-      description: 'Healthcare and education center',
-      highlights: ['Healthcare', 'Education', 'Retail']
-    }
-  ]
+  const cities = []
 
   return (
     <>
@@ -381,61 +356,7 @@ export default function MissouriVendingLeadsPage() {
           </div>
         </section>
 
-        {/* Major Cities Section */}
-        <section className="py-16 bg-stone-50">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <motion.div 
-              className="text-center mb-12"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
-            >
-              <h2 className="text-3xl font-bold text-charcoal mb-4">
-                Major Cities in Missouri
-              </h2>
-              <p className="text-lg text-stone">
-                Explore vending opportunities in Missouri's key metropolitan areas
-              </p>
-            </motion.div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {cities.map((city, index) => (
-                <motion.div
-                  key={city.slug}
-                  className="bg-warm-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow"
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                >
-                  <h3 className="text-xl font-semibold text-charcoal mb-2">{city.name}</h3>
-                  <p className="text-stone mb-4">{city.description}</p>
-                  <div className="flex justify-between text-sm text-stone mb-4">
-                    <span>{city.vendorCount} vendors</span>
-                    <span>{city.businessCount} businesses</span>
-                  </div>
-                  <div className="flex flex-wrap gap-2">
-                    {city.highlights.map((highlight, idx) => (
-                      <span
-                        key={idx}
-                        className="px-2 py-1 bg-bronze/10 text-bronze text-xs rounded-full"
-                      >
-                        {highlight}
-                      </span>
-                    ))}
-                  </div>
-                  <Link
-                    href={`/vending-leads/${city.slug}`}
-                    className="mt-4 inline-block text-bronze hover:text-bronze/80 font-medium"
-                  >
-                    View Details →
-                  </Link>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
+        {/* Major Cities Section - Removed since no city pages exist */}
       </div>
 
       <Footer />

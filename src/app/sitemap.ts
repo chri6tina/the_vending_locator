@@ -184,9 +184,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: 'https://www.thevendinglocator.com/vending-leads/madison-wisconsin', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     
     // Missouri cities
-    { url: 'https://www.thevendinglocator.com/vending-leads/kansas-city-missouri', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
-    { url: 'https://www.thevendinglocator.com/vending-leads/st-louis-missouri', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
-    { url: 'https://www.thevendinglocator.com/vending-leads/springfield-missouri', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    // Note: No individual city pages exist for Missouri yet
   ]
 
 
