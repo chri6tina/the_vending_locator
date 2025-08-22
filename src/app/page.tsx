@@ -83,7 +83,11 @@ export default function Home() {
                 { name: 'Illinois', href: '/vending-leads/illinois' },
                 { name: 'Arizona', href: '/vending-leads/arizona' },
                 { name: 'Washington', href: '/vending-leads/washington' },
-                { name: 'Pennsylvania', href: '/vending-leads/pennsylvania' }
+                { name: 'Pennsylvania', href: '/vending-leads/pennsylvania' },
+                { name: 'Tennessee', href: '/vending-leads/tennessee' },
+                { name: 'Georgia', href: '/vending-leads/georgia' },
+                { name: 'Oregon', href: '/vending-leads/oregon' },
+                { name: 'Nevada', href: '/vending-leads/nevada' }
               ].map((state, index) => (
                 <Link
                   key={state.name}
@@ -168,6 +172,126 @@ export default function Home() {
               className="inline-flex items-center gap-2 bg-navy hover:bg-navy-light text-white px-8 py-4 rounded-lg font-semibold transition-colors text-lg"
             >
               Contact Our Team
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      {/* Featured Cities Section */}
+      <div className="bg-cream py-16 sm:py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-playfair font-bold text-chocolate mb-6">
+              Featured Cities
+            </h2>
+            <p className="text-lg sm:text-xl text-chocolate/70 leading-relaxed max-w-3xl mx-auto">
+              Discover vending machine opportunities in major metropolitan areas with high business density
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-12">
+            <Link
+              href="/vending-leads/nashville-tennessee"
+              className="bg-white rounded-xl p-6 hover:shadow-lg transition-all duration-300 group border border-gray-200"
+              onClick={() => trackLocationSearch('Nashville', 'city_click')}
+            >
+              <div className="text-center">
+                <h3 className="text-xl font-semibold text-charcoal mb-3 group-hover:text-navy transition-colors">
+                  Nashville, Tennessee
+                </h3>
+                <p className="text-stone text-sm mb-4">
+                  Music industry hub with healthcare, tourism, and corporate opportunities
+                </p>
+                <div className="text-xs text-stone">
+                  <span className="font-medium">300+ Verified Locations</span>
+                </div>
+              </div>
+            </Link>
+
+            <Link
+              href="/vending-leads/charlotte-north-carolina"
+              className="bg-white rounded-xl p-6 hover:shadow-lg transition-all duration-300 group border border-gray-200"
+              onClick={() => trackLocationSearch('Charlotte', 'city_click')}
+            >
+              <div className="text-center">
+                <h3 className="text-xl font-semibold text-charcoal mb-3 group-hover:text-navy transition-colors">
+                  Charlotte, North Carolina
+                </h3>
+                <p className="text-stone text-sm mb-4">
+                  Banking and finance center with growing tech sector
+                </p>
+                <div className="text-xs text-stone">
+                  <span className="font-medium">350+ Verified Locations</span>
+                </div>
+              </div>
+            </Link>
+
+            <Link
+              href="/vending-leads/orlando-florida"
+              className="bg-white rounded-xl p-6 hover:shadow-lg transition-all duration-300 group border border-gray-200"
+              onClick={() => trackLocationSearch('Orlando', 'city_click')}
+            >
+              <div className="text-center">
+                <h3 className="text-xl font-semibold text-charcoal mb-3 group-hover:text-navy transition-colors">
+                  Orlando, Florida
+                </h3>
+                <p className="text-stone text-sm mb-4">
+                  Tourism and hospitality hub with theme parks and tech companies
+                </p>
+                <div className="text-xs text-stone">
+                  <span className="font-medium">400+ Verified Locations</span>
+                </div>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      {/* All States Directory Section */}
+      <div className="bg-white py-16 sm:py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-playfair font-bold text-chocolate mb-6">
+              Complete State Directory
+            </h2>
+            <p className="text-lg sm:text-xl text-chocolate/70 leading-relaxed max-w-3xl mx-auto">
+              Access vending machine opportunities and business leads across all 50 states
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4">
+            {[
+              'Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California',
+              'Colorado', 'Connecticut', 'Delaware', 'Florida', 'Georgia',
+              'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa',
+              'Kansas', 'Kentucky', 'Louisiana', 'Maine', 'Maryland',
+              'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi', 'Missouri',
+              'Montana', 'Nebraska', 'Nevada', 'New Hampshire', 'New Jersey',
+              'New Mexico', 'New York', 'North Carolina', 'North Dakota', 'Ohio',
+              'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island', 'South Carolina',
+              'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont',
+              'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming'
+            ].map((state) => (
+              <Link
+                key={state}
+                href={`/vending-leads/${state.toLowerCase().replace(/\s+/g, '-')}`}
+                className="bg-cream hover:bg-navy/5 rounded-lg p-3 text-center transition-colors group"
+                onClick={() => trackLocationSearch(state, 'state_click')}
+              >
+                <div className="text-sm font-medium text-chocolate group-hover:text-navy transition-colors">
+                  {state}
+                </div>
+              </Link>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <Link
+              href="/vending-leads"
+              className="inline-flex items-center gap-2 bg-navy hover:bg-navy-light text-white px-8 py-4 rounded-lg font-semibold transition-colors text-lg"
+            >
+              Explore All States
+              <MapPinIcon className="h-5 w-5" />
             </Link>
           </div>
         </div>

@@ -27,7 +27,7 @@ export default function VendingCourse() {
         </div>
 
         {/* Success Graph Section */}
-        <div className="mt-16 mx-auto max-w-4xl">
+        <div className="mt-16 mx-auto max-w-4xl px-4">
           <div className="text-center mb-12">
             <h3 className="text-2xl sm:text-3xl font-playfair font-bold text-chocolate mb-4">
               Our Success Story
@@ -37,53 +37,37 @@ export default function VendingCourse() {
             </p>
           </div>
 
-          {/* Graph Container */}
-          <div className="bg-white rounded-2xl shadow-lg border border-gray-200 p-8">
-            <div className="flex items-end justify-between h-64 mb-6 px-4">
-              {/* Graph Bars */}
-              <div className="flex items-end justify-between w-full gap-2">
+          {/* Graph Container - Mobile Responsive */}
+          <div className="bg-white rounded-2xl shadow-lg border border-gray-200 p-4 sm:p-8 overflow-hidden">
+            <div className="overflow-x-auto">
+              <div className="flex items-end justify-between h-48 sm:h-64 mb-6 px-2 sm:px-4 min-w-[600px] sm:min-w-0">
+                {/* Graph Bars - More Realistic Data */}
                 <div className="flex flex-col items-center">
-                  <div className="w-8 bg-gradient-to-t from-navy to-navy-light rounded-t-lg" style={{ height: '40px' }}></div>
-                  <span className="text-xs text-chocolate/70 mt-2">2015</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <div className="w-8 bg-gradient-to-t from-navy to-navy-light rounded-t-lg" style={{ height: '60px' }}></div>
-                  <span className="text-xs text-chocolate/70 mt-2">2016</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <div className="w-8 bg-gradient-to-t from-navy to-navy-light rounded-t-lg" style={{ height: '80px' }}></div>
-                  <span className="text-xs text-chocolate/70 mt-2">2017</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <div className="w-8 bg-gradient-to-t from-navy to-navy-light rounded-t-lg" style={{ height: '100px' }}></div>
-                  <span className="text-xs text-chocolate/70 mt-2">2018</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <div className="w-8 bg-gradient-to-t from-navy to-navy-light rounded-t-lg" style={{ height: '120px' }}></div>
+                  <div className="w-6 sm:w-8 bg-gradient-to-t from-navy to-navy-light rounded-t-lg" style={{ height: '32px' }}></div>
                   <span className="text-xs text-chocolate/70 mt-2">2019</span>
                 </div>
                 <div className="flex flex-col items-center">
-                  <div className="w-8 bg-gradient-to-t from-navy to-navy-light rounded-t-lg" style={{ height: '140px' }}></div>
+                  <div className="w-6 sm:w-8 bg-gradient-to-t from-navy to-navy-light rounded-t-lg" style={{ height: '45px' }}></div>
                   <span className="text-xs text-chocolate/70 mt-2">2020</span>
                 </div>
                 <div className="flex flex-col items-center">
-                  <div className="w-8 bg-gradient-to-t from-navy to-navy-light rounded-t-lg" style={{ height: '160px' }}></div>
+                  <div className="w-6 sm:w-8 bg-gradient-to-t from-navy to-navy-light rounded-t-lg" style={{ height: '38px' }}></div>
                   <span className="text-xs text-chocolate/70 mt-2">2021</span>
                 </div>
                 <div className="flex flex-col items-center">
-                  <div className="w-8 bg-gradient-to-t from-navy to-navy-light rounded-t-lg" style={{ height: '180px' }}></div>
+                  <div className="w-6 sm:w-8 bg-gradient-to-t from-navy to-navy-light rounded-t-lg" style={{ height: '52px' }}></div>
                   <span className="text-xs text-chocolate/70 mt-2">2022</span>
                 </div>
                 <div className="flex flex-col items-center">
-                  <div className="w-8 bg-gradient-to-t from-navy to-navy-light rounded-t-lg" style={{ height: '200px' }}></div>
+                  <div className="w-6 sm:w-8 bg-gradient-to-t from-navy to-navy-light rounded-t-lg" style={{ height: '68px' }}></div>
                   <span className="text-xs text-chocolate/70 mt-2">2023</span>
                 </div>
                 <div className="flex flex-col items-center">
-                  <div className="w-8 bg-gradient-to-t from-navy to-navy-light rounded-t-lg" style={{ height: '220px' }}></div>
+                  <div className="w-6 sm:w-8 bg-gradient-to-t from-navy to-navy-light rounded-t-lg" style={{ height: '85px' }}></div>
                   <span className="text-xs text-chocolate/70 mt-2">2024</span>
                 </div>
                 <div className="flex flex-col items-center">
-                  <div className="w-8 bg-gradient-to-t from-coral to-orange-500 rounded-t-lg" style={{ height: '240px' }}></div>
+                  <div className="w-6 sm:w-8 bg-gradient-to-t from-coral to-orange-500 rounded-t-lg" style={{ height: '120px' }}></div>
                   <span className="text-xs text-chocolate/70 mt-2">2025</span>
                 </div>
               </div>
