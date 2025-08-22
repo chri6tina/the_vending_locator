@@ -100,6 +100,22 @@
 .blog-content em {
   @apply italic text-stone;
 }
+
+/* Animation for recent purchase notifications */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
   
   /* Enhanced blog post content styling */
   .blog-content-enhanced {

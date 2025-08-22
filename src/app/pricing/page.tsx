@@ -154,6 +154,19 @@ export default function Pricing() {
     'Heather in Montana'
   ])
   const [currentUserIndex, setCurrentUserIndex] = useState(0)
+  const [recentPurchases, setRecentPurchases] = useState([
+    { name: 'Mike R.', location: 'Texas', plan: 'Start Plan', time: '2 minutes ago' },
+    { name: 'Sarah L.', location: 'Florida', plan: 'Pro Plan', time: '5 minutes ago' },
+    { name: 'David M.', location: 'California', plan: 'Basic Plan', time: '8 minutes ago' },
+    { name: 'Lisa K.', location: 'New York', plan: 'Start Plan', time: '12 minutes ago' },
+    { name: 'Tom W.', location: 'Illinois', plan: 'Pro Plan', time: '15 minutes ago' },
+    { name: 'Jennifer H.', location: 'Ohio', plan: 'Basic Plan', time: '18 minutes ago' },
+    { name: 'Robert T.', location: 'Georgia', plan: 'Start Plan', time: '22 minutes ago' },
+    { name: 'Amanda P.', location: 'Michigan', plan: 'Pro Plan', time: '25 minutes ago' },
+    { name: 'Carlos M.', location: 'Arizona', plan: 'Basic Plan', time: '28 minutes ago' },
+    { name: 'Maria S.', location: 'Colorado', plan: 'Start Plan', time: '32 minutes ago' }
+  ])
+  const [currentPurchaseIndex, setCurrentPurchaseIndex] = useState(0)
 
   // Fluctuating active users counter
   useEffect(() => {
@@ -182,6 +195,15 @@ export default function Pricing() {
     return () => clearInterval(interval)
   }, [userNames.length])
 
+  // Rotating recent purchases
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentPurchaseIndex(prev => (prev + 1) % recentPurchases.length)
+    }, 5000)
+
+    return () => clearInterval(interval)
+  }, [recentPurchases.length])
+
   return (
     <main className="min-h-screen bg-cream">
       <Header />
@@ -203,6 +225,20 @@ export default function Pricing() {
                 className="mt-2 text-xs text-chocolate/70"
               >
                 Including {userNames[currentUserIndex]}
+              </div>
+            </div>
+
+            {/* Recent Purchase Notification */}
+            <div className="mb-6 p-3 bg-green-50 border border-green-200 rounded-lg shadow-sm max-w-sm mx-auto">
+              <div className="flex items-center justify-center gap-2 text-sm">
+                <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                <span className="text-green-800 font-medium">
+                  <span className="font-semibold">{recentPurchases[currentPurchaseIndex].name}</span> from {recentPurchases[currentPurchaseIndex].location} just purchased the{' '}
+                  <span className="font-bold text-green-700">{recentPurchases[currentPurchaseIndex].plan}</span>
+                </span>
+              </div>
+              <div className="mt-1 text-xs text-green-600 text-center">
+                {recentPurchases[currentPurchaseIndex].time}
               </div>
             </div>
 
@@ -324,6 +360,40 @@ export default function Pricing() {
 
       {/* FAQ Section */}
       <FAQ />
+
+      {/* Mobile Recent Purchase Notification - Bottom of Page */}
+      <div className="sm:hidden bg-green-50 border border-green-200 rounded-lg shadow-sm p-4 mx-4 mb-8">
+        <div className="flex items-center justify-center gap-2 text-sm">
+          <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+          <span className="text-green-800 font-medium text-center">
+            <span className="font-semibold">{recentPurchases[currentPurchaseIndex].name}</span> from {recentPurchases[currentPurchaseIndex].location} just purchased the{' '}
+            <span className="font-bold text-green-700">{recentPurchases[currentPurchaseIndex].plan}</span>
+          </span>
+        </div>
+        <div className="mt-1 text-xs text-green-600 text-center">
+          {recentPurchases[currentPurchaseIndex].time}
+        </div>
+      </div>
+
+      {/* Floating Recent Purchase Notification - Bottom Left */}
+      <div className="fixed bottom-4 left-4 z-50 max-w-xs hidden sm:block">
+        <div className="bg-white border border-green-200 rounded-lg shadow-lg p-3 animate-fade-in">
+          <div className="flex items-start gap-2">
+            <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse mt-2 flex-shrink-0"></div>
+            <div className="text-xs">
+              <p className="text-green-800 font-medium">
+                <span className="font-semibold">{recentPurchases[currentPurchaseIndex].name}</span> from {recentPurchases[currentPurchaseIndex].location}
+              </p>
+              <p className="text-green-700 font-semibold">
+                just purchased the {recentPurchases[currentPurchaseIndex].plan}
+              </p>
+              <p className="text-green-600 text-xs mt-1">
+                {recentPurchases[currentPurchaseIndex].time}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <Footer />
       
