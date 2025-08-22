@@ -12,7 +12,7 @@ import { motion } from 'framer-motion'
 import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CpuChipIcon } from '@heroicons/react/24/solid'
 
 export default function SanFranciscoCaliforniaVendingLeadsPage() {
-  const [activeUsers, setActiveUsers] = useState(0)
+  const [activeUsers, setActiveUsers] = useState(40)
   const [userNames, setUserNames] = useState([
     'Mike from San Francisco', 'Sarah in Mission Bay', 'David from SoMa', 'Lisa in Hayes Valley',
     'Tom in North Beach', 'Jennifer in Marina', 'Robert from Pacific Heights', 'Amanda in Russian Hill',
@@ -20,19 +20,15 @@ export default function SanFranciscoCaliforniaVendingLeadsPage() {
   ])
   const [currentUserIndex, setCurrentUserIndex] = useState(0)
 
-  // Fluctuating active users counter
+  // Active users counter effect
   useEffect(() => {
-    const updateActiveUsers = () => {
-      const baseUsers = 9
-      const fluctuation = Math.floor(Math.random() * 3) + 1
-      setActiveUsers(baseUsers + fluctuation)
-    }
-
     const interval = setInterval(() => {
-      updateActiveUsers()
-    }, Math.random() * 2000 + 2000)
-
-    updateActiveUsers()
+      setActiveUsers(prev => {
+        const change = Math.floor(Math.random() * 3) - 1
+        const newValue = prev + change
+        return Math.max(35, Math.min(45, newValue))
+      })
+    }, 4000)
     return () => clearInterval(interval)
   }, [])
 

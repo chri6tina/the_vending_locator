@@ -10,6 +10,7 @@ const navigation = [
   { name: 'Vending Leads', href: '/vending-leads' },
   { name: 'Vending Locations', href: '/vending-locations' },
   { name: 'Pricing', href: '/pricing' },
+  { name: 'Blog', href: '/blog' },
   { name: 'Guide', href: '/guide/how-to-start-a-vending-machine-business' },
   { name: 'Hot Leads', href: '/hot-leads' },
 ]

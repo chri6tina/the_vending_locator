@@ -178,6 +178,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: 'https://www.thevendinglocator.com/vending-leads/rochester-minnesota', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/vending-leads/saint-paul-minnesota', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     
+    // Pennsylvania cities
+    { url: 'https://www.thevendinglocator.com/vending-leads/philadelphia-pennsylvania', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    
     // South Carolina cities
     // Note: No individual city pages exist for South Carolina yet
     

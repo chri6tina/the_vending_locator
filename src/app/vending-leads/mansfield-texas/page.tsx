@@ -12,7 +12,7 @@ import { motion } from 'framer-motion'
 import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CpuChipIcon, HeartIcon, ShoppingBagIcon, TruckIcon, BuildingLibraryIcon } from '@heroicons/react/24/solid'
 
 export default function MansfieldTexasVendingLeadsPage() {
-  const [activeUsers, setActiveUsers] = useState(0)
+  const [activeUsers, setActiveUsers] = useState(32)
   const [userNames, setUserNames] = useState([
     'Mike from Mansfield', 'Sarah in Downtown', 'David in East Mansfield', 'Lisa in South Mansfield',
     'Tom in North Mansfield', 'Jennifer in West Mansfield', 'Robert in Central Mansfield', 'Amanda in Southwest Mansfield',
@@ -20,19 +20,15 @@ export default function MansfieldTexasVendingLeadsPage() {
   ])
   const [currentUserIndex, setCurrentUserIndex] = useState(0)
 
-  // Fluctuating active users counter
+  // Active users counter effect
   useEffect(() => {
-    const updateActiveUsers = () => {
-      const baseUsers = 8
-      const fluctuation = Math.floor(Math.random() * 3) + 1
-      setActiveUsers(baseUsers + fluctuation)
-    }
-
     const interval = setInterval(() => {
-      updateActiveUsers()
-    }, Math.random() * 2000 + 2000)
-
-    updateActiveUsers()
+      setActiveUsers(prev => {
+        const change = Math.floor(Math.random() * 3) - 1
+        const newValue = prev + change
+        return Math.max(28, Math.min(38, newValue))
+      })
+    }, 4000)
     return () => clearInterval(interval)
   }, [])
 

@@ -12,7 +12,7 @@ import { motion } from 'framer-motion'
 import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, FilmIcon, CpuChipIcon } from '@heroicons/react/24/solid'
 
 export default function LosAngelesCaliforniaVendingLeadsPage() {
-  const [activeUsers, setActiveUsers] = useState(0)
+  const [activeUsers, setActiveUsers] = useState(42)
   const [userNames, setUserNames] = useState([
     'Mike from Los Angeles', 'Sarah in Santa Monica', 'David from Beverly Hills', 'Lisa in West Hollywood',
     'Tom in Culver City', 'Jennifer in Burbank', 'Robert from Glendale', 'Amanda in Pasadena',
@@ -20,21 +20,17 @@ export default function LosAngelesCaliforniaVendingLeadsPage() {
   ])
   const [currentUserIndex, setCurrentUserIndex] = useState(0)
 
-  // Fluctuating active users counter
+  // Active users counter effect
   useEffect(() => {
-    const updateActiveUsers = () => {
-      const baseUsers = 9
-      const fluctuation = Math.floor(Math.random() * 4) + 1
-      setActiveUsers(baseUsers + fluctuation)
-    }
-
     const interval = setInterval(() => {
-      updateActiveUsers()
-    }, Math.random() * 2000 + 2000)
-
-    updateActiveUsers()
+      setActiveUsers(prev => {
+        const change = Math.floor(Math.random() * 3) - 1
+        const newValue = prev + change
+        return Math.max(38, Math.min(48, newValue))
+      })
+    }, 4000)
     return () => clearInterval(interval)
-  }, [])
+    }, [])
 
   // Rotating user names
   useEffect(() => {

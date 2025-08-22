@@ -1,6 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
@@ -100,9 +101,46 @@ export default function Services() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="mt-6 text-lg leading-8 text-stone"
             >
-              We specialize in finding qualified vending machine locations across all industries. 
-              Our research-driven approach ensures you get the best opportunities for your vending business.
+              Professional research services to help you find the best vending machine locations. 
+              Get qualified leads and market insights to grow your vending business.
             </motion.p>
+            
+                         {/* Internal Links Section */}
+             <motion.div
+               initial={{ opacity: 0, y: 20 }}
+               animate={{ opacity: 1, y: 0 }}
+               transition={{ duration: 0.8, delay: 0.4 }}
+               className="mt-8 flex flex-wrap justify-center gap-4"
+             >
+               <Link
+                 href="/vending-leads"
+                 className="inline-flex items-center gap-2 bg-navy hover:bg-navy-light text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+               >
+                 View All States
+               </Link>
+               <Link
+                 href="/blog"
+                 className="inline-flex items-center gap-2 bg-coral hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+               >
+                 Read Our Blog
+               </Link>
+               <Link
+                 href="/pricing"
+                 className="inline-flex items-center gap-2 bg-transparent text-navy border-2 border-navy hover:bg-navy hover:text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+               >
+                 View Pricing
+               </Link>
+             </motion.div>
+             
+             <motion.p
+               initial={{ opacity: 0, y: 20 }}
+               animate={{ opacity: 1, y: 0 }}
+               transition={{ duration: 0.8, delay: 0.3 }}
+               className="mt-6 text-lg leading-8 text-stone"
+             >
+               We specialize in finding qualified vending machine locations across all industries. 
+               Our research-driven approach ensures you get the best opportunities for your vending business.
+             </motion.p>
           </div>
         </div>
       </div>

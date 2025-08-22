@@ -243,6 +243,24 @@ export default function Home() {
                 </div>
               </div>
             </Link>
+
+            <Link
+              href="/vending-leads/philadelphia-pennsylvania"
+              className="bg-white rounded-xl p-6 hover:shadow-lg transition-all duration-300 group border border-gray-200"
+              onClick={() => trackLocationSearch('Philadelphia', 'city_click')}
+            >
+              <div className="text-center">
+                <h3 className="text-xl font-semibold text-charcoal mb-3 group-hover:text-navy transition-colors">
+                  Philadelphia, Pennsylvania
+                </h3>
+                <p className="text-stone text-sm mb-4">
+                  Major East Coast business hub with healthcare, education, and finance
+                </p>
+                <div className="text-xs text-stone">
+                  <span className="font-medium">280+ Verified Locations</span>
+                </div>
+              </div>
+            </Link>
           </div>
         </div>
       </div>
@@ -292,6 +310,85 @@ export default function Home() {
             >
               Explore All States
               <MapPinIcon className="h-5 w-5" />
+            </Link>
+          </div>
+        </div>
+      </div>
+      
+      {/* Blog Section */}
+      <div className="bg-cream py-16 sm:py-24">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-playfair font-bold text-chocolate mb-6">
+              Latest Vending Business Insights
+            </h2>
+            <p className="text-lg sm:text-xl text-chocolate/70 leading-relaxed max-w-3xl mx-auto">
+              Expert tips, strategies, and insights to help you succeed in the vending machine business
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <Link
+              href="/blog/vending-machine-location-strategy"
+              className="bg-white rounded-xl p-6 hover:shadow-lg transition-all duration-300 group border border-gray-200"
+            >
+              <div className="text-center">
+                <h3 className="text-xl font-semibold text-charcoal mb-3 group-hover:text-navy transition-colors">
+                  Location Strategy Guide
+                </h3>
+                <p className="text-stone text-sm mb-4">
+                  Learn proven strategies for finding the best vending machine locations
+                </p>
+                <div className="text-xs text-stone">
+                  <span className="font-medium">Read More →</span>
+                </div>
+              </div>
+            </Link>
+            
+            <Link
+              href="/blog/vending-machine-profitability"
+              className="bg-white rounded-xl p-6 hover:shadow-lg transition-all duration-300 group border border-gray-200"
+            >
+              <div className="text-center">
+                <h3 className="text-xl font-semibold text-charcoal mb-3 group-hover:text-navy transition-colors">
+                  Profitability Analysis
+                </h3>
+                <p className="text-stone text-sm mb-4">
+                  Understand the factors that drive vending machine profitability
+                </p>
+                <div className="text-xs text-stone">
+                  <span className="font-medium">Read More →</span>
+                </div>
+              </div>
+            </Link>
+            
+            <Link
+              href="/blog/vending-machine-business-guide"
+              className="bg-white rounded-xl p-6 hover:shadow-lg transition-all duration-300 group border border-gray-200"
+            >
+              <div className="text-center">
+                <h3 className="text-xl font-semibold text-charcoal mb-3 group-hover:text-navy transition-colors">
+                  Business Startup Guide
+                </h3>
+                <p className="text-stone text-sm mb-4">
+                  Complete guide to starting and growing your vending machine business
+                </p>
+                <div className="text-xs text-sm">
+                  <span className="font-medium">Read More →</span>
+                </div>
+              </div>
+            </Link>
+          </div>
+          
+          <div className="text-center mt-12">
+            <Link
+              href="/blog"
+              className="inline-flex items-center gap-2 bg-navy hover:bg-navy-light text-white px-8 py-4 rounded-lg font-semibold transition-colors text-lg"
+            >
+              View All Blog Posts
+              <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
             </Link>
           </div>
         </div>

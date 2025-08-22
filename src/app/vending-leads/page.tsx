@@ -172,6 +172,13 @@ export default function VendingLeadsPage() {
       ]
     },
     {
+      name: 'Pennsylvania',
+      slug: 'pennsylvania',
+      cities: [
+        { name: 'Philadelphia', slug: 'philadelphia-pennsylvania', vendorCount: '320+', businessCount: '450+', description: 'Major East Coast business and healthcare hub' },
+      ]
+    },
+    {
       name: 'South Carolina',
       slug: 'south-carolina',
       cities: []

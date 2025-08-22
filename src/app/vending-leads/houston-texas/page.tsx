@@ -12,7 +12,7 @@ import { motion } from 'framer-motion'
 import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, TruckIcon, HeartIcon } from '@heroicons/react/24/solid'
 
 export default function HoustonTexasVendingLeadsPage() {
-  const [activeUsers, setActiveUsers] = useState(0)
+  const [activeUsers, setActiveUsers] = useState(38)
   const [userNames, setUserNames] = useState([
     'Mike from Houston', 'Sarah in Sugar Land', 'David from Katy', 'Lisa in The Woodlands',
     'Tom in Spring', 'Jennifer in Cypress', 'Robert from Pearland', 'Amanda in League City',
@@ -20,19 +20,15 @@ export default function HoustonTexasVendingLeadsPage() {
   ])
   const [currentUserIndex, setCurrentUserIndex] = useState(0)
 
-  // Fluctuating active users counter
+  // Active users counter effect
   useEffect(() => {
-    const updateActiveUsers = () => {
-      const baseUsers = 8
-      const fluctuation = Math.floor(Math.random() * 4) + 1
-      setActiveUsers(baseUsers + fluctuation)
-    }
-
     const interval = setInterval(() => {
-      updateActiveUsers()
-    }, Math.random() * 2000 + 2000)
-
-    updateActiveUsers()
+      setActiveUsers(prev => {
+        const change = Math.floor(Math.random() * 3) - 1
+        const newValue = prev + change
+        return Math.max(32, Math.min(45, newValue))
+      })
+    }, 4000)
     return () => clearInterval(interval)
   }, [])
 

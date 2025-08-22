@@ -24,6 +24,9 @@ Each vending leads city page should be a comprehensive, location-specific "home 
 ✅ **Makes Google see it as high-quality content** for that specific location and purpose
 ✅ **Helps vendors understand how you help them in that specific area**
 
+### 🆕 **NEW: COMPREHENSIVE TEMPLATE**
+**Use the new `COMPREHENSIVE_CITY_PAGE_TEMPLATE.md` for creating all future city pages. This template is based on the excellent Mansfield, Texas page and ensures consistency and quality.**
+
 ### Page Examples
 - `/vending-leads/jacksonville-florida`
 - `/vending-leads/austin-texas`
@@ -77,6 +80,16 @@ Make each page feel like a dedicated homepage for that specific location, with G
 - **Comprehensive coverage** of vending opportunities in that area
 - **Hero section MUST match home page** (warm-white background, same styling)
 - **Pricing section prominent** and early in page flow
+
+---
+
+## 🆕 **COMPREHENSIVE TEMPLATE REFERENCE**
+
+**For creating new city pages, use the comprehensive template:**
+- **File**: `COMPREHENSIVE_CITY_PAGE_TEMPLATE.md`
+- **Based on**: Mansfield, Texas page excellence
+- **Ensures**: Consistent structure, quality, and completeness
+- **Includes**: All required sections, components, and best practices
 
 ---
 

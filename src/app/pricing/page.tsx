@@ -292,6 +292,30 @@ export default function Pricing() {
                 View Pricing →
               </Link>
             </div>
+            
+            {/* Internal Links */}
+            <div className="mt-6 sm:mt-8 flex flex-wrap justify-center gap-3 px-4 sm:px-0">
+              <Link
+                href="/vending-leads"
+                className="text-sm text-navy hover:text-navy-light underline"
+              >
+                View All States
+              </Link>
+              <span className="text-stone">•</span>
+              <Link
+                href="/blog"
+                className="text-sm text-navy hover:text-navy-light underline"
+              >
+                Read Our Blog
+              </Link>
+              <span className="text-stone">•</span>
+              <Link
+                href="/services"
+                className="text-sm text-navy hover:text-navy-light underline"
+              >
+                Our Services
+              </Link>
+            </div>
 
             {/* Social Proof */}
             <div className="mt-6 sm:mt-8 px-4 sm:px-0">
