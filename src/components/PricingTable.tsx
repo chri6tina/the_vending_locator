@@ -10,56 +10,56 @@ const plans = [
   {
     name: 'Basic',
     price: '$19',
-    period: '/month',
+    period: '',
     description: 'Perfect for getting started with vending location research',
     location: '50+ Locations',
     popular: false,
     href: 'https://buy.stripe.com/aEU2929ZcfvQ10IdQT',
-    type: 'subscription' as const,
+    type: 'one-time' as const,
     deliveryTime: '5 Days',
     radius: '15 miles',
     features: [
-      '50+ qualified locations per month',
+      '50+ qualified locations',
       'Basic lead details (name, phone, address)',
       '15-mile radius search',
       '5-day delivery',
       'Email support',
-      'Monthly database access'
+      'Lifetime access to your leads'
     ]
   },
   {
     name: 'Pro',
     price: '$29',
-    period: '/month',
+    period: '',
     description: 'Advanced features for growing vending operations',
     location: '100+ Locations',
     popular: false,
     href: 'https://buy.stripe.com/4gwaFyfjw1F0gZG004',
-    type: 'subscription' as const,
+    type: 'one-time' as const,
     deliveryTime: '3 Days',
     radius: '25 miles',
     features: [
-      '100+ qualified locations per month',
+      '100+ qualified locations',
       'Enhanced lead details with email addresses',
       '25-mile radius search',
       '3-day delivery',
       'Priority support',
-      'Monthly database access'
+      'Lifetime access to your leads'
     ]
   },
   {
     name: 'Start',
     price: '$129',
-    period: '/month',
+    period: '',
     description: 'Comprehensive package for serious vending entrepreneurs',
     location: '200+ Locations',
     popular: true,
     href: 'https://buy.stripe.com/3cs8xq2wKdnI6l24gl',
-    type: 'subscription' as const,
+    type: 'one-time' as const,
     deliveryTime: '3 Days',
     radius: '25 miles',
     features: [
-      '200+ qualified locations per month',
+      '200+ qualified locations',
       'Complete lead details with email addresses',
       '25-mile radius search',
       '3-day delivery',
@@ -67,22 +67,22 @@ const plans = [
       'Cold call & email scripts',
       'Contract templates',
       'Priority support',
-      'Monthly database access'
+      'Lifetime access to your leads'
     ]
   },
   {
     name: 'Gold',
     price: '$899',
-    period: '/month',
+    period: '',
     description: 'Ultimate package with full business setup support',
     location: '300+ Locations',
     popular: false,
     href: 'https://buy.stripe.com/dR614Y4ESgzU6l25kq',
-    type: 'subscription' as const,
+    type: 'one-time' as const,
     deliveryTime: '3 Days',
     radius: '25 miles',
     features: [
-      '300+ qualified locations per month',
+      '300+ qualified locations',
       'Complete lead details with email addresses',
       '25-mile radius search',
       '3-day delivery',
@@ -92,7 +92,7 @@ const plans = [
       'Business plan template',
       'Priority support',
       'Dedicated account manager',
-      'Monthly database access'
+      'Lifetime access to your leads'
     ]
   },
 ]
@@ -192,7 +192,7 @@ export default function PricingTable() {
               {/* Get Started Button - Now triggers modal */}
               <button
                 onClick={() => handlePlanClick(plan)}
-                className={`w-full py-3 px-6 rounded-lg font-semibold text-white transition-all duration-200 text-center block ${
+                className={`w-32 mx-auto py-3 px-6 rounded-lg font-semibold text-white transition-all duration-200 text-center block ${
                   plan.popular
                     ? 'bg-navy hover:bg-navy-light shadow-lg'
                     : 'bg-charcoal hover:bg-opacity-90'
@@ -227,7 +227,7 @@ export default function PricingTable() {
                           {/* Get Started Button - Now triggers modal */}
                           <button
                             onClick={() => handlePlanClick(plan)}
-                            className={`bg-charcoal hover:bg-charcoal/90 text-white px-3 lg:px-6 py-2 rounded-lg text-sm lg:text-base font-medium inline-block cursor-pointer transition-all duration-200`}
+                            className={`w-24 bg-charcoal hover:bg-charcoal/90 text-white px-3 lg:px-6 py-2 rounded-lg text-sm lg:text-base font-medium inline-block cursor-pointer transition-all duration-200`}
                           >
                             {plan.price}{plan.period}
                           </button>

@@ -375,12 +375,6 @@ export default function Hero() {
                 <span className="font-bold text-coral">{activeUsers}</span> people are choosing plans right now
               </span>
             </div>
-            <div className="mt-2 text-xs text-chocolate/70">
-              Including {userNames[currentUserIndex]}
-            </div>
-            <div className="mt-1 text-xs text-chocolate/50">
-              {usedNames.size} unique names shown so far
-            </div>
           </div>
 
           {/* Recent Purchase Notification */}

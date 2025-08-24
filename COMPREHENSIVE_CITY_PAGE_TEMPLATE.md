@@ -1,385 +1,186 @@
-# 🏙️ COMPREHENSIVE CITY PAGE TEMPLATE
-## Based on Mansfield, Texas Excellence Standards
+# 🏗️ Comprehensive City Page Template
 
-**This template ensures every new vending-leads city page is comprehensive, location-specific, and matches our upgraded structure and hero section.**
+## 📋 **Required Structure & Components**
 
----
-
-## 📋 **REQUIRED PAGE STRUCTURE**
-
-### **1. 🎯 HERO SECTION (Must Match Home Page Style)**
+### **1. Hero Section (CRITICAL - Must be centered)**
 ```tsx
-{/* Hero Section - MUST match home page background (warm-white, NOT harsh blue) */}
-<div className="bg-white">
-  <div className="mx-auto max-w-7xl px-4 sm:px-6 py-12 sm:py-16 lg:py-20 lg:px-8">
-    <div className="mx-auto max-w-4xl text-center">
-      
+<section className="relative py-20 bg-white overflow-hidden">
+  <div className="container mx-auto px-4">
+    <div className="max-w-6xl mx-auto text-center"> {/* MUST have text-center */}
       {/* Active Users Counter Pill */}
-      <div className="mb-6 p-4 bg-cream/50 backdrop-blur-sm rounded-2xl border border-gray-200 shadow-sm max-w-md mx-auto">
-        <div className="flex items-center justify-center gap-3">
-          <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-          <span className="text-sm font-medium text-chocolate">
-            <span className="font-bold text-coral">{activeUsers}</span> {cityName} vendors are choosing plans right now
-          </span>
-        </div>
-        <div className="mt-2 text-xs text-chocolate/70">
-          Including {userNames[currentUserIndex]}
-        </div>
-      </div>
+      <motion.div className="inline-flex items-center bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium mb-6">
+        <UsersIcon className="w-4 h-4 mr-2" />
+        <span className="animate-pulse">{activeUsers} people</span>
+        <span className="ml-2">are currently viewing vending locations</span>
+      </motion.div>
 
       {/* Recent Purchase Notification */}
-      <div className="mb-6 p-3 bg-green-50 border border-green-200 rounded-lg shadow-sm max-w-sm mx-auto">
-        <div className="flex items-center justify-center gap-2 text-sm">
-          <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-          <span className="text-green-800 font-medium">
-            <span className="font-semibold">{recentPurchases[currentPurchaseIndex].name}</span> from {recentPurchases[currentPurchaseIndex].location} just purchased the{' '}
-            <span className="font-bold text-green-700">{recentPurchases[currentPurchaseIndex].plan}</span>
-          </span>
-        </div>
-        <div className="mt-1 text-xs text-green-600 text-center">
-          {recentPurchases[currentPurchaseIndex].time}
-        </div>
-      </div>
+      <motion.div className="hidden sm:block bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6 max-w-md mx-auto"> {/* MUST have mx-auto */}
+        {/* Notification content */}
+      </motion.div>
 
       {/* Main Headline */}
-      <h1 className="text-3xl sm:text-4xl lg:text-5xl font-playfair font-bold tracking-tight text-chocolate px-4 sm:px-0">
-        Vending Machine Locations<br />in {cityName}, {stateName}
-      </h1>
-      
+      <motion.h1 className="text-4xl md:text-6xl font-playfair font-bold text-charcoal mb-6 leading-tight">
+        Vending Machine Locations in{' '}
+        <span className="text-navy">{cityData.name}, {cityData.state}</span>
+      </motion.h1>
+
       {/* City-Specific Value Proposition */}
-      <p className="mt-4 sm:mt-6 text-lg sm:text-xl leading-8 sm:leading-9 text-chocolate/70 px-4 sm:px-0 max-w-3xl mx-auto">
-        {citySpecificValueProposition}
-      </p>
+      <motion.p className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"> {/* MUST have mx-auto */}
+        {/* Description */}
+      </motion.p>
 
       {/* Trust/Feature Badges */}
-      <div className="mt-6 sm:mt-8 grid grid-cols-2 gap-4 max-w-md mx-auto">
-        <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
-          <div className="flex items-center gap-3">
-            <CheckBadgeIcon className="h-5 w-5 text-green-600" />
-            <span className="text-sm font-medium text-chocolate">{verifiedLocationsCount}+ Verified Locations</span>
-          </div>
-        </div>
-        <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
-          <div className="flex items-center gap-3">
-            <StarIcon className="h-5 w-5 text-yellow-500" />
-            <span className="text-sm font-medium text-chocolate">4.9/5 Rating</span>
-          </div>
-        </div>
-        <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
-          <div className="flex items-center gap-3">
-            <ShieldCheckIcon className="h-5 w-5 text-blue-600" />
-            <span className="text-sm font-medium text-chocolate">Secure & Reliable</span>
-          </div>
-        </div>
-        <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
-          <div className="flex items-center gap-3">
-            <ClockIcon className="h-5 w-5 text-purple-600" />
-            <span className="text-sm font-medium text-chocolate">Quality Research</span>
-          </div>
-        </div>
-      </div>
+      <motion.div className="flex flex-wrap gap-4 mb-8 justify-center"> {/* MUST have justify-center */}
+        {/* Badge items */}
+      </motion.div>
 
-      {/* CTA Buttons */}
-      <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 px-4 sm:px-0">
-        <Link
+      {/* CTA Buttons (CRITICAL - Must be properly styled and visible) */}
+      <motion.div className="flex flex-col sm:flex-row gap-4 mb-8 justify-center items-center"> {/* MUST have justify-center items-center */}
+        <Link 
+          href="/pricing"
+          className="bg-navy hover:bg-navy/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 min-w-[200px] text-center"
+        >
+          View Pricing Plans
+        </Link>
+        <Link 
           href="/hot-leads"
-          className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors"
+          className="bg-coral hover:bg-coral/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 min-w-[200px] text-center"
         >
           Get Hot Leads
         </Link>
-        <Link
-          href="#pricing"
-          className="w-full sm:w-auto bg-transparent text-chocolate border-2 border-chocolate px-8 py-3 rounded-lg font-semibold hover:bg-chocolate hover:text-white transition-colors"
-        >
-          View Pricing →
-        </Link>
-      </div>
+      </motion.div>
 
-      {/* Social Proof */}
-      <div className="mt-6 sm:mt-8 px-4 sm:px-0">
-        <div className="flex items-center justify-center gap-3 mb-3">
-          <div className="flex -space-x-2">
-            {/* Add 3-4 user avatars */}
-          </div>
-          <span className="text-sm text-chocolate/70">
-            Trusted by {vendorCount}+ vending operators in {cityName}
-          </span>
-        </div>
-      </div>
+      {/* Social Proof Stats */}
+      <motion.div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto"> {/* MUST have mx-auto */}
+        {/* Stats */}
+      </motion.div>
     </div>
   </div>
-</div>
+</section>
 ```
 
-### **2. 💰 PRICING SECTION (Must be Prominent & Early)**
+### **2. Required Imports**
 ```tsx
-{/* Pricing Section - MUST appear immediately after hero */}
-<div id="pricing" className="bg-cream py-16 sm:py-24">
-  <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div className="text-center mb-12">
-      <h2 className="text-2xl sm:text-3xl lg:text-4xl font-playfair font-bold text-chocolate mb-6">
-        Choose Your Plan
-      </h2>
-      <p className="text-lg sm:text-xl text-chocolate/70 leading-relaxed max-w-3xl mx-auto">
-        Get access to qualified vending machine locations in {cityName} with flexible pricing options. No long-term contracts, just results that help you grow your business.
-      </p>
-    </div>
-    
-    {/* Use PricingTable component */}
-    <PricingTable />
-  </div>
-</div>
-```
-
-### **3. 🏢 BUSINESS LANDSCAPE SECTION**
-```tsx
-{/* Business Landscape Section */}
-<div className="bg-white py-16 sm:py-24">
-  <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div className="text-center mb-12">
-      <h2 className="text-2xl sm:text-3xl lg:text-4xl font-playfair font-bold text-chocolate mb-6">
-        {cityName} Business Landscape
-      </h2>
-      <p className="text-lg sm:text-xl text-chocolate/70 leading-relaxed max-w-3xl mx-auto">
-        {cityName} is a {businessTypeDescription} offering vending opportunities across multiple thriving industries.
-      </p>
-    </div>
-    
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {/* Industry Cards - Use Heroicons */}
-      <div className="bg-cream rounded-xl p-6 text-center">
-        <div className="w-16 h-16 bg-navy/10 rounded-full flex items-center justify-center mx-auto mb-4">
-          <BuildingOfficeIcon className="w-8 h-8 text-navy" />
-        </div>
-        <h3 className="text-xl font-semibold text-chocolate mb-3">Healthcare</h3>
-        <p className="text-stone text-sm">
-          Hospitals, medical centers, and healthcare facilities with 24/7 operations.
-        </p>
-      </div>
-      
-      {/* Add 5 more industry cards with different icons */}
-    </div>
-  </div>
-</div>
-```
-
-### **4. 🔥 HOT LEADS SECTION**
-```tsx
-{/* Hot Leads Section */}
-<div className="bg-cream py-16 sm:py-24">
-  <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div className="text-center mb-12">
-      <h2 className="text-2xl sm:text-3xl lg:text-4xl font-playfair font-bold text-chocolate mb-6">
-        Hot Location Leads
-      </h2>
-      <p className="text-lg sm:text-xl text-chocolate/70 leading-relaxed max-w-3xl mx-auto">
-        Get immediate access to pre-verified vending machine locations. These are ready-to-place locations that have been personally researched and verified.
-      </p>
-    </div>
-    
-    {/* Use HotLeads component */}
-    <HotLeads />
-  </div>
-</div>
-```
-
-### **5. 📚 VENDING COURSE SECTION**
-```tsx
-{/* Vending Course Section */}
-<div className="bg-white py-16 sm:py-24">
-  <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div className="text-center mb-12">
-      <h2 className="text-2xl sm:text-3xl lg:text-4xl font-playfair font-bold text-chocolate mb-6">
-        Looking for a How-to-Start Guide?
-      </h2>
-      <p className="text-lg sm:text-xl text-chocolate/70 leading-relaxed max-w-3xl mx-auto">
-        Get our comprehensive guide: "How to Start a Vending Machine Company in 2025" with scripts, legal templates, and supplier discounts.
-      </p>
-    </div>
-    
-    {/* Use VendingCourse component */}
-    <VendingCourse />
-  </div>
-</div>
-```
-
-### **6. ❓ FAQ SECTION (Location-Specific)**
-```tsx
-{/* FAQ Section */}
-<div className="bg-cream py-16 sm:py-24">
-  <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div className="text-center mb-12">
-      <h2 className="text-2xl sm:text-3xl lg:text-4xl font-playfair font-bold text-chocolate mb-6">
-        Frequently Asked Questions
-      </h2>
-      <p className="text-lg sm:text-xl text-chocolate/70 leading-relaxed max-w-3xl mx-auto">
-        Get answers to common questions about vending machine opportunities in {cityName}.
-      </p>
-    </div>
-    
-    <div className="max-w-4xl mx-auto space-y-6">
-      {/* FAQ Item 1 */}
-      <div className="bg-white rounded-xl p-6 shadow-sm">
-        <h3 className="text-lg font-semibold text-chocolate mb-3">
-          What types of businesses are best for vending machines in {cityName}?
-        </h3>
-        <p className="text-stone text-sm leading-relaxed">
-          {cityName} offers diverse opportunities including {specificBusinessTypes}. The {businessEnvironment} provides excellent placement opportunities.
-        </p>
-      </div>
-      
-      {/* Add 6-8 more FAQ items specific to the city */}
-    </div>
-  </div>
-</div>
-```
-
----
-
-## 🎨 **REQUIRED IMPORTS & COMPONENTS**
-
-```tsx
-'use client'
-
 import { useState, useEffect } from 'react'
-import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { 
-  CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon,
-  BuildingOfficeIcon, AcademicCapIcon, CpuChipIcon, HeartIcon,
-  ShoppingBagIcon, TruckIcon, BuildingLibraryIcon, UsersIcon,
-  MapPinIcon, CurrencyDollarIcon, SparklesIcon, MusicalNoteIcon
-} from '@heroicons/react/24/solid'
-
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
-import PricingTable from '@/components/PricingTable'
-import HotLeads from '@/components/HotLeads'
-import VendingCourse from '@/components/VendingCourse'
-import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
+import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CpuChipIcon, HeartIcon, ShoppingBagIcon, TruckIcon, BuildingLibraryIcon, CurrencyDollarIcon, SparklesIcon } from '@heroicons/react/24/solid'
 ```
 
----
-
-## 📊 **REQUIRED STATE VARIABLES**
-
+### **3. Required State Variables**
 ```tsx
-export default function {CityName}{StateName}VendingLeadsPage() {
-  // Active users counter
-  const [activeUsers, setActiveUsers] = useState(0)
-  const [currentUserIndex, setCurrentUserIndex] = useState(0)
-  const [usedNames, setUsedNames] = useState<Set<number>>(new Set())
-  
-  // Recent purchases
-  const [currentPurchaseIndex, setCurrentPurchaseIndex] = useState(0)
-  const [usedPurchases, setUsedPurchases] = useState<Set<number>>(new Set())
-  
-  // User names array (expand with 1000+ names)
-  const [userNames, setUserNames] = useState([
-    'Mike from Texas', 'Sarah in Florida', 'John from California',
-    // ... expand to 1000+ names
-  ])
-  
-  // Recent purchases array
-  const [recentPurchases, setRecentPurchases] = useState([
-    { name: 'Mike R.', location: 'Texas', plan: 'Pro Plan', time: '2 minutes ago' },
-    { name: 'Sarah L.', location: 'Florida', plan: 'Start Plan', time: '5 minutes ago' },
-    // ... expand to 10+ purchases
-  ])
-  
-  // City-specific data
-  const cityData = {
-    name: '{CityName}',
-    state: '{StateName}',
-    population: '{Population}',
-    businessCount: '{BusinessCount}',
-    verifiedLocations: '{VerifiedLocations}',
-    vendorCount: '{VendorCount}',
-    // ... other city-specific data
-  }
+// Active users counter
+const [activeUsers, setActiveUsers] = useState(28) // Start at realistic number (22-45)
+const [currentUserIndex, setCurrentUserIndex] = useState(0)
+const [usedNames, setUsedNames] = useState(new Set())
+const [currentPurchaseIndex, setCurrentPurchaseIndex] = useState(0)
+const [usedPurchases, setUsedPurchases] = useState(new Set())
+
+// City-specific data
+const cityData = {
+  name: 'City Name',
+  state: 'State Name',
+  population: 'XXX,XXX',
+  businesses: 'XX,XXX+',
+  industries: 'X',
+  verifiedLocations: 'XXX+',
+  rating: 'X.X/X',
+  description: 'City-specific description'
+}
 ```
 
----
+### **4. Required useEffect Hooks**
+```tsx
+// Active users counter effect
+useEffect(() => {
+  const interval = setInterval(() => {
+    setActiveUsers(prev => {
+      const change = Math.floor(Math.random() * 3) - 1
+      const newValue = prev + change
+      return Math.max(25, Math.min(42, newValue)) // Adjust range based on city size
+    })
+  }, 4000)
+  return () => clearInterval(interval)
+}, [])
 
-## 🎯 **CONTENT REQUIREMENTS**
+// Smart rotation of user names and recent purchases
+// (Include the smart rotation logic from the template)
+```
 
-### **Minimum Content Standards:**
-- **1,500+ Words**: Substantial, valuable content
-- **City-Specific Everything**: No generic content allowed
-- **Real Business Names**: Actual companies and facilities
-- **Local Statistics**: Population, business counts, economic data
-- **Industry-Specific Icons**: Use appropriate Heroicons for each industry
-- **Location-Specific FAQs**: Questions about vending in that specific city
+### **5. Required Components (In Order)**
+1. **Breadcrumb Navigation** - Home → Vending Leads → State → City
+2. **Hero Section** - With active users counter, recent purchases, trust badges
+3. **Pricing Section** - `<PricingTable />` component
+4. **Business Landscape** - 6 industry cards with Heroicons (NO EMOJIS)
+5. **Hot Leads Section** - `<HotLeads />` component
+6. **Vending Course Section** - `<VendingCourse />` component
+7. **FAQ Section** - 8 city-specific questions
+8. **Mobile Recent Purchase Notification** - For mobile users
 
-### **Content Uniqueness Rules:**
-- **NO Duplicate Content**: Each city must have completely different text
-- **Local Keywords**: City-specific business terms and locations
-- **Unique Insights**: Different data, statistics, and opportunities
-- **Local Business Names**: Real companies and facilities in that city
+### **6. Business Landscape Requirements**
+```tsx
+// MUST use Heroicons, NOT emojis
+{[
+  {
+    title: 'Healthcare',
+    description: 'Description with city-specific details',
+    icon: BuildingOfficeIcon, // NOT 🏥
+    color: 'text-blue-600',
+    bgColor: 'bg-blue-50'
+  },
+  // ... other industries
+].map((industry, index) => (
+  <div className={`${industry.bgColor} p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow`}>
+    <div className={`${industry.color} mb-4`}>
+      <industry.icon className="w-12 h-12" />
+    </div>
+    <h3 className="text-xl font-semibold text-charcoal mb-3">{industry.title}</h3>
+    <p className="text-stone leading-relaxed">{industry.description}</p>
+  </div>
+))}
+```
 
-### **SEO Requirements:**
-- **Local Keywords**: Include city name, state, local landmarks
-- **Business Types**: Specific industries and company types
-- **Geographic Terms**: Neighborhoods, districts, areas
-- **Vending Terms**: Location-specific vending opportunities
+## 🚨 **Critical Requirements (Must Follow)**
 
----
+### **Centering Requirements:**
+- ✅ Hero section MUST have `text-center` class
+- ✅ All content containers MUST have `mx-auto` for horizontal centering
+- ✅ Trust badges MUST have `justify-center`
+- ✅ CTA buttons MUST have `justify-center items-center`
+- ✅ Stats grid MUST have `mx-auto`
 
-## 🚀 **IMPLEMENTATION CHECKLIST**
+### **Button Styling Requirements:**
+- ✅ Both CTA buttons MUST be clearly visible
+- ✅ Use `min-w-[200px]` for consistent button width
+- ✅ Use `text-center` on buttons
+- ✅ Use proper brand colors: `bg-navy` and `bg-coral`
+- ✅ Include hover effects and shadows
 
-### **Before Creating Page:**
-- [ ] Research city demographics and business landscape
-- [ ] Identify major industries and employers
-- [ ] Find real business names and facilities
-- [ ] Research local vending regulations
-- [ ] Identify unique city characteristics
+### **Icon Requirements:**
+- ✅ Use Heroicons ONLY, NO emojis
+- ✅ Import all required icons from `@heroicons/react/24/solid`
+- ✅ Use proper icon sizing: `className="w-12 h-12"`
 
-### **During Creation:**
-- [ ] Use exact template structure above
-- [ ] Include all required sections
-- [ ] Use city-specific content only
-- [ ] Include appropriate Heroicons
-- [ ] Add location-specific FAQs
-- [ ] Use PricingTable, HotLeads, VendingCourse components
+### **Counter Requirements:**
+- ✅ Active users counter MUST start at realistic number (22-45)
+- ✅ Counter MUST fluctuate every 4 seconds
+- ✅ Use green background: `bg-green-100 text-green-800`
 
-### **After Creation:**
-- [ ] Verify all links work
-- [ ] Check mobile responsiveness
-- [ ] Validate content uniqueness
-- [ ] Test all interactive elements
-- [ ] Update sitemap.ts
-- [ ] Add to homepage featured cities
+## 📱 **Mobile Considerations:**
+- ✅ Include mobile-specific recent purchase notification
+- ✅ Ensure all sections are mobile-responsive
+- ✅ Test button visibility on mobile devices
 
----
+## 🔍 **Quality Checklist:**
+- [ ] Hero section is perfectly centered
+- [ ] Both CTA buttons are clearly visible
+- [ ] Active users counter starts at realistic number
+- [ ] All emojis replaced with Heroicons
+- [ ] Breadcrumb navigation included
+- [ ] All required components present
+- [ ] FAQ has 8 city-specific questions
+- [ ] Mobile notification included
+- [ ] Proper spacing and typography
+- [ ] Hover effects and animations working
 
-## 📝 **EXAMPLE CITY-SPECIFIC CONTENT**
-
-### **Value Proposition Examples:**
-- **Austin, TX**: "Technology hub with growing healthcare and education sectors"
-- **Miami, FL**: "Tourism destination with international business presence"
-- **Denver, CO**: "Mountain city with healthcare and aerospace industries"
-- **Seattle, WA**: "Tech capital with healthcare and maritime operations"
-
-### **Industry Focus Examples:**
-- **Healthcare**: Hospitals, medical centers, clinics
-- **Technology**: Tech companies, startups, innovation hubs
-- **Education**: Universities, colleges, schools
-- **Manufacturing**: Industrial facilities, factories
-- **Tourism**: Hotels, attractions, entertainment venues
-- **Government**: Federal, state, local offices
-
----
-
-## ⚠️ **CRITICAL REMINDERS**
-
-1. **Hero Section MUST match home page**: Warm-white background, same styling
-2. **Pricing Section MUST be prominent**: Early in page flow, after hero
-3. **NO Generic Content**: Everything must be city-specific
-4. **Use Required Components**: PricingTable, HotLeads, VendingCourse
-5. **Include All Sections**: Hero, Pricing, Business Landscape, Hot Leads, Course, FAQ
-6. **Mobile Responsive**: Test on all device sizes
-7. **SEO Optimized**: Local keywords, unique content, proper structure
-
----
-
-**This template ensures every new city page meets the Mansfield, Texas excellence standard and provides comprehensive, valuable content for each specific location.** 🎯
+This template ensures consistency across all city pages and prevents the centering and button visibility issues we just fixed.

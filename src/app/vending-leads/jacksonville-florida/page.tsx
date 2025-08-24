@@ -1,623 +1,546 @@
 'use client'
 
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import { motion } from 'framer-motion'
+import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CpuChipIcon, HeartIcon, ShoppingBagIcon, TruckIcon, BuildingLibraryIcon, CurrencyDollarIcon, SparklesIcon } from '@heroicons/react/24/solid'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
-import { useState, useEffect } from 'react'
-import { motion } from 'framer-motion'
-import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon } from '@heroicons/react/24/solid'
 
-export default function JacksonvilleFloridaVendingLeadsPage() {
-  const [activeUsers, setActiveUsers] = useState(0)
-  const [userNames, setUserNames] = useState([
-    'Mike from Jacksonville', 'Sarah in St. Augustine', 'David from Orange Park', 'Lisa in Neptune Beach',
-    'Tom from Atlantic Beach', 'Jennifer in Mandarin', 'Robert from Riverside', 'Amanda in San Marco',
-    'Chris in Arlington', 'Maria in Southside', 'James in Westside', 'Emily in Northside'
-  ])
+export default function AuroraColoradoColoradoVendingLeadsPage() {
+  // City and state display names
+  const cityDisplayName = 'Jacksonville';
+  const stateDisplayName = 'Florida';
+  
+  // City-specific data
+  const cityData = {
+  'name': 'Jacksonville',
+  'state': 'Florida',
+  'population': '50K-100K',
+  'businesses': '5K-10K',
+  'industries': '8-12',
+  'verifiedLocations': '100-200',
+  'rating': '4.8/5',
+  'description': 'Thriving business community in Florida'
+};
+  
+  // Active users counter
+  const [activeUsers, setActiveUsers] = useState(28)
   const [currentUserIndex, setCurrentUserIndex] = useState(0)
+  const [usedNames, setUsedNames] = useState(new Set())
 
-  // Fluctuating active users counter
+  // User names for active users counter
+  const [userNames, setUserNames] = useState([
+    'Mike from Jacksonville', 'Sarah in Downtown', 'David in Jacksonville', 'Lisa in Jacksonville',
+    'Tom in Jacksonville', 'Jennifer in Jacksonville', 'Robert in Jacksonville', 'Amanda in Jacksonville',
+    'Chris in Jacksonville', 'Maria in Jacksonville', 'James in Jacksonville', 'Emily in Jacksonville'
+  ])
+
+  // Active users counter effect
   useEffect(() => {
-    const updateActiveUsers = () => {
-      const baseUsers = 6
-      const fluctuation = Math.floor(Math.random() * 4) + 1
-      setActiveUsers(baseUsers + fluctuation)
-    }
-
     const interval = setInterval(() => {
-      updateActiveUsers()
-    }, Math.random() * 2000 + 2000)
-
-    updateActiveUsers()
+      setActiveUsers(prev => {
+        const change = Math.floor(Math.random() * 3) - 1
+        const newValue = prev + change
+        return Math.max(25, Math.min(42, newValue))
+      })
+    }, 4000)
     return () => clearInterval(interval)
   }, [])
 
-  // Rotating user names
+  // Smart rotation of user names
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentUserIndex(prev => (prev + 1) % userNames.length)
-    }, 3000)
-
+      setCurrentUserIndex(prev => {
+        if (usedNames.size > userNames.length * 0.8) {
+          setUsedNames(new Set())
+        }
+        let attempts = 0
+        let nextIndex = prev
+        while (attempts < 50) {
+          nextIndex = (nextIndex + 1) % userNames.length
+          if (!usedNames.has(nextIndex)) {
+            setUsedNames(prev => new Set([...prev, nextIndex]))
+            return nextIndex
+          }
+          attempts++
+        }
+        const randomIndex = Math.floor(Math.random() * userNames.length)
+        setUsedNames(prev => new Set([...prev, randomIndex]))
+        return randomIndex
+      })
+    }, 5000)
     return () => clearInterval(interval)
-  }, [userNames.length])
+  }, [userNames.length, usedNames])
 
   return (
     <>
       <Header />
       
       <div className="min-h-screen bg-warm-white">
-        {/* Enhanced Hero Section - Jacksonville-Specific */}
-        <div className="bg-warm-white py-16 sm:py-24 lg:py-32">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center">
-              {/* Active Users Counter Pill */}
-              <motion.div
+        {/* Breadcrumb Navigation */}
+        <nav className="bg-white border-b border-gray-200 py-3">
+          <div className="container mx-auto px-4">
+            <div className="flex items-center space-x-2 text-sm text-stone">
+              <Link href="/" className="hover:text-navy transition-colors">
+                Home
+              </Link>
+              <span>/</span>
+              <Link href="/vending-leads" className="hover:text-navy transition-colors">
+                Vending Leads
+              </Link>
+              <span>/</span>
+              <Link href={`/vending-leads/${stateDisplayName.toLowerCase().replace(/s+/g, '-')}`} className="hover:text-navy transition-colors">
+                {stateDisplayName}
+              </Link>
+              <span>/</span>
+              <span className="text-charcoal font-medium">{cityDisplayName}</span>
+            </div>
+          </div>
+        </nav>
+
+        {/* Hero Section */}
+        <section className="relative py-20 bg-white overflow-hidden">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto text-center">
+              {/* Active Users Counter */}
+              <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
-                className="mb-8 p-4 bg-cream/50 backdrop-blur-sm rounded-2xl border border-gray-200 shadow-sm max-w-md mx-auto"
+                className="mt-6 sm:mt-8 p-4 bg-cream/50 backdrop-blur-sm rounded-2xl border border-gray-200 shadow-sm max-w-md mx-auto mb-6"
               >
                 <div className="flex items-center justify-center gap-3">
                   <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
                   <span className="text-sm font-medium text-chocolate">
-                    <span className="font-bold text-coral">{activeUsers}</span> Jacksonville vendors are choosing plans right now
+                    <span className="font-bold text-coral">{activeUsers}</span> people are choosing plans right now
                   </span>
-                </div>
-                <div
-                  key={currentUserIndex}
-                  className="mt-2 text-xs text-chocolate/70"
-                >
-                  Including {userNames[currentUserIndex]}
-                </div>
-              </motion.div>
+                </div></motion.div>
 
-              <motion.h1
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                className="text-4xl sm:text-5xl lg:text-6xl font-playfair font-bold tracking-tight text-charcoal leading-tight"
-              >
-                Vending Machine Locations<br />in Jacksonville, Florida
-              </motion.h1>
-              
-              <motion.p
+              {/* Main Headline */}
+              <motion.h1 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
-                className="mt-6 sm:mt-8 text-lg sm:text-xl leading-8 text-stone max-w-4xl mx-auto"
+                className="text-4xl md:text-6xl font-playfair font-bold text-charcoal mb-6 leading-tight"
               >
-                Get pre-qualified vending machine locations in Jacksonville's thriving logistics and healthcare economy. 
-                Access verified businesses with detailed contact information and placement opportunities.
-              </motion.p>
+                Vending Machine Locations in{' '}
+                <span className="text-navy">{cityDisplayName}, {stateDisplayName}</span>
+              </motion.h1>
 
-              {/* Trust Signals - Jacksonville-Specific */}
-              <motion.div
+              {/* City-Specific Value Proposition */}
+              <motion.p 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.6 }}
-                className="mt-8 sm:mt-10"
+                className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                <div className="grid grid-cols-2 gap-4 max-w-md mx-auto">
-                  <div className="bg-white/60 backdrop-blur-sm rounded-lg p-4 border border-gray-200/50">
-                    <div className="flex items-center gap-3">
-                      <CheckBadgeIcon className="h-5 w-5 text-green-600" />
-                      <span className="text-sm font-medium text-charcoal">Verified Jacksonville Locations</span>
-                    </div>
+                Get pre-qualified vending machine locations in Aurora's diverse and growing business economy. 
+                Access verified businesses with detailed contact information and placement opportunities.
+              </motion.p>
+
+              {/* Trust Signals */}
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.8 }}
+                className="mt-6 sm:mt-8 grid grid-cols-2 gap-4 max-w-md mx-auto mb-8"
+              >
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <CheckBadgeIcon className="h-5 w-5 text-green-600" />
+                    <span className="text-sm font-medium text-chocolate">Verified Locations</span>
                   </div>
-                  <div className="bg-white/60 backdrop-blur-sm rounded-lg p-4 border border-gray-200/50">
-                    <div className="flex items-center gap-3">
-                      <StarIcon className="h-5 w-5 text-yellow-500" />
-                      <span className="text-sm font-medium text-charcoal">4.8/5 Jacksonville Rating</span>
-                    </div>
+                </div>
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <StarIcon className="h-5 w-5 text-yellow-500" />
+                    <span className="text-sm font-medium text-chocolate">4.8/5 Rating</span>
                   </div>
-                  <div className="bg-white/60 backdrop-blur-sm rounded-lg p-4 border border-gray-200/50">
-                    <div className="flex items-center gap-3">
-                      <ShieldCheckIcon className="h-5 w-5 text-blue-600" />
-                      <span className="text-sm font-medium text-charcoal">Secure & Reliable</span>
-                    </div>
+                </div>
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <ShieldCheckIcon className="h-5 w-5 text-blue-600" />
+                    <span className="text-sm font-medium text-chocolate">Secure & Reliable</span>
                   </div>
-                  <div className="bg-white/60 backdrop-blur-sm rounded-lg p-4 border border-gray-200/50">
-                    <div className="flex items-center gap-3">
-                      <ClockIcon className="h-5 w-5 text-purple-600" />
-                      <span className="text-sm font-medium text-charcoal">Quality Research</span>
-                    </div>
+                </div>
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <ClockIcon className="h-5 w-5 text-purple-600" />
+                    <span className="text-sm font-medium text-chocolate">Quality Research</span>
                   </div>
                 </div>
               </motion.div>
 
               {/* CTA Buttons */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.8 }}
-                className="mt-8 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 px-4 sm:px-0"
-              >
-                <Link
-                  href="#pricing"
-                  className="w-full sm:w-auto btn-primary text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-lg"
-                >
-                  Get Jacksonville Leads
-                </Link>
-                <Link
-                  href="#jacksonville-content"
-                  className="w-full sm:w-auto text-base sm:text-lg font-semibold leading-6 text-charcoal hover:text-navy transition-colors text-center py-3 sm:py-4"
-                >
-                  Learn About Jacksonville <span aria-hidden="true">→</span>
-                </Link>
-              </motion.div>
-
-              {/* Social Proof */}
-              <motion.div
+              <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 1.0 }}
-                className="mt-8 sm:mt-10 px-4 sm:px-0"
+                className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 mb-8"
               >
-                <div className="flex items-center justify-center gap-3 mb-3">
-                  <div className="flex -space-x-2">
-                    <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gradient-to-br from-navy to-charcoal border-2 border-white shadow-sm"></div>
-                    <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gradient-to-br from-navy to-charcoal border-2 border-white shadow-sm"></div>
-                    <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gradient-to-br from-navy to-charcoal border-2 border-white shadow-sm"></div>
-                    <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gradient-to-br from-navy to-charcoal border-2 border-white shadow-sm"></div>
-                    <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gradient-to-br from-navy to-charcoal border-2 border-white shadow-sm"></div>
-                  </div>
-                  <span className="text-sm sm:text-base font-medium text-charcoal">Join 2,100+ vending operators</span>
-                </div>
-                <div className="text-center">
-                  <span className="text-xs sm:text-sm text-stone px-4 sm:px-0">
-                    "Found my best Jacksonville location in 2 days!" - <span className="font-semibold">Mike R., Jacksonville</span>
-                  </span>
-                </div>
+                <Link 
+                  href="/pricing"
+                  className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors"
+                >
+                  Get Started
+                </Link>
+                <Link 
+                  href="/hot-leads"
+                  className="w-full sm:w-auto bg-transparent text-chocolate border-2 border-chocolate px-8 py-3 rounded-lg font-semibold hover:bg-chocolate hover:text-white transition-colors"
+                >
+                  View Hot Leads →
+                </Link>
               </motion.div>
 
-              {/* Jacksonville-Specific Stats */}
-              <motion.div
+{/* Social Proof Stats */}
+              <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 1.2 }}
-                className="mt-8 sm:mt-10 grid grid-cols-3 gap-6 max-w-md mx-auto"
+                className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto"
               >
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-bronze">140+</div>
-                  <div className="text-sm text-stone">Jacksonville Locations</div>
+                  <div className="text-2xl font-bold text-navy">{cityData.population}</div>
+                  <div className="text-sm text-stone">Population</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-bronze">12+</div>
-                  <div className="text-sm text-stone">Deals Closed</div>
+                  <div className="text-2xl font-bold text-navy">{cityData.businesses}</div>
+                  <div className="text-sm text-stone">Businesses</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-bronze">4.8★</div>
-                  <div className="text-sm text-stone">Jacksonville Rating</div>
+                  <div className="text-2xl font-bold text-navy">{cityData.industries}</div>
+                  <div className="text-sm text-stone">Industries</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-navy">{cityData.verifiedLocations}</div>
+                  <div className="text-sm text-stone">Verified Locations</div>
                 </div>
               </motion.div>
             </div>
           </div>
-        </div>
+        </section>
 
-        {/* Pricing Section - Prominent and Early */}
-        <div id="pricing" className="bg-white py-16 sm:py-20 lg:py-24">
+        {/* Pricing Section */}
+        <section className="py-16 bg-warm-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="mx-auto max-w-4xl text-center mb-12 sm:mb-16">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-playfair font-bold tracking-tight text-chocolate mb-6">
-                Get Jacksonville Vending Machine Leads
-              </h2>
-              <p className="text-lg sm:text-xl text-chocolate/70 leading-relaxed max-w-3xl mx-auto">
-                Access our comprehensive database of qualified Jacksonville vending machine locations with flexible pricing options. 
-                No long-term contracts, just results that help you grow your Jacksonville vending business.
-              </p>
+            <div className="text-center mb-12">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
+              >
+                Get Access to Qualified Vending Machine Locations in {cityDisplayName}
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-lg text-stone max-w-3xl mx-auto"
+              >
+                Choose the perfect plan for your vending machine business needs and start accessing qualified locations today.
+              </motion.p>
             </div>
             <PricingTable />
           </div>
-        </div>
+        </section>
 
-        {/* Comprehensive Jacksonville Content Section */}
-        <div id="jacksonville-content" className="py-16 sm:py-24 bg-warm-white">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-playfair font-bold text-chocolate mb-6">
-                Why Jacksonville is Perfect for Vending Machines
-              </h2>
-              <p className="text-lg sm:text-xl text-chocolate/70 max-w-4xl mx-auto leading-relaxed">
-                Jacksonville's strategic location as a major logistics hub and growing healthcare center creates 
-                exceptional vending machine opportunities across diverse business sectors.
-              </p>
-            </div>
-
-            {/* Jacksonville Business Landscape */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-              <div>
-                <h3 className="text-2xl sm:text-3xl font-playfair font-bold text-chocolate mb-6">
-                  Jacksonville's Business Landscape
-                </h3>
-                <div className="space-y-4 text-chocolate/80">
-                  <p>
-                    Jacksonville is home to major logistics companies including CSX Transportation, Crowley Maritime, 
-                    and JAXPORT, creating a massive workforce of logistics professionals who frequent vending machines 
-                    throughout their shifts.
-                  </p>
-                  <p>
-                    The healthcare sector includes major facilities like Mayo Clinic Jacksonville, Baptist Health, 
-                    and UF Health Jacksonville, offering high-traffic areas perfect for vending machine placement 
-                    with 24/7 operations.
-                  </p>
-                  <p>
-                    Jacksonville's military presence includes Naval Air Station Jacksonville and Naval Station Mayport, 
-                    providing consistent demand for snacks and beverages across multiple military facilities and 
-                    surrounding support businesses.
-                  </p>
-                </div>
-              </div>
-
-              <div>
-                <h4 className="text-xl sm:text-2xl font-playfair font-bold text-chocolate mb-6">
-                  Vending Machine Opportunities in Jacksonville
-                </h4>
-                <div className="space-y-4">
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-coral rounded-full mt-2 flex-shrink-0"></div>
-                    <div>
-                      <h5 className="font-semibold text-chocolate mb-1">Logistics & Transportation</h5>
-                      <p className="text-sm text-chocolate/70">Warehouses, distribution centers, and port facilities</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-coral rounded-full mt-2 flex-shrink-0"></div>
-                    <div>
-                      <h5 className="font-semibold text-chocolate mb-1">Healthcare Facilities</h5>
-                      <p className="text-sm text-chocolate/70">Hospitals, medical centers, and clinics</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-coral rounded-full mt-2 flex-shrink-0"></div>
-                    <div>
-                      <h5 className="font-semibold text-chocolate mb-1">Military Bases</h5>
-                      <p className="text-sm text-chocolate/70">Naval stations and military support facilities</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-coral rounded-full mt-2 flex-shrink-0"></div>
-                    <div>
-                      <h5 className="font-semibold text-chocolate mb-1">Manufacturing</h5>
-                      <p className="text-sm text-chocolate/70">Industrial facilities and manufacturing plants</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Jacksonville Statistics Grid */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
-              <div className="text-center p-6 bg-cream/30 rounded-xl">
-                <div className="w-12 h-12 bg-navy rounded-full flex items-center justify-center mx-auto mb-4">
-                  <UsersIcon className="w-6 h-6 text-white" />
-                </div>
-                <div className="text-2xl font-bold text-navy">950,000+</div>
-                <div className="text-sm text-chocolate/70">Population</div>
-              </div>
-              <div className="text-center p-6 bg-cream/30 rounded-xl">
-                <div className="w-12 h-12 bg-navy rounded-full flex items-center justify-center mx-auto mb-4">
-                  <BuildingOfficeIcon className="w-6 h-6 text-white" />
-                </div>
-                <div className="text-2xl font-bold text-navy">2,500+</div>
-                <div className="text-sm text-chocolate/70">Logistics Companies</div>
-              </div>
-              <div className="text-center p-6 bg-cream/30 rounded-xl">
-                <div className="w-12 h-12 bg-navy rounded-full flex items-center justify-center mx-auto mb-4">
-                  <AcademicCapIcon className="w-6 h-6 text-white" />
-                </div>
-                <div className="text-2xl font-bold text-navy">15+</div>
-                <div className="text-sm text-chocolate/70">Major Hospitals</div>
-              </div>
-              <div className="text-center p-6 bg-cream/30 rounded-xl">
-                <div className="w-12 h-12 bg-navy rounded-full flex items-center justify-center mx-auto mb-4">
-                  <MapPinIcon className="w-6 h-6 text-white" />
-                </div>
-                <div className="text-2xl font-bold text-navy">2</div>
-                <div className="text-sm text-chocolate/70">Naval Bases</div>
-              </div>
-            </div>
-
-            {/* Jacksonville Business Districts */}
-            <div className="mb-16">
-              <h3 className="text-2xl sm:text-3xl font-playfair font-bold text-chocolate mb-8 text-center">
-                Jacksonville's Premier Business Districts
-              </h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-                  <h4 className="text-lg font-semibold text-chocolate mb-3">Downtown Jacksonville</h4>
-                  <p className="text-stone text-sm mb-3">
-                    Financial district with major corporations, government buildings, and high-rise offices.
-                  </p>
-                  <div className="text-xs text-chocolate/60">180+ business locations</div>
-                </div>
-                <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-                  <h4 className="text-lg font-semibold text-chocolate mb-3">Southside</h4>
-                  <p className="text-stone text-sm mb-3">
-                    Healthcare and medical district with major hospitals and medical centers.
-                  </p>
-                  <div className="text-xs text-chocolate/60">120+ medical facilities</div>
-                </div>
-                <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-                  <h4 className="text-lg font-semibold text-chocolate mb-3">Westside</h4>
-                  <p className="text-stone text-sm mb-3">
-                    Industrial and manufacturing hub with logistics companies and warehouses.
-                  </p>
-                  <div className="text-xs text-chocolate/60">200+ industrial locations</div>
-                </div>
-                <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-                  <h4 className="text-lg font-semibold text-chocolate mb-3">Arlington</h4>
-                  <p className="text-stone text-sm mb-3">
-                    Mixed-use district with retail, office, and residential developments.
-                  </p>
-                  <div className="text-xs text-chocolate/60">150+ business locations</div>
-                </div>
-                <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-                  <h4 className="text-lg font-semibold text-chocolate mb-3">Mandarin</h4>
-                  <p className="text-stone text-sm mb-3">
-                    Suburban business district with retail centers and professional offices.
-                  </p>
-                  <div className="text-xs text-chocolate/60">100+ retail locations</div>
-                </div>
-                <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-                  <h4 className="text-lg font-semibold text-chocolate mb-3">Beach Communities</h4>
-                  <p className="text-stone text-sm mb-3">
-                    Atlantic Beach, Neptune Beach, and Jacksonville Beach with tourism businesses.
-                  </p>
-                  <div className="text-xs text-chocolate/60">80+ tourism locations</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Comprehensive Jacksonville FAQ Section */}
-        <div className="py-16 sm:py-24 bg-warm-white">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-playfair font-bold text-chocolate mb-6">
-                Jacksonville Vending Machine FAQ
-              </h2>
-              <p className="text-lg sm:text-xl text-chocolate/70 max-w-4xl mx-auto">
-                Get answers to common questions about vending machine opportunities in Jacksonville, Florida
-              </p>
-            </div>
-            
-            <div className="max-w-5xl mx-auto space-y-6">
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-                <h3 className="text-lg font-semibold text-chocolate mb-3">
-                  What types of businesses are included in Jacksonville vending leads?
-                </h3>
-                <p className="text-stone">
-                  Our Jacksonville leads include logistics companies (CSX, Crowley Maritime), healthcare facilities (Mayo Clinic, Baptist Health), 
-                  military bases (NAS Jacksonville, NS Mayport), manufacturing plants, retail centers, and professional offices. 
-                  Each location is pre-screened for vending machine compatibility and foot traffic potential.
-                </p>
-              </div>
-              
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-                <h3 className="text-lg font-semibold text-chocolate mb-3">
-                  How quickly can I receive Jacksonville vending machine leads?
-                </h3>
-                <p className="text-stone">
-                  Jacksonville vending leads are typically delivered within 3-5 business days after purchase. We provide comprehensive 
-                  research including business details, contact information, decision-maker names, and specific placement recommendations 
-                  for each Jacksonville location.
-                </p>
-              </div>
-              
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-                <h3 className="text-lg font-semibold text-chocolate mb-3">
-                  Are the Jacksonville locations verified and current?
-                </h3>
-                <p className="text-stone">
-                  Yes, all Jacksonville locations are verified within the last 30 days. We regularly update our database to ensure 
-                  accuracy and provide the most current business information, including recent business changes and new opportunities 
-                  in Jacksonville's rapidly growing logistics and healthcare sectors.
-                </p>
-              </div>
-              
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-                <h3 className="text-lg font-semibold text-chocolate mb-3">
-                  What areas of Jacksonville are covered in the leads?
-                </h3>
-                <p className="text-stone">
-                  Our Jacksonville coverage includes Downtown, Southside, Westside, Arlington, Mandarin, Beach Communities, and surrounding 
-                  suburbs within a 25-mile radius. We cover major business districts like the Medical District, Industrial Corridor, 
-                  and all major employment centers.
-                </p>
-              </div>
-
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-                <h3 className="text-lg font-semibold text-chocolate mb-3">
-                  What are the best vending machine types for Jacksonville businesses?
-                </h3>
-                <p className="text-stone">
-                  For Jacksonville logistics companies, high-capacity snack and beverage machines work best. Healthcare facilities prefer 
-                  healthy snack options and coffee machines. Military bases need durable machines with extended hours. We provide 
-                  specific recommendations for each Jacksonville location based on business type and employee demographics.
-                </p>
-              </div>
-
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-                <h3 className="text-lg font-semibold text-chocolate mb-3">
-                  How does Jacksonville's logistics economy affect vending opportunities?
-                </h3>
-                <p className="text-stone">
-                  Jacksonville's booming logistics economy creates exceptional vending opportunities. Logistics companies have high employee 
-                  counts, 24/7 operations, and employees who frequently use vending machines during long shifts. Many logistics companies 
-                  also have multiple facilities across Jacksonville, providing multiple placement opportunities.
-                </p>
-              </div>
-
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-                <h3 className="text-lg font-semibold text-chocolate mb-3">
-                  What are the peak hours for vending machines in Jacksonville?
-                </h3>
-                <p className="text-stone">
-                  In Jacksonville, peak vending hours are typically 6-8 AM (shift start), 11:30 AM-1:30 PM (lunch), 
-                  2-4 PM (afternoon breaks), and 6-8 PM (shift end). Logistics companies often have 24/7 operations, while 
-                  healthcare facilities have consistent demand throughout the day and night.
-                </p>
-              </div>
-
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-                <h3 className="text-lg font-semibold text-chocolate mb-3">
-                  Are there any Jacksonville-specific regulations for vending machines?
-                </h3>
-                <p className="text-stone">
-                  Jacksonville has specific health codes for food vending machines and requires business licenses for commercial 
-                  operations. We provide guidance on Jacksonville's specific requirements and help ensure compliance with local 
-                  regulations for each placement location.
-                </p>
-              </div>
-
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-                <h3 className="text-lg font-semibold text-chocolate mb-3">
-                  How do I approach Jacksonville businesses for vending machine placement?
-                </h3>
-                <p className="text-stone">
-                  Our Jacksonville leads include specific contact information and approach strategies for each business type. 
-                  Logistics companies prefer email communication, healthcare facilities require formal proposals, and military 
-                  bases have specific procurement processes. We provide tailored scripts for each Jacksonville business type.
-                </p>
-              </div>
-
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-                <h3 className="text-lg font-semibold text-chocolate mb-3">
-                  What are the average commission rates in Jacksonville?
-                </h3>
-                <p className="text-stone">
-                  Jacksonville commission rates vary by business type: logistics companies typically offer 15-25%, healthcare 
-                  facilities 20-30%, retail locations 10-20%, and manufacturing plants 15-25%. Our Jacksonville leads 
-                  include current commission information and negotiation tips for each location.
-                </p>
-              </div>
-
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-                <h3 className="text-lg font-semibold text-chocolate mb-3">
-                  How does Jacksonville's population growth affect vending opportunities?
-                </h3>
-                <p className="text-stone">
-                  Jacksonville's rapid population growth (2.5% annually) creates expanding vending opportunities. New businesses 
-                  are constantly opening, existing companies are expanding, and new industrial facilities are being constructed. 
-                  This growth ensures a steady supply of new vending machine placement opportunities in Jacksonville.
-                </p>
-              </div>
-
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-                <h3 className="text-lg font-semibold text-chocolate mb-3">
-                  What seasonal factors affect Jacksonville vending machine sales?
-                </h3>
-                <p className="text-stone">
-                  Jacksonville's climate affects vending patterns: summer (June-September) increases beverage sales, winter 
-                  months boost hot beverage demand, and tourism locations see seasonal variations with visitor patterns. 
-                  We provide seasonal adjustment recommendations for each Jacksonville location type.
-                </p>
-              </div>
-
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-                <h3 className="text-lg font-semibold text-chocolate mb-3">
-                  How do I handle maintenance and restocking for Jacksonville locations?
-                </h3>
-                <p className="text-stone">
-                  Jacksonville's business density allows for efficient route planning. Most locations require weekly restocking 
-                  and monthly maintenance. We provide contact information for local suppliers and maintenance services, 
-                  plus recommendations for optimal service schedules based on each Jacksonville location's usage patterns.
-                </p>
-              </div>
-
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-                <h3 className="text-lg font-semibold text-chocolate mb-3">
-                  What are the best strategies for expanding in Jacksonville?
-                </h3>
-                <p className="text-stone">
-                  Start with established business districts (Downtown, Southside) then expand to growing areas 
-                  (Westside, Arlington). Focus on business types where you have success, and use our Jacksonville 
-                  leads to identify expansion opportunities within your proven business model.
-                </p>
-              </div>
-
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-                <h3 className="text-lg font-semibold text-chocolate mb-3">
-                  How do Jacksonville business trends affect vending machine placement?
-                </h3>
-                <p className="text-stone">
-                  Jacksonville's growth in e-commerce logistics has created new opportunities in warehouse and distribution 
-                  facilities. The expanding healthcare sector provides stable, long-term placement opportunities. 
-                  We track these trends and update our Jacksonville leads accordingly to reflect current business realities.
-                </p>
-              </div>
-
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-                <h3 className="text-lg font-semibold text-chocolate mb-3">
-                  What support do you provide for Jacksonville vending operators?
-                </h3>
-                <p className="text-stone">
-                  Beyond our Jacksonville leads, we provide business guidance, cold call scripts, supplier contacts, 
-                  and ongoing support. We help you understand Jacksonville's unique business culture, navigate local 
-                  regulations, and maximize your success in the Jacksonville vending machine market.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Hot Leads Section */}
-        <HotLeads />
-
-        {/* Vending Course Section */}
-        <VendingCourse />
-
-        {/* Related Jacksonville Locations */}
-        <div className="bg-warm-white py-16">
+        {/* Business Landscape */}
+        <section className="py-16 bg-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-2xl sm:text-3xl font-playfair font-bold text-chocolate mb-4">
-                Other Florida Vending Locations
-              </h2>
-              <p className="text-lg text-chocolate/70 max-w-2xl mx-auto">
-                Explore vending machine leads in other major Florida cities
-              </p>
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
+              >
+                Business Landscape in {cityDisplayName}
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-lg text-stone max-w-3xl mx-auto"
+              >
+                Discover the diverse industries and business opportunities that make {cityDisplayName} an ideal market for vending machines.
+              </motion.p>
             </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {[
-                { name: 'Miami', slug: 'miami-florida', count: '180+ leads' },
-                { name: 'Orlando', slug: 'orlando-florida', count: '150+ leads' },
-                { name: 'Tampa', slug: 'tampa-florida', count: '160+ leads' },
-              ].map((city) => (
-                <Link
-                  key={city.slug}
-                  href={`/vending-leads/${city.slug}`}
-                  className="bg-white rounded-xl p-6 border border-gray-200 hover:border-navy/30 transition-colors hover:shadow-md"
-                >
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="w-6 h-6 bg-navy rounded-full flex items-center justify-center">
-                      <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                      </svg>
-                    </div>
-                    <h3 className="text-lg font-bold text-chocolate">{city.name}, FL</h3>
-                  </div>
-                  <p className="text-stone mb-4">{city.count} available</p>
-                  <div className="text-navy hover:text-navy-light font-medium">
-                    View {city.name} vending leads →
-                  </div>
-                </Link>
-              ))}
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              
+              <motion.div
+                key="Healthcare"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0 }}
+                viewport={{ once: true }}
+                className="bg-blue-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-blue-600 mb-4">
+                  <BuildingOfficeIcon className="w-12 h-12" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
+                <p className="text-stone leading-relaxed">Aurora Colorado features modern healthcare facilities including hospitals, clinics, and medical offices with high foot traffic and stable operations.</p>
+              </motion.div>
+              <motion.div
+                key="Education"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.1 }}
+                viewport={{ once: true }}
+                className="bg-green-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-green-600 mb-4">
+                  <AcademicCapIcon className="w-12 h-12" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
+                <p className="text-stone leading-relaxed">Educational institutions in Aurora Colorado provide consistent student populations and staff, creating ideal vending machine opportunities.</p>
+              </motion.div>
+              <motion.div
+                key="Manufacturing"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="bg-purple-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-purple-600 mb-4">
+                  <CpuChipIcon className="w-12 h-12" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
+                <p className="text-stone leading-relaxed">Aurora Colorado's manufacturing sector offers large employee bases and extended operating hours, perfect for vending machine placement.</p>
+              </motion.div>
+              <motion.div
+                key="Retail"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.30000000000000004 }}
+                viewport={{ once: true }}
+                className="bg-orange-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-orange-600 mb-4">
+                  <ShoppingBagIcon className="w-12 h-12" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
+                <p className="text-stone leading-relaxed">Retail locations throughout Aurora Colorado provide high customer traffic and diverse demographics for vending machine success.</p>
+              </motion.div>
+              <motion.div
+                key="Office Buildings"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                viewport={{ once: true }}
+                className="bg-indigo-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-indigo-600 mb-4">
+                  <BuildingOfficeIcon className="w-12 h-12" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
+                <p className="text-stone leading-relaxed">Professional office spaces in Aurora Colorado offer captive audiences during business hours with consistent daily traffic.</p>
+              </motion.div>
+              <motion.div
+                key="Transportation"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.5 }}
+                viewport={{ once: true }}
+                className="bg-red-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-red-600 mb-4">
+                  <TruckIcon className="w-12 h-12" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
+                <p className="text-stone leading-relaxed">Aurora Colorado's transportation hubs including airports, bus stations, and transit centers provide high-volume foot traffic.</p>
+              </motion.div>
             </div>
           </div>
-        </div>
-      </div>
+        </section>
 
-      <Footer />
+        {/* Hot Leads Section */}
+        <section className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
+              >
+                One-Time Location Packages for {cityDisplayName}
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-lg text-stone max-w-3xl mx-auto"
+              >
+                Get immediate access to qualified vending machine locations without monthly commitments.
+              </motion.p>
+            </div>
+            <HotLeads />
+          </div>
+        </section>
+
+        {/* Vending Course Section */}
+        <section className="py-16 bg-white">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
+              >
+                Learn the Vending Machine Business
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-lg text-stone max-w-3xl mx-auto"
+              >
+                Master the fundamentals of vending machine operations and maximize your success in {cityDisplayName}.
+              </motion.p>
+            </div>
+            <VendingCourse />
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
+              >
+                Frequently Asked Questions
+              </motion.h2>
+              <motion.p 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-lg text-chocolate/70 leading-relaxed"
+              >
+                Everything you need to know about vending machine opportunities in {cityDisplayName}.
+              </motion.p>
+            </div>
+            
+            <div className="space-y-6">
+              
+              <motion.div
+                key="0"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+              >
+                <h3 className="text-lg font-semibold text-charcoal mb-3">What types of vending machine locations are available in Aurora?</h3>
+                <p className="text-stone leading-relaxed">Aurora offers diverse vending opportunities including healthcare facilities, educational institutions, manufacturing plants, retail locations, office buildings, and transportation hubs. Each location is pre-verified for optimal vending machine success.</p>
+              </motion.div>
+              <motion.div
+                key="1"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.1 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+              >
+                <h3 className="text-lg font-semibold text-charcoal mb-3">How quickly can I get vending machine leads for Aurora?</h3>
+                <p className="text-stone leading-relaxed">Our Aurora vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.</p>
+              </motion.div>
+              <motion.div
+                key="2"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+              >
+                <h3 className="text-lg font-semibold text-charcoal mb-3">What makes Aurora a good market for vending machines?</h3>
+                <p className="text-stone leading-relaxed">Aurora features a strong business community with diverse industries, stable employment, and consistent foot traffic. The city's economic growth and business-friendly environment create ideal conditions for vending machine success.</p>
+              </motion.div>
+              <motion.div
+                key="3"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.30000000000000004 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+              >
+                <h3 className="text-lg font-semibold text-charcoal mb-3">Do you provide ongoing support for Aurora locations?</h3>
+                <p className="text-stone leading-relaxed">Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Aurora.</p>
+              </motion.div>
+              <motion.div
+                key="4"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+              >
+                <h3 className="text-lg font-semibold text-charcoal mb-3">What industries in Aurora are best for vending machines?</h3>
+                <p className="text-stone leading-relaxed">Healthcare, education, manufacturing, retail, office buildings, and transportation sectors in Aurora show the highest potential for vending machine success due to consistent foot traffic and captive audiences.</p>
+              </motion.div>
+              <motion.div
+                key="5"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.5 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+              >
+                <h3 className="text-lg font-semibold text-charcoal mb-3">How do you verify the quality of Aurora vending locations?</h3>
+                <p className="text-stone leading-relaxed">We conduct thorough research on each Aurora location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.</p>
+              </motion.div>
+              <motion.div
+                key="6"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.6000000000000001 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+              >
+                <h3 className="text-lg font-semibold text-charcoal mb-3">Can I get customized vending leads for specific areas of Aurora?</h3>
+                <p className="text-stone leading-relaxed">Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Aurora based on your preferences and target market requirements.</p>
+              </motion.div>
+              <motion.div
+                key="7"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.7000000000000001 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+              >
+                <h3 className="text-lg font-semibold text-charcoal mb-3">What's the typical ROI for vending machines in Aurora?</h3>
+                <p className="text-stone leading-relaxed">Vending machines in Aurora typically show strong ROI due to the city's business density and consistent traffic patterns. Our research shows average payback periods of 12-18 months for well-placed machines.</p>
+              </motion.div>
+            </div>
+          </div>
+        </section>
+
+      </div>
       
-      {/* Zip Code Modal */}
+      <Footer />
       <ZipCodeModalWrapper />
     </>
   )

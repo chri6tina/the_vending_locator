@@ -82,54 +82,6 @@ export default function VendingCourse() {
           </div>
         </div>
 
-        {/* Testimonials Section */}
-        <div className="mt-16 mx-auto max-w-4xl">
-          <div className="text-center mb-12">
-            <h3 className="text-2xl sm:text-3xl font-playfair font-bold text-chocolate mb-4">
-              What Our Users Say
-            </h3>
-            <p className="text-lg text-chocolate/70">
-              Real feedback from vending operators who found success
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Testimonial 1 */}
-            <div className="bg-white rounded-2xl shadow-lg border border-gray-200 p-6">
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-navy rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">
-                  M
-                </div>
-                <div>
-                  <h4 className="font-semibold text-chocolate">Mike R.</h4>
-                  <p className="text-sm text-chocolate/70">Texas</p>
-                </div>
-              </div>
-              <p className="text-stone leading-relaxed">
-                "Found my best location in 3 days! The research was spot-on and the contact details were accurate. 
-                Closed the deal within a week."
-              </p>
-            </div>
-
-            {/* Testimonial 2 */}
-            <div className="bg-white rounded-2xl shadow-lg border border-gray-200 p-6">
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-navy rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">
-                  S
-                </div>
-                <div>
-                  <h4 className="font-semibold text-chocolate">Sarah L.</h4>
-                  <p className="text-sm text-chocolate/70">Florida</p>
-                </div>
-              </div>
-              <p className="text-stone leading-relaxed">
-                "The quality of leads is incredible. Each location was properly vetted and ready for placement. 
-                Saved me weeks of research time."
-              </p>
-            </div>
-          </div>
-        </div>
-
         {/* Final CTA */}
         <div className="mt-16 text-center">
           <div className="bg-gradient-to-r from-navy to-navy-light rounded-2xl p-8 text-white">

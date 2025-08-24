@@ -117,11 +117,11 @@ npm start
 
 All pricing packages include direct Stripe checkout links:
 
-### Subscription Packages
-- **Basic ($19/month)**: [Stripe Link](https://buy.stripe.com/aEU2929ZcfvQ10IdQT)
-- **Pro ($29/month)**: [Stripe Link](https://buy.stripe.com/4gwaFyfjw1F0gZG004)
-- **Start ($129/month)**: [Stripe Link](https://buy.stripe.com/3cs8xq2wKdnI6l24gl)
-- **Gold ($899/month)**: [Stripe Link](https://buy.stripe.com/dR614Y4ESgzU6l25kq)
+### Pricing Packages
+- **Basic ($19)**: [Stripe Link](https://buy.stripe.com/aEU2929ZcfvQ10IdQT)
+- **Pro ($29)**: [Stripe Link](https://buy.stripe.com/4gwaFyfjw1F0gZG004)
+- **Start ($129)**: [Stripe Link](https://buy.stripe.com/3cs8xq2wKdnI6l24gl)
+- **Gold ($899)**: [Stripe Link](https://buy.stripe.com/dR614Y4ESgzU6l25kq)
 
 ### Location Packages
 - **Quick Find ($500)**: [Stripe Link](https://buy.stripe.com/5kQ7sL3JXfie0LDg7J6Na07)

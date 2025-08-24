@@ -62,7 +62,7 @@ export default function ZipCodeModal({ isOpen, onClose, package: selectedPackage
           email: email.trim(),
           zipCode: zipCode.trim(),
           planName: selectedPackage.name,
-          planPrice: selectedPackage.price.replace('$', '').replace('/month', ''),
+          planPrice: selectedPackage.price.replace('$', ''),
           planId: selectedPackage.name.toLowerCase()
         }),
       })
@@ -188,7 +188,7 @@ export default function ZipCodeModal({ isOpen, onClose, package: selectedPackage
                   <div className="text-right">
                     <div className="text-lg sm:text-2xl font-bold text-bronze">{selectedPackage.price}</div>
                     <div className="text-xs text-stone/70">
-                      {selectedPackage.type === 'subscription' ? '/month' : 'one-time'}
+                      one-time
                     </div>
                   </div>
                 </div>

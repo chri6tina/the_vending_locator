@@ -11,7 +11,7 @@ export default function VendingBusinessGuidePage() {
       <Header />
       
       <div className="min-h-screen bg-gradient-to-br from-warm-white via-cream to-warm-white">
-        {/* Hero Section */}
+      {/* Hero Section */}
         <section className="relative py-20 bg-gradient-to-r from-navy to-charcoal text-white overflow-hidden">
           <div className="absolute inset-0 bg-black/20"></div>
           <div className="relative container mx-auto px-4 text-center">
@@ -28,7 +28,7 @@ export default function VendingBusinessGuidePage() {
                 Your complete guide to launching and growing a successful vending machine business
               </p>
             </motion.div>
-          </div>
+              </div>
         </section>
 
         {/* Guide Content */}
@@ -112,19 +112,19 @@ export default function VendingBusinessGuidePage() {
                     Access our comprehensive database of vending machine locations to find the perfect spots 
                     for your business.
                   </p>
-                  <Link
+            <Link
                     href="/vending-leads"
                     className="bg-coral hover:bg-coral/90 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-200"
-                  >
+            >
                     Browse Vending Locations
-                  </Link>
-                </div>
+            </Link>
+          </div>
               </motion.div>
-            </div>
+        </div>
           </div>
         </section>
       </div>
-      
+
       <Footer />
     </>
   )
