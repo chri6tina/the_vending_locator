@@ -11,31 +11,33 @@ import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function IllinoisVendingLeadsPage() {
-  // State display name
-  const stateDisplayName = 'Illinois';
+export default function YorkPennsylvaniaVendingLeadsPage() {
+  // City and state display names
+  const cityDisplayName = 'York';
+  const stateDisplayName = 'Pennsylvania';
   
-  // State-specific data
-  const stateData = {
-    'name': 'Illinois',
-    'population': '12.7M+',
-    'businesses': '1M+',
-    'industries': '15+',
-    'verifiedLocations': '2K-5K',
+  // City-specific data
+  const cityData = {
+    'name': 'York',
+    'state': 'Pennsylvania',
+    'population': '50K-100K',
+    'businesses': '5K-10K',
+    'industries': '8-12',
+    'verifiedLocations': '100-200',
     'rating': '4.8/5',
-    'description': 'Prairie state with major urban centers and diverse business opportunities'
+    'description': 'Historic city with diverse business opportunities'
   };
   
   // Active users counter
-  const [activeUsers, setActiveUsers] = useState(35)
+  const [activeUsers, setActiveUsers] = useState(28)
   const [currentUserIndex, setCurrentUserIndex] = useState(0)
   const [usedNames, setUsedNames] = useState(new Set())
 
   // User names for active users counter
   const [userNames, setUserNames] = useState([
-    'Mike from Chicago', 'Sarah in Springfield', 'David in Rockford', 'Lisa in Peoria',
-    'Tom in Champaign', 'Jennifer in Bloomington', 'Robert in Decatur', 'Amanda in Moline',
-    'Chris in Quincy', 'Maria in Danville', 'James in Galesburg', 'Emily in Joliet'
+    'Mike from York', 'Sarah in Downtown', 'David in York', 'Lisa in York',
+    'Tom in York', 'Jennifer in York', 'Robert in York', 'Amanda in York',
+    'Chris in York', 'Maria in York', 'James in York', 'Emily in York'
   ])
 
   // Active users counter effect
@@ -44,7 +46,7 @@ export default function IllinoisVendingLeadsPage() {
       setActiveUsers(prev => {
         const change = Math.floor(Math.random() * 3) - 1
         const newValue = prev + change
-        return Math.max(30, Math.min(48, newValue))
+        return Math.max(25, Math.min(42, newValue))
       })
     }, 4000)
     return () => clearInterval(interval)
@@ -75,18 +77,6 @@ export default function IllinoisVendingLeadsPage() {
     return () => clearInterval(interval)
   }, [userNames.length, usedNames])
 
-  // Featured cities in Illinois
-  const featuredCities = [
-    { name: 'Chicago', slug: 'chicago-illinois', description: 'Major metropolitan area with diverse business opportunities' },
-    { name: 'Springfield', slug: 'springfield-illinois', description: 'State capital with government sector focus' },
-    { name: 'Rockford', slug: 'rockford-illinois', description: 'Manufacturing hub with industrial heritage' },
-    { name: 'Peoria', slug: 'peoria-illinois', description: 'River city with manufacturing and healthcare' },
-    { name: 'Champaign', slug: 'champaign-illinois', description: 'University town with education focus' },
-    { name: 'Bloomington', slug: 'bloomington-illinois', description: 'Insurance and manufacturing center' },
-    { name: 'Decatur', slug: 'decatur-illinois', description: 'Agricultural and industrial hub' },
-    { name: 'Moline', slug: 'moline-illinois', description: 'Quad Cities region manufacturing' }
-  ];
-
   return (
     <>
       <Header />
@@ -104,7 +94,11 @@ export default function IllinoisVendingLeadsPage() {
                 Vending Leads
               </Link>
               <span>/</span>
-              <span className="text-charcoal font-medium">{stateDisplayName}</span>
+              <Link href="/vending-leads/pennsylvania" className="hover:text-navy transition-colors">
+                Pennsylvania
+              </Link>
+              <span>/</span>
+              <span className="text-charcoal font-medium">{cityDisplayName}</span>
             </div>
           </div>
         </nav>
@@ -136,19 +130,18 @@ export default function IllinoisVendingLeadsPage() {
                 className="text-4xl md:text-6xl font-playfair font-bold text-charcoal mb-6 leading-tight"
               >
                 Vending Machine Locations in{' '}
-                <span className="text-navy">{stateDisplayName}</span>
+                <span className="text-navy">{cityDisplayName}, {stateDisplayName}</span>
               </motion.h1>
 
-              {/* State-Specific Value Proposition */}
+              {/* City-Specific Value Proposition */}
               <motion.p 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Get pre-qualified vending machine locations across Illinois' diverse business landscape. 
-                From Chicago's urban centers to Springfield's government sector, access verified businesses 
-                with detailed contact information and placement opportunities.
+                Get pre-qualified vending machine locations in York's historic and growing business community. 
+                Access verified businesses with detailed contact information and placement opportunities.
               </motion.p>
 
               {/* Trust Signals */}
@@ -217,48 +210,6 @@ export default function IllinoisVendingLeadsPage() {
                   <span>Join <span className="font-semibold text-navy">2,847+</span> vending operators who trust our leads</span>
                 </div>
               </motion.div>
-            </div>
-          </div>
-        </section>
-
-        {/* Featured Cities Section */}
-        <section className="py-16 bg-cream/30">
-          <div className="container mx-auto px-4">
-            <div className="max-w-6xl mx-auto">
-              <motion.h2 
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                className="text-3xl md:text-4xl font-playfair font-bold text-charcoal text-center mb-12"
-              >
-                Featured Cities in {stateDisplayName}
-              </motion.h2>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {featuredCities.map((city, index) => (
-                  <motion.div
-                    key={city.slug}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8, delay: index * 0.1 }}
-                    className="bg-white rounded-lg p-6 border border-gray-200 shadow-sm hover:shadow-md transition-shadow"
-                  >
-                    <h3 className="text-xl font-semibold text-navy mb-2">
-                      <Link href={`/vending-leads/${city.slug}`} className="hover:text-navy-light transition-colors">
-                        {city.name}
-                      </Link>
-                    </h3>
-                    <p className="text-stone text-sm mb-4">{city.description}</p>
-                    <Link 
-                      href={`/vending-leads/${city.slug}`}
-                      className="inline-flex items-center text-navy hover:text-navy-light text-sm font-medium transition-colors"
-                    >
-                      View Locations
-                      <MapPinIcon className="h-4 w-4 ml-1" />
-                    </Link>
-                  </motion.div>
-                ))}
-              </div>
             </div>
           </div>
         </section>

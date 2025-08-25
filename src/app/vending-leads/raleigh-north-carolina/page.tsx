@@ -94,10 +94,7 @@ export default function RaleighNorthCarolinaVendingLeadsPage() {
                 Vending Leads
               </Link>
               <span>/</span>
-              <Link href={`/vending-leads/${stateDisplayName.toLowerCase().replace(/s+/g, '-')}`} className="hover:text-navy transition-colors">
-                {stateDisplayName}
-              </Link>
-              <span>/</span>
+              
               <span className="text-charcoal font-medium">{cityDisplayName}</span>
             </div>
           </div>
