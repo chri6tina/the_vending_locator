@@ -94,7 +94,7 @@ export default function KentuckyVendingLeadsPage() {
                 Vending Leads
               </Link>
               <span>/</span>
-              <Link href={`/vending-leads/${stateDisplayName.toLowerCase().replace(/s+/g, '-')}`} className="hover:text-navy transition-colors">
+              <Link href={`/vending-leads/${stateDisplayName.toLowerCase().replace(/\s+/g, '-')}`} className="hover:text-navy transition-colors">
                 {stateDisplayName}
               </Link>
               <span>/</span>
