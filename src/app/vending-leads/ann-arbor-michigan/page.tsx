@@ -11,7 +11,7 @@ import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function AuroraColoradoColoradoVendingLeadsPage() {
+export default function AnnArborMichiganVendingLeadsPage() {
   // City and state display names
   const cityDisplayName = 'Ann Arbor';
   const stateDisplayName = 'Michigan';
