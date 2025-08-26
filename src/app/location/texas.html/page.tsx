@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description: 'Find qualified vending machine locations across Texas with verified business details and contact information.',
     url: 'https://www.thevendinglocator.com/location/texas.html',
   },
-}
+};
 
 export default function TexasPage() {
   return (

@@ -126,8 +126,6 @@ export default function VendingMachineServicesPage() {
           </div>
         </section>
 
-
-
         {/* CTA Section */}
         <section className="py-16 bg-gradient-to-r from-navy to-charcoal text-white">
           <div className="container mx-auto px-4 text-center">

@@ -134,7 +134,7 @@ export default function UsersDashboardPage() {
                 ))}
               </select>
             </div>
-            <button className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors">
+            <button className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors" aria-label="Add New User">
               Add New User
             </button>
           </div>
@@ -262,10 +262,10 @@ export default function UsersDashboardPage() {
                     <td className="py-3 px-4 text-charcoal">{user.permissions}</td>
                     <td className="py-3 px-4">
                       <div className="flex gap-2">
-                        <button className="text-navy hover:text-navy/80 text-sm font-medium">
+                        <button className="text-navy hover:text-navy/80 text-sm font-medium" aria-label="Edit">
                           Edit
                         </button>
-                        <button className="text-navy hover:text-navy/80 text-sm font-medium">
+                        <button className="text-navy hover:text-navy/80 text-sm font-medium" aria-label="View">
                           View
                         </button>
                       </div>

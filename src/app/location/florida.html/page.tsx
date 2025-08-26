@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description: 'Find qualified vending machine locations across Florida with verified business details and contact information.',
     url: 'https://www.thevendinglocator.com/location/florida.html',
   },
-}
+};
 
 export default function FloridaPage() {
   return (

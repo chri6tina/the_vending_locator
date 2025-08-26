@@ -184,6 +184,14 @@ export default function VendingLeadsPage() {
       cities: []
     },
     {
+      name: 'Dakota',
+      slug: 'dakota',
+      cities: [
+        { name: 'North Dakota', slug: 'north-dakota', vendorCount: '80+', businessCount: '120+', description: 'Energy and agriculture hub with growing business community' },
+        { name: 'South Dakota', slug: 'south-dakota', vendorCount: '70+', businessCount: '100+', description: 'Tourism and healthcare center with diverse economy' }
+      ]
+    },
+    {
       name: 'North Dakota',
       slug: 'north-dakota',
       cities: []
@@ -244,9 +252,23 @@ export default function VendingLeadsPage() {
       cities: []
     },
     {
+      name: 'Island',
+      slug: 'island',
+      cities: [
+        { name: 'Rhode Island', slug: 'rhode-island', vendorCount: '80+', businessCount: '120+', description: 'Coastal business hub with diverse economic opportunities' }
+      ]
+    },
+    {
       name: 'New Hampshire',
       slug: 'new-hampshire',
       cities: []
+    },
+    {
+      name: 'Hampshire',
+      slug: 'hampshire',
+      cities: [
+        { name: 'New Hampshire', slug: 'new-hampshire', vendorCount: '60+', businessCount: '80+', description: 'Diverse economy with healthcare and education focus' }
+      ]
     },
     {
       name: 'Vermont',
@@ -262,6 +284,13 @@ export default function VendingLeadsPage() {
       name: 'New Jersey',
       slug: 'new-jersey',
       cities: []
+    },
+    {
+      name: 'Jersey',
+      slug: 'jersey',
+      cities: [
+        { name: 'New Jersey', slug: 'new-jersey', vendorCount: '200+', businessCount: '300+', description: 'Major East Coast business hub with diverse industries' }
+      ]
     },
     {
       name: 'Indiana',

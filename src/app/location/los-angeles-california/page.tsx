@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description: 'Find qualified vending machine locations in Los Angeles, California with verified business details and contact information.',
     url: 'https://www.thevendinglocator.com/location/los-angeles-ca',
   },
-}
+};
 
 export default function LosAngelesPage() {
   return (

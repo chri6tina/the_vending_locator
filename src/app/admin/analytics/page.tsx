@@ -91,7 +91,7 @@ export default function AnalyticsDashboardPage() {
                 ))}
               </select>
             </div>
-            <button className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors">
+            <button className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors" aria-label="Export Report">
               Export Report
             </button>
           </div>

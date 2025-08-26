@@ -241,9 +241,7 @@ export default function Contact() {
                     type="submit"
                     disabled={isSubmitting}
                     className="w-full btn-primary disabled:opacity-50 disabled:cursor-not-allowed"
-                  >
-                    {isSubmitting ? 'Sending...' : 'Send Message'}
-                  </button>
+                   aria-label="{isSubmitting ? 'Sending...' : 'Send Message'}">isSubmitting ? 'Sending...' : 'Send Message'</button>
                 </div>
               </form>
             </motion.div>

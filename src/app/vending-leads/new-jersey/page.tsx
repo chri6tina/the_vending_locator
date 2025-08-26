@@ -14,18 +14,18 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 export default function NewJerseyVendingLeadsPage() {
   // City and state display names
   const cityDisplayName = 'New';
-  const stateDisplayName = 'Jersey';
+  const stateDisplayName = 'New Jersey';
   
   // City-specific data
   const cityData = {
   'name': 'New',
-  'state': 'Jersey',
+  'state': 'New Jersey',
   'population': '50K-100K',
   'businesses': '5K-10K',
   'industries': '8-12',
   'verifiedLocations': '100-200',
   'rating': '4.8/5',
-  'description': 'Thriving business community in Jersey'
+  'description': 'Thriving business community in New Jersey'
 };
   
   // Active users counter
@@ -48,7 +48,7 @@ export default function NewJerseyVendingLeadsPage() {
         const newValue = prev + change
         return Math.max(25, Math.min(42, newValue))
       })
-    }, 4000)
+    }, 4000);
     return () => clearInterval(interval)
   }, [])
 
@@ -64,16 +64,16 @@ export default function NewJerseyVendingLeadsPage() {
         while (attempts < 50) {
           nextIndex = (nextIndex + 1) % userNames.length
           if (!usedNames.has(nextIndex)) {
-            setUsedNames(prev => new Set([...prev, nextIndex]))
+            setUsedNames(prev => new Set([...prev, nextIndex]));
             return nextIndex
           }
           attempts++
         }
         const randomIndex = Math.floor(Math.random() * userNames.length)
-        setUsedNames(prev => new Set([...prev, randomIndex]))
+        setUsedNames(prev => new Set([...prev, randomIndex]));
         return randomIndex
       })
-    }, 5000)
+    }, 5000);
     return () => clearInterval(interval)
   }, [userNames.length, usedNames])
 

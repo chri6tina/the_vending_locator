@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description: 'Find qualified vending machine locations in New York, New York with verified business details and contact information.',
     url: 'https://www.thevendinglocator.com/location/new-york-ny',
   },
-}
+};
 
 export default function NewYorkPage() {
   return (

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description: 'Find qualified vending machine locations in Seattle, Washington with verified business details and contact information.',
     url: 'https://www.thevendinglocator.com/location/seattle-wa',
   },
-}
+};
 
 export default function SeattlePage() {
   return (

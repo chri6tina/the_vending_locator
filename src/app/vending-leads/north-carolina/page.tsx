@@ -13,19 +13,19 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
 export default function NorthCarolinaVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'North';
-  const stateDisplayName = 'Carolina';
+  const cityDisplayName = 'North Carolina';
+  const stateDisplayName = 'North Carolina';
   
   // City-specific data
   const cityData = {
-  'name': 'North',
-  'state': 'Carolina',
+  'name': 'North Carolina',
+  'state': 'North Carolina',
   'population': '50K-100K',
   'businesses': '5K-10K',
   'industries': '8-12',
   'verifiedLocations': '100-200',
   'rating': '4.8/5',
-  'description': 'Thriving business community in Carolina'
+  'description': 'Thriving business community in North Carolina'
 };
   
   // Active users counter
@@ -48,7 +48,7 @@ export default function NorthCarolinaVendingLeadsPage() {
         const newValue = prev + change
         return Math.max(25, Math.min(42, newValue))
       })
-    }, 4000)
+    }, 4000);
     return () => clearInterval(interval)
   }, [])
 
@@ -64,16 +64,16 @@ export default function NorthCarolinaVendingLeadsPage() {
         while (attempts < 50) {
           nextIndex = (nextIndex + 1) % userNames.length
           if (!usedNames.has(nextIndex)) {
-            setUsedNames(prev => new Set([...prev, nextIndex]))
+            setUsedNames(prev => new Set([...prev, nextIndex]));
             return nextIndex
           }
           attempts++
         }
         const randomIndex = Math.floor(Math.random() * userNames.length)
-        setUsedNames(prev => new Set([...prev, randomIndex]))
+        setUsedNames(prev => new Set([...prev, randomIndex]));
         return randomIndex
       })
-    }, 5000)
+    }, 5000);
     return () => clearInterval(interval)
   }, [userNames.length, usedNames])
 

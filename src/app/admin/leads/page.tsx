@@ -140,7 +140,7 @@ export default function LeadsDashboardPage() {
                 ))}
               </select>
             </div>
-            <button className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors">
+            <button className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors" aria-label="Export Leads">
               Export Leads
             </button>
           </div>
@@ -270,10 +270,10 @@ export default function LeadsDashboardPage() {
                     <td className="py-3 px-4 text-charcoal">${lead.value.toLocaleString()}</td>
                     <td className="py-3 px-4">
                       <div className="flex gap-2">
-                        <button className="text-navy hover:text-navy/80 text-sm font-medium">
+                        <button className="text-navy hover:text-navy/80 text-sm font-medium" aria-label="View">
                           View
                         </button>
-                        <button className="text-navy hover:text-navy/80 text-sm font-medium">
+                        <button className="text-navy hover:text-navy/80 text-sm font-medium" aria-label="Contact">
                           Contact
                         </button>
                       </div>

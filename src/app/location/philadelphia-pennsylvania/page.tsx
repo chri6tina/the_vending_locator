@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description: 'Find qualified vending machine locations in Philadelphia, Pennsylvania with verified business details and contact information.',
     url: 'https://www.thevendinglocator.com/location/philadelphia-pa',
   },
-}
+};
 
 export default function PhiladelphiaPage() {
   return (

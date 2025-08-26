@@ -86,8 +86,8 @@ export default function Blog() {
                 imageUrl = `https:${imageUrl}`;
               }
               
-              console.log(`Post ${index + 1} image URL:`, imageUrl);
-              
+              console.log(`Post ${index + 1} image URL:`, imageUrl)
+
               return {
                 id: post.sys?.id || index + 1,
                 title: post.fields?.title || 'Untitled Post',
@@ -141,7 +141,7 @@ export default function Blog() {
         </div>
         <Footer />
       </main>
-    )
+    );
   }
 
   if (error) {
@@ -156,7 +156,7 @@ export default function Blog() {
         </div>
         <Footer />
       </main>
-    )
+    );
   }
 
   return (
@@ -470,7 +470,7 @@ export default function Blog() {
               <button
                 type="submit"
                 className="btn-primary whitespace-nowrap shadow-lg hover:shadow-xl transition-all duration-200"
-              >
+               aria-label="Subscribe">
                 Subscribe
               </button>
             </motion.form>

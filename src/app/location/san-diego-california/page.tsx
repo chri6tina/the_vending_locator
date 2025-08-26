@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description: 'Find qualified vending machine locations in San Diego, California with verified business details and contact information.',
     url: 'https://www.thevendinglocator.com/location/san-diego-ca',
   },
-}
+};
 
 export default function SanDiegoPage() {
   return (

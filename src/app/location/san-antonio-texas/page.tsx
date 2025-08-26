@@ -13,7 +13,7 @@ export default function SanAntonioPage() {
     if (pricingSection) {
       pricingSection.scrollIntoView({ behavior: 'smooth' });
     }
-  };
+  }
 
   return (
     <>
@@ -55,7 +55,7 @@ export default function SanAntonioPage() {
             <button 
               onClick={scrollToPricing}
               className="bg-blue-600 text-white px-8 py-3 rounded-md font-medium hover:bg-blue-700 transition-colors"
-            >
+             aria-label="Get San Antonio Locations">
               Get San Antonio Locations
             </button>
           </div>

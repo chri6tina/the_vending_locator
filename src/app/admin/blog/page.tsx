@@ -132,7 +132,7 @@ export default function BlogDashboardPage() {
                 ))}
               </select>
             </div>
-            <button className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors">
+            <button className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors" aria-label="Create New Post">
               Create New Post
             </button>
           </div>
@@ -207,10 +207,10 @@ export default function BlogDashboardPage() {
                     <td className="py-3 px-4 text-charcoal">{post.views.toLocaleString()}</td>
                     <td className="py-3 px-4">
                       <div className="flex gap-2">
-                        <button className="text-navy hover:text-navy/80 text-sm font-medium">
+                        <button className="text-navy hover:text-navy/80 text-sm font-medium" aria-label="Edit">
                           Edit
                         </button>
-                        <button className="text-navy hover:text-navy/80 text-sm font-medium">
+                        <button className="text-navy hover:text-navy/80 text-sm font-medium" aria-label="View">
                           View
                         </button>
                       </div>

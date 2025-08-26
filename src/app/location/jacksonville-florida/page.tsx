@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description: 'Find qualified vending machine locations in Jacksonville, Florida with verified business details and contact information.',
     url: 'https://www.thevendinglocator.com/location/jacksonville-fl',
   },
-}
+};
 
 export default function JacksonvillePage() {
   return (

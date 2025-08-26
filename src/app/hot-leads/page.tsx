@@ -59,7 +59,7 @@ export default function HotLeadsPage() {
             >
               <button
                 onClick={() => {
-                  document.getElementById('packages')?.scrollIntoView({ behavior: 'smooth' })
+                  document.getElementById('packages')?.scrollIntoView({ behavior: 'smooth' });
                 }}
                 className="btn-primary"
               >

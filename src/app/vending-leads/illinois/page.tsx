@@ -46,7 +46,7 @@ export default function IllinoisVendingLeadsPage() {
         const newValue = prev + change
         return Math.max(30, Math.min(48, newValue))
       })
-    }, 4000)
+    }, 4000);
     return () => clearInterval(interval)
   }, [])
 
@@ -62,16 +62,16 @@ export default function IllinoisVendingLeadsPage() {
         while (attempts < 50) {
           nextIndex = (nextIndex + 1) % userNames.length
           if (!usedNames.has(nextIndex)) {
-            setUsedNames(prev => new Set([...prev, nextIndex]))
+            setUsedNames(prev => new Set([...prev, nextIndex]));
             return nextIndex
           }
           attempts++
         }
         const randomIndex = Math.floor(Math.random() * userNames.length)
-        setUsedNames(prev => new Set([...prev, randomIndex]))
+        setUsedNames(prev => new Set([...prev, randomIndex]));
         return randomIndex
       })
-    }, 5000)
+    }, 5000);
     return () => clearInterval(interval)
   }, [userNames.length, usedNames])
 
@@ -85,7 +85,7 @@ export default function IllinoisVendingLeadsPage() {
     { name: 'Bloomington', slug: 'bloomington-illinois', description: 'Insurance and manufacturing center' },
     { name: 'Decatur', slug: 'decatur-illinois', description: 'Agricultural and industrial hub' },
     { name: 'Moline', slug: 'moline-illinois', description: 'Quad Cities region manufacturing' }
-  ];
+  ]
 
   return (
     <>

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description: 'Find qualified vending machine locations in Miami, Florida with verified business details and contact information.',
     url: 'https://www.thevendinglocator.com/location/miami-fl',
   },
-}
+};
 
 export default function MiamiPage() {
   return (

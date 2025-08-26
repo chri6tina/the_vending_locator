@@ -46,7 +46,7 @@ export default function PennsylvaniaVendingLeadsPage() {
         const newValue = prev + change
         return Math.max(28, Math.min(45, newValue))
       })
-    }, 4000)
+    }, 4000);
     return () => clearInterval(interval)
   }, [])
 
@@ -62,16 +62,16 @@ export default function PennsylvaniaVendingLeadsPage() {
         while (attempts < 50) {
           nextIndex = (nextIndex + 1) % userNames.length
           if (!usedNames.has(nextIndex)) {
-            setUsedNames(prev => new Set([...prev, nextIndex]))
+            setUsedNames(prev => new Set([...prev, nextIndex]));
             return nextIndex
           }
           attempts++
         }
         const randomIndex = Math.floor(Math.random() * userNames.length)
-        setUsedNames(prev => new Set([...prev, randomIndex]))
+        setUsedNames(prev => new Set([...prev, randomIndex]));
         return randomIndex
       })
-    }, 5000)
+    }, 5000);
     return () => clearInterval(interval)
   }, [userNames.length, usedNames])
 
@@ -85,7 +85,7 @@ export default function PennsylvaniaVendingLeadsPage() {
     { name: 'Allentown', slug: 'allentown-pennsylvania', description: 'Lehigh Valley business hub' },
     { name: 'Erie', slug: 'erie-pennsylvania', description: 'Lake Erie port city' },
     { name: 'Reading', slug: 'reading-pennsylvania', description: 'Manufacturing and distribution center' }
-  ];
+  ]
 
   return (
     <>

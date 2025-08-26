@@ -16,7 +16,7 @@ export default function SettingsDashboardPage() {
     { id: 'notifications', label: 'Notifications', icon: '🔔' },
     { id: 'security', label: 'Security', icon: '🔒' },
     { id: 'integrations', label: 'Integrations', icon: '🔗' }
-  ]
+  ];
 
   return (
     <div className="min-h-screen bg-warm-white">
@@ -104,7 +104,7 @@ export default function SettingsDashboardPage() {
               </div>
             </div>
             <div className="mt-6">
-              <button className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors">
+              <button className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors" aria-label="Save Changes">
                 Save Changes
               </button>
             </div>
@@ -158,7 +158,7 @@ export default function SettingsDashboardPage() {
               </div>
             </div>
             <div className="mt-6">
-              <button className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors">
+              <button className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors" aria-label="Save Business Settings">
                 Save Business Settings
               </button>
             </div>
@@ -202,7 +202,7 @@ export default function SettingsDashboardPage() {
               </div>
             </div>
             <div className="mt-6">
-              <button className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors">
+              <button className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors" aria-label="Save Notification Settings">
                 Save Notification Settings
               </button>
             </div>
@@ -244,7 +244,7 @@ export default function SettingsDashboardPage() {
               </div>
             </div>
             <div className="mt-6">
-              <button className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors">
+              <button className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors" aria-label="Update Security Settings">
                 Update Security Settings
               </button>
             </div>
@@ -261,7 +261,7 @@ export default function SettingsDashboardPage() {
                   <h3 className="font-medium text-charcoal">Google Analytics</h3>
                   <p className="text-sm text-stone">Track website performance and user behavior</p>
                 </div>
-                <button className="px-4 py-2 bg-navy text-white rounded-lg hover:bg-navy/90 transition-colors">
+                <button className="px-4 py-2 bg-navy text-white rounded-lg hover:bg-navy/90 transition-colors" aria-label="Connect">
                   Connect
                 </button>
               </div>
@@ -270,7 +270,7 @@ export default function SettingsDashboardPage() {
                   <h3 className="font-medium text-charcoal">Stripe Payments</h3>
                   <p className="text-sm text-stone">Process payments and manage subscriptions</p>
                 </div>
-                <button className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors">
+                <button className="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors" aria-label="Connected">
                   Connected
                 </button>
               </div>
@@ -279,7 +279,7 @@ export default function SettingsDashboardPage() {
                   <h3 className="font-medium text-charcoal">Mailchimp</h3>
                   <p className="text-sm text-stone">Email marketing and automation</p>
                 </div>
-                <button className="px-4 py-2 bg-navy text-white rounded-lg hover:bg-navy/90 transition-colors">
+                <button className="px-4 py-2 bg-navy text-white rounded-lg hover:bg-navy/90 transition-colors" aria-label="Connect">
                   Connect
                 </button>
               </div>
@@ -289,7 +289,7 @@ export default function SettingsDashboardPage() {
 
         {/* Save All Button */}
         <div className="flex justify-end">
-          <button className="px-6 py-3 bg-navy text-white rounded-lg hover:bg-navy/90 transition-colors font-medium">
+          <button className="px-6 py-3 bg-navy text-white rounded-lg hover:bg-navy/90 transition-colors font-medium" aria-label="Save All Settings">
             Save All Settings
           </button>
         </div>

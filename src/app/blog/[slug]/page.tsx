@@ -81,7 +81,8 @@ export default function BlogPost() {
                       const url = node.data?.uri || '#'
                       return `<a href="${url}" class="text-navy hover:underline">${text}</a>`
                     }
-                    return ''
+
+  return ''
                   })
                   .join('')
               }

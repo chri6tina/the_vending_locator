@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description: 'Find qualified vending machine locations in Chicago, Illinois with verified business details and contact information.',
     url: 'https://www.thevendinglocator.com/location/chicago-il',
   },
-}
+};
 
 export default function ChicagoPage() {
   return (

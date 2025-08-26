@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description: 'Find qualified vending machine locations across California with verified business details and contact information.',
     url: 'https://www.thevendinglocator.com/location/california.html',
   },
-}
+};
 
 export default function CaliforniaPage() {
   return (

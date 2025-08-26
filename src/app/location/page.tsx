@@ -4,8 +4,6 @@ import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { BuildingStorefrontIcon, UserGroupIcon } from '@heroicons/react/24/outline'
 
-
-
 export default function LocationsPage() {
   return (
     <div className="min-h-screen bg-cream">
@@ -110,8 +108,6 @@ export default function LocationsPage() {
           </div>
         </div>
       </div>
-
-
 
       {/* CTA Section */}
       <div className="bg-navy py-16 sm:py-24">

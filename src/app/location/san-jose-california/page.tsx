@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description: 'Find qualified vending machine locations in San Jose, California with verified business details and contact information.',
     url: 'https://www.thevendinglocator.com/location/san-jose-ca',
   },
-}
+};
 
 export default function SanJosePage() {
   return (

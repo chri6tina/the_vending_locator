@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description: 'Find qualified vending machine locations in Phoenix, Arizona with verified business details and contact information.',
     url: 'https://www.thevendinglocator.com/location/phoenix-az',
   },
-}
+};
 
 export default function PhoenixPage() {
   return (
