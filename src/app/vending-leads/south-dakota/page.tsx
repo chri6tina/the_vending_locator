@@ -13,12 +13,12 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
 export default function SouthDakotaVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'South Dakota';
+  const cityDisplayName = 'South';
   const stateDisplayName = 'Dakota';
   
   // City-specific data
   const cityData = {
-  'name': 'South Dakota',
+  'name': 'South',
   'state': 'Dakota',
   'population': '50K-100K',
   'businesses': '5K-10K',

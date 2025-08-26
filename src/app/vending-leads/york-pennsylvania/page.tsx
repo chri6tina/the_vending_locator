@@ -97,8 +97,11 @@ export default function YorkPennsylvaniaVendingLeadsPage() {
               <Link href="/vending-leads/pennsylvania" className="hover:text-navy transition-colors">
                 Pennsylvania
               </Link>
-              <span>/</span>
-              <span className="text-charcoal font-medium">{cityDisplayName}</span>
+              <Link href={`/vending-leads/${stateDisplayName.toLowerCase().replace(/\s+/g, '-')}`} className="hover:text-navy transition-colors">
+                    {stateDisplayName}
+                  </Link>
+                  <span>/</span>
+                  <span className="text-charcoal font-medium">{cityDisplayName}</span>
             </div>
           </div>
         </nav>

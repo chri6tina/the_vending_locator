@@ -13,12 +13,12 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
 export default function FallRiverMassachusettsVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Fall River';
+  const cityDisplayName = 'Fall';
   const stateDisplayName = 'Massachusetts';
   
   // City-specific data
   const cityData = {
-  'name': 'Fall River',
+  'name': 'Fall',
   'state': 'Massachusetts',
   'population': '100K-500K',
   'businesses': '10K-50K',

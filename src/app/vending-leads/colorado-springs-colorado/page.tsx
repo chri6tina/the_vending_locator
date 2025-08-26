@@ -13,12 +13,12 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
 export default function ColoradoSpringsColoradoVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Colorado Springs';
+  const cityDisplayName = 'Colorado';
   const stateDisplayName = 'Colorado';
   
   // City-specific data
   const cityData = {
-  'name': 'Colorado Springs',
+  'name': 'Colorado',
   'state': 'Colorado',
   'population': '100K-500K',
   'businesses': '10K-50K',

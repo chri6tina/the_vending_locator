@@ -13,12 +13,12 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
 export default function CoeurDaleneIdahoVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Coeur Dalene';
+  const cityDisplayName = 'Coeur';
   const stateDisplayName = 'Idaho';
   
   // City-specific data
   const cityData = {
-  'name': 'Coeur Dalene',
+  'name': 'Coeur',
   'state': 'Idaho',
   'population': '100K-500K',
   'businesses': '10K-50K',

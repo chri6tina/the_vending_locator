@@ -13,12 +13,12 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
 export default function SanAntonioTexasVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'San Antonio';
+  const cityDisplayName = 'San';
   const stateDisplayName = 'Texas';
   
   // City-specific data
   const cityData = {
-  'name': 'San Antonio',
+  'name': 'San',
   'state': 'Texas',
   'population': '100K-500K',
   'businesses': '10K-50K',

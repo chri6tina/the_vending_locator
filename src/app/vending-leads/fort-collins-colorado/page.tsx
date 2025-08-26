@@ -13,12 +13,12 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
 export default function FortCollinsColoradoVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Fort Collins';
+  const cityDisplayName = 'Fort';
   const stateDisplayName = 'Colorado';
   
   // City-specific data
   const cityData = {
-  'name': 'Fort Collins',
+  'name': 'Fort',
   'state': 'Colorado',
   'population': '100K-500K',
   'businesses': '10K-50K',

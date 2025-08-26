@@ -13,12 +13,12 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
 export default function NewHampshireVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'New Hampshire';
+  const cityDisplayName = 'New';
   const stateDisplayName = 'Hampshire';
   
   // City-specific data
   const cityData = {
-  'name': 'New Hampshire',
+  'name': 'New',
   'state': 'Hampshire',
   'population': '50K-100K',
   'businesses': '5K-10K',

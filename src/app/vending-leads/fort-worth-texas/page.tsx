@@ -13,12 +13,12 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
 export default function FortWorthTexasVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Fort Worth';
+  const cityDisplayName = 'Fort';
   const stateDisplayName = 'Texas';
   
   // City-specific data
   const cityData = {
-  'name': 'Fort Worth',
+  'name': 'Fort',
   'state': 'Texas',
   'population': '100K-500K',
   'businesses': '10K-50K',

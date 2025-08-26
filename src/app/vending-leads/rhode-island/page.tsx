@@ -13,12 +13,12 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
 export default function RhodeIslandVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Rhode Island';
+  const cityDisplayName = 'Rhode';
   const stateDisplayName = 'Island';
   
   // City-specific data
   const cityData = {
-  'name': 'Rhode Island',
+  'name': 'Rhode',
   'state': 'Island',
   'population': '50K-100K',
   'businesses': '5K-10K',

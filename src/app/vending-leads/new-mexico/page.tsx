@@ -13,12 +13,12 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
 export default function NewMexicoVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'New Mexico';
+  const cityDisplayName = 'New';
   const stateDisplayName = 'Mexico';
   
   // City-specific data
   const cityData = {
-  'name': 'New Mexico',
+  'name': 'New',
   'state': 'Mexico',
   'population': '50K-100K',
   'businesses': '5K-10K',

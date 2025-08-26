@@ -13,12 +13,12 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
 export default function SaltLakeCityUtahVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Salt Lake City';
+  const cityDisplayName = 'Salt';
   const stateDisplayName = 'Utah';
   
   // City-specific data
   const cityData = {
-  'name': 'Salt Lake City',
+  'name': 'Salt',
   'state': 'Utah',
   'population': '500K+',
   'businesses': '50K+',

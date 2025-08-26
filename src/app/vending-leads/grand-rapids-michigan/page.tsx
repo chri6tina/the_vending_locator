@@ -13,12 +13,12 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
 export default function GrandRapidsMichiganVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Grand Rapids';
+  const cityDisplayName = 'Grand';
   const stateDisplayName = 'Michigan';
   
   // City-specific data
   const cityData = {
-  'name': 'Grand Rapids',
+  'name': 'Grand',
   'state': 'Michigan',
   'population': '100K-500K',
   'businesses': '10K-50K',

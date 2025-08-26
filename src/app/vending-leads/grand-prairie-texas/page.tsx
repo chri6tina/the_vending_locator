@@ -13,12 +13,12 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
 export default function GrandPrairieTexasVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Grand Prairie';
+  const cityDisplayName = 'Grand';
   const stateDisplayName = 'Texas';
   
   // City-specific data
   const cityData = {
-  'name': 'Grand Prairie',
+  'name': 'Grand',
   'state': 'Texas',
   'population': '100K-500K',
   'businesses': '10K-50K',

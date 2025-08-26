@@ -13,12 +13,12 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
 export default function CapeCoralFloridaVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Cape Coral';
+  const cityDisplayName = 'Cape';
   const stateDisplayName = 'Florida';
   
   // City-specific data
   const cityData = {
-  'name': 'Cape Coral',
+  'name': 'Cape',
   'state': 'Florida',
   'population': '100K-500K',
   'businesses': '10K-50K',

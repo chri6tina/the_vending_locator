@@ -13,12 +13,12 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
 export default function NewJerseyVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'New Jersey';
+  const cityDisplayName = 'New';
   const stateDisplayName = 'Jersey';
   
   // City-specific data
   const cityData = {
-  'name': 'New Jersey',
+  'name': 'New',
   'state': 'Jersey',
   'population': '50K-100K',
   'businesses': '5K-10K',

@@ -13,12 +13,12 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
 export default function LongBeachCaliforniaVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Long Beach';
+  const cityDisplayName = 'Long';
   const stateDisplayName = 'California';
   
   // City-specific data
   const cityData = {
-  'name': 'Long Beach',
+  'name': 'Long',
   'state': 'California',
   'population': '100K-500K',
   'businesses': '10K-50K',

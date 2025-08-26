@@ -13,12 +13,12 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
 export default function AnnArborMichiganVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Ann Arbor';
+  const cityDisplayName = 'Ann';
   const stateDisplayName = 'Michigan';
   
   // City-specific data
   const cityData = {
-  'name': 'Ann Arbor',
+  'name': 'Ann',
   'state': 'Michigan',
   'population': '100K-500K',
   'businesses': '10K-50K',

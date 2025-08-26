@@ -13,12 +13,12 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
 export default function NewOrleansLouisianaVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'New Orleans';
+  const cityDisplayName = 'New';
   const stateDisplayName = 'Louisiana';
   
   // City-specific data
   const cityData = {
-  'name': 'New Orleans',
+  'name': 'New',
   'state': 'Louisiana',
   'population': '100K-500K',
   'businesses': '10K-50K',

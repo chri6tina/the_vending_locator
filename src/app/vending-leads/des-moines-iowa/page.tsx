@@ -13,12 +13,12 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
 export default function DesMoinesIowaVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Des Moines';
+  const cityDisplayName = 'Des';
   const stateDisplayName = 'Iowa';
   
   // City-specific data
   const cityData = {
-  'name': 'Des Moines',
+  'name': 'Des',
   'state': 'Iowa',
   'population': '100K-500K',
   'businesses': '10K-50K',

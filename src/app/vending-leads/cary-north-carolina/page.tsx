@@ -13,12 +13,12 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
 export default function CaryNorthCarolinaVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Cary North Carolina';
+  const cityDisplayName = 'Cary';
   const stateDisplayName = 'Carolina';
   
   // City-specific data
   const cityData = {
-  'name': 'Cary North Carolina',
+  'name': 'Cary',
   'state': 'Carolina',
   'population': '100K-500K',
   'businesses': '10K-50K',
@@ -93,9 +93,11 @@ export default function CaryNorthCarolinaVendingLeadsPage() {
               <Link href="/vending-leads" className="hover:text-navy transition-colors">
                 Vending Leads
               </Link>
-              <span>/</span>
-              
-              <span className="text-charcoal font-medium">{cityDisplayName}</span>
+              <Link href={`/vending-leads/${stateDisplayName.toLowerCase().replace(/\s+/g, '-')}`} className="hover:text-navy transition-colors">
+                    {stateDisplayName}
+                  </Link>
+                  <span>/</span>
+                  <span className="text-charcoal font-medium">{cityDisplayName}</span>
             </div>
           </div>
         </nav>

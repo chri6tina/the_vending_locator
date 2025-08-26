@@ -18,24 +18,24 @@ export default function BostonMassachusettsVendingLeadsPage() {
   
   // City-specific data
   const cityData = {
-  'name': 'Boston',
-  'state': 'Massachusetts',
-  'population': '50K-100K',
-  'businesses': '5K-10K',
-  'industries': '8-12',
-  'verifiedLocations': '100-200',
-  'rating': '4.8/5',
-  'description': 'Thriving business community in Massachusetts'
-};
+    'name': 'Boston',
+    'state': 'Massachusetts',
+    'population': '100K-500K',
+    'businesses': '10K-25K',
+    'industries': '15-20',
+    'verifiedLocations': '200-500',
+    'rating': '4.8/5',
+    'description': 'Major business and education hub in Massachusetts'
+  };
   
   // Active users counter
-  const [activeUsers, setActiveUsers] = useState(28)
+  const [activeUsers, setActiveUsers] = useState(32)
   const [currentUserIndex, setCurrentUserIndex] = useState(0)
   const [usedNames, setUsedNames] = useState(new Set())
 
   // User names for active users counter
   const [userNames, setUserNames] = useState([
-    'Mike from Boston', 'Sarah in Downtown', 'David in Boston', 'Lisa in Boston',
+    'Mike from Boston', 'Sarah in Downtown', 'David in Cambridge', 'Lisa in Boston',
     'Tom in Boston', 'Jennifer in Boston', 'Robert in Boston', 'Amanda in Boston',
     'Chris in Boston', 'Maria in Boston', 'James in Boston', 'Emily in Boston'
   ])
@@ -46,7 +46,7 @@ export default function BostonMassachusettsVendingLeadsPage() {
       setActiveUsers(prev => {
         const change = Math.floor(Math.random() * 3) - 1
         const newValue = prev + change
-        return Math.max(25, Math.min(42, newValue))
+        return Math.max(28, Math.min(45, newValue))
       })
     }, 4000)
     return () => clearInterval(interval)
@@ -119,7 +119,8 @@ export default function BostonMassachusettsVendingLeadsPage() {
                   <span className="text-sm font-medium text-chocolate">
                     <span className="font-bold text-coral">{activeUsers}</span> people are choosing plans right now
                   </span>
-                </div></motion.div>
+                </div>
+              </motion.div>
 
               {/* Main Headline */}
               <motion.h1 
@@ -139,7 +140,7 @@ export default function BostonMassachusettsVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Get pre-qualified vending machine locations in Aurora's diverse and growing business economy. 
+                Get pre-qualified vending machine locations in Boston's thriving business and education economy. 
                 Access verified businesses with detailed contact information and placement opportunities.
               </motion.p>
 
@@ -181,23 +182,23 @@ export default function BostonMassachusettsVendingLeadsPage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 1.0 }}
-                className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 mb-8"
+                className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8"
               >
-                <Link 
+                <Link
                   href="/pricing"
-                  className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors"
+                  className="btn-primary text-lg px-8 py-4"
                 >
-                  Get Started
+                  Get Boston Vending Leads
                 </Link>
-                <Link 
+                <Link
                   href="/hot-leads"
-                  className="w-full sm:w-auto bg-transparent text-chocolate border-2 border-chocolate px-8 py-3 rounded-lg font-semibold hover:bg-chocolate hover:text-white transition-colors"
+                  className="btn-secondary text-lg px-8 py-4"
                 >
-                  View Hot Leads →
+                  View Hot Leads
                 </Link>
               </motion.div>
 
-{/* Social Proof Stats */}
+              {/* Social Proof Stats */}
               <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -252,6 +253,40 @@ export default function BostonMassachusettsVendingLeadsPage() {
           </div>
         </section>
 
+        {/* Hot Leads Section */}
+        <section className="py-16 bg-white">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
+              >
+                Hot Vending Leads in {cityDisplayName}
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-lg text-stone max-w-3xl mx-auto"
+              >
+                Get immediate access to the hottest vending machine opportunities in Boston's competitive market.
+              </motion.p>
+            </div>
+            <HotLeads />
+          </div>
+        </section>
+
+        {/* Vending Course Section */}
+        <section className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <VendingCourse />
+          </div>
+        </section>
+
         {/* Business Landscape */}
         <section className="py-16 bg-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -290,8 +325,9 @@ export default function BostonMassachusettsVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Aurora Colorado features modern healthcare facilities including hospitals, clinics, and medical offices with high foot traffic and stable operations.</p>
+                <p className="text-stone leading-relaxed">Boston features world-class healthcare facilities including Massachusetts General Hospital, Brigham and Women's Hospital, and numerous medical offices with high foot traffic and stable operations.</p>
               </motion.div>
+              
               <motion.div
                 key="Education"
                 initial={{ opacity: 0, y: 20 }}
@@ -304,10 +340,11 @@ export default function BostonMassachusettsVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Educational institutions in Aurora Colorado provide consistent student populations and staff, creating ideal vending machine opportunities.</p>
+                <p className="text-stone leading-relaxed">Home to Harvard University, MIT, Boston University, and numerous colleges, Boston's education sector provides consistent student traffic and long-term placement opportunities.</p>
               </motion.div>
+              
               <motion.div
-                key="Manufacturing"
+                key="Technology"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
@@ -317,112 +354,61 @@ export default function BostonMassachusettsVendingLeadsPage() {
                 <div className="text-purple-600 mb-4">
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Aurora Colorado's manufacturing sector offers large employee bases and extended operating hours, perfect for vending machine placement.</p>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Technology</h3>
+                <p className="text-stone leading-relaxed">Boston's thriving tech scene includes companies like Wayfair, HubSpot, and numerous startups, creating high-traffic office environments perfect for vending machines.</p>
               </motion.div>
+              
+              <motion.div
+                key="Finance"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="bg-yellow-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-yellow-600 mb-4">
+                  <CurrencyDollarIcon className="w-12 h-12" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Finance</h3>
+                <p className="text-stone leading-relaxed">Boston's financial district houses major banks, investment firms, and financial services companies with high employee density and consistent foot traffic.</p>
+              </motion.div>
+              
               <motion.div
                 key="Retail"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.30000000000000004 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
                 viewport={{ once: true }}
-                className="bg-orange-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+                className="bg-red-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
-                <div className="text-orange-600 mb-4">
+                <div className="text-red-600 mb-4">
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Retail locations throughout Aurora Colorado provide high customer traffic and diverse demographics for vending machine success.</p>
+                <p className="text-stone leading-relaxed">From Faneuil Hall to Newbury Street, Boston's retail districts attract tourists and locals alike, providing excellent vending machine placement opportunities.</p>
               </motion.div>
-              <motion.div
-                key="Office Buildings"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                viewport={{ once: true }}
-                className="bg-indigo-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
-              >
-                <div className="text-indigo-600 mb-4">
-                  <BuildingOfficeIcon className="w-12 h-12" />
-                </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Professional office spaces in Aurora Colorado offer captive audiences during business hours with consistent daily traffic.</p>
-              </motion.div>
+              
               <motion.div
                 key="Transportation"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.5 }}
                 viewport={{ once: true }}
-                className="bg-red-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+                className="bg-indigo-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
-                <div className="text-red-600 mb-4">
+                <div className="text-indigo-600 mb-4">
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Aurora Colorado's transportation hubs including airports, bus stations, and transit centers provide high-volume foot traffic.</p>
+                <p className="text-stone leading-relaxed">Boston's MBTA system, Logan Airport, and major transportation hubs create high-traffic areas perfect for vending machine placement and customer convenience.</p>
               </motion.div>
             </div>
           </div>
         </section>
 
-        {/* Hot Leads Section */}
-        <section className="py-16 bg-warm-white">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <motion.h2
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: true }}
-                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
-              >
-                One-Time Location Packages for {cityDisplayName}
-              </motion.h2>
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                viewport={{ once: true }}
-                className="text-lg text-stone max-w-3xl mx-auto"
-              >
-                Get immediate access to qualified vending machine locations without monthly commitments.
-              </motion.p>
-            </div>
-            <HotLeads />
-          </div>
-        </section>
-
-        {/* Vending Course Section */}
-        <section className="py-16 bg-white">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <motion.h2
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: true }}
-                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
-              >
-                Learn the Vending Machine Business
-              </motion.h2>
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                viewport={{ once: true }}
-                className="text-lg text-stone max-w-3xl mx-auto"
-              >
-                Master the fundamentals of vending machine operations and maximize your success in {cityDisplayName}.
-              </motion.p>
-            </div>
-            <VendingCourse />
-          </div>
-        </section>
-
         {/* FAQ Section */}
         <section className="py-16 bg-warm-white">
-          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <motion.h2
                 initial={{ opacity: 0, y: 20 }}
@@ -431,20 +417,20 @@ export default function BostonMassachusettsVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
               >
-                Frequently Asked Questions
+                Frequently Asked Questions About Vending in {cityDisplayName}
               </motion.h2>
-              <motion.p 
+              <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
                 viewport={{ once: true }}
-                className="text-lg text-chocolate/70 leading-relaxed"
+                className="text-lg text-stone max-w-3xl mx-auto"
               >
-                Everything you need to know about vending machine opportunities in {cityDisplayName}.
+                Get answers to common questions about vending machine opportunities in Boston's competitive market.
               </motion.p>
             </div>
             
-            <div className="space-y-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               
               <motion.div
                 key="0"
@@ -454,9 +440,10 @@ export default function BostonMassachusettsVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What types of vending machine locations are available in Aurora?</h3>
-                <p className="text-stone leading-relaxed">Aurora offers diverse vending opportunities including healthcare facilities, educational institutions, manufacturing plants, retail locations, office buildings, and transportation hubs. Each location is pre-verified for optimal vending machine success.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">What types of vending machine locations are available in Boston?</h3>
+                <p className="text-stone leading-relaxed">Boston offers diverse vending opportunities including healthcare facilities, educational institutions, technology companies, financial services, retail locations, office buildings, and transportation hubs. Each location is pre-verified for optimal vending machine success.</p>
               </motion.div>
+              
               <motion.div
                 key="1"
                 initial={{ opacity: 0, y: 20 }}
@@ -465,9 +452,10 @@ export default function BostonMassachusettsVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">How quickly can I get vending machine leads for Aurora?</h3>
-                <p className="text-stone leading-relaxed">Our Aurora vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">How quickly can I get vending machine leads for Boston?</h3>
+                <p className="text-stone leading-relaxed">Our Boston vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.</p>
               </motion.div>
+              
               <motion.div
                 key="2"
                 initial={{ opacity: 0, y: 20 }}
@@ -476,20 +464,22 @@ export default function BostonMassachusettsVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What makes Aurora a good market for vending machines?</h3>
-                <p className="text-stone leading-relaxed">Aurora features a strong business community with diverse industries, stable employment, and consistent foot traffic. The city's economic growth and business-friendly environment create ideal conditions for vending machine success.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">What makes Boston a good market for vending machines?</h3>
+                <p className="text-stone leading-relaxed">Boston features a strong business community with diverse industries, stable employment, and consistent foot traffic. The city's economic growth, educational institutions, and business-friendly environment create ideal conditions for vending machine success.</p>
               </motion.div>
+              
               <motion.div
                 key="3"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.30000000000000004 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">Do you provide ongoing support for Aurora locations?</h3>
-                <p className="text-stone leading-relaxed">Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Aurora.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">Do you provide ongoing support for Boston locations?</h3>
+                <p className="text-stone leading-relaxed">Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Boston.</p>
               </motion.div>
+              
               <motion.div
                 key="4"
                 initial={{ opacity: 0, y: 20 }}
@@ -498,9 +488,10 @@ export default function BostonMassachusettsVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What industries in Aurora are best for vending machines?</h3>
-                <p className="text-stone leading-relaxed">Healthcare, education, manufacturing, retail, office buildings, and transportation sectors in Aurora show the highest potential for vending machine success due to consistent foot traffic and captive audiences.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">What industries in Boston are best for vending machines?</h3>
+                <p className="text-stone leading-relaxed">Healthcare, education, technology, finance, retail, office buildings, and transportation sectors in Boston show the highest potential for vending machine success due to consistent foot traffic and captive audiences.</p>
               </motion.div>
+              
               <motion.div
                 key="5"
                 initial={{ opacity: 0, y: 20 }}
@@ -509,30 +500,32 @@ export default function BostonMassachusettsVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">How do you verify the quality of Aurora vending locations?</h3>
-                <p className="text-stone leading-relaxed">We conduct thorough research on each Aurora location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">How do you verify the quality of Boston vending locations?</h3>
+                <p className="text-stone leading-relaxed">We conduct thorough research on each Boston location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.</p>
               </motion.div>
+              
               <motion.div
                 key="6"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.6000000000000001 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">Can I get customized vending leads for specific areas of Aurora?</h3>
-                <p className="text-stone leading-relaxed">Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Aurora based on your preferences and target market requirements.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">Can I get customized vending leads for specific areas of Boston?</h3>
+                <p className="text-stone leading-relaxed">Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Boston based on your preferences and target market requirements.</p>
               </motion.div>
+              
               <motion.div
                 key="7"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.7000000000000001 }}
+                transition={{ duration: 0.8, delay: 0.7 }}
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What's the typical ROI for vending machines in Aurora?</h3>
-                <p className="text-stone leading-relaxed">Vending machines in Aurora typically show strong ROI due to the city's business density and consistent traffic patterns. Our research shows average payback periods of 12-18 months for well-placed machines.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">What's the typical ROI for vending machines in Boston?</h3>
+                <p className="text-stone leading-relaxed">Vending machines in Boston typically show strong ROI due to the city's business density and consistent traffic patterns. Our research shows average payback periods of 12-18 months for well-placed machines.</p>
               </motion.div>
             </div>
           </div>

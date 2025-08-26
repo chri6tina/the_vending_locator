@@ -13,12 +13,12 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
 export default function SilverSpringMarylandVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Silver Spring';
+  const cityDisplayName = 'Silver';
   const stateDisplayName = 'Maryland';
   
   // City-specific data
   const cityData = {
-  'name': 'Silver Spring',
+  'name': 'Silver',
   'state': 'Maryland',
   'population': '100K-500K',
   'businesses': '10K-50K',

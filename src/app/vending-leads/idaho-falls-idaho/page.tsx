@@ -13,12 +13,12 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
 export default function IdahoFallsIdahoVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Idaho Falls';
+  const cityDisplayName = 'Idaho';
   const stateDisplayName = 'Idaho';
   
   // City-specific data
   const cityData = {
-  'name': 'Idaho Falls',
+  'name': 'Idaho',
   'state': 'Idaho',
   'population': '100K-500K',
   'businesses': '10K-50K',

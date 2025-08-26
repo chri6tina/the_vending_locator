@@ -13,12 +13,12 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
 export default function DurhamNorthCarolinaVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Durham North Carolina';
+  const cityDisplayName = 'Durham';
   const stateDisplayName = 'Carolina';
   
   // City-specific data
   const cityData = {
-  'name': 'Durham North Carolina',
+  'name': 'Durham',
   'state': 'Carolina',
   'population': '100K-500K',
   'businesses': '10K-50K',
@@ -93,9 +93,11 @@ export default function DurhamNorthCarolinaVendingLeadsPage() {
               <Link href="/vending-leads" className="hover:text-navy transition-colors">
                 Vending Leads
               </Link>
-              <span>/</span>
-              
-              <span className="text-charcoal font-medium">{cityDisplayName}</span>
+              <Link href={`/vending-leads/${stateDisplayName.toLowerCase().replace(/\s+/g, '-')}`} className="hover:text-navy transition-colors">
+                    {stateDisplayName}
+                  </Link>
+                  <span>/</span>
+                  <span className="text-charcoal font-medium">{cityDisplayName}</span>
             </div>
           </div>
         </nav>

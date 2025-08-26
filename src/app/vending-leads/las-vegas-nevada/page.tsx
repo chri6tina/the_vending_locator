@@ -13,12 +13,12 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
 export default function LasVegasNevadaVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Las Vegas';
+  const cityDisplayName = 'Las';
   const stateDisplayName = 'Nevada';
   
   // City-specific data
   const cityData = {
-  'name': 'Las Vegas',
+  'name': 'Las',
   'state': 'Nevada',
   'population': '100K-500K',
   'businesses': '10K-50K',

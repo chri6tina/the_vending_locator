@@ -13,12 +13,12 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
 export default function NewHavenConnecticutVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'New Haven';
+  const cityDisplayName = 'New';
   const stateDisplayName = 'Connecticut';
   
   // City-specific data
   const cityData = {
-  'name': 'New Haven',
+  'name': 'New',
   'state': 'Connecticut',
   'population': '100K-500K',
   'businesses': '10K-50K',

@@ -13,12 +13,12 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
 export default function FortLauderdaleFloridaVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Fort Lauderdale';
+  const cityDisplayName = 'Fort';
   const stateDisplayName = 'Florida';
   
   // City-specific data
   const cityData = {
-  'name': 'Fort Lauderdale',
+  'name': 'Fort',
   'state': 'Florida',
   'population': '100K-500K',
   'businesses': '10K-50K',

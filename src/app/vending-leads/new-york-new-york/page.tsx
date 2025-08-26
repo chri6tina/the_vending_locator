@@ -13,12 +13,12 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
 export default function NewYorkNewYorkVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'New York New York';
+  const cityDisplayName = 'New';
   const stateDisplayName = 'York';
   
   // City-specific data
   const cityData = {
-  'name': 'New York New York',
+  'name': 'New',
   'state': 'York',
   'population': '500K+',
   'businesses': '50K+',
@@ -93,9 +93,11 @@ export default function NewYorkNewYorkVendingLeadsPage() {
               <Link href="/vending-leads" className="hover:text-navy transition-colors">
                 Vending Leads
               </Link>
-              <span>/</span>
-              
-              <span className="text-charcoal font-medium">{cityDisplayName}</span>
+              <Link href={`/vending-leads/${stateDisplayName.toLowerCase().replace(/\s+/g, '-')}`} className="hover:text-navy transition-colors">
+                    {stateDisplayName}
+                  </Link>
+                  <span>/</span>
+                  <span className="text-charcoal font-medium">{cityDisplayName}</span>
             </div>
           </div>
         </nav>

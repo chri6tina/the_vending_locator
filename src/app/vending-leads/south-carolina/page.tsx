@@ -13,12 +13,12 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
 export default function SouthCarolinaVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'South Carolina';
+  const cityDisplayName = 'South';
   const stateDisplayName = 'Carolina';
   
   // City-specific data
   const cityData = {
-  'name': 'South Carolina',
+  'name': 'South',
   'state': 'Carolina',
   'population': '50K-100K',
   'businesses': '5K-10K',

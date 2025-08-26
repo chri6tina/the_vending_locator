@@ -13,12 +13,12 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
 export default function TwinFallsIdahoVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Twin Falls';
+  const cityDisplayName = 'Twin';
   const stateDisplayName = 'Idaho';
   
   // City-specific data
   const cityData = {
-  'name': 'Twin Falls',
+  'name': 'Twin',
   'state': 'Idaho',
   'population': '100K-500K',
   'businesses': '10K-50K',

@@ -13,12 +13,12 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
 export default function CedarRapidsIowaVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Cedar Rapids';
+  const cityDisplayName = 'Cedar';
   const stateDisplayName = 'Iowa';
   
   // City-specific data
   const cityData = {
-  'name': 'Cedar Rapids',
+  'name': 'Cedar',
   'state': 'Iowa',
   'population': '100K-500K',
   'businesses': '10K-50K',

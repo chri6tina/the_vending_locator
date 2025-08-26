@@ -13,12 +13,12 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
 export default function CorpusChristiTexasVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Corpus Christi';
+  const cityDisplayName = 'Corpus';
   const stateDisplayName = 'Texas';
   
   // City-specific data
   const cityData = {
-  'name': 'Corpus Christi',
+  'name': 'Corpus',
   'state': 'Texas',
   'population': '100K-500K',
   'businesses': '10K-50K',

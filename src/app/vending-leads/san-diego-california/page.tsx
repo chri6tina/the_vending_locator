@@ -13,12 +13,12 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
 export default function SanDiegoCaliforniaVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'San Diego';
+  const cityDisplayName = 'San';
   const stateDisplayName = 'California';
   
   // City-specific data
   const cityData = {
-  'name': 'San Diego',
+  'name': 'San',
   'state': 'California',
   'population': '100K-500K',
   'businesses': '10K-50K',

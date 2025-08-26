@@ -13,12 +13,12 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
 export default function StPetersburgFloridaVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'St Petersburg';
+  const cityDisplayName = 'St';
   const stateDisplayName = 'Florida';
   
   // City-specific data
   const cityData = {
-  'name': 'St Petersburg',
+  'name': 'St',
   'state': 'Florida',
   'population': '100K-500K',
   'businesses': '10K-50K',

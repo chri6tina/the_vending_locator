@@ -13,12 +13,12 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
 export default function LosAngelesCaliforniaVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Los Angeles';
+  const cityDisplayName = 'Los';
   const stateDisplayName = 'California';
   
   // City-specific data
   const cityData = {
-  'name': 'Los Angeles',
+  'name': 'Los',
   'state': 'California',
   'population': '100K-500K',
   'businesses': '10K-50K',
