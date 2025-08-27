@@ -454,9 +454,10 @@ export default function MansfieldTexasVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What types of vending machine locations are available in Mansfield?</h3>
-                <p className="text-stone leading-relaxed">Mansfield offers diverse vending opportunities including healthcare facilities, educational institutions, manufacturing plants, retail locations, office buildings, and transportation hubs. Each location is pre-verified for optimal vending machine success.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">What types of vending machine locations are available in Mansfield, Texas?</h3>
+                <p className="text-stone leading-relaxed">Mansfield offers diverse vending opportunities including Methodist Mansfield Medical Center, Mansfield ISD schools, manufacturing facilities along US-287, retail centers like Walnut Creek Center, office buildings in the historic downtown, and transportation hubs along the Dallas-Fort Worth corridor. Each location is pre-verified for optimal vending machine success.</p>
               </motion.div>
+
               <motion.div
                 key="1"
                 initial={{ opacity: 0, y: 20 }}
@@ -465,9 +466,10 @@ export default function MansfieldTexasVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">How quickly can I get vending machine leads for Mansfield?</h3>
-                <p className="text-stone leading-relaxed">Our Mansfield vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">How quickly can I get vending machine leads for Mansfield, Texas?</h3>
+                <p className="text-stone leading-relaxed">Our Mansfield vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry into this growing Dallas-Fort Worth suburb.</p>
               </motion.div>
+
               <motion.div
                 key="2"
                 initial={{ opacity: 0, y: 20 }}
@@ -476,20 +478,22 @@ export default function MansfieldTexasVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What makes Mansfield a good market for vending machines?</h3>
-                <p className="text-stone leading-relaxed">Mansfield features a strong business community with diverse industries, stable employment, and consistent foot traffic. The city's economic growth and business-friendly environment create ideal conditions for vending machine success.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">What makes Mansfield, Texas a good market for vending machines?</h3>
+                <p className="text-stone leading-relaxed">Mansfield features a strong business community with diverse industries, stable employment from major employers like Methodist Mansfield Medical Center and Mansfield ISD, and consistent foot traffic from its strategic location between Dallas and Fort Worth. The city's economic growth and business-friendly environment create ideal conditions for vending machine success.</p>
               </motion.div>
+
               <motion.div
                 key="3"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.30000000000000004 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">Do you provide ongoing support for Mansfield locations?</h3>
-                <p className="text-stone leading-relaxed">Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Mansfield.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">Do you provide ongoing support for Mansfield, Texas locations?</h3>
+                <p className="text-stone leading-relaxed">Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Mansfield's growing business environment.</p>
               </motion.div>
+
               <motion.div
                 key="4"
                 initial={{ opacity: 0, y: 20 }}
@@ -498,9 +502,10 @@ export default function MansfieldTexasVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What industries in Mansfield are best for vending machines?</h3>
-                <p className="text-stone leading-relaxed">Healthcare, education, manufacturing, retail, office buildings, and transportation sectors in Mansfield show the highest potential for vending machine success due to consistent foot traffic and captive audiences.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">What industries in Mansfield, Texas are best for vending machines?</h3>
+                <p className="text-stone leading-relaxed">Healthcare (Methodist Mansfield Medical Center), education (Mansfield ISD with 35+ schools), manufacturing (along US-287 corridor), retail (Walnut Creek Center, Walnut Creek Country Club), office buildings (historic downtown), and transportation sectors in Mansfield show the highest potential for vending machine success due to consistent foot traffic and captive audiences.</p>
               </motion.div>
+
               <motion.div
                 key="5"
                 initial={{ opacity: 0, y: 20 }}
@@ -509,30 +514,116 @@ export default function MansfieldTexasVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">How do you verify the quality of Mansfield vending locations?</h3>
-                <p className="text-stone leading-relaxed">We conduct thorough research on each Mansfield location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">How do you verify the quality of Mansfield, Texas vending locations?</h3>
+                <p className="text-stone leading-relaxed">We conduct thorough research on each Mansfield location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included. We specifically verify locations around major employers and high-traffic areas.</p>
               </motion.div>
+
               <motion.div
                 key="6"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.6000000000000001 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">Can I get customized vending leads for specific areas of Mansfield?</h3>
-                <p className="text-stone leading-relaxed">Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Mansfield based on your preferences and target market requirements.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">Can I get customized vending leads for specific areas of Mansfield, Texas?</h3>
+                <p className="text-stone leading-relaxed">Absolutely! We can provide targeted vending leads for specific neighborhoods like historic downtown, business districts along US-287, industrial areas near the airport, or educational zones around Mansfield ISD schools based on your preferences and target market requirements.</p>
               </motion.div>
+
               <motion.div
                 key="7"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.7000000000000001 }}
+                transition={{ duration: 0.8, delay: 0.7 }}
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What's the typical ROI for vending machines in Mansfield?</h3>
-                <p className="text-stone leading-relaxed">Vending machines in Mansfield typically show strong ROI due to the city's business density and consistent traffic patterns. Our research shows average payback periods of 12-18 months for well-placed machines.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">What's the typical ROI for vending machines in Mansfield, Texas?</h3>
+                <p className="text-stone leading-relaxed">Vending machines in Mansfield typically show strong ROI due to the city's business density and consistent traffic patterns. Our research shows average payback periods of 12-18 months for well-placed machines, with healthcare and educational facilities showing the fastest returns.</p>
+              </motion.div>
+
+              <motion.div
+                key="8"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.8 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+              >
+                <h3 className="text-lg font-semibold text-charcoal mb-3">What are the major employers in Mansfield that create vending opportunities?</h3>
+                <p className="text-stone leading-relaxed">Major employers in Mansfield include Methodist Mansfield Medical Center (800+ employees), Mansfield ISD (2,000+ staff across 35+ schools), Walnut Creek Country Club, manufacturing facilities along US-287, and various retail and office businesses. These locations provide consistent foot traffic and captive audiences for vending machines.</p>
+              </motion.div>
+
+              <motion.div
+                key="9"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.9 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+              >
+                <h3 className="text-lg font-semibold text-charcoal mb-3">How does Mansfield's location between Dallas and Fort Worth benefit vending machine operators?</h3>
+                <p className="text-stone leading-relaxed">Mansfield's strategic location between Dallas and Fort Worth provides access to a combined metropolitan area of over 7 million people. This creates consistent business traffic, commuter patterns, and economic stability that benefits vending machine operators with reliable customer bases and reduced market volatility.</p>
+              </motion.div>
+
+              <motion.div
+                key="10"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 1.0 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+              >
+                <h3 className="text-lg font-semibold text-charcoal mb-3">What types of vending machines work best in Mansfield's business environment?</h3>
+                <p className="text-stone leading-relaxed">In Mansfield's business environment, snack and beverage machines work best in healthcare facilities and schools, while coffee machines excel in office buildings and manufacturing facilities. Healthy vending options are popular in educational and healthcare settings, while traditional snacks perform well in retail and transportation locations.</p>
+              </motion.div>
+
+              <motion.div
+                key="11"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 1.1 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+              >
+                <h3 className="text-lg font-semibold text-charcoal mb-3">What are the peak hours for vending machine usage in Mansfield?</h3>
+                <p className="text-stone leading-relaxed">Peak vending hours in Mansfield vary by location: healthcare facilities see steady traffic 24/7, schools peak during lunch breaks and after-school hours, manufacturing facilities peak during shift changes, office buildings peak during lunch hours and coffee breaks, and retail locations peak during shopping hours and weekends.</p>
+              </motion.div>
+
+              <motion.div
+                key="12"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 1.2 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+              >
+                <h3 className="text-lg font-semibold text-charcoal mb-3">How does Mansfield's growing population affect vending machine opportunities?</h3>
+                <p className="text-stone leading-relaxed">Mansfield's growing population of over 75,000 residents creates expanding vending opportunities. New residential developments bring new businesses, schools, and healthcare facilities, while existing businesses expand to serve the growing population. This growth ensures long-term stability and increasing demand for vending machine services.</p>
+              </motion.div>
+
+              <motion.div
+                key="13"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 1.3 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+              >
+                <h3 className="text-lg font-semibold text-charcoal mb-3">What seasonal factors affect vending machine performance in Mansfield?</h3>
+                <p className="text-stone leading-relaxed">Seasonal factors in Mansfield include increased demand during school months (August-May), higher beverage sales in hot Texas summers, increased retail traffic during holiday seasons, and consistent healthcare demand year-round. Understanding these patterns helps optimize vending machine placement and product selection.</p>
+              </motion.div>
+
+              <motion.div
+                key="14"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 1.4 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+              >
+                <h3 className="text-lg font-semibold text-charcoal mb-3">How do I get started with vending machines in Mansfield, Texas?</h3>
+                <p className="text-stone leading-relaxed">To get started with vending machines in Mansfield, begin by selecting a plan that matches your business goals, choose your target locations from our verified leads, and we'll provide comprehensive support including location research, contact information, and ongoing consultation to ensure your success in this growing Dallas-Fort Worth market.</p>
               </motion.div>
             </div>
           </div>
