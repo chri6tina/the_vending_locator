@@ -77,7 +77,7 @@ export default function CheckoutSuccessPreview() {
               <div className="space-y-4 text-navy/80">
                 <div className="flex items-start gap-4 p-4 bg-white/50 rounded-xl">
                   <div className="w-3 h-3 rounded-full bg-navy mt-2 flex-none" />
-                  <p className="text-base">You'll receive a confirmation email at <strong className="text-navy">{mockPaymentDetails.customerEmail}</strong></p>
+                  <p className="text-base">You'll receive a confirmation call at <strong className="text-navy">{mockPaymentDetails.customerEmail}</strong></p>
                 </div>
                 <div className="flex items-start gap-4 p-4 bg-white/50 rounded-xl">
                   <div className="w-3 h-3 rounded-full bg-navy mt-2 flex-none" />

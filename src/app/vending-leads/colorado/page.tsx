@@ -12,21 +12,19 @@ import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
 export default function ColoradoVendingLeadsPage() {
-  // City and state display names
-  const cityDisplayName = 'Colorado';
+  // State display name
   const stateDisplayName = 'Colorado';
   
-  // City-specific data
-  const cityData = {
-  'name': 'Colorado',
-  'state': 'Colorado',
-  'population': '1M+',
-  'businesses': '100K+',
-  'industries': '15+',
-  'verifiedLocations': '500+',
-  'rating': '4.8/5',
-  'description': 'Thriving business community in Colorado'
-};
+  // State-specific data
+  const stateData = {
+    'name': 'Colorado',
+    'population': '5.8M+',
+    'businesses': '600K+',
+    'industries': '15+',
+    'verifiedLocations': '2K-4K',
+    'rating': '4.8/5',
+    'description': 'Centennial State with technology, healthcare, and outdoor recreation'
+  };
   
   // Active users counter
   const [activeUsers, setActiveUsers] = useState(28)
@@ -98,7 +96,7 @@ export default function ColoradoVendingLeadsPage() {
                 {stateDisplayName}
               </Link>
               <span>/</span>
-              <span className="text-charcoal font-medium">{cityDisplayName}</span>
+              <span className="text-charcoal font-medium">{stateDisplayName}</span>
             </div>
           </div>
         </nav>
@@ -129,7 +127,7 @@ export default function ColoradoVendingLeadsPage() {
                 className="text-4xl md:text-6xl font-playfair font-bold text-charcoal mb-6 leading-tight"
               >
                 Vending Machine Locations in{' '}
-                <span className="text-navy">{cityDisplayName}, {stateDisplayName}</span>
+                <span className="text-navy">{stateDisplayName}</span>
               </motion.h1>
 
               {/* City-Specific Value Proposition */}
@@ -205,19 +203,19 @@ export default function ColoradoVendingLeadsPage() {
                 className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto"
               >
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-navy">{cityData.population}</div>
+                  <div className="text-2xl font-bold text-navy">{stateData.population}</div>
                   <div className="text-sm text-stone">Population</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-navy">{cityData.businesses}</div>
+                  <div className="text-2xl font-bold text-navy">{stateData.businesses}</div>
                   <div className="text-sm text-stone">Businesses</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-navy">{cityData.industries}</div>
+                  <div className="text-2xl font-bold text-navy">{stateData.industries}</div>
                   <div className="text-sm text-stone">Industries</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-navy">{cityData.verifiedLocations}</div>
+                  <div className="text-2xl font-bold text-navy">{stateData.verifiedLocations}</div>
                   <div className="text-sm text-stone">Verified Locations</div>
                 </div>
               </motion.div>
@@ -236,7 +234,7 @@ export default function ColoradoVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
               >
-                Get Access to Qualified Vending Machine Locations in {cityDisplayName}
+                Get Access to Qualified Vending Machine Locations in {stateDisplayName}
               </motion.h2>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
@@ -263,7 +261,7 @@ export default function ColoradoVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
               >
-                Business Landscape in {cityDisplayName}
+                Business Landscape in {stateDisplayName}
               </motion.h2>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
@@ -272,7 +270,7 @@ export default function ColoradoVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="text-lg text-stone max-w-3xl mx-auto"
               >
-                Discover the diverse industries and business opportunities that make {cityDisplayName} an ideal market for vending machines.
+                Discover the diverse industries and business opportunities that make {stateDisplayName} an ideal market for vending machines.
               </motion.p>
             </div>
             
@@ -377,7 +375,7 @@ export default function ColoradoVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
               >
-                One-Time Location Packages for {cityDisplayName}
+                One-Time Location Packages for {stateDisplayName}
               </motion.h2>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
@@ -413,7 +411,7 @@ export default function ColoradoVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="text-lg text-stone max-w-3xl mx-auto"
               >
-                Master the fundamentals of vending machine operations and maximize your success in {cityDisplayName}.
+                Master the fundamentals of vending machine operations and maximize your success in {stateDisplayName}.
               </motion.p>
             </div>
             <VendingCourse />
@@ -440,7 +438,7 @@ export default function ColoradoVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="text-lg text-chocolate/70 leading-relaxed"
               >
-                Everything you need to know about vending machine opportunities in {cityDisplayName}.
+                Everything you need to know about vending machine opportunities in {stateDisplayName}.
               </motion.p>
             </div>
             

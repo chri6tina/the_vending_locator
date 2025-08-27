@@ -12,21 +12,19 @@ import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
 export default function NewHampshireVendingLeadsPage() {
-  // City and state display names
-  const cityDisplayName = 'New';
+  // State display name
   const stateDisplayName = 'New Hampshire';
   
-  // City-specific data
-  const cityData = {
-  'name': 'New',
-  'state': 'New Hampshire',
-  'population': '50K-100K',
-  'businesses': '5K-10K',
-  'industries': '8-12',
-  'verifiedLocations': '100-200',
-  'rating': '4.8/5',
-  'description': 'Thriving business community in New Hampshire'
-};
+  // State-specific data
+  const stateData = {
+    'name': 'New Hampshire',
+    'population': '1.4M+',
+    'businesses': '140K+',
+    'industries': '15+',
+    'verifiedLocations': '700-1.4K',
+    'rating': '4.8/5',
+    'description': 'Granite State with healthcare, education, and manufacturing'
+  };
   
   // Active users counter
   const [activeUsers, setActiveUsers] = useState(28)
@@ -98,7 +96,7 @@ export default function NewHampshireVendingLeadsPage() {
                 {stateDisplayName}
               </Link>
               <span>/</span>
-              <span className="text-charcoal font-medium">{cityDisplayName}</span>
+              <span className="text-charcoal font-medium">{stateDisplayName}</span>
             </div>
           </div>
         </nav>
@@ -129,7 +127,7 @@ export default function NewHampshireVendingLeadsPage() {
                 className="text-4xl md:text-6xl font-playfair font-bold text-charcoal mb-6 leading-tight"
               >
                 Vending Machine Locations in{' '}
-                <span className="text-navy">{cityDisplayName}, {stateDisplayName}</span>
+                <span className="text-navy">{stateDisplayName}</span>
               </motion.h1>
 
               {/* City-Specific Value Proposition */}
@@ -205,19 +203,19 @@ export default function NewHampshireVendingLeadsPage() {
                 className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto"
               >
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-navy">{cityData.population}</div>
+                  <div className="text-2xl font-bold text-navy">{stateData.population}</div>
                   <div className="text-sm text-stone">Population</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-navy">{cityData.businesses}</div>
+                  <div className="text-2xl font-bold text-navy">{stateData.businesses}</div>
                   <div className="text-sm text-stone">Businesses</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-navy">{cityData.industries}</div>
+                  <div className="text-2xl font-bold text-navy">{stateData.industries}</div>
                   <div className="text-sm text-stone">Industries</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-navy">{cityData.verifiedLocations}</div>
+                  <div className="text-2xl font-bold text-navy">{stateData.verifiedLocations}</div>
                   <div className="text-sm text-stone">Verified Locations</div>
                 </div>
               </motion.div>
@@ -236,7 +234,7 @@ export default function NewHampshireVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
               >
-                Get Access to Qualified Vending Machine Locations in {cityDisplayName}
+                Get Access to Qualified Vending Machine Locations in {stateDisplayName}
               </motion.h2>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
@@ -263,7 +261,7 @@ export default function NewHampshireVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
               >
-                Business Landscape in {cityDisplayName}
+                Business Landscape in {stateDisplayName}
               </motion.h2>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
@@ -272,7 +270,7 @@ export default function NewHampshireVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="text-lg text-stone max-w-3xl mx-auto"
               >
-                Discover the diverse industries and business opportunities that make {cityDisplayName} an ideal market for vending machines.
+                Discover the diverse industries and business opportunities that make {stateDisplayName} an ideal market for vending machines.
               </motion.p>
             </div>
             
@@ -377,7 +375,7 @@ export default function NewHampshireVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
               >
-                One-Time Location Packages for {cityDisplayName}
+                One-Time Location Packages for {stateDisplayName}
               </motion.h2>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
@@ -413,7 +411,7 @@ export default function NewHampshireVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="text-lg text-stone max-w-3xl mx-auto"
               >
-                Master the fundamentals of vending machine operations and maximize your success in {cityDisplayName}.
+                Master the fundamentals of vending machine operations and maximize your success in {stateDisplayName}.
               </motion.p>
             </div>
             <VendingCourse />
@@ -440,7 +438,7 @@ export default function NewHampshireVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="text-lg text-chocolate/70 leading-relaxed"
               >
-                Everything you need to know about vending machine opportunities in {cityDisplayName}.
+                Everything you need to know about vending machine opportunities in {stateDisplayName}.
               </motion.p>
             </div>
             

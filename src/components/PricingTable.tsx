@@ -23,7 +23,7 @@ const plans = [
       'Basic lead details (name, phone, address)',
       '15-mile radius search',
       '5-day delivery',
-      'Email support',
+      'Phone support',
       'Lifetime access to your leads'
     ]
   },
@@ -40,7 +40,7 @@ const plans = [
     radius: '25 miles',
     features: [
       '100+ qualified locations',
-      'Enhanced lead details with email addresses',
+      'Enhanced lead details with phone numbers',
       '25-mile radius search',
       '3-day delivery',
       'Priority support',
@@ -60,11 +60,11 @@ const plans = [
     radius: '25 miles',
     features: [
       '200+ qualified locations',
-      'Complete lead details with email addresses',
+      'Complete lead details with phone numbers',
       '25-mile radius search',
       '3-day delivery',
       'Vending eCourse included',
-      'Cold call & email scripts',
+      'Cold call scripts',
       'Contract templates',
       'Priority support',
       'Lifetime access to your leads'
@@ -83,11 +83,11 @@ const plans = [
     radius: '25 miles',
     features: [
       '300+ qualified locations',
-      'Complete lead details with email addresses',
+      'Complete lead details with phone numbers',
       '25-mile radius search',
       '3-day delivery',
       'Vending eCourse included',
-      'Cold call & email scripts',
+      'Cold call scripts',
       'Contract templates',
       'Business plan template',
       'Priority support',
@@ -291,15 +291,15 @@ export default function PricingTable() {
                   ))}
                 </tr>
 
-                {/* Lead Email Addresses */}
+                {/* Lead Phone Numbers */}
                 <tr className="hover:bg-gray-50 transition-colors duration-150">
                   <td className="px-8 py-6">
                     <div className="max-w-md">
                       <h5 className="text-base font-bold text-charcoal mb-2">
-                        Lead email addresses
+                        Lead phone numbers
                       </h5>
                       <p className="text-sm text-stone leading-relaxed font-medium">
-                        We find their email address if the email is listed on their website along with reviews and category data.
+                        We find their phone number if listed on their website along with reviews and category data.
                       </p>
                     </div>
                   </td>
@@ -431,15 +431,15 @@ export default function PricingTable() {
                   ))}
                 </tr>
 
-                {/* Cold Call & Email Script */}
+                {/* Cold Call Script */}
                 <tr className="hover:bg-gray-50 transition-colors duration-150">
                   <td className="px-8 py-6">
                     <div className="max-w-md">
                       <h5 className="text-base font-bold text-charcoal mb-2">
-                        Cold Call & Email Script
+                        Cold Call Script
                       </h5>
                       <p className="text-sm text-stone leading-relaxed font-medium">
-                        Gain an advantage in securing prime locations with our email and phone call scripts, designed to assist you in confidently closing the deal.
+                        Gain an advantage in securing prime locations with our phone call scripts, designed to assist you in confidently closing the deal.
                       </p>
                     </div>
                   </td>

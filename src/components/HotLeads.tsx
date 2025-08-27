@@ -13,7 +13,7 @@ const packages = [
       '1 qualified location',
       'Basic research included',
       '90-day delivery',
-      'Email support',
+      'Phone support',
     ],
     href: 'https://buy.stripe.com/5kQ7sL3JXfie0LDg7J6Na07',
     popular: false,

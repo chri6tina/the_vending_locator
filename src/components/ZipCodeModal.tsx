@@ -251,7 +251,7 @@ export default function ZipCodeModal({ isOpen, onClose, package: selectedPackage
                     <li>• We'll collect your information securely</li>
                     <li>• Redirect you to secure Stripe checkout</li>
                     <li>• Process your payment for {selectedPackage.name}</li>
-                    <li>• Send confirmation and next steps to your email</li>
+                    <li>• Send confirmation and next steps via phone</li>
                   </ul>
                 </div>
 
