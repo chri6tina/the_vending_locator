@@ -183,12 +183,17 @@ export default function AustinTexasVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 1.0 }}
                 className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 mb-8"
               >
-                <Link 
-                  href="/pricing"
-                  className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors"
+                <button 
+                  onClick={() => {
+                    const pricingSection = document.getElementById('pricing')
+                    if (pricingSection) {
+                      pricingSection.scrollIntoView({ behavior: 'smooth' })
+                    }
+                  }}
+                  className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
                 >
                   Get Started
-                </Link>
+                </button>
                 <Link 
                   href="/hot-leads"
                   className="w-full sm:w-auto bg-transparent text-chocolate border-2 border-chocolate px-8 py-3 rounded-lg font-semibold hover:bg-chocolate hover:text-white transition-colors"
@@ -226,7 +231,7 @@ export default function AustinTexasVendingLeadsPage() {
         </section>
 
         {/* Pricing Section */}
-        <section className="py-16 bg-warm-white">
+        <section id="pricing" className="py-16 bg-warm-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <motion.h2

@@ -145,17 +145,11 @@ export default function PricingTable() {
               key={plan.name}
               className={`relative bg-white rounded-2xl shadow-lg border-2 p-6 ${
                 plan.popular 
-                  ? 'border-navy bg-gradient-to-br from-navy/5 to-blue-50' 
+                  ? 'border-coral bg-gradient-to-br from-coral/5 to-orange-50 shadow-xl' 
                   : 'border-gray-200'
               }`}
             >
-              {plan.popular && (
-                <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                  <span className="bg-navy text-white px-4 py-1 rounded-full text-sm font-semibold">
-                    Most Popular
-                  </span>
-                </div>
-              )}
+
               
               <div className="text-center mb-6">
                 <h3 className="text-2xl font-bold text-charcoal mb-2">{plan.name}</h3>
@@ -194,7 +188,7 @@ export default function PricingTable() {
                 onClick={() => handlePlanClick(plan)}
                 className={`w-32 mx-auto py-3 px-6 rounded-lg font-semibold text-white transition-all duration-200 text-center block ${
                   plan.popular
-                    ? 'bg-navy hover:bg-navy-light shadow-lg'
+                    ? 'bg-gradient-to-r from-coral to-orange-500 hover:from-coral/90 hover:to-orange-500/90 shadow-xl transform hover:scale-105'
                     : 'bg-charcoal hover:bg-opacity-90'
                 }`}
               >
@@ -219,7 +213,9 @@ export default function PricingTable() {
                   </th>
                   {plans.map((plan) => (
                     <th key={plan.name} className="px-2 lg:px-8 py-4 lg:py-6 text-center">
-                      <div className="text-center">
+                      <div className="text-center relative">
+
+                        
                         <h3 className="text-lg lg:text-xl font-semibold text-charcoal mb-2 lg:mb-3">
                           {plan.name}
                         </h3>

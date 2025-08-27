@@ -16,6 +16,22 @@ export default function VendingLeadsPage() {
         { name: 'Corpus Christi', slug: 'corpus-christi-texas', vendorCount: '160+', businessCount: '220+', description: 'Major Gulf Coast port and energy hub' },
         { name: 'Lubbock', slug: 'lubbock-texas', vendorCount: '130+', businessCount: '180+', description: 'University and healthcare center' },
         { name: 'Amarillo', slug: 'amarillo-texas', vendorCount: '110+', businessCount: '150+', description: 'Transportation and energy hub' },
+        { name: 'Waco', slug: 'waco-texas', vendorCount: '140+', businessCount: '190+', description: 'Central Texas hub with Baylor University and healthcare' },
+        { name: 'Tyler', slug: 'tyler-texas', vendorCount: '130+', businessCount: '180+', description: 'East Texas healthcare and education hub' },
+        { name: 'Austin', slug: 'austin-texas', vendorCount: '200+', businessCount: '280+', description: 'State capital with technology and healthcare hub' },
+        { name: 'Houston', slug: 'houston-texas', vendorCount: '250+', businessCount: '350+', description: 'Major metropolitan area with energy and healthcare' },
+        { name: 'Dallas', slug: 'dallas-texas', vendorCount: '300+', businessCount: '400+', description: 'Major metropolitan area with diverse economy' },
+        { name: 'San Antonio', slug: 'san-antonio-texas', vendorCount: '220+', businessCount: '300+', description: 'Military presence and tourism hub' },
+        { name: 'Fort Worth', slug: 'fort-worth-texas', vendorCount: '180+', businessCount: '250+', description: 'Transportation and manufacturing center' },
+        { name: 'Arlington', slug: 'arlington-texas', vendorCount: '160+', businessCount: '220+', description: 'Entertainment and sports hub' },
+        { name: 'Plano', slug: 'plano-texas', vendorCount: '170+', businessCount: '240+', description: 'Technology and corporate headquarters' },
+        { name: 'Irving', slug: 'irving-texas', vendorCount: '150+', businessCount: '200+', description: 'Business and transportation hub' },
+        { name: 'McAllen', slug: 'mcallen-texas', vendorCount: '140+', businessCount: '190+', description: 'Border city with healthcare and retail' },
+        { name: 'Laredo', slug: 'laredo-texas', vendorCount: '160+', businessCount: '220+', description: 'Major international trade hub and logistics center' },
+        { name: 'Beaumont', slug: 'beaumont-texas', vendorCount: '140+', businessCount: '200+', description: 'Energy and petrochemical hub with major refineries' },
+        { name: 'Killeen', slug: 'killeen-texas', vendorCount: '150+', businessCount: '210+', description: 'Major military city home to Fort Hood' },
+        { name: 'Garland', slug: 'garland-texas', vendorCount: '180+', businessCount: '300+', description: 'Major Dallas suburb with manufacturing and healthcare' },
+        { name: 'Mesquite', slug: 'mesquite-texas', vendorCount: '160+', businessCount: '250+', description: 'Growing Dallas suburb with healthcare and retail' },
       ]
     },
     {
@@ -26,6 +42,21 @@ export default function VendingLeadsPage() {
         { name: 'Cape Coral', slug: 'cape-coral-florida', vendorCount: '120+', businessCount: '150+', description: 'Fastest-growing city in Southwest Florida' },
         { name: 'Gainesville', slug: 'gainesville-florida', vendorCount: '100+', businessCount: '120+', description: 'University and research hub' },
         { name: 'Clearwater', slug: 'clearwater-florida', vendorCount: '90+', businessCount: '100+', description: 'Gulf Coast tourism destination' },
+        { name: 'Jacksonville', slug: 'jacksonville-florida', vendorCount: '400+', businessCount: '500+', description: 'Largest city by area with major port and military presence' },
+        { name: 'Tampa', slug: 'tampa-florida', vendorCount: '300+', businessCount: '350+', description: 'Major metropolitan area with healthcare and finance' },
+        { name: 'Orlando', slug: 'orlando-florida', vendorCount: '250+', businessCount: '280+', description: 'Tourism and technology hub with theme parks' },
+        { name: 'Tallahassee', slug: 'tallahassee-florida', vendorCount: '180+', businessCount: '220+', description: 'State capital with government and education' },
+        { name: 'Fort Myers', slug: 'fort-myers-florida', vendorCount: '100+', businessCount: '120+', description: 'Southwest Florida tourism and healthcare hub' },
+        { name: 'Sarasota', slug: 'sarasota-florida', vendorCount: '80+', businessCount: '100+', description: 'Arts and culture hub with healthcare and tourism' },
+      ]
+    },
+    {
+      name: 'Illinois',
+      slug: 'illinois',
+      cities: [
+        { name: 'Chicago', slug: 'chicago-illinois', vendorCount: '400+', businessCount: '500+', description: 'Major metropolitan area with diverse business opportunities' },
+        { name: 'Bloomington', slug: 'bloomington-illinois', vendorCount: '120+', businessCount: '150+', description: 'Insurance and manufacturing center' },
+        { name: 'Decatur', slug: 'decatur-illinois', vendorCount: '100+', businessCount: '130+', description: 'Agricultural and industrial hub' },
       ]
     },
     {
@@ -55,8 +86,7 @@ export default function VendingLeadsPage() {
         { name: 'Silver Spring', slug: 'silver-spring-maryland', vendorCount: '140+', businessCount: '200+', description: 'Major suburban city with government and healthcare' },
         { name: 'Columbia', slug: 'columbia-maryland', vendorCount: '120+', businessCount: '180+', description: 'Planned community with healthcare and education' },
         { name: 'Gaithersburg', slug: 'gaithersburg-maryland', vendorCount: '110+', businessCount: '160+', description: 'Technology and healthcare hub' },
-        { name: 'New Haven', slug: 'new-haven-connecticut', vendorCount: '100+', businessCount: '140+', description: 'University town with healthcare and education' },
-        { name: 'Bridgeport', slug: 'bridgeport-connecticut', vendorCount: '90+', businessCount: '130+', description: 'Major port city with manufacturing and healthcare' },
+        
         { name: 'Rockville', slug: 'rockville-maryland', vendorCount: '130+', businessCount: '190+', description: 'State capital with government and healthcare' },
         { name: 'Frederick', slug: 'frederick-maryland', vendorCount: '100+', businessCount: '150+', description: 'Historic city with healthcare and manufacturing' },
         { name: 'Annapolis', slug: 'annapolis-maryland', vendorCount: '80+', businessCount: '120+', description: 'State capital with government and tourism' },
@@ -95,11 +125,7 @@ export default function VendingLeadsPage() {
         { name: 'Akron', slug: 'akron-ohio', vendorCount: '110+', businessCount: '150+', description: 'Manufacturing and healthcare hub' },
       ]
     },
-    {
-      name: 'Missouri',
-      slug: 'missouri',
-      cities: []
-    },
+    
     {
       name: 'North Carolina',
       slug: 'north-carolina',
@@ -176,156 +202,9 @@ export default function VendingLeadsPage() {
       slug: 'pennsylvania',
       cities: [
         { name: 'Philadelphia', slug: 'philadelphia-pennsylvania', vendorCount: '320+', businessCount: '450+', description: 'Major East Coast business and healthcare hub' },
+        { name: 'Pittsburgh', slug: 'pittsburgh-pennsylvania', vendorCount: '280+', businessCount: '350+', description: 'Steel city with growing tech sector' },
+        { name: 'York', slug: 'york-pennsylvania', vendorCount: '120+', businessCount: '150+', description: 'Historic city with manufacturing heritage' },
       ]
-    },
-    {
-      name: 'South Carolina',
-      slug: 'south-carolina',
-      cities: []
-    },
-    {
-      name: 'Dakota',
-      slug: 'dakota',
-      cities: [
-        { name: 'North Dakota', slug: 'north-dakota', vendorCount: '80+', businessCount: '120+', description: 'Energy and agriculture hub with growing business community' },
-        { name: 'South Dakota', slug: 'south-dakota', vendorCount: '70+', businessCount: '100+', description: 'Tourism and healthcare center with diverse economy' }
-      ]
-    },
-    {
-      name: 'North Dakota',
-      slug: 'north-dakota',
-      cities: []
-    },
-    {
-      name: 'South Dakota',
-      slug: 'south-dakota',
-      cities: []
-    },
-    {
-      name: 'Montana',
-      slug: 'montana',
-      cities: []
-    },
-    {
-      name: 'Wyoming',
-      slug: 'wyoming',
-      cities: []
-    },
-    {
-      name: 'Kentucky',
-      slug: 'kentucky',
-      cities: []
-    },
-    {
-      name: 'Wisconsin',
-      slug: 'wisconsin',
-      cities: []
-    },
-    {
-      name: 'West Virginia',
-      slug: 'west-virginia',
-      cities: []
-    },
-    {
-      name: 'Virginia',
-      slug: 'virginia',
-      cities: []
-    },
-    {
-      name: 'New Mexico',
-      slug: 'new-mexico',
-      cities: []
-    },
-    {
-      name: 'Alaska',
-      slug: 'alaska',
-      cities: []
-    },
-    {
-      name: 'Delaware',
-      slug: 'delaware',
-      cities: []
-    },
-    {
-      name: 'Rhode Island',
-      slug: 'rhode-island',
-      cities: []
-    },
-    {
-      name: 'Island',
-      slug: 'island',
-      cities: [
-        { name: 'Rhode Island', slug: 'rhode-island', vendorCount: '80+', businessCount: '120+', description: 'Coastal business hub with diverse economic opportunities' }
-      ]
-    },
-    {
-      name: 'New Hampshire',
-      slug: 'new-hampshire',
-      cities: []
-    },
-    {
-      name: 'Hampshire',
-      slug: 'hampshire',
-      cities: [
-        { name: 'New Hampshire', slug: 'new-hampshire', vendorCount: '60+', businessCount: '80+', description: 'Diverse economy with healthcare and education focus' }
-      ]
-    },
-    {
-      name: 'Vermont',
-      slug: 'vermont',
-      cities: []
-    },
-    {
-      name: 'Connecticut',
-      slug: 'connecticut',
-      cities: []
-    },
-    {
-      name: 'New Jersey',
-      slug: 'new-jersey',
-      cities: []
-    },
-    {
-      name: 'Jersey',
-      slug: 'jersey',
-      cities: [
-        { name: 'New Jersey', slug: 'new-jersey', vendorCount: '200+', businessCount: '300+', description: 'Major East Coast business hub with diverse industries' }
-      ]
-    },
-    {
-      name: 'Indiana',
-      slug: 'indiana',
-      cities: []
-    },
-    {
-      name: 'Nebraska',
-      slug: 'nebraska',
-      cities: []
-    },
-    {
-      name: 'Mississippi',
-      slug: 'mississippi',
-      cities: []
-    },
-    {
-      name: 'Arkansas',
-      slug: 'arkansas',
-      cities: []
-    },
-    {
-      name: 'Utah',
-      slug: 'utah',
-      cities: []
-    },
-    {
-      name: 'Hawaii',
-      slug: 'hawaii',
-      cities: []
-    },
-    {
-      name: 'Maine',
-      slug: 'maine',
-      cities: []
     }
   ]
 
