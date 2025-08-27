@@ -138,7 +138,7 @@ export default function ProvidenceRhodeIslandVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Get pre-qualified vending machine locations in Aurora's diverse and growing business economy. 
+                Get pre-qualified vending machine locations in Providence Rhode's diverse and growing business economy. 
                 Access verified businesses with detailed contact information and placement opportunities.
               </motion.p>
 
@@ -289,7 +289,7 @@ export default function ProvidenceRhodeIslandVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Aurora Colorado features modern healthcare facilities including hospitals, clinics, and medical offices with high foot traffic and stable operations.</p>
+                <p className="text-stone leading-relaxed">Providence Rhode features modern healthcare facilities including hospitals, clinics, and medical offices with high foot traffic and stable operations.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -303,7 +303,7 @@ export default function ProvidenceRhodeIslandVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Educational institutions in Aurora Colorado provide consistent student populations and staff, creating ideal vending machine opportunities.</p>
+                <p className="text-stone leading-relaxed">Educational institutions in Providence Rhode provide consistent student populations and staff, creating ideal vending machine opportunities.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -317,7 +317,7 @@ export default function ProvidenceRhodeIslandVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Aurora Colorado's manufacturing sector offers large employee bases and extended operating hours, perfect for vending machine placement.</p>
+                <p className="text-stone leading-relaxed">Providence Rhode's manufacturing sector offers large employee bases and extended operating hours, perfect for vending machine placement.</p>
               </motion.div>
               <motion.div
                 key="Retail"
@@ -331,7 +331,7 @@ export default function ProvidenceRhodeIslandVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Retail locations throughout Aurora Colorado provide high customer traffic and diverse demographics for vending machine success.</p>
+                <p className="text-stone leading-relaxed">Retail locations throughout Providence Rhode provide high customer traffic and diverse demographics for vending machine success.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -345,7 +345,7 @@ export default function ProvidenceRhodeIslandVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Professional office spaces in Aurora Colorado offer captive audiences during business hours with consistent daily traffic.</p>
+                <p className="text-stone leading-relaxed">Professional office spaces in Providence Rhode offer captive audiences during business hours with consistent daily traffic.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -359,7 +359,7 @@ export default function ProvidenceRhodeIslandVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Aurora Colorado's transportation hubs including airports, bus stations, and transit centers provide high-volume foot traffic.</p>
+                <p className="text-stone leading-relaxed">Providence Rhode's transportation hubs including airports, bus stations, and transit centers provide high-volume foot traffic.</p>
               </motion.div>
             </div>
           </div>
@@ -453,8 +453,8 @@ export default function ProvidenceRhodeIslandVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What types of vending machine locations are available in Aurora?</h3>
-                <p className="text-stone leading-relaxed">Aurora offers diverse vending opportunities including healthcare facilities, educational institutions, manufacturing plants, retail locations, office buildings, and transportation hubs. Each location is pre-verified for optimal vending machine success.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">What types of vending machine locations are available in Providence Rhode?</h3>
+                <p className="text-stone leading-relaxed">Providence Rhode offers diverse vending opportunities including healthcare facilities, educational institutions, manufacturing plants, retail locations, office buildings, and transportation hubs. Each location is pre-verified for optimal vending machine success.</p>
               </motion.div>
               <motion.div
                 key="1"
@@ -464,8 +464,8 @@ export default function ProvidenceRhodeIslandVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">How quickly can I get vending machine leads for Aurora?</h3>
-                <p className="text-stone leading-relaxed">Our Aurora vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">How quickly can I get vending machine leads for Providence Rhode?</h3>
+                <p className="text-stone leading-relaxed">Our Providence Rhode vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.</p>
               </motion.div>
               <motion.div
                 key="2"
@@ -475,8 +475,8 @@ export default function ProvidenceRhodeIslandVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What makes Aurora a good market for vending machines?</h3>
-                <p className="text-stone leading-relaxed">Aurora features a strong business community with diverse industries, stable employment, and consistent foot traffic. The city's economic growth and business-friendly environment create ideal conditions for vending machine success.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">What makes Providence Rhode a good market for vending machines?</h3>
+                <p className="text-stone leading-relaxed">Providence Rhode features a strong business community with diverse industries, stable employment, and consistent foot traffic. The city's economic growth and business-friendly environment create ideal conditions for vending machine success.</p>
               </motion.div>
               <motion.div
                 key="3"
@@ -486,8 +486,8 @@ export default function ProvidenceRhodeIslandVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">Do you provide ongoing support for Aurora locations?</h3>
-                <p className="text-stone leading-relaxed">Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Aurora.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">Do you provide ongoing support for Providence Rhode locations?</h3>
+                <p className="text-stone leading-relaxed">Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Providence Rhode.</p>
               </motion.div>
               <motion.div
                 key="4"
@@ -497,8 +497,8 @@ export default function ProvidenceRhodeIslandVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What industries in Aurora are best for vending machines?</h3>
-                <p className="text-stone leading-relaxed">Healthcare, education, manufacturing, retail, office buildings, and transportation sectors in Aurora show the highest potential for vending machine success due to consistent foot traffic and captive audiences.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">What industries in Providence Rhode are best for vending machines?</h3>
+                <p className="text-stone leading-relaxed">Healthcare, education, manufacturing, retail, office buildings, and transportation sectors in Providence Rhode show the highest potential for vending machine success due to consistent foot traffic and captive audiences.</p>
               </motion.div>
               <motion.div
                 key="5"
@@ -508,8 +508,8 @@ export default function ProvidenceRhodeIslandVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">How do you verify the quality of Aurora vending locations?</h3>
-                <p className="text-stone leading-relaxed">We conduct thorough research on each Aurora location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">How do you verify the quality of Providence Rhode vending locations?</h3>
+                <p className="text-stone leading-relaxed">We conduct thorough research on each Providence Rhode location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.</p>
               </motion.div>
               <motion.div
                 key="6"
@@ -519,8 +519,8 @@ export default function ProvidenceRhodeIslandVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">Can I get customized vending leads for specific areas of Aurora?</h3>
-                <p className="text-stone leading-relaxed">Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Aurora based on your preferences and target market requirements.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">Can I get customized vending leads for specific areas of Providence Rhode?</h3>
+                <p className="text-stone leading-relaxed">Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Providence Rhode based on your preferences and target market requirements.</p>
               </motion.div>
               <motion.div
                 key="7"
@@ -530,8 +530,8 @@ export default function ProvidenceRhodeIslandVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What's the typical ROI for vending machines in Aurora?</h3>
-                <p className="text-stone leading-relaxed">Vending machines in Aurora typically show strong ROI due to the city's business density and consistent traffic patterns. Our research shows average payback periods of 12-18 months for well-placed machines.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">What's the typical ROI for vending machines in Providence Rhode?</h3>
+                <p className="text-stone leading-relaxed">Vending machines in Providence Rhode typically show strong ROI due to the city's business density and consistent traffic patterns. Our research shows average payback periods of 12-18 months for well-placed machines.</p>
               </motion.div>
             </div>
           </div>

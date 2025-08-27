@@ -290,7 +290,7 @@ export default function AuroraColoradoVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Aurora Colorado features modern healthcare facilities including hospitals, clinics, and medical offices with high foot traffic and stable operations.</p>
+                <p className="text-stone leading-relaxed">Aurora features modern healthcare facilities including hospitals, clinics, and medical offices with high foot traffic and stable operations.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -304,7 +304,7 @@ export default function AuroraColoradoVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Educational institutions in Aurora Colorado provide consistent student populations and staff, creating ideal vending machine opportunities.</p>
+                <p className="text-stone leading-relaxed">Educational institutions in Aurora provide consistent student populations and staff, creating ideal vending machine opportunities.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -318,7 +318,7 @@ export default function AuroraColoradoVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Aurora Colorado's manufacturing sector offers large employee bases and extended operating hours, perfect for vending machine placement.</p>
+                <p className="text-stone leading-relaxed">Aurora's manufacturing sector offers large employee bases and extended operating hours, perfect for vending machine placement.</p>
               </motion.div>
               <motion.div
                 key="Retail"
@@ -332,7 +332,7 @@ export default function AuroraColoradoVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Retail locations throughout Aurora Colorado provide high customer traffic and diverse demographics for vending machine success.</p>
+                <p className="text-stone leading-relaxed">Retail locations throughout Aurora provide high customer traffic and diverse demographics for vending machine success.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -346,7 +346,7 @@ export default function AuroraColoradoVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Professional office spaces in Aurora Colorado offer captive audiences during business hours with consistent daily traffic.</p>
+                <p className="text-stone leading-relaxed">Professional office spaces in Aurora offer captive audiences during business hours with consistent daily traffic.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -360,7 +360,7 @@ export default function AuroraColoradoVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Aurora Colorado's transportation hubs including airports, bus stations, and transit centers provide high-volume foot traffic.</p>
+                <p className="text-stone leading-relaxed">Aurora's transportation hubs including airports, bus stations, and transit centers provide high-volume foot traffic.</p>
               </motion.div>
             </div>
           </div>
