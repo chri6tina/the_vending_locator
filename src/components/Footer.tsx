@@ -11,6 +11,7 @@ const navigation = {
     { name: 'Hot Leads', href: '/hot-leads' },
     { name: 'Blog', href: '/blog' },
     { name: 'Contact', href: '/contact' },
+    { name: 'Terms of Service', href: '/terms-of-service' },
   ],
   social: [
     {
