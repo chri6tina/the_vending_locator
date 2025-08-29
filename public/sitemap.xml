@@ -341,6 +341,27 @@
 
   <!-- Florida City Pages -->
   <url>
+    <loc>https://www.thevendinglocator.com/vending-leads/miami-florida</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.thevendinglocator.com/vending-leads/fort-lauderdale-florida</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.thevendinglocator.com/vending-leads/st-petersburg-florida</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
     <loc>https://www.thevendinglocator.com/vending-leads/hialeah-florida</loc>
     <lastmod>2024-12-19</lastmod>
     <changefreq>monthly</changefreq>

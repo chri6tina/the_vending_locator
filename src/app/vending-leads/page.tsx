@@ -38,15 +38,18 @@ export default function VendingLeadsPage() {
       name: 'Florida',
       slug: 'florida',
       cities: [
-        { name: 'Hialeah', slug: 'hialeah-florida', vendorCount: '140+', businessCount: '180+', description: 'Major retail and healthcare hub' },
-        { name: 'Cape Coral', slug: 'cape-coral-florida', vendorCount: '120+', businessCount: '150+', description: 'Fastest-growing city in Southwest Florida' },
-        { name: 'Gainesville', slug: 'gainesville-florida', vendorCount: '100+', businessCount: '120+', description: 'University and research hub' },
-        { name: 'Clearwater', slug: 'clearwater-florida', vendorCount: '90+', businessCount: '100+', description: 'Gulf Coast tourism destination' },
+        { name: 'Miami', slug: 'miami-florida', vendorCount: '500+', businessCount: '600+', description: 'International business hub and tourism destination with major port, finance, and healthcare sectors' },
         { name: 'Jacksonville', slug: 'jacksonville-florida', vendorCount: '400+', businessCount: '500+', description: 'Largest city by area with major port and military presence' },
+        { name: 'Fort Lauderdale', slug: 'fort-lauderdale-florida', vendorCount: '300+', businessCount: '350+', description: 'Major tourism and business hub with cruise port, healthcare, and financial services' },
+        { name: 'St. Petersburg', slug: 'st-petersburg-florida', vendorCount: '350+', businessCount: '400+', description: 'Major Gulf Coast city with healthcare, tourism, and technology sectors' },
         { name: 'Tampa', slug: 'tampa-florida', vendorCount: '300+', businessCount: '350+', description: 'Major metropolitan area with healthcare and finance' },
         { name: 'Orlando', slug: 'orlando-florida', vendorCount: '250+', businessCount: '280+', description: 'Tourism and technology hub with theme parks' },
         { name: 'Tallahassee', slug: 'tallahassee-florida', vendorCount: '180+', businessCount: '220+', description: 'State capital with government and education' },
+        { name: 'Hialeah', slug: 'hialeah-florida', vendorCount: '140+', businessCount: '180+', description: 'Major retail and healthcare hub' },
+        { name: 'Cape Coral', slug: 'cape-coral-florida', vendorCount: '120+', businessCount: '150+', description: 'Fastest-growing city in Southwest Florida' },
+        { name: 'Gainesville', slug: 'gainesville-florida', vendorCount: '100+', businessCount: '120+', description: 'University and research hub' },
         { name: 'Fort Myers', slug: 'fort-myers-florida', vendorCount: '100+', businessCount: '120+', description: 'Southwest Florida tourism and healthcare hub' },
+        { name: 'Clearwater', slug: 'clearwater-florida', vendorCount: '90+', businessCount: '100+', description: 'Gulf Coast tourism destination' },
         { name: 'Sarasota', slug: 'sarasota-florida', vendorCount: '80+', businessCount: '100+', description: 'Arts and culture hub with healthcare and tourism' },
       ]
     },
@@ -55,6 +58,13 @@ export default function VendingLeadsPage() {
       slug: 'illinois',
       cities: [
         { name: 'Chicago', slug: 'chicago-illinois', vendorCount: '400+', businessCount: '500+', description: 'Major metropolitan area with diverse business opportunities' },
+        { name: 'Rockford', slug: 'rockford-illinois', vendorCount: '180+', businessCount: '250+', description: 'Third largest city with manufacturing and healthcare hub' },
+        { name: 'Naperville', slug: 'naperville-illinois', vendorCount: '160+', businessCount: '220+', description: 'Major suburban business hub with technology and healthcare' },
+        { name: 'Springfield', slug: 'springfield-illinois', vendorCount: '140+', businessCount: '200+', description: 'State capital with government and healthcare sectors' },
+        { name: 'Peoria', slug: 'peoria-illinois', vendorCount: '150+', businessCount: '210+', description: 'Major manufacturing and healthcare hub' },
+        { name: 'Champaign-Urbana', slug: 'champaign-urbana-illinois', vendorCount: '130+', businessCount: '180+', description: 'University town with major research and technology' },
+        { name: 'Evanston', slug: 'evanston-illinois', vendorCount: '120+', businessCount: '170+', description: 'Northwestern University and business hub' },
+        { name: 'Moline', slug: 'moline-illinois', vendorCount: '110+', businessCount: '160+', description: 'Quad Cities area with manufacturing and healthcare' },
         { name: 'Bloomington', slug: 'bloomington-illinois', vendorCount: '120+', businessCount: '150+', description: 'Insurance and manufacturing center' },
         { name: 'Decatur', slug: 'decatur-illinois', vendorCount: '100+', businessCount: '130+', description: 'Agricultural and industrial hub' },
       ]
@@ -63,10 +73,26 @@ export default function VendingLeadsPage() {
       name: 'California',
       slug: 'california',
       cities: [
-        { name: 'Fresno', slug: 'fresno-california', vendorCount: '160+', businessCount: '220+', description: 'Agricultural and healthcare hub' },
+        { name: 'Los Angeles', slug: 'los-angeles-california', vendorCount: '400+', businessCount: '500+', description: 'Major metropolitan area with diverse business opportunities' },
+        { name: 'San Diego', slug: 'san-diego-california', vendorCount: '300+', businessCount: '400+', description: 'Major coastal city with healthcare and technology' },
+        { name: 'San Jose', slug: 'san-jose-california', vendorCount: '280+', businessCount: '350+', description: 'Silicon Valley technology and innovation hub' },
+        { name: 'San Francisco', slug: 'san-francisco-california', vendorCount: '250+', businessCount: '320+', description: 'Major financial and technology center' },
+        { name: 'Sacramento', slug: 'sacramento-california', vendorCount: '200+', businessCount: '280+', description: 'State capital with government and healthcare' },
+        { name: 'Oakland', slug: 'oakland-california', vendorCount: '180+', businessCount: '250+', description: 'Major port city with diverse economy' },
         { name: 'Long Beach', slug: 'long-beach-california', vendorCount: '200+', businessCount: '280+', description: 'Major port and aerospace hub' },
         { name: 'Bakersfield', slug: 'bakersfield-california', vendorCount: '180+', businessCount: '250+', description: 'Energy and agricultural center' },
+        { name: 'Fresno', slug: 'fresno-california', vendorCount: '160+', businessCount: '220+', description: 'Agricultural and healthcare hub' },
         { name: 'Anaheim', slug: 'anaheim-california', vendorCount: '150+', businessCount: '200+', description: 'Tourism and entertainment hub' },
+        { name: 'Riverside', slug: 'riverside-california', vendorCount: '140+', businessCount: '200+', description: 'Major inland city with healthcare and education' },
+        { name: 'Stockton', slug: 'stockton-california', vendorCount: '120+', businessCount: '180+', description: 'Central Valley agricultural and logistics hub' },
+        { name: 'Modesto', slug: 'modesto-california', vendorCount: '110+', businessCount: '160+', description: 'Agricultural and manufacturing center' },
+        { name: 'Oxnard', slug: 'oxnard-california', vendorCount: '100+', businessCount: '150+', description: 'Coastal business hub with agriculture and healthcare' },
+        { name: 'Glendale', slug: 'glendale-california', vendorCount: '120+', businessCount: '180+', description: 'LA metro area with healthcare and retail' },
+        { name: 'Huntington Beach', slug: 'huntington-beach-california', vendorCount: '110+', businessCount: '160+', description: 'Coastal business hub with tourism and healthcare' },
+        { name: 'Santa Ana', slug: 'santa-ana-california', vendorCount: '130+', businessCount: '190+', description: 'Orange County government and business hub' },
+        { name: 'Irvine', slug: 'irvine-california', vendorCount: '140+', businessCount: '200+', description: 'Technology and education hub with planned community' },
+        { name: 'Chula Vista', slug: 'chula-vista-california', vendorCount: '100+', businessCount: '150+', description: 'San Diego metro area with healthcare and retail' },
+        { name: 'Fremont', slug: 'fremont-california', vendorCount: '120+', businessCount: '180+', description: 'Silicon Valley area with technology and manufacturing' },
       ]
     },
     {
@@ -204,6 +230,17 @@ export default function VendingLeadsPage() {
         { name: 'Philadelphia', slug: 'philadelphia-pennsylvania', vendorCount: '320+', businessCount: '450+', description: 'Major East Coast business and healthcare hub' },
         { name: 'Pittsburgh', slug: 'pittsburgh-pennsylvania', vendorCount: '280+', businessCount: '350+', description: 'Steel city with growing tech sector' },
         { name: 'York', slug: 'york-pennsylvania', vendorCount: '120+', businessCount: '150+', description: 'Historic city with manufacturing heritage' },
+      ]
+    },
+    {
+      name: 'Wyoming',
+      slug: 'wyoming',
+      cities: [
+        { name: 'Cheyenne', slug: 'cheyenne-wyoming', vendorCount: '80+', businessCount: '100+', description: 'State capital with government and healthcare' },
+        { name: 'Casper', slug: 'casper-wyoming', vendorCount: '70+', businessCount: '90+', description: 'Energy and healthcare hub' },
+        { name: 'Laramie', slug: 'laramie-wyoming', vendorCount: '60+', businessCount: '80+', description: 'University town with education and research' },
+        { name: 'Gillette', slug: 'gillette-wyoming', vendorCount: '65+', businessCount: '85+', description: 'Energy and mining center' },
+        { name: 'Rock Springs', slug: 'rock-springs-wyoming', vendorCount: '55+', businessCount: '70+', description: 'Energy and industrial hub' },
       ]
     }
   ]

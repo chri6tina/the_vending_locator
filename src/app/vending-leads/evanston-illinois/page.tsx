@@ -1,5 +1,4 @@
 'use client'
-
 import { useState } from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
@@ -9,19 +8,19 @@ import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function StPetersburgFloridaPage() {
+export default function EvanstonIllinoisPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null)
 
   const cityData = {
-    name: 'St. Petersburg',
-    state: 'Florida',
-    population: '260,000+',
-    businesses: '35,000+',
-    description: 'Major Gulf Coast city with healthcare, tourism, and technology sectors',
-    majorIndustries: ['Healthcare', 'Tourism', 'Technology', 'Manufacturing', 'Education', 'Financial Services', 'Real Estate'],
-    topBusinesses: ['Bayfront Health St. Petersburg', 'University of South Florida St. Petersburg', 'Technology Companies', 'Tourism Companies', 'Financial Institutions', 'Real Estate Firms', 'Manufacturing Companies'],
-    vendingOpportunities: '350+',
-    businessCount: '400+'
+    name: 'Evanston',
+    state: 'Illinois',
+    population: '78,000+',
+    businesses: '12,000+',
+    description: 'Northwestern University and business hub',
+    majorIndustries: ['Education', 'Healthcare', 'Technology', 'Professional Services', 'Retail', 'Manufacturing', 'Research'],
+    topBusinesses: ['Northwestern University', 'NorthShore University HealthSystem', 'Technology Companies', 'Professional Service Firms', 'Research Institutes', 'Manufacturing Companies', 'Retail Centers'],
+    vendingOpportunities: '120+',
+    businessCount: '170+'
   }
 
   const toggleFaq = (index: number) => {
@@ -35,15 +34,15 @@ export default function StPetersburgFloridaPage() {
   return (
     <>
       <Head>
-        <title>Vending Machine Leads in St. Petersburg, Florida | The Vending Locator</title>
-        <meta name="description" content="Find verified vending machine opportunities in St. Petersburg, Florida. Access 350+ locations with business details, contact information, and placement opportunities." />
-        <meta name="keywords" content="vending machine leads, St. Petersburg Florida, vending opportunities, business locations, vending machine business, St. Petersburg vending" />
+        <title>Vending Machine Leads in Evanston, Illinois | The Vending Locator</title>
+        <meta name="description" content="Find verified vending machine opportunities in Evanston, Illinois. Access 120+ locations with business details, contact information, and placement opportunities." />
+        <meta name="keywords" content="vending machine leads, Evanston Illinois, vending opportunities, business locations, vending machine business, Evanston vending" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://www.thevendinglocator.com/vending-leads/st-petersburg-florida" />
+        <link rel="canonical" href="https://www.thevendinglocator.com/vending-leads/evanston-illinois" />
       </Head>
 
       <Header />
-      
+
       <div className="min-h-screen bg-cream">
         {/* Breadcrumb Navigation */}
         <div className="bg-white border-b border-gray-200">
@@ -75,8 +74,8 @@ export default function StPetersburgFloridaPage() {
                     <svg className="flex-shrink-0 h-5 w-5 text-gray-300" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
                     </svg>
-                    <Link href="/vending-leads/florida" className="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700">
-                      Florida
+                    <Link href="/vending-leads/illinois" className="ml-4 text-sm font-medium text-gray-500 hover:text-gray-700">
+                      Illinois
                     </Link>
                   </div>
                 </li>
@@ -85,7 +84,7 @@ export default function StPetersburgFloridaPage() {
                     <svg className="flex-shrink-0 h-5 w-5 text-gray-300" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
                     </svg>
-                    <span className="ml-4 text-sm font-medium text-gray-500">St. Petersburg</span>
+                    <span className="ml-4 text-sm font-medium text-gray-500">Evanston</span>
                   </div>
                 </li>
               </ol>
@@ -98,14 +97,14 @@ export default function StPetersburgFloridaPage() {
           <div className="mx-auto max-w-2xl px-4 sm:px-6 py-12 sm:py-16 lg:py-24">
             <div className="text-center">
               <h1 className="text-3xl sm:text-4xl lg:text-6xl font-playfair font-bold tracking-tight text-charcoal leading-tight">
-                Vending Machine Leads in St. Petersburg, Florida
+                Vending Machine Leads in Evanston, Illinois
               </h1>
-              
+
               <p className="mt-4 sm:mt-6 text-base sm:text-lg leading-7 sm:leading-8 text-stone px-2 sm:px-0">
-                Access {cityData.vendingOpportunities} verified vending opportunities in St. Petersburg's thriving business landscape. 
-                From healthcare to technology, discover profitable vending machine placements.
+                Access {cityData.vendingOpportunities} verified vending opportunities in Evanston's thriving university and business landscape.
+                From education to healthcare, discover profitable vending machine placements.
               </p>
-              
+
               {/* Key Stats - Matching Home Page Style */}
               <div className="mt-10 sm:mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 px-4 sm:px-0">
                 <div className="text-center">
@@ -150,53 +149,53 @@ export default function StPetersburgFloridaPage() {
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-playfair font-bold text-chocolate mb-6">
-                St. Petersburg's Thriving Business Landscape
+                Evanston's Thriving Business Landscape
               </h2>
               <p className="text-lg sm:text-xl text-chocolate/70 max-w-3xl mx-auto">
-                St. Petersburg is a major Gulf Coast city with diverse industries offering exceptional vending opportunities
+                Evanston is a major university town and business hub with diverse industries offering exceptional vending opportunities
               </p>
             </div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="text-center p-6 bg-cream rounded-xl">
-                <h3 className="text-xl font-bold text-chocolate mb-4">Healthcare</h3>
-                <p className="text-chocolate/70">
-                  Major hospitals, medical centers, clinics, and healthcare facilities throughout the city
-                </p>
-              </div>
-              
-              <div className="text-center p-6 bg-cream rounded-xl">
-                <h3 className="text-xl font-bold text-chocolate mb-4">Tourism & Hospitality</h3>
-                <p className="text-chocolate/70">
-                  Hotels, resorts, restaurants, and entertainment venues along the Gulf Coast
-                </p>
-              </div>
-              
-              <div className="text-center p-6 bg-cream rounded-xl">
-                <h3 className="text-xl font-bold text-chocolate mb-4">Technology</h3>
-                <p className="text-chocolate/70">
-                  Tech startups, software companies, and digital service providers
-                </p>
-              </div>
-              
-              <div className="text-center p-6 bg-cream rounded-xl">
-                <h3 className="text-xl font-bold text-chocolate mb-4">Manufacturing</h3>
-                <p className="text-chocolate/70">
-                  Industrial facilities, manufacturing plants, and production companies
-                </p>
-              </div>
-              
               <div className="text-center p-6 bg-cream rounded-xl">
                 <h3 className="text-xl font-bold text-chocolate mb-4">Education</h3>
                 <p className="text-chocolate/70">
-                  Universities, colleges, schools, and educational institutions
+                  Northwestern University with large student, faculty, and staff populations
                 </p>
               </div>
-              
+
               <div className="text-center p-6 bg-cream rounded-xl">
-                <h3 className="text-xl font-bold text-chocolate mb-4">Financial Services</h3>
+                <h3 className="text-xl font-bold text-chocolate mb-4">Healthcare</h3>
                 <p className="text-chocolate/70">
-                  Banks, investment firms, insurance companies, and corporate offices
+                  NorthShore University HealthSystem and medical facilities throughout the city
+                </p>
+              </div>
+
+              <div className="text-center p-6 bg-cream rounded-xl">
+                <h3 className="text-xl font-bold text-chocolate mb-4">Technology</h3>
+                <p className="text-chocolate/70">
+                  Technology companies, startups, and software firms with modern offices
+                </p>
+              </div>
+
+              <div className="text-center p-6 bg-cream rounded-xl">
+                <h3 className="text-xl font-bold text-chocolate mb-4">Professional Services</h3>
+                <p className="text-chocolate/70">
+                  Law firms, consulting companies, and professional service providers
+                </p>
+              </div>
+
+              <div className="text-center p-6 bg-cream rounded-xl">
+                <h3 className="text-xl font-bold text-chocolate mb-4">Research</h3>
+                <p className="text-chocolate/70">
+                  Research institutes, laboratories, and scientific facilities
+                </p>
+              </div>
+
+              <div className="text-center p-6 bg-cream rounded-xl">
+                <h3 className="text-xl font-bold text-chocolate mb-4">Manufacturing</h3>
+                <p className="text-chocolate/70">
+                  Manufacturing companies and industrial facilities throughout the area
                 </p>
               </div>
             </div>
@@ -208,7 +207,7 @@ export default function StPetersburgFloridaPage() {
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-playfair font-bold text-chocolate mb-6">
-                Hot Vending Leads in St. Petersburg
+                Hot Vending Leads in Evanston
               </h2>
               <p className="text-lg sm:text-xl text-chocolate/70 max-w-3xl mx-auto">
                 Premium vending opportunities with high-traffic locations and proven profitability
@@ -226,7 +225,7 @@ export default function StPetersburgFloridaPage() {
                 Vending Leads Pricing
               </h2>
               <p className="text-lg sm:text-xl text-chocolate/70 max-w-3xl mx-auto">
-                Choose the perfect plan to access St. Petersburg's vending opportunities
+                Choose the perfect plan to access Evanston's vending opportunities
               </p>
             </div>
             <PricingTable />
@@ -241,71 +240,71 @@ export default function StPetersburgFloridaPage() {
                 Frequently Asked Questions
               </h2>
               <p className="text-lg sm:text-xl text-chocolate/70">
-                Everything you need to know about vending machine opportunities in St. Petersburg
+                Everything you need to know about vending machine opportunities in Evanston
               </p>
             </div>
-            
+
             <div className="space-y-4">
               {[
                 {
-                  question: "What types of businesses in St. Petersburg need vending machines?",
-                  answer: "St. Petersburg businesses including hospitals, hotels, office buildings, shopping centers, universities, manufacturing facilities, and technology companies all need vending machines to serve employees, customers, and visitors."
+                  question: "What types of businesses in Evanston need vending machines?",
+                  answer: "Evanston businesses including university facilities, hospitals, office buildings, research labs, shopping centers, and manufacturing facilities all need vending machines to serve students, employees, customers, and visitors."
                 },
                 {
-                  question: "How competitive is the vending market in St. Petersburg?",
-                  answer: "St. Petersburg has a competitive but growing vending market. With the city's expanding healthcare sector, technology industry, and business community, there are opportunities for new vending operators to establish profitable routes."
+                  question: "How competitive is the vending market in Evanston?",
+                  answer: "Evanston has a competitive but growing vending market. With the university's large population and strong business sector, there are opportunities for new vending operators to establish profitable routes."
                 },
                 {
-                  question: "What are the best locations for vending machines in St. Petersburg?",
-                  answer: "Prime locations include Bayfront Health St. Petersburg, University of South Florida St. Petersburg, downtown office buildings, shopping centers like Tyrone Square Mall, and major hotels along the Gulf Coast."
+                  question: "What are the best locations for vending machines in Evanston?",
+                  answer: "Prime locations include Northwestern University campus buildings, NorthShore University HealthSystem facilities, technology company offices, research institutes, shopping centers, and major office buildings throughout the city."
                 },
                 {
-                  question: "How much can I expect to earn from vending machines in St. Petersburg?",
-                  answer: "Vending machine earnings in St. Petersburg typically range from $200-$600 per month per machine, depending on location, product selection, and foot traffic. High-traffic areas like hospitals can generate significantly more revenue."
+                  question: "How much can I expect to earn from vending machines in Evanston?",
+                  answer: "Vending machine earnings in Evanston typically range from $250-$700 per month per machine, depending on location, product selection, and foot traffic. University and healthcare locations can generate significantly more revenue."
                 },
                 {
-                  question: "What permits do I need to operate vending machines in St. Petersburg?",
-                  answer: "You'll need a business license from the City of St. Petersburg, a Florida vending machine license, and potentially health permits for food vending. Some locations may require additional permits."
+                  question: "What permits do I need to operate vending machines in Evanston?",
+                  answer: "You'll need a business license from the City of Evanston, an Illinois vending machine license, and potentially health permits for food vending. Some locations may require additional permits."
                 },
                 {
-                  question: "Are there seasonal fluctuations in St. Petersburg's vending business?",
-                  answer: "Yes, St. Petersburg experiences seasonal fluctuations with peak tourism during winter months (December-April) and hurricane season affecting business in late summer/early fall. However, year-round healthcare operations provide consistent opportunities."
+                  question: "Are there seasonal fluctuations in Evanston's vending business?",
+                  answer: "Yes, Evanston experiences some seasonal fluctuations with university academic schedules. Business is highest during fall and spring semesters, but healthcare facilities and office buildings provide consistent year-round opportunities."
                 },
                 {
-                  question: "What products sell best in St. Petersburg vending machines?",
-                  answer: "In St. Petersburg, beverages (especially cold drinks), snacks, healthy options, and convenience items sell well. Consider the diverse population and healthcare worker preferences when selecting products."
+                  question: "What products sell best in Evanston vending machines?",
+                  answer: "In Evanston, beverages, healthy snacks, convenience items, and premium products sell well. Consider the educated workforce and university population when selecting products."
                 },
                 {
                   question: "How do I find business owners interested in vending machines?",
-                  answer: "Network with property managers, attend business events, contact facility managers directly, and use our verified leads database to connect with businesses actively seeking vending machine services."
+                  answer: "Network with facility managers, attend university and business events, contact building managers directly, and use our verified leads database to connect with businesses actively seeking vending machine services."
                 },
                 {
-                  question: "What are the startup costs for a vending machine business in St. Petersburg?",
+                  question: "What are the startup costs for a vending machine business in Evanston?",
                   answer: "Startup costs typically range from $5,000-$25,000, including machine purchases ($2,000-$8,000 each), initial inventory, permits, insurance, and transportation. Financing options are available."
                 },
                 {
-                  question: "How do I handle maintenance and restocking in St. Petersburg?",
-                  answer: "Establish regular routes for restocking and maintenance. Consider traffic patterns and plan visits during off-peak hours. Many operators hire local staff or use route optimization software."
+                  question: "How do I handle maintenance and restocking in Evanston?",
+                  answer: "Establish regular routes for restocking and maintenance. Consider university schedules and business hours when planning visits. Many operators hire local staff or use route optimization software."
                 },
                 {
-                  question: "What insurance do I need for vending machines in St. Petersburg?",
+                  question: "What insurance do I need for vending machines in Evanston?",
                   answer: "You'll need general liability insurance, property insurance for your machines, and potentially workers' compensation if you have employees. Insurance costs typically range from $500-$2,000 annually."
                 },
                 {
-                  question: "How do I compete with established vending companies in St. Petersburg?",
-                  answer: "Focus on excellent service, modern payment options, quality products, and building strong relationships with business owners. Consider specializing in specific industries or offering unique product selections."
+                  question: "How do I compete with established vending companies in Evanston?",
+                  answer: "Focus on excellent service, modern payment options, quality products, and building strong relationships with facility managers. Consider specializing in university or healthcare facilities."
                 },
                 {
-                  question: "What are the growth opportunities in St. Petersburg's vending market?",
-                  answer: "St. Petersburg offers growth through expanding to new business districts, adding more machines to successful locations, diversifying product offerings, and potentially expanding to nearby cities like Clearwater and Tampa."
+                  question: "What are the growth opportunities in Evanston's vending market?",
+                  answer: "Evanston offers growth through expanding to new university buildings, adding more machines to successful locations, diversifying product offerings, and potentially expanding to nearby cities like Skokie and Wilmette."
                 },
                 {
-                  question: "How do I handle the diverse population in St. Petersburg?",
-                  answer: "Stock products that appeal to St. Petersburg's diverse population including healthcare workers, students, tourists, and local residents. Consider offering both traditional American snacks and healthy options."
+                  question: "How do I handle the diverse workforce in Evanston?",
+                  answer: "Stock products that appeal to Evanston's diverse and educated workforce. Consider offering both traditional snacks and healthier options, as well as products suitable for different age groups and preferences."
                 },
                 {
-                  question: "What technology should I use for vending machines in St. Petersburg?",
-                  answer: "Modern vending machines with cashless payment options, remote monitoring systems, and inventory management software are essential in St. Petersburg's tech-forward business environment. Consider machines with energy-efficient features."
+                  question: "What technology should I use for vending machines in Evanston?",
+                  answer: "Modern vending machines with cashless payment options, remote monitoring systems, and inventory management software are essential in Evanston's tech-forward business environment. Consider machines with energy-efficient features."
                 }
               ].map((faq, index) => (
                 <div key={index} className="bg-white rounded-lg shadow-sm border border-gray-200">
@@ -338,13 +337,13 @@ export default function StPetersburgFloridaPage() {
         <div className="bg-white py-20">
           <div className="mx-auto max-w-7xl px-6 lg:px-8 text-center">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-playfair font-bold text-chocolate mb-6">
-              Ready to Start Your Vending Business in St. Petersburg?
+              Ready to Start Your Vending Business in Evanston?
             </h2>
             <p className="text-lg sm:text-xl text-chocolate/70 max-w-3xl mx-auto mb-10">
-              Get access to {cityData.vendingOpportunities} verified locations with business details, 
-              contact information, and placement opportunities in St. Petersburg's thriving business community.
+              Get access to {cityData.vendingOpportunities} verified locations with business details,
+              contact information, and placement opportunities in Evanston's thriving business community.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
                 onClick={scrollToPricing}
@@ -368,3 +367,4 @@ export default function StPetersburgFloridaPage() {
     </>
   )
 }
+
