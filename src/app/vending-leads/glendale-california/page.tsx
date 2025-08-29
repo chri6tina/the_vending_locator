@@ -1,4 +1,5 @@
-import { Metadata } from 'next'
+'use client'
+
 import { useState } from 'react'
 import Link from 'next/link'
 import Header from '@/components/Header'
@@ -6,16 +7,6 @@ import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
-
-export const metadata: Metadata = {
-  title: 'Vending Machine Leads in Glendale, California | The Vending Locator',
-  description: 'Get verified vending machine leads in Glendale, California. Access 120+ pre-qualified locations with detailed business information and placement opportunities.',
-  keywords: 'vending machine leads, Glendale California, vending locations, business opportunities, healthcare, retail, entertainment',
-  robots: 'index, follow',
-  alternates: {
-    canonical: 'https://thevendinglocator.com/vending-leads/glendale-california'
-  }
-}
 
 export default function GlendaleCaliforniaPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null)
