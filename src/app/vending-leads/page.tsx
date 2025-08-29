@@ -99,10 +99,15 @@ export default function VendingLeadsPage() {
       name: 'Colorado',
       slug: 'colorado',
       cities: [
+        { name: 'Denver', slug: 'denver-colorado', vendorCount: '200+', businessCount: '300+', description: 'State capital and major metropolitan area with diverse economy' },
+        { name: 'Colorado Springs', slug: 'colorado-springs-colorado', vendorCount: '180+', businessCount: '260+', description: 'Major city with defense, technology, tourism, and healthcare' },
         { name: 'Aurora', slug: 'aurora-colorado', vendorCount: '160+', businessCount: '240+', description: 'Growing suburban city with healthcare and aerospace' },
-        { name: 'Arvada', slug: 'arvada-colorado', vendorCount: '120+', businessCount: '180+', description: 'Suburban city with retail and healthcare' },
-        { name: 'Lakewood', slug: 'lakewood-colorado', vendorCount: '140+', businessCount: '200+', description: 'Major suburban city with diverse economy' },
         { name: 'Fort Collins', slug: 'fort-collins-colorado', vendorCount: '130+', businessCount: '190+', description: 'University town with technology and healthcare' },
+        { name: 'Lakewood', slug: 'lakewood-colorado', vendorCount: '140+', businessCount: '200+', description: 'Major suburban city with diverse economy' },
+        { name: 'Thornton', slug: 'thornton-colorado', vendorCount: '120+', businessCount: '180+', description: 'Fast-growing suburban city with retail and healthcare' },
+        { name: 'Arvada', slug: 'arvada-colorado', vendorCount: '120+', businessCount: '180+', description: 'Suburban city with retail and healthcare' },
+        { name: 'Westminster', slug: 'westminster-colorado', vendorCount: '110+', businessCount: '170+', description: 'Suburban city with technology and healthcare' },
+        { name: 'Pueblo', slug: 'pueblo-colorado', vendorCount: '100+', businessCount: '150+', description: 'Manufacturing and healthcare hub in southern Colorado' },
       ]
     },
     {
