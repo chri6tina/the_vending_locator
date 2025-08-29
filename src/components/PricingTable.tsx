@@ -24,6 +24,7 @@ const plans = [
       '15-mile radius search',
       '5-day delivery',
       'Phone support',
+      'Outreach process guidance',
       'Lifetime access to your leads'
     ]
   },
@@ -44,6 +45,7 @@ const plans = [
       '25-mile radius search',
       '3-day delivery',
       'Priority support',
+      'Outreach process guidance',
       'Lifetime access to your leads'
     ]
   },
@@ -64,7 +66,7 @@ const plans = [
       '25-mile radius search',
       '3-day delivery',
       'Vending eCourse included',
-      'Cold call scripts',
+      'Outreach & sales scripts',
       'Contract templates',
       'Priority support',
       'Lifetime access to your leads'
@@ -87,7 +89,7 @@ const plans = [
       '25-mile radius search',
       '3-day delivery',
       'Vending eCourse included',
-      'Cold call scripts',
+      'Outreach & sales scripts',
       'Contract templates',
       'Business plan template',
       'Priority support',
@@ -287,6 +289,31 @@ export default function PricingTable() {
                   ))}
                 </tr>
 
+                {/* Outreach Process */}
+                <tr className="hover:bg-gray-50 transition-colors duration-150">
+                  <td className="px-4 lg:px-8 py-4 lg:py-6">
+                    <div className="max-w-md">
+                      <h5 className="text-sm lg:text-base font-bold text-charcoal mb-2">
+                        Outreach Process
+                      </h5>
+                      <p className="text-xs lg:text-sm text-stone leading-relaxed font-medium">
+                        You'll receive qualified leads to contact directly. Our scripts and templates help you approach businesses professionally.
+                      </p>
+                    </div>
+                  </td>
+                  {plans.map((plan) => (
+                    <td 
+                      key={plan.name} 
+                      className="px-2 lg:px-8 py-4 lg:py-6 text-center cursor-pointer transition-all duration-200"
+                      onClick={() => handleRowClick(plan.name)}
+                    >
+                      <span className="text-sm lg:text-base font-semibold text-bronze">
+                        ✓ Included
+                      </span>
+                    </td>
+                  ))}
+                </tr>
+
                 {/* Lead Phone Numbers */}
                 <tr className="hover:bg-gray-50 transition-colors duration-150">
                   <td className="px-8 py-6">
@@ -427,15 +454,15 @@ export default function PricingTable() {
                   ))}
                 </tr>
 
-                {/* Cold Call Script */}
+                {/* Outreach & Sales Scripts */}
                 <tr className="hover:bg-gray-50 transition-colors duration-150">
                   <td className="px-8 py-6">
                     <div className="max-w-md">
                       <h5 className="text-base font-bold text-charcoal mb-2">
-                        Cold Call Script
+                        Outreach & Sales Scripts
                       </h5>
                       <p className="text-sm text-stone leading-relaxed font-medium">
-                        Gain an advantage in securing prime locations with our phone call scripts, designed to assist you in confidently closing the deal.
+                        Professional phone scripts and outreach strategies to help you confidently approach potential locations and secure placements.
                       </p>
                     </div>
                   </td>
