@@ -7,12 +7,12 @@ const packages = [
   {
     name: 'Quick Find Package',
     price: '$500',
-    description: 'Pre-verified vending locations with basic research and support',
+    description: 'Our team finds and secures 1 guaranteed location for you',
     location: '50+ employee locations',
     features: [
-      '1 qualified location',
-      'Basic research included',
-      '90-day delivery',
+      '1 guaranteed location',
+      'Expert outreach included',
+      '1-6 month timeline',
       'Phone support',
     ],
     href: 'https://buy.stripe.com/5kQ7sL3JXfie0LDg7J6Na07',
@@ -22,13 +22,13 @@ const packages = [
   {
     name: 'Smart Spot Package',
     price: '$1,000',
-    description: 'Pre-verified vending locations with premium research and priority support',
+    description: 'Our team finds and secures 1 guaranteed location with premium support',
     location: '100+ employee locations',
     features: [
-      '1 qualified location',
-      'Premium research included',
-      'Priority support',
-      'Phone consultation',
+      '1 guaranteed location',
+      'Expert outreach included',
+      '1-6 month timeline',
+      'Priority phone consultation',
     ],
     href: 'https://buy.stripe.com/dRmbJ194h0nk9i96x96Na08',
     popular: true,
@@ -37,13 +37,13 @@ const packages = [
   {
     name: 'Prime Location Package',
     price: '$1,500',
-    description: 'Pre-verified vending locations with advanced research and account management',
+    description: 'Our team finds and secures 1 guaranteed location with account management',
     location: '150+ employee locations',
     features: [
-      '1 qualified location',
-      'Advanced research included',
-      'Account manager',
-      'Priority delivery',
+      '1 guaranteed location',
+      'Expert outreach included',
+      '1-6 month timeline',
+      'Dedicated account manager',
     ],
     href: 'https://buy.stripe.com/00wcN51BP4DA51T3kX6Na09',
     popular: false,
@@ -52,13 +52,13 @@ const packages = [
   {
     name: 'Elite Placement Package',
     price: '$2,000',
-    description: 'Pre-verified vending locations with comprehensive research and VIP support',
+    description: 'Our team finds and secures 1 guaranteed location with VIP support',
     location: '200+ employee locations',
     features: [
-      '1 qualified location',
-      'Comprehensive research included',
-      'VIP support',
-      'Dedicated account manager',
+      '1 guaranteed location',
+      'Expert outreach included',
+      '1-6 month timeline',
+      'VIP account manager',
     ],
     href: 'https://buy.stripe.com/28E4gzeoB2vs3XPcVx6Na0a',
     popular: false,
@@ -85,11 +85,11 @@ export default function HotLeads() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-playfair font-bold tracking-tight text-charcoal px-4 sm:px-0">
-            Hot Location Leads
+            Guaranteed Location Placement
           </h2>
           <p className="text-lg sm:text-xl text-chocolate/70 leading-relaxed max-w-3xl mx-auto mt-4">
-            Get immediate access to pre-verified vending machine locations. 
-            These are ready-to-place locations that have been personally researched and verified.
+            Our expert team does the outreach to find you a location that's ready for placement. 
+            Due to the scope of this work, it takes 1-6 months, but you get a guaranteed location.
           </p>
         </div>
 
@@ -153,13 +153,13 @@ export default function HotLeads() {
         {/* CTA Section */}
         <div className="mt-16 text-center">
           <p className="text-lg text-chocolate/70 mb-6">
-            Need a custom package or have specific requirements?
+            Need a custom location requirement or have specific business criteria?
           </p>
           <a
             href="/contact"
             className="inline-flex items-center px-8 py-3 bg-navy text-white rounded-lg font-semibold hover:bg-navy-light transition-colors"
           >
-            Contact Us
+            Contact Our Team
           </a>
         </div>
       </div>
