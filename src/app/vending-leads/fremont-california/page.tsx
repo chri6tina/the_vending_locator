@@ -11,21 +11,21 @@ import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function LaramieWyomingVendingLeadsPage() {
+export default function FremontCaliforniaVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Laramie';
-  const stateDisplayName = 'Wyoming';
+  const cityDisplayName = 'Fremont';
+  const stateDisplayName = 'California';
   
   // City-specific data
   const cityData = {
-  'name': 'Laramie',
-  'state': 'Wyoming',
-  'population': '32K+',
-  'businesses': '4K+',
-  'industries': '8-12',
-  'verifiedLocations': '80+',
+  'name': 'Fremont',
+  'state': 'California',
+  'population': '230K+',
+  'businesses': '15K+',
+  'industries': '12-18',
+  'verifiedLocations': '200+',
   'rating': '4.8/5',
-  'description': 'University town with education and research economy'
+  'description': 'Silicon Valley hub with diverse technology and manufacturing economy'
 };
   
   // Active users counter
@@ -35,9 +35,9 @@ export default function LaramieWyomingVendingLeadsPage() {
 
   // User names for active users counter
   const [userNames, setUserNames] = useState([
-    'Mike from Laramie', 'Sarah in Downtown', 'David in Laramie', 'Lisa in Laramie',
-    'Tom in Laramie', 'Jennifer in Laramie', 'Robert in Laramie', 'Amanda in Laramie',
-    'Chris in Laramie', 'Maria in Laramie', 'James in Laramie', 'Emily in Laramie'
+    'Mike from Fremont', 'Sarah in Downtown', 'David in Fremont', 'Lisa in Fremont',
+    'Tom in Fremont', 'Jennifer in Fremont', 'Robert in Fremont', 'Amanda in Fremont',
+    'Chris in Fremont', 'Maria in Fremont', 'James in Fremont', 'Emily in Fremont'
   ])
 
   // Active users counter effect
@@ -140,7 +140,7 @@ export default function LaramieWyomingVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Get pre-qualified vending machine locations in Laramie's thriving education and research economy. 
+                Get pre-qualified vending machine locations in Fremont's thriving Silicon Valley economy. 
                 Access verified businesses with detailed contact information and placement opportunities.
               </motion.p>
 
@@ -285,33 +285,33 @@ export default function LaramieWyomingVendingLeadsPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               
               <motion.div
-                key="Education"
+                key="Technology"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0 }}
-                viewport={{ once: true }}
-                className="bg-purple-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
-              >
-                <div className="text-purple-600 mb-4">
-                  <AcademicCapIcon className="w-12 h-12" />
-                </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">University of Wyoming and multiple school districts providing large student populations and consistent foot traffic.</p>
-              </motion.div>
-
-              <motion.div
-                key="Research"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.1 }}
                 viewport={{ once: true }}
                 className="bg-blue-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
                 <div className="text-blue-600 mb-4">
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Research</h3>
-                <p className="text-stone leading-relaxed">Research facilities and laboratories providing large employee bases and excellent vending opportunities.</p>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Technology</h3>
+                <p className="text-stone leading-relaxed">Silicon Valley tech companies including Tesla, Lam Research, and numerous startups providing large employee bases and excellent vending opportunities.</p>
+              </motion.div>
+
+              <motion.div
+                key="Manufacturing"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.1 }}
+                viewport={{ once: true }}
+                className="bg-green-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-green-600 mb-4">
+                  <BuildingOfficeIcon className="w-12 h-12" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
+                <p className="text-stone leading-relaxed">Major manufacturing facilities including Tesla's Fremont Factory and numerous industrial operations with large employee bases.</p>
               </motion.div>
 
               <motion.div
@@ -326,14 +326,29 @@ export default function LaramieWyomingVendingLeadsPage() {
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Medical facilities and healthcare services providing consistent patient and staff traffic.</p>
+                <p className="text-stone leading-relaxed">Washington Hospital, Kaiser Permanente, and numerous medical facilities providing consistent patient and staff traffic.</p>
+              </motion.div>
+
+              <motion.div
+                key="Education"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="bg-purple-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-purple-600 mb-4">
+                  <AcademicCapIcon className="w-12 h-12" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
+                <p className="text-stone leading-relaxed">Fremont Unified School District, Ohlone College, and numerous educational institutions with large student populations.</p>
               </motion.div>
 
               <motion.div
                 key="Retail"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.3 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
                 viewport={{ once: true }}
                 className="bg-orange-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
@@ -341,14 +356,14 @@ export default function LaramieWyomingVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Growing retail sector with shopping centers, restaurants, and professional service businesses with high foot traffic.</p>
+                <p className="text-stone leading-relaxed">Major retail centers including Pacific Commons, Fremont Hub, and numerous shopping districts with high foot traffic.</p>
               </motion.div>
 
               <motion.div
                 key="Transportation"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
+                transition={{ duration: 0.8, delay: 0.5 }}
                 viewport={{ once: true }}
                 className="bg-teal-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
@@ -356,22 +371,7 @@ export default function LaramieWyomingVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Transportation companies and logistics operations providing consistent employee traffic.</p>
-              </motion.div>
-
-              <motion.div
-                key="Manufacturing"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.5 }}
-                viewport={{ once: true }}
-                className="bg-green-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
-              >
-                <div className="text-green-600 mb-4">
-                  <BuildingOfficeIcon className="w-12 h-12" />
-                </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Manufacturing facilities and industrial operations providing large employee bases and consistent traffic.</p>
+                <p className="text-stone leading-relaxed">Strategic location with BART stations, major highways, and logistics companies providing consistent employee traffic.</p>
               </motion.div>
             </div>
           </div>
@@ -406,64 +406,64 @@ export default function LaramieWyomingVendingLeadsPage() {
             <div className="space-y-4">
               {[
                 {
-                  question: "What types of vending machine locations are available in Laramie?",
-                  answer: "Laramie offers diverse vending opportunities including educational institutions, research facilities, healthcare centers, retail locations, and manufacturing companies. Each location is pre-qualified for optimal vending machine placement."
+                  question: "What types of vending machine locations are available in Fremont?",
+                  answer: "Fremont offers diverse vending opportunities including technology companies, manufacturing facilities, healthcare centers, educational institutions, retail locations, and transportation companies. Each location is pre-qualified for optimal vending machine placement."
                 },
                 {
-                  question: "How quickly can I get vending machine leads for Laramie?",
-                  answer: "Our Laramie vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry."
+                  question: "How quickly can I get vending machine leads for Fremont?",
+                  answer: "Our Fremont vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry."
                 },
                 {
-                  question: "What makes Laramie a good market for vending machines?",
-                  answer: "Laramie features a strong education sector, major research presence, growing healthcare industry, and diverse business community. The city's stable economy and consistent employment create ideal conditions for vending machine success."
+                  question: "What makes Fremont a good market for vending machines?",
+                  answer: "Fremont features a strong technology sector, major manufacturing presence, growing healthcare industry, diverse educational institutions, and strategic retail presence. The city's diverse economy and consistent employment create ideal conditions for vending machine success."
                 },
                 {
-                  question: "Do you provide ongoing support for Laramie locations?",
-                  answer: "Yes, we offer comprehensive support including location monitoring, performance analytics, and business development assistance to ensure your vending machines thrive in Laramie."
+                  question: "Do you provide ongoing support for Fremont locations?",
+                  answer: "Yes, we offer comprehensive support including location monitoring, performance analytics, and business development assistance to ensure your vending machines thrive in Fremont."
                 },
                 {
-                  question: "What industries in Laramie are best for vending machines?",
-                  answer: "Educational institutions, research facilities, healthcare centers, retail locations, and manufacturing companies in Laramie show the highest potential for vending machine success due to consistent employee traffic and captive audiences."
+                  question: "What industries in Fremont are best for vending machines?",
+                  answer: "Technology operations, manufacturing facilities, healthcare centers, educational institutions, retail locations, and transportation companies in Fremont show the highest potential for vending machine success due to consistent employee traffic and captive audiences."
                 },
                 {
-                  question: "How do you verify the quality of Laramie vending locations?",
-                  answer: "We conduct thorough research on each Laramie location including business verification, employee count validation, industry research, and traffic pattern analysis to ensure only high-quality opportunities are included."
+                  question: "How do you verify the quality of Fremont vending locations?",
+                  answer: "We conduct thorough research on each Fremont location including business verification, employee count validation, industry research, and traffic pattern analysis to ensure only high-quality opportunities are included."
                 },
                 {
-                  question: "Can I get customized vending leads for specific areas of Laramie?",
-                  answer: "Absolutely! We can customize leads for specific neighborhoods, business districts, educational areas, or industrial zones within Laramie based on your preferences and target market requirements."
+                  question: "Can I get customized vending leads for specific areas of Fremont?",
+                  answer: "Absolutely! We can customize leads for specific neighborhoods, business districts, industrial areas, or tech campuses within Fremont based on your preferences and target market requirements."
                 },
                 {
-                  question: "What's the typical ROI for vending machines in Laramie?",
-                  answer: "Vending machines in Laramie typically show strong ROI due to the city's business density and consistent employee traffic patterns. Our research shows average payback periods of 12-18 months for well-placed machines."
+                  question: "What's the typical ROI for vending machines in Fremont?",
+                  answer: "Vending machines in Fremont typically show strong ROI due to the city's business density and consistent employee traffic patterns. Our research shows average payback periods of 12-18 months for well-placed machines."
                 },
                 {
-                  question: "Are there any special considerations for Laramie's education sector?",
-                  answer: "Laramie's education sector creates unique opportunities with large student populations and consistent academic schedules. Educational institutions often provide excellent vending machine placement opportunities due to consistent traffic."
+                  question: "Are there any special considerations for Fremont's tech sector?",
+                  answer: "Fremont's tech sector creates unique opportunities with large employee bases, consistent shifts, and captive audiences. Tech companies often provide excellent vending machine placement opportunities due to consistent traffic."
                 },
                 {
-                  question: "How does Laramie's university location affect vending opportunities?",
-                  answer: "Laramie's university location provides access to a large student and faculty workforce while offering strategic business access. The city's diverse economy and consistent employment create excellent vending machine opportunities."
+                  question: "How does Fremont's location in Silicon Valley affect vending opportunities?",
+                  answer: "Fremont's location in Silicon Valley provides access to a large tech workforce while offering strategic manufacturing access. The city's diverse economy and consistent employment create excellent vending machine opportunities."
                 },
                 {
-                  question: "What types of vending machines work best in Laramie?",
-                  answer: "Beverage machines, snack machines, and healthy food options perform well in Laramie's education, healthcare, and research sectors. Manufacturing and retail locations benefit from beverage and snack machines for employee and customer convenience."
+                  question: "What types of vending machines work best in Fremont?",
+                  answer: "Beverage machines, snack machines, and healthy food options perform well in Fremont's tech, manufacturing, and healthcare sectors. Educational and retail locations benefit from beverage and snack machines for employee and customer convenience."
                 },
                 {
-                  question: "Do you offer financing options for Laramie vending machine placements?",
-                  answer: "Yes, we work with financing partners to help you secure the equipment and capital needed to expand your vending machine business in Laramie."
+                  question: "Do you offer financing options for Fremont vending machine placements?",
+                  answer: "Yes, we work with financing partners to help you secure the equipment and capital needed to expand your vending machine business in Fremont."
                 },
                 {
-                  question: "How do you handle seasonal variations in Laramie's industries?",
-                  answer: "We analyze seasonal patterns in Laramie's various industries including education, healthcare, and retail and adjust our recommendations accordingly to ensure consistent vending machine performance throughout the year."
+                  question: "How do you handle seasonal variations in Fremont's industries?",
+                  answer: "We analyze seasonal patterns in Fremont's various industries including technology, manufacturing, and retail and adjust our recommendations accordingly to ensure consistent vending machine performance throughout the year."
                 },
                 {
-                  question: "What makes Laramie different from other Wyoming cities for vending?",
-                  answer: "Laramie offers a unique combination of university economy, major research presence, strategic location, and diverse industries that creates exceptional vending machine opportunities not found in other Wyoming cities."
+                  question: "What makes Fremont different from other California cities for vending?",
+                  answer: "Fremont offers a unique combination of Silicon Valley tech economy, major manufacturing presence, strategic Bay Area location, and diverse industries that creates exceptional vending machine opportunities not found in other California cities."
                 },
                 {
-                  question: "Can you help with vending machine maintenance in Laramie?",
-                  answer: "Yes, we partner with local maintenance providers and can connect you with reliable service technicians to keep your Laramie vending machines operating at peak performance."
+                  question: "Can you help with vending machine maintenance in Fremont?",
+                  answer: "Yes, we partner with local maintenance providers and can connect you with reliable service technicians to keep your Fremont vending machines operating at peak performance."
                 }
               ].map((faq, index) => (
                 <motion.div
@@ -493,5 +493,3 @@ export default function LaramieWyomingVendingLeadsPage() {
     </>
   )
 }
-
-

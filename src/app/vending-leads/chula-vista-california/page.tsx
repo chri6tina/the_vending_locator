@@ -11,21 +11,21 @@ import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function LaramieWyomingVendingLeadsPage() {
+export default function ChulaVistaCaliforniaVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Laramie';
-  const stateDisplayName = 'Wyoming';
+  const cityDisplayName = 'Chula Vista';
+  const stateDisplayName = 'California';
   
   // City-specific data
   const cityData = {
-  'name': 'Laramie',
-  'state': 'Wyoming',
-  'population': '32K+',
-  'businesses': '4K+',
-  'industries': '8-12',
-  'verifiedLocations': '80+',
+  'name': 'Chula Vista',
+  'state': 'California',
+  'population': '275K+',
+  'businesses': '15K+',
+  'industries': '12-18',
+  'verifiedLocations': '200+',
   'rating': '4.8/5',
-  'description': 'University town with education and research economy'
+  'description': 'Thriving border city with diverse economy and growing business sectors'
 };
   
   // Active users counter
@@ -35,9 +35,9 @@ export default function LaramieWyomingVendingLeadsPage() {
 
   // User names for active users counter
   const [userNames, setUserNames] = useState([
-    'Mike from Laramie', 'Sarah in Downtown', 'David in Laramie', 'Lisa in Laramie',
-    'Tom in Laramie', 'Jennifer in Laramie', 'Robert in Laramie', 'Amanda in Laramie',
-    'Chris in Laramie', 'Maria in Laramie', 'James in Laramie', 'Emily in Laramie'
+    'Mike from Chula Vista', 'Sarah in Downtown', 'David in Chula Vista', 'Lisa in Chula Vista',
+    'Tom in Chula Vista', 'Jennifer in Chula Vista', 'Robert in Chula Vista', 'Amanda in Chula Vista',
+    'Chris in Chula Vista', 'Maria in Chula Vista', 'James in Chula Vista', 'Emily in Chula Vista'
   ])
 
   // Active users counter effect
@@ -140,7 +140,7 @@ export default function LaramieWyomingVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Get pre-qualified vending machine locations in Laramie's thriving education and research economy. 
+                Get pre-qualified vending machine locations in Chula Vista's diverse and growing border economy. 
                 Access verified businesses with detailed contact information and placement opportunities.
               </motion.p>
 
@@ -285,40 +285,25 @@ export default function LaramieWyomingVendingLeadsPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               
               <motion.div
-                key="Education"
+                key="Manufacturing"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0 }}
                 viewport={{ once: true }}
-                className="bg-purple-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
-              >
-                <div className="text-purple-600 mb-4">
-                  <AcademicCapIcon className="w-12 h-12" />
-                </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">University of Wyoming and multiple school districts providing large student populations and consistent foot traffic.</p>
-              </motion.div>
-
-              <motion.div
-                key="Research"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.1 }}
-                viewport={{ once: true }}
                 className="bg-blue-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
                 <div className="text-blue-600 mb-4">
-                  <CpuChipIcon className="w-12 h-12" />
+                  <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Research</h3>
-                <p className="text-stone leading-relaxed">Research facilities and laboratories providing large employee bases and excellent vending opportunities.</p>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
+                <p className="text-stone leading-relaxed">Chula Vista features diverse manufacturing operations including aerospace, electronics, and industrial manufacturing with large employee bases.</p>
               </motion.div>
 
               <motion.div
                 key="Healthcare"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
+                transition={{ duration: 0.8, delay: 0.1 }}
                 viewport={{ once: true }}
                 className="bg-red-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
@@ -326,7 +311,22 @@ export default function LaramieWyomingVendingLeadsPage() {
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Medical facilities and healthcare services providing consistent patient and staff traffic.</p>
+                <p className="text-stone leading-relaxed">Modern healthcare facilities including Sharp Chula Vista Medical Center and numerous medical offices providing consistent patient and staff traffic.</p>
+              </motion.div>
+
+              <motion.div
+                key="Education"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="bg-purple-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-purple-600 mb-4">
+                  <AcademicCapIcon className="w-12 h-12" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
+                <p className="text-stone leading-relaxed">Chula Vista Elementary School District, Sweetwater Union High School District, and Southwestern College with large student populations.</p>
               </motion.div>
 
               <motion.div
@@ -335,43 +335,43 @@ export default function LaramieWyomingVendingLeadsPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
                 viewport={{ once: true }}
-                className="bg-orange-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+                className="bg-green-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
-                <div className="text-orange-600 mb-4">
+                <div className="text-green-600 mb-4">
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Growing retail sector with shopping centers, restaurants, and professional service businesses with high foot traffic.</p>
+                <p className="text-stone leading-relaxed">Major retail centers including Chula Vista Center, Otay Ranch Town Center, and numerous shopping districts with high foot traffic.</p>
+              </motion.div>
+
+              <motion.div
+                key="Technology"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                viewport={{ once: true }}
+                className="bg-orange-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-orange-600 mb-4">
+                  <CpuChipIcon className="w-12 h-12" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Technology</h3>
+                <p className="text-stone leading-relaxed">Growing technology sector with companies in telecommunications, software development, and digital services.</p>
               </motion.div>
 
               <motion.div
                 key="Transportation"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
+                transition={{ duration: 0.8, delay: 0.5 }}
                 viewport={{ once: true }}
                 className="bg-teal-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
                 <div className="text-teal-600 mb-4">
-                  <TruckIcon className="w-12 h-12" />
+                  <MapPinIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Transportation companies and logistics operations providing consistent employee traffic.</p>
-              </motion.div>
-
-              <motion.div
-                key="Manufacturing"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.5 }}
-                viewport={{ once: true }}
-                className="bg-green-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
-              >
-                <div className="text-green-600 mb-4">
-                  <BuildingOfficeIcon className="w-12 h-12" />
-                </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Manufacturing facilities and industrial operations providing large employee bases and consistent traffic.</p>
+                <p className="text-stone leading-relaxed">Strategic location near the US-Mexico border with logistics centers, transportation companies, and international trade facilities.</p>
               </motion.div>
             </div>
           </div>
@@ -406,64 +406,64 @@ export default function LaramieWyomingVendingLeadsPage() {
             <div className="space-y-4">
               {[
                 {
-                  question: "What types of vending machine locations are available in Laramie?",
-                  answer: "Laramie offers diverse vending opportunities including educational institutions, research facilities, healthcare centers, retail locations, and manufacturing companies. Each location is pre-qualified for optimal vending machine placement."
+                  question: "What types of vending machine locations are available in Chula Vista?",
+                  answer: "Chula Vista offers diverse vending opportunities including manufacturing facilities, healthcare centers, educational institutions, retail locations, technology companies, and transportation facilities. Each location is pre-qualified for optimal vending machine placement."
                 },
                 {
-                  question: "How quickly can I get vending machine leads for Laramie?",
-                  answer: "Our Laramie vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry."
+                  question: "How quickly can I get vending machine leads for Chula Vista?",
+                  answer: "Our Chula Vista vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry."
                 },
                 {
-                  question: "What makes Laramie a good market for vending machines?",
-                  answer: "Laramie features a strong education sector, major research presence, growing healthcare industry, and diverse business community. The city's stable economy and consistent employment create ideal conditions for vending machine success."
+                  question: "What makes Chula Vista a good market for vending machines?",
+                  answer: "Chula Vista features a strong manufacturing sector, growing healthcare industry, stable educational institutions, major retail centers, and strategic border location. The city's diverse economy and consistent employment create ideal conditions for vending machine success."
                 },
                 {
-                  question: "Do you provide ongoing support for Laramie locations?",
-                  answer: "Yes, we offer comprehensive support including location monitoring, performance analytics, and business development assistance to ensure your vending machines thrive in Laramie."
+                  question: "Do you provide ongoing support for Chula Vista locations?",
+                  answer: "Yes, we offer comprehensive support including location monitoring, performance analytics, and business development assistance to ensure your vending machines thrive in Chula Vista."
                 },
                 {
-                  question: "What industries in Laramie are best for vending machines?",
-                  answer: "Educational institutions, research facilities, healthcare centers, retail locations, and manufacturing companies in Laramie show the highest potential for vending machine success due to consistent employee traffic and captive audiences."
+                  question: "What industries in Chula Vista are best for vending machines?",
+                  answer: "Manufacturing operations, healthcare facilities, educational institutions, retail centers, technology companies, and transportation facilities in Chula Vista show the highest potential for vending machine success due to consistent employee traffic and captive audiences."
                 },
                 {
-                  question: "How do you verify the quality of Laramie vending locations?",
-                  answer: "We conduct thorough research on each Laramie location including business verification, employee count validation, industry research, and traffic pattern analysis to ensure only high-quality opportunities are included."
+                  question: "How do you verify the quality of Chula Vista vending locations?",
+                  answer: "We conduct thorough research on each Chula Vista location including business verification, employee count validation, industry research, and traffic pattern analysis to ensure only high-quality opportunities are included."
                 },
                 {
-                  question: "Can I get customized vending leads for specific areas of Laramie?",
-                  answer: "Absolutely! We can customize leads for specific neighborhoods, business districts, educational areas, or industrial zones within Laramie based on your preferences and target market requirements."
+                  question: "Can I get customized vending leads for specific areas of Chula Vista?",
+                  answer: "Absolutely! We can customize leads for specific neighborhoods, business districts, or industrial areas within Chula Vista based on your preferences and target market requirements."
                 },
                 {
-                  question: "What's the typical ROI for vending machines in Laramie?",
-                  answer: "Vending machines in Laramie typically show strong ROI due to the city's business density and consistent employee traffic patterns. Our research shows average payback periods of 12-18 months for well-placed machines."
+                  question: "What's the typical ROI for vending machines in Chula Vista?",
+                  answer: "Vending machines in Chula Vista typically show strong ROI due to the city's business density and consistent employee traffic patterns. Our research shows average payback periods of 12-18 months for well-placed machines."
                 },
                 {
-                  question: "Are there any special considerations for Laramie's education sector?",
-                  answer: "Laramie's education sector creates unique opportunities with large student populations and consistent academic schedules. Educational institutions often provide excellent vending machine placement opportunities due to consistent traffic."
+                  question: "Are there any special considerations for Chula Vista's border location?",
+                  answer: "Chula Vista's proximity to the US-Mexico border creates unique opportunities with international trade facilities, logistics centers, and diverse cultural businesses that provide excellent vending machine placement opportunities."
                 },
                 {
-                  question: "How does Laramie's university location affect vending opportunities?",
-                  answer: "Laramie's university location provides access to a large student and faculty workforce while offering strategic business access. The city's diverse economy and consistent employment create excellent vending machine opportunities."
+                  question: "How does Chula Vista's location in San Diego County affect vending opportunities?",
+                  answer: "Chula Vista's location in San Diego County provides access to a large metropolitan workforce while offering more affordable business costs than downtown San Diego. The city's strategic location creates excellent vending machine opportunities."
                 },
                 {
-                  question: "What types of vending machines work best in Laramie?",
-                  answer: "Beverage machines, snack machines, and healthy food options perform well in Laramie's education, healthcare, and research sectors. Manufacturing and retail locations benefit from beverage and snack machines for employee and customer convenience."
+                  question: "What types of vending machines work best in Chula Vista?",
+                  answer: "Beverage machines, snack machines, and healthy food options perform well in Chula Vista's manufacturing and healthcare sectors. Educational and retail locations benefit from beverage and snack machines for employee and customer convenience."
                 },
                 {
-                  question: "Do you offer financing options for Laramie vending machine placements?",
-                  answer: "Yes, we work with financing partners to help you secure the equipment and capital needed to expand your vending machine business in Laramie."
+                  question: "Do you offer financing options for Chula Vista vending machine placements?",
+                  answer: "Yes, we work with financing partners to help you secure the equipment and capital needed to expand your vending machine business in Chula Vista."
                 },
                 {
-                  question: "How do you handle seasonal variations in Laramie's industries?",
-                  answer: "We analyze seasonal patterns in Laramie's various industries including education, healthcare, and retail and adjust our recommendations accordingly to ensure consistent vending machine performance throughout the year."
+                  question: "How do you handle seasonal variations in Chula Vista's business sectors?",
+                  answer: "We analyze seasonal patterns in Chula Vista's various industries and adjust our recommendations accordingly to ensure consistent vending machine performance throughout the year."
                 },
                 {
-                  question: "What makes Laramie different from other Wyoming cities for vending?",
-                  answer: "Laramie offers a unique combination of university economy, major research presence, strategic location, and diverse industries that creates exceptional vending machine opportunities not found in other Wyoming cities."
+                  question: "What makes Chula Vista different from other California cities for vending?",
+                  answer: "Chula Vista offers a unique combination of border economy, manufacturing presence, growing healthcare sector, and strategic San Diego County location that creates exceptional vending machine opportunities not found in other California cities."
                 },
                 {
-                  question: "Can you help with vending machine maintenance in Laramie?",
-                  answer: "Yes, we partner with local maintenance providers and can connect you with reliable service technicians to keep your Laramie vending machines operating at peak performance."
+                  question: "Can you help with vending machine maintenance in Chula Vista?",
+                  answer: "Yes, we partner with local maintenance providers and can connect you with reliable service technicians to keep your Chula Vista vending machines operating at peak performance."
                 }
               ].map((faq, index) => (
                 <motion.div
@@ -493,5 +493,3 @@ export default function LaramieWyomingVendingLeadsPage() {
     </>
   )
 }
-
-

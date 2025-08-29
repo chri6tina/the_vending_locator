@@ -11,21 +11,19 @@ import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function LaramieWyomingVendingLeadsPage() {
-  // City and state display names
-  const cityDisplayName = 'Laramie';
-  const stateDisplayName = 'Wyoming';
+export default function AlaskaVendingLeadsPage() {
+  // State display name
+  const stateDisplayName = 'Alaska';
   
-  // City-specific data
-  const cityData = {
-  'name': 'Laramie',
-  'state': 'Wyoming',
-  'population': '32K+',
-  'businesses': '4K+',
-  'industries': '8-12',
-  'verifiedLocations': '80+',
+  // State-specific data
+  const stateData = {
+  'name': 'Alaska',
+  'population': '730K+',
+  'businesses': '30K+',
+  'industries': '20-25',
+  'verifiedLocations': '300+',
   'rating': '4.8/5',
-  'description': 'University town with education and research economy'
+  'description': 'The Last Frontier with unique business opportunities and growing economy'
 };
   
   // Active users counter
@@ -35,9 +33,9 @@ export default function LaramieWyomingVendingLeadsPage() {
 
   // User names for active users counter
   const [userNames, setUserNames] = useState([
-    'Mike from Laramie', 'Sarah in Downtown', 'David in Laramie', 'Lisa in Laramie',
-    'Tom in Laramie', 'Jennifer in Laramie', 'Robert in Laramie', 'Amanda in Laramie',
-    'Chris in Laramie', 'Maria in Laramie', 'James in Laramie', 'Emily in Laramie'
+    'Mike from Anchorage', 'Sarah in Fairbanks', 'David in Juneau', 'Lisa in Alaska',
+    'Tom in Alaska', 'Jennifer in Alaska', 'Robert in Alaska', 'Amanda in Alaska',
+    'Chris in Alaska', 'Maria in Alaska', 'James in Alaska', 'Emily in Alaska'
   ])
 
   // Active users counter effect
@@ -94,11 +92,7 @@ export default function LaramieWyomingVendingLeadsPage() {
                 Vending Leads
               </Link>
               <span>/</span>
-              <Link href={`/vending-leads/${stateDisplayName.toLowerCase().replace(/\s+/g, '-')}`} className="hover:text-navy transition-colors">
-                {stateDisplayName}
-              </Link>
-              <span>/</span>
-              <span className="text-charcoal font-medium">{cityDisplayName}</span>
+              <span className="text-charcoal font-medium">{stateDisplayName}</span>
             </div>
           </div>
         </nav>
@@ -130,17 +124,17 @@ export default function LaramieWyomingVendingLeadsPage() {
                 className="text-4xl md:text-6xl font-playfair font-bold text-charcoal mb-6 leading-tight"
               >
                 Vending Machine Locations in{' '}
-                <span className="text-navy">{cityDisplayName}, {stateDisplayName}</span>
+                <span className="text-navy">{stateDisplayName}</span>
               </motion.h1>
 
-              {/* City-Specific Value Proposition */}
+              {/* State-Specific Value Proposition */}
               <motion.p 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Get pre-qualified vending machine locations in Laramie's thriving education and research economy. 
+                Get pre-qualified vending machine locations across Alaska's diverse and growing economy. 
                 Access verified businesses with detailed contact information and placement opportunities.
               </motion.p>
 
@@ -211,19 +205,19 @@ export default function LaramieWyomingVendingLeadsPage() {
                 className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto"
               >
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-navy">{cityData.population}</div>
+                  <div className="text-2xl font-bold text-navy">{stateData.population}</div>
                   <div className="text-sm text-stone">Population</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-navy">{cityData.businesses}</div>
+                  <div className="text-2xl font-bold text-navy">{stateData.businesses}</div>
                   <div className="text-sm text-stone">Businesses</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-navy">{cityData.industries}</div>
+                  <div className="text-2xl font-bold text-navy">{stateData.industries}</div>
                   <div className="text-sm text-stone">Industries</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-navy">{cityData.verifiedLocations}</div>
+                  <div className="text-2xl font-bold text-navy">{stateData.verifiedLocations}</div>
                   <div className="text-sm text-stone">Verified Locations</div>
                 </div>
               </motion.div>
@@ -242,7 +236,7 @@ export default function LaramieWyomingVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
               >
-                Get Access to Qualified Vending Machine Locations in {cityDisplayName}
+                Get Access to Qualified Vending Machine Locations in {stateDisplayName}
               </motion.h2>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
@@ -269,7 +263,7 @@ export default function LaramieWyomingVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
               >
-                Business Landscape in {cityDisplayName}
+                Business Landscape in {stateDisplayName}
               </motion.h2>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
@@ -278,47 +272,62 @@ export default function LaramieWyomingVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="text-lg text-stone max-w-3xl mx-auto"
               >
-                Discover the diverse industries and business opportunities that make {cityDisplayName} an ideal market for vending machines.
+                Discover the diverse industries and business opportunities that make {stateDisplayName} an ideal market for vending machines.
               </motion.p>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               
               <motion.div
-                key="Education"
+                key="Oil & Gas"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0 }}
                 viewport={{ once: true }}
-                className="bg-purple-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+                className="bg-blue-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
-                <div className="text-purple-600 mb-4">
-                  <AcademicCapIcon className="w-12 h-12" />
+                <div className="text-blue-600 mb-4">
+                  <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">University of Wyoming and multiple school districts providing large student populations and consistent foot traffic.</p>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Oil & Gas</h3>
+                <p className="text-stone leading-relaxed">Alaska's largest industry with major operations on the North Slope, providing consistent employee traffic and excellent vending opportunities.</p>
               </motion.div>
 
               <motion.div
-                key="Research"
+                key="Tourism"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.1 }}
                 viewport={{ once: true }}
-                className="bg-blue-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+                className="bg-green-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
-                <div className="text-blue-600 mb-4">
-                  <CpuChipIcon className="w-12 h-12" />
+                <div className="text-green-600 mb-4">
+                  <MapPinIcon className="w-12 h-12" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Research</h3>
-                <p className="text-stone leading-relaxed">Research facilities and laboratories providing large employee bases and excellent vending opportunities.</p>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Tourism</h3>
+                <p className="text-stone leading-relaxed">Major tourism industry with cruise ships, hotels, restaurants, and attractions providing high foot traffic and seasonal opportunities.</p>
+              </motion.div>
+
+              <motion.div
+                key="Fishing"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="bg-teal-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-teal-600 mb-4">
+                  <TruckIcon className="w-12 h-12" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Fishing</h3>
+                <p className="text-stone leading-relaxed">Commercial fishing industry with processing plants, ports, and related businesses providing consistent employee traffic.</p>
               </motion.div>
 
               <motion.div
                 key="Healthcare"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
                 viewport={{ once: true }}
                 className="bg-red-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
@@ -326,52 +335,37 @@ export default function LaramieWyomingVendingLeadsPage() {
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Medical facilities and healthcare services providing consistent patient and staff traffic.</p>
+                <p className="text-stone leading-relaxed">Providence Alaska Medical Center, Alaska Regional Hospital, and numerous medical facilities providing consistent patient and staff traffic.</p>
               </motion.div>
 
               <motion.div
-                key="Retail"
+                key="Education"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.3 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
                 viewport={{ once: true }}
-                className="bg-orange-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+                className="bg-purple-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
-                <div className="text-orange-600 mb-4">
-                  <ShoppingBagIcon className="w-12 h-12" />
+                <div className="text-purple-600 mb-4">
+                  <AcademicCapIcon className="w-12 h-12" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Growing retail sector with shopping centers, restaurants, and professional service businesses with high foot traffic.</p>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
+                <p className="text-stone leading-relaxed">University of Alaska system, Anchorage School District, and numerous educational institutions with large student populations.</p>
               </motion.div>
 
               <motion.div
                 key="Transportation"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                viewport={{ once: true }}
-                className="bg-teal-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
-              >
-                <div className="text-teal-600 mb-4">
-                  <TruckIcon className="w-12 h-12" />
-                </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Transportation companies and logistics operations providing consistent employee traffic.</p>
-              </motion.div>
-
-              <motion.div
-                key="Manufacturing"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.5 }}
                 viewport={{ once: true }}
-                className="bg-green-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+                className="bg-orange-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
-                <div className="text-green-600 mb-4">
-                  <BuildingOfficeIcon className="w-12 h-12" />
+                <div className="text-orange-600 mb-4">
+                  <CpuChipIcon className="w-12 h-12" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Manufacturing facilities and industrial operations providing large employee bases and consistent traffic.</p>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
+                <p className="text-stone leading-relaxed">Alaska Airlines, ports, railroads, and logistics companies providing consistent employee traffic and excellent vending opportunities.</p>
               </motion.div>
             </div>
           </div>
@@ -399,71 +393,71 @@ export default function LaramieWyomingVendingLeadsPage() {
                 Frequently Asked Questions
               </h2>
               <p className="text-lg text-stone">
-                Everything you need to know about vending machine leads in {cityDisplayName}, {stateDisplayName}.
+                Everything you need to know about vending machine leads in {stateDisplayName}.
               </p>
             </div>
             
             <div className="space-y-4">
               {[
                 {
-                  question: "What types of vending machine locations are available in Laramie?",
-                  answer: "Laramie offers diverse vending opportunities including educational institutions, research facilities, healthcare centers, retail locations, and manufacturing companies. Each location is pre-qualified for optimal vending machine placement."
+                  question: "What types of vending machine locations are available in Alaska?",
+                  answer: "Alaska offers diverse vending opportunities including oil and gas facilities, tourism businesses, fishing operations, healthcare centers, educational institutions, and transportation companies. Each location is pre-qualified for optimal vending machine placement."
                 },
                 {
-                  question: "How quickly can I get vending machine leads for Laramie?",
-                  answer: "Our Laramie vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry."
+                  question: "How quickly can I get vending machine leads for Alaska?",
+                  answer: "Our Alaska vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry."
                 },
                 {
-                  question: "What makes Laramie a good market for vending machines?",
-                  answer: "Laramie features a strong education sector, major research presence, growing healthcare industry, and diverse business community. The city's stable economy and consistent employment create ideal conditions for vending machine success."
+                  question: "What makes Alaska a good market for vending machines?",
+                  answer: "Alaska features a strong oil and gas sector, major tourism industry, stable fishing operations, growing healthcare industry, and diverse educational institutions. The state's unique economy and consistent employment create ideal conditions for vending machine success."
                 },
                 {
-                  question: "Do you provide ongoing support for Laramie locations?",
-                  answer: "Yes, we offer comprehensive support including location monitoring, performance analytics, and business development assistance to ensure your vending machines thrive in Laramie."
+                  question: "Do you provide ongoing support for Alaska locations?",
+                  answer: "Yes, we offer comprehensive support including location monitoring, performance analytics, and business development assistance to ensure your vending machines thrive in Alaska."
                 },
                 {
-                  question: "What industries in Laramie are best for vending machines?",
-                  answer: "Educational institutions, research facilities, healthcare centers, retail locations, and manufacturing companies in Laramie show the highest potential for vending machine success due to consistent employee traffic and captive audiences."
+                  question: "What industries in Alaska are best for vending machines?",
+                  answer: "Oil and gas operations, tourism businesses, fishing facilities, healthcare centers, educational institutions, and transportation companies in Alaska show the highest potential for vending machine success due to consistent employee traffic and captive audiences."
                 },
                 {
-                  question: "How do you verify the quality of Laramie vending locations?",
-                  answer: "We conduct thorough research on each Laramie location including business verification, employee count validation, industry research, and traffic pattern analysis to ensure only high-quality opportunities are included."
+                  question: "How do you verify the quality of Alaska vending locations?",
+                  answer: "We conduct thorough research on each Alaska location including business verification, employee count validation, industry research, and traffic pattern analysis to ensure only high-quality opportunities are included."
                 },
                 {
-                  question: "Can I get customized vending leads for specific areas of Laramie?",
-                  answer: "Absolutely! We can customize leads for specific neighborhoods, business districts, educational areas, or industrial zones within Laramie based on your preferences and target market requirements."
+                  question: "Can I get customized vending leads for specific areas of Alaska?",
+                  answer: "Absolutely! We can customize leads for specific regions, cities, or industrial areas within Alaska based on your preferences and target market requirements."
                 },
                 {
-                  question: "What's the typical ROI for vending machines in Laramie?",
-                  answer: "Vending machines in Laramie typically show strong ROI due to the city's business density and consistent employee traffic patterns. Our research shows average payback periods of 12-18 months for well-placed machines."
+                  question: "What's the typical ROI for vending machines in Alaska?",
+                  answer: "Vending machines in Alaska typically show strong ROI due to the state's business density and consistent employee traffic patterns. Our research shows average payback periods of 12-18 months for well-placed machines."
                 },
                 {
-                  question: "Are there any special considerations for Laramie's education sector?",
-                  answer: "Laramie's education sector creates unique opportunities with large student populations and consistent academic schedules. Educational institutions often provide excellent vending machine placement opportunities due to consistent traffic."
+                  question: "Are there any special considerations for Alaska's remote locations?",
+                  answer: "Alaska's remote locations create unique opportunities with limited competition and captive employee bases. These locations often provide excellent vending machine placement opportunities due to consistent traffic."
                 },
                 {
-                  question: "How does Laramie's university location affect vending opportunities?",
-                  answer: "Laramie's university location provides access to a large student and faculty workforce while offering strategic business access. The city's diverse economy and consistent employment create excellent vending machine opportunities."
+                  question: "How does Alaska's seasonal tourism affect vending opportunities?",
+                  answer: "Alaska's seasonal tourism creates unique opportunities with high foot traffic during peak seasons. We analyze seasonal patterns and adjust our recommendations accordingly to ensure consistent vending machine performance."
                 },
                 {
-                  question: "What types of vending machines work best in Laramie?",
-                  answer: "Beverage machines, snack machines, and healthy food options perform well in Laramie's education, healthcare, and research sectors. Manufacturing and retail locations benefit from beverage and snack machines for employee and customer convenience."
+                  question: "What types of vending machines work best in Alaska?",
+                  answer: "Beverage machines, snack machines, and healthy food options perform well in Alaska's oil and gas, tourism, and healthcare sectors. Educational and transportation locations benefit from beverage and snack machines for employee convenience."
                 },
                 {
-                  question: "Do you offer financing options for Laramie vending machine placements?",
-                  answer: "Yes, we work with financing partners to help you secure the equipment and capital needed to expand your vending machine business in Laramie."
+                  question: "Do you offer financing options for Alaska vending machine placements?",
+                  answer: "Yes, we work with financing partners to help you secure the equipment and capital needed to expand your vending machine business in Alaska."
                 },
                 {
-                  question: "How do you handle seasonal variations in Laramie's industries?",
-                  answer: "We analyze seasonal patterns in Laramie's various industries including education, healthcare, and retail and adjust our recommendations accordingly to ensure consistent vending machine performance throughout the year."
+                  question: "How do you handle seasonal variations in Alaska's industries?",
+                  answer: "We analyze seasonal patterns in Alaska's various industries including tourism, fishing, and oil operations and adjust our recommendations accordingly to ensure consistent vending machine performance throughout the year."
                 },
                 {
-                  question: "What makes Laramie different from other Wyoming cities for vending?",
-                  answer: "Laramie offers a unique combination of university economy, major research presence, strategic location, and diverse industries that creates exceptional vending machine opportunities not found in other Wyoming cities."
+                  question: "What makes Alaska different from other states for vending?",
+                  answer: "Alaska offers a unique combination of oil and gas economy, major tourism industry, fishing operations, and strategic location that creates exceptional vending machine opportunities not found in other states."
                 },
                 {
-                  question: "Can you help with vending machine maintenance in Laramie?",
-                  answer: "Yes, we partner with local maintenance providers and can connect you with reliable service technicians to keep your Laramie vending machines operating at peak performance."
+                  question: "Can you help with vending machine maintenance in Alaska?",
+                  answer: "Yes, we partner with local maintenance providers and can connect you with reliable service technicians to keep your Alaska vending machines operating at peak performance."
                 }
               ].map((faq, index) => (
                 <motion.div
@@ -493,5 +487,3 @@ export default function LaramieWyomingVendingLeadsPage() {
     </>
   )
 }
-
-
