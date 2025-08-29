@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { XMarkIcon, MapPinIcon, EnvelopeIcon, CreditCardIcon } from '@heroicons/react/24/outline'
+import Link from 'next/link'
 
 interface Package {
   name: string
@@ -276,7 +277,16 @@ export default function ZipCodeModal({ isOpen, onClose, package: selectedPackage
 
                 {/* Privacy Notice */}
                 <p className="text-xs text-stone/70 text-center">
-                  By continuing, you agree to our terms and will be redirected to secure Stripe checkout. 
+                  By continuing, you agree to our{' '}
+                  <Link 
+                    href="/terms-of-service" 
+                    className="underline hover:text-navy transition-colors duration-200"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    terms
+                  </Link>
+                  {' '}and will be redirected to secure Stripe checkout. 
                   Your information is protected and will only be used for order processing.
                 </p>
               </form>
