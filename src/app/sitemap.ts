@@ -109,6 +109,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Colorado cities
     { url: 'https://www.thevendinglocator.com/vending-leads/aurora-colorado', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/vending-leads/arvada-colorado', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/pueblo-colorado', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/westminster-colorado', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/thornton-colorado', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     
     // New high-value city pages
     { url: 'https://www.thevendinglocator.com/vending-leads/nashville-tennessee', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
