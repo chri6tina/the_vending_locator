@@ -1,553 +1,253 @@
-'use client'
+'use client';
 
-import { useState, useEffect } from 'react'
-import Link from 'next/link'
-import { motion } from 'framer-motion'
-import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CpuChipIcon, HeartIcon, ShoppingBagIcon, TruckIcon, BuildingLibraryIcon, CurrencyDollarIcon, SparklesIcon } from '@heroicons/react/24/solid'
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
-import PricingTable from '@/components/PricingTable'
-import HotLeads from '@/components/HotLeads'
-import VendingCourse from '@/components/VendingCourse'
-import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
+import { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import PricingTable from '@/components/PricingTable';
+import HotLeads from '@/components/HotLeads';
+import VendingCourse from '@/components/VendingCourse';
+import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper';
 
-export default function FortCollinsColoradoVendingLeadsPage() {
-  // City and state display names
-  const cityDisplayName = 'Fort';
-  const stateDisplayName = 'Colorado';
-  
-  // City-specific data
+export default function FortCollinsColoradoPage() {
+  const [activeUsers, setActiveUsers] = useState(0);
+
+  useEffect(() => {
+    // Simulate active users
+    const interval = setInterval(() => {
+      setActiveUsers(prev => prev + Math.floor(Math.random() * 3) + 1);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   const cityData = {
-  'name': 'Fort',
-  'state': 'Colorado',
-  'population': '100K-500K',
-  'businesses': '10K-50K',
-  'industries': '10-15',
-  'verifiedLocations': '200-400',
-  'rating': '4.8/5',
-  'description': 'Thriving business community in Colorado'
-};
-  
-  // Active users counter
-  const [activeUsers, setActiveUsers] = useState(28)
-  const [currentUserIndex, setCurrentUserIndex] = useState(0)
-  const [usedNames, setUsedNames] = useState(new Set())
-
-  // User names for active users counter
-  const [userNames, setUserNames] = useState([
-    'Mike from Fort Collins', 'Sarah in Downtown', 'David in Fort Collins', 'Lisa in Fort Collins',
-    'Tom in Fort Collins', 'Jennifer in Fort Collins', 'Robert in Fort Collins', 'Amanda in Fort Collins',
-    'Chris in Fort Collins', 'Maria in Fort Collins', 'James in Fort Collins', 'Emily in Fort Collins'
-  ])
-
-  // Active users counter effect
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveUsers(prev => {
-        const change = Math.floor(Math.random() * 3) - 1
-        const newValue = prev + change
-        return Math.max(25, Math.min(42, newValue))
-      })
-    }, 4000);
-    return () => clearInterval(interval)
-  }, [])
-
-  // Smart rotation of user names
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentUserIndex(prev => {
-        if (usedNames.size > userNames.length * 0.8) {
-          setUsedNames(new Set())
-        }
-        let attempts = 0
-        let nextIndex = prev
-        while (attempts < 50) {
-          nextIndex = (nextIndex + 1) % userNames.length
-          if (!usedNames.has(nextIndex)) {
-            setUsedNames(prev => new Set([...prev, nextIndex]));
-            return nextIndex
-          }
-          attempts++
-        }
-        const randomIndex = Math.floor(Math.random() * userNames.length)
-        setUsedNames(prev => new Set([...prev, randomIndex]));
-        return randomIndex
-      })
-    }, 5000);
-    return () => clearInterval(interval)
-  }, [userNames.length, usedNames])
+    name: 'Fort Collins',
+    state: 'Colorado',
+    population: '169,000+',
+    description: 'Fort Collins, home to Colorado State University, offers a vibrant mix of education, technology, and outdoor recreation businesses.',
+    heroTitle: 'Vending Machine Opportunities in Fort Collins, Colorado',
+    heroSubtitle: 'Connect with local businesses and secure prime vending locations in Fort Collins\' thriving economy',
+    businessLandscape: [
+      {
+        title: 'Education & Research',
+        description: 'Colorado State University and research institutions with large student and staff populations',
+        icon: '🎓'
+      },
+      {
+        title: 'Technology & Innovation',
+        description: 'Growing tech sector with startups and established companies in the city',
+        icon: '💻'
+      },
+      {
+        title: 'Healthcare & Wellness',
+        description: 'Medical centers, clinics, and wellness facilities serving the community',
+        icon: '🏥'
+      },
+      {
+        title: 'Outdoor Recreation',
+        description: 'Companies specializing in outdoor gear, sports, and recreational activities',
+        icon: '🏔️'
+      },
+      {
+        title: 'Manufacturing',
+        description: 'Diverse manufacturing sector including food processing and technology',
+        icon: '🏭'
+      },
+      {
+        title: 'Retail & Entertainment',
+        description: 'Old Town shopping district and modern retail centers throughout the city',
+        icon: '🛍️'
+      }
+    ],
+    faq: [
+      {
+        question: 'What types of businesses in Fort Collins are good for vending machines?',
+        answer: 'Educational institutions, healthcare facilities, office buildings, retail centers, and manufacturing plants in Fort Collins are excellent locations for vending machines due to high foot traffic and captive audiences.'
+      },
+      {
+        question: 'How do I approach businesses in Fort Collins for vending machine placement?',
+        answer: 'Start with educational institutions, healthcare facilities, and office buildings. Present the benefits of increased revenue, customer convenience, and our guaranteed placement service.'
+      },
+      {
+        question: 'What are the best areas in Fort Collins for vending machine placement?',
+        answer: 'Focus on areas around Colorado State University, medical districts, Old Town, and industrial areas where there\'s consistent foot traffic and employee populations.'
+      },
+      {
+        question: 'How long does it take to get vending machines placed in Fort Collins?',
+        answer: 'With our expert team handling outreach and negotiations, most placements in Fort Collins are completed within 1-6 months, depending on the specific location and business type.'
+      }
+    ]
+  };
 
   return (
-    <>
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50">
       <Header />
       
-      <div className="min-h-screen bg-warm-white">
-        {/* Breadcrumb Navigation */}
-        <nav className="bg-white border-b border-gray-200 py-3">
-          <div className="container mx-auto px-4">
-            <div className="flex items-center space-x-2 text-sm text-stone">
-              <Link href="/" className="hover:text-navy transition-colors">
-                Home
-              </Link>
-              <span>/</span>
-              <Link href="/vending-leads" className="hover:text-navy transition-colors">
-                Vending Leads
-              </Link>
-              <span>/</span>
-              <Link href={`/vending-leads/${stateDisplayName.toLowerCase().replace(/\s+/g, '-')}`} className="hover:text-navy transition-colors">
-                {stateDisplayName}
-              </Link>
-              <span>/</span>
-              <span className="text-charcoal font-medium">{cityDisplayName}</span>
+      {/* Hero Section */}
+      <section className="relative py-20 px-4 bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-700 text-white">
+        <div className="max-w-6xl mx-auto text-center">
+          <motion.h1 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-5xl md:text-6xl font-bold mb-6"
+          >
+            {cityData.heroTitle}
+          </motion.h1>
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto"
+          >
+            {cityData.heroSubtitle}
+          </motion.p>
+          
+          {/* Trust Signals */}
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="flex flex-wrap justify-center gap-8 mb-8"
+          >
+            <div className="text-center">
+              <div className="text-3xl font-bold text-yellow-300">{cityData.population}</div>
+              <div className="text-sm opacity-90">Population</div>
             </div>
+            <div className="text-center">
+              <div className="text-3xl font-bold text-yellow-300">500+</div>
+              <div className="text-sm opacity-90">Businesses Served</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl font-bold text-yellow-300">95%</div>
+              <div className="text-sm opacity-90">Success Rate</div>
+            </div>
+          </motion.div>
+
+          {/* Active Users Counter */}
+          <motion.div 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.6 }}
+            className="bg-white/20 backdrop-blur-sm rounded-lg p-4 inline-block"
+          >
+            <div className="text-sm opacity-90 mb-1">Active users exploring opportunities</div>
+            <div className="text-2xl font-bold text-yellow-300">{activeUsers.toLocaleString()}</div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section className="py-20 px-4">
+        <div className="max-w-6xl mx-auto">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              Vending Machine Pricing & Services
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Choose the perfect package for your vending machine business in {cityData.name}, {cityData.state}
+            </p>
+          </motion.div>
+          <PricingTable />
+        </div>
+      </section>
+
+      {/* Business Landscape */}
+      <section className="py-20 px-4 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              {cityData.name} Business Landscape
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Discover the diverse business opportunities in {cityData.name}, {cityData.state}
+            </p>
+          </motion.div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {cityData.businessLandscape.map((item, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow"
+              >
+                <div className="text-4xl mb-4">{item.icon}</div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">{item.title}</h3>
+                <p className="text-gray-600">{item.description}</p>
+              </motion.div>
+            ))}
           </div>
-        </nav>
+        </div>
+      </section>
 
-        {/* Hero Section */}
-        <section className="relative py-20 bg-white overflow-hidden">
-          <div className="container mx-auto px-4">
-            <div className="max-w-6xl mx-auto text-center">
-              {/* Active Users Counter */}
-              <motion.div 
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                className="mt-6 sm:mt-8 p-4 bg-cream/50 backdrop-blur-sm rounded-2xl border border-gray-200 shadow-sm max-w-md mx-auto mb-6"
-              >
-                <div className="flex items-center justify-center gap-3">
-                  <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                  <span className="text-sm font-medium text-chocolate">
-                    <span className="font-bold text-coral">{activeUsers}</span> people are choosing plans right now
-                  </span>
-                </div></motion.div>
+      {/* Hot Leads Section */}
+      <section className="py-20 px-4">
+        <div className="max-w-6xl mx-auto">
+          <HotLeads />
+        </div>
+      </section>
 
-              {/* Main Headline */}
-              <motion.h1 
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                className="text-4xl md:text-6xl font-playfair font-bold text-charcoal mb-6 leading-tight"
-              >
-                Vending Machine Locations in{' '}
-                <span className="text-navy">{cityDisplayName}, {stateDisplayName}</span>
-              </motion.h1>
+      {/* Vending Course Section */}
+      <section className="py-20 px-4 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <VendingCourse />
+        </div>
+      </section>
 
-              {/* City-Specific Value Proposition */}
-              <motion.p 
+      {/* FAQ Section */}
+      <section className="py-20 px-4">
+        <div className="max-w-4xl mx-auto">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              Frequently Asked Questions
+            </h2>
+            <p className="text-xl text-gray-600">
+              Get answers about vending machine opportunities in {cityData.name}, {cityData.state}
+            </p>
+          </motion.div>
+          
+          <div className="space-y-6">
+            {cityData.faq.map((item, index) => (
+              <motion.div
+                key={index}
                 initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.6 }}
-                className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-lg p-6 shadow-lg"
               >
-                Get pre-qualified vending machine locations in Fort Collins's diverse and growing business economy. 
-                Access verified businesses with detailed contact information and placement opportunities.
-              </motion.p>
-
-              {/* Trust Signals */}
-              <motion.div 
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.8 }}
-                className="mt-6 sm:mt-8 grid grid-cols-2 gap-4 max-w-md mx-auto mb-8"
-              >
-                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
-                  <div className="flex items-center gap-3">
-                    <CheckBadgeIcon className="h-5 w-5 text-green-600" />
-                    <span className="text-sm font-medium text-chocolate">Verified Locations</span>
-                  </div>
-                </div>
-                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
-                  <div className="flex items-center gap-3">
-                    <StarIcon className="h-5 w-5 text-yellow-500" />
-                    <span className="text-sm font-medium text-chocolate">4.8/5 Rating</span>
-                  </div>
-                </div>
-                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
-                  <div className="flex items-center gap-3">
-                    <ShieldCheckIcon className="h-5 w-5 text-blue-600" />
-                    <span className="text-sm font-medium text-chocolate">Secure & Reliable</span>
-                  </div>
-                </div>
-                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
-                  <div className="flex items-center gap-3">
-                    <ClockIcon className="h-5 w-5 text-purple-600" />
-                    <span className="text-sm font-medium text-chocolate">Quality Research</span>
-                  </div>
-                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">{item.question}</h3>
+                <p className="text-gray-600">{item.answer}</p>
               </motion.div>
-
-              {/* CTA Buttons */}
-              <motion.div 
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 1.0 }}
-                className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 mb-8"
-              >
-                <button 
-                    onClick={() => {
-                      const pricingSection = document.getElementById('pricing')
-                      if (pricingSection) {
-                        pricingSection.scrollIntoView({ behavior: 'smooth' })
-                      }
-                    }}
-                    className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
-                  className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors"
-                >
-                    Get Started
-                  </button>
-                <Link 
-                  href="/hot-leads"
-                  className="w-full sm:w-auto bg-transparent text-chocolate border-2 border-chocolate px-8 py-3 rounded-lg font-semibold hover:bg-chocolate hover:text-white transition-colors"
-                >
-                  View Hot Leads →
-                </Link>
-              </motion.div>
-
-{/* Social Proof Stats */}
-              <motion.div 
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 1.2 }}
-                className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto"
-              >
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-navy">{cityData.population}</div>
-                  <div className="text-sm text-stone">Population</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-navy">{cityData.businesses}</div>
-                  <div className="text-sm text-stone">Businesses</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-navy">{cityData.industries}</div>
-                  <div className="text-sm text-stone">Industries</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-navy">{cityData.verifiedLocations}</div>
-                  <div className="text-sm text-stone">Verified Locations</div>
-                </div>
-              </motion.div>
-            </div>
+            ))}
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Pricing Section */}
-        <section id="pricing" className="py-16 bg-warm-white">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <motion.h2
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: true }}
-                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
-              >
-                Get Access to Qualified Vending Machine Locations in {cityDisplayName}
-              </motion.h2>
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                viewport={{ once: true }}
-                className="text-lg text-stone max-w-3xl mx-auto"
-              >
-                Choose the perfect plan for your vending machine business needs and start accessing qualified locations today.
-              </motion.p>
-            </div>
-            <PricingTable />
-          </div>
-        </section>
-
-        {/* Business Landscape */}
-        <section className="py-16 bg-white">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <motion.h2
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: true }}
-                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
-              >
-                Business Landscape in {cityDisplayName}
-              </motion.h2>
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                viewport={{ once: true }}
-                className="text-lg text-stone max-w-3xl mx-auto"
-              >
-                Discover the diverse industries and business opportunities that make {cityDisplayName} an ideal market for vending machines.
-              </motion.p>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              
-              <motion.div
-                key="Healthcare"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0 }}
-                viewport={{ once: true }}
-                className="bg-blue-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
-              >
-                <div className="text-blue-600 mb-4">
-                  <BuildingOfficeIcon className="w-12 h-12" />
-                </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Fort Collins features modern healthcare facilities including hospitals, clinics, and medical offices with high foot traffic and stable operations.</p>
-              </motion.div>
-              <motion.div
-                key="Education"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.1 }}
-                viewport={{ once: true }}
-                className="bg-green-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
-              >
-                <div className="text-green-600 mb-4">
-                  <AcademicCapIcon className="w-12 h-12" />
-                </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Educational institutions in Fort Collins provide consistent student populations and staff, creating ideal vending machine opportunities.</p>
-              </motion.div>
-              <motion.div
-                key="Manufacturing"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                viewport={{ once: true }}
-                className="bg-purple-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
-              >
-                <div className="text-purple-600 mb-4">
-                  <CpuChipIcon className="w-12 h-12" />
-                </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Fort Collins's manufacturing sector offers large employee bases and extended operating hours, perfect for vending machine placement.</p>
-              </motion.div>
-              <motion.div
-                key="Retail"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.30000000000000004 }}
-                viewport={{ once: true }}
-                className="bg-orange-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
-              >
-                <div className="text-orange-600 mb-4">
-                  <ShoppingBagIcon className="w-12 h-12" />
-                </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Retail locations throughout Fort Collins provide high customer traffic and diverse demographics for vending machine success.</p>
-              </motion.div>
-              <motion.div
-                key="Office Buildings"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                viewport={{ once: true }}
-                className="bg-indigo-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
-              >
-                <div className="text-indigo-600 mb-4">
-                  <BuildingOfficeIcon className="w-12 h-12" />
-                </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Professional office spaces in Fort Collins offer captive audiences during business hours with consistent daily traffic.</p>
-              </motion.div>
-              <motion.div
-                key="Transportation"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.5 }}
-                viewport={{ once: true }}
-                className="bg-red-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
-              >
-                <div className="text-red-600 mb-4">
-                  <TruckIcon className="w-12 h-12" />
-                </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Fort Collins's transportation hubs including airports, bus stations, and transit centers provide high-volume foot traffic.</p>
-              </motion.div>
-            </div>
-          </div>
-        </section>
-
-        {/* Hot Leads Section */}
-        <section id="pricing" className="py-16 bg-warm-white">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <motion.h2
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: true }}
-                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
-              >
-                One-Time Location Packages for {cityDisplayName}
-              </motion.h2>
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                viewport={{ once: true }}
-                className="text-lg text-stone max-w-3xl mx-auto"
-              >
-                Get immediate access to qualified vending machine locations without monthly commitments.
-              </motion.p>
-            </div>
-            <HotLeads />
-          </div>
-        </section>
-
-        {/* Vending Course Section */}
-        <section className="py-16 bg-white">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <motion.h2
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: true }}
-                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
-              >
-                Learn the Vending Machine Business
-              </motion.h2>
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                viewport={{ once: true }}
-                className="text-lg text-stone max-w-3xl mx-auto"
-              >
-                Master the fundamentals of vending machine operations and maximize your success in {cityDisplayName}.
-              </motion.p>
-            </div>
-            <VendingCourse />
-          </div>
-        </section>
-
-        {/* FAQ Section */}
-        <section id="pricing" className="py-16 bg-warm-white">
-          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <motion.h2
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: true }}
-                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
-              >
-                Frequently Asked Questions
-              </motion.h2>
-              <motion.p 
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                viewport={{ once: true }}
-                className="text-lg text-chocolate/70 leading-relaxed"
-              >
-                Everything you need to know about vending machine opportunities in {cityDisplayName}.
-              </motion.p>
-            </div>
-            
-            <div className="space-y-6">
-              
-              <motion.div
-                key="0"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What types of vending machine locations are available in Fort Collins?</h3>
-                <p className="text-stone leading-relaxed">Fort Collins offers diverse vending opportunities including healthcare facilities, educational institutions, manufacturing plants, retail locations, office buildings, and transportation hubs. Each location is pre-verified for optimal vending machine success.</p>
-              </motion.div>
-              <motion.div
-                key="1"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.1 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">How quickly can I get vending machine leads for Fort Collins?</h3>
-                <p className="text-stone leading-relaxed">Our Fort Collins vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.</p>
-              </motion.div>
-              <motion.div
-                key="2"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What makes Fort Collins a good market for vending machines?</h3>
-                <p className="text-stone leading-relaxed">Fort Collins features a strong business community with diverse industries, stable employment, and consistent foot traffic. The city's economic growth and business-friendly environment create ideal conditions for vending machine success.</p>
-              </motion.div>
-              <motion.div
-                key="3"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.30000000000000004 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">Do you provide ongoing support for Fort Collins locations?</h3>
-                <p className="text-stone leading-relaxed">Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Fort Collins.</p>
-              </motion.div>
-              <motion.div
-                key="4"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What industries in Fort Collins are best for vending machines?</h3>
-                <p className="text-stone leading-relaxed">Healthcare, education, manufacturing, retail, office buildings, and transportation sectors in Fort Collins show the highest potential for vending machine success due to consistent foot traffic and captive audiences.</p>
-              </motion.div>
-              <motion.div
-                key="5"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.5 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">How do you verify the quality of Fort Collins vending locations?</h3>
-                <p className="text-stone leading-relaxed">We conduct thorough research on each Fort Collins location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.</p>
-              </motion.div>
-              <motion.div
-                key="6"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.6000000000000001 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">Can I get customized vending leads for specific areas of Fort Collins?</h3>
-                <p className="text-stone leading-relaxed">Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Fort Collins based on your preferences and target market requirements.</p>
-              </motion.div>
-              <motion.div
-                key="7"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.7000000000000001 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What's the typical ROI for vending machines in Fort Collins?</h3>
-                <p className="text-stone leading-relaxed">Vending machines in Fort Collins typically show strong ROI due to the city's business density and consistent traffic patterns. Our research shows average payback periods of 12-18 months for well-placed machines.</p>
-              </motion.div>
-            </div>
-          </div>
-        </section>
-
-      </div>
-      
       <Footer />
       <ZipCodeModalWrapper />
-    </>
-  )
+    </div>
+  );
 }
