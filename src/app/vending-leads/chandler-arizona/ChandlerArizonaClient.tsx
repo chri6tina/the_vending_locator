@@ -27,7 +27,7 @@ export default function ChandlerArizonaClient() {
     population: '275,000+',
     description: 'Chandler, Arizona\'s fourth-largest city, offers diverse opportunities in technology, healthcare, education, and manufacturing sectors.',
     heroTitle: 'Vending Machine Opportunities in Chandler, Arizona',
-    heroSubtitle: 'Connect with local businesses and secure prime vending locations in Chandler's thriving economy',
+    heroSubtitle: 'Connect with local businesses and secure prime vending locations in Chandler\'s thriving economy',
     businessLandscape: [
       {
         title: 'Technology & Innovation',

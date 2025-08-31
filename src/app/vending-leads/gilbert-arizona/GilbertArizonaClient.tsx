@@ -27,7 +27,7 @@ export default function GilbertArizonaClient() {
     population: '267,000+',
     description: 'Gilbert, Arizona\'s sixth-largest city, offers diverse opportunities in healthcare, education, technology, and family-oriented retail sectors.',
     heroTitle: 'Vending Machine Opportunities in Gilbert, Arizona',
-    heroSubtitle: 'Connect with local businesses and secure prime vending locations in Gilbert's thriving economy',
+    heroSubtitle: 'Connect with local businesses and secure prime vending locations in Gilbert\'s thriving economy',
     businessLandscape: [
       {
         title: 'Healthcare & Medical',

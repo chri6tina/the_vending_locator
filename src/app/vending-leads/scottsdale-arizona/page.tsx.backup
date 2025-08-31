@@ -3,11 +3,11 @@ import ScottsdaleArizonaClient from './ScottsdaleArizonaClient';
 
 export const metadata: Metadata = {
   title: 'Vending Machine Opportunities in Scottsdale, Arizona | The Vending Locator',
-  description: 'Scottsdale, Arizona's fifth-largest city, offers diverse opportunities in tourism, healthcare, technology, and luxury retail sectors. Expert team handling outreach and guaranteed placement.',
+  description: 'Scottsdale, Arizona\'s fifth-largest city, offers diverse opportunities in tourism, healthcare, technology, and luxury retail sectors. Expert team handling outreach and guaranteed placement.',
   keywords: 'vending machines, Scottsdale Arizona, luxury tourism, resorts, healthcare, technology, business opportunities',
   openGraph: {
     title: 'Vending Machine Opportunities in Scottsdale, Arizona',
-    description: 'Scottsdale, Arizona's fifth-largest city, offers diverse opportunities in tourism, healthcare, technology, and luxury retail sectors.',
+    description: 'Scottsdale, Arizona\'s fifth-largest city, offers diverse opportunities in tourism, healthcare, technology, and luxury retail sectors.',
     url: 'https://www.thevendinglocator.com/vending-leads/scottsdale-arizona',
     siteName: 'The Vending Locator',
     locale: 'en_US',
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Vending Machine Opportunities in Scottsdale, Arizona',
-    description: 'Scottsdale, Arizona's fifth-largest city, offers diverse opportunities in tourism, healthcare, technology, and luxury retail sectors.',
+    description: 'Scottsdale, Arizona\'s fifth-largest city, offers diverse opportunities in tourism, healthcare, technology, and luxury retail sectors.',
   },
   alternates: {
     canonical: 'https://www.thevendinglocator.com/vending-leads/scottsdale-arizona',

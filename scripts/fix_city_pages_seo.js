@@ -103,6 +103,7 @@ export default function ${cityData.name.replace(/\s+/g, '')}${cityData.state.rep
 // Template for the client component file
 function generateClientTemplate(citySlug, cityData) {
   const escapedDescription = escapeApostrophes(cityData.description);
+  const escapedCityName = escapeApostrophes(cityData.name);
   
   return `'use client';
 
@@ -133,7 +134,7 @@ export default function ${cityData.name.replace(/\s+/g, '')}${cityData.state.rep
     population: '${cityData.population}',
     description: '${escapedDescription}',
     heroTitle: 'Vending Machine Opportunities in ${cityData.name}, ${cityData.state}',
-    heroSubtitle: 'Connect with local businesses and secure prime vending locations in ${cityData.name}\'s thriving economy',
+    heroSubtitle: 'Connect with local businesses and secure prime vending locations in ${escapedCityName}\'s thriving economy',
     businessLandscape: [
       {
         title: '${cityData.businessFocus.split(', ')[0]}',

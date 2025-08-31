@@ -27,7 +27,7 @@ export default function GlendaleArizonaClient() {
     population: '248,000+',
     description: 'Glendale, Arizona\'s seventh-largest city, offers diverse opportunities in sports, entertainment, healthcare, and retail sectors.',
     heroTitle: 'Vending Machine Opportunities in Glendale, Arizona',
-    heroSubtitle: 'Connect with local businesses and secure prime vending locations in Glendale's thriving economy',
+    heroSubtitle: 'Connect with local businesses and secure prime vending locations in Glendale\'s thriving economy',
     businessLandscape: [
       {
         title: 'Sports & Entertainment',
