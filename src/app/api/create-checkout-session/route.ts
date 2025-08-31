@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server'
 import Stripe from 'stripe'
 
+export const dynamic = 'force-dynamic'
+
 // Debug environment variable
 console.log('🔍 STRIPE_SECRET_KEY exists:', !!process.env.STRIPE_SECRET_KEY)
 console.log('🔍 STRIPE_SECRET_KEY length:', process.env.STRIPE_SECRET_KEY?.length || 0)

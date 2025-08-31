@@ -1,5 +1,7 @@
 import { NextResponse } from 'next/server'
 
+export const dynamic = 'force-dynamic'
+
 // In-memory storage for forms (import from main forms route)
 let forms = []
 

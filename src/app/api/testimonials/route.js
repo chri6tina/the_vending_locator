@@ -1,20 +1,12 @@
 import { getTestimonials } from '@/lib/contentful';
 
+export const dynamic = 'force-dynamic'
+
 export async function GET() {
   try {
-    // Check if Contentful is configured
-    if (!process.env.CONTENTFUL_SPACE_ID || !process.env.CONTENTFUL_ACCESS_TOKEN) {
-      console.log('Contentful not configured, returning fallback data');
-      return Response.json([]);
-    }
-    
-    const testimonials = await getTestimonials();
-    
-    if (!testimonials || testimonials.length === 0) {
-      return Response.json([]);
-    }
-    
-    return Response.json(testimonials);
+    // Testimonials content type doesn't exist in Contentful, return empty array
+    console.log('Testimonials API called - returning empty array (content type not configured)');
+    return Response.json([]);
   } catch (error) {
     console.error('API Error fetching testimonials:', error);
     return Response.json([]);

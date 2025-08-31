@@ -1,5 +1,7 @@
 import { getBlogPosts } from '@/lib/contentful';
 
+export const dynamic = 'force-dynamic'
+
 export async function GET() {
   try {
     // Check if Contentful is configured

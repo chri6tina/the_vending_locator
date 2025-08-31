@@ -1,5 +1,7 @@
 import { NextResponse } from 'next/server'
 
+export const dynamic = 'force-dynamic'
+
 // In-memory storage for forms (in production, this would be a database)
 let forms = []
 let formIdCounter = 1

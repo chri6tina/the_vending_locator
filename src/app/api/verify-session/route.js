@@ -1,6 +1,8 @@
 import { NextResponse } from 'next/server'
 import Stripe from 'stripe'
 
+export const dynamic = 'force-dynamic'
+
 // Handle missing environment variables during build time
 if (!process.env.STRIPE_SECRET_KEY) {
   console.warn('STRIPE_SECRET_KEY not found - using placeholder for build process')

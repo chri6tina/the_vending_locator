@@ -1,6 +1,8 @@
 import { NextResponse } from 'next/server'
 import { liveVisitors } from '@/lib/tracking-store'
 
+export const dynamic = 'force-dynamic'
+
 export async function GET() {
   try {
     // Debug: Log the entire liveVisitors Map
