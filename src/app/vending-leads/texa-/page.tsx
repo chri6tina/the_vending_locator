@@ -1,34 +1,38 @@
-'use client'
+import { Metadata } from 'next'
+import PageClient from './pageClient'
 
-import { useEffect } from 'react'
-import { useRouter } from 'next/navigation'
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
+export const metadata: Metadata = {
+  "title": "Vending Machine Leads in Vending Leads, Texa  - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Vending Leads, Texa . Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Vending Leads Texa , vending leads Vending Leads Texa , vending locations Vending Leads Texa , vending opportunities Vending Leads Texa ",
+  "alternates": {
+    "canonical": "https://www.thevendinglocator.com/vending-leads/texa-"
+  },
+  "openGraph": {
+    "title": "Vending Machine Leads in Vending Leads, Texa  - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Vending Leads, Texa . Find qualified businesses for vending machine placement.",
+    "url": "https://www.thevendinglocator.com/vending-leads/texa-",
+    "siteName": "The Vending Locator",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Vending Machine Leads in Vending Leads, Texa  - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Vending Leads, Texa . Find qualified businesses for vending machine placement."
+  },
+  "robots": {
+    "index": true,
+    "follow": true,
+    "googleBot": {
+      "index": true,
+      "follow": true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1
+    }
+  }
+}
 
-export default function TexaRedirectPage() {
-  const router = useRouter()
-
-  useEffect(() => {
-    // Redirect to the correct Texas page
-    router.replace('/vending-leads/texas')
-  }, [router])
-
-  return (
-    <>
-      <Header />
-      <div className="min-h-screen bg-warm-white flex items-center justify-center">
-        <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-navy mx-auto mb-4"></div>
-          <p className="text-lg text-charcoal">Redirecting to Texas vending leads...</p>
-          <p className="text-sm text-stone mt-2">
-            If you're not redirected automatically,{' '}
-            <a href="/vending-leads/texas" className="text-navy hover:underline">
-              click here
-            </a>
-          </p>
-        </div>
-      </div>
-      <Footer />
-    </>
-  )
+export default function CityPage() {
+  return <PageClient />
 }

@@ -1,38 +1,38 @@
-'use client'
+import { Metadata } from 'next'
+import PageClient from './pageClient'
 
-import { useEffect } from 'react'
-import { useRouter } from 'next/navigation'
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
+export const metadata: Metadata = {
+  "title": "Vending Machine Leads in Vending Leads, Illinoi  - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Vending Leads, Illinoi . Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Vending Leads Illinoi , vending leads Vending Leads Illinoi , vending locations Vending Leads Illinoi , vending opportunities Vending Leads Illinoi ",
+  "alternates": {
+    "canonical": "https://www.thevendinglocator.com/vending-leads/illinoi-"
+  },
+  "openGraph": {
+    "title": "Vending Machine Leads in Vending Leads, Illinoi  - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Vending Leads, Illinoi . Find qualified businesses for vending machine placement.",
+    "url": "https://www.thevendinglocator.com/vending-leads/illinoi-",
+    "siteName": "The Vending Locator",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Vending Machine Leads in Vending Leads, Illinoi  - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Vending Leads, Illinoi . Find qualified businesses for vending machine placement."
+  },
+  "robots": {
+    "index": true,
+    "follow": true,
+    "googleBot": {
+      "index": true,
+      "follow": true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1
+    }
+  }
+}
 
-export default function IllinoiVendingLeadsPage() {
-  const router = useRouter()
-
-  useEffect(() => {
-    // Redirect to the Illinois page
-    router.replace('/vending-leads/illinois')
-  }, [router])
-
-  return (
-    <>
-      <Header />
-      <div className="min-h-screen bg-warm-white flex items-center justify-center">
-        <div className="text-center">
-          <h1 className="text-2xl font-bold text-charcoal mb-4">
-            Redirecting to Illinois...
-          </h1>
-          <p className="text-stone">
-            If you're not redirected automatically,{' '}
-            <button 
-              onClick={() => router.push('/vending-leads/illinois')}
-              className="text-navy hover:underline"
-            >
-              click here
-            </button>
-          </p>
-        </div>
-      </div>
-      <Footer />
-    </>
-  )
+export default function CityPage() {
+  return <PageClient />
 }
