@@ -273,6 +273,19 @@ export default function VendingLeadsPage() {
         { name: 'Gilbert', slug: 'gilbert-arizona', vendorCount: '140+', businessCount: '200+', description: 'Family-oriented city with healthcare, education, and technology' },
         { name: 'Glendale', slug: 'glendale-arizona', vendorCount: '130+', businessCount: '190+', description: 'Sports and entertainment hub with healthcare and retail' },
       ]
+    },
+    {
+      name: 'Connecticut',
+      slug: 'connecticut',
+      cities: [
+        { name: 'Bridgeport', slug: 'bridgeport-connecticut', vendorCount: '140+', businessCount: '200+', description: 'Major port city with manufacturing and healthcare' },
+        { name: 'New Haven', slug: 'new-haven-connecticut', vendorCount: '120+', businessCount: '180+', description: 'University town with healthcare and research' },
+        { name: 'Hartford', slug: 'hartford-connecticut', vendorCount: '160+', businessCount: '240+', description: 'State capital with insurance and financial services' },
+        { name: 'Stamford', slug: 'stamford-connecticut', vendorCount: '150+', businessCount: '220+', description: 'Financial services hub with corporate headquarters' },
+        { name: 'Waterbury', slug: 'waterbury-connecticut', vendorCount: '110+', businessCount: '160+', description: 'Manufacturing and healthcare center' },
+        { name: 'Norwalk', slug: 'norwalk-connecticut', vendorCount: '100+', businessCount: '150+', description: 'Coastal business hub with healthcare and retail' },
+        { name: 'Danbury', slug: 'danbury-connecticut', vendorCount: '90+', businessCount: '130+', description: 'Manufacturing and technology hub' },
+      ]
     }
   ]
 
