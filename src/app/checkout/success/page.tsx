@@ -2,7 +2,7 @@
 
 import { useState, useEffect, Suspense } from 'react'
 import { useSearchParams } from 'next/navigation'
-import { CheckCircleIcon, MapPinIcon, EnvelopeIcon } from '@heroicons/react/24/outline'
+import { CheckCircleIcon, MapPinIcon, EnvelopeIcon, HomeIcon, CreditCardIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
 import { trackPurchase } from '@/lib/conversion-tracking'
 import Header from '@/components/Header'
@@ -107,10 +107,51 @@ function CheckoutSuccessContent() {
 
   if (isLoading) {
     return (
-      <div className="min-h-screen bg-cream flex items-center justify-center">
-        <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-navy mx-auto mb-4"></div>
-          <p className="text-chocolate text-lg">Verifying your payment...</p>
+      <div className="min-h-screen bg-cream">
+        <Header />
+        
+        {/* Loading State with Navigation */}
+        <div className="bg-white border-b border-green-200">
+          <div className="mx-auto max-w-7xl px-6 py-16 sm:py-20 lg:px-8">
+            <div className="mx-auto max-w-2xl text-center">
+              <div className="mx-auto flex items-center justify-center h-20 w-20 rounded-full bg-green-100 border-2 border-green-200 mb-6">
+                <CheckCircleIcon className="h-12 w-12 text-green-600" />
+              </div>
+              
+              <h1 className="text-4xl font-playfair font-bold tracking-tight text-chocolate sm:text-5xl mb-4">
+                Payment Received! 🎉
+              </h1>
+              
+              <p className="text-xl leading-8 text-chocolate/80 max-w-xl mx-auto mb-8">
+                We're verifying your payment details. This usually takes just a few seconds.
+              </p>
+
+              {/* Loading Animation */}
+              <div className="flex items-center justify-center gap-2 mb-8">
+                <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-navy"></div>
+                <span className="text-chocolate">Verifying payment...</span>
+              </div>
+
+              {/* Immediate Navigation Options */}
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link
+                  href="/"
+                  className="inline-flex items-center gap-2 bg-navy text-white px-6 py-3 rounded-lg font-semibold hover:bg-navy-dark transition-colors"
+                >
+                  <HomeIcon className="h-5 w-5" />
+                  Go Home
+                </Link>
+                
+                <Link
+                  href="/pricing"
+                  className="inline-flex items-center gap-2 bg-white text-chocolate px-6 py-3 rounded-lg font-semibold hover:bg-stone-50 transition-colors border-2 border-stone-300"
+                >
+                  <CreditCardIcon className="h-5 w-5" />
+                  Browse Plans
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     )
@@ -118,19 +159,57 @@ function CheckoutSuccessContent() {
 
   if (error) {
     return (
-      <div className="min-h-screen bg-cream flex items-center justify-center">
-        <div className="text-center max-w-md mx-auto px-6">
-          <div className="bg-red-50 border border-red-200 rounded-lg p-6">
-            <h1 className="text-2xl font-playfair font-bold text-red-800 mb-4">
-              Payment Verification Failed
-            </h1>
-            <p className="text-red-700 mb-6">{error}</p>
-            <Link
-              href="/pricing"
-              className="inline-block bg-navy text-white px-6 py-3 rounded-lg font-semibold hover:bg-navy-light transition-colors"
-            >
-              Return to Pricing
-            </Link>
+      <div className="min-h-screen bg-cream">
+        <Header />
+        
+        <div className="bg-white border-b border-amber-200">
+          <div className="mx-auto max-w-7xl px-6 py-16 sm:py-20 lg:px-8">
+            <div className="mx-auto max-w-2xl text-center">
+              <div className="mx-auto flex items-center justify-center h-20 w-20 rounded-full bg-amber-100 border-2 border-amber-200 mb-6">
+                <CheckCircleIcon className="h-12 w-12 text-amber-600" />
+              </div>
+              
+              <h1 className="text-4xl font-playfair font-bold tracking-tight text-chocolate sm:text-5xl mb-4">
+                Payment Verification Issue
+              </h1>
+              
+              <p className="text-xl leading-8 text-chocolate/80 max-w-xl mx-auto mb-8">
+                We encountered an issue verifying your payment. Please contact support if you have any concerns.
+              </p>
+
+              {/* Navigation Options */}
+              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                <Link
+                  href="/"
+                  className="inline-flex items-center gap-2 bg-navy text-white px-6 py-3 rounded-lg font-semibold hover:bg-navy-dark transition-colors"
+                >
+                  <HomeIcon className="h-5 w-5" />
+                  Go Home
+                </Link>
+                
+                <Link
+                  href="/pricing"
+                  className="inline-flex items-center gap-2 bg-white text-chocolate px-6 py-3 rounded-lg font-semibold hover:bg-stone-50 transition-colors border-2 border-stone-300"
+                >
+                  <CreditCardIcon className="h-5 w-5" />
+                  Browse Plans
+                </Link>
+              </div>
+
+              {/* Support Contact */}
+              <div className="bg-amber-50 border border-amber-200 rounded-lg p-6">
+                <p className="text-amber-800 mb-4">
+                  <strong>Need help?</strong> Contact us on Telegram @thevendinglocator
+                </p>
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center gap-2 bg-amber-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-amber-700 transition-colors"
+                >
+                  <EnvelopeIcon className="h-4 w-4" />
+                  Contact Support
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -276,10 +355,51 @@ function CheckoutSuccessContent() {
 export default function CheckoutSuccess() {
   return (
     <Suspense fallback={
-      <div className="min-h-screen bg-cream flex items-center justify-center">
-        <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-navy mx-auto mb-4"></div>
-          <p className="text-chocolate text-lg">Loading...</p>
+      <div className="min-h-screen bg-cream">
+        <Header />
+        
+        {/* Better Suspense Fallback */}
+        <div className="bg-white border-b border-green-200">
+          <div className="mx-auto max-w-7xl px-6 py-16 sm:py-20 lg:px-8">
+            <div className="mx-auto max-w-2xl text-center">
+              <div className="mx-auto flex items-center justify-center h-20 w-20 rounded-full bg-green-100 border-2 border-green-200 mb-6">
+                <CheckCircleIcon className="h-12 w-12 text-green-600" />
+              </div>
+              
+              <h1 className="text-4xl font-playfair font-bold tracking-tight text-chocolate sm:text-5xl mb-4">
+                Payment Received! 🎉
+              </h1>
+              
+              <p className="text-xl leading-8 text-chocolate/80 max-w-xl mx-auto mb-8">
+                We're preparing your checkout success page. This should load in just a moment.
+              </p>
+
+              {/* Loading Animation */}
+              <div className="flex items-center justify-center gap-2 mb-8">
+                <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-navy"></div>
+                <span className="text-chocolate">Loading page...</span>
+              </div>
+
+              {/* Immediate Navigation Options */}
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link
+                  href="/"
+                  className="inline-flex items-center gap-2 bg-navy text-white px-6 py-3 rounded-lg font-semibold hover:bg-navy-dark transition-colors"
+                >
+                  <HomeIcon className="h-5 w-5" />
+                  Go Home
+                </Link>
+                
+                <Link
+                  href="/pricing"
+                  className="inline-flex items-center gap-2 bg-white text-chocolate px-6 py-3 rounded-lg font-semibold hover:bg-stone-50 transition-colors border-2 border-stone-300"
+                >
+                  <CreditCardIcon className="h-5 w-5" />
+                  Browse Plans
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     }>
