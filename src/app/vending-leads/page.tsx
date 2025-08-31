@@ -260,6 +260,19 @@ export default function VendingLeadsPage() {
         { name: 'Gillette', slug: 'gillette-wyoming', vendorCount: '65+', businessCount: '85+', description: 'Energy and mining center' },
         { name: 'Rock Springs', slug: 'rock-springs-wyoming', vendorCount: '55+', businessCount: '70+', description: 'Energy and industrial hub' },
       ]
+    },
+    {
+      name: 'Arizona',
+      slug: 'arizona',
+      cities: [
+        { name: 'Phoenix', slug: 'phoenix-arizona', vendorCount: '300+', businessCount: '400+', description: 'State capital and major metropolitan area with diverse business opportunities' },
+        { name: 'Tucson', slug: 'tucson-arizona', vendorCount: '200+', businessCount: '280+', description: 'Major city with healthcare, education, and technology sectors' },
+        { name: 'Mesa', slug: 'mesa-arizona', vendorCount: '180+', businessCount: '260+', description: 'Major city with aerospace, healthcare, education, and tourism sectors' },
+        { name: 'Chandler', slug: 'chandler-arizona', vendorCount: '160+', businessCount: '240+', description: 'Technology hub with Intel, healthcare, and manufacturing' },
+        { name: 'Scottsdale', slug: 'scottsdale-arizona', vendorCount: '150+', businessCount: '220+', description: 'Luxury tourism, healthcare, and technology hub' },
+        { name: 'Gilbert', slug: 'gilbert-arizona', vendorCount: '140+', businessCount: '200+', description: 'Family-oriented city with healthcare, education, and technology' },
+        { name: 'Glendale', slug: 'glendale-arizona', vendorCount: '130+', businessCount: '190+', description: 'Sports and entertainment hub with healthcare and retail' },
+      ]
     }
   ]
 
