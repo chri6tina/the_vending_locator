@@ -71,7 +71,7 @@ export default function GilbertArizonaClient() {
       },
       {
         question: 'What are the best areas in Gilbert for vending machine placement?',
-        answer: 'Focus on areas around Healthcare & Medical, Education districts, educational campuses, shopping centers, and business districts where there's consistent foot traffic and employee populations.'
+        answer: 'Focus on areas around Healthcare & Medical, Education districts, educational campuses, shopping centers, and business districts where there\'s consistent foot traffic and employee populations.'
       },
       {
         question: 'How long does it take to get vending machines placed in Gilbert?',

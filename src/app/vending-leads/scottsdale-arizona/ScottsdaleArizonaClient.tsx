@@ -71,7 +71,7 @@ export default function ScottsdaleArizonaClient() {
       },
       {
         question: 'What are the best areas in Scottsdale for vending machine placement?',
-        answer: 'Focus on areas around Tourism & Hospitality, Healthcare districts, educational campuses, shopping centers, and business districts where there's consistent foot traffic and employee populations.'
+        answer: 'Focus on areas around Tourism & Hospitality, Healthcare districts, educational campuses, shopping centers, and business districts where there\'s consistent foot traffic and employee populations.'
       },
       {
         question: 'How long does it take to get vending machines placed in Scottsdale?',
