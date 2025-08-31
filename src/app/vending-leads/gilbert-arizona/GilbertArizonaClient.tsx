@@ -25,7 +25,7 @@ export default function GilbertArizonaClient() {
     name: 'Gilbert',
     state: 'Arizona',
     population: '267,000+',
-    description: 'Gilbert, Arizona's sixth-largest city, offers diverse opportunities in healthcare, education, technology, and family-oriented retail sectors.',
+    description: 'Gilbert, Arizona\'s sixth-largest city, offers diverse opportunities in healthcare, education, technology, and family-oriented retail sectors.',
     heroTitle: 'Vending Machine Opportunities in Gilbert, Arizona',
     heroSubtitle: 'Connect with local businesses and secure prime vending locations in Gilbert's thriving economy',
     businessLandscape: [

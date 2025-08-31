@@ -25,7 +25,7 @@ export default function ScottsdaleArizonaClient() {
     name: 'Scottsdale',
     state: 'Arizona',
     population: '241,000+',
-    description: 'Scottsdale, Arizona's fifth-largest city, offers diverse opportunities in tourism, healthcare, technology, and luxury retail sectors.',
+    description: 'Scottsdale, Arizona\'s fifth-largest city, offers diverse opportunities in tourism, healthcare, technology, and luxury retail sectors.',
     heroTitle: 'Vending Machine Opportunities in Scottsdale, Arizona',
     heroSubtitle: 'Connect with local businesses and secure prime vending locations in Scottsdale's thriving economy',
     businessLandscape: [

@@ -25,7 +25,7 @@ export default function ChandlerArizonaClient() {
     name: 'Chandler',
     state: 'Arizona',
     population: '275,000+',
-    description: 'Chandler, Arizona's fourth-largest city, offers diverse opportunities in technology, healthcare, education, and manufacturing sectors.',
+    description: 'Chandler, Arizona\'s fourth-largest city, offers diverse opportunities in technology, healthcare, education, and manufacturing sectors.',
     heroTitle: 'Vending Machine Opportunities in Chandler, Arizona',
     heroSubtitle: 'Connect with local businesses and secure prime vending locations in Chandler's thriving economy',
     businessLandscape: [

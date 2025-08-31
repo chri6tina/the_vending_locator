@@ -25,7 +25,7 @@ export default function MesaArizonaClient() {
     name: 'Mesa',
     state: 'Arizona',
     population: '504,000+',
-    description: 'Mesa, Arizona's third-largest city, offers diverse opportunities in aerospace, healthcare, education, and tourism sectors.',
+    description: 'Mesa, Arizona\'s third-largest city, offers diverse opportunities in aerospace, healthcare, education, and tourism sectors.',
     heroTitle: 'Vending Machine Opportunities in Mesa, Arizona',
     heroSubtitle: 'Connect with local businesses and secure prime vending locations in Mesa's thriving economy',
     businessLandscape: [

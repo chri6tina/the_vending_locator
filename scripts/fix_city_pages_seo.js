@@ -5,6 +5,11 @@ const path = require('path');
 const VENDING_LEADS_DIR = 'src/app/vending-leads';
 const OUTPUT_DIR = 'src/app/vending-leads';
 
+// Helper function to escape apostrophes for template literals
+function escapeApostrophes(str) {
+  return str.replace(/'/g, "\\'");
+}
+
 // City data mapping for metadata
 const cityMetadataMap = {
   'glendale-arizona': {
@@ -51,16 +56,18 @@ const cityMetadataMap = {
 
 // Template for the main page.tsx file
 function generatePageTemplate(citySlug, cityData) {
+  const escapedDescription = escapeApostrophes(cityData.description);
+  
   return `import { Metadata } from 'next';
 import ${cityData.name.replace(/\s+/g, '')}${cityData.state.replace(/\s+/g, '')}Client from './${cityData.name.replace(/\s+/g, '')}${cityData.state.replace(/\s+/g, '')}Client';
 
 export const metadata: Metadata = {
   title: 'Vending Machine Opportunities in ${cityData.name}, ${cityData.state} | The Vending Locator',
-  description: '${cityData.description} Expert team handling outreach and guaranteed placement.',
+  description: '${escapedDescription} Expert team handling outreach and guaranteed placement.',
   keywords: '${cityData.keywords}',
   openGraph: {
     title: 'Vending Machine Opportunities in ${cityData.name}, ${cityData.state}',
-    description: '${cityData.description}',
+    description: '${escapedDescription}',
     url: 'https://www.thevendinglocator.com/vending-leads/${citySlug}',
     siteName: 'The Vending Locator',
     locale: 'en_US',
@@ -69,7 +76,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Vending Machine Opportunities in ${cityData.name}, ${cityData.state}',
-    description: '${cityData.description}',
+    description: '${escapedDescription}',
   },
   alternates: {
     canonical: 'https://www.thevendinglocator.com/vending-leads/${citySlug}',
@@ -95,6 +102,8 @@ export default function ${cityData.name.replace(/\s+/g, '')}${cityData.state.rep
 
 // Template for the client component file
 function generateClientTemplate(citySlug, cityData) {
+  const escapedDescription = escapeApostrophes(cityData.description);
+  
   return `'use client';
 
 import { useState, useEffect } from 'react';
@@ -122,7 +131,7 @@ export default function ${cityData.name.replace(/\s+/g, '')}${cityData.state.rep
     name: '${cityData.name}',
     state: '${cityData.state}',
     population: '${cityData.population}',
-    description: '${cityData.description}',
+    description: '${escapedDescription}',
     heroTitle: 'Vending Machine Opportunities in ${cityData.name}, ${cityData.state}',
     heroSubtitle: 'Connect with local businesses and secure prime vending locations in ${cityData.name}\'s thriving economy',
     businessLandscape: [
