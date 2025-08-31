@@ -286,6 +286,19 @@ export default function VendingLeadsPage() {
         { name: 'Norwalk', slug: 'norwalk-connecticut', vendorCount: '100+', businessCount: '150+', description: 'Coastal business hub with healthcare and retail' },
         { name: 'Danbury', slug: 'danbury-connecticut', vendorCount: '90+', businessCount: '130+', description: 'Manufacturing and technology hub' },
       ]
+    },
+    {
+      name: 'Wisconsin',
+      slug: 'wisconsin',
+      cities: [
+        { name: 'Milwaukee', slug: 'milwaukee-wisconsin', vendorCount: '200+', businessCount: '280+', description: 'Major metropolitan area with manufacturing and healthcare' },
+        { name: 'Madison', slug: 'madison-wisconsin', vendorCount: '150+', businessCount: '220+', description: 'State capital with university and government' },
+        { name: 'Green Bay', slug: 'green-bay-wisconsin', vendorCount: '120+', businessCount: '180+', description: 'Manufacturing and healthcare hub' },
+        { name: 'Kenosha', slug: 'kenosha-wisconsin', vendorCount: '100+', businessCount: '150+', description: 'Manufacturing and retail center' },
+        { name: 'Racine', slug: 'racine-wisconsin', vendorCount: '90+', businessCount: '130+', description: 'Manufacturing and healthcare hub' },
+        { name: 'Appleton', slug: 'appleton-wisconsin', vendorCount: '80+', businessCount: '120+', description: 'Technology and healthcare center' },
+        { name: 'Waukesha', slug: 'waukesha-wisconsin', vendorCount: '85+', businessCount: '125+', description: 'Suburban business hub with healthcare' },
+      ]
     }
   ]
 
