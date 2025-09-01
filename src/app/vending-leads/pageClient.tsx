@@ -534,11 +534,9 @@ export default function VendingLeadsDirectory() {
                       <span className="font-medium text-chocolate text-lg">
                         {state.name}
                       </span>
-                      {state.cities.length > 0 && (
-                        <span className="ml-3 text-sm text-gray-500">
-                          ({state.cities.length} cities)
-                        </span>
-                      )}
+                      <span className="ml-3 text-sm text-gray-500">
+                        ({state.cities.length} cities)
+                      </span>
                     </div>
                     <div className="flex items-center">
                       <Link
@@ -548,30 +546,39 @@ export default function VendingLeadsDirectory() {
                       >
                         View State
                       </Link>
-                      {state.cities.length > 0 && (
-                        <ChevronDownIcon 
-                          className={`h-5 w-5 text-gray-400 transition-transform ${
-                            expandedStates.includes(state.slug) ? 'rotate-180' : ''
-                          }`}
-                        />
-                      )}
+                      <ChevronDownIcon 
+                        className={`h-5 w-5 text-gray-400 transition-transform ${
+                          expandedStates.includes(state.slug) ? 'rotate-180' : ''
+                        }`}
+                      />
                     </div>
                   </button>
                   
-                  {expandedStates.includes(state.slug) && state.cities.length > 0 && (
+                  {expandedStates.includes(state.slug) && (
                     <div className="border-t border-gray-200 bg-gray-50">
                       <div className="px-6 py-4">
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-                          {state.cities.map((city) => (
-                            <Link
-                              key={city.slug}
-                              href={`/vending-leads/${city.slug}`}
-                              className="text-chocolate hover:text-navy transition-colors text-sm py-1 hover:underline"
-                            >
-                              {city.name}
-                            </Link>
-                          ))}
-                        </div>
+                        {state.cities.length > 0 ? (
+                          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                            {state.cities.map((city) => (
+                              <Link
+                                key={city.slug}
+                                href={`/vending-leads/${city.slug}`}
+                                className="text-chocolate hover:text-navy transition-colors text-sm py-1 hover:underline"
+                              >
+                                {city.name}
+                              </Link>
+                            ))}
+                          </div>
+                        ) : (
+                          <div className="text-center py-4">
+                            <p className="text-gray-500 text-sm">
+                              No city pages available yet for {state.name}.
+                            </p>
+                            <p className="text-gray-400 text-xs mt-1">
+                              Check back soon for updates!
+                            </p>
+                          </div>
+                        )}
                       </div>
                     </div>
                   )}
