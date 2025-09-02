@@ -11,33 +11,33 @@ import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function CincinnatiOhioVendingLeadsPage() {
+export default function IndependenceMissouriVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Cincinnati';
-  const stateDisplayName = 'Ohio';
+  const cityDisplayName = 'Independence';
+  const stateDisplayName = 'Missouri';
   
   // City-specific data
   const cityData = {
-    'name': 'Cincinnati',
-    'state': 'Ohio',
-    'population': '309K+',
-    'businesses': '5K-8K',
-    'industries': '8-12',
-    'verifiedLocations': '120-250',
-    'rating': '4.6/5',
-    'description': 'Major business and cultural center'
+    'name': 'Independence',
+    'state': 'Missouri',
+    'population': '123K+',
+    'businesses': '3K-5K',
+    'industries': '5-8',
+    'verifiedLocations': '60-120',
+    'rating': '4.4/5',
+    'description': 'Major suburban business center'
   };
   
   // Active users counter
-  const [activeUsers, setActiveUsers] = useState(25)
+  const [activeUsers, setActiveUsers] = useState(19)
   const [currentUserIndex, setCurrentUserIndex] = useState(0)
   const [usedNames, setUsedNames] = useState(new Set())
 
   // User names for active users counter
   const [userNames, setUserNames] = useState([
-    'Mike from Cincinnati', 'Sarah in Downtown', 'David in Cincinnati', 'Lisa in Cincinnati',
-    'Tom in Cincinnati', 'Jennifer in Cincinnati', 'Robert in Cincinnati', 'Amanda in Cincinnati',
-    'Chris in Cincinnati', 'Maria in Cincinnati', 'James in Cincinnati', 'Emily in Cincinnati'
+    'Mike from Independence', 'Sarah in Downtown', 'David in Independence', 'Lisa in Independence',
+    'Tom in Independence', 'Jennifer in Independence', 'Robert in Independence', 'Amanda in Independence',
+    'Chris in Independence', 'Maria in Independence', 'James in Independence', 'Emily in Independence'
   ])
 
   // Active users counter effect
@@ -46,7 +46,7 @@ export default function CincinnatiOhioVendingLeadsPage() {
       setActiveUsers(prev => {
         const change = Math.floor(Math.random() * 3) - 1
         const newValue = prev + change
-        return Math.max(20, Math.min(35, newValue))
+        return Math.max(15, Math.min(25, newValue))
       })
     }, 3000)
 
@@ -216,60 +216,60 @@ export default function CincinnatiOhioVendingLeadsPage() {
             <div className="bg-gray-50 p-6 rounded-lg">
               <div className="flex items-center mb-4">
                 <BuildingOfficeIcon className="w-8 h-8 text-blue-600 mr-3" />
-                <h3 className="text-xl font-semibold text-gray-900">Corporate Headquarters</h3>
+                <h3 className="text-xl font-semibold text-gray-900">Corporate Offices</h3>
               </div>
               <p className="text-gray-600">
-                Major corporations including Procter & Gamble and Kroger have headquarters in {cityDisplayName}, providing excellent opportunities for corporate vending machines.
-              </p>
-            </div>
-
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <div className="flex items-center mb-4">
-                <HeartIcon className="w-8 h-8 text-blue-600 mr-3" />
-                <h3 className="text-xl font-semibold text-gray-900">Healthcare & Medical</h3>
-              </div>
-              <p className="text-gray-600">
-                {cityDisplayName} Children's Hospital and numerous medical facilities throughout the city offer steady vending machine traffic throughout the day.
-              </p>
-            </div>
-
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <div className="flex items-center mb-4">
-                <AcademicCapIcon className="w-8 h-8 text-blue-600 mr-3" />
-                <h3 className="text-xl font-semibold text-gray-900">Universities & Colleges</h3>
-              </div>
-              <p className="text-gray-600">
-                University of Cincinnati and other educational institutions provide consistent student and faculty traffic for reliable vending machine revenue.
+                {cityDisplayName} is home to numerous corporate offices and business centers, providing excellent opportunities for office vending machine placement.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg">
               <div className="flex items-center mb-4">
                 <ShoppingBagIcon className="w-8 h-8 text-blue-600 mr-3" />
-                <h3 className="text-xl font-semibold text-gray-900">Retail & Entertainment</h3>
+                <h3 className="text-xl font-semibold text-gray-900">Retail & Shopping</h3>
               </div>
               <p className="text-gray-600">
-                Downtown {cityDisplayName} features shopping centers, entertainment venues, and cultural attractions offering diverse vending machine opportunities.
+                Shopping centers, retail districts, and entertainment venues in {cityDisplayName} provide diverse vending machine placement opportunities.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg">
               <div className="flex items-center mb-4">
-                <TruckIcon className="w-8 h-8 text-blue-600 mr-3" />
-                <h3 className="text-xl font-semibold text-gray-900">Manufacturing & Logistics</h3>
+                <HeartIcon className="w-8 h-8 text-blue-600 mr-3" />
+                <h3 className="text-xl font-semibold text-gray-900">Healthcare Facilities</h3>
               </div>
               <p className="text-gray-600">
-                Industrial facilities and logistics centers in {cityDisplayName} provide opportunities for employee-focused vending machine placement.
+                Medical centers and healthcare facilities throughout {cityDisplayName} offer steady vending machine traffic throughout the day.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg">
               <div className="flex items-center mb-4">
                 <BuildingLibraryIcon className="w-8 h-8 text-blue-600 mr-3" />
-                <h3 className="text-xl font-semibold text-gray-900">Government & Legal</h3>
+                <h3 className="text-xl font-semibold text-gray-900">Government Buildings</h3>
               </div>
               <p className="text-gray-600">
                 City offices, courthouses, and government facilities in {cityDisplayName} offer stable, long-term vending machine partnerships.
+              </p>
+            </div>
+
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <div className="flex items-center mb-4">
+                <TruckIcon className="w-8 h-8 text-blue-600 mr-3" />
+                <h3 className="text-xl font-semibold text-gray-900">Manufacturing & Industry</h3>
+              </div>
+              <p className="text-gray-600">
+                Manufacturing facilities and industrial companies in {cityDisplayName} provide opportunities for industrial vending machine placement.
+              </p>
+            </div>
+
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <div className="flex items-center mb-4">
+                <AcademicCapIcon className="w-8 h-8 text-blue-600 mr-3" />
+                <h3 className="text-xl font-semibold text-gray-900">Educational Institutions</h3>
+              </div>
+              <p className="text-gray-600">
+                Schools and educational facilities in {cityDisplayName} provide consistent student and faculty traffic for reliable vending machine revenue.
               </p>
             </div>
           </div>
@@ -308,7 +308,7 @@ export default function CincinnatiOhioVendingLeadsPage() {
                 What types of businesses in {cityDisplayName} are best for vending machines?
               </h3>
               <p className="text-gray-600">
-                {cityDisplayName} offers excellent opportunities in corporate headquarters, healthcare facilities, universities, retail centers, manufacturing facilities, and government buildings. The city's diverse business landscape provides multiple high-traffic locations for vending machine placement.
+                {cityDisplayName} offers excellent opportunities in corporate offices, retail centers, healthcare facilities, government buildings, manufacturing facilities, and educational institutions. The city's diverse business environment provides numerous vending machine placement opportunities.
               </p>
             </div>
 
@@ -326,7 +326,7 @@ export default function CincinnatiOhioVendingLeadsPage() {
                 What is the average revenue potential for vending machines in {cityDisplayName}?
               </h3>
               <p className="text-gray-600">
-                Vending machine revenue in {cityDisplayName} varies by location type, but our verified locations typically generate $180-650+ per month per machine. Corporate offices and healthcare facilities tend to perform best due to consistent foot traffic.
+                Vending machine revenue in {cityDisplayName} varies by location type, but our verified locations typically generate $130-520+ per month per machine. Corporate offices and healthcare facilities tend to perform best due to consistent foot traffic.
               </p>
             </div>
 
@@ -335,7 +335,7 @@ export default function CincinnatiOhioVendingLeadsPage() {
                 Are there any specific regulations for vending machines in {cityDisplayName}?
               </h3>
               <p className="text-gray-600">
-                {cityDisplayName} follows Ohio state regulations for vending machines. Our leads include businesses that are already compliant with local requirements, making the setup process smoother for vending machine operators.
+                {cityDisplayName} follows Missouri state regulations for vending machines. Our leads include businesses that are already compliant with local requirements, making the setup process smoother for vending machine operators.
               </p>
             </div>
 

@@ -1,24 +1,23 @@
 import { Metadata } from 'next'
-import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Youngstown Ohio - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Youngstown Ohio. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Youngstown Ohio, vending leads Vending Leads Youngstown Ohio, vending locations Vending Leads Youngstown Ohio, vending opportunities Vending Leads Youngstown Ohio",
+  "title": "Vending Machine Leads in Youngstown, Ohio - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Youngstown, Ohio. Find qualified businesses for vending machine placement in this major industrial and educational center.",
+  "keywords": "vending machines Youngstown Ohio, vending leads Youngstown Ohio, vending locations Youngstown Ohio, vending opportunities Youngstown Ohio",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/youngstown-ohio"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Youngstown Ohio - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Youngstown Ohio. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Youngstown, Ohio - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Youngstown, Ohio. Find qualified businesses for vending machine placement in this major industrial and educational center.",
     "url": "https://www.thevendinglocator.com/vending-leads/youngstown-ohio",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Youngstown Ohio - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Youngstown Ohio. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Youngstown, Ohio - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Youngstown, Ohio. Find qualified businesses for vending machine placement in this major industrial and educational center."
   },
   "robots": {
     "index": true,
@@ -26,13 +25,15 @@ export const metadata: Metadata = {
     "googleBot": {
       "index": true,
       "follow": true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1
+      'max-video-preview': -1,
+      'max-image-preview': "large",
+      'max-snippet': -1
     }
   }
 }
 
-export default function CityPage() {
+import PageClient from './pageClient'
+
+export default function YoungstownOhioVendingLeadsPage() {
   return <PageClient />
 }

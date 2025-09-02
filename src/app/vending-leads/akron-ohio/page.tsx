@@ -1,24 +1,23 @@
 import { Metadata } from 'next'
-import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Akron Ohio - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Akron Ohio. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Akron Ohio, vending leads Vending Leads Akron Ohio, vending locations Vending Leads Akron Ohio, vending opportunities Vending Leads Akron Ohio",
+  "title": "Vending Machine Leads in Akron, Ohio - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Akron, Ohio. Find qualified businesses for vending machine placement in this major manufacturing and research center.",
+  "keywords": "vending machines Akron Ohio, vending leads Akron Ohio, vending locations Akron Ohio, vending opportunities Akron Ohio",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/akron-ohio"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Akron Ohio - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Akron Ohio. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Akron, Ohio - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Akron, Ohio. Find qualified businesses for vending machine placement in this major manufacturing and research center.",
     "url": "https://www.thevendinglocator.com/vending-leads/akron-ohio",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Akron Ohio - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Akron Ohio. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Akron, Ohio - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Akron, Ohio. Find qualified businesses for vending machine placement in this major manufacturing and research center."
   },
   "robots": {
     "index": true,
@@ -26,13 +25,15 @@ export const metadata: Metadata = {
     "googleBot": {
       "index": true,
       "follow": true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1
+      'max-video-preview': -1,
+      'max-image-preview': "large",
+      'max-snippet': -1
     }
   }
 }
 
-export default function CityPage() {
+import PageClient from './pageClient'
+
+export default function AkronOhioVendingLeadsPage() {
   return <PageClient />
 }

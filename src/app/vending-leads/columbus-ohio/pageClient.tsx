@@ -18,18 +18,18 @@ export default function ColumbusOhioVendingLeadsPage() {
   
   // City-specific data
   const cityData = {
-  'name': 'Columbus',
-  'state': 'Ohio',
-  'population': '50K-100K',
-  'businesses': '5K-10K',
-  'industries': '8-12',
-  'verifiedLocations': '100-200',
-  'rating': '4.8/5',
-  'description': 'Thriving business community in Ohio'
-};
+    'name': 'Columbus',
+    'state': 'Ohio',
+    'population': '900K+',
+    'businesses': '8K-12K',
+    'industries': '10-15',
+    'verifiedLocations': '200-400',
+    'rating': '4.8/5',
+    'description': 'Ohio\'s capital and largest city'
+  };
   
   // Active users counter
-  const [activeUsers, setActiveUsers] = useState(28)
+  const [activeUsers, setActiveUsers] = useState(35)
   const [currentUserIndex, setCurrentUserIndex] = useState(0)
   const [usedNames, setUsedNames] = useState(new Set())
 
@@ -46,508 +46,322 @@ export default function ColumbusOhioVendingLeadsPage() {
       setActiveUsers(prev => {
         const change = Math.floor(Math.random() * 3) - 1
         const newValue = prev + change
-        return Math.max(25, Math.min(42, newValue))
+        return Math.max(30, Math.min(45, newValue))
       })
-    }, 4000);
+    }, 3000)
+
     return () => clearInterval(interval)
   }, [])
 
-  // Smart rotation of user names
+  // User name rotation effect
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentUserIndex(prev => {
-        if (usedNames.size > userNames.length * 0.8) {
+        let nextIndex
+        do {
+          nextIndex = Math.floor(Math.random() * userNames.length)
+        } while (usedNames.has(nextIndex) && usedNames.size < userNames.length)
+        
+        if (usedNames.size >= userNames.length) {
           setUsedNames(new Set())
         }
-        let attempts = 0
-        let nextIndex = prev
-        while (attempts < 50) {
-          nextIndex = (nextIndex + 1) % userNames.length
-          if (!usedNames.has(nextIndex)) {
-            setUsedNames(prev => new Set([...prev, nextIndex]));
-            return nextIndex
-          }
-          attempts++
-        }
-        const randomIndex = Math.floor(Math.random() * userNames.length)
-        setUsedNames(prev => new Set([...prev, randomIndex]));
-        return randomIndex
+        
+        setUsedNames(prev => new Set([...prev, nextIndex]))
+        return nextIndex
       })
-    }, 5000);
+    }, 4000)
+
     return () => clearInterval(interval)
   }, [userNames.length, usedNames])
 
   return (
-    <>
+    <div className="min-h-screen bg-gray-50">
       <Header />
       
-      <div className="min-h-screen bg-warm-white">
-        {/* Breadcrumb Navigation */}
-        <nav className="bg-white border-b border-gray-200 py-3">
-          <div className="container mx-auto px-4">
-            <div className="flex items-center space-x-2 text-sm text-stone">
-              <Link href="/" className="hover:text-navy transition-colors">
-                Home
-              </Link>
-              <span>/</span>
-              <Link href="/vending-leads" className="hover:text-navy transition-colors">
-                Vending Leads
-              </Link>
-              <span>/</span>
-              <Link href={`/vending-leads/${stateDisplayName.toLowerCase().replace(/\s+/g, '-')}`} className="hover:text-navy transition-colors">
-                {stateDisplayName}
-              </Link>
-              <span>/</span>
-              <span className="text-charcoal font-medium">{cityDisplayName}</span>
-            </div>
-          </div>
-        </nav>
-
-        {/* Hero Section */}
-        <section className="relative py-20 bg-white overflow-hidden">
-          <div className="container mx-auto px-4">
-            <div className="max-w-6xl mx-auto text-center">
-              {/* Active Users Counter */}
-              <motion.div 
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                className="mt-6 sm:mt-8 p-4 bg-cream/50 backdrop-blur-sm rounded-2xl border border-gray-200 shadow-sm max-w-md mx-auto mb-6"
-              >
-                <div className="flex items-center justify-center gap-3">
-                  <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                  <span className="text-sm font-medium text-chocolate">
-                    <span className="font-bold text-coral">{activeUsers}</span> people are choosing plans right now
-                  </span>
-                </div></motion.div>
-
-              {/* Main Headline */}
-              <motion.h1 
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                className="text-4xl md:text-6xl font-playfair font-bold text-charcoal mb-6 leading-tight"
-              >
-                Vending Machine Locations in{' '}
-                <span className="text-navy">{cityDisplayName}, {stateDisplayName}</span>
-              </motion.h1>
-
-              {/* City-Specific Value Proposition */}
-              <motion.p 
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.6 }}
-                className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
-              >
-                Get pre-qualified vending machine locations in Columbus's diverse and growing business economy. 
-                Access verified businesses with detailed contact information and placement opportunities.
-              </motion.p>
-
-              {/* Trust Signals */}
-              <motion.div 
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.8 }}
-                className="mt-6 sm:mt-8 grid grid-cols-2 gap-4 max-w-md mx-auto mb-8"
-              >
-                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
-                  <div className="flex items-center gap-3">
-                    <CheckBadgeIcon className="h-5 w-5 text-green-600" />
-                    <span className="text-sm font-medium text-chocolate">Verified Locations</span>
-                  </div>
-                </div>
-                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
-                  <div className="flex items-center gap-3">
-                    <StarIcon className="h-5 w-5 text-yellow-500" />
-                    <span className="text-sm font-medium text-chocolate">4.8/5 Rating</span>
-                  </div>
-                </div>
-                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
-                  <div className="flex items-center gap-3">
-                    <ShieldCheckIcon className="h-5 w-5 text-blue-600" />
-                    <span className="text-sm font-medium text-chocolate">Secure & Reliable</span>
-                  </div>
-                </div>
-                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
-                  <div className="flex items-center gap-3">
-                    <ClockIcon className="h-5 w-5 text-purple-600" />
-                    <span className="text-sm font-medium text-chocolate">Quality Research</span>
-                  </div>
-                </div>
-              </motion.div>
-
-              {/* CTA Buttons */}
-              <motion.div 
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 1.0 }}
-                className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 mb-8"
-              >
-                <button 
-                    onClick={() => {
-                      const pricingSection = document.getElementById('pricing')
-                      if (pricingSection) {
-                        pricingSection.scrollIntoView({ behavior: 'smooth' })
-                      }
-                    }}
-                    className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
-                  className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors"
-                >
-                    Get Started
-                  </button>
-                <Link 
-                  href="/hot-leads"
-                  className="w-full sm:w-auto bg-transparent text-chocolate border-2 border-chocolate px-8 py-3 rounded-lg font-semibold hover:bg-chocolate hover:text-white transition-colors"
-                >
-                  View Hot Leads →
-                </Link>
-              </motion.div>
-
-{/* Social Proof Stats */}
-              <motion.div 
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 1.2 }}
-                className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto"
-              >
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-navy">{cityData.population}</div>
-                  <div className="text-sm text-stone">Population</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-navy">{cityData.businesses}</div>
-                  <div className="text-sm text-stone">Businesses</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-navy">{cityData.industries}</div>
-                  <div className="text-sm text-stone">Industries</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-navy">{cityData.verifiedLocations}</div>
-                  <div className="text-sm text-stone">Verified Locations</div>
-                </div>
-              </motion.div>
-            </div>
-          </div>
-        </section>
-
-        {/* Pricing Section */}
-        <section id="pricing" className="py-16 bg-warm-white">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <motion.h2
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: true }}
-                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
-              >
-                Get Access to Qualified Vending Machine Locations in {cityDisplayName}
-              </motion.h2>
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                viewport={{ once: true }}
-                className="text-lg text-stone max-w-3xl mx-auto"
-              >
-                Choose the perfect plan for your vending machine business needs and start accessing qualified locations today.
-              </motion.p>
-            </div>
-            <PricingTable />
-          </div>
-        </section>
-
-        {/* Business Landscape */}
-        <section className="py-16 bg-white">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <motion.h2
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: true }}
-                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
-              >
-                Business Landscape in {cityDisplayName}
-              </motion.h2>
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                viewport={{ once: true }}
-                className="text-lg text-stone max-w-3xl mx-auto"
-              >
-                Discover the diverse industries and business opportunities that make {cityDisplayName} an ideal market for vending machines.
-              </motion.p>
-            </div>
+      {/* Hero Section */}
+      <section className="relative bg-gradient-to-br from-blue-50 via-white to-indigo-50 py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <motion.h1 
+              className="text-4xl md:text-6xl font-bold text-gray-900 mb-6"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              Vending Machine Leads in{' '}
+              <span className="text-blue-600">{cityDisplayName}</span>
+            </motion.h1>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              
-              <motion.div
-                key="Healthcare"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0 }}
-                viewport={{ once: true }}
-                className="bg-blue-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+            <motion.p 
+              className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
+              Find verified vending machine locations and qualified businesses in {cityDisplayName}, {stateDisplayName}. 
+              Get access to our database of {cityData.verifiedLocations}+ verified locations ready for vending machine placement.
+            </motion.p>
+
+            {/* Active Users Counter */}
+            <motion.div 
+              className="flex items-center justify-center space-x-2 mb-8"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+            >
+              <div className="flex -space-x-2">
+                {[...Array(3)].map((_, i) => (
+                  <div key={i} className="w-8 h-8 bg-blue-500 rounded-full border-2 border-white flex items-center justify-center">
+                    <span className="text-white text-xs font-bold">
+                      {userNames[currentUserIndex]?.charAt(0) || 'U'}
+                    </span>
+                  </div>
+                ))}
+              </div>
+              <div className="text-sm text-gray-600">
+                <span className="font-semibold text-blue-600">{activeUsers}</span> people viewing {cityDisplayName} leads right now
+              </div>
+            </motion.div>
+
+            {/* Trust Signals */}
+            <motion.div 
+              className="flex flex-wrap justify-center items-center gap-6 mb-8"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+            >
+              <div className="flex items-center space-x-2">
+                <CheckBadgeIcon className="w-5 h-5 text-green-500" />
+                <span className="text-sm text-gray-600">Verified Locations</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <StarIcon className="w-5 h-5 text-yellow-500" />
+                <span className="text-sm text-gray-600">{cityData.rating} Rating</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <ShieldCheckIcon className="w-5 h-5 text-blue-500" />
+                <span className="text-sm text-gray-600">Secure Access</span>
+              </div>
+            </motion.div>
+
+            {/* CTA Buttons */}
+            <motion.div 
+              className="flex flex-col sm:flex-row gap-4 justify-center"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.8 }}
+            >
+              <Link 
+                href="#pricing" 
+                className="bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200 flex items-center justify-center space-x-2"
               >
-                <div className="text-blue-600 mb-4">
-                  <BuildingOfficeIcon className="w-12 h-12" />
-                </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Columbus features modern healthcare facilities including hospitals, clinics, and medical offices with high foot traffic and stable operations.</p>
-              </motion.div>
-              <motion.div
-                key="Education"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.1 }}
-                viewport={{ once: true }}
-                className="bg-green-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+                <span>Get {cityDisplayName} Leads</span>
+                <SparklesIcon className="w-5 h-5" />
+              </Link>
+              <Link 
+                href="#business-landscape" 
+                className="border border-gray-300 text-gray-700 px-8 py-4 rounded-lg font-semibold hover:bg-gray-50 transition-colors duration-200"
               >
-                <div className="text-green-600 mb-4">
-                  <AcademicCapIcon className="w-12 h-12" />
-                </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Educational institutions in Columbus provide consistent student populations and staff, creating ideal vending machine opportunities.</p>
-              </motion.div>
-              <motion.div
-                key="Manufacturing"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                viewport={{ once: true }}
-                className="bg-purple-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
-              >
-                <div className="text-purple-600 mb-4">
-                  <CpuChipIcon className="w-12 h-12" />
-                </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Columbus's manufacturing sector offers large employee bases and extended operating hours, perfect for vending machine placement.</p>
-              </motion.div>
-              <motion.div
-                key="Retail"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.30000000000000004 }}
-                viewport={{ once: true }}
-                className="bg-orange-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
-              >
-                <div className="text-orange-600 mb-4">
-                  <ShoppingBagIcon className="w-12 h-12" />
-                </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Retail locations throughout Columbus provide high customer traffic and diverse demographics for vending machine success.</p>
-              </motion.div>
-              <motion.div
-                key="Office Buildings"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                viewport={{ once: true }}
-                className="bg-indigo-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
-              >
-                <div className="text-indigo-600 mb-4">
-                  <BuildingOfficeIcon className="w-12 h-12" />
-                </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Professional office spaces in Columbus offer captive audiences during business hours with consistent daily traffic.</p>
-              </motion.div>
-              <motion.div
-                key="Transportation"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.5 }}
-                viewport={{ once: true }}
-                className="bg-red-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
-              >
-                <div className="text-red-600 mb-4">
-                  <TruckIcon className="w-12 h-12" />
-                </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Columbus's transportation hubs including airports, bus stations, and transit centers provide high-volume foot traffic.</p>
-              </motion.div>
+                View Business Landscape
+              </Link>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* City Statistics */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="text-3xl font-bold text-blue-600 mb-2">{cityData.population}</div>
+              <div className="text-gray-600">Population</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl font-bold text-blue-600 mb-2">{cityData.businesses}</div>
+              <div className="text-gray-600">Businesses</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl font-bold text-blue-600 mb-2">{cityData.industries}</div>
+              <div className="text-gray-600">Industries</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl font-bold text-blue-600 mb-2">{cityData.verifiedLocations}</div>
+              <div className="text-gray-600">Verified Locations</div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Hot Leads Section */}
-        <section id="pricing" className="py-16 bg-warm-white">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <motion.h2
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: true }}
-                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
-              >
-                One-Time Location Packages for {cityDisplayName}
-              </motion.h2>
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                viewport={{ once: true }}
-                className="text-lg text-stone max-w-3xl mx-auto"
-              >
-                Get immediate access to qualified vending machine locations without monthly commitments.
-              </motion.p>
-            </div>
-            <HotLeads />
+      {/* Pricing Table */}
+      <section id="pricing" className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <PricingTable />
+        </div>
+      </section>
+
+      {/* Business Landscape */}
+      <section id="business-landscape" className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              {cityDisplayName} Business Landscape
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Discover the thriving business environment in {cityDisplayName}, {stateDisplayName} and find the perfect locations for your vending machines.
+            </p>
           </div>
-        </section>
 
-        {/* Vending Course Section */}
-        <section className="py-16 bg-white">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <motion.h2
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: true }}
-                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
-              >
-                Learn the Vending Machine Business
-              </motion.h2>
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                viewport={{ once: true }}
-                className="text-lg text-stone max-w-3xl mx-auto"
-              >
-                Master the fundamentals of vending machine operations and maximize your success in {cityDisplayName}.
-              </motion.p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <div className="flex items-center mb-4">
+                <BuildingLibraryIcon className="w-8 h-8 text-blue-600 mr-3" />
+                <h3 className="text-xl font-semibold text-gray-900">Government & State Offices</h3>
+              </div>
+              <p className="text-gray-600">
+                As Ohio's capital, {cityDisplayName} is home to numerous government buildings, state agencies, and federal offices providing excellent vending opportunities.
+              </p>
             </div>
-            <VendingCourse />
-          </div>
-        </section>
 
-        {/* FAQ Section */}
-        <section id="pricing" className="py-16 bg-warm-white">
-          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <motion.h2
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                viewport={{ once: true }}
-                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
-              >
-                Frequently Asked Questions
-              </motion.h2>
-              <motion.p 
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                viewport={{ once: true }}
-                className="text-lg text-chocolate/70 leading-relaxed"
-              >
-                Everything you need to know about vending machine opportunities in {cityDisplayName}.
-              </motion.p>
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <div className="flex items-center mb-4">
+                <BuildingOfficeIcon className="w-8 h-8 text-blue-600 mr-3" />
+                <h3 className="text-xl font-semibold text-gray-900">Corporate Headquarters</h3>
+              </div>
+              <p className="text-gray-600">
+                Major corporations and Fortune 500 companies have headquarters in {cityDisplayName}, offering high-traffic office vending machine opportunities.
+              </p>
             </div>
-            
-            <div className="space-y-6">
-              
-              <motion.div
-                key="0"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What types of vending machine locations are available in Columbus?</h3>
-                <p className="text-stone leading-relaxed">Columbus offers diverse vending opportunities including healthcare facilities, educational institutions, manufacturing plants, retail locations, office buildings, and transportation hubs. Each location is pre-verified for optimal vending machine success.</p>
-              </motion.div>
-              <motion.div
-                key="1"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.1 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">How quickly can I get vending machine leads for Columbus?</h3>
-                <p className="text-stone leading-relaxed">Our Columbus vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.</p>
-              </motion.div>
-              <motion.div
-                key="2"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What makes Columbus a good market for vending machines?</h3>
-                <p className="text-stone leading-relaxed">Columbus features a strong business community with diverse industries, stable employment, and consistent foot traffic. The city's economic growth and business-friendly environment create ideal conditions for vending machine success.</p>
-              </motion.div>
-              <motion.div
-                key="3"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.30000000000000004 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">Do you provide ongoing support for Columbus locations?</h3>
-                <p className="text-stone leading-relaxed">Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Columbus.</p>
-              </motion.div>
-              <motion.div
-                key="4"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What industries in Columbus are best for vending machines?</h3>
-                <p className="text-stone leading-relaxed">Healthcare, education, manufacturing, retail, office buildings, and transportation sectors in Columbus show the highest potential for vending machine success due to consistent foot traffic and captive audiences.</p>
-              </motion.div>
-              <motion.div
-                key="5"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.5 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">How do you verify the quality of Columbus vending locations?</h3>
-                <p className="text-stone leading-relaxed">We conduct thorough research on each Columbus location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.</p>
-              </motion.div>
-              <motion.div
-                key="6"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.6000000000000001 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">Can I get customized vending leads for specific areas of Columbus?</h3>
-                <p className="text-stone leading-relaxed">Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Columbus based on your preferences and target market requirements.</p>
-              </motion.div>
-              <motion.div
-                key="7"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.7000000000000001 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What's the typical ROI for vending machines in Columbus?</h3>
-                <p className="text-stone leading-relaxed">Vending machines in Columbus typically show strong ROI due to the city's business density and consistent traffic patterns. Our research shows average payback periods of 12-18 months for well-placed machines.</p>
-              </motion.div>
+
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <div className="flex items-center mb-4">
+                <AcademicCapIcon className="w-8 h-8 text-blue-600 mr-3" />
+                <h3 className="text-xl font-semibold text-gray-900">Educational Institutions</h3>
+              </div>
+              <p className="text-gray-600">
+                {cityDisplayName} is home to The Ohio State University and numerous colleges, providing consistent student and faculty traffic for vending machines.
+              </p>
+            </div>
+
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <div className="flex items-center mb-4">
+                <HeartIcon className="w-8 h-8 text-blue-600 mr-3" />
+                <h3 className="text-xl font-semibold text-gray-900">Healthcare Facilities</h3>
+              </div>
+              <p className="text-gray-600">
+                Major hospitals, medical centers, and healthcare facilities throughout {cityDisplayName} offer steady vending machine traffic throughout the day.
+              </p>
+            </div>
+
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <div className="flex items-center mb-4">
+                <ShoppingBagIcon className="w-8 h-8 text-blue-600 mr-3" />
+                <h3 className="text-xl font-semibold text-gray-900">Retail & Shopping Centers</h3>
+              </div>
+              <p className="text-gray-600">
+                Shopping malls, retail districts, and entertainment venues in {cityDisplayName} provide diverse vending machine placement opportunities.
+              </p>
+            </div>
+
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <div className="flex items-center mb-4">
+                <TruckIcon className="w-8 h-8 text-blue-600 mr-3" />
+                <h3 className="text-xl font-semibold text-gray-900">Transportation Hubs</h3>
+              </div>
+              <p className="text-gray-600">
+                {cityDisplayName} International Airport and major transportation centers offer high-traffic vending machine opportunities for travelers.
+              </p>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-      </div>
-      
+      {/* Hot Leads */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <HotLeads />
+        </div>
+      </section>
+
+      {/* Vending Course */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <VendingCourse />
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              Frequently Asked Questions - {cityDisplayName} Vending Leads
+            </h2>
+            <p className="text-xl text-gray-600">
+              Get answers to common questions about vending machine opportunities in {cityDisplayName}, {stateDisplayName}.
+            </p>
+          </div>
+
+          <div className="space-y-6">
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                What types of businesses in {cityDisplayName} are best for vending machines?
+              </h3>
+              <p className="text-gray-600">
+                {cityDisplayName} offers excellent opportunities in government buildings, corporate offices, universities, hospitals, shopping centers, and transportation hubs. As Ohio's capital, the city has diverse business environments perfect for vending machine placement.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                How many verified vending locations are available in {cityDisplayName}?
+              </h3>
+              <p className="text-gray-600">
+                We currently have {cityData.verifiedLocations}+ verified locations in {cityDisplayName} that are ready for vending machine placement. These locations have been pre-qualified and are actively seeking vending machine partnerships.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                What is the average revenue potential for vending machines in {cityDisplayName}?
+              </h3>
+              <p className="text-gray-600">
+                Vending machine revenue in {cityDisplayName} varies by location type, but our verified locations typically generate $250-800+ per month per machine. Government buildings and corporate offices tend to perform best due to consistent foot traffic.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                Are there any specific regulations for vending machines in {cityDisplayName}?
+              </h3>
+              <p className="text-gray-600">
+                {cityDisplayName} follows Ohio state regulations for vending machines. Our leads include businesses that are already compliant with local requirements, making the setup process smoother for vending machine operators.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                How quickly can I start placing vending machines in {cityDisplayName}?
+              </h3>
+              <p className="text-gray-600">
+                With our verified leads, you can typically start placing vending machines in {cityDisplayName} within 1-2 weeks of purchasing our leads. The businesses are pre-qualified and ready to partner with vending machine operators.
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                What support do you provide for vending machine operators in {cityDisplayName}?
+              </h3>
+              <p className="text-gray-600">
+                We provide comprehensive support including location verification, business contact information, placement guidelines, and ongoing assistance to help you succeed in the {cityDisplayName} vending machine market.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Footer />
       <ZipCodeModalWrapper />
-    </>
+    </div>
   )
 }

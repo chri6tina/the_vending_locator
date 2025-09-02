@@ -266,7 +266,13 @@ const states = [
     name: 'Missouri',
     slug: 'missouri',
     cities: [
-      { name: 'Kansas City', slug: 'kansas-city-missouri' }
+      { name: 'Columbia', slug: 'columbia-missouri' },
+      { name: 'Independence', slug: 'independence-missouri' },
+      { name: 'Kansas City', slug: 'kansas-city-missouri' },
+      { name: "Lee's Summit", slug: 'lees-summit-missouri' },
+      { name: "O'Fallon", slug: 'ofallon-missouri' },
+      { name: 'Springfield', slug: 'springfield-missouri' },
+      { name: 'St. Louis', slug: 'st-louis-missouri' }
     ]
   },
   {
@@ -457,14 +463,23 @@ const states = [
     name: 'Virginia',
     slug: 'virginia',
     cities: [
-      { name: 'Richmond', slug: 'richmond-virginia' }
+      { name: 'Chesapeake', slug: 'chesapeake-virginia' },
+      { name: 'Norfolk', slug: 'norfolk-virginia' },
+      { name: 'Richmond', slug: 'richmond-virginia' },
+      { name: 'Virginia Beach', slug: 'virginia-beach-virginia' }
     ]
   },
   {
     name: 'Washington',
     slug: 'washington',
     cities: [
-      { name: 'Seattle', slug: 'seattle-washington' }
+      { name: 'Bellevue', slug: 'bellevue-washington' },
+      { name: 'Everett', slug: 'everett-washington' },
+      { name: 'Kent', slug: 'kent-washington' },
+      { name: 'Seattle', slug: 'seattle-washington' },
+      { name: 'Spokane', slug: 'spokane-washington' },
+      { name: 'Tacoma', slug: 'tacoma-washington' },
+      { name: 'Vancouver', slug: 'vancouver-washington' }
     ]
   },
   {

@@ -1,24 +1,23 @@
 import { Metadata } from 'next'
-import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Columbus Ohio - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Columbus Ohio. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Columbus Ohio, vending leads Vending Leads Columbus Ohio, vending locations Vending Leads Columbus Ohio, vending opportunities Vending Leads Columbus Ohio",
+  "title": "Vending Machine Leads in Columbus, Ohio - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Columbus, Ohio. Find qualified businesses for vending machine placement in Ohio's capital and largest city.",
+  "keywords": "vending machines Columbus Ohio, vending leads Columbus Ohio, vending locations Columbus Ohio, vending opportunities Columbus Ohio",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/columbus-ohio"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Columbus Ohio - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Columbus Ohio. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Columbus, Ohio - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Columbus, Ohio. Find qualified businesses for vending machine placement in Ohio's capital and largest city.",
     "url": "https://www.thevendinglocator.com/vending-leads/columbus-ohio",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Columbus Ohio - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Columbus Ohio. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Columbus, Ohio - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Columbus, Ohio. Find qualified businesses for vending machine placement in Ohio's capital and largest city."
   },
   "robots": {
     "index": true,
@@ -26,13 +25,15 @@ export const metadata: Metadata = {
     "googleBot": {
       "index": true,
       "follow": true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1
+      'max-video-preview': -1,
+      'max-image-preview': "large",
+      'max-snippet': -1
     }
   }
 }
 
-export default function CityPage() {
+import PageClient from './pageClient'
+
+export default function ColumbusOhioVendingLeadsPage() {
   return <PageClient />
 }

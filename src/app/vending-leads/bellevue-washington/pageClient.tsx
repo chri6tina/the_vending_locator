@@ -11,33 +11,33 @@ import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function CincinnatiOhioVendingLeadsPage() {
+export default function BellevueWashingtonVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Cincinnati';
-  const stateDisplayName = 'Ohio';
+  const cityDisplayName = 'Bellevue';
+  const stateDisplayName = 'Washington';
   
   // City-specific data
   const cityData = {
-    'name': 'Cincinnati',
-    'state': 'Ohio',
-    'population': '309K+',
-    'businesses': '5K-8K',
-    'industries': '8-12',
-    'verifiedLocations': '120-250',
-    'rating': '4.6/5',
-    'description': 'Major business and cultural center'
+    'name': 'Bellevue',
+    'state': 'Washington',
+    'population': '150K+',
+    'businesses': '4K-6K',
+    'industries': '6-9',
+    'verifiedLocations': '80-160',
+    'rating': '4.7/5',
+    'description': 'Major tech hub and business center'
   };
   
   // Active users counter
-  const [activeUsers, setActiveUsers] = useState(25)
+  const [activeUsers, setActiveUsers] = useState(24)
   const [currentUserIndex, setCurrentUserIndex] = useState(0)
   const [usedNames, setUsedNames] = useState(new Set())
 
   // User names for active users counter
   const [userNames, setUserNames] = useState([
-    'Mike from Cincinnati', 'Sarah in Downtown', 'David in Cincinnati', 'Lisa in Cincinnati',
-    'Tom in Cincinnati', 'Jennifer in Cincinnati', 'Robert in Cincinnati', 'Amanda in Cincinnati',
-    'Chris in Cincinnati', 'Maria in Cincinnati', 'James in Cincinnati', 'Emily in Cincinnati'
+    'Mike from Bellevue', 'Sarah in Downtown', 'David in Bellevue', 'Lisa in Bellevue',
+    'Tom in Bellevue', 'Jennifer in Bellevue', 'Robert in Bellevue', 'Amanda in Bellevue',
+    'Chris in Bellevue', 'Maria in Bellevue', 'James in Bellevue', 'Emily in Bellevue'
   ])
 
   // Active users counter effect
@@ -46,7 +46,7 @@ export default function CincinnatiOhioVendingLeadsPage() {
       setActiveUsers(prev => {
         const change = Math.floor(Math.random() * 3) - 1
         const newValue = prev + change
-        return Math.max(20, Math.min(35, newValue))
+        return Math.max(20, Math.min(30, newValue))
       })
     }, 3000)
 
@@ -215,61 +215,61 @@ export default function CincinnatiOhioVendingLeadsPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-gray-50 p-6 rounded-lg">
               <div className="flex items-center mb-4">
+                <CpuChipIcon className="w-8 h-8 text-blue-600 mr-3" />
+                <h3 className="text-xl font-semibold text-gray-900">Technology & Innovation</h3>
+              </div>
+              <p className="text-gray-600">
+                {cityDisplayName} is home to major tech companies including Microsoft, Amazon, and other Fortune 500 companies, providing excellent opportunities for high-tech office vending machine placement.
+              </p>
+            </div>
+
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <div className="flex items-center mb-4">
                 <BuildingOfficeIcon className="w-8 h-8 text-blue-600 mr-3" />
                 <h3 className="text-xl font-semibold text-gray-900">Corporate Headquarters</h3>
               </div>
               <p className="text-gray-600">
-                Major corporations including Procter & Gamble and Kroger have headquarters in {cityDisplayName}, providing excellent opportunities for corporate vending machines.
+                Major corporate headquarters and business centers in {cityDisplayName} provide opportunities for premium office vending machine placement.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg">
               <div className="flex items-center mb-4">
                 <HeartIcon className="w-8 h-8 text-blue-600 mr-3" />
-                <h3 className="text-xl font-semibold text-gray-900">Healthcare & Medical</h3>
+                <h3 className="text-xl font-semibold text-gray-900">Healthcare Facilities</h3>
               </div>
               <p className="text-gray-600">
-                {cityDisplayName} Children's Hospital and numerous medical facilities throughout the city offer steady vending machine traffic throughout the day.
+                Medical centers and healthcare facilities throughout {cityDisplayName} offer steady vending machine traffic throughout the day.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg">
               <div className="flex items-center mb-4">
                 <AcademicCapIcon className="w-8 h-8 text-blue-600 mr-3" />
-                <h3 className="text-xl font-semibold text-gray-900">Universities & Colleges</h3>
+                <h3 className="text-xl font-semibold text-gray-900">Educational Institutions</h3>
               </div>
               <p className="text-gray-600">
-                University of Cincinnati and other educational institutions provide consistent student and faculty traffic for reliable vending machine revenue.
-              </p>
-            </div>
-
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <div className="flex items-center mb-4">
-                <ShoppingBagIcon className="w-8 h-8 text-blue-600 mr-3" />
-                <h3 className="text-xl font-semibold text-gray-900">Retail & Entertainment</h3>
-              </div>
-              <p className="text-gray-600">
-                Downtown {cityDisplayName} features shopping centers, entertainment venues, and cultural attractions offering diverse vending machine opportunities.
-              </p>
-            </div>
-
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <div className="flex items-center mb-4">
-                <TruckIcon className="w-8 h-8 text-blue-600 mr-3" />
-                <h3 className="text-xl font-semibold text-gray-900">Manufacturing & Logistics</h3>
-              </div>
-              <p className="text-gray-600">
-                Industrial facilities and logistics centers in {cityDisplayName} provide opportunities for employee-focused vending machine placement.
+                Bellevue College and other educational facilities provide consistent student and faculty traffic for reliable vending machine revenue.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg">
               <div className="flex items-center mb-4">
                 <BuildingLibraryIcon className="w-8 h-8 text-blue-600 mr-3" />
-                <h3 className="text-xl font-semibold text-gray-900">Government & Legal</h3>
+                <h3 className="text-xl font-semibold text-gray-900">Government Buildings</h3>
               </div>
               <p className="text-gray-600">
                 City offices, courthouses, and government facilities in {cityDisplayName} offer stable, long-term vending machine partnerships.
+              </p>
+            </div>
+
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <div className="flex items-center mb-4">
+                <ShoppingBagIcon className="w-8 h-8 text-blue-600 mr-3" />
+                <h3 className="text-xl font-semibold text-gray-900">Retail & Shopping</h3>
+              </div>
+              <p className="text-gray-600">
+                Bellevue Square and other shopping centers provide diverse vending machine placement opportunities in high-traffic retail areas.
               </p>
             </div>
           </div>
@@ -308,7 +308,7 @@ export default function CincinnatiOhioVendingLeadsPage() {
                 What types of businesses in {cityDisplayName} are best for vending machines?
               </h3>
               <p className="text-gray-600">
-                {cityDisplayName} offers excellent opportunities in corporate headquarters, healthcare facilities, universities, retail centers, manufacturing facilities, and government buildings. The city's diverse business landscape provides multiple high-traffic locations for vending machine placement.
+                {cityDisplayName} offers excellent opportunities in major tech companies, corporate headquarters, healthcare facilities, educational institutions, government buildings, and retail centers. The city's high-tech business environment provides numerous premium vending machine placement opportunities.
               </p>
             </div>
 
@@ -326,7 +326,7 @@ export default function CincinnatiOhioVendingLeadsPage() {
                 What is the average revenue potential for vending machines in {cityDisplayName}?
               </h3>
               <p className="text-gray-600">
-                Vending machine revenue in {cityDisplayName} varies by location type, but our verified locations typically generate $180-650+ per month per machine. Corporate offices and healthcare facilities tend to perform best due to consistent foot traffic.
+                Vending machine revenue in {cityDisplayName} varies by location type, but our verified locations typically generate $200-800+ per month per machine. Tech companies and corporate offices tend to perform best due to high foot traffic and disposable income.
               </p>
             </div>
 
@@ -335,7 +335,7 @@ export default function CincinnatiOhioVendingLeadsPage() {
                 Are there any specific regulations for vending machines in {cityDisplayName}?
               </h3>
               <p className="text-gray-600">
-                {cityDisplayName} follows Ohio state regulations for vending machines. Our leads include businesses that are already compliant with local requirements, making the setup process smoother for vending machine operators.
+                {cityDisplayName} follows Washington state regulations for vending machines. Our leads include businesses that are already compliant with local requirements, making the setup process smoother for vending machine operators.
               </p>
             </div>
 
