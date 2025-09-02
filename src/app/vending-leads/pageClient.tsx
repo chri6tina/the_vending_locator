@@ -429,8 +429,11 @@ const states = [
     name: 'Tennessee',
     slug: 'tennessee',
     cities: [
+      { name: 'Chattanooga', slug: 'chattanooga-tennessee' },
+      { name: 'Clarksville', slug: 'clarksville-tennessee' },
       { name: 'Knoxville', slug: 'knoxville-tennessee' },
       { name: 'Memphis', slug: 'memphis-tennessee' },
+      { name: 'Murfreesboro', slug: 'murfreesboro-tennessee' },
       { name: 'Nashville', slug: 'nashville-tennessee' }
     ]
   },
