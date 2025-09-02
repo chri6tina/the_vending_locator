@@ -1,331 +1,552 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import Link from 'next/link'
 import { motion } from 'framer-motion'
+import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CpuChipIcon, HeartIcon, ShoppingBagIcon, TruckIcon, BuildingLibraryIcon, CurrencyDollarIcon, SparklesIcon } from '@heroicons/react/24/solid'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
-import SmartBreadcrumbs from '@/components/SmartBreadcrumbs'
 
-const cityData = {
-  name: 'Scottsdale',
-  state: 'Arizona',
-  population: '241,361',
-  description: 'Scottsdale, Arizona is an affluent city in the Phoenix metropolitan area known for its luxury resorts, high-end shopping, and vibrant arts scene. With a strong economy driven by tourism, healthcare, and technology, Scottsdale offers excellent vending opportunities in hospitality, retail, healthcare, and corporate sectors.',
-  keyIndustries: ['Tourism & Hospitality', 'Healthcare', 'Technology', 'Retail', 'Real Estate', 'Financial Services'],
-  majorEmployers: ['HonorHealth', 'Scottsdale Healthcare', 'City of Scottsdale', 'Scottsdale Unified School District', 'Mayo Clinic', 'Banner Health'],
-  vendingOpportunities: [
-    'Luxury resorts and hotels',
-    'High-end shopping centers and malls',
-    'Healthcare facilities and medical centers',
-    'Technology companies and business parks',
-    'Corporate offices and financial institutions',
-    'Entertainment venues and cultural centers',
-    'Golf courses and recreational facilities'
-  ],
-  demographics: {
-    medianAge: 45.8,
-    medianHouseholdIncome: '$89,234',
-    educationLevel: 'Bachelor\'s degree or higher',
-    employmentRate: '68.2%'
-  },
-  transportation: {
-    majorHighways: ['SR-101', 'SR-202', 'SR-51', 'I-10'],
-    publicTransit: 'Valley Metro',
-    airports: 'Phoenix Sky Harbor International Airport'
-  }
-}
+export default function ScottsdaleArizonaVendingLeadsPage() {
+  // City and state display names
+  const cityDisplayName = 'Scottsdale';
+  const stateDisplayName = 'Arizona';
+  
+  // City-specific data
+  const cityData = {
+  'name': 'Scottsdale',
+  'state': 'Arizona',
+  'population': '241,361',
+  'businesses': '12K-20K',
+  'industries': '8-12',
+  'verifiedLocations': '150-300',
+  'rating': '4.8/5',
+  'description': 'Thriving business community in Arizona'
+};
+  
+  // Active users counter
+  const [activeUsers, setActiveUsers] = useState(28)
+  const [currentUserIndex, setCurrentUserIndex] = useState(0)
+  const [usedNames, setUsedNames] = useState(new Set())
 
-const userNames = [
-  'Michael', 'Sarah', 'David', 'Jennifer', 'Robert', 'Lisa', 'James', 'Michelle',
-  'William', 'Ashley', 'Christopher', 'Amanda', 'Daniel', 'Stephanie', 'Matthew', 'Nicole'
-]
+  // User names for active users counter
+  const [userNames, setUserNames] = useState([
+    'Mike from Scottsdale', 'Sarah in Downtown', 'David in Scottsdale', 'Lisa in Scottsdale',
+    'Tom in Scottsdale', 'Jennifer in Scottsdale', 'Robert in Scottsdale', 'Amanda in Scottsdale',
+    'Chris in Scottsdale', 'Maria in Scottsdale', 'James in Scottsdale', 'Emily in Scottsdale'
+  ])
 
-export default function ScottsdaleArizonaPageClient() {
-  const [activeUsers, setActiveUsers] = useState(0)
-  const [isLoading, setIsLoading] = useState(true)
-
+  // Active users counter effect
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveUsers(prev => {
         const change = Math.floor(Math.random() * 3) - 1
-        const newCount = prev + change
-        return Math.max(18, Math.min(35, newCount))
+        const newValue = prev + change
+        return Math.max(25, Math.min(42, newValue))
       })
-    }, 3000)
-
-    const timer = setTimeout(() => setIsLoading(false), 1000)
-
-    return () => {
-      clearInterval(interval)
-      clearTimeout(timer)
-    }
+    }, 4000);
+    return () => clearInterval(interval)
   }, [])
 
-  if (isLoading) {
-    return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-        <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-blue-600"></div>
-      </div>
-    )
-  }
+  // Smart rotation of user names
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentUserIndex(prev => {
+        if (usedNames.size > userNames.length * 0.8) {
+          setUsedNames(new Set())
+        }
+        let attempts = 0
+        let nextIndex = prev
+        while (attempts < 50) {
+          nextIndex = (nextIndex + 1) % userNames.length
+          if (!usedNames.has(nextIndex)) {
+            setUsedNames(prev => new Set([...prev, nextIndex]));
+            return nextIndex
+          }
+          attempts++
+        }
+        const randomIndex = Math.floor(Math.random() * userNames.length)
+        setUsedNames(prev => new Set([...prev, randomIndex]));
+        return randomIndex
+      })
+    }, 5000);
+    return () => clearInterval(interval)
+  }, [userNames.length, usedNames])
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <>
       <Header />
-      <ZipCodeModalWrapper />
       
-      <main className="pt-16">
+      <div className="min-h-screen bg-warm-white">
+        {/* Breadcrumb Navigation */}
+        <nav className="bg-white border-b border-gray-200 py-3">
+          <div className="container mx-auto px-4">
+            <div className="flex items-center space-x-2 text-sm text-stone">
+              <Link href="/" className="hover:text-navy transition-colors">
+                Home
+              </Link>
+              <span>/</span>
+              <Link href="/vending-leads" className="hover:text-navy transition-colors">
+                Vending Leads
+              </Link>
+              <span>/</span>
+              <Link href={`/vending-leads/${stateDisplayName.toLowerCase().replace(/\s+/g, '-')}`} className="hover:text-navy transition-colors">
+                {stateDisplayName}
+              </Link>
+              <span>/</span>
+              <span className="text-charcoal font-medium">{cityDisplayName}</span>
+            </div>
+          </div>
+        </nav>
+
         {/* Hero Section */}
-        <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
+        <section className="relative py-20 bg-white overflow-hidden">
           <div className="container mx-auto px-4">
-            <SmartBreadcrumbs />
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="text-center max-w-4xl mx-auto"
-            >
-              <h1 className="text-4xl md:text-6xl font-bold mb-6">
-                Vending Machine Leads in {cityData.name}, {cityData.state}
-              </h1>
-              <p className="text-xl md:text-2xl mb-8 opacity-90">
-                Connect with {cityData.population} potential customers in {cityData.name}
-              </p>
-              <div className="flex flex-wrap justify-center gap-4 text-lg">
-                <div className="bg-white/20 backdrop-blur-sm rounded-lg px-6 py-3">
-                  <span className="font-semibold">{activeUsers}</span> active users
+            <div className="max-w-6xl mx-auto text-center">
+              {/* Active Users Counter */}
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                className="mt-6 sm:mt-8 p-4 bg-cream/50 backdrop-blur-sm rounded-2xl border border-gray-200 shadow-sm max-w-md mx-auto mb-6"
+              >
+                <div className="flex items-center justify-center gap-3">
+                  <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                  <span className="text-sm font-medium text-chocolate">
+                    <span className="font-bold text-coral">{activeUsers}</span> people are choosing plans right now
+                  </span>
+                </div></motion.div>
+
+              {/* Main Headline */}
+              <motion.h1 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                className="text-4xl md:text-6xl font-playfair font-bold text-charcoal mb-6 leading-tight"
+              >
+                Vending Machine Locations in{' '}
+                <span className="text-navy">{cityDisplayName}, {stateDisplayName}</span>
+              </motion.h1>
+
+              {/* City-Specific Value Proposition */}
+              <motion.p 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+                className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
+              >
+                Get pre-qualified vending machine locations in Scottsdale's affluent and thriving business economy. 
+                Access verified businesses with detailed contact information and placement opportunities.
+              </motion.p>
+
+              {/* Trust Signals */}
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.8 }}
+                className="mt-6 sm:mt-8 grid grid-cols-2 gap-4 max-w-md mx-auto mb-8"
+              >
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <CheckBadgeIcon className="h-5 w-5 text-green-600" />
+                    <span className="text-sm font-medium text-chocolate">Verified Locations</span>
+                  </div>
                 </div>
-                <div className="bg-white/20 backdrop-blur-sm rounded-lg px-6 py-3">
-                  <span className="font-semibold">{cityData.population}</span> population
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <StarIcon className="h-5 w-5 text-yellow-500" />
+                    <span className="text-sm font-medium text-chocolate">4.8/5 Rating</span>
+                  </div>
                 </div>
-                <div className="bg-white/20 backdrop-blur-sm rounded-lg px-6 py-3">
-                  <span className="font-semibold">24/7</span> lead updates
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <ShieldCheckIcon className="h-5 w-5 text-blue-600" />
+                    <span className="text-sm font-medium text-chocolate">Secure & Reliable</span>
+                  </div>
                 </div>
-              </div>
-            </motion.div>
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <ClockIcon className="h-5 w-5 text-purple-600" />
+                    <span className="text-sm font-medium text-chocolate">Quality Research</span>
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* CTA Buttons */}
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 1.0 }}
+                className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 mb-8"
+              >
+                <button 
+                    onClick={() => {
+                      const pricingSection = document.getElementById('pricing')
+                      if (pricingSection) {
+                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                      }
+                    }}
+                    className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
+                >
+                    Get Started
+                  </button>
+                <Link 
+                  href="/hot-leads"
+                  className="w-full sm:w-auto bg-transparent text-chocolate border-2 border-chocolate px-8 py-3 rounded-lg font-semibold hover:bg-chocolate hover:text-white transition-colors"
+                >
+                  View Hot Leads →
+                </Link>
+              </motion.div>
+
+{/* Social Proof Stats */}
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 1.2 }}
+                className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto"
+              >
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-navy">{cityData.population}</div>
+                  <div className="text-sm text-stone">Population</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-navy">{cityData.businesses}</div>
+                  <div className="text-sm text-stone">Businesses</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-navy">{cityData.industries}</div>
+                  <div className="text-sm text-stone">Industries</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-navy">{cityData.verifiedLocations}</div>
+                  <div className="text-sm text-stone">Verified Locations</div>
+                </div>
+              </motion.div>
+            </div>
           </div>
         </section>
 
-        {/* City Overview */}
+        {/* Pricing Section */}
+        <section id="pricing" className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
+              >
+                Get Access to Qualified Vending Machine Locations in {cityDisplayName}
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-lg text-stone max-w-3xl mx-auto"
+              >
+                Choose the perfect plan for your vending machine business needs and start accessing qualified locations today.
+              </motion.p>
+            </div>
+            <PricingTable />
+          </div>
+        </section>
+
+        {/* Business Landscape */}
         <section className="py-16 bg-white">
-          <div className="container mx-auto px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="max-w-4xl mx-auto"
-            >
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center">
-                Why {cityData.name}, {cityData.state}?
-              </h2>
-              <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-                {cityData.description}
-              </p>
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
+              >
+                Business Landscape in {cityDisplayName}
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-lg text-stone max-w-3xl mx-auto"
+              >
+                Discover the diverse industries and business opportunities that make {cityDisplayName} an ideal market for vending machines.
+              </motion.p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               
-              <div className="grid md:grid-cols-2 gap-8 mb-12">
-                <div>
-                  <h3 className="text-2xl font-semibold text-gray-900 mb-4">Key Industries</h3>
-                  <ul className="space-y-2">
-                    {cityData.keyIndustries.map((industry, index) => (
-                      <li key={index} className="flex items-center text-gray-700">
-                        <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
-                        {industry}
-                      </li>
-                    ))}
-                  </ul>
+              <motion.div
+                key="Tourism & Hospitality"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0 }}
+                viewport={{ once: true }}
+                className="bg-blue-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-blue-600 mb-4">
+                  <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
-                <div>
-                  <h3 className="text-2xl font-semibold text-gray-900 mb-4">Major Employers</h3>
-                  <ul className="space-y-2">
-                    {cityData.majorEmployers.map((employer, index) => (
-                      <li key={index} className="flex items-center text-gray-700">
-                        <span className="w-2 h-2 bg-green-600 rounded-full mr-3"></span>
-                        {employer}
-                      </li>
-                    ))}
-                  </ul>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Tourism & Hospitality</h3>
+                <p className="text-stone leading-relaxed">Scottsdale features luxury resorts, hotels, and entertainment venues with high foot traffic and affluent clientele.</p>
+              </motion.div>
+              <motion.div
+                key="Healthcare"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.1 }}
+                viewport={{ once: true }}
+                className="bg-green-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-green-600 mb-4">
+                  <AcademicCapIcon className="w-12 h-12" />
                 </div>
-              </div>
-
-              <div className="bg-gray-50 rounded-lg p-8">
-                <h3 className="text-2xl font-semibold text-gray-900 mb-6">Vending Opportunities</h3>
-                <div className="grid md:grid-cols-2 gap-4">
-                  {cityData.vendingOpportunities.map((opportunity, index) => (
-                    <div key={index} className="flex items-start">
-                      <span className="w-2 h-2 bg-blue-600 rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                      <span className="text-gray-700">{opportunity}</span>
-                    </div>
-                  ))}
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
+                <p className="text-stone leading-relaxed">Healthcare facilities in Scottsdale provide consistent patient populations and staff, creating ideal vending machine opportunities.</p>
+              </motion.div>
+              <motion.div
+                key="Technology"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="bg-purple-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-purple-600 mb-4">
+                  <CpuChipIcon className="w-12 h-12" />
                 </div>
-              </div>
-            </motion.div>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Technology</h3>
+                <p className="text-stone leading-relaxed">Scottsdale's technology sector offers large employee bases and extended operating hours, perfect for vending machine placement.</p>
+              </motion.div>
+              <motion.div
+                key="Retail"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="bg-orange-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-orange-600 mb-4">
+                  <ShoppingBagIcon className="w-12 h-12" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
+                <p className="text-stone leading-relaxed">High-end retail locations throughout Scottsdale provide affluent customer traffic and diverse demographics for vending machine success.</p>
+              </motion.div>
+              <motion.div
+                key="Real Estate"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                viewport={{ once: true }}
+                className="bg-indigo-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-indigo-600 mb-4">
+                  <BuildingOfficeIcon className="w-12 h-12" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Real Estate</h3>
+                <p className="text-stone leading-relaxed">Real estate offices in Scottsdale offer captive audiences during business hours with consistent daily traffic.</p>
+              </motion.div>
+              <motion.div
+                key="Financial Services"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.5 }}
+                viewport={{ once: true }}
+                className="bg-red-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-red-600 mb-4">
+                  <TruckIcon className="w-12 h-12" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Financial Services</h3>
+                <p className="text-stone leading-relaxed">Financial institutions in Scottsdale provide high-volume foot traffic and professional clientele.</p>
+              </motion.div>
+            </div>
           </div>
         </section>
 
-        {/* Demographics */}
-        <section className="py-16 bg-gray-50">
-          <div className="container mx-auto px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="max-w-4xl mx-auto"
-            >
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center">
-                {cityData.name} Demographics
-              </h2>
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div className="bg-white rounded-lg p-6 text-center shadow-sm">
-                  <div className="text-3xl font-bold text-blue-600 mb-2">{cityData.demographics.medianAge}</div>
-                  <div className="text-gray-600">Median Age</div>
-                </div>
-                <div className="bg-white rounded-lg p-6 text-center shadow-sm">
-                  <div className="text-3xl font-bold text-green-600 mb-2">{cityData.demographics.medianHouseholdIncome}</div>
-                  <div className="text-gray-600">Median Income</div>
-                </div>
-                <div className="bg-white rounded-lg p-6 text-center shadow-sm">
-                  <div className="text-3xl font-bold text-purple-600 mb-2">{cityData.demographics.educationLevel}</div>
-                  <div className="text-gray-600">Education Level</div>
-                </div>
-                <div className="bg-white rounded-lg p-6 text-center shadow-sm">
-                  <div className="text-3xl font-bold text-orange-600 mb-2">{cityData.demographics.employmentRate}</div>
-                  <div className="text-gray-600">Employment Rate</div>
-                </div>
-              </div>
-            </motion.div>
+        {/* Hot Leads Section */}
+        <section id="pricing" className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
+              >
+                One-Time Location Packages for {cityDisplayName}
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-lg text-stone max-w-3xl mx-auto"
+              >
+                Get immediate access to qualified vending machine locations without monthly commitments.
+              </motion.p>
+            </div>
+            <HotLeads />
           </div>
         </section>
 
-        {/* Transportation */}
+        {/* Vending Course Section */}
         <section className="py-16 bg-white">
-          <div className="container mx-auto px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="max-w-4xl mx-auto"
-            >
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center">
-                Transportation & Access
-              </h2>
-              <div className="grid md:grid-cols-3 gap-8">
-                <div className="text-center">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4">Major Highways</h3>
-                  <ul className="space-y-2">
-                    {cityData.transportation.majorHighways.map((highway, index) => (
-                      <li key={index} className="text-gray-700">{highway}</li>
-                    ))}
-                  </ul>
-                </div>
-                <div className="text-center">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4">Public Transit</h3>
-                  <p className="text-gray-700">{cityData.transportation.publicTransit}</p>
-                </div>
-                <div className="text-center">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4">Airports</h3>
-                  <p className="text-gray-700">{cityData.transportation.airports}</p>
-                </div>
-              </div>
-            </motion.div>
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
+              >
+                Learn the Vending Machine Business
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-lg text-stone max-w-3xl mx-auto"
+              >
+                Master the fundamentals of vending machine operations and maximize your success in {cityDisplayName}.
+              </motion.p>
+            </div>
+            <VendingCourse />
           </div>
         </section>
-
-        {/* Value Proposition */}
-        <section className="py-16 bg-blue-600 text-white">
-          <div className="container mx-auto px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="max-w-4xl mx-auto text-center"
-            >
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Ready to Expand Your Vending Business in {cityData.name}?
-              </h2>
-              <p className="text-xl mb-8 opacity-90">
-                Join {activeUsers} other vending operators who are already finding success in {cityData.name}, {cityData.state}
-              </p>
-              <div className="grid md:grid-cols-3 gap-6 mb-8">
-                <div className="bg-white/20 backdrop-blur-sm rounded-lg p-6">
-                  <h3 className="text-xl font-semibold mb-2">Verified Leads</h3>
-                  <p className="opacity-90">All leads are verified and updated daily</p>
-                </div>
-                <div className="bg-white/20 backdrop-blur-sm rounded-lg p-6">
-                  <h3 className="text-xl font-semibold mb-2">Local Focus</h3>
-                  <p className="opacity-90">Targeted specifically for {cityData.name} area</p>
-                </div>
-                <div className="bg-white/20 backdrop-blur-sm rounded-lg p-6">
-                  <h3 className="text-xl font-semibold mb-2">24/7 Access</h3>
-                  <p className="opacity-90">Access your leads anytime, anywhere</p>
-                </div>
-              </div>
-            </motion.div>
-          </div>
-        </section>
-
-        {/* Pricing */}
-        <PricingTable />
-
-        {/* Hot Leads */}
-        <HotLeads />
-
-        {/* Vending Course */}
-        <VendingCourse />
 
         {/* FAQ Section */}
-        <section className="py-16 bg-gray-50">
-          <div className="container mx-auto px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="max-w-4xl mx-auto"
-            >
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center">
+        <section id="pricing" className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
+              >
                 Frequently Asked Questions
-              </h2>
-              <div className="space-y-6">
-                <div className="bg-white rounded-lg p-6 shadow-sm">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                    What types of vending opportunities are available in {cityData.name}?
-                  </h3>
-                  <p className="text-gray-700">
-                    {cityData.name} offers premium vending opportunities including luxury resorts, high-end shopping centers, 
-                    healthcare facilities, technology companies, and corporate offices. The city's affluent demographics 
-                    and strong tourism industry provide excellent potential for high-value vending machine placement.
-                  </p>
-                </div>
-                <div className="bg-white rounded-lg p-6 shadow-sm">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                    How do I get started with vending in {cityData.name}?
-                  </h3>
-                  <p className="text-gray-700">
-                    Start by researching local businesses and institutions in {cityData.name}. 
-                    Focus on areas with high foot traffic like luxury resorts, shopping centers, and business parks. 
-                    Our vending leads service can help you identify the best opportunities in the area.
-                  </p>
-                </div>
-                <div className="bg-white rounded-lg p-6 shadow-sm">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                    What are the key factors for success in {cityData.name}?
-                  </h3>
-                  <p className="text-gray-700">
-                    Success in {cityData.name} requires understanding the local market, building relationships with 
-                    business owners, and providing reliable service. The city's affluent demographics and strong 
-                    tourism and healthcare sectors offer stable, high-value vending opportunities for operators who deliver quality service.
-                  </p>
-                </div>
-              </div>
-            </motion.div>
+              </motion.h2>
+              <motion.p 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-lg text-chocolate/70 leading-relaxed"
+              >
+                Everything you need to know about vending machine opportunities in {cityDisplayName}.
+              </motion.p>
+            </div>
+            
+            <div className="space-y-6">
+              
+              <motion.div
+                key="0"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+              >
+                <h3 className="text-lg font-semibold text-charcoal mb-3">What types of vending machine locations are available in Scottsdale?</h3>
+                <p className="text-stone leading-relaxed">Scottsdale offers diverse vending opportunities including luxury resorts, high-end retail centers, healthcare facilities, technology companies, financial institutions, and entertainment venues. Each location is pre-verified for optimal vending machine success.</p>
+              </motion.div>
+              <motion.div
+                key="1"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.1 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+              >
+                <h3 className="text-lg font-semibold text-charcoal mb-3">How quickly can I get vending machine leads for Scottsdale?</h3>
+                <p className="text-stone leading-relaxed">Our Scottsdale vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.</p>
+              </motion.div>
+              <motion.div
+                key="2"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+              >
+                <h3 className="text-lg font-semibold text-charcoal mb-3">What makes Scottsdale a good market for vending machines?</h3>
+                <p className="text-stone leading-relaxed">Scottsdale features an affluent business community with diverse industries, high disposable income, and consistent foot traffic. The city's luxury market and business-friendly environment create ideal conditions for vending machine success.</p>
+              </motion.div>
+              <motion.div
+                key="3"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+              >
+                <h3 className="text-lg font-semibold text-charcoal mb-3">Do you provide ongoing support for Scottsdale locations?</h3>
+                <p className="text-stone leading-relaxed">Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Scottsdale.</p>
+              </motion.div>
+              <motion.div
+                key="4"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+              >
+                <h3 className="text-lg font-semibold text-charcoal mb-3">What industries in Scottsdale are best for vending machines?</h3>
+                <p className="text-stone leading-relaxed">Tourism & hospitality, healthcare, technology, retail, real estate, and financial services sectors in Scottsdale show the highest potential for vending machine success due to consistent foot traffic and affluent clientele.</p>
+              </motion.div>
+              <motion.div
+                key="5"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.5 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+              >
+                <h3 className="text-lg font-semibold text-charcoal mb-3">How do you verify the quality of Scottsdale vending locations?</h3>
+                <p className="text-stone leading-relaxed">We conduct thorough research on each Scottsdale location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.</p>
+              </motion.div>
+              <motion.div
+                key="6"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+              >
+                <h3 className="text-lg font-semibold text-charcoal mb-3">Can I get customized vending leads for specific areas of Scottsdale?</h3>
+                <p className="text-stone leading-relaxed">Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or luxury areas within Scottsdale based on your preferences and target market requirements.</p>
+              </motion.div>
+              <motion.div
+                key="7"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.7 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+              >
+                <h3 className="text-lg font-semibold text-charcoal mb-3">What's the typical ROI for vending machines in Scottsdale?</h3>
+                <p className="text-stone leading-relaxed">Vending machines in Scottsdale typically show strong ROI due to the city's affluent demographics and consistent traffic patterns. Our research shows average payback periods of 10-15 months for well-placed machines.</p>
+              </motion.div>
+            </div>
           </div>
         </section>
-      </main>
 
+      </div>
+      
       <Footer />
-    </div>
+      <ZipCodeModalWrapper />
+    </>
   )
 }

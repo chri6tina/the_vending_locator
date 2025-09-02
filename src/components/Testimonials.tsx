@@ -33,9 +33,9 @@ const testimonials = [
   },
 ]
 
-export default function Testimonials() {
+export default function Testimonials({ compact = false }: { compact?: boolean }) {
   return (
-    <div className="bg-white py-16 sm:py-24 lg:py-32">
+    <div className={`bg-white ${compact ? 'py-10 sm:py-12 lg:py-14' : 'py-16 sm:py-24 lg:py-32'}`}>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-xl text-center">
           <motion.h2
@@ -62,7 +62,7 @@ export default function Testimonials() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
           viewport={{ once: true }}
-          className="mx-auto mt-12 sm:mt-16 flow-root max-w-2xl sm:mt-20 lg:mx-0 lg:max-w-none"
+          className={`mx-auto ${compact ? 'mt-8 sm:mt-10' : 'mt-12 sm:mt-16 sm:mt-20'} flow-root max-w-2xl lg:mx-0 lg:max-w-none`}
         >
           <div className="grid grid-cols-1 gap-6 sm:gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {testimonials.map((testimonial, testimonialIdx) => (
@@ -96,7 +96,7 @@ export default function Testimonials() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
           viewport={{ once: true }}
-          className="mt-12 sm:mt-16 text-center px-4 sm:px-0"
+          className={`${compact ? 'mt-6 sm:mt-8' : 'mt-12 sm:mt-16'} text-center px-4 sm:px-0`}
         >
           <p className="text-sm sm:text-base text-chocolate/70">
             Ready to join thousands of successful vending operators?{' '}

@@ -11,19 +11,19 @@ import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function PhoenixArizonaVendingLeadsPage() {
+export default function ChandlerArizonaVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Phoenix';
+  const cityDisplayName = 'Chandler';
   const stateDisplayName = 'Arizona';
   
   // City-specific data
   const cityData = {
-  'name': 'Phoenix',
+  'name': 'Chandler',
   'state': 'Arizona',
-  'population': '50K-100K',
-  'businesses': '5K-10K',
+  'population': '275,987',
+  'businesses': '15K-25K',
   'industries': '8-12',
-  'verifiedLocations': '100-200',
+  'verifiedLocations': '200-400',
   'rating': '4.8/5',
   'description': 'Thriving business community in Arizona'
 };
@@ -35,9 +35,9 @@ export default function PhoenixArizonaVendingLeadsPage() {
 
   // User names for active users counter
   const [userNames, setUserNames] = useState([
-    'Mike from Phoenix', 'Sarah in Downtown', 'David in Phoenix', 'Lisa in Phoenix',
-    'Tom in Phoenix', 'Jennifer in Phoenix', 'Robert in Phoenix', 'Amanda in Phoenix',
-    'Chris in Phoenix', 'Maria in Phoenix', 'James in Phoenix', 'Emily in Phoenix'
+    'Mike from Chandler', 'Sarah in Downtown', 'David in Chandler', 'Lisa in Chandler',
+    'Tom in Chandler', 'Jennifer in Chandler', 'Robert in Chandler', 'Amanda in Chandler',
+    'Chris in Chandler', 'Maria in Chandler', 'James in Chandler', 'Emily in Chandler'
   ])
 
   // Active users counter effect
@@ -139,7 +139,7 @@ export default function PhoenixArizonaVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Get pre-qualified vending machine locations in Phoenix's diverse and growing business economy. 
+                Get pre-qualified vending machine locations in Chandler's thriving technology and business economy. 
                 Access verified businesses with detailed contact information and placement opportunities.
               </motion.p>
 
@@ -284,7 +284,7 @@ export default function PhoenixArizonaVendingLeadsPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               
               <motion.div
-                key="Healthcare"
+                key="Technology"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0 }}
@@ -294,11 +294,11 @@ export default function PhoenixArizonaVendingLeadsPage() {
                 <div className="text-blue-600 mb-4">
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Phoenix features modern healthcare facilities including hospitals, clinics, and medical offices with high foot traffic and stable operations.</p>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Technology</h3>
+                <p className="text-stone leading-relaxed">Chandler features major technology companies and innovation centers with high employee populations and consistent foot traffic.</p>
               </motion.div>
               <motion.div
-                key="Education"
+                key="Healthcare"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.1 }}
@@ -308,11 +308,11 @@ export default function PhoenixArizonaVendingLeadsPage() {
                 <div className="text-green-600 mb-4">
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Educational institutions in Phoenix provide consistent student populations and staff, creating ideal vending machine opportunities.</p>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
+                <p className="text-stone leading-relaxed">Healthcare facilities in Chandler provide consistent patient populations and staff, creating ideal vending machine opportunities.</p>
               </motion.div>
               <motion.div
-                key="Manufacturing"
+                key="Education"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
@@ -322,25 +322,25 @@ export default function PhoenixArizonaVendingLeadsPage() {
                 <div className="text-purple-600 mb-4">
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Phoenix's manufacturing sector offers large employee bases and extended operating hours, perfect for vending machine placement.</p>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
+                <p className="text-stone leading-relaxed">Educational institutions in Chandler offer large student populations and extended operating hours, perfect for vending machine placement.</p>
               </motion.div>
               <motion.div
-                key="Retail"
+                key="Manufacturing"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.30000000000000004 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
                 viewport={{ once: true }}
                 className="bg-orange-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
                 <div className="text-orange-600 mb-4">
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Retail locations throughout Phoenix provide high customer traffic and diverse demographics for vending machine success.</p>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
+                <p className="text-stone leading-relaxed">Manufacturing facilities throughout Chandler provide high employee traffic and diverse demographics for vending machine success.</p>
               </motion.div>
               <motion.div
-                key="Office Buildings"
+                key="Retail"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
@@ -350,11 +350,11 @@ export default function PhoenixArizonaVendingLeadsPage() {
                 <div className="text-indigo-600 mb-4">
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Professional office spaces in Phoenix offer captive audiences during business hours with consistent daily traffic.</p>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
+                <p className="text-stone leading-relaxed">Retail centers in Chandler offer captive audiences during business hours with consistent daily traffic.</p>
               </motion.div>
               <motion.div
-                key="Transportation"
+                key="Financial Services"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.5 }}
@@ -364,8 +364,8 @@ export default function PhoenixArizonaVendingLeadsPage() {
                 <div className="text-red-600 mb-4">
                   <TruckIcon className="w-12 h-12" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Phoenix's transportation hubs including airports, bus stations, and transit centers provide high-volume foot traffic.</p>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Financial Services</h3>
+                <p className="text-stone leading-relaxed">Financial institutions in Chandler provide high-volume foot traffic and professional clientele.</p>
               </motion.div>
             </div>
           </div>
@@ -459,8 +459,8 @@ export default function PhoenixArizonaVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What types of vending machine locations are available in Phoenix?</h3>
-                <p className="text-stone leading-relaxed">Phoenix offers diverse vending opportunities including healthcare facilities, educational institutions, manufacturing plants, retail locations, office buildings, and transportation hubs. Each location is pre-verified for optimal vending machine success.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">What types of vending machine locations are available in Chandler?</h3>
+                <p className="text-stone leading-relaxed">Chandler offers diverse vending opportunities including technology companies, healthcare facilities, educational institutions, manufacturing facilities, retail centers, and financial services. Each location is pre-verified for optimal vending machine success.</p>
               </motion.div>
               <motion.div
                 key="1"
@@ -470,8 +470,8 @@ export default function PhoenixArizonaVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">How quickly can I get vending machine leads for Phoenix?</h3>
-                <p className="text-stone leading-relaxed">Our Phoenix vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">How quickly can I get vending machine leads for Chandler?</h3>
+                <p className="text-stone leading-relaxed">Our Chandler vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.</p>
               </motion.div>
               <motion.div
                 key="2"
@@ -481,19 +481,19 @@ export default function PhoenixArizonaVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What makes Phoenix a good market for vending machines?</h3>
-                <p className="text-stone leading-relaxed">Phoenix features a strong business community with diverse industries, stable employment, and consistent foot traffic. The city's economic growth and business-friendly environment create ideal conditions for vending machine success.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">What makes Chandler a good market for vending machines?</h3>
+                <p className="text-stone leading-relaxed">Chandler features a thriving business community with diverse industries, strong technology sector, and consistent foot traffic. The city's economic growth and business-friendly environment create ideal conditions for vending machine success.</p>
               </motion.div>
               <motion.div
                 key="3"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.30000000000000004 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">Do you provide ongoing support for Phoenix locations?</h3>
-                <p className="text-stone leading-relaxed">Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Phoenix.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">Do you provide ongoing support for Chandler locations?</h3>
+                <p className="text-stone leading-relaxed">Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Chandler.</p>
               </motion.div>
               <motion.div
                 key="4"
@@ -503,8 +503,8 @@ export default function PhoenixArizonaVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What industries in Phoenix are best for vending machines?</h3>
-                <p className="text-stone leading-relaxed">Healthcare, education, manufacturing, retail, office buildings, and transportation sectors in Phoenix show the highest potential for vending machine success due to consistent foot traffic and captive audiences.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">What industries in Chandler are best for vending machines?</h3>
+                <p className="text-stone leading-relaxed">Technology, healthcare, education, manufacturing, retail, and financial services sectors in Chandler show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.</p>
               </motion.div>
               <motion.div
                 key="5"
@@ -514,30 +514,30 @@ export default function PhoenixArizonaVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">How do you verify the quality of Phoenix vending locations?</h3>
-                <p className="text-stone leading-relaxed">We conduct thorough research on each Phoenix location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">How do you verify the quality of Chandler vending locations?</h3>
+                <p className="text-stone leading-relaxed">We conduct thorough research on each Chandler location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.</p>
               </motion.div>
               <motion.div
                 key="6"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.6000000000000001 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">Can I get customized vending leads for specific areas of Phoenix?</h3>
-                <p className="text-stone leading-relaxed">Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Phoenix based on your preferences and target market requirements.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">Can I get customized vending leads for specific areas of Chandler?</h3>
+                <p className="text-stone leading-relaxed">Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or technology parks within Chandler based on your preferences and target market requirements.</p>
               </motion.div>
               <motion.div
                 key="7"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.7000000000000001 }}
+                transition={{ duration: 0.8, delay: 0.7 }}
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What's the typical ROI for vending machines in Phoenix?</h3>
-                <p className="text-stone leading-relaxed">Vending machines in Phoenix typically show strong ROI due to the city's business density and consistent traffic patterns. Our research shows average payback periods of 12-18 months for well-placed machines.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">What's the typical ROI for vending machines in Chandler?</h3>
+                <p className="text-stone leading-relaxed">Vending machines in Chandler typically show strong ROI due to the city's business density and consistent traffic patterns. Our research shows average payback periods of 10-15 months for well-placed machines.</p>
               </motion.div>
             </div>
           </div>

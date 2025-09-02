@@ -8,7 +8,7 @@ const navigation = [
   { name: 'Home', href: '/' },
   { name: 'Vending Leads', href: '/vending-leads' },
   { name: 'Pricing', href: '/pricing' },
-  { name: 'Guide', href: '/guide/how-to-start-a-vending-machine-business' },
+  { name: 'Guide', href: '/guide' },
   { name: 'Hot Leads', href: '/hot-leads' },
 ]
 

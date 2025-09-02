@@ -1,4 +1,5 @@
 import { MetadataRoute } from 'next'
+import states from '@/data/states'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   // Main pages
@@ -11,7 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   { url: 'https://www.thevendinglocator.com/hot-leads', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
   { url: 'https://www.thevendinglocator.com/vending-leads', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.9 },
   { url: 'https://www.thevendinglocator.com/vending-locations', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
-  { url: 'https://www.thevendinglocator.com/guide/how-to-start-a-vending-machine-business', lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.7 },
+  { url: 'https://www.thevendinglocator.com/guide', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.9 },
   { url: 'https://www.thevendinglocator.com/terms-of-service', lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.6 },
   ]
 
@@ -147,6 +148,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: 'https://www.thevendinglocator.com/vending-leads/tucson-arizona', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/vending-leads/scottsdale-arizona', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/vending-leads/tempe-arizona', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/peoria-arizona', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/surprise-arizona', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/vending-leads/charlotte-north-carolina', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/vending-leads/orlando-florida', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/vending-leads/lakewood-colorado', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
@@ -342,6 +345,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: 'https://www.thevendinglocator.com/vending-leads/south-bend-indiana', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
   ]
 
+  // Dynamic city guides (how-to-start-a-vending-machine-business/[slug])
+  const cityGuidePages = states.flatMap(state =>
+    state.cities.map(city => ({
+      url: `https://www.thevendinglocator.com/how-to-start-a-vending-machine-business/${city.slug}`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.8,
+    }))
+  )
+
   // Blog posts
   const blogPosts = [
     { url: 'https://www.thevendinglocator.com/blog/vending-machine-business-guide', lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.6 },
@@ -365,6 +378,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...mainPages,
     ...statePages,
     ...cityPages,
+    ...cityGuidePages,
     ...blogPosts,
     ...vendingCompanyPages,
     ...checkoutPages,

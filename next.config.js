@@ -19,6 +19,11 @@ const nextConfig = {
         destination: '/vending-leads/new-york',
         permanent: true, // 301 redirect for SEO
       },
+      {
+        source: '/guide/:slug',
+        destination: '/how-to-start-a-vending-machine-business/:slug',
+        permanent: true,
+      },
     ];
   },
   /* config options here */

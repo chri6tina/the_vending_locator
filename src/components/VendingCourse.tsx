@@ -2,29 +2,29 @@
 
 import { ArrowRightIcon, StarIcon } from '@heroicons/react/24/outline'
 
-export default function VendingCourse() {
+export default function VendingCourse({ compact = false }: { compact?: boolean }) {
   return (
-    <div className="bg-gradient-to-br from-warm-white to-white py-16 sm:py-24">
+    <div className={`bg-gradient-to-br from-warm-white to-white ${compact ? 'py-10 sm:py-12' : 'py-16 sm:py-24'}`}>
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
         
         {/* Enhanced Guide Section - Clean but Engaging */}
-        <div className="text-center mb-16">
-          <div className="bg-white rounded-2xl shadow-lg border border-gray-200 p-8 sm:p-12 relative overflow-hidden">
+        <div className={`text-center ${compact ? 'mb-8' : 'mb-16'}`}>
+          <div className={`bg-white rounded-2xl shadow-lg border border-gray-200 ${compact ? 'p-6 sm:p-8' : 'p-8 sm:p-12'} relative overflow-hidden`}>
             {/* Subtle background accent */}
             <div className="absolute top-0 right-0 w-24 h-24 bg-navy/5 rounded-full -translate-y-12 translate-x-12"></div>
             
             <div className="relative z-10">
               {/* Subtle badge */}
-              <div className="inline-flex items-center px-3 py-1.5 bg-navy/10 text-navy rounded-full text-sm font-medium mb-6 border border-navy/20">
+              <div className={`inline-flex items-center px-3 py-1.5 bg-navy/10 text-navy rounded-full text-sm font-medium ${compact ? 'mb-4' : 'mb-6'} border border-navy/20`}>
                 <StarIcon className="w-4 h-4 mr-2" />
                 Bestseller Guide
               </div>
               
-              <h2 className="text-2xl sm:text-3xl font-playfair font-bold text-charcoal mb-6">
+              <h2 className={`text-2xl sm:text-3xl font-playfair font-bold text-charcoal ${compact ? 'mb-4' : 'mb-6'}`}>
                 Master Vending Machine Success in 2025
               </h2>
               
-              <p className="text-lg text-stone mb-8 leading-relaxed max-w-2xl mx-auto">
+              <p className={`text-lg text-stone ${compact ? 'mb-6' : 'mb-8'} leading-relaxed max-w-2xl mx-auto`}>
                 Get our comprehensive guide: <span className="font-semibold">"How to Start a Vending Machine Company in 2025"</span> with scripts, legal templates, and supplier discounts.
               </p>
               
@@ -39,7 +39,7 @@ export default function VendingCourse() {
                 <ArrowRightIcon className="h-4 w-4" />
               </a>
               
-              <p className="text-sm text-stone/60 mt-4">
+              <p className={`text-sm text-stone/60 ${compact ? 'mt-3' : 'mt-4'}`}>
                 Instant digital download • Lifetime access • 30-day guarantee
               </p>
             </div>
@@ -47,9 +47,9 @@ export default function VendingCourse() {
         </div>
 
         {/* Success Graph Section */}
-        <div className="mx-auto max-w-4xl px-4 mb-16">
-          <div className="text-center mb-12">
-            <h3 className="text-2xl sm:text-3xl font-playfair font-bold text-charcoal mb-4">
+        <div className={`mx-auto max-w-4xl px-4 ${compact ? 'mb-10' : 'mb-16'}`}>
+          <div className={`text-center ${compact ? 'mb-8' : 'mb-12'}`}>
+            <h3 className={`text-2xl sm:text-3xl font-playfair font-bold text-charcoal ${compact ? 'mb-3' : 'mb-4'}`}>
               Our Success Story
             </h3>
             <p className="text-lg text-stone/70">
@@ -58,7 +58,7 @@ export default function VendingCourse() {
           </div>
 
           {/* Enhanced Graph Container */}
-          <div className="bg-white rounded-2xl shadow-lg border border-gray-200 p-6 sm:p-8 overflow-hidden">
+          <div className={`bg-white rounded-2xl shadow-lg border border-gray-200 ${compact ? 'p-5 sm:p-6' : 'p-6 sm:p-8'} overflow-hidden`}>
             <div className="overflow-x-auto">
               <div className="flex items-end justify-between h-48 sm:h-64 mb-6 px-2 sm:px-4 min-w-[600px] sm:min-w-0">
                 {/* Graph Bars with subtle gradients */}
@@ -104,11 +104,11 @@ export default function VendingCourse() {
 
         {/* Enhanced Final CTA */}
         <div className="text-center">
-          <div className="bg-gradient-to-r from-navy to-navy-light rounded-2xl p-8 text-white shadow-lg">
-            <h3 className="text-2xl sm:text-3xl font-playfair font-bold mb-4">
+          <div className={`bg-gradient-to-r from-navy to-navy-light rounded-2xl ${compact ? 'p-6' : 'p-8'} text-white shadow-lg`}>
+            <h3 className={`text-2xl sm:text-3xl font-playfair font-bold ${compact ? 'mb-3' : 'mb-4'}`}>
               Ready to Start Your Vending Business?
             </h3>
-            <p className="text-lg mb-6 opacity-90">
+            <p className={`text-lg ${compact ? 'mb-5' : 'mb-6'} opacity-90`}>
               Get access to qualified locations and comprehensive business resources
             </p>
             <button
