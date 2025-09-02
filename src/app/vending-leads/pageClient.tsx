@@ -297,9 +297,12 @@ const states = [
     name: 'New Jersey',
     slug: 'new-jersey',
     cities: [
+      { name: 'Elizabeth', slug: 'elizabeth-new-jersey' },
+      { name: 'Edison', slug: 'edison-new-jersey' },
       { name: 'Jersey City', slug: 'jersey-city-new-jersey' },
       { name: 'Newark', slug: 'newark-new-jersey' },
-      { name: 'Paterson', slug: 'paterson-new-jersey' }
+      { name: 'Paterson', slug: 'paterson-new-jersey' },
+      { name: 'Woodbridge', slug: 'woodbridge-new-jersey' }
     ]
   },
   {

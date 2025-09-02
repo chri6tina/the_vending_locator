@@ -276,9 +276,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: 'https://www.thevendinglocator.com/vending-leads/cicero-illinois', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/vending-leads/schaumburg-illinois', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     // New Jersey cities
+    { url: 'https://www.thevendinglocator.com/vending-leads/elizabeth-new-jersey', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/edison-new-jersey', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/vending-leads/jersey-city-new-jersey', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/vending-leads/newark-new-jersey', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/vending-leads/paterson-new-jersey', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/woodbridge-new-jersey', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/vending-leads/springfield-massachusetts', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/vending-leads/worcester-massachusetts', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/vending-leads/pittsburgh-pennsylvania', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
