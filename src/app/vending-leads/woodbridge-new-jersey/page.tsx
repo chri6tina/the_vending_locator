@@ -32,6 +32,8 @@ export const metadata: Metadata = {
   }
 }
 
+import PageClient from './pageClient'
+
 export default function WoodbridgeNewJerseyVendingLeadsPage() {
-  return null
+  return <PageClient />
 }
