@@ -425,18 +425,21 @@ const states = [
     slug: 'south-dakota',
     cities: []
   },
-  {
-    name: 'Tennessee',
-    slug: 'tennessee',
-    cities: [
-      { name: 'Chattanooga', slug: 'chattanooga-tennessee' },
-      { name: 'Clarksville', slug: 'clarksville-tennessee' },
-      { name: 'Knoxville', slug: 'knoxville-tennessee' },
-      { name: 'Memphis', slug: 'memphis-tennessee' },
-      { name: 'Murfreesboro', slug: 'murfreesboro-tennessee' },
-      { name: 'Nashville', slug: 'nashville-tennessee' }
-    ]
-  },
+          {
+          name: 'Tennessee',
+          slug: 'tennessee',
+          cities: [
+            { name: 'Chattanooga', slug: 'chattanooga-tennessee' },
+            { name: 'Clarksville', slug: 'clarksville-tennessee' },
+            { name: 'Franklin', slug: 'franklin-tennessee' },
+            { name: 'Jackson', slug: 'jackson-tennessee' },
+            { name: 'Johnson City', slug: 'johnson-city-tennessee' },
+            { name: 'Knoxville', slug: 'knoxville-tennessee' },
+            { name: 'Memphis', slug: 'memphis-tennessee' },
+            { name: 'Murfreesboro', slug: 'murfreesboro-tennessee' },
+            { name: 'Nashville', slug: 'nashville-tennessee' }
+          ]
+        },
   {
     name: 'Texas',
     slug: 'texas',

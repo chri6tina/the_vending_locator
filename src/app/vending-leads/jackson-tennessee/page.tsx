@@ -1,0 +1,37 @@
+import { Metadata } from 'next'
+import PageClient from './pageClient'
+
+export const metadata: Metadata = {
+  title: 'Vending Machine Leads in Jackson, Tennessee | The Vending Locator',
+  description: 'Find high-quality vending machine leads in Jackson, Tennessee. Connect with businesses looking for vending services in Jackson and surrounding areas.',
+  keywords: 'vending machine leads, Jackson Tennessee, vending opportunities, business leads, vending machine locations',
+  canonical: 'https://www.thevendinglocator.com/vending-leads/jackson-tennessee',
+  openGraph: {
+    title: 'Vending Machine Leads in Jackson, Tennessee | The Vending Locator',
+    description: 'Find high-quality vending machine leads in Jackson, Tennessee. Connect with businesses looking for vending services in Jackson and surrounding areas.',
+    url: 'https://www.thevendinglocator.com/vending-leads/jackson-tennessee',
+    siteName: 'The Vending Locator',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Vending Machine Leads in Jackson, Tennessee | The Vending Locator',
+    description: 'Find high-quality vending machine leads in Jackson, Tennessee. Connect with businesses looking for vending services in Jackson and surrounding areas.',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+}
+
+export default function JacksonTennesseePage() {
+  return <PageClient />
+}
