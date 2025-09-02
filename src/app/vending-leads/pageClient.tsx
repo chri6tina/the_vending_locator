@@ -296,7 +296,11 @@ const states = [
   {
     name: 'New Jersey',
     slug: 'new-jersey',
-    cities: []
+    cities: [
+      { name: 'Jersey City', slug: 'jersey-city-new-jersey' },
+      { name: 'Newark', slug: 'newark-new-jersey' },
+      { name: 'Paterson', slug: 'paterson-new-jersey' }
+    ]
   },
   {
     name: 'New Mexico',
