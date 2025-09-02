@@ -119,9 +119,17 @@ const states = [
     name: 'Georgia',
     slug: 'georgia',
     cities: [
+      { name: 'Albany', slug: 'albany-georgia' },
+      { name: 'Athens', slug: 'athens-georgia' },
       { name: 'Atlanta', slug: 'atlanta-georgia' },
       { name: 'Augusta', slug: 'augusta-georgia' },
-      { name: 'Savannah', slug: 'savannah-georgia' }
+      { name: 'Columbus', slug: 'columbus-georgia' },
+      { name: 'Macon', slug: 'macon-georgia' },
+      { name: 'Marietta', slug: 'marietta-georgia' },
+      { name: 'Roswell', slug: 'roswell-georgia' },
+      { name: 'Sandy Springs', slug: 'sandy-springs-georgia' },
+      { name: 'Savannah', slug: 'savannah-georgia' },
+      { name: 'Warner Robins', slug: 'warner-robins-georgia' }
     ]
   },
   {
@@ -295,7 +303,16 @@ const states = [
     name: 'New York',
     slug: 'new-york',
     cities: [
-      { name: 'New York', slug: 'new-york-new-york' }
+      { name: 'Albany', slug: 'albany-new-york' },
+      { name: 'Binghamton', slug: 'binghamton-new-york' },
+      { name: 'Buffalo', slug: 'buffalo-new-york' },
+      { name: 'New York', slug: 'new-york-new-york' },
+      { name: 'Rochester', slug: 'rochester-new-york' },
+      { name: 'Schenectady', slug: 'schenectady-new-york' },
+      { name: 'Syracuse', slug: 'syracuse-new-york' },
+      { name: 'Troy', slug: 'troy-new-york' },
+      { name: 'Utica', slug: 'utica-new-york' },
+      { name: 'Yonkers', slug: 'yonkers-new-york' }
     ]
   },
   {

@@ -1,0 +1,336 @@
+'use client'
+
+import { useState, useEffect } from 'react'
+import { motion } from 'framer-motion'
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
+import PricingTable from '@/components/PricingTable'
+import HotLeads from '@/components/HotLeads'
+import VendingCourse from '@/components/VendingCourse'
+import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
+import SmartBreadcrumbs from '@/components/SmartBreadcrumbs'
+
+export default function MariettaGeorgiaVendingLeadsPage() {
+  const cityDisplayName = 'Marietta';
+  const stateDisplayName = 'Georgia';
+  
+  const cityData = {
+    'name': 'Marietta',
+    'state': 'Georgia',
+    'population': '100K-200K',
+    'businesses': '10K-15K',
+    'industries': '12-15',
+    'verifiedLocations': '200-300',
+    'rating': '4.8/5',
+    'description': 'Diverse business community with strong retail sector'
+  };
+
+  const userNames = [
+    'Sarah M.',
+    'Michael T.',
+    'Jennifer L.',
+    'David R.',
+    'Amanda K.',
+    'Robert P.',
+    'Lisa W.',
+    'James H.',
+    'Michelle B.',
+    'Thomas S.'
+  ];
+
+  const [activeUsers, setActiveUsers] = useState(0);
+  const [expandedStates, setExpandedStates] = useState<string[]>([]);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveUsers(prev => {
+        const change = Math.floor(Math.random() * 3) - 1;
+        return Math.max(0, Math.min(100, prev + change));
+      });
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const toggleState = (stateName: string) => {
+    setExpandedStates(prev => 
+      prev.includes(stateName) 
+        ? prev.filter(name => name !== stateName)
+        : [...prev, stateName]
+    );
+  };
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+      <ZipCodeModalWrapper>
+        <Header />
+        
+        <main className="container mx-auto px-4 py-8">
+          <SmartBreadcrumbs 
+            items={[
+              { name: 'Home', href: '/' },
+              { name: 'Vending Leads', href: '/vending-leads' },
+              { name: 'Georgia', href: '/vending-leads/georgia' },
+              { name: 'Marietta', href: '/vending-leads/marietta-georgia' }
+            ]}
+          />
+
+          {/* Hero Section */}
+          <section className="text-center py-16 bg-gradient-to-r from-blue-600 to-purple-700 rounded-2xl mb-12">
+            <motion.h1 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="text-4xl md:text-6xl font-bold text-white mb-6"
+            >
+              Vending Machine Locations in {cityDisplayName}, {stateDisplayName}
+            </motion.h1>
+            <motion.p 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto"
+            >
+              Get pre-qualified vending machine locations in {cityDisplayName}'s diverse business community. 
+              Access verified businesses with detailed contact information and placement opportunities.
+            </motion.p>
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+            >
+              <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
+                Get Started Today
+              </button>
+              <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
+                View Pricing
+              </button>
+            </motion.div>
+          </section>
+
+          {/* Pricing Table */}
+          <PricingTable />
+
+          {/* Trust Signals */}
+          <section className="text-center py-12">
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8"
+            >
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <div className="text-3xl font-bold text-blue-600 mb-2">{cityData.verifiedLocations}+</div>
+                <div className="text-gray-600">Verified Locations</div>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <div className="text-3xl font-bold text-blue-600 mb-2">{cityData.businesses}+</div>
+                <div className="text-gray-600">Businesses</div>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <div className="text-3xl font-bold text-blue-600 mb-2">{cityData.rating}</div>
+                <div className="text-gray-600">Customer Rating</div>
+              </div>
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <div className="text-3xl font-bold text-blue-600 mb-2">{activeUsers}</div>
+                <div className="text-gray-600">Active Users</div>
+              </div>
+            </motion.div>
+          </section>
+
+          {/* City Statistics */}
+          <section className="bg-white rounded-2xl p-8 mb-12 shadow-lg">
+            <motion.h2 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="text-3xl font-bold text-center mb-8 text-gray-800"
+            >
+              {cityDisplayName} Business Landscape
+            </motion.h2>
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+            >
+              <div className="text-center">
+                <div className="text-2xl font-bold text-blue-600 mb-2">{cityData.population}</div>
+                <div className="text-gray-600">Population</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-blue-600 mb-2">{cityData.businesses}</div>
+                <div className="text-gray-600">Businesses</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-blue-600 mb-2">{cityData.industries}</div>
+                <div className="text-gray-600">Industries</div>
+              </div>
+              <div className="text-center">
+                <div className="text-2xl font-bold text-blue-600 mb-2">{cityData.verifiedLocations}</div>
+                <div className="text-gray-600">Verified Locations</div>
+              </div>
+            </motion.div>
+          </section>
+
+          {/* Business Landscape */}
+          <section className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-8 mb-12">
+            <motion.h2 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="text-3xl font-bold text-center mb-8 text-gray-800"
+            >
+              Why {cityDisplayName} is Perfect for Vending Machines
+            </motion.h2>
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="grid grid-cols-1 md:grid-cols-2 gap-8"
+            >
+              <div>
+                <h3 className="text-xl font-semibold mb-4 text-gray-800">Strong Retail Sector</h3>
+                <p className="text-gray-600 mb-4">
+                  Marietta features a robust retail environment with shopping centers, malls, and 
+                  commercial districts that provide excellent vending machine opportunities.
+                </p>
+                <ul className="list-disc list-inside text-gray-600 space-y-2">
+                  <li>Shopping centers and malls</li>
+                  <li>Retail districts</li>
+                  <li>Office complexes</li>
+                  <li>Healthcare facilities</li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold mb-4 text-gray-800">Diverse Business Mix</h3>
+                <p className="text-gray-600 mb-4">
+                  The city offers a mix of retail, professional services, healthcare, and manufacturing 
+                  businesses, creating multiple vending opportunities across different sectors.
+                </p>
+                <ul className="list-disc list-inside text-gray-600 space-y-2">
+                  <li>Professional services</li>
+                  <li>Manufacturing facilities</li>
+                  <li>Medical offices</li>
+                  <li>Educational institutions</li>
+                </ul>
+              </div>
+            </motion.div>
+          </section>
+
+          {/* Hot Leads */}
+          <HotLeads />
+
+          {/* Vending Course */}
+          <VendingCourse />
+
+          {/* FAQ Section */}
+          <section className="bg-white rounded-2xl p-8 mb-12 shadow-lg">
+            <motion.h2 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="text-3xl font-bold text-center mb-8 text-gray-800"
+            >
+              Frequently Asked Questions - {cityDisplayName}
+            </motion.h2>
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="space-y-6"
+            >
+              <div className="border-b border-gray-200 pb-6">
+                <h3 className="text-xl font-semibold mb-3 text-gray-800">
+                  What types of businesses in {cityDisplayName} are best for vending machines?
+                </h3>
+                <p className="text-gray-600">
+                  Marietta offers excellent opportunities in retail centers, office complexes, 
+                  healthcare facilities, and manufacturing plants. The diverse business mix provides 
+                  various vending options for different customer bases.
+                </p>
+              </div>
+              <div className="border-b border-gray-200 pb-6">
+                <h3 className="text-xl font-semibold mb-3 text-gray-800">
+                  How does the retail focus affect vending opportunities in {cityDisplayName}?
+                </h3>
+                <p className="text-gray-600">
+                  The strong retail sector creates high foot traffic areas perfect for vending machines. 
+                  Shopping centers and malls provide consistent customer flow, while office complexes 
+                  offer captive audiences during business hours.
+                </p>
+              </div>
+              <div className="border-b border-gray-200 pb-6">
+                <h3 className="text-xl font-semibold mb-3 text-gray-800">
+                  What are the peak hours for vending machine sales in {cityDisplayName}?
+                </h3>
+                <p className="text-gray-600">
+                  Peak hours vary by location type. Retail locations are busiest during shopping hours 
+                  (10 AM-8 PM), office complexes peak during business hours (8 AM-6 PM), and manufacturing 
+                  facilities may have 24/7 operations with shift-based peak times.
+                </p>
+              </div>
+              <div className="border-b border-gray-200 pb-6">
+                <h3 className="text-xl font-semibold mb-3 text-gray-800">
+                  Are there any special requirements for vending machines in {cityDisplayName}?
+                </h3>
+                <p className="text-gray-600">
+                  Standard business licenses and health permits are required. Retail locations may have 
+                  specific placement requirements, and manufacturing facilities may need specialized 
+                  equipment for industrial environments.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold mb-3 text-gray-800">
+                  How do I get started with vending machines in {cityDisplayName}?
+                </h3>
+                <p className="text-gray-600">
+                  Start by accessing our verified location database for Marietta, which includes 
+                  pre-qualified businesses ready for vending machine placement. Our platform provides 
+                  contact information, business details, and placement opportunities to help you get started quickly.
+                </p>
+              </div>
+            </motion.div>
+          </section>
+
+          {/* CTA Section */}
+          <section className="text-center py-16 bg-gradient-to-r from-blue-600 to-purple-700 rounded-2xl">
+            <motion.h2 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="text-3xl md:text-4xl font-bold text-white mb-6"
+            >
+              Ready to Start Your Vending Business in {cityDisplayName}?
+            </motion.h2>
+            <motion.p 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto"
+            >
+              Join {userNames[Math.floor(Math.random() * userNames.length)]} and other successful vending operators 
+              who are already profiting from {cityDisplayName}'s business opportunities.
+            </motion.p>
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+            >
+              <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
+                Get Started Today
+              </button>
+              <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
+                View All Locations
+              </button>
+            </motion.div>
+          </section>
+        </main>
+
+        <Footer />
+      </ZipCodeModalWrapper>
+    </div>
+  )
+}
