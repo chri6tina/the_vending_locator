@@ -176,7 +176,10 @@ const states = [
     name: 'Indiana',
     slug: 'indiana',
     cities: [
-      { name: 'Indianapolis', slug: 'indianapolis-indiana' }
+      { name: 'Evansville', slug: 'evansville-indiana' },
+      { name: 'Fort Wayne', slug: 'fort-wayne-indiana' },
+      { name: 'Indianapolis', slug: 'indianapolis-indiana' },
+      { name: 'South Bend', slug: 'south-bend-indiana' }
     ]
   },
   {
@@ -407,7 +410,10 @@ const states = [
     cities: [
       { name: 'Charleston', slug: 'charleston-south-carolina' },
       { name: 'Columbia', slug: 'columbia-south-carolina' },
-      { name: 'North Charleston', slug: 'north-charleston-south-carolina' }
+      { name: 'Greenville', slug: 'greenville-south-carolina' },
+      { name: 'Mount Pleasant', slug: 'mount-pleasant-south-carolina' },
+      { name: 'North Charleston', slug: 'north-charleston-south-carolina' },
+      { name: 'Rock Hill', slug: 'rock-hill-south-carolina' }
     ]
   },
   {

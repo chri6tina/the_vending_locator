@@ -319,7 +319,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // South Carolina cities
     { url: 'https://www.thevendinglocator.com/vending-leads/charleston-south-carolina', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/vending-leads/columbia-south-carolina', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/greenville-south-carolina', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/mount-pleasant-south-carolina', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/vending-leads/north-charleston-south-carolina', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/rock-hill-south-carolina', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    // Indiana cities
+    { url: 'https://www.thevendinglocator.com/vending-leads/evansville-indiana', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/fort-wayne-indiana', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/south-bend-indiana', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
   ]
 
   // Blog posts
