@@ -404,7 +404,11 @@ const states = [
   {
     name: 'South Carolina',
     slug: 'south-carolina',
-    cities: []
+    cities: [
+      { name: 'Charleston', slug: 'charleston-south-carolina' },
+      { name: 'Columbia', slug: 'columbia-south-carolina' },
+      { name: 'North Charleston', slug: 'north-charleston-south-carolina' }
+    ]
   },
   {
     name: 'South Dakota',
