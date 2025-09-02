@@ -154,16 +154,22 @@ const states = [
     name: 'Illinois',
     slug: 'illinois',
     cities: [
+      { name: 'Aurora', slug: 'aurora-illinois' },
       { name: 'Bloomington', slug: 'bloomington-illinois' },
       { name: 'Champaign-Urbana', slug: 'champaign-urbana-illinois' },
       { name: 'Chicago', slug: 'chicago-illinois' },
+      { name: 'Cicero', slug: 'cicero-illinois' },
       { name: 'Decatur', slug: 'decatur-illinois' },
+      { name: 'Elgin', slug: 'elgin-illinois' },
       { name: 'Evanston', slug: 'evanston-illinois' },
+      { name: 'Joliet', slug: 'joliet-illinois' },
       { name: 'Moline', slug: 'moline-illinois' },
       { name: 'Naperville', slug: 'naperville-illinois' },
       { name: 'Peoria', slug: 'peoria-illinois' },
       { name: 'Rockford', slug: 'rockford-illinois' },
-      { name: 'Springfield', slug: 'springfield-illinois' }
+      { name: 'Schaumburg', slug: 'schaumburg-illinois' },
+      { name: 'Springfield', slug: 'springfield-illinois' },
+      { name: 'Waukegan', slug: 'waukegan-illinois' }
     ]
   },
   {
@@ -365,8 +371,13 @@ const states = [
     name: 'Pennsylvania',
     slug: 'pennsylvania',
     cities: [
+      { name: 'Allentown', slug: 'allentown-pennsylvania' },
+      { name: 'Bethlehem', slug: 'bethlehem-pennsylvania' },
+      { name: 'Erie', slug: 'erie-pennsylvania' },
       { name: 'Philadelphia', slug: 'philadelphia-pennsylvania' },
       { name: 'Pittsburgh', slug: 'pittsburgh-pennsylvania' },
+      { name: 'Reading', slug: 'reading-pennsylvania' },
+      { name: 'Scranton', slug: 'scranton-pennsylvania' },
       { name: 'York', slug: 'york-pennsylvania' }
     ]
   },

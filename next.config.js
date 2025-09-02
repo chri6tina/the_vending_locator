@@ -11,6 +11,16 @@ const nextConfig = {
   },
   // Ensure proper handling of dynamic routes
   trailingSlash: false,
+  // Redirects for SEO preservation
+  async redirects() {
+    return [
+      {
+        source: '/location/new-york-ny',
+        destination: '/vending-leads/new-york',
+        permanent: true, // 301 redirect for SEO
+      },
+    ];
+  },
   /* config options here */
 };
 

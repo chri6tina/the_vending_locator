@@ -216,7 +216,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: 'https://www.thevendinglocator.com/vending-leads/saint-paul-minnesota', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     
     // Pennsylvania cities
+    { url: 'https://www.thevendinglocator.com/vending-leads/allentown-pennsylvania', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/bethlehem-pennsylvania', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/erie-pennsylvania', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/vending-leads/philadelphia-pennsylvania', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/reading-pennsylvania', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/scranton-pennsylvania', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     
     // Wisconsin cities
     { url: 'https://www.thevendinglocator.com/vending-leads/milwaukee-wisconsin', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
@@ -262,6 +267,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: 'https://www.thevendinglocator.com/vending-leads/springfield-illinois', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/vending-leads/rockford-illinois', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/vending-leads/peoria-illinois', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    // New Illinois cities
+    { url: 'https://www.thevendinglocator.com/vending-leads/aurora-illinois', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/elgin-illinois', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/joliet-illinois', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    // Phase 2 Illinois cities
+    { url: 'https://www.thevendinglocator.com/vending-leads/waukegan-illinois', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/cicero-illinois', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/schaumburg-illinois', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/vending-leads/springfield-massachusetts', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/vending-leads/worcester-massachusetts', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/vending-leads/pittsburgh-pennsylvania', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
