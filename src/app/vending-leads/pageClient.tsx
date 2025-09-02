@@ -37,6 +37,7 @@ const states = [
       { name: 'Mesa', slug: 'mesa-arizona' },
       { name: 'Phoenix', slug: 'phoenix-arizona' },
       { name: 'Scottsdale', slug: 'scottsdale-arizona' },
+      { name: 'Tempe', slug: 'tempe-arizona' },
       { name: 'Tucson', slug: 'tucson-arizona' }
     ]
   },

@@ -11,31 +11,31 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 import SmartBreadcrumbs from '@/components/SmartBreadcrumbs'
 
 const cityData = {
-  name: 'Tucson',
+  name: 'Scottsdale',
   state: 'Arizona',
-  population: '548,073',
-  description: 'Tucson, Arizona is the second largest city in Arizona and a major metropolitan area in the Sonoran Desert. Known for its vibrant culture, growing tech sector, and strong healthcare industry, Tucson offers excellent vending opportunities in education, healthcare, government, and retail sectors.',
-  keyIndustries: ['Education', 'Healthcare', 'Government', 'Technology', 'Manufacturing', 'Tourism'],
-  majorEmployers: ['University of Arizona', 'Raytheon Technologies', 'Banner Health', 'Tucson Medical Center', 'City of Tucson', 'Pima County'],
+  population: '241,361',
+  description: 'Scottsdale, Arizona is an affluent city in the Phoenix metropolitan area known for its luxury resorts, high-end shopping, and vibrant arts scene. With a strong economy driven by tourism, healthcare, and technology, Scottsdale offers excellent vending opportunities in hospitality, retail, healthcare, and corporate sectors.',
+  keyIndustries: ['Tourism & Hospitality', 'Healthcare', 'Technology', 'Retail', 'Real Estate', 'Financial Services'],
+  majorEmployers: ['HonorHealth', 'Scottsdale Healthcare', 'City of Scottsdale', 'Scottsdale Unified School District', 'Mayo Clinic', 'Banner Health'],
   vendingOpportunities: [
-    'University of Arizona campus and facilities',
+    'Luxury resorts and hotels',
+    'High-end shopping centers and malls',
     'Healthcare facilities and medical centers',
-    'Government buildings and offices',
     'Technology companies and business parks',
-    'Manufacturing facilities and industrial areas',
-    'Retail centers and shopping districts',
-    'Tourist attractions and entertainment venues'
+    'Corporate offices and financial institutions',
+    'Entertainment venues and cultural centers',
+    'Golf courses and recreational facilities'
   ],
   demographics: {
-    medianAge: 35.2,
-    medianHouseholdIncome: '$45,231',
+    medianAge: 45.8,
+    medianHouseholdIncome: '$89,234',
     educationLevel: 'Bachelor\'s degree or higher',
-    employmentRate: '61.3%'
+    employmentRate: '68.2%'
   },
   transportation: {
-    majorHighways: ['I-10', 'I-19', 'SR-77', 'SR-86'],
-    publicTransit: 'Sun Tran',
-    airports: 'Tucson International Airport'
+    majorHighways: ['SR-101', 'SR-202', 'SR-51', 'I-10'],
+    publicTransit: 'Valley Metro',
+    airports: 'Phoenix Sky Harbor International Airport'
   }
 }
 
@@ -44,7 +44,7 @@ const userNames = [
   'William', 'Ashley', 'Christopher', 'Amanda', 'Daniel', 'Stephanie', 'Matthew', 'Nicole'
 ]
 
-export default function TucsonArizonaPageClient() {
+export default function ScottsdaleArizonaPageClient() {
   const [activeUsers, setActiveUsers] = useState(0)
   const [isLoading, setIsLoading] = useState(true)
 
@@ -53,7 +53,7 @@ export default function TucsonArizonaPageClient() {
       setActiveUsers(prev => {
         const change = Math.floor(Math.random() * 3) - 1
         const newCount = prev + change
-        return Math.max(15, Math.min(32, newCount))
+        return Math.max(18, Math.min(35, newCount))
       })
     }, 3000)
 
@@ -294,9 +294,9 @@ export default function TucsonArizonaPageClient() {
                     What types of vending opportunities are available in {cityData.name}?
                   </h3>
                   <p className="text-gray-700">
-                    {cityData.name} offers diverse vending opportunities including the University of Arizona campus, 
-                    healthcare facilities, government buildings, technology companies, and manufacturing facilities. 
-                    The city's growing tech sector and strong healthcare industry provide excellent potential for vending machine placement.
+                    {cityData.name} offers premium vending opportunities including luxury resorts, high-end shopping centers, 
+                    healthcare facilities, technology companies, and corporate offices. The city's affluent demographics 
+                    and strong tourism industry provide excellent potential for high-value vending machine placement.
                   </p>
                 </div>
                 <div className="bg-white rounded-lg p-6 shadow-sm">
@@ -305,7 +305,7 @@ export default function TucsonArizonaPageClient() {
                   </h3>
                   <p className="text-gray-700">
                     Start by researching local businesses and institutions in {cityData.name}. 
-                    Focus on areas with high foot traffic like the University of Arizona, healthcare centers, and business parks. 
+                    Focus on areas with high foot traffic like luxury resorts, shopping centers, and business parks. 
                     Our vending leads service can help you identify the best opportunities in the area.
                   </p>
                 </div>
@@ -315,8 +315,8 @@ export default function TucsonArizonaPageClient() {
                   </h3>
                   <p className="text-gray-700">
                     Success in {cityData.name} requires understanding the local market, building relationships with 
-                    business owners, and providing reliable service. The city's diverse economy and strong educational 
-                    and healthcare sectors offer stable, long-term vending opportunities for operators who deliver quality service.
+                    business owners, and providing reliable service. The city's affluent demographics and strong 
+                    tourism and healthcare sectors offer stable, high-value vending opportunities for operators who deliver quality service.
                   </p>
                 </div>
               </div>
