@@ -172,16 +172,20 @@ const states = [
       { name: 'Waukegan', slug: 'waukegan-illinois' }
     ]
   },
-  {
-    name: 'Indiana',
-    slug: 'indiana',
-    cities: [
-      { name: 'Evansville', slug: 'evansville-indiana' },
-      { name: 'Fort Wayne', slug: 'fort-wayne-indiana' },
-      { name: 'Indianapolis', slug: 'indianapolis-indiana' },
-      { name: 'South Bend', slug: 'south-bend-indiana' }
-    ]
-  },
+          {
+          name: 'Indiana',
+          slug: 'indiana',
+          cities: [
+            { name: 'Bloomington', slug: 'bloomington-indiana' },
+            { name: 'Carmel', slug: 'carmel-indiana' },
+            { name: 'Evansville', slug: 'evansville-indiana' },
+            { name: 'Fort Wayne', slug: 'fort-wayne-indiana' },
+            { name: 'Gary', slug: 'gary-indiana' },
+            { name: 'Hammond', slug: 'hammond-indiana' },
+            { name: 'Indianapolis', slug: 'indianapolis-indiana' },
+            { name: 'South Bend', slug: 'south-bend-indiana' }
+          ]
+        },
   {
     name: 'Iowa',
     slug: 'iowa',
