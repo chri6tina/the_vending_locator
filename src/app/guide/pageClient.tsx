@@ -251,7 +251,7 @@ export default function GuideClient() {
       </section>
 
       {/* Course cross-promo */}
-      <section className="py-12 bg-white">
+      <section className="py-8 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <VendingCourse compact />
         </div>
@@ -268,16 +268,15 @@ export default function GuideClient() {
             <div className="grid gap-4">
               {states.map((state, index) => (
                 <motion.div key={state.slug} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.05 * index }} className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
-                  <button onClick={() => toggleState(state.slug)} className="w-full px-6 py-4 text-left hover:bg-gray-50 transition-colors flex items-center justify-between">
-                    <div className="flex items-center">
-                      <MapPinIcon className="h-5 w-5 text-navy mr-3" />
-                      <span className="font-medium text-chocolate text-lg">{state.name}</span>
-                      <span className="ml-3 text-sm text-gray-500">({state.cities.length} cities)</span>
-                    </div>
-                    <ChevronDownIcon className={`h-5 w-5 text-gray-400 transition-transform ${expandedStates.includes(state.slug) ? 'rotate-180' : ''}`} />
-                  </button>
-
-                  {expandedStates.includes(state.slug) && (
+                  <details>
+                    <summary className="w-full px-6 py-4 cursor-pointer hover:bg-gray-50 transition-colors flex items-center justify-between list-none">
+                      <div className="flex items-center">
+                        <MapPinIcon className="h-5 w-5 text-navy mr-3" />
+                        <span className="font-medium text-chocolate text-lg">{state.name}</span>
+                        <span className="ml-3 text-sm text-gray-500">({state.cities.length} cities)</span>
+                      </div>
+                      <ChevronDownIcon className="h-5 w-5 text-gray-400" />
+                    </summary>
                     <div className="border-t border-gray-200 bg-gray-50">
                       <div className="px-6 py-4">
                         {state.cities.length > 0 ? (
@@ -296,7 +295,7 @@ export default function GuideClient() {
                         )}
                       </div>
                     </div>
-                  )}
+                  </details>
                 </motion.div>
               ))}
             </div>

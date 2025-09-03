@@ -4,11 +4,11 @@ import { ArrowRightIcon, StarIcon } from '@heroicons/react/24/outline'
 
 export default function VendingCourse({ compact = false }: { compact?: boolean }) {
   return (
-    <div className={`bg-gradient-to-br from-warm-white to-white ${compact ? 'py-10 sm:py-12' : 'py-16 sm:py-24'}`}>
+    <div className={`bg-gradient-to-br from-warm-white to-white ${compact ? 'py-8 sm:py-10' : 'py-12 sm:py-16'}`}>
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
         
         {/* Enhanced Guide Section - Clean but Engaging */}
-        <div className={`text-center ${compact ? 'mb-8' : 'mb-16'}`}>
+        <div className={`text-center ${compact ? 'mb-6' : 'mb-10'}`}>
           <div className={`bg-white rounded-2xl shadow-lg border border-gray-200 ${compact ? 'p-6 sm:p-8' : 'p-8 sm:p-12'} relative overflow-hidden`}>
             {/* Subtle background accent */}
             <div className="absolute top-0 right-0 w-24 h-24 bg-navy/5 rounded-full -translate-y-12 translate-x-12"></div>
@@ -46,61 +46,7 @@ export default function VendingCourse({ compact = false }: { compact?: boolean }
           </div>
         </div>
 
-        {/* Success Graph Section */}
-        <div className={`mx-auto max-w-4xl px-4 ${compact ? 'mb-10' : 'mb-16'}`}>
-          <div className={`text-center ${compact ? 'mb-8' : 'mb-12'}`}>
-            <h3 className={`text-2xl sm:text-3xl font-playfair font-bold text-charcoal ${compact ? 'mb-3' : 'mb-4'}`}>
-              Our Success Story
-            </h3>
-            <p className="text-lg text-stone/70">
-              See how we've helped vendors find locations over the years
-            </p>
-          </div>
-
-          {/* Enhanced Graph Container */}
-          <div className={`bg-white rounded-2xl shadow-lg border border-gray-200 ${compact ? 'p-5 sm:p-6' : 'p-6 sm:p-8'} overflow-hidden`}>
-            <div className="overflow-x-auto">
-              <div className="flex items-end justify-between h-48 sm:h-64 mb-6 px-2 sm:px-4 min-w-[600px] sm:min-w-0">
-                {/* Graph Bars with subtle gradients */}
-                <div className="flex flex-col items-center">
-                  <div className="w-6 sm:w-8 bg-gradient-to-t from-navy to-navy-light rounded-t-lg shadow-sm" style={{ height: '32px' }}></div>
-                  <span className="text-xs text-stone/70 mt-2 font-medium">2019</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <div className="w-6 sm:w-8 bg-gradient-to-t from-navy to-navy-light rounded-t-lg shadow-sm" style={{ height: '45px' }}></div>
-                  <span className="text-xs text-stone/70 mt-2 font-medium">2020</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <div className="w-6 sm:w-8 bg-gradient-to-t from-navy to-navy-light rounded-t-lg shadow-sm" style={{ height: '38px' }}></div>
-                  <span className="text-xs text-stone/70 mt-2 font-medium">2021</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <div className="w-6 sm:w-8 bg-gradient-to-t from-navy to-navy-light rounded-t-lg shadow-sm" style={{ height: '52px' }}></div>
-                  <span className="text-xs text-stone/70 mt-2 font-medium">2022</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <div className="w-6 sm:w-8 bg-gradient-to-t from-navy to-navy-light rounded-t-lg shadow-sm" style={{ height: '68px' }}></div>
-                  <span className="text-xs text-stone/70 mt-2 font-medium">2023</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <div className="w-6 sm:w-8 bg-gradient-to-t from-navy to-navy-light rounded-t-lg shadow-sm" style={{ height: '85px' }}></div>
-                  <span className="text-xs text-stone/70 mt-2 font-medium">2024</span>
-                </div>
-                <div className="flex flex-col items-center">
-                  <div className="w-6 sm:w-8 bg-gradient-to-t from-coral to-orange-500 rounded-t-lg shadow-md" style={{ height: '120px' }}></div>
-                  <span className="text-xs text-stone/70 mt-2 font-medium font-semibold">2025</span>
-                </div>
-              </div>
-            </div>
-            
-            {/* Graph Legend */}
-            <div className="text-center">
-              <p className="text-sm text-stone/70">
-                <span className="font-semibold text-navy">Growth in locations found</span> for our vending operators
-              </p>
-            </div>
-          </div>
-        </div>
+        
 
         {/* Enhanced Final CTA */}
         <div className="text-center">
