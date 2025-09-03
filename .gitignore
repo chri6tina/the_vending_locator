@@ -39,3 +39,12 @@ next-env.d.ts
 
 # OS
 Thumbs.db
+
+# Crawl/analysis artifacts
+linkinator*.json
+linkinator.log
+crawled.txt
+guide-urls.txt
+orphans.txt
+sitemap-urls.txt
+/sitemap.xml
