@@ -185,9 +185,9 @@ export default function PageClient() {
                   ))}
                 </div>
 
-                {/* Pricing comparison */}
+                {/* Locator provider comparison (distinct from PricingTable) */}
                 <div className="mt-8">
-                  <div className="text-xl font-playfair font-bold text-charcoal mb-3">Pricing comparison</div>
+                  <div className="text-xl font-playfair font-bold text-charcoal mb-3">Locator provider comparison</div>
                   <div className="text-stone text-sm mb-4">Generalized comparison for educational purposes. Specific competitor offerings vary by region and agreement.</div>
                   {/* Mobile cards */}
                   <div className="lg:hidden space-y-4">
