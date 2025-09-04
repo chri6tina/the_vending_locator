@@ -188,10 +188,8 @@ export default function PricingTable() {
               {/* Get Started Button - Now triggers modal */}
               <button
                 onClick={() => handlePlanClick(plan)}
-                className={`w-32 mx-auto py-3 px-6 rounded-lg font-semibold text-white transition-all duration-200 text-center block ${
-                  plan.popular
-                    ? 'bg-gradient-to-r from-coral to-orange-500 hover:from-coral/90 hover:to-orange-500/90 shadow-xl transform hover:scale-105'
-                    : 'bg-charcoal hover:bg-opacity-90'
+                className={`w-32 mx-auto btn-primary text-center block ${
+                  plan.popular ? 'shadow-xl transform hover:scale-105' : ''
                 }`}
               >
                 Get Started
