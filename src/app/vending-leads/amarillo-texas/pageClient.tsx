@@ -247,6 +247,90 @@ export default function AmarilloTexasVendingLeadsPage() {
           </div>
         </section>
 
+        {/* How we help in Amarillo */}
+        <section className="py-16 bg-warm-white border-t border-gray-200">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-10">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal"
+              >
+                How we helped vending machine owners in {cityDisplayName} find locations
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="mt-2 text-lg text-stone max-w-3xl mx-auto"
+              >
+                A simple, repeatable process tailored to {cityDisplayName}'s mix of logistics, healthcare, offices and retail.
+              </motion.p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm"
+              >
+                <div className="text-sm font-semibold text-navy mb-1">Step 1</div>
+                <div className="text-xl font-semibold text-charcoal mb-2">Zip‑based research</div>
+                <p className="text-stone">We cluster high‑fit sites within a practical service radius and prioritize shift‑based facilities and office/clinic corridors.</p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.1 }}
+                viewport={{ once: true }}
+                className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm"
+              >
+                <div className="text-sm font-semibold text-navy mb-1">Step 2</div>
+                <div className="text-xl font-semibold text-charcoal mb-2">Outreach that gets replies</div>
+                <p className="text-stone">Use our phone/email scripts to reach facility managers and admins. We include key decision‑maker language and local proof points.</p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm"
+              >
+                <div className="text-sm font-semibold text-navy mb-1">Step 3</div>
+                <div className="text-xl font-semibold text-charcoal mb-2">Fast sign‑off</div>
+                <p className="text-stone">Legal‑ready agreement and one‑pager service terms make approvals simple. You focus on install and service cadence.</p>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm md:col-span-2 lg:col-span-3"
+              >
+                <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+                  <div>
+                    <div className="text-sm font-semibold text-navy mb-1">Recent result in {cityDisplayName}</div>
+                    <div className="text-charcoal">New operator secured 2 placements (clinic + office park) within 11 days using Start Plan outreach + agreement templates.</div>
+                  </div>
+                  <div className="flex items-center gap-6 text-sm">
+                    <div className="text-center"><div className="text-2xl font-bold text-navy">11 days</div><div className="text-stone">to first placement</div></div>
+                    <div className="text-center"><div className="text-2xl font-bold text-navy">2 sites</div><div className="text-stone">installed</div></div>
+                    <div className="text-center"><div className="text-2xl font-bold text-navy">3–5d</div><div className="text-stone">lead delivery</div></div>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+          </div>
+        </section>
+
         {/* Pricing Section */}
         <section id="pricing" className="py-16 bg-warm-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
