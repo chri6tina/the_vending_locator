@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Tallahassee Florida - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Tallahassee Florida. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Tallahassee Florida, vending leads Vending Leads Tallahassee Florida, vending locations Vending Leads Tallahassee Florida, vending opportunities Vending Leads Tallahassee Florida",
+  "title": "Vending Machine Leads in Tallahassee, Florida - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Tallahassee, Florida. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Tallahassee Florida, vending leads Tallahassee Florida, vending locations Tallahassee Florida, vending opportunities Tallahassee Florida",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/tallahassee-florida"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Tallahassee Florida - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Tallahassee Florida. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Tallahassee, Florida - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Tallahassee, Florida. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/tallahassee-florida",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Tallahassee Florida - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Tallahassee Florida. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Tallahassee, Florida - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Tallahassee, Florida. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

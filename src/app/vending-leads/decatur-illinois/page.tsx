@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Decatur Illinois - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Decatur Illinois. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Decatur Illinois, vending leads Vending Leads Decatur Illinois, vending locations Vending Leads Decatur Illinois, vending opportunities Vending Leads Decatur Illinois",
+  "title": "Vending Machine Leads in Decatur, Illinois - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Decatur, Illinois. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Decatur Illinois, vending leads Decatur Illinois, vending locations Decatur Illinois, vending opportunities Decatur Illinois",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/decatur-illinois"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Decatur Illinois - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Decatur Illinois. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Decatur, Illinois - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Decatur, Illinois. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/decatur-illinois",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Decatur Illinois - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Decatur Illinois. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Decatur, Illinois - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Decatur, Illinois. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

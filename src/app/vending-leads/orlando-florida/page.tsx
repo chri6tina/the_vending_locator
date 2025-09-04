@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Orlando Florida - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Orlando Florida. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Orlando Florida, vending leads Vending Leads Orlando Florida, vending locations Vending Leads Orlando Florida, vending opportunities Vending Leads Orlando Florida",
+  "title": "Vending Machine Leads in Orlando, Florida - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Orlando, Florida. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Orlando Florida, vending leads Orlando Florida, vending locations Orlando Florida, vending opportunities Orlando Florida",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/orlando-florida"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Orlando Florida - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Orlando Florida. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Orlando, Florida - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Orlando, Florida. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/orlando-florida",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Orlando Florida - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Orlando Florida. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Orlando, Florida - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Orlando, Florida. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

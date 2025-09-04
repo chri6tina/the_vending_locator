@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Chicago Illinois - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Chicago Illinois. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Chicago Illinois, vending leads Vending Leads Chicago Illinois, vending locations Vending Leads Chicago Illinois, vending opportunities Vending Leads Chicago Illinois",
+  "title": "Vending Machine Leads in Chicago, Illinois - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Chicago, Illinois. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Chicago Illinois, vending leads Chicago Illinois, vending locations Chicago Illinois, vending opportunities Chicago Illinois",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/chicago-illinois"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Chicago Illinois - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Chicago Illinois. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Chicago, Illinois - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Chicago, Illinois. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/chicago-illinois",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Chicago Illinois - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Chicago Illinois. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Chicago, Illinois - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Chicago, Illinois. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

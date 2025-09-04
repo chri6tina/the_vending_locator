@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Silver Spring Maryland - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Silver Spring Maryland. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Silver Spring Maryland, vending leads Vending Leads Silver Spring Maryland, vending locations Vending Leads Silver Spring Maryland, vending opportunities Vending Leads Silver Spring Maryland",
+  "title": "Vending Machine Leads in Silver Spring, Maryland - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Silver Spring, Maryland. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Silver Spring Maryland, vending leads Silver Spring Maryland, vending locations Silver Spring Maryland, vending opportunities Silver Spring Maryland",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/silver-spring-maryland"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Silver Spring Maryland - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Silver Spring Maryland. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Silver Spring, Maryland - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Silver Spring, Maryland. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/silver-spring-maryland",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Silver Spring Maryland - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Silver Spring Maryland. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Silver Spring, Maryland - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Silver Spring, Maryland. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

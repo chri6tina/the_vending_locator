@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Michigan - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Michigan. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Michigan, vending leads Vending Leads Michigan, vending locations Vending Leads Michigan, vending opportunities Vending Leads Michigan",
+  "title": "Vending Machine Leads in Michigan - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Michigan. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Michigan, vending leads Michigan, vending locations Michigan, vending opportunities Michigan",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/michigan"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Michigan - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Michigan. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Michigan - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Michigan. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/michigan",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Michigan - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Michigan. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Michigan - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Michigan. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

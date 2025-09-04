@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Connecticut - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Connecticut. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Connecticut, vending leads Vending Leads Connecticut, vending locations Vending Leads Connecticut, vending opportunities Vending Leads Connecticut",
+  "title": "Vending Machine Leads in Connecticut - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Connecticut. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Connecticut, vending leads Connecticut, vending locations Connecticut, vending opportunities Connecticut",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/connecticut"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Connecticut - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Connecticut. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Connecticut - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Connecticut. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/connecticut",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Connecticut - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Connecticut. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Connecticut - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Connecticut. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

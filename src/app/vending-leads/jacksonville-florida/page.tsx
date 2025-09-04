@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Jacksonville Florida - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Jacksonville Florida. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Jacksonville Florida, vending leads Vending Leads Jacksonville Florida, vending locations Vending Leads Jacksonville Florida, vending opportunities Vending Leads Jacksonville Florida",
+  "title": "Vending Machine Leads in Jacksonville, Florida - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Jacksonville, Florida. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Jacksonville Florida, vending leads Jacksonville Florida, vending locations Jacksonville Florida, vending opportunities Jacksonville Florida",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/jacksonville-florida"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Jacksonville Florida - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Jacksonville Florida. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Jacksonville, Florida - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Jacksonville, Florida. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/jacksonville-florida",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Jacksonville Florida - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Jacksonville Florida. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Jacksonville, Florida - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Jacksonville, Florida. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, West Virginia - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, West Virginia. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads West Virginia, vending leads Vending Leads West Virginia, vending locations Vending Leads West Virginia, vending opportunities Vending Leads West Virginia",
+  "title": "Vending Machine Leads in West Virginia - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in West Virginia. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines West Virginia, vending leads West Virginia, vending locations West Virginia, vending opportunities West Virginia",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/west-virginia"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, West Virginia - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, West Virginia. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in West Virginia - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in West Virginia. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/west-virginia",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, West Virginia - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, West Virginia. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in West Virginia - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in West Virginia. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

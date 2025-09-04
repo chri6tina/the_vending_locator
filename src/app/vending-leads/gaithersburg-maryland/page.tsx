@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Gaithersburg Maryland - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Gaithersburg Maryland. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Gaithersburg Maryland, vending leads Vending Leads Gaithersburg Maryland, vending locations Vending Leads Gaithersburg Maryland, vending opportunities Vending Leads Gaithersburg Maryland",
+  "title": "Vending Machine Leads in Gaithersburg, Maryland - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Gaithersburg, Maryland. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Gaithersburg Maryland, vending leads Gaithersburg Maryland, vending locations Gaithersburg Maryland, vending opportunities Gaithersburg Maryland",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/gaithersburg-maryland"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Gaithersburg Maryland - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Gaithersburg Maryland. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Gaithersburg, Maryland - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Gaithersburg, Maryland. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/gaithersburg-maryland",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Gaithersburg Maryland - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Gaithersburg Maryland. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Gaithersburg, Maryland - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Gaithersburg, Maryland. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

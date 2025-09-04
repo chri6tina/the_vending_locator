@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Raleigh North Carolina - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Raleigh North Carolina. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Raleigh North Carolina, vending leads Vending Leads Raleigh North Carolina, vending locations Vending Leads Raleigh North Carolina, vending opportunities Vending Leads Raleigh North Carolina",
+  "title": "Vending Machine Leads in Raleigh, North Carolina - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Raleigh, North Carolina. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Raleigh North Carolina, vending leads Raleigh North Carolina, vending locations Raleigh North Carolina, vending opportunities Raleigh North Carolina",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/raleigh-north-carolina"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Raleigh North Carolina - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Raleigh North Carolina. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Raleigh, North Carolina - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Raleigh, North Carolina. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/raleigh-north-carolina",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Raleigh North Carolina - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Raleigh North Carolina. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Raleigh, North Carolina - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Raleigh, North Carolina. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

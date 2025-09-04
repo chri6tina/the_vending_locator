@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, New Hampshire - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, New Hampshire. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads New Hampshire, vending leads Vending Leads New Hampshire, vending locations Vending Leads New Hampshire, vending opportunities Vending Leads New Hampshire",
+  "title": "Vending Machine Leads in New Hampshire - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in New Hampshire. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines New Hampshire, vending leads New Hampshire, vending locations New Hampshire, vending opportunities New Hampshire",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/new-hampshire"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, New Hampshire - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, New Hampshire. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in New Hampshire - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in New Hampshire. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/new-hampshire",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, New Hampshire - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, New Hampshire. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in New Hampshire - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in New Hampshire. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

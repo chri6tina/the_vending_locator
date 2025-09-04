@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Annapolis Maryland - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Annapolis Maryland. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Annapolis Maryland, vending leads Vending Leads Annapolis Maryland, vending locations Vending Leads Annapolis Maryland, vending opportunities Vending Leads Annapolis Maryland",
+  "title": "Vending Machine Leads in Annapolis, Maryland - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Annapolis, Maryland. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Annapolis Maryland, vending leads Annapolis Maryland, vending locations Annapolis Maryland, vending opportunities Annapolis Maryland",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/annapolis-maryland"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Annapolis Maryland - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Annapolis Maryland. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Annapolis, Maryland - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Annapolis, Maryland. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/annapolis-maryland",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Annapolis Maryland - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Annapolis Maryland. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Annapolis, Maryland - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Annapolis, Maryland. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

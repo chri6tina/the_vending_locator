@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Glendale California - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Glendale California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Glendale California, vending leads Vending Leads Glendale California, vending locations Vending Leads Glendale California, vending opportunities Vending Leads Glendale California",
+  "title": "Vending Machine Leads in Glendale, California - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Glendale, California. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Glendale California, vending leads Glendale California, vending locations Glendale California, vending opportunities Glendale California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/glendale-california"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Glendale California - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Glendale California. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Glendale, California - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Glendale, California. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/glendale-california",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Glendale California - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Glendale California. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Glendale, California - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Glendale, California. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

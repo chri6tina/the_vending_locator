@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Rockford Illinois - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Rockford Illinois. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Rockford Illinois, vending leads Vending Leads Rockford Illinois, vending locations Vending Leads Rockford Illinois, vending opportunities Vending Leads Rockford Illinois",
+  "title": "Vending Machine Leads in Rockford, Illinois - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Rockford, Illinois. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Rockford Illinois, vending leads Rockford Illinois, vending locations Rockford Illinois, vending opportunities Rockford Illinois",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/rockford-illinois"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Rockford Illinois - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Rockford Illinois. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Rockford, Illinois - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Rockford, Illinois. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/rockford-illinois",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Rockford Illinois - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Rockford Illinois. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Rockford, Illinois - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Rockford, Illinois. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

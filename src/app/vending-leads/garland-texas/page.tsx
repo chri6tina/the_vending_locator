@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Garland Texas - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Garland Texas. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Garland Texas, vending leads Vending Leads Garland Texas, vending locations Vending Leads Garland Texas, vending opportunities Vending Leads Garland Texas",
+  "title": "Vending Machine Leads in Garland, Texas - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Garland, Texas. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Garland Texas, vending leads Garland Texas, vending locations Garland Texas, vending opportunities Garland Texas",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/garland-texas"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Garland Texas - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Garland Texas. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Garland, Texas - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Garland, Texas. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/garland-texas",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Garland Texas - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Garland Texas. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Garland, Texas - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Garland, Texas. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

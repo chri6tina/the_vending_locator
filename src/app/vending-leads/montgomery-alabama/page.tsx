@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Montgomery Alabama - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Montgomery Alabama. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Montgomery Alabama, vending leads Vending Leads Montgomery Alabama, vending locations Vending Leads Montgomery Alabama, vending opportunities Vending Leads Montgomery Alabama",
+  "title": "Vending Machine Leads in Montgomery, Alabama - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Montgomery, Alabama. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Montgomery Alabama, vending leads Montgomery Alabama, vending locations Montgomery Alabama, vending opportunities Montgomery Alabama",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/montgomery-alabama"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Montgomery Alabama - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Montgomery Alabama. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Montgomery, Alabama - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Montgomery, Alabama. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/montgomery-alabama",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Montgomery Alabama - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Montgomery Alabama. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Montgomery, Alabama - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Montgomery, Alabama. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

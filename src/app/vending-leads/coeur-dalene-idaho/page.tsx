@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Coeur Dalene Idaho - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Coeur Dalene Idaho. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Coeur Dalene Idaho, vending leads Vending Leads Coeur Dalene Idaho, vending locations Vending Leads Coeur Dalene Idaho, vending opportunities Vending Leads Coeur Dalene Idaho",
+  "title": "Vending Machine Leads in Coeur Dalene, Idaho - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Coeur Dalene, Idaho. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Coeur Dalene Idaho, vending leads Coeur Dalene Idaho, vending locations Coeur Dalene Idaho, vending opportunities Coeur Dalene Idaho",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/coeur-dalene-idaho"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Coeur Dalene Idaho - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Coeur Dalene Idaho. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Coeur Dalene, Idaho - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Coeur Dalene, Idaho. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/coeur-dalene-idaho",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Coeur Dalene Idaho - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Coeur Dalene Idaho. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Coeur Dalene, Idaho - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Coeur Dalene, Idaho. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

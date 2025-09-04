@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Tuscaloosa Alabama - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Tuscaloosa Alabama. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Tuscaloosa Alabama, vending leads Vending Leads Tuscaloosa Alabama, vending locations Vending Leads Tuscaloosa Alabama, vending opportunities Vending Leads Tuscaloosa Alabama",
+  "title": "Vending Machine Leads in Tuscaloosa, Alabama - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Tuscaloosa, Alabama. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Tuscaloosa Alabama, vending leads Tuscaloosa Alabama, vending locations Tuscaloosa Alabama, vending opportunities Tuscaloosa Alabama",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/tuscaloosa-alabama"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Tuscaloosa Alabama - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Tuscaloosa Alabama. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Tuscaloosa, Alabama - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Tuscaloosa, Alabama. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/tuscaloosa-alabama",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Tuscaloosa Alabama - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Tuscaloosa Alabama. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Tuscaloosa, Alabama - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Tuscaloosa, Alabama. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

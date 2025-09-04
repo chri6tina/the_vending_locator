@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Ames Iowa - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Ames Iowa. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Ames Iowa, vending leads Vending Leads Ames Iowa, vending locations Vending Leads Ames Iowa, vending opportunities Vending Leads Ames Iowa",
+  "title": "Vending Machine Leads in Ames, Iowa - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Ames, Iowa. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Ames Iowa, vending leads Ames Iowa, vending locations Ames Iowa, vending opportunities Ames Iowa",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/ames-iowa"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Ames Iowa - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Ames Iowa. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Ames, Iowa - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Ames, Iowa. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/ames-iowa",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Ames Iowa - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Ames Iowa. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Ames, Iowa - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Ames, Iowa. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

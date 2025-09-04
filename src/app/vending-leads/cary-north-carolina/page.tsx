@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Cary North Carolina - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Cary North Carolina. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Cary North Carolina, vending leads Vending Leads Cary North Carolina, vending locations Vending Leads Cary North Carolina, vending opportunities Vending Leads Cary North Carolina",
+  "title": "Vending Machine Leads in Cary, North Carolina - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Cary, North Carolina. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Cary North Carolina, vending leads Cary North Carolina, vending locations Cary North Carolina, vending opportunities Cary North Carolina",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/cary-north-carolina"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Cary North Carolina - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Cary North Carolina. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Cary, North Carolina - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Cary, North Carolina. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/cary-north-carolina",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Cary North Carolina - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Cary North Carolina. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Cary, North Carolina - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Cary, North Carolina. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, South Carolina - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, South Carolina. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads South Carolina, vending leads Vending Leads South Carolina, vending locations Vending Leads South Carolina, vending opportunities Vending Leads South Carolina",
+  "title": "Vending Machine Leads in South Carolina - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in South Carolina. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines South Carolina, vending leads South Carolina, vending locations South Carolina, vending opportunities South Carolina",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/south-carolina"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, South Carolina - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, South Carolina. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in South Carolina - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in South Carolina. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/south-carolina",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, South Carolina - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, South Carolina. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in South Carolina - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in South Carolina. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

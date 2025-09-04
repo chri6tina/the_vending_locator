@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Twin Falls Idaho - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Twin Falls Idaho. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Twin Falls Idaho, vending leads Vending Leads Twin Falls Idaho, vending locations Vending Leads Twin Falls Idaho, vending opportunities Vending Leads Twin Falls Idaho",
+  "title": "Vending Machine Leads in Twin Falls, Idaho - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Twin Falls, Idaho. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Twin Falls Idaho, vending leads Twin Falls Idaho, vending locations Twin Falls Idaho, vending opportunities Twin Falls Idaho",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/twin-falls-idaho"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Twin Falls Idaho - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Twin Falls Idaho. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Twin Falls, Idaho - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Twin Falls, Idaho. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/twin-falls-idaho",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Twin Falls Idaho - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Twin Falls Idaho. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Twin Falls, Idaho - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Twin Falls, Idaho. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

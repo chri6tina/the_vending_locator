@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Columbia Maryland - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Columbia Maryland. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Columbia Maryland, vending leads Vending Leads Columbia Maryland, vending locations Vending Leads Columbia Maryland, vending opportunities Vending Leads Columbia Maryland",
+  "title": "Vending Machine Leads in Columbia, Maryland - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Columbia, Maryland. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Columbia Maryland, vending leads Columbia Maryland, vending locations Columbia Maryland, vending opportunities Columbia Maryland",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/columbia-maryland"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Columbia Maryland - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Columbia Maryland. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Columbia, Maryland - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Columbia, Maryland. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/columbia-maryland",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Columbia Maryland - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Columbia Maryland. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Columbia, Maryland - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Columbia, Maryland. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

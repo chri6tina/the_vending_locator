@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Fresno California - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Fresno California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Fresno California, vending leads Vending Leads Fresno California, vending locations Vending Leads Fresno California, vending opportunities Vending Leads Fresno California",
+  "title": "Vending Machine Leads in Fresno, California - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Fresno, California. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Fresno California, vending leads Fresno California, vending locations Fresno California, vending opportunities Fresno California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/fresno-california"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Fresno California - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Fresno California. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Fresno, California - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Fresno, California. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/fresno-california",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Fresno California - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Fresno California. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Fresno, California - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Fresno, California. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

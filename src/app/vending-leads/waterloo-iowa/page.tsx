@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Waterloo Iowa - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Waterloo Iowa. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Waterloo Iowa, vending leads Vending Leads Waterloo Iowa, vending locations Vending Leads Waterloo Iowa, vending opportunities Vending Leads Waterloo Iowa",
+  "title": "Vending Machine Leads in Waterloo, Iowa - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Waterloo, Iowa. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Waterloo Iowa, vending leads Waterloo Iowa, vending locations Waterloo Iowa, vending opportunities Waterloo Iowa",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/waterloo-iowa"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Waterloo Iowa - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Waterloo Iowa. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Waterloo, Iowa - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Waterloo, Iowa. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/waterloo-iowa",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Waterloo Iowa - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Waterloo Iowa. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Waterloo, Iowa - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Waterloo, Iowa. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

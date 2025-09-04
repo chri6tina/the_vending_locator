@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Saint Paul Minnesota - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Saint Paul Minnesota. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Saint Paul Minnesota, vending leads Vending Leads Saint Paul Minnesota, vending locations Vending Leads Saint Paul Minnesota, vending opportunities Vending Leads Saint Paul Minnesota",
+  "title": "Vending Machine Leads in Saint Paul, Minnesota - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Saint Paul, Minnesota. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Saint Paul Minnesota, vending leads Saint Paul Minnesota, vending locations Saint Paul Minnesota, vending opportunities Saint Paul Minnesota",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/saint-paul-minnesota"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Saint Paul Minnesota - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Saint Paul Minnesota. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Saint Paul, Minnesota - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Saint Paul, Minnesota. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/saint-paul-minnesota",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Saint Paul Minnesota - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Saint Paul Minnesota. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Saint Paul, Minnesota - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Saint Paul, Minnesota. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

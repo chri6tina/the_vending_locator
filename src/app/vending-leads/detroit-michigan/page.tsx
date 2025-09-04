@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Detroit Michigan - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Detroit Michigan. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Detroit Michigan, vending leads Vending Leads Detroit Michigan, vending locations Vending Leads Detroit Michigan, vending opportunities Vending Leads Detroit Michigan",
+  "title": "Vending Machine Leads in Detroit, Michigan - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Detroit, Michigan. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Detroit Michigan, vending leads Detroit Michigan, vending locations Detroit Michigan, vending opportunities Detroit Michigan",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/detroit-michigan"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Detroit Michigan - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Detroit Michigan. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Detroit, Michigan - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Detroit, Michigan. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/detroit-michigan",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Detroit Michigan - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Detroit Michigan. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Detroit, Michigan - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Detroit, Michigan. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

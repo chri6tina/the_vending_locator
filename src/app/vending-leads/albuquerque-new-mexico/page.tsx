@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Albuquerque New Mexico - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Albuquerque New Mexico. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Albuquerque New Mexico, vending leads Vending Leads Albuquerque New Mexico, vending locations Vending Leads Albuquerque New Mexico, vending opportunities Vending Leads Albuquerque New Mexico",
+  "title": "Vending Machine Leads in Albuquerque, New Mexico - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Albuquerque, New Mexico. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Albuquerque New Mexico, vending leads Albuquerque New Mexico, vending locations Albuquerque New Mexico, vending opportunities Albuquerque New Mexico",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/albuquerque-new-mexico"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Albuquerque New Mexico - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Albuquerque New Mexico. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Albuquerque, New Mexico - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Albuquerque, New Mexico. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/albuquerque-new-mexico",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Albuquerque New Mexico - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Albuquerque New Mexico. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Albuquerque, New Mexico - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Albuquerque, New Mexico. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

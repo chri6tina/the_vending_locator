@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Long Beach California - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Long Beach California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Long Beach California, vending leads Vending Leads Long Beach California, vending locations Vending Leads Long Beach California, vending opportunities Vending Leads Long Beach California",
+  "title": "Vending Machine Leads in Long Beach, California - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Long Beach, California. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Long Beach California, vending leads Long Beach California, vending locations Long Beach California, vending opportunities Long Beach California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/long-beach-california"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Long Beach California - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Long Beach California. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Long Beach, California - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Long Beach, California. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/long-beach-california",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Long Beach California - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Long Beach California. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Long Beach, California - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Long Beach, California. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

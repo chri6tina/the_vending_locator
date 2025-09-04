@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Oxnard California - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Oxnard California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Oxnard California, vending leads Vending Leads Oxnard California, vending locations Vending Leads Oxnard California, vending opportunities Vending Leads Oxnard California",
+  "title": "Vending Machine Leads in Oxnard, California - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Oxnard, California. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Oxnard California, vending leads Oxnard California, vending locations Oxnard California, vending opportunities Oxnard California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/oxnard-california"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Oxnard California - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Oxnard California. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Oxnard, California - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Oxnard, California. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/oxnard-california",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Oxnard California - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Oxnard California. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Oxnard, California - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Oxnard, California. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Durham North Carolina - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Durham North Carolina. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Durham North Carolina, vending leads Vending Leads Durham North Carolina, vending locations Vending Leads Durham North Carolina, vending opportunities Vending Leads Durham North Carolina",
+  "title": "Vending Machine Leads in Durham, North Carolina - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Durham, North Carolina. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Durham North Carolina, vending leads Durham North Carolina, vending locations Durham North Carolina, vending opportunities Durham North Carolina",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/durham-north-carolina"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Durham North Carolina - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Durham North Carolina. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Durham, North Carolina - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Durham, North Carolina. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/durham-north-carolina",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Durham North Carolina - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Durham North Carolina. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Durham, North Carolina - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Durham, North Carolina. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

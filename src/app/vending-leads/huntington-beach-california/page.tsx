@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Huntington Beach California - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Huntington Beach California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Huntington Beach California, vending leads Vending Leads Huntington Beach California, vending locations Vending Leads Huntington Beach California, vending opportunities Vending Leads Huntington Beach California",
+  "title": "Vending Machine Leads in Huntington Beach, California - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Huntington Beach, California. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Huntington Beach California, vending leads Huntington Beach California, vending locations Huntington Beach California, vending opportunities Huntington Beach California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/huntington-beach-california"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Huntington Beach California - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Huntington Beach California. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Huntington Beach, California - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Huntington Beach, California. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/huntington-beach-california",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Huntington Beach California - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Huntington Beach California. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Huntington Beach, California - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Huntington Beach, California. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

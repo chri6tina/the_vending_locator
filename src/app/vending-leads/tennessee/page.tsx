@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Tennessee - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Tennessee. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Tennessee, vending leads Vending Leads Tennessee, vending locations Vending Leads Tennessee, vending opportunities Vending Leads Tennessee",
+  "title": "Vending Machine Leads in Tennessee - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Tennessee. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Tennessee, vending leads Tennessee, vending locations Tennessee, vending opportunities Tennessee",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/tennessee"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Tennessee - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Tennessee. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Tennessee - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Tennessee. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/tennessee",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Tennessee - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Tennessee. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Tennessee - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Tennessee. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

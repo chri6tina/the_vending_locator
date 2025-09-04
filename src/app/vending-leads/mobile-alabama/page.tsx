@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Mobile Alabama - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Mobile Alabama. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Mobile Alabama, vending leads Vending Leads Mobile Alabama, vending locations Vending Leads Mobile Alabama, vending opportunities Vending Leads Mobile Alabama",
+  "title": "Vending Machine Leads in Mobile, Alabama - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Mobile, Alabama. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Mobile Alabama, vending leads Mobile Alabama, vending locations Mobile Alabama, vending opportunities Mobile Alabama",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/mobile-alabama"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Mobile Alabama - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Mobile Alabama. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Mobile, Alabama - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Mobile, Alabama. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/mobile-alabama",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Mobile Alabama - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Mobile Alabama. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Mobile, Alabama - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Mobile, Alabama. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Oklahoma City Oklahoma - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Oklahoma City Oklahoma. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Oklahoma City Oklahoma, vending leads Vending Leads Oklahoma City Oklahoma, vending locations Vending Leads Oklahoma City Oklahoma, vending opportunities Vending Leads Oklahoma City Oklahoma",
+  "title": "Vending Machine Leads in Oklahoma City, Oklahoma - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Oklahoma City, Oklahoma. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Oklahoma City Oklahoma, vending leads Oklahoma City Oklahoma, vending locations Oklahoma City Oklahoma, vending opportunities Oklahoma City Oklahoma",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/oklahoma-city-oklahoma"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Oklahoma City Oklahoma - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Oklahoma City Oklahoma. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Oklahoma City, Oklahoma - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Oklahoma City, Oklahoma. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/oklahoma-city-oklahoma",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Oklahoma City Oklahoma - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Oklahoma City Oklahoma. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Oklahoma City, Oklahoma - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Oklahoma City, Oklahoma. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

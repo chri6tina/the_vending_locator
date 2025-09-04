@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Colorado Springs Colorado - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Colorado Springs Colorado. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Colorado Springs Colorado, vending leads Vending Leads Colorado Springs Colorado, vending locations Vending Leads Colorado Springs Colorado, vending opportunities Vending Leads Colorado Springs Colorado",
+  "title": "Vending Machine Leads in Colorado Springs, Colorado - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Colorado Springs, Colorado. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Colorado Springs Colorado, vending leads Colorado Springs Colorado, vending locations Colorado Springs Colorado, vending opportunities Colorado Springs Colorado",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/colorado-springs-colorado"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Colorado Springs Colorado - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Colorado Springs Colorado. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Colorado Springs, Colorado - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Colorado Springs, Colorado. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/colorado-springs-colorado",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Colorado Springs Colorado - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Colorado Springs Colorado. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Colorado Springs, Colorado - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Colorado Springs, Colorado. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

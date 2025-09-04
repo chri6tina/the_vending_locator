@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Champaign Urbana Illinois - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Champaign Urbana Illinois. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Champaign Urbana Illinois, vending leads Vending Leads Champaign Urbana Illinois, vending locations Vending Leads Champaign Urbana Illinois, vending opportunities Vending Leads Champaign Urbana Illinois",
+  "title": "Vending Machine Leads in Champaign Urbana, Illinois - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Champaign Urbana, Illinois. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Champaign Urbana Illinois, vending leads Champaign Urbana Illinois, vending locations Champaign Urbana Illinois, vending opportunities Champaign Urbana Illinois",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/champaign-urbana-illinois"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Champaign Urbana Illinois - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Champaign Urbana Illinois. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Champaign Urbana, Illinois - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Champaign Urbana, Illinois. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/champaign-urbana-illinois",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Champaign Urbana Illinois - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Champaign Urbana Illinois. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Champaign Urbana, Illinois - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Champaign Urbana, Illinois. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

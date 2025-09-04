@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Miami Florida - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Miami Florida. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Miami Florida, vending leads Vending Leads Miami Florida, vending locations Vending Leads Miami Florida, vending opportunities Vending Leads Miami Florida",
+  "title": "Vending Machine Leads in Miami, Florida - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Miami, Florida. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Miami Florida, vending leads Miami Florida, vending locations Miami Florida, vending opportunities Miami Florida",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/miami-florida"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Miami Florida - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Miami Florida. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Miami, Florida - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Miami, Florida. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/miami-florida",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Miami Florida - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Miami Florida. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Miami, Florida - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Miami, Florida. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Mcallen Texas - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Mcallen Texas. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Mcallen Texas, vending leads Vending Leads Mcallen Texas, vending locations Vending Leads Mcallen Texas, vending opportunities Vending Leads Mcallen Texas",
+  "title": "Vending Machine Leads in Mcallen, Texas - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Mcallen, Texas. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Mcallen Texas, vending leads Mcallen Texas, vending locations Mcallen Texas, vending opportunities Mcallen Texas",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/mcallen-texas"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Mcallen Texas - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Mcallen Texas. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Mcallen, Texas - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Mcallen, Texas. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/mcallen-texas",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Mcallen Texas - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Mcallen Texas. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Mcallen, Texas - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Mcallen, Texas. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

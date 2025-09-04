@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Lubbock Texas - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Lubbock Texas. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Lubbock Texas, vending leads Vending Leads Lubbock Texas, vending locations Vending Leads Lubbock Texas, vending opportunities Vending Leads Lubbock Texas",
+  "title": "Vending Machine Leads in Lubbock, Texas - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Lubbock, Texas. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Lubbock Texas, vending leads Lubbock Texas, vending locations Lubbock Texas, vending opportunities Lubbock Texas",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/lubbock-texas"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Lubbock Texas - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Lubbock Texas. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Lubbock, Texas - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Lubbock, Texas. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/lubbock-texas",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Lubbock Texas - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Lubbock Texas. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Lubbock, Texas - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Lubbock, Texas. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Kalamazoo Michigan - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Kalamazoo Michigan. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Kalamazoo Michigan, vending leads Vending Leads Kalamazoo Michigan, vending locations Vending Leads Kalamazoo Michigan, vending opportunities Vending Leads Kalamazoo Michigan",
+  "title": "Vending Machine Leads in Kalamazoo, Michigan - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Kalamazoo, Michigan. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Kalamazoo Michigan, vending leads Kalamazoo Michigan, vending locations Kalamazoo Michigan, vending opportunities Kalamazoo Michigan",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/kalamazoo-michigan"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Kalamazoo Michigan - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Kalamazoo Michigan. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Kalamazoo, Michigan - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Kalamazoo, Michigan. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/kalamazoo-michigan",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Kalamazoo Michigan - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Kalamazoo Michigan. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Kalamazoo, Michigan - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Kalamazoo, Michigan. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

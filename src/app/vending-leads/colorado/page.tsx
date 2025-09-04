@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Colorado - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Colorado. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Colorado, vending leads Vending Leads Colorado, vending locations Vending Leads Colorado, vending opportunities Vending Leads Colorado",
+  "title": "Vending Machine Leads in Colorado - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Colorado. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Colorado, vending leads Colorado, vending locations Colorado, vending opportunities Colorado",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/colorado"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Colorado - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Colorado. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Colorado - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Colorado. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/colorado",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Colorado - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Colorado. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Colorado - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Colorado. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

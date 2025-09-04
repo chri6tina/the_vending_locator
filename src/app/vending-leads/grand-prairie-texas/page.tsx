@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Grand Prairie Texas - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Grand Prairie Texas. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Grand Prairie Texas, vending leads Vending Leads Grand Prairie Texas, vending locations Vending Leads Grand Prairie Texas, vending opportunities Vending Leads Grand Prairie Texas",
+  "title": "Vending Machine Leads in Grand Prairie, Texas - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Grand Prairie, Texas. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Grand Prairie Texas, vending leads Grand Prairie Texas, vending locations Grand Prairie Texas, vending opportunities Grand Prairie Texas",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/grand-prairie-texas"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Grand Prairie Texas - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Grand Prairie Texas. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Grand Prairie, Texas - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Grand Prairie, Texas. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/grand-prairie-texas",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Grand Prairie Texas - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Grand Prairie Texas. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Grand Prairie, Texas - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Grand Prairie, Texas. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

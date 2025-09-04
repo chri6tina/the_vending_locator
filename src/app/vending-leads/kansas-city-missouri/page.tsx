@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Kansas City Missouri - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Kansas City Missouri. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Kansas City Missouri, vending leads Vending Leads Kansas City Missouri, vending locations Vending Leads Kansas City Missouri, vending opportunities Vending Leads Kansas City Missouri",
+  "title": "Vending Machine Leads in Kansas City, Missouri - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Kansas City, Missouri. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Kansas City Missouri, vending leads Kansas City Missouri, vending locations Kansas City Missouri, vending opportunities Kansas City Missouri",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/kansas-city-missouri"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Kansas City Missouri - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Kansas City Missouri. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Kansas City, Missouri - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Kansas City, Missouri. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/kansas-city-missouri",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Kansas City Missouri - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Kansas City Missouri. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Kansas City, Missouri - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Kansas City, Missouri. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Lansing Michigan - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Lansing Michigan. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Lansing Michigan, vending leads Vending Leads Lansing Michigan, vending locations Vending Leads Lansing Michigan, vending opportunities Vending Leads Lansing Michigan",
+  "title": "Vending Machine Leads in Lansing, Michigan - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Lansing, Michigan. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Lansing Michigan, vending leads Lansing Michigan, vending locations Lansing Michigan, vending opportunities Lansing Michigan",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/lansing-michigan"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Lansing Michigan - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Lansing Michigan. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Lansing, Michigan - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Lansing, Michigan. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/lansing-michigan",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Lansing Michigan - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Lansing Michigan. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Lansing, Michigan - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Lansing, Michigan. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

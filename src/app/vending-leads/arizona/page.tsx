@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Arizona - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Arizona. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Arizona, vending leads Vending Leads Arizona, vending locations Vending Leads Arizona, vending opportunities Vending Leads Arizona",
+  "title": "Vending Machine Leads in Arizona - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Arizona. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Arizona, vending leads Arizona, vending locations Arizona, vending opportunities Arizona",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/arizona"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Arizona - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Arizona. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Arizona - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Arizona. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/arizona",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Arizona - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Arizona. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Arizona - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Arizona. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Laredo Texas - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Laredo Texas. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Laredo Texas, vending leads Vending Leads Laredo Texas, vending locations Vending Leads Laredo Texas, vending opportunities Vending Leads Laredo Texas",
+  "title": "Vending Machine Leads in Laredo, Texas - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Laredo, Texas. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Laredo Texas, vending leads Laredo Texas, vending locations Laredo Texas, vending opportunities Laredo Texas",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/laredo-texas"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Laredo Texas - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Laredo Texas. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Laredo, Texas - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Laredo, Texas. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/laredo-texas",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Laredo Texas - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Laredo Texas. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Laredo, Texas - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Laredo, Texas. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

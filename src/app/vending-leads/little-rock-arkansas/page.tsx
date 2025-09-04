@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Little Rock Arkansas - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Little Rock Arkansas. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Little Rock Arkansas, vending leads Vending Leads Little Rock Arkansas, vending locations Vending Leads Little Rock Arkansas, vending opportunities Vending Leads Little Rock Arkansas",
+  "title": "Vending Machine Leads in Little Rock, Arkansas - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Little Rock, Arkansas. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Little Rock Arkansas, vending leads Little Rock Arkansas, vending locations Little Rock Arkansas, vending opportunities Little Rock Arkansas",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/little-rock-arkansas"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Little Rock Arkansas - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Little Rock Arkansas. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Little Rock, Arkansas - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Little Rock, Arkansas. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/little-rock-arkansas",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Little Rock Arkansas - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Little Rock Arkansas. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Little Rock, Arkansas - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Little Rock, Arkansas. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Minnesota - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Minnesota. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Minnesota, vending leads Vending Leads Minnesota, vending locations Vending Leads Minnesota, vending opportunities Vending Leads Minnesota",
+  "title": "Vending Machine Leads in Minnesota - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Minnesota. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Minnesota, vending leads Minnesota, vending locations Minnesota, vending opportunities Minnesota",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/minnesota"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Minnesota - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Minnesota. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Minnesota - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Minnesota. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/minnesota",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Minnesota - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Minnesota. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Minnesota - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Minnesota. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

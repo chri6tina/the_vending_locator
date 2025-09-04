@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, New York - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, New York. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads New York, vending leads Vending Leads New York, vending locations Vending Leads New York, vending opportunities Vending Leads New York",
+  "title": "Vending Machine Leads in New York - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in New York. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines New York, vending leads New York, vending locations New York, vending opportunities New York",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/new-york"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, New York - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, New York. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in New York - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in New York. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/new-york",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, New York - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, New York. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in New York - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in New York. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

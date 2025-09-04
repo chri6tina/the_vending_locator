@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Fremont California - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Fremont California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Fremont California, vending leads Vending Leads Fremont California, vending locations Vending Leads Fremont California, vending opportunities Vending Leads Fremont California",
+  "title": "Vending Machine Leads in Fremont, California - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Fremont, California. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Fremont California, vending leads Fremont California, vending locations Fremont California, vending opportunities Fremont California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/fremont-california"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Fremont California - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Fremont California. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Fremont, California - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Fremont, California. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/fremont-california",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Fremont California - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Fremont California. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Fremont, California - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Fremont, California. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

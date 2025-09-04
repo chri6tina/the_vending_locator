@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Salt Lake City Utah - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Salt Lake City Utah. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Salt Lake City Utah, vending leads Vending Leads Salt Lake City Utah, vending locations Vending Leads Salt Lake City Utah, vending opportunities Vending Leads Salt Lake City Utah",
+  "title": "Vending Machine Leads in Salt Lake City, Utah - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Salt Lake City, Utah. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Salt Lake City Utah, vending leads Salt Lake City Utah, vending locations Salt Lake City Utah, vending opportunities Salt Lake City Utah",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/salt-lake-city-utah"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Salt Lake City Utah - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Salt Lake City Utah. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Salt Lake City, Utah - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Salt Lake City, Utah. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/salt-lake-city-utah",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Salt Lake City Utah - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Salt Lake City Utah. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Salt Lake City, Utah - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Salt Lake City, Utah. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Gainesville Florida - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Gainesville Florida. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Gainesville Florida, vending leads Vending Leads Gainesville Florida, vending locations Vending Leads Gainesville Florida, vending opportunities Vending Leads Gainesville Florida",
+  "title": "Vending Machine Leads in Gainesville, Florida - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Gainesville, Florida. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Gainesville Florida, vending leads Gainesville Florida, vending locations Gainesville Florida, vending opportunities Gainesville Florida",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/gainesville-florida"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Gainesville Florida - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Gainesville Florida. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Gainesville, Florida - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Gainesville, Florida. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/gainesville-florida",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Gainesville Florida - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Gainesville Florida. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Gainesville, Florida - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Gainesville, Florida. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

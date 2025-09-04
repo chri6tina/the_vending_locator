@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Alaska - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Alaska. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Alaska, vending leads Vending Leads Alaska, vending locations Vending Leads Alaska, vending opportunities Vending Leads Alaska",
+  "title": "Vending Machine Leads in Alaska - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Alaska. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Alaska, vending leads Alaska, vending locations Alaska, vending opportunities Alaska",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/alaska"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Alaska - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Alaska. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Alaska - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Alaska. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/alaska",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Alaska - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Alaska. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Alaska - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Alaska. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

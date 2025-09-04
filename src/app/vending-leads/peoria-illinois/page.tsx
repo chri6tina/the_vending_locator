@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Peoria Illinois - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Peoria Illinois. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Peoria Illinois, vending leads Vending Leads Peoria Illinois, vending locations Vending Leads Peoria Illinois, vending opportunities Vending Leads Peoria Illinois",
+  "title": "Vending Machine Leads in Peoria, Illinois - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Peoria, Illinois. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Peoria Illinois, vending leads Peoria Illinois, vending locations Peoria Illinois, vending opportunities Peoria Illinois",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/peoria-illinois"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Peoria Illinois - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Peoria Illinois. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Peoria, Illinois - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Peoria, Illinois. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/peoria-illinois",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Peoria Illinois - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Peoria Illinois. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Peoria, Illinois - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Peoria, Illinois. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

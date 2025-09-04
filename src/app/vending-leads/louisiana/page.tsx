@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Louisiana - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Louisiana. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Louisiana, vending leads Vending Leads Louisiana, vending locations Vending Leads Louisiana, vending opportunities Vending Leads Louisiana",
+  "title": "Vending Machine Leads in Louisiana - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Louisiana. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Louisiana, vending leads Louisiana, vending locations Louisiana, vending opportunities Louisiana",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/louisiana"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Louisiana - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Louisiana. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Louisiana - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Louisiana. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/louisiana",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Louisiana - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Louisiana. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Louisiana - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Louisiana. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

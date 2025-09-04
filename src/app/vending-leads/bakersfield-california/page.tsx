@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Bakersfield California - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Bakersfield California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Bakersfield California, vending leads Vending Leads Bakersfield California, vending locations Vending Leads Bakersfield California, vending opportunities Vending Leads Bakersfield California",
+  "title": "Vending Machine Leads in Bakersfield, California - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Bakersfield, California. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Bakersfield California, vending leads Bakersfield California, vending locations Bakersfield California, vending opportunities Bakersfield California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/bakersfield-california"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Bakersfield California - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Bakersfield California. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Bakersfield, California - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Bakersfield, California. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/bakersfield-california",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Bakersfield California - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Bakersfield California. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Bakersfield, California - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Bakersfield, California. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

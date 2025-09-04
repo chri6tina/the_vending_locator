@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Charlotte North Carolina - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Charlotte North Carolina. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Charlotte North Carolina, vending leads Vending Leads Charlotte North Carolina, vending locations Vending Leads Charlotte North Carolina, vending opportunities Vending Leads Charlotte North Carolina",
+  "title": "Vending Machine Leads in Charlotte, North Carolina - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Charlotte, North Carolina. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Charlotte North Carolina, vending leads Charlotte North Carolina, vending locations Charlotte North Carolina, vending opportunities Charlotte North Carolina",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/charlotte-north-carolina"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Charlotte North Carolina - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Charlotte North Carolina. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Charlotte, North Carolina - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Charlotte, North Carolina. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/charlotte-north-carolina",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Charlotte North Carolina - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Charlotte North Carolina. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Charlotte, North Carolina - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Charlotte, North Carolina. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

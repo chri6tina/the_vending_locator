@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Austin Texas - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Austin Texas. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Austin Texas, vending leads Vending Leads Austin Texas, vending locations Vending Leads Austin Texas, vending opportunities Vending Leads Austin Texas",
+  "title": "Vending Machine Leads in Austin, Texas - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Austin, Texas. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Austin Texas, vending leads Austin Texas, vending locations Austin Texas, vending opportunities Austin Texas",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/austin-texas"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Austin Texas - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Austin Texas. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Austin, Texas - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Austin, Texas. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/austin-texas",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Austin Texas - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Austin Texas. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Austin, Texas - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Austin, Texas. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

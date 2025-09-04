@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Bridgeport Connecticut - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Bridgeport Connecticut. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Bridgeport Connecticut, vending leads Vending Leads Bridgeport Connecticut, vending locations Vending Leads Bridgeport Connecticut, vending opportunities Vending Leads Bridgeport Connecticut",
+  "title": "Vending Machine Leads in Bridgeport, Connecticut - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Bridgeport, Connecticut. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Bridgeport Connecticut, vending leads Bridgeport Connecticut, vending locations Bridgeport Connecticut, vending opportunities Bridgeport Connecticut",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/bridgeport-connecticut"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Bridgeport Connecticut - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Bridgeport Connecticut. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Bridgeport, Connecticut - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Bridgeport, Connecticut. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/bridgeport-connecticut",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Bridgeport Connecticut - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Bridgeport Connecticut. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Bridgeport, Connecticut - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Bridgeport, Connecticut. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

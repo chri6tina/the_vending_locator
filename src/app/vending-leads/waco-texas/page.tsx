@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Waco Texas - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Waco Texas. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Waco Texas, vending leads Vending Leads Waco Texas, vending locations Vending Leads Waco Texas, vending opportunities Vending Leads Waco Texas",
+  "title": "Vending Machine Leads in Waco, Texas - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Waco, Texas. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Waco Texas, vending leads Waco Texas, vending locations Waco Texas, vending opportunities Waco Texas",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/waco-texas"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Waco Texas - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Waco Texas. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Waco, Texas - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Waco, Texas. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/waco-texas",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Waco Texas - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Waco Texas. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Waco, Texas - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Waco, Texas. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

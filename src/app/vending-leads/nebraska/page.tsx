@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Nebraska - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Nebraska. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Nebraska, vending leads Vending Leads Nebraska, vending locations Vending Leads Nebraska, vending opportunities Vending Leads Nebraska",
+  "title": "Vending Machine Leads in Nebraska - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Nebraska. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Nebraska, vending leads Nebraska, vending locations Nebraska, vending opportunities Nebraska",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/nebraska"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Nebraska - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Nebraska. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Nebraska - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Nebraska. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/nebraska",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Nebraska - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Nebraska. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Nebraska - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Nebraska. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

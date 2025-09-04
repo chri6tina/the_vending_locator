@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, San Antonio Texas - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, San Antonio Texas. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads San Antonio Texas, vending leads Vending Leads San Antonio Texas, vending locations Vending Leads San Antonio Texas, vending opportunities Vending Leads San Antonio Texas",
+  "title": "Vending Machine Leads in San Antonio, Texas - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in San Antonio, Texas. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines San Antonio Texas, vending leads San Antonio Texas, vending locations San Antonio Texas, vending opportunities San Antonio Texas",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/san-antonio-texas"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, San Antonio Texas - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, San Antonio Texas. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in San Antonio, Texas - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in San Antonio, Texas. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/san-antonio-texas",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, San Antonio Texas - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, San Antonio Texas. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in San Antonio, Texas - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in San Antonio, Texas. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

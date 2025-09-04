@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Massachusetts - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Massachusetts. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Massachusetts, vending leads Vending Leads Massachusetts, vending locations Vending Leads Massachusetts, vending opportunities Vending Leads Massachusetts",
+  "title": "Vending Machine Leads in Massachusetts - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Massachusetts. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Massachusetts, vending leads Massachusetts, vending locations Massachusetts, vending opportunities Massachusetts",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/massachusetts"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Massachusetts - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Massachusetts. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Massachusetts - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Massachusetts. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/massachusetts",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Massachusetts - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Massachusetts. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Massachusetts - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Massachusetts. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

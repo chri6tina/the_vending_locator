@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Casper Wyoming - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Casper Wyoming. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Casper Wyoming, vending leads Vending Leads Casper Wyoming, vending locations Vending Leads Casper Wyoming, vending opportunities Vending Leads Casper Wyoming",
+  "title": "Vending Machine Leads in Casper, Wyoming - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Casper, Wyoming. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Casper Wyoming, vending leads Casper Wyoming, vending locations Casper Wyoming, vending opportunities Casper Wyoming",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/casper-wyoming"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Casper Wyoming - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Casper Wyoming. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Casper, Wyoming - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Casper, Wyoming. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/casper-wyoming",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Casper Wyoming - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Casper Wyoming. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Casper, Wyoming - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Casper, Wyoming. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

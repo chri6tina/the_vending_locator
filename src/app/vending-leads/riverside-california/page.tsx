@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Riverside California - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Riverside California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Riverside California, vending leads Vending Leads Riverside California, vending locations Vending Leads Riverside California, vending opportunities Vending Leads Riverside California",
+  "title": "Vending Machine Leads in Riverside, California - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Riverside, California. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Riverside California, vending leads Riverside California, vending locations Riverside California, vending opportunities Riverside California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/riverside-california"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Riverside California - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Riverside California. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Riverside, California - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Riverside, California. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/riverside-california",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Riverside California - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Riverside California. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Riverside, California - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Riverside, California. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

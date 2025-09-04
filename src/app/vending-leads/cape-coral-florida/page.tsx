@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Cape Coral Florida - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Cape Coral Florida. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Cape Coral Florida, vending leads Vending Leads Cape Coral Florida, vending locations Vending Leads Cape Coral Florida, vending opportunities Vending Leads Cape Coral Florida",
+  "title": "Vending Machine Leads in Cape Coral, Florida - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Cape Coral, Florida. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Cape Coral Florida, vending leads Cape Coral Florida, vending locations Cape Coral Florida, vending opportunities Cape Coral Florida",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/cape-coral-florida"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Cape Coral Florida - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Cape Coral Florida. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Cape Coral, Florida - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Cape Coral, Florida. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/cape-coral-florida",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Cape Coral Florida - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Cape Coral Florida. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Cape Coral, Florida - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Cape Coral, Florida. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

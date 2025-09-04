@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Moline Illinois - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Moline Illinois. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Moline Illinois, vending leads Vending Leads Moline Illinois, vending locations Vending Leads Moline Illinois, vending opportunities Vending Leads Moline Illinois",
+  "title": "Vending Machine Leads in Moline, Illinois - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Moline, Illinois. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Moline Illinois, vending leads Moline Illinois, vending locations Moline Illinois, vending opportunities Moline Illinois",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/moline-illinois"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Moline Illinois - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Moline Illinois. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Moline, Illinois - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Moline, Illinois. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/moline-illinois",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Moline Illinois - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Moline Illinois. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Moline, Illinois - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Moline, Illinois. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

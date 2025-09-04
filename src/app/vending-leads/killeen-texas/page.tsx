@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Killeen Texas - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Killeen Texas. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Killeen Texas, vending leads Vending Leads Killeen Texas, vending locations Vending Leads Killeen Texas, vending opportunities Vending Leads Killeen Texas",
+  "title": "Vending Machine Leads in Killeen, Texas - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Killeen, Texas. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Killeen Texas, vending leads Killeen Texas, vending locations Killeen Texas, vending opportunities Killeen Texas",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/killeen-texas"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Killeen Texas - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Killeen Texas. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Killeen, Texas - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Killeen, Texas. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/killeen-texas",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Killeen Texas - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Killeen Texas. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Killeen, Texas - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Killeen, Texas. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Fort Lauderdale Florida - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Fort Lauderdale Florida. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Fort Lauderdale Florida, vending leads Vending Leads Fort Lauderdale Florida, vending locations Vending Leads Fort Lauderdale Florida, vending opportunities Vending Leads Fort Lauderdale Florida",
+  "title": "Vending Machine Leads in Fort Lauderdale, Florida - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Fort Lauderdale, Florida. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Fort Lauderdale Florida, vending leads Fort Lauderdale Florida, vending locations Fort Lauderdale Florida, vending opportunities Fort Lauderdale Florida",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/fort-lauderdale-florida"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Fort Lauderdale Florida - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Fort Lauderdale Florida. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Fort Lauderdale, Florida - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Fort Lauderdale, Florida. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/fort-lauderdale-florida",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Fort Lauderdale Florida - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Fort Lauderdale Florida. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Fort Lauderdale, Florida - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Fort Lauderdale, Florida. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

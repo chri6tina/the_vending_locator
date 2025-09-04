@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Maine - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Maine. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Maine, vending leads Vending Leads Maine, vending locations Vending Leads Maine, vending opportunities Vending Leads Maine",
+  "title": "Vending Machine Leads in Maine - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Maine. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Maine, vending leads Maine, vending locations Maine, vending opportunities Maine",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/maine"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Maine - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Maine. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Maine - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Maine. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/maine",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Maine - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Maine. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Maine - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Maine. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

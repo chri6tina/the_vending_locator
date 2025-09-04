@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Idaho Falls Idaho - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Idaho Falls Idaho. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Idaho Falls Idaho, vending leads Vending Leads Idaho Falls Idaho, vending locations Vending Leads Idaho Falls Idaho, vending opportunities Vending Leads Idaho Falls Idaho",
+  "title": "Vending Machine Leads in Idaho Falls, Idaho - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Idaho Falls, Idaho. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Idaho Falls Idaho, vending leads Idaho Falls Idaho, vending locations Idaho Falls Idaho, vending opportunities Idaho Falls Idaho",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/idaho-falls-idaho"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Idaho Falls Idaho - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Idaho Falls Idaho. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Idaho Falls, Idaho - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Idaho Falls, Idaho. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/idaho-falls-idaho",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Idaho Falls Idaho - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Idaho Falls Idaho. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Idaho Falls, Idaho - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Idaho Falls, Idaho. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Irving Texas - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Irving Texas. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Irving Texas, vending leads Vending Leads Irving Texas, vending locations Vending Leads Irving Texas, vending opportunities Vending Leads Irving Texas",
+  "title": "Vending Machine Leads in Irving, Texas - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Irving, Texas. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Irving Texas, vending leads Irving Texas, vending locations Irving Texas, vending opportunities Irving Texas",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/irving-texas"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Irving Texas - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Irving Texas. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Irving, Texas - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Irving, Texas. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/irving-texas",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Irving Texas - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Irving Texas. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Irving, Texas - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Irving, Texas. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

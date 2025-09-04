@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Louisville Kentucky - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Louisville Kentucky. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Louisville Kentucky, vending leads Vending Leads Louisville Kentucky, vending locations Vending Leads Louisville Kentucky, vending opportunities Vending Leads Louisville Kentucky",
+  "title": "Vending Machine Leads in Louisville, Kentucky - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Louisville, Kentucky. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Louisville Kentucky, vending leads Louisville Kentucky, vending locations Louisville Kentucky, vending opportunities Louisville Kentucky",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/louisville-kentucky"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Louisville Kentucky - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Louisville Kentucky. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Louisville, Kentucky - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Louisville, Kentucky. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/louisville-kentucky",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Louisville Kentucky - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Louisville Kentucky. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Louisville, Kentucky - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Louisville, Kentucky. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

@@ -366,7 +366,7 @@ export default function TexasVendingLeadsPage() {
         </section>
 
         {/* Hot Leads Section */}
-        <section id="pricing" className="py-16 bg-warm-white">
+        <section id="hot-leads" className="py-16 bg-warm-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <motion.h2
@@ -420,7 +420,7 @@ export default function TexasVendingLeadsPage() {
         </section>
 
         {/* FAQ Section */}
-        <section id="pricing" className="py-16 bg-warm-white">
+        <section id="faq" className="py-16 bg-warm-white">
           <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <motion.h2

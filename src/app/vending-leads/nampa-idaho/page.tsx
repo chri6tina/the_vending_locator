@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Nampa Idaho - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Nampa Idaho. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Nampa Idaho, vending leads Vending Leads Nampa Idaho, vending locations Vending Leads Nampa Idaho, vending opportunities Vending Leads Nampa Idaho",
+  "title": "Vending Machine Leads in Nampa, Idaho - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Nampa, Idaho. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Nampa Idaho, vending leads Nampa Idaho, vending locations Nampa Idaho, vending opportunities Nampa Idaho",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/nampa-idaho"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Nampa Idaho - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Nampa Idaho. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Nampa, Idaho - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Nampa, Idaho. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/nampa-idaho",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Nampa Idaho - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Nampa Idaho. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Nampa, Idaho - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Nampa, Idaho. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

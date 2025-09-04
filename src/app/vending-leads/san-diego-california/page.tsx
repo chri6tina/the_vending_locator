@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, San Diego California - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, San Diego California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads San Diego California, vending leads Vending Leads San Diego California, vending locations Vending Leads San Diego California, vending opportunities Vending Leads San Diego California",
+  "title": "Vending Machine Leads in San Diego, California - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in San Diego, California. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines San Diego California, vending leads San Diego California, vending locations San Diego California, vending opportunities San Diego California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/san-diego-california"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, San Diego California - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, San Diego California. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in San Diego, California - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in San Diego, California. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/san-diego-california",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, San Diego California - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, San Diego California. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in San Diego, California - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in San Diego, California. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

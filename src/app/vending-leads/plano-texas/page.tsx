@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Plano Texas - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Plano Texas. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Plano Texas, vending leads Vending Leads Plano Texas, vending locations Vending Leads Plano Texas, vending opportunities Vending Leads Plano Texas",
+  "title": "Vending Machine Leads in Plano, Texas - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Plano, Texas. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Plano Texas, vending leads Plano Texas, vending locations Plano Texas, vending opportunities Plano Texas",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/plano-texas"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Plano Texas - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Plano Texas. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Plano, Texas - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Plano, Texas. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/plano-texas",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Plano Texas - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Plano Texas. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Plano, Texas - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Plano, Texas. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

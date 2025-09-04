@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Pocatello Idaho - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Pocatello Idaho. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Pocatello Idaho, vending leads Vending Leads Pocatello Idaho, vending locations Vending Leads Pocatello Idaho, vending opportunities Vending Leads Pocatello Idaho",
+  "title": "Vending Machine Leads in Pocatello, Idaho - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Pocatello, Idaho. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Pocatello Idaho, vending leads Pocatello Idaho, vending locations Pocatello Idaho, vending opportunities Pocatello Idaho",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/pocatello-idaho"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Pocatello Idaho - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Pocatello Idaho. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Pocatello, Idaho - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Pocatello, Idaho. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/pocatello-idaho",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Pocatello Idaho - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Pocatello Idaho. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Pocatello, Idaho - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Pocatello, Idaho. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

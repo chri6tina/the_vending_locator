@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Rochester Minnesota - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Rochester Minnesota. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Rochester Minnesota, vending leads Vending Leads Rochester Minnesota, vending locations Vending Leads Rochester Minnesota, vending opportunities Vending Leads Rochester Minnesota",
+  "title": "Vending Machine Leads in Rochester, Minnesota - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Rochester, Minnesota. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Rochester Minnesota, vending leads Rochester Minnesota, vending locations Rochester Minnesota, vending opportunities Rochester Minnesota",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/rochester-minnesota"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Rochester Minnesota - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Rochester Minnesota. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Rochester, Minnesota - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Rochester, Minnesota. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/rochester-minnesota",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Rochester Minnesota - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Rochester Minnesota. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Rochester, Minnesota - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Rochester, Minnesota. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

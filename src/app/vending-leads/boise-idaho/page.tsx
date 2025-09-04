@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Boise Idaho - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Boise Idaho. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Boise Idaho, vending leads Vending Leads Boise Idaho, vending locations Vending Leads Boise Idaho, vending opportunities Vending Leads Boise Idaho",
+  "title": "Vending Machine Leads in Boise, Idaho - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Boise, Idaho. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Boise Idaho, vending leads Boise Idaho, vending locations Boise Idaho, vending opportunities Boise Idaho",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/boise-idaho"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Boise Idaho - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Boise Idaho. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Boise, Idaho - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Boise, Idaho. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/boise-idaho",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Boise Idaho - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Boise Idaho. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Boise, Idaho - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Boise, Idaho. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

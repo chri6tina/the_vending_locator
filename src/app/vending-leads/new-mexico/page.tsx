@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, New Mexico - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, New Mexico. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads New Mexico, vending leads Vending Leads New Mexico, vending locations Vending Leads New Mexico, vending opportunities Vending Leads New Mexico",
+  "title": "Vending Machine Leads in New Mexico - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in New Mexico. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines New Mexico, vending leads New Mexico, vending locations New Mexico, vending opportunities New Mexico",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/new-mexico"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, New Mexico - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, New Mexico. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in New Mexico - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in New Mexico. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/new-mexico",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, New Mexico - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, New Mexico. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in New Mexico - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in New Mexico. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

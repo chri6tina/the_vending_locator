@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, New Haven Connecticut - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, New Haven Connecticut. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads New Haven Connecticut, vending leads Vending Leads New Haven Connecticut, vending locations Vending Leads New Haven Connecticut, vending opportunities Vending Leads New Haven Connecticut",
+  "title": "Vending Machine Leads in New Haven, Connecticut - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in New Haven, Connecticut. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines New Haven Connecticut, vending leads New Haven Connecticut, vending locations New Haven Connecticut, vending opportunities New Haven Connecticut",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/new-haven-connecticut"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, New Haven Connecticut - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, New Haven Connecticut. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in New Haven, Connecticut - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in New Haven, Connecticut. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/new-haven-connecticut",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, New Haven Connecticut - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, New Haven Connecticut. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in New Haven, Connecticut - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in New Haven, Connecticut. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

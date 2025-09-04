@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Corpus Christi Texas - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Corpus Christi Texas. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Corpus Christi Texas, vending leads Vending Leads Corpus Christi Texas, vending locations Vending Leads Corpus Christi Texas, vending opportunities Vending Leads Corpus Christi Texas",
+  "title": "Vending Machine Leads in Corpus Christi, Texas - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Corpus Christi, Texas. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Corpus Christi Texas, vending leads Corpus Christi Texas, vending locations Corpus Christi Texas, vending opportunities Corpus Christi Texas",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/corpus-christi-texas"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Corpus Christi Texas - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Corpus Christi Texas. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Corpus Christi, Texas - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Corpus Christi, Texas. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/corpus-christi-texas",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Corpus Christi Texas - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Corpus Christi Texas. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Corpus Christi, Texas - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Corpus Christi, Texas. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

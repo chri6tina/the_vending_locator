@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Cambridge Massachusetts - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Cambridge Massachusetts. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Cambridge Massachusetts, vending leads Vending Leads Cambridge Massachusetts, vending locations Vending Leads Cambridge Massachusetts, vending opportunities Vending Leads Cambridge Massachusetts",
+  "title": "Vending Machine Leads in Cambridge, Massachusetts - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Cambridge, Massachusetts. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Cambridge Massachusetts, vending leads Cambridge Massachusetts, vending locations Cambridge Massachusetts, vending opportunities Cambridge Massachusetts",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/cambridge-massachusetts"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Cambridge Massachusetts - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Cambridge Massachusetts. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Cambridge, Massachusetts - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Cambridge, Massachusetts. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/cambridge-massachusetts",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Cambridge Massachusetts - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Cambridge Massachusetts. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Cambridge, Massachusetts - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Cambridge, Massachusetts. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,

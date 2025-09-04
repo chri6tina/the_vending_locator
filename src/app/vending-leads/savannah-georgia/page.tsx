@@ -2,23 +2,23 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  "title": "Vending Machine Leads in Vending Leads, Savannah Georgia - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Vending Leads, Savannah Georgia. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Vending Leads Savannah Georgia, vending leads Vending Leads Savannah Georgia, vending locations Vending Leads Savannah Georgia, vending opportunities Vending Leads Savannah Georgia",
+  "title": "Vending Machine Leads in Savannah, Georgia - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Savannah, Georgia. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Savannah Georgia, vending leads Savannah Georgia, vending locations Savannah Georgia, vending opportunities Savannah Georgia",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/savannah-georgia"
   },
   "openGraph": {
-    "title": "Vending Machine Leads in Vending Leads, Savannah Georgia - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Savannah Georgia. Find qualified businesses for vending machine placement.",
+    "title": "Vending Machine Leads in Savannah, Georgia - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Savannah, Georgia. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/savannah-georgia",
     "siteName": "The Vending Locator",
     "type": "website"
   },
   "twitter": {
     "card": "summary_large_image",
-    "title": "Vending Machine Leads in Vending Leads, Savannah Georgia - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Vending Leads, Savannah Georgia. Find qualified businesses for vending machine placement."
+    "title": "Vending Machine Leads in Savannah, Georgia - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Savannah, Georgia. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,
