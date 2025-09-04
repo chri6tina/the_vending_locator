@@ -189,7 +189,54 @@ export default function PageClient() {
                 <div className="mt-8">
                   <div className="text-xl font-playfair font-bold text-charcoal mb-3">Pricing comparison</div>
                   <div className="text-stone text-sm mb-4">Generalized comparison for educational purposes. Specific competitor offerings vary by region and agreement.</div>
-                  <div className="overflow-x-auto border border-gray-200 rounded-xl bg-white shadow-sm">
+                  {/* Mobile cards */}
+                  <div className="lg:hidden space-y-4">
+                    <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-sm">
+                      <div className="text-charcoal font-semibold mb-2">The Vending Locator</div>
+                      <ul className="text-sm text-stone space-y-1 list-disc pl-5">
+                        <li><span className="text-charcoal font-medium">Pricing model:</span> One‑time packages</li>
+                        <li><span className="text-charcoal font-medium">Typical cost:</span> $19–$899</li>
+                        <li><span className="text-charcoal font-medium">Lead ownership:</span> You own your list</li>
+                        <li><span className="text-charcoal font-medium">Delivery time:</span> ~3–5 days</li>
+                        <li><span className="text-charcoal font-medium">Contracts & scripts:</span> Included on higher tiers</li>
+                        <li><span className="text-charcoal font-medium">Control & targeting:</span> You choose focus areas</li>
+                        <li><span className="text-charcoal font-medium">Refund policy:</span> Non‑refundable research</li>
+                        <li><span className="text-charcoal font-medium">Hot leads availability:</span> Limited, market‑dependent</li>
+                        <li><span className="text-charcoal font-medium">Support:</span> Priority email on higher tiers</li>
+                      </ul>
+                    </div>
+                    <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-sm">
+                      <div className="text-charcoal font-semibold mb-2">Traditional Locator Service</div>
+                      <ul className="text-sm text-stone space-y-1 list-disc pl-5">
+                        <li><span className="text-charcoal font-medium">Pricing model:</span> Monthly subscription or per‑placement</li>
+                        <li><span className="text-charcoal font-medium">Typical cost:</span> $99–$299/mo or $1k+ onboarding</li>
+                        <li><span className="text-charcoal font-medium">Lead ownership:</span> Often limited access</li>
+                        <li><span className="text-charcoal font-medium">Delivery time:</span> Varies (often weeks)</li>
+                        <li><span className="text-charcoal font-medium">Contracts & scripts:</span> Rarely included</li>
+                        <li><span className="text-charcoal font-medium">Control & targeting:</span> Limited targeting</li>
+                        <li><span className="text-charcoal font-medium">Refund policy:</span> Typically non‑refundable</li>
+                        <li><span className="text-charcoal font-medium">Hot leads availability:</span> Uncommon</li>
+                        <li><span className="text-charcoal font-medium">Support:</span> Basic/ticket system</li>
+                      </ul>
+                    </div>
+                    <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-sm">
+                      <div className="text-charcoal font-semibold mb-2">Full‑service Agency</div>
+                      <ul className="text-sm text-stone space-y-1 list-disc pl-5">
+                        <li><span className="text-charcoal font-medium">Pricing model:</span> Retainer + placement fees</li>
+                        <li><span className="text-charcoal font-medium">Typical cost:</span> $2k–$10k+ depending on scope</li>
+                        <li><span className="text-charcoal font-medium">Lead ownership:</span> Agency‑managed</li>
+                        <li><span className="text-charcoal font-medium">Delivery time:</span> Varies (often weeks)</li>
+                        <li><span className="text-charcoal font-medium">Contracts & scripts:</span> Often extra cost</li>
+                        <li><span className="text-charcoal font-medium">Control & targeting:</span> Agency decides</li>
+                        <li><span className="text-charcoal font-medium">Refund policy:</span> Typically non‑refundable</li>
+                        <li><span className="text-charcoal font-medium">Hot leads availability:</span> Sometimes via upsell</li>
+                        <li><span className="text-charcoal font-medium">Support:</span> Account manager (retainer)</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  {/* Desktop table */}
+                  <div className="hidden lg:block overflow-x-auto border border-gray-200 rounded-xl bg-white shadow-sm">
                     <table className="w-full text-sm">
                       <thead>
                         <tr className="bg-gray-50 text-charcoal">
@@ -202,55 +249,55 @@ export default function PageClient() {
                       <tbody className="divide-y divide-gray-100">
                         <tr>
                           <td className="px-4 py-3 text-charcoal font-medium">Pricing model</td>
-                          <td className="px-4 py-3">One‑time packages</td>
+                          <td className="px-4 py-3 bg-cream/40 font-medium">One‑time packages</td>
                           <td className="px-4 py-3">Monthly subscription or per‑placement</td>
                           <td className="px-4 py-3">Retainer + placement fees</td>
                         </tr>
                         <tr>
                           <td className="px-4 py-3 text-charcoal font-medium">Typical cost</td>
-                          <td className="px-4 py-3">$19–$899</td>
+                          <td className="px-4 py-3 bg-cream/40 font-medium">$19–$899</td>
                           <td className="px-4 py-3">$99–$299/mo or $1k+ onboarding</td>
                           <td className="px-4 py-3">$2k–$10k+ depending on scope</td>
                         </tr>
                         <tr>
                           <td className="px-4 py-3 text-charcoal font-medium">Lead ownership</td>
-                          <td className="px-4 py-3">You own your list</td>
+                          <td className="px-4 py-3 bg-cream/40 font-medium">You own your list</td>
                           <td className="px-4 py-3">Often limited access</td>
                           <td className="px-4 py-3">Agency‑managed</td>
                         </tr>
                         <tr>
                           <td className="px-4 py-3 text-charcoal font-medium">Delivery time</td>
-                          <td className="px-4 py-3">~3–5 days</td>
+                          <td className="px-4 py-3 bg-cream/40 font-medium">~3–5 days</td>
                           <td className="px-4 py-3">Varies (often weeks)</td>
                           <td className="px-4 py-3">Varies (often weeks)</td>
                         </tr>
                         <tr>
                           <td className="px-4 py-3 text-charcoal font-medium">Contracts & scripts</td>
-                          <td className="px-4 py-3">Included on higher tiers</td>
+                          <td className="px-4 py-3 bg-cream/40 font-medium">Included on higher tiers</td>
                           <td className="px-4 py-3">Rarely included</td>
                           <td className="px-4 py-3">Often extra cost</td>
                         </tr>
                         <tr>
                           <td className="px-4 py-3 text-charcoal font-medium">Control & targeting</td>
-                          <td className="px-4 py-3">You choose focus areas</td>
+                          <td className="px-4 py-3 bg-cream/40 font-medium">You choose focus areas</td>
                           <td className="px-4 py-3">Limited targeting</td>
                           <td className="px-4 py-3">Agency decides</td>
                         </tr>
                         <tr>
                           <td className="px-4 py-3 text-charcoal font-medium">Refund policy</td>
-                          <td className="px-4 py-3">Non‑refundable research</td>
+                          <td className="px-4 py-3 bg-cream/40 font-medium">Non‑refundable research</td>
                           <td className="px-4 py-3">Typically non‑refundable</td>
                           <td className="px-4 py-3">Typically non‑refundable</td>
                         </tr>
                         <tr>
                           <td className="px-4 py-3 text-charcoal font-medium">Hot leads availability</td>
-                          <td className="px-4 py-3">Limited, market‑dependent</td>
+                          <td className="px-4 py-3 bg-cream/40 font-medium">Limited, market‑dependent</td>
                           <td className="px-4 py-3">Uncommon</td>
                           <td className="px-4 py-3">Sometimes via upsell</td>
                         </tr>
                         <tr>
                           <td className="px-4 py-3 text-charcoal font-medium">Support</td>
-                          <td className="px-4 py-3">Priority email on higher tiers</td>
+                          <td className="px-4 py-3 bg-cream/40 font-medium">Priority email on higher tiers</td>
                           <td className="px-4 py-3">Basic/ticket system</td>
                           <td className="px-4 py-3">Account manager (retainer)</td>
                         </tr>
