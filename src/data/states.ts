@@ -84,6 +84,7 @@ const states: State[] = [
       { name: 'Riverside', slug: 'riverside-california' },
       { name: 'Sacramento', slug: 'sacramento-california' },
       { name: 'San Diego', slug: 'san-diego-california' },
+      { name: 'San Bernardino', slug: 'san-bernardino-california' },
       { name: 'San Francisco', slug: 'san-francisco-california' },
       { name: 'San Jose', slug: 'san-jose-california' },
       { name: 'Santa Ana', slug: 'santa-ana-california' },
