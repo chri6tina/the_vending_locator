@@ -7,6 +7,7 @@ import Footer from '@/components/Footer'
 import { motion } from 'framer-motion'
 import { MapPinIcon, ChevronDownIcon } from '@heroicons/react/24/outline'
 import states from '@/data/states'
+import PricingTable from '@/components/PricingTable'
 
 // states is now imported from shared data file
 
@@ -49,6 +50,33 @@ export default function VendingLeadsDirectory() {
           </div>
         </div>
       </div>
+
+      {/* Pricing Chart */}
+      <section className="bg-white border-t border-gray-200">
+        <div className="mx-auto max-w-7xl px-6 py-12 sm:py-16 lg:px-8">
+          <div className="mx-auto max-w-4xl text-center mb-6">
+            <motion.h2
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="text-2xl sm:text-3xl font-playfair font-bold text-chocolate"
+            >
+              Choose your plan
+            </motion.h2>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="mt-2 text-lg text-chocolate/70"
+            >
+              Access qualified vending locations with the package that fits your goals.
+            </motion.p>
+          </div>
+          <PricingTable />
+        </div>
+      </section>
 
       {/* States Directory */}
       <div className="bg-cream py-16 sm:py-24">
