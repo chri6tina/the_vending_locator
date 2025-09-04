@@ -257,6 +257,9 @@ export default function PageClient() {
                       </tbody>
                     </table>
                   </div>
+                  <div className="mt-3 text-xs text-stone">
+                    This comparison is provided for general informational purposes based on publicly available information and market experience. Specific competitor offerings, pricing, and timelines may vary by provider and region. No third‑party endorsements are implied.
+                  </div>
                 </div>
               </div>
 
