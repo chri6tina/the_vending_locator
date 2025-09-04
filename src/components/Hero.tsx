@@ -5,8 +5,8 @@ import Link from 'next/link'
 import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon } from '@heroicons/react/24/solid'
 
 const stats = [
-  { id: 1, name: 'Locations Found', value: '500K+', suffix: '+' },
-  { id: 2, name: 'Deals Closed', value: '15K+', suffix: '+' },
+  { id: 1, name: 'Locations Found', value: '500K', suffix: '+' },
+  { id: 2, name: 'Deals Closed', value: '15K', suffix: '+' },
   { id: 3, name: 'Rating', value: '4.9', suffix: '★' },
 ]
 
