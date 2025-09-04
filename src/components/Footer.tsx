@@ -6,6 +6,7 @@ const navigation = {
     { name: 'Services', href: '/services' },
     { name: 'Locations', href: '/vending-locations' },
     { name: 'Vending Leads', href: '/vending-leads' },
+    { name: 'How It Works', href: '/how-it-works' },
     { name: 'Find Vendors', href: '/vending-companies/austin-texas' },
     { name: 'Pricing', href: '/pricing' },
     { name: 'Hot Leads', href: '/hot-leads' },
