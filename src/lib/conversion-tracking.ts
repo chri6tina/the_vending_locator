@@ -6,6 +6,9 @@ declare global {
     gtag: (...args: any[]) => void;
   }
 }
+// Google Ads send_to with conversion label
+export const GOOGLE_ADS_SEND_TO = 'AW-16569722490/43XACJ2Z3rAZEPrMh909'
+
 
 // Conversion event types
 export type ConversionEvent = 
@@ -30,7 +33,7 @@ export function trackConversion(
     try {
       // Track the conversion event
       window.gtag('event', 'conversion', {
-        send_to: 'AW-16569722490',
+        send_to: GOOGLE_ADS_SEND_TO,
         value: value,
         currency: currency,
         transaction_id: transactionId,
@@ -57,6 +60,34 @@ export function trackConversion(
   } else {
     console.warn('Google Ads tracking not loaded yet');
   }
+}
+
+// Direct Google Ads conversion with redirect callback
+export function reportAdConversionAndRedirect(
+  url: string,
+  value?: number,
+  currency: string = 'USD',
+  transactionId?: string
+) {
+  if (typeof window !== 'undefined' && window.gtag) {
+    const callback = () => {
+      if (url) {
+        window.location.href = url
+      }
+    }
+    window.gtag('event', 'conversion', {
+      send_to: GOOGLE_ADS_SEND_TO,
+      value: value,
+      currency: currency,
+      transaction_id: transactionId,
+      event_callback: callback,
+    })
+    return true
+  }
+  if (url) {
+    window.location.href = url
+  }
+  return false
 }
 
 // Form submission conversion tracking

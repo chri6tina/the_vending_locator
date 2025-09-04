@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { XMarkIcon, MapPinIcon, EnvelopeIcon, CreditCardIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
+import { reportAdConversionAndRedirect } from '@/lib/conversion-tracking'
 
 interface Package {
   name: string
@@ -99,9 +100,9 @@ export default function ZipCodeModal({ isOpen, onClose, package: selectedPackage
         setEmail('')
         setErrors({})
         
-        // Redirect to Stripe Checkout
+        // Redirect to Stripe Checkout with Google Ads conversion callback
         if (checkoutData.url) {
-          window.location.href = checkoutData.url
+          reportAdConversionAndRedirect(checkoutData.url, 1.0, 'USD', '')
         } else {
           throw new Error('No checkout URL received')
         }
