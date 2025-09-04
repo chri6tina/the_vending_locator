@@ -15,6 +15,11 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: '/vending-leads/dc',
+        destination: '/vending-leads/washington-dc',
+        permanent: true,
+      },
+      {
         source: '/location/new-york-ny',
         destination: '/vending-leads/new-york',
         permanent: true, // 301 redirect for SEO
