@@ -186,13 +186,16 @@ export default function PageClient() {
                 </div>
 
                 {/* Locator provider comparison (distinct from PricingTable) */}
-                <div className="mt-8">
+                <div className="mt-8" id="provider-comparison">
                   <div className="text-xl font-playfair font-bold text-charcoal mb-3">Locator provider comparison</div>
                   <div className="text-stone text-sm mb-4">Generalized comparison for educational purposes. Specific competitor offerings vary by region and agreement.</div>
                   {/* Mobile cards */}
                   <div className="lg:hidden space-y-4">
                     <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-sm">
-                      <div className="text-charcoal font-semibold mb-2">The Vending Locator</div>
+                      <div className="flex items-center justify-between mb-2">
+                        <div className="text-charcoal font-semibold">The Vending Locator</div>
+                        <span className="inline-flex items-center rounded-full bg-navy/10 text-navy text-xs px-2 py-0.5">Most cost‑effective</span>
+                      </div>
                       <ul className="text-sm text-stone space-y-1 list-disc pl-5">
                         <li><span className="text-charcoal font-medium">Pricing model:</span> One‑time packages</li>
                         <li><span className="text-charcoal font-medium">Typical cost:</span> $19–$899</li>
@@ -206,7 +209,10 @@ export default function PageClient() {
                       </ul>
                     </div>
                     <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-sm">
-                      <div className="text-charcoal font-semibold mb-2">Traditional Locator Service</div>
+                      <div className="flex items-center justify-between mb-2">
+                        <div className="text-charcoal font-semibold">Traditional Locator Service</div>
+                        <span className="inline-flex items-center rounded-full bg-stone/10 text-stone text-xs px-2 py-0.5">Subscription‑based</span>
+                      </div>
                       <ul className="text-sm text-stone space-y-1 list-disc pl-5">
                         <li><span className="text-charcoal font-medium">Pricing model:</span> Monthly subscription or per‑placement</li>
                         <li><span className="text-charcoal font-medium">Typical cost:</span> $99–$299/mo or $1k+ onboarding</li>
@@ -220,7 +226,10 @@ export default function PageClient() {
                       </ul>
                     </div>
                     <div className="bg-white border border-gray-200 rounded-xl p-5 shadow-sm">
-                      <div className="text-charcoal font-semibold mb-2">Full‑service Agency</div>
+                      <div className="flex items-center justify-between mb-2">
+                        <div className="text-charcoal font-semibold">Full‑service Agency</div>
+                        <span className="inline-flex items-center rounded-full bg-amber-100 text-amber-700 text-xs px-2 py-0.5">High‑touch</span>
+                      </div>
                       <ul className="text-sm text-stone space-y-1 list-disc pl-5">
                         <li><span className="text-charcoal font-medium">Pricing model:</span> Retainer + placement fees</li>
                         <li><span className="text-charcoal font-medium">Typical cost:</span> $2k–$10k+ depending on scope</li>
@@ -233,17 +242,29 @@ export default function PageClient() {
                         <li><span className="text-charcoal font-medium">Support:</span> Account manager (retainer)</li>
                       </ul>
                     </div>
+                    <div className="pt-1">
+                      <a href="/pricing" className="inline-flex items-center justify-center w-full bg-navy hover:bg-navy-light text-white rounded-lg px-5 py-3 font-semibold">See plans</a>
+                    </div>
                   </div>
 
                   {/* Desktop table */}
                   <div className="hidden lg:block overflow-x-auto border border-gray-200 rounded-xl bg-white shadow-sm">
                     <table className="w-full text-sm">
-                      <thead>
-                        <tr className="bg-gray-50 text-charcoal">
+                      <thead className="sticky top-0 z-10 bg-gray-50/90 backdrop-blur supports-[backdrop-filter]:bg-gray-50/70">
+                        <tr className="text-charcoal">
                           <th className="text-left px-4 py-3 font-semibold">Feature</th>
-                          <th className="text-left px-4 py-3 font-semibold">The Vending Locator</th>
-                          <th className="text-left px-4 py-3 font-semibold">Traditional Locator Service</th>
-                          <th className="text-left px-4 py-3 font-semibold">Full‑service Agency</th>
+                          <th className="text-left px-4 py-3 font-semibold">
+                            The Vending Locator
+                            <div className="text-xs text-stone font-normal">One‑time packages</div>
+                          </th>
+                          <th className="text-left px-4 py-3 font-semibold">
+                            Traditional Locator Service
+                            <div className="text-xs text-stone font-normal">Subscription or per‑placement</div>
+                          </th>
+                          <th className="text-left px-4 py-3 font-semibold">
+                            Full‑service Agency
+                            <div className="text-xs text-stone font-normal">Retainer + placement fees</div>
+                          </th>
                         </tr>
                       </thead>
                       <tbody className="divide-y divide-gray-100">
@@ -303,6 +324,10 @@ export default function PageClient() {
                         </tr>
                       </tbody>
                     </table>
+                    <div className="p-4 flex items-center justify-end gap-3 border-t border-gray-200">
+                      <a href="/contact" className="inline-flex items-center justify-center bg-white text-navy border border-navy rounded-lg px-4 py-2 font-semibold hover:bg-navy/5">Contact us</a>
+                      <a href="/pricing" className="inline-flex items-center justify-center bg-navy text-white rounded-lg px-4 py-2 font-semibold hover:bg-navy-light">See plans</a>
+                    </div>
                   </div>
                   <div className="mt-3 text-xs text-stone">
                     This comparison is provided for general informational purposes based on publicly available information and market experience. Specific competitor offerings, pricing, and timelines may vary by provider and region. No third‑party endorsements are implied.
