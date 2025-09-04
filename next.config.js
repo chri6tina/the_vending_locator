@@ -15,6 +15,21 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: '/howitworks',
+        destination: '/how-it-works',
+        permanent: true,
+      },
+      {
+        source: '/how-itworks',
+        destination: '/how-it-works',
+        permanent: true,
+      },
+      {
+        source: '/how-it-work',
+        destination: '/how-it-works',
+        permanent: true,
+      },
+      {
         source: '/vending-leads/dc',
         destination: '/vending-leads/washington-dc',
         permanent: true,
