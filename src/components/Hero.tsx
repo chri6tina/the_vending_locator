@@ -243,20 +243,7 @@ export default function Hero() {
    ])
    const [currentUserIndex, setCurrentUserIndex] = useState(0)
   const [usedNames, setUsedNames] = useState<Set<number>>(new Set())
-  const [recentPurchases, setRecentPurchases] = useState([
-    { name: 'Mike R.', location: 'Texas', plan: 'Start Plan', time: '2 minutes ago' },
-    { name: 'Sarah L.', location: 'Florida', plan: 'Pro Plan', time: '5 minutes ago' },
-    { name: 'David M.', location: 'California', plan: 'Basic Plan', time: '8 minutes ago' },
-    { name: 'Lisa K.', location: 'New York', plan: 'Start Plan', time: '12 minutes ago' },
-    { name: 'Tom W.', location: 'Illinois', plan: 'Pro Plan', time: '15 minutes ago' },
-    { name: 'Jennifer H.', location: 'Ohio', plan: 'Basic Plan', time: '18 minutes ago' },
-    { name: 'Robert T.', location: 'Georgia', plan: 'Start Plan', time: '22 minutes ago' },
-    { name: 'Amanda P.', location: 'Michigan', plan: 'Pro Plan', time: '25 minutes ago' },
-    { name: 'Carlos M.', location: 'Arizona', plan: 'Basic Plan', time: '28 minutes ago' },
-    { name: 'Maria S.', location: 'Colorado', plan: 'Start Plan', time: '32 minutes ago' }
-  ])
-  const [currentPurchaseIndex, setCurrentPurchaseIndex] = useState(0)
-  const [usedPurchases, setUsedPurchases] = useState<Set<number>>(new Set())
+  
 
   useEffect(() => {
     const targetCounts = [500, 15, 4.9]
@@ -325,34 +312,7 @@ export default function Hero() {
     return () => clearInterval(interval)
   }, [userNames.length, usedNames])
 
-  // Smart rotating recent purchases - ensures no repeats until all shown
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentPurchaseIndex(prev => {
-        // If we've shown most purchases, reset the used purchases
-        if (usedPurchases.size > recentPurchases.length * 0.8) {
-          setUsedPurchases(new Set())
-        }
-        
-        // Find next available purchase
-        let nextIndex = (prev + 1) % recentPurchases.length
-        let attempts = 0
-        
-        // Try to find an unused purchase (max 20 attempts to avoid infinite loop)
-        while (usedPurchases.has(nextIndex) && attempts < 20) {
-          nextIndex = Math.floor(Math.random() * recentPurchases.length)
-          attempts++
-        }
-        
-        // Mark this purchase as used
-        setUsedPurchases(prevUsed => new Set([...prevUsed, nextIndex]))
-        
-        return nextIndex
-      })
-    }, 5000)
-
-    return () => clearInterval(interval)
-  }, [recentPurchases.length, usedPurchases])
+  
 
   return (
     <div className="bg-warm-white">
@@ -377,19 +337,7 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Recent Purchase Notification */}
-          <div className="mt-4 sm:mt-6 p-3 bg-green-50 border border-green-200 rounded-lg shadow-sm max-w-sm mx-auto">
-            <div className="flex items-center justify-center gap-2 text-sm">
-              <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-              <span className="text-green-800 font-medium">
-                <span className="font-semibold">{recentPurchases[currentPurchaseIndex].name}</span> from {recentPurchases[currentPurchaseIndex].location} just purchased the{' '}
-                <span className="font-bold text-green-700">{recentPurchases[currentPurchaseIndex].plan}</span>
-              </span>
-            </div>
-            <div className="mt-1 text-xs text-green-600 text-center">
-              {recentPurchases[currentPurchaseIndex].time}
-            </div>
-          </div>
+          
 
           {/* Trust Signals */}
           <div className="mt-6 sm:mt-8 grid grid-cols-2 gap-4 max-w-md mx-auto">
