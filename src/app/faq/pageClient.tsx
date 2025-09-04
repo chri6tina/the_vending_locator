@@ -70,6 +70,72 @@ export default function PageClient() {
       { q: 'Do you offer refunds?', a: 'Because research and validation are performed to your area, purchases are non-refundable.' },
       { q: 'Do I need card readers?', a: 'Yes—cashless increases conversion and enables telemetry for inventory and performance tracking.' },
       { q: 'Do you help with contracts?', a: 'Yes. Our higher-tier packages include contract templates. We also offer a separate Guide with detailed resources.' },
+    ],
+    industries: [
+      {
+        title: 'Offices & Corporate Campuses',
+        items: [
+          { q: 'What office size works best?', a: 'Start with 50+ on-site staff. Multi-tenant buildings with shared lobbies and break areas perform well. Reliable service cadence and card readers are key.' },
+          { q: 'Recommended product mix?', a: 'Top-seller snacks and cold drinks; add a few better-for-you options. Track telemetry and rotate slow movers quarterly.' },
+          { q: 'Any building requirements?', a: 'Many buildings require proof of insurance and a placement agreement. Confirm loading access, power, and hours for servicing.' }
+        ]
+      },
+      {
+        title: 'Healthcare (Hospitals & Clinics)',
+        items: [
+          { q: 'What should I know about healthcare sites?', a: 'Expect steady weekday traffic. Prioritize uptime, cleanliness, and cashless. Follow facility rules for placement and servicing windows.' },
+          { q: 'Compliance considerations?', a: 'Some campuses have food policy guidelines and security checkpoints. Coordinate with facilities and adhere to sanitation standards.' },
+          { q: 'Best locations on campus?', a: 'Administrative areas, waiting areas, staff lounges, and near main corridors with consistent foot traffic.' }
+        ]
+      },
+      {
+        title: 'Education (Schools & Universities)',
+        items: [
+          { q: 'K-12 vs University differences?', a: 'K‑12 often has stricter nutrition rules and limited access windows. Universities have more flexible placement options near libraries, dorms, and student centers.' },
+          { q: 'Seasonality?', a: 'Align inventory and service with the academic calendar. Expect spikes during exam periods and move-in weeks.' },
+          { q: 'Popular items?', a: 'Cold beverages, study snacks, and grab‑and‑go items with clear labeling. Card acceptance is a must.' }
+        ]
+      },
+      {
+        title: 'Logistics, Warehouses & Industrial',
+        items: [
+          { q: 'Shift-based operations tips?', a: 'Serve multiple shifts with evening restocks when needed. Focus on energy drinks, cold beverages, and hearty snacks for long shifts.' },
+          { q: 'Placement guidance?', a: 'Break rooms near time clocks or main aisles with steady worker flow. Ensure machines are protected from dust and have stable power.' },
+          { q: 'Security & access?', a: 'Coordinate with site leads for access badges or escort procedures. Maintain clear service SLAs and a reliable contact.' }
+        ]
+      },
+      {
+        title: 'Gyms & Fitness Centers',
+        items: [
+          { q: 'What sells well in gyms?', a: 'Protein snacks, low‑sugar drinks, water, and recovery options. Test a small set of SKUs and iterate with member feedback.' },
+          { q: 'Peak times?', a: 'Early mornings, evenings, and weekends. Plan restocks before peak windows to avoid outages.' },
+          { q: 'Small footprint tips?', a: 'Combo machines or compact units near lobby or locker corridors. Card-first setups perform best.' }
+        ]
+      },
+      {
+        title: 'Hospitality (Hotels & Extended Stay)',
+        items: [
+          { q: 'Where to place in hotels?', a: 'Near elevators, lobbies, or vending alcoves on high-occupancy floors. Ensure quiet operation and proper signage.' },
+          { q: 'Guest preferences?', a: 'Late-night snacks, bottled drinks, and travel essentials. Card readers are critical for quick purchases.' },
+          { q: 'Staff coordination?', a: 'Work with front-desk or facilities for access and to quickly address any outages.' }
+        ]
+      },
+      {
+        title: 'Municipal & Public Buildings',
+        items: [
+          { q: 'Approvals?', a: 'Follow procurement or facility management processes. Be prepared to provide insurance, references, and service commitments.' },
+          { q: 'Traffic patterns?', a: 'Weekday daytime peaks. Focus on quick, affordable items and maintain high uptime.' },
+          { q: 'Security notes?', a: 'Some buildings have screening checkpoints and limited service windows—plan routes accordingly.' }
+        ]
+      },
+      {
+        title: 'Residential Towers & HOAs',
+        items: [
+          { q: 'Where do machines perform best?', a: 'Lobbies, mail rooms, and fitness areas with steady resident flow. Quiet operation and compact footprints are helpful.' },
+          { q: 'Expected demand?', a: 'Evening and weekend usage dominates. Stock everyday favorites and track telemetry for reorder cadence.' },
+          { q: 'HOA considerations?', a: 'Obtain HOA or property manager approval and clarify responsibilities for power, placement, and service hours.' }
+        ]
+      }
     ]
   }
 
@@ -82,6 +148,7 @@ export default function PageClient() {
       ...qa.cold.map(i => ({ '@type': 'Question', name: i.q, acceptedAnswer: { '@type': 'Answer', text: i.a } })),
       ...qa.hot.map(i => ({ '@type': 'Question', name: i.q, acceptedAnswer: { '@type': 'Answer', text: i.a } })),
       ...qa.misc.map(i => ({ '@type': 'Question', name: i.q, acceptedAnswer: { '@type': 'Answer', text: i.a } })),
+      ...qa.industries.flatMap(cat => cat.items.map(i => ({ '@type': 'Question', name: `${cat.title}: ${i.q}`, acceptedAnswer: { '@type': 'Answer', text: i.a } }))),
     ]
   }
 
@@ -151,6 +218,25 @@ export default function PageClient() {
                       <summary className="cursor-pointer font-semibold text-charcoal">{item.q}</summary>
                       <p className="mt-2 text-stone">{item.a}</p>
                     </details>
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <h2 className="text-2xl sm:text-3xl font-playfair font-bold text-charcoal mb-4">Industry-specific FAQs</h2>
+                <div className="space-y-6">
+                  {qa.industries.map((cat, cIdx) => (
+                    <div key={`ind-${cIdx}`} className="bg-white border border-gray-200 rounded-xl p-5">
+                      <div className="text-lg font-semibold text-charcoal mb-3">{cat.title}</div>
+                      <div className="space-y-3">
+                        {cat.items.map((item, idx) => (
+                          <details key={`ind-${cIdx}-${idx}`}>
+                            <summary className="cursor-pointer font-medium text-charcoal">{item.q}</summary>
+                            <p className="mt-2 text-stone">{item.a}</p>
+                          </details>
+                        ))}
+                      </div>
+                    </div>
                   ))}
                 </div>
               </div>
