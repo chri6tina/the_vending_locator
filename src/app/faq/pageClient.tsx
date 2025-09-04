@@ -259,7 +259,7 @@ export default function PageClient() {
               <div className="bg-white border border-gray-200 rounded-xl p-6">
                 <h3 className="text-xl font-playfair font-bold text-charcoal">Short on time?</h3>
                 <p className="text-stone mt-2">Pick a plan and we’ll prepare your lead list. Use our scripts to book meetings and place your machines.</p>
-                <a href="#pricing" className="mt-4 inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy-light text-white px-5 py-3 rounded-lg font-semibold w-full">View Pricing</a>
+                <a href="/pricing" className="mt-4 inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy-light text-white px-5 py-3 rounded-lg font-semibold w-full">View Pricing</a>
               </div>
             </aside>
           </div>
