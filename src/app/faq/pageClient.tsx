@@ -184,6 +184,80 @@ export default function PageClient() {
                     </details>
                   ))}
                 </div>
+
+                {/* Pricing comparison */}
+                <div className="mt-8">
+                  <div className="text-xl font-playfair font-bold text-charcoal mb-3">Pricing comparison</div>
+                  <div className="text-stone text-sm mb-4">Generalized comparison for educational purposes. Specific competitor offerings vary by region and agreement.</div>
+                  <div className="overflow-x-auto border border-gray-200 rounded-xl bg-white shadow-sm">
+                    <table className="w-full text-sm">
+                      <thead>
+                        <tr className="bg-gray-50 text-charcoal">
+                          <th className="text-left px-4 py-3 font-semibold">Feature</th>
+                          <th className="text-left px-4 py-3 font-semibold">The Vending Locator</th>
+                          <th className="text-left px-4 py-3 font-semibold">Traditional Locator Service</th>
+                          <th className="text-left px-4 py-3 font-semibold">Full‑service Agency</th>
+                        </tr>
+                      </thead>
+                      <tbody className="divide-y divide-gray-100">
+                        <tr>
+                          <td className="px-4 py-3 text-charcoal font-medium">Pricing model</td>
+                          <td className="px-4 py-3">One‑time packages</td>
+                          <td className="px-4 py-3">Monthly subscription or per‑placement</td>
+                          <td className="px-4 py-3">Retainer + placement fees</td>
+                        </tr>
+                        <tr>
+                          <td className="px-4 py-3 text-charcoal font-medium">Typical cost</td>
+                          <td className="px-4 py-3">$19–$899</td>
+                          <td className="px-4 py-3">$99–$299/mo or $1k+ onboarding</td>
+                          <td className="px-4 py-3">$2k–$10k+ depending on scope</td>
+                        </tr>
+                        <tr>
+                          <td className="px-4 py-3 text-charcoal font-medium">Lead ownership</td>
+                          <td className="px-4 py-3">You own your list</td>
+                          <td className="px-4 py-3">Often limited access</td>
+                          <td className="px-4 py-3">Agency‑managed</td>
+                        </tr>
+                        <tr>
+                          <td className="px-4 py-3 text-charcoal font-medium">Delivery time</td>
+                          <td className="px-4 py-3">~3–5 days</td>
+                          <td className="px-4 py-3">Varies (often weeks)</td>
+                          <td className="px-4 py-3">Varies (often weeks)</td>
+                        </tr>
+                        <tr>
+                          <td className="px-4 py-3 text-charcoal font-medium">Contracts & scripts</td>
+                          <td className="px-4 py-3">Included on higher tiers</td>
+                          <td className="px-4 py-3">Rarely included</td>
+                          <td className="px-4 py-3">Often extra cost</td>
+                        </tr>
+                        <tr>
+                          <td className="px-4 py-3 text-charcoal font-medium">Control & targeting</td>
+                          <td className="px-4 py-3">You choose focus areas</td>
+                          <td className="px-4 py-3">Limited targeting</td>
+                          <td className="px-4 py-3">Agency decides</td>
+                        </tr>
+                        <tr>
+                          <td className="px-4 py-3 text-charcoal font-medium">Refund policy</td>
+                          <td className="px-4 py-3">Non‑refundable research</td>
+                          <td className="px-4 py-3">Typically non‑refundable</td>
+                          <td className="px-4 py-3">Typically non‑refundable</td>
+                        </tr>
+                        <tr>
+                          <td className="px-4 py-3 text-charcoal font-medium">Hot leads availability</td>
+                          <td className="px-4 py-3">Limited, market‑dependent</td>
+                          <td className="px-4 py-3">Uncommon</td>
+                          <td className="px-4 py-3">Sometimes via upsell</td>
+                        </tr>
+                        <tr>
+                          <td className="px-4 py-3 text-charcoal font-medium">Support</td>
+                          <td className="px-4 py-3">Priority email on higher tiers</td>
+                          <td className="px-4 py-3">Basic/ticket system</td>
+                          <td className="px-4 py-3">Account manager (retainer)</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
               </div>
 
               <div>
