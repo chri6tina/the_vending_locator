@@ -240,6 +240,151 @@ export default function VendingMachineProductsPage() {
           </div>
         </section>
 
+        {/* Starter Kit Section */}
+        <section className="py-16 bg-gradient-to-r from-teal-50 to-blue-50">
+          <div className="mx-auto max-w-7xl px-6">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
+                Vending Machine Starter Kit
+              </h2>
+              <p className="text-lg text-stone max-w-3xl mx-auto">
+                The essential products every new vending machine operator should stock to maximize sales and minimize risk
+              </p>
+            </div>
+
+            <div className="grid gap-8 lg:grid-cols-2">
+              {/* Drinks Starter Kit */}
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6 }}
+                className="bg-white border border-gray-200 rounded-xl p-6"
+              >
+                <div className="flex items-center mb-4">
+                  <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center mr-3">
+                    <span className="text-blue-600 font-bold">🥤</span>
+                  </div>
+                  <h3 className="text-xl font-playfair font-bold text-charcoal">Drinks Starter Kit</h3>
+                </div>
+                <p className="text-stone mb-4">Essential beverages for any vending machine location</p>
+                
+                <div className="space-y-3">
+                  <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                    <span className="font-medium text-charcoal">Coca-Cola Classic</span>
+                    <span className="text-sm text-navy font-medium">Must-have</span>
+                  </div>
+                  <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                    <span className="font-medium text-charcoal">Water (Dasani/Smartwater)</span>
+                    <span className="text-sm text-navy font-medium">High margin</span>
+                  </div>
+                  <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                    <span className="font-medium text-charcoal">Red Bull</span>
+                    <span className="text-sm text-navy font-medium">Premium</span>
+                  </div>
+                  <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                    <span className="font-medium text-charcoal">Gatorade</span>
+                    <span className="text-sm text-navy font-medium">Athletic</span>
+                  </div>
+                  <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                    <span className="font-medium text-charcoal">Coffee (Starbucks)</span>
+                    <span className="text-sm text-navy font-medium">Office favorite</span>
+                  </div>
+                </div>
+                
+                <div className="mt-4 p-3 bg-blue-50 rounded-lg">
+                  <p className="text-sm text-blue-800">
+                    <strong>Pro Tip:</strong> Start with 5 core drinks, then add 2-3 seasonal items based on location type.
+                  </p>
+                </div>
+              </motion.div>
+
+              {/* Snacks Starter Kit */}
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+                className="bg-white border border-gray-200 rounded-xl p-6"
+              >
+                <div className="flex items-center mb-4">
+                  <div className="w-8 h-8 bg-orange-100 rounded-lg flex items-center justify-center mr-3">
+                    <span className="text-orange-600 font-bold">🍿</span>
+                  </div>
+                  <h3 className="text-xl font-playfair font-bold text-charcoal">Snacks Starter Kit</h3>
+                </div>
+                <p className="text-stone mb-4">Proven snack performers across all locations</p>
+                
+                <div className="space-y-3">
+                  <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                    <span className="font-medium text-charcoal">Lay's Classic Chips</span>
+                    <span className="text-sm text-navy font-medium">Universal hit</span>
+                  </div>
+                  <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                    <span className="font-medium text-charcoal">Snickers</span>
+                    <span className="text-sm text-navy font-medium">Top candy</span>
+                  </div>
+                  <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                    <span className="font-medium text-charcoal">Trident Gum</span>
+                    <span className="text-sm text-navy font-medium">High margin</span>
+                  </div>
+                  <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                    <span className="font-medium text-charcoal">Kind Bars</span>
+                    <span className="text-sm text-navy font-medium">Healthy option</span>
+                  </div>
+                  <div className="flex justify-between items-center py-2 border-b border-gray-100">
+                    <span className="font-medium text-charcoal">Granola Bars</span>
+                    <span className="text-sm text-navy font-medium">Convenience</span>
+                  </div>
+                </div>
+                
+                <div className="mt-4 p-3 bg-orange-50 rounded-lg">
+                  <p className="text-sm text-orange-800">
+                    <strong>Pro Tip:</strong> Mix 70% proven sellers with 30% new items to test customer preferences.
+                  </p>
+                </div>
+              </motion.div>
+            </div>
+
+            {/* Starter Kit Guidelines */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="mt-8 bg-white border border-gray-200 rounded-xl p-6"
+            >
+              <h3 className="text-lg font-playfair font-bold text-charcoal mb-4">Starter Kit Guidelines</h3>
+              <div className="grid gap-6 md:grid-cols-3">
+                <div>
+                  <h4 className="font-semibold text-charcoal mb-2">For New Operators</h4>
+                  <ul className="text-sm text-stone space-y-1">
+                    <li>• Start with 8-12 products total</li>
+                    <li>• Focus on well-known brands</li>
+                    <li>• Keep 2-3 price points</li>
+                    <li>• Track sales for 30 days</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-charcoal mb-2">Inventory Management</h4>
+                  <ul className="text-sm text-stone space-y-1">
+                    <li>• Restock every 1-2 weeks</li>
+                    <li>• Remove slow movers monthly</li>
+                    <li>• Add seasonal items quarterly</li>
+                    <li>• Monitor expiration dates</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-charcoal mb-2">Profit Optimization</h4>
+                  <ul className="text-sm text-stone space-y-1">
+                    <li>• Aim for 70%+ profit margins</li>
+                    <li>• Balance high/low margin items</li>
+                    <li>• Test price increases gradually</li>
+                    <li>• Focus on volume sellers</li>
+                  </ul>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </section>
+
         {/* Product Tabs */}
         <section className="py-12">
           <div className="mx-auto max-w-7xl px-6">
