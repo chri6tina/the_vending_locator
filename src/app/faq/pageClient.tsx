@@ -6,6 +6,80 @@ import { motion } from 'framer-motion'
 
 export default function PageClient() {
   const qa = {
+    general: [
+      {
+        q: 'How much money do I need to start a vending machine business?',
+        a: 'Startup costs vary depending on machine type, location, and inventory. On average, new machines cost $3,000–$6,000 each, while used machines can be $1,000–$3,000. Add product stocking and card reader costs when budgeting.'
+      },
+      {
+        q: 'Is vending still profitable in 2025?',
+        a: 'Yes. With cashless payments, healthier product options, and smart vending technology, vending is more profitable than ever. Success depends largely on location and product selection.'
+      },
+      {
+        q: 'Should I start with new or used machines?',
+        a: 'New machines offer warranties and modern payment options, while used machines are cheaper upfront. Many beginners start with refurbished machines to lower startup costs.'
+      },
+      {
+        q: 'What type of vending machine makes the most money?',
+        a: 'Snack and drink machines are the most common, but combo machines, smart coolers, and micro markets can outperform in offices, gyms, and schools.'
+      },
+      {
+        q: 'How do I decide what to stock?',
+        a: 'Start with popular snacks and drinks, then track sales. Each location has different preferences—an office might want energy drinks, while a school may prefer healthier snacks.'
+      },
+      {
+        q: 'How often do machines need to be restocked?',
+        a: 'Busy locations may need servicing 2–3 times per week, while smaller spots may only need it every 1–2 weeks.'
+      },
+      {
+        q: 'How do I find profitable vending machine locations?',
+        a: 'Location is the #1 factor in vending success. High-traffic areas like offices, warehouses, schools, gyms, and apartment complexes perform best.'
+      },
+      {
+        q: 'Do I have to pay a commission to the business owner?',
+        a: 'In most cases, yes. Typical commissions range from 10%–25% of sales. Strong locations may ask for more.'
+      },
+      {
+        q: 'Can you help me secure locations?',
+        a: 'Yes—our service specializes in connecting vending operators with high-quality, pre-screened locations so you can start earning faster.'
+      },
+      {
+        q: 'Do I need a business license or LLC to start?',
+        a: 'Yes, most states require at least a business license. An LLC is recommended to protect your personal assets.'
+      },
+      {
+        q: 'Are there permits or health regulations for vending machines?',
+        a: 'Yes, requirements vary by state. Food and beverage machines usually require a health permit. Always check local regulations.'
+      },
+      {
+        q: 'Do I need insurance?',
+        a: 'Liability insurance is recommended to cover theft, damage, or customer complaints.'
+      },
+      {
+        q: 'How do customers pay at vending machines?',
+        a: 'Most modern machines accept cash, credit/debit, and mobile payments (Apple Pay, Google Pay). Adding a card reader can boost sales by 20–30%.'
+      },
+      {
+        q: 'How do I track sales and inventory?',
+        a: 'Many machines and card readers have remote monitoring, allowing you to see sales and stock levels in real time.'
+      },
+      {
+        q: 'What happens if a customer loses money in my machine?',
+        a: 'Typically, the machine owner refunds them directly. Some locations may assist, but responsibility usually falls on the operator.'
+      },
+      {
+        q: 'How many machines do I need to make $1,000 or more per month?',
+        a: 'On average, one good location can generate $200–$400 per month. To earn $1,000+, you\'ll likely need 3–5 machines in strong locations.'
+      },
+      {
+        q: 'Should I manage machines myself or hire staff?',
+        a: 'Most operators start solo, then hire part-time staff as they scale. Outsourcing restocking and maintenance can free up time as your business grows.'
+      },
+      {
+        q: 'What\'s the difference between vending machines and micro markets?',
+        a: 'Micro markets are self-checkout kiosks with open shelves and coolers, offering more product variety. They require larger spaces but can generate significantly higher revenue.'
+      }
+    ],
     pricing: [
       {
         q: 'What are The Vending Locator fees?',
@@ -143,6 +217,7 @@ export default function PageClient() {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
     mainEntity: [
+      ...qa.general.map(i => ({ '@type': 'Question', name: i.q, acceptedAnswer: { '@type': 'Answer', text: i.a } })),
       ...qa.pricing.map(i => ({ '@type': 'Question', name: i.q, acceptedAnswer: { '@type': 'Answer', text: i.a } })),
       ...qa.how.map(i => ({ '@type': 'Question', name: i.q, acceptedAnswer: { '@type': 'Answer', text: i.a } })),
       ...qa.cold.map(i => ({ '@type': 'Question', name: i.q, acceptedAnswer: { '@type': 'Answer', text: i.a } })),
@@ -161,10 +236,10 @@ export default function PageClient() {
           <div className="mx-auto max-w-7xl px-6 py-16 sm:py-20">
             <div className="mx-auto max-w-4xl text-center">
               <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="text-3xl sm:text-4xl lg:text-5xl font-playfair font-bold text-charcoal">
-                Vending Locator Fees & Pricing FAQ
+                Vending Machine Business FAQ
               </motion.h1>
               <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.1 }} className="mt-4 text-lg text-stone max-w-3xl mx-auto">
-                Clear answers about pricing, how the service works, and the difference between hot leads and cold leads.
+                Complete answers about starting a vending machine business, from startup costs and profitability to finding locations and our lead generation service.
               </motion.p>
             </div>
           </div>
@@ -174,6 +249,18 @@ export default function PageClient() {
         <section className="py-16">
           <div className="mx-auto max-w-7xl px-6 grid lg:grid-cols-12 gap-8">
             <div className="lg:col-span-8 space-y-10">
+              <div>
+                <h2 className="text-2xl sm:text-3xl font-playfair font-bold text-charcoal mb-4">Getting Started</h2>
+                <div className="space-y-4">
+                  {qa.general.map((item, idx) => (
+                    <details key={`g-${idx}`} className="bg-white border border-gray-200 rounded-xl p-5">
+                      <summary className="cursor-pointer font-semibold text-charcoal">{item.q}</summary>
+                      <p className="mt-2 text-stone">{item.a}</p>
+                    </details>
+                  ))}
+                </div>
+              </div>
+
               <div>
                 <h2 className="text-2xl sm:text-3xl font-playfair font-bold text-charcoal mb-4">Pricing</h2>
                 <div className="space-y-4">

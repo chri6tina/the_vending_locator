@@ -2,28 +2,30 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  title: 'Vending Locator Fees & Pricing FAQ - The Vending Locator',
-  description: 'Transparent answers about vending locator fees, pricing plans, how our service works, and the difference between hot and cold leads. Everything you need to know before you buy.',
+  title: 'Vending Machine Business FAQ - Complete Guide 2025 - The Vending Locator',
+  description: 'Complete FAQ covering vending machine business startup costs, profitability, location finding, legal requirements, operations, and our lead generation service. Everything you need to know to start your vending business.',
   keywords: [
-    'vending locator fees',
-    'vending locator pricing',
-    'vending machine leads pricing',
-    'vending locator cost',
-    'hot leads vending',
-    'cold leads vending'
+    'vending machine business faq',
+    'vending machine startup costs',
+    'vending machine profitability 2025',
+    'vending machine locations',
+    'vending machine business license',
+    'vending machine insurance',
+    'vending locator service',
+    'vending machine leads'
   ],
   alternates: { canonical: 'https://www.thevendinglocator.com/faq' },
   openGraph: {
-    title: 'Vending Locator Fees & Pricing FAQ - The Vending Locator',
-    description: 'Transparent answers about pricing, fees, how it works, hot vs cold leads, delivery time, and more.',
+    title: 'Vending Machine Business FAQ - Complete Guide 2025 - The Vending Locator',
+    description: 'Complete FAQ covering startup costs, profitability, location finding, legal requirements, operations, and our lead generation service.',
     url: 'https://www.thevendinglocator.com/faq',
     siteName: 'The Vending Locator',
     type: 'website'
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Vending Locator Fees & Pricing FAQ - The Vending Locator',
-    description: 'Pricing, fees, how it works, hot vs cold leads, delivery time, and more.'
+    title: 'Vending Machine Business FAQ - Complete Guide 2025 - The Vending Locator',
+    description: 'Complete FAQ covering startup costs, profitability, location finding, legal requirements, operations, and our lead generation service.'
   },
   robots: { index: true, follow: true }
 }
