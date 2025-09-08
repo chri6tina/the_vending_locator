@@ -346,6 +346,39 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: 'https://www.thevendinglocator.com/vending-leads/gary-indiana', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/vending-leads/hammond-indiana', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/vending-leads/south-bend-indiana', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    
+    // Delaware cities - Newly created
+    { url: 'https://www.thevendinglocator.com/vending-leads/wilmington-delaware', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/dover-delaware', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/newark-delaware', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    
+    // Hawaii cities - Newly created
+    { url: 'https://www.thevendinglocator.com/vending-leads/honolulu-hawaii', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/hilo-hawaii', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/kailua-hawaii', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    
+    // Vermont cities - Newly created
+    { url: 'https://www.thevendinglocator.com/vending-leads/burlington-vermont', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/south-burlington-vermont', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    
+    // New Hampshire cities - Newly created
+    { url: 'https://www.thevendinglocator.com/vending-leads/manchester-new-hampshire', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    
+    // Utah cities - Newly created
+    { url: 'https://www.thevendinglocator.com/vending-leads/provo-utah', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/ogden-utah', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    
+    // North Dakota cities - Newly created
+    { url: 'https://www.thevendinglocator.com/vending-leads/fargo-north-dakota', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/bismarck-north-dakota', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    
+    // South Dakota cities - Newly created
+    { url: 'https://www.thevendinglocator.com/vending-leads/sioux-falls-south-dakota', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/rapid-city-south-dakota', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    
+    // West Virginia cities - Newly created
+    { url: 'https://www.thevendinglocator.com/vending-leads/charleston-west-virginia', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/huntington-west-virginia', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
   ]
 
   // Dynamic city guides (how-to-start-a-vending-machine-business/[slug])
