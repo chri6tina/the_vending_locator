@@ -9,8 +9,8 @@ export default function YorkVendingLeadsPage() {
   const router = useRouter()
 
   useEffect(() => {
-    // Redirect to the New York page
-    router.replace('/vending-leads/new-york')
+    // Redirect to the York, Pennsylvania page
+    router.replace('/vending-leads/york-pennsylvania')
   }, [router])
 
   return (
@@ -19,12 +19,12 @@ export default function YorkVendingLeadsPage() {
       <div className="min-h-screen bg-warm-white flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-2xl font-bold text-charcoal mb-4">
-            Redirecting to New York...
+            Redirecting to York, Pennsylvania...
           </h1>
           <p className="text-stone">
             If you're not redirected automatically,{' '}
             <button 
-              onClick={() => router.push('/vending-leads/new-york')}
+              onClick={() => router.push('/vending-leads/york-pennsylvania')}
               className="text-navy hover:underline"
             >
               click here

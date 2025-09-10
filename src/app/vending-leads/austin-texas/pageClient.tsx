@@ -425,6 +425,94 @@ export default function AustinTexasVendingLeadsPage() {
           </div>
         </section>
 
+        {/* Related Cities Section */}
+        <section className="bg-white rounded-2xl p-8 mb-12 shadow-lg">
+          <motion.h2 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-3xl font-bold text-center mb-8 text-gray-800"
+          >
+            Explore Other Texas Cities
+          </motion.h2>
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+          >
+            <Link 
+              href="/vending-leads/dallas-texas" 
+              className="text-center p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors"
+            >
+              <div className="font-semibold text-gray-800">Dallas</div>
+              <div className="text-sm text-gray-600">Texas</div>
+            </Link>
+            <Link 
+              href="/vending-leads/houston-texas" 
+              className="text-center p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors"
+            >
+              <div className="font-semibold text-gray-800">Houston</div>
+              <div className="text-sm text-gray-600">Texas</div>
+            </Link>
+            <Link 
+              href="/vending-leads/san-antonio-texas" 
+              className="text-center p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors"
+            >
+              <div className="font-semibold text-gray-800">San Antonio</div>
+              <div className="text-sm text-gray-600">Texas</div>
+            </Link>
+            <Link 
+              href="/vending-leads/fort-worth-texas" 
+              className="text-center p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors"
+            >
+              <div className="font-semibold text-gray-800">Fort Worth</div>
+              <div className="text-sm text-gray-600">Texas</div>
+            </Link>
+            <Link 
+              href="/vending-leads/el-paso-texas" 
+              className="text-center p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors"
+            >
+              <div className="font-semibold text-gray-800">El Paso</div>
+              <div className="text-sm text-gray-600">Texas</div>
+            </Link>
+            <Link 
+              href="/vending-leads/arlington-texas" 
+              className="text-center p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors"
+            >
+              <div className="font-semibold text-gray-800">Arlington</div>
+              <div className="text-sm text-gray-600">Texas</div>
+            </Link>
+            <Link 
+              href="/vending-leads/corpus-christi-texas" 
+              className="text-center p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors"
+            >
+              <div className="font-semibold text-gray-800">Corpus Christi</div>
+              <div className="text-sm text-gray-600">Texas</div>
+            </Link>
+            <Link 
+              href="/vending-leads/plano-texas" 
+              className="text-center p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors"
+            >
+              <div className="font-semibold text-gray-800">Plano</div>
+              <div className="text-sm text-gray-600">Texas</div>
+            </Link>
+          </motion.div>
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="text-center mt-8"
+          >
+            <Link 
+              href="/vending-leads/texas" 
+              className="inline-flex items-center px-6 py-3 bg-navy text-white rounded-lg hover:bg-navy/90 transition-colors font-semibold"
+            >
+              View All Texas Cities
+            </Link>
+          </motion.div>
+        </section>
+
         {/* FAQ Section */}
         <section className="py-16 bg-warm-white">
           <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">

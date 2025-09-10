@@ -164,6 +164,150 @@ export default function VendingLeadsDirectory() {
         </div>
       </div>
 
+      {/* Popular States Section */}
+      <div className="bg-gradient-to-br from-slate-50 to-blue-50 py-16">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold tracking-tight text-chocolate sm:text-4xl">
+              Popular States for Vending Opportunities
+            </h2>
+            <p className="mt-4 text-lg text-stone/70">
+              Explore vending machine opportunities in our most popular states
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <Link 
+              href="/vending-leads/texas" 
+              className="group block bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6 text-center"
+            >
+              <div className="text-3xl mb-3">🤠</div>
+              <h3 className="text-lg font-semibold text-chocolate group-hover:text-navy transition-colors mb-2">
+                Texas
+              </h3>
+              <p className="text-sm text-stone/70 mb-3">
+                15+ Cities Available
+              </p>
+              <span className="text-navy text-sm font-medium group-hover:underline">
+                View Cities →
+              </span>
+            </Link>
+            
+            <Link 
+              href="/vending-leads/california" 
+              className="group block bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6 text-center"
+            >
+              <div className="text-3xl mb-3">🌴</div>
+              <h3 className="text-lg font-semibold text-chocolate group-hover:text-navy transition-colors mb-2">
+                California
+              </h3>
+              <p className="text-sm text-stone/70 mb-3">
+                12+ Cities Available
+              </p>
+              <span className="text-navy text-sm font-medium group-hover:underline">
+                View Cities →
+              </span>
+            </Link>
+            
+            <Link 
+              href="/vending-leads/florida" 
+              className="group block bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6 text-center"
+            >
+              <div className="text-3xl mb-3">🏖️</div>
+              <h3 className="text-lg font-semibold text-chocolate group-hover:text-navy transition-colors mb-2">
+                Florida
+              </h3>
+              <p className="text-sm text-stone/70 mb-3">
+                10+ Cities Available
+              </p>
+              <span className="text-navy text-sm font-medium group-hover:underline">
+                View Cities →
+              </span>
+            </Link>
+            
+            <Link 
+              href="/vending-leads/georgia" 
+              className="group block bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6 text-center"
+            >
+              <div className="text-3xl mb-3">🍑</div>
+              <h3 className="text-lg font-semibold text-chocolate group-hover:text-navy transition-colors mb-2">
+                Georgia
+              </h3>
+              <p className="text-sm text-stone/70 mb-3">
+                9+ Cities Available
+              </p>
+              <span className="text-navy text-sm font-medium group-hover:underline">
+                View Cities →
+              </span>
+            </Link>
+            
+            <Link 
+              href="/vending-leads/new-york" 
+              className="group block bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6 text-center"
+            >
+              <div className="text-3xl mb-3">🗽</div>
+              <h3 className="text-lg font-semibold text-chocolate group-hover:text-navy transition-colors mb-2">
+                New York
+              </h3>
+              <p className="text-sm text-stone/70 mb-3">
+                8+ Cities Available
+              </p>
+              <span className="text-navy text-sm font-medium group-hover:underline">
+                View Cities →
+              </span>
+            </Link>
+            
+            <Link 
+              href="/vending-leads/illinois" 
+              className="group block bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6 text-center"
+            >
+              <div className="text-3xl mb-3">🏙️</div>
+              <h3 className="text-lg font-semibold text-chocolate group-hover:text-navy transition-colors mb-2">
+                Illinois
+              </h3>
+              <p className="text-sm text-stone/70 mb-3">
+                7+ Cities Available
+              </p>
+              <span className="text-navy text-sm font-medium group-hover:underline">
+                View Cities →
+              </span>
+            </Link>
+            
+            <Link 
+              href="/vending-leads/ohio" 
+              className="group block bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6 text-center"
+            >
+              <div className="text-3xl mb-3">🏭</div>
+              <h3 className="text-lg font-semibold text-chocolate group-hover:text-navy transition-colors mb-2">
+                Ohio
+              </h3>
+              <p className="text-sm text-stone/70 mb-3">
+                6+ Cities Available
+              </p>
+              <span className="text-navy text-sm font-medium group-hover:underline">
+                View Cities →
+              </span>
+            </Link>
+            
+            <Link 
+              href="/vending-leads/pennsylvania" 
+              className="group block bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6 text-center"
+            >
+              <div className="text-3xl mb-3">🏛️</div>
+              <h3 className="text-lg font-semibold text-chocolate group-hover:text-navy transition-colors mb-2">
+                Pennsylvania
+              </h3>
+              <p className="text-sm text-stone/70 mb-3">
+                5+ Cities Available
+              </p>
+              <span className="text-navy text-sm font-medium group-hover:underline">
+                View Cities →
+              </span>
+            </Link>
+          </div>
+        </div>
+      </div>
+
       <Footer />
     </main>
   )

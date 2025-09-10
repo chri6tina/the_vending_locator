@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
@@ -325,6 +326,71 @@ export default function Pricing() {
 
       {/* Vending Course Section */}
       <VendingCourse />
+
+      {/* Blog Section */}
+      <section className="py-16 bg-gradient-to-br from-slate-50 to-blue-50">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold tracking-tight text-chocolate sm:text-4xl">
+              Vending Business Resources
+            </h2>
+            <p className="mt-4 text-lg text-stone/70">
+              Learn from our expert guides and industry insights
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <Link 
+              href="/blog/how-to-start-a-vending-machine-business"
+              className="group block bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden"
+            >
+              <div className="h-48 bg-gradient-to-br from-navy/10 to-coral/10 flex items-center justify-center">
+                <div className="text-4xl">🚀</div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-lg font-semibold text-chocolate group-hover:text-navy transition-colors mb-2">
+                  How to Start a Vending Machine Business
+                </h3>
+                <p className="text-sm text-stone/70 mb-4">
+                  Complete step-by-step guide to launching your vending machine business from scratch
+                </p>
+                <span className="text-navy text-sm font-medium group-hover:underline">
+                  Read Article →
+                </span>
+              </div>
+            </Link>
+            
+            <Link 
+              href="/blog/vending-machine-maintenance-tips"
+              className="group block bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden"
+            >
+              <div className="h-48 bg-gradient-to-br from-coral/10 to-navy/10 flex items-center justify-center">
+                <div className="text-4xl">🔧</div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-lg font-semibold text-chocolate group-hover:text-navy transition-colors mb-2">
+                  Vending Machine Maintenance Tips
+                </h3>
+                <p className="text-sm text-stone/70 mb-4">
+                  Keep your vending machines running smoothly with these essential maintenance tips
+                </p>
+                <span className="text-navy text-sm font-medium group-hover:underline">
+                  Read Article →
+                </span>
+              </div>
+            </Link>
+          </div>
+          
+          <div className="text-center mt-8">
+            <Link 
+              href="/blog"
+              className="inline-flex items-center px-6 py-3 bg-navy text-white rounded-lg hover:bg-navy/90 transition-colors font-semibold"
+            >
+              View All Blog Posts
+            </Link>
+          </div>
+        </div>
+      </section>
 
       {/* FAQ Section */}
       <FAQ />

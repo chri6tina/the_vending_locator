@@ -61,6 +61,91 @@ export default function Home() {
       <PricingTable />
       <HotLeads />
       
+      {/* Blog Section */}
+      <section className="py-16 bg-gradient-to-br from-slate-50 to-blue-50">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold tracking-tight text-chocolate sm:text-4xl">
+              Latest Vending Business Insights
+            </h2>
+            <p className="mt-4 text-lg text-stone/70">
+              Expert tips, strategies, and industry insights to help grow your vending business
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <Link 
+              href="/blog/how-to-start-a-vending-machine-business"
+              className="group block bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden"
+            >
+              <div className="h-48 bg-gradient-to-br from-navy/10 to-coral/10 flex items-center justify-center">
+                <div className="text-4xl">🚀</div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-lg font-semibold text-chocolate group-hover:text-navy transition-colors mb-2">
+                  How to Start a Vending Machine Business
+                </h3>
+                <p className="text-sm text-stone/70 mb-4">
+                  Complete step-by-step guide to launching your vending machine business from scratch
+                </p>
+                <span className="text-navy text-sm font-medium group-hover:underline">
+                  Read Article →
+                </span>
+              </div>
+            </Link>
+            
+            <Link 
+              href="/blog/vending-machine-location-strategies"
+              className="group block bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden"
+            >
+              <div className="h-48 bg-gradient-to-br from-coral/10 to-navy/10 flex items-center justify-center">
+                <div className="text-4xl">📍</div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-lg font-semibold text-chocolate group-hover:text-navy transition-colors mb-2">
+                  Vending Machine Location Strategies
+                </h3>
+                <p className="text-sm text-stone/70 mb-4">
+                  Proven strategies for finding and securing the best vending machine locations
+                </p>
+                <span className="text-navy text-sm font-medium group-hover:underline">
+                  Read Article →
+                </span>
+              </div>
+            </Link>
+            
+            <Link 
+              href="/blog/maximizing-vending-machine-profits"
+              className="group block bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden"
+            >
+              <div className="h-48 bg-gradient-to-br from-navy/10 to-stone/10 flex items-center justify-center">
+                <div className="text-4xl">💰</div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-lg font-semibold text-chocolate group-hover:text-navy transition-colors mb-2">
+                  Maximizing Vending Machine Profits
+                </h3>
+                <p className="text-sm text-stone/70 mb-4">
+                  Learn how to increase revenue and optimize your vending machine business
+                </p>
+                <span className="text-navy text-sm font-medium group-hover:underline">
+                  Read Article →
+                </span>
+              </div>
+            </Link>
+          </div>
+          
+          <div className="text-center mt-8">
+            <Link 
+              href="/blog"
+              className="inline-flex items-center px-6 py-3 bg-navy text-white rounded-lg hover:bg-navy/90 transition-colors font-semibold"
+            >
+              View All Blog Posts
+            </Link>
+          </div>
+        </div>
+      </section>
+      
       {/* Enhanced Locations Section with Working Links */}
       <div className="bg-white py-16 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

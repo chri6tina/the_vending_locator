@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import Link from 'next/link'
 import { motion } from 'framer-motion'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
@@ -224,6 +225,94 @@ export default function SandySpringsGeorgiaVendingLeadsPage() {
 
           {/* Vending Course */}
           <VendingCourse />
+
+          {/* Related Cities Section */}
+          <section className="bg-white rounded-2xl p-8 mb-12 shadow-lg">
+            <motion.h2 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="text-3xl font-bold text-center mb-8 text-gray-800"
+            >
+              Explore Other Georgia Cities
+            </motion.h2>
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+            >
+              <Link 
+                href="/vending-leads/atlanta-georgia" 
+                className="text-center p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors"
+              >
+                <div className="font-semibold text-gray-800">Atlanta</div>
+                <div className="text-sm text-gray-600">Capital City</div>
+              </Link>
+              <Link 
+                href="/vending-leads/savannah-georgia" 
+                className="text-center p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors"
+              >
+                <div className="font-semibold text-gray-800">Savannah</div>
+                <div className="text-sm text-gray-600">Historic Port</div>
+              </Link>
+              <Link 
+                href="/vending-leads/marietta-georgia" 
+                className="text-center p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors"
+              >
+                <div className="font-semibold text-gray-800">Marietta</div>
+                <div className="text-sm text-gray-600">Retail Hub</div>
+              </Link>
+              <Link 
+                href="/vending-leads/roswell-georgia" 
+                className="text-center p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors"
+              >
+                <div className="font-semibold text-gray-800">Roswell</div>
+                <div className="text-sm text-gray-600">Historic City</div>
+              </Link>
+              <Link 
+                href="/vending-leads/warner-robins-georgia" 
+                className="text-center p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors"
+              >
+                <div className="font-semibold text-gray-800">Warner Robins</div>
+                <div className="text-sm text-gray-600">Military Base</div>
+              </Link>
+              <Link 
+                href="/vending-leads/augusta-georgia" 
+                className="text-center p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors"
+              >
+                <div className="font-semibold text-gray-800">Augusta</div>
+                <div className="text-sm text-gray-600">Golf Capital</div>
+              </Link>
+              <Link 
+                href="/vending-leads/macon-georgia" 
+                className="text-center p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors"
+              >
+                <div className="font-semibold text-gray-800">Macon</div>
+                <div className="text-sm text-gray-600">Central Hub</div>
+              </Link>
+              <Link 
+                href="/vending-leads/athens-georgia" 
+                className="text-center p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors"
+              >
+                <div className="font-semibold text-gray-800">Athens</div>
+                <div className="text-sm text-gray-600">University Town</div>
+              </Link>
+            </motion.div>
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="text-center mt-8"
+            >
+              <Link 
+                href="/vending-leads/georgia" 
+                className="inline-flex items-center px-6 py-3 bg-navy text-white rounded-lg hover:bg-navy/90 transition-colors font-semibold"
+              >
+                View All Georgia Cities
+              </Link>
+            </motion.div>
+          </section>
 
           {/* FAQ Section */}
           <section className="bg-white rounded-2xl p-8 mb-12 shadow-lg">

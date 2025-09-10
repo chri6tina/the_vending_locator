@@ -356,16 +356,82 @@ export default function BlogPost() {
             </div>
             
             {/* Back to Blog */}
+            {/* Related Posts Section */}
             <div className="border-t border-stone/200 pt-8">
-              <a
-                href="/blog"
-                className="inline-flex items-center gap-2 text-navy font-semibold hover:text-opacity-80 transition-colors group"
-              >
-                <svg className="w-4 h-4 transition-transform group-hover:-translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                </svg>
-                Back to Blog
-              </a>
+              <h3 className="text-xl font-semibold text-chocolate mb-6">Related Articles</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <a
+                  href="/blog/how-to-start-a-vending-machine-business"
+                  className="group block p-4 bg-white rounded-lg border border-stone/200 hover:border-navy/30 hover:shadow-md transition-all duration-300"
+                >
+                  <h4 className="font-semibold text-chocolate group-hover:text-navy transition-colors mb-2">
+                    How to Start a Vending Machine Business
+                  </h4>
+                  <p className="text-sm text-stone/70 mb-3">
+                    Complete guide to launching your vending machine business from scratch
+                  </p>
+                  <span className="text-navy text-sm font-medium group-hover:underline">
+                    Read Article →
+                  </span>
+                </a>
+                
+                <a
+                  href="/blog/vending-machine-location-strategies"
+                  className="group block p-4 bg-white rounded-lg border border-stone/200 hover:border-navy/30 hover:shadow-md transition-all duration-300"
+                >
+                  <h4 className="font-semibold text-chocolate group-hover:text-navy transition-colors mb-2">
+                    Vending Machine Location Strategies
+                  </h4>
+                  <p className="text-sm text-stone/70 mb-3">
+                    Proven strategies for finding the best vending machine locations
+                  </p>
+                  <span className="text-navy text-sm font-medium group-hover:underline">
+                    Read Article →
+                  </span>
+                </a>
+                
+                <a
+                  href="/blog/vending-machine-maintenance-tips"
+                  className="group block p-4 bg-white rounded-lg border border-stone/200 hover:border-navy/30 hover:shadow-md transition-all duration-300"
+                >
+                  <h4 className="font-semibold text-chocolate group-hover:text-navy transition-colors mb-2">
+                    Vending Machine Maintenance Tips
+                  </h4>
+                  <p className="text-sm text-stone/70 mb-3">
+                    Keep your vending machines running smoothly with these maintenance tips
+                  </p>
+                  <span className="text-navy text-sm font-medium group-hover:underline">
+                    Read Article →
+                  </span>
+                </a>
+                
+                <a
+                  href="/blog/maximizing-vending-machine-profits"
+                  className="group block p-4 bg-white rounded-lg border border-stone/200 hover:border-navy/30 hover:shadow-md transition-all duration-300"
+                >
+                  <h4 className="font-semibold text-chocolate group-hover:text-navy transition-colors mb-2">
+                    Maximizing Vending Machine Profits
+                  </h4>
+                  <p className="text-sm text-stone/70 mb-3">
+                    Learn how to increase revenue from your vending machine business
+                  </p>
+                  <span className="text-navy text-sm font-medium group-hover:underline">
+                    Read Article →
+                  </span>
+                </a>
+              </div>
+              
+              <div className="text-center">
+                <a
+                  href="/blog"
+                  className="inline-flex items-center gap-2 text-navy font-semibold hover:text-opacity-80 transition-colors group"
+                >
+                  <svg className="w-4 h-4 transition-transform group-hover:-translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                  </svg>
+                  Back to All Blog Posts
+                </a>
+              </div>
             </div>
           </motion.div>
         </div>
