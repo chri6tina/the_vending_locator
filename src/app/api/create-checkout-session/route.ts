@@ -3,42 +3,25 @@ import Stripe from 'stripe'
 
 export const dynamic = 'force-dynamic'
 
-// Force reload environment variables
-if (typeof window === 'undefined') {
-  require('dotenv').config({ path: '.env.local' })
-  require('dotenv').config({ path: '.env' })
-}
-
-// Debug environment variable
-console.log('🔍 STRIPE_SECRET_KEY exists:', !!process.env.STRIPE_SECRET_KEY)
-console.log('🔍 STRIPE_SECRET_KEY length:', process.env.STRIPE_SECRET_KEY?.length || 0)
-console.log('🔍 STRIPE_SECRET_KEY starts with:', process.env.STRIPE_SECRET_KEY?.substring(0, 7) || 'undefined')
-
-// More robust Stripe initialization
+// Validate required environment variables
 if (!process.env.STRIPE_SECRET_KEY) {
-  console.warn('STRIPE_SECRET_KEY not found - using placeholder for build process')
+  throw new Error('STRIPE_SECRET_KEY environment variable is required')
 }
 
-const stripe = process.env.STRIPE_SECRET_KEY ? new Stripe(process.env.STRIPE_SECRET_KEY, {
-  apiVersion: '2023-10-16'
-}) : null
+// Initialize Stripe with proper error handling
+let stripe: Stripe
+try {
+  stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
+    apiVersion: '2023-10-16'
+  })
+} catch (error) {
+  console.error('Failed to initialize Stripe:', error)
+  throw new Error('Invalid STRIPE_SECRET_KEY format')
+}
 
 export async function POST(request: NextRequest) {
   try {
-    // Check if Stripe is configured
-    if (!stripe) {
-      return NextResponse.json(
-        { error: 'Stripe not configured' },
-        { status: 500 }
-      )
-    }
-
     console.log('🚀 POST request received to /api/create-checkout-session')
-    console.log('🔍 Environment check inside POST:', {
-      hasKey: !!process.env.STRIPE_SECRET_KEY,
-      keyLength: process.env.STRIPE_SECRET_KEY?.length || 0,
-      keyStart: process.env.STRIPE_SECRET_KEY?.substring(0, 7) || 'undefined'
-    })
     
     const { email, zipCode, planName, planPrice, planId } = await request.json()
     
@@ -95,8 +78,25 @@ export async function POST(request: NextRequest) {
 
   } catch (error) {
     console.error('❌ Error creating Stripe Checkout Session:', error)
+    
+    // Return specific error messages based on error type
+    if (error instanceof Error) {
+      if (error.message.includes('api_key_expired')) {
+        return NextResponse.json(
+          { error: 'Payment system temporarily unavailable. Please try again later.' },
+          { status: 503 }
+        )
+      }
+      if (error.message.includes('invalid_request_error')) {
+        return NextResponse.json(
+          { error: 'Invalid payment request. Please check your information.' },
+          { status: 400 }
+        )
+      }
+    }
+    
     return NextResponse.json(
-      { error: 'Failed to create checkout session' },
+      { error: 'Failed to create checkout session. Please try again.' },
       { status: 500 }
     )
   }
