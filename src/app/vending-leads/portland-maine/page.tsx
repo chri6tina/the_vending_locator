@@ -11,21 +11,21 @@ import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function PortlandMainPortlandVendingLeadsPage() {
+export default function PortlandMaineMaineVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Portland Main';
-  const stateDisplayName = 'Portland';
+  const cityDisplayName = 'Portland Maine';
+  const stateDisplayName = 'Maine';
   
   // City-specific data
   const cityData = {
-  'name': 'Portland Main',
-  'state': 'Portland',
+  'name': 'Portland Maine',
+  'state': 'Maine',
   'population': '50K-100K',
   'businesses': '5K-10K',
   'industries': '8-12',
   'verifiedLocations': '100-200',
   'rating': '4.8/5',
-  'description': 'Thriving business community in Portland'
+  'description': 'Thriving business community in Maine'
 };
   
   // Active users counter
@@ -37,19 +37,13 @@ export default function PortlandMainPortlandVendingLeadsPage() {
 
   // User names for active users counter
   const [userNames, setUserNames] = useState([
-    'Mike from Portland Main', 'Sarah in Downtown', 'David in Portland Main', 'Lisa in Portland Main',
-    'Tom in Portland Main', 'Jennifer in Portland Main', 'Robert in Portland Main', 'Amanda in Portland Main',
-    'Chris in Portland Main', 'Maria in Portland Main', 'James in Portland Main', 'Emily in Portland Main'
+    'Mike from Portland Maine', 'Sarah in Downtown', 'David in Portland Maine', 'Lisa in Portland Maine',
+    'Tom in Portland Maine', 'Jennifer in Portland Maine', 'Robert in Portland Maine', 'Amanda in Portland Maine',
+    'Chris in Portland Maine', 'Maria in Portland Maine', 'James in Portland Maine', 'Emily in Portland Maine'
   ])
 
   // Recent purchases for social proof
-  const [recentPurchases, setRecentPurchases] = useState([
-    'Just purchased Portland Main vending leads',
-    'Got Portland Main location package',
-    'Bought Portland Main business leads',
-    'Acquired Portland Main vending spots',
-    'Secured Portland Main locations'
-  ])
+  const [recentPurchases, setRecentPurchases] = useState<string[]>([])
 
   // Active users counter effect
   useEffect(() => {
@@ -154,6 +148,23 @@ export default function PortlandMainPortlandVendingLeadsPage() {
                 <span className="ml-2">are currently viewing vending locations</span>
               </motion.div>
 
+              {/* Recent Purchase Notification */}
+{recentPurchases.length > 0 && (
+<motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className="hidden sm:block bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6 max-w-md mx-auto"
+              >
+                <div className="flex items-center gap-2 text-blue-800">
+                  <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
+                  <span className="text-sm font-medium">
+                    {recentPurchases[currentPurchaseIndex]}
+                  </span>
+                </div>
+              </motion.div>
+)}
+
               {/* Main Headline */}
               <motion.h1 
                 initial={{ opacity: 0, y: 20 }}
@@ -172,7 +183,7 @@ export default function PortlandMainPortlandVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Get pre-qualified vending machine locations in Portland Main's diverse and growing business economy. 
+                Get pre-qualified vending machine locations in Portland Maine's diverse and growing business economy. 
                 Access verified businesses with detailed contact information and placement opportunities.
               </motion.p>
 
@@ -206,13 +217,13 @@ export default function PortlandMainPortlandVendingLeadsPage() {
               >
                 <Link 
                   href="/pricing"
-                  className="bg-navy hover:bg-navy/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 min-w-[200px] text-center border border-white/20"
+                  className="bg-navy hover:bg-navy/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 min-w-[200px] text-center"
                 >
                   View Pricing Plans
                 </Link>
                 <Link 
                   href="/hot-leads"
-                  className="bg-navy hover:bg-navy/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 min-w-[200px] text-center border border-white/20"
+                  className="bg-coral hover:bg-coral/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 min-w-[200px] text-center"
                 >
                   Get Hot Leads
                 </Link>
@@ -311,7 +322,7 @@ export default function PortlandMainPortlandVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Portland Main features modern healthcare facilities including hospitals, clinics, and medical offices with high foot traffic and stable operations.</p>
+                <p className="text-stone leading-relaxed">Portland Maine features modern healthcare facilities including hospitals, clinics, and medical offices with high foot traffic and stable operations.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -325,7 +336,7 @@ export default function PortlandMainPortlandVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Educational institutions in Portland Main provide consistent student populations and staff, creating ideal vending machine opportunities.</p>
+                <p className="text-stone leading-relaxed">Educational institutions in Portland Maine provide consistent student populations and staff, creating ideal vending machine opportunities.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -339,7 +350,7 @@ export default function PortlandMainPortlandVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Portland Main's manufacturing sector offers large employee bases and extended operating hours, perfect for vending machine placement.</p>
+                <p className="text-stone leading-relaxed">Portland Maine's manufacturing sector offers large employee bases and extended operating hours, perfect for vending machine placement.</p>
               </motion.div>
               <motion.div
                 key="Retail"
@@ -353,7 +364,7 @@ export default function PortlandMainPortlandVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Retail locations throughout Portland Main provide high customer traffic and diverse demographics for vending machine success.</p>
+                <p className="text-stone leading-relaxed">Retail locations throughout Portland Maine provide high customer traffic and diverse demographics for vending machine success.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -367,7 +378,7 @@ export default function PortlandMainPortlandVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Professional office spaces in Portland Main offer captive audiences during business hours with consistent daily traffic.</p>
+                <p className="text-stone leading-relaxed">Professional office spaces in Portland Maine offer captive audiences during business hours with consistent daily traffic.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -381,7 +392,7 @@ export default function PortlandMainPortlandVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Portland Main's transportation hubs including airports, bus stations, and transit centers provide high-volume foot traffic.</p>
+                <p className="text-stone leading-relaxed">Portland Maine's transportation hubs including airports, bus stations, and transit centers provide high-volume foot traffic.</p>
               </motion.div>
             </div>
           </div>
@@ -475,8 +486,8 @@ export default function PortlandMainPortlandVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What types of vending machine locations are available in Portland Main?</h3>
-                <p className="text-stone leading-relaxed">Portland Main offers diverse vending opportunities including healthcare facilities, educational institutions, manufacturing plants, retail locations, office buildings, and transportation hubs. Each location is pre-verified for optimal vending machine success.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">What types of vending machine locations are available in Portland Maine?</h3>
+                <p className="text-stone leading-relaxed">Portland Maine offers diverse vending opportunities including healthcare facilities, educational institutions, manufacturing plants, retail locations, office buildings, and transportation hubs. Each location is pre-verified for optimal vending machine success.</p>
               </motion.div>
               <motion.div
                 key="1"
@@ -486,8 +497,8 @@ export default function PortlandMainPortlandVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">How quickly can I get vending machine leads for Portland Main?</h3>
-                <p className="text-stone leading-relaxed">Our Portland Main vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">How quickly can I get vending machine leads for Portland Maine?</h3>
+                <p className="text-stone leading-relaxed">Our Portland Maine vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.</p>
               </motion.div>
               <motion.div
                 key="2"
@@ -497,8 +508,8 @@ export default function PortlandMainPortlandVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What makes Portland Main a good market for vending machines?</h3>
-                <p className="text-stone leading-relaxed">Portland Main features a strong business community with diverse industries, stable employment, and consistent foot traffic. The city's economic growth and business-friendly environment create ideal conditions for vending machine success.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">What makes Portland Maine a good market for vending machines?</h3>
+                <p className="text-stone leading-relaxed">Portland Maine features a strong business community with diverse industries, stable employment, and consistent foot traffic. The city's economic growth and business-friendly environment create ideal conditions for vending machine success.</p>
               </motion.div>
               <motion.div
                 key="3"
@@ -508,8 +519,8 @@ export default function PortlandMainPortlandVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">Do you provide ongoing support for Portland Main locations?</h3>
-                <p className="text-stone leading-relaxed">Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Portland Main.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">Do you provide ongoing support for Portland Maine locations?</h3>
+                <p className="text-stone leading-relaxed">Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Portland Maine.</p>
               </motion.div>
               <motion.div
                 key="4"
@@ -519,8 +530,8 @@ export default function PortlandMainPortlandVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What industries in Portland Main are best for vending machines?</h3>
-                <p className="text-stone leading-relaxed">Healthcare, education, manufacturing, retail, office buildings, and transportation sectors in Portland Main show the highest potential for vending machine success due to consistent foot traffic and captive audiences.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">What industries in Portland Maine are best for vending machines?</h3>
+                <p className="text-stone leading-relaxed">Healthcare, education, manufacturing, retail, office buildings, and transportation sectors in Portland Maine show the highest potential for vending machine success due to consistent foot traffic and captive audiences.</p>
               </motion.div>
               <motion.div
                 key="5"
@@ -530,8 +541,8 @@ export default function PortlandMainPortlandVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">How do you verify the quality of Portland Main vending locations?</h3>
-                <p className="text-stone leading-relaxed">We conduct thorough research on each Portland Main location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">How do you verify the quality of Portland Maine vending locations?</h3>
+                <p className="text-stone leading-relaxed">We conduct thorough research on each Portland Maine location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.</p>
               </motion.div>
               <motion.div
                 key="6"
@@ -541,8 +552,8 @@ export default function PortlandMainPortlandVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">Can I get customized vending leads for specific areas of Portland Main?</h3>
-                <p className="text-stone leading-relaxed">Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Portland Main based on your preferences and target market requirements.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">Can I get customized vending leads for specific areas of Portland Maine?</h3>
+                <p className="text-stone leading-relaxed">Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Portland Maine based on your preferences and target market requirements.</p>
               </motion.div>
               <motion.div
                 key="7"
@@ -552,18 +563,29 @@ export default function PortlandMainPortlandVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What's the typical ROI for vending machines in Portland Main?</h3>
-                <p className="text-stone leading-relaxed">Vending machines in Portland Main typically show strong ROI due to the city's business density and consistent traffic patterns. Our research shows average payback periods of 12-18 months for well-placed machines.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">What's the typical ROI for vending machines in Portland Maine?</h3>
+                <p className="text-stone leading-relaxed">Vending machines in Portland Maine typically show strong ROI due to the city's business density and consistent traffic patterns. Our research shows average payback periods of 12-18 months for well-placed machines.</p>
               </motion.div>
             </div>
           </div>
         </section>
 
-        {<span className="text-sm font-medium">
+        {/* Mobile Recent Purchase Notification */}
+{recentPurchases.length > 0 && (
+<motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 2 }}
+            className="bg-blue-50 border border-blue-200 rounded-lg p-4 shadow-lg"
+          >
+            <div className="flex items-center gap-2 text-blue-800">
+              <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
+              <span className="text-sm font-medium">
                 {recentPurchases[currentPurchaseIndex]}
               </span>
             </div>
           </motion.div>
+)}
         </div>
       </div>
       

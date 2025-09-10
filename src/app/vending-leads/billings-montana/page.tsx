@@ -11,21 +11,21 @@ import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function BillingsMontanBillingsVendingLeadsPage() {
+export default function BillingsMontanaMontanaVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Billings Montan';
-  const stateDisplayName = 'Billings';
+  const cityDisplayName = 'Billings Montana';
+  const stateDisplayName = 'Montana';
   
   // City-specific data
   const cityData = {
-  'name': 'Billings Montan',
-  'state': 'Billings',
+  'name': 'Billings Montana',
+  'state': 'Montana',
   'population': '50K-100K',
   'businesses': '5K-10K',
   'industries': '8-12',
   'verifiedLocations': '100-200',
   'rating': '4.8/5',
-  'description': 'Thriving business community in Billings'
+  'description': 'Thriving business community in Montana'
 };
   
   // Active users counter
@@ -37,19 +37,13 @@ export default function BillingsMontanBillingsVendingLeadsPage() {
 
   // User names for active users counter
   const [userNames, setUserNames] = useState([
-    'Mike from Billings Montan', 'Sarah in Downtown', 'David in Billings Montan', 'Lisa in Billings Montan',
-    'Tom in Billings Montan', 'Jennifer in Billings Montan', 'Robert in Billings Montan', 'Amanda in Billings Montan',
-    'Chris in Billings Montan', 'Maria in Billings Montan', 'James in Billings Montan', 'Emily in Billings Montan'
+    'Mike from Billings Montana', 'Sarah in Downtown', 'David in Billings Montana', 'Lisa in Billings Montana',
+    'Tom in Billings Montana', 'Jennifer in Billings Montana', 'Robert in Billings Montana', 'Amanda in Billings Montana',
+    'Chris in Billings Montana', 'Maria in Billings Montana', 'James in Billings Montana', 'Emily in Billings Montana'
   ])
 
   // Recent purchases for social proof
-  const [recentPurchases, setRecentPurchases] = useState([
-    'Just purchased Billings Montan vending leads',
-    'Got Billings Montan location package',
-    'Bought Billings Montan business leads',
-    'Acquired Billings Montan vending spots',
-    'Secured Billings Montan locations'
-  ])
+  const [recentPurchases, setRecentPurchases] = useState<string[]>([])
 
   // Active users counter effect
   useEffect(() => {
@@ -154,6 +148,23 @@ export default function BillingsMontanBillingsVendingLeadsPage() {
                 <span className="ml-2">are currently viewing vending locations</span>
               </motion.div>
 
+              {/* Recent Purchase Notification */}
+{recentPurchases.length > 0 && (
+<motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className="hidden sm:block bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6 max-w-md mx-auto"
+              >
+                <div className="flex items-center gap-2 text-blue-800">
+                  <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
+                  <span className="text-sm font-medium">
+                    {recentPurchases[currentPurchaseIndex]}
+                  </span>
+                </div>
+              </motion.div>
+)}
+
               {/* Main Headline */}
               <motion.h1 
                 initial={{ opacity: 0, y: 20 }}
@@ -172,7 +183,7 @@ export default function BillingsMontanBillingsVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Get pre-qualified vending machine locations in Billings Montan's diverse and growing business economy. 
+                Get pre-qualified vending machine locations in Billings Montana's diverse and growing business economy. 
                 Access verified businesses with detailed contact information and placement opportunities.
               </motion.p>
 
@@ -206,13 +217,13 @@ export default function BillingsMontanBillingsVendingLeadsPage() {
               >
                 <Link 
                   href="/pricing"
-                  className="bg-navy hover:bg-navy/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 min-w-[200px] text-center border border-white/20"
+                  className="bg-navy hover:bg-navy/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 min-w-[200px] text-center"
                 >
                   View Pricing Plans
                 </Link>
                 <Link 
                   href="/hot-leads"
-                  className="bg-navy hover:bg-navy/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 min-w-[200px] text-center border border-white/20"
+                  className="bg-coral hover:bg-coral/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 min-w-[200px] text-center"
                 >
                   Get Hot Leads
                 </Link>
@@ -311,7 +322,7 @@ export default function BillingsMontanBillingsVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Billings Montan features modern healthcare facilities including hospitals, clinics, and medical offices with high foot traffic and stable operations.</p>
+                <p className="text-stone leading-relaxed">Billings Montana features modern healthcare facilities including hospitals, clinics, and medical offices with high foot traffic and stable operations.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -325,7 +336,7 @@ export default function BillingsMontanBillingsVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Educational institutions in Billings Montan provide consistent student populations and staff, creating ideal vending machine opportunities.</p>
+                <p className="text-stone leading-relaxed">Educational institutions in Billings Montana provide consistent student populations and staff, creating ideal vending machine opportunities.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -339,7 +350,7 @@ export default function BillingsMontanBillingsVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Billings Montan's manufacturing sector offers large employee bases and extended operating hours, perfect for vending machine placement.</p>
+                <p className="text-stone leading-relaxed">Billings Montana's manufacturing sector offers large employee bases and extended operating hours, perfect for vending machine placement.</p>
               </motion.div>
               <motion.div
                 key="Retail"
@@ -353,7 +364,7 @@ export default function BillingsMontanBillingsVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Retail locations throughout Billings Montan provide high customer traffic and diverse demographics for vending machine success.</p>
+                <p className="text-stone leading-relaxed">Retail locations throughout Billings Montana provide high customer traffic and diverse demographics for vending machine success.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -367,7 +378,7 @@ export default function BillingsMontanBillingsVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Professional office spaces in Billings Montan offer captive audiences during business hours with consistent daily traffic.</p>
+                <p className="text-stone leading-relaxed">Professional office spaces in Billings Montana offer captive audiences during business hours with consistent daily traffic.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -381,7 +392,7 @@ export default function BillingsMontanBillingsVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Billings Montan's transportation hubs including airports, bus stations, and transit centers provide high-volume foot traffic.</p>
+                <p className="text-stone leading-relaxed">Billings Montana's transportation hubs including airports, bus stations, and transit centers provide high-volume foot traffic.</p>
               </motion.div>
             </div>
           </div>
@@ -475,8 +486,8 @@ export default function BillingsMontanBillingsVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What types of vending machine locations are available in Billings Montan?</h3>
-                <p className="text-stone leading-relaxed">Billings Montan offers diverse vending opportunities including healthcare facilities, educational institutions, manufacturing plants, retail locations, office buildings, and transportation hubs. Each location is pre-verified for optimal vending machine success.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">What types of vending machine locations are available in Billings Montana?</h3>
+                <p className="text-stone leading-relaxed">Billings Montana offers diverse vending opportunities including healthcare facilities, educational institutions, manufacturing plants, retail locations, office buildings, and transportation hubs. Each location is pre-verified for optimal vending machine success.</p>
               </motion.div>
               <motion.div
                 key="1"
@@ -486,8 +497,8 @@ export default function BillingsMontanBillingsVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">How quickly can I get vending machine leads for Billings Montan?</h3>
-                <p className="text-stone leading-relaxed">Our Billings Montan vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">How quickly can I get vending machine leads for Billings Montana?</h3>
+                <p className="text-stone leading-relaxed">Our Billings Montana vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.</p>
               </motion.div>
               <motion.div
                 key="2"
@@ -497,8 +508,8 @@ export default function BillingsMontanBillingsVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What makes Billings Montan a good market for vending machines?</h3>
-                <p className="text-stone leading-relaxed">Billings Montan features a strong business community with diverse industries, stable employment, and consistent foot traffic. The city's economic growth and business-friendly environment create ideal conditions for vending machine success.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">What makes Billings Montana a good market for vending machines?</h3>
+                <p className="text-stone leading-relaxed">Billings Montana features a strong business community with diverse industries, stable employment, and consistent foot traffic. The city's economic growth and business-friendly environment create ideal conditions for vending machine success.</p>
               </motion.div>
               <motion.div
                 key="3"
@@ -508,8 +519,8 @@ export default function BillingsMontanBillingsVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">Do you provide ongoing support for Billings Montan locations?</h3>
-                <p className="text-stone leading-relaxed">Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Billings Montan.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">Do you provide ongoing support for Billings Montana locations?</h3>
+                <p className="text-stone leading-relaxed">Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Billings Montana.</p>
               </motion.div>
               <motion.div
                 key="4"
@@ -519,8 +530,8 @@ export default function BillingsMontanBillingsVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What industries in Billings Montan are best for vending machines?</h3>
-                <p className="text-stone leading-relaxed">Healthcare, education, manufacturing, retail, office buildings, and transportation sectors in Billings Montan show the highest potential for vending machine success due to consistent foot traffic and captive audiences.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">What industries in Billings Montana are best for vending machines?</h3>
+                <p className="text-stone leading-relaxed">Healthcare, education, manufacturing, retail, office buildings, and transportation sectors in Billings Montana show the highest potential for vending machine success due to consistent foot traffic and captive audiences.</p>
               </motion.div>
               <motion.div
                 key="5"
@@ -530,8 +541,8 @@ export default function BillingsMontanBillingsVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">How do you verify the quality of Billings Montan vending locations?</h3>
-                <p className="text-stone leading-relaxed">We conduct thorough research on each Billings Montan location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">How do you verify the quality of Billings Montana vending locations?</h3>
+                <p className="text-stone leading-relaxed">We conduct thorough research on each Billings Montana location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.</p>
               </motion.div>
               <motion.div
                 key="6"
@@ -541,8 +552,8 @@ export default function BillingsMontanBillingsVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">Can I get customized vending leads for specific areas of Billings Montan?</h3>
-                <p className="text-stone leading-relaxed">Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Billings Montan based on your preferences and target market requirements.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">Can I get customized vending leads for specific areas of Billings Montana?</h3>
+                <p className="text-stone leading-relaxed">Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Billings Montana based on your preferences and target market requirements.</p>
               </motion.div>
               <motion.div
                 key="7"
@@ -552,18 +563,29 @@ export default function BillingsMontanBillingsVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What's the typical ROI for vending machines in Billings Montan?</h3>
-                <p className="text-stone leading-relaxed">Vending machines in Billings Montan typically show strong ROI due to the city's business density and consistent traffic patterns. Our research shows average payback periods of 12-18 months for well-placed machines.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">What's the typical ROI for vending machines in Billings Montana?</h3>
+                <p className="text-stone leading-relaxed">Vending machines in Billings Montana typically show strong ROI due to the city's business density and consistent traffic patterns. Our research shows average payback periods of 12-18 months for well-placed machines.</p>
               </motion.div>
             </div>
           </div>
         </section>
 
-        {<span className="text-sm font-medium">
+        {/* Mobile Recent Purchase Notification */}
+{recentPurchases.length > 0 && (
+<motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 2 }}
+            className="bg-blue-50 border border-blue-200 rounded-lg p-4 shadow-lg"
+          >
+            <div className="flex items-center gap-2 text-blue-800">
+              <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
+              <span className="text-sm font-medium">
                 {recentPurchases[currentPurchaseIndex]}
               </span>
             </div>
           </motion.div>
+)}
         </div>
       </div>
       

@@ -11,19 +11,19 @@ import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function OlatheKansasVendingLeadsPage() {
+export default function OlatheKansasKansasVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Olathe';
+  const cityDisplayName = 'Olathe Kansas';
   const stateDisplayName = 'Kansas';
   
   // City-specific data
   const cityData = {
-  'name': 'Olathe',
+  'name': 'Olathe Kansas',
   'state': 'Kansas',
-  'population': '1M+',
-  'businesses': '100K+',
-  'industries': '15+',
-  'verifiedLocations': '500+',
+  'population': '50K-100K',
+  'businesses': '5K-10K',
+  'industries': '8-12',
+  'verifiedLocations': '100-200',
   'rating': '4.8/5',
   'description': 'Thriving business community in Kansas'
 };
@@ -37,19 +37,13 @@ export default function OlatheKansasVendingLeadsPage() {
 
   // User names for active users counter
   const [userNames, setUserNames] = useState([
-    'Mike from Olathe', 'Sarah in Downtown', 'David in Olathe', 'Lisa in Olathe',
-    'Tom in Olathe', 'Jennifer in Olathe', 'Robert in Olathe', 'Amanda in Olathe',
-    'Chris in Olathe', 'Maria in Olathe', 'James in Olathe', 'Emily in Olathe'
+    'Mike from Olathe Kansas', 'Sarah in Downtown', 'David in Olathe Kansas', 'Lisa in Olathe Kansas',
+    'Tom in Olathe Kansas', 'Jennifer in Olathe Kansas', 'Robert in Olathe Kansas', 'Amanda in Olathe Kansas',
+    'Chris in Olathe Kansas', 'Maria in Olathe Kansas', 'James in Olathe Kansas', 'Emily in Olathe Kansas'
   ])
 
   // Recent purchases for social proof
-  const [recentPurchases, setRecentPurchases] = useState([
-    'Just purchased Olathe vending leads',
-    'Got Olathe location package',
-    'Bought Olathe business leads',
-    'Acquired Olathe vending spots',
-    'Secured Olathe locations'
-  ])
+  const [recentPurchases, setRecentPurchases] = useState<string[]>([])
 
   // Active users counter effect
   useEffect(() => {
@@ -154,6 +148,23 @@ export default function OlatheKansasVendingLeadsPage() {
                 <span className="ml-2">are currently viewing vending locations</span>
               </motion.div>
 
+              {/* Recent Purchase Notification */}
+{recentPurchases.length > 0 && (
+<motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className="hidden sm:block bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6 max-w-md mx-auto"
+              >
+                <div className="flex items-center gap-2 text-blue-800">
+                  <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
+                  <span className="text-sm font-medium">
+                    {recentPurchases[currentPurchaseIndex]}
+                  </span>
+                </div>
+              </motion.div>
+)}
+
               {/* Main Headline */}
               <motion.h1 
                 initial={{ opacity: 0, y: 20 }}
@@ -172,7 +183,7 @@ export default function OlatheKansasVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Get pre-qualified vending machine locations in Olathe's diverse and growing business economy. 
+                Get pre-qualified vending machine locations in Olathe Kansas's diverse and growing business economy. 
                 Access verified businesses with detailed contact information and placement opportunities.
               </motion.p>
 
@@ -206,13 +217,13 @@ export default function OlatheKansasVendingLeadsPage() {
               >
                 <Link 
                   href="/pricing"
-                  className="bg-navy hover:bg-navy/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 min-w-[200px] text-center border border-white/20"
+                  className="bg-navy hover:bg-navy/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 min-w-[200px] text-center"
                 >
                   View Pricing Plans
                 </Link>
                 <Link 
                   href="/hot-leads"
-                  className="bg-navy hover:bg-navy/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 min-w-[200px] text-center border border-white/20"
+                  className="bg-coral hover:bg-coral/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 min-w-[200px] text-center"
                 >
                   Get Hot Leads
                 </Link>
@@ -311,7 +322,7 @@ export default function OlatheKansasVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Olathe features modern healthcare facilities including hospitals, clinics, and medical offices with high foot traffic and stable operations.</p>
+                <p className="text-stone leading-relaxed">Olathe Kansas features modern healthcare facilities including hospitals, clinics, and medical offices with high foot traffic and stable operations.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -325,7 +336,7 @@ export default function OlatheKansasVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Educational institutions in Olathe provide consistent student populations and staff, creating ideal vending machine opportunities.</p>
+                <p className="text-stone leading-relaxed">Educational institutions in Olathe Kansas provide consistent student populations and staff, creating ideal vending machine opportunities.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -339,7 +350,7 @@ export default function OlatheKansasVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Olathe's manufacturing sector offers large employee bases and extended operating hours, perfect for vending machine placement.</p>
+                <p className="text-stone leading-relaxed">Olathe Kansas's manufacturing sector offers large employee bases and extended operating hours, perfect for vending machine placement.</p>
               </motion.div>
               <motion.div
                 key="Retail"
@@ -353,7 +364,7 @@ export default function OlatheKansasVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Retail locations throughout Olathe provide high customer traffic and diverse demographics for vending machine success.</p>
+                <p className="text-stone leading-relaxed">Retail locations throughout Olathe Kansas provide high customer traffic and diverse demographics for vending machine success.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -367,7 +378,7 @@ export default function OlatheKansasVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Professional office spaces in Olathe offer captive audiences during business hours with consistent daily traffic.</p>
+                <p className="text-stone leading-relaxed">Professional office spaces in Olathe Kansas offer captive audiences during business hours with consistent daily traffic.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -381,7 +392,7 @@ export default function OlatheKansasVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Olathe's transportation hubs including airports, bus stations, and transit centers provide high-volume foot traffic.</p>
+                <p className="text-stone leading-relaxed">Olathe Kansas's transportation hubs including airports, bus stations, and transit centers provide high-volume foot traffic.</p>
               </motion.div>
             </div>
           </div>
@@ -475,8 +486,8 @@ export default function OlatheKansasVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What types of vending machine locations are available in Olathe?</h3>
-                <p className="text-stone leading-relaxed">Olathe offers diverse vending opportunities including healthcare facilities, educational institutions, manufacturing plants, retail locations, office buildings, and transportation hubs. Each location is pre-verified for optimal vending machine success.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">What types of vending machine locations are available in Olathe Kansas?</h3>
+                <p className="text-stone leading-relaxed">Olathe Kansas offers diverse vending opportunities including healthcare facilities, educational institutions, manufacturing plants, retail locations, office buildings, and transportation hubs. Each location is pre-verified for optimal vending machine success.</p>
               </motion.div>
               <motion.div
                 key="1"
@@ -486,8 +497,8 @@ export default function OlatheKansasVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">How quickly can I get vending machine leads for Olathe?</h3>
-                <p className="text-stone leading-relaxed">Our Olathe vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">How quickly can I get vending machine leads for Olathe Kansas?</h3>
+                <p className="text-stone leading-relaxed">Our Olathe Kansas vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.</p>
               </motion.div>
               <motion.div
                 key="2"
@@ -497,8 +508,8 @@ export default function OlatheKansasVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What makes Olathe a good market for vending machines?</h3>
-                <p className="text-stone leading-relaxed">Olathe features a strong business community with diverse industries, stable employment, and consistent foot traffic. The city's economic growth and business-friendly environment create ideal conditions for vending machine success.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">What makes Olathe Kansas a good market for vending machines?</h3>
+                <p className="text-stone leading-relaxed">Olathe Kansas features a strong business community with diverse industries, stable employment, and consistent foot traffic. The city's economic growth and business-friendly environment create ideal conditions for vending machine success.</p>
               </motion.div>
               <motion.div
                 key="3"
@@ -508,8 +519,8 @@ export default function OlatheKansasVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">Do you provide ongoing support for Olathe locations?</h3>
-                <p className="text-stone leading-relaxed">Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Olathe.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">Do you provide ongoing support for Olathe Kansas locations?</h3>
+                <p className="text-stone leading-relaxed">Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Olathe Kansas.</p>
               </motion.div>
               <motion.div
                 key="4"
@@ -519,8 +530,8 @@ export default function OlatheKansasVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What industries in Olathe are best for vending machines?</h3>
-                <p className="text-stone leading-relaxed">Healthcare, education, manufacturing, retail, office buildings, and transportation sectors in Olathe show the highest potential for vending machine success due to consistent foot traffic and captive audiences.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">What industries in Olathe Kansas are best for vending machines?</h3>
+                <p className="text-stone leading-relaxed">Healthcare, education, manufacturing, retail, office buildings, and transportation sectors in Olathe Kansas show the highest potential for vending machine success due to consistent foot traffic and captive audiences.</p>
               </motion.div>
               <motion.div
                 key="5"
@@ -530,8 +541,8 @@ export default function OlatheKansasVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">How do you verify the quality of Olathe vending locations?</h3>
-                <p className="text-stone leading-relaxed">We conduct thorough research on each Olathe location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">How do you verify the quality of Olathe Kansas vending locations?</h3>
+                <p className="text-stone leading-relaxed">We conduct thorough research on each Olathe Kansas location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.</p>
               </motion.div>
               <motion.div
                 key="6"
@@ -541,8 +552,8 @@ export default function OlatheKansasVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">Can I get customized vending leads for specific areas of Olathe?</h3>
-                <p className="text-stone leading-relaxed">Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Olathe based on your preferences and target market requirements.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">Can I get customized vending leads for specific areas of Olathe Kansas?</h3>
+                <p className="text-stone leading-relaxed">Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Olathe Kansas based on your preferences and target market requirements.</p>
               </motion.div>
               <motion.div
                 key="7"
@@ -552,18 +563,29 @@ export default function OlatheKansasVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What's the typical ROI for vending machines in Olathe?</h3>
-                <p className="text-stone leading-relaxed">Vending machines in Olathe typically show strong ROI due to the city's business density and consistent traffic patterns. Our research shows average payback periods of 12-18 months for well-placed machines.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">What's the typical ROI for vending machines in Olathe Kansas?</h3>
+                <p className="text-stone leading-relaxed">Vending machines in Olathe Kansas typically show strong ROI due to the city's business density and consistent traffic patterns. Our research shows average payback periods of 12-18 months for well-placed machines.</p>
               </motion.div>
             </div>
           </div>
         </section>
 
-        {<span className="text-sm font-medium">
+        {/* Mobile Recent Purchase Notification */}
+{recentPurchases.length > 0 && (
+<motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 2 }}
+            className="bg-blue-50 border border-blue-200 rounded-lg p-4 shadow-lg"
+          >
+            <div className="flex items-center gap-2 text-blue-800">
+              <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
+              <span className="text-sm font-medium">
                 {recentPurchases[currentPurchaseIndex]}
               </span>
             </div>
           </motion.div>
+)}
         </div>
       </div>
       

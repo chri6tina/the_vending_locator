@@ -11,19 +11,19 @@ import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function KodiakAlaskaVendingLeadsPage() {
+export default function KodiakAlaskaAlaskaVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Kodiak';
+  const cityDisplayName = 'Kodiak Alaska';
   const stateDisplayName = 'Alaska';
   
   // City-specific data
   const cityData = {
-  'name': 'Kodiak',
+  'name': 'Kodiak Alaska',
   'state': 'Alaska',
-  'population': '1M+',
-  'businesses': '100K+',
-  'industries': '15+',
-  'verifiedLocations': '500+',
+  'population': '50K-100K',
+  'businesses': '5K-10K',
+  'industries': '8-12',
+  'verifiedLocations': '100-200',
   'rating': '4.8/5',
   'description': 'Thriving business community in Alaska'
 };
@@ -37,19 +37,13 @@ export default function KodiakAlaskaVendingLeadsPage() {
 
   // User names for active users counter
   const [userNames, setUserNames] = useState([
-    'Mike from Kodiak', 'Sarah in Downtown', 'David in Kodiak', 'Lisa in Kodiak',
-    'Tom in Kodiak', 'Jennifer in Kodiak', 'Robert in Kodiak', 'Amanda in Kodiak',
-    'Chris in Kodiak', 'Maria in Kodiak', 'James in Kodiak', 'Emily in Kodiak'
+    'Mike from Kodiak Alaska', 'Sarah in Downtown', 'David in Kodiak Alaska', 'Lisa in Kodiak Alaska',
+    'Tom in Kodiak Alaska', 'Jennifer in Kodiak Alaska', 'Robert in Kodiak Alaska', 'Amanda in Kodiak Alaska',
+    'Chris in Kodiak Alaska', 'Maria in Kodiak Alaska', 'James in Kodiak Alaska', 'Emily in Kodiak Alaska'
   ])
 
   // Recent purchases for social proof
-  const [recentPurchases, setRecentPurchases] = useState([
-    'Just purchased Kodiak vending leads',
-    'Got Kodiak location package',
-    'Bought Kodiak business leads',
-    'Acquired Kodiak vending spots',
-    'Secured Kodiak locations'
-  ])
+  const [recentPurchases, setRecentPurchases] = useState<string[]>([])
 
   // Active users counter effect
   useEffect(() => {
@@ -154,6 +148,23 @@ export default function KodiakAlaskaVendingLeadsPage() {
                 <span className="ml-2">are currently viewing vending locations</span>
               </motion.div>
 
+              {/* Recent Purchase Notification */}
+{recentPurchases.length > 0 && (
+<motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className="hidden sm:block bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6 max-w-md mx-auto"
+              >
+                <div className="flex items-center gap-2 text-blue-800">
+                  <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
+                  <span className="text-sm font-medium">
+                    {recentPurchases[currentPurchaseIndex]}
+                  </span>
+                </div>
+              </motion.div>
+)}
+
               {/* Main Headline */}
               <motion.h1 
                 initial={{ opacity: 0, y: 20 }}
@@ -172,7 +183,7 @@ export default function KodiakAlaskaVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Get pre-qualified vending machine locations in Kodiak's diverse and growing business economy. 
+                Get pre-qualified vending machine locations in Kodiak Alaska's diverse and growing business economy. 
                 Access verified businesses with detailed contact information and placement opportunities.
               </motion.p>
 
@@ -206,13 +217,13 @@ export default function KodiakAlaskaVendingLeadsPage() {
               >
                 <Link 
                   href="/pricing"
-                  className="bg-navy hover:bg-navy/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 min-w-[200px] text-center border border-white/20"
+                  className="bg-navy hover:bg-navy/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 min-w-[200px] text-center"
                 >
                   View Pricing Plans
                 </Link>
                 <Link 
                   href="/hot-leads"
-                  className="bg-navy hover:bg-navy/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 min-w-[200px] text-center border border-white/20"
+                  className="bg-coral hover:bg-coral/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 min-w-[200px] text-center"
                 >
                   Get Hot Leads
                 </Link>
@@ -311,7 +322,7 @@ export default function KodiakAlaskaVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Kodiak features modern healthcare facilities including hospitals, clinics, and medical offices with high foot traffic and stable operations.</p>
+                <p className="text-stone leading-relaxed">Kodiak Alaska features modern healthcare facilities including hospitals, clinics, and medical offices with high foot traffic and stable operations.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -325,7 +336,7 @@ export default function KodiakAlaskaVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Educational institutions in Kodiak provide consistent student populations and staff, creating ideal vending machine opportunities.</p>
+                <p className="text-stone leading-relaxed">Educational institutions in Kodiak Alaska provide consistent student populations and staff, creating ideal vending machine opportunities.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -339,7 +350,7 @@ export default function KodiakAlaskaVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Kodiak's manufacturing sector offers large employee bases and extended operating hours, perfect for vending machine placement.</p>
+                <p className="text-stone leading-relaxed">Kodiak Alaska's manufacturing sector offers large employee bases and extended operating hours, perfect for vending machine placement.</p>
               </motion.div>
               <motion.div
                 key="Retail"
@@ -353,7 +364,7 @@ export default function KodiakAlaskaVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Retail locations throughout Kodiak provide high customer traffic and diverse demographics for vending machine success.</p>
+                <p className="text-stone leading-relaxed">Retail locations throughout Kodiak Alaska provide high customer traffic and diverse demographics for vending machine success.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -367,7 +378,7 @@ export default function KodiakAlaskaVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Professional office spaces in Kodiak offer captive audiences during business hours with consistent daily traffic.</p>
+                <p className="text-stone leading-relaxed">Professional office spaces in Kodiak Alaska offer captive audiences during business hours with consistent daily traffic.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -381,7 +392,7 @@ export default function KodiakAlaskaVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Kodiak's transportation hubs including airports, bus stations, and transit centers provide high-volume foot traffic.</p>
+                <p className="text-stone leading-relaxed">Kodiak Alaska's transportation hubs including airports, bus stations, and transit centers provide high-volume foot traffic.</p>
               </motion.div>
             </div>
           </div>
@@ -475,8 +486,8 @@ export default function KodiakAlaskaVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What types of vending machine locations are available in Kodiak?</h3>
-                <p className="text-stone leading-relaxed">Kodiak offers diverse vending opportunities including healthcare facilities, educational institutions, manufacturing plants, retail locations, office buildings, and transportation hubs. Each location is pre-verified for optimal vending machine success.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">What types of vending machine locations are available in Kodiak Alaska?</h3>
+                <p className="text-stone leading-relaxed">Kodiak Alaska offers diverse vending opportunities including healthcare facilities, educational institutions, manufacturing plants, retail locations, office buildings, and transportation hubs. Each location is pre-verified for optimal vending machine success.</p>
               </motion.div>
               <motion.div
                 key="1"
@@ -486,8 +497,8 @@ export default function KodiakAlaskaVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">How quickly can I get vending machine leads for Kodiak?</h3>
-                <p className="text-stone leading-relaxed">Our Kodiak vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">How quickly can I get vending machine leads for Kodiak Alaska?</h3>
+                <p className="text-stone leading-relaxed">Our Kodiak Alaska vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.</p>
               </motion.div>
               <motion.div
                 key="2"
@@ -497,8 +508,8 @@ export default function KodiakAlaskaVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What makes Kodiak a good market for vending machines?</h3>
-                <p className="text-stone leading-relaxed">Kodiak features a strong business community with diverse industries, stable employment, and consistent foot traffic. The city's economic growth and business-friendly environment create ideal conditions for vending machine success.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">What makes Kodiak Alaska a good market for vending machines?</h3>
+                <p className="text-stone leading-relaxed">Kodiak Alaska features a strong business community with diverse industries, stable employment, and consistent foot traffic. The city's economic growth and business-friendly environment create ideal conditions for vending machine success.</p>
               </motion.div>
               <motion.div
                 key="3"
@@ -508,8 +519,8 @@ export default function KodiakAlaskaVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">Do you provide ongoing support for Kodiak locations?</h3>
-                <p className="text-stone leading-relaxed">Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Kodiak.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">Do you provide ongoing support for Kodiak Alaska locations?</h3>
+                <p className="text-stone leading-relaxed">Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Kodiak Alaska.</p>
               </motion.div>
               <motion.div
                 key="4"
@@ -519,8 +530,8 @@ export default function KodiakAlaskaVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What industries in Kodiak are best for vending machines?</h3>
-                <p className="text-stone leading-relaxed">Healthcare, education, manufacturing, retail, office buildings, and transportation sectors in Kodiak show the highest potential for vending machine success due to consistent foot traffic and captive audiences.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">What industries in Kodiak Alaska are best for vending machines?</h3>
+                <p className="text-stone leading-relaxed">Healthcare, education, manufacturing, retail, office buildings, and transportation sectors in Kodiak Alaska show the highest potential for vending machine success due to consistent foot traffic and captive audiences.</p>
               </motion.div>
               <motion.div
                 key="5"
@@ -530,8 +541,8 @@ export default function KodiakAlaskaVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">How do you verify the quality of Kodiak vending locations?</h3>
-                <p className="text-stone leading-relaxed">We conduct thorough research on each Kodiak location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">How do you verify the quality of Kodiak Alaska vending locations?</h3>
+                <p className="text-stone leading-relaxed">We conduct thorough research on each Kodiak Alaska location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.</p>
               </motion.div>
               <motion.div
                 key="6"
@@ -541,8 +552,8 @@ export default function KodiakAlaskaVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">Can I get customized vending leads for specific areas of Kodiak?</h3>
-                <p className="text-stone leading-relaxed">Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Kodiak based on your preferences and target market requirements.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">Can I get customized vending leads for specific areas of Kodiak Alaska?</h3>
+                <p className="text-stone leading-relaxed">Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Kodiak Alaska based on your preferences and target market requirements.</p>
               </motion.div>
               <motion.div
                 key="7"
@@ -552,18 +563,29 @@ export default function KodiakAlaskaVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What's the typical ROI for vending machines in Kodiak?</h3>
-                <p className="text-stone leading-relaxed">Vending machines in Kodiak typically show strong ROI due to the city's business density and consistent traffic patterns. Our research shows average payback periods of 12-18 months for well-placed machines.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-3">What's the typical ROI for vending machines in Kodiak Alaska?</h3>
+                <p className="text-stone leading-relaxed">Vending machines in Kodiak Alaska typically show strong ROI due to the city's business density and consistent traffic patterns. Our research shows average payback periods of 12-18 months for well-placed machines.</p>
               </motion.div>
             </div>
           </div>
         </section>
 
-        {<span className="text-sm font-medium">
+        {/* Mobile Recent Purchase Notification */}
+{recentPurchases.length > 0 && (
+<motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 2 }}
+            className="bg-blue-50 border border-blue-200 rounded-lg p-4 shadow-lg"
+          >
+            <div className="flex items-center gap-2 text-blue-800">
+              <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
+              <span className="text-sm font-medium">
                 {recentPurchases[currentPurchaseIndex]}
               </span>
             </div>
           </motion.div>
+)}
         </div>
       </div>
       

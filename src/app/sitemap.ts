@@ -17,6 +17,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
   { url: 'https://www.thevendinglocator.com/terms-of-service', lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.6 },
   ]
 
+  // Generate city pages dynamically from states to ensure all new pages are included
+  const generatedCityPages = states.flatMap(state =>
+    state.cities.map(city => ({
+      url: `https://www.thevendinglocator.com/vending-leads/${city.slug}`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.8,
+    }))
+  )
+
   // State pages - All 50 states
   const statePages = [
     // Original states
@@ -414,6 +424,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...mainPages,
     ...statePages,
     ...cityPages,
+    ...generatedCityPages,
     ...cityGuidePages,
     ...blogPosts,
     ...vendingCompanyPages,

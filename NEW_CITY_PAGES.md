@@ -1,0 +1,167 @@
+# New City Pages
+
+Commit: bde3571
+Total: 54
+
+- anchorage-alaska
+  - Local: http://localhost:3000/vending-leads/anchorage-alaska
+  - Prod:  https://www.thevendinglocator.com/vending-leads/anchorage-alaska
+- augusta-maine
+  - Local: http://localhost:3000/vending-leads/augusta-maine
+  - Prod:  https://www.thevendinglocator.com/vending-leads/augusta-maine
+- bangor-maine
+  - Local: http://localhost:3000/vending-leads/bangor-maine
+  - Prod:  https://www.thevendinglocator.com/vending-leads/bangor-maine
+- bellevue-nebraska
+  - Local: http://localhost:3000/vending-leads/bellevue-nebraska
+  - Prod:  https://www.thevendinglocator.com/vending-leads/bellevue-nebraska
+- bentonville-arkansas
+  - Local: http://localhost:3000/vending-leads/bentonville-arkansas
+  - Prod:  https://www.thevendinglocator.com/vending-leads/bentonville-arkansas
+- billings-montana
+  - Local: http://localhost:3000/vending-leads/billings-montana
+  - Prod:  https://www.thevendinglocator.com/vending-leads/billings-montana
+- biloxi-mississippi
+  - Local: http://localhost:3000/vending-leads/biloxi-mississippi
+  - Prod:  https://www.thevendinglocator.com/vending-leads/biloxi-mississippi
+- bozeman-montana
+  - Local: http://localhost:3000/vending-leads/bozeman-montana
+  - Prod:  https://www.thevendinglocator.com/vending-leads/bozeman-montana
+- butte-montana
+  - Local: http://localhost:3000/vending-leads/butte-montana
+  - Prod:  https://www.thevendinglocator.com/vending-leads/butte-montana
+- carson-city-nevada
+  - Local: http://localhost:3000/vending-leads/carson-city-nevada
+  - Prod:  https://www.thevendinglocator.com/vending-leads/carson-city-nevada
+- conway-arkansas
+  - Local: http://localhost:3000/vending-leads/conway-arkansas
+  - Prod:  https://www.thevendinglocator.com/vending-leads/conway-arkansas
+- cranston-rhode-island
+  - Local: http://localhost:3000/vending-leads/cranston-rhode-island
+  - Prod:  https://www.thevendinglocator.com/vending-leads/cranston-rhode-island
+- eugene-oregon
+  - Local: http://localhost:3000/vending-leads/eugene-oregon
+  - Prod:  https://www.thevendinglocator.com/vending-leads/eugene-oregon
+- fairbanks-alaska
+  - Local: http://localhost:3000/vending-leads/fairbanks-alaska
+  - Prod:  https://www.thevendinglocator.com/vending-leads/fairbanks-alaska
+- fayetteville-arkansas
+  - Local: http://localhost:3000/vending-leads/fayetteville-arkansas
+  - Prod:  https://www.thevendinglocator.com/vending-leads/fayetteville-arkansas
+- fort-smith-arkansas
+  - Local: http://localhost:3000/vending-leads/fort-smith-arkansas
+  - Prod:  https://www.thevendinglocator.com/vending-leads/fort-smith-arkansas
+- great-falls-montana
+  - Local: http://localhost:3000/vending-leads/great-falls-montana
+  - Prod:  https://www.thevendinglocator.com/vending-leads/great-falls-montana
+- gulfport-mississippi
+  - Local: http://localhost:3000/vending-leads/gulfport-mississippi
+  - Prod:  https://www.thevendinglocator.com/vending-leads/gulfport-mississippi
+- hartford-connecticut
+  - Local: http://localhost:3000/vending-leads/hartford-connecticut
+  - Prod:  https://www.thevendinglocator.com/vending-leads/hartford-connecticut
+- hattiesburg-mississippi
+  - Local: http://localhost:3000/vending-leads/hattiesburg-mississippi
+  - Prod:  https://www.thevendinglocator.com/vending-leads/hattiesburg-mississippi
+- helena-montana
+  - Local: http://localhost:3000/vending-leads/helena-montana
+  - Prod:  https://www.thevendinglocator.com/vending-leads/helena-montana
+- homer-alaska
+  - Local: http://localhost:3000/vending-leads/homer-alaska
+  - Prod:  https://www.thevendinglocator.com/vending-leads/homer-alaska
+- jackson-mississippi
+  - Local: http://localhost:3000/vending-leads/jackson-mississippi
+  - Prod:  https://www.thevendinglocator.com/vending-leads/jackson-mississippi
+- jonesboro-arkansas
+  - Local: http://localhost:3000/vending-leads/jonesboro-arkansas
+  - Prod:  https://www.thevendinglocator.com/vending-leads/jonesboro-arkansas
+- juneau-alaska
+  - Local: http://localhost:3000/vending-leads/juneau-alaska
+  - Prod:  https://www.thevendinglocator.com/vending-leads/juneau-alaska
+- kansas-city-kansas
+  - Local: http://localhost:3000/vending-leads/kansas-city-kansas
+  - Prod:  https://www.thevendinglocator.com/vending-leads/kansas-city-kansas
+- kenai-alaska
+  - Local: http://localhost:3000/vending-leads/kenai-alaska
+  - Prod:  https://www.thevendinglocator.com/vending-leads/kenai-alaska
+- ketchikan-alaska
+  - Local: http://localhost:3000/vending-leads/ketchikan-alaska
+  - Prod:  https://www.thevendinglocator.com/vending-leads/ketchikan-alaska
+- kodiak-alaska
+  - Local: http://localhost:3000/vending-leads/kodiak-alaska
+  - Prod:  https://www.thevendinglocator.com/vending-leads/kodiak-alaska
+- las-cruces-new-mexico
+  - Local: http://localhost:3000/vending-leads/las-cruces-new-mexico
+  - Prod:  https://www.thevendinglocator.com/vending-leads/las-cruces-new-mexico
+- lincoln-nebraska
+  - Local: http://localhost:3000/vending-leads/lincoln-nebraska
+  - Prod:  https://www.thevendinglocator.com/vending-leads/lincoln-nebraska
+- missoula-montana
+  - Local: http://localhost:3000/vending-leads/missoula-montana
+  - Prod:  https://www.thevendinglocator.com/vending-leads/missoula-montana
+- north-las-vegas-nevada
+  - Local: http://localhost:3000/vending-leads/north-las-vegas-nevada
+  - Prod:  https://www.thevendinglocator.com/vending-leads/north-las-vegas-nevada
+- north-little-rock-arkansas
+  - Local: http://localhost:3000/vending-leads/north-little-rock-arkansas
+  - Prod:  https://www.thevendinglocator.com/vending-leads/north-little-rock-arkansas
+- norwalk-connecticut
+  - Local: http://localhost:3000/vending-leads/norwalk-connecticut
+  - Prod:  https://www.thevendinglocator.com/vending-leads/norwalk-connecticut
+- olathe-kansas
+  - Local: http://localhost:3000/vending-leads/olathe-kansas
+  - Prod:  https://www.thevendinglocator.com/vending-leads/olathe-kansas
+- overland-park-kansas
+  - Local: http://localhost:3000/vending-leads/overland-park-kansas
+  - Prod:  https://www.thevendinglocator.com/vending-leads/overland-park-kansas
+- palmer-alaska
+  - Local: http://localhost:3000/vending-leads/palmer-alaska
+  - Prod:  https://www.thevendinglocator.com/vending-leads/palmer-alaska
+- pine-bluff-arkansas
+  - Local: http://localhost:3000/vending-leads/pine-bluff-arkansas
+  - Prod:  https://www.thevendinglocator.com/vending-leads/pine-bluff-arkansas
+- portland-maine
+  - Local: http://localhost:3000/vending-leads/portland-maine
+  - Prod:  https://www.thevendinglocator.com/vending-leads/portland-maine
+- reno-nevada
+  - Local: http://localhost:3000/vending-leads/reno-nevada
+  - Prod:  https://www.thevendinglocator.com/vending-leads/reno-nevada
+- rogers-arkansas
+  - Local: http://localhost:3000/vending-leads/rogers-arkansas
+  - Prod:  https://www.thevendinglocator.com/vending-leads/rogers-arkansas
+- salem-oregon
+  - Local: http://localhost:3000/vending-leads/salem-oregon
+  - Prod:  https://www.thevendinglocator.com/vending-leads/salem-oregon
+- santa-fe-new-mexico
+  - Local: http://localhost:3000/vending-leads/santa-fe-new-mexico
+  - Prod:  https://www.thevendinglocator.com/vending-leads/santa-fe-new-mexico
+- sitka-alaska
+  - Local: http://localhost:3000/vending-leads/sitka-alaska
+  - Prod:  https://www.thevendinglocator.com/vending-leads/sitka-alaska
+- soldotna-alaska
+  - Local: http://localhost:3000/vending-leads/soldotna-alaska
+  - Prod:  https://www.thevendinglocator.com/vending-leads/soldotna-alaska
+- sparks-nevada
+  - Local: http://localhost:3000/vending-leads/sparks-nevada
+  - Prod:  https://www.thevendinglocator.com/vending-leads/sparks-nevada
+- springdale-arkansas
+  - Local: http://localhost:3000/vending-leads/springdale-arkansas
+  - Prod:  https://www.thevendinglocator.com/vending-leads/springdale-arkansas
+- stamford-connecticut
+  - Local: http://localhost:3000/vending-leads/stamford-connecticut
+  - Prod:  https://www.thevendinglocator.com/vending-leads/stamford-connecticut
+- topeka-kansas
+  - Local: http://localhost:3000/vending-leads/topeka-kansas
+  - Prod:  https://www.thevendinglocator.com/vending-leads/topeka-kansas
+- warwick-rhode-island
+  - Local: http://localhost:3000/vending-leads/warwick-rhode-island
+  - Prod:  https://www.thevendinglocator.com/vending-leads/warwick-rhode-island
+- washington-washington-dc
+  - Local: http://localhost:3000/vending-leads/washington-washington-dc
+  - Prod:  https://www.thevendinglocator.com/vending-leads/washington-washington-dc
+- wasilla-alaska
+  - Local: http://localhost:3000/vending-leads/wasilla-alaska
+  - Prod:  https://www.thevendinglocator.com/vending-leads/wasilla-alaska
+- waterbury-connecticut
+  - Local: http://localhost:3000/vending-leads/waterbury-connecticut
+  - Prod:  https://www.thevendinglocator.com/vending-leads/waterbury-connecticut
