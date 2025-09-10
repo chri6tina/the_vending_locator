@@ -1,5 +1,7 @@
 import { MetadataRoute } from 'next'
 import states from '@/data/states'
+import fs from 'fs'
+import path from 'path'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   // Main pages
@@ -18,13 +20,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ]
 
   // Generate city pages dynamically from states to ensure all new pages are included
-  const generatedCityPages = states.flatMap(state =>
-    state.cities.map(city => ({
-      url: `https://www.thevendinglocator.com/vending-leads/${city.slug}`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.8,
-    }))
+  // Only include URLs where a matching page file actually exists
+  const leadsDir = path.join(process.cwd(), 'src', 'app', 'vending-leads')
+  const generatedCityPages: MetadataRoute.Sitemap = states.flatMap(state =>
+    state.cities.map(city => {
+      const filePath = path.join(leadsDir, city.slug, 'page.tsx')
+      if (!fs.existsSync(filePath)) return null
+      return {
+        url: `https://www.thevendinglocator.com/vending-leads/${city.slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'weekly' as const,
+        priority: 0.8,
+      }
+    }).filter(Boolean) as MetadataRoute.Sitemap
   )
 
   // State pages - All 50 states
@@ -420,7 +428,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: 'https://www.thevendinglocator.com/checkout/success-preview', lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.5 },
   ]
 
-  return [
+  // Combine and dedupe by URL to avoid duplicate entries
+  const combined: MetadataRoute.Sitemap = [
     ...mainPages,
     ...statePages,
     ...cityPages,
@@ -430,4 +439,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...vendingCompanyPages,
     ...checkoutPages,
   ]
+
+  const seen = new Set<string>()
+  const deduped = combined.filter(item => {
+    if (seen.has(item.url)) return false
+    seen.add(item.url)
+    return true
+  })
+
+  return deduped
 }
