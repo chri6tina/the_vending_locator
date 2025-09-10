@@ -107,11 +107,17 @@ export default function ZipCodeModal({ isOpen, onClose, package: selectedPackage
           throw new Error('No checkout URL received')
         }
       } else {
-        throw new Error('Failed to create checkout session')
+        let message = 'Failed to create checkout session'
+        try {
+          const err = await checkoutResponse.json()
+          if (err?.error) message = `${message}: ${err.error}`
+          if (err?.details?.code) message = `${message} (${err.details.code})`
+        } catch {}
+        throw new Error(message)
       }
     } catch (error) {
       console.error('Error creating checkout session:', error)
-      setErrors({ email: 'Failed to create checkout session. Please try again.' })
+      setErrors({ email: error instanceof Error ? error.message : 'Failed to create checkout session. Please try again.' })
     } finally {
       setIsSubmitting(false)
     }

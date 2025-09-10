@@ -8,6 +8,7 @@ import { motion } from 'framer-motion'
 import { MapPinIcon, ChevronDownIcon } from '@heroicons/react/24/outline'
 import states from '@/data/states'
 import PricingTable from '@/components/PricingTable'
+import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
 // states is now imported from shared data file
 
@@ -309,6 +310,7 @@ export default function VendingLeadsDirectory() {
       </div>
 
       <Footer />
+      <ZipCodeModalWrapper />
     </main>
   )
 }

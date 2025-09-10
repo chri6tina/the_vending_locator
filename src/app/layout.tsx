@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { ZipCodeModalProvider } from '@/contexts/ZipCodeModalContext'
+import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 import Script from 'next/script'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -57,6 +58,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <ZipCodeModalProvider>
           {children}
+          <ZipCodeModalWrapper />
         </ZipCodeModalProvider>
         <Script
           src="https://analytics.ahrefs.com/analytics.js"
