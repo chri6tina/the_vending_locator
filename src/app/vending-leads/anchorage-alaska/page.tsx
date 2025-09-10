@@ -60,6 +60,7 @@ export default function AnchorageAlaskaAlaskaVendingLeadsPage() {
 
   // Smart rotation of user names and recent purchases
   useEffect(() => {
+    if (recentPurchases.length === 0) return;
     const interval = setInterval(() => {
       setCurrentUserIndex(prev => {
         if (usedNames.size > userNames.length * 0.8) {
@@ -589,7 +590,6 @@ export default function AnchorageAlaskaAlaskaVendingLeadsPage() {
           </motion.div>
   </div>
 )}
-        </div>
       </div>
       
       <Footer />

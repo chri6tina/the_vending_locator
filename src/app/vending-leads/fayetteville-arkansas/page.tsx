@@ -47,6 +47,7 @@ export default function FayettevilleArkansasArkansasVendingLeadsPage() {
 
   // Active users counter effect
   useEffect(() => {
+    if (recentPurchases.length === 0) return;
     const interval = setInterval(() => {
       setActiveUsers(prev => {
         const change = Math.floor(Math.random() * 3) - 1
@@ -572,6 +573,7 @@ export default function FayettevilleArkansasArkansasVendingLeadsPage() {
 
         {/* Mobile Recent Purchase Notification */}
 {recentPurchases.length > 0 && (
+  <div className="sm:hidden fixed bottom-4 left-4 right-4 z-50">
 <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -585,8 +587,8 @@ export default function FayettevilleArkansasArkansasVendingLeadsPage() {
               </span>
             </div>
           </motion.div>
+  </div>
 )}
-        </div>
       </div>
       
       <Footer />
