@@ -3,6 +3,12 @@ import Stripe from 'stripe'
 
 export const dynamic = 'force-dynamic'
 
+// Force reload environment variables
+if (typeof window === 'undefined') {
+  require('dotenv').config({ path: '.env.local' })
+  require('dotenv').config({ path: '.env' })
+}
+
 // Debug environment variable
 console.log('🔍 STRIPE_SECRET_KEY exists:', !!process.env.STRIPE_SECRET_KEY)
 console.log('🔍 STRIPE_SECRET_KEY length:', process.env.STRIPE_SECRET_KEY?.length || 0)
