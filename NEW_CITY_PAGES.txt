@@ -6,3 +6,6 @@ src/app/vending-leads/brownsville-texas/page.tsx
 src/app/vending-leads/sugar-land-texas/page.tsx
 src/app/vending-leads/alexandria-virginia/page.tsx
 src/app/vending-leads/arlington-virginia/page.tsx
+src/app/vending-leads/bellingham-washington/page.tsx
+src/app/vending-leads/olympia-washington/page.tsx
+src/app/vending-leads/yakima-washington/page.tsx
