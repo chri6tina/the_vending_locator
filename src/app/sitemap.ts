@@ -35,6 +35,32 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }).filter(Boolean) as MetadataRoute.Sitemap
   )
 
+  // Also include any city pages that exist on the filesystem but aren't listed in states.ts yet
+  // This ensures newly added pages are automatically included in the sitemap
+  const stateSlugs = new Set(states.map(s => s.slug))
+  const filesystemCityPages: MetadataRoute.Sitemap = fs
+    .readdirSync(leadsDir, { withFileTypes: true })
+    .filter(d => d.isDirectory())
+    .map(d => d.name)
+    .filter((dir) => {
+      // Must have a page.tsx
+      if (!fs.existsSync(path.join(leadsDir, dir, 'page.tsx'))) return false
+      // Include directories that end with a known state slug (city-state pattern)
+      // but exclude pure state directories themselves
+      for (const state of states) {
+        if (dir !== state.slug && dir.endsWith(state.slug)) {
+          return true
+        }
+      }
+      return false
+    })
+    .map((slug) => ({
+      url: `https://www.thevendinglocator.com/vending-leads/${slug}`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.8,
+    }))
+
   // State pages - All 50 states
   const statePages = [
     // Original states
@@ -434,6 +460,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...statePages,
     ...cityPages,
     ...generatedCityPages,
+    ...filesystemCityPages,
     ...cityGuidePages,
     ...blogPosts,
     ...vendingCompanyPages,
