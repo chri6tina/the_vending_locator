@@ -120,7 +120,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: 'https://www.thevendinglocator.com/vending-leads/idaho', lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.8 },
   ]
 
-  // Individual city pages - Only cities that actually exist
+  // Individual city pages - raw list (will be filtered to only include pages that actually exist)
   const cityPages = [
     // Texas cities
     { url: 'https://www.thevendinglocator.com/vending-leads/mansfield-texas', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
@@ -425,6 +425,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: 'https://www.thevendinglocator.com/vending-leads/huntington-west-virginia', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
   ]
 
+  // Filter manual city list to only include URLs with an existing page.tsx
+  const filteredCityPages: MetadataRoute.Sitemap = cityPages.filter((item) => {
+    const slug = item.url.split('/').pop() as string
+    return fs.existsSync(path.join(leadsDir, slug, 'page.tsx'))
+  })
+
   // Dynamic city guides (how-to-start-a-vending-machine-business/[slug])
   const cityGuidePages = states.flatMap(state =>
     state.cities.map(city => ({
@@ -458,7 +464,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const combined: MetadataRoute.Sitemap = [
     ...mainPages,
     ...statePages,
-    ...cityPages,
+    // Use filtered list so sitemap never references non-existent pages
+    ...filteredCityPages,
     ...generatedCityPages,
     ...filesystemCityPages,
     ...cityGuidePages,

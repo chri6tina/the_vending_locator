@@ -9,7 +9,9 @@ function getExistingDirectories() {
   const items = fs.readdirSync(vendingLeadsDir);
   const directories = items.filter(item => {
     const fullPath = path.join(vendingLeadsDir, item);
-    return fs.statSync(fullPath).isDirectory();
+    if (!fs.statSync(fullPath).isDirectory()) return false;
+    // Only include directories that have a page.tsx file
+    return fs.existsSync(path.join(fullPath, 'page.tsx'));
   });
   return directories.sort();
 }
