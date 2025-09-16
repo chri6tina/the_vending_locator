@@ -65,6 +65,10 @@ export default function RootLayout({
           data-key="AMCfW1dtX8BiEqrjyP7svw"
           strategy="afterInteractive"
         />
+        <Script
+          src="/tracking.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   )

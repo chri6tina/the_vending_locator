@@ -17,6 +17,7 @@ const config: Config = {
         'warm-white': '#fafaf9',  // Warm off-white
         'bronze': '#92400e',      // Rich bronze accent
         'bronze-light': '#a16207', // Lighter bronze
+        'coral': '#f97360',       // CTA coral color
       },
       fontFamily: {
         'playfair': ['Playfair Display', 'serif'],

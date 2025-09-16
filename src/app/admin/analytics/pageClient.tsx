@@ -1,11 +1,24 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Link from 'next/link'
 
 export default function AnalyticsDashboardPage() {
   const [selectedPeriod, setSelectedPeriod] = useState('30d')
-  const [selectedMetric, setSelectedMetric] = useState('revenue')
+  const [selectedMetric, setSelectedMetric] = useState('traffic')
+
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState<string | null>(null)
+  const [metricsData, setMetricsData] = useState<{
+    totalVisitorsToday: number
+    totalPageViews: number
+    avgSessionDuration: number
+    bounceRate: number
+    topPages: Array<{ page: string; views: number }>
+    deviceBreakdown: Record<string, number>
+    browserBreakdown: Record<string, number>
+    geographicData: Record<string, number>
+  } | null>(null)
 
   const periods = [
     { value: '7d', label: '7 Days' },
@@ -15,27 +28,40 @@ export default function AnalyticsDashboardPage() {
   ]
 
   const metrics = [
-    { value: 'revenue', label: 'Revenue' },
     { value: 'traffic', label: 'Traffic' },
     { value: 'conversions', label: 'Conversions' },
     { value: 'engagement', label: 'Engagement' }
   ]
 
-  const topCities = [
-    { city: 'Austin, TX', visitors: 12450, conversions: 892, revenue: 45600 },
-    { city: 'Dallas, TX', visitors: 11890, conversions: 756, revenue: 38900 },
-    { city: 'Houston, TX', visitors: 11230, conversions: 698, revenue: 34200 },
-    { city: 'San Antonio, TX', visitors: 9870, conversions: 543, revenue: 28900 },
-    { city: 'Phoenix, AZ', visitors: 8760, conversions: 432, revenue: 22100 }
-  ]
-
-  const topPages = [
-    { page: '/vending-leads/austin-texas', views: 8920, conversions: 234, ctr: '2.6%' },
-    { page: '/vending-leads/dallas-texas', views: 7650, conversions: 189, ctr: '2.5%' },
-    { page: '/vending-leads/houston-texas', views: 6980, conversions: 167, ctr: '2.4%' },
-    { page: '/pricing', views: 5430, conversions: 145, ctr: '2.7%' },
-    { page: '/hot-leads', views: 4320, conversions: 123, ctr: '2.8%' }
-  ]
+  useEffect(() => {
+    const controller = new AbortController()
+    async function fetchMetrics() {
+      try {
+        setLoading(true)
+        setError(null)
+        // Map UI period to API timeRange
+        const timeRange = selectedPeriod === '7d' ? '7d' : selectedPeriod === '90d' ? '30d' : '30d'
+        const res = await fetch(`/api/tracking/metrics?timeRange=${encodeURIComponent(timeRange)}`, {
+          method: 'GET',
+          signal: controller.signal,
+          headers: { 'Accept': 'application/json' }
+        })
+        if (!res.ok) {
+          throw new Error(`Failed to load metrics: ${res.status}`)
+        }
+        const data = await res.json()
+        setMetricsData(data)
+      } catch (e: any) {
+        if (e.name !== 'AbortError') {
+          setError(e.message || 'Failed to load metrics')
+        }
+      } finally {
+        setLoading(false)
+      }
+    }
+    fetchMetrics()
+    return () => controller.abort()
+  }, [selectedPeriod])
 
   return (
     <div className="min-h-screen bg-warm-white">
@@ -100,27 +126,24 @@ export default function AnalyticsDashboardPage() {
         {/* Key Performance Indicators */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
           <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-            <h3 className="text-lg font-semibold text-charcoal mb-2">Total Revenue</h3>
-            <p className="text-3xl font-bold text-bronze">$189.2K</p>
-            <p className="text-sm text-green-600">+24.5% vs last period</p>
-          </div>
-          
-          <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
             <h3 className="text-lg font-semibold text-charcoal mb-2">Total Visitors</h3>
-            <p className="text-3xl font-bold text-bronze">54.2K</p>
-            <p className="text-sm text-green-600">+18.3% vs last period</p>
+            <p className="text-3xl font-bold text-bronze">{loading || !metricsData ? '—' : metricsData.totalVisitorsToday.toLocaleString()}</p>
+            <p className="text-sm text-stone">Last {selectedPeriod}</p>
           </div>
-          
           <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-            <h3 className="text-lg font-semibold text-charcoal mb-2">Conversion Rate</h3>
-            <p className="text-3xl font-bold text-bronze">3.2%</p>
-            <p className="text-sm text-green-600">+0.8% vs last period</p>
+            <h3 className="text-lg font-semibold text-charcoal mb-2">Total Page Views</h3>
+            <p className="text-3xl font-bold text-bronze">{loading || !metricsData ? '—' : metricsData.totalPageViews.toLocaleString()}</p>
+            <p className="text-sm text-stone">Last {selectedPeriod}</p>
           </div>
-          
           <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-            <h3 className="text-lg font-semibold text-charcoal mb-2">Avg Order Value</h3>
-            <p className="text-3xl font-bold text-bronze">$2,847</p>
-            <p className="text-sm text-green-600">+12.1% vs last period</p>
+            <h3 className="text-lg font-semibold text-charcoal mb-2">Avg Session Duration</h3>
+            <p className="text-3xl font-bold text-bronze">{loading || !metricsData ? '—' : `${metricsData.avgSessionDuration} min`}</p>
+            <p className="text-sm text-stone">Approximation</p>
+          </div>
+          <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+            <h3 className="text-lg font-semibold text-charcoal mb-2">Bounce Rate</h3>
+            <p className="text-3xl font-bold text-bronze">{loading || !metricsData ? '—' : `${metricsData.bounceRate}%`}</p>
+            <p className="text-sm text-stone">Approximation</p>
           </div>
         </div>
 
@@ -177,50 +200,17 @@ export default function AnalyticsDashboardPage() {
           <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
             <h2 className="text-xl font-semibold text-charcoal mb-4">Device Breakdown</h2>
             <div className="space-y-4">
-              <div className="flex items-center justify-between">
-                <span className="text-stone">Desktop</span>
-                <span className="text-green-600 font-semibold">58.4%</span>
-              </div>
-              <div className="flex items-center justify-between">
-                <span className="text-stone">Mobile</span>
-                <span className="text-green-600 font-semibold">35.2%</span>
-              </div>
-              <div className="flex items-center justify-between">
-                <span className="text-stone">Tablet</span>
-                <span className="text-green-600 font-semibold">6.4%</span>
-              </div>
+              {loading || !metricsData ? (
+                <div className="text-stone">Loading…</div>
+              ) : (
+                Object.entries(metricsData.deviceBreakdown).map(([label, percent]) => (
+                  <div key={label} className="flex items-center justify-between">
+                    <span className="text-stone">{label}</span>
+                    <span className="text-green-600 font-semibold">{percent}%</span>
+                  </div>
+                ))
+              )}
             </div>
-          </div>
-        </div>
-
-        {/* Top Performing Cities */}
-        <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 mb-8">
-          <h2 className="text-xl font-semibold text-charcoal mb-4">Top Performing Cities</h2>
-          <div className="overflow-x-auto">
-            <table className="w-full">
-              <thead>
-                <tr className="border-b border-gray-200">
-                  <th className="text-left py-3 px-4 font-medium text-charcoal">City</th>
-                  <th className="text-left py-3 px-4 font-medium text-charcoal">Visitors</th>
-                  <th className="text-left py-3 px-4 font-medium text-charcoal">Conversions</th>
-                  <th className="text-left py-3 px-4 font-medium text-charcoal">Revenue</th>
-                  <th className="text-left py-3 px-4 font-medium text-charcoal">Conversion Rate</th>
-                </tr>
-              </thead>
-              <tbody>
-                {topCities.map((cityData, index) => (
-                  <tr key={index} className="border-b border-gray-100">
-                    <td className="py-3 px-4 font-medium text-charcoal">{cityData.city}</td>
-                    <td className="py-3 px-4 text-charcoal">{cityData.visitors.toLocaleString()}</td>
-                    <td className="py-3 px-4 text-charcoal">{cityData.conversions.toLocaleString()}</td>
-                    <td className="py-3 px-4 text-charcoal">${cityData.revenue.toLocaleString()}</td>
-                    <td className="py-3 px-4 text-charcoal">
-                      {((cityData.conversions / cityData.visitors) * 100).toFixed(1)}%
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
           </div>
         </div>
 
@@ -233,40 +223,61 @@ export default function AnalyticsDashboardPage() {
                 <tr className="border-b border-gray-200">
                   <th className="text-left py-3 px-4 font-medium text-charcoal">Page</th>
                   <th className="text-left py-3 px-4 font-medium text-charcoal">Page Views</th>
-                  <th className="text-left py-3 px-4 font-medium text-charcoal">Conversions</th>
-                  <th className="text-left py-3 px-4 font-medium text-charcoal">CTR</th>
                 </tr>
               </thead>
               <tbody>
-                {topPages.map((pageData, index) => (
-                  <tr key={index} className="border-b border-gray-100">
-                    <td className="py-3 px-4 font-medium text-charcoal">{pageData.page}</td>
-                    <td className="py-3 px-4 text-charcoal">{pageData.views.toLocaleString()}</td>
-                    <td className="py-3 px-4 text-charcoal">{pageData.conversions.toLocaleString()}</td>
-                    <td className="py-3 px-4 text-charcoal">{pageData.ctr}</td>
+                {loading || !metricsData ? (
+                  <tr>
+                    <td className="py-3 px-4 text-stone" colSpan={2}>Loading…</td>
                   </tr>
-                ))}
+                ) : metricsData.topPages.length === 0 ? (
+                  <tr>
+                    <td className="py-3 px-4 text-stone" colSpan={2}>No data yet</td>
+                  </tr>
+                ) : (
+                  metricsData.topPages.map((p, index) => (
+                    <tr key={index} className="border-b border-gray-100">
+                      <td className="py-3 px-4 font-medium text-charcoal">{p.page}</td>
+                      <td className="py-3 px-4 text-charcoal">{p.views.toLocaleString()}</td>
+                    </tr>
+                  ))
+                )}
               </tbody>
             </table>
           </div>
         </div>
 
-        {/* Growth Trends */}
+        {/* Browser Breakdown */}
+        <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 mb-8">
+          <h2 className="text-xl font-semibold text-charcoal mb-4">Browser Breakdown</h2>
+          <div className="space-y-2">
+            {loading || !metricsData ? (
+              <div className="text-stone">Loading…</div>
+            ) : (
+              Object.entries(metricsData.browserBreakdown).map(([browser, percent]) => (
+                <div key={browser} className="flex items-center justify-between">
+                  <span className="text-stone">{browser}</span>
+                  <span className="text-green-600 font-semibold">{percent}%</span>
+                </div>
+              ))
+            )}
+          </div>
+        </div>
+
+        {/* Geographic Breakdown */}
         <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
-          <h2 className="text-xl font-semibold text-charcoal mb-4">Growth Trends</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="text-center p-4 bg-warm-white rounded-lg">
-              <div className="text-2xl font-bold text-green-600 mb-2">↗️ +24.5%</div>
-              <div className="text-sm text-stone">Revenue Growth</div>
-            </div>
-            <div className="text-center p-4 bg-warm-white rounded-lg">
-              <div className="text-2xl font-bold text-green-600 mb-2">↗️ +18.3%</div>
-              <div className="text-sm text-stone">Traffic Growth</div>
-            </div>
-            <div className="text-center p-4 bg-warm-white rounded-lg">
-              <div className="text-2xl font-bold text-green-600 mb-2">↗️ +12.1%</div>
-              <div className="text-sm text-stone">Order Value Growth</div>
-            </div>
+          <h2 className="text-xl font-semibold text-charcoal mb-4">Geography</h2>
+          <div className="space-y-2">
+            {loading || !metricsData ? (
+              <div className="text-stone">Loading…</div>
+            ) : (
+              Object.entries(metricsData.geographicData).map(([region, percent]) => (
+                <div key={region} className="flex items-center justify-between">
+                  <span className="text-stone">{region}</span>
+                  <span className="text-green-600 font-semibold">{percent}%</span>
+                </div>
+              ))
+            )}
           </div>
         </div>
       </div>

@@ -95,7 +95,7 @@ function scanCityPage(filePath) {
 function scanAllCityPages() {
   console.log('🔍 Scanning all city pages for inventory...\n');
   
-  const vendingLeadsDir = path.join(__dirname, 'src', 'app', 'vending-leads');
+  const vendingLeadsDir = path.join(__dirname, '..', 'src', 'app', 'vending-leads');
   
   if (!fs.existsSync(vendingLeadsDir)) {
     console.error('❌ Vending leads directory not found!');

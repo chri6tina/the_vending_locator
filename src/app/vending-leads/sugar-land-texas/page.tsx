@@ -1,165 +1,4 @@
-const fs = require('fs');
-const path = require('path');
-
-// Function to generate city-specific data
-function generateCityData(cityName, stateName) {
-  const cityDisplayName = cityName.split('-').map(part => 
-    part.charAt(0).toUpperCase() + part.slice(1)
-  ).join(' ');
-  
-  const stateDisplayName = stateName.charAt(0).toUpperCase() + stateName.slice(1);
-  
-  // Generate realistic population and business numbers based on city size
-  const citySize = cityName.split('-').length;
-  let population, businesses, industries, verifiedLocations;
-  
-  if (citySize === 1) {
-    // State page
-    population = '1M+';
-    businesses = '100K+';
-    industries = '15+';
-    verifiedLocations = '500+';
-  } else if (citySize === 2) {
-    // Small city
-    population = '50K-100K';
-    businesses = '5K-10K';
-    industries = '8-12';
-    verifiedLocations = '100-200';
-  } else if (citySize === 3) {
-    // Medium city
-    population = '100K-500K';
-    businesses = '10K-50K';
-    industries = '10-15';
-    verifiedLocations = '200-400';
-  } else {
-    // Large city
-    population = '500K+';
-    businesses = '50K+';
-    industries = '15+';
-    verifiedLocations = '400+';
-  }
-  
-  return {
-    name: cityDisplayName,
-    state: stateDisplayName,
-    population,
-    businesses,
-    industries,
-    verifiedLocations: verifiedLocations,
-    rating: '4.8/5',
-    description: `Thriving business community in ${stateDisplayName}`
-  };
-}
-
-// Function to generate business landscape industries
-function generateBusinessLandscape(cityName, stateName) {
-  const cityDisplayName = cityName.split('-').map(part => 
-    part.charAt(0).toUpperCase() + part.slice(1)
-  ).join(' ');
-  
-  return [
-    {
-      title: 'Healthcare',
-      description: `${cityDisplayName} features modern healthcare facilities including hospitals, clinics, and medical offices with high foot traffic and stable operations.`,
-      icon: 'BuildingOfficeIcon',
-      color: 'text-blue-600',
-      bgColor: 'bg-blue-50'
-    },
-    {
-      title: 'Education',
-      description: `Educational institutions in ${cityDisplayName} provide consistent student populations and staff, creating ideal vending machine opportunities.`,
-      icon: 'AcademicCapIcon',
-      color: 'text-green-600',
-      bgColor: 'bg-green-50'
-    },
-    {
-      title: 'Manufacturing',
-      description: `${cityDisplayName}'s manufacturing sector offers large employee bases and extended operating hours, perfect for vending machine placement.`,
-      icon: 'CpuChipIcon',
-      color: 'text-purple-600',
-      bgColor: 'bg-purple-50'
-    },
-    {
-      title: 'Retail',
-      description: `Retail locations throughout ${cityDisplayName} provide high customer traffic and diverse demographics for vending machine success.`,
-      icon: 'ShoppingBagIcon',
-      color: 'text-orange-600',
-      bgColor: 'bg-orange-50'
-    },
-    {
-      title: 'Office Buildings',
-      description: `Professional office spaces in ${cityDisplayName} offer captive audiences during business hours with consistent daily traffic.`,
-      icon: 'BuildingOfficeIcon',
-      color: 'text-indigo-600',
-      bgColor: 'bg-indigo-50'
-    },
-    {
-      title: 'Transportation',
-      description: `${cityDisplayName}'s transportation hubs including airports, bus stations, and transit centers provide high-volume foot traffic.`,
-      icon: 'TruckIcon',
-      color: 'text-red-600',
-      bgColor: 'bg-red-50'
-    }
-  ];
-}
-
-// Function to generate FAQ questions
-function generateFAQ(cityName, stateName) {
-  const cityDisplayName = cityName.split('-').map(part => 
-    part.charAt(0).toUpperCase() + part.slice(1)
-  ).join(' ');
-  
-  const stateDisplayName = stateName.charAt(0).toUpperCase() + stateName.slice(1);
-  
-  return [
-    {
-      question: `What types of vending machine locations are available in ${cityDisplayName}?`,
-      answer: `${cityDisplayName} offers diverse vending opportunities including healthcare facilities, educational institutions, manufacturing plants, retail locations, office buildings, and transportation hubs. Each location is pre-verified for optimal vending machine success.`
-    },
-    {
-      question: `How quickly can I get vending machine leads for ${cityDisplayName}?`,
-      answer: `Our ${cityDisplayName} vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.`
-    },
-    {
-      question: `What makes ${cityDisplayName} a good market for vending machines?`,
-      answer: `${cityDisplayName} features a strong business community with diverse industries, stable employment, and consistent foot traffic. The city's economic growth and business-friendly environment create ideal conditions for vending machine success.`
-    },
-    {
-      question: `Do you provide ongoing support for ${cityDisplayName} locations?`,
-      answer: `Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in ${cityDisplayName}.`
-    },
-    {
-      question: `What industries in ${cityDisplayName} are best for vending machines?`,
-      answer: `Healthcare, education, manufacturing, retail, office buildings, and transportation sectors in ${cityDisplayName} show the highest potential for vending machine success due to consistent foot traffic and captive audiences.`
-    },
-    {
-      question: `How do you verify the quality of ${cityDisplayName} vending locations?`,
-      answer: `We conduct thorough research on each ${cityDisplayName} location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.`
-    },
-    {
-      question: `Can I get customized vending leads for specific areas of ${cityDisplayName}?`,
-      answer: `Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within ${cityDisplayName} based on your preferences and target market requirements.`
-    },
-    {
-      question: `What's the typical ROI for vending machines in ${cityDisplayName}?`,
-      answer: `Vending machines in ${cityDisplayName} typically show strong ROI due to the city's business density and consistent traffic patterns. Our research shows average payback periods of 12-18 months for well-placed machines.`
-    }
-  ];
-}
-
-// Function to build a complete page from scratch
-function buildCompletePage(cityName, stateName) {
-  const cityData = generateCityData(cityName, stateName);
-  const businessLandscape = generateBusinessLandscape(cityName, stateName);
-  const faq = generateFAQ(cityName, stateName);
-  
-  const cityDisplayName = cityName.split('-').map(part => 
-    part.charAt(0).toUpperCase() + part.slice(1)
-  ).join(' ');
-  
-  const stateDisplayName = stateName.charAt(0).toUpperCase() + stateName.slice(1);
-  
-  return `'use client'
+'use client'
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
@@ -172,13 +11,22 @@ import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function ${cityDisplayName.replace(/\s+/g, '')}${stateDisplayName.replace(/\s+/g, '')}VendingLeadsPage() {
+export default function SugarLandTexasTexasVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = '${cityDisplayName}';
-  const stateDisplayName = '${stateDisplayName}';
+  const cityDisplayName = 'Sugar Land Texas';
+  const stateDisplayName = 'Texas';
   
   // City-specific data
-  const cityData = ${JSON.stringify(cityData, null, 2).replace(/"/g, "'")};
+  const cityData = {
+  'name': 'Sugar Land Texas',
+  'state': 'Texas',
+  'population': '100K-500K',
+  'businesses': '10K-50K',
+  'industries': '10-15',
+  'verifiedLocations': '200-400',
+  'rating': '4.8/5',
+  'description': 'Thriving business community in Texas'
+};
   
   // Active users counter
   const [activeUsers, setActiveUsers] = useState(28)
@@ -189,9 +37,9 @@ export default function ${cityDisplayName.replace(/\s+/g, '')}${stateDisplayName
 
   // User names for active users counter
   const [userNames, setUserNames] = useState([
-    'Mike from ${cityDisplayName}', 'Sarah in Downtown', 'David in ${cityDisplayName}', 'Lisa in ${cityDisplayName}',
-    'Tom in ${cityDisplayName}', 'Jennifer in ${cityDisplayName}', 'Robert in ${cityDisplayName}', 'Amanda in ${cityDisplayName}',
-    'Chris in ${cityDisplayName}', 'Maria in ${cityDisplayName}', 'James in ${cityDisplayName}', 'Emily in ${cityDisplayName}'
+    'Mike from Sugar Land Texas', 'Sarah in Downtown', 'David in Sugar Land Texas', 'Lisa in Sugar Land Texas',
+    'Tom in Sugar Land Texas', 'Jennifer in Sugar Land Texas', 'Robert in Sugar Land Texas', 'Amanda in Sugar Land Texas',
+    'Chris in Sugar Land Texas', 'Maria in Sugar Land Texas', 'James in Sugar Land Texas', 'Emily in Sugar Land Texas'
   ])
 
   // Recent purchases disabled per requirements
@@ -275,7 +123,7 @@ export default function ${cityDisplayName.replace(/\s+/g, '')}${stateDisplayName
                 Vending Leads
               </Link>
               <span>/</span>
-              <Link href={\`/vending-leads/\${stateDisplayName.toLowerCase().replace(/\s+/g, '-')}\`} className="hover:text-navy transition-colors">
+              <Link href={`/vending-leads/${stateDisplayName.toLowerCase().replace(/s+/g, '-')}`} className="hover:text-navy transition-colors">
                 {stateDisplayName}
               </Link>
               <span>/</span>
@@ -320,7 +168,7 @@ export default function ${cityDisplayName.replace(/\s+/g, '')}${stateDisplayName
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Get pre-qualified vending machine locations in ${cityDisplayName}'s diverse and growing business economy. 
+                Get pre-qualified vending machine locations in Sugar Land Texas's diverse and growing business economy. 
                 Access verified businesses with detailed contact information and placement opportunities.
               </motion.p>
 
@@ -446,21 +294,91 @@ export default function ${cityDisplayName.replace(/\s+/g, '')}${stateDisplayName
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              ${businessLandscape.map((industry, index) => `
+              
               <motion.div
-                key="${industry.title}"
+                key="Healthcare"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: ${index * 0.1} }}
+                transition={{ duration: 0.8, delay: 0 }}
                 viewport={{ once: true }}
-                className="${industry.bgColor} p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+                className="bg-blue-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
-                <div className="${industry.color} mb-4">
-                  <${industry.icon} className="w-12 h-12" />
+                <div className="text-blue-600 mb-4">
+                  <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">${industry.title}</h3>
-                <p className="text-stone leading-relaxed">${industry.description}</p>
-              </motion.div>`).join('')}
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
+                <p className="text-stone leading-relaxed">Sugar Land Texas features modern healthcare facilities including hospitals, clinics, and medical offices with high foot traffic and stable operations.</p>
+              </motion.div>
+              <motion.div
+                key="Education"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.1 }}
+                viewport={{ once: true }}
+                className="bg-green-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-green-600 mb-4">
+                  <AcademicCapIcon className="w-12 h-12" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
+                <p className="text-stone leading-relaxed">Educational institutions in Sugar Land Texas provide consistent student populations and staff, creating ideal vending machine opportunities.</p>
+              </motion.div>
+              <motion.div
+                key="Manufacturing"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="bg-purple-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-purple-600 mb-4">
+                  <CpuChipIcon className="w-12 h-12" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
+                <p className="text-stone leading-relaxed">Sugar Land Texas's manufacturing sector offers large employee bases and extended operating hours, perfect for vending machine placement.</p>
+              </motion.div>
+              <motion.div
+                key="Retail"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.30000000000000004 }}
+                viewport={{ once: true }}
+                className="bg-orange-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-orange-600 mb-4">
+                  <ShoppingBagIcon className="w-12 h-12" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
+                <p className="text-stone leading-relaxed">Retail locations throughout Sugar Land Texas provide high customer traffic and diverse demographics for vending machine success.</p>
+              </motion.div>
+              <motion.div
+                key="Office Buildings"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                viewport={{ once: true }}
+                className="bg-indigo-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-indigo-600 mb-4">
+                  <BuildingOfficeIcon className="w-12 h-12" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
+                <p className="text-stone leading-relaxed">Professional office spaces in Sugar Land Texas offer captive audiences during business hours with consistent daily traffic.</p>
+              </motion.div>
+              <motion.div
+                key="Transportation"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.5 }}
+                viewport={{ once: true }}
+                className="bg-red-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-red-600 mb-4">
+                  <TruckIcon className="w-12 h-12" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
+                <p className="text-stone leading-relaxed">Sugar Land Texas's transportation hubs including airports, bus stations, and transit centers provide high-volume foot traffic.</p>
+              </motion.div>
             </div>
           </div>
         </section>
@@ -544,18 +462,95 @@ export default function ${cityDisplayName.replace(/\s+/g, '')}${stateDisplayName
             </div>
             
             <div className="space-y-6">
-              ${faq.map((item, index) => `
+              
               <motion.div
-                key="${index}"
+                key="0"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: ${index * 0.1} }}
+                transition={{ duration: 0.8, delay: 0 }}
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">${item.question}</h3>
-                <p className="text-stone leading-relaxed">${item.answer}</p>
-              </motion.div>`).join('')}
+                <h3 className="text-lg font-semibold text-charcoal mb-3">What types of vending machine locations are available in Sugar Land Texas?</h3>
+                <p className="text-stone leading-relaxed">Sugar Land Texas offers diverse vending opportunities including healthcare facilities, educational institutions, manufacturing plants, retail locations, office buildings, and transportation hubs. Each location is pre-verified for optimal vending machine success.</p>
+              </motion.div>
+              <motion.div
+                key="1"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.1 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+              >
+                <h3 className="text-lg font-semibold text-charcoal mb-3">How quickly can I get vending machine leads for Sugar Land Texas?</h3>
+                <p className="text-stone leading-relaxed">Our Sugar Land Texas vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.</p>
+              </motion.div>
+              <motion.div
+                key="2"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+              >
+                <h3 className="text-lg font-semibold text-charcoal mb-3">What makes Sugar Land Texas a good market for vending machines?</h3>
+                <p className="text-stone leading-relaxed">Sugar Land Texas features a strong business community with diverse industries, stable employment, and consistent foot traffic. The city's economic growth and business-friendly environment create ideal conditions for vending machine success.</p>
+              </motion.div>
+              <motion.div
+                key="3"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.30000000000000004 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+              >
+                <h3 className="text-lg font-semibold text-charcoal mb-3">Do you provide ongoing support for Sugar Land Texas locations?</h3>
+                <p className="text-stone leading-relaxed">Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Sugar Land Texas.</p>
+              </motion.div>
+              <motion.div
+                key="4"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+              >
+                <h3 className="text-lg font-semibold text-charcoal mb-3">What industries in Sugar Land Texas are best for vending machines?</h3>
+                <p className="text-stone leading-relaxed">Healthcare, education, manufacturing, retail, office buildings, and transportation sectors in Sugar Land Texas show the highest potential for vending machine success due to consistent foot traffic and captive audiences.</p>
+              </motion.div>
+              <motion.div
+                key="5"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.5 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+              >
+                <h3 className="text-lg font-semibold text-charcoal mb-3">How do you verify the quality of Sugar Land Texas vending locations?</h3>
+                <p className="text-stone leading-relaxed">We conduct thorough research on each Sugar Land Texas location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.</p>
+              </motion.div>
+              <motion.div
+                key="6"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.6000000000000001 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+              >
+                <h3 className="text-lg font-semibold text-charcoal mb-3">Can I get customized vending leads for specific areas of Sugar Land Texas?</h3>
+                <p className="text-stone leading-relaxed">Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Sugar Land Texas based on your preferences and target market requirements.</p>
+              </motion.div>
+              <motion.div
+                key="7"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.7000000000000001 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+              >
+                <h3 className="text-lg font-semibold text-charcoal mb-3">What's the typical ROI for vending machines in Sugar Land Texas?</h3>
+                <p className="text-stone leading-relaxed">Vending machines in Sugar Land Texas typically show strong ROI due to the city's business density and consistent traffic patterns. Our research shows average payback periods of 12-18 months for well-placed machines.</p>
+              </motion.div>
             </div>
           </div>
         </section>
@@ -567,106 +562,4 @@ export default function ${cityDisplayName.replace(/\s+/g, '')}${stateDisplayName
       <ZipCodeModalWrapper />
     </>
   )
-}`;
 }
-
-// Function to build a single page
-function buildPage(filePath) {
-  try {
-    const cityName = path.basename(path.dirname(filePath));
-    const fileName = path.basename(filePath);
-    
-    // Extract city and state from directory name
-    const cityParts = cityName.split('-');
-    const stateName = cityParts[cityParts.length - 1]; // Last part is usually state
-    
-    // Generate the complete page content
-    const pageContent = buildCompletePage(cityName, stateName);
-    
-    // Write the new page
-    fs.writeFileSync(filePath, pageContent, 'utf8');
-    console.log(`✅ Built complete page for ${cityName}`);
-    return { updated: true, cityName };
-    
-  } catch (error) {
-    console.error(`❌ Error building ${filePath}:`, error.message);
-    return { updated: false, reason: 'error', error: error.message };
-  }
-}
-
-// Function to build all pages
-function buildAllPages() {
-  console.log('🏗️  Building complete pages from scratch for all vending-leads locations...\n');
-  
-  const vendingLeadsDir = path.join(__dirname, '..', 'src', 'app', 'vending-leads');
-  
-  if (!fs.existsSync(vendingLeadsDir)) {
-    console.error('❌ Vending leads directory not found!');
-    return;
-  }
-  
-  const cityDirs = fs.readdirSync(vendingLeadsDir, { withFileTypes: true })
-    .filter(dirent => dirent.isDirectory())
-    .map(dirent => dirent.name);
-  
-  console.log(`📁 Found ${cityDirs.length} city/state directories\n`);
-  
-  let totalUpdated = 0;
-  let totalErrors = 0;
-  const results = [];
-  
-  // Process each city/state directory
-  cityDirs.forEach(cityDir => {
-    const pagePath = path.join(vendingLeadsDir, cityDir, 'page.tsx');
-    
-    if (fs.existsSync(pagePath)) {
-      const result = buildPage(pagePath);
-      results.push(result);
-      
-      if (result.updated) {
-        totalUpdated++;
-      } else if (result.reason === 'error') {
-        totalErrors++;
-      }
-    }
-  });
-  
-  // Summary
-  console.log('\n' + '='.repeat(60));
-  console.log('📊 COMPLETE PAGE BUILD SUMMARY');
-  console.log('='.repeat(60));
-  console.log(`✅ Total Pages Built: ${totalUpdated}`);
-  console.log(`❌ Total Errors: ${totalErrors}`);
-  console.log(`📈 Total Processed: ${results.length}`);
-  
-  // Show what was updated
-  if (totalUpdated > 0) {
-    console.log('\n🎯 Built Pages:');
-    results.filter(r => r.updated).forEach(result => {
-      console.log(`   • ${result.cityName}`);
-    });
-  }
-  
-  // Show errors if any
-  if (totalErrors > 0) {
-    console.log('\n⚠️  Errors:');
-    results.filter(r => r.reason === 'error').forEach(result => {
-      console.log(`   • ${result.cityName}: ${result.error}`);
-    });
-  }
-  
-  console.log('\n🎉 Complete page build finished!');
-  console.log('\n📋 Next Steps:');
-  console.log('   1. Run the template compliance check to verify 100% compliance');
-  console.log('   2. Check that all pages now have complete structure');
-  console.log('   3. Verify all required components are present');
-  
-  return { results, summary: { totalUpdated, totalErrors, totalProcessed: results.length } };
-}
-
-// Run the build
-if (require.main === module) {
-  buildAllPages();
-}
-
-module.exports = { buildAllPages, buildPage };
