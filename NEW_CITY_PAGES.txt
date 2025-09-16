@@ -9,3 +9,8 @@ src/app/vending-leads/arlington-virginia/page.tsx
 src/app/vending-leads/bellingham-washington/page.tsx
 src/app/vending-leads/olympia-washington/page.tsx
 src/app/vending-leads/yakima-washington/page.tsx
+src/app/vending-leads/pearland-texas/page.tsx
+src/app/vending-leads/midland-texas/page.tsx
+src/app/vending-leads/odessa-texas/page.tsx
+src/app/vending-leads/allen-texas/page.tsx
+src/app/vending-leads/league-city-texas/page.tsx
