@@ -14,3 +14,8 @@ src/app/vending-leads/midland-texas/page.tsx
 src/app/vending-leads/odessa-texas/page.tsx
 src/app/vending-leads/allen-texas/page.tsx
 src/app/vending-leads/league-city-texas/page.tsx
+src/app/vending-leads/boca-raton-florida/page.tsx
+src/app/vending-leads/lakeland-florida/page.tsx
+src/app/vending-leads/port-st-lucie-florida/page.tsx
+src/app/vending-leads/pembroke-pines-florida/page.tsx
+src/app/vending-leads/kissimmee-florida/page.tsx
