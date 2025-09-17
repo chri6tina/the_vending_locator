@@ -165,6 +165,35 @@ export default function VendingLeadsDirectory() {
         </div>
       </div>
 
+      {/* All Cities (SSR-friendly static links for discoverability) */}
+      <section className="bg-white border-t border-gray-200 py-16">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-4xl text-center mb-10">
+            <h2 className="text-2xl sm:text-3xl font-playfair font-bold text-chocolate">All Cities</h2>
+            <p className="mt-2 text-chocolate/70">Direct links to every city page for easier discovery and indexing.</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {states.map((state) => (
+              <div key={state.slug} className="bg-cream/50 rounded-lg border border-gray-200 p-5">
+                <div className="flex items-center mb-3">
+                  <MapPinIcon className="h-5 w-5 text-navy mr-2" />
+                  <h3 className="text-lg font-semibold text-chocolate">{state.name}</h3>
+                </div>
+                <ul className="space-y-1">
+                  {state.cities.map((city) => (
+                    <li key={city.slug}>
+                      <Link href={`/vending-leads/${city.slug}`} className="text-sm text-chocolate hover:text-navy hover:underline">
+                        {city.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Popular States Section */}
       <div className="bg-gradient-to-br from-slate-50 to-blue-50 py-16">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
