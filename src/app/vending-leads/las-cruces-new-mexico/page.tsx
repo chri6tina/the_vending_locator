@@ -217,17 +217,12 @@ export default function LasCrucesNewMexicoMexicoVendingLeadsPage() {
                 className="flex flex-col sm:flex-row gap-4 mb-8 justify-center items-center"
               >
                 <Link 
-                  href="/pricing"
+                  href="#pricing"
                   className="bg-navy hover:bg-navy/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 min-w-[200px] text-center"
                 >
                   View Pricing Plans
                 </Link>
-                <Link 
-                  href="/hot-leads"
-                  className="bg-coral hover:bg-coral/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 min-w-[200px] text-center"
-                >
-                  Get Hot Leads
-                </Link>
+                
               </motion.div>
 
               {/* Social Proof Stats */}
@@ -259,7 +254,7 @@ export default function LasCrucesNewMexicoMexicoVendingLeadsPage() {
         </section>
 
         {/* Pricing Section */}
-        <section className="py-16 bg-warm-white">
+        <section id="pricing" className="py-16 bg-warm-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <motion.h2

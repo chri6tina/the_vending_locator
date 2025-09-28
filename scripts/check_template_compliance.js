@@ -145,10 +145,12 @@ function checkAllPages() {
   
   // Process each city/state directory
   cityDirs.forEach(cityDir => {
-    const pagePath = path.join(vendingLeadsDir, cityDir, 'page.tsx');
+    const clientPath = path.join(vendingLeadsDir, cityDir, 'pageClient.tsx');
+    const serverPath = path.join(vendingLeadsDir, cityDir, 'page.tsx');
+    const targetPath = fs.existsSync(clientPath) ? clientPath : serverPath;
     
-    if (fs.existsSync(pagePath)) {
-      const result = checkPage(pagePath);
+    if (fs.existsSync(targetPath)) {
+      const result = checkPage(targetPath);
       results.push(result);
       totalScore += result.score;
       
