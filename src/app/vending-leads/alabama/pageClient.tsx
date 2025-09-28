@@ -186,16 +186,9 @@ export default function AlabamaVendingLeadsPage() {
                       }
                     }}
                     className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
-                  className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors"
                 >
                     Get Started
                   </button>
-                <Link 
-                  href="/hot-leads"
-                  className="w-full sm:w-auto bg-transparent text-chocolate border-2 border-chocolate px-8 py-3 rounded-lg font-semibold hover:bg-chocolate hover:text-white transition-colors"
-                >
-                  View Hot Leads →
-                </Link>
               </motion.div>
 
 {/* Social Proof Stats */}
@@ -422,7 +415,7 @@ export default function AlabamaVendingLeadsPage() {
         </section>
 
         {/* FAQ Section */}
-        <section id="pricing" className="py-16 bg-warm-white">
+        <section className="py-16 bg-warm-white">
           <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <motion.h2
