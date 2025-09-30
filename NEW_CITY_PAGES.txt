@@ -20,3 +20,7 @@ src/app/vending-leads/port-st-lucie-florida/page.tsx
 src/app/vending-leads/pembroke-pines-florida/page.tsx
 src/app/vending-leads/kissimmee-florida/page.tsx
 src/app/vending-leads/dover-delaware/page.tsx
+src/app/vending-leads/denton-texas/page.tsx
+src/app/vending-leads/carrollton-texas/page.tsx
+src/app/vending-leads/richardson-texas/page.tsx
+src/app/vending-leads/lewisville-texas/page.tsx
