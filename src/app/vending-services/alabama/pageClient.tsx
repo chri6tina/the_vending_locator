@@ -496,8 +496,158 @@ export default function AlabamaVendingServicesPage() {
           </section>
         )}
 
-        {/* Why Choose Section */}
+        {/* What to Expect Section */}
         <section className="py-16 bg-white border-t border-gray-200">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8 }}
+                className="text-center mb-12"
+              >
+                <h2 className="text-3xl font-playfair font-bold text-chocolate mb-4">
+                  What to Expect When Getting Vending Services in {stateDisplayName}
+                </h2>
+                <p className="text-lg text-chocolate/70 max-w-3xl mx-auto">
+                  Understanding the complete vending machine partnership process for {stateDisplayName} businesses
+                </p>
+              </motion.div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {/* Site Evaluation */}
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8 }}
+                  className="bg-warm-white p-6 rounded-xl border border-stone/20"
+                >
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-coral/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <MapPinIcon className="h-6 w-6 text-coral" />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-semibold text-navy mb-2">Free Site Evaluation</h3>
+                      <p className="text-charcoal/80 text-sm leading-relaxed">
+                        A vending professional will visit your {stateDisplayName} location to assess foot traffic, available space, and employee preferences. They'll recommend optimal machine types and placement locations to maximize usage and satisfaction.
+                      </p>
+                    </div>
+                  </div>
+                </motion.div>
+
+                {/* Machine Selection */}
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8, delay: 0.1 }}
+                  className="bg-warm-white p-6 rounded-xl border border-stone/20"
+                >
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-coral/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <BuildingOffice2Icon className="h-6 w-6 text-coral" />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-semibold text-navy mb-2">Customized Machine Selection</h3>
+                      <p className="text-charcoal/80 text-sm leading-relaxed">
+                        Choose from modern vending machines offering snacks, beverages, healthy options, or combination machines. Operators provide state-of-the-art equipment with cashless payment systems and real-time inventory tracking.
+                      </p>
+                    </div>
+                  </div>
+                </motion.div>
+
+                {/* Installation */}
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8, delay: 0.2 }}
+                  className="bg-warm-white p-6 rounded-xl border border-stone/20"
+                >
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-coral/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <CheckCircleIcon className="h-6 w-6 text-coral" />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-semibold text-navy mb-2">Professional Installation</h3>
+                      <p className="text-charcoal/80 text-sm leading-relaxed">
+                        Operators handle delivery, installation, setup, and initial stocking at no charge. Machines are installed during non-business hours to minimize disruption. All electrical connections and placement are professionally managed.
+                      </p>
+                    </div>
+                  </div>
+                </motion.div>
+
+                {/* Ongoing Service */}
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8, delay: 0.3 }}
+                  className="bg-warm-white p-6 rounded-xl border border-stone/20"
+                >
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-coral/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <ClockIcon className="h-6 w-6 text-coral" />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-semibold text-navy mb-2">Reliable Ongoing Service</h3>
+                      <p className="text-charcoal/80 text-sm leading-relaxed">
+                        Regular restocking visits ensure machines stay full and products stay fresh. Maintenance, repairs, and product rotation are included. Most {stateDisplayName} operators provide 24/7 support for any issues.
+                      </p>
+                    </div>
+                  </div>
+                </motion.div>
+
+                {/* Product Variety */}
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8, delay: 0.4 }}
+                  className="bg-warm-white p-6 rounded-xl border border-stone/20"
+                >
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-coral/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <ShieldCheckIcon className="h-6 w-6 text-coral" />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-semibold text-navy mb-2">Wide Product Selection</h3>
+                      <p className="text-charcoal/80 text-sm leading-relaxed">
+                        Modern vending machines offer national brands, local favorites, healthy snacks, energy drinks, coffee, fresh food, and more. Operators work with you to customize product mix based on employee feedback and preferences.
+                      </p>
+                    </div>
+                  </div>
+                </motion.div>
+
+                {/* Payment Options */}
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8, delay: 0.5 }}
+                  className="bg-warm-white p-6 rounded-xl border border-stone/20"
+                >
+                  <div className="flex items-start gap-4">
+                    <div className="w-12 h-12 bg-coral/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <UsersIcon className="h-6 w-6 text-coral" />
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-semibold text-navy mb-2">Modern Payment Systems</h3>
+                      <p className="text-charcoal/80 text-sm leading-relaxed">
+                        Today's vending machines accept cash, credit/debit cards, mobile payments (Apple Pay, Google Pay), and contactless payments. Some operators also offer employee badge integration and account-based purchasing for added convenience.
+                      </p>
+                    </div>
+                  </div>
+                </motion.div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Why Choose Section */}
+        <section className="py-16 bg-warm-white border-t border-gray-200">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <motion.h2
