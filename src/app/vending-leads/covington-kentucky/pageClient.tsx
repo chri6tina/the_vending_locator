@@ -82,12 +82,12 @@ export default function CovingtonKentuckyVendingLeadsPage() {
   const faqItems = [
     { q: 'What types of vending machine locations are available in Covington?', a: 'Covington offers urban vending opportunities including office buildings, retail locations, healthcare facilities, restaurants, and professional services. Each location is pre-verified for optimal vending machine success.' },
     { q: 'How quickly can I get vending machine leads for Covington?', a: 'Our Covington vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.' },
-    { q: 'What makes Covington a good market for vending machines?', a: 'Covington is part of the Greater Cincinnati metro area with strong urban development and professional services. The city's location and diverse business base create ideal conditions for vending machine success.' },
+    { q: 'What makes Covington a good market for vending machines?', a: 'Covington is part of the Greater Cincinnati metro area with strong urban development and professional services. The city\'s location and diverse business base create ideal conditions for vending machine success.' },
     { q: 'Do you provide ongoing support for Covington locations?', a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Covington.' },
     { q: 'What industries in Covington are best for vending machines?', a: 'Office buildings, professional services, retail locations, and healthcare facilities in Covington show the highest potential for vending machine success due to urban workforce and metro area traffic.' },
     { q: 'How do you verify the quality of Covington vending locations?', a: 'We conduct thorough research on each Covington location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.' },
     { q: 'Can I get customized vending leads for specific areas of Covington?', a: 'Absolutely! We can provide targeted vending leads for downtown district, riverfront area, or business zones within Covington based on your preferences and target market requirements.' },
-    { q: 'What's the typical ROI for vending machines in Covington?', a: 'Vending machines in Covington typically show strong ROI due to urban density and metro area workforce. Our research shows average payback periods of 12-18 months for well-placed machines.' }
+    { q: 'What\'s the typical ROI for vending machines in Covington?', a: 'Vending machines in Covington typically show strong ROI due to urban density and metro area workforce. Our research shows average payback periods of 12-18 months for well-placed machines.' }
   ]
 
   return (

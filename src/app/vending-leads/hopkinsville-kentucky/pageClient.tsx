@@ -82,12 +82,12 @@ export default function HopkinsvilleKentuckyVendingLeadsPage() {
   const faqItems = [
     { q: 'What types of vending machine locations are available in Hopkinsville?', a: 'Hopkinsville offers diverse vending opportunities including retail locations, healthcare facilities, office buildings, restaurants, and service businesses. Each location is pre-verified for optimal vending machine success.' },
     { q: 'How quickly can I get vending machine leads for Hopkinsville?', a: 'Our Hopkinsville vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.' },
-    { q: 'What makes Hopkinsville a good market for vending machines?', a: 'Hopkinsville serves the Fort Campbell military community and is a regional commerce center. The city's military connection and diverse economy create ideal conditions for vending machine success.' },
+    { q: 'What makes Hopkinsville a good market for vending machines?', a: 'Hopkinsville serves the Fort Campbell military community and is a regional commerce center. The city\'s military connection and diverse economy create ideal conditions for vending machine success.' },
     { q: 'Do you provide ongoing support for Hopkinsville locations?', a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Hopkinsville.' },
     { q: 'What industries in Hopkinsville are best for vending machines?', a: 'Retail locations, healthcare facilities, office buildings, and service businesses in Hopkinsville show the highest potential for vending machine success due to military presence and regional commerce.' },
     { q: 'How do you verify the quality of Hopkinsville vending locations?', a: 'We conduct thorough research on each Hopkinsville location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.' },
     { q: 'Can I get customized vending leads for specific areas of Hopkinsville?', a: 'Absolutely! We can provide targeted vending leads for retail districts, healthcare facilities, or commercial areas within Hopkinsville based on your preferences and target market requirements.' },
-    { q: 'What's the typical ROI for vending machines in Hopkinsville?', a: 'Vending machines in Hopkinsville typically show strong ROI due to military community and regional commerce. Our research shows average payback periods of 12-18 months for well-placed machines.' }
+    { q: 'What\'s the typical ROI for vending machines in Hopkinsville?', a: 'Vending machines in Hopkinsville typically show strong ROI due to military community and regional commerce. Our research shows average payback periods of 12-18 months for well-placed machines.' }
   ]
 
   return (
