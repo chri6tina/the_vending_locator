@@ -71,7 +71,7 @@ export default function HendersonNevadaVendingLeadsPage() {
 
               <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 1.0 }} className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
                 <button onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })} className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors">Get Started</button>
-                <Link href="/hot-leads" className="w-full sm:w-auto bg-transparent text-chocolate border-2 border-chocolate px-8 py-3 rounded-lg font-semibold hover:bg-chocolate hover:text-white transition-colors">View Hot Leads →</Link>
+                
               </motion.div>
 
               <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 1.2 }} className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">

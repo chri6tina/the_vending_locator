@@ -181,12 +181,6 @@ export default function MaconGeorgiaVendingLeadsPage() {
                 >
                   Get Started
                 </Link>
-                <Link
-                  href="#hot-leads"
-                  className="inline-flex items-center justify-center px-8 py-4 bg-white text-navy font-semibold rounded-lg border-2 border-navy hover:bg-navy hover:text-white transition-colors text-lg"
-                >
-                  View Hot Leads →
-                </Link>
               </motion.div>
             </div>
           </div>

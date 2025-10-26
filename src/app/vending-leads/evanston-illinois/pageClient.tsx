@@ -133,12 +133,7 @@ export default function EvanstonIllinoisPage() {
                 >
                   Get Started
                 </button>
-                <Link
-                  href="#hot-leads"
-                  className="w-full sm:w-auto text-base sm:text-lg font-semibold leading-6 text-charcoal hover:text-navy transition-colors text-center py-3 sm:py-4"
-                >
-                  View Hot Leads <span aria-hidden="true">→</span>
-                </Link>
+
               </div>
             </div>
           </div>

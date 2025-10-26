@@ -79,12 +79,7 @@ export default function RhodeIslandVendingLeadsPage() {
               >
                 Get Started Today
               </Link>
-              <Link 
-                href="/hot-leads"
-                className="bg-white hover:bg-gray-50 text-blue-600 px-8 py-3 rounded-lg font-semibold border-2 border-blue-600 transition-colors duration-200"
-              >
-                View Hot Leads
-              </Link>
+              
             </div>
           </motion.div>
         </div>

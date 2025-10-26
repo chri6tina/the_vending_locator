@@ -5,9 +5,10 @@ const path = require('path');
 function generateCityData(cityName, stateName) {
   const cityDisplayName = cityName.split('-').map(part => 
     part.charAt(0).toUpperCase() + part.slice(1)
-  ).join(' ');
+  ).join(' ').replace(/\s+\w+$/, ''); // Remove duplicate state if present
   
-  const stateDisplayName = stateName.charAt(0).toUpperCase() + stateName.slice(1);
+  const stateDisplayName = cityName.split('-').slice(-1)[0].charAt(0).toUpperCase() + 
+                          cityName.split('-').slice(-1)[0].slice(1);
   
   // Generate realistic population and business numbers based on city size
   const citySize = cityName.split('-').length;
@@ -47,20 +48,30 @@ function generateCityData(cityName, stateName) {
     industries,
     verifiedLocations: verifiedLocations,
     rating: '4.8/5',
-    description: `Thriving business community in ${stateDisplayName}`
+    description: `${cityDisplayName} is a thriving city in ${stateDisplayName} known for its diverse business opportunities, strong economy, and growing community.`,
+    majorEmployers: [
+      `${cityDisplayName} Healthcare System`,
+      `${cityDisplayName} School District`,
+      `${cityDisplayName} University`,
+      `${stateDisplayName} State University`,
+      `${cityDisplayName} Municipal Government`
+    ]
   };
 }
 
-// Function to generate business landscape industries
+// Function to generate business landscape industries with Tyler-style structure
 function generateBusinessLandscape(cityName, stateName) {
   const cityDisplayName = cityName.split('-').map(part => 
     part.charAt(0).toUpperCase() + part.slice(1)
-  ).join(' ');
+  ).join(' ').replace(/\s+\w+$/, '');
+  
+  const stateDisplayName = cityName.split('-').slice(-1)[0].charAt(0).toUpperCase() + 
+                          cityName.split('-').slice(-1)[0].slice(1);
   
   return [
     {
       title: 'Healthcare',
-      description: `${cityDisplayName} features modern healthcare facilities including hospitals, clinics, and medical offices with high foot traffic and stable operations.`,
+      description: `${cityDisplayName} features major healthcare facilities providing high foot traffic and stable operations for vending machines.`,
       icon: 'BuildingOfficeIcon',
       color: 'text-blue-600',
       bgColor: 'bg-blue-50'
@@ -71,13 +82,6 @@ function generateBusinessLandscape(cityName, stateName) {
       icon: 'AcademicCapIcon',
       color: 'text-green-600',
       bgColor: 'bg-green-50'
-    },
-    {
-      title: 'Manufacturing',
-      description: `${cityDisplayName}'s manufacturing sector offers large employee bases and extended operating hours, perfect for vending machine placement.`,
-      icon: 'CpuChipIcon',
-      color: 'text-purple-600',
-      bgColor: 'bg-purple-50'
     },
     {
       title: 'Retail',
@@ -95,26 +99,34 @@ function generateBusinessLandscape(cityName, stateName) {
     },
     {
       title: 'Transportation',
-      description: `${cityDisplayName}'s transportation hubs including airports, bus stations, and transit centers provide high-volume foot traffic.`,
+      description: `${cityDisplayName}'s transportation hubs including major highways and regional facilities provide high-volume foot traffic.`,
       icon: 'TruckIcon',
       color: 'text-red-600',
       bgColor: 'bg-red-50'
+    },
+    {
+      title: 'Entertainment',
+      description: `${cityDisplayName}'s entertainment venues and cultural attractions provide unique vending machine opportunities with visitors and events.`,
+      icon: 'HeartIcon',
+      color: 'text-yellow-600',
+      bgColor: 'bg-yellow-50'
     }
   ];
 }
 
-// Function to generate FAQ questions
+// Function to generate FAQ questions matching Tyler style
 function generateFAQ(cityName, stateName) {
   const cityDisplayName = cityName.split('-').map(part => 
     part.charAt(0).toUpperCase() + part.slice(1)
-  ).join(' ');
+  ).join(' ').replace(/\s+\w+$/, '');
   
-  const stateDisplayName = stateName.charAt(0).toUpperCase() + stateName.slice(1);
+  const stateDisplayName = cityName.split('-').slice(-1)[0].charAt(0).toUpperCase() + 
+                          cityName.split('-').slice(-1)[0].slice(1);
   
   return [
     {
       question: `What types of vending machine locations are available in ${cityDisplayName}?`,
-      answer: `${cityDisplayName} offers diverse vending opportunities including healthcare facilities, educational institutions, manufacturing plants, retail locations, office buildings, and transportation hubs. Each location is pre-verified for optimal vending machine success.`
+      answer: `${cityDisplayName} offers diverse vending opportunities including healthcare facilities, educational institutions, retail locations, office buildings, transportation hubs, and entertainment venues. Each location is pre-verified for optimal vending machine success.`
     },
     {
       question: `How quickly can I get vending machine leads for ${cityDisplayName}?`,
@@ -130,7 +142,7 @@ function generateFAQ(cityName, stateName) {
     },
     {
       question: `What industries in ${cityDisplayName} are best for vending machines?`,
-      answer: `Healthcare, education, manufacturing, retail, office buildings, and transportation sectors in ${cityDisplayName} show the highest potential for vending machine success due to consistent foot traffic and captive audiences.`
+      answer: `Healthcare, education, retail, office buildings, transportation, and entertainment sectors in ${cityDisplayName} show the highest potential for vending machine success due to consistent foot traffic and captive audiences.`
     },
     {
       question: `How do you verify the quality of ${cityDisplayName} vending locations?`,
@@ -147,17 +159,22 @@ function generateFAQ(cityName, stateName) {
   ];
 }
 
-// Function to build a complete page from scratch
-function buildCompletePage(cityName, stateName) {
+// Function to generate pageClient.tsx (the client component)
+function buildPageClient(cityName, stateName) {
   const cityData = generateCityData(cityName, stateName);
   const businessLandscape = generateBusinessLandscape(cityName, stateName);
   const faq = generateFAQ(cityName, stateName);
   
-  const cityDisplayName = cityName.split('-').map(part => 
+  // Extract city and state from slug (assuming format: city-state)
+  const parts = cityName.split('-');
+  const cityDisplayName = parts.slice(0, -1).map(part => 
     part.charAt(0).toUpperCase() + part.slice(1)
   ).join(' ');
   
-  const stateDisplayName = stateName.charAt(0).toUpperCase() + stateName.slice(1);
+  const stateDisplayName = parts.slice(-1)[0].charAt(0).toUpperCase() + 
+                          parts.slice(-1)[0].slice(1);
+  
+  const functionName = cityDisplayName.replace(/\s+/g, '') + stateDisplayName.replace(/\s+/g, '') + 'VendingLeadsPage';
   
   return `'use client'
 

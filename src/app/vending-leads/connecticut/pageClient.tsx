@@ -189,12 +189,7 @@ export default function ConnecticutVendingLeadsPage() {
                   >
                     Get Started
                   </button>
-                <Link 
-                  href="/hot-leads"
-                  className="w-full sm:w-auto bg-transparent text-chocolate border-2 border-chocolate px-8 py-3 rounded-lg font-semibold hover:bg-chocolate hover:text-white transition-colors"
-                >
-                  View Hot Leads →
-                </Link>
+
               </motion.div>
 
               {/* Social Proof Stats */}

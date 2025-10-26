@@ -69,12 +69,7 @@ export default function GlendaleCaliforniaPage() {
               >
                 Get Started
               </button>
-              <Link
-                href="#hot-leads"
-                className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors"
-              >
-                View Hot Leads
-              </Link>
+              
             </div>
           </div>
         </section>

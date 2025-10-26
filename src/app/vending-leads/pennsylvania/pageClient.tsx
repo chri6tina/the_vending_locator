@@ -187,12 +187,7 @@ export default function PennsylvaniaVendingLeadsPage() {
                 >
                   Get Started
                 </button>
-                <Link 
-                  href="/hot-leads"
-                  className="w-full sm:w-auto bg-coral hover:bg-coral/90 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
-                >
-                  View Hot Leads
-                </Link>
+                
               </motion.div>
 
               {/* Social Proof Stats */}

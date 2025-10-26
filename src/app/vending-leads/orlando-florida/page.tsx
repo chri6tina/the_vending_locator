@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Orlando, Florida - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Orlando, Florida. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Orlando Florida, vending leads Orlando Florida, vending locations Orlando Florida, vending opportunities Orlando Florida",
+  "keywords": "vending machines orlando florida, vending leads orlando florida, vending locations orlando florida, vending opportunities orlando florida",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/orlando-florida"
   },

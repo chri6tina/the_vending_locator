@@ -248,7 +248,7 @@ export default function VendingLeadsDirectory() {
                 Florida
               </h3>
               <p className="text-sm text-stone/70 mb-3">
-                10+ Cities Available
+                28 Cities Available
               </p>
               <span className="text-navy text-sm font-medium group-hover:underline">
                 View Cities →

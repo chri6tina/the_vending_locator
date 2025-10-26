@@ -190,12 +190,7 @@ export default function BostonMassachusettsVendingLeadsPage() {
                 >
                   Get Boston Vending Leads
                 </Link>
-                <Link
-                  href="/hot-leads"
-                  className="btn-secondary text-lg px-8 py-4"
-                >
-                  View Hot Leads
-                </Link>
+                
               </motion.div>
 
               {/* Social Proof Stats */}

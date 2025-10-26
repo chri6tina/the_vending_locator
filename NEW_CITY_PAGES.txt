@@ -24,3 +24,4 @@ src/app/vending-leads/denton-texas/page.tsx
 src/app/vending-leads/carrollton-texas/page.tsx
 src/app/vending-leads/richardson-texas/page.tsx
 src/app/vending-leads/lewisville-texas/page.tsx
+src/app/vending-leads/orlando-florida/page.tsx
