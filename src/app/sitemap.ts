@@ -280,6 +280,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     
     // Louisiana cities
     { url: 'https://www.thevendinglocator.com/vending-leads/new-orleans-louisiana', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/baton-rouge-louisiana', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/shreveport-louisiana', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/lafayette-louisiana', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/lake-charles-louisiana', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/kenner-louisiana', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/bossier-city-louisiana', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/monroe-louisiana', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/metairie-louisiana', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     
     // Kansas cities
     { url: 'https://www.thevendinglocator.com/vending-leads/wichita-kansas', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },

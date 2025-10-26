@@ -273,7 +273,15 @@ const states: State[] = [
     name: 'Louisiana',
     slug: 'louisiana',
     cities: [
-      { name: 'New Orleans', slug: 'new-orleans-louisiana' }
+      { name: 'Baton Rouge', slug: 'baton-rouge-louisiana' },
+      { name: 'Bossier City', slug: 'bossier-city-louisiana' },
+      { name: 'Kenner', slug: 'kenner-louisiana' },
+      { name: 'Lafayette', slug: 'lafayette-louisiana' },
+      { name: 'Lake Charles', slug: 'lake-charles-louisiana' },
+      { name: 'Metairie', slug: 'metairie-louisiana' },
+      { name: 'Monroe', slug: 'monroe-louisiana' },
+      { name: 'New Orleans', slug: 'new-orleans-louisiana' },
+      { name: 'Shreveport', slug: 'shreveport-louisiana' }
     ]
   },
   {
