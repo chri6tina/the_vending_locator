@@ -434,7 +434,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: 'https://www.thevendinglocator.com/vending-leads/south-burlington-vermont', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     
     // New Hampshire cities - Newly created
+    { url: 'https://www.thevendinglocator.com/vending-leads/concord-new-hampshire', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/derry-new-hampshire', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/dover-new-hampshire', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/vending-leads/manchester-new-hampshire', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/merrimack-new-hampshire', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/nashua-new-hampshire', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/portsmouth-new-hampshire', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/rochester-new-hampshire', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/salem-new-hampshire', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     
     // Utah cities - Newly created
     { url: 'https://www.thevendinglocator.com/vending-leads/provo-utah', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
