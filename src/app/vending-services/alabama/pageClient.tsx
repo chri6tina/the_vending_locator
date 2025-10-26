@@ -14,15 +14,9 @@ export default function AlabamaVendingServicesPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
 
-  // Alabama cities - will be populated with actual service provider locations
-  const cities = [
-    { name: 'Birmingham', slug: 'birmingham-alabama' },
-    { name: 'Montgomery', slug: 'montgomery-alabama' },
-    { name: 'Mobile', slug: 'mobile-alabama' },
-    { name: 'Huntsville', slug: 'huntsville-alabama' },
-    { name: 'Tuscaloosa', slug: 'tuscaloosa-alabama' },
-    { name: 'Auburn', slug: 'auburn-alabama' },
-    { name: 'Dothan', slug: 'dothan-alabama' }
+  // Alabama cities - will be populated when city pages are created
+  const cities: { name: string; slug: string }[] = [
+    // Cities will be added here once pages are created
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -314,61 +308,193 @@ export default function AlabamaVendingServicesPage() {
           </div>
         </section>
 
-        {/* Cities Section */}
-        <section className="py-16 bg-warm-white border-t border-gray-200">
+        {/* How We Help Process Section */}
+        <section className="py-16 bg-gradient-to-b from-white to-warm-white border-t border-gray-200">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
-              <motion.h2
+              <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
-                className="text-3xl font-playfair font-bold text-chocolate mb-4 text-center"
+                className="text-center mb-12"
               >
-                Vending Services by City in {stateDisplayName}
-              </motion.h2>
-              <motion.p
+                <h2 className="text-3xl font-playfair font-bold text-chocolate mb-4">
+                  How We Help {stateDisplayName} Businesses Find the Best Vending Partners
+                </h2>
+                <p className="text-lg text-chocolate/70 max-w-3xl mx-auto">
+                  Our proven process connects you with qualified, professional vending operators in {stateDisplayName}
+                </p>
+              </motion.div>
+
+              <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+                {/* Step 1 */}
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8 }}
+                  className="relative"
+                >
+                  <div className="text-center">
+                    <div className="w-16 h-16 bg-coral rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                      <span className="text-2xl font-bold text-white">1</span>
+                    </div>
+                    <h3 className="text-lg font-semibold text-navy mb-3">Submit Your Info</h3>
+                    <p className="text-charcoal/80 text-sm">
+                      Tell us about your {stateDisplayName} business location, number of employees, and vending needs.
+                    </p>
+                  </div>
+                  {/* Connector Line */}
+                  <div className="hidden md:block absolute top-8 left-full w-full h-0.5 bg-coral/30 -translate-x-1/2" style={{ width: 'calc(100% - 4rem)' }}></div>
+                </motion.div>
+
+                {/* Step 2 */}
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8, delay: 0.1 }}
+                  className="relative"
+                >
+                  <div className="text-center">
+                    <div className="w-16 h-16 bg-coral rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                      <span className="text-2xl font-bold text-white">2</span>
+                    </div>
+                    <h3 className="text-lg font-semibold text-navy mb-3">We Match You</h3>
+                    <p className="text-charcoal/80 text-sm">
+                      We connect you with 2-3 pre-screened vending operators who serve your area in {stateDisplayName}.
+                    </p>
+                  </div>
+                  {/* Connector Line */}
+                  <div className="hidden md:block absolute top-8 left-full w-full h-0.5 bg-coral/30 -translate-x-1/2" style={{ width: 'calc(100% - 4rem)' }}></div>
+                </motion.div>
+
+                {/* Step 3 */}
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8, delay: 0.2 }}
+                  className="relative"
+                >
+                  <div className="text-center">
+                    <div className="w-16 h-16 bg-coral rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                      <span className="text-2xl font-bold text-white">3</span>
+                    </div>
+                    <h3 className="text-lg font-semibold text-navy mb-3">Compare Proposals</h3>
+                    <p className="text-charcoal/80 text-sm">
+                      Review proposals, product options, and commission structures from multiple providers at no obligation.
+                    </p>
+                  </div>
+                  {/* Connector Line */}
+                  <div className="hidden md:block absolute top-8 left-full w-full h-0.5 bg-coral/30 -translate-x-1/2" style={{ width: 'calc(100% - 4rem)' }}></div>
+                </motion.div>
+
+                {/* Step 4 */}
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8, delay: 0.3 }}
+                  className="relative"
+                >
+                  <div className="text-center">
+                    <div className="w-16 h-16 bg-coral rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                      <span className="text-2xl font-bold text-white">4</span>
+                    </div>
+                    <h3 className="text-lg font-semibold text-navy mb-3">Get Installed</h3>
+                    <p className="text-charcoal/80 text-sm">
+                      Choose your preferred provider and enjoy free installation, stocking, and ongoing service.
+                    </p>
+                  </div>
+                </motion.div>
+              </div>
+
+              {/* Process Benefits */}
+              <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                className="text-lg text-chocolate/70 mb-12 text-center max-w-3xl mx-auto"
+                transition={{ duration: 0.8, delay: 0.4 }}
+                className="mt-12 bg-navy/5 rounded-2xl p-8 border border-navy/10"
               >
-                Browse professional vending service providers by city across {stateDisplayName}
-              </motion.p>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {cities.map((city, index) => (
-                  <motion.div
-                    key={city.slug}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: index * 0.1 }}
-                  >
-                    <Link
-                      href={`/vending-services/${city.slug}`}
-                      className="block bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 border border-stone/20 hover:border-coral/30 group"
-                    >
-                      <div className="flex items-center gap-3 mb-3">
-                        <MapPinIcon className="h-6 w-6 text-coral group-hover:scale-110 transition-transform" />
-                        <h3 className="text-xl font-semibold text-navy group-hover:text-coral transition-colors">
-                          {city.name}
-                        </h3>
-                      </div>
-                      <p className="text-charcoal/70 text-sm">
-                        Find vending service providers in {city.name}
-                      </p>
-                      <div className="mt-4 text-coral font-medium text-sm group-hover:translate-x-1 transition-transform inline-flex items-center">
-                        View Services →
-                      </div>
-                    </Link>
-                  </motion.div>
-                ))}
-              </div>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                  <div>
+                    <div className="text-3xl font-bold text-navy mb-2">100%</div>
+                    <div className="text-charcoal/70 text-sm">Free Service</div>
+                  </div>
+                  <div>
+                    <div className="text-3xl font-bold text-navy mb-2">24hrs</div>
+                    <div className="text-charcoal/70 text-sm">Response Time</div>
+                  </div>
+                  <div>
+                    <div className="text-3xl font-bold text-navy mb-2">2-3</div>
+                    <div className="text-charcoal/70 text-sm">Provider Options</div>
+                  </div>
+                </div>
+              </motion.div>
             </div>
           </div>
         </section>
+
+        {/* Cities Section - Only show if cities exist */}
+        {cities.length > 0 && (
+          <section className="py-16 bg-warm-white border-t border-gray-200">
+            <div className="container mx-auto px-4">
+              <div className="max-w-6xl mx-auto">
+                <motion.h2
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8 }}
+                  className="text-3xl font-playfair font-bold text-chocolate mb-4 text-center"
+                >
+                  Vending Services by City in {stateDisplayName}
+                </motion.h2>
+                <motion.p
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8, delay: 0.2 }}
+                  className="text-lg text-chocolate/70 mb-12 text-center max-w-3xl mx-auto"
+                >
+                  Browse professional vending service providers by city across {stateDisplayName}
+                </motion.p>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {cities.map((city, index) => (
+                    <motion.div
+                      key={city.slug}
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.5, delay: index * 0.1 }}
+                    >
+                      <Link
+                        href={`/vending-services/${city.slug}`}
+                        className="block bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 border border-stone/20 hover:border-coral/30 group"
+                      >
+                        <div className="flex items-center gap-3 mb-3">
+                          <MapPinIcon className="h-6 w-6 text-coral group-hover:scale-110 transition-transform" />
+                          <h3 className="text-xl font-semibold text-navy group-hover:text-coral transition-colors">
+                            {city.name}
+                          </h3>
+                        </div>
+                        <p className="text-charcoal/70 text-sm">
+                          Find vending service providers in {city.name}
+                        </p>
+                        <div className="mt-4 text-coral font-medium text-sm group-hover:translate-x-1 transition-transform inline-flex items-center">
+                          View Services →
+                        </div>
+                      </Link>
+                    </motion.div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </section>
+        )}
 
         {/* Why Choose Section */}
         <section className="py-16 bg-white border-t border-gray-200">
