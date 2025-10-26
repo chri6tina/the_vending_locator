@@ -16,7 +16,7 @@ export default function JacksonvilleFloridaVendingServicesPage() {
   const [showSuccessModal, setShowSuccessModal] = useState(false)
 
   // City pages don't show sub-cities
-  const subCities: { name: string; slug: string }[] = [][] = [
+  const subCities: { name: string; slug: string }[] = [
     // Cities will be added here once pages are created
   ]
 
