@@ -157,7 +157,7 @@ export default function AlabamaVendingServicesPage() {
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircleIcon className="h-6 w-6 text-coral flex-shrink-0 mt-0.5" />
-                      <span className="text-charcoal/80">Commission sharing opportunities available</span>
+                      <span className="text-charcoal/80">Professional service and support</span>
                     </li>
                   </motion.ul>
                 </div>
@@ -384,7 +384,7 @@ export default function AlabamaVendingServicesPage() {
                     </div>
                     <h3 className="text-lg font-semibold text-navy mb-3">Compare Proposals</h3>
                     <p className="text-charcoal/80 text-sm">
-                      Review proposals, product options, and commission structures from multiple providers at no obligation.
+                      Review proposals and product options from multiple providers at no obligation.
                     </p>
                   </div>
                   {/* Connector Line */}
@@ -589,7 +589,7 @@ export default function AlabamaVendingServicesPage() {
                     How much does it cost to get vending machines in {stateDisplayName}?
                   </h3>
                   <p className="text-charcoal/80">
-                    Nothing! Vending operators in {stateDisplayName} typically provide free installation, equipment, stocking, and maintenance. They earn revenue from machine sales and may offer commission sharing with your business.
+                    Nothing! Vending operators in {stateDisplayName} typically provide free installation, equipment, stocking, and maintenance. They earn revenue from machine sales, so there's no cost to your business.
                   </p>
                 </motion.div>
 
