@@ -87,7 +87,7 @@ export default function PortsmouthNewHampshireVendingLeadsPage() {
     { q: 'What industries in Portsmouth are best for vending machines?', a: 'Tourism venues, professional services, healthcare facilities, and hospitality in Portsmouth show the highest potential for vending machine success due to consistent foot traffic from residents and visitors.' },
     { q: 'How do you verify the quality of Portsmouth vending locations?', a: 'We conduct thorough research on each Portsmouth location including business verification, foot traffic analysis, visitor count validation, and industry research to ensure only high-quality opportunities are included.' },
     { q: 'Can I get customized vending leads for specific areas of Portsmouth?', a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, tourist districts, or commercial areas within Portsmouth based on your preferences and target market requirements.' },
-    { q: 'What's the typical ROI for vending machines in Portsmouth?', a: 'Vending machines in Portsmouth typically show strong ROI due to tourism activity and professional workforce. Our research shows average payback periods of 12-18 months for well-placed machines.' }
+    { q: 'What\'s the typical ROI for vending machines in Portsmouth?', a: 'Vending machines in Portsmouth typically show strong ROI due to tourism activity and professional workforce. Our research shows average payback periods of 12-18 months for well-placed machines.' }
   ]
 
   return (

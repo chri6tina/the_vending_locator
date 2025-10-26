@@ -87,7 +87,7 @@ export default function MerrimackNewHampshireVendingLeadsPage() {
     { q: 'What industries in Merrimack are best for vending machines?', a: 'Corporate offices, manufacturing, retail, and distribution in Merrimack show the highest potential for vending machine success due to professional workforce and shift workers.' },
     { q: 'How do you verify the quality of Merrimack vending locations?', a: 'We conduct thorough research on each Merrimack location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.' },
     { q: 'Can I get customized vending leads for specific areas of Merrimack?', a: 'Absolutely! We can provide targeted vending leads for specific business parks, corporate areas, or industrial zones within Merrimack based on your preferences and target market requirements.' },
-    { q: 'What's the typical ROI for vending machines in Merrimack?', a: 'Vending machines in Merrimack typically show strong ROI due to corporate employment and industrial activity. Our research shows average payback periods of 12-18 months for well-placed machines.' }
+    { q: 'What\'s the typical ROI for vending machines in Merrimack?', a: 'Vending machines in Merrimack typically show strong ROI due to corporate employment and industrial activity. Our research shows average payback periods of 12-18 months for well-placed machines.' }
   ]
 
   return (
