@@ -14,9 +14,10 @@ export default function WestVirginiaVendingServicesPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
 
-  // West Virginia cities - will be populated when city pages are created
-  const cities: { name: string; slug: string }[] = [
-    // Cities will be added here once pages are created
+  // West Virginia cities with vending services
+  const cities = [
+    { name: 'Charleston', slug: 'charleston-west-virginia' },
+    { name: 'Huntington', slug: 'huntington-west-virginia' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

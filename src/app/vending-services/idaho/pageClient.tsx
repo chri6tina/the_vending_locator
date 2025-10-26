@@ -14,9 +14,14 @@ export default function IdahoVendingServicesPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
 
-  // Idaho cities - will be populated when city pages are created
-  const cities: { name: string; slug: string }[] = [
-    // Cities will be added here once pages are created
+  // Idaho cities with vending services
+  const cities = [
+    { name: 'Boise', slug: 'boise-idaho' },
+    { name: 'Meridian', slug: 'meridian-idaho' },
+    { name: 'Nampa', slug: 'nampa-idaho' },
+    { name: 'Idaho Falls', slug: 'idaho-falls-idaho' },
+    { name: 'Pocatello', slug: 'pocatello-idaho' },
+    { name: 'Caldwell', slug: 'caldwell-idaho' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

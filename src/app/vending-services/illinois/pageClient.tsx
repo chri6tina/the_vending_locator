@@ -14,9 +14,24 @@ export default function IllinoisVendingServicesPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
 
-  // Illinois cities - will be populated when city pages are created
-  const cities: { name: string; slug: string }[] = [
-    // Cities will be added here once pages are created
+  // Illinois cities with vending services
+  const cities = [
+    { name: 'Chicago', slug: 'chicago-illinois' },
+    { name: 'Aurora', slug: 'aurora-illinois' },
+    { name: 'Naperville', slug: 'naperville-illinois' },
+    { name: 'Joliet', slug: 'joliet-illinois' },
+    { name: 'Rockford', slug: 'rockford-illinois' },
+    { name: 'Springfield', slug: 'springfield-illinois' },
+    { name: 'Elgin', slug: 'elgin-illinois' },
+    { name: 'Peoria', slug: 'peoria-illinois' },
+    { name: 'Champaign', slug: 'champaign-illinois' },
+    { name: 'Waukegan', slug: 'waukegan-illinois' },
+    { name: 'Cicero', slug: 'cicero-illinois' },
+    { name: 'Bloomington', slug: 'bloomington-illinois' },
+    { name: 'Arlington Heights', slug: 'arlington-heights-illinois' },
+    { name: 'Evanston', slug: 'evanston-illinois' },
+    { name: 'Decatur', slug: 'decatur-illinois' },
+    { name: 'Schaumburg', slug: 'schaumburg-illinois' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

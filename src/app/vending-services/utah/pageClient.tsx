@@ -14,9 +14,11 @@ export default function UtahVendingServicesPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
 
-  // Utah cities - will be populated when city pages are created
-  const cities: { name: string; slug: string }[] = [
-    // Cities will be added here once pages are created
+  // Utah cities with vending services
+  const cities = [
+    { name: 'Salt Lake City', slug: 'salt-lake-city-utah' },
+    { name: 'West Valley City', slug: 'west-valley-city-utah' },
+    { name: 'Provo', slug: 'provo-utah' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

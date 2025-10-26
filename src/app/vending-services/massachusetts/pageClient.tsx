@@ -14,9 +14,13 @@ export default function MassachusettsVendingServicesPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
 
-  // Massachusetts cities - will be populated when city pages are created
-  const cities: { name: string; slug: string }[] = [
-    // Cities will be added here once pages are created
+  // Massachusetts cities with vending services
+  const cities = [
+    { name: 'Boston', slug: 'boston-massachusetts' },
+    { name: 'Worcester', slug: 'worcester-massachusetts' },
+    { name: 'Springfield', slug: 'springfield-massachusetts' },
+    { name: 'Cambridge', slug: 'cambridge-massachusetts' },
+    { name: 'Lowell', slug: 'lowell-massachusetts' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

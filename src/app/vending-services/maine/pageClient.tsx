@@ -14,9 +14,11 @@ export default function MaineVendingServicesPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
 
-  // Maine cities - will be populated when city pages are created
-  const cities: { name: string; slug: string }[] = [
-    // Cities will be added here once pages are created
+  // Maine cities with vending services
+  const cities = [
+    { name: 'Portland', slug: 'portland-maine' },
+    { name: 'Lewiston', slug: 'lewiston-maine' },
+    { name: 'Bangor', slug: 'bangor-maine' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

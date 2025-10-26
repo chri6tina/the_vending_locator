@@ -14,9 +14,15 @@ export default function NorthCarolinaVendingServicesPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
 
-  // North Carolina cities - will be populated when city pages are created
-  const cities: { name: string; slug: string }[] = [
-    // Cities will be added here once pages are created
+  // North Carolina cities with vending services
+  const cities = [
+    { name: 'Charlotte', slug: 'charlotte-north-carolina' },
+    { name: 'Raleigh', slug: 'raleigh-north-carolina' },
+    { name: 'Greensboro', slug: 'greensboro-north-carolina' },
+    { name: 'Durham', slug: 'durham-north-carolina' },
+    { name: 'Winston-Salem', slug: 'winston-salem-north-carolina' },
+    { name: 'Fayetteville', slug: 'fayetteville-north-carolina' },
+    { name: 'Cary', slug: 'cary-north-carolina' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

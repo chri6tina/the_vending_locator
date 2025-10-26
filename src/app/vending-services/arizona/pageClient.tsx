@@ -14,9 +14,18 @@ export default function ArizonaVendingServicesPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
 
-  // Arizona cities - will be populated when city pages are created
-  const cities: { name: string; slug: string }[] = [
-    // Cities will be added here once pages are created
+  // Arizona cities with vending services
+  const cities = [
+    { name: 'Chandler', slug: 'chandler-arizona' },
+    { name: 'Gilbert', slug: 'gilbert-arizona' },
+    { name: 'Glendale', slug: 'glendale-arizona' },
+    { name: 'Mesa', slug: 'mesa-arizona' },
+    { name: 'Peoria', slug: 'peoria-arizona' },
+    { name: 'Phoenix', slug: 'phoenix-arizona' },
+    { name: 'Scottsdale', slug: 'scottsdale-arizona' },
+    { name: 'Surprise', slug: 'surprise-arizona' },
+    { name: 'Tempe', slug: 'tempe-arizona' },
+    { name: 'Tucson', slug: 'tucson-arizona' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

@@ -14,9 +14,10 @@ export default function WisconsinVendingServicesPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
 
-  // Wisconsin cities - will be populated when city pages are created
-  const cities: { name: string; slug: string }[] = [
-    // Cities will be added here once pages are created
+  // Wisconsin cities with vending services
+  const cities = [
+    { name: 'Milwaukee', slug: 'milwaukee-wisconsin' },
+    { name: 'Madison', slug: 'madison-wisconsin' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

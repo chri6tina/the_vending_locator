@@ -14,9 +14,17 @@ export default function LouisianaVendingServicesPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
 
-  // Louisiana cities - will be populated when city pages are created
-  const cities: { name: string; slug: string }[] = [
-    // Cities will be added here once pages are created
+  // Louisiana cities with vending services
+  const cities = [
+    { name: 'New Orleans', slug: 'new-orleans-louisiana' },
+    { name: 'Baton Rouge', slug: 'baton-rouge-louisiana' },
+    { name: 'Shreveport', slug: 'shreveport-louisiana' },
+    { name: 'Lafayette', slug: 'lafayette-louisiana' },
+    { name: 'Lake Charles', slug: 'lake-charles-louisiana' },
+    { name: 'Kenner', slug: 'kenner-louisiana' },
+    { name: 'Bossier City', slug: 'bossier-city-louisiana' },
+    { name: 'Monroe', slug: 'monroe-louisiana' },
+    { name: 'Alexandria', slug: 'alexandria-louisiana' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

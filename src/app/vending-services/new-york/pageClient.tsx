@@ -14,9 +14,18 @@ export default function NewYorkVendingServicesPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
 
-  // New York cities - will be populated when city pages are created
-  const cities: { name: string; slug: string }[] = [
-    // Cities will be added here once pages are created
+  // New York cities with vending services
+  const cities = [
+    { name: 'New York City', slug: 'new-york-city-new-york' },
+    { name: 'Buffalo', slug: 'buffalo-new-york' },
+    { name: 'Rochester', slug: 'rochester-new-york' },
+    { name: 'Yonkers', slug: 'yonkers-new-york' },
+    { name: 'Syracuse', slug: 'syracuse-new-york' },
+    { name: 'Albany', slug: 'albany-new-york' },
+    { name: 'New Rochelle', slug: 'new-rochelle-new-york' },
+    { name: 'Mount Vernon', slug: 'mount-vernon-new-york' },
+    { name: 'Schenectady', slug: 'schenectady-new-york' },
+    { name: 'Utica', slug: 'utica-new-york' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

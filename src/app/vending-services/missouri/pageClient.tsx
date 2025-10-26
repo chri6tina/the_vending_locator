@@ -14,9 +14,13 @@ export default function MissouriVendingServicesPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
 
-  // Missouri cities - will be populated when city pages are created
-  const cities: { name: string; slug: string }[] = [
-    // Cities will be added here once pages are created
+  // Missouri cities with vending services
+  const cities = [
+    { name: 'Kansas City', slug: 'kansas-city-missouri' },
+    { name: 'St. Louis', slug: 'st-louis-missouri' },
+    { name: 'Springfield', slug: 'springfield-missouri' },
+    { name: 'Columbia', slug: 'columbia-missouri' },
+    { name: 'Independence', slug: 'independence-missouri' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

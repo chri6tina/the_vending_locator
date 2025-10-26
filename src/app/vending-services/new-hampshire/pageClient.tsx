@@ -14,9 +14,17 @@ export default function NewHampshireVendingServicesPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
 
-  // New Hampshire cities - will be populated when city pages are created
-  const cities: { name: string; slug: string }[] = [
-    // Cities will be added here once pages are created
+  // New Hampshire cities with vending services
+  const cities = [
+    { name: 'Manchester', slug: 'manchester-new-hampshire' },
+    { name: 'Nashua', slug: 'nashua-new-hampshire' },
+    { name: 'Concord', slug: 'concord-new-hampshire' },
+    { name: 'Derry', slug: 'derry-new-hampshire' },
+    { name: 'Dover', slug: 'dover-new-hampshire' },
+    { name: 'Rochester', slug: 'rochester-new-hampshire' },
+    { name: 'Salem', slug: 'salem-new-hampshire' },
+    { name: 'Merrimack', slug: 'merrimack-new-hampshire' },
+    { name: 'Hudson', slug: 'hudson-new-hampshire' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

@@ -14,9 +14,15 @@ export default function AlabamaVendingServicesPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
 
-  // Alabama cities - will be populated when city pages are created
-  const cities: { name: string; slug: string }[] = [
-    // Cities will be added here once pages are created
+  // Alabama cities with vending services
+  const cities = [
+    { name: 'Auburn', slug: 'auburn-alabama' },
+    { name: 'Birmingham', slug: 'birmingham-alabama' },
+    { name: 'Dothan', slug: 'dothan-alabama' },
+    { name: 'Huntsville', slug: 'huntsville-alabama' },
+    { name: 'Mobile', slug: 'mobile-alabama' },
+    { name: 'Montgomery', slug: 'montgomery-alabama' },
+    { name: 'Tuscaloosa', slug: 'tuscaloosa-alabama' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

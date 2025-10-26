@@ -14,9 +14,11 @@ export default function HawaiiVendingServicesPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
 
-  // Hawaii cities - will be populated when city pages are created
-  const cities: { name: string; slug: string }[] = [
-    // Cities will be added here once pages are created
+  // Hawaii cities with vending services
+  const cities = [
+    { name: 'Honolulu', slug: 'honolulu-hawaii' },
+    { name: 'Hilo', slug: 'hilo-hawaii' },
+    { name: 'Kailua', slug: 'kailua-hawaii' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

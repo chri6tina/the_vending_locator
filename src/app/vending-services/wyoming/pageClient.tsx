@@ -14,9 +14,13 @@ export default function WyomingVendingServicesPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
 
-  // Wyoming cities - will be populated when city pages are created
-  const cities: { name: string; slug: string }[] = [
-    // Cities will be added here once pages are created
+  // Wyoming cities with vending services
+  const cities = [
+    { name: 'Cheyenne', slug: 'cheyenne-wyoming' },
+    { name: 'Casper', slug: 'casper-wyoming' },
+    { name: 'Laramie', slug: 'laramie-wyoming' },
+    { name: 'Gillette', slug: 'gillette-wyoming' },
+    { name: 'Rock Springs', slug: 'rock-springs-wyoming' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

@@ -14,9 +14,16 @@ export default function IndianaVendingServicesPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
 
-  // Indiana cities - will be populated when city pages are created
-  const cities: { name: string; slug: string }[] = [
-    // Cities will be added here once pages are created
+  // Indiana cities with vending services
+  const cities = [
+    { name: 'Indianapolis', slug: 'indianapolis-indiana' },
+    { name: 'Fort Wayne', slug: 'fort-wayne-indiana' },
+    { name: 'Evansville', slug: 'evansville-indiana' },
+    { name: 'South Bend', slug: 'south-bend-indiana' },
+    { name: 'Carmel', slug: 'carmel-indiana' },
+    { name: 'Bloomington', slug: 'bloomington-indiana' },
+    { name: 'Fishers', slug: 'fishers-indiana' },
+    { name: 'Hammond', slug: 'hammond-indiana' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

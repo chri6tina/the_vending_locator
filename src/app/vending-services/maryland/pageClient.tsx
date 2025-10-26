@@ -14,9 +14,15 @@ export default function MarylandVendingServicesPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
 
-  // Maryland cities - will be populated when city pages are created
-  const cities: { name: string; slug: string }[] = [
-    // Cities will be added here once pages are created
+  // Maryland cities with vending services
+  const cities = [
+    { name: 'Baltimore', slug: 'baltimore-maryland' },
+    { name: 'Columbia', slug: 'columbia-maryland' },
+    { name: 'Germantown', slug: 'germantown-maryland' },
+    { name: 'Silver Spring', slug: 'silver-spring-maryland' },
+    { name: 'Waldorf', slug: 'waldorf-maryland' },
+    { name: 'Glen Burnie', slug: 'glen-burnie-maryland' },
+    { name: 'Frederick', slug: 'frederick-maryland' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

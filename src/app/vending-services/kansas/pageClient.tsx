@@ -14,9 +14,13 @@ export default function KansasVendingServicesPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
 
-  // Kansas cities - will be populated when city pages are created
-  const cities: { name: string; slug: string }[] = [
-    // Cities will be added here once pages are created
+  // Kansas cities with vending services
+  const cities = [
+    { name: 'Wichita', slug: 'wichita-kansas' },
+    { name: 'Overland Park', slug: 'overland-park-kansas' },
+    { name: 'Kansas City', slug: 'kansas-city-kansas' },
+    { name: 'Olathe', slug: 'olathe-kansas' },
+    { name: 'Topeka', slug: 'topeka-kansas' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

@@ -14,9 +14,14 @@ export default function MichiganVendingServicesPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
 
-  // Michigan cities - will be populated when city pages are created
-  const cities: { name: string; slug: string }[] = [
-    // Cities will be added here once pages are created
+  // Michigan cities with vending services
+  const cities = [
+    { name: 'Detroit', slug: 'detroit-michigan' },
+    { name: 'Grand Rapids', slug: 'grand-rapids-michigan' },
+    { name: 'Warren', slug: 'warren-michigan' },
+    { name: 'Sterling Heights', slug: 'sterling-heights-michigan' },
+    { name: 'Ann Arbor', slug: 'ann-arbor-michigan' },
+    { name: 'Lansing', slug: 'lansing-michigan' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

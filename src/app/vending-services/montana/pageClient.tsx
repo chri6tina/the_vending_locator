@@ -14,9 +14,14 @@ export default function MontanaVendingServicesPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
 
-  // Montana cities - will be populated when city pages are created
-  const cities: { name: string; slug: string }[] = [
-    // Cities will be added here once pages are created
+  // Montana cities with vending services
+  const cities = [
+    { name: 'Billings', slug: 'billings-montana' },
+    { name: 'Missoula', slug: 'missoula-montana' },
+    { name: 'Great Falls', slug: 'great-falls-montana' },
+    { name: 'Bozeman', slug: 'bozeman-montana' },
+    { name: 'Butte', slug: 'butte-montana' },
+    { name: 'Helena', slug: 'helena-montana' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

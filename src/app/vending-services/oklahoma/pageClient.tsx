@@ -14,9 +14,10 @@ export default function OklahomaVendingServicesPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
 
-  // Oklahoma cities - will be populated when city pages are created
-  const cities: { name: string; slug: string }[] = [
-    // Cities will be added here once pages are created
+  // Oklahoma cities with vending services
+  const cities = [
+    { name: 'Oklahoma City', slug: 'oklahoma-city-oklahoma' },
+    { name: 'Tulsa', slug: 'tulsa-oklahoma' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

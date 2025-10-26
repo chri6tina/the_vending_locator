@@ -14,9 +14,14 @@ export default function SouthCarolinaVendingServicesPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
 
-  // South Carolina cities - will be populated when city pages are created
-  const cities: { name: string; slug: string }[] = [
-    // Cities will be added here once pages are created
+  // South Carolina cities with vending services
+  const cities = [
+    { name: 'Charleston', slug: 'charleston-south-carolina' },
+    { name: 'Columbia', slug: 'columbia-south-carolina' },
+    { name: 'North Charleston', slug: 'north-charleston-south-carolina' },
+    { name: 'Mount Pleasant', slug: 'mount-pleasant-south-carolina' },
+    { name: 'Rock Hill', slug: 'rock-hill-south-carolina' },
+    { name: 'Greenville', slug: 'greenville-south-carolina' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

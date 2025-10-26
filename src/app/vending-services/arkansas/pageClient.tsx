@@ -14,9 +14,18 @@ export default function ArkansasVendingServicesPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
 
-  // Arkansas cities - will be populated when city pages are created
-  const cities: { name: string; slug: string }[] = [
-    // Cities will be added here once pages are created
+  // Arkansas cities with vending services
+  const cities = [
+    { name: 'Little Rock', slug: 'little-rock-arkansas' },
+    { name: 'Fort Smith', slug: 'fort-smith-arkansas' },
+    { name: 'Fayetteville', slug: 'fayetteville-arkansas' },
+    { name: 'Springdale', slug: 'springdale-arkansas' },
+    { name: 'Jonesboro', slug: 'jonesboro-arkansas' },
+    { name: 'North Little Rock', slug: 'north-little-rock-arkansas' },
+    { name: 'Conway', slug: 'conway-arkansas' },
+    { name: 'Rogers', slug: 'rogers-arkansas' },
+    { name: 'Bentonville', slug: 'bentonville-arkansas' },
+    { name: 'Pine Bluff', slug: 'pine-bluff-arkansas' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

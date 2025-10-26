@@ -14,9 +14,12 @@ export default function VirginiaVendingServicesPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
 
-  // Virginia cities - will be populated when city pages are created
-  const cities: { name: string; slug: string }[] = [
-    // Cities will be added here once pages are created
+  // Virginia cities with vending services
+  const cities = [
+    { name: 'Virginia Beach', slug: 'virginia-beach-virginia' },
+    { name: 'Norfolk', slug: 'norfolk-virginia' },
+    { name: 'Chesapeake', slug: 'chesapeake-virginia' },
+    { name: 'Richmond', slug: 'richmond-virginia' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

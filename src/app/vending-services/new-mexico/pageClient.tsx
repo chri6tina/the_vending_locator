@@ -14,9 +14,11 @@ export default function NewMexicoVendingServicesPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
 
-  // New Mexico cities - will be populated when city pages are created
-  const cities: { name: string; slug: string }[] = [
-    // Cities will be added here once pages are created
+  // New Mexico cities with vending services
+  const cities = [
+    { name: 'Albuquerque', slug: 'albuquerque-new-mexico' },
+    { name: 'Las Cruces', slug: 'las-cruces-new-mexico' },
+    { name: 'Rio Rancho', slug: 'rio-rancho-new-mexico' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

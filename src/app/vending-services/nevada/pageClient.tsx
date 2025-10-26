@@ -14,9 +14,14 @@ export default function NevadaVendingServicesPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
 
-  // Nevada cities - will be populated when city pages are created
-  const cities: { name: string; slug: string }[] = [
-    // Cities will be added here once pages are created
+  // Nevada cities with vending services
+  const cities = [
+    { name: 'Las Vegas', slug: 'las-vegas-nevada' },
+    { name: 'Henderson', slug: 'henderson-nevada' },
+    { name: 'Reno', slug: 'reno-nevada' },
+    { name: 'North Las Vegas', slug: 'north-las-vegas-nevada' },
+    { name: 'Sparks', slug: 'sparks-nevada' },
+    { name: 'Carson City', slug: 'carson-city-nevada' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

@@ -14,9 +14,15 @@ export default function IowaVendingServicesPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
 
-  // Iowa cities - will be populated when city pages are created
-  const cities: { name: string; slug: string }[] = [
-    // Cities will be added here once pages are created
+  // Iowa cities with vending services
+  const cities = [
+    { name: 'Des Moines', slug: 'des-moines-iowa' },
+    { name: 'Cedar Rapids', slug: 'cedar-rapids-iowa' },
+    { name: 'Davenport', slug: 'davenport-iowa' },
+    { name: 'Sioux City', slug: 'sioux-city-iowa' },
+    { name: 'Iowa City', slug: 'iowa-city-iowa' },
+    { name: 'Waterloo', slug: 'waterloo-iowa' },
+    { name: 'Council Bluffs', slug: 'council-bluffs-iowa' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

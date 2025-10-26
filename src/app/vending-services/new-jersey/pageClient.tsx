@@ -14,9 +14,14 @@ export default function NewJerseyVendingServicesPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
 
-  // New Jersey cities - will be populated when city pages are created
-  const cities: { name: string; slug: string }[] = [
-    // Cities will be added here once pages are created
+  // New Jersey cities with vending services
+  const cities = [
+    { name: 'Newark', slug: 'newark-new-jersey' },
+    { name: 'Jersey City', slug: 'jersey-city-new-jersey' },
+    { name: 'Paterson', slug: 'paterson-new-jersey' },
+    { name: 'Elizabeth', slug: 'elizabeth-new-jersey' },
+    { name: 'Edison', slug: 'edison-new-jersey' },
+    { name: 'Woodbridge', slug: 'woodbridge-new-jersey' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

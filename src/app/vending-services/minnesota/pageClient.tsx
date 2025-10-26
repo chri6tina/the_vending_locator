@@ -14,9 +14,11 @@ export default function MinnesotaVendingServicesPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
 
-  // Minnesota cities - will be populated when city pages are created
-  const cities: { name: string; slug: string }[] = [
-    // Cities will be added here once pages are created
+  // Minnesota cities with vending services
+  const cities = [
+    { name: 'Minneapolis', slug: 'minneapolis-minnesota' },
+    { name: 'Saint Paul', slug: 'saint-paul-minnesota' },
+    { name: 'Rochester', slug: 'rochester-minnesota' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

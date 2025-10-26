@@ -14,9 +14,17 @@ export default function TennesseeVendingServicesPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
 
-  // Tennessee cities - will be populated when city pages are created
-  const cities: { name: string; slug: string }[] = [
-    // Cities will be added here once pages are created
+  // Tennessee cities with vending services
+  const cities = [
+    { name: 'Memphis', slug: 'memphis-tennessee' },
+    { name: 'Nashville', slug: 'nashville-tennessee' },
+    { name: 'Knoxville', slug: 'knoxville-tennessee' },
+    { name: 'Chattanooga', slug: 'chattanooga-tennessee' },
+    { name: 'Clarksville', slug: 'clarksville-tennessee' },
+    { name: 'Murfreesboro', slug: 'murfreesboro-tennessee' },
+    { name: 'Franklin', slug: 'franklin-tennessee' },
+    { name: 'Jackson', slug: 'jackson-tennessee' },
+    { name: 'Johnson City', slug: 'johnson-city-tennessee' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

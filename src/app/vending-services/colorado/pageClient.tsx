@@ -14,9 +14,18 @@ export default function ColoradoVendingServicesPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
 
-  // Colorado cities - will be populated when city pages are created
-  const cities: { name: string; slug: string }[] = [
-    // Cities will be added here once pages are created
+  // Colorado cities with vending services
+  const cities = [
+    { name: 'Arvada', slug: 'arvada-colorado' },
+    { name: 'Aurora', slug: 'aurora-colorado' },
+    { name: 'Boulder', slug: 'boulder-colorado' },
+    { name: 'Colorado Springs', slug: 'colorado-springs-colorado' },
+    { name: 'Denver', slug: 'denver-colorado' },
+    { name: 'Fort Collins', slug: 'fort-collins-colorado' },
+    { name: 'Lakewood', slug: 'lakewood-colorado' },
+    { name: 'Thornton', slug: 'thornton-colorado' },
+    { name: 'Westminster', slug: 'westminster-colorado' },
+    { name: 'Pueblo', slug: 'pueblo-colorado' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

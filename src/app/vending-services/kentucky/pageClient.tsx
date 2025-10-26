@@ -14,9 +14,18 @@ export default function KentuckyVendingServicesPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
 
-  // Kentucky cities - will be populated when city pages are created
-  const cities: { name: string; slug: string }[] = [
-    // Cities will be added here once pages are created
+  // Kentucky cities with vending services
+  const cities = [
+    { name: 'Lexington', slug: 'lexington-kentucky' },
+    { name: 'Louisville', slug: 'louisville-kentucky' },
+    { name: 'Bowling Green', slug: 'bowling-green-kentucky' },
+    { name: 'Owensboro', slug: 'owensboro-kentucky' },
+    { name: 'Covington', slug: 'covington-kentucky' },
+    { name: 'Hopkinsville', slug: 'hopkinsville-kentucky' },
+    { name: 'Richmond', slug: 'richmond-kentucky' },
+    { name: 'Florence', slug: 'florence-kentucky' },
+    { name: 'Georgetown', slug: 'georgetown-kentucky' },
+    { name: 'Elizabethtown', slug: 'elizabethtown-kentucky' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

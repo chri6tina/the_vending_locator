@@ -14,9 +14,11 @@ export default function NebraskaVendingServicesPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
 
-  // Nebraska cities - will be populated when city pages are created
-  const cities: { name: string; slug: string }[] = [
-    // Cities will be added here once pages are created
+  // Nebraska cities with vending services
+  const cities = [
+    { name: 'Omaha', slug: 'omaha-nebraska' },
+    { name: 'Lincoln', slug: 'lincoln-nebraska' },
+    { name: 'Bellevue', slug: 'bellevue-nebraska' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

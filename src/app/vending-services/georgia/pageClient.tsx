@@ -14,9 +14,19 @@ export default function GeorgiaVendingServicesPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
 
-  // Georgia cities - will be populated when city pages are created
-  const cities: { name: string; slug: string }[] = [
-    // Cities will be added here once pages are created
+  // Georgia cities with vending services
+  const cities = [
+    { name: 'Atlanta', slug: 'atlanta-georgia' },
+    { name: 'Augusta', slug: 'augusta-georgia' },
+    { name: 'Columbus', slug: 'columbus-georgia' },
+    { name: 'Macon', slug: 'macon-georgia' },
+    { name: 'Savannah', slug: 'savannah-georgia' },
+    { name: 'Athens', slug: 'athens-georgia' },
+    { name: 'Sandy Springs', slug: 'sandy-springs-georgia' },
+    { name: 'Roswell', slug: 'roswell-georgia' },
+    { name: 'Johns Creek', slug: 'johns-creek-georgia' },
+    { name: 'Warner Robins', slug: 'warner-robins-georgia' },
+    { name: 'Albany', slug: 'albany-georgia' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

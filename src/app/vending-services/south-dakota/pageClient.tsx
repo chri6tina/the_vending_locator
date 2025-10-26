@@ -14,9 +14,10 @@ export default function SouthDakotaVendingServicesPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
 
-  // South Dakota cities - will be populated when city pages are created
-  const cities: { name: string; slug: string }[] = [
-    // Cities will be added here once pages are created
+  // South Dakota cities with vending services
+  const cities = [
+    { name: 'Sioux Falls', slug: 'sioux-falls-south-dakota' },
+    { name: 'Rapid City', slug: 'rapid-city-south-dakota' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

@@ -14,9 +14,11 @@ export default function OregonVendingServicesPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
 
-  // Oregon cities - will be populated when city pages are created
-  const cities: { name: string; slug: string }[] = [
-    // Cities will be added here once pages are created
+  // Oregon cities with vending services
+  const cities = [
+    { name: 'Portland', slug: 'portland-oregon' },
+    { name: 'Salem', slug: 'salem-oregon' },
+    { name: 'Eugene', slug: 'eugene-oregon' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

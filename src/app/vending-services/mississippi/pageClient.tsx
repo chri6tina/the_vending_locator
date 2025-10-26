@@ -14,9 +14,12 @@ export default function MississippiVendingServicesPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
 
-  // Mississippi cities - will be populated when city pages are created
-  const cities: { name: string; slug: string }[] = [
-    // Cities will be added here once pages are created
+  // Mississippi cities with vending services
+  const cities = [
+    { name: 'Jackson', slug: 'jackson-mississippi' },
+    { name: 'Gulfport', slug: 'gulfport-mississippi' },
+    { name: 'Southaven', slug: 'southaven-mississippi' },
+    { name: 'Hattiesburg', slug: 'hattiesburg-mississippi' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

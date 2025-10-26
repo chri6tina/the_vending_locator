@@ -14,9 +14,17 @@ export default function WashingtonDCVendingServicesPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
 
-  // Washington DC cities - will be populated when city pages are created
-  const cities: { name: string; slug: string }[] = [
-    // Cities will be added here once pages are created
+  // Washington DC cities with vending services
+  const cities = [
+    { name: 'Georgetown', slug: 'georgetown-washington-dc' },
+    { name: 'Dupont Circle', slug: 'dupont-circle-washington-dc' },
+    { name: 'Capitol Hill', slug: 'capitol-hill-washington-dc' },
+    { name: 'Adams Morgan', slug: 'adams-morgan-washington-dc' },
+    { name: 'Foggy Bottom', slug: 'foggy-bottom-washington-dc' },
+    { name: 'Shaw', slug: 'shaw-washington-dc' },
+    { name: 'Navy Yard', slug: 'navy-yard-washington-dc' },
+    { name: 'Columbia Heights', slug: 'columbia-heights-washington-dc' },
+    { name: 'H Street Corridor', slug: 'h-street-corridor-washington-dc' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

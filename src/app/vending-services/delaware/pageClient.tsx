@@ -14,9 +14,19 @@ export default function DelawareVendingServicesPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
 
-  // Delaware cities - will be populated when city pages are created
-  const cities: { name: string; slug: string }[] = [
-    // Cities will be added here once pages are created
+  // Delaware cities with vending services
+  const cities = [
+    { name: 'Wilmington', slug: 'wilmington-delaware' },
+    { name: 'Dover', slug: 'dover-delaware' },
+    { name: 'Newark', slug: 'newark-delaware' },
+    { name: 'Middletown', slug: 'middletown-delaware' },
+    { name: 'Smyrna', slug: 'smyrna-delaware' },
+    { name: 'Milford', slug: 'milford-delaware' },
+    { name: 'Seaford', slug: 'seaford-delaware' },
+    { name: 'Georgetown', slug: 'georgetown-delaware' },
+    { name: 'Elsmere', slug: 'elsmere-delaware' },
+    { name: 'New Castle', slug: 'new-castle-delaware' },
+    { name: 'Bear', slug: 'bear-delaware' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

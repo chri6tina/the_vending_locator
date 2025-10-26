@@ -14,9 +14,15 @@ export default function WashingtonVendingServicesPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
 
-  // Washington cities - will be populated when city pages are created
-  const cities: { name: string; slug: string }[] = [
-    // Cities will be added here once pages are created
+  // Washington cities with vending services
+  const cities = [
+    { name: 'Seattle', slug: 'seattle-washington' },
+    { name: 'Spokane', slug: 'spokane-washington' },
+    { name: 'Tacoma', slug: 'tacoma-washington' },
+    { name: 'Vancouver', slug: 'vancouver-washington' },
+    { name: 'Bellevue', slug: 'bellevue-washington' },
+    { name: 'Kent', slug: 'kent-washington' },
+    { name: 'Everett', slug: 'everett-washington' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

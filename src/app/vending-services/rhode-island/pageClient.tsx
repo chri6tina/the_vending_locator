@@ -14,9 +14,11 @@ export default function RhodeIslandVendingServicesPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
 
-  // Rhode Island cities - will be populated when city pages are created
-  const cities: { name: string; slug: string }[] = [
-    // Cities will be added here once pages are created
+  // Rhode Island cities with vending services
+  const cities = [
+    { name: 'Providence', slug: 'providence-rhode-island' },
+    { name: 'Warwick', slug: 'warwick-rhode-island' },
+    { name: 'Cranston', slug: 'cranston-rhode-island' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

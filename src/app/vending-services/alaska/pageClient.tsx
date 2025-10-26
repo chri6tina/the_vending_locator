@@ -14,9 +14,19 @@ export default function AlaskaVendingServicesPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
 
-  // Alaska cities - will be populated when city pages are created
-  const cities: { name: string; slug: string }[] = [
-    // Cities will be added here once pages are created
+  // Alaska cities with vending services
+  const cities = [
+    { name: 'Anchorage', slug: 'anchorage-alaska' },
+    { name: 'Fairbanks', slug: 'fairbanks-alaska' },
+    { name: 'Juneau', slug: 'juneau-alaska' },
+    { name: 'Wasilla', slug: 'wasilla-alaska' },
+    { name: 'Sitka', slug: 'sitka-alaska' },
+    { name: 'Kenai', slug: 'kenai-alaska' },
+    { name: 'Ketchikan', slug: 'ketchikan-alaska' },
+    { name: 'Kodiak', slug: 'kodiak-alaska' },
+    { name: 'Palmer', slug: 'palmer-alaska' },
+    { name: 'Homer', slug: 'homer-alaska' },
+    { name: 'Soldotna', slug: 'soldotna-alaska' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

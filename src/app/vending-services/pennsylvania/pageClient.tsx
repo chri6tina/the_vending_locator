@@ -14,9 +14,16 @@ export default function PennsylvaniaVendingServicesPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
 
-  // Pennsylvania cities - will be populated when city pages are created
-  const cities: { name: string; slug: string }[] = [
-    // Cities will be added here once pages are created
+  // Pennsylvania cities with vending services
+  const cities = [
+    { name: 'Philadelphia', slug: 'philadelphia-pennsylvania' },
+    { name: 'Pittsburgh', slug: 'pittsburgh-pennsylvania' },
+    { name: 'Allentown', slug: 'allentown-pennsylvania' },
+    { name: 'Erie', slug: 'erie-pennsylvania' },
+    { name: 'Reading', slug: 'reading-pennsylvania' },
+    { name: 'Scranton', slug: 'scranton-pennsylvania' },
+    { name: 'Bethlehem', slug: 'bethlehem-pennsylvania' },
+    { name: 'Lancaster', slug: 'lancaster-pennsylvania' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
