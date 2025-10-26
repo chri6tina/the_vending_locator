@@ -123,9 +123,17 @@ const states: State[] = [
     name: 'Delaware',
     slug: 'delaware',
     cities: [
-      { name: 'Wilmington', slug: 'wilmington-delaware' },
+      { name: 'Bear', slug: 'bear-delaware' },
       { name: 'Dover', slug: 'dover-delaware' },
-      { name: 'Newark', slug: 'newark-delaware' }
+      { name: 'Elsmere', slug: 'elsmere-delaware' },
+      { name: 'Georgetown', slug: 'georgetown-delaware' },
+      { name: 'Middletown', slug: 'middletown-delaware' },
+      { name: 'Milford', slug: 'milford-delaware' },
+      { name: 'Newark', slug: 'newark-delaware' },
+      { name: 'New Castle', slug: 'new-castle-delaware' },
+      { name: 'Seaford', slug: 'seaford-delaware' },
+      { name: 'Smyrna', slug: 'smyrna-delaware' },
+      { name: 'Wilmington', slug: 'wilmington-delaware' }
     ]
   },
   {
