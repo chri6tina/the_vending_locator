@@ -8,42 +8,16 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function FloridaVendingServicesPage() {
+export default function WestPalmBeachFloridaVendingServicesPage() {
+  const cityDisplayName = 'West Palm Beach';
   const stateDisplayName = 'Florida'
   const [formSubmitted, setFormSubmitted] = useState(false)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
 
-  // Florida cities with vending services
-  const cities = [
-    { name: 'Boca Raton', slug: 'boca-raton-florida' },
-    { name: 'Cape Coral', slug: 'cape-coral-florida' },
-    { name: 'Clearwater', slug: 'clearwater-florida' },
-    { name: 'Coral Springs', slug: 'coral-springs-florida' },
-    { name: 'Daytona Beach', slug: 'daytona-beach-florida' },
-    { name: 'Deltona', slug: 'deltona-florida' },
-    { name: 'Fort Lauderdale', slug: 'fort-lauderdale-florida' },
-    { name: 'Fort Myers', slug: 'fort-myers-florida' },
-    { name: 'Gainesville', slug: 'gainesville-florida' },
-    { name: 'Hialeah', slug: 'hialeah-florida' },
-    { name: 'Hollywood', slug: 'hollywood-florida' },
-    { name: 'Jacksonville', slug: 'jacksonville-florida' },
-    { name: 'Kissimmee', slug: 'kissimmee-florida' },
-    { name: 'Lakeland', slug: 'lakeland-florida' },
-    { name: 'Miami', slug: 'miami-florida' },
-    { name: 'Miramar', slug: 'miramar-florida' },
-    { name: 'Naples', slug: 'naples-florida' },
-    { name: 'Orlando', slug: 'orlando-florida' },
-    { name: 'Palm Bay', slug: 'palm-bay-florida' },
-    { name: 'Pembroke Pines', slug: 'pembroke-pines-florida' },
-    { name: 'Pensacola', slug: 'pensacola-florida' },
-    { name: 'Pompano Beach', slug: 'pompano-beach-florida' },
-    { name: 'Port St. Lucie', slug: 'port-st-lucie-florida' },
-    { name: 'Sarasota', slug: 'sarasota-florida' },
-    { name: 'St. Petersburg', slug: 'st-petersburg-florida' },
-    { name: 'Tallahassee', slug: 'tallahassee-florida' },
-    { name: 'Tampa', slug: 'tampa-florida' },
-    { name: 'West Palm Beach', slug: 'west-palm-beach-florida' }
+  // City pages don't show sub-cities
+  const subCities: { name: string; slug: string }[] = [][] = [
+    // Cities will be added here once pages are created
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -98,7 +72,11 @@ export default function FloridaVendingServicesPage() {
                 Vending Services
               </Link>
               <span>/</span>
-              <span className="text-charcoal font-medium">{stateDisplayName}</span>
+              <Link href="/vending-services/florida" className="hover:text-navy transition-colors">
+                Florida
+              </Link>
+              <span>/</span>
+              <span className="text-charcoal font-medium">{cityDisplayName}</span>
             </div>
           </div>
         </nav>
@@ -118,7 +96,7 @@ export default function FloridaVendingServicesPage() {
                     className="text-4xl md:text-5xl font-playfair font-bold text-charcoal mb-6 leading-tight"
                   >
                     Vending Machine Services in{' '}
-                    <span className="text-navy">{stateDisplayName}</span>
+                    <span className="text-navy">{cityDisplayName}, Florida</span>
                   </motion.h1>
 
                   <motion.p 
@@ -127,7 +105,7 @@ export default function FloridaVendingServicesPage() {
                     transition={{ duration: 0.8, delay: 0.2 }}
                     className="text-xl text-stone mb-8 leading-relaxed"
                   >
-                    Connect with professional vending machine operators serving {stateDisplayName}. Get free installation, regular stocking, and full maintenance—at no cost to your business.
+                    Connect with professional vending machine operators serving {cityDisplayName}'s corporate headquarters and luxury retail. Get free installation, regular stocking, and full maintenance—at no cost to your business.
                   </motion.p>
 
                   {/* Trust Signals */}
@@ -209,7 +187,7 @@ export default function FloridaVendingServicesPage() {
                   ) : (
                     <>
                       <h3 className="text-2xl font-playfair font-bold text-navy mb-2 text-center">
-                        Get Vending Services in {stateDisplayName}
+                        Get Vending Services in {cityDisplayName}, FL
                       </h3>
                       <p className="text-charcoal/70 mb-6 text-center text-sm">
                         Fill out the form and we'll connect you with providers in your area.
@@ -466,7 +444,7 @@ export default function FloridaVendingServicesPage() {
         </section>
 
         {/* Cities Section - Only show if cities exist */}
-        {cities.length > 0 && (
+        {subCities.length > 0 && (
           <section className="py-16 bg-warm-white border-t border-gray-200">
             <div className="container mx-auto px-4">
               <div className="max-w-6xl mx-auto">
@@ -490,7 +468,7 @@ export default function FloridaVendingServicesPage() {
                 </motion.p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {cities.map((city, index) => (
+                  {subCities.map((city, index) => (
                     <motion.div
                       key={city.slug}
                       initial={{ opacity: 0, y: 20 }}
