@@ -17,9 +17,59 @@ export default function sitemap(): MetadataRoute.Sitemap {
   
   // Vending Services State Pages
   { url: 'https://www.thevendinglocator.com/vending-services/alabama', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
+  // Alabama Vending Services Cities
+  { url: 'https://www.thevendinglocator.com/vending-services/auburn-alabama', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/birmingham-alabama', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/dothan-alabama', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/huntsville-alabama', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/mobile-alabama', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/montgomery-alabama', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/tuscaloosa-alabama', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
   { url: 'https://www.thevendinglocator.com/vending-services/alaska', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
+  // Alaska Vending Services Cities
+  { url: 'https://www.thevendinglocator.com/vending-services/anchorage-alaska', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/fairbanks-alaska', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/homer-alaska', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/juneau-alaska', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/kenai-alaska', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/ketchikan-alaska', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/kodiak-alaska', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/palmer-alaska', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/sitka-alaska', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/soldotna-alaska', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/wasilla-alaska', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
   { url: 'https://www.thevendinglocator.com/vending-services/arizona', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
+  // Arizona Vending Services Cities
+  { url: 'https://www.thevendinglocator.com/vending-services/chandler-arizona', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/gilbert-arizona', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/glendale-arizona', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/mesa-arizona', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/peoria-arizona', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/phoenix-arizona', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/scottsdale-arizona', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/surprise-arizona', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/tempe-arizona', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/tucson-arizona', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
   { url: 'https://www.thevendinglocator.com/vending-services/arkansas', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
+  // Arkansas Vending Services Cities
+  { url: 'https://www.thevendinglocator.com/vending-services/bentonville-arkansas', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/conway-arkansas', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/fayetteville-arkansas', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/fort-smith-arkansas', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/jonesboro-arkansas', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/little-rock-arkansas', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/north-little-rock-arkansas', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/pine-bluff-arkansas', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/rogers-arkansas', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/springdale-arkansas', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
   { url: 'https://www.thevendinglocator.com/vending-services/california', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
   
   // California Vending Services Cities
@@ -45,8 +95,44 @@ export default function sitemap(): MetadataRoute.Sitemap {
   { url: 'https://www.thevendinglocator.com/vending-services/stockton-california', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
   
   { url: 'https://www.thevendinglocator.com/vending-services/colorado', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
+  // Colorado Vending Services Cities
+  { url: 'https://www.thevendinglocator.com/vending-services/arvada-colorado', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/aurora-colorado', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/boulder-colorado', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/colorado-springs-colorado', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/denver-colorado', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/fort-collins-colorado', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/lakewood-colorado', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/pueblo-colorado', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/thornton-colorado', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/westminster-colorado', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
   { url: 'https://www.thevendinglocator.com/vending-services/connecticut', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
+  // Connecticut Vending Services Cities
+  { url: 'https://www.thevendinglocator.com/vending-services/bridgeport-connecticut', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/hartford-connecticut', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/new-haven-connecticut', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/norwalk-connecticut', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/stamford-connecticut', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/waterbury-connecticut', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
   { url: 'https://www.thevendinglocator.com/vending-services/delaware', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
+  // Delaware Vending Services Cities
+  { url: 'https://www.thevendinglocator.com/vending-services/bear-delaware', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/dover-delaware', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/elsmere-delaware', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/georgetown-delaware', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/middletown-delaware', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/milford-delaware', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/new-castle-delaware', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/newark-delaware', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/seaford-delaware', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/smyrna-delaware', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/wilmington-delaware', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
   { url: 'https://www.thevendinglocator.com/vending-services/florida', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
   
   // Florida Vending Services Cities
@@ -80,38 +166,337 @@ export default function sitemap(): MetadataRoute.Sitemap {
   { url: 'https://www.thevendinglocator.com/vending-services/west-palm-beach-florida', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
   
   { url: 'https://www.thevendinglocator.com/vending-services/georgia', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
+  // Georgia Vending Services Cities
+  { url: 'https://www.thevendinglocator.com/vending-services/albany-georgia', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/athens-georgia', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/atlanta-georgia', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/augusta-georgia', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/columbus-georgia', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/johns-creek-georgia', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/macon-georgia', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/roswell-georgia', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/sandy-springs-georgia', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/savannah-georgia', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/warner-robins-georgia', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
   { url: 'https://www.thevendinglocator.com/vending-services/hawaii', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
+  // Hawaii Vending Services Cities
+  { url: 'https://www.thevendinglocator.com/vending-services/hilo-hawaii', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/honolulu-hawaii', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/kailua-hawaii', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
   { url: 'https://www.thevendinglocator.com/vending-services/idaho', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
+  // Idaho Vending Services Cities
+  { url: 'https://www.thevendinglocator.com/vending-services/boise-idaho', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/caldwell-idaho', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/idaho-falls-idaho', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/meridian-idaho', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/nampa-idaho', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/pocatello-idaho', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
   { url: 'https://www.thevendinglocator.com/vending-services/illinois', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
+  // Illinois Vending Services Cities
+  { url: 'https://www.thevendinglocator.com/vending-services/arlington-heights-illinois', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/aurora-illinois', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/bloomington-illinois', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/champaign-illinois', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/chicago-illinois', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/cicero-illinois', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/decatur-illinois', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/elgin-illinois', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/evanston-illinois', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/joliet-illinois', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/naperville-illinois', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/peoria-illinois', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/rockford-illinois', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/schaumburg-illinois', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/springfield-illinois', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/waukegan-illinois', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
   { url: 'https://www.thevendinglocator.com/vending-services/indiana', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
+  // Indiana Vending Services Cities
+  { url: 'https://www.thevendinglocator.com/vending-services/bloomington-indiana', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/carmel-indiana', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/evansville-indiana', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/fishers-indiana', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/fort-wayne-indiana', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/hammond-indiana', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/indianapolis-indiana', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/south-bend-indiana', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
   { url: 'https://www.thevendinglocator.com/vending-services/iowa', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
+  // Iowa Vending Services Cities
+  { url: 'https://www.thevendinglocator.com/vending-services/cedar-rapids-iowa', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/council-bluffs-iowa', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/davenport-iowa', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/des-moines-iowa', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/iowa-city-iowa', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/sioux-city-iowa', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/waterloo-iowa', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
   { url: 'https://www.thevendinglocator.com/vending-services/kansas', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
+  // Kansas Vending Services Cities
+  { url: 'https://www.thevendinglocator.com/vending-services/kansas-city-kansas', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/olathe-kansas', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/overland-park-kansas', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/topeka-kansas', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/wichita-kansas', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
   { url: 'https://www.thevendinglocator.com/vending-services/kentucky', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
+  // Kentucky Vending Services Cities
+  { url: 'https://www.thevendinglocator.com/vending-services/bowling-green-kentucky', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/covington-kentucky', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/elizabethtown-kentucky', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/florence-kentucky', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/georgetown-kentucky', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/hopkinsville-kentucky', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/lexington-kentucky', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/louisville-kentucky', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/owensboro-kentucky', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/richmond-kentucky', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
   { url: 'https://www.thevendinglocator.com/vending-services/louisiana', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
+  // Louisiana Vending Services Cities
+  { url: 'https://www.thevendinglocator.com/vending-services/alexandria-louisiana', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/baton-rouge-louisiana', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/bossier-city-louisiana', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/kenner-louisiana', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/lafayette-louisiana', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/lake-charles-louisiana', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/monroe-louisiana', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/new-orleans-louisiana', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/shreveport-louisiana', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
   { url: 'https://www.thevendinglocator.com/vending-services/maine', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
+  // Maine Vending Services Cities
+  { url: 'https://www.thevendinglocator.com/vending-services/bangor-maine', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/lewiston-maine', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/portland-maine', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
   { url: 'https://www.thevendinglocator.com/vending-services/maryland', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
+  // Maryland Vending Services Cities
+  { url: 'https://www.thevendinglocator.com/vending-services/baltimore-maryland', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/columbia-maryland', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/frederick-maryland', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/germantown-maryland', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/glen-burnie-maryland', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/silver-spring-maryland', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/waldorf-maryland', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
   { url: 'https://www.thevendinglocator.com/vending-services/massachusetts', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
+  // Massachusetts Vending Services Cities
+  { url: 'https://www.thevendinglocator.com/vending-services/boston-massachusetts', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/cambridge-massachusetts', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/lowell-massachusetts', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/springfield-massachusetts', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/worcester-massachusetts', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
   { url: 'https://www.thevendinglocator.com/vending-services/michigan', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
+  // Michigan Vending Services Cities
+  { url: 'https://www.thevendinglocator.com/vending-services/ann-arbor-michigan', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/detroit-michigan', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/grand-rapids-michigan', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/lansing-michigan', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/sterling-heights-michigan', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/warren-michigan', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
   { url: 'https://www.thevendinglocator.com/vending-services/minnesota', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
+  // Minnesota Vending Services Cities
+  { url: 'https://www.thevendinglocator.com/vending-services/minneapolis-minnesota', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/rochester-minnesota', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/saint-paul-minnesota', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
   { url: 'https://www.thevendinglocator.com/vending-services/mississippi', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
+  // Mississippi Vending Services Cities
+  { url: 'https://www.thevendinglocator.com/vending-services/gulfport-mississippi', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/hattiesburg-mississippi', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/jackson-mississippi', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/southaven-mississippi', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
   { url: 'https://www.thevendinglocator.com/vending-services/missouri', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
+  // Missouri Vending Services Cities
+  { url: 'https://www.thevendinglocator.com/vending-services/columbia-missouri', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/independence-missouri', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/kansas-city-missouri', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/springfield-missouri', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/st-louis-missouri', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
   { url: 'https://www.thevendinglocator.com/vending-services/montana', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
+  // Montana Vending Services Cities
+  { url: 'https://www.thevendinglocator.com/vending-services/billings-montana', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/bozeman-montana', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/butte-montana', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/great-falls-montana', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/helena-montana', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/missoula-montana', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
   { url: 'https://www.thevendinglocator.com/vending-services/nebraska', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
+  // Nebraska Vending Services Cities
+  { url: 'https://www.thevendinglocator.com/vending-services/bellevue-nebraska', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/lincoln-nebraska', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/omaha-nebraska', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
   { url: 'https://www.thevendinglocator.com/vending-services/nevada', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
+  // Nevada Vending Services Cities
+  { url: 'https://www.thevendinglocator.com/vending-services/carson-city-nevada', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/henderson-nevada', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/las-vegas-nevada', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/north-las-vegas-nevada', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/reno-nevada', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/sparks-nevada', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
   { url: 'https://www.thevendinglocator.com/vending-services/new-hampshire', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
+  // New Hampshire Vending Services Cities
+  { url: 'https://www.thevendinglocator.com/vending-services/concord-new-hampshire', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/derry-new-hampshire', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/dover-new-hampshire', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/hudson-new-hampshire', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/manchester-new-hampshire', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/merrimack-new-hampshire', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/nashua-new-hampshire', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/rochester-new-hampshire', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/salem-new-hampshire', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
   { url: 'https://www.thevendinglocator.com/vending-services/new-jersey', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
+  // New Jersey Vending Services Cities
+  { url: 'https://www.thevendinglocator.com/vending-services/edison-new-jersey', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/elizabeth-new-jersey', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/jersey-city-new-jersey', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/newark-new-jersey', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/paterson-new-jersey', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/woodbridge-new-jersey', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
   { url: 'https://www.thevendinglocator.com/vending-services/new-mexico', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
+  // New Mexico Vending Services Cities
+  { url: 'https://www.thevendinglocator.com/vending-services/albuquerque-new-mexico', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/las-cruces-new-mexico', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/rio-rancho-new-mexico', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
   { url: 'https://www.thevendinglocator.com/vending-services/new-york', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
+  // New York Vending Services Cities
+  { url: 'https://www.thevendinglocator.com/vending-services/albany-new-york', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/buffalo-new-york', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/mount-vernon-new-york', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/new-rochelle-new-york', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/new-york-city-new-york', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/rochester-new-york', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/schenectady-new-york', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/syracuse-new-york', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/utica-new-york', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/yonkers-new-york', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
   { url: 'https://www.thevendinglocator.com/vending-services/north-carolina', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
+  // North Carolina Vending Services Cities
+  { url: 'https://www.thevendinglocator.com/vending-services/cary-north-carolina', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/charlotte-north-carolina', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/durham-north-carolina', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/fayetteville-north-carolina', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/greensboro-north-carolina', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/raleigh-north-carolina', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/winston-salem-north-carolina', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
   { url: 'https://www.thevendinglocator.com/vending-services/north-dakota', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
+  // North Dakota Vending Services Cities
+  { url: 'https://www.thevendinglocator.com/vending-services/bismarck-north-dakota', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/fargo-north-dakota', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
   { url: 'https://www.thevendinglocator.com/vending-services/ohio', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
+  // Ohio Vending Services Cities
+  { url: 'https://www.thevendinglocator.com/vending-services/akron-ohio', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/cincinnati-ohio', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/cleveland-ohio', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/columbus-ohio', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/dayton-ohio', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/parma-ohio', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/toledo-ohio', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
   { url: 'https://www.thevendinglocator.com/vending-services/oklahoma', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
+  // Oklahoma Vending Services Cities
+  { url: 'https://www.thevendinglocator.com/vending-services/oklahoma-city-oklahoma', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/tulsa-oklahoma', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
   { url: 'https://www.thevendinglocator.com/vending-services/oregon', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
+  // Oregon Vending Services Cities
+  { url: 'https://www.thevendinglocator.com/vending-services/eugene-oregon', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/portland-oregon', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/salem-oregon', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
   { url: 'https://www.thevendinglocator.com/vending-services/pennsylvania', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
+  // Pennsylvania Vending Services Cities
+  { url: 'https://www.thevendinglocator.com/vending-services/allentown-pennsylvania', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/bethlehem-pennsylvania', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/erie-pennsylvania', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/lancaster-pennsylvania', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/philadelphia-pennsylvania', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/pittsburgh-pennsylvania', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/reading-pennsylvania', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/scranton-pennsylvania', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
   { url: 'https://www.thevendinglocator.com/vending-services/rhode-island', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
+  // Rhode Island Vending Services Cities
+  { url: 'https://www.thevendinglocator.com/vending-services/cranston-rhode-island', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/providence-rhode-island', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/warwick-rhode-island', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
   { url: 'https://www.thevendinglocator.com/vending-services/south-carolina', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
+  // South Carolina Vending Services Cities
+  { url: 'https://www.thevendinglocator.com/vending-services/charleston-south-carolina', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/columbia-south-carolina', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/greenville-south-carolina', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/mount-pleasant-south-carolina', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/north-charleston-south-carolina', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/rock-hill-south-carolina', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
   { url: 'https://www.thevendinglocator.com/vending-services/south-dakota', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
+  // South Dakota Vending Services Cities
+  { url: 'https://www.thevendinglocator.com/vending-services/rapid-city-south-dakota', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/sioux-falls-south-dakota', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
   { url: 'https://www.thevendinglocator.com/vending-services/tennessee', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
+  // Tennessee Vending Services Cities
+  { url: 'https://www.thevendinglocator.com/vending-services/chattanooga-tennessee', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/clarksville-tennessee', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/franklin-tennessee', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/jackson-tennessee', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/johnson-city-tennessee', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/knoxville-tennessee', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/memphis-tennessee', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/murfreesboro-tennessee', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/nashville-tennessee', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
   { url: 'https://www.thevendinglocator.com/vending-services/texas', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
   
   // Texas Vending Services Cities
@@ -148,13 +533,71 @@ export default function sitemap(): MetadataRoute.Sitemap {
   { url: 'https://www.thevendinglocator.com/vending-services/waco-texas', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
   
   { url: 'https://www.thevendinglocator.com/vending-services/utah', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
+  // Utah Vending Services Cities
+  { url: 'https://www.thevendinglocator.com/vending-services/provo-utah', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/salt-lake-city-utah', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/west-valley-city-utah', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
   { url: 'https://www.thevendinglocator.com/vending-services/vermont', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
+  // Vermont Vending Services Cities
+  { url: 'https://www.thevendinglocator.com/vending-services/burlington-vermont', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/south-burlington-vermont', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
   { url: 'https://www.thevendinglocator.com/vending-services/virginia', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
+  // Virginia Vending Services Cities
+  { url: 'https://www.thevendinglocator.com/vending-services/chesapeake-virginia', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/norfolk-virginia', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/richmond-virginia', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/virginia-beach-virginia', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
   { url: 'https://www.thevendinglocator.com/vending-services/washington', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
+  // Washington Vending Services Cities
+  { url: 'https://www.thevendinglocator.com/vending-services/bellevue-washington', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/everett-washington', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/kent-washington', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/seattle-washington', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/spokane-washington', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/tacoma-washington', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/vancouver-washington', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
   { url: 'https://www.thevendinglocator.com/vending-services/washington-dc', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
+  // Washington Dc Vending Services Cities
+  { url: 'https://www.thevendinglocator.com/vending-services/adams-morgan-washington-dc', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/capitol-hill-washington-dc', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/columbia-heights-washington-dc', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/dupont-circle-washington-dc', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/foggy-bottom-washington-dc', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/georgetown-washington-dc', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/h-street-corridor-washington-dc', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/navy-yard-washington-dc', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/shaw-washington-dc', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
   { url: 'https://www.thevendinglocator.com/vending-services/west-virginia', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
+  // West Virginia Vending Services Cities
+  { url: 'https://www.thevendinglocator.com/vending-services/charleston-west-virginia', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/huntington-west-virginia', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
   { url: 'https://www.thevendinglocator.com/vending-services/wisconsin', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
+  // Wisconsin Vending Services Cities
+  { url: 'https://www.thevendinglocator.com/vending-services/madison-wisconsin', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/milwaukee-wisconsin', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
   { url: 'https://www.thevendinglocator.com/vending-services/wyoming', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
+  // Wyoming Vending Services Cities
+  { url: 'https://www.thevendinglocator.com/vending-services/casper-wyoming', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/cheyenne-wyoming', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/gillette-wyoming', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/laramie-wyoming', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/rock-springs-wyoming', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  
   
   { url: 'https://www.thevendinglocator.com/vending-locations', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
   { url: 'https://www.thevendinglocator.com/guide', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.9 },
