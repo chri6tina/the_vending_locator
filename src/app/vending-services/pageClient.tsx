@@ -330,31 +330,65 @@ export default function VendingServicesDirectory() {
             </motion.h2>
             
             <div className="grid gap-4">
-              {states.map((state, index) => (
-                <motion.div
-                  key={state.slug}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: 0.5 + index * 0.05 }}
-                  className="bg-white rounded-lg shadow-md overflow-hidden border border-stone/20"
-                >
-                  <div className="px-6 py-4 flex items-center justify-between hover:bg-gray-50 transition-colors">
-                    <div className="flex items-center gap-3">
-                      <MapPinIcon className="h-5 w-5 text-coral flex-shrink-0" />
-                      <div>
-                        <h3 className="font-semibold text-navy">{state.name}</h3>
-                        <p className="text-sm text-stone mt-0.5">Statewide Service Coverage</p>
+              {states.map((state, index) => {
+                const hasCities = state.cities && state.cities.length > 0
+                const isExpanded = expandedStates.includes(state.slug)
+                
+                return (
+                  <motion.div
+                    key={state.slug}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.5 + index * 0.05 }}
+                    className="bg-white rounded-lg shadow-md overflow-hidden border border-stone/20"
+                  >
+                    <div className="px-6 py-4 flex items-center justify-between hover:bg-gray-50 transition-colors">
+                      <div className="flex items-center gap-3">
+                        <MapPinIcon className="h-5 w-5 text-coral flex-shrink-0" />
+                        <div>
+                          <h3 className="font-semibold text-navy">{state.name}</h3>
+                          <p className="text-sm text-stone mt-0.5">
+                            {hasCities ? `${state.cities.length} Cities Available` : 'Statewide Service Coverage'}
+                          </p>
+                        </div>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        {hasCities && (
+                          <button
+                            onClick={() => toggleState(state.slug)}
+                            className="px-4 py-2 border border-navy text-navy rounded-lg hover:bg-navy/5 transition-colors text-sm font-medium"
+                          >
+                            {isExpanded ? 'Hide Cities' : 'Show Cities'}
+                          </button>
+                        )}
+                        <Link
+                          href={`/vending-services/${state.slug}`}
+                          className="px-4 py-2 bg-navy text-white rounded-lg hover:bg-navy/90 transition-colors text-sm font-medium"
+                        >
+                          View State
+                        </Link>
                       </div>
                     </div>
-                    <Link
-                      href={`/vending-services/${state.slug}`}
-                      className="px-4 py-2 bg-navy text-white rounded-lg hover:bg-navy/90 transition-colors text-sm font-medium"
-                    >
-                      View State
-                    </Link>
-                  </div>
-                </motion.div>
-              ))}
+                    
+                    {/* Cities Dropdown */}
+                    {hasCities && isExpanded && (
+                      <div className="px-6 pb-4 border-t border-stone/20 bg-gray-50">
+                        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 pt-4">
+                          {state.cities.map((city: { name: string; slug: string }) => (
+                            <Link
+                              key={city.slug}
+                              href={`/vending-services/${city.slug}`}
+                              className="px-3 py-2 text-sm text-navy hover:bg-white hover:shadow-sm rounded-lg transition-all border border-transparent hover:border-stone/20"
+                            >
+                              {city.name}
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                  </motion.div>
+                )
+              })}
             </div>
 
             {/* Call to Action for Service Providers */}
