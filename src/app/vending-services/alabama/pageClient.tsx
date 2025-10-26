@@ -787,6 +787,111 @@ export default function AlabamaVendingServicesPage() {
                     {stateDisplayName} vending operators offer snacks, beverages (hot and cold), healthy options, fresh food, coffee, and specialty items. Product selection is customized based on your employee preferences and facility needs.
                   </p>
                 </motion.div>
+
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8, delay: 0.4 }}
+                  className="bg-white p-6 rounded-lg shadow-md border border-stone/20"
+                >
+                  <h3 className="text-lg font-semibold text-navy mb-2">
+                    Do I need a certain number of employees to qualify for vending services?
+                  </h3>
+                  <p className="text-charcoal/80">
+                    Most vending operators in {stateDisplayName} prefer locations with at least 25-50 employees to ensure sufficient usage. However, high-traffic locations like gyms, hotels, or retail stores with visitor traffic may qualify with fewer employees.
+                  </p>
+                </motion.div>
+
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8, delay: 0.5 }}
+                  className="bg-white p-6 rounded-lg shadow-md border border-stone/20"
+                >
+                  <h3 className="text-lg font-semibold text-navy mb-2">
+                    What happens if a vending machine breaks down or runs out of products?
+                  </h3>
+                  <p className="text-charcoal/80">
+                    {stateDisplayName} vending operators provide regular service visits to restock products and perform preventive maintenance. If a machine malfunctions, most providers offer same-day or next-day repair service at no cost to your business. You'll have a direct contact number for any issues.
+                  </p>
+                </motion.div>
+
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8, delay: 0.6 }}
+                  className="bg-white p-6 rounded-lg shadow-md border border-stone/20"
+                >
+                  <h3 className="text-lg font-semibold text-navy mb-2">
+                    Can employees request specific products or brands?
+                  </h3>
+                  <p className="text-charcoal/80">
+                    Yes! Professional vending operators in {stateDisplayName} regularly survey employees and adjust product offerings based on preferences. You can request specific brands, healthy options, dietary-specific items, or local products to keep your team satisfied.
+                  </p>
+                </motion.div>
+
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8, delay: 0.7 }}
+                  className="bg-white p-6 rounded-lg shadow-md border border-stone/20"
+                >
+                  <h3 className="text-lg font-semibold text-navy mb-2">
+                    How much space do vending machines require?
+                  </h3>
+                  <p className="text-charcoal/80">
+                    Standard vending machines typically require 3-4 feet of width and 2-3 feet of depth, plus clearance for service access. Operators can recommend compact machines for smaller spaces or combination units to maximize product variety while minimizing footprint in your {stateDisplayName} facility.
+                  </p>
+                </motion.div>
+
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8, delay: 0.8 }}
+                  className="bg-white p-6 rounded-lg shadow-md border border-stone/20"
+                >
+                  <h3 className="text-lg font-semibold text-navy mb-2">
+                    Are there any contracts or long-term commitments required?
+                  </h3>
+                  <p className="text-charcoal/80">
+                    Contract terms vary by operator, but most {stateDisplayName} vending providers offer flexible agreements. Many use month-to-month or short-term contracts (6-12 months) with easy cancellation terms. The goal is a mutually beneficial partnership, not a binding obligation.
+                  </p>
+                </motion.div>
+
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8, delay: 0.9 }}
+                  className="bg-white p-6 rounded-lg shadow-md border border-stone/20"
+                >
+                  <h3 className="text-lg font-semibold text-navy mb-2">
+                    What types of vending machines are available in {stateDisplayName}?
+                  </h3>
+                  <p className="text-charcoal/80">
+                    {stateDisplayName} businesses can choose from snack vending machines, cold beverage coolers, coffee and hot beverage machines, combination snack/drink machines, healthy vending options, fresh food machines, and micro-markets for larger facilities. All equipment is modern with digital displays and cashless payment capabilities.
+                  </p>
+                </motion.div>
+
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8, delay: 1.0 }}
+                  className="bg-white p-6 rounded-lg shadow-md border border-stone/20"
+                >
+                  <h3 className="text-lg font-semibold text-navy mb-2">
+                    Will having vending machines increase our utility costs?
+                  </h3>
+                  <p className="text-charcoal/80">
+                    Modern vending machines are energy-efficient and typically use LED lighting and energy-saving compressors. The electricity cost is minimal, usually $10-30 per month per machine. Some {stateDisplayName} operators even cover utility costs as part of their service agreement.
+                  </p>
+                </motion.div>
               </div>
             </div>
           </div>
