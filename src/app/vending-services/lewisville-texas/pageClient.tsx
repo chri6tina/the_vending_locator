@@ -8,45 +8,16 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function TexasVendingServicesPage() {
+export default function BocaRatonFloridaVendingServicesPage() {
+  const cityDisplayName = 'Lewisville';
   const stateDisplayName = 'Texas'
   const [formSubmitted, setFormSubmitted] = useState(false)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
 
-  // Texas cities with vending services
-  const cities = [
-    { name: 'Amarillo', slug: 'amarillo-texas' },
-    { name: 'Arlington', slug: 'arlington-texas' },
-    { name: 'Austin', slug: 'austin-texas' },
-    { name: 'Beaumont', slug: 'beaumont-texas' },
-    { name: 'Corpus Christi', slug: 'corpus-christi-texas' },
-    { name: 'Dallas', slug: 'dallas-texas' },
-    { name: 'El Paso', slug: 'el-paso-texas' },
-    { name: 'Fort Worth', slug: 'fort-worth-texas' },
-    { name: 'Garland', slug: 'garland-texas' },
-    { name: 'Grand Prairie', slug: 'grand-prairie-texas' },
-    { name: 'Frisco', slug: 'frisco-texas' },
-    { name: 'McKinney', slug: 'mckinney-texas' },
-    { name: 'Denton', slug: 'denton-texas' },
-    { name: 'Carrollton', slug: 'carrollton-texas' },
-    { name: 'Richardson', slug: 'richardson-texas' },
-    { name: 'Lewisville', slug: 'lewisville-texas' },
-    { name: 'Round Rock', slug: 'round-rock-texas' },
-    { name: 'League City', slug: 'league-city-texas' },
-    { name: 'Sugar Land', slug: 'sugar-land-texas' },
-    { name: 'Pearland', slug: 'pearland-texas' },
-    { name: 'Houston', slug: 'houston-texas' },
-    { name: 'Irving', slug: 'irving-texas' },
-    { name: 'Killeen', slug: 'killeen-texas' },
-    { name: 'Laredo', slug: 'laredo-texas' },
-    { name: 'Lubbock', slug: 'lubbock-texas' },
-    { name: 'McAllen', slug: 'mcallen-texas' },
-    { name: 'Mesquite', slug: 'mesquite-texas' },
-    { name: 'Plano', slug: 'plano-texas' },
-    { name: 'San Antonio', slug: 'san-antonio-texas' },
-    { name: 'Tyler', slug: 'tyler-texas' },
-    { name: 'Waco', slug: 'waco-texas' }
+  // City pages don't show sub-cities
+  const subCities: { name: string; slug: string }[] = [
+    // Cities will be added here once pages are created
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -101,7 +72,11 @@ export default function TexasVendingServicesPage() {
                 Vending Services
               </Link>
               <span>/</span>
-              <span className="text-charcoal font-medium">{stateDisplayName}</span>
+              <Link href="/vending-services/texas" className="hover:text-navy transition-colors">
+                Texas
+              </Link>
+              <span>/</span>
+              <span className="text-charcoal font-medium">{cityDisplayName}</span>
             </div>
           </div>
         </nav>
@@ -121,7 +96,7 @@ export default function TexasVendingServicesPage() {
                     className="text-4xl md:text-5xl font-playfair font-bold text-charcoal mb-6 leading-tight"
                   >
                     Vending Machine Services in{' '}
-                    <span className="text-navy">{stateDisplayName}</span>
+                    <span className="text-navy">{cityDisplayName}, Texas</span>
                   </motion.h1>
 
                   <motion.p 
@@ -130,7 +105,7 @@ export default function TexasVendingServicesPage() {
                     transition={{ duration: 0.8, delay: 0.2 }}
                     className="text-xl text-stone mb-8 leading-relaxed"
                   >
-                    Connect with professional vending machine operators serving {stateDisplayName}. Get free installation, regular stocking, and full maintenance—at no cost to your business.
+                    Connect with professional vending machine operators serving {cityDisplayName}'s manufacturing and corporate offices. Get free installation, regular stocking, and full maintenance—at no cost to your business.
                   </motion.p>
 
                   {/* Trust Signals */}
@@ -212,7 +187,7 @@ export default function TexasVendingServicesPage() {
                   ) : (
                     <>
                       <h3 className="text-2xl font-playfair font-bold text-navy mb-2 text-center">
-                        Get Vending Services in {stateDisplayName}
+                        Get Vending Services in {cityDisplayName}, TX
                       </h3>
                       <p className="text-charcoal/70 mb-6 text-center text-sm">
                         Fill out the form and we'll connect you with providers in your area.
@@ -469,7 +444,7 @@ export default function TexasVendingServicesPage() {
         </section>
 
         {/* Cities Section - Only show if cities exist */}
-        {cities.length > 0 && (
+        {subCities.length > 0 && (
           <section className="py-16 bg-warm-white border-t border-gray-200">
             <div className="container mx-auto px-4">
               <div className="max-w-6xl mx-auto">
@@ -493,7 +468,7 @@ export default function TexasVendingServicesPage() {
                 </motion.p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {cities.map((city, index) => (
+                  {subCities.map((city, index) => (
                     <motion.div
                       key={city.slug}
                       initial={{ opacity: 0, y: 20 }}

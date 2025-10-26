@@ -14,9 +14,28 @@ export default function CaliforniaVendingServicesPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
 
-  // California cities - will be populated when city pages are created
-  const cities: { name: string; slug: string }[] = [
-    // Cities will be added here once pages are created
+  // California cities with vending services
+  const cities = [
+    { name: 'Anaheim', slug: 'anaheim-california' },
+    { name: 'Bakersfield', slug: 'bakersfield-california' },
+    { name: 'Fremont', slug: 'fremont-california' },
+    { name: 'Fresno', slug: 'fresno-california' },
+    { name: 'Glendale', slug: 'glendale-california' },
+    { name: 'Huntington Beach', slug: 'huntington-beach-california' },
+    { name: 'Irvine', slug: 'irvine-california' },
+    { name: 'Long Beach', slug: 'long-beach-california' },
+    { name: 'Los Angeles', slug: 'los-angeles-california' },
+    { name: 'Modesto', slug: 'modesto-california' },
+    { name: 'Oakland', slug: 'oakland-california' },
+    { name: 'Oxnard', slug: 'oxnard-california' },
+    { name: 'Riverside', slug: 'riverside-california' },
+    { name: 'Sacramento', slug: 'sacramento-california' },
+    { name: 'San Diego', slug: 'san-diego-california' },
+    { name: 'San Bernardino', slug: 'san-bernardino-california' },
+    { name: 'San Francisco', slug: 'san-francisco-california' },
+    { name: 'San Jose', slug: 'san-jose-california' },
+    { name: 'Santa Ana', slug: 'santa-ana-california' },
+    { name: 'Stockton', slug: 'stockton-california' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

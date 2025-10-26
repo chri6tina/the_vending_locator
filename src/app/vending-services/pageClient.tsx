@@ -332,7 +332,7 @@ export default function VendingServicesDirectory() {
             <div className="grid gap-4">
               {states.map((state, index) => {
                 // Only show cities for states with vending-services city pages created
-                const statesWithServicesCities = ['florida'] // Add more as we create them
+                const statesWithServicesCities = ['florida', 'california', 'texas'] // Add more as we create them
                 const hasCities = statesWithServicesCities.includes(state.slug) && state.cities && state.cities.length > 0
                 const isExpanded = expandedStates.includes(state.slug)
                 
