@@ -42,7 +42,7 @@ export default function VendingServicesDirectory() {
               transition={{ duration: 0.8 }}
               className="text-3xl font-playfair font-bold tracking-tight text-chocolate sm:text-4xl lg:text-5xl"
             >
-              Vending Machine Services Directory
+              Get Vending Machines for Your Business
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -50,8 +50,8 @@ export default function VendingServicesDirectory() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="mt-6 text-lg sm:text-xl text-chocolate/70 leading-relaxed"
             >
-              Connect with professional vending machine service providers across all 50 states. 
-              Find qualified operators ready to install and maintain vending machines at your business location.
+              Looking to add vending machines to your break room, office, or facility? 
+              Connect with professional vending service providers in your area—at no cost to you.
             </motion.p>
           </div>
         </div>
@@ -68,7 +68,7 @@ export default function VendingServicesDirectory() {
               transition={{ duration: 0.8 }}
               className="text-2xl sm:text-3xl font-playfair font-bold text-chocolate"
             >
-              Why List Your Business With Us?
+              Benefits of Having Vending Machines
             </motion.h2>
           </div>
           
@@ -81,9 +81,9 @@ export default function VendingServicesDirectory() {
               className="bg-white p-6 rounded-lg shadow-md border border-stone/20"
             >
               <BuildingOffice2Icon className="h-10 w-10 text-coral mb-4" />
-              <h3 className="text-xl font-semibold text-navy mb-3">Get Quality Leads</h3>
+              <h3 className="text-xl font-semibold text-navy mb-3">No Upfront Costs</h3>
               <p className="text-charcoal/80">
-                Connect with business owners actively seeking vending machine services for their locations.
+                Vending operators typically install, stock, and maintain machines at no cost to your business. They handle everything.
               </p>
             </motion.div>
 
@@ -94,10 +94,10 @@ export default function VendingServicesDirectory() {
               transition={{ duration: 0.8, delay: 0.1 }}
               className="bg-white p-6 rounded-lg shadow-md border border-stone/20"
             >
-              <MapPinIcon className="h-10 w-10 text-coral mb-4" />
-              <h3 className="text-xl font-semibold text-navy mb-3">Local Visibility</h3>
+              <CheckCircleIcon className="h-10 w-10 text-coral mb-4" />
+              <h3 className="text-xl font-semibold text-navy mb-3">Employee Convenience</h3>
               <p className="text-charcoal/80">
-                Increase your visibility in specific cities and states where you operate vending services.
+                Keep your staff happy with 24/7 access to snacks, drinks, and healthy options right in your building.
               </p>
             </motion.div>
 
@@ -108,10 +108,10 @@ export default function VendingServicesDirectory() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="bg-white p-6 rounded-lg shadow-md border border-stone/20"
             >
-              <CheckCircleIcon className="h-10 w-10 text-coral mb-4" />
-              <h3 className="text-xl font-semibold text-navy mb-3">Verified Listings</h3>
+              <MapPinIcon className="h-10 w-10 text-coral mb-4" />
+              <h3 className="text-xl font-semibold text-navy mb-3">Local Providers</h3>
               <p className="text-charcoal/80">
-                Build trust with verified business profiles and customer reviews from actual partnerships.
+                Connect with vetted, local vending operators who know your area and can provide responsive service.
               </p>
             </motion.div>
           </div>
@@ -128,7 +128,7 @@ export default function VendingServicesDirectory() {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-2xl sm:text-3xl font-playfair font-bold text-chocolate mb-8 text-center"
             >
-              Browse Service Providers by State
+              Find Vending Services in Your Area
             </motion.h2>
             
             <div className="grid gap-4">
@@ -213,16 +213,16 @@ export default function VendingServicesDirectory() {
               className="mt-12 bg-navy rounded-lg p-8 text-center"
             >
               <h3 className="text-2xl font-playfair font-bold text-white mb-4">
-                Are You a Vending Service Provider?
+                Ready to Add Vending to Your Business?
               </h3>
               <p className="text-white/90 mb-6 max-w-2xl mx-auto">
-                Get listed in our directory and connect with businesses looking for vending machine services in your area.
+                Browse local vending service providers above or contact us to find the perfect vending partner for your location.
               </p>
               <Link
                 href="/contact"
                 className="inline-flex items-center px-8 py-3 bg-coral text-white font-semibold rounded-lg hover:bg-coral/90 transition-all duration-200 shadow-lg hover:shadow-xl"
               >
-                List Your Service
+                Get Started Today
               </Link>
             </motion.div>
           </div>
@@ -312,10 +312,10 @@ export default function VendingServicesDirectory() {
           <div className="space-y-6">
             <div className="bg-white p-6 rounded-lg shadow-md border border-stone/20">
               <h3 className="text-lg font-semibold text-navy mb-2">
-                What types of vending services are available?
+                What does it cost to get vending machines at my business?
               </h3>
               <p className="text-charcoal/80">
-                Our directory includes full-service vending operators who provide machine installation, stocking, maintenance, and revenue sharing arrangements. Services range from traditional snack and beverage machines to specialty vending solutions.
+                Typically nothing! Most vending operators install, stock, and maintain machines at no cost to you. They earn revenue from sales and often offer commission sharing. There are no upfront fees or equipment costs for your business.
               </p>
             </div>
 
@@ -324,16 +324,16 @@ export default function VendingServicesDirectory() {
                 How do I get vending machines installed at my location?
               </h3>
               <p className="text-charcoal/80">
-                Browse service providers in your state and city, review their profiles, and contact them directly. Most providers offer free consultations to assess your location and discuss placement options with no upfront costs.
+                Simply browse service providers in your state and city, then contact them directly. Most providers offer free site evaluations to assess your location's traffic and recommend the best vending solutions for your needs.
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md border border-stone/20">
               <h3 className="text-lg font-semibold text-navy mb-2">
-                Is there a cost for businesses to use this directory?
+                Is there a cost to use this directory?
               </h3>
               <p className="text-charcoal/80">
-                No, browsing and contacting vending service providers through our directory is completely free for business owners. Service providers typically operate on commission or revenue-sharing models.
+                Absolutely not! Browsing and contacting vending service providers is completely free for business owners and property managers. This is a free resource to help you find the right vending partner.
               </p>
             </div>
 
@@ -348,19 +348,19 @@ export default function VendingServicesDirectory() {
 
             <div className="bg-white p-6 rounded-lg shadow-md border border-stone/20">
               <h3 className="text-lg font-semibold text-navy mb-2">
-                What types of locations do vending operators serve?
+                What types of businesses can get vending machines?
               </h3>
               <p className="text-charcoal/80">
-                Vending operators serve offices, schools, hospitals, gyms, manufacturing facilities, retail locations, apartment buildings, and virtually any business with consistent foot traffic and employee or customer presence.
+                Almost any business! Offices, schools, hospitals, gyms, manufacturing facilities, warehouses, apartment buildings, hotels, and retail locations all benefit from vending services. If you have employees or regular visitors, you likely qualify.
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md border border-stone/20">
               <h3 className="text-lg font-semibold text-navy mb-2">
-                How quickly can I get vending machines installed?
+                How quickly can vending machines be installed?
               </h3>
               <p className="text-charcoal/80">
-                Installation timelines vary by provider and location assessment, but most operators can have machines installed within 1-2 weeks after an initial consultation and site evaluation.
+                Most vending operators can install machines within 1-2 weeks after an initial site evaluation. The process is quick: site visit, machine selection, installation, and stocking—all handled by the operator.
               </p>
             </div>
           </div>
