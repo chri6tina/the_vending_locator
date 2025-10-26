@@ -5,7 +5,7 @@ import Link from 'next/link'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import { motion } from 'framer-motion'
-import { MapPinIcon, ChevronDownIcon, BuildingOffice2Icon, CheckCircleIcon } from '@heroicons/react/24/outline'
+import { MapPinIcon, ChevronDownIcon, BuildingOffice2Icon, CheckCircleIcon, UserIcon, PhoneIcon, EnvelopeIcon, UsersIcon } from '@heroicons/react/24/outline'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
 // Placeholder states - will be populated with actual service locations
@@ -19,6 +19,8 @@ const states = [
 
 export default function VendingServicesDirectory() {
   const [expandedStates, setExpandedStates] = useState<string[]>([])
+  const [formSubmitted, setFormSubmitted] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false)
 
   const toggleState = (stateSlug: string) => {
     setExpandedStates(prev => 
@@ -28,31 +30,229 @@ export default function VendingServicesDirectory() {
     )
   }
 
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    setIsSubmitting(true)
+
+    const form = e.currentTarget
+    const formData = new FormData(form)
+
+    try {
+      const response = await fetch('https://formspree.io/f/xjkpkrak', {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      })
+
+      if (response.ok) {
+        setFormSubmitted(true)
+        form.reset()
+      }
+    } catch (error) {
+      console.error('Form submission error:', error)
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
+
   return (
     <main className="min-h-screen bg-cream">
       <Header />
       
-      {/* Hero Section */}
+      {/* Hero Section with Form */}
       <div className="bg-white">
-        <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
-          <div className="mx-auto max-w-4xl text-center">
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="text-3xl font-playfair font-bold tracking-tight text-chocolate sm:text-4xl lg:text-5xl"
+        <div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            
+            {/* Left Column - Text Content */}
+            <div>
+              <motion.h1
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                className="text-3xl font-playfair font-bold tracking-tight text-chocolate sm:text-4xl lg:text-5xl"
+              >
+                Get Vending Machines for Your Business
+              </motion.h1>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className="mt-6 text-lg sm:text-xl text-chocolate/70 leading-relaxed"
+              >
+                Looking to add vending machines to your break room, office, or facility? 
+                Connect with professional vending service providers in your area—at no cost to you.
+              </motion.p>
+
+              {/* Benefits List */}
+              <motion.ul
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                className="mt-8 space-y-4"
+              >
+                <li className="flex items-start gap-3">
+                  <CheckCircleIcon className="h-6 w-6 text-coral flex-shrink-0 mt-0.5" />
+                  <span className="text-charcoal/80">Free installation, stocking, and maintenance</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircleIcon className="h-6 w-6 text-coral flex-shrink-0 mt-0.5" />
+                  <span className="text-charcoal/80">No upfront costs or equipment fees</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircleIcon className="h-6 w-6 text-coral flex-shrink-0 mt-0.5" />
+                  <span className="text-charcoal/80">Local, professional operators</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircleIcon className="h-6 w-6 text-coral flex-shrink-0 mt-0.5" />
+                  <span className="text-charcoal/80">Quick installation (1-2 weeks)</span>
+                </li>
+              </motion.ul>
+            </div>
+
+            {/* Right Column - Contact Form */}
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              className="bg-warm-white p-8 rounded-2xl shadow-xl border border-stone/20"
             >
-              Get Vending Machines for Your Business
-            </motion.h1>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="mt-6 text-lg sm:text-xl text-chocolate/70 leading-relaxed"
-            >
-              Looking to add vending machines to your break room, office, or facility? 
-              Connect with professional vending service providers in your area—at no cost to you.
-            </motion.p>
+              {formSubmitted ? (
+                <div className="text-center py-8">
+                  <CheckCircleIcon className="h-16 w-16 text-green-500 mx-auto mb-4" />
+                  <h3 className="text-2xl font-playfair font-bold text-navy mb-2">
+                    Request Received!
+                  </h3>
+                  <p className="text-charcoal/80">
+                    We'll connect you with local vending providers within 24 hours.
+                  </p>
+                </div>
+              ) : (
+                <>
+                  <h3 className="text-2xl font-playfair font-bold text-navy mb-2 text-center">
+                    Get Free Vending Services
+                  </h3>
+                  <p className="text-charcoal/70 mb-6 text-center">
+                    Fill out the form below and we'll connect you with providers in your area.
+                  </p>
+
+                  <form onSubmit={handleSubmit} className="space-y-5">
+                    {/* Name Field */}
+                    <div>
+                      <label htmlFor="name" className="block text-sm font-medium text-charcoal mb-1.5">
+                        Full Name *
+                      </label>
+                      <div className="relative">
+                        <UserIcon className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-stone/50" />
+                        <input
+                          type="text"
+                          id="name"
+                          name="name"
+                          required
+                          className="w-full pl-10 pr-4 py-3 border border-stone/30 rounded-lg focus:ring-2 focus:ring-coral focus:border-coral transition-all"
+                          placeholder="John Smith"
+                        />
+                      </div>
+                    </div>
+
+                    {/* Email Field */}
+                    <div>
+                      <label htmlFor="email" className="block text-sm font-medium text-charcoal mb-1.5">
+                        Email Address *
+                      </label>
+                      <div className="relative">
+                        <EnvelopeIcon className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-stone/50" />
+                        <input
+                          type="email"
+                          id="email"
+                          name="email"
+                          required
+                          className="w-full pl-10 pr-4 py-3 border border-stone/30 rounded-lg focus:ring-2 focus:ring-coral focus:border-coral transition-all"
+                          placeholder="john@company.com"
+                        />
+                      </div>
+                    </div>
+
+                    {/* Phone Field */}
+                    <div>
+                      <label htmlFor="phone" className="block text-sm font-medium text-charcoal mb-1.5">
+                        Phone Number *
+                      </label>
+                      <div className="relative">
+                        <PhoneIcon className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-stone/50" />
+                        <input
+                          type="tel"
+                          id="phone"
+                          name="phone"
+                          required
+                          className="w-full pl-10 pr-4 py-3 border border-stone/30 rounded-lg focus:ring-2 focus:ring-coral focus:border-coral transition-all"
+                          placeholder="(555) 123-4567"
+                        />
+                      </div>
+                    </div>
+
+                    {/* Number of Employees Field */}
+                    <div>
+                      <label htmlFor="employees" className="block text-sm font-medium text-charcoal mb-1.5">
+                        Number of Employees *
+                      </label>
+                      <div className="relative">
+                        <UsersIcon className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-stone/50" />
+                        <select
+                          id="employees"
+                          name="employees"
+                          required
+                          className="w-full pl-10 pr-4 py-3 border border-stone/30 rounded-lg focus:ring-2 focus:ring-coral focus:border-coral transition-all appearance-none bg-white"
+                        >
+                          <option value="">Select range...</option>
+                          <option value="1-25">1-25 employees</option>
+                          <option value="26-50">26-50 employees</option>
+                          <option value="51-100">51-100 employees</option>
+                          <option value="101-250">101-250 employees</option>
+                          <option value="251-500">251-500 employees</option>
+                          <option value="500+">500+ employees</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    {/* Zip Code Field */}
+                    <div>
+                      <label htmlFor="zipcode" className="block text-sm font-medium text-charcoal mb-1.5">
+                        Zip Code *
+                      </label>
+                      <div className="relative">
+                        <MapPinIcon className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-stone/50" />
+                        <input
+                          type="text"
+                          id="zipcode"
+                          name="zipcode"
+                          required
+                          pattern="[0-9]{5}"
+                          maxLength={5}
+                          className="w-full pl-10 pr-4 py-3 border border-stone/30 rounded-lg focus:ring-2 focus:ring-coral focus:border-coral transition-all"
+                          placeholder="12345"
+                        />
+                      </div>
+                    </div>
+
+                    {/* Submit Button */}
+                    <button
+                      type="submit"
+                      disabled={isSubmitting}
+                      className="w-full bg-navy hover:bg-navy/90 text-white py-3.5 px-6 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed"
+                    >
+                      {isSubmitting ? 'Submitting...' : 'Get Free Quote'}
+                    </button>
+
+                    <p className="text-xs text-charcoal/60 text-center mt-3">
+                      By submitting, you agree to be contacted by vending service providers in your area.
+                    </p>
+                  </form>
+                </>
+              )}
+            </motion.div>
           </div>
         </div>
       </div>
