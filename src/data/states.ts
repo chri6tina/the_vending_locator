@@ -636,6 +636,14 @@ const states: State[] = [
     name: 'Washington DC',
     slug: 'washington-dc',
     cities: [
+      { name: 'Adams Morgan', slug: 'adams-morgan-washington-dc' },
+      { name: 'Capitol Hill', slug: 'capitol-hill-washington-dc' },
+      { name: 'Downtown DC', slug: 'downtown-washington-dc' },
+      { name: 'Dupont Circle', slug: 'dupont-circle-washington-dc' },
+      { name: 'Georgetown', slug: 'georgetown-washington-dc' },
+      { name: 'Logan Circle', slug: 'logan-circle-washington-dc' },
+      { name: 'Navy Yard', slug: 'navy-yard-washington-dc' },
+      { name: 'Shaw', slug: 'shaw-washington-dc' },
       { name: 'Washington', slug: 'washington-washington-dc' }
     ]
   },
