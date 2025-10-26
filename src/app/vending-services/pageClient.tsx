@@ -21,6 +21,7 @@ export default function VendingServicesDirectory() {
   const [expandedStates, setExpandedStates] = useState<string[]>([])
   const [formSubmitted, setFormSubmitted] = useState(false)
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const [showSuccessModal, setShowSuccessModal] = useState(false)
 
   const toggleState = (stateSlug: string) => {
     setExpandedStates(prev => 
@@ -48,6 +49,7 @@ export default function VendingServicesDirectory() {
 
       if (response.ok) {
         setFormSubmitted(true)
+        setShowSuccessModal(true)
         form.reset()
       }
     } catch (error) {
@@ -55,6 +57,10 @@ export default function VendingServicesDirectory() {
     } finally {
       setIsSubmitting(false)
     }
+  }
+
+  const closeModal = () => {
+    setShowSuccessModal(false)
   }
 
   return (
@@ -243,7 +249,7 @@ export default function VendingServicesDirectory() {
                       disabled={isSubmitting}
                       className="w-full bg-navy hover:bg-navy/90 text-white py-3.5 px-6 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed"
                     >
-                      {isSubmitting ? 'Submitting...' : 'Get Free Quote'}
+                      {isSubmitting ? 'Submitting...' : 'Get Free Services'}
                     </button>
 
                     <p className="text-xs text-charcoal/60 text-center mt-3">
@@ -569,6 +575,54 @@ export default function VendingServicesDirectory() {
 
       <Footer />
       <ZipCodeModalWrapper />
+
+      {/* Success Modal */}
+      {showSuccessModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm px-4">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.95 }}
+            transition={{ duration: 0.3 }}
+            className="bg-white rounded-2xl shadow-2xl max-w-md w-full p-8 relative"
+          >
+            <button
+              onClick={closeModal}
+              className="absolute top-4 right-4 text-stone hover:text-charcoal transition-colors"
+              aria-label="Close"
+            >
+              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+
+            <div className="text-center">
+              <div className="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-green-100 mb-4">
+                <CheckCircleIcon className="h-10 w-10 text-green-600" />
+              </div>
+              
+              <h3 className="text-2xl font-playfair font-bold text-navy mb-3">
+                Thank You!
+              </h3>
+              
+              <p className="text-lg text-charcoal/80 mb-2">
+                Your request has been received.
+              </p>
+              
+              <p className="text-charcoal/70 mb-6">
+                We'll be reaching out to you within 24 hours to connect you with the best vending service providers in your area.
+              </p>
+
+              <button
+                onClick={closeModal}
+                className="w-full bg-navy hover:bg-navy/90 text-white py-3 px-6 rounded-lg font-semibold transition-all duration-200"
+              >
+                Got It
+              </button>
+            </div>
+          </motion.div>
+        </div>
+      )}
     </main>
   )
 }
