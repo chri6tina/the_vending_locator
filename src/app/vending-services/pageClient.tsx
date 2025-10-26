@@ -7,15 +7,7 @@ import Footer from '@/components/Footer'
 import { motion } from 'framer-motion'
 import { MapPinIcon, ChevronDownIcon, BuildingOffice2Icon, CheckCircleIcon, UserIcon, PhoneIcon, EnvelopeIcon, UsersIcon } from '@heroicons/react/24/outline'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
-
-// Placeholder states - will be populated with actual service locations
-const states = [
-  {
-    name: 'Coming Soon',
-    slug: 'coming-soon',
-    cities: []
-  }
-]
+import states from '@/data/states'
 
 export default function VendingServicesDirectory() {
   const [expandedStates, setExpandedStates] = useState<string[]>([])
@@ -346,66 +338,21 @@ export default function VendingServicesDirectory() {
                   transition={{ duration: 0.5, delay: 0.5 + index * 0.05 }}
                   className="bg-white rounded-lg shadow-md overflow-hidden border border-stone/20"
                 >
-                  {state.cities.length > 0 ? (
-                    <>
-                      <button
-                        onClick={() => toggleState(state.slug)}
-                        className="w-full px-6 py-4 text-left hover:bg-gray-50 transition-colors flex items-center justify-between"
-                      >
-                        <div className="flex items-center gap-3">
-                          <MapPinIcon className="h-5 w-5 text-coral flex-shrink-0" />
-                          <div>
-                            <h3 className="font-semibold text-navy">{state.name}</h3>
-                            <p className="text-sm text-stone mt-0.5">
-                              {state.cities.length === 1 
-                                ? '1 City Available' 
-                                : `${state.cities.length} Cities Available`}
-                            </p>
-                          </div>
-                        </div>
-                        <div className="flex items-center gap-3">
-                          <Link
-                            href={`/vending-services/${state.slug}`}
-                            className="px-4 py-2 bg-navy text-white rounded-lg hover:bg-navy/90 transition-colors text-sm font-medium"
-                            onClick={(e) => e.stopPropagation()}
-                          >
-                            View State
-                          </Link>
-                          <ChevronDownIcon 
-                            className={`h-5 w-5 text-stone transition-transform ${
-                              expandedStates.includes(state.slug) ? 'rotate-180' : ''
-                            }`}
-                          />
-                        </div>
-                      </button>
-                      
-                      {expandedStates.includes(state.slug) && (
-                        <div className="px-6 py-4 bg-gray-50 border-t border-gray-200">
-                          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
-                            {state.cities.map((city) => (
-                              <Link
-                                key={city.slug}
-                                href={`/vending-services/${city.slug}`}
-                                className="text-chocolate hover:text-navy transition-colors text-sm py-1 hover:underline"
-                              >
-                                {city.name}
-                              </Link>
-                            ))}
-                          </div>
-                        </div>
-                      )}
-                    </>
-                  ) : (
-                    <div className="px-6 py-4">
-                      <div className="flex items-center gap-3">
-                        <MapPinIcon className="h-5 w-5 text-stone/50 flex-shrink-0" />
-                        <div>
-                          <h3 className="font-semibold text-stone">{state.name}</h3>
-                          <p className="text-sm text-stone/70 mt-0.5">Coming Soon</p>
-                        </div>
+                  <div className="px-6 py-4 flex items-center justify-between hover:bg-gray-50 transition-colors">
+                    <div className="flex items-center gap-3">
+                      <MapPinIcon className="h-5 w-5 text-coral flex-shrink-0" />
+                      <div>
+                        <h3 className="font-semibold text-navy">{state.name}</h3>
+                        <p className="text-sm text-stone mt-0.5">Statewide Service Coverage</p>
                       </div>
                     </div>
-                  )}
+                    <Link
+                      href={`/vending-services/${state.slug}`}
+                      className="px-4 py-2 bg-navy text-white rounded-lg hover:bg-navy/90 transition-colors text-sm font-medium"
+                    >
+                      View State
+                    </Link>
+                  </div>
                 </motion.div>
               ))}
             </div>
