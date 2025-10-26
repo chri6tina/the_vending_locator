@@ -181,7 +181,7 @@ export default function SarasotaFloridaVendingServicesPage() {
                         Request Received!
                       </h3>
                       <p className="text-charcoal/80">
-                        We'll connect you with local {stateDisplayName} vending providers within 24 hours.
+                        We'll connect you with local {cityDisplayName} vending providers within 24 hours.
                       </p>
                     </div>
                   ) : (
@@ -302,7 +302,7 @@ export default function SarasotaFloridaVendingServicesPage() {
                         </button>
 
                         <p className="text-xs text-charcoal/60 text-center mt-3">
-                          By submitting, you agree to be contacted by vending service providers in {stateDisplayName}.
+                          By submitting, you agree to be contacted by vending service providers in {cityDisplayName}.
                         </p>
                       </form>
                     </>
@@ -328,7 +328,7 @@ export default function SarasotaFloridaVendingServicesPage() {
                   How We Help {stateDisplayName} Businesses Find the Best Vending Partners
                 </h2>
                 <p className="text-lg text-chocolate/70 max-w-3xl mx-auto">
-                  Our proven process connects you with qualified, professional vending operators in {stateDisplayName}
+                  Our proven process connects you with qualified, professional vending operators in {cityDisplayName}
                 </p>
               </motion.div>
 
@@ -368,7 +368,7 @@ export default function SarasotaFloridaVendingServicesPage() {
                     </div>
                     <h3 className="text-lg font-semibold text-navy mb-3">We Match You</h3>
                     <p className="text-charcoal/80 text-sm">
-                      We connect you with 2-3 pre-screened vending operators who serve your area in {stateDisplayName}.
+                      We connect you with 2-3 pre-screened vending operators who serve your area in {cityDisplayName}.
                     </p>
                   </div>
                   {/* Connector Line */}
@@ -455,7 +455,7 @@ export default function SarasotaFloridaVendingServicesPage() {
                   transition={{ duration: 0.8 }}
                   className="text-3xl font-playfair font-bold text-chocolate mb-4 text-center"
                 >
-                  Vending Services by City in {stateDisplayName}
+                  Vending Services by City in {cityDisplayName}
                 </motion.h2>
                 <motion.p
                   initial={{ opacity: 0, y: 20 }}
@@ -464,7 +464,7 @@ export default function SarasotaFloridaVendingServicesPage() {
                   transition={{ duration: 0.8, delay: 0.2 }}
                   className="text-lg text-chocolate/70 mb-12 text-center max-w-3xl mx-auto"
                 >
-                  Browse professional vending service providers by city across {stateDisplayName}
+                  Browse professional vending service providers by city in {cityDisplayName}
                 </motion.p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -513,7 +513,7 @@ export default function SarasotaFloridaVendingServicesPage() {
                 className="text-center mb-12"
               >
                 <h2 className="text-3xl font-playfair font-bold text-chocolate mb-4">
-                  What to Expect When Getting Vending Services in {stateDisplayName}
+                  What to Expect When Getting Vending Services in {cityDisplayName}
                 </h2>
                 <p className="text-lg text-chocolate/70 max-w-3xl mx-auto">
                   Understanding the complete vending machine partnership process for {stateDisplayName} businesses
@@ -599,7 +599,7 @@ export default function SarasotaFloridaVendingServicesPage() {
                     <div>
                       <h3 className="text-xl font-semibold text-navy mb-2">Reliable Ongoing Service</h3>
                       <p className="text-charcoal/80 text-sm leading-relaxed">
-                        Regular restocking visits ensure machines stay full and products stay fresh. Maintenance, repairs, and product rotation are included. Most {stateDisplayName} operators provide 24/7 support for any issues.
+                        Regular restocking visits ensure machines stay full and products stay fresh. Maintenance, repairs, and product rotation are included. Most {cityDisplayName} operators provide 24/7 support for any issues.
                       </p>
                     </div>
                   </div>
@@ -662,7 +662,7 @@ export default function SarasotaFloridaVendingServicesPage() {
                 transition={{ duration: 0.8 }}
                 className="text-3xl font-playfair font-bold text-chocolate mb-12 text-center"
               >
-                Why Businesses in {stateDisplayName} Choose Our Vending Partners
+                Why Businesses in {cityDisplayName} Choose Our Vending Partners
               </motion.h2>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -729,7 +729,7 @@ export default function SarasotaFloridaVendingServicesPage() {
                 transition={{ duration: 0.8 }}
                 className="text-3xl font-playfair font-bold text-chocolate mb-8 text-center"
               >
-                Vending Services in {stateDisplayName} - FAQ
+                Vending Services in {cityDisplayName} - FAQ
               </motion.h2>
 
               <div className="space-y-6">
@@ -741,10 +741,10 @@ export default function SarasotaFloridaVendingServicesPage() {
                   className="bg-white p-6 rounded-lg shadow-md border border-stone/20"
                 >
                   <h3 className="text-lg font-semibold text-navy mb-2">
-                    How much does it cost to get vending machines in {stateDisplayName}?
+                    How much does it cost to get vending machines in {cityDisplayName}?
                   </h3>
                   <p className="text-charcoal/80">
-                    Nothing! Vending operators in {stateDisplayName} typically provide free installation, equipment, stocking, and maintenance. They earn revenue from machine sales, so there's no cost to your business.
+                    Nothing! Vending operators in {cityDisplayName} typically provide free installation, equipment, stocking, and maintenance. They earn revenue from machine sales, so there's no cost to your business.
                   </p>
                 </motion.div>
 
@@ -756,10 +756,10 @@ export default function SarasotaFloridaVendingServicesPage() {
                   className="bg-white p-6 rounded-lg shadow-md border border-stone/20"
                 >
                   <h3 className="text-lg font-semibold text-navy mb-2">
-                    What types of businesses qualify for vending services in {stateDisplayName}?
+                    What types of businesses qualify for vending services in {cityDisplayName}?
                   </h3>
                   <p className="text-charcoal/80">
-                    Most businesses with 25+ employees qualify, including offices, warehouses, manufacturing facilities, schools, hospitals, gyms, and apartment buildings across {stateDisplayName}.
+                    Most businesses with 25+ employees qualify, including offices, warehouses, manufacturing facilities, schools, hospitals, gyms, and apartment buildings in {cityDisplayName}.
                   </p>
                 </motion.div>
 
@@ -771,10 +771,10 @@ export default function SarasotaFloridaVendingServicesPage() {
                   className="bg-white p-6 rounded-lg shadow-md border border-stone/20"
                 >
                   <h3 className="text-lg font-semibold text-navy mb-2">
-                    How quickly can vending machines be installed in {stateDisplayName}?
+                    How quickly can vending machines be installed in {cityDisplayName}?
                   </h3>
                   <p className="text-charcoal/80">
-                    Most {stateDisplayName} vending operators can complete installation within 1-2 weeks after an initial site evaluation. The process includes a free consultation, machine placement, installation, and initial stocking.
+                    Most {cityDisplayName} vending operators can complete installation within 1-2 weeks after an initial site evaluation. The process includes a free consultation, machine placement, installation, and initial stocking.
                   </p>
                 </motion.div>
 
@@ -786,10 +786,10 @@ export default function SarasotaFloridaVendingServicesPage() {
                   className="bg-white p-6 rounded-lg shadow-md border border-stone/20"
                 >
                   <h3 className="text-lg font-semibold text-navy mb-2">
-                    What products can vending machines in {stateDisplayName} offer?
+                    What products can vending machines in {cityDisplayName} offer?
                   </h3>
                   <p className="text-charcoal/80">
-                    {stateDisplayName} vending operators offer snacks, beverages (hot and cold), healthy options, fresh food, coffee, and specialty items. Product selection is customized based on your employee preferences and facility needs.
+                    {cityDisplayName} vending operators offer snacks, beverages (hot and cold), healthy options, fresh food, coffee, and specialty items. Product selection is customized based on your employee preferences and facility needs.
                   </p>
                 </motion.div>
 
@@ -804,7 +804,7 @@ export default function SarasotaFloridaVendingServicesPage() {
                     Do I need a certain number of employees to qualify for vending services?
                   </h3>
                   <p className="text-charcoal/80">
-                    Most vending operators in {stateDisplayName} prefer locations with at least 25-50 employees to ensure sufficient usage. However, high-traffic locations like gyms, hotels, or retail stores with visitor traffic may qualify with fewer employees.
+                    Most vending operators in {cityDisplayName} prefer locations with at least 25-50 employees to ensure sufficient usage. However, high-traffic locations like gyms, hotels, or retail stores with visitor traffic may qualify with fewer employees.
                   </p>
                 </motion.div>
 
@@ -819,7 +819,7 @@ export default function SarasotaFloridaVendingServicesPage() {
                     What happens if a vending machine breaks down or runs out of products?
                   </h3>
                   <p className="text-charcoal/80">
-                    {stateDisplayName} vending operators provide regular service visits to restock products and perform preventive maintenance. If a machine malfunctions, most providers offer same-day or next-day repair service at no cost to your business. You'll have a direct contact number for any issues.
+                    {cityDisplayName} vending operators provide regular service visits to restock products and perform preventive maintenance. If a machine malfunctions, most providers offer same-day or next-day repair service at no cost to your business. You'll have a direct contact number for any issues.
                   </p>
                 </motion.div>
 
@@ -834,7 +834,7 @@ export default function SarasotaFloridaVendingServicesPage() {
                     Can employees request specific products or brands?
                   </h3>
                   <p className="text-charcoal/80">
-                    Yes! Professional vending operators in {stateDisplayName} regularly survey employees and adjust product offerings based on preferences. You can request specific brands, healthy options, dietary-specific items, or local products to keep your team satisfied.
+                    Yes! Professional vending operators in {cityDisplayName} regularly survey employees and adjust product offerings based on preferences. You can request specific brands, healthy options, dietary-specific items, or local products to keep your team satisfied.
                   </p>
                 </motion.div>
 
@@ -864,7 +864,7 @@ export default function SarasotaFloridaVendingServicesPage() {
                     Are there any contracts or long-term commitments required?
                   </h3>
                   <p className="text-charcoal/80">
-                    Contract terms vary by operator, but most {stateDisplayName} vending providers offer flexible agreements. Many use month-to-month or short-term contracts (6-12 months) with easy cancellation terms. The goal is a mutually beneficial partnership, not a binding obligation.
+                    Contract terms vary by operator, but most {cityDisplayName} vending providers offer flexible agreements. Many use month-to-month or short-term contracts (6-12 months) with easy cancellation terms. The goal is a mutually beneficial partnership, not a binding obligation.
                   </p>
                 </motion.div>
 
@@ -876,7 +876,7 @@ export default function SarasotaFloridaVendingServicesPage() {
                   className="bg-white p-6 rounded-lg shadow-md border border-stone/20"
                 >
                   <h3 className="text-lg font-semibold text-navy mb-2">
-                    What types of vending machines are available in {stateDisplayName}?
+                    What types of vending machines are available in {cityDisplayName}?
                   </h3>
                   <p className="text-charcoal/80">
                     {stateDisplayName} businesses can choose from snack vending machines, cold beverage coolers, coffee and hot beverage machines, combination snack/drink machines, healthy vending options, fresh food machines, and micro-markets for larger facilities. All equipment is modern with digital displays and cashless payment capabilities.
