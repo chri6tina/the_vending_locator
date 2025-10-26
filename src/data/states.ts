@@ -273,8 +273,16 @@ const states: State[] = [
     name: 'Kentucky',
     slug: 'kentucky',
     cities: [
+      { name: 'Bowling Green', slug: 'bowling-green-kentucky' },
+      { name: 'Covington', slug: 'covington-kentucky' },
+      { name: 'Florence', slug: 'florence-kentucky' },
+      { name: 'Frankfort', slug: 'frankfort-kentucky' },
+      { name: 'Georgetown', slug: 'georgetown-kentucky' },
+      { name: 'Hopkinsville', slug: 'hopkinsville-kentucky' },
       { name: 'Lexington', slug: 'lexington-kentucky' },
-      { name: 'Louisville', slug: 'louisville-kentucky' }
+      { name: 'Louisville', slug: 'louisville-kentucky' },
+      { name: 'Owensboro', slug: 'owensboro-kentucky' },
+      { name: 'Richmond', slug: 'richmond-kentucky' }
     ]
   },
   {
