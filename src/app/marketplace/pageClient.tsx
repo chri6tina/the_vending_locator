@@ -18,16 +18,8 @@ import {
 interface HotLead {
   id: string
   title: string
-  businessName: string
-  location: string
-  city: string
-  state: string
-  zipCode: string
-  contactName: string
-  contactPhone: string
-  contactEmail: string
-  employeeCount: string
   businessType: string
+  employeeCount: string
   description: string
   price: number
   status: 'available' | 'sold' | 'pending'
@@ -40,10 +32,6 @@ export default function MarketplacePage() {
   const [loading, setLoading] = useState(true)
   const [selectedCategory, setSelectedCategory] = useState('all')
   const [priceRange, setPriceRange] = useState('all')
-  const [selectedState, setSelectedState] = useState('all')
-  const [selectedCity, setSelectedCity] = useState('all')
-  const [zipCode, setZipCode] = useState('')
-  const [radius, setRadius] = useState('all')
 
   // Fetch leads from API
   useEffect(() => {
@@ -84,26 +72,6 @@ export default function MarketplacePage() {
     { value: '500+', label: '$500+' }
   ]
 
-  const radiusOptions = [
-    { value: 'all', label: 'Any Distance' },
-    { value: '25', label: 'Within 25 miles' },
-    { value: '50', label: 'Within 50 miles' },
-    { value: '100', label: 'Within 100 miles' },
-    { value: '200', label: 'Within 200 miles' }
-  ]
-
-  // Get unique states and cities from leads
-  const availableStates = Array.from(new Set(leads.map(lead => lead.state))).sort()
-  const availableCities = selectedState === 'all' 
-    ? Array.from(new Set(leads.map(lead => lead.city))).sort()
-    : Array.from(new Set(leads.filter(lead => lead.state === selectedState).map(lead => lead.city))).sort()
-
-  // Reset city when state changes
-  useEffect(() => {
-    if (selectedState !== 'all') {
-      setSelectedCity('all')
-    }
-  }, [selectedState])
 
   const filteredLeads = leads.filter(lead => {
     // Category filter
@@ -117,15 +85,6 @@ export default function MarketplacePage() {
       if (priceRange === '300-499' && (price < 300 || price > 499)) return false
       if (priceRange === '500+' && price < 500) return false
     }
-
-    // State filter
-    if (selectedState !== 'all' && lead.state !== selectedState) return false
-
-    // City filter
-    if (selectedCity !== 'all' && lead.city !== selectedCity) return false
-
-    // Zip code filter (exact match or starts with)
-    if (zipCode && !lead.zipCode.startsWith(zipCode)) return false
 
     // Only show available leads
     return lead.status === 'available'
@@ -189,53 +148,7 @@ export default function MarketplacePage() {
       {/* Filters */}
       <div className="bg-warm-white border-b border-stone">
         <div className="mx-auto max-w-7xl px-6 py-6 lg:px-8">
-          <div className="flex flex-wrap items-end gap-4">
-            {/* Location Filters */}
-            <div className="flex flex-wrap items-end gap-3 bg-white p-4 rounded-lg border border-gray-200">
-              <div className="text-sm font-semibold text-charcoal mb-2 w-full">📍 Location Filters</div>
-              
-              <div>
-                <label className="block text-xs font-medium text-stone mb-1">State</label>
-                <select
-                  value={selectedState}
-                  onChange={(e) => setSelectedState(e.target.value)}
-                  className="px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
-                >
-                  <option value="all">All States</option>
-                  {availableStates.map(state => (
-                    <option key={state} value={state}>{state}</option>
-                  ))}
-                </select>
-              </div>
-
-              <div>
-                <label className="block text-xs font-medium text-stone mb-1">City</label>
-                <select
-                  value={selectedCity}
-                  onChange={(e) => setSelectedCity(e.target.value)}
-                  className="px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
-                  disabled={selectedState === 'all'}
-                >
-                  <option value="all">All Cities</option>
-                  {availableCities.map(city => (
-                    <option key={city} value={city}>{city}</option>
-                  ))}
-                </select>
-              </div>
-
-              <div>
-                <label className="block text-xs font-medium text-stone mb-1">Zip Code</label>
-                <input
-                  type="text"
-                  placeholder="Enter zip..."
-                  value={zipCode}
-                  onChange={(e) => setZipCode(e.target.value)}
-                  className="px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent w-24"
-                />
-              </div>
-            </div>
-
-            {/* Business & Price Filters */}
+          <div className="flex flex-wrap items-end gap-6">
             <div>
               <label className="block text-sm font-medium text-charcoal mb-2">Business Type</label>
               <select
@@ -268,10 +181,6 @@ export default function MarketplacePage() {
                 onClick={() => {
                   setSelectedCategory('all')
                   setPriceRange('all')
-                  setSelectedState('all')
-                  setSelectedCity('all')
-                  setZipCode('')
-                  setRadius('all')
                 }}
                 className="px-4 py-2 text-sm text-stone hover:text-charcoal border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors"
               >
@@ -281,39 +190,6 @@ export default function MarketplacePage() {
             
             {/* Active Filters */}
             <div className="flex flex-wrap gap-2">
-              {selectedState !== 'all' && (
-                <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-navy/10 text-navy">
-                  State: {selectedState}
-                  <button 
-                    onClick={() => setSelectedState('all')}
-                    className="ml-1 hover:text-navy/70"
-                  >
-                    ×
-                  </button>
-                </span>
-              )}
-              {selectedCity !== 'all' && (
-                <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-navy/10 text-navy">
-                  City: {selectedCity}
-                  <button 
-                    onClick={() => setSelectedCity('all')}
-                    className="ml-1 hover:text-navy/70"
-                  >
-                    ×
-                  </button>
-                </span>
-              )}
-              {zipCode && (
-                <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-navy/10 text-navy">
-                  Zip: {zipCode}
-                  <button 
-                    onClick={() => setZipCode('')}
-                    className="ml-1 hover:text-navy/70"
-                  >
-                    ×
-                  </button>
-                </span>
-              )}
               {selectedCategory !== 'all' && (
                 <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-bronze/10 text-bronze">
                   {categories.find(c => c.value === selectedCategory)?.label}
@@ -393,19 +269,12 @@ export default function MarketplacePage() {
                 <div className="text-6xl mb-4">🎯</div>
                 <h3 className="text-lg font-semibold text-charcoal mb-2">No leads match your filters</h3>
                 <p className="text-stone mb-4">
-                  {selectedState !== 'all' || selectedCity !== 'all' || zipCode 
-                    ? 'Try expanding your location search or adjusting other filters'
-                    : 'Try adjusting your business type or price range'
-                  }
+                  Try adjusting your business type or price range to see more results.
                 </p>
                 <button
                   onClick={() => {
                     setSelectedCategory('all')
                     setPriceRange('all')
-                    setSelectedState('all')
-                    setSelectedCity('all')
-                    setZipCode('')
-                    setRadius('all')
                   }}
                   className="px-4 py-2 bg-navy text-white rounded-lg hover:bg-navy/90 transition-colors"
                 >
@@ -437,11 +306,7 @@ export default function MarketplacePage() {
                   <div className="space-y-3 mb-6">
                     <div className="flex items-center gap-2 text-sm text-stone">
                       <BuildingOfficeIcon className="w-4 h-4" />
-                      {lead.businessName}
-                    </div>
-                    <div className="flex items-center gap-2 text-sm text-stone">
-                      <MapPinIcon className="w-4 h-4" />
-                      {lead.city}, {lead.state}
+                      {lead.businessType}
                     </div>
                     <div className="flex items-center gap-2 text-sm text-stone">
                       <UsersIcon className="w-4 h-4" />

@@ -2,21 +2,13 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { PlusIcon, EyeIcon, CurrencyDollarIcon, MapPinIcon, BuildingOfficeIcon, PencilIcon, TrashIcon } from '@heroicons/react/24/outline'
+import { PlusIcon, EyeIcon, CurrencyDollarIcon, MapPinIcon, BuildingOfficeIcon, PencilIcon, TrashIcon, UsersIcon } from '@heroicons/react/24/outline'
 
 interface HotLead {
   id: string
   title: string
-  businessName: string
-  location: string
-  city: string
-  state: string
-  zipCode: string
-  contactName: string
-  contactPhone: string
-  contactEmail: string
-  employeeCount: string
   businessType: string
+  employeeCount: string
   description: string
   price: number
   status: 'available' | 'sold' | 'pending'
@@ -61,16 +53,8 @@ export default function HotLeadsAdminPage() {
     
     const leadData = {
       title: formData.get('title') as string,
-      businessName: formData.get('businessName') as string,
-      location: formData.get('location') as string,
-      city: formData.get('city') as string,
-      state: formData.get('state') as string,
-      zipCode: formData.get('zipCode') as string,
-      contactName: formData.get('contactName') as string,
-      contactPhone: formData.get('contactPhone') as string,
-      contactEmail: formData.get('contactEmail') as string,
-      employeeCount: formData.get('employeeCount') as string,
       businessType: formData.get('businessType') as string,
+      employeeCount: formData.get('employeeCount') as string,
       description: formData.get('description') as string,
       price: parseFloat(formData.get('price') as string)
     }
@@ -116,16 +100,8 @@ export default function HotLeadsAdminPage() {
     const leadData = {
       id: editingLead.id,
       title: formData.get('title') as string,
-      businessName: formData.get('businessName') as string,
-      location: formData.get('location') as string,
-      city: formData.get('city') as string,
-      state: formData.get('state') as string,
-      zipCode: formData.get('zipCode') as string,
-      contactName: formData.get('contactName') as string,
-      contactPhone: formData.get('contactPhone') as string,
-      contactEmail: formData.get('contactEmail') as string,
-      employeeCount: formData.get('employeeCount') as string,
       businessType: formData.get('businessType') as string,
+      employeeCount: formData.get('employeeCount') as string,
       description: formData.get('description') as string,
       price: parseFloat(formData.get('price') as string)
     }
@@ -260,20 +236,20 @@ export default function HotLeadsAdminPage() {
               </div>
               
               <form onSubmit={handleCreateLead} className="p-6 space-y-6">
+                <div>
+                  <label className="block text-sm font-medium text-charcoal mb-2">
+                    Lead Title *
+                  </label>
+                  <input
+                    type="text"
+                    name="title"
+                    required
+                    placeholder="e.g., Premium Office Complex - 500+ Employees"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
+                  />
+                </div>
+
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <label className="block text-sm font-medium text-charcoal mb-2">
-                      Lead Title *
-                    </label>
-                    <input
-                      type="text"
-                      name="title"
-                      required
-                      placeholder="e.g., Premium Office Complex - 500+ Employees"
-                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
-                    />
-                  </div>
-                  
                   <div>
                     <label className="block text-sm font-medium text-charcoal mb-2">
                       Price *
@@ -288,154 +264,37 @@ export default function HotLeadsAdminPage() {
                       className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
                     />
                   </div>
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <label className="block text-sm font-medium text-charcoal mb-2">
-                      Business Name *
-                    </label>
-                    <input
-                      type="text"
-                      name="businessName"
-                      required
-                      placeholder="ABC Corporation"
-                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
-                    />
-                  </div>
                   
                   <div>
                     <label className="block text-sm font-medium text-charcoal mb-2">
-                      Business Type *
+                      Employee Count *
                     </label>
                     <select
-                      name="businessType"
+                      name="employeeCount"
                       required
                       className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
                     >
-                      <option value="">Select type...</option>
-                      <option value="office">Office Building</option>
-                      <option value="manufacturing">Manufacturing</option>
-                      <option value="retail">Retail Center</option>
-                      <option value="healthcare">Healthcare Facility</option>
-                      <option value="education">Educational Institution</option>
-                      <option value="warehouse">Warehouse/Distribution</option>
-                      <option value="other">Other</option>
+                      <option value="">Select range...</option>
+                      <option value="50-100">50-100 employees</option>
+                      <option value="100-250">100-250 employees</option>
+                      <option value="250-500">250-500 employees</option>
+                      <option value="500-1000">500-1000 employees</option>
+                      <option value="1000+">1000+ employees</option>
                     </select>
                   </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                  <div>
-                    <label className="block text-sm font-medium text-charcoal mb-2">
-                      City *
-                    </label>
-                    <input
-                      type="text"
-                      name="city"
-                      required
-                      placeholder="Austin"
-                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
-                    />
-                  </div>
-                  
-                  <div>
-                    <label className="block text-sm font-medium text-charcoal mb-2">
-                      State *
-                    </label>
-                    <input
-                      type="text"
-                      name="state"
-                      required
-                      placeholder="TX"
-                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
-                    />
-                  </div>
-                  
-                  <div>
-                    <label className="block text-sm font-medium text-charcoal mb-2">
-                      Zip Code *
-                    </label>
-                    <input
-                      type="text"
-                      name="zipCode"
-                      required
-                      placeholder="78701"
-                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
-                    />
-                  </div>
-                </div>
-
                 <div>
                   <label className="block text-sm font-medium text-charcoal mb-2">
-                    Full Address *
+                    Business Type *
                   </label>
                   <input
                     type="text"
-                    name="location"
+                    name="businessType"
                     required
-                    placeholder="123 Business Blvd, Austin, TX 78701"
+                    placeholder="e.g., Office Building, Manufacturing, Healthcare, etc."
                     className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
                   />
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                  <div>
-                    <label className="block text-sm font-medium text-charcoal mb-2">
-                      Contact Name *
-                    </label>
-                    <input
-                      type="text"
-                      name="contactName"
-                      required
-                      placeholder="John Smith"
-                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
-                    />
-                  </div>
-                  
-                  <div>
-                    <label className="block text-sm font-medium text-charcoal mb-2">
-                      Phone *
-                    </label>
-                    <input
-                      type="tel"
-                      name="contactPhone"
-                      required
-                      placeholder="(555) 123-4567"
-                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
-                    />
-                  </div>
-                  
-                  <div>
-                    <label className="block text-sm font-medium text-charcoal mb-2">
-                      Email *
-                    </label>
-                    <input
-                      type="email"
-                      name="contactEmail"
-                      required
-                      placeholder="john@company.com"
-                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-charcoal mb-2">
-                    Employee Count *
-                  </label>
-                  <select
-                    name="employeeCount"
-                    required
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
-                  >
-                    <option value="">Select range...</option>
-                    <option value="50-100">50-100 employees</option>
-                    <option value="100-250">100-250 employees</option>
-                    <option value="250-500">250-500 employees</option>
-                    <option value="500-1000">500-1000 employees</option>
-                    <option value="1000+">1000+ employees</option>
-                  </select>
                 </div>
 
                 <div>
@@ -482,21 +341,21 @@ export default function HotLeadsAdminPage() {
               </div>
               
               <form onSubmit={handleEditLead} className="p-6 space-y-6">
+                <div>
+                  <label className="block text-sm font-medium text-charcoal mb-2">
+                    Lead Title *
+                  </label>
+                  <input
+                    type="text"
+                    name="title"
+                    required
+                    defaultValue={editingLead.title}
+                    placeholder="e.g., Premium Office Complex - 500+ Employees"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
+                  />
+                </div>
+
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <label className="block text-sm font-medium text-charcoal mb-2">
-                      Lead Title *
-                    </label>
-                    <input
-                      type="text"
-                      name="title"
-                      required
-                      defaultValue={editingLead.title}
-                      placeholder="e.g., Premium Office Complex - 500+ Employees"
-                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
-                    />
-                  </div>
-                  
                   <div>
                     <label className="block text-sm font-medium text-charcoal mb-2">
                       Price *
@@ -512,164 +371,39 @@ export default function HotLeadsAdminPage() {
                       className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
                     />
                   </div>
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <label className="block text-sm font-medium text-charcoal mb-2">
-                      Business Name *
-                    </label>
-                    <input
-                      type="text"
-                      name="businessName"
-                      required
-                      defaultValue={editingLead.businessName}
-                      placeholder="ABC Corporation"
-                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
-                    />
-                  </div>
                   
                   <div>
                     <label className="block text-sm font-medium text-charcoal mb-2">
-                      Business Type *
+                      Employee Count *
                     </label>
                     <select
-                      name="businessType"
+                      name="employeeCount"
                       required
-                      defaultValue={editingLead.businessType}
+                      defaultValue={editingLead.employeeCount}
                       className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
                     >
-                      <option value="">Select type...</option>
-                      <option value="office">Office Building</option>
-                      <option value="manufacturing">Manufacturing</option>
-                      <option value="retail">Retail Center</option>
-                      <option value="healthcare">Healthcare Facility</option>
-                      <option value="education">Educational Institution</option>
-                      <option value="warehouse">Warehouse/Distribution</option>
-                      <option value="other">Other</option>
+                      <option value="">Select range...</option>
+                      <option value="50-100">50-100 employees</option>
+                      <option value="100-250">100-250 employees</option>
+                      <option value="250-500">250-500 employees</option>
+                      <option value="500-1000">500-1000 employees</option>
+                      <option value="1000+">1000+ employees</option>
                     </select>
                   </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                  <div>
-                    <label className="block text-sm font-medium text-charcoal mb-2">
-                      City *
-                    </label>
-                    <input
-                      type="text"
-                      name="city"
-                      required
-                      defaultValue={editingLead.city}
-                      placeholder="Austin"
-                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
-                    />
-                  </div>
-                  
-                  <div>
-                    <label className="block text-sm font-medium text-charcoal mb-2">
-                      State *
-                    </label>
-                    <input
-                      type="text"
-                      name="state"
-                      required
-                      defaultValue={editingLead.state}
-                      placeholder="TX"
-                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
-                    />
-                  </div>
-                  
-                  <div>
-                    <label className="block text-sm font-medium text-charcoal mb-2">
-                      Zip Code *
-                    </label>
-                    <input
-                      type="text"
-                      name="zipCode"
-                      required
-                      defaultValue={editingLead.zipCode}
-                      placeholder="78701"
-                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
-                    />
-                  </div>
-                </div>
-
                 <div>
                   <label className="block text-sm font-medium text-charcoal mb-2">
-                    Full Address *
+                    Business Type *
                   </label>
                   <input
                     type="text"
-                    name="location"
+                    name="businessType"
                     required
-                    defaultValue={editingLead.location}
-                    placeholder="123 Business Blvd, Austin, TX 78701"
+                    defaultValue={editingLead.businessType}
+                    placeholder="e.g., Office Building, Manufacturing, Healthcare, etc."
                     className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
                   />
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                  <div>
-                    <label className="block text-sm font-medium text-charcoal mb-2">
-                      Contact Name *
-                    </label>
-                    <input
-                      type="text"
-                      name="contactName"
-                      required
-                      defaultValue={editingLead.contactName}
-                      placeholder="John Smith"
-                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
-                    />
-                  </div>
-                  
-                  <div>
-                    <label className="block text-sm font-medium text-charcoal mb-2">
-                      Phone *
-                    </label>
-                    <input
-                      type="tel"
-                      name="contactPhone"
-                      required
-                      defaultValue={editingLead.contactPhone}
-                      placeholder="(555) 123-4567"
-                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
-                    />
-                  </div>
-                  
-                  <div>
-                    <label className="block text-sm font-medium text-charcoal mb-2">
-                      Email *
-                    </label>
-                    <input
-                      type="email"
-                      name="contactEmail"
-                      required
-                      defaultValue={editingLead.contactEmail}
-                      placeholder="john@company.com"
-                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-charcoal mb-2">
-                    Employee Count *
-                  </label>
-                  <select
-                    name="employeeCount"
-                    required
-                    defaultValue={editingLead.employeeCount}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
-                  >
-                    <option value="">Select range...</option>
-                    <option value="50-100">50-100 employees</option>
-                    <option value="100-250">100-250 employees</option>
-                    <option value="250-500">250-500 employees</option>
-                    <option value="500-1000">500-1000 employees</option>
-                    <option value="1000+">1000+ employees</option>
-                  </select>
                 </div>
 
                 <div>
@@ -747,15 +481,15 @@ export default function HotLeadsAdminPage() {
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm text-stone mb-4">
                           <div className="flex items-center gap-2">
                             <BuildingOfficeIcon className="w-4 h-4" />
-                            {lead.businessName}
+                            {lead.businessType}
                           </div>
                           <div className="flex items-center gap-2">
-                            <MapPinIcon className="w-4 h-4" />
-                            {lead.city}, {lead.state}
+                            <UsersIcon className="w-4 h-4" />
+                            {lead.employeeCount} employees
                           </div>
                           <div className="flex items-center gap-2">
                             <CurrencyDollarIcon className="w-4 h-4" />
-                            ${lead.price}
+                            ${lead.price.toLocaleString()}
                           </div>
                         </div>
                         
