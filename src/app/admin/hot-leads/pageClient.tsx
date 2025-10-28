@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { PlusIcon, EyeIcon, CurrencyDollarIcon, MapPinIcon, BuildingOfficeIcon } from '@heroicons/react/24/outline'
 
@@ -28,6 +28,29 @@ export default function HotLeadsAdminPage() {
   const [leads, setLeads] = useState<HotLead[]>([])
   const [showCreateForm, setShowCreateForm] = useState(false)
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const [loading, setLoading] = useState(true)
+
+  // Fetch leads on component mount
+  useEffect(() => {
+    fetchLeads()
+  }, [])
+
+  const fetchLeads = async () => {
+    try {
+      const response = await fetch('/api/hot-leads')
+      const data = await response.json()
+      if (data.success) {
+        setLeads(data.leads.map((lead: any) => ({
+          ...lead,
+          createdAt: new Date(lead.createdAt)
+        })))
+      }
+    } catch (error) {
+      console.error('Failed to fetch leads:', error)
+    } finally {
+      setLoading(false)
+    }
+  }
 
   const handleCreateLead = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
@@ -35,8 +58,7 @@ export default function HotLeadsAdminPage() {
 
     const formData = new FormData(e.currentTarget)
     
-    const newLead: HotLead = {
-      id: `lead-${Date.now()}`,
+    const leadData = {
       title: formData.get('title') as string,
       businessName: formData.get('businessName') as string,
       location: formData.get('location') as string,
@@ -49,18 +71,37 @@ export default function HotLeadsAdminPage() {
       employeeCount: formData.get('employeeCount') as string,
       businessType: formData.get('businessType') as string,
       description: formData.get('description') as string,
-      price: parseFloat(formData.get('price') as string),
-      status: 'available',
-      createdAt: new Date()
+      price: parseFloat(formData.get('price') as string)
     }
 
-    // TODO: Save to database/API
-    setLeads(prev => [newLead, ...prev])
-    setShowCreateForm(false)
-    setIsSubmitting(false)
-    
-    // Reset form
-    e.currentTarget.reset()
+    try {
+      const response = await fetch('/api/hot-leads', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(leadData)
+      })
+
+      const data = await response.json()
+      if (data.success) {
+        // Add new lead to the list
+        const newLead = {
+          ...data.lead,
+          createdAt: new Date(data.lead.createdAt)
+        }
+        setLeads(prev => [newLead, ...prev])
+        setShowCreateForm(false)
+        e.currentTarget.reset()
+      } else {
+        alert('Failed to create lead: ' + data.error)
+      }
+    } catch (error) {
+      console.error('Failed to create lead:', error)
+      alert('Failed to create lead. Please try again.')
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (

@@ -41,70 +41,27 @@ export default function MarketplacePage() {
   const [selectedCategory, setSelectedCategory] = useState('all')
   const [priceRange, setPriceRange] = useState('all')
 
-  // Mock data - in real app, this would come from API
+  // Fetch leads from API
   useEffect(() => {
-    // Simulate API call
-    setTimeout(() => {
-      const mockLeads: HotLead[] = [
-        {
-          id: 'lead-1',
-          title: 'Premium Office Complex - 500+ Employees',
-          businessName: 'TechCorp Industries',
-          location: '123 Business Blvd, Austin, TX 78701',
-          city: 'Austin',
-          state: 'TX',
-          zipCode: '78701',
-          contactName: 'Sarah Johnson',
-          contactPhone: '(555) 123-4567',
-          contactEmail: 'sarah@techcorp.com',
-          employeeCount: '500-1000',
-          businessType: 'office',
-          description: 'Large tech company with multiple break rooms. Decision maker is facilities manager Sarah Johnson. Best approach is email first, then follow-up call. They are actively looking for vending solutions.',
-          price: 299,
-          status: 'available',
-          createdAt: new Date('2024-01-15')
-        },
-        {
-          id: 'lead-2',
-          title: 'Manufacturing Facility - High Traffic',
-          businessName: 'ABC Manufacturing',
-          location: '456 Industrial Way, Dallas, TX 75201',
-          city: 'Dallas',
-          state: 'TX',
-          zipCode: '75201',
-          contactName: 'Mike Rodriguez',
-          contactPhone: '(555) 987-6543',
-          contactEmail: 'mike@abcmfg.com',
-          employeeCount: '250-500',
-          businessType: 'manufacturing',
-          description: '24/7 manufacturing operation with 3 shifts. High demand for snacks and beverages. Contact Mike Rodriguez, Plant Manager. He mentioned budget approved for Q1.',
-          price: 199,
-          status: 'available',
-          createdAt: new Date('2024-01-14')
-        },
-        {
-          id: 'lead-3',
-          title: 'Hospital Complex - Multiple Buildings',
-          businessName: 'Central Medical Center',
-          location: '789 Health Dr, Houston, TX 77001',
-          city: 'Houston',
-          state: 'TX',
-          zipCode: '77001',
-          contactName: 'Dr. Lisa Chen',
-          contactPhone: '(555) 456-7890',
-          contactEmail: 'lchen@centralmed.com',
-          employeeCount: '1000+',
-          businessType: 'healthcare',
-          description: 'Large hospital system looking for healthy vending options. Dr. Chen is head of facilities. They want to pilot in main lobby first, then expand to other buildings.',
-          price: 399,
-          status: 'available',
-          createdAt: new Date('2024-01-13')
-        }
-      ]
-      setLeads(mockLeads)
-      setLoading(false)
-    }, 1000)
+    fetchLeads()
   }, [])
+
+  const fetchLeads = async () => {
+    try {
+      const response = await fetch('/api/hot-leads')
+      const data = await response.json()
+      if (data.success) {
+        setLeads(data.leads.map((lead: any) => ({
+          ...lead,
+          createdAt: new Date(lead.createdAt)
+        })))
+      }
+    } catch (error) {
+      console.error('Failed to fetch leads:', error)
+    } finally {
+      setLoading(false)
+    }
+  }
 
   const categories = [
     { value: 'all', label: 'All Categories' },
