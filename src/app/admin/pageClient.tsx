@@ -99,8 +99,8 @@ export default function AdminDashboardPage() {
   return (
     <div className="min-h-screen bg-warm-white flex">
       {/* Sidebar - Always visible on desktop */}
-      <div className="hidden lg:block w-72 flex-shrink-0">
-        <aside className={`h-full w-72 bg-white border-r border-stone shadow-xl ${collapsed ? 'w-20' : 'w-72'}`}>
+      <div className={`hidden lg:block flex-shrink-0 ${collapsed ? 'w-20' : 'w-72'}`}>
+        <aside className={`h-full bg-white border-r border-stone shadow-xl ${collapsed ? 'w-20' : 'w-72'}`}>
           {/* Header */}
           <div className="flex h-16 items-center justify-between border-b border-stone px-4">
             {!collapsed && (
@@ -294,7 +294,7 @@ export default function AdminDashboardPage() {
 
         {/* Page Content */}
         <main className="flex-1 p-6 lg:p-8">
-          <div className="max-w-7xl mx-auto">
+          <div className="w-full">
             <div className="mb-8">
               <h1 className="text-3xl font-playfair font-bold text-charcoal mb-4">
                 Admin Dashboard
@@ -307,27 +307,27 @@ export default function AdminDashboardPage() {
             {/* Dashboard Overview */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
               <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-                <h3 className="text-lg font-semibold text-charcoal mb-2">Total Cities</h3>
-                <p className="text-3xl font-bold text-bronze">21+</p>
-                <p className="text-sm text-stone">Vending leads pages</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-2">Vending Leads</h3>
+                <p className="text-3xl font-bold text-bronze">50+</p>
+                <p className="text-sm text-stone">City pages</p>
               </div>
               
               <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-                <h3 className="text-lg font-semibold text-charcoal mb-2">Total Businesses</h3>
-                <p className="text-3xl font-bold text-bronze">500K+</p>
-                <p className="text-sm text-stone">Across all cities</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-2">Vending Services</h3>
+                <p className="text-3xl font-bold text-bronze">378</p>
+                <p className="text-sm text-stone">City pages</p>
               </div>
               
               <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
                 <h3 className="text-lg font-semibold text-charcoal mb-2">Coverage</h3>
-                <p className="text-3xl font-bold text-bronze">25+</p>
-                <p className="text-sm text-stone">States covered</p>
+                <p className="text-3xl font-bold text-bronze">51</p>
+                <p className="text-sm text-stone">States + DC</p>
               </div>
               
               <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-                <h3 className="text-lg font-semibold text-charcoal mb-2">Industries</h3>
-                <p className="text-3xl font-bold text-bronze">15+</p>
-                <p className="text-sm text-stone">Business sectors</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-2">Total Pages</h3>
+                <p className="text-3xl font-bold text-bronze">428+</p>
+                <p className="text-sm text-stone">Location pages</p>
               </div>
             </div>
 
@@ -337,19 +337,19 @@ export default function AdminDashboardPage() {
               <div className="space-y-4">
                 <div className="flex items-center gap-4 p-3 bg-warm-white rounded-lg">
                   <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                  <span className="text-stone">Added new city page: Savannah, Georgia</span>
+                  <span className="text-stone">✅ Fixed all 51 state pages with city dropdowns</span>
                 </div>
                 <div className="flex items-center gap-4 p-3 bg-warm-white rounded-lg">
                   <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                  <span className="text-stone">Added new city page: St. Petersburg, Florida</span>
+                  <span className="text-stone">🚀 Created 378 vending-services city pages</span>
                 </div>
                 <div className="flex items-center gap-4 p-3 bg-warm-white rounded-lg">
                   <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                  <span className="text-stone">Added new city page: Springfield, Massachusetts</span>
+                  <span className="text-stone">🔧 Fixed FAQ content for unique SEO optimization</span>
                 </div>
                 <div className="flex items-center gap-4 p-3 bg-warm-white rounded-lg">
                   <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
-                  <span className="text-stone">Updated pricing table component</span>
+                  <span className="text-stone">📊 Updated admin dashboard statistics</span>
                 </div>
               </div>
             </div>
