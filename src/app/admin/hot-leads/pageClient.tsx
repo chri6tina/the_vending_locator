@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { PlusIcon, EyeIcon, CurrencyDollarIcon, MapPinIcon, BuildingOfficeIcon } from '@heroicons/react/24/outline'
+import { PlusIcon, EyeIcon, CurrencyDollarIcon, MapPinIcon, BuildingOfficeIcon, PencilIcon, TrashIcon } from '@heroicons/react/24/outline'
 
 interface HotLead {
   id: string
@@ -27,6 +27,7 @@ interface HotLead {
 export default function HotLeadsAdminPage() {
   const [leads, setLeads] = useState<HotLead[]>([])
   const [showCreateForm, setShowCreateForm] = useState(false)
+  const [editingLead, setEditingLead] = useState<HotLead | null>(null)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [loading, setLoading] = useState(true)
 
@@ -101,6 +102,86 @@ export default function HotLeadsAdminPage() {
       alert('Failed to create lead. Please try again.')
     } finally {
       setIsSubmitting(false)
+    }
+  }
+
+  const handleEditLead = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    if (!editingLead) return
+    
+    setIsSubmitting(true)
+
+    const formData = new FormData(e.currentTarget)
+    
+    const leadData = {
+      id: editingLead.id,
+      title: formData.get('title') as string,
+      businessName: formData.get('businessName') as string,
+      location: formData.get('location') as string,
+      city: formData.get('city') as string,
+      state: formData.get('state') as string,
+      zipCode: formData.get('zipCode') as string,
+      contactName: formData.get('contactName') as string,
+      contactPhone: formData.get('contactPhone') as string,
+      contactEmail: formData.get('contactEmail') as string,
+      employeeCount: formData.get('employeeCount') as string,
+      businessType: formData.get('businessType') as string,
+      description: formData.get('description') as string,
+      price: parseFloat(formData.get('price') as string)
+    }
+
+    try {
+      const response = await fetch('/api/hot-leads', {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(leadData)
+      })
+
+      const data = await response.json()
+      if (data.success) {
+        // Update lead in the list
+        const updatedLead = {
+          ...data.lead,
+          createdAt: new Date(data.lead.createdAt)
+        }
+        setLeads(prev => prev.map(lead => 
+          lead.id === editingLead.id ? updatedLead : lead
+        ))
+        setEditingLead(null)
+      } else {
+        alert('Failed to update lead: ' + data.error)
+      }
+    } catch (error) {
+      console.error('Failed to update lead:', error)
+      alert('Failed to update lead. Please try again.')
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
+
+  const handleDeleteLead = async (leadId: string) => {
+    if (!confirm('Are you sure you want to delete this lead?')) return
+
+    try {
+      const response = await fetch('/api/hot-leads', {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ id: leadId, status: 'deleted' })
+      })
+
+      const data = await response.json()
+      if (data.success) {
+        setLeads(prev => prev.filter(lead => lead.id !== leadId))
+      } else {
+        alert('Failed to delete lead: ' + data.error)
+      }
+    } catch (error) {
+      console.error('Failed to delete lead:', error)
+      alert('Failed to delete lead. Please try again.')
     }
   }
 
@@ -391,6 +472,241 @@ export default function HotLeadsAdminPage() {
           </div>
         )}
 
+        {/* Edit Lead Modal */}
+        {editingLead && (
+          <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
+            <div className="bg-white rounded-xl shadow-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+              <div className="p-6 border-b border-gray-200">
+                <h2 className="text-xl font-semibold text-charcoal">Edit Hot Lead</h2>
+                <p className="text-stone mt-1">Update lead information</p>
+              </div>
+              
+              <form onSubmit={handleEditLead} className="p-6 space-y-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <label className="block text-sm font-medium text-charcoal mb-2">
+                      Lead Title *
+                    </label>
+                    <input
+                      type="text"
+                      name="title"
+                      required
+                      defaultValue={editingLead.title}
+                      placeholder="e.g., Premium Office Complex - 500+ Employees"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
+                    />
+                  </div>
+                  
+                  <div>
+                    <label className="block text-sm font-medium text-charcoal mb-2">
+                      Price *
+                    </label>
+                    <input
+                      type="number"
+                      name="price"
+                      required
+                      min="1"
+                      step="0.01"
+                      defaultValue={editingLead.price}
+                      placeholder="299.00"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
+                    />
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <label className="block text-sm font-medium text-charcoal mb-2">
+                      Business Name *
+                    </label>
+                    <input
+                      type="text"
+                      name="businessName"
+                      required
+                      defaultValue={editingLead.businessName}
+                      placeholder="ABC Corporation"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
+                    />
+                  </div>
+                  
+                  <div>
+                    <label className="block text-sm font-medium text-charcoal mb-2">
+                      Business Type *
+                    </label>
+                    <select
+                      name="businessType"
+                      required
+                      defaultValue={editingLead.businessType}
+                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
+                    >
+                      <option value="">Select type...</option>
+                      <option value="office">Office Building</option>
+                      <option value="manufacturing">Manufacturing</option>
+                      <option value="retail">Retail Center</option>
+                      <option value="healthcare">Healthcare Facility</option>
+                      <option value="education">Educational Institution</option>
+                      <option value="warehouse">Warehouse/Distribution</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  <div>
+                    <label className="block text-sm font-medium text-charcoal mb-2">
+                      City *
+                    </label>
+                    <input
+                      type="text"
+                      name="city"
+                      required
+                      defaultValue={editingLead.city}
+                      placeholder="Austin"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
+                    />
+                  </div>
+                  
+                  <div>
+                    <label className="block text-sm font-medium text-charcoal mb-2">
+                      State *
+                    </label>
+                    <input
+                      type="text"
+                      name="state"
+                      required
+                      defaultValue={editingLead.state}
+                      placeholder="TX"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
+                    />
+                  </div>
+                  
+                  <div>
+                    <label className="block text-sm font-medium text-charcoal mb-2">
+                      Zip Code *
+                    </label>
+                    <input
+                      type="text"
+                      name="zipCode"
+                      required
+                      defaultValue={editingLead.zipCode}
+                      placeholder="78701"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-charcoal mb-2">
+                    Full Address *
+                  </label>
+                  <input
+                    type="text"
+                    name="location"
+                    required
+                    defaultValue={editingLead.location}
+                    placeholder="123 Business Blvd, Austin, TX 78701"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
+                  />
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  <div>
+                    <label className="block text-sm font-medium text-charcoal mb-2">
+                      Contact Name *
+                    </label>
+                    <input
+                      type="text"
+                      name="contactName"
+                      required
+                      defaultValue={editingLead.contactName}
+                      placeholder="John Smith"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
+                    />
+                  </div>
+                  
+                  <div>
+                    <label className="block text-sm font-medium text-charcoal mb-2">
+                      Phone *
+                    </label>
+                    <input
+                      type="tel"
+                      name="contactPhone"
+                      required
+                      defaultValue={editingLead.contactPhone}
+                      placeholder="(555) 123-4567"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
+                    />
+                  </div>
+                  
+                  <div>
+                    <label className="block text-sm font-medium text-charcoal mb-2">
+                      Email *
+                    </label>
+                    <input
+                      type="email"
+                      name="contactEmail"
+                      required
+                      defaultValue={editingLead.contactEmail}
+                      placeholder="john@company.com"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-charcoal mb-2">
+                    Employee Count *
+                  </label>
+                  <select
+                    name="employeeCount"
+                    required
+                    defaultValue={editingLead.employeeCount}
+                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
+                  >
+                    <option value="">Select range...</option>
+                    <option value="50-100">50-100 employees</option>
+                    <option value="100-250">100-250 employees</option>
+                    <option value="250-500">250-500 employees</option>
+                    <option value="500-1000">500-1000 employees</option>
+                    <option value="1000+">1000+ employees</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-charcoal mb-2">
+                    Description & Notes *
+                  </label>
+                  <textarea
+                    name="description"
+                    required
+                    rows={4}
+                    defaultValue={editingLead.description}
+                    placeholder="Describe the opportunity, decision maker details, best approach, timing, etc."
+                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
+                  />
+                </div>
+
+                <div className="flex items-center justify-end gap-4 pt-4 border-t border-gray-200">
+                  <button
+                    type="button"
+                    onClick={() => setEditingLead(null)}
+                    className="px-6 py-2 text-stone hover:text-charcoal transition-colors"
+                  >
+                    Cancel
+                  </button>
+                  <button
+                    type="submit"
+                    disabled={isSubmitting}
+                    className="px-6 py-3 bg-navy text-white rounded-lg hover:bg-navy/90 transition-colors disabled:opacity-50"
+                  >
+                    {isSubmitting ? 'Updating...' : 'Update Lead'}
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        )}
+
         {/* Leads List */}
         <div className="bg-white rounded-xl shadow-sm border border-gray-200">
           <div className="p-6 border-b border-gray-200">
@@ -447,7 +763,21 @@ export default function HotLeadsAdminPage() {
                       </div>
                       
                       <div className="flex items-center gap-2 ml-4">
-                        <button className="p-2 text-stone hover:text-navy transition-colors">
+                        <button 
+                          onClick={() => setEditingLead(lead)}
+                          className="p-2 text-stone hover:text-navy transition-colors"
+                          title="Edit lead"
+                        >
+                          <PencilIcon className="w-5 h-5" />
+                        </button>
+                        <button 
+                          onClick={() => handleDeleteLead(lead.id)}
+                          className="p-2 text-stone hover:text-red-600 transition-colors"
+                          title="Delete lead"
+                        >
+                          <TrashIcon className="w-5 h-5" />
+                        </button>
+                        <button className="p-2 text-stone hover:text-navy transition-colors" title="View details">
                           <EyeIcon className="w-5 h-5" />
                         </button>
                       </div>
