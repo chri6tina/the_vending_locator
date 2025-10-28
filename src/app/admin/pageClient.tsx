@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { useAdminStats } from './hooks/useAdminStats'
 
 interface NavItem {
   name: string
@@ -95,6 +96,7 @@ export default function AdminDashboardPage() {
   const pathname = usePathname()
   const [sidebarOpen, setSidebarOpen] = useState(false)
   const [collapsed, setCollapsed] = useState(false)
+  const { stats, recentActivity } = useAdminStats()
 
   return (
     <div className="min-h-screen bg-warm-white flex">
@@ -308,51 +310,114 @@ export default function AdminDashboardPage() {
             
             {/* Dashboard Overview */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 relative">
                 <h3 className="text-lg font-semibold text-charcoal mb-2">Vending Leads</h3>
-                <p className="text-3xl font-bold text-bronze">50+</p>
+                <p className="text-3xl font-bold text-bronze">
+                  {stats.loading ? '...' : stats.vendingLeadsPages.toLocaleString()}
+                </p>
                 <p className="text-sm text-stone">City pages</p>
+                {stats.loading && (
+                  <div className="absolute top-2 right-2 w-3 h-3 bg-blue-500 rounded-full animate-pulse"></div>
+                )}
               </div>
               
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 relative">
                 <h3 className="text-lg font-semibold text-charcoal mb-2">Vending Services</h3>
-                <p className="text-3xl font-bold text-bronze">378</p>
+                <p className="text-3xl font-bold text-bronze">
+                  {stats.loading ? '...' : stats.vendingServicesPages.toLocaleString()}
+                </p>
                 <p className="text-sm text-stone">City pages</p>
+                {stats.loading && (
+                  <div className="absolute top-2 right-2 w-3 h-3 bg-blue-500 rounded-full animate-pulse"></div>
+                )}
               </div>
               
+              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 relative">
+                <h3 className="text-lg font-semibold text-charcoal mb-2">Form Submissions</h3>
+                <p className="text-3xl font-bold text-bronze">
+                  {stats.loading ? '...' : stats.totalFormSubmissions.toLocaleString()}
+                </p>
+                <p className="text-sm text-stone">Total leads</p>
+                {stats.loading && (
+                  <div className="absolute top-2 right-2 w-3 h-3 bg-blue-500 rounded-full animate-pulse"></div>
+                )}
+              </div>
+              
+              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 relative">
+                <h3 className="text-lg font-semibold text-charcoal mb-2">Live Visitors</h3>
+                <p className="text-3xl font-bold text-bronze">
+                  {stats.loading ? '...' : stats.liveVisitors}
+                </p>
+                <p className="text-sm text-stone">Active now</p>
+                {stats.liveVisitors > 0 && (
+                  <div className="absolute top-2 right-2 w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                )}
+              </div>
+            </div>
+
+            {/* Additional Metrics Row */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
               <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
                 <h3 className="text-lg font-semibold text-charcoal mb-2">Coverage</h3>
-                <p className="text-3xl font-bold text-bronze">51</p>
+                <p className="text-3xl font-bold text-bronze">
+                  {stats.loading ? '...' : stats.totalStates}
+                </p>
                 <p className="text-sm text-stone">States + DC</p>
               </div>
               
               <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
                 <h3 className="text-lg font-semibold text-charcoal mb-2">Total Pages</h3>
-                <p className="text-3xl font-bold text-bronze">428+</p>
+                <p className="text-3xl font-bold text-bronze">
+                  {stats.loading ? '...' : stats.totalPages.toLocaleString()}
+                </p>
                 <p className="text-sm text-stone">Location pages</p>
+              </div>
+              
+              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+                <h3 className="text-lg font-semibold text-charcoal mb-2">Conversion Rate</h3>
+                <p className="text-3xl font-bold text-bronze">
+                  {stats.loading ? '...' : `${stats.conversionRate.toFixed(1)}%`}
+                </p>
+                <p className="text-sm text-stone">Visitor to lead</p>
               </div>
             </div>
 
             {/* Recent Activity */}
             <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6 mb-8">
-              <h2 className="text-xl font-semibold text-charcoal mb-4">Recent Activity</h2>
+              <div className="flex items-center justify-between mb-4">
+                <h2 className="text-xl font-semibold text-charcoal">Recent Activity</h2>
+                <div className="flex items-center gap-2 text-sm text-stone">
+                  <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                  Live Updates
+                </div>
+              </div>
               <div className="space-y-4">
-                <div className="flex items-center gap-4 p-3 bg-warm-white rounded-lg">
-                  <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                  <span className="text-stone">✅ Fixed all 51 state pages with city dropdowns</span>
-                </div>
-                <div className="flex items-center gap-4 p-3 bg-warm-white rounded-lg">
-                  <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                  <span className="text-stone">🚀 Created 378 vending-services city pages</span>
-                </div>
-                <div className="flex items-center gap-4 p-3 bg-warm-white rounded-lg">
-                  <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                  <span className="text-stone">🔧 Fixed FAQ content for unique SEO optimization</span>
-                </div>
-                <div className="flex items-center gap-4 p-3 bg-warm-white rounded-lg">
-                  <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
-                  <span className="text-stone">📊 Updated admin dashboard statistics</span>
-                </div>
+                {stats.loading ? (
+                  <div className="flex items-center gap-4 p-3 bg-warm-white rounded-lg animate-pulse">
+                    <div className="w-3 h-3 bg-gray-300 rounded-full"></div>
+                    <div className="h-4 bg-gray-300 rounded w-3/4"></div>
+                  </div>
+                ) : recentActivity.length > 0 ? (
+                  recentActivity.map((activity) => (
+                    <div key={activity.id} className="flex items-center gap-4 p-3 bg-warm-white rounded-lg">
+                      <div className={`w-3 h-3 rounded-full ${
+                        activity.status === 'success' ? 'bg-green-500' : 
+                        activity.status === 'warning' ? 'bg-yellow-500' : 'bg-blue-500'
+                      }`}></div>
+                      <div className="flex-1">
+                        <span className="text-stone">{activity.message}</span>
+                        <div className="text-xs text-stone/60 mt-1">
+                          {activity.timestamp.toLocaleString()}
+                        </div>
+                      </div>
+                    </div>
+                  ))
+                ) : (
+                  <div className="flex items-center gap-4 p-3 bg-warm-white rounded-lg">
+                    <div className="w-3 h-3 bg-gray-400 rounded-full"></div>
+                    <span className="text-stone">No recent activity</span>
+                  </div>
+                )}
               </div>
             </div>
 
