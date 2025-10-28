@@ -354,15 +354,7 @@ export default function AdminDashboardPage() {
               </div>
             </div>
 
-            {/* Coming Soon - We'll build these together */}
-            <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-6">
-              <h2 className="text-xl font-semibold text-charcoal mb-4">Admin Sections</h2>
-              <div className="text-center py-8">
-                <div className="text-6xl mb-4">🚧</div>
-                <h3 className="text-lg font-semibold text-charcoal mb-2">Ready to Build</h3>
-                <p className="text-stone">Let's design the admin sections you need together</p>
-              </div>
-            </div>
+            {/* Clean foundation - ready for new admin sections */}
           </div>
         </main>
       </div>
