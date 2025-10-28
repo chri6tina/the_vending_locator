@@ -241,77 +241,30 @@ export default function AdminDashboardPage() {
               </p>
             </div>
             
-            {/* Dashboard Overview */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 relative">
+            {/* Core Business Metrics */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
                 <h3 className="text-lg font-semibold text-charcoal mb-2">Vending Leads</h3>
                 <p className="text-3xl font-bold text-bronze">
                   {stats.loading ? '...' : stats.vendingLeadsPages.toLocaleString()}
                 </p>
                 <p className="text-sm text-stone">City pages</p>
-                {stats.loading && (
-                  <div className="absolute top-2 right-2 w-3 h-3 bg-blue-500 rounded-full animate-pulse"></div>
-                )}
               </div>
               
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 relative">
+              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
                 <h3 className="text-lg font-semibold text-charcoal mb-2">Vending Services</h3>
                 <p className="text-3xl font-bold text-bronze">
                   {stats.loading ? '...' : stats.vendingServicesPages.toLocaleString()}
                 </p>
                 <p className="text-sm text-stone">City pages</p>
-                {stats.loading && (
-                  <div className="absolute top-2 right-2 w-3 h-3 bg-blue-500 rounded-full animate-pulse"></div>
-                )}
               </div>
               
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 relative">
-                <h3 className="text-lg font-semibold text-charcoal mb-2">Form Submissions</h3>
-                <p className="text-3xl font-bold text-bronze">
-                  {stats.loading ? '...' : stats.totalFormSubmissions.toLocaleString()}
-                </p>
-                <p className="text-sm text-stone">Total leads</p>
-                {stats.loading && (
-                  <div className="absolute top-2 right-2 w-3 h-3 bg-blue-500 rounded-full animate-pulse"></div>
-                )}
-              </div>
-              
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 relative">
-                <h3 className="text-lg font-semibold text-charcoal mb-2">Live Visitors</h3>
-                <p className="text-3xl font-bold text-bronze">
-                  {stats.loading ? '...' : stats.liveVisitors}
-                </p>
-                <p className="text-sm text-stone">Active now</p>
-                {stats.liveVisitors > 0 && (
-                  <div className="absolute top-2 right-2 w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                )}
-              </div>
-            </div>
-
-            {/* Additional Metrics Row */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
               <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
                 <h3 className="text-lg font-semibold text-charcoal mb-2">Coverage</h3>
                 <p className="text-3xl font-bold text-bronze">
                   {stats.loading ? '...' : stats.totalStates}
                 </p>
                 <p className="text-sm text-stone">States + DC</p>
-              </div>
-              
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-                <h3 className="text-lg font-semibold text-charcoal mb-2">Total Pages</h3>
-                <p className="text-3xl font-bold text-bronze">
-                  {stats.loading ? '...' : stats.totalPages.toLocaleString()}
-                </p>
-                <p className="text-sm text-stone">Location pages</p>
-              </div>
-              
-              <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-                <h3 className="text-lg font-semibold text-charcoal mb-2">Conversion Rate</h3>
-                <p className="text-3xl font-bold text-bronze">
-                  {stats.loading ? '...' : `${stats.conversionRate.toFixed(1)}%`}
-                </p>
-                <p className="text-sm text-stone">Visitor to lead</p>
               </div>
             </div>
 
