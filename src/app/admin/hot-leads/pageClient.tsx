@@ -61,6 +61,8 @@ export default function HotLeadsAdminPage() {
       price: parseFloat(formData.get('price') as string)
     }
 
+    console.log('Sending lead data:', leadData)
+
     try {
       const response = await fetch('/api/hot-leads', {
         method: 'POST',
@@ -81,11 +83,11 @@ export default function HotLeadsAdminPage() {
         setShowCreateForm(false)
         e.currentTarget.reset()
       } else {
-        alert('Failed to create lead: ' + data.error)
+        alert('Failed to create lead: ' + (data.error || 'Unknown error'))
       }
     } catch (error) {
       console.error('Failed to create lead:', error)
-      alert('Failed to create lead. Please try again.')
+      alert('Network error: Failed to create lead. Please check your connection and try again.')
     } finally {
       setIsSubmitting(false)
     }

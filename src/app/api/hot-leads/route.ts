@@ -24,14 +24,31 @@ export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
     
+    // Validate required fields
+    if (!body.title || !body.businessType || !body.employeeCount || !body.zipCode || !body.description || !body.price) {
+      return NextResponse.json({ 
+        success: false, 
+        error: 'Missing required fields. Please fill in all fields.' 
+      }, { status: 400 })
+    }
+
+    // Validate price is a valid number
+    const price = parseFloat(body.price)
+    if (isNaN(price) || price <= 0) {
+      return NextResponse.json({ 
+        success: false, 
+        error: 'Price must be a valid number greater than 0' 
+      }, { status: 400 })
+    }
+    
     const newLead = {
       id: `lead-${Date.now()}`,
-      title: body.title,
-      businessType: body.businessType,
+      title: body.title.trim(),
+      businessType: body.businessType.trim(),
       employeeCount: body.employeeCount,
-      zipCode: body.zipCode,
-      description: body.description,
-      price: parseFloat(body.price),
+      zipCode: body.zipCode.trim(),
+      description: body.description.trim(),
+      price: price,
       status: 'available',
       createdAt: new Date().toISOString()
     }
@@ -43,9 +60,10 @@ export async function POST(request: NextRequest) {
       lead: newLead 
     })
   } catch (error) {
+    console.error('Error creating lead:', error)
     return NextResponse.json({ 
       success: false, 
-      error: 'Failed to create lead' 
+      error: error instanceof Error ? error.message : 'Failed to create lead' 
     }, { status: 500 })
   }
 }
