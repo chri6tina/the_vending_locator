@@ -180,7 +180,9 @@ export default function AdminDashboardPage() {
             <button className={`w-full flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium text-red-600 hover:bg-red-50 transition-colors ${collapsed ? 'justify-center' : ''}`}>
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
-              </svg>!collapsed && <span>Sign Out</span></button>
+              </svg>
+              {!collapsed && <span>Sign Out</span>}
+            </button>
           </div>
         </aside>
       </div>
@@ -193,9 +195,9 @@ export default function AdminDashboardPage() {
         />
       )}
       
-      <aside className={`fixed lg:relative lg:translate-x-0 lg:animate-none h-full w-72 bg-white border-r border-stone shadow-xl lg:shadow-none z-50 transform transition-transform duration-300 ease-in-out ${
+      <aside className={`fixed lg:hidden h-full w-72 bg-white border-r border-stone shadow-xl z-50 transform transition-transform duration-300 ease-in-out ${
         sidebarOpen ? 'translate-x-0' : '-translate-x-full'
-      } lg:translate-x-0`}>
+      }`}>
         {/* Mobile Header */}
         <div className="flex h-16 items-center justify-between border-b border-stone px-4 lg:hidden">
           <div className="flex items-center gap-2">
@@ -294,7 +296,7 @@ export default function AdminDashboardPage() {
 
         {/* Page Content */}
         <main className="flex-1 p-6 lg:p-8">
-          <div className="w-full">
+          <div className="max-w-6xl mx-auto">
             <div className="mb-8">
               <h1 className="text-3xl font-playfair font-bold text-charcoal mb-4">
                 Admin Dashboard
