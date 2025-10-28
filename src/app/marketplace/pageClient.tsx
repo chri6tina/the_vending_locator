@@ -40,6 +40,10 @@ export default function MarketplacePage() {
   const [loading, setLoading] = useState(true)
   const [selectedCategory, setSelectedCategory] = useState('all')
   const [priceRange, setPriceRange] = useState('all')
+  const [selectedState, setSelectedState] = useState('all')
+  const [selectedCity, setSelectedCity] = useState('all')
+  const [zipCode, setZipCode] = useState('')
+  const [radius, setRadius] = useState('all')
 
   // Fetch leads from API
   useEffect(() => {
@@ -80,18 +84,50 @@ export default function MarketplacePage() {
     { value: '500+', label: '$500+' }
   ]
 
-  const filteredLeads = leads.filter(lead => {
-    if (selectedCategory !== 'all' && lead.businessType !== selectedCategory) return false
-    
-    if (priceRange !== 'all') {
-      const [min, max] = priceRange.split('-').map(p => p.replace('+', ''))
-      if (priceRange.includes('+')) {
-        if (lead.price < parseInt(min)) return false
-      } else {
-        if (lead.price < parseInt(min) || lead.price > parseInt(max)) return false
-      }
+  const radiusOptions = [
+    { value: 'all', label: 'Any Distance' },
+    { value: '25', label: 'Within 25 miles' },
+    { value: '50', label: 'Within 50 miles' },
+    { value: '100', label: 'Within 100 miles' },
+    { value: '200', label: 'Within 200 miles' }
+  ]
+
+  // Get unique states and cities from leads
+  const availableStates = Array.from(new Set(leads.map(lead => lead.state))).sort()
+  const availableCities = selectedState === 'all' 
+    ? Array.from(new Set(leads.map(lead => lead.city))).sort()
+    : Array.from(new Set(leads.filter(lead => lead.state === selectedState).map(lead => lead.city))).sort()
+
+  // Reset city when state changes
+  useEffect(() => {
+    if (selectedState !== 'all') {
+      setSelectedCity('all')
     }
+  }, [selectedState])
+
+  const filteredLeads = leads.filter(lead => {
+    // Category filter
+    if (selectedCategory !== 'all' && !lead.businessType.toLowerCase().includes(selectedCategory)) return false
     
+    // Price filter
+    if (priceRange !== 'all') {
+      const price = lead.price
+      if (priceRange === '0-199' && price >= 200) return false
+      if (priceRange === '200-299' && (price < 200 || price > 299)) return false
+      if (priceRange === '300-499' && (price < 300 || price > 499)) return false
+      if (priceRange === '500+' && price < 500) return false
+    }
+
+    // State filter
+    if (selectedState !== 'all' && lead.state !== selectedState) return false
+
+    // City filter
+    if (selectedCity !== 'all' && lead.city !== selectedCity) return false
+
+    // Zip code filter (exact match or starts with)
+    if (zipCode && !lead.zipCode.startsWith(zipCode)) return false
+
+    // Only show available leads
     return lead.status === 'available'
   })
 
@@ -153,9 +189,55 @@ export default function MarketplacePage() {
       {/* Filters */}
       <div className="bg-warm-white border-b border-stone">
         <div className="mx-auto max-w-7xl px-6 py-6 lg:px-8">
-          <div className="flex flex-wrap items-center gap-6">
+          <div className="flex flex-wrap items-end gap-4">
+            {/* Location Filters */}
+            <div className="flex flex-wrap items-end gap-3 bg-white p-4 rounded-lg border border-gray-200">
+              <div className="text-sm font-semibold text-charcoal mb-2 w-full">📍 Location Filters</div>
+              
+              <div>
+                <label className="block text-xs font-medium text-stone mb-1">State</label>
+                <select
+                  value={selectedState}
+                  onChange={(e) => setSelectedState(e.target.value)}
+                  className="px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
+                >
+                  <option value="all">All States</option>
+                  {availableStates.map(state => (
+                    <option key={state} value={state}>{state}</option>
+                  ))}
+                </select>
+              </div>
+
+              <div>
+                <label className="block text-xs font-medium text-stone mb-1">City</label>
+                <select
+                  value={selectedCity}
+                  onChange={(e) => setSelectedCity(e.target.value)}
+                  className="px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
+                  disabled={selectedState === 'all'}
+                >
+                  <option value="all">All Cities</option>
+                  {availableCities.map(city => (
+                    <option key={city} value={city}>{city}</option>
+                  ))}
+                </select>
+              </div>
+
+              <div>
+                <label className="block text-xs font-medium text-stone mb-1">Zip Code</label>
+                <input
+                  type="text"
+                  placeholder="Enter zip..."
+                  value={zipCode}
+                  onChange={(e) => setZipCode(e.target.value)}
+                  className="px-3 py-2 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent w-24"
+                />
+              </div>
+            </div>
+
+            {/* Business & Price Filters */}
             <div>
-              <label className="block text-sm font-medium text-charcoal mb-2">Category</label>
+              <label className="block text-sm font-medium text-charcoal mb-2">Business Type</label>
               <select
                 value={selectedCategory}
                 onChange={(e) => setSelectedCategory(e.target.value)}
@@ -179,10 +261,87 @@ export default function MarketplacePage() {
                 ))}
               </select>
             </div>
+
+            {/* Clear Filters */}
+            <div>
+              <button
+                onClick={() => {
+                  setSelectedCategory('all')
+                  setPriceRange('all')
+                  setSelectedState('all')
+                  setSelectedCity('all')
+                  setZipCode('')
+                  setRadius('all')
+                }}
+                className="px-4 py-2 text-sm text-stone hover:text-charcoal border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors"
+              >
+                Clear All
+              </button>
+            </div>
             
+            {/* Active Filters */}
+            <div className="flex flex-wrap gap-2">
+              {selectedState !== 'all' && (
+                <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-navy/10 text-navy">
+                  State: {selectedState}
+                  <button 
+                    onClick={() => setSelectedState('all')}
+                    className="ml-1 hover:text-navy/70"
+                  >
+                    ×
+                  </button>
+                </span>
+              )}
+              {selectedCity !== 'all' && (
+                <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-navy/10 text-navy">
+                  City: {selectedCity}
+                  <button 
+                    onClick={() => setSelectedCity('all')}
+                    className="ml-1 hover:text-navy/70"
+                  >
+                    ×
+                  </button>
+                </span>
+              )}
+              {zipCode && (
+                <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-navy/10 text-navy">
+                  Zip: {zipCode}
+                  <button 
+                    onClick={() => setZipCode('')}
+                    className="ml-1 hover:text-navy/70"
+                  >
+                    ×
+                  </button>
+                </span>
+              )}
+              {selectedCategory !== 'all' && (
+                <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-bronze/10 text-bronze">
+                  {categories.find(c => c.value === selectedCategory)?.label}
+                  <button 
+                    onClick={() => setSelectedCategory('all')}
+                    className="ml-1 hover:text-bronze/70"
+                  >
+                    ×
+                  </button>
+                </span>
+              )}
+              {priceRange !== 'all' && (
+                <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-bronze/10 text-bronze">
+                  {priceRanges.find(p => p.value === priceRange)?.label}
+                  <button 
+                    onClick={() => setPriceRange('all')}
+                    className="ml-1 hover:text-bronze/70"
+                  >
+                    ×
+                  </button>
+                </span>
+              )}
+            </div>
+
+            {/* Results Count */}
             <div className="ml-auto">
               <div className="text-sm text-stone">
-                {filteredLeads.length} leads available
+                <span className="font-semibold text-navy">{filteredLeads.length}</span> leads available
               </div>
             </div>
           </div>
@@ -207,7 +366,25 @@ export default function MarketplacePage() {
           <div className="text-center py-12">
             <div className="text-6xl mb-4">🎯</div>
             <h3 className="text-lg font-semibold text-charcoal mb-2">No leads match your filters</h3>
-            <p className="text-stone">Try adjusting your category or price range</p>
+            <p className="text-stone mb-4">
+              {selectedState !== 'all' || selectedCity !== 'all' || zipCode 
+                ? 'Try expanding your location search or adjusting other filters'
+                : 'Try adjusting your business type or price range'
+              }
+            </p>
+            <button
+              onClick={() => {
+                setSelectedCategory('all')
+                setPriceRange('all')
+                setSelectedState('all')
+                setSelectedCity('all')
+                setZipCode('')
+                setRadius('all')
+              }}
+              className="px-4 py-2 bg-navy text-white rounded-lg hover:bg-navy/90 transition-colors"
+            >
+              Clear All Filters
+            </button>
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
