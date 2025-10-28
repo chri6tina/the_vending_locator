@@ -363,28 +363,56 @@ export default function MarketplacePage() {
             ))}
           </div>
         ) : filteredLeads.length === 0 ? (
-          <div className="text-center py-12">
-            <div className="text-6xl mb-4">🎯</div>
-            <h3 className="text-lg font-semibold text-charcoal mb-2">No leads match your filters</h3>
-            <p className="text-stone mb-4">
-              {selectedState !== 'all' || selectedCity !== 'all' || zipCode 
-                ? 'Try expanding your location search or adjusting other filters'
-                : 'Try adjusting your business type or price range'
-              }
-            </p>
-            <button
-              onClick={() => {
-                setSelectedCategory('all')
-                setPriceRange('all')
-                setSelectedState('all')
-                setSelectedCity('all')
-                setZipCode('')
-                setRadius('all')
-              }}
-              className="px-4 py-2 bg-navy text-white rounded-lg hover:bg-navy/90 transition-colors"
-            >
-              Clear All Filters
-            </button>
+          <div className="text-center py-16">
+            {leads.length === 0 ? (
+              // No leads at all - production ready state
+              <>
+                <div className="text-6xl mb-6">🚀</div>
+                <h3 className="text-2xl font-semibold text-charcoal mb-4">Marketplace Coming Soon</h3>
+                <p className="text-stone mb-6 max-w-md mx-auto">
+                  We're preparing premium hot leads for you. Check back soon or contact us to be notified when leads become available.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <a
+                    href="/contact"
+                    className="px-6 py-3 bg-navy text-white rounded-lg hover:bg-navy/90 transition-colors"
+                  >
+                    Get Notified
+                  </a>
+                  <a
+                    href="/hot-leads"
+                    className="px-6 py-3 border border-navy text-navy rounded-lg hover:bg-navy/5 transition-colors"
+                  >
+                    Learn More
+                  </a>
+                </div>
+              </>
+            ) : (
+              // Has leads but none match filters
+              <>
+                <div className="text-6xl mb-4">🎯</div>
+                <h3 className="text-lg font-semibold text-charcoal mb-2">No leads match your filters</h3>
+                <p className="text-stone mb-4">
+                  {selectedState !== 'all' || selectedCity !== 'all' || zipCode 
+                    ? 'Try expanding your location search or adjusting other filters'
+                    : 'Try adjusting your business type or price range'
+                  }
+                </p>
+                <button
+                  onClick={() => {
+                    setSelectedCategory('all')
+                    setPriceRange('all')
+                    setSelectedState('all')
+                    setSelectedCity('all')
+                    setZipCode('')
+                    setRadius('all')
+                  }}
+                  className="px-4 py-2 bg-navy text-white rounded-lg hover:bg-navy/90 transition-colors"
+                >
+                  Clear All Filters
+                </button>
+              </>
+            )}
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
