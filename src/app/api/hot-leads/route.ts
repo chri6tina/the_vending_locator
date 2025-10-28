@@ -29,6 +29,7 @@ export async function POST(request: NextRequest) {
       title: body.title,
       businessType: body.businessType,
       employeeCount: body.employeeCount,
+      zipCode: body.zipCode,
       description: body.description,
       price: parseFloat(body.price),
       status: 'available',

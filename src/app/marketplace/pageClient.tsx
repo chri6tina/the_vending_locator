@@ -20,6 +20,7 @@ interface HotLead {
   title: string
   businessType: string
   employeeCount: string
+  zipCode: string
   description: string
   price: number
   status: 'available' | 'sold' | 'pending'
@@ -32,6 +33,7 @@ export default function MarketplacePage() {
   const [loading, setLoading] = useState(true)
   const [selectedCategory, setSelectedCategory] = useState('all')
   const [priceRange, setPriceRange] = useState('all')
+  const [zipCode, setZipCode] = useState('')
 
   // Fetch leads from API
   useEffect(() => {
@@ -85,6 +87,9 @@ export default function MarketplacePage() {
       if (priceRange === '300-499' && (price < 300 || price > 499)) return false
       if (priceRange === '500+' && price < 500) return false
     }
+
+    // Zip code filter (exact match or starts with)
+    if (zipCode && !lead.zipCode.startsWith(zipCode)) return false
 
     // Only show available leads
     return lead.status === 'available'
@@ -175,12 +180,24 @@ export default function MarketplacePage() {
               </select>
             </div>
 
+            <div>
+              <label className="block text-sm font-medium text-charcoal mb-2">Zip Code</label>
+              <input
+                type="text"
+                placeholder="Enter zip code..."
+                value={zipCode}
+                onChange={(e) => setZipCode(e.target.value)}
+                className="px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
+              />
+            </div>
+
             {/* Clear Filters */}
             <div>
               <button
                 onClick={() => {
                   setSelectedCategory('all')
                   setPriceRange('all')
+                  setZipCode('')
                 }}
                 className="px-4 py-2 text-sm text-stone hover:text-charcoal border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors"
               >
@@ -207,6 +224,17 @@ export default function MarketplacePage() {
                   <button 
                     onClick={() => setPriceRange('all')}
                     className="ml-1 hover:text-bronze/70"
+                  >
+                    ×
+                  </button>
+                </span>
+              )}
+              {zipCode && (
+                <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-navy/10 text-navy">
+                  Zip: {zipCode}
+                  <button 
+                    onClick={() => setZipCode('')}
+                    className="ml-1 hover:text-navy/70"
                   >
                     ×
                   </button>
@@ -269,12 +297,13 @@ export default function MarketplacePage() {
                 <div className="text-6xl mb-4">🎯</div>
                 <h3 className="text-lg font-semibold text-charcoal mb-2">No leads match your filters</h3>
                 <p className="text-stone mb-4">
-                  Try adjusting your business type or price range to see more results.
+                  Try adjusting your business type, price range, or zip code to see more results.
                 </p>
                 <button
                   onClick={() => {
                     setSelectedCategory('all')
                     setPriceRange('all')
+                    setZipCode('')
                   }}
                   className="px-4 py-2 bg-navy text-white rounded-lg hover:bg-navy/90 transition-colors"
                 >
@@ -311,6 +340,10 @@ export default function MarketplacePage() {
                     <div className="flex items-center gap-2 text-sm text-stone">
                       <UsersIcon className="w-4 h-4" />
                       {lead.employeeCount} employees
+                    </div>
+                    <div className="flex items-center gap-2 text-sm text-stone">
+                      <MapPinIcon className="w-4 h-4" />
+                      {lead.zipCode}
                     </div>
                   </div>
                   

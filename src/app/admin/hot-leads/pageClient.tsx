@@ -9,6 +9,7 @@ interface HotLead {
   title: string
   businessType: string
   employeeCount: string
+  zipCode: string
   description: string
   price: number
   status: 'available' | 'sold' | 'pending'
@@ -55,6 +56,7 @@ export default function HotLeadsAdminPage() {
       title: formData.get('title') as string,
       businessType: formData.get('businessType') as string,
       employeeCount: formData.get('employeeCount') as string,
+      zipCode: formData.get('zipCode') as string,
       description: formData.get('description') as string,
       price: parseFloat(formData.get('price') as string)
     }
@@ -102,6 +104,7 @@ export default function HotLeadsAdminPage() {
       title: formData.get('title') as string,
       businessType: formData.get('businessType') as string,
       employeeCount: formData.get('employeeCount') as string,
+      zipCode: formData.get('zipCode') as string,
       description: formData.get('description') as string,
       price: parseFloat(formData.get('price') as string)
     }
@@ -249,7 +252,7 @@ export default function HotLeadsAdminPage() {
                   />
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                   <div>
                     <label className="block text-sm font-medium text-charcoal mb-2">
                       Price *
@@ -281,6 +284,19 @@ export default function HotLeadsAdminPage() {
                       <option value="500-1000">500-1000 employees</option>
                       <option value="1000+">1000+ employees</option>
                     </select>
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-medium text-charcoal mb-2">
+                      Zip Code *
+                    </label>
+                    <input
+                      type="text"
+                      name="zipCode"
+                      required
+                      placeholder="78701"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
+                    />
                   </div>
                 </div>
 
@@ -355,7 +371,7 @@ export default function HotLeadsAdminPage() {
                   />
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                   <div>
                     <label className="block text-sm font-medium text-charcoal mb-2">
                       Price *
@@ -389,6 +405,20 @@ export default function HotLeadsAdminPage() {
                       <option value="500-1000">500-1000 employees</option>
                       <option value="1000+">1000+ employees</option>
                     </select>
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-medium text-charcoal mb-2">
+                      Zip Code *
+                    </label>
+                    <input
+                      type="text"
+                      name="zipCode"
+                      required
+                      defaultValue={editingLead.zipCode}
+                      placeholder="78701"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
+                    />
                   </div>
                 </div>
 
@@ -478,7 +508,7 @@ export default function HotLeadsAdminPage() {
                           </span>
                         </div>
                         
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm text-stone mb-4">
+                        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 text-sm text-stone mb-4">
                           <div className="flex items-center gap-2">
                             <BuildingOfficeIcon className="w-4 h-4" />
                             {lead.businessType}
@@ -486,6 +516,10 @@ export default function HotLeadsAdminPage() {
                           <div className="flex items-center gap-2">
                             <UsersIcon className="w-4 h-4" />
                             {lead.employeeCount} employees
+                          </div>
+                          <div className="flex items-center gap-2">
+                            <MapPinIcon className="w-4 h-4" />
+                            {lead.zipCode}
                           </div>
                           <div className="flex items-center gap-2">
                             <CurrencyDollarIcon className="w-4 h-4" />
