@@ -7,14 +7,14 @@ import { PlusIcon, EyeIcon, CurrencyDollarIcon, MapPinIcon, BuildingOfficeIcon, 
 interface HotLead {
   id: string
   title: string
-  businessType: string
-  employeeCount: string
-  zipCode: string
+  business_type: string
+  employee_count: string
+  zip_code: string
   description: string
   price: number
   status: 'available' | 'sold' | 'pending'
-  createdAt: Date
-  soldAt?: Date
+  created_at: string
+  sold_at?: string
 }
 
 export default function HotLeadsAdminPage() {
@@ -34,10 +34,7 @@ export default function HotLeadsAdminPage() {
       const response = await fetch('/api/hot-leads')
       const data = await response.json()
       if (data.success) {
-        setLeads(data.leads.map((lead: any) => ({
-          ...lead,
-          createdAt: new Date(lead.createdAt)
-        })))
+        setLeads(data.leads || [])
       }
     } catch (error) {
       console.error('Failed to fetch leads:', error)
@@ -75,11 +72,7 @@ export default function HotLeadsAdminPage() {
       const data = await response.json()
       if (data.success) {
         // Add new lead to the list
-        const newLead = {
-          ...data.lead,
-          createdAt: new Date(data.lead.createdAt)
-        }
-        setLeads(prev => [newLead, ...prev])
+        setLeads(prev => [data.lead, ...prev])
         setShowCreateForm(false)
         e.currentTarget.reset()
       } else {
@@ -123,12 +116,8 @@ export default function HotLeadsAdminPage() {
       const data = await response.json()
       if (data.success) {
         // Update lead in the list
-        const updatedLead = {
-          ...data.lead,
-          createdAt: new Date(data.lead.createdAt)
-        }
         setLeads(prev => prev.map(lead => 
-          lead.id === editingLead.id ? updatedLead : lead
+          lead.id === editingLead.id ? data.lead : lead
         ))
         setEditingLead(null)
       } else {
@@ -397,7 +386,7 @@ export default function HotLeadsAdminPage() {
                     <select
                       name="employeeCount"
                       required
-                      defaultValue={editingLead.employeeCount}
+                      defaultValue={editingLead.employee_count}
                       className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
                     >
                       <option value="">Select range...</option>
@@ -417,7 +406,7 @@ export default function HotLeadsAdminPage() {
                       type="text"
                       name="zipCode"
                       required
-                      defaultValue={editingLead.zipCode}
+                      defaultValue={editingLead.zip_code}
                       placeholder="78701"
                       className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
                     />
@@ -432,7 +421,7 @@ export default function HotLeadsAdminPage() {
                     type="text"
                     name="businessType"
                     required
-                    defaultValue={editingLead.businessType}
+                    defaultValue={editingLead.business_type}
                     placeholder="e.g., Office Building, Manufacturing, Healthcare, etc."
                     className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
                   />
@@ -513,15 +502,15 @@ export default function HotLeadsAdminPage() {
                         <div className="grid grid-cols-1 md:grid-cols-4 gap-4 text-sm text-stone mb-4">
                           <div className="flex items-center gap-2">
                             <BuildingOfficeIcon className="w-4 h-4" />
-                            {lead.businessType}
+                            {lead.business_type}
                           </div>
                           <div className="flex items-center gap-2">
                             <UsersIcon className="w-4 h-4" />
-                            {lead.employeeCount} employees
+                            {lead.employee_count} employees
                           </div>
                           <div className="flex items-center gap-2">
                             <MapPinIcon className="w-4 h-4" />
-                            {lead.zipCode}
+                            {lead.zip_code}
                           </div>
                           <div className="flex items-center gap-2">
                             <CurrencyDollarIcon className="w-4 h-4" />

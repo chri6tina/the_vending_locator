@@ -1,17 +1,28 @@
 import { NextRequest, NextResponse } from 'next/server'
-
-// Production-ready storage - starts empty for real leads only
-// In production, this should be replaced with a proper database
-let leads: any[] = []
+import { supabase } from '@/lib/supabase'
 
 // GET - Retrieve all leads
 export async function GET() {
   try {
+    const { data: leads, error } = await supabase
+      .from('hot_leads')
+      .select('*')
+      .order('created_at', { ascending: false })
+
+    if (error) {
+      console.error('Supabase error:', error)
+      return NextResponse.json({ 
+        success: false, 
+        error: 'Failed to fetch leads from database' 
+      }, { status: 500 })
+    }
+
     return NextResponse.json({ 
       success: true, 
-      leads: leads.sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
+      leads: leads || []
     })
   } catch (error) {
+    console.error('Database error:', error)
     return NextResponse.json({ 
       success: false, 
       error: 'Failed to fetch leads' 
@@ -41,19 +52,27 @@ export async function POST(request: NextRequest) {
       }, { status: 400 })
     }
     
-    const newLead = {
-      id: `lead-${Date.now()}`,
-      title: body.title.trim(),
-      businessType: body.businessType.trim(),
-      employeeCount: body.employeeCount,
-      zipCode: body.zipCode.trim(),
-      description: body.description.trim(),
-      price: price,
-      status: 'available',
-      createdAt: new Date().toISOString()
+    const { data: newLead, error } = await supabase
+      .from('hot_leads')
+      .insert([{
+        title: body.title.trim(),
+        business_type: body.businessType.trim(),
+        employee_count: body.employeeCount,
+        zip_code: body.zipCode.trim(),
+        description: body.description.trim(),
+        price: price,
+        status: 'available'
+      }])
+      .select()
+      .single()
+
+    if (error) {
+      console.error('Supabase insert error:', error)
+      return NextResponse.json({ 
+        success: false, 
+        error: 'Failed to save lead to database: ' + error.message 
+      }, { status: 500 })
     }
-    
-    leads.unshift(newLead) // Add to beginning of array
     
     return NextResponse.json({ 
       success: true, 
@@ -74,21 +93,45 @@ export async function PUT(request: NextRequest) {
     const body = await request.json()
     const { id, ...updates } = body
     
-    const leadIndex = leads.findIndex(lead => lead.id === id)
-    if (leadIndex === -1) {
+    // Convert camelCase to snake_case for database
+    const dbUpdates: any = {}
+    if (updates.title) dbUpdates.title = updates.title
+    if (updates.businessType) dbUpdates.business_type = updates.businessType
+    if (updates.employeeCount) dbUpdates.employee_count = updates.employeeCount
+    if (updates.zipCode) dbUpdates.zip_code = updates.zipCode
+    if (updates.description) dbUpdates.description = updates.description
+    if (updates.price) dbUpdates.price = updates.price
+    if (updates.status) dbUpdates.status = updates.status
+    if (updates.status === 'sold') dbUpdates.sold_at = new Date().toISOString()
+    
+    const { data: updatedLead, error } = await supabase
+      .from('hot_leads')
+      .update(dbUpdates)
+      .eq('id', id)
+      .select()
+      .single()
+
+    if (error) {
+      console.error('Supabase update error:', error)
+      return NextResponse.json({ 
+        success: false, 
+        error: 'Failed to update lead: ' + error.message 
+      }, { status: 500 })
+    }
+
+    if (!updatedLead) {
       return NextResponse.json({ 
         success: false, 
         error: 'Lead not found' 
       }, { status: 404 })
     }
     
-    leads[leadIndex] = { ...leads[leadIndex], ...updates }
-    
     return NextResponse.json({ 
       success: true, 
-      lead: leads[leadIndex] 
+      lead: updatedLead 
     })
   } catch (error) {
+    console.error('Error updating lead:', error)
     return NextResponse.json({ 
       success: false, 
       error: 'Failed to update lead' 

@@ -18,14 +18,14 @@ import {
 interface HotLead {
   id: string
   title: string
-  businessType: string
-  employeeCount: string
-  zipCode: string
+  business_type: string
+  employee_count: string
+  zip_code: string
   description: string
   price: number
   status: 'available' | 'sold' | 'pending'
-  createdAt: Date
-  soldAt?: Date
+  created_at: string
+  sold_at?: string
 }
 
 export default function MarketplacePage() {
@@ -45,10 +45,7 @@ export default function MarketplacePage() {
       const response = await fetch('/api/hot-leads')
       const data = await response.json()
       if (data.success) {
-        setLeads(data.leads.map((lead: any) => ({
-          ...lead,
-          createdAt: new Date(lead.createdAt)
-        })))
+        setLeads(data.leads || [])
       }
     } catch (error) {
       console.error('Failed to fetch leads:', error)
@@ -77,7 +74,7 @@ export default function MarketplacePage() {
 
   const filteredLeads = leads.filter(lead => {
     // Category filter
-    if (selectedCategory !== 'all' && !lead.businessType.toLowerCase().includes(selectedCategory)) return false
+    if (selectedCategory !== 'all' && !lead.business_type.toLowerCase().includes(selectedCategory)) return false
     
     // Price filter
     if (priceRange !== 'all') {
@@ -89,7 +86,7 @@ export default function MarketplacePage() {
     }
 
     // Zip code filter (exact match or starts with)
-    if (zipCode && !lead.zipCode.startsWith(zipCode)) return false
+    if (zipCode && !lead.zip_code.startsWith(zipCode)) return false
 
     // Only show available leads
     return lead.status === 'available'
@@ -335,15 +332,15 @@ export default function MarketplacePage() {
                   <div className="space-y-3 mb-6">
                     <div className="flex items-center gap-2 text-sm text-stone">
                       <BuildingOfficeIcon className="w-4 h-4" />
-                      {lead.businessType}
+                      {lead.business_type}
                     </div>
                     <div className="flex items-center gap-2 text-sm text-stone">
                       <UsersIcon className="w-4 h-4" />
-                      {lead.employeeCount} employees
+                      {lead.employee_count} employees
                     </div>
                     <div className="flex items-center gap-2 text-sm text-stone">
                       <MapPinIcon className="w-4 h-4" />
-                      {lead.zipCode}
+                      {lead.zip_code}
                     </div>
                   </div>
                   
