@@ -33,6 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-export default function MountVernonNew YorkServicesPage() {
+export default function MountVernonNewYorkServicesPage() {
   return <PageClient />
 }
