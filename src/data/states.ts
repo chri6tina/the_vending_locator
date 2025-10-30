@@ -70,25 +70,64 @@ const states: State[] = [
     slug: 'california',
     cities: [
       { name: 'Anaheim', slug: 'anaheim-california' },
+      { name: 'Antioch', slug: 'antioch-california' },
       { name: 'Bakersfield', slug: 'bakersfield-california' },
+      { name: 'Berkeley', slug: 'berkeley-california' },
+      { name: 'Carlsbad', slug: 'carlsbad-california' },
+      { name: 'Chula Vista', slug: 'chula-vista-california' },
+      { name: 'Clovis', slug: 'clovis-california' },
+      { name: 'Concord', slug: 'concord-california' },
+      { name: 'Corona', slug: 'corona-california' },
+      { name: 'Daly City', slug: 'daly-city-california' },
+      { name: 'Downey', slug: 'downey-california' },
+      { name: 'Elk Grove', slug: 'elk-grove-california' },
+      { name: 'Escondido', slug: 'escondido-california' },
+      { name: 'Fairfield', slug: 'fairfield-california' },
+      { name: 'Fontana', slug: 'fontana-california' },
       { name: 'Fremont', slug: 'fremont-california' },
       { name: 'Fresno', slug: 'fresno-california' },
+      { name: 'Garden Grove', slug: 'garden-grove-california' },
       { name: 'Glendale', slug: 'glendale-california' },
+      { name: 'Hayward', slug: 'hayward-california' },
       { name: 'Huntington Beach', slug: 'huntington-beach-california' },
+      { name: 'Inglewood', slug: 'inglewood-california' },
       { name: 'Irvine', slug: 'irvine-california' },
+      { name: 'Jurupa Valley', slug: 'jurupa-valley-california' },
+      { name: 'Lakewood', slug: 'lakewood-california' },
       { name: 'Long Beach', slug: 'long-beach-california' },
       { name: 'Los Angeles', slug: 'los-angeles-california' },
       { name: 'Modesto', slug: 'modesto-california' },
+      { name: 'Moreno Valley', slug: 'moreno-valley-california' },
+      { name: 'Murrieta', slug: 'murrieta-california' },
       { name: 'Oakland', slug: 'oakland-california' },
+      { name: 'Oceanside', slug: 'oceanside-california' },
+      { name: 'Ontario', slug: 'ontario-california' },
       { name: 'Oxnard', slug: 'oxnard-california' },
+      { name: 'Palmdale', slug: 'palmdale-california' },
+      { name: 'Pasadena', slug: 'pasadena-california' },
+      { name: 'Pomona', slug: 'pomona-california' },
+      { name: 'Rancho Cucamonga', slug: 'rancho-cucamonga-california' },
+      { name: 'Rialto', slug: 'rialto-california' },
+      { name: 'Richmond', slug: 'richmond-california' },
       { name: 'Riverside', slug: 'riverside-california' },
+      { name: 'Roseville', slug: 'roseville-california' },
       { name: 'Sacramento', slug: 'sacramento-california' },
-      { name: 'San Diego', slug: 'san-diego-california' },
+      { name: 'Salinas', slug: 'salinas-california' },
       { name: 'San Bernardino', slug: 'san-bernardino-california' },
+      { name: 'San Diego', slug: 'san-diego-california' },
       { name: 'San Francisco', slug: 'san-francisco-california' },
       { name: 'San Jose', slug: 'san-jose-california' },
       { name: 'Santa Ana', slug: 'santa-ana-california' },
-      { name: 'Stockton', slug: 'stockton-california' }
+      { name: 'Santa Clarita', slug: 'santa-clarita-california' },
+      { name: 'Santa Maria', slug: 'santa-maria-california' },
+      { name: 'Simi Valley', slug: 'simi-valley-california' },
+      { name: 'Stockton', slug: 'stockton-california' },
+      { name: 'Sunnyvale', slug: 'sunnyvale-california' },
+      { name: 'Temecula', slug: 'temecula-california' },
+      { name: 'Thousand Oaks', slug: 'thousand-oaks-california' },
+      { name: 'Torrance', slug: 'torrance-california' },
+      { name: 'Ventura', slug: 'ventura-california' },
+      { name: 'Visalia', slug: 'visalia-california' }
     ]
   },
   {
@@ -98,6 +137,7 @@ const states: State[] = [
       { name: 'Arvada', slug: 'arvada-colorado' },
       { name: 'Aurora', slug: 'aurora-colorado' },
       { name: 'Boulder', slug: 'boulder-colorado' },
+      { name: 'Centennial', slug: 'centennial-colorado' },
       { name: 'Colorado Springs', slug: 'colorado-springs-colorado' },
       { name: 'Denver', slug: 'denver-colorado' },
       { name: 'Fort Collins', slug: 'fort-collins-colorado' },
@@ -329,6 +369,7 @@ const states: State[] = [
       { name: 'Boston', slug: 'boston-massachusetts' },
       { name: 'Cambridge', slug: 'cambridge-massachusetts' },
       { name: 'Fall River', slug: 'fall-river-massachusetts' },
+      { name: 'Lowell', slug: 'lowell-massachusetts' },
       { name: 'Springfield', slug: 'springfield-massachusetts' },
       { name: 'Worcester', slug: 'worcester-massachusetts' }
     ]
@@ -337,18 +378,22 @@ const states: State[] = [
     name: 'Michigan',
     slug: 'michigan',
     cities: [
+      { name: 'Dearborn', slug: 'dearborn-michigan' },
       { name: 'Detroit', slug: 'detroit-michigan' },
       { name: 'Flint', slug: 'flint-michigan' },
       { name: 'Grand Rapids', slug: 'grand-rapids-michigan' },
       { name: 'Kalamazoo', slug: 'kalamazoo-michigan' },
       { name: 'Lansing', slug: 'lansing-michigan' },
-      { name: 'Saginaw', slug: 'saginaw-michigan' }
+      { name: 'Saginaw', slug: 'saginaw-michigan' },
+      { name: 'Sterling Heights', slug: 'sterling-heights-michigan' },
+      { name: 'Warren', slug: 'warren-michigan' }
     ]
   },
   {
     name: 'Minnesota',
     slug: 'minnesota',
     cities: [
+      { name: 'Duluth', slug: 'duluth-minnesota' },
       { name: 'Minneapolis', slug: 'minneapolis-minnesota' },
       { name: 'Rochester', slug: 'rochester-minnesota' },
       { name: 'Saint Paul', slug: 'saint-paul-minnesota' }
@@ -402,12 +447,13 @@ const states: State[] = [
     name: 'Nevada',
     slug: 'nevada',
     cities: [
-      { name: 'Las Vegas', slug: 'las-vegas-nevada' },
+      { name: 'Carson City', slug: 'carson-city-nevada' },
+      { name: 'Enterprise', slug: 'enterprise-nevada' },
       { name: 'Henderson', slug: 'henderson-nevada' },
-      { name: 'Reno', slug: 'reno-nevada' },
+      { name: 'Las Vegas', slug: 'las-vegas-nevada' },
       { name: 'North Las Vegas', slug: 'north-las-vegas-nevada' },
-      { name: 'Sparks', slug: 'sparks-nevada' },
-      { name: 'Carson City', slug: 'carson-city-nevada' }
+      { name: 'Reno', slug: 'reno-nevada' },
+      { name: 'Sparks', slug: 'sparks-nevada' }
     ]
   },
   {
@@ -471,7 +517,9 @@ const states: State[] = [
       { name: 'Durham', slug: 'durham-north-carolina' },
       { name: 'Fayetteville', slug: 'fayetteville-north-carolina' },
       { name: 'Greensboro', slug: 'greensboro-north-carolina' },
+      { name: 'High Point', slug: 'high-point-north-carolina' },
       { name: 'Raleigh', slug: 'raleigh-north-carolina' },
+      { name: 'Wilmington', slug: 'wilmington-north-carolina' },
       { name: 'Winston-Salem', slug: 'winston-salem-north-carolina' }
     ]
   },
@@ -500,6 +548,8 @@ const states: State[] = [
     name: 'Oklahoma',
     slug: 'oklahoma',
     cities: [
+      { name: 'Broken Arrow', slug: 'broken-arrow-oklahoma' },
+      { name: 'Norman', slug: 'norman-oklahoma' },
       { name: 'Oklahoma City', slug: 'oklahoma-city-oklahoma' },
       { name: 'Tulsa', slug: 'tulsa-oklahoma' }
     ]
@@ -575,6 +625,7 @@ const states: State[] = [
     name: 'Texas',
     slug: 'texas',
     cities: [
+      { name: 'Abilene', slug: 'abilene-texas' },
       { name: 'Amarillo', slug: 'amarillo-texas' },
       { name: 'Arlington', slug: 'arlington-texas' },
       { name: 'Austin', slug: 'austin-texas' },
@@ -612,9 +663,13 @@ const states: State[] = [
     name: 'Utah',
     slug: 'utah',
     cities: [
-      { name: 'Salt Lake City', slug: 'salt-lake-city-utah' },
+      { name: 'Ogden', slug: 'ogden-utah' },
+      { name: 'Orem', slug: 'orem-utah' },
       { name: 'Provo', slug: 'provo-utah' },
-      { name: 'Ogden', slug: 'ogden-utah' }
+      { name: 'Salt Lake City', slug: 'salt-lake-city-utah' },
+      { name: 'Sandy', slug: 'sandy-utah' },
+      { name: 'West Jordan', slug: 'west-jordan-utah' },
+      { name: 'West Valley City', slug: 'west-valley-city-utah' }
     ]
   },
   {
@@ -642,6 +697,7 @@ const states: State[] = [
       { name: 'Bellevue', slug: 'bellevue-washington' },
       { name: 'Everett', slug: 'everett-washington' },
       { name: 'Kent', slug: 'kent-washington' },
+      { name: 'Renton', slug: 'renton-washington' },
       { name: 'Seattle', slug: 'seattle-washington' },
       { name: 'Spokane', slug: 'spokane-washington' },
       { name: 'Tacoma', slug: 'tacoma-washington' },
@@ -675,6 +731,8 @@ const states: State[] = [
     name: 'Wisconsin',
     slug: 'wisconsin',
     cities: [
+      { name: 'Green Bay', slug: 'green-bay-wisconsin' },
+      { name: 'Kenosha', slug: 'kenosha-wisconsin' },
       { name: 'Madison', slug: 'madison-wisconsin' },
       { name: 'Milwaukee', slug: 'milwaukee-wisconsin' }
     ]
