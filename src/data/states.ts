@@ -73,19 +73,24 @@ const states: State[] = [
       { name: 'Antioch', slug: 'antioch-california' },
       { name: 'Bakersfield', slug: 'bakersfield-california' },
       { name: 'Berkeley', slug: 'berkeley-california' },
+      { name: 'Burbank', slug: 'burbank-california' },
       { name: 'Carlsbad', slug: 'carlsbad-california' },
       { name: 'Chula Vista', slug: 'chula-vista-california' },
       { name: 'Clovis', slug: 'clovis-california' },
+      { name: 'Compton', slug: 'compton-california' },
       { name: 'Concord', slug: 'concord-california' },
       { name: 'Corona', slug: 'corona-california' },
+      { name: 'Costa Mesa', slug: 'costa-mesa-california' },
       { name: 'Daly City', slug: 'daly-city-california' },
       { name: 'Downey', slug: 'downey-california' },
+      { name: 'El Monte', slug: 'el-monte-california' },
       { name: 'Elk Grove', slug: 'elk-grove-california' },
       { name: 'Escondido', slug: 'escondido-california' },
       { name: 'Fairfield', slug: 'fairfield-california' },
       { name: 'Fontana', slug: 'fontana-california' },
       { name: 'Fremont', slug: 'fremont-california' },
       { name: 'Fresno', slug: 'fresno-california' },
+      { name: 'Fullerton', slug: 'fullerton-california' },
       { name: 'Garden Grove', slug: 'garden-grove-california' },
       { name: 'Glendale', slug: 'glendale-california' },
       { name: 'Hayward', slug: 'hayward-california' },
@@ -99,9 +104,11 @@ const states: State[] = [
       { name: 'Modesto', slug: 'modesto-california' },
       { name: 'Moreno Valley', slug: 'moreno-valley-california' },
       { name: 'Murrieta', slug: 'murrieta-california' },
+      { name: 'Norwalk', slug: 'norwalk-california' },
       { name: 'Oakland', slug: 'oakland-california' },
       { name: 'Oceanside', slug: 'oceanside-california' },
       { name: 'Ontario', slug: 'ontario-california' },
+      { name: 'Orange', slug: 'orange-california' },
       { name: 'Oxnard', slug: 'oxnard-california' },
       { name: 'Palmdale', slug: 'palmdale-california' },
       { name: 'Pasadena', slug: 'pasadena-california' },
@@ -126,8 +133,11 @@ const states: State[] = [
       { name: 'Temecula', slug: 'temecula-california' },
       { name: 'Thousand Oaks', slug: 'thousand-oaks-california' },
       { name: 'Torrance', slug: 'torrance-california' },
+      { name: 'Vallejo', slug: 'vallejo-california' },
       { name: 'Ventura', slug: 'ventura-california' },
-      { name: 'Visalia', slug: 'visalia-california' }
+      { name: 'Victorville', slug: 'victorville-california' },
+      { name: 'Visalia', slug: 'visalia-california' },
+      { name: 'West Covina', slug: 'west-covina-california' }
     ]
   },
   {
@@ -329,8 +339,10 @@ const states: State[] = [
     name: 'Louisiana',
     slug: 'louisiana',
     cities: [
+      { name: 'Alexandria', slug: 'alexandria-louisiana' },
       { name: 'Baton Rouge', slug: 'baton-rouge-louisiana' },
       { name: 'Bossier City', slug: 'bossier-city-louisiana' },
+      { name: 'Houma', slug: 'houma-louisiana' },
       { name: 'Kenner', slug: 'kenner-louisiana' },
       { name: 'Lafayette', slug: 'lafayette-louisiana' },
       { name: 'Lake Charles', slug: 'lake-charles-louisiana' },
@@ -380,13 +392,18 @@ const states: State[] = [
     cities: [
       { name: 'Dearborn', slug: 'dearborn-michigan' },
       { name: 'Detroit', slug: 'detroit-michigan' },
+      { name: 'Farmington Hills', slug: 'farmington-hills-michigan' },
       { name: 'Flint', slug: 'flint-michigan' },
       { name: 'Grand Rapids', slug: 'grand-rapids-michigan' },
       { name: 'Kalamazoo', slug: 'kalamazoo-michigan' },
       { name: 'Lansing', slug: 'lansing-michigan' },
+      { name: 'Livonia', slug: 'livonia-michigan' },
+      { name: 'Rochester Hills', slug: 'rochester-hills-michigan' },
       { name: 'Saginaw', slug: 'saginaw-michigan' },
       { name: 'Sterling Heights', slug: 'sterling-heights-michigan' },
-      { name: 'Warren', slug: 'warren-michigan' }
+      { name: 'Troy', slug: 'troy-michigan' },
+      { name: 'Warren', slug: 'warren-michigan' },
+      { name: 'Westland', slug: 'westland-michigan' }
     ]
   },
   {
@@ -536,10 +553,14 @@ const states: State[] = [
     slug: 'ohio',
     cities: [
       { name: 'Akron', slug: 'akron-ohio' },
+      { name: 'Canton', slug: 'canton-ohio' },
       { name: 'Cincinnati', slug: 'cincinnati-ohio' },
       { name: 'Cleveland', slug: 'cleveland-ohio' },
       { name: 'Columbus', slug: 'columbus-ohio' },
       { name: 'Dayton', slug: 'dayton-ohio' },
+      { name: 'Lorain', slug: 'lorain-ohio' },
+      { name: 'Parma', slug: 'parma-ohio' },
+      { name: 'Springfield', slug: 'springfield-ohio' },
       { name: 'Toledo', slug: 'toledo-ohio' },
       { name: 'Youngstown', slug: 'youngstown-ohio' }
     ]
@@ -684,7 +705,11 @@ const states: State[] = [
     name: 'Virginia',
     slug: 'virginia',
     cities: [
+      { name: 'Alexandria', slug: 'alexandria-virginia' },
+      { name: 'Arlington', slug: 'arlington-virginia' },
       { name: 'Chesapeake', slug: 'chesapeake-virginia' },
+      { name: 'Hampton', slug: 'hampton-virginia' },
+      { name: 'Newport News', slug: 'newport-news-virginia' },
       { name: 'Norfolk', slug: 'norfolk-virginia' },
       { name: 'Richmond', slug: 'richmond-virginia' },
       { name: 'Virginia Beach', slug: 'virginia-beach-virginia' }

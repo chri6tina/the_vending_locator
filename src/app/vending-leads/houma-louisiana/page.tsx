@@ -1,0 +1,38 @@
+import { Metadata } from 'next'
+import PageClient from './pageClient'
+
+export const metadata: Metadata = {
+  "title": "Vending Machine Leads in Houma, Louisiana - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Houma, Louisiana. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines houma louisiana, vending leads houma louisiana, vending locations houma louisiana, vending opportunities houma louisiana",
+  "alternates": {
+    "canonical": "https://www.thevendinglocator.com/vending-leads/houma-louisiana"
+  },
+  "openGraph": {
+    "title": "Vending Machine Leads in Houma, Louisiana - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Houma, Louisiana. Find qualified businesses for vending machine placement.",
+    "url": "https://www.thevendinglocator.com/vending-leads/houma-louisiana",
+    "siteName": "The Vending Locator",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Vending Machine Leads in Houma, Louisiana - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Houma, Louisiana. Find qualified businesses for vending machine placement."
+  },
+  "robots": {
+    "index": true,
+    "follow": true,
+    "googleBot": {
+      "index": true,
+      "follow": true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1
+    }
+  }
+}
+
+export default function CityPage() {
+  return <PageClient />
+}
