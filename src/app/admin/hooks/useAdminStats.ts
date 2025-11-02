@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { states } from '@/data/states'
+import states from '@/data/states'
 
 interface AdminStats {
   vendingLeadsPages: number

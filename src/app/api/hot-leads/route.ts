@@ -4,6 +4,14 @@ import { supabase } from '@/lib/supabase'
 // GET - Retrieve all leads
 export async function GET() {
   try {
+    // Check if Supabase is configured
+    if (!process.env.NEXT_PUBLIC_SUPABASE_URL) {
+      return NextResponse.json({ 
+        success: true, 
+        leads: []
+      })
+    }
+
     const { data: leads, error } = await supabase
       .from('hot_leads')
       .select('*')
@@ -33,6 +41,14 @@ export async function GET() {
 // POST - Create new lead
 export async function POST(request: NextRequest) {
   try {
+    // Check if Supabase is configured
+    if (!process.env.NEXT_PUBLIC_SUPABASE_URL) {
+      return NextResponse.json({ 
+        success: false, 
+        error: 'Database not configured' 
+      }, { status: 503 })
+    }
+
     const body = await request.json()
     
     // Validate required fields
@@ -90,6 +106,14 @@ export async function POST(request: NextRequest) {
 // PUT - Update lead (for marking as sold, etc.)
 export async function PUT(request: NextRequest) {
   try {
+    // Check if Supabase is configured
+    if (!process.env.NEXT_PUBLIC_SUPABASE_URL) {
+      return NextResponse.json({ 
+        success: false, 
+        error: 'Database not configured' 
+      }, { status: 503 })
+    }
+
     const body = await request.json()
     const { id, ...updates } = body
     
