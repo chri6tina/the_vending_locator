@@ -33,6 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-export default function SyracuseNew YorkServicesPage() {
+export default function SyracuseNewYorkServicesPage() {
   return <PageClient />
 }
