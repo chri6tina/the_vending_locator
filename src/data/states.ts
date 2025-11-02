@@ -9,7 +9,9 @@ const states: State[] = [
     cities: [
       { name: 'Auburn', slug: 'auburn-alabama' },
       { name: 'Birmingham', slug: 'birmingham-alabama' },
+      { name: 'Decatur', slug: 'decatur-alabama' },
       { name: 'Dothan', slug: 'dothan-alabama' },
+      { name: 'Hoover', slug: 'hoover-alabama' },
       { name: 'Huntsville', slug: 'huntsville-alabama' },
       { name: 'Mobile', slug: 'mobile-alabama' },
       { name: 'Montgomery', slug: 'montgomery-alabama' },
@@ -137,7 +139,17 @@ const states: State[] = [
       { name: 'Ventura', slug: 'ventura-california' },
       { name: 'Victorville', slug: 'victorville-california' },
       { name: 'Visalia', slug: 'visalia-california' },
-      { name: 'West Covina', slug: 'west-covina-california' }
+      { name: 'West Covina', slug: 'west-covina-california' },
+      { name: 'Alhambra', slug: 'alhambra-california' },
+      { name: 'Carson', slug: 'carson-california' },
+      { name: 'Chico', slug: 'chico-california' },
+      { name: 'Hawthorne', slug: 'hawthorne-california' },
+      { name: 'Redding', slug: 'redding-california' },
+      { name: 'San Mateo', slug: 'san-mateo-california' },
+      { name: 'Santa Barbara', slug: 'santa-barbara-california' },
+      { name: 'Santa Rosa', slug: 'santa-rosa-california' },
+      { name: 'Vacaville', slug: 'vacaville-california' },
+      { name: 'Whittier', slug: 'whittier-california' }
     ]
   },
   {
@@ -403,7 +415,13 @@ const states: State[] = [
       { name: 'Sterling Heights', slug: 'sterling-heights-michigan' },
       { name: 'Troy', slug: 'troy-michigan' },
       { name: 'Warren', slug: 'warren-michigan' },
-      { name: 'Westland', slug: 'westland-michigan' }
+      { name: 'Westland', slug: 'westland-michigan' },
+      { name: 'Birmingham', slug: 'birmingham-michigan' },
+      { name: 'Kentwood', slug: 'kentwood-michigan' },
+      { name: 'Novi', slug: 'novi-michigan' },
+      { name: 'Pontiac', slug: 'pontiac-michigan' },
+      { name: 'Taylor', slug: 'taylor-michigan' },
+      { name: 'Wyoming', slug: 'wyoming-michigan' }
     ]
   },
   {
@@ -579,9 +597,14 @@ const states: State[] = [
     name: 'Oregon',
     slug: 'oregon',
     cities: [
+      { name: 'Beaverton', slug: 'beaverton-oregon' },
+      { name: 'Bend', slug: 'bend-oregon' },
+      { name: 'Eugene', slug: 'eugene-oregon' },
+      { name: 'Gresham', slug: 'gresham-oregon' },
+      { name: 'Hillsboro', slug: 'hillsboro-oregon' },
+      { name: 'Medford', slug: 'medford-oregon' },
       { name: 'Portland', slug: 'portland-oregon' },
-      { name: 'Salem', slug: 'salem-oregon' },
-      { name: 'Eugene', slug: 'eugene-oregon' }
+      { name: 'Salem', slug: 'salem-oregon' }
     ]
   },
   {
@@ -651,6 +674,7 @@ const states: State[] = [
       { name: 'Arlington', slug: 'arlington-texas' },
       { name: 'Austin', slug: 'austin-texas' },
       { name: 'Beaumont', slug: 'beaumont-texas' },
+      { name: 'College Station', slug: 'college-station-texas' },
       { name: 'Corpus Christi', slug: 'corpus-christi-texas' },
       { name: 'Dallas', slug: 'dallas-texas' },
       { name: 'El Paso', slug: 'el-paso-texas' },
@@ -709,9 +733,13 @@ const states: State[] = [
       { name: 'Arlington', slug: 'arlington-virginia' },
       { name: 'Chesapeake', slug: 'chesapeake-virginia' },
       { name: 'Hampton', slug: 'hampton-virginia' },
+      { name: 'Lynchburg', slug: 'lynchburg-virginia' },
       { name: 'Newport News', slug: 'newport-news-virginia' },
       { name: 'Norfolk', slug: 'norfolk-virginia' },
+      { name: 'Portsmouth', slug: 'portsmouth-virginia' },
       { name: 'Richmond', slug: 'richmond-virginia' },
+      { name: 'Roanoke', slug: 'roanoke-virginia' },
+      { name: 'Suffolk', slug: 'suffolk-virginia' },
       { name: 'Virginia Beach', slug: 'virginia-beach-virginia' }
     ]
   },
