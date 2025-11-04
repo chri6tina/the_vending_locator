@@ -39,7 +39,74 @@ export async function POST(request: NextRequest) {
     }
 
     // Parse and validate payload
-    const { email, zipCode, planName, planPrice, planId } = await request.json()
+    const payload = await request.json()
+    
+    // Handle hot lead purchase (new format)
+    if (payload.items && payload.metadata?.productType === 'hot-lead') {
+      const item = payload.items[0]
+      const { metadata, successUrl, cancelUrl } = payload
+      
+      if (!item.name || !item.price) {
+        return NextResponse.json(
+          { error: 'Missing required fields for hot lead purchase' },
+          { status: 400 }
+        )
+      }
+      
+      const priceNumber = Number.parseFloat(String(item.price))
+      if (!Number.isFinite(priceNumber) || priceNumber <= 0) {
+        return NextResponse.json(
+          { error: 'Invalid price value' },
+          { status: 400 }
+        )
+      }
+      
+      const unitAmountCents = Math.round(priceNumber * 100)
+      
+      // Create Stripe Checkout Session for hot lead
+      const session = await stripe.checkout.sessions.create({
+        payment_method_types: ['card'],
+        line_items: [
+          {
+            price_data: {
+              currency: 'usd',
+              product_data: {
+                name: item.name,
+                description: 'Exclusive vending machine location lead with full contact information',
+              },
+              unit_amount: unitAmountCents,
+            },
+            quantity: 1,
+          },
+        ],
+        mode: 'payment',
+        success_url: successUrl,
+        cancel_url: cancelUrl,
+        metadata: {
+          leadId: metadata.leadId,
+          leadSlug: metadata.leadSlug,
+          productType: 'hot-lead',
+          source: 'vending_locator_website'
+        },
+        billing_address_collection: 'required',
+      })
+      
+      console.log('✅ Stripe Checkout Session created for hot lead:', {
+        sessionId: session.id,
+        leadId: metadata.leadId,
+        leadSlug: metadata.leadSlug,
+        price: item.price
+      })
+      
+      return NextResponse.json({
+        success: true,
+        sessionId: session.id,
+        url: session.url
+      })
+    }
+    
+    // Handle regular pricing package purchase (original format)
+    const { email, zipCode, planName, planPrice, planId } = payload
 
     if (!email || !zipCode || !planName || !planPrice) {
       return NextResponse.json(

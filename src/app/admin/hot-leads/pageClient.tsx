@@ -7,6 +7,9 @@ import { PlusIcon, EyeIcon, CurrencyDollarIcon, MapPinIcon, BuildingOfficeIcon, 
 interface HotLead {
   id: string
   title: string
+  slug: string
+  city: string
+  state: string
   business_type: string
   employee_count: string
   zip_code: string
@@ -15,6 +18,10 @@ interface HotLead {
   status: 'available' | 'sold' | 'pending'
   created_at: string
   sold_at?: string
+  contact_name?: string
+  contact_email?: string
+  contact_phone?: string
+  full_address?: string
 }
 
 export default function HotLeadsAdminPage() {
@@ -51,11 +58,17 @@ export default function HotLeadsAdminPage() {
     
     const leadData = {
       title: formData.get('title') as string,
+      city: formData.get('city') as string,
+      state: formData.get('state') as string,
       businessType: formData.get('businessType') as string,
       employeeCount: formData.get('employeeCount') as string,
       zipCode: formData.get('zipCode') as string,
       description: formData.get('description') as string,
-      price: parseFloat(formData.get('price') as string)
+      price: parseFloat(formData.get('price') as string),
+      contactName: formData.get('contactName') as string || undefined,
+      contactEmail: formData.get('contactEmail') as string || undefined,
+      contactPhone: formData.get('contactPhone') as string || undefined,
+      fullAddress: formData.get('fullAddress') as string || undefined
     }
 
     console.log('Sending lead data:', leadData)
@@ -75,6 +88,10 @@ export default function HotLeadsAdminPage() {
         setLeads(prev => [data.lead, ...prev])
         setShowCreateForm(false)
         e.currentTarget.reset()
+        
+        // Show success message with the generated URL
+        const slug = data.lead.slug
+        alert(`✅ Hot lead created successfully!\n\nPublic URL: /hot-leads/${slug}\n\nThe lead is now available for purchase.`)
       } else {
         alert('Failed to create lead: ' + (data.error || 'Unknown error'))
       }
@@ -232,15 +249,43 @@ export default function HotLeadsAdminPage() {
               <form onSubmit={handleCreateLead} className="p-6 space-y-6">
                 <div>
                   <label className="block text-sm font-medium text-charcoal mb-2">
-                    Lead Title *
+                    Lead Title
                   </label>
                   <input
                     type="text"
                     name="title"
-                    required
-                    placeholder="e.g., Premium Office Complex - 500+ Employees"
+                    placeholder="e.g., Premium Office Complex - 500+ Employees (auto-generated if empty)"
                     className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
                   />
+                  <p className="text-xs text-stone mt-1">Leave blank to auto-generate from city and state</p>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <label className="block text-sm font-medium text-charcoal mb-2">
+                      City *
+                    </label>
+                    <input
+                      type="text"
+                      name="city"
+                      required
+                      placeholder="e.g., Ann Arbor"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
+                    />
+                  </div>
+                  
+                  <div>
+                    <label className="block text-sm font-medium text-charcoal mb-2">
+                      State *
+                    </label>
+                    <input
+                      type="text"
+                      name="state"
+                      required
+                      placeholder="e.g., Michigan"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
+                    />
+                  </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -286,6 +331,7 @@ export default function HotLeadsAdminPage() {
                       name="zipCode"
                       required
                       placeholder="78701"
+                      maxLength={10}
                       className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
                     />
                   </div>
@@ -315,6 +361,61 @@ export default function HotLeadsAdminPage() {
                     placeholder="Describe the opportunity, decision maker details, best approach, timing, etc."
                     className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
                   />
+                </div>
+
+                <div className="border-t border-gray-200 pt-6">
+                  <h3 className="text-lg font-semibold text-charcoal mb-4">Full Contact Information (Hidden Until Purchase)</h3>
+                  <p className="text-sm text-stone mb-4">These details will only be revealed to the buyer after purchase</p>
+                  
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                      <label className="block text-sm font-medium text-charcoal mb-2">
+                        Contact Name
+                      </label>
+                      <input
+                        type="text"
+                        name="contactName"
+                        placeholder="e.g., John Smith"
+                        className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
+                      />
+                    </div>
+                    
+                    <div>
+                      <label className="block text-sm font-medium text-charcoal mb-2">
+                        Contact Phone
+                      </label>
+                      <input
+                        type="tel"
+                        name="contactPhone"
+                        placeholder="e.g., (555) 123-4567"
+                        className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
+                      />
+                    </div>
+                    
+                    <div>
+                      <label className="block text-sm font-medium text-charcoal mb-2">
+                        Contact Email
+                      </label>
+                      <input
+                        type="email"
+                        name="contactEmail"
+                        placeholder="e.g., contact@business.com"
+                        className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
+                      />
+                    </div>
+                    
+                    <div>
+                      <label className="block text-sm font-medium text-charcoal mb-2">
+                        Full Address
+                      </label>
+                      <input
+                        type="text"
+                        name="fullAddress"
+                        placeholder="e.g., 123 Main St, Suite 100"
+                        className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
+                      />
+                    </div>
+                  </div>
                 </div>
 
                 <div className="flex items-center justify-end gap-4 pt-4 border-t border-gray-200">
@@ -499,14 +600,18 @@ export default function HotLeadsAdminPage() {
                           </span>
                         </div>
                         
-                        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 text-sm text-stone mb-4">
+                        <div className="grid grid-cols-1 md:grid-cols-5 gap-4 text-sm text-stone mb-3">
+                          <div className="flex items-center gap-2">
+                            <MapPinIcon className="w-4 h-4" />
+                            {lead.city}, {lead.state}
+                          </div>
                           <div className="flex items-center gap-2">
                             <BuildingOfficeIcon className="w-4 h-4" />
                             {lead.business_type}
                           </div>
                           <div className="flex items-center gap-2">
                             <UsersIcon className="w-4 h-4" />
-                            {lead.employee_count} employees
+                            {lead.employee_count}
                           </div>
                           <div className="flex items-center gap-2">
                             <MapPinIcon className="w-4 h-4" />
@@ -518,10 +623,26 @@ export default function HotLeadsAdminPage() {
                           </div>
                         </div>
                         
-                        <p className="text-stone text-sm">{lead.description}</p>
+                        {lead.slug && (
+                          <div className="mb-3 p-2 bg-cream rounded text-xs text-stone">
+                            <span className="font-semibold">URL:</span> /hot-leads/{lead.slug}
+                          </div>
+                        )}
+                        
+                        <p className="text-stone text-sm line-clamp-2">{lead.description}</p>
                       </div>
                       
                       <div className="flex items-center gap-2 ml-4">
+                        {lead.slug && (
+                          <Link
+                            href={`/hot-leads/${lead.slug}`}
+                            target="_blank"
+                            className="p-2 text-stone hover:text-navy transition-colors"
+                            title="View public page"
+                          >
+                            <EyeIcon className="w-5 h-5" />
+                          </Link>
+                        )}
                         <button 
                           onClick={() => setEditingLead(lead)}
                           className="p-2 text-stone hover:text-navy transition-colors"
@@ -535,9 +656,6 @@ export default function HotLeadsAdminPage() {
                           title="Delete lead"
                         >
                           <TrashIcon className="w-5 h-5" />
-                        </button>
-                        <button className="p-2 text-stone hover:text-navy transition-colors" title="View details">
-                          <EyeIcon className="w-5 h-5" />
                         </button>
                       </div>
                     </div>

@@ -38,6 +38,17 @@ export async function GET() {
   }
 }
 
+// Helper function to generate slug from city and state
+function generateSlug(city: string, state: string): string {
+  const combined = `hot-vending-lead-in-${city}-${state}`
+  return combined
+    .toLowerCase()
+    .replace(/[^a-z0-9\s-]/g, '')
+    .replace(/\s+/g, '-')
+    .replace(/-+/g, '-')
+    .trim()
+}
+
 // POST - Create new lead
 export async function POST(request: NextRequest) {
   try {
@@ -52,7 +63,7 @@ export async function POST(request: NextRequest) {
     const body = await request.json()
     
     // Validate required fields
-    if (!body.title || !body.businessType || !body.employeeCount || !body.zipCode || !body.description || !body.price) {
+    if (!body.city || !body.state || !body.businessType || !body.employeeCount || !body.zipCode || !body.description || !body.price) {
       return NextResponse.json({ 
         success: false, 
         error: 'Missing required fields. Please fill in all fields.' 
@@ -68,16 +79,29 @@ export async function POST(request: NextRequest) {
       }, { status: 400 })
     }
     
+    // Generate slug from city and state
+    const slug = generateSlug(body.city.trim(), body.state.trim())
+    
+    // Generate title if not provided
+    const title = body.title || `Vending Location in ${body.city}, ${body.state}`
+    
     const { data: newLead, error } = await supabase
       .from('hot_leads')
       .insert([{
-        title: body.title.trim(),
+        title: title.trim(),
+        slug: slug,
+        city: body.city.trim(),
+        state: body.state.trim(),
         business_type: body.businessType.trim(),
         employee_count: body.employeeCount,
         zip_code: body.zipCode.trim(),
         description: body.description.trim(),
         price: price,
-        status: 'available'
+        status: 'available',
+        contact_name: body.contactName?.trim() || null,
+        contact_email: body.contactEmail?.trim() || null,
+        contact_phone: body.contactPhone?.trim() || null,
+        full_address: body.fullAddress?.trim() || null
       }])
       .select()
       .single()

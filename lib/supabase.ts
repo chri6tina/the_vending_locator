@@ -9,6 +9,9 @@ export const supabase = createClient(supabaseUrl, supabaseAnonKey)
 export interface HotLead {
   id: string
   title: string
+  slug: string
+  city: string
+  state: string
   business_type: string
   employee_count: string
   zip_code: string
@@ -17,4 +20,9 @@ export interface HotLead {
   status: 'available' | 'sold' | 'pending'
   created_at: string
   sold_at?: string
+  contact_name?: string
+  contact_email?: string
+  contact_phone?: string
+  full_address?: string
+  buyer_email?: string
 }
