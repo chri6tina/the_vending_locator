@@ -16,16 +16,16 @@ export default function NewYorkVendingServicesPage() {
 
   // New York cities with vending services
   const cities = [
-    { name: 'New York City', slug: 'new-york-city-new-york' },
-    { name: 'Buffalo', slug: 'buffalo-new-york' },
-    { name: 'Rochester', slug: 'rochester-new-york' },
-    { name: 'Yonkers', slug: 'yonkers-new-york' },
-    { name: 'Syracuse', slug: 'syracuse-new-york' },
     { name: 'Albany', slug: 'albany-new-york' },
-    { name: 'New Rochelle', slug: 'new-rochelle-new-york' },
-    { name: 'Mount Vernon', slug: 'mount-vernon-new-york' },
+    { name: 'Binghamton', slug: 'binghamton-new-york' },
+    { name: 'Buffalo', slug: 'buffalo-new-york' },
+    { name: 'New York', slug: 'new-york-new-york' },
+    { name: 'Rochester', slug: 'rochester-new-york' },
     { name: 'Schenectady', slug: 'schenectady-new-york' },
-    { name: 'Utica', slug: 'utica-new-york' }
+    { name: 'Syracuse', slug: 'syracuse-new-york' },
+    { name: 'Troy', slug: 'troy-new-york' },
+    { name: 'Utica', slug: 'utica-new-york' },
+    { name: 'Yonkers', slug: 'yonkers-new-york' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

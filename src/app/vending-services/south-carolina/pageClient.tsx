@@ -18,10 +18,10 @@ export default function SouthCarolinaVendingServicesPage() {
   const cities = [
     { name: 'Charleston', slug: 'charleston-south-carolina' },
     { name: 'Columbia', slug: 'columbia-south-carolina' },
-    { name: 'North Charleston', slug: 'north-charleston-south-carolina' },
+    { name: 'Greenville', slug: 'greenville-south-carolina' },
     { name: 'Mount Pleasant', slug: 'mount-pleasant-south-carolina' },
-    { name: 'Rock Hill', slug: 'rock-hill-south-carolina' },
-    { name: 'Greenville', slug: 'greenville-south-carolina' }
+    { name: 'North Charleston', slug: 'north-charleston-south-carolina' },
+    { name: 'Rock Hill', slug: 'rock-hill-south-carolina' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

@@ -17,8 +17,8 @@ export default function NewMexicoVendingServicesPage() {
   // New Mexico cities with vending services
   const cities = [
     { name: 'Albuquerque', slug: 'albuquerque-new-mexico' },
-    { name: 'Las Cruces', slug: 'las-cruces-new-mexico' },
-    { name: 'Rio Rancho', slug: 'rio-rancho-new-mexico' }
+    { name: 'Santa Fe', slug: 'santa-fe-new-mexico' },
+    { name: 'Las Cruces', slug: 'las-cruces-new-mexico' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

@@ -16,13 +16,15 @@ export default function NorthCarolinaVendingServicesPage() {
 
   // North Carolina cities with vending services
   const cities = [
+    { name: 'Cary', slug: 'cary-north-carolina' },
     { name: 'Charlotte', slug: 'charlotte-north-carolina' },
-    { name: 'Raleigh', slug: 'raleigh-north-carolina' },
-    { name: 'Greensboro', slug: 'greensboro-north-carolina' },
     { name: 'Durham', slug: 'durham-north-carolina' },
-    { name: 'Winston-Salem', slug: 'winston-salem-north-carolina' },
     { name: 'Fayetteville', slug: 'fayetteville-north-carolina' },
-    { name: 'Cary', slug: 'cary-north-carolina' }
+    { name: 'Greensboro', slug: 'greensboro-north-carolina' },
+    { name: 'High Point', slug: 'high-point-north-carolina' },
+    { name: 'Raleigh', slug: 'raleigh-north-carolina' },
+    { name: 'Wilmington', slug: 'wilmington-north-carolina' },
+    { name: 'Winston-Salem', slug: 'winston-salem-north-carolina' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

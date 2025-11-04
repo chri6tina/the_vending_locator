@@ -16,15 +16,15 @@ export default function NewHampshireVendingServicesPage() {
 
   // New Hampshire cities with vending services
   const cities = [
-    { name: 'Manchester', slug: 'manchester-new-hampshire' },
-    { name: 'Nashua', slug: 'nashua-new-hampshire' },
     { name: 'Concord', slug: 'concord-new-hampshire' },
     { name: 'Derry', slug: 'derry-new-hampshire' },
     { name: 'Dover', slug: 'dover-new-hampshire' },
-    { name: 'Rochester', slug: 'rochester-new-hampshire' },
-    { name: 'Salem', slug: 'salem-new-hampshire' },
+    { name: 'Manchester', slug: 'manchester-new-hampshire' },
     { name: 'Merrimack', slug: 'merrimack-new-hampshire' },
-    { name: 'Hudson', slug: 'hudson-new-hampshire' }
+    { name: 'Nashua', slug: 'nashua-new-hampshire' },
+    { name: 'Portsmouth', slug: 'portsmouth-new-hampshire' },
+    { name: 'Rochester', slug: 'rochester-new-hampshire' },
+    { name: 'Salem', slug: 'salem-new-hampshire' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

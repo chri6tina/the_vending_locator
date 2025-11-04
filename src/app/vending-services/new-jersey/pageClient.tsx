@@ -16,11 +16,11 @@ export default function NewJerseyVendingServicesPage() {
 
   // New Jersey cities with vending services
   const cities = [
-    { name: 'Newark', slug: 'newark-new-jersey' },
-    { name: 'Jersey City', slug: 'jersey-city-new-jersey' },
-    { name: 'Paterson', slug: 'paterson-new-jersey' },
     { name: 'Elizabeth', slug: 'elizabeth-new-jersey' },
     { name: 'Edison', slug: 'edison-new-jersey' },
+    { name: 'Jersey City', slug: 'jersey-city-new-jersey' },
+    { name: 'Newark', slug: 'newark-new-jersey' },
+    { name: 'Paterson', slug: 'paterson-new-jersey' },
     { name: 'Woodbridge', slug: 'woodbridge-new-jersey' }
   ]
 
