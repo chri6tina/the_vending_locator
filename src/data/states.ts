@@ -428,10 +428,18 @@ const states: State[] = [
     name: 'Minnesota',
     slug: 'minnesota',
     cities: [
+      { name: 'Bloomington', slug: 'bloomington-minnesota' },
+      { name: 'Brooklyn Park', slug: 'brooklyn-park-minnesota' },
       { name: 'Duluth', slug: 'duluth-minnesota' },
+      { name: 'Eagan', slug: 'eagan-minnesota' },
+      { name: 'Lakeville', slug: 'lakeville-minnesota' },
+      { name: 'Maple Grove', slug: 'maple-grove-minnesota' },
       { name: 'Minneapolis', slug: 'minneapolis-minnesota' },
+      { name: 'Plymouth', slug: 'plymouth-minnesota' },
       { name: 'Rochester', slug: 'rochester-minnesota' },
-      { name: 'Saint Paul', slug: 'saint-paul-minnesota' }
+      { name: 'Saint Paul', slug: 'saint-paul-minnesota' },
+      { name: 'St. Cloud', slug: 'st-cloud-minnesota' },
+      { name: 'Woodbury', slug: 'woodbury-minnesota' }
     ]
   },
   {
@@ -634,12 +642,20 @@ const states: State[] = [
     name: 'South Carolina',
     slug: 'south-carolina',
     cities: [
+      { name: 'Aiken', slug: 'aiken-south-carolina' },
+      { name: 'Anderson', slug: 'anderson-south-carolina' },
       { name: 'Charleston', slug: 'charleston-south-carolina' },
       { name: 'Columbia', slug: 'columbia-south-carolina' },
+      { name: 'Florence', slug: 'florence-south-carolina' },
+      { name: 'Goose Creek', slug: 'goose-creek-south-carolina' },
       { name: 'Greenville', slug: 'greenville-south-carolina' },
+      { name: 'Hilton Head Island', slug: 'hilton-head-island-south-carolina' },
       { name: 'Mount Pleasant', slug: 'mount-pleasant-south-carolina' },
+      { name: 'Myrtle Beach', slug: 'myrtle-beach-south-carolina' },
       { name: 'North Charleston', slug: 'north-charleston-south-carolina' },
-      { name: 'Rock Hill', slug: 'rock-hill-south-carolina' }
+      { name: 'Rock Hill', slug: 'rock-hill-south-carolina' },
+      { name: 'Spartanburg', slug: 'spartanburg-south-carolina' },
+      { name: 'Summerville', slug: 'summerville-south-carolina' }
     ]
   },
   {
@@ -784,10 +800,18 @@ const states: State[] = [
     name: 'Wisconsin',
     slug: 'wisconsin',
     cities: [
+      { name: 'Appleton', slug: 'appleton-wisconsin' },
+      { name: 'Eau Claire', slug: 'eau-claire-wisconsin' },
       { name: 'Green Bay', slug: 'green-bay-wisconsin' },
+      { name: 'Janesville', slug: 'janesville-wisconsin' },
       { name: 'Kenosha', slug: 'kenosha-wisconsin' },
+      { name: 'La Crosse', slug: 'la-crosse-wisconsin' },
       { name: 'Madison', slug: 'madison-wisconsin' },
-      { name: 'Milwaukee', slug: 'milwaukee-wisconsin' }
+      { name: 'Milwaukee', slug: 'milwaukee-wisconsin' },
+      { name: 'Oshkosh', slug: 'oshkosh-wisconsin' },
+      { name: 'Racine', slug: 'racine-wisconsin' },
+      { name: 'Sheboygan', slug: 'sheboygan-wisconsin' },
+      { name: 'Waukesha', slug: 'waukesha-wisconsin' }
     ]
   },
   {
