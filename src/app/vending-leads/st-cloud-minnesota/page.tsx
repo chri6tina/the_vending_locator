@@ -16,6 +16,6 @@ export const metadata: Metadata = {
   },
 };
 
-export default function St.CloudMinnesotaVendingLeadsPage() {
+export default function StCloudMinnesotaVendingLeadsPage() {
   return <PageClient />;
 }
