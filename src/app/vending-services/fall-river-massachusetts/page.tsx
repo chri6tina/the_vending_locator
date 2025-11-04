@@ -1,0 +1,38 @@
+import { Metadata } from 'next'
+import PageClient from './pageClient'
+
+export const metadata: Metadata = {
+  title: "Vending Machine Services in Fall River, MA - Get Free Installation & Service",
+  description: "Get professional vending machine services for your Fall River, Massachusetts business. Free installation, stocking, and maintenance. Connect with local operators today.",
+  keywords: "vending services Fall River, vending machines Fall River MA, vending operators Fall River, break room vending Fall River",
+  alternates: {
+    canonical: "https://www.thevendinglocator.com/vending-services/fall-river-massachusetts"
+  },
+  openGraph: {
+    title: "Vending Machine Services in Fall River, MA - Get Free Installation & Service",
+    description: "Get professional vending machine services for your Fall River, Massachusetts business. Free installation, stocking, and maintenance.",
+    url: "https://www.thevendinglocator.com/vending-services/fall-river-massachusetts",
+    siteName: "The Vending Locator",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Vending Machine Services in Fall River, MA - Get Free Installation & Service",
+    description: "Get professional vending machine services for your Fall River, Massachusetts business."
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
+    }
+  }
+}
+
+export default function FallRiverMassachusettsServicesPage() {
+  return <PageClient />
+}
