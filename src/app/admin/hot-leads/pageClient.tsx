@@ -43,6 +43,8 @@ export default function HotLeadsAdminPage() {
   const [paymentLinks, setPaymentLinks] = useState<PaymentLink[]>([])
   const [isCreatingLinks, setIsCreatingLinks] = useState(false)
   const [showPaymentLinks, setShowPaymentLinks] = useState(false)
+  const [errorDetails, setErrorDetails] = useState<string | null>(null)
+  const [showErrorModal, setShowErrorModal] = useState(false)
 
   // Fetch leads on component mount
   useEffect(() => {
@@ -134,18 +136,19 @@ export default function HotLeadsAdminPage() {
       } else {
         const errorMsg = `API Error:\nStatus: ${response.status}\nError: ${data.error || 'Unknown error'}\nFull Response: ${JSON.stringify(data, null, 2)}`
         console.error(errorMsg)
-        alert(`Failed to create lead:\n\n${errorMsg}\n\nPlease copy this error message.`)
+        setErrorDetails(errorMsg)
+        setShowErrorModal(true)
       }
     } catch (error: any) {
-      const errorDetails = `Network/Fetch Error:\n` +
+      const errorMsg = `Network/Fetch Error:\n` +
         `Message: ${error.message || 'Unknown error'}\n` +
         `Type: ${error.name || 'Error'}\n` +
         `Stack: ${error.stack || 'No stack trace'}\n` +
         `Full Error: ${JSON.stringify(error, Object.getOwnPropertyNames(error), 2)}`
       
-      console.error('Full error details:', errorDetails)
-      
-      alert(`Network error occurred:\n\n${errorDetails}\n\nPlease copy this entire error message and send it.`)
+      console.error('Full error details:', errorMsg)
+      setErrorDetails(errorMsg)
+      setShowErrorModal(true)
     } finally {
       setIsSubmitting(false)
     }
@@ -255,6 +258,13 @@ export default function HotLeadsAdminPage() {
   const copyToClipboard = (text: string) => {
     navigator.clipboard.writeText(text)
     alert('✅ Link copied to clipboard!')
+  }
+
+  const copyErrorToClipboard = () => {
+    if (errorDetails) {
+      navigator.clipboard.writeText(errorDetails)
+      alert('✅ Error details copied to clipboard!')
+    }
   }
 
 
