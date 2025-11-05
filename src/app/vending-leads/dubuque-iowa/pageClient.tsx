@@ -92,7 +92,7 @@ export default function DubuqueIowaVendingLeadsPage() {
     { q: "How do you verify the quality of Dubuque vending locations?", a: "We verify each location through business research, enrollment data analysis, employee validation, and facility assessment to ensure quality placements." },
     { q: "Can I get customized vending leads for specific areas of Dubuque?", a: "Absolutely! We can focus on the historic Port of Dubuque area, University Avenue corridor, or industrial zones based on your target market." },
     { q: "What's the typical ROI for vending machines in Dubuque?", a: "Vending machines in Dubuque typically achieve ROI within 12-16 months, with manufacturing and university locations often seeing faster returns due to consistent traffic patterns." }
-  ]
+  ];
 
   return (
     <>

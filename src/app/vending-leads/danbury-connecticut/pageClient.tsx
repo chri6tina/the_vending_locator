@@ -92,7 +92,7 @@ export default function DanburyConnecticutVendingLeadsPage() {
     { q: "How do you verify the quality of Danbury vending locations?", a: "We conduct thorough verification including business validation, employee assessment, facility size analysis, and regional market research for each Danbury location." },
     { q: "Can I get customized vending leads for specific areas of Danbury?", a: "Absolutely! We can focus on the downtown business district, Danbury Fair Mall area, or industrial parks based on your target market preferences." },
     { q: "What's the typical ROI for vending machines in Danbury?", a: "Machines in Danbury typically see ROI within 10-14 months, with healthcare and corporate locations often achieving faster returns due to high traffic and premium pricing acceptance." }
-  ]
+  ];
 
   return (
     <>

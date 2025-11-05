@@ -92,7 +92,7 @@ export default function RioRanchoNewMexicoVendingLeadsPage() {
     { q: "How do you verify the quality of Rio Rancho vending locations?", a: "We conduct thorough verification including business validation, employee count assessment, facility size analysis, and regional market research for each Rio Rancho location." },
     { q: "Can I get customized vending leads for specific areas of Rio Rancho?", a: "Absolutely! We can target the Northern Boulevard corridor, Southern Boulevard retail area, or Enchanted Hills district based on your target market." },
     { q: "What's the typical ROI for vending machines in Rio Rancho?", a: "Machines in Rio Rancho typically see ROI within 10-14 months, with tech facilities often achieving faster returns due to premium pricing acceptance and 24/7 operations." }
-  ]
+  ];
 
   return (
     <>

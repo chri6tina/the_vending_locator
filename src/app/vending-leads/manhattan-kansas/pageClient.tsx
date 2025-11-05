@@ -92,7 +92,7 @@ export default function ManhattanKansasVendingLeadsPage() {
     { q: "How do you verify the quality of Manhattan vending locations?", a: "We conduct thorough verification including business validation, enrollment and personnel data, facility assessment, and regional market research for each Manhattan location." },
     { q: "Can I get customized vending leads for specific areas of Manhattan?", a: "Absolutely! We can focus on the K-State campus district, downtown Aggieville area, or Fort Riley corridor based on your target market." },
     { q: "What's the typical ROI for vending machines in Manhattan?", a: "Machines in Manhattan typically see ROI within 12-16 months, with university and military placements often achieving faster returns due to consistent high-volume traffic." }
-  ]
+  ];
 
   return (
     <>

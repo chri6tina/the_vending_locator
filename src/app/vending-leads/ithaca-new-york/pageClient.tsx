@@ -92,7 +92,7 @@ export default function IthacaNewYorkVendingLeadsPage() {
     { q: "How do you verify the quality of Ithaca vending locations?", a: "We verify each location through business research, enrollment data analysis, foot traffic assessment, and facility evaluation to ensure quality university town placements." },
     { q: "Can I get customized vending leads for specific areas of Ithaca?", a: "Absolutely! We can focus on the Cornell campus area, Ithaca Commons downtown, or Collegetown district based on your target market preferences." },
     { q: "What's the typical ROI for vending machines in Ithaca?", a: "Vending machines in Ithaca typically achieve ROI within 12-15 months, with university locations seeing strongest returns during academic semesters when student traffic is highest." }
-  ]
+  ];
 
   return (
     <>

@@ -92,7 +92,7 @@ export default function PearlCityHawaiiVendingLeadsPage() {
     { q: "How do you verify the quality of Pearl City vending locations?", a: "We conduct thorough verification including business validation, foot traffic assessment, facility size analysis, and island market research for each Pearl City location." },
     { q: "Can I get customized vending leads for specific areas of Pearl City?", a: "Absolutely! We can focus on areas like the Pearlridge shopping district, Kamehameha Highway commercial corridor, or Waimalu neighborhood based on your target market." },
     { q: "What's the typical ROI for vending machines in Pearl City?", a: "Machines in Pearl City typically see ROI within 12-16 months, with retail and high-traffic locations often achieving faster payback periods due to consistent year-round tourism and local traffic." }
-  ]
+  ];
 
   return (
     <>

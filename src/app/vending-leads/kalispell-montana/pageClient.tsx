@@ -92,7 +92,7 @@ export default function KalispellMontanaVendingLeadsPage() {
     { q: "How do you verify the quality of Kalispell vending locations?", a: "We verify each location through business research, seasonal traffic analysis, visitor volume assessment, and facility evaluation to ensure quality tourism and year-round placements." },
     { q: "Can I get customized vending leads for specific areas of Kalispell?", a: "Absolutely! We can focus on the Highway 93 corridor, downtown Main Street district, or areas near Glacier Park International Airport based on your target market." },
     { q: "What's the typical ROI for vending machines in Kalispell?", a: "Vending machines in Kalispell typically achieve ROI within 14-18 months, with tourism locations seeing strongest returns during summer months and healthcare facilities providing year-round consistency." }
-  ]
+  ];
 
   return (
     <>

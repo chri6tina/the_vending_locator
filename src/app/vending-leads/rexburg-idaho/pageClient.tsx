@@ -92,7 +92,7 @@ export default function RexburgIdahoVendingLeadsPage() {
     { q: "How do you verify the quality of Rexburg vending locations?", a: "We conduct thorough verification including business validation, enrollment data analysis, foot traffic assessment, and facility research for each Rexburg location." },
     { q: "Can I get customized vending leads for specific areas of Rexburg?", a: "Absolutely! We can focus on the BYU-Idaho campus district, Main Street downtown area, or retail zones along Highway 20 based on your target market." },
     { q: "What's the typical ROI for vending machines in Rexburg?", a: "Machines in Rexburg typically see ROI within 13-17 months, with university locations often achieving faster returns during academic semesters due to high student traffic." }
-  ]
+  ];
 
   return (
     <>

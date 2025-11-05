@@ -92,7 +92,7 @@ export default function FarmingtonNewMexicoVendingLeadsPage() {
     { q: "How do you verify the quality of Farmington vending locations?", a: "We verify each location through business research, employee validation, shift schedule analysis, and facility assessment to ensure high-quality industrial placements." },
     { q: "Can I get customized vending leads for specific areas of Farmington?", a: "Absolutely! We can target the East Main Street commercial corridor, industrial zones, or healthcare district based on your preferences." },
     { q: "What's the typical ROI for vending machines in Farmington?", a: "Vending machines in Farmington typically achieve ROI within 11-15 months, with energy sector facilities often seeing faster returns due to continuous operations and premium pricing acceptance." }
-  ]
+  ];
 
   return (
     <>

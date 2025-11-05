@@ -92,7 +92,7 @@ export default function ManchesterNewHampshireVendingLeadsPage() {
     { q: 'How do you verify the quality of Manchester vending locations?', a: 'We conduct thorough research on each Manchester location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.' },
     { q: 'Can I get customized vending leads for specific areas of Manchester?', a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Manchester based on your preferences and target market requirements.' },
     { q: "What's the typical ROI for vending machines in Manchester?", a: "Vending machines in Manchester typically show strong ROI due to the city's business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines." }
-  ]
+  ];
 
   return (
     <>

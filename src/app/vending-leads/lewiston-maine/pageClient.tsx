@@ -92,7 +92,7 @@ export default function LewistonMaineVendingLeadsPage() {
     { q: "How do you verify the quality of Lewiston vending locations?", a: "We verify each location through business research, employee count validation, foot traffic analysis, and facility assessment to ensure quality placements." },
     { q: "Can I get customized vending leads for specific areas of Lewiston?", a: "Absolutely! We can target the downtown Lisbon Street corridor, Bates College area, or industrial zones along the Androscoggin River based on your preferences." },
     { q: "What's the typical ROI for vending machines in Lewiston?", a: "Vending machines in Lewiston typically achieve ROI within 13-17 months, with healthcare and educational placements often seeing faster returns." }
-  ]
+  ];
 
   return (
     <>

@@ -92,7 +92,7 @@ export default function AlbanyOregonVendingLeadsPage() {
     { q: "How do you verify the quality of Albany vending locations?", a: "We verify each location through business research, shift schedule analysis, employee validation, and facility assessment to ensure quality industrial placements." },
     { q: "Can I get customized vending leads for specific areas of Albany?", a: "Absolutely! We can focus on the Pacific Boulevard industrial corridor, downtown historic district, or North Albany area based on your target market." },
     { q: "What's the typical ROI for vending machines in Albany?", a: "Vending machines in Albany typically achieve ROI within 12-16 months, with manufacturing and industrial facilities often seeing faster returns due to multiple shifts and consistent operations." }
-  ]
+  ];
 
   return (
     <>

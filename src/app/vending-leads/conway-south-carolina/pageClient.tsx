@@ -92,7 +92,7 @@ export default function ConwaySouthCarolinaVendingLeadsPage() {
     { q: "How do you verify the quality of Conway vending locations?", a: "We verify each location through business research, enrollment data analysis, seasonal traffic assessment, and facility evaluation to ensure quality university and tourism placements." },
     { q: "Can I get customized vending leads for specific areas of Conway?", a: "Absolutely! We can focus on the CCU campus area, downtown Main Street district, or Highway 501 corridor based on your target market." },
     { q: "What's the typical ROI for vending machines in Conway?", a: "Vending machines in Conway typically achieve ROI within 12-16 months, with university locations seeing consistent returns during academic year and tourism-related businesses benefiting from summer peaks." }
-  ]
+  ];
 
   return (
     <>

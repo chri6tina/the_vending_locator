@@ -92,7 +92,7 @@ export default function BismarckNorthDakotaVendingLeadsPage() {
     { q: 'How do you verify the quality of Bismarck vending locations?', a: 'We conduct thorough research on each Bismarck location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.' },
     { q: 'Can I get customized vending leads for specific areas of Bismarck?', a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, government districts, or business areas within Bismarck based on your preferences and target market requirements.' },
     { q: "What's the typical ROI for vending machines in Bismarck?", a: "Vending machines in Bismarck typically show strong ROI due to the city's stable economy and diverse business environment. Our research shows average payback periods of 12-18 months for well-placed machines." }
-  ]
+  ];
 
   return (
     <>

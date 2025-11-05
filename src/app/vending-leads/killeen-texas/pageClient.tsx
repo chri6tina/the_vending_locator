@@ -93,7 +93,7 @@ export default function KilleenTexasVendingLeadsPage() {
     { q: "How do you verify the quality of Killeen vending locations?", a: "We conduct thorough verification including business validation, employee assessment, facility research, and local market analysis for each Killeen location." },
     { q: "Can I get customized vending leads for specific areas of Killeen?", a: "Absolutely! We can focus on specific neighborhoods, business districts, or industrial areas within Killeen based on your target market." },
     { q: "What's the typical ROI for vending machines in Killeen?", a: "Machines in Killeen typically see ROI within 12-18 months, with healthcare and educational facilities often providing the most consistent returns." }
-  ]
+  ];
 
   return (
     <>

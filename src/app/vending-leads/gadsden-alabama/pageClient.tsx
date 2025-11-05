@@ -92,7 +92,7 @@ export default function GadsdenAlabamaVendingLeadsPage() {
     { q: "How do you verify the quality of Gadsden vending locations?", a: "We conduct thorough verification including business validation, employee count assessment, facility size analysis, and regional market research for each Gadsden location." },
     { q: "Can I get customized vending leads for specific areas of Gadsden?", a: "Absolutely! We can target the downtown Broad Street district, Rainbow City area, or industrial zones based on your preferences." },
     { q: "What's the typical ROI for vending machines in Gadsden?", a: "Machines in Gadsden typically see ROI within 13-17 months, with manufacturing and healthcare facilities often achieving faster returns due to shift workers and consistent traffic." }
-  ]
+  ];
 
   return (
     <>

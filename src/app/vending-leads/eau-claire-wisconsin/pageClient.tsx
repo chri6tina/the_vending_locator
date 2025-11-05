@@ -92,7 +92,7 @@ export default function EauClaireWisconsinVendingLeadsPage() {
     { q: "How do you verify the quality of Eau Claire vending locations?", a: "We verify each location through business research, enrollment and patient data analysis, employee validation, and facility assessment to ensure quality healthcare and university placements." },
     { q: "Can I get customized vending leads for specific areas of Eau Claire?", a: "Absolutely! We can focus on the Water Street downtown district, Clairemont Avenue corridor, or UW-Eau Claire campus area based on your target market." },
     { q: "What's the typical ROI for vending machines in Eau Claire?", a: "Vending machines in Eau Claire typically achieve ROI within 11-15 months, with healthcare and university locations often seeing faster returns due to consistent high-volume traffic." }
-  ]
+  ];
 
   return (
     <>

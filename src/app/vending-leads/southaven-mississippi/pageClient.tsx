@@ -92,7 +92,7 @@ export default function SouthavenMississippiVendingLeadsPage() {
     { q: "How do you verify the quality of Southaven vending locations?", a: "We verify each location through business research, employee count validation, facility assessment, and regional market analysis to ensure high-quality opportunities." },
     { q: "Can I get customized vending leads for specific areas of Southaven?", a: "Absolutely! We can target the Goodman Road retail corridor, Airways Boulevard business district, or I-55 distribution zone based on your preferences." },
     { q: "What's the typical ROI for vending machines in Southaven?", a: "Vending machines in Southaven typically achieve ROI within 11-15 months, with retail and distribution locations often seeing faster returns due to high traffic volumes." }
-  ]
+  ];
 
   return (
     <>

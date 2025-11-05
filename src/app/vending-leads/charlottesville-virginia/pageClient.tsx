@@ -92,7 +92,7 @@ export default function CharlottesvilleVirginiaVendingLeadsPage() {
     { q: "How do you verify the quality of Charlottesville vending locations?", a: "We verify each location through business research, enrollment data analysis, employee validation, and facility assessment to ensure quality university and healthcare placements." },
     { q: "Can I get customized vending leads for specific areas of Charlottesville?", a: "Absolutely! We can focus on the UVA grounds area, downtown pedestrian mall, or 29 North business corridor based on your target market." },
     { q: "What's the typical ROI for vending machines in Charlottesville?", a: "Vending machines in Charlottesville typically achieve ROI within 11-14 months, with university and healthcare locations often seeing faster returns due to consistent high-volume traffic and educated demographics." }
-  ]
+  ];
 
   return (
     <>

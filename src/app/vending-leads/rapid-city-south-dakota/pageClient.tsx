@@ -92,7 +92,7 @@ export default function RapidCitySouthDakotaVendingLeadsPage() {
     { q: 'How do you verify the quality of Rapid City vending locations?', a: 'We conduct thorough research on each Rapid City location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.' },
     { q: 'Can I get customized vending leads for specific areas of Rapid City?', a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, tourism districts, or business areas within Rapid City based on your preferences and target market requirements.' },
     { q: "What's the typical ROI for vending machines in Rapid City?", a: "Vending machines in Rapid City typically show strong ROI due to the city's tourism industry and diverse business environment. Our research shows average payback periods of 12-18 months for well-placed machines." }
-  ]
+  ];
 
   return (
     <>

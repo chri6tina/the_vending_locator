@@ -92,7 +92,7 @@ export default function LawrenceKansasVendingLeadsPage() {
     { q: "How do you verify the quality of Lawrence vending locations?", a: "We verify each location through business research, enrollment data analysis, employee count validation, and facility assessment to ensure quality university and corporate placements." },
     { q: "Can I get customized vending leads for specific areas of Lawrence?", a: "Absolutely! We can target the KU campus area, downtown Massachusetts Street district, or West Lawrence tech corridor based on your preferences." },
     { q: "What's the typical ROI for vending machines in Lawrence?", a: "Vending machines in Lawrence typically achieve ROI within 11-15 months, with university and tech locations often seeing faster returns due to consistent traffic and younger demographics." }
-  ]
+  ];
 
   return (
     <>

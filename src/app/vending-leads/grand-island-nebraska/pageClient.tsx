@@ -92,7 +92,7 @@ export default function GrandIslandNebraskaVendingLeadsPage() {
     { q: "How do you verify the quality of Grand Island vending locations?", a: "We verify each location through business research, employee count validation, shift schedule analysis, and facility assessment to ensure quality placements." },
     { q: "Can I get customized vending leads for specific areas of Grand Island?", a: "Absolutely! We can target the industrial south side, downtown business district, or Conestoga Mall retail area based on your preferences." },
     { q: "What's the typical ROI for vending machines in Grand Island?", a: "Vending machines in Grand Island typically achieve ROI within 12-17 months, with food processing and logistics facilities often seeing faster returns due to 24/7 operations." }
-  ]
+  ];
 
   return (
     <>

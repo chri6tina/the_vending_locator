@@ -92,7 +92,7 @@ export default function JoplinMissouriVendingLeadsPage() {
     { q: "How do you verify the quality of Joplin vending locations?", a: "We conduct thorough verification including business validation, employee count assessment, regional market analysis, and facility research for each Joplin location." },
     { q: "Can I get customized vending leads for specific areas of Joplin?", a: "Absolutely! We can target the Range Line Road retail corridor, downtown Main Street district, or industrial zones based on your preferences." },
     { q: "What's the typical ROI for vending machines in Joplin?", a: "Machines in Joplin typically see ROI within 12-16 months, with healthcare and retail locations often achieving faster returns due to high traffic volumes and regional draw." }
-  ]
+  ];
 
   return (
     <>

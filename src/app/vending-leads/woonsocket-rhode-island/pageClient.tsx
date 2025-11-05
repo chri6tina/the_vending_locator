@@ -92,7 +92,7 @@ export default function WoonsocketRhodeIslandVendingLeadsPage() {
     { q: "How do you verify the quality of Woonsocket vending locations?", a: "We conduct thorough verification including business validation, employee assessment, facility size analysis, and corporate campus research for each Woonsocket location." },
     { q: "Can I get customized vending leads for specific areas of Woonsocket?", a: "Absolutely! We can focus on the Main Street business district, CVS corporate campus area, or industrial zones based on your target market preferences." },
     { q: "What's the typical ROI for vending machines in Woonsocket?", a: "Machines in Woonsocket typically see ROI within 11-15 months, with corporate facilities often achieving faster returns due to large employee bases and premium pricing acceptance." }
-  ]
+  ];
 
   return (
     <>

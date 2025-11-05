@@ -92,7 +92,7 @@ export default function AberdeenSouthDakotaVendingLeadsPage() {
     { q: "How do you verify the quality of Aberdeen vending locations?", a: "We conduct thorough verification including business validation, employee assessment, facility research, and regional market analysis for each Aberdeen location." },
     { q: "Can I get customized vending leads for specific areas of Aberdeen?", a: "Absolutely! We can focus on areas like the downtown business district, NSU campus area, or the 6th Avenue retail corridor based on your target market." },
     { q: "What's the typical ROI for vending machines in Aberdeen?", a: "Machines in Aberdeen typically see ROI within 14-18 months, with healthcare and educational facilities often providing the most consistent returns." }
-  ]
+  ];
 
   return (
     <>

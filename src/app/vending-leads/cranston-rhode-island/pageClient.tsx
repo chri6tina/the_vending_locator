@@ -93,7 +93,7 @@ export default function CranstonRhodeIslandVendingLeadsPage() {
     { q: "How do you verify the quality of Cranston vending locations?", a: "We conduct thorough verification including business validation, employee assessment, facility research, and local market analysis for each Cranston location." },
     { q: "Can I get customized vending leads for specific areas of Cranston?", a: "Absolutely! We can focus on specific neighborhoods, business districts, or industrial areas within Cranston based on your target market." },
     { q: "What's the typical ROI for vending machines in Cranston?", a: "Machines in Cranston typically see ROI within 12-18 months, with healthcare and educational facilities often providing the most consistent returns." }
-  ]
+  ];
 
   return (
     <>

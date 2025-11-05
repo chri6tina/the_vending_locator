@@ -92,7 +92,7 @@ export default function PahrumpNevadaVendingLeadsPage() {
     { q: "How do you verify the quality of Pahrump vending locations?", a: "We conduct thorough verification including business validation, traffic pattern analysis, facility assessment, and local market research for each Pahrump location." },
     { q: "Can I get customized vending leads for specific areas of Pahrump?", a: "Absolutely! We can focus on the Highway 160 corridor, downtown area, or the winery district based on your target market preferences." },
     { q: "What's the typical ROI for vending machines in Pahrump?", a: "Machines in Pahrump typically see ROI within 13-18 months, with gaming and tourism-related locations often achieving faster returns due to higher traffic volumes." }
-  ]
+  ];
 
   return (
     <>

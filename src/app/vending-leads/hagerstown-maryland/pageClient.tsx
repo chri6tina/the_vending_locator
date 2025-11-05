@@ -92,7 +92,7 @@ export default function HagerstownMarylandVendingLeadsPage() {
     { q: "How do you verify the quality of Hagerstown vending locations?", a: "We conduct thorough verification including business validation, shift schedule analysis, employee assessment, and facility research for each Hagerstown location." },
     { q: "Can I get customized vending leads for specific areas of Hagerstown?", a: "Absolutely! We can target the downtown Public Square area, Dual Highway retail corridor, or I-81 industrial zones based on your preferences." },
     { q: "What's the typical ROI for vending machines in Hagerstown?", a: "Machines in Hagerstown typically see ROI within 12-16 months, with distribution and manufacturing facilities often achieving faster returns due to multiple shifts and high employee counts." }
-  ]
+  ];
 
   return (
     <>

@@ -92,7 +92,7 @@ export default function KingsportTennesseeVendingLeadsPage() {
     { q: "How do you verify the quality of Kingsport vending locations?", a: "We conduct thorough verification including business validation, shift schedule analysis, employee count assessment, and facility research for each Kingsport location." },
     { q: "Can I get customized vending leads for specific areas of Kingsport?", a: "Absolutely! We can target the Eastman facility area, downtown Broad Street district, or Fort Henry industrial zones based on your preferences." },
     { q: "What's the typical ROI for vending machines in Kingsport?", a: "Machines in Kingsport typically see ROI within 11-15 months, with chemical manufacturing and industrial facilities often achieving faster returns due to multiple shifts and premium pricing acceptance." }
-  ]
+  ];
 
   return (
     <>

@@ -92,7 +92,7 @@ export default function SheridanWyomingVendingLeadsPage() {
     { q: "How do you verify the quality of Sheridan vending locations?", a: "We conduct thorough verification including business validation, seasonal traffic analysis, employee assessment, and facility research for each Sheridan location." },
     { q: "Can I get customized vending leads for specific areas of Sheridan?", a: "Absolutely! We can target the historic Main Street downtown, Coffeen Avenue corridor, or areas near I-90 based on your preferences." },
     { q: "What's the typical ROI for vending machines in Sheridan?", a: "Machines in Sheridan typically see ROI within 15-19 months, with energy sector and healthcare locations often achieving faster returns due to shift operations and consistent demand." }
-  ]
+  ];
 
   return (
     <>

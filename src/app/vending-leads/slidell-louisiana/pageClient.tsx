@@ -92,7 +92,7 @@ export default function SlidellLouisianaVendingLeadsPage() {
     { q: "How do you verify the quality of Slidell vending locations?", a: "We verify each location through business research, foot traffic assessment, employee validation, and regional market analysis to ensure quality placements." },
     { q: "Can I get customized vending leads for specific areas of Slidell?", a: "Absolutely! We can focus on the Fremaux Avenue retail corridor, Gause Boulevard area, or Old Town district based on your target market." },
     { q: "What's the typical ROI for vending machines in Slidell?", a: "Vending machines in Slidell typically achieve ROI within 13-17 months, with retail and healthcare locations often seeing faster returns due to consistent traffic patterns." }
-  ]
+  ];
 
   return (
     <>

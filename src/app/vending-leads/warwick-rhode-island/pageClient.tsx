@@ -93,7 +93,7 @@ export default function WarwickRhodeIslandVendingLeadsPage() {
     { q: "How do you verify the quality of Warwick vending locations?", a: "We conduct thorough verification including business validation, employee assessment, facility research, and local market analysis for each Warwick location." },
     { q: "Can I get customized vending leads for specific areas of Warwick?", a: "Absolutely! We can focus on specific neighborhoods, business districts, or industrial areas within Warwick based on your target market." },
     { q: "What's the typical ROI for vending machines in Warwick?", a: "Machines in Warwick typically see ROI within 12-18 months, with healthcare and educational facilities often providing the most consistent returns." }
-  ]
+  ];
 
   return (
     <>

@@ -92,7 +92,7 @@ export default function StGeorgeUtahVendingLeadsPage() {
     { q: "How do you verify the quality of St. George vending locations?", a: "We conduct thorough verification including business validation, demographic analysis, seasonal traffic assessment, and facility research for each St. George location." },
     { q: "Can I get customized vending leads for specific areas of St. George?", a: "Absolutely! We can target the Red Cliffs area, downtown historic district, or Sunset Boulevard corridor based on your preferences." },
     { q: "What's the typical ROI for vending machines in St. George?", a: "Machines in St. George typically see ROI within 10-14 months, with healthcare and tourism locations often achieving faster returns due to high traffic and premium pricing acceptance from retirees and tourists." }
-  ]
+  ];
 
   return (
     <>

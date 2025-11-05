@@ -92,7 +92,7 @@ export default function GreeleyColoradoVendingLeadsPage() {
     { q: "How do you verify the quality of Greeley vending locations?", a: "We conduct thorough verification including business validation, employee and enrollment analysis, shift schedule assessment, and facility research for each Greeley location." },
     { q: "Can I get customized vending leads for specific areas of Greeley?", a: "Absolutely! We can focus on the UNC campus district, downtown 8th Avenue area, or industrial zones along Highway 34 based on your target market." },
     { q: "What's the typical ROI for vending machines in Greeley?", a: "Machines in Greeley typically see ROI within 11-15 months, with food processing and university locations often achieving faster returns due to 24/7 operations and high student traffic." }
-  ]
+  ];
 
   return (
     <>

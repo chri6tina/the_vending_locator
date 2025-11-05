@@ -92,7 +92,7 @@ export default function OlympiaWashingtonVendingLeadsPage() {
     { q: "How do you verify the quality of Olympia vending locations?", a: "We conduct thorough verification including business validation, employee count assessment, facility analysis, and capital city market research for each Olympia location." },
     { q: "Can I get customized vending leads for specific areas of Olympia?", a: "Absolutely! We can target the Capitol Campus area, downtown 4th Avenue corridor, or westside commercial zones based on your preferences." },
     { q: "What's the typical ROI for vending machines in Olympia?", a: "Machines in Olympia typically see ROI within 12-15 months, with government and healthcare locations often achieving faster returns due to stable employment and consistent traffic patterns." }
-  ]
+  ];
 
   return (
     <>

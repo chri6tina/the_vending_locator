@@ -92,7 +92,7 @@ export default function EssexJunctionVermontVendingLeadsPage() {
     { q: "How do you verify the quality of Essex Junction vending locations?", a: "We verify each location through business research, foot traffic analysis, employee count validation, and industry assessment to ensure high-quality opportunities." },
     { q: "Can I get customized vending leads for specific areas of Essex Junction?", a: "Absolutely! We can target specific business districts like the Five Corners area or retail zones based on your preferences." },
     { q: "What's the typical ROI for vending machines in Essex Junction?", a: "Vending machines in Essex Junction typically achieve ROI within 12-18 months due to the town's stable economy and consistent business growth." }
-  ]
+  ];
 
   return (
     <>

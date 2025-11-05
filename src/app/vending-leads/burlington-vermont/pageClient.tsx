@@ -92,7 +92,7 @@ export default function BurlingtonVermontVendingLeadsPage() {
     { q: 'How do you verify the quality of Burlington vending locations?', a: 'We conduct thorough research on each Burlington location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.' },
     { q: 'Can I get customized vending leads for specific areas of Burlington?', a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, university areas, or business districts within Burlington based on your preferences and target market requirements.' },
     { q: "What's the typical ROI for vending machines in Burlington?", a: "Vending machines in Burlington typically show strong ROI due to the city's college town population and diverse business environment. Our research shows average payback periods of 12-18 months for well-placed machines." }
-  ]
+  ];
 
   return (
     <>

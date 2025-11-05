@@ -92,7 +92,7 @@ export default function HickoryNorthCarolinaVendingLeadsPage() {
     { q: "How do you verify the quality of Hickory vending locations?", a: "We conduct thorough verification including business validation, shift schedule analysis, employee assessment, and facility research for each Hickory location." },
     { q: "Can I get customized vending leads for specific areas of Hickory?", a: "Absolutely! We can target the Highway 321 tech corridor, downtown Union Square area, or furniture manufacturing zones based on your preferences." },
     { q: "What's the typical ROI for vending machines in Hickory?", a: "Machines in Hickory typically see ROI within 11-14 months, with data center and tech facility locations often achieving faster returns due to 24/7 operations and premium pricing acceptance." }
-  ]
+  ];
 
   return (
     <>

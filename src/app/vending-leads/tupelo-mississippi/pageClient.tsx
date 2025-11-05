@@ -92,7 +92,7 @@ export default function TupeloMississippiVendingLeadsPage() {
     { q: "How do you verify the quality of Tupelo vending locations?", a: "We conduct thorough verification including business validation, employee assessment, shift schedule analysis, and facility research for each Tupelo location." },
     { q: "Can I get customized vending leads for specific areas of Tupelo?", a: "Absolutely! We can focus on the Main Street downtown area, McCullough Boulevard retail district, or industrial parks based on your target market." },
     { q: "What's the typical ROI for vending machines in Tupelo?", a: "Machines in Tupelo typically see ROI within 12-16 months, with manufacturing facilities offering consistent returns due to multiple shifts and large employee bases." }
-  ]
+  ];
 
   return (
     <>

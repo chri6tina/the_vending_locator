@@ -93,7 +93,7 @@ export default function PineBluffArkansasVendingLeadsPage() {
     { q: "How do you verify the quality of Pine Bluff vending locations?", a: "We conduct thorough verification including business validation, employee assessment, facility research, and local market analysis for each Pine Bluff location." },
     { q: "Can I get customized vending leads for specific areas of Pine Bluff?", a: "Absolutely! We can focus on specific neighborhoods, business districts, or industrial areas within Pine Bluff based on your target market." },
     { q: "What's the typical ROI for vending machines in Pine Bluff?", a: "Machines in Pine Bluff typically see ROI within 12-18 months, with healthcare and educational facilities often providing the most consistent returns." }
-  ]
+  ];
 
   return (
     <>

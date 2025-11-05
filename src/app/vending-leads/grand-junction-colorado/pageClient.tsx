@@ -92,7 +92,7 @@ export default function GrandJunctionColoradoVendingLeadsPage() {
     { q: "How do you verify the quality of Grand Junction vending locations?", a: "We verify each location through business research, seasonal traffic analysis, employee validation, and facility assessment to ensure quality placements." },
     { q: "Can I get customized vending leads for specific areas of Grand Junction?", a: "Absolutely! We can target the downtown business district, North Avenue commercial corridor, or Clifton manufacturing area based on your preferences." },
     { q: "What's the typical ROI for vending machines in Grand Junction?", a: "Vending machines in Grand Junction typically achieve ROI within 12-16 months, with energy and tourism locations often seeing stronger returns during peak seasons and from shift workers." }
-  ]
+  ];
 
   return (
     <>

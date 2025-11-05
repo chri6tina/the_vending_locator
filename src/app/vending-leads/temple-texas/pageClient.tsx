@@ -92,7 +92,7 @@ export default function TempleTexasVendingLeadsPage() {
     { q: "How do you verify the quality of Temple vending locations?", a: "We verify each location through business research, employee and patient volume analysis, facility assessment, and regional market evaluation for each Temple location." },
     { q: "Can I get customized vending leads for specific areas of Temple?", a: "Absolutely! We can focus on the medical district, downtown Main Street corridor, or I-35 commercial zones based on your target market preferences." },
     { q: "What's the typical ROI for vending machines in Temple?", a: "Vending machines in Temple typically achieve ROI within 11-14 months, with healthcare facilities often seeing faster returns due to 24/7 operations and consistent patient/visitor traffic." }
-  ]
+  ];
 
   return (
     <>

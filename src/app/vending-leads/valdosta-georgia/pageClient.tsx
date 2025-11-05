@@ -92,7 +92,7 @@ export default function ValdostaGeorgiaVendingLeadsPage() {
     { q: "How do you verify the quality of Valdosta vending locations?", a: "We conduct thorough verification including business validation, enrollment data analysis, employee assessment, and facility research for each Valdosta location." },
     { q: "Can I get customized vending leads for specific areas of Valdosta?", a: "Absolutely! We can target the VSU campus district, Inner Perimeter retail area, or industrial parks based on your preferences." },
     { q: "What's the typical ROI for vending machines in Valdosta?", a: "Machines in Valdosta typically see ROI within 12-16 months, with university and healthcare locations often achieving faster returns due to consistent high-volume traffic." }
-  ]
+  ];
 
   return (
     <>

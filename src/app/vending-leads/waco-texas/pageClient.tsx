@@ -93,7 +93,7 @@ export default function WacoTexasVendingLeadsPage() {
     { q: "How do you verify the quality of Waco vending locations?", a: "We conduct thorough verification including business validation, employee assessment, facility research, and local market analysis for each Waco location." },
     { q: "Can I get customized vending leads for specific areas of Waco?", a: "Absolutely! We can focus on specific neighborhoods, business districts, or industrial areas within Waco based on your target market." },
     { q: "What's the typical ROI for vending machines in Waco?", a: "Machines in Waco typically see ROI within 12-18 months, with healthcare and educational facilities often providing the most consistent returns." }
-  ]
+  ];
 
   return (
     <>

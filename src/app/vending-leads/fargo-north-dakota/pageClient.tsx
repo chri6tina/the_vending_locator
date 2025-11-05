@@ -92,7 +92,7 @@ export default function FargoNorthDakotaVendingLeadsPage() {
     { q: 'How do you verify the quality of Fargo vending locations?', a: 'We conduct thorough research on each Fargo location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.' },
     { q: 'Can I get customized vending leads for specific areas of Fargo?', a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Fargo based on your preferences and target market requirements.' },
     { q: "What's the typical ROI for vending machines in Fargo?", a: "Vending machines in Fargo typically show strong ROI due to the city's business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines." }
-  ]
+  ];
 
   return (
     <>

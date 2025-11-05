@@ -92,7 +92,7 @@ export default function NewBritainConnecticutVendingLeadsPage() {
     { q: "How do you verify the quality of New Britain vending locations?", a: "We verify each location through business research, employee count validation, facility assessment, and regional market analysis to ensure quality industrial and institutional placements." },
     { q: "Can I get customized vending leads for specific areas of New Britain?", a: "Absolutely! We can target the downtown commercial district, CCSU campus area, or industrial zones along Columbus Boulevard based on your preferences." },
     { q: "What's the typical ROI for vending machines in New Britain?", a: "Vending machines in New Britain typically achieve ROI within 11-15 months, with manufacturing and healthcare facilities often seeing faster returns due to shift workers and premium pricing acceptance." }
-  ]
+  ];
 
   return (
     <>

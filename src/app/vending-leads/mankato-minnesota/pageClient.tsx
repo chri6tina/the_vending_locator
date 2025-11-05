@@ -92,7 +92,7 @@ export default function MankatoMinnesotaVendingLeadsPage() {
     { q: "How do you verify the quality of Mankato vending locations?", a: "We verify each location through business research, enrollment data analysis, employee validation, and facility assessment to ensure quality university and healthcare placements." },
     { q: "Can I get customized vending leads for specific areas of Mankato?", a: "Absolutely! We can focus on the MSU campus district, downtown Riverfront area, or Highway 169 retail corridor based on your target market." },
     { q: "What's the typical ROI for vending machines in Mankato?", a: "Vending machines in Mankato typically achieve ROI within 12-16 months, with university and healthcare locations often seeing faster returns due to consistent high-traffic patterns." }
-  ]
+  ];
 
   return (
     <>

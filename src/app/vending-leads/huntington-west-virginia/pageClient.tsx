@@ -92,7 +92,7 @@ export default function HuntingtonWestVirginiaVendingLeadsPage() {
     { q: 'How do you verify the quality of Huntington vending locations?', a: 'We conduct thorough research on each Huntington location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.' },
     { q: 'Can I get customized vending leads for specific areas of Huntington?', a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Huntington based on your preferences and target market requirements.' },
     { q: "What's the typical ROI for vending machines in Huntington?", a: "Vending machines in Huntington typically show strong ROI due to the city's diverse business environment and stable economy. Our research shows average payback periods of 12-18 months for well-placed machines." }
-  ]
+  ];
 
   return (
     <>

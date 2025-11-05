@@ -92,7 +92,7 @@ export default function CaldwellIdahoVendingLeadsPage() {
     { q: "How do you verify the quality of Caldwell vending locations?", a: "We verify each location through business research, employee count validation, shift schedule analysis, and facility assessment to ensure quality industrial placements." },
     { q: "Can I get customized vending leads for specific areas of Caldwell?", a: "Absolutely! We can target the Cleveland Boulevard commercial corridor, downtown area, or industrial zones based on your preferences." },
     { q: "What's the typical ROI for vending machines in Caldwell?", a: "Vending machines in Caldwell typically achieve ROI within 12-16 months, with food processing facilities often seeing faster returns due to multiple shifts and large workforces." }
-  ]
+  ];
 
   return (
     <>

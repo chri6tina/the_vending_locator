@@ -92,7 +92,7 @@ export default function NewBedfordMassachusettsVendingLeadsPage() {
     { q: "How do you verify the quality of New Bedford vending locations?", a: "We verify each location through business research, operational schedule analysis, employee validation, and facility assessment to ensure quality maritime and industrial placements." },
     { q: "Can I get customized vending leads for specific areas of New Bedford?", a: "Absolutely! We can focus on the working waterfront district, downtown Union Street corridor, or north end industrial zones based on your target market." },
     { q: "What's the typical ROI for vending machines in New Bedford?", a: "Vending machines in New Bedford typically achieve ROI within 11-15 months, with fishing industry and manufacturing locations often seeing faster returns due to early shifts and premium pricing acceptance." }
-  ]
+  ];
 
   return (
     <>

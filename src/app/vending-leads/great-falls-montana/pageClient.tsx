@@ -93,7 +93,7 @@ export default function GreatFallsMontanaVendingLeadsPage() {
     { q: "How do you verify the quality of Great Falls vending locations?", a: "We conduct thorough verification including business validation, employee assessment, facility research, and local market analysis for each Great Falls location." },
     { q: "Can I get customized vending leads for specific areas of Great Falls?", a: "Absolutely! We can focus on specific neighborhoods, business districts, or industrial areas within Great Falls based on your target market." },
     { q: "What's the typical ROI for vending machines in Great Falls?", a: "Machines in Great Falls typically see ROI within 12-18 months, with healthcare and educational facilities often providing the most consistent returns." }
-  ]
+  ];
 
   return (
     <>

@@ -93,7 +93,7 @@ export default function TallahasseeFloridaVendingLeadsPage() {
     { q: "How do you verify the quality of Tallahassee vending locations?", a: "We conduct thorough verification including business validation, employee assessment, facility research, and local market analysis for each Tallahassee location." },
     { q: "Can I get customized vending leads for specific areas of Tallahassee?", a: "Absolutely! We can focus on specific neighborhoods, business districts, or industrial areas within Tallahassee based on your target market." },
     { q: "What's the typical ROI for vending machines in Tallahassee?", a: "Machines in Tallahassee typically see ROI within 12-18 months, with healthcare and educational facilities often providing the most consistent returns." }
-  ]
+  ];
 
   return (
     <>

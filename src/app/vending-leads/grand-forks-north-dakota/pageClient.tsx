@@ -92,7 +92,7 @@ export default function GrandForksNorthDakotaVendingLeadsPage() {
     { q: "How do you verify the quality of Grand Forks vending locations?", a: "We conduct thorough verification including business validation, foot traffic assessment, facility size analysis, and industry research for each Grand Forks location." },
     { q: "Can I get customized vending leads for specific areas of Grand Forks?", a: "Absolutely! We can focus on specific zones like the UND campus area, downtown district, or the Columbia Road retail corridor based on your target market." },
     { q: "What's the typical ROI for vending machines in Grand Forks?", a: "Machines in Grand Forks typically see payback periods of 12-15 months, particularly in university and healthcare settings where traffic remains consistent year-round." }
-  ]
+  ];
 
   return (
     <>

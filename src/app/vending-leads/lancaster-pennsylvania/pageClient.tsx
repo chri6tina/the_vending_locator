@@ -92,7 +92,7 @@ export default function LancasterPennsylvaniaVendingLeadsPage() {
     { q: "How do you verify the quality of Lancaster vending locations?", a: "We conduct thorough verification including business validation, seasonal traffic analysis, employee assessment, and facility research for each Lancaster location." },
     { q: "Can I get customized vending leads for specific areas of Lancaster?", a: "Absolutely! We can target the downtown Queen Street corridor, Park City shopping area, or Route 30 tourist corridor based on your preferences." },
     { q: "What's the typical ROI for vending machines in Lancaster?", a: "Machines in Lancaster typically see ROI within 11-15 months, with tourism and healthcare locations often achieving faster returns due to high traffic volumes and premium pricing acceptance." }
-  ]
+  ];
 
   return (
     <>

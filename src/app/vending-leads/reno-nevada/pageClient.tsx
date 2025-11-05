@@ -93,7 +93,7 @@ export default function RenoNevadaVendingLeadsPage() {
     { q: "How do you verify the quality of Reno vending locations?", a: "We conduct thorough verification including business validation, employee assessment, facility research, and local market analysis for each Reno location." },
     { q: "Can I get customized vending leads for specific areas of Reno?", a: "Absolutely! We can focus on specific neighborhoods, business districts, or industrial areas within Reno based on your target market." },
     { q: "What's the typical ROI for vending machines in Reno?", a: "Machines in Reno typically see ROI within 12-18 months, with healthcare and educational facilities often providing the most consistent returns." }
-  ]
+  ];
 
   return (
     <>

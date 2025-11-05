@@ -93,7 +93,7 @@ export default function LasCrucesNewNewMexicoVendingLeadsPage() {
     { q: "How do you verify the quality of Las Cruces New vending locations?", a: "We conduct thorough verification including business validation, employee assessment, facility research, and local market analysis for each Las Cruces New location." },
     { q: "Can I get customized vending leads for specific areas of Las Cruces New?", a: "Absolutely! We can focus on specific neighborhoods, business districts, or industrial areas within Las Cruces New based on your target market." },
     { q: "What's the typical ROI for vending machines in Las Cruces New?", a: "Machines in Las Cruces New typically see ROI within 12-18 months, with healthcare and educational facilities often providing the most consistent returns." }
-  ]
+  ];
 
   return (
     <>

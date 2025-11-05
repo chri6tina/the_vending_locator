@@ -93,7 +93,7 @@ export default function JacksonMississippiVendingLeadsPage() {
     { q: "How do you verify the quality of Jackson vending locations?", a: "We conduct thorough verification including business validation, employee assessment, facility research, and local market analysis for each Jackson location." },
     { q: "Can I get customized vending leads for specific areas of Jackson?", a: "Absolutely! We can focus on specific neighborhoods, business districts, or industrial areas within Jackson based on your target market." },
     { q: "What's the typical ROI for vending machines in Jackson?", a: "Machines in Jackson typically see ROI within 12-18 months, with healthcare and educational facilities often providing the most consistent returns." }
-  ]
+  ];
 
   return (
     <>

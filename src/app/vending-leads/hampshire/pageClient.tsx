@@ -92,7 +92,7 @@ export default function HampshireUnknownVendingLeadsPage() {
     { q: "How do you verify the quality of Hampshire vending locations?", a: "We conduct thorough verification including business validation, employee assessment, facility research, and local market analysis for each Hampshire location." },
     { q: "Can I get customized vending leads for specific areas of Hampshire?", a: "Absolutely! We can focus on specific neighborhoods, business districts, or industrial areas within Hampshire based on your target market." },
     { q: "What's the typical ROI for vending machines in Hampshire?", a: "Machines in Hampshire typically see ROI within 12-18 months, with healthcare and educational facilities often providing the most consistent returns." }
-  ]
+  ];
 
   return (
     <>

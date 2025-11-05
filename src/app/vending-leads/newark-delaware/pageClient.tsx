@@ -92,7 +92,7 @@ export default function NewarkDelawareVendingLeadsPage() {
     { q: 'How do you verify the quality of Newark vending locations?', a: 'We conduct thorough research on each Newark location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.' },
     { q: 'Can I get customized vending leads for specific areas of Newark?', a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, university areas, or business districts within Newark based on your preferences and target market requirements.' },
     { q: "What's the typical ROI for vending machines in Newark?", a: "Vending machines in Newark typically show strong ROI due to the city's university population and diverse business environment. Our research shows average payback periods of 12-18 months for well-placed machines." }
-  ]
+  ];
 
   return (
     <>

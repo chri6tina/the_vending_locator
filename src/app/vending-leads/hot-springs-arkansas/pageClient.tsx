@@ -92,7 +92,7 @@ export default function HotSpringsArkansasVendingLeadsPage() {
     { q: "How do you verify the quality of Hot Springs vending locations?", a: "We verify each location through business research, seasonal traffic analysis, visitor volume assessment, and facility evaluation to ensure quality tourism-focused placements." },
     { q: "Can I get customized vending leads for specific areas of Hot Springs?", a: "Absolutely! We can focus on the historic Bathhouse Row, downtown Central Avenue district, or the Highway 7 commercial corridor based on your target market." },
     { q: "What's the typical ROI for vending machines in Hot Springs?", a: "Vending machines in Hot Springs typically achieve ROI within 11-15 months, with tourism-related locations often seeing faster returns during peak visitor seasons and from premium pricing acceptance." }
-  ]
+  ];
 
   return (
     <>

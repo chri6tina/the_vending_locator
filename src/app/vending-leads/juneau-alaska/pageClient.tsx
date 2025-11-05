@@ -93,7 +93,7 @@ export default function JuneauAlaskaVendingLeadsPage() {
     { q: "How do you verify the quality of Juneau vending locations?", a: "We conduct thorough verification including business validation, employee assessment, facility research, and local market analysis for each Juneau location." },
     { q: "Can I get customized vending leads for specific areas of Juneau?", a: "Absolutely! We can focus on specific neighborhoods, business districts, or industrial areas within Juneau based on your target market." },
     { q: "What's the typical ROI for vending machines in Juneau?", a: "Machines in Juneau typically see ROI within 12-18 months, with healthcare and educational facilities often providing the most consistent returns." }
-  ]
+  ];
 
   return (
     <>

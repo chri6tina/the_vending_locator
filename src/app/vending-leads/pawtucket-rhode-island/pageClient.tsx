@@ -92,7 +92,7 @@ export default function PawtucketRhodeIslandVendingLeadsPage() {
     { q: "How do you verify the quality of Pawtucket vending locations?", a: "We verify each location through business research, employee count validation, facility assessment, and regional market analysis to ensure quality placements." },
     { q: "Can I get customized vending leads for specific areas of Pawtucket?", a: "Absolutely! We can target the downtown arts district, Main Street corridor, or industrial zones along the Blackstone River based on your preferences." },
     { q: "What's the typical ROI for vending machines in Pawtucket?", a: "Vending machines in Pawtucket typically achieve ROI within 12-17 months, with creative industry and healthcare placements often seeing faster returns due to younger demographics." }
-  ]
+  ];
 
   return (
     <>

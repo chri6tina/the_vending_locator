@@ -93,7 +93,7 @@ export default function AugustaMaineVendingLeadsPage() {
     { q: "How do you verify the quality of Augusta vending locations?", a: "We conduct thorough verification including business validation, employee assessment, facility research, and local market analysis for each Augusta location." },
     { q: "Can I get customized vending leads for specific areas of Augusta?", a: "Absolutely! We can focus on specific neighborhoods, business districts, or industrial areas within Augusta based on your target market." },
     { q: "What's the typical ROI for vending machines in Augusta?", a: "Machines in Augusta typically see ROI within 12-18 months, with healthcare and educational facilities often providing the most consistent returns." }
-  ]
+  ];
 
   return (
     <>

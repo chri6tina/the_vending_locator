@@ -92,7 +92,7 @@ export default function JacksonMichiganVendingLeadsPage() {
     { q: "How do you verify the quality of Jackson vending locations?", a: "We conduct thorough verification including business validation, employee count assessment, shift schedule analysis, and facility research for each Jackson location." },
     { q: "Can I get customized vending leads for specific areas of Jackson?", a: "Absolutely! We can target the downtown Michigan Avenue district, Westwood Mall area, or industrial zones based on your preferences." },
     { q: "What's the typical ROI for vending machines in Jackson?", a: "Machines in Jackson typically see ROI within 13-17 months, with manufacturing and healthcare facilities often achieving faster returns due to shift operations and consistent traffic." }
-  ]
+  ];
 
   return (
     <>

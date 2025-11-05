@@ -93,7 +93,7 @@ export default function FortMyersFloridaVendingLeadsPage() {
     { q: "How do you verify the quality of Fort Myers vending locations?", a: "We conduct thorough verification including business validation, employee assessment, facility research, and local market analysis for each Fort Myers location." },
     { q: "Can I get customized vending leads for specific areas of Fort Myers?", a: "Absolutely! We can focus on specific neighborhoods, business districts, or industrial areas within Fort Myers based on your target market." },
     { q: "What's the typical ROI for vending machines in Fort Myers?", a: "Machines in Fort Myers typically see ROI within 12-18 months, with healthcare and educational facilities often providing the most consistent returns." }
-  ]
+  ];
 
   return (
     <>

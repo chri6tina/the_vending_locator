@@ -92,7 +92,7 @@ export default function MinotNorthDakotaVendingLeadsPage() {
     { q: "How do you verify the quality of Minot vending locations?", a: "We verify each Minot location through business research, employee count validation, facility assessment, and industry analysis to ensure quality opportunities." },
     { q: "Can I get customized vending leads for specific areas of Minot?", a: "Absolutely! We can target specific areas like the Broadway retail district, South Hill business zone, or locations near Minot AFB based on your preferences." },
     { q: "What's the typical ROI for vending machines in Minot?", a: "Vending machines in Minot typically achieve ROI in 13-18 months, with military and healthcare locations often seeing faster returns due to consistent traffic patterns." }
-  ]
+  ];
 
   return (
     <>

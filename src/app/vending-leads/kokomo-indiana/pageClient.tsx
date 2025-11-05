@@ -92,7 +92,7 @@ export default function KokomoIndianaVendingLeadsPage() {
     { q: "How do you verify the quality of Kokomo vending locations?", a: "We conduct thorough verification including business validation, shift schedule analysis, employee count assessment, and facility research for each Kokomo location." },
     { q: "Can I get customized vending leads for specific areas of Kokomo?", a: "Absolutely! We can target the industrial south side, downtown Sycamore Street district, or retail zones based on your preferences." },
     { q: "What's the typical ROI for vending machines in Kokomo?", a: "Machines in Kokomo typically see ROI within 11-15 months, with automotive manufacturing facilities often achieving faster returns due to multiple shifts and premium pricing acceptance." }
-  ]
+  ];
 
   return (
     <>

@@ -92,7 +92,7 @@ export default function MolineIllinoisVendingLeadsPage() {
     { q: "How do you verify the quality of Moline vending locations?", a: "We conduct thorough verification including business validation, employee assessment, facility research, and local market analysis for each Moline location." },
     { q: "Can I get customized vending leads for specific areas of Moline?", a: "Absolutely! We can focus on specific neighborhoods, business districts, or industrial areas within Moline based on your target market." },
     { q: "What's the typical ROI for vending machines in Moline?", a: "Machines in Moline typically see ROI within 12-18 months, with healthcare and educational facilities often providing the most consistent returns." }
-  ]
+  ];
 
   return (
     <>

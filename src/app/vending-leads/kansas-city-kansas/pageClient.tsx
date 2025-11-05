@@ -93,7 +93,7 @@ export default function KansasCityKansasVendingLeadsPage() {
     { q: "How do you verify the quality of Kansas City vending locations?", a: "We conduct thorough verification including business validation, employee assessment, facility research, and local market analysis for each Kansas City location." },
     { q: "Can I get customized vending leads for specific areas of Kansas City?", a: "Absolutely! We can focus on specific neighborhoods, business districts, or industrial areas within Kansas City based on your target market." },
     { q: "What's the typical ROI for vending machines in Kansas City?", a: "Machines in Kansas City typically see ROI within 12-18 months, with healthcare and educational facilities often providing the most consistent returns." }
-  ]
+  ];
 
   return (
     <>

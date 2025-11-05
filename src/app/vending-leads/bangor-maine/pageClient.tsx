@@ -93,7 +93,7 @@ export default function BangorMaineVendingLeadsPage() {
     { q: "How do you verify the quality of Bangor vending locations?", a: "We conduct thorough verification including business validation, employee assessment, facility research, and local market analysis for each Bangor location." },
     { q: "Can I get customized vending leads for specific areas of Bangor?", a: "Absolutely! We can focus on specific neighborhoods, business districts, or industrial areas within Bangor based on your target market." },
     { q: "What's the typical ROI for vending machines in Bangor?", a: "Machines in Bangor typically see ROI within 12-18 months, with healthcare and educational facilities often providing the most consistent returns." }
-  ]
+  ];
 
   return (
     <>

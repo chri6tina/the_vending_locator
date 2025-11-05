@@ -92,7 +92,7 @@ export default function TrentonNewJerseyVendingLeadsPage() {
     { q: "How do you verify the quality of Trenton vending locations?", a: "We conduct thorough verification including business validation, employee count assessment, facility size analysis, and capital city market research for each Trenton location." },
     { q: "Can I get customized vending leads for specific areas of Trenton?", a: "Absolutely! We can target the State Street government district, downtown Broad Street corridor, or Hamilton Avenue area based on your preferences." },
     { q: "What's the typical ROI for vending machines in Trenton?", a: "Machines in Trenton typically see ROI within 11-15 months, with government and healthcare locations often achieving faster returns due to stable employment and premium pricing acceptance." }
-  ]
+  ];
 
   return (
     <>

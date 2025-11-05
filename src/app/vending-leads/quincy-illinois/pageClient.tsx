@@ -92,7 +92,7 @@ export default function QuincyIllinoisVendingLeadsPage() {
     { q: "How do you verify the quality of Quincy vending locations?", a: "We verify each location through business research, employee count validation, facility assessment, and regional market analysis to ensure quality placements." },
     { q: "Can I get customized vending leads for specific areas of Quincy?", a: "Absolutely! We can focus on the downtown square district, Broadway corridor, or industrial zones based on your target market preferences." },
     { q: "What's the typical ROI for vending machines in Quincy?", a: "Vending machines in Quincy typically achieve ROI within 13-17 months, with manufacturing and healthcare facilities often seeing faster returns due to shift workers and consistent operations." }
-  ]
+  ];
 
   return (
     <>

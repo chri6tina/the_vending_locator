@@ -92,7 +92,7 @@ export default function SpringfieldIllinoisVendingLeadsPage() {
     { q: "How do you verify the quality of Springfield vending locations?", a: "We conduct thorough verification including business validation, employee assessment, facility research, and local market analysis for each Springfield location." },
     { q: "Can I get customized vending leads for specific areas of Springfield?", a: "Absolutely! We can focus on specific neighborhoods, business districts, or industrial areas within Springfield based on your target market." },
     { q: "What's the typical ROI for vending machines in Springfield?", a: "Machines in Springfield typically see ROI within 12-18 months, with healthcare and educational facilities often providing the most consistent returns." }
-  ]
+  ];
 
   return (
     <>

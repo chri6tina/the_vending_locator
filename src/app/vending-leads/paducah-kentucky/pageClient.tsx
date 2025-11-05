@@ -92,7 +92,7 @@ export default function PaducahKentuckyVendingLeadsPage() {
     { q: "How do you verify the quality of Paducah vending locations?", a: "We conduct thorough verification including business validation, visitor traffic analysis, employee count assessment, and facility research for each Paducah location." },
     { q: "Can I get customized vending leads for specific areas of Paducah?", a: "Absolutely! We can target the historic downtown arts district, Broadway corridor, or industrial zones based on your preferences." },
     { q: "What's the typical ROI for vending machines in Paducah?", a: "Machines in Paducah typically see ROI within 14-18 months, with healthcare and cultural venue locations often achieving faster returns during events and peak seasons." }
-  ]
+  ];
 
   return (
     <>

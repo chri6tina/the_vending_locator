@@ -92,7 +92,7 @@ export default function MansfieldOhioVendingLeadsPage() {
     { q: "How do you verify the quality of Mansfield vending locations?", a: "We verify each location through business research, employee count validation, shift schedule analysis, and facility assessment to ensure quality industrial placements." },
     { q: "Can I get customized vending leads for specific areas of Mansfield?", a: "Absolutely! We can target the downtown Park Avenue district, Lexington Avenue retail corridor, or industrial zones based on your preferences." },
     { q: "What's the typical ROI for vending machines in Mansfield?", a: "Vending machines in Mansfield typically achieve ROI within 13-17 months, with manufacturing and healthcare facilities often seeing faster returns due to shift operations." }
-  ]
+  ];
 
   return (
     <>

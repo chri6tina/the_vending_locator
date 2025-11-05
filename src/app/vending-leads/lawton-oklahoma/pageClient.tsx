@@ -92,7 +92,7 @@ export default function LawtonOklahomaVendingLeadsPage() {
     { q: "How do you verify the quality of Lawton vending locations?", a: "We conduct thorough verification including business validation, employee count assessment, security clearance considerations, and facility research for each Lawton location." },
     { q: "Can I get customized vending leads for specific areas of Lawton?", a: "Absolutely! We can target areas near Fort Sill gates, downtown Cache Road corridor, or retail zones based on your preferences." },
     { q: "What's the typical ROI for vending machines in Lawton?", a: "Machines in Lawton typically see ROI within 12-16 months, with military and defense contractor locations often achieving faster returns due to stable employment and consistent traffic." }
-  ]
+  ];
 
   return (
     <>
