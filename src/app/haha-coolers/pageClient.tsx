@@ -251,7 +251,7 @@ export default function HahaCoolersPage() {
               {/* CTA Buttons */}
               <div className="mt-8 flex flex-col sm:flex-row items-start gap-4">
                 <a
-                  href="https://www.amazon.com/Vending-Machine-Smart-Refrigerated-Reader/dp/B0F9P9KLX6"
+                  href="https://amzn.to/43aTe10"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors shadow-lg text-center"
@@ -654,7 +654,7 @@ export default function HahaCoolersPage() {
 
                   {plan.name === 'Single Unit' ? (
                     <a
-                      href="https://www.amazon.com/Vending-Machine-Smart-Refrigerated-Reader/dp/B0F9P9KLX6"
+                      href="https://amzn.to/43aTe10"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="block w-full text-center px-6 py-4 rounded-lg font-semibold transition-colors bg-navy text-white hover:bg-navy-light shadow-lg"
@@ -943,7 +943,7 @@ export default function HahaCoolersPage() {
             </div>
             <div className="flex gap-3 w-full sm:w-auto">
               <a
-                href="https://www.amazon.com/Vending-Machine-Smart-Refrigerated-Reader/dp/B0F9P9KLX6"
+                href="https://amzn.to/43aTe10"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 sm:flex-none bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors shadow-lg text-center"
