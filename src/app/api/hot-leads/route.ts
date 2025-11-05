@@ -1,14 +1,18 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { supabase } from '@/lib/supabase'
 
+// In-memory storage for development (when Supabase not configured)
+let devLeads: any[] = []
+
 // GET - Retrieve all leads
 export async function GET() {
   try {
     // Check if Supabase is configured
-    if (!process.env.NEXT_PUBLIC_SUPABASE_URL) {
+    if (!process.env.NEXT_PUBLIC_SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL === 'https://placeholder.supabase.co') {
+      console.log('Using dev mode - returning in-memory leads')
       return NextResponse.json({ 
         success: true, 
-        leads: []
+        leads: devLeads 
       })
     }
 
@@ -52,14 +56,6 @@ function generateSlug(city: string, state: string): string {
 // POST - Create new lead
 export async function POST(request: NextRequest) {
   try {
-    // Check if Supabase is configured
-    if (!process.env.NEXT_PUBLIC_SUPABASE_URL) {
-      return NextResponse.json({ 
-        success: false, 
-        error: 'Database not configured' 
-      }, { status: 503 })
-    }
-
     const body = await request.json()
     
     // Validate required fields
@@ -84,6 +80,37 @@ export async function POST(request: NextRequest) {
     
     // Generate title if not provided
     const title = body.title || `Vending Location in ${body.city}, ${body.state}`
+    
+    // Check if Supabase is configured
+    if (!process.env.NEXT_PUBLIC_SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL === 'https://placeholder.supabase.co') {
+      console.log('Using dev mode - storing in memory')
+      
+      const newLead = {
+        id: `dev-${Date.now()}`,
+        title: title.trim(),
+        slug: slug,
+        city: body.city.trim(),
+        state: body.state.trim(),
+        business_type: body.businessType.trim(),
+        employee_count: body.employeeCount,
+        zip_code: body.zipCode.trim(),
+        description: body.description.trim(),
+        price: price,
+        status: 'available',
+        created_at: new Date().toISOString(),
+        contact_name: body.contactName?.trim() || null,
+        contact_email: body.contactEmail?.trim() || null,
+        contact_phone: body.contactPhone?.trim() || null,
+        full_address: body.fullAddress?.trim() || null
+      }
+      
+      devLeads.unshift(newLead)
+      
+      return NextResponse.json({ 
+        success: true, 
+        lead: newLead 
+      })
+    }
     
     const { data: newLead, error } = await supabase
       .from('hot_leads')
@@ -130,16 +157,40 @@ export async function POST(request: NextRequest) {
 // PUT - Update lead (for marking as sold, etc.)
 export async function PUT(request: NextRequest) {
   try {
-    // Check if Supabase is configured
-    if (!process.env.NEXT_PUBLIC_SUPABASE_URL) {
-      return NextResponse.json({ 
-        success: false, 
-        error: 'Database not configured' 
-      }, { status: 503 })
-    }
-
     const body = await request.json()
     const { id, ...updates } = body
+    
+    // Check if Supabase is configured
+    if (!process.env.NEXT_PUBLIC_SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL === 'https://placeholder.supabase.co') {
+      console.log('Using dev mode - updating in memory')
+      
+      const leadIndex = devLeads.findIndex(l => l.id === id)
+      
+      if (leadIndex === -1) {
+        return NextResponse.json({ 
+          success: false, 
+          error: 'Lead not found' 
+        }, { status: 404 })
+      }
+
+      // Convert camelCase to snake_case for consistency
+      const updateData: any = { ...devLeads[leadIndex] }
+      if (updates.title) updateData.title = updates.title
+      if (updates.businessType) updateData.business_type = updates.businessType
+      if (updates.employeeCount) updateData.employee_count = updates.employeeCount
+      if (updates.zipCode) updateData.zip_code = updates.zipCode
+      if (updates.description) updateData.description = updates.description
+      if (updates.price) updateData.price = updates.price
+      if (updates.status) updateData.status = updates.status
+      if (updates.status === 'sold') updateData.sold_at = new Date().toISOString()
+      
+      devLeads[leadIndex] = updateData
+      
+      return NextResponse.json({ 
+        success: true, 
+        lead: updateData 
+      })
+    }
     
     // Convert camelCase to snake_case for database
     const dbUpdates: any = {}
