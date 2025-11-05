@@ -1,87 +1,128 @@
 'use client'
 
+import { useState, useEffect } from 'react'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import HotLeadsMarketplace from '@/components/HotLeadsMarketplace'
+import HotLeads from '@/components/HotLeads'
 import { motion } from 'framer-motion'
-import { SparklesIcon, BoltIcon, ShieldCheckIcon } from '@heroicons/react/24/solid'
+import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon } from '@heroicons/react/24/solid'
 
 export default function HotLeadsPage() {
+  // Active users counter
+  const [activeUsers, setActiveUsers] = useState(18)
+
+  // Active users counter effect
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveUsers(prev => {
+        const change = Math.floor(Math.random() * 3) - 1
+        const newValue = prev + change
+        return Math.max(12, Math.min(25, newValue))
+      })
+    }, 4000)
+    return () => clearInterval(interval)
+  }, [])
+
   return (
     <main className="min-h-screen bg-warm-white">
       <Header />
       
       {/* Hero Section */}
-      <div className="bg-gradient-to-br from-navy via-navy-light to-navy">
-        <div className="mx-auto max-w-7xl px-6 py-20 sm:py-28 lg:px-8">
-          <div className="mx-auto max-w-3xl text-center">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5 }}
-              className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-white/90 text-sm font-medium mb-6"
+      <section className="relative py-20 bg-white overflow-hidden">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto text-center">
+            {/* Active Users Counter */}
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="mt-6 sm:mt-8 p-4 bg-cream/50 backdrop-blur-sm rounded-2xl border border-gray-200 shadow-sm max-w-md mx-auto mb-6"
             >
-              <BoltIcon className="w-4 h-4 text-coral" />
-              Premium Location Leads
+              <div className="flex items-center justify-center gap-3">
+                <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                <span className="text-sm font-medium text-chocolate">
+                  <span className="font-bold text-coral">{activeUsers}</span> people are browsing leads right now
+                </span>
+              </div>
             </motion.div>
 
-            <motion.h1
+            {/* Main Headline */}
+            <motion.h1 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-4xl font-playfair font-bold tracking-tight text-white sm:text-5xl mb-6"
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="text-4xl md:text-6xl font-playfair font-bold text-charcoal mb-6 leading-tight"
             >
-              Hot Vending Location Leads
+              <span className="text-navy">Premium Hot Leads</span> for Vending Locations
             </motion.h1>
-            
-            <motion.p
+
+            {/* Value Proposition */}
+            <motion.p 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-lg sm:text-xl leading-8 text-white/90 mb-8"
+              transition={{ duration: 0.8, delay: 0.4 }}
+              className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
             >
               Purchase exclusive, ready-to-contact vending machine location opportunities. 
               Each lead includes full contact information and is sold only once.
             </motion.p>
 
-            <motion.div
+            {/* Trust Signals */}
+            <motion.div 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              className="flex flex-wrap justify-center gap-6 text-white"
+              transition={{ duration: 0.8, delay: 0.6 }}
+              className="mt-6 sm:mt-8 grid grid-cols-2 gap-4 max-w-md mx-auto mb-8"
             >
-              <div className="flex items-center gap-2">
-                <ShieldCheckIcon className="w-5 h-5 text-coral" />
-                <span className="text-sm font-medium">Verified Contacts</span>
+              <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                <div className="flex items-center gap-3">
+                  <CheckBadgeIcon className="h-5 w-5 text-green-600" />
+                  <span className="text-sm font-medium text-chocolate">Verified Contacts</span>
+                </div>
               </div>
-              <div className="flex items-center gap-2">
-                <SparklesIcon className="w-5 h-5 text-coral" />
-                <span className="text-sm font-medium">Instant Access</span>
+              <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                <div className="flex items-center gap-3">
+                  <StarIcon className="h-5 w-5 text-yellow-500" />
+                  <span className="text-sm font-medium text-chocolate">Exclusive Leads</span>
+                </div>
               </div>
-              <div className="flex items-center gap-2">
-                <BoltIcon className="w-5 h-5 text-coral" />
-                <span className="text-sm font-medium">Exclusive Leads</span>
+              <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                <div className="flex items-center gap-3">
+                  <ShieldCheckIcon className="h-5 w-5 text-blue-600" />
+                  <span className="text-sm font-medium text-chocolate">Secure Payment</span>
+                </div>
+              </div>
+              <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                <div className="flex items-center gap-3">
+                  <ClockIcon className="h-5 w-5 text-purple-600" />
+                  <span className="text-sm font-medium text-chocolate">Instant Access</span>
+                </div>
               </div>
             </motion.div>
 
-            <motion.div
+            {/* CTA Button */}
+            <motion.div 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
+              transition={{ duration: 0.8, delay: 0.8 }}
               className="mt-10"
             >
               <button
                 onClick={() => {
-                  document.getElementById('marketplace')?.scrollIntoView({ behavior: 'smooth' });
+                  const marketplace = document.getElementById('marketplace')
+                  if (marketplace) {
+                    marketplace.scrollIntoView({ behavior: 'smooth' })
+                  }
                 }}
-                className="px-8 py-4 bg-coral text-white rounded-lg font-semibold text-lg hover:bg-coral-dark transition-all transform hover:scale-105 shadow-lg"
+                className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
               >
                 Browse Available Leads
               </button>
             </motion.div>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Hot Leads Marketplace */}
       <HotLeadsMarketplace />
@@ -215,6 +256,32 @@ export default function HotLeadsPage() {
           </motion.div>
         </div>
       </div>
+
+      {/* Divider Section */}
+      <div className="bg-white py-16">
+        <div className="max-w-4xl mx-auto text-center px-4">
+          <h2 className="text-3xl font-playfair font-bold text-charcoal mb-4">
+            Prefer Full-Service Location Research?
+          </h2>
+          <p className="text-lg text-stone mb-8">
+            Let our expert team handle the entire process for you. We&apos;ll research, verify, and secure guaranteed vending locations on your behalf.
+          </p>
+          <button
+            onClick={() => {
+              const packages = document.getElementById('packages')
+              if (packages) {
+                packages.scrollIntoView({ behavior: 'smooth' })
+              }
+            }}
+            className="inline-block bg-navy text-white px-8 py-3 rounded-lg font-semibold hover:bg-navy-light transition-colors"
+          >
+            View Our Location Packages
+          </button>
+        </div>
+      </div>
+
+      {/* Guaranteed Location Packages */}
+      <HotLeads />
 
       <Footer />
     </main>
