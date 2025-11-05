@@ -84,14 +84,14 @@ export default function RexburgIdahoVendingLeadsPage() {
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in Rexburg?', a: 'Rexburg offers vending opportunities at BYU-Idaho campus buildings, agricultural businesses, retail centers, healthcare facilities, and local offices serving the university community.' },
-    { q: 'How quickly can I get vending machine leads for Rexburg?', a: 'Our Rexburg vending leads are delivered within 3-5 business days with detailed information about each location and eastern Idaho market insights.' },
-    { q: 'What makes Rexburg a good market for vending machines?', a: 'Rexburg's economy, driven by BYU-Idaho's large enrollment, creates consistent year-round vending demand. The university's growth and the city's agricultural base provide diverse placement opportunities.' },
-    { q: 'Do you provide ongoing support for Rexburg locations?', a: 'Yes, we provide comprehensive support including location research, university market insights, contact information, and placement strategies tailored to Rexburg's academic environment.' },
-    { q: 'What industries in Rexburg are best for vending machines?', a: 'Higher education (BYU-Idaho), agricultural businesses, retail centers, and healthcare facilities show excellent potential due to large student populations and consistent traffic.' },
-    { q: 'How do you verify the quality of Rexburg vending locations?', a: 'We conduct thorough verification including business validation, enrollment data analysis, foot traffic assessment, and facility research for each Rexburg location.' },
-    { q: 'Can I get customized vending leads for specific areas of Rexburg?', a: 'Absolutely! We can focus on the BYU-Idaho campus district, Main Street downtown area, or retail zones along Highway 20 based on your target market.' },
-    { q: 'What's the typical ROI for vending machines in Rexburg?', a: 'Machines in Rexburg typically see ROI within 13-17 months, with university locations often achieving faster returns during academic semesters due to high student traffic.' }
+    { q: "What types of vending machine locations are available in Rexburg?", a: "Rexburg offers vending opportunities at BYU-Idaho campus buildings, agricultural businesses, retail centers, healthcare facilities, and local offices serving the university community." },
+    { q: "How quickly can I get vending machine leads for Rexburg?", a: "Our Rexburg vending leads are delivered within 3-5 business days with detailed information about each location and eastern Idaho market insights." },
+    { q: "What makes Rexburg a good market for vending machines?", a: "Rexburg's economy, driven by BYU-Idaho's large enrollment, creates consistent year-round vending demand. The university's growth and the city's agricultural base provide diverse placement opportunities." },
+    { q: "Do you provide ongoing support for Rexburg locations?", a: "Yes, we provide comprehensive support including location research, university market insights, contact information, and placement strategies tailored to Rexburg's academic environment." },
+    { q: "What industries in Rexburg are best for vending machines?", a: "Higher education (BYU-Idaho), agricultural businesses, retail centers, and healthcare facilities show excellent potential due to large student populations and consistent traffic." },
+    { q: "How do you verify the quality of Rexburg vending locations?", a: "We conduct thorough verification including business validation, enrollment data analysis, foot traffic assessment, and facility research for each Rexburg location." },
+    { q: "Can I get customized vending leads for specific areas of Rexburg?", a: "Absolutely! We can focus on the BYU-Idaho campus district, Main Street downtown area, or retail zones along Highway 20 based on your target market." },
+    { q: "What's the typical ROI for vending machines in Rexburg?", a: "Machines in Rexburg typically see ROI within 13-17 months, with university locations often achieving faster returns during academic semesters due to high student traffic." }
   ]
 
   return (
@@ -204,7 +204,7 @@ export default function RexburgIdahoVendingLeadsPage() {
                     onClick={() => {
                       const pricingSection = document.getElementById('pricing')
                       if (pricingSection) {
-                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                        pricingSection.scrollIntoView({ behavior: 'smooth" })
                       }
                     }}
                     className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
@@ -509,10 +509,10 @@ export default function RexburgIdahoVendingLeadsPage() {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
-              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/idaho' },
-              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-idaho' }
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/" },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads" },
+              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/idaho" },
+              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-idaho" }
             ]
           })
         }}

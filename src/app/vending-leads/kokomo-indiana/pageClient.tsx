@@ -84,14 +84,14 @@ export default function KokomoIndianaVendingLeadsPage() {
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in Kokomo?', a: 'Kokomo offers vending opportunities in automotive manufacturing facilities (Delphi, Stellantis), healthcare centers, retail locations, educational institutions, and industrial plants.' },
-    { q: 'How quickly can I get vending machine leads for Kokomo?', a: 'Our Kokomo vending leads are delivered within 3-5 business days with comprehensive details about each location and central Indiana manufacturing market insights.' },
-    { q: 'What makes Kokomo a good market for vending machines?', a: 'Kokomo's strong automotive manufacturing heritage creates excellent vending opportunities. The city's industrial base and multiple shift operations ensure consistent demand for vending services.' },
-    { q: 'Do you provide ongoing support for Kokomo locations?', a: 'Yes, we provide comprehensive support including location research, automotive sector insights, contact information, and placement strategies tailored to Kokomo's manufacturing economy.' },
-    { q: 'What industries in Kokomo are best for vending machines?', a: 'Automotive manufacturing, industrial facilities, healthcare centers, and retail locations show excellent potential due to large shift-worker populations and 24/7 operations.' },
-    { q: 'How do you verify the quality of Kokomo vending locations?', a: 'We conduct thorough verification including business validation, shift schedule analysis, employee count assessment, and facility research for each Kokomo location.' },
-    { q: 'Can I get customized vending leads for specific areas of Kokomo?', a: 'Absolutely! We can target the industrial south side, downtown Sycamore Street district, or retail zones based on your preferences.' },
-    { q: 'What's the typical ROI for vending machines in Kokomo?', a: 'Machines in Kokomo typically see ROI within 11-15 months, with automotive manufacturing facilities often achieving faster returns due to multiple shifts and premium pricing acceptance.' }
+    { q: "What types of vending machine locations are available in Kokomo?", a: "Kokomo offers vending opportunities in automotive manufacturing facilities (Delphi, Stellantis), healthcare centers, retail locations, educational institutions, and industrial plants." },
+    { q: "How quickly can I get vending machine leads for Kokomo?", a: "Our Kokomo vending leads are delivered within 3-5 business days with comprehensive details about each location and central Indiana manufacturing market insights." },
+    { q: "What makes Kokomo a good market for vending machines?", a: "Kokomo's strong automotive manufacturing heritage creates excellent vending opportunities. The city's industrial base and multiple shift operations ensure consistent demand for vending services." },
+    { q: "Do you provide ongoing support for Kokomo locations?", a: "Yes, we provide comprehensive support including location research, automotive sector insights, contact information, and placement strategies tailored to Kokomo's manufacturing economy." },
+    { q: "What industries in Kokomo are best for vending machines?", a: "Automotive manufacturing, industrial facilities, healthcare centers, and retail locations show excellent potential due to large shift-worker populations and 24/7 operations." },
+    { q: "How do you verify the quality of Kokomo vending locations?", a: "We conduct thorough verification including business validation, shift schedule analysis, employee count assessment, and facility research for each Kokomo location." },
+    { q: "Can I get customized vending leads for specific areas of Kokomo?", a: "Absolutely! We can target the industrial south side, downtown Sycamore Street district, or retail zones based on your preferences." },
+    { q: "What's the typical ROI for vending machines in Kokomo?", a: "Machines in Kokomo typically see ROI within 11-15 months, with automotive manufacturing facilities often achieving faster returns due to multiple shifts and premium pricing acceptance." }
   ]
 
   return (
@@ -204,7 +204,7 @@ export default function KokomoIndianaVendingLeadsPage() {
                     onClick={() => {
                       const pricingSection = document.getElementById('pricing')
                       if (pricingSection) {
-                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                        pricingSection.scrollIntoView({ behavior: 'smooth" })
                       }
                     }}
                     className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
@@ -509,10 +509,10 @@ export default function KokomoIndianaVendingLeadsPage() {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
-              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/indiana' },
-              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-indiana' }
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/" },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads" },
+              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/indiana" },
+              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-indiana" }
             ]
           })
         }}

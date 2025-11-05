@@ -84,14 +84,14 @@ export default function GreeleyColoradoVendingLeadsPage() {
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in Greeley?', a: 'Greeley offers diverse vending opportunities in meat processing facilities (JBS), University of Northern Colorado campus, agricultural businesses, healthcare facilities, retail centers, and manufacturing plants.' },
-    { q: 'How quickly can I get vending machine leads for Greeley?', a: 'Our Greeley vending leads are delivered within 3-5 business days with detailed information about each location and northern Colorado market insights.' },
-    { q: 'What makes Greeley a good market for vending machines?', a: 'Greeley's economy, combining major food processing operations with a university and agricultural businesses, creates consistent vending demand. The city's large industrial workforce and student population ensure year-round opportunities.' },
-    { q: 'Do you provide ongoing support for Greeley locations?', a: 'Yes, we provide comprehensive support including location research, agricultural and education sector insights, contact information, and placement strategies tailored to Greeley's diverse economy.' },
-    { q: 'What industries in Greeley are best for vending machines?', a: 'Food processing, higher education (UNC), agricultural businesses, healthcare facilities, and manufacturing show excellent potential due to large shift-worker and student populations.' },
-    { q: 'How do you verify the quality of Greeley vending locations?', a: 'We conduct thorough verification including business validation, employee and enrollment analysis, shift schedule assessment, and facility research for each Greeley location.' },
-    { q: 'Can I get customized vending leads for specific areas of Greeley?', a: 'Absolutely! We can focus on the UNC campus district, downtown 8th Avenue area, or industrial zones along Highway 34 based on your target market.' },
-    { q: 'What's the typical ROI for vending machines in Greeley?', a: 'Machines in Greeley typically see ROI within 11-15 months, with food processing and university locations often achieving faster returns due to 24/7 operations and high student traffic.' }
+    { q: "What types of vending machine locations are available in Greeley?", a: "Greeley offers diverse vending opportunities in meat processing facilities (JBS), University of Northern Colorado campus, agricultural businesses, healthcare facilities, retail centers, and manufacturing plants." },
+    { q: "How quickly can I get vending machine leads for Greeley?", a: "Our Greeley vending leads are delivered within 3-5 business days with detailed information about each location and northern Colorado market insights." },
+    { q: "What makes Greeley a good market for vending machines?", a: "Greeley's economy, combining major food processing operations with a university and agricultural businesses, creates consistent vending demand. The city's large industrial workforce and student population ensure year-round opportunities." },
+    { q: "Do you provide ongoing support for Greeley locations?", a: "Yes, we provide comprehensive support including location research, agricultural and education sector insights, contact information, and placement strategies tailored to Greeley's diverse economy." },
+    { q: "What industries in Greeley are best for vending machines?", a: "Food processing, higher education (UNC), agricultural businesses, healthcare facilities, and manufacturing show excellent potential due to large shift-worker and student populations." },
+    { q: "How do you verify the quality of Greeley vending locations?", a: "We conduct thorough verification including business validation, employee and enrollment analysis, shift schedule assessment, and facility research for each Greeley location." },
+    { q: "Can I get customized vending leads for specific areas of Greeley?", a: "Absolutely! We can focus on the UNC campus district, downtown 8th Avenue area, or industrial zones along Highway 34 based on your target market." },
+    { q: "What's the typical ROI for vending machines in Greeley?", a: "Machines in Greeley typically see ROI within 11-15 months, with food processing and university locations often achieving faster returns due to 24/7 operations and high student traffic." }
   ]
 
   return (
@@ -204,7 +204,7 @@ export default function GreeleyColoradoVendingLeadsPage() {
                     onClick={() => {
                       const pricingSection = document.getElementById('pricing')
                       if (pricingSection) {
-                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                        pricingSection.scrollIntoView({ behavior: 'smooth" })
                       }
                     }}
                     className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
@@ -509,10 +509,10 @@ export default function GreeleyColoradoVendingLeadsPage() {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
-              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/colorado' },
-              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-colorado' }
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/" },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads" },
+              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/colorado" },
+              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-colorado" }
             ]
           })
         }}

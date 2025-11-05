@@ -84,14 +84,14 @@ export default function PawtucketRhodeIslandVendingLeadsPage() {
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in Pawtucket?', a: 'Pawtucket offers vending opportunities in manufacturing facilities, creative industry offices, healthcare centers, retail locations, educational institutions, and office buildings.' },
-    { q: 'How quickly can I get vending machine leads for Pawtucket?', a: 'Our Pawtucket vending leads are delivered within 3-5 business days with comprehensive details about each location and Providence metro area market insights.' },
-    { q: 'What makes Pawtucket a good market for vending machines?', a: 'Pawtucket's transformation from traditional manufacturing to a creative economy hub creates diverse vending opportunities. The city's urban density and proximity to Providence ensure consistent business activity.' },
-    { q: 'Do you provide ongoing support for Pawtucket locations?', a: 'Yes, we offer complete support including location verification, industry analysis, contact information, and placement strategies specific to Pawtucket's evolving economy.' },
-    { q: 'What industries in Pawtucket are best for vending machines?', a: 'Manufacturing, creative industries, healthcare facilities, and educational institutions show strong potential due to diverse employee bases and consistent foot traffic.' },
-    { q: 'How do you verify the quality of Pawtucket vending locations?', a: 'We verify each location through business research, employee count validation, facility assessment, and regional market analysis to ensure quality placements.' },
-    { q: 'Can I get customized vending leads for specific areas of Pawtucket?', a: 'Absolutely! We can target the downtown arts district, Main Street corridor, or industrial zones along the Blackstone River based on your preferences.' },
-    { q: 'What's the typical ROI for vending machines in Pawtucket?', a: 'Vending machines in Pawtucket typically achieve ROI within 12-17 months, with creative industry and healthcare placements often seeing faster returns due to younger demographics.' }
+    { q: "What types of vending machine locations are available in Pawtucket?", a: "Pawtucket offers vending opportunities in manufacturing facilities, creative industry offices, healthcare centers, retail locations, educational institutions, and office buildings." },
+    { q: "How quickly can I get vending machine leads for Pawtucket?", a: "Our Pawtucket vending leads are delivered within 3-5 business days with comprehensive details about each location and Providence metro area market insights." },
+    { q: "What makes Pawtucket a good market for vending machines?", a: "Pawtucket's transformation from traditional manufacturing to a creative economy hub creates diverse vending opportunities. The city's urban density and proximity to Providence ensure consistent business activity." },
+    { q: "Do you provide ongoing support for Pawtucket locations?", a: "Yes, we offer complete support including location verification, industry analysis, contact information, and placement strategies specific to Pawtucket's evolving economy." },
+    { q: "What industries in Pawtucket are best for vending machines?", a: "Manufacturing, creative industries, healthcare facilities, and educational institutions show strong potential due to diverse employee bases and consistent foot traffic." },
+    { q: "How do you verify the quality of Pawtucket vending locations?", a: "We verify each location through business research, employee count validation, facility assessment, and regional market analysis to ensure quality placements." },
+    { q: "Can I get customized vending leads for specific areas of Pawtucket?", a: "Absolutely! We can target the downtown arts district, Main Street corridor, or industrial zones along the Blackstone River based on your preferences." },
+    { q: "What's the typical ROI for vending machines in Pawtucket?", a: "Vending machines in Pawtucket typically achieve ROI within 12-17 months, with creative industry and healthcare placements often seeing faster returns due to younger demographics." }
   ]
 
   return (
@@ -204,7 +204,7 @@ export default function PawtucketRhodeIslandVendingLeadsPage() {
                     onClick={() => {
                       const pricingSection = document.getElementById('pricing')
                       if (pricingSection) {
-                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                        pricingSection.scrollIntoView({ behavior: 'smooth" })
                       }
                     }}
                     className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
@@ -509,10 +509,10 @@ export default function PawtucketRhodeIslandVendingLeadsPage() {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
-              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/rhode-island' },
-              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-rhode-island' }
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/" },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads" },
+              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/rhode-island" },
+              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-rhode-island" }
             ]
           })
         }}

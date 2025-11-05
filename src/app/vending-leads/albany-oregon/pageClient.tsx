@@ -84,14 +84,14 @@ export default function AlbanyOregonVendingLeadsPage() {
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in Albany?', a: 'Albany offers vending opportunities in industrial facilities, metal fabrication companies, food processing plants, healthcare centers (Samaritan Health Services), retail locations, and educational institutions.' },
-    { q: 'How quickly can I get vending machine leads for Albany?', a: 'Our Albany vending leads are delivered within 3-5 business days with detailed information about each location and mid-Willamette Valley market insights.' },
-    { q: 'What makes Albany a good market for vending machines?', a: 'Albany's strong industrial base and manufacturing sector create excellent vending opportunities. The city's role as a mid-valley hub and diverse economy ensure consistent demand across multiple industries.' },
-    { q: 'Do you provide ongoing support for Albany locations?', a: 'Yes, we offer complete support including location verification, manufacturing and industrial sector insights, contact information, and placement strategies specific to Albany's market.' },
-    { q: 'What industries in Albany are best for vending machines?', a: 'Manufacturing facilities, industrial plants, food processing, and healthcare centers show excellent potential due to shift workers and large employee populations.' },
-    { q: 'How do you verify the quality of Albany vending locations?', a: 'We verify each location through business research, shift schedule analysis, employee validation, and facility assessment to ensure quality industrial placements.' },
-    { q: 'Can I get customized vending leads for specific areas of Albany?', a: 'Absolutely! We can focus on the Pacific Boulevard industrial corridor, downtown historic district, or North Albany area based on your target market.' },
-    { q: 'What's the typical ROI for vending machines in Albany?', a: 'Vending machines in Albany typically achieve ROI within 12-16 months, with manufacturing and industrial facilities often seeing faster returns due to multiple shifts and consistent operations.' }
+    { q: "What types of vending machine locations are available in Albany?", a: "Albany offers vending opportunities in industrial facilities, metal fabrication companies, food processing plants, healthcare centers (Samaritan Health Services), retail locations, and educational institutions." },
+    { q: "How quickly can I get vending machine leads for Albany?", a: "Our Albany vending leads are delivered within 3-5 business days with detailed information about each location and mid-Willamette Valley market insights." },
+    { q: "What makes Albany a good market for vending machines?", a: "Albany's strong industrial base and manufacturing sector create excellent vending opportunities. The city's role as a mid-valley hub and diverse economy ensure consistent demand across multiple industries." },
+    { q: "Do you provide ongoing support for Albany locations?", a: "Yes, we offer complete support including location verification, manufacturing and industrial sector insights, contact information, and placement strategies specific to Albany's market." },
+    { q: "What industries in Albany are best for vending machines?", a: "Manufacturing facilities, industrial plants, food processing, and healthcare centers show excellent potential due to shift workers and large employee populations." },
+    { q: "How do you verify the quality of Albany vending locations?", a: "We verify each location through business research, shift schedule analysis, employee validation, and facility assessment to ensure quality industrial placements." },
+    { q: "Can I get customized vending leads for specific areas of Albany?", a: "Absolutely! We can focus on the Pacific Boulevard industrial corridor, downtown historic district, or North Albany area based on your target market." },
+    { q: "What's the typical ROI for vending machines in Albany?", a: "Vending machines in Albany typically achieve ROI within 12-16 months, with manufacturing and industrial facilities often seeing faster returns due to multiple shifts and consistent operations." }
   ]
 
   return (
@@ -204,7 +204,7 @@ export default function AlbanyOregonVendingLeadsPage() {
                     onClick={() => {
                       const pricingSection = document.getElementById('pricing')
                       if (pricingSection) {
-                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                        pricingSection.scrollIntoView({ behavior: 'smooth" })
                       }
                     }}
                     className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
@@ -509,10 +509,10 @@ export default function AlbanyOregonVendingLeadsPage() {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
-              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/oregon' },
-              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-oregon' }
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/" },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads" },
+              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/oregon" },
+              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-oregon" }
             ]
           })
         }}

@@ -84,14 +84,14 @@ export default function MankatoMinnesotaVendingLeadsPage() {
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in Mankato?', a: 'Mankato offers vending opportunities at Minnesota State University, healthcare facilities (Mayo Clinic Health System), manufacturing plants, retail centers, and professional offices serving south central Minnesota.' },
-    { q: 'How quickly can I get vending machine leads for Mankato?', a: 'Our Mankato vending leads are delivered within 3-5 business days with detailed information about each location and Minnesota River valley market insights.' },
-    { q: 'What makes Mankato a good market for vending machines?', a: 'Mankato's combination of university students, regional healthcare, and manufacturing creates year-round vending demand. The city's position as a south central Minnesota hub ensures consistent business activity.' },
-    { q: 'Do you provide ongoing support for Mankato locations?', a: 'Yes, we offer complete support including location verification, university and healthcare sector insights, contact information, and placement strategies specific to Mankato's market.' },
-    { q: 'What industries in Mankato are best for vending machines?', a: 'Higher education (MSU), healthcare facilities (Mayo Clinic), manufacturing plants, and retail centers show excellent potential due to large student and employee populations.' },
-    { q: 'How do you verify the quality of Mankato vending locations?', a: 'We verify each location through business research, enrollment data analysis, employee validation, and facility assessment to ensure quality university and healthcare placements.' },
-    { q: 'Can I get customized vending leads for specific areas of Mankato?', a: 'Absolutely! We can focus on the MSU campus district, downtown Riverfront area, or Highway 169 retail corridor based on your target market.' },
-    { q: 'What's the typical ROI for vending machines in Mankato?', a: 'Vending machines in Mankato typically achieve ROI within 12-16 months, with university and healthcare locations often seeing faster returns due to consistent high-traffic patterns.' }
+    { q: "What types of vending machine locations are available in Mankato?", a: "Mankato offers vending opportunities at Minnesota State University, healthcare facilities (Mayo Clinic Health System), manufacturing plants, retail centers, and professional offices serving south central Minnesota." },
+    { q: "How quickly can I get vending machine leads for Mankato?", a: "Our Mankato vending leads are delivered within 3-5 business days with detailed information about each location and Minnesota River valley market insights." },
+    { q: "What makes Mankato a good market for vending machines?", a: "Mankato's combination of university students, regional healthcare, and manufacturing creates year-round vending demand. The city's position as a south central Minnesota hub ensures consistent business activity." },
+    { q: "Do you provide ongoing support for Mankato locations?", a: "Yes, we offer complete support including location verification, university and healthcare sector insights, contact information, and placement strategies specific to Mankato's market." },
+    { q: "What industries in Mankato are best for vending machines?", a: "Higher education (MSU), healthcare facilities (Mayo Clinic), manufacturing plants, and retail centers show excellent potential due to large student and employee populations." },
+    { q: "How do you verify the quality of Mankato vending locations?", a: "We verify each location through business research, enrollment data analysis, employee validation, and facility assessment to ensure quality university and healthcare placements." },
+    { q: "Can I get customized vending leads for specific areas of Mankato?", a: "Absolutely! We can focus on the MSU campus district, downtown Riverfront area, or Highway 169 retail corridor based on your target market." },
+    { q: "What's the typical ROI for vending machines in Mankato?", a: "Vending machines in Mankato typically achieve ROI within 12-16 months, with university and healthcare locations often seeing faster returns due to consistent high-traffic patterns." }
   ]
 
   return (
@@ -204,7 +204,7 @@ export default function MankatoMinnesotaVendingLeadsPage() {
                     onClick={() => {
                       const pricingSection = document.getElementById('pricing')
                       if (pricingSection) {
-                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                        pricingSection.scrollIntoView({ behavior: 'smooth" })
                       }
                     }}
                     className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
@@ -509,10 +509,10 @@ export default function MankatoMinnesotaVendingLeadsPage() {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
-              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/minnesota' },
-              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-minnesota' }
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/" },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads" },
+              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/minnesota" },
+              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-minnesota" }
             ]
           })
         }}

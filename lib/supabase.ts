@@ -26,3 +26,31 @@ export interface HotLead {
   full_address?: string
   buyer_email?: string
 }
+
+export interface BlogPost {
+  id: string
+  title: string
+  slug: string
+  excerpt?: string
+  content: string
+  featured_image?: string
+  author_name?: string
+  author_email?: string
+  meta_title?: string
+  meta_description?: string
+  keywords?: string[]
+  category?: string
+  status: 'draft' | 'published' | 'archived'
+  published_at?: string
+  created_at: string
+  updated_at: string
+}
+
+export interface BlogImage {
+  id: string
+  url: string
+  alt_text?: string
+  caption?: string
+  post_id?: string
+  created_at: string
+}

@@ -84,14 +84,14 @@ export default function JacksonMichiganVendingLeadsPage() {
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in Jackson?', a: 'Jackson offers vending opportunities in manufacturing facilities, correctional facility support businesses, healthcare centers (Henry Ford Allegiance Health), educational institutions, and retail locations.' },
-    { q: 'How quickly can I get vending machine leads for Jackson?', a: 'Our Jackson vending leads are delivered within 3-5 business days with comprehensive details about each verified location and south central Michigan market insights.' },
-    { q: 'What makes Jackson a good market for vending machines?', a: 'Jackson's diverse economy combining manufacturing, healthcare, and government facilities creates stable vending opportunities. The city's central Michigan location ensures consistent business activity year-round.' },
-    { q: 'Do you provide ongoing support for Jackson locations?', a: 'Yes, we provide comprehensive support including location research, manufacturing sector insights, contact information, and placement strategies tailored to Jackson's industrial economy.' },
-    { q: 'What industries in Jackson are best for vending machines?', a: 'Manufacturing facilities, healthcare centers, government-related businesses, and retail locations show strong potential due to shift workers and steady employee populations.' },
-    { q: 'How do you verify the quality of Jackson vending locations?', a: 'We conduct thorough verification including business validation, employee count assessment, shift schedule analysis, and facility research for each Jackson location.' },
-    { q: 'Can I get customized vending leads for specific areas of Jackson?', a: 'Absolutely! We can target the downtown Michigan Avenue district, Westwood Mall area, or industrial zones based on your preferences.' },
-    { q: 'What's the typical ROI for vending machines in Jackson?', a: 'Machines in Jackson typically see ROI within 13-17 months, with manufacturing and healthcare facilities often achieving faster returns due to shift operations and consistent traffic.' }
+    { q: "What types of vending machine locations are available in Jackson?", a: "Jackson offers vending opportunities in manufacturing facilities, correctional facility support businesses, healthcare centers (Henry Ford Allegiance Health), educational institutions, and retail locations." },
+    { q: "How quickly can I get vending machine leads for Jackson?", a: "Our Jackson vending leads are delivered within 3-5 business days with comprehensive details about each verified location and south central Michigan market insights." },
+    { q: "What makes Jackson a good market for vending machines?", a: "Jackson's diverse economy combining manufacturing, healthcare, and government facilities creates stable vending opportunities. The city's central Michigan location ensures consistent business activity year-round." },
+    { q: "Do you provide ongoing support for Jackson locations?", a: "Yes, we provide comprehensive support including location research, manufacturing sector insights, contact information, and placement strategies tailored to Jackson's industrial economy." },
+    { q: "What industries in Jackson are best for vending machines?", a: "Manufacturing facilities, healthcare centers, government-related businesses, and retail locations show strong potential due to shift workers and steady employee populations." },
+    { q: "How do you verify the quality of Jackson vending locations?", a: "We conduct thorough verification including business validation, employee count assessment, shift schedule analysis, and facility research for each Jackson location." },
+    { q: "Can I get customized vending leads for specific areas of Jackson?", a: "Absolutely! We can target the downtown Michigan Avenue district, Westwood Mall area, or industrial zones based on your preferences." },
+    { q: "What's the typical ROI for vending machines in Jackson?", a: "Machines in Jackson typically see ROI within 13-17 months, with manufacturing and healthcare facilities often achieving faster returns due to shift operations and consistent traffic." }
   ]
 
   return (
@@ -204,7 +204,7 @@ export default function JacksonMichiganVendingLeadsPage() {
                     onClick={() => {
                       const pricingSection = document.getElementById('pricing')
                       if (pricingSection) {
-                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                        pricingSection.scrollIntoView({ behavior: 'smooth" })
                       }
                     }}
                     className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
@@ -509,10 +509,10 @@ export default function JacksonMichiganVendingLeadsPage() {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
-              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/michigan' },
-              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-michigan' }
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/" },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads" },
+              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/michigan" },
+              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-michigan" }
             ]
           })
         }}

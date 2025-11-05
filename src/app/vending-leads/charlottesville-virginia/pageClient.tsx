@@ -84,14 +84,14 @@ export default function CharlottesvilleVirginiaVendingLeadsPage() {
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in Charlottesville?', a: 'Charlottesville offers vending opportunities at University of Virginia facilities, healthcare centers (UVA Health), tech companies, downtown businesses, retail locations, and wineries in the surrounding area.' },
-    { q: 'How quickly can I get vending machine leads for Charlottesville?', a: 'Our Charlottesville vending leads are delivered within 3-5 business days with detailed information about each location and central Virginia university market insights.' },
-    { q: 'What makes Charlottesville a good market for vending machines?', a: 'Charlottesville's combination of UVA students, world-class healthcare, and growing tech sector creates year-round vending demand. The city's historic charm and wine country location attract tourists, adding seasonal opportunities.' },
-    { q: 'Do you provide ongoing support for Charlottesville locations?', a: 'Yes, we offer complete support including location verification, university and healthcare sector insights, contact information, and placement strategies specific to Charlottesville's academic market.' },
-    { q: 'What industries in Charlottesville are best for vending machines?', a: 'Higher education (UVA), healthcare facilities (UVA Health), tech companies, and tourism businesses show excellent potential due to large student populations, medical center traffic, and visitor volumes.' },
-    { q: 'How do you verify the quality of Charlottesville vending locations?', a: 'We verify each location through business research, enrollment data analysis, employee validation, and facility assessment to ensure quality university and healthcare placements.' },
-    { q: 'Can I get customized vending leads for specific areas of Charlottesville?', a: 'Absolutely! We can focus on the UVA grounds area, downtown pedestrian mall, or 29 North business corridor based on your target market.' },
-    { q: 'What's the typical ROI for vending machines in Charlottesville?', a: 'Vending machines in Charlottesville typically achieve ROI within 11-14 months, with university and healthcare locations often seeing faster returns due to consistent high-volume traffic and educated demographics.' }
+    { q: "What types of vending machine locations are available in Charlottesville?", a: "Charlottesville offers vending opportunities at University of Virginia facilities, healthcare centers (UVA Health), tech companies, downtown businesses, retail locations, and wineries in the surrounding area." },
+    { q: "How quickly can I get vending machine leads for Charlottesville?", a: "Our Charlottesville vending leads are delivered within 3-5 business days with detailed information about each location and central Virginia university market insights." },
+    { q: "What makes Charlottesville a good market for vending machines?", a: "Charlottesville's combination of UVA students, world-class healthcare, and growing tech sector creates year-round vending demand. The city's historic charm and wine country location attract tourists, adding seasonal opportunities." },
+    { q: "Do you provide ongoing support for Charlottesville locations?", a: "Yes, we offer complete support including location verification, university and healthcare sector insights, contact information, and placement strategies specific to Charlottesville's academic market." },
+    { q: "What industries in Charlottesville are best for vending machines?", a: "Higher education (UVA), healthcare facilities (UVA Health), tech companies, and tourism businesses show excellent potential due to large student populations, medical center traffic, and visitor volumes." },
+    { q: "How do you verify the quality of Charlottesville vending locations?", a: "We verify each location through business research, enrollment data analysis, employee validation, and facility assessment to ensure quality university and healthcare placements." },
+    { q: "Can I get customized vending leads for specific areas of Charlottesville?", a: "Absolutely! We can focus on the UVA grounds area, downtown pedestrian mall, or 29 North business corridor based on your target market." },
+    { q: "What's the typical ROI for vending machines in Charlottesville?", a: "Vending machines in Charlottesville typically achieve ROI within 11-14 months, with university and healthcare locations often seeing faster returns due to consistent high-volume traffic and educated demographics." }
   ]
 
   return (
@@ -204,7 +204,7 @@ export default function CharlottesvilleVirginiaVendingLeadsPage() {
                     onClick={() => {
                       const pricingSection = document.getElementById('pricing')
                       if (pricingSection) {
-                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                        pricingSection.scrollIntoView({ behavior: 'smooth" })
                       }
                     }}
                     className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
@@ -509,10 +509,10 @@ export default function CharlottesvilleVirginiaVendingLeadsPage() {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
-              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/virginia' },
-              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-virginia' }
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/" },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads" },
+              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/virginia" },
+              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-virginia" }
             ]
           })
         }}

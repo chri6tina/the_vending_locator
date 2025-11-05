@@ -84,14 +84,14 @@ export default function HagerstownMarylandVendingLeadsPage() {
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in Hagerstown?', a: 'Hagerstown offers vending opportunities in distribution centers, manufacturing facilities, healthcare centers (Meritus Medical Center), retail locations, and transportation businesses along I-81 corridor.' },
-    { q: 'How quickly can I get vending machine leads for Hagerstown?', a: 'Our Hagerstown vending leads are delivered within 3-5 business days with comprehensive details about each location and western Maryland market insights.' },
-    { q: 'What makes Hagerstown a good market for vending machines?', a: 'Hagerstown's strategic location along I-81 and proximity to multiple state borders create excellent logistics and distribution opportunities. The city's industrial base ensures consistent vending demand.' },
-    { q: 'Do you provide ongoing support for Hagerstown locations?', a: 'Yes, we provide comprehensive support including location research, distribution and manufacturing sector insights, contact information, and placement strategies tailored to Hagerstown's economy.' },
-    { q: 'What industries in Hagerstown are best for vending machines?', a: 'Distribution warehouses, manufacturing facilities, healthcare centers, and transportation businesses show excellent potential due to shift workers and 24/7 operations.' },
-    { q: 'How do you verify the quality of Hagerstown vending locations?', a: 'We conduct thorough verification including business validation, shift schedule analysis, employee assessment, and facility research for each Hagerstown location.' },
-    { q: 'Can I get customized vending leads for specific areas of Hagerstown?', a: 'Absolutely! We can target the downtown Public Square area, Dual Highway retail corridor, or I-81 industrial zones based on your preferences.' },
-    { q: 'What's the typical ROI for vending machines in Hagerstown?', a: 'Machines in Hagerstown typically see ROI within 12-16 months, with distribution and manufacturing facilities often achieving faster returns due to multiple shifts and high employee counts.' }
+    { q: "What types of vending machine locations are available in Hagerstown?", a: "Hagerstown offers vending opportunities in distribution centers, manufacturing facilities, healthcare centers (Meritus Medical Center), retail locations, and transportation businesses along I-81 corridor." },
+    { q: "How quickly can I get vending machine leads for Hagerstown?", a: "Our Hagerstown vending leads are delivered within 3-5 business days with comprehensive details about each location and western Maryland market insights." },
+    { q: "What makes Hagerstown a good market for vending machines?", a: "Hagerstown's strategic location along I-81 and proximity to multiple state borders create excellent logistics and distribution opportunities. The city's industrial base ensures consistent vending demand." },
+    { q: "Do you provide ongoing support for Hagerstown locations?", a: "Yes, we provide comprehensive support including location research, distribution and manufacturing sector insights, contact information, and placement strategies tailored to Hagerstown's economy." },
+    { q: "What industries in Hagerstown are best for vending machines?", a: "Distribution warehouses, manufacturing facilities, healthcare centers, and transportation businesses show excellent potential due to shift workers and 24/7 operations." },
+    { q: "How do you verify the quality of Hagerstown vending locations?", a: "We conduct thorough verification including business validation, shift schedule analysis, employee assessment, and facility research for each Hagerstown location." },
+    { q: "Can I get customized vending leads for specific areas of Hagerstown?", a: "Absolutely! We can target the downtown Public Square area, Dual Highway retail corridor, or I-81 industrial zones based on your preferences." },
+    { q: "What's the typical ROI for vending machines in Hagerstown?", a: "Machines in Hagerstown typically see ROI within 12-16 months, with distribution and manufacturing facilities often achieving faster returns due to multiple shifts and high employee counts." }
   ]
 
   return (
@@ -204,7 +204,7 @@ export default function HagerstownMarylandVendingLeadsPage() {
                     onClick={() => {
                       const pricingSection = document.getElementById('pricing')
                       if (pricingSection) {
-                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                        pricingSection.scrollIntoView({ behavior: 'smooth" })
                       }
                     }}
                     className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
@@ -509,10 +509,10 @@ export default function HagerstownMarylandVendingLeadsPage() {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
-              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/maryland' },
-              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-maryland' }
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/" },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads" },
+              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/maryland" },
+              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-maryland" }
             ]
           })
         }}

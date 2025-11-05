@@ -84,14 +84,14 @@ export default function MinotNorthDakotaVendingLeadsPage() {
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in Minot?', a: 'Minot offers diverse vending opportunities including Minot Air Force Base facilities, agricultural businesses, retail centers, healthcare facilities, and manufacturing companies.' },
-    { q: 'How quickly can I get vending machine leads for Minot?', a: 'Our Minot vending leads are delivered within 3-5 business days with comprehensive research on each location and detailed placement recommendations.' },
-    { q: 'What makes Minot a good market for vending machines?', a: 'Minot's economy combines military presence, agriculture, and retail sectors creating stable demand. The city's diverse business landscape provides multiple vending opportunities with consistent traffic.' },
-    { q: 'Do you provide ongoing support for Minot locations?', a: 'Yes, we offer complete support including location verification, contact details, industry analysis, and placement strategies tailored to Minot's unique market.' },
-    { q: 'What industries in Minot are best for vending machines?', a: 'Military facilities, agricultural businesses, healthcare centers, and retail locations show excellent potential due to large employee bases and consistent customer flow.' },
-    { q: 'How do you verify the quality of Minot vending locations?', a: 'We verify each Minot location through business research, employee count validation, facility assessment, and industry analysis to ensure quality opportunities.' },
-    { q: 'Can I get customized vending leads for specific areas of Minot?', a: 'Absolutely! We can target specific areas like the Broadway retail district, South Hill business zone, or locations near Minot AFB based on your preferences.' },
-    { q: 'What's the typical ROI for vending machines in Minot?', a: 'Vending machines in Minot typically achieve ROI in 13-18 months, with military and healthcare locations often seeing faster returns due to consistent traffic patterns.' }
+    { q: "What types of vending machine locations are available in Minot?", a: "Minot offers diverse vending opportunities including Minot Air Force Base facilities, agricultural businesses, retail centers, healthcare facilities, and manufacturing companies." },
+    { q: "How quickly can I get vending machine leads for Minot?", a: "Our Minot vending leads are delivered within 3-5 business days with comprehensive research on each location and detailed placement recommendations." },
+    { q: "What makes Minot a good market for vending machines?", a: "Minot's economy combines military presence, agriculture, and retail sectors creating stable demand. The city's diverse business landscape provides multiple vending opportunities with consistent traffic." },
+    { q: "Do you provide ongoing support for Minot locations?", a: "Yes, we offer complete support including location verification, contact details, industry analysis, and placement strategies tailored to Minot's unique market." },
+    { q: "What industries in Minot are best for vending machines?", a: "Military facilities, agricultural businesses, healthcare centers, and retail locations show excellent potential due to large employee bases and consistent customer flow." },
+    { q: "How do you verify the quality of Minot vending locations?", a: "We verify each Minot location through business research, employee count validation, facility assessment, and industry analysis to ensure quality opportunities." },
+    { q: "Can I get customized vending leads for specific areas of Minot?", a: "Absolutely! We can target specific areas like the Broadway retail district, South Hill business zone, or locations near Minot AFB based on your preferences." },
+    { q: "What's the typical ROI for vending machines in Minot?", a: "Vending machines in Minot typically achieve ROI in 13-18 months, with military and healthcare locations often seeing faster returns due to consistent traffic patterns." }
   ]
 
   return (
@@ -204,7 +204,7 @@ export default function MinotNorthDakotaVendingLeadsPage() {
                     onClick={() => {
                       const pricingSection = document.getElementById('pricing')
                       if (pricingSection) {
-                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                        pricingSection.scrollIntoView({ behavior: 'smooth" })
                       }
                     }}
                     className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
@@ -509,10 +509,10 @@ export default function MinotNorthDakotaVendingLeadsPage() {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
-              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/north-dakota' },
-              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-north-dakota' }
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/" },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads" },
+              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/north-dakota" },
+              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-north-dakota" }
             ]
           })
         }}

@@ -84,14 +84,14 @@ export default function HickoryNorthCarolinaVendingLeadsPage() {
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in Hickory?', a: 'Hickory offers vending opportunities in furniture manufacturing facilities, data centers (Google, Apple), healthcare centers (Catawba Valley Medical Center), retail locations, and technology companies.' },
-    { q: 'How quickly can I get vending machine leads for Hickory?', a: 'Our Hickory vending leads are delivered within 3-5 business days with comprehensive details about each location and Catawba Valley market insights.' },
-    { q: 'What makes Hickory a good market for vending machines?', a: 'Hickory's transformation from furniture capital to tech hub creates diverse vending opportunities. The city's major data center investments and manufacturing heritage ensure consistent demand across multiple industries.' },
-    { q: 'Do you provide ongoing support for Hickory locations?', a: 'Yes, we provide comprehensive support including location research, technology and manufacturing sector insights, contact information, and placement strategies tailored to Hickory's evolving economy.' },
-    { q: 'What industries in Hickory are best for vending machines?', a: 'Technology facilities (data centers), furniture manufacturing, healthcare centers, and retail locations show excellent potential due to 24/7 operations and large employee bases.' },
-    { q: 'How do you verify the quality of Hickory vending locations?', a: 'We conduct thorough verification including business validation, shift schedule analysis, employee assessment, and facility research for each Hickory location.' },
-    { q: 'Can I get customized vending leads for specific areas of Hickory?', a: 'Absolutely! We can target the Highway 321 tech corridor, downtown Union Square area, or furniture manufacturing zones based on your preferences.' },
-    { q: 'What's the typical ROI for vending machines in Hickory?', a: 'Machines in Hickory typically see ROI within 11-14 months, with data center and tech facility locations often achieving faster returns due to 24/7 operations and premium pricing acceptance.' }
+    { q: "What types of vending machine locations are available in Hickory?", a: "Hickory offers vending opportunities in furniture manufacturing facilities, data centers (Google, Apple), healthcare centers (Catawba Valley Medical Center), retail locations, and technology companies." },
+    { q: "How quickly can I get vending machine leads for Hickory?", a: "Our Hickory vending leads are delivered within 3-5 business days with comprehensive details about each location and Catawba Valley market insights." },
+    { q: "What makes Hickory a good market for vending machines?", a: "Hickory's transformation from furniture capital to tech hub creates diverse vending opportunities. The city's major data center investments and manufacturing heritage ensure consistent demand across multiple industries." },
+    { q: "Do you provide ongoing support for Hickory locations?", a: "Yes, we provide comprehensive support including location research, technology and manufacturing sector insights, contact information, and placement strategies tailored to Hickory's evolving economy." },
+    { q: "What industries in Hickory are best for vending machines?", a: "Technology facilities (data centers), furniture manufacturing, healthcare centers, and retail locations show excellent potential due to 24/7 operations and large employee bases." },
+    { q: "How do you verify the quality of Hickory vending locations?", a: "We conduct thorough verification including business validation, shift schedule analysis, employee assessment, and facility research for each Hickory location." },
+    { q: "Can I get customized vending leads for specific areas of Hickory?", a: "Absolutely! We can target the Highway 321 tech corridor, downtown Union Square area, or furniture manufacturing zones based on your preferences." },
+    { q: "What's the typical ROI for vending machines in Hickory?", a: "Machines in Hickory typically see ROI within 11-14 months, with data center and tech facility locations often achieving faster returns due to 24/7 operations and premium pricing acceptance." }
   ]
 
   return (
@@ -204,7 +204,7 @@ export default function HickoryNorthCarolinaVendingLeadsPage() {
                     onClick={() => {
                       const pricingSection = document.getElementById('pricing')
                       if (pricingSection) {
-                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                        pricingSection.scrollIntoView({ behavior: 'smooth" })
                       }
                     }}
                     className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
@@ -509,10 +509,10 @@ export default function HickoryNorthCarolinaVendingLeadsPage() {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
-              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/north-carolina' },
-              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-north-carolina' }
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/" },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads" },
+              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/north-carolina" },
+              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-north-carolina" }
             ]
           })
         }}

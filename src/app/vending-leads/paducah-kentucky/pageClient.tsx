@@ -84,14 +84,14 @@ export default function PaducahKentuckyVendingLeadsPage() {
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in Paducah?', a: 'Paducah offers vending opportunities in healthcare facilities (Baptist Health Paducah), manufacturing plants, arts and cultural venues, retail locations, and educational institutions.' },
-    { q: 'How quickly can I get vending machine leads for Paducah?', a: 'Our Paducah vending leads are delivered within 3-5 business days with comprehensive details about each location and western Kentucky market insights.' },
-    { q: 'What makes Paducah a good market for vending machines?', a: 'Paducah's unique combination of arts culture, healthcare, and manufacturing creates diverse vending opportunities. The city's designation as a UNESCO Creative City and river location ensure consistent business activity.' },
-    { q: 'Do you provide ongoing support for Paducah locations?', a: 'Yes, we provide comprehensive support including location research, healthcare and cultural sector insights, contact information, and placement strategies tailored to Paducah's economy.' },
-    { q: 'What industries in Paducah are best for vending machines?', a: 'Healthcare facilities, manufacturing plants, arts venues, and retail centers show strong potential due to employee bases, visitor traffic, and consistent operations.' },
-    { q: 'How do you verify the quality of Paducah vending locations?', a: 'We conduct thorough verification including business validation, visitor traffic analysis, employee count assessment, and facility research for each Paducah location.' },
-    { q: 'Can I get customized vending leads for specific areas of Paducah?', a: 'Absolutely! We can target the historic downtown arts district, Broadway corridor, or industrial zones based on your preferences.' },
-    { q: 'What's the typical ROI for vending machines in Paducah?', a: 'Machines in Paducah typically see ROI within 14-18 months, with healthcare and cultural venue locations often achieving faster returns during events and peak seasons.' }
+    { q: "What types of vending machine locations are available in Paducah?", a: "Paducah offers vending opportunities in healthcare facilities (Baptist Health Paducah), manufacturing plants, arts and cultural venues, retail locations, and educational institutions." },
+    { q: "How quickly can I get vending machine leads for Paducah?", a: "Our Paducah vending leads are delivered within 3-5 business days with comprehensive details about each location and western Kentucky market insights." },
+    { q: "What makes Paducah a good market for vending machines?", a: "Paducah's unique combination of arts culture, healthcare, and manufacturing creates diverse vending opportunities. The city's designation as a UNESCO Creative City and river location ensure consistent business activity." },
+    { q: "Do you provide ongoing support for Paducah locations?", a: "Yes, we provide comprehensive support including location research, healthcare and cultural sector insights, contact information, and placement strategies tailored to Paducah's economy." },
+    { q: "What industries in Paducah are best for vending machines?", a: "Healthcare facilities, manufacturing plants, arts venues, and retail centers show strong potential due to employee bases, visitor traffic, and consistent operations." },
+    { q: "How do you verify the quality of Paducah vending locations?", a: "We conduct thorough verification including business validation, visitor traffic analysis, employee count assessment, and facility research for each Paducah location." },
+    { q: "Can I get customized vending leads for specific areas of Paducah?", a: "Absolutely! We can target the historic downtown arts district, Broadway corridor, or industrial zones based on your preferences." },
+    { q: "What's the typical ROI for vending machines in Paducah?", a: "Machines in Paducah typically see ROI within 14-18 months, with healthcare and cultural venue locations often achieving faster returns during events and peak seasons." }
   ]
 
   return (
@@ -204,7 +204,7 @@ export default function PaducahKentuckyVendingLeadsPage() {
                     onClick={() => {
                       const pricingSection = document.getElementById('pricing')
                       if (pricingSection) {
-                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                        pricingSection.scrollIntoView({ behavior: 'smooth" })
                       }
                     }}
                     className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
@@ -509,10 +509,10 @@ export default function PaducahKentuckyVendingLeadsPage() {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
-              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/kentucky' },
-              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-kentucky' }
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/" },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads" },
+              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/kentucky" },
+              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-kentucky" }
             ]
           })
         }}

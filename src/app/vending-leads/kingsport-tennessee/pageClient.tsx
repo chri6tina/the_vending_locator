@@ -84,14 +84,14 @@ export default function KingsportTennesseeVendingLeadsPage() {
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in Kingsport?', a: 'Kingsport offers vending opportunities in chemical manufacturing facilities (Eastman Chemical), printing companies, healthcare centers (Holston Valley Medical Center), retail locations, and industrial plants.' },
-    { q: 'How quickly can I get vending machine leads for Kingsport?', a: 'Our Kingsport vending leads are delivered within 3-5 business days with comprehensive details about each location and Tri-Cities Tennessee market insights.' },
-    { q: 'What makes Kingsport a good market for vending machines?', a: 'Kingsport's strong industrial base, particularly in chemical manufacturing, creates excellent vending opportunities. The city's major employers and 24/7 operations ensure consistent demand throughout the year.' },
-    { q: 'Do you provide ongoing support for Kingsport locations?', a: 'Yes, we provide comprehensive support including location research, chemical and manufacturing sector insights, contact information, and placement strategies tailored to Kingsport's industrial economy.' },
-    { q: 'What industries in Kingsport are best for vending machines?', a: 'Chemical manufacturing (Eastman), industrial facilities, healthcare centers, and printing companies show excellent potential due to large shift-worker populations and continuous operations.' },
-    { q: 'How do you verify the quality of Kingsport vending locations?', a: 'We conduct thorough verification including business validation, shift schedule analysis, employee count assessment, and facility research for each Kingsport location.' },
-    { q: 'Can I get customized vending leads for specific areas of Kingsport?', a: 'Absolutely! We can target the Eastman facility area, downtown Broad Street district, or Fort Henry industrial zones based on your preferences.' },
-    { q: 'What's the typical ROI for vending machines in Kingsport?', a: 'Machines in Kingsport typically see ROI within 11-15 months, with chemical manufacturing and industrial facilities often achieving faster returns due to multiple shifts and premium pricing acceptance.' }
+    { q: "What types of vending machine locations are available in Kingsport?", a: "Kingsport offers vending opportunities in chemical manufacturing facilities (Eastman Chemical), printing companies, healthcare centers (Holston Valley Medical Center), retail locations, and industrial plants." },
+    { q: "How quickly can I get vending machine leads for Kingsport?", a: "Our Kingsport vending leads are delivered within 3-5 business days with comprehensive details about each location and Tri-Cities Tennessee market insights." },
+    { q: "What makes Kingsport a good market for vending machines?", a: "Kingsport's strong industrial base, particularly in chemical manufacturing, creates excellent vending opportunities. The city's major employers and 24/7 operations ensure consistent demand throughout the year." },
+    { q: "Do you provide ongoing support for Kingsport locations?", a: "Yes, we provide comprehensive support including location research, chemical and manufacturing sector insights, contact information, and placement strategies tailored to Kingsport's industrial economy." },
+    { q: "What industries in Kingsport are best for vending machines?", a: "Chemical manufacturing (Eastman), industrial facilities, healthcare centers, and printing companies show excellent potential due to large shift-worker populations and continuous operations." },
+    { q: "How do you verify the quality of Kingsport vending locations?", a: "We conduct thorough verification including business validation, shift schedule analysis, employee count assessment, and facility research for each Kingsport location." },
+    { q: "Can I get customized vending leads for specific areas of Kingsport?", a: "Absolutely! We can target the Eastman facility area, downtown Broad Street district, or Fort Henry industrial zones based on your preferences." },
+    { q: "What's the typical ROI for vending machines in Kingsport?", a: "Machines in Kingsport typically see ROI within 11-15 months, with chemical manufacturing and industrial facilities often achieving faster returns due to multiple shifts and premium pricing acceptance." }
   ]
 
   return (
@@ -204,7 +204,7 @@ export default function KingsportTennesseeVendingLeadsPage() {
                     onClick={() => {
                       const pricingSection = document.getElementById('pricing')
                       if (pricingSection) {
-                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                        pricingSection.scrollIntoView({ behavior: 'smooth" })
                       }
                     }}
                     className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
@@ -509,10 +509,10 @@ export default function KingsportTennesseeVendingLeadsPage() {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
-              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/tennessee' },
-              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-tennessee' }
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/" },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads" },
+              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/tennessee" },
+              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-tennessee" }
             ]
           })
         }}

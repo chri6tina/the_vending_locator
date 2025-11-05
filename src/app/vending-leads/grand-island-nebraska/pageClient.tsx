@@ -84,14 +84,14 @@ export default function GrandIslandNebraskaVendingLeadsPage() {
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in Grand Island?', a: 'Grand Island offers vending opportunities in meat processing plants (JBS), agricultural businesses, transportation companies, healthcare facilities, retail centers, and manufacturing facilities.' },
-    { q: 'How quickly can I get vending machine leads for Grand Island?', a: 'Our Grand Island vending leads are delivered within 3-5 business days with comprehensive details about each location and central Nebraska market insights.' },
-    { q: 'What makes Grand Island a good market for vending machines?', a: 'Grand Island's role as a regional agricultural and transportation hub creates strong vending demand. The city's major food processing facilities and logistics companies provide stable, high-traffic opportunities.' },
-    { q: 'Do you provide ongoing support for Grand Island locations?', a: 'Yes, we offer complete support including location verification, industry analysis, contact information, and placement strategies specific to Grand Island's agricultural economy.' },
-    { q: 'What industries in Grand Island are best for vending machines?', a: 'Food processing, agricultural businesses, transportation and logistics, healthcare facilities, and manufacturing show excellent potential with large employee populations working multiple shifts.' },
-    { q: 'How do you verify the quality of Grand Island vending locations?', a: 'We verify each location through business research, employee count validation, shift schedule analysis, and facility assessment to ensure quality placements.' },
-    { q: 'Can I get customized vending leads for specific areas of Grand Island?', a: 'Absolutely! We can target the industrial south side, downtown business district, or Conestoga Mall retail area based on your preferences.' },
-    { q: 'What's the typical ROI for vending machines in Grand Island?', a: 'Vending machines in Grand Island typically achieve ROI within 12-17 months, with food processing and logistics facilities often seeing faster returns due to 24/7 operations.' }
+    { q: "What types of vending machine locations are available in Grand Island?", a: "Grand Island offers vending opportunities in meat processing plants (JBS), agricultural businesses, transportation companies, healthcare facilities, retail centers, and manufacturing facilities." },
+    { q: "How quickly can I get vending machine leads for Grand Island?", a: "Our Grand Island vending leads are delivered within 3-5 business days with comprehensive details about each location and central Nebraska market insights." },
+    { q: "What makes Grand Island a good market for vending machines?", a: "Grand Island's role as a regional agricultural and transportation hub creates strong vending demand. The city's major food processing facilities and logistics companies provide stable, high-traffic opportunities." },
+    { q: "Do you provide ongoing support for Grand Island locations?", a: "Yes, we offer complete support including location verification, industry analysis, contact information, and placement strategies specific to Grand Island's agricultural economy." },
+    { q: "What industries in Grand Island are best for vending machines?", a: "Food processing, agricultural businesses, transportation and logistics, healthcare facilities, and manufacturing show excellent potential with large employee populations working multiple shifts." },
+    { q: "How do you verify the quality of Grand Island vending locations?", a: "We verify each location through business research, employee count validation, shift schedule analysis, and facility assessment to ensure quality placements." },
+    { q: "Can I get customized vending leads for specific areas of Grand Island?", a: "Absolutely! We can target the industrial south side, downtown business district, or Conestoga Mall retail area based on your preferences." },
+    { q: "What's the typical ROI for vending machines in Grand Island?", a: "Vending machines in Grand Island typically achieve ROI within 12-17 months, with food processing and logistics facilities often seeing faster returns due to 24/7 operations." }
   ]
 
   return (
@@ -204,7 +204,7 @@ export default function GrandIslandNebraskaVendingLeadsPage() {
                     onClick={() => {
                       const pricingSection = document.getElementById('pricing')
                       if (pricingSection) {
-                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                        pricingSection.scrollIntoView({ behavior: 'smooth" })
                       }
                     }}
                     className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
@@ -509,10 +509,10 @@ export default function GrandIslandNebraskaVendingLeadsPage() {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
-              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/nebraska' },
-              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-nebraska' }
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/" },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads" },
+              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/nebraska" },
+              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-nebraska" }
             ]
           })
         }}

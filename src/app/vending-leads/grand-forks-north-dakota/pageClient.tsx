@@ -84,14 +84,14 @@ export default function GrandForksNorthDakotaVendingLeadsPage() {
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in Grand Forks?', a: 'Grand Forks offers vending opportunities at the University of North Dakota campus, Altru Health System, aerospace facilities, retail locations, and government buildings.' },
-    { q: 'How quickly can I get vending machine leads for Grand Forks?', a: 'Our Grand Forks vending leads are delivered within 3-5 business days with detailed information about each verified location and placement opportunities.' },
-    { q: 'What makes Grand Forks a good market for vending machines?', a: 'Grand Forks combines university populations with aerospace and healthcare industries, creating consistent year-round demand. The city's diverse economic base provides stable vending opportunities.' },
-    { q: 'Do you provide ongoing support for Grand Forks locations?', a: 'Yes, we provide comprehensive support including location research, industry insights, contact information, and placement consultation for your Grand Forks vending business.' },
-    { q: 'What industries in Grand Forks are best for vending machines?', a: 'Higher education (UND), aerospace manufacturing, healthcare facilities, and government offices show the strongest potential due to large employee bases and student populations.' },
-    { q: 'How do you verify the quality of Grand Forks vending locations?', a: 'We conduct thorough verification including business validation, foot traffic assessment, facility size analysis, and industry research for each Grand Forks location.' },
-    { q: 'Can I get customized vending leads for specific areas of Grand Forks?', a: 'Absolutely! We can focus on specific zones like the UND campus area, downtown district, or the Columbia Road retail corridor based on your target market.' },
-    { q: 'What's the typical ROI for vending machines in Grand Forks?', a: 'Machines in Grand Forks typically see payback periods of 12-15 months, particularly in university and healthcare settings where traffic remains consistent year-round.' }
+    { q: "What types of vending machine locations are available in Grand Forks?", a: "Grand Forks offers vending opportunities at the University of North Dakota campus, Altru Health System, aerospace facilities, retail locations, and government buildings." },
+    { q: "How quickly can I get vending machine leads for Grand Forks?", a: "Our Grand Forks vending leads are delivered within 3-5 business days with detailed information about each verified location and placement opportunities." },
+    { q: "What makes Grand Forks a good market for vending machines?", a: "Grand Forks combines university populations with aerospace and healthcare industries, creating consistent year-round demand. The city's diverse economic base provides stable vending opportunities." },
+    { q: "Do you provide ongoing support for Grand Forks locations?", a: "Yes, we provide comprehensive support including location research, industry insights, contact information, and placement consultation for your Grand Forks vending business." },
+    { q: "What industries in Grand Forks are best for vending machines?", a: "Higher education (UND), aerospace manufacturing, healthcare facilities, and government offices show the strongest potential due to large employee bases and student populations." },
+    { q: "How do you verify the quality of Grand Forks vending locations?", a: "We conduct thorough verification including business validation, foot traffic assessment, facility size analysis, and industry research for each Grand Forks location." },
+    { q: "Can I get customized vending leads for specific areas of Grand Forks?", a: "Absolutely! We can focus on specific zones like the UND campus area, downtown district, or the Columbia Road retail corridor based on your target market." },
+    { q: "What's the typical ROI for vending machines in Grand Forks?", a: "Machines in Grand Forks typically see payback periods of 12-15 months, particularly in university and healthcare settings where traffic remains consistent year-round." }
   ]
 
   return (
@@ -204,7 +204,7 @@ export default function GrandForksNorthDakotaVendingLeadsPage() {
                     onClick={() => {
                       const pricingSection = document.getElementById('pricing')
                       if (pricingSection) {
-                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                        pricingSection.scrollIntoView({ behavior: 'smooth" })
                       }
                     }}
                     className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
@@ -509,10 +509,10 @@ export default function GrandForksNorthDakotaVendingLeadsPage() {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
-              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/north-dakota' },
-              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-north-dakota' }
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/" },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads" },
+              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/north-dakota" },
+              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-north-dakota" }
             ]
           })
         }}

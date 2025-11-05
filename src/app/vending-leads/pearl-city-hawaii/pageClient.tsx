@@ -84,14 +84,14 @@ export default function PearlCityHawaiiVendingLeadsPage() {
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in Pearl City?', a: 'Pearl City offers vending opportunities in shopping centers (Pearl City Shopping Center, Pearlridge Center), professional offices, healthcare facilities, schools, and light industrial businesses.' },
-    { q: 'How quickly can I get vending machine leads for Pearl City?', a: 'Our Pearl City vending leads are delivered within 3-5 business days with detailed information about each verified location and island-specific placement considerations.' },
-    { q: 'What makes Pearl City a good market for vending machines?', a: 'Pearl City's central Oahu location and strong retail presence create excellent vending opportunities. The city's dense suburban population and commercial activity ensure consistent customer traffic year-round.' },
-    { q: 'Do you provide ongoing support for Pearl City locations?', a: 'Yes, we provide comprehensive support including location research, Hawaii market insights, contact information, and placement strategies tailored to island vending operations.' },
-    { q: 'What industries in Pearl City are best for vending machines?', a: 'Retail centers, professional services, healthcare facilities, and educational institutions show strong potential due to high foot traffic and local employee bases.' },
-    { q: 'How do you verify the quality of Pearl City vending locations?', a: 'We conduct thorough verification including business validation, foot traffic assessment, facility size analysis, and island market research for each Pearl City location.' },
-    { q: 'Can I get customized vending leads for specific areas of Pearl City?', a: 'Absolutely! We can focus on areas like the Pearlridge shopping district, Kamehameha Highway commercial corridor, or Waimalu neighborhood based on your target market.' },
-    { q: 'What's the typical ROI for vending machines in Pearl City?', a: 'Machines in Pearl City typically see ROI within 12-16 months, with retail and high-traffic locations often achieving faster payback periods due to consistent year-round tourism and local traffic.' }
+    { q: "What types of vending machine locations are available in Pearl City?", a: "Pearl City offers vending opportunities in shopping centers (Pearl City Shopping Center, Pearlridge Center), professional offices, healthcare facilities, schools, and light industrial businesses." },
+    { q: "How quickly can I get vending machine leads for Pearl City?", a: "Our Pearl City vending leads are delivered within 3-5 business days with detailed information about each verified location and island-specific placement considerations." },
+    { q: "What makes Pearl City a good market for vending machines?", a: "Pearl City's central Oahu location and strong retail presence create excellent vending opportunities. The city's dense suburban population and commercial activity ensure consistent customer traffic year-round." },
+    { q: "Do you provide ongoing support for Pearl City locations?", a: "Yes, we provide comprehensive support including location research, Hawaii market insights, contact information, and placement strategies tailored to island vending operations." },
+    { q: "What industries in Pearl City are best for vending machines?", a: "Retail centers, professional services, healthcare facilities, and educational institutions show strong potential due to high foot traffic and local employee bases." },
+    { q: "How do you verify the quality of Pearl City vending locations?", a: "We conduct thorough verification including business validation, foot traffic assessment, facility size analysis, and island market research for each Pearl City location." },
+    { q: "Can I get customized vending leads for specific areas of Pearl City?", a: "Absolutely! We can focus on areas like the Pearlridge shopping district, Kamehameha Highway commercial corridor, or Waimalu neighborhood based on your target market." },
+    { q: "What's the typical ROI for vending machines in Pearl City?", a: "Machines in Pearl City typically see ROI within 12-16 months, with retail and high-traffic locations often achieving faster payback periods due to consistent year-round tourism and local traffic." }
   ]
 
   return (
@@ -204,7 +204,7 @@ export default function PearlCityHawaiiVendingLeadsPage() {
                     onClick={() => {
                       const pricingSection = document.getElementById('pricing')
                       if (pricingSection) {
-                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                        pricingSection.scrollIntoView({ behavior: 'smooth" })
                       }
                     }}
                     className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
@@ -509,10 +509,10 @@ export default function PearlCityHawaiiVendingLeadsPage() {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
-              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/hawaii' },
-              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-hawaii' }
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/" },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads" },
+              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/hawaii" },
+              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-hawaii" }
             ]
           })
         }}

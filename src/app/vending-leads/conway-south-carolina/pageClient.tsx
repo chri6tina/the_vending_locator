@@ -84,14 +84,14 @@ export default function ConwaySouthCarolinaVendingLeadsPage() {
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in Conway?', a: 'Conway offers vending opportunities at Coastal Carolina University campus, healthcare facilities (Conway Medical Center), retail locations, hospitality businesses, and service companies serving the Myrtle Beach area.' },
-    { q: 'How quickly can I get vending machine leads for Conway?', a: 'Our Conway vending leads are delivered within 3-5 business days with detailed information about each location and Grand Strand area market insights.' },
-    { q: 'What makes Conway a good market for vending machines?', a: 'Conway's combination of university students and proximity to Myrtle Beach tourism creates year-round vending demand. The city's healthcare sector and retail growth provide additional opportunities beyond seasonal tourism.' },
-    { q: 'Do you provide ongoing support for Conway locations?', a: 'Yes, we offer complete support including location verification, university and tourism sector insights, contact information, and placement strategies specific to Conway's market.' },
-    { q: 'What industries in Conway are best for vending machines?', a: 'Higher education (CCU), healthcare facilities, hospitality businesses, and retail centers show excellent potential due to student populations and tourism support services.' },
-    { q: 'How do you verify the quality of Conway vending locations?', a: 'We verify each location through business research, enrollment data analysis, seasonal traffic assessment, and facility evaluation to ensure quality university and tourism placements.' },
-    { q: 'Can I get customized vending leads for specific areas of Conway?', a: 'Absolutely! We can focus on the CCU campus area, downtown Main Street district, or Highway 501 corridor based on your target market.' },
-    { q: 'What's the typical ROI for vending machines in Conway?', a: 'Vending machines in Conway typically achieve ROI within 12-16 months, with university locations seeing consistent returns during academic year and tourism-related businesses benefiting from summer peaks.' }
+    { q: "What types of vending machine locations are available in Conway?", a: "Conway offers vending opportunities at Coastal Carolina University campus, healthcare facilities (Conway Medical Center), retail locations, hospitality businesses, and service companies serving the Myrtle Beach area." },
+    { q: "How quickly can I get vending machine leads for Conway?", a: "Our Conway vending leads are delivered within 3-5 business days with detailed information about each location and Grand Strand area market insights." },
+    { q: "What makes Conway a good market for vending machines?", a: "Conway's combination of university students and proximity to Myrtle Beach tourism creates year-round vending demand. The city's healthcare sector and retail growth provide additional opportunities beyond seasonal tourism." },
+    { q: "Do you provide ongoing support for Conway locations?", a: "Yes, we offer complete support including location verification, university and tourism sector insights, contact information, and placement strategies specific to Conway's market." },
+    { q: "What industries in Conway are best for vending machines?", a: "Higher education (CCU), healthcare facilities, hospitality businesses, and retail centers show excellent potential due to student populations and tourism support services." },
+    { q: "How do you verify the quality of Conway vending locations?", a: "We verify each location through business research, enrollment data analysis, seasonal traffic assessment, and facility evaluation to ensure quality university and tourism placements." },
+    { q: "Can I get customized vending leads for specific areas of Conway?", a: "Absolutely! We can focus on the CCU campus area, downtown Main Street district, or Highway 501 corridor based on your target market." },
+    { q: "What's the typical ROI for vending machines in Conway?", a: "Vending machines in Conway typically achieve ROI within 12-16 months, with university locations seeing consistent returns during academic year and tourism-related businesses benefiting from summer peaks." }
   ]
 
   return (
@@ -204,7 +204,7 @@ export default function ConwaySouthCarolinaVendingLeadsPage() {
                     onClick={() => {
                       const pricingSection = document.getElementById('pricing')
                       if (pricingSection) {
-                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                        pricingSection.scrollIntoView({ behavior: 'smooth" })
                       }
                     }}
                     className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
@@ -509,10 +509,10 @@ export default function ConwaySouthCarolinaVendingLeadsPage() {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
-              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/south-carolina' },
-              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-south-carolina' }
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/" },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads" },
+              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/south-carolina" },
+              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-south-carolina" }
             ]
           })
         }}

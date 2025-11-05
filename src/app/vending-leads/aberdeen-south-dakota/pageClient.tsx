@@ -84,14 +84,14 @@ export default function AberdeenSouthDakotaVendingLeadsPage() {
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in Aberdeen?', a: 'Aberdeen provides vending opportunities in healthcare facilities, agricultural businesses, educational institutions, retail centers, and manufacturing facilities serving the regional market.' },
-    { q: 'How quickly can I get vending machine leads for Aberdeen?', a: 'Our Aberdeen vending leads are delivered within 3-5 business days with detailed information about each verified business and placement opportunity.' },
-    { q: 'What makes Aberdeen a good market for vending machines?', a: 'Aberdeen serves as a regional hub for northeastern South Dakota, with strong healthcare and agricultural sectors. The city's role as a regional center creates consistent business activity and vending demand.' },
-    { q: 'Do you provide ongoing support for Aberdeen locations?', a: 'Yes, we provide comprehensive support including location research, business verification, contact information, and market-specific placement strategies for Aberdeen.' },
-    { q: 'What industries in Aberdeen are best for vending machines?', a: 'Healthcare (Avera St. Luke's Hospital), agricultural businesses, education (Northern State University), and manufacturing show strong vending potential with reliable traffic.' },
-    { q: 'How do you verify the quality of Aberdeen vending locations?', a: 'We conduct thorough verification including business validation, employee assessment, facility research, and regional market analysis for each Aberdeen location.' },
-    { q: 'Can I get customized vending leads for specific areas of Aberdeen?', a: 'Absolutely! We can focus on areas like the downtown business district, NSU campus area, or the 6th Avenue retail corridor based on your target market.' },
-    { q: 'What's the typical ROI for vending machines in Aberdeen?', a: 'Machines in Aberdeen typically see ROI within 14-18 months, with healthcare and educational facilities often providing the most consistent returns.' }
+    { q: "What types of vending machine locations are available in Aberdeen?", a: "Aberdeen provides vending opportunities in healthcare facilities, agricultural businesses, educational institutions, retail centers, and manufacturing facilities serving the regional market." },
+    { q: "How quickly can I get vending machine leads for Aberdeen?", a: "Our Aberdeen vending leads are delivered within 3-5 business days with detailed information about each verified business and placement opportunity." },
+    { q: "What makes Aberdeen a good market for vending machines?", a: "Aberdeen serves as a regional hub for northeastern South Dakota, with strong healthcare and agricultural sectors. The city's role as a regional center creates consistent business activity and vending demand." },
+    { q: "Do you provide ongoing support for Aberdeen locations?", a: "Yes, we provide comprehensive support including location research, business verification, contact information, and market-specific placement strategies for Aberdeen." },
+    { q: "What industries in Aberdeen are best for vending machines?", a: "Healthcare (Avera St. Luke's Hospital), agricultural businesses, education (Northern State University), and manufacturing show strong vending potential with reliable traffic." },
+    { q: "How do you verify the quality of Aberdeen vending locations?", a: "We conduct thorough verification including business validation, employee assessment, facility research, and regional market analysis for each Aberdeen location." },
+    { q: "Can I get customized vending leads for specific areas of Aberdeen?", a: "Absolutely! We can focus on areas like the downtown business district, NSU campus area, or the 6th Avenue retail corridor based on your target market." },
+    { q: "What's the typical ROI for vending machines in Aberdeen?", a: "Machines in Aberdeen typically see ROI within 14-18 months, with healthcare and educational facilities often providing the most consistent returns." }
   ]
 
   return (
@@ -204,7 +204,7 @@ export default function AberdeenSouthDakotaVendingLeadsPage() {
                     onClick={() => {
                       const pricingSection = document.getElementById('pricing')
                       if (pricingSection) {
-                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                        pricingSection.scrollIntoView({ behavior: 'smooth" })
                       }
                     }}
                     className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
@@ -509,10 +509,10 @@ export default function AberdeenSouthDakotaVendingLeadsPage() {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
-              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/south-dakota' },
-              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-south-dakota' }
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/" },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads" },
+              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/south-dakota" },
+              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-south-dakota" }
             ]
           })
         }}

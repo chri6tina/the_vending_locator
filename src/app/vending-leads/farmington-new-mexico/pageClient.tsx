@@ -84,14 +84,14 @@ export default function FarmingtonNewMexicoVendingLeadsPage() {
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in Farmington?', a: 'Farmington offers vending opportunities in energy sector facilities (oil and gas), power plants, healthcare centers, retail locations, manufacturing facilities, and educational institutions.' },
-    { q: 'How quickly can I get vending machine leads for Farmington?', a: 'Our Farmington vending leads are delivered within 3-5 business days with comprehensive research on each location and Four Corners region market insights.' },
-    { q: 'What makes Farmington a good market for vending machines?', a: 'Farmington's energy sector economy creates strong demand from well-paid workers in oil, gas, and renewable energy. The city's role as a regional hub ensures consistent business activity and vending opportunities.' },
-    { q: 'Do you provide ongoing support for Farmington locations?', a: 'Yes, we offer complete support including location verification, energy sector insights, contact information, and placement strategies specific to Farmington's industrial economy.' },
-    { q: 'What industries in Farmington are best for vending machines?', a: 'Energy facilities (oil, gas, and solar), power generation plants, healthcare centers, and manufacturing show excellent potential due to 24/7 operations and large workforces.' },
-    { q: 'How do you verify the quality of Farmington vending locations?', a: 'We verify each location through business research, employee validation, shift schedule analysis, and facility assessment to ensure high-quality industrial placements.' },
-    { q: 'Can I get customized vending leads for specific areas of Farmington?', a: 'Absolutely! We can target the East Main Street commercial corridor, industrial zones, or healthcare district based on your preferences.' },
-    { q: 'What's the typical ROI for vending machines in Farmington?', a: 'Vending machines in Farmington typically achieve ROI within 11-15 months, with energy sector facilities often seeing faster returns due to continuous operations and premium pricing acceptance.' }
+    { q: "What types of vending machine locations are available in Farmington?", a: "Farmington offers vending opportunities in energy sector facilities (oil and gas), power plants, healthcare centers, retail locations, manufacturing facilities, and educational institutions." },
+    { q: "How quickly can I get vending machine leads for Farmington?", a: "Our Farmington vending leads are delivered within 3-5 business days with comprehensive research on each location and Four Corners region market insights." },
+    { q: "What makes Farmington a good market for vending machines?", a: "Farmington's energy sector economy creates strong demand from well-paid workers in oil, gas, and renewable energy. The city's role as a regional hub ensures consistent business activity and vending opportunities." },
+    { q: "Do you provide ongoing support for Farmington locations?", a: "Yes, we offer complete support including location verification, energy sector insights, contact information, and placement strategies specific to Farmington's industrial economy." },
+    { q: "What industries in Farmington are best for vending machines?", a: "Energy facilities (oil, gas, and solar), power generation plants, healthcare centers, and manufacturing show excellent potential due to 24/7 operations and large workforces." },
+    { q: "How do you verify the quality of Farmington vending locations?", a: "We verify each location through business research, employee validation, shift schedule analysis, and facility assessment to ensure high-quality industrial placements." },
+    { q: "Can I get customized vending leads for specific areas of Farmington?", a: "Absolutely! We can target the East Main Street commercial corridor, industrial zones, or healthcare district based on your preferences." },
+    { q: "What's the typical ROI for vending machines in Farmington?", a: "Vending machines in Farmington typically achieve ROI within 11-15 months, with energy sector facilities often seeing faster returns due to continuous operations and premium pricing acceptance." }
   ]
 
   return (
@@ -204,7 +204,7 @@ export default function FarmingtonNewMexicoVendingLeadsPage() {
                     onClick={() => {
                       const pricingSection = document.getElementById('pricing')
                       if (pricingSection) {
-                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                        pricingSection.scrollIntoView({ behavior: 'smooth" })
                       }
                     }}
                     className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
@@ -509,10 +509,10 @@ export default function FarmingtonNewMexicoVendingLeadsPage() {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
-              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/new-mexico' },
-              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-new-mexico' }
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/" },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads" },
+              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/new-mexico" },
+              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-new-mexico" }
             ]
           })
         }}

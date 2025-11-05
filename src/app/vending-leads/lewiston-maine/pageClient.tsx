@@ -84,14 +84,14 @@ export default function LewistonMaineVendingLeadsPage() {
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in Lewiston?', a: 'Lewiston offers vending opportunities in manufacturing facilities, healthcare centers (Central Maine Medical Center), Bates College, retail locations, and downtown office buildings.' },
-    { q: 'How quickly can I get vending machine leads for Lewiston?', a: 'Our Lewiston vending leads are delivered within 3-5 business days with comprehensive details about each location and industry-specific placement insights.' },
-    { q: 'What makes Lewiston a good market for vending machines?', a: 'Lewiston's diverse economy combines historic manufacturing with growing healthcare and education sectors. The city's business diversity and urban density create excellent vending opportunities.' },
-    { q: 'Do you provide ongoing support for Lewiston locations?', a: 'Yes, we offer full support including location verification, contact information, industry analysis, and placement strategies specific to Lewiston's market.' },
-    { q: 'What industries in Lewiston are best for vending machines?', a: 'Healthcare facilities, educational institutions (Bates College), manufacturing plants, and downtown offices show the highest potential for consistent vending revenue.' },
-    { q: 'How do you verify the quality of Lewiston vending locations?', a: 'We verify each location through business research, employee count validation, foot traffic analysis, and facility assessment to ensure quality placements.' },
-    { q: 'Can I get customized vending leads for specific areas of Lewiston?', a: 'Absolutely! We can target the downtown Lisbon Street corridor, Bates College area, or industrial zones along the Androscoggin River based on your preferences.' },
-    { q: 'What's the typical ROI for vending machines in Lewiston?', a: 'Vending machines in Lewiston typically achieve ROI within 13-17 months, with healthcare and educational placements often seeing faster returns.' }
+    { q: "What types of vending machine locations are available in Lewiston?", a: "Lewiston offers vending opportunities in manufacturing facilities, healthcare centers (Central Maine Medical Center), Bates College, retail locations, and downtown office buildings." },
+    { q: "How quickly can I get vending machine leads for Lewiston?", a: "Our Lewiston vending leads are delivered within 3-5 business days with comprehensive details about each location and industry-specific placement insights." },
+    { q: "What makes Lewiston a good market for vending machines?", a: "Lewiston's diverse economy combines historic manufacturing with growing healthcare and education sectors. The city's business diversity and urban density create excellent vending opportunities." },
+    { q: "Do you provide ongoing support for Lewiston locations?", a: "Yes, we offer full support including location verification, contact information, industry analysis, and placement strategies specific to Lewiston's market." },
+    { q: "What industries in Lewiston are best for vending machines?", a: "Healthcare facilities, educational institutions (Bates College), manufacturing plants, and downtown offices show the highest potential for consistent vending revenue." },
+    { q: "How do you verify the quality of Lewiston vending locations?", a: "We verify each location through business research, employee count validation, foot traffic analysis, and facility assessment to ensure quality placements." },
+    { q: "Can I get customized vending leads for specific areas of Lewiston?", a: "Absolutely! We can target the downtown Lisbon Street corridor, Bates College area, or industrial zones along the Androscoggin River based on your preferences." },
+    { q: "What's the typical ROI for vending machines in Lewiston?", a: "Vending machines in Lewiston typically achieve ROI within 13-17 months, with healthcare and educational placements often seeing faster returns." }
   ]
 
   return (
@@ -204,7 +204,7 @@ export default function LewistonMaineVendingLeadsPage() {
                     onClick={() => {
                       const pricingSection = document.getElementById('pricing')
                       if (pricingSection) {
-                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                        pricingSection.scrollIntoView({ behavior: 'smooth" })
                       }
                     }}
                     className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
@@ -509,10 +509,10 @@ export default function LewistonMaineVendingLeadsPage() {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
-              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/maine' },
-              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-maine' }
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/" },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads" },
+              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/maine" },
+              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-maine" }
             ]
           })
         }}

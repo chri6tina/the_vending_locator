@@ -5,46 +5,36 @@ import { useRouter } from 'next/navigation'
 
 export default function AdminAuthGuard({ children }: { children: React.ReactNode }) {
   const router = useRouter()
-  const [isAuthenticated, setIsAuthenticated] = useState<boolean | null>(null)
+  const [isAuthenticated, setIsAuthenticated] = useState(false)
+  const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
-    checkAuth()
-  }, [])
-
-  const checkAuth = async () => {
-    try {
-      const response = await fetch('/api/auth/check')
-      const data = await response.json()
-      
-      if (data.authenticated) {
-        setIsAuthenticated(true)
-      } else {
-        router.push('/admin/login')
-      }
-    } catch (error) {
-      console.error('Auth check failed:', error)
+    // Check if user is authenticated
+    const authStatus = localStorage.getItem('adminAuth')
+    
+    if (authStatus === 'true') {
+      setIsAuthenticated(true)
+    } else {
       router.push('/admin/login')
     }
-  }
+    
+    setIsLoading(false)
+  }, [router])
 
-  // Show loading state while checking authentication
-  if (isAuthenticated === null) {
+  if (isLoading) {
     return (
-      <div className="min-h-screen bg-warm-white flex items-center justify-center">
+      <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
-          <div className="w-16 h-16 border-4 border-navy border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
-          <p className="text-stone">Verifying authentication...</p>
+          <div className="inline-block animate-spin rounded-full h-12 w-12 border-4 border-gray-300 border-t-blue-600"></div>
+          <p className="mt-4 text-gray-600">Checking authentication...</p>
         </div>
       </div>
     )
   }
 
-  // Show children if authenticated
-  if (isAuthenticated) {
-    return <>{children}</>
+  if (!isAuthenticated) {
+    return null
   }
 
-  // Return null while redirecting
-  return null
+  return <>{children}</>
 }
-

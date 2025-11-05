@@ -84,14 +84,14 @@ export default function StGeorgeUtahVendingLeadsPage() {
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in St. George?', a: 'St. George offers vending opportunities in retirement communities, healthcare facilities (Intermountain St. George Regional Hospital), resort properties, retail centers, outdoor recreation businesses, and professional offices.' },
-    { q: 'How quickly can I get vending machine leads for St. George?', a: 'Our St. George vending leads are delivered within 3-5 business days with comprehensive details about each location and southwest Utah market insights.' },
-    { q: 'What makes St. George a good market for vending machines?', a: 'St. George's rapid growth as a retirement destination and proximity to Zion National Park create diverse vending opportunities. The city's healthcare expansion and year-round tourism ensure consistent demand.' },
-    { q: 'Do you provide ongoing support for St. George locations?', a: 'Yes, we provide comprehensive support including location research, healthcare and tourism sector insights, contact information, and placement strategies tailored to St. George's growing market.' },
-    { q: 'What industries in St. George are best for vending machines?', a: 'Healthcare facilities, retirement communities, resort properties, and retail centers show excellent potential due to senior populations, tourist traffic, and consistent business growth.' },
-    { q: 'How do you verify the quality of St. George vending locations?', a: 'We conduct thorough verification including business validation, demographic analysis, seasonal traffic assessment, and facility research for each St. George location.' },
-    { q: 'Can I get customized vending leads for specific areas of St. George?', a: 'Absolutely! We can target the Red Cliffs area, downtown historic district, or Sunset Boulevard corridor based on your preferences.' },
-    { q: 'What's the typical ROI for vending machines in St. George?', a: 'Machines in St. George typically see ROI within 10-14 months, with healthcare and tourism locations often achieving faster returns due to high traffic and premium pricing acceptance from retirees and tourists.' }
+    { q: "What types of vending machine locations are available in St. George?", a: "St. George offers vending opportunities in retirement communities, healthcare facilities (Intermountain St. George Regional Hospital), resort properties, retail centers, outdoor recreation businesses, and professional offices." },
+    { q: "How quickly can I get vending machine leads for St. George?", a: "Our St. George vending leads are delivered within 3-5 business days with comprehensive details about each location and southwest Utah market insights." },
+    { q: "What makes St. George a good market for vending machines?", a: "St. George's rapid growth as a retirement destination and proximity to Zion National Park create diverse vending opportunities. The city's healthcare expansion and year-round tourism ensure consistent demand." },
+    { q: "Do you provide ongoing support for St. George locations?", a: "Yes, we provide comprehensive support including location research, healthcare and tourism sector insights, contact information, and placement strategies tailored to St. George's growing market." },
+    { q: "What industries in St. George are best for vending machines?", a: "Healthcare facilities, retirement communities, resort properties, and retail centers show excellent potential due to senior populations, tourist traffic, and consistent business growth." },
+    { q: "How do you verify the quality of St. George vending locations?", a: "We conduct thorough verification including business validation, demographic analysis, seasonal traffic assessment, and facility research for each St. George location." },
+    { q: "Can I get customized vending leads for specific areas of St. George?", a: "Absolutely! We can target the Red Cliffs area, downtown historic district, or Sunset Boulevard corridor based on your preferences." },
+    { q: "What's the typical ROI for vending machines in St. George?", a: "Machines in St. George typically see ROI within 10-14 months, with healthcare and tourism locations often achieving faster returns due to high traffic and premium pricing acceptance from retirees and tourists." }
   ]
 
   return (
@@ -204,7 +204,7 @@ export default function StGeorgeUtahVendingLeadsPage() {
                     onClick={() => {
                       const pricingSection = document.getElementById('pricing')
                       if (pricingSection) {
-                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                        pricingSection.scrollIntoView({ behavior: 'smooth" })
                       }
                     }}
                     className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
@@ -509,10 +509,10 @@ export default function StGeorgeUtahVendingLeadsPage() {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
-              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/utah' },
-              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-utah' }
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/" },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads" },
+              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/utah" },
+              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-utah" }
             ]
           })
         }}

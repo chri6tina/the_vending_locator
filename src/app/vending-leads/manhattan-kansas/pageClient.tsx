@@ -84,14 +84,14 @@ export default function ManhattanKansasVendingLeadsPage() {
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in Manhattan?', a: 'Manhattan offers vending opportunities at Kansas State University, Fort Riley military facilities, agricultural businesses, retail centers, healthcare facilities, and office buildings.' },
-    { q: 'How quickly can I get vending machine leads for Manhattan?', a: 'Our Manhattan vending leads are delivered within 3-5 business days with detailed information about each location and Flint Hills region market insights.' },
-    { q: 'What makes Manhattan a good market for vending machines?', a: 'Manhattan's combination of university students, military personnel, and agricultural business creates diverse vending demand. The city's stable economy and consistent population ensure year-round opportunities.' },
-    { q: 'Do you provide ongoing support for Manhattan locations?', a: 'Yes, we provide comprehensive support including location research, university and military market insights, contact information, and placement strategies tailored to Manhattan's unique economy.' },
-    { q: 'What industries in Manhattan are best for vending machines?', a: 'Higher education (K-State), military facilities (Fort Riley), agricultural businesses, and healthcare show excellent potential due to large populations and consistent demand.' },
-    { q: 'How do you verify the quality of Manhattan vending locations?', a: 'We conduct thorough verification including business validation, enrollment and personnel data, facility assessment, and regional market research for each Manhattan location.' },
-    { q: 'Can I get customized vending leads for specific areas of Manhattan?', a: 'Absolutely! We can focus on the K-State campus district, downtown Aggieville area, or Fort Riley corridor based on your target market.' },
-    { q: 'What's the typical ROI for vending machines in Manhattan?', a: 'Machines in Manhattan typically see ROI within 12-16 months, with university and military placements often achieving faster returns due to consistent high-volume traffic.' }
+    { q: "What types of vending machine locations are available in Manhattan?", a: "Manhattan offers vending opportunities at Kansas State University, Fort Riley military facilities, agricultural businesses, retail centers, healthcare facilities, and office buildings." },
+    { q: "How quickly can I get vending machine leads for Manhattan?", a: "Our Manhattan vending leads are delivered within 3-5 business days with detailed information about each location and Flint Hills region market insights." },
+    { q: "What makes Manhattan a good market for vending machines?", a: "Manhattan's combination of university students, military personnel, and agricultural business creates diverse vending demand. The city's stable economy and consistent population ensure year-round opportunities." },
+    { q: "Do you provide ongoing support for Manhattan locations?", a: "Yes, we provide comprehensive support including location research, university and military market insights, contact information, and placement strategies tailored to Manhattan's unique economy." },
+    { q: "What industries in Manhattan are best for vending machines?", a: "Higher education (K-State), military facilities (Fort Riley), agricultural businesses, and healthcare show excellent potential due to large populations and consistent demand." },
+    { q: "How do you verify the quality of Manhattan vending locations?", a: "We conduct thorough verification including business validation, enrollment and personnel data, facility assessment, and regional market research for each Manhattan location." },
+    { q: "Can I get customized vending leads for specific areas of Manhattan?", a: "Absolutely! We can focus on the K-State campus district, downtown Aggieville area, or Fort Riley corridor based on your target market." },
+    { q: "What's the typical ROI for vending machines in Manhattan?", a: "Machines in Manhattan typically see ROI within 12-16 months, with university and military placements often achieving faster returns due to consistent high-volume traffic." }
   ]
 
   return (
@@ -204,7 +204,7 @@ export default function ManhattanKansasVendingLeadsPage() {
                     onClick={() => {
                       const pricingSection = document.getElementById('pricing')
                       if (pricingSection) {
-                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                        pricingSection.scrollIntoView({ behavior: 'smooth" })
                       }
                     }}
                     className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
@@ -509,10 +509,10 @@ export default function ManhattanKansasVendingLeadsPage() {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
-              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/kansas' },
-              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-kansas' }
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/" },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads" },
+              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/kansas" },
+              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-kansas" }
             ]
           })
         }}

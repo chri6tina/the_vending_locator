@@ -84,14 +84,14 @@ export default function WoonsocketRhodeIslandVendingLeadsPage() {
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in Woonsocket?', a: 'Woonsocket offers vending opportunities in CVS Health headquarters facilities, manufacturing plants, healthcare centers, retail locations, and office buildings throughout the city.' },
-    { q: 'How quickly can I get vending machine leads for Woonsocket?', a: 'Our Woonsocket vending leads are delivered within 3-5 business days with detailed information about each verified location and northern Rhode Island market insights.' },
-    { q: 'What makes Woonsocket a good market for vending machines?', a: 'Woonsocket's economy, anchored by CVS Health's major presence, creates excellent vending opportunities. The city's mix of corporate offices, manufacturing, and healthcare ensures diverse placement options.' },
-    { q: 'Do you provide ongoing support for Woonsocket locations?', a: 'Yes, we provide comprehensive support including location research, corporate sector insights, contact information, and placement strategies tailored to Woonsocket's business environment.' },
-    { q: 'What industries in Woonsocket are best for vending machines?', a: 'Healthcare/pharmacy (CVS Health), manufacturing facilities, retail centers, and office complexes show excellent potential due to large employee populations and consistent traffic.' },
-    { q: 'How do you verify the quality of Woonsocket vending locations?', a: 'We conduct thorough verification including business validation, employee assessment, facility size analysis, and corporate campus research for each Woonsocket location.' },
-    { q: 'Can I get customized vending leads for specific areas of Woonsocket?', a: 'Absolutely! We can focus on the Main Street business district, CVS corporate campus area, or industrial zones based on your target market preferences.' },
-    { q: 'What's the typical ROI for vending machines in Woonsocket?', a: 'Machines in Woonsocket typically see ROI within 11-15 months, with corporate facilities often achieving faster returns due to large employee bases and premium pricing acceptance.' }
+    { q: "What types of vending machine locations are available in Woonsocket?", a: "Woonsocket offers vending opportunities in CVS Health headquarters facilities, manufacturing plants, healthcare centers, retail locations, and office buildings throughout the city." },
+    { q: "How quickly can I get vending machine leads for Woonsocket?", a: "Our Woonsocket vending leads are delivered within 3-5 business days with detailed information about each verified location and northern Rhode Island market insights." },
+    { q: "What makes Woonsocket a good market for vending machines?", a: "Woonsocket's economy, anchored by CVS Health's major presence, creates excellent vending opportunities. The city's mix of corporate offices, manufacturing, and healthcare ensures diverse placement options." },
+    { q: "Do you provide ongoing support for Woonsocket locations?", a: "Yes, we provide comprehensive support including location research, corporate sector insights, contact information, and placement strategies tailored to Woonsocket's business environment." },
+    { q: "What industries in Woonsocket are best for vending machines?", a: "Healthcare/pharmacy (CVS Health), manufacturing facilities, retail centers, and office complexes show excellent potential due to large employee populations and consistent traffic." },
+    { q: "How do you verify the quality of Woonsocket vending locations?", a: "We conduct thorough verification including business validation, employee assessment, facility size analysis, and corporate campus research for each Woonsocket location." },
+    { q: "Can I get customized vending leads for specific areas of Woonsocket?", a: "Absolutely! We can focus on the Main Street business district, CVS corporate campus area, or industrial zones based on your target market preferences." },
+    { q: "What's the typical ROI for vending machines in Woonsocket?", a: "Machines in Woonsocket typically see ROI within 11-15 months, with corporate facilities often achieving faster returns due to large employee bases and premium pricing acceptance." }
   ]
 
   return (
@@ -204,7 +204,7 @@ export default function WoonsocketRhodeIslandVendingLeadsPage() {
                     onClick={() => {
                       const pricingSection = document.getElementById('pricing')
                       if (pricingSection) {
-                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                        pricingSection.scrollIntoView({ behavior: 'smooth" })
                       }
                     }}
                     className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
@@ -509,10 +509,10 @@ export default function WoonsocketRhodeIslandVendingLeadsPage() {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
-              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/rhode-island' },
-              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-rhode-island' }
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/" },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads" },
+              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/rhode-island" },
+              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-rhode-island" }
             ]
           })
         }}

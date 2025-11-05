@@ -84,14 +84,14 @@ export default function SlidellLouisianaVendingLeadsPage() {
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in Slidell?', a: 'Slidell offers vending opportunities in retail centers, healthcare facilities (Slidell Memorial Hospital), professional offices, service businesses, and light industrial facilities serving the north shore area.' },
-    { q: 'How quickly can I get vending machine leads for Slidell?', a: 'Our Slidell vending leads are delivered within 3-5 business days with detailed information about each location and New Orleans metro area insights.' },
-    { q: 'What makes Slidell a good market for vending machines?', a: 'Slidell's strategic location across Lake Pontchartrain from New Orleans creates strong commercial activity. The city's retail and service sectors ensure consistent vending demand throughout the year.' },
-    { q: 'Do you provide ongoing support for Slidell locations?', a: 'Yes, we offer complete support including location verification, retail sector insights, contact information, and placement strategies specific to Slidell's suburban market.' },
-    { q: 'What industries in Slidell are best for vending machines?', a: 'Retail centers, healthcare facilities, professional services, and light industrial businesses show excellent potential due to employee bases and customer traffic.' },
-    { q: 'How do you verify the quality of Slidell vending locations?', a: 'We verify each location through business research, foot traffic assessment, employee validation, and regional market analysis to ensure quality placements.' },
-    { q: 'Can I get customized vending leads for specific areas of Slidell?', a: 'Absolutely! We can focus on the Fremaux Avenue retail corridor, Gause Boulevard area, or Old Town district based on your target market.' },
-    { q: 'What's the typical ROI for vending machines in Slidell?', a: 'Vending machines in Slidell typically achieve ROI within 13-17 months, with retail and healthcare locations often seeing faster returns due to consistent traffic patterns.' }
+    { q: "What types of vending machine locations are available in Slidell?", a: "Slidell offers vending opportunities in retail centers, healthcare facilities (Slidell Memorial Hospital), professional offices, service businesses, and light industrial facilities serving the north shore area." },
+    { q: "How quickly can I get vending machine leads for Slidell?", a: "Our Slidell vending leads are delivered within 3-5 business days with detailed information about each location and New Orleans metro area insights." },
+    { q: "What makes Slidell a good market for vending machines?", a: "Slidell's strategic location across Lake Pontchartrain from New Orleans creates strong commercial activity. The city's retail and service sectors ensure consistent vending demand throughout the year." },
+    { q: "Do you provide ongoing support for Slidell locations?", a: "Yes, we offer complete support including location verification, retail sector insights, contact information, and placement strategies specific to Slidell's suburban market." },
+    { q: "What industries in Slidell are best for vending machines?", a: "Retail centers, healthcare facilities, professional services, and light industrial businesses show excellent potential due to employee bases and customer traffic." },
+    { q: "How do you verify the quality of Slidell vending locations?", a: "We verify each location through business research, foot traffic assessment, employee validation, and regional market analysis to ensure quality placements." },
+    { q: "Can I get customized vending leads for specific areas of Slidell?", a: "Absolutely! We can focus on the Fremaux Avenue retail corridor, Gause Boulevard area, or Old Town district based on your target market." },
+    { q: "What's the typical ROI for vending machines in Slidell?", a: "Vending machines in Slidell typically achieve ROI within 13-17 months, with retail and healthcare locations often seeing faster returns due to consistent traffic patterns." }
   ]
 
   return (
@@ -204,7 +204,7 @@ export default function SlidellLouisianaVendingLeadsPage() {
                     onClick={() => {
                       const pricingSection = document.getElementById('pricing')
                       if (pricingSection) {
-                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                        pricingSection.scrollIntoView({ behavior: 'smooth" })
                       }
                     }}
                     className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
@@ -509,10 +509,10 @@ export default function SlidellLouisianaVendingLeadsPage() {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
-              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/louisiana' },
-              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-louisiana' }
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/" },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads" },
+              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/louisiana" },
+              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-louisiana" }
             ]
           })
         }}

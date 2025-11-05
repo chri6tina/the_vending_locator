@@ -84,14 +84,14 @@ export default function DanburyConnecticutVendingLeadsPage() {
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in Danbury?', a: 'Danbury offers diverse vending opportunities in healthcare facilities (Danbury Hospital), professional offices, retail centers (Danbury Fair Mall), manufacturing facilities, and corporate headquarters.' },
-    { q: 'How quickly can I get vending machine leads for Danbury?', a: 'Our Danbury vending leads are delivered within 3-5 business days with detailed information about each location and western Connecticut market insights.' },
-    { q: 'What makes Danbury a good market for vending machines?', a: 'Danbury's diverse economy and strategic location near the New York border create excellent vending opportunities. The city's mix of healthcare, professional services, and retail ensures consistent demand.' },
-    { q: 'Do you provide ongoing support for Danbury locations?', a: 'Yes, we provide comprehensive support including location research, professional services insights, contact information, and placement strategies tailored to Danbury's business environment.' },
-    { q: 'What industries in Danbury are best for vending machines?', a: 'Healthcare facilities, professional services, corporate offices, retail centers, and manufacturing show excellent potential due to large employee bases and high foot traffic.' },
-    { q: 'How do you verify the quality of Danbury vending locations?', a: 'We conduct thorough verification including business validation, employee assessment, facility size analysis, and regional market research for each Danbury location.' },
-    { q: 'Can I get customized vending leads for specific areas of Danbury?', a: 'Absolutely! We can focus on the downtown business district, Danbury Fair Mall area, or industrial parks based on your target market preferences.' },
-    { q: 'What's the typical ROI for vending machines in Danbury?', a: 'Machines in Danbury typically see ROI within 10-14 months, with healthcare and corporate locations often achieving faster returns due to high traffic and premium pricing acceptance.' }
+    { q: "What types of vending machine locations are available in Danbury?", a: "Danbury offers diverse vending opportunities in healthcare facilities (Danbury Hospital), professional offices, retail centers (Danbury Fair Mall), manufacturing facilities, and corporate headquarters." },
+    { q: "How quickly can I get vending machine leads for Danbury?", a: "Our Danbury vending leads are delivered within 3-5 business days with detailed information about each location and western Connecticut market insights." },
+    { q: "What makes Danbury a good market for vending machines?", a: "Danbury's diverse economy and strategic location near the New York border create excellent vending opportunities. The city's mix of healthcare, professional services, and retail ensures consistent demand." },
+    { q: "Do you provide ongoing support for Danbury locations?", a: "Yes, we provide comprehensive support including location research, professional services insights, contact information, and placement strategies tailored to Danbury's business environment." },
+    { q: "What industries in Danbury are best for vending machines?", a: "Healthcare facilities, professional services, corporate offices, retail centers, and manufacturing show excellent potential due to large employee bases and high foot traffic." },
+    { q: "How do you verify the quality of Danbury vending locations?", a: "We conduct thorough verification including business validation, employee assessment, facility size analysis, and regional market research for each Danbury location." },
+    { q: "Can I get customized vending leads for specific areas of Danbury?", a: "Absolutely! We can focus on the downtown business district, Danbury Fair Mall area, or industrial parks based on your target market preferences." },
+    { q: "What's the typical ROI for vending machines in Danbury?", a: "Machines in Danbury typically see ROI within 10-14 months, with healthcare and corporate locations often achieving faster returns due to high traffic and premium pricing acceptance." }
   ]
 
   return (
@@ -204,7 +204,7 @@ export default function DanburyConnecticutVendingLeadsPage() {
                     onClick={() => {
                       const pricingSection = document.getElementById('pricing')
                       if (pricingSection) {
-                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                        pricingSection.scrollIntoView({ behavior: 'smooth" })
                       }
                     }}
                     className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
@@ -509,10 +509,10 @@ export default function DanburyConnecticutVendingLeadsPage() {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
-              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/connecticut' },
-              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-connecticut' }
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/" },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads" },
+              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/connecticut" },
+              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-connecticut" }
             ]
           })
         }}

@@ -84,14 +84,14 @@ export default function HotSpringsArkansasVendingLeadsPage() {
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in Hot Springs?', a: 'Hot Springs offers diverse vending opportunities in hotels and resorts, restaurants, healthcare facilities (National Park Medical Center), tourist attractions, retail locations, and spa facilities.' },
-    { q: 'How quickly can I get vending machine leads for Hot Springs?', a: 'Our Hot Springs vending leads are delivered within 3-5 business days with detailed information about each location and tourism market considerations.' },
-    { q: 'What makes Hot Springs a good market for vending machines?', a: 'Hot Springs' thriving tourism industry combined with a strong healthcare sector creates year-round vending demand. The city's historic bathhouses and national park location ensure consistent visitor traffic.' },
-    { q: 'Do you provide ongoing support for Hot Springs locations?', a: 'Yes, we offer complete support including location verification, tourism and hospitality sector insights, contact information, and placement strategies specific to Hot Springs' unique market.' },
-    { q: 'What industries in Hot Springs are best for vending machines?', a: 'Hospitality (hotels and resorts), healthcare facilities, tourist attractions, and retail centers show excellent potential due to high visitor volumes and local employee populations.' },
-    { q: 'How do you verify the quality of Hot Springs vending locations?', a: 'We verify each location through business research, seasonal traffic analysis, visitor volume assessment, and facility evaluation to ensure quality tourism-focused placements.' },
-    { q: 'Can I get customized vending leads for specific areas of Hot Springs?', a: 'Absolutely! We can focus on the historic Bathhouse Row, downtown Central Avenue district, or the Highway 7 commercial corridor based on your target market.' },
-    { q: 'What's the typical ROI for vending machines in Hot Springs?', a: 'Vending machines in Hot Springs typically achieve ROI within 11-15 months, with tourism-related locations often seeing faster returns during peak visitor seasons and from premium pricing acceptance.' }
+    { q: "What types of vending machine locations are available in Hot Springs?", a: "Hot Springs offers diverse vending opportunities in hotels and resorts, restaurants, healthcare facilities (National Park Medical Center), tourist attractions, retail locations, and spa facilities." },
+    { q: "How quickly can I get vending machine leads for Hot Springs?", a: "Our Hot Springs vending leads are delivered within 3-5 business days with detailed information about each location and tourism market considerations." },
+    { q: "What makes Hot Springs a good market for vending machines?", a: "Hot Springs' thriving tourism industry combined with a strong healthcare sector creates year-round vending demand. The city's historic bathhouses and national park location ensure consistent visitor traffic." },
+    { q: "Do you provide ongoing support for Hot Springs locations?", a: "Yes, we offer complete support including location verification, tourism and hospitality sector insights, contact information, and placement strategies specific to Hot Springs' unique market." },
+    { q: "What industries in Hot Springs are best for vending machines?", a: "Hospitality (hotels and resorts), healthcare facilities, tourist attractions, and retail centers show excellent potential due to high visitor volumes and local employee populations." },
+    { q: "How do you verify the quality of Hot Springs vending locations?", a: "We verify each location through business research, seasonal traffic analysis, visitor volume assessment, and facility evaluation to ensure quality tourism-focused placements." },
+    { q: "Can I get customized vending leads for specific areas of Hot Springs?", a: "Absolutely! We can focus on the historic Bathhouse Row, downtown Central Avenue district, or the Highway 7 commercial corridor based on your target market." },
+    { q: "What's the typical ROI for vending machines in Hot Springs?", a: "Vending machines in Hot Springs typically achieve ROI within 11-15 months, with tourism-related locations often seeing faster returns during peak visitor seasons and from premium pricing acceptance." }
   ]
 
   return (
@@ -204,7 +204,7 @@ export default function HotSpringsArkansasVendingLeadsPage() {
                     onClick={() => {
                       const pricingSection = document.getElementById('pricing')
                       if (pricingSection) {
-                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                        pricingSection.scrollIntoView({ behavior: 'smooth" })
                       }
                     }}
                     className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
@@ -509,10 +509,10 @@ export default function HotSpringsArkansasVendingLeadsPage() {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
-              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/arkansas' },
-              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-arkansas' }
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/" },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads" },
+              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/arkansas" },
+              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-arkansas" }
             ]
           })
         }}

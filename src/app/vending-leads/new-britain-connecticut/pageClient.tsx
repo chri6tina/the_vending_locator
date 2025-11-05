@@ -84,14 +84,14 @@ export default function NewBritainConnecticutVendingLeadsPage() {
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in New Britain?', a: 'New Britain offers vending opportunities in manufacturing facilities (Stanley Black & Decker), healthcare centers, Central Connecticut State University, retail locations, and office buildings.' },
-    { q: 'How quickly can I get vending machine leads for New Britain?', a: 'Our New Britain vending leads are delivered within 3-5 business days with comprehensive details about each location and Hartford County market insights.' },
-    { q: 'What makes New Britain a good market for vending machines?', a: 'New Britain's strong manufacturing heritage combined with major healthcare and educational institutions creates diverse vending opportunities. The city's urban density ensures consistent business activity and foot traffic.' },
-    { q: 'Do you provide ongoing support for New Britain locations?', a: 'Yes, we offer complete support including location verification, manufacturing sector insights, contact information, and placement strategies specific to New Britain's industrial economy.' },
-    { q: 'What industries in New Britain are best for vending machines?', a: 'Manufacturing (tools and hardware), healthcare facilities, higher education (CCSU), and office complexes show excellent potential due to large employee and student populations.' },
-    { q: 'How do you verify the quality of New Britain vending locations?', a: 'We verify each location through business research, employee count validation, facility assessment, and regional market analysis to ensure quality industrial and institutional placements.' },
-    { q: 'Can I get customized vending leads for specific areas of New Britain?', a: 'Absolutely! We can target the downtown commercial district, CCSU campus area, or industrial zones along Columbus Boulevard based on your preferences.' },
-    { q: 'What's the typical ROI for vending machines in New Britain?', a: 'Vending machines in New Britain typically achieve ROI within 11-15 months, with manufacturing and healthcare facilities often seeing faster returns due to shift workers and premium pricing acceptance.' }
+    { q: "What types of vending machine locations are available in New Britain?", a: "New Britain offers vending opportunities in manufacturing facilities (Stanley Black & Decker), healthcare centers, Central Connecticut State University, retail locations, and office buildings." },
+    { q: "How quickly can I get vending machine leads for New Britain?", a: "Our New Britain vending leads are delivered within 3-5 business days with comprehensive details about each location and Hartford County market insights." },
+    { q: "What makes New Britain a good market for vending machines?", a: "New Britain's strong manufacturing heritage combined with major healthcare and educational institutions creates diverse vending opportunities. The city's urban density ensures consistent business activity and foot traffic." },
+    { q: "Do you provide ongoing support for New Britain locations?", a: "Yes, we offer complete support including location verification, manufacturing sector insights, contact information, and placement strategies specific to New Britain's industrial economy." },
+    { q: "What industries in New Britain are best for vending machines?", a: "Manufacturing (tools and hardware), healthcare facilities, higher education (CCSU), and office complexes show excellent potential due to large employee and student populations." },
+    { q: "How do you verify the quality of New Britain vending locations?", a: "We verify each location through business research, employee count validation, facility assessment, and regional market analysis to ensure quality industrial and institutional placements." },
+    { q: "Can I get customized vending leads for specific areas of New Britain?", a: "Absolutely! We can target the downtown commercial district, CCSU campus area, or industrial zones along Columbus Boulevard based on your preferences." },
+    { q: "What's the typical ROI for vending machines in New Britain?", a: "Vending machines in New Britain typically achieve ROI within 11-15 months, with manufacturing and healthcare facilities often seeing faster returns due to shift workers and premium pricing acceptance." }
   ]
 
   return (
@@ -204,7 +204,7 @@ export default function NewBritainConnecticutVendingLeadsPage() {
                     onClick={() => {
                       const pricingSection = document.getElementById('pricing')
                       if (pricingSection) {
-                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                        pricingSection.scrollIntoView({ behavior: 'smooth" })
                       }
                     }}
                     className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
@@ -509,10 +509,10 @@ export default function NewBritainConnecticutVendingLeadsPage() {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
-              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/connecticut' },
-              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-connecticut' }
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/" },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads" },
+              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/connecticut" },
+              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-connecticut" }
             ]
           })
         }}

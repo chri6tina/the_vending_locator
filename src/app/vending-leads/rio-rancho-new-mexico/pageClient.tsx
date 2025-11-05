@@ -84,14 +84,14 @@ export default function RioRanchoNewMexicoVendingLeadsPage() {
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in Rio Rancho?', a: 'Rio Rancho offers diverse vending opportunities in tech companies (Intel), healthcare facilities, retail centers, office parks, educational institutions, and manufacturing facilities.' },
-    { q: 'How quickly can I get vending machine leads for Rio Rancho?', a: 'Our Rio Rancho vending leads are delivered within 3-5 business days with detailed information about each location and Albuquerque metro area insights.' },
-    { q: 'What makes Rio Rancho a good market for vending machines?', a: 'Rio Rancho's rapid growth and diverse economy, anchored by Intel's major facility, create exceptional vending opportunities. The city's young population and tech sector ensure strong demand for convenient food options.' },
-    { q: 'Do you provide ongoing support for Rio Rancho locations?', a: 'Yes, we provide comprehensive support including location research, tech sector insights, contact information, and placement strategies tailored to Rio Rancho's dynamic market.' },
-    { q: 'What industries in Rio Rancho are best for vending machines?', a: 'Technology (Intel), healthcare facilities, professional offices, retail centers, and education show excellent potential due to large employee bases and high foot traffic.' },
-    { q: 'How do you verify the quality of Rio Rancho vending locations?', a: 'We conduct thorough verification including business validation, employee count assessment, facility size analysis, and regional market research for each Rio Rancho location.' },
-    { q: 'Can I get customized vending leads for specific areas of Rio Rancho?', a: 'Absolutely! We can target the Northern Boulevard corridor, Southern Boulevard retail area, or Enchanted Hills district based on your target market.' },
-    { q: 'What's the typical ROI for vending machines in Rio Rancho?', a: 'Machines in Rio Rancho typically see ROI within 10-14 months, with tech facilities often achieving faster returns due to premium pricing acceptance and 24/7 operations.' }
+    { q: "What types of vending machine locations are available in Rio Rancho?", a: "Rio Rancho offers diverse vending opportunities in tech companies (Intel), healthcare facilities, retail centers, office parks, educational institutions, and manufacturing facilities." },
+    { q: "How quickly can I get vending machine leads for Rio Rancho?", a: "Our Rio Rancho vending leads are delivered within 3-5 business days with detailed information about each location and Albuquerque metro area insights." },
+    { q: "What makes Rio Rancho a good market for vending machines?", a: "Rio Rancho's rapid growth and diverse economy, anchored by Intel's major facility, create exceptional vending opportunities. The city's young population and tech sector ensure strong demand for convenient food options." },
+    { q: "Do you provide ongoing support for Rio Rancho locations?", a: "Yes, we provide comprehensive support including location research, tech sector insights, contact information, and placement strategies tailored to Rio Rancho's dynamic market." },
+    { q: "What industries in Rio Rancho are best for vending machines?", a: "Technology (Intel), healthcare facilities, professional offices, retail centers, and education show excellent potential due to large employee bases and high foot traffic." },
+    { q: "How do you verify the quality of Rio Rancho vending locations?", a: "We conduct thorough verification including business validation, employee count assessment, facility size analysis, and regional market research for each Rio Rancho location." },
+    { q: "Can I get customized vending leads for specific areas of Rio Rancho?", a: "Absolutely! We can target the Northern Boulevard corridor, Southern Boulevard retail area, or Enchanted Hills district based on your target market." },
+    { q: "What's the typical ROI for vending machines in Rio Rancho?", a: "Machines in Rio Rancho typically see ROI within 10-14 months, with tech facilities often achieving faster returns due to premium pricing acceptance and 24/7 operations." }
   ]
 
   return (
@@ -204,7 +204,7 @@ export default function RioRanchoNewMexicoVendingLeadsPage() {
                     onClick={() => {
                       const pricingSection = document.getElementById('pricing')
                       if (pricingSection) {
-                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                        pricingSection.scrollIntoView({ behavior: 'smooth" })
                       }
                     }}
                     className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
@@ -509,10 +509,10 @@ export default function RioRanchoNewMexicoVendingLeadsPage() {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
-              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/new-mexico' },
-              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-new-mexico' }
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/" },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads" },
+              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/new-mexico" },
+              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-new-mexico" }
             ]
           })
         }}

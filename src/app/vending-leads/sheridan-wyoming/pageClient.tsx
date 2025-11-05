@@ -84,14 +84,14 @@ export default function SheridanWyomingVendingLeadsPage() {
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in Sheridan?', a: 'Sheridan offers vending opportunities in energy sector facilities (coal and natural gas), healthcare centers (Sheridan Memorial Hospital), retail locations, tourism businesses, and educational institutions.' },
-    { q: 'How quickly can I get vending machine leads for Sheridan?', a: 'Our Sheridan vending leads are delivered within 3-5 business days with detailed information about each location and north central Wyoming market insights.' },
-    { q: 'What makes Sheridan a good market for vending machines?', a: 'Sheridan's combination of energy sector employment, historic downtown, and proximity to Big Horn Mountains creates diverse vending opportunities. The city's role as a regional hub ensures consistent business activity.' },
-    { q: 'Do you provide ongoing support for Sheridan locations?', a: 'Yes, we provide comprehensive support including location research, energy and tourism sector insights, contact information, and placement strategies tailored to Sheridan's economy.' },
-    { q: 'What industries in Sheridan are best for vending machines?', a: 'Energy facilities, healthcare centers, retail locations, and tourism businesses show strong potential due to shift workers, visitor traffic, and local employment.' },
-    { q: 'How do you verify the quality of Sheridan vending locations?', a: 'We conduct thorough verification including business validation, seasonal traffic analysis, employee assessment, and facility research for each Sheridan location.' },
-    { q: 'Can I get customized vending leads for specific areas of Sheridan?', a: 'Absolutely! We can target the historic Main Street downtown, Coffeen Avenue corridor, or areas near I-90 based on your preferences.' },
-    { q: 'What's the typical ROI for vending machines in Sheridan?', a: 'Machines in Sheridan typically see ROI within 15-19 months, with energy sector and healthcare locations often achieving faster returns due to shift operations and consistent demand.' }
+    { q: "What types of vending machine locations are available in Sheridan?", a: "Sheridan offers vending opportunities in energy sector facilities (coal and natural gas), healthcare centers (Sheridan Memorial Hospital), retail locations, tourism businesses, and educational institutions." },
+    { q: "How quickly can I get vending machine leads for Sheridan?", a: "Our Sheridan vending leads are delivered within 3-5 business days with detailed information about each location and north central Wyoming market insights." },
+    { q: "What makes Sheridan a good market for vending machines?", a: "Sheridan's combination of energy sector employment, historic downtown, and proximity to Big Horn Mountains creates diverse vending opportunities. The city's role as a regional hub ensures consistent business activity." },
+    { q: "Do you provide ongoing support for Sheridan locations?", a: "Yes, we provide comprehensive support including location research, energy and tourism sector insights, contact information, and placement strategies tailored to Sheridan's economy." },
+    { q: "What industries in Sheridan are best for vending machines?", a: "Energy facilities, healthcare centers, retail locations, and tourism businesses show strong potential due to shift workers, visitor traffic, and local employment." },
+    { q: "How do you verify the quality of Sheridan vending locations?", a: "We conduct thorough verification including business validation, seasonal traffic analysis, employee assessment, and facility research for each Sheridan location." },
+    { q: "Can I get customized vending leads for specific areas of Sheridan?", a: "Absolutely! We can target the historic Main Street downtown, Coffeen Avenue corridor, or areas near I-90 based on your preferences." },
+    { q: "What's the typical ROI for vending machines in Sheridan?", a: "Machines in Sheridan typically see ROI within 15-19 months, with energy sector and healthcare locations often achieving faster returns due to shift operations and consistent demand." }
   ]
 
   return (
@@ -204,7 +204,7 @@ export default function SheridanWyomingVendingLeadsPage() {
                     onClick={() => {
                       const pricingSection = document.getElementById('pricing')
                       if (pricingSection) {
-                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                        pricingSection.scrollIntoView({ behavior: 'smooth" })
                       }
                     }}
                     className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
@@ -509,10 +509,10 @@ export default function SheridanWyomingVendingLeadsPage() {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
-              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/wyoming' },
-              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-wyoming' }
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/" },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads" },
+              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/wyoming" },
+              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-wyoming" }
             ]
           })
         }}

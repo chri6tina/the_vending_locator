@@ -84,14 +84,14 @@ export default function TrentonNewJerseyVendingLeadsPage() {
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in Trenton?', a: 'Trenton offers diverse vending opportunities in state government buildings, healthcare facilities (Capital Health), educational institutions (Thomas Edison State University), office complexes, and retail locations.' },
-    { q: 'How quickly can I get vending machine leads for Trenton?', a: 'Our Trenton vending leads are delivered within 3-5 business days with comprehensive details about each location and central New Jersey capital city insights.' },
-    { q: 'What makes Trenton a good market for vending machines?', a: 'Trenton's status as New Jersey's capital city creates stable government employment and consistent business activity. The city's healthcare and education sectors provide additional vending opportunities year-round.' },
-    { q: 'Do you provide ongoing support for Trenton locations?', a: 'Yes, we provide comprehensive support including location research, government and healthcare sector insights, contact information, and placement strategies tailored to Trenton's capital city market.' },
-    { q: 'What industries in Trenton are best for vending machines?', a: 'Government offices, healthcare facilities, educational institutions, and professional services show excellent potential due to large employee bases and consistent weekday traffic.' },
-    { q: 'How do you verify the quality of Trenton vending locations?', a: 'We conduct thorough verification including business validation, employee count assessment, facility size analysis, and capital city market research for each Trenton location.' },
-    { q: 'Can I get customized vending leads for specific areas of Trenton?', a: 'Absolutely! We can target the State Street government district, downtown Broad Street corridor, or Hamilton Avenue area based on your preferences.' },
-    { q: 'What's the typical ROI for vending machines in Trenton?', a: 'Machines in Trenton typically see ROI within 11-15 months, with government and healthcare locations often achieving faster returns due to stable employment and premium pricing acceptance.' }
+    { q: "What types of vending machine locations are available in Trenton?", a: "Trenton offers diverse vending opportunities in state government buildings, healthcare facilities (Capital Health), educational institutions (Thomas Edison State University), office complexes, and retail locations." },
+    { q: "How quickly can I get vending machine leads for Trenton?", a: "Our Trenton vending leads are delivered within 3-5 business days with comprehensive details about each location and central New Jersey capital city insights." },
+    { q: "What makes Trenton a good market for vending machines?", a: "Trenton's status as New Jersey's capital city creates stable government employment and consistent business activity. The city's healthcare and education sectors provide additional vending opportunities year-round." },
+    { q: "Do you provide ongoing support for Trenton locations?", a: "Yes, we provide comprehensive support including location research, government and healthcare sector insights, contact information, and placement strategies tailored to Trenton's capital city market." },
+    { q: "What industries in Trenton are best for vending machines?", a: "Government offices, healthcare facilities, educational institutions, and professional services show excellent potential due to large employee bases and consistent weekday traffic." },
+    { q: "How do you verify the quality of Trenton vending locations?", a: "We conduct thorough verification including business validation, employee count assessment, facility size analysis, and capital city market research for each Trenton location." },
+    { q: "Can I get customized vending leads for specific areas of Trenton?", a: "Absolutely! We can target the State Street government district, downtown Broad Street corridor, or Hamilton Avenue area based on your preferences." },
+    { q: "What's the typical ROI for vending machines in Trenton?", a: "Machines in Trenton typically see ROI within 11-15 months, with government and healthcare locations often achieving faster returns due to stable employment and premium pricing acceptance." }
   ]
 
   return (
@@ -204,7 +204,7 @@ export default function TrentonNewJerseyVendingLeadsPage() {
                     onClick={() => {
                       const pricingSection = document.getElementById('pricing')
                       if (pricingSection) {
-                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                        pricingSection.scrollIntoView({ behavior: 'smooth" })
                       }
                     }}
                     className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
@@ -509,10 +509,10 @@ export default function TrentonNewJerseyVendingLeadsPage() {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
-              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/new-jersey' },
-              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-new-jersey' }
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/" },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads" },
+              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/new-jersey" },
+              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-new-jersey" }
             ]
           })
         }}

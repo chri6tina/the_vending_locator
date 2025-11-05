@@ -84,14 +84,14 @@ export default function TupeloMississippiVendingLeadsPage() {
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in Tupelo?', a: 'Tupelo provides vending opportunities in furniture manufacturing facilities, healthcare centers (North Mississippi Medical Center), retail locations, automotive plants, and office buildings.' },
-    { q: 'How quickly can I get vending machine leads for Tupelo?', a: 'Our Tupelo vending leads are delivered within 3-5 business days with detailed information about each verified location and regional market insights.' },
-    { q: 'What makes Tupelo a good market for vending machines?', a: 'Tupelo's strong manufacturing base, particularly in furniture production, combined with a major healthcare system creates diverse vending opportunities. The city's economic stability ensures consistent business activity.' },
-    { q: 'Do you provide ongoing support for Tupelo locations?', a: 'Yes, we provide comprehensive support including location research, industry-specific insights, contact information, and placement strategies tailored to Tupelo's manufacturing economy.' },
-    { q: 'What industries in Tupelo are best for vending machines?', a: 'Manufacturing (furniture and automotive), healthcare facilities, retail centers, and distribution warehouses show strong potential due to large shift-worker populations and steady traffic.' },
-    { q: 'How do you verify the quality of Tupelo vending locations?', a: 'We conduct thorough verification including business validation, employee assessment, shift schedule analysis, and facility research for each Tupelo location.' },
-    { q: 'Can I get customized vending leads for specific areas of Tupelo?', a: 'Absolutely! We can focus on the Main Street downtown area, McCullough Boulevard retail district, or industrial parks based on your target market.' },
-    { q: 'What's the typical ROI for vending machines in Tupelo?', a: 'Machines in Tupelo typically see ROI within 12-16 months, with manufacturing facilities offering consistent returns due to multiple shifts and large employee bases.' }
+    { q: "What types of vending machine locations are available in Tupelo?", a: "Tupelo provides vending opportunities in furniture manufacturing facilities, healthcare centers (North Mississippi Medical Center), retail locations, automotive plants, and office buildings." },
+    { q: "How quickly can I get vending machine leads for Tupelo?", a: "Our Tupelo vending leads are delivered within 3-5 business days with detailed information about each verified location and regional market insights." },
+    { q: "What makes Tupelo a good market for vending machines?", a: "Tupelo's strong manufacturing base, particularly in furniture production, combined with a major healthcare system creates diverse vending opportunities. The city's economic stability ensures consistent business activity." },
+    { q: "Do you provide ongoing support for Tupelo locations?", a: "Yes, we provide comprehensive support including location research, industry-specific insights, contact information, and placement strategies tailored to Tupelo's manufacturing economy." },
+    { q: "What industries in Tupelo are best for vending machines?", a: "Manufacturing (furniture and automotive), healthcare facilities, retail centers, and distribution warehouses show strong potential due to large shift-worker populations and steady traffic." },
+    { q: "How do you verify the quality of Tupelo vending locations?", a: "We conduct thorough verification including business validation, employee assessment, shift schedule analysis, and facility research for each Tupelo location." },
+    { q: "Can I get customized vending leads for specific areas of Tupelo?", a: "Absolutely! We can focus on the Main Street downtown area, McCullough Boulevard retail district, or industrial parks based on your target market." },
+    { q: "What's the typical ROI for vending machines in Tupelo?", a: "Machines in Tupelo typically see ROI within 12-16 months, with manufacturing facilities offering consistent returns due to multiple shifts and large employee bases." }
   ]
 
   return (
@@ -204,7 +204,7 @@ export default function TupeloMississippiVendingLeadsPage() {
                     onClick={() => {
                       const pricingSection = document.getElementById('pricing')
                       if (pricingSection) {
-                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                        pricingSection.scrollIntoView({ behavior: 'smooth" })
                       }
                     }}
                     className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
@@ -509,10 +509,10 @@ export default function TupeloMississippiVendingLeadsPage() {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
-              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/mississippi' },
-              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-mississippi' }
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/" },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads" },
+              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/mississippi" },
+              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-mississippi" }
             ]
           })
         }}

@@ -84,14 +84,14 @@ export default function CaldwellIdahoVendingLeadsPage() {
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in Caldwell?', a: 'Caldwell offers vending opportunities in food processing facilities, agricultural businesses, retail centers, healthcare facilities, educational institutions, and manufacturing plants.' },
-    { q: 'How quickly can I get vending machine leads for Caldwell?', a: 'Our Caldwell vending leads are delivered within 3-5 business days with comprehensive details about each location and Treasure Valley market insights.' },
-    { q: 'What makes Caldwell a good market for vending machines?', a: 'Caldwell's strong agricultural and food processing sectors combined with rapid suburban growth create excellent vending opportunities. The city's economic diversity ensures consistent demand across multiple industries.' },
-    { q: 'Do you provide ongoing support for Caldwell locations?', a: 'Yes, we offer complete support including location verification, agricultural sector insights, contact information, and placement strategies specific to Caldwell's growing economy.' },
-    { q: 'What industries in Caldwell are best for vending machines?', a: 'Food processing, agricultural businesses, manufacturing facilities, and healthcare centers show strong potential due to large shift-worker populations and consistent operations.' },
-    { q: 'How do you verify the quality of Caldwell vending locations?', a: 'We verify each location through business research, employee count validation, shift schedule analysis, and facility assessment to ensure quality industrial placements.' },
-    { q: 'Can I get customized vending leads for specific areas of Caldwell?', a: 'Absolutely! We can target the Cleveland Boulevard commercial corridor, downtown area, or industrial zones based on your preferences.' },
-    { q: 'What's the typical ROI for vending machines in Caldwell?', a: 'Vending machines in Caldwell typically achieve ROI within 12-16 months, with food processing facilities often seeing faster returns due to multiple shifts and large workforces.' }
+    { q: "What types of vending machine locations are available in Caldwell?", a: "Caldwell offers vending opportunities in food processing facilities, agricultural businesses, retail centers, healthcare facilities, educational institutions, and manufacturing plants." },
+    { q: "How quickly can I get vending machine leads for Caldwell?", a: "Our Caldwell vending leads are delivered within 3-5 business days with comprehensive details about each location and Treasure Valley market insights." },
+    { q: "What makes Caldwell a good market for vending machines?", a: "Caldwell's strong agricultural and food processing sectors combined with rapid suburban growth create excellent vending opportunities. The city's economic diversity ensures consistent demand across multiple industries." },
+    { q: "Do you provide ongoing support for Caldwell locations?", a: "Yes, we offer complete support including location verification, agricultural sector insights, contact information, and placement strategies specific to Caldwell's growing economy." },
+    { q: "What industries in Caldwell are best for vending machines?", a: "Food processing, agricultural businesses, manufacturing facilities, and healthcare centers show strong potential due to large shift-worker populations and consistent operations." },
+    { q: "How do you verify the quality of Caldwell vending locations?", a: "We verify each location through business research, employee count validation, shift schedule analysis, and facility assessment to ensure quality industrial placements." },
+    { q: "Can I get customized vending leads for specific areas of Caldwell?", a: "Absolutely! We can target the Cleveland Boulevard commercial corridor, downtown area, or industrial zones based on your preferences." },
+    { q: "What's the typical ROI for vending machines in Caldwell?", a: "Vending machines in Caldwell typically achieve ROI within 12-16 months, with food processing facilities often seeing faster returns due to multiple shifts and large workforces." }
   ]
 
   return (
@@ -204,7 +204,7 @@ export default function CaldwellIdahoVendingLeadsPage() {
                     onClick={() => {
                       const pricingSection = document.getElementById('pricing')
                       if (pricingSection) {
-                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                        pricingSection.scrollIntoView({ behavior: 'smooth" })
                       }
                     }}
                     className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
@@ -509,10 +509,10 @@ export default function CaldwellIdahoVendingLeadsPage() {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
-              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/idaho' },
-              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-idaho' }
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/" },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads" },
+              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/idaho" },
+              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-idaho" }
             ]
           })
         }}

@@ -84,14 +84,14 @@ export default function KalispellMontanaVendingLeadsPage() {
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in Kalispell?', a: 'Kalispell offers vending opportunities in hotels and resorts, healthcare facilities (Logan Health), retail centers, tourism businesses, restaurants, and outdoor recreation companies serving the Flathead Valley.' },
-    { q: 'How quickly can I get vending machine leads for Kalispell?', a: 'Our Kalispell vending leads are delivered within 3-5 business days with detailed information about each location and northwest Montana tourism market insights.' },
-    { q: 'What makes Kalispell a good market for vending machines?', a: 'Kalispell's role as the gateway to Glacier National Park creates strong seasonal tourism demand. The city's growing healthcare sector and year-round retail ensure consistent vending opportunities beyond summer months.' },
-    { q: 'Do you provide ongoing support for Kalispell locations?', a: 'Yes, we offer complete support including location verification, tourism and hospitality sector insights, contact information, and placement strategies specific to Kalispell's seasonal market.' },
-    { q: 'What industries in Kalispell are best for vending machines?', a: 'Hospitality (hotels and resorts), healthcare facilities, retail centers, and outdoor recreation businesses show excellent potential due to seasonal visitor spikes and local employee populations.' },
-    { q: 'How do you verify the quality of Kalispell vending locations?', a: 'We verify each location through business research, seasonal traffic analysis, visitor volume assessment, and facility evaluation to ensure quality tourism and year-round placements.' },
-    { q: 'Can I get customized vending leads for specific areas of Kalispell?', a: 'Absolutely! We can focus on the Highway 93 corridor, downtown Main Street district, or areas near Glacier Park International Airport based on your target market.' },
-    { q: 'What's the typical ROI for vending machines in Kalispell?', a: 'Vending machines in Kalispell typically achieve ROI within 14-18 months, with tourism locations seeing strongest returns during summer months and healthcare facilities providing year-round consistency.' }
+    { q: "What types of vending machine locations are available in Kalispell?", a: "Kalispell offers vending opportunities in hotels and resorts, healthcare facilities (Logan Health), retail centers, tourism businesses, restaurants, and outdoor recreation companies serving the Flathead Valley." },
+    { q: "How quickly can I get vending machine leads for Kalispell?", a: "Our Kalispell vending leads are delivered within 3-5 business days with detailed information about each location and northwest Montana tourism market insights." },
+    { q: "What makes Kalispell a good market for vending machines?", a: "Kalispell's role as the gateway to Glacier National Park creates strong seasonal tourism demand. The city's growing healthcare sector and year-round retail ensure consistent vending opportunities beyond summer months." },
+    { q: "Do you provide ongoing support for Kalispell locations?", a: "Yes, we offer complete support including location verification, tourism and hospitality sector insights, contact information, and placement strategies specific to Kalispell's seasonal market." },
+    { q: "What industries in Kalispell are best for vending machines?", a: "Hospitality (hotels and resorts), healthcare facilities, retail centers, and outdoor recreation businesses show excellent potential due to seasonal visitor spikes and local employee populations." },
+    { q: "How do you verify the quality of Kalispell vending locations?", a: "We verify each location through business research, seasonal traffic analysis, visitor volume assessment, and facility evaluation to ensure quality tourism and year-round placements." },
+    { q: "Can I get customized vending leads for specific areas of Kalispell?", a: "Absolutely! We can focus on the Highway 93 corridor, downtown Main Street district, or areas near Glacier Park International Airport based on your target market." },
+    { q: "What's the typical ROI for vending machines in Kalispell?", a: "Vending machines in Kalispell typically achieve ROI within 14-18 months, with tourism locations seeing strongest returns during summer months and healthcare facilities providing year-round consistency." }
   ]
 
   return (
@@ -204,7 +204,7 @@ export default function KalispellMontanaVendingLeadsPage() {
                     onClick={() => {
                       const pricingSection = document.getElementById('pricing')
                       if (pricingSection) {
-                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                        pricingSection.scrollIntoView({ behavior: 'smooth" })
                       }
                     }}
                     className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
@@ -509,10 +509,10 @@ export default function KalispellMontanaVendingLeadsPage() {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
-              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/montana' },
-              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-montana' }
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/" },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads" },
+              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/montana" },
+              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-montana" }
             ]
           })
         }}

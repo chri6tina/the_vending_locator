@@ -84,14 +84,14 @@ export default function LawrenceKansasVendingLeadsPage() {
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in Lawrence?', a: 'Lawrence offers diverse vending opportunities at the University of Kansas campus, tech startups, healthcare facilities, retail locations, office buildings, and research facilities.' },
-    { q: 'How quickly can I get vending machine leads for Lawrence?', a: 'Our Lawrence vending leads are delivered within 3-5 business days with comprehensive details about each location and university market insights.' },
-    { q: 'What makes Lawrence a good market for vending machines?', a: 'Lawrence combines a large university population with a growing tech sector, creating year-round vending demand. The city's educated workforce and vibrant economy ensure consistent business activity.' },
-    { q: 'Do you provide ongoing support for Lawrence locations?', a: 'Yes, we offer complete support including location verification, university and tech sector insights, contact information, and placement strategies specific to Lawrence's diverse market.' },
-    { q: 'What industries in Lawrence are best for vending machines?', a: 'Higher education (KU), technology startups, healthcare facilities, and research institutions show excellent potential due to large student and employee populations.' },
-    { q: 'How do you verify the quality of Lawrence vending locations?', a: 'We verify each location through business research, enrollment data analysis, employee count validation, and facility assessment to ensure quality university and corporate placements.' },
-    { q: 'Can I get customized vending leads for specific areas of Lawrence?', a: 'Absolutely! We can target the KU campus area, downtown Massachusetts Street district, or West Lawrence tech corridor based on your preferences.' },
-    { q: 'What's the typical ROI for vending machines in Lawrence?', a: 'Vending machines in Lawrence typically achieve ROI within 11-15 months, with university and tech locations often seeing faster returns due to consistent traffic and younger demographics.' }
+    { q: "What types of vending machine locations are available in Lawrence?", a: "Lawrence offers diverse vending opportunities at the University of Kansas campus, tech startups, healthcare facilities, retail locations, office buildings, and research facilities." },
+    { q: "How quickly can I get vending machine leads for Lawrence?", a: "Our Lawrence vending leads are delivered within 3-5 business days with comprehensive details about each location and university market insights." },
+    { q: "What makes Lawrence a good market for vending machines?", a: "Lawrence combines a large university population with a growing tech sector, creating year-round vending demand. The city's educated workforce and vibrant economy ensure consistent business activity." },
+    { q: "Do you provide ongoing support for Lawrence locations?", a: "Yes, we offer complete support including location verification, university and tech sector insights, contact information, and placement strategies specific to Lawrence's diverse market." },
+    { q: "What industries in Lawrence are best for vending machines?", a: "Higher education (KU), technology startups, healthcare facilities, and research institutions show excellent potential due to large student and employee populations." },
+    { q: "How do you verify the quality of Lawrence vending locations?", a: "We verify each location through business research, enrollment data analysis, employee count validation, and facility assessment to ensure quality university and corporate placements." },
+    { q: "Can I get customized vending leads for specific areas of Lawrence?", a: "Absolutely! We can target the KU campus area, downtown Massachusetts Street district, or West Lawrence tech corridor based on your preferences." },
+    { q: "What's the typical ROI for vending machines in Lawrence?", a: "Vending machines in Lawrence typically achieve ROI within 11-15 months, with university and tech locations often seeing faster returns due to consistent traffic and younger demographics." }
   ]
 
   return (
@@ -204,7 +204,7 @@ export default function LawrenceKansasVendingLeadsPage() {
                     onClick={() => {
                       const pricingSection = document.getElementById('pricing')
                       if (pricingSection) {
-                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                        pricingSection.scrollIntoView({ behavior: 'smooth" })
                       }
                     }}
                     className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
@@ -509,10 +509,10 @@ export default function LawrenceKansasVendingLeadsPage() {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
-              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/kansas' },
-              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-kansas' }
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/" },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads" },
+              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/kansas" },
+              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-kansas" }
             ]
           })
         }}

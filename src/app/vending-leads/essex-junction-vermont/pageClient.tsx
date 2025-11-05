@@ -84,14 +84,14 @@ export default function EssexJunctionVermontVendingLeadsPage() {
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in Essex Junction?', a: 'Essex Junction offers vending opportunities in retail centers, tech companies, educational facilities, and office complexes. The town's growing business sector provides diverse placement options.' },
-    { q: 'How quickly can I get vending machine leads for Essex Junction?', a: 'Our Essex Junction vending leads are delivered within 3-5 business days with comprehensive details about each location, contact information, and placement recommendations.' },
-    { q: 'What makes Essex Junction a good market for vending machines?', a: 'Essex Junction's growing economy and proximity to Burlington create excellent vending opportunities. The town's mix of tech companies, retail centers, and educational facilities ensures steady customer traffic.' },
-    { q: 'Do you provide ongoing support for Essex Junction locations?', a: 'Yes, we offer full support including location research, contact information, placement strategies, and ongoing consultation to help your vending business succeed in Essex Junction.' },
-    { q: 'What industries in Essex Junction are best for vending machines?', a: 'Technology companies, retail centers, and educational facilities in Essex Junction show strong potential due to consistent foot traffic and employee populations.' },
-    { q: 'How do you verify the quality of Essex Junction vending locations?', a: 'We verify each location through business research, foot traffic analysis, employee count validation, and industry assessment to ensure high-quality opportunities.' },
-    { q: 'Can I get customized vending leads for specific areas of Essex Junction?', a: 'Absolutely! We can target specific business districts like the Five Corners area or retail zones based on your preferences.' },
-    { q: 'What's the typical ROI for vending machines in Essex Junction?', a: 'Vending machines in Essex Junction typically achieve ROI within 12-18 months due to the town's stable economy and consistent business growth.' }
+    { q: "What types of vending machine locations are available in Essex Junction?", a: "Essex Junction offers vending opportunities in retail centers, tech companies, educational facilities, and office complexes. The town's growing business sector provides diverse placement options." },
+    { q: "How quickly can I get vending machine leads for Essex Junction?", a: "Our Essex Junction vending leads are delivered within 3-5 business days with comprehensive details about each location, contact information, and placement recommendations." },
+    { q: "What makes Essex Junction a good market for vending machines?", a: "Essex Junction's growing economy and proximity to Burlington create excellent vending opportunities. The town's mix of tech companies, retail centers, and educational facilities ensures steady customer traffic." },
+    { q: "Do you provide ongoing support for Essex Junction locations?", a: "Yes, we offer full support including location research, contact information, placement strategies, and ongoing consultation to help your vending business succeed in Essex Junction." },
+    { q: "What industries in Essex Junction are best for vending machines?", a: "Technology companies, retail centers, and educational facilities in Essex Junction show strong potential due to consistent foot traffic and employee populations." },
+    { q: "How do you verify the quality of Essex Junction vending locations?", a: "We verify each location through business research, foot traffic analysis, employee count validation, and industry assessment to ensure high-quality opportunities." },
+    { q: "Can I get customized vending leads for specific areas of Essex Junction?", a: "Absolutely! We can target specific business districts like the Five Corners area or retail zones based on your preferences." },
+    { q: "What's the typical ROI for vending machines in Essex Junction?", a: "Vending machines in Essex Junction typically achieve ROI within 12-18 months due to the town's stable economy and consistent business growth." }
   ]
 
   return (
@@ -204,7 +204,7 @@ export default function EssexJunctionVermontVendingLeadsPage() {
                     onClick={() => {
                       const pricingSection = document.getElementById('pricing')
                       if (pricingSection) {
-                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                        pricingSection.scrollIntoView({ behavior: 'smooth" })
                       }
                     }}
                     className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
@@ -509,10 +509,10 @@ export default function EssexJunctionVermontVendingLeadsPage() {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
-              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/vermont' },
-              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-vermont' }
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/" },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads" },
+              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/vermont" },
+              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-vermont" }
             ]
           })
         }}

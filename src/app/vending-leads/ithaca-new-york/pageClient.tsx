@@ -84,14 +84,14 @@ export default function IthacaNewYorkVendingLeadsPage() {
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in Ithaca?', a: 'Ithaca offers vending opportunities at Cornell University and Ithaca College campuses, healthcare facilities (Cayuga Medical Center), downtown businesses, retail locations, and tech startups in the Ithaca area.' },
-    { q: 'How quickly can I get vending machine leads for Ithaca?', a: 'Our Ithaca vending leads are delivered within 3-5 business days with detailed information about each location and Finger Lakes region university market insights.' },
-    { q: 'What makes Ithaca a good market for vending machines?', a: 'Ithaca's large university populations from Cornell and Ithaca College create consistent year-round demand. The city's growing tech sector and educated workforce ensure strong vending opportunities beyond the academic calendar.' },
-    { q: 'Do you provide ongoing support for Ithaca locations?', a: 'Yes, we offer complete support including location verification, university and tech sector insights, contact information, and placement strategies specific to Ithaca's academic market.' },
-    { q: 'What industries in Ithaca are best for vending machines?', a: 'Higher education (Cornell and IC), healthcare facilities, tech startups, and downtown retail show excellent potential due to large student populations and educated workforce.' },
-    { q: 'How do you verify the quality of Ithaca vending locations?', a: 'We verify each location through business research, enrollment data analysis, foot traffic assessment, and facility evaluation to ensure quality university town placements.' },
-    { q: 'Can I get customized vending leads for specific areas of Ithaca?', a: 'Absolutely! We can focus on the Cornell campus area, Ithaca Commons downtown, or Collegetown district based on your target market preferences.' },
-    { q: 'What's the typical ROI for vending machines in Ithaca?', a: 'Vending machines in Ithaca typically achieve ROI within 12-15 months, with university locations seeing strongest returns during academic semesters when student traffic is highest.' }
+    { q: "What types of vending machine locations are available in Ithaca?", a: "Ithaca offers vending opportunities at Cornell University and Ithaca College campuses, healthcare facilities (Cayuga Medical Center), downtown businesses, retail locations, and tech startups in the Ithaca area." },
+    { q: "How quickly can I get vending machine leads for Ithaca?", a: "Our Ithaca vending leads are delivered within 3-5 business days with detailed information about each location and Finger Lakes region university market insights." },
+    { q: "What makes Ithaca a good market for vending machines?", a: "Ithaca's large university populations from Cornell and Ithaca College create consistent year-round demand. The city's growing tech sector and educated workforce ensure strong vending opportunities beyond the academic calendar." },
+    { q: "Do you provide ongoing support for Ithaca locations?", a: "Yes, we offer complete support including location verification, university and tech sector insights, contact information, and placement strategies specific to Ithaca's academic market." },
+    { q: "What industries in Ithaca are best for vending machines?", a: "Higher education (Cornell and IC), healthcare facilities, tech startups, and downtown retail show excellent potential due to large student populations and educated workforce." },
+    { q: "How do you verify the quality of Ithaca vending locations?", a: "We verify each location through business research, enrollment data analysis, foot traffic assessment, and facility evaluation to ensure quality university town placements." },
+    { q: "Can I get customized vending leads for specific areas of Ithaca?", a: "Absolutely! We can focus on the Cornell campus area, Ithaca Commons downtown, or Collegetown district based on your target market preferences." },
+    { q: "What's the typical ROI for vending machines in Ithaca?", a: "Vending machines in Ithaca typically achieve ROI within 12-15 months, with university locations seeing strongest returns during academic semesters when student traffic is highest." }
   ]
 
   return (
@@ -204,7 +204,7 @@ export default function IthacaNewYorkVendingLeadsPage() {
                     onClick={() => {
                       const pricingSection = document.getElementById('pricing')
                       if (pricingSection) {
-                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                        pricingSection.scrollIntoView({ behavior: 'smooth" })
                       }
                     }}
                     className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
@@ -509,10 +509,10 @@ export default function IthacaNewYorkVendingLeadsPage() {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
-              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/new-york' },
-              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-new-york' }
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/" },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads" },
+              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/new-york" },
+              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-new-york" }
             ]
           })
         }}

@@ -84,14 +84,14 @@ export default function ValdostaGeorgiaVendingLeadsPage() {
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in Valdosta?', a: 'Valdosta offers vending opportunities at Valdosta State University, healthcare facilities (South Georgia Medical Center), retail centers, manufacturing plants, and office buildings serving south Georgia.' },
-    { q: 'How quickly can I get vending machine leads for Valdosta?', a: 'Our Valdosta vending leads are delivered within 3-5 business days with comprehensive research on each location and south Georgia market insights.' },
-    { q: 'What makes Valdosta a good market for vending machines?', a: 'Valdosta's combination of university students, regional healthcare, and manufacturing creates diverse vending demand. The city's position as a south Georgia hub ensures consistent year-round business activity.' },
-    { q: 'Do you provide ongoing support for Valdosta locations?', a: 'Yes, we provide comprehensive support including location research, university and manufacturing sector insights, contact information, and placement strategies tailored to Valdosta's economy.' },
-    { q: 'What industries in Valdosta are best for vending machines?', a: 'Higher education (VSU), healthcare facilities, manufacturing plants, and retail centers show excellent potential due to large student and employee populations.' },
-    { q: 'How do you verify the quality of Valdosta vending locations?', a: 'We conduct thorough verification including business validation, enrollment data analysis, employee assessment, and facility research for each Valdosta location.' },
-    { q: 'Can I get customized vending leads for specific areas of Valdosta?', a: 'Absolutely! We can target the VSU campus district, Inner Perimeter retail area, or industrial parks based on your preferences.' },
-    { q: 'What's the typical ROI for vending machines in Valdosta?', a: 'Machines in Valdosta typically see ROI within 12-16 months, with university and healthcare locations often achieving faster returns due to consistent high-volume traffic.' }
+    { q: "What types of vending machine locations are available in Valdosta?", a: "Valdosta offers vending opportunities at Valdosta State University, healthcare facilities (South Georgia Medical Center), retail centers, manufacturing plants, and office buildings serving south Georgia." },
+    { q: "How quickly can I get vending machine leads for Valdosta?", a: "Our Valdosta vending leads are delivered within 3-5 business days with comprehensive research on each location and south Georgia market insights." },
+    { q: "What makes Valdosta a good market for vending machines?", a: "Valdosta's combination of university students, regional healthcare, and manufacturing creates diverse vending demand. The city's position as a south Georgia hub ensures consistent year-round business activity." },
+    { q: "Do you provide ongoing support for Valdosta locations?", a: "Yes, we provide comprehensive support including location research, university and manufacturing sector insights, contact information, and placement strategies tailored to Valdosta's economy." },
+    { q: "What industries in Valdosta are best for vending machines?", a: "Higher education (VSU), healthcare facilities, manufacturing plants, and retail centers show excellent potential due to large student and employee populations." },
+    { q: "How do you verify the quality of Valdosta vending locations?", a: "We conduct thorough verification including business validation, enrollment data analysis, employee assessment, and facility research for each Valdosta location." },
+    { q: "Can I get customized vending leads for specific areas of Valdosta?", a: "Absolutely! We can target the VSU campus district, Inner Perimeter retail area, or industrial parks based on your preferences." },
+    { q: "What's the typical ROI for vending machines in Valdosta?", a: "Machines in Valdosta typically see ROI within 12-16 months, with university and healthcare locations often achieving faster returns due to consistent high-volume traffic." }
   ]
 
   return (
@@ -204,7 +204,7 @@ export default function ValdostaGeorgiaVendingLeadsPage() {
                     onClick={() => {
                       const pricingSection = document.getElementById('pricing')
                       if (pricingSection) {
-                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                        pricingSection.scrollIntoView({ behavior: 'smooth" })
                       }
                     }}
                     className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
@@ -509,10 +509,10 @@ export default function ValdostaGeorgiaVendingLeadsPage() {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
-              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/georgia' },
-              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-georgia' }
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/" },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads" },
+              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/georgia" },
+              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-georgia" }
             ]
           })
         }}

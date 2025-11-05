@@ -84,14 +84,14 @@ export default function GrandJunctionColoradoVendingLeadsPage() {
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in Grand Junction?', a: 'Grand Junction offers vending opportunities in energy sector facilities (oil and gas), healthcare centers, tourism businesses, retail locations, wine industry facilities, and outdoor recreation companies.' },
-    { q: 'How quickly can I get vending machine leads for Grand Junction?', a: 'Our Grand Junction vending leads are delivered within 3-5 business days with comprehensive details about each location and Western Slope market insights.' },
-    { q: 'What makes Grand Junction a good market for vending machines?', a: 'Grand Junction's diverse economy combining energy, tourism, and wine production creates unique vending opportunities. The city's role as a regional hub and gateway to national parks ensures consistent business activity.' },
-    { q: 'Do you provide ongoing support for Grand Junction locations?', a: 'Yes, we offer complete support including location verification, energy and tourism sector insights, contact information, and placement strategies specific to Grand Junction's economy.' },
-    { q: 'What industries in Grand Junction are best for vending machines?', a: 'Energy facilities, healthcare centers, tourism businesses, wine production facilities, and retail locations show excellent potential due to seasonal and year-round traffic patterns.' },
-    { q: 'How do you verify the quality of Grand Junction vending locations?', a: 'We verify each location through business research, seasonal traffic analysis, employee validation, and facility assessment to ensure quality placements.' },
-    { q: 'Can I get customized vending leads for specific areas of Grand Junction?', a: 'Absolutely! We can target the downtown business district, North Avenue commercial corridor, or Clifton manufacturing area based on your preferences.' },
-    { q: 'What's the typical ROI for vending machines in Grand Junction?', a: 'Vending machines in Grand Junction typically achieve ROI within 12-16 months, with energy and tourism locations often seeing stronger returns during peak seasons and from shift workers.' }
+    { q: "What types of vending machine locations are available in Grand Junction?", a: "Grand Junction offers vending opportunities in energy sector facilities (oil and gas), healthcare centers, tourism businesses, retail locations, wine industry facilities, and outdoor recreation companies." },
+    { q: "How quickly can I get vending machine leads for Grand Junction?", a: "Our Grand Junction vending leads are delivered within 3-5 business days with comprehensive details about each location and Western Slope market insights." },
+    { q: "What makes Grand Junction a good market for vending machines?", a: "Grand Junction's diverse economy combining energy, tourism, and wine production creates unique vending opportunities. The city's role as a regional hub and gateway to national parks ensures consistent business activity." },
+    { q: "Do you provide ongoing support for Grand Junction locations?", a: "Yes, we offer complete support including location verification, energy and tourism sector insights, contact information, and placement strategies specific to Grand Junction's economy." },
+    { q: "What industries in Grand Junction are best for vending machines?", a: "Energy facilities, healthcare centers, tourism businesses, wine production facilities, and retail locations show excellent potential due to seasonal and year-round traffic patterns." },
+    { q: "How do you verify the quality of Grand Junction vending locations?", a: "We verify each location through business research, seasonal traffic analysis, employee validation, and facility assessment to ensure quality placements." },
+    { q: "Can I get customized vending leads for specific areas of Grand Junction?", a: "Absolutely! We can target the downtown business district, North Avenue commercial corridor, or Clifton manufacturing area based on your preferences." },
+    { q: "What's the typical ROI for vending machines in Grand Junction?", a: "Vending machines in Grand Junction typically achieve ROI within 12-16 months, with energy and tourism locations often seeing stronger returns during peak seasons and from shift workers." }
   ]
 
   return (
@@ -204,7 +204,7 @@ export default function GrandJunctionColoradoVendingLeadsPage() {
                     onClick={() => {
                       const pricingSection = document.getElementById('pricing')
                       if (pricingSection) {
-                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                        pricingSection.scrollIntoView({ behavior: 'smooth" })
                       }
                     }}
                     className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
@@ -509,10 +509,10 @@ export default function GrandJunctionColoradoVendingLeadsPage() {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
-              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/colorado' },
-              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-colorado' }
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/" },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads" },
+              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/colorado" },
+              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-colorado" }
             ]
           })
         }}

@@ -84,14 +84,14 @@ export default function QuincyIllinoisVendingLeadsPage() {
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in Quincy?', a: 'Quincy offers vending opportunities in manufacturing facilities, healthcare centers (Blessing Hospital), educational institutions (Quincy University), retail locations, and river-related businesses.' },
-    { q: 'How quickly can I get vending machine leads for Quincy?', a: 'Our Quincy vending leads are delivered within 3-5 business days with detailed information about each verified location and western Illinois market insights.' },
-    { q: 'What makes Quincy a good market for vending machines?', a: 'Quincy's diverse economy combining manufacturing, healthcare, and education creates stable vending opportunities. The city's Mississippi River location and historic downtown ensure consistent business activity.' },
-    { q: 'Do you provide ongoing support for Quincy locations?', a: 'Yes, we offer complete support including location verification, manufacturing and healthcare sector insights, contact information, and placement strategies specific to Quincy's market.' },
-    { q: 'What industries in Quincy are best for vending machines?', a: 'Manufacturing facilities, healthcare centers, educational institutions, and retail locations show strong potential due to diverse employee and student populations.' },
-    { q: 'How do you verify the quality of Quincy vending locations?', a: 'We verify each location through business research, employee count validation, facility assessment, and regional market analysis to ensure quality placements.' },
-    { q: 'Can I get customized vending leads for specific areas of Quincy?', a: 'Absolutely! We can focus on the downtown square district, Broadway corridor, or industrial zones based on your target market preferences.' },
-    { q: 'What's the typical ROI for vending machines in Quincy?', a: 'Vending machines in Quincy typically achieve ROI within 13-17 months, with manufacturing and healthcare facilities often seeing faster returns due to shift workers and consistent operations.' }
+    { q: "What types of vending machine locations are available in Quincy?", a: "Quincy offers vending opportunities in manufacturing facilities, healthcare centers (Blessing Hospital), educational institutions (Quincy University), retail locations, and river-related businesses." },
+    { q: "How quickly can I get vending machine leads for Quincy?", a: "Our Quincy vending leads are delivered within 3-5 business days with detailed information about each verified location and western Illinois market insights." },
+    { q: "What makes Quincy a good market for vending machines?", a: "Quincy's diverse economy combining manufacturing, healthcare, and education creates stable vending opportunities. The city's Mississippi River location and historic downtown ensure consistent business activity." },
+    { q: "Do you provide ongoing support for Quincy locations?", a: "Yes, we offer complete support including location verification, manufacturing and healthcare sector insights, contact information, and placement strategies specific to Quincy's market." },
+    { q: "What industries in Quincy are best for vending machines?", a: "Manufacturing facilities, healthcare centers, educational institutions, and retail locations show strong potential due to diverse employee and student populations." },
+    { q: "How do you verify the quality of Quincy vending locations?", a: "We verify each location through business research, employee count validation, facility assessment, and regional market analysis to ensure quality placements." },
+    { q: "Can I get customized vending leads for specific areas of Quincy?", a: "Absolutely! We can focus on the downtown square district, Broadway corridor, or industrial zones based on your target market preferences." },
+    { q: "What's the typical ROI for vending machines in Quincy?", a: "Vending machines in Quincy typically achieve ROI within 13-17 months, with manufacturing and healthcare facilities often seeing faster returns due to shift workers and consistent operations." }
   ]
 
   return (
@@ -204,7 +204,7 @@ export default function QuincyIllinoisVendingLeadsPage() {
                     onClick={() => {
                       const pricingSection = document.getElementById('pricing')
                       if (pricingSection) {
-                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                        pricingSection.scrollIntoView({ behavior: 'smooth" })
                       }
                     }}
                     className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
@@ -509,10 +509,10 @@ export default function QuincyIllinoisVendingLeadsPage() {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
-              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/illinois' },
-              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-illinois' }
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/" },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads" },
+              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/illinois" },
+              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-illinois" }
             ]
           })
         }}

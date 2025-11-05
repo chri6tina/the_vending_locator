@@ -84,14 +84,14 @@ export default function NewBedfordMassachusettsVendingLeadsPage() {
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in New Bedford?', a: 'New Bedford offers diverse vending opportunities in fishing industry facilities, manufacturing plants, healthcare centers (St. Luke's Hospital), educational institutions (UMass Dartmouth campus), retail locations, and waterfront businesses.' },
-    { q: 'How quickly can I get vending machine leads for New Bedford?', a: 'Our New Bedford vending leads are delivered within 3-5 business days with detailed information about each location and south coast Massachusetts market insights.' },
-    { q: 'What makes New Bedford a good market for vending machines?', a: 'New Bedford's status as America's top fishing port combined with manufacturing and education creates diverse vending opportunities. The city's maritime heritage and industrial activity ensure year-round business demand.' },
-    { q: 'Do you provide ongoing support for New Bedford locations?', a: 'Yes, we offer complete support including location verification, fishing and manufacturing sector insights, contact information, and placement strategies specific to New Bedford's unique market.' },
-    { q: 'What industries in New Bedford are best for vending machines?', a: 'Fishing industry facilities, manufacturing plants, healthcare centers, and educational institutions show excellent potential due to early-morning operations, shift workers, and student populations.' },
-    { q: 'How do you verify the quality of New Bedford vending locations?', a: 'We verify each location through business research, operational schedule analysis, employee validation, and facility assessment to ensure quality maritime and industrial placements.' },
-    { q: 'Can I get customized vending leads for specific areas of New Bedford?', a: 'Absolutely! We can focus on the working waterfront district, downtown Union Street corridor, or north end industrial zones based on your target market.' },
-    { q: 'What's the typical ROI for vending machines in New Bedford?', a: 'Vending machines in New Bedford typically achieve ROI within 11-15 months, with fishing industry and manufacturing locations often seeing faster returns due to early shifts and premium pricing acceptance.' }
+    { q: "What types of vending machine locations are available in New Bedford?", a: "New Bedford offers diverse vending opportunities in fishing industry facilities, manufacturing plants, healthcare centers (St. Luke's Hospital), educational institutions (UMass Dartmouth campus), retail locations, and waterfront businesses." },
+    { q: "How quickly can I get vending machine leads for New Bedford?", a: "Our New Bedford vending leads are delivered within 3-5 business days with detailed information about each location and south coast Massachusetts market insights." },
+    { q: "What makes New Bedford a good market for vending machines?", a: "New Bedford's status as America's top fishing port combined with manufacturing and education creates diverse vending opportunities. The city's maritime heritage and industrial activity ensure year-round business demand." },
+    { q: "Do you provide ongoing support for New Bedford locations?", a: "Yes, we offer complete support including location verification, fishing and manufacturing sector insights, contact information, and placement strategies specific to New Bedford's unique market." },
+    { q: "What industries in New Bedford are best for vending machines?", a: "Fishing industry facilities, manufacturing plants, healthcare centers, and educational institutions show excellent potential due to early-morning operations, shift workers, and student populations." },
+    { q: "How do you verify the quality of New Bedford vending locations?", a: "We verify each location through business research, operational schedule analysis, employee validation, and facility assessment to ensure quality maritime and industrial placements." },
+    { q: "Can I get customized vending leads for specific areas of New Bedford?", a: "Absolutely! We can focus on the working waterfront district, downtown Union Street corridor, or north end industrial zones based on your target market." },
+    { q: "What's the typical ROI for vending machines in New Bedford?", a: "Vending machines in New Bedford typically achieve ROI within 11-15 months, with fishing industry and manufacturing locations often seeing faster returns due to early shifts and premium pricing acceptance." }
   ]
 
   return (
@@ -204,7 +204,7 @@ export default function NewBedfordMassachusettsVendingLeadsPage() {
                     onClick={() => {
                       const pricingSection = document.getElementById('pricing')
                       if (pricingSection) {
-                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                        pricingSection.scrollIntoView({ behavior: 'smooth" })
                       }
                     }}
                     className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
@@ -509,10 +509,10 @@ export default function NewBedfordMassachusettsVendingLeadsPage() {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
-              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/massachusetts' },
-              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-massachusetts' }
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/" },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads" },
+              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/massachusetts" },
+              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-massachusetts" }
             ]
           })
         }}

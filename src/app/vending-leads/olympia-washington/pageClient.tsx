@@ -84,14 +84,14 @@ export default function OlympiaWashingtonVendingLeadsPage() {
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in Olympia?', a: 'Olympia offers vending opportunities in state government buildings, healthcare facilities (Providence St. Peter Hospital), educational institutions (The Evergreen State College), professional offices, and retail locations.' },
-    { q: 'How quickly can I get vending machine leads for Olympia?', a: 'Our Olympia vending leads are delivered within 3-5 business days with comprehensive details about each location and South Puget Sound capital city insights.' },
-    { q: 'What makes Olympia a good market for vending machines?', a: 'Olympia's status as Washington's capital creates stable government employment and consistent business activity. The city's healthcare and education sectors provide additional vending opportunities year-round.' },
-    { q: 'Do you provide ongoing support for Olympia locations?', a: 'Yes, we provide comprehensive support including location research, government and healthcare sector insights, contact information, and placement strategies tailored to Olympia's capital city market.' },
-    { q: 'What industries in Olympia are best for vending machines?', a: 'Government offices, healthcare facilities, educational institutions, and professional services show excellent potential due to large employee bases and consistent weekday traffic.' },
-    { q: 'How do you verify the quality of Olympia vending locations?', a: 'We conduct thorough verification including business validation, employee count assessment, facility analysis, and capital city market research for each Olympia location.' },
-    { q: 'Can I get customized vending leads for specific areas of Olympia?', a: 'Absolutely! We can target the Capitol Campus area, downtown 4th Avenue corridor, or westside commercial zones based on your preferences.' },
-    { q: 'What's the typical ROI for vending machines in Olympia?', a: 'Machines in Olympia typically see ROI within 12-15 months, with government and healthcare locations often achieving faster returns due to stable employment and consistent traffic patterns.' }
+    { q: "What types of vending machine locations are available in Olympia?", a: "Olympia offers vending opportunities in state government buildings, healthcare facilities (Providence St. Peter Hospital), educational institutions (The Evergreen State College), professional offices, and retail locations." },
+    { q: "How quickly can I get vending machine leads for Olympia?", a: "Our Olympia vending leads are delivered within 3-5 business days with comprehensive details about each location and South Puget Sound capital city insights." },
+    { q: "What makes Olympia a good market for vending machines?", a: "Olympia's status as Washington's capital creates stable government employment and consistent business activity. The city's healthcare and education sectors provide additional vending opportunities year-round." },
+    { q: "Do you provide ongoing support for Olympia locations?", a: "Yes, we provide comprehensive support including location research, government and healthcare sector insights, contact information, and placement strategies tailored to Olympia's capital city market." },
+    { q: "What industries in Olympia are best for vending machines?", a: "Government offices, healthcare facilities, educational institutions, and professional services show excellent potential due to large employee bases and consistent weekday traffic." },
+    { q: "How do you verify the quality of Olympia vending locations?", a: "We conduct thorough verification including business validation, employee count assessment, facility analysis, and capital city market research for each Olympia location." },
+    { q: "Can I get customized vending leads for specific areas of Olympia?", a: "Absolutely! We can target the Capitol Campus area, downtown 4th Avenue corridor, or westside commercial zones based on your preferences." },
+    { q: "What's the typical ROI for vending machines in Olympia?", a: "Machines in Olympia typically see ROI within 12-15 months, with government and healthcare locations often achieving faster returns due to stable employment and consistent traffic patterns." }
   ]
 
   return (
@@ -204,7 +204,7 @@ export default function OlympiaWashingtonVendingLeadsPage() {
                     onClick={() => {
                       const pricingSection = document.getElementById('pricing')
                       if (pricingSection) {
-                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                        pricingSection.scrollIntoView({ behavior: 'smooth" })
                       }
                     }}
                     className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
@@ -509,10 +509,10 @@ export default function OlympiaWashingtonVendingLeadsPage() {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
-              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/washington' },
-              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-washington' }
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/" },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads" },
+              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/washington" },
+              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-washington" }
             ]
           })
         }}
