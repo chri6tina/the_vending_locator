@@ -16,7 +16,7 @@ const nextConfig = {
   // Optimize build with parallel processing
   experimental: {
     // Optimize package imports
-    optimizePackageImports: ['@heroicons/react'],
+    optimizePackageImports: ['@heroicons/react', 'framer-motion'],
     // Enable optimized font loading
     optimizeCss: true,
   },
