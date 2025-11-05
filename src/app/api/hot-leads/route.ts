@@ -14,7 +14,7 @@ let devLeads: any[] = [
     employee_count: '750',
     zip_code: '78701',
     description: 'High-growth tech campus in downtown Austin with 750+ employees. Perfect foot traffic, young demographic, premium vending opportunity. Decision maker is ready to move forward.',
-    price: 399,
+    price: 750,
     status: 'available',
     created_at: new Date().toISOString(),
     contact_name: 'Sarah Johnson',
@@ -32,7 +32,7 @@ let devLeads: any[] = [
     employee_count: '350',
     zip_code: '48104',
     description: 'Large manufacturing facility with 350+ employees working multiple shifts. High demand for snacks and beverages. Existing contract ending soon.',
-    price: 299,
+    price: 500,
     status: 'available',
     created_at: new Date(Date.now() - 86400000).toISOString(), // 1 day ago
     contact_name: 'Mike Stevens',
@@ -50,7 +50,7 @@ let devLeads: any[] = [
     employee_count: '1200',
     zip_code: '33101',
     description: 'Major hospital campus with over 1,200 employees and high visitor traffic. Multiple break rooms, 24/7 operation. Excellent opportunity for healthy snacks and beverages.',
-    price: 499,
+    price: 1000,
     status: 'available',
     created_at: new Date(Date.now() - 172800000).toISOString(), // 2 days ago
     contact_name: 'Dr. Patricia Martinez',

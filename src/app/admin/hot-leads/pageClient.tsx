@@ -339,15 +339,18 @@ export default function HotLeadsAdminPage() {
                     <label className="block text-sm font-medium text-charcoal mb-2">
                       Price *
                     </label>
-                    <input
-                      type="number"
+                    <select
                       name="price"
                       required
-                      min="1"
-                      step="0.01"
-                      placeholder="299.00"
                       className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
-                    />
+                    >
+                      <option value="">Select price...</option>
+                      <option value="250">$250</option>
+                      <option value="500">$500</option>
+                      <option value="750">$750</option>
+                      <option value="1000">$1,000</option>
+                      <option value="1250">$1,250</option>
+                    </select>
                   </div>
                   
                   <div>
@@ -509,16 +512,19 @@ export default function HotLeadsAdminPage() {
                     <label className="block text-sm font-medium text-charcoal mb-2">
                       Price *
                     </label>
-                    <input
-                      type="number"
+                    <select
                       name="price"
                       required
-                      min="1"
-                      step="0.01"
                       defaultValue={editingLead.price}
-                      placeholder="299.00"
                       className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
-                    />
+                    >
+                      <option value="">Select price...</option>
+                      <option value="250">$250</option>
+                      <option value="500">$500</option>
+                      <option value="750">$750</option>
+                      <option value="1000">$1,000</option>
+                      <option value="1250">$1,250</option>
+                    </select>
                   </div>
                   
                   <div>
