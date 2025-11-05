@@ -321,6 +321,17 @@ export default function HotLeadPageClient({ slug }: { slug: string }) {
                     <h2 className="text-xl font-playfair font-bold text-charcoal">Full Lead Information</h2>
                   </div>
                   
+                  {/* Important Notice */}
+                  <div className="mb-6 p-4 bg-navy/5 border-l-4 border-navy rounded">
+                    <p className="text-sm font-semibold text-navy mb-1">
+                      ⭐ Important: When Contacting This Lead
+                    </p>
+                    <p className="text-sm text-charcoal">
+                      Please let them know you are working with <strong>The Vending Locator</strong>. 
+                      This helps establish credibility and professionalism in your initial conversation.
+                    </p>
+                  </div>
+                  
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {lead.contact_name && (
                       <div className="flex items-start">
