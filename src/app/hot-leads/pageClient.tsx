@@ -217,7 +217,6 @@ export default function HotLeadsPage() {
       </div>
 
       <Footer />
-      <ZipCodeModalWrapper />
     </main>
   )
 }
