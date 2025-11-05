@@ -82,7 +82,9 @@ export default function HotLeadsAdminPage() {
     e.preventDefault()
     setIsSubmitting(true)
 
-    const formData = new FormData(e.currentTarget)
+    // Store form reference before async operations
+    const form = e.currentTarget
+    const formData = new FormData(form)
     
     const leadData = {
       title: formData.get('title') as string,
@@ -118,7 +120,7 @@ export default function HotLeadsAdminPage() {
       
       if (data.success) {
         setShowCreateForm(false)
-        e.currentTarget.reset()
+        form.reset() // Use stored form reference instead of e.currentTarget
         
         // Show success message with the generated URL
         const slug = data.lead.slug
