@@ -54,14 +54,15 @@ Your blog system is now complete with a full-featured admin dashboard and public
    http://localhost:3000/admin/login
    ```
 
-2. **Default Password:**
+2. **Default Credentials:**
    ```
-   admin2024
+   Email: support@thevendinglocator.com
+   Password: 123
    ```
 
-3. **⚠️ IMPORTANT:** Change the password in production!
-   - Edit: `src/app/admin/login/page.tsx`
-   - Line 17: Change `const ADMIN_PASSWORD = 'admin2024'` to your secure password
+3. **⚠️ IMPORTANT:** Change the credentials in production!
+   - Edit: `src/app/api/auth/login/route.ts`
+   - Lines 8-9: Update the credentials with secure ones
 
 ### Step 3: Create Your First Blog Post
 
@@ -88,7 +89,7 @@ Your blog system is now complete with a full-featured admin dashboard and public
 ```
 src/app/admin/
 ├── login/page.tsx              # Admin login page
-├── dashboard/page.tsx          # Main dashboard
+├── page.tsx                    # Main dashboard
 └── blog/
     ├── posts/page.tsx          # Manage all posts
     ├── new/page.tsx            # Create new post
@@ -121,7 +122,7 @@ BLOG_SYSTEM_SETUP.md           # SQL schema
 
 ### Admin Routes (Protected)
 - `/admin/login` - Login page
-- `/admin/dashboard` - Main dashboard
+- `/admin` - Main dashboard (includes blog access)
 - `/admin/blog/posts` - Manage posts
 - `/admin/blog/new` - Create new post
 - `/admin/blog/edit/[id]` - Edit post
@@ -170,9 +171,9 @@ Currently, images use URLs or base64. To upload to Supabase:
 
 ### ⚠️ Important Security Updates for Production
 
-1. **Change the Admin Password**
-   - Edit `src/app/admin/login/page.tsx`
-   - Replace the hardcoded password with a secure one
+1. **Change the Admin Credentials**
+   - Edit `src/app/api/auth/login/route.ts`
+   - Replace the demo email/password with secure credentials (lines 8-9)
    - Better yet, implement proper authentication (Supabase Auth, NextAuth, etc.)
 
 2. **Row Level Security (RLS)**
@@ -264,7 +265,8 @@ Consider adding these features:
 ## 🐛 Troubleshooting
 
 ### Can't log into admin?
-- Check that the password matches in `src/app/admin/login/page.tsx`
+- Check credentials in `src/app/api/auth/login/route.ts` (Email: support@thevendinglocator.com, Password: 123)
+- Clear cookies: Open DevTools → Application → Cookies → Clear admin_auth
 - Clear localStorage: Open DevTools → Application → Local Storage → Clear
 
 ### Posts not showing up?
@@ -300,10 +302,10 @@ Your blog system is ready to use! Start creating amazing content for your vendin
 
 **Quick Start Checklist:**
 - [ ] Run SQL schema in Supabase
-- [ ] Change admin password
-- [ ] Log into `/admin/login`
+- [ ] Log into `/admin/login` (Email: support@thevendinglocator.com, Password: 123)
 - [ ] Create your first blog post
 - [ ] Publish and view at `/blog`
+- [ ] Change admin credentials before going live
 
 Happy blogging! 📝✨
 

@@ -34,6 +34,9 @@ export const metadata: Metadata = {
 
 import PageClient from './pageClient'
 
+// Enable ISR - regenerate page every hour
+export const revalidate = 3600;
+
 export default function ElizabethNewJerseyVendingLeadsPage() {
   return <PageClient />
 }

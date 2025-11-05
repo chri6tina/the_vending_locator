@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { HomeIcon, FireIcon, ChartBarIcon, Cog6ToothIcon } from '@heroicons/react/24/outline'
+import { HomeIcon, FireIcon, ChartBarIcon, Cog6ToothIcon, DocumentTextIcon } from '@heroicons/react/24/outline'
 
 export default function AdminNav() {
   const pathname = usePathname()
@@ -28,6 +28,12 @@ export default function AdminNav() {
       href: '/admin/hot-leads',
       icon: FireIcon,
       active: pathname === '/admin/hot-leads'
+    },
+    {
+      name: 'Blog',
+      href: '/admin/blog/posts',
+      icon: DocumentTextIcon,
+      active: pathname?.startsWith('/admin/blog')
     },
     {
       name: 'Analytics',

@@ -53,7 +53,7 @@ export default function AdminDashboardPage() {
         {/* Quick Actions */}
         <div className="mb-8">
           <h2 className="text-lg font-semibold text-charcoal mb-4">Quick Actions</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             <Link
               href="/admin/hot-leads"
               className="bg-white rounded-lg p-6 border border-gray-200 hover:border-navy transition-colors"
@@ -62,6 +62,17 @@ export default function AdminDashboardPage() {
               <p className="text-sm text-stone mb-4">Create, edit, and manage premium vending location leads</p>
               <div className="text-sm text-navy font-medium">
                 Go to leads →
+              </div>
+            </Link>
+
+            <Link
+              href="/admin/blog/posts"
+              className="bg-white rounded-lg p-6 border border-gray-200 hover:border-navy transition-colors"
+            >
+              <h3 className="text-lg font-semibold text-charcoal mb-2">Manage Blog</h3>
+              <p className="text-sm text-stone mb-4">Create, edit, and publish blog posts for your site</p>
+              <div className="text-sm text-navy font-medium">
+                Go to blog →
               </div>
             </Link>
 

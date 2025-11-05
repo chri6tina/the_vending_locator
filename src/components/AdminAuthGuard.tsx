@@ -3,27 +3,49 @@
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
 
-export default function AdminAuthGuard({ children }: { children: React.ReactNode }) {
+interface AdminAuthGuardProps {
+  children: React.ReactNode
+}
+
+/**
+ * AdminAuthGuard - Simple authentication guard for admin pages
+ * Checks for authentication via API endpoint
+ * 
+ * Login credentials:
+ * Email: support@thevendinglocator.com
+ * Password: 123
+ */
+export default function AdminAuthGuard({ children }: AdminAuthGuardProps) {
   const router = useRouter()
   const [isAuthenticated, setIsAuthenticated] = useState(false)
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
-    // Check if user is authenticated
-    const authStatus = localStorage.getItem('adminAuth')
-    
-    if (authStatus === 'true') {
-      setIsAuthenticated(true)
-    } else {
+    checkAuth()
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
+  const checkAuth = async () => {
+    try {
+      const response = await fetch('/api/auth/check')
+      const data = await response.json()
+      
+      if (data.authenticated) {
+        setIsAuthenticated(true)
+      } else {
+        router.push('/admin/login')
+      }
+    } catch (error) {
+      console.error('Auth check error:', error)
       router.push('/admin/login')
+    } finally {
+      setIsLoading(false)
     }
-    
-    setIsLoading(false)
-  }, [router])
+  }
 
   if (isLoading) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
+      <div className="min-h-screen flex items-center justify-center bg-gray-50">
         <div className="text-center">
           <div className="inline-block animate-spin rounded-full h-12 w-12 border-4 border-gray-300 border-t-blue-600"></div>
           <p className="mt-4 text-gray-600">Checking authentication...</p>
@@ -38,3 +60,4 @@ export default function AdminAuthGuard({ children }: { children: React.ReactNode
 
   return <>{children}</>
 }
+

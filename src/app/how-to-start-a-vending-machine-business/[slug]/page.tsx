@@ -984,6 +984,9 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   }
 }
 
+// Enable ISR - regenerate page every hour
+export const revalidate = 3600;
+
 export default function GuideCityPage({ params }: Params) {
   const { slug } = params
   if (!slug) return notFound()

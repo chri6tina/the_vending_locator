@@ -9,6 +9,17 @@ const nextConfig = {
   images: {
     domains: ['picsum.photos', 'images.ctfassets.net'],
   },
+  // Optimize build performance
+  productionBrowserSourceMaps: false,
+  // Enable SWC minification
+  swcMinify: true,
+  // Optimize build with parallel processing
+  experimental: {
+    // Optimize package imports
+    optimizePackageImports: ['@heroicons/react'],
+    // Enable optimized font loading
+    optimizeCss: true,
+  },
   // Ensure proper handling of dynamic routes
   trailingSlash: false,
   // Redirects for SEO preservation
