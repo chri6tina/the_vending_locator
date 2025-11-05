@@ -2,9 +2,9 @@
 
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import HotLeads from '@/components/HotLeads'
-import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
+import HotLeadsMarketplace from '@/components/HotLeadsMarketplace'
 import { motion } from 'framer-motion'
+import { SparklesIcon, BoltIcon, ShieldCheckIcon } from '@heroicons/react/24/solid'
 
 export default function HotLeadsPage() {
   return (
@@ -12,72 +12,79 @@ export default function HotLeadsPage() {
       <Header />
       
       {/* Hero Section */}
-      <div className="bg-white">
-        <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
-          <div className="mx-auto max-w-2xl text-center">
+      <div className="bg-gradient-to-br from-navy via-navy-light to-navy">
+        <div className="mx-auto max-w-7xl px-6 py-20 sm:py-28 lg:px-8">
+          <div className="mx-auto max-w-3xl text-center">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+              className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-white/90 text-sm font-medium mb-6"
+            >
+              <BoltIcon className="w-4 h-4 text-coral" />
+              Premium Location Leads
+            </motion.div>
+
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="text-3xl font-playfair font-bold tracking-tight text-charcoal sm:text-4xl"
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="text-4xl font-playfair font-bold tracking-tight text-white sm:text-5xl mb-6"
             >
-              Hot Location Leads
+              Hot Vending Location Leads
             </motion.h1>
             
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="mt-6 text-lg leading-8 text-stone"
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="text-lg sm:text-xl leading-8 text-white/90 mb-8"
             >
-              Get qualified vending machine locations delivered to your inbox within 3-5 business days. 
-              No monthly fees, no waiting lists - just quality research and pre-verified business locations.
+              Purchase exclusive, ready-to-contact vending machine location opportunities. 
+              Each lead includes full contact information and is sold only once.
             </motion.p>
 
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="mt-8 flex flex-wrap justify-center gap-4"
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="flex flex-wrap justify-center gap-6 text-white"
             >
-              <div className="bg-navy/10 rounded-full px-4 py-2 text-navy text-sm font-medium">
-                📞 Customer Support
+              <div className="flex items-center gap-2">
+                <ShieldCheckIcon className="w-5 h-5 text-coral" />
+                <span className="text-sm font-medium">Verified Contacts</span>
               </div>
-              <div className="bg-navy/10 rounded-full px-4 py-2 text-navy text-sm font-medium">
-                ✅ Pre-Verified Locations
+              <div className="flex items-center gap-2">
+                <SparklesIcon className="w-5 h-5 text-coral" />
+                <span className="text-sm font-medium">Instant Access</span>
               </div>
-              <div className="bg-navy/10 rounded-full px-4 py-2 text-navy text-sm font-medium">
-                🎯 Decision Maker Contacts
+              <div className="flex items-center gap-2">
+                <BoltIcon className="w-5 h-5 text-coral" />
+                <span className="text-sm font-medium">Exclusive Leads</span>
               </div>
             </motion.div>
 
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-              className="mt-10 flex items-center justify-center gap-x-6"
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="mt-10"
             >
               <button
                 onClick={() => {
-                  document.getElementById('packages')?.scrollIntoView({ behavior: 'smooth' });
+                  document.getElementById('marketplace')?.scrollIntoView({ behavior: 'smooth' });
                 }}
-                className="btn-primary"
+                className="px-8 py-4 bg-coral text-white rounded-lg font-semibold text-lg hover:bg-coral-dark transition-all transform hover:scale-105 shadow-lg"
               >
-                View Available Packages
+                Browse Available Leads
               </button>
-              <a
-                href="/pricing"
-                className="btn-secondary"
-              >
-                Compare with Subscriptions
-              </a>
             </motion.div>
           </div>
         </div>
       </div>
 
-      {/* Hot Leads Component */}
-      <HotLeads />
+      {/* Hot Leads Marketplace */}
+      <HotLeadsMarketplace />
 
       {/* Additional Information */}
       <div className="bg-white py-24 sm:py-32">
