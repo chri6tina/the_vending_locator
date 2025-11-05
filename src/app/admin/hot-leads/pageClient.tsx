@@ -24,6 +24,14 @@ interface HotLead {
   full_address?: string
 }
 
+interface PaymentLink {
+  price: number
+  name: string
+  url?: string
+  id?: string
+  error?: string
+}
+
 export default function HotLeadsAdminPage() {
   const [leads, setLeads] = useState<HotLead[]>([])
   const [showCreateForm, setShowCreateForm] = useState(false)
@@ -31,6 +39,9 @@ export default function HotLeadsAdminPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
+  const [paymentLinks, setPaymentLinks] = useState<PaymentLink[]>([])
+  const [isCreatingLinks, setIsCreatingLinks] = useState(false)
+  const [showPaymentLinks, setShowPaymentLinks] = useState(false)
 
   // Fetch leads on component mount
   useEffect(() => {
@@ -201,6 +212,34 @@ export default function HotLeadsAdminPage() {
     }
   }
 
+  const handleCreatePaymentLinks = async () => {
+    setIsCreatingLinks(true)
+    try {
+      const response = await fetch('/api/create-payment-links', {
+        method: 'POST'
+      })
+
+      const data = await response.json()
+      if (data.success) {
+        setPaymentLinks(data.paymentLinks)
+        setShowPaymentLinks(true)
+        alert('✅ Payment links created successfully!')
+      } else {
+        alert('Failed to create payment links: ' + (data.error || 'Unknown error'))
+      }
+    } catch (error) {
+      console.error('Failed to create payment links:', error)
+      alert('Network error: Failed to create payment links. Please try again.')
+    } finally {
+      setIsCreatingLinks(false)
+    }
+  }
+
+  const copyToClipboard = (text: string) => {
+    navigator.clipboard.writeText(text)
+    alert('✅ Link copied to clipboard!')
+  }
+
   return (
     <div className="min-h-screen bg-warm-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -236,6 +275,13 @@ export default function HotLeadsAdminPage() {
                 🔄 Refresh
               </button>
               <button
+                onClick={handleCreatePaymentLinks}
+                disabled={isCreatingLinks}
+                className="flex items-center gap-2 px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors disabled:opacity-50"
+              >
+                {isCreatingLinks ? '⏳ Creating...' : '🔗 Create Payment Links'}
+              </button>
+              <button
                 onClick={() => setShowCreateForm(true)}
                 className="flex items-center gap-2 px-6 py-3 bg-navy text-white rounded-lg hover:bg-navy/90 transition-colors"
               >
@@ -245,6 +291,58 @@ export default function HotLeadsAdminPage() {
             </div>
           </div>
         </div>
+
+        {/* Payment Links Section */}
+        {showPaymentLinks && paymentLinks.length > 0 && (
+          <div className="mb-8 bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+            <div className="flex items-center justify-between mb-4">
+              <h2 className="text-2xl font-playfair font-bold text-charcoal">
+                🔗 Stripe Payment Links
+              </h2>
+              <button
+                onClick={() => setShowPaymentLinks(false)}
+                className="text-stone hover:text-charcoal transition-colors"
+              >
+                ✕ Close
+              </button>
+            </div>
+            <p className="text-stone mb-4">
+              Copy these links to share anywhere - social media, email, etc. Each link is permanently active.
+            </p>
+            <div className="space-y-3">
+              {paymentLinks.map((link, index) => (
+                <div
+                  key={index}
+                  className="flex items-center justify-between p-4 bg-cream/30 rounded-lg border border-gray-200"
+                >
+                  <div className="flex-1">
+                    <div className="font-semibold text-charcoal mb-1">{link.name}</div>
+                    {link.url ? (
+                      <div className="flex items-center gap-2">
+                        <input
+                          type="text"
+                          readOnly
+                          value={link.url}
+                          className="flex-1 px-3 py-2 bg-white border border-gray-300 rounded text-sm text-stone font-mono"
+                        />
+                        <button
+                          onClick={() => copyToClipboard(link.url!)}
+                          className="px-4 py-2 bg-navy text-white rounded hover:bg-navy/90 transition-colors text-sm"
+                        >
+                          📋 Copy
+                        </button>
+                      </div>
+                    ) : (
+                      <div className="text-red-600 text-sm">
+                        ❌ Error: {link.error || 'Failed to create link'}
+                      </div>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* Stats Overview */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
