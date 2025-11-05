@@ -108,7 +108,12 @@ export default function HotLeadsAdminPage() {
         body: JSON.stringify(leadData)
       })
 
+      console.log('Response status:', response.status)
+      console.log('Response ok:', response.ok)
+
       const data = await response.json()
+      console.log('Response data:', data)
+      
       if (data.success) {
         setShowCreateForm(false)
         e.currentTarget.reset()
@@ -120,16 +125,27 @@ export default function HotLeadsAdminPage() {
         // Refresh the entire list from the API to ensure consistency
         try {
           await fetchLeads()
-        } catch (refreshError) {
+        } catch (refreshError: any) {
           console.error('Failed to refresh leads list:', refreshError)
+          const errorDetails = `Refresh Error:\nMessage: ${refreshError.message}\nStack: ${refreshError.stack}`
+          console.error(errorDetails)
           // Don't show error to user since the lead was created successfully
         }
       } else {
-        alert('Failed to create lead: ' + (data.error || 'Unknown error'))
+        const errorMsg = `API Error:\nStatus: ${response.status}\nError: ${data.error || 'Unknown error'}\nFull Response: ${JSON.stringify(data, null, 2)}`
+        console.error(errorMsg)
+        alert(`Failed to create lead:\n\n${errorMsg}\n\nPlease copy this error message.`)
       }
-    } catch (error) {
-      console.error('Failed to create lead:', error)
-      alert('Network error: Failed to create lead. Please check your connection and try again.')
+    } catch (error: any) {
+      const errorDetails = `Network/Fetch Error:\n` +
+        `Message: ${error.message || 'Unknown error'}\n` +
+        `Type: ${error.name || 'Error'}\n` +
+        `Stack: ${error.stack || 'No stack trace'}\n` +
+        `Full Error: ${JSON.stringify(error, Object.getOwnPropertyNames(error), 2)}`
+      
+      console.error('Full error details:', errorDetails)
+      
+      alert(`Network error occurred:\n\n${errorDetails}\n\nPlease copy this entire error message and send it.`)
     } finally {
       setIsSubmitting(false)
     }
