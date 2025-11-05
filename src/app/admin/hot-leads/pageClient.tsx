@@ -106,7 +106,12 @@ export default function HotLeadsAdminPage() {
         alert(`✅ Hot lead created successfully!\n\nPublic URL: /hot-leads/${slug}\n\nThe lead is now available for purchase.`)
         
         // Refresh the entire list from the API to ensure consistency
-        await fetchLeads()
+        try {
+          await fetchLeads()
+        } catch (refreshError) {
+          console.error('Failed to refresh leads list:', refreshError)
+          // Don't show error to user since the lead was created successfully
+        }
       } else {
         alert('Failed to create lead: ' + (data.error || 'Unknown error'))
       }
@@ -151,7 +156,12 @@ export default function HotLeadsAdminPage() {
         alert('✅ Lead updated successfully!')
         
         // Refresh the entire list from the API to ensure consistency
-        await fetchLeads()
+        try {
+          await fetchLeads()
+        } catch (refreshError) {
+          console.error('Failed to refresh leads list:', refreshError)
+          // Don't show error to user since the update was successful
+        }
       } else {
         alert('Failed to update lead: ' + data.error)
       }
@@ -180,7 +190,12 @@ export default function HotLeadsAdminPage() {
         alert('✅ Lead deleted successfully!')
         
         // Refresh the entire list from the API to ensure consistency
-        await fetchLeads()
+        try {
+          await fetchLeads()
+        } catch (refreshError) {
+          console.error('Failed to refresh leads list:', refreshError)
+          // Don't show error to user since the delete was successful
+        }
       } else {
         alert('Failed to delete lead: ' + data.error)
       }
