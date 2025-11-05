@@ -2,9 +2,9 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import Head from 'next/head'
 import { motion } from 'framer-motion'
 import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CpuChipIcon, HeartIcon, ShoppingBagIcon, TruckIcon, BuildingLibraryIcon, CurrencyDollarIcon, SparklesIcon } from '@heroicons/react/24/solid'
+import states from '@/data/states'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
@@ -12,31 +12,33 @@ import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function JerseyVendingLeadsPage() {
-  // State display name
-  const stateDisplayName = 'Jersey';
+export default function JerseyUnknownVendingLeadsPage() {
+  // City and state display names
+  const cityDisplayName = 'Jersey';
+  const stateDisplayName = 'Unknown';
   
-  // State-specific data
-  const stateData = {
+  // City-specific data
+  const cityData = {
     'name': 'Jersey',
-    'population': '9.2M+',
-    'businesses': '200K+',
-    'industries': '20+',
-    'verifiedLocations': '800+',
-    'rating': '4.8/5',
-    'description': 'Thriving business community in Jersey with diverse economic opportunities'
+    'state': 'Unknown',
+    'population': '50K-100K',
+    'businesses': '2K-5K',
+    'industries': '6-10',
+    'verifiedLocations': '50-100',
+    'rating': '4.7/5',
+    'description': 'Growing business community in Unknown'
   };
   
   // Active users counter
-  const [activeUsers, setActiveUsers] = useState(65)
+  const [activeUsers, setActiveUsers] = useState(25)
   const [currentUserIndex, setCurrentUserIndex] = useState(0)
   const [usedNames, setUsedNames] = useState(new Set())
 
   // User names for active users counter
   const [userNames, setUserNames] = useState([
-    'Mike from Jersey', 'Sarah in Newark', 'David in Jersey City', 'Lisa in Paterson',
-    'Tom in Elizabeth', 'Jennifer in Edison', 'Robert in Woodbridge', 'Amanda in Toms River',
-    'Chris in Hamilton', 'Maria in Trenton', 'James in Camden', 'Emily in Cherry Hill'
+    'Mike from Jersey', 'Sarah in Jersey', 'David in Jersey', 'Lisa in Jersey',
+    'Tom in Jersey', 'Jennifer in Jersey', 'Robert in Jersey', 'Amanda in Jersey',
+    'Chris in Jersey', 'Maria in Jersey', 'James in Jersey', 'Emily in Jersey'
   ])
 
   // Active users counter effect
@@ -45,7 +47,7 @@ export default function JerseyVendingLeadsPage() {
       setActiveUsers(prev => {
         const change = Math.floor(Math.random() * 3) - 1
         const newValue = prev + change
-        return Math.max(60, Math.min(75, newValue))
+        return Math.max(20, Math.min(35, newValue))
       })
     }, 4000);
     return () => clearInterval(interval)
@@ -76,13 +78,24 @@ export default function JerseyVendingLeadsPage() {
     return () => clearInterval(interval)
   }, [userNames.length, usedNames])
 
+  // Build related state cities (for internal linking)
+  const currentState = states.find(s => s.slug === 'unknown')
+  const relatedCities = currentState ? currentState.cities.filter(c => c.slug !== 'jersey').slice(0, 8) : []
+
+  // FAQ items reused for JSON-LD
+  const faqItems = [
+    { q: "What types of vending machine locations are available in Jersey?", a: "Jersey provides vending opportunities in healthcare facilities, educational institutions, retail centers, office buildings, and manufacturing facilities serving the local market." },
+    { q: "How quickly can I get vending machine leads for Jersey?", a: "Our Jersey vending leads are delivered within 3-5 business days with detailed information about each verified business and placement opportunity." },
+    { q: "What makes Jersey a good market for vending machines?", a: "Jersey features a strong business community with diverse industries and consistent foot traffic. The city's economic activity creates ideal conditions for vending machine success." },
+    { q: "Do you provide ongoing support for Jersey locations?", a: "Yes, we provide comprehensive support including location research, business verification, contact information, and market-specific placement strategies for Jersey." },
+    { q: "What industries in Jersey are best for vending machines?", a: "Healthcare, education, manufacturing, retail, and office buildings in Jersey show strong vending potential with reliable traffic and captive audiences." },
+    { q: "How do you verify the quality of Jersey vending locations?", a: "We conduct thorough verification including business validation, employee assessment, facility research, and local market analysis for each Jersey location." },
+    { q: "Can I get customized vending leads for specific areas of Jersey?", a: "Absolutely! We can focus on specific neighborhoods, business districts, or industrial areas within Jersey based on your target market." },
+    { q: "What's the typical ROI for vending machines in Jersey?", a: "Machines in Jersey typically see ROI within 12-18 months, with healthcare and educational facilities often providing the most consistent returns." }
+  ]
+
   return (
     <>
-      <Head>
-        <title>Vending Machine Leads in Jersey - New Jersey Business Locations</title>
-        <meta name="description" content="Discover premium vending machine opportunities across Jersey. Access verified business locations in New Jersey with industry insights and growth potential data." />
-        <meta name="keywords" content="vending machine leads jersey, new jersey vending locations, jersey business opportunities, vending machine business jersey, verified business locations jersey" />
-      </Head>
       <Header />
       
       <div className="min-h-screen bg-warm-white">
@@ -98,168 +111,423 @@ export default function JerseyVendingLeadsPage() {
                 Vending Leads
               </Link>
               <span>/</span>
-              <span className="text-navy font-medium">{stateDisplayName}</span>
+              <Link href={`/vending-leads/${stateDisplayName.toLowerCase().replace(/\s+/g, '-')}`} className="hover:text-navy transition-colors">
+                {stateDisplayName}
+              </Link>
+              <span>/</span>
+              <span className="text-charcoal font-medium">{cityDisplayName}</span>
             </div>
           </div>
         </nav>
 
         {/* Hero Section */}
-        <section className="relative bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 py-20">
+        <section className="relative py-20 bg-white overflow-hidden">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center">
-              <motion.div
+            <div className="max-w-6xl mx-auto text-center">
+              {/* Active Users Counter */}
+              <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
+                transition={{ duration: 0.8 }}
+                className="mt-6 sm:mt-8 p-4 bg-cream/50 backdrop-blur-sm rounded-2xl border border-gray-200 shadow-sm max-w-md mx-auto mb-6"
               >
-                <h1 className="text-5xl md:text-6xl font-bold text-navy mb-6">
-                  Vending Machine Leads in {stateDisplayName}
-                </h1>
-                <p className="text-xl text-stone mb-8 max-w-3xl mx-auto">
-                  Discover premium vending machine opportunities across {stateDisplayName}. 
-                  Access verified business locations, industry insights, and growth potential data.
-                </p>
-                
-                {/* Stats Grid */}
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
-                  <div className="text-center">
-                    <div className="text-3xl font-bold text-navy">{stateData.population}</div>
-                    <div className="text-sm text-stone">Population</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-3xl font-bold text-navy">{stateData.businesses}</div>
-                    <div className="text-sm text-stone">Businesses</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-3xl font-bold text-navy">{stateData.industries}</div>
-                    <div className="text-sm text-stone">Industries</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-3xl font-bold text-navy">{stateData.rating}</div>
-                    <div className="text-sm text-stone">Rating</div>
+                <div className="flex items-center justify-center gap-3">
+                  <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                  <span className="text-sm font-medium text-chocolate">
+                    <span className="font-bold text-coral">{activeUsers}</span> people are choosing plans right now
+                  </span>
+                </div></motion.div>
+
+              {/* Main Headline */}
+              <motion.h1 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                className="text-4xl md:text-6xl font-playfair font-bold text-charcoal mb-6 leading-tight"
+              >
+                Vending Machine Locations in{' '}
+                <span className="text-navy">{cityDisplayName}, {stateDisplayName}</span>
+              </motion.h1>
+
+              {/* City-Specific Value Proposition */}
+              <motion.p 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+                className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
+              >
+                Get pre-qualified vending machine locations in {cityDisplayName}'s thriving business community. 
+                Access verified businesses with detailed contact information and placement opportunities.
+              </motion.p>
+
+              {/* Trust Signals */}
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.8 }}
+                className="mt-6 sm:mt-8 grid grid-cols-2 gap-4 max-w-md mx-auto mb-8"
+              >
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <CheckBadgeIcon className="h-5 w-5 text-green-600" />
+                    <span className="text-sm font-medium text-chocolate">Verified Locations</span>
                   </div>
                 </div>
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <StarIcon className="h-5 w-5 text-yellow-500" />
+                    <span className="text-sm font-medium text-chocolate">4.7/5 Rating</span>
+                  </div>
+                </div>
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <ShieldCheckIcon className="h-5 w-5 text-blue-600" />
+                    <span className="text-sm font-medium text-chocolate">Secure & Reliable</span>
+                  </div>
+                </div>
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <ClockIcon className="h-5 w-5 text-purple-600" />
+                    <span className="text-sm font-medium text-chocolate">Quality Research</span>
+                  </div>
+                </div>
+              </motion.div>
 
-                {/* CTA Buttons */}
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Link href="/vending-leads/new-jersey" className="bg-navy text-white px-8 py-4 rounded-lg font-semibold hover:bg-navy-dark transition-colors">
-                    New Jersey Leads
-                  </Link>
+              {/* CTA Buttons */}
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 1.0 }}
+                className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 mb-8"
+              >
+                <button 
+                  onClick={() => {
+                    const pricingSection = document.getElementById('pricing')
+                    if (pricingSection) {
+                      pricingSection.scrollIntoView({ behavior: 'smooth' })
+                    }
+                  }}
+                  className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
+                >
+                  Get Started
+                </button>
+              </motion.div>
+
+              {/* Social Proof Stats */}
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 1.2 }}
+                className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto"
+              >
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-navy">{cityData.population}</div>
+                  <div className="text-sm text-stone">Population</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-navy">{cityData.businesses}</div>
+                  <div className="text-sm text-stone">Businesses</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-navy">{cityData.industries}</div>
+                  <div className="text-sm text-stone">Industries</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-navy">{cityData.verifiedLocations}</div>
+                  <div className="text-sm text-stone">Verified Locations</div>
                 </div>
               </motion.div>
             </div>
           </div>
         </section>
 
-        {/* Pricing Table */}
-        <PricingTable />
-
-        {/* State Overview Section */}
-        <section className="py-16 bg-white">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <motion.div
+        {/* Pricing Section */}
+        <section id="pricing" className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <motion.h2
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
+                transition={{ duration: 0.8 }}
                 viewport={{ once: true }}
-                className="text-center mb-12"
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
               >
-                <h2 className="text-4xl font-bold text-navy mb-6">
-                  Why {stateDisplayName} for Vending Machines?
-                </h2>
-                <p className="text-lg text-stone max-w-2xl mx-auto">
-                  {stateData.description}. Our comprehensive data helps you identify the best opportunities 
-                  for vending machine placement and business growth.
-                </p>
+                Get Access to Qualified Vending Machine Locations in {cityDisplayName}
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-lg text-stone max-w-3xl mx-auto"
+              >
+                Choose the perfect plan for your vending machine business needs and start accessing qualified locations today.
+              </motion.p>
+            </div>
+            <PricingTable />
+          </div>
+        </section>
+
+        {/* Business Landscape */}
+        <section className="py-16 bg-white">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
+              >
+                Business Landscape in {cityDisplayName}
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-lg text-stone max-w-3xl mx-auto"
+              >
+                Discover the diverse industries and business opportunities that make {cityDisplayName} an ideal market for vending machines.
+              </motion.p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              
+              <motion.div
+                key="Healthcare"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0 }}
+                viewport={{ once: true }}
+                className="bg-blue-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-blue-600 mb-4">
+                  <HeartIcon className="w-12 h-12" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
+                <p className="text-stone leading-relaxed">Healthcare facilities in {cityDisplayName} offer stable operations with high foot traffic from patients, visitors, and staff.</p>
               </motion.div>
-
-              {/* Features Grid */}
-              <div className="grid md:grid-cols-2 gap-8">
-                <motion.div
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.6, delay: 0.1 }}
-                  viewport={{ once: true }}
-                  className="bg-slate-50 p-6 rounded-lg"
-                >
-                  <div className="flex items-center mb-4">
-                    <CheckBadgeIcon className="h-6 w-6 text-green-600 mr-3" />
-                    <h3 className="text-xl font-semibold text-navy">Verified Locations</h3>
-                  </div>
-                  <p className="text-stone">
-                    Access {stateData.verifiedLocations} pre-verified business locations across {stateDisplayName} 
-                    with detailed contact information and business profiles.
-                  </p>
-                </motion.div>
-
-                <motion.div
-                  initial={{ opacity: 0, x: 20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.6, delay: 0.2 }}
-                  viewport={{ once: true }}
-                  className="bg-slate-50 p-6 rounded-lg"
-                >
-                  <div className="flex items-center mb-4">
-                    <StarIcon className="h-6 w-6 text-yellow-500 mr-3" />
-                    <h3 className="text-xl font-semibold text-navy">Industry Insights</h3>
-                  </div>
-                  <p className="text-stone">
-                    Comprehensive data on {stateData.industries}+ industries, helping you target 
-                    the most profitable sectors for vending machine placement.
-                  </p>
-                </motion.div>
-
-                <motion.div
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.6, delay: 0.3 }}
-                  viewport={{ once: true }}
-                  className="bg-slate-50 p-6 rounded-lg"
-                >
-                  <div className="flex items-center mb-4">
-                    <MapPinIcon className="h-6 w-6 text-blue-600 mr-3" />
-                    <h3 className="text-xl font-semibold text-navy">Geographic Coverage</h3>
-                  </div>
-                  <p className="text-stone">
-                    Complete coverage of major cities and business districts across {stateDisplayName}, 
-                    from urban centers to growing suburban areas.
-                  </p>
-                </motion.div>
-
-                <motion.div
-                  initial={{ opacity: 0, x: 20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.6, delay: 0.4 }}
-                  viewport={{ once: true }}
-                  className="bg-slate-50 p-6 rounded-lg"
-                >
-                  <div className="flex items-center mb-4">
-                    <UsersIcon className="h-6 w-6 text-purple-600 mr-3" />
-                    <h3 className="text-xl font-semibold text-navy">Active Community</h3>
-                  </div>
-                  <p className="text-stone">
-                    Join {activeUsers} active users currently exploring vending opportunities in {stateDisplayName}. 
-                    Stay ahead of the competition with real-time updates.
-                  </p>
-                </motion.div>
-              </div>
+              <motion.div
+                key="Education"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.1 }}
+                viewport={{ once: true }}
+                className="bg-green-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-green-600 mb-4">
+                  <AcademicCapIcon className="w-12 h-12" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
+                <p className="text-stone leading-relaxed">Educational institutions in {cityDisplayName} provide consistent student and staff populations for vending machine opportunities.</p>
+              </motion.div>
+              <motion.div
+                key="Manufacturing"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="bg-purple-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-purple-600 mb-4">
+                  <CpuChipIcon className="w-12 h-12" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
+                <p className="text-stone leading-relaxed">{cityDisplayName}'s manufacturing sector offers large employee bases and extended operating hours, perfect for vending machine placement.</p>
+              </motion.div>
+              <motion.div
+                key="Retail"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="bg-orange-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-orange-600 mb-4">
+                  <ShoppingBagIcon className="w-12 h-12" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
+                <p className="text-stone leading-relaxed">Retail locations throughout {cityDisplayName} provide high customer traffic and diverse demographics for vending machine success.</p>
+              </motion.div>
+              <motion.div
+                key="Office Buildings"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                viewport={{ once: true }}
+                className="bg-indigo-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-indigo-600 mb-4">
+                  <BuildingOfficeIcon className="w-12 h-12" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
+                <p className="text-stone leading-relaxed">Professional office spaces in {cityDisplayName} offer captive audiences during business hours with consistent daily traffic.</p>
+              </motion.div>
+              <motion.div
+                key="Transportation"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.5 }}
+                viewport={{ once: true }}
+                className="bg-red-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-red-600 mb-4">
+                  <TruckIcon className="w-12 h-12" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
+                <p className="text-stone leading-relaxed">{cityDisplayName}'s transportation hubs including airports, bus stations, and transit centers provide high-volume foot traffic.</p>
+              </motion.div>
             </div>
           </div>
         </section>
 
         {/* Hot Leads Section */}
-        <HotLeads />
+        <section id="hot-leads" className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
+              >
+                One-Time Location Packages for {cityDisplayName}
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-lg text-stone max-w-3xl mx-auto"
+              >
+                Get immediate access to qualified vending machine locations without monthly commitments.
+              </motion.p>
+            </div>
+            <HotLeads />
+          </div>
+        </section>
 
         {/* Vending Course Section */}
-        <VendingCourse />
+        <section className="py-16 bg-white">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
+              >
+                Learn the Vending Machine Business
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-lg text-stone max-w-3xl mx-auto"
+              >
+                Master the fundamentals of vending machine operations and maximize your success in {cityDisplayName}.
+              </motion.p>
+            </div>
+            <VendingCourse />
+          </div>
+        </section>
 
-        {/* Footer */}
-        <Footer />
+        {/* FAQ Section */}
+        <section id="faq" className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
+              >
+                Frequently Asked Questions
+              </motion.h2>
+              <motion.p 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-lg text-chocolate/70 leading-relaxed"
+              >
+                Everything you need to know about vending machine opportunities in {cityDisplayName}.
+              </motion.p>
+            </div>
+            
+            <div className="space-y-6">
+              {faqItems.map((item, idx) => (
+                <motion.div
+                  key={idx}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: idx * 0.1 }}
+                  viewport={{ once: true }}
+                  className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+                >
+                  <h3 className="text-lg font-semibold text-charcoal mb-3">{item.q}</h3>
+                  <p className="text-stone leading-relaxed">{item.a}</p>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* More cities in State */}
+        {relatedCities.length > 0 && (
+          <section className="py-12 bg-white border-t border-gray-200">
+            <div className="mx-auto max-w-7xl px-6">
+              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in {stateDisplayName}</h2>
+              <div className="flex flex-wrap gap-3">
+                {relatedCities.map(city => (
+                  <Link key={city.slug} href={`/vending-leads/${city.slug}`} className="px-3 py-2 rounded-lg border border-gray-200 bg-cream/60 text-chocolate hover:text-navy">
+                    Vending Leads in {city.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
       </div>
-
-      {/* Zip Code Modal */}
+      
+      <Footer />
       <ZipCodeModalWrapper />
+      {/* JSON-LD: Breadcrumbs and FAQ */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
+              { '@type': 'ListItem', position: 3, name: 'Unknown', item: `https://www.thevendinglocator.com/vending-leads/${stateSlug}` },
+              { '@type': 'ListItem', position: 4, name: 'Jersey', item: `https://www.thevendinglocator.com/vending-leads/${slug}` }
+            ]
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: faqItems.map(i => ({
+              '@type': 'Question',
+              name: i.q,
+              acceptedAnswer: { '@type': 'Answer', text: i.a }
+            }))
+          })
+        }}
+      />
     </>
   )
 }

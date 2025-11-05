@@ -1,10 +1,10 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import Head from 'next/head'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CpuChipIcon, HeartIcon, ShoppingBagIcon, TruckIcon, BuildingLibraryIcon, CurrencyDollarIcon, SparklesIcon } from '@heroicons/react/24/solid'
+import states from '@/data/states'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
@@ -12,12 +12,13 @@ import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-// City and state display names
-const cityDisplayName = 'Carson City';
-const stateDisplayName = 'Nevada';
-
-// City-specific data
-const cityData = {
+export default function CarsonCityNevadaVendingLeadsPage() {
+  // City and state display names
+  const cityDisplayName = 'Carson City';
+  const stateDisplayName = 'Nevada';
+  
+  // City-specific data
+  const cityData = {
   name: 'Carson City',
   state: 'Nevada',
   population: '58,639',
@@ -27,11 +28,10 @@ const cityData = {
   rating: '4.8/5',
   description: 'State capital with government and tourism',
   majorEmployers: ['State of Nevada', 'Carson Tahoe Health', 'Carson City School District', 'Chromalloy Nevada', 'Nevada Appeal']
-}
-
-export default function TylerPage() {
+};
+  
   // Active users counter
-  const [activeUsers, setActiveUsers] = useState(28)
+  const [activeUsers, setActiveUsers] = useState(25)
   const [currentUserIndex, setCurrentUserIndex] = useState(0)
   const [usedNames, setUsedNames] = useState(new Set())
 
@@ -48,7 +48,7 @@ export default function TylerPage() {
       setActiveUsers(prev => {
         const change = Math.floor(Math.random() * 3) - 1
         const newValue = prev + change
-        return Math.max(25, Math.min(42, newValue))
+        return Math.max(20, Math.min(35, newValue))
       })
     }, 4000);
     return () => clearInterval(interval)
@@ -79,14 +79,24 @@ export default function TylerPage() {
     return () => clearInterval(interval)
   }, [userNames.length, usedNames])
 
+  // Build related state cities (for internal linking)
+  const currentState = states.find(s => s.slug === 'nevada')
+  const relatedCities = currentState ? currentState.cities.filter(c => c.slug !== 'carson-city-nevada').slice(0, 8) : []
+
+  // FAQ items reused for JSON-LD
+  const faqItems = [
+    { q: "What types of vending machine locations are available in Carson City?", a: "Carson City provides vending opportunities in healthcare facilities, educational institutions, retail centers, office buildings, and manufacturing facilities serving the local market." },
+    { q: "How quickly can I get vending machine leads for Carson City?", a: "Our Carson City vending leads are delivered within 3-5 business days with detailed information about each verified business and placement opportunity." },
+    { q: "What makes Carson City a good market for vending machines?", a: "Carson City features a strong business community with diverse industries and consistent foot traffic. The city's economic activity creates ideal conditions for vending machine success." },
+    { q: "Do you provide ongoing support for Carson City locations?", a: "Yes, we provide comprehensive support including location research, business verification, contact information, and market-specific placement strategies for Carson City." },
+    { q: "What industries in Carson City are best for vending machines?", a: "Healthcare, education, manufacturing, retail, and office buildings in Carson City show strong vending potential with reliable traffic and captive audiences." },
+    { q: "How do you verify the quality of Carson City vending locations?", a: "We conduct thorough verification including business validation, employee assessment, facility research, and local market analysis for each Carson City location." },
+    { q: "Can I get customized vending leads for specific areas of Carson City?", a: "Absolutely! We can focus on specific neighborhoods, business districts, or industrial areas within Carson City based on your target market." },
+    { q: "What's the typical ROI for vending machines in Carson City?", a: "Machines in Carson City typically see ROI within 12-18 months, with healthcare and educational facilities often providing the most consistent returns." }
+  ]
+
   return (
     <>
-      <Head>
-        <title>Vending Machine Leads in Tyler, Texas - Business Locations & Opportunities</title>
-        <meta name="description" content="Discover premium vending machine opportunities in Tyler, Texas. Access verified business locations with detailed contact information and placement opportunities." />
-        <meta name="keywords" content="vending machine leads tyler texas, tyler business locations, vending machine business tyler, verified business locations tyler texas" />
-      </Head>
-      
       <Header />
       
       <div className="min-h-screen bg-warm-white">
@@ -127,8 +137,7 @@ export default function TylerPage() {
                   <span className="text-sm font-medium text-chocolate">
                     <span className="font-bold text-coral">{activeUsers}</span> people are choosing plans right now
                   </span>
-                </div>
-              </motion.div>
+                </div></motion.div>
 
               {/* Main Headline */}
               <motion.h1 
@@ -148,7 +157,7 @@ export default function TylerPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Get pre-qualified vending machine locations in Tyler's thriving healthcare and education community. 
+                Get pre-qualified vending machine locations in {cityDisplayName}'s thriving business community. 
                 Access verified businesses with detailed contact information and placement opportunities.
               </motion.p>
 
@@ -168,7 +177,7 @@ export default function TylerPage() {
                 <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
                   <div className="flex items-center gap-3">
                     <StarIcon className="h-5 w-5 text-yellow-500" />
-                    <span className="text-sm font-medium text-chocolate">4.8/5 Rating</span>
+                    <span className="text-sm font-medium text-chocolate">4.7/5 Rating</span>
                   </div>
                 </div>
                 <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
@@ -203,7 +212,6 @@ export default function TylerPage() {
                 >
                   Get Started
                 </button>
-                
               </motion.div>
 
               {/* Social Proof Stats */}
@@ -286,6 +294,7 @@ export default function TylerPage() {
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              
               <motion.div
                 key="Healthcare"
                 initial={{ opacity: 0, y: 20 }}
@@ -295,10 +304,10 @@ export default function TylerPage() {
                 className="bg-blue-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
                 <div className="text-blue-600 mb-4">
-                  <BuildingOfficeIcon className="w-12 h-12" />
+                  <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Tyler features major healthcare facilities including UT Health Tyler and Christus Trinity Mother Frances, providing high foot traffic and stable operations for vending machines.</p>
+                <p className="text-stone leading-relaxed">Healthcare facilities in {cityDisplayName} offer stable operations with high foot traffic from patients, visitors, and staff.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -312,13 +321,27 @@ export default function TylerPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Tyler Junior College and Tyler Independent School District provide consistent student populations and staff, creating ideal vending machine opportunities.</p>
+                <p className="text-stone leading-relaxed">Educational institutions in {cityDisplayName} provide consistent student and staff populations for vending machine opportunities.</p>
+              </motion.div>
+              <motion.div
+                key="Manufacturing"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="bg-purple-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-purple-600 mb-4">
+                  <CpuChipIcon className="w-12 h-12" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
+                <p className="text-stone leading-relaxed">{cityDisplayName}'s manufacturing sector offers large employee bases and extended operating hours, perfect for vending machine placement.</p>
               </motion.div>
               <motion.div
                 key="Retail"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
                 viewport={{ once: true }}
                 className="bg-orange-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
@@ -326,13 +349,13 @@ export default function TylerPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Retail locations throughout Tyler including Brookshire Grocery Company provide high customer traffic and diverse demographics for vending machine success.</p>
+                <p className="text-stone leading-relaxed">Retail locations throughout {cityDisplayName} provide high customer traffic and diverse demographics for vending machine success.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.3 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
                 viewport={{ once: true }}
                 className="bg-indigo-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
@@ -340,13 +363,13 @@ export default function TylerPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Professional office spaces in Tyler offer captive audiences during business hours with consistent daily traffic.</p>
+                <p className="text-stone leading-relaxed">Professional office spaces in {cityDisplayName} offer captive audiences during business hours with consistent daily traffic.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
+                transition={{ duration: 0.8, delay: 0.5 }}
                 viewport={{ once: true }}
                 className="bg-red-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
@@ -354,28 +377,38 @@ export default function TylerPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Tyler's transportation hubs including major highways and regional airport provide high-volume foot traffic.</p>
-              </motion.div>
-              <motion.div
-                key="Agriculture"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.5 }}
-                viewport={{ once: true }}
-                className="bg-yellow-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
-              >
-                <div className="text-yellow-600 mb-4">
-                  <HeartIcon className="w-12 h-12" />
-                </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Agriculture</h3>
-                <p className="text-stone leading-relaxed">Tyler's rose industry and agricultural businesses provide unique vending machine opportunities with seasonal workers and visitors.</p>
+                <p className="text-stone leading-relaxed">{cityDisplayName}'s transportation hubs including airports, bus stations, and transit centers provide high-volume foot traffic.</p>
               </motion.div>
             </div>
           </div>
         </section>
 
         {/* Hot Leads Section */}
-        <HotLeads />
+        <section id="hot-leads" className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
+              >
+                One-Time Location Packages for {cityDisplayName}
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-lg text-stone max-w-3xl mx-auto"
+              >
+                Get immediate access to qualified vending machine locations without monthly commitments.
+              </motion.p>
+            </div>
+            <HotLeads />
+          </div>
+        </section>
 
         {/* Vending Course Section */}
         <section className="py-16 bg-white">
@@ -405,7 +438,7 @@ export default function TylerPage() {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-16 bg-warm-white">
+        <section id="faq" className="py-16 bg-warm-white">
           <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <motion.h2
@@ -429,178 +462,73 @@ export default function TylerPage() {
             </div>
             
             <div className="space-y-6">
-              <motion.div
-                key="0"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What types of vending machine locations are available in Tyler?</h3>
-                <p className="text-stone leading-relaxed">Tyler offers diverse vending opportunities including healthcare facilities like UT Health Tyler and Christus Trinity Mother Frances, educational institutions such as Tyler Junior College, retail locations including Brookshire Grocery Company, office buildings, transportation hubs, and agricultural businesses. Each location is pre-verified for optimal vending machine success.</p>
-              </motion.div>
-              <motion.div
-                key="1"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.1 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">How quickly can I get vending machine leads for Tyler?</h3>
-                <p className="text-stone leading-relaxed">Our Tyler vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry into this East Texas market.</p>
-              </motion.div>
-              <motion.div
-                key="2"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What makes Tyler a good market for vending machines?</h3>
-                <p className="text-stone leading-relaxed">Tyler features a strong healthcare community with major medical facilities, stable employment through educational institutions and healthcare systems, and consistent foot traffic. The city's economic growth and East Texas location create ideal conditions for vending machine success.</p>
-              </motion.div>
-              <motion.div
-                key="3"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.3 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">Do you provide ongoing support for Tyler locations?</h3>
-                <p className="text-stone leading-relaxed">Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Tyler's business environment.</p>
-              </motion.div>
-              <motion.div
-                key="4"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What industries in Tyler are best for vending machines?</h3>
-                <p className="text-stone leading-relaxed">Healthcare, education, retail, office buildings, transportation, and agriculture sectors in Tyler show the highest potential for vending machine success due to consistent foot traffic and captive audiences from major employers.</p>
-              </motion.div>
-              <motion.div
-                key="5"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.5 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">How do you verify the quality of Tyler vending locations?</h3>
-                <p className="text-stone leading-relaxed">We conduct thorough research on each Tyler location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.</p>
-              </motion.div>
-              <motion.div
-                key="6"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.6 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">Can I get customized vending leads for specific areas of Tyler?</h3>
-                <p className="text-stone leading-relaxed">Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Tyler based on your preferences and target market requirements.</p>
-              </motion.div>
-              <motion.div
-                key="7"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.7 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What's the typical ROI for vending machines in Tyler?</h3>
-                <p className="text-stone leading-relaxed">Vending machines in Tyler typically show strong ROI due to the city's business density and consistent traffic patterns. Our research shows average payback periods of 12-18 months for well-placed machines.</p>
-              </motion.div>
-              <motion.div
-                key="8"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.8 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">How does Tyler's healthcare presence affect vending opportunities?</h3>
-                <p className="text-stone leading-relaxed">Tyler's major healthcare facilities including UT Health Tyler and Christus Trinity Mother Frances create excellent vending machine opportunities with large employee bases, patient populations, and 24/7 operations. These locations provide consistent foot traffic and stable revenue streams.</p>
-              </motion.div>
-              <motion.div
-                key="9"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.9 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What educational opportunities exist for vending machines in Tyler?</h3>
-                <p className="text-stone leading-relaxed">Tyler Junior College and Tyler Independent School District provide excellent vending machine opportunities with consistent student populations, faculty, and staff throughout the academic year. Campus locations typically show high usage rates and stable revenue.</p>
-              </motion.div>
-              <motion.div
-                key="10"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 1.0 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">How does Tyler's East Texas location benefit vending businesses?</h3>
-                <p className="text-stone leading-relaxed">Tyler's strategic location in East Texas provides easy access to major markets like Dallas-Fort Worth, Houston, and Shreveport. This regional positioning offers logistical advantages for vending machine service and maintenance while serving a diverse regional customer base.</p>
-              </motion.div>
-              <motion.div
-                key="11"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 1.1 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What retail opportunities exist for vending machines in Tyler?</h3>
-                <p className="text-stone leading-relaxed">Brookshire Grocery Company and other retail locations in Tyler provide excellent vending machine opportunities with high customer traffic, diverse demographics, and consistent daily operations. These locations often have high usage rates due to customer convenience needs.</p>
-              </motion.div>
-              <motion.div
-                key="12"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 1.2 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">How do seasonal changes affect vending machine performance in Tyler?</h3>
-                <p className="text-stone leading-relaxed">Tyler's East Texas climate provides relatively stable vending machine performance year-round. However, educational locations may see increased usage during academic semesters, while healthcare facilities maintain consistent traffic regardless of season.</p>
-              </motion.div>
-              <motion.div
-                key="13"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 1.3 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What support services do you offer for Tyler vending machine operators?</h3>
-                <p className="text-stone leading-relaxed">We provide comprehensive support including location research, business contact information, placement strategies, market analysis, and ongoing consultation to ensure your vending machines succeed in Tyler's competitive business environment.</p>
-              </motion.div>
-              <motion.div
-                key="14"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 1.4 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">How do you ensure the quality of Tyler vending machine leads?</h3>
-                <p className="text-stone leading-relaxed">We conduct thorough research on each Tyler location including business verification, foot traffic analysis, employee count validation, industry research, and contact information verification to ensure only high-quality opportunities are included in our leads.</p>
-              </motion.div>
+              {faqItems.map((item, idx) => (
+                <motion.div
+                  key={idx}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: idx * 0.1 }}
+                  viewport={{ once: true }}
+                  className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+                >
+                  <h3 className="text-lg font-semibold text-charcoal mb-3">{item.q}</h3>
+                  <p className="text-stone leading-relaxed">{item.a}</p>
+                </motion.div>
+              ))}
             </div>
           </div>
         </section>
+
+        {/* More cities in State */}
+        {relatedCities.length > 0 && (
+          <section className="py-12 bg-white border-t border-gray-200">
+            <div className="mx-auto max-w-7xl px-6">
+              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in {stateDisplayName}</h2>
+              <div className="flex flex-wrap gap-3">
+                {relatedCities.map(city => (
+                  <Link key={city.slug} href={`/vending-leads/${city.slug}`} className="px-3 py-2 rounded-lg border border-gray-200 bg-cream/60 text-chocolate hover:text-navy">
+                    Vending Leads in {city.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
       </div>
       
       <Footer />
       <ZipCodeModalWrapper />
+      {/* JSON-LD: Breadcrumbs and FAQ */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
+              { '@type': 'ListItem', position: 3, name: 'Nevada', item: `https://www.thevendinglocator.com/vending-leads/${stateSlug}` },
+              { '@type': 'ListItem', position: 4, name: 'Carson City', item: `https://www.thevendinglocator.com/vending-leads/${slug}` }
+            ]
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: faqItems.map(i => ({
+              '@type': 'Question',
+              name: i.q,
+              acceptedAnswer: { '@type': 'Answer', text: i.a }
+            }))
+          })
+        }}
+      />
     </>
   )
 }

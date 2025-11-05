@@ -1,4 +1,210 @@
-'use client'
+const fs = require('fs');
+const path = require('path');
+
+// List of pages to regenerate
+const oldTemplatePages = `alexandria-virginia
+anchorage-alaska
+arlington-virginia
+augusta-maine
+bangor-maine
+beaumont-texas
+bellevue-nebraska
+bentonville-arkansas
+billings-montana
+biloxi-mississippi
+bloomington-illinois
+bozeman-montana
+butte-montana
+carrollton-texas
+carson-city-nevada
+champaign-urbana-illinois
+conway-arkansas
+cranston-rhode-island
+dakota
+decatur-illinois
+denton-texas
+dover-delaware
+eugene-oregon
+evanston-illinois
+fairbanks-alaska
+fayetteville-arkansas
+fort-lauderdale-florida
+fort-myers-florida
+fort-smith-arkansas
+frisco-texas
+garland-texas
+great-falls-montana
+gulfport-mississippi
+hampshire
+hartford-connecticut
+hattiesburg-mississippi
+helena-montana
+homer-alaska
+island
+jackson-mississippi
+jacksonville-florida
+jersey
+jonesboro-arkansas
+juneau-alaska
+kansas-city-kansas
+kenai-alaska
+ketchikan-alaska
+killeen-texas
+kodiak-alaska
+laredo-texas
+las-cruces-new-mexico
+league-city-texas
+lewisville-texas
+lincoln-nebraska
+mcallen-texas
+mckinney-texas
+mesquite-texas
+miami-florida
+missoula-montana
+moline-illinois
+naperville-illinois
+north-las-vegas-nevada
+north-little-rock-arkansas
+norwalk-connecticut
+olathe-kansas
+overland-park-kansas
+palmer-alaska
+pearland-texas
+peoria-illinois
+pine-bluff-arkansas
+portland-maine
+reno-nevada
+richardson-texas
+rockford-illinois
+rogers-arkansas
+round-rock-texas
+salem-oregon
+santa-fe-new-mexico
+sarasota-florida
+sitka-alaska
+soldotna-alaska
+sparks-nevada
+springdale-arkansas
+springfield-illinois
+st-petersburg-florida
+stamford-connecticut
+sugar-land-texas
+tallahassee-florida
+tampa-florida
+topeka-kansas
+tyler-texas
+waco-texas
+warwick-rhode-island
+washington-washington-dc
+wasilla-alaska
+waterbury-connecticut`.split('\n').filter(p => p.trim());
+
+console.log(`Found ${oldTemplatePages.length} pages to regenerate\n`);
+
+// Helper function to parse city slug into display name and state
+function parseCitySlug(slug) {
+  const parts = slug.split('-');
+  
+  // Handle special cases
+  if (slug === 'dakota') return { city: 'Dakota', state: 'Unknown', stateSlug: 'unknown' };
+  if (slug === 'hampshire') return { city: 'Hampshire', state: 'Unknown', stateSlug: 'unknown' };
+  if (slug === 'island') return { city: 'Island', state: 'Unknown', stateSlug: 'unknown' };
+  if (slug === 'jersey') return { city: 'Jersey', state: 'Unknown', stateSlug: 'unknown' };
+  
+  // State mapping
+  const stateMap = {
+    'virginia': 'Virginia',
+    'alaska': 'Alaska',
+    'maine': 'Maine',
+    'texas': 'Texas',
+    'nebraska': 'Nebraska',
+    'arkansas': 'Arkansas',
+    'montana': 'Montana',
+    'mississippi': 'Mississippi',
+    'illinois': 'Illinois',
+    'nevada': 'Nevada',
+    'delaware': 'Delaware',
+    'oregon': 'Oregon',
+    'florida': 'Florida',
+    'kansas': 'Kansas',
+    'connecticut': 'Connecticut',
+    'mexico': 'New Mexico',
+    'dc': 'Washington DC'
+  };
+  
+  // Find state in slug
+  let state = '';
+  let stateSlug = '';
+  let cityParts = [];
+  
+  for (let i = parts.length - 1; i >= 0; i--) {
+    if (stateMap[parts[i]]) {
+      state = stateMap[parts[i]];
+      stateSlug = parts[i];
+      cityParts = parts.slice(0, i);
+      break;
+    }
+    // Check for multi-word states
+    if (i > 0 && parts[i-1] === 'new' && parts[i] === 'mexico') {
+      state = 'New Mexico';
+      stateSlug = 'new-mexico';
+      cityParts = parts.slice(0, i-1);
+      break;
+    }
+    if (parts[i] === 'washington' && parts[i+1] === 'dc') {
+      state = 'Washington DC';
+      stateSlug = 'washington-dc';
+      cityParts = parts.slice(0, i);
+      break;
+    }
+    if (parts[i] === 'rhode' && parts[i+1] === 'island') {
+      state = 'Rhode Island';
+      stateSlug = 'rhode-island';
+      cityParts = parts.slice(0, i);
+      break;
+    }
+  }
+  
+  // Capitalize city name
+  const city = cityParts
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
+  
+  return { city, state, stateSlug };
+}
+
+// Generate pageClient.tsx content
+function generatePageClient(slug) {
+  const { city, state, stateSlug } = parseCitySlug(slug);
+  
+  // Try to read existing page to get city data
+  let existingData = null;
+  try {
+    const existingPath = path.join(process.cwd(), `src/app/vending-leads/${slug}/pageClient.tsx`);
+    const existingContent = fs.readFileSync(existingPath, 'utf8');
+    
+    // Extract city data if it exists
+    const dataMatch = existingContent.match(/const cityData = \{([^}]+)\}/s);
+    if (dataMatch) {
+      existingData = dataMatch[0];
+    }
+  } catch (e) {
+    // File doesn't exist or can't be read
+  }
+  
+  // Default city data
+  const cityData = existingData || `const cityData = {
+    'name': '${city}',
+    'state': '${state}',
+    'population': '50K-100K',
+    'businesses': '2K-5K',
+    'industries': '6-10',
+    'verifiedLocations': '50-100',
+    'rating': '4.7/5',
+    'description': 'Growing business community in ${state}'
+  }`;
+  
+  return `'use client'
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
@@ -12,23 +218,13 @@ import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function WasillaAlaskaVendingLeadsPage() {
+export default function ${city.replace(/\s+/g, '')}${state.replace(/\s+/g, '')}VendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Wasilla';
-  const stateDisplayName = 'Alaska';
+  const cityDisplayName = '${city}';
+  const stateDisplayName = '${state}';
   
   // City-specific data
-  const cityData = {
-  name: 'Wasilla',
-  state: 'Alaska',
-  population: '10,000',
-  businesses: '800+',
-  industries: '5',
-  verifiedLocations: '100-150',
-  rating: '4.8/5',
-  description: 'Fast-growing city with retail, services, and outdoor recreation',
-  majorEmployers: ['Mat-Su Regional Medical Center', 'Matanuska-Susitna Borough', 'Wasilla Middle School', 'Fred Meyer', 'Walmart']
-};
+  ${cityData};
   
   // Active users counter
   const [activeUsers, setActiveUsers] = useState(25)
@@ -37,9 +233,9 @@ export default function WasillaAlaskaVendingLeadsPage() {
 
   // User names for active users counter
   const [userNames, setUserNames] = useState([
-    'Mike from Wasilla', 'Sarah in Wasilla', 'David in Wasilla', 'Lisa in Wasilla',
-    'Tom in Wasilla', 'Jennifer in Wasilla', 'Robert in Wasilla', 'Amanda in Wasilla',
-    'Chris in Wasilla', 'Maria in Wasilla', 'James in Wasilla', 'Emily in Wasilla'
+    'Mike from ${city}', 'Sarah in ${city}', 'David in ${city}', 'Lisa in ${city}',
+    'Tom in ${city}', 'Jennifer in ${city}', 'Robert in ${city}', 'Amanda in ${city}',
+    'Chris in ${city}', 'Maria in ${city}', 'James in ${city}', 'Emily in ${city}'
   ])
 
   // Active users counter effect
@@ -80,19 +276,19 @@ export default function WasillaAlaskaVendingLeadsPage() {
   }, [userNames.length, usedNames])
 
   // Build related state cities (for internal linking)
-  const currentState = states.find(s => s.slug === 'alaska')
-  const relatedCities = currentState ? currentState.cities.filter(c => c.slug !== 'wasilla-alaska').slice(0, 8) : []
+  const currentState = states.find(s => s.slug === '${stateSlug}')
+  const relatedCities = currentState ? currentState.cities.filter(c => c.slug !== '${slug}').slice(0, 8) : []
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: "What types of vending machine locations are available in Wasilla?", a: "Wasilla provides vending opportunities in healthcare facilities, educational institutions, retail centers, office buildings, and manufacturing facilities serving the local market." },
-    { q: "How quickly can I get vending machine leads for Wasilla?", a: "Our Wasilla vending leads are delivered within 3-5 business days with detailed information about each verified business and placement opportunity." },
-    { q: "What makes Wasilla a good market for vending machines?", a: "Wasilla features a strong business community with diverse industries and consistent foot traffic. The city's economic activity creates ideal conditions for vending machine success." },
-    { q: "Do you provide ongoing support for Wasilla locations?", a: "Yes, we provide comprehensive support including location research, business verification, contact information, and market-specific placement strategies for Wasilla." },
-    { q: "What industries in Wasilla are best for vending machines?", a: "Healthcare, education, manufacturing, retail, and office buildings in Wasilla show strong vending potential with reliable traffic and captive audiences." },
-    { q: "How do you verify the quality of Wasilla vending locations?", a: "We conduct thorough verification including business validation, employee assessment, facility research, and local market analysis for each Wasilla location." },
-    { q: "Can I get customized vending leads for specific areas of Wasilla?", a: "Absolutely! We can focus on specific neighborhoods, business districts, or industrial areas within Wasilla based on your target market." },
-    { q: "What's the typical ROI for vending machines in Wasilla?", a: "Machines in Wasilla typically see ROI within 12-18 months, with healthcare and educational facilities often providing the most consistent returns." }
+    { q: "What types of vending machine locations are available in ${city}?", a: "${city} provides vending opportunities in healthcare facilities, educational institutions, retail centers, office buildings, and manufacturing facilities serving the local market." },
+    { q: "How quickly can I get vending machine leads for ${city}?", a: "Our ${city} vending leads are delivered within 3-5 business days with detailed information about each verified business and placement opportunity." },
+    { q: "What makes ${city} a good market for vending machines?", a: "${city} features a strong business community with diverse industries and consistent foot traffic. The city's economic activity creates ideal conditions for vending machine success." },
+    { q: "Do you provide ongoing support for ${city} locations?", a: "Yes, we provide comprehensive support including location research, business verification, contact information, and market-specific placement strategies for ${city}." },
+    { q: "What industries in ${city} are best for vending machines?", a: "Healthcare, education, manufacturing, retail, and office buildings in ${city} show strong vending potential with reliable traffic and captive audiences." },
+    { q: "How do you verify the quality of ${city} vending locations?", a: "We conduct thorough verification including business validation, employee assessment, facility research, and local market analysis for each ${city} location." },
+    { q: "Can I get customized vending leads for specific areas of ${city}?", a: "Absolutely! We can focus on specific neighborhoods, business districts, or industrial areas within ${city} based on your target market." },
+    { q: "What's the typical ROI for vending machines in ${city}?", a: "Machines in ${city} typically see ROI within 12-18 months, with healthcare and educational facilities often providing the most consistent returns." }
   ]
 
   return (
@@ -112,7 +308,7 @@ export default function WasillaAlaskaVendingLeadsPage() {
                 Vending Leads
               </Link>
               <span>/</span>
-              <Link href={`/vending-leads/${stateDisplayName.toLowerCase().replace(/\s+/g, '-')}`} className="hover:text-navy transition-colors">
+              <Link href={\`/vending-leads/\${stateDisplayName.toLowerCase().replace(/\\s+/g, '-')}\`} className="hover:text-navy transition-colors">
                 {stateDisplayName}
               </Link>
               <span>/</span>
@@ -486,7 +682,7 @@ export default function WasillaAlaskaVendingLeadsPage() {
               <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in {stateDisplayName}</h2>
               <div className="flex flex-wrap gap-3">
                 {relatedCities.map(city => (
-                  <Link key={city.slug} href={`/vending-leads/${city.slug}`} className="px-3 py-2 rounded-lg border border-gray-200 bg-cream/60 text-chocolate hover:text-navy">
+                  <Link key={city.slug} href={\`/vending-leads/\${city.slug}\`} className="px-3 py-2 rounded-lg border border-gray-200 bg-cream/60 text-chocolate hover:text-navy">
                     Vending Leads in {city.name}
                   </Link>
                 ))}
@@ -509,8 +705,8 @@ export default function WasillaAlaskaVendingLeadsPage() {
             itemListElement: [
               { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
               { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'Alaska', item: `https://www.thevendinglocator.com/vending-leads/${stateSlug}` },
-              { '@type': 'ListItem', position: 4, name: 'Wasilla', item: `https://www.thevendinglocator.com/vending-leads/${slug}` }
+              { '@type': 'ListItem', position: 3, name: '${state}', item: \`https://www.thevendinglocator.com/vending-leads/\${stateSlug}\` },
+              { '@type': 'ListItem', position: 4, name: '${city}', item: \`https://www.thevendinglocator.com/vending-leads/\${slug}\` }
             ]
           })
         }}
@@ -532,3 +728,41 @@ export default function WasillaAlaskaVendingLeadsPage() {
     </>
   )
 }
+`;
+}
+
+// Process each page
+let successful = 0;
+let failed = 0;
+const failedPages = [];
+
+oldTemplatePages.forEach((slug, index) => {
+  try {
+    console.log(`[${index + 1}/${oldTemplatePages.length}] Processing: ${slug}`);
+    
+    const pageClientPath = path.join(process.cwd(), `src/app/vending-leads/${slug}/pageClient.tsx`);
+    const newContent = generatePageClient(slug);
+    
+    // Write the new file
+    fs.writeFileSync(pageClientPath, newContent, 'utf8');
+    
+    successful++;
+    console.log(`  ✓ Success`);
+  } catch (error) {
+    failed++;
+    failedPages.push(slug);
+    console.log(`  ✗ Failed: ${error.message}`);
+  }
+});
+
+console.log(`\n${'='.repeat(60)}`);
+console.log(`REGENERATION COMPLETE`);
+console.log(`${'='.repeat(60)}`);
+console.log(`✓ Successful: ${successful}`);
+console.log(`✗ Failed: ${failed}`);
+
+if (failedPages.length > 0) {
+  console.log(`\nFailed pages:`);
+  failedPages.forEach(page => console.log(`  - ${page}`));
+}
+
