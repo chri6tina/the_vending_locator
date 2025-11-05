@@ -1,0 +1,46 @@
+import DuluthMinnesotaHowToStartPage from './pageClient'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'How to Start a Vending Machine Business in Duluth, Minnesota (2025 Guide)',
+  description: 'Complete guide to starting a vending machine business in Duluth, Minnesota. Learn about licensing, permits, startup costs, finding locations, and our comprehensive vending course to get started.',
+  keywords: [
+    'vending machine business Duluth',
+    'start vending business Duluth Minnesota',
+    'Duluth vending permits',
+    'vending machine locations Duluth',
+    'Duluth vending course',
+    'vending business guide Minnesota'
+  ],
+  alternates: {
+    canonical: 'https://www.thevendinglocator.com/how-to-start-a-vending-machine-business/duluth-minnesota'
+  },
+  openGraph: {
+    title: 'How to Start a Vending Machine Business in Duluth, Minnesota',
+    description: 'Step-by-step guide with licensing, locations, and vending course for Duluth, Minnesota',
+    url: 'https://www.thevendinglocator.com/how-to-start-a-vending-machine-business/duluth-minnesota',
+    siteName: 'The Vending Locator',
+    type: 'article',
+    images: [
+      {
+        url: 'https://www.thevendinglocator.com/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'How to Start a Vending Machine Business in Duluth, Minnesota'
+      }
+    ]
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'How to Start a Vending Machine Business in Duluth, Minnesota',
+    description: 'Complete guide with licensing, locations, and vending course for Duluth, Minnesota'
+  },
+  robots: {
+    index: true,
+    follow: true
+  }
+}
+
+export default function Page() {
+  return <DuluthMinnesotaHowToStartPage />
+}

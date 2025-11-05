@@ -1,0 +1,46 @@
+import ChulaVistaCaliforniaHowToStartPage from './pageClient'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'How to Start a Vending Machine Business in Chula Vista, California (2025 Guide)',
+  description: 'Complete guide to starting a vending machine business in Chula Vista, California. Learn about licensing, permits, startup costs, finding locations, and our comprehensive vending course to get started.',
+  keywords: [
+    'vending machine business Chula Vista',
+    'start vending business Chula Vista California',
+    'Chula Vista vending permits',
+    'vending machine locations Chula Vista',
+    'Chula Vista vending course',
+    'vending business guide California'
+  ],
+  alternates: {
+    canonical: 'https://www.thevendinglocator.com/how-to-start-a-vending-machine-business/chula-vista-california'
+  },
+  openGraph: {
+    title: 'How to Start a Vending Machine Business in Chula Vista, California',
+    description: 'Step-by-step guide with licensing, locations, and vending course for Chula Vista, California',
+    url: 'https://www.thevendinglocator.com/how-to-start-a-vending-machine-business/chula-vista-california',
+    siteName: 'The Vending Locator',
+    type: 'article',
+    images: [
+      {
+        url: 'https://www.thevendinglocator.com/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'How to Start a Vending Machine Business in Chula Vista, California'
+      }
+    ]
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'How to Start a Vending Machine Business in Chula Vista, California',
+    description: 'Complete guide with licensing, locations, and vending course for Chula Vista, California'
+  },
+  robots: {
+    index: true,
+    follow: true
+  }
+}
+
+export default function Page() {
+  return <ChulaVistaCaliforniaHowToStartPage />
+}

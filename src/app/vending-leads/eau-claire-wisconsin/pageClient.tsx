@@ -19,14 +19,14 @@ export default function EauClaireWisconsinVendingLeadsPage() {
   
   // City-specific data
   const cityData = {
-    'name': 'Manchester',
+    'name': 'Eau Claire',
     'state': 'Wisconsin',
-    'population': '115K+',
-    'businesses': '3K-5K',
-    'industries': '8-12',
-    'verifiedLocations': '120-240',
+    'population': '~70,000',
+    'businesses': '1.8K-2.3K',
+    'industries': '7-9',
+    'verifiedLocations': '75-150',
     'rating': '4.7/5',
-    'description': 'Largest city in Wisconsin with diverse business opportunities'
+    'description': 'Healthcare and education hub in western Wisconsin'
   };
   
   // Active users counter
@@ -36,9 +36,9 @@ export default function EauClaireWisconsinVendingLeadsPage() {
 
   // User names for active users counter
   const [userNames, setUserNames] = useState([
-    'Mike from Manchester', 'Sarah in Downtown', 'David in Manchester', 'Lisa in Manchester',
-    'Tom in Manchester', 'Jennifer in Manchester', 'Robert in Manchester', 'Amanda in Manchester',
-    'Chris in Manchester', 'Maria in Manchester', 'James in Manchester', 'Emily in Manchester'
+    'Mike from Eau', 'Sarah in Eau', 'David in Eau', 'Lisa in Eau',
+    'Tom in Eau', 'Jennifer in Eau', 'Robert in Eau', 'Amanda in Eau',
+    'Chris in Eau', 'Maria in Eau', 'James in Eau', 'Emily in Eau'
   ])
 
   // Active users counter effect
@@ -78,20 +78,13 @@ export default function EauClaireWisconsinVendingLeadsPage() {
     return () => clearInterval(interval)
   }, [userNames.length, usedNames])
 
-  // Build related Wisconsin cities (for internal linking)
+  // Build related New Hampshire cities (for internal linking)
   const newHampshire = states.find(s => s.slug === 'wisconsin')
-  const relatedCities = newHampshire ? newHampshire.cities.filter(c => c.slug !== 'eau-claire-wisconsin').slice(0, 8) : []
+  const relatedCities = newHampshire ? newHampshire.cities.filter(c => c.slug !== 'manchester-wisconsin').slice(0, 8) : []
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in Eau Claire?', a: 'Eau Claire features excellent vending opportunities at HSHS Sacred Heart Hospital and Mayo Clinic Health System, University of Wisconsin-Eau Claire campus, manufacturing facilities, downtown office buildings, and retail centers along Clairemont Avenue.' },
-    { q: 'How quickly can I get vending machine leads for Eau Claire?', a: 'Eau Claire vending leads are typically delivered within 3-5 business days. Our research includes comprehensive analysis of the Chippewa Valley market to provide verified, high-quality location opportunities throughout the region.' },
-    { q: 'What makes Eau Claire a good market for vending machines?', a: 'Eau Claire\'s role as a regional hub for healthcare, education, and commerce creates strong vending demand. The city\'s stable economy, growing technology sector, and position as the Chippewa Valley\'s commercial center ensure consistent foot traffic and reliable business opportunities.' },
-    { q: 'Do you provide ongoing support for Eau Claire locations?', a: 'Yes, we provide complete ongoing support for all Eau Claire vending locations. Our services include market updates specific to the Chippewa Valley, location performance insights, and assistance with expanding your vending business throughout western Wisconsin.' },
-    { q: 'What industries in Eau Claire are best for vending machines?', a: 'Healthcare facilities like Sacred Heart Hospital and Mayo Clinic, higher education at UW-Eau Claire, manufacturing plants, and the growing technology sector provide excellent opportunities. The downtown business district also offers strong year-round traffic.' },
-    { q: 'How do you verify the quality of Eau Claire vending locations?', a: 'We verify every Eau Claire location through business validation, facility assessment, traffic pattern analysis, and competition review. Our focus is on locations with strong employee bases and consistent daily visitor counts.' },
-    { q: 'Can I get customized vending leads for specific areas of Eau Claire?', a: 'Absolutely! We can focus on specific areas like Downtown Eau Claire, the Water Street district, the UW-Eau Claire campus area, or the Clairemont Avenue commercial corridor based on your business preferences.' },
-    { q: 'What\'s the typical ROI for vending machines in Eau Claire?', a: 'Eau Claire\'s stable economy and consistent workforce patterns typically result in reliable returns. Most vending operators achieve positive ROI within 12-18 months, with healthcare and university locations often delivering strong performance.' }
+    { q: 'What types of vending machine locations are available in Eau Claire?', a: 'Eau Claire offers vending opportunities in healthcare facilities (Mayo Clinic Health System, HSHS Sacred Heart Hospital), University of Wisconsin-Eau Claire campus, manufacturing plants, retail centers, and professional offices.' },\n    { q: 'How quickly can I get vending machine leads for Eau Claire?', a: 'Our Eau Claire vending leads are delivered within 3-5 business days with detailed information about each location and Chippewa Valley market insights.' },\n    { q: 'What makes Eau Claire a good market for vending machines?', a: 'Eau Claire's combination of major healthcare systems, university students, and manufacturing creates year-round vending demand. The city's role as a regional hub for western Wisconsin ensures consistent business activity.' },\n    { q: 'Do you provide ongoing support for Eau Claire locations?', a: 'Yes, we offer complete support including location verification, healthcare and education sector insights, contact information, and placement strategies specific to Eau Claire's market.' },\n    { q: 'What industries in Eau Claire are best for vending machines?', a: 'Healthcare facilities (Mayo Clinic, Sacred Heart), higher education (UW-Eau Claire), manufacturing plants, and retail centers show excellent potential due to large employee and student populations.' },\n    { q: 'How do you verify the quality of Eau Claire vending locations?', a: 'We verify each location through business research, enrollment and patient data analysis, employee validation, and facility assessment to ensure quality healthcare and university placements.' },\n    { q: 'Can I get customized vending leads for specific areas of Eau Claire?', a: 'Absolutely! We can focus on the Water Street downtown district, Clairemont Avenue corridor, or UW-Eau Claire campus area based on your target market.' },\n    { q: 'What's the typical ROI for vending machines in Eau Claire?', a: 'Vending machines in Eau Claire typically achieve ROI within 11-15 months, with healthcare and university locations often seeing faster returns due to consistent high-volume traffic.' }
   ]
 
   return (
@@ -481,11 +474,11 @@ export default function EauClaireWisconsinVendingLeadsPage() {
           </div>
         </section>
 
-        {/* More cities in Wisconsin */}
+        {/* More cities in New Hampshire */}
         {relatedCities.length > 0 && (
           <section className="py-12 bg-white border-t border-gray-200">
             <div className="mx-auto max-w-7xl px-6">
-              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in Wisconsin</h2>
+              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in New Hampshire</h2>
               <div className="flex flex-wrap gap-3">
                 {relatedCities.map(city => (
                   <Link key={city.slug} href={`/vending-leads/${city.slug}`} className="px-3 py-2 rounded-lg border border-gray-200 bg-cream/60 text-chocolate hover:text-navy">
@@ -511,8 +504,8 @@ export default function EauClaireWisconsinVendingLeadsPage() {
             itemListElement: [
               { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
               { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'Wisconsin', item: 'https://www.thevendinglocator.com/vending-leads/wisconsin' },
-              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/eau-claire-wisconsin' }
+              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/wisconsin' },
+              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-wisconsin' }
             ]
           })
         }}

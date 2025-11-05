@@ -1,0 +1,46 @@
+import LasCrucesNewMexicoHowToStartPage from './pageClient'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'How to Start a Vending Machine Business in Las Cruces, New Mexico (2025 Guide)',
+  description: 'Complete guide to starting a vending machine business in Las Cruces, New Mexico. Learn about licensing, permits, startup costs, finding locations, and our comprehensive vending course to get started.',
+  keywords: [
+    'vending machine business Las Cruces',
+    'start vending business Las Cruces New Mexico',
+    'Las Cruces vending permits',
+    'vending machine locations Las Cruces',
+    'Las Cruces vending course',
+    'vending business guide New Mexico'
+  ],
+  alternates: {
+    canonical: 'https://www.thevendinglocator.com/how-to-start-a-vending-machine-business/las-cruces-new-mexico'
+  },
+  openGraph: {
+    title: 'How to Start a Vending Machine Business in Las Cruces, New Mexico',
+    description: 'Step-by-step guide with licensing, locations, and vending course for Las Cruces, New Mexico',
+    url: 'https://www.thevendinglocator.com/how-to-start-a-vending-machine-business/las-cruces-new-mexico',
+    siteName: 'The Vending Locator',
+    type: 'article',
+    images: [
+      {
+        url: 'https://www.thevendinglocator.com/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'How to Start a Vending Machine Business in Las Cruces, New Mexico'
+      }
+    ]
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'How to Start a Vending Machine Business in Las Cruces, New Mexico',
+    description: 'Complete guide with licensing, locations, and vending course for Las Cruces, New Mexico'
+  },
+  robots: {
+    index: true,
+    follow: true
+  }
+}
+
+export default function Page() {
+  return <LasCrucesNewMexicoHowToStartPage />
+}

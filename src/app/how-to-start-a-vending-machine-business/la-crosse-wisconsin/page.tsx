@@ -1,0 +1,46 @@
+import LaCrosseWisconsinHowToStartPage from './pageClient'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'How to Start a Vending Machine Business in La Crosse, Wisconsin (2025 Guide)',
+  description: 'Complete guide to starting a vending machine business in La Crosse, Wisconsin. Learn about licensing, permits, startup costs, finding locations, and our comprehensive vending course to get started.',
+  keywords: [
+    'vending machine business La Crosse',
+    'start vending business La Crosse Wisconsin',
+    'La Crosse vending permits',
+    'vending machine locations La Crosse',
+    'La Crosse vending course',
+    'vending business guide Wisconsin'
+  ],
+  alternates: {
+    canonical: 'https://www.thevendinglocator.com/how-to-start-a-vending-machine-business/la-crosse-wisconsin'
+  },
+  openGraph: {
+    title: 'How to Start a Vending Machine Business in La Crosse, Wisconsin',
+    description: 'Step-by-step guide with licensing, locations, and vending course for La Crosse, Wisconsin',
+    url: 'https://www.thevendinglocator.com/how-to-start-a-vending-machine-business/la-crosse-wisconsin',
+    siteName: 'The Vending Locator',
+    type: 'article',
+    images: [
+      {
+        url: 'https://www.thevendinglocator.com/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'How to Start a Vending Machine Business in La Crosse, Wisconsin'
+      }
+    ]
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'How to Start a Vending Machine Business in La Crosse, Wisconsin',
+    description: 'Complete guide with licensing, locations, and vending course for La Crosse, Wisconsin'
+  },
+  robots: {
+    index: true,
+    follow: true
+  }
+}
+
+export default function Page() {
+  return <LaCrosseWisconsinHowToStartPage />
+}

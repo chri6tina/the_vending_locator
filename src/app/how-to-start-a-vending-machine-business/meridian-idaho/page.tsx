@@ -1,0 +1,46 @@
+import MeridianIdahoHowToStartPage from './pageClient'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'How to Start a Vending Machine Business in Meridian, Idaho (2025 Guide)',
+  description: 'Complete guide to starting a vending machine business in Meridian, Idaho. Learn about licensing, permits, startup costs, finding locations, and our comprehensive vending course to get started.',
+  keywords: [
+    'vending machine business Meridian',
+    'start vending business Meridian Idaho',
+    'Meridian vending permits',
+    'vending machine locations Meridian',
+    'Meridian vending course',
+    'vending business guide Idaho'
+  ],
+  alternates: {
+    canonical: 'https://www.thevendinglocator.com/how-to-start-a-vending-machine-business/meridian-idaho'
+  },
+  openGraph: {
+    title: 'How to Start a Vending Machine Business in Meridian, Idaho',
+    description: 'Step-by-step guide with licensing, locations, and vending course for Meridian, Idaho',
+    url: 'https://www.thevendinglocator.com/how-to-start-a-vending-machine-business/meridian-idaho',
+    siteName: 'The Vending Locator',
+    type: 'article',
+    images: [
+      {
+        url: 'https://www.thevendinglocator.com/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'How to Start a Vending Machine Business in Meridian, Idaho'
+      }
+    ]
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'How to Start a Vending Machine Business in Meridian, Idaho',
+    description: 'Complete guide with licensing, locations, and vending course for Meridian, Idaho'
+  },
+  robots: {
+    index: true,
+    follow: true
+  }
+}
+
+export default function Page() {
+  return <MeridianIdahoHowToStartPage />
+}

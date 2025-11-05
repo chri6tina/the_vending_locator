@@ -1,0 +1,46 @@
+import PalmBayFloridaHowToStartPage from './pageClient'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'How to Start a Vending Machine Business in Palm Bay, Florida (2025 Guide)',
+  description: 'Complete guide to starting a vending machine business in Palm Bay, Florida. Learn about licensing, permits, startup costs, finding locations, and our comprehensive vending course to get started.',
+  keywords: [
+    'vending machine business Palm Bay',
+    'start vending business Palm Bay Florida',
+    'Palm Bay vending permits',
+    'vending machine locations Palm Bay',
+    'Palm Bay vending course',
+    'vending business guide Florida'
+  ],
+  alternates: {
+    canonical: 'https://www.thevendinglocator.com/how-to-start-a-vending-machine-business/palm-bay-florida'
+  },
+  openGraph: {
+    title: 'How to Start a Vending Machine Business in Palm Bay, Florida',
+    description: 'Step-by-step guide with licensing, locations, and vending course for Palm Bay, Florida',
+    url: 'https://www.thevendinglocator.com/how-to-start-a-vending-machine-business/palm-bay-florida',
+    siteName: 'The Vending Locator',
+    type: 'article',
+    images: [
+      {
+        url: 'https://www.thevendinglocator.com/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'How to Start a Vending Machine Business in Palm Bay, Florida'
+      }
+    ]
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'How to Start a Vending Machine Business in Palm Bay, Florida',
+    description: 'Complete guide with licensing, locations, and vending course for Palm Bay, Florida'
+  },
+  robots: {
+    index: true,
+    follow: true
+  }
+}
+
+export default function Page() {
+  return <PalmBayFloridaHowToStartPage />
+}

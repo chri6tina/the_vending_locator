@@ -1,0 +1,46 @@
+import CostaMesaCaliforniaHowToStartPage from './pageClient'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'How to Start a Vending Machine Business in Costa Mesa, California (2025 Guide)',
+  description: 'Complete guide to starting a vending machine business in Costa Mesa, California. Learn about licensing, permits, startup costs, finding locations, and our comprehensive vending course to get started.',
+  keywords: [
+    'vending machine business Costa Mesa',
+    'start vending business Costa Mesa California',
+    'Costa Mesa vending permits',
+    'vending machine locations Costa Mesa',
+    'Costa Mesa vending course',
+    'vending business guide California'
+  ],
+  alternates: {
+    canonical: 'https://www.thevendinglocator.com/how-to-start-a-vending-machine-business/costa-mesa-california'
+  },
+  openGraph: {
+    title: 'How to Start a Vending Machine Business in Costa Mesa, California',
+    description: 'Step-by-step guide with licensing, locations, and vending course for Costa Mesa, California',
+    url: 'https://www.thevendinglocator.com/how-to-start-a-vending-machine-business/costa-mesa-california',
+    siteName: 'The Vending Locator',
+    type: 'article',
+    images: [
+      {
+        url: 'https://www.thevendinglocator.com/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'How to Start a Vending Machine Business in Costa Mesa, California'
+      }
+    ]
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'How to Start a Vending Machine Business in Costa Mesa, California',
+    description: 'Complete guide with licensing, locations, and vending course for Costa Mesa, California'
+  },
+  robots: {
+    index: true,
+    follow: true
+  }
+}
+
+export default function Page() {
+  return <CostaMesaCaliforniaHowToStartPage />
+}

@@ -1,21 +1,22 @@
-import { Metadata } from 'next';
-import PageClient from './pageClient';
+import { Metadata } from 'next'
+import PageClient from './pageClient'
 
 export const metadata: Metadata = {
   title: 'Vending Machine Locations in Eau Claire, Wisconsin | Premium Lead Database',
-  description: `Access verified vending machine locations in Eau Claire, Wisconsin. Get high-quality leads for hospitals, offices, schools, and manufacturing facilities. Premium location intelligence for vending operators.`,
-  keywords: 'vending machine locations Eau Claire, vending leads Wisconsin, Eau Claire vending opportunities, commercial vending locations, vending machine business Eau Claire',
+  description: 'Access verified vending machine locations in Eau Claire, Wisconsin. Find profitable placement opportunities with detailed business insights and contact information.',
+  keywords: 'vending machine locations Eau Claire, vending leads Wisconsin, vending machine placement Eau Claire, vending opportunities Eau Claire',
   openGraph: {
-    title: 'Vending Machine Locations in Eau Claire, Wisconsin | Premium Lead Database',
-    description: `Access verified vending machine locations in Eau Claire, Wisconsin. Get high-quality leads for hospitals, offices, schools, and manufacturing facilities.`,
-    type: 'website',
+    title: 'Vending Machine Locations in Eau Claire, Wisconsin',
+    description: 'Access verified vending machine locations in Eau Claire, Wisconsin. Find profitable placement opportunities.',
     url: 'https://www.thevendinglocator.com/vending-leads/eau-claire-wisconsin',
+    siteName: 'The Vending Locator',
+    type: 'website'
   },
   alternates: {
-    canonical: 'https://www.thevendinglocator.com/vending-leads/eau-claire-wisconsin',
-  },
-};
+    canonical: 'https://www.thevendinglocator.com/vending-leads/eau-claire-wisconsin'
+  }
+}
 
 export default function EauClaireWisconsinVendingLeadsPage() {
-  return <PageClient />;
+  return <PageClient />
 }

@@ -16,9 +16,18 @@ export default function MinnesotaVendingServicesPage() {
 
   // Minnesota cities with vending services
   const cities = [
+    { name: 'Bloomington', slug: 'bloomington-minnesota' },
+    { name: 'Brooklyn Park', slug: 'brooklyn-park-minnesota' },
+    { name: 'Duluth', slug: 'duluth-minnesota' },
+    { name: 'Eagan', slug: 'eagan-minnesota' },
+    { name: 'Lakeville', slug: 'lakeville-minnesota' },
+    { name: 'Maple Grove', slug: 'maple-grove-minnesota' },
     { name: 'Minneapolis', slug: 'minneapolis-minnesota' },
+    { name: 'Plymouth', slug: 'plymouth-minnesota' },
+    { name: 'Rochester', slug: 'rochester-minnesota' },
     { name: 'Saint Paul', slug: 'saint-paul-minnesota' },
-    { name: 'Rochester', slug: 'rochester-minnesota' }
+    { name: 'St. Cloud', slug: 'st-cloud-minnesota' },
+    { name: 'Woodbury', slug: 'woodbury-minnesota' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

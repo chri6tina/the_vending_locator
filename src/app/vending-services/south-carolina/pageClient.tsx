@@ -16,12 +16,20 @@ export default function SouthCarolinaVendingServicesPage() {
 
   // South Carolina cities with vending services
   const cities = [
+    { name: 'Aiken', slug: 'aiken-south-carolina' },
+    { name: 'Anderson', slug: 'anderson-south-carolina' },
     { name: 'Charleston', slug: 'charleston-south-carolina' },
     { name: 'Columbia', slug: 'columbia-south-carolina' },
+    { name: 'Florence', slug: 'florence-south-carolina' },
+    { name: 'Goose Creek', slug: 'goose-creek-south-carolina' },
     { name: 'Greenville', slug: 'greenville-south-carolina' },
+    { name: 'Hilton Head Island', slug: 'hilton-head-island-south-carolina' },
     { name: 'Mount Pleasant', slug: 'mount-pleasant-south-carolina' },
+    { name: 'Myrtle Beach', slug: 'myrtle-beach-south-carolina' },
     { name: 'North Charleston', slug: 'north-charleston-south-carolina' },
-    { name: 'Rock Hill', slug: 'rock-hill-south-carolina' }
+    { name: 'Rock Hill', slug: 'rock-hill-south-carolina' },
+    { name: 'Spartanburg', slug: 'spartanburg-south-carolina' },
+    { name: 'Summerville', slug: 'summerville-south-carolina' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

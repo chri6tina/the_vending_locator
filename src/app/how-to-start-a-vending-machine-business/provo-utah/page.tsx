@@ -1,0 +1,46 @@
+import ProvoUtahHowToStartPage from './pageClient'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'How to Start a Vending Machine Business in Provo, Utah (2025 Guide)',
+  description: 'Complete guide to starting a vending machine business in Provo, Utah. Learn about licensing, permits, startup costs, finding locations, and our comprehensive vending course to get started.',
+  keywords: [
+    'vending machine business Provo',
+    'start vending business Provo Utah',
+    'Provo vending permits',
+    'vending machine locations Provo',
+    'Provo vending course',
+    'vending business guide Utah'
+  ],
+  alternates: {
+    canonical: 'https://www.thevendinglocator.com/how-to-start-a-vending-machine-business/provo-utah'
+  },
+  openGraph: {
+    title: 'How to Start a Vending Machine Business in Provo, Utah',
+    description: 'Step-by-step guide with licensing, locations, and vending course for Provo, Utah',
+    url: 'https://www.thevendinglocator.com/how-to-start-a-vending-machine-business/provo-utah',
+    siteName: 'The Vending Locator',
+    type: 'article',
+    images: [
+      {
+        url: 'https://www.thevendinglocator.com/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'How to Start a Vending Machine Business in Provo, Utah'
+      }
+    ]
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'How to Start a Vending Machine Business in Provo, Utah',
+    description: 'Complete guide with licensing, locations, and vending course for Provo, Utah'
+  },
+  robots: {
+    index: true,
+    follow: true
+  }
+}
+
+export default function Page() {
+  return <ProvoUtahHowToStartPage />
+}

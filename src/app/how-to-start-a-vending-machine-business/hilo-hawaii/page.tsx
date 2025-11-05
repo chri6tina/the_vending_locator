@@ -1,0 +1,46 @@
+import HiloHawaiiHowToStartPage from './pageClient'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'How to Start a Vending Machine Business in Hilo, Hawaii (2025 Guide)',
+  description: 'Complete guide to starting a vending machine business in Hilo, Hawaii. Learn about licensing, permits, startup costs, finding locations, and our comprehensive vending course to get started.',
+  keywords: [
+    'vending machine business Hilo',
+    'start vending business Hilo Hawaii',
+    'Hilo vending permits',
+    'vending machine locations Hilo',
+    'Hilo vending course',
+    'vending business guide Hawaii'
+  ],
+  alternates: {
+    canonical: 'https://www.thevendinglocator.com/how-to-start-a-vending-machine-business/hilo-hawaii'
+  },
+  openGraph: {
+    title: 'How to Start a Vending Machine Business in Hilo, Hawaii',
+    description: 'Step-by-step guide with licensing, locations, and vending course for Hilo, Hawaii',
+    url: 'https://www.thevendinglocator.com/how-to-start-a-vending-machine-business/hilo-hawaii',
+    siteName: 'The Vending Locator',
+    type: 'article',
+    images: [
+      {
+        url: 'https://www.thevendinglocator.com/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'How to Start a Vending Machine Business in Hilo, Hawaii'
+      }
+    ]
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'How to Start a Vending Machine Business in Hilo, Hawaii',
+    description: 'Complete guide with licensing, locations, and vending course for Hilo, Hawaii'
+  },
+  robots: {
+    index: true,
+    follow: true
+  }
+}
+
+export default function Page() {
+  return <HiloHawaiiHowToStartPage />
+}

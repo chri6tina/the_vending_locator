@@ -1,0 +1,46 @@
+import DecaturAlabamaHowToStartPage from './pageClient'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'How to Start a Vending Machine Business in Decatur, Alabama (2025 Guide)',
+  description: 'Complete guide to starting a vending machine business in Decatur, Alabama. Learn about licensing, permits, startup costs, finding locations, and our comprehensive vending course to get started.',
+  keywords: [
+    'vending machine business Decatur',
+    'start vending business Decatur Alabama',
+    'Decatur vending permits',
+    'vending machine locations Decatur',
+    'Decatur vending course',
+    'vending business guide Alabama'
+  ],
+  alternates: {
+    canonical: 'https://www.thevendinglocator.com/how-to-start-a-vending-machine-business/decatur-alabama'
+  },
+  openGraph: {
+    title: 'How to Start a Vending Machine Business in Decatur, Alabama',
+    description: 'Step-by-step guide with licensing, locations, and vending course for Decatur, Alabama',
+    url: 'https://www.thevendinglocator.com/how-to-start-a-vending-machine-business/decatur-alabama',
+    siteName: 'The Vending Locator',
+    type: 'article',
+    images: [
+      {
+        url: 'https://www.thevendinglocator.com/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'How to Start a Vending Machine Business in Decatur, Alabama'
+      }
+    ]
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'How to Start a Vending Machine Business in Decatur, Alabama',
+    description: 'Complete guide with licensing, locations, and vending course for Decatur, Alabama'
+  },
+  robots: {
+    index: true,
+    follow: true
+  }
+}
+
+export default function Page() {
+  return <DecaturAlabamaHowToStartPage />
+}

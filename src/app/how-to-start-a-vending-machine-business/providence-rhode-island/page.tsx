@@ -1,0 +1,46 @@
+import ProvidenceRhodeIslandHowToStartPage from './pageClient'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'How to Start a Vending Machine Business in Providence, Rhode Island (2025 Guide)',
+  description: 'Complete guide to starting a vending machine business in Providence, Rhode Island. Learn about licensing, permits, startup costs, finding locations, and our comprehensive vending course to get started.',
+  keywords: [
+    'vending machine business Providence',
+    'start vending business Providence Rhode Island',
+    'Providence vending permits',
+    'vending machine locations Providence',
+    'Providence vending course',
+    'vending business guide Rhode Island'
+  ],
+  alternates: {
+    canonical: 'https://www.thevendinglocator.com/how-to-start-a-vending-machine-business/providence-rhode-island'
+  },
+  openGraph: {
+    title: 'How to Start a Vending Machine Business in Providence, Rhode Island',
+    description: 'Step-by-step guide with licensing, locations, and vending course for Providence, Rhode Island',
+    url: 'https://www.thevendinglocator.com/how-to-start-a-vending-machine-business/providence-rhode-island',
+    siteName: 'The Vending Locator',
+    type: 'article',
+    images: [
+      {
+        url: 'https://www.thevendinglocator.com/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'How to Start a Vending Machine Business in Providence, Rhode Island'
+      }
+    ]
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'How to Start a Vending Machine Business in Providence, Rhode Island',
+    description: 'Complete guide with licensing, locations, and vending course for Providence, Rhode Island'
+  },
+  robots: {
+    index: true,
+    follow: true
+  }
+}
+
+export default function Page() {
+  return <ProvidenceRhodeIslandHowToStartPage />
+}

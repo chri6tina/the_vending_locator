@@ -1,0 +1,46 @@
+import MapleGroveMinnesotaHowToStartPage from './pageClient'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'How to Start a Vending Machine Business in Maple Grove, Minnesota (2025 Guide)',
+  description: 'Complete guide to starting a vending machine business in Maple Grove, Minnesota. Learn about licensing, permits, startup costs, finding locations, and our comprehensive vending course to get started.',
+  keywords: [
+    'vending machine business Maple Grove',
+    'start vending business Maple Grove Minnesota',
+    'Maple Grove vending permits',
+    'vending machine locations Maple Grove',
+    'Maple Grove vending course',
+    'vending business guide Minnesota'
+  ],
+  alternates: {
+    canonical: 'https://www.thevendinglocator.com/how-to-start-a-vending-machine-business/maple-grove-minnesota'
+  },
+  openGraph: {
+    title: 'How to Start a Vending Machine Business in Maple Grove, Minnesota',
+    description: 'Step-by-step guide with licensing, locations, and vending course for Maple Grove, Minnesota',
+    url: 'https://www.thevendinglocator.com/how-to-start-a-vending-machine-business/maple-grove-minnesota',
+    siteName: 'The Vending Locator',
+    type: 'article',
+    images: [
+      {
+        url: 'https://www.thevendinglocator.com/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'How to Start a Vending Machine Business in Maple Grove, Minnesota'
+      }
+    ]
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'How to Start a Vending Machine Business in Maple Grove, Minnesota',
+    description: 'Complete guide with licensing, locations, and vending course for Maple Grove, Minnesota'
+  },
+  robots: {
+    index: true,
+    follow: true
+  }
+}
+
+export default function Page() {
+  return <MapleGroveMinnesotaHowToStartPage />
+}

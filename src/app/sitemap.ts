@@ -316,9 +316,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
   { url: 'https://www.thevendinglocator.com/vending-services/minnesota', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
   
   // Minnesota Vending Services Cities
+  { url: 'https://www.thevendinglocator.com/vending-services/bloomington-minnesota', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/brooklyn-park-minnesota', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/duluth-minnesota', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/eagan-minnesota', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/lakeville-minnesota', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/maple-grove-minnesota', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
   { url: 'https://www.thevendinglocator.com/vending-services/minneapolis-minnesota', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/plymouth-minnesota', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
   { url: 'https://www.thevendinglocator.com/vending-services/rochester-minnesota', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
   { url: 'https://www.thevendinglocator.com/vending-services/saint-paul-minnesota', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/st-cloud-minnesota', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/woodbury-minnesota', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
   
   { url: 'https://www.thevendinglocator.com/vending-services/mississippi', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
   
@@ -471,12 +480,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
   { url: 'https://www.thevendinglocator.com/vending-services/south-carolina', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
   
   // South Carolina Vending Services Cities
+  { url: 'https://www.thevendinglocator.com/vending-services/aiken-south-carolina', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/anderson-south-carolina', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
   { url: 'https://www.thevendinglocator.com/vending-services/charleston-south-carolina', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
   { url: 'https://www.thevendinglocator.com/vending-services/columbia-south-carolina', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/florence-south-carolina', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/goose-creek-south-carolina', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
   { url: 'https://www.thevendinglocator.com/vending-services/greenville-south-carolina', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/hilton-head-island-south-carolina', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
   { url: 'https://www.thevendinglocator.com/vending-services/mount-pleasant-south-carolina', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/myrtle-beach-south-carolina', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
   { url: 'https://www.thevendinglocator.com/vending-services/north-charleston-south-carolina', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
   { url: 'https://www.thevendinglocator.com/vending-services/rock-hill-south-carolina', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/spartanburg-south-carolina', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/summerville-south-carolina', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
   
   { url: 'https://www.thevendinglocator.com/vending-services/south-dakota', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
   
@@ -586,8 +603,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
   { url: 'https://www.thevendinglocator.com/vending-services/wisconsin', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
   
   // Wisconsin Vending Services Cities
+  { url: 'https://www.thevendinglocator.com/vending-services/appleton-wisconsin', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/eau-claire-wisconsin', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/green-bay-wisconsin', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/janesville-wisconsin', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/kenosha-wisconsin', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/la-crosse-wisconsin', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
   { url: 'https://www.thevendinglocator.com/vending-services/madison-wisconsin', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
   { url: 'https://www.thevendinglocator.com/vending-services/milwaukee-wisconsin', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/oshkosh-wisconsin', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/racine-wisconsin', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/sheboygan-wisconsin', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+  { url: 'https://www.thevendinglocator.com/vending-services/waukesha-wisconsin', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
   
   { url: 'https://www.thevendinglocator.com/vending-services/wyoming', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
   
@@ -819,14 +846,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: 'https://www.thevendinglocator.com/vending-leads/whittier-california', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     
     // Colorado cities
-    { url: 'https://www.thevendinglocator.com/vending-leads/aurora-colorado', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/vending-leads/arvada-colorado', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
-    { url: 'https://www.thevendinglocator.com/vending-leads/pueblo-colorado', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
-    { url: 'https://www.thevendinglocator.com/vending-leads/westminster-colorado', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
-    { url: 'https://www.thevendinglocator.com/vending-leads/thornton-colorado', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
-    { url: 'https://www.thevendinglocator.com/vending-leads/fort-collins-colorado', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
-    { url: 'https://www.thevendinglocator.com/vending-leads/colorado-springs-colorado', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/aurora-colorado', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/boulder-colorado', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/vending-leads/centennial-colorado', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/colorado-springs-colorado', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/denver-colorado', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/fort-collins-colorado', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/grand-junction-colorado', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/greeley-colorado', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/lakewood-colorado', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/pueblo-colorado', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/thornton-colorado', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/westminster-colorado', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     
     // New York cities - Newly created
     { url: 'https://www.thevendinglocator.com/vending-leads/buffalo-new-york', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
@@ -876,8 +908,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: 'https://www.thevendinglocator.com/vending-leads/annapolis-maryland', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     
     // Connecticut cities
-    { url: 'https://www.thevendinglocator.com/vending-leads/new-haven-connecticut', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/vending-leads/bridgeport-connecticut', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/danbury-connecticut', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/hartford-connecticut', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/new-britain-connecticut', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/new-haven-connecticut', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/norwalk-connecticut', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/stamford-connecticut', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/waterbury-connecticut', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     
     // Michigan cities
     { url: 'https://www.thevendinglocator.com/vending-leads/saginaw-michigan', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
@@ -928,12 +966,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: 'https://www.thevendinglocator.com/vending-leads/lowell-massachusetts', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     
     // Idaho cities
-    { url: 'https://www.thevendinglocator.com/vending-leads/twin-falls-idaho', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/boise-idaho', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/caldwell-idaho', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/vending-leads/coeur-dalene-idaho', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
-    { url: 'https://www.thevendinglocator.com/vending-leads/pocatello-idaho', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/vending-leads/idaho-falls-idaho', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
-    { url: 'https://www.thevendinglocator.com/vending-leads/nampa-idaho', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/vending-leads/meridian-idaho', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/nampa-idaho', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/pocatello-idaho', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/rexburg-idaho', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/twin-falls-idaho', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     
     // Alabama cities
     { url: 'https://www.thevendinglocator.com/vending-leads/auburn-alabama', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
@@ -960,6 +1001,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: 'https://www.thevendinglocator.com/vending-leads/houma-louisiana', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     
     // Kansas cities
+    { url: 'https://www.thevendinglocator.com/vending-leads/kansas-city-kansas', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/lawrence-kansas', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/manhattan-kansas', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/olathe-kansas', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/overland-park-kansas', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/topeka-kansas', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/vending-leads/wichita-kansas', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     
     // Oklahoma cities
@@ -1054,9 +1101,43 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: 'https://www.thevendinglocator.com/vending-leads/gresham-oregon', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/vending-leads/hillsboro-oregon', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/vending-leads/medford-oregon', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
-    { url: 'https://www.thevendinglocator.com/vending-leads/henderson-nevada', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    
+    // Nevada cities
+    { url: 'https://www.thevendinglocator.com/vending-leads/carson-city-nevada', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/vending-leads/enterprise-nevada', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/henderson-nevada', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/las-vegas-nevada', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/north-las-vegas-nevada', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/pahrump-nevada', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/reno-nevada', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/sparks-nevada', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    
+    // Nebraska cities
+    { url: 'https://www.thevendinglocator.com/vending-leads/bellevue-nebraska', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/grand-island-nebraska', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/lincoln-nebraska', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/vending-leads/omaha-nebraska', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    
+    // New Mexico cities
+    { url: 'https://www.thevendinglocator.com/vending-leads/albuquerque-new-mexico', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/farmington-new-mexico', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/las-cruces-new-mexico', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/rio-rancho-new-mexico', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/santa-fe-new-mexico', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    
+    // Mississippi cities
+    { url: 'https://www.thevendinglocator.com/vending-leads/biloxi-mississippi', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/gulfport-mississippi', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/hattiesburg-mississippi', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/jackson-mississippi', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/southaven-mississippi', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/tupelo-mississippi', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    
+    // Maine cities
+    { url: 'https://www.thevendinglocator.com/vending-leads/augusta-maine', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/bangor-maine', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/lewiston-maine', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/portland-maine', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/vending-leads/springfield-illinois', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/vending-leads/rockford-illinois', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/vending-leads/peoria-illinois', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
@@ -1097,7 +1178,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: 'https://www.thevendinglocator.com/vending-leads/worcester-massachusetts', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/vending-leads/pittsburgh-pennsylvania', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/vending-leads/york-pennsylvania', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    
+    // Rhode Island cities
+    { url: 'https://www.thevendinglocator.com/vending-leads/cranston-rhode-island', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/pawtucket-rhode-island', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/vending-leads/providence-rhode-island', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/warwick-rhode-island', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/woonsocket-rhode-island', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     // Virginia cities
     { url: 'https://www.thevendinglocator.com/vending-leads/chesapeake-virginia', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/vending-leads/hampton-virginia', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
@@ -1173,12 +1260,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: 'https://www.thevendinglocator.com/vending-leads/richmond-kentucky', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     
     // Hawaii cities - Newly created
-    { url: 'https://www.thevendinglocator.com/vending-leads/honolulu-hawaii', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/vending-leads/hilo-hawaii', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/honolulu-hawaii', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/vending-leads/kailua-hawaii', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/pearl-city-hawaii', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     
     // Vermont cities - Newly created
     { url: 'https://www.thevendinglocator.com/vending-leads/burlington-vermont', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/essex-junction-vermont', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/vending-leads/south-burlington-vermont', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     
     // New Hampshire cities - Newly created
@@ -1201,12 +1290,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: 'https://www.thevendinglocator.com/vending-leads/sandy-utah', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     
     // North Dakota cities - Newly created
-    { url: 'https://www.thevendinglocator.com/vending-leads/fargo-north-dakota', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/vending-leads/bismarck-north-dakota', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/fargo-north-dakota', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/grand-forks-north-dakota', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/minot-north-dakota', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     
     // South Dakota cities - Newly created
-    { url: 'https://www.thevendinglocator.com/vending-leads/sioux-falls-south-dakota', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/aberdeen-south-dakota', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/vending-leads/rapid-city-south-dakota', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-leads/sioux-falls-south-dakota', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     
     // West Virginia cities - Newly created
     { url: 'https://www.thevendinglocator.com/vending-leads/charleston-west-virginia', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
@@ -1220,14 +1312,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
   })
 
   // Dynamic city guides (how-to-start-a-vending-machine-business/[slug])
-  const cityGuidePages = states.flatMap(state =>
-    state.cities.map(city => ({
-      url: `https://www.thevendinglocator.com/how-to-start-a-vending-machine-business/${city.slug}`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.8,
-    }))
+  // Only include cities where pages actually exist
+  const howToStartDir = path.join(process.cwd(), 'src', 'app', 'how-to-start-a-vending-machine-business')
+  const cityGuidePages: MetadataRoute.Sitemap = states.flatMap(state =>
+    state.cities
+      .filter(city => {
+        const cityPagePath = path.join(howToStartDir, city.slug, 'page.tsx')
+        return fs.existsSync(cityPagePath)
+      })
+      .map(city => ({
+        url: `https://www.thevendinglocator.com/how-to-start-a-vending-machine-business/${city.slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'weekly' as const,
+        priority: 0.8,
+      }))
   )
+  
+  // Guide index pages
+  const guidePages = [
+    { url: 'https://www.thevendinglocator.com/guide', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.9 },
+    { url: 'https://www.thevendinglocator.com/guide/how-to-start-a-vending-machine-business', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.9 },
+  ]
 
   // Blog posts
   const blogPosts = [
@@ -1256,6 +1361,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...filteredCityPages,
     ...generatedCityPages,
     ...filesystemCityPages,
+    ...guidePages,
     ...cityGuidePages,
     ...blogPosts,
     ...vendingCompanyPages,

@@ -16,8 +16,18 @@ export default function WisconsinVendingServicesPage() {
 
   // Wisconsin cities with vending services
   const cities = [
+    { name: 'Appleton', slug: 'appleton-wisconsin' },
+    { name: 'Eau Claire', slug: 'eau-claire-wisconsin' },
+    { name: 'Green Bay', slug: 'green-bay-wisconsin' },
+    { name: 'Janesville', slug: 'janesville-wisconsin' },
+    { name: 'Kenosha', slug: 'kenosha-wisconsin' },
+    { name: 'La Crosse', slug: 'la-crosse-wisconsin' },
+    { name: 'Madison', slug: 'madison-wisconsin' },
     { name: 'Milwaukee', slug: 'milwaukee-wisconsin' },
-    { name: 'Madison', slug: 'madison-wisconsin' }
+    { name: 'Oshkosh', slug: 'oshkosh-wisconsin' },
+    { name: 'Racine', slug: 'racine-wisconsin' },
+    { name: 'Sheboygan', slug: 'sheboygan-wisconsin' },
+    { name: 'Waukesha', slug: 'waukesha-wisconsin' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

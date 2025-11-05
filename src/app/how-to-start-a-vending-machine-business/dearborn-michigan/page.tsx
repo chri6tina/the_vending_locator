@@ -1,0 +1,46 @@
+import DearbornMichiganHowToStartPage from './pageClient'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'How to Start a Vending Machine Business in Dearborn, Michigan (2025 Guide)',
+  description: 'Complete guide to starting a vending machine business in Dearborn, Michigan. Learn about licensing, permits, startup costs, finding locations, and our comprehensive vending course to get started.',
+  keywords: [
+    'vending machine business Dearborn',
+    'start vending business Dearborn Michigan',
+    'Dearborn vending permits',
+    'vending machine locations Dearborn',
+    'Dearborn vending course',
+    'vending business guide Michigan'
+  ],
+  alternates: {
+    canonical: 'https://www.thevendinglocator.com/how-to-start-a-vending-machine-business/dearborn-michigan'
+  },
+  openGraph: {
+    title: 'How to Start a Vending Machine Business in Dearborn, Michigan',
+    description: 'Step-by-step guide with licensing, locations, and vending course for Dearborn, Michigan',
+    url: 'https://www.thevendinglocator.com/how-to-start-a-vending-machine-business/dearborn-michigan',
+    siteName: 'The Vending Locator',
+    type: 'article',
+    images: [
+      {
+        url: 'https://www.thevendinglocator.com/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'How to Start a Vending Machine Business in Dearborn, Michigan'
+      }
+    ]
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'How to Start a Vending Machine Business in Dearborn, Michigan',
+    description: 'Complete guide with licensing, locations, and vending course for Dearborn, Michigan'
+  },
+  robots: {
+    index: true,
+    follow: true
+  }
+}
+
+export default function Page() {
+  return <DearbornMichiganHowToStartPage />
+}
