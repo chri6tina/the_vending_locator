@@ -174,15 +174,11 @@ export default function HotLeadsAdminPage() {
   }
 
   const handleDeleteLead = async (leadId: string) => {
-    if (!confirm('Are you sure you want to delete this lead?')) return
+    if (!confirm('Are you sure you want to delete this lead? This action cannot be undone.')) return
 
     try {
-      const response = await fetch('/api/hot-leads', {
-        method: 'PUT',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ id: leadId, status: 'deleted' })
+      const response = await fetch(`/api/hot-leads?id=${leadId}`, {
+        method: 'DELETE'
       })
 
       const data = await response.json()

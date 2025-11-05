@@ -293,3 +293,63 @@ export async function PUT(request: NextRequest) {
     }, { status: 500 })
   }
 }
+
+// DELETE - Delete a lead
+export async function DELETE(request: NextRequest) {
+  try {
+    const { searchParams } = new URL(request.url)
+    const id = searchParams.get('id')
+    
+    if (!id) {
+      return NextResponse.json({ 
+        success: false, 
+        error: 'Lead ID is required' 
+      }, { status: 400 })
+    }
+    
+    // Check if Supabase is configured
+    if (!process.env.NEXT_PUBLIC_SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL === 'https://placeholder.supabase.co') {
+      console.log('Using dev mode - deleting from memory')
+      
+      const leadIndex = devLeads.findIndex(l => l.id === id)
+      
+      if (leadIndex === -1) {
+        return NextResponse.json({ 
+          success: false, 
+          error: 'Lead not found' 
+        }, { status: 404 })
+      }
+      
+      devLeads.splice(leadIndex, 1)
+      
+      return NextResponse.json({ 
+        success: true, 
+        message: 'Lead deleted successfully' 
+      })
+    }
+    
+    const { error } = await supabase
+      .from('hot_leads')
+      .delete()
+      .eq('id', id)
+
+    if (error) {
+      console.error('Supabase delete error:', error)
+      return NextResponse.json({ 
+        success: false, 
+        error: 'Failed to delete lead: ' + error.message 
+      }, { status: 500 })
+    }
+    
+    return NextResponse.json({ 
+      success: true, 
+      message: 'Lead deleted successfully' 
+    })
+  } catch (error) {
+    console.error('Error deleting lead:', error)
+    return NextResponse.json({ 
+      success: false, 
+      error: 'Failed to delete lead' 
+    }, { status: 500 })
+  }
+}
