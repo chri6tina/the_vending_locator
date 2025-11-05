@@ -69,6 +69,11 @@ export default function RootLayout({
           src="/tracking.js"
           strategy="afterInteractive"
         />
+        <Script
+          src="//code.tidio.co/is3vwk6saiczz47wysokybcphdjtmlxq.js"
+          strategy="afterInteractive"
+          async
+        />
       </body>
     </html>
   )
