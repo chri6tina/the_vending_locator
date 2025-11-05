@@ -240,6 +240,15 @@ export default function HotLeadsAdminPage() {
     alert('✅ Link copied to clipboard!')
   }
 
+  const handleLogout = async () => {
+    try {
+      await fetch('/api/auth/logout', { method: 'POST' })
+      window.location.href = '/admin/login'
+    } catch (error) {
+      console.error('Logout failed:', error)
+    }
+  }
+
   return (
     <div className="min-h-screen bg-warm-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -267,6 +276,12 @@ export default function HotLeadsAdminPage() {
               >
                 ← Back
               </Link>
+              <button
+                onClick={handleLogout}
+                className="px-4 py-2 text-red-600 hover:bg-red-50 rounded-lg transition-colors"
+              >
+                🚪 Logout
+              </button>
               <button
                 onClick={fetchLeads}
                 disabled={loading}
