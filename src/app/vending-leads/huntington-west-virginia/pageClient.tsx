@@ -80,7 +80,7 @@ export default function HuntingtonWestVirginiaVendingLeadsPage() {
 
   // Build related West Virginia cities (for internal linking)
   const westVirginia = states.find(s => s.slug === 'west-virginia')
-  const relatedCities = westVirginia ? westVirginia.cities.filter(c => c.slug !== 'huntington-west-virginia').slice(0, 8) : []
+  const relatedCities = westVirginia ? westVirginia.cities.filter(c => c.slug !== 'huntington-west-virginia').slice(0, 8) : [];
 
   // FAQ items reused for JSON-LD
   const faqItems = [

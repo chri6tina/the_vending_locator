@@ -80,7 +80,7 @@ export default function BurlingtonVermontVendingLeadsPage() {
 
   // Build related Vermont cities (for internal linking)
   const vermont = states.find(s => s.slug === 'vermont')
-  const relatedCities = vermont ? vermont.cities.filter(c => c.slug !== 'burlington-vermont').slice(0, 8) : []
+  const relatedCities = vermont ? vermont.cities.filter(c => c.slug !== 'burlington-vermont').slice(0, 8) : [];
 
   // FAQ items reused for JSON-LD
   const faqItems = [

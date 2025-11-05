@@ -81,7 +81,7 @@ export default function FortLauderdaleFloridaVendingLeadsPage() {
 
   // Build related state cities (for internal linking)
   const currentState = states.find(s => s.slug === 'florida')
-  const relatedCities = currentState ? currentState.cities.filter(c => c.slug !== 'fort-lauderdale-florida').slice(0, 8) : []
+  const relatedCities = currentState ? currentState.cities.filter(c => c.slug !== 'fort-lauderdale-florida').slice(0, 8) : [];
 
   // FAQ items reused for JSON-LD
   const faqItems = [

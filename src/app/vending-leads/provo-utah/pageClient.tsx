@@ -80,7 +80,7 @@ export default function ProvoUtahVendingLeadsPage() {
 
   // Build related Utah cities (for internal linking)
   const utah = states.find(s => s.slug === 'utah')
-  const relatedCities = utah ? utah.cities.filter(c => c.slug !== 'provo-utah').slice(0, 8) : []
+  const relatedCities = utah ? utah.cities.filter(c => c.slug !== 'provo-utah').slice(0, 8) : [];
 
   // FAQ items reused for JSON-LD
   const faqItems = [

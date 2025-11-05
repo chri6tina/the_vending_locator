@@ -81,7 +81,7 @@ export default function ButteMontanaVendingLeadsPage() {
 
   // Build related state cities (for internal linking)
   const currentState = states.find(s => s.slug === 'montana')
-  const relatedCities = currentState ? currentState.cities.filter(c => c.slug !== 'butte-montana').slice(0, 8) : []
+  const relatedCities = currentState ? currentState.cities.filter(c => c.slug !== 'butte-montana').slice(0, 8) : [];
 
   // FAQ items reused for JSON-LD
   const faqItems = [

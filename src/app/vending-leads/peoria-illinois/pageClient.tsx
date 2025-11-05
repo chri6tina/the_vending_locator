@@ -80,7 +80,7 @@ export default function PeoriaIllinoisVendingLeadsPage() {
 
   // Build related state cities (for internal linking)
   const currentState = states.find(s => s.slug === 'illinois')
-  const relatedCities = currentState ? currentState.cities.filter(c => c.slug !== 'peoria-illinois').slice(0, 8) : []
+  const relatedCities = currentState ? currentState.cities.filter(c => c.slug !== 'peoria-illinois').slice(0, 8) : [];
 
   // FAQ items reused for JSON-LD
   const faqItems = [

@@ -96,3 +96,5 @@ FOR ALL USING (true);
 - `/blog` - Blog listing page
 - `/blog/[slug]` - Individual blog post page
 
+
+

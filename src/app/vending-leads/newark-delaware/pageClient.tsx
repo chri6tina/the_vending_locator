@@ -80,7 +80,7 @@ export default function NewarkDelawareVendingLeadsPage() {
 
   // Build related Delaware cities (for internal linking)
   const delaware = states.find(s => s.slug === 'delaware')
-  const relatedCities = delaware ? delaware.cities.filter(c => c.slug !== 'newark-delaware').slice(0, 8) : []
+  const relatedCities = delaware ? delaware.cities.filter(c => c.slug !== 'newark-delaware').slice(0, 8) : [];
 
   // FAQ items reused for JSON-LD
   const faqItems = [

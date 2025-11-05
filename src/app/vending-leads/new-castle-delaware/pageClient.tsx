@@ -75,8 +75,8 @@ export default function NewCastleDelawareVendingLeadsPage() {
   }, [userNames.length, usedNames])
 
   // Build related Delaware cities (for internal linking)
-  const newHampshire = states.find(s => s.slug === 'delaware')
-  const relatedCities = newHampshire ? newHampshire.cities.filter(c => c.slug !== 'new-castle-delaware').slice(0, 8) : []
+  const newHampshire = states.find(s => s.slug === 'delaware');
+  const relatedCities = newHampshire ? newHampshire.cities.filter(c => c.slug !== 'new-castle-delaware').slice(0, 8) : [];
 
   // FAQ items reused for JSON-LD
   const faqItems = [

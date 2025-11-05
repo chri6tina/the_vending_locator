@@ -65,3 +65,5 @@ console.log('3. Test the pages locally');
 console.log('4. Update sitemap.xml with the new URLs');
 console.log('5. Commit and deploy!\n');
 
+
+

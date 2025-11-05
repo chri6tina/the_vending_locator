@@ -80,7 +80,7 @@ export default function DakotaUnknownVendingLeadsPage() {
 
   // Build related state cities (for internal linking)
   const currentState = states.find(s => s.slug === 'unknown')
-  const relatedCities = currentState ? currentState.cities.filter(c => c.slug !== 'dakota').slice(0, 8) : []
+  const relatedCities = currentState ? currentState.cities.filter(c => c.slug !== 'dakota').slice(0, 8) : [];
 
   // FAQ items reused for JSON-LD
   const faqItems = [

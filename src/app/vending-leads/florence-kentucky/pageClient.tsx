@@ -75,8 +75,8 @@ export default function FlorenceKentuckyVendingLeadsPage() {
   }, [userNames.length, usedNames])
 
   // Build related Kentucky cities (for internal linking)
-  const newHampshire = states.find(s => s.slug === 'kentucky')
-  const relatedCities = newHampshire ? newHampshire.cities.filter(c => c.slug !== 'florence-kentucky').slice(0, 8) : []
+  const newHampshire = states.find(s => s.slug === 'kentucky');
+  const relatedCities = newHampshire ? newHampshire.cities.filter(c => c.slug !== 'florence-kentucky').slice(0, 8) : [];
 
   // FAQ items reused for JSON-LD
   const faqItems = [

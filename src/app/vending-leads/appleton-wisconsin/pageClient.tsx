@@ -79,8 +79,8 @@ export default function AppletonWisconsinVendingLeadsPage() {
   }, [userNames.length, usedNames])
 
   // Build related Wisconsin cities (for internal linking)
-  const newHampshire = states.find(s => s.slug === 'wisconsin')
-  const relatedCities = newHampshire ? newHampshire.cities.filter(c => c.slug !== 'appleton-wisconsin').slice(0, 8) : []
+  const newHampshire = states.find(s => s.slug === 'wisconsin');
+  const relatedCities = newHampshire ? newHampshire.cities.filter(c => c.slug !== 'appleton-wisconsin').slice(0, 8) : [];
 
   // FAQ items reused for JSON-LD
   const faqItems = [

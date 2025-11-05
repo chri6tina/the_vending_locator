@@ -80,7 +80,7 @@ export default function KailuaHawaiiVendingLeadsPage() {
 
   // Build related Hawaii cities (for internal linking)
   const hawaii = states.find(s => s.slug === 'hawaii')
-  const relatedCities = hawaii ? hawaii.cities.filter(c => c.slug !== 'kailua-hawaii').slice(0, 8) : []
+  const relatedCities = hawaii ? hawaii.cities.filter(c => c.slug !== 'kailua-hawaii').slice(0, 8) : [];
 
   // FAQ items reused for JSON-LD
   const faqItems = [

@@ -178,3 +178,5 @@ SELECT
 FROM blog_posts
 WHERE slug = 'how-does-the-vending-locator-work';
 
+
+

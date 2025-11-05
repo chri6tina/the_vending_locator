@@ -81,7 +81,7 @@ export default function ArlingtonVirginiaVendingLeadsPage() {
 
   // Build related state cities (for internal linking)
   const currentState = states.find(s => s.slug === 'virginia')
-  const relatedCities = currentState ? currentState.cities.filter(c => c.slug !== 'arlington-virginia').slice(0, 8) : []
+  const relatedCities = currentState ? currentState.cities.filter(c => c.slug !== 'arlington-virginia').slice(0, 8) : [];
 
   // FAQ items reused for JSON-LD
   const faqItems = [

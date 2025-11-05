@@ -115,3 +115,5 @@ console.log('2. Deploy to Vercel')
 console.log('3. Watch build time drop by 90%!')
 console.log('\nPages will now regenerate every hour automatically.')
 
+
+

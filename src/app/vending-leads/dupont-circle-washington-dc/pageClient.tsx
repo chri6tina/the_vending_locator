@@ -75,8 +75,8 @@ export default function DupontCircleWashingtonDCVendingLeadsPage() {
   }, [userNames.length, usedNames])
 
   // Build related Washington DC cities (for internal linking)
-  const newHampshire = states.find(s => s.slug === 'washington-dc')
-  const relatedCities = newHampshire ? newHampshire.cities.filter(c => c.slug !== 'dupont-circle-washington-dc').slice(0, 8) : []
+  const newHampshire = states.find(s => s.slug === 'washington-dc');
+  const relatedCities = newHampshire ? newHampshire.cities.filter(c => c.slug !== 'dupont-circle-washington-dc').slice(0, 8) : [];
 
   // FAQ items reused for JSON-LD
   const faqItems = [

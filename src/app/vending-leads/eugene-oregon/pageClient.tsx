@@ -81,7 +81,7 @@ export default function EugeneOregonVendingLeadsPage() {
 
   // Build related state cities (for internal linking)
   const currentState = states.find(s => s.slug === 'oregon')
-  const relatedCities = currentState ? currentState.cities.filter(c => c.slug !== 'eugene-oregon').slice(0, 8) : []
+  const relatedCities = currentState ? currentState.cities.filter(c => c.slug !== 'eugene-oregon').slice(0, 8) : [];
 
   // FAQ items reused for JSON-LD
   const faqItems = [

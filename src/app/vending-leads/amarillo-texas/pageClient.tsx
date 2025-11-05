@@ -80,7 +80,7 @@ export default function AmarilloTexasVendingLeadsPage() {
 
   // Build related Texas cities (for internal linking)
   const texas = states.find(s => s.slug === 'texas')
-  const relatedCities = texas ? texas.cities.filter(c => c.slug !== 'amarillo-texas').slice(0, 8) : []
+  const relatedCities = texas ? texas.cities.filter(c => c.slug !== 'amarillo-texas').slice(0, 8) : [];
 
   // FAQ items reused for JSON-LD
   const faqItems = [

@@ -81,7 +81,7 @@ export default function NorthLasVegasNevadaVendingLeadsPage() {
 
   // Build related state cities (for internal linking)
   const currentState = states.find(s => s.slug === 'nevada')
-  const relatedCities = currentState ? currentState.cities.filter(c => c.slug !== 'north-las-vegas-nevada').slice(0, 8) : []
+  const relatedCities = currentState ? currentState.cities.filter(c => c.slug !== 'north-las-vegas-nevada').slice(0, 8) : [];
 
   // FAQ items reused for JSON-LD
   const faqItems = [

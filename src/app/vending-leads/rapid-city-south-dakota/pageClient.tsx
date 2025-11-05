@@ -80,7 +80,7 @@ export default function RapidCitySouthDakotaVendingLeadsPage() {
 
   // Build related South Dakota cities (for internal linking)
   const southDakota = states.find(s => s.slug === 'south-dakota')
-  const relatedCities = southDakota ? southDakota.cities.filter(c => c.slug !== 'rapid-city-south-dakota').slice(0, 8) : []
+  const relatedCities = southDakota ? southDakota.cities.filter(c => c.slug !== 'rapid-city-south-dakota').slice(0, 8) : [];
 
   // FAQ items reused for JSON-LD
   const faqItems = [

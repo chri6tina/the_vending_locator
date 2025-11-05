@@ -79,8 +79,8 @@ export default function JacksonMichiganVendingLeadsPage() {
   }, [userNames.length, usedNames])
 
   // Build related New Hampshire cities (for internal linking)
-  const newHampshire = states.find(s => s.slug === 'michigan')
-  const relatedCities = newHampshire ? newHampshire.cities.filter(c => c.slug !== 'manchester-michigan').slice(0, 8) : []
+  const newHampshire = states.find(s => s.slug === 'michigan');
+  const relatedCities = newHampshire ? newHampshire.cities.filter(c => c.slug !== 'manchester-michigan').slice(0, 8) : [];
 
   // FAQ items reused for JSON-LD
   const faqItems = [

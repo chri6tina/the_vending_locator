@@ -80,7 +80,7 @@ export default function FargoNorthDakotaVendingLeadsPage() {
 
   // Build related North Dakota cities (for internal linking)
   const northDakota = states.find(s => s.slug === 'north-dakota')
-  const relatedCities = northDakota ? northDakota.cities.filter(c => c.slug !== 'fargo-north-dakota').slice(0, 8) : []
+  const relatedCities = northDakota ? northDakota.cities.filter(c => c.slug !== 'fargo-north-dakota').slice(0, 8) : [];
 
   // FAQ items reused for JSON-LD
   const faqItems = [

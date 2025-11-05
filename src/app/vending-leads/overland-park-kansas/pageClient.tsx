@@ -81,7 +81,7 @@ export default function OverlandParkKansasVendingLeadsPage() {
 
   // Build related state cities (for internal linking)
   const currentState = states.find(s => s.slug === 'kansas')
-  const relatedCities = currentState ? currentState.cities.filter(c => c.slug !== 'overland-park-kansas').slice(0, 8) : []
+  const relatedCities = currentState ? currentState.cities.filter(c => c.slug !== 'overland-park-kansas').slice(0, 8) : [];
 
   // FAQ items reused for JSON-LD
   const faqItems = [
