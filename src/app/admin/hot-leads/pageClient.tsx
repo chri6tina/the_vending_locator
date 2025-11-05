@@ -339,18 +339,13 @@ export default function HotLeadsAdminPage() {
                     <label className="block text-sm font-medium text-charcoal mb-2">
                       Employee Count *
                     </label>
-                    <select
+                    <input
+                      type="text"
                       name="employeeCount"
                       required
+                      placeholder="e.g., 150"
                       className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
-                    >
-                      <option value="">Select range...</option>
-                      <option value="50-100">50-100 employees</option>
-                      <option value="100-250">100-250 employees</option>
-                      <option value="250-500">250-500 employees</option>
-                      <option value="500-1000">500-1000 employees</option>
-                      <option value="1000+">1000+ employees</option>
-                    </select>
+                    />
                   </div>
 
                   <div>
@@ -515,19 +510,14 @@ export default function HotLeadsAdminPage() {
                     <label className="block text-sm font-medium text-charcoal mb-2">
                       Employee Count *
                     </label>
-                    <select
+                    <input
+                      type="text"
                       name="employeeCount"
                       required
                       defaultValue={editingLead.employee_count}
+                      placeholder="e.g., 150"
                       className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-navy focus:border-transparent"
-                    >
-                      <option value="">Select range...</option>
-                      <option value="50-100">50-100 employees</option>
-                      <option value="100-250">100-250 employees</option>
-                      <option value="250-500">250-500 employees</option>
-                      <option value="500-1000">500-1000 employees</option>
-                      <option value="1000+">1000+ employees</option>
-                    </select>
+                    />
                   </div>
 
                   <div>
