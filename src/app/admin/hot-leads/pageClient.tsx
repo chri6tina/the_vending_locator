@@ -30,6 +30,7 @@ export default function HotLeadsAdminPage() {
   const [editingLead, setEditingLead] = useState<HotLead | null>(null)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [loading, setLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
 
   // Fetch leads on component mount
   useEffect(() => {
@@ -37,14 +38,27 @@ export default function HotLeadsAdminPage() {
   }, [])
 
   const fetchLeads = async () => {
+    console.log('🔄 Fetching leads from API...')
+    setLoading(true)
+    setError(null)
+    
     try {
       const response = await fetch('/api/hot-leads')
       const data = await response.json()
+      
+      console.log('📦 API Response:', data)
+      
       if (data.success) {
-        setLeads(data.leads || [])
+        const leadsArray = data.leads || []
+        console.log(`✅ Loaded ${leadsArray.length} leads`)
+        setLeads(leadsArray)
+      } else {
+        console.error('❌ API returned error:', data.error)
+        setError(data.error || 'Failed to load leads')
       }
-    } catch (error) {
-      console.error('Failed to fetch leads:', error)
+    } catch (err) {
+      console.error('❌ Failed to fetch leads:', err)
+      setError('Network error - Failed to fetch leads')
     } finally {
       setLoading(false)
     }
@@ -177,7 +191,7 @@ export default function HotLeadsAdminPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Header */}
         <div className="mb-8">
-          <div className="flex items-center justify-between">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
             <div>
               <h1 className="text-3xl font-playfair font-bold text-charcoal mb-2">
                 Hot Leads Management
@@ -185,14 +199,27 @@ export default function HotLeadsAdminPage() {
               <p className="text-stone text-lg">
                 Create and manage premium vending machine leads for the marketplace
               </p>
+              {!process.env.NEXT_PUBLIC_SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL === 'https://placeholder.supabase.co' ? (
+                <div className="mt-2 inline-flex items-center gap-2 px-3 py-1 bg-yellow-50 border border-yellow-200 rounded-full text-xs text-yellow-800">
+                  <span className="w-2 h-2 bg-yellow-500 rounded-full"></span>
+                  DEV MODE - Using in-memory storage
+                </div>
+              ) : null}
             </div>
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-3">
               <Link 
                 href="/admin"
                 className="px-4 py-2 text-stone hover:text-charcoal transition-colors"
               >
-                ← Back to Dashboard
+                ← Back
               </Link>
+              <button
+                onClick={fetchLeads}
+                disabled={loading}
+                className="px-4 py-2 text-navy hover:bg-navy/5 rounded-lg transition-colors disabled:opacity-50"
+              >
+                🔄 Refresh
+              </button>
               <button
                 onClick={() => setShowCreateForm(true)}
                 className="flex items-center gap-2 px-6 py-3 bg-navy text-white rounded-lg hover:bg-navy/90 transition-colors"
@@ -566,12 +593,40 @@ export default function HotLeadsAdminPage() {
         {/* Leads List */}
         <div className="bg-white rounded-xl shadow-sm border border-gray-200">
           <div className="p-6 border-b border-gray-200">
-            <h2 className="text-xl font-semibold text-charcoal">Hot Leads</h2>
-            <p className="text-stone mt-1">Manage your premium leads</p>
+            <div className="flex items-center justify-between">
+              <div>
+                <h2 className="text-xl font-semibold text-charcoal">All Hot Leads</h2>
+                <p className="text-stone mt-1">
+                  {loading ? 'Loading...' : `${leads.length} total lead${leads.length !== 1 ? 's' : ''}`}
+                </p>
+              </div>
+              {error && (
+                <div className="text-sm text-red-600 bg-red-50 px-4 py-2 rounded-lg">
+                  {error}
+                </div>
+              )}
+            </div>
           </div>
           
           <div className="p-6">
-            {leads.length === 0 ? (
+            {loading ? (
+              <div className="text-center py-12">
+                <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-navy mx-auto mb-4"></div>
+                <p className="text-stone">Loading leads...</p>
+              </div>
+            ) : error ? (
+              <div className="text-center py-12">
+                <div className="text-6xl mb-4">⚠️</div>
+                <h3 className="text-lg font-semibold text-charcoal mb-2">Error Loading Leads</h3>
+                <p className="text-stone mb-4">{error}</p>
+                <button
+                  onClick={fetchLeads}
+                  className="px-6 py-3 bg-navy text-white rounded-lg hover:bg-navy/90 transition-colors"
+                >
+                  Try Again
+                </button>
+              </div>
+            ) : leads.length === 0 ? (
               <div className="text-center py-12">
                 <div className="text-6xl mb-4">🎯</div>
                 <h3 className="text-lg font-semibold text-charcoal mb-2">No leads yet</h3>
@@ -632,30 +687,30 @@ export default function HotLeadsAdminPage() {
                         <p className="text-stone text-sm line-clamp-2">{lead.description}</p>
                       </div>
                       
-                      <div className="flex items-center gap-2 ml-4">
+                      <div className="flex flex-col gap-2 ml-4">
                         {lead.slug && (
                           <Link
                             href={`/hot-leads/${lead.slug}`}
                             target="_blank"
-                            className="p-2 text-stone hover:text-navy transition-colors"
-                            title="View public page"
+                            className="flex items-center gap-2 px-4 py-2 bg-navy/5 text-navy hover:bg-navy hover:text-white rounded-lg transition-colors text-sm font-medium"
                           >
-                            <EyeIcon className="w-5 h-5" />
+                            <EyeIcon className="w-4 h-4" />
+                            View Page
                           </Link>
                         )}
                         <button 
                           onClick={() => setEditingLead(lead)}
-                          className="p-2 text-stone hover:text-navy transition-colors"
-                          title="Edit lead"
+                          className="flex items-center gap-2 px-4 py-2 bg-blue-50 text-blue-700 hover:bg-blue-600 hover:text-white rounded-lg transition-colors text-sm font-medium"
                         >
-                          <PencilIcon className="w-5 h-5" />
+                          <PencilIcon className="w-4 h-4" />
+                          Edit
                         </button>
                         <button 
                           onClick={() => handleDeleteLead(lead.id)}
-                          className="p-2 text-stone hover:text-red-600 transition-colors"
-                          title="Delete lead"
+                          className="flex items-center gap-2 px-4 py-2 bg-red-50 text-red-700 hover:bg-red-600 hover:text-white rounded-lg transition-colors text-sm font-medium"
                         >
-                          <TrashIcon className="w-5 h-5" />
+                          <TrashIcon className="w-4 h-4" />
+                          Delete
                         </button>
                       </div>
                     </div>
