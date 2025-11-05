@@ -509,8 +509,8 @@ export default function LasCrucesNewNewMexicoVendingLeadsPage() {
             itemListElement: [
               { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
               { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'New Mexico', item: `https://www.thevendinglocator.com/vending-leads/${stateSlug}` },
-              { '@type': 'ListItem', position: 4, name: 'Las Cruces New', item: `https://www.thevendinglocator.com/vending-leads/${slug}` }
+              { '@type': 'ListItem', position: 3, name: 'New Mexico', item: `https://www.thevendinglocator.com/vending-leads/new-mexico` },
+              { '@type': 'ListItem', position: 4, name: 'Las Cruces New', item: `https://www.thevendinglocator.com/vending-leads/las-cruces-new-mexico` }
             ]
           })
         }}

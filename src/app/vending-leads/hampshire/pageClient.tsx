@@ -508,8 +508,8 @@ export default function HampshireUnknownVendingLeadsPage() {
             itemListElement: [
               { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
               { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'Unknown', item: `https://www.thevendinglocator.com/vending-leads/${stateSlug}` },
-              { '@type': 'ListItem', position: 4, name: 'Hampshire', item: `https://www.thevendinglocator.com/vending-leads/${slug}` }
+              { '@type': 'ListItem', position: 3, name: 'Unknown', item: `https://www.thevendinglocator.com/vending-leads/unknown` },
+              { '@type': 'ListItem', position: 4, name: 'Hampshire', item: `https://www.thevendinglocator.com/vending-leads/hampshire` }
             ]
           })
         }}

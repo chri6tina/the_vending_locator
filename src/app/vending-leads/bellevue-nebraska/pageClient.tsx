@@ -509,8 +509,8 @@ export default function BellevueNebraskaVendingLeadsPage() {
             itemListElement: [
               { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
               { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'Nebraska', item: `https://www.thevendinglocator.com/vending-leads/${stateSlug}` },
-              { '@type': 'ListItem', position: 4, name: 'Bellevue', item: `https://www.thevendinglocator.com/vending-leads/${slug}` }
+              { '@type': 'ListItem', position: 3, name: 'Nebraska', item: `https://www.thevendinglocator.com/vending-leads/nebraska` },
+              { '@type': 'ListItem', position: 4, name: 'Bellevue', item: `https://www.thevendinglocator.com/vending-leads/bellevue-nebraska` }
             ]
           })
         }}

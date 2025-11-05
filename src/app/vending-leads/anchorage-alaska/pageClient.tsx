@@ -509,8 +509,8 @@ export default function AnchorageAlaskaVendingLeadsPage() {
             itemListElement: [
               { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
               { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'Alaska', item: `https://www.thevendinglocator.com/vending-leads/${stateSlug}` },
-              { '@type': 'ListItem', position: 4, name: 'Anchorage', item: `https://www.thevendinglocator.com/vending-leads/${slug}` }
+              { '@type': 'ListItem', position: 3, name: 'Alaska', item: `https://www.thevendinglocator.com/vending-leads/alaska` },
+              { '@type': 'ListItem', position: 4, name: 'Anchorage', item: `https://www.thevendinglocator.com/vending-leads/anchorage-alaska` }
             ]
           })
         }}

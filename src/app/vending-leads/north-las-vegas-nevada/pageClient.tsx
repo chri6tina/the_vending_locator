@@ -509,8 +509,8 @@ export default function NorthLasVegasNevadaVendingLeadsPage() {
             itemListElement: [
               { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
               { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'Nevada', item: `https://www.thevendinglocator.com/vending-leads/${stateSlug}` },
-              { '@type': 'ListItem', position: 4, name: 'North Las Vegas', item: `https://www.thevendinglocator.com/vending-leads/${slug}` }
+              { '@type': 'ListItem', position: 3, name: 'Nevada', item: `https://www.thevendinglocator.com/vending-leads/nevada` },
+              { '@type': 'ListItem', position: 4, name: 'North Las Vegas', item: `https://www.thevendinglocator.com/vending-leads/north-las-vegas-nevada` }
             ]
           })
         }}
