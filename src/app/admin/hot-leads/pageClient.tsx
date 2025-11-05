@@ -98,14 +98,15 @@ export default function HotLeadsAdminPage() {
 
       const data = await response.json()
       if (data.success) {
-        // Add new lead to the list
-        setLeads(prev => [data.lead, ...prev])
         setShowCreateForm(false)
         e.currentTarget.reset()
         
         // Show success message with the generated URL
         const slug = data.lead.slug
         alert(`✅ Hot lead created successfully!\n\nPublic URL: /hot-leads/${slug}\n\nThe lead is now available for purchase.`)
+        
+        // Refresh the entire list from the API to ensure consistency
+        await fetchLeads()
       } else {
         alert('Failed to create lead: ' + (data.error || 'Unknown error'))
       }
@@ -146,11 +147,11 @@ export default function HotLeadsAdminPage() {
 
       const data = await response.json()
       if (data.success) {
-        // Update lead in the list
-        setLeads(prev => prev.map(lead => 
-          lead.id === editingLead.id ? data.lead : lead
-        ))
         setEditingLead(null)
+        alert('✅ Lead updated successfully!')
+        
+        // Refresh the entire list from the API to ensure consistency
+        await fetchLeads()
       } else {
         alert('Failed to update lead: ' + data.error)
       }
@@ -176,7 +177,10 @@ export default function HotLeadsAdminPage() {
 
       const data = await response.json()
       if (data.success) {
-        setLeads(prev => prev.filter(lead => lead.id !== leadId))
+        alert('✅ Lead deleted successfully!')
+        
+        // Refresh the entire list from the API to ensure consistency
+        await fetchLeads()
       } else {
         alert('Failed to delete lead: ' + data.error)
       }
