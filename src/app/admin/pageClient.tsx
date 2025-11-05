@@ -93,7 +93,7 @@ export default function AdminDashboardPage() {
               </div>
             </div>
             <p className="text-sm font-semibold text-orange-800 mb-2 uppercase tracking-wide">Revenue</p>
-            <p className="text-4xl font-bold text-orange-600 mb-1">${stats.revenue.toLocaleString()}</p>
+            <p className="text-4xl font-bold text-orange-600 mb-1">${(stats.revenue || 0).toLocaleString()}</p>
             <p className="text-xs text-orange-700 flex items-center gap-1">
               <span className="w-2 h-2 bg-orange-500 rounded-full"></span>
               Total earned
