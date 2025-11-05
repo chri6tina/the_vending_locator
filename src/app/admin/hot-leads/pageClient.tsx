@@ -301,13 +301,6 @@ export default function HotLeadsAdminPage() {
                 🔄 Refresh
               </button>
               <button
-                onClick={handleCreatePaymentLinks}
-                disabled={isCreatingLinks}
-                className="flex items-center gap-2 px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors disabled:opacity-50"
-              >
-                {isCreatingLinks ? '⏳ Creating...' : '🔗 Create Payment Links'}
-              </button>
-              <button
                 onClick={() => setShowCreateForm(true)}
                 className="flex items-center gap-2 px-6 py-3 bg-navy text-white rounded-lg hover:bg-navy/90 transition-colors"
               >
