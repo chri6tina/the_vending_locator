@@ -853,6 +853,45 @@ export default function HotLeadsAdminPage() {
             )}
           </div>
         </div>
+
+        {/* Error Modal */}
+        {showErrorModal && errorDetails && (
+          <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
+            <div className="bg-white rounded-xl shadow-xl max-w-2xl w-full max-h-[80vh] overflow-hidden flex flex-col">
+              <div className="p-6 border-b border-gray-200">
+                <h2 className="text-xl font-semibold text-red-600">Error Details</h2>
+                <p className="text-sm text-stone mt-1">Copy the error below and share it for troubleshooting</p>
+              </div>
+              
+              <div className="p-6 overflow-y-auto flex-1">
+                <textarea
+                  readOnly
+                  value={errorDetails}
+                  className="w-full h-64 p-4 font-mono text-sm bg-gray-50 border border-gray-300 rounded-lg"
+                  onClick={(e) => e.currentTarget.select()}
+                />
+              </div>
+
+              <div className="p-6 border-t border-gray-200 flex items-center justify-between gap-4">
+                <button
+                  onClick={copyErrorToClipboard}
+                  className="flex items-center gap-2 px-6 py-3 bg-navy text-white rounded-lg hover:bg-navy/90 transition-colors font-semibold"
+                >
+                  📋 Copy Error to Clipboard
+                </button>
+                <button
+                  onClick={() => {
+                    setShowErrorModal(false)
+                    setErrorDetails(null)
+                  }}
+                  className="px-6 py-3 bg-gray-200 text-charcoal rounded-lg hover:bg-gray-300 transition-colors font-semibold"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   )
