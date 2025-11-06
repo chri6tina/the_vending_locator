@@ -17,8 +17,6 @@ const nextConfig = {
   experimental: {
     // Optimize package imports
     optimizePackageImports: ['@heroicons/react', 'framer-motion'],
-    // Enable optimized font loading
-    optimizeCss: true,
   },
   // Ensure proper handling of dynamic routes
   trailingSlash: false,
