@@ -70,9 +70,8 @@ export default function RootLayout({
           strategy="afterInteractive"
         />
         <Script
-          src="//code.tidio.co/is3vwk6saiczz47wysokybcphdjtmlxq.js"
-          strategy="afterInteractive"
-          async
+          src="https://code.tidio.co/is3vwk6saiczz47wysokybcphdjtmlxq.js"
+          strategy="lazyOnload"
         />
       </body>
     </html>
