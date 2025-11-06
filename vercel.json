@@ -4,7 +4,13 @@
   "outputDirectory": ".next",
   "build": {
     "env": {
-      "CACHE_BUST": "v2"
+      "CACHE_BUST": "v3",
+      "NODE_OPTIONS": "--max-old-space-size=7168"
+    }
+  },
+  "functions": {
+    "app/**/*.tsx": {
+      "maxDuration": 60
     }
   }
 }

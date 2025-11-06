@@ -13,10 +13,13 @@ const nextConfig = {
   productionBrowserSourceMaps: false,
   // Enable SWC minification
   swcMinify: true,
-  // Optimize build with parallel processing
+  // Reduce memory usage during build
   experimental: {
     // Optimize package imports
     optimizePackageImports: ['@heroicons/react', 'framer-motion'],
+    // Reduce memory usage during static generation
+    workerThreads: false,
+    cpus: 1,
   },
   // Ensure proper handling of dynamic routes
   trailingSlash: false,
