@@ -70,8 +70,9 @@ export default function RootLayout({
           strategy="afterInteractive"
         />
         <Script
+          id="tidio-chat"
           src="https://code.tidio.co/is3vwk6saiczz47wysokybcphdjtmlxq.js"
-          strategy="lazyOnload"
+          strategy="afterInteractive"
         />
       </body>
     </html>
