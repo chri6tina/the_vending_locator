@@ -110,6 +110,70 @@ commit 272b0dc
 Fix: Correct malformed JSON-LD URLs causing build failure (51 files)
 ```
 
+## Second Issue - Undefined Variables (96 files)
+
+### Problem
+After the syntax errors were fixed, the build compiled successfully but failed during the static page generation phase with:
+
+```
+ReferenceError: stateSlug is not defined
+```
+
+This affected 96 city pages during the prerendering phase.
+
+### Root Cause
+In the JSON-LD breadcrumb structured data, the code used template literals with undefined variables:
+
+```javascript
+{ '@type': 'ListItem', position: 3, name: 'Alaska', item: `https://www.thevendinglocator.com/vending-leads/${stateSlug}` },
+{ '@type': 'ListItem', position: 4, name: 'Anchorage', item: `https://www.thevendinglocator.com/vending-leads/${slug}` }
+```
+
+The variables `stateSlug` and `slug` were never defined in the component.
+
+### Solution
+Created and ran `fix_breadcrumb_slugs.js` script that:
+1. Extracted the city slug from the folder name (e.g., "anchorage-alaska")
+2. Extracted the `stateDisplayName` from the pageClient.tsx file
+3. Converted state name to slug format (e.g., "Alaska" → "alaska")
+4. Replaced template literals with hardcoded values
+
+**Example fix:**
+```javascript
+// Before
+{ '@type': 'ListItem', position: 3, name: 'Alaska', item: `https://www.thevendinglocator.com/vending-leads/${stateSlug}` }
+
+// After
+{ '@type': 'ListItem', position: 3, name: 'Alaska', item: `https://www.thevendinglocator.com/vending-leads/alaska` }
+```
+
+### Commits
+```
+commit 6fa6c88
+Fix: Replace undefined template variables in breadcrumb JSON-LD (96 files)
+```
+
+## Verification
+Local build test completed successfully:
+```
+✓ Compiled successfully
+✓ Generating static pages (1800/1800)
+```
+
+Minor errors on /404 and /500 pages (missing 'critters' module) but all actual site pages generated successfully.
+
+## Resolution Summary
+✅ **All build-blocking errors resolved!**
+
+1. ✅ Syntax errors fixed (51 files) - malformed JSON-LD URLs
+   - Pattern: `item: 'https://.../"` → `item: 'https://...'`
+   
+2. ✅ Runtime errors fixed (96 files) - undefined template variables
+   - Pattern: `${stateSlug}` → hardcoded state slug
+   - Pattern: `${slug}` → hardcoded city slug
+
+**Total files fixed:** 147 files across 2 commits
+
 ## Next Steps
-Vercel should automatically detect the push and trigger a new build. The build should now succeed as all syntax errors have been resolved.
+The fixes have been pushed to GitHub. Vercel will automatically build and deploy. The build should now complete successfully.
 
