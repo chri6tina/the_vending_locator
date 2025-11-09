@@ -169,6 +169,78 @@ const faqs = [
   }
 ]
 
+const locationCoverage = [
+  {
+    state: 'Florida',
+    emoji: '🏖️',
+    tagline: 'First Coast, Central Florida, Gulf Coast',
+    cities: [
+      {
+        name: 'Jacksonville, Florida',
+        href: '/vending-machines-for-sale-in-jacksonville-florida',
+        description:
+          'AI-powered smart coolers with First Coast placement strategy, Amazon referrals, and 24/7 operator support.'
+      },
+      {
+        name: 'Orlando, Florida',
+        comingSoon: true,
+        description:
+          'Theme parks, resorts, and office corridors—request early access as we expand Central Florida coverage.'
+      },
+      {
+        name: 'Tampa, Florida',
+        comingSoon: true,
+        description:
+          'Downtown towers, medical campuses, and waterfront hospitality placements coming soon.'
+      }
+    ]
+  },
+  {
+    state: 'Texas',
+    emoji: '🤠',
+    tagline: 'Austin, Dallas–Fort Worth, Houston metros',
+    cities: [
+      {
+        name: 'Austin, Texas',
+        comingSoon: true,
+        description:
+          'Tech campuses, co-working hubs, and luxury multifamily properties in the Texas capital.'
+      },
+      {
+        name: 'Dallas, Texas',
+        comingSoon: true,
+        description:
+          'Corporate parks, hospitals, and logistics hubs across the Metroplex.'
+      },
+      {
+        name: 'Houston, Texas',
+        comingSoon: true,
+        description:
+          'Energy corridor offices, medical centers, and residential towers launching soon.'
+      }
+    ]
+  },
+  {
+    state: 'Georgia',
+    emoji: '🍑',
+    tagline: 'Atlanta metro and coastal Georgia',
+    cities: [
+      {
+        name: 'Atlanta, Georgia',
+        comingSoon: true,
+        description:
+          'Midtown offices, film studios, and Hartsfield-Jackson travel corridors under development.'
+      },
+      {
+        name: 'Savannah, Georgia',
+        comingSoon: true,
+        description:
+          'Historic district hotels and port logistics campuses coming online soon.'
+      }
+    ]
+  }
+]
+
 export default function HahaCoolersPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null)
   const [showStickyBar, setShowStickyBar] = useState(false)
@@ -1079,6 +1151,72 @@ export default function HahaCoolersPage() {
           </div>
         </div>
       </div>
+
+  {/* Location Coverage Section */}
+  <div className="bg-neutral-50 py-16 sm:py-24 border-b border-gray-200">
+    <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+      <div className="text-center mb-12">
+        <h2 className="text-3xl sm:text-4xl font-playfair font-bold tracking-tight text-charcoal">
+          Shop Haha Coolers by Location
+        </h2>
+        <p className="mt-4 text-lg text-stone">
+          Explore state-specific landing pages with Amazon purchase links, placement strategies, and 24/7 support. Start with live pages or join the waitlist as new cities launch.
+        </p>
+      </div>
+
+      <div className="space-y-4">
+        {locationCoverage.map((state) => (
+          <details
+            key={state.state}
+            className="group bg-white border border-gray-200 rounded-2xl px-6 py-5 transition-shadow duration-300 hover:shadow-md"
+          >
+            <summary className="flex items-center justify-between cursor-pointer list-none">
+              <div className="flex items-center gap-3">
+                <span className="text-2xl" aria-hidden>
+                  {state.emoji}
+                </span>
+                <div>
+                  <h3 className="text-xl font-semibold text-charcoal">{state.state}</h3>
+                  <p className="text-sm text-stone">{state.tagline}</p>
+                </div>
+              </div>
+              <span className="text-navy text-xl group-open:rotate-90 transition-transform">›</span>
+            </summary>
+            <div className="mt-5 border-t border-gray-200 pt-5 space-y-4">
+              {state.cities.map((city) => (
+                <div
+                  key={city.name}
+                  className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 bg-warm-white border border-gray-100 rounded-xl px-5 py-4"
+                >
+                  <div>
+                    {city.href ? (
+                      <Link href={city.href} className="text-lg font-semibold text-navy hover:underline">
+                        {city.name}
+                      </Link>
+                    ) : (
+                      <span className="text-lg font-semibold text-charcoal">{city.name}</span>
+                    )}
+                    <p className="text-sm text-stone mt-1">{city.description}</p>
+                  </div>
+                  <div className="flex items-center">
+                    {city.href ? (
+                      <Link href={city.href} className="inline-flex items-center gap-1 text-sm font-semibold text-navy hover:underline">
+                        View location page →
+                      </Link>
+                    ) : (
+                      <span className="inline-flex items-center gap-2 rounded-full bg-blue-50 px-3 py-1 text-xs font-semibold text-blue-700">
+                        Coming Soon
+                      </span>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </details>
+        ))}
+      </div>
+    </div>
+  </div>
 
       {/* Final CTA Section */}
       <div className="bg-navy py-16 sm:py-20">
