@@ -259,7 +259,7 @@ export default function HahaCoolersPage() {
                   Buy Now on Amazon →
                 </a>
                 <a
-                  href="#contact"
+                  href="/haha-coolers/mini"
                   className="w-full sm:w-auto bg-white text-navy border-2 border-navy px-8 py-4 rounded-lg font-semibold text-lg hover:bg-navy hover:text-white transition-colors text-center"
                 >
                   Learn More
@@ -381,7 +381,7 @@ export default function HahaCoolersPage() {
                   Buy Now on Amazon →
                 </a>
                 <a
-                  href="#contact"
+                  href="/haha-coolers/pro"
                   className="w-full sm:w-auto bg-white text-navy border-2 border-navy px-8 py-4 rounded-lg font-semibold text-lg hover:bg-navy hover:text-white transition-colors text-center"
                 >
                   Learn More
@@ -459,7 +459,7 @@ export default function HahaCoolersPage() {
                   Buy Now on Amazon →
                 </a>
                 <a
-                  href="#contact"
+                  href="/haha-coolers/ultra"
                   className="w-full sm:w-auto bg-white text-navy border-2 border-navy px-8 py-4 rounded-lg font-semibold text-lg hover:bg-navy hover:text-white transition-colors text-center"
                 >
                   Learn More
