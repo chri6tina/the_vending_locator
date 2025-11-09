@@ -329,7 +329,7 @@ export default function HahaCoolersPage() {
 
             {/* Right Column - Product Image */}
             <div className="order-1 lg:order-2">
-              <div className="relative bg-white rounded-2xl shadow-2xl p-8 lg:p-12">
+              <div className="relative bg-white rounded-2xl shadow-2xl p-4 sm:p-6 lg:p-8">
                 <img
                   src={`/haha-coolers/haha-us360-mini-${selectedColor}.png`}
                   alt={`Haha US360 Mini Smart Vending Machine - ${selectedColor}`}
@@ -407,7 +407,7 @@ export default function HahaCoolersPage() {
 
             {/* Right Column - Product Image */}
             <div className="order-1 lg:order-2">
-              <div className="relative bg-white rounded-2xl shadow-2xl p-8 lg:p-12">
+              <div className="relative bg-white rounded-2xl shadow-2xl p-4 sm:p-6 lg:p-8">
                 <img
                   src="/haha-coolers/haha-pro-black.png"
                   alt="Haha Pro AI Smart Vending Machine"
@@ -485,7 +485,7 @@ export default function HahaCoolersPage() {
 
             {/* Right Column - Product Image */}
             <div className="order-1 lg:order-2">
-              <div className="relative bg-white rounded-2xl shadow-2xl p-8 lg:p-12">
+              <div className="relative bg-white rounded-2xl shadow-2xl p-4 sm:p-6 lg:p-8">
                 <img
                   src="/haha-coolers/haha-ultra-black.png"
                   alt="Haha Ultra AI Smart Vending Machine"
