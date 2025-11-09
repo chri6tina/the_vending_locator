@@ -373,7 +373,7 @@ export default function HahaCoolersPage() {
               {/* CTA Buttons */}
               <div className="mt-8 flex flex-col sm:flex-row items-start gap-4">
                 <a
-                  href="https://amzn.to/43aTe10"
+                  href="https://amzn.to/3LtSLRq"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors shadow-lg text-center"
