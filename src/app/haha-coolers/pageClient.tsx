@@ -16,6 +16,7 @@ import {
 } from '@heroicons/react/24/outline'
 import { StarIcon } from '@heroicons/react/24/solid'
 import { useState, useEffect } from 'react'
+import { locationAccordionDefaults } from '@/config/locationPages'
 
 const features = [
   {
@@ -169,77 +170,7 @@ const faqs = [
   }
 ]
 
-const locationCoverage = [
-  {
-    state: 'Florida',
-    emoji: '🏖️',
-    tagline: 'First Coast, Central Florida, Gulf Coast',
-    cities: [
-      {
-        name: 'Jacksonville, Florida',
-        href: '/vending-machines-for-sale-in-jacksonville-florida',
-        description:
-          'AI-powered smart coolers with First Coast placement strategy, Amazon referrals, and 24/7 operator support.'
-      },
-      {
-        name: 'Orlando, Florida',
-        comingSoon: true,
-        description:
-          'Theme parks, resorts, and office corridors—request early access as we expand Central Florida coverage.'
-      },
-      {
-        name: 'Tampa, Florida',
-        comingSoon: true,
-        description:
-          'Downtown towers, medical campuses, and waterfront hospitality placements coming soon.'
-      }
-    ]
-  },
-  {
-    state: 'Texas',
-    emoji: '🤠',
-    tagline: 'Austin, Dallas–Fort Worth, Houston metros',
-    cities: [
-      {
-        name: 'Austin, Texas',
-        comingSoon: true,
-        description:
-          'Tech campuses, co-working hubs, and luxury multifamily properties in the Texas capital.'
-      },
-      {
-        name: 'Dallas, Texas',
-        comingSoon: true,
-        description:
-          'Corporate parks, hospitals, and logistics hubs across the Metroplex.'
-      },
-      {
-        name: 'Houston, Texas',
-        comingSoon: true,
-        description:
-          'Energy corridor offices, medical centers, and residential towers launching soon.'
-      }
-    ]
-  },
-  {
-    state: 'Georgia',
-    emoji: '🍑',
-    tagline: 'Atlanta metro and coastal Georgia',
-    cities: [
-      {
-        name: 'Atlanta, Georgia',
-        comingSoon: true,
-        description:
-          'Midtown offices, film studios, and Hartsfield-Jackson travel corridors under development.'
-      },
-      {
-        name: 'Savannah, Georgia',
-        comingSoon: true,
-        description:
-          'Historic district hotels and port logistics campuses coming online soon.'
-      }
-    ]
-  }
-]
+const locationCoverage = locationAccordionDefaults
 
 export default function HahaCoolersPage() {
   const [openFaq, setOpenFaq] = useState<number | null>(null)

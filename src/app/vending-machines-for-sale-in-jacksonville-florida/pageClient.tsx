@@ -1,5 +1,13 @@
 'use client'
 
+import { LocationPageTemplate } from '@/components/location/LocationPageTemplate'
+import { jacksonvilleContent } from '@/config/locationPages'
+
+export default function JacksonvillePage() {
+  return <LocationPageTemplate content={jacksonvilleContent} />
+}
+'use client'
+
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
