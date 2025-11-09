@@ -25,7 +25,11 @@ const coolerLineup = [
       'Compact, 99% accurate vision-based cooler that fits corporate offices, gyms, and premium residential amenities across Jacksonville.',
     bullets: ['Ideal for high-traffic breakrooms', 'Cashless tap-to-open checkout', 'Remote inventory visibility'],
     amazonUrl: 'https://amzn.to/43aTe10',
-    learnMoreUrl: '/haha-coolers/mini'
+    learnMoreUrl: '/haha-coolers/mini',
+    image: {
+      src: '/haha-coolers/haha-us360-mini-black.png',
+      alt: 'Haha US360 Mini smart cooler - black finish'
+    }
   },
   {
     name: 'Haha US360 Pro',
@@ -35,7 +39,11 @@ const coolerLineup = [
       'Full-height smart cooler with 378 bottle capacity, perfect for enterprise campuses, hospitals, and university venues in Duval County.',
     bullets: ['4G + Wi-Fi connectivity', 'Vision AI prevents shrinkage', 'Built for multi-item shopping'],
     amazonUrl: 'https://amzn.to/3LtSLRq',
-    learnMoreUrl: '/haha-coolers/pro'
+    learnMoreUrl: '/haha-coolers/pro',
+    image: {
+      src: '/haha-coolers/haha-pro-black.png',
+      alt: 'Haha US360 Pro smart cooler - black finish'
+    }
   },
   {
     name: 'Haha US1200 Ultra',
@@ -45,7 +53,11 @@ const coolerLineup = [
       'Flagship AI vending cooler with maximum capacity and customizable branding to anchor micro market footprints across North Florida.',
     bullets: ['ETL-certified commercial refrigeration', 'App-driven restock automation', 'Supports full meal prep assortments'],
     amazonUrl: 'https://amzn.to/3LwEbIO',
-    learnMoreUrl: '/haha-coolers/ultra'
+    learnMoreUrl: '/haha-coolers/ultra',
+    image: {
+      src: '/haha-coolers/haha-ultra-black.png',
+      alt: 'Haha US1200 Ultra smart cooler - black finish'
+    }
   }
 ]
 
@@ -188,7 +200,15 @@ export default function JacksonvillePage() {
               </div>
               <span className="inline-flex items-center gap-2 text-navy font-semibold">
                 <ChatBubbleOvalLeftEllipsisIcon className="h-5 w-5" />
-                24/7 Support: Telegram @thevendinglocator
+                24/7 Support:{' '}
+                <a
+                  href="https://t.me/thevendinglocator"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:no-underline"
+                >
+                  Telegram @thevendinglocator
+                </a>
               </span>
             </div>
 
@@ -246,7 +266,16 @@ export default function JacksonvillePage() {
                     <strong className="text-charcoal">Localized onboarding:</strong> Launch checklists and recommended product mixes for each Jacksonville neighbourhood.
                   </li>
                   <li>
-                    <strong className="text-charcoal">Always-on support:</strong> Telegram @thevendinglocator with real operators sharing playbooks around the clock.
+                    <strong className="text-charcoal">Always-on support:</strong>{' '}
+                    <a
+                      href="https://t.me/thevendinglocator"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-navy font-semibold hover:underline"
+                    >
+                      Telegram @thevendinglocator
+                    </a>{' '}
+                    with real operators sharing playbooks around the clock.
                   </li>
                 </ul>
               </div>
@@ -273,6 +302,11 @@ export default function JacksonvillePage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {coolerLineup.map((cooler) => (
                 <div key={cooler.name} className="bg-white border border-gray-200 rounded-2xl p-8 flex flex-col gap-6">
+                  <img
+                    src={cooler.image.src}
+                    alt={cooler.image.alt}
+                    className="w-full h-44 object-contain"
+                  />
                   <div>
                     <h3 className="text-2xl font-semibold text-charcoal">{cooler.name}</h3>
                     <p className="mt-2 text-lg font-bold text-navy">{cooler.price}</p>
