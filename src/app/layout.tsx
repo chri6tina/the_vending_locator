@@ -55,7 +55,7 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/site.webmanifest" />
       </head>
-      <body className={`${inter.className} bg-white`}>
+      <body className={inter.className}>
         <ZipCodeModalProvider>
           {children}
           <ZipCodeModalWrapper />
