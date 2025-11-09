@@ -189,7 +189,7 @@ export default function HahaProPageClient() {
               </div>
 
               <div className="order-1 lg:order-2">
-                <div className="relative bg-white rounded-2xl shadow-2xl p-4 sm:p-6 lg:p-8">
+                <div className="relative bg-white rounded-2xl border border-gray-200 p-4 sm:p-6 lg:p-8">
                   <img
                     src="/haha-coolers/haha-pro-black.png"
                     alt="Haha Pro AI Smart Vending Machine"
