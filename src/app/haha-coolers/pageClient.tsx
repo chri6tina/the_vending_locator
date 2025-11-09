@@ -419,6 +419,84 @@ export default function HahaCoolersPage() {
         </div>
       </div>
 
+      {/* Haha Ultra Hero Section */}
+      <div className="relative bg-gradient-to-br from-blue-50 to-white overflow-hidden border-t border-gray-200">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 py-12 sm:py-16 lg:py-20 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            {/* Left Column - Product Info */}
+            <div className="order-2 lg:order-1">
+              <div className="mb-6 inline-flex items-center rounded-full bg-navy/10 px-4 py-2 text-sm font-medium text-navy">
+                Enterprise Smart Vending
+              </div>
+
+              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-playfair font-bold tracking-tight text-charcoal mb-6">
+                Haha Ultra<br/>
+                <span className="text-navy">AI Smart</span> Vending Machine
+              </h2>
+
+              <p className="mt-6 text-xl leading-8 text-stone">
+                The flagship smart vending platform for high-volume locations. Ultra-fast AI checkout, massive capacity, and business-grade remote
+                management so you can run unattended retail at scale.
+              </p>
+
+              {/* Price */}
+              <div className="mt-8 flex items-baseline gap-4">
+                <span className="text-5xl font-bold text-charcoal">$7,299</span>
+                <div className="text-stone">
+                  <div className="text-sm">One-time purchase</div>
+                  <div className="text-xs">Enterprise AI vending</div>
+                </div>
+              </div>
+
+              {/* CTA Buttons */}
+              <div className="mt-8 flex flex-col sm:flex-row items-start gap-4">
+                <a
+                  href="https://amzn.to/3LwEbIO"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors shadow-lg text-center"
+                >
+                  Buy Now on Amazon →
+                </a>
+                <a
+                  href="#contact"
+                  className="w-full sm:w-auto bg-white text-navy border-2 border-navy px-8 py-4 rounded-lg font-semibold text-lg hover:bg-navy hover:text-white transition-colors text-center"
+                >
+                  Learn More
+                </a>
+              </div>
+
+              {/* Trust Indicators */}
+              <div className="mt-8 flex flex-wrap items-center gap-6 text-sm text-stone">
+                <div className="flex items-center gap-2">
+                  <CheckCircleIcon className="h-5 w-5 text-green-600" />
+                  <span>Large Format Combo Merchandising</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <CheckCircleIcon className="h-5 w-5 text-green-600" />
+                  <span>Visual AI + Electromagnetic Security</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <CheckCircleIcon className="h-5 w-5 text-green-600" />
+                  <span>App Control with 4G / Wi-Fi</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Column - Product Image */}
+            <div className="order-1 lg:order-2">
+              <div className="relative bg-white rounded-2xl shadow-2xl p-8 lg:p-12">
+                <img
+                  src="/haha-coolers/haha-ultra-black.png"
+                  alt="Haha Ultra AI Smart Vending Machine"
+                  className="w-full h-auto"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* How It Works Section */}
       <div className="bg-white py-16 sm:py-24 border-b border-gray-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
