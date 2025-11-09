@@ -18,7 +18,7 @@ const ultraHighlights = [
   {
     title: 'End-to-End Grab & Go Retail',
     description:
-      'Supports multi-item shopping like a micro-market. Customers can open the door, mix snacks, drinks, and meals, then walk away—billing is automatic.',
+      'Supports multi-item shopping like a micro-market. Customers open the door, mix snacks, drinks, and meals, then walk away—billing is automatic with 99% accurate AI vision.',
     icon: CpuChipIcon
   },
   {
@@ -48,9 +48,17 @@ const ultraHighlights = [
   {
     title: 'Always-On Reliability',
     description:
-      'Commercial refrigeration with double-glazed anti-fog glass, ETL certification, and robust hardware designed for 24/7 unmanned retail.',
+      'Commercial refrigeration with customizable lightboxes/panels, double-glazed anti-fog glass, ETL certification, and robust hardware designed for 24/7 unmanned retail.',
     icon: BoltIcon
   }
+]
+
+const salesBenefits = [
+  'Higher sales per vending machine thanks to expanded product categories and stacked merchandising for heavier foot traffic locations.',
+  'Camera-assisted, multi-item checkout mimics supermarket shopping and encourages larger baskets with every visit.',
+  'Powerful professional app with Wi-Fi/4G handles remote device control, data statistics, replenishment orders, and customer feedback.',
+  'Electromagnetic lock plus camera visual recognition ensure secure transactions while customers help themselves.',
+  'Customizable lightboxes and side panels let you promote a brand, property, or merchants with eye-catching vinyl wraps.'
 ]
 
 const ultraSpecs = [
@@ -88,13 +96,21 @@ const ultraFAQs = [
 ]
 
 const premiumPlacements = [
-  'Hospitals & healthcare campuses',
-  'Airports, transit hubs, and convention centres',
-  'Luxury residential towers & mixed-use developments',
-  'Large corporate headquarters',
-  'Universities & student housing',
-  'Resort and hospitality corridors',
-  '24/7 factories & logistics hubs'
+  'Commercial & office towers',
+  'Manufacturing & factory spaces',
+  'Universities & college campuses',
+  'Hospitals & healthcare environments',
+  'Hospitality, hotels, and B&Bs',
+  'Residential buildings & mixed-use developments',
+  'Airports, shopping malls, and transportation hubs',
+  'Gyms and fitness clubs'
+]
+
+const galleryImages = [
+  {
+    src: '/haha-coolers/haha-ultra-info-1.png',
+    alt: 'Haha Ultra AI smart vending marketing graphic'
+  }
 ]
 
 export default function HahaUltraPageClient() {
@@ -123,7 +139,7 @@ export default function HahaUltraPageClient() {
 
                 <p className="mt-6 text-lg leading-8 text-stone">
                   The flagship Haha platform engineered for high-traffic, unattended retail. Ultra delivers frictionless shopping, bulletproof security,
-                  and operational tools to keep thousands of SKUs stocked around the clock.
+                  and operational tools to keep thousands of SKUs stocked around the clock while shoppers enjoy a supermarket-style experience.
                 </p>
 
                 <div className="mt-8 flex items-baseline gap-4">
@@ -236,7 +252,7 @@ export default function HahaUltraPageClient() {
                 <h3 className="text-xl font-semibold text-charcoal mb-4">Support & Community</h3>
                 <p className="text-stone leading-relaxed mb-4">
                   Collaborate with other enterprise operators in our Telegram community and lean on The Vending Locator team for deployment roadmaps,
-                  site sourcing, merchandising strategies, and ongoing optimisation.
+                  site sourcing, merchandising strategies, ongoing optimisation, and lifetime free technical support.
                 </p>
                 <a
                   href="https://t.me/thevendinglocator"
@@ -275,7 +291,8 @@ export default function HahaUltraPageClient() {
             </h2>
             <p className="text-lg text-stone leading-relaxed mb-8">
               From site acquisition to merchandising and ongoing optimisation, our team helps enterprise operators deploy the Haha Ultra at scale while
-              maintaining white-glove customer experience.
+              maintaining white-glove customer experience. Comprehensive pre-sales consulting, 1-year warranty, and lifetime free technical support are
+              available for every installation.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
@@ -292,6 +309,19 @@ export default function HahaUltraPageClient() {
               >
                 Secure Units on Amazon →
               </a>
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-white border-b border-gray-200">
+          <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+            <h2 className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal text-center mb-12">Product gallery</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {galleryImages.map((image) => (
+                <div key={image.src} className="bg-white border border-gray-200 rounded-2xl p-4 shadow-sm">
+                  <img src={image.src} alt={image.alt} className="w-full h-auto rounded-xl" />
+                </div>
+              ))}
             </div>
           </div>
         </section>
