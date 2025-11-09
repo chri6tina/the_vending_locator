@@ -672,7 +672,7 @@ export default function HahaCoolersPage() {
       </div>
 
       {/* Benefits Section */}
-      <div className="bg-gradient-to-br from-blue-50 to-white py-16 sm:py-24">
+      <div className="bg-white py-16 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-playfair font-bold tracking-tight text-charcoal mb-4">
