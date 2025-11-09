@@ -248,6 +248,18 @@ export default function HahaCoolersPage() {
                 </div>
               </div>
 
+              <div className="mt-6 inline-flex items-center gap-2 bg-blue-50 border border-blue-200 px-4 py-2 rounded-lg text-sm font-medium text-blue-800">
+                <span>💬 24/7 Support:</span>
+                <a
+                  href="https://t.me/thevendinglocator"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-navy hover:underline"
+                >
+                  Telegram @thevendinglocator
+                </a>
+              </div>
+
               {/* CTA Buttons */}
               <div className="mt-8 flex flex-col sm:flex-row items-start gap-4">
                 <a
@@ -370,6 +382,18 @@ export default function HahaCoolersPage() {
                 </div>
               </div>
 
+              <div className="mt-6 inline-flex items-center gap-2 bg-blue-50 border border-blue-200 px-4 py-2 rounded-lg text-sm font-medium text-blue-800">
+                <span>💬 24/7 Support:</span>
+                <a
+                  href="https://t.me/thevendinglocator"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-navy hover:underline"
+                >
+                  Telegram @thevendinglocator
+                </a>
+              </div>
+
               {/* CTA Buttons */}
               <div className="mt-8 flex flex-col sm:flex-row items-start gap-4">
                 <a
@@ -443,9 +467,21 @@ export default function HahaCoolersPage() {
               <div className="mt-8 flex items-baseline gap-4">
                 <span className="text-5xl font-bold text-charcoal">$7,299</span>
                 <div className="text-stone">
-                  <div className="text-sm">One-time purchase</div>
-                  <div className="text-xs">Enterprise AI vending</div>
+                  <div className="text-sm">Single unit pricing</div>
+                  <div className="text-xs">Enterprise support available</div>
                 </div>
+              </div>
+
+              <div className="mt-6 inline-flex items-center gap-2 bg-blue-50 border border-blue-200 px-4 py-2 rounded-lg text-sm font-medium text-blue-800">
+                <span>💬 24/7 Support:</span>
+                <a
+                  href="https://t.me/thevendinglocator"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-navy hover:underline"
+                >
+                  Telegram @thevendinglocator
+                </a>
               </div>
 
               {/* CTA Buttons */}
@@ -470,7 +506,7 @@ export default function HahaCoolersPage() {
               <div className="mt-8 flex flex-wrap items-center gap-6 text-sm text-stone">
                 <div className="flex items-center gap-2">
                   <CheckCircleIcon className="h-5 w-5 text-green-600" />
-                  <span>Large Format Combo Merchandising</span>
+                  <span>High-volume combo merchandising</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircleIcon className="h-5 w-5 text-green-600" />

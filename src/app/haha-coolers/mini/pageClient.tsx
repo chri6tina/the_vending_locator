@@ -165,6 +165,18 @@ export default function HahaMiniPageClient() {
                   </div>
                 </div>
 
+                <div className="mt-6 inline-flex items-center gap-2 bg-blue-50 border border-blue-200 px-4 py-2 rounded-lg text-sm font-medium text-blue-800">
+                  <span>💬 24/7 Support:</span>
+                  <a
+                    href="https://t.me/thevendinglocator"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-navy hover:underline"
+                  >
+                    Telegram @thevendinglocator
+                  </a>
+                </div>
+
                 <div className="mt-8 flex flex-col sm:flex-row items-start gap-4">
                   <a
                     href="https://amzn.to/43aTe10"
@@ -405,6 +417,17 @@ export default function HahaMiniPageClient() {
                 className="bg-white text-navy border-2 border-navy px-8 py-4 rounded-lg font-semibold text-lg hover:bg-navy hover:text-white transition-colors"
               >
                 Order Direct on Amazon →
+              </a>
+            </div>
+            <div className="mt-6 inline-flex items-center gap-2 bg-blue-50 border border-blue-200 px-4 py-2 rounded-lg text-sm font-medium text-blue-800 justify-center">
+              <span>💬 24/7 Support:</span>
+              <a
+                href="https://t.me/thevendinglocator"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-navy hover:underline"
+              >
+                Telegram @thevendinglocator
               </a>
             </div>
           </div>
