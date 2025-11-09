@@ -354,7 +354,7 @@ export default function HahaCoolersPage() {
       </div>
 
       {/* Haha Pro Hero Section */}
-      <div className="relative bg-white overflow-hidden border-t border-gray-200">
+      <div className="relative bg-neutral-50 overflow-hidden border-t border-gray-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 py-12 sm:py-16 lg:py-20 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Left Column - Product Info */}
@@ -444,7 +444,7 @@ export default function HahaCoolersPage() {
       </div>
 
       {/* Haha Ultra Hero Section */}
-      <div className="relative bg-white overflow-hidden border-t border-gray-200">
+      <div className="relative bg-neutral-50 overflow-hidden border-t border-gray-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 py-12 sm:py-16 lg:py-20 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Left Column - Product Info */}
@@ -534,7 +534,7 @@ export default function HahaCoolersPage() {
       </div>
 
       {/* How It Works Section */}
-      <div className="bg-white py-16 sm:py-24 border-b border-gray-200">
+      <div className="bg-neutral-50 py-16 sm:py-24 border-b border-gray-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-playfair font-bold tracking-tight text-charcoal mb-4">
