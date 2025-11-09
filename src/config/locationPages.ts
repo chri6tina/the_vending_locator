@@ -1,6 +1,7 @@
 import {
   BuildingOfficeIcon,
   ChatBubbleOvalLeftEllipsisIcon,
+  ChartBarIcon,
   ClockIcon,
   CubeIcon,
   LifebuoyIcon,
@@ -329,6 +330,836 @@ export const jacksonvilleContent: CityLandingContent = {
   ]
 }
 
+export const alexandriaContent: CityLandingContent = {
+  slug: 'vending-machines-for-sale-in-alexandria-virginia',
+  city: 'Alexandria',
+  state: 'Virginia',
+  hero: {
+    eyebrow: {
+      icon: SparklesIcon,
+      label: 'Smart Vending • Alexandria, VA'
+    },
+    headline: {
+      pre: 'Vending Machines for Sale in',
+      highlight: 'Alexandria, Virginia'
+    },
+    description:
+      'Modernise food and beverage service across Old Town, the Eisenhower Valley, and National Landing. Haha smart coolers pair with our placement intelligence to keep professionals, commuters, and tourists stocked around the clock.',
+    bullets: [
+      {
+        icon: ShieldCheckIcon,
+        text: 'Authentic Haha smart coolers backed by US-based warranty partners'
+      },
+      {
+        icon: ClockIcon,
+        text: 'Coordinated freight into Alexandria loading docks and high-rise service corridors'
+      },
+      {
+        icon: ChatBubbleOvalLeftEllipsisIcon,
+        text: '24/7 expert support via Telegram for Northern Virginia operators'
+      }
+    ],
+    ctas: [
+      {
+        label: 'Explore Smart Coolers',
+        href: '/haha-coolers',
+        variant: 'primary'
+      },
+      {
+        label: 'Talk to Alexandria Experts',
+        href: '/contact',
+        variant: 'secondary'
+      }
+    ],
+    supportLink: {
+      icon: ChatBubbleOvalLeftEllipsisIcon,
+      label: 'Telegram @thevendinglocator',
+      href: 'https://t.me/thevendinglocator'
+    }
+  },
+  sidebar: {
+    badge: {
+      icon: MapPinIcon,
+      label: 'Built for NOVA commuter corridors'
+    },
+    items: [
+      {
+        title: 'Primary verticals:',
+        description: 'Defense contractors, mixed-use office towers, boutique hotels, and waterfront retail.'
+      },
+      {
+        title: 'Power your routes:',
+        description: 'Remote planograms, 4G + Wi-Fi connectivity, and data-driven restock alerts.'
+      },
+      {
+        title: 'Localized onboarding:',
+        description: 'Guidance for historic buildings, federal security protocols, and mixed-tenant amenities.'
+      },
+      {
+        title: 'Always-on support:',
+        description: 'Telegram @thevendinglocator with operators across the DC metro sharing live playbooks.'
+      }
+    ]
+  },
+  coolerLineup: jacksonvilleContent.coolerLineup,
+  sellingPoints: [
+    {
+      title: 'Serve Old Town foot traffic',
+      description:
+        'Deploy smart coolers in boutique hotels and waterfront retail that demand premium grab-and-go without disrupting historic interiors.',
+      icon: BuildingOfficeIcon
+    },
+    {
+      title: 'Support federal & tech campuses',
+      description:
+        'Engineered for TSA-regulated facilities, defense contractors, and Amazon’s HQ2 workforce in nearby National Landing.',
+      icon: CubeIcon
+    },
+    {
+      title: 'Stock for commuter dayparts',
+      description:
+        'Optimise inventory for early-morning Metro riders, lunchtime office rush, and late-night hospitality crowds.',
+      icon: SparklesIcon
+    },
+    {
+      title: 'Hands-on launch team',
+      description:
+        'We coordinate dock schedules, badge access, and merchandising so your first Alexandria install runs flawlessly.',
+      icon: LifebuoyIcon
+    }
+  ],
+  neighborhoods: [
+    'Old Town & King Street corridor',
+    'Eisenhower Avenue technology district',
+    'Carlyle and Duke Street office towers',
+    'Potomac Yard / National Landing',
+    'Del Ray & Arlandria mixed-use neighborhoods',
+    'Huntington & Van Dorn Metro catchments'
+  ],
+  deliverables: [
+    'Compliance checklists for federal and historic buildings.',
+    'Placement sourcing near Metro stations and government campuses.',
+    'Seasonal menu plans for tourist waves and commuter peaks.'
+  ],
+  logistics: [
+    {
+      title: 'White-glove delivery',
+      description:
+        'Trusted carriers navigate Alexandria’s historic streets, secure loading docks, and high-rise service elevators.',
+      icon: TruckIcon
+    },
+    {
+      title: 'Warranty & compliance',
+      description:
+        'ETL-listed coolers with 1-year parts warranty. Guidance for Virginia health department inspections and property management approvals.',
+      icon: ShieldCheckIcon
+    },
+    {
+      title: 'Launch readiness kit',
+      description:
+        'Site surveys, planograms, and marketing collateral tailored for Alexandria audiences and visitor traffic.',
+      icon: SparklesIcon
+    },
+    {
+      title: 'Live operator coaching',
+      description:
+        'Weekly Telegram clinics on North Virginia pricing strategy, product sourcing, and seasonal offerings.',
+      icon: ClockIcon
+    }
+  ],
+  faq: [
+    {
+      question: 'How quickly can we deploy smart coolers in Alexandria?',
+      answer:
+        'Most installs go live within 2–3 weeks. We coordinate building access, DockMaster scheduling, and security approvals while your Haha cooler ships.'
+    },
+    {
+      question: 'Where do Alexandria operators see the best performance?',
+      answer:
+        'High-traffic offices near King Street Metro, boutique hotels along the waterfront, mixed-use towers in Carlyle, and National Landing workplaces.'
+    },
+    {
+      question: 'Can the coolers handle historic buildings with limited power?',
+      answer:
+        'Yes. Every Haha unit runs on standard 110V circuits and features double-glazed doors to manage humidity without stressing older HVAC systems.'
+    },
+    {
+      question: 'Do you help with sourcing local products?',
+      answer:
+        'We partner with Northern Virginia distributors and local roasteries to curate assortments that match Alexandria’s premium expectations.'
+    },
+    {
+      question: 'How does 24/7 support work for Alexandria routes?',
+      answer:
+        'Operators tap our Telegram channel for round-the-clock troubleshooting, planogram advice, and launch tips specific to the DC metro.'
+    }
+  ]
+}
+
+export const anchorageContent: CityLandingContent = {
+  slug: 'vending-machines-for-sale-in-anchorage-alaska',
+  city: 'Anchorage',
+  state: 'Alaska',
+  hero: {
+    eyebrow: {
+      icon: SparklesIcon,
+      label: 'Smart Vending • Anchorage, AK'
+    },
+    headline: {
+      pre: 'Vending Machines for Sale in',
+      highlight: 'Anchorage, Alaska'
+    },
+    description:
+      'Bring grab-and-go convenience to Alaska’s largest city. Haha AI coolers maintain temperature stability through harsh winters while we guide you to the highest-traffic placements from Midtown to Ted Stevens Anchorage International Airport.',
+    bullets: [
+      {
+        icon: ShieldCheckIcon,
+        text: 'Commercial-grade refrigeration tested for Alaskan climates'
+      },
+      {
+        icon: ClockIcon,
+        text: 'Coordinated freight to Anchorage with rugged delivery partners'
+      },
+      {
+        icon: ChatBubbleOvalLeftEllipsisIcon,
+        text: '24/7 support with operators in the Pacific and Arctic time zones'
+      }
+    ],
+    ctas: [
+      {
+        label: 'Explore Smart Coolers',
+        href: '/haha-coolers',
+        variant: 'primary'
+      },
+      {
+        label: 'Talk to Anchorage Experts',
+        href: '/contact',
+        variant: 'secondary'
+      }
+    ],
+    supportLink: {
+      icon: ChatBubbleOvalLeftEllipsisIcon,
+      label: 'Telegram @thevendinglocator',
+      href: 'https://t.me/thevendinglocator'
+    }
+  },
+  sidebar: {
+    badge: {
+      icon: MapPinIcon,
+      label: 'Built for Southcentral Alaska'
+    },
+    items: [
+      {
+        title: 'Primary verticals:',
+        description: 'Oil & gas offices, healthcare campuses, military bases, tourism hubs, and logistics warehouses.'
+      },
+      {
+        title: 'Power your routes:',
+        description: 'Remote telemetry, restock forecasting, and cold-weather maintenance best practices.'
+      },
+      {
+        title: 'Localized onboarding:',
+        description: 'Guidance for shipping timelines, receiving hours, and cold-climate performance checks.'
+      },
+      {
+        title: 'Always-on support:',
+        description: 'Telegram @thevendinglocator with weekly Alaska-specific office hours.'
+      }
+    ]
+  },
+  coolerLineup: jacksonvilleContent.coolerLineup,
+  sellingPoints: [
+    {
+      title: 'Engineered for freezing climates',
+      description:
+        'Double-glazed, heated doors and dehumidification keep visibility clear and product temperatures stable during Anchorage winters.',
+      icon: ShieldCheckIcon
+    },
+    {
+      title: 'Serve workforce campuses',
+      description:
+        'Ideal for North Slope crew change hubs, UMED District hospitals, and Ted Stevens airport staff areas needing premium meals 24/7.',
+      icon: BuildingOfficeIcon
+    },
+    {
+      title: 'Tourism-ready merchandising',
+      description:
+        'Offer local beverages, protein-rich snacks, and fresh meals for visitors heading to cruise departures and national park excursions.',
+      icon: SparklesIcon
+    },
+    {
+      title: 'Hands-on deployment team',
+      description:
+        'We coordinate winterised delivery, back-of-house power checks, and merchandising training tailored to Anchorage demand patterns.',
+      icon: LifebuoyIcon
+    }
+  ],
+  neighborhoods: [
+    'Downtown Anchorage tourism core',
+    'Midtown office parks and hotels',
+    'UMED medical district',
+    'Ted Stevens Anchorage International Airport support facilities',
+    'Joint Base Elmendorf-Richardson',
+    'South Anchorage logistics and retail hubs'
+  ],
+  deliverables: [
+    'Cold-weather equipment checklist and maintenance schedule.',
+    'Product mixes designed for shift workers, travelers, and outdoor enthusiasts.',
+    'Supply chain introductions to Alaskan distributors and commissaries.'
+  ],
+  logistics: [
+    {
+      title: 'Anchorage freight coordination',
+      description:
+        'We partner with carriers used to winter roads and airport freight arrivals, ensuring your cooler reaches the site safely.',
+      icon: TruckIcon
+    },
+    {
+      title: 'Warranty & compliance',
+      description:
+        'ETL-certified coolers with 1-year parts warranty, plus guidance on Municipality of Anchorage food safety requirements.',
+      icon: ShieldCheckIcon
+    },
+    {
+      title: 'Launch playbooks',
+      description:
+        'Step-by-step activation for remote monitoring, defrost cycles, and product curation suited to Anchorage lifestyles.',
+      icon: SparklesIcon
+    },
+    {
+      title: '24/7 operator coaching',
+      description:
+        'Telegram support covering cold-chain restocks, pricing for higher freight costs, and seasonal menu rotations.',
+      icon: ClockIcon
+    }
+  ],
+  faq: [
+    {
+      question: 'How do Haha coolers perform during Alaskan winters?',
+      answer:
+        'The double-glazed, heated doors and smart defrost system maintain internal temperatures even when backrooms run cold. Operators receive cold-weather maintenance checklists.'
+    },
+    {
+      question: 'What delivery options do you offer into Anchorage?',
+      answer:
+        'We coordinate line-haul freight to Anchorage, arrange final-mile delivery with local crews, and schedule installs around limited receiving hours.'
+    },
+    {
+      question: 'Can I stock local Alaskan products?',
+      answer:
+        'Absolutely. We connect you with regional distributors for fresh meals, seafood options, and Alaska-made beverages that resonate with locals and visitors.'
+    },
+    {
+      question: 'Do you support remote sites beyond Anchorage?',
+      answer:
+        'Yes. We help operators stage equipment in Anchorage before shipping to the Kenai Peninsula, Mat-Su Valley, or North Slope job sites.'
+    },
+    {
+      question: 'How does 24/7 support work across time zones?',
+      answer:
+        'Our Telegram community includes operators across Alaska and the Pacific Northwest, so you get near real-time responses regardless of shift hours.'
+    }
+  ]
+}
+
+export const arlingtonContent: CityLandingContent = {
+  slug: 'vending-machines-for-sale-in-arlington-virginia',
+  city: 'Arlington',
+  state: 'Virginia',
+  hero: {
+    eyebrow: {
+      icon: SparklesIcon,
+      label: 'Smart Vending • Arlington, VA'
+    },
+    headline: {
+      pre: 'Vending Machines for Sale in',
+      highlight: 'Arlington, Virginia'
+    },
+    description:
+      'Serve the nation’s most connected workforce with AI-powered coolers tailored for Pentagon City, Rosslyn, Ballston, and Amazon HQ2. We combine Haha hardware with Arlington-specific placement strategies and always-on support.',
+    bullets: [
+      {
+        icon: ShieldCheckIcon,
+        text: 'Enterprise-grade Haha coolers certified for high-security campuses'
+      },
+      {
+        icon: ClockIcon,
+        text: 'Coordinated installs around federal building security and HOA guidelines'
+      },
+      {
+        icon: ChatBubbleOvalLeftEllipsisIcon,
+        text: '24/7 Telegram support for National Landing operators'
+      }
+    ],
+    ctas: [
+      {
+        label: 'Explore Smart Coolers',
+        href: '/haha-coolers',
+        variant: 'primary'
+      },
+      {
+        label: 'Talk to Arlington Experts',
+        href: '/contact',
+        variant: 'secondary'
+      }
+    ],
+    supportLink: {
+      icon: ChatBubbleOvalLeftEllipsisIcon,
+      label: 'Telegram @thevendinglocator',
+      href: 'https://t.me/thevendinglocator'
+    }
+  },
+  sidebar: {
+    badge: {
+      icon: MapPinIcon,
+      label: 'Built for National Landing'
+    },
+    items: [
+      {
+        title: 'Primary verticals:',
+        description: 'Federal agencies, tech headquarters, multifamily towers, and hospitality suites.'
+      },
+      {
+        title: 'Power your routes:',
+        description: 'Inventory analytics, badge-access best practices, and commuter-friendly assortments.'
+      },
+      {
+        title: 'Localized onboarding:',
+        description: 'Assistance with Pentagon-area clearances, condo board approvals, and property manager coordination.'
+      },
+      {
+        title: 'Always-on support:',
+        description: 'Telegram @thevendinglocator with live chatter from DMV-area operators.'
+      }
+    ]
+  },
+  coolerLineup: jacksonvilleContent.coolerLineup,
+  sellingPoints: [
+    {
+      title: 'Serve high-density offices',
+      description:
+        'Perfect for Rosslyn and Ballston towers that want micro-market experiences without the footprint or staffing.',
+      icon: BuildingOfficeIcon
+    },
+    {
+      title: 'Badge-access friendly',
+      description:
+        'Unlock integrations and workflows that fit government security requirements and flex office schedules.',
+      icon: ShieldCheckIcon
+    },
+    {
+      title: 'Resident amenities upgrade',
+      description:
+        'Elevate multifamily buildings in Clarendon, Virginia Square, and Crystal City with 24/7 fresh food access.',
+      icon: SparklesIcon
+    },
+    {
+      title: 'Data-backed merchandising',
+      description:
+        'Use AI cooler insights plus our DMV placement data to optimise SKUs for tech workers, consultants, and government staff.',
+      icon: ChartBarIcon
+    }
+  ],
+  neighborhoods: [
+    'Rosslyn and Court House urban core',
+    'Ballston and Virginia Square innovation district',
+    'Pentagon City & Crystal City / National Landing',
+    'Clarendon and Clarendon-Courthouse corridor',
+    'Columbia Pike revitalisation zone',
+    'Shirlington arts & dining district'
+  ],
+  deliverables: [
+    'Site selection playbooks tuned to Metro adjacency and office occupancy.',
+    'Property manager conversation guides and compliance documentation.',
+    'Menu strategies for wellness-focused tech teams and defense contractors.'
+  ],
+  logistics: [
+    {
+      title: 'Precision deliveries',
+      description:
+        'We coordinate freight with building engineers, after-hours dock access, and secure elevator reservations across Arlington high-rises.',
+      icon: TruckIcon
+    },
+    {
+      title: 'Warranty & compliance',
+      description:
+        'ETL-certified hardware, HIPAA-friendly data handling, and Virginia health department alignment from day one.',
+      icon: ShieldCheckIcon
+    },
+    {
+      title: 'Launch activation kit',
+      description:
+        'Includes signage, QR onboarding, and training materials for property staff and tenant ambassadors.',
+      icon: SparklesIcon
+    },
+    {
+      title: 'Operator mastermind',
+      description:
+        'Join weekly Telegram strategy huddles covering Arlington-specific pricing, product sourcing, and seasonal trends.',
+      icon: ClockIcon
+    }
+  ],
+  faq: [
+    {
+      question: 'What approvals are needed to install Haha coolers in Arlington?',
+      answer:
+        'We help you navigate security clearances for federal tenants, access agreements with property managers, and any HOA approvals for multifamily placements.'
+    },
+    {
+      question: 'How soon can Amazon HQ2-adjacent sites go live?',
+      answer:
+        'Most National Landing installs deploy in under 3 weeks once site approvals are confirmed. We align with Amazon building policies when applicable.'
+    },
+    {
+      question: 'Can the coolers support healthy and premium product mixes?',
+      answer:
+        'Yes. The vision system handles salads, wraps, cold brew, and premium snacks—perfect for wellness programs in Arlington offices.'
+    },
+    {
+      question: 'Do you provide data to prove ROI to property partners?',
+      answer:
+        'Operators receive real-time sales dashboards and can share weekly performance summaries with landlords or corporate stakeholders.'
+    },
+    {
+      question: 'Is there after-hours support for Arlington routes?',
+      answer:
+        'Our Telegram community and support team respond around the clock, helping you resolve issues even during late-night restocks or weekend events.'
+    }
+  ]
+}
+
+export const augustaContent: CityLandingContent = {
+  slug: 'vending-machines-for-sale-in-augusta-maine',
+  city: 'Augusta',
+  state: 'Maine',
+  hero: {
+    eyebrow: {
+      icon: SparklesIcon,
+      label: 'Smart Vending • Augusta, ME'
+    },
+    headline: {
+      pre: 'Vending Machines for Sale in',
+      highlight: 'Augusta, Maine'
+    },
+    description:
+      'Deliver premium grab-and-go for Maine’s capital city. From State House offices to the Kennebec River business corridor, Haha smart coolers keep employees and visitors fuelled with fresh options and contactless checkout.',
+    bullets: [
+      {
+        icon: ShieldCheckIcon,
+        text: 'ETL-certified Haha coolers that thrive in four-season climates'
+      },
+      {
+        icon: ClockIcon,
+        text: 'Coordinated freight along I-95 and regional carriers serving Central Maine'
+      },
+      {
+        icon: ChatBubbleOvalLeftEllipsisIcon,
+        text: '24/7 Telegram support with New England operator network'
+      }
+    ],
+    ctas: [
+      {
+        label: 'Explore Smart Coolers',
+        href: '/haha-coolers',
+        variant: 'primary'
+      },
+      {
+        label: 'Talk to Augusta Experts',
+        href: '/contact',
+        variant: 'secondary'
+      }
+    ],
+    supportLink: {
+      icon: ChatBubbleOvalLeftEllipsisIcon,
+      label: 'Telegram @thevendinglocator',
+      href: 'https://t.me/thevendinglocator'
+    }
+  },
+  sidebar: {
+    badge: {
+      icon: MapPinIcon,
+      label: 'Built for Central Maine'
+    },
+    items: [
+      {
+        title: 'Primary verticals:',
+        description: 'State government, healthcare campuses, education, distribution hubs, and hospitality.'
+      },
+      {
+        title: 'Power your routes:',
+        description: 'Telemetry, restock automation, and analytics tuned to Maine commuter patterns.'
+      },
+      {
+        title: 'Localized onboarding:',
+        description: 'Guidance for working with state facility managers, local distributors, and seasonal tourism demand.'
+      },
+      {
+        title: 'Always-on support:',
+        description: 'Telegram @thevendinglocator featuring operators across Maine and New Hampshire.'
+      }
+    ]
+  },
+  coolerLineup: jacksonvilleContent.coolerLineup,
+  sellingPoints: [
+    {
+      title: 'Serve state government campuses',
+      description:
+        'Install in administrative buildings, legislative offices, and public-facing departments needing reliable fresh food service.',
+      icon: BuildingOfficeIcon
+    },
+    {
+      title: 'Healthcare-ready hardware',
+      description:
+        'Ideal for MaineGeneral Medical Center, clinics, and senior living facilities seeking cashless, contactless refreshment options.',
+      icon: ShieldCheckIcon
+    },
+    {
+      title: 'Support regional distribution hubs',
+      description:
+        'Keep warehouse teams and logistics yards along Route 3 and Western Avenue energised through long shifts.',
+      icon: CubeIcon
+    },
+    {
+      title: 'Local merchandising expertise',
+      description:
+        'We recommend Maine-made beverages, bakery items, and hearty meals that resonate with Augusta employees year-round.',
+      icon: SparklesIcon
+    }
+  ],
+  neighborhoods: [
+    'Maine State House & Capitol Park district',
+    'Kennebec River downtown & Water Street',
+    'Augusta Civic Center & University of Maine at Augusta',
+    'Western Avenue retail corridor',
+    'MaineGeneral Medical Center campus',
+    'Augusta Business Park & logistics facilities'
+  ],
+  deliverables: [
+    'Site prospect list covering government, healthcare, and education opportunities.',
+    'Seasonal product guides emphasising hearty meals in winter and grab-and-go tourism snacks in summer.',
+    'Operational checklists for Maine Department of Health compliance.'
+  ],
+  logistics: [
+    {
+      title: 'Central Maine delivery network',
+      description:
+        'Freight staged through Portland or Bangor warehouses with final-mile partners servicing Augusta’s commercial zones.',
+      icon: TruckIcon
+    },
+    {
+      title: 'Warranty & compliance',
+      description:
+        'ETL-certified hardware with 1-year parts warranty plus FDA food code adherence for refrigerated retail in Maine.',
+      icon: ShieldCheckIcon
+    },
+    {
+      title: 'Launch toolkit',
+      description:
+        'Includes planograms, signage for government buildings, and employee communication templates for public servants.',
+      icon: SparklesIcon
+    },
+    {
+      title: 'Operator coaching',
+      description:
+        'Telegram sessions focused on rural route planning, distributor relationships, and winter restock logistics.',
+      icon: ClockIcon
+    }
+  ],
+  faq: [
+    {
+      question: 'How long does it take to deploy a Haha cooler in Augusta?',
+      answer:
+        'Average timeline is 3–4 weeks depending on site approvals. We manage freight, installation, and activation to get you selling quickly.'
+    },
+    {
+      question: 'Do you help secure placements in government buildings?',
+      answer:
+        'Yes. We provide pitch decks, compliance documentation, and contacts for state facility managers evaluating smart vending solutions.'
+    },
+    {
+      question: 'What products sell best in Central Maine?',
+      answer:
+        'Operators see strong performance with locally roasted coffee, hearty sandwiches, protein snacks, and fresh salads for government and healthcare staff.'
+    },
+    {
+      question: 'How do you handle Maine’s seasonal temperature swings?',
+      answer:
+        'Haha coolers are insulated and climate controlled. We also share maintenance tips to keep condensation low during humid summers and entries warm during winters.'
+    },
+    {
+      question: 'Is 24/7 support really available for Augusta routes?',
+      answer:
+        'Yes. Our Telegram community and support staff respond around the clock, helping you troubleshoot equipment and merchandising whenever issues arise.'
+    }
+  ]
+}
+
+export const bangorContent: CityLandingContent = {
+  slug: 'vending-machines-for-sale-in-bangor-maine',
+  city: 'Bangor',
+  state: 'Maine',
+  hero: {
+    eyebrow: {
+      icon: SparklesIcon,
+      label: 'Smart Vending • Bangor, ME'
+    },
+    headline: {
+      pre: 'Vending Machines for Sale in',
+      highlight: 'Bangor, Maine'
+    },
+    description:
+      'Modernise vending for the Queen City of the East. From Bangor International Airport to Husson University and the Broadway retail corridor, Haha AI coolers deliver frictionless grab-and-go with real-time support.',
+    bullets: [
+      {
+        icon: ShieldCheckIcon,
+        text: 'Reliable refrigeration built for Northern New England winters'
+      },
+      {
+        icon: ClockIcon,
+        text: 'Coordinated freight from Portland, Boston, or regional carriers into Bangor'
+      },
+      {
+        icon: ChatBubbleOvalLeftEllipsisIcon,
+        text: '24/7 Telegram support tailored to Maine operators'
+      }
+    ],
+    ctas: [
+      {
+        label: 'Explore Smart Coolers',
+        href: '/haha-coolers',
+        variant: 'primary'
+      },
+      {
+        label: 'Talk to Bangor Experts',
+        href: '/contact',
+        variant: 'secondary'
+      }
+    ],
+    supportLink: {
+      icon: ChatBubbleOvalLeftEllipsisIcon,
+      label: 'Telegram @thevendinglocator',
+      href: 'https://t.me/thevendinglocator'
+    }
+  },
+  sidebar: {
+    badge: {
+      icon: MapPinIcon,
+      label: 'Built for Eastern Maine'
+    },
+    items: [
+      {
+        title: 'Primary verticals:',
+        description: 'Healthcare systems, education, aerospace, manufacturing, and hospitality.'
+      },
+      {
+        title: 'Power your routes:',
+        description: 'Inventory automation, mobile alerts, and analytics customised for Bangor commuter flows.'
+      },
+      {
+        title: 'Localized onboarding:',
+        description: 'Guidance for working with EMHS hospitals, UMaine campuses, and airport concessionaires.'
+      },
+      {
+        title: 'Always-on support:',
+        description: 'Telegram @thevendinglocator with operators across Maine’s I-95 corridor.'
+      }
+    ]
+  },
+  coolerLineup: jacksonvilleContent.coolerLineup,
+  sellingPoints: [
+    {
+      title: 'Airport and travel hubs',
+      description:
+        'Ideal for Bangor International Airport back-of-house, FBO lounges, and logistics warehouses supporting passenger and cargo operations.',
+      icon: TruckIcon
+    },
+    {
+      title: 'Healthcare-ready merchandising',
+      description:
+        'Serve Northern Light Eastern Maine Medical Center staff and visitors with reliable fresh food access day and night.',
+      icon: ShieldCheckIcon
+    },
+    {
+      title: 'Campus-friendly experiences',
+      description:
+        'Husson University and University of Maine satellite locations benefit from cashless, contactless food options that feel like micro markets.',
+      icon: BuildingOfficeIcon
+    },
+    {
+      title: 'Local product sourcing',
+      description:
+        'We recommend Maine-made beverages, bakery treats, and meal-prep partners that resonate with Bangor’s community.',
+      icon: SparklesIcon
+    }
+  ],
+  neighborhoods: [
+    'Downtown Bangor & Waterfront',
+    'Bangor International Airport campus',
+    'Broadway retail & service corridor',
+    'Northern Light Eastern Maine Medical Center',
+    'Husson University & Broadway campuses',
+    'Bangor Mall & Stillwater Avenue commercial district'
+  ],
+  deliverables: [
+    'Placement outreach templates for hospitals, universities, and logistics hubs.',
+    'Merchandising plans featuring hearty meals, regional snacks, and tourist-friendly assortments.',
+    'Operational checklists for Maine food code compliance and campus approvals.'
+  ],
+  logistics: [
+    {
+      title: 'Reliable freight options',
+      description:
+        'We coordinate shipments through regional carriers familiar with Bangor deliveries, including winter-ready final-mile teams.',
+      icon: TruckIcon
+    },
+    {
+      title: 'Warranty & compliance',
+      description:
+        'ETL-certified hardware, 1-year parts warranty, and Maine health inspection guidance for refrigerated retail.',
+      icon: ShieldCheckIcon
+    },
+    {
+      title: 'Launch toolkit',
+      description:
+        'Site readiness checklists, marketing collateral, and campus/hospital-specific communication templates.',
+      icon: SparklesIcon
+    },
+    {
+      title: 'Operator coaching',
+      description:
+        'Telegram training on Maine product sourcing, pricing for rural routes, and seasonal adjustment strategies.',
+      icon: ClockIcon
+    }
+  ],
+  faq: [
+    {
+      question: 'How fast can we deploy a smart cooler in Bangor?',
+      answer:
+        'Typical timeline is 3–4 weeks. We align freight, site approvals, and activation so you can launch quickly even during winter months.'
+    },
+    {
+      question: 'Do you help place coolers in Bangor hospitals or campuses?',
+      answer:
+        'Yes. We provide pitch decks, compliance documents, and performance data to secure approvals at healthcare and education sites.'
+    },
+    {
+      question: 'Can the coolers handle high customer volumes at the airport?',
+      answer:
+        'Definitely. Vision checkout keeps lines moving and automatically reconciles multi-item purchases, perfect for traveler surges.'
+    },
+    {
+      question: 'What kinds of products sell well in Bangor?',
+      answer:
+        'Operators see success with local coffee, hot breakfast items, protein snacks, and ready-to-eat meals for shift workers and students.'
+    },
+    {
+      question: 'Is support available during overnight restocks?',
+      answer:
+        'Our Telegram group responds around the clock, helping you resolve equipment alerts or merchandising questions whenever they pop up.'
+    }
+  ]
+}
+
 export const locationAccordionDefaults: LocationAccordionEntry[] = [
   {
     state: 'Florida',
@@ -354,6 +1185,53 @@ export const locationAccordionDefaults: LocationAccordionEntry[] = [
     ]
   },
   {
+    state: 'Virginia',
+    emoji: '🛡️',
+    tagline: 'Northern Virginia & National Landing',
+    cities: [
+      {
+        name: 'Alexandria, Virginia',
+        description:
+          'Smart coolers for Old Town, Eisenhower Valley, and National Landing commuters.',
+        href: '/vending-machines-for-sale-in-alexandria-virginia'
+      },
+      {
+        name: 'Arlington, Virginia',
+        description:
+          'Serve Rosslyn, Ballston, Pentagon City, and Amazon HQ2 with AI-powered vending.',
+        href: '/vending-machines-for-sale-in-arlington-virginia'
+      },
+      {
+        name: 'Richmond, Virginia',
+        description: 'State capital deployment playbooks coming soon.',
+        comingSoon: true
+      }
+    ]
+  },
+  {
+    state: 'Alaska',
+    emoji: '❄️',
+    tagline: 'Southcentral & Arctic Gateway',
+    cities: [
+      {
+        name: 'Anchorage, Alaska',
+        description:
+          'Cold-weather smart coolers for airports, hospitals, and logistics crews.',
+        href: '/vending-machines-for-sale-in-anchorage-alaska'
+      },
+      {
+        name: 'Fairbanks, Alaska',
+        description: 'Interior Alaska expansion in progress.',
+        comingSoon: true
+      },
+      {
+        name: 'Juneau, Alaska',
+        description: 'Capital city AI cooler rollout coming soon.',
+        comingSoon: true
+      }
+    ]
+  },
+  {
     state: 'Texas',
     emoji: '🤠',
     tagline: 'Austin, Dallas–Fort Worth, Houston metros',
@@ -371,6 +1249,30 @@ export const locationAccordionDefaults: LocationAccordionEntry[] = [
       {
         name: 'Houston, Texas',
         description: 'Energy corridor offices, medical centers, and residential towers launching soon.',
+        comingSoon: true
+      }
+    ]
+  },
+  {
+    state: 'Maine',
+    emoji: '🌲',
+    tagline: 'Capital region & Downeast Maine',
+    cities: [
+      {
+        name: 'Augusta, Maine',
+        description:
+          'State government, healthcare, and logistics placements across Central Maine.',
+        href: '/vending-machines-for-sale-in-augusta-maine'
+      },
+      {
+        name: 'Bangor, Maine',
+        description:
+          'Airport, healthcare, and campus-ready smart coolers for Eastern Maine.',
+        href: '/vending-machines-for-sale-in-bangor-maine'
+      },
+      {
+        name: 'Portland, Maine',
+        description: 'Coastal Maine rollouts coming soon.',
         comingSoon: true
       }
     ]

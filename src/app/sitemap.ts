@@ -14,6 +14,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   { url: 'https://www.thevendinglocator.com/hot-leads', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
   { url: 'https://www.thevendinglocator.com/haha-coolers', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.9 },
   { url: 'https://www.thevendinglocator.com/vending-machines-for-sale-in-jacksonville-florida', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.9 },
+  { url: 'https://www.thevendinglocator.com/vending-machines-for-sale-in-alexandria-virginia', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.85 },
+  { url: 'https://www.thevendinglocator.com/vending-machines-for-sale-in-anchorage-alaska', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.85 },
+  { url: 'https://www.thevendinglocator.com/vending-machines-for-sale-in-arlington-virginia', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.85 },
+  { url: 'https://www.thevendinglocator.com/vending-machines-for-sale-in-augusta-maine', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.85 },
+  { url: 'https://www.thevendinglocator.com/vending-machines-for-sale-in-bangor-maine', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.85 },
   { url: 'https://www.thevendinglocator.com/vending-leads', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.9 },
   { url: 'https://www.thevendinglocator.com/vending-services', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.9 },
   
