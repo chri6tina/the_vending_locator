@@ -54,6 +54,14 @@ const coreFeatures = [
   }
 ]
 
+const salesBenefits = [
+  'Higher sales per location thanks to a wider mix of fresh food, snacks, and drinks accessible in one cooler.',
+  'Self-serve, multi-item shopping experience that feels like a micro market instead of a traditional vending machine.',
+  'App smart management lets you control inventory, pricing, and customer feedback in real time—even on the go.',
+  'AI vision technology prevents spills and broken bottles, protecting premium beverages and delicate food items.',
+  'Cashless payments eliminate coin jams, reduce service calls, and keep routes profitable with tap & go convenience.'
+]
+
 const specificationRows = [
   ['Exterior Finish', 'Black or Yellow high-visibility enclosure'],
   ['Capacity', 'Up to 200+ assorted beverages/snacks (no-drop design)'],
@@ -98,6 +106,24 @@ const useCases = [
   'Small-format retail & micro markets'
 ]
 
+const marketplaceFacts = [
+  ['Manufacturer', 'HAHA Vending'],
+  ['ASIN', 'B0F9P9KLX6'],
+  ['Date First Available', 'May 23, 2025'],
+  ['Best Sellers Rank', '#72,826 in Industrial & Scientific • #14 in Commercial Vending Machines']
+]
+
+const galleryImages = [
+  {
+    src: '/haha-coolers/haha-mini-info-1.png',
+    alt: 'Haha US360 Mini smart cooler interior overview'
+  },
+  {
+    src: '/haha-coolers/haha-mini-info-2.png',
+    alt: 'Haha US360 Mini AI vending feature highlights'
+  }
+]
+
 export default function HahaMiniPageClient() {
   const [selectedColor, setSelectedColor] = useState<'black' | 'yellow'>('black')
 
@@ -127,8 +153,8 @@ export default function HahaMiniPageClient() {
                 </h1>
 
                 <p className="mt-6 text-lg leading-8 text-stone">
-                  Deliver a premium micro-market experience in the footprint of a single cooler. The US360 Mini is purpose-built for operators who
-                  want Amazon Go-style vending without the enterprise price tag.
+                  Deliver a premium micro-market experience in the footprint of a single cooler. With 99% accurate AI checkout, customers simply open
+                  the door, grab what they want, and walk away—no buttons, no drop mechanisms, no broken bottles.
                 </p>
 
                 <div className="mt-8 flex items-baseline gap-4">
@@ -241,6 +267,24 @@ export default function HahaMiniPageClient() {
         <section className="bg-white border-b border-gray-200">
           <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
             <h2 className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal text-center mb-12">
+              What the Haha Mini does for your revenue
+            </h2>
+            <div className="bg-white border border-gray-200 rounded-2xl p-8">
+              <ul className="space-y-4 text-stone leading-relaxed">
+                {salesBenefits.map((benefit) => (
+                  <li key={benefit} className="flex items-start gap-3">
+                    <CheckCircleIcon className="h-5 w-5 text-green-600 mt-1" />
+                    <span>{benefit}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-white border-b border-gray-200">
+          <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+            <h2 className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal text-center mb-12">
               Technical Specifications
             </h2>
 
@@ -287,6 +331,33 @@ export default function HahaMiniPageClient() {
                   📱 Telegram: @thevendinglocator
                 </a>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-white border-b border-gray-200">
+          <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+            <h2 className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal text-center mb-12">Marketplace details</h2>
+            <div className="bg-white border border-gray-200 rounded-2xl divide-y divide-gray-200">
+              {marketplaceFacts.map(([label, value]) => (
+                <div key={label} className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 px-6 py-5">
+                  <span className="text-sm font-semibold text-charcoal uppercase tracking-wide">{label}</span>
+                  <span className="text-base text-stone leading-relaxed sm:max-w-xl">{value}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-white border-b border-gray-200">
+          <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+            <h2 className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal text-center mb-12">Product gallery</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {galleryImages.map((image) => (
+                <div key={image.src} className="bg-white border border-gray-200 rounded-2xl p-4 shadow-sm">
+                  <img src={image.src} alt={image.alt} className="w-full h-auto rounded-xl" />
+                </div>
+              ))}
             </div>
           </div>
         </section>
