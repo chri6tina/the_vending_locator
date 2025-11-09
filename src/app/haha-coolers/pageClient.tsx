@@ -262,7 +262,7 @@ export default function HahaCoolersPage() {
                   href="#contact"
                   className="w-full sm:w-auto bg-white text-navy border-2 border-navy px-8 py-4 rounded-lg font-semibold text-lg hover:bg-navy hover:text-white transition-colors text-center"
                 >
-                  Request Demo
+                  Learn More
                 </a>
               </div>
 
@@ -341,103 +341,73 @@ export default function HahaCoolersPage() {
         </div>
       </div>
 
-      {/* Haha Pro Product Section */}
-      <section className="bg-white border-b border-gray-200">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      {/* Haha Pro Hero Section */}
+      <div className="relative bg-gradient-to-br from-blue-50 to-white overflow-hidden border-t border-gray-200">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 py-12 sm:py-16 lg:py-20 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            {/* Left Column - Product Info */}
             <div className="order-2 lg:order-1">
-              <div className="flex items-center gap-3 mb-6">
-                <span className="inline-flex items-center rounded-full bg-green-100 px-4 py-1 text-sm font-semibold text-green-700">
-                  NEW • 2025 Release
-                </span>
-                <span className="inline-flex items-center rounded-full bg-navy/10 px-4 py-1 text-sm font-semibold text-navy">
-                  Haha Pro Series
-                </span>
+              <div className="mb-6 inline-flex items-center rounded-full bg-navy/10 px-4 py-2 text-sm font-medium text-navy">
+                Pro-Level Smart Vending
               </div>
 
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-playfair font-bold tracking-tight text-charcoal mb-4">
-                Haha Pro AI Smart Vending Machine
+              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-playfair font-bold tracking-tight text-charcoal mb-6">
+                Haha Pro<br/>
+                <span className="text-navy">AI Smart</span> Vending Machine
               </h2>
 
-              <p className="text-lg text-stone leading-relaxed mb-6">
-                The Haha Pro delivers full-size, AI-powered smart vending. Stack snacks, meals, and beverages across seven shelves, let customers
-                shop like a micro-market, and rely on vision-based checkout to charge for every item. Premium double-glazed glass keeps products
-                crystal clear and ice cold while the electromagnetic lock and camera system secure every transaction.
+              <p className="mt-6 text-xl leading-8 text-stone">
+                A full-size, AI-powered vending experience that lets customers shop like a micro-market. Seven shelves, camera-verified checkout,
+                and double-glazed glass deliver premium merchandising without an attendant.
               </p>
 
-              <div className="flex items-baseline gap-4 mb-6">
+              {/* Price */}
+              <div className="mt-8 flex items-baseline gap-4">
                 <span className="text-5xl font-bold text-charcoal">$4,999</span>
                 <div className="text-stone">
-                  <div className="text-sm font-medium">Single unit pricing</div>
-                  <div className="text-xs">Professional-grade smart vending</div>
+                  <div className="text-sm">One-time purchase</div>
+                  <div className="text-xs">Professional AI smart vending</div>
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-                {[
-                  'Supports stacked merchandising for drinks, snacks, meals, and more',
-                  'Customers grab multiple items just like shopping a cooler',
-                  'Double-glazed hollow glass with zeolite desiccant prevents fogging',
-                  'Camera-driven visual recognition + electromagnetic lock checkout',
-                  '4G + Wi-Fi connectivity with remote device control and analytics',
-                  'Auto restock alerts, order management, and complaint handling in the app'
-                ].map((item) => (
-                  <div key={item} className="flex items-start gap-3">
-                    <CheckCircleIcon className="h-5 w-5 text-green-600 mt-0.5" />
-                    <p className="text-sm text-stone leading-relaxed">{item}</p>
-                  </div>
-                ))}
-              </div>
-
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
-                <div className="bg-navy/5 border border-navy/10 rounded-xl p-4 text-center">
-                  <div className="text-3xl font-bold text-navy">378</div>
-                  <div className="text-xs uppercase tracking-wide text-stone">Bottle Capacity</div>
-                  <div className="text-[11px] text-stone/80 mt-1">5 layers bottles + 2 layers cans</div>
-                </div>
-                <div className="bg-navy/5 border border-navy/10 rounded-xl p-4 text-center">
-                  <div className="text-3xl font-bold text-navy">24/7</div>
-                  <div className="text-xs uppercase tracking-wide text-stone">Unmanned Operation</div>
-                  <div className="text-[11px] text-stone/80 mt-1">Electromagnetic lock & security camera</div>
-                </div>
-                <div className="bg-navy/5 border border-navy/10 rounded-xl p-4 text-center">
-                  <div className="text-3xl font-bold text-navy">Black</div>
-                  <div className="text-xs uppercase tracking-wide text-stone">Professional Finish</div>
-                  <div className="text-[11px] text-stone/80 mt-1">Sleek look for corporate placements</div>
-                </div>
-              </div>
-
-              <div className="mb-8">
-                <h3 className="text-sm font-semibold text-charcoal mb-2">Perfect for:</h3>
-                <div className="flex flex-wrap gap-2 text-xs font-medium text-stone">
-                  {["Commercial & office towers", "Manufacturing & factories", "Universities & colleges", "Hospitals & healthcare", "Hotels & hospitality", "Residential & mixed-use buildings", "Airports & retail malls"].map((location) => (
-                    <span key={location} className="inline-flex items-center bg-blue-50 border border-blue-100 rounded-full px-3 py-1 text-blue-800">
-                      {location}
-                    </span>
-                  ))}
-                </div>
-              </div>
-
-              <div className="flex flex-col sm:flex-row items-start gap-4">
+              {/* CTA Buttons */}
+              <div className="mt-8 flex flex-col sm:flex-row items-start gap-4">
                 <a
-                  href="#contact"
-                  className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors text-center shadow-lg"
-                >
-                  Request Pricing & Availability
-                </a>
-                <a
-                  href="https://t.me/thevendinglocator"
+                  href="https://amzn.to/43aTe10"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors shadow-lg text-center"
+                >
+                  Buy Now on Amazon →
+                </a>
+                <a
+                  href="#contact"
                   className="w-full sm:w-auto bg-white text-navy border-2 border-navy px-8 py-4 rounded-lg font-semibold text-lg hover:bg-navy hover:text-white transition-colors text-center"
                 >
-                  Talk to our team →
+                  Learn More
                 </a>
+              </div>
+
+              {/* Trust Indicators */}
+              <div className="mt-8 flex flex-wrap items-center gap-6 text-sm text-stone">
+                <div className="flex items-center gap-2">
+                  <CheckCircleIcon className="h-5 w-5 text-green-600" />
+                  <span>378 Bottle Capacity</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <CheckCircleIcon className="h-5 w-5 text-green-600" />
+                  <span>Camera-Verified Checkout</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <CheckCircleIcon className="h-5 w-5 text-green-600" />
+                  <span>Pro App Management</span>
+                </div>
               </div>
             </div>
 
+            {/* Right Column - Product Image */}
             <div className="order-1 lg:order-2">
-              <div className="relative bg-gradient-to-br from-blue-50 to-white rounded-2xl shadow-2xl p-6 sm:p-10">
+              <div className="relative bg-white rounded-2xl shadow-2xl p-8 lg:p-12">
                 <img
                   src="/haha-coolers/haha-pro-black.png"
                   alt="Haha Pro AI Smart Vending Machine"
@@ -447,7 +417,7 @@ export default function HahaCoolersPage() {
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
       {/* How It Works Section */}
       <div className="bg-white py-16 sm:py-24 border-b border-gray-200">
