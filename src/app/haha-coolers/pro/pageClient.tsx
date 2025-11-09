@@ -18,7 +18,7 @@ const highlightFeatures = [
   {
     title: 'Stacked Merchandising',
     description:
-      'Five beverage shelves plus two can layers (378 bottles total) keep cold products organised while maximising revenue per square foot.',
+      'Five beverage shelves plus two can layers (378 bottle capacity) keep cold products organised while maximising revenue per square foot.',
     icon: ShieldCheckIcon
   },
   {
@@ -48,20 +48,28 @@ const highlightFeatures = [
   {
     title: 'Built for Business',
     description:
-      'Commercial refrigeration, ETL compliance, standard 110V power, and a 1-year parts warranty so operators can plug in with confidence.',
+      'Commercial refrigeration with double-glazed hollow glass and zeolite molecular sieve keeps beverages cold, clear, and ready for shoppers 24/7.',
     icon: BoltIcon
   }
 ]
 
+const salesBenefits = [
+  'Increase revenue per placement by stocking a wider range of snacks, drinks, and fresh food in a single machine.',
+  'Shoppers select multiple items in one visit—just like a supermarket grab-and-go experience—with 99% accurate AI checkout.',
+  'Double-glazed hollow glass eliminates condensation and keeps the merchandising window crystal clear, boosting impulse sales.',
+  'Professional mobile app with Wi-Fi and optional 4G connectivity manages inventory counts, automates restock orders, and tracks sales data.',
+  'Cashless acceptance reduces service calls and maintenance overhead compared to coin-operated machines.'
+]
+
 const specs = [
-  ['Model', 'US1200CT Pro vision cooler'],
-  ['Capacity', '378 bottles (5 bottle shelves + 2 can shelves)'],
-  ['Temperature Control', 'Commercial-grade refrigeration with double-glazed anti-fog glass'],
+  ['Model', 'Haha AI Smart Vending – US1200CT (Black)'],
+  ['Capacity', '378 bottles (5 bottle layers + 2 can layers) / 486 L interior volume'],
+  ['Temperature Control', 'Commercial-grade refrigeration with double-glazed anti-fog glass and zeolite molecular sieve'],
   ['Connectivity', 'Wi-Fi + optional 4G module for always-on reporting'],
   ['Payments', 'Credit/debit, NFC wallets, QR-enabled acceptance'],
   ['Power', 'Standard 110V / 60Hz outlet'],
   ['Security', 'AI camera array + electromagnetic lock with event recording'],
-  ['Dimensions', 'Designed for lobbies, cafeterias, and high-traffic corridors']
+  ['Dimensions', '25.6" D × 29.5" W × 79.5" H footprint for lobbies and high-traffic corridors']
 ]
 
 const faqs = [
@@ -88,13 +96,14 @@ const faqs = [
 ]
 
 const deploymentIdeas = [
-  'Large corporate campuses',
-  'Industrial & manufacturing sites',
-  'Hospitals and healthcare waiting rooms',
-  'Airports and transit hubs',
-  'University residence halls',
-  'Hotels and resort corridors',
-  'Mixed-use residential lobbies'
+  'Commercial and office buildings',
+  'Manufacturing & factory floors',
+  'Universities & college campuses',
+  'Hospitals and healthcare facilities',
+  'Hospitality venues, hotels, and B&Bs',
+  'Residential towers & mixed-use developments',
+  'Airports, shopping malls, and transportation hubs',
+  'Gyms and fitness clubs'
 ]
 
 export default function HahaProPageClient() {
@@ -122,8 +131,8 @@ export default function HahaProPageClient() {
                 </h1>
 
                 <p className="mt-6 text-lg leading-8 text-stone">
-                  A next-generation combo vending platform that merges fridge space, smart shelving, and computer vision so customers shop naturally
-                  and operators monetise premium products without staffing.
+                  A next-generation combo vending platform that merges fridge space, smart shelving, and computer vision so customers shop naturally.
+                  The Haha Pro allows shoppers to open the door, grab multiple items, and walk away while AI handles payment with 99% accuracy.
                 </p>
 
                 <div className="mt-8 flex items-baseline gap-4">
@@ -198,6 +207,24 @@ export default function HahaProPageClient() {
                   <p className="text-stone leading-relaxed">{feature.description}</p>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-white border-b border-gray-200">
+          <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+            <h2 className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal text-center mb-12">
+              Business wins with Haha Pro
+            </h2>
+            <div className="bg-white border border-gray-200 rounded-2xl p-8">
+              <ul className="space-y-4 text-stone leading-relaxed">
+                {salesBenefits.map((benefit) => (
+                  <li key={benefit} className="flex items-start gap-3">
+                    <CheckCircleIcon className="h-5 w-5 text-green-600 mt-1" />
+                    <span>{benefit}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </section>
