@@ -20,6 +20,7 @@ export default function SouthCarolinaVendingServicesPage() {
     { name: 'Anderson', slug: 'anderson-south-carolina' },
     { name: 'Charleston', slug: 'charleston-south-carolina' },
     { name: 'Columbia', slug: 'columbia-south-carolina' },
+    { name: 'Conway', slug: 'conway-south-carolina' },
     { name: 'Florence', slug: 'florence-south-carolina' },
     { name: 'Goose Creek', slug: 'goose-creek-south-carolina' },
     { name: 'Greenville', slug: 'greenville-south-carolina' },

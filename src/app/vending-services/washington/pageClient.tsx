@@ -21,6 +21,7 @@ export default function WashingtonVendingServicesPage() {
     { name: 'Tacoma', slug: 'tacoma-washington' },
     { name: 'Vancouver', slug: 'vancouver-washington' },
     { name: 'Bellevue', slug: 'bellevue-washington' },
+    { name: 'Olympia', slug: 'olympia-washington' },
     { name: 'Kent', slug: 'kent-washington' },
     { name: 'Everett', slug: 'everett-washington' }
   ]

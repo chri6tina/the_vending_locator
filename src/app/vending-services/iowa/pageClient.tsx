@@ -19,6 +19,7 @@ export default function IowaVendingServicesPage() {
     { name: 'Des Moines', slug: 'des-moines-iowa' },
     { name: 'Cedar Rapids', slug: 'cedar-rapids-iowa' },
     { name: 'Davenport', slug: 'davenport-iowa' },
+    { name: 'Dubuque', slug: 'dubuque-iowa' },
     { name: 'Sioux City', slug: 'sioux-city-iowa' },
     { name: 'Iowa City', slug: 'iowa-city-iowa' },
     { name: 'Waterloo', slug: 'waterloo-iowa' },

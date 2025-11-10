@@ -16,10 +16,11 @@ export default function VirginiaVendingServicesPage() {
 
   // Virginia cities with vending services
   const cities = [
-    { name: 'Virginia Beach', slug: 'virginia-beach-virginia' },
-    { name: 'Norfolk', slug: 'norfolk-virginia' },
+    { name: 'Charlottesville', slug: 'charlottesville-virginia' },
     { name: 'Chesapeake', slug: 'chesapeake-virginia' },
-    { name: 'Richmond', slug: 'richmond-virginia' }
+    { name: 'Norfolk', slug: 'norfolk-virginia' },
+    { name: 'Richmond', slug: 'richmond-virginia' },
+    { name: 'Virginia Beach', slug: 'virginia-beach-virginia' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

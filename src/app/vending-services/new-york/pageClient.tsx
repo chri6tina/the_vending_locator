@@ -19,6 +19,7 @@ export default function NewYorkVendingServicesPage() {
     { name: 'Albany', slug: 'albany-new-york' },
     { name: 'Binghamton', slug: 'binghamton-new-york' },
     { name: 'Buffalo', slug: 'buffalo-new-york' },
+    { name: 'Ithaca', slug: 'ithaca-new-york' },
     { name: 'New York', slug: 'new-york-new-york' },
     { name: 'Rochester', slug: 'rochester-new-york' },
     { name: 'Schenectady', slug: 'schenectady-new-york' },

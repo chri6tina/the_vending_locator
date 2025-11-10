@@ -17,9 +17,11 @@ export default function ConnecticutVendingServicesPage() {
   // Connecticut cities with vending services
   const cities = [
     { name: 'Bridgeport', slug: 'bridgeport-connecticut' },
-    { name: 'New Haven', slug: 'new-haven-connecticut' },
-    { name: 'Stamford', slug: 'stamford-connecticut' },
+    { name: 'Danbury', slug: 'danbury-connecticut' },
     { name: 'Hartford', slug: 'hartford-connecticut' },
+    { name: 'New Haven', slug: 'new-haven-connecticut' },
+    { name: 'New Britain', slug: 'new-britain-connecticut' },
+    { name: 'Stamford', slug: 'stamford-connecticut' },
     { name: 'Waterbury', slug: 'waterbury-connecticut' },
     { name: 'Norwalk', slug: 'norwalk-connecticut' }
   ]

@@ -18,11 +18,12 @@ export default function MarylandVendingServicesPage() {
   const cities = [
     { name: 'Baltimore', slug: 'baltimore-maryland' },
     { name: 'Columbia', slug: 'columbia-maryland' },
+    { name: 'Frederick', slug: 'frederick-maryland' },
     { name: 'Germantown', slug: 'germantown-maryland' },
-    { name: 'Silver Spring', slug: 'silver-spring-maryland' },
-    { name: 'Waldorf', slug: 'waldorf-maryland' },
     { name: 'Glen Burnie', slug: 'glen-burnie-maryland' },
-    { name: 'Frederick', slug: 'frederick-maryland' }
+    { name: 'Hagerstown', slug: 'hagerstown-maryland' },
+    { name: 'Silver Spring', slug: 'silver-spring-maryland' },
+    { name: 'Waldorf', slug: 'waldorf-maryland' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

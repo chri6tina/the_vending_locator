@@ -16,8 +16,9 @@ export default function SouthDakotaVendingServicesPage() {
 
   // South Dakota cities with vending services
   const cities = [
-    { name: 'Sioux Falls', slug: 'sioux-falls-south-dakota' },
-    { name: 'Rapid City', slug: 'rapid-city-south-dakota' }
+    { name: 'Aberdeen', slug: 'aberdeen-south-dakota' },
+    { name: 'Rapid City', slug: 'rapid-city-south-dakota' },
+    { name: 'Sioux Falls', slug: 'sioux-falls-south-dakota' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

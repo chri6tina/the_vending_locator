@@ -16,9 +16,10 @@ export default function OregonVendingServicesPage() {
 
   // Oregon cities with vending services
   const cities = [
+    { name: 'Albany', slug: 'albany-oregon' },
+    { name: 'Eugene', slug: 'eugene-oregon' },
     { name: 'Portland', slug: 'portland-oregon' },
-    { name: 'Salem', slug: 'salem-oregon' },
-    { name: 'Eugene', slug: 'eugene-oregon' }
+    { name: 'Salem', slug: 'salem-oregon' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

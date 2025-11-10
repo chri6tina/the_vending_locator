@@ -22,10 +22,12 @@ export default function ColoradoVendingServicesPage() {
     { name: 'Colorado Springs', slug: 'colorado-springs-colorado' },
     { name: 'Denver', slug: 'denver-colorado' },
     { name: 'Fort Collins', slug: 'fort-collins-colorado' },
+    { name: 'Grand Junction', slug: 'grand-junction-colorado' },
+    { name: 'Greeley', slug: 'greeley-colorado' },
     { name: 'Lakewood', slug: 'lakewood-colorado' },
+    { name: 'Pueblo', slug: 'pueblo-colorado' },
     { name: 'Thornton', slug: 'thornton-colorado' },
-    { name: 'Westminster', slug: 'westminster-colorado' },
-    { name: 'Pueblo', slug: 'pueblo-colorado' }
+    { name: 'Westminster', slug: 'westminster-colorado' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

@@ -17,11 +17,12 @@ export default function MontanaVendingServicesPage() {
   // Montana cities with vending services
   const cities = [
     { name: 'Billings', slug: 'billings-montana' },
-    { name: 'Missoula', slug: 'missoula-montana' },
-    { name: 'Great Falls', slug: 'great-falls-montana' },
     { name: 'Bozeman', slug: 'bozeman-montana' },
     { name: 'Butte', slug: 'butte-montana' },
-    { name: 'Helena', slug: 'helena-montana' }
+    { name: 'Great Falls', slug: 'great-falls-montana' },
+    { name: 'Helena', slug: 'helena-montana' },
+    { name: 'Kalispell', slug: 'kalispell-montana' },
+    { name: 'Missoula', slug: 'missoula-montana' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

@@ -21,6 +21,7 @@ export default function NewJerseyVendingServicesPage() {
     { name: 'Jersey City', slug: 'jersey-city-new-jersey' },
     { name: 'Newark', slug: 'newark-new-jersey' },
     { name: 'Paterson', slug: 'paterson-new-jersey' },
+    { name: 'Trenton', slug: 'trenton-new-jersey' },
     { name: 'Woodbridge', slug: 'woodbridge-new-jersey' }
   ]
 
