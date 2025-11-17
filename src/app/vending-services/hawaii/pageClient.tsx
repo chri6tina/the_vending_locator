@@ -16,9 +16,10 @@ export default function HawaiiVendingServicesPage() {
 
   // Hawaii cities with vending services
   const cities = [
-    { name: 'Honolulu', slug: 'honolulu-hawaii' },
     { name: 'Hilo', slug: 'hilo-hawaii' },
-    { name: 'Kailua', slug: 'kailua-hawaii' }
+    { name: 'Honolulu', slug: 'honolulu-hawaii' },
+    { name: 'Kailua', slug: 'kailua-hawaii' },
+    { name: 'Pearl City', slug: 'pearl-city-hawaii' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

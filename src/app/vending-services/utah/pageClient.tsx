@@ -16,9 +16,11 @@ export default function UtahVendingServicesPage() {
 
   // Utah cities with vending services
   const cities = [
+    { name: 'Layton', slug: 'layton-utah' },
+    { name: 'Provo', slug: 'provo-utah' },
     { name: 'Salt Lake City', slug: 'salt-lake-city-utah' },
-    { name: 'West Valley City', slug: 'west-valley-city-utah' },
-    { name: 'Provo', slug: 'provo-utah' }
+    { name: 'St. George', slug: 'st-george-utah' },
+    { name: 'West Valley City', slug: 'west-valley-city-utah' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Worcester, Massachusetts - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Worcester, Massachusetts. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Worcester Massachusetts, vending leads Worcester Massachusetts, vending locations Worcester Massachusetts, vending opportunities Worcester Massachusetts",
+  "keywords": "vending machines worcester massachusetts, vending leads worcester massachusetts, vending locations worcester massachusetts, vending opportunities worcester massachusetts",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/worcester-massachusetts"
   },
@@ -32,9 +32,6 @@ export const metadata: Metadata = {
     }
   }
 }
-
-// Enable ISR - regenerate page every hour
-export const revalidate = 3600;
 
 export default function CityPage() {
   return <PageClient />

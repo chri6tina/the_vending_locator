@@ -16,15 +16,16 @@ export default function TennesseeVendingServicesPage() {
 
   // Tennessee cities with vending services
   const cities = [
-    { name: 'Memphis', slug: 'memphis-tennessee' },
-    { name: 'Nashville', slug: 'nashville-tennessee' },
-    { name: 'Knoxville', slug: 'knoxville-tennessee' },
     { name: 'Chattanooga', slug: 'chattanooga-tennessee' },
     { name: 'Clarksville', slug: 'clarksville-tennessee' },
-    { name: 'Murfreesboro', slug: 'murfreesboro-tennessee' },
     { name: 'Franklin', slug: 'franklin-tennessee' },
     { name: 'Jackson', slug: 'jackson-tennessee' },
-    { name: 'Johnson City', slug: 'johnson-city-tennessee' }
+    { name: 'Johnson City', slug: 'johnson-city-tennessee' },
+    { name: 'Kingsport', slug: 'kingsport-tennessee' },
+    { name: 'Knoxville', slug: 'knoxville-tennessee' },
+    { name: 'Memphis', slug: 'memphis-tennessee' },
+    { name: 'Murfreesboro', slug: 'murfreesboro-tennessee' },
+    { name: 'Nashville', slug: 'nashville-tennessee' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

@@ -16,15 +16,16 @@ export default function LouisianaVendingServicesPage() {
 
   // Louisiana cities with vending services
   const cities = [
-    { name: 'New Orleans', slug: 'new-orleans-louisiana' },
+    { name: 'Alexandria', slug: 'alexandria-louisiana' },
     { name: 'Baton Rouge', slug: 'baton-rouge-louisiana' },
-    { name: 'Shreveport', slug: 'shreveport-louisiana' },
+    { name: 'Bossier City', slug: 'bossier-city-louisiana' },
+    { name: 'Kenner', slug: 'kenner-louisiana' },
     { name: 'Lafayette', slug: 'lafayette-louisiana' },
     { name: 'Lake Charles', slug: 'lake-charles-louisiana' },
-    { name: 'Kenner', slug: 'kenner-louisiana' },
-    { name: 'Bossier City', slug: 'bossier-city-louisiana' },
     { name: 'Monroe', slug: 'monroe-louisiana' },
-    { name: 'Alexandria', slug: 'alexandria-louisiana' }
+    { name: 'New Orleans', slug: 'new-orleans-louisiana' },
+    { name: 'Shreveport', slug: 'shreveport-louisiana' },
+    { name: 'Slidell', slug: 'slidell-louisiana' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

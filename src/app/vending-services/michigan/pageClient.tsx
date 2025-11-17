@@ -16,12 +16,14 @@ export default function MichiganVendingServicesPage() {
 
   // Michigan cities with vending services
   const cities = [
+    { name: 'Ann Arbor', slug: 'ann-arbor-michigan' },
     { name: 'Detroit', slug: 'detroit-michigan' },
     { name: 'Grand Rapids', slug: 'grand-rapids-michigan' },
-    { name: 'Warren', slug: 'warren-michigan' },
+    { name: 'Jackson', slug: 'jackson-michigan' },
+    { name: 'Lansing', slug: 'lansing-michigan' },
+    { name: 'Port Huron', slug: 'port-huron-michigan' },
     { name: 'Sterling Heights', slug: 'sterling-heights-michigan' },
-    { name: 'Ann Arbor', slug: 'ann-arbor-michigan' },
-    { name: 'Lansing', slug: 'lansing-michigan' }
+    { name: 'Warren', slug: 'warren-michigan' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

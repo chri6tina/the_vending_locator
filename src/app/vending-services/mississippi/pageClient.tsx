@@ -16,10 +16,11 @@ export default function MississippiVendingServicesPage() {
 
   // Mississippi cities with vending services
   const cities = [
-    { name: 'Jackson', slug: 'jackson-mississippi' },
     { name: 'Gulfport', slug: 'gulfport-mississippi' },
+    { name: 'Hattiesburg', slug: 'hattiesburg-mississippi' },
+    { name: 'Jackson', slug: 'jackson-mississippi' },
     { name: 'Southaven', slug: 'southaven-mississippi' },
-    { name: 'Hattiesburg', slug: 'hattiesburg-mississippi' }
+    { name: 'Tupelo', slug: 'tupelo-mississippi' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

@@ -16,9 +16,11 @@ export default function RhodeIslandVendingServicesPage() {
 
   // Rhode Island cities with vending services
   const cities = [
+    { name: 'Cranston', slug: 'cranston-rhode-island' },
+    { name: 'Pawtucket', slug: 'pawtucket-rhode-island' },
     { name: 'Providence', slug: 'providence-rhode-island' },
     { name: 'Warwick', slug: 'warwick-rhode-island' },
-    { name: 'Cranston', slug: 'cranston-rhode-island' }
+    { name: 'Woonsocket', slug: 'woonsocket-rhode-island' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

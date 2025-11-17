@@ -1,0 +1,551 @@
+{
+  "cities": [
+    {
+      "name": "Brockton",
+      "slug": "brockton-massachusetts",
+      "state": "Massachusetts",
+      "pop": "95K+"
+    },
+    {
+      "name": "Somerville",
+      "slug": "somerville-massachusetts",
+      "state": "Massachusetts",
+      "pop": "81K+"
+    },
+    {
+      "name": "Framingham",
+      "slug": "framingham-massachusetts",
+      "state": "Massachusetts",
+      "pop": "72K+"
+    },
+    {
+      "name": "Waltham",
+      "slug": "waltham-massachusetts",
+      "state": "Massachusetts",
+      "pop": "62K+"
+    },
+    {
+      "name": "Malden",
+      "slug": "malden-massachusetts",
+      "state": "Massachusetts",
+      "pop": "61K+"
+    },
+    {
+      "name": "Brookline",
+      "slug": "brookline-massachusetts",
+      "state": "Massachusetts",
+      "pop": "59K+"
+    },
+    {
+      "name": "Medford",
+      "slug": "medford-massachusetts",
+      "state": "Massachusetts",
+      "pop": "57K+"
+    },
+    {
+      "name": "Revere",
+      "slug": "revere-massachusetts",
+      "state": "Massachusetts",
+      "pop": "53K+"
+    },
+    {
+      "name": "Peabody",
+      "slug": "peabody-massachusetts",
+      "state": "Massachusetts",
+      "pop": "53K+"
+    },
+    {
+      "name": "Methuen",
+      "slug": "methuen-massachusetts",
+      "state": "Massachusetts",
+      "pop": "50K+"
+    },
+    {
+      "name": "Barnstable",
+      "slug": "barnstable-massachusetts",
+      "state": "Massachusetts",
+      "pop": "44K+"
+    },
+    {
+      "name": "Taunton",
+      "slug": "taunton-massachusetts",
+      "state": "Massachusetts",
+      "pop": "59K+"
+    },
+    {
+      "name": "Chicopee",
+      "slug": "chicopee-massachusetts",
+      "state": "Massachusetts",
+      "pop": "55K+"
+    },
+    {
+      "name": "Camden",
+      "slug": "camden-new-jersey",
+      "state": "New Jersey",
+      "pop": "71K+"
+    },
+    {
+      "name": "Clifton",
+      "slug": "clifton-new-jersey",
+      "state": "New Jersey",
+      "pop": "90K+"
+    },
+    {
+      "name": "Cherry Hill",
+      "slug": "cherry-hill-new-jersey",
+      "state": "New Jersey",
+      "pop": "74K+"
+    },
+    {
+      "name": "Passaic",
+      "slug": "passaic-new-jersey",
+      "state": "New Jersey",
+      "pop": "70K+"
+    },
+    {
+      "name": "Union City",
+      "slug": "union-city-new-jersey",
+      "state": "New Jersey",
+      "pop": "70K+"
+    },
+    {
+      "name": "Bayonne",
+      "slug": "bayonne-new-jersey",
+      "state": "New Jersey",
+      "pop": "65K+"
+    },
+    {
+      "name": "Vineland",
+      "slug": "vineland-new-jersey",
+      "state": "New Jersey",
+      "pop": "60K+"
+    },
+    {
+      "name": "New Brunswick",
+      "slug": "new-brunswick-new-jersey",
+      "state": "New Jersey",
+      "pop": "55K+"
+    },
+    {
+      "name": "Hoboken",
+      "slug": "hoboken-new-jersey",
+      "state": "New Jersey",
+      "pop": "60K+"
+    },
+    {
+      "name": "Perth Amboy",
+      "slug": "perth-amboy-new-jersey",
+      "state": "New Jersey",
+      "pop": "52K+"
+    },
+    {
+      "name": "West New York",
+      "slug": "west-new-york-new-jersey",
+      "state": "New Jersey",
+      "pop": "53K+"
+    },
+    {
+      "name": "Plainfield",
+      "slug": "plainfield-new-jersey",
+      "state": "New Jersey",
+      "pop": "54K+"
+    },
+    {
+      "name": "Hackensack",
+      "slug": "hackensack-new-jersey",
+      "state": "New Jersey",
+      "pop": "46K+"
+    },
+    {
+      "name": "Sayreville",
+      "slug": "sayreville-new-jersey",
+      "state": "New Jersey",
+      "pop": "45K+"
+    },
+    {
+      "name": "Kearny",
+      "slug": "kearny-new-jersey",
+      "state": "New Jersey",
+      "pop": "42K+"
+    },
+    {
+      "name": "Morgantown",
+      "slug": "morgantown-west-virginia",
+      "state": "West Virginia",
+      "pop": "30K+"
+    },
+    {
+      "name": "Parkersburg",
+      "slug": "parkersburg-west-virginia",
+      "state": "West Virginia",
+      "pop": "29K+"
+    },
+    {
+      "name": "Wheeling",
+      "slug": "wheeling-west-virginia",
+      "state": "West Virginia",
+      "pop": "27K+"
+    },
+    {
+      "name": "Martinsburg",
+      "slug": "martinsburg-west-virginia",
+      "state": "West Virginia",
+      "pop": "18K+"
+    },
+    {
+      "name": "Fairmont",
+      "slug": "fairmont-west-virginia",
+      "state": "West Virginia",
+      "pop": "18K+"
+    },
+    {
+      "name": "Watertown",
+      "slug": "watertown-south-dakota",
+      "state": "South Dakota",
+      "pop": "22K+"
+    },
+    {
+      "name": "Mitchell",
+      "slug": "mitchell-south-dakota",
+      "state": "South Dakota",
+      "pop": "15K+"
+    },
+    {
+      "name": "Yankton",
+      "slug": "yankton-south-dakota",
+      "state": "South Dakota",
+      "pop": "15K+"
+    },
+    {
+      "name": "Pierre",
+      "slug": "pierre-south-dakota",
+      "state": "South Dakota",
+      "pop": "14K+"
+    },
+    {
+      "name": "Rutland",
+      "slug": "rutland-vermont",
+      "state": "Vermont",
+      "pop": "15K+"
+    },
+    {
+      "name": "Montpelier",
+      "slug": "montpelier-vermont",
+      "state": "Vermont",
+      "pop": "8K+"
+    },
+    {
+      "name": "Barre",
+      "slug": "barre-vermont",
+      "state": "Vermont",
+      "pop": "8K+"
+    },
+    {
+      "name": "St. Albans",
+      "slug": "st-albans-vermont",
+      "state": "Vermont",
+      "pop": "7K+"
+    },
+    {
+      "name": "Kaneohe",
+      "slug": "kaneohe-hawaii",
+      "state": "Hawaii",
+      "pop": "35K+"
+    },
+    {
+      "name": "Ewa Beach",
+      "slug": "ewa-beach-hawaii",
+      "state": "Hawaii",
+      "pop": "15K+"
+    },
+    {
+      "name": "Mililani",
+      "slug": "mililani-hawaii",
+      "state": "Hawaii",
+      "pop": "28K+"
+    },
+    {
+      "name": "Kahului",
+      "slug": "kahului-hawaii",
+      "state": "Hawaii",
+      "pop": "28K+"
+    },
+    {
+      "name": "Kihei",
+      "slug": "kihei-hawaii",
+      "state": "Hawaii",
+      "pop": "23K+"
+    },
+    {
+      "name": "Auburn",
+      "slug": "auburn-maine",
+      "state": "Maine",
+      "pop": "24K+"
+    },
+    {
+      "name": "Biddeford",
+      "slug": "biddeford-maine",
+      "state": "Maine",
+      "pop": "22K+"
+    },
+    {
+      "name": "Saco",
+      "slug": "saco-maine",
+      "state": "Maine",
+      "pop": "20K+"
+    },
+    {
+      "name": "Sanford",
+      "slug": "sanford-maine",
+      "state": "Maine",
+      "pop": "21K+"
+    },
+    {
+      "name": "Waterville",
+      "slug": "waterville-maine",
+      "state": "Maine",
+      "pop": "16K+"
+    },
+    {
+      "name": "Kearney",
+      "slug": "kearney-nebraska",
+      "state": "Nebraska",
+      "pop": "33K+"
+    },
+    {
+      "name": "Fremont",
+      "slug": "fremont-nebraska",
+      "state": "Nebraska",
+      "pop": "27K+"
+    },
+    {
+      "name": "Hastings",
+      "slug": "hastings-nebraska",
+      "state": "Nebraska",
+      "pop": "25K+"
+    },
+    {
+      "name": "North Platte",
+      "slug": "north-platte-nebraska",
+      "state": "Nebraska",
+      "pop": "23K+"
+    },
+    {
+      "name": "Norfolk",
+      "slug": "norfolk-nebraska",
+      "state": "Nebraska",
+      "pop": "24K+"
+    },
+    {
+      "name": "Williston",
+      "slug": "williston-north-dakota",
+      "state": "North Dakota",
+      "pop": "29K+"
+    },
+    {
+      "name": "Dickinson",
+      "slug": "dickinson-north-dakota",
+      "state": "North Dakota",
+      "pop": "25K+"
+    },
+    {
+      "name": "Jamestown",
+      "slug": "jamestown-north-dakota",
+      "state": "North Dakota",
+      "pop": "15K+"
+    },
+    {
+      "name": "Wahpeton",
+      "slug": "wahpeton-north-dakota",
+      "state": "North Dakota",
+      "pop": "8K+"
+    },
+    {
+      "name": "Roswell",
+      "slug": "roswell-new-mexico",
+      "state": "New Mexico",
+      "pop": "48K+"
+    },
+    {
+      "name": "Clovis",
+      "slug": "clovis-new-mexico",
+      "state": "New Mexico",
+      "pop": "38K+"
+    },
+    {
+      "name": "Hobbs",
+      "slug": "hobbs-new-mexico",
+      "state": "New Mexico",
+      "pop": "40K+"
+    },
+    {
+      "name": "Carlsbad",
+      "slug": "carlsbad-new-mexico",
+      "state": "New Mexico",
+      "pop": "32K+"
+    },
+    {
+      "name": "Gallup",
+      "slug": "gallup-new-mexico",
+      "state": "New Mexico",
+      "pop": "22K+"
+    },
+    {
+      "name": "Edmond",
+      "slug": "edmond-oklahoma",
+      "state": "Oklahoma",
+      "pop": "94K+"
+    },
+    {
+      "name": "Moore",
+      "slug": "moore-oklahoma",
+      "state": "Oklahoma",
+      "pop": "62K+"
+    },
+    {
+      "name": "Midwest City",
+      "slug": "midwest-city-oklahoma",
+      "state": "Oklahoma",
+      "pop": "58K+"
+    },
+    {
+      "name": "Enid",
+      "slug": "enid-oklahoma",
+      "state": "Oklahoma",
+      "pop": "51K+"
+    },
+    {
+      "name": "Stillwater",
+      "slug": "stillwater-oklahoma",
+      "state": "Oklahoma",
+      "pop": "50K+"
+    },
+    {
+      "name": "East Providence",
+      "slug": "east-providence-rhode-island",
+      "state": "Rhode Island",
+      "pop": "47K+"
+    },
+    {
+      "name": "Central Falls",
+      "slug": "central-falls-rhode-island",
+      "state": "Rhode Island",
+      "pop": "22K+"
+    },
+    {
+      "name": "Newport",
+      "slug": "newport-rhode-island",
+      "state": "Rhode Island",
+      "pop": "25K+"
+    },
+    {
+      "name": "East Greenwich",
+      "slug": "east-greenwich-rhode-island",
+      "state": "Rhode Island",
+      "pop": "14K+"
+    },
+    {
+      "name": "Meridian",
+      "slug": "meridian-mississippi",
+      "state": "Mississippi",
+      "pop": "35K+"
+    },
+    {
+      "name": "Greenville",
+      "slug": "greenville-mississippi",
+      "state": "Mississippi",
+      "pop": "29K+"
+    },
+    {
+      "name": "Starkville",
+      "slug": "starkville-mississippi",
+      "state": "Mississippi",
+      "pop": "25K+"
+    },
+    {
+      "name": "Oxford",
+      "slug": "oxford-mississippi",
+      "state": "Mississippi",
+      "pop": "26K+"
+    },
+    {
+      "name": "Columbus",
+      "slug": "columbus-mississippi",
+      "state": "Mississippi",
+      "pop": "23K+"
+    },
+    {
+      "name": "Evanston",
+      "slug": "evanston-wyoming",
+      "state": "Wyoming",
+      "pop": "12K+"
+    },
+    {
+      "name": "Salina",
+      "slug": "salina-kansas",
+      "state": "Kansas",
+      "pop": "46K+"
+    },
+    {
+      "name": "Hutchinson",
+      "slug": "hutchinson-kansas",
+      "state": "Kansas",
+      "pop": "40K+"
+    },
+    {
+      "name": "Leavenworth",
+      "slug": "leavenworth-kansas",
+      "state": "Kansas",
+      "pop": "37K+"
+    },
+    {
+      "name": "Dodge City",
+      "slug": "dodge-city-kansas",
+      "state": "Kansas",
+      "pop": "28K+"
+    },
+    {
+      "name": "Havre",
+      "slug": "havre-montana",
+      "state": "Montana",
+      "pop": "10K+"
+    },
+    {
+      "name": "El Cajon",
+      "slug": "el-cajon-california",
+      "state": "California",
+      "pop": "103K+"
+    },
+    {
+      "name": "Vista",
+      "slug": "vista-california",
+      "state": "California",
+      "pop": "101K+"
+    },
+    {
+      "name": "South Gate",
+      "slug": "south-gate-california",
+      "state": "California",
+      "pop": "92K+"
+    },
+    {
+      "name": "Mission Viejo",
+      "slug": "mission-viejo-california",
+      "state": "California",
+      "pop": "94K+"
+    },
+    {
+      "name": "San Angelo",
+      "slug": "san-angelo-california",
+      "state": "California",
+      "pop": "101K+"
+    },
+    {
+      "name": "San Angelo",
+      "slug": "san-angelo-texas",
+      "state": "Texas",
+      "pop": "101K+"
+    }
+  ],
+  "count": 91
+}

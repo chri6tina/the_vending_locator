@@ -1,624 +1,352 @@
 {
   "totalChecked": 316,
-  "existing": 238,
-  "missing": 78,
+  "existing": 288,
+  "missing": 28,
   "missingCities": [
     {
-      "name": "Napa",
-      "slug": "napa-california",
-      "state": "California",
-      "pop": "80K+"
-    },
-    {
-      "name": "Mountain View",
-      "slug": "mountain-view-california",
-      "state": "California",
-      "pop": "85K+"
-    },
-    {
-      "name": "Palm Desert",
-      "slug": "palm-desert-california",
-      "state": "California",
-      "pop": "52K+"
-    },
-    {
-      "name": "Newport Beach",
-      "slug": "newport-beach-california",
-      "state": "California",
-      "pop": "85K+"
-    },
-    {
-      "name": "Arlington Heights",
-      "slug": "arlington-heights-illinois",
-      "state": "Illinois",
-      "pop": "77K+"
-    },
-    {
-      "name": "Bolingbrook",
-      "slug": "bolingbrook-illinois",
-      "state": "Illinois",
-      "pop": "73K+"
-    },
-    {
-      "name": "Palatine",
-      "slug": "palatine-illinois",
-      "state": "Illinois",
-      "pop": "67K+"
-    },
-    {
-      "name": "Skokie",
-      "slug": "skokie-illinois",
-      "state": "Illinois",
-      "pop": "67K+"
-    },
-    {
-      "name": "Des Plaines",
-      "slug": "des-plaines-illinois",
-      "state": "Illinois",
-      "pop": "60K+"
-    },
-    {
-      "name": "Orland Park",
-      "slug": "orland-park-illinois",
-      "state": "Illinois",
-      "pop": "58K+"
-    },
-    {
-      "name": "Oak Lawn",
-      "slug": "oak-lawn-illinois",
-      "state": "Illinois",
-      "pop": "58K+"
-    },
-    {
-      "name": "Berwyn",
-      "slug": "berwyn-illinois",
-      "state": "Illinois",
-      "pop": "57K+"
-    },
-    {
-      "name": "Mount Prospect",
-      "slug": "mount-prospect-illinois",
-      "state": "Illinois",
-      "pop": "56K+"
-    },
-    {
-      "name": "Tinley Park",
-      "slug": "tinley-park-illinois",
-      "state": "Illinois",
-      "pop": "55K+"
-    },
-    {
-      "name": "Oak Park",
-      "slug": "oak-park-illinois",
-      "state": "Illinois",
-      "pop": "54K+"
-    },
-    {
-      "name": "Wheaton",
-      "slug": "wheaton-illinois",
-      "state": "Illinois",
-      "pop": "53K+"
-    },
-    {
-      "name": "Downers Grove",
-      "slug": "downers-grove-illinois",
-      "state": "Illinois",
-      "pop": "50K+"
-    },
-    {
-      "name": "Muncie",
-      "slug": "muncie-indiana",
-      "state": "Indiana",
-      "pop": "65K+"
-    },
-    {
-      "name": "Terre Haute",
-      "slug": "terre-haute-indiana",
-      "state": "Indiana",
-      "pop": "60K+"
-    },
-    {
-      "name": "Anderson",
-      "slug": "anderson-indiana",
-      "state": "Indiana",
-      "pop": "54K+"
-    },
-    {
-      "name": "Port Huron",
-      "slug": "port-huron-michigan",
-      "state": "Michigan",
-      "pop": "28K+"
-    },
-    {
-      "name": "Middletown",
-      "slug": "middletown-ohio",
-      "state": "Ohio",
-      "pop": "50K+"
-    },
-    {
-      "name": "Newark",
-      "slug": "newark-ohio",
-      "state": "Ohio",
-      "pop": "50K+"
-    },
-    {
-      "name": "Lancaster",
-      "slug": "lancaster-california",
-      "state": "California",
-      "pop": "160K+"
-    },
-    {
-      "name": "Palm Springs",
-      "slug": "palm-springs-california",
-      "state": "California",
+      "name": "Prescott Valley",
+      "slug": "prescott-valley-arizona",
+      "state": "Arizona",
       "pop": "48K+"
     },
     {
-      "name": "Santa Clara",
-      "slug": "santa-clara-california",
-      "state": "California",
-      "pop": "130K+"
+      "name": "Sierra Vista",
+      "slug": "sierra-vista-arizona",
+      "state": "Arizona",
+      "pop": "45K+"
     },
     {
-      "name": "Allen",
-      "slug": "allen-texas",
-      "state": "Texas",
-      "pop": "110K+"
+      "name": "Boulder City",
+      "slug": "boulder-city-nevada",
+      "state": "Nevada",
+      "pop": "15K+"
     },
     {
-      "name": "Conroe",
-      "slug": "conroe-texas",
-      "state": "Texas",
+      "name": "Elko",
+      "slug": "elko-nevada",
+      "state": "Nevada",
+      "pop": "20K+"
+    },
+    {
+      "name": "Fallon",
+      "slug": "fallon-nevada",
+      "state": "Nevada",
+      "pop": "9K+"
+    },
+    {
+      "name": "Fernley",
+      "slug": "fernley-nevada",
+      "state": "Nevada",
+      "pop": "25K+"
+    },
+    {
+      "name": "Mesquite",
+      "slug": "mesquite-nevada",
+      "state": "Nevada",
+      "pop": "20K+"
+    },
+    {
+      "name": "Auburn",
+      "slug": "auburn-washington",
+      "state": "Washington",
       "pop": "90K+"
     },
     {
-      "name": "Edinburg",
-      "slug": "edinburg-texas",
-      "state": "Texas",
+      "name": "Bothell",
+      "slug": "bothell-washington",
+      "state": "Washington",
+      "pop": "48K+"
+    },
+    {
+      "name": "Burien",
+      "slug": "burien-washington",
+      "state": "Washington",
+      "pop": "52K+"
+    },
+    {
+      "name": "Edmonds",
+      "slug": "edmonds-washington",
+      "state": "Washington",
+      "pop": "42K+"
+    },
+    {
+      "name": "Federal Way",
+      "slug": "federal-way-washington",
+      "state": "Washington",
       "pop": "100K+"
     },
     {
-      "name": "Altamonte Springs",
-      "slug": "altamonte-springs-florida",
-      "state": "Florida",
-      "pop": "45K+"
+      "name": "Kennewick",
+      "slug": "kennewick-washington",
+      "state": "Washington",
+      "pop": "85K+"
     },
     {
-      "name": "Apopka",
-      "slug": "apopka-florida",
-      "state": "Florida",
-      "pop": "55K+"
+      "name": "Lakewood",
+      "slug": "lakewood-washington",
+      "state": "Washington",
+      "pop": "63K+"
     },
     {
-      "name": "Bradenton",
-      "slug": "bradenton-florida",
-      "state": "Florida",
-      "pop": "60K+"
+      "name": "Lynnwood",
+      "slug": "lynnwood-washington",
+      "state": "Washington",
+      "pop": "40K+"
     },
     {
-      "name": "Coconut Creek",
-      "slug": "coconut-creek-florida",
-      "state": "Florida",
-      "pop": "60K+"
+      "name": "Marysville",
+      "slug": "marysville-washington",
+      "state": "Washington",
+      "pop": "72K+"
     },
     {
-      "name": "Cutler Bay",
-      "slug": "cutler-bay-florida",
-      "state": "Florida",
-      "pop": "45K+"
+      "name": "Mount Vernon",
+      "slug": "mount-vernon-washington",
+      "state": "Washington",
+      "pop": "36K+"
     },
     {
-      "name": "Doral",
-      "slug": "doral-florida",
-      "state": "Florida",
+      "name": "Pasco",
+      "slug": "pasco-washington",
+      "state": "Washington",
       "pop": "75K+"
     },
     {
-      "name": "Greenacres",
-      "slug": "greenacres-florida",
-      "state": "Florida",
-      "pop": "45K+"
+      "name": "Pullman",
+      "slug": "pullman-washington",
+      "state": "Washington",
+      "pop": "33K+"
     },
     {
-      "name": "Jupiter",
-      "slug": "jupiter-florida",
-      "state": "Florida",
-      "pop": "65K+"
+      "name": "Redmond",
+      "slug": "redmond-washington",
+      "state": "Washington",
+      "pop": "75K+"
     },
     {
-      "name": "Margate",
-      "slug": "margate-florida",
-      "state": "Florida",
+      "name": "Richland",
+      "slug": "richland-washington",
+      "state": "Washington",
       "pop": "60K+"
     },
     {
-      "name": "North Miami",
-      "slug": "north-miami-florida",
-      "state": "Florida",
+      "name": "Shoreline",
+      "slug": "shoreline-washington",
+      "state": "Washington",
+      "pop": "58K+"
+    },
+    {
+      "name": "Spokane Valley",
+      "slug": "spokane-valley-washington",
+      "state": "Washington",
+      "pop": "105K+"
+    },
+    {
+      "name": "Wenatchee",
+      "slug": "wenatchee-washington",
+      "state": "Washington",
+      "pop": "35K+"
+    },
+    {
+      "name": "Corvallis",
+      "slug": "corvallis-oregon",
+      "state": "Oregon",
       "pop": "60K+"
     },
     {
-      "name": "Palm Beach Gardens",
-      "slug": "palm-beach-gardens-florida",
-      "state": "Florida",
-      "pop": "60K+"
-    },
-    {
-      "name": "Plant City",
-      "slug": "plant-city-florida",
-      "state": "Florida",
+      "name": "Keizer",
+      "slug": "keizer-oregon",
+      "state": "Oregon",
       "pop": "40K+"
     },
     {
-      "name": "Royal Palm Beach",
-      "slug": "royal-palm-beach-florida",
-      "state": "Florida",
-      "pop": "40K+"
+      "name": "Springfield",
+      "slug": "springfield-oregon",
+      "state": "Oregon",
+      "pop": "62K+"
     },
     {
-      "name": "Stuart",
-      "slug": "stuart-florida",
-      "state": "Florida",
-      "pop": "18K+"
-    },
-    {
-      "name": "Wellington",
-      "slug": "wellington-florida",
-      "state": "Florida",
-      "pop": "60K+"
-    },
-    {
-      "name": "Avondale",
-      "slug": "avondale-arizona",
-      "state": "Arizona",
-      "pop": "90K+"
-    },
-    {
-      "name": "Buckeye",
-      "slug": "buckeye-arizona",
-      "state": "Arizona",
-      "pop": "95K+"
-    },
-    {
-      "name": "Casa Grande",
-      "slug": "casa-grande-arizona",
-      "state": "Arizona",
-      "pop": "60K+"
-    },
-    {
-      "name": "Goodyear",
-      "slug": "goodyear-arizona",
-      "state": "Arizona",
-      "pop": "95K+"
-    },
-    {
-      "name": "Maricopa",
-      "slug": "maricopa-arizona",
-      "state": "Arizona",
-      "pop": "65K+"
-    },
-    {
-      "name": "Prescott",
-      "slug": "prescott-arizona",
-      "state": "Arizona",
-      "pop": "45K+"
+      "name": "Tigard",
+      "slug": "tigard-oregon",
+      "state": "Oregon",
+      "pop": "55K+"
     }
   ],
   "missingByState": {
-    "California": [
+    "Arizona": [
       {
-        "name": "Napa",
-        "slug": "napa-california",
-        "state": "California",
-        "pop": "80K+"
-      },
-      {
-        "name": "Mountain View",
-        "slug": "mountain-view-california",
-        "state": "California",
-        "pop": "85K+"
-      },
-      {
-        "name": "Palm Desert",
-        "slug": "palm-desert-california",
-        "state": "California",
-        "pop": "52K+"
-      },
-      {
-        "name": "Newport Beach",
-        "slug": "newport-beach-california",
-        "state": "California",
-        "pop": "85K+"
-      },
-      {
-        "name": "Lancaster",
-        "slug": "lancaster-california",
-        "state": "California",
-        "pop": "160K+"
-      },
-      {
-        "name": "Palm Springs",
-        "slug": "palm-springs-california",
-        "state": "California",
+        "name": "Prescott Valley",
+        "slug": "prescott-valley-arizona",
+        "state": "Arizona",
         "pop": "48K+"
       },
       {
-        "name": "Santa Clara",
-        "slug": "santa-clara-california",
-        "state": "California",
-        "pop": "130K+"
+        "name": "Sierra Vista",
+        "slug": "sierra-vista-arizona",
+        "state": "Arizona",
+        "pop": "45K+"
       }
     ],
-    "Illinois": [
+    "Nevada": [
       {
-        "name": "Arlington Heights",
-        "slug": "arlington-heights-illinois",
-        "state": "Illinois",
-        "pop": "77K+"
+        "name": "Boulder City",
+        "slug": "boulder-city-nevada",
+        "state": "Nevada",
+        "pop": "15K+"
       },
       {
-        "name": "Bolingbrook",
-        "slug": "bolingbrook-illinois",
-        "state": "Illinois",
-        "pop": "73K+"
+        "name": "Elko",
+        "slug": "elko-nevada",
+        "state": "Nevada",
+        "pop": "20K+"
       },
       {
-        "name": "Palatine",
-        "slug": "palatine-illinois",
-        "state": "Illinois",
-        "pop": "67K+"
+        "name": "Fallon",
+        "slug": "fallon-nevada",
+        "state": "Nevada",
+        "pop": "9K+"
       },
       {
-        "name": "Skokie",
-        "slug": "skokie-illinois",
-        "state": "Illinois",
-        "pop": "67K+"
+        "name": "Fernley",
+        "slug": "fernley-nevada",
+        "state": "Nevada",
+        "pop": "25K+"
       },
       {
-        "name": "Des Plaines",
-        "slug": "des-plaines-illinois",
-        "state": "Illinois",
-        "pop": "60K+"
-      },
-      {
-        "name": "Orland Park",
-        "slug": "orland-park-illinois",
-        "state": "Illinois",
-        "pop": "58K+"
-      },
-      {
-        "name": "Oak Lawn",
-        "slug": "oak-lawn-illinois",
-        "state": "Illinois",
-        "pop": "58K+"
-      },
-      {
-        "name": "Berwyn",
-        "slug": "berwyn-illinois",
-        "state": "Illinois",
-        "pop": "57K+"
-      },
-      {
-        "name": "Mount Prospect",
-        "slug": "mount-prospect-illinois",
-        "state": "Illinois",
-        "pop": "56K+"
-      },
-      {
-        "name": "Tinley Park",
-        "slug": "tinley-park-illinois",
-        "state": "Illinois",
-        "pop": "55K+"
-      },
-      {
-        "name": "Oak Park",
-        "slug": "oak-park-illinois",
-        "state": "Illinois",
-        "pop": "54K+"
-      },
-      {
-        "name": "Wheaton",
-        "slug": "wheaton-illinois",
-        "state": "Illinois",
-        "pop": "53K+"
-      },
-      {
-        "name": "Downers Grove",
-        "slug": "downers-grove-illinois",
-        "state": "Illinois",
-        "pop": "50K+"
+        "name": "Mesquite",
+        "slug": "mesquite-nevada",
+        "state": "Nevada",
+        "pop": "20K+"
       }
     ],
-    "Indiana": [
+    "Washington": [
       {
-        "name": "Muncie",
-        "slug": "muncie-indiana",
-        "state": "Indiana",
-        "pop": "65K+"
-      },
-      {
-        "name": "Terre Haute",
-        "slug": "terre-haute-indiana",
-        "state": "Indiana",
-        "pop": "60K+"
-      },
-      {
-        "name": "Anderson",
-        "slug": "anderson-indiana",
-        "state": "Indiana",
-        "pop": "54K+"
-      }
-    ],
-    "Michigan": [
-      {
-        "name": "Port Huron",
-        "slug": "port-huron-michigan",
-        "state": "Michigan",
-        "pop": "28K+"
-      }
-    ],
-    "Ohio": [
-      {
-        "name": "Middletown",
-        "slug": "middletown-ohio",
-        "state": "Ohio",
-        "pop": "50K+"
-      },
-      {
-        "name": "Newark",
-        "slug": "newark-ohio",
-        "state": "Ohio",
-        "pop": "50K+"
-      }
-    ],
-    "Texas": [
-      {
-        "name": "Allen",
-        "slug": "allen-texas",
-        "state": "Texas",
-        "pop": "110K+"
-      },
-      {
-        "name": "Conroe",
-        "slug": "conroe-texas",
-        "state": "Texas",
+        "name": "Auburn",
+        "slug": "auburn-washington",
+        "state": "Washington",
         "pop": "90K+"
       },
       {
-        "name": "Edinburg",
-        "slug": "edinburg-texas",
-        "state": "Texas",
+        "name": "Bothell",
+        "slug": "bothell-washington",
+        "state": "Washington",
+        "pop": "48K+"
+      },
+      {
+        "name": "Burien",
+        "slug": "burien-washington",
+        "state": "Washington",
+        "pop": "52K+"
+      },
+      {
+        "name": "Edmonds",
+        "slug": "edmonds-washington",
+        "state": "Washington",
+        "pop": "42K+"
+      },
+      {
+        "name": "Federal Way",
+        "slug": "federal-way-washington",
+        "state": "Washington",
         "pop": "100K+"
-      }
-    ],
-    "Florida": [
-      {
-        "name": "Altamonte Springs",
-        "slug": "altamonte-springs-florida",
-        "state": "Florida",
-        "pop": "45K+"
       },
       {
-        "name": "Apopka",
-        "slug": "apopka-florida",
-        "state": "Florida",
-        "pop": "55K+"
+        "name": "Kennewick",
+        "slug": "kennewick-washington",
+        "state": "Washington",
+        "pop": "85K+"
       },
       {
-        "name": "Bradenton",
-        "slug": "bradenton-florida",
-        "state": "Florida",
-        "pop": "60K+"
+        "name": "Lakewood",
+        "slug": "lakewood-washington",
+        "state": "Washington",
+        "pop": "63K+"
       },
       {
-        "name": "Coconut Creek",
-        "slug": "coconut-creek-florida",
-        "state": "Florida",
-        "pop": "60K+"
+        "name": "Lynnwood",
+        "slug": "lynnwood-washington",
+        "state": "Washington",
+        "pop": "40K+"
       },
       {
-        "name": "Cutler Bay",
-        "slug": "cutler-bay-florida",
-        "state": "Florida",
-        "pop": "45K+"
+        "name": "Marysville",
+        "slug": "marysville-washington",
+        "state": "Washington",
+        "pop": "72K+"
       },
       {
-        "name": "Doral",
-        "slug": "doral-florida",
-        "state": "Florida",
+        "name": "Mount Vernon",
+        "slug": "mount-vernon-washington",
+        "state": "Washington",
+        "pop": "36K+"
+      },
+      {
+        "name": "Pasco",
+        "slug": "pasco-washington",
+        "state": "Washington",
         "pop": "75K+"
       },
       {
-        "name": "Greenacres",
-        "slug": "greenacres-florida",
-        "state": "Florida",
-        "pop": "45K+"
+        "name": "Pullman",
+        "slug": "pullman-washington",
+        "state": "Washington",
+        "pop": "33K+"
       },
       {
-        "name": "Jupiter",
-        "slug": "jupiter-florida",
-        "state": "Florida",
-        "pop": "65K+"
+        "name": "Redmond",
+        "slug": "redmond-washington",
+        "state": "Washington",
+        "pop": "75K+"
       },
       {
-        "name": "Margate",
-        "slug": "margate-florida",
-        "state": "Florida",
+        "name": "Richland",
+        "slug": "richland-washington",
+        "state": "Washington",
         "pop": "60K+"
       },
       {
-        "name": "North Miami",
-        "slug": "north-miami-florida",
-        "state": "Florida",
-        "pop": "60K+"
+        "name": "Shoreline",
+        "slug": "shoreline-washington",
+        "state": "Washington",
+        "pop": "58K+"
       },
       {
-        "name": "Palm Beach Gardens",
-        "slug": "palm-beach-gardens-florida",
-        "state": "Florida",
-        "pop": "60K+"
+        "name": "Spokane Valley",
+        "slug": "spokane-valley-washington",
+        "state": "Washington",
+        "pop": "105K+"
       },
       {
-        "name": "Plant City",
-        "slug": "plant-city-florida",
-        "state": "Florida",
-        "pop": "40K+"
-      },
-      {
-        "name": "Royal Palm Beach",
-        "slug": "royal-palm-beach-florida",
-        "state": "Florida",
-        "pop": "40K+"
-      },
-      {
-        "name": "Stuart",
-        "slug": "stuart-florida",
-        "state": "Florida",
-        "pop": "18K+"
-      },
-      {
-        "name": "Wellington",
-        "slug": "wellington-florida",
-        "state": "Florida",
-        "pop": "60K+"
+        "name": "Wenatchee",
+        "slug": "wenatchee-washington",
+        "state": "Washington",
+        "pop": "35K+"
       }
     ],
-    "Arizona": [
+    "Oregon": [
       {
-        "name": "Avondale",
-        "slug": "avondale-arizona",
-        "state": "Arizona",
-        "pop": "90K+"
-      },
-      {
-        "name": "Buckeye",
-        "slug": "buckeye-arizona",
-        "state": "Arizona",
-        "pop": "95K+"
-      },
-      {
-        "name": "Casa Grande",
-        "slug": "casa-grande-arizona",
-        "state": "Arizona",
+        "name": "Corvallis",
+        "slug": "corvallis-oregon",
+        "state": "Oregon",
         "pop": "60K+"
       },
       {
-        "name": "Goodyear",
-        "slug": "goodyear-arizona",
-        "state": "Arizona",
-        "pop": "95K+"
+        "name": "Keizer",
+        "slug": "keizer-oregon",
+        "state": "Oregon",
+        "pop": "40K+"
       },
       {
-        "name": "Maricopa",
-        "slug": "maricopa-arizona",
-        "state": "Arizona",
-        "pop": "65K+"
+        "name": "Springfield",
+        "slug": "springfield-oregon",
+        "state": "Oregon",
+        "pop": "62K+"
       },
       {
-        "name": "Prescott",
-        "slug": "prescott-arizona",
-        "state": "Arizona",
-        "pop": "45K+"
+        "name": "Tigard",
+        "slug": "tigard-oregon",
+        "state": "Oregon",
+        "pop": "55K+"
       }
     ]
   }

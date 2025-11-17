@@ -16,12 +16,13 @@ export default function NevadaVendingServicesPage() {
 
   // Nevada cities with vending services
   const cities = [
-    { name: 'Las Vegas', slug: 'las-vegas-nevada' },
+    { name: 'Carson City', slug: 'carson-city-nevada' },
     { name: 'Henderson', slug: 'henderson-nevada' },
-    { name: 'Reno', slug: 'reno-nevada' },
+    { name: 'Las Vegas', slug: 'las-vegas-nevada' },
     { name: 'North Las Vegas', slug: 'north-las-vegas-nevada' },
-    { name: 'Sparks', slug: 'sparks-nevada' },
-    { name: 'Carson City', slug: 'carson-city-nevada' }
+    { name: 'Pahrump', slug: 'pahrump-nevada' },
+    { name: 'Reno', slug: 'reno-nevada' },
+    { name: 'Sparks', slug: 'sparks-nevada' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

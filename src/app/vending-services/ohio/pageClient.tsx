@@ -16,13 +16,19 @@ export default function OhioVendingServicesPage() {
 
   // Ohio cities with vending services
   const cities = [
-    { name: 'Columbus', slug: 'columbus-ohio' },
-    { name: 'Cleveland', slug: 'cleveland-ohio' },
-    { name: 'Cincinnati', slug: 'cincinnati-ohio' },
-    { name: 'Toledo', slug: 'toledo-ohio' },
     { name: 'Akron', slug: 'akron-ohio' },
+    { name: 'Cincinnati', slug: 'cincinnati-ohio' },
+    { name: 'Cleveland', slug: 'cleveland-ohio' },
+    { name: 'Columbus', slug: 'columbus-ohio' },
     { name: 'Dayton', slug: 'dayton-ohio' },
-    { name: 'Parma', slug: 'parma-ohio' }
+    { name: 'Elyria', slug: 'elyria-ohio' },
+    { name: 'Hamilton', slug: 'hamilton-ohio' },
+    { name: 'Lima', slug: 'lima-ohio' },
+    { name: 'Mansfield', slug: 'mansfield-ohio' },
+    { name: 'Middletown', slug: 'middletown-ohio' },
+    { name: 'Newark', slug: 'newark-ohio' },
+    { name: 'Parma', slug: 'parma-ohio' },
+    { name: 'Toledo', slug: 'toledo-ohio' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

@@ -16,14 +16,18 @@ export default function IndianaVendingServicesPage() {
 
   // Indiana cities with vending services
   const cities = [
-    { name: 'Indianapolis', slug: 'indianapolis-indiana' },
-    { name: 'Fort Wayne', slug: 'fort-wayne-indiana' },
-    { name: 'Evansville', slug: 'evansville-indiana' },
-    { name: 'South Bend', slug: 'south-bend-indiana' },
-    { name: 'Carmel', slug: 'carmel-indiana' },
+    { name: 'Anderson', slug: 'anderson-indiana' },
     { name: 'Bloomington', slug: 'bloomington-indiana' },
+    { name: 'Carmel', slug: 'carmel-indiana' },
+    { name: 'Evansville', slug: 'evansville-indiana' },
     { name: 'Fishers', slug: 'fishers-indiana' },
-    { name: 'Hammond', slug: 'hammond-indiana' }
+    { name: 'Fort Wayne', slug: 'fort-wayne-indiana' },
+    { name: 'Hammond', slug: 'hammond-indiana' },
+    { name: 'Indianapolis', slug: 'indianapolis-indiana' },
+    { name: 'Kokomo', slug: 'kokomo-indiana' },
+    { name: 'Muncie', slug: 'muncie-indiana' },
+    { name: 'South Bend', slug: 'south-bend-indiana' },
+    { name: 'Terre Haute', slug: 'terre-haute-indiana' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

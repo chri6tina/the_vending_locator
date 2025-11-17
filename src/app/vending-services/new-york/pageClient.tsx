@@ -26,6 +26,7 @@ export default function NewYorkVendingServicesPage() {
     { name: 'Syracuse', slug: 'syracuse-new-york' },
     { name: 'Troy', slug: 'troy-new-york' },
     { name: 'Utica', slug: 'utica-new-york' },
+    { name: 'White Plains', slug: 'white-plains-new-york' },
     { name: 'Yonkers', slug: 'yonkers-new-york' }
   ]
 

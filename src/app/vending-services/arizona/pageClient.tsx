@@ -16,16 +16,24 @@ export default function ArizonaVendingServicesPage() {
 
   // Arizona cities with vending services
   const cities = [
+    { name: 'Avondale', slug: 'avondale-arizona' },
+    { name: 'Buckeye', slug: 'buckeye-arizona' },
+    { name: 'Casa Grande', slug: 'casa-grande-arizona' },
     { name: 'Chandler', slug: 'chandler-arizona' },
+    { name: 'Flagstaff', slug: 'flagstaff-arizona' },
     { name: 'Gilbert', slug: 'gilbert-arizona' },
     { name: 'Glendale', slug: 'glendale-arizona' },
+    { name: 'Goodyear', slug: 'goodyear-arizona' },
+    { name: 'Maricopa', slug: 'maricopa-arizona' },
     { name: 'Mesa', slug: 'mesa-arizona' },
     { name: 'Peoria', slug: 'peoria-arizona' },
     { name: 'Phoenix', slug: 'phoenix-arizona' },
+    { name: 'Prescott', slug: 'prescott-arizona' },
     { name: 'Scottsdale', slug: 'scottsdale-arizona' },
     { name: 'Surprise', slug: 'surprise-arizona' },
     { name: 'Tempe', slug: 'tempe-arizona' },
-    { name: 'Tucson', slug: 'tucson-arizona' }
+    { name: 'Tucson', slug: 'tucson-arizona' },
+    { name: 'Yuma', slug: 'yuma-arizona' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

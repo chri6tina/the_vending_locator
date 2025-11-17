@@ -16,17 +16,18 @@ export default function GeorgiaVendingServicesPage() {
 
   // Georgia cities with vending services
   const cities = [
+    { name: 'Albany', slug: 'albany-georgia' },
+    { name: 'Athens', slug: 'athens-georgia' },
     { name: 'Atlanta', slug: 'atlanta-georgia' },
     { name: 'Augusta', slug: 'augusta-georgia' },
     { name: 'Columbus', slug: 'columbus-georgia' },
-    { name: 'Macon', slug: 'macon-georgia' },
-    { name: 'Savannah', slug: 'savannah-georgia' },
-    { name: 'Athens', slug: 'athens-georgia' },
-    { name: 'Sandy Springs', slug: 'sandy-springs-georgia' },
-    { name: 'Roswell', slug: 'roswell-georgia' },
     { name: 'Johns Creek', slug: 'johns-creek-georgia' },
-    { name: 'Warner Robins', slug: 'warner-robins-georgia' },
-    { name: 'Albany', slug: 'albany-georgia' }
+    { name: 'Macon', slug: 'macon-georgia' },
+    { name: 'Roswell', slug: 'roswell-georgia' },
+    { name: 'Sandy Springs', slug: 'sandy-springs-georgia' },
+    { name: 'Savannah', slug: 'savannah-georgia' },
+    { name: 'Valdosta', slug: 'valdosta-georgia' },
+    { name: 'Warner Robins', slug: 'warner-robins-georgia' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

@@ -17,11 +17,12 @@ export default function IdahoVendingServicesPage() {
   // Idaho cities with vending services
   const cities = [
     { name: 'Boise', slug: 'boise-idaho' },
+    { name: 'Caldwell', slug: 'caldwell-idaho' },
+    { name: 'Idaho Falls', slug: 'idaho-falls-idaho' },
     { name: 'Meridian', slug: 'meridian-idaho' },
     { name: 'Nampa', slug: 'nampa-idaho' },
-    { name: 'Idaho Falls', slug: 'idaho-falls-idaho' },
     { name: 'Pocatello', slug: 'pocatello-idaho' },
-    { name: 'Caldwell', slug: 'caldwell-idaho' }
+    { name: 'Rexburg', slug: 'rexburg-idaho' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

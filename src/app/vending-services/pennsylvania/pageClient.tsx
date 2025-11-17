@@ -16,14 +16,15 @@ export default function PennsylvaniaVendingServicesPage() {
 
   // Pennsylvania cities with vending services
   const cities = [
+    { name: 'Allentown', slug: 'allentown-pennsylvania' },
+    { name: 'Bethlehem', slug: 'bethlehem-pennsylvania' },
+    { name: 'Erie', slug: 'erie-pennsylvania' },
+    { name: 'Harrisburg', slug: 'harrisburg-pennsylvania' },
+    { name: 'Lancaster', slug: 'lancaster-pennsylvania' },
     { name: 'Philadelphia', slug: 'philadelphia-pennsylvania' },
     { name: 'Pittsburgh', slug: 'pittsburgh-pennsylvania' },
-    { name: 'Allentown', slug: 'allentown-pennsylvania' },
-    { name: 'Erie', slug: 'erie-pennsylvania' },
     { name: 'Reading', slug: 'reading-pennsylvania' },
-    { name: 'Scranton', slug: 'scranton-pennsylvania' },
-    { name: 'Bethlehem', slug: 'bethlehem-pennsylvania' },
-    { name: 'Lancaster', slug: 'lancaster-pennsylvania' }
+    { name: 'Scranton', slug: 'scranton-pennsylvania' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

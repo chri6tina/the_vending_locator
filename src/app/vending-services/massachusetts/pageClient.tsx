@@ -17,10 +17,15 @@ export default function MassachusettsVendingServicesPage() {
   // Massachusetts cities with vending services
   const cities = [
     { name: 'Boston', slug: 'boston-massachusetts' },
-    { name: 'Worcester', slug: 'worcester-massachusetts' },
-    { name: 'Springfield', slug: 'springfield-massachusetts' },
     { name: 'Cambridge', slug: 'cambridge-massachusetts' },
-    { name: 'Lowell', slug: 'lowell-massachusetts' }
+    { name: 'Lawrence', slug: 'lawrence-massachusetts' },
+    { name: 'Lowell', slug: 'lowell-massachusetts' },
+    { name: 'Lynn', slug: 'lynn-massachusetts' },
+    { name: 'New Bedford', slug: 'new-bedford-massachusetts' },
+    { name: 'Newton', slug: 'newton-massachusetts' },
+    { name: 'Quincy', slug: 'quincy-massachusetts' },
+    { name: 'Springfield', slug: 'springfield-massachusetts' },
+    { name: 'Worcester', slug: 'worcester-massachusetts' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

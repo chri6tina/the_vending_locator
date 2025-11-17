@@ -16,16 +16,17 @@ export default function ArkansasVendingServicesPage() {
 
   // Arkansas cities with vending services
   const cities = [
-    { name: 'Little Rock', slug: 'little-rock-arkansas' },
-    { name: 'Fort Smith', slug: 'fort-smith-arkansas' },
-    { name: 'Fayetteville', slug: 'fayetteville-arkansas' },
-    { name: 'Springdale', slug: 'springdale-arkansas' },
-    { name: 'Jonesboro', slug: 'jonesboro-arkansas' },
-    { name: 'North Little Rock', slug: 'north-little-rock-arkansas' },
-    { name: 'Conway', slug: 'conway-arkansas' },
-    { name: 'Rogers', slug: 'rogers-arkansas' },
     { name: 'Bentonville', slug: 'bentonville-arkansas' },
-    { name: 'Pine Bluff', slug: 'pine-bluff-arkansas' }
+    { name: 'Conway', slug: 'conway-arkansas' },
+    { name: 'Fayetteville', slug: 'fayetteville-arkansas' },
+    { name: 'Fort Smith', slug: 'fort-smith-arkansas' },
+    { name: 'Hot Springs', slug: 'hot-springs-arkansas' },
+    { name: 'Jonesboro', slug: 'jonesboro-arkansas' },
+    { name: 'Little Rock', slug: 'little-rock-arkansas' },
+    { name: 'North Little Rock', slug: 'north-little-rock-arkansas' },
+    { name: 'Pine Bluff', slug: 'pine-bluff-arkansas' },
+    { name: 'Rogers', slug: 'rogers-arkansas' },
+    { name: 'Springdale', slug: 'springdale-arkansas' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

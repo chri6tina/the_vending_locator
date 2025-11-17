@@ -2,24 +2,37 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  title: 'Vending Machine Locations in New Bedford, Massachusetts | Premium Lead Database',
-  description: 'Access verified vending machine locations in New Bedford, Massachusetts. Find profitable placement opportunities with detailed business insights and contact information.',
-  keywords: 'vending machine locations New Bedford, vending leads Massachusetts, vending machine placement New Bedford, vending opportunities New Bedford',
-  openGraph: {
-    title: 'Vending Machine Locations in New Bedford, Massachusetts',
-    description: 'Access verified vending machine locations in New Bedford, Massachusetts. Find profitable placement opportunities.',
-    url: 'https://www.thevendinglocator.com/vending-leads/new-bedford-massachusetts',
-    siteName: 'The Vending Locator',
-    type: 'website'
+  "title": "Vending Machine Leads in New Bedford, Massachusetts - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in New Bedford, Massachusetts. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines new bedford massachusetts, vending leads new bedford massachusetts, vending locations new bedford massachusetts, vending opportunities new bedford massachusetts",
+  "alternates": {
+    "canonical": "https://www.thevendinglocator.com/vending-leads/new-bedford-massachusetts"
   },
-  alternates: {
-    canonical: 'https://www.thevendinglocator.com/vending-leads/new-bedford-massachusetts'
+  "openGraph": {
+    "title": "Vending Machine Leads in New Bedford, Massachusetts - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in New Bedford, Massachusetts. Find qualified businesses for vending machine placement.",
+    "url": "https://www.thevendinglocator.com/vending-leads/new-bedford-massachusetts",
+    "siteName": "The Vending Locator",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Vending Machine Leads in New Bedford, Massachusetts - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in New Bedford, Massachusetts. Find qualified businesses for vending machine placement."
+  },
+  "robots": {
+    "index": true,
+    "follow": true,
+    "googleBot": {
+      "index": true,
+      "follow": true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1
+    }
   }
 }
 
-// Enable ISR - regenerate page every hour
-export const revalidate = 3600;
-
-export default function NewBedfordMassachusettsVendingLeadsPage() {
+export default function CityPage() {
   return <PageClient />
 }

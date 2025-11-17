@@ -4,7 +4,6 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CpuChipIcon, HeartIcon, ShoppingBagIcon, TruckIcon, BuildingLibraryIcon, CurrencyDollarIcon, SparklesIcon } from '@heroicons/react/24/solid'
-import states from '@/data/states'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
@@ -19,26 +18,26 @@ export default function NewBedfordMassachusettsVendingLeadsPage() {
   
   // City-specific data
   const cityData = {
-    'name': 'New Bedford',
-    'state': 'Massachusetts',
-    'population': '~102,000',
-    'businesses': '2.3K-3K',
-    'industries': '7-9',
-    'verifiedLocations': '95-190',
-    'rating': '4.7/5',
-    'description': 'Historic seaport with fishing industry and manufacturing'
-  };
+  'name': 'New Bedford',
+  'state': 'Massachusetts',
+  'population': '50K-100K',
+  'businesses': '5K-10K',
+  'industries': '8-12',
+  'verifiedLocations': '100-200',
+  'rating': '4.8/5',
+  'description': 'Thriving business community in Massachusetts'
+};
   
   // Active users counter
-  const [activeUsers, setActiveUsers] = useState(25)
+  const [activeUsers, setActiveUsers] = useState(28)
   const [currentUserIndex, setCurrentUserIndex] = useState(0)
   const [usedNames, setUsedNames] = useState(new Set())
 
   // User names for active users counter
   const [userNames, setUserNames] = useState([
-    'Mike from New', 'Sarah in New', 'David in New', 'Lisa in New',
-    'Tom in New', 'Jennifer in New', 'Robert in New', 'Amanda in New',
-    'Chris in New', 'Maria in New', 'James in New', 'Emily in New'
+    'Mike from New Bedford', 'Sarah in Downtown', 'David in New Bedford', 'Lisa in New Bedford',
+    'Tom in New Bedford', 'Jennifer in New Bedford', 'Robert in New Bedford', 'Amanda in New Bedford',
+    'Chris in New Bedford', 'Maria in New Bedford', 'James in New Bedford', 'Emily in New Bedford'
   ])
 
   // Active users counter effect
@@ -47,7 +46,7 @@ export default function NewBedfordMassachusettsVendingLeadsPage() {
       setActiveUsers(prev => {
         const change = Math.floor(Math.random() * 3) - 1
         const newValue = prev + change
-        return Math.max(20, Math.min(35, newValue))
+        return Math.max(25, Math.min(42, newValue))
       })
     }, 4000);
     return () => clearInterval(interval)
@@ -77,22 +76,6 @@ export default function NewBedfordMassachusettsVendingLeadsPage() {
     }, 5000);
     return () => clearInterval(interval)
   }, [userNames.length, usedNames])
-
-  // Build related New Hampshire cities (for internal linking)
-  const newHampshire = states.find(s => s.slug === 'massachusetts');
-  const relatedCities = newHampshire ? newHampshire.cities.filter(c => c.slug !== 'manchester-massachusetts').slice(0, 8) : [];
-
-  // FAQ items reused for JSON-LD
-  const faqItems = [
-    { q: "What types of vending machine locations are available in New Bedford?", a: "New Bedford offers diverse vending opportunities in fishing industry facilities, manufacturing plants, healthcare centers (St. Luke's Hospital), educational institutions (UMass Dartmouth campus), retail locations, and waterfront businesses." },
-    { q: "How quickly can I get vending machine leads for New Bedford?", a: "Our New Bedford vending leads are delivered within 3-5 business days with detailed information about each location and south coast Massachusetts market insights." },
-    { q: "What makes New Bedford a good market for vending machines?", a: "New Bedford's status as America's top fishing port combined with manufacturing and education creates diverse vending opportunities. The city's maritime heritage and industrial activity ensure year-round business demand." },
-    { q: "Do you provide ongoing support for New Bedford locations?", a: "Yes, we offer complete support including location verification, fishing and manufacturing sector insights, contact information, and placement strategies specific to New Bedford's unique market." },
-    { q: "What industries in New Bedford are best for vending machines?", a: "Fishing industry facilities, manufacturing plants, healthcare centers, and educational institutions show excellent potential due to early-morning operations, shift workers, and student populations." },
-    { q: "How do you verify the quality of New Bedford vending locations?", a: "We verify each location through business research, operational schedule analysis, employee validation, and facility assessment to ensure quality maritime and industrial placements." },
-    { q: "Can I get customized vending leads for specific areas of New Bedford?", a: "Absolutely! We can focus on the working waterfront district, downtown Union Street corridor, or north end industrial zones based on your target market." },
-    { q: "What's the typical ROI for vending machines in New Bedford?", a: "Vending machines in New Bedford typically achieve ROI within 11-15 months, with fishing industry and manufacturing locations often seeing faster returns due to early shifts and premium pricing acceptance." }
-  ];
 
   return (
     <>
@@ -156,7 +139,7 @@ export default function NewBedfordMassachusettsVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Get pre-qualified vending machine locations in Manchester's thriving business and industrial community. 
+                Get pre-qualified vending machine locations in New Bedford's diverse and growing business economy. 
                 Access verified businesses with detailed contact information and placement opportunities.
               </motion.p>
 
@@ -176,7 +159,7 @@ export default function NewBedfordMassachusettsVendingLeadsPage() {
                 <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
                   <div className="flex items-center gap-3">
                     <StarIcon className="h-5 w-5 text-yellow-500" />
-                    <span className="text-sm font-medium text-chocolate">4.7/5 Rating</span>
+                    <span className="text-sm font-medium text-chocolate">4.8/5 Rating</span>
                   </div>
                 </div>
                 <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
@@ -208,10 +191,9 @@ export default function NewBedfordMassachusettsVendingLeadsPage() {
                       }
                     }}
                     className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
-                >
+                  >
                     Get Started
                   </button>
-
               </motion.div>
 
 {/* Social Proof Stats */}
@@ -241,8 +223,6 @@ export default function NewBedfordMassachusettsVendingLeadsPage() {
             </div>
           </div>
         </section>
-
-        
 
         {/* Pricing Section */}
         <section id="pricing" className="py-16 bg-warm-white">
@@ -306,10 +286,10 @@ export default function NewBedfordMassachusettsVendingLeadsPage() {
                 className="bg-blue-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
                 <div className="text-blue-600 mb-4">
-                  <HeartIcon className="w-12 h-12" />
+                  <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Healthcare facilities in Manchester offer stable operations with high foot traffic from patients, visitors, and staff.</p>
+                <p className="text-stone leading-relaxed">New Bedford features modern healthcare facilities including hospitals, clinics, and medical offices with high foot traffic and stable operations.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -323,7 +303,7 @@ export default function NewBedfordMassachusettsVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Educational institutions in Manchester provide consistent student and staff populations for vending machine opportunities.</p>
+                <p className="text-stone leading-relaxed">Educational institutions in New Bedford provide consistent student populations and staff, creating ideal vending machine opportunities.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -337,13 +317,13 @@ export default function NewBedfordMassachusettsVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Manchester's manufacturing sector offers large employee bases and extended operating hours, perfect for vending machine placement.</p>
+                <p className="text-stone leading-relaxed">New Bedford's manufacturing sector offers large employee bases and extended operating hours, perfect for vending machine placement.</p>
               </motion.div>
               <motion.div
                 key="Retail"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.30000000000000004 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
                 viewport={{ once: true }}
                 className="bg-orange-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
@@ -351,7 +331,7 @@ export default function NewBedfordMassachusettsVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Retail locations throughout Manchester provide high customer traffic and diverse demographics for vending machine success.</p>
+                <p className="text-stone leading-relaxed">Retail locations throughout New Bedford provide high customer traffic and diverse demographics for vending machine success.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -365,7 +345,7 @@ export default function NewBedfordMassachusettsVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Professional office spaces in Manchester offer captive audiences during business hours with consistent daily traffic.</p>
+                <p className="text-stone leading-relaxed">Professional office spaces in New Bedford offer captive audiences during business hours with consistent daily traffic.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -379,14 +359,14 @@ export default function NewBedfordMassachusettsVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Manchester's transportation hubs including airports, bus stations, and transit centers provide high-volume foot traffic.</p>
+                <p className="text-stone leading-relaxed">New Bedford's transportation hubs including airports, bus stations, and transit centers provide high-volume foot traffic.</p>
               </motion.div>
             </div>
           </div>
         </section>
 
         {/* Hot Leads Section */}
-        <section id="hot-leads" className="py-16 bg-warm-white">
+        <section id="pricing" className="py-16 bg-warm-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <motion.h2
@@ -440,7 +420,7 @@ export default function NewBedfordMassachusettsVendingLeadsPage() {
         </section>
 
         {/* FAQ Section */}
-        <section id="faq" className="py-16 bg-warm-white">
+        <section id="pricing" className="py-16 bg-warm-white">
           <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <motion.h2
@@ -464,73 +444,103 @@ export default function NewBedfordMassachusettsVendingLeadsPage() {
             </div>
             
             <div className="space-y-6">
-              {faqItems.map((item, idx) => (
-                <motion.div
-                  key={idx}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, delay: idx * 0.1 }}
-                  viewport={{ once: true }}
-                  className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-                >
-                  <h3 className="text-lg font-semibold text-charcoal mb-3">{item.q}</h3>
-                  <p className="text-stone leading-relaxed">{item.a}</p>
-                </motion.div>
-              ))}
+              
+              <motion.div
+                key="0"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+              >
+                <h3 className="text-lg font-semibold text-charcoal mb-3">What types of vending machine locations are available in New Bedford?</h3>
+                <p className="text-stone leading-relaxed">New Bedford offers diverse vending opportunities including healthcare facilities, educational institutions, manufacturing plants, retail locations, office buildings, and transportation hubs. Each location is pre-verified for optimal vending machine success.</p>
+              </motion.div>
+              <motion.div
+                key="1"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.1 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+              >
+                <h3 className="text-lg font-semibold text-charcoal mb-3">How quickly can I get vending machine leads for New Bedford?</h3>
+                <p className="text-stone leading-relaxed">Our New Bedford vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.</p>
+              </motion.div>
+              <motion.div
+                key="2"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+              >
+                <h3 className="text-lg font-semibold text-charcoal mb-3">What makes New Bedford a good market for vending machines?</h3>
+                <p className="text-stone leading-relaxed">New Bedford features a strong business community with diverse industries, stable employment, and consistent foot traffic. The city's economic growth and business-friendly environment create ideal conditions for vending machine success.</p>
+              </motion.div>
+              <motion.div
+                key="3"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+              >
+                <h3 className="text-lg font-semibold text-charcoal mb-3">Do you provide ongoing support for New Bedford locations?</h3>
+                <p className="text-stone leading-relaxed">Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in New Bedford.</p>
+              </motion.div>
+              <motion.div
+                key="4"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+              >
+                <h3 className="text-lg font-semibold text-charcoal mb-3">What industries in New Bedford are best for vending machines?</h3>
+                <p className="text-stone leading-relaxed">Healthcare, education, manufacturing, retail, office buildings, and transportation sectors in New Bedford show the highest potential for vending machine success due to consistent foot traffic and captive audiences.</p>
+              </motion.div>
+              <motion.div
+                key="5"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.5 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+              >
+                <h3 className="text-lg font-semibold text-charcoal mb-3">How do you verify the quality of New Bedford vending locations?</h3>
+                <p className="text-stone leading-relaxed">We conduct thorough research on each New Bedford location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.</p>
+              </motion.div>
+              <motion.div
+                key="6"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+              >
+                <h3 className="text-lg font-semibold text-charcoal mb-3">Can I get customized vending leads for specific areas of New Bedford?</h3>
+                <p className="text-stone leading-relaxed">Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within New Bedford based on your preferences and target market requirements.</p>
+              </motion.div>
+              <motion.div
+                key="7"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.7 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+              >
+                <h3 className="text-lg font-semibold text-charcoal mb-3">What's the typical ROI for vending machines in New Bedford?</h3>
+                <p className="text-stone leading-relaxed">Vending machines in New Bedford typically show strong ROI due to the city's business density and consistent traffic patterns. Our research shows average payback periods of 12-18 months for well-placed machines.</p>
+              </motion.div>
             </div>
           </div>
         </section>
-
-        {/* More cities in New Hampshire */}
-        {relatedCities.length > 0 && (
-          <section className="py-12 bg-white border-t border-gray-200">
-            <div className="mx-auto max-w-7xl px-6">
-              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in New Hampshire</h2>
-              <div className="flex flex-wrap gap-3">
-                {relatedCities.map(city => (
-                  <Link key={city.slug} href={`/vending-leads/${city.slug}`} className="px-3 py-2 rounded-lg border border-gray-200 bg-cream/60 text-chocolate hover:text-navy">
-                    Vending Leads in {city.name}
-                  </Link>
-                ))}
-              </div>
-            </div>
-          </section>
-        )}
 
       </div>
       
       <Footer />
       <ZipCodeModalWrapper />
-      {/* JSON-LD: Breadcrumbs and FAQ */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'BreadcrumbList',
-            itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
-              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/massachusetts' },
-              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-massachusetts' }
-            ]
-          })
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'FAQPage',
-            mainEntity: faqItems.map(i => ({
-              '@type': 'Question',
-              name: i.q,
-              acceptedAnswer: { '@type': 'Answer', text: i.a }
-            }))
-          })
-        }}
-      />
     </>
   )
 }

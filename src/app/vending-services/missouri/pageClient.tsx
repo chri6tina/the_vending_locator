@@ -16,11 +16,12 @@ export default function MissouriVendingServicesPage() {
 
   // Missouri cities with vending services
   const cities = [
-    { name: 'Kansas City', slug: 'kansas-city-missouri' },
-    { name: 'St. Louis', slug: 'st-louis-missouri' },
-    { name: 'Springfield', slug: 'springfield-missouri' },
     { name: 'Columbia', slug: 'columbia-missouri' },
-    { name: 'Independence', slug: 'independence-missouri' }
+    { name: 'Independence', slug: 'independence-missouri' },
+    { name: 'Joplin', slug: 'joplin-missouri' },
+    { name: 'Kansas City', slug: 'kansas-city-missouri' },
+    { name: 'Springfield', slug: 'springfield-missouri' },
+    { name: 'St. Louis', slug: 'st-louis-missouri' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Springfield, Massachusetts - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Springfield, Massachusetts. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Springfield Massachusetts, vending leads Springfield Massachusetts, vending locations Springfield Massachusetts, vending opportunities Springfield Massachusetts",
+  "keywords": "vending machines springfield massachusetts, vending leads springfield massachusetts, vending locations springfield massachusetts, vending opportunities springfield massachusetts",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/springfield-massachusetts"
   },
@@ -32,9 +32,6 @@ export const metadata: Metadata = {
     }
   }
 }
-
-// Enable ISR - regenerate page every hour
-export const revalidate = 3600;
 
 export default function CityPage() {
   return <PageClient />

@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Fall River, Massachusetts - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Fall River, Massachusetts. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Fall River Massachusetts, vending leads Fall River Massachusetts, vending locations Fall River Massachusetts, vending opportunities Fall River Massachusetts",
+  "keywords": "vending machines fall river massachusetts, vending leads fall river massachusetts, vending locations fall river massachusetts, vending opportunities fall river massachusetts",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/fall-river-massachusetts"
   },
@@ -32,9 +32,6 @@ export const metadata: Metadata = {
     }
   }
 }
-
-// Enable ISR - regenerate page every hour
-export const revalidate = 3600;
 
 export default function CityPage() {
   return <PageClient />

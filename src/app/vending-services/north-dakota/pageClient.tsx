@@ -16,8 +16,10 @@ export default function NorthDakotaVendingServicesPage() {
 
   // North Dakota cities with vending services
   const cities = [
+    { name: 'Bismarck', slug: 'bismarck-north-dakota' },
     { name: 'Fargo', slug: 'fargo-north-dakota' },
-    { name: 'Bismarck', slug: 'bismarck-north-dakota' }
+    { name: 'Grand Forks', slug: 'grand-forks-north-dakota' },
+    { name: 'Minot', slug: 'minot-north-dakota' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

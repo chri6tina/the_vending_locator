@@ -16,11 +16,15 @@ export default function NorthCarolinaVendingServicesPage() {
 
   // North Carolina cities with vending services
   const cities = [
+    { name: 'Asheville', slug: 'asheville-north-carolina' },
     { name: 'Cary', slug: 'cary-north-carolina' },
     { name: 'Charlotte', slug: 'charlotte-north-carolina' },
+    { name: 'Concord', slug: 'concord-north-carolina' },
     { name: 'Durham', slug: 'durham-north-carolina' },
     { name: 'Fayetteville', slug: 'fayetteville-north-carolina' },
+    { name: 'Gastonia', slug: 'gastonia-north-carolina' },
     { name: 'Greensboro', slug: 'greensboro-north-carolina' },
+    { name: 'Hickory', slug: 'hickory-north-carolina' },
     { name: 'High Point', slug: 'high-point-north-carolina' },
     { name: 'Raleigh', slug: 'raleigh-north-carolina' },
     { name: 'Wilmington', slug: 'wilmington-north-carolina' },

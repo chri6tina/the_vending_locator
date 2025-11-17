@@ -16,9 +16,10 @@ export default function NebraskaVendingServicesPage() {
 
   // Nebraska cities with vending services
   const cities = [
-    { name: 'Omaha', slug: 'omaha-nebraska' },
+    { name: 'Bellevue', slug: 'bellevue-nebraska' },
+    { name: 'Grand Island', slug: 'grand-island-nebraska' },
     { name: 'Lincoln', slug: 'lincoln-nebraska' },
-    { name: 'Bellevue', slug: 'bellevue-nebraska' }
+    { name: 'Omaha', slug: 'omaha-nebraska' }
   ]
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
