@@ -139,8 +139,7 @@ export default function MaconGeorgiaVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Get pre-qualified vending machine locations in Macon's diverse and growing business economy. 
-                Access verified businesses with detailed contact information and placement opportunities.
+                Get comprehensive vending leads for Macon's thriving Georgia market, combining local businesses, healthcare systems, and educational facilities for reliable vending machine placement.
               </motion.p>
 
               {/* Trust Signals */}
@@ -371,7 +370,35 @@ export default function MaconGeorgiaVendingLeadsPage() {
               </motion.div>
             </div>
           </div>
+        </section>        {/* Why Macon? */}
+        <section className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-8">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-6"
+              >
+                Why Choose Macon for Vending Machines?
+              </motion.h2>
+            </div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
+            >
+              <p className="text-lg text-stone leading-relaxed">
+                Macon offers reliable vending opportunities through its thriving business community, featuring diverse industries, commercial centers, and growing economic sectors. The city's business mix provides stable placement locations with consistent traffic patterns, while Macon's economic activity supports steady consumer spending. The city's combination of established businesses and emerging sectors creates multiple vending placement strategies.
+              </p>
+            </motion.div>
+          </div>
         </section>
+
+
 
         {/* Hot Leads Section */}
         <section id="hot-leads" className="py-16 bg-white">

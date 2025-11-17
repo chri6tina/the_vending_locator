@@ -139,8 +139,7 @@ export default function SanJoseCaliforniaVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Get pre-qualified vending machine locations in San Jose's diverse and growing business economy. 
-                Access verified businesses with detailed contact information and placement opportunities.
+                Access verified vending machine locations in San Jose's thriving metropolitan area, where diverse business districts and high-traffic commercial zones create exceptional opportunities for vending machine placement.
               </motion.p>
 
               {/* Trust Signals */}
@@ -291,7 +290,7 @@ export default function SanJoseCaliforniaVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">San Jose features modern healthcare facilities including hospitals, clinics, and medical offices with high foot traffic and stable operations.</p>
+                <p className="text-stone leading-relaxed">San Jose features modern healthcare facilities including hospitals, medical centers, and clinics with high patient and visitor traffic, creating consistent demand for vending services throughout the day.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -305,7 +304,7 @@ export default function SanJoseCaliforniaVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Educational institutions in San Jose provide consistent student populations and staff, creating ideal vending machine opportunities.</p>
+                <p className="text-stone leading-relaxed">Schools and educational institutions in San Jose offer excellent vending opportunities, with high-traffic areas including cafeterias, libraries, student centers, and athletic facilities.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -319,7 +318,7 @@ export default function SanJoseCaliforniaVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">San Jose's manufacturing sector offers large employee bases and extended operating hours, perfect for vending machine placement.</p>
+                <p className="text-stone leading-relaxed">San Jose's manufacturing sector features production facilities, warehouses, and industrial parks with large employee concentrations, ideal for vending machine services.</p>
               </motion.div>
               <motion.div
                 key="Retail"
@@ -333,7 +332,7 @@ export default function SanJoseCaliforniaVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Retail locations throughout San Jose provide high customer traffic and diverse demographics for vending machine success.</p>
+                <p className="text-stone leading-relaxed">Retail locations throughout San Jose provide high customer traffic and diverse shopping experiences, creating multiple vending opportunities in malls, shopping centers, and retail districts.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -347,7 +346,7 @@ export default function SanJoseCaliforniaVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Professional office spaces in San Jose offer captive audiences during business hours with consistent daily traffic.</p>
+                <p className="text-stone leading-relaxed">Professional office spaces in San Jose house corporate headquarters, business centers, and professional services with captive employee audiences during business hours, creating consistent vending opportunities.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -361,13 +360,41 @@ export default function SanJoseCaliforniaVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">San Jose's transportation hubs including airports, bus stations, and transit centers provide high-volume foot traffic.</p>
+                <p className="text-stone leading-relaxed">San Jose's transportation infrastructure includes major transit hubs and travel facilities with year-round passenger flow, ideal for vending machine services in waiting areas and terminals.</p>
               </motion.div>
             </div>
           </div>
         </section>
 
-        {/* Hot Leads Section */}
+                {/* Why San Jose? */}
+        <section className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-8">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-6"
+              >
+                Why Choose San Jose for Vending Machines?
+              </motion.h2>
+            </div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
+            >
+              <p className="text-lg text-stone leading-relaxed">
+                San Jose stands out as a premier vending market due to its extensive business infrastructure, diverse economic sectors, and high population density. The metropolitan area's concentration of corporate headquarters, retail districts, and commercial zones creates multiple high-traffic placement opportunities. San Jose's robust economy supports consistent consumer spending, while the city's transportation networks ensure steady foot traffic across business districts.
+              </p>
+            </motion.div>
+          </div>
+        </section>
+
+{/* Hot Leads Section */}
         <section id="pricing" className="py-16 bg-warm-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">

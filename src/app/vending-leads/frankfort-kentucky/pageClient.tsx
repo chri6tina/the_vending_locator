@@ -152,8 +152,7 @@ export default function FrankfortKentuckyVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Get pre-qualified vending machine locations in Manchester's thriving business and industrial community. 
-                Access verified businesses with detailed contact information and placement opportunities.
+                Discover pre-qualified vending opportunities in Frankfort's growing economy, featuring business districts, commercial centers, and community facilities with consistent foot traffic.
               </motion.p>
 
               {/* Trust Signals */}
@@ -305,7 +304,7 @@ export default function FrankfortKentuckyVendingLeadsPage() {
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Healthcare facilities in Manchester offer stable operations with high foot traffic from patients, visitors, and staff.</p>
+                <p className="text-stone leading-relaxed">Medical centers and healthcare facilities throughout Frankfort offer excellent vending placement opportunities, with high-traffic areas including waiting rooms, cafeterias, and employee break areas.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -319,7 +318,7 @@ export default function FrankfortKentuckyVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Educational institutions in Manchester provide consistent student and staff populations for vending machine opportunities.</p>
+                <p className="text-stone leading-relaxed">Frankfort's education sector features schools, universities, and training facilities with captive audiences during academic hours, creating reliable vending machine placement opportunities.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -333,7 +332,7 @@ export default function FrankfortKentuckyVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Manchester's manufacturing sector offers large employee bases and extended operating hours, perfect for vending machine placement.</p>
+                <p className="text-stone leading-relaxed">Manufacturing facilities in Frankfort operate around the clock with significant employee populations, providing consistent vending opportunities in break rooms and common areas.</p>
               </motion.div>
               <motion.div
                 key="Retail"
@@ -347,7 +346,7 @@ export default function FrankfortKentuckyVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Retail locations throughout Manchester provide high customer traffic and diverse demographics for vending machine success.</p>
+                <p className="text-stone leading-relaxed">Retail establishments in Frankfort attract diverse customer demographics and generate steady foot traffic, providing reliable vending opportunities across various retail environments.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -361,7 +360,7 @@ export default function FrankfortKentuckyVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Professional office spaces in Manchester offer captive audiences during business hours with consistent daily traffic.</p>
+                <p className="text-stone leading-relaxed">Frankfort's office sector includes business districts, corporate campuses, and professional centers with high employee concentrations, ideal for vending services in common areas and break rooms.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -375,11 +374,39 @@ export default function FrankfortKentuckyVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Manchester's transportation hubs including airports, bus stations, and transit centers provide high-volume foot traffic.</p>
+                <p className="text-stone leading-relaxed">Transportation facilities in Frankfort serve travelers and commuters with consistent foot traffic throughout the day, offering reliable vending opportunities in terminals, waiting areas, and transit stations.</p>
               </motion.div>
             </div>
           </div>
+        </section>        {/* Why Frankfort? */}
+        <section className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-8">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-6"
+              >
+                Why Choose Frankfort for Vending Machines?
+              </motion.h2>
+            </div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
+            >
+              <p className="text-lg text-stone leading-relaxed">
+                Frankfort offers reliable vending opportunities through its thriving business community, featuring diverse industries, commercial centers, and growing economic sectors. The city's business mix provides stable placement locations with consistent traffic patterns, while Frankfort's economic activity supports steady consumer spending. The city's combination of established businesses and emerging sectors creates multiple vending placement strategies.
+              </p>
+            </motion.div>
+          </div>
         </section>
+
+
 
         {/* Hot Leads Section */}
         <section id="hot-leads" className="py-16 bg-warm-white">

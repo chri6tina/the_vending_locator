@@ -139,8 +139,7 @@ export default function PatersonNewJerseyVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Get pre-qualified vending machine locations in Paterson's thriving industrial economy. 
-                Access verified businesses with detailed contact information and placement opportunities in this major New Jersey industrial center.
+                Access verified vending machine locations across Paterson's diverse business community, where local commerce, healthcare facilities, and educational institutions create steady opportunities for vending placement.
               </motion.p>
 
               {/* Trust Signals */}
@@ -290,7 +289,7 @@ export default function PatersonNewJerseyVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Paterson features major manufacturing facilities and industrial plants with large employee bases and extended operating hours, perfect for vending machine placement.</p>
+                <p className="text-stone leading-relaxed">Paterson's manufacturing sector includes industrial facilities and production plants with large employee bases working extended shifts, creating ideal conditions for vending machine placement.</p>
               </motion.div>
               <motion.div
                 key="Healthcare"
@@ -304,7 +303,7 @@ export default function PatersonNewJerseyVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Healthcare facilities in Paterson provide consistent patient and staff traffic, creating stable vending machine opportunities.</p>
+                <p className="text-stone leading-relaxed">Healthcare facilities in Paterson serve large patient populations and employ significant staff numbers, providing stable vending opportunities with extended operating hours and steady foot traffic.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -318,7 +317,7 @@ export default function PatersonNewJerseyVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Educational institutions in Paterson provide consistent student populations and staff, creating ideal vending machine opportunities.</p>
+                <p className="text-stone leading-relaxed">Educational institutions in Paterson provide consistent student and staff populations, with schools, colleges, and universities offering year-round vending opportunities across campus facilities.</p>
               </motion.div>
               <motion.div
                 key="Retail"
@@ -332,7 +331,7 @@ export default function PatersonNewJerseyVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Retail locations throughout Paterson provide high customer traffic and diverse demographics for vending machine success.</p>
+                <p className="text-stone leading-relaxed">Paterson's retail sector features shopping centers, department stores, and specialty shops with consistent customer flow, offering excellent vending machine placement options.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -346,7 +345,7 @@ export default function PatersonNewJerseyVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Paterson's transportation hubs and logistics centers provide high-volume foot traffic and employee bases for vending machines.</p>
+                <p className="text-stone leading-relaxed">Paterson's transportation hubs including airports, transit centers, and transportation facilities provide high-volume passenger traffic, creating exceptional vending machine placement opportunities.</p>
               </motion.div>
               <motion.div
                 key="Government"
@@ -366,7 +365,35 @@ export default function PatersonNewJerseyVendingLeadsPage() {
           </div>
         </section>
 
-        {/* Hot Leads Section */}
+                {/* Why Paterson? */}
+        <section className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-8">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-6"
+              >
+                Why Choose Paterson for Vending Machines?
+              </motion.h2>
+            </div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
+            >
+              <p className="text-lg text-stone leading-relaxed">
+                The Paterson market presents excellent vending potential through its combination of local businesses, healthcare systems, educational facilities, and commercial districts. The city's diverse economy ensures multiple traffic sources, while Paterson's business density creates numerous placement options. The city's economic growth and business-friendly environment support long-term vending success with steady consumer demand.
+              </p>
+            </motion.div>
+          </div>
+        </section>
+
+{/* Hot Leads Section */}
         <section id="pricing" className="py-16 bg-warm-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">

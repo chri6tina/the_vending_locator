@@ -166,8 +166,7 @@ export default function BatonRougeLouisianaVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Get pre-qualified vending machine locations in Baton Rouge's diverse and growing business economy. 
-                Access verified businesses with detailed contact information and placement opportunities.
+                Get comprehensive vending leads for Baton Rouge's thriving Louisiana market, combining local businesses, healthcare systems, and educational facilities for reliable vending machine placement.
               </motion.p>
 
               {/* Trust/Feature Badges */}
@@ -299,7 +298,7 @@ export default function BatonRougeLouisianaVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">{cityDisplayName} features modern healthcare facilities including hospitals, clinics, and medical offices with high foot traffic and stable operations.</p>
+                <p className="text-stone leading-relaxed">Baton Rouge's healthcare sector includes major hospitals, specialty clinics, and medical offices that generate consistent visitor and employee traffic, ideal for vending machine placement.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -313,7 +312,7 @@ export default function BatonRougeLouisianaVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Educational institutions in {cityDisplayName} provide consistent student populations and staff, creating ideal vending machine opportunities.</p>
+                <p className="text-stone leading-relaxed">Educational facilities throughout Baton Rouge serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -327,7 +326,7 @@ export default function BatonRougeLouisianaVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">{cityDisplayName}'s manufacturing sector offers large employee bases and extended operating hours, perfect for vending machine placement.</p>
+                <p className="text-stone leading-relaxed">Industrial and manufacturing operations throughout Baton Rouge employ substantial workforces with shift-based schedules, offering stable vending placement opportunities with steady traffic.</p>
               </motion.div>
               <motion.div
                 key="Retail"
@@ -341,7 +340,7 @@ export default function BatonRougeLouisianaVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Retail locations throughout {cityDisplayName} provide high customer traffic and diverse demographics for vending machine success.</p>
+                <p className="text-stone leading-relaxed">Shopping centers and retail districts in Baton Rouge offer prime vending locations, with high-traffic areas including food courts, entrances, and common spaces frequented by shoppers.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -355,7 +354,7 @@ export default function BatonRougeLouisianaVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Professional office spaces in {cityDisplayName} offer captive audiences during business hours with consistent daily traffic.</p>
+                <p className="text-stone leading-relaxed">Commercial office spaces in Baton Rouge offer excellent vending opportunities, with professional tenants and business operations generating consistent foot traffic throughout the workday.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -369,11 +368,39 @@ export default function BatonRougeLouisianaVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">{cityDisplayName}'s transportation hubs including airports, bus stations, and transit centers provide high-volume foot traffic.</p>
+                <p className="text-stone leading-relaxed">Airports, bus stations, and transit centers throughout Baton Rouge generate steady passenger traffic, providing excellent vending placement options in high-traffic areas frequented by travelers.</p>
               </motion.div>
             </div>
           </div>
+        </section>        {/* Why Baton Rouge? */}
+        <section className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-8">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-6"
+              >
+                Why Choose Baton Rouge for Vending Machines?
+              </motion.h2>
+            </div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
+            >
+              <p className="text-lg text-stone leading-relaxed">
+                Baton Rouge offers reliable vending opportunities through its thriving business community, featuring diverse industries, commercial centers, and growing economic sectors. The city's business mix provides stable placement locations with consistent traffic patterns, while Baton Rouge's economic activity supports steady consumer spending. The city's combination of established businesses and emerging sectors creates multiple vending placement strategies.
+              </p>
+            </motion.div>
+          </div>
         </section>
+
+
 
         {/* Hot Leads Section */}
         <section className="py-16 bg-warm-white">

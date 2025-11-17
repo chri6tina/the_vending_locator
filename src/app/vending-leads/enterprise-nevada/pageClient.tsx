@@ -289,7 +289,7 @@ export default function EnterpriseNevadaVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Enterprise serves the southwest Las Vegas area with modern healthcare facilities including major hospitals, urgent care centers, and medical offices providing consistent vending opportunities.</p>
+                <p className="text-stone leading-relaxed">Medical centers and healthcare facilities throughout Enterprise offer excellent vending placement opportunities, with high-traffic areas including waiting rooms, cafeterias, and employee break areas.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -303,7 +303,7 @@ export default function EnterpriseNevadaVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Educational institutions in Enterprise provide consistent student populations and staff, creating ideal vending machine opportunities.</p>
+                <p className="text-stone leading-relaxed">Enterprise's education sector features schools, universities, and training facilities with captive audiences during academic hours, creating reliable vending machine placement opportunities.</p>
               </motion.div>
               <motion.div
                 key="Hospitality"
@@ -331,7 +331,7 @@ export default function EnterpriseNevadaVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Enterprise features major shopping centers, big-box retailers, and specialty stores along major corridors serving 220,000+ residents with year-round foot traffic.</p>
+                <p className="text-stone leading-relaxed">Retail establishments in Enterprise attract diverse customer demographics and generate steady foot traffic, providing reliable vending opportunities across various retail environments.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -345,7 +345,7 @@ export default function EnterpriseNevadaVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Professional office spaces in Enterprise offer captive audiences during business hours with consistent daily traffic.</p>
+                <p className="text-stone leading-relaxed">Enterprise's office sector includes business districts, corporate campuses, and professional centers with high employee concentrations, ideal for vending services in common areas and break rooms.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -359,13 +359,41 @@ export default function EnterpriseNevadaVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Enterprise's transportation hubs including airports, bus stations, and transit centers provide high-volume foot traffic.</p>
+                <p className="text-stone leading-relaxed">Transportation facilities in Enterprise serve travelers and commuters with consistent foot traffic throughout the day, offering reliable vending opportunities in terminals, waiting areas, and transit stations.</p>
               </motion.div>
             </div>
           </div>
         </section>
 
-        {/* Hot Leads Section */}
+                {/* Why Enterprise? */}
+        <section className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-8">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-6"
+              >
+                Why Choose Enterprise for Vending Machines?
+              </motion.h2>
+            </div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
+            >
+              <p className="text-lg text-stone leading-relaxed">
+                The Enterprise market presents excellent vending potential through its combination of local businesses, healthcare systems, educational facilities, and commercial districts. The city's diverse economy ensures multiple traffic sources, while Enterprise's business density creates numerous placement options. The city's economic growth and business-friendly environment support long-term vending success with steady consumer demand.
+              </p>
+            </motion.div>
+          </div>
+        </section>
+
+{/* Hot Leads Section */}
         <section id="pricing" className="py-16 bg-warm-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">

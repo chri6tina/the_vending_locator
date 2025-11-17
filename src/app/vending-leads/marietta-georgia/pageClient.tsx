@@ -92,8 +92,7 @@ export default function MariettaGeorgiaVendingLeadsPage() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto"
             >
-              Get pre-qualified vending machine locations in {cityDisplayName}'s diverse business community. 
-              Access verified businesses with detailed contact information and placement opportunities.
+              Explore vending machine opportunities throughout Marietta's business network, where diverse industries, commercial zones, and community spaces offer multiple placement options for vending success.
             </motion.p>
             <motion.div 
               initial={{ opacity: 0, y: 20 }}

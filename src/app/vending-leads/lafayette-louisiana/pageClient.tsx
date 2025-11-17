@@ -166,8 +166,7 @@ export default function LafayetteLouisianaVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Get pre-qualified vending machine locations in Lafayette's diverse and growing business economy. 
-                Access verified businesses with detailed contact information and placement opportunities.
+                Explore vending machine opportunities throughout Lafayette's business network, where diverse industries, commercial zones, and community spaces offer multiple placement options for vending success.
               </motion.p>
 
               {/* Trust/Feature Badges */}
@@ -299,7 +298,7 @@ export default function LafayetteLouisianaVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">{cityDisplayName} features modern healthcare facilities including hospitals, clinics, and medical offices with high foot traffic and stable operations.</p>
+                <p className="text-stone leading-relaxed">Lafayette features modern healthcare facilities including hospitals, medical centers, and clinics with high patient and visitor traffic, creating consistent demand for vending services throughout the day.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -313,7 +312,7 @@ export default function LafayetteLouisianaVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Educational institutions in {cityDisplayName} provide consistent student populations and staff, creating ideal vending machine opportunities.</p>
+                <p className="text-stone leading-relaxed">Schools and educational institutions in Lafayette offer excellent vending opportunities, with high-traffic areas including cafeterias, libraries, student centers, and athletic facilities.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -327,7 +326,7 @@ export default function LafayetteLouisianaVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">{cityDisplayName}'s manufacturing sector offers large employee bases and extended operating hours, perfect for vending machine placement.</p>
+                <p className="text-stone leading-relaxed">Lafayette's manufacturing sector features production facilities, warehouses, and industrial parks with large employee concentrations, ideal for vending machine services.</p>
               </motion.div>
               <motion.div
                 key="Retail"
@@ -341,7 +340,7 @@ export default function LafayetteLouisianaVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Retail locations throughout {cityDisplayName} provide high customer traffic and diverse demographics for vending machine success.</p>
+                <p className="text-stone leading-relaxed">Retail locations throughout Lafayette provide high customer traffic and diverse shopping experiences, creating multiple vending opportunities in malls, shopping centers, and retail districts.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -355,7 +354,7 @@ export default function LafayetteLouisianaVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Professional office spaces in {cityDisplayName} offer captive audiences during business hours with consistent daily traffic.</p>
+                <p className="text-stone leading-relaxed">Professional office spaces in Lafayette house corporate headquarters, business centers, and professional services with captive employee audiences during business hours, creating consistent vending opportunities.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -369,11 +368,39 @@ export default function LafayetteLouisianaVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">{cityDisplayName}'s transportation hubs including airports, bus stations, and transit centers provide high-volume foot traffic.</p>
+                <p className="text-stone leading-relaxed">Lafayette's transportation infrastructure includes major transit hubs and travel facilities with year-round passenger flow, ideal for vending machine services in waiting areas and terminals.</p>
               </motion.div>
             </div>
           </div>
+        </section>        {/* Why Lafayette? */}
+        <section className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-8">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-6"
+              >
+                Why Choose Lafayette for Vending Machines?
+              </motion.h2>
+            </div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
+            >
+              <p className="text-lg text-stone leading-relaxed">
+                Lafayette offers strong vending opportunities through its diverse business community, combining local commerce, healthcare facilities, educational institutions, and growing commercial sectors. The city's business mix provides multiple placement options with varying traffic patterns, while Lafayette's economic stability supports consistent consumer demand. The city's combination of established businesses and growing sectors creates reliable vending placement opportunities.
+              </p>
+            </motion.div>
+          </div>
         </section>
+
+
 
         {/* Hot Leads Section */}
         <section className="py-16 bg-warm-white">

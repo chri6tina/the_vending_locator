@@ -139,8 +139,7 @@ export default function ScottsdaleArizonaVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Get pre-qualified vending machine locations in Scottsdale's affluent and thriving business economy. 
-                Access verified businesses with detailed contact information and placement opportunities.
+                Get comprehensive vending leads for Scottsdale's thriving Arizona market, combining local businesses, healthcare systems, and educational facilities for reliable vending machine placement.
               </motion.p>
 
               {/* Trust Signals */}
@@ -304,7 +303,7 @@ export default function ScottsdaleArizonaVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Healthcare facilities in Scottsdale provide consistent patient populations and staff, creating ideal vending machine opportunities.</p>
+                <p className="text-stone leading-relaxed">Scottsdale's healthcare sector includes major hospitals, specialty clinics, and medical offices that generate consistent visitor and employee traffic, ideal for vending machine placement.</p>
               </motion.div>
               <motion.div
                 key="Technology"
@@ -332,7 +331,7 @@ export default function ScottsdaleArizonaVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">High-end retail locations throughout Scottsdale provide affluent customer traffic and diverse demographics for vending machine success.</p>
+                <p className="text-stone leading-relaxed">Shopping centers and retail districts in Scottsdale offer prime vending locations, with high-traffic areas including food courts, entrances, and common spaces frequented by shoppers.</p>
               </motion.div>
               <motion.div
                 key="Real Estate"
@@ -366,7 +365,35 @@ export default function ScottsdaleArizonaVendingLeadsPage() {
           </div>
         </section>
 
-        {/* Hot Leads Section */}
+                {/* Why Scottsdale? */}
+        <section className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-8">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-6"
+              >
+                Why Choose Scottsdale for Vending Machines?
+              </motion.h2>
+            </div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
+            >
+              <p className="text-lg text-stone leading-relaxed">
+                Scottsdale offers reliable vending opportunities through its thriving business community, featuring diverse industries, commercial centers, and growing economic sectors. The city's business mix provides stable placement locations with consistent traffic patterns, while Scottsdale's economic activity supports steady consumer spending. The city's combination of established businesses and emerging sectors creates multiple vending placement strategies.
+              </p>
+            </motion.div>
+          </div>
+        </section>
+
+{/* Hot Leads Section */}
         <section id="pricing" className="py-16 bg-warm-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">

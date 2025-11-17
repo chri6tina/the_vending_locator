@@ -140,8 +140,7 @@ export default function HuntingtonBeachCaliforniaVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Get pre-qualified vending machine locations in Huntington Beach's thriving tourism and business economy. 
-                Access verified businesses with detailed contact information and placement opportunities.
+                Discover pre-qualified vending opportunities in Huntington Beach's growing economy, featuring business districts, commercial centers, and community facilities with consistent foot traffic.
               </motion.p>
 
               {/* Trust Signals */}
@@ -306,7 +305,7 @@ export default function HuntingtonBeachCaliforniaVendingLeadsPage() {
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Medical facilities, dental offices, and healthcare services providing consistent patient and staff traffic.</p>
+                <p className="text-stone leading-relaxed">Medical centers and healthcare facilities throughout Huntington Beach offer excellent vending placement opportunities, with high-traffic areas including waiting rooms, cafeterias, and employee break areas.</p>
               </motion.div>
 
               <motion.div
@@ -321,7 +320,7 @@ export default function HuntingtonBeachCaliforniaVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">School districts, colleges, and educational institutions providing large student populations and consistent foot traffic.</p>
+                <p className="text-stone leading-relaxed">Huntington Beach's education sector features schools, universities, and training facilities with captive audiences during academic hours, creating reliable vending machine placement opportunities.</p>
               </motion.div>
 
               <motion.div
@@ -336,7 +335,7 @@ export default function HuntingtonBeachCaliforniaVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Shopping centers, malls, and retail businesses with high foot traffic and diverse customer bases.</p>
+                <p className="text-stone leading-relaxed">Retail establishments in Huntington Beach attract diverse customer demographics and generate steady foot traffic, providing reliable vending opportunities across various retail environments.</p>
               </motion.div>
 
               <motion.div
@@ -351,7 +350,7 @@ export default function HuntingtonBeachCaliforniaVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Manufacturing facilities and industrial operations providing large employee bases and consistent traffic.</p>
+                <p className="text-stone leading-relaxed">Manufacturing facilities in Huntington Beach operate around the clock with significant employee populations, providing consistent vending opportunities in break rooms and common areas.</p>
               </motion.div>
 
               <motion.div
@@ -370,7 +369,35 @@ export default function HuntingtonBeachCaliforniaVendingLeadsPage() {
               </motion.div>
             </div>
           </div>
+        </section>        {/* Why Huntington Beach? */}
+        <section className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-8">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-6"
+              >
+                Why Choose Huntington Beach for Vending Machines?
+              </motion.h2>
+            </div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
+            >
+              <p className="text-lg text-stone leading-relaxed">
+                Huntington Beach offers strong vending opportunities through its diverse business community, combining local commerce, healthcare facilities, educational institutions, and growing commercial sectors. The city's business mix provides multiple placement options with varying traffic patterns, while Huntington Beach's economic stability supports consistent consumer demand. The city's combination of established businesses and growing sectors creates reliable vending placement opportunities.
+              </p>
+            </motion.div>
+          </div>
         </section>
+
+
 
         {/* Hot Leads Section */}
         <section className="py-16 bg-warm-white">

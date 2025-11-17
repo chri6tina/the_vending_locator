@@ -92,8 +92,7 @@ export default function WarnerRobinsGeorgiaVendingLeadsPage() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto"
             >
-              Get pre-qualified vending machine locations in {cityDisplayName}'s military and business community. 
-              Access verified businesses with detailed contact information and placement opportunities.
+              Access verified vending machine locations across Warner Robins's diverse business community, where local commerce, healthcare facilities, and educational institutions create steady opportunities for vending placement.
             </motion.p>
             <motion.div 
               initial={{ opacity: 0, y: 20 }}

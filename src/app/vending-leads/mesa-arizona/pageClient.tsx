@@ -288,7 +288,7 @@ export default function MesaArizonaVendingLeadsPage() {
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Hospitals and medical centers provide consistent 24/7 traffic and staff populations for vending success.</p>
+                <p className="text-stone leading-relaxed">Mesa's healthcare sector includes major hospitals, specialty clinics, and medical offices that generate consistent visitor and employee traffic, ideal for vending machine placement.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -302,7 +302,7 @@ export default function MesaArizonaVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Colleges, universities, and school systems offer reliable on-campus populations and predictable schedules.</p>
+                <p className="text-stone leading-relaxed">Educational facilities throughout Mesa serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services.</p>
               </motion.div>
               <motion.div
                 key="Logistics"

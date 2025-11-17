@@ -143,8 +143,7 @@ export default function YorkPennsylvaniaVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Get pre-qualified vending machine locations in York's historic and growing business community. 
-                Access verified businesses with detailed contact information and placement opportunities.
+                Discover pre-qualified vending opportunities in York's growing economy, featuring business districts, commercial centers, and community facilities with consistent foot traffic.
               </motion.p>
 
               {/* Trust Signals */}
@@ -218,7 +217,35 @@ export default function YorkPennsylvaniaVendingLeadsPage() {
         </section>
 
         {/* Pricing Table */}
-        <PricingTable />
+        <PricingTable />        {/* Why York? */}
+        <section className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-8">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-6"
+              >
+                Why Choose York for Vending Machines?
+              </motion.h2>
+            </div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
+            >
+              <p className="text-lg text-stone leading-relaxed">
+                The York market presents excellent vending potential through its combination of local businesses, healthcare systems, educational facilities, and commercial districts. The city's diverse economy ensures multiple traffic sources, while York's business density creates numerous placement options. The city's economic growth and business-friendly environment support long-term vending success with steady consumer demand.
+              </p>
+            </motion.div>
+          </div>
+        </section>
+
+
 
         {/* Hot Leads Section */}
         <HotLeads />

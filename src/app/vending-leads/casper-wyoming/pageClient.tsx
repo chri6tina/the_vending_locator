@@ -140,8 +140,7 @@ export default function CasperWyomingVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Get pre-qualified vending machine locations in Casper's thriving energy, healthcare, and business economy. 
-                Access verified businesses with detailed contact information and placement opportunities.
+                Get comprehensive vending leads for Casper's thriving Wyoming market, combining local businesses, healthcare systems, and educational facilities for reliable vending machine placement.
               </motion.p>
 
               {/* Trust Signals */}
@@ -306,7 +305,7 @@ export default function CasperWyomingVendingLeadsPage() {
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Wyoming Medical Center and numerous medical facilities providing consistent patient and staff traffic.</p>
+                <p className="text-stone leading-relaxed">Casper's healthcare sector includes major hospitals, specialty clinics, and medical offices that generate consistent visitor and employee traffic, ideal for vending machine placement.</p>
               </motion.div>
 
               <motion.div
@@ -321,7 +320,7 @@ export default function CasperWyomingVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Casper College and multiple school districts providing large student populations and consistent foot traffic.</p>
+                <p className="text-stone leading-relaxed">Educational facilities throughout Casper serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services.</p>
               </motion.div>
 
               <motion.div
@@ -336,7 +335,7 @@ export default function CasperWyomingVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Manufacturing facilities and industrial operations providing large employee bases and consistent traffic.</p>
+                <p className="text-stone leading-relaxed">Industrial and manufacturing operations throughout Casper employ substantial workforces with shift-based schedules, offering stable vending placement opportunities with steady traffic.</p>
               </motion.div>
 
               <motion.div
@@ -351,7 +350,7 @@ export default function CasperWyomingVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Growing retail sector with shopping centers, restaurants, and professional service businesses with high foot traffic.</p>
+                <p className="text-stone leading-relaxed">Shopping centers and retail districts in Casper offer prime vending locations, with high-traffic areas including food courts, entrances, and common spaces frequented by shoppers.</p>
               </motion.div>
 
               <motion.div
@@ -366,11 +365,39 @@ export default function CasperWyomingVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Casper-Natrona County International Airport and logistics companies providing consistent employee traffic.</p>
+                <p className="text-stone leading-relaxed">Airports, bus stations, and transit centers throughout Casper generate steady passenger traffic, providing excellent vending placement options in high-traffic areas frequented by travelers.</p>
               </motion.div>
             </div>
           </div>
+        </section>        {/* Why Casper? */}
+        <section className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-8">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-6"
+              >
+                Why Choose Casper for Vending Machines?
+              </motion.h2>
+            </div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
+            >
+              <p className="text-lg text-stone leading-relaxed">
+                Casper offers strong vending opportunities through its diverse business community, combining local commerce, healthcare facilities, educational institutions, and growing commercial sectors. The city's business mix provides multiple placement options with varying traffic patterns, while Casper's economic stability supports consistent consumer demand. The city's combination of established businesses and growing sectors creates reliable vending placement opportunities.
+              </p>
+            </motion.div>
+          </div>
         </section>
+
+
 
         {/* Hot Leads Section */}
         <section className="py-16 bg-warm-white">

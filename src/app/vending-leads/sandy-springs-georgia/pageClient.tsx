@@ -92,8 +92,7 @@ export default function SandySpringsGeorgiaVendingLeadsPage() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto"
             >
-              Get pre-qualified vending machine locations in {cityDisplayName}'s affluent business district. 
-              Access verified businesses with detailed contact information and placement opportunities.
+              Discover pre-qualified vending opportunities in Sandy Springs's growing economy, featuring business districts, commercial centers, and community facilities with consistent foot traffic.
             </motion.p>
             <motion.div 
               initial={{ opacity: 0, y: 20 }}

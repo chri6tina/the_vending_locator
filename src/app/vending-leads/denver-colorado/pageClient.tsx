@@ -139,8 +139,7 @@ export default function DenverColoradoVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Get pre-qualified vending machine locations in Denver's diverse and growing business economy. 
-                Access verified businesses with detailed contact information and placement opportunities.
+                Tap into Denver's technology-driven business ecosystem, where corporate campuses, innovation hubs, and modern office complexes create ideal environments for vending machine placement.
               </motion.p>
 
               {/* Trust Signals */}
@@ -291,7 +290,7 @@ export default function DenverColoradoVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Denver features modern healthcare facilities including hospitals, clinics, and medical offices with high foot traffic and stable operations.</p>
+                <p className="text-stone leading-relaxed">Healthcare facilities in Denver serve large patient populations and employ significant staff numbers, providing stable vending opportunities with extended operating hours and steady foot traffic.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -305,7 +304,7 @@ export default function DenverColoradoVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Educational institutions in Denver provide consistent student populations and staff, creating ideal vending machine opportunities.</p>
+                <p className="text-stone leading-relaxed">Educational institutions in Denver provide consistent student and staff populations, with schools, colleges, and universities offering year-round vending opportunities across campus facilities.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -319,7 +318,7 @@ export default function DenverColoradoVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Denver's manufacturing sector offers large employee bases and extended operating hours, perfect for vending machine placement.</p>
+                <p className="text-stone leading-relaxed">Denver's manufacturing sector includes industrial facilities and production plants with large employee bases working extended shifts, creating ideal conditions for vending machine placement.</p>
               </motion.div>
               <motion.div
                 key="Retail"
@@ -333,7 +332,7 @@ export default function DenverColoradoVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Retail locations throughout Denver provide high customer traffic and diverse demographics for vending machine success.</p>
+                <p className="text-stone leading-relaxed">Denver's retail sector features shopping centers, department stores, and specialty shops with consistent customer flow, offering excellent vending machine placement options.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -347,7 +346,7 @@ export default function DenverColoradoVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Professional office spaces in Denver offer captive audiences during business hours with consistent daily traffic.</p>
+                <p className="text-stone leading-relaxed">Office buildings throughout Denver feature corporate tenants, professional firms, and business services with steady daily traffic, providing reliable vending machine placement options.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -361,13 +360,41 @@ export default function DenverColoradoVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Denver's transportation hubs including airports, bus stations, and transit centers provide high-volume foot traffic.</p>
+                <p className="text-stone leading-relaxed">Denver's transportation hubs including airports, transit centers, and transportation facilities provide high-volume passenger traffic, creating exceptional vending machine placement opportunities.</p>
               </motion.div>
             </div>
           </div>
         </section>
 
-        {/* Hot Leads Section */}
+                {/* Why Denver? */}
+        <section className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-8">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-6"
+              >
+                Why Choose Denver for Vending Machines?
+              </motion.h2>
+            </div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
+            >
+              <p className="text-lg text-stone leading-relaxed">
+                Denver offers exceptional vending opportunities through its technology-driven economy, featuring corporate campuses, innovation hubs, and modern office complexes. The city's tech sector attracts highly educated professionals with strong purchasing power, while corporate facilities provide stable, high-traffic placement locations. Denver's reputation as a tech hub supports growing business activity and expanding vending opportunities.
+              </p>
+            </motion.div>
+          </div>
+        </section>
+
+{/* Hot Leads Section */}
         <section id="pricing" className="py-16 bg-warm-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">

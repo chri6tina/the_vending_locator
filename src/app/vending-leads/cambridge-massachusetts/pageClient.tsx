@@ -139,8 +139,7 @@ export default function CambridgeMassachusettsVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Get pre-qualified vending machine locations in Cambridge's diverse and growing business economy. 
-                Access verified businesses with detailed contact information and placement opportunities.
+                Tap into Cambridge's vibrant academic and business community, where university campuses, research facilities, and student-centered businesses offer consistent vending machine opportunities.
               </motion.p>
 
               {/* Trust Signals */}
@@ -291,7 +290,7 @@ export default function CambridgeMassachusettsVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Cambridge features modern healthcare facilities including hospitals, clinics, and medical offices with high foot traffic and stable operations.</p>
+                <p className="text-stone leading-relaxed">Cambridge's healthcare sector includes major hospitals, specialty clinics, and medical offices that generate consistent visitor and employee traffic, ideal for vending machine placement.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -305,7 +304,7 @@ export default function CambridgeMassachusettsVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Educational institutions in Cambridge provide consistent student populations and staff, creating ideal vending machine opportunities.</p>
+                <p className="text-stone leading-relaxed">Educational facilities throughout Cambridge serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -319,7 +318,7 @@ export default function CambridgeMassachusettsVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Cambridge's manufacturing sector offers large employee bases and extended operating hours, perfect for vending machine placement.</p>
+                <p className="text-stone leading-relaxed">Industrial and manufacturing operations throughout Cambridge employ substantial workforces with shift-based schedules, offering stable vending placement opportunities with steady traffic.</p>
               </motion.div>
               <motion.div
                 key="Retail"
@@ -333,7 +332,7 @@ export default function CambridgeMassachusettsVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Retail locations throughout Cambridge provide high customer traffic and diverse demographics for vending machine success.</p>
+                <p className="text-stone leading-relaxed">Shopping centers and retail districts in Cambridge offer prime vending locations, with high-traffic areas including food courts, entrances, and common spaces frequented by shoppers.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -347,7 +346,7 @@ export default function CambridgeMassachusettsVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Professional office spaces in Cambridge offer captive audiences during business hours with consistent daily traffic.</p>
+                <p className="text-stone leading-relaxed">Commercial office spaces in Cambridge offer excellent vending opportunities, with professional tenants and business operations generating consistent foot traffic throughout the workday.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -361,13 +360,41 @@ export default function CambridgeMassachusettsVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Cambridge's transportation hubs including airports, bus stations, and transit centers provide high-volume foot traffic.</p>
+                <p className="text-stone leading-relaxed">Airports, bus stations, and transit centers throughout Cambridge generate steady passenger traffic, providing excellent vending placement options in high-traffic areas frequented by travelers.</p>
               </motion.div>
             </div>
           </div>
         </section>
 
-        {/* Hot Leads Section */}
+                {/* Why Cambridge? */}
+        <section className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-8">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-6"
+              >
+                Why Choose Cambridge for Vending Machines?
+              </motion.h2>
+            </div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
+            >
+              <p className="text-lg text-stone leading-relaxed">
+                Cambridge offers unique vending advantages through its academic community, which provides year-round stable populations and consistent daily traffic patterns. The presence of universities, colleges, and research institutions creates captive audiences with predictable schedules, while campus-adjacent businesses benefit from student and faculty foot traffic. Cambridge's education-focused economy supports steady consumer demand across academic calendars.
+              </p>
+            </motion.div>
+          </div>
+        </section>
+
+{/* Hot Leads Section */}
         <section id="pricing" className="py-16 bg-warm-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">

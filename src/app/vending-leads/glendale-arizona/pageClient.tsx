@@ -271,7 +271,7 @@ export default function GlendaleArizonaVendingLeadsPage() {
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Major medical centers and clinics provide large staff populations and steady foot traffic ideal for vending.</p>
+                <p className="text-stone leading-relaxed">Healthcare facilities in Glendale serve large patient populations and employ significant staff numbers, providing stable vending opportunities with extended operating hours and steady foot traffic.</p>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -284,7 +284,7 @@ export default function GlendaleArizonaVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Universities and schools create predictable demand cycles and captive audiences throughout the year.</p>
+                <p className="text-stone leading-relaxed">Educational institutions in Glendale provide consistent student and staff populations, with schools, colleges, and universities offering year-round vending opportunities across campus facilities.</p>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}

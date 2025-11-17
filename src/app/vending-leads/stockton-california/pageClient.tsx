@@ -140,8 +140,7 @@ export default function StocktonCaliforniaVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Get pre-qualified vending machine locations in Stockton's diverse port economy and agricultural hub. 
-                Access verified businesses with detailed contact information and placement opportunities.
+                Discover pre-qualified vending opportunities in Stockton's growing economy, featuring business districts, commercial centers, and community facilities with consistent foot traffic.
               </motion.p>
 
               {/* Trust Signals */}
@@ -321,7 +320,7 @@ export default function StocktonCaliforniaVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Diverse manufacturing operations including food processing, industrial manufacturing, and automotive with large employee bases.</p>
+                <p className="text-stone leading-relaxed">Manufacturing facilities in Stockton operate around the clock with significant employee populations, providing consistent vending opportunities in break rooms and common areas.</p>
               </motion.div>
 
               <motion.div
@@ -336,7 +335,7 @@ export default function StocktonCaliforniaVendingLeadsPage() {
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">St. Joseph's Medical Center, Dameron Hospital, and numerous medical offices providing consistent patient and staff traffic.</p>
+                <p className="text-stone leading-relaxed">Medical centers and healthcare facilities throughout Stockton offer excellent vending placement opportunities, with high-traffic areas including waiting rooms, cafeterias, and employee break areas.</p>
               </motion.div>
 
               <motion.div
@@ -351,7 +350,7 @@ export default function StocktonCaliforniaVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">University of the Pacific, San Joaquin Delta College, and Stockton Unified School District with large student populations.</p>
+                <p className="text-stone leading-relaxed">Stockton's education sector features schools, universities, and training facilities with captive audiences during academic hours, creating reliable vending machine placement opportunities.</p>
               </motion.div>
 
               <motion.div
@@ -366,11 +365,39 @@ export default function StocktonCaliforniaVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Major retail centers including Weberstown Mall, Sherwood Mall, and numerous shopping districts with high foot traffic.</p>
+                <p className="text-stone leading-relaxed">Retail establishments in Stockton attract diverse customer demographics and generate steady foot traffic, providing reliable vending opportunities across various retail environments.</p>
               </motion.div>
             </div>
           </div>
+        </section>        {/* Why Stockton? */}
+        <section className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-8">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-6"
+              >
+                Why Choose Stockton for Vending Machines?
+              </motion.h2>
+            </div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
+            >
+              <p className="text-lg text-stone leading-relaxed">
+                The Stockton market presents excellent vending potential through its combination of local businesses, healthcare systems, educational facilities, and commercial districts. The city's diverse economy ensures multiple traffic sources, while Stockton's business density creates numerous placement options. The city's economic growth and business-friendly environment support long-term vending success with steady consumer demand.
+              </p>
+            </motion.div>
+          </div>
         </section>
+
+
 
         {/* Hot Leads Section */}
         <section className="py-16 bg-warm-white">

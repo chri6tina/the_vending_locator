@@ -140,8 +140,7 @@ export default function RiversideCaliforniaVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Get pre-qualified vending machine locations in Riverside's thriving healthcare, education, and manufacturing economy. 
-                Access verified businesses with detailed contact information and placement opportunities.
+                Discover pre-qualified vending opportunities in Riverside's growing economy, featuring business districts, commercial centers, and community facilities with consistent foot traffic.
               </motion.p>
 
               {/* Trust Signals */}
@@ -291,7 +290,7 @@ export default function RiversideCaliforniaVendingLeadsPage() {
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Major healthcare hub with Riverside Community Hospital, Kaiser Permanente, and Riverside County Regional Medical Center providing consistent patient and staff traffic.</p>
+                <p className="text-stone leading-relaxed">Medical centers and healthcare facilities throughout Riverside offer excellent vending placement opportunities, with high-traffic areas including waiting rooms, cafeterias, and employee break areas.</p>
               </motion.div>
 
               <motion.div
@@ -306,7 +305,7 @@ export default function RiversideCaliforniaVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">UC Riverside, Riverside City College, and multiple school districts providing large student populations and consistent foot traffic.</p>
+                <p className="text-stone leading-relaxed">Riverside's education sector features schools, universities, and training facilities with captive audiences during academic hours, creating reliable vending machine placement opportunities.</p>
               </motion.div>
 
               <motion.div
@@ -321,7 +320,7 @@ export default function RiversideCaliforniaVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Strategic location with manufacturing facilities, distribution centers, and industrial operations providing large employee bases.</p>
+                <p className="text-stone leading-relaxed">Manufacturing facilities in Riverside operate around the clock with significant employee populations, providing consistent vending opportunities in break rooms and common areas.</p>
               </motion.div>
 
               <motion.div
@@ -336,7 +335,7 @@ export default function RiversideCaliforniaVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Growing retail sector with shopping centers, restaurants, and professional service businesses with high foot traffic.</p>
+                <p className="text-stone leading-relaxed">Retail establishments in Riverside attract diverse customer demographics and generate steady foot traffic, providing reliable vending opportunities across various retail environments.</p>
               </motion.div>
 
               <motion.div
@@ -351,7 +350,7 @@ export default function RiversideCaliforniaVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Strategic location near major transportation corridors with logistics companies and distribution centers providing consistent employee traffic.</p>
+                <p className="text-stone leading-relaxed">Transportation facilities in Riverside serve travelers and commuters with consistent foot traffic throughout the day, offering reliable vending opportunities in terminals, waiting areas, and transit stations.</p>
               </motion.div>
 
               <motion.div
@@ -370,7 +369,35 @@ export default function RiversideCaliforniaVendingLeadsPage() {
               </motion.div>
             </div>
           </div>
+        </section>        {/* Why Riverside? */}
+        <section className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-8">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-6"
+              >
+                Why Choose Riverside for Vending Machines?
+              </motion.h2>
+            </div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
+            >
+              <p className="text-lg text-stone leading-relaxed">
+                Riverside offers reliable vending opportunities through its thriving business community, featuring diverse industries, commercial centers, and growing economic sectors. The city's business mix provides stable placement locations with consistent traffic patterns, while Riverside's economic activity supports steady consumer spending. The city's combination of established businesses and emerging sectors creates multiple vending placement strategies.
+              </p>
+            </motion.div>
+          </div>
         </section>
+
+
 
         {/* Hot Leads Section */}
         <section className="py-16 bg-warm-white">

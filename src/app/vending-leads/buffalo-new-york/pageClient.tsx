@@ -139,8 +139,7 @@ export default function BuffaloNewYorkVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Get pre-qualified vending machine locations in Buffalo's revitalized city with diverse business economy. 
-                Access verified businesses with detailed contact information and placement opportunities.
+                Access verified vending locations across Buffalo's manufacturing and commercial districts, featuring industrial facilities, distribution centers, and business parks with consistent foot traffic.
               </motion.p>
 
               {/* Trust Signals */}
@@ -290,7 +289,7 @@ export default function BuffaloNewYorkVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Buffalo features modern healthcare facilities including hospitals, clinics, and medical offices with high foot traffic and stable operations.</p>
+                <p className="text-stone leading-relaxed">Buffalo features modern healthcare facilities including hospitals, medical centers, and clinics with high patient and visitor traffic, creating consistent demand for vending services throughout the day.</p>
               </motion.div>
 
               <motion.div
@@ -305,7 +304,7 @@ export default function BuffaloNewYorkVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Strong manufacturing sector with industrial facilities, warehouses, and production plants providing consistent employee traffic.</p>
+                <p className="text-stone leading-relaxed">Buffalo's manufacturing sector features production facilities, warehouses, and industrial parks with large employee concentrations, ideal for vending machine services.</p>
               </motion.div>
 
               <motion.div
@@ -320,7 +319,7 @@ export default function BuffaloNewYorkVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Vibrant educational sector with universities, colleges, and schools offering high student and staff traffic opportunities.</p>
+                <p className="text-stone leading-relaxed">Schools and educational institutions in Buffalo offer excellent vending opportunities, with high-traffic areas including cafeterias, libraries, student centers, and athletic facilities.</p>
               </motion.div>
 
               <motion.div
@@ -350,7 +349,7 @@ export default function BuffaloNewYorkVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Diverse retail sector with shopping centers, malls, and commercial districts creating modern customer environments.</p>
+                <p className="text-stone leading-relaxed">Retail locations throughout Buffalo provide high customer traffic and diverse shopping experiences, creating multiple vending opportunities in malls, shopping centers, and retail districts.</p>
               </motion.div>
 
               <motion.div
@@ -365,11 +364,39 @@ export default function BuffaloNewYorkVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Transportation hubs, logistics centers, and distribution facilities with high employee traffic and operational stability.</p>
+                <p className="text-stone leading-relaxed">Buffalo's transportation infrastructure includes major transit hubs and travel facilities with year-round passenger flow, ideal for vending machine services in waiting areas and terminals.</p>
               </motion.div>
             </div>
           </div>
+        </section>        {/* Why Buffalo? */}
+        <section className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-8">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-6"
+              >
+                Why Choose Buffalo for Vending Machines?
+              </motion.h2>
+            </div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
+            >
+              <p className="text-lg text-stone leading-relaxed">
+                The Buffalo market excels for vending due to its robust industrial base, featuring manufacturing operations, logistics centers, and commercial facilities with substantial employee populations. Industrial districts and business parks offer prime placement locations with predictable traffic, while the city's manufacturing sector supports stable employment and consistent consumer demand. Buffalo's industrial infrastructure creates multiple high-traffic vending opportunities.
+              </p>
+            </motion.div>
+          </div>
         </section>
+
+
 
         {/* Hot Leads Section */}
         <section className="py-16 bg-warm-white">

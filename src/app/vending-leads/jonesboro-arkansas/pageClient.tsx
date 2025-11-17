@@ -157,8 +157,7 @@ export default function JonesboroArkansasVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Get pre-qualified vending machine locations in {cityDisplayName}'s thriving business community. 
-                Access verified businesses with detailed contact information and placement opportunities.
+                Discover pre-qualified vending opportunities in Jonesboro's growing economy, featuring business districts, commercial centers, and community facilities with consistent foot traffic.
               </motion.p>
 
               {/* Trust Signals */}
@@ -307,7 +306,7 @@ export default function JonesboroArkansasVendingLeadsPage() {
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Healthcare facilities in {cityDisplayName} offer stable operations with high foot traffic from patients, visitors, and staff.</p>
+                <p className="text-stone leading-relaxed">Medical centers and healthcare facilities throughout Jonesboro offer excellent vending placement opportunities, with high-traffic areas including waiting rooms, cafeterias, and employee break areas.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -321,7 +320,7 @@ export default function JonesboroArkansasVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Educational institutions in {cityDisplayName} provide consistent student and staff populations for vending machine opportunities.</p>
+                <p className="text-stone leading-relaxed">Jonesboro's education sector features schools, universities, and training facilities with captive audiences during academic hours, creating reliable vending machine placement opportunities.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -335,7 +334,7 @@ export default function JonesboroArkansasVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">{cityDisplayName}'s manufacturing sector offers large employee bases and extended operating hours, perfect for vending machine placement.</p>
+                <p className="text-stone leading-relaxed">Manufacturing facilities in Jonesboro operate around the clock with significant employee populations, providing consistent vending opportunities in break rooms and common areas.</p>
               </motion.div>
               <motion.div
                 key="Retail"
@@ -349,7 +348,7 @@ export default function JonesboroArkansasVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Retail locations throughout {cityDisplayName} provide high customer traffic and diverse demographics for vending machine success.</p>
+                <p className="text-stone leading-relaxed">Retail establishments in Jonesboro attract diverse customer demographics and generate steady foot traffic, providing reliable vending opportunities across various retail environments.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -363,7 +362,7 @@ export default function JonesboroArkansasVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Professional office spaces in {cityDisplayName} offer captive audiences during business hours with consistent daily traffic.</p>
+                <p className="text-stone leading-relaxed">Jonesboro's office sector includes business districts, corporate campuses, and professional centers with high employee concentrations, ideal for vending services in common areas and break rooms.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -377,11 +376,39 @@ export default function JonesboroArkansasVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">{cityDisplayName}'s transportation hubs including airports, bus stations, and transit centers provide high-volume foot traffic.</p>
+                <p className="text-stone leading-relaxed">Transportation facilities in Jonesboro serve travelers and commuters with consistent foot traffic throughout the day, offering reliable vending opportunities in terminals, waiting areas, and transit stations.</p>
               </motion.div>
             </div>
           </div>
+        </section>        {/* Why Jonesboro? */}
+        <section className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-8">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-6"
+              >
+                Why Choose Jonesboro for Vending Machines?
+              </motion.h2>
+            </div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
+            >
+              <p className="text-lg text-stone leading-relaxed">
+                Jonesboro offers strong vending opportunities through its diverse business community, combining local commerce, healthcare facilities, educational institutions, and growing commercial sectors. The city's business mix provides multiple placement options with varying traffic patterns, while Jonesboro's economic stability supports consistent consumer demand. The city's combination of established businesses and growing sectors creates reliable vending placement opportunities.
+              </p>
+            </motion.div>
+          </div>
         </section>
+
+
 
         {/* Hot Leads Section */}
         <section id="hot-leads" className="py-16 bg-warm-white">

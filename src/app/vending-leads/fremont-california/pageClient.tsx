@@ -140,8 +140,7 @@ export default function FremontCaliforniaVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Get pre-qualified vending machine locations in Fremont's thriving Silicon Valley economy. 
-                Access verified businesses with detailed contact information and placement opportunities.
+                Explore vending machine opportunities throughout Fremont's business network, where diverse industries, commercial zones, and community spaces offer multiple placement options for vending success.
               </motion.p>
 
               {/* Trust Signals */}
@@ -306,7 +305,7 @@ export default function FremontCaliforniaVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Major manufacturing facilities including Tesla's Fremont Factory and numerous industrial operations with large employee bases.</p>
+                <p className="text-stone leading-relaxed">Fremont's manufacturing sector features production facilities, warehouses, and industrial parks with large employee concentrations, ideal for vending machine services.</p>
               </motion.div>
 
               <motion.div
@@ -321,7 +320,7 @@ export default function FremontCaliforniaVendingLeadsPage() {
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Washington Hospital, Kaiser Permanente, and numerous medical facilities providing consistent patient and staff traffic.</p>
+                <p className="text-stone leading-relaxed">Fremont features modern healthcare facilities including hospitals, medical centers, and clinics with high patient and visitor traffic, creating consistent demand for vending services throughout the day.</p>
               </motion.div>
 
               <motion.div
@@ -336,7 +335,7 @@ export default function FremontCaliforniaVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Fremont Unified School District, Ohlone College, and numerous educational institutions with large student populations.</p>
+                <p className="text-stone leading-relaxed">Schools and educational institutions in Fremont offer excellent vending opportunities, with high-traffic areas including cafeterias, libraries, student centers, and athletic facilities.</p>
               </motion.div>
 
               <motion.div
@@ -351,7 +350,7 @@ export default function FremontCaliforniaVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Major retail centers including Pacific Commons, Fremont Hub, and numerous shopping districts with high foot traffic.</p>
+                <p className="text-stone leading-relaxed">Retail locations throughout Fremont provide high customer traffic and diverse shopping experiences, creating multiple vending opportunities in malls, shopping centers, and retail districts.</p>
               </motion.div>
 
               <motion.div
@@ -366,11 +365,39 @@ export default function FremontCaliforniaVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Strategic location with BART stations, major highways, and logistics companies providing consistent employee traffic.</p>
+                <p className="text-stone leading-relaxed">Fremont's transportation infrastructure includes major transit hubs and travel facilities with year-round passenger flow, ideal for vending machine services in waiting areas and terminals.</p>
               </motion.div>
             </div>
           </div>
+        </section>        {/* Why Fremont? */}
+        <section className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-8">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-6"
+              >
+                Why Choose Fremont for Vending Machines?
+              </motion.h2>
+            </div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
+            >
+              <p className="text-lg text-stone leading-relaxed">
+                Fremont offers reliable vending opportunities through its thriving business community, featuring diverse industries, commercial centers, and growing economic sectors. The city's business mix provides stable placement locations with consistent traffic patterns, while Fremont's economic activity supports steady consumer spending. The city's combination of established businesses and emerging sectors creates multiple vending placement strategies.
+              </p>
+            </motion.div>
+          </div>
         </section>
+
+
 
         {/* Hot Leads Section */}
         <section className="py-16 bg-warm-white">

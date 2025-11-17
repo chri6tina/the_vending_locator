@@ -157,8 +157,7 @@ export default function PortlandMaineVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Get pre-qualified vending machine locations in {cityDisplayName}'s thriving business community. 
-                Access verified businesses with detailed contact information and placement opportunities.
+                Get comprehensive vending leads for Portland's thriving coastal market, combining tourism-driven businesses, local commerce, and residential areas for consistent vending success.
               </motion.p>
 
               {/* Trust Signals */}
@@ -307,7 +306,7 @@ export default function PortlandMaineVendingLeadsPage() {
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Healthcare facilities in {cityDisplayName} offer stable operations with high foot traffic from patients, visitors, and staff.</p>
+                <p className="text-stone leading-relaxed">Healthcare facilities in Portland serve large patient populations and employ significant staff numbers, providing stable vending opportunities with extended operating hours and steady foot traffic.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -321,7 +320,7 @@ export default function PortlandMaineVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Educational institutions in {cityDisplayName} provide consistent student and staff populations for vending machine opportunities.</p>
+                <p className="text-stone leading-relaxed">Educational institutions in Portland provide consistent student and staff populations, with schools, colleges, and universities offering year-round vending opportunities across campus facilities.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -335,7 +334,7 @@ export default function PortlandMaineVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">{cityDisplayName}'s manufacturing sector offers large employee bases and extended operating hours, perfect for vending machine placement.</p>
+                <p className="text-stone leading-relaxed">Portland's manufacturing sector includes industrial facilities and production plants with large employee bases working extended shifts, creating ideal conditions for vending machine placement.</p>
               </motion.div>
               <motion.div
                 key="Retail"
@@ -349,7 +348,7 @@ export default function PortlandMaineVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Retail locations throughout {cityDisplayName} provide high customer traffic and diverse demographics for vending machine success.</p>
+                <p className="text-stone leading-relaxed">Portland's retail sector features shopping centers, department stores, and specialty shops with consistent customer flow, offering excellent vending machine placement options.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -363,7 +362,7 @@ export default function PortlandMaineVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Professional office spaces in {cityDisplayName} offer captive audiences during business hours with consistent daily traffic.</p>
+                <p className="text-stone leading-relaxed">Office buildings throughout Portland feature corporate tenants, professional firms, and business services with steady daily traffic, providing reliable vending machine placement options.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -377,11 +376,39 @@ export default function PortlandMaineVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">{cityDisplayName}'s transportation hubs including airports, bus stations, and transit centers provide high-volume foot traffic.</p>
+                <p className="text-stone leading-relaxed">Portland's transportation hubs including airports, transit centers, and transportation facilities provide high-volume passenger traffic, creating exceptional vending machine placement opportunities.</p>
               </motion.div>
             </div>
           </div>
+        </section>        {/* Why Portland? */}
+        <section className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-8">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-6"
+              >
+                Why Choose Portland for Vending Machines?
+              </motion.h2>
+            </div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
+            >
+              <p className="text-lg text-stone leading-relaxed">
+                Portland presents strong vending potential through its thriving coastal economy, featuring tourism-driven businesses, hospitality venues, and growing commercial districts. The city's attractive location supports year-round visitor traffic, while local businesses and residential areas provide consistent daily demand. Portland's diverse economic base ensures multiple placement options with varying traffic patterns and consumer demographics.
+              </p>
+            </motion.div>
+          </div>
         </section>
+
+
 
         {/* Hot Leads Section */}
         <section id="hot-leads" className="py-16 bg-warm-white">

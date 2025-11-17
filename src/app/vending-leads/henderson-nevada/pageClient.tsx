@@ -116,7 +116,7 @@ export default function HendersonNevadaVendingLeadsPage() {
               <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.2 }} viewport={{ once: true }} className="bg-indigo-50 p-6 rounded-lg border border-gray-100 shadow-sm hover:shadow-md">
                 <div className="text-indigo-600 mb-4"><AcademicCapIcon className="w-12 h-12" /></div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Campuses and schools with consistent student and staff populations.</p>
+                <p className="text-stone leading-relaxed">Educational facilities throughout Henderson serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services.</p>
               </motion.div>
               <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.3 }} viewport={{ once: true }} className="bg-purple-50 p-6 rounded-lg border border-gray-100 shadow-sm hover:shadow-md">
                 <div className="text-purple-600 mb-4"><CurrencyDollarIcon className="w-12 h-12" /></div>

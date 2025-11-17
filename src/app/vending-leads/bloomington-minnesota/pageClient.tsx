@@ -156,8 +156,7 @@ export default function BloomingtonMinnesotaVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Get pre-qualified vending machine locations in Manchester's thriving business and industrial community. 
-                Access verified businesses with detailed contact information and placement opportunities.
+                Discover pre-qualified vending opportunities in Bloomington, where academic institutions, student housing, and campus-adjacent businesses create steady demand for vending machine services.
               </motion.p>
 
               {/* Trust Signals */}
@@ -309,7 +308,7 @@ export default function BloomingtonMinnesotaVendingLeadsPage() {
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Healthcare facilities in Manchester offer stable operations with high foot traffic from patients, visitors, and staff.</p>
+                <p className="text-stone leading-relaxed">Healthcare facilities in Bloomington serve large patient populations and employ significant staff numbers, providing stable vending opportunities with extended operating hours and steady foot traffic.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -323,7 +322,7 @@ export default function BloomingtonMinnesotaVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Educational institutions in Manchester provide consistent student and staff populations for vending machine opportunities.</p>
+                <p className="text-stone leading-relaxed">Educational institutions in Bloomington provide consistent student and staff populations, with schools, colleges, and universities offering year-round vending opportunities across campus facilities.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -337,7 +336,7 @@ export default function BloomingtonMinnesotaVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Manchester's manufacturing sector offers large employee bases and extended operating hours, perfect for vending machine placement.</p>
+                <p className="text-stone leading-relaxed">Bloomington's manufacturing sector includes industrial facilities and production plants with large employee bases working extended shifts, creating ideal conditions for vending machine placement.</p>
               </motion.div>
               <motion.div
                 key="Retail"
@@ -351,7 +350,7 @@ export default function BloomingtonMinnesotaVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Retail locations throughout Manchester provide high customer traffic and diverse demographics for vending machine success.</p>
+                <p className="text-stone leading-relaxed">Bloomington's retail sector features shopping centers, department stores, and specialty shops with consistent customer flow, offering excellent vending machine placement options.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -365,7 +364,7 @@ export default function BloomingtonMinnesotaVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Professional office spaces in Manchester offer captive audiences during business hours with consistent daily traffic.</p>
+                <p className="text-stone leading-relaxed">Office buildings throughout Bloomington feature corporate tenants, professional firms, and business services with steady daily traffic, providing reliable vending machine placement options.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -379,11 +378,39 @@ export default function BloomingtonMinnesotaVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Manchester's transportation hubs including airports, bus stations, and transit centers provide high-volume foot traffic.</p>
+                <p className="text-stone leading-relaxed">Bloomington's transportation hubs including airports, transit centers, and transportation facilities provide high-volume passenger traffic, creating exceptional vending machine placement opportunities.</p>
               </motion.div>
             </div>
           </div>
+        </section>        {/* Why Bloomington? */}
+        <section className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-8">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-6"
+              >
+                Why Choose Bloomington for Vending Machines?
+              </motion.h2>
+            </div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
+            >
+              <p className="text-lg text-stone leading-relaxed">
+                Bloomington presents strong vending potential through its combination of educational institutions, tech companies, and growing commercial sectors. The academic community provides stable, predictable traffic, while university partnerships with local businesses create additional placement opportunities. Bloomington's educated population and research-focused economy support diverse vending product demand and higher spending capacity.
+              </p>
+            </motion.div>
+          </div>
         </section>
+
+
 
         {/* Hot Leads Section */}
         <section id="hot-leads" className="py-16 bg-warm-white">
