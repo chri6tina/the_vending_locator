@@ -837,43 +837,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }).filter(Boolean) as MetadataRoute.Sitemap
   )
 
-  // Also include any city pages that exist on the filesystem but aren't listed in states.ts yet
-  // This ensures newly added pages are automatically included in the sitemap
-  // Optimized: Only check directories that match city patterns to reduce memory usage
-  const stateSlugs = new Set(states.map(s => s.slug))
-  const filesystemCityPages: MetadataRoute.Sitemap = (() => {
-    try {
-      const dirs = fs.readdirSync(leadsDir, { withFileTypes: true })
-        .filter(d => d.isDirectory())
-        .map(d => d.name)
-        .filter((dir) => {
-          // Quick filter: must contain a hyphen (city-state pattern)
-          if (!dir.includes('-')) return false
-          return true
-        })
-      
-      // Batch check page.tsx existence to reduce memory pressure
-      return dirs
-        .filter((dir) => {
-          // Only check if it ends with a known state slug
-          for (const state of states) {
-            if (dir !== state.slug && dir.endsWith(state.slug)) {
-              return fs.existsSync(path.join(leadsDir, dir, 'page.tsx'))
-            }
-          }
-          return false
-        })
-        .map((slug) => ({
-          url: `https://www.thevendinglocator.com/vending-leads/${slug}`,
-          lastModified: new Date(),
-          changeFrequency: 'weekly' as const,
-          priority: 0.8,
-        }))
-    } catch (error) {
-      // If filesystem read fails, return empty array
-      return []
-    }
-  })()
+  // Skip filesystem checks during build to reduce memory usage
+  // Rely on states.ts and generatedCityPages instead
+  // Filesystem checks can be done at runtime if needed
+  const filesystemCityPages: MetadataRoute.Sitemap = []
 
   // Generate haha-coolers city pages dynamically from states
   // Only include URLs where a matching page file actually exists
@@ -891,44 +858,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }).filter(Boolean) as MetadataRoute.Sitemap
   )
 
-  // Also include any cooler city pages that exist on the filesystem but aren't listed in states.ts yet
-  // Optimized: Only check directories that match city patterns to reduce memory usage
-  const filesystemCoolerCityPages: MetadataRoute.Sitemap = (() => {
-    try {
-      const dirs = fs.readdirSync(coolersDir, { withFileTypes: true })
-        .filter(d => d.isDirectory())
-        .map(d => d.name)
-        .filter((dir) => {
-          // Quick filter: must contain a hyphen (city-state pattern)
-          if (!dir.includes('-')) return false
-          // Exclude product directories
-          const productDirs = ['mini', 'pro', 'ultra']
-          if (productDirs.includes(dir)) return false
-          return true
-        })
-      
-      // Batch check page.tsx existence to reduce memory pressure
-      return dirs
-        .filter((dir) => {
-          // Only check if it ends with a known state slug
-          for (const state of states) {
-            if (dir !== state.slug && dir.endsWith(state.slug)) {
-              return fs.existsSync(path.join(coolersDir, dir, 'page.tsx'))
-            }
-          }
-          return false
-        })
-        .map((slug) => ({
-          url: `https://www.thevendinglocator.com/haha-coolers/${slug}`,
-          lastModified: new Date(),
-          changeFrequency: 'weekly' as const,
-          priority: 0.8,
-        }))
-    } catch (error) {
-      // If filesystem read fails, return empty array
-      return []
-    }
-  })()
+  // Skip filesystem checks during build to reduce memory usage
+  // Rely on states.ts and generatedCoolerCityPages instead
+  // Filesystem checks can be done at runtime if needed
+  const filesystemCoolerCityPages: MetadataRoute.Sitemap = []
 
   // State pages - All 50 states
   const statePages = [
