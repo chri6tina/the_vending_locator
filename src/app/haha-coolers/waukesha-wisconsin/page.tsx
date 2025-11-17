@@ -1,0 +1,22 @@
+import { Metadata } from 'next';
+import PageClient from './pageClient';
+
+export const metadata: Metadata = {
+  title: 'Haha Smart Coolers in Waukesha, Wisconsin | Grab & Go Vending',
+  description: 'Discover Haha smart coolers in Waukesha, Wisconsin. Revolutionary grab & go technology with 99% accurate checkout, cashless payments, and remote management. Perfect for Waukesha businesses.',
+  keywords: 'haha coolers Waukesha, smart vending Waukesha Wisconsin, grab and go cooler Waukesha, cashless vending Waukesha',
+  openGraph: {
+    title: 'Haha Smart Coolers in Waukesha, Wisconsin',
+    description: 'Revolutionary grab & go vending technology for Waukesha businesses',
+    url: 'https://www.thevendinglocator.com/haha-coolers/waukesha-wisconsin',
+    siteName: 'The Vending Locator',
+    type: 'website',
+  },
+  alternates: {
+    canonical: 'https://www.thevendinglocator.com/haha-coolers/waukesha-wisconsin',
+  },
+};
+
+export default function WaukeshaWisconsinCoolerPageMetadata() {
+  return <PageClient />;
+}

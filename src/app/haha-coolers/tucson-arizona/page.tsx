@@ -1,0 +1,22 @@
+import { Metadata } from 'next';
+import PageClient from './pageClient';
+
+export const metadata: Metadata = {
+  title: 'Haha Smart Coolers in Tucson, Arizona | Grab & Go Vending',
+  description: 'Discover Haha smart coolers in Tucson, Arizona. Revolutionary grab & go technology with 99% accurate checkout, cashless payments, and remote management. Perfect for Tucson businesses.',
+  keywords: 'haha coolers Tucson, smart vending Tucson Arizona, grab and go cooler Tucson, cashless vending Tucson',
+  openGraph: {
+    title: 'Haha Smart Coolers in Tucson, Arizona',
+    description: 'Revolutionary grab & go vending technology for Tucson businesses',
+    url: 'https://www.thevendinglocator.com/haha-coolers/tucson-arizona',
+    siteName: 'The Vending Locator',
+    type: 'website',
+  },
+  alternates: {
+    canonical: 'https://www.thevendinglocator.com/haha-coolers/tucson-arizona',
+  },
+};
+
+export default function TucsonArizonaCoolerPageMetadata() {
+  return <PageClient />;
+}

@@ -1,0 +1,22 @@
+import { Metadata } from 'next';
+import PageClient from './pageClient';
+
+export const metadata: Metadata = {
+  title: 'Haha Smart Coolers in Clovis, New Mexico | Grab & Go Vending',
+  description: 'Discover Haha smart coolers in Clovis, New Mexico. Revolutionary grab & go technology with 99% accurate checkout, cashless payments, and remote management. Perfect for Clovis businesses.',
+  keywords: 'haha coolers Clovis, smart vending Clovis New Mexico, grab and go cooler Clovis, cashless vending Clovis',
+  openGraph: {
+    title: 'Haha Smart Coolers in Clovis, New Mexico',
+    description: 'Revolutionary grab & go vending technology for Clovis businesses',
+    url: 'https://www.thevendinglocator.com/haha-coolers/clovis-new-mexico',
+    siteName: 'The Vending Locator',
+    type: 'website',
+  },
+  alternates: {
+    canonical: 'https://www.thevendinglocator.com/haha-coolers/clovis-new-mexico',
+  },
+};
+
+export default function ClovisNewMexicoCoolerPageMetadata() {
+  return <PageClient />;
+}

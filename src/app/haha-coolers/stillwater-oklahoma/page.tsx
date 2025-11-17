@@ -1,0 +1,22 @@
+import { Metadata } from 'next';
+import PageClient from './pageClient';
+
+export const metadata: Metadata = {
+  title: 'Haha Smart Coolers in Stillwater, Oklahoma | Grab & Go Vending',
+  description: 'Discover Haha smart coolers in Stillwater, Oklahoma. Revolutionary grab & go technology with 99% accurate checkout, cashless payments, and remote management. Perfect for Stillwater businesses.',
+  keywords: 'haha coolers Stillwater, smart vending Stillwater Oklahoma, grab and go cooler Stillwater, cashless vending Stillwater',
+  openGraph: {
+    title: 'Haha Smart Coolers in Stillwater, Oklahoma',
+    description: 'Revolutionary grab & go vending technology for Stillwater businesses',
+    url: 'https://www.thevendinglocator.com/haha-coolers/stillwater-oklahoma',
+    siteName: 'The Vending Locator',
+    type: 'website',
+  },
+  alternates: {
+    canonical: 'https://www.thevendinglocator.com/haha-coolers/stillwater-oklahoma',
+  },
+};
+
+export default function StillwaterOklahomaCoolerPageMetadata() {
+  return <PageClient />;
+}

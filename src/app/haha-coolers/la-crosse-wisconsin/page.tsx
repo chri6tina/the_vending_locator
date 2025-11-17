@@ -1,0 +1,22 @@
+import { Metadata } from 'next';
+import PageClient from './pageClient';
+
+export const metadata: Metadata = {
+  title: 'Haha Smart Coolers in La Crosse, Wisconsin | Grab & Go Vending',
+  description: 'Discover Haha smart coolers in La Crosse, Wisconsin. Revolutionary grab & go technology with 99% accurate checkout, cashless payments, and remote management. Perfect for La Crosse businesses.',
+  keywords: 'haha coolers La Crosse, smart vending La Crosse Wisconsin, grab and go cooler La Crosse, cashless vending La Crosse',
+  openGraph: {
+    title: 'Haha Smart Coolers in La Crosse, Wisconsin',
+    description: 'Revolutionary grab & go vending technology for La Crosse businesses',
+    url: 'https://www.thevendinglocator.com/haha-coolers/la-crosse-wisconsin',
+    siteName: 'The Vending Locator',
+    type: 'website',
+  },
+  alternates: {
+    canonical: 'https://www.thevendinglocator.com/haha-coolers/la-crosse-wisconsin',
+  },
+};
+
+export default function LaCrosseWisconsinCoolerPageMetadata() {
+  return <PageClient />;
+}

@@ -1,0 +1,22 @@
+import { Metadata } from 'next';
+import PageClient from './pageClient';
+
+export const metadata: Metadata = {
+  title: 'Haha Smart Coolers in Decatur, Alabama | Grab & Go Vending',
+  description: 'Discover Haha smart coolers in Decatur, Alabama. Revolutionary grab & go technology with 99% accurate checkout, cashless payments, and remote management. Perfect for Decatur businesses.',
+  keywords: 'haha coolers Decatur, smart vending Decatur Alabama, grab and go cooler Decatur, cashless vending Decatur',
+  openGraph: {
+    title: 'Haha Smart Coolers in Decatur, Alabama',
+    description: 'Revolutionary grab & go vending technology for Decatur businesses',
+    url: 'https://www.thevendinglocator.com/haha-coolers/decatur-alabama',
+    siteName: 'The Vending Locator',
+    type: 'website',
+  },
+  alternates: {
+    canonical: 'https://www.thevendinglocator.com/haha-coolers/decatur-alabama',
+  },
+};
+
+export default function DecaturAlabamaCoolerPageMetadata() {
+  return <PageClient />;
+}

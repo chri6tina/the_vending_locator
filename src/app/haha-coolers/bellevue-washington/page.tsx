@@ -1,0 +1,22 @@
+import { Metadata } from 'next';
+import PageClient from './pageClient';
+
+export const metadata: Metadata = {
+  title: 'Haha Smart Coolers in Bellevue, Washington | Grab & Go Vending',
+  description: 'Discover Haha smart coolers in Bellevue, Washington. Revolutionary grab & go technology with 99% accurate checkout, cashless payments, and remote management. Perfect for Bellevue businesses.',
+  keywords: 'haha coolers Bellevue, smart vending Bellevue Washington, grab and go cooler Bellevue, cashless vending Bellevue',
+  openGraph: {
+    title: 'Haha Smart Coolers in Bellevue, Washington',
+    description: 'Revolutionary grab & go vending technology for Bellevue businesses',
+    url: 'https://www.thevendinglocator.com/haha-coolers/bellevue-washington',
+    siteName: 'The Vending Locator',
+    type: 'website',
+  },
+  alternates: {
+    canonical: 'https://www.thevendinglocator.com/haha-coolers/bellevue-washington',
+  },
+};
+
+export default function BellevueWashingtonCoolerPageMetadata() {
+  return <PageClient />;
+}

@@ -1,0 +1,22 @@
+import { Metadata } from 'next';
+import PageClient from './pageClient';
+
+export const metadata: Metadata = {
+  title: 'Haha Smart Coolers in New York, New York | Grab & Go Vending',
+  description: 'Discover Haha smart coolers in New York, New York. Revolutionary grab & go technology with 99% accurate checkout, cashless payments, and remote management. Perfect for New York businesses.',
+  keywords: 'haha coolers New York, smart vending New York New York, grab and go cooler New York, cashless vending New York',
+  openGraph: {
+    title: 'Haha Smart Coolers in New York, New York',
+    description: 'Revolutionary grab & go vending technology for New York businesses',
+    url: 'https://www.thevendinglocator.com/haha-coolers/new-york-new-york',
+    siteName: 'The Vending Locator',
+    type: 'website',
+  },
+  alternates: {
+    canonical: 'https://www.thevendinglocator.com/haha-coolers/new-york-new-york',
+  },
+};
+
+export default function NewYorkNewYorkCoolerPageMetadata() {
+  return <PageClient />;
+}
