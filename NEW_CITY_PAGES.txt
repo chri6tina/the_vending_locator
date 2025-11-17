@@ -153,3 +153,13 @@ src/app/vending-leads/concord-north-carolina/page.tsx
 src/app/vending-leads/gastonia-north-carolina/page.tsx
 src/app/vending-leads/asheville-north-carolina/page.tsx
 src/app/vending-leads/harrisburg-pennsylvania/page.tsx
+src/app/vending-leads/port-orange-florida/page.tsx
+src/app/vending-leads/sanford-florida/page.tsx
+src/app/vending-leads/ocala-florida/page.tsx
+src/app/vending-leads/melbourne-florida/page.tsx
+src/app/vending-leads/palm-harbor-florida/page.tsx
+src/app/vending-leads/hamilton-ohio/page.tsx
+src/app/vending-leads/lima-ohio/page.tsx
+src/app/vending-leads/elyria-ohio/page.tsx
+src/app/vending-leads/layton-utah/page.tsx
+src/app/vending-leads/taylorsville-utah/page.tsx

@@ -1,0 +1,135 @@
+{
+  "totalChecked": 327,
+  "existing": 317,
+  "missing": 10,
+  "missingCities": [
+    {
+      "name": "Port Orange",
+      "slug": "port-orange-florida",
+      "state": "Florida",
+      "pop": "65K+"
+    },
+    {
+      "name": "Sanford",
+      "slug": "sanford-florida",
+      "state": "Florida",
+      "pop": "60K+"
+    },
+    {
+      "name": "Ocala",
+      "slug": "ocala-florida",
+      "state": "Florida",
+      "pop": "65K+"
+    },
+    {
+      "name": "Melbourne",
+      "slug": "melbourne-florida",
+      "state": "Florida",
+      "pop": "85K+"
+    },
+    {
+      "name": "Palm Harbor",
+      "slug": "palm-harbor-florida",
+      "state": "Florida",
+      "pop": "60K+"
+    },
+    {
+      "name": "Hamilton",
+      "slug": "hamilton-ohio",
+      "state": "Ohio",
+      "pop": "65K+"
+    },
+    {
+      "name": "Lima",
+      "slug": "lima-ohio",
+      "state": "Ohio",
+      "pop": "35K+"
+    },
+    {
+      "name": "Elyria",
+      "slug": "elyria-ohio",
+      "state": "Ohio",
+      "pop": "55K+"
+    },
+    {
+      "name": "Layton",
+      "slug": "layton-utah",
+      "state": "Utah",
+      "pop": "85K+"
+    },
+    {
+      "name": "Taylorsville",
+      "slug": "taylorsville-utah",
+      "state": "Utah",
+      "pop": "60K+"
+    }
+  ],
+  "missingByState": {
+    "Florida": [
+      {
+        "name": "Port Orange",
+        "slug": "port-orange-florida",
+        "state": "Florida",
+        "pop": "65K+"
+      },
+      {
+        "name": "Sanford",
+        "slug": "sanford-florida",
+        "state": "Florida",
+        "pop": "60K+"
+      },
+      {
+        "name": "Ocala",
+        "slug": "ocala-florida",
+        "state": "Florida",
+        "pop": "65K+"
+      },
+      {
+        "name": "Melbourne",
+        "slug": "melbourne-florida",
+        "state": "Florida",
+        "pop": "85K+"
+      },
+      {
+        "name": "Palm Harbor",
+        "slug": "palm-harbor-florida",
+        "state": "Florida",
+        "pop": "60K+"
+      }
+    ],
+    "Ohio": [
+      {
+        "name": "Hamilton",
+        "slug": "hamilton-ohio",
+        "state": "Ohio",
+        "pop": "65K+"
+      },
+      {
+        "name": "Lima",
+        "slug": "lima-ohio",
+        "state": "Ohio",
+        "pop": "35K+"
+      },
+      {
+        "name": "Elyria",
+        "slug": "elyria-ohio",
+        "state": "Ohio",
+        "pop": "55K+"
+      }
+    ],
+    "Utah": [
+      {
+        "name": "Layton",
+        "slug": "layton-utah",
+        "state": "Utah",
+        "pop": "85K+"
+      },
+      {
+        "name": "Taylorsville",
+        "slug": "taylorsville-utah",
+        "state": "Utah",
+        "pop": "60K+"
+      }
+    ]
+  }
+}
