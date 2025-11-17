@@ -22,11 +22,8 @@ const nextConfig = {
     cpus: 1,
   },
   // Optimize static generation to reduce memory usage
-  output: 'standalone',
-  // Reduce memory during static page generation
-  generateBuildId: async () => {
-    return 'build-' + Date.now()
-  },
+  // Use on-demand ISR for city pages to avoid building all at once
+  // This reduces memory pressure during build
   // Ensure proper handling of dynamic routes
   trailingSlash: false,
   // Redirects for SEO preservation
