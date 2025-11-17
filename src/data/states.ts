@@ -17,7 +17,11 @@ const states: State[] = [
       { name: 'Mobile', slug: 'mobile-alabama' },
       { name: 'Montgomery', slug: 'montgomery-alabama' },
       { name: 'Tuscaloosa', slug: 'tuscaloosa-alabama' }
-    ]
+    ,
+      { name: 'Prattville', slug: 'prattville-alabama' },
+      { name: 'Opelika', slug: 'opelika-alabama' },
+      { name: 'Bessemer', slug: 'bessemer-alabama' },
+      { name: 'Prichard', slug: 'prichard-alabama' }]
   },
   {
     name: 'Alaska',
@@ -60,7 +64,12 @@ const states: State[] = [
       { name: 'Tucson', slug: 'tucson-arizona' },
       { name: 'Flagstaff', slug: 'flagstaff-arizona' },
       { name: 'Yuma', slug: 'yuma-arizona' }
-    ]
+    ,
+      { name: 'Apache Junction', slug: 'apache-junction-arizona' },
+      { name: 'Bullhead City', slug: 'bullhead-city-arizona' },
+      { name: 'Lake Havasu City', slug: 'lake-havasu-city-arizona' },
+      { name: 'Nogales', slug: 'nogales-arizona' },
+      { name: 'Sahuarita', slug: 'sahuarita-arizona' }]
   },
   {
     name: 'Arkansas',
@@ -77,7 +86,12 @@ const states: State[] = [
       { name: 'Pine Bluff', slug: 'pine-bluff-arkansas' },
       { name: 'Rogers', slug: 'rogers-arkansas' },
       { name: 'Springdale', slug: 'springdale-arkansas' }
-    ]
+    ,
+      { name: 'Texarkana', slug: 'texarkana-arkansas' },
+      { name: 'West Memphis', slug: 'west-memphis-arkansas' },
+      { name: 'Paragould', slug: 'paragould-arkansas' },
+      { name: 'Cabot', slug: 'cabot-arkansas' },
+      { name: 'Searcy', slug: 'searcy-arkansas' }]
   },
   {
     name: 'California',
@@ -174,7 +188,145 @@ const states: State[] = [
       { name: 'San Angelo', slug: 'san-angelo-california' },
       { name: 'South Gate', slug: 'south-gate-california' },
       { name: 'Vista', slug: 'vista-california' }
-    ]
+    ,
+      { name: 'Baldwin Park', slug: 'baldwin-park-california' },
+      { name: 'Bellflower', slug: 'bellflower-california' },
+      { name: 'Citrus Heights', slug: 'citrus-heights-california' },
+      { name: 'Cypress', slug: 'cypress-california' },
+      { name: 'Diamond Bar', slug: 'diamond-bar-california' },
+      { name: 'East Los Angeles', slug: 'east-los-angeles-california' },
+      { name: 'El Centro', slug: 'el-centro-california' },
+      { name: 'Hanford', slug: 'hanford-california' },
+      { name: 'Hemet', slug: 'hemet-california' },
+      { name: 'Hesperia', slug: 'hesperia-california' },
+      { name: 'Indio', slug: 'indio-california' },
+      { name: 'La Habra', slug: 'la-habra-california' },
+      { name: 'La Mesa', slug: 'la-mesa-california' },
+      { name: 'La Puente', slug: 'la-puente-california' },
+      { name: 'Lodi', slug: 'lodi-california' },
+      { name: 'Madera', slug: 'madera-california' },
+      { name: 'Menifee', slug: 'menifee-california' },
+      { name: 'Monterey Park', slug: 'monterey-park-california' },
+      { name: 'National City', slug: 'national-city-california' },
+      { name: 'Petaluma', slug: 'petaluma-california' },
+      { name: 'Redwood City', slug: 'redwood-city-california' },
+      { name: 'San Leandro', slug: 'san-leandro-california' },
+      { name: 'San Rafael', slug: 'san-rafael-california' },
+      { name: 'Santa Monica', slug: 'santa-monica-california' },
+      { name: 'Tulare', slug: 'tulare-california' },
+      { name: 'Turlock', slug: 'turlock-california' },
+      { name: 'Union City', slug: 'union-city-california' },
+      { name: 'Watsonville', slug: 'watsonville-california' },
+      { name: 'Westminster', slug: 'westminster-california' },
+      { name: 'Alameda', slug: 'alameda-california' },
+      { name: 'Arcadia', slug: 'arcadia-california' },
+      { name: 'Arvin', slug: 'arvin-california' },
+      { name: 'Atascadero', slug: 'atascadero-california' },
+      { name: 'Azusa', slug: 'azusa-california' },
+      { name: 'Banning', slug: 'banning-california' },
+      { name: 'Barstow', slug: 'barstow-california' },
+      { name: 'Beaumont', slug: 'beaumont-california' },
+      { name: 'Bell Gardens', slug: 'bell-gardens-california' },
+      { name: 'Brawley', slug: 'brawley-california' },
+      { name: 'Buena Park', slug: 'buena-park-california' },
+      { name: 'Calexico', slug: 'calexico-california' },
+      { name: 'Calimesa', slug: 'calimesa-california' },
+      { name: 'Camarillo', slug: 'camarillo-california' },
+      { name: 'Ceres', slug: 'ceres-california' },
+      { name: 'Chino Hills', slug: 'chino-hills-california' },
+      { name: 'Coachella', slug: 'coachella-california' },
+      { name: 'Coronado', slug: 'coronado-california' },
+      { name: 'Cudahy', slug: 'cudahy-california' },
+      { name: 'Culver City', slug: 'culver-city-california' },
+      { name: 'Delano', slug: 'delano-california' },
+      { name: 'Dinuba', slug: 'dinuba-california' },
+      { name: 'El Cerrito', slug: 'el-cerrito-california' },
+      { name: 'El Segundo', slug: 'el-segundo-california' },
+      { name: 'Emeryville', slug: 'emeryville-california' },
+      { name: 'Encinitas', slug: 'encinitas-california' },
+      { name: 'Folsom', slug: 'folsom-california' },
+      { name: 'Fountain Valley', slug: 'fountain-valley-california' },
+      { name: 'Glendora', slug: 'glendora-california' },
+      { name: 'Goleta', slug: 'goleta-california' },
+      { name: 'Hawaiian Gardens', slug: 'hawaiian-gardens-california' },
+      { name: 'Hercules', slug: 'hercules-california' },
+      { name: 'Huntington Park', slug: 'huntington-park-california' },
+      { name: 'Imperial Beach', slug: 'imperial-beach-california' },
+      { name: 'La Canada Flintridge', slug: 'la-canada-flintridge-california' },
+      { name: 'La Mirada', slug: 'la-mirada-california' },
+      { name: 'La Quinta', slug: 'la-quinta-california' },
+      { name: 'Laguna Beach', slug: 'laguna-beach-california' },
+      { name: 'Laguna Hills', slug: 'laguna-hills-california' },
+      { name: 'Laguna Niguel', slug: 'laguna-niguel-california' },
+      { name: 'Lake Elsinore', slug: 'lake-elsinore-california' },
+      { name: 'Larkspur', slug: 'larkspur-california' },
+      { name: 'Lemon Grove', slug: 'lemon-grove-california' },
+      { name: 'Lomita', slug: 'lomita-california' },
+      { name: 'Los Gatos', slug: 'los-gatos-california' },
+      { name: 'Lynwood', slug: 'lynwood-california' },
+      { name: 'Manhattan Beach', slug: 'manhattan-beach-california' },
+      { name: 'Millbrae', slug: 'millbrae-california' },
+      { name: 'Mill Valley', slug: 'mill-valley-california' },
+      { name: 'Monrovia', slug: 'monrovia-california' },
+      { name: 'Montclair', slug: 'montclair-california' },
+      { name: 'Morgan Hill', slug: 'morgan-hill-california' },
+      { name: 'Newark', slug: 'newark-california' },
+      { name: 'Oakdale', slug: 'oakdale-california' },
+      { name: 'Pacifica', slug: 'pacifica-california' },
+      { name: 'Palo Alto', slug: 'palo-alto-california' },
+      { name: 'Paramount', slug: 'paramount-california' },
+      { name: 'Pico Rivera', slug: 'pico-rivera-california' },
+      { name: 'Pittsburg', slug: 'pittsburg-california' },
+      { name: 'Placentia', slug: 'placentia-california' },
+      { name: 'Pleasanton', slug: 'pleasanton-california' },
+      { name: 'Poway', slug: 'poway-california' },
+      { name: 'Rancho Palos Verdes', slug: 'rancho-palos-verdes-california' },
+      { name: 'Redondo Beach', slug: 'redondo-beach-california' },
+      { name: 'Reedley', slug: 'reedley-california' },
+      { name: 'Ridgecrest', slug: 'ridgecrest-california' },
+      { name: 'Rio Vista', slug: 'rio-vista-california' },
+      { name: 'Rohnert Park', slug: 'rohnert-park-california' },
+      { name: 'Rosemead', slug: 'rosemead-california' },
+      { name: 'San Bruno', slug: 'san-bruno-california' },
+      { name: 'San Carlos', slug: 'san-carlos-california' },
+      { name: 'San Fernando', slug: 'san-fernando-california' },
+      { name: 'San Gabriel', slug: 'san-gabriel-california' },
+      { name: 'San Jacinto', slug: 'san-jacinto-california' },
+      { name: 'San Luis Obispo', slug: 'san-luis-obispo-california' },
+      { name: 'San Pablo', slug: 'san-pablo-california' },
+      { name: 'San Ramon', slug: 'san-ramon-california' },
+      { name: 'Sanger', slug: 'sanger-california' },
+      { name: 'Santa Cruz', slug: 'santa-cruz-california' },
+      { name: 'Santa Paula', slug: 'santa-paula-california' },
+      { name: 'Saratoga', slug: 'saratoga-california' },
+      { name: 'Seal Beach', slug: 'seal-beach-california' },
+      { name: 'Selma', slug: 'selma-california' },
+      { name: 'Signal Hill', slug: 'signal-hill-california' },
+      { name: 'Solana Beach', slug: 'solana-beach-california' },
+      { name: 'Soledad', slug: 'soledad-california' },
+      { name: 'Sonoma', slug: 'sonoma-california' },
+      { name: 'South El Monte', slug: 'south-el-monte-california' },
+      { name: 'South Pasadena', slug: 'south-pasadena-california' },
+      { name: 'South San Francisco', slug: 'south-san-francisco-california' },
+      { name: 'Suisun City', slug: 'suisun-city-california' },
+      { name: 'Temple City', slug: 'temple-city-california' },
+      { name: 'Tiburon', slug: 'tiburon-california' },
+      { name: 'Tracy', slug: 'tracy-california' },
+      { name: 'Tustin', slug: 'tustin-california' },
+      { name: 'Ukiah', slug: 'ukiah-california' },
+      { name: 'Upland', slug: 'upland-california' },
+      { name: 'Walnut', slug: 'walnut-california' },
+      { name: 'Walnut Creek', slug: 'walnut-creek-california' },
+      { name: 'Wasco', slug: 'wasco-california' },
+      { name: 'West Hollywood', slug: 'west-hollywood-california' },
+      { name: 'Wheatland', slug: 'wheatland-california' },
+      { name: 'Willows', slug: 'willows-california' },
+      { name: 'Windsor', slug: 'windsor-california' },
+      { name: 'Woodland', slug: 'woodland-california' },
+      { name: 'Yorba Linda', slug: 'yorba-linda-california' },
+      { name: 'Yuba City', slug: 'yuba-city-california' },
+      { name: 'Yucaipa', slug: 'yucaipa-california' },
+      { name: 'Yucca Valley', slug: 'yucca-valley-california' }]
   },
   {
     name: 'Colorado',
@@ -193,7 +345,12 @@ const states: State[] = [
       { name: 'Pueblo', slug: 'pueblo-colorado' },
       { name: 'Thornton', slug: 'thornton-colorado' },
       { name: 'Westminster', slug: 'westminster-colorado' }
-    ]
+    ,
+      { name: 'Broomfield', slug: 'broomfield-colorado' },
+      { name: 'Castle Rock', slug: 'castle-rock-colorado' },
+      { name: 'Commerce City', slug: 'commerce-city-colorado' },
+      { name: 'Loveland', slug: 'loveland-colorado' },
+      { name: 'Parker', slug: 'parker-colorado' }]
   },
   {
     name: 'Connecticut',
@@ -207,7 +364,12 @@ const states: State[] = [
       { name: 'Norwalk', slug: 'norwalk-connecticut' },
       { name: 'Stamford', slug: 'stamford-connecticut' },
       { name: 'Waterbury', slug: 'waterbury-connecticut' }
-    ]
+    ,
+      { name: 'Bristol', slug: 'bristol-connecticut' },
+      { name: 'Enfield', slug: 'enfield-connecticut' },
+      { name: 'Hamden', slug: 'hamden-connecticut' },
+      { name: 'Meriden', slug: 'meriden-connecticut' },
+      { name: 'West Haven', slug: 'west-haven-connecticut' }]
   },
   {
     name: 'Delaware',
@@ -284,7 +446,31 @@ const states: State[] = [
       { name: 'Tampa', slug: 'tampa-florida' },
       { name: 'Wellington', slug: 'wellington-florida' },
       { name: 'West Palm Beach', slug: 'west-palm-beach-florida' }
-    ]
+    ,
+      { name: 'Aventura', slug: 'aventura-florida' },
+      { name: 'Casselberry', slug: 'casselberry-florida' },
+      { name: 'Coral Gables', slug: 'coral-gables-florida' },
+      { name: 'Deerfield Beach', slug: 'deerfield-beach-florida' },
+      { name: 'Dunedin', slug: 'dunedin-florida' },
+      { name: 'Edgewater', slug: 'edgewater-florida' },
+      { name: 'Fort Pierce', slug: 'fort-pierce-florida' },
+      { name: 'Hialeah Gardens', slug: 'hialeah-gardens-florida' },
+      { name: 'Key West', slug: 'key-west-florida' },
+      { name: 'Lake Worth', slug: 'lake-worth-florida' },
+      { name: 'Lehigh Acres', slug: 'lehigh-acres-florida' },
+      { name: 'Miami Beach', slug: 'miami-beach-florida' },
+      { name: 'Miami Gardens', slug: 'miami-gardens-florida' },
+      { name: 'Orange Park', slug: 'orange-park-florida' },
+      { name: 'Panama City', slug: 'panama-city-florida' },
+      { name: 'Port St. Lucie', slug: 'port-st.-lucie-florida' },
+      { name: 'Sebastian', slug: 'sebastian-florida' },
+      { name: 'St. Petersburg', slug: 'st.-petersburg-florida' },
+      { name: 'Tarpon Springs', slug: 'tarpon-springs-florida' },
+      { name: 'Titusville', slug: 'titusville-florida' },
+      { name: 'Venice', slug: 'venice-florida' },
+      { name: 'Winter Haven', slug: 'winter-haven-florida' },
+      { name: 'Winter Park', slug: 'winter-park-florida' },
+      { name: 'Winter Springs', slug: 'winter-springs-florida' }]
   },
   {
     name: 'Georgia',
@@ -302,7 +488,25 @@ const states: State[] = [
       { name: 'Savannah', slug: 'savannah-georgia' },
       { name: 'Valdosta', slug: 'valdosta-georgia' },
       { name: 'Warner Robins', slug: 'warner-robins-georgia' }
-    ]
+    ,
+      { name: 'Alpharetta', slug: 'alpharetta-georgia' },
+      { name: 'Americus', slug: 'americus-georgia' },
+      { name: 'Brunswick', slug: 'brunswick-georgia' },
+      { name: 'Dalton', slug: 'dalton-georgia' },
+      { name: 'Douglas', slug: 'douglas-georgia' },
+      { name: 'Douglasville', slug: 'douglasville-georgia' },
+      { name: 'Dublin', slug: 'dublin-georgia' },
+      { name: 'Gainesville', slug: 'gainesville-georgia' },
+      { name: 'Griffin', slug: 'griffin-georgia' },
+      { name: 'Kennesaw', slug: 'kennesaw-georgia' },
+      { name: 'LaGrange', slug: 'lagrange-georgia' },
+      { name: 'Milledgeville', slug: 'milledgeville-georgia' },
+      { name: 'Newnan', slug: 'newnan-georgia' },
+      { name: 'Rome', slug: 'rome-georgia' },
+      { name: 'Smyrna', slug: 'smyrna-georgia' },
+      { name: 'Statesboro', slug: 'statesboro-georgia' },
+      { name: 'Thomasville', slug: 'thomasville-georgia' },
+      { name: 'Waycross', slug: 'waycross-georgia' }]
   },
   {
     name: 'Hawaii',
@@ -368,7 +572,18 @@ const states: State[] = [
       { name: 'Tinley Park', slug: 'tinley-park-illinois' },
       { name: 'Waukegan', slug: 'waukegan-illinois' },
       { name: 'Wheaton', slug: 'wheaton-illinois' }
-    ]
+    ,
+      { name: 'Addison', slug: 'addison-illinois' },
+      { name: 'Bartlett', slug: 'bartlett-illinois' },
+      { name: 'Buffalo Grove', slug: 'buffalo-grove-illinois' },
+      { name: 'Carpentersville', slug: 'carpentersville-illinois' },
+      { name: 'Crystal Lake', slug: 'crystal-lake-illinois' },
+      { name: 'Elmhurst', slug: 'elmhurst-illinois' },
+      { name: 'Hoffman Estates', slug: 'hoffman-estates-illinois' },
+      { name: 'Normal', slug: 'normal-illinois' },
+      { name: 'Park Ridge', slug: 'park-ridge-illinois' },
+      { name: 'Rolling Meadows', slug: 'rolling-meadows-illinois' },
+      { name: 'Wheeling', slug: 'wheeling-illinois' }]
   },
   {
     name: 'Indiana',
@@ -386,7 +601,9 @@ const states: State[] = [
       { name: 'Muncie', slug: 'muncie-indiana' },
       { name: 'South Bend', slug: 'south-bend-indiana' },
       { name: 'Terre Haute', slug: 'terre-haute-indiana' }
-    ]
+    ,
+      { name: 'Elkhart', slug: 'elkhart-indiana' },
+      { name: 'Lafayette', slug: 'lafayette-indiana' }]
   },
   {
     name: 'Iowa',
@@ -400,7 +617,9 @@ const states: State[] = [
       { name: 'Iowa City', slug: 'iowa-city-iowa' },
       { name: 'Sioux City', slug: 'sioux-city-iowa' },
       { name: 'Waterloo', slug: 'waterloo-iowa' }
-    ]
+    ,
+      { name: 'Council Bluffs', slug: 'council-bluffs-iowa' },
+      { name: 'West Des Moines', slug: 'west-des-moines-iowa' }]
   },
   {
     name: 'Kansas',
@@ -417,7 +636,8 @@ const states: State[] = [
       { name: 'Hutchinson', slug: 'hutchinson-kansas' },
       { name: 'Leavenworth', slug: 'leavenworth-kansas' },
       { name: 'Salina', slug: 'salina-kansas' }
-    ]
+    ,
+      { name: 'Lenexa', slug: 'lenexa-kansas' }]
   },
   {
     name: 'Kentucky',
@@ -434,7 +654,12 @@ const states: State[] = [
       { name: 'Owensboro', slug: 'owensboro-kentucky' },
       { name: 'Paducah', slug: 'paducah-kentucky' },
       { name: 'Richmond', slug: 'richmond-kentucky' }
-    ]
+    ,
+      { name: 'Ashland', slug: 'ashland-kentucky' },
+      { name: 'Elizabethtown', slug: 'elizabethtown-kentucky' },
+      { name: 'Madisonville', slug: 'madisonville-kentucky' },
+      { name: 'Murray', slug: 'murray-kentucky' },
+      { name: 'Newport', slug: 'newport-kentucky' }]
   },
   {
     name: 'Louisiana',
@@ -452,7 +677,14 @@ const states: State[] = [
       { name: 'New Orleans', slug: 'new-orleans-louisiana' },
       { name: 'Shreveport', slug: 'shreveport-louisiana' },
       { name: 'Slidell', slug: 'slidell-louisiana' }
-    ]
+    ,
+      { name: 'Gretna', slug: 'gretna-louisiana' },
+      { name: 'Hammond', slug: 'hammond-louisiana' },
+      { name: 'Laplace', slug: 'laplace-louisiana' },
+      { name: 'Marrero', slug: 'marrero-louisiana' },
+      { name: 'Opelousas', slug: 'opelousas-louisiana' },
+      { name: 'Ruston', slug: 'ruston-louisiana' },
+      { name: 'Sulphur', slug: 'sulphur-louisiana' }]
   },
   {
     name: 'Maine',
@@ -481,7 +713,15 @@ const states: State[] = [
       { name: 'Hagerstown', slug: 'hagerstown-maryland' },
       { name: 'Rockville', slug: 'rockville-maryland' },
       { name: 'Silver Spring', slug: 'silver-spring-maryland' }
-    ]
+    ,
+      { name: 'Bethesda', slug: 'bethesda-maryland' },
+      { name: 'Bowie', slug: 'bowie-maryland' },
+      { name: 'College Park', slug: 'college-park-maryland' },
+      { name: 'Germantown', slug: 'germantown-maryland' },
+      { name: 'Laurel', slug: 'laurel-maryland' },
+      { name: 'Salisbury', slug: 'salisbury-maryland' },
+      { name: 'Towson', slug: 'towson-maryland' },
+      { name: 'Waldorf', slug: 'waldorf-maryland' }]
   },
   {
     name: 'Massachusetts',
@@ -511,7 +751,9 @@ const states: State[] = [
       { name: 'Somerville', slug: 'somerville-massachusetts' },
       { name: 'Taunton', slug: 'taunton-massachusetts' },
       { name: 'Waltham', slug: 'waltham-massachusetts' }
-    ]
+    ,
+      { name: 'Haverhill', slug: 'haverhill-massachusetts' },
+      { name: 'Pittsfield', slug: 'pittsfield-massachusetts' }]
   },
   {
     name: 'Michigan',
@@ -540,7 +782,8 @@ const states: State[] = [
       { name: 'Pontiac', slug: 'pontiac-michigan' },
       { name: 'Taylor', slug: 'taylor-michigan' },
       { name: 'Wyoming', slug: 'wyoming-michigan' }
-    ]
+    ,
+      { name: 'Battle Creek', slug: 'battle-creek-michigan' }]
   },
   {
     name: 'Minnesota',
@@ -559,7 +802,12 @@ const states: State[] = [
       { name: 'Saint Paul', slug: 'saint-paul-minnesota' },
       { name: 'St. Cloud', slug: 'st-cloud-minnesota' },
       { name: 'Woodbury', slug: 'woodbury-minnesota' }
-    ]
+    ,
+      { name: 'Burnsville', slug: 'burnsville-minnesota' },
+      { name: 'Coon Rapids', slug: 'coon-rapids-minnesota' },
+      { name: 'Eden Prairie', slug: 'eden-prairie-minnesota' },
+      { name: 'Moorhead', slug: 'moorhead-minnesota' },
+      { name: 'Saint Cloud', slug: 'saint-cloud-minnesota' }]
   },
   {
     name: 'Mississippi',
@@ -576,7 +824,9 @@ const states: State[] = [
       { name: 'Meridian', slug: 'meridian-mississippi' },
       { name: 'Oxford', slug: 'oxford-mississippi' },
       { name: 'Starkville', slug: 'starkville-mississippi' }
-    ]
+    ,
+      { name: 'Natchez', slug: 'natchez-mississippi' },
+      { name: 'Vicksburg', slug: 'vicksburg-mississippi' }]
   },
   {
     name: 'Missouri',
@@ -590,7 +840,14 @@ const states: State[] = [
       { name: "O'Fallon", slug: 'ofallon-missouri' },
       { name: 'Springfield', slug: 'springfield-missouri' },
       { name: 'St. Louis', slug: 'st-louis-missouri' }
-    ]
+    ,
+      { name: 'Blue Springs', slug: 'blue-springs-missouri' },
+      { name: 'Cape Girardeau', slug: 'cape-girardeau-missouri' },
+      { name: 'Florissant', slug: 'florissant-missouri' },
+      { name: 'Saint Charles', slug: 'saint-charles-missouri' },
+      { name: 'Saint Joseph', slug: 'saint-joseph-missouri' },
+      { name: 'Saint Louis', slug: 'saint-louis-missouri' },
+      { name: 'Saint Peters', slug: 'saint-peters-missouri' }]
   },
   {
     name: 'Montana',
@@ -681,7 +938,8 @@ const states: State[] = [
       { name: 'Union City', slug: 'union-city-new-jersey' },
       { name: 'Vineland', slug: 'vineland-new-jersey' },
       { name: 'West New York', slug: 'west-new-york-new-jersey' }
-    ]
+    ,
+      { name: 'East Orange', slug: 'east-orange-new-jersey' }]
   },
   {
     name: 'New Mexico',
@@ -717,7 +975,12 @@ const states: State[] = [
       { name: 'Utica', slug: 'utica-new-york' },
       { name: 'White Plains', slug: 'white-plains-new-york' },
       { name: 'Yonkers', slug: 'yonkers-new-york' }
-    ]
+    ,
+      { name: 'Amherst', slug: 'amherst-new-york' },
+      { name: 'Niagara Falls', slug: 'niagara-falls-new-york' },
+      { name: 'Poughkeepsie', slug: 'poughkeepsie-new-york' },
+      { name: 'Rome', slug: 'rome-new-york' },
+      { name: 'Watertown', slug: 'watertown-new-york' }]
   },
   {
     name: 'North Carolina',
@@ -736,7 +999,15 @@ const states: State[] = [
       { name: 'Raleigh', slug: 'raleigh-north-carolina' },
       { name: 'Wilmington', slug: 'wilmington-north-carolina' },
       { name: 'Winston-Salem', slug: 'winston-salem-north-carolina' }
-    ]
+    ,
+      { name: 'Burlington', slug: 'burlington-north-carolina' },
+      { name: 'Chapel Hill', slug: 'chapel-hill-north-carolina' },
+      { name: 'Greenville', slug: 'greenville-north-carolina' },
+      { name: 'Jacksonville', slug: 'jacksonville-north-carolina' },
+      { name: 'Kannapolis', slug: 'kannapolis-north-carolina' },
+      { name: 'Rocky Mount', slug: 'rocky-mount-north-carolina' },
+      { name: 'Salisbury', slug: 'salisbury-north-carolina' },
+      { name: 'Wilson', slug: 'wilson-north-carolina' }]
   },
   {
     name: 'North Dakota',
@@ -824,7 +1095,8 @@ const states: State[] = [
       { name: 'Reading', slug: 'reading-pennsylvania' },
       { name: 'Scranton', slug: 'scranton-pennsylvania' },
       { name: 'York', slug: 'york-pennsylvania' }
-    ]
+    ,
+      { name: 'Wilkes-Barre', slug: 'wilkes-barre-pennsylvania' }]
   },
   {
     name: 'Rhode Island',
@@ -889,7 +1161,10 @@ const states: State[] = [
       { name: 'Memphis', slug: 'memphis-tennessee' },
       { name: 'Murfreesboro', slug: 'murfreesboro-tennessee' },
       { name: 'Nashville', slug: 'nashville-tennessee' }
-    ]
+    ,
+      { name: 'Bartlett', slug: 'bartlett-tennessee' },
+      { name: 'Brentwood', slug: 'brentwood-tennessee' },
+      { name: 'Collierville', slug: 'collierville-tennessee' }]
   },
   {
     name: 'Texas',
@@ -938,7 +1213,8 @@ const states: State[] = [
       { name: 'San Antonio', slug: 'san-antonio-texas' },
       { name: 'San Angelo', slug: 'san-angelo-texas' },
       { name: 'Sugar Land', slug: 'sugar-land-texas' }
-    ]
+    ,
+      { name: 'Longview', slug: 'longview-texas' }]
   },
   {
     name: 'Utah',
@@ -954,7 +1230,8 @@ const states: State[] = [
       { name: 'Taylorsville', slug: 'taylorsville-utah' },
       { name: 'West Jordan', slug: 'west-jordan-utah' },
       { name: 'West Valley City', slug: 'west-valley-city-utah' }
-    ]
+    ,
+      { name: 'St. George', slug: 'st.-george-utah' }]
   },
   {
     name: 'Vermont',
@@ -967,7 +1244,8 @@ const states: State[] = [
       { name: 'Montpelier', slug: 'montpelier-vermont' },
       { name: 'Rutland', slug: 'rutland-vermont' },
       { name: 'St. Albans', slug: 'st-albans-vermont' }
-    ]
+    ,
+      { name: 'St. Albans', slug: 'st.-albans-vermont' }]
   },
   {
     name: 'Virginia',

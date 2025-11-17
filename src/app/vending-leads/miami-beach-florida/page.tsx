@@ -1,0 +1,38 @@
+import { Metadata } from 'next'
+import PageClient from './pageClient'
+
+export const metadata: Metadata = {
+  title: "Vending Machine Leads in Miami Beach, Florida - The Vending Locator",
+  description: "Get verified vending machine leads and locations throughout Miami Beach, Florida. Find qualified businesses for vending machine placement.",
+  keywords: "vending machines Miami Beach, vending leads Miami Beach, vending locations Miami Beach, vending opportunities Miami Beach",
+  alternates: {
+    canonical: "https://www.thevendinglocator.com/vending-leads/miami-beach-florida"
+  },
+  openGraph: {
+    title: "Vending Machine Leads in Miami Beach, Florida - The Vending Locator",
+    description: "Get verified vending machine leads and locations throughout Miami Beach, Florida. Find qualified businesses for vending machine placement.",
+    url: "https://www.thevendinglocator.com/vending-leads/miami-beach-florida",
+    siteName: "The Vending Locator",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Vending Machine Leads in Miami Beach, Florida - The Vending Locator",
+    description: "Get verified vending machine leads and locations throughout Miami Beach, Florida. Find qualified businesses for vending machine placement."
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
+    }
+  }
+}
+
+export default function Page() {
+  return <PageClient />
+}

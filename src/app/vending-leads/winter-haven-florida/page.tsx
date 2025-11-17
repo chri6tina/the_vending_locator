@@ -1,0 +1,38 @@
+import { Metadata } from 'next'
+import PageClient from './pageClient'
+
+export const metadata: Metadata = {
+  title: "Vending Machine Leads in Winter Haven, Florida - The Vending Locator",
+  description: "Get verified vending machine leads and locations throughout Winter Haven, Florida. Find qualified businesses for vending machine placement.",
+  keywords: "vending machines Winter Haven, vending leads Winter Haven, vending locations Winter Haven, vending opportunities Winter Haven",
+  alternates: {
+    canonical: "https://www.thevendinglocator.com/vending-leads/winter-haven-florida"
+  },
+  openGraph: {
+    title: "Vending Machine Leads in Winter Haven, Florida - The Vending Locator",
+    description: "Get verified vending machine leads and locations throughout Winter Haven, Florida. Find qualified businesses for vending machine placement.",
+    url: "https://www.thevendinglocator.com/vending-leads/winter-haven-florida",
+    siteName: "The Vending Locator",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Vending Machine Leads in Winter Haven, Florida - The Vending Locator",
+    description: "Get verified vending machine leads and locations throughout Winter Haven, Florida. Find qualified businesses for vending machine placement."
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
+    }
+  }
+}
+
+export default function Page() {
+  return <PageClient />
+}
