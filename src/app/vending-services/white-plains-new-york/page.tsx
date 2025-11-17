@@ -36,6 +36,6 @@ export const metadata: Metadata = {
 // Enable ISR - regenerate page every hour
 export const revalidate = 3600;
 
-export default function BocaRatonNew YorkServicesPage() {
+export default function WhitePlainsNewYorkServicesPage() {
   return <PageClient />
 }

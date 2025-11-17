@@ -402,5 +402,170 @@ export default function LawtonOklahomaVendingServicesPage() {
                     copy:
                       'Smart machines alert operators before training rotations, severe weather, or tourism surges deplete popular items.'
                   },
-                  //{
+                  {
+                    title: 'Local & Fresh Options',
+                    copy:
+                      'Feature Oklahoma-roasted coffee, regional favorites, and fresh snacks that support employee wellness initiatives.'
+                  },
+                  {
+                    title: 'Compliance Confidence',
+                    copy:
+                      'Vendors manage DOD security, healthcare sanitation, and industrial facility access requirements common to the Lawton area.'
+                  },
+                  {
+                    title: 'Data-Driven Insights',
+                    copy:
+                      'Access dashboards for product performance, refunds, and sustainability metrics to support procurement decisions.'
+                  },
+                  {
+                    title: 'Event & Remote Support',
+                    copy:
+                      'Deploy portable vending for Fort Sill events, rodeo weekends, and emergency response staging areas.'
+                  }
+                ].map((item, idx) => (
+                  <motion.div
+                    key={item.title}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.8, delay: idx * 0.1 }}
+                    className="bg-warm-white p-6 rounded-xl shadow-md border border-stone/20"
+                  >
+                    <h3 className="text-xl font-semibold text-navy mb-3">{item.title}</h3>
+                    <p className="text-charcoal/80 text-sm leading-relaxed">{item.copy}</p>
+                  </motion.div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
 
+        {/* Industry Focus */}
+        <section className="py-16 bg-warm-white border-t border-gray-200">
+          <div className="container mx-auto px-4">
+            <div className="max-w-5xl mx-auto">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8 }}
+                className="text-3xl font-playfair font-bold text-chocolate mb-12 text-center"
+              >
+                Tailored to {cityDisplayName}&apos;s Core Industries
+              </motion.h2>
+              <p className="text-chocolate/70 text-center mb-12">
+                Vending solutions designed for Lawton&apos;s unique business landscape
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="py-16 bg-white border-t border-gray-200">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8 }}
+                className="text-3xl font-playfair font-bold text-chocolate mb-8 text-center"
+              >
+                Vending Services in {cityDisplayName} - FAQ
+              </motion.h2>
+
+              <div className="space-y-6">
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8 }}
+                  className="bg-warm-white p-6 rounded-lg shadow-md border border-stone/20"
+                >
+                  <h3 className="text-lg font-semibold text-navy mb-2">
+                    How much does it cost to get vending machines in {cityDisplayName}?
+                  </h3>
+                  <p className="text-charcoal/80">
+                    Nothing! Vending operators in {cityDisplayName} typically provide free installation, equipment, stocking, and maintenance.
+                  </p>
+                </motion.div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Final CTA */}
+        <section className="py-16 bg-navy">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto text-center">
+              <h2 className="text-3xl font-playfair font-bold text-white mb-6">
+                Ready to Add Vending Services to Your {stateDisplayName} Business?
+              </h2>
+              <a
+                href="#hero-form"
+                onClick={(e) => {
+                  e.preventDefault()
+                  window.scrollTo({ top: 0, behavior: 'smooth' })
+                }}
+                className="inline-flex items-center px-8 py-4 bg-coral text-white font-semibold rounded-lg hover:bg-coral/90 transition-all duration-200 shadow-lg hover:shadow-xl"
+              >
+                Get Started Today
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <Footer />
+      <ZipCodeModalWrapper />
+
+      {/* Success Modal */}
+      {showSuccessModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm px-4">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.95 }}
+            transition={{ duration: 0.3 }}
+            className="bg-white rounded-2xl shadow-2xl max-w-md w-full p-8 relative"
+          >
+            <button
+              onClick={closeModal}
+              className="absolute top-4 right-4 text-stone hover:text-charcoal transition-colors"
+              aria-label="Close"
+            >
+              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+
+            <div className="text-center">
+              <div className="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-green-100 mb-4">
+                <CheckCircleIcon className="h-10 w-10 text-green-600" />
+              </div>
+              
+              <h3 className="text-2xl font-playfair font-bold text-navy mb-3">
+                Thank You!
+              </h3>
+              
+              <p className="text-lg text-charcoal/80 mb-2">
+                Your request has been received.
+              </p>
+              
+              <p className="text-charcoal/70 mb-6">
+                We&apos;ll be reaching out to you within 24 hours to connect you with the best vending service providers in your area.
+              </p>
+
+              <button
+                onClick={closeModal}
+                className="w-full bg-navy hover:bg-navy/90 text-white py-3 px-6 rounded-lg font-semibold transition-all duration-200"
+              >
+                Got It
+              </button>
+            </div>
+          </motion.div>
+        </div>
+      )}
+    </>
+  )
+}
