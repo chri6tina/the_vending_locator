@@ -1,0 +1,295 @@
+{
+  "totalChecked": 218,
+  "existing": 195,
+  "missing": 23,
+  "missingCities": [
+    {
+      "name": "Napa",
+      "slug": "napa-california",
+      "state": "California",
+      "pop": "80K+"
+    },
+    {
+      "name": "Mountain View",
+      "slug": "mountain-view-california",
+      "state": "California",
+      "pop": "85K+"
+    },
+    {
+      "name": "Palm Desert",
+      "slug": "palm-desert-california",
+      "state": "California",
+      "pop": "52K+"
+    },
+    {
+      "name": "Newport Beach",
+      "slug": "newport-beach-california",
+      "state": "California",
+      "pop": "85K+"
+    },
+    {
+      "name": "Arlington Heights",
+      "slug": "arlington-heights-illinois",
+      "state": "Illinois",
+      "pop": "77K+"
+    },
+    {
+      "name": "Bolingbrook",
+      "slug": "bolingbrook-illinois",
+      "state": "Illinois",
+      "pop": "73K+"
+    },
+    {
+      "name": "Palatine",
+      "slug": "palatine-illinois",
+      "state": "Illinois",
+      "pop": "67K+"
+    },
+    {
+      "name": "Skokie",
+      "slug": "skokie-illinois",
+      "state": "Illinois",
+      "pop": "67K+"
+    },
+    {
+      "name": "Des Plaines",
+      "slug": "des-plaines-illinois",
+      "state": "Illinois",
+      "pop": "60K+"
+    },
+    {
+      "name": "Orland Park",
+      "slug": "orland-park-illinois",
+      "state": "Illinois",
+      "pop": "58K+"
+    },
+    {
+      "name": "Oak Lawn",
+      "slug": "oak-lawn-illinois",
+      "state": "Illinois",
+      "pop": "58K+"
+    },
+    {
+      "name": "Berwyn",
+      "slug": "berwyn-illinois",
+      "state": "Illinois",
+      "pop": "57K+"
+    },
+    {
+      "name": "Mount Prospect",
+      "slug": "mount-prospect-illinois",
+      "state": "Illinois",
+      "pop": "56K+"
+    },
+    {
+      "name": "Tinley Park",
+      "slug": "tinley-park-illinois",
+      "state": "Illinois",
+      "pop": "55K+"
+    },
+    {
+      "name": "Oak Park",
+      "slug": "oak-park-illinois",
+      "state": "Illinois",
+      "pop": "54K+"
+    },
+    {
+      "name": "Wheaton",
+      "slug": "wheaton-illinois",
+      "state": "Illinois",
+      "pop": "53K+"
+    },
+    {
+      "name": "Downers Grove",
+      "slug": "downers-grove-illinois",
+      "state": "Illinois",
+      "pop": "50K+"
+    },
+    {
+      "name": "Muncie",
+      "slug": "muncie-indiana",
+      "state": "Indiana",
+      "pop": "65K+"
+    },
+    {
+      "name": "Terre Haute",
+      "slug": "terre-haute-indiana",
+      "state": "Indiana",
+      "pop": "60K+"
+    },
+    {
+      "name": "Anderson",
+      "slug": "anderson-indiana",
+      "state": "Indiana",
+      "pop": "54K+"
+    },
+    {
+      "name": "Port Huron",
+      "slug": "port-huron-michigan",
+      "state": "Michigan",
+      "pop": "28K+"
+    },
+    {
+      "name": "Middletown",
+      "slug": "middletown-ohio",
+      "state": "Ohio",
+      "pop": "50K+"
+    },
+    {
+      "name": "Newark",
+      "slug": "newark-ohio",
+      "state": "Ohio",
+      "pop": "50K+"
+    }
+  ],
+  "missingByState": {
+    "California": [
+      {
+        "name": "Napa",
+        "slug": "napa-california",
+        "state": "California",
+        "pop": "80K+"
+      },
+      {
+        "name": "Mountain View",
+        "slug": "mountain-view-california",
+        "state": "California",
+        "pop": "85K+"
+      },
+      {
+        "name": "Palm Desert",
+        "slug": "palm-desert-california",
+        "state": "California",
+        "pop": "52K+"
+      },
+      {
+        "name": "Newport Beach",
+        "slug": "newport-beach-california",
+        "state": "California",
+        "pop": "85K+"
+      }
+    ],
+    "Illinois": [
+      {
+        "name": "Arlington Heights",
+        "slug": "arlington-heights-illinois",
+        "state": "Illinois",
+        "pop": "77K+"
+      },
+      {
+        "name": "Bolingbrook",
+        "slug": "bolingbrook-illinois",
+        "state": "Illinois",
+        "pop": "73K+"
+      },
+      {
+        "name": "Palatine",
+        "slug": "palatine-illinois",
+        "state": "Illinois",
+        "pop": "67K+"
+      },
+      {
+        "name": "Skokie",
+        "slug": "skokie-illinois",
+        "state": "Illinois",
+        "pop": "67K+"
+      },
+      {
+        "name": "Des Plaines",
+        "slug": "des-plaines-illinois",
+        "state": "Illinois",
+        "pop": "60K+"
+      },
+      {
+        "name": "Orland Park",
+        "slug": "orland-park-illinois",
+        "state": "Illinois",
+        "pop": "58K+"
+      },
+      {
+        "name": "Oak Lawn",
+        "slug": "oak-lawn-illinois",
+        "state": "Illinois",
+        "pop": "58K+"
+      },
+      {
+        "name": "Berwyn",
+        "slug": "berwyn-illinois",
+        "state": "Illinois",
+        "pop": "57K+"
+      },
+      {
+        "name": "Mount Prospect",
+        "slug": "mount-prospect-illinois",
+        "state": "Illinois",
+        "pop": "56K+"
+      },
+      {
+        "name": "Tinley Park",
+        "slug": "tinley-park-illinois",
+        "state": "Illinois",
+        "pop": "55K+"
+      },
+      {
+        "name": "Oak Park",
+        "slug": "oak-park-illinois",
+        "state": "Illinois",
+        "pop": "54K+"
+      },
+      {
+        "name": "Wheaton",
+        "slug": "wheaton-illinois",
+        "state": "Illinois",
+        "pop": "53K+"
+      },
+      {
+        "name": "Downers Grove",
+        "slug": "downers-grove-illinois",
+        "state": "Illinois",
+        "pop": "50K+"
+      }
+    ],
+    "Indiana": [
+      {
+        "name": "Muncie",
+        "slug": "muncie-indiana",
+        "state": "Indiana",
+        "pop": "65K+"
+      },
+      {
+        "name": "Terre Haute",
+        "slug": "terre-haute-indiana",
+        "state": "Indiana",
+        "pop": "60K+"
+      },
+      {
+        "name": "Anderson",
+        "slug": "anderson-indiana",
+        "state": "Indiana",
+        "pop": "54K+"
+      }
+    ],
+    "Michigan": [
+      {
+        "name": "Port Huron",
+        "slug": "port-huron-michigan",
+        "state": "Michigan",
+        "pop": "28K+"
+      }
+    ],
+    "Ohio": [
+      {
+        "name": "Middletown",
+        "slug": "middletown-ohio",
+        "state": "Ohio",
+        "pop": "50K+"
+      },
+      {
+        "name": "Newark",
+        "slug": "newark-ohio",
+        "state": "Ohio",
+        "pop": "50K+"
+      }
+    ]
+  }
+}

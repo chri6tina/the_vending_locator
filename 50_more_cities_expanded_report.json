@@ -1,0 +1,625 @@
+{
+  "totalChecked": 316,
+  "existing": 238,
+  "missing": 78,
+  "missingCities": [
+    {
+      "name": "Napa",
+      "slug": "napa-california",
+      "state": "California",
+      "pop": "80K+"
+    },
+    {
+      "name": "Mountain View",
+      "slug": "mountain-view-california",
+      "state": "California",
+      "pop": "85K+"
+    },
+    {
+      "name": "Palm Desert",
+      "slug": "palm-desert-california",
+      "state": "California",
+      "pop": "52K+"
+    },
+    {
+      "name": "Newport Beach",
+      "slug": "newport-beach-california",
+      "state": "California",
+      "pop": "85K+"
+    },
+    {
+      "name": "Arlington Heights",
+      "slug": "arlington-heights-illinois",
+      "state": "Illinois",
+      "pop": "77K+"
+    },
+    {
+      "name": "Bolingbrook",
+      "slug": "bolingbrook-illinois",
+      "state": "Illinois",
+      "pop": "73K+"
+    },
+    {
+      "name": "Palatine",
+      "slug": "palatine-illinois",
+      "state": "Illinois",
+      "pop": "67K+"
+    },
+    {
+      "name": "Skokie",
+      "slug": "skokie-illinois",
+      "state": "Illinois",
+      "pop": "67K+"
+    },
+    {
+      "name": "Des Plaines",
+      "slug": "des-plaines-illinois",
+      "state": "Illinois",
+      "pop": "60K+"
+    },
+    {
+      "name": "Orland Park",
+      "slug": "orland-park-illinois",
+      "state": "Illinois",
+      "pop": "58K+"
+    },
+    {
+      "name": "Oak Lawn",
+      "slug": "oak-lawn-illinois",
+      "state": "Illinois",
+      "pop": "58K+"
+    },
+    {
+      "name": "Berwyn",
+      "slug": "berwyn-illinois",
+      "state": "Illinois",
+      "pop": "57K+"
+    },
+    {
+      "name": "Mount Prospect",
+      "slug": "mount-prospect-illinois",
+      "state": "Illinois",
+      "pop": "56K+"
+    },
+    {
+      "name": "Tinley Park",
+      "slug": "tinley-park-illinois",
+      "state": "Illinois",
+      "pop": "55K+"
+    },
+    {
+      "name": "Oak Park",
+      "slug": "oak-park-illinois",
+      "state": "Illinois",
+      "pop": "54K+"
+    },
+    {
+      "name": "Wheaton",
+      "slug": "wheaton-illinois",
+      "state": "Illinois",
+      "pop": "53K+"
+    },
+    {
+      "name": "Downers Grove",
+      "slug": "downers-grove-illinois",
+      "state": "Illinois",
+      "pop": "50K+"
+    },
+    {
+      "name": "Muncie",
+      "slug": "muncie-indiana",
+      "state": "Indiana",
+      "pop": "65K+"
+    },
+    {
+      "name": "Terre Haute",
+      "slug": "terre-haute-indiana",
+      "state": "Indiana",
+      "pop": "60K+"
+    },
+    {
+      "name": "Anderson",
+      "slug": "anderson-indiana",
+      "state": "Indiana",
+      "pop": "54K+"
+    },
+    {
+      "name": "Port Huron",
+      "slug": "port-huron-michigan",
+      "state": "Michigan",
+      "pop": "28K+"
+    },
+    {
+      "name": "Middletown",
+      "slug": "middletown-ohio",
+      "state": "Ohio",
+      "pop": "50K+"
+    },
+    {
+      "name": "Newark",
+      "slug": "newark-ohio",
+      "state": "Ohio",
+      "pop": "50K+"
+    },
+    {
+      "name": "Lancaster",
+      "slug": "lancaster-california",
+      "state": "California",
+      "pop": "160K+"
+    },
+    {
+      "name": "Palm Springs",
+      "slug": "palm-springs-california",
+      "state": "California",
+      "pop": "48K+"
+    },
+    {
+      "name": "Santa Clara",
+      "slug": "santa-clara-california",
+      "state": "California",
+      "pop": "130K+"
+    },
+    {
+      "name": "Allen",
+      "slug": "allen-texas",
+      "state": "Texas",
+      "pop": "110K+"
+    },
+    {
+      "name": "Conroe",
+      "slug": "conroe-texas",
+      "state": "Texas",
+      "pop": "90K+"
+    },
+    {
+      "name": "Edinburg",
+      "slug": "edinburg-texas",
+      "state": "Texas",
+      "pop": "100K+"
+    },
+    {
+      "name": "Altamonte Springs",
+      "slug": "altamonte-springs-florida",
+      "state": "Florida",
+      "pop": "45K+"
+    },
+    {
+      "name": "Apopka",
+      "slug": "apopka-florida",
+      "state": "Florida",
+      "pop": "55K+"
+    },
+    {
+      "name": "Bradenton",
+      "slug": "bradenton-florida",
+      "state": "Florida",
+      "pop": "60K+"
+    },
+    {
+      "name": "Coconut Creek",
+      "slug": "coconut-creek-florida",
+      "state": "Florida",
+      "pop": "60K+"
+    },
+    {
+      "name": "Cutler Bay",
+      "slug": "cutler-bay-florida",
+      "state": "Florida",
+      "pop": "45K+"
+    },
+    {
+      "name": "Doral",
+      "slug": "doral-florida",
+      "state": "Florida",
+      "pop": "75K+"
+    },
+    {
+      "name": "Greenacres",
+      "slug": "greenacres-florida",
+      "state": "Florida",
+      "pop": "45K+"
+    },
+    {
+      "name": "Jupiter",
+      "slug": "jupiter-florida",
+      "state": "Florida",
+      "pop": "65K+"
+    },
+    {
+      "name": "Margate",
+      "slug": "margate-florida",
+      "state": "Florida",
+      "pop": "60K+"
+    },
+    {
+      "name": "North Miami",
+      "slug": "north-miami-florida",
+      "state": "Florida",
+      "pop": "60K+"
+    },
+    {
+      "name": "Palm Beach Gardens",
+      "slug": "palm-beach-gardens-florida",
+      "state": "Florida",
+      "pop": "60K+"
+    },
+    {
+      "name": "Plant City",
+      "slug": "plant-city-florida",
+      "state": "Florida",
+      "pop": "40K+"
+    },
+    {
+      "name": "Royal Palm Beach",
+      "slug": "royal-palm-beach-florida",
+      "state": "Florida",
+      "pop": "40K+"
+    },
+    {
+      "name": "Stuart",
+      "slug": "stuart-florida",
+      "state": "Florida",
+      "pop": "18K+"
+    },
+    {
+      "name": "Wellington",
+      "slug": "wellington-florida",
+      "state": "Florida",
+      "pop": "60K+"
+    },
+    {
+      "name": "Avondale",
+      "slug": "avondale-arizona",
+      "state": "Arizona",
+      "pop": "90K+"
+    },
+    {
+      "name": "Buckeye",
+      "slug": "buckeye-arizona",
+      "state": "Arizona",
+      "pop": "95K+"
+    },
+    {
+      "name": "Casa Grande",
+      "slug": "casa-grande-arizona",
+      "state": "Arizona",
+      "pop": "60K+"
+    },
+    {
+      "name": "Goodyear",
+      "slug": "goodyear-arizona",
+      "state": "Arizona",
+      "pop": "95K+"
+    },
+    {
+      "name": "Maricopa",
+      "slug": "maricopa-arizona",
+      "state": "Arizona",
+      "pop": "65K+"
+    },
+    {
+      "name": "Prescott",
+      "slug": "prescott-arizona",
+      "state": "Arizona",
+      "pop": "45K+"
+    }
+  ],
+  "missingByState": {
+    "California": [
+      {
+        "name": "Napa",
+        "slug": "napa-california",
+        "state": "California",
+        "pop": "80K+"
+      },
+      {
+        "name": "Mountain View",
+        "slug": "mountain-view-california",
+        "state": "California",
+        "pop": "85K+"
+      },
+      {
+        "name": "Palm Desert",
+        "slug": "palm-desert-california",
+        "state": "California",
+        "pop": "52K+"
+      },
+      {
+        "name": "Newport Beach",
+        "slug": "newport-beach-california",
+        "state": "California",
+        "pop": "85K+"
+      },
+      {
+        "name": "Lancaster",
+        "slug": "lancaster-california",
+        "state": "California",
+        "pop": "160K+"
+      },
+      {
+        "name": "Palm Springs",
+        "slug": "palm-springs-california",
+        "state": "California",
+        "pop": "48K+"
+      },
+      {
+        "name": "Santa Clara",
+        "slug": "santa-clara-california",
+        "state": "California",
+        "pop": "130K+"
+      }
+    ],
+    "Illinois": [
+      {
+        "name": "Arlington Heights",
+        "slug": "arlington-heights-illinois",
+        "state": "Illinois",
+        "pop": "77K+"
+      },
+      {
+        "name": "Bolingbrook",
+        "slug": "bolingbrook-illinois",
+        "state": "Illinois",
+        "pop": "73K+"
+      },
+      {
+        "name": "Palatine",
+        "slug": "palatine-illinois",
+        "state": "Illinois",
+        "pop": "67K+"
+      },
+      {
+        "name": "Skokie",
+        "slug": "skokie-illinois",
+        "state": "Illinois",
+        "pop": "67K+"
+      },
+      {
+        "name": "Des Plaines",
+        "slug": "des-plaines-illinois",
+        "state": "Illinois",
+        "pop": "60K+"
+      },
+      {
+        "name": "Orland Park",
+        "slug": "orland-park-illinois",
+        "state": "Illinois",
+        "pop": "58K+"
+      },
+      {
+        "name": "Oak Lawn",
+        "slug": "oak-lawn-illinois",
+        "state": "Illinois",
+        "pop": "58K+"
+      },
+      {
+        "name": "Berwyn",
+        "slug": "berwyn-illinois",
+        "state": "Illinois",
+        "pop": "57K+"
+      },
+      {
+        "name": "Mount Prospect",
+        "slug": "mount-prospect-illinois",
+        "state": "Illinois",
+        "pop": "56K+"
+      },
+      {
+        "name": "Tinley Park",
+        "slug": "tinley-park-illinois",
+        "state": "Illinois",
+        "pop": "55K+"
+      },
+      {
+        "name": "Oak Park",
+        "slug": "oak-park-illinois",
+        "state": "Illinois",
+        "pop": "54K+"
+      },
+      {
+        "name": "Wheaton",
+        "slug": "wheaton-illinois",
+        "state": "Illinois",
+        "pop": "53K+"
+      },
+      {
+        "name": "Downers Grove",
+        "slug": "downers-grove-illinois",
+        "state": "Illinois",
+        "pop": "50K+"
+      }
+    ],
+    "Indiana": [
+      {
+        "name": "Muncie",
+        "slug": "muncie-indiana",
+        "state": "Indiana",
+        "pop": "65K+"
+      },
+      {
+        "name": "Terre Haute",
+        "slug": "terre-haute-indiana",
+        "state": "Indiana",
+        "pop": "60K+"
+      },
+      {
+        "name": "Anderson",
+        "slug": "anderson-indiana",
+        "state": "Indiana",
+        "pop": "54K+"
+      }
+    ],
+    "Michigan": [
+      {
+        "name": "Port Huron",
+        "slug": "port-huron-michigan",
+        "state": "Michigan",
+        "pop": "28K+"
+      }
+    ],
+    "Ohio": [
+      {
+        "name": "Middletown",
+        "slug": "middletown-ohio",
+        "state": "Ohio",
+        "pop": "50K+"
+      },
+      {
+        "name": "Newark",
+        "slug": "newark-ohio",
+        "state": "Ohio",
+        "pop": "50K+"
+      }
+    ],
+    "Texas": [
+      {
+        "name": "Allen",
+        "slug": "allen-texas",
+        "state": "Texas",
+        "pop": "110K+"
+      },
+      {
+        "name": "Conroe",
+        "slug": "conroe-texas",
+        "state": "Texas",
+        "pop": "90K+"
+      },
+      {
+        "name": "Edinburg",
+        "slug": "edinburg-texas",
+        "state": "Texas",
+        "pop": "100K+"
+      }
+    ],
+    "Florida": [
+      {
+        "name": "Altamonte Springs",
+        "slug": "altamonte-springs-florida",
+        "state": "Florida",
+        "pop": "45K+"
+      },
+      {
+        "name": "Apopka",
+        "slug": "apopka-florida",
+        "state": "Florida",
+        "pop": "55K+"
+      },
+      {
+        "name": "Bradenton",
+        "slug": "bradenton-florida",
+        "state": "Florida",
+        "pop": "60K+"
+      },
+      {
+        "name": "Coconut Creek",
+        "slug": "coconut-creek-florida",
+        "state": "Florida",
+        "pop": "60K+"
+      },
+      {
+        "name": "Cutler Bay",
+        "slug": "cutler-bay-florida",
+        "state": "Florida",
+        "pop": "45K+"
+      },
+      {
+        "name": "Doral",
+        "slug": "doral-florida",
+        "state": "Florida",
+        "pop": "75K+"
+      },
+      {
+        "name": "Greenacres",
+        "slug": "greenacres-florida",
+        "state": "Florida",
+        "pop": "45K+"
+      },
+      {
+        "name": "Jupiter",
+        "slug": "jupiter-florida",
+        "state": "Florida",
+        "pop": "65K+"
+      },
+      {
+        "name": "Margate",
+        "slug": "margate-florida",
+        "state": "Florida",
+        "pop": "60K+"
+      },
+      {
+        "name": "North Miami",
+        "slug": "north-miami-florida",
+        "state": "Florida",
+        "pop": "60K+"
+      },
+      {
+        "name": "Palm Beach Gardens",
+        "slug": "palm-beach-gardens-florida",
+        "state": "Florida",
+        "pop": "60K+"
+      },
+      {
+        "name": "Plant City",
+        "slug": "plant-city-florida",
+        "state": "Florida",
+        "pop": "40K+"
+      },
+      {
+        "name": "Royal Palm Beach",
+        "slug": "royal-palm-beach-florida",
+        "state": "Florida",
+        "pop": "40K+"
+      },
+      {
+        "name": "Stuart",
+        "slug": "stuart-florida",
+        "state": "Florida",
+        "pop": "18K+"
+      },
+      {
+        "name": "Wellington",
+        "slug": "wellington-florida",
+        "state": "Florida",
+        "pop": "60K+"
+      }
+    ],
+    "Arizona": [
+      {
+        "name": "Avondale",
+        "slug": "avondale-arizona",
+        "state": "Arizona",
+        "pop": "90K+"
+      },
+      {
+        "name": "Buckeye",
+        "slug": "buckeye-arizona",
+        "state": "Arizona",
+        "pop": "95K+"
+      },
+      {
+        "name": "Casa Grande",
+        "slug": "casa-grande-arizona",
+        "state": "Arizona",
+        "pop": "60K+"
+      },
+      {
+        "name": "Goodyear",
+        "slug": "goodyear-arizona",
+        "state": "Arizona",
+        "pop": "95K+"
+      },
+      {
+        "name": "Maricopa",
+        "slug": "maricopa-arizona",
+        "state": "Arizona",
+        "pop": "65K+"
+      },
+      {
+        "name": "Prescott",
+        "slug": "prescott-arizona",
+        "state": "Arizona",
+        "pop": "45K+"
+      }
+    ]
+  }
+}

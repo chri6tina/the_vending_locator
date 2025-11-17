@@ -1,0 +1,38 @@
+import { Metadata } from 'next'
+import PageClient from './pageClient'
+
+export const metadata: Metadata = {
+  "title": "Vending Machine Leads in Terre Haute, Indiana - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Terre Haute, Indiana. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines terre haute indiana, vending leads terre haute indiana, vending locations terre haute indiana, vending opportunities terre haute indiana",
+  "alternates": {
+    "canonical": "https://www.thevendinglocator.com/vending-leads/terre-haute-indiana"
+  },
+  "openGraph": {
+    "title": "Vending Machine Leads in Terre Haute, Indiana - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Terre Haute, Indiana. Find qualified businesses for vending machine placement.",
+    "url": "https://www.thevendinglocator.com/vending-leads/terre-haute-indiana",
+    "siteName": "The Vending Locator",
+    "type": "website"
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Vending Machine Leads in Terre Haute, Indiana - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Terre Haute, Indiana. Find qualified businesses for vending machine placement."
+  },
+  "robots": {
+    "index": true,
+    "follow": true,
+    "googleBot": {
+      "index": true,
+      "follow": true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1
+    }
+  }
+}
+
+export default function CityPage() {
+  return <PageClient />
+}
