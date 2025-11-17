@@ -863,6 +863,48 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     }))
 
+  // Generate haha-coolers city pages dynamically from states
+  // Only include URLs where a matching page file actually exists
+  const coolersDir = path.join(process.cwd(), 'src', 'app', 'haha-coolers')
+  const generatedCoolerCityPages: MetadataRoute.Sitemap = states.flatMap(state =>
+    state.cities.map(city => {
+      const filePath = path.join(coolersDir, city.slug, 'page.tsx')
+      if (!fs.existsSync(filePath)) return null
+      return {
+        url: `https://www.thevendinglocator.com/haha-coolers/${city.slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'weekly' as const,
+        priority: 0.8,
+      }
+    }).filter(Boolean) as MetadataRoute.Sitemap
+  )
+
+  // Also include any cooler city pages that exist on the filesystem but aren't listed in states.ts yet
+  const filesystemCoolerCityPages: MetadataRoute.Sitemap = fs
+    .readdirSync(coolersDir, { withFileTypes: true })
+    .filter(d => d.isDirectory())
+    .map(d => d.name)
+    .filter((dir) => {
+      // Must have a page.tsx
+      if (!fs.existsSync(path.join(coolersDir, dir, 'page.tsx'))) return false
+      // Include directories that end with a known state slug (city-state pattern)
+      // but exclude pure state directories and product directories (mini, pro, ultra)
+      const productDirs = ['mini', 'pro', 'ultra']
+      if (productDirs.includes(dir)) return false
+      for (const state of states) {
+        if (dir !== state.slug && dir.endsWith(state.slug)) {
+          return true
+        }
+      }
+      return false
+    })
+    .map((slug) => ({
+      url: `https://www.thevendinglocator.com/haha-coolers/${slug}`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly' as const,
+      priority: 0.8,
+    }))
+
   // State pages - All 50 states
   const statePages = [
     // Original states
@@ -1585,6 +1627,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...filteredCityPages,
     ...generatedCityPages,
     ...filesystemCityPages,
+    // Haha-coolers city pages
+    ...generatedCoolerCityPages,
+    ...filesystemCoolerCityPages,
     ...guidePages,
     ...cityGuidePages,
     ...blogPosts,
