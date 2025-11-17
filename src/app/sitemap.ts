@@ -839,29 +839,41 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Also include any city pages that exist on the filesystem but aren't listed in states.ts yet
   // This ensures newly added pages are automatically included in the sitemap
+  // Optimized: Only check directories that match city patterns to reduce memory usage
   const stateSlugs = new Set(states.map(s => s.slug))
-  const filesystemCityPages: MetadataRoute.Sitemap = fs
-    .readdirSync(leadsDir, { withFileTypes: true })
-    .filter(d => d.isDirectory())
-    .map(d => d.name)
-    .filter((dir) => {
-      // Must have a page.tsx
-      if (!fs.existsSync(path.join(leadsDir, dir, 'page.tsx'))) return false
-      // Include directories that end with a known state slug (city-state pattern)
-      // but exclude pure state directories themselves
-      for (const state of states) {
-        if (dir !== state.slug && dir.endsWith(state.slug)) {
+  const filesystemCityPages: MetadataRoute.Sitemap = (() => {
+    try {
+      const dirs = fs.readdirSync(leadsDir, { withFileTypes: true })
+        .filter(d => d.isDirectory())
+        .map(d => d.name)
+        .filter((dir) => {
+          // Quick filter: must contain a hyphen (city-state pattern)
+          if (!dir.includes('-')) return false
           return true
-        }
-      }
-      return false
-    })
-    .map((slug) => ({
-      url: `https://www.thevendinglocator.com/vending-leads/${slug}`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.8,
-    }))
+        })
+      
+      // Batch check page.tsx existence to reduce memory pressure
+      return dirs
+        .filter((dir) => {
+          // Only check if it ends with a known state slug
+          for (const state of states) {
+            if (dir !== state.slug && dir.endsWith(state.slug)) {
+              return fs.existsSync(path.join(leadsDir, dir, 'page.tsx'))
+            }
+          }
+          return false
+        })
+        .map((slug) => ({
+          url: `https://www.thevendinglocator.com/vending-leads/${slug}`,
+          lastModified: new Date(),
+          changeFrequency: 'weekly' as const,
+          priority: 0.8,
+        }))
+    } catch (error) {
+      // If filesystem read fails, return empty array
+      return []
+    }
+  })()
 
   // Generate haha-coolers city pages dynamically from states
   // Only include URLs where a matching page file actually exists
@@ -880,30 +892,43 @@ export default function sitemap(): MetadataRoute.Sitemap {
   )
 
   // Also include any cooler city pages that exist on the filesystem but aren't listed in states.ts yet
-  const filesystemCoolerCityPages: MetadataRoute.Sitemap = fs
-    .readdirSync(coolersDir, { withFileTypes: true })
-    .filter(d => d.isDirectory())
-    .map(d => d.name)
-    .filter((dir) => {
-      // Must have a page.tsx
-      if (!fs.existsSync(path.join(coolersDir, dir, 'page.tsx'))) return false
-      // Include directories that end with a known state slug (city-state pattern)
-      // but exclude pure state directories and product directories (mini, pro, ultra)
-      const productDirs = ['mini', 'pro', 'ultra']
-      if (productDirs.includes(dir)) return false
-      for (const state of states) {
-        if (dir !== state.slug && dir.endsWith(state.slug)) {
+  // Optimized: Only check directories that match city patterns to reduce memory usage
+  const filesystemCoolerCityPages: MetadataRoute.Sitemap = (() => {
+    try {
+      const dirs = fs.readdirSync(coolersDir, { withFileTypes: true })
+        .filter(d => d.isDirectory())
+        .map(d => d.name)
+        .filter((dir) => {
+          // Quick filter: must contain a hyphen (city-state pattern)
+          if (!dir.includes('-')) return false
+          // Exclude product directories
+          const productDirs = ['mini', 'pro', 'ultra']
+          if (productDirs.includes(dir)) return false
           return true
-        }
-      }
-      return false
-    })
-    .map((slug) => ({
-      url: `https://www.thevendinglocator.com/haha-coolers/${slug}`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly' as const,
-      priority: 0.8,
-    }))
+        })
+      
+      // Batch check page.tsx existence to reduce memory pressure
+      return dirs
+        .filter((dir) => {
+          // Only check if it ends with a known state slug
+          for (const state of states) {
+            if (dir !== state.slug && dir.endsWith(state.slug)) {
+              return fs.existsSync(path.join(coolersDir, dir, 'page.tsx'))
+            }
+          }
+          return false
+        })
+        .map((slug) => ({
+          url: `https://www.thevendinglocator.com/haha-coolers/${slug}`,
+          lastModified: new Date(),
+          changeFrequency: 'weekly' as const,
+          priority: 0.8,
+        }))
+    } catch (error) {
+      // If filesystem read fails, return empty array
+      return []
+    }
+  })()
 
   // State pages - All 50 states
   const statePages = [
