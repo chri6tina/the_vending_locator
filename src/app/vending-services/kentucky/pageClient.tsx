@@ -22,6 +22,7 @@ export default function KentuckyVendingServicesPage() {
     { name: 'Owensboro', slug: 'owensboro-kentucky' },
     { name: 'Covington', slug: 'covington-kentucky' },
     { name: 'Hopkinsville', slug: 'hopkinsville-kentucky' },
+    { name: 'Paducah', slug: 'paducah-kentucky' },
     { name: 'Richmond', slug: 'richmond-kentucky' },
     { name: 'Florence', slug: 'florence-kentucky' },
     { name: 'Georgetown', slug: 'georgetown-kentucky' },

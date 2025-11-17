@@ -20,6 +20,7 @@ export default function KansasVendingServicesPage() {
     { name: 'Overland Park', slug: 'overland-park-kansas' },
     { name: 'Kansas City', slug: 'kansas-city-kansas' },
     { name: 'Lawrence', slug: 'lawrence-kansas' },
+    { name: 'Manhattan', slug: 'manhattan-kansas' },
     { name: 'Olathe', slug: 'olathe-kansas' },
     { name: 'Topeka', slug: 'topeka-kansas' }
   ]

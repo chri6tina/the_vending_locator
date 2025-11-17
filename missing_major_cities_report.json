@@ -1,0 +1,287 @@
+{
+  "totalChecked": 170,
+  "existing": 144,
+  "missing": 26,
+  "missingCities": [
+    {
+      "name": "Brownsville",
+      "slug": "brownsville-texas",
+      "state": "Texas"
+    },
+    {
+      "name": "Pasadena",
+      "slug": "pasadena-texas",
+      "state": "Texas"
+    },
+    {
+      "name": "Odessa",
+      "slug": "odessa-texas",
+      "state": "Texas"
+    },
+    {
+      "name": "Midland",
+      "slug": "midland-texas",
+      "state": "Texas"
+    },
+    {
+      "name": "Palm Coast",
+      "slug": "palm-coast-florida",
+      "state": "Florida"
+    },
+    {
+      "name": "Largo",
+      "slug": "largo-florida",
+      "state": "Florida"
+    },
+    {
+      "name": "Boynton Beach",
+      "slug": "boynton-beach-florida",
+      "state": "Florida"
+    },
+    {
+      "name": "Plantation",
+      "slug": "plantation-florida",
+      "state": "Florida"
+    },
+    {
+      "name": "Davie",
+      "slug": "davie-florida",
+      "state": "Florida"
+    },
+    {
+      "name": "Sunrise",
+      "slug": "sunrise-florida",
+      "state": "Florida"
+    },
+    {
+      "name": "Yuma",
+      "slug": "yuma-arizona",
+      "state": "Arizona"
+    },
+    {
+      "name": "Flagstaff",
+      "slug": "flagstaff-arizona",
+      "state": "Arizona"
+    },
+    {
+      "name": "Concord",
+      "slug": "concord-north-carolina",
+      "state": "North Carolina"
+    },
+    {
+      "name": "Gastonia",
+      "slug": "gastonia-north-carolina",
+      "state": "North Carolina"
+    },
+    {
+      "name": "Asheville",
+      "slug": "asheville-north-carolina",
+      "state": "North Carolina"
+    },
+    {
+      "name": "Yakima",
+      "slug": "yakima-washington",
+      "state": "Washington"
+    },
+    {
+      "name": "Bellingham",
+      "slug": "bellingham-washington",
+      "state": "Washington"
+    },
+    {
+      "name": "Quincy",
+      "slug": "quincy-massachusetts",
+      "state": "Massachusetts"
+    },
+    {
+      "name": "Lynn",
+      "slug": "lynn-massachusetts",
+      "state": "Massachusetts"
+    },
+    {
+      "name": "Newton",
+      "slug": "newton-massachusetts",
+      "state": "Massachusetts"
+    },
+    {
+      "name": "Lawrence",
+      "slug": "lawrence-massachusetts",
+      "state": "Massachusetts"
+    },
+    {
+      "name": "White Plains",
+      "slug": "white-plains-new-york",
+      "state": "New York"
+    },
+    {
+      "name": "Mount Vernon",
+      "slug": "mount-vernon-new-york",
+      "state": "New York"
+    },
+    {
+      "name": "New Rochelle",
+      "slug": "new-rochelle-new-york",
+      "state": "New York"
+    },
+    {
+      "name": "Harrisburg",
+      "slug": "harrisburg-pennsylvania",
+      "state": "Pennsylvania"
+    },
+    {
+      "name": "Ann Arbor",
+      "slug": "ann-arbor-michigan",
+      "state": "Michigan"
+    }
+  ],
+  "missingByState": {
+    "Texas": [
+      {
+        "name": "Brownsville",
+        "slug": "brownsville-texas",
+        "state": "Texas"
+      },
+      {
+        "name": "Pasadena",
+        "slug": "pasadena-texas",
+        "state": "Texas"
+      },
+      {
+        "name": "Odessa",
+        "slug": "odessa-texas",
+        "state": "Texas"
+      },
+      {
+        "name": "Midland",
+        "slug": "midland-texas",
+        "state": "Texas"
+      }
+    ],
+    "Florida": [
+      {
+        "name": "Palm Coast",
+        "slug": "palm-coast-florida",
+        "state": "Florida"
+      },
+      {
+        "name": "Largo",
+        "slug": "largo-florida",
+        "state": "Florida"
+      },
+      {
+        "name": "Boynton Beach",
+        "slug": "boynton-beach-florida",
+        "state": "Florida"
+      },
+      {
+        "name": "Plantation",
+        "slug": "plantation-florida",
+        "state": "Florida"
+      },
+      {
+        "name": "Davie",
+        "slug": "davie-florida",
+        "state": "Florida"
+      },
+      {
+        "name": "Sunrise",
+        "slug": "sunrise-florida",
+        "state": "Florida"
+      }
+    ],
+    "Arizona": [
+      {
+        "name": "Yuma",
+        "slug": "yuma-arizona",
+        "state": "Arizona"
+      },
+      {
+        "name": "Flagstaff",
+        "slug": "flagstaff-arizona",
+        "state": "Arizona"
+      }
+    ],
+    "North Carolina": [
+      {
+        "name": "Concord",
+        "slug": "concord-north-carolina",
+        "state": "North Carolina"
+      },
+      {
+        "name": "Gastonia",
+        "slug": "gastonia-north-carolina",
+        "state": "North Carolina"
+      },
+      {
+        "name": "Asheville",
+        "slug": "asheville-north-carolina",
+        "state": "North Carolina"
+      }
+    ],
+    "Washington": [
+      {
+        "name": "Yakima",
+        "slug": "yakima-washington",
+        "state": "Washington"
+      },
+      {
+        "name": "Bellingham",
+        "slug": "bellingham-washington",
+        "state": "Washington"
+      }
+    ],
+    "Massachusetts": [
+      {
+        "name": "Quincy",
+        "slug": "quincy-massachusetts",
+        "state": "Massachusetts"
+      },
+      {
+        "name": "Lynn",
+        "slug": "lynn-massachusetts",
+        "state": "Massachusetts"
+      },
+      {
+        "name": "Newton",
+        "slug": "newton-massachusetts",
+        "state": "Massachusetts"
+      },
+      {
+        "name": "Lawrence",
+        "slug": "lawrence-massachusetts",
+        "state": "Massachusetts"
+      }
+    ],
+    "New York": [
+      {
+        "name": "White Plains",
+        "slug": "white-plains-new-york",
+        "state": "New York"
+      },
+      {
+        "name": "Mount Vernon",
+        "slug": "mount-vernon-new-york",
+        "state": "New York"
+      },
+      {
+        "name": "New Rochelle",
+        "slug": "new-rochelle-new-york",
+        "state": "New York"
+      }
+    ],
+    "Pennsylvania": [
+      {
+        "name": "Harrisburg",
+        "slug": "harrisburg-pennsylvania",
+        "state": "Pennsylvania"
+      }
+    ],
+    "Michigan": [
+      {
+        "name": "Ann Arbor",
+        "slug": "ann-arbor-michigan",
+        "state": "Michigan"
+      }
+    ]
+  }
+}

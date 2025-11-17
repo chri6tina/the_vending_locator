@@ -13,17 +13,17 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
 export default function AnnArborMichiganVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Ann';
+  const cityDisplayName = 'Ann Arbor';
   const stateDisplayName = 'Michigan';
   
   // City-specific data
   const cityData = {
-  'name': 'Ann',
+  'name': 'Ann Arbor',
   'state': 'Michigan',
-  'population': '100K-500K',
-  'businesses': '10K-50K',
-  'industries': '10-15',
-  'verifiedLocations': '200-400',
+  'population': '50K-100K',
+  'businesses': '5K-10K',
+  'industries': '8-12',
+  'verifiedLocations': '100-200',
   'rating': '4.8/5',
   'description': 'Thriving business community in Michigan'
 };
@@ -191,11 +191,9 @@ export default function AnnArborMichiganVendingLeadsPage() {
                       }
                     }}
                     className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
-                  className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors"
-                >
+                  >
                     Get Started
                   </button>
-
               </motion.div>
 
 {/* Social Proof Stats */}
@@ -325,7 +323,7 @@ export default function AnnArborMichiganVendingLeadsPage() {
                 key="Retail"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.30000000000000004 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
                 viewport={{ once: true }}
                 className="bg-orange-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
@@ -484,7 +482,7 @@ export default function AnnArborMichiganVendingLeadsPage() {
                 key="3"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.30000000000000004 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
@@ -517,7 +515,7 @@ export default function AnnArborMichiganVendingLeadsPage() {
                 key="6"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.6000000000000001 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >
@@ -528,7 +526,7 @@ export default function AnnArborMichiganVendingLeadsPage() {
                 key="7"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.7000000000000001 }}
+                transition={{ duration: 0.8, delay: 0.7 }}
                 viewport={{ once: true }}
                 className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
               >

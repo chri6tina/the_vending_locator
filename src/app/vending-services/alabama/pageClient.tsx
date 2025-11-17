@@ -19,6 +19,7 @@ export default function AlabamaVendingServicesPage() {
     { name: 'Auburn', slug: 'auburn-alabama' },
     { name: 'Birmingham', slug: 'birmingham-alabama' },
     { name: 'Dothan', slug: 'dothan-alabama' },
+    { name: 'Gadsden', slug: 'gadsden-alabama' },
     { name: 'Huntsville', slug: 'huntsville-alabama' },
     { name: 'Mobile', slug: 'mobile-alabama' },
     { name: 'Montgomery', slug: 'montgomery-alabama' },

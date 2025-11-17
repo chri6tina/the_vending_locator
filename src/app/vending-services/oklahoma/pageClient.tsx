@@ -16,6 +16,7 @@ export default function OklahomaVendingServicesPage() {
 
   // Oklahoma cities with vending services
   const cities = [
+    { name: 'Lawton', slug: 'lawton-oklahoma' },
     { name: 'Oklahoma City', slug: 'oklahoma-city-oklahoma' },
     { name: 'Tulsa', slug: 'tulsa-oklahoma' }
   ]

@@ -661,7 +661,294 @@ export const anchorageContent: CityLandingContent = {
     }
   ]
 }
-
+export const palmBayContent: CityLandingContent = {
+  slug: "vending-machines-for-sale-in-palm-bay-florida",
+  city: "Palm Bay",
+  state: "Florida",
+  hero: {
+    eyebrow: {
+      icon: SparklesIcon,
+      label: "Smart Vending • Palm Bay, FL"
+    },
+    headline: {
+      pre: "Vending Machines for Sale in",
+      highlight: "Palm Bay, Florida"
+    },
+    description:
+      "Serve Space Coast manufacturers, healthcare systems, Palm Bay Magnet High, and master-planned communities with Haha AI smart coolers and bilingual 24/7 support.",
+    bullets: [
+      {
+        icon: ShieldCheckIcon,
+        text: "Procurement-ready documentation for aerospace, healthcare, and municipal buyers"
+      },
+      {
+        icon: ClockIcon,
+        text: "Freight coordination along I-95, Malabar Road, and Melbourne-Orlando International Airport"
+      },
+      {
+        icon: ChatBubbleOvalLeftEllipsisIcon,
+        text: "Telegram @thevendinglocator assists Palm Bay, Melbourne, and Cape Canaveral operators around the clock"
+      }
+    ],
+    ctas: [
+      {
+        label: "Explore Smart Coolers",
+        href: "/haha-coolers",
+        variant: "primary"
+      },
+      {
+        label: "Talk to Palm Bay Experts",
+        href: "/contact",
+        variant: "secondary"
+      }
+    ],
+    supportLink: {
+      icon: ChatBubbleOvalLeftEllipsisIcon,
+      label: "Telegram @thevendinglocator",
+      href: "https://t.me/thevendinglocator"
+    }
+  },
+  sidebar: {
+    badge: {
+      icon: MapPinIcon,
+      label: "Built for the Space Coast"
+    },
+    items: [
+      {
+        title: "Primary verticals:",
+        description: "Aerospace, defense, healthcare, education, tech manufacturing, and hospitality."
+      },
+      {
+        title: "Placement expertise:",
+        description: "L3Harris, Embraer suppliers, Palm Bay Hospital, FIT research labs, and master-planned amenities."
+      },
+      {
+        title: "Bilingual merchandising:",
+        description: "English and Spanish signage tuned to Space Coast workforces and visitors."
+      },
+      {
+        title: "Always-on support:",
+        description: "Telegram masterminds connecting Palm Bay, Melbourne, and Titusville operators."
+      }
+    ]
+  },
+  coolerLineup: jacksonvilleContent.coolerLineup,
+  sellingPoints: [
+    {
+      title: "Aerospace & defense",
+      description:
+        "Keep Space Coast manufacturing corridors fueled with telemetry-backed vending for multi-shift teams.",
+      icon: TruckIcon
+    },
+    {
+      title: "Healthcare readiness",
+      description:
+        "Serve Palm Bay Hospital, Health First clinics, and urgent care centers with premium grab-and-go options.",
+      icon: LifebuoyIcon
+    },
+    {
+      title: "Education & community",
+      description:
+        "Deploy smart coolers across Eastern Florida State College, Palm Bay Magnet High, and community recreation centers.",
+      icon: CubeIcon
+    }
+  ],
+  neighborhoods: [
+    "Palm Bay Road tech and manufacturing corridor",
+    "Health First Palm Bay Hospital district",
+    "Eastern Florida State College and education hubs",
+    "Bayside Lakes and master-planned communities",
+    "Turkey Creek sanctuary and tourism gateways"
+  ],
+  deliverables: [
+    "Aerospace and healthcare decks with telemetry analytics and staffing relief metrics.",
+    "Planograms featuring premium coffee, better-for-you meals, hydration, and Latin-inspired snacks.",
+    "Guides covering Brevard County permits, facility security, and hurricane readiness planning."
+  ],
+  logistics: [
+    {
+      title: "I-95 logistics coverage",
+      description: "Installers coordinate plant security, hospital docks, and gated community amenities.",
+      icon: TruckIcon
+    },
+    {
+      title: "Warranty and coastal care",
+      description: "Humidity-resistant hardware, optional surge protection, and ETL certification for coastal climates.",
+      icon: ShieldCheckIcon
+    },
+    {
+      title: "Operator coaching",
+      description: "Telegram sessions on launch-day demand, commuter peaks, and storm-season merchandising.",
+      icon: ClockIcon
+    }
+  ],
+  faq: [
+    {
+      question: "Can Haha coolers operate inside aerospace facilities?",
+      answer:
+        "Yes. We supply documentation, insurance, and access protocols aligned with Space Coast contractor standards."
+    },
+    {
+      question: "Do you support hospital compliance requirements?",
+      answer:
+        "We provide infection control documentation, nutrition data, and installation playbooks tailored to Health First."
+    },
+    {
+      question: "What resonates with Space Coast commuters and families?",
+      answer:
+        "Premium coffee, cold brew, protein-forward meals, hydration, and bilingual snack assortments perform well across Palm Bay."
+    },
+    {
+      question: "Is hurricane preparation included?",
+      answer:
+        "We deliver readiness checklists, backup power guidance, and rapid restock strategies for storm seasons."
+    }
+  ]
+}
+export const roundRockContent: CityLandingContent = {
+  slug: "vending-machines-for-sale-in-round-rock-texas",
+  city: "Round Rock",
+  state: "Texas",
+  hero: {
+    eyebrow: {
+      icon: SparklesIcon,
+      label: "Smart Vending • Round Rock, TX"
+    },
+    headline: {
+      pre: "Vending Machines for Sale in",
+      highlight: "Round Rock, Texas"
+    },
+    description:
+      "Deliver Haha AI smart coolers to Dell Technologies, Baylor Scott & White, Kalahari Resorts, and Round Rock ISD campuses with Austin-area support teams.",
+    bullets: [
+      {
+        icon: ShieldCheckIcon,
+        text: "Enterprise-grade documentation for technology, healthcare, and hospitality operators"
+      },
+      {
+        icon: ClockIcon,
+        text: "Freight coordination along I-35, SH-45, and University Boulevard innovation corridors"
+      },
+      {
+        icon: ChatBubbleOvalLeftEllipsisIcon,
+        text: "Telegram @thevendinglocator connects Round Rock, Austin, and Williamson County operators 24/7"
+      }
+    ],
+    ctas: [
+      {
+        label: "Explore Smart Coolers",
+        href: "/haha-coolers",
+        variant: "primary"
+      },
+      {
+        label: "Talk to Round Rock Experts",
+        href: "/contact",
+        variant: "secondary"
+      }
+    ],
+    supportLink: {
+      icon: ChatBubbleOvalLeftEllipsisIcon,
+      label: "Telegram @thevendinglocator",
+      href: "https://t.me/thevendinglocator"
+    }
+  },
+  sidebar: {
+    badge: {
+      icon: MapPinIcon,
+      label: "Built for the Texas Innovation Corridor"
+    },
+    items: [
+      {
+        title: "Primary verticals:",
+        description: "Technology, healthcare, hospitality, education, and manufacturing."
+      },
+      {
+        title: "Placement expertise:",
+        description: "Dell Technologies, Baylor Scott & White, Kalahari Resorts, Round Rock ISD, and Austin FC training facilities."
+      },
+      {
+        title: "Route optimization:",
+        description: "Telemetry tuned to hybrid work, medical staffing, resort surges, and school calendars."
+      },
+      {
+        title: "Always-on support:",
+        description: "Austin-area masterminds share real-time stocking, compliance, and merchandising strategies."
+      }
+    ]
+  },
+  coolerLineup: jacksonvilleContent.coolerLineup,
+  sellingPoints: [
+    {
+      title: "Technology workforce wellness",
+      description:
+        "Provide Dell Technologies and innovation corridor campuses with premium, cashless grab-and-go experiences.",
+      icon: BuildingOfficeIcon
+    },
+    {
+      title: "Healthcare readiness",
+      description:
+        "Serve Baylor Scott & White, Ascension Seton, and specialty clinics with telemetry-backed vending for staff and visitors.",
+      icon: LifebuoyIcon
+    },
+    {
+      title: "Hospitality & education",
+      description:
+        "Support Kalahari Resorts, Round Rock ISD athletics, and Texas State Round Rock campus with nonstop smart coolers.",
+      icon: CubeIcon
+    }
+  ],
+  neighborhoods: [
+    "Dell Technologies HQ and La Frontera district",
+    "Downtown Round Rock and historic Main Street",
+    "Baylor Scott & White and healthcare corridor",
+    "Kalahari Resorts and sports tourism venues",
+    "Round Rock ISD campuses and University Boulevard innovation zone"
+  ],
+  deliverables: [
+    "Technology and healthcare decks with telemetry analytics, wellness ROI, and staffing relief insights.",
+    "Planograms featuring premium coffee, healthy meals, hydration, and family-friendly snacks for resort guests.",
+    "Guides covering Williamson County permits, campus security, and tourism event coordination."
+  ],
+  logistics: [
+    {
+      title: "I-35 logistics coverage",
+      description: "Installers coordinate corporate security, hospital docks, resort receiving, and school district access.",
+      icon: TruckIcon
+    },
+    {
+      title: "Warranty and uptime",
+      description: "ETL-certified hardware, optional extended service agreements, and telemetry monitoring to prevent downtime.",
+      icon: ShieldCheckIcon
+    },
+    {
+      title: "Operator coaching",
+      description: "Telegram sessions on hybrid work patterns, tournament peaks, and community event demand.",
+      icon: ClockIcon
+    }
+  ],
+  faq: [
+    {
+      question: "Can Haha coolers integrate with corporate wellness programs?",
+      answer:
+        "Absolutely. We tailor planograms, subsidies, and reporting to Dell Technologies and other innovation corridor employers."
+    },
+    {
+      question: "Do you support resort and convention requirements?",
+      answer:
+        "We provide merchandising playbooks, staffing coordination, and surge stocking strategies for Kalahari Resorts and sports tourism venues."
+    },
+    {
+      question: "What resonates with Round Rock ISD and university students?",
+      answer:
+        "Healthy meals, hydration, premium coffee, and popular snacks keep students and faculty energized between classes and practices."
+    },
+    {
+      question: "Is 24/7 support available?",
+      answer:
+        "Telegram @thevendinglocator delivers real-time assistance during overnight hospital shifts and weekend tournaments."
+    }
+  ]
+}
 export const arlingtonContent: CityLandingContent = {
   slug: 'vending-machines-for-sale-in-arlington-virginia',
   city: 'Arlington',
@@ -1159,7 +1446,6 @@ export const bangorContent: CityLandingContent = {
     }
   ]
 }
-
 export const beaumontContent: CityLandingContent = {
   slug: 'vending-machines-for-sale-in-beaumont-texas',
   city: 'Beaumont',
@@ -1325,7 +1611,6 @@ export const beaumontContent: CityLandingContent = {
     }
   ]
 }
-
 export const bellevueContent: CityLandingContent = {
   slug: 'vending-machines-for-sale-in-bellevue-nebraska',
   city: 'Bellevue',
@@ -1580,7 +1865,7 @@ export const bentonvilleContent: CityLandingContent = {
     {
       title: 'Trail and tourism ready',
       description:
-        'Support cyclists and visitors exploring Bentonvill�� mountain bike trails with hydration-forward assortments.',
+        'Support cyclists and visitors exploring Bentonville mountain bike trails with hydration-forward assortments.',
       icon: TruckIcon
     },
     {
@@ -1708,7 +1993,7 @@ export const billingsContent: CityLandingContent = {
   sidebar: {
     badge: {
       icon: MapPinIcon,
-      label: 'Built for Montan�� Trailhead'
+      label: 'Built for Montana Trailhead'
     },
     items: [
       {
@@ -1823,7 +2108,6 @@ export const billingsContent: CityLandingContent = {
     }
   ]
 }
-
 export const biloxiContent: CityLandingContent = {
   slug: 'vending-machines-for-sale-in-biloxi-mississippi',
   city: 'Biloxi',
@@ -1989,7 +2273,6 @@ export const biloxiContent: CityLandingContent = {
     }
   ]
 }
-
 export const locationAccordionDefaults: LocationAccordionEntry[] = [
   {
     state: 'Florida',
@@ -2013,6 +2296,18 @@ export const locationAccordionDefaults: LocationAccordionEntry[] = [
         description:
           'Lee Health campuses, spring training venues, and Gulf Coast resorts with 24/7 support.',
         href: '/vending-machines-for-sale-in-fort-myers-florida'
+      },
+      {
+        name: 'Palm Bay, Florida',
+        description:
+          'Serve Space Coast manufacturers, healthcare systems, Palm Bay Magnet High, and master-planned communities with Haha AI smart coolers and bilingual 24/7 support.',
+        href: '/vending-machines-for-sale-in-palm-bay-florida'
+      },
+      {
+        name: 'Miami, Florida',
+        description:
+          'Brickell towers, cruise terminals, and hospital districts supported by AI smart coolers.',
+        href: '/vending-machines-for-sale-in-miami-florida'
       },
       {
         name: 'Orlando, Florida',
@@ -2068,6 +2363,12 @@ export const locationAccordionDefaults: LocationAccordionEntry[] = [
         href: '/vending-machines-for-sale-in-fairbanks-alaska'
       },
       {
+        name: 'Homer, Alaska',
+        description:
+          'Harbor tourism, charter fleets, and coastal healthcare supported by AI smart coolers.',
+        href: '/vending-machines-for-sale-in-homer-alaska'
+      },
+      {
         name: 'Juneau, Alaska',
         description: 'Capital city AI cooler rollout coming soon.',
         comingSoon: true
@@ -2110,6 +2411,66 @@ export const locationAccordionDefaults: LocationAccordionEntry[] = [
         href: '/vending-machines-for-sale-in-garland-texas'
       },
       {
+        name: 'McKinney, Texas',
+        description:
+          'Collin County corporate campuses, aviation, and luxury residential amenities.',
+        href: '/vending-machines-for-sale-in-mckinney-texas'
+      },
+      {
+        name: 'Mesquite, Texas',
+        description:
+          'Rodeo arenas, Town East Mall, and East Dallas healthcare with nonstop vending support.',
+        href: '/vending-machines-for-sale-in-mesquite-texas'
+      },
+      {
+        name: 'Pearland, Texas',
+        description:
+          'Texas Medical Center commuters, petrochemical plants, and master-planned communities.',
+        href: '/vending-machines-for-sale-in-pearland-texas'
+      },
+      {
+        name: 'Richardson, Texas',
+        description:
+          'Telecom Corridor® campuses, UT Dallas, and Baylor Scott & White deployments with 24/7 support.',
+        href: '/vending-machines-for-sale-in-richardson-texas'
+      },
+      {
+        name: 'Round Rock, Texas',
+        description:
+          'Dell Technologies, Baylor Scott & White, and Kalahari Resorts with Austin-area coverage.',
+        href: '/vending-machines-for-sale-in-round-rock-texas'
+      },
+      {
+        name: 'Killeen, Texas',
+        description:
+          'Fort Cavazos military, hospital, and campus deployments guided by on-base specialists.',
+        href: '/vending-machines-for-sale-in-killeen-texas'
+      },
+      {
+        name: 'League City, Texas',
+        description:
+          'NASA contractors, UTMB clinics, and coastal master-planned amenities.',
+        href: '/vending-machines-for-sale-in-league-city-texas'
+      },
+      {
+        name: 'Lewisville, Texas',
+        description:
+          'I-35E logistics, medical campuses, and lakeside communities with AI smart coolers.',
+        href: '/vending-machines-for-sale-in-lewisville-texas'
+      },
+      {
+        name: 'Laredo, Texas',
+        description:
+          'Cross-border logistics, higher education, and medical districts with bilingual support.',
+        href: '/vending-machines-for-sale-in-laredo-texas'
+      },
+      {
+        name: 'McAllen, Texas',
+        description:
+          'Rio Grande Valley healthcare, retail, and border logistics with bilingual merchandising.',
+        href: '/vending-machines-for-sale-in-mcallen-texas'
+      },
+      {
         name: 'Austin, Texas',
         description: 'Tech campuses, co-working hubs, and luxury multifamily properties in the Texas capital.',
         comingSoon: true
@@ -2145,8 +2506,9 @@ export const locationAccordionDefaults: LocationAccordionEntry[] = [
       },
       {
         name: 'Portland, Maine',
-        description: 'Coastal Maine rollouts coming soon.',
-        comingSoon: true
+        description:
+          'MaineHealth campuses, waterfront hospitality, and tech startups with nonstop support.',
+        href: '/vending-machines-for-sale-in-portland-maine'
       }
     ]
   },
@@ -2162,8 +2524,32 @@ export const locationAccordionDefaults: LocationAccordionEntry[] = [
         href: '/vending-machines-for-sale-in-bellevue-nebraska'
       },
       {
+        name: 'Lincoln, Nebraska',
+        description:
+          'State government, UNL, and healthcare campuses powered by Haha smart coolers.',
+        href: '/vending-machines-for-sale-in-lincoln-nebraska'
+      },
+      {
         name: 'Omaha, Nebraska',
         description: 'Downtown and West Omaha expansion coming soon.',
+        comingSoon: true
+      }
+    ]
+  },
+  {
+    state: 'New Mexico',
+    emoji: '🛰️',
+    tagline: 'Mesilla Valley aerospace and university corridor',
+    cities: [
+      {
+        name: 'Las Cruces, New Mexico',
+        description:
+          'NMSU campuses, NASA White Sands, and healthcare deployments with desert-ready support.',
+        href: '/vending-machines-for-sale-in-las-cruces-new-mexico'
+      },
+      {
+        name: 'Albuquerque, New Mexico',
+        description: 'Duke City expansion coming soon.',
         comingSoon: true
       }
     ]
@@ -2198,8 +2584,50 @@ export const locationAccordionDefaults: LocationAccordionEntry[] = [
         href: '/vending-machines-for-sale-in-fort-smith-arkansas'
       },
       {
+        name: 'North Little Rock, Arkansas',
+        description:
+          'Camp Robinson, logistics corridors, and Simmons Bank Arena with nonstop support.',
+        href: '/vending-machines-for-sale-in-north-little-rock-arkansas'
+      },
+      {
+        name: 'Pine Bluff, Arkansas',
+        description:
+          'Jefferson Regional, UAPB, and Saracen Casino Resort with AI vending and 24/7 assistance.',
+        href: '/vending-machines-for-sale-in-pine-bluff-arkansas'
+      },
+      {
+        name: 'Rogers, Arkansas',
+        description:
+          'Walmart suppliers, Mercy Hospital, and Pinnacle Hills hospitality with premium smart coolers.',
+        href: '/vending-machines-for-sale-in-rogers-arkansas'
+      },
+      {
         name: 'Little Rock, Arkansas',
         description: 'State capital rollout coming soon.',
+        comingSoon: true
+      }
+    ]
+  },
+  {
+    state: 'Connecticut',
+    emoji: '🏛️',
+    tagline: 'Insurance capital and Hartford County innovation',
+    cities: [
+      {
+        name: 'Hartford, Connecticut',
+        description:
+          'Insurance HQ, hospitals, and universities supported by Haha AI smart coolers.',
+        href: '/vending-machines-for-sale-in-hartford-connecticut'
+      },
+      {
+        name: 'Norwalk, Connecticut',
+        description:
+          'Fairfield County corporate, healthcare, and commuter deployments with bilingual support.',
+        href: '/vending-machines-for-sale-in-norwalk-connecticut'
+      },
+      {
+        name: 'Stamford, Connecticut',
+        description: 'Metro North corporate deployments coming soon.',
         comingSoon: true
       }
     ]
@@ -2226,6 +2654,49 @@ export const locationAccordionDefaults: LocationAccordionEntry[] = [
         description:
           'Agriprocessing plants, Millikin University, and hospital networks powered by Haha smart coolers.',
         href: '/vending-machines-for-sale-in-decatur-illinois'
+      },
+      {
+        name: 'Moline, Illinois',
+        description:
+          'John Deere headquarters, airport logistics, and riverfront tourism with nonstop support.',
+        href: '/vending-machines-for-sale-in-moline-illinois'
+      },
+      {
+        name: 'Naperville, Illinois',
+        description:
+          'Healthcare, innovation corridor, and commuter campuses with premium vending experiences.',
+        href: '/vending-machines-for-sale-in-naperville-illinois'
+      },
+      {
+        name: 'Peoria, Illinois',
+        description:
+          'Caterpillar HQ, OSF HealthCare, and Bradley University with telemetry-backed vending.',
+        href: '/vending-machines-for-sale-in-peoria-illinois'
+      },
+      {
+        name: 'Rockford, Illinois',
+        description:
+          'Aerospace manufacturing, healthcare, and downtown innovation spaces with nonstop support.',
+        href: '/vending-machines-for-sale-in-rockford-illinois'
+      }
+    ]
+  },
+  {
+    state: 'Kansas',
+    emoji: '🌻',
+    tagline: 'Johnson County innovation and logistics hub',
+    cities: [
+      {
+        name: 'Olathe, Kansas',
+        description:
+          'Garmin HQ, Olathe Health, and logistics parks supported by AI-powered vending.',
+        href: '/vending-machines-for-sale-in-olathe-kansas'
+      },
+      {
+        name: 'Overland Park, Kansas',
+        description:
+          'Healthcare, corporate campuses, and convention districts with nonstop smart cooler support.',
+        href: '/vending-machines-for-sale-in-overland-park-kansas'
       }
     ]
   },
@@ -2251,6 +2722,24 @@ export const locationAccordionDefaults: LocationAccordionEntry[] = [
         description:
           'Mining operations, Montana Tech, and healthcare campuses supported by rugged smart coolers.',
         href: '/vending-machines-for-sale-in-butte-montana'
+      },
+      {
+        name: 'Missoula, Montana',
+        description:
+          'University of Montana, healthcare, and tourism venues with Rocky Mountain-ready vending.',
+        href: '/vending-machines-for-sale-in-missoula-montana'
+      },
+      {
+        name: 'Great Falls, Montana',
+        description:
+          'Malmstrom AFB, Benefis Health, and riverfront tourism with 24/7 supported smart coolers.',
+        href: '/vending-machines-for-sale-in-great-falls-montana'
+      },
+      {
+        name: 'Helena, Montana',
+        description:
+          "State government, St. Peter's Health, and Carroll College deployments for Montana's capital.",
+        href: '/vending-machines-for-sale-in-helena-montana'
       }
     ]
   },
@@ -2266,8 +2755,20 @@ export const locationAccordionDefaults: LocationAccordionEntry[] = [
         href: '/vending-machines-for-sale-in-carson-city-nevada'
       },
       {
+        name: 'North Las Vegas, Nevada',
+        description:
+          'Nellis AFB, Apex Industrial Park, and medical campuses supported by desert-ready coolers.',
+        href: '/vending-machines-for-sale-in-north-las-vegas-nevada'
+      },
+      {
         name: 'Reno, Nevada',
-        description: 'High-desert expansion coming soon.',
+        description:
+          'Tech manufacturing, UNR, and hospitality venues with AI-powered smart coolers.',
+        href: '/vending-machines-for-sale-in-reno-nevada'
+      },
+      {
+        name: 'Lake Tahoe, Nevada',
+        description: 'Lake Tahoe resort deployments coming soon.',
         comingSoon: true
       }
     ]
@@ -2284,9 +2785,22 @@ export const locationAccordionDefaults: LocationAccordionEntry[] = [
         href: '/vending-machines-for-sale-in-biloxi-mississippi'
       },
       {
+        name: 'Gulfport, Mississippi',
+        description:
+          'Port logistics, cruise terminals, and casino resorts powered by Haha smart coolers.',
+        href: '/vending-machines-for-sale-in-gulfport-mississippi'
+      },
+      {
+        name: 'Hattiesburg, Mississippi',
+        description:
+          'USM campuses, Forrest Health, and Camp Shelby deployments with 24/7 support.',
+        href: '/vending-machines-for-sale-in-hattiesburg-mississippi'
+      },
+      {
         name: 'Jackson, Mississippi',
-        description: 'Capital city deployment coming soon.',
-        comingSoon: true
+        description:
+          'State government, medical district, and campus rollouts for the capital city.',
+        href: '/vending-machines-for-sale-in-jackson-mississippi'
       }
     ]
   },
@@ -2326,7 +2840,6 @@ export const locationAccordionDefaults: LocationAccordionEntry[] = [
     ]
   }
 ]
-
 export const bloomingtonContent: CityLandingContent = {
   slug: "vending-machines-for-sale-in-bloomington-illinois",
   city: "Bloomington",
@@ -2609,7 +3122,6 @@ export const bozemanContent: CityLandingContent = {
     }
   ]
 }
-
 export const butteContent: CityLandingContent = {
   slug: "vending-machines-for-sale-in-butte-montana",
   city: "Butte",
@@ -3023,7 +3535,6 @@ export const carsonCityContent: CityLandingContent = {
     }
   ]
 }
-
 export const champaignUrbanaContent: CityLandingContent = {
   slug: "vending-machines-for-sale-in-champaign-urbana-illinois",
   city: "Champaign–Urbana",
@@ -3300,7 +3811,6 @@ export const conwayContent: CityLandingContent = {
     }
   ]
 }
-
 export const cranstonContent: CityLandingContent = {
   slug: "vending-machines-for-sale-in-cranston-rhode-island",
   city: "Cranston",
@@ -3714,7 +4224,6 @@ export const dentonContent: CityLandingContent = {
     }
   ]
 }
-
 export const doverContent: CityLandingContent = {
   slug: "vending-machines-for-sale-in-dover-delaware",
   city: "Dover",
@@ -3988,7 +4497,6 @@ export const eugeneContent: CityLandingContent = {
     }
   ]
 }
-
 export const evanstonContent: CityLandingContent = {
   slug: "vending-machines-for-sale-in-evanston-illinois",
   city: "Evanston",
@@ -4400,7 +4908,6 @@ export const fayettevilleContent: CityLandingContent = {
     }
   ]
 }
-
 export const fortLauderdaleContent: CityLandingContent = {
   slug: "vending-machines-for-sale-in-fort-lauderdale-florida",
   city: "Fort Lauderdale",
@@ -4676,7 +5183,6 @@ export const fortMyersContent: CityLandingContent = {
     }
   ]
 }
-
 export const fortSmithContent: CityLandingContent = {
   slug: "vending-machines-for-sale-in-fort-smith-arkansas",
   city: "Fort Smith",
@@ -5087,4 +5593,5057 @@ export const garlandContent: CityLandingContent = {
     }
   ]
 }
+export const greatFallsContent: CityLandingContent = {
+  slug: "vending-machines-for-sale-in-great-falls-montana",
+  city: "Great Falls",
+  state: "Montana",
+  hero: {
+    eyebrow: {
+      icon: SparklesIcon,
+      label: "Smart Vending • Great Falls, MT"
+    },
+    headline: {
+      pre: "Vending Machines for Sale in",
+      highlight: "Great Falls, Montana"
+    },
+    description:
+      "Equip Malmstrom Air Force Base, Benefis Health System, and downtown Great Falls with Haha AI smart coolers that thrive in demanding northern climates.",
+    bullets: [
+      {
+        icon: ShieldCheckIcon,
+        text: "Secure, warranty-backed hardware trusted by military, healthcare, and hospitality buyers"
+      },
+      {
+        icon: ClockIcon,
+        text: "Coordinated freight from Billings and Spokane with crews who understand Cascade County access points"
+      },
+      {
+        icon: ChatBubbleOvalLeftEllipsisIcon,
+        text: "Telegram @thevendinglocator monitors operators across Great Falls, Helena, and Havre 24/7"
+      }
+    ],
+    ctas: [
+      {
+        label: "Explore Smart Coolers",
+        href: "/haha-coolers",
+        variant: "primary"
+      },
+      {
+        label: "Talk to Great Falls Experts",
+        href: "/contact",
+        variant: "secondary"
+      }
+    ],
+    supportLink: {
+      icon: ChatBubbleOvalLeftEllipsisIcon,
+      label: "Telegram @thevendinglocator",
+      href: "https://t.me/thevendinglocator"
+    }
+  },
+  sidebar: {
+    badge: {
+      icon: MapPinIcon,
+      label: "Built for Great Falls"
+    },
+    items: [
+      {
+        title: "Primary verticals:",
+        description: "Malmstrom AFB, Benefis Health, tourism, and industrial logistics."
+      },
+      {
+        title: "Weather ready:",
+        description: "Low-temperature performance with insulated glass and remote diagnostics."
+      },
+      {
+        title: "Placement support:",
+        description: "Capital City Market, West Bank Landing, and electric co-op workplaces."
+      },
+      {
+        title: "Always-on support:",
+        description: "Telegram masterminds covering Cascade County and central Montana."
+      }
+    ]
+  },
+  coolerLineup: jacksonvilleContent.coolerLineup,
+  sellingPoints: [
+    {
+      title: "Defense campus resilience",
+      description:
+        "Deliver mission-ready fresh food and beverage access inside Malmstrom Air Force Base and associated contractor facilities.",
+      icon: ShieldCheckIcon
+    },
+    {
+      title: "Healthcare nourishment",
+      description:
+        "Provide Benefis Health System, Great Falls Clinic, and regional care centers with 24/7 fresh options.",
+      icon: BuildingOfficeIcon
+    },
+    {
+      title: "Tourism and events",
+      description:
+        "Keep Montana ExpoPark, riverfront hotels, and adventure outfitters stocked for peak seasons.",
+      icon: CubeIcon
+    }
+  ],
+  neighborhoods: [
+    "Malmstrom AFB and support housing districts",
+    "Downtown Great Falls and Central Avenue West",
+    "Benefis Health System campuses",
+    "Fox Farm, West Ridge, and Marketplace neighborhoods",
+    "Montana ExpoPark and riverfront recreation hubs"
+  ],
+  deliverables: [
+    "Procurement decks tailored for defense contracting and healthcare compliance teams.",
+    "Planograms balancing grab-and-go meals, Montana-made snacks, and energy beverages.",
+    "Regulatory checklists for Montana Department of Public Health and Human Services."
+  ],
+  logistics: [
+    {
+      title: "Rocky Mountain freight",
+      description: "Scheduled delivery windows with installers versed in freight elevators and hangar access.",
+      icon: TruckIcon
+    },
+    {
+      title: "Warranty coverage",
+      description: "ETL-certified machines with optional extended coverage for defense and healthcare buyers.",
+      icon: ShieldCheckIcon
+    },
+    {
+      title: "Telemetry coaching",
+      description: "Remote monitoring walkthroughs to manage stocking between Great Falls, Helena, and Havre.",
+      icon: ClockIcon
+    }
+  ],
+  faq: [
+    {
+      question: "How do Haha coolers handle Montana winters?",
+      answer:
+        "Each cooler ships with insulated glass, intelligent defrost controls, and proactive telemetry alerts so your inventory stays protected even when dock doors cycle in sub-zero weather."
+    },
+    {
+      question: "Can I deploy on Malmstrom Air Force Base?",
+      answer:
+        "Yes. We provide documentation packets, insurance certificates, and escort briefings required for on-base installation teams."
+    },
+    {
+      question: "What payment options are popular in Great Falls?",
+      answer:
+        "Contactless credit, mobile wallets, and corporate badge integrations perform well across defense, healthcare, and hospitality placements."
+    },
+    {
+      question: "Do you help with merchandising for outdoor events?",
+      answer:
+        "Our support team can recommend product mixes for Montana ExpoPark, fishing outfitters, and trailhead concessions, including cold-chain handling tips."
+    }
+  ]
+}
 
+export const gulfportContent: CityLandingContent = {
+  slug: "vending-machines-for-sale-in-gulfport-mississippi",
+  city: "Gulfport",
+  state: "Mississippi",
+  hero: {
+    eyebrow: {
+      icon: SparklesIcon,
+      label: "Smart Vending • Gulfport, MS"
+    },
+    headline: {
+      pre: "Vending Machines for Sale in",
+      highlight: "Gulfport, Mississippi"
+    },
+    description:
+      "Serve Gulf Coast casinos, Port of Gulfport logistics, and Keesler Air Force Base housing with humidity-ready Haha AI smart coolers.",
+    bullets: [
+      {
+        icon: ShieldCheckIcon,
+        text: "Coastal-rated hardware with desiccant glazing and remote humidity monitoring"
+      },
+      {
+        icon: ClockIcon,
+        text: "Coordinated freight with installers covering Gulfport, Biloxi, and Long Beach"
+      },
+      {
+        icon: ChatBubbleOvalLeftEllipsisIcon,
+        text: "24/7 Telegram support to troubleshoot during casino peak hours and overnight restocks"
+      }
+    ],
+    ctas: [
+      {
+        label: "Explore Smart Coolers",
+        href: "/haha-coolers",
+        variant: "primary"
+      },
+      {
+        label: "Talk to Gulfport Experts",
+        href: "/contact",
+        variant: "secondary"
+      }
+    ],
+    supportLink: {
+      icon: ChatBubbleOvalLeftEllipsisIcon,
+      label: "Telegram @thevendinglocator",
+      href: "https://t.me/thevendinglocator"
+    }
+  },
+  sidebar: {
+    badge: {
+      icon: MapPinIcon,
+      label: "Built for Gulfport-Biloxi"
+    },
+    items: [
+      {
+        title: "Primary verticals:",
+        description: "Gaming resorts, ports, military housing, and healthcare campuses."
+      },
+      {
+        title: "Coastal compliance:",
+        description: "Stainless hardware, sealed refrigeration, and remote diagnostics for humid climates."
+      },
+      {
+        title: "Tourism insights:",
+        description: "On-premise merchandising tuned for casino guests and cruise traffic."
+      },
+      {
+        title: "Always-on support:",
+        description: "Live Telegram response across Harrison County and the Mississippi Gulf Coast."
+      }
+    ]
+  },
+  coolerLineup: jacksonvilleContent.coolerLineup,
+  sellingPoints: [
+    {
+      title: "Casino-ready experiences",
+      description:
+        "Enable grab-and-go premium beverages, snacks, and fresh food through cashless, frictionless vending for Gulf Coast resorts.",
+      icon: CubeIcon
+    },
+    {
+      title: "Port and logistics resilience",
+      description:
+        "Deploy smart coolers for port warehouses, seafood processors, and logistics corridors needing 24/7 nourishment.",
+      icon: TruckIcon
+    },
+    {
+      title: "Military housing amenities",
+      description:
+        "Support Keesler AFB, NCBC Gulfport, and Coast Guard facilities with mission-ready vending and support.",
+      icon: ShieldCheckIcon
+    }
+  ],
+  neighborhoods: [
+    "Downtown Gulfport and Fishbone Alley entertainment district",
+    "Port of Gulfport warehouses and cruise terminals",
+    "Gulfport-Biloxi International Airport and aerospace corridor",
+    "Seaway Road industrial park and medical campuses",
+    "Keesler AFB housing and training facilities"
+  ],
+  deliverables: [
+    "Casino brand alignment decks highlighting premium merchandising and cashless payments.",
+    "Planograms tailored for resort guests, shift crews, and military families.",
+    "Mississippi Department of Health compliance summary for cold-holding and food safety."
+  ],
+  logistics: [
+    {
+      title: "Gulf Coast freight teams",
+      description: "White-glove delivery scheduled around casino floors, port security, and hurricane readiness plans.",
+      icon: TruckIcon
+    },
+    {
+      title: "Warranty and coastal care",
+      description: "Humidity-rated components backed by US-based service partners and optional dehumidifier kits.",
+      icon: ShieldCheckIcon
+    },
+    {
+      title: "Operations coaching",
+      description: "Telegram workshops covering hurricane prep, surge stocking, and casino compliance.",
+      icon: ClockIcon
+    }
+  ],
+  faq: [
+    {
+      question: "How do Haha coolers handle Gulf Coast humidity?",
+      answer:
+        "Double-glazed glass with desiccant, sealed refrigeration, and remote telemetry alerts ensure product integrity in coastal climates."
+    },
+    {
+      question: "Can I integrate comps or room charges?",
+      answer:
+        "Yes. We help casinos enable promo codes and API-based comps so guests can redeem offers through the smart cooler checkout flow."
+    },
+    {
+      question: "Do you support military contracting requirements?",
+      answer:
+        "We provide cage codes, insurance certificates, and delivery documentation needed for Keesler AFB and federal procurement."
+    },
+    {
+      question: "What products perform best along the Gulf Coast?",
+      answer:
+        "Cold beverages, premium coffee, fresh sandwiches, and coastal snacks perform well for casino guests, port crews, and travelers."
+    }
+  ]
+}
+export const hartfordContent: CityLandingContent = {
+  slug: "vending-machines-for-sale-in-hartford-connecticut",
+  city: "Hartford",
+  state: "Connecticut",
+  hero: {
+    eyebrow: {
+      icon: SparklesIcon,
+      label: "Smart Vending • Hartford, CT"
+    },
+    headline: {
+      pre: "Vending Machines for Sale in",
+      highlight: "Hartford, Connecticut"
+    },
+    description:
+      "Deliver Haha AI smart coolers to insurance carriers, hospitals, universities, and downtown innovators across Hartford County.",
+    bullets: [
+      {
+        icon: ShieldCheckIcon,
+        text: "Enterprise procurement support for insurance, finance, and healthcare buyers"
+      },
+      {
+        icon: ClockIcon,
+        text: "Coordinated freight covering Hartford, West Hartford, and the I-84 innovation corridor"
+      },
+      {
+        icon: ChatBubbleOvalLeftEllipsisIcon,
+        text: "Telegram @thevendinglocator provides 24/7 operator support for Hartford and Central Connecticut"
+      }
+    ],
+    ctas: [
+      {
+        label: "Explore Smart Coolers",
+        href: "/haha-coolers",
+        variant: "primary"
+      },
+      {
+        label: "Talk to Hartford Experts",
+        href: "/contact",
+        variant: "secondary"
+      }
+    ],
+    supportLink: {
+      icon: ChatBubbleOvalLeftEllipsisIcon,
+      label: "Telegram @thevendinglocator",
+      href: "https://t.me/thevendinglocator"
+    }
+  },
+  sidebar: {
+    badge: {
+      icon: MapPinIcon,
+      label: "Built for Hartford County"
+    },
+    items: [
+      {
+        title: "Primary verticals:",
+        description: "Insurance HQ, hospitals, universities, and advanced manufacturing."
+      },
+      {
+        title: "Compliance ready:",
+        description: "SOC- and HIPAA-aware deployments for regulated office environments."
+      },
+      {
+        title: "Innovation hubs:",
+        description: "Stanley + Tech, UConn Hartford, and InsurTech accelerator placements."
+      },
+      {
+        title: "Always-on support:",
+        description: "Live Telegram response spanning Hartford, New Britain, and New Haven corridors."
+      }
+    ]
+  },
+  coolerLineup: jacksonvilleContent.coolerLineup,
+  sellingPoints: [
+    {
+      title: "Insurance campus productivity",
+      description:
+        "Keep The Hartford, Travelers, and Aetna teams energized with smart coolers in office towers and satellite campuses.",
+      icon: BuildingOfficeIcon
+    },
+    {
+      title: "Academic and medical reach",
+      description:
+        "Serve UConn Health, Trinity College, and Hartford Hospital with reliable fresh food and beverage access.",
+      icon: LifebuoyIcon
+    },
+    {
+      title: "Advanced manufacturing support",
+      description:
+        "Place coolers inside Pratt & Whitney, aerospace suppliers, and industrial parks with remote monitoring.",
+      icon: TruckIcon
+    }
+  ],
+  neighborhoods: [
+    "Downtown Hartford insurance and government core",
+    "Asylum Hill and Farmington Avenue corporate corridor",
+    "Hartford HealthCare and St. Francis Hospital campuses",
+    "University of Hartford and Trinity College districts",
+    "East Hartford aerospace and manufacturing parks"
+  ],
+  deliverables: [
+    "Executive-ready ROI decks tailored to insurance, healthcare, and university stakeholders.",
+    "Planograms featuring premium coffee, grab-and-go meals, and locally loved snacks.",
+    "Compliance documentation for Connecticut health departments and corporate facility teams."
+  ],
+  logistics: [
+    {
+      title: "I-91 / I-84 freight coverage",
+      description: "White-glove delivery crews with union compliance experience for downtown towers and campuses.",
+      icon: TruckIcon
+    },
+    {
+      title: "Regulated environment support",
+      description: "Telemetry, audit logs, and managed access features for secure office floors and hospitals.",
+      icon: ShieldCheckIcon
+    },
+    {
+      title: "Operator coaching",
+      description: "Telegram sessions on insurance workforce demand cycles and semester-based stocking strategies.",
+      icon: ClockIcon
+    }
+  ],
+  faq: [
+    {
+      question: "Can Haha coolers operate in secure corporate towers?",
+      answer:
+        "Yes. We provide access control integrations, network coordination, and installation documents approved by building engineering teams."
+    },
+    {
+      question: "Do you help with Hartford union building requirements?",
+      answer:
+        "Our logistics partners handle COI, elevator reservations, and union labor where required for downtown Hartford deliveries."
+    },
+    {
+      question: "What resonates with Hartford professionals?",
+      answer:
+        "Premium coffee, healthy grab-and-go meals, and quick snacks for hybrid workforces perform exceptionally well."
+    },
+    {
+      question: "How fast can replacements ship if needed?",
+      answer:
+        "We maintain rapid-response parts and swap programs through US distributors with direct lines into Hartford County."
+    }
+  ]
+}
+
+export const hattiesburgContent: CityLandingContent = {
+  slug: "vending-machines-for-sale-in-hattiesburg-mississippi",
+  city: "Hattiesburg",
+  state: "Mississippi",
+  hero: {
+    eyebrow: {
+      icon: SparklesIcon,
+      label: "Smart Vending • Hattiesburg, MS"
+    },
+    headline: {
+      pre: "Vending Machines for Sale in",
+      highlight: "Hattiesburg, Mississippi"
+    },
+    description:
+      "Empower University of Southern Mississippi, Forrest Health, and Camp Shelby operators with Haha AI smart coolers and 24/7 support.",
+    bullets: [
+      {
+        icon: ShieldCheckIcon,
+        text: "Campus, military, and healthcare ready hardware with verified warranties"
+      },
+      {
+        icon: ClockIcon,
+        text: "Coordinated installations across Hattiesburg, Laurel, and the Pine Belt within firm timelines"
+      },
+      {
+        icon: ChatBubbleOvalLeftEllipsisIcon,
+        text: "Telegram @thevendinglocator support community serving vendors along Highway 49 and I-59"
+      }
+    ],
+    ctas: [
+      {
+        label: "Explore Smart Coolers",
+        href: "/haha-coolers",
+        variant: "primary"
+      },
+      {
+        label: "Talk to Hattiesburg Experts",
+        href: "/contact",
+        variant: "secondary"
+      }
+    ],
+    supportLink: {
+      icon: ChatBubbleOvalLeftEllipsisIcon,
+      label: "Telegram @thevendinglocator",
+      href: "https://t.me/thevendinglocator"
+    }
+  },
+  sidebar: {
+    badge: {
+      icon: MapPinIcon,
+      label: "Built for the Pine Belt"
+    },
+    items: [
+      {
+        title: "Primary verticals:",
+        description: "Higher education, healthcare, technology, and hospitality."
+      },
+      {
+        title: "Power your routes:",
+        description: "Telemetry tuned to student schedules, hospital shifts, and local business hours."
+      },
+      {
+        title: "Localized onboarding:",
+        description: "Support for Southern Miss procurement, local healthcare facilities, and campus vendor approvals."
+      },
+      {
+        title: "Always-on support:",
+        description: "Telegram masterminds linking operators across Hattiesburg, Laurel, and the University of Southern Mississippi."
+      }
+    ]
+  },
+  coolerLineup: jacksonvilleContent.coolerLineup,
+  sellingPoints: [
+    {
+      title: "University of Southern Mississippi",
+      description: "Deliver cashless grab-and-go across campus dining halls, residence halls, and athletic facilities.",
+      icon: CubeIcon
+    },
+    {
+      title: "Healthcare and wellness",
+      description: "Serve Forrest General Medical Center, Southern Miss Student Health Center, and outpatient clinics with reliable fresh food and beverage options.",
+      icon: ShieldCheckIcon
+    },
+    {
+      title: "Local business connectivity",
+      description: "Support local restaurants, cafes, and retail outlets with smart vending solutions that cater to student and staff needs.",
+      icon: SparklesIcon
+    }
+  ],
+  neighborhoods: [
+    "Southern Miss campus core",
+    "Downtown Hattiesburg and Uptown business district",
+    "University of Southern Mississippi districts",
+    "Forrest General Medical Center and healthcare corridor",
+    "Camp Shelby and military housing"
+  ],
+  deliverables: [
+    "Campus and healthcare placement decks with amenity ROI.",
+    "Planograms featuring local favorites, healthier options, and student-friendly beverages.",
+    "Guides covering Mississippi health regulations and campus sustainability goals."
+  ],
+  logistics: [
+    {
+      title: "South Mississippi freight",
+      description: "White-glove delivery crews schedule around campus docks, hospital receiving, and local business hours.",
+      icon: TruckIcon
+    },
+    {
+      title: "Warranty and compliance",
+      description: "ETL-certified equipment, 1-year parts warranty, and Mississippi Department of Health guidance.",
+      icon: ShieldCheckIcon
+    },
+    {
+      title: "Operator coaching",
+      description: "Telegram sessions covering semester launches, shift changes, and healthcare stocking.",
+      icon: ClockIcon
+    }
+  ],
+  faq: [
+    {
+      question: "How do I secure placements on Southern Miss campuses?",
+      answer: "We provide vendor onboarding checklists, pitch decks, and references tailored to university procurement teams."
+    },
+    {
+      question: "What products resonate with Hattiesburg audiences?",
+      answer: "Hearty meals, energy drinks, protein snacks, and local coffee are popular with students and staff."
+    },
+    {
+      question: "Can the coolers integrate with campus meal programs?",
+      answer: "Yes. We can highlight nutritional data, offer employer-subsidised SKUs, and push seasonal campaigns via dynamic pricing."
+    },
+    {
+      question: "Is support available during overnight restocking?",
+      answer: "Telegram @thevendinglocator operates 24/7 with operators across South Mississippi ready to troubleshoot in real time."
+    }
+  ]
+}
+
+export const helenaContent: CityLandingContent = {
+  slug: "vending-machines-for-sale-in-helena-montana",
+  city: "Helena",
+  state: "Montana",
+  hero: {
+    eyebrow: {
+      icon: SparklesIcon,
+      label: "Smart Vending • Helena, MT"
+    },
+    headline: {
+      pre: "Vending Machines for Sale in",
+      highlight: "Helena, Montana"
+    },
+    description:
+      "Support Montana state agencies, St. Peter's Health, Carroll College, and outdoor tourism operators with Haha AI smart coolers backed by continuous human support.",
+    bullets: [
+      {
+        icon: ShieldCheckIcon,
+        text: "Procurement-ready documentation for state government, healthcare, and education buyers"
+      },
+      {
+        icon: ClockIcon,
+        text: "Timed delivery windows for I-15, US-12, and Helena Regional Airport logistics"
+      },
+      {
+        icon: ChatBubbleOvalLeftEllipsisIcon,
+        text: "Telegram @thevendinglocator community serving operators across Helena and the Upper Missouri"
+      }
+    ],
+    ctas: [
+      {
+        label: "Explore Smart Coolers",
+        href: "/haha-coolers",
+        variant: "primary"
+      },
+      {
+        label: "Talk to Helena Experts",
+        href: "/contact",
+        variant: "secondary"
+      }
+    ],
+    supportLink: {
+      icon: ChatBubbleOvalLeftEllipsisIcon,
+      label: "Telegram @thevendinglocator",
+      href: "https://t.me/thevendinglocator"
+    }
+  },
+  sidebar: {
+    badge: {
+      icon: MapPinIcon,
+      label: "Built for Montana's Capital"
+    },
+    items: [
+      {
+        title: "Primary verticals:",
+        description: "State agencies, healthcare, higher education, and tourism."
+      },
+      {
+        title: "Placement playbooks:",
+        description: "Montana State Capitol, St. Peter's Health, Helena College, and Great Northern Town Center."
+      },
+      {
+        title: "Mountain climate readiness:",
+        description: "Telemetry-backed temperature control and defrost cycles for northern winters."
+      },
+      {
+        title: "Always-on support:",
+        description: "Telegram masterminds connecting Helena, Great Falls, and Bozeman operators."
+      }
+    ]
+  },
+  coolerLineup: jacksonvilleContent.coolerLineup,
+  sellingPoints: [
+    {
+      title: "Government campus amenities",
+      description:
+        "Deliver cashless fresh food and beverages inside the State Capitol complex, agency offices, and judicial buildings.",
+      icon: BuildingOfficeIcon
+    },
+    {
+      title: "Healthcare resilience",
+      description:
+        "Keep St. Peter's Health, VA clinics, and assisted living facilities stocked around the clock.",
+      icon: LifebuoyIcon
+    },
+    {
+      title: "Outdoor economy support",
+      description:
+        "Serve trailhead outfitters, Helena-Lewis and Clark National Forest, and bike tourism hubs with rugged smart coolers.",
+      icon: CubeIcon
+    }
+  ],
+  neighborhoods: [
+    "Montana State Capitol campus and Last Chance Gulch",
+    "Great Northern Town Center and Downtown Helena",
+    "St. Peter's Health medical district",
+    "Carroll College and Helena College campuses",
+    "Helena Regional Airport and Westside industrial parks"
+  ],
+  deliverables: [
+    "State procurement packets with insurance certificates and compliance references.",
+    "Planograms tailored to government staff, healthcare workers, and adventure travelers.",
+    "Guides covering Montana Department of Public Health food safety requirements."
+  ],
+  logistics: [
+    {
+      title: "Continental Divide freight",
+      description: "White-glove installers coordinate around mountain passes and secure government docks.",
+      icon: TruckIcon
+    },
+    {
+      title: "Warranty and compliance",
+      description: "ETL-certified equipment, optional extended warranties, and onsite service coordination.",
+      icon: ShieldCheckIcon
+    },
+    {
+      title: "Operator coaching",
+      description: "Telegram sessions covering legislative session demand, campus rushes, and tourism peaks.",
+      icon: ClockIcon
+    }
+  ],
+  faq: [
+    {
+      question: "Can Haha coolers be placed inside state government buildings?",
+      answer:
+        "Yes. We supply security documents, ADA compliance details, and installation procedures approved for Montana state facilities."
+    },
+    {
+      question: "How do the coolers handle Helena's winter temperatures?",
+      answer:
+        "Insulated glass, automatic defrost cycles, and telemetry alerts keep performance steady even when dock doors open to freezing air."
+    },
+    {
+      question: "Do you support Carroll College deployments?",
+      answer:
+        "We provide student experience proposals, auxiliary services onboarding, and merchandising tuned to campus demand."
+    },
+    {
+      question: "Is remote monitoring included?",
+      answer:
+        "Every Haha cooler ships with app-based telemetry so you can manage restocks and diagnostics from anywhere."
+    }
+  ]
+}
+export const homerContent: CityLandingContent = {
+  slug: "vending-machines-for-sale-in-homer-alaska",
+  city: "Homer",
+  state: "Alaska",
+  hero: {
+    eyebrow: {
+      icon: SparklesIcon,
+      label: "Smart Vending • Homer, AK"
+    },
+    headline: {
+      pre: "Vending Machines for Sale in",
+      highlight: "Homer, Alaska"
+    },
+    description:
+      "Bring Haha AI smart coolers to Homer Harbor, tourism lodges, South Peninsula Hospital, and marine research crews with remote-ready support.",
+    bullets: [
+      {
+        icon: ShieldCheckIcon,
+        text: "Cold-climate hardware with insulated glass and humidity control designed for coastal Alaska"
+      },
+      {
+        icon: ClockIcon,
+        text: "Freight coordination through Anchorage, the Homer Spit, and Alaska Marine Highway schedules"
+      },
+      {
+        icon: ChatBubbleOvalLeftEllipsisIcon,
+        text: "24/7 Telegram support covering the Kenai Peninsula, Kodiak routes, and bush communities"
+      }
+    ],
+    ctas: [
+      {
+        label: "Explore Smart Coolers",
+        href: "/haha-coolers",
+        variant: "primary"
+      },
+      {
+        label: "Talk to Homer Experts",
+        href: "/contact",
+        variant: "secondary"
+      }
+    ],
+    supportLink: {
+      icon: ChatBubbleOvalLeftEllipsisIcon,
+      label: "Telegram @thevendinglocator",
+      href: "https://t.me/thevendinglocator"
+    }
+  },
+  sidebar: {
+    badge: {
+      icon: MapPinIcon,
+      label: "Built for the Kenai Peninsula"
+    },
+    items: [
+      {
+        title: "Primary verticals:",
+        description: "Tourism lodges, charter fleets, healthcare, education, and seafood processing."
+      },
+      {
+        title: "Remote logistics:",
+        description: "Marine freight, bush plane access, and seasonal workforce housing plans."
+      },
+      {
+        title: "Energy resilience:",
+        description: "Backup power guidance and telemetry alerts for coastal storms."
+      },
+      {
+        title: "Always-on support:",
+        description: "Telegram masterminds linking Homer, Kenai, Soldotna, and Kodiak operators."
+      }
+    ]
+  },
+  coolerLineup: jacksonvilleContent.coolerLineup,
+  sellingPoints: [
+    {
+      title: "Tourism and hospitality",
+      description:
+        "Serve luxury lodges, bed-and-breakfasts, and adventure outfitters with premium grab-and-go options.",
+      icon: CubeIcon
+    },
+    {
+      title: "Maritime workforce support",
+      description:
+        "Keep harbor crews, charter captains, and seafood processors fueled during long shifts on the Homer Spit.",
+      icon: TruckIcon
+    },
+    {
+      title: "Healthcare and education",
+      description:
+        "Provide South Peninsula Hospital and Kachemak Bay Campus with 24/7 fresh food and hydration.",
+      icon: LifebuoyIcon
+    }
+  ],
+  neighborhoods: [
+    "Homer Spit tourism and harbor district",
+    "Old Town Homer arts and dining corridor",
+    "South Peninsula Hospital medical campus",
+    "East End Road residential and education centers",
+    "Anchor Point and Nikolaevsk service areas"
+  ],
+  deliverables: [
+    "Tourism amenity decks highlighting premium merchandising and contactless checkout.",
+    "Planograms balancing quick protein, caffeine, and Alaskan-made treats for seasonal staff.",
+    "Guidance on refrigeration performance during ferry schedules, outages, and storm events."
+  ],
+  logistics: [
+    {
+      title: "Kenai logistics network",
+      description: "Partner installers coordinate barge arrivals, highway travel, and air freight to the Homer airport.",
+      icon: TruckIcon
+    },
+    {
+      title: "Warranty coverage",
+      description: "ETL-certified hardware with extended coverage options for remote markets and coastal climate exposure.",
+      icon: ShieldCheckIcon
+    },
+    {
+      title: "Operator coaching",
+      description: "Telegram sessions covering tourism peaks, fishing seasons, and remote monitoring best practices.",
+      icon: ClockIcon
+    }
+  ],
+  faq: [
+    {
+      question: "Can Haha coolers operate reliably in coastal humidity?",
+      answer:
+        "Yes. Double-glazed glass, sealed refrigeration, and desiccant packs maintain clarity and temperature in seaside climates."
+    },
+    {
+      question: "Do you coordinate deliveries to the Homer Spit?",
+      answer:
+        "We schedule installations around tide tables, harbor restrictions, and ferry or barge arrivals so equipment lands safely."
+    },
+    {
+      question: "What assortments do charter guests prefer?",
+      answer:
+        "High-protein snacks, craft beverages, warm breakfast items, and grab-and-go meals perform exceptionally well for charter departures."
+    },
+    {
+      question: "Is remote support available during storms?",
+      answer:
+        "Telegram @thevendinglocator keeps Kenai and coastal operators covered 24/7 with troubleshooting, restock guidance, and outage prep."
+    }
+  ]
+}
+
+export const jacksonContent: CityLandingContent = {
+  slug: "vending-machines-for-sale-in-jackson-mississippi",
+  city: "Jackson",
+  state: "Mississippi",
+  hero: {
+    eyebrow: {
+      icon: SparklesIcon,
+      label: "Smart Vending • Jackson, MS"
+    },
+    headline: {
+      pre: "Vending Machines for Sale in",
+      highlight: "Jackson, Mississippi"
+    },
+    description:
+      "Modernize state government campuses, healthcare systems, and university halls across the Jackson metro with Haha AI smart coolers and round-the-clock support.",
+    bullets: [
+      {
+        icon: ShieldCheckIcon,
+        text: "Capital-ready procurement packages for state agencies, universities, and enterprise campuses"
+      },
+      {
+        icon: ClockIcon,
+        text: "Coordinated deliveries for downtown Jackson, Flowood, Ridgeland, and Mississippi medical corridors"
+      },
+      {
+        icon: ChatBubbleOvalLeftEllipsisIcon,
+        text: "24/7 Telegram support for Jackson, Hattiesburg, and Gulf Coast operators"
+      }
+    ],
+    ctas: [
+      {
+        label: "Explore Smart Coolers",
+        href: "/haha-coolers",
+        variant: "primary"
+      },
+      {
+        label: "Talk to Jackson Experts",
+        href: "/contact",
+        variant: "secondary"
+      }
+    ],
+    supportLink: {
+      icon: ChatBubbleOvalLeftEllipsisIcon,
+      label: "Telegram @thevendinglocator",
+      href: "https://t.me/thevendinglocator"
+    }
+  },
+  sidebar: {
+    badge: {
+      icon: MapPinIcon,
+      label: "Built for the Capital City"
+    },
+    items: [
+      {
+        title: "Primary verticals:",
+        description: "State government, healthcare, higher education, law firms, and manufacturing."
+      },
+      {
+        title: "Placement support:",
+        description: "Mississippi State Capitol, UMMC, Jackson State University, Nissan Canton, and regional offices."
+      },
+      {
+        title: "Route optimization:",
+        description: "Telemetry insights for multi-site operators across Jackson, Madison, and Rankin counties."
+      },
+      {
+        title: "Always-on support:",
+        description: "Telegram masterminds linking capital-area operators with Gulf Coast and Memphis peers."
+      }
+    ]
+  },
+  coolerLineup: jacksonvilleContent.coolerLineup,
+  sellingPoints: [
+    {
+      title: "Government campus amenities",
+      description:
+        "Provide cashless fresh food inside the Capitol complex, state agency towers, and legal offices along High Street.",
+      icon: BuildingOfficeIcon
+    },
+    {
+      title: "Medical district nourishment",
+      description:
+        "Serve the University of Mississippi Medical Center, St. Dominic Hospital, and Baptist Medical Center with reliable smart vending.",
+      icon: LifebuoyIcon
+    },
+    {
+      title: "University engagement",
+      description:
+        "Deploy coolers at Jackson State University, Millsaps College, and Belhaven University for students and staff.",
+      icon: CubeIcon
+    }
+  ],
+  neighborhoods: [
+    "Downtown Jackson government and legal district",
+    "UMMC and Fondren medical corridor",
+    "Jackson State University and West Jackson",
+    "Flowood and Ridgeland corporate parks",
+    "Canton industrial corridor and Nissan manufacturing complex"
+  ],
+  deliverables: [
+    "Executive-ready decks outlining ROI for government, healthcare, and campus stakeholders.",
+    "Planograms featuring Southern comfort meals, premium coffee, and healthy grab-and-go options.",
+    "Compliance guides covering Mississippi Department of Health, state procurement, and building security requirements."
+  ],
+  logistics: [
+    {
+      title: "Central Mississippi freight",
+      description: "Installers coordinate dock scheduling for government towers, hospitals, and manufacturing plants.",
+      icon: TruckIcon
+    },
+    {
+      title: "Warranty and compliance",
+      description: "ETL-certified hardware, 1-year parts warranty, and optional service agreements for critical sites.",
+      icon: ShieldCheckIcon
+    },
+    {
+      title: "Operator coaching",
+      description: "Telegram sessions covering legislative session peaks, hospital demand, and campus semesters.",
+      icon: ClockIcon
+    }
+  ],
+  faq: [
+    {
+      question: "Can Haha coolers integrate with state agency security requirements?",
+      answer:
+        "We provide background checks, insurance certificates, and installation protocols that align with Mississippi Department of Finance and Administration standards."
+    },
+    {
+      question: "What works best inside medical campuses?",
+      answer:
+        "Fresh meals, hydration, healthy snacks, and overnight restock plans keep care teams energized without leaving campus."
+    },
+    {
+      question: "Do you support historically Black colleges and universities?",
+      answer:
+        "Yes. We partner with Jackson State procurement teams to tailor merchandising, subsidies, and onboarding checklists."
+    },
+    {
+      question: "Is there help available during weather emergencies?",
+      answer:
+        "Telegram @thevendinglocator provides real-time updates, restock guidance, and equipment tips during storms or boil-water advisories."
+    }
+  ]
+}
+export const killeenContent: CityLandingContent = {
+  slug: "vending-machines-for-sale-in-killeen-texas",
+  city: "Killeen",
+  state: "Texas",
+  hero: {
+    eyebrow: {
+      icon: SparklesIcon,
+      label: "Smart Vending • Killeen, TX"
+    },
+    headline: {
+      pre: "Vending Machines for Sale in",
+      highlight: "Killeen, Texas"
+    },
+    description:
+      "Equip Fort Cavazos (Fort Hood), Baylor Scott & White, and Central Texas College with Haha AI smart coolers engineered for high-volume, secure environments.",
+    bullets: [
+      {
+        icon: ShieldCheckIcon,
+        text: "Base-access compliant installations with cage codes, COIs, and escort coordination"
+      },
+      {
+        icon: ClockIcon,
+        text: "Flexible delivery windows for on-post facilities, US 190 corridors, and regional healthcare campuses"
+      },
+      {
+        icon: ChatBubbleOvalLeftEllipsisIcon,
+        text: "24/7 Telegram support covering Killeen, Temple, Copperas Cove, and Waco operators"
+      }
+    ],
+    ctas: [
+      {
+        label: "Explore Smart Coolers",
+        href: "/haha-coolers",
+        variant: "primary"
+      },
+      {
+        label: "Talk to Killeen Experts",
+        href: "/contact",
+        variant: "secondary"
+      }
+    ],
+    supportLink: {
+      icon: ChatBubbleOvalLeftEllipsisIcon,
+      label: "Telegram @thevendinglocator",
+      href: "https://t.me/thevendinglocator"
+    }
+  },
+  sidebar: {
+    badge: {
+      icon: MapPinIcon,
+      label: "Built for Fort Cavazos"
+    },
+    items: [
+      {
+        title: "Primary verticals:",
+        description: "Military bases, healthcare, education, logistics, and hospitality."
+      },
+      {
+        title: "Installation expertise:",
+        description: "On-post DFMWR, barracks, motor pools, hospitals, and Central Texas College."
+      },
+      {
+        title: "Route optimization:",
+        description: "Telemetry tuned to shift rotations, PT schedules, and troop readiness."
+      },
+      {
+        title: "Always-on support:",
+        description: "Telegram masterminds linking Killeen operators with Temple, Austin, and Dallas peers."
+      }
+    ]
+  },
+  coolerLineup: jacksonvilleContent.coolerLineup,
+  sellingPoints: [
+    {
+      title: "Military readiness",
+      description:
+        "Provide grab-and-go nutrition for Fort Cavazos soldiers, civilians, and family members with secure access control.",
+      icon: ShieldCheckIcon
+    },
+    {
+      title: "Healthcare coverage",
+      description:
+        "Serve Carl R. Darnall Army Medical Center, Baylor Scott & White, and AdventHealth Rollins Brook.",
+      icon: LifebuoyIcon
+    },
+    {
+      title: "Education and workforce",
+      description:
+        "Deploy smart coolers at Central Texas College, Texas A&M–Central Texas, and industrial employers along I-14.",
+      icon: BuildingOfficeIcon
+    }
+  ],
+  neighborhoods: [
+    "Fort Cavazos main cantonment and III Corps HQ",
+    "Downtown Killeen and Heritage Plaza",
+    "Central Texas College and TAMU–Central Texas campuses",
+    "Baylor Scott & White and AdventHealth medical districts",
+    "West Killeen logistics parks and industrial corridors"
+  ],
+  deliverables: [
+    "Military procurement packets with cage codes, SAM registration, and insurance certificates.",
+    "Planograms featuring protein-forward meals, hydration, and late-night snacks for soldiers and hospital staff.",
+    "Guides covering Army Public Health Center food safety and commissary standards."
+  ],
+  logistics: [
+    {
+      title: "Central Texas freight",
+      description: "Installers coordinate escort passes, dock appointments, and security clearances for on-post deliveries.",
+      icon: TruckIcon
+    },
+    {
+      title: "Warranty and secure access",
+      description: "ETL certification, 1-year parts warranty, and door sensors supporting armory compliance.",
+      icon: ShieldCheckIcon
+    },
+    {
+      title: "Operator coaching",
+      description: "Telegram sessions covering troop rotations, PCS seasonality, and dormitory placements.",
+      icon: ClockIcon
+    }
+  ],
+  faq: [
+    {
+      question: "Do you assist with Fort Cavazos base access?",
+      answer:
+        "Yes. We manage sponsorship paperwork, escort coordination, and security briefings so installers reach each facility on schedule."
+    },
+    {
+      question: "What products resonate with soldiers?",
+      answer:
+        "Protein meals, energy drinks, performance snacks, and better-for-you options for PT recovery perform well on-post."
+    },
+    {
+      question: "Can the coolers integrate with meal cards or stipends?",
+      answer:
+        "We can configure promo codes, subsidies, and dynamic pricing to support DFMWR programs and mission readiness initiatives."
+    },
+    {
+      question: "Is overnight support available?",
+      answer:
+        "Telegram @thevendinglocator keeps Central Texas operators covered during field exercises, night shifts, and emergency deployments."
+    }
+  ]
+}
+
+export const laredoContent: CityLandingContent = {
+  slug: "vending-machines-for-sale-in-laredo-texas",
+  city: "Laredo",
+  state: "Texas",
+  hero: {
+    eyebrow: {
+      icon: SparklesIcon,
+      label: "Smart Vending • Laredo, TX"
+    },
+    headline: {
+      pre: "Vending Machines for Sale in",
+      highlight: "Laredo, Texas"
+    },
+    description:
+      "Serve cross-border logistics hubs, industrial parks, higher education, and healthcare campuses across Laredo with Haha AI smart coolers and bilingual support.",
+    bullets: [
+      {
+        icon: ShieldCheckIcon,
+        text: "US–Mexico trade expertise with compliance for customs brokers, maquiladoras, and federal facilities"
+      },
+      {
+        icon: ClockIcon,
+        text: "Freight coordination along I-35, World Trade Bridge, and Port Laredo warehouses"
+      },
+      {
+        icon: ChatBubbleOvalLeftEllipsisIcon,
+        text: "24/7 Telegram support in English and Spanish for Laredo and Rio Grande Valley operators"
+      }
+    ],
+    ctas: [
+      {
+        label: "Explore Smart Coolers",
+        href: "/haha-coolers",
+        variant: "primary"
+      },
+      {
+        label: "Talk to Laredo Experts",
+        href: "/contact",
+        variant: "secondary"
+      }
+    ],
+    supportLink: {
+      icon: ChatBubbleOvalLeftEllipsisIcon,
+      label: "Telegram @thevendinglocator",
+      href: "https://t.me/thevendinglocator"
+    }
+  },
+  sidebar: {
+    badge: {
+      icon: MapPinIcon,
+      label: "Built for Port Laredo"
+    },
+    items: [
+      {
+        title: "Primary verticals:",
+        description: "International logistics, customs brokerage, education, healthcare, and retail."
+      },
+      {
+        title: "Placement support:",
+        description: "World Trade Bridge warehouses, Laredo College, Texas A&M International University, and Mall del Norte."
+      },
+      {
+        title: "Cross-border insights:",
+        description: "Guidance on bilingual merchandising, customs schedules, and bridge traffic patterns."
+      },
+      {
+        title: "Always-on support:",
+        description: "Telegram masterminds linking Laredo, McAllen, and Monterrey operators."
+      }
+    ]
+  },
+  coolerLineup: jacksonvilleContent.coolerLineup,
+  sellingPoints: [
+    {
+      title: "Logistics corridor coverage",
+      description:
+        "Deliver cashless fresh food to truck yards, cross-docks, import/export warehouses, and customs offices.",
+      icon: TruckIcon
+    },
+    {
+      title: "Higher education amenities",
+      description:
+        "Support Texas A&M International University and Laredo College with smart coolers across campuses and residence halls.",
+      icon: BuildingOfficeIcon
+    },
+    {
+      title: "Healthcare and retail",
+      description:
+        "Serve Laredo Medical Center, Doctors Hospital of Laredo, and Mall del Norte retailers with 24/7 support.",
+      icon: LifebuoyIcon
+    }
+  ],
+  neighborhoods: [
+    "World Trade Bridge and Colombia Solidarity Bridge corridors",
+    "Downtown Laredo government and cultural district",
+    "Texas A&M International University and Laredo College campuses",
+    "Laredo Medical Center and Doctors Hospital medical campuses",
+    "Mall del Norte, Loop 20 retail, and North Laredo residential communities"
+  ],
+  deliverables: [
+    "Trade-friendly placement decks with bilingual merchandising, cross-border logistics, and driver amenities.",
+    "Planograms featuring hydration, energy, authentic Latin flavors, and healthy grab-and-go options.",
+    "Guides covering US and Mexico food safety standards, customs inspection prep, and warehouse access."
+  ],
+  logistics: [
+    {
+      title: "I-35 freight integration",
+      description: "Installers coordinate around bridge wait times, CBP security, and overnight yard access.",
+      icon: TruckIcon
+    },
+    {
+      title: "Warranty and climate resilience",
+      description: "ETL-certified hardware with heat-resistant components and optional backup power planning.",
+      icon: ShieldCheckIcon
+    },
+    {
+      title: "Operator coaching",
+      description: "Telegram sessions on bilingual operations, customs schedules, and cross-border merchandising.",
+      icon: ClockIcon
+    }
+  ],
+  faq: [
+    {
+      question: "Do you provide bilingual interface support?",
+      answer:
+        "Yes. We deliver Spanish-language onboarding materials, signage, and merchandising recommendations tailored to Laredo audiences."
+    },
+    {
+      question: "Can installations occur inside customs-controlled facilities?",
+      answer:
+        "We coordinate with CBP, brokers, and security teams to secure clearances, escorts, and operating procedures."
+    },
+    {
+      question: "What products work for cross-border drivers?",
+      answer:
+        "Electrolytes, high-protein meals, authentic Mexican snacks, and hot coffee resonate with drivers and logistics crews."
+    },
+    {
+      question: "Is remote support available overnight?",
+      answer:
+        "Yes. Telegram @thevendinglocator supports Laredo operators through overnight border crossings and weekend freight surges."
+    }
+  ]
+}
+
+export const lasCrucesContent: CityLandingContent = {
+  slug: "vending-machines-for-sale-in-las-cruces-new-mexico",
+  city: "Las Cruces",
+  state: "New Mexico",
+  hero: {
+    eyebrow: {
+      icon: SparklesIcon,
+      label: "Smart Vending • Las Cruces, NM"
+    },
+    headline: {
+      pre: "Vending Machines for Sale in",
+      highlight: "Las Cruces, New Mexico"
+    },
+    description:
+      "Deploy Haha AI smart coolers across New Mexico State University, White Sands Test Facility, regional healthcare, and agricultural hubs with desert-proven support.",
+    bullets: [
+      {
+        icon: ShieldCheckIcon,
+        text: "Federal contractor documentation ready for NASA, defense, and research campuses"
+      },
+      {
+        icon: ClockIcon,
+        text: "Freight coordination along I-10, US-70, and the Borderplex logistics network"
+      },
+      {
+        icon: ChatBubbleOvalLeftEllipsisIcon,
+        text: "24/7 Telegram support for Las Cruces, El Paso, and Southern New Mexico routes"
+      }
+    ],
+    ctas: [
+      {
+        label: "Explore Smart Coolers",
+        href: "/haha-coolers",
+        variant: "primary"
+      },
+      {
+        label: "Talk to Las Cruces Experts",
+        href: "/contact",
+        variant: "secondary"
+      }
+    ],
+    supportLink: {
+      icon: ChatBubbleOvalLeftEllipsisIcon,
+      label: "Telegram @thevendinglocator",
+      href: "https://t.me/thevendinglocator"
+    }
+  },
+  sidebar: {
+    badge: {
+      icon: MapPinIcon,
+      label: "Built for the Mesilla Valley"
+    },
+    items: [
+      {
+        title: "Primary verticals:",
+        description: "Higher education, aerospace, defense, healthcare, and agriculture."
+      },
+      {
+        title: "Placement expertise:",
+        description: "NMSU, Burrell College of Osteopathic Medicine, White Sands Test Facility, and Organ Mountains tourism."
+      },
+      {
+        title: "Desert climate readiness:",
+        description: "Telemetry and cooling safeguards for high heat, dust, and low humidity environments."
+      },
+      {
+        title: "Always-on support:",
+        description: "Telegram masterminds connecting Las Cruces, El Paso, and Alamogordo operators."
+      }
+    ]
+  },
+  coolerLineup: jacksonvilleContent.coolerLineup,
+  sellingPoints: [
+    {
+      title: "University engagement",
+      description:
+        "Place smart coolers across New Mexico State University lecture halls, residence life, athletics, and research parks.",
+      icon: BuildingOfficeIcon
+    },
+    {
+      title: "Aerospace and defense",
+      description:
+        "Keep NASA White Sands, missile range contractors, and aerospace startups stocked with high-performance vending.",
+      icon: ShieldCheckIcon
+    },
+    {
+      title: "Healthcare and agriculture",
+      description:
+        "Serve Memorial Medical Center, MountainView Regional, and Mesilla Valley packing houses with cashless fresh food.",
+      icon: LifebuoyIcon
+    }
+  ],
+  neighborhoods: [
+    "New Mexico State University and Arrowhead Research Park",
+    "Downtown Las Cruces and Mesilla Plaza",
+    "White Sands Missile Range and NASA test facilities",
+    "Memorial Medical Center, MountainView Regional, and healthcare corridors",
+    "Agricultural hubs along US-28 and Chaparral industrial parks"
+  ],
+  deliverables: [
+    "Research campus decks featuring telemetry, secure access, and innovation grants alignment.",
+    "Planograms highlighting hydration, hearty meals, and Southwest flavors.",
+    "Guides covering desert climate operation, filter maintenance, and dust mitigation."
+  ],
+  logistics: [
+    {
+      title: "Borderplex freight",
+      description: "Installers coordinate I-10 schedules, base access, and agricultural receiving docks.",
+      icon: TruckIcon
+    },
+    {
+      title: "Warranty and environment controls",
+      description: "Heat-resistant components, air filtration guidance, and ETL certification with extended coverage.",
+      icon: ShieldCheckIcon
+    },
+    {
+      title: "Operator coaching",
+      description: "Telegram sessions covering semester peaks, test range security windows, and harvest season staffing.",
+      icon: ClockIcon
+    }
+  ],
+  faq: [
+    {
+      question: "Do Haha coolers handle desert heat?",
+      answer:
+        "Yes. Intelligent compressors, insulated glass, and telemetry alerts protect product quality even during triple-digit temperatures."
+    },
+    {
+      question: "Can you deliver to White Sands Test Facility?",
+      answer:
+        "We coordinate clearances, security escorts, and delivery timing aligned with NASA safety protocols."
+    },
+    {
+      question: "What resonates with NMSU students?",
+      answer:
+        "Caffeinated beverages, better-for-you snacks, hearty meals, and regional favorites like burritos and aguas frescas."
+    },
+    {
+      question: "Is bilingual support available?",
+      answer:
+        "Yes. Our support content and Telegram masterminds share guidance in English and Spanish for Borderplex operators."
+    }
+  ]
+}
+export const leagueCityContent: CityLandingContent = {
+  slug: "vending-machines-for-sale-in-league-city-texas",
+  city: "League City",
+  state: "Texas",
+  hero: {
+    eyebrow: {
+      icon: SparklesIcon,
+      label: "Smart Vending • League City, TX"
+    },
+    headline: {
+      pre: "Vending Machines for Sale in",
+      highlight: "League City, Texas"
+    },
+    description:
+      "Deliver Haha AI smart coolers to NASA contractors, UTMB Health clinics, corporate campuses, and master-planned communities throughout League City and Clear Lake.",
+    bullets: [
+      {
+        icon: ShieldCheckIcon,
+        text: "Houston Space Coast experience with documentation for aerospace, healthcare, and municipal sites"
+      },
+      {
+        icon: ClockIcon,
+        text: "Coordinated freight along I-45, NASA Road 1, and Bay Area Boulevard corridors"
+      },
+      {
+        icon: ChatBubbleOvalLeftEllipsisIcon,
+        text: "24/7 Telegram support for League City, Webster, Galveston, and Houston operators"
+      }
+    ],
+    ctas: [
+      {
+        label: "Explore Smart Coolers",
+        href: "/haha-coolers",
+        variant: "primary"
+      },
+      {
+        label: "Talk to League City Experts",
+        href: "/contact",
+        variant: "secondary"
+      }
+    ],
+    supportLink: {
+      icon: ChatBubbleOvalLeftEllipsisIcon,
+      label: "Telegram @thevendinglocator",
+      href: "https://t.me/thevendinglocator"
+    }
+  },
+  sidebar: {
+    badge: {
+      icon: MapPinIcon,
+      label: "Built for Houston's Space Coast"
+    },
+    items: [
+      {
+        title: "Primary verticals:",
+        description: "Aerospace, healthcare, education, corporate offices, and luxury residential."
+      },
+      {
+        title: "Placement expertise:",
+        description: "NASA Johnson Space Center vendors, UTMB clinics, HCA hospitals, and master-planned amenities."
+      },
+      {
+        title: "Storm readiness:",
+        description: "Guidance on hurricane prep, backup power, and telemetry alerts for coastal weather."
+      },
+      {
+        title: "Always-on support:",
+        description: "Telegram masterminds connecting operators from League City to downtown Houston."
+      }
+    ]
+  },
+  coolerLineup: jacksonvilleContent.coolerLineup,
+  sellingPoints: [
+    {
+      title: "Aerospace excellence",
+      description:
+        "Serve NASA contractors, flight training centers, and aerospace supply firms with precision vending.",
+      icon: ShieldCheckIcon
+    },
+    {
+      title: "Healthcare coverage",
+      description:
+        "Provide UTMB Health, Houston Methodist Clear Lake, and HCA Houston Healthcare Clear Lake with 24/7 smart coolers.",
+      icon: LifebuoyIcon
+    },
+    {
+      title: "Residential amenities",
+      description:
+        "Enhance master-planned communities like South Shore Harbour and Tuscan Lakes with premium self-serve retail.",
+      icon: CubeIcon
+    }
+  ],
+  neighborhoods: [
+    "NASA Johnson Space Center and Space Center Houston",
+    "Bay Area Boulevard corporate and medical corridor",
+    "South Shore Harbour and coastal master-planned communities",
+    "Kemah Boardwalk tourism and hospitality district",
+    "League City Historic District and education campuses"
+  ],
+  deliverables: [
+    "Aerospace and healthcare placement decks highlighting compliance, telemetry, and staff wellness ROI.",
+    "Planograms featuring premium coffee, fresh meals, hydrating beverages, and family-friendly snacks.",
+    "Guides covering hurricane readiness, backup power planning, and coastal humidity care."
+  ],
+  logistics: [
+    {
+      title: "Bay Area freight",
+      description: "Installers coordinate around NASA security windows, medical campus docks, and gated communities.",
+      icon: TruckIcon
+    },
+    {
+      title: "Warranty and coastal care",
+      description: "Humidity-resistant components, ETL certification, and optional surge protection packages.",
+      icon: ShieldCheckIcon
+    },
+    {
+      title: "Operator coaching",
+      description: "Telegram sessions covering hurricane season stocking, aerospace shift rotations, and residential amenities.",
+      icon: ClockIcon
+    }
+  ],
+  faq: [
+    {
+      question: "Do you have experience with NASA Johnson Space Center vendors?",
+      answer:
+        "Yes. We provide federal contractor documentation, badge coordination, and telemetry security policies tailored for NASA sites."
+    },
+    {
+      question: "What works well for master-planned communities?",
+      answer:
+        "Better-for-you meals, cold brew, premium snacks, and family-friendly options that residents can access 24/7."
+    },
+    {
+      question: "Can the coolers run during hurricanes?",
+      answer:
+        "We advise on surge protectors, generators, and remote monitoring so you can manage inventory before and after storms."
+    },
+    {
+      question: "Is coastal maintenance more intensive?",
+      answer:
+        "We share humidity care checklists, filter swap schedules, and support resources for Gulf Coast operators."
+    }
+  ]
+}
+
+export const lewisvilleContent: CityLandingContent = {
+  slug: "vending-machines-for-sale-in-lewisville-texas",
+  city: "Lewisville",
+  state: "Texas",
+  hero: {
+    eyebrow: {
+      icon: SparklesIcon,
+      label: "Smart Vending • Lewisville, TX"
+    },
+    headline: {
+      pre: "Vending Machines for Sale in",
+      highlight: "Lewisville, Texas"
+    },
+    description:
+      "Bring Haha AI smart coolers to Lewisville's logistics hubs, medical campuses, schools, and lakeside communities with North Dallas-based support teams.",
+    bullets: [
+      {
+        icon: ShieldCheckIcon,
+        text: "DFW Metroplex experience with compliance for logistics, healthcare, and education facilities"
+      },
+      {
+        icon: ClockIcon,
+        text: "Coordinated freight along I-35E, SH-121, and DFW Airport corridors"
+      },
+      {
+        icon: ChatBubbleOvalLeftEllipsisIcon,
+        text: "Telegram @thevendinglocator support for Lewisville, Flower Mound, Coppell, and Denton operators"
+      }
+    ],
+    ctas: [
+      {
+        label: "Explore Smart Coolers",
+        href: "/haha-coolers",
+        variant: "primary"
+      },
+      {
+        label: "Talk to Lewisville Experts",
+        href: "/contact",
+        variant: "secondary"
+      }
+    ],
+    supportLink: {
+      icon: ChatBubbleOvalLeftEllipsisIcon,
+      label: "Telegram @thevendinglocator",
+      href: "https://t.me/thevendinglocator"
+    }
+  },
+  sidebar: {
+    badge: {
+      icon: MapPinIcon,
+      label: "Built for the I-35E Corridor"
+    },
+    items: [
+      {
+        title: "Primary verticals:",
+        description: "Logistics, manufacturing, healthcare, education, and hospitality."
+      },
+      {
+        title: "Placement expertise:",
+        description: "Railport Logistics Park, Medical City Lewisville, LISD campuses, and Lake Lewisville marinas."
+      },
+      {
+        title: "Route optimization:",
+        description: "Telemetry tuned to multi-shift warehouses, commuter corridors, and weekend recreation."
+      },
+      {
+        title: "Always-on support:",
+        description: "Telegram masterminds linking Lewisville operators with Dallas-Fort Worth metros."
+      }
+    ]
+  },
+  coolerLineup: jacksonvilleContent.coolerLineup,
+  sellingPoints: [
+    {
+      title: "Logistics excellence",
+      description:
+        "Serve warehouses, rail terminals, and distribution centers with AI-powered grab-and-go that keeps crews moving.",
+      icon: TruckIcon
+    },
+    {
+      title: "Healthcare and education",
+      description:
+        "Provide Medical City Lewisville, Baylor Scott & White, and LISD campuses with 24/7 contactless vending.",
+      icon: LifebuoyIcon
+    },
+    {
+      title: "Lifestyle amenities",
+      description:
+        "Upgrade Lake Lewisville marinas, hospitality venues, and apartment communities with premium smart coolers.",
+      icon: CubeIcon
+    }
+  ],
+  neighborhoods: [
+    "Railport Logistics Park and Vista Ridge industrial corridor",
+    "Medical City Lewisville and healthcare campuses",
+    "Lewisville ISD education network",
+    "Old Town Lewisville arts and entertainment district",
+    "Lake Lewisville marinas and lakeside communities"
+  ],
+  deliverables: [
+    "Warehouse and healthcare placement decks with ROI, staffing, and safety insights.",
+    "Planograms featuring hydration, energy, protein meals, and family-friendly snacks.",
+    "Guides covering Denton County health permits, dock access, and apartment amenity integration."
+  ],
+  logistics: [
+    {
+      title: "North DFW freight",
+      description: "Installers coordinate around tollways, rail crossings, and airport security windows.",
+      icon: TruckIcon
+    },
+    {
+      title: "Warranty and uptime",
+      description: "ETL-certified hardware, 1-year parts warranty, and optional telemetry monitoring packages.",
+      icon: ShieldCheckIcon
+    },
+    {
+      title: "Operator coaching",
+      description: "Telegram sessions covering peak shipping seasons, school schedules, and lakeside tourism.",
+      icon: ClockIcon
+    }
+  ],
+  faq: [
+    {
+      question: "Can Haha coolers support 24/7 warehouse shifts?",
+      answer:
+        "Absolutely. Remote telemetry, cashless payments, and secure door sensors keep operations running regardless of shift times."
+    },
+    {
+      question: "Do you handle LISD campus requirements?",
+      answer:
+        "Yes. We deliver nutrition guidelines, vendor approvals, and student engagement materials for Lewisville ISD."
+    },
+    {
+      question: "What resonates with Lake Lewisville visitors?",
+      answer:
+        "Cold beverages, light meals, premium coffee, and family-friendly snacks perform well at marinas and waterfront venues."
+    },
+    {
+      question: "Is after-hours support included?",
+      answer:
+        "Telegram @thevendinglocator keeps North Dallas operators covered nights, weekends, and holidays."
+    }
+  ]
+}
+export const lincolnContent: CityLandingContent = {
+  slug: "vending-machines-for-sale-in-lincoln-nebraska",
+  city: "Lincoln",
+  state: "Nebraska",
+  hero: {
+    eyebrow: {
+      icon: SparklesIcon,
+      label: "Smart Vending • Lincoln, NE"
+    },
+    headline: {
+      pre: "Vending Machines for Sale in",
+      highlight: "Lincoln, Nebraska"
+    },
+    description:
+      "Serve Nebraska's capital city with Haha AI smart coolers built for government complexes, the University of Nebraska–Lincoln, healthcare campuses, and tech corridors.",
+    bullets: [
+      {
+        icon: ShieldCheckIcon,
+        text: "Procurement-ready documentation for state agencies, UNL, and Fortune 500 offices"
+      },
+      {
+        icon: ClockIcon,
+        text: "Coordinated freight along I-80, Nebraska Innovation Campus, and Lincoln Airport corridors"
+      },
+      {
+        icon: ChatBubbleOvalLeftEllipsisIcon,
+        text: "Telegram @thevendinglocator support spanning Lincoln, Omaha, and the I-80 innovation belt"
+      }
+    ],
+    ctas: [
+      {
+        label: "Explore Smart Coolers",
+        href: "/haha-coolers",
+        variant: "primary"
+      },
+      {
+        label: "Talk to Lincoln Experts",
+        href: "/contact",
+        variant: "secondary"
+      }
+    ],
+    supportLink: {
+      icon: ChatBubbleOvalLeftEllipsisIcon,
+      label: "Telegram @thevendinglocator",
+      href: "https://t.me/thevendinglocator"
+    }
+  },
+  sidebar: {
+    badge: {
+      icon: MapPinIcon,
+      label: "Built for the Capital City"
+    },
+    items: [
+      {
+        title: "Primary verticals:",
+        description: "Government, higher education, healthcare, insurance, and agtech."
+      },
+      {
+        title: "Placement expertise:",
+        description: "Nebraska State Capitol, UNL campuses, Haymarket tech firms, and Bryan Health systems."
+      },
+      {
+        title: "Route optimization:",
+        description: "Telemetry tuned to game day traffic, legislative sessions, and research park schedules."
+      },
+      {
+        title: "Always-on support:",
+        description: "Telegram masterminds connecting Lincoln operators with Omaha and Midwest peers."
+      }
+    ]
+  },
+  coolerLineup: jacksonvilleContent.coolerLineup,
+  sellingPoints: [
+    {
+      title: "State government convenience",
+      description:
+        "Provide cashless refreshments inside the Nebraska State Capitol, Judicial Complex, and administrative offices.",
+      icon: BuildingOfficeIcon
+    },
+    {
+      title: "Campus engagement",
+      description:
+        "Deploy smart coolers across UNL lecture halls, athletics, dorms, and Nebraska Innovation Campus.",
+      icon: CubeIcon
+    },
+    {
+      title: "Healthcare and insurance",
+      description:
+        "Serve Bryan Health, CHI St. Elizabeth, and insurance headquarters with premium vending backed by telemetry.",
+      icon: LifebuoyIcon
+    }
+  ],
+  neighborhoods: [
+    "Nebraska State Capitol and downtown government district",
+    "Haymarket and Innovation Campus tech corridor",
+    "University of Nebraska–Lincoln City and East Campuses",
+    "Bryan Health and CHI St. Elizabeth medical districts",
+    "South Lincoln corporate parks and logistics hubs"
+  ],
+  deliverables: [
+    "Government and enterprise decks highlighting ROI, compliance, and staff wellness outcomes.",
+    "Planograms featuring healthy meals, premium coffee, hydration, and Midwest-favorite snacks.",
+    "Guides covering Nebraska health permits, stadium event planning, and campus vendor onboarding."
+  ],
+  logistics: [
+    {
+      title: "I-80 freight coverage",
+      description: "Installers coordinate around campus game days, security checkpoints, and government dock schedules.",
+      icon: TruckIcon
+    },
+    {
+      title: "Warranty and compliance",
+      description: "ETL-certified equipment, optional extended warranties, and telemetry monitoring tailored to enterprise accounts.",
+      icon: ShieldCheckIcon
+    },
+    {
+      title: "Operator coaching",
+      description: "Telegram sessions covering legislative calendars, research park launches, and football season surges.",
+      icon: ClockIcon
+    }
+  ],
+  faq: [
+    {
+      question: "Can Haha coolers be placed inside Nebraska State Capitol buildings?",
+      answer:
+        "Yes. We handle security screenings, insurance certificates, and procurement documentation required by state facilities."
+    },
+    {
+      question: "What offerings resonate with UNL students?",
+      answer:
+        "Better-for-you meals, energy drinks, specialty coffee, and local favorites perform well across campus venues."
+    },
+    {
+      question: "Do you support Memorial Stadium operations?",
+      answer:
+        "We coordinate with athletics, catering, and facility teams to support game day staffing and premium hospitality zones."
+    },
+    {
+      question: "Is ongoing support provided?",
+      answer:
+        "Telegram @thevendinglocator connects Lincoln operators to real-time troubleshooting, merchandising, and restock insights."
+    }
+  ]
+}
+
+export const mcallenContent: CityLandingContent = {
+  slug: "vending-machines-for-sale-in-mcallen-texas",
+  city: "McAllen",
+  state: "Texas",
+  hero: {
+    eyebrow: {
+      icon: SparklesIcon,
+      label: "Smart Vending • McAllen, TX"
+    },
+    headline: {
+      pre: "Vending Machines for Sale in",
+      highlight: "McAllen, Texas"
+    },
+    description:
+      "Equip Rio Grande Valley hospitals, retail corridors, border logistics, and higher education campuses with Haha AI smart coolers and bilingual 24/7 support.",
+    bullets: [
+      {
+        icon: ShieldCheckIcon,
+        text: "Health system and public sector procurement assistance for RGV-area operators"
+      },
+      {
+        icon: ClockIcon,
+        text: "Freight coordination across I-69C, Anzalduas International Bridge, and McAllen-Miller International Airport"
+      },
+      {
+        icon: ChatBubbleOvalLeftEllipsisIcon,
+        text: "Telegram support in English and Spanish covering McAllen, Edinburg, Mission, and Reynosa"
+      }
+    ],
+    ctas: [
+      {
+        label: "Explore Smart Coolers",
+        href: "/haha-coolers",
+        variant: "primary"
+      },
+      {
+        label: "Talk to McAllen Experts",
+        href: "/contact",
+        variant: "secondary"
+      }
+    ],
+    supportLink: {
+      icon: ChatBubbleOvalLeftEllipsisIcon,
+      label: "Telegram @thevendinglocator",
+      href: "https://t.me/thevendinglocator"
+    }
+  },
+  sidebar: {
+    badge: {
+      icon: MapPinIcon,
+      label: "Built for the Rio Grande Valley"
+    },
+    items: [
+      {
+        title: "Primary verticals:",
+        description: "Healthcare, retail, logistics, education, and hospitality."
+      },
+      {
+        title: "Placement expertise:",
+        description: "DHR Health, South Texas Health System, La Plaza Mall, UTRGV, and Anzalduas bridge logistics."
+      },
+      {
+        title: "Cross-border merchandising:",
+        description: "Planograms and signage optimized for bilingual audiences and traveler demand."
+      },
+      {
+        title: "Always-on support:",
+        description: "Telegram masterminds linking McAllen, Brownsville, Harlingen, and Monterrey operators."
+      }
+    ]
+  },
+  coolerLineup: jacksonvilleContent.coolerLineup,
+  sellingPoints: [
+    {
+      title: "Healthcare excellence",
+      description:
+        "Support DHR Health, South Texas Health System, and outpatient clinics with reliable, cashless vending.",
+      icon: LifebuoyIcon
+    },
+    {
+      title: "Retail and tourism",
+      description:
+        "Serve La Plaza Mall, convention centers, and Entertainment District venues with premium smart coolers.",
+      icon: CubeIcon
+    },
+    {
+      title: "Logistics and education",
+      description:
+        "Equip bridge logistics hubs, air cargo facilities, and UTRGV campuses with AI-powered merchandising.",
+      icon: TruckIcon
+    }
+  ],
+  neighborhoods: [
+    "McAllen Medical District and DHR Health campus",
+    "La Plaza Mall and Convention Center entertainment district",
+    "UTRGV McAllen Academic Center and South Texas College",
+    "Anzalduas International Bridge logistics corridor",
+    "Mission, Edinburg, and Pharr residential communities"
+  ],
+  deliverables: [
+    "Healthcare and retail decks featuring bilingual signage, staff wellness ROI, and shopper amenities.",
+    "Planograms combining hydration, authentic Latin flavors, fresh meals, and better-for-you options.",
+    "Guides covering Texas Department of State Health Services requirements and bridge logistics coordination."
+  ],
+  logistics: [
+    {
+      title: "RGV freight network",
+      description: "Installers coordinate around international bridge traffic, airport security, and hospital receiving.",
+      icon: TruckIcon
+    },
+    {
+      title: "Warranty and climate readiness",
+      description: "Heat- and humidity-resistant hardware with ETL certification and optional extended service.",
+      icon: ShieldCheckIcon
+    },
+    {
+      title: "Operator coaching",
+      description: "Telegram sessions on bilingual merchandising, retail peak seasons, and cross-border demand.",
+      icon: ClockIcon
+    }
+  ],
+  faq: [
+    {
+      question: "Do you provide bilingual materials?",
+      answer:
+        "Yes. We supply Spanish-language signage, onboarding documents, and marketing assets tailored to Rio Grande Valley audiences."
+    },
+    {
+      question: "Can installments occur inside hospitals?",
+      answer:
+        "We coordinate infection control protocols, loading dock schedules, and facility approvals for critical healthcare environments."
+    },
+    {
+      question: "What products resonate with cross-border shoppers?",
+      answer:
+        "Electrolytes, frozen treats, authentic snacks, and premium coffee perform well with shoppers and commuters crossing daily."
+    },
+    {
+      question: "Is weekend support available?",
+      answer:
+        "Telegram @thevendinglocator keeps Rio Grande Valley operators covered during weekend retail and tourism surges."
+    }
+  ]
+}
+
+export const mckinneyContent: CityLandingContent = {
+  slug: "vending-machines-for-sale-in-mckinney-texas",
+  city: "McKinney",
+  state: "Texas",
+  hero: {
+    eyebrow: {
+      icon: SparklesIcon,
+      label: "Smart Vending • McKinney, TX"
+    },
+    headline: {
+      pre: "Vending Machines for Sale in",
+      highlight: "McKinney, Texas"
+    },
+    description:
+      "Deliver Haha AI smart coolers to corporate relocations, McKinney National Airport, healthcare, and fast-growing residential communities with Collin County expertise.",
+    bullets: [
+      {
+        icon: ShieldCheckIcon,
+        text: "Corporate campus and municipal procurement support tailored to Collin County growth"
+      },
+      {
+        icon: ClockIcon,
+        text: "Freight coordination along US-75, SH-121, and McKinney National Airport corridors"
+      },
+      {
+        icon: ChatBubbleOvalLeftEllipsisIcon,
+        text: "24/7 Telegram support connecting McKinney, Allen, Plano, and Frisco operators"
+      }
+    ],
+    ctas: [
+      {
+        label: "Explore Smart Coolers",
+        href: "/haha-coolers",
+        variant: "primary"
+      },
+      {
+        label: "Talk to McKinney Experts",
+        href: "/contact",
+        variant: "secondary"
+      }
+    ],
+    supportLink: {
+      icon: ChatBubbleOvalLeftEllipsisIcon,
+      label: "Telegram @thevendinglocator",
+      href: "https://t.me/thevendinglocator"
+    }
+  },
+  sidebar: {
+    badge: {
+      icon: MapPinIcon,
+      label: "Built for Collin County"
+    },
+    items: [
+      {
+        title: "Primary verticals:",
+        description: "Corporate HQ, aviation, healthcare, education, and luxury residential."
+      },
+      {
+        title: "Placement expertise:",
+        description: "McKinney Corporate Center, Raytheon, Medical City McKinney, and Adriatica Village amenities."
+      },
+      {
+        title: "Growth insights:",
+        description: "Telemetry planning for rapid population growth, commuter patterns, and airport expansion."
+      },
+      {
+        title: "Always-on support:",
+        description: "Telegram masterminds linking Collin County operators with DFW partners."
+      }
+    ]
+  },
+  coolerLineup: jacksonvilleContent.coolerLineup,
+  sellingPoints: [
+    {
+      title: "Corporate campus amenities",
+      description:
+        "Enable premium grab-and-go for Fortune 500 relocations, Raytheon, and technology firms along US-75.",
+      icon: BuildingOfficeIcon
+    },
+    {
+      title: "Aviation and logistics",
+      description:
+        "Serve McKinney National Airport and Aero Country communities with secure, telemetry-backed vending.",
+      icon: TruckIcon
+    },
+    {
+      title: "Healthcare and residential",
+      description:
+        "Support Medical City McKinney, Baylor Scott & White, and luxury multifamily amenities with nonstop support.",
+      icon: LifebuoyIcon
+    }
+  ],
+  neighborhoods: [
+    "Historic Downtown McKinney cultural district",
+    "McKinney Corporate Center at Craig Ranch",
+    "McKinney National Airport and aviation communities",
+    "Medical City McKinney and healthcare corridors",
+    "Stonebridge Ranch, Adriatica Village, and luxury residential zones"
+  ],
+  deliverables: [
+    "Corporate relocation decks featuring employee wellness, data analytics, and amenity ROI.",
+    "Planograms with premium coffee, better-for-you meals, and family-friendly selections for residential deployments.",
+    "Guides covering City of McKinney permitting, airport security, and HOA amenity activation."
+  ],
+  logistics: [
+    {
+      title: "Collin County freight",
+      description: "Installers coordinate around tollways, gated communities, and airport security checkpoints.",
+      icon: TruckIcon
+    },
+    {
+      title: "Warranty and uptime",
+      description: "ETL-certified hardware, optional extended warranties, and proactive telemetry monitoring.",
+      icon: ShieldCheckIcon
+    },
+    {
+      title: "Operator coaching",
+      description: "Telegram sessions covering rapid growth corridors, airport operations, and luxury amenity expectations.",
+      icon: ClockIcon
+    }
+  ],
+  faq: [
+    {
+      question: "Can Haha coolers integrate with corporate wellness programs?",
+      answer:
+        "Yes. We design planograms, subsidies, and reporting that align with HR wellness initiatives and hybrid work schedules."
+    },
+    {
+      question: "Do you support airport security requirements?",
+      answer:
+        "We manage badging, escorting, and TSA coordination for McKinney National Airport and aviation campuses."
+    },
+    {
+      question: "What resonates with upscale residential communities?",
+      answer:
+        "Premium coffee, chef-crafted meals, local desserts, and better-for-you snacks perform across McKinney's luxury properties."
+    },
+    {
+      question: "Is there support during rapid expansion?",
+      answer:
+        "Telegram @thevendinglocator provides real-time guidance as new corporate campuses and residential towers come online."
+    }
+  ]
+}
+export const mesquiteContent: CityLandingContent = {
+  slug: "vending-machines-for-sale-in-mesquite-texas",
+  city: "Mesquite",
+  state: "Texas",
+  hero: {
+    eyebrow: {
+      icon: SparklesIcon,
+      label: "Smart Vending • Mesquite, TX"
+    },
+    headline: {
+      pre: "Vending Machines for Sale in",
+      highlight: "Mesquite, Texas"
+    },
+    description:
+      "Serve Mesquite Rodeo arenas, Town East Mall, Baylor Scott & White, and manufacturing corridors with Haha AI smart coolers backed by Dallas-area support.",
+    bullets: [
+      {
+        icon: ShieldCheckIcon,
+        text: "Municipal, healthcare, and retail procurement packets ready for rapid approvals"
+      },
+      {
+        icon: ClockIcon,
+        text: "Freight coordination across I-635, US-80, and the LBJ Freeway logistics triangle"
+      },
+      {
+        icon: ChatBubbleOvalLeftEllipsisIcon,
+        text: "Telegram @thevendinglocator connects Mesquite, Sunnyvale, and East Dallas operators 24/7"
+      }
+    ],
+    ctas: [
+      {
+        label: "Explore Smart Coolers",
+        href: "/haha-coolers",
+        variant: "primary"
+      },
+      {
+        label: "Talk to Mesquite Experts",
+        href: "/contact",
+        variant: "secondary"
+      }
+    ],
+    supportLink: {
+      icon: ChatBubbleOvalLeftEllipsisIcon,
+      label: "Telegram @thevendinglocator",
+      href: "https://t.me/thevendinglocator"
+    }
+  },
+  sidebar: {
+    badge: {
+      icon: MapPinIcon,
+      label: "Built for East Dallas Gateways"
+    },
+    items: [
+      {
+        title: "Primary verticals:",
+        description: "Retail, entertainment, healthcare, manufacturing, and education."
+      },
+      {
+        title: "Placement expertise:",
+        description: "Mesquite Arena, Town East Mall, MISD campuses, and Skyline Industrial Park."
+      },
+      {
+        title: "Route optimization:",
+        description: "Telemetry tuned to rodeo events, mall traffic, and shift-based production lines."
+      },
+      {
+        title: "Always-on support:",
+        description: "Dallas County masterminds help solve stocking, merchandising, and compliance questions fast."
+      }
+    ]
+  },
+  coolerLineup: jacksonvilleContent.coolerLineup,
+  sellingPoints: [
+    {
+      title: "Entertainment & events",
+      description:
+        "Keep Mesquite Championship Rodeo, convention halls, and event venues stocked with premium grab-and-go options.",
+      icon: CubeIcon
+    },
+    {
+      title: "Healthcare coverage",
+      description:
+        "Serve Baylor Scott & White Medical Center – Sunnyvale, Dallas Regional Medical Center, and urgent care networks.",
+      icon: LifebuoyIcon
+    },
+    {
+      title: "Manufacturing logistics",
+      description:
+        "Support east corridor manufacturing and distribution facilities with telemetry-driven replenishment.",
+      icon: TruckIcon
+    }
+  ],
+  neighborhoods: [
+    "Mesquite Arena and Rodeo entertainment district",
+    "Town East Mall and retail corridors",
+    "Skyline Industrial Park and Lawson Road logistics hubs",
+    "MISD campuses and Eastfield College",
+    "Sunnyvale medical district and residential communities"
+  ],
+  deliverables: [
+    "Entertainment amenity decks with ROI forecasting and event staffing guidance.",
+    "Planograms featuring premium coffee, energy beverages, hearty meals, and family-friendly snacks.",
+    "Guides covering Dallas County health inspections, mall tenant requirements, and school nutrition policies."
+  ],
+  logistics: [
+    {
+      title: "East Dallas freight",
+      description: "Installers coordinate around mall receiving docks, arena load-ins, and industrial security checkpoints.",
+      icon: TruckIcon
+    },
+    {
+      title: "Warranty and compliance",
+      description: "ETL-certified hardware, 1-year parts warranty, and optional telemetry monitoring packages.",
+      icon: ShieldCheckIcon
+    },
+    {
+      title: "Operator coaching",
+      description: "Telegram sessions focusing on rodeo weekends, retail promotions, and multi-shift stocking plans.",
+      icon: ClockIcon
+    }
+  ],
+  faq: [
+    {
+      question: "Can Haha coolers be placed inside Mesquite Arena?",
+      answer:
+        "Yes. We supply sponsorship decks, security documentation, and staff training materials tailored to arena operations."
+    },
+    {
+      question: "What assortments resonate with local audiences?",
+      answer:
+        "High-protein meals, specialty coffee, hydration, and locally loved snacks perform across rodeo fans, healthcare professionals, and students."
+    },
+    {
+      question: "Do you help with MISD nutrition approvals?",
+      answer:
+        "We provide compliant product mixes, nutritional breakdowns, and campus rollout playbooks for Mesquite ISD."
+    },
+    {
+      question: "Is overnight support available?",
+      answer:
+        "Telegram @thevendinglocator keeps Dallas County operators covered nights, weekends, and holidays."
+    }
+  ]
+}
+
+export const miamiContent: CityLandingContent = {
+  slug: "vending-machines-for-sale-in-miami-florida",
+  city: "Miami",
+  state: "Florida",
+  hero: {
+    eyebrow: {
+      icon: SparklesIcon,
+      label: "Smart Vending • Miami, FL"
+    },
+    headline: {
+      pre: "Vending Machines for Sale in",
+      highlight: "Miami, Florida"
+    },
+    description:
+      "Power Brickell towers, PortMiami cruise terminals, healthcare systems, and Miami International Airport corridors with Haha AI smart coolers and bilingual 24/7 support.",
+    bullets: [
+      {
+        icon: ShieldCheckIcon,
+        text: "Enterprise-ready documentation for Class A offices, hospitals, and hospitality groups"
+      },
+      {
+        icon: ClockIcon,
+        text: "Freight and installation windows tailored to Downtown, Wynwood, and airport security schedules"
+      },
+      {
+        icon: ChatBubbleOvalLeftEllipsisIcon,
+        text: "Telegram @thevendinglocator covers Miami-Dade, Broward, and Palm Beach operators around the clock"
+      }
+    ],
+    ctas: [
+      {
+        label: "Explore Smart Coolers",
+        href: "/haha-coolers",
+        variant: "primary"
+      },
+      {
+        label: "Talk to Miami Experts",
+        href: "/contact",
+        variant: "secondary"
+      }
+    ],
+    supportLink: {
+      icon: ChatBubbleOvalLeftEllipsisIcon,
+      label: "Telegram @thevendinglocator",
+      href: "https://t.me/thevendinglocator"
+    }
+  },
+  sidebar: {
+    badge: {
+      icon: MapPinIcon,
+      label: "Built for the Magic City"
+    },
+    items: [
+      {
+        title: "Primary verticals:",
+        description: "Financial towers, healthcare, hospitality, cruise terminals, higher education, and aviation."
+      },
+      {
+        title: "Placement expertise:",
+        description: "Brickell, PortMiami, Miami International Airport, Jackson Health, and University of Miami."
+      },
+      {
+        title: "Bilingual merchandising:",
+        description: "Spanish and English signage, pricing, and offers tuned to Miami audiences."
+      },
+      {
+        title: "Always-on support:",
+        description: "24/7 Telegram masterminds supporting Miami, Fort Lauderdale, and Boca Raton operators."
+      }
+    ]
+  },
+  coolerLineup: jacksonvilleContent.coolerLineup,
+  sellingPoints: [
+    {
+      title: "Financial district amenities",
+      description:
+        "Deliver cashless fresh food to Brickell banks, law firms, and coworking towers with premium merchandising.",
+      icon: BuildingOfficeIcon
+    },
+    {
+      title: "Cruise & hospitality",
+      description:
+        "Keep PortMiami terminals, hotels, and luxury residences stocked for international travelers.",
+      icon: CubeIcon
+    },
+    {
+      title: "Healthcare excellence",
+      description:
+        "Serve Jackson Health, Baptist Health South Florida, and UHealth campuses with 24/7 vending backed by telemetry.",
+      icon: LifebuoyIcon
+    }
+  ],
+  neighborhoods: [
+    "Brickell financial district and Downtown Miami",
+    "PortMiami and cruise terminal operations",
+    "Miami International Airport and Blue Lagoon corporate parks",
+    "Jackson Health District and University of Miami campuses",
+    "Wynwood, Midtown, and Miami Beach hospitality corridors"
+  ],
+  deliverables: [
+    "Executive-ready decks highlighting amenity ROI, wellness initiatives, and bilingual merchandising.",
+    "Planograms featuring premium coffee, healthy meals, Latin-inspired snacks, and traveler-friendly items.",
+    "Guides covering Miami-Dade health inspections, building security, and cruise terminal logistics."
+  ],
+  logistics: [
+    {
+      title: "South Florida freight",
+      description: "Installers coordinate with high-rise dock reservations, airport screening, and port security checkpoints.",
+      icon: TruckIcon
+    },
+    {
+      title: "Warranty and climate readiness",
+      description: "Humidity-resistant components, surge protection, and ETL certification for coastal environments.",
+      icon: ShieldCheckIcon
+    },
+    {
+      title: "Operator coaching",
+      description: "Telegram sessions on cruise schedules, corporate wellness, and multilingual promotions.",
+      icon: ClockIcon
+    }
+  ],
+  faq: [
+    {
+      question: "Can Haha coolers operate in high-rise office towers?",
+      answer:
+        "Yes. We handle certificate of insurance, union labor coordination, and freight elevator scheduling for Brickell and Downtown properties."
+    },
+    {
+      question: "Do you provide bilingual interfaces and signage?",
+      answer:
+        "We supply Spanish-language onboarding assets, pricing labels, and marketing collateral tailored to Miami customers."
+    },
+    {
+      question: "What performs well in cruise terminals?",
+      answer:
+        "Hydration, premium coffee, grab-and-go meals, and travel essentials excel with cruise passengers and crew."
+    },
+    {
+      question: "Is overnight or weekend support available?",
+      answer:
+        "Telegram @thevendinglocator provides real-time assistance during overnight restocks, weekend sailings, and holiday events."
+    }
+  ]
+}
+export const missoulaContent: CityLandingContent = {
+  slug: "vending-machines-for-sale-in-missoula-montana",
+  city: "Missoula",
+  state: "Montana",
+  hero: {
+    eyebrow: {
+      icon: SparklesIcon,
+      label: "Smart Vending • Missoula, MT"
+    },
+    headline: {
+      pre: "Vending Machines for Sale in",
+      highlight: "Missoula, Montana"
+    },
+    description:
+      "Equip the University of Montana, healthcare systems, breweries, and outdoor recreation hubs with Haha AI smart coolers tuned for Rocky Mountain climates.",
+    bullets: [
+      {
+        icon: ShieldCheckIcon,
+        text: "Campus, healthcare, and hospitality procurement documentation ready for approval"
+      },
+      {
+        icon: ClockIcon,
+        text: "Freight planning along I-90, Reserve Street, and Missoula International Airport corridors"
+      },
+      {
+        icon: ChatBubbleOvalLeftEllipsisIcon,
+        text: "Telegram @thevendinglocator supports Missoula, Kalispell, and Bozeman operators day and night"
+      }
+    ],
+    ctas: [
+      {
+        label: "Explore Smart Coolers",
+        href: "/haha-coolers",
+        variant: "primary"
+      },
+      {
+        label: "Talk to Missoula Experts",
+        href: "/contact",
+        variant: "secondary"
+      }
+    ],
+    supportLink: {
+      icon: ChatBubbleOvalLeftEllipsisIcon,
+      label: "Telegram @thevendinglocator",
+      href: "https://t.me/thevendinglocator"
+    }
+  },
+  sidebar: {
+    badge: {
+      icon: MapPinIcon,
+      label: "Built for the Garden City"
+    },
+    items: [
+      {
+        title: "Primary verticals:",
+        description: "Higher education, healthcare, breweries, manufacturing, and outdoor recreation."
+      },
+      {
+        title: "Placement expertise:",
+        description: "University of Montana, Providence St. Patrick, downtown breweries, and Southgate Mall."
+      },
+      {
+        title: "Climate readiness:",
+        description: "Telemetry safeguards for winter loading docks and summer outdoor activations."
+      },
+      {
+        title: "Always-on support:",
+        description: "Telegram masterminds connecting Missoula operators with statewide peers."
+      }
+    ]
+  },
+  coolerLineup: jacksonvilleContent.coolerLineup,
+  sellingPoints: [
+    {
+      title: "Campus engagement",
+      description:
+        "Deploy cashless smart coolers across UM lecture halls, residence life, and athletics facilities.",
+      icon: BuildingOfficeIcon
+    },
+    {
+      title: "Healthcare resilience",
+      description:
+        "Serve Providence St. Patrick Hospital, Community Medical Center, and outpatient clinics with 24/7 vending.",
+      icon: LifebuoyIcon
+    },
+    {
+      title: "Tourism & craft culture",
+      description:
+        "Support breweries, outdoor outfitters, and riverfront venues with merchandising tuned to visitors.",
+      icon: CubeIcon
+    }
+  ],
+  neighborhoods: [
+    "Downtown Missoula and riverfront entertainment district",
+    "University of Montana campus and South Avenue corridor",
+    "Reserve Street retail and industrial hubs",
+    "Missoula International Airport and business parks",
+    "Southgate Mall and Midtown neighborhoods"
+  ],
+  deliverables: [
+    "Campus and healthcare decks showcasing wellness ROI and telemetry analytics.",
+    "Planograms featuring premium coffee, hearty meals, Montana-made snacks, and hydration.",
+    "Guides covering Missoula County health inspections, campus approvals, and winter operations."
+  ],
+  logistics: [
+    {
+      title: "I-90 freight coverage",
+      description: "Installers navigate mountain passes, campus docks, and brewery receiving schedules.",
+      icon: TruckIcon
+    },
+    {
+      title: "Warranty and climate",
+      description: "Insulated glass, intelligent defrost, and ETL certification keep uptime high in four-season climates.",
+      icon: ShieldCheckIcon
+    },
+    {
+      title: "Operator coaching",
+      description: "Telegram sessions on semester peaks, tourism surges, and brewery event calendars.",
+      icon: ClockIcon
+    }
+  ],
+  faq: [
+    {
+      question: "How do Haha coolers handle Missoula winters?",
+      answer:
+        "Insulated glass, smart defrost cycles, and telemetry alerts protect your inventory even during sub-zero load-ins."
+    },
+    {
+      question: "Can we deploy inside breweries and taprooms?",
+      answer:
+        "Yes. We provide merchandising strategies and compliance guidance tailored to Missoula's craft scene."
+    },
+    {
+      question: "What resonates with UM students?",
+      answer:
+        "Better-for-you meals, energy beverages, local snacks, and coffee options align with campus demand."
+    },
+    {
+      question: "Is support available overnight?",
+      answer:
+        "Telegram @thevendinglocator covers Missoula-area operators with real-time troubleshooting and restock coaching."
+    }
+  ]
+}
+
+export const molineContent: CityLandingContent = {
+  slug: "vending-machines-for-sale-in-moline-illinois",
+  city: "Moline",
+  state: "Illinois",
+  hero: {
+    eyebrow: {
+      icon: SparklesIcon,
+      label: "Smart Vending • Moline, IL"
+    },
+    headline: {
+      pre: "Vending Machines for Sale in",
+        highlight: "Moline, Illinois"
+    },
+    description:
+      "Support John Deere headquarters, Quad Cities International Airport, healthcare systems, and Black Hawk College with Haha AI smart coolers and 24/7 support.",
+    bullets: [
+      {
+        icon: ShieldCheckIcon,
+        text: "Enterprise procurement decks for Fortune 500, municipal, and healthcare stakeholders"
+      },
+      {
+        icon: ClockIcon,
+        text: "Freight coordination along I-74 Bridge, River Drive, and airport logistics corridors"
+      },
+      {
+        icon: ChatBubbleOvalLeftEllipsisIcon,
+        text: "Telegram @thevendinglocator unites Quad Cities operators across Moline, Rock Island, and Bettendorf"
+      }
+    ],
+    ctas: [
+      {
+        label: "Explore Smart Coolers",
+        href: "/haha-coolers",
+        variant: "primary"
+      },
+      {
+        label: "Talk to Moline Experts",
+        href: "/contact",
+        variant: "secondary"
+      }
+    ],
+    supportLink: {
+      icon: ChatBubbleOvalLeftEllipsisIcon,
+      label: "Telegram @thevendinglocator",
+      href: "https://t.me/thevendinglocator"
+    }
+  },
+  sidebar: {
+    badge: {
+      icon: MapPinIcon,
+      label: "Built for the Quad Cities"
+    },
+    items: [
+      {
+        title: "Primary verticals:",
+        description: "Corporate HQ, manufacturing, aviation, healthcare, and higher education."
+      },
+      {
+        title: "Placement expertise:",
+        description: "John Deere campus, Quad Cities International Airport, UnityPoint, and downtown riverfront venues."
+      },
+      {
+        title: "Route optimization:",
+        description: "Telemetry plans covering cross-river operations in Illinois and Iowa."
+      },
+      {
+        title: "Always-on support:",
+        description: "Telegram masterminds linking operators from Moline to Davenport and beyond."
+      }
+    ]
+  },
+  coolerLineup: jacksonvilleContent.coolerLineup,
+  sellingPoints: [
+    {
+      title: "Corporate HQ amenities",
+      description:
+        "Deliver cashless fresh food and beverages to John Deere's World Headquarters and administrative campuses.",
+      icon: BuildingOfficeIcon
+    },
+    {
+      title: "Aviation & logistics",
+      description:
+        "Equip Quad Cities International Airport and logistics parks with telemetry-backed vending for travelers and crews.",
+      icon: TruckIcon
+    },
+    {
+      title: "Healthcare & education",
+      description:
+        "Serve UnityPoint Health, Trinity Medical Center, and Black Hawk College with 24/7 vending backed by human support.",
+      icon: LifebuoyIcon
+    }
+  ],
+  neighborhoods: [
+    "John Deere World Headquarters and riverfront campus",
+    "Downtown Moline and The Axis",
+    "Quad Cities International Airport and logistics zone",
+    "UnityPoint Health and Trinity Medical Center districts",
+    "Black Hawk College and surrounding residential communities"
+  ],
+  deliverables: [
+    "Corporate amenity decks with wellness ROI, telemetry reporting, and employee engagement metrics.",
+    "Planograms featuring premium coffee, hearty meals, Midwest favorites, and healthy grab-and-go.",
+    "Guides covering bi-state health regulations, airport security, and corporate procurement processes."
+  ],
+  logistics: [
+    {
+      title: "I-74 bridge logistics",
+      description: "Installers coordinate across Illinois and Iowa facilities, riverfront docks, and airport security.",
+      icon: TruckIcon
+    },
+    {
+      title: "Warranty and uptime",
+      description: "ETL-certified hardware, optional extended support, and remote telemetry health checks.",
+      icon: ShieldCheckIcon
+    },
+    {
+      title: "Operator coaching",
+      description: "Telegram sessions covering shift rotations, campus launches, and cross-river operations.",
+      icon: ClockIcon
+    }
+  ],
+  faq: [
+    {
+      question: "Can Haha coolers support John Deere procurement requirements?",
+      answer:
+        "Yes. We provide enterprise-grade documentation, security standards, and ROI reporting tailored to Deere stakeholders."
+    },
+    {
+      question: "Do you assist with airport security protocols?",
+      answer:
+        "We manage badging, escorts, and TSA coordination to keep installations on schedule."
+    },
+    {
+      question: "What resonates with Quad Cities teams?",
+      answer:
+        "Premium coffee, protein-forward meals, healthy snacks, and regional favorites perform well across manufacturing and corporate teams."
+    },
+    {
+      question: "Is cross-river support available?",
+      answer:
+        "Telegram @thevendinglocator supports operators on both sides of the river for coordinated restocking and troubleshooting."
+    }
+  ]
+}
+
+export const napervilleContent: CityLandingContent = {
+  slug: "vending-machines-for-sale-in-naperville-illinois",
+  city: "Naperville",
+  state: "Illinois",
+  hero: {
+    eyebrow: {
+      icon: SparklesIcon,
+      label: "Smart Vending • Naperville, IL"
+    },
+    headline: {
+      pre: "Vending Machines for Sale in",
+      highlight: "Naperville, Illinois"
+    },
+    description:
+      "Deliver Haha AI smart coolers to Edward Hospital, research parks, downtown tech firms, and corporate campuses across Naperville and DuPage County.",
+    bullets: [
+      {
+        icon: ShieldCheckIcon,
+        text: "Enterprise procurement support for healthcare, tech, and corporate relocation teams"
+      },
+      {
+        icon: ClockIcon,
+        text: "Freight coordination along I-88, Route 59, and Metra-served corporate corridors"
+      },
+      {
+        icon: ChatBubbleOvalLeftEllipsisIcon,
+        text: "Telegram @thevendinglocator links Naperville, Aurora, and Western Suburbs operators"
+      }
+    ],
+    ctas: [
+      {
+        label: "Explore Smart Coolers",
+        href: "/haha-coolers",
+        variant: "primary"
+      },
+      {
+        label: "Talk to Naperville Experts",
+        href: "/contact",
+        variant: "secondary"
+      }
+    ],
+    supportLink: {
+      icon: ChatBubbleOvalLeftEllipsisIcon,
+      label: "Telegram @thevendinglocator",
+      href: "https://t.me/thevendinglocator"
+    }
+  },
+  sidebar: {
+    badge: {
+      icon: MapPinIcon,
+      label: "Built for Chicago's Western Suburbs"
+    },
+    items: [
+      {
+        title: "Primary verticals:",
+        description: "Healthcare, finance, tech, education, logistics, and premium residential."
+      },
+      {
+        title: "Placement expertise:",
+        description: "Edward-Elmhurst Health, Innovation Corridor, downtown Riverwalk, and Naperville 203 schools."
+      },
+      {
+        title: "Route optimization:",
+        description: "Telemetry planning for Metra commuters, hybrid teams, and campus schedules."
+      },
+      {
+        title: "Always-on support:",
+        description: "Telegram masterminds uniting Naperville operators with Chicagoland peers."
+      }
+    ]
+  },
+  coolerLineup: jacksonvilleContent.coolerLineup,
+  sellingPoints: [
+    {
+      title: "Healthcare excellence",
+      description:
+        "Provide Edward Hospital, Northwestern Medicine, and specialty clinics with contactless fresh food and hydration.",
+      icon: LifebuoyIcon
+    },
+    {
+      title: "Corporate campus amenities",
+      description:
+        "Serve tech firms, finance offices, and HQ relocations along I-88 with premium grab-and-go experiences.",
+      icon: BuildingOfficeIcon
+    },
+    {
+      title: "Education & community",
+      description:
+        "Upgrade Naperville 203/204 campuses, North Central College, and Park District facilities with smart coolers.",
+      icon: CubeIcon
+    }
+  ],
+  neighborhoods: [
+    "Downtown Naperville Riverwalk and Innovation Corridor",
+    "Edward Hospital medical district",
+    "Route 59 corporate and logistics hubs",
+    "Naperville 203/204 schools and North Central College",
+    "South Naperville master-planned communities"
+  ],
+  deliverables: [
+    "Corporate and healthcare decks with wellness outcomes, telemetry reporting, and employee engagement metrics.",
+    "Planograms featuring premium coffee, healthy meals, local favorites, and family-friendly snacks.",
+    "Guides covering DuPage County permits, campus approvals, and HOA amenity activation."
+  ],
+  logistics: [
+    {
+      title: "I-88 freight coverage",
+      description: "Installers schedule around corporate security, hospital loading docks, and school receiving windows.",
+      icon: TruckIcon
+    },
+    {
+      title: "Warranty and uptime",
+      description: "ETL-certified hardware, optional extended coverage, and telemetry-backed maintenance.",
+      icon: ShieldCheckIcon
+    },
+    {
+      title: "Operator coaching",
+      description: "Telegram sessions on hybrid work patterns, school calendars, and suburban amenity launches.",
+      icon: ClockIcon
+    }
+  ],
+  faq: [
+    {
+      question: "Can Haha coolers integrate with corporate wellness programs?",
+      answer:
+        "Yes. We configure planograms, subsidies, and reporting aligned to HR wellness initiatives in Naperville."
+    },
+    {
+      question: "Do you support hospital compliance requirements?",
+      answer:
+        "We provide infection control documentation, nutritional data, and badge coordination for clinical environments."
+    },
+    {
+      question: "What resonates with Naperville commuters?",
+      answer:
+        "Cold brew, premium coffee, better-for-you meals, and local bakery items perform well with Metra-connected professionals."
+    },
+    {
+      question: "Is weekend support available?",
+      answer:
+        "Telegram @thevendinglocator provides real-time coverage during community events, sports tournaments, and busy weekends."
+    }
+  ]
+}
+export const northLasVegasContent: CityLandingContent = {
+  slug: "vending-machines-for-sale-in-north-las-vegas-nevada",
+  city: "North Las Vegas",
+  state: "Nevada",
+  hero: {
+    eyebrow: {
+      icon: SparklesIcon,
+      label: "Smart Vending • North Las Vegas, NV"
+    },
+    headline: {
+      pre: "Vending Machines for Sale in",
+      highlight: "North Las Vegas, Nevada"
+    },
+    description:
+      "Equip Apex Industrial Park, Nellis Air Force Base, medical campuses, and master-planned communities with Haha AI smart coolers built for desert operations.",
+    bullets: [
+      {
+        icon: ShieldCheckIcon,
+        text: "DoD-compliant documentation and insurance for Nellis AFB and defense contractors"
+      },
+      {
+        icon: ClockIcon,
+        text: "Freight scheduling along I-15, US-95, and the I-215 Beltway serving major distribution hubs"
+      },
+      {
+        icon: ChatBubbleOvalLeftEllipsisIcon,
+        text: "Telegram @thevendinglocator supports Las Vegas Valley operators around the clock"
+      }
+    ],
+    ctas: [
+      {
+        label: "Explore Smart Coolers",
+        href: "/haha-coolers",
+        variant: "primary"
+      },
+      {
+        label: "Talk to North Las Vegas Experts",
+        href: "/contact",
+        variant: "secondary"
+      }
+    ],
+    supportLink: {
+      icon: ChatBubbleOvalLeftEllipsisIcon,
+      label: "Telegram @thevendinglocator",
+      href: "https://t.me/thevendinglocator"
+    }
+  },
+  sidebar: {
+    badge: {
+      icon: MapPinIcon,
+      label: "Built for the Las Vegas Industrial Engine"
+    },
+    items: [
+      {
+        title: "Primary verticals:",
+        description: "Defense, logistics, manufacturing, healthcare, education, and entertainment."
+      },
+      {
+        title: "Placement expertise:",
+        description: "Nellis AFB, Apex Industrial Park, North Vista Hospital, and Aliante master-planned communities."
+      },
+      {
+        title: "Desert resilience:",
+        description: "Telemetry safeguards for extreme heat, dust, and backup power planning."
+      },
+      {
+        title: "Always-on support:",
+        description: "Telegram masterminds connecting Las Vegas operators from North Las Vegas to Henderson."
+      }
+    ]
+  },
+  coolerLineup: jacksonvilleContent.coolerLineup,
+  sellingPoints: [
+    {
+      title: "Defense readiness",
+      description:
+        "Provide grab-and-go fuel for Nellis AFB squadrons, contractors, and support staff with secure access control.",
+      icon: ShieldCheckIcon
+    },
+    {
+      title: "Industrial logistics",
+      description:
+        "Serve Apex Industrial Park, Amazon, and Switch data centers with telemetry-driven restocking strategies.",
+      icon: TruckIcon
+    },
+    {
+      title: "Healthcare & community",
+      description:
+        "Keep North Vista Hospital, VA clinics, schools, and community centers stocked 24/7.",
+      icon: LifebuoyIcon
+    }
+  ],
+  neighborhoods: [
+    "Nellis Air Force Base and military housing",
+    "Apex Industrial Park and Speedway logistics corridor",
+    "Downtown North Las Vegas and Civic Center",
+    "Aliante master-planned communities",
+    "North Vista Hospital and healthcare districts"
+  ],
+  deliverables: [
+    "Defense and industrial decks highlighting telemetry, secure access, and workforce productivity.",
+    "Planograms featuring hydration, energy, hearty meals, and desert-ready snacks.",
+    "Guides covering Clark County health regulations, DoD compliance, and heat mitigation strategies."
+  ],
+  logistics: [
+    {
+      title: "I-15 logistics network",
+      description: "Installers coordinate security badges, escort requirements, and time-of-day restrictions for base and industrial deliveries.",
+      icon: TruckIcon
+    },
+    {
+      title: "Warranty and climate",
+      description: "Heat-resistant components, air filtration guidance, and ETL certification for desert operations.",
+      icon: ShieldCheckIcon
+    },
+    {
+      title: "Operator coaching",
+      description: "Telegram sessions addressing shift rotations, high-heat restocking, and power outage preparation.",
+      icon: ClockIcon
+    }
+  ],
+  faq: [
+    {
+      question: "Can Haha coolers be installed on Nellis AFB?",
+      answer:
+        "Yes. We facilitate sponsorship, security vetting, and logistics coordination required for on-base deployments."
+    },
+    {
+      question: "How do the coolers handle desert heat?",
+      answer:
+        "Intelligent compressors, insulated glass, and telemetry alerts protect product quality even during triple-digit temperatures."
+    },
+    {
+      question: "Do you provide bilingual support?",
+      answer:
+        "We supply multilingual signage and onboarding resources for Las Vegas Valley teams."
+    },
+    {
+      question: "Is after-hours support available?",
+      answer:
+        "Telegram @thevendinglocator keeps operators supported during overnight shifts and weekend operations."
+    }
+  ]
+}
+
+export const northLittleRockContent: CityLandingContent = {
+  slug: "vending-machines-for-sale-in-north-little-rock-arkansas",
+  city: "North Little Rock",
+  state: "Arkansas",
+  hero: {
+    eyebrow: {
+      icon: SparklesIcon,
+      label: "Smart Vending • North Little Rock, AR"
+    },
+    headline: {
+      pre: "Vending Machines for Sale in",
+      highlight: "North Little Rock, Arkansas"
+    },
+    description:
+      "Support healthcare systems, logistics hubs, Simmons Bank Arena, and Camp Robinson with Haha AI smart coolers and Arkansas-based support.",
+    bullets: [
+      {
+        icon: ShieldCheckIcon,
+        text: "State agency, healthcare, and military procurement documentation ready for approval"
+      },
+      {
+        icon: ClockIcon,
+        text: "Coordinated freight across I-30, I-40, and the Port of Little Rock logistics network"
+      },
+      {
+        icon: ChatBubbleOvalLeftEllipsisIcon,
+        text: "Telegram @thevendinglocator assists operators across Little Rock, Conway, and central Arkansas"
+      }
+    ],
+    ctas: [
+      {
+        label: "Explore Smart Coolers",
+        href: "/haha-coolers",
+        variant: "primary"
+      },
+      {
+        label: "Talk to North Little Rock Experts",
+        href: "/contact",
+        variant: "secondary"
+      }
+    ],
+    supportLink: {
+      icon: ChatBubbleOvalLeftEllipsisIcon,
+      label: "Telegram @thevendinglocator",
+      href: "https://t.me/thevendinglocator"
+    }
+  },
+  sidebar: {
+    badge: {
+      icon: MapPinIcon,
+      label: "Built for Central Arkansas"
+    },
+    items: [
+      {
+        title: "Primary verticals:",
+        description: "Healthcare, logistics, military, entertainment, education, and government."
+      },
+      {
+        title: "Placement expertise:",
+        description: "CHI St. Vincent, Baptist Health North Little Rock, Camp Robinson, and Simmons Bank Arena."
+      },
+      {
+        title: "Route optimization:",
+        description: "Telemetry tuned to river port logistics, military drills, and arena event calendars."
+      },
+      {
+        title: "Always-on support:",
+        description: "Telegram masterminds connecting North Little Rock operators with statewide peers."
+      }
+    ]
+  },
+  coolerLineup: jacksonvilleContent.coolerLineup,
+  sellingPoints: [
+    {
+      title: "Healthcare & government",
+      description:
+        "Deliver contactless fresh food to CHI St. Vincent, Baptist Health, and state agency complexes.",
+      icon: LifebuoyIcon
+    },
+    {
+      title: "Military readiness",
+      description:
+        "Serve Camp Robinson and the Arkansas National Guard with AI-powered vending backed by 24/7 support.",
+      icon: ShieldCheckIcon
+    },
+    {
+      title: "Entertainment & community",
+      description:
+        "Equip Simmons Bank Arena, Argenta Arts District, and North Little Rock School District with premium vending experiences.",
+      icon: CubeIcon
+    }
+  ],
+  neighborhoods: [
+    "Argenta Arts District and downtown North Little Rock",
+    "CHI St. Vincent and Baptist Health medical campuses",
+    "Camp Robinson and military housing",
+    "Port of Little Rock and logistics corridors",
+    "Simmons Bank Arena and Riverfront Park attractions"
+  ],
+  deliverables: [
+    "Healthcare and government decks with compliance documentation, wellness ROI, and staffing relief metrics.",
+    "Planograms featuring premium coffee, nutritious meals, Southern favorites, and family-friendly snacks.",
+    "Guides covering Arkansas Department of Health regulations, arena vendor policies, and military access requirements."
+  ],
+  logistics: [
+    {
+      title: "Central Arkansas freight",
+      description: "Installers coordinate around river port schedules, arena load-ins, and military gate access.",
+      icon: TruckIcon
+    },
+    {
+      title: "Warranty and compliance",
+      description: "ETL-certified hardware, optional extended coverage, and telemetry monitoring for mission-critical sites.",
+      icon: ShieldCheckIcon
+    },
+    {
+      title: "Operator coaching",
+      description: "Telegram sessions on event scheduling, military rotations, and hospital stocking best practices.",
+      icon: ClockIcon
+    }
+  ],
+  faq: [
+    {
+      question: "Can Haha coolers operate on Camp Robinson?",
+      answer:
+        "Yes. We manage sponsorship paperwork, security vetting, and logistics to deploy on Arkansas National Guard facilities."
+    },
+    {
+      question: "What performs well in Simmons Bank Arena?",
+      answer:
+        "Hydration, energy beverages, hearty meals, and local snacks serve attendees, artists, and crew during major events."
+    },
+    {
+      question: "Do you support school district requirements?",
+      answer:
+        "We provide nutrition-compliant planograms and rollout templates for North Little Rock School District amenities."
+    },
+    {
+      question: "Is 24/7 support available?",
+      answer:
+        "Telegram @thevendinglocator covers North Little Rock operators during overnight hospital and logistics operations."
+    }
+  ]
+}
+export const norwalkContent: CityLandingContent = {
+  slug: "vending-machines-for-sale-in-norwalk-connecticut",
+  city: "Norwalk",
+  state: "Connecticut",
+  hero: {
+    eyebrow: {
+      icon: SparklesIcon,
+      label: "Smart Vending • Norwalk, CT"
+    },
+    headline: {
+      pre: "Vending Machines for Sale in",
+      highlight: "Norwalk, Connecticut"
+    },
+    description:
+      "Deliver Haha AI smart coolers to Fairfield County corporate campuses, Norwalk Hospital, SONO retail, and commuter hubs with bilingual support and 24/7 assistance.",
+    bullets: [
+      {
+        icon: ShieldCheckIcon,
+        text: "Enterprise-grade documentation for finance, media, and healthcare clients along the Gold Coast"
+      },
+      {
+        icon: ClockIcon,
+        text: "Freight coordination for Merritt 7 office park, I-95 logistics, and Metro-North commuter windows"
+      },
+      {
+        icon: ChatBubbleOvalLeftEllipsisIcon,
+        text: "Telegram @thevendinglocator supports Norwalk, Stamford, and Westchester operators continuously"
+      }
+    ],
+    ctas: [
+      {
+        label: "Explore Smart Coolers",
+        href: "/haha-coolers",
+        variant: "primary"
+      },
+      {
+        label: "Talk to Norwalk Experts",
+        href: "/contact",
+        variant: "secondary"
+      }
+    ],
+    supportLink: {
+      icon: ChatBubbleOvalLeftEllipsisIcon,
+      label: "Telegram @thevendinglocator",
+      href: "https://t.me/thevendinglocator"
+    }
+  },
+  sidebar: {
+    badge: {
+      icon: MapPinIcon,
+      label: "Built for the Connecticut Gold Coast"
+    },
+    items: [
+      {
+        title: "Primary verticals:",
+        description: "Finance, media, healthcare, education, hospitality, and transportation."
+      },
+      {
+        title: "Placement expertise:",
+        description: "Merritt 7, Norwalk Hospital, SONO Collection, Stew Leonard's campus, and Maritime Aquarium."
+      },
+      {
+        title: "Commuter-centric telemetry:",
+        description: "Merchandising tailored to Metro-North schedules and hybrid workforce patterns."
+      },
+      {
+        title: "Always-on support:",
+        description: "Telegram masterminds connecting Fairfield County and New York metro operators."
+      }
+    ]
+  },
+  coolerLineup: jacksonvilleContent.coolerLineup,
+  sellingPoints: [
+    {
+      title: "Corporate wellness",
+      description:
+        "Upgrade Fairfield County finance and media offices with premium, cashless food access.",
+      icon: BuildingOfficeIcon
+    },
+    {
+      title: "Healthcare & education",
+      description:
+        "Serve Norwalk Hospital, Yale New Haven affiliates, and local schools with smart coolers backed by telemetry.",
+      icon: LifebuoyIcon
+    },
+    {
+      title: "Retail & tourism",
+      description:
+        "Provide SONO Collection, Maritime Aquarium, and waterfront venues with frictionless vending experiences.",
+      icon: CubeIcon
+    }
+  ],
+  neighborhoods: [
+    "Merritt 7 Corporate Park and Glover Avenue corridor",
+    "South Norwalk (SONO) waterfront and retail district",
+    "Norwalk Hospital medical campus",
+    "West Avenue innovation and education corridor",
+    "East Norwalk commuter neighborhoods and marinas"
+  ],
+  deliverables: [
+    "Corporate amenity decks highlighting wellness, productivity, and hybrid workforce engagement.",
+    "Planograms featuring premium coffee, healthy meals, locally loved snacks, and commuter essentials.",
+    "Guides covering Connecticut health permits, building union rules, and commuter station logistics."
+  ],
+  logistics: [
+    {
+      title: "I-95 & Merritt logistics",
+      description: "Installers coordinate dock access, security clearances, and elevator schedules for Class A properties.",
+      icon: TruckIcon
+    },
+    {
+      title: "Warranty and uptime",
+      description: "ETL-certified hardware, optional extended maintenance, and proactive telemetry alerts.",
+      icon: ShieldCheckIcon
+    },
+    {
+      title: "Operator coaching",
+      description: "Telegram sessions focusing on commuter demand cycles, seasonal tourism, and corporate events.",
+      icon: ClockIcon
+    }
+  ],
+  faq: [
+    {
+      question: "Can Haha coolers integrate with corporate wellness programs?",
+      answer:
+        "Yes. We align planograms, subsidies, and reporting with HR wellness goals for Fairfield County employers."
+    },
+    {
+      question: "Do you assist with hospital compliance?",
+      answer:
+        "We provide infection control documentation, nutrition data, and facility onboarding packs for Norwalk Hospital deployments."
+    },
+    {
+      question: "What works for commuter audiences?",
+      answer:
+        "Cold brew, better-for-you meals, hydration, and portable snacks align with Metro-North commuters."
+    },
+    {
+      question: "Is bilingual support available?",
+      answer:
+        "Yes. We supply Spanish-language signage and onboarding resources for diverse Fairfield County audiences."
+    }
+  ]
+}
+
+export const olatheContent: CityLandingContent = {
+  slug: "vending-machines-for-sale-in-olathe-kansas",
+  city: "Olathe",
+  state: "Kansas",
+  hero: {
+    eyebrow: {
+      icon: SparklesIcon,
+      label: "Smart Vending • Olathe, KS"
+    },
+    headline: {
+      pre: "Vending Machines for Sale in",
+      highlight: "Olathe, Kansas"
+    },
+    description:
+      "Deploy Haha AI smart coolers across Garmin headquarters, logistics corridors, Olathe Health, and Johnson County campuses with nonstop support.",
+    bullets: [
+      {
+        icon: ShieldCheckIcon,
+        text: "Enterprise procurement packets for aerospace, healthcare, education, and municipal buyers"
+      },
+      {
+        icon: ClockIcon,
+        text: "Freight coordination along I-35, KS-7, and New Century AirCenter logistics zones"
+      },
+      {
+        icon: ChatBubbleOvalLeftEllipsisIcon,
+        text: "Telegram @thevendinglocator connects operators across Olathe, Lenexa, and Kansas City metro"
+      }
+    ],
+    ctas: [
+      {
+        label: "Explore Smart Coolers",
+        href: "/haha-coolers",
+        variant: "primary"
+      },
+      {
+        label: "Talk to Olathe Experts",
+        href: "/contact",
+        variant: "secondary"
+      }
+    ],
+    supportLink: {
+      icon: ChatBubbleOvalLeftEllipsisIcon,
+      label: "Telegram @thevendinglocator",
+      href: "https://t.me/thevendinglocator"
+    }
+  },
+  sidebar: {
+    badge: {
+      icon: MapPinIcon,
+      label: "Built for Johnson County"
+    },
+    items: [
+      {
+        title: "Primary verticals:",
+        description: "Aerospace, manufacturing, logistics, healthcare, education, and municipal services."
+      },
+      {
+        title: "Placement expertise:",
+        description: "Garmin HQ, Olathe Health, Johnson County Community College, and New Century AirCenter."
+      },
+      {
+        title: "Route optimization:",
+        description: "Telemetry tuned to shift work, commuter schedules, and rapid-growth suburbs."
+      },
+      {
+        title: "Always-on support:",
+        description: "Telegram masterminds connecting Johnson County operators with Kansas City peers."
+      }
+    ]
+  },
+  coolerLineup: jacksonvilleContent.coolerLineup,
+  sellingPoints: [
+    {
+      title: "Aerospace & manufacturing",
+      description:
+        "Serve Garmin and Olathe manufacturing corridors with telemetry-backed vending for multi-shift teams.",
+      icon: TruckIcon
+    },
+    {
+      title: "Healthcare & education",
+      description:
+        "Provide Olathe Health, AdventHealth campuses, and Johnson County Community College with smart coolers.",
+      icon: LifebuoyIcon
+    },
+    {
+      title: "Municipal services",
+      description:
+        "Support City of Olathe facilities, parks, and civic centers with premium grab-and-go amenities.",
+      icon: BuildingOfficeIcon
+    }
+  ],
+  neighborhoods: [
+    "Garmin International headquarters and tech campus",
+    "Downtown Olathe civic and justice center",
+    "Olathe Health and AdventHealth medical districts",
+    "Johnson County Community College and education corridor",
+    "New Century AirCenter and logistics hubs"
+  ],
+  deliverables: [
+    "Aerospace and healthcare decks with telemetry analytics, staffing relief metrics, and compliance summaries.",
+    "Planograms featuring premium coffee, protein-forward meals, hydration, and local favorites.",
+    "Guides covering Johnson County permits, campus approvals, and industrial security protocols."
+  ],
+  logistics: [
+    {
+      title: "I-35 logistics coverage",
+      description: "Installers coordinate dock access, security badges, and staging for aerospace and logistics facilities.",
+      icon: TruckIcon
+    },
+    {
+      title: "Warranty and uptime",
+      description: "ETL-certified hardware, optional extended coverage, and proactive telemetry monitoring.",
+      icon: ShieldCheckIcon
+    },
+    {
+      title: "Operator coaching",
+      description: "Telegram sessions focusing on shift rotations, commuter peaks, and suburban amenity launches.",
+      icon: ClockIcon
+    }
+  ],
+  faq: [
+    {
+      question: "Can Haha coolers integrate with aerospace security requirements?",
+      answer:
+        "Yes. We supply documentation, insurance, and access control measures aligned with Garmin and defense contractors."
+    },
+    {
+      question: "What resonates with Olathe employees?",
+      answer:
+        "Energy beverages, better-for-you meals, premium coffee, and local favorites serve manufacturing and office teams well."
+    },
+    {
+      question: "Do you assist with campus deployments?",
+      answer:
+        "We provide education-friendly planograms, nutritional info, and student engagement strategies for Johnson County Community College."
+    },
+    {
+      question: "Is weekend support available?",
+      answer:
+        "Telegram @thevendinglocator supports Johnson County operators during weekend events and maintenance windows."
+    }
+  ]
+}
+
+export const overlandParkContent: CityLandingContent = {
+  slug: "vending-machines-for-sale-in-overland-park-kansas",
+  city: "Overland Park",
+  state: "Kansas",
+  hero: {
+    eyebrow: {
+      icon: SparklesIcon,
+      label: "Smart Vending • Overland Park, KS"
+    },
+    headline: {
+      pre: "Vending Machines for Sale in",
+      highlight: "Overland Park, Kansas"
+    },
+    description:
+      "Deliver Haha AI smart coolers to healthcare systems, corporate campuses, conference centers, and retail districts across Overland Park with nonstop support.",
+    bullets: [
+      {
+        icon: ShieldCheckIcon,
+        text: "Procurement packages for healthcare, finance, tech, and municipal stakeholders in Johnson County"
+      },
+      {
+        icon: ClockIcon,
+        text: "Freight coordination along US-69, I-435, and College Boulevard corporate corridors"
+      },
+      {
+        icon: ChatBubbleOvalLeftEllipsisIcon,
+        text: "Telegram @thevendinglocator connects Kansas City metro operators with 24/7 assistance"
+      }
+    ],
+    ctas: [
+      {
+        label: "Explore Smart Coolers",
+        href: "/haha-coolers",
+        variant: "primary"
+      },
+      {
+        label: "Talk to Overland Park Experts",
+        href: "/contact",
+        variant: "secondary"
+      }
+    ],
+    supportLink: {
+      icon: ChatBubbleOvalLeftEllipsisIcon,
+      label: "Telegram @thevendinglocator",
+      href: "https://t.me/thevendinglocator"
+    }
+  },
+  sidebar: {
+    badge: {
+      icon: MapPinIcon,
+      label: "Built for Kansas City's Corporate Hub"
+    },
+    items: [
+      {
+        title: "Primary verticals:",
+        description: "Healthcare, finance, insurance, tech, education, hospitality, and retail."
+      },
+      {
+        title: "Placement expertise:",
+        description: "AdventHealth Shawnee Mission, Sprint Campus, convention centers, and Blue Valley schools."
+      },
+      {
+        title: "Hybrid workforce insights:",
+        description: "Telemetry and merchandising tuned to hybrid work, conferences, and family amenities."
+      },
+      {
+        title: "Always-on support:",
+        description: "Telegram masterminds linking Johnson County and Kansas City operators in real time."
+      }
+    ]
+  },
+  coolerLineup: jacksonvilleContent.coolerLineup,
+  sellingPoints: [
+    {
+      title: "Healthcare & wellness",
+      description:
+        "Equip AdventHealth, Menorah Medical Center, and outpatient clinics with reliable 24/7 smart vending.",
+      icon: LifebuoyIcon
+    },
+    {
+      title: "Corporate campuses",
+      description:
+        "Support finance, insurance, and tech offices along College Boulevard with premium amenities.",
+      icon: BuildingOfficeIcon
+    },
+    {
+      title: "Conference & retail districts",
+      description:
+        "Deliver cashless experiences to Overland Park Convention Center, Prairiefire, and Oak Park Mall.",
+      icon: CubeIcon
+    }
+  ],
+  neighborhoods: [
+    "College Boulevard corporate corridor",
+    "Overland Park Convention Center and hotel district",
+    "AdventHealth Shawnee Mission and healthcare campuses",
+    "Prairiefire and Corbin Park lifestyle centers",
+    "Blue Valley schools and family neighborhoods"
+  ],
+  deliverables: [
+    "Corporate and healthcare decks detailing wellness ROI, telemetry analytics, and staff satisfaction wins.",
+    "Planograms featuring premium coffee, healthy meals, hydration, and family-friendly snacks for convention traffic.",
+    "Guides covering Johnson County permits, convention center approvals, and retail tenant requirements."
+  ],
+  logistics: [
+    {
+      title: "US-69 logistics",
+      description: "Installers coordinate around peak traffic, security checkpoints, and hotel loading docks.",
+      icon: TruckIcon
+    },
+    {
+      title: "Warranty and uptime",
+      description: "ETL-certified equipment, optional extended coverage, and proactive telemetry diagnostics.",
+      icon: ShieldCheckIcon
+    },
+    {
+      title: "Operator coaching",
+      description: "Telegram sessions focused on conference schedules, hybrid work cycles, and school calendars.",
+      icon: ClockIcon
+    }
+  ],
+  faq: [
+    {
+      question: "Can Haha coolers integrate with corporate wellness initiatives?",
+      answer:
+        "Absolutely. We tailor planograms, reporting, and subsidies to Overland Park corporate wellness programs."
+    },
+    {
+      question: "Do you support convention center vendors?",
+      answer:
+        "We provide event-based merchandising playbooks, staffing coordination, and onsite support for major conferences."
+    },
+    {
+      question: "What resonates with suburban families?",
+      answer:
+        "Better-for-you meals, premium coffee, hydration, and high-quality snacks perform across Overland Park neighborhoods."
+    },
+    {
+      question: "Is 24/7 support available?",
+      answer:
+        "Telegram @thevendinglocator keeps Kansas City metro operators supported during late-night restocks and weekend events."
+    }
+  ]
+}
+export const palmerContent: CityLandingContent = {
+  slug: "vending-machines-for-sale-in-palmer-alaska",
+  city: "Palmer",
+  state: "Alaska",
+  hero: {
+    eyebrow: {
+      icon: SparklesIcon,
+      label: "Smart Vending • Palmer, AK"
+    },
+    headline: {
+      pre: "Vending Machines for Sale in",
+      highlight: "Palmer, Alaska"
+    },
+    description:
+      "Support Matanuska-Susitna Borough schools, Mat-Su Regional Medical Center, and agricultural operations with Haha AI smart coolers engineered for cold-climate reliability.",
+    bullets: [
+      {
+        icon: ShieldCheckIcon,
+        text: "Ruggedized hardware with insulated glass and telemetry tuned for sub-zero Alaskan winters"
+      },
+      {
+        icon: ClockIcon,
+        text: "Freight coordination along the Glenn Highway, Wasilla logistics, and Ted Stevens Anchorage International Airport"
+      },
+      {
+        icon: ChatBubbleOvalLeftEllipsisIcon,
+        text: "Telegram @thevendinglocator supports Palmer, Wasilla, and Anchorage operators 24/7"
+      }
+    ],
+    ctas: [
+      {
+        label: "Explore Smart Coolers",
+        href: "/haha-coolers",
+        variant: "primary"
+      },
+      {
+        label: "Talk to Palmer Experts",
+        href: "/contact",
+        variant: "secondary"
+      }
+    ],
+    supportLink: {
+      icon: ChatBubbleOvalLeftEllipsisIcon,
+      label: "Telegram @thevendinglocator",
+      href: "https://t.me/thevendinglocator"
+    }
+  },
+  sidebar: {
+    badge: {
+      icon: MapPinIcon,
+      label: "Built for the Mat-Su Valley"
+    },
+    items: [
+      {
+        title: "Primary verticals:",
+        description: "Healthcare, education, agriculture, municipal services, and tourism."
+      },
+      {
+        title: "Placement expertise:",
+        description: "Mat-Su Regional Medical Center, Colony schools, fairgrounds, and visitor centers."
+      },
+      {
+        title: "Climate readiness:",
+        description: "Heated door seals, telemetry alerts, and defrost cycles designed for Palmer winters."
+      },
+      {
+        title: "Always-on support:",
+        description: "Telegram masterminds connecting the Mat-Su Valley, Anchorage, and Kenai operators."
+      }
+    ]
+  },
+  coolerLineup: jacksonvilleContent.coolerLineup,
+  sellingPoints: [
+    {
+      title: "Healthcare reliability",
+      description:
+        "Keep Mat-Su Regional Medical Center and outpatient clinics stocked around the clock with remote monitoring.",
+      icon: LifebuoyIcon
+    },
+    {
+      title: "Education & municipal",
+      description:
+        "Serve colony schools, municipal offices, and recreation facilities with cashless fresh food and beverage access.",
+      icon: BuildingOfficeIcon
+    },
+    {
+      title: "Agriculture & tourism",
+      description:
+        "Support farm co-ops, visitor centers, and events like the Alaska State Fair with rugged smart coolers.",
+      icon: CubeIcon
+    }
+  ],
+  neighborhoods: [
+    "Downtown Palmer and historic colony district",
+    "Mat-Su Regional Medical Center campus",
+    "Glenn Highway logistics and industrial corridor",
+    "Colony and Pioneer Peak school zones",
+    "Alaska State Fairgrounds and agricultural hubs"
+  ],
+  deliverables: [
+    "Cold-climate deployment guides with power, access, and backup heat planning.",
+    "Planograms featuring hearty meals, premium coffee, Alaska-made snacks, and hydration.",
+    "Documentation covering Alaska DEC food regulations and borough permitting."
+  ],
+  logistics: [
+    {
+      title: "Mat-Su freight coverage",
+      description: "Installers coordinate with Anchorage staging, Glenn Highway travel windows, and rural delivery partners.",
+      icon: TruckIcon
+    },
+    {
+      title: "Warranty and support",
+      description: "ETL-certified equipment, optional extended coverage, and remote telemetry diagnostics.",
+      icon: ShieldCheckIcon
+    },
+    {
+      title: "Operator coaching",
+      description: "Telegram sessions focusing on winter prep, tourism peaks, and agricultural event demand.",
+      icon: ClockIcon
+    }
+  ],
+  faq: [
+    {
+      question: "Will Haha coolers work reliably during Palmer winters?",
+      answer:
+        "Yes. Insulated doors, heated seals, and telemetry-driven defrost cycles maintain performance even during sub-zero cold snaps."
+    },
+    {
+      question: "Do you support Mat-Su Borough school deployments?",
+      answer:
+        "We provide nutrition-compliant planograms, installation guides, and training tailored to school campuses."
+    },
+    {
+      question: "Can the coolers operate in fairgrounds or event environments?",
+      answer:
+        "Absolutely. We supply outdoor-rated guidance, power planning, and merchandising playbooks for high-traffic events."
+    },
+    {
+      question: "Is remote support available overnight?",
+      answer:
+        "Telegram @thevendinglocator covers Alaska operators 24/7 with troubleshooting, restock advice, and emergency preparation."
+    }
+  ]
+}
+
+export const pearlandContent: CityLandingContent = {
+  slug: "vending-machines-for-sale-in-pearland-texas",
+  city: "Pearland",
+  state: "Texas",
+  hero: {
+    eyebrow: {
+      icon: SparklesIcon,
+      label: "Smart Vending • Pearland, TX"
+    },
+    headline: {
+      pre: "Vending Machines for Sale in",
+      highlight: "Pearland, Texas"
+    },
+    description:
+      "Serve Texas Medical Center commuters, petrochemical corridors, Pearland ISD campuses, and Shadow Creek Ranch amenities with Haha AI smart coolers backed by Houston-area support.",
+    bullets: [
+      {
+        icon: ShieldCheckIcon,
+        text: "Compliance-ready documentation for healthcare, petrochemical, and municipal procurement teams"
+      },
+      {
+        icon: ClockIcon,
+        text: "Freight coordination along SH-288, Beltway 8, and the Port of Houston logistics network"
+      },
+      {
+        icon: ChatBubbleOvalLeftEllipsisIcon,
+        text: "Telegram @thevendinglocator supports Pearland, League City, and Houston operators 24/7"
+      }
+    ],
+    ctas: [
+      {
+        label: "Explore Smart Coolers",
+        href: "/haha-coolers",
+        variant: "primary"
+      },
+      {
+        label: "Talk to Pearland Experts",
+        href: "/contact",
+        variant: "secondary"
+      }
+    ],
+    supportLink: {
+      icon: ChatBubbleOvalLeftEllipsisIcon,
+      label: "Telegram @thevendinglocator",
+      href: "https://t.me/thevendinglocator"
+    }
+  },
+  sidebar: {
+    badge: {
+      icon: MapPinIcon,
+      label: "Built for Houston's South Belt"
+    },
+    items: [
+      {
+        title: "Primary verticals:",
+        description: "Healthcare, petrochemical, education, retail, and luxury residential."
+      },
+      {
+        title: "Placement expertise:",
+        description: "Texas Medical Center commuters, Shadow Creek Ranch amenities, Pearland Town Center, and petrochemical plants."
+      },
+      {
+        title: "Route optimization:",
+        description: "Telemetry tuned to shift rotations, commuter peaks, and master-planned community schedules."
+      },
+      {
+        title: "Always-on support:",
+        description: "Houston-area masterminds share real-time stocking, compliance, and merchandising guidance."
+      }
+    ]
+  },
+  coolerLineup: jacksonvilleContent.coolerLineup,
+  sellingPoints: [
+    {
+      title: "Healthcare commuter amenities",
+      description:
+        "Deliver fresh fuel for Texas Medical Center employees living in Pearland and traveling SH-288 daily.",
+      icon: LifebuoyIcon
+    },
+    {
+      title: "Petrochemical & logistics",
+      description:
+        "Support energy corridor plants, warehouses, and distribution centers with telemetry-driven vending.",
+      icon: TruckIcon
+    },
+    {
+      title: "Education & residential",
+      description:
+        "Upgrade Pearland ISD campuses and master-planned community amenities with premium smart coolers.",
+      icon: CubeIcon
+    }
+  ],
+  neighborhoods: [
+    "Shadow Creek Ranch and master-planned communities",
+    "Texas Medical Center commuter corridors",
+    "Pearland Town Center retail district",
+    "Pearland ISD campuses and athletic facilities",
+    "South Belt petrochemical and logistics zones"
+  ],
+  deliverables: [
+    "Healthcare and industrial decks highlighting wellness ROI, safety, and telemetry analytics.",
+    "Planograms featuring premium coffee, better-for-you meals, energy beverages, and family-friendly snacks.",
+    "Guides covering Brazoria County permits, plant safety requirements, and HOA amenity activations."
+  ],
+  logistics: [
+    {
+      title: "SH-288 freight",
+      description: "Installers coordinate around commuter rush, plant access windows, and community gate codes.",
+      icon: TruckIcon
+    },
+    {
+      title: "Warranty and uptime",
+      description: "ETL-certified hardware, optional extended service, and telemetry monitoring to prevent downtime.",
+      icon: ShieldCheckIcon
+    },
+    {
+      title: "Operator coaching",
+      description: "Telegram sessions on commuter demand, hurricane prep, and petrochemical shift coverage.",
+      icon: ClockIcon
+    }
+  ],
+  faq: [
+    {
+      question: "Can Haha coolers operate inside petrochemical facilities?",
+      answer:
+        "Yes. We provide documentation, insurance, and hardware guidance suitable for industrial breakrooms and secure zones."
+    },
+    {
+      question: "Do you support HOA or apartment amenities?",
+      answer:
+        "We supply amenity launch kits, marketing assets, and telemetry dashboards for master-planned communities."
+    },
+    {
+      question: "What resonates with healthcare commuters?",
+      answer:
+        "Grab-and-go meals, premium coffee, cold brew, hydration, and high-protein snacks align with shift workers."
+    },
+    {
+      question: "Is hurricane preparation included?",
+      answer:
+        "Yes. We provide hurricane readiness checklists, backup power recommendations, and rapid restock strategies."
+    }
+  ]
+}
+export const peoriaContent: CityLandingContent = {
+  slug: "vending-machines-for-sale-in-peoria-illinois",
+  city: "Peoria",
+  state: "Illinois",
+  hero: {
+    eyebrow: {
+      icon: SparklesIcon,
+      label: "Smart Vending • Peoria, IL"
+    },
+    headline: {
+      pre: "Vending Machines for Sale in",
+      highlight: "Peoria, Illinois"
+    },
+    description:
+      "Equip Caterpillar headquarters, OSF HealthCare, Bradley University, and Peoria innovation hubs with Haha AI smart coolers and 24/7 support.",
+    bullets: [
+      {
+        icon: ShieldCheckIcon,
+        text: "Enterprise procurement decks tailored to manufacturing, healthcare, and education stakeholders"
+      },
+      {
+        icon: ClockIcon,
+        text: "Freight coordination along I-74, I-474, and Greater Peoria logistics corridors"
+      },
+      {
+        icon: ChatBubbleOvalLeftEllipsisIcon,
+        text: "Telegram @thevendinglocator connects operators across Peoria, Bloomington, and Springfield"
+      }
+    ],
+    ctas: [
+      {
+        label: "Explore Smart Coolers",
+        href: "/haha-coolers",
+        variant: "primary"
+      },
+      {
+        label: "Talk to Peoria Experts",
+        href: "/contact",
+        variant: "secondary"
+      }
+    ],
+    supportLink: {
+      icon: ChatBubbleOvalLeftEllipsisIcon,
+      label: "Telegram @thevendinglocator",
+      href: "https://t.me/thevendinglocator"
+    }
+  },
+  sidebar: {
+    badge: {
+      icon: MapPinIcon,
+      label: "Built for the Heart of Illinois"
+    },
+    items: [
+      {
+        title: "Primary verticals:",
+        description: "Manufacturing, healthcare, higher education, government, and innovation labs."
+      },
+      {
+        title: "Placement expertise:",
+        description: "Caterpillar Global HQ, OSF HealthCare, UnityPoint Health, Bradley University, and Peoria Innovation Alliance."
+      },
+      {
+        title: "Route optimization:",
+        description: "Telemetry tuned to shift rotations, student schedules, and downtown revitalization timelines."
+      },
+      {
+        title: "Always-on support:",
+        description: "Telegram masterminds linking central Illinois operators with real-time troubleshooting."
+      }
+    ]
+  },
+  coolerLineup: jacksonvilleContent.coolerLineup,
+  sellingPoints: [
+    {
+      title: "Manufacturing productivity",
+      description:
+        "Deliver premium grab-and-go options for Caterpillar facilities, support vendors, and logistics teams.",
+      icon: TruckIcon
+    },
+    {
+      title: "Healthcare nourishment",
+      description:
+        "Serve OSF Saint Francis Medical Center, UnityPoint Health, and clinics with contactless 24/7 vending.",
+      icon: LifebuoyIcon
+    },
+    {
+      title: "Campus engagement",
+      description:
+        "Upgrade Bradley University and ICC venues with smart coolers tuned to student demand.",
+      icon: BuildingOfficeIcon
+    }
+  ],
+  neighborhoods: [
+    "Downtown Peoria riverfront and Warehouse District",
+    "Caterpillar Global Headquarters and R&D hubs",
+    "OSF HealthCare and UnityPoint medical campuses",
+    "Bradley University and West Bluff neighborhoods",
+    "North Peoria logistics and suburban corporate parks"
+  ],
+  deliverables: [
+    "Manufacturing and healthcare decks with ROI models, telemetry analytics, and wellness insights.",
+    "Planograms featuring premium coffee, hearty meals, local snacks, and healthy grab-and-go items.",
+    "Guides covering Peoria County health permits, union facilities, and campus onboarding processes."
+  ],
+  logistics: [
+    {
+      title: "I-74 logistics coverage",
+      description: "Installers coordinate plant access, hospital docks, and downtown revitalization projects.",
+      icon: TruckIcon
+    },
+    {
+      title: "Warranty and compliance",
+      description: "ETL-certified hardware, optional extended coverage, and telemetry monitoring for mission-critical sites.",
+      icon: ShieldCheckIcon
+    },
+    {
+      title: "Operator coaching",
+      description: "Telegram sessions on shift scheduling, campus semester peaks, and civic event planning.",
+      icon: ClockIcon
+    }
+  ],
+  faq: [
+    {
+      question: "Do you support Caterpillar supplier requirements?",
+      answer:
+        "Yes. We provide compliance documentation, insurance certificates, and security protocols aligned with Caterpillar standards."
+    },
+    {
+      question: "How do Haha coolers help hospitals and clinics?",
+      answer:
+        "Telemetry and cashless checkout keep staff nourished 24/7 without staffing on-site cafeterias."
+    },
+    {
+      question: "Can the coolers integrate with student programs?",
+      answer:
+        "We offer planograms and reporting tailored to student dining initiatives and auxiliary services."
+    },
+    {
+      question: "Is weekend support available?",
+      answer:
+        "Telegram @thevendinglocator provides real-time assistance during weekend events and maintenance windows."
+    }
+  ]
+}
+
+export const pineBluffContent: CityLandingContent = {
+  slug: "vending-machines-for-sale-in-pine-bluff-arkansas",
+  city: "Pine Bluff",
+  state: "Arkansas",
+  hero: {
+    eyebrow: {
+      icon: SparklesIcon,
+      label: "Smart Vending • Pine Bluff, AR"
+    },
+    headline: {
+      pre: "Vending Machines for Sale in",
+      highlight: "Pine Bluff, Arkansas"
+    },
+    description:
+      "Support Jefferson Regional, University of Arkansas at Pine Bluff, Saracen Casino Resort, and industrial corridors with Haha AI smart coolers and round-the-clock support.",
+    bullets: [
+      {
+        icon: ShieldCheckIcon,
+        text: "Healthcare, education, and casino procurement documentation ready for Jefferson County stakeholders"
+      },
+      {
+        icon: ClockIcon,
+        text: "Freight coordination along I-530, Port of Pine Bluff, and rail-served industrial parks"
+      },
+      {
+        icon: ChatBubbleOvalLeftEllipsisIcon,
+        text: "Telegram @thevendinglocator links Pine Bluff, Little Rock, and Delta region operators 24/7"
+      }
+    ],
+    ctas: [
+      {
+        label: "Explore Smart Coolers",
+        href: "/haha-coolers",
+        variant: "primary"
+      },
+      {
+        label: "Talk to Pine Bluff Experts",
+        href: "/contact",
+        variant: "secondary"
+      }
+    ],
+    supportLink: {
+      icon: ChatBubbleOvalLeftEllipsisIcon,
+      label: "Telegram @thevendinglocator",
+      href: "https://t.me/thevendinglocator"
+    }
+  },
+  sidebar: {
+    badge: {
+      icon: MapPinIcon,
+      label: "Built for the Arkansas Delta"
+    },
+    items: [
+      {
+        title: "Primary verticals:",
+        description: "Healthcare, higher education, gaming, manufacturing, and logistics."
+      },
+      {
+        title: "Placement expertise:",
+        description: "Jefferson Regional Health System, Saracen Casino Resort, UAPB, Pine Bluff Arsenal, and port facilities."
+      },
+      {
+        title: "Route optimization:",
+        description: "Telemetry tuned to shift rotations, campus calendars, and casino peak hours."
+      },
+      {
+        title: "Always-on support:",
+        description: "Telegram masterminds connecting Pine Bluff operators with statewide partners."
+      }
+    ]
+  },
+  coolerLineup: jacksonvilleContent.coolerLineup,
+  sellingPoints: [
+    {
+      title: "Healthcare resilience",
+      description:
+        "Ensure Jefferson Regional Health System staff, patients, and visitors have premium grab-and-go access 24/7.",
+      icon: LifebuoyIcon
+    },
+    {
+      title: "Gaming & hospitality",
+      description:
+        "Keep Saracen Casino Resort floor teams, guests, and back-of-house operations fueled with cashless vending.",
+      icon: CubeIcon
+    },
+    {
+      title: "Education & industrial",
+      description:
+        "Deploy smart coolers across UAPB, Pine Bluff Arsenal, and manufacturing corridors with telemetry-backed restocking.",
+      icon: TruckIcon
+    }
+  ],
+  neighborhoods: [
+    "Downtown Pine Bluff revitalization district",
+    "Jefferson Regional Health System campus",
+    "Saracen Casino Resort and Riverfront Park",
+    "University of Arkansas at Pine Bluff and student housing",
+    "Pine Bluff Arsenal and Port of Pine Bluff industrial zones"
+  ],
+  deliverables: [
+    "Healthcare, casino, and campus decks detailing ROI, staffing relief, and compliance documentation.",
+    "Planograms featuring premium coffee, Southern-inspired meals, hydration, and late-night snacks.",
+    "Guides covering Arkansas Department of Health regulations, casino vendor policies, and port logistics."
+  ],
+  logistics: [
+    {
+      title: "I-530 logistics",
+      description: "Installers coordinate with port security, casino load-ins, campus docks, and arsenal access requirements.",
+      icon: TruckIcon
+    },
+    {
+      title: "Warranty and service",
+      description: "ETL-certified hardware, optional extended coverage, and remote telemetry diagnostics for mission-critical sites.",
+      icon: ShieldCheckIcon
+    },
+    {
+      title: "Operator coaching",
+      description: "Telegram sessions on casino surge demand, semester launches, and industrial shift coverage.",
+      icon: ClockIcon
+    }
+  ],
+  faq: [
+    {
+      question: "Can Haha coolers operate inside Saracen Casino Resort?",
+      answer:
+        "Yes. We provide vendor onboarding, security clearances, and merchandising plans tailored to casino operations."
+    },
+    {
+      question: "Do you support Pine Bluff Arsenal deployments?",
+      answer:
+        "We manage sponsorship paperwork, escort coordination, and compliance requirements for federal facilities."
+    },
+    {
+      question: "What offerings resonate with UAPB students?",
+      answer:
+        "Premium coffee, grab-and-go meals, hydration, and locally loved snacks keep campus communities energized."
+    },
+    {
+      question: "Is after-hours support available?",
+      answer:
+        "Telegram @thevendinglocator provides real-time assistance during overnight shifts and weekend events."
+    }
+  ]
+}
+
+export const portlandMaineContent: CityLandingContent = {
+  slug: "vending-machines-for-sale-in-portland-maine",
+  city: "Portland",
+  state: "Maine",
+  hero: {
+    eyebrow: {
+      icon: SparklesIcon,
+      label: "Smart Vending • Portland, ME"
+    },
+    headline: {
+      pre: "Vending Machines for Sale in",
+      highlight: "Portland, Maine"
+    },
+    description:
+      "Deliver Haha AI smart coolers to MaineHealth, education campuses, waterfront hospitality, and tech startups across Portland with nonstop support.",
+    bullets: [
+      {
+        icon: ShieldCheckIcon,
+        text: "Healthcare and enterprise procurement packages aligned with MaineHealth and regional employers"
+      },
+      {
+        icon: ClockIcon,
+        text: "Freight coordination for Casco Bay terminals, I-295 logistics, and downtown high-rises"
+      },
+      {
+        icon: ChatBubbleOvalLeftEllipsisIcon,
+        text: "Telegram @thevendinglocator keeps Portland, Augusta, and Bangor operators supported 24/7"
+      }
+    ],
+    ctas: [
+      {
+        label: "Explore Smart Coolers",
+        href: "/haha-coolers",
+        variant: "primary"
+      },
+      {
+        label: "Talk to Portland Experts",
+        href: "/contact",
+        variant: "secondary"
+      }
+    ],
+    supportLink: {
+      icon: ChatBubbleOvalLeftEllipsisIcon,
+      label: "Telegram @thevendinglocator",
+      href: "https://t.me/thevendinglocator"
+    }
+  },
+  sidebar: {
+    badge: {
+      icon: MapPinIcon,
+      label: "Built for Casco Bay"
+    },
+    items: [
+      {
+        title: "Primary verticals:",
+        description: "Healthcare, finance, education, hospitality, logistics, and technology."
+      },
+      {
+        title: "Placement expertise:",
+        description: "Maine Medical Center, WEX, UNE, Old Port hospitality, and waterfront logistics."
+      },
+      {
+        title: "Seasonal insights:",
+        description: "Telemetry tuned to commuter cycles, tourism peaks, and ferry traffic."
+      },
+      {
+        title: "Always-on support:",
+        description: "Telegram masterminds connecting Portland operators with statewide peers."
+      }
+    ]
+  },
+  coolerLineup: jacksonvilleContent.coolerLineup,
+  sellingPoints: [
+    {
+      title: "Healthcare nourishment",
+      description:
+        "Support MaineHealth campuses, Mercy Hospital, and clinics with cashless fresh food available 24/7.",
+      icon: LifebuoyIcon
+    },
+    {
+      title: "Hospitality & tourism",
+      description:
+        "Serve Old Port hotels, ferry terminals, and cruise passengers with premium grab-and-go options.",
+      icon: CubeIcon
+    },
+    {
+      title: "Corporate wellness",
+      description:
+        "Deliver smart coolers to WEX, IDEXX, and tech startups with telemetry-backed merchandising.",
+      icon: BuildingOfficeIcon
+    }
+  ],
+  neighborhoods: [
+    "Old Port waterfront and hospitality district",
+    "Downtown financial and tech corridors",
+    "Maine Medical Center and Mercy Hospital campuses",
+    "University of Southern Maine and UNE Portland",
+    "Casco Bay ferry and cargo terminals"
+  ],
+  deliverables: [
+    "Healthcare and corporate decks detailing wellness ROI, telemetry analytics, and staffing relief.",
+    "Planograms featuring premium coffee, local bakery items, lobster roll accompaniments, and healthy meals.",
+    "Guides covering Portland health inspections, building access, and ferry terminal coordination."
+  ],
+  logistics: [
+    {
+      title: "Casco Bay logistics",
+      description: "Installers coordinate narrow-street deliveries, ferry schedules, and downtown dock access.",
+      icon: TruckIcon
+    },
+    {
+      title: "Warranty and coastal care",
+      description: "Humidity-resistant components, ETL certification, and optional coastal maintenance packages.",
+      icon: ShieldCheckIcon
+    },
+    {
+      title: "Operator coaching",
+      description: "Telegram sessions on summer tourism surges, winter commuter patterns, and island deliveries.",
+      icon: ClockIcon
+    }
+  ],
+  faq: [
+    {
+      question: "Can Haha coolers handle coastal humidity and salt air?",
+      answer:
+        "Yes. Sealed refrigeration, desiccant glass, and corrosion-resistant finishes keep equipment operating reliably."
+    },
+    {
+      question: "Do you support ferry terminal or cruise deployments?",
+      answer:
+        "We coordinate with terminal management to schedule deliveries, security checks, and merchandising for travelers."
+    },
+    {
+      question: "What resonates with Portland professionals and visitors?",
+      answer:
+        "Better-for-you meals, specialty coffee, local snacks, and hydration perform well across offices and tourism sites."
+    },
+    {
+      question: "Is after-hours support available?",
+      answer:
+        "Telegram @thevendinglocator provides real-time assistance during overnight restocks and weekend events."
+    }
+  ]
+}
+export const renoContent: CityLandingContent = {
+  slug: "vending-machines-for-sale-in-reno-nevada",
+  city: "Reno",
+  state: "Nevada",
+  hero: {
+    eyebrow: {
+      icon: SparklesIcon,
+      label: "Smart Vending • Reno, NV"
+    },
+    headline: {
+      pre: "Vending Machines for Sale in",
+      highlight: "Reno, Nevada"
+    },
+    description:
+      "Deploy Haha AI smart coolers to tech manufacturers, University of Nevada, Reno, regional hospitals, and casino resorts across Reno and the Truckee Meadows.",
+    bullets: [
+      {
+        icon: ShieldCheckIcon,
+        text: "Documentation aligned with advanced manufacturing, healthcare, and hospitality procurement requirements"
+      },
+      {
+        icon: ClockIcon,
+        text: "Freight coordination along I-80, Tahoe-Reno Industrial Center, and Reno-Tahoe International Airport"
+      },
+      {
+        icon: ChatBubbleOvalLeftEllipsisIcon,
+        text: "Telegram @thevendinglocator serves Reno, Sparks, and Lake Tahoe operators 24/7"
+      }
+    ],
+    ctas: [
+      {
+        label: "Explore Smart Coolers",
+        href: "/haha-coolers",
+        variant: "primary"
+      },
+      {
+        label: "Talk to Reno Experts",
+        href: "/contact",
+        variant: "secondary"
+      }
+    ],
+    supportLink: {
+      icon: ChatBubbleOvalLeftEllipsisIcon,
+      label: "Telegram @thevendinglocator",
+      href: "https://t.me/thevendinglocator"
+    }
+  },
+  sidebar: {
+    badge: {
+      icon: MapPinIcon,
+      label: "Built for the Biggest Little City"
+    },
+    items: [
+      {
+        title: "Primary verticals:",
+        description: "Manufacturing, technology, healthcare, education, hospitality, and gaming."
+      },
+      {
+        title: "Placement expertise:",
+        description: "Tesla/Switch suppliers, UNR, Renown Health, casino resorts, and Reno-Sparks Convention Center."
+      },
+      {
+        title: "High-desert resilience:",
+        description: "Telemetry safeguards for dry climates, altitude, and seasonal swings."
+      },
+      {
+        title: "Always-on support:",
+        description: "Telegram masterminds linking Reno operators with Tahoe and Northern Nevada peers."
+      }
+    ]
+  },
+  coolerLineup: jacksonvilleContent.coolerLineup,
+  sellingPoints: [
+    {
+      title: "Manufacturing productivity",
+      description:
+        "Serve Tesla, Panasonic, and advanced manufacturing campuses with secure, telemetry-backed vending.",
+      icon: TruckIcon
+    },
+    {
+      title: "Healthcare & education",
+      description:
+        "Support Renown Health, Saint Mary's, and UNR with premium grab-and-go options for staff and students.",
+      icon: LifebuoyIcon
+    },
+    {
+      title: "Hospitality & gaming",
+      description:
+        "Deliver cashless experiences for casino resorts, convention centers, and Lake Tahoe venues.",
+      icon: CubeIcon
+    }
+  ],
+  neighborhoods: [
+    "Downtown Reno hospitality and gaming corridor",
+    "MidTown innovation and culinary district",
+    "University of Nevada, Reno and research park",
+    "Tahoe-Reno Industrial Center and logistics hubs",
+    "South Reno residential and retail expansion zones"
+  ],
+  deliverables: [
+    "Manufacturing, healthcare, and hospitality decks with telemetry analytics and ROI insights.",
+    "Planograms featuring premium coffee, better-for-you meals, hydration, and high-demand snacks.",
+    "Guides covering Washoe County permits, casino vendor policies, and TRIC security requirements."
+  ],
+  logistics: [
+    {
+      title: "I-80 and airport logistics",
+      description: "Installers coordinate plant access, casino load-ins, campus docks, and airport security checkpoints.",
+      icon: TruckIcon
+    },
+    {
+      title: "Warranty and climate",
+      description: "Heat-resistant components, air filtration guidance, and ETL certification for high-desert environments.",
+      icon: ShieldCheckIcon
+    },
+    {
+      title: "Operator coaching",
+      description: "Telegram sessions on shift rotations, event surges, and mountain weather contingencies.",
+      icon: ClockIcon
+    }
+  ],
+  faq: [
+    {
+      question: "Do you support Tahoe-Reno Industrial Center deployments?",
+      answer:
+        "Yes. We provide security documentation, scheduling, and freight coordination for TRIC facilities."
+    },
+    {
+      question: "Can Haha coolers operate on casino floors?",
+      answer:
+        "We collaborate with resort operations to align placement, branding, and cashless experiences with gaming environments."
+    },
+    {
+      question: "What resonates with UNR students and staff?",
+      answer:
+        "Premium coffee, healthy meals, hydration, and locally inspired snacks perform well across campus venues."
+    },
+    {
+      question: "Is 24/7 support available?",
+      answer:
+        "Telegram @thevendinglocator supports Reno operators with continuous troubleshooting and merchandising advice."
+    }
+  ]
+}
+
+export const richardsonContent: CityLandingContent = {
+  slug: "vending-machines-for-sale-in-richardson-texas",
+  city: "Richardson",
+  state: "Texas",
+  hero: {
+    eyebrow: {
+      icon: SparklesIcon,
+      label: "Smart Vending • Richardson, TX"
+    },
+    headline: {
+      pre: "Vending Machines for Sale in",
+      highlight: "Richardson, Texas"
+    },
+    description:
+      "Equip Telecom Corridor® HQs, UT Dallas, Baylor Scott & White, and Richardson Innovation Quarter with Haha AI smart coolers and Dallas-area support.",
+    bullets: [
+      {
+        icon: ShieldCheckIcon,
+        text: "Enterprise procurement packages for telecom, semiconductor, and corporate offices"
+      },
+      {
+        icon: ClockIcon,
+        text: "Freight coordination along US-75, President George Bush Turnpike, and DART rail-accessible campuses"
+      },
+      {
+        icon: ChatBubbleOvalLeftEllipsisIcon,
+        text: "Telegram @thevendinglocator connects Richardson, Plano, and North Dallas operators 24/7"
+      }
+    ],
+    ctas: [
+      {
+        label: "Explore Smart Coolers",
+        href: "/haha-coolers",
+        variant: "primary"
+      },
+      {
+        label: "Talk to Richardson Experts",
+        href: "/contact",
+        variant: "secondary"
+      }
+    ],
+    supportLink: {
+      icon: ChatBubbleOvalLeftEllipsisIcon,
+      label: "Telegram @thevendinglocator",
+      href: "https://t.me/thevendinglocator"
+    }
+  },
+  sidebar: {
+    badge: {
+      icon: MapPinIcon,
+      label: "Built for the Telecom Corridor®"
+    },
+    items: [
+      {
+        title: "Primary verticals:",
+        description: "Technology, telecom, semiconductor, healthcare, education, and hospitality."
+      },
+      {
+        title: "Placement expertise:",
+        description: "AT&T, Cisco, State Farm, UT Dallas, Baylor Scott & White, and Richardson IQ startups."
+      },
+      {
+        title: "Route optimization:",
+        description: "Telemetry tuned to hybrid work patterns, student schedules, and corporate event calendars."
+      },
+      {
+        title: "Always-on support:",
+        description: "Dallas-area masterminds share stocking, compliance, and merchandising best practices in real time."
+      }
+    ]
+  },
+  coolerLineup: jacksonvilleContent.coolerLineup,
+  sellingPoints: [
+    {
+      title: "Corporate campus wellness",
+      description:
+        "Deliver premium grab-and-go experiences for telecom and semiconductor HQs along US-75.",
+      icon: BuildingOfficeIcon
+    },
+    {
+      title: "Education excellence",
+      description:
+        "Serve UT Dallas, Richland College, and Richardson ISD campuses with telemetry-backed vending.",
+      icon: CubeIcon
+    },
+    {
+      title: "Healthcare coverage",
+      description:
+        "Support Baylor Scott & White, Methodist Richardson, and specialty clinics with 24/7 access.",
+      icon: LifebuoyIcon
+    }
+  ],
+  neighborhoods: [
+    "Telecom Corridor® corporate campuses",
+    "Richardson Innovation Quarter and startup ecosystem",
+    "UT Dallas campus and student housing",
+    "Baylor Scott & White and Methodist Richardson medical districts",
+    "CityLine, Eastside, and downtown Richardson amenities"
+  ],
+  deliverables: [
+    "Corporate and campus decks emphasizing telemetry analytics, wellness ROI, and hybrid work support.",
+    "Planograms featuring premium coffee, better-for-you meals, energy beverages, and student favorites.",
+    "Guides covering city permits, DART-accessible deliveries, and corporate security protocols."
+  ],
+  logistics: [
+    {
+      title: "US-75 logistics coverage",
+      description: "Installers coordinate security clearance, parking, and dock access for high-rise campuses.",
+      icon: TruckIcon
+    },
+    {
+      title: "Warranty and uptime",
+      description: "ETL-certified hardware, optional extended service, and telemetry monitoring for rapid response.",
+      icon: ShieldCheckIcon
+    },
+    {
+      title: "Operator coaching",
+      description: "Telegram sessions on hybrid work trends, student demand, and corporate event surges.",
+      icon: ClockIcon
+    }
+  ],
+  faq: [
+    {
+      question: "Do you support corporate security requirements?",
+      answer:
+        "Yes. We provide COI, background checks, and access control coordination tailored to Telecom Corridor® campuses."
+    },
+    {
+      question: "Can the coolers integrate with student dining programs?",
+      answer:
+        "We collaborate with UT Dallas and Richardson ISD to ensure nutrition compliance and campus engagement."
+    },
+    {
+      question: "What performs well in North Dallas workplaces?",
+      answer:
+        "Premium coffee, healthy meals, hydration, and snack assortments tailored to tech professionals perform best."
+    },
+    {
+      question: "Is support available during after-hours restocking?",
+      answer:
+        "Telegram @thevendinglocator keeps Richardson operators covered during late-night campus and office restocks."
+    }
+  ]
+}
+export const rockfordContent: CityLandingContent = {
+  slug: "vending-machines-for-sale-in-rockford-illinois",
+  city: "Rockford",
+  state: "Illinois",
+  hero: {
+    eyebrow: {
+      icon: SparklesIcon,
+      label: "Smart Vending • Rockford, IL"
+    },
+    headline: {
+      pre: "Vending Machines for Sale in",
+      highlight: "Rockford, Illinois"
+    },
+    description:
+      "Equip aerospace manufacturers, Rockford hospitals, downtown innovation spaces, and education campuses with Haha AI smart coolers and 24/7 support.",
+    bullets: [
+      {
+        icon: ShieldCheckIcon,
+        text: "Aerospace and healthcare procurement documentation aligned with Rockford's supply chain hub"
+      },
+      {
+        icon: ClockIcon,
+        text: "Freight coordination along I-90, Chicago Rockford International Airport, and logistics corridors"
+      },
+      {
+        icon: ChatBubbleOvalLeftEllipsisIcon,
+        text: "Telegram @thevendinglocator links Rockford, Rockton, and the I-90 corridor operators around the clock"
+      }
+    ],
+    ctas: [
+      {
+        label: "Explore Smart Coolers",
+        href: "/haha-coolers",
+        variant: "primary"
+      },
+      {
+        label: "Talk to Rockford Experts",
+        href: "/contact",
+        variant: "secondary"
+      }
+    ],
+    supportLink: {
+      icon: ChatBubbleOvalLeftEllipsisIcon,
+      label: "Telegram @thevendinglocator",
+      href: "https://t.me/thevendinglocator"
+    }
+  },
+  sidebar: {
+    badge: {
+      icon: MapPinIcon,
+      label: "Built for the Aerospace Capital"
+    },
+    items: [
+      {
+        title: "Primary verticals:",
+        description: "Aerospace, manufacturing, healthcare, education, logistics, and government."
+      },
+      {
+        title: "Placement expertise:",
+        description: "Collins Aerospace, Woodward, Mercyhealth, OSF Saint Anthony, Rock Valley College, and downtown incubators."
+      },
+      {
+        title: "Route optimization:",
+        description: "Telemetry tuned to multi-shift manufacturing, hospital staffing, and commuter schedules."
+      },
+      {
+        title: "Always-on support:",
+        description: "Telegram masterminds connecting Rockford operators with Chicago and Quad Cities peers."
+      }
+    ]
+  },
+  coolerLineup: jacksonvilleContent.coolerLineup,
+  sellingPoints: [
+    {
+      title: "Aerospace manufacturing",
+      description:
+        "Provide high-protein meals, hydration, and premium coffee for multi-shift aerospace and supplier facilities.",
+      icon: TruckIcon
+    },
+    {
+      title: "Healthcare nourishment",
+      description:
+        "Serve Mercyhealth, OSF Saint Anthony, and SwedishAmerican staff with 24/7 cashless vending.",
+      icon: LifebuoyIcon
+    },
+    {
+      title: "Education & civic",
+      description:
+        "Support Rock Valley College, NIU Rockford, and city government campuses with modern amenities.",
+      icon: BuildingOfficeIcon
+    }
+  ],
+  neighborhoods: [
+    "Downtown Rockford River District",
+    "Chicago Rockford International Airport and logistics zone",
+    "Medical District including Mercyhealth and OSF Saint Anthony",
+    "Aerospace Corridor along Airport Road and Perryville",
+    "Rock Valley College and regional education campuses"
+  ],
+  deliverables: [
+    "Aerospace and healthcare decks with telemetry analytics, safety compliance, and wellness benefits.",
+    "Planograms featuring premium coffee, better-for-you meals, hydration, and Midwest favorite snacks.",
+    "Guides covering Winnebago County permits, airport security, and union facility requirements."
+  ],
+  logistics: [
+    {
+      title: "I-90 logistics coverage",
+      description: "Installers coordinate security, dock scheduling, and airport access for manufacturing campuses.",
+      icon: TruckIcon
+    },
+    {
+      title: "Warranty and uptime",
+      description: "ETL-certified hardware, optional extended service plans, and telemetry-driven maintenance alerts.",
+      icon: ShieldCheckIcon
+    },
+    {
+      title: "Operator coaching",
+      description: "Telegram sessions covering shift rotations, campus launches, and regional event planning.",
+      icon: ClockIcon
+    }
+  ],
+  faq: [
+    {
+      question: "Do you support aerospace supplier requirements?",
+      answer:
+        "Yes. We provide documentation, insurance, and operational standards aligned with Collins Aerospace, Woodward, and other OEMs."
+    },
+    {
+      question: "How do Haha coolers benefit hospital staff?",
+      answer:
+        "Cashless 24/7 access, telemetry, and high-quality merchandising keep care teams energized without additional staffing."
+    },
+    {
+      question: "Can the coolers integrate with campus programs?",
+      answer:
+        "We collaborate with Rock Valley College and NIU Rockford to tailor nutrition, subsidies, and student engagement efforts."
+    },
+    {
+      question: "Is weekend or overnight support available?",
+      answer:
+        "Telegram @thevendinglocator covers Rockford operators continuously for troubleshooting and merchandising guidance."
+    }
+  ]
+}
+
+export const rogersContent: CityLandingContent = {
+  slug: "vending-machines-for-sale-in-rogers-arkansas",
+  city: "Rogers",
+  state: "Arkansas",
+  hero: {
+    eyebrow: {
+      icon: SparklesIcon,
+      label: "Smart Vending • Rogers, AR"
+    },
+    headline: {
+      pre: "Vending Machines for Sale in",
+      highlight: "Rogers, Arkansas"
+    },
+    description:
+      "Serve Walmart suppliers, Mercy Hospital Northwest Arkansas, Pinnacle Hills corporate towers, and tourism venues in Rogers with Haha AI smart coolers and NWA support teams.",
+    bullets: [
+      {
+        icon: ShieldCheckIcon,
+        text: "Northwest Arkansas enterprise documentation for supplier HQs, healthcare, and hospitality groups"
+      },
+      {
+        icon: ClockIcon,
+        text: "Freight coordination along I-49, Pinnacle Hills Parkway, and Northwest Arkansas National Airport"
+      },
+      {
+        icon: ChatBubbleOvalLeftEllipsisIcon,
+        text: "Telegram @thevendinglocator connects Rogers, Bentonville, and Fayetteville operators 24/7"
+      }
+    ],
+    ctas: [
+      {
+        label: "Explore Smart Coolers",
+        href: "/haha-coolers",
+        variant: "primary"
+      },
+      {
+        label: "Talk to Rogers Experts",
+        href: "/contact",
+        variant: "secondary"
+      }
+    ],
+    supportLink: {
+      icon: ChatBubbleOvalLeftEllipsisIcon,
+      label: "Telegram @thevendinglocator",
+      href: "https://t.me/thevendinglocator"
+    }
+  },
+  sidebar: {
+    badge: {
+      icon: MapPinIcon,
+      label: "Built for NWA Growth"
+    },
+    items: [
+      {
+        title: "Primary verticals:",
+        description: "Retail suppliers, healthcare, technology, hospitality, and tourism."
+      },
+      {
+        title: "Placement expertise:",
+        description: "Pinnacle Hills Corporate Park, Mercy Hospital, Walmart supplier offices, AMP, and Beaver Lake tourism."
+      },
+      {
+        title: "Route optimization:",
+        description: "Telemetry tuned to corporate relocations, hospital shifts, and seasonal tourism."
+      },
+      {
+        title: "Always-on support:",
+        description: "Northwest Arkansas masterminds share stocking, compliance, and merchandising insights."
+      }
+    ]
+  },
+  coolerLineup: jacksonvilleContent.coolerLineup,
+  sellingPoints: [
+    {
+      title: "Supplier campus amenities",
+      description:
+        "Deliver premium grab-and-go options to Walmart supplier HQs, tech firms, and professional services in Pinnacle Hills.",
+      icon: BuildingOfficeIcon
+    },
+    {
+      title: "Healthcare excellence",
+      description:
+        "Serve Mercy Hospital, Northwest Medical Center, and clinics with cashless fresh food and hydration.",
+      icon: LifebuoyIcon
+    },
+    {
+      title: "Tourism & hospitality",
+      description:
+        "Support Walmart AMP, Beaver Lake, and boutique hotels with merchandising tuned to visitors.",
+      icon: CubeIcon
+    }
+  ],
+  neighborhoods: [
+    "Pinnacle Hills corporate and retail district",
+    "Downtown Rogers and historic Main Street",
+    "Mercy Hospital and healthcare campuses",
+    "Walmart AMP and entertainment venues",
+    "Beaver Lake recreation and luxury lodging"
+  ],
+  deliverables: [
+    "Supplier and healthcare decks with telemetry analytics, wellness ROI, and staffing relief metrics.",
+    "Planograms featuring premium coffee, healthy meals, hydration, and locally loved snacks.",
+    "Guides covering Benton County permits, campus access, and tourism merchandising strategies."
+  ],
+  logistics: [
+    {
+      title: "I-49 logistics coverage",
+      description: "Installers coordinate around construction, corporate security, and event load-ins.",
+      icon: TruckIcon
+    },
+    {
+      title: "Warranty and uptime",
+      description: "ETL-certified hardware, optional extended service programs, and telemetry monitoring.",
+      icon: ShieldCheckIcon
+    },
+    {
+      title: "Operator coaching",
+      description: "Telegram sessions on corporate relocations, tourism seasons, and regional growth planning.",
+      icon: ClockIcon
+    }
+  ],
+  faq: [
+    {
+      question: "Do you provide ROI decks for supplier campuses?",
+      answer:
+        "Yes. We build turnkey decks showing wellness impact, telemetry insights, and supplier employee satisfaction gains."
+    },
+    {
+      question: "Can Haha coolers support event venues like Walmart AMP?",
+      answer:
+        "Absolutely. We design event-based merchandising, staffing coordination, and on-site support playbooks."
+    },
+    {
+      question: "What resonates with NWA professionals and visitors?",
+      answer:
+        "Cold brew, specialty coffee, better-for-you meals, and premium snacks align with corporate teams and tourists alike."
+    },
+    {
+      question: "Is weekend support available?",
+      answer:
+        "Telegram @thevendinglocator provides real-time assistance during concerts, festivals, and busy lake weekends."
+    }
+  ]
+}
+
+export const roundRockContent: CityLandingContent = {
+  slug: "vending-machines-for-sale-in-round-rock-texas",
+  city: "Round Rock",
+  state: "Texas",
+  hero: {
+    eyebrow: {
+      icon: SparklesIcon,
+      label: "Smart Vending • Round Rock, TX"
+    },
+    headline: {
+      pre: "Vending Machines for Sale in",
+      highlight: "Round Rock, Texas"
+    },
+    description:
+      "Deliver Haha AI smart coolers to Dell Technologies, Baylor Scott & White, Kalahari Resorts, and Round Rock ISD campuses with Austin-area support teams.",
+    bullets: [
+      {
+        icon: ShieldCheckIcon,
+        text: "Enterprise-grade documentation for technology, healthcare, and hospitality operators"
+      },
+      {
+        icon: ClockIcon,
+        text: "Freight coordination along I-35, SH-45, and University Boulevard innovation corridors"
+      },
+      {
+        icon: ChatBubbleOvalLeftEllipsisIcon,
+        text: "Telegram @thevendinglocator connects Round Rock, Austin, and Williamson County operators 24/7"
+      }
+    ],
+    ctas: [
+      {
+        label: "Explore Smart Coolers",
+        href: "/haha-coolers",
+        variant: "primary"
+      },
+      {
+        label: "Talk to Round Rock Experts",
+        href: "/contact",
+        variant: "secondary"
+      }
+    ],
+    supportLink: {
+      icon: ChatBubbleOvalLeftEllipsisIcon,
+      label: "Telegram @thevendinglocator",
+      href: "https://t.me/thevendinglocator"
+    }
+  },
+  sidebar: {
+    badge: {
+      icon: MapPinIcon,
+      label: "Built for the Texas Innovation Corridor"
+    },
+    items: [
+      {
+        title: "Primary verticals:",
+        description: "Technology, healthcare, hospitality, education, and manufacturing."
+      },
+      {
+        title: "Placement expertise:",
+        description: "Dell Technologies, Baylor Scott & White, Kalahari Resorts, Round Rock ISD, and Austin FC training facilities."
+      },
+      {
+        title: "Route optimization:",
+        description: "Telemetry tuned to hybrid work, medical staffing, resort surges, and school calendars."
+      },
+      {
+        title: "Always-on support:",
+        description: "Austin-area masterminds share real-time stocking, compliance, and merchandising strategies."
+      }
+    ]
+  },
+  coolerLineup: jacksonvilleContent.coolerLineup,
+  sellingPoints: [
+    {
+      title: "Technology workforce wellness",
+      description:
+        "Provide Dell Technologies and innovation corridor campuses with premium, cashless grab-and-go experiences.",
+      icon: BuildingOfficeIcon
+    },
+    {
+      title: "Healthcare readiness",
+      description:
+        "Serve Baylor Scott & White, Ascension Seton, and specialty clinics with telemetry-backed vending for staff and visitors.",
+      icon: LifebuoyIcon
+    },
+    {
+      title: "Hospitality & education",
+      description:
+        "Support Kalahari Resorts, Round Rock ISD athletics, and Texas State Round Rock campus with nonstop smart coolers.",
+      icon: CubeIcon
+    }
+  ],
+  neighborhoods: [
+    "Dell Technologies HQ and La Frontera district",
+    "Downtown Round Rock and historic Main Street",
+    "Baylor Scott & White and healthcare corridor",
+    "Kalahari Resorts and sports tourism venues",
+    "Round Rock ISD campuses and University Boulevard innovation zone"
+  ],
+  deliverables: [
+    "Technology and healthcare decks with telemetry analytics, wellness ROI, and staffing relief insights.",
+    "Planograms featuring premium coffee, healthy meals, hydration, and family-friendly snacks for resort guests.",
+    "Guides covering Williamson County permits, campus security, and tourism event coordination."
+  ],
+  logistics: [
+    {
+      title: "I-35 logistics coverage",
+      description: "Installers coordinate corporate security, hospital docks, resort receiving, and school district access.",
+      icon: TruckIcon
+    },
+    {
+      title: "Warranty and uptime",
+      description: "ETL-certified hardware, optional extended service agreements, and telemetry monitoring to prevent downtime.",
+      icon: ShieldCheckIcon
+    },
+    {
+      title: "Operator coaching",
+      description: "Telegram sessions on hybrid work patterns, tournament peaks, and community event demand.",
+      icon: ClockIcon
+    }
+  ],
+  faq: [
+    {
+      question: "Can Haha coolers integrate with corporate wellness programs?",
+      answer:
+        "Absolutely. We tailor planograms, subsidies, and reporting to Dell Technologies and other innovation corridor employers."
+    },
+    {
+      question: "Do you support resort and convention requirements?",
+      answer:
+        "We provide merchandising playbooks, staffing coordination, and surge stocking strategies for Kalahari Resorts and sports tourism venues."
+    },
+    {
+      question: "What resonates with Round Rock ISD and university students?",
+      answer:
+        "Healthy meals, hydration, premium coffee, and popular snacks keep students and faculty energized between classes and practices."
+    },
+    {
+      question: "Is 24/7 support available?",
+      answer:
+        "Telegram @thevendinglocator delivers real-time assistance during overnight hospital shifts and weekend tournaments."
+    }
+  ]
+}

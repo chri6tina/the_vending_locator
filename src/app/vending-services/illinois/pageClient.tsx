@@ -31,6 +31,7 @@ export default function IllinoisVendingServicesPage() {
     { name: 'Arlington Heights', slug: 'arlington-heights-illinois' },
     { name: 'Evanston', slug: 'evanston-illinois' },
     { name: 'Decatur', slug: 'decatur-illinois' },
+    { name: 'Quincy', slug: 'quincy-illinois' },
     { name: 'Schaumburg', slug: 'schaumburg-illinois' }
   ]
 

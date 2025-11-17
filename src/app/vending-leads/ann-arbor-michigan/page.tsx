@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Ann Arbor, Michigan - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Ann Arbor, Michigan. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines Ann Arbor Michigan, vending leads Ann Arbor Michigan, vending locations Ann Arbor Michigan, vending opportunities Ann Arbor Michigan",
+  "keywords": "vending machines ann arbor michigan, vending leads ann arbor michigan, vending locations ann arbor michigan, vending opportunities ann arbor michigan",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/ann-arbor-michigan"
   },
@@ -32,9 +32,6 @@ export const metadata: Metadata = {
     }
   }
 }
-
-// Enable ISR - regenerate page every hour
-export const revalidate = 3600;
 
 export default function CityPage() {
   return <PageClient />

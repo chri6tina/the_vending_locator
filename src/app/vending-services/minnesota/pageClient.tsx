@@ -22,6 +22,7 @@ export default function MinnesotaVendingServicesPage() {
     { name: 'Eagan', slug: 'eagan-minnesota' },
     { name: 'Lakeville', slug: 'lakeville-minnesota' },
     { name: 'Maple Grove', slug: 'maple-grove-minnesota' },
+    { name: 'Mankato', slug: 'mankato-minnesota' },
     { name: 'Minneapolis', slug: 'minneapolis-minnesota' },
     { name: 'Plymouth', slug: 'plymouth-minnesota' },
     { name: 'Rochester', slug: 'rochester-minnesota' },
