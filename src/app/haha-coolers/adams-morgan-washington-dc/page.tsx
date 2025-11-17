@@ -18,7 +18,9 @@ export const metadata: Metadata = {
 };
 
 // Enable ISR - regenerate page every hour
-export const revalidate = 3600;
+// Generate on-demand to reduce build memory usage
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
 
 export default function AdamsMorganWashingtonDCCoolerPageMetadata() {
   return <PageClient />;
