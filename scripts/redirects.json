@@ -1,0 +1,682 @@
+[
+  {
+    "source": "/vending-leads/penn-ylvania",
+    "destination": "/vending-leads/pennsylvania",
+    "permanent": true
+  },
+  {
+    "source": "/vending-leads/york",
+    "destination": "/vending-leads/new-york",
+    "permanent": true
+  },
+  {
+    "source": "/vending-leads/dc",
+    "destination": "/vending-leads/washington-dc",
+    "permanent": true
+  },
+  {
+    "source": "/vending-leads/austin-tx",
+    "destination": "/vending-leads/austin-texas",
+    "permanent": true
+  },
+  {
+    "source": "/vending-leads/chicago-il",
+    "destination": "/vending-leads/chicago-illinois",
+    "permanent": true
+  },
+  {
+    "source": "/vending-leads/los-angeles-ca",
+    "destination": "/vending-leads/los-angeles-california",
+    "permanent": true
+  },
+  {
+    "source": "/vending-leads/houston-tx",
+    "destination": "/vending-leads/houston-texas",
+    "permanent": true
+  },
+  {
+    "source": "/vending-leads/san-jose-ca",
+    "destination": "/vending-leads/san-jose-california",
+    "permanent": true
+  },
+  {
+    "source": "/vending-leads/san-antonio-tx",
+    "destination": "/vending-leads/san-antonio-texas",
+    "permanent": true
+  },
+  {
+    "source": "/vending-leads/seattle-wa",
+    "destination": "/vending-leads/seattle-washington",
+    "permanent": true
+  },
+  {
+    "source": "/vending-leads/san-diego-ca",
+    "destination": "/vending-leads/san-diego-california",
+    "permanent": true
+  },
+  {
+    "source": "/vending-leads/phoenix-az",
+    "destination": "/vending-leads/phoenix-arizona",
+    "permanent": true
+  },
+  {
+    "source": "/vending-leads/philadelphia-pa",
+    "destination": "/vending-leads/philadelphia-pennsylvania",
+    "permanent": true
+  },
+  {
+    "source": "/vending-leads/jacksonville-fl",
+    "destination": "/vending-leads/jacksonville-florida",
+    "permanent": true
+  },
+  {
+    "source": "/vending-leads/new-york-ny",
+    "destination": "/vending-leads/new-york-new-york",
+    "permanent": true
+  },
+  {
+    "source": "/vending-leads/san-francisco-ca",
+    "destination": "/vending-leads/san-francisco-california",
+    "permanent": true
+  },
+  {
+    "source": "/vending-leads/dallas-tx",
+    "destination": "/vending-leads/dallas-texas",
+    "permanent": true
+  },
+  {
+    "source": "/vending-leads/miami-fl",
+    "destination": "/vending-leads/miami-florida",
+    "permanent": true
+  },
+  {
+    "source": "/vending-leads/rochester hills-michigan",
+    "destination": "/vending-leads/rochester-hills-michigan",
+    "permanent": true
+  },
+  {
+    "source": "/location/new-york-ny",
+    "destination": "/vending-leads/new-york-new-york",
+    "permanent": true
+  },
+  {
+    "source": "/location/dallas-tx",
+    "destination": "/vending-leads/dallas-texas",
+    "permanent": true
+  },
+  {
+    "source": "/location/chicago-il.html",
+    "destination": "/vending-leads/chicago-illinois",
+    "permanent": true
+  },
+  {
+    "source": "/location/miami-fl",
+    "destination": "/vending-leads/miami-florida",
+    "permanent": true
+  },
+  {
+    "source": "/location/jacksonville-fl",
+    "destination": "/vending-leads/jacksonville-florida",
+    "permanent": true
+  },
+  {
+    "source": "/location/austin-tx.html",
+    "destination": "/vending-leads/austin-texas",
+    "permanent": true
+  },
+  {
+    "source": "/location/houston-tx",
+    "destination": "/vending-leads/houston-texas",
+    "permanent": true
+  },
+  {
+    "source": "/location/seattle-wa",
+    "destination": "/vending-leads/seattle-washington",
+    "permanent": true
+  },
+  {
+    "source": "/location/los-angeles-ca",
+    "destination": "/vending-leads/los-angeles-california",
+    "permanent": true
+  },
+  {
+    "source": "/location/phoenix-az",
+    "destination": "/vending-leads/phoenix-arizona",
+    "permanent": true
+  },
+  {
+    "source": "/location/san-diego-ca",
+    "destination": "/vending-leads/san-diego-california",
+    "permanent": true
+  },
+  {
+    "source": "/location/san-antonio-tx",
+    "destination": "/vending-leads/san-antonio-texas",
+    "permanent": true
+  },
+  {
+    "source": "/location/san-francisco-ca",
+    "destination": "/vending-leads/san-francisco-california",
+    "permanent": true
+  },
+  {
+    "source": "/location/san-jose-ca",
+    "destination": "/vending-leads/san-jose-california",
+    "permanent": true
+  },
+  {
+    "source": "/location/philadelphia-pa",
+    "destination": "/vending-leads/philadelphia-pennsylvania",
+    "permanent": true
+  },
+  {
+    "source": "/location/orlando-fl",
+    "destination": "/vending-leads/orlando-florida",
+    "permanent": true
+  },
+  {
+    "source": "/location/gainesville-fl",
+    "destination": "/vending-leads/gainesville-florida",
+    "permanent": true
+  },
+  {
+    "source": "/location/fort-lauderdale-fl",
+    "destination": "/vending-leads/fort-lauderdale-florida",
+    "permanent": true
+  },
+  {
+    "source": "/location/fort-worth-tx",
+    "destination": "/vending-leads/fort-worth-texas",
+    "permanent": true
+  },
+  {
+    "source": "/location/el-paso-tx",
+    "destination": "/vending-leads/el-paso-texas",
+    "permanent": true
+  },
+  {
+    "source": "/location/fresno-ca",
+    "destination": "/vending-leads/fresno-california",
+    "permanent": true
+  },
+  {
+    "source": "/location/tampa-fl",
+    "destination": "/vending-leads/tampa-florida",
+    "permanent": true
+  },
+  {
+    "source": "/location/sacramento-ca",
+    "destination": "/vending-leads/sacramento-california",
+    "permanent": true
+  },
+  {
+    "source": "/location/florida",
+    "destination": "/vending-leads/florida",
+    "permanent": true
+  },
+  {
+    "source": "/location/washington",
+    "destination": "/vending-leads/washington",
+    "permanent": true
+  },
+  {
+    "source": "/location/california",
+    "destination": "/vending-leads/california",
+    "permanent": true
+  },
+  {
+    "source": "/location/new-york",
+    "destination": "/vending-leads/new-york",
+    "permanent": true
+  },
+  {
+    "source": "/location/illinois",
+    "destination": "/vending-leads/illinois",
+    "permanent": true
+  },
+  {
+    "source": "/location/arizona",
+    "destination": "/vending-leads/arizona",
+    "permanent": true
+  },
+  {
+    "source": "/location/pennsylvania",
+    "destination": "/vending-leads/pennsylvania",
+    "permanent": true
+  },
+  {
+    "source": "/location/texas",
+    "destination": "/vending-leads/texas",
+    "permanent": true
+  },
+  {
+    "source": "/location/index.html",
+    "destination": "/vending-leads/index",
+    "permanent": true
+  },
+  {
+    "source": "/location/[CITY_LOWERCASE]-[STATE_LOWERCASE].html",
+    "destination": "/vending-leads/[CITY_LOWERCASE]-[STATE_LOWERCASE]",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-new-york",
+    "destination": "/vending-leads/new-york",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-waco-texas",
+    "destination": "/vending-leads/waco-texas",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-south-aven-mississippi",
+    "destination": "/vending-leads/south-aven-mississippi",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-peoria-arizona",
+    "destination": "/vending-leads/peoria-arizona",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-garland-texas",
+    "destination": "/vending-leads/garland-texas",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-kodiak-alaska",
+    "destination": "/vending-leads/kodiak-alaska",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-ketchikan-alaska",
+    "destination": "/vending-leads/ketchikan-alaska",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-vero-beach-florida",
+    "destination": "/vending-leads/vero-beach-florida",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-north-charleston-south-carolina",
+    "destination": "/vending-leads/north-charleston-south-carolina",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-milford-delaware",
+    "destination": "/vending-leads/milford-delaware",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-fort-myers-florida",
+    "destination": "/vending-leads/fort-myers-florida",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-spartanburg-south-carolina",
+    "destination": "/vending-leads/spartanburg-south-carolina",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-rochester-new-york",
+    "destination": "/vending-leads/rochester-new-york",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-sarasota-florida",
+    "destination": "/vending-leads/sarasota-florida",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-poulsbo-washington",
+    "destination": "/vending-leads/poulsbo-washington",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-st-cloud-minnesota",
+    "destination": "/vending-leads/st-cloud-minnesota",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-richmond-kentucky",
+    "destination": "/vending-leads/richmond-kentucky",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-san-jose-california",
+    "destination": "/vending-leads/san-jose-california",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-wilmington-delaware",
+    "destination": "/vending-leads/wilmington-delaware",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-west-palm-beach-florida",
+    "destination": "/vending-leads/west-palm-beach-florida",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-new-castle-delaware",
+    "destination": "/vending-leads/new-castle-delaware",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-south-bend-indiana",
+    "destination": "/vending-leads/south-bend-indiana",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-great-falls-montana",
+    "destination": "/vending-leads/great-falls-montana",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-sacramento-california",
+    "destination": "/vending-leads/sacramento-california",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-seattle-washington",
+    "destination": "/vending-leads/seattle-washington",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-north-little-rock-arkansas",
+    "destination": "/vending-leads/north-little-rock-arkansas",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-santa-ana-california",
+    "destination": "/vending-leads/santa-ana-california",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-tuscaloosa-alabama",
+    "destination": "/vending-leads/tuscaloosa-alabama",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-palm-bay-florida",
+    "destination": "/vending-leads/palm-bay-florida",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-zephyrhills-florida",
+    "destination": "/vending-leads/zephyrhills-florida",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-santa-fe-new-mexico",
+    "destination": "/vending-leads/santa-fe-new-mexico",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-montgomery-alabama",
+    "destination": "/vending-leads/montgomery-alabama",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-hilo-hawaii",
+    "destination": "/vending-leads/hilo-hawaii",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-south-carolina",
+    "destination": "/vending-leads/south-carolina",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-raleigh-north-carolina",
+    "destination": "/vending-leads/raleigh-north-carolina",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-summerville-south-carolina",
+    "destination": "/vending-leads/summerville-south-carolina",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-oakland-california",
+    "destination": "/vending-leads/oakland-california",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-fairbanks-alaska",
+    "destination": "/vending-leads/fairbanks-alaska",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-honolulu-hawaii",
+    "destination": "/vending-leads/honolulu-hawaii",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-new-haven-connecticut",
+    "destination": "/vending-leads/new-haven-connecticut",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-evanston-illinois",
+    "destination": "/vending-leads/evanston-illinois",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-lewiston-maine",
+    "destination": "/vending-leads/lewiston-maine",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-reno-nevada",
+    "destination": "/vending-leads/reno-nevada",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-yonkers-new-york",
+    "destination": "/vending-leads/yonkers-new-york",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-woodbury-minnesota",
+    "destination": "/vending-leads/woodbury-minnesota",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-fort-smith-arkansas",
+    "destination": "/vending-leads/fort-smith-arkansas",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-middletown-delaware",
+    "destination": "/vending-leads/middletown-delaware",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-tucson-arizona",
+    "destination": "/vending-leads/tucson-arizona",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-new-jersey",
+    "destination": "/vending-leads/new-jersey",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-pembroke-pines-florida",
+    "destination": "/vending-leads/pembroke-pines-florida",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-eugene-oregon",
+    "destination": "/vending-leads/eugene-oregon",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-little-rock-arkansas",
+    "destination": "/vending-leads/little-rock-arkansas",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-sunnyvale-california",
+    "destination": "/vending-leads/sunnyvale-california",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-georgetown-delaware",
+    "destination": "/vending-leads/georgetown-delaware",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-kailua-hawaii",
+    "destination": "/vending-leads/kailua-hawaii",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-san-diego-california",
+    "destination": "/vending-leads/san-diego-california",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-tampa-florida",
+    "destination": "/vending-leads/tampa-florida",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-new-orleans-louisiana",
+    "destination": "/vending-leads/new-orleans-louisiana",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-redmond-washington",
+    "destination": "/vending-leads/redmond-washington",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-santa-barbara-california",
+    "destination": "/vending-leads/santa-barbara-california",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-fayetteville-arkansas",
+    "destination": "/vending-leads/fayetteville-arkansas",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-shreveport-louisiana",
+    "destination": "/vending-leads/shreveport-louisiana",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-fort-lauderdale-florida",
+    "destination": "/vending-leads/fort-lauderdale-florida",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-port-st-lucie-florida",
+    "destination": "/vending-leads/port-st-lucie-florida",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-providence-rhode-island",
+    "destination": "/vending-leads/providence-rhode-island",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-saint-paul-minnesota",
+    "destination": "/vending-leads/saint-paul-minnesota",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-miami-florida",
+    "destination": "/vending-leads/miami-florida",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-smyrna-delaware",
+    "destination": "/vending-leads/smyrna-delaware",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-dover-delaware",
+    "destination": "/vending-leads/dover-delaware",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-lake-charles-louisiana",
+    "destination": "/vending-leads/lake-charles-louisiana",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-salem-new-hampshire",
+    "destination": "/vending-leads/salem-new-hampshire",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-san-bernardino-california",
+    "destination": "/vending-leads/san-bernardino-california",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-yakima-washington",
+    "destination": "/vending-leads/yakima-washington",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-moses-lake-washington",
+    "destination": "/vending-leads/moses-lake-washington",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-san-francisco-california",
+    "destination": "/vending-leads/san-francisco-california",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-miramar-florida",
+    "destination": "/vending-leads/miramar-florida",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-orlando-florida",
+    "destination": "/vending-leads/orlando-florida",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-new-mexico",
+    "destination": "/vending-leads/new-mexico",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-new-arkansas-city-arkansas",
+    "destination": "/vending-leads/new-arkansas-city-arkansas",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-frisco-texas",
+    "destination": "/vending-leads/frisco-texas",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-kenai-alaska",
+    "destination": "/vending-leads/kenai-alaska",
+    "permanent": true
+  },
+  {
+    "source": "/location/:path*",
+    "destination": "/vending-leads/:path*",
+    "permanent": true
+  },
+  {
+    "source": "/vending-machines-for-sale-in-:path*",
+    "destination": "/vending-leads/:path*",
+    "permanent": true
+  },
+  {
+    "source": "/vending-leads/:city-:abbrev",
+    "destination": "/vending-leads/:city-:abbrev",
+    "permanent": false
+  }
+]
