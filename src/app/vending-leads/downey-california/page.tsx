@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Downey, California - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Downey, California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines downey california, vending leads downey california, vending locations downey california, vending opportunities downey california",
+  "keywords": "vending machines Downey California, vending leads Downey California, vending locations Downey California, vending opportunities Downey California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/downey-california"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

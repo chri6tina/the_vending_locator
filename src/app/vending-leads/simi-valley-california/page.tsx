@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Simi Valley, California - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Simi Valley, California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines simi valley california, vending leads simi valley california, vending locations simi valley california, vending opportunities simi valley california",
+  "keywords": "vending machines Simi Valley California, vending leads Simi Valley California, vending locations Simi Valley California, vending opportunities Simi Valley California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/simi-valley-california"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

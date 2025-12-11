@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Daly City, California - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Daly City, California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines daly city california, vending leads daly city california, vending locations daly city california, vending opportunities daly city california",
+  "keywords": "vending machines Daly City California, vending leads Daly City California, vending locations Daly City California, vending opportunities Daly City California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/daly-city-california"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

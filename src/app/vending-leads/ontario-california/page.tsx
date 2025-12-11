@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Ontario, California - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Ontario, California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines ontario california, vending leads ontario california, vending locations ontario california, vending opportunities ontario california",
+  "keywords": "vending machines Ontario California, vending leads Ontario California, vending locations Ontario California, vending opportunities Ontario California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/ontario-california"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

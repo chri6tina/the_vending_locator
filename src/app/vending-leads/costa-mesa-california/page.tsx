@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Costa Mesa, California - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Costa Mesa, California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines costa mesa california, vending leads costa mesa california, vending locations costa mesa california, vending opportunities costa mesa california",
+  "keywords": "vending machines Costa Mesa California, vending leads Costa Mesa California, vending locations Costa Mesa California, vending opportunities Costa Mesa California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/costa-mesa-california"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

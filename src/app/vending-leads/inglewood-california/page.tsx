@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Inglewood, California - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Inglewood, California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines inglewood california, vending leads inglewood california, vending locations inglewood california, vending opportunities inglewood california",
+  "keywords": "vending machines Inglewood California, vending leads Inglewood California, vending locations Inglewood California, vending opportunities Inglewood California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/inglewood-california"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

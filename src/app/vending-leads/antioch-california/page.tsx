@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Antioch, California - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Antioch, California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines antioch california, vending leads antioch california, vending locations antioch california, vending opportunities antioch california",
+  "keywords": "vending machines Antioch California, vending leads Antioch California, vending locations Antioch California, vending opportunities Antioch California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/antioch-california"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

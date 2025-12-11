@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Vacaville, California - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Vacaville, California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines vacaville california, vending leads vacaville california, vending locations vacaville california, vending opportunities vacaville california",
+  "keywords": "vending machines Vacaville California, vending leads Vacaville California, vending locations Vacaville California, vending opportunities Vacaville California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/vacaville-california"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

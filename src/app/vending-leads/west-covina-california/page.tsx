@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in West Covina, California - The Vending Locator",
   "description": "Get verified vending machine leads and locations in West Covina, California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines west covina california, vending leads west covina california, vending locations west covina california, vending opportunities west covina california",
+  "keywords": "vending machines West Covina California, vending leads West Covina California, vending locations West Covina California, vending opportunities West Covina California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/west-covina-california"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

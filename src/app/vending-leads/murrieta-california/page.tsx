@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Murrieta, California - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Murrieta, California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines murrieta california, vending leads murrieta california, vending locations murrieta california, vending opportunities murrieta california",
+  "keywords": "vending machines Murrieta California, vending leads Murrieta California, vending locations Murrieta California, vending opportunities Murrieta California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/murrieta-california"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

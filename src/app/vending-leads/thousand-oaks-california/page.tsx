@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Thousand Oaks, California - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Thousand Oaks, California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines thousand oaks california, vending leads thousand oaks california, vending locations thousand oaks california, vending opportunities thousand oaks california",
+  "keywords": "vending machines Thousand Oaks California, vending leads Thousand Oaks California, vending locations Thousand Oaks California, vending opportunities Thousand Oaks California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/thousand-oaks-california"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

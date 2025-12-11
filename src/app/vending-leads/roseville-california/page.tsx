@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Roseville, California - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Roseville, California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines roseville california, vending leads roseville california, vending locations roseville california, vending opportunities roseville california",
+  "keywords": "vending machines Roseville California, vending leads Roseville California, vending locations Roseville California, vending opportunities Roseville California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/roseville-california"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

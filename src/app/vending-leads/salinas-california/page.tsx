@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Salinas, California - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Salinas, California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines salinas california, vending leads salinas california, vending locations salinas california, vending opportunities salinas california",
+  "keywords": "vending machines Salinas California, vending leads Salinas California, vending locations Salinas California, vending opportunities Salinas California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/salinas-california"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

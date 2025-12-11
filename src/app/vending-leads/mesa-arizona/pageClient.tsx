@@ -3,7 +3,8 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, HeartIcon, CurrencyDollarIcon, AcademicCapIcon, TruckIcon, SparklesIcon } from '@heroicons/react/24/solid'
+import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CpuChipIcon, HeartIcon, ShoppingBagIcon, TruckIcon, BuildingLibraryIcon, CurrencyDollarIcon, SparklesIcon } from '@heroicons/react/24/solid'
+import states from '@/data/states'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
@@ -12,39 +13,47 @@ import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
 export default function MesaArizonaVendingLeadsPage() {
-  const cityDisplayName = 'Mesa'
-  const stateDisplayName = 'Arizona'
-
+  // City and state display names
+  const cityDisplayName = 'Mesa';
+  const stateDisplayName = 'Arizona';
+  
+  // City-specific data
   const cityData = {
-    name: 'Mesa',
-    state: 'Arizona',
-    population: '504,000+',
-    businesses: '20,000+',
-    industries: '10+',
-    verifiedLocations: '250-400',
-    description: "Mesa is Arizona's third-largest city with strong aerospace, healthcare, education, logistics, and tourism sectors."
-  }
-
-  const [activeUsers, setActiveUsers] = useState(40)
+    'name': 'Mesa',
+    'state': 'Arizona',
+    'population': '518K+',
+    'businesses': '28K-38K',
+    'industries': '16-22',
+    'verifiedLocations': '600-1000',
+    'rating': '4.7/5',
+    'description': 'Phoenix suburb with aerospace, technology, and healthcare'
+  };
+  
+  // Active users counter
+  const [activeUsers, setActiveUsers] = useState(25)
   const [currentUserIndex, setCurrentUserIndex] = useState(0)
-  const [usedNames, setUsedNames] = useState(new Set<number>())
+  const [usedNames, setUsedNames] = useState(new Set())
+
+  // User names for active users counter
   const [userNames, setUserNames] = useState([
-    'Mike from Mesa', 'Sarah in Downtown', 'David in Mesa', 'Lisa in Mesa',
+    'Mike from Mesa', 'Sarah in Mesa', 'David in Mesa', 'Lisa in Mesa',
     'Tom in Mesa', 'Jennifer in Mesa', 'Robert in Mesa', 'Amanda in Mesa',
     'Chris in Mesa', 'Maria in Mesa', 'James in Mesa', 'Emily in Mesa'
   ])
 
+  // Active users counter effect
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveUsers(prev => {
         const change = Math.floor(Math.random() * 3) - 1
         const newValue = prev + change
-        return Math.max(32, Math.min(52, newValue))
+        return Math.max(20, Math.min(35, newValue))
       })
-    }, 4000)
+    }, 4000);
     return () => clearInterval(interval)
   }, [])
 
+  // Smart rotation of user names
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentUserIndex(prev => {
@@ -56,33 +65,79 @@ export default function MesaArizonaVendingLeadsPage() {
         while (attempts < 50) {
           nextIndex = (nextIndex + 1) % userNames.length
           if (!usedNames.has(nextIndex)) {
-            setUsedNames(prevSet => new Set([...prevSet, nextIndex]))
+            setUsedNames(prev => new Set([...prev, nextIndex]));
             return nextIndex
           }
           attempts++
         }
         const randomIndex = Math.floor(Math.random() * userNames.length)
-        setUsedNames(prevSet => new Set([...prevSet, randomIndex]))
+        setUsedNames(prev => new Set([...prev, randomIndex]));
         return randomIndex
       })
-    }, 5000)
+    }, 5000);
     return () => clearInterval(interval)
   }, [userNames.length, usedNames])
+
+  // Build related Arizona cities (for internal linking)
+  const newHampshire = states.find(s => s.slug === 'arizona');
+  const relatedCities = newHampshire ? newHampshire.cities.filter(c => c.slug !== 'manchester-arizona').slice(0, 8) : [];
+
+  // FAQ items reused for JSON-LD
+  const faqItems = [
+  {
+    q: 'What types of vending machine locations are available in Mesa?',
+    a: 'Mesa offers diverse vending opportunities including healthcare facilities, educational institutions, retail locations, office buildings, and manufacturing facilities. Each location is pre-verified for optimal vending machine success.'
+  },
+  {
+    q: 'How quickly can I get vending machine leads for Mesa?',
+    a: 'Our Mesa vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
+  },
+  {
+    q: 'What makes Mesa a good market for vending machines?',
+    a: 'Mesa features a thriving business community with diverse industries and strong economic activity. The city's business density and diverse demographics create ideal conditions for vending machine success.'
+  },
+  {
+    q: 'Do you provide ongoing support for Mesa locations?',
+    a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Mesa.'
+  },
+  {
+    q: 'What industries in Mesa are best for vending machines?',
+    a: 'Healthcare, education, retail, office buildings, and manufacturing in Mesa show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
+  },
+  {
+    q: 'How do you verify the quality of Mesa vending locations?',
+    a: 'We conduct thorough research on each Mesa location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
+  },
+  {
+    q: 'Can I get customized vending leads for specific areas of Mesa?',
+    a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Mesa based on your preferences and target market requirements.'
+  },
+  {
+    q: 'What's the typical ROI for vending machines in Mesa?',
+    a: 'Vending machines in Mesa typically show strong ROI due to the city's business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+  }
+];
 
   return (
     <>
       <Header />
-
+      
       <div className="min-h-screen bg-warm-white">
         {/* Breadcrumb Navigation */}
         <nav className="bg-white border-b border-gray-200 py-3">
           <div className="container mx-auto px-4">
             <div className="flex items-center space-x-2 text-sm text-stone">
-              <Link href="/" className="hover:text-navy transition-colors">Home</Link>
+              <Link href="/" className="hover:text-navy transition-colors">
+                Home
+              </Link>
               <span>/</span>
-              <Link href="/vending-leads" className="hover:text-navy transition-colors">Vending Leads</Link>
+              <Link href="/vending-leads" className="hover:text-navy transition-colors">
+                Vending Leads
+              </Link>
               <span>/</span>
-              <Link href={`/vending-leads/${stateDisplayName.toLowerCase()}`} className="hover:text-navy transition-colors">{stateDisplayName}</Link>
+              <Link href={`/vending-leads/${stateDisplayName.toLowerCase().replace(/\s+/g, '-')}`} className="hover:text-navy transition-colors">
+                {stateDisplayName}
+              </Link>
               <span>/</span>
               <span className="text-charcoal font-medium">{cityDisplayName}</span>
             </div>
@@ -94,7 +149,7 @@ export default function MesaArizonaVendingLeadsPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto text-center">
               {/* Active Users Counter */}
-              <motion.div
+              <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
@@ -105,11 +160,10 @@ export default function MesaArizonaVendingLeadsPage() {
                   <span className="text-sm font-medium text-chocolate">
                     <span className="font-bold text-coral">{activeUsers}</span> people are choosing plans right now
                   </span>
-                </div>
-              </motion.div>
+                </div></motion.div>
 
               {/* Main Headline */}
-              <motion.h1
+              <motion.h1 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
@@ -120,18 +174,17 @@ export default function MesaArizonaVendingLeadsPage() {
               </motion.h1>
 
               {/* City-Specific Value Proposition */}
-              <motion.p
+              <motion.p 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Get pre-qualified vending machine locations across Mesa's aerospace, healthcare, education, logistics, and tourism sectors.
-                Access verified businesses with detailed contact information and placement opportunities.
+                Get comprehensive vending leads for Mesa's thriving Arizona market, combining local businesses, healthcare systems, and educational facilities for reliable vending machine placement.
               </motion.p>
 
               {/* Trust Signals */}
-              <motion.div
+              <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.8 }}
@@ -146,7 +199,7 @@ export default function MesaArizonaVendingLeadsPage() {
                 <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
                   <div className="flex items-center gap-3">
                     <StarIcon className="h-5 w-5 text-yellow-500" />
-                    <span className="text-sm font-medium text-chocolate">4.8/5 Rating</span>
+                    <span className="text-sm font-medium text-chocolate">4.7/5 Rating</span>
                   </div>
                 </div>
                 <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
@@ -164,26 +217,28 @@ export default function MesaArizonaVendingLeadsPage() {
               </motion.div>
 
               {/* CTA Buttons */}
-              <motion.div
+              <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 1.0 }}
                 className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 mb-8"
               >
-                <button
-                  onClick={() => {
-                    const pricingSection = document.getElementById('pricing')
-                    if (pricingSection) pricingSection.scrollIntoView({ behavior: 'smooth' })
-                  }}
-                  className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
+                <button 
+                    onClick={() => {
+                      const pricingSection = document.getElementById('pricing')
+                      if (pricingSection) {
+                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                      }
+                    }}
+                    className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
                 >
-                  Get Started
-                </button>
-                
+                    Get Started
+                  </button>
+
               </motion.div>
 
-              {/* Social Proof Stats */}
-              <motion.div
+{/* Social Proof Stats */}
+              <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 1.2 }}
@@ -209,6 +264,8 @@ export default function MesaArizonaVendingLeadsPage() {
             </div>
           </div>
         </section>
+
+        
 
         {/* Pricing Section */}
         <section id="pricing" className="py-16 bg-warm-white">
@@ -260,10 +317,11 @@ export default function MesaArizonaVendingLeadsPage() {
                 Discover the diverse industries and business opportunities that make {cityDisplayName} an ideal market for vending machines.
               </motion.p>
             </div>
-
+            
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              
               <motion.div
-                key="Aerospace & Defense"
+                key="Healthcare"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0 }}
@@ -271,20 +329,6 @@ export default function MesaArizonaVendingLeadsPage() {
                 className="bg-blue-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
                 <div className="text-blue-600 mb-4">
-                  <ShieldCheckIcon className="w-12 h-12" />
-                </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Aerospace & Defense</h3>
-                <p className="text-stone leading-relaxed">Major aerospace and defense contractors and suppliers in Mesa support large workforces and stable operations ideal for vending.</p>
-              </motion.div>
-              <motion.div
-                key="Healthcare"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.1 }}
-                viewport={{ once: true }}
-                className="bg-green-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
-              >
-                <div className="text-green-600 mb-4">
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
@@ -294,32 +338,46 @@ export default function MesaArizonaVendingLeadsPage() {
                 key="Education"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
+                transition={{ duration: 0.8, delay: 0.1 }}
                 viewport={{ once: true }}
-                className="bg-purple-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+                className="bg-green-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
-                <div className="text-purple-600 mb-4">
+                <div className="text-green-600 mb-4">
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
                 <p className="text-stone leading-relaxed">Educational facilities throughout Mesa serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services.</p>
               </motion.div>
               <motion.div
-                key="Logistics"
+                key="Manufacturing"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.3 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="bg-purple-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-purple-600 mb-4">
+                  <CpuChipIcon className="w-12 h-12" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
+                <p className="text-stone leading-relaxed">Industrial and manufacturing operations throughout Mesa employ substantial workforces with shift-based schedules, offering stable vending placement opportunities with steady traffic.</p>
+              </motion.div>
+              <motion.div
+                key="Retail"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.30000000000000004 }}
                 viewport={{ once: true }}
                 className="bg-orange-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
                 <div className="text-orange-600 mb-4">
-                  <TruckIcon className="w-12 h-12" />
+                  <ShoppingBagIcon className="w-12 h-12" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Logistics & Industrial</h3>
-                <p className="text-stone leading-relaxed">Distribution centers and industrial parks drive steady shift-based traffic ideal for vending.</p>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
+                <p className="text-stone leading-relaxed">Shopping centers and retail districts in Mesa offer prime vending locations, with high-traffic areas including food courts, entrances, and common spaces frequented by shoppers.</p>
               </motion.div>
               <motion.div
-                key="Retail & Tourism"
+                key="Office Buildings"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
@@ -327,13 +385,13 @@ export default function MesaArizonaVendingLeadsPage() {
                 className="bg-indigo-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
                 <div className="text-indigo-600 mb-4">
-                  <SparklesIcon className="w-12 h-12" />
+                  <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Retail & Tourism</h3>
-                <p className="text-stone leading-relaxed">Shopping districts and attractions provide high foot traffic and diverse demographics.</p>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
+                <p className="text-stone leading-relaxed">Commercial office spaces in Mesa offer excellent vending opportunities, with professional tenants and business operations generating consistent foot traffic throughout the workday.</p>
               </motion.div>
               <motion.div
-                key="Finance"
+                key="Transportation"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.5 }}
@@ -341,19 +399,71 @@ export default function MesaArizonaVendingLeadsPage() {
                 className="bg-red-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
                 <div className="text-red-600 mb-4">
-                  <CurrencyDollarIcon className="w-12 h-12" />
+                  <TruckIcon className="w-12 h-12" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Finance & Professional</h3>
-                <p className="text-stone leading-relaxed">Office corridors with professional services firms and financial institutions support steady weekday demand.</p>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
+                <p className="text-stone leading-relaxed">Airports, bus stations, and transit centers throughout Mesa generate steady passenger traffic, providing excellent vending placement options in high-traffic areas frequented by travelers.</p>
               </motion.div>
             </div>
           </div>
+        </section>        {/* Why Mesa? */}
+        <section className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-8">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-6"
+              >
+                Why Choose Mesa for Vending Machines?
+              </motion.h2>
+            </div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
+            >
+              <p className="text-lg text-stone leading-relaxed">
+                Mesa offers reliable vending opportunities through its thriving business community, featuring diverse industries, commercial centers, and growing economic sectors. The city's business mix provides stable placement locations with consistent traffic patterns, while Mesa's economic activity supports steady consumer spending. The city's combination of established businesses and emerging sectors creates multiple vending placement strategies.
+              </p>
+            </motion.div>
+          </div>
         </section>
 
-        {/* Hot Leads */}
-        <HotLeads />
 
-        {/* Vending Course */}
+
+        {/* Hot Leads Section */}
+        <section id="hot-leads" className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
+              >
+                One-Time Location Packages for {cityDisplayName}
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-lg text-stone max-w-3xl mx-auto"
+              >
+                Get immediate access to qualified vending machine locations without monthly commitments.
+              </motion.p>
+            </div>
+            <HotLeads />
+          </div>
+        </section>
+
+        {/* Vending Course Section */}
         <section className="py-16 bg-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
@@ -381,7 +491,7 @@ export default function MesaArizonaVendingLeadsPage() {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-16 bg-warm-white">
+        <section id="faq" className="py-16 bg-warm-white">
           <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <motion.h2
@@ -393,7 +503,7 @@ export default function MesaArizonaVendingLeadsPage() {
               >
                 Frequently Asked Questions
               </motion.h2>
-              <motion.p
+              <motion.p 
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
@@ -403,26 +513,9 @@ export default function MesaArizonaVendingLeadsPage() {
                 Everything you need to know about vending machine opportunities in {cityDisplayName}.
               </motion.p>
             </div>
-
+            
             <div className="space-y-6">
-              {[
-                {
-                  q: 'What makes Mesa unique for vending machine opportunities?',
-                  a: "Mesa's aerospace, healthcare, education, logistics, and tourism sectors provide strong employee bases, consistent traffic, and stable operations for vending machines."
-                },
-                {
-                  q: "How does Mesa's healthcare sector affect vending machine success?",
-                  a: 'Hospitals and medical facilities in Mesa operate around the clock, supporting consistent demand and reliable revenue for vending machines.'
-                },
-                {
-                  q: 'What types of Mesa businesses are best for vending machines?',
-                  a: 'Healthcare facilities, aerospace and defense contractors, educational institutions, logistics hubs, and retail/tourist attractions perform well.'
-                },
-                {
-                  q: 'How quickly can I get vending machine leads for Mesa?',
-                  a: 'Research and delivery are typically completed within 3-5 business days, including business details, contacts, and placement opportunities.'
-                }
-              ].map((item, idx) => (
+              {faqItems.map((item, idx) => (
                 <motion.div
                   key={idx}
                   initial={{ opacity: 0, y: 20 }}
@@ -438,12 +531,57 @@ export default function MesaArizonaVendingLeadsPage() {
             </div>
           </div>
         </section>
-      </div>
 
+        {/* More cities in Arizona */}
+        {relatedCities.length > 0 && (
+          <section className="py-12 bg-white border-t border-gray-200">
+            <div className="mx-auto max-w-7xl px-6">
+              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in Arizona</h2>
+              <div className="flex flex-wrap gap-3">
+                {relatedCities.map(city => (
+                  <Link key={city.slug} href={`/vending-leads/${city.slug}`} className="px-3 py-2 rounded-lg border border-gray-200 bg-cream/60 text-chocolate hover:text-navy">
+                    Vending Leads in {city.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
+      </div>
+      
       <Footer />
       <ZipCodeModalWrapper />
+      {/* JSON-LD: Breadcrumbs and FAQ */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
+              { '@type': 'ListItem', position: 3, name: 'Arizona', item: 'https://www.thevendinglocator.com/vending-leads/arizona' },
+              { '@type': 'ListItem', position: 4, name: 'Mesa', item: 'https://www.thevendinglocator.com/vending-leads/manchester-arizona' }
+            ]
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: faqItems.map(i => ({
+              '@type': 'Question',
+              name: i.q,
+              acceptedAnswer: { '@type': 'Answer', text: i.a }
+            }))
+          })
+        }}
+      />
     </>
   )
 }
-
-

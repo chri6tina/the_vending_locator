@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Hayward, California - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Hayward, California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines hayward california, vending leads hayward california, vending locations hayward california, vending opportunities hayward california",
+  "keywords": "vending machines Hayward California, vending leads Hayward California, vending locations Hayward California, vending opportunities Hayward California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/hayward-california"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

@@ -21,12 +21,12 @@ export default function JoplinMissouriVendingLeadsPage() {
   const cityData = {
     'name': 'Joplin',
     'state': 'Missouri',
-    'population': '~51,000',
-    'businesses': '1.5K-2K',
-    'industries': '6-8',
-    'verifiedLocations': '65-130',
+    'population': '52K+',
+    'businesses': '3K-6K',
+    'industries': '7-11',
+    'verifiedLocations': '90-160',
     'rating': '4.7/5',
-    'description': 'Regional retail and healthcare hub in southwest Missouri'
+    'description': 'Southwest Missouri hub with healthcare, retail, and manufacturing'
   };
   
   // Active users counter
@@ -78,21 +78,45 @@ export default function JoplinMissouriVendingLeadsPage() {
     return () => clearInterval(interval)
   }, [userNames.length, usedNames])
 
-  // Build related New Hampshire cities (for internal linking)
+  // Build related Missouri cities (for internal linking)
   const newHampshire = states.find(s => s.slug === 'missouri');
   const relatedCities = newHampshire ? newHampshire.cities.filter(c => c.slug !== 'manchester-missouri').slice(0, 8) : [];
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: "What types of vending machine locations are available in Joplin?", a: "Joplin offers vending opportunities in healthcare facilities (Freeman Health System, Mercy Hospital), retail centers (Northpark Mall), manufacturing plants, educational institutions, and distribution facilities." },
-    { q: "How quickly can I get vending machine leads for Joplin?", a: "Our Joplin vending leads are delivered within 3-5 business days with comprehensive research on each location and four-state area market insights." },
-    { q: "What makes Joplin a good market for vending machines?", a: "Joplin's position at the intersection of Missouri, Kansas, Oklahoma, and Arkansas creates strong regional business activity. The city's retail and healthcare sectors ensure consistent vending demand year-round." },
-    { q: "Do you provide ongoing support for Joplin locations?", a: "Yes, we provide comprehensive support including location research, healthcare and retail sector insights, contact information, and placement strategies tailored to Joplin's regional market." },
-    { q: "What industries in Joplin are best for vending machines?", a: "Healthcare facilities, retail centers, manufacturing plants, and distribution warehouses show excellent potential due to large employee bases and regional customer traffic." },
-    { q: "How do you verify the quality of Joplin vending locations?", a: "We conduct thorough verification including business validation, employee count assessment, regional market analysis, and facility research for each Joplin location." },
-    { q: "Can I get customized vending leads for specific areas of Joplin?", a: "Absolutely! We can target the Range Line Road retail corridor, downtown Main Street district, or industrial zones based on your preferences." },
-    { q: "What's the typical ROI for vending machines in Joplin?", a: "Machines in Joplin typically see ROI within 12-16 months, with healthcare and retail locations often achieving faster returns due to high traffic volumes and regional draw." }
-  ];
+  {
+    q: 'What types of vending machine locations are available in Joplin?',
+    a: 'Joplin offers diverse vending opportunities including healthcare facilities, educational institutions, retail locations, office buildings, and manufacturing facilities. Each location is pre-verified for optimal vending machine success.'
+  },
+  {
+    q: 'How quickly can I get vending machine leads for Joplin?',
+    a: 'Our Joplin vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
+  },
+  {
+    q: 'What makes Joplin a good market for vending machines?',
+    a: 'Joplin features a thriving business community with diverse industries and strong economic activity. The city's business density and diverse demographics create ideal conditions for vending machine success.'
+  },
+  {
+    q: 'Do you provide ongoing support for Joplin locations?',
+    a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Joplin.'
+  },
+  {
+    q: 'What industries in Joplin are best for vending machines?',
+    a: 'Healthcare, education, retail, office buildings, and manufacturing in Joplin show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
+  },
+  {
+    q: 'How do you verify the quality of Joplin vending locations?',
+    a: 'We conduct thorough research on each Joplin location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
+  },
+  {
+    q: 'Can I get customized vending leads for specific areas of Joplin?',
+    a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Joplin based on your preferences and target market requirements.'
+  },
+  {
+    q: 'What's the typical ROI for vending machines in Joplin?',
+    a: 'Vending machines in Joplin typically show strong ROI due to the city's business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+  }
+];
 
   return (
     <>
@@ -156,7 +180,7 @@ export default function JoplinMissouriVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Access verified vending machine locations across Joplin's diverse business community, where local commerce, healthcare facilities, and educational institutions create steady opportunities for vending placement.
+                Get comprehensive vending leads for Joplin's thriving Missouri market, combining local businesses, healthcare systems, and educational facilities for reliable vending machine placement.
               </motion.p>
 
               {/* Trust Signals */}
@@ -308,7 +332,7 @@ export default function JoplinMissouriVendingLeadsPage() {
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Healthcare facilities in Joplin serve large patient populations and employ significant staff numbers, providing stable vending opportunities with extended operating hours and steady foot traffic.</p>
+                <p className="text-stone leading-relaxed">Joplin's healthcare sector includes major hospitals, specialty clinics, and medical offices that generate consistent visitor and employee traffic, ideal for vending machine placement.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -322,7 +346,7 @@ export default function JoplinMissouriVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Educational institutions in Joplin provide consistent student and staff populations, with schools, colleges, and universities offering year-round vending opportunities across campus facilities.</p>
+                <p className="text-stone leading-relaxed">Educational facilities throughout Joplin serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -336,7 +360,7 @@ export default function JoplinMissouriVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Joplin's manufacturing sector includes industrial facilities and production plants with large employee bases working extended shifts, creating ideal conditions for vending machine placement.</p>
+                <p className="text-stone leading-relaxed">Industrial and manufacturing operations throughout Joplin employ substantial workforces with shift-based schedules, offering stable vending placement opportunities with steady traffic.</p>
               </motion.div>
               <motion.div
                 key="Retail"
@@ -350,7 +374,7 @@ export default function JoplinMissouriVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Joplin's retail sector features shopping centers, department stores, and specialty shops with consistent customer flow, offering excellent vending machine placement options.</p>
+                <p className="text-stone leading-relaxed">Shopping centers and retail districts in Joplin offer prime vending locations, with high-traffic areas including food courts, entrances, and common spaces frequented by shoppers.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -364,7 +388,7 @@ export default function JoplinMissouriVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Office buildings throughout Joplin feature corporate tenants, professional firms, and business services with steady daily traffic, providing reliable vending machine placement options.</p>
+                <p className="text-stone leading-relaxed">Commercial office spaces in Joplin offer excellent vending opportunities, with professional tenants and business operations generating consistent foot traffic throughout the workday.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -378,7 +402,7 @@ export default function JoplinMissouriVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Joplin's transportation hubs including airports, transit centers, and transportation facilities provide high-volume passenger traffic, creating exceptional vending machine placement opportunities.</p>
+                <p className="text-stone leading-relaxed">Airports, bus stations, and transit centers throughout Joplin generate steady passenger traffic, providing excellent vending placement options in high-traffic areas frequented by travelers.</p>
               </motion.div>
             </div>
           </div>
@@ -508,11 +532,11 @@ export default function JoplinMissouriVendingLeadsPage() {
           </div>
         </section>
 
-        {/* More cities in New Hampshire */}
+        {/* More cities in Missouri */}
         {relatedCities.length > 0 && (
           <section className="py-12 bg-white border-t border-gray-200">
             <div className="mx-auto max-w-7xl px-6">
-              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in New Hampshire</h2>
+              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in Missouri</h2>
               <div className="flex flex-wrap gap-3">
                 {relatedCities.map(city => (
                   <Link key={city.slug} href={`/vending-leads/${city.slug}`} className="px-3 py-2 rounded-lg border border-gray-200 bg-cream/60 text-chocolate hover:text-navy">
@@ -538,8 +562,8 @@ export default function JoplinMissouriVendingLeadsPage() {
             itemListElement: [
               { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
               { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/missouri' },
-              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-missouri' }
+              { '@type': 'ListItem', position: 3, name: 'Missouri', item: 'https://www.thevendinglocator.com/vending-leads/missouri' },
+              { '@type': 'ListItem', position: 4, name: 'Joplin', item: 'https://www.thevendinglocator.com/vending-leads/manchester-missouri' }
             ]
           })
         }}

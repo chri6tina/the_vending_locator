@@ -21,12 +21,12 @@ export default function SanLeandroCaliforniaVendingLeadsPage() {
   const cityData = {
     'name': 'San Leandro',
     'state': 'California',
-    'population': '100K-500K',
-    'businesses': '10K-50K',
-    'industries': '10-15',
-    'verifiedLocations': '200-400',
+    'population': '91K+',
+    'businesses': '5K-9K',
+    'industries': '8-12',
+    'verifiedLocations': '120-220',
     'rating': '4.7/5',
-    'description': 'Thriving business community in California'
+    'description': 'East Bay city with healthcare, retail, and manufacturing'
   };
   
   // Active users counter
@@ -36,7 +36,9 @@ export default function SanLeandroCaliforniaVendingLeadsPage() {
 
   // User names for active users counter
   const [userNames, setUserNames] = useState([
-    'Mike from San Leandro', 'Sarah in Downtown', 'David in San Leandro', 'Lisa in San Leandro', 'Tom in San Leandro', 'Jennifer in San Leandro', 'Robert in San Leandro', 'Amanda in San Leandro', 'Chris in San Leandro', 'Maria in San Leandro', 'James in San Leandro', 'Emily in San Leandro'
+    'Mike from San Leandro', 'Sarah in San Leandro', 'David in San Leandro', 'Lisa in San Leandro',
+    'Tom in San Leandro', 'Jennifer in San Leandro', 'Robert in San Leandro', 'Amanda in San Leandro',
+    'Chris in San Leandro', 'Maria in San Leandro', 'James in San Leandro', 'Emily in San Leandro'
   ])
 
   // Active users counter effect
@@ -76,21 +78,45 @@ export default function SanLeandroCaliforniaVendingLeadsPage() {
     return () => clearInterval(interval)
   }, [userNames.length, usedNames])
 
-  // Build related cities (for internal linking)
-  const state = states.find(s => s.slug === 'california');
-  const relatedCities = state ? state.cities.filter(c => c.slug !== 'san-leandro-california').slice(0, 8) : [];
+  // Build related California cities (for internal linking)
+  const newHampshire = states.find(s => s.slug === 'california');
+  const relatedCities = newHampshire ? newHampshire.cities.filter(c => c.slug !== 'manchester-california').slice(0, 8) : [];
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in San Leandro?', a: 'San Leandro offers diverse vending opportunities including healthcare facilities, educational institutions, retail locations, office buildings, and manufacturing facilities. Each location is pre-verified for optimal vending machine success.' },
-    { q: 'How quickly can I get vending machine leads for San Leandro?', a: 'Our San Leandro vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.' },
-    { q: 'What makes San Leandro a good market for vending machines?', a: "San Leandro features a thriving business community with diverse industries and strong economic activity. The city's business density and diverse demographics create ideal conditions for vending machine success." },
-    { q: 'Do you provide ongoing support for San Leandro locations?', a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in San Leandro.' },
-    { q: 'What industries in San Leandro are best for vending machines?', a: 'Healthcare, education, retail, office buildings, and manufacturing in San Leandro show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.' },
-    { q: 'How do you verify the quality of San Leandro vending locations?', a: 'We conduct thorough research on each San Leandro location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.' },
-    { q: 'Can I get customized vending leads for specific areas of San Leandro?', a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within San Leandro based on your preferences and target market requirements.' },
-    { q: "What's the typical ROI for vending machines in San Leandro?", a: "Vending machines in San Leandro typically show strong ROI due to the city's business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines." }
-  ];
+  {
+    q: 'What types of vending machine locations are available in San Leandro?',
+    a: 'San Leandro offers diverse vending opportunities including healthcare facilities, educational institutions, retail locations, office buildings, and manufacturing facilities. Each location is pre-verified for optimal vending machine success.'
+  },
+  {
+    q: 'How quickly can I get vending machine leads for San Leandro?',
+    a: 'Our San Leandro vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
+  },
+  {
+    q: 'What makes San Leandro a good market for vending machines?',
+    a: 'San Leandro features a thriving business community with diverse industries and strong economic activity. The city's business density and diverse demographics create ideal conditions for vending machine success.'
+  },
+  {
+    q: 'Do you provide ongoing support for San Leandro locations?',
+    a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in San Leandro.'
+  },
+  {
+    q: 'What industries in San Leandro are best for vending machines?',
+    a: 'Healthcare, education, retail, office buildings, and manufacturing in San Leandro show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
+  },
+  {
+    q: 'How do you verify the quality of San Leandro vending locations?',
+    a: 'We conduct thorough research on each San Leandro location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
+  },
+  {
+    q: 'Can I get customized vending leads for specific areas of San Leandro?',
+    a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within San Leandro based on your preferences and target market requirements.'
+  },
+  {
+    q: 'What's the typical ROI for vending machines in San Leandro?',
+    a: 'Vending machines in San Leandro typically show strong ROI due to the city's business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+  }
+];
 
   return (
     <>
@@ -154,7 +180,7 @@ export default function SanLeandroCaliforniaVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Explore vending machine opportunities throughout San Leandro's business network, where diverse industries, commercial zones, and community spaces offer multiple placement options for vending success.
+                Get comprehensive vending leads for San Leandro's thriving California market, combining local businesses, healthcare systems, and educational facilities for reliable vending machine placement.
               </motion.p>
 
               {/* Trust Signals */}
@@ -306,7 +332,7 @@ export default function SanLeandroCaliforniaVendingLeadsPage() {
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">San Leandro features modern healthcare facilities including hospitals, medical centers, and clinics with high patient and visitor traffic, creating consistent demand for vending services throughout the day.</p>
+                <p className="text-stone leading-relaxed">San Leandro's healthcare sector includes major hospitals, specialty clinics, and medical offices that generate consistent visitor and employee traffic, ideal for vending machine placement.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -320,7 +346,7 @@ export default function SanLeandroCaliforniaVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Schools and educational institutions in San Leandro offer excellent vending opportunities, with high-traffic areas including cafeterias, libraries, student centers, and athletic facilities.</p>
+                <p className="text-stone leading-relaxed">Educational facilities throughout San Leandro serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -334,7 +360,7 @@ export default function SanLeandroCaliforniaVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">San Leandro's manufacturing sector features production facilities, warehouses, and industrial parks with large employee concentrations, ideal for vending machine services.</p>
+                <p className="text-stone leading-relaxed">Industrial and manufacturing operations throughout San Leandro employ substantial workforces with shift-based schedules, offering stable vending placement opportunities with steady traffic.</p>
               </motion.div>
               <motion.div
                 key="Retail"
@@ -348,7 +374,7 @@ export default function SanLeandroCaliforniaVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Retail locations throughout San Leandro provide high customer traffic and diverse shopping experiences, creating multiple vending opportunities in malls, shopping centers, and retail districts.</p>
+                <p className="text-stone leading-relaxed">Shopping centers and retail districts in San Leandro offer prime vending locations, with high-traffic areas including food courts, entrances, and common spaces frequented by shoppers.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -362,7 +388,7 @@ export default function SanLeandroCaliforniaVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Professional office spaces in San Leandro house corporate headquarters, business centers, and professional services with captive employee audiences during business hours, creating consistent vending opportunities.</p>
+                <p className="text-stone leading-relaxed">Commercial office spaces in San Leandro offer excellent vending opportunities, with professional tenants and business operations generating consistent foot traffic throughout the workday.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -376,7 +402,7 @@ export default function SanLeandroCaliforniaVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">San Leandro's transportation infrastructure includes major transit hubs and travel facilities with year-round passenger flow, ideal for vending machine services in waiting areas and terminals.</p>
+                <p className="text-stone leading-relaxed">Airports, bus stations, and transit centers throughout San Leandro generate steady passenger traffic, providing excellent vending placement options in high-traffic areas frequented by travelers.</p>
               </motion.div>
             </div>
           </div>
@@ -506,11 +532,11 @@ export default function SanLeandroCaliforniaVendingLeadsPage() {
           </div>
         </section>
 
-        {/* More cities in state */}
+        {/* More cities in California */}
         {relatedCities.length > 0 && (
           <section className="py-12 bg-white border-t border-gray-200">
             <div className="mx-auto max-w-7xl px-6">
-              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in {stateDisplayName}</h2>
+              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in California</h2>
               <div className="flex flex-wrap gap-3">
                 {relatedCities.map(city => (
                   <Link key={city.slug} href={`/vending-leads/${city.slug}`} className="px-3 py-2 rounded-lg border border-gray-200 bg-cream/60 text-chocolate hover:text-navy">
@@ -537,7 +563,7 @@ export default function SanLeandroCaliforniaVendingLeadsPage() {
               { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
               { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
               { '@type': 'ListItem', position: 3, name: 'California', item: 'https://www.thevendinglocator.com/vending-leads/california' },
-              { '@type': 'ListItem', position: 4, name: 'San Leandro', item: 'https://www.thevendinglocator.com/vending-leads/san-leandro-california' }
+              { '@type': 'ListItem', position: 4, name: 'San Leandro', item: 'https://www.thevendinglocator.com/vending-leads/manchester-california' }
             ]
           })
         }}

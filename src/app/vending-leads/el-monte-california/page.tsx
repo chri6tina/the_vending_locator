@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in El Monte, California - The Vending Locator",
   "description": "Get verified vending machine leads and locations in El Monte, California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines el monte california, vending leads el monte california, vending locations el monte california, vending opportunities el monte california",
+  "keywords": "vending machines El Monte California, vending leads El Monte California, vending locations El Monte California, vending opportunities El Monte California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/el-monte-california"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

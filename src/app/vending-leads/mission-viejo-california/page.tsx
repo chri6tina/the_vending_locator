@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Mission Viejo, California - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Mission Viejo, California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines mission viejo california, vending leads mission viejo california, vending locations mission viejo california, vending opportunities mission viejo california",
+  "keywords": "vending machines Mission Viejo California, vending leads Mission Viejo California, vending locations Mission Viejo California, vending opportunities Mission Viejo California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/mission-viejo-california"
   },

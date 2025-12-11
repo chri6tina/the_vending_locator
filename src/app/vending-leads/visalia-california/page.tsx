@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Visalia, California - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Visalia, California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines visalia california, vending leads visalia california, vending locations visalia california, vending opportunities visalia california",
+  "keywords": "vending machines Visalia California, vending leads Visalia California, vending locations Visalia California, vending opportunities Visalia California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/visalia-california"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

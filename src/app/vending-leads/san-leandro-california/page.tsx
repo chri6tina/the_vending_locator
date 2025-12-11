@@ -2,33 +2,33 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  title: "Vending Machine Leads in San Leandro, California - The Vending Locator",
-  description: "Get verified vending machine leads and locations throughout San Leandro, California. Find qualified businesses for vending machine placement.",
-  keywords: "vending machines San Leandro, vending leads San Leandro, vending locations San Leandro, vending opportunities San Leandro",
-  alternates: {
-    canonical: "https://www.thevendinglocator.com/vending-leads/san-leandro-california"
+  "title": "Vending Machine Leads in San Leandro, California - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in San Leandro, California. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines San Leandro California, vending leads San Leandro California, vending locations San Leandro California, vending opportunities San Leandro California",
+  "alternates": {
+    "canonical": "https://www.thevendinglocator.com/vending-leads/san-leandro-california"
   },
-  openGraph: {
-    title: "Vending Machine Leads in San Leandro, California - The Vending Locator",
-    description: "Get verified vending machine leads and locations throughout San Leandro, California. Find qualified businesses for vending machine placement.",
-    url: "https://www.thevendinglocator.com/vending-leads/san-leandro-california",
-    siteName: "The Vending Locator",
-    type: "website"
+  "openGraph": {
+    "title": "Vending Machine Leads in San Leandro, California - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in San Leandro, California. Find qualified businesses for vending machine placement.",
+    "url": "https://www.thevendinglocator.com/vending-leads/san-leandro-california",
+    "siteName": "The Vending Locator",
+    "type": "website"
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "Vending Machine Leads in San Leandro, California - The Vending Locator",
-    description: "Get verified vending machine leads and locations throughout San Leandro, California. Find qualified businesses for vending machine placement."
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Vending Machine Leads in San Leandro, California - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in San Leandro, California. Find qualified businesses for vending machine placement."
   },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1
+  "robots": {
+    "index": true,
+    "follow": true,
+    "googleBot": {
+      "index": true,
+      "follow": true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1
     }
   }
 }
@@ -37,6 +37,6 @@ export const metadata: Metadata = {
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;
 
-export default function Page() {
+export default function CityPage() {
   return <PageClient />
 }

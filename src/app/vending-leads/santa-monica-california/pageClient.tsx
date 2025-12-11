@@ -21,12 +21,12 @@ export default function SantaMonicaCaliforniaVendingLeadsPage() {
   const cityData = {
     'name': 'Santa Monica',
     'state': 'California',
-    'population': '100K-500K',
-    'businesses': '10K-50K',
-    'industries': '10-15',
-    'verifiedLocations': '200-400',
+    'population': '93K+',
+    'businesses': '5K-9K',
+    'industries': '9-13',
+    'verifiedLocations': '130-230',
     'rating': '4.7/5',
-    'description': 'Thriving business community in California'
+    'description': 'Los Angeles suburb with technology, entertainment, and retail'
   };
   
   // Active users counter
@@ -36,7 +36,9 @@ export default function SantaMonicaCaliforniaVendingLeadsPage() {
 
   // User names for active users counter
   const [userNames, setUserNames] = useState([
-    'Mike from Santa Monica', 'Sarah in Downtown', 'David in Santa Monica', 'Lisa in Santa Monica', 'Tom in Santa Monica', 'Jennifer in Santa Monica', 'Robert in Santa Monica', 'Amanda in Santa Monica', 'Chris in Santa Monica', 'Maria in Santa Monica', 'James in Santa Monica', 'Emily in Santa Monica'
+    'Mike from Santa Monica', 'Sarah in Santa Monica', 'David in Santa Monica', 'Lisa in Santa Monica',
+    'Tom in Santa Monica', 'Jennifer in Santa Monica', 'Robert in Santa Monica', 'Amanda in Santa Monica',
+    'Chris in Santa Monica', 'Maria in Santa Monica', 'James in Santa Monica', 'Emily in Santa Monica'
   ])
 
   // Active users counter effect
@@ -76,21 +78,45 @@ export default function SantaMonicaCaliforniaVendingLeadsPage() {
     return () => clearInterval(interval)
   }, [userNames.length, usedNames])
 
-  // Build related cities (for internal linking)
-  const state = states.find(s => s.slug === 'california');
-  const relatedCities = state ? state.cities.filter(c => c.slug !== 'santa-monica-california').slice(0, 8) : [];
+  // Build related California cities (for internal linking)
+  const newHampshire = states.find(s => s.slug === 'california');
+  const relatedCities = newHampshire ? newHampshire.cities.filter(c => c.slug !== 'manchester-california').slice(0, 8) : [];
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in Santa Monica?', a: 'Santa Monica offers diverse vending opportunities including healthcare facilities, educational institutions, retail locations, office buildings, and manufacturing facilities. Each location is pre-verified for optimal vending machine success.' },
-    { q: 'How quickly can I get vending machine leads for Santa Monica?', a: 'Our Santa Monica vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.' },
-    { q: 'What makes Santa Monica a good market for vending machines?', a: "Santa Monica features a thriving business community with diverse industries and strong economic activity. The city's business density and diverse demographics create ideal conditions for vending machine success." },
-    { q: 'Do you provide ongoing support for Santa Monica locations?', a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Santa Monica.' },
-    { q: 'What industries in Santa Monica are best for vending machines?', a: 'Healthcare, education, retail, office buildings, and manufacturing in Santa Monica show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.' },
-    { q: 'How do you verify the quality of Santa Monica vending locations?', a: 'We conduct thorough research on each Santa Monica location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.' },
-    { q: 'Can I get customized vending leads for specific areas of Santa Monica?', a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Santa Monica based on your preferences and target market requirements.' },
-    { q: "What's the typical ROI for vending machines in Santa Monica?", a: "Vending machines in Santa Monica typically show strong ROI due to the city's business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines." }
-  ];
+  {
+    q: 'What types of vending machine locations are available in Santa Monica?',
+    a: 'Santa Monica offers diverse vending opportunities including healthcare facilities, educational institutions, retail locations, office buildings, and manufacturing facilities. Each location is pre-verified for optimal vending machine success.'
+  },
+  {
+    q: 'How quickly can I get vending machine leads for Santa Monica?',
+    a: 'Our Santa Monica vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
+  },
+  {
+    q: 'What makes Santa Monica a good market for vending machines?',
+    a: 'Santa Monica features a thriving business community with diverse industries and strong economic activity. The city's business density and diverse demographics create ideal conditions for vending machine success.'
+  },
+  {
+    q: 'Do you provide ongoing support for Santa Monica locations?',
+    a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Santa Monica.'
+  },
+  {
+    q: 'What industries in Santa Monica are best for vending machines?',
+    a: 'Healthcare, education, retail, office buildings, and manufacturing in Santa Monica show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
+  },
+  {
+    q: 'How do you verify the quality of Santa Monica vending locations?',
+    a: 'We conduct thorough research on each Santa Monica location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
+  },
+  {
+    q: 'Can I get customized vending leads for specific areas of Santa Monica?',
+    a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Santa Monica based on your preferences and target market requirements.'
+  },
+  {
+    q: 'What's the typical ROI for vending machines in Santa Monica?',
+    a: 'Vending machines in Santa Monica typically show strong ROI due to the city's business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+  }
+];
 
   return (
     <>
@@ -402,7 +428,7 @@ export default function SantaMonicaCaliforniaVendingLeadsPage() {
               className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
             >
               <p className="text-lg text-stone leading-relaxed">
-                Santa Monica offers strong vending opportunities through its diverse business community, combining local commerce, healthcare facilities, educational institutions, and growing commercial sectors. The city's business mix provides multiple placement options with varying traffic patterns, while Santa Monica's economic stability supports consistent consumer demand. The city's combination of established businesses and growing sectors creates reliable vending placement opportunities.
+                Santa Monica offers reliable vending opportunities through its thriving business community, featuring diverse industries, commercial centers, and growing economic sectors. The city's business mix provides stable placement locations with consistent traffic patterns, while Santa Monica's economic activity supports steady consumer spending. The city's combination of established businesses and emerging sectors creates multiple vending placement strategies.
               </p>
             </motion.div>
           </div>
@@ -506,11 +532,11 @@ export default function SantaMonicaCaliforniaVendingLeadsPage() {
           </div>
         </section>
 
-        {/* More cities in state */}
+        {/* More cities in California */}
         {relatedCities.length > 0 && (
           <section className="py-12 bg-white border-t border-gray-200">
             <div className="mx-auto max-w-7xl px-6">
-              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in {stateDisplayName}</h2>
+              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in California</h2>
               <div className="flex flex-wrap gap-3">
                 {relatedCities.map(city => (
                   <Link key={city.slug} href={`/vending-leads/${city.slug}`} className="px-3 py-2 rounded-lg border border-gray-200 bg-cream/60 text-chocolate hover:text-navy">
@@ -537,7 +563,7 @@ export default function SantaMonicaCaliforniaVendingLeadsPage() {
               { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
               { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
               { '@type': 'ListItem', position: 3, name: 'California', item: 'https://www.thevendinglocator.com/vending-leads/california' },
-              { '@type': 'ListItem', position: 4, name: 'Santa Monica', item: 'https://www.thevendinglocator.com/vending-leads/santa-monica-california' }
+              { '@type': 'ListItem', position: 4, name: 'Santa Monica', item: 'https://www.thevendinglocator.com/vending-leads/manchester-california' }
             ]
           })
         }}

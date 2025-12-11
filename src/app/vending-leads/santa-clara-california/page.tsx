@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Santa Clara, California - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Santa Clara, California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines santa clara california, vending leads santa clara california, vending locations santa clara california, vending opportunities santa clara california",
+  "keywords": "vending machines Santa Clara California, vending leads Santa Clara California, vending locations Santa Clara California, vending opportunities Santa Clara California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/santa-clara-california"
   },

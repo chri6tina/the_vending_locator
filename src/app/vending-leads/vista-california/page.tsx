@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Vista, California - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Vista, California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines vista california, vending leads vista california, vending locations vista california, vending opportunities vista california",
+  "keywords": "vending machines Vista California, vending leads Vista California, vending locations Vista California, vending opportunities Vista California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/vista-california"
   },

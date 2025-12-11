@@ -21,12 +21,12 @@ export default function ManhattanKansasVendingLeadsPage() {
   const cityData = {
     'name': 'Manhattan',
     'state': 'Kansas',
-    'population': '~54,000',
-    'businesses': '1.5K-2K',
-    'industries': '6-8',
-    'verifiedLocations': '65-130',
+    'population': '54K+',
+    'businesses': '3K-6K',
+    'industries': '7-11',
+    'verifiedLocations': '90-160',
     'rating': '4.7/5',
-    'description': 'College town with military presence and agriculture'
+    'description': 'College town with education, healthcare, and government'
   };
   
   // Active users counter
@@ -78,21 +78,45 @@ export default function ManhattanKansasVendingLeadsPage() {
     return () => clearInterval(interval)
   }, [userNames.length, usedNames])
 
-  // Build related New Hampshire cities (for internal linking)
+  // Build related Kansas cities (for internal linking)
   const newHampshire = states.find(s => s.slug === 'kansas');
   const relatedCities = newHampshire ? newHampshire.cities.filter(c => c.slug !== 'manchester-kansas').slice(0, 8) : [];
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: "What types of vending machine locations are available in Manhattan?", a: "Manhattan offers vending opportunities at Kansas State University, Fort Riley military facilities, agricultural businesses, retail centers, healthcare facilities, and office buildings." },
-    { q: "How quickly can I get vending machine leads for Manhattan?", a: "Our Manhattan vending leads are delivered within 3-5 business days with detailed information about each location and Flint Hills region market insights." },
-    { q: "What makes Manhattan a good market for vending machines?", a: "Manhattan's combination of university students, military personnel, and agricultural business creates diverse vending demand. The city's stable economy and consistent population ensure year-round opportunities." },
-    { q: "Do you provide ongoing support for Manhattan locations?", a: "Yes, we provide comprehensive support including location research, university and military market insights, contact information, and placement strategies tailored to Manhattan's unique economy." },
-    { q: "What industries in Manhattan are best for vending machines?", a: "Higher education (K-State), military facilities (Fort Riley), agricultural businesses, and healthcare show excellent potential due to large populations and consistent demand." },
-    { q: "How do you verify the quality of Manhattan vending locations?", a: "We conduct thorough verification including business validation, enrollment and personnel data, facility assessment, and regional market research for each Manhattan location." },
-    { q: "Can I get customized vending leads for specific areas of Manhattan?", a: "Absolutely! We can focus on the K-State campus district, downtown Aggieville area, or Fort Riley corridor based on your target market." },
-    { q: "What's the typical ROI for vending machines in Manhattan?", a: "Machines in Manhattan typically see ROI within 12-16 months, with university and military placements often achieving faster returns due to consistent high-volume traffic." }
-  ];
+  {
+    q: 'What types of vending machine locations are available in Manhattan?',
+    a: 'Manhattan offers diverse vending opportunities including healthcare facilities, educational institutions, retail locations, office buildings, and manufacturing facilities. Each location is pre-verified for optimal vending machine success.'
+  },
+  {
+    q: 'How quickly can I get vending machine leads for Manhattan?',
+    a: 'Our Manhattan vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
+  },
+  {
+    q: 'What makes Manhattan a good market for vending machines?',
+    a: 'Manhattan features a thriving business community with diverse industries and strong economic activity. The city's business density and diverse demographics create ideal conditions for vending machine success.'
+  },
+  {
+    q: 'Do you provide ongoing support for Manhattan locations?',
+    a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Manhattan.'
+  },
+  {
+    q: 'What industries in Manhattan are best for vending machines?',
+    a: 'Healthcare, education, retail, office buildings, and manufacturing in Manhattan show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
+  },
+  {
+    q: 'How do you verify the quality of Manhattan vending locations?',
+    a: 'We conduct thorough research on each Manhattan location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
+  },
+  {
+    q: 'Can I get customized vending leads for specific areas of Manhattan?',
+    a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Manhattan based on your preferences and target market requirements.'
+  },
+  {
+    q: 'What's the typical ROI for vending machines in Manhattan?',
+    a: 'Vending machines in Manhattan typically show strong ROI due to the city's business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+  }
+];
 
   return (
     <>
@@ -156,7 +180,7 @@ export default function ManhattanKansasVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Access verified vending machine locations across Manhattan's diverse business community, where local commerce, healthcare facilities, and educational institutions create steady opportunities for vending placement.
+                Get comprehensive vending leads for Manhattan's thriving Kansas market, combining local businesses, healthcare systems, and educational facilities for reliable vending machine placement.
               </motion.p>
 
               {/* Trust Signals */}
@@ -308,7 +332,7 @@ export default function ManhattanKansasVendingLeadsPage() {
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Healthcare facilities in Manhattan serve large patient populations and employ significant staff numbers, providing stable vending opportunities with extended operating hours and steady foot traffic.</p>
+                <p className="text-stone leading-relaxed">Manhattan's healthcare sector includes major hospitals, specialty clinics, and medical offices that generate consistent visitor and employee traffic, ideal for vending machine placement.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -322,7 +346,7 @@ export default function ManhattanKansasVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Educational institutions in Manhattan provide consistent student and staff populations, with schools, colleges, and universities offering year-round vending opportunities across campus facilities.</p>
+                <p className="text-stone leading-relaxed">Educational facilities throughout Manhattan serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -336,7 +360,7 @@ export default function ManhattanKansasVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Manhattan's manufacturing sector includes industrial facilities and production plants with large employee bases working extended shifts, creating ideal conditions for vending machine placement.</p>
+                <p className="text-stone leading-relaxed">Industrial and manufacturing operations throughout Manhattan employ substantial workforces with shift-based schedules, offering stable vending placement opportunities with steady traffic.</p>
               </motion.div>
               <motion.div
                 key="Retail"
@@ -350,7 +374,7 @@ export default function ManhattanKansasVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Manhattan's retail sector features shopping centers, department stores, and specialty shops with consistent customer flow, offering excellent vending machine placement options.</p>
+                <p className="text-stone leading-relaxed">Shopping centers and retail districts in Manhattan offer prime vending locations, with high-traffic areas including food courts, entrances, and common spaces frequented by shoppers.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -364,7 +388,7 @@ export default function ManhattanKansasVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Office buildings throughout Manhattan feature corporate tenants, professional firms, and business services with steady daily traffic, providing reliable vending machine placement options.</p>
+                <p className="text-stone leading-relaxed">Commercial office spaces in Manhattan offer excellent vending opportunities, with professional tenants and business operations generating consistent foot traffic throughout the workday.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -378,7 +402,7 @@ export default function ManhattanKansasVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Manhattan's transportation hubs including airports, transit centers, and transportation facilities provide high-volume passenger traffic, creating exceptional vending machine placement opportunities.</p>
+                <p className="text-stone leading-relaxed">Airports, bus stations, and transit centers throughout Manhattan generate steady passenger traffic, providing excellent vending placement options in high-traffic areas frequented by travelers.</p>
               </motion.div>
             </div>
           </div>
@@ -404,7 +428,7 @@ export default function ManhattanKansasVendingLeadsPage() {
               className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
             >
               <p className="text-lg text-stone leading-relaxed">
-                Manhattan offers strong vending opportunities through its diverse business community, combining local commerce, healthcare facilities, educational institutions, and growing commercial sectors. The city's business mix provides multiple placement options with varying traffic patterns, while Manhattan's economic stability supports consistent consumer demand. The city's combination of established businesses and growing sectors creates reliable vending placement opportunities.
+                Manhattan offers reliable vending opportunities through its thriving business community, featuring diverse industries, commercial centers, and growing economic sectors. The city's business mix provides stable placement locations with consistent traffic patterns, while Manhattan's economic activity supports steady consumer spending. The city's combination of established businesses and emerging sectors creates multiple vending placement strategies.
               </p>
             </motion.div>
           </div>
@@ -508,11 +532,11 @@ export default function ManhattanKansasVendingLeadsPage() {
           </div>
         </section>
 
-        {/* More cities in New Hampshire */}
+        {/* More cities in Kansas */}
         {relatedCities.length > 0 && (
           <section className="py-12 bg-white border-t border-gray-200">
             <div className="mx-auto max-w-7xl px-6">
-              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in New Hampshire</h2>
+              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in Kansas</h2>
               <div className="flex flex-wrap gap-3">
                 {relatedCities.map(city => (
                   <Link key={city.slug} href={`/vending-leads/${city.slug}`} className="px-3 py-2 rounded-lg border border-gray-200 bg-cream/60 text-chocolate hover:text-navy">
@@ -538,8 +562,8 @@ export default function ManhattanKansasVendingLeadsPage() {
             itemListElement: [
               { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
               { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/kansas' },
-              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-kansas' }
+              { '@type': 'ListItem', position: 3, name: 'Kansas', item: 'https://www.thevendinglocator.com/vending-leads/kansas' },
+              { '@type': 'ListItem', position: 4, name: 'Manhattan', item: 'https://www.thevendinglocator.com/vending-leads/manchester-kansas' }
             ]
           })
         }}

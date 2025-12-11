@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Rancho Cucamonga, California - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Rancho Cucamonga, California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines rancho cucamonga california, vending leads rancho cucamonga california, vending locations rancho cucamonga california, vending opportunities rancho cucamonga california",
+  "keywords": "vending machines Rancho Cucamonga California, vending leads Rancho Cucamonga California, vending locations Rancho Cucamonga California, vending opportunities Rancho Cucamonga California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/rancho-cucamonga-california"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

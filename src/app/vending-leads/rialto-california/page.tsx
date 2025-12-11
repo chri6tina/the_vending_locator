@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Rialto, California - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Rialto, California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines rialto california, vending leads rialto california, vending locations rialto california, vending opportunities rialto california",
+  "keywords": "vending machines Rialto California, vending leads Rialto California, vending locations Rialto California, vending opportunities Rialto California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/rialto-california"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

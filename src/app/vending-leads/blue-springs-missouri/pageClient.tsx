@@ -21,12 +21,12 @@ export default function BlueSpringsMissouriVendingLeadsPage() {
   const cityData = {
     'name': 'Blue Springs',
     'state': 'Missouri',
-    'population': '100K-500K',
-    'businesses': '10K-50K',
-    'industries': '10-15',
-    'verifiedLocations': '200-400',
+    'population': '59K+',
+    'businesses': '3K-7K',
+    'industries': '7-11',
+    'verifiedLocations': '100-180',
     'rating': '4.7/5',
-    'description': 'Thriving business community in Missouri'
+    'description': 'Kansas City suburb with healthcare, retail, and manufacturing'
   };
   
   // Active users counter
@@ -36,7 +36,9 @@ export default function BlueSpringsMissouriVendingLeadsPage() {
 
   // User names for active users counter
   const [userNames, setUserNames] = useState([
-    'Mike from Blue Springs', 'Sarah in Downtown', 'David in Blue Springs', 'Lisa in Blue Springs', 'Tom in Blue Springs', 'Jennifer in Blue Springs', 'Robert in Blue Springs', 'Amanda in Blue Springs', 'Chris in Blue Springs', 'Maria in Blue Springs', 'James in Blue Springs', 'Emily in Blue Springs'
+    'Mike from Blue Springs', 'Sarah in Blue Springs', 'David in Blue Springs', 'Lisa in Blue Springs',
+    'Tom in Blue Springs', 'Jennifer in Blue Springs', 'Robert in Blue Springs', 'Amanda in Blue Springs',
+    'Chris in Blue Springs', 'Maria in Blue Springs', 'James in Blue Springs', 'Emily in Blue Springs'
   ])
 
   // Active users counter effect
@@ -76,21 +78,45 @@ export default function BlueSpringsMissouriVendingLeadsPage() {
     return () => clearInterval(interval)
   }, [userNames.length, usedNames])
 
-  // Build related cities (for internal linking)
-  const state = states.find(s => s.slug === 'missouri');
-  const relatedCities = state ? state.cities.filter(c => c.slug !== 'blue-springs-missouri').slice(0, 8) : [];
+  // Build related Missouri cities (for internal linking)
+  const newHampshire = states.find(s => s.slug === 'missouri');
+  const relatedCities = newHampshire ? newHampshire.cities.filter(c => c.slug !== 'manchester-missouri').slice(0, 8) : [];
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in Blue Springs?', a: 'Blue Springs offers diverse vending opportunities including healthcare facilities, educational institutions, retail locations, office buildings, and manufacturing facilities. Each location is pre-verified for optimal vending machine success.' },
-    { q: 'How quickly can I get vending machine leads for Blue Springs?', a: 'Our Blue Springs vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.' },
-    { q: 'What makes Blue Springs a good market for vending machines?', a: "Blue Springs features a thriving business community with diverse industries and strong economic activity. The city's business density and diverse demographics create ideal conditions for vending machine success." },
-    { q: 'Do you provide ongoing support for Blue Springs locations?', a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Blue Springs.' },
-    { q: 'What industries in Blue Springs are best for vending machines?', a: 'Healthcare, education, retail, office buildings, and manufacturing in Blue Springs show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.' },
-    { q: 'How do you verify the quality of Blue Springs vending locations?', a: 'We conduct thorough research on each Blue Springs location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.' },
-    { q: 'Can I get customized vending leads for specific areas of Blue Springs?', a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Blue Springs based on your preferences and target market requirements.' },
-    { q: "What's the typical ROI for vending machines in Blue Springs?", a: "Vending machines in Blue Springs typically show strong ROI due to the city's business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines." }
-  ];
+  {
+    q: 'What types of vending machine locations are available in Blue Springs?',
+    a: 'Blue Springs offers diverse vending opportunities including healthcare facilities, educational institutions, retail locations, office buildings, and manufacturing facilities. Each location is pre-verified for optimal vending machine success.'
+  },
+  {
+    q: 'How quickly can I get vending machine leads for Blue Springs?',
+    a: 'Our Blue Springs vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
+  },
+  {
+    q: 'What makes Blue Springs a good market for vending machines?',
+    a: 'Blue Springs features a thriving business community with diverse industries and strong economic activity. The city's business density and diverse demographics create ideal conditions for vending machine success.'
+  },
+  {
+    q: 'Do you provide ongoing support for Blue Springs locations?',
+    a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Blue Springs.'
+  },
+  {
+    q: 'What industries in Blue Springs are best for vending machines?',
+    a: 'Healthcare, education, retail, office buildings, and manufacturing in Blue Springs show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
+  },
+  {
+    q: 'How do you verify the quality of Blue Springs vending locations?',
+    a: 'We conduct thorough research on each Blue Springs location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
+  },
+  {
+    q: 'Can I get customized vending leads for specific areas of Blue Springs?',
+    a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Blue Springs based on your preferences and target market requirements.'
+  },
+  {
+    q: 'What's the typical ROI for vending machines in Blue Springs?',
+    a: 'Vending machines in Blue Springs typically show strong ROI due to the city's business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+  }
+];
 
   return (
     <>
@@ -506,11 +532,11 @@ export default function BlueSpringsMissouriVendingLeadsPage() {
           </div>
         </section>
 
-        {/* More cities in state */}
+        {/* More cities in Missouri */}
         {relatedCities.length > 0 && (
           <section className="py-12 bg-white border-t border-gray-200">
             <div className="mx-auto max-w-7xl px-6">
-              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in {stateDisplayName}</h2>
+              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in Missouri</h2>
               <div className="flex flex-wrap gap-3">
                 {relatedCities.map(city => (
                   <Link key={city.slug} href={`/vending-leads/${city.slug}`} className="px-3 py-2 rounded-lg border border-gray-200 bg-cream/60 text-chocolate hover:text-navy">
@@ -537,7 +563,7 @@ export default function BlueSpringsMissouriVendingLeadsPage() {
               { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
               { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
               { '@type': 'ListItem', position: 3, name: 'Missouri', item: 'https://www.thevendinglocator.com/vending-leads/missouri' },
-              { '@type': 'ListItem', position: 4, name: 'Blue Springs', item: 'https://www.thevendinglocator.com/vending-leads/blue-springs-missouri' }
+              { '@type': 'ListItem', position: 4, name: 'Blue Springs', item: 'https://www.thevendinglocator.com/vending-leads/manchester-missouri' }
             ]
           })
         }}

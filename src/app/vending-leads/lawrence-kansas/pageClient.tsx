@@ -21,12 +21,12 @@ export default function LawrenceKansasVendingLeadsPage() {
   const cityData = {
     'name': 'Lawrence',
     'state': 'Kansas',
-    'population': '~99,000',
-    'businesses': '2.2K-2.8K',
-    'industries': '7-9',
-    'verifiedLocations': '90-180',
+    'population': '95K+',
+    'businesses': '5K-9K',
+    'industries': '8-12',
+    'verifiedLocations': '120-220',
     'rating': '4.7/5',
-    'description': 'University city with tech startups and healthcare'
+    'description': 'College town with education, healthcare, and technology'
   };
   
   // Active users counter
@@ -78,21 +78,45 @@ export default function LawrenceKansasVendingLeadsPage() {
     return () => clearInterval(interval)
   }, [userNames.length, usedNames])
 
-  // Build related New Hampshire cities (for internal linking)
+  // Build related Kansas cities (for internal linking)
   const newHampshire = states.find(s => s.slug === 'kansas');
   const relatedCities = newHampshire ? newHampshire.cities.filter(c => c.slug !== 'manchester-kansas').slice(0, 8) : [];
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: "What types of vending machine locations are available in Lawrence?", a: "Lawrence offers diverse vending opportunities at the University of Kansas campus, tech startups, healthcare facilities, retail locations, office buildings, and research facilities." },
-    { q: "How quickly can I get vending machine leads for Lawrence?", a: "Our Lawrence vending leads are delivered within 3-5 business days with comprehensive details about each location and university market insights." },
-    { q: "What makes Lawrence a good market for vending machines?", a: "Lawrence combines a large university population with a growing tech sector, creating year-round vending demand. The city's educated workforce and vibrant economy ensure consistent business activity." },
-    { q: "Do you provide ongoing support for Lawrence locations?", a: "Yes, we offer complete support including location verification, university and tech sector insights, contact information, and placement strategies specific to Lawrence's diverse market." },
-    { q: "What industries in Lawrence are best for vending machines?", a: "Higher education (KU), technology startups, healthcare facilities, and research institutions show excellent potential due to large student and employee populations." },
-    { q: "How do you verify the quality of Lawrence vending locations?", a: "We verify each location through business research, enrollment data analysis, employee count validation, and facility assessment to ensure quality university and corporate placements." },
-    { q: "Can I get customized vending leads for specific areas of Lawrence?", a: "Absolutely! We can target the KU campus area, downtown Massachusetts Street district, or West Lawrence tech corridor based on your preferences." },
-    { q: "What's the typical ROI for vending machines in Lawrence?", a: "Vending machines in Lawrence typically achieve ROI within 11-15 months, with university and tech locations often seeing faster returns due to consistent traffic and younger demographics." }
-  ];
+  {
+    q: 'What types of vending machine locations are available in Lawrence?',
+    a: 'Lawrence offers diverse vending opportunities including healthcare facilities, educational institutions, retail locations, office buildings, and manufacturing facilities. Each location is pre-verified for optimal vending machine success.'
+  },
+  {
+    q: 'How quickly can I get vending machine leads for Lawrence?',
+    a: 'Our Lawrence vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
+  },
+  {
+    q: 'What makes Lawrence a good market for vending machines?',
+    a: 'Lawrence features a thriving business community with diverse industries and strong economic activity. The city's business density and diverse demographics create ideal conditions for vending machine success.'
+  },
+  {
+    q: 'Do you provide ongoing support for Lawrence locations?',
+    a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Lawrence.'
+  },
+  {
+    q: 'What industries in Lawrence are best for vending machines?',
+    a: 'Healthcare, education, retail, office buildings, and manufacturing in Lawrence show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
+  },
+  {
+    q: 'How do you verify the quality of Lawrence vending locations?',
+    a: 'We conduct thorough research on each Lawrence location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
+  },
+  {
+    q: 'Can I get customized vending leads for specific areas of Lawrence?',
+    a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Lawrence based on your preferences and target market requirements.'
+  },
+  {
+    q: 'What's the typical ROI for vending machines in Lawrence?',
+    a: 'Vending machines in Lawrence typically show strong ROI due to the city's business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+  }
+];
 
   return (
     <>
@@ -156,7 +180,7 @@ export default function LawrenceKansasVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Discover pre-qualified vending opportunities in Lawrence's growing economy, featuring business districts, commercial centers, and community facilities with consistent foot traffic.
+                Get comprehensive vending leads for Lawrence's thriving Kansas market, combining local businesses, healthcare systems, and educational facilities for reliable vending machine placement.
               </motion.p>
 
               {/* Trust Signals */}
@@ -308,7 +332,7 @@ export default function LawrenceKansasVendingLeadsPage() {
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Medical centers and healthcare facilities throughout Lawrence offer excellent vending placement opportunities, with high-traffic areas including waiting rooms, cafeterias, and employee break areas.</p>
+                <p className="text-stone leading-relaxed">Lawrence's healthcare sector includes major hospitals, specialty clinics, and medical offices that generate consistent visitor and employee traffic, ideal for vending machine placement.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -322,7 +346,7 @@ export default function LawrenceKansasVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Lawrence's education sector features schools, universities, and training facilities with captive audiences during academic hours, creating reliable vending machine placement opportunities.</p>
+                <p className="text-stone leading-relaxed">Educational facilities throughout Lawrence serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -336,7 +360,7 @@ export default function LawrenceKansasVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Manufacturing facilities in Lawrence operate around the clock with significant employee populations, providing consistent vending opportunities in break rooms and common areas.</p>
+                <p className="text-stone leading-relaxed">Industrial and manufacturing operations throughout Lawrence employ substantial workforces with shift-based schedules, offering stable vending placement opportunities with steady traffic.</p>
               </motion.div>
               <motion.div
                 key="Retail"
@@ -350,7 +374,7 @@ export default function LawrenceKansasVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Retail establishments in Lawrence attract diverse customer demographics and generate steady foot traffic, providing reliable vending opportunities across various retail environments.</p>
+                <p className="text-stone leading-relaxed">Shopping centers and retail districts in Lawrence offer prime vending locations, with high-traffic areas including food courts, entrances, and common spaces frequented by shoppers.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -364,7 +388,7 @@ export default function LawrenceKansasVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Lawrence's office sector includes business districts, corporate campuses, and professional centers with high employee concentrations, ideal for vending services in common areas and break rooms.</p>
+                <p className="text-stone leading-relaxed">Commercial office spaces in Lawrence offer excellent vending opportunities, with professional tenants and business operations generating consistent foot traffic throughout the workday.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -378,7 +402,7 @@ export default function LawrenceKansasVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Transportation facilities in Lawrence serve travelers and commuters with consistent foot traffic throughout the day, offering reliable vending opportunities in terminals, waiting areas, and transit stations.</p>
+                <p className="text-stone leading-relaxed">Airports, bus stations, and transit centers throughout Lawrence generate steady passenger traffic, providing excellent vending placement options in high-traffic areas frequented by travelers.</p>
               </motion.div>
             </div>
           </div>
@@ -404,7 +428,7 @@ export default function LawrenceKansasVendingLeadsPage() {
               className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
             >
               <p className="text-lg text-stone leading-relaxed">
-                The Lawrence market presents excellent vending potential through its combination of local businesses, healthcare systems, educational facilities, and commercial districts. The city's diverse economy ensures multiple traffic sources, while Lawrence's business density creates numerous placement options. The city's economic growth and business-friendly environment support long-term vending success with steady consumer demand.
+                Lawrence offers reliable vending opportunities through its thriving business community, featuring diverse industries, commercial centers, and growing economic sectors. The city's business mix provides stable placement locations with consistent traffic patterns, while Lawrence's economic activity supports steady consumer spending. The city's combination of established businesses and emerging sectors creates multiple vending placement strategies.
               </p>
             </motion.div>
           </div>
@@ -508,11 +532,11 @@ export default function LawrenceKansasVendingLeadsPage() {
           </div>
         </section>
 
-        {/* More cities in New Hampshire */}
+        {/* More cities in Kansas */}
         {relatedCities.length > 0 && (
           <section className="py-12 bg-white border-t border-gray-200">
             <div className="mx-auto max-w-7xl px-6">
-              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in New Hampshire</h2>
+              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in Kansas</h2>
               <div className="flex flex-wrap gap-3">
                 {relatedCities.map(city => (
                   <Link key={city.slug} href={`/vending-leads/${city.slug}`} className="px-3 py-2 rounded-lg border border-gray-200 bg-cream/60 text-chocolate hover:text-navy">
@@ -538,8 +562,8 @@ export default function LawrenceKansasVendingLeadsPage() {
             itemListElement: [
               { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
               { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/kansas' },
-              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-kansas' }
+              { '@type': 'ListItem', position: 3, name: 'Kansas', item: 'https://www.thevendinglocator.com/vending-leads/kansas' },
+              { '@type': 'ListItem', position: 4, name: 'Lawrence', item: 'https://www.thevendinglocator.com/vending-leads/manchester-kansas' }
             ]
           })
         }}

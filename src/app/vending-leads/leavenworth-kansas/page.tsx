@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Leavenworth, Kansas - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Leavenworth, Kansas. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines leavenworth kansas, vending leads leavenworth kansas, vending locations leavenworth kansas, vending opportunities leavenworth kansas",
+  "keywords": "vending machines Leavenworth Kansas, vending leads Leavenworth Kansas, vending locations Leavenworth Kansas, vending opportunities Leavenworth Kansas",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/leavenworth-kansas"
   },

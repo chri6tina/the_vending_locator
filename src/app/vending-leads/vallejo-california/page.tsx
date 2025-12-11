@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Vallejo, California - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Vallejo, California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines vallejo california, vending leads vallejo california, vending locations vallejo california, vending opportunities vallejo california",
+  "keywords": "vending machines Vallejo California, vending leads Vallejo California, vending locations Vallejo California, vending opportunities Vallejo California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/vallejo-california"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

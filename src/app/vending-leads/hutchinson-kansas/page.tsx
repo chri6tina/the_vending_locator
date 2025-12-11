@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Hutchinson, Kansas - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Hutchinson, Kansas. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines hutchinson kansas, vending leads hutchinson kansas, vending locations hutchinson kansas, vending opportunities hutchinson kansas",
+  "keywords": "vending machines Hutchinson Kansas, vending leads Hutchinson Kansas, vending locations Hutchinson Kansas, vending opportunities Hutchinson Kansas",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/hutchinson-kansas"
   },

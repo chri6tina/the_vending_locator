@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Pasadena, California - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Pasadena, California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines pasadena california, vending leads pasadena california, vending locations pasadena california, vending opportunities pasadena california",
+  "keywords": "vending machines Pasadena California, vending leads Pasadena California, vending locations Pasadena California, vending opportunities Pasadena California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/pasadena-california"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

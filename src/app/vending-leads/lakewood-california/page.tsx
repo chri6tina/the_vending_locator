@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Lakewood, California - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Lakewood, California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines lakewood california, vending leads lakewood california, vending locations lakewood california, vending opportunities lakewood california",
+  "keywords": "vending machines Lakewood California, vending leads Lakewood California, vending locations Lakewood California, vending opportunities Lakewood California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/lakewood-california"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Burbank, California - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Burbank, California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines burbank california, vending leads burbank california, vending locations burbank california, vending opportunities burbank california",
+  "keywords": "vending machines Burbank California, vending leads Burbank California, vending locations Burbank California, vending opportunities Burbank California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/burbank-california"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

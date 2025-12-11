@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Richmond, California - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Richmond, California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines richmond california, vending leads richmond california, vending locations richmond california, vending opportunities richmond california",
+  "keywords": "vending machines Richmond California, vending leads Richmond California, vending locations Richmond California, vending opportunities Richmond California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/richmond-california"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

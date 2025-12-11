@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Corona, California - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Corona, California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines corona california, vending leads corona california, vending locations corona california, vending opportunities corona california",
+  "keywords": "vending machines Corona California, vending leads Corona California, vending locations Corona California, vending opportunities Corona California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/corona-california"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

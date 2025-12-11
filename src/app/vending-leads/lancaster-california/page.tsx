@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Lancaster, California - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Lancaster, California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines lancaster california, vending leads lancaster california, vending locations lancaster california, vending opportunities lancaster california",
+  "keywords": "vending machines Lancaster California, vending leads Lancaster California, vending locations Lancaster California, vending opportunities Lancaster California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/lancaster-california"
   },

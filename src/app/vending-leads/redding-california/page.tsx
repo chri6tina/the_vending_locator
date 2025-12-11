@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Redding, California - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Redding, California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines redding california, vending leads redding california, vending locations redding california, vending opportunities redding california",
+  "keywords": "vending machines Redding California, vending leads Redding California, vending locations Redding California, vending opportunities Redding California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/redding-california"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

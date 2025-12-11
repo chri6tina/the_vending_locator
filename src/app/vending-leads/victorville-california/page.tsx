@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Victorville, California - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Victorville, California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines victorville california, vending leads victorville california, vending locations victorville california, vending opportunities victorville california",
+  "keywords": "vending machines Victorville California, vending leads Victorville California, vending locations Victorville California, vending opportunities Victorville California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/victorville-california"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

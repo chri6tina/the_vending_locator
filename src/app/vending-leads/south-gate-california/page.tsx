@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in South Gate, California - The Vending Locator",
   "description": "Get verified vending machine leads and locations in South Gate, California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines south gate california, vending leads south gate california, vending locations south gate california, vending opportunities south gate california",
+  "keywords": "vending machines South Gate California, vending leads South Gate California, vending locations South Gate California, vending opportunities South Gate California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/south-gate-california"
   },

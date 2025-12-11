@@ -19,16 +19,15 @@ export default function OverlandParkKansasVendingLeadsPage() {
   
   // City-specific data
   const cityData = {
-  name: 'Overland Park',
-  state: 'Kansas',
-  population: '197,238',
-  businesses: '12,000+',
-  industries: '5',
-  verifiedLocations: '100-150',
-  rating: '4.8/5',
-  description: 'Largest Kansas suburb with corporate offices and medical facilities',
-  majorEmployers: ['Sprint Corporation', 'Black & Veatch', 'Saint Luke\'s Health System', 'Blue Valley School District', 'Shawnee Mission School District']
-};
+    'name': 'Overland Park',
+    'state': 'Kansas',
+    'population': '197K+',
+    'businesses': '11K-17K',
+    'industries': '10-14',
+    'verifiedLocations': '240-420',
+    'rating': '4.7/5',
+    'description': 'Kansas City suburb with technology, healthcare, and corporate headquarters'
+  };
   
   // Active users counter
   const [activeUsers, setActiveUsers] = useState(25)
@@ -79,21 +78,45 @@ export default function OverlandParkKansasVendingLeadsPage() {
     return () => clearInterval(interval)
   }, [userNames.length, usedNames])
 
-  // Build related state cities (for internal linking)
-  const currentState = states.find(s => s.slug === 'kansas')
-  const relatedCities = currentState ? currentState.cities.filter(c => c.slug !== 'overland-park-kansas').slice(0, 8) : [];
+  // Build related Kansas cities (for internal linking)
+  const newHampshire = states.find(s => s.slug === 'kansas');
+  const relatedCities = newHampshire ? newHampshire.cities.filter(c => c.slug !== 'manchester-kansas').slice(0, 8) : [];
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: "What types of vending machine locations are available in Overland Park?", a: "Overland Park provides vending opportunities in healthcare facilities, educational institutions, retail centers, office buildings, and manufacturing facilities serving the local market." },
-    { q: "How quickly can I get vending machine leads for Overland Park?", a: "Our Overland Park vending leads are delivered within 3-5 business days with detailed information about each verified business and placement opportunity." },
-    { q: "What makes Overland Park a good market for vending machines?", a: "Overland Park features a strong business community with diverse industries and consistent foot traffic. The city's economic activity creates ideal conditions for vending machine success." },
-    { q: "Do you provide ongoing support for Overland Park locations?", a: "Yes, we provide comprehensive support including location research, business verification, contact information, and market-specific placement strategies for Overland Park." },
-    { q: "What industries in Overland Park are best for vending machines?", a: "Healthcare, education, manufacturing, retail, and office buildings in Overland Park show strong vending potential with reliable traffic and captive audiences." },
-    { q: "How do you verify the quality of Overland Park vending locations?", a: "We conduct thorough verification including business validation, employee assessment, facility research, and local market analysis for each Overland Park location." },
-    { q: "Can I get customized vending leads for specific areas of Overland Park?", a: "Absolutely! We can focus on specific neighborhoods, business districts, or industrial areas within Overland Park based on your target market." },
-    { q: "What's the typical ROI for vending machines in Overland Park?", a: "Machines in Overland Park typically see ROI within 12-18 months, with healthcare and educational facilities often providing the most consistent returns." }
-  ];
+  {
+    q: 'What types of vending machine locations are available in Overland Park?',
+    a: 'Overland Park offers diverse vending opportunities including healthcare facilities, educational institutions, retail locations, office buildings, and manufacturing facilities. Each location is pre-verified for optimal vending machine success.'
+  },
+  {
+    q: 'How quickly can I get vending machine leads for Overland Park?',
+    a: 'Our Overland Park vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
+  },
+  {
+    q: 'What makes Overland Park a good market for vending machines?',
+    a: 'Overland Park features a thriving business community with diverse industries and strong economic activity. The city's business density and diverse demographics create ideal conditions for vending machine success.'
+  },
+  {
+    q: 'Do you provide ongoing support for Overland Park locations?',
+    a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Overland Park.'
+  },
+  {
+    q: 'What industries in Overland Park are best for vending machines?',
+    a: 'Healthcare, education, retail, office buildings, and manufacturing in Overland Park show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
+  },
+  {
+    q: 'How do you verify the quality of Overland Park vending locations?',
+    a: 'We conduct thorough research on each Overland Park location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
+  },
+  {
+    q: 'Can I get customized vending leads for specific areas of Overland Park?',
+    a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Overland Park based on your preferences and target market requirements.'
+  },
+  {
+    q: 'What's the typical ROI for vending machines in Overland Park?',
+    a: 'Vending machines in Overland Park typically show strong ROI due to the city's business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+  }
+];
 
   return (
     <>
@@ -157,7 +180,7 @@ export default function OverlandParkKansasVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Discover pre-qualified vending opportunities in Overland Park's growing economy, featuring business districts, commercial centers, and community facilities with consistent foot traffic.
+                Get comprehensive vending leads for Overland Park's thriving Kansas market, combining local businesses, healthcare systems, and educational facilities for reliable vending machine placement.
               </motion.p>
 
               {/* Trust Signals */}
@@ -201,19 +224,20 @@ export default function OverlandParkKansasVendingLeadsPage() {
                 className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 mb-8"
               >
                 <button 
-                  onClick={() => {
-                    const pricingSection = document.getElementById('pricing')
-                    if (pricingSection) {
-                      pricingSection.scrollIntoView({ behavior: 'smooth' })
-                    }
-                  }}
-                  className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
+                    onClick={() => {
+                      const pricingSection = document.getElementById('pricing')
+                      if (pricingSection) {
+                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                      }
+                    }}
+                    className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
                 >
-                  Get Started
-                </button>
+                    Get Started
+                  </button>
+
               </motion.div>
 
-              {/* Social Proof Stats */}
+{/* Social Proof Stats */}
               <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -240,6 +264,8 @@ export default function OverlandParkKansasVendingLeadsPage() {
             </div>
           </div>
         </section>
+
+        
 
         {/* Pricing Section */}
         <section id="pricing" className="py-16 bg-warm-white">
@@ -306,7 +332,7 @@ export default function OverlandParkKansasVendingLeadsPage() {
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Medical centers and healthcare facilities throughout Overland Park offer excellent vending placement opportunities, with high-traffic areas including waiting rooms, cafeterias, and employee break areas.</p>
+                <p className="text-stone leading-relaxed">Overland Park's healthcare sector includes major hospitals, specialty clinics, and medical offices that generate consistent visitor and employee traffic, ideal for vending machine placement.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -320,7 +346,7 @@ export default function OverlandParkKansasVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Overland Park's education sector features schools, universities, and training facilities with captive audiences during academic hours, creating reliable vending machine placement opportunities.</p>
+                <p className="text-stone leading-relaxed">Educational facilities throughout Overland Park serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -334,13 +360,13 @@ export default function OverlandParkKansasVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Manufacturing facilities in Overland Park operate around the clock with significant employee populations, providing consistent vending opportunities in break rooms and common areas.</p>
+                <p className="text-stone leading-relaxed">Industrial and manufacturing operations throughout Overland Park employ substantial workforces with shift-based schedules, offering stable vending placement opportunities with steady traffic.</p>
               </motion.div>
               <motion.div
                 key="Retail"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.3 }}
+                transition={{ duration: 0.8, delay: 0.30000000000000004 }}
                 viewport={{ once: true }}
                 className="bg-orange-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
@@ -348,7 +374,7 @@ export default function OverlandParkKansasVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Retail establishments in Overland Park attract diverse customer demographics and generate steady foot traffic, providing reliable vending opportunities across various retail environments.</p>
+                <p className="text-stone leading-relaxed">Shopping centers and retail districts in Overland Park offer prime vending locations, with high-traffic areas including food courts, entrances, and common spaces frequented by shoppers.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -362,7 +388,7 @@ export default function OverlandParkKansasVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Overland Park's office sector includes business districts, corporate campuses, and professional centers with high employee concentrations, ideal for vending services in common areas and break rooms.</p>
+                <p className="text-stone leading-relaxed">Commercial office spaces in Overland Park offer excellent vending opportunities, with professional tenants and business operations generating consistent foot traffic throughout the workday.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -376,7 +402,7 @@ export default function OverlandParkKansasVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Transportation facilities in Overland Park serve travelers and commuters with consistent foot traffic throughout the day, offering reliable vending opportunities in terminals, waiting areas, and transit stations.</p>
+                <p className="text-stone leading-relaxed">Airports, bus stations, and transit centers throughout Overland Park generate steady passenger traffic, providing excellent vending placement options in high-traffic areas frequented by travelers.</p>
               </motion.div>
             </div>
           </div>
@@ -402,7 +428,7 @@ export default function OverlandParkKansasVendingLeadsPage() {
               className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
             >
               <p className="text-lg text-stone leading-relaxed">
-                Overland Park offers strong vending opportunities through its diverse business community, combining local commerce, healthcare facilities, educational institutions, and growing commercial sectors. The city's business mix provides multiple placement options with varying traffic patterns, while Overland Park's economic stability supports consistent consumer demand. The city's combination of established businesses and growing sectors creates reliable vending placement opportunities.
+                Overland Park offers reliable vending opportunities through its thriving business community, featuring diverse industries, commercial centers, and growing economic sectors. The city's business mix provides stable placement locations with consistent traffic patterns, while Overland Park's economic activity supports steady consumer spending. The city's combination of established businesses and emerging sectors creates multiple vending placement strategies.
               </p>
             </motion.div>
           </div>
@@ -506,11 +532,11 @@ export default function OverlandParkKansasVendingLeadsPage() {
           </div>
         </section>
 
-        {/* More cities in State */}
+        {/* More cities in Kansas */}
         {relatedCities.length > 0 && (
           <section className="py-12 bg-white border-t border-gray-200">
             <div className="mx-auto max-w-7xl px-6">
-              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in {stateDisplayName}</h2>
+              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in Kansas</h2>
               <div className="flex flex-wrap gap-3">
                 {relatedCities.map(city => (
                   <Link key={city.slug} href={`/vending-leads/${city.slug}`} className="px-3 py-2 rounded-lg border border-gray-200 bg-cream/60 text-chocolate hover:text-navy">
@@ -536,8 +562,8 @@ export default function OverlandParkKansasVendingLeadsPage() {
             itemListElement: [
               { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
               { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'Kansas', item: `https://www.thevendinglocator.com/vending-leads/kansas` },
-              { '@type': 'ListItem', position: 4, name: 'Overland Park', item: `https://www.thevendinglocator.com/vending-leads/overland-park-kansas` }
+              { '@type': 'ListItem', position: 3, name: 'Kansas', item: 'https://www.thevendinglocator.com/vending-leads/kansas' },
+              { '@type': 'ListItem', position: 4, name: 'Overland Park', item: 'https://www.thevendinglocator.com/vending-leads/manchester-kansas' }
             ]
           })
         }}

@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Sunnyvale, California - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Sunnyvale, California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines sunnyvale california, vending leads sunnyvale california, vending locations sunnyvale california, vending opportunities sunnyvale california",
+  "keywords": "vending machines Sunnyvale California, vending leads Sunnyvale California, vending locations Sunnyvale California, vending opportunities Sunnyvale California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/sunnyvale-california"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

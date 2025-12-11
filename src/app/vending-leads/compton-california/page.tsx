@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Compton, California - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Compton, California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines compton california, vending leads compton california, vending locations compton california, vending opportunities compton california",
+  "keywords": "vending machines Compton California, vending leads Compton California, vending locations Compton California, vending opportunities Compton California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/compton-california"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

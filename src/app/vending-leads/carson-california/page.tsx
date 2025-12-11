@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Carson, California - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Carson, California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines carson california, vending leads carson california, vending locations carson california, vending opportunities carson california",
+  "keywords": "vending machines Carson California, vending leads Carson California, vending locations Carson California, vending opportunities Carson California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/carson-california"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

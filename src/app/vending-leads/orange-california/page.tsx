@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Orange, California - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Orange, California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines orange california, vending leads orange california, vending locations orange california, vending opportunities orange california",
+  "keywords": "vending machines Orange California, vending leads Orange California, vending locations Orange California, vending opportunities Orange California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/orange-california"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Salina, Kansas - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Salina, Kansas. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines salina kansas, vending leads salina kansas, vending locations salina kansas, vending opportunities salina kansas",
+  "keywords": "vending machines Salina Kansas, vending leads Salina Kansas, vending locations Salina Kansas, vending opportunities Salina Kansas",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/salina-kansas"
   },

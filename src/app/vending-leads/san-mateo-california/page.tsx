@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in San Mateo, California - The Vending Locator",
   "description": "Get verified vending machine leads and locations in San Mateo, California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines san mateo california, vending leads san mateo california, vending locations san mateo california, vending opportunities san mateo california",
+  "keywords": "vending machines San Mateo California, vending leads San Mateo California, vending locations San Mateo California, vending opportunities San Mateo California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/san-mateo-california"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

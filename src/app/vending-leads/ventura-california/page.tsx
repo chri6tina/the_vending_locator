@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Ventura, California - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Ventura, California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines ventura california, vending leads ventura california, vending locations ventura california, vending opportunities ventura california",
+  "keywords": "vending machines Ventura California, vending leads Ventura California, vending locations Ventura California, vending opportunities Ventura California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/ventura-california"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

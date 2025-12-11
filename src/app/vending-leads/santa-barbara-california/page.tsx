@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Santa Barbara, California - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Santa Barbara, California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines santa barbara california, vending leads santa barbara california, vending locations santa barbara california, vending opportunities santa barbara california",
+  "keywords": "vending machines Santa Barbara California, vending leads Santa Barbara California, vending locations Santa Barbara California, vending opportunities Santa Barbara California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/santa-barbara-california"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

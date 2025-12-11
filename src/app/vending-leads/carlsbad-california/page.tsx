@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Carlsbad, California - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Carlsbad, California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines carlsbad california, vending leads carlsbad california, vending locations carlsbad california, vending opportunities carlsbad california",
+  "keywords": "vending machines Carlsbad California, vending leads Carlsbad California, vending locations Carlsbad California, vending opportunities Carlsbad California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/carlsbad-california"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

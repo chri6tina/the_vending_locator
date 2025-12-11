@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Norwalk, California - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Norwalk, California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines norwalk california, vending leads norwalk california, vending locations norwalk california, vending opportunities norwalk california",
+  "keywords": "vending machines Norwalk California, vending leads Norwalk California, vending locations Norwalk California, vending opportunities Norwalk California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/norwalk-california"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

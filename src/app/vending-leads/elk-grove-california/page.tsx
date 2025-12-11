@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Elk Grove, California - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Elk Grove, California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines elk grove california, vending leads elk grove california, vending locations elk grove california, vending opportunities elk grove california",
+  "keywords": "vending machines Elk Grove California, vending leads Elk Grove California, vending locations Elk Grove California, vending opportunities Elk Grove California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/elk-grove-california"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

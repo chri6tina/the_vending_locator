@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Fullerton, California - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Fullerton, California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines fullerton california, vending leads fullerton california, vending locations fullerton california, vending opportunities fullerton california",
+  "keywords": "vending machines Fullerton California, vending leads Fullerton California, vending locations Fullerton California, vending opportunities Fullerton California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/fullerton-california"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

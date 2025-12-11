@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Escondido, California - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Escondido, California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines escondido california, vending leads escondido california, vending locations escondido california, vending opportunities escondido california",
+  "keywords": "vending machines Escondido California, vending leads Escondido California, vending locations Escondido California, vending opportunities Escondido California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/escondido-california"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

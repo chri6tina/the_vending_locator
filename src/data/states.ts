@@ -700,7 +700,19 @@ const states: State[] = [
       { name: 'Saco', slug: 'saco-maine' },
       { name: 'Sanford', slug: 'sanford-maine' },
       { name: 'Waterville', slug: 'waterville-maine' }
-    ]
+    ,
+      { name: 'Arkansas City', slug: 'arkansas-city-kansas' },
+      { name: 'Atchison', slug: 'atchison-kansas' },
+      { name: 'Chanute', slug: 'chanute-kansas' },
+      { name: 'Coffeyville', slug: 'coffeyville-kansas' },
+      { name: 'Fort Scott', slug: 'fort-scott-kansas' },
+      { name: 'Garden City', slug: 'garden-city-kansas' },
+      { name: 'Great Bend', slug: 'great-bend-kansas' },
+      { name: 'Iola', slug: 'iola-kansas' },
+      { name: 'McPherson', slug: 'mcpherson-kansas' },
+      { name: 'Newton', slug: 'newton-kansas' },
+      { name: 'Parsons', slug: 'parsons-kansas' },
+      { name: 'Pittsburg', slug: 'pittsburg-kansas' }]
   },
   {
     name: 'Maryland',
@@ -863,7 +875,11 @@ const states: State[] = [
       { name: 'Kalispell', slug: 'kalispell-montana' },
       { name: 'Missoula', slug: 'missoula-montana' },
       { name: 'Havre', slug: 'havre-montana' }
-    ]
+    ,
+      { name: 'Jefferson City', slug: 'jefferson-city-missouri' },
+      { name: 'St. Charles', slug: 'st-charles-missouri' },
+      { name: 'St. Joseph', slug: 'st-joseph-missouri' },
+      { name: 'St. Peters', slug: 'st-peters-missouri' }]
   },
   {
     name: 'Nebraska',

@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Santa Maria, California - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Santa Maria, California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines santa maria california, vending leads santa maria california, vending locations santa maria california, vending opportunities santa maria california",
+  "keywords": "vending machines Santa Maria California, vending leads Santa Maria California, vending locations Santa Maria California, vending opportunities Santa Maria California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/santa-maria-california"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

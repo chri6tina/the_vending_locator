@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Concord, California - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Concord, California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines concord california, vending leads concord california, vending locations concord california, vending opportunities concord california",
+  "keywords": "vending machines Concord California, vending leads Concord California, vending locations Concord California, vending opportunities Concord California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/concord-california"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

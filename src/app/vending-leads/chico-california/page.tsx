@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Chico, California - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Chico, California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines chico california, vending leads chico california, vending locations chico california, vending opportunities chico california",
+  "keywords": "vending machines Chico California, vending leads Chico California, vending locations Chico California, vending opportunities Chico California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/chico-california"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

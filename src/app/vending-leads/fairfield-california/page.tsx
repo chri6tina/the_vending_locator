@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Fairfield, California - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Fairfield, California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines fairfield california, vending leads fairfield california, vending locations fairfield california, vending opportunities fairfield california",
+  "keywords": "vending machines Fairfield California, vending leads Fairfield California, vending locations Fairfield California, vending opportunities Fairfield California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/fairfield-california"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

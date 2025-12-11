@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Dodge City, Kansas - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Dodge City, Kansas. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines dodge city kansas, vending leads dodge city kansas, vending locations dodge city kansas, vending opportunities dodge city kansas",
+  "keywords": "vending machines Dodge City Kansas, vending leads Dodge City Kansas, vending locations Dodge City Kansas, vending opportunities Dodge City Kansas",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/dodge-city-kansas"
   },
