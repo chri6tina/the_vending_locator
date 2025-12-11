@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Fontana, California - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Fontana, California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines fontana california, vending leads fontana california, vending locations fontana california, vending opportunities fontana california",
+  "keywords": "vending machines Fontana California, vending leads Fontana California, vending locations Fontana California, vending opportunities Fontana California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/fontana-california"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

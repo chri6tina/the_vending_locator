@@ -64,3 +64,5 @@ console.log(`node scripts/create_specific_city_pages.js ${slugs}`);
 // Save final list
 fs.writeFileSync('100_cities_final_list.json', JSON.stringify({ cities: finalCities, byState }, null, 2));
 
+
+

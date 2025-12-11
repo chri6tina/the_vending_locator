@@ -50,3 +50,5 @@ console.log(`node scripts/create_specific_city_pages.js ${slugs}`);
 fs.writeFileSync('final_100_cities.json', JSON.stringify({ cities: finalCities, count: finalCities.length }, null, 2));
 console.log(`\n✅ Saved to final_100_cities.json`);
 
+
+

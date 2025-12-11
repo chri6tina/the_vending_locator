@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CpuChipIcon, HeartIcon, ShoppingBagIcon, TruckIcon, BuildingLibraryIcon, CurrencyDollarIcon, SparklesIcon } from '@heroicons/react/24/solid'
+import states from '@/data/states'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
@@ -18,24 +19,24 @@ export default function HuntingtonBeachCaliforniaVendingLeadsPage() {
   
   // City-specific data
   const cityData = {
-  'name': 'Huntington Beach',
-  'state': 'California',
-  'population': '200K+',
-  'businesses': '15K+',
-  'industries': '12-18',
-  'verifiedLocations': '200+',
-  'rating': '4.8/5',
-  'description': 'Surf City USA with vibrant tourism and business economy'
-};
+    'name': 'Huntington Beach',
+    'state': 'California',
+    'population': '198K+',
+    'businesses': '11K-16K',
+    'industries': '10-14',
+    'verifiedLocations': '240-410',
+    'rating': '4.7/5',
+    'description': 'Beach city with tourism, aerospace, and retail sectors'
+  };
   
   // Active users counter
-  const [activeUsers, setActiveUsers] = useState(28)
+  const [activeUsers, setActiveUsers] = useState(25)
   const [currentUserIndex, setCurrentUserIndex] = useState(0)
   const [usedNames, setUsedNames] = useState(new Set())
 
   // User names for active users counter
   const [userNames, setUserNames] = useState([
-    'Mike from Huntington Beach', 'Sarah in Surf City', 'David in Huntington Beach', 'Lisa in Huntington Beach',
+    'Mike from Huntington Beach', 'Sarah in Huntington Beach', 'David in Huntington Beach', 'Lisa in Huntington Beach',
     'Tom in Huntington Beach', 'Jennifer in Huntington Beach', 'Robert in Huntington Beach', 'Amanda in Huntington Beach',
     'Chris in Huntington Beach', 'Maria in Huntington Beach', 'James in Huntington Beach', 'Emily in Huntington Beach'
   ])
@@ -46,7 +47,7 @@ export default function HuntingtonBeachCaliforniaVendingLeadsPage() {
       setActiveUsers(prev => {
         const change = Math.floor(Math.random() * 3) - 1
         const newValue = prev + change
-        return Math.max(25, Math.min(42, newValue))
+        return Math.max(20, Math.min(35, newValue))
       })
     }, 4000);
     return () => clearInterval(interval)
@@ -76,6 +77,46 @@ export default function HuntingtonBeachCaliforniaVendingLeadsPage() {
     }, 5000);
     return () => clearInterval(interval)
   }, [userNames.length, usedNames])
+
+  // Build related California cities (for internal linking)
+  const newHampshire = states.find(s => s.slug === 'california');
+  const relatedCities = newHampshire ? newHampshire.cities.filter(c => c.slug !== 'manchester-california').slice(0, 8) : [];
+
+  // FAQ items reused for JSON-LD
+  const faqItems = [
+  {
+    q: 'What types of vending machine locations are available in Huntington Beach?',
+    a: 'Huntington Beach offers diverse vending opportunities including tourism businesses, aerospace companies, retail centers, healthcare facilities, educational institutions, and office buildings. Each location is pre-verified for optimal vending machine success.'
+  },
+  {
+    q: 'How quickly can I get vending machine leads for Huntington Beach?',
+    a: 'Our Huntington Beach vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
+  },
+  {
+    q: 'What makes Huntington Beach a good market for vending machines?',
+    a: 'Huntington Beach features a thriving business community with diverse industries including tourism, aerospace, and retail. The city's business density and beach location create ideal conditions for vending machine success.'
+  },
+  {
+    q: 'Do you provide ongoing support for Huntington Beach locations?',
+    a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Huntington Beach.'
+  },
+  {
+    q: 'What industries in Huntington Beach are best for vending machines?',
+    a: 'Tourism businesses, aerospace companies, retail centers, healthcare facilities, and educational institutions in Huntington Beach show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
+  },
+  {
+    q: 'How do you verify the quality of Huntington Beach vending locations?',
+    a: 'We conduct thorough research on each Huntington Beach location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
+  },
+  {
+    q: 'Can I get customized vending leads for specific areas of Huntington Beach?',
+    a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or beach areas within Huntington Beach including downtown, beachfront, and business parks based on your preferences and target market requirements.'
+  },
+  {
+    q: 'What's the typical ROI for vending machines in Huntington Beach?',
+    a: 'Vending machines in Huntington Beach typically show strong ROI due to the city's business density and tourism economy. Our research shows average payback periods of 10-15 months for well-placed machines.'
+  }
+];
 
   return (
     <>
@@ -119,8 +160,7 @@ export default function HuntingtonBeachCaliforniaVendingLeadsPage() {
                   <span className="text-sm font-medium text-chocolate">
                     <span className="font-bold text-coral">{activeUsers}</span> people are choosing plans right now
                   </span>
-                </div>
-              </motion.div>
+                </div></motion.div>
 
               {/* Main Headline */}
               <motion.h1 
@@ -140,7 +180,7 @@ export default function HuntingtonBeachCaliforniaVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Discover pre-qualified vending opportunities in Huntington Beach's growing economy, featuring business districts, commercial centers, and community facilities with consistent foot traffic.
+                Get comprehensive vending leads for Huntington Beach's thriving California market, combining local businesses, healthcare systems, and educational facilities for reliable vending machine placement.
               </motion.p>
 
               {/* Trust Signals */}
@@ -159,7 +199,7 @@ export default function HuntingtonBeachCaliforniaVendingLeadsPage() {
                 <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
                   <div className="flex items-center gap-3">
                     <StarIcon className="h-5 w-5 text-yellow-500" />
-                    <span className="text-sm font-medium text-chocolate">4.8/5 Rating</span>
+                    <span className="text-sm font-medium text-chocolate">4.7/5 Rating</span>
                   </div>
                 </div>
                 <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
@@ -197,7 +237,7 @@ export default function HuntingtonBeachCaliforniaVendingLeadsPage() {
 
               </motion.div>
 
-              {/* Social Proof Stats */}
+{/* Social Proof Stats */}
               <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -224,6 +264,8 @@ export default function HuntingtonBeachCaliforniaVendingLeadsPage() {
             </div>
           </div>
         </section>
+
+        
 
         {/* Pricing Section */}
         <section id="pricing" className="py-16 bg-warm-white">
@@ -279,7 +321,7 @@ export default function HuntingtonBeachCaliforniaVendingLeadsPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               
               <motion.div
-                key="Tourism"
+                key="Healthcare"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0 }}
@@ -287,29 +329,27 @@ export default function HuntingtonBeachCaliforniaVendingLeadsPage() {
                 className="bg-blue-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
                 <div className="text-blue-600 mb-4">
-                  <SparklesIcon className="w-12 h-12" />
+                  <HeartIcon className="w-12 h-12" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Tourism</h3>
-                <p className="text-stone leading-relaxed">Beach tourism, hotels, restaurants, and entertainment venues providing high foot traffic and excellent vending opportunities.</p>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
+                <p className="text-stone leading-relaxed">Huntington Beach's healthcare sector includes major hospitals, specialty clinics, and medical offices that generate consistent visitor and employee traffic, ideal for vending machine placement.</p>
               </motion.div>
-
               <motion.div
-                key="Healthcare"
+                key="Education"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.1 }}
                 viewport={{ once: true }}
-                className="bg-red-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+                className="bg-green-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
-                <div className="text-red-600 mb-4">
-                  <HeartIcon className="w-12 h-12" />
+                <div className="text-green-600 mb-4">
+                  <AcademicCapIcon className="w-12 h-12" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Medical centers and healthcare facilities throughout Huntington Beach offer excellent vending placement opportunities, with high-traffic areas including waiting rooms, cafeterias, and employee break areas.</p>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
+                <p className="text-stone leading-relaxed">Educational facilities throughout Huntington Beach serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services.</p>
               </motion.div>
-
               <motion.div
-                key="Education"
+                key="Manufacturing"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
@@ -317,17 +357,16 @@ export default function HuntingtonBeachCaliforniaVendingLeadsPage() {
                 className="bg-purple-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
                 <div className="text-purple-600 mb-4">
-                  <AcademicCapIcon className="w-12 h-12" />
+                  <CpuChipIcon className="w-12 h-12" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Huntington Beach's education sector features schools, universities, and training facilities with captive audiences during academic hours, creating reliable vending machine placement opportunities.</p>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
+                <p className="text-stone leading-relaxed">Industrial and manufacturing operations throughout Huntington Beach employ substantial workforces with shift-based schedules, offering stable vending placement opportunities with steady traffic.</p>
               </motion.div>
-
               <motion.div
                 key="Retail"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.3 }}
+                transition={{ duration: 0.8, delay: 0.30000000000000004 }}
                 viewport={{ once: true }}
                 className="bg-orange-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
@@ -335,37 +374,35 @@ export default function HuntingtonBeachCaliforniaVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Retail establishments in Huntington Beach attract diverse customer demographics and generate steady foot traffic, providing reliable vending opportunities across various retail environments.</p>
+                <p className="text-stone leading-relaxed">Shopping centers and retail districts in Huntington Beach offer prime vending locations, with high-traffic areas including food courts, entrances, and common spaces frequented by shoppers.</p>
               </motion.div>
-
               <motion.div
-                key="Manufacturing"
+                key="Office Buildings"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
                 viewport={{ once: true }}
-                className="bg-green-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+                className="bg-indigo-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
-                <div className="text-green-600 mb-4">
+                <div className="text-indigo-600 mb-4">
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Manufacturing facilities in Huntington Beach operate around the clock with significant employee populations, providing consistent vending opportunities in break rooms and common areas.</p>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
+                <p className="text-stone leading-relaxed">Commercial office spaces in Huntington Beach offer excellent vending opportunities, with professional tenants and business operations generating consistent foot traffic throughout the workday.</p>
               </motion.div>
-
               <motion.div
-                key="Professional Services"
+                key="Transportation"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.5 }}
                 viewport={{ once: true }}
-                className="bg-teal-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+                className="bg-red-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
-                <div className="text-teal-600 mb-4">
-                  <CurrencyDollarIcon className="w-12 h-12" />
+                <div className="text-red-600 mb-4">
+                  <TruckIcon className="w-12 h-12" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Professional Services</h3>
-                <p className="text-stone leading-relaxed">Financial, legal, and consulting firms with office buildings and professional environments suitable for vending machines.</p>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
+                <p className="text-stone leading-relaxed">Airports, bus stations, and transit centers throughout Huntington Beach generate steady passenger traffic, providing excellent vending placement options in high-traffic areas frequented by travelers.</p>
               </motion.div>
             </div>
           </div>
@@ -391,7 +428,7 @@ export default function HuntingtonBeachCaliforniaVendingLeadsPage() {
               className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
             >
               <p className="text-lg text-stone leading-relaxed">
-                Huntington Beach offers strong vending opportunities through its diverse business community, combining local commerce, healthcare facilities, educational institutions, and growing commercial sectors. The city's business mix provides multiple placement options with varying traffic patterns, while Huntington Beach's economic stability supports consistent consumer demand. The city's combination of established businesses and growing sectors creates reliable vending placement opportunities.
+                Huntington Beach offers reliable vending opportunities through its thriving business community, featuring diverse industries, commercial centers, and growing economic sectors. The city's business mix provides stable placement locations with consistent traffic patterns, while Huntington Beach's economic activity supports steady consumer spending. The city's combination of established businesses and emerging sectors creates multiple vending placement strategies.
               </p>
             </motion.div>
           </div>
@@ -400,8 +437,28 @@ export default function HuntingtonBeachCaliforniaVendingLeadsPage() {
 
 
         {/* Hot Leads Section */}
-        <section className="py-16 bg-warm-white">
+        <section id="hot-leads" className="py-16 bg-warm-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
+              >
+                One-Time Location Packages for {cityDisplayName}
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-lg text-stone max-w-3xl mx-auto"
+              >
+                Get immediate access to qualified vending machine locations without monthly commitments.
+              </motion.p>
+            </div>
             <HotLeads />
           </div>
         </section>
@@ -409,111 +466,122 @@ export default function HuntingtonBeachCaliforniaVendingLeadsPage() {
         {/* Vending Course Section */}
         <section className="py-16 bg-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
+              >
+                Learn the Vending Machine Business
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-lg text-stone max-w-3xl mx-auto"
+              >
+                Master the fundamentals of vending machine operations and maximize your success in {cityDisplayName}.
+              </motion.p>
+            </div>
             <VendingCourse />
           </div>
         </section>
 
         {/* FAQ Section */}
-        <section className="py-16 bg-warm-white">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section id="faq" className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-charcoal mb-4">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
+              >
                 Frequently Asked Questions
-              </h2>
-              <p className="text-lg text-stone">
-                Everything you need to know about vending machine leads in {cityDisplayName}, {stateDisplayName}.
-              </p>
+              </motion.h2>
+              <motion.p 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-lg text-chocolate/70 leading-relaxed"
+              >
+                Everything you need to know about vending machine opportunities in {cityDisplayName}.
+              </motion.p>
             </div>
             
-            <div className="space-y-4">
-              {[
-                {
-                  question: "What types of vending machine locations are available in Huntington Beach?",
-                  answer: "Huntington Beach offers diverse vending opportunities including tourism venues, healthcare facilities, educational institutions, retail locations, manufacturing companies, and professional service firms. Each location is pre-qualified for optimal vending machine placement."
-                },
-                {
-                  question: "How quickly can I get vending machine leads for Huntington Beach?",
-                  answer: "Our Huntington Beach vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry."
-                },
-                {
-                  question: "What makes Huntington Beach a good market for vending machines?",
-                  answer: "Huntington Beach features a strong tourism sector, major healthcare presence, growing educational institutions, and diverse business community. The city's stable economy and consistent employment create ideal conditions for vending machine success."
-                },
-                {
-                  question: "Do you provide ongoing support for Huntington Beach locations?",
-                  answer: "Yes, we offer comprehensive support including location monitoring, performance analytics, and business development assistance to ensure your vending machines thrive in Huntington Beach."
-                },
-                {
-                  question: "What industries in Huntington Beach are best for vending machines?",
-                  answer: "Tourism operations, healthcare centers, educational institutions, retail locations, and manufacturing companies in Huntington Beach show the highest potential for vending machine success due to consistent employee traffic and captive audiences."
-                },
-                {
-                  question: "How do you verify the quality of Huntington Beach vending locations?",
-                  answer: "We conduct thorough research on each Huntington Beach location including business verification, employee count validation, industry research, and traffic pattern analysis to ensure only high-quality opportunities are included."
-                },
-                {
-                  question: "Can I get customized vending leads for specific areas of Huntington Beach?",
-                  answer: "Absolutely! We can customize leads for specific neighborhoods, business districts, tourism areas, or industrial zones within Huntington Beach based on your preferences and target market requirements."
-                },
-                {
-                  question: "What's the typical ROI for vending machines in Huntington Beach?",
-                  answer: "Vending machines in Huntington Beach typically show strong ROI due to the city's business density and consistent employee traffic patterns. Our research shows average payback periods of 12-18 months for well-placed machines."
-                },
-                {
-                  question: "Are there any special considerations for Huntington Beach's tourism sector?",
-                  answer: "Huntington Beach's tourism sector creates unique opportunities with large visitor bases, seasonal variations, and captive audiences. Tourism venues often provide excellent vending machine placement opportunities due to consistent traffic."
-                },
-                {
-                  question: "How does Huntington Beach's location in Orange County affect vending opportunities?",
-                  answer: "Huntington Beach's location in Orange County provides access to a large tourism workforce while offering strategic business access. The city's diverse economy and consistent employment create excellent vending machine opportunities."
-                },
-                {
-                  question: "What types of vending machines work best in Huntington Beach?",
-                  answer: "Beverage machines, snack machines, and healthy food options perform well in Huntington Beach's healthcare, education, and tourism sectors. Manufacturing and retail locations benefit from beverage and snack machines for employee and customer convenience."
-                },
-                {
-                  question: "Do you offer financing options for Huntington Beach vending machine placements?",
-                  answer: "Yes, we work with financing partners to help you secure the equipment and capital needed to expand your vending machine business in Huntington Beach."
-                },
-                {
-                  question: "How do you handle seasonal variations in Huntington Beach's industries?",
-                  answer: "We analyze seasonal patterns in Huntington Beach's various industries including tourism, retail, and education and adjust our recommendations accordingly to ensure consistent vending machine performance throughout the year."
-                },
-                {
-                  question: "What makes Huntington Beach different from other California cities for vending?",
-                  answer: "Huntington Beach offers a unique combination of tourism hub status, major healthcare presence, strategic Orange County location, and diverse industries that creates exceptional vending machine opportunities not found in other California cities."
-                },
-                {
-                  question: "Can you help with vending machine maintenance in Huntington Beach?",
-                  answer: "Yes, we partner with local maintenance providers and can connect you with reliable service technicians to keep your Huntington Beach vending machines operating at peak performance."
-                }
-              ].map((faq, index) => (
+            <div className="space-y-6">
+              {faqItems.map((item, idx) => (
                 <motion.div
-                  key={index}
+                  key={idx}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, delay: index * 0.1 }}
+                  transition={{ duration: 0.8, delay: idx * 0.1 }}
                   viewport={{ once: true }}
-                  className="bg-white rounded-lg shadow-sm border border-gray-200"
+                  className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
                 >
-                  <div className="px-6 py-4">
-                    <h3 className="text-lg font-semibold text-charcoal mb-3">
-                      {faq.question}
-                    </h3>
-                    <p className="text-stone leading-relaxed">
-                      {faq.answer}
-                    </p>
-                  </div>
+                  <h3 className="text-lg font-semibold text-charcoal mb-3">{item.q}</h3>
+                  <p className="text-stone leading-relaxed">{item.a}</p>
                 </motion.div>
               ))}
             </div>
           </div>
         </section>
 
-        <Footer />
+        {/* More cities in California */}
+        {relatedCities.length > 0 && (
+          <section className="py-12 bg-white border-t border-gray-200">
+            <div className="mx-auto max-w-7xl px-6">
+              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in California</h2>
+              <div className="flex flex-wrap gap-3">
+                {relatedCities.map(city => (
+                  <Link key={city.slug} href={`/vending-leads/${city.slug}`} className="px-3 py-2 rounded-lg border border-gray-200 bg-cream/60 text-chocolate hover:text-navy">
+                    Vending Leads in {city.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
       </div>
+      
+      <Footer />
+      <ZipCodeModalWrapper />
+      {/* JSON-LD: Breadcrumbs and FAQ */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
+              { '@type': 'ListItem', position: 3, name: 'California', item: 'https://www.thevendinglocator.com/vending-leads/california' },
+              { '@type': 'ListItem', position: 4, name: 'Huntington Beach', item: 'https://www.thevendinglocator.com/vending-leads/manchester-california' }
+            ]
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: faqItems.map(i => ({
+              '@type': 'Question',
+              name: i.q,
+              acceptedAnswer: { '@type': 'Answer', text: i.a }
+            }))
+          })
+        }}
+      />
     </>
   )
 }
-
-

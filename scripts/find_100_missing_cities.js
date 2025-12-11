@@ -662,3 +662,5 @@ if (displayCities.length > 0) {
   console.log(`\n✅ All cities in the candidate list already exist!`);
 }
 
+
+

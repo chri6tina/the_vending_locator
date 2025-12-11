@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Moreno Valley, California - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Moreno Valley, California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines moreno valley california, vending leads moreno valley california, vending locations moreno valley california, vending opportunities moreno valley california",
+  "keywords": "vending machines Moreno Valley California, vending leads Moreno Valley California, vending locations Moreno Valley California, vending opportunities Moreno Valley California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/moreno-valley-california"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

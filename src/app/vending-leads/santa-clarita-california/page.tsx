@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Santa Clarita, California - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Santa Clarita, California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines santa clarita california, vending leads santa clarita california, vending locations santa clarita california, vending opportunities santa clarita california",
+  "keywords": "vending machines Santa Clarita California, vending leads Santa Clarita California, vending locations Santa Clarita California, vending opportunities Santa Clarita California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/santa-clarita-california"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

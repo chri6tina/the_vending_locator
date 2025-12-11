@@ -1,9 +1,10 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, AcademicCapIcon, TruckIcon, CurrencyDollarIcon, SparklesIcon } from '@heroicons/react/24/solid'
+import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CpuChipIcon, HeartIcon, ShoppingBagIcon, TruckIcon, BuildingLibraryIcon, CurrencyDollarIcon, SparklesIcon } from '@heroicons/react/24/solid'
+import states from '@/data/states'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
@@ -12,88 +13,282 @@ import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
 export default function SanBernardinoCaliforniaVendingLeadsPage() {
-  const cityDisplayName = 'San Bernardino'
-  const stateDisplayName = 'California'
-
+  // City and state display names
+  const cityDisplayName = 'San Bernardino';
+  const stateDisplayName = 'California';
+  
+  // City-specific data
   const cityData = {
-    population: '220,000+',
-    businesses: '8,000+',
-    industries: '10+',
-    verifiedLocations: '180-300'
-  }
+    'name': 'San Bernardino',
+    'state': 'California',
+    'population': '222K+',
+    'businesses': '12K-18K',
+    'industries': '10-14',
+    'verifiedLocations': '270-460',
+    'rating': '4.7/5',
+    'description': 'Inland Empire city with logistics, healthcare, and government'
+  };
+  
+  // Active users counter
+  const [activeUsers, setActiveUsers] = useState(25)
+  const [currentUserIndex, setCurrentUserIndex] = useState(0)
+  const [usedNames, setUsedNames] = useState(new Set())
 
-  const [activeUsers, setActiveUsers] = useState(28)
+  // User names for active users counter
+  const [userNames, setUserNames] = useState([
+    'Mike from San Bernardino', 'Sarah in San Bernardino', 'David in San Bernardino', 'Lisa in San Bernardino',
+    'Tom in San Bernardino', 'Jennifer in San Bernardino', 'Robert in San Bernardino', 'Amanda in San Bernardino',
+    'Chris in San Bernardino', 'Maria in San Bernardino', 'James in San Bernardino', 'Emily in San Bernardino'
+  ])
+
+  // Active users counter effect
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveUsers(prev => {
         const change = Math.floor(Math.random() * 3) - 1
-        const next = prev + change
-        return Math.max(20, Math.min(40, next))
+        const newValue = prev + change
+        return Math.max(20, Math.min(35, newValue))
       })
-    }, 4000)
+    }, 4000);
     return () => clearInterval(interval)
   }, [])
+
+  // Smart rotation of user names
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentUserIndex(prev => {
+        if (usedNames.size > userNames.length * 0.8) {
+          setUsedNames(new Set())
+        }
+        let attempts = 0
+        let nextIndex = prev
+        while (attempts < 50) {
+          nextIndex = (nextIndex + 1) % userNames.length
+          if (!usedNames.has(nextIndex)) {
+            setUsedNames(prev => new Set([...prev, nextIndex]));
+            return nextIndex
+          }
+          attempts++
+        }
+        const randomIndex = Math.floor(Math.random() * userNames.length)
+        setUsedNames(prev => new Set([...prev, randomIndex]));
+        return randomIndex
+      })
+    }, 5000);
+    return () => clearInterval(interval)
+  }, [userNames.length, usedNames])
+
+  // Build related California cities (for internal linking)
+  const newHampshire = states.find(s => s.slug === 'california');
+  const relatedCities = newHampshire ? newHampshire.cities.filter(c => c.slug !== 'manchester-california').slice(0, 8) : [];
+
+  // FAQ items reused for JSON-LD
+  const faqItems = [
+  {
+    q: 'What types of vending machine locations are available in San Bernardino?',
+    a: 'San Bernardino offers diverse vending opportunities including logistics facilities, government offices, healthcare centers, educational institutions, retail locations, and office buildings. Each location is pre-verified for optimal vending machine success.'
+  },
+  {
+    q: 'How quickly can I get vending machine leads for San Bernardino?',
+    a: 'Our San Bernardino vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
+  },
+  {
+    q: 'What makes San Bernardino a good market for vending machines?',
+    a: 'San Bernardino features a thriving business community with diverse industries including logistics, government, and healthcare. The city's business density and central location create ideal conditions for vending machine success.'
+  },
+  {
+    q: 'Do you provide ongoing support for San Bernardino locations?',
+    a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in San Bernardino.'
+  },
+  {
+    q: 'What industries in San Bernardino are best for vending machines?',
+    a: 'Logistics facilities, government offices, healthcare centers, educational institutions, and office buildings in San Bernardino show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
+  },
+  {
+    q: 'How do you verify the quality of San Bernardino vending locations?',
+    a: 'We conduct thorough research on each San Bernardino location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
+  },
+  {
+    q: 'Can I get customized vending leads for specific areas of San Bernardino?',
+    a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within San Bernardino including downtown, logistics corridors, and university area based on your preferences and target market requirements.'
+  },
+  {
+    q: 'What's the typical ROI for vending machines in San Bernardino?',
+    a: 'Vending machines in San Bernardino typically show strong ROI due to the city's business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+  }
+];
 
   return (
     <>
       <Header />
+      
       <div className="min-h-screen bg-warm-white">
-        {/* Breadcrumb */}
+        {/* Breadcrumb Navigation */}
         <nav className="bg-white border-b border-gray-200 py-3">
           <div className="container mx-auto px-4">
             <div className="flex items-center space-x-2 text-sm text-stone">
-              <Link href="/" className="hover:text-navy">Home</Link>
+              <Link href="/" className="hover:text-navy transition-colors">
+                Home
+              </Link>
               <span>/</span>
-              <Link href="/vending-leads" className="hover:text-navy">Vending Leads</Link>
+              <Link href="/vending-leads" className="hover:text-navy transition-colors">
+                Vending Leads
+              </Link>
               <span>/</span>
-              <Link href={`/vending-leads/${stateDisplayName.toLowerCase()}`} className="hover:text-navy">{stateDisplayName}</Link>
+              <Link href={`/vending-leads/${stateDisplayName.toLowerCase().replace(/\s+/g, '-')}`} className="hover:text-navy transition-colors">
+                {stateDisplayName}
+              </Link>
               <span>/</span>
               <span className="text-charcoal font-medium">{cityDisplayName}</span>
             </div>
           </div>
         </nav>
 
-        {/* Hero */}
+        {/* Hero Section */}
         <section className="relative py-20 bg-white overflow-hidden">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto text-center">
-              <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="mt-6 sm:mt-8 p-4 bg-cream/50 backdrop-blur-sm rounded-2xl border border-gray-200 shadow-sm max-w-md mx-auto mb-6">
+              {/* Active Users Counter */}
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                className="mt-6 sm:mt-8 p-4 bg-cream/50 backdrop-blur-sm rounded-2xl border border-gray-200 shadow-sm max-w-md mx-auto mb-6"
+              >
                 <div className="flex items-center justify-center gap-3">
                   <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
                   <span className="text-sm font-medium text-chocolate">
                     <span className="font-bold text-coral">{activeUsers}</span> people are choosing plans right now
                   </span>
+                </div></motion.div>
+
+              {/* Main Headline */}
+              <motion.h1 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                className="text-4xl md:text-6xl font-playfair font-bold text-charcoal mb-6 leading-tight"
+              >
+                Vending Machine Locations in{' '}
+                <span className="text-navy">{cityDisplayName}, {stateDisplayName}</span>
+              </motion.h1>
+
+              {/* City-Specific Value Proposition */}
+              <motion.p 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+                className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
+              >
+                Get comprehensive vending leads for San Bernardino's thriving California market, combining local businesses, healthcare systems, and educational facilities for reliable vending machine placement.
+              </motion.p>
+
+              {/* Trust Signals */}
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.8 }}
+                className="mt-6 sm:mt-8 grid grid-cols-2 gap-4 max-w-md mx-auto mb-8"
+              >
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <CheckBadgeIcon className="h-5 w-5 text-green-600" />
+                    <span className="text-sm font-medium text-chocolate">Verified Locations</span>
+                  </div>
+                </div>
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <StarIcon className="h-5 w-5 text-yellow-500" />
+                    <span className="text-sm font-medium text-chocolate">4.7/5 Rating</span>
+                  </div>
+                </div>
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <ShieldCheckIcon className="h-5 w-5 text-blue-600" />
+                    <span className="text-sm font-medium text-chocolate">Secure & Reliable</span>
+                  </div>
+                </div>
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <ClockIcon className="h-5 w-5 text-purple-600" />
+                    <span className="text-sm font-medium text-chocolate">Quality Research</span>
+                  </div>
                 </div>
               </motion.div>
 
-              <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.4 }} className="text-4xl md:text-6xl font-playfair font-bold text-charcoal mb-6 leading-tight">
-                Vending Machine Locations in <span className="text-navy">{cityDisplayName}, {stateDisplayName}</span>
-              </motion.h1>
-              <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.6 }} className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed">
-                Get pre-qualified vending machine locations across San Bernardino’s logistics, healthcare, office and retail corridors.
-              </motion.p>
+              {/* CTA Buttons */}
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 1.0 }}
+                className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 mb-8"
+              >
+                <button 
+                    onClick={() => {
+                      const pricingSection = document.getElementById('pricing')
+                      if (pricingSection) {
+                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                      }
+                    }}
+                    className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
+                >
+                    Get Started
+                  </button>
 
-              <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 1.0 }} className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
-                <button onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })} className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors">Get Started</button>
-                
               </motion.div>
 
-              <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 1.2 }} className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
-                <div className="text-center"><div className="text-2xl font-bold text-navy">{cityData.population}</div><div className="text-sm text-stone">Population</div></div>
-                <div className="text-center"><div className="text-2xl font-bold text-navy">{cityData.businesses}</div><div className="text-sm text-stone">Businesses</div></div>
-                <div className="text-center"><div className="text-2xl font-bold text-navy">{cityData.industries}</div><div className="text-sm text-stone">Industries</div></div>
-                <div className="text-center"><div className="text-2xl font-bold text-navy">{cityData.verifiedLocations}</div><div className="text-sm text-stone">Verified Locations</div></div>
+{/* Social Proof Stats */}
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 1.2 }}
+                className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto"
+              >
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-navy">{cityData.population}</div>
+                  <div className="text-sm text-stone">Population</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-navy">{cityData.businesses}</div>
+                  <div className="text-sm text-stone">Businesses</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-navy">{cityData.industries}</div>
+                  <div className="text-sm text-stone">Industries</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-navy">{cityData.verifiedLocations}</div>
+                  <div className="text-sm text-stone">Verified Locations</div>
+                </div>
               </motion.div>
             </div>
           </div>
         </section>
 
-        {/* Pricing */}
+        
+
+        {/* Pricing Section */}
         <section id="pricing" className="py-16 bg-warm-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }} className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4">Get Access to Qualified Vending Machine Locations in {cityDisplayName}</motion.h2>
-              <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.2 }} viewport={{ once: true }} className="text-lg text-stone max-w-3xl mx-auto">Choose the perfect plan for your vending machine business needs and start accessing qualified locations today.</motion.p>
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
+              >
+                Get Access to Qualified Vending Machine Locations in {cityDisplayName}
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-lg text-stone max-w-3xl mx-auto"
+              >
+                Choose the perfect plan for your vending machine business needs and start accessing qualified locations today.
+              </motion.p>
             </div>
             <PricingTable />
           </div>
@@ -103,67 +298,232 @@ export default function SanBernardinoCaliforniaVendingLeadsPage() {
         <section className="py-16 bg-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }} className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4">Business Landscape in {cityDisplayName}</motion.h2>
-              <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.2 }} viewport={{ once: true }} className="text-lg text-stone max-w-3xl mx-auto">Discover the diverse industries and business opportunities that make {cityDisplayName} an ideal market for vending machines.</motion.p>
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
+              >
+                Business Landscape in {cityDisplayName}
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-lg text-stone max-w-3xl mx-auto"
+              >
+                Discover the diverse industries and business opportunities that make {cityDisplayName} an ideal market for vending machines.
+              </motion.p>
             </div>
+            
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }} className="bg-green-50 p-6 rounded-lg border border-gray-100 shadow-sm hover:shadow-md">
-                <div className="text-green-600 mb-4"><ShieldCheckIcon className="w-12 h-12" /></div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare & Clinics</h3>
-                <p className="text-stone leading-relaxed">Regional hospitals and outpatient clinics with steady patient and staff traffic support strong vending performance.</p>
+              
+              <motion.div
+                key="Healthcare"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0 }}
+                viewport={{ once: true }}
+                className="bg-blue-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-blue-600 mb-4">
+                  <HeartIcon className="w-12 h-12" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
+                <p className="text-stone leading-relaxed">San Bernardino's healthcare sector includes major hospitals, specialty clinics, and medical offices that generate consistent visitor and employee traffic, ideal for vending machine placement.</p>
               </motion.div>
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.1 }} viewport={{ once: true }} className="bg-orange-50 p-6 rounded-lg border border-gray-100 shadow-sm hover:shadow-md">
-                <div className="text-orange-600 mb-4"><TruckIcon className="w-12 h-12" /></div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Logistics & Distribution</h3>
-                <p className="text-stone leading-relaxed">I-10/I-215 corridors and warehouse parks create shift-based demand and consistent vending sales.</p>
-              </motion.div>
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.2 }} viewport={{ once: true }} className="bg-indigo-50 p-6 rounded-lg border border-gray-100 shadow-sm hover:shadow-md">
-                <div className="text-indigo-600 mb-4"><AcademicCapIcon className="w-12 h-12" /></div>
+              <motion.div
+                key="Education"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.1 }}
+                viewport={{ once: true }}
+                className="bg-green-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-green-600 mb-4">
+                  <AcademicCapIcon className="w-12 h-12" />
+                </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
                 <p className="text-stone leading-relaxed">Educational facilities throughout San Bernardino serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services.</p>
               </motion.div>
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.3 }} viewport={{ once: true }} className="bg-purple-50 p-6 rounded-lg border border-gray-100 shadow-sm hover:shadow-md">
-                <div className="text-purple-600 mb-4"><CurrencyDollarIcon className="w-12 h-12" /></div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Offices & Professional</h3>
-                <p className="text-stone leading-relaxed">Office corridors and civic buildings provide captive weekday audiences and steady foot traffic.</p>
+              <motion.div
+                key="Manufacturing"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="bg-purple-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-purple-600 mb-4">
+                  <CpuChipIcon className="w-12 h-12" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
+                <p className="text-stone leading-relaxed">Industrial and manufacturing operations throughout San Bernardino employ substantial workforces with shift-based schedules, offering stable vending placement opportunities with steady traffic.</p>
               </motion.div>
-              <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.4 }} viewport={{ once: true }} className="bg-red-50 p-6 rounded-lg border border-gray-100 shadow-sm hover:shadow-md">
-                <div className="text-red-600 mb-4"><SparklesIcon className="w-12 h-12" /></div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Retail & Hospitality</h3>
-                <p className="text-stone leading-relaxed">Shopping centers, hotels, and attractions create high-traffic zones ideal for snack and beverage machines.</p>
+              <motion.div
+                key="Retail"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.30000000000000004 }}
+                viewport={{ once: true }}
+                className="bg-orange-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-orange-600 mb-4">
+                  <ShoppingBagIcon className="w-12 h-12" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
+                <p className="text-stone leading-relaxed">Shopping centers and retail districts in San Bernardino offer prime vending locations, with high-traffic areas including food courts, entrances, and common spaces frequented by shoppers.</p>
+              </motion.div>
+              <motion.div
+                key="Office Buildings"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                viewport={{ once: true }}
+                className="bg-indigo-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-indigo-600 mb-4">
+                  <BuildingOfficeIcon className="w-12 h-12" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
+                <p className="text-stone leading-relaxed">Commercial office spaces in San Bernardino offer excellent vending opportunities, with professional tenants and business operations generating consistent foot traffic throughout the workday.</p>
+              </motion.div>
+              <motion.div
+                key="Transportation"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.5 }}
+                viewport={{ once: true }}
+                className="bg-red-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-red-600 mb-4">
+                  <TruckIcon className="w-12 h-12" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
+                <p className="text-stone leading-relaxed">Airports, bus stations, and transit centers throughout San Bernardino generate steady passenger traffic, providing excellent vending placement options in high-traffic areas frequented by travelers.</p>
               </motion.div>
             </div>
           </div>
+        </section>        {/* Why San Bernardino? */}
+        <section className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-8">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-6"
+              >
+                Why Choose San Bernardino for Vending Machines?
+              </motion.h2>
+            </div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
+            >
+              <p className="text-lg text-stone leading-relaxed">
+                San Bernardino offers reliable vending opportunities through its thriving business community, featuring diverse industries, commercial centers, and growing economic sectors. The city's business mix provides stable placement locations with consistent traffic patterns, while San Bernardino's economic activity supports steady consumer spending. The city's combination of established businesses and emerging sectors creates multiple vending placement strategies.
+              </p>
+            </motion.div>
+          </div>
         </section>
 
-        {/* Hot Leads */}
-        <HotLeads />
 
-        {/* Course */}
+
+        {/* Hot Leads Section */}
+        <section id="hot-leads" className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
+              >
+                One-Time Location Packages for {cityDisplayName}
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-lg text-stone max-w-3xl mx-auto"
+              >
+                Get immediate access to qualified vending machine locations without monthly commitments.
+              </motion.p>
+            </div>
+            <HotLeads />
+          </div>
+        </section>
+
+        {/* Vending Course Section */}
         <section className="py-16 bg-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }} className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4">Learn the Vending Machine Business</motion.h2>
-              <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.2 }} viewport={{ once: true }} className="text-lg text-stone max-w-3xl mx-auto">Master the fundamentals of vending machine operations and maximize your success in {cityDisplayName}.</motion.p>
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
+              >
+                Learn the Vending Machine Business
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-lg text-stone max-w-3xl mx-auto"
+              >
+                Master the fundamentals of vending machine operations and maximize your success in {cityDisplayName}.
+              </motion.p>
             </div>
             <VendingCourse />
           </div>
         </section>
 
-        {/* FAQ */}
-        <section className="py-16 bg-warm-white">
+        {/* FAQ Section */}
+        <section id="faq" className="py-16 bg-warm-white">
           <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <motion.h2 initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} viewport={{ once: true }} className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4">Frequently Asked Questions</motion.h2>
-              <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.2 }} viewport={{ once: true }} className="text-lg text-chocolate/70 leading-relaxed">Everything you need to know about vending machine opportunities in {cityDisplayName}.</motion.p>
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
+              >
+                Frequently Asked Questions
+              </motion.h2>
+              <motion.p 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-lg text-chocolate/70 leading-relaxed"
+              >
+                Everything you need to know about vending machine opportunities in {cityDisplayName}.
+              </motion.p>
             </div>
+            
             <div className="space-y-6">
-              {[
-                { q: 'What makes San Bernardino a good market?', a: 'Logistics hubs, education, healthcare, and retail corridors create steady demand and workforce foot traffic.' },
-                { q: 'How fast is delivery?', a: 'We typically deliver within 3–5 business days with verified business details and contacts.' },
-                { q: 'Which sites perform best?', a: 'Warehouses, clinics, office corridors, hotels, and shopping centers are strong starting points.' }
-              ].map((item, idx) => (
-                <motion.div key={idx} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: idx * 0.1 }} viewport={{ once: true }} className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+              {faqItems.map((item, idx) => (
+                <motion.div
+                  key={idx}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: idx * 0.1 }}
+                  viewport={{ once: true }}
+                  className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+                >
                   <h3 className="text-lg font-semibold text-charcoal mb-3">{item.q}</h3>
                   <p className="text-stone leading-relaxed">{item.a}</p>
                 </motion.div>
@@ -171,11 +531,57 @@ export default function SanBernardinoCaliforniaVendingLeadsPage() {
             </div>
           </div>
         </section>
+
+        {/* More cities in California */}
+        {relatedCities.length > 0 && (
+          <section className="py-12 bg-white border-t border-gray-200">
+            <div className="mx-auto max-w-7xl px-6">
+              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in California</h2>
+              <div className="flex flex-wrap gap-3">
+                {relatedCities.map(city => (
+                  <Link key={city.slug} href={`/vending-leads/${city.slug}`} className="px-3 py-2 rounded-lg border border-gray-200 bg-cream/60 text-chocolate hover:text-navy">
+                    Vending Leads in {city.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
       </div>
+      
       <Footer />
       <ZipCodeModalWrapper />
+      {/* JSON-LD: Breadcrumbs and FAQ */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
+              { '@type': 'ListItem', position: 3, name: 'California', item: 'https://www.thevendinglocator.com/vending-leads/california' },
+              { '@type': 'ListItem', position: 4, name: 'San Bernardino', item: 'https://www.thevendinglocator.com/vending-leads/manchester-california' }
+            ]
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: faqItems.map(i => ({
+              '@type': 'Question',
+              name: i.q,
+              acceptedAnswer: { '@type': 'Answer', text: i.a }
+            }))
+          })
+        }}
+      />
     </>
   )
 }
-
-

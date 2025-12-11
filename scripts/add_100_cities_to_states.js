@@ -80,3 +80,5 @@ Object.keys(byState).sort().forEach(state => {
 fs.writeFileSync('./src/data/states.ts', statesContent);
 console.log(`\n✅ Updated states.ts with all ${allCities.length} cities`);
 
+
+

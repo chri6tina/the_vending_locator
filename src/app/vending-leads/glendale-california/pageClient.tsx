@@ -1,262 +1,587 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import { motion } from 'framer-motion'
+import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CpuChipIcon, HeartIcon, ShoppingBagIcon, TruckIcon, BuildingLibraryIcon, CurrencyDollarIcon, SparklesIcon } from '@heroicons/react/24/solid'
+import states from '@/data/states'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
+import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function GlendaleCaliforniaPage() {
-  const [openFaq, setOpenFaq] = useState<number | null>(null)
-
+export default function GlendaleCaliforniaVendingLeadsPage() {
+  // City and state display names
+  const cityDisplayName = 'Glendale';
+  const stateDisplayName = 'California';
+  
+  // City-specific data
   const cityData = {
-    name: 'Glendale',
-    state: 'California',
-    population: '200,000+',
-    businesses: '30,000+',
-    description: 'LA metro area with healthcare and retail hub',
-    majorIndustries: ['Healthcare', 'Retail', 'Entertainment', 'Manufacturing', 'Education', 'Professional Services', 'Technology'],
-    topBusinesses: ['Glendale Memorial Hospital', 'Dignity Health Glendale', 'Glendale Community College', 'Glendale Unified School District', 'The Americana at Brand', 'Glendale Galleria', 'DreamWorks Animation'],
-    vendingOpportunities: '120+',
-    businessCount: '180+'
-  }
+    'name': 'Glendale',
+    'state': 'California',
+    'population': '196K+',
+    'businesses': '11K-16K',
+    'industries': '10-14',
+    'verifiedLocations': '240-410',
+    'rating': '4.7/5',
+    'description': 'Los Angeles suburb with entertainment, retail, and healthcare'
+  };
+  
+  // Active users counter
+  const [activeUsers, setActiveUsers] = useState(25)
+  const [currentUserIndex, setCurrentUserIndex] = useState(0)
+  const [usedNames, setUsedNames] = useState(new Set())
 
-  const toggleFaq = (index: number) => {
-    setOpenFaq(openFaq === index ? null : index)
-  }
+  // User names for active users counter
+  const [userNames, setUserNames] = useState([
+    'Mike from Glendale', 'Sarah in Glendale', 'David in Glendale', 'Lisa in Glendale',
+    'Tom in Glendale', 'Jennifer in Glendale', 'Robert in Glendale', 'Amanda in Glendale',
+    'Chris in Glendale', 'Maria in Glendale', 'James in Glendale', 'Emily in Glendale'
+  ])
 
-  const scrollToPricing = () => {
-    document.getElementById('pricing-section')?.scrollIntoView({ behavior: 'smooth' })
+  // Active users counter effect
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveUsers(prev => {
+        const change = Math.floor(Math.random() * 3) - 1
+        const newValue = prev + change
+        return Math.max(20, Math.min(35, newValue))
+      })
+    }, 4000);
+    return () => clearInterval(interval)
+  }, [])
+
+  // Smart rotation of user names
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentUserIndex(prev => {
+        if (usedNames.size > userNames.length * 0.8) {
+          setUsedNames(new Set())
+        }
+        let attempts = 0
+        let nextIndex = prev
+        while (attempts < 50) {
+          nextIndex = (nextIndex + 1) % userNames.length
+          if (!usedNames.has(nextIndex)) {
+            setUsedNames(prev => new Set([...prev, nextIndex]));
+            return nextIndex
+          }
+          attempts++
+        }
+        const randomIndex = Math.floor(Math.random() * userNames.length)
+        setUsedNames(prev => new Set([...prev, randomIndex]));
+        return randomIndex
+      })
+    }, 5000);
+    return () => clearInterval(interval)
+  }, [userNames.length, usedNames])
+
+  // Build related California cities (for internal linking)
+  const newHampshire = states.find(s => s.slug === 'california');
+  const relatedCities = newHampshire ? newHampshire.cities.filter(c => c.slug !== 'manchester-california').slice(0, 8) : [];
+
+  // FAQ items reused for JSON-LD
+  const faqItems = [
+  {
+    q: 'What types of vending machine locations are available in Glendale?',
+    a: 'Glendale offers diverse vending opportunities including entertainment businesses, retail centers, healthcare facilities, educational institutions, office buildings, and manufacturing facilities. Each location is pre-verified for optimal vending machine success.'
+  },
+  {
+    q: 'How quickly can I get vending machine leads for Glendale?',
+    a: 'Our Glendale vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
+  },
+  {
+    q: 'What makes Glendale a good market for vending machines?',
+    a: 'Glendale features a thriving business community with diverse industries including entertainment, retail, and healthcare. The city's business density and Los Angeles metro location create ideal conditions for vending machine success.'
+  },
+  {
+    q: 'Do you provide ongoing support for Glendale locations?',
+    a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Glendale.'
+  },
+  {
+    q: 'What industries in Glendale are best for vending machines?',
+    a: 'Entertainment businesses, retail centers, healthcare facilities, educational institutions, and office buildings in Glendale show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
+  },
+  {
+    q: 'How do you verify the quality of Glendale vending locations?',
+    a: 'We conduct thorough research on each Glendale location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
+  },
+  {
+    q: 'Can I get customized vending leads for specific areas of Glendale?',
+    a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or retail areas within Glendale including downtown, Americana at Brand, and business parks based on your preferences and target market requirements.'
+  },
+  {
+    q: 'What's the typical ROI for vending machines in Glendale?',
+    a: 'Vending machines in Glendale typically show strong ROI due to the city's business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
   }
+];
 
   return (
     <>
-      <ZipCodeModalWrapper />
-      <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
-        <Header />
-        
-        {/* Breadcrumbs */}
-        <nav className="bg-white shadow-sm border-b">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex items-center space-x-2 py-3 text-sm text-gray-600">
-              <Link href="/" className="hover:text-blue-600">Home</Link>
+      <Header />
+      
+      <div className="min-h-screen bg-warm-white">
+        {/* Breadcrumb Navigation */}
+        <nav className="bg-white border-b border-gray-200 py-3">
+          <div className="container mx-auto px-4">
+            <div className="flex items-center space-x-2 text-sm text-stone">
+              <Link href="/" className="hover:text-navy transition-colors">
+                Home
+              </Link>
               <span>/</span>
-              <Link href="/vending-leads" className="hover:text-blue-600">Vending Leads</Link>
+              <Link href="/vending-leads" className="hover:text-navy transition-colors">
+                Vending Leads
+              </Link>
               <span>/</span>
-              <Link href="/vending-leads/california" className="hover:text-blue-600">California</Link>
+              <Link href={`/vending-leads/${stateDisplayName.toLowerCase().replace(/\s+/g, '-')}`} className="hover:text-navy transition-colors">
+                {stateDisplayName}
+              </Link>
               <span>/</span>
-              <span className="text-gray-900 font-medium">Glendale</span>
+              <span className="text-charcoal font-medium">{cityDisplayName}</span>
             </div>
           </div>
         </nav>
 
         {/* Hero Section */}
-        <section className="relative bg-gradient-to-r from-blue-600 via-blue-700 to-indigo-800 text-white py-20">
-          <div className="absolute inset-0 bg-black opacity-20"></div>
-          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Vending Machine Leads in Glendale, California
-            </h1>
-            <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto">
-              Access {cityData.vendingOpportunities} pre-qualified vending machine locations in Glendale's thriving healthcare, retail, and entertainment sectors.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button
-                onClick={scrollToPricing}
-                className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+        <section className="relative py-20 bg-white overflow-hidden">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto text-center">
+              {/* Active Users Counter */}
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                className="mt-6 sm:mt-8 p-4 bg-cream/50 backdrop-blur-sm rounded-2xl border border-gray-200 shadow-sm max-w-md mx-auto mb-6"
               >
-                Get Started
-              </button>
-              
+                <div className="flex items-center justify-center gap-3">
+                  <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                  <span className="text-sm font-medium text-chocolate">
+                    <span className="font-bold text-coral">{activeUsers}</span> people are choosing plans right now
+                  </span>
+                </div></motion.div>
+
+              {/* Main Headline */}
+              <motion.h1 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                className="text-4xl md:text-6xl font-playfair font-bold text-charcoal mb-6 leading-tight"
+              >
+                Vending Machine Locations in{' '}
+                <span className="text-navy">{cityDisplayName}, {stateDisplayName}</span>
+              </motion.h1>
+
+              {/* City-Specific Value Proposition */}
+              <motion.p 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+                className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
+              >
+                Get comprehensive vending leads for Glendale's thriving California market, combining local businesses, healthcare systems, and educational facilities for reliable vending machine placement.
+              </motion.p>
+
+              {/* Trust Signals */}
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.8 }}
+                className="mt-6 sm:mt-8 grid grid-cols-2 gap-4 max-w-md mx-auto mb-8"
+              >
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <CheckBadgeIcon className="h-5 w-5 text-green-600" />
+                    <span className="text-sm font-medium text-chocolate">Verified Locations</span>
+                  </div>
+                </div>
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <StarIcon className="h-5 w-5 text-yellow-500" />
+                    <span className="text-sm font-medium text-chocolate">4.7/5 Rating</span>
+                  </div>
+                </div>
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <ShieldCheckIcon className="h-5 w-5 text-blue-600" />
+                    <span className="text-sm font-medium text-chocolate">Secure & Reliable</span>
+                  </div>
+                </div>
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <ClockIcon className="h-5 w-5 text-purple-600" />
+                    <span className="text-sm font-medium text-chocolate">Quality Research</span>
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* CTA Buttons */}
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 1.0 }}
+                className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 mb-8"
+              >
+                <button 
+                    onClick={() => {
+                      const pricingSection = document.getElementById('pricing')
+                      if (pricingSection) {
+                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                      }
+                    }}
+                    className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
+                >
+                    Get Started
+                  </button>
+
+              </motion.div>
+
+{/* Social Proof Stats */}
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 1.2 }}
+                className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto"
+              >
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-navy">{cityData.population}</div>
+                  <div className="text-sm text-stone">Population</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-navy">{cityData.businesses}</div>
+                  <div className="text-sm text-stone">Businesses</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-navy">{cityData.industries}</div>
+                  <div className="text-sm text-stone">Industries</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-navy">{cityData.verifiedLocations}</div>
+                  <div className="text-sm text-stone">Verified Locations</div>
+                </div>
+              </motion.div>
             </div>
           </div>
         </section>
 
-        {/* Business Landscape Section */}
-        <section className="py-16 bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                Glendale Business Landscape
-              </h2>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                Glendale is a major city in the Los Angeles metropolitan area with a diverse economy featuring healthcare, retail, entertainment, and professional services.
-              </p>
-            </div>
-            
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="bg-gradient-to-br from-red-50 to-pink-100 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">Healthcare Hub</h3>
-                <p className="text-gray-700">Glendale Memorial Hospital, Dignity Health Glendale, and numerous medical offices and clinics providing consistent patient and staff traffic.</p>
-              </div>
-              
-              <div className="bg-gradient-to-br from-blue-50 to-indigo-100 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">Retail & Entertainment</h3>
-                <p className="text-gray-700">The Americana at Brand, Glendale Galleria, and DreamWorks Animation creating high foot traffic and employee populations.</p>
-              </div>
-              
-              <div className="bg-gradient-to-br from-purple-50 to-violet-100 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">Education</h3>
-                <p className="text-gray-700">Glendale Community College, Glendale Unified School District, and multiple educational institutions with large student populations.</p>
-              </div>
-              
-              <div className="bg-gradient-to-br from-green-50 to-emerald-100 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">Professional Services</h3>
-                <p className="text-gray-700">Growing professional services sector with law firms, accounting offices, and consulting companies.</p>
-              </div>
-              
-              <div className="bg-gradient-to-br from-yellow-50 to-amber-100 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">Technology</h3>
-                <p className="text-gray-700">Technology companies and startups in the LA tech corridor with high employee counts and extended hours.</p>
-              </div>
-              
-              <div className="bg-gradient-to-br from-teal-50 to-cyan-100 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">Manufacturing</h3>
-                <p className="text-gray-700">Industrial facilities and manufacturing operations with large employee bases and consistent traffic patterns.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Hot Leads Section */}
-        <section id="hot-leads" className="py-16 bg-gray-50">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                Hot Vending Machine Leads in Glendale
-              </h2>
-              <p className="text-lg text-gray-600">
-                Get immediate access to high-priority vending machine locations in Glendale's top business sectors.
-              </p>
-            </div>
-            <HotLeads />
-          </div>
-        </section>
+        
 
         {/* Pricing Section */}
-        <section id="pricing-section" className="py-16 bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section id="pricing" className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                Vending Machine Lead Packages
-              </h2>
-              <p className="text-lg text-gray-600">
-                Choose the perfect package for your vending machine business expansion in Glendale.
-              </p>
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
+              >
+                Get Access to Qualified Vending Machine Locations in {cityDisplayName}
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-lg text-stone max-w-3xl mx-auto"
+              >
+                Choose the perfect plan for your vending machine business needs and start accessing qualified locations today.
+              </motion.p>
             </div>
             <PricingTable />
           </div>
         </section>
 
-        {/* FAQ Section */}
-        <section className="py-16 bg-gray-50">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Business Landscape */}
+        <section className="py-16 bg-white">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                Frequently Asked Questions
-              </h2>
-              <p className="text-lg text-gray-600">
-                Everything you need to know about vending machine leads in Glendale, California.
-              </p>
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
+              >
+                Business Landscape in {cityDisplayName}
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-lg text-stone max-w-3xl mx-auto"
+              >
+                Discover the diverse industries and business opportunities that make {cityDisplayName} an ideal market for vending machines.
+              </motion.p>
             </div>
             
-            <div className="space-y-4">
-              {[
-                {
-                  question: "What types of vending machine locations are available in Glendale?",
-                  answer: "Glendale offers diverse vending opportunities including healthcare facilities, retail centers, educational institutions, entertainment venues, manufacturing plants, and office buildings. Each location is pre-qualified for optimal vending machine placement."
-                },
-                {
-                  question: "How quickly can I get vending machine leads for Glendale?",
-                  answer: "Our Glendale vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry."
-                },
-                {
-                  question: "What makes Glendale a good market for vending machines?",
-                  answer: "Glendale features a strong healthcare sector, major retail destinations, growing entertainment industry, and stable employment. The city's location in the LA metro area and diverse industries create ideal conditions for vending machine success."
-                },
-                {
-                  question: "Do you provide ongoing support for Glendale locations?",
-                  answer: "Yes, we offer comprehensive support including location monitoring, performance analytics, and business development assistance to ensure your vending machines thrive in Glendale."
-                },
-                {
-                  question: "What industries in Glendale are best for vending machines?",
-                  answer: "Healthcare facilities, retail centers, educational institutions, entertainment venues, and office buildings in Glendale show the highest potential for vending machine success due to consistent foot traffic and captive audiences."
-                },
-                {
-                  question: "How do you verify the quality of Glendale vending locations?",
-                  answer: "We conduct thorough research on each Glendale location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included."
-                },
-                {
-                  question: "Can I get customized vending leads for specific areas of Glendale?",
-                  answer: "Absolutely! We can customize leads for specific neighborhoods, business districts, or industrial areas within Glendale based on your preferences and target market requirements."
-                },
-                {
-                  question: "What's the typical ROI for vending machines in Glendale?",
-                  answer: "Vending machines in Glendale typically show strong ROI due to the city's business density and consistent traffic patterns. Our research shows average payback periods of 12-18 months for well-placed machines."
-                },
-                {
-                  question: "Are there any special considerations for Glendale's retail sector?",
-                  answer: "Glendale's major retail destinations like The Americana and Glendale Galleria have high foot traffic but may have seasonal variations. We recommend strategic placement to maximize performance year-round."
-                },
-                {
-                  question: "How does Glendale's location in the LA metro area affect vending opportunities?",
-                  answer: "Glendale's proximity to Los Angeles provides access to a large customer base while offering more affordable business costs than downtown LA. The city's strategic location creates excellent vending machine opportunities."
-                },
-                {
-                  question: "What types of vending machines work best in Glendale?",
-                  answer: "Beverage machines, snack machines, and healthy food options perform well in Glendale's healthcare and education sectors. Retail locations benefit from beverage and snack machines for customer convenience."
-                },
-                {
-                  question: "Do you offer financing options for Glendale vending machine placements?",
-                  answer: "Yes, we work with financing partners to help you secure the equipment and capital needed to expand your vending machine business in Glendale."
-                },
-                {
-                  question: "How do you handle seasonal variations in Glendale's entertainment sector?",
-                  answer: "We analyze seasonal patterns in Glendale's entertainment and retail sectors and adjust our recommendations accordingly to ensure consistent vending machine performance throughout the year."
-                },
-                {
-                  question: "What makes Glendale different from other California cities for vending?",
-                  answer: "Glendale offers a unique combination of healthcare hub, major retail destinations, entertainment industry presence, and strategic LA metro location that creates exceptional vending machine opportunities not found in other California cities."
-                },
-                {
-                  question: "Can you help with vending machine maintenance in Glendale?",
-                  answer: "Yes, we partner with local maintenance providers and can connect you with reliable service technicians to keep your Glendale vending machines operating at peak performance."
-                }
-              ].map((faq, index) => (
-                <div key={index} className="bg-white rounded-lg shadow-sm border border-gray-200">
-                  <button
-                    className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-inset"
-                    onClick={() => toggleFaq(index)}
-                  >
-                    <span className="font-medium text-gray-900">{faq.question}</span>
-                    <span className="ml-6 flex-shrink-0">
-                      {openFaq === index ? (
-                        <svg className="h-5 w-5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
-                        </svg>
-                      ) : (
-                        <svg className="h-5 w-5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                        </svg>
-                      )}
-                    </span>
-                  </button>
-                  {openFaq === index && (
-                    <div className="px-6 pb-4">
-                      <p className="text-gray-700">{faq.answer}</p>
-                    </div>
-                  )}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              
+              <motion.div
+                key="Healthcare"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0 }}
+                viewport={{ once: true }}
+                className="bg-blue-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-blue-600 mb-4">
+                  <HeartIcon className="w-12 h-12" />
                 </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
+                <p className="text-stone leading-relaxed">Glendale's healthcare sector includes major hospitals, specialty clinics, and medical offices that generate consistent visitor and employee traffic, ideal for vending machine placement.</p>
+              </motion.div>
+              <motion.div
+                key="Education"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.1 }}
+                viewport={{ once: true }}
+                className="bg-green-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-green-600 mb-4">
+                  <AcademicCapIcon className="w-12 h-12" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
+                <p className="text-stone leading-relaxed">Educational facilities throughout Glendale serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services.</p>
+              </motion.div>
+              <motion.div
+                key="Manufacturing"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="bg-purple-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-purple-600 mb-4">
+                  <CpuChipIcon className="w-12 h-12" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
+                <p className="text-stone leading-relaxed">Industrial and manufacturing operations throughout Glendale employ substantial workforces with shift-based schedules, offering stable vending placement opportunities with steady traffic.</p>
+              </motion.div>
+              <motion.div
+                key="Retail"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.30000000000000004 }}
+                viewport={{ once: true }}
+                className="bg-orange-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-orange-600 mb-4">
+                  <ShoppingBagIcon className="w-12 h-12" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
+                <p className="text-stone leading-relaxed">Shopping centers and retail districts in Glendale offer prime vending locations, with high-traffic areas including food courts, entrances, and common spaces frequented by shoppers.</p>
+              </motion.div>
+              <motion.div
+                key="Office Buildings"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                viewport={{ once: true }}
+                className="bg-indigo-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-indigo-600 mb-4">
+                  <BuildingOfficeIcon className="w-12 h-12" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
+                <p className="text-stone leading-relaxed">Commercial office spaces in Glendale offer excellent vending opportunities, with professional tenants and business operations generating consistent foot traffic throughout the workday.</p>
+              </motion.div>
+              <motion.div
+                key="Transportation"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.5 }}
+                viewport={{ once: true }}
+                className="bg-red-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-red-600 mb-4">
+                  <TruckIcon className="w-12 h-12" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
+                <p className="text-stone leading-relaxed">Airports, bus stations, and transit centers throughout Glendale generate steady passenger traffic, providing excellent vending placement options in high-traffic areas frequented by travelers.</p>
+              </motion.div>
+            </div>
+          </div>
+        </section>        {/* Why Glendale? */}
+        <section className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-8">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-6"
+              >
+                Why Choose Glendale for Vending Machines?
+              </motion.h2>
+            </div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
+            >
+              <p className="text-lg text-stone leading-relaxed">
+                Glendale offers reliable vending opportunities through its thriving business community, featuring diverse industries, commercial centers, and growing economic sectors. The city's business mix provides stable placement locations with consistent traffic patterns, while Glendale's economic activity supports steady consumer spending. The city's combination of established businesses and emerging sectors creates multiple vending placement strategies.
+              </p>
+            </motion.div>
+          </div>
+        </section>
+
+
+
+        {/* Hot Leads Section */}
+        <section id="hot-leads" className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
+              >
+                One-Time Location Packages for {cityDisplayName}
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-lg text-stone max-w-3xl mx-auto"
+              >
+                Get immediate access to qualified vending machine locations without monthly commitments.
+              </motion.p>
+            </div>
+            <HotLeads />
+          </div>
+        </section>
+
+        {/* Vending Course Section */}
+        <section className="py-16 bg-white">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
+              >
+                Learn the Vending Machine Business
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-lg text-stone max-w-3xl mx-auto"
+              >
+                Master the fundamentals of vending machine operations and maximize your success in {cityDisplayName}.
+              </motion.p>
+            </div>
+            <VendingCourse />
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section id="faq" className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
+              >
+                Frequently Asked Questions
+              </motion.h2>
+              <motion.p 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-lg text-chocolate/70 leading-relaxed"
+              >
+                Everything you need to know about vending machine opportunities in {cityDisplayName}.
+              </motion.p>
+            </div>
+            
+            <div className="space-y-6">
+              {faqItems.map((item, idx) => (
+                <motion.div
+                  key={idx}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: idx * 0.1 }}
+                  viewport={{ once: true }}
+                  className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+                >
+                  <h3 className="text-lg font-semibold text-charcoal mb-3">{item.q}</h3>
+                  <p className="text-stone leading-relaxed">{item.a}</p>
+                </motion.div>
               ))}
             </div>
           </div>
         </section>
 
-        <Footer />
+        {/* More cities in California */}
+        {relatedCities.length > 0 && (
+          <section className="py-12 bg-white border-t border-gray-200">
+            <div className="mx-auto max-w-7xl px-6">
+              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in California</h2>
+              <div className="flex flex-wrap gap-3">
+                {relatedCities.map(city => (
+                  <Link key={city.slug} href={`/vending-leads/${city.slug}`} className="px-3 py-2 rounded-lg border border-gray-200 bg-cream/60 text-chocolate hover:text-navy">
+                    Vending Leads in {city.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
       </div>
+      
+      <Footer />
+      <ZipCodeModalWrapper />
+      {/* JSON-LD: Breadcrumbs and FAQ */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
+              { '@type': 'ListItem', position: 3, name: 'California', item: 'https://www.thevendinglocator.com/vending-leads/california' },
+              { '@type': 'ListItem', position: 4, name: 'Glendale', item: 'https://www.thevendinglocator.com/vending-leads/manchester-california' }
+            ]
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: faqItems.map(i => ({
+              '@type': 'Question',
+              name: i.q,
+              acceptedAnswer: { '@type': 'Answer', text: i.a }
+            }))
+          })
+        }}
+      />
     </>
   )
 }
-

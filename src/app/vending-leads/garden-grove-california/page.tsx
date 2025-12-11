@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Garden Grove, California - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Garden Grove, California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines garden grove california, vending leads garden grove california, vending locations garden grove california, vending opportunities garden grove california",
+  "keywords": "vending machines Garden Grove California, vending leads Garden Grove California, vending locations Garden Grove California, vending opportunities Garden Grove California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/garden-grove-california"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

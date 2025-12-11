@@ -342,6 +342,7 @@ const states: State[] = [
       { name: 'Grand Junction', slug: 'grand-junction-colorado' },
       { name: 'Greeley', slug: 'greeley-colorado' },
       { name: 'Lakewood', slug: 'lakewood-colorado' },
+      { name: 'Longmont', slug: 'longmont-colorado' },
       { name: 'Pueblo', slug: 'pueblo-colorado' },
       { name: 'Thornton', slug: 'thornton-colorado' },
       { name: 'Westminster', slug: 'westminster-colorado' }
@@ -800,6 +801,7 @@ const states: State[] = [
       { name: 'Plymouth', slug: 'plymouth-minnesota' },
       { name: 'Rochester', slug: 'rochester-minnesota' },
       { name: 'Saint Paul', slug: 'saint-paul-minnesota' },
+      { name: 'St. Paul', slug: 'st-paul-minnesota' },
       { name: 'St. Cloud', slug: 'st-cloud-minnesota' },
       { name: 'Woodbury', slug: 'woodbury-minnesota' }
     ,

@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Oceanside, California - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Oceanside, California. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines oceanside california, vending leads oceanside california, vending locations oceanside california, vending opportunities oceanside california",
+  "keywords": "vending machines Oceanside California, vending leads Oceanside California, vending locations Oceanside California, vending opportunities Oceanside California",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/oceanside-california"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

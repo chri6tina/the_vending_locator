@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CpuChipIcon, HeartIcon, ShoppingBagIcon, TruckIcon, BuildingLibraryIcon, CurrencyDollarIcon, SparklesIcon } from '@heroicons/react/24/solid'
+import states from '@/data/states'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
@@ -18,24 +19,24 @@ export default function RiversideCaliforniaVendingLeadsPage() {
   
   // City-specific data
   const cityData = {
-  'name': 'Riverside',
-  'state': 'California',
-  'population': '330K+',
-  'businesses': '45K+',
-  'industries': '15-20',
-  'verifiedLocations': '250+',
-  'rating': '4.8/5',
-  'description': 'Major inland city with healthcare, education, and manufacturing hub'
-};
+    'name': 'Riverside',
+    'state': 'California',
+    'population': '315K+',
+    'businesses': '18K-25K',
+    'industries': '12-16',
+    'verifiedLocations': '350-600',
+    'rating': '4.7/5',
+    'description': 'Inland Empire hub with logistics, healthcare, and education sectors'
+  };
   
   // Active users counter
-  const [activeUsers, setActiveUsers] = useState(28)
+  const [activeUsers, setActiveUsers] = useState(25)
   const [currentUserIndex, setCurrentUserIndex] = useState(0)
   const [usedNames, setUsedNames] = useState(new Set())
 
   // User names for active users counter
   const [userNames, setUserNames] = useState([
-    'Mike from Riverside', 'Sarah in Downtown', 'David in Riverside', 'Lisa in Riverside',
+    'Mike from Riverside', 'Sarah in Riverside', 'David in Riverside', 'Lisa in Riverside',
     'Tom in Riverside', 'Jennifer in Riverside', 'Robert in Riverside', 'Amanda in Riverside',
     'Chris in Riverside', 'Maria in Riverside', 'James in Riverside', 'Emily in Riverside'
   ])
@@ -46,7 +47,7 @@ export default function RiversideCaliforniaVendingLeadsPage() {
       setActiveUsers(prev => {
         const change = Math.floor(Math.random() * 3) - 1
         const newValue = prev + change
-        return Math.max(25, Math.min(42, newValue))
+        return Math.max(20, Math.min(35, newValue))
       })
     }, 4000);
     return () => clearInterval(interval)
@@ -76,6 +77,46 @@ export default function RiversideCaliforniaVendingLeadsPage() {
     }, 5000);
     return () => clearInterval(interval)
   }, [userNames.length, usedNames])
+
+  // Build related California cities (for internal linking)
+  const newHampshire = states.find(s => s.slug === 'california');
+  const relatedCities = newHampshire ? newHampshire.cities.filter(c => c.slug !== 'manchester-california').slice(0, 8) : [];
+
+  // FAQ items reused for JSON-LD
+  const faqItems = [
+  {
+    q: 'What types of vending machine locations are available in Riverside?',
+    a: 'Riverside offers diverse vending opportunities including logistics facilities, healthcare centers, educational institutions, retail locations, office buildings, and manufacturing facilities. Each location is pre-verified for optimal vending machine success.'
+  },
+  {
+    q: 'How quickly can I get vending machine leads for Riverside?',
+    a: 'Our Riverside vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
+  },
+  {
+    q: 'What makes Riverside a good market for vending machines?',
+    a: 'Riverside features a thriving business community with diverse industries including logistics, healthcare, and education. The city's business density and growing population create ideal conditions for vending machine success.'
+  },
+  {
+    q: 'Do you provide ongoing support for Riverside locations?',
+    a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Riverside.'
+  },
+  {
+    q: 'What industries in Riverside are best for vending machines?',
+    a: 'Logistics facilities, healthcare centers, educational institutions, office buildings, and manufacturing in Riverside show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
+  },
+  {
+    q: 'How do you verify the quality of Riverside vending locations?',
+    a: 'We conduct thorough research on each Riverside location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
+  },
+  {
+    q: 'Can I get customized vending leads for specific areas of Riverside?',
+    a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Riverside including downtown, university area, and logistics corridors based on your preferences and target market requirements.'
+  },
+  {
+    q: 'What's the typical ROI for vending machines in Riverside?',
+    a: 'Vending machines in Riverside typically show strong ROI due to the city's business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+  }
+];
 
   return (
     <>
@@ -119,8 +160,7 @@ export default function RiversideCaliforniaVendingLeadsPage() {
                   <span className="text-sm font-medium text-chocolate">
                     <span className="font-bold text-coral">{activeUsers}</span> people are choosing plans right now
                   </span>
-                </div>
-              </motion.div>
+                </div></motion.div>
 
               {/* Main Headline */}
               <motion.h1 
@@ -140,7 +180,7 @@ export default function RiversideCaliforniaVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Discover pre-qualified vending opportunities in Riverside's growing economy, featuring business districts, commercial centers, and community facilities with consistent foot traffic.
+                Get comprehensive vending leads for Riverside's thriving California market, combining local businesses, healthcare systems, and educational facilities for reliable vending machine placement.
               </motion.p>
 
               {/* Trust Signals */}
@@ -159,7 +199,7 @@ export default function RiversideCaliforniaVendingLeadsPage() {
                 <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
                   <div className="flex items-center gap-3">
                     <StarIcon className="h-5 w-5 text-yellow-500" />
-                    <span className="text-sm font-medium text-chocolate">4.8/5 Rating</span>
+                    <span className="text-sm font-medium text-chocolate">4.7/5 Rating</span>
                   </div>
                 </div>
                 <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
@@ -197,7 +237,7 @@ export default function RiversideCaliforniaVendingLeadsPage() {
 
               </motion.div>
 
-              {/* Social Proof Stats */}
+{/* Social Proof Stats */}
               <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -224,6 +264,8 @@ export default function RiversideCaliforniaVendingLeadsPage() {
             </div>
           </div>
         </section>
+
+        
 
         {/* Pricing Section */}
         <section id="pricing" className="py-16 bg-warm-white">
@@ -284,50 +326,47 @@ export default function RiversideCaliforniaVendingLeadsPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0 }}
                 viewport={{ once: true }}
-                className="bg-red-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+                className="bg-blue-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
-                <div className="text-red-600 mb-4">
+                <div className="text-blue-600 mb-4">
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Medical centers and healthcare facilities throughout Riverside offer excellent vending placement opportunities, with high-traffic areas including waiting rooms, cafeterias, and employee break areas.</p>
+                <p className="text-stone leading-relaxed">Riverside's healthcare sector includes major hospitals, specialty clinics, and medical offices that generate consistent visitor and employee traffic, ideal for vending machine placement.</p>
               </motion.div>
-
               <motion.div
                 key="Education"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.1 }}
                 viewport={{ once: true }}
-                className="bg-purple-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+                className="bg-green-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
-                <div className="text-purple-600 mb-4">
+                <div className="text-green-600 mb-4">
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Riverside's education sector features schools, universities, and training facilities with captive audiences during academic hours, creating reliable vending machine placement opportunities.</p>
+                <p className="text-stone leading-relaxed">Educational facilities throughout Riverside serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services.</p>
               </motion.div>
-
               <motion.div
                 key="Manufacturing"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
                 viewport={{ once: true }}
-                className="bg-blue-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+                className="bg-purple-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
-                <div className="text-blue-600 mb-4">
-                  <BuildingOfficeIcon className="w-12 h-12" />
+                <div className="text-purple-600 mb-4">
+                  <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Manufacturing facilities in Riverside operate around the clock with significant employee populations, providing consistent vending opportunities in break rooms and common areas.</p>
+                <p className="text-stone leading-relaxed">Industrial and manufacturing operations throughout Riverside employ substantial workforces with shift-based schedules, offering stable vending placement opportunities with steady traffic.</p>
               </motion.div>
-
               <motion.div
                 key="Retail"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.3 }}
+                transition={{ duration: 0.8, delay: 0.30000000000000004 }}
                 viewport={{ once: true }}
                 className="bg-orange-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
@@ -335,37 +374,35 @@ export default function RiversideCaliforniaVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Retail establishments in Riverside attract diverse customer demographics and generate steady foot traffic, providing reliable vending opportunities across various retail environments.</p>
+                <p className="text-stone leading-relaxed">Shopping centers and retail districts in Riverside offer prime vending locations, with high-traffic areas including food courts, entrances, and common spaces frequented by shoppers.</p>
               </motion.div>
-
               <motion.div
-                key="Transportation"
+                key="Office Buildings"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
                 viewport={{ once: true }}
-                className="bg-teal-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+                className="bg-indigo-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
-                <div className="text-teal-600 mb-4">
-                  <TruckIcon className="w-12 h-12" />
+                <div className="text-indigo-600 mb-4">
+                  <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Transportation facilities in Riverside serve travelers and commuters with consistent foot traffic throughout the day, offering reliable vending opportunities in terminals, waiting areas, and transit stations.</p>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
+                <p className="text-stone leading-relaxed">Commercial office spaces in Riverside offer excellent vending opportunities, with professional tenants and business operations generating consistent foot traffic throughout the workday.</p>
               </motion.div>
-
               <motion.div
-                key="Agriculture"
+                key="Transportation"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.5 }}
                 viewport={{ once: true }}
-                className="bg-green-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+                className="bg-red-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
-                <div className="text-green-600 mb-4">
-                  <MapPinIcon className="w-12 h-12" />
+                <div className="text-red-600 mb-4">
+                  <TruckIcon className="w-12 h-12" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Agriculture</h3>
-                <p className="text-stone leading-relaxed">Surrounding agricultural areas with food processing and distribution businesses providing seasonal and year-round opportunities.</p>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
+                <p className="text-stone leading-relaxed">Airports, bus stations, and transit centers throughout Riverside generate steady passenger traffic, providing excellent vending placement options in high-traffic areas frequented by travelers.</p>
               </motion.div>
             </div>
           </div>
@@ -400,8 +437,28 @@ export default function RiversideCaliforniaVendingLeadsPage() {
 
 
         {/* Hot Leads Section */}
-        <section className="py-16 bg-warm-white">
+        <section id="hot-leads" className="py-16 bg-warm-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
+              >
+                One-Time Location Packages for {cityDisplayName}
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-lg text-stone max-w-3xl mx-auto"
+              >
+                Get immediate access to qualified vending machine locations without monthly commitments.
+              </motion.p>
+            </div>
             <HotLeads />
           </div>
         </section>
@@ -409,110 +466,122 @@ export default function RiversideCaliforniaVendingLeadsPage() {
         {/* Vending Course Section */}
         <section className="py-16 bg-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
+              >
+                Learn the Vending Machine Business
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-lg text-stone max-w-3xl mx-auto"
+              >
+                Master the fundamentals of vending machine operations and maximize your success in {cityDisplayName}.
+              </motion.p>
+            </div>
             <VendingCourse />
           </div>
         </section>
 
         {/* FAQ Section */}
-        <section className="py-16 bg-warm-white">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section id="faq" className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-charcoal mb-4">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
+              >
                 Frequently Asked Questions
-              </h2>
-              <p className="text-lg text-stone">
-                Everything you need to know about vending machine leads in {cityDisplayName}, {stateDisplayName}.
-              </p>
+              </motion.h2>
+              <motion.p 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-lg text-chocolate/70 leading-relaxed"
+              >
+                Everything you need to know about vending machine opportunities in {cityDisplayName}.
+              </motion.p>
             </div>
             
-            <div className="space-y-4">
-              {[
-                {
-                  question: "What types of vending machine locations are available in Riverside?",
-                  answer: "Riverside offers diverse vending opportunities including healthcare facilities, educational institutions, manufacturing plants, retail locations, office buildings, and transportation hubs. Each location is pre-qualified for optimal vending machine placement."
-                },
-                {
-                  question: "How quickly can I get vending machine leads for Riverside?",
-                  answer: "Our Riverside vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry."
-                },
-                {
-                  question: "What makes Riverside a good market for vending machines?",
-                  answer: "Riverside features a strong business community with diverse industries, stable employment, and consistent foot traffic. The city's economic growth and business-friendly environment create ideal conditions for vending machine success."
-                },
-                {
-                  question: "Do you provide ongoing support for Riverside locations?",
-                  answer: "Yes, we offer comprehensive support including location monitoring, performance analytics, and business development assistance to ensure your vending machines thrive in Riverside."
-                },
-                {
-                  question: "What industries in Riverside are best for vending machines?",
-                  answer: "Healthcare facilities, educational institutions, manufacturing plants, office buildings, and transportation sectors in Riverside show the highest potential for vending machine success due to consistent foot traffic and captive audiences."
-                },
-                {
-                  question: "How do you verify the quality of Riverside vending locations?",
-                  answer: "We conduct thorough research on each Riverside location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included."
-                },
-                {
-                  question: "Can I get customized vending leads for specific areas of Riverside?",
-                  answer: "Absolutely! We can customize leads for specific neighborhoods, business districts, or industrial areas within Riverside based on your preferences and target market requirements."
-                },
-                {
-                  question: "What's the typical ROI for vending machines in Riverside?",
-                  answer: "Vending machines in Riverside typically show strong ROI due to the city's business density and consistent traffic patterns. Our research shows average payback periods of 12-18 months for well-placed machines."
-                },
-                {
-                  question: "Are there any special considerations for Riverside's climate?",
-                  answer: "Riverside's inland location means hot summers and mild winters. We recommend climate-controlled vending machines and strategic placement to maximize performance year-round."
-                },
-                {
-                  question: "How does Riverside's proximity to Los Angeles affect vending opportunities?",
-                  answer: "Riverside's location in the Inland Empire provides access to LA metro area businesses while offering lower operational costs and less competition than downtown Los Angeles."
-                },
-                {
-                  question: "What types of vending machines work best in Riverside?",
-                  answer: "Beverage machines, snack machines, and healthy food options perform well in Riverside's healthcare and education sectors. We can recommend the best machine types for each location."
-                },
-                {
-                  question: "Do you offer financing options for Riverside vending machine placements?",
-                  answer: "Yes, we work with financing partners to help you secure the equipment and capital needed to expand your vending machine business in Riverside."
-                },
-                {
-                  question: "How do you handle seasonal variations in Riverside?",
-                  answer: "We analyze seasonal patterns in Riverside's business sectors and adjust our recommendations accordingly to ensure consistent vending machine performance throughout the year."
-                },
-                {
-                  question: "What makes Riverside different from other California cities for vending?",
-                  answer: "Riverside offers a unique combination of affordable business costs, strategic location, diverse industries, and growing population that creates exceptional vending machine opportunities not found in other California cities."
-                },
-                {
-                  question: "Can you help with vending machine maintenance in Riverside?",
-                  answer: "Yes, we partner with local maintenance providers and can connect you with reliable service technicians to keep your Riverside vending machines operating at peak performance."
-                }
-              ].map((faq, index) => (
+            <div className="space-y-6">
+              {faqItems.map((item, idx) => (
                 <motion.div
-                  key={index}
+                  key={idx}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, delay: index * 0.1 }}
+                  transition={{ duration: 0.8, delay: idx * 0.1 }}
                   viewport={{ once: true }}
-                  className="bg-white rounded-lg shadow-sm border border-gray-200"
+                  className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
                 >
-                  <div className="px-6 py-4">
-                    <h3 className="text-lg font-semibold text-charcoal mb-3">
-                      {faq.question}
-                    </h3>
-                    <p className="text-stone leading-relaxed">
-                      {faq.answer}
-                    </p>
-                  </div>
+                  <h3 className="text-lg font-semibold text-charcoal mb-3">{item.q}</h3>
+                  <p className="text-stone leading-relaxed">{item.a}</p>
                 </motion.div>
               ))}
             </div>
           </div>
         </section>
 
-        <Footer />
+        {/* More cities in California */}
+        {relatedCities.length > 0 && (
+          <section className="py-12 bg-white border-t border-gray-200">
+            <div className="mx-auto max-w-7xl px-6">
+              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in California</h2>
+              <div className="flex flex-wrap gap-3">
+                {relatedCities.map(city => (
+                  <Link key={city.slug} href={`/vending-leads/${city.slug}`} className="px-3 py-2 rounded-lg border border-gray-200 bg-cream/60 text-chocolate hover:text-navy">
+                    Vending Leads in {city.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
       </div>
+      
+      <Footer />
+      <ZipCodeModalWrapper />
+      {/* JSON-LD: Breadcrumbs and FAQ */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
+              { '@type': 'ListItem', position: 3, name: 'California', item: 'https://www.thevendinglocator.com/vending-leads/california' },
+              { '@type': 'ListItem', position: 4, name: 'Riverside', item: 'https://www.thevendinglocator.com/vending-leads/manchester-california' }
+            ]
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: faqItems.map(i => ({
+              '@type': 'Question',
+              name: i.q,
+              acceptedAnswer: { '@type': 'Answer', text: i.a }
+            }))
+          })
+        }}
+      />
     </>
   )
 }
-

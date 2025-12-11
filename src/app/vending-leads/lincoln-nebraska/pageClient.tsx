@@ -19,16 +19,15 @@ export default function LincolnNebraskaVendingLeadsPage() {
   
   // City-specific data
   const cityData = {
-  name: 'Lincoln',
-  state: 'Nebraska',
-  population: '294,757',
-  businesses: '18,000+',
-  industries: '5',
-  verifiedLocations: '100-150',
-  rating: '4.8/5',
-  description: 'State capital and university city',
-  majorEmployers: ['State of Nebraska', 'University of Nebraska-Lincoln', 'Bryan Health', 'Lincoln Public Schools', 'Ameritas']
-};
+    'name': 'Lincoln',
+    'state': 'Nebraska',
+    'population': '292K+',
+    'businesses': '16K-23K',
+    'industries': '11-15',
+    'verifiedLocations': '320-550',
+    'rating': '4.7/5',
+    'description': 'State capital with government, education, and insurance sectors'
+  };
   
   // Active users counter
   const [activeUsers, setActiveUsers] = useState(25)
@@ -79,21 +78,45 @@ export default function LincolnNebraskaVendingLeadsPage() {
     return () => clearInterval(interval)
   }, [userNames.length, usedNames])
 
-  // Build related state cities (for internal linking)
-  const currentState = states.find(s => s.slug === 'nebraska')
-  const relatedCities = currentState ? currentState.cities.filter(c => c.slug !== 'lincoln-nebraska').slice(0, 8) : [];
+  // Build related Nebraska cities (for internal linking)
+  const newHampshire = states.find(s => s.slug === 'nebraska');
+  const relatedCities = newHampshire ? newHampshire.cities.filter(c => c.slug !== 'manchester-nebraska').slice(0, 8) : [];
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: "What types of vending machine locations are available in Lincoln?", a: "Lincoln provides vending opportunities in healthcare facilities, educational institutions, retail centers, office buildings, and manufacturing facilities serving the local market." },
-    { q: "How quickly can I get vending machine leads for Lincoln?", a: "Our Lincoln vending leads are delivered within 3-5 business days with detailed information about each verified business and placement opportunity." },
-    { q: "What makes Lincoln a good market for vending machines?", a: "Lincoln features a strong business community with diverse industries and consistent foot traffic. The city's economic activity creates ideal conditions for vending machine success." },
-    { q: "Do you provide ongoing support for Lincoln locations?", a: "Yes, we provide comprehensive support including location research, business verification, contact information, and market-specific placement strategies for Lincoln." },
-    { q: "What industries in Lincoln are best for vending machines?", a: "Healthcare, education, manufacturing, retail, and office buildings in Lincoln show strong vending potential with reliable traffic and captive audiences." },
-    { q: "How do you verify the quality of Lincoln vending locations?", a: "We conduct thorough verification including business validation, employee assessment, facility research, and local market analysis for each Lincoln location." },
-    { q: "Can I get customized vending leads for specific areas of Lincoln?", a: "Absolutely! We can focus on specific neighborhoods, business districts, or industrial areas within Lincoln based on your target market." },
-    { q: "What's the typical ROI for vending machines in Lincoln?", a: "Machines in Lincoln typically see ROI within 12-18 months, with healthcare and educational facilities often providing the most consistent returns." }
-  ];
+  {
+    q: 'What types of vending machine locations are available in Lincoln?',
+    a: 'Lincoln offers diverse vending opportunities including government facilities, insurance companies, healthcare centers, educational institutions, retail locations, and office buildings. Each location is pre-verified for optimal vending machine success.'
+  },
+  {
+    q: 'How quickly can I get vending machine leads for Lincoln?',
+    a: 'Our Lincoln vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
+  },
+  {
+    q: 'What makes Lincoln a good market for vending machines?',
+    a: 'Lincoln features a thriving business community with diverse industries including government, insurance, and education. The city's business density and state capital status create ideal conditions for vending machine success.'
+  },
+  {
+    q: 'Do you provide ongoing support for Lincoln locations?',
+    a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Lincoln.'
+  },
+  {
+    q: 'What industries in Lincoln are best for vending machines?',
+    a: 'Government facilities, insurance companies, healthcare centers, educational institutions, and office buildings in Lincoln show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
+  },
+  {
+    q: 'How do you verify the quality of Lincoln vending locations?',
+    a: 'We conduct thorough research on each Lincoln location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
+  },
+  {
+    q: 'Can I get customized vending leads for specific areas of Lincoln?',
+    a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Lincoln including downtown, capitol area, and university district based on your preferences and target market requirements.'
+  },
+  {
+    q: 'What's the typical ROI for vending machines in Lincoln?',
+    a: 'Vending machines in Lincoln typically show strong ROI due to the city's business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+  }
+];
 
   return (
     <>
@@ -157,7 +180,7 @@ export default function LincolnNebraskaVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Explore vending machine opportunities throughout Lincoln's business network, where diverse industries, commercial zones, and community spaces offer multiple placement options for vending success.
+                Get comprehensive vending leads for Lincoln's thriving Nebraska market, combining local businesses, healthcare systems, and educational facilities for reliable vending machine placement.
               </motion.p>
 
               {/* Trust Signals */}
@@ -201,19 +224,20 @@ export default function LincolnNebraskaVendingLeadsPage() {
                 className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 mb-8"
               >
                 <button 
-                  onClick={() => {
-                    const pricingSection = document.getElementById('pricing')
-                    if (pricingSection) {
-                      pricingSection.scrollIntoView({ behavior: 'smooth' })
-                    }
-                  }}
-                  className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
+                    onClick={() => {
+                      const pricingSection = document.getElementById('pricing')
+                      if (pricingSection) {
+                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                      }
+                    }}
+                    className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
                 >
-                  Get Started
-                </button>
+                    Get Started
+                  </button>
+
               </motion.div>
 
-              {/* Social Proof Stats */}
+{/* Social Proof Stats */}
               <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -240,6 +264,8 @@ export default function LincolnNebraskaVendingLeadsPage() {
             </div>
           </div>
         </section>
+
+        
 
         {/* Pricing Section */}
         <section id="pricing" className="py-16 bg-warm-white">
@@ -306,7 +332,7 @@ export default function LincolnNebraskaVendingLeadsPage() {
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Lincoln features modern healthcare facilities including hospitals, medical centers, and clinics with high patient and visitor traffic, creating consistent demand for vending services throughout the day.</p>
+                <p className="text-stone leading-relaxed">Lincoln's healthcare sector includes major hospitals, specialty clinics, and medical offices that generate consistent visitor and employee traffic, ideal for vending machine placement.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -320,7 +346,7 @@ export default function LincolnNebraskaVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Schools and educational institutions in Lincoln offer excellent vending opportunities, with high-traffic areas including cafeterias, libraries, student centers, and athletic facilities.</p>
+                <p className="text-stone leading-relaxed">Educational facilities throughout Lincoln serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -334,13 +360,13 @@ export default function LincolnNebraskaVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Lincoln's manufacturing sector features production facilities, warehouses, and industrial parks with large employee concentrations, ideal for vending machine services.</p>
+                <p className="text-stone leading-relaxed">Industrial and manufacturing operations throughout Lincoln employ substantial workforces with shift-based schedules, offering stable vending placement opportunities with steady traffic.</p>
               </motion.div>
               <motion.div
                 key="Retail"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.3 }}
+                transition={{ duration: 0.8, delay: 0.30000000000000004 }}
                 viewport={{ once: true }}
                 className="bg-orange-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
@@ -348,7 +374,7 @@ export default function LincolnNebraskaVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Retail locations throughout Lincoln provide high customer traffic and diverse shopping experiences, creating multiple vending opportunities in malls, shopping centers, and retail districts.</p>
+                <p className="text-stone leading-relaxed">Shopping centers and retail districts in Lincoln offer prime vending locations, with high-traffic areas including food courts, entrances, and common spaces frequented by shoppers.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -362,7 +388,7 @@ export default function LincolnNebraskaVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Professional office spaces in Lincoln house corporate headquarters, business centers, and professional services with captive employee audiences during business hours, creating consistent vending opportunities.</p>
+                <p className="text-stone leading-relaxed">Commercial office spaces in Lincoln offer excellent vending opportunities, with professional tenants and business operations generating consistent foot traffic throughout the workday.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -376,7 +402,7 @@ export default function LincolnNebraskaVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Lincoln's transportation infrastructure includes major transit hubs and travel facilities with year-round passenger flow, ideal for vending machine services in waiting areas and terminals.</p>
+                <p className="text-stone leading-relaxed">Airports, bus stations, and transit centers throughout Lincoln generate steady passenger traffic, providing excellent vending placement options in high-traffic areas frequented by travelers.</p>
               </motion.div>
             </div>
           </div>
@@ -506,11 +532,11 @@ export default function LincolnNebraskaVendingLeadsPage() {
           </div>
         </section>
 
-        {/* More cities in State */}
+        {/* More cities in Nebraska */}
         {relatedCities.length > 0 && (
           <section className="py-12 bg-white border-t border-gray-200">
             <div className="mx-auto max-w-7xl px-6">
-              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in {stateDisplayName}</h2>
+              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in Nebraska</h2>
               <div className="flex flex-wrap gap-3">
                 {relatedCities.map(city => (
                   <Link key={city.slug} href={`/vending-leads/${city.slug}`} className="px-3 py-2 rounded-lg border border-gray-200 bg-cream/60 text-chocolate hover:text-navy">
@@ -536,8 +562,8 @@ export default function LincolnNebraskaVendingLeadsPage() {
             itemListElement: [
               { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
               { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'Nebraska', item: `https://www.thevendinglocator.com/vending-leads/nebraska` },
-              { '@type': 'ListItem', position: 4, name: 'Lincoln', item: `https://www.thevendinglocator.com/vending-leads/lincoln-nebraska` }
+              { '@type': 'ListItem', position: 3, name: 'Nebraska', item: 'https://www.thevendinglocator.com/vending-leads/nebraska' },
+              { '@type': 'ListItem', position: 4, name: 'Lincoln', item: 'https://www.thevendinglocator.com/vending-leads/manchester-nebraska' }
             ]
           })
         }}

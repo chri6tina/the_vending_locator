@@ -12,21 +12,21 @@ import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function ChulaVistaCaliforniaVendingLeadsPage() {
+export default function LongmontColoradoVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Chula Vista';
-  const stateDisplayName = 'California';
+  const cityDisplayName = 'Longmont';
+  const stateDisplayName = 'Colorado';
   
   // City-specific data
   const cityData = {
-    'name': 'Chula Vista',
-    'state': 'California',
-    'population': '275K+',
-    'businesses': '15K-22K',
-    'industries': '11-15',
-    'verifiedLocations': '320-540',
+    'name': 'Longmont',
+    'state': 'Colorado',
+    'population': '100K+',
+    'businesses': '4K-6K',
+    'industries': '10-14',
+    'verifiedLocations': '150-280',
     'rating': '4.7/5',
-    'description': 'San Diego suburb with manufacturing, retail, and healthcare'
+    'description': 'Thriving Front Range city with diverse tech, manufacturing, and agricultural industries'
   };
   
   // Active users counter
@@ -36,9 +36,9 @@ export default function ChulaVistaCaliforniaVendingLeadsPage() {
 
   // User names for active users counter
   const [userNames, setUserNames] = useState([
-    'Mike from Chula Vista', 'Sarah in Chula Vista', 'David in Chula Vista', 'Lisa in Chula Vista',
-    'Tom in Chula Vista', 'Jennifer in Chula Vista', 'Robert in Chula Vista', 'Amanda in Chula Vista',
-    'Chris in Chula Vista', 'Maria in Chula Vista', 'James in Chula Vista', 'Emily in Chula Vista'
+    'Mike from Longmont', 'Sarah in Longmont', 'David in Longmont', 'Lisa in Longmont',
+    'Tom in Longmont', 'Jennifer in Longmont', 'Robert in Longmont', 'Amanda in Longmont',
+    'Chris in Longmont', 'Maria in Longmont', 'James in Longmont', 'Emily in Longmont'
   ])
 
   // Active users counter effect
@@ -78,43 +78,43 @@ export default function ChulaVistaCaliforniaVendingLeadsPage() {
     return () => clearInterval(interval)
   }, [userNames.length, usedNames])
 
-  // Build related California cities (for internal linking)
-  const newHampshire = states.find(s => s.slug === 'california');
-  const relatedCities = newHampshire ? newHampshire.cities.filter(c => c.slug !== 'manchester-california').slice(0, 8) : [];
+  // Build related Colorado cities (for internal linking)
+  const newHampshire = states.find(s => s.slug === 'colorado');
+  const relatedCities = newHampshire ? newHampshire.cities.filter(c => c.slug !== 'manchester-colorado').slice(0, 8) : [];
 
   // FAQ items reused for JSON-LD
   const faqItems = [
   {
-    q: 'What types of vending machine locations are available in Chula Vista?',
-    a: 'Chula Vista offers diverse vending opportunities including manufacturing facilities, retail centers, healthcare facilities, educational institutions, office buildings, and logistics centers. Each location is pre-verified for optimal vending machine success.'
+    q: 'What types of vending machine locations are available in Longmont?',
+    a: 'Longmont offers diverse vending opportunities including technology companies, manufacturing facilities, healthcare centers, educational institutions, retail locations, and office buildings. Each location is pre-verified for optimal vending machine success.'
   },
   {
-    q: 'How quickly can I get vending machine leads for Chula Vista?',
-    a: 'Our Chula Vista vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
+    q: 'How quickly can I get vending machine leads for Longmont?',
+    a: 'Our Longmont vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
   },
   {
-    q: 'What makes Chula Vista a good market for vending machines?',
-    a: 'Chula Vista features a thriving business community with diverse industries including manufacturing, retail, and healthcare. The city's business density and growing population create ideal conditions for vending machine success.'
+    q: 'What makes Longmont a good market for vending machines?',
+    a: 'Longmont features a thriving business community with diverse industries including technology, manufacturing, and agriculture. The city\'s business density and growing economy create ideal conditions for vending machine success.'
   },
   {
-    q: 'Do you provide ongoing support for Chula Vista locations?',
-    a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Chula Vista.'
+    q: 'Do you provide ongoing support for Longmont locations?',
+    a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Longmont.'
   },
   {
-    q: 'What industries in Chula Vista are best for vending machines?',
-    a: 'Manufacturing facilities, retail centers, healthcare facilities, educational institutions, and office buildings in Chula Vista show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
+    q: 'What industries in Longmont are best for vending machines?',
+    a: 'Technology companies, manufacturing facilities, healthcare centers, educational institutions, and office buildings in Longmont show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
   },
   {
-    q: 'How do you verify the quality of Chula Vista vending locations?',
-    a: 'We conduct thorough research on each Chula Vista location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
+    q: 'How do you verify the quality of Longmont vending locations?',
+    a: 'We conduct thorough research on each Longmont location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
   },
   {
-    q: 'Can I get customized vending leads for specific areas of Chula Vista?',
-    a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Chula Vista including downtown, retail corridors, and industrial parks based on your preferences and target market requirements.'
+    q: 'Can I get customized vending leads for specific areas of Longmont?',
+    a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Longmont including the downtown area, industrial parks, and technology corridors based on your preferences and target market requirements.'
   },
   {
-    q: 'What's the typical ROI for vending machines in Chula Vista?',
-    a: 'Vending machines in Chula Vista typically show strong ROI due to the city's business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+    q: 'What\'s the typical ROI for vending machines in Longmont?',
+    a: 'Vending machines in Longmont typically show strong ROI due to the city\'s business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
   }
 ];
 
@@ -180,7 +180,7 @@ export default function ChulaVistaCaliforniaVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Get comprehensive vending leads for Chula Vista's thriving California market, combining local businesses, healthcare systems, and educational facilities for reliable vending machine placement.
+                Get comprehensive vending leads for Longmont's thriving Colorado market, combining local businesses, healthcare systems, and educational facilities for reliable vending machine placement.
               </motion.p>
 
               {/* Trust Signals */}
@@ -332,7 +332,7 @@ export default function ChulaVistaCaliforniaVendingLeadsPage() {
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Chula Vista's healthcare sector includes major hospitals, specialty clinics, and medical offices that generate consistent visitor and employee traffic, ideal for vending machine placement.</p>
+                <p className="text-stone leading-relaxed">Longmont's healthcare sector includes major hospitals, specialty clinics, and medical offices that generate consistent visitor and employee traffic, ideal for vending machine placement.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -346,7 +346,7 @@ export default function ChulaVistaCaliforniaVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Educational facilities throughout Chula Vista serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services.</p>
+                <p className="text-stone leading-relaxed">Educational facilities throughout Longmont serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -360,7 +360,7 @@ export default function ChulaVistaCaliforniaVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Industrial and manufacturing operations throughout Chula Vista employ substantial workforces with shift-based schedules, offering stable vending placement opportunities with steady traffic.</p>
+                <p className="text-stone leading-relaxed">Industrial and manufacturing operations throughout Longmont employ substantial workforces with shift-based schedules, offering stable vending placement opportunities with steady traffic.</p>
               </motion.div>
               <motion.div
                 key="Retail"
@@ -374,7 +374,7 @@ export default function ChulaVistaCaliforniaVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Shopping centers and retail districts in Chula Vista offer prime vending locations, with high-traffic areas including food courts, entrances, and common spaces frequented by shoppers.</p>
+                <p className="text-stone leading-relaxed">Shopping centers and retail districts in Longmont offer prime vending locations, with high-traffic areas including food courts, entrances, and common spaces frequented by shoppers.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -388,7 +388,7 @@ export default function ChulaVistaCaliforniaVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Commercial office spaces in Chula Vista offer excellent vending opportunities, with professional tenants and business operations generating consistent foot traffic throughout the workday.</p>
+                <p className="text-stone leading-relaxed">Commercial office spaces in Longmont offer excellent vending opportunities, with professional tenants and business operations generating consistent foot traffic throughout the workday.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -402,11 +402,11 @@ export default function ChulaVistaCaliforniaVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Airports, bus stations, and transit centers throughout Chula Vista generate steady passenger traffic, providing excellent vending placement options in high-traffic areas frequented by travelers.</p>
+                <p className="text-stone leading-relaxed">Airports, bus stations, and transit centers throughout Longmont generate steady passenger traffic, providing excellent vending placement options in high-traffic areas frequented by travelers.</p>
               </motion.div>
             </div>
           </div>
-        </section>        {/* Why Chula Vista? */}
+        </section>        {/* Why Longmont? */}
         <section className="py-16 bg-warm-white">
           <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-8">
@@ -417,7 +417,7 @@ export default function ChulaVistaCaliforniaVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-6"
               >
-                Why Choose Chula Vista for Vending Machines?
+                Why Choose Longmont for Vending Machines?
               </motion.h2>
             </div>
             <motion.div
@@ -428,7 +428,7 @@ export default function ChulaVistaCaliforniaVendingLeadsPage() {
               className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
             >
               <p className="text-lg text-stone leading-relaxed">
-                Chula Vista offers reliable vending opportunities through its thriving business community, featuring diverse industries, commercial centers, and growing economic sectors. The city's business mix provides stable placement locations with consistent traffic patterns, while Chula Vista's economic activity supports steady consumer spending. The city's combination of established businesses and emerging sectors creates multiple vending placement strategies.
+                Longmont offers reliable vending opportunities through its thriving business community, featuring diverse industries, commercial centers, and growing economic sectors. The city's business mix provides stable placement locations with consistent traffic patterns, while Longmont's economic activity supports steady consumer spending. The city's combination of established businesses and emerging sectors creates multiple vending placement strategies.
               </p>
             </motion.div>
           </div>
@@ -532,11 +532,11 @@ export default function ChulaVistaCaliforniaVendingLeadsPage() {
           </div>
         </section>
 
-        {/* More cities in California */}
+        {/* More cities in Colorado */}
         {relatedCities.length > 0 && (
           <section className="py-12 bg-white border-t border-gray-200">
             <div className="mx-auto max-w-7xl px-6">
-              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in California</h2>
+              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in Colorado</h2>
               <div className="flex flex-wrap gap-3">
                 {relatedCities.map(city => (
                   <Link key={city.slug} href={`/vending-leads/${city.slug}`} className="px-3 py-2 rounded-lg border border-gray-200 bg-cream/60 text-chocolate hover:text-navy">
@@ -562,8 +562,8 @@ export default function ChulaVistaCaliforniaVendingLeadsPage() {
             itemListElement: [
               { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
               { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'California', item: 'https://www.thevendinglocator.com/vending-leads/california' },
-              { '@type': 'ListItem', position: 4, name: 'Chula Vista', item: 'https://www.thevendinglocator.com/vending-leads/manchester-california' }
+              { '@type': 'ListItem', position: 3, name: 'Colorado', item: 'https://www.thevendinglocator.com/vending-leads/colorado' },
+              { '@type': 'ListItem', position: 4, name: 'Longmont', item: 'https://www.thevendinglocator.com/vending-leads/manchester-colorado' }
             ]
           })
         }}
