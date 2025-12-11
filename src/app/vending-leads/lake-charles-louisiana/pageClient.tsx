@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CpuChipIcon, HeartIcon, ShoppingBagIcon, TruckIcon, BuildingLibraryIcon, CurrencyDollarIcon, SparklesIcon } from '@heroicons/react/24/solid'
+import states from '@/data/states'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
@@ -18,32 +19,27 @@ export default function LakeCharlesLouisianaVendingLeadsPage() {
   
   // City-specific data
   const cityData = {
-  'name': 'Lake Charles',
-  'state': 'Louisiana',
-  'population': '80K+',
-  'businesses': '8K-10K',
-  'industries': '8-10',
-  'verifiedLocations': '150-250',
-  'rating': '4.8/5',
-  'description': 'Thriving business community in Louisiana'
-};
+    'name': 'Lake Charles',
+    'state': 'Louisiana',
+    'population': '84K+',
+    'businesses': '5K-9K',
+    'industries': '8-12',
+    'verifiedLocations': '170-300',
+    'rating': '4.7/5',
+    'description': 'Southwest Louisiana city with petrochemical, gaming, and port operations'
+  };
   
   // Active users counter
-  const [activeUsers, setActiveUsers] = useState(28)
+  const [activeUsers, setActiveUsers] = useState(25)
   const [currentUserIndex, setCurrentUserIndex] = useState(0)
   const [usedNames, setUsedNames] = useState(new Set())
-  const [currentPurchaseIndex, setCurrentPurchaseIndex] = useState(0)
-  const [usedPurchases, setUsedPurchases] = useState(new Set())
 
   // User names for active users counter
   const [userNames, setUserNames] = useState([
-    'Mike from Lake Charles', 'Sarah in Downtown', 'David in Lake Charles', 'Lisa in Lake Charles',
+    'Mike from Lake Charles', 'Sarah in Lake Charles', 'David in Lake Charles', 'Lisa in Lake Charles',
     'Tom in Lake Charles', 'Jennifer in Lake Charles', 'Robert in Lake Charles', 'Amanda in Lake Charles',
     'Chris in Lake Charles', 'Maria in Lake Charles', 'James in Lake Charles', 'Emily in Lake Charles'
   ])
-
-  // Recent purchases disabled per requirements
-  const [recentPurchases, setRecentPurchases] = useState<string[]>([])
 
   // Active users counter effect
   useEffect(() => {
@@ -51,13 +47,13 @@ export default function LakeCharlesLouisianaVendingLeadsPage() {
       setActiveUsers(prev => {
         const change = Math.floor(Math.random() * 3) - 1
         const newValue = prev + change
-        return Math.max(25, Math.min(42, newValue))
+        return Math.max(20, Math.min(35, newValue))
       })
-    }, 4000)
+    }, 4000);
     return () => clearInterval(interval)
   }, [])
 
-  // Smart rotation of user names and recent purchases
+  // Smart rotation of user names
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentUserIndex(prev => {
@@ -69,42 +65,58 @@ export default function LakeCharlesLouisianaVendingLeadsPage() {
         while (attempts < 50) {
           nextIndex = (nextIndex + 1) % userNames.length
           if (!usedNames.has(nextIndex)) {
-            setUsedNames(prev => new Set([...prev, nextIndex]))
+            setUsedNames(prev => new Set([...prev, nextIndex]));
             return nextIndex
           }
           attempts++
         }
         const randomIndex = Math.floor(Math.random() * userNames.length)
-        setUsedNames(prev => new Set([...prev, randomIndex]))
+        setUsedNames(prev => new Set([...prev, randomIndex]));
         return randomIndex
       })
-    }, 5000)
+    }, 5000);
     return () => clearInterval(interval)
   }, [userNames.length, usedNames])
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentPurchaseIndex(prev => {
-        if (usedPurchases.size > recentPurchases.length * 0.8) {
-          setUsedPurchases(new Set())
-        }
-        let attempts = 0
-        let nextIndex = prev
-        while (attempts < 50) {
-          nextIndex = (nextIndex + 1) % recentPurchases.length
-          if (!usedPurchases.has(nextIndex)) {
-            setUsedPurchases(prev => new Set([...prev, nextIndex]))
-            return nextIndex
-          }
-          attempts++
-        }
-        const randomIndex = Math.floor(Math.random() * recentPurchases.length)
-        setUsedPurchases(prev => new Set([...prev, randomIndex]))
-        return randomIndex
-      })
-    }, 6000)
-    return () => clearInterval(interval)
-  }, [recentPurchases.length, usedPurchases])
+  // Build related Louisiana cities (for internal linking)
+  const newHampshire = states.find(s => s.slug === 'louisiana');
+  const relatedCities = newHampshire ? newHampshire.cities.filter(c => c.slug !== 'manchester-louisiana').slice(0, 8) : [];
+
+  // FAQ items reused for JSON-LD
+  const faqItems = [
+  {
+    q: 'What types of vending machine locations are available in Lake Charles?',
+    a: 'Lake Charles offers diverse vending opportunities including petrochemical facilities, gaming resorts, port operations, healthcare centers, educational institutions, and retail locations. Each location is pre-verified for optimal vending machine success.'
+  },
+  {
+    q: 'How quickly can I get vending machine leads for Lake Charles?',
+    a: 'Our Lake Charles vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
+  },
+  {
+    q: 'What makes Lake Charles a good market for vending machines?',
+    a: 'Lake Charles features a thriving business community with diverse industries including petrochemical, gaming, and port operations. The city's business density and strategic location create ideal conditions for vending machine success.'
+  },
+  {
+    q: 'Do you provide ongoing support for Lake Charles locations?',
+    a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Lake Charles.'
+  },
+  {
+    q: 'What industries in Lake Charles are best for vending machines?',
+    a: 'Petrochemical facilities, gaming resorts, port operations, healthcare centers, and educational institutions in Lake Charles show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
+  },
+  {
+    q: 'How do you verify the quality of Lake Charles vending locations?',
+    a: 'We conduct thorough research on each Lake Charles location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
+  },
+  {
+    q: 'Can I get customized vending leads for specific areas of Lake Charles?',
+    a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Lake Charles including downtown, gaming district, and petrochemical corridor based on your preferences and target market requirements.'
+  },
+  {
+    q: 'What's the typical ROI for vending machines in Lake Charles?',
+    a: 'Vending machines in Lake Charles typically show strong ROI due to the city's business density and entertainment economy. Our research shows average payback periods of 10-15 months for well-placed machines.'
+  }
+];
 
   return (
     <>
@@ -123,8 +135,8 @@ export default function LakeCharlesLouisianaVendingLeadsPage() {
                 Vending Leads
               </Link>
               <span>/</span>
-              <Link href="/vending-leads/louisiana" className="hover:text-navy transition-colors">
-                Louisiana
+              <Link href={`/vending-leads/${stateDisplayName.toLowerCase().replace(/\s+/g, '-')}`} className="hover:text-navy transition-colors">
+                {stateDisplayName}
               </Link>
               <span>/</span>
               <span className="text-charcoal font-medium">{cityDisplayName}</span>
@@ -136,17 +148,19 @@ export default function LakeCharlesLouisianaVendingLeadsPage() {
         <section className="relative py-20 bg-white overflow-hidden">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto text-center">
-              {/* Active Users Counter Pill */}
+              {/* Active Users Counter */}
               <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
-                className="inline-flex items-center bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium mb-6"
+                className="mt-6 sm:mt-8 p-4 bg-cream/50 backdrop-blur-sm rounded-2xl border border-gray-200 shadow-sm max-w-md mx-auto mb-6"
               >
-                <UsersIcon className="w-4 h-4 mr-2" />
-                <span className="animate-pulse">{activeUsers} people</span>
-                <span className="ml-2">are currently viewing vending locations</span>
-              </motion.div>
+                <div className="flex items-center justify-center gap-3">
+                  <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                  <span className="text-sm font-medium text-chocolate">
+                    <span className="font-bold text-coral">{activeUsers}</span> people are choosing plans right now
+                  </span>
+                </div></motion.div>
 
               {/* Main Headline */}
               <motion.h1 
@@ -166,46 +180,64 @@ export default function LakeCharlesLouisianaVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Explore vending machine opportunities throughout Lake Charles's business network, where diverse industries, commercial zones, and community spaces offer multiple placement options for vending success.
+                Get comprehensive vending leads for Lake Charles's thriving Louisiana market, combining local businesses, healthcare systems, and educational facilities for reliable vending machine placement.
               </motion.p>
 
-              {/* Trust/Feature Badges */}
+              {/* Trust Signals */}
               <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.8 }}
-                className="flex flex-wrap gap-4 mb-8 justify-center"
+                className="mt-6 sm:mt-8 grid grid-cols-2 gap-4 max-w-md mx-auto mb-8"
               >
-                <div className="flex items-center gap-2 bg-green-50 text-green-700 px-3 py-2 rounded-full text-sm">
-                  <CheckBadgeIcon className="w-4 h-4" />
-                  <span>Pre-verified locations</span>
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <CheckBadgeIcon className="h-5 w-5 text-green-600" />
+                    <span className="text-sm font-medium text-chocolate">Verified Locations</span>
+                  </div>
                 </div>
-                <div className="flex items-center gap-2 bg-blue-50 text-blue-700 px-3 py-2 rounded-full text-sm">
-                  <ClockIcon className="w-4 h-4" />
-                  <span>3-5 day delivery</span>
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <StarIcon className="h-5 w-5 text-yellow-500" />
+                    <span className="text-sm font-medium text-chocolate">4.7/5 Rating</span>
+                  </div>
                 </div>
-                <div className="flex items-center gap-2 bg-purple-50 text-purple-700 px-3 py-2 rounded-full text-sm">
-                  <StarIcon className="w-4 h-4" />
-                  <span>4.8/5 rating</span>
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <ShieldCheckIcon className="h-5 w-5 text-blue-600" />
+                    <span className="text-sm font-medium text-chocolate">Secure & Reliable</span>
+                  </div>
+                </div>
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <ClockIcon className="h-5 w-5 text-purple-600" />
+                    <span className="text-sm font-medium text-chocolate">Quality Research</span>
+                  </div>
                 </div>
               </motion.div>
 
-              {/* CTA Button - Single button only */}
+              {/* CTA Buttons */}
               <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 1.0 }}
-                className="flex flex-col sm:flex-row gap-4 mb-8 justify-center items-center"
+                className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 mb-8"
               >
-                <a 
-                  href="#pricing"
-                  className="bg-navy hover:bg-navy/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 min-w-[200px] text-center"
+                <button 
+                    onClick={() => {
+                      const pricingSection = document.getElementById('pricing')
+                      if (pricingSection) {
+                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                      }
+                    }}
+                    className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
                 >
-                  View Pricing Plans
-                </a>
+                    Get Started
+                  </button>
+
               </motion.div>
 
-              {/* Social Proof Stats */}
+{/* Social Proof Stats */}
               <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -232,6 +264,8 @@ export default function LakeCharlesLouisianaVendingLeadsPage() {
             </div>
           </div>
         </section>
+
+        
 
         {/* Pricing Section */}
         <section id="pricing" className="py-16 bg-warm-white">
@@ -295,10 +329,10 @@ export default function LakeCharlesLouisianaVendingLeadsPage() {
                 className="bg-blue-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
                 <div className="text-blue-600 mb-4">
-                  <BuildingOfficeIcon className="w-12 h-12" />
+                  <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Lake Charles features modern healthcare facilities including hospitals, medical centers, and clinics with high patient and visitor traffic, creating consistent demand for vending services throughout the day.</p>
+                <p className="text-stone leading-relaxed">Lake Charles's healthcare sector includes major hospitals, specialty clinics, and medical offices that generate consistent visitor and employee traffic, ideal for vending machine placement.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -312,7 +346,7 @@ export default function LakeCharlesLouisianaVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Schools and educational institutions in Lake Charles offer excellent vending opportunities, with high-traffic areas including cafeterias, libraries, student centers, and athletic facilities.</p>
+                <p className="text-stone leading-relaxed">Educational facilities throughout Lake Charles serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -326,7 +360,7 @@ export default function LakeCharlesLouisianaVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Lake Charles's manufacturing sector features production facilities, warehouses, and industrial parks with large employee concentrations, ideal for vending machine services.</p>
+                <p className="text-stone leading-relaxed">Industrial and manufacturing operations throughout Lake Charles employ substantial workforces with shift-based schedules, offering stable vending placement opportunities with steady traffic.</p>
               </motion.div>
               <motion.div
                 key="Retail"
@@ -340,7 +374,7 @@ export default function LakeCharlesLouisianaVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Retail locations throughout Lake Charles provide high customer traffic and diverse shopping experiences, creating multiple vending opportunities in malls, shopping centers, and retail districts.</p>
+                <p className="text-stone leading-relaxed">Shopping centers and retail districts in Lake Charles offer prime vending locations, with high-traffic areas including food courts, entrances, and common spaces frequented by shoppers.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -354,7 +388,7 @@ export default function LakeCharlesLouisianaVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Professional office spaces in Lake Charles house corporate headquarters, business centers, and professional services with captive employee audiences during business hours, creating consistent vending opportunities.</p>
+                <p className="text-stone leading-relaxed">Commercial office spaces in Lake Charles offer excellent vending opportunities, with professional tenants and business operations generating consistent foot traffic throughout the workday.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -368,7 +402,7 @@ export default function LakeCharlesLouisianaVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Lake Charles's transportation infrastructure includes major transit hubs and travel facilities with year-round passenger flow, ideal for vending machine services in waiting areas and terminals.</p>
+                <p className="text-stone leading-relaxed">Airports, bus stations, and transit centers throughout Lake Charles generate steady passenger traffic, providing excellent vending placement options in high-traffic areas frequented by travelers.</p>
               </motion.div>
             </div>
           </div>
@@ -394,7 +428,7 @@ export default function LakeCharlesLouisianaVendingLeadsPage() {
               className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
             >
               <p className="text-lg text-stone leading-relaxed">
-                Lake Charles offers strong vending opportunities through its diverse business community, combining local commerce, healthcare facilities, educational institutions, and growing commercial sectors. The city's business mix provides multiple placement options with varying traffic patterns, while Lake Charles's economic stability supports consistent consumer demand. The city's combination of established businesses and growing sectors creates reliable vending placement opportunities.
+                Lake Charles offers reliable vending opportunities through its thriving business community, featuring diverse industries, commercial centers, and growing economic sectors. The city's business mix provides stable placement locations with consistent traffic patterns, while Lake Charles's economic activity supports steady consumer spending. The city's combination of established businesses and emerging sectors creates multiple vending placement strategies.
               </p>
             </motion.div>
           </div>
@@ -403,7 +437,7 @@ export default function LakeCharlesLouisianaVendingLeadsPage() {
 
 
         {/* Hot Leads Section */}
-        <section className="py-16 bg-warm-white">
+        <section id="hot-leads" className="py-16 bg-warm-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <motion.h2
@@ -457,7 +491,7 @@ export default function LakeCharlesLouisianaVendingLeadsPage() {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-16 bg-warm-white">
+        <section id="faq" className="py-16 bg-warm-white">
           <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <motion.h2
@@ -469,114 +503,85 @@ export default function LakeCharlesLouisianaVendingLeadsPage() {
               >
                 Frequently Asked Questions
               </motion.h2>
-              <motion.p
+              <motion.p 
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
                 viewport={{ once: true }}
-                className="text-lg text-stone"
+                className="text-lg text-chocolate/70 leading-relaxed"
               >
                 Everything you need to know about vending machine opportunities in {cityDisplayName}.
               </motion.p>
             </div>
             
             <div className="space-y-6">
-              
-              <motion.div
-                key="0"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What types of vending machine locations are available in Lake Charles?</h3>
-                <p className="text-stone leading-relaxed">Lake Charles specializes in gaming, petrochemical, port operations, and tourism, with vending opportunities in casino resorts, chemical plants, port facilities, hotels, and industrial businesses. Each location is carefully selected based on Lake Charles's casino resort destination with major industrial port.</p>
-              </motion.div>
-              <motion.div
-                key="1"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.1 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">How quickly can I start placing vending machines in Lake Charles?</h3>
-                <p className="text-stone leading-relaxed">Our Lake Charles vending leads are delivered within 3-5 business days. We provide comprehensive research focused on Lake Charles's gaming, petrochemical, port operations, and tourism, including verified business contacts, foot traffic analysis in areas like Downtown casino area, Prien Lake commercial district, I-10 industrial corridor, and Westlake, and placement strategies specific to this market.</p>
-              </motion.div>
-              <motion.div
-                key="2"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What makes Lake Charles ideal for vending machine placement?</h3>
-                <p className="text-stone leading-relaxed">Lake Charles's casino resort destination with major industrial port creates exceptional vending conditions. The concentration of gaming, petrochemical, port operations, and tourism ensures consistent customer traffic and strong revenue potential throughout the year.</p>
-              </motion.div>
-              <motion.div
-                key="3"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.30000000000000004 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">Which Lake Charles neighborhoods offer the best vending opportunities?</h3>
-                <p className="text-stone leading-relaxed">Prime vending locations in Lake Charles include Downtown casino area, Prien Lake commercial district, I-10 industrial corridor, and Westlake. These areas combine high foot traffic, strong business density, and the demographics that drive vending machine success in Lake Charles's market.</p>
-              </motion.div>
-              <motion.div
-                key="4"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What industries in Lake Charles are most profitable for vending machines?</h3>
-                <p className="text-stone leading-relaxed">In Lake Charles, gaming, petrochemical, port operations, and tourism sectors show exceptional vending performance. Lake Charles gaming facilities and industrial sites offer high-volume opportunities with shift workers, making these industries particularly attractive for strategic vending machine placement.</p>
-              </motion.div>
-              <motion.div
-                key="5"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.5 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">How do you verify vending locations in Lake Charles?</h3>
-                <p className="text-stone leading-relaxed">We conduct Lake Charles-specific research including verification of casino resorts, chemical plants, port facilities, hotels, and industrial businesses, foot traffic analysis in key areas like Downtown casino area, Prien Lake commercial district, I-10 industrial corridor, and Westlake, and detailed industry research. Our verification process specifically accounts for Lake Charles's casino resort destination with major industrial port.</p>
-              </motion.div>
-              <motion.div
-                key="6"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.6000000000000001 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">Can I get customized leads for specific Lake Charles business districts?</h3>
-                <p className="text-stone leading-relaxed">Yes! We can target specific Lake Charles areas like Downtown casino area, Prien Lake commercial district, I-10 industrial corridor, and Westlake, or focus on particular industries such as gaming, petrochemical, port operations, and tourism. Our team customizes lead packages based on your preferred territories and business type preferences within Lake Charles.</p>
-              </motion.div>
-              <motion.div
-                key="7"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.7000000000000001 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What should I know about operating vending machines in Lake Charles?</h3>
-                <p className="text-stone leading-relaxed">24/7 casino operations and industrial shift schedules require extended service and specific products. Understanding Lake Charles's casino resort destination with major industrial port and focusing on gaming, petrochemical, port operations, and tourism will maximize your vending machine success in this market.</p>
-              </motion.div>
+              {faqItems.map((item, idx) => (
+                <motion.div
+                  key={idx}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: idx * 0.1 }}
+                  viewport={{ once: true }}
+                  className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+                >
+                  <h3 className="text-lg font-semibold text-charcoal mb-3">{item.q}</h3>
+                  <p className="text-stone leading-relaxed">{item.a}</p>
+                </motion.div>
+              ))}
             </div>
           </div>
         </section>
+
+        {/* More cities in Louisiana */}
+        {relatedCities.length > 0 && (
+          <section className="py-12 bg-white border-t border-gray-200">
+            <div className="mx-auto max-w-7xl px-6">
+              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in Louisiana</h2>
+              <div className="flex flex-wrap gap-3">
+                {relatedCities.map(city => (
+                  <Link key={city.slug} href={`/vending-leads/${city.slug}`} className="px-3 py-2 rounded-lg border border-gray-200 bg-cream/60 text-chocolate hover:text-navy">
+                    Vending Leads in {city.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
       </div>
       
       <Footer />
       <ZipCodeModalWrapper />
+      {/* JSON-LD: Breadcrumbs and FAQ */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
+              { '@type': 'ListItem', position: 3, name: 'Louisiana', item: 'https://www.thevendinglocator.com/vending-leads/louisiana' },
+              { '@type': 'ListItem', position: 4, name: 'Lake Charles', item: 'https://www.thevendinglocator.com/vending-leads/manchester-louisiana' }
+            ]
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: faqItems.map(i => ({
+              '@type': 'Question',
+              name: i.q,
+              acceptedAnswer: { '@type': 'Answer', text: i.a }
+            }))
+          })
+        }}
+      />
     </>
   )
 }

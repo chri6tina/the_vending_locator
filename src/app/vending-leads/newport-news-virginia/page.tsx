@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Newport News, Virginia - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Newport News, Virginia. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines newport news virginia, vending leads newport news virginia, vending locations newport news virginia, vending opportunities newport news virginia",
+  "keywords": "vending machines Newport News Virginia, vending leads Newport News Virginia, vending locations Newport News Virginia, vending opportunities Newport News Virginia",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/newport-news-virginia"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

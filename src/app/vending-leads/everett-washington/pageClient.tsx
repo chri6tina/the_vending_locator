@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CpuChipIcon, HeartIcon, ShoppingBagIcon, TruckIcon, BuildingLibraryIcon, CurrencyDollarIcon, SparklesIcon } from '@heroicons/react/24/solid'
+import states from '@/data/states'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
@@ -20,22 +21,22 @@ export default function EverettWashingtonVendingLeadsPage() {
   const cityData = {
     'name': 'Everett',
     'state': 'Washington',
-    'population': '110K+',
-    'businesses': '3K-5K',
-    'industries': '5-8',
-    'verifiedLocations': '60-120',
-    'rating': '4.4/5',
-    'description': 'Major aerospace and manufacturing center'
+    'population': '111K+',
+    'businesses': '7K-11K',
+    'industries': '9-13',
+    'verifiedLocations': '190-330',
+    'rating': '4.7/5',
+    'description': 'North Puget Sound city with aerospace, manufacturing, and port operations'
   };
   
   // Active users counter
-  const [activeUsers, setActiveUsers] = useState(18)
+  const [activeUsers, setActiveUsers] = useState(25)
   const [currentUserIndex, setCurrentUserIndex] = useState(0)
   const [usedNames, setUsedNames] = useState(new Set())
 
   // User names for active users counter
   const [userNames, setUserNames] = useState([
-    'Mike from Everett', 'Sarah in Downtown', 'David in Everett', 'Lisa in Everett',
+    'Mike from Everett', 'Sarah in Everett', 'David in Everett', 'Lisa in Everett',
     'Tom in Everett', 'Jennifer in Everett', 'Robert in Everett', 'Amanda in Everett',
     'Chris in Everett', 'Maria in Everett', 'James in Everett', 'Emily in Everett'
   ])
@@ -46,322 +47,541 @@ export default function EverettWashingtonVendingLeadsPage() {
       setActiveUsers(prev => {
         const change = Math.floor(Math.random() * 3) - 1
         const newValue = prev + change
-        return Math.max(14, Math.min(24, newValue))
+        return Math.max(20, Math.min(35, newValue))
       })
-    }, 3000)
-
+    }, 4000);
     return () => clearInterval(interval)
   }, [])
 
-  // User name rotation effect
+  // Smart rotation of user names
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentUserIndex(prev => {
-        let nextIndex
-        do {
-          nextIndex = Math.floor(Math.random() * userNames.length)
-        } while (usedNames.has(nextIndex) && usedNames.size < userNames.length)
-        
-        if (usedNames.size >= userNames.length) {
+        if (usedNames.size > userNames.length * 0.8) {
           setUsedNames(new Set())
         }
-        
-        setUsedNames(prev => new Set([...prev, nextIndex]))
-        return nextIndex
+        let attempts = 0
+        let nextIndex = prev
+        while (attempts < 50) {
+          nextIndex = (nextIndex + 1) % userNames.length
+          if (!usedNames.has(nextIndex)) {
+            setUsedNames(prev => new Set([...prev, nextIndex]));
+            return nextIndex
+          }
+          attempts++
+        }
+        const randomIndex = Math.floor(Math.random() * userNames.length)
+        setUsedNames(prev => new Set([...prev, randomIndex]));
+        return randomIndex
       })
-    }, 4000)
-
+    }, 5000);
     return () => clearInterval(interval)
   }, [userNames.length, usedNames])
 
+  // Build related Washington cities (for internal linking)
+  const newHampshire = states.find(s => s.slug === 'washington');
+  const relatedCities = newHampshire ? newHampshire.cities.filter(c => c.slug !== 'manchester-washington').slice(0, 8) : [];
+
+  // FAQ items reused for JSON-LD
+  const faqItems = [
+  {
+    q: 'What types of vending machine locations are available in Everett?',
+    a: 'Everett offers diverse vending opportunities including aerospace facilities, manufacturing plants, port operations, healthcare centers, educational institutions, and retail locations. Each location is pre-verified for optimal vending machine success.'
+  },
+  {
+    q: 'How quickly can I get vending machine leads for Everett?',
+    a: 'Our Everett vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
+  },
+  {
+    q: 'What makes Everett a good market for vending machines?',
+    a: 'Everett features a thriving business community with diverse industries including aerospace, manufacturing, and port operations. The city's business density and industrial base create ideal conditions for vending machine success.'
+  },
+  {
+    q: 'Do you provide ongoing support for Everett locations?',
+    a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Everett.'
+  },
+  {
+    q: 'What industries in Everett are best for vending machines?',
+    a: 'Aerospace facilities, manufacturing plants, port operations, healthcare centers, and educational institutions in Everett show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
+  },
+  {
+    q: 'How do you verify the quality of Everett vending locations?',
+    a: 'We conduct thorough research on each Everett location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
+  },
+  {
+    q: 'Can I get customized vending leads for specific areas of Everett?',
+    a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Everett including downtown, aerospace district, and port area based on your preferences and target market requirements.'
+  },
+  {
+    q: 'What's the typical ROI for vending machines in Everett?',
+    a: 'Vending machines in Everett typically show strong ROI due to the city's business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+  }
+];
+
   return (
-    <div className="min-h-screen bg-gray-50">
+    <>
       <Header />
       
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-50 via-white to-indigo-50 py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <motion.h1 
-              className="text-4xl md:text-6xl font-bold text-gray-900 mb-6"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-            >
-              Vending Machine Leads in{' '}
-              <span className="text-blue-600">{cityDisplayName}</span>
-            </motion.h1>
-            
-            <motion.p 
-              className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-            >
-              Find verified vending machine locations and qualified businesses in {cityDisplayName}, {stateDisplayName}. 
-              Get access to our database of {cityData.verifiedLocations}+ verified locations ready for vending machine placement.
-            </motion.p>
+      <div className="min-h-screen bg-warm-white">
+        {/* Breadcrumb Navigation */}
+        <nav className="bg-white border-b border-gray-200 py-3">
+          <div className="container mx-auto px-4">
+            <div className="flex items-center space-x-2 text-sm text-stone">
+              <Link href="/" className="hover:text-navy transition-colors">
+                Home
+              </Link>
+              <span>/</span>
+              <Link href="/vending-leads" className="hover:text-navy transition-colors">
+                Vending Leads
+              </Link>
+              <span>/</span>
+              <Link href={`/vending-leads/${stateDisplayName.toLowerCase().replace(/\s+/g, '-')}`} className="hover:text-navy transition-colors">
+                {stateDisplayName}
+              </Link>
+              <span>/</span>
+              <span className="text-charcoal font-medium">{cityDisplayName}</span>
+            </div>
+          </div>
+        </nav>
 
-            {/* Active Users Counter */}
-            <motion.div 
-              className="flex items-center justify-center space-x-2 mb-8"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-            >
-              <div className="flex -space-x-2">
-                {[...Array(3)].map((_, i) => (
-                  <div key={i} className="w-8 h-8 bg-blue-500 rounded-full border-2 border-white flex items-center justify-center">
-                    <span className="text-white text-xs font-bold">
-                      {userNames[currentUserIndex]?.charAt(0) || 'U'}
-                    </span>
+        {/* Hero Section */}
+        <section className="relative py-20 bg-white overflow-hidden">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto text-center">
+              {/* Active Users Counter */}
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                className="mt-6 sm:mt-8 p-4 bg-cream/50 backdrop-blur-sm rounded-2xl border border-gray-200 shadow-sm max-w-md mx-auto mb-6"
+              >
+                <div className="flex items-center justify-center gap-3">
+                  <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                  <span className="text-sm font-medium text-chocolate">
+                    <span className="font-bold text-coral">{activeUsers}</span> people are choosing plans right now
+                  </span>
+                </div></motion.div>
+
+              {/* Main Headline */}
+              <motion.h1 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                className="text-4xl md:text-6xl font-playfair font-bold text-charcoal mb-6 leading-tight"
+              >
+                Vending Machine Locations in{' '}
+                <span className="text-navy">{cityDisplayName}, {stateDisplayName}</span>
+              </motion.h1>
+
+              {/* City-Specific Value Proposition */}
+              <motion.p 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+                className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
+              >
+                Get comprehensive vending leads for Everett's thriving Washington market, combining local businesses, healthcare systems, and educational facilities for reliable vending machine placement.
+              </motion.p>
+
+              {/* Trust Signals */}
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.8 }}
+                className="mt-6 sm:mt-8 grid grid-cols-2 gap-4 max-w-md mx-auto mb-8"
+              >
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <CheckBadgeIcon className="h-5 w-5 text-green-600" />
+                    <span className="text-sm font-medium text-chocolate">Verified Locations</span>
                   </div>
+                </div>
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <StarIcon className="h-5 w-5 text-yellow-500" />
+                    <span className="text-sm font-medium text-chocolate">4.7/5 Rating</span>
+                  </div>
+                </div>
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <ShieldCheckIcon className="h-5 w-5 text-blue-600" />
+                    <span className="text-sm font-medium text-chocolate">Secure & Reliable</span>
+                  </div>
+                </div>
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <ClockIcon className="h-5 w-5 text-purple-600" />
+                    <span className="text-sm font-medium text-chocolate">Quality Research</span>
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* CTA Buttons */}
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 1.0 }}
+                className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 mb-8"
+              >
+                <button 
+                    onClick={() => {
+                      const pricingSection = document.getElementById('pricing')
+                      if (pricingSection) {
+                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                      }
+                    }}
+                    className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
+                >
+                    Get Started
+                  </button>
+
+              </motion.div>
+
+{/* Social Proof Stats */}
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 1.2 }}
+                className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto"
+              >
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-navy">{cityData.population}</div>
+                  <div className="text-sm text-stone">Population</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-navy">{cityData.businesses}</div>
+                  <div className="text-sm text-stone">Businesses</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-navy">{cityData.industries}</div>
+                  <div className="text-sm text-stone">Industries</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-navy">{cityData.verifiedLocations}</div>
+                  <div className="text-sm text-stone">Verified Locations</div>
+                </div>
+              </motion.div>
+            </div>
+          </div>
+        </section>
+
+        
+
+        {/* Pricing Section */}
+        <section id="pricing" className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
+              >
+                Get Access to Qualified Vending Machine Locations in {cityDisplayName}
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-lg text-stone max-w-3xl mx-auto"
+              >
+                Choose the perfect plan for your vending machine business needs and start accessing qualified locations today.
+              </motion.p>
+            </div>
+            <PricingTable />
+          </div>
+        </section>
+
+        {/* Business Landscape */}
+        <section className="py-16 bg-white">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
+              >
+                Business Landscape in {cityDisplayName}
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-lg text-stone max-w-3xl mx-auto"
+              >
+                Discover the diverse industries and business opportunities that make {cityDisplayName} an ideal market for vending machines.
+              </motion.p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              
+              <motion.div
+                key="Healthcare"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0 }}
+                viewport={{ once: true }}
+                className="bg-blue-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-blue-600 mb-4">
+                  <HeartIcon className="w-12 h-12" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
+                <p className="text-stone leading-relaxed">Everett's healthcare sector includes major hospitals, specialty clinics, and medical offices that generate consistent visitor and employee traffic, ideal for vending machine placement.</p>
+              </motion.div>
+              <motion.div
+                key="Education"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.1 }}
+                viewport={{ once: true }}
+                className="bg-green-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-green-600 mb-4">
+                  <AcademicCapIcon className="w-12 h-12" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
+                <p className="text-stone leading-relaxed">Educational facilities throughout Everett serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services.</p>
+              </motion.div>
+              <motion.div
+                key="Manufacturing"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="bg-purple-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-purple-600 mb-4">
+                  <CpuChipIcon className="w-12 h-12" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
+                <p className="text-stone leading-relaxed">Industrial and manufacturing operations throughout Everett employ substantial workforces with shift-based schedules, offering stable vending placement opportunities with steady traffic.</p>
+              </motion.div>
+              <motion.div
+                key="Retail"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.30000000000000004 }}
+                viewport={{ once: true }}
+                className="bg-orange-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-orange-600 mb-4">
+                  <ShoppingBagIcon className="w-12 h-12" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
+                <p className="text-stone leading-relaxed">Shopping centers and retail districts in Everett offer prime vending locations, with high-traffic areas including food courts, entrances, and common spaces frequented by shoppers.</p>
+              </motion.div>
+              <motion.div
+                key="Office Buildings"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                viewport={{ once: true }}
+                className="bg-indigo-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-indigo-600 mb-4">
+                  <BuildingOfficeIcon className="w-12 h-12" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
+                <p className="text-stone leading-relaxed">Commercial office spaces in Everett offer excellent vending opportunities, with professional tenants and business operations generating consistent foot traffic throughout the workday.</p>
+              </motion.div>
+              <motion.div
+                key="Transportation"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.5 }}
+                viewport={{ once: true }}
+                className="bg-red-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-red-600 mb-4">
+                  <TruckIcon className="w-12 h-12" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
+                <p className="text-stone leading-relaxed">Airports, bus stations, and transit centers throughout Everett generate steady passenger traffic, providing excellent vending placement options in high-traffic areas frequented by travelers.</p>
+              </motion.div>
+            </div>
+          </div>
+        </section>        {/* Why Everett? */}
+        <section className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-8">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-6"
+              >
+                Why Choose Everett for Vending Machines?
+              </motion.h2>
+            </div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
+            >
+              <p className="text-lg text-stone leading-relaxed">
+                Everett offers reliable vending opportunities through its thriving business community, featuring diverse industries, commercial centers, and growing economic sectors. The city's business mix provides stable placement locations with consistent traffic patterns, while Everett's economic activity supports steady consumer spending. The city's combination of established businesses and emerging sectors creates multiple vending placement strategies.
+              </p>
+            </motion.div>
+          </div>
+        </section>
+
+
+
+        {/* Hot Leads Section */}
+        <section id="hot-leads" className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
+              >
+                One-Time Location Packages for {cityDisplayName}
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-lg text-stone max-w-3xl mx-auto"
+              >
+                Get immediate access to qualified vending machine locations without monthly commitments.
+              </motion.p>
+            </div>
+            <HotLeads />
+          </div>
+        </section>
+
+        {/* Vending Course Section */}
+        <section className="py-16 bg-white">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
+              >
+                Learn the Vending Machine Business
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-lg text-stone max-w-3xl mx-auto"
+              >
+                Master the fundamentals of vending machine operations and maximize your success in {cityDisplayName}.
+              </motion.p>
+            </div>
+            <VendingCourse />
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section id="faq" className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
+              >
+                Frequently Asked Questions
+              </motion.h2>
+              <motion.p 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-lg text-chocolate/70 leading-relaxed"
+              >
+                Everything you need to know about vending machine opportunities in {cityDisplayName}.
+              </motion.p>
+            </div>
+            
+            <div className="space-y-6">
+              {faqItems.map((item, idx) => (
+                <motion.div
+                  key={idx}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: idx * 0.1 }}
+                  viewport={{ once: true }}
+                  className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+                >
+                  <h3 className="text-lg font-semibold text-charcoal mb-3">{item.q}</h3>
+                  <p className="text-stone leading-relaxed">{item.a}</p>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* More cities in Washington */}
+        {relatedCities.length > 0 && (
+          <section className="py-12 bg-white border-t border-gray-200">
+            <div className="mx-auto max-w-7xl px-6">
+              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in Washington</h2>
+              <div className="flex flex-wrap gap-3">
+                {relatedCities.map(city => (
+                  <Link key={city.slug} href={`/vending-leads/${city.slug}`} className="px-3 py-2 rounded-lg border border-gray-200 bg-cream/60 text-chocolate hover:text-navy">
+                    Vending Leads in {city.name}
+                  </Link>
                 ))}
               </div>
-              <div className="text-sm text-gray-600">
-                <span className="font-semibold text-blue-600">{activeUsers}</span> people viewing {cityDisplayName} leads right now
-              </div>
-            </motion.div>
-
-            {/* Trust Signals */}
-            <motion.div 
-              className="flex flex-wrap justify-center items-center gap-6 mb-8"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-            >
-              <div className="flex items-center space-x-2">
-                <CheckBadgeIcon className="w-5 h-5 text-green-500" />
-                <span className="text-sm text-gray-600">Verified Locations</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <StarIcon className="w-5 h-5 text-yellow-500" />
-                <span className="text-sm text-gray-600">{cityData.rating} Rating</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <ShieldCheckIcon className="w-5 h-5 text-blue-500" />
-                <span className="text-sm text-gray-600">Secure Access</span>
-              </div>
-            </motion.div>
-
-            {/* CTA Buttons */}
-            <motion.div 
-              className="flex flex-col sm:flex-row gap-4 justify-center"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.8 }}
-            >
-              <Link 
-                href="#pricing" 
-                className="bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200 flex items-center justify-center space-x-2"
-              >
-                <span>Get {cityDisplayName} Leads</span>
-                <SparklesIcon className="w-5 h-5" />
-              </Link>
-              <Link 
-                href="#business-landscape" 
-                className="border border-gray-300 text-gray-700 px-8 py-4 rounded-lg font-semibold hover:bg-gray-50 transition-colors duration-200"
-              >
-                View Business Landscape
-              </Link>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* City Statistics */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="text-3xl font-bold text-blue-600 mb-2">{cityData.population}</div>
-              <div className="text-gray-600">Population</div>
             </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-blue-600 mb-2">{cityData.businesses}</div>
-              <div className="text-gray-600">Businesses</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-blue-600 mb-2">{cityData.industries}</div>
-              <div className="text-gray-600">Industries</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-blue-600 mb-2">{cityData.verifiedLocations}</div>
-              <div className="text-gray-600">Verified Locations</div>
-            </div>
-          </div>
-        </div>
-      </section>
+          </section>
+        )}
 
-      {/* Pricing Table */}
-      <section id="pricing" className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <PricingTable />
-        </div>
-      </section>
-
-      {/* Business Landscape */}
-      <section id="business-landscape" className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              {cityDisplayName} Business Landscape
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Discover the thriving business environment in {cityDisplayName}, {stateDisplayName} and find the perfect locations for your vending machines.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <div className="flex items-center mb-4">
-                <TruckIcon className="w-8 h-8 text-blue-600 mr-3" />
-                <h3 className="text-xl font-semibold text-gray-900">Aerospace & Manufacturing</h3>
-              </div>
-              <p className="text-gray-600">
-                {cityDisplayName} is home to Boeing's largest manufacturing facility and other aerospace companies, providing excellent opportunities for industrial vending machine placement.
-              </p>
-            </div>
-
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <div className="flex items-center mb-4">
-                <BuildingOfficeIcon className="w-8 h-8 text-blue-600 mr-3" />
-                <h3 className="text-xl font-semibold text-gray-900">Corporate Offices</h3>
-              </div>
-              <p className="text-gray-600">
-                Business offices and corporate facilities in {cityDisplayName} provide opportunities for office vending machine placement.
-              </p>
-            </div>
-
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <div className="flex items-center mb-4">
-                <HeartIcon className="w-8 h-8 text-blue-600 mr-3" />
-                <h3 className="text-xl font-semibold text-gray-900">Healthcare Facilities</h3>
-              </div>
-              <p className="text-gray-600">
-                Medical centers and healthcare facilities throughout {cityDisplayName} offer steady vending machine traffic throughout the day.
-              </p>
-            </div>
-
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <div className="flex items-center mb-4">
-                <AcademicCapIcon className="w-8 h-8 text-blue-600 mr-3" />
-                <h3 className="text-xl font-semibold text-gray-900">Educational Institutions</h3>
-              </div>
-              <p className="text-gray-600">
-                Everett Community College and other educational facilities provide consistent student and faculty traffic for reliable vending machine revenue.
-              </p>
-            </div>
-
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <div className="flex items-center mb-4">
-                <BuildingLibraryIcon className="w-8 h-8 text-blue-600 mr-3" />
-                <h3 className="text-xl font-semibold text-gray-900">Government Buildings</h3>
-              </div>
-              <p className="text-gray-600">
-                City offices, courthouses, and government facilities in {cityDisplayName} offer stable, long-term vending machine partnerships.
-              </p>
-            </div>
-
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <div className="flex items-center mb-4">
-                <ShoppingBagIcon className="w-8 h-8 text-blue-600 mr-3" />
-                <h3 className="text-xl font-semibold text-gray-900">Retail & Shopping</h3>
-              </div>
-              <p className="text-gray-600">
-                Shopping centers, retail districts, and entertainment venues in {cityDisplayName} provide diverse vending machine placement opportunities.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Hot Leads */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <HotLeads />
-        </div>
-      </section>
-
-      {/* Vending Course */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <VendingCourse />
-        </div>
-      </section>
-
-      {/* FAQ Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Frequently Asked Questions - {cityDisplayName} Vending Leads
-            </h2>
-            <p className="text-xl text-gray-600">
-              Get answers to common questions about vending machine opportunities in {cityDisplayName}, {stateDisplayName}.
-            </p>
-          </div>
-
-          <div className="space-y-6">
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">
-                What types of businesses in {cityDisplayName} are best for vending machines?
-              </h3>
-              <p className="text-gray-600">
-                {cityDisplayName} offers excellent opportunities in aerospace and manufacturing facilities, corporate offices, healthcare facilities, educational institutions, government buildings, and retail centers. The city's industrial environment provides numerous vending machine placement opportunities.
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">
-                How many verified vending locations are available in {cityDisplayName}?
-              </h3>
-              <p className="text-gray-600">
-                We currently have {cityData.verifiedLocations}+ verified locations in {cityDisplayName} that are ready for vending machine placement. These locations have been pre-qualified and are actively seeking vending machine partnerships.
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">
-                What is the average revenue potential for vending machines in {cityDisplayName}?
-              </h3>
-              <p className="text-gray-600">
-                Vending machine revenue in {cityDisplayName} varies by location type, but our verified locations typically generate $150-600+ per month per machine. Aerospace facilities and corporate offices tend to perform best due to consistent foot traffic.
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">
-                Are there any specific regulations for vending machines in {cityDisplayName}?
-              </h3>
-              <p className="text-gray-600">
-                {cityDisplayName} follows Washington state regulations for vending machines. Our leads include businesses that are already compliant with local requirements, making the setup process smoother for vending machine operators.
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">
-                How quickly can I start placing vending machines in {cityDisplayName}?
-              </h3>
-              <p className="text-gray-600">
-                With our verified leads, you can typically start placing vending machines in {cityDisplayName} within 1-2 weeks of purchasing our leads. The businesses are pre-qualified and ready to partner with vending machine operators.
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h3 className="text-lg font-semibold text-gray-900 mb-3">
-                What support do you provide for vending machine operators in {cityDisplayName}?
-              </h3>
-              <p className="text-gray-600">
-                We provide comprehensive support including location verification, business contact information, placement guidelines, and ongoing assistance to help you succeed in the {cityDisplayName} vending machine market.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      </div>
+      
       <Footer />
       <ZipCodeModalWrapper />
-    </div>
+      {/* JSON-LD: Breadcrumbs and FAQ */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
+              { '@type': 'ListItem', position: 3, name: 'Washington', item: 'https://www.thevendinglocator.com/vending-leads/washington' },
+              { '@type': 'ListItem', position: 4, name: 'Everett', item: 'https://www.thevendinglocator.com/vending-leads/manchester-washington' }
+            ]
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: faqItems.map(i => ({
+              '@type': 'Question',
+              name: i.q,
+              acceptedAnswer: { '@type': 'Answer', text: i.a }
+            }))
+          })
+        }}
+      />
+    </>
   )
 }

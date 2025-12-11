@@ -1,15 +1,16 @@
 import { Metadata } from 'next'
+import PageClient from './pageClient'
 
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Spokane, Washington - The Vending Locator",
-  "description": "Get verified vending machine leads and locations in Spokane, Washington. Find qualified businesses for vending machine placement in this major inland business and healthcare center.",
+  "description": "Get verified vending machine leads and locations in Spokane, Washington. Find qualified businesses for vending machine placement.",
   "keywords": "vending machines Spokane Washington, vending leads Spokane Washington, vending locations Spokane Washington, vending opportunities Spokane Washington",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/spokane-washington"
   },
   "openGraph": {
     "title": "Vending Machine Leads in Spokane, Washington - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Spokane, Washington. Find qualified businesses for vending machine placement in this major inland business and healthcare center.",
+    "description": "Get verified vending machine leads and locations in Spokane, Washington. Find qualified businesses for vending machine placement.",
     "url": "https://www.thevendinglocator.com/vending-leads/spokane-washington",
     "siteName": "The Vending Locator",
     "type": "website"
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
   "twitter": {
     "card": "summary_large_image",
     "title": "Vending Machine Leads in Spokane, Washington - The Vending Locator",
-    "description": "Get verified vending machine leads and locations in Spokane, Washington. Find qualified businesses for vending machine placement in this major inland business and healthcare center."
+    "description": "Get verified vending machine leads and locations in Spokane, Washington. Find qualified businesses for vending machine placement."
   },
   "robots": {
     "index": true,
@@ -25,20 +26,17 @@ export const metadata: Metadata = {
     "googleBot": {
       "index": true,
       "follow": true,
-      'max-video-preview': -1,
-      'max-image-preview': "large",
-      'max-snippet': -1
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1
     }
   }
 }
 
-import PageClient from './pageClient'
-
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;
 
-export default function SpokaneWashingtonVendingLeadsPage() {
+export default function CityPage() {
   return <PageClient />
 }

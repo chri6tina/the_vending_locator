@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Portsmouth, Virginia - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Portsmouth, Virginia. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines portsmouth virginia, vending leads portsmouth virginia, vending locations portsmouth virginia, vending opportunities portsmouth virginia",
+  "keywords": "vending machines Portsmouth Virginia, vending leads Portsmouth Virginia, vending locations Portsmouth Virginia, vending opportunities Portsmouth Virginia",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/portsmouth-virginia"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CpuChipIcon, HeartIcon, ShoppingBagIcon, TruckIcon, BuildingLibraryIcon, CurrencyDollarIcon, SparklesIcon } from '@heroicons/react/24/solid'
+import states from '@/data/states'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
@@ -18,32 +19,27 @@ export default function BossierCityLouisianaVendingLeadsPage() {
   
   // City-specific data
   const cityData = {
-  'name': 'Bossier City',
-  'state': 'Louisiana',
-  'population': '68K+',
-  'businesses': '7K-9K',
-  'industries': '8-10',
-  'verifiedLocations': '150-200',
-  'rating': '4.8/5',
-  'description': 'Thriving business community in Louisiana'
-};
+    'name': 'Bossier City',
+    'state': 'Louisiana',
+    'population': '62K+',
+    'businesses': '4K-7K',
+    'industries': '7-11',
+    'verifiedLocations': '130-230',
+    'rating': '4.7/5',
+    'description': 'Shreveport neighbor with gaming, military, and retail'
+  };
   
   // Active users counter
-  const [activeUsers, setActiveUsers] = useState(28)
+  const [activeUsers, setActiveUsers] = useState(25)
   const [currentUserIndex, setCurrentUserIndex] = useState(0)
   const [usedNames, setUsedNames] = useState(new Set())
-  const [currentPurchaseIndex, setCurrentPurchaseIndex] = useState(0)
-  const [usedPurchases, setUsedPurchases] = useState(new Set())
 
   // User names for active users counter
   const [userNames, setUserNames] = useState([
-    'Mike from Bossier City', 'Sarah in Downtown', 'David in Bossier City', 'Lisa in Bossier City',
+    'Mike from Bossier City', 'Sarah in Bossier City', 'David in Bossier City', 'Lisa in Bossier City',
     'Tom in Bossier City', 'Jennifer in Bossier City', 'Robert in Bossier City', 'Amanda in Bossier City',
     'Chris in Bossier City', 'Maria in Bossier City', 'James in Bossier City', 'Emily in Bossier City'
   ])
-
-  // Recent purchases disabled per requirements
-  const [recentPurchases, setRecentPurchases] = useState<string[]>([])
 
   // Active users counter effect
   useEffect(() => {
@@ -51,13 +47,13 @@ export default function BossierCityLouisianaVendingLeadsPage() {
       setActiveUsers(prev => {
         const change = Math.floor(Math.random() * 3) - 1
         const newValue = prev + change
-        return Math.max(25, Math.min(42, newValue))
+        return Math.max(20, Math.min(35, newValue))
       })
-    }, 4000)
+    }, 4000);
     return () => clearInterval(interval)
   }, [])
 
-  // Smart rotation of user names and recent purchases
+  // Smart rotation of user names
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentUserIndex(prev => {
@@ -69,42 +65,58 @@ export default function BossierCityLouisianaVendingLeadsPage() {
         while (attempts < 50) {
           nextIndex = (nextIndex + 1) % userNames.length
           if (!usedNames.has(nextIndex)) {
-            setUsedNames(prev => new Set([...prev, nextIndex]))
+            setUsedNames(prev => new Set([...prev, nextIndex]));
             return nextIndex
           }
           attempts++
         }
         const randomIndex = Math.floor(Math.random() * userNames.length)
-        setUsedNames(prev => new Set([...prev, randomIndex]))
+        setUsedNames(prev => new Set([...prev, randomIndex]));
         return randomIndex
       })
-    }, 5000)
+    }, 5000);
     return () => clearInterval(interval)
   }, [userNames.length, usedNames])
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentPurchaseIndex(prev => {
-        if (usedPurchases.size > recentPurchases.length * 0.8) {
-          setUsedPurchases(new Set())
-        }
-        let attempts = 0
-        let nextIndex = prev
-        while (attempts < 50) {
-          nextIndex = (nextIndex + 1) % recentPurchases.length
-          if (!usedPurchases.has(nextIndex)) {
-            setUsedPurchases(prev => new Set([...prev, nextIndex]))
-            return nextIndex
-          }
-          attempts++
-        }
-        const randomIndex = Math.floor(Math.random() * recentPurchases.length)
-        setUsedPurchases(prev => new Set([...prev, randomIndex]))
-        return randomIndex
-      })
-    }, 6000)
-    return () => clearInterval(interval)
-  }, [recentPurchases.length, usedPurchases])
+  // Build related Louisiana cities (for internal linking)
+  const newHampshire = states.find(s => s.slug === 'louisiana');
+  const relatedCities = newHampshire ? newHampshire.cities.filter(c => c.slug !== 'manchester-louisiana').slice(0, 8) : [];
+
+  // FAQ items reused for JSON-LD
+  const faqItems = [
+  {
+    q: 'What types of vending machine locations are available in Bossier City?',
+    a: 'Bossier City offers diverse vending opportunities including gaming facilities, military installations, retail centers, healthcare facilities, educational institutions, and office buildings. Each location is pre-verified for optimal vending machine success.'
+  },
+  {
+    q: 'How quickly can I get vending machine leads for Bossier City?',
+    a: 'Our Bossier City vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
+  },
+  {
+    q: 'What makes Bossier City a good market for vending machines?',
+    a: 'Bossier City features a thriving business community with diverse industries including gaming, military, and retail. The city's business density and entertainment sector create ideal conditions for vending machine success.'
+  },
+  {
+    q: 'Do you provide ongoing support for Bossier City locations?',
+    a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Bossier City.'
+  },
+  {
+    q: 'What industries in Bossier City are best for vending machines?',
+    a: 'Gaming facilities, military installations, retail centers, healthcare facilities, and educational institutions in Bossier City show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
+  },
+  {
+    q: 'How do you verify the quality of Bossier City vending locations?',
+    a: 'We conduct thorough research on each Bossier City location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
+  },
+  {
+    q: 'Can I get customized vending leads for specific areas of Bossier City?',
+    a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or entertainment areas within Bossier City including casino district, military base area, and retail corridors based on your preferences and target market requirements.'
+  },
+  {
+    q: 'What's the typical ROI for vending machines in Bossier City?',
+    a: 'Vending machines in Bossier City typically show strong ROI due to the city's business density and entertainment economy. Our research shows average payback periods of 10-15 months for well-placed machines.'
+  }
+];
 
   return (
     <>
@@ -123,8 +135,8 @@ export default function BossierCityLouisianaVendingLeadsPage() {
                 Vending Leads
               </Link>
               <span>/</span>
-              <Link href="/vending-leads/louisiana" className="hover:text-navy transition-colors">
-                Louisiana
+              <Link href={`/vending-leads/${stateDisplayName.toLowerCase().replace(/\s+/g, '-')}`} className="hover:text-navy transition-colors">
+                {stateDisplayName}
               </Link>
               <span>/</span>
               <span className="text-charcoal font-medium">{cityDisplayName}</span>
@@ -136,17 +148,19 @@ export default function BossierCityLouisianaVendingLeadsPage() {
         <section className="relative py-20 bg-white overflow-hidden">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto text-center">
-              {/* Active Users Counter Pill */}
+              {/* Active Users Counter */}
               <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
-                className="inline-flex items-center bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium mb-6"
+                className="mt-6 sm:mt-8 p-4 bg-cream/50 backdrop-blur-sm rounded-2xl border border-gray-200 shadow-sm max-w-md mx-auto mb-6"
               >
-                <UsersIcon className="w-4 h-4 mr-2" />
-                <span className="animate-pulse">{activeUsers} people</span>
-                <span className="ml-2">are currently viewing vending locations</span>
-              </motion.div>
+                <div className="flex items-center justify-center gap-3">
+                  <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                  <span className="text-sm font-medium text-chocolate">
+                    <span className="font-bold text-coral">{activeUsers}</span> people are choosing plans right now
+                  </span>
+                </div></motion.div>
 
               {/* Main Headline */}
               <motion.h1 
@@ -166,46 +180,64 @@ export default function BossierCityLouisianaVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Access verified vending machine locations across Bossier City's diverse business community, where local commerce, healthcare facilities, and educational institutions create steady opportunities for vending placement.
+                Get comprehensive vending leads for Bossier City's thriving Louisiana market, combining local businesses, healthcare systems, and educational facilities for reliable vending machine placement.
               </motion.p>
 
-              {/* Trust/Feature Badges */}
+              {/* Trust Signals */}
               <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.8 }}
-                className="flex flex-wrap gap-4 mb-8 justify-center"
+                className="mt-6 sm:mt-8 grid grid-cols-2 gap-4 max-w-md mx-auto mb-8"
               >
-                <div className="flex items-center gap-2 bg-green-50 text-green-700 px-3 py-2 rounded-full text-sm">
-                  <CheckBadgeIcon className="w-4 h-4" />
-                  <span>Pre-verified locations</span>
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <CheckBadgeIcon className="h-5 w-5 text-green-600" />
+                    <span className="text-sm font-medium text-chocolate">Verified Locations</span>
+                  </div>
                 </div>
-                <div className="flex items-center gap-2 bg-blue-50 text-blue-700 px-3 py-2 rounded-full text-sm">
-                  <ClockIcon className="w-4 h-4" />
-                  <span>3-5 day delivery</span>
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <StarIcon className="h-5 w-5 text-yellow-500" />
+                    <span className="text-sm font-medium text-chocolate">4.7/5 Rating</span>
+                  </div>
                 </div>
-                <div className="flex items-center gap-2 bg-purple-50 text-purple-700 px-3 py-2 rounded-full text-sm">
-                  <StarIcon className="w-4 h-4" />
-                  <span>4.8/5 rating</span>
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <ShieldCheckIcon className="h-5 w-5 text-blue-600" />
+                    <span className="text-sm font-medium text-chocolate">Secure & Reliable</span>
+                  </div>
+                </div>
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <ClockIcon className="h-5 w-5 text-purple-600" />
+                    <span className="text-sm font-medium text-chocolate">Quality Research</span>
+                  </div>
                 </div>
               </motion.div>
 
-              {/* CTA Button - Single button only */}
+              {/* CTA Buttons */}
               <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 1.0 }}
-                className="flex flex-col sm:flex-row gap-4 mb-8 justify-center items-center"
+                className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 mb-8"
               >
-                <a 
-                  href="#pricing"
-                  className="bg-navy hover:bg-navy/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 min-w-[200px] text-center"
+                <button 
+                    onClick={() => {
+                      const pricingSection = document.getElementById('pricing')
+                      if (pricingSection) {
+                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                      }
+                    }}
+                    className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
                 >
-                  View Pricing Plans
-                </a>
+                    Get Started
+                  </button>
+
               </motion.div>
 
-              {/* Social Proof Stats */}
+{/* Social Proof Stats */}
               <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -232,6 +264,8 @@ export default function BossierCityLouisianaVendingLeadsPage() {
             </div>
           </div>
         </section>
+
+        
 
         {/* Pricing Section */}
         <section id="pricing" className="py-16 bg-warm-white">
@@ -295,10 +329,10 @@ export default function BossierCityLouisianaVendingLeadsPage() {
                 className="bg-blue-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
                 <div className="text-blue-600 mb-4">
-                  <BuildingOfficeIcon className="w-12 h-12" />
+                  <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Healthcare facilities in Bossier City serve large patient populations and employ significant staff numbers, providing stable vending opportunities with extended operating hours and steady foot traffic.</p>
+                <p className="text-stone leading-relaxed">Bossier City's healthcare sector includes major hospitals, specialty clinics, and medical offices that generate consistent visitor and employee traffic, ideal for vending machine placement.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -312,7 +346,7 @@ export default function BossierCityLouisianaVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Educational institutions in Bossier City provide consistent student and staff populations, with schools, colleges, and universities offering year-round vending opportunities across campus facilities.</p>
+                <p className="text-stone leading-relaxed">Educational facilities throughout Bossier City serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -326,7 +360,7 @@ export default function BossierCityLouisianaVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Bossier City's manufacturing sector includes industrial facilities and production plants with large employee bases working extended shifts, creating ideal conditions for vending machine placement.</p>
+                <p className="text-stone leading-relaxed">Industrial and manufacturing operations throughout Bossier City employ substantial workforces with shift-based schedules, offering stable vending placement opportunities with steady traffic.</p>
               </motion.div>
               <motion.div
                 key="Retail"
@@ -340,7 +374,7 @@ export default function BossierCityLouisianaVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Bossier City's retail sector features shopping centers, department stores, and specialty shops with consistent customer flow, offering excellent vending machine placement options.</p>
+                <p className="text-stone leading-relaxed">Shopping centers and retail districts in Bossier City offer prime vending locations, with high-traffic areas including food courts, entrances, and common spaces frequented by shoppers.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -354,7 +388,7 @@ export default function BossierCityLouisianaVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Office buildings throughout Bossier City feature corporate tenants, professional firms, and business services with steady daily traffic, providing reliable vending machine placement options.</p>
+                <p className="text-stone leading-relaxed">Commercial office spaces in Bossier City offer excellent vending opportunities, with professional tenants and business operations generating consistent foot traffic throughout the workday.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -368,7 +402,7 @@ export default function BossierCityLouisianaVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Bossier City's transportation hubs including airports, transit centers, and transportation facilities provide high-volume passenger traffic, creating exceptional vending machine placement opportunities.</p>
+                <p className="text-stone leading-relaxed">Airports, bus stations, and transit centers throughout Bossier City generate steady passenger traffic, providing excellent vending placement options in high-traffic areas frequented by travelers.</p>
               </motion.div>
             </div>
           </div>
@@ -394,7 +428,7 @@ export default function BossierCityLouisianaVendingLeadsPage() {
               className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
             >
               <p className="text-lg text-stone leading-relaxed">
-                The Bossier City market presents excellent vending potential through its combination of local businesses, healthcare systems, educational facilities, and commercial districts. The city's diverse economy ensures multiple traffic sources, while Bossier City's business density creates numerous placement options. The city's economic growth and business-friendly environment support long-term vending success with steady consumer demand.
+                Bossier City offers reliable vending opportunities through its thriving business community, featuring diverse industries, commercial centers, and growing economic sectors. The city's business mix provides stable placement locations with consistent traffic patterns, while Bossier City's economic activity supports steady consumer spending. The city's combination of established businesses and emerging sectors creates multiple vending placement strategies.
               </p>
             </motion.div>
           </div>
@@ -403,7 +437,7 @@ export default function BossierCityLouisianaVendingLeadsPage() {
 
 
         {/* Hot Leads Section */}
-        <section className="py-16 bg-warm-white">
+        <section id="hot-leads" className="py-16 bg-warm-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <motion.h2
@@ -457,7 +491,7 @@ export default function BossierCityLouisianaVendingLeadsPage() {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-16 bg-warm-white">
+        <section id="faq" className="py-16 bg-warm-white">
           <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <motion.h2
@@ -469,114 +503,85 @@ export default function BossierCityLouisianaVendingLeadsPage() {
               >
                 Frequently Asked Questions
               </motion.h2>
-              <motion.p
+              <motion.p 
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
                 viewport={{ once: true }}
-                className="text-lg text-stone"
+                className="text-lg text-chocolate/70 leading-relaxed"
               >
                 Everything you need to know about vending machine opportunities in {cityDisplayName}.
               </motion.p>
             </div>
             
             <div className="space-y-6">
-              
-              <motion.div
-                key="0"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What types of vending machine locations are available in Bossier City?</h3>
-                <p className="text-stone leading-relaxed">Bossier City specializes in military, gaming, retail, and healthcare, with vending opportunities in military installations, casinos, shopping centers, medical facilities, and defense contractors. Each location is carefully selected based on Bossier City's Barksdale Air Force Base and casino entertainment.</p>
-              </motion.div>
-              <motion.div
-                key="1"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.1 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">How quickly can I start placing vending machines in Bossier City?</h3>
-                <p className="text-stone leading-relaxed">Our Bossier City vending leads are delivered within 3-5 business days. We provide comprehensive research focused on Bossier City's military, gaming, retail, and healthcare, including verified business contacts, foot traffic analysis in areas like Barksdale Boulevard, Airline Drive corridor, East Texas Street casino area, and Traffic Street, and placement strategies specific to this market.</p>
-              </motion.div>
-              <motion.div
-                key="2"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What makes Bossier City ideal for vending machine placement?</h3>
-                <p className="text-stone leading-relaxed">Bossier City's Barksdale Air Force Base and casino entertainment creates exceptional vending conditions. The concentration of military, gaming, retail, and healthcare ensures consistent customer traffic and strong revenue potential throughout the year.</p>
-              </motion.div>
-              <motion.div
-                key="3"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.30000000000000004 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">Which Bossier City neighborhoods offer the best vending opportunities?</h3>
-                <p className="text-stone leading-relaxed">Prime vending locations in Bossier City include Barksdale Boulevard, Airline Drive corridor, East Texas Street casino area, and Traffic Street. These areas combine high foot traffic, strong business density, and the demographics that drive vending machine success in Bossier City's market.</p>
-              </motion.div>
-              <motion.div
-                key="4"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What industries in Bossier City are most profitable for vending machines?</h3>
-                <p className="text-stone leading-relaxed">In Bossier City, military, gaming, retail, and healthcare sectors show exceptional vending performance. Bossier City military base and casino locations offer high-volume traffic with 24/7 operations, making these industries particularly attractive for strategic vending machine placement.</p>
-              </motion.div>
-              <motion.div
-                key="5"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.5 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">How do you verify vending locations in Bossier City?</h3>
-                <p className="text-stone leading-relaxed">We conduct Bossier City-specific research including verification of military installations, casinos, shopping centers, medical facilities, and defense contractors, foot traffic analysis in key areas like Barksdale Boulevard, Airline Drive corridor, East Texas Street casino area, and Traffic Street, and detailed industry research. Our verification process specifically accounts for Bossier City's Barksdale Air Force Base and casino entertainment.</p>
-              </motion.div>
-              <motion.div
-                key="6"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.6000000000000001 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">Can I get customized leads for specific Bossier City business districts?</h3>
-                <p className="text-stone leading-relaxed">Yes! We can target specific Bossier City areas like Barksdale Boulevard, Airline Drive corridor, East Texas Street casino area, and Traffic Street, or focus on particular industries such as military, gaming, retail, and healthcare. Our team customizes lead packages based on your preferred territories and business type preferences within Bossier City.</p>
-              </motion.div>
-              <motion.div
-                key="7"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.7000000000000001 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What should I know about operating vending machines in Bossier City?</h3>
-                <p className="text-stone leading-relaxed">military personnel and gaming customers have distinct preferences requiring tailored product offerings. Understanding Bossier City's Barksdale Air Force Base and casino entertainment and focusing on military, gaming, retail, and healthcare will maximize your vending machine success in this market.</p>
-              </motion.div>
+              {faqItems.map((item, idx) => (
+                <motion.div
+                  key={idx}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: idx * 0.1 }}
+                  viewport={{ once: true }}
+                  className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+                >
+                  <h3 className="text-lg font-semibold text-charcoal mb-3">{item.q}</h3>
+                  <p className="text-stone leading-relaxed">{item.a}</p>
+                </motion.div>
+              ))}
             </div>
           </div>
         </section>
+
+        {/* More cities in Louisiana */}
+        {relatedCities.length > 0 && (
+          <section className="py-12 bg-white border-t border-gray-200">
+            <div className="mx-auto max-w-7xl px-6">
+              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in Louisiana</h2>
+              <div className="flex flex-wrap gap-3">
+                {relatedCities.map(city => (
+                  <Link key={city.slug} href={`/vending-leads/${city.slug}`} className="px-3 py-2 rounded-lg border border-gray-200 bg-cream/60 text-chocolate hover:text-navy">
+                    Vending Leads in {city.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
       </div>
       
       <Footer />
       <ZipCodeModalWrapper />
+      {/* JSON-LD: Breadcrumbs and FAQ */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
+              { '@type': 'ListItem', position: 3, name: 'Louisiana', item: 'https://www.thevendinglocator.com/vending-leads/louisiana' },
+              { '@type': 'ListItem', position: 4, name: 'Bossier City', item: 'https://www.thevendinglocator.com/vending-leads/manchester-louisiana' }
+            ]
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: faqItems.map(i => ({
+              '@type': 'Question',
+              name: i.q,
+              acceptedAnswer: { '@type': 'Answer', text: i.a }
+            }))
+          })
+        }}
+      />
     </>
   )
 }

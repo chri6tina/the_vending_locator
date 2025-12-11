@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Roanoke, Virginia - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Roanoke, Virginia. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines roanoke virginia, vending leads roanoke virginia, vending locations roanoke virginia, vending opportunities roanoke virginia",
+  "keywords": "vending machines Roanoke Virginia, vending leads Roanoke Virginia, vending locations Roanoke Virginia, vending opportunities Roanoke Virginia",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/roanoke-virginia"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

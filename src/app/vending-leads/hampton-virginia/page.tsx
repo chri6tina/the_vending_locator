@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Hampton, Virginia - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Hampton, Virginia. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines hampton virginia, vending leads hampton virginia, vending locations hampton virginia, vending opportunities hampton virginia",
+  "keywords": "vending machines Hampton Virginia, vending leads Hampton Virginia, vending locations Hampton Virginia, vending opportunities Hampton Virginia",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/hampton-virginia"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

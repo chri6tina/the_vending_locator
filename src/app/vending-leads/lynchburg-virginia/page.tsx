@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Lynchburg, Virginia - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Lynchburg, Virginia. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines lynchburg virginia, vending leads lynchburg virginia, vending locations lynchburg virginia, vending opportunities lynchburg virginia",
+  "keywords": "vending machines Lynchburg Virginia, vending leads Lynchburg Virginia, vending locations Lynchburg Virginia, vending opportunities Lynchburg Virginia",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/lynchburg-virginia"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

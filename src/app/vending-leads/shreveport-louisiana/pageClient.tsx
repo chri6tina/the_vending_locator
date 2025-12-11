@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CpuChipIcon, HeartIcon, ShoppingBagIcon, TruckIcon, BuildingLibraryIcon, CurrencyDollarIcon, SparklesIcon } from '@heroicons/react/24/solid'
+import states from '@/data/states'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
@@ -18,32 +19,27 @@ export default function ShreveportLouisianaVendingLeadsPage() {
   
   // City-specific data
   const cityData = {
-  'name': 'Shreveport',
-  'state': 'Louisiana',
-  'population': '185K+',
-  'businesses': '15K+',
-  'industries': '10-12',
-  'verifiedLocations': '300-400',
-  'rating': '4.8/5',
-  'description': 'Thriving business community in Louisiana'
-};
+    'name': 'Shreveport',
+    'state': 'Louisiana',
+    'population': '187K+',
+    'businesses': '11K-16K',
+    'industries': '10-14',
+    'verifiedLocations': '250-430',
+    'rating': '4.7/5',
+    'description': 'Northwest Louisiana hub with gaming, military, and healthcare'
+  };
   
   // Active users counter
-  const [activeUsers, setActiveUsers] = useState(28)
+  const [activeUsers, setActiveUsers] = useState(25)
   const [currentUserIndex, setCurrentUserIndex] = useState(0)
   const [usedNames, setUsedNames] = useState(new Set())
-  const [currentPurchaseIndex, setCurrentPurchaseIndex] = useState(0)
-  const [usedPurchases, setUsedPurchases] = useState(new Set())
 
   // User names for active users counter
   const [userNames, setUserNames] = useState([
-    'Mike from Shreveport', 'Sarah in Downtown', 'David in Shreveport', 'Lisa in Shreveport',
+    'Mike from Shreveport', 'Sarah in Shreveport', 'David in Shreveport', 'Lisa in Shreveport',
     'Tom in Shreveport', 'Jennifer in Shreveport', 'Robert in Shreveport', 'Amanda in Shreveport',
     'Chris in Shreveport', 'Maria in Shreveport', 'James in Shreveport', 'Emily in Shreveport'
   ])
-
-  // Recent purchases disabled per requirements
-  const [recentPurchases, setRecentPurchases] = useState<string[]>([])
 
   // Active users counter effect
   useEffect(() => {
@@ -51,13 +47,13 @@ export default function ShreveportLouisianaVendingLeadsPage() {
       setActiveUsers(prev => {
         const change = Math.floor(Math.random() * 3) - 1
         const newValue = prev + change
-        return Math.max(25, Math.min(42, newValue))
+        return Math.max(20, Math.min(35, newValue))
       })
-    }, 4000)
+    }, 4000);
     return () => clearInterval(interval)
   }, [])
 
-  // Smart rotation of user names and recent purchases
+  // Smart rotation of user names
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentUserIndex(prev => {
@@ -69,42 +65,58 @@ export default function ShreveportLouisianaVendingLeadsPage() {
         while (attempts < 50) {
           nextIndex = (nextIndex + 1) % userNames.length
           if (!usedNames.has(nextIndex)) {
-            setUsedNames(prev => new Set([...prev, nextIndex]))
+            setUsedNames(prev => new Set([...prev, nextIndex]));
             return nextIndex
           }
           attempts++
         }
         const randomIndex = Math.floor(Math.random() * userNames.length)
-        setUsedNames(prev => new Set([...prev, randomIndex]))
+        setUsedNames(prev => new Set([...prev, randomIndex]));
         return randomIndex
       })
-    }, 5000)
+    }, 5000);
     return () => clearInterval(interval)
   }, [userNames.length, usedNames])
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentPurchaseIndex(prev => {
-        if (usedPurchases.size > recentPurchases.length * 0.8) {
-          setUsedPurchases(new Set())
-        }
-        let attempts = 0
-        let nextIndex = prev
-        while (attempts < 50) {
-          nextIndex = (nextIndex + 1) % recentPurchases.length
-          if (!usedPurchases.has(nextIndex)) {
-            setUsedPurchases(prev => new Set([...prev, nextIndex]))
-            return nextIndex
-          }
-          attempts++
-        }
-        const randomIndex = Math.floor(Math.random() * recentPurchases.length)
-        setUsedPurchases(prev => new Set([...prev, randomIndex]))
-        return randomIndex
-      })
-    }, 6000)
-    return () => clearInterval(interval)
-  }, [recentPurchases.length, usedPurchases])
+  // Build related Louisiana cities (for internal linking)
+  const newHampshire = states.find(s => s.slug === 'louisiana');
+  const relatedCities = newHampshire ? newHampshire.cities.filter(c => c.slug !== 'manchester-louisiana').slice(0, 8) : [];
+
+  // FAQ items reused for JSON-LD
+  const faqItems = [
+  {
+    q: 'What types of vending machine locations are available in Shreveport?',
+    a: 'Shreveport offers diverse vending opportunities including gaming facilities, military installations, healthcare centers, educational institutions, retail locations, and office buildings. Each location is pre-verified for optimal vending machine success.'
+  },
+  {
+    q: 'How quickly can I get vending machine leads for Shreveport?',
+    a: 'Our Shreveport vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
+  },
+  {
+    q: 'What makes Shreveport a good market for vending machines?',
+    a: 'Shreveport features a thriving business community with diverse industries including gaming, military, and healthcare. The city's business density and entertainment sector create ideal conditions for vending machine success.'
+  },
+  {
+    q: 'Do you provide ongoing support for Shreveport locations?',
+    a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Shreveport.'
+  },
+  {
+    q: 'What industries in Shreveport are best for vending machines?',
+    a: 'Gaming facilities, military installations, healthcare centers, educational institutions, and office buildings in Shreveport show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
+  },
+  {
+    q: 'How do you verify the quality of Shreveport vending locations?',
+    a: 'We conduct thorough research on each Shreveport location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
+  },
+  {
+    q: 'Can I get customized vending leads for specific areas of Shreveport?',
+    a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or entertainment areas within Shreveport including downtown, casino district, and military base area based on your preferences and target market requirements.'
+  },
+  {
+    q: 'What's the typical ROI for vending machines in Shreveport?',
+    a: 'Vending machines in Shreveport typically show strong ROI due to the city's business density and entertainment economy. Our research shows average payback periods of 10-15 months for well-placed machines.'
+  }
+];
 
   return (
     <>
@@ -123,8 +135,8 @@ export default function ShreveportLouisianaVendingLeadsPage() {
                 Vending Leads
               </Link>
               <span>/</span>
-              <Link href="/vending-leads/louisiana" className="hover:text-navy transition-colors">
-                Louisiana
+              <Link href={`/vending-leads/${stateDisplayName.toLowerCase().replace(/\s+/g, '-')}`} className="hover:text-navy transition-colors">
+                {stateDisplayName}
               </Link>
               <span>/</span>
               <span className="text-charcoal font-medium">{cityDisplayName}</span>
@@ -136,17 +148,19 @@ export default function ShreveportLouisianaVendingLeadsPage() {
         <section className="relative py-20 bg-white overflow-hidden">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto text-center">
-              {/* Active Users Counter Pill */}
+              {/* Active Users Counter */}
               <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
-                className="inline-flex items-center bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium mb-6"
+                className="mt-6 sm:mt-8 p-4 bg-cream/50 backdrop-blur-sm rounded-2xl border border-gray-200 shadow-sm max-w-md mx-auto mb-6"
               >
-                <UsersIcon className="w-4 h-4 mr-2" />
-                <span className="animate-pulse">{activeUsers} people</span>
-                <span className="ml-2">are currently viewing vending locations</span>
-              </motion.div>
+                <div className="flex items-center justify-center gap-3">
+                  <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                  <span className="text-sm font-medium text-chocolate">
+                    <span className="font-bold text-coral">{activeUsers}</span> people are choosing plans right now
+                  </span>
+                </div></motion.div>
 
               {/* Main Headline */}
               <motion.h1 
@@ -169,43 +183,61 @@ export default function ShreveportLouisianaVendingLeadsPage() {
                 Get comprehensive vending leads for Shreveport's thriving Louisiana market, combining local businesses, healthcare systems, and educational facilities for reliable vending machine placement.
               </motion.p>
 
-              {/* Trust/Feature Badges */}
+              {/* Trust Signals */}
               <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.8 }}
-                className="flex flex-wrap gap-4 mb-8 justify-center"
+                className="mt-6 sm:mt-8 grid grid-cols-2 gap-4 max-w-md mx-auto mb-8"
               >
-                <div className="flex items-center gap-2 bg-green-50 text-green-700 px-3 py-2 rounded-full text-sm">
-                  <CheckBadgeIcon className="w-4 h-4" />
-                  <span>Pre-verified locations</span>
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <CheckBadgeIcon className="h-5 w-5 text-green-600" />
+                    <span className="text-sm font-medium text-chocolate">Verified Locations</span>
+                  </div>
                 </div>
-                <div className="flex items-center gap-2 bg-blue-50 text-blue-700 px-3 py-2 rounded-full text-sm">
-                  <ClockIcon className="w-4 h-4" />
-                  <span>3-5 day delivery</span>
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <StarIcon className="h-5 w-5 text-yellow-500" />
+                    <span className="text-sm font-medium text-chocolate">4.7/5 Rating</span>
+                  </div>
                 </div>
-                <div className="flex items-center gap-2 bg-purple-50 text-purple-700 px-3 py-2 rounded-full text-sm">
-                  <StarIcon className="w-4 h-4" />
-                  <span>4.8/5 rating</span>
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <ShieldCheckIcon className="h-5 w-5 text-blue-600" />
+                    <span className="text-sm font-medium text-chocolate">Secure & Reliable</span>
+                  </div>
+                </div>
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <ClockIcon className="h-5 w-5 text-purple-600" />
+                    <span className="text-sm font-medium text-chocolate">Quality Research</span>
+                  </div>
                 </div>
               </motion.div>
 
-              {/* CTA Button - Single button only */}
+              {/* CTA Buttons */}
               <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 1.0 }}
-                className="flex flex-col sm:flex-row gap-4 mb-8 justify-center items-center"
+                className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 mb-8"
               >
-                <a 
-                  href="#pricing"
-                  className="bg-navy hover:bg-navy/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 min-w-[200px] text-center"
+                <button 
+                    onClick={() => {
+                      const pricingSection = document.getElementById('pricing')
+                      if (pricingSection) {
+                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                      }
+                    }}
+                    className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
                 >
-                  View Pricing Plans
-                </a>
+                    Get Started
+                  </button>
+
               </motion.div>
 
-              {/* Social Proof Stats */}
+{/* Social Proof Stats */}
               <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -232,6 +264,8 @@ export default function ShreveportLouisianaVendingLeadsPage() {
             </div>
           </div>
         </section>
+
+        
 
         {/* Pricing Section */}
         <section id="pricing" className="py-16 bg-warm-white">
@@ -295,7 +329,7 @@ export default function ShreveportLouisianaVendingLeadsPage() {
                 className="bg-blue-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
                 <div className="text-blue-600 mb-4">
-                  <BuildingOfficeIcon className="w-12 h-12" />
+                  <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
                 <p className="text-stone leading-relaxed">Shreveport's healthcare sector includes major hospitals, specialty clinics, and medical offices that generate consistent visitor and employee traffic, ideal for vending machine placement.</p>
@@ -394,7 +428,7 @@ export default function ShreveportLouisianaVendingLeadsPage() {
               className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
             >
               <p className="text-lg text-stone leading-relaxed">
-                Shreveport offers strong vending opportunities through its diverse business community, combining local commerce, healthcare facilities, educational institutions, and growing commercial sectors. The city's business mix provides multiple placement options with varying traffic patterns, while Shreveport's economic stability supports consistent consumer demand. The city's combination of established businesses and growing sectors creates reliable vending placement opportunities.
+                Shreveport offers reliable vending opportunities through its thriving business community, featuring diverse industries, commercial centers, and growing economic sectors. The city's business mix provides stable placement locations with consistent traffic patterns, while Shreveport's economic activity supports steady consumer spending. The city's combination of established businesses and emerging sectors creates multiple vending placement strategies.
               </p>
             </motion.div>
           </div>
@@ -403,7 +437,7 @@ export default function ShreveportLouisianaVendingLeadsPage() {
 
 
         {/* Hot Leads Section */}
-        <section className="py-16 bg-warm-white">
+        <section id="hot-leads" className="py-16 bg-warm-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <motion.h2
@@ -457,7 +491,7 @@ export default function ShreveportLouisianaVendingLeadsPage() {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-16 bg-warm-white">
+        <section id="faq" className="py-16 bg-warm-white">
           <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <motion.h2
@@ -469,114 +503,85 @@ export default function ShreveportLouisianaVendingLeadsPage() {
               >
                 Frequently Asked Questions
               </motion.h2>
-              <motion.p
+              <motion.p 
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
                 viewport={{ once: true }}
-                className="text-lg text-stone"
+                className="text-lg text-chocolate/70 leading-relaxed"
               >
                 Everything you need to know about vending machine opportunities in {cityDisplayName}.
               </motion.p>
             </div>
             
             <div className="space-y-6">
-              
-              <motion.div
-                key="0"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What types of vending machine locations are available in Shreveport?</h3>
-                <p className="text-stone leading-relaxed">Shreveport specializes in gaming, healthcare, military, oil and gas, and entertainment, with vending opportunities in casinos, hospitals, military installations, oil companies, and entertainment venues. Each location is carefully selected based on Shreveport's casino entertainment hub with Barksdale Air Force Base.</p>
-              </motion.div>
-              <motion.div
-                key="1"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.1 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">How quickly can I start placing vending machines in Shreveport?</h3>
-                <p className="text-stone leading-relaxed">Our Shreveport vending leads are delivered within 3-5 business days. We provide comprehensive research focused on Shreveport's gaming, healthcare, military, oil and gas, and entertainment, including verified business contacts, foot traffic analysis in areas like Downtown casino district, Youree Drive corridor, Barksdale AFB vicinity, and South Shreveport, and placement strategies specific to this market.</p>
-              </motion.div>
-              <motion.div
-                key="2"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What makes Shreveport ideal for vending machine placement?</h3>
-                <p className="text-stone leading-relaxed">Shreveport's casino entertainment hub with Barksdale Air Force Base creates exceptional vending conditions. The concentration of gaming, healthcare, military, oil and gas, and entertainment ensures consistent customer traffic and strong revenue potential throughout the year.</p>
-              </motion.div>
-              <motion.div
-                key="3"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.30000000000000004 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">Which Shreveport neighborhoods offer the best vending opportunities?</h3>
-                <p className="text-stone leading-relaxed">Prime vending locations in Shreveport include Downtown casino district, Youree Drive corridor, Barksdale AFB vicinity, and South Shreveport. These areas combine high foot traffic, strong business density, and the demographics that drive vending machine success in Shreveport's market.</p>
-              </motion.div>
-              <motion.div
-                key="4"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What industries in Shreveport are most profitable for vending machines?</h3>
-                <p className="text-stone leading-relaxed">In Shreveport, gaming, healthcare, military, oil and gas, and entertainment sectors show exceptional vending performance. Shreveport casino and military locations offer high-volume traffic with extended operating hours, making these industries particularly attractive for strategic vending machine placement.</p>
-              </motion.div>
-              <motion.div
-                key="5"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.5 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">How do you verify vending locations in Shreveport?</h3>
-                <p className="text-stone leading-relaxed">We conduct Shreveport-specific research including verification of casinos, hospitals, military installations, oil companies, and entertainment venues, foot traffic analysis in key areas like Downtown casino district, Youree Drive corridor, Barksdale AFB vicinity, and South Shreveport, and detailed industry research. Our verification process specifically accounts for Shreveport's casino entertainment hub with Barksdale Air Force Base.</p>
-              </motion.div>
-              <motion.div
-                key="6"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.6000000000000001 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">Can I get customized leads for specific Shreveport business districts?</h3>
-                <p className="text-stone leading-relaxed">Yes! We can target specific Shreveport areas like Downtown casino district, Youree Drive corridor, Barksdale AFB vicinity, and South Shreveport, or focus on particular industries such as gaming, healthcare, military, oil and gas, and entertainment. Our team customizes lead packages based on your preferred territories and business type preferences within Shreveport.</p>
-              </motion.div>
-              <motion.div
-                key="7"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.7000000000000001 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What should I know about operating vending machines in Shreveport?</h3>
-                <p className="text-stone leading-relaxed">gaming industry and military demographics favor specific product selections and 24/7 accessibility. Understanding Shreveport's casino entertainment hub with Barksdale Air Force Base and focusing on gaming, healthcare, military, oil and gas, and entertainment will maximize your vending machine success in this market.</p>
-              </motion.div>
+              {faqItems.map((item, idx) => (
+                <motion.div
+                  key={idx}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: idx * 0.1 }}
+                  viewport={{ once: true }}
+                  className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+                >
+                  <h3 className="text-lg font-semibold text-charcoal mb-3">{item.q}</h3>
+                  <p className="text-stone leading-relaxed">{item.a}</p>
+                </motion.div>
+              ))}
             </div>
           </div>
         </section>
+
+        {/* More cities in Louisiana */}
+        {relatedCities.length > 0 && (
+          <section className="py-12 bg-white border-t border-gray-200">
+            <div className="mx-auto max-w-7xl px-6">
+              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in Louisiana</h2>
+              <div className="flex flex-wrap gap-3">
+                {relatedCities.map(city => (
+                  <Link key={city.slug} href={`/vending-leads/${city.slug}`} className="px-3 py-2 rounded-lg border border-gray-200 bg-cream/60 text-chocolate hover:text-navy">
+                    Vending Leads in {city.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
       </div>
       
       <Footer />
       <ZipCodeModalWrapper />
+      {/* JSON-LD: Breadcrumbs and FAQ */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
+              { '@type': 'ListItem', position: 3, name: 'Louisiana', item: 'https://www.thevendinglocator.com/vending-leads/louisiana' },
+              { '@type': 'ListItem', position: 4, name: 'Shreveport', item: 'https://www.thevendinglocator.com/vending-leads/manchester-louisiana' }
+            ]
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: faqItems.map(i => ({
+              '@type': 'Question',
+              name: i.q,
+              acceptedAnswer: { '@type': 'Answer', text: i.a }
+            }))
+          })
+        }}
+      />
     </>
   )
 }
