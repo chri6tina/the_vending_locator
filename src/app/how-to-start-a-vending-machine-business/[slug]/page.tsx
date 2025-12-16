@@ -29279,7 +29279,7 @@ const cityInfo: Record<string, {
       }
     ]
   }
-}
+};
 
 
 
