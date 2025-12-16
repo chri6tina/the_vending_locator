@@ -359,19 +359,14 @@ export default function IsVendingBusinessGood2026Page() {
                 </div>
               </motion.div>
 
-              {/* Pro - Most Popular */}
+              {/* Pro */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.1 }}
-                className="bg-white rounded-2xl shadow-lg overflow-hidden border-4 border-navy relative"
+                className="bg-white rounded-2xl shadow-lg overflow-hidden border-2 border-gray-200 hover:border-navy transition-colors"
               >
-                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">
-                  <span className="inline-flex items-center rounded-full bg-coral px-4 py-1 text-sm font-semibold text-white shadow-lg">
-                    ⭐ MOST POPULAR
-                  </span>
-                </div>
                 <div className="bg-gradient-to-br from-blue-50 to-white p-6">
                   <img
                     src="/haha-coolers/haha-pro-black.png"
