@@ -87,7 +87,7 @@ export default function ConcordNewHampshireVendingLeadsPage() {
     { q: 'What industries in Concord are best for vending machines?', a: 'Government offices, healthcare, education, and professional services in Concord show the highest potential for vending machine success due to consistent foot traffic and stable employment.' },
     { q: 'How do you verify the quality of Concord vending locations?', a: 'We conduct thorough research on each Concord location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.' },
     { q: 'Can I get customized vending leads for specific areas of Concord?', a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or government areas within Concord based on your preferences and target market requirements.' },
-    { q: 'What\'s the typical ROI for vending machines in Concord?', a: 'Vending machines in Concord typically show strong ROI due to stable government employment and professional workforce. Our research shows average payback periods of 12-18 months for well-placed machines.\' }
+    { q: 'What\'s the typical ROI for vending machines in Concord?', a: 'Vending machines in Concord typically show strong ROI due to stable government employment and professional workforce. Our research shows average payback periods of 12-18 months for well-placed machines.' }
   ]
 
   return (

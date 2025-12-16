@@ -87,7 +87,7 @@ export default function MiddletownDelawareVendingLeadsPage() {
     { q: 'What industries in Middletown are best for vending machines?', a: 'Retail centers, new office developments, healthcare facilities, and residential complexes in Middletown show the highest potential for vending machine success due to rapid growth and increasing population.' },
     { q: 'How do you verify the quality of Middletown vending locations?', a: 'We conduct thorough research on each Middletown location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.' },
     { q: 'Can I get customized vending leads for specific areas of Middletown?', a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, new developments, or commercial districts within Middletown based on your preferences and target market requirements.' },
-    { q: 'What\'s the typical ROI for vending machines in Middletown?', a: 'Vending machines in Middletown typically show strong ROI due to rapid population growth and new development. Our research shows average payback periods of 12-18 months for well-placed machines.\' }
+    { q: 'What\'s the typical ROI for vending machines in Middletown?', a: 'Vending machines in Middletown typically show strong ROI due to rapid population growth and new development. Our research shows average payback periods of 12-18 months for well-placed machines.' }
   ]
 
   return (

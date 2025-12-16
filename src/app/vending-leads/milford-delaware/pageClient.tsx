@@ -87,7 +87,7 @@ export default function MilfordDelawareVendingLeadsPage() {
     { q: 'What industries in Milford are best for vending machines?', a: 'Retail shops, healthcare facilities, manufacturing, and office buildings in Milford show the highest potential for vending machine success due to diverse business activity and central location.' },
     { q: 'How do you verify the quality of Milford vending locations?', a: 'We conduct thorough research on each Milford location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.' },
     { q: 'Can I get customized vending leads for specific areas of Milford?', a: 'Absolutely! We can provide targeted vending leads for downtown commercial district, industrial areas, or healthcare facilities within Milford based on your preferences and target market requirements.' },
-    { q: 'What\'s the typical ROI for vending machines in Milford?', a: 'Vending machines in Milford typically show strong ROI due to diverse business activity and central location. Our research shows average payback periods of 12-18 months for well-placed machines.\' }
+    { q: 'What\'s the typical ROI for vending machines in Milford?', a: 'Vending machines in Milford typically show strong ROI due to diverse business activity and central location. Our research shows average payback periods of 12-18 months for well-placed machines.' }
   ]
 
   return (

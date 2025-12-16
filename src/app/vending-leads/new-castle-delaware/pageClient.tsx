@@ -87,7 +87,7 @@ export default function NewCastleDelawareVendingLeadsPage() {
     { q: 'What industries in New Castle are best for vending machines?', a: 'Tourist attractions, restaurants, retail shops, and residential areas in New Castle show the highest potential for vending machine success due to historic tourism and local commerce.' },
     { q: 'How do you verify the quality of New Castle vending locations?', a: 'We conduct thorough research on each New Castle location including business verification, foot traffic analysis, visitor count validation, and industry research to ensure only high-quality opportunities are included.' },
     { q: 'Can I get customized vending leads for specific areas of New Castle?', a: 'Absolutely! We can provide targeted vending leads for historic district, waterfront area, or residential zones within New Castle based on your preferences and target market requirements.' },
-    { q: 'What\'s the typical ROI for vending machines in New Castle?', a: 'Vending machines in New Castle typically show strong ROI due to tourism activity and residential density. Our research shows average payback periods of 12-18 months for well-placed machines.\' }
+    { q: 'What\'s the typical ROI for vending machines in New Castle?', a: 'Vending machines in New Castle typically show strong ROI due to tourism activity and residential density. Our research shows average payback periods of 12-18 months for well-placed machines.' }
   ]
 
   return (

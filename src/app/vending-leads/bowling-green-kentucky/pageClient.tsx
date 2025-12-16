@@ -87,7 +87,7 @@ export default function BowlingGreenKentuckyVendingLeadsPage() {
     { q: 'What industries in Bowling Green are best for vending machines?', a: 'Manufacturing facilities, educational institutions, healthcare centers, and retail locations in Bowling Green show the highest potential for vending machine success due to shift workers and student traffic.' },
     { q: 'How do you verify the quality of Bowling Green vending locations?', a: 'We conduct thorough research on each Bowling Green location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.' },
     { q: 'Can I get customized vending leads for specific areas of Bowling Green?', a: 'Absolutely! We can provide targeted vending leads for manufacturing districts, WKU campus area, or commercial zones within Bowling Green based on your preferences and target market requirements.' },
-    { q: 'What\'s the typical ROI for vending machines in Bowling Green?', a: 'Vending machines in Bowling Green typically show strong ROI due to manufacturing workforce and university population. Our research shows average payback periods of 12-18 months for well-placed machines.\' }
+    { q: 'What\'s the typical ROI for vending machines in Bowling Green?', a: 'Vending machines in Bowling Green typically show strong ROI due to manufacturing workforce and university population. Our research shows average payback periods of 12-18 months for well-placed machines.' }
   ]
 
   return (

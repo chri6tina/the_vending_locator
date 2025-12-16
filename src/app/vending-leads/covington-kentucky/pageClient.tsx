@@ -87,7 +87,7 @@ export default function CovingtonKentuckyVendingLeadsPage() {
     { q: 'What industries in Covington are best for vending machines?', a: 'Office buildings, professional services, retail locations, and healthcare facilities in Covington show the highest potential for vending machine success due to urban workforce and metro area traffic.' },
     { q: 'How do you verify the quality of Covington vending locations?', a: 'We conduct thorough research on each Covington location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.' },
     { q: 'Can I get customized vending leads for specific areas of Covington?', a: 'Absolutely! We can provide targeted vending leads for downtown district, riverfront area, or business zones within Covington based on your preferences and target market requirements.' },
-    { q: 'What\'s the typical ROI for vending machines in Covington?', a: 'Vending machines in Covington typically show strong ROI due to urban density and metro area workforce. Our research shows average payback periods of 12-18 months for well-placed machines.\' }
+    { q: 'What\'s the typical ROI for vending machines in Covington?', a: 'Vending machines in Covington typically show strong ROI due to urban density and metro area workforce. Our research shows average payback periods of 12-18 months for well-placed machines.' }
   ]
 
   return (

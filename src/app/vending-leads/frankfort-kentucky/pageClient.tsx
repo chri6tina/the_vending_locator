@@ -87,7 +87,7 @@ export default function FrankfortKentuckyVendingLeadsPage() {
     { q: 'What industries in Frankfort are best for vending machines?', a: 'Government offices, capitol complex facilities, retail locations, and hospitality venues in Frankfort show the highest potential for vending machine success due to stable government employment and tourism.' },
     { q: 'How do you verify the quality of Frankfort vending locations?', a: 'We conduct thorough research on each Frankfort location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.' },
     { q: 'Can I get customized vending leads for specific areas of Frankfort?', a: 'Absolutely! We can provide targeted vending leads for capitol complex area, downtown district, or tourism zones within Frankfort based on your preferences and target market requirements.' },
-    { q: 'What\'s the typical ROI for vending machines in Frankfort?', a: 'Vending machines in Frankfort typically show strong ROI due to stable government employment and tourism activity. Our research shows average payback periods of 12-18 months for well-placed machines.\' }
+    { q: 'What\'s the typical ROI for vending machines in Frankfort?', a: 'Vending machines in Frankfort typically show strong ROI due to stable government employment and tourism activity. Our research shows average payback periods of 12-18 months for well-placed machines.' }
   ]
 
   return (

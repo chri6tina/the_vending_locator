@@ -87,7 +87,7 @@ export default function OwensboroKentuckyVendingLeadsPage() {
     { q: 'What industries in Owensboro are best for vending machines?', a: 'Manufacturing facilities, healthcare centers, retail locations, and office buildings in Owensboro show the highest potential for vending machine success due to industrial workforce and regional commerce.' },
     { q: 'How do you verify the quality of Owensboro vending locations?', a: 'We conduct thorough research on each Owensboro location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.' },
     { q: 'Can I get customized vending leads for specific areas of Owensboro?', a: 'Absolutely! We can provide targeted vending leads for industrial areas, downtown district, or healthcare facilities within Owensboro based on your preferences and target market requirements.' },
-    { q: 'What\'s the typical ROI for vending machines in Owensboro?', a: 'Vending machines in Owensboro typically show strong ROI due to manufacturing workforce and regional commerce. Our research shows average payback periods of 12-18 months for well-placed machines.\' }
+    { q: 'What\'s the typical ROI for vending machines in Owensboro?', a: 'Vending machines in Owensboro typically show strong ROI due to manufacturing workforce and regional commerce. Our research shows average payback periods of 12-18 months for well-placed machines.' }
   ]
 
   return (

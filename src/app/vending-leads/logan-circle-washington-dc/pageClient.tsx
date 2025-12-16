@@ -87,7 +87,7 @@ export default function LoganCircleWashingtonDCVendingLeadsPage() {
     { q: 'What industries in Logan Circle are best for vending machines?', a: 'Professional services, restaurants, retail shops, and residential buildings in Logan Circle show the highest potential for vending machine success due to affluent demographics and dining activity.' },
     { q: 'How do you verify the quality of Logan Circle vending locations?', a: 'We conduct thorough research on each Logan Circle location including business verification, foot traffic analysis, demographic validation, and industry research to ensure only high-quality opportunities are included.' },
     { q: 'Can I get customized vending leads for specific areas of Logan Circle?', a: 'Absolutely! We can provide targeted vending leads for 14th Street corridor, P Street area, or residential districts within Logan Circle based on your preferences and target market requirements.' },
-    { q: 'What\'s the typical ROI for vending machines in Logan Circle?', a: 'Vending machines in Logan Circle typically show strong ROI due to affluent demographics and restaurant scene. Our research shows average payback periods of 12-18 months for well-placed machines.\' }
+    { q: 'What\'s the typical ROI for vending machines in Logan Circle?', a: 'Vending machines in Logan Circle typically show strong ROI due to affluent demographics and restaurant scene. Our research shows average payback periods of 12-18 months for well-placed machines.' }
   ]
 
   return (

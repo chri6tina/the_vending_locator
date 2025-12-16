@@ -87,7 +87,7 @@ export default function NavyYardWashingtonDCVendingLeadsPage() {
     { q: 'What industries in Navy Yard are best for vending machines?', a: 'Corporate offices, residential towers, entertainment venues, and waterfront dining in Navy Yard show the highest potential for vending machine success due to professional workforce and baseball stadium crowds.' },
     { q: 'How do you verify the quality of Navy Yard vending locations?', a: 'We conduct thorough research on each Navy Yard location including business verification, foot traffic analysis, event schedule validation, and industry research to ensure only high-quality opportunities are included.' },
     { q: 'Can I get customized vending leads for specific areas of Navy Yard?', a: 'Absolutely! We can provide targeted vending leads for Nationals Park area, waterfront developments, or corporate office zones within Navy Yard based on your preferences and target market requirements.' },
-    { q: 'What\'s the typical ROI for vending machines in Navy Yard?', a: 'Vending machines in Navy Yard typically show strong ROI due to corporate offices and stadium events. Our research shows average payback periods of 12-18 months for well-placed machines.\' }
+    { q: 'What\'s the typical ROI for vending machines in Navy Yard?', a: 'Vending machines in Navy Yard typically show strong ROI due to corporate offices and stadium events. Our research shows average payback periods of 12-18 months for well-placed machines.' }
   ]
 
   return (

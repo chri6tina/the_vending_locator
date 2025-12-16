@@ -87,7 +87,7 @@ export default function BearDelawareVendingLeadsPage() {
     { q: 'What industries in Bear are best for vending machines?', a: 'Retail centers, healthcare facilities, office buildings, and residential complexes in Bear show the highest potential for vending machine success due to suburban density and commercial activity.' },
     { q: 'How do you verify the quality of Bear vending locations?', a: 'We conduct thorough research on each Bear location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.' },
     { q: 'Can I get customized vending leads for specific areas of Bear?', a: 'Absolutely! We can provide targeted vending leads for retail corridors, office parks, or residential zones within Bear based on your preferences and target market requirements.' },
-    { q: 'What\'s the typical ROI for vending machines in Bear?', a: 'Vending machines in Bear typically show strong ROI due to suburban density and retail activity. Our research shows average payback periods of 12-18 months for well-placed machines.\' }
+    { q: 'What\'s the typical ROI for vending machines in Bear?', a: 'Vending machines in Bear typically show strong ROI due to suburban density and retail activity. Our research shows average payback periods of 12-18 months for well-placed machines.' }
   ]
 
   return (

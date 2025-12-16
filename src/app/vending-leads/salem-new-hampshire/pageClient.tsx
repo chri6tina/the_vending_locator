@@ -87,7 +87,7 @@ export default function SalemNewHampshireVendingLeadsPage() {
     { q: 'What industries in Salem are best for vending machines?', a: 'Retail malls, shopping centers, hospitality, and entertainment venues in Salem show the highest potential for vending machine success due to exceptional foot traffic from shoppers and tourists.' },
     { q: 'How do you verify the quality of Salem vending locations?', a: 'We conduct thorough research on each Salem location including business verification, foot traffic analysis, visitor count validation, and industry research to ensure only high-quality opportunities are included.' },
     { q: 'Can I get customized vending leads for specific areas of Salem?', a: 'Absolutely! We can provide targeted vending leads for specific shopping districts, retail centers, or commercial areas within Salem based on your preferences and target market requirements.' },
-    { q: 'What\'s the typical ROI for vending machines in Salem?', a: 'Vending machines in Salem typically show exceptional ROI due to high shopper traffic and tourist activity. Our research shows average payback periods of 10-16 months for well-placed machines in high-traffic retail areas.\' }
+    { q: 'What\'s the typical ROI for vending machines in Salem?', a: 'Vending machines in Salem typically show exceptional ROI due to high shopper traffic and tourist activity. Our research shows average payback periods of 10-16 months for well-placed machines in high-traffic retail areas.' }
   ]
 
   return (

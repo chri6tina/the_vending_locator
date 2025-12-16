@@ -87,7 +87,7 @@ export default function AdamsMorganWashingtonDCVendingLeadsPage() {
     { q: 'What industries in Adams Morgan are best for vending machines?', a: 'Restaurants, entertainment venues, retail shops, and residential buildings in Adams Morgan show the highest potential for vending machine success due to nightlife activity and diverse foot traffic.' },
     { q: 'How do you verify the quality of Adams Morgan vending locations?', a: 'We conduct thorough research on each Adams Morgan location including business verification, foot traffic analysis, visitor count validation, and industry research to ensure only high-quality opportunities are included.' },
     { q: 'Can I get customized vending leads for specific areas of Adams Morgan?', a: 'Absolutely! We can provide targeted vending leads for 18th Street corridor, Columbia Road area, or specific entertainment districts within Adams Morgan based on your preferences and target market requirements.' },
-    { q: 'What\'s the typical ROI for vending machines in Adams Morgan?', a: 'Vending machines in Adams Morgan typically show strong ROI due to nightlife activity and diverse demographics. Our research shows average payback periods of 12-18 months for well-placed machines.\' }
+    { q: 'What\'s the typical ROI for vending machines in Adams Morgan?', a: 'Vending machines in Adams Morgan typically show strong ROI due to nightlife activity and diverse demographics. Our research shows average payback periods of 12-18 months for well-placed machines.' }
   ]
 
   return (

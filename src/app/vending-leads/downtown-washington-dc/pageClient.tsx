@@ -87,7 +87,7 @@ export default function DowntownDCWashingtonDCVendingLeadsPage() {
     { q: 'What industries in Downtown DC are best for vending machines?', a: 'Corporate offices, government agencies, hotels, convention center, and professional services in Downtown DC show the highest potential for vending machine success due to massive daytime workforce and visitor traffic.' },
     { q: 'How do you verify the quality of Downtown DC vending locations?', a: 'We conduct thorough research on each Downtown DC location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.' },
     { q: 'Can I get customized vending leads for specific areas of Downtown DC?', a: 'Absolutely! We can provide targeted vending leads for K Street corridor, Metro Center area, or Convention Center district within Downtown DC based on your preferences and target market requirements.' },
-    { q: 'What\'s the typical ROI for vending machines in Downtown DC?', a: 'Vending machines in Downtown DC typically show exceptional ROI due to massive workforce and convention activity. Our research shows average payback periods of 10-15 months for well-placed machines in high-traffic areas.\' }
+    { q: 'What\'s the typical ROI for vending machines in Downtown DC?', a: 'Vending machines in Downtown DC typically show exceptional ROI due to massive workforce and convention activity. Our research shows average payback periods of 10-15 months for well-placed machines in high-traffic areas.' }
   ]
 
   return (

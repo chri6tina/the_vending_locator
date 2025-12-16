@@ -87,7 +87,7 @@ export default function ElsmereDelawareVendingLeadsPage() {
     { q: 'What industries in Elsmere are best for vending machines?', a: 'Retail shops, healthcare services, small offices, and residential complexes in Elsmere show the highest potential for vending machine success due to suburban density and local commerce.' },
     { q: 'How do you verify the quality of Elsmere vending locations?', a: 'We conduct thorough research on each Elsmere location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.' },
     { q: 'Can I get customized vending leads for specific areas of Elsmere?', a: 'Absolutely! We can provide targeted vending leads for retail districts, residential areas, or small business zones within Elsmere based on your preferences and target market requirements.' },
-    { q: 'What\'s the typical ROI for vending machines in Elsmere?', a: 'Vending machines in Elsmere typically show strong ROI due to suburban density and local business activity. Our research shows average payback periods of 12-18 months for well-placed machines.\' }
+    { q: 'What\'s the typical ROI for vending machines in Elsmere?', a: 'Vending machines in Elsmere typically show strong ROI due to suburban density and local business activity. Our research shows average payback periods of 12-18 months for well-placed machines.' }
   ]
 
   return (
