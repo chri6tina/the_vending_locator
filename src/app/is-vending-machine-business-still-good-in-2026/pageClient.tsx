@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { motion } from 'framer-motion'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import { CheckBadgeIcon, ChartBarIcon, CurrencyDollarIcon, ClockIcon, LightBulbIcon, ShieldCheckIcon, CreditCardIcon } from '@heroicons/react/24/outline'
+import { CheckBadgeIcon, ChartBarIcon, CurrencyDollarIcon, ClockIcon, LightBulbIcon, ShieldCheckIcon, CreditCardIcon, CpuChipIcon, DevicePhoneMobileIcon, CloudIcon } from '@heroicons/react/24/outline'
 
 export default function IsVendingBusinessGood2026Page() {
   return (
@@ -241,6 +241,276 @@ export default function IsVendingBusinessGood2026Page() {
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Smart Coolers Showcase */}
+      <section className="py-16 bg-white">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-6xl">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="text-center mb-12"
+            >
+              <h2 className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4">
+                Modern Smart Coolers: The Future of Vending in 2026
+              </h2>
+              <p className="text-lg text-stone max-w-3xl mx-auto leading-relaxed">
+                Experience the next generation of vending technology with Haha Smart Coolers. These innovative grab-and-go coolers represent the cutting edge of what's possible in 2026—combining convenience, technology, and profitability.
+              </p>
+            </motion.div>
+
+            {/* Features Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+                className="bg-cream/40 rounded-xl p-6 border border-gray-200 text-center"
+              >
+                <CpuChipIcon className="w-12 h-12 text-navy mx-auto mb-4" />
+                <h3 className="text-lg font-semibold text-charcoal mb-2">99% Accurate Vision Checkout</h3>
+                <p className="text-stone text-sm">
+                  Advanced camera technology automatically detects what customers take with incredible accuracy
+                </p>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+                className="bg-cream/40 rounded-xl p-6 border border-gray-200 text-center"
+              >
+                <DevicePhoneMobileIcon className="w-12 h-12 text-navy mx-auto mb-4" />
+                <h3 className="text-lg font-semibold text-charcoal mb-2">Remote Management</h3>
+                <p className="text-stone text-sm">
+                  Monitor inventory, track sales, and receive alerts all from your mobile device
+                </p>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                className="bg-cream/40 rounded-xl p-6 border border-gray-200 text-center"
+              >
+                <CloudIcon className="w-12 h-12 text-navy mx-auto mb-4" />
+                <h3 className="text-lg font-semibold text-charcoal mb-2">Cashless Payments</h3>
+                <p className="text-stone text-sm">
+                  Accept credit cards, Apple Pay, Google Pay, and all NFC payments—no coins needed
+                </p>
+              </motion.div>
+            </div>
+
+            {/* Product Lineup */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {/* US360 Mini */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+                className="bg-white rounded-2xl shadow-lg overflow-hidden border-2 border-gray-200 hover:border-navy transition-colors"
+              >
+                <div className="bg-gradient-to-br from-blue-50 to-white p-6">
+                  <img
+                    src="/haha-coolers/haha-us360-mini-black.png"
+                    alt="Haha US360 Mini Smart Cooler"
+                    className="w-full h-48 object-contain"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-2xl font-bold text-charcoal mb-2">Haha US360 Mini</h3>
+                  <p className="text-stone mb-4 text-sm">Perfect for offices and breakrooms</p>
+                  <div className="flex items-baseline gap-2 mb-4">
+                    <span className="text-3xl font-bold text-charcoal">$2,999</span>
+                  </div>
+                  <ul className="space-y-2 mb-6">
+                    <li className="flex items-start gap-2">
+                      <CheckBadgeIcon className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                      <span className="text-sm text-stone">Vision Technology (99% Accuracy)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckBadgeIcon className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                      <span className="text-sm text-stone">APP Smart Management</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckBadgeIcon className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                      <span className="text-sm text-stone">Cashless Payment System</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckBadgeIcon className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                      <span className="text-sm text-stone">1-Year Parts Warranty</span>
+                    </li>
+                  </ul>
+                  <a
+                    href="https://amzn.to/43aTe10"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block w-full text-center bg-navy text-white px-6 py-3 rounded-lg font-semibold hover:bg-navy-light transition-colors"
+                  >
+                    Buy on Amazon →
+                  </a>
+                </div>
+              </motion.div>
+
+              {/* Pro - Most Popular */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+                className="bg-white rounded-2xl shadow-lg overflow-hidden border-4 border-navy relative"
+              >
+                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">
+                  <span className="inline-flex items-center rounded-full bg-coral px-4 py-1 text-sm font-semibold text-white shadow-lg">
+                    ⭐ MOST POPULAR
+                  </span>
+                </div>
+                <div className="bg-gradient-to-br from-blue-50 to-white p-6">
+                  <img
+                    src="/haha-coolers/haha-pro-black.png"
+                    alt="Haha Pro Smart Cooler"
+                    className="w-full h-48 object-contain"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-2xl font-bold text-charcoal mb-2">Haha Pro</h3>
+                  <p className="text-stone mb-4 text-sm">Ideal for retail and high-traffic locations</p>
+                  <div className="flex items-baseline gap-2 mb-4">
+                    <span className="text-3xl font-bold text-charcoal">$4,999</span>
+                  </div>
+                  <ul className="space-y-2 mb-6">
+                    <li className="flex items-start gap-2">
+                      <CheckBadgeIcon className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                      <span className="text-sm text-stone">378 Bottle Capacity</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckBadgeIcon className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                      <span className="text-sm text-stone">Camera-Verified Checkout</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckBadgeIcon className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                      <span className="text-sm text-stone">Pro App Management</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckBadgeIcon className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                      <span className="text-sm text-stone">Double-Glazed Glass</span>
+                    </li>
+                  </ul>
+                  <a
+                    href="https://amzn.to/3LtSLRq"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block w-full text-center bg-navy text-white px-6 py-3 rounded-lg font-semibold hover:bg-navy-light transition-colors"
+                  >
+                    Buy on Amazon →
+                  </a>
+                </div>
+              </motion.div>
+
+              {/* Ultra */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                className="bg-white rounded-2xl shadow-lg overflow-hidden border-2 border-gray-200 hover:border-navy transition-colors"
+              >
+                <div className="bg-gradient-to-br from-blue-50 to-white p-6">
+                  <img
+                    src="/haha-coolers/haha-ultra-black.png"
+                    alt="Haha Ultra Smart Cooler"
+                    className="w-full h-48 object-contain"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-2xl font-bold text-charcoal mb-2">Haha Ultra</h3>
+                  <p className="text-stone mb-4 text-sm">Enterprise solution for high-volume locations</p>
+                  <div className="flex items-baseline gap-2 mb-4">
+                    <span className="text-3xl font-bold text-charcoal">$7,299</span>
+                  </div>
+                  <ul className="space-y-2 mb-6">
+                    <li className="flex items-start gap-2">
+                      <CheckBadgeIcon className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                      <span className="text-sm text-stone">High-Volume Capacity</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckBadgeIcon className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                      <span className="text-sm text-stone">Visual AI + Security</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckBadgeIcon className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                      <span className="text-sm text-stone">4G / Wi-Fi Connectivity</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <CheckBadgeIcon className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                      <span className="text-sm text-stone">Enterprise Support</span>
+                    </li>
+                  </ul>
+                  <a
+                    href="https://amzn.to/3LwEbIO"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block w-full text-center bg-navy text-white px-6 py-3 rounded-lg font-semibold hover:bg-navy-light transition-colors"
+                  >
+                    Buy on Amazon →
+                  </a>
+                </div>
+              </motion.div>
+            </div>
+
+            {/* Why Smart Coolers Section */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              className="mt-12 bg-cream/40 rounded-2xl p-8 border border-gray-200"
+            >
+              <h3 className="text-2xl font-playfair font-bold text-charcoal mb-4 text-center">
+                Why Smart Coolers Are Perfect for 2026
+              </h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <h4 className="font-semibold text-charcoal mb-2">No Broken Products</h4>
+                  <p className="text-stone text-sm">
+                    Unlike traditional gravity-drop vending machines, smart coolers eliminate product damage. Customers browse like a store refrigerator—no spills, no broken items.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-charcoal mb-2">Grab & Go Experience</h4>
+                  <p className="text-stone text-sm">
+                    Customers simply tap to unlock, take what they want, and close the door. The system automatically processes payment—faster and more convenient than traditional vending.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-charcoal mb-2">Real-Time Analytics</h4>
+                  <p className="text-stone text-sm">
+                    Track which products sell best, monitor inventory levels, and optimize your product mix based on actual sales data from your mobile app.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-charcoal mb-2">Lower Maintenance</h4>
+                  <p className="text-stone text-sm">
+                    No coin jams, no refund failures, no mechanical issues. Smart coolers reduce operational headaches and increase uptime for maximum profitability.
+                  </p>
+                </div>
+              </div>
+              <div className="mt-6 text-center">
+                <Link
+                  href="/haha-coolers"
+                  className="inline-flex items-center gap-2 text-navy hover:text-navy-light font-semibold"
+                >
+                  Explore All Haha Smart Coolers →
+                </Link>
+              </div>
+            </motion.div>
           </div>
         </div>
       </section>
