@@ -12,7 +12,7 @@ import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function St.PaulMinnesotaVendingLeadsPage() {
+export default function StPaulMinnesotaVendingLeadsPage() {
   // City and state display names
   const cityDisplayName = 'St. Paul';
   const stateDisplayName = 'Minnesota';

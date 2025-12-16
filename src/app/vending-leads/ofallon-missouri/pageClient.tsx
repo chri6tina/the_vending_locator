@@ -14,7 +14,7 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
 export default function OFallonMissouriVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'O'Fallon';
+  const cityDisplayName = 'O\'Fallon';
   const stateDisplayName = 'Missouri';
   
   // City-specific data
@@ -563,7 +563,7 @@ export default function OFallonMissouriVendingLeadsPage() {
               { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
               { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
               { '@type': 'ListItem', position: 3, name: 'Missouri', item: 'https://www.thevendinglocator.com/vending-leads/missouri' },
-              { '@type': 'ListItem', position: 4, name: 'O'Fallon', item: 'https://www.thevendinglocator.com/vending-leads/manchester-missouri' }
+              { '@type': 'ListItem', position: 4, name: 'O\'Fallon', item: 'https://www.thevendinglocator.com/vending-leads/manchester-missouri' }
             ]
           })
         }}

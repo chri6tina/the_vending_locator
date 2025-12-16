@@ -14,7 +14,7 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
 export default function LeesSummitMissouriVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Lee's Summit';
+  const cityDisplayName = 'Lee\'s Summit';
   const stateDisplayName = 'Missouri';
   
   // City-specific data
@@ -563,7 +563,7 @@ export default function LeesSummitMissouriVendingLeadsPage() {
               { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
               { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
               { '@type': 'ListItem', position: 3, name: 'Missouri', item: 'https://www.thevendinglocator.com/vending-leads/missouri' },
-              { '@type': 'ListItem', position: 4, name: 'Lee's Summit', item: 'https://www.thevendinglocator.com/vending-leads/manchester-missouri' }
+              { '@type': 'ListItem', position: 4, name: 'Lee\'s Summit', item: 'https://www.thevendinglocator.com/vending-leads/manchester-missouri' }
             ]
           })
         }}
