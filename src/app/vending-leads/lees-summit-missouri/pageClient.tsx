@@ -94,7 +94,7 @@ export default function LeesSummitMissouriVendingLeadsPage() {
   },
   {
     q: 'What makes Lee\'s Summit a good market for vending machines?',
-    a: 'Lee\'s Summit features a thriving business community with diverse industries and strong economic activity. The city's business density and diverse demographics create ideal conditions for vending machine success.'
+    a: 'Lee\'s Summit features a thriving business community with diverse industries and strong economic activity. The city\'s business density and diverse demographics create ideal conditions for vending machine success.'
   },
   {
     q: 'Do you provide ongoing support for Lee\'s Summit locations?',
@@ -114,7 +114,7 @@ export default function LeesSummitMissouriVendingLeadsPage() {
   },
   {
     q: 'What\'s the typical ROI for vending machines in Lee's Summit?',
-    a: 'Vending machines in Lee\'s Summit typically show strong ROI due to the city's business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+    a: 'Vending machines in Lee\'s Summit typically show strong ROI due to the city\'s business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
   }
 ];
 

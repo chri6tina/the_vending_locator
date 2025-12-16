@@ -94,7 +94,7 @@ export default function OFallonMissouriVendingLeadsPage() {
   },
   {
     q: 'What makes O\'Fallon a good market for vending machines?',
-    a: 'O\'Fallon features a thriving business community with diverse industries and strong economic activity. The city's business density and diverse demographics create ideal conditions for vending machine success.'
+    a: 'O\'Fallon features a thriving business community with diverse industries and strong economic activity. The city\'s business density and diverse demographics create ideal conditions for vending machine success.'
   },
   {
     q: 'Do you provide ongoing support for O\'Fallon locations?',
