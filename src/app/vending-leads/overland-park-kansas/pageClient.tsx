@@ -85,31 +85,31 @@ export default function OverlandParkKansasVendingLeadsPage() {
   // FAQ items reused for JSON-LD
   const faqItems = [
   {
-    q: 'What types of vending machine locations are available in Overland Park?\',
+    q: 'What types of vending machine locations are available in Overland Park?',
     a: 'Overland Park offers diverse vending opportunities including healthcare facilities, educational institutions, retail locations, office buildings, and manufacturing facilities. Each location is pre-verified for optimal vending machine success.'
   },
   {
-    q: 'How quickly can I get vending machine leads for Overland Park?\',
+    q: 'How quickly can I get vending machine leads for Overland Park?',
     a: 'Our Overland Park vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
   },
   {
-    q: 'What makes Overland Park a good market for vending machines?\',
+    q: 'What makes Overland Park a good market for vending machines?',
     a: 'Overland Park features a thriving business community with diverse industries and strong economic activity. The city\'s business density and diverse demographics create ideal conditions for vending machine success.'
   },
   {
-    q: 'Do you provide ongoing support for Overland Park locations?\',
+    q: 'Do you provide ongoing support for Overland Park locations?',
     a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Overland Park.'
   },
   {
-    q: 'What industries in Overland Park are best for vending machines?\',
+    q: 'What industries in Overland Park are best for vending machines?',
     a: 'Healthcare, education, retail, office buildings, and manufacturing in Overland Park show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
   },
   {
-    q: 'How do you verify the quality of Overland Park vending locations?\',
+    q: 'How do you verify the quality of Overland Park vending locations?',
     a: 'We conduct thorough research on each Overland Park location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
   },
   {
-    q: 'Can I get customized vending leads for specific areas of Overland Park?\',
+    q: 'Can I get customized vending leads for specific areas of Overland Park?',
     a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Overland Park based on your preferences and target market requirements.'
   },
   {

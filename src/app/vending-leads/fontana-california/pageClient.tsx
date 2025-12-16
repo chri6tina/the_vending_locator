@@ -85,31 +85,31 @@ export default function FontanaCaliforniaVendingLeadsPage() {
   // FAQ items reused for JSON-LD
   const faqItems = [
   {
-    q: 'What types of vending machine locations are available in Fontana?\',
+    q: 'What types of vending machine locations are available in Fontana?',
     a: 'Fontana offers diverse vending opportunities including logistics facilities, manufacturing plants, retail centers, healthcare facilities, educational institutions, and office buildings. Each location is pre-verified for optimal vending machine success.'
   },
   {
-    q: 'How quickly can I get vending machine leads for Fontana?\',
+    q: 'How quickly can I get vending machine leads for Fontana?',
     a: 'Our Fontana vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
   },
   {
-    q: 'What makes Fontana a good market for vending machines?\',
+    q: 'What makes Fontana a good market for vending machines?',
     a: 'Fontana features a thriving business community with diverse industries including logistics, manufacturing, and retail. The city\'s business density and growing population create ideal conditions for vending machine success.'
   },
   {
-    q: 'Do you provide ongoing support for Fontana locations?\',
+    q: 'Do you provide ongoing support for Fontana locations?',
     a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Fontana.'
   },
   {
-    q: 'What industries in Fontana are best for vending machines?\',
+    q: 'What industries in Fontana are best for vending machines?',
     a: 'Logistics facilities, manufacturing plants, retail centers, healthcare facilities, and educational institutions in Fontana show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
   },
   {
-    q: 'How do you verify the quality of Fontana vending locations?\',
+    q: 'How do you verify the quality of Fontana vending locations?',
     a: 'We conduct thorough research on each Fontana location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
   },
   {
-    q: 'Can I get customized vending leads for specific areas of Fontana?\',
+    q: 'Can I get customized vending leads for specific areas of Fontana?',
     a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Fontana including downtown, logistics parks, and retail corridors based on your preferences and target market requirements.'
   },
   {

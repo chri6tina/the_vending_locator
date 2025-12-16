@@ -85,31 +85,31 @@ export default function PlanoTexasVendingLeadsPage() {
   // FAQ items reused for JSON-LD
   const faqItems = [
   {
-    q: 'What types of vending machine locations are available in Plano?\',
+    q: 'What types of vending machine locations are available in Plano?',
     a: 'Plano offers diverse vending opportunities including corporate headquarters, technology companies, healthcare centers, educational institutions, retail locations, and office buildings. Each location is pre-verified for optimal vending machine success.'
   },
   {
-    q: 'How quickly can I get vending machine leads for Plano?\',
+    q: 'How quickly can I get vending machine leads for Plano?',
     a: 'Our Plano vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
   },
   {
-    q: 'What makes Plano a good market for vending machines?\',
+    q: 'What makes Plano a good market for vending machines?',
     a: 'Plano features a thriving business community with diverse industries including technology, finance, and corporate services. The city\'s business density and affluent demographics create ideal conditions for vending machine success.'
   },
   {
-    q: 'Do you provide ongoing support for Plano locations?\',
+    q: 'Do you provide ongoing support for Plano locations?',
     a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Plano.'
   },
   {
-    q: 'What industries in Plano are best for vending machines?\',
+    q: 'What industries in Plano are best for vending machines?',
     a: 'Corporate headquarters, technology companies, healthcare centers, educational institutions, and office buildings in Plano show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
   },
   {
-    q: 'How do you verify the quality of Plano vending locations?\',
+    q: 'How do you verify the quality of Plano vending locations?',
     a: 'We conduct thorough research on each Plano location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
   },
   {
-    q: 'Can I get customized vending leads for specific areas of Plano?\',
+    q: 'Can I get customized vending leads for specific areas of Plano?',
     a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or corporate campuses within Plano including Legacy business park, West Plano, and retail corridors based on your preferences and target market requirements.'
   },
   {

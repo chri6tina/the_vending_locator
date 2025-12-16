@@ -85,31 +85,31 @@ export default function LongmontColoradoVendingLeadsPage() {
   // FAQ items reused for JSON-LD
   const faqItems = [
   {
-    q: 'What types of vending machine locations are available in Longmont?\',
+    q: 'What types of vending machine locations are available in Longmont?',
     a: 'Longmont offers diverse vending opportunities including technology companies, manufacturing facilities, healthcare centers, educational institutions, retail locations, and office buildings. Each location is pre-verified for optimal vending machine success.'
   },
   {
-    q: 'How quickly can I get vending machine leads for Longmont?\',
+    q: 'How quickly can I get vending machine leads for Longmont?',
     a: 'Our Longmont vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
   },
   {
-    q: 'What makes Longmont a good market for vending machines?\',
+    q: 'What makes Longmont a good market for vending machines?',
     a: 'Longmont features a thriving business community with diverse industries including technology, manufacturing, and agriculture. The city\'s business density and growing economy create ideal conditions for vending machine success.'
   },
   {
-    q: 'Do you provide ongoing support for Longmont locations?\',
+    q: 'Do you provide ongoing support for Longmont locations?',
     a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Longmont.'
   },
   {
-    q: 'What industries in Longmont are best for vending machines?\',
+    q: 'What industries in Longmont are best for vending machines?',
     a: 'Technology companies, manufacturing facilities, healthcare centers, educational institutions, and office buildings in Longmont show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
   },
   {
-    q: 'How do you verify the quality of Longmont vending locations?\',
+    q: 'How do you verify the quality of Longmont vending locations?',
     a: 'We conduct thorough research on each Longmont location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
   },
   {
-    q: 'Can I get customized vending leads for specific areas of Longmont?\',
+    q: 'Can I get customized vending leads for specific areas of Longmont?',
     a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Longmont including the downtown area, industrial parks, and technology corridors based on your preferences and target market requirements.'
   },
   {

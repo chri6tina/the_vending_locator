@@ -85,31 +85,31 @@ export default function PittsburgCaliforniaVendingLeadsPage() {
   // FAQ items reused for JSON-LD
   const faqItems = [
   {
-    q: 'What types of vending machine locations are available in Pittsburg?\',
+    q: 'What types of vending machine locations are available in Pittsburg?',
     a: 'Pittsburg offers diverse vending opportunities including healthcare facilities, educational institutions, retail locations, office buildings, and manufacturing facilities. Each location is pre-verified for optimal vending machine success.'
   },
   {
-    q: 'How quickly can I get vending machine leads for Pittsburg?\',
+    q: 'How quickly can I get vending machine leads for Pittsburg?',
     a: 'Our Pittsburg vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
   },
   {
-    q: 'What makes Pittsburg a good market for vending machines?\',
+    q: 'What makes Pittsburg a good market for vending machines?',
     a: 'Pittsburg features a thriving business community with diverse industries and strong economic activity. The city\'s business density and diverse demographics create ideal conditions for vending machine success.'
   },
   {
-    q: 'Do you provide ongoing support for Pittsburg locations?\',
+    q: 'Do you provide ongoing support for Pittsburg locations?',
     a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Pittsburg.'
   },
   {
-    q: 'What industries in Pittsburg are best for vending machines?\',
+    q: 'What industries in Pittsburg are best for vending machines?',
     a: 'Healthcare, education, retail, office buildings, and manufacturing in Pittsburg show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
   },
   {
-    q: 'How do you verify the quality of Pittsburg vending locations?\',
+    q: 'How do you verify the quality of Pittsburg vending locations?',
     a: 'We conduct thorough research on each Pittsburg location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
   },
   {
-    q: 'Can I get customized vending leads for specific areas of Pittsburg?\',
+    q: 'Can I get customized vending leads for specific areas of Pittsburg?',
     a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Pittsburg based on your preferences and target market requirements.'
   },
   {

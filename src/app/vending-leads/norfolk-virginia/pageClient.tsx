@@ -85,31 +85,31 @@ export default function NorfolkVirginiaVendingLeadsPage() {
   // FAQ items reused for JSON-LD
   const faqItems = [
   {
-    q: 'What types of vending machine locations are available in Norfolk?\',
+    q: 'What types of vending machine locations are available in Norfolk?',
     a: 'Norfolk offers diverse vending opportunities including military facilities, port operations, healthcare centers, educational institutions, retail locations, and office buildings. Each location is pre-verified for optimal vending machine success.'
   },
   {
-    q: 'How quickly can I get vending machine leads for Norfolk?\',
+    q: 'How quickly can I get vending machine leads for Norfolk?',
     a: 'Our Norfolk vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
   },
   {
-    q: 'What makes Norfolk a good market for vending machines?\',
+    q: 'What makes Norfolk a good market for vending machines?',
     a: 'Norfolk features a thriving business community with diverse industries including military, port operations, and healthcare. The city\'s business density and strategic location create ideal conditions for vending machine success.'
   },
   {
-    q: 'Do you provide ongoing support for Norfolk locations?\',
+    q: 'Do you provide ongoing support for Norfolk locations?',
     a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Norfolk.'
   },
   {
-    q: 'What industries in Norfolk are best for vending machines?\',
+    q: 'What industries in Norfolk are best for vending machines?',
     a: 'Military facilities, port operations, healthcare centers, educational institutions, and office buildings in Norfolk show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
   },
   {
-    q: 'How do you verify the quality of Norfolk vending locations?\',
+    q: 'How do you verify the quality of Norfolk vending locations?',
     a: 'We conduct thorough research on each Norfolk location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
   },
   {
-    q: 'Can I get customized vending leads for specific areas of Norfolk?\',
+    q: 'Can I get customized vending leads for specific areas of Norfolk?',
     a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Norfolk including downtown, naval base area, and port district based on your preferences and target market requirements.'
   },
   {

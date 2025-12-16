@@ -85,31 +85,31 @@ export default function CarlsbadCaliforniaVendingLeadsPage() {
   // FAQ items reused for JSON-LD
   const faqItems = [
   {
-    q: 'What types of vending machine locations are available in Carlsbad?\',
+    q: 'What types of vending machine locations are available in Carlsbad?',
     a: 'Carlsbad offers diverse vending opportunities including healthcare facilities, educational institutions, retail locations, office buildings, and manufacturing facilities. Each location is pre-verified for optimal vending machine success.'
   },
   {
-    q: 'How quickly can I get vending machine leads for Carlsbad?\',
+    q: 'How quickly can I get vending machine leads for Carlsbad?',
     a: 'Our Carlsbad vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
   },
   {
-    q: 'What makes Carlsbad a good market for vending machines?\',
+    q: 'What makes Carlsbad a good market for vending machines?',
     a: 'Carlsbad features a thriving business community with diverse industries and strong economic activity. The city\'s business density and diverse demographics create ideal conditions for vending machine success.'
   },
   {
-    q: 'Do you provide ongoing support for Carlsbad locations?\',
+    q: 'Do you provide ongoing support for Carlsbad locations?',
     a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Carlsbad.'
   },
   {
-    q: 'What industries in Carlsbad are best for vending machines?\',
+    q: 'What industries in Carlsbad are best for vending machines?',
     a: 'Healthcare, education, retail, office buildings, and manufacturing in Carlsbad show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
   },
   {
-    q: 'How do you verify the quality of Carlsbad vending locations?\',
+    q: 'How do you verify the quality of Carlsbad vending locations?',
     a: 'We conduct thorough research on each Carlsbad location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
   },
   {
-    q: 'Can I get customized vending leads for specific areas of Carlsbad?\',
+    q: 'Can I get customized vending leads for specific areas of Carlsbad?',
     a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Carlsbad based on your preferences and target market requirements.'
   },
   {

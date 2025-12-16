@@ -85,31 +85,31 @@ export default function St.PaulMinnesotaVendingLeadsPage() {
   // FAQ items reused for JSON-LD
   const faqItems = [
   {
-    q: 'What types of vending machine locations are available in St. Paul?\',
+    q: 'What types of vending machine locations are available in St. Paul?',
     a: 'St. Paul offers diverse vending opportunities including government facilities, healthcare centers, educational institutions, retail locations, office buildings, and manufacturing facilities. Each location is pre-verified for optimal vending machine success.'
   },
   {
-    q: 'How quickly can I get vending machine leads for St. Paul?\',
+    q: 'How quickly can I get vending machine leads for St. Paul?',
     a: 'Our St. Paul vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
   },
   {
-    q: 'What makes St. Paul a good market for vending machines?\',
+    q: 'What makes St. Paul a good market for vending machines?',
     a: 'St. Paul features a thriving business community with diverse industries including government, healthcare, and education. The city\'s business density and state capital status create ideal conditions for vending machine success.'
   },
   {
-    q: 'Do you provide ongoing support for St. Paul locations?\',
+    q: 'Do you provide ongoing support for St. Paul locations?',
     a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in St. Paul.'
   },
   {
-    q: 'What industries in St. Paul are best for vending machines?\',
+    q: 'What industries in St. Paul are best for vending machines?',
     a: 'Government facilities, healthcare centers, educational institutions, office buildings, and manufacturing in St. Paul show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
   },
   {
-    q: 'How do you verify the quality of St. Paul vending locations?\',
+    q: 'How do you verify the quality of St. Paul vending locations?',
     a: 'We conduct thorough research on each St. Paul location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
   },
   {
-    q: 'Can I get customized vending leads for specific areas of St. Paul?\',
+    q: 'Can I get customized vending leads for specific areas of St. Paul?',
     a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within St. Paul including downtown, capitol area, and university districts based on your preferences and target market requirements.'
   },
   {

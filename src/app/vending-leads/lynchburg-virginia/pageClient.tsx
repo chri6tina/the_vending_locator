@@ -85,31 +85,31 @@ export default function LynchburgVirginiaVendingLeadsPage() {
   // FAQ items reused for JSON-LD
   const faqItems = [
   {
-    q: 'What types of vending machine locations are available in Lynchburg?\',
+    q: 'What types of vending machine locations are available in Lynchburg?',
     a: 'Lynchburg offers diverse vending opportunities including educational institutions, healthcare facilities, manufacturing plants, retail locations, office buildings, and government facilities. Each location is pre-verified for optimal vending machine success.'
   },
   {
-    q: 'How quickly can I get vending machine leads for Lynchburg?\',
+    q: 'How quickly can I get vending machine leads for Lynchburg?',
     a: 'Our Lynchburg vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
   },
   {
-    q: 'What makes Lynchburg a good market for vending machines?\',
+    q: 'What makes Lynchburg a good market for vending machines?',
     a: 'Lynchburg features a thriving business community with diverse industries including education, healthcare, and manufacturing. The city\'s business density and college town character create ideal conditions for vending machine success.'
   },
   {
-    q: 'Do you provide ongoing support for Lynchburg locations?\',
+    q: 'Do you provide ongoing support for Lynchburg locations?',
     a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Lynchburg.'
   },
   {
-    q: 'What industries in Lynchburg are best for vending machines?\',
+    q: 'What industries in Lynchburg are best for vending machines?',
     a: 'Educational institutions, healthcare facilities, manufacturing plants, retail locations, and office buildings in Lynchburg show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
   },
   {
-    q: 'How do you verify the quality of Lynchburg vending locations?\',
+    q: 'How do you verify the quality of Lynchburg vending locations?',
     a: 'We conduct thorough research on each Lynchburg location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
   },
   {
-    q: 'Can I get customized vending leads for specific areas of Lynchburg?\',
+    q: 'Can I get customized vending leads for specific areas of Lynchburg?',
     a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or campus areas within Lynchburg including downtown, university area, and retail corridors based on your preferences and target market requirements.'
   },
   {

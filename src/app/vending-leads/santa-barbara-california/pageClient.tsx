@@ -85,31 +85,31 @@ export default function SantaBarbaraCaliforniaVendingLeadsPage() {
   // FAQ items reused for JSON-LD
   const faqItems = [
   {
-    q: 'What types of vending machine locations are available in Santa Barbara?\',
+    q: 'What types of vending machine locations are available in Santa Barbara?',
     a: 'Santa Barbara offers diverse vending opportunities including healthcare facilities, educational institutions, retail locations, office buildings, and manufacturing facilities. Each location is pre-verified for optimal vending machine success.'
   },
   {
-    q: 'How quickly can I get vending machine leads for Santa Barbara?\',
+    q: 'How quickly can I get vending machine leads for Santa Barbara?',
     a: 'Our Santa Barbara vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
   },
   {
-    q: 'What makes Santa Barbara a good market for vending machines?\',
+    q: 'What makes Santa Barbara a good market for vending machines?',
     a: 'Santa Barbara features a thriving business community with diverse industries and strong economic activity. The city\'s business density and diverse demographics create ideal conditions for vending machine success.'
   },
   {
-    q: 'Do you provide ongoing support for Santa Barbara locations?\',
+    q: 'Do you provide ongoing support for Santa Barbara locations?',
     a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Santa Barbara.'
   },
   {
-    q: 'What industries in Santa Barbara are best for vending machines?\',
+    q: 'What industries in Santa Barbara are best for vending machines?',
     a: 'Healthcare, education, retail, office buildings, and manufacturing in Santa Barbara show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
   },
   {
-    q: 'How do you verify the quality of Santa Barbara vending locations?\',
+    q: 'How do you verify the quality of Santa Barbara vending locations?',
     a: 'We conduct thorough research on each Santa Barbara location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
   },
   {
-    q: 'Can I get customized vending leads for specific areas of Santa Barbara?\',
+    q: 'Can I get customized vending leads for specific areas of Santa Barbara?',
     a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Santa Barbara based on your preferences and target market requirements.'
   },
   {

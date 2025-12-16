@@ -85,31 +85,31 @@ export default function EverettWashingtonVendingLeadsPage() {
   // FAQ items reused for JSON-LD
   const faqItems = [
   {
-    q: 'What types of vending machine locations are available in Everett?\',
+    q: 'What types of vending machine locations are available in Everett?',
     a: 'Everett offers diverse vending opportunities including aerospace facilities, manufacturing plants, port operations, healthcare centers, educational institutions, and retail locations. Each location is pre-verified for optimal vending machine success.'
   },
   {
-    q: 'How quickly can I get vending machine leads for Everett?\',
+    q: 'How quickly can I get vending machine leads for Everett?',
     a: 'Our Everett vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
   },
   {
-    q: 'What makes Everett a good market for vending machines?\',
+    q: 'What makes Everett a good market for vending machines?',
     a: 'Everett features a thriving business community with diverse industries including aerospace, manufacturing, and port operations. The city\'s business density and industrial base create ideal conditions for vending machine success.'
   },
   {
-    q: 'Do you provide ongoing support for Everett locations?\',
+    q: 'Do you provide ongoing support for Everett locations?',
     a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Everett.'
   },
   {
-    q: 'What industries in Everett are best for vending machines?\',
+    q: 'What industries in Everett are best for vending machines?',
     a: 'Aerospace facilities, manufacturing plants, port operations, healthcare centers, and educational institutions in Everett show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
   },
   {
-    q: 'How do you verify the quality of Everett vending locations?\',
+    q: 'How do you verify the quality of Everett vending locations?',
     a: 'We conduct thorough research on each Everett location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
   },
   {
-    q: 'Can I get customized vending leads for specific areas of Everett?\',
+    q: 'Can I get customized vending leads for specific areas of Everett?',
     a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Everett including downtown, aerospace district, and port area based on your preferences and target market requirements.'
   },
   {

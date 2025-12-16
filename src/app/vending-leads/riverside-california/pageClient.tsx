@@ -85,31 +85,31 @@ export default function RiversideCaliforniaVendingLeadsPage() {
   // FAQ items reused for JSON-LD
   const faqItems = [
   {
-    q: 'What types of vending machine locations are available in Riverside?\',
+    q: 'What types of vending machine locations are available in Riverside?',
     a: 'Riverside offers diverse vending opportunities including logistics facilities, healthcare centers, educational institutions, retail locations, office buildings, and manufacturing facilities. Each location is pre-verified for optimal vending machine success.'
   },
   {
-    q: 'How quickly can I get vending machine leads for Riverside?\',
+    q: 'How quickly can I get vending machine leads for Riverside?',
     a: 'Our Riverside vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
   },
   {
-    q: 'What makes Riverside a good market for vending machines?\',
+    q: 'What makes Riverside a good market for vending machines?',
     a: 'Riverside features a thriving business community with diverse industries including logistics, healthcare, and education. The city\'s business density and growing population create ideal conditions for vending machine success.'
   },
   {
-    q: 'Do you provide ongoing support for Riverside locations?\',
+    q: 'Do you provide ongoing support for Riverside locations?',
     a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Riverside.'
   },
   {
-    q: 'What industries in Riverside are best for vending machines?\',
+    q: 'What industries in Riverside are best for vending machines?',
     a: 'Logistics facilities, healthcare centers, educational institutions, office buildings, and manufacturing in Riverside show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
   },
   {
-    q: 'How do you verify the quality of Riverside vending locations?\',
+    q: 'How do you verify the quality of Riverside vending locations?',
     a: 'We conduct thorough research on each Riverside location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
   },
   {
-    q: 'Can I get customized vending leads for specific areas of Riverside?\',
+    q: 'Can I get customized vending leads for specific areas of Riverside?',
     a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Riverside including downtown, university area, and logistics corridors based on your preferences and target market requirements.'
   },
   {

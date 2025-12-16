@@ -85,31 +85,31 @@ export default function CoffeyvilleKansasVendingLeadsPage() {
   // FAQ items reused for JSON-LD
   const faqItems = [
   {
-    q: 'What types of vending machine locations are available in Coffeyville?\',
+    q: 'What types of vending machine locations are available in Coffeyville?',
     a: 'Coffeyville offers diverse vending opportunities including healthcare facilities, educational institutions, retail locations, office buildings, and manufacturing facilities. Each location is pre-verified for optimal vending machine success.'
   },
   {
-    q: 'How quickly can I get vending machine leads for Coffeyville?\',
+    q: 'How quickly can I get vending machine leads for Coffeyville?',
     a: 'Our Coffeyville vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
   },
   {
-    q: 'What makes Coffeyville a good market for vending machines?\',
+    q: 'What makes Coffeyville a good market for vending machines?',
     a: 'Coffeyville features a thriving business community with diverse industries and strong economic activity. The city\'s business density and diverse demographics create ideal conditions for vending machine success.'
   },
   {
-    q: 'Do you provide ongoing support for Coffeyville locations?\',
+    q: 'Do you provide ongoing support for Coffeyville locations?',
     a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Coffeyville.'
   },
   {
-    q: 'What industries in Coffeyville are best for vending machines?\',
+    q: 'What industries in Coffeyville are best for vending machines?',
     a: 'Healthcare, education, retail, office buildings, and manufacturing in Coffeyville show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
   },
   {
-    q: 'How do you verify the quality of Coffeyville vending locations?\',
+    q: 'How do you verify the quality of Coffeyville vending locations?',
     a: 'We conduct thorough research on each Coffeyville location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
   },
   {
-    q: 'Can I get customized vending leads for specific areas of Coffeyville?\',
+    q: 'Can I get customized vending leads for specific areas of Coffeyville?',
     a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Coffeyville based on your preferences and target market requirements.'
   },
   {

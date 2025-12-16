@@ -85,31 +85,31 @@ export default function ShreveportLouisianaVendingLeadsPage() {
   // FAQ items reused for JSON-LD
   const faqItems = [
   {
-    q: 'What types of vending machine locations are available in Shreveport?\',
+    q: 'What types of vending machine locations are available in Shreveport?',
     a: 'Shreveport offers diverse vending opportunities including gaming facilities, military installations, healthcare centers, educational institutions, retail locations, and office buildings. Each location is pre-verified for optimal vending machine success.'
   },
   {
-    q: 'How quickly can I get vending machine leads for Shreveport?\',
+    q: 'How quickly can I get vending machine leads for Shreveport?',
     a: 'Our Shreveport vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
   },
   {
-    q: 'What makes Shreveport a good market for vending machines?\',
+    q: 'What makes Shreveport a good market for vending machines?',
     a: 'Shreveport features a thriving business community with diverse industries including gaming, military, and healthcare. The city\'s business density and entertainment sector create ideal conditions for vending machine success.'
   },
   {
-    q: 'Do you provide ongoing support for Shreveport locations?\',
+    q: 'Do you provide ongoing support for Shreveport locations?',
     a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Shreveport.'
   },
   {
-    q: 'What industries in Shreveport are best for vending machines?\',
+    q: 'What industries in Shreveport are best for vending machines?',
     a: 'Gaming facilities, military installations, healthcare centers, educational institutions, and office buildings in Shreveport show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
   },
   {
-    q: 'How do you verify the quality of Shreveport vending locations?\',
+    q: 'How do you verify the quality of Shreveport vending locations?',
     a: 'We conduct thorough research on each Shreveport location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
   },
   {
-    q: 'Can I get customized vending leads for specific areas of Shreveport?\',
+    q: 'Can I get customized vending leads for specific areas of Shreveport?',
     a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or entertainment areas within Shreveport including downtown, casino district, and military base area based on your preferences and target market requirements.'
   },
   {

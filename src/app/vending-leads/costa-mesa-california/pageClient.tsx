@@ -85,31 +85,31 @@ export default function CostaMesaCaliforniaVendingLeadsPage() {
   // FAQ items reused for JSON-LD
   const faqItems = [
   {
-    q: 'What types of vending machine locations are available in Costa Mesa?\',
+    q: 'What types of vending machine locations are available in Costa Mesa?',
     a: 'Costa Mesa offers diverse vending opportunities including healthcare facilities, educational institutions, retail locations, office buildings, and manufacturing facilities. Each location is pre-verified for optimal vending machine success.'
   },
   {
-    q: 'How quickly can I get vending machine leads for Costa Mesa?\',
+    q: 'How quickly can I get vending machine leads for Costa Mesa?',
     a: 'Our Costa Mesa vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
   },
   {
-    q: 'What makes Costa Mesa a good market for vending machines?\',
+    q: 'What makes Costa Mesa a good market for vending machines?',
     a: 'Costa Mesa features a thriving business community with diverse industries and strong economic activity. The city\'s business density and diverse demographics create ideal conditions for vending machine success.'
   },
   {
-    q: 'Do you provide ongoing support for Costa Mesa locations?\',
+    q: 'Do you provide ongoing support for Costa Mesa locations?',
     a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Costa Mesa.'
   },
   {
-    q: 'What industries in Costa Mesa are best for vending machines?\',
+    q: 'What industries in Costa Mesa are best for vending machines?',
     a: 'Healthcare, education, retail, office buildings, and manufacturing in Costa Mesa show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
   },
   {
-    q: 'How do you verify the quality of Costa Mesa vending locations?\',
+    q: 'How do you verify the quality of Costa Mesa vending locations?',
     a: 'We conduct thorough research on each Costa Mesa location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
   },
   {
-    q: 'Can I get customized vending leads for specific areas of Costa Mesa?\',
+    q: 'Can I get customized vending leads for specific areas of Costa Mesa?',
     a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Costa Mesa based on your preferences and target market requirements.'
   },
   {

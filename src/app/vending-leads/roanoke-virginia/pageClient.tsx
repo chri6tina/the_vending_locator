@@ -85,31 +85,31 @@ export default function RoanokeVirginiaVendingLeadsPage() {
   // FAQ items reused for JSON-LD
   const faqItems = [
   {
-    q: 'What types of vending machine locations are available in Roanoke?\',
+    q: 'What types of vending machine locations are available in Roanoke?',
     a: 'Roanoke offers diverse vending opportunities including healthcare facilities, manufacturing plants, logistics centers, educational institutions, retail locations, and office buildings. Each location is pre-verified for optimal vending machine success.'
   },
   {
-    q: 'How quickly can I get vending machine leads for Roanoke?\',
+    q: 'How quickly can I get vending machine leads for Roanoke?',
     a: 'Our Roanoke vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
   },
   {
-    q: 'What makes Roanoke a good market for vending machines?\',
+    q: 'What makes Roanoke a good market for vending machines?',
     a: 'Roanoke features a thriving business community with diverse industries including healthcare, manufacturing, and logistics. The city\'s business density and mountain location create ideal conditions for vending machine success.'
   },
   {
-    q: 'Do you provide ongoing support for Roanoke locations?\',
+    q: 'Do you provide ongoing support for Roanoke locations?',
     a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Roanoke.'
   },
   {
-    q: 'What industries in Roanoke are best for vending machines?\',
+    q: 'What industries in Roanoke are best for vending machines?',
     a: 'Healthcare facilities, manufacturing plants, logistics centers, educational institutions, and office buildings in Roanoke show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
   },
   {
-    q: 'How do you verify the quality of Roanoke vending locations?\',
+    q: 'How do you verify the quality of Roanoke vending locations?',
     a: 'We conduct thorough research on each Roanoke location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
   },
   {
-    q: 'Can I get customized vending leads for specific areas of Roanoke?\',
+    q: 'Can I get customized vending leads for specific areas of Roanoke?',
     a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Roanoke including downtown, medical district, and industrial parks based on your preferences and target market requirements.'
   },
   {

@@ -85,31 +85,31 @@ export default function VancouverWashingtonVendingLeadsPage() {
   // FAQ items reused for JSON-LD
   const faqItems = [
   {
-    q: 'What types of vending machine locations are available in Vancouver?\',
+    q: 'What types of vending machine locations are available in Vancouver?',
     a: 'Vancouver offers diverse vending opportunities including technology companies, healthcare facilities, retail centers, educational institutions, office buildings, and logistics operations. Each location is pre-verified for optimal vending machine success.'
   },
   {
-    q: 'How quickly can I get vending machine leads for Vancouver?\',
+    q: 'How quickly can I get vending machine leads for Vancouver?',
     a: 'Our Vancouver vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
   },
   {
-    q: 'What makes Vancouver a good market for vending machines?\',
+    q: 'What makes Vancouver a good market for vending machines?',
     a: 'Vancouver features a thriving business community with diverse industries including technology, healthcare, and retail. The city\'s business density and Portland metro location create ideal conditions for vending machine success.'
   },
   {
-    q: 'Do you provide ongoing support for Vancouver locations?\',
+    q: 'Do you provide ongoing support for Vancouver locations?',
     a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Vancouver.'
   },
   {
-    q: 'What industries in Vancouver are best for vending machines?\',
+    q: 'What industries in Vancouver are best for vending machines?',
     a: 'Technology companies, healthcare facilities, retail centers, educational institutions, and office buildings in Vancouver show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
   },
   {
-    q: 'How do you verify the quality of Vancouver vending locations?\',
+    q: 'How do you verify the quality of Vancouver vending locations?',
     a: 'We conduct thorough research on each Vancouver location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
   },
   {
-    q: 'Can I get customized vending leads for specific areas of Vancouver?\',
+    q: 'Can I get customized vending leads for specific areas of Vancouver?',
     a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or retail areas within Vancouver including downtown, technology corridor, and retail centers based on your preferences and target market requirements.'
   },
   {

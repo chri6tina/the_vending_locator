@@ -85,31 +85,31 @@ export default function OceansideCaliforniaVendingLeadsPage() {
   // FAQ items reused for JSON-LD
   const faqItems = [
   {
-    q: 'What types of vending machine locations are available in Oceanside?\',
+    q: 'What types of vending machine locations are available in Oceanside?',
     a: 'Oceanside offers diverse vending opportunities including tourism businesses, military facilities, healthcare centers, educational institutions, retail locations, and office buildings. Each location is pre-verified for optimal vending machine success.'
   },
   {
-    q: 'How quickly can I get vending machine leads for Oceanside?\',
+    q: 'How quickly can I get vending machine leads for Oceanside?',
     a: 'Our Oceanside vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
   },
   {
-    q: 'What makes Oceanside a good market for vending machines?\',
+    q: 'What makes Oceanside a good market for vending machines?',
     a: 'Oceanside features a thriving business community with diverse industries including tourism, military, and healthcare. The city\'s business density and coastal location create ideal conditions for vending machine success.'
   },
   {
-    q: 'Do you provide ongoing support for Oceanside locations?\',
+    q: 'Do you provide ongoing support for Oceanside locations?',
     a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Oceanside.'
   },
   {
-    q: 'What industries in Oceanside are best for vending machines?\',
+    q: 'What industries in Oceanside are best for vending machines?',
     a: 'Tourism businesses, military facilities, healthcare centers, educational institutions, and retail locations in Oceanside show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
   },
   {
-    q: 'How do you verify the quality of Oceanside vending locations?\',
+    q: 'How do you verify the quality of Oceanside vending locations?',
     a: 'We conduct thorough research on each Oceanside location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
   },
   {
-    q: 'Can I get customized vending leads for specific areas of Oceanside?\',
+    q: 'Can I get customized vending leads for specific areas of Oceanside?',
     a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or beach areas within Oceanside including downtown, beachfront, and military base area based on your preferences and target market requirements.'
   },
   {

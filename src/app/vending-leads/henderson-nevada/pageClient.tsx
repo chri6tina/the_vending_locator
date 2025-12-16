@@ -155,9 +155,9 @@ export default function HendersonNevadaVendingLeadsPage() {
             </div>
             <div className="space-y-6">
               {[
-                { q: 'Why Henderson?\', a: 'Growing office clusters, logistics adjacency, and retail/hospitality demand create strong vending opportunities.' },
-                { q: 'Delivery timeline?\', a: 'We typically deliver within 3–5 business days with verified business details and contacts.' },
-                { q: 'Great first placements?\', a: 'Warehouses, clinics, hotels, and office parks are strong first targets.' }
+                { q: 'Why Henderson?', a: 'Growing office clusters, logistics adjacency, and retail/hospitality demand create strong vending opportunities.' },
+                { q: 'Delivery timeline?', a: 'We typically deliver within 3–5 business days with verified business details and contacts.' },
+                { q: 'Great first placements?', a: 'Warehouses, clinics, hotels, and office parks are strong first targets.' }
               ].map((item, idx) => (
                 <motion.div key={idx} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: idx * 0.1 }} viewport={{ once: true }} className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
                   <h3 className="text-lg font-semibold text-charcoal mb-3">{item.q}</h3>

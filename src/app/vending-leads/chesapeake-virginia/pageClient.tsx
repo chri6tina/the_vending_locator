@@ -85,31 +85,31 @@ export default function ChesapeakeVirginiaVendingLeadsPage() {
   // FAQ items reused for JSON-LD
   const faqItems = [
   {
-    q: 'What types of vending machine locations are available in Chesapeake?\',
+    q: 'What types of vending machine locations are available in Chesapeake?',
     a: 'Chesapeake offers diverse vending opportunities including retail centers, healthcare facilities, logistics operations, educational institutions, office buildings, and manufacturing facilities. Each location is pre-verified for optimal vending machine success.'
   },
   {
-    q: 'How quickly can I get vending machine leads for Chesapeake?\',
+    q: 'How quickly can I get vending machine leads for Chesapeake?',
     a: 'Our Chesapeake vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
   },
   {
-    q: 'What makes Chesapeake a good market for vending machines?\',
+    q: 'What makes Chesapeake a good market for vending machines?',
     a: 'Chesapeake features a thriving business community with diverse industries including retail, healthcare, and logistics. The city\'s business density and growing population create ideal conditions for vending machine success.'
   },
   {
-    q: 'Do you provide ongoing support for Chesapeake locations?\',
+    q: 'Do you provide ongoing support for Chesapeake locations?',
     a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Chesapeake.'
   },
   {
-    q: 'What industries in Chesapeake are best for vending machines?\',
+    q: 'What industries in Chesapeake are best for vending machines?',
     a: 'Retail centers, healthcare facilities, logistics operations, educational institutions, and office buildings in Chesapeake show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
   },
   {
-    q: 'How do you verify the quality of Chesapeake vending locations?\',
+    q: 'How do you verify the quality of Chesapeake vending locations?',
     a: 'We conduct thorough research on each Chesapeake location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
   },
   {
-    q: 'Can I get customized vending leads for specific areas of Chesapeake?\',
+    q: 'Can I get customized vending leads for specific areas of Chesapeake?',
     a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or retail areas within Chesapeake including Greenbrier, Great Bridge, and retail corridors based on your preferences and target market requirements.'
   },
   {

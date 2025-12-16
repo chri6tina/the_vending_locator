@@ -85,31 +85,31 @@ export default function OrangeCaliforniaVendingLeadsPage() {
   // FAQ items reused for JSON-LD
   const faqItems = [
   {
-    q: 'What types of vending machine locations are available in Orange?\',
+    q: 'What types of vending machine locations are available in Orange?',
     a: 'Orange offers diverse vending opportunities including healthcare facilities, educational institutions, retail locations, office buildings, and manufacturing facilities. Each location is pre-verified for optimal vending machine success.'
   },
   {
-    q: 'How quickly can I get vending machine leads for Orange?\',
+    q: 'How quickly can I get vending machine leads for Orange?',
     a: 'Our Orange vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
   },
   {
-    q: 'What makes Orange a good market for vending machines?\',
+    q: 'What makes Orange a good market for vending machines?',
     a: 'Orange features a thriving business community with diverse industries and strong economic activity. The city\'s business density and diverse demographics create ideal conditions for vending machine success.'
   },
   {
-    q: 'Do you provide ongoing support for Orange locations?\',
+    q: 'Do you provide ongoing support for Orange locations?',
     a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Orange.'
   },
   {
-    q: 'What industries in Orange are best for vending machines?\',
+    q: 'What industries in Orange are best for vending machines?',
     a: 'Healthcare, education, retail, office buildings, and manufacturing in Orange show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
   },
   {
-    q: 'How do you verify the quality of Orange vending locations?\',
+    q: 'How do you verify the quality of Orange vending locations?',
     a: 'We conduct thorough research on each Orange location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
   },
   {
-    q: 'Can I get customized vending leads for specific areas of Orange?\',
+    q: 'Can I get customized vending leads for specific areas of Orange?',
     a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Orange based on your preferences and target market requirements.'
   },
   {

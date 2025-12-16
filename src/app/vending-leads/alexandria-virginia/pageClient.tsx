@@ -85,31 +85,31 @@ export default function AlexandriaVirginiaVendingLeadsPage() {
   // FAQ items reused for JSON-LD
   const faqItems = [
   {
-    q: 'What types of vending machine locations are available in Alexandria?\',
+    q: 'What types of vending machine locations are available in Alexandria?',
     a: 'Alexandria offers diverse vending opportunities including government facilities, technology companies, retail centers, healthcare facilities, educational institutions, and office buildings. Each location is pre-verified for optimal vending machine success.'
   },
   {
-    q: 'How quickly can I get vending machine leads for Alexandria?\',
+    q: 'How quickly can I get vending machine leads for Alexandria?',
     a: 'Our Alexandria vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
   },
   {
-    q: 'What makes Alexandria a good market for vending machines?\',
+    q: 'What makes Alexandria a good market for vending machines?',
     a: 'Alexandria features a thriving business community with diverse industries including government, technology, and retail. The city\'s business density and DC metro location create ideal conditions for vending machine success.'
   },
   {
-    q: 'Do you provide ongoing support for Alexandria locations?\',
+    q: 'Do you provide ongoing support for Alexandria locations?',
     a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Alexandria.'
   },
   {
-    q: 'What industries in Alexandria are best for vending machines?\',
+    q: 'What industries in Alexandria are best for vending machines?',
     a: 'Government facilities, technology companies, retail centers, healthcare facilities, and office buildings in Alexandria show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
   },
   {
-    q: 'How do you verify the quality of Alexandria vending locations?\',
+    q: 'How do you verify the quality of Alexandria vending locations?',
     a: 'We conduct thorough research on each Alexandria location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
   },
   {
-    q: 'Can I get customized vending leads for specific areas of Alexandria?\',
+    q: 'Can I get customized vending leads for specific areas of Alexandria?',
     a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or retail areas within Alexandria including Old Town, King Street, and business parks based on your preferences and target market requirements.'
   },
   {

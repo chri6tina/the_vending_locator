@@ -85,31 +85,31 @@ export default function BellevueWashingtonVendingLeadsPage() {
   // FAQ items reused for JSON-LD
   const faqItems = [
   {
-    q: 'What types of vending machine locations are available in Bellevue?\',
+    q: 'What types of vending machine locations are available in Bellevue?',
     a: 'Bellevue offers diverse vending opportunities including technology companies, financial services, corporate headquarters, healthcare facilities, educational institutions, and retail locations. Each location is pre-verified for optimal vending machine success.'
   },
   {
-    q: 'How quickly can I get vending machine leads for Bellevue?\',
+    q: 'How quickly can I get vending machine leads for Bellevue?',
     a: 'Our Bellevue vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
   },
   {
-    q: 'What makes Bellevue a good market for vending machines?\',
+    q: 'What makes Bellevue a good market for vending machines?',
     a: 'Bellevue features a thriving business community with diverse industries including technology, finance, and corporate services. The city\'s business density and affluent demographics create ideal conditions for vending machine success.'
   },
   {
-    q: 'Do you provide ongoing support for Bellevue locations?\',
+    q: 'Do you provide ongoing support for Bellevue locations?',
     a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Bellevue.'
   },
   {
-    q: 'What industries in Bellevue are best for vending machines?\',
+    q: 'What industries in Bellevue are best for vending machines?',
     a: 'Technology companies, financial services, corporate headquarters, healthcare facilities, and educational institutions in Bellevue show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
   },
   {
-    q: 'How do you verify the quality of Bellevue vending locations?\',
+    q: 'How do you verify the quality of Bellevue vending locations?',
     a: 'We conduct thorough research on each Bellevue location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
   },
   {
-    q: 'Can I get customized vending leads for specific areas of Bellevue?\',
+    q: 'Can I get customized vending leads for specific areas of Bellevue?',
     a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or corporate campuses within Bellevue including downtown, Bellevue Square area, and technology parks based on your preferences and target market requirements.'
   },
   {

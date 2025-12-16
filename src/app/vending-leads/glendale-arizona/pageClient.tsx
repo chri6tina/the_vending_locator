@@ -385,10 +385,10 @@ export default function GlendaleArizonaVendingLeadsPage() {
 
             <div className="space-y-6">
               {[
-                { q: 'What makes Glendale good for vending machines?\', a: 'Healthcare, education, logistics, finance, and retail sectors create strong and steady foot traffic for vending success.' },
-                { q: 'How fast are Glendale leads delivered?\', a: 'Research and delivery typically complete within 3-5 business days with business details and contact info.' },
-                { q: 'What Glendale locations perform best?\', a: 'Hospitals, universities, warehouses, office corridors, and shopping centers are top targets.' },
-                { q: 'Do you provide customized Glendale leads?\', a: 'Yes, we can tailor lists for neighborhoods, healthcare corridors, logistics hubs, or retail districts.' }
+                { q: 'What makes Glendale good for vending machines?', a: 'Healthcare, education, logistics, finance, and retail sectors create strong and steady foot traffic for vending success.' },
+                { q: 'How fast are Glendale leads delivered?', a: 'Research and delivery typically complete within 3-5 business days with business details and contact info.' },
+                { q: 'What Glendale locations perform best?', a: 'Hospitals, universities, warehouses, office corridors, and shopping centers are top targets.' },
+                { q: 'Do you provide customized Glendale leads?', a: 'Yes, we can tailor lists for neighborhoods, healthcare corridors, logistics hubs, or retail districts.' }
               ].map((item, idx) => (
                 <motion.div
                   key={idx}

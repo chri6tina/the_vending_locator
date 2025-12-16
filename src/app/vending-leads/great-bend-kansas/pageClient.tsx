@@ -85,31 +85,31 @@ export default function GreatBendKansasVendingLeadsPage() {
   // FAQ items reused for JSON-LD
   const faqItems = [
   {
-    q: 'What types of vending machine locations are available in Great Bend?\',
+    q: 'What types of vending machine locations are available in Great Bend?',
     a: 'Great Bend offers diverse vending opportunities including healthcare facilities, educational institutions, retail locations, office buildings, and manufacturing facilities. Each location is pre-verified for optimal vending machine success.'
   },
   {
-    q: 'How quickly can I get vending machine leads for Great Bend?\',
+    q: 'How quickly can I get vending machine leads for Great Bend?',
     a: 'Our Great Bend vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
   },
   {
-    q: 'What makes Great Bend a good market for vending machines?\',
+    q: 'What makes Great Bend a good market for vending machines?',
     a: 'Great Bend features a thriving business community with diverse industries and strong economic activity. The city\'s business density and diverse demographics create ideal conditions for vending machine success.'
   },
   {
-    q: 'Do you provide ongoing support for Great Bend locations?\',
+    q: 'Do you provide ongoing support for Great Bend locations?',
     a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Great Bend.'
   },
   {
-    q: 'What industries in Great Bend are best for vending machines?\',
+    q: 'What industries in Great Bend are best for vending machines?',
     a: 'Healthcare, education, retail, office buildings, and manufacturing in Great Bend show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
   },
   {
-    q: 'How do you verify the quality of Great Bend vending locations?\',
+    q: 'How do you verify the quality of Great Bend vending locations?',
     a: 'We conduct thorough research on each Great Bend location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
   },
   {
-    q: 'Can I get customized vending leads for specific areas of Great Bend?\',
+    q: 'Can I get customized vending leads for specific areas of Great Bend?',
     a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Great Bend based on your preferences and target market requirements.'
   },
   {

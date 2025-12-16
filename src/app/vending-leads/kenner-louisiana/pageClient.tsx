@@ -85,31 +85,31 @@ export default function KennerLouisianaVendingLeadsPage() {
   // FAQ items reused for JSON-LD
   const faqItems = [
   {
-    q: 'What types of vending machine locations are available in Kenner?\',
+    q: 'What types of vending machine locations are available in Kenner?',
     a: 'Kenner offers diverse vending opportunities including aviation facilities, retail centers, healthcare facilities, educational institutions, office buildings, and logistics operations. Each location is pre-verified for optimal vending machine success.'
   },
   {
-    q: 'How quickly can I get vending machine leads for Kenner?\',
+    q: 'How quickly can I get vending machine leads for Kenner?',
     a: 'Our Kenner vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
   },
   {
-    q: 'What makes Kenner a good market for vending machines?\',
+    q: 'What makes Kenner a good market for vending machines?',
     a: 'Kenner features a thriving business community with diverse industries including aviation, retail, and healthcare. The city\'s business density and airport location create ideal conditions for vending machine success.'
   },
   {
-    q: 'Do you provide ongoing support for Kenner locations?\',
+    q: 'Do you provide ongoing support for Kenner locations?',
     a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Kenner.'
   },
   {
-    q: 'What industries in Kenner are best for vending machines?\',
+    q: 'What industries in Kenner are best for vending machines?',
     a: 'Aviation facilities, retail centers, healthcare facilities, educational institutions, and office buildings in Kenner show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
   },
   {
-    q: 'How do you verify the quality of Kenner vending locations?\',
+    q: 'How do you verify the quality of Kenner vending locations?',
     a: 'We conduct thorough research on each Kenner location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
   },
   {
-    q: 'Can I get customized vending leads for specific areas of Kenner?\',
+    q: 'Can I get customized vending leads for specific areas of Kenner?',
     a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or airport areas within Kenner including airport vicinity, retail corridors, and business parks based on your preferences and target market requirements.'
   },
   {
