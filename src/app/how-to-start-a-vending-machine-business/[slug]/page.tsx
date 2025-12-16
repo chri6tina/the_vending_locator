@@ -2101,7 +2101,7 @@ const cityInfo: Record<string, {
   },
   'anaheim-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -2131,7 +2131,7 @@ const cityInfo: Record<string, {
   },
   'antioch-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -2161,7 +2161,7 @@ const cityInfo: Record<string, {
   },
   'bakersfield-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -2191,7 +2191,7 @@ const cityInfo: Record<string, {
   },
   'berkeley-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -2221,7 +2221,7 @@ const cityInfo: Record<string, {
   },
   'burbank-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -2251,7 +2251,7 @@ const cityInfo: Record<string, {
   },
   'carlsbad-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -2281,7 +2281,7 @@ const cityInfo: Record<string, {
   },
   'chula-vista-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -2311,7 +2311,7 @@ const cityInfo: Record<string, {
   },
   'clovis-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -2341,7 +2341,7 @@ const cityInfo: Record<string, {
   },
   'compton-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -2371,7 +2371,7 @@ const cityInfo: Record<string, {
   },
   'concord-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -2401,7 +2401,7 @@ const cityInfo: Record<string, {
   },
   'corona-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -2431,7 +2431,7 @@ const cityInfo: Record<string, {
   },
   'costa-mesa-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -2461,7 +2461,7 @@ const cityInfo: Record<string, {
   },
   'daly-city-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -2491,7 +2491,7 @@ const cityInfo: Record<string, {
   },
   'downey-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -2521,7 +2521,7 @@ const cityInfo: Record<string, {
   },
   'el-monte-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -2551,7 +2551,7 @@ const cityInfo: Record<string, {
   },
   'elk-grove-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -2581,7 +2581,7 @@ const cityInfo: Record<string, {
   },
   'escondido-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -2611,7 +2611,7 @@ const cityInfo: Record<string, {
   },
   'fairfield-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -2641,7 +2641,7 @@ const cityInfo: Record<string, {
   },
   'fontana-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -2671,7 +2671,7 @@ const cityInfo: Record<string, {
   },
   'fremont-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -2701,7 +2701,7 @@ const cityInfo: Record<string, {
   },
   'fresno-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -2731,7 +2731,7 @@ const cityInfo: Record<string, {
   },
   'fullerton-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -2761,7 +2761,7 @@ const cityInfo: Record<string, {
   },
   'garden-grove-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -2791,7 +2791,7 @@ const cityInfo: Record<string, {
   },
   'glendale-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -2821,7 +2821,7 @@ const cityInfo: Record<string, {
   },
   'hayward-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -2851,7 +2851,7 @@ const cityInfo: Record<string, {
   },
   'huntington-beach-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -2881,7 +2881,7 @@ const cityInfo: Record<string, {
   },
   'inglewood-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -2911,7 +2911,7 @@ const cityInfo: Record<string, {
   },
   'irvine-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -2941,7 +2941,7 @@ const cityInfo: Record<string, {
   },
   'lancaster-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -2971,7 +2971,7 @@ const cityInfo: Record<string, {
   },
   'jurupa-valley-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -3001,7 +3001,7 @@ const cityInfo: Record<string, {
   },
   'lakewood-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -3031,7 +3031,7 @@ const cityInfo: Record<string, {
   },
   'long-beach-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -3061,7 +3061,7 @@ const cityInfo: Record<string, {
   },
   'los-angeles-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -3091,7 +3091,7 @@ const cityInfo: Record<string, {
   },
   'modesto-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -3121,7 +3121,7 @@ const cityInfo: Record<string, {
   },
   'moreno-valley-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -3151,7 +3151,7 @@ const cityInfo: Record<string, {
   },
   'mountain-view-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -3181,7 +3181,7 @@ const cityInfo: Record<string, {
   },
   'murrieta-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -3211,7 +3211,7 @@ const cityInfo: Record<string, {
   },
   'napa-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -3241,7 +3241,7 @@ const cityInfo: Record<string, {
   },
   'newport-beach-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -3271,7 +3271,7 @@ const cityInfo: Record<string, {
   },
   'norwalk-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -3301,7 +3301,7 @@ const cityInfo: Record<string, {
   },
   'oakland-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -3331,7 +3331,7 @@ const cityInfo: Record<string, {
   },
   'oceanside-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -3361,7 +3361,7 @@ const cityInfo: Record<string, {
   },
   'ontario-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -3391,7 +3391,7 @@ const cityInfo: Record<string, {
   },
   'orange-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -3421,7 +3421,7 @@ const cityInfo: Record<string, {
   },
   'oxnard-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -3451,7 +3451,7 @@ const cityInfo: Record<string, {
   },
   'palm-desert-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -3481,7 +3481,7 @@ const cityInfo: Record<string, {
   },
   'palm-springs-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -3511,7 +3511,7 @@ const cityInfo: Record<string, {
   },
   'palmdale-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -3541,7 +3541,7 @@ const cityInfo: Record<string, {
   },
   'pasadena-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -3571,7 +3571,7 @@ const cityInfo: Record<string, {
   },
   'pomona-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -3601,7 +3601,7 @@ const cityInfo: Record<string, {
   },
   'rancho-cucamonga-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -3631,7 +3631,7 @@ const cityInfo: Record<string, {
   },
   'rialto-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -3661,7 +3661,7 @@ const cityInfo: Record<string, {
   },
   'richmond-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -3691,7 +3691,7 @@ const cityInfo: Record<string, {
   },
   'riverside-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -3721,7 +3721,7 @@ const cityInfo: Record<string, {
   },
   'roseville-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -3751,7 +3751,7 @@ const cityInfo: Record<string, {
   },
   'sacramento-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -3781,7 +3781,7 @@ const cityInfo: Record<string, {
   },
   'salinas-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -3811,7 +3811,7 @@ const cityInfo: Record<string, {
   },
   'san-bernardino-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -3841,7 +3841,7 @@ const cityInfo: Record<string, {
   },
   'san-diego-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -3871,7 +3871,7 @@ const cityInfo: Record<string, {
   },
   'santa-clara-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -3901,7 +3901,7 @@ const cityInfo: Record<string, {
   },
   'san-francisco-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -3931,7 +3931,7 @@ const cityInfo: Record<string, {
   },
   'san-jose-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -3961,7 +3961,7 @@ const cityInfo: Record<string, {
 ,
   'santa-ana-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -3991,7 +3991,7 @@ const cityInfo: Record<string, {
   },
   'santa-clarita-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -4021,7 +4021,7 @@ const cityInfo: Record<string, {
   },
   'santa-maria-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -4051,7 +4051,7 @@ const cityInfo: Record<string, {
   },
   'simi-valley-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -4081,7 +4081,7 @@ const cityInfo: Record<string, {
   },
   'stockton-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -4111,7 +4111,7 @@ const cityInfo: Record<string, {
   },
   'sunnyvale-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -4141,7 +4141,7 @@ const cityInfo: Record<string, {
   },
   'temecula-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -4171,7 +4171,7 @@ const cityInfo: Record<string, {
   },
   'thousand-oaks-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -4201,7 +4201,7 @@ const cityInfo: Record<string, {
   },
   'torrance-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -4231,7 +4231,7 @@ const cityInfo: Record<string, {
   },
   'vallejo-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -4261,7 +4261,7 @@ const cityInfo: Record<string, {
   },
   'ventura-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -4291,7 +4291,7 @@ const cityInfo: Record<string, {
   },
   'victorville-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -4321,7 +4321,7 @@ const cityInfo: Record<string, {
   },
   'visalia-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -4351,7 +4351,7 @@ const cityInfo: Record<string, {
   },
   'west-covina-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -4381,7 +4381,7 @@ const cityInfo: Record<string, {
   },
   'alhambra-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -4411,7 +4411,7 @@ const cityInfo: Record<string, {
   },
   'carson-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -4441,7 +4441,7 @@ const cityInfo: Record<string, {
   },
   'chico-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -4471,7 +4471,7 @@ const cityInfo: Record<string, {
   },
   'hawthorne-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -4501,7 +4501,7 @@ const cityInfo: Record<string, {
   },
   'redding-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -4531,7 +4531,7 @@ const cityInfo: Record<string, {
   },
   'san-mateo-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -4561,7 +4561,7 @@ const cityInfo: Record<string, {
   },
   'santa-barbara-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -4591,7 +4591,7 @@ const cityInfo: Record<string, {
   },
   'santa-rosa-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -4621,7 +4621,7 @@ const cityInfo: Record<string, {
   },
   'vacaville-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -4651,7 +4651,7 @@ const cityInfo: Record<string, {
   },
   'whittier-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -4681,7 +4681,7 @@ const cityInfo: Record<string, {
   },
   'el-cajon-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -4711,7 +4711,7 @@ const cityInfo: Record<string, {
   },
   'mission-viejo-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -4741,7 +4741,7 @@ const cityInfo: Record<string, {
   },
   'san-angelo-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -4771,7 +4771,7 @@ const cityInfo: Record<string, {
   },
   'south-gate-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -4801,7 +4801,7 @@ const cityInfo: Record<string, {
   },
   'vista-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -4831,7 +4831,7 @@ const cityInfo: Record<string, {
   },
   'baldwin-park-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -4861,7 +4861,7 @@ const cityInfo: Record<string, {
   },
   'bellflower-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -4891,7 +4891,7 @@ const cityInfo: Record<string, {
   },
   'citrus-heights-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -4921,7 +4921,7 @@ const cityInfo: Record<string, {
   },
   'cypress-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -4951,7 +4951,7 @@ const cityInfo: Record<string, {
   },
   'diamond-bar-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -4981,7 +4981,7 @@ const cityInfo: Record<string, {
   },
   'east-los-angeles-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -5011,7 +5011,7 @@ const cityInfo: Record<string, {
   },
   'el-centro-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -5041,7 +5041,7 @@ const cityInfo: Record<string, {
   },
   'hanford-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -5071,7 +5071,7 @@ const cityInfo: Record<string, {
   },
   'hemet-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -5101,7 +5101,7 @@ const cityInfo: Record<string, {
   },
   'hesperia-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -5131,7 +5131,7 @@ const cityInfo: Record<string, {
   },
   'indio-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -5161,7 +5161,7 @@ const cityInfo: Record<string, {
   },
   'la-habra-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -5191,7 +5191,7 @@ const cityInfo: Record<string, {
   },
   'la-mesa-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -5221,7 +5221,7 @@ const cityInfo: Record<string, {
   },
   'la-puente-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -5251,7 +5251,7 @@ const cityInfo: Record<string, {
   },
   'lodi-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -5281,7 +5281,7 @@ const cityInfo: Record<string, {
   },
   'madera-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -5311,7 +5311,7 @@ const cityInfo: Record<string, {
   },
   'menifee-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -5341,7 +5341,7 @@ const cityInfo: Record<string, {
   },
   'monterey-park-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -5371,7 +5371,7 @@ const cityInfo: Record<string, {
   },
   'national-city-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -5401,7 +5401,7 @@ const cityInfo: Record<string, {
   },
   'petaluma-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -5431,7 +5431,7 @@ const cityInfo: Record<string, {
   },
   'redwood-city-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -5461,7 +5461,7 @@ const cityInfo: Record<string, {
   },
   'san-leandro-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -5491,7 +5491,7 @@ const cityInfo: Record<string, {
   },
   'san-rafael-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -5521,7 +5521,7 @@ const cityInfo: Record<string, {
   },
   'santa-monica-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -5551,7 +5551,7 @@ const cityInfo: Record<string, {
   },
   'tulare-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -5581,7 +5581,7 @@ const cityInfo: Record<string, {
   },
   'turlock-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -5611,7 +5611,7 @@ const cityInfo: Record<string, {
   },
   'union-city-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -5641,7 +5641,7 @@ const cityInfo: Record<string, {
   },
   'watsonville-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -5671,7 +5671,7 @@ const cityInfo: Record<string, {
   },
   'westminster-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -5701,7 +5701,7 @@ const cityInfo: Record<string, {
   },
   'alameda-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -5731,7 +5731,7 @@ const cityInfo: Record<string, {
   },
   'arcadia-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -5761,7 +5761,7 @@ const cityInfo: Record<string, {
   },
   'arvin-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -5791,7 +5791,7 @@ const cityInfo: Record<string, {
   },
   'atascadero-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -5821,7 +5821,7 @@ const cityInfo: Record<string, {
   },
   'azusa-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -5851,7 +5851,7 @@ const cityInfo: Record<string, {
   },
   'banning-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -5881,7 +5881,7 @@ const cityInfo: Record<string, {
   },
   'barstow-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -5911,7 +5911,7 @@ const cityInfo: Record<string, {
   },
   'beaumont-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -5941,7 +5941,7 @@ const cityInfo: Record<string, {
   },
   'bell-gardens-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -5971,7 +5971,7 @@ const cityInfo: Record<string, {
   },
   'brawley-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -6001,7 +6001,7 @@ const cityInfo: Record<string, {
   },
   'buena-park-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -6031,7 +6031,7 @@ const cityInfo: Record<string, {
   },
   'calexico-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -6061,7 +6061,7 @@ const cityInfo: Record<string, {
   },
   'calimesa-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -6091,7 +6091,7 @@ const cityInfo: Record<string, {
   },
   'camarillo-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -6121,7 +6121,7 @@ const cityInfo: Record<string, {
   },
   'ceres-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -6151,7 +6151,7 @@ const cityInfo: Record<string, {
   },
   'chino-hills-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -6181,7 +6181,7 @@ const cityInfo: Record<string, {
   },
   'coachella-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -6211,7 +6211,7 @@ const cityInfo: Record<string, {
   },
   'coronado-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -6241,7 +6241,7 @@ const cityInfo: Record<string, {
   },
   'cudahy-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -6271,7 +6271,7 @@ const cityInfo: Record<string, {
   },
   'culver-city-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -6301,7 +6301,7 @@ const cityInfo: Record<string, {
   },
   'delano-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -6331,7 +6331,7 @@ const cityInfo: Record<string, {
   },
   'dinuba-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -6361,7 +6361,7 @@ const cityInfo: Record<string, {
   },
   'el-cerrito-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -6391,7 +6391,7 @@ const cityInfo: Record<string, {
   },
   'el-segundo-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -6421,7 +6421,7 @@ const cityInfo: Record<string, {
   },
   'emeryville-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -6451,7 +6451,7 @@ const cityInfo: Record<string, {
   },
   'encinitas-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -6481,7 +6481,7 @@ const cityInfo: Record<string, {
   },
   'folsom-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -6511,7 +6511,7 @@ const cityInfo: Record<string, {
   },
   'fountain-valley-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -6541,7 +6541,7 @@ const cityInfo: Record<string, {
   },
   'glendora-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -6571,7 +6571,7 @@ const cityInfo: Record<string, {
   },
   'goleta-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -6601,7 +6601,7 @@ const cityInfo: Record<string, {
   },
   'hawaiian-gardens-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -6631,7 +6631,7 @@ const cityInfo: Record<string, {
   },
   'hercules-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -6661,7 +6661,7 @@ const cityInfo: Record<string, {
   },
   'huntington-park-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -6691,7 +6691,7 @@ const cityInfo: Record<string, {
   },
   'imperial-beach-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -6721,7 +6721,7 @@ const cityInfo: Record<string, {
   },
   'la-canada-flintridge-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -6751,7 +6751,7 @@ const cityInfo: Record<string, {
   },
   'la-mirada-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -6781,7 +6781,7 @@ const cityInfo: Record<string, {
   },
   'la-quinta-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -6811,7 +6811,7 @@ const cityInfo: Record<string, {
   },
   'laguna-beach-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -6841,7 +6841,7 @@ const cityInfo: Record<string, {
   },
   'laguna-hills-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -6871,7 +6871,7 @@ const cityInfo: Record<string, {
   },
   'laguna-niguel-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -6901,7 +6901,7 @@ const cityInfo: Record<string, {
   },
   'lake-elsinore-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -6931,7 +6931,7 @@ const cityInfo: Record<string, {
   },
   'larkspur-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -6961,7 +6961,7 @@ const cityInfo: Record<string, {
   },
   'lemon-grove-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -6991,7 +6991,7 @@ const cityInfo: Record<string, {
   },
   'lomita-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -7021,7 +7021,7 @@ const cityInfo: Record<string, {
   },
   'los-gatos-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -7051,7 +7051,7 @@ const cityInfo: Record<string, {
   },
   'lynwood-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -7081,7 +7081,7 @@ const cityInfo: Record<string, {
   },
   'manhattan-beach-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -7111,7 +7111,7 @@ const cityInfo: Record<string, {
   },
   'millbrae-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -7141,7 +7141,7 @@ const cityInfo: Record<string, {
   },
   'mill-valley-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -7171,7 +7171,7 @@ const cityInfo: Record<string, {
   },
   'monrovia-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -7201,7 +7201,7 @@ const cityInfo: Record<string, {
   },
   'montclair-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -7231,7 +7231,7 @@ const cityInfo: Record<string, {
   },
   'morgan-hill-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -7261,7 +7261,7 @@ const cityInfo: Record<string, {
   },
   'newark-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -7291,7 +7291,7 @@ const cityInfo: Record<string, {
   },
   'oakdale-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -7321,7 +7321,7 @@ const cityInfo: Record<string, {
   },
   'pacifica-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -7351,7 +7351,7 @@ const cityInfo: Record<string, {
   },
   'palo-alto-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -7381,7 +7381,7 @@ const cityInfo: Record<string, {
   },
   'paramount-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -7411,7 +7411,7 @@ const cityInfo: Record<string, {
   },
   'pico-rivera-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -7441,7 +7441,7 @@ const cityInfo: Record<string, {
   },
   'pittsburg-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -7471,7 +7471,7 @@ const cityInfo: Record<string, {
   },
   'placentia-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -7501,7 +7501,7 @@ const cityInfo: Record<string, {
   },
   'pleasanton-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -7531,7 +7531,7 @@ const cityInfo: Record<string, {
   },
   'poway-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -7561,7 +7561,7 @@ const cityInfo: Record<string, {
   },
   'rancho-palos-verdes-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -7591,7 +7591,7 @@ const cityInfo: Record<string, {
   },
   'redondo-beach-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -7621,7 +7621,7 @@ const cityInfo: Record<string, {
   },
   'reedley-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -7651,7 +7651,7 @@ const cityInfo: Record<string, {
   },
   'ridgecrest-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -7681,7 +7681,7 @@ const cityInfo: Record<string, {
   },
   'rio-vista-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -7711,7 +7711,7 @@ const cityInfo: Record<string, {
   },
   'rohnert-park-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -7741,7 +7741,7 @@ const cityInfo: Record<string, {
   },
   'rosemead-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -7771,7 +7771,7 @@ const cityInfo: Record<string, {
   },
   'san-bruno-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -7801,7 +7801,7 @@ const cityInfo: Record<string, {
   },
   'san-carlos-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -7831,7 +7831,7 @@ const cityInfo: Record<string, {
   },
   'san-fernando-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -7861,7 +7861,7 @@ const cityInfo: Record<string, {
   },
   'san-gabriel-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -7891,7 +7891,7 @@ const cityInfo: Record<string, {
   },
   'san-jacinto-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -7921,7 +7921,7 @@ const cityInfo: Record<string, {
   },
   'san-luis-obispo-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -7951,7 +7951,7 @@ const cityInfo: Record<string, {
   },
   'san-pablo-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -7981,7 +7981,7 @@ const cityInfo: Record<string, {
   },
   'san-ramon-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -8011,7 +8011,7 @@ const cityInfo: Record<string, {
   },
   'sanger-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -8041,7 +8041,7 @@ const cityInfo: Record<string, {
   },
   'santa-cruz-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -8071,7 +8071,7 @@ const cityInfo: Record<string, {
   },
   'santa-paula-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -8101,7 +8101,7 @@ const cityInfo: Record<string, {
   },
   'saratoga-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -8131,7 +8131,7 @@ const cityInfo: Record<string, {
   },
   'seal-beach-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -8161,7 +8161,7 @@ const cityInfo: Record<string, {
   },
   'selma-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -8191,7 +8191,7 @@ const cityInfo: Record<string, {
   },
   'signal-hill-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -8221,7 +8221,7 @@ const cityInfo: Record<string, {
   },
   'solana-beach-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -8251,7 +8251,7 @@ const cityInfo: Record<string, {
   },
   'soledad-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -8281,7 +8281,7 @@ const cityInfo: Record<string, {
   },
   'sonoma-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -8311,7 +8311,7 @@ const cityInfo: Record<string, {
   },
   'south-el-monte-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -8341,7 +8341,7 @@ const cityInfo: Record<string, {
   },
   'south-pasadena-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -8371,7 +8371,7 @@ const cityInfo: Record<string, {
   },
   'south-san-francisco-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -8401,7 +8401,7 @@ const cityInfo: Record<string, {
   },
   'suisun-city-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -8431,7 +8431,7 @@ const cityInfo: Record<string, {
   },
   'temple-city-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -8461,7 +8461,7 @@ const cityInfo: Record<string, {
   },
   'tiburon-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -8491,7 +8491,7 @@ const cityInfo: Record<string, {
   },
   'tracy-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -8521,7 +8521,7 @@ const cityInfo: Record<string, {
   },
   'tustin-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -8551,7 +8551,7 @@ const cityInfo: Record<string, {
   },
   'ukiah-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -8581,7 +8581,7 @@ const cityInfo: Record<string, {
   },
   'upland-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -8611,7 +8611,7 @@ const cityInfo: Record<string, {
   },
   'walnut-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -8641,7 +8641,7 @@ const cityInfo: Record<string, {
   },
   'walnut-creek-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -8671,7 +8671,7 @@ const cityInfo: Record<string, {
   },
   'wasco-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -8701,7 +8701,7 @@ const cityInfo: Record<string, {
   },
   'west-hollywood-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -8731,7 +8731,7 @@ const cityInfo: Record<string, {
   },
   'wheatland-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -8761,7 +8761,7 @@ const cityInfo: Record<string, {
   },
   'willows-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -8791,7 +8791,7 @@ const cityInfo: Record<string, {
   },
   'windsor-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -8821,7 +8821,7 @@ const cityInfo: Record<string, {
   },
   'woodland-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -8851,7 +8851,7 @@ const cityInfo: Record<string, {
   },
   'yorba-linda-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -8881,7 +8881,7 @@ const cityInfo: Record<string, {
   },
   'yuba-city-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -8911,7 +8911,7 @@ const cityInfo: Record<string, {
   },
   'yucaipa-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -8941,7 +8941,7 @@ const cityInfo: Record<string, {
   },
   'yucca-valley-california': {
     permitNotes:
-      'California requires a seller's permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
