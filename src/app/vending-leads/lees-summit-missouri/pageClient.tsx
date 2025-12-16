@@ -36,9 +36,9 @@ export default function LeesSummitMissouriVendingLeadsPage() {
 
   // User names for active users counter
   const [userNames, setUserNames] = useState([
-    'Mike from Lee's Summit', 'Sarah in Lee's Summit', 'David in Lee's Summit', 'Lisa in Lee's Summit',
-    'Tom in Lee's Summit', 'Jennifer in Lee's Summit', 'Robert in Lee's Summit', 'Amanda in Lee's Summit',
-    'Chris in Lee's Summit', 'Maria in Lee's Summit', 'James in Lee's Summit', 'Emily in Lee's Summit'
+    'Mike from Lee\'s Summit', 'Sarah in Lee\'s Summit', 'David in Lee\'s Summit', 'Lisa in Lee\'s Summit',
+    'Tom in Lee\'s Summit', 'Jennifer in Lee\'s Summit', 'Robert in Lee\'s Summit', 'Amanda in Lee\'s Summit',
+    'Chris in Lee\'s Summit', 'Maria in Lee\'s Summit', 'James in Lee\'s Summit', 'Emily in Lee\'s Summit'
   ])
 
   // Active users counter effect

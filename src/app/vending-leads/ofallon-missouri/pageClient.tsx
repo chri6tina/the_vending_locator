@@ -36,9 +36,9 @@ export default function OFallonMissouriVendingLeadsPage() {
 
   // User names for active users counter
   const [userNames, setUserNames] = useState([
-    'Mike from O'Fallon', 'Sarah in O'Fallon', 'David in O'Fallon', 'Lisa in O'Fallon',
-    'Tom in O'Fallon', 'Jennifer in O'Fallon', 'Robert in O'Fallon', 'Amanda in O'Fallon',
-    'Chris in O'Fallon', 'Maria in O'Fallon', 'James in O'Fallon', 'Emily in O'Fallon'
+    'Mike from O\'Fallon', 'Sarah in O\'Fallon', 'David in O\'Fallon', 'Lisa in O\'Fallon',
+    'Tom in O\'Fallon', 'Jennifer in O\'Fallon', 'Robert in O\'Fallon', 'Amanda in O\'Fallon',
+    'Chris in O\'Fallon', 'Maria in O\'Fallon', 'James in O\'Fallon', 'Emily in O\'Fallon'
   ])
 
   // Active users counter effect
