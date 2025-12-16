@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Plant City, Florida - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Plant City, Florida. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines plant city florida, vending leads plant city florida, vending locations plant city florida, vending opportunities plant city florida",
+  "keywords": "vending machines Plant City Florida, vending leads Plant City Florida, vending locations Plant City Florida, vending opportunities Plant City Florida",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/plant-city-florida"
   },

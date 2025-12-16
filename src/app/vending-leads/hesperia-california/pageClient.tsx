@@ -154,8 +154,7 @@ export default function HesperiaCaliforniaVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Discover pre-qualified vending opportunities in Hesperia's growing economy, featuring business districts, commercial centers, and community facilities with consistent foot traffic.
-              </motion.p>
+                Discover high-quality vending opportunities in Hesperia, California, with pre-qualified locations in office buildings, retail spaces, and transportation hubs.</motion.p>
 
               {/* Trust Signals */}
               <motion.div 
@@ -306,7 +305,7 @@ export default function HesperiaCaliforniaVendingLeadsPage() {
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Medical centers and healthcare facilities throughout Hesperia offer excellent vending placement opportunities, with high-traffic areas including waiting rooms, cafeterias, and employee break areas.</p>
+                <p className="text-stone leading-relaxed">Medical facilities throughout Hesperia serve large patient populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services in waiting areas and break rooms.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -320,7 +319,7 @@ export default function HesperiaCaliforniaVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Hesperia's education sector features schools, universities, and training facilities with captive audiences during academic hours, creating reliable vending machine placement opportunities.</p>
+                <p className="text-stone leading-relaxed">Educational facilities throughout Hesperia serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -334,7 +333,7 @@ export default function HesperiaCaliforniaVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Manufacturing facilities in Hesperia operate around the clock with significant employee populations, providing consistent vending opportunities in break rooms and common areas.</p>
+                <p className="text-stone leading-relaxed">Manufacturing facilities in Hesperia provide excellent vending locations with large employee bases, multiple shifts, and break areas that generate consistent sales throughout the day.</p>
               </motion.div>
               <motion.div
                 key="Retail"
@@ -348,7 +347,7 @@ export default function HesperiaCaliforniaVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Retail establishments in Hesperia attract diverse customer demographics and generate steady foot traffic, providing reliable vending opportunities across various retail environments.</p>
+                <p className="text-stone leading-relaxed">Shopping centers and retail districts in Hesperia offer prime vending locations, with high-traffic areas including food courts, entrances, and common spaces frequented by shoppers.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -362,7 +361,7 @@ export default function HesperiaCaliforniaVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Hesperia's office sector includes business districts, corporate campuses, and professional centers with high employee concentrations, ideal for vending services in common areas and break rooms.</p>
+                <p className="text-stone leading-relaxed">Office complexes in Hesperia provide ideal vending locations with multiple tenants, high employee counts, and break areas that ensure steady machine usage during business hours.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -376,7 +375,7 @@ export default function HesperiaCaliforniaVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Transportation facilities in Hesperia serve travelers and commuters with consistent foot traffic throughout the day, offering reliable vending opportunities in terminals, waiting areas, and transit stations.</p>
+                <p className="text-stone leading-relaxed">Transit facilities throughout Hesperia provide excellent vending opportunities in terminals, waiting areas, and high-traffic zones with consistent traveler foot traffic.</p>
               </motion.div>
             </div>
           </div>
@@ -402,8 +401,7 @@ export default function HesperiaCaliforniaVendingLeadsPage() {
               className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
             >
               <p className="text-lg text-stone leading-relaxed">
-                The Hesperia market presents excellent vending potential through its combination of local businesses, healthcare systems, educational facilities, and commercial districts. The city's diverse economy ensures multiple traffic sources, while Hesperia's business density creates numerous placement options. The city's economic growth and business-friendly environment support long-term vending success with steady consumer demand.
-              </p>
+                The Hesperia market offers excellent vending opportunities through its combination of corporate headquarters, healthcare networks, and educational institutions. High foot traffic areas and captive audiences create ideal conditions for vending success.</p>
             </motion.div>
           </div>
         </section>

@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CpuChipIcon, HeartIcon, ShoppingBagIcon, TruckIcon, BuildingLibraryIcon, CurrencyDollarIcon, SparklesIcon } from '@heroicons/react/24/solid'
+import states from '@/data/states'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
@@ -18,24 +19,24 @@ export default function CoconutCreekFloridaVendingLeadsPage() {
   
   // City-specific data
   const cityData = {
-  'name': 'Coconut Creek',
-  'state': 'Florida',
-  'population': '50K-100K',
-  'businesses': '5K-10K',
-  'industries': '8-12',
-  'verifiedLocations': '100-200',
-  'rating': '4.8/5',
-  'description': 'Thriving business community in Florida'
-};
+    'name': 'Coconut Creek',
+    'state': 'Florida',
+    'population': '75K+',
+    'businesses': '3K-5K',
+    'industries': '18-24',
+    'verifiedLocations': '100-200',
+    'rating': '4.7/5',
+    'description': 'Thriving Florida city with diverse business opportunities, healthcare facilities, and commercial centers'
+  };
   
   // Active users counter
-  const [activeUsers, setActiveUsers] = useState(28)
+  const [activeUsers, setActiveUsers] = useState(25)
   const [currentUserIndex, setCurrentUserIndex] = useState(0)
   const [usedNames, setUsedNames] = useState(new Set())
 
   // User names for active users counter
   const [userNames, setUserNames] = useState([
-    'Mike from Coconut Creek', 'Sarah in Downtown', 'David in Coconut Creek', 'Lisa in Coconut Creek',
+    'Mike from Coconut Creek', 'Sarah in Coconut Creek', 'David in Coconut Creek', 'Lisa in Coconut Creek',
     'Tom in Coconut Creek', 'Jennifer in Coconut Creek', 'Robert in Coconut Creek', 'Amanda in Coconut Creek',
     'Chris in Coconut Creek', 'Maria in Coconut Creek', 'James in Coconut Creek', 'Emily in Coconut Creek'
   ])
@@ -46,7 +47,7 @@ export default function CoconutCreekFloridaVendingLeadsPage() {
       setActiveUsers(prev => {
         const change = Math.floor(Math.random() * 3) - 1
         const newValue = prev + change
-        return Math.max(25, Math.min(42, newValue))
+        return Math.max(20, Math.min(35, newValue))
       })
     }, 4000);
     return () => clearInterval(interval)
@@ -76,6 +77,46 @@ export default function CoconutCreekFloridaVendingLeadsPage() {
     }, 5000);
     return () => clearInterval(interval)
   }, [userNames.length, usedNames])
+
+  // Build related Florida cities (for internal linking)
+  const coloradoState = states.find(s => s.slug === 'florida');
+  const relatedCities = coloradoState ? coloradoState.cities.filter(c => c.slug !== 'coconut-creek-florida').slice(0, 8) : [];
+
+  // FAQ items reused for JSON-LD
+  const faqItems = [
+  {
+    q: 'What types of vending machine locations are available in Coconut Creek?',
+    a: 'Coconut Creek offers diverse vending opportunities including technology companies, manufacturing facilities, healthcare centers, educational institutions, retail locations, and office buildings. Each location is pre-verified for optimal vending machine success.'
+  },
+  {
+    q: 'How quickly can I get vending machine leads for Coconut Creek?',
+    a: 'Our Coconut Creek vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
+  },
+  {
+    q: 'What makes Coconut Creek a good market for vending machines?',
+    a: 'Coconut Creek features a thriving business community with diverse industries including technology, manufacturing, and retail. The city\'s business density and growing economy create ideal conditions for vending machine success.'
+  },
+  {
+    q: 'Do you provide ongoing support for Coconut Creek locations?',
+    a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Coconut Creek.'
+  },
+  {
+    q: 'What industries in Coconut Creek are best for vending machines?',
+    a: 'Technology companies, manufacturing facilities, healthcare centers, educational institutions, and office buildings in Coconut Creek show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
+  },
+  {
+    q: 'How do you verify the quality of Coconut Creek vending locations?',
+    a: 'We conduct thorough research on each Coconut Creek location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
+  },
+  {
+    q: 'Can I get customized vending leads for specific areas of Coconut Creek?',
+    a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Coconut Creek including the downtown area, industrial parks, and commercial corridors based on your preferences and target market requirements.'
+  },
+  {
+    q: 'What\'s the typical ROI for vending machines in Coconut Creek?',
+    a: 'Vending machines in Coconut Creek typically show strong ROI due to the city\'s business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+  },
+];
 
   return (
     <>
@@ -139,8 +180,7 @@ export default function CoconutCreekFloridaVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Discover pre-qualified vending opportunities in Coconut Creek's growing economy, featuring business districts, commercial centers, and community facilities with consistent foot traffic.
-              </motion.p>
+                Explore vending machine placement opportunities in Coconut Creek, Florida, with locations verified for optimal foot traffic and revenue potential.</motion.p>
 
               {/* Trust Signals */}
               <motion.div 
@@ -158,7 +198,7 @@ export default function CoconutCreekFloridaVendingLeadsPage() {
                 <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
                   <div className="flex items-center gap-3">
                     <StarIcon className="h-5 w-5 text-yellow-500" />
-                    <span className="text-sm font-medium text-chocolate">4.8/5 Rating</span>
+                    <span className="text-sm font-medium text-chocolate">4.7/5 Rating</span>
                   </div>
                 </div>
                 <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
@@ -190,9 +230,10 @@ export default function CoconutCreekFloridaVendingLeadsPage() {
                       }
                     }}
                     className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
-                  >
+                >
                     Get Started
                   </button>
+
               </motion.div>
 
 {/* Social Proof Stats */}
@@ -222,6 +263,8 @@ export default function CoconutCreekFloridaVendingLeadsPage() {
             </div>
           </div>
         </section>
+
+        
 
         {/* Pricing Section */}
         <section id="pricing" className="py-16 bg-warm-white">
@@ -285,10 +328,10 @@ export default function CoconutCreekFloridaVendingLeadsPage() {
                 className="bg-blue-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
                 <div className="text-blue-600 mb-4">
-                  <BuildingOfficeIcon className="w-12 h-12" />
+                  <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Medical centers and healthcare facilities throughout Coconut Creek offer excellent vending placement opportunities, with high-traffic areas including waiting rooms, cafeterias, and employee break areas.</p>
+                <p className="text-stone leading-relaxed">Coconut Creek's healthcare sector includes major medical centers, specialty clinics, and outpatient facilities that generate consistent patient and visitor traffic, creating ideal vending placement opportunities.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -302,7 +345,7 @@ export default function CoconutCreekFloridaVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Coconut Creek's education sector features schools, universities, and training facilities with captive audiences during academic hours, creating reliable vending machine placement opportunities.</p>
+                <p className="text-stone leading-relaxed">Academic institutions in Coconut Creek feature student centers, libraries, and common areas with consistent foot traffic, making them ideal locations for vending machine placement.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -316,13 +359,13 @@ export default function CoconutCreekFloridaVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Manufacturing facilities in Coconut Creek operate around the clock with significant employee populations, providing consistent vending opportunities in break rooms and common areas.</p>
+                <p className="text-stone leading-relaxed">Industrial and manufacturing operations throughout Coconut Creek employ substantial workforces with shift-based schedules, offering stable vending placement opportunities with steady traffic.</p>
               </motion.div>
               <motion.div
                 key="Retail"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.3 }}
+                transition={{ duration: 0.8, delay: 0.30000000000000004 }}
                 viewport={{ once: true }}
                 className="bg-orange-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
@@ -330,7 +373,7 @@ export default function CoconutCreekFloridaVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Retail establishments in Coconut Creek attract diverse customer demographics and generate steady foot traffic, providing reliable vending opportunities across various retail environments.</p>
+                <p className="text-stone leading-relaxed">Coconut Creek's retail sector features shopping centers, strip malls, and commercial districts that offer strategic vending placement in areas with maximum shopper visibility.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -344,7 +387,7 @@ export default function CoconutCreekFloridaVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Coconut Creek's office sector includes business districts, corporate campuses, and professional centers with high employee concentrations, ideal for vending services in common areas and break rooms.</p>
+                <p className="text-stone leading-relaxed">Commercial office spaces in Coconut Creek offer excellent vending opportunities, with professional tenants and business operations generating consistent foot traffic throughout the workday.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -358,13 +401,11 @@ export default function CoconutCreekFloridaVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Transportation facilities in Coconut Creek serve travelers and commuters with consistent foot traffic throughout the day, offering reliable vending opportunities in terminals, waiting areas, and transit stations.</p>
+                <p className="text-stone leading-relaxed">Transportation hubs in Coconut Creek offer prime vending locations with high passenger volumes, extended operating hours, and captive audiences waiting for departures.</p>
               </motion.div>
             </div>
           </div>
-        </section>
-
-                {/* Why Coconut Creek? */}
+        </section>        {/* Why Coconut Creek? */}
         <section className="py-16 bg-warm-white">
           <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-8">
@@ -386,14 +427,15 @@ export default function CoconutCreekFloridaVendingLeadsPage() {
               className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
             >
               <p className="text-lg text-stone leading-relaxed">
-                Coconut Creek offers reliable vending opportunities through its thriving business community, featuring diverse industries, commercial centers, and growing economic sectors. The city's business mix provides stable placement locations with consistent traffic patterns, while Coconut Creek's economic activity supports steady consumer spending. The city's combination of established businesses and emerging sectors creates multiple vending placement strategies.
-              </p>
+                Coconut Creek's business community creates ideal vending conditions through consistent employee populations, visitor traffic, and strategic commercial locations. The city's economic growth supports long-term vending machine profitability.</p>
             </motion.div>
           </div>
         </section>
 
-{/* Hot Leads Section */}
-        <section id="pricing" className="py-16 bg-warm-white">
+
+
+        {/* Hot Leads Section */}
+        <section id="hot-leads" className="py-16 bg-warm-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <motion.h2
@@ -447,7 +489,7 @@ export default function CoconutCreekFloridaVendingLeadsPage() {
         </section>
 
         {/* FAQ Section */}
-        <section id="pricing" className="py-16 bg-warm-white">
+        <section id="faq" className="py-16 bg-warm-white">
           <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <motion.h2
@@ -471,103 +513,73 @@ export default function CoconutCreekFloridaVendingLeadsPage() {
             </div>
             
             <div className="space-y-6">
-              
-              <motion.div
-                key="0"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What types of vending machine locations are available in Coconut Creek?</h3>
-                <p className="text-stone leading-relaxed">Coconut Creek offers diverse vending opportunities including healthcare facilities, educational institutions, manufacturing plants, retail locations, office buildings, and transportation hubs. Each location is pre-verified for optimal vending machine success.</p>
-              </motion.div>
-              <motion.div
-                key="1"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.1 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">How quickly can I get vending machine leads for Coconut Creek?</h3>
-                <p className="text-stone leading-relaxed">Our Coconut Creek vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.</p>
-              </motion.div>
-              <motion.div
-                key="2"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What makes Coconut Creek a good market for vending machines?</h3>
-                <p className="text-stone leading-relaxed">Coconut Creek features a strong business community with diverse industries, stable employment, and consistent foot traffic. The city's economic growth and business-friendly environment create ideal conditions for vending machine success.</p>
-              </motion.div>
-              <motion.div
-                key="3"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.3 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">Do you provide ongoing support for Coconut Creek locations?</h3>
-                <p className="text-stone leading-relaxed">Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Coconut Creek.</p>
-              </motion.div>
-              <motion.div
-                key="4"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What industries in Coconut Creek are best for vending machines?</h3>
-                <p className="text-stone leading-relaxed">Healthcare, education, manufacturing, retail, office buildings, and transportation sectors in Coconut Creek show the highest potential for vending machine success due to consistent foot traffic and captive audiences.</p>
-              </motion.div>
-              <motion.div
-                key="5"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.5 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">How do you verify the quality of Coconut Creek vending locations?</h3>
-                <p className="text-stone leading-relaxed">We conduct thorough research on each Coconut Creek location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.</p>
-              </motion.div>
-              <motion.div
-                key="6"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.6 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">Can I get customized vending leads for specific areas of Coconut Creek?</h3>
-                <p className="text-stone leading-relaxed">Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Coconut Creek based on your preferences and target market requirements.</p>
-              </motion.div>
-              <motion.div
-                key="7"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.7 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What's the typical ROI for vending machines in Coconut Creek?</h3>
-                <p className="text-stone leading-relaxed">Vending machines in Coconut Creek typically show strong ROI due to the city's business density and consistent traffic patterns. Our research shows average payback periods of 12-18 months for well-placed machines.</p>
-              </motion.div>
+              {faqItems.map((item, idx) => (
+                <motion.div
+                  key={idx}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: idx * 0.1 }}
+                  viewport={{ once: true }}
+                  className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+                >
+                  <h3 className="text-lg font-semibold text-charcoal mb-3">{item.q}</h3>
+                  <p className="text-stone leading-relaxed">{item.a}</p>
+                </motion.div>
+              ))}
             </div>
           </div>
         </section>
+
+        {/* More cities in Florida */}
+        {relatedCities.length > 0 && (
+          <section className="py-12 bg-white border-t border-gray-200">
+            <div className="mx-auto max-w-7xl px-6">
+              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in Florida</h2>
+              <div className="flex flex-wrap gap-3">
+                {relatedCities.map(city => (
+                  <Link key={city.slug} href={`/vending-leads/${city.slug}`} className="px-3 py-2 rounded-lg border border-gray-200 bg-cream/60 text-chocolate hover:text-navy">
+                    Vending Leads in {city.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
 
       </div>
       
       <Footer />
       <ZipCodeModalWrapper />
+      {/* JSON-LD: Breadcrumbs and FAQ */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
+              { '@type': 'ListItem', position: 3, name: 'Florida', item: 'https://www.thevendinglocator.com/vending-leads/florida' },
+              { '@type': 'ListItem', position: 4, name: 'Coconut Creek', item: 'https://www.thevendinglocator.com/vending-leads/coconut-creek-florida' }
+            ]
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: faqItems.map(i => ({
+              '@type': 'Question',
+              name: i.q,
+              acceptedAnswer: { '@type': 'Answer', text: i.a }
+            }))
+          })
+        }}
+      />
     </>
   )
 }

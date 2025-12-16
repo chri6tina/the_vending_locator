@@ -19,16 +19,15 @@ export default function TampaFloridaVendingLeadsPage() {
   
   // City-specific data
   const cityData = {
-  name: 'Tampa',
-  state: 'Florida',
-  population: '400,000+',
-  businesses: '350+',
-  industries: '10',
-  verifiedLocations: '300-450',
-  rating: '4.8/5',
-  description: 'Tampa is a major metropolitan area featuring healthcare, finance, tourism, and diverse business opportunities in the heart of Florida.',
-  majorEmployers: ['Tampa General Hospital', 'University of South Florida', 'Raymond James Financial', 'MacDill Air Force Base', 'Port of Tampa', 'Tampa Bay Buccaneers']
-};
+    'name': 'Tampa',
+    'state': 'Florida',
+    'population': '50K+',
+    'businesses': '12K-20K',
+    'industries': '10-14',
+    'verifiedLocations': '300-500',
+    'rating': '4.7/5',
+    'description': 'Thriving Florida city with diverse business opportunities, healthcare facilities, and commercial centers'
+  };
   
   // Active users counter
   const [activeUsers, setActiveUsers] = useState(25)
@@ -79,21 +78,45 @@ export default function TampaFloridaVendingLeadsPage() {
     return () => clearInterval(interval)
   }, [userNames.length, usedNames])
 
-  // Build related state cities (for internal linking)
-  const currentState = states.find(s => s.slug === 'florida')
-  const relatedCities = currentState ? currentState.cities.filter(c => c.slug !== 'tampa-florida').slice(0, 8) : [];
+  // Build related Florida cities (for internal linking)
+  const coloradoState = states.find(s => s.slug === 'florida');
+  const relatedCities = coloradoState ? coloradoState.cities.filter(c => c.slug !== 'tampa-florida').slice(0, 8) : [];
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: "What types of vending machine locations are available in Tampa?", a: "Tampa provides vending opportunities in healthcare facilities, educational institutions, retail centers, office buildings, and manufacturing facilities serving the local market." },
-    { q: "How quickly can I get vending machine leads for Tampa?", a: "Our Tampa vending leads are delivered within 3-5 business days with detailed information about each verified business and placement opportunity." },
-    { q: "What makes Tampa a good market for vending machines?", a: "Tampa features a strong business community with diverse industries and consistent foot traffic. The city's economic activity creates ideal conditions for vending machine success." },
-    { q: "Do you provide ongoing support for Tampa locations?", a: "Yes, we provide comprehensive support including location research, business verification, contact information, and market-specific placement strategies for Tampa." },
-    { q: "What industries in Tampa are best for vending machines?", a: "Healthcare, education, manufacturing, retail, and office buildings in Tampa show strong vending potential with reliable traffic and captive audiences." },
-    { q: "How do you verify the quality of Tampa vending locations?", a: "We conduct thorough verification including business validation, employee assessment, facility research, and local market analysis for each Tampa location." },
-    { q: "Can I get customized vending leads for specific areas of Tampa?", a: "Absolutely! We can focus on specific neighborhoods, business districts, or industrial areas within Tampa based on your target market." },
-    { q: "What's the typical ROI for vending machines in Tampa?", a: "Machines in Tampa typically see ROI within 12-18 months, with healthcare and educational facilities often providing the most consistent returns." }
-  ];
+  {
+    q: 'What types of vending machine locations are available in Tampa?',
+    a: 'Tampa offers diverse vending opportunities including technology companies, manufacturing facilities, healthcare centers, educational institutions, retail locations, and office buildings. Each location is pre-verified for optimal vending machine success.'
+  },
+  {
+    q: 'How quickly can I get vending machine leads for Tampa?',
+    a: 'Our Tampa vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
+  },
+  {
+    q: 'What makes Tampa a good market for vending machines?',
+    a: 'Tampa features a thriving business community with diverse industries including technology, manufacturing, and retail. The city\'s business density and growing economy create ideal conditions for vending machine success.'
+  },
+  {
+    q: 'Do you provide ongoing support for Tampa locations?',
+    a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Tampa.'
+  },
+  {
+    q: 'What industries in Tampa are best for vending machines?',
+    a: 'Technology companies, manufacturing facilities, healthcare centers, educational institutions, and office buildings in Tampa show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
+  },
+  {
+    q: 'How do you verify the quality of Tampa vending locations?',
+    a: 'We conduct thorough research on each Tampa location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
+  },
+  {
+    q: 'Can I get customized vending leads for specific areas of Tampa?',
+    a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Tampa including the downtown area, industrial parks, and commercial corridors based on your preferences and target market requirements.'
+  },
+  {
+    q: 'What\'s the typical ROI for vending machines in Tampa?',
+    a: 'Vending machines in Tampa typically show strong ROI due to the city\'s business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+  },
+];
 
   return (
     <>
@@ -157,8 +180,7 @@ export default function TampaFloridaVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Access verified vending locations throughout Tampa's waterfront business district, featuring hospitality venues, retail centers, and commercial spaces with high visitor traffic.
-              </motion.p>
+                Explore vending machine placement opportunities in Tampa, Florida, with locations verified for optimal foot traffic and revenue potential.</motion.p>
 
               {/* Trust Signals */}
               <motion.div 
@@ -201,19 +223,20 @@ export default function TampaFloridaVendingLeadsPage() {
                 className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 mb-8"
               >
                 <button 
-                  onClick={() => {
-                    const pricingSection = document.getElementById('pricing')
-                    if (pricingSection) {
-                      pricingSection.scrollIntoView({ behavior: 'smooth' })
-                    }
-                  }}
-                  className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
+                    onClick={() => {
+                      const pricingSection = document.getElementById('pricing')
+                      if (pricingSection) {
+                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                      }
+                    }}
+                    className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
                 >
-                  Get Started
-                </button>
+                    Get Started
+                  </button>
+
               </motion.div>
 
-              {/* Social Proof Stats */}
+{/* Social Proof Stats */}
               <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -240,6 +263,8 @@ export default function TampaFloridaVendingLeadsPage() {
             </div>
           </div>
         </section>
+
+        
 
         {/* Pricing Section */}
         <section id="pricing" className="py-16 bg-warm-white">
@@ -306,7 +331,7 @@ export default function TampaFloridaVendingLeadsPage() {
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Tampa features modern healthcare facilities including hospitals, medical centers, and clinics with high patient and visitor traffic, creating consistent demand for vending services throughout the day.</p>
+                <p className="text-stone leading-relaxed">Healthcare institutions in Tampa offer prime vending locations with high visitor counts, extended operating hours, and captive audiences seeking convenient snack and beverage options.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -320,7 +345,7 @@ export default function TampaFloridaVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Schools and educational institutions in Tampa offer excellent vending opportunities, with high-traffic areas including cafeterias, libraries, student centers, and athletic facilities.</p>
+                <p className="text-stone leading-relaxed">Tampa's schools, colleges, and universities create excellent vending opportunities with high student traffic, campus events, and extended hours that maximize machine usage.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -334,13 +359,13 @@ export default function TampaFloridaVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Tampa's manufacturing sector features production facilities, warehouses, and industrial parks with large employee concentrations, ideal for vending machine services.</p>
+                <p className="text-stone leading-relaxed">Industrial operations in Tampa feature large workforces and shift schedules that create reliable vending revenue through employee break times and shift changes.</p>
               </motion.div>
               <motion.div
                 key="Retail"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.3 }}
+                transition={{ duration: 0.8, delay: 0.30000000000000004 }}
                 viewport={{ once: true }}
                 className="bg-orange-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
@@ -348,7 +373,7 @@ export default function TampaFloridaVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Retail locations throughout Tampa provide high customer traffic and diverse shopping experiences, creating multiple vending opportunities in malls, shopping centers, and retail districts.</p>
+                <p className="text-stone leading-relaxed">Retail locations throughout Tampa provide excellent vending opportunities in malls, shopping centers, and high-traffic commercial areas with consistent customer flow.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -362,7 +387,7 @@ export default function TampaFloridaVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Professional office spaces in Tampa house corporate headquarters, business centers, and professional services with captive employee audiences during business hours, creating consistent vending opportunities.</p>
+                <p className="text-stone leading-relaxed">Corporate office buildings throughout Tampa feature professional workforces and business operations that create reliable vending revenue through employee break times and meetings.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -376,7 +401,7 @@ export default function TampaFloridaVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Tampa's transportation infrastructure includes major transit hubs and travel facilities with year-round passenger flow, ideal for vending machine services in waiting areas and terminals.</p>
+                <p className="text-stone leading-relaxed">Airports, bus stations, and transit centers throughout Tampa generate steady passenger traffic, providing excellent vending placement options in high-traffic areas frequented by travelers.</p>
               </motion.div>
             </div>
           </div>
@@ -402,8 +427,7 @@ export default function TampaFloridaVendingLeadsPage() {
               className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
             >
               <p className="text-lg text-stone leading-relaxed">
-                The Tampa market benefits from its coastal position, which drives tourism, hospitality, and commercial activity throughout the year. Waterfront businesses, tourist attractions, and local commerce generate steady foot traffic, while the city's growing residential population adds consistent daily demand. Tampa's combination of visitor traffic and local business activity creates diverse vending placement opportunities across multiple industries.
-              </p>
+                Tampa's business community creates ideal vending conditions through consistent employee populations, visitor traffic, and strategic commercial locations. The city's economic growth supports long-term vending machine profitability.</p>
             </motion.div>
           </div>
         </section>
@@ -506,11 +530,11 @@ export default function TampaFloridaVendingLeadsPage() {
           </div>
         </section>
 
-        {/* More cities in State */}
+        {/* More cities in Florida */}
         {relatedCities.length > 0 && (
           <section className="py-12 bg-white border-t border-gray-200">
             <div className="mx-auto max-w-7xl px-6">
-              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in {stateDisplayName}</h2>
+              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in Florida</h2>
               <div className="flex flex-wrap gap-3">
                 {relatedCities.map(city => (
                   <Link key={city.slug} href={`/vending-leads/${city.slug}`} className="px-3 py-2 rounded-lg border border-gray-200 bg-cream/60 text-chocolate hover:text-navy">
@@ -536,8 +560,8 @@ export default function TampaFloridaVendingLeadsPage() {
             itemListElement: [
               { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
               { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'Florida', item: `https://www.thevendinglocator.com/vending-leads/florida` },
-              { '@type': 'ListItem', position: 4, name: 'Tampa', item: `https://www.thevendinglocator.com/vending-leads/tampa-florida` }
+              { '@type': 'ListItem', position: 3, name: 'Florida', item: 'https://www.thevendinglocator.com/vending-leads/florida' },
+              { '@type': 'ListItem', position: 4, name: 'Tampa', item: 'https://www.thevendinglocator.com/vending-leads/tampa-florida' }
             ]
           })
         }}

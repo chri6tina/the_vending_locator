@@ -154,8 +154,7 @@ export default function SanLuisObispoCaliforniaVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Explore vending machine opportunities throughout San Luis Obispo's business network, where diverse industries, commercial zones, and community spaces offer multiple placement options for vending success.
-              </motion.p>
+                Discover high-quality vending opportunities in San Luis Obispo, California, with pre-qualified locations in office buildings, retail spaces, and transportation hubs.</motion.p>
 
               {/* Trust Signals */}
               <motion.div 
@@ -306,7 +305,7 @@ export default function SanLuisObispoCaliforniaVendingLeadsPage() {
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">San Luis Obispo features modern healthcare facilities including hospitals, medical centers, and clinics with high patient and visitor traffic, creating consistent demand for vending services throughout the day.</p>
+                <p className="text-stone leading-relaxed">San Luis Obispo's healthcare sector includes major medical centers, specialty clinics, and outpatient facilities that generate consistent patient and visitor traffic, creating ideal vending placement opportunities.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -320,7 +319,7 @@ export default function SanLuisObispoCaliforniaVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Schools and educational institutions in San Luis Obispo offer excellent vending opportunities, with high-traffic areas including cafeterias, libraries, student centers, and athletic facilities.</p>
+                <p className="text-stone leading-relaxed">Academic institutions in San Luis Obispo feature student centers, libraries, and common areas with consistent foot traffic, making them ideal locations for vending machine placement.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -334,7 +333,7 @@ export default function SanLuisObispoCaliforniaVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">San Luis Obispo's manufacturing sector features production facilities, warehouses, and industrial parks with large employee concentrations, ideal for vending machine services.</p>
+                <p className="text-stone leading-relaxed">Industrial and manufacturing operations throughout San Luis Obispo employ substantial workforces with shift-based schedules, offering stable vending placement opportunities with steady traffic.</p>
               </motion.div>
               <motion.div
                 key="Retail"
@@ -348,7 +347,7 @@ export default function SanLuisObispoCaliforniaVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Retail locations throughout San Luis Obispo provide high customer traffic and diverse shopping experiences, creating multiple vending opportunities in malls, shopping centers, and retail districts.</p>
+                <p className="text-stone leading-relaxed">San Luis Obispo's retail sector features shopping centers, strip malls, and commercial districts that offer strategic vending placement in areas with maximum shopper visibility.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -362,7 +361,7 @@ export default function SanLuisObispoCaliforniaVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Professional office spaces in San Luis Obispo house corporate headquarters, business centers, and professional services with captive employee audiences during business hours, creating consistent vending opportunities.</p>
+                <p className="text-stone leading-relaxed">Commercial office spaces in San Luis Obispo offer excellent vending opportunities, with professional tenants and business operations generating consistent foot traffic throughout the workday.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -376,7 +375,7 @@ export default function SanLuisObispoCaliforniaVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">San Luis Obispo's transportation infrastructure includes major transit hubs and travel facilities with year-round passenger flow, ideal for vending machine services in waiting areas and terminals.</p>
+                <p className="text-stone leading-relaxed">Transportation hubs in San Luis Obispo offer prime vending locations with high passenger volumes, extended operating hours, and captive audiences waiting for departures.</p>
               </motion.div>
             </div>
           </div>
@@ -402,8 +401,7 @@ export default function SanLuisObispoCaliforniaVendingLeadsPage() {
               className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
             >
               <p className="text-lg text-stone leading-relaxed">
-                The San Luis Obispo market presents excellent vending potential through its combination of local businesses, healthcare systems, educational facilities, and commercial districts. The city's diverse economy ensures multiple traffic sources, while San Luis Obispo's business density creates numerous placement options. The city's economic growth and business-friendly environment support long-term vending success with steady consumer demand.
-              </p>
+                The San Luis Obispo market offers excellent vending opportunities through its combination of corporate headquarters, healthcare networks, and educational institutions. High foot traffic areas and captive audiences create ideal conditions for vending success.</p>
             </motion.div>
           </div>
         </section>

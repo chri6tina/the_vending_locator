@@ -21,12 +21,12 @@ export default function LakeHavasuCityArizonaVendingLeadsPage() {
   const cityData = {
     'name': 'Lake Havasu City',
     'state': 'Arizona',
-    'population': '500K+',
-    'businesses': '50K+',
-    'industries': '15+',
-    'verifiedLocations': '400+',
+    'population': '300K+',
+    'businesses': '8K-12K',
+    'industries': '8-12',
+    'verifiedLocations': '400-700',
     'rating': '4.7/5',
-    'description': 'Thriving business community in Arizona'
+    'description': 'Thriving Arizona city with diverse business opportunities, healthcare facilities, and commercial centers'
   };
   
   // Active users counter
@@ -36,7 +36,9 @@ export default function LakeHavasuCityArizonaVendingLeadsPage() {
 
   // User names for active users counter
   const [userNames, setUserNames] = useState([
-    'Mike from Lake Havasu City', 'Sarah in Downtown', 'David in Lake Havasu City', 'Lisa in Lake Havasu City', 'Tom in Lake Havasu City', 'Jennifer in Lake Havasu City', 'Robert in Lake Havasu City', 'Amanda in Lake Havasu City', 'Chris in Lake Havasu City', 'Maria in Lake Havasu City', 'James in Lake Havasu City', 'Emily in Lake Havasu City'
+    'Mike from Lake Havasu City', 'Sarah in Lake Havasu City', 'David in Lake Havasu City', 'Lisa in Lake Havasu City',
+    'Tom in Lake Havasu City', 'Jennifer in Lake Havasu City', 'Robert in Lake Havasu City', 'Amanda in Lake Havasu City',
+    'Chris in Lake Havasu City', 'Maria in Lake Havasu City', 'James in Lake Havasu City', 'Emily in Lake Havasu City'
   ])
 
   // Active users counter effect
@@ -76,21 +78,45 @@ export default function LakeHavasuCityArizonaVendingLeadsPage() {
     return () => clearInterval(interval)
   }, [userNames.length, usedNames])
 
-  // Build related cities (for internal linking)
-  const state = states.find(s => s.slug === 'arizona');
-  const relatedCities = state ? state.cities.filter(c => c.slug !== 'lake-havasu-city-arizona').slice(0, 8) : [];
+  // Build related Arizona cities (for internal linking)
+  const coloradoState = states.find(s => s.slug === 'arizona');
+  const relatedCities = coloradoState ? coloradoState.cities.filter(c => c.slug !== 'lake-havasu-city-arizona').slice(0, 8) : [];
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in Lake Havasu City?', a: 'Lake Havasu City offers diverse vending opportunities including healthcare facilities, educational institutions, retail locations, office buildings, and manufacturing facilities. Each location is pre-verified for optimal vending machine success.' },
-    { q: 'How quickly can I get vending machine leads for Lake Havasu City?', a: 'Our Lake Havasu City vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.' },
-    { q: 'What makes Lake Havasu City a good market for vending machines?', a: "Lake Havasu City features a thriving business community with diverse industries and strong economic activity. The city's business density and diverse demographics create ideal conditions for vending machine success." },
-    { q: 'Do you provide ongoing support for Lake Havasu City locations?', a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Lake Havasu City.' },
-    { q: 'What industries in Lake Havasu City are best for vending machines?', a: 'Healthcare, education, retail, office buildings, and manufacturing in Lake Havasu City show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.' },
-    { q: 'How do you verify the quality of Lake Havasu City vending locations?', a: 'We conduct thorough research on each Lake Havasu City location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.' },
-    { q: 'Can I get customized vending leads for specific areas of Lake Havasu City?', a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Lake Havasu City based on your preferences and target market requirements.' },
-    { q: "What's the typical ROI for vending machines in Lake Havasu City?", a: "Vending machines in Lake Havasu City typically show strong ROI due to the city's business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines." }
-  ];
+  {
+    q: 'What types of vending machine locations are available in Lake Havasu City?',
+    a: 'Lake Havasu City offers diverse vending opportunities including technology companies, manufacturing facilities, healthcare centers, educational institutions, retail locations, and office buildings. Each location is pre-verified for optimal vending machine success.'
+  },
+  {
+    q: 'How quickly can I get vending machine leads for Lake Havasu City?',
+    a: 'Our Lake Havasu City vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
+  },
+  {
+    q: 'What makes Lake Havasu City a good market for vending machines?',
+    a: 'Lake Havasu City features a thriving business community with diverse industries including technology, manufacturing, and retail. The city\'s business density and growing economy create ideal conditions for vending machine success.'
+  },
+  {
+    q: 'Do you provide ongoing support for Lake Havasu City locations?',
+    a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Lake Havasu City.'
+  },
+  {
+    q: 'What industries in Lake Havasu City are best for vending machines?',
+    a: 'Technology companies, manufacturing facilities, healthcare centers, educational institutions, and office buildings in Lake Havasu City show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
+  },
+  {
+    q: 'How do you verify the quality of Lake Havasu City vending locations?',
+    a: 'We conduct thorough research on each Lake Havasu City location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
+  },
+  {
+    q: 'Can I get customized vending leads for specific areas of Lake Havasu City?',
+    a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Lake Havasu City including the downtown area, industrial parks, and commercial corridors based on your preferences and target market requirements.'
+  },
+  {
+    q: 'What\'s the typical ROI for vending machines in Lake Havasu City?',
+    a: 'Vending machines in Lake Havasu City typically show strong ROI due to the city\'s business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+  },
+];
 
   return (
     <>
@@ -154,8 +180,7 @@ export default function LakeHavasuCityArizonaVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Get comprehensive vending leads for Lake Havasu City's thriving Arizona market, combining local businesses, healthcare systems, and educational facilities for reliable vending machine placement.
-              </motion.p>
+                Explore vending machine placement opportunities in Lake Havasu City, Arizona, with locations verified for optimal foot traffic and revenue potential.</motion.p>
 
               {/* Trust Signals */}
               <motion.div 
@@ -306,7 +331,7 @@ export default function LakeHavasuCityArizonaVendingLeadsPage() {
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Lake Havasu City's healthcare sector includes major hospitals, specialty clinics, and medical offices that generate consistent visitor and employee traffic, ideal for vending machine placement.</p>
+                <p className="text-stone leading-relaxed">Healthcare institutions in Lake Havasu City offer prime vending locations with high visitor counts, extended operating hours, and captive audiences seeking convenient snack and beverage options.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -320,7 +345,7 @@ export default function LakeHavasuCityArizonaVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Educational facilities throughout Lake Havasu City serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services.</p>
+                <p className="text-stone leading-relaxed">Lake Havasu City's schools, colleges, and universities create excellent vending opportunities with high student traffic, campus events, and extended hours that maximize machine usage.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -334,7 +359,7 @@ export default function LakeHavasuCityArizonaVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Industrial and manufacturing operations throughout Lake Havasu City employ substantial workforces with shift-based schedules, offering stable vending placement opportunities with steady traffic.</p>
+                <p className="text-stone leading-relaxed">Industrial operations in Lake Havasu City feature large workforces and shift schedules that create reliable vending revenue through employee break times and shift changes.</p>
               </motion.div>
               <motion.div
                 key="Retail"
@@ -348,7 +373,7 @@ export default function LakeHavasuCityArizonaVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Shopping centers and retail districts in Lake Havasu City offer prime vending locations, with high-traffic areas including food courts, entrances, and common spaces frequented by shoppers.</p>
+                <p className="text-stone leading-relaxed">Retail locations throughout Lake Havasu City provide excellent vending opportunities in malls, shopping centers, and high-traffic commercial areas with consistent customer flow.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -362,7 +387,7 @@ export default function LakeHavasuCityArizonaVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Commercial office spaces in Lake Havasu City offer excellent vending opportunities, with professional tenants and business operations generating consistent foot traffic throughout the workday.</p>
+                <p className="text-stone leading-relaxed">Corporate office buildings throughout Lake Havasu City feature professional workforces and business operations that create reliable vending revenue through employee break times and meetings.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -402,8 +427,7 @@ export default function LakeHavasuCityArizonaVendingLeadsPage() {
               className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
             >
               <p className="text-lg text-stone leading-relaxed">
-                Lake Havasu City offers strong vending opportunities through its diverse business community, combining local commerce, healthcare facilities, educational institutions, and growing commercial sectors. The city's business mix provides multiple placement options with varying traffic patterns, while Lake Havasu City's economic stability supports consistent consumer demand. The city's combination of established businesses and growing sectors creates reliable vending placement opportunities.
-              </p>
+                Lake Havasu City's business community creates ideal vending conditions through consistent employee populations, visitor traffic, and strategic commercial locations. The city's economic growth supports long-term vending machine profitability.</p>
             </motion.div>
           </div>
         </section>
@@ -506,11 +530,11 @@ export default function LakeHavasuCityArizonaVendingLeadsPage() {
           </div>
         </section>
 
-        {/* More cities in state */}
+        {/* More cities in Arizona */}
         {relatedCities.length > 0 && (
           <section className="py-12 bg-white border-t border-gray-200">
             <div className="mx-auto max-w-7xl px-6">
-              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in {stateDisplayName}</h2>
+              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in Arizona</h2>
               <div className="flex flex-wrap gap-3">
                 {relatedCities.map(city => (
                   <Link key={city.slug} href={`/vending-leads/${city.slug}`} className="px-3 py-2 rounded-lg border border-gray-200 bg-cream/60 text-chocolate hover:text-navy">

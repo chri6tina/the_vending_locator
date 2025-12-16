@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Maricopa, Arizona - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Maricopa, Arizona. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines maricopa arizona, vending leads maricopa arizona, vending locations maricopa arizona, vending opportunities maricopa arizona",
+  "keywords": "vending machines Maricopa Arizona, vending leads Maricopa Arizona, vending locations Maricopa Arizona, vending opportunities Maricopa Arizona",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/maricopa-arizona"
   },

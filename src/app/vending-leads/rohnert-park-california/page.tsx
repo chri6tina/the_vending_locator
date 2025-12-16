@@ -2,33 +2,33 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  title: "Vending Machine Leads in Rohnert Park, California - The Vending Locator",
-  description: "Get verified vending machine leads and locations throughout Rohnert Park, California. Find qualified businesses for vending machine placement.",
-  keywords: "vending machines Rohnert Park, vending leads Rohnert Park, vending locations Rohnert Park, vending opportunities Rohnert Park",
-  alternates: {
-    canonical: "https://www.thevendinglocator.com/vending-leads/rohnert-park-california"
+  "title": "Vending Machine Leads in Rohnert Park, California - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Rohnert Park, California. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Rohnert Park California, vending leads Rohnert Park California, vending locations Rohnert Park California, vending opportunities Rohnert Park California",
+  "alternates": {
+    "canonical": "https://www.thevendinglocator.com/vending-leads/rohnert-park-california"
   },
-  openGraph: {
-    title: "Vending Machine Leads in Rohnert Park, California - The Vending Locator",
-    description: "Get verified vending machine leads and locations throughout Rohnert Park, California. Find qualified businesses for vending machine placement.",
-    url: "https://www.thevendinglocator.com/vending-leads/rohnert-park-california",
-    siteName: "The Vending Locator",
-    type: "website"
+  "openGraph": {
+    "title": "Vending Machine Leads in Rohnert Park, California - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Rohnert Park, California. Find qualified businesses for vending machine placement.",
+    "url": "https://www.thevendinglocator.com/vending-leads/rohnert-park-california",
+    "siteName": "The Vending Locator",
+    "type": "website"
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "Vending Machine Leads in Rohnert Park, California - The Vending Locator",
-    description: "Get verified vending machine leads and locations throughout Rohnert Park, California. Find qualified businesses for vending machine placement."
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Vending Machine Leads in Rohnert Park, California - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Rohnert Park, California. Find qualified businesses for vending machine placement."
   },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1
+  "robots": {
+    "index": true,
+    "follow": true,
+    "googleBot": {
+      "index": true,
+      "follow": true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1
     }
   }
 }
@@ -37,6 +37,6 @@ export const metadata: Metadata = {
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;
 
-export default function Page() {
+export default function CityPage() {
   return <PageClient />
 }

@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Waltham, Massachusetts - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Waltham, Massachusetts. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines waltham massachusetts, vending leads waltham massachusetts, vending locations waltham massachusetts, vending opportunities waltham massachusetts",
+  "keywords": "vending machines Waltham Massachusetts, vending leads Waltham Massachusetts, vending locations Waltham Massachusetts, vending opportunities Waltham Massachusetts",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/waltham-massachusetts"
   },

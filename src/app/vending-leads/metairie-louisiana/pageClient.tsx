@@ -21,12 +21,12 @@ export default function MetairieLouisianaVendingLeadsPage() {
   const cityData = {
     'name': 'Metairie',
     'state': 'Louisiana',
-    'population': '138K+',
-    'businesses': '8K-13K',
-    'industries': '9-13',
-    'verifiedLocations': '220-380',
+    'population': '100K+',
+    'businesses': '12K-20K',
+    'industries': '8-12',
+    'verifiedLocations': '300-500',
     'rating': '4.7/5',
-    'description': 'Largest New Orleans suburb with retail, healthcare, and corporate offices'
+    'description': 'Thriving Louisiana city with diverse business opportunities, healthcare facilities, and commercial centers'
   };
   
   // Active users counter
@@ -79,14 +79,14 @@ export default function MetairieLouisianaVendingLeadsPage() {
   }, [userNames.length, usedNames])
 
   // Build related Louisiana cities (for internal linking)
-  const newHampshire = states.find(s => s.slug === 'louisiana');
-  const relatedCities = newHampshire ? newHampshire.cities.filter(c => c.slug !== 'manchester-louisiana').slice(0, 8) : [];
+  const coloradoState = states.find(s => s.slug === 'louisiana');
+  const relatedCities = coloradoState ? coloradoState.cities.filter(c => c.slug !== 'metairie-louisiana').slice(0, 8) : [];
 
   // FAQ items reused for JSON-LD
   const faqItems = [
   {
     q: 'What types of vending machine locations are available in Metairie?',
-    a: 'Metairie offers diverse vending opportunities including retail centers, healthcare facilities, corporate offices, educational institutions, office buildings, and entertainment venues. Each location is pre-verified for optimal vending machine success.'
+    a: 'Metairie offers diverse vending opportunities including technology companies, manufacturing facilities, healthcare centers, educational institutions, retail locations, and office buildings. Each location is pre-verified for optimal vending machine success.'
   },
   {
     q: 'How quickly can I get vending machine leads for Metairie?',
@@ -94,7 +94,7 @@ export default function MetairieLouisianaVendingLeadsPage() {
   },
   {
     q: 'What makes Metairie a good market for vending machines?',
-    a: 'Metairie features a thriving business community with diverse industries including retail, healthcare, and corporate services. The city\'s business density and suburban location create ideal conditions for vending machine success.'
+    a: 'Metairie features a thriving business community with diverse industries including technology, manufacturing, and retail. The city\'s business density and growing economy create ideal conditions for vending machine success.'
   },
   {
     q: 'Do you provide ongoing support for Metairie locations?',
@@ -102,7 +102,7 @@ export default function MetairieLouisianaVendingLeadsPage() {
   },
   {
     q: 'What industries in Metairie are best for vending machines?',
-    a: 'Retail centers, healthcare facilities, corporate offices, educational institutions, and office buildings in Metairie show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
+    a: 'Technology companies, manufacturing facilities, healthcare centers, educational institutions, and office buildings in Metairie show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
   },
   {
     q: 'How do you verify the quality of Metairie vending locations?',
@@ -110,12 +110,12 @@ export default function MetairieLouisianaVendingLeadsPage() {
   },
   {
     q: 'Can I get customized vending leads for specific areas of Metairie?',
-    a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or retail areas within Metairie including Veterans Boulevard, Causeway area, and business parks based on your preferences and target market requirements.'
+    a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Metairie including the downtown area, industrial parks, and commercial corridors based on your preferences and target market requirements.'
   },
   {
     q: 'What\'s the typical ROI for vending machines in Metairie?',
-    a: 'Vending machines in Metairie typically show strong ROI due to the city\'s business density and affluent demographics. Our research shows average payback periods of 10-15 months for well-placed machines.'
-  }
+    a: 'Vending machines in Metairie typically show strong ROI due to the city\'s business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+  },
 ];
 
   return (
@@ -180,8 +180,7 @@ export default function MetairieLouisianaVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Get comprehensive vending leads for Metairie's thriving Louisiana market, combining local businesses, healthcare systems, and educational facilities for reliable vending machine placement.
-              </motion.p>
+                Connect with qualified vending locations in Metairie, Louisiana, spanning technology companies, medical centers, and educational campuses.</motion.p>
 
               {/* Trust Signals */}
               <motion.div 
@@ -332,7 +331,7 @@ export default function MetairieLouisianaVendingLeadsPage() {
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Metairie's healthcare sector includes major hospitals, specialty clinics, and medical offices that generate consistent visitor and employee traffic, ideal for vending machine placement.</p>
+                <p className="text-stone leading-relaxed">Metairie's healthcare sector includes major medical centers, specialty clinics, and outpatient facilities that generate consistent patient and visitor traffic, creating ideal vending placement opportunities.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -346,7 +345,7 @@ export default function MetairieLouisianaVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Educational facilities throughout Metairie serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services.</p>
+                <p className="text-stone leading-relaxed">Academic institutions in Metairie feature student centers, libraries, and common areas with consistent foot traffic, making them ideal locations for vending machine placement.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -374,7 +373,7 @@ export default function MetairieLouisianaVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Shopping centers and retail districts in Metairie offer prime vending locations, with high-traffic areas including food courts, entrances, and common spaces frequented by shoppers.</p>
+                <p className="text-stone leading-relaxed">Metairie's retail sector features shopping centers, strip malls, and commercial districts that offer strategic vending placement in areas with maximum shopper visibility.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -402,7 +401,7 @@ export default function MetairieLouisianaVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Airports, bus stations, and transit centers throughout Metairie generate steady passenger traffic, providing excellent vending placement options in high-traffic areas frequented by travelers.</p>
+                <p className="text-stone leading-relaxed">Transportation hubs in Metairie offer prime vending locations with high passenger volumes, extended operating hours, and captive audiences waiting for departures.</p>
               </motion.div>
             </div>
           </div>
@@ -428,8 +427,7 @@ export default function MetairieLouisianaVendingLeadsPage() {
               className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
             >
               <p className="text-lg text-stone leading-relaxed">
-                Metairie offers reliable vending opportunities through its thriving business community, featuring diverse industries, commercial centers, and growing economic sectors. The city's business mix provides stable placement locations with consistent traffic patterns, while Metairie's economic activity supports steady consumer spending. The city's combination of established businesses and emerging sectors creates multiple vending placement strategies.
-              </p>
+                The Metairie market combines business density with strategic placement opportunities, featuring corporate campuses, medical facilities, and educational institutions that generate reliable vending revenue.</p>
             </motion.div>
           </div>
         </section>
@@ -563,7 +561,7 @@ export default function MetairieLouisianaVendingLeadsPage() {
               { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
               { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
               { '@type': 'ListItem', position: 3, name: 'Louisiana', item: 'https://www.thevendinglocator.com/vending-leads/louisiana' },
-              { '@type': 'ListItem', position: 4, name: 'Metairie', item: 'https://www.thevendinglocator.com/vending-leads/manchester-louisiana' }
+              { '@type': 'ListItem', position: 4, name: 'Metairie', item: 'https://www.thevendinglocator.com/vending-leads/metairie-louisiana' }
             ]
           })
         }}

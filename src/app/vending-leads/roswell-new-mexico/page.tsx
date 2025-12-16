@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Roswell New, Mexico - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Roswell New, Mexico. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines roswell new mexico, vending leads roswell new mexico, vending locations roswell new mexico, vending opportunities roswell new mexico",
+  "keywords": "vending machines Roswell New Mexico, vending leads Roswell New Mexico, vending locations Roswell New Mexico, vending opportunities Roswell New Mexico",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/roswell-new-mexico"
   },

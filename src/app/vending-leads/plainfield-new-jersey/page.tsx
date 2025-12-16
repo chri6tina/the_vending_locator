@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Plainfield New, Jersey - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Plainfield New, Jersey. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines plainfield new jersey, vending leads plainfield new jersey, vending locations plainfield new jersey, vending opportunities plainfield new jersey",
+  "keywords": "vending machines Plainfield New Jersey, vending leads Plainfield New Jersey, vending locations Plainfield New Jersey, vending opportunities Plainfield New Jersey",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/plainfield-new-jersey"
   },

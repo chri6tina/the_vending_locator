@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CpuChipIcon, HeartIcon, ShoppingBagIcon, TruckIcon, BuildingLibraryIcon, CurrencyDollarIcon, SparklesIcon } from '@heroicons/react/24/solid'
+import states from '@/data/states'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
@@ -18,24 +19,24 @@ export default function ChandlerArizonaVendingLeadsPage() {
   
   // City-specific data
   const cityData = {
-  'name': 'Chandler',
-  'state': 'Arizona',
-  'population': '275,987',
-  'businesses': '15K-25K',
-  'industries': '8-12',
-  'verifiedLocations': '200-400',
-  'rating': '4.8/5',
-  'description': 'Thriving business community in Arizona'
-};
+    'name': 'Chandler',
+    'state': 'Arizona',
+    'population': '100K+',
+    'businesses': '3K-5K',
+    'industries': '14-18',
+    'verifiedLocations': '400-700',
+    'rating': '4.7/5',
+    'description': 'Thriving Arizona city with diverse business opportunities, healthcare facilities, and commercial centers'
+  };
   
   // Active users counter
-  const [activeUsers, setActiveUsers] = useState(28)
+  const [activeUsers, setActiveUsers] = useState(25)
   const [currentUserIndex, setCurrentUserIndex] = useState(0)
   const [usedNames, setUsedNames] = useState(new Set())
 
   // User names for active users counter
   const [userNames, setUserNames] = useState([
-    'Mike from Chandler', 'Sarah in Downtown', 'David in Chandler', 'Lisa in Chandler',
+    'Mike from Chandler', 'Sarah in Chandler', 'David in Chandler', 'Lisa in Chandler',
     'Tom in Chandler', 'Jennifer in Chandler', 'Robert in Chandler', 'Amanda in Chandler',
     'Chris in Chandler', 'Maria in Chandler', 'James in Chandler', 'Emily in Chandler'
   ])
@@ -46,7 +47,7 @@ export default function ChandlerArizonaVendingLeadsPage() {
       setActiveUsers(prev => {
         const change = Math.floor(Math.random() * 3) - 1
         const newValue = prev + change
-        return Math.max(25, Math.min(42, newValue))
+        return Math.max(20, Math.min(35, newValue))
       })
     }, 4000);
     return () => clearInterval(interval)
@@ -76,6 +77,46 @@ export default function ChandlerArizonaVendingLeadsPage() {
     }, 5000);
     return () => clearInterval(interval)
   }, [userNames.length, usedNames])
+
+  // Build related Arizona cities (for internal linking)
+  const coloradoState = states.find(s => s.slug === 'arizona');
+  const relatedCities = coloradoState ? coloradoState.cities.filter(c => c.slug !== 'chandler-arizona').slice(0, 8) : [];
+
+  // FAQ items reused for JSON-LD
+  const faqItems = [
+  {
+    q: 'What types of vending machine locations are available in Chandler?',
+    a: 'Chandler offers diverse vending opportunities including technology companies, manufacturing facilities, healthcare centers, educational institutions, retail locations, and office buildings. Each location is pre-verified for optimal vending machine success.'
+  },
+  {
+    q: 'How quickly can I get vending machine leads for Chandler?',
+    a: 'Our Chandler vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
+  },
+  {
+    q: 'What makes Chandler a good market for vending machines?',
+    a: 'Chandler features a thriving business community with diverse industries including technology, manufacturing, and retail. The city\'s business density and growing economy create ideal conditions for vending machine success.'
+  },
+  {
+    q: 'Do you provide ongoing support for Chandler locations?',
+    a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Chandler.'
+  },
+  {
+    q: 'What industries in Chandler are best for vending machines?',
+    a: 'Technology companies, manufacturing facilities, healthcare centers, educational institutions, and office buildings in Chandler show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
+  },
+  {
+    q: 'How do you verify the quality of Chandler vending locations?',
+    a: 'We conduct thorough research on each Chandler location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
+  },
+  {
+    q: 'Can I get customized vending leads for specific areas of Chandler?',
+    a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Chandler including the downtown area, industrial parks, and commercial corridors based on your preferences and target market requirements.'
+  },
+  {
+    q: 'What\'s the typical ROI for vending machines in Chandler?',
+    a: 'Vending machines in Chandler typically show strong ROI due to the city\'s business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+  },
+];
 
   return (
     <>
@@ -139,8 +180,7 @@ export default function ChandlerArizonaVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Discover pre-qualified vending opportunities in Chandler's growing economy, featuring business districts, commercial centers, and community facilities with consistent foot traffic.
-              </motion.p>
+                Discover high-quality vending opportunities in Chandler, Arizona, with pre-qualified locations in office buildings, retail spaces, and transportation hubs.</motion.p>
 
               {/* Trust Signals */}
               <motion.div 
@@ -158,7 +198,7 @@ export default function ChandlerArizonaVendingLeadsPage() {
                 <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
                   <div className="flex items-center gap-3">
                     <StarIcon className="h-5 w-5 text-yellow-500" />
-                    <span className="text-sm font-medium text-chocolate">4.8/5 Rating</span>
+                    <span className="text-sm font-medium text-chocolate">4.7/5 Rating</span>
                   </div>
                 </div>
                 <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
@@ -224,6 +264,8 @@ export default function ChandlerArizonaVendingLeadsPage() {
           </div>
         </section>
 
+        
+
         {/* Pricing Section */}
         <section id="pricing" className="py-16 bg-warm-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -278,7 +320,7 @@ export default function ChandlerArizonaVendingLeadsPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               
               <motion.div
-                key="Technology"
+                key="Healthcare"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0 }}
@@ -286,13 +328,13 @@ export default function ChandlerArizonaVendingLeadsPage() {
                 className="bg-blue-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
                 <div className="text-blue-600 mb-4">
-                  <BuildingOfficeIcon className="w-12 h-12" />
+                  <HeartIcon className="w-12 h-12" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Technology</h3>
-                <p className="text-stone leading-relaxed">Chandler features major technology companies and innovation centers with high employee populations and consistent foot traffic.</p>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
+                <p className="text-stone leading-relaxed">Medical facilities throughout Chandler serve large patient populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services in waiting areas and break rooms.</p>
               </motion.div>
               <motion.div
-                key="Healthcare"
+                key="Education"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.1 }}
@@ -302,11 +344,11 @@ export default function ChandlerArizonaVendingLeadsPage() {
                 <div className="text-green-600 mb-4">
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Medical centers and healthcare facilities throughout Chandler offer excellent vending placement opportunities, with high-traffic areas including waiting rooms, cafeterias, and employee break areas.</p>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
+                <p className="text-stone leading-relaxed">Educational facilities throughout Chandler serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services.</p>
               </motion.div>
               <motion.div
-                key="Education"
+                key="Manufacturing"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
@@ -316,25 +358,25 @@ export default function ChandlerArizonaVendingLeadsPage() {
                 <div className="text-purple-600 mb-4">
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Chandler's education sector features schools, universities, and training facilities with captive audiences during academic hours, creating reliable vending machine placement opportunities.</p>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
+                <p className="text-stone leading-relaxed">Manufacturing facilities in Chandler provide excellent vending locations with large employee bases, multiple shifts, and break areas that generate consistent sales throughout the day.</p>
               </motion.div>
               <motion.div
-                key="Manufacturing"
+                key="Retail"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.3 }}
+                transition={{ duration: 0.8, delay: 0.30000000000000004 }}
                 viewport={{ once: true }}
                 className="bg-orange-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
                 <div className="text-orange-600 mb-4">
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Manufacturing facilities in Chandler operate around the clock with significant employee populations, providing consistent vending opportunities in break rooms and common areas.</p>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
+                <p className="text-stone leading-relaxed">Shopping centers and retail districts in Chandler offer prime vending locations, with high-traffic areas including food courts, entrances, and common spaces frequented by shoppers.</p>
               </motion.div>
               <motion.div
-                key="Retail"
+                key="Office Buildings"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
@@ -344,11 +386,11 @@ export default function ChandlerArizonaVendingLeadsPage() {
                 <div className="text-indigo-600 mb-4">
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Retail establishments in Chandler attract diverse customer demographics and generate steady foot traffic, providing reliable vending opportunities across various retail environments.</p>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
+                <p className="text-stone leading-relaxed">Office complexes in Chandler provide ideal vending locations with multiple tenants, high employee counts, and break areas that ensure steady machine usage during business hours.</p>
               </motion.div>
               <motion.div
-                key="Financial Services"
+                key="Transportation"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.5 }}
@@ -358,14 +400,12 @@ export default function ChandlerArizonaVendingLeadsPage() {
                 <div className="text-red-600 mb-4">
                   <TruckIcon className="w-12 h-12" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Financial Services</h3>
-                <p className="text-stone leading-relaxed">Financial institutions in Chandler provide high-volume foot traffic and professional clientele.</p>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
+                <p className="text-stone leading-relaxed">Transit facilities throughout Chandler provide excellent vending opportunities in terminals, waiting areas, and high-traffic zones with consistent traveler foot traffic.</p>
               </motion.div>
             </div>
           </div>
-        </section>
-
-                {/* Why Chandler? */}
+        </section>        {/* Why Chandler? */}
         <section className="py-16 bg-warm-white">
           <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-8">
@@ -387,14 +427,15 @@ export default function ChandlerArizonaVendingLeadsPage() {
               className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
             >
               <p className="text-lg text-stone leading-relaxed">
-                Chandler offers strong vending opportunities through its diverse business community, combining local commerce, healthcare facilities, educational institutions, and growing commercial sectors. The city's business mix provides multiple placement options with varying traffic patterns, while Chandler's economic stability supports consistent consumer demand. The city's combination of established businesses and growing sectors creates reliable vending placement opportunities.
-              </p>
+                The Chandler market offers excellent vending opportunities through its combination of corporate headquarters, healthcare networks, and educational institutions. High foot traffic areas and captive audiences create ideal conditions for vending success.</p>
             </motion.div>
           </div>
         </section>
 
-{/* Hot Leads Section */}
-        <section id="pricing" className="py-16 bg-warm-white">
+
+
+        {/* Hot Leads Section */}
+        <section id="hot-leads" className="py-16 bg-warm-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <motion.h2
@@ -448,7 +489,7 @@ export default function ChandlerArizonaVendingLeadsPage() {
         </section>
 
         {/* FAQ Section */}
-        <section id="pricing" className="py-16 bg-warm-white">
+        <section id="faq" className="py-16 bg-warm-white">
           <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <motion.h2
@@ -472,103 +513,73 @@ export default function ChandlerArizonaVendingLeadsPage() {
             </div>
             
             <div className="space-y-6">
-              
-              <motion.div
-                key="0"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What types of vending machine locations are available in Chandler?</h3>
-                <p className="text-stone leading-relaxed">Chandler offers diverse vending opportunities including technology companies, healthcare facilities, educational institutions, manufacturing facilities, retail centers, and financial services. Each location is pre-verified for optimal vending machine success.</p>
-              </motion.div>
-              <motion.div
-                key="1"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.1 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">How quickly can I get vending machine leads for Chandler?</h3>
-                <p className="text-stone leading-relaxed">Our Chandler vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.</p>
-              </motion.div>
-              <motion.div
-                key="2"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What makes Chandler a good market for vending machines?</h3>
-                <p className="text-stone leading-relaxed">Chandler features a thriving business community with diverse industries, strong technology sector, and consistent foot traffic. The city's economic growth and business-friendly environment create ideal conditions for vending machine success.</p>
-              </motion.div>
-              <motion.div
-                key="3"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.3 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">Do you provide ongoing support for Chandler locations?</h3>
-                <p className="text-stone leading-relaxed">Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Chandler.</p>
-              </motion.div>
-              <motion.div
-                key="4"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What industries in Chandler are best for vending machines?</h3>
-                <p className="text-stone leading-relaxed">Technology, healthcare, education, manufacturing, retail, and financial services sectors in Chandler show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.</p>
-              </motion.div>
-              <motion.div
-                key="5"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.5 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">How do you verify the quality of Chandler vending locations?</h3>
-                <p className="text-stone leading-relaxed">We conduct thorough research on each Chandler location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.</p>
-              </motion.div>
-              <motion.div
-                key="6"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.6 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">Can I get customized vending leads for specific areas of Chandler?</h3>
-                <p className="text-stone leading-relaxed">Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or technology parks within Chandler based on your preferences and target market requirements.</p>
-              </motion.div>
-              <motion.div
-                key="7"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.7 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What's the typical ROI for vending machines in Chandler?</h3>
-                <p className="text-stone leading-relaxed">Vending machines in Chandler typically show strong ROI due to the city's business density and consistent traffic patterns. Our research shows average payback periods of 10-15 months for well-placed machines.</p>
-              </motion.div>
+              {faqItems.map((item, idx) => (
+                <motion.div
+                  key={idx}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: idx * 0.1 }}
+                  viewport={{ once: true }}
+                  className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+                >
+                  <h3 className="text-lg font-semibold text-charcoal mb-3">{item.q}</h3>
+                  <p className="text-stone leading-relaxed">{item.a}</p>
+                </motion.div>
+              ))}
             </div>
           </div>
         </section>
+
+        {/* More cities in Arizona */}
+        {relatedCities.length > 0 && (
+          <section className="py-12 bg-white border-t border-gray-200">
+            <div className="mx-auto max-w-7xl px-6">
+              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in Arizona</h2>
+              <div className="flex flex-wrap gap-3">
+                {relatedCities.map(city => (
+                  <Link key={city.slug} href={`/vending-leads/${city.slug}`} className="px-3 py-2 rounded-lg border border-gray-200 bg-cream/60 text-chocolate hover:text-navy">
+                    Vending Leads in {city.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
 
       </div>
       
       <Footer />
       <ZipCodeModalWrapper />
+      {/* JSON-LD: Breadcrumbs and FAQ */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
+              { '@type': 'ListItem', position: 3, name: 'Arizona', item: 'https://www.thevendinglocator.com/vending-leads/arizona' },
+              { '@type': 'ListItem', position: 4, name: 'Chandler', item: 'https://www.thevendinglocator.com/vending-leads/chandler-arizona' }
+            ]
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: faqItems.map(i => ({
+              '@type': 'Question',
+              name: i.q,
+              acceptedAnswer: { '@type': 'Answer', text: i.a }
+            }))
+          })
+        }}
+      />
     </>
   )
 }

@@ -154,8 +154,7 @@ export default function LaplaceLouisianaVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Get comprehensive vending leads for Laplace's thriving Louisiana market, combining local businesses, healthcare systems, and educational facilities for reliable vending machine placement.
-              </motion.p>
+                Connect with qualified vending locations in Laplace, Louisiana, spanning technology companies, medical centers, and educational campuses.</motion.p>
 
               {/* Trust Signals */}
               <motion.div 
@@ -306,7 +305,7 @@ export default function LaplaceLouisianaVendingLeadsPage() {
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Laplace's healthcare sector includes major hospitals, specialty clinics, and medical offices that generate consistent visitor and employee traffic, ideal for vending machine placement.</p>
+                <p className="text-stone leading-relaxed">Laplace's healthcare sector includes major medical centers, specialty clinics, and outpatient facilities that generate consistent patient and visitor traffic, creating ideal vending placement opportunities.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -320,7 +319,7 @@ export default function LaplaceLouisianaVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Educational facilities throughout Laplace serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services.</p>
+                <p className="text-stone leading-relaxed">Academic institutions in Laplace feature student centers, libraries, and common areas with consistent foot traffic, making them ideal locations for vending machine placement.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -348,7 +347,7 @@ export default function LaplaceLouisianaVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Shopping centers and retail districts in Laplace offer prime vending locations, with high-traffic areas including food courts, entrances, and common spaces frequented by shoppers.</p>
+                <p className="text-stone leading-relaxed">Laplace's retail sector features shopping centers, strip malls, and commercial districts that offer strategic vending placement in areas with maximum shopper visibility.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -376,7 +375,7 @@ export default function LaplaceLouisianaVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Airports, bus stations, and transit centers throughout Laplace generate steady passenger traffic, providing excellent vending placement options in high-traffic areas frequented by travelers.</p>
+                <p className="text-stone leading-relaxed">Transportation hubs in Laplace offer prime vending locations with high passenger volumes, extended operating hours, and captive audiences waiting for departures.</p>
               </motion.div>
             </div>
           </div>

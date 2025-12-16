@@ -154,8 +154,7 @@ export default function WindsorCaliforniaVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Get comprehensive vending leads for Windsor's thriving California market, combining local businesses, healthcare systems, and educational facilities for reliable vending machine placement.
-              </motion.p>
+                Find verified vending machine locations in Windsor, California, connecting you with businesses seeking reliable vending solutions.</motion.p>
 
               {/* Trust Signals */}
               <motion.div 
@@ -306,7 +305,7 @@ export default function WindsorCaliforniaVendingLeadsPage() {
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Windsor's healthcare sector includes major hospitals, specialty clinics, and medical offices that generate consistent visitor and employee traffic, ideal for vending machine placement.</p>
+                <p className="text-stone leading-relaxed">Healthcare institutions in Windsor offer prime vending locations with high visitor counts, extended operating hours, and captive audiences seeking convenient snack and beverage options.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -320,7 +319,7 @@ export default function WindsorCaliforniaVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Educational facilities throughout Windsor serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services.</p>
+                <p className="text-stone leading-relaxed">Windsor's schools, colleges, and universities create excellent vending opportunities with high student traffic, campus events, and extended hours that maximize machine usage.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -334,7 +333,7 @@ export default function WindsorCaliforniaVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Industrial and manufacturing operations throughout Windsor employ substantial workforces with shift-based schedules, offering stable vending placement opportunities with steady traffic.</p>
+                <p className="text-stone leading-relaxed">Industrial operations in Windsor feature large workforces and shift schedules that create reliable vending revenue through employee break times and shift changes.</p>
               </motion.div>
               <motion.div
                 key="Retail"
@@ -348,7 +347,7 @@ export default function WindsorCaliforniaVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Shopping centers and retail districts in Windsor offer prime vending locations, with high-traffic areas including food courts, entrances, and common spaces frequented by shoppers.</p>
+                <p className="text-stone leading-relaxed">Retail locations throughout Windsor provide excellent vending opportunities in malls, shopping centers, and high-traffic commercial areas with consistent customer flow.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -362,7 +361,7 @@ export default function WindsorCaliforniaVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Commercial office spaces in Windsor offer excellent vending opportunities, with professional tenants and business operations generating consistent foot traffic throughout the workday.</p>
+                <p className="text-stone leading-relaxed">Corporate office buildings throughout Windsor feature professional workforces and business operations that create reliable vending revenue through employee break times and meetings.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -402,8 +401,7 @@ export default function WindsorCaliforniaVendingLeadsPage() {
               className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
             >
               <p className="text-lg text-stone leading-relaxed">
-                The Windsor market presents excellent vending potential through its combination of local businesses, healthcare systems, educational facilities, and commercial districts. The city's diverse economy ensures multiple traffic sources, while Windsor's business density creates numerous placement options. The city's economic growth and business-friendly environment support long-term vending success with steady consumer demand.
-              </p>
+                Windsor features a robust business environment with multiple industries supporting vending machine placement. The city's economic stability and business density provide numerous high-traffic locations for reliable revenue generation.</p>
             </motion.div>
           </div>
         </section>

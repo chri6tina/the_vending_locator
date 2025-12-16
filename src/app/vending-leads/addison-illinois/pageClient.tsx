@@ -154,8 +154,7 @@ export default function AddisonIllinoisVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Get comprehensive vending leads for Addison's thriving Illinois market, combining local businesses, healthcare systems, and educational facilities for reliable vending machine placement.
-              </motion.p>
+                Get access to curated vending leads in Addison, Illinois, including manufacturing facilities, corporate offices, and community centers.</motion.p>
 
               {/* Trust Signals */}
               <motion.div 
@@ -306,7 +305,7 @@ export default function AddisonIllinoisVendingLeadsPage() {
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Addison's healthcare sector includes major hospitals, specialty clinics, and medical offices that generate consistent visitor and employee traffic, ideal for vending machine placement.</p>
+                <p className="text-stone leading-relaxed">Addison's healthcare sector includes major medical centers, specialty clinics, and outpatient facilities that generate consistent patient and visitor traffic, creating ideal vending placement opportunities.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -320,7 +319,7 @@ export default function AddisonIllinoisVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Educational facilities throughout Addison serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services.</p>
+                <p className="text-stone leading-relaxed">Academic institutions in Addison feature student centers, libraries, and common areas with consistent foot traffic, making them ideal locations for vending machine placement.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -348,7 +347,7 @@ export default function AddisonIllinoisVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Shopping centers and retail districts in Addison offer prime vending locations, with high-traffic areas including food courts, entrances, and common spaces frequented by shoppers.</p>
+                <p className="text-stone leading-relaxed">Addison's retail sector features shopping centers, strip malls, and commercial districts that offer strategic vending placement in areas with maximum shopper visibility.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -376,7 +375,7 @@ export default function AddisonIllinoisVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Airports, bus stations, and transit centers throughout Addison generate steady passenger traffic, providing excellent vending placement options in high-traffic areas frequented by travelers.</p>
+                <p className="text-stone leading-relaxed">Transportation hubs in Addison offer prime vending locations with high passenger volumes, extended operating hours, and captive audiences waiting for departures.</p>
               </motion.div>
             </div>
           </div>
@@ -402,8 +401,7 @@ export default function AddisonIllinoisVendingLeadsPage() {
               className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
             >
               <p className="text-lg text-stone leading-relaxed">
-                The Addison market presents excellent vending potential through its combination of local businesses, healthcare systems, educational facilities, and commercial districts. The city's diverse economy ensures multiple traffic sources, while Addison's business density creates numerous placement options. The city's economic growth and business-friendly environment support long-term vending success with steady consumer demand.
-              </p>
+                With its thriving commercial districts and diverse business landscape, Addison offers multiple vending placement strategies. The city's combination of office complexes, retail centers, and community facilities ensures steady customer traffic.</p>
             </motion.div>
           </div>
         </section>

@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Decatur, Alabama - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Decatur, Alabama. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines decatur alabama, vending leads decatur alabama, vending locations decatur alabama, vending opportunities decatur alabama",
+  "keywords": "vending machines Decatur Alabama, vending leads Decatur Alabama, vending locations Decatur Alabama, vending opportunities Decatur Alabama",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/decatur-alabama"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

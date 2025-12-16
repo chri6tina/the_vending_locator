@@ -140,8 +140,7 @@ export default function CheyenneWyomingVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Explore vending machine opportunities throughout Cheyenne's business network, where diverse industries, commercial zones, and community spaces offer multiple placement options for vending success.
-              </motion.p>
+                Discover high-quality vending opportunities in Cheyenne, Wyoming, with pre-qualified locations in office buildings, retail spaces, and transportation hubs.</motion.p>
 
               {/* Trust Signals */}
               <motion.div 
@@ -320,7 +319,7 @@ export default function CheyenneWyomingVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Cheyenne's transportation infrastructure includes major transit hubs and travel facilities with year-round passenger flow, ideal for vending machine services in waiting areas and terminals.</p>
+                <p className="text-stone leading-relaxed">Transportation hubs in Cheyenne offer prime vending locations with high passenger volumes, extended operating hours, and captive audiences waiting for departures.</p>
               </motion.div>
 
               <motion.div
@@ -335,7 +334,7 @@ export default function CheyenneWyomingVendingLeadsPage() {
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Cheyenne features modern healthcare facilities including hospitals, medical centers, and clinics with high patient and visitor traffic, creating consistent demand for vending services throughout the day.</p>
+                <p className="text-stone leading-relaxed">Cheyenne's healthcare sector includes major medical centers, specialty clinics, and outpatient facilities that generate consistent patient and visitor traffic, creating ideal vending placement opportunities.</p>
               </motion.div>
 
               <motion.div
@@ -350,7 +349,7 @@ export default function CheyenneWyomingVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Retail locations throughout Cheyenne provide high customer traffic and diverse shopping experiences, creating multiple vending opportunities in malls, shopping centers, and retail districts.</p>
+                <p className="text-stone leading-relaxed">Cheyenne's retail sector features shopping centers, strip malls, and commercial districts that offer strategic vending placement in areas with maximum shopper visibility.</p>
               </motion.div>
 
               <motion.div
@@ -365,7 +364,7 @@ export default function CheyenneWyomingVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Schools and educational institutions in Cheyenne offer excellent vending opportunities, with high-traffic areas including cafeterias, libraries, student centers, and athletic facilities.</p>
+                <p className="text-stone leading-relaxed">Academic institutions in Cheyenne feature student centers, libraries, and common areas with consistent foot traffic, making them ideal locations for vending machine placement.</p>
               </motion.div>
             </div>
           </div>
@@ -391,8 +390,7 @@ export default function CheyenneWyomingVendingLeadsPage() {
               className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
             >
               <p className="text-lg text-stone leading-relaxed">
-                Cheyenne offers reliable vending opportunities through its thriving business community, featuring diverse industries, commercial centers, and growing economic sectors. The city's business mix provides stable placement locations with consistent traffic patterns, while Cheyenne's economic activity supports steady consumer spending. The city's combination of established businesses and emerging sectors creates multiple vending placement strategies.
-              </p>
+                The Cheyenne market offers excellent vending opportunities through its combination of corporate headquarters, healthcare networks, and educational institutions. High foot traffic areas and captive audiences create ideal conditions for vending success.</p>
             </motion.div>
           </div>
         </section>

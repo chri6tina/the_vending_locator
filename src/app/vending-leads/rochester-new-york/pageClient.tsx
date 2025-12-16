@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CpuChipIcon, HeartIcon, ShoppingBagIcon, TruckIcon, BuildingLibraryIcon, CurrencyDollarIcon, SparklesIcon } from '@heroicons/react/24/solid'
+import states from '@/data/states'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
@@ -13,31 +14,31 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
 export default function RochesterNewYorkVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Rochester';
-  const stateDisplayName = 'New York';
+  const cityDisplayName = 'Rochester New';
+  const stateDisplayName = 'York';
   
   // City-specific data
   const cityData = {
-  'name': 'Rochester',
-  'state': 'New York',
-  'population': '200K-300K',
-  'businesses': '15K-25K',
-  'industries': '15-20',
-  'verifiedLocations': '300-500',
-  'rating': '4.8/5',
-  'description': 'Manufacturing and tech hub with strong business economy'
-};
+    'name': 'Rochester New',
+    'state': 'York',
+    'population': '150K+',
+    'businesses': '12K-20K',
+    'industries': '16-20',
+    'verifiedLocations': '200-350',
+    'rating': '4.7/5',
+    'description': 'Thriving York city with diverse business opportunities, healthcare facilities, and commercial centers'
+  };
   
   // Active users counter
-  const [activeUsers, setActiveUsers] = useState(28)
+  const [activeUsers, setActiveUsers] = useState(25)
   const [currentUserIndex, setCurrentUserIndex] = useState(0)
   const [usedNames, setUsedNames] = useState(new Set())
 
   // User names for active users counter
   const [userNames, setUserNames] = useState([
-    'Mike from Rochester', 'Sarah in Downtown', 'David in Rochester', 'Lisa in Rochester',
-    'Tom in Rochester', 'Jennifer in Rochester', 'Robert in Rochester', 'Amanda in Rochester',
-    'Chris in Rochester', 'Maria in Rochester', 'James in Rochester', 'Emily in Rochester'
+    'Mike from Rochester New', 'Sarah in Rochester New', 'David in Rochester New', 'Lisa in Rochester New',
+    'Tom in Rochester New', 'Jennifer in Rochester New', 'Robert in Rochester New', 'Amanda in Rochester New',
+    'Chris in Rochester New', 'Maria in Rochester New', 'James in Rochester New', 'Emily in Rochester New'
   ])
 
   // Active users counter effect
@@ -46,7 +47,7 @@ export default function RochesterNewYorkVendingLeadsPage() {
       setActiveUsers(prev => {
         const change = Math.floor(Math.random() * 3) - 1
         const newValue = prev + change
-        return Math.max(25, Math.min(42, newValue))
+        return Math.max(20, Math.min(35, newValue))
       })
     }, 4000);
     return () => clearInterval(interval)
@@ -76,6 +77,46 @@ export default function RochesterNewYorkVendingLeadsPage() {
     }, 5000);
     return () => clearInterval(interval)
   }, [userNames.length, usedNames])
+
+  // Build related York cities (for internal linking)
+  const coloradoState = states.find(s => s.slug === 'york');
+  const relatedCities = coloradoState ? coloradoState.cities.filter(c => c.slug !== 'rochester-new-york').slice(0, 8) : [];
+
+  // FAQ items reused for JSON-LD
+  const faqItems = [
+  {
+    q: 'What types of vending machine locations are available in Rochester New?',
+    a: 'Rochester New offers diverse vending opportunities including technology companies, manufacturing facilities, healthcare centers, educational institutions, retail locations, and office buildings. Each location is pre-verified for optimal vending machine success.'
+  },
+  {
+    q: 'How quickly can I get vending machine leads for Rochester New?',
+    a: 'Our Rochester New vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
+  },
+  {
+    q: 'What makes Rochester New a good market for vending machines?',
+    a: 'Rochester New features a thriving business community with diverse industries including technology, manufacturing, and retail. The city\'s business density and growing economy create ideal conditions for vending machine success.'
+  },
+  {
+    q: 'Do you provide ongoing support for Rochester New locations?',
+    a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Rochester New.'
+  },
+  {
+    q: 'What industries in Rochester New are best for vending machines?',
+    a: 'Technology companies, manufacturing facilities, healthcare centers, educational institutions, and office buildings in Rochester New show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
+  },
+  {
+    q: 'How do you verify the quality of Rochester New vending locations?',
+    a: 'We conduct thorough research on each Rochester New location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
+  },
+  {
+    q: 'Can I get customized vending leads for specific areas of Rochester New?',
+    a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Rochester New including the downtown area, industrial parks, and commercial corridors based on your preferences and target market requirements.'
+  },
+  {
+    q: 'What\'s the typical ROI for vending machines in Rochester New?',
+    a: 'Vending machines in Rochester New typically show strong ROI due to the city\'s business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+  },
+];
 
   return (
     <>
@@ -139,8 +180,7 @@ export default function RochesterNewYorkVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Explore vending machine opportunities throughout Rochester's business network, where diverse industries, commercial zones, and community spaces offer multiple placement options for vending success.
-              </motion.p>
+                Access premium vending machine leads in Rochester New, York, featuring verified locations across healthcare facilities, educational institutions, and commercial centers.</motion.p>
 
               {/* Trust Signals */}
               <motion.div 
@@ -158,7 +198,7 @@ export default function RochesterNewYorkVendingLeadsPage() {
                 <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
                   <div className="flex items-center gap-3">
                     <StarIcon className="h-5 w-5 text-yellow-500" />
-                    <span className="text-sm font-medium text-chocolate">4.8/5 Rating</span>
+                    <span className="text-sm font-medium text-chocolate">4.7/5 Rating</span>
                   </div>
                 </div>
                 <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
@@ -224,6 +264,8 @@ export default function RochesterNewYorkVendingLeadsPage() {
           </div>
         </section>
 
+        
+
         {/* Pricing Section */}
         <section id="pricing" className="py-16 bg-warm-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -278,7 +320,7 @@ export default function RochesterNewYorkVendingLeadsPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               
               <motion.div
-                key="Manufacturing"
+                key="Healthcare"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0 }}
@@ -286,14 +328,13 @@ export default function RochesterNewYorkVendingLeadsPage() {
                 className="bg-blue-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
                 <div className="text-blue-600 mb-4">
-                  <TruckIcon className="w-12 h-12" />
+                  <HeartIcon className="w-12 h-12" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Rochester's manufacturing sector features production facilities, warehouses, and industrial parks with large employee concentrations, ideal for vending machine services.</p>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
+                <p className="text-stone leading-relaxed">Medical facilities throughout Rochester New serve large patient populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services in waiting areas and break rooms.</p>
               </motion.div>
-
               <motion.div
-                key="Technology"
+                key="Education"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.1 }}
@@ -301,14 +342,13 @@ export default function RochesterNewYorkVendingLeadsPage() {
                 className="bg-green-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
                 <div className="text-green-600 mb-4">
-                  <CpuChipIcon className="w-12 h-12" />
+                  <AcademicCapIcon className="w-12 h-12" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Technology</h3>
-                <p className="text-stone leading-relaxed">Strong tech sector with software companies, startups, and innovation hubs providing consistent employee traffic.</p>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
+                <p className="text-stone leading-relaxed">Educational facilities throughout Rochester New serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services.</p>
               </motion.div>
-
               <motion.div
-                key="Healthcare"
+                key="Manufacturing"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
@@ -316,29 +356,27 @@ export default function RochesterNewYorkVendingLeadsPage() {
                 className="bg-purple-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
                 <div className="text-purple-600 mb-4">
-                  <HeartIcon className="w-12 h-12" />
+                  <CpuChipIcon className="w-12 h-12" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Rochester features modern healthcare facilities including hospitals, medical centers, and clinics with high patient and visitor traffic, creating consistent demand for vending services throughout the day.</p>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
+                <p className="text-stone leading-relaxed">Manufacturing facilities in Rochester New provide excellent vending locations with large employee bases, multiple shifts, and break areas that generate consistent sales throughout the day.</p>
               </motion.div>
-
-              <motion.div
-                key="Education"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.3 }}
-                viewport={{ once: true }}
-                className="bg-yellow-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
-              >
-                <div className="text-yellow-600 mb-4">
-                  <AcademicCapIcon className="w-12 h-12" />
-                </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Schools and educational institutions in Rochester offer excellent vending opportunities, with high-traffic areas including cafeterias, libraries, student centers, and athletic facilities.</p>
-              </motion.div>
-
               <motion.div
                 key="Retail"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.30000000000000004 }}
+                viewport={{ once: true }}
+                className="bg-orange-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-orange-600 mb-4">
+                  <ShoppingBagIcon className="w-12 h-12" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
+                <p className="text-stone leading-relaxed">Shopping centers and retail districts in Rochester New offer prime vending locations, with high-traffic areas including food courts, entrances, and common spaces frequented by shoppers.</p>
+              </motion.div>
+              <motion.div
+                key="Office Buildings"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
@@ -346,12 +384,11 @@ export default function RochesterNewYorkVendingLeadsPage() {
                 className="bg-indigo-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
                 <div className="text-indigo-600 mb-4">
-                  <ShoppingBagIcon className="w-12 h-12" />
+                  <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Retail locations throughout Rochester provide high customer traffic and diverse shopping experiences, creating multiple vending opportunities in malls, shopping centers, and retail districts.</p>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
+                <p className="text-stone leading-relaxed">Office complexes in Rochester New provide ideal vending locations with multiple tenants, high employee counts, and break areas that ensure steady machine usage during business hours.</p>
               </motion.div>
-
               <motion.div
                 key="Transportation"
                 initial={{ opacity: 0, y: 20 }}
@@ -364,11 +401,11 @@ export default function RochesterNewYorkVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Rochester's transportation infrastructure includes major transit hubs and travel facilities with year-round passenger flow, ideal for vending machine services in waiting areas and terminals.</p>
+                <p className="text-stone leading-relaxed">Transit facilities throughout Rochester New provide excellent vending opportunities in terminals, waiting areas, and high-traffic zones with consistent traveler foot traffic.</p>
               </motion.div>
             </div>
           </div>
-        </section>        {/* Why Rochester? */}
+        </section>        {/* Why Rochester New? */}
         <section className="py-16 bg-warm-white">
           <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-8">
@@ -379,7 +416,7 @@ export default function RochesterNewYorkVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-6"
               >
-                Why Choose Rochester for Vending Machines?
+                Why Choose Rochester New for Vending Machines?
               </motion.h2>
             </div>
             <motion.div
@@ -390,8 +427,7 @@ export default function RochesterNewYorkVendingLeadsPage() {
               className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
             >
               <p className="text-lg text-stone leading-relaxed">
-                The Rochester market presents excellent vending potential through its combination of local businesses, healthcare systems, educational facilities, and commercial districts. The city's diverse economy ensures multiple traffic sources, while Rochester's business density creates numerous placement options. The city's economic growth and business-friendly environment support long-term vending success with steady consumer demand.
-              </p>
+                Rochester New presents strong vending potential with its mix of established businesses, growing commercial sectors, and steady employment base. The city's diverse economy supports consistent consumer spending, while strategic location placement maximizes machine visibility and usage.</p>
             </motion.div>
           </div>
         </section>
@@ -399,21 +435,7 @@ export default function RochesterNewYorkVendingLeadsPage() {
 
 
         {/* Hot Leads Section */}
-        <section className="py-16 bg-warm-white">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <HotLeads />
-          </div>
-        </section>
-
-        {/* Vending Course Section */}
-        <section className="py-16 bg-white">
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <VendingCourse />
-          </div>
-        </section>
-
-        {/* FAQ Section */}
-        <section className="py-16 bg-warm-white">
+        <section id="hot-leads" className="py-16 bg-warm-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <motion.h2
@@ -423,7 +445,7 @@ export default function RochesterNewYorkVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
               >
-                Frequently Asked Questions About Vending Machine Locations in {cityDisplayName}
+                One-Time Location Packages for {cityDisplayName}
               </motion.h2>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
@@ -432,108 +454,132 @@ export default function RochesterNewYorkVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="text-lg text-stone max-w-3xl mx-auto"
               >
-                Get answers to common questions about vending machine opportunities in {cityDisplayName}.
+                Get immediate access to qualified vending machine locations without monthly commitments.
               </motion.p>
             </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              
-              <motion.div
-                key="0"
+            <HotLeads />
+          </div>
+        </section>
+
+        {/* Vending Course Section */}
+        <section className="py-16 bg-white">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <motion.h2
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0 }}
+                transition={{ duration: 0.8 }}
                 viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What types of vending machine locations are available in Rochester?</h3>
-                <p className="text-stone leading-relaxed">Rochester offers diverse vending opportunities including manufacturing facilities, technology companies, healthcare institutions, educational institutions, retail locations, office buildings, and transportation hubs. Each location is pre-verified for optimal vending machine success.</p>
-              </motion.div>
-              <motion.div
-                key="1"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.1 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">How quickly can I get vending machine leads for Rochester?</h3>
-                <p className="text-stone leading-relaxed">Our Rochester vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.</p>
-              </motion.div>
-              <motion.div
-                key="2"
+                Learn the Vending Machine Business
+              </motion.h2>
+              <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
                 viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+                className="text-lg text-stone max-w-3xl mx-auto"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What makes Rochester a good market for vending machines?</h3>
-                <p className="text-stone leading-relaxed">Rochester features a manufacturing and tech hub with strong business economy, stable employment, and consistent foot traffic. The city's economic diversity and business-friendly environment create ideal conditions for vending machine success.</p>
-              </motion.div>
-              <motion.div
-                key="3"
+                Master the fundamentals of vending machine operations and maximize your success in {cityDisplayName}.
+              </motion.p>
+            </div>
+            <VendingCourse />
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section id="faq" className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <motion.h2
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.30000000000000004 }}
+                transition={{ duration: 0.8 }}
                 viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">Do you provide ongoing support for Rochester locations?</h3>
-                <p className="text-stone leading-relaxed">Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Rochester.</p>
-              </motion.div>
-              <motion.div
-                key="4"
+                Frequently Asked Questions
+              </motion.h2>
+              <motion.p 
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
                 viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+                className="text-lg text-chocolate/70 leading-relaxed"
               >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What industries in Rochester are best for vending machines?</h3>
-                <p className="text-stone leading-relaxed">Manufacturing, technology, healthcare, education, retail, office buildings, and transportation sectors in Rochester show the highest potential for vending machine success due to consistent foot traffic and captive audiences.</p>
-              </motion.div>
-              <motion.div
-                key="5"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.5 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">How do you verify the quality of Rochester vending locations?</h3>
-                <p className="text-stone leading-relaxed">We conduct thorough research on each Rochester location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.</p>
-              </motion.div>
-              <motion.div
-                key="6"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.6000000000000001 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">Can I get customized vending leads for specific areas of Rochester?</h3>
-                <p className="text-stone leading-relaxed">Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Rochester based on your preferences and target market requirements.</p>
-              </motion.div>
-              <motion.div
-                key="7"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.7000000000000001 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What's the typical ROI for vending machines in Rochester?</h3>
-                <p className="text-stone leading-relaxed">Vending machines in Rochester typically show strong ROI due to the city's business density and consistent traffic patterns. Our research shows average payback periods of 12-18 months for well-placed machines.</p>
-              </motion.div>
+                Everything you need to know about vending machine opportunities in {cityDisplayName}.
+              </motion.p>
+            </div>
+            
+            <div className="space-y-6">
+              {faqItems.map((item, idx) => (
+                <motion.div
+                  key={idx}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: idx * 0.1 }}
+                  viewport={{ once: true }}
+                  className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+                >
+                  <h3 className="text-lg font-semibold text-charcoal mb-3">{item.q}</h3>
+                  <p className="text-stone leading-relaxed">{item.a}</p>
+                </motion.div>
+              ))}
             </div>
           </div>
         </section>
+
+        {/* More cities in York */}
+        {relatedCities.length > 0 && (
+          <section className="py-12 bg-white border-t border-gray-200">
+            <div className="mx-auto max-w-7xl px-6">
+              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in York</h2>
+              <div className="flex flex-wrap gap-3">
+                {relatedCities.map(city => (
+                  <Link key={city.slug} href={`/vending-leads/${city.slug}`} className="px-3 py-2 rounded-lg border border-gray-200 bg-cream/60 text-chocolate hover:text-navy">
+                    Vending Leads in {city.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
 
       </div>
       
       <Footer />
       <ZipCodeModalWrapper />
+      {/* JSON-LD: Breadcrumbs and FAQ */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
+              { '@type': 'ListItem', position: 3, name: 'York', item: 'https://www.thevendinglocator.com/vending-leads/york' },
+              { '@type': 'ListItem', position: 4, name: 'Rochester New', item: 'https://www.thevendinglocator.com/vending-leads/rochester-new-york' }
+            ]
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: faqItems.map(i => ({
+              '@type': 'Question',
+              name: i.q,
+              acceptedAnswer: { '@type': 'Answer', text: i.a }
+            }))
+          })
+        }}
+      />
     </>
   )
 }

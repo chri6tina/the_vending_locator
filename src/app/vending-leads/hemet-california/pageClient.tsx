@@ -154,8 +154,7 @@ export default function HemetCaliforniaVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Explore vending machine opportunities throughout Hemet's business network, where diverse industries, commercial zones, and community spaces offer multiple placement options for vending success.
-              </motion.p>
+                Discover high-quality vending opportunities in Hemet, California, with pre-qualified locations in office buildings, retail spaces, and transportation hubs.</motion.p>
 
               {/* Trust Signals */}
               <motion.div 
@@ -306,7 +305,7 @@ export default function HemetCaliforniaVendingLeadsPage() {
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Hemet features modern healthcare facilities including hospitals, medical centers, and clinics with high patient and visitor traffic, creating consistent demand for vending services throughout the day.</p>
+                <p className="text-stone leading-relaxed">Healthcare institutions in Hemet offer prime vending locations with high visitor counts, extended operating hours, and captive audiences seeking convenient snack and beverage options.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -320,7 +319,7 @@ export default function HemetCaliforniaVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Schools and educational institutions in Hemet offer excellent vending opportunities, with high-traffic areas including cafeterias, libraries, student centers, and athletic facilities.</p>
+                <p className="text-stone leading-relaxed">Hemet's schools, colleges, and universities create excellent vending opportunities with high student traffic, campus events, and extended hours that maximize machine usage.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -334,7 +333,7 @@ export default function HemetCaliforniaVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Hemet's manufacturing sector features production facilities, warehouses, and industrial parks with large employee concentrations, ideal for vending machine services.</p>
+                <p className="text-stone leading-relaxed">Industrial operations in Hemet feature large workforces and shift schedules that create reliable vending revenue through employee break times and shift changes.</p>
               </motion.div>
               <motion.div
                 key="Retail"
@@ -348,7 +347,7 @@ export default function HemetCaliforniaVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Retail locations throughout Hemet provide high customer traffic and diverse shopping experiences, creating multiple vending opportunities in malls, shopping centers, and retail districts.</p>
+                <p className="text-stone leading-relaxed">Retail locations throughout Hemet provide excellent vending opportunities in malls, shopping centers, and high-traffic commercial areas with consistent customer flow.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -362,7 +361,7 @@ export default function HemetCaliforniaVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Professional office spaces in Hemet house corporate headquarters, business centers, and professional services with captive employee audiences during business hours, creating consistent vending opportunities.</p>
+                <p className="text-stone leading-relaxed">Corporate office buildings throughout Hemet feature professional workforces and business operations that create reliable vending revenue through employee break times and meetings.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -376,7 +375,7 @@ export default function HemetCaliforniaVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Hemet's transportation infrastructure includes major transit hubs and travel facilities with year-round passenger flow, ideal for vending machine services in waiting areas and terminals.</p>
+                <p className="text-stone leading-relaxed">Airports, bus stations, and transit centers throughout Hemet generate steady passenger traffic, providing excellent vending placement options in high-traffic areas frequented by travelers.</p>
               </motion.div>
             </div>
           </div>
@@ -402,8 +401,7 @@ export default function HemetCaliforniaVendingLeadsPage() {
               className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
             >
               <p className="text-lg text-stone leading-relaxed">
-                The Hemet market presents excellent vending potential through its combination of local businesses, healthcare systems, educational facilities, and commercial districts. The city's diverse economy ensures multiple traffic sources, while Hemet's business density creates numerous placement options. The city's economic growth and business-friendly environment support long-term vending success with steady consumer demand.
-              </p>
+                The Hemet market offers excellent vending opportunities through its combination of corporate headquarters, healthcare networks, and educational institutions. High foot traffic areas and captive audiences create ideal conditions for vending success.</p>
             </motion.div>
           </div>
         </section>

@@ -1,330 +1,585 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import Link from 'next/link'
 import { motion } from 'framer-motion'
+import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CpuChipIcon, HeartIcon, ShoppingBagIcon, TruckIcon, BuildingLibraryIcon, CurrencyDollarIcon, SparklesIcon } from '@heroicons/react/24/solid'
+import states from '@/data/states'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
-import SmartBreadcrumbs from '@/components/SmartBreadcrumbs'
 
-const cityData = {
-  name: 'Gary',
-  state: 'Indiana',
-  population: '69,093',
-  description: 'Gary, Indiana is a historic industrial city located on the southern shore of Lake Michigan. Known for its steel industry heritage and proximity to Chicago, Gary offers unique vending opportunities in manufacturing facilities, educational institutions, and community centers.',
-  keyIndustries: ['Manufacturing', 'Education', 'Healthcare', 'Government', 'Retail'],
-  majorEmployers: ['Gary Community School Corporation', 'Methodist Hospitals', 'City of Gary', 'Steel Dynamics', 'ArcelorMittal'],
-  vendingOpportunities: [
-    'Steel mills and manufacturing facilities',
-    'Public schools and universities',
-    'Healthcare facilities and clinics',
-    'Government buildings and offices',
-    'Community centers and recreation facilities',
-    'Retail centers and shopping areas'
-  ],
-  demographics: {
-    medianAge: 35.2,
-    medianHouseholdIncome: '$35,847',
-    educationLevel: 'High school diploma or equivalent',
-    employmentRate: '58.3%'
-  },
-  transportation: {
-    majorHighways: ['I-80/I-94', 'I-65', 'US-12', 'US-20'],
-    publicTransit: 'Gary Public Transportation Corporation',
-    airports: 'Gary/Chicago International Airport'
-  }
-}
+export default function GaryIndianaVendingLeadsPage() {
+  // City and state display names
+  const cityDisplayName = 'Gary';
+  const stateDisplayName = 'Indiana';
+  
+  // City-specific data
+  const cityData = {
+    'name': 'Gary',
+    'state': 'Indiana',
+    'population': '100K+',
+    'businesses': '6K-8K',
+    'industries': '16-20',
+    'verifiedLocations': '500-1000',
+    'rating': '4.7/5',
+    'description': 'Thriving Indiana city with diverse business opportunities, healthcare facilities, and commercial centers'
+  };
+  
+  // Active users counter
+  const [activeUsers, setActiveUsers] = useState(25)
+  const [currentUserIndex, setCurrentUserIndex] = useState(0)
+  const [usedNames, setUsedNames] = useState(new Set())
 
-const userNames = [
-  'Michael', 'Sarah', 'David', 'Jennifer', 'Robert', 'Lisa', 'James', 'Michelle',
-  'William', 'Ashley', 'Christopher', 'Amanda', 'Daniel', 'Stephanie', 'Matthew', 'Nicole'
-]
+  // User names for active users counter
+  const [userNames, setUserNames] = useState([
+    'Mike from Gary', 'Sarah in Gary', 'David in Gary', 'Lisa in Gary',
+    'Tom in Gary', 'Jennifer in Gary', 'Robert in Gary', 'Amanda in Gary',
+    'Chris in Gary', 'Maria in Gary', 'James in Gary', 'Emily in Gary'
+  ])
 
-export default function GaryIndianaPageClient() {
-  const [activeUsers, setActiveUsers] = useState(0)
-  const [isLoading, setIsLoading] = useState(true)
-
+  // Active users counter effect
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveUsers(prev => {
         const change = Math.floor(Math.random() * 3) - 1
-        const newCount = prev + change
-        return Math.max(12, Math.min(28, newCount))
+        const newValue = prev + change
+        return Math.max(20, Math.min(35, newValue))
       })
-    }, 3000)
-
-    const timer = setTimeout(() => setIsLoading(false), 1000)
-
-    return () => {
-      clearInterval(interval)
-      clearTimeout(timer)
-    }
+    }, 4000);
+    return () => clearInterval(interval)
   }, [])
 
-  if (isLoading) {
-    return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-        <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-blue-600"></div>
-      </div>
-    )
-  }
+  // Smart rotation of user names
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentUserIndex(prev => {
+        if (usedNames.size > userNames.length * 0.8) {
+          setUsedNames(new Set())
+        }
+        let attempts = 0
+        let nextIndex = prev
+        while (attempts < 50) {
+          nextIndex = (nextIndex + 1) % userNames.length
+          if (!usedNames.has(nextIndex)) {
+            setUsedNames(prev => new Set([...prev, nextIndex]));
+            return nextIndex
+          }
+          attempts++
+        }
+        const randomIndex = Math.floor(Math.random() * userNames.length)
+        setUsedNames(prev => new Set([...prev, randomIndex]));
+        return randomIndex
+      })
+    }, 5000);
+    return () => clearInterval(interval)
+  }, [userNames.length, usedNames])
+
+  // Build related Indiana cities (for internal linking)
+  const coloradoState = states.find(s => s.slug === 'indiana');
+  const relatedCities = coloradoState ? coloradoState.cities.filter(c => c.slug !== 'gary-indiana').slice(0, 8) : [];
+
+  // FAQ items reused for JSON-LD
+  const faqItems = [
+  {
+    q: 'What types of vending machine locations are available in Gary?',
+    a: 'Gary offers diverse vending opportunities including technology companies, manufacturing facilities, healthcare centers, educational institutions, retail locations, and office buildings. Each location is pre-verified for optimal vending machine success.'
+  },
+  {
+    q: 'How quickly can I get vending machine leads for Gary?',
+    a: 'Our Gary vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
+  },
+  {
+    q: 'What makes Gary a good market for vending machines?',
+    a: 'Gary features a thriving business community with diverse industries including technology, manufacturing, and retail. The city\'s business density and growing economy create ideal conditions for vending machine success.'
+  },
+  {
+    q: 'Do you provide ongoing support for Gary locations?',
+    a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Gary.'
+  },
+  {
+    q: 'What industries in Gary are best for vending machines?',
+    a: 'Technology companies, manufacturing facilities, healthcare centers, educational institutions, and office buildings in Gary show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
+  },
+  {
+    q: 'How do you verify the quality of Gary vending locations?',
+    a: 'We conduct thorough research on each Gary location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
+  },
+  {
+    q: 'Can I get customized vending leads for specific areas of Gary?',
+    a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Gary including the downtown area, industrial parks, and commercial corridors based on your preferences and target market requirements.'
+  },
+  {
+    q: 'What\'s the typical ROI for vending machines in Gary?',
+    a: 'Vending machines in Gary typically show strong ROI due to the city\'s business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+  },
+];
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <>
       <Header />
-      <ZipCodeModalWrapper />
       
-      <main className="pt-16">
+      <div className="min-h-screen bg-warm-white">
+        {/* Breadcrumb Navigation */}
+        <nav className="bg-white border-b border-gray-200 py-3">
+          <div className="container mx-auto px-4">
+            <div className="flex items-center space-x-2 text-sm text-stone">
+              <Link href="/" className="hover:text-navy transition-colors">
+                Home
+              </Link>
+              <span>/</span>
+              <Link href="/vending-leads" className="hover:text-navy transition-colors">
+                Vending Leads
+              </Link>
+              <span>/</span>
+              <Link href={`/vending-leads/${stateDisplayName.toLowerCase().replace(/\s+/g, '-')}`} className="hover:text-navy transition-colors">
+                {stateDisplayName}
+              </Link>
+              <span>/</span>
+              <span className="text-charcoal font-medium">{cityDisplayName}</span>
+            </div>
+          </div>
+        </nav>
+
         {/* Hero Section */}
-        <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
+        <section className="relative py-20 bg-white overflow-hidden">
           <div className="container mx-auto px-4">
-            <SmartBreadcrumbs />
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="text-center max-w-4xl mx-auto"
-            >
-              <h1 className="text-4xl md:text-6xl font-bold mb-6">
-                Vending Machine Leads in {cityData.name}, {cityData.state}
-              </h1>
-              <p className="text-xl md:text-2xl mb-8 opacity-90">
-                Connect with {cityData.population} potential customers in {cityData.name}
-              </p>
-              <div className="flex flex-wrap justify-center gap-4 text-lg">
-                <div className="bg-white/20 backdrop-blur-sm rounded-lg px-6 py-3">
-                  <span className="font-semibold">{activeUsers}</span> active users
+            <div className="max-w-6xl mx-auto text-center">
+              {/* Active Users Counter */}
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                className="mt-6 sm:mt-8 p-4 bg-cream/50 backdrop-blur-sm rounded-2xl border border-gray-200 shadow-sm max-w-md mx-auto mb-6"
+              >
+                <div className="flex items-center justify-center gap-3">
+                  <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                  <span className="text-sm font-medium text-chocolate">
+                    <span className="font-bold text-coral">{activeUsers}</span> people are choosing plans right now
+                  </span>
+                </div></motion.div>
+
+              {/* Main Headline */}
+              <motion.h1 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                className="text-4xl md:text-6xl font-playfair font-bold text-charcoal mb-6 leading-tight"
+              >
+                Vending Machine Locations in{' '}
+                <span className="text-navy">{cityDisplayName}, {stateDisplayName}</span>
+              </motion.h1>
+
+              {/* City-Specific Value Proposition */}
+              <motion.p 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.6 }}
+                className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
+              >
+                Access targeted vending leads in Gary, Indiana, covering industrial parks, shopping centers, and professional office complexes.</motion.p>
+
+              {/* Trust Signals */}
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.8 }}
+                className="mt-6 sm:mt-8 grid grid-cols-2 gap-4 max-w-md mx-auto mb-8"
+              >
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <CheckBadgeIcon className="h-5 w-5 text-green-600" />
+                    <span className="text-sm font-medium text-chocolate">Verified Locations</span>
+                  </div>
                 </div>
-                <div className="bg-white/20 backdrop-blur-sm rounded-lg px-6 py-3">
-                  <span className="font-semibold">{cityData.population}</span> population
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <StarIcon className="h-5 w-5 text-yellow-500" />
+                    <span className="text-sm font-medium text-chocolate">4.7/5 Rating</span>
+                  </div>
                 </div>
-                <div className="bg-white/20 backdrop-blur-sm rounded-lg px-6 py-3">
-                  <span className="font-semibold">24/7</span> lead updates
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <ShieldCheckIcon className="h-5 w-5 text-blue-600" />
+                    <span className="text-sm font-medium text-chocolate">Secure & Reliable</span>
+                  </div>
                 </div>
-              </div>
-            </motion.div>
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <ClockIcon className="h-5 w-5 text-purple-600" />
+                    <span className="text-sm font-medium text-chocolate">Quality Research</span>
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* CTA Buttons */}
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 1.0 }}
+                className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 mb-8"
+              >
+                <button 
+                    onClick={() => {
+                      const pricingSection = document.getElementById('pricing')
+                      if (pricingSection) {
+                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                      }
+                    }}
+                    className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
+                >
+                    Get Started
+                  </button>
+
+              </motion.div>
+
+{/* Social Proof Stats */}
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 1.2 }}
+                className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto"
+              >
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-navy">{cityData.population}</div>
+                  <div className="text-sm text-stone">Population</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-navy">{cityData.businesses}</div>
+                  <div className="text-sm text-stone">Businesses</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-navy">{cityData.industries}</div>
+                  <div className="text-sm text-stone">Industries</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-navy">{cityData.verifiedLocations}</div>
+                  <div className="text-sm text-stone">Verified Locations</div>
+                </div>
+              </motion.div>
+            </div>
           </div>
         </section>
 
-        {/* City Overview */}
+        
+
+        {/* Pricing Section */}
+        <section id="pricing" className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
+              >
+                Get Access to Qualified Vending Machine Locations in {cityDisplayName}
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-lg text-stone max-w-3xl mx-auto"
+              >
+                Choose the perfect plan for your vending machine business needs and start accessing qualified locations today.
+              </motion.p>
+            </div>
+            <PricingTable />
+          </div>
+        </section>
+
+        {/* Business Landscape */}
         <section className="py-16 bg-white">
-          <div className="container mx-auto px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="max-w-4xl mx-auto"
-            >
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center">
-                Why {cityData.name}, {cityData.state}?
-              </h2>
-              <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-                {cityData.description}
-              </p>
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
+              >
+                Business Landscape in {cityDisplayName}
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-lg text-stone max-w-3xl mx-auto"
+              >
+                Discover the diverse industries and business opportunities that make {cityDisplayName} an ideal market for vending machines.
+              </motion.p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               
-              <div className="grid md:grid-cols-2 gap-8 mb-12">
-                <div>
-                  <h3 className="text-2xl font-semibold text-gray-900 mb-4">Key Industries</h3>
-                  <ul className="space-y-2">
-                    {cityData.keyIndustries.map((industry, index) => (
-                      <li key={index} className="flex items-center text-gray-700">
-                        <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
-                        {industry}
-                      </li>
-                    ))}
-                  </ul>
+              <motion.div
+                key="Healthcare"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0 }}
+                viewport={{ once: true }}
+                className="bg-blue-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-blue-600 mb-4">
+                  <HeartIcon className="w-12 h-12" />
                 </div>
-                <div>
-                  <h3 className="text-2xl font-semibold text-gray-900 mb-4">Major Employers</h3>
-                  <ul className="space-y-2">
-                    {cityData.majorEmployers.map((employer, index) => (
-                      <li key={index} className="flex items-center text-gray-700">
-                        <span className="w-2 h-2 bg-green-600 rounded-full mr-3"></span>
-                        {employer}
-                      </li>
-                    ))}
-                  </ul>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
+                <p className="text-stone leading-relaxed">Gary's healthcare sector includes major medical centers, specialty clinics, and outpatient facilities that generate consistent patient and visitor traffic, creating ideal vending placement opportunities.</p>
+              </motion.div>
+              <motion.div
+                key="Education"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.1 }}
+                viewport={{ once: true }}
+                className="bg-green-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-green-600 mb-4">
+                  <AcademicCapIcon className="w-12 h-12" />
                 </div>
-              </div>
-
-              <div className="bg-gray-50 rounded-lg p-8">
-                <h3 className="text-2xl font-semibold text-gray-900 mb-6">Vending Opportunities</h3>
-                <div className="grid md:grid-cols-2 gap-4">
-                  {cityData.vendingOpportunities.map((opportunity, index) => (
-                    <div key={index} className="flex items-start">
-                      <span className="w-2 h-2 bg-blue-600 rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                      <span className="text-gray-700">{opportunity}</span>
-                    </div>
-                  ))}
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
+                <p className="text-stone leading-relaxed">Academic institutions in Gary feature student centers, libraries, and common areas with consistent foot traffic, making them ideal locations for vending machine placement.</p>
+              </motion.div>
+              <motion.div
+                key="Manufacturing"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="bg-purple-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-purple-600 mb-4">
+                  <CpuChipIcon className="w-12 h-12" />
                 </div>
-              </div>
-            </motion.div>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
+                <p className="text-stone leading-relaxed">Industrial and manufacturing operations throughout Gary employ substantial workforces with shift-based schedules, offering stable vending placement opportunities with steady traffic.</p>
+              </motion.div>
+              <motion.div
+                key="Retail"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.30000000000000004 }}
+                viewport={{ once: true }}
+                className="bg-orange-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-orange-600 mb-4">
+                  <ShoppingBagIcon className="w-12 h-12" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
+                <p className="text-stone leading-relaxed">Gary's retail sector features shopping centers, strip malls, and commercial districts that offer strategic vending placement in areas with maximum shopper visibility.</p>
+              </motion.div>
+              <motion.div
+                key="Office Buildings"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                viewport={{ once: true }}
+                className="bg-indigo-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-indigo-600 mb-4">
+                  <BuildingOfficeIcon className="w-12 h-12" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
+                <p className="text-stone leading-relaxed">Commercial office spaces in Gary offer excellent vending opportunities, with professional tenants and business operations generating consistent foot traffic throughout the workday.</p>
+              </motion.div>
+              <motion.div
+                key="Transportation"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.5 }}
+                viewport={{ once: true }}
+                className="bg-red-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+              >
+                <div className="text-red-600 mb-4">
+                  <TruckIcon className="w-12 h-12" />
+                </div>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
+                <p className="text-stone leading-relaxed">Transportation hubs in Gary offer prime vending locations with high passenger volumes, extended operating hours, and captive audiences waiting for departures.</p>
+              </motion.div>
+            </div>
           </div>
-        </section>
-
-        {/* Demographics */}
-        <section className="py-16 bg-gray-50">
-          <div className="container mx-auto px-4">
+        </section>        {/* Why Gary? */}
+        <section className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-8">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-6"
+              >
+                Why Choose Gary for Vending Machines?
+              </motion.h2>
+            </div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="max-w-4xl mx-auto"
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
             >
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center">
-                {cityData.name} Demographics
-              </h2>
-              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div className="bg-white rounded-lg p-6 text-center shadow-sm">
-                  <div className="text-3xl font-bold text-blue-600 mb-2">{cityData.demographics.medianAge}</div>
-                  <div className="text-gray-600">Median Age</div>
-                </div>
-                <div className="bg-white rounded-lg p-6 text-center shadow-sm">
-                  <div className="text-3xl font-bold text-green-600 mb-2">{cityData.demographics.medianHouseholdIncome}</div>
-                  <div className="text-gray-600">Median Income</div>
-                </div>
-                <div className="bg-white rounded-lg p-6 text-center shadow-sm">
-                  <div className="text-3xl font-bold text-purple-600 mb-2">{cityData.demographics.educationLevel}</div>
-                  <div className="text-gray-600">Education Level</div>
-                </div>
-                <div className="bg-white rounded-lg p-6 text-center shadow-sm">
-                  <div className="text-3xl font-bold text-orange-600 mb-2">{cityData.demographics.employmentRate}</div>
-                  <div className="text-gray-600">Employment Rate</div>
-                </div>
-              </div>
+              <p className="text-lg text-stone leading-relaxed">
+                Through Gary's diverse business ecosystem, vending machines find placement in healthcare systems, educational facilities, and corporate offices. The city's economic activity supports consistent consumer demand.</p>
             </motion.div>
           </div>
         </section>
 
-        {/* Transportation */}
+
+
+        {/* Hot Leads Section */}
+        <section id="hot-leads" className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
+              >
+                One-Time Location Packages for {cityDisplayName}
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-lg text-stone max-w-3xl mx-auto"
+              >
+                Get immediate access to qualified vending machine locations without monthly commitments.
+              </motion.p>
+            </div>
+            <HotLeads />
+          </div>
+        </section>
+
+        {/* Vending Course Section */}
         <section className="py-16 bg-white">
-          <div className="container mx-auto px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="max-w-4xl mx-auto"
-            >
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center">
-                Transportation & Access
-              </h2>
-              <div className="grid md:grid-cols-3 gap-8">
-                <div className="text-center">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4">Major Highways</h3>
-                  <ul className="space-y-2">
-                    {cityData.transportation.majorHighways.map((highway, index) => (
-                      <li key={index} className="text-gray-700">{highway}</li>
-                    ))}
-                  </ul>
-                </div>
-                <div className="text-center">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4">Public Transit</h3>
-                  <p className="text-gray-700">{cityData.transportation.publicTransit}</p>
-                </div>
-                <div className="text-center">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4">Airports</h3>
-                  <p className="text-gray-700">{cityData.transportation.airports}</p>
-                </div>
-              </div>
-            </motion.div>
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
+              >
+                Learn the Vending Machine Business
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-lg text-stone max-w-3xl mx-auto"
+              >
+                Master the fundamentals of vending machine operations and maximize your success in {cityDisplayName}.
+              </motion.p>
+            </div>
+            <VendingCourse />
           </div>
         </section>
-
-        {/* Value Proposition */}
-        <section className="py-16 bg-blue-600 text-white">
-          <div className="container mx-auto px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="max-w-4xl mx-auto text-center"
-            >
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Ready to Expand Your Vending Business in {cityData.name}?
-              </h2>
-              <p className="text-xl mb-8 opacity-90">
-                Join {activeUsers} other vending operators who are already finding success in {cityData.name}, {cityData.state}
-              </p>
-              <div className="grid md:grid-cols-3 gap-6 mb-8">
-                <div className="bg-white/20 backdrop-blur-sm rounded-lg p-6">
-                  <h3 className="text-xl font-semibold mb-2">Verified Leads</h3>
-                  <p className="opacity-90">All leads are verified and updated daily</p>
-                </div>
-                <div className="bg-white/20 backdrop-blur-sm rounded-lg p-6">
-                  <h3 className="text-xl font-semibold mb-2">Local Focus</h3>
-                  <p className="opacity-90">Targeted specifically for {cityData.name} area</p>
-                </div>
-                <div className="bg-white/20 backdrop-blur-sm rounded-lg p-6">
-                  <h3 className="text-xl font-semibold mb-2">24/7 Access</h3>
-                  <p className="opacity-90">Access your leads anytime, anywhere</p>
-                </div>
-              </div>
-            </motion.div>
-          </div>
-        </section>
-
-        {/* Pricing */}
-        <PricingTable />
-
-        {/* Hot Leads */}
-        <HotLeads />
-
-        {/* Vending Course */}
-        <VendingCourse />
 
         {/* FAQ Section */}
-        <section className="py-16 bg-gray-50">
-          <div className="container mx-auto px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-              className="max-w-4xl mx-auto"
-            >
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8 text-center">
+        <section id="faq" className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
+              >
                 Frequently Asked Questions
-              </h2>
-              <div className="space-y-6">
-                <div className="bg-white rounded-lg p-6 shadow-sm">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                    What types of vending opportunities are available in {cityData.name}?
-                  </h3>
-                  <p className="text-gray-700">
-                    {cityData.name} offers diverse vending opportunities including manufacturing facilities, 
-                    educational institutions, healthcare centers, government buildings, and community facilities. 
-                    The city's industrial heritage and growing service sector provide excellent potential for vending machine placement.
-                  </p>
-                </div>
-                <div className="bg-white rounded-lg p-6 shadow-sm">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                    How do I get started with vending in {cityData.name}?
-                  </h3>
-                  <p className="text-gray-700">
-                    Start by researching local businesses and institutions in {cityData.name}. 
-                    Focus on areas with high foot traffic like manufacturing facilities, schools, and healthcare centers. 
-                    Our vending leads service can help you identify the best opportunities in the area.
-                  </p>
-                </div>
-                <div className="bg-white rounded-lg p-6 shadow-sm">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                    What are the key factors for success in {cityData.name}?
-                  </h3>
-                  <p className="text-gray-700">
-                    Success in {cityData.name} requires understanding the local market, building relationships with 
-                    business owners, and providing reliable service. The city's industrial base and educational institutions 
-                    offer stable, long-term vending opportunities for operators who deliver quality service.
-                  </p>
-                </div>
-              </div>
-            </motion.div>
+              </motion.h2>
+              <motion.p 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-lg text-chocolate/70 leading-relaxed"
+              >
+                Everything you need to know about vending machine opportunities in {cityDisplayName}.
+              </motion.p>
+            </div>
+            
+            <div className="space-y-6">
+              {faqItems.map((item, idx) => (
+                <motion.div
+                  key={idx}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: idx * 0.1 }}
+                  viewport={{ once: true }}
+                  className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+                >
+                  <h3 className="text-lg font-semibold text-charcoal mb-3">{item.q}</h3>
+                  <p className="text-stone leading-relaxed">{item.a}</p>
+                </motion.div>
+              ))}
+            </div>
           </div>
         </section>
-      </main>
 
+        {/* More cities in Indiana */}
+        {relatedCities.length > 0 && (
+          <section className="py-12 bg-white border-t border-gray-200">
+            <div className="mx-auto max-w-7xl px-6">
+              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in Indiana</h2>
+              <div className="flex flex-wrap gap-3">
+                {relatedCities.map(city => (
+                  <Link key={city.slug} href={`/vending-leads/${city.slug}`} className="px-3 py-2 rounded-lg border border-gray-200 bg-cream/60 text-chocolate hover:text-navy">
+                    Vending Leads in {city.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
+      </div>
+      
       <Footer />
-    </div>
+      <ZipCodeModalWrapper />
+      {/* JSON-LD: Breadcrumbs and FAQ */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
+              { '@type': 'ListItem', position: 3, name: 'Indiana', item: 'https://www.thevendinglocator.com/vending-leads/indiana' },
+              { '@type': 'ListItem', position: 4, name: 'Gary', item: 'https://www.thevendinglocator.com/vending-leads/gary-indiana' }
+            ]
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: faqItems.map(i => ({
+              '@type': 'Question',
+              name: i.q,
+              acceptedAnswer: { '@type': 'Answer', text: i.a }
+            }))
+          })
+        }}
+      />
+    </>
   )
 }

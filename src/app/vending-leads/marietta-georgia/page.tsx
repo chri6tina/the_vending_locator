@@ -2,52 +2,41 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  title: "Vending Machine Locations in Marietta, Georgia - Find Qualified Businesses",
-  description: "Get pre-qualified vending machine locations in Marietta, Georgia's diverse business community. Access verified businesses with detailed contact information and placement opportunities.",
-  keywords: "vending machine locations Marietta Georgia, vending leads Marietta, vending opportunities Marietta GA, vending business Marietta",
-  alternates: {
-    canonical: "https://www.thevendinglocator.com/vending-leads/marietta-georgia"
+  "title": "Vending Machine Leads in Marietta, Georgia - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Marietta, Georgia. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Marietta Georgia, vending leads Marietta Georgia, vending locations Marietta Georgia, vending opportunities Marietta Georgia",
+  "alternates": {
+    "canonical": "https://www.thevendinglocator.com/vending-leads/marietta-georgia"
   },
-  openGraph: {
-    title: "Vending Machine Locations in Marietta, Georgia - Find Qualified Businesses",
-    description: "Get pre-qualified vending machine locations in Marietta, Georgia's diverse business community. Access verified businesses with detailed contact information and placement opportunities.",
-    url: "https://www.thevendinglocator.com/vending-leads/marietta-georgia",
-    siteName: "The Vending Locator",
-    images: [
-      {
-        url: "https://www.thevendinglocator.com/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Vending Machine Locations in Marietta, Georgia"
-      }
-    ],
-    locale: "en_US",
-    type: "website"
+  "openGraph": {
+    "title": "Vending Machine Leads in Marietta, Georgia - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Marietta, Georgia. Find qualified businesses for vending machine placement.",
+    "url": "https://www.thevendinglocator.com/vending-leads/marietta-georgia",
+    "siteName": "The Vending Locator",
+    "type": "website"
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "Vending Machine Locations in Marietta, Georgia - Find Qualified Businesses",
-    description: "Get pre-qualified vending machine locations in Marietta, Georgia's diverse business community. Access verified businesses with detailed contact information and placement opportunities.",
-    images: ["https://www.thevendinglocator.com/og-image.jpg"]
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Vending Machine Leads in Marietta, Georgia - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Marietta, Georgia. Find qualified businesses for vending machine placement."
   },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1
+  "robots": {
+    "index": true,
+    "follow": true,
+    "googleBot": {
+      "index": true,
+      "follow": true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1
     }
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;
 
-export default function Page() {
+export default function CityPage() {
   return <PageClient />
 }

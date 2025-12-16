@@ -180,8 +180,7 @@ export default function LongmontColoradoVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Get comprehensive vending leads for Longmont's thriving Colorado market, combining local businesses, healthcare systems, and educational facilities for reliable vending machine placement.
-              </motion.p>
+                Get access to curated vending leads in Longmont, Colorado, including manufacturing facilities, corporate offices, and community centers.</motion.p>
 
               {/* Trust Signals */}
               <motion.div 
@@ -332,7 +331,7 @@ export default function LongmontColoradoVendingLeadsPage() {
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Longmont's healthcare sector includes major hospitals, specialty clinics, and medical offices that generate consistent visitor and employee traffic, ideal for vending machine placement.</p>
+                <p className="text-stone leading-relaxed">Medical facilities throughout Longmont serve large patient populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services in waiting areas and break rooms.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -360,7 +359,7 @@ export default function LongmontColoradoVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Industrial and manufacturing operations throughout Longmont employ substantial workforces with shift-based schedules, offering stable vending placement opportunities with steady traffic.</p>
+                <p className="text-stone leading-relaxed">Manufacturing facilities in Longmont provide excellent vending locations with large employee bases, multiple shifts, and break areas that generate consistent sales throughout the day.</p>
               </motion.div>
               <motion.div
                 key="Retail"
@@ -388,7 +387,7 @@ export default function LongmontColoradoVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Commercial office spaces in Longmont offer excellent vending opportunities, with professional tenants and business operations generating consistent foot traffic throughout the workday.</p>
+                <p className="text-stone leading-relaxed">Office complexes in Longmont provide ideal vending locations with multiple tenants, high employee counts, and break areas that ensure steady machine usage during business hours.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -402,7 +401,7 @@ export default function LongmontColoradoVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Airports, bus stations, and transit centers throughout Longmont generate steady passenger traffic, providing excellent vending placement options in high-traffic areas frequented by travelers.</p>
+                <p className="text-stone leading-relaxed">Transit facilities throughout Longmont provide excellent vending opportunities in terminals, waiting areas, and high-traffic zones with consistent traveler foot traffic.</p>
               </motion.div>
             </div>
           </div>
@@ -428,8 +427,7 @@ export default function LongmontColoradoVendingLeadsPage() {
               className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
             >
               <p className="text-lg text-stone leading-relaxed">
-                Longmont offers reliable vending opportunities through its thriving business community, featuring diverse industries, commercial centers, and growing economic sectors. The city's business mix provides stable placement locations with consistent traffic patterns, while Longmont's economic activity supports steady consumer spending. The city's combination of established businesses and emerging sectors creates multiple vending placement strategies.
-              </p>
+                With its thriving commercial districts and diverse business landscape, Longmont offers multiple vending placement strategies. The city's combination of office complexes, retail centers, and community facilities ensures steady customer traffic.</p>
             </motion.div>
           </div>
         </section>

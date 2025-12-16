@@ -139,8 +139,7 @@ export default function CentralFallsRhodeIslandVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Discover pre-qualified vending opportunities in Central Falls Rhode's growing economy, featuring business districts, commercial centers, and community facilities with consistent foot traffic.
-              </motion.p>
+                Explore vending machine placement opportunities in Central Falls Rhode, Island, with locations verified for optimal foot traffic and revenue potential.</motion.p>
 
               {/* Trust Signals */}
               <motion.div 
@@ -288,7 +287,7 @@ export default function CentralFallsRhodeIslandVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Medical centers and healthcare facilities throughout Central Falls Rhode offer excellent vending placement opportunities, with high-traffic areas including waiting rooms, cafeterias, and employee break areas.</p>
+                <p className="text-stone leading-relaxed">Central Falls Rhode's healthcare sector includes major medical centers, specialty clinics, and outpatient facilities that generate consistent patient and visitor traffic, creating ideal vending placement opportunities.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -302,7 +301,7 @@ export default function CentralFallsRhodeIslandVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Central Falls Rhode's education sector features schools, universities, and training facilities with captive audiences during academic hours, creating reliable vending machine placement opportunities.</p>
+                <p className="text-stone leading-relaxed">Academic institutions in Central Falls Rhode feature student centers, libraries, and common areas with consistent foot traffic, making them ideal locations for vending machine placement.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -316,7 +315,7 @@ export default function CentralFallsRhodeIslandVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Manufacturing facilities in Central Falls Rhode operate around the clock with significant employee populations, providing consistent vending opportunities in break rooms and common areas.</p>
+                <p className="text-stone leading-relaxed">Industrial and manufacturing operations throughout Central Falls Rhode employ substantial workforces with shift-based schedules, offering stable vending placement opportunities with steady traffic.</p>
               </motion.div>
               <motion.div
                 key="Retail"
@@ -330,7 +329,7 @@ export default function CentralFallsRhodeIslandVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Retail establishments in Central Falls Rhode attract diverse customer demographics and generate steady foot traffic, providing reliable vending opportunities across various retail environments.</p>
+                <p className="text-stone leading-relaxed">Central Falls Rhode's retail sector features shopping centers, strip malls, and commercial districts that offer strategic vending placement in areas with maximum shopper visibility.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -344,7 +343,7 @@ export default function CentralFallsRhodeIslandVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Central Falls Rhode's office sector includes business districts, corporate campuses, and professional centers with high employee concentrations, ideal for vending services in common areas and break rooms.</p>
+                <p className="text-stone leading-relaxed">Commercial office spaces in Central Falls Rhode offer excellent vending opportunities, with professional tenants and business operations generating consistent foot traffic throughout the workday.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -358,7 +357,7 @@ export default function CentralFallsRhodeIslandVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Transportation facilities in Central Falls Rhode serve travelers and commuters with consistent foot traffic throughout the day, offering reliable vending opportunities in terminals, waiting areas, and transit stations.</p>
+                <p className="text-stone leading-relaxed">Transportation hubs in Central Falls Rhode offer prime vending locations with high passenger volumes, extended operating hours, and captive audiences waiting for departures.</p>
               </motion.div>
             </div>
           </div>

@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Sterling Heights, Michigan - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Sterling Heights, Michigan. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines sterling heights michigan, vending leads sterling heights michigan, vending locations sterling heights michigan, vending opportunities sterling heights michigan",
+  "keywords": "vending machines Sterling Heights Michigan, vending leads Sterling Heights Michigan, vending locations Sterling Heights Michigan, vending opportunities Sterling Heights Michigan",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/sterling-heights-michigan"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

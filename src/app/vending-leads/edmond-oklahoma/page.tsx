@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Edmond, Oklahoma - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Edmond, Oklahoma. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines edmond oklahoma, vending leads edmond oklahoma, vending locations edmond oklahoma, vending opportunities edmond oklahoma",
+  "keywords": "vending machines Edmond Oklahoma, vending leads Edmond Oklahoma, vending locations Edmond Oklahoma, vending opportunities Edmond Oklahoma",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/edmond-oklahoma"
   },

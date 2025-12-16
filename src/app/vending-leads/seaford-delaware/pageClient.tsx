@@ -152,8 +152,7 @@ export default function SeafordDelawareVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Access verified vending machine locations across Seaford's diverse business community, where local commerce, healthcare facilities, and educational institutions create steady opportunities for vending placement.
-              </motion.p>
+                Connect with qualified vending locations in Seaford, Delaware, spanning technology companies, medical centers, and educational campuses.</motion.p>
 
               {/* Trust Signals */}
               <motion.div 
@@ -304,7 +303,7 @@ export default function SeafordDelawareVendingLeadsPage() {
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Healthcare facilities in Seaford serve large patient populations and employ significant staff numbers, providing stable vending opportunities with extended operating hours and steady foot traffic.</p>
+                <p className="text-stone leading-relaxed">Healthcare institutions in Seaford offer prime vending locations with high visitor counts, extended operating hours, and captive audiences seeking convenient snack and beverage options.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -318,7 +317,7 @@ export default function SeafordDelawareVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Educational institutions in Seaford provide consistent student and staff populations, with schools, colleges, and universities offering year-round vending opportunities across campus facilities.</p>
+                <p className="text-stone leading-relaxed">Seaford's schools, colleges, and universities create excellent vending opportunities with high student traffic, campus events, and extended hours that maximize machine usage.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -332,7 +331,7 @@ export default function SeafordDelawareVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Seaford's manufacturing sector includes industrial facilities and production plants with large employee bases working extended shifts, creating ideal conditions for vending machine placement.</p>
+                <p className="text-stone leading-relaxed">Industrial operations in Seaford feature large workforces and shift schedules that create reliable vending revenue through employee break times and shift changes.</p>
               </motion.div>
               <motion.div
                 key="Retail"
@@ -346,7 +345,7 @@ export default function SeafordDelawareVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Seaford's retail sector features shopping centers, department stores, and specialty shops with consistent customer flow, offering excellent vending machine placement options.</p>
+                <p className="text-stone leading-relaxed">Retail locations throughout Seaford provide excellent vending opportunities in malls, shopping centers, and high-traffic commercial areas with consistent customer flow.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -360,7 +359,7 @@ export default function SeafordDelawareVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Office buildings throughout Seaford feature corporate tenants, professional firms, and business services with steady daily traffic, providing reliable vending machine placement options.</p>
+                <p className="text-stone leading-relaxed">Corporate office buildings throughout Seaford feature professional workforces and business operations that create reliable vending revenue through employee break times and meetings.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -374,7 +373,7 @@ export default function SeafordDelawareVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Seaford's transportation hubs including airports, transit centers, and transportation facilities provide high-volume passenger traffic, creating exceptional vending machine placement opportunities.</p>
+                <p className="text-stone leading-relaxed">Airports, bus stations, and transit centers throughout Seaford generate steady passenger traffic, providing excellent vending placement options in high-traffic areas frequented by travelers.</p>
               </motion.div>
             </div>
           </div>

@@ -14,19 +14,19 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
 export default function WatertownNewYorkVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Watertown';
-  const stateDisplayName = 'New York';
+  const cityDisplayName = 'Watertown New';
+  const stateDisplayName = 'York';
   
   // City-specific data
   const cityData = {
-    'name': 'Watertown',
-    'state': 'New York',
-    'population': '100K-500K',
-    'businesses': '10K-50K',
-    'industries': '10-15',
-    'verifiedLocations': '200-400',
+    'name': 'Watertown New',
+    'state': 'York',
+    'population': '100K+',
+    'businesses': '8K-12K',
+    'industries': '16-20',
+    'verifiedLocations': '100-200',
     'rating': '4.7/5',
-    'description': 'Thriving business community in New York'
+    'description': 'Thriving York city with diverse business opportunities, healthcare facilities, and commercial centers'
   };
   
   // Active users counter
@@ -36,7 +36,9 @@ export default function WatertownNewYorkVendingLeadsPage() {
 
   // User names for active users counter
   const [userNames, setUserNames] = useState([
-    'Mike from Watertown', 'Sarah in Downtown', 'David in Watertown', 'Lisa in Watertown', 'Tom in Watertown', 'Jennifer in Watertown', 'Robert in Watertown', 'Amanda in Watertown', 'Chris in Watertown', 'Maria in Watertown', 'James in Watertown', 'Emily in Watertown'
+    'Mike from Watertown New', 'Sarah in Watertown New', 'David in Watertown New', 'Lisa in Watertown New',
+    'Tom in Watertown New', 'Jennifer in Watertown New', 'Robert in Watertown New', 'Amanda in Watertown New',
+    'Chris in Watertown New', 'Maria in Watertown New', 'James in Watertown New', 'Emily in Watertown New'
   ])
 
   // Active users counter effect
@@ -76,21 +78,45 @@ export default function WatertownNewYorkVendingLeadsPage() {
     return () => clearInterval(interval)
   }, [userNames.length, usedNames])
 
-  // Build related cities (for internal linking)
-  const state = states.find(s => s.slug === 'new-york');
-  const relatedCities = state ? state.cities.filter(c => c.slug !== 'watertown-new-york').slice(0, 8) : [];
+  // Build related York cities (for internal linking)
+  const coloradoState = states.find(s => s.slug === 'york');
+  const relatedCities = coloradoState ? coloradoState.cities.filter(c => c.slug !== 'watertown-new-york').slice(0, 8) : [];
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in Watertown?', a: 'Watertown offers diverse vending opportunities including healthcare facilities, educational institutions, retail locations, office buildings, and manufacturing facilities. Each location is pre-verified for optimal vending machine success.' },
-    { q: 'How quickly can I get vending machine leads for Watertown?', a: 'Our Watertown vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.' },
-    { q: 'What makes Watertown a good market for vending machines?', a: "Watertown features a thriving business community with diverse industries and strong economic activity. The city's business density and diverse demographics create ideal conditions for vending machine success." },
-    { q: 'Do you provide ongoing support for Watertown locations?', a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Watertown.' },
-    { q: 'What industries in Watertown are best for vending machines?', a: 'Healthcare, education, retail, office buildings, and manufacturing in Watertown show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.' },
-    { q: 'How do you verify the quality of Watertown vending locations?', a: 'We conduct thorough research on each Watertown location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.' },
-    { q: 'Can I get customized vending leads for specific areas of Watertown?', a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Watertown based on your preferences and target market requirements.' },
-    { q: "What's the typical ROI for vending machines in Watertown?", a: "Vending machines in Watertown typically show strong ROI due to the city's business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines." }
-  ];
+  {
+    q: 'What types of vending machine locations are available in Watertown New?',
+    a: 'Watertown New offers diverse vending opportunities including technology companies, manufacturing facilities, healthcare centers, educational institutions, retail locations, and office buildings. Each location is pre-verified for optimal vending machine success.'
+  },
+  {
+    q: 'How quickly can I get vending machine leads for Watertown New?',
+    a: 'Our Watertown New vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
+  },
+  {
+    q: 'What makes Watertown New a good market for vending machines?',
+    a: 'Watertown New features a thriving business community with diverse industries including technology, manufacturing, and retail. The city\'s business density and growing economy create ideal conditions for vending machine success.'
+  },
+  {
+    q: 'Do you provide ongoing support for Watertown New locations?',
+    a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Watertown New.'
+  },
+  {
+    q: 'What industries in Watertown New are best for vending machines?',
+    a: 'Technology companies, manufacturing facilities, healthcare centers, educational institutions, and office buildings in Watertown New show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
+  },
+  {
+    q: 'How do you verify the quality of Watertown New vending locations?',
+    a: 'We conduct thorough research on each Watertown New location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
+  },
+  {
+    q: 'Can I get customized vending leads for specific areas of Watertown New?',
+    a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Watertown New including the downtown area, industrial parks, and commercial corridors based on your preferences and target market requirements.'
+  },
+  {
+    q: 'What\'s the typical ROI for vending machines in Watertown New?',
+    a: 'Vending machines in Watertown New typically show strong ROI due to the city\'s business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+  },
+];
 
   return (
     <>
@@ -154,8 +180,7 @@ export default function WatertownNewYorkVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Explore vending machine opportunities throughout Watertown's business network, where diverse industries, commercial zones, and community spaces offer multiple placement options for vending success.
-              </motion.p>
+                Access premium vending machine leads in Watertown New, York, featuring verified locations across healthcare facilities, educational institutions, and commercial centers.</motion.p>
 
               {/* Trust Signals */}
               <motion.div 
@@ -306,7 +331,7 @@ export default function WatertownNewYorkVendingLeadsPage() {
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Watertown features modern healthcare facilities including hospitals, medical centers, and clinics with high patient and visitor traffic, creating consistent demand for vending services throughout the day.</p>
+                <p className="text-stone leading-relaxed">Healthcare institutions in Watertown New offer prime vending locations with high visitor counts, extended operating hours, and captive audiences seeking convenient snack and beverage options.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -320,7 +345,7 @@ export default function WatertownNewYorkVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Schools and educational institutions in Watertown offer excellent vending opportunities, with high-traffic areas including cafeterias, libraries, student centers, and athletic facilities.</p>
+                <p className="text-stone leading-relaxed">Watertown New's schools, colleges, and universities create excellent vending opportunities with high student traffic, campus events, and extended hours that maximize machine usage.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -334,7 +359,7 @@ export default function WatertownNewYorkVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Watertown's manufacturing sector features production facilities, warehouses, and industrial parks with large employee concentrations, ideal for vending machine services.</p>
+                <p className="text-stone leading-relaxed">Industrial operations in Watertown New feature large workforces and shift schedules that create reliable vending revenue through employee break times and shift changes.</p>
               </motion.div>
               <motion.div
                 key="Retail"
@@ -348,7 +373,7 @@ export default function WatertownNewYorkVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Retail locations throughout Watertown provide high customer traffic and diverse shopping experiences, creating multiple vending opportunities in malls, shopping centers, and retail districts.</p>
+                <p className="text-stone leading-relaxed">Retail locations throughout Watertown New provide excellent vending opportunities in malls, shopping centers, and high-traffic commercial areas with consistent customer flow.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -362,7 +387,7 @@ export default function WatertownNewYorkVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Professional office spaces in Watertown house corporate headquarters, business centers, and professional services with captive employee audiences during business hours, creating consistent vending opportunities.</p>
+                <p className="text-stone leading-relaxed">Corporate office buildings throughout Watertown New feature professional workforces and business operations that create reliable vending revenue through employee break times and meetings.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -376,11 +401,11 @@ export default function WatertownNewYorkVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Watertown's transportation infrastructure includes major transit hubs and travel facilities with year-round passenger flow, ideal for vending machine services in waiting areas and terminals.</p>
+                <p className="text-stone leading-relaxed">Airports, bus stations, and transit centers throughout Watertown New generate steady passenger traffic, providing excellent vending placement options in high-traffic areas frequented by travelers.</p>
               </motion.div>
             </div>
           </div>
-        </section>        {/* Why Watertown? */}
+        </section>        {/* Why Watertown New? */}
         <section className="py-16 bg-warm-white">
           <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-8">
@@ -391,7 +416,7 @@ export default function WatertownNewYorkVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-6"
               >
-                Why Choose Watertown for Vending Machines?
+                Why Choose Watertown New for Vending Machines?
               </motion.h2>
             </div>
             <motion.div
@@ -402,8 +427,7 @@ export default function WatertownNewYorkVendingLeadsPage() {
               className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
             >
               <p className="text-lg text-stone leading-relaxed">
-                Watertown offers reliable vending opportunities through its thriving business community, featuring diverse industries, commercial centers, and growing economic sectors. The city's business mix provides stable placement locations with consistent traffic patterns, while Watertown's economic activity supports steady consumer spending. The city's combination of established businesses and emerging sectors creates multiple vending placement strategies.
-              </p>
+                Watertown New presents strong vending potential with its mix of established businesses, growing commercial sectors, and steady employment base. The city's diverse economy supports consistent consumer spending, while strategic location placement maximizes machine visibility and usage.</p>
             </motion.div>
           </div>
         </section>
@@ -506,11 +530,11 @@ export default function WatertownNewYorkVendingLeadsPage() {
           </div>
         </section>
 
-        {/* More cities in state */}
+        {/* More cities in York */}
         {relatedCities.length > 0 && (
           <section className="py-12 bg-white border-t border-gray-200">
             <div className="mx-auto max-w-7xl px-6">
-              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in {stateDisplayName}</h2>
+              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in York</h2>
               <div className="flex flex-wrap gap-3">
                 {relatedCities.map(city => (
                   <Link key={city.slug} href={`/vending-leads/${city.slug}`} className="px-3 py-2 rounded-lg border border-gray-200 bg-cream/60 text-chocolate hover:text-navy">
@@ -536,8 +560,8 @@ export default function WatertownNewYorkVendingLeadsPage() {
             itemListElement: [
               { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
               { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'New York', item: 'https://www.thevendinglocator.com/vending-leads/new-york' },
-              { '@type': 'ListItem', position: 4, name: 'Watertown', item: 'https://www.thevendinglocator.com/vending-leads/watertown-new-york' }
+              { '@type': 'ListItem', position: 3, name: 'York', item: 'https://www.thevendinglocator.com/vending-leads/york' },
+              { '@type': 'ListItem', position: 4, name: 'Watertown New', item: 'https://www.thevendinglocator.com/vending-leads/watertown-new-york' }
             ]
           })
         }}

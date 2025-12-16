@@ -152,8 +152,7 @@ export default function DoverNewHampshireVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Access verified vending machine locations across Dover's diverse business community, where local commerce, healthcare facilities, and educational institutions create steady opportunities for vending placement.
-              </motion.p>
+                Get access to curated vending leads in Dover, New Hampshire, including manufacturing facilities, corporate offices, and community centers.</motion.p>
 
               {/* Trust Signals */}
               <motion.div 
@@ -304,7 +303,7 @@ export default function DoverNewHampshireVendingLeadsPage() {
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Healthcare facilities in Dover serve large patient populations and employ significant staff numbers, providing stable vending opportunities with extended operating hours and steady foot traffic.</p>
+                <p className="text-stone leading-relaxed">Medical facilities throughout Dover serve large patient populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services in waiting areas and break rooms.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -318,7 +317,7 @@ export default function DoverNewHampshireVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Educational institutions in Dover provide consistent student and staff populations, with schools, colleges, and universities offering year-round vending opportunities across campus facilities.</p>
+                <p className="text-stone leading-relaxed">Educational facilities throughout Dover serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -332,7 +331,7 @@ export default function DoverNewHampshireVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Dover's manufacturing sector includes industrial facilities and production plants with large employee bases working extended shifts, creating ideal conditions for vending machine placement.</p>
+                <p className="text-stone leading-relaxed">Manufacturing facilities in Dover provide excellent vending locations with large employee bases, multiple shifts, and break areas that generate consistent sales throughout the day.</p>
               </motion.div>
               <motion.div
                 key="Retail"
@@ -346,7 +345,7 @@ export default function DoverNewHampshireVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Dover's retail sector features shopping centers, department stores, and specialty shops with consistent customer flow, offering excellent vending machine placement options.</p>
+                <p className="text-stone leading-relaxed">Shopping centers and retail districts in Dover offer prime vending locations, with high-traffic areas including food courts, entrances, and common spaces frequented by shoppers.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -360,7 +359,7 @@ export default function DoverNewHampshireVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Office buildings throughout Dover feature corporate tenants, professional firms, and business services with steady daily traffic, providing reliable vending machine placement options.</p>
+                <p className="text-stone leading-relaxed">Office complexes in Dover provide ideal vending locations with multiple tenants, high employee counts, and break areas that ensure steady machine usage during business hours.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -374,7 +373,7 @@ export default function DoverNewHampshireVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Dover's transportation hubs including airports, transit centers, and transportation facilities provide high-volume passenger traffic, creating exceptional vending machine placement opportunities.</p>
+                <p className="text-stone leading-relaxed">Transit facilities throughout Dover provide excellent vending opportunities in terminals, waiting areas, and high-traffic zones with consistent traveler foot traffic.</p>
               </motion.div>
             </div>
           </div>
@@ -400,8 +399,7 @@ export default function DoverNewHampshireVendingLeadsPage() {
               className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
             >
               <p className="text-lg text-stone leading-relaxed">
-                Dover offers reliable vending opportunities through its thriving business community, featuring diverse industries, commercial centers, and growing economic sectors. The city's business mix provides stable placement locations with consistent traffic patterns, while Dover's economic activity supports steady consumer spending. The city's combination of established businesses and emerging sectors creates multiple vending placement strategies.
-              </p>
+                With its thriving commercial districts and diverse business landscape, Dover offers multiple vending placement strategies. The city's combination of office complexes, retail centers, and community facilities ensures steady customer traffic.</p>
             </motion.div>
           </div>
         </section>

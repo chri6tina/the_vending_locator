@@ -180,8 +180,7 @@ export default function GreatBendKansasVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Get comprehensive vending leads for Great Bend's thriving Kansas market, combining local businesses, healthcare systems, and educational facilities for reliable vending machine placement.
-              </motion.p>
+                Discover high-quality vending opportunities in Great Bend, Kansas, with pre-qualified locations in office buildings, retail spaces, and transportation hubs.</motion.p>
 
               {/* Trust Signals */}
               <motion.div 
@@ -332,7 +331,7 @@ export default function GreatBendKansasVendingLeadsPage() {
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Great Bend's healthcare sector includes major hospitals, specialty clinics, and medical offices that generate consistent visitor and employee traffic, ideal for vending machine placement.</p>
+                <p className="text-stone leading-relaxed">Medical facilities throughout Great Bend serve large patient populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services in waiting areas and break rooms.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -360,7 +359,7 @@ export default function GreatBendKansasVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Industrial and manufacturing operations throughout Great Bend employ substantial workforces with shift-based schedules, offering stable vending placement opportunities with steady traffic.</p>
+                <p className="text-stone leading-relaxed">Manufacturing facilities in Great Bend provide excellent vending locations with large employee bases, multiple shifts, and break areas that generate consistent sales throughout the day.</p>
               </motion.div>
               <motion.div
                 key="Retail"
@@ -388,7 +387,7 @@ export default function GreatBendKansasVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Commercial office spaces in Great Bend offer excellent vending opportunities, with professional tenants and business operations generating consistent foot traffic throughout the workday.</p>
+                <p className="text-stone leading-relaxed">Office complexes in Great Bend provide ideal vending locations with multiple tenants, high employee counts, and break areas that ensure steady machine usage during business hours.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -402,7 +401,7 @@ export default function GreatBendKansasVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Airports, bus stations, and transit centers throughout Great Bend generate steady passenger traffic, providing excellent vending placement options in high-traffic areas frequented by travelers.</p>
+                <p className="text-stone leading-relaxed">Transit facilities throughout Great Bend provide excellent vending opportunities in terminals, waiting areas, and high-traffic zones with consistent traveler foot traffic.</p>
               </motion.div>
             </div>
           </div>
@@ -428,8 +427,7 @@ export default function GreatBendKansasVendingLeadsPage() {
               className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
             >
               <p className="text-lg text-stone leading-relaxed">
-                Great Bend offers reliable vending opportunities through its thriving business community, featuring diverse industries, commercial centers, and growing economic sectors. The city's business mix provides stable placement locations with consistent traffic patterns, while Great Bend's economic activity supports steady consumer spending. The city's combination of established businesses and emerging sectors creates multiple vending placement strategies.
-              </p>
+                The Great Bend market offers excellent vending opportunities through its combination of corporate headquarters, healthcare networks, and educational institutions. High foot traffic areas and captive audiences create ideal conditions for vending success.</p>
             </motion.div>
           </div>
         </section>

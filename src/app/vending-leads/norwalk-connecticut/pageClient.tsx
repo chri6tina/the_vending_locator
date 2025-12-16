@@ -19,16 +19,15 @@ export default function NorwalkConnecticutVendingLeadsPage() {
   
   // City-specific data
   const cityData = {
-  name: 'Norwalk',
-  state: 'Connecticut',
-  population: '91,184',
-  businesses: '5,800+',
-  industries: '5',
-  verifiedLocations: '100-150',
-  rating: '4.8/5',
-  description: 'Coastal city with corporate headquarters and manufacturing',
-  majorEmployers: ['Norwalk Hospital', 'Xerox', 'Priceline.com', 'Norwalk Public Schools', 'Pepperidge Farm']
-};
+    'name': 'Norwalk',
+    'state': 'Connecticut',
+    'population': '100K+',
+    'businesses': '12K-20K',
+    'industries': '12-16',
+    'verifiedLocations': '300-500',
+    'rating': '4.7/5',
+    'description': 'Thriving Connecticut city with diverse business opportunities, healthcare facilities, and commercial centers'
+  };
   
   // Active users counter
   const [activeUsers, setActiveUsers] = useState(25)
@@ -79,21 +78,45 @@ export default function NorwalkConnecticutVendingLeadsPage() {
     return () => clearInterval(interval)
   }, [userNames.length, usedNames])
 
-  // Build related state cities (for internal linking)
-  const currentState = states.find(s => s.slug === 'connecticut')
-  const relatedCities = currentState ? currentState.cities.filter(c => c.slug !== 'norwalk-connecticut').slice(0, 8) : [];
+  // Build related Connecticut cities (for internal linking)
+  const coloradoState = states.find(s => s.slug === 'connecticut');
+  const relatedCities = coloradoState ? coloradoState.cities.filter(c => c.slug !== 'norwalk-connecticut').slice(0, 8) : [];
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: "What types of vending machine locations are available in Norwalk?", a: "Norwalk provides vending opportunities in healthcare facilities, educational institutions, retail centers, office buildings, and manufacturing facilities serving the local market." },
-    { q: "How quickly can I get vending machine leads for Norwalk?", a: "Our Norwalk vending leads are delivered within 3-5 business days with detailed information about each verified business and placement opportunity." },
-    { q: "What makes Norwalk a good market for vending machines?", a: "Norwalk features a strong business community with diverse industries and consistent foot traffic. The city's economic activity creates ideal conditions for vending machine success." },
-    { q: "Do you provide ongoing support for Norwalk locations?", a: "Yes, we provide comprehensive support including location research, business verification, contact information, and market-specific placement strategies for Norwalk." },
-    { q: "What industries in Norwalk are best for vending machines?", a: "Healthcare, education, manufacturing, retail, and office buildings in Norwalk show strong vending potential with reliable traffic and captive audiences." },
-    { q: "How do you verify the quality of Norwalk vending locations?", a: "We conduct thorough verification including business validation, employee assessment, facility research, and local market analysis for each Norwalk location." },
-    { q: "Can I get customized vending leads for specific areas of Norwalk?", a: "Absolutely! We can focus on specific neighborhoods, business districts, or industrial areas within Norwalk based on your target market." },
-    { q: "What's the typical ROI for vending machines in Norwalk?", a: "Machines in Norwalk typically see ROI within 12-18 months, with healthcare and educational facilities often providing the most consistent returns." }
-  ];
+  {
+    q: 'What types of vending machine locations are available in Norwalk?',
+    a: 'Norwalk offers diverse vending opportunities including technology companies, manufacturing facilities, healthcare centers, educational institutions, retail locations, and office buildings. Each location is pre-verified for optimal vending machine success.'
+  },
+  {
+    q: 'How quickly can I get vending machine leads for Norwalk?',
+    a: 'Our Norwalk vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
+  },
+  {
+    q: 'What makes Norwalk a good market for vending machines?',
+    a: 'Norwalk features a thriving business community with diverse industries including technology, manufacturing, and retail. The city\'s business density and growing economy create ideal conditions for vending machine success.'
+  },
+  {
+    q: 'Do you provide ongoing support for Norwalk locations?',
+    a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Norwalk.'
+  },
+  {
+    q: 'What industries in Norwalk are best for vending machines?',
+    a: 'Technology companies, manufacturing facilities, healthcare centers, educational institutions, and office buildings in Norwalk show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
+  },
+  {
+    q: 'How do you verify the quality of Norwalk vending locations?',
+    a: 'We conduct thorough research on each Norwalk location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
+  },
+  {
+    q: 'Can I get customized vending leads for specific areas of Norwalk?',
+    a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Norwalk including the downtown area, industrial parks, and commercial corridors based on your preferences and target market requirements.'
+  },
+  {
+    q: 'What\'s the typical ROI for vending machines in Norwalk?',
+    a: 'Vending machines in Norwalk typically show strong ROI due to the city\'s business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+  },
+];
 
   return (
     <>
@@ -157,8 +180,7 @@ export default function NorwalkConnecticutVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Get comprehensive vending leads for Norwalk's thriving Connecticut market, combining local businesses, healthcare systems, and educational facilities for reliable vending machine placement.
-              </motion.p>
+                Discover high-quality vending opportunities in Norwalk, Connecticut, with pre-qualified locations in office buildings, retail spaces, and transportation hubs.</motion.p>
 
               {/* Trust Signals */}
               <motion.div 
@@ -201,19 +223,20 @@ export default function NorwalkConnecticutVendingLeadsPage() {
                 className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 mb-8"
               >
                 <button 
-                  onClick={() => {
-                    const pricingSection = document.getElementById('pricing')
-                    if (pricingSection) {
-                      pricingSection.scrollIntoView({ behavior: 'smooth' })
-                    }
-                  }}
-                  className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
+                    onClick={() => {
+                      const pricingSection = document.getElementById('pricing')
+                      if (pricingSection) {
+                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                      }
+                    }}
+                    className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
                 >
-                  Get Started
-                </button>
+                    Get Started
+                  </button>
+
               </motion.div>
 
-              {/* Social Proof Stats */}
+{/* Social Proof Stats */}
               <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -240,6 +263,8 @@ export default function NorwalkConnecticutVendingLeadsPage() {
             </div>
           </div>
         </section>
+
+        
 
         {/* Pricing Section */}
         <section id="pricing" className="py-16 bg-warm-white">
@@ -306,7 +331,7 @@ export default function NorwalkConnecticutVendingLeadsPage() {
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Norwalk's healthcare sector includes major hospitals, specialty clinics, and medical offices that generate consistent visitor and employee traffic, ideal for vending machine placement.</p>
+                <p className="text-stone leading-relaxed">Norwalk's healthcare sector includes major medical centers, specialty clinics, and outpatient facilities that generate consistent patient and visitor traffic, creating ideal vending placement opportunities.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -320,7 +345,7 @@ export default function NorwalkConnecticutVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Educational facilities throughout Norwalk serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services.</p>
+                <p className="text-stone leading-relaxed">Academic institutions in Norwalk feature student centers, libraries, and common areas with consistent foot traffic, making them ideal locations for vending machine placement.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -340,7 +365,7 @@ export default function NorwalkConnecticutVendingLeadsPage() {
                 key="Retail"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.3 }}
+                transition={{ duration: 0.8, delay: 0.30000000000000004 }}
                 viewport={{ once: true }}
                 className="bg-orange-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
@@ -348,7 +373,7 @@ export default function NorwalkConnecticutVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Shopping centers and retail districts in Norwalk offer prime vending locations, with high-traffic areas including food courts, entrances, and common spaces frequented by shoppers.</p>
+                <p className="text-stone leading-relaxed">Norwalk's retail sector features shopping centers, strip malls, and commercial districts that offer strategic vending placement in areas with maximum shopper visibility.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -376,7 +401,7 @@ export default function NorwalkConnecticutVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Airports, bus stations, and transit centers throughout Norwalk generate steady passenger traffic, providing excellent vending placement options in high-traffic areas frequented by travelers.</p>
+                <p className="text-stone leading-relaxed">Transportation hubs in Norwalk offer prime vending locations with high passenger volumes, extended operating hours, and captive audiences waiting for departures.</p>
               </motion.div>
             </div>
           </div>
@@ -402,8 +427,7 @@ export default function NorwalkConnecticutVendingLeadsPage() {
               className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
             >
               <p className="text-lg text-stone leading-relaxed">
-                Norwalk offers reliable vending opportunities through its thriving business community, featuring diverse industries, commercial centers, and growing economic sectors. The city's business mix provides stable placement locations with consistent traffic patterns, while Norwalk's economic activity supports steady consumer spending. The city's combination of established businesses and emerging sectors creates multiple vending placement strategies.
-              </p>
+                The Norwalk market offers excellent vending opportunities through its combination of corporate headquarters, healthcare networks, and educational institutions. High foot traffic areas and captive audiences create ideal conditions for vending success.</p>
             </motion.div>
           </div>
         </section>
@@ -506,11 +530,11 @@ export default function NorwalkConnecticutVendingLeadsPage() {
           </div>
         </section>
 
-        {/* More cities in State */}
+        {/* More cities in Connecticut */}
         {relatedCities.length > 0 && (
           <section className="py-12 bg-white border-t border-gray-200">
             <div className="mx-auto max-w-7xl px-6">
-              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in {stateDisplayName}</h2>
+              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in Connecticut</h2>
               <div className="flex flex-wrap gap-3">
                 {relatedCities.map(city => (
                   <Link key={city.slug} href={`/vending-leads/${city.slug}`} className="px-3 py-2 rounded-lg border border-gray-200 bg-cream/60 text-chocolate hover:text-navy">
@@ -536,8 +560,8 @@ export default function NorwalkConnecticutVendingLeadsPage() {
             itemListElement: [
               { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
               { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'Connecticut', item: `https://www.thevendinglocator.com/vending-leads/connecticut` },
-              { '@type': 'ListItem', position: 4, name: 'Norwalk', item: `https://www.thevendinglocator.com/vending-leads/norwalk-connecticut` }
+              { '@type': 'ListItem', position: 3, name: 'Connecticut', item: 'https://www.thevendinglocator.com/vending-leads/connecticut' },
+              { '@type': 'ListItem', position: 4, name: 'Norwalk', item: 'https://www.thevendinglocator.com/vending-leads/norwalk-connecticut' }
             ]
           })
         }}

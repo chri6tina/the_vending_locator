@@ -14,19 +14,19 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
 export default function AmherstNewYorkVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Amherst';
-  const stateDisplayName = 'New York';
+  const cityDisplayName = 'Amherst New';
+  const stateDisplayName = 'York';
   
   // City-specific data
   const cityData = {
-    'name': 'Amherst',
-    'state': 'New York',
-    'population': '100K-500K',
-    'businesses': '10K-50K',
-    'industries': '10-15',
-    'verifiedLocations': '200-400',
+    'name': 'Amherst New',
+    'state': 'York',
+    'population': '500K+',
+    'businesses': '4K-6K',
+    'industries': '8-12',
+    'verifiedLocations': '400-700',
     'rating': '4.7/5',
-    'description': 'Thriving business community in New York'
+    'description': 'Thriving York city with diverse business opportunities, healthcare facilities, and commercial centers'
   };
   
   // Active users counter
@@ -36,7 +36,9 @@ export default function AmherstNewYorkVendingLeadsPage() {
 
   // User names for active users counter
   const [userNames, setUserNames] = useState([
-    'Mike from Amherst', 'Sarah in Downtown', 'David in Amherst', 'Lisa in Amherst', 'Tom in Amherst', 'Jennifer in Amherst', 'Robert in Amherst', 'Amanda in Amherst', 'Chris in Amherst', 'Maria in Amherst', 'James in Amherst', 'Emily in Amherst'
+    'Mike from Amherst New', 'Sarah in Amherst New', 'David in Amherst New', 'Lisa in Amherst New',
+    'Tom in Amherst New', 'Jennifer in Amherst New', 'Robert in Amherst New', 'Amanda in Amherst New',
+    'Chris in Amherst New', 'Maria in Amherst New', 'James in Amherst New', 'Emily in Amherst New'
   ])
 
   // Active users counter effect
@@ -76,21 +78,45 @@ export default function AmherstNewYorkVendingLeadsPage() {
     return () => clearInterval(interval)
   }, [userNames.length, usedNames])
 
-  // Build related cities (for internal linking)
-  const state = states.find(s => s.slug === 'new-york');
-  const relatedCities = state ? state.cities.filter(c => c.slug !== 'amherst-new-york').slice(0, 8) : [];
+  // Build related York cities (for internal linking)
+  const coloradoState = states.find(s => s.slug === 'york');
+  const relatedCities = coloradoState ? coloradoState.cities.filter(c => c.slug !== 'amherst-new-york').slice(0, 8) : [];
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in Amherst?', a: 'Amherst offers diverse vending opportunities including healthcare facilities, educational institutions, retail locations, office buildings, and manufacturing facilities. Each location is pre-verified for optimal vending machine success.' },
-    { q: 'How quickly can I get vending machine leads for Amherst?', a: 'Our Amherst vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.' },
-    { q: 'What makes Amherst a good market for vending machines?', a: "Amherst features a thriving business community with diverse industries and strong economic activity. The city's business density and diverse demographics create ideal conditions for vending machine success." },
-    { q: 'Do you provide ongoing support for Amherst locations?', a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Amherst.' },
-    { q: 'What industries in Amherst are best for vending machines?', a: 'Healthcare, education, retail, office buildings, and manufacturing in Amherst show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.' },
-    { q: 'How do you verify the quality of Amherst vending locations?', a: 'We conduct thorough research on each Amherst location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.' },
-    { q: 'Can I get customized vending leads for specific areas of Amherst?', a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Amherst based on your preferences and target market requirements.' },
-    { q: "What's the typical ROI for vending machines in Amherst?", a: "Vending machines in Amherst typically show strong ROI due to the city's business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines." }
-  ];
+  {
+    q: 'What types of vending machine locations are available in Amherst New?',
+    a: 'Amherst New offers diverse vending opportunities including technology companies, manufacturing facilities, healthcare centers, educational institutions, retail locations, and office buildings. Each location is pre-verified for optimal vending machine success.'
+  },
+  {
+    q: 'How quickly can I get vending machine leads for Amherst New?',
+    a: 'Our Amherst New vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
+  },
+  {
+    q: 'What makes Amherst New a good market for vending machines?',
+    a: 'Amherst New features a thriving business community with diverse industries including technology, manufacturing, and retail. The city\'s business density and growing economy create ideal conditions for vending machine success.'
+  },
+  {
+    q: 'Do you provide ongoing support for Amherst New locations?',
+    a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Amherst New.'
+  },
+  {
+    q: 'What industries in Amherst New are best for vending machines?',
+    a: 'Technology companies, manufacturing facilities, healthcare centers, educational institutions, and office buildings in Amherst New show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
+  },
+  {
+    q: 'How do you verify the quality of Amherst New vending locations?',
+    a: 'We conduct thorough research on each Amherst New location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
+  },
+  {
+    q: 'Can I get customized vending leads for specific areas of Amherst New?',
+    a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Amherst New including the downtown area, industrial parks, and commercial corridors based on your preferences and target market requirements.'
+  },
+  {
+    q: 'What\'s the typical ROI for vending machines in Amherst New?',
+    a: 'Vending machines in Amherst New typically show strong ROI due to the city\'s business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+  },
+];
 
   return (
     <>
@@ -154,8 +180,7 @@ export default function AmherstNewYorkVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Access verified vending machine locations across Amherst's diverse business community, where local commerce, healthcare facilities, and educational institutions create steady opportunities for vending placement.
-              </motion.p>
+                Access targeted vending leads in Amherst New, York, covering industrial parks, shopping centers, and professional office complexes.</motion.p>
 
               {/* Trust Signals */}
               <motion.div 
@@ -306,7 +331,7 @@ export default function AmherstNewYorkVendingLeadsPage() {
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Healthcare facilities in Amherst serve large patient populations and employ significant staff numbers, providing stable vending opportunities with extended operating hours and steady foot traffic.</p>
+                <p className="text-stone leading-relaxed">Healthcare institutions in Amherst New offer prime vending locations with high visitor counts, extended operating hours, and captive audiences seeking convenient snack and beverage options.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -320,7 +345,7 @@ export default function AmherstNewYorkVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Educational institutions in Amherst provide consistent student and staff populations, with schools, colleges, and universities offering year-round vending opportunities across campus facilities.</p>
+                <p className="text-stone leading-relaxed">Amherst New's schools, colleges, and universities create excellent vending opportunities with high student traffic, campus events, and extended hours that maximize machine usage.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -334,7 +359,7 @@ export default function AmherstNewYorkVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Amherst's manufacturing sector includes industrial facilities and production plants with large employee bases working extended shifts, creating ideal conditions for vending machine placement.</p>
+                <p className="text-stone leading-relaxed">Industrial operations in Amherst New feature large workforces and shift schedules that create reliable vending revenue through employee break times and shift changes.</p>
               </motion.div>
               <motion.div
                 key="Retail"
@@ -348,7 +373,7 @@ export default function AmherstNewYorkVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Amherst's retail sector features shopping centers, department stores, and specialty shops with consistent customer flow, offering excellent vending machine placement options.</p>
+                <p className="text-stone leading-relaxed">Retail locations throughout Amherst New provide excellent vending opportunities in malls, shopping centers, and high-traffic commercial areas with consistent customer flow.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -362,7 +387,7 @@ export default function AmherstNewYorkVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Office buildings throughout Amherst feature corporate tenants, professional firms, and business services with steady daily traffic, providing reliable vending machine placement options.</p>
+                <p className="text-stone leading-relaxed">Corporate office buildings throughout Amherst New feature professional workforces and business operations that create reliable vending revenue through employee break times and meetings.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -376,11 +401,11 @@ export default function AmherstNewYorkVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Amherst's transportation hubs including airports, transit centers, and transportation facilities provide high-volume passenger traffic, creating exceptional vending machine placement opportunities.</p>
+                <p className="text-stone leading-relaxed">Airports, bus stations, and transit centers throughout Amherst New generate steady passenger traffic, providing excellent vending placement options in high-traffic areas frequented by travelers.</p>
               </motion.div>
             </div>
           </div>
-        </section>        {/* Why Amherst? */}
+        </section>        {/* Why Amherst New? */}
         <section className="py-16 bg-warm-white">
           <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-8">
@@ -391,7 +416,7 @@ export default function AmherstNewYorkVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-6"
               >
-                Why Choose Amherst for Vending Machines?
+                Why Choose Amherst New for Vending Machines?
               </motion.h2>
             </div>
             <motion.div
@@ -402,8 +427,7 @@ export default function AmherstNewYorkVendingLeadsPage() {
               className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
             >
               <p className="text-lg text-stone leading-relaxed">
-                The Amherst market presents excellent vending potential through its combination of local businesses, healthcare systems, educational facilities, and commercial districts. The city's diverse economy ensures multiple traffic sources, while Amherst's business density creates numerous placement options. The city's economic growth and business-friendly environment support long-term vending success with steady consumer demand.
-              </p>
+                Through Amherst New's diverse business ecosystem, vending machines find placement in healthcare systems, educational facilities, and corporate offices. The city's economic activity supports consistent consumer demand.</p>
             </motion.div>
           </div>
         </section>
@@ -506,11 +530,11 @@ export default function AmherstNewYorkVendingLeadsPage() {
           </div>
         </section>
 
-        {/* More cities in state */}
+        {/* More cities in York */}
         {relatedCities.length > 0 && (
           <section className="py-12 bg-white border-t border-gray-200">
             <div className="mx-auto max-w-7xl px-6">
-              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in {stateDisplayName}</h2>
+              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in York</h2>
               <div className="flex flex-wrap gap-3">
                 {relatedCities.map(city => (
                   <Link key={city.slug} href={`/vending-leads/${city.slug}`} className="px-3 py-2 rounded-lg border border-gray-200 bg-cream/60 text-chocolate hover:text-navy">
@@ -536,8 +560,8 @@ export default function AmherstNewYorkVendingLeadsPage() {
             itemListElement: [
               { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
               { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'New York', item: 'https://www.thevendinglocator.com/vending-leads/new-york' },
-              { '@type': 'ListItem', position: 4, name: 'Amherst', item: 'https://www.thevendinglocator.com/vending-leads/amherst-new-york' }
+              { '@type': 'ListItem', position: 3, name: 'York', item: 'https://www.thevendinglocator.com/vending-leads/york' },
+              { '@type': 'ListItem', position: 4, name: 'Amherst New', item: 'https://www.thevendinglocator.com/vending-leads/amherst-new-york' }
             ]
           })
         }}

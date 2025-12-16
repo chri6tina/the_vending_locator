@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Oxford, Mississippi - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Oxford, Mississippi. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines oxford mississippi, vending leads oxford mississippi, vending locations oxford mississippi, vending opportunities oxford mississippi",
+  "keywords": "vending machines Oxford Mississippi, vending leads Oxford Mississippi, vending locations Oxford Mississippi, vending opportunities Oxford Mississippi",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/oxford-mississippi"
   },

@@ -21,12 +21,12 @@ export default function WinterParkFloridaVendingLeadsPage() {
   const cityData = {
     'name': 'Winter Park',
     'state': 'Florida',
-    'population': '100K-500K',
-    'businesses': '10K-50K',
-    'industries': '10-15',
-    'verifiedLocations': '200-400',
+    'population': '500K+',
+    'businesses': '6K-8K',
+    'industries': '12-16',
+    'verifiedLocations': '150-280',
     'rating': '4.7/5',
-    'description': 'Thriving business community in Florida'
+    'description': 'Thriving Florida city with diverse business opportunities, healthcare facilities, and commercial centers'
   };
   
   // Active users counter
@@ -36,7 +36,9 @@ export default function WinterParkFloridaVendingLeadsPage() {
 
   // User names for active users counter
   const [userNames, setUserNames] = useState([
-    'Mike from Winter Park', 'Sarah in Downtown', 'David in Winter Park', 'Lisa in Winter Park', 'Tom in Winter Park', 'Jennifer in Winter Park', 'Robert in Winter Park', 'Amanda in Winter Park', 'Chris in Winter Park', 'Maria in Winter Park', 'James in Winter Park', 'Emily in Winter Park'
+    'Mike from Winter Park', 'Sarah in Winter Park', 'David in Winter Park', 'Lisa in Winter Park',
+    'Tom in Winter Park', 'Jennifer in Winter Park', 'Robert in Winter Park', 'Amanda in Winter Park',
+    'Chris in Winter Park', 'Maria in Winter Park', 'James in Winter Park', 'Emily in Winter Park'
   ])
 
   // Active users counter effect
@@ -76,21 +78,45 @@ export default function WinterParkFloridaVendingLeadsPage() {
     return () => clearInterval(interval)
   }, [userNames.length, usedNames])
 
-  // Build related cities (for internal linking)
-  const state = states.find(s => s.slug === 'florida');
-  const relatedCities = state ? state.cities.filter(c => c.slug !== 'winter-park-florida').slice(0, 8) : [];
+  // Build related Florida cities (for internal linking)
+  const coloradoState = states.find(s => s.slug === 'florida');
+  const relatedCities = coloradoState ? coloradoState.cities.filter(c => c.slug !== 'winter-park-florida').slice(0, 8) : [];
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in Winter Park?', a: 'Winter Park offers diverse vending opportunities including healthcare facilities, educational institutions, retail locations, office buildings, and manufacturing facilities. Each location is pre-verified for optimal vending machine success.' },
-    { q: 'How quickly can I get vending machine leads for Winter Park?', a: 'Our Winter Park vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.' },
-    { q: 'What makes Winter Park a good market for vending machines?', a: "Winter Park features a thriving business community with diverse industries and strong economic activity. The city's business density and diverse demographics create ideal conditions for vending machine success." },
-    { q: 'Do you provide ongoing support for Winter Park locations?', a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Winter Park.' },
-    { q: 'What industries in Winter Park are best for vending machines?', a: 'Healthcare, education, retail, office buildings, and manufacturing in Winter Park show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.' },
-    { q: 'How do you verify the quality of Winter Park vending locations?', a: 'We conduct thorough research on each Winter Park location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.' },
-    { q: 'Can I get customized vending leads for specific areas of Winter Park?', a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Winter Park based on your preferences and target market requirements.' },
-    { q: "What's the typical ROI for vending machines in Winter Park?", a: "Vending machines in Winter Park typically show strong ROI due to the city's business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines." }
-  ];
+  {
+    q: 'What types of vending machine locations are available in Winter Park?',
+    a: 'Winter Park offers diverse vending opportunities including technology companies, manufacturing facilities, healthcare centers, educational institutions, retail locations, and office buildings. Each location is pre-verified for optimal vending machine success.'
+  },
+  {
+    q: 'How quickly can I get vending machine leads for Winter Park?',
+    a: 'Our Winter Park vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
+  },
+  {
+    q: 'What makes Winter Park a good market for vending machines?',
+    a: 'Winter Park features a thriving business community with diverse industries including technology, manufacturing, and retail. The city\'s business density and growing economy create ideal conditions for vending machine success.'
+  },
+  {
+    q: 'Do you provide ongoing support for Winter Park locations?',
+    a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Winter Park.'
+  },
+  {
+    q: 'What industries in Winter Park are best for vending machines?',
+    a: 'Technology companies, manufacturing facilities, healthcare centers, educational institutions, and office buildings in Winter Park show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
+  },
+  {
+    q: 'How do you verify the quality of Winter Park vending locations?',
+    a: 'We conduct thorough research on each Winter Park location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
+  },
+  {
+    q: 'Can I get customized vending leads for specific areas of Winter Park?',
+    a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Winter Park including the downtown area, industrial parks, and commercial corridors based on your preferences and target market requirements.'
+  },
+  {
+    q: 'What\'s the typical ROI for vending machines in Winter Park?',
+    a: 'Vending machines in Winter Park typically show strong ROI due to the city\'s business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+  },
+];
 
   return (
     <>
@@ -154,8 +180,7 @@ export default function WinterParkFloridaVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Explore vending machine opportunities throughout Winter Park's business network, where diverse industries, commercial zones, and community spaces offer multiple placement options for vending success.
-              </motion.p>
+                Access premium vending machine leads in Winter Park, Florida, featuring verified locations across healthcare facilities, educational institutions, and commercial centers.</motion.p>
 
               {/* Trust Signals */}
               <motion.div 
@@ -306,7 +331,7 @@ export default function WinterParkFloridaVendingLeadsPage() {
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Winter Park features modern healthcare facilities including hospitals, medical centers, and clinics with high patient and visitor traffic, creating consistent demand for vending services throughout the day.</p>
+                <p className="text-stone leading-relaxed">Medical facilities throughout Winter Park serve large patient populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services in waiting areas and break rooms.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -320,7 +345,7 @@ export default function WinterParkFloridaVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Schools and educational institutions in Winter Park offer excellent vending opportunities, with high-traffic areas including cafeterias, libraries, student centers, and athletic facilities.</p>
+                <p className="text-stone leading-relaxed">Educational facilities throughout Winter Park serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -334,7 +359,7 @@ export default function WinterParkFloridaVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Winter Park's manufacturing sector features production facilities, warehouses, and industrial parks with large employee concentrations, ideal for vending machine services.</p>
+                <p className="text-stone leading-relaxed">Manufacturing facilities in Winter Park provide excellent vending locations with large employee bases, multiple shifts, and break areas that generate consistent sales throughout the day.</p>
               </motion.div>
               <motion.div
                 key="Retail"
@@ -348,7 +373,7 @@ export default function WinterParkFloridaVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Retail locations throughout Winter Park provide high customer traffic and diverse shopping experiences, creating multiple vending opportunities in malls, shopping centers, and retail districts.</p>
+                <p className="text-stone leading-relaxed">Shopping centers and retail districts in Winter Park offer prime vending locations, with high-traffic areas including food courts, entrances, and common spaces frequented by shoppers.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -362,7 +387,7 @@ export default function WinterParkFloridaVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Professional office spaces in Winter Park house corporate headquarters, business centers, and professional services with captive employee audiences during business hours, creating consistent vending opportunities.</p>
+                <p className="text-stone leading-relaxed">Office complexes in Winter Park provide ideal vending locations with multiple tenants, high employee counts, and break areas that ensure steady machine usage during business hours.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -376,7 +401,7 @@ export default function WinterParkFloridaVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Winter Park's transportation infrastructure includes major transit hubs and travel facilities with year-round passenger flow, ideal for vending machine services in waiting areas and terminals.</p>
+                <p className="text-stone leading-relaxed">Transit facilities throughout Winter Park provide excellent vending opportunities in terminals, waiting areas, and high-traffic zones with consistent traveler foot traffic.</p>
               </motion.div>
             </div>
           </div>
@@ -402,8 +427,7 @@ export default function WinterParkFloridaVendingLeadsPage() {
               className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
             >
               <p className="text-lg text-stone leading-relaxed">
-                The Winter Park market presents excellent vending potential through its combination of local businesses, healthcare systems, educational facilities, and commercial districts. The city's diverse economy ensures multiple traffic sources, while Winter Park's business density creates numerous placement options. The city's economic growth and business-friendly environment support long-term vending success with steady consumer demand.
-              </p>
+                Winter Park presents strong vending potential with its mix of established businesses, growing commercial sectors, and steady employment base. The city's diverse economy supports consistent consumer spending, while strategic location placement maximizes machine visibility and usage.</p>
             </motion.div>
           </div>
         </section>
@@ -506,11 +530,11 @@ export default function WinterParkFloridaVendingLeadsPage() {
           </div>
         </section>
 
-        {/* More cities in state */}
+        {/* More cities in Florida */}
         {relatedCities.length > 0 && (
           <section className="py-12 bg-white border-t border-gray-200">
             <div className="mx-auto max-w-7xl px-6">
-              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in {stateDisplayName}</h2>
+              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in Florida</h2>
               <div className="flex flex-wrap gap-3">
                 {relatedCities.map(city => (
                   <Link key={city.slug} href={`/vending-leads/${city.slug}`} className="px-3 py-2 rounded-lg border border-gray-200 bg-cream/60 text-chocolate hover:text-navy">

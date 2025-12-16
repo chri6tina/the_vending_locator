@@ -21,12 +21,12 @@ export default function CastleRockColoradoVendingLeadsPage() {
   const cityData = {
     'name': 'Castle Rock',
     'state': 'Colorado',
-    'population': '100K-500K',
-    'businesses': '10K-50K',
-    'industries': '10-15',
-    'verifiedLocations': '200-400',
+    'population': '50K+',
+    'businesses': '4K-6K',
+    'industries': '16-20',
+    'verifiedLocations': '400-700',
     'rating': '4.7/5',
-    'description': 'Thriving business community in Colorado'
+    'description': 'Thriving Colorado city with diverse business opportunities, healthcare facilities, and commercial centers'
   };
   
   // Active users counter
@@ -36,7 +36,9 @@ export default function CastleRockColoradoVendingLeadsPage() {
 
   // User names for active users counter
   const [userNames, setUserNames] = useState([
-    'Mike from Castle Rock', 'Sarah in Downtown', 'David in Castle Rock', 'Lisa in Castle Rock', 'Tom in Castle Rock', 'Jennifer in Castle Rock', 'Robert in Castle Rock', 'Amanda in Castle Rock', 'Chris in Castle Rock', 'Maria in Castle Rock', 'James in Castle Rock', 'Emily in Castle Rock'
+    'Mike from Castle Rock', 'Sarah in Castle Rock', 'David in Castle Rock', 'Lisa in Castle Rock',
+    'Tom in Castle Rock', 'Jennifer in Castle Rock', 'Robert in Castle Rock', 'Amanda in Castle Rock',
+    'Chris in Castle Rock', 'Maria in Castle Rock', 'James in Castle Rock', 'Emily in Castle Rock'
   ])
 
   // Active users counter effect
@@ -76,21 +78,45 @@ export default function CastleRockColoradoVendingLeadsPage() {
     return () => clearInterval(interval)
   }, [userNames.length, usedNames])
 
-  // Build related cities (for internal linking)
-  const state = states.find(s => s.slug === 'colorado');
-  const relatedCities = state ? state.cities.filter(c => c.slug !== 'castle-rock-colorado').slice(0, 8) : [];
+  // Build related Colorado cities (for internal linking)
+  const coloradoState = states.find(s => s.slug === 'colorado');
+  const relatedCities = coloradoState ? coloradoState.cities.filter(c => c.slug !== 'castle-rock-colorado').slice(0, 8) : [];
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in Castle Rock?', a: 'Castle Rock offers diverse vending opportunities including healthcare facilities, educational institutions, retail locations, office buildings, and manufacturing facilities. Each location is pre-verified for optimal vending machine success.' },
-    { q: 'How quickly can I get vending machine leads for Castle Rock?', a: 'Our Castle Rock vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.' },
-    { q: 'What makes Castle Rock a good market for vending machines?', a: "Castle Rock features a thriving business community with diverse industries and strong economic activity. The city's business density and diverse demographics create ideal conditions for vending machine success." },
-    { q: 'Do you provide ongoing support for Castle Rock locations?', a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Castle Rock.' },
-    { q: 'What industries in Castle Rock are best for vending machines?', a: 'Healthcare, education, retail, office buildings, and manufacturing in Castle Rock show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.' },
-    { q: 'How do you verify the quality of Castle Rock vending locations?', a: 'We conduct thorough research on each Castle Rock location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.' },
-    { q: 'Can I get customized vending leads for specific areas of Castle Rock?', a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Castle Rock based on your preferences and target market requirements.' },
-    { q: "What's the typical ROI for vending machines in Castle Rock?", a: "Vending machines in Castle Rock typically show strong ROI due to the city's business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines." }
-  ];
+  {
+    q: 'What types of vending machine locations are available in Castle Rock?',
+    a: 'Castle Rock offers diverse vending opportunities including technology companies, manufacturing facilities, healthcare centers, educational institutions, retail locations, and office buildings. Each location is pre-verified for optimal vending machine success.'
+  },
+  {
+    q: 'How quickly can I get vending machine leads for Castle Rock?',
+    a: 'Our Castle Rock vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
+  },
+  {
+    q: 'What makes Castle Rock a good market for vending machines?',
+    a: 'Castle Rock features a thriving business community with diverse industries including technology, manufacturing, and retail. The city\'s business density and growing economy create ideal conditions for vending machine success.'
+  },
+  {
+    q: 'Do you provide ongoing support for Castle Rock locations?',
+    a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Castle Rock.'
+  },
+  {
+    q: 'What industries in Castle Rock are best for vending machines?',
+    a: 'Technology companies, manufacturing facilities, healthcare centers, educational institutions, and office buildings in Castle Rock show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
+  },
+  {
+    q: 'How do you verify the quality of Castle Rock vending locations?',
+    a: 'We conduct thorough research on each Castle Rock location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
+  },
+  {
+    q: 'Can I get customized vending leads for specific areas of Castle Rock?',
+    a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Castle Rock including the downtown area, industrial parks, and commercial corridors based on your preferences and target market requirements.'
+  },
+  {
+    q: 'What\'s the typical ROI for vending machines in Castle Rock?',
+    a: 'Vending machines in Castle Rock typically show strong ROI due to the city\'s business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+  },
+];
 
   return (
     <>
@@ -154,8 +180,7 @@ export default function CastleRockColoradoVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Explore vending machine opportunities throughout Castle Rock's business network, where diverse industries, commercial zones, and community spaces offer multiple placement options for vending success.
-              </motion.p>
+                Find verified vending machine locations in Castle Rock, Colorado, connecting you with businesses seeking reliable vending solutions.</motion.p>
 
               {/* Trust Signals */}
               <motion.div 
@@ -306,7 +331,7 @@ export default function CastleRockColoradoVendingLeadsPage() {
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Castle Rock features modern healthcare facilities including hospitals, medical centers, and clinics with high patient and visitor traffic, creating consistent demand for vending services throughout the day.</p>
+                <p className="text-stone leading-relaxed">Castle Rock's healthcare sector includes major medical centers, specialty clinics, and outpatient facilities that generate consistent patient and visitor traffic, creating ideal vending placement opportunities.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -320,7 +345,7 @@ export default function CastleRockColoradoVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Schools and educational institutions in Castle Rock offer excellent vending opportunities, with high-traffic areas including cafeterias, libraries, student centers, and athletic facilities.</p>
+                <p className="text-stone leading-relaxed">Academic institutions in Castle Rock feature student centers, libraries, and common areas with consistent foot traffic, making them ideal locations for vending machine placement.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -334,7 +359,7 @@ export default function CastleRockColoradoVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Castle Rock's manufacturing sector features production facilities, warehouses, and industrial parks with large employee concentrations, ideal for vending machine services.</p>
+                <p className="text-stone leading-relaxed">Industrial and manufacturing operations throughout Castle Rock employ substantial workforces with shift-based schedules, offering stable vending placement opportunities with steady traffic.</p>
               </motion.div>
               <motion.div
                 key="Retail"
@@ -348,7 +373,7 @@ export default function CastleRockColoradoVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Retail locations throughout Castle Rock provide high customer traffic and diverse shopping experiences, creating multiple vending opportunities in malls, shopping centers, and retail districts.</p>
+                <p className="text-stone leading-relaxed">Castle Rock's retail sector features shopping centers, strip malls, and commercial districts that offer strategic vending placement in areas with maximum shopper visibility.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -362,7 +387,7 @@ export default function CastleRockColoradoVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Professional office spaces in Castle Rock house corporate headquarters, business centers, and professional services with captive employee audiences during business hours, creating consistent vending opportunities.</p>
+                <p className="text-stone leading-relaxed">Commercial office spaces in Castle Rock offer excellent vending opportunities, with professional tenants and business operations generating consistent foot traffic throughout the workday.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -376,7 +401,7 @@ export default function CastleRockColoradoVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Castle Rock's transportation infrastructure includes major transit hubs and travel facilities with year-round passenger flow, ideal for vending machine services in waiting areas and terminals.</p>
+                <p className="text-stone leading-relaxed">Transportation hubs in Castle Rock offer prime vending locations with high passenger volumes, extended operating hours, and captive audiences waiting for departures.</p>
               </motion.div>
             </div>
           </div>
@@ -402,8 +427,7 @@ export default function CastleRockColoradoVendingLeadsPage() {
               className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
             >
               <p className="text-lg text-stone leading-relaxed">
-                Castle Rock offers strong vending opportunities through its diverse business community, combining local commerce, healthcare facilities, educational institutions, and growing commercial sectors. The city's business mix provides multiple placement options with varying traffic patterns, while Castle Rock's economic stability supports consistent consumer demand. The city's combination of established businesses and growing sectors creates reliable vending placement opportunities.
-              </p>
+                Castle Rock features a robust business environment with multiple industries supporting vending machine placement. The city's economic stability and business density provide numerous high-traffic locations for reliable revenue generation.</p>
             </motion.div>
           </div>
         </section>
@@ -506,11 +530,11 @@ export default function CastleRockColoradoVendingLeadsPage() {
           </div>
         </section>
 
-        {/* More cities in state */}
+        {/* More cities in Colorado */}
         {relatedCities.length > 0 && (
           <section className="py-12 bg-white border-t border-gray-200">
             <div className="mx-auto max-w-7xl px-6">
-              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in {stateDisplayName}</h2>
+              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in Colorado</h2>
               <div className="flex flex-wrap gap-3">
                 {relatedCities.map(city => (
                   <Link key={city.slug} href={`/vending-leads/${city.slug}`} className="px-3 py-2 rounded-lg border border-gray-200 bg-cream/60 text-chocolate hover:text-navy">

@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Medford, Massachusetts - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Medford, Massachusetts. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines medford massachusetts, vending leads medford massachusetts, vending locations medford massachusetts, vending opportunities medford massachusetts",
+  "keywords": "vending machines Medford Massachusetts, vending leads Medford Massachusetts, vending locations Medford Massachusetts, vending opportunities Medford Massachusetts",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/medford-massachusetts"
   },

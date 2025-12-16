@@ -14,19 +14,19 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
 export default function MerrimackNewHampshireVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Merrimack';
-  const stateDisplayName = 'New Hampshire';
+  const cityDisplayName = 'Merrimack New';
+  const stateDisplayName = 'Hampshire';
   
   // City-specific data
   const cityData = {
-    'name': 'Merrimack',
-    'state': 'New Hampshire',
-    'population': '~26,000',
-    'businesses': '1K-1.5K',
-    'industries': '7-11',
-    'verifiedLocations': '60-110',
+    'name': 'Merrimack New',
+    'state': 'Hampshire',
+    'population': '200K+',
+    'businesses': '2K-4K',
+    'industries': '14-18',
+    'verifiedLocations': '100-200',
     'rating': '4.7/5',
-    'description': 'Corporate hub with major employers and residential growth'
+    'description': 'Thriving Hampshire city with diverse business opportunities, healthcare facilities, and commercial centers'
   };
   
   // Active users counter
@@ -35,7 +35,11 @@ export default function MerrimackNewHampshireVendingLeadsPage() {
   const [usedNames, setUsedNames] = useState(new Set())
 
   // User names for active users counter
-  const [userNames, setUserNames] = useState(['Mike from Merrimack', 'Sarah in Downtown', 'David in Merrimack', 'Lisa in Merrimack', 'Tom in Merrimack', 'Jennifer in Merrimack', 'Robert in Merrimack', 'Amanda in Merrimack', 'Chris in Merrimack', 'Maria in Merrimack', 'James in Merrimack', 'Emily in Merrimack'])
+  const [userNames, setUserNames] = useState([
+    'Mike from Merrimack New', 'Sarah in Merrimack New', 'David in Merrimack New', 'Lisa in Merrimack New',
+    'Tom in Merrimack New', 'Jennifer in Merrimack New', 'Robert in Merrimack New', 'Amanda in Merrimack New',
+    'Chris in Merrimack New', 'Maria in Merrimack New', 'James in Merrimack New', 'Emily in Merrimack New'
+  ])
 
   // Active users counter effect
   useEffect(() => {
@@ -74,21 +78,45 @@ export default function MerrimackNewHampshireVendingLeadsPage() {
     return () => clearInterval(interval)
   }, [userNames.length, usedNames])
 
-  // Build related New Hampshire cities (for internal linking)
-  const newHampshire = states.find(s => s.slug === 'new-hampshire');
-  const relatedCities = newHampshire ? newHampshire.cities.filter(c => c.slug !== 'merrimack-new-hampshire').slice(0, 8) : [];
+  // Build related Hampshire cities (for internal linking)
+  const coloradoState = states.find(s => s.slug === 'hampshire');
+  const relatedCities = coloradoState ? coloradoState.cities.filter(c => c.slug !== 'merrimack-new-hampshire').slice(0, 8) : [];
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in Merrimack?', a: 'Merrimack offers vending opportunities including corporate offices, retail centers, healthcare facilities, manufacturing facilities, and distribution centers. Each location is pre-verified for optimal vending machine success.' },
-    { q: 'How quickly can I get vending machine leads for Merrimack?', a: 'Our Merrimack vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.' },
-    { q: 'What makes Merrimack a good market for vending machines?', a: 'Merrimack features major corporate employers including Anheuser-Busch and diverse business activity. The town\'s professional workforce and industrial base create ideal conditions for vending machine success.' },
-    { q: 'Do you provide ongoing support for Merrimack locations?', a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Merrimack.' },
-    { q: 'What industries in Merrimack are best for vending machines?', a: 'Corporate offices, manufacturing, retail, and distribution in Merrimack show the highest potential for vending machine success due to professional workforce and shift workers.' },
-    { q: 'How do you verify the quality of Merrimack vending locations?', a: 'We conduct thorough research on each Merrimack location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.' },
-    { q: 'Can I get customized vending leads for specific areas of Merrimack?', a: 'Absolutely! We can provide targeted vending leads for specific business parks, corporate areas, or industrial zones within Merrimack based on your preferences and target market requirements.' },
-    { q: 'What\'s the typical ROI for vending machines in Merrimack?', a: 'Vending machines in Merrimack typically show strong ROI due to corporate employment and industrial activity. Our research shows average payback periods of 12-18 months for well-placed machines.' }
-  ]
+  {
+    q: 'What types of vending machine locations are available in Merrimack New?',
+    a: 'Merrimack New offers diverse vending opportunities including technology companies, manufacturing facilities, healthcare centers, educational institutions, retail locations, and office buildings. Each location is pre-verified for optimal vending machine success.'
+  },
+  {
+    q: 'How quickly can I get vending machine leads for Merrimack New?',
+    a: 'Our Merrimack New vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
+  },
+  {
+    q: 'What makes Merrimack New a good market for vending machines?',
+    a: 'Merrimack New features a thriving business community with diverse industries including technology, manufacturing, and retail. The city\'s business density and growing economy create ideal conditions for vending machine success.'
+  },
+  {
+    q: 'Do you provide ongoing support for Merrimack New locations?',
+    a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Merrimack New.'
+  },
+  {
+    q: 'What industries in Merrimack New are best for vending machines?',
+    a: 'Technology companies, manufacturing facilities, healthcare centers, educational institutions, and office buildings in Merrimack New show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
+  },
+  {
+    q: 'How do you verify the quality of Merrimack New vending locations?',
+    a: 'We conduct thorough research on each Merrimack New location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
+  },
+  {
+    q: 'Can I get customized vending leads for specific areas of Merrimack New?',
+    a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Merrimack New including the downtown area, industrial parks, and commercial corridors based on your preferences and target market requirements.'
+  },
+  {
+    q: 'What\'s the typical ROI for vending machines in Merrimack New?',
+    a: 'Vending machines in Merrimack New typically show strong ROI due to the city\'s business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+  },
+];
 
   return (
     <>
@@ -152,8 +180,7 @@ export default function MerrimackNewHampshireVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Explore vending machine opportunities throughout Merrimack's business network, where diverse industries, commercial zones, and community spaces offer multiple placement options for vending success.
-              </motion.p>
+                Find verified vending machine locations in Merrimack New, Hampshire, connecting you with businesses seeking reliable vending solutions.</motion.p>
 
               {/* Trust Signals */}
               <motion.div 
@@ -304,7 +331,7 @@ export default function MerrimackNewHampshireVendingLeadsPage() {
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Merrimack features modern healthcare facilities including hospitals, medical centers, and clinics with high patient and visitor traffic, creating consistent demand for vending services throughout the day.</p>
+                <p className="text-stone leading-relaxed">Healthcare institutions in Merrimack New offer prime vending locations with high visitor counts, extended operating hours, and captive audiences seeking convenient snack and beverage options.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -318,7 +345,7 @@ export default function MerrimackNewHampshireVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Schools and educational institutions in Merrimack offer excellent vending opportunities, with high-traffic areas including cafeterias, libraries, student centers, and athletic facilities.</p>
+                <p className="text-stone leading-relaxed">Merrimack New's schools, colleges, and universities create excellent vending opportunities with high student traffic, campus events, and extended hours that maximize machine usage.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -332,7 +359,7 @@ export default function MerrimackNewHampshireVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Merrimack's manufacturing sector features production facilities, warehouses, and industrial parks with large employee concentrations, ideal for vending machine services.</p>
+                <p className="text-stone leading-relaxed">Industrial operations in Merrimack New feature large workforces and shift schedules that create reliable vending revenue through employee break times and shift changes.</p>
               </motion.div>
               <motion.div
                 key="Retail"
@@ -346,7 +373,7 @@ export default function MerrimackNewHampshireVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Retail locations throughout Merrimack provide high customer traffic and diverse shopping experiences, creating multiple vending opportunities in malls, shopping centers, and retail districts.</p>
+                <p className="text-stone leading-relaxed">Retail locations throughout Merrimack New provide excellent vending opportunities in malls, shopping centers, and high-traffic commercial areas with consistent customer flow.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -360,7 +387,7 @@ export default function MerrimackNewHampshireVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Professional office spaces in Merrimack house corporate headquarters, business centers, and professional services with captive employee audiences during business hours, creating consistent vending opportunities.</p>
+                <p className="text-stone leading-relaxed">Corporate office buildings throughout Merrimack New feature professional workforces and business operations that create reliable vending revenue through employee break times and meetings.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -374,11 +401,11 @@ export default function MerrimackNewHampshireVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Merrimack's transportation infrastructure includes major transit hubs and travel facilities with year-round passenger flow, ideal for vending machine services in waiting areas and terminals.</p>
+                <p className="text-stone leading-relaxed">Airports, bus stations, and transit centers throughout Merrimack New generate steady passenger traffic, providing excellent vending placement options in high-traffic areas frequented by travelers.</p>
               </motion.div>
             </div>
           </div>
-        </section>        {/* Why Merrimack? */}
+        </section>        {/* Why Merrimack New? */}
         <section className="py-16 bg-warm-white">
           <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-8">
@@ -389,7 +416,7 @@ export default function MerrimackNewHampshireVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-6"
               >
-                Why Choose Merrimack for Vending Machines?
+                Why Choose Merrimack New for Vending Machines?
               </motion.h2>
             </div>
             <motion.div
@@ -400,8 +427,7 @@ export default function MerrimackNewHampshireVendingLeadsPage() {
               className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
             >
               <p className="text-lg text-stone leading-relaxed">
-                Merrimack offers reliable vending opportunities through its thriving business community, featuring diverse industries, commercial centers, and growing economic sectors. The city's business mix provides stable placement locations with consistent traffic patterns, while Merrimack's economic activity supports steady consumer spending. The city's combination of established businesses and emerging sectors creates multiple vending placement strategies.
-              </p>
+                Merrimack New features a robust business environment with multiple industries supporting vending machine placement. The city's economic stability and business density provide numerous high-traffic locations for reliable revenue generation.</p>
             </motion.div>
           </div>
         </section>
@@ -504,11 +530,11 @@ export default function MerrimackNewHampshireVendingLeadsPage() {
           </div>
         </section>
 
-        {/* More cities in New Hampshire */}
+        {/* More cities in Hampshire */}
         {relatedCities.length > 0 && (
           <section className="py-12 bg-white border-t border-gray-200">
             <div className="mx-auto max-w-7xl px-6">
-              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in New Hampshire</h2>
+              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in Hampshire</h2>
               <div className="flex flex-wrap gap-3">
                 {relatedCities.map(city => (
                   <Link key={city.slug} href={`/vending-leads/${city.slug}`} className="px-3 py-2 rounded-lg border border-gray-200 bg-cream/60 text-chocolate hover:text-navy">
@@ -534,8 +560,8 @@ export default function MerrimackNewHampshireVendingLeadsPage() {
             itemListElement: [
               { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
               { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/new-hampshire' },
-              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/merrimack-new-hampshire' }
+              { '@type': 'ListItem', position: 3, name: 'Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/hampshire' },
+              { '@type': 'ListItem', position: 4, name: 'Merrimack New', item: 'https://www.thevendinglocator.com/vending-leads/merrimack-new-hampshire' }
             ]
           })
         }}

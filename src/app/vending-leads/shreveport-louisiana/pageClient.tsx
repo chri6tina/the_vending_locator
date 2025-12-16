@@ -21,12 +21,12 @@ export default function ShreveportLouisianaVendingLeadsPage() {
   const cityData = {
     'name': 'Shreveport',
     'state': 'Louisiana',
-    'population': '187K+',
-    'businesses': '11K-16K',
-    'industries': '10-14',
-    'verifiedLocations': '250-430',
+    'population': '200K+',
+    'businesses': '12K-20K',
+    'industries': '8-12',
+    'verifiedLocations': '400-700',
     'rating': '4.7/5',
-    'description': 'Northwest Louisiana hub with gaming, military, and healthcare'
+    'description': 'Thriving Louisiana city with diverse business opportunities, healthcare facilities, and commercial centers'
   };
   
   // Active users counter
@@ -79,14 +79,14 @@ export default function ShreveportLouisianaVendingLeadsPage() {
   }, [userNames.length, usedNames])
 
   // Build related Louisiana cities (for internal linking)
-  const newHampshire = states.find(s => s.slug === 'louisiana');
-  const relatedCities = newHampshire ? newHampshire.cities.filter(c => c.slug !== 'manchester-louisiana').slice(0, 8) : [];
+  const coloradoState = states.find(s => s.slug === 'louisiana');
+  const relatedCities = coloradoState ? coloradoState.cities.filter(c => c.slug !== 'shreveport-louisiana').slice(0, 8) : [];
 
   // FAQ items reused for JSON-LD
   const faqItems = [
   {
     q: 'What types of vending machine locations are available in Shreveport?',
-    a: 'Shreveport offers diverse vending opportunities including gaming facilities, military installations, healthcare centers, educational institutions, retail locations, and office buildings. Each location is pre-verified for optimal vending machine success.'
+    a: 'Shreveport offers diverse vending opportunities including technology companies, manufacturing facilities, healthcare centers, educational institutions, retail locations, and office buildings. Each location is pre-verified for optimal vending machine success.'
   },
   {
     q: 'How quickly can I get vending machine leads for Shreveport?',
@@ -94,7 +94,7 @@ export default function ShreveportLouisianaVendingLeadsPage() {
   },
   {
     q: 'What makes Shreveport a good market for vending machines?',
-    a: 'Shreveport features a thriving business community with diverse industries including gaming, military, and healthcare. The city\'s business density and entertainment sector create ideal conditions for vending machine success.'
+    a: 'Shreveport features a thriving business community with diverse industries including technology, manufacturing, and retail. The city\'s business density and growing economy create ideal conditions for vending machine success.'
   },
   {
     q: 'Do you provide ongoing support for Shreveport locations?',
@@ -102,7 +102,7 @@ export default function ShreveportLouisianaVendingLeadsPage() {
   },
   {
     q: 'What industries in Shreveport are best for vending machines?',
-    a: 'Gaming facilities, military installations, healthcare centers, educational institutions, and office buildings in Shreveport show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
+    a: 'Technology companies, manufacturing facilities, healthcare centers, educational institutions, and office buildings in Shreveport show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
   },
   {
     q: 'How do you verify the quality of Shreveport vending locations?',
@@ -110,12 +110,12 @@ export default function ShreveportLouisianaVendingLeadsPage() {
   },
   {
     q: 'Can I get customized vending leads for specific areas of Shreveport?',
-    a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or entertainment areas within Shreveport including downtown, casino district, and military base area based on your preferences and target market requirements.'
+    a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Shreveport including the downtown area, industrial parks, and commercial corridors based on your preferences and target market requirements.'
   },
   {
     q: 'What\'s the typical ROI for vending machines in Shreveport?',
-    a: 'Vending machines in Shreveport typically show strong ROI due to the city\'s business density and entertainment economy. Our research shows average payback periods of 10-15 months for well-placed machines.'
-  }
+    a: 'Vending machines in Shreveport typically show strong ROI due to the city\'s business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+  },
 ];
 
   return (
@@ -180,8 +180,7 @@ export default function ShreveportLouisianaVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Get comprehensive vending leads for Shreveport's thriving Louisiana market, combining local businesses, healthcare systems, and educational facilities for reliable vending machine placement.
-              </motion.p>
+                Discover high-quality vending opportunities in Shreveport, Louisiana, with pre-qualified locations in office buildings, retail spaces, and transportation hubs.</motion.p>
 
               {/* Trust Signals */}
               <motion.div 
@@ -332,7 +331,7 @@ export default function ShreveportLouisianaVendingLeadsPage() {
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Shreveport's healthcare sector includes major hospitals, specialty clinics, and medical offices that generate consistent visitor and employee traffic, ideal for vending machine placement.</p>
+                <p className="text-stone leading-relaxed">Medical facilities throughout Shreveport serve large patient populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services in waiting areas and break rooms.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -360,7 +359,7 @@ export default function ShreveportLouisianaVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Industrial and manufacturing operations throughout Shreveport employ substantial workforces with shift-based schedules, offering stable vending placement opportunities with steady traffic.</p>
+                <p className="text-stone leading-relaxed">Manufacturing facilities in Shreveport provide excellent vending locations with large employee bases, multiple shifts, and break areas that generate consistent sales throughout the day.</p>
               </motion.div>
               <motion.div
                 key="Retail"
@@ -388,7 +387,7 @@ export default function ShreveportLouisianaVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Commercial office spaces in Shreveport offer excellent vending opportunities, with professional tenants and business operations generating consistent foot traffic throughout the workday.</p>
+                <p className="text-stone leading-relaxed">Office complexes in Shreveport provide ideal vending locations with multiple tenants, high employee counts, and break areas that ensure steady machine usage during business hours.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -402,7 +401,7 @@ export default function ShreveportLouisianaVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Airports, bus stations, and transit centers throughout Shreveport generate steady passenger traffic, providing excellent vending placement options in high-traffic areas frequented by travelers.</p>
+                <p className="text-stone leading-relaxed">Transit facilities throughout Shreveport provide excellent vending opportunities in terminals, waiting areas, and high-traffic zones with consistent traveler foot traffic.</p>
               </motion.div>
             </div>
           </div>
@@ -428,8 +427,7 @@ export default function ShreveportLouisianaVendingLeadsPage() {
               className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
             >
               <p className="text-lg text-stone leading-relaxed">
-                Shreveport offers reliable vending opportunities through its thriving business community, featuring diverse industries, commercial centers, and growing economic sectors. The city's business mix provides stable placement locations with consistent traffic patterns, while Shreveport's economic activity supports steady consumer spending. The city's combination of established businesses and emerging sectors creates multiple vending placement strategies.
-              </p>
+                The Shreveport market offers excellent vending opportunities through its combination of corporate headquarters, healthcare networks, and educational institutions. High foot traffic areas and captive audiences create ideal conditions for vending success.</p>
             </motion.div>
           </div>
         </section>
@@ -563,7 +561,7 @@ export default function ShreveportLouisianaVendingLeadsPage() {
               { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
               { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
               { '@type': 'ListItem', position: 3, name: 'Louisiana', item: 'https://www.thevendinglocator.com/vending-leads/louisiana' },
-              { '@type': 'ListItem', position: 4, name: 'Shreveport', item: 'https://www.thevendinglocator.com/vending-leads/manchester-louisiana' }
+              { '@type': 'ListItem', position: 4, name: 'Shreveport', item: 'https://www.thevendinglocator.com/vending-leads/shreveport-louisiana' }
             ]
           })
         }}

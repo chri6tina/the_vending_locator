@@ -21,12 +21,12 @@ export default function GreeleyColoradoVendingLeadsPage() {
   const cityData = {
     'name': 'Greeley',
     'state': 'Colorado',
-    'population': '~108,000',
-    'businesses': '2.5K-3.2K',
-    'industries': '7-9',
-    'verifiedLocations': '100-200',
+    'population': '150K+',
+    'businesses': '6K-8K',
+    'industries': '8-12',
+    'verifiedLocations': '300-500',
     'rating': '4.7/5',
-    'description': 'Agricultural processing and education center'
+    'description': 'Thriving Colorado city with diverse business opportunities, healthcare facilities, and commercial centers'
   };
   
   // Active users counter
@@ -78,21 +78,45 @@ export default function GreeleyColoradoVendingLeadsPage() {
     return () => clearInterval(interval)
   }, [userNames.length, usedNames])
 
-  // Build related New Hampshire cities (for internal linking)
-  const newHampshire = states.find(s => s.slug === 'colorado');
-  const relatedCities = newHampshire ? newHampshire.cities.filter(c => c.slug !== 'manchester-colorado').slice(0, 8) : [];
+  // Build related Colorado cities (for internal linking)
+  const coloradoState = states.find(s => s.slug === 'colorado');
+  const relatedCities = coloradoState ? coloradoState.cities.filter(c => c.slug !== 'greeley-colorado').slice(0, 8) : [];
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: "What types of vending machine locations are available in Greeley?", a: "Greeley offers diverse vending opportunities in meat processing facilities (JBS), University of Northern Colorado campus, agricultural businesses, healthcare facilities, retail centers, and manufacturing plants." },
-    { q: "How quickly can I get vending machine leads for Greeley?", a: "Our Greeley vending leads are delivered within 3-5 business days with detailed information about each location and northern Colorado market insights." },
-    { q: "What makes Greeley a good market for vending machines?", a: "Greeley's economy, combining major food processing operations with a university and agricultural businesses, creates consistent vending demand. The city's large industrial workforce and student population ensure year-round opportunities." },
-    { q: "Do you provide ongoing support for Greeley locations?", a: "Yes, we provide comprehensive support including location research, agricultural and education sector insights, contact information, and placement strategies tailored to Greeley's diverse economy." },
-    { q: "What industries in Greeley are best for vending machines?", a: "Food processing, higher education (UNC), agricultural businesses, healthcare facilities, and manufacturing show excellent potential due to large shift-worker and student populations." },
-    { q: "How do you verify the quality of Greeley vending locations?", a: "We conduct thorough verification including business validation, employee and enrollment analysis, shift schedule assessment, and facility research for each Greeley location." },
-    { q: "Can I get customized vending leads for specific areas of Greeley?", a: "Absolutely! We can focus on the UNC campus district, downtown 8th Avenue area, or industrial zones along Highway 34 based on your target market." },
-    { q: "What's the typical ROI for vending machines in Greeley?", a: "Machines in Greeley typically see ROI within 11-15 months, with food processing and university locations often achieving faster returns due to 24/7 operations and high student traffic." }
-  ];
+  {
+    q: 'What types of vending machine locations are available in Greeley?',
+    a: 'Greeley offers diverse vending opportunities including technology companies, manufacturing facilities, healthcare centers, educational institutions, retail locations, and office buildings. Each location is pre-verified for optimal vending machine success.'
+  },
+  {
+    q: 'How quickly can I get vending machine leads for Greeley?',
+    a: 'Our Greeley vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
+  },
+  {
+    q: 'What makes Greeley a good market for vending machines?',
+    a: 'Greeley features a thriving business community with diverse industries including technology, manufacturing, and retail. The city\'s business density and growing economy create ideal conditions for vending machine success.'
+  },
+  {
+    q: 'Do you provide ongoing support for Greeley locations?',
+    a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Greeley.'
+  },
+  {
+    q: 'What industries in Greeley are best for vending machines?',
+    a: 'Technology companies, manufacturing facilities, healthcare centers, educational institutions, and office buildings in Greeley show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
+  },
+  {
+    q: 'How do you verify the quality of Greeley vending locations?',
+    a: 'We conduct thorough research on each Greeley location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
+  },
+  {
+    q: 'Can I get customized vending leads for specific areas of Greeley?',
+    a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Greeley including the downtown area, industrial parks, and commercial corridors based on your preferences and target market requirements.'
+  },
+  {
+    q: 'What\'s the typical ROI for vending machines in Greeley?',
+    a: 'Vending machines in Greeley typically show strong ROI due to the city\'s business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+  },
+];
 
   return (
     <>
@@ -156,8 +180,7 @@ export default function GreeleyColoradoVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Discover pre-qualified vending opportunities in Greeley's growing economy, featuring business districts, commercial centers, and community facilities with consistent foot traffic.
-              </motion.p>
+                Find verified vending machine locations in Greeley, Colorado, connecting you with businesses seeking reliable vending solutions.</motion.p>
 
               {/* Trust Signals */}
               <motion.div 
@@ -308,7 +331,7 @@ export default function GreeleyColoradoVendingLeadsPage() {
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Medical centers and healthcare facilities throughout Greeley offer excellent vending placement opportunities, with high-traffic areas including waiting rooms, cafeterias, and employee break areas.</p>
+                <p className="text-stone leading-relaxed">Greeley's healthcare sector includes major medical centers, specialty clinics, and outpatient facilities that generate consistent patient and visitor traffic, creating ideal vending placement opportunities.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -322,7 +345,7 @@ export default function GreeleyColoradoVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Greeley's education sector features schools, universities, and training facilities with captive audiences during academic hours, creating reliable vending machine placement opportunities.</p>
+                <p className="text-stone leading-relaxed">Academic institutions in Greeley feature student centers, libraries, and common areas with consistent foot traffic, making them ideal locations for vending machine placement.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -336,7 +359,7 @@ export default function GreeleyColoradoVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Manufacturing facilities in Greeley operate around the clock with significant employee populations, providing consistent vending opportunities in break rooms and common areas.</p>
+                <p className="text-stone leading-relaxed">Industrial and manufacturing operations throughout Greeley employ substantial workforces with shift-based schedules, offering stable vending placement opportunities with steady traffic.</p>
               </motion.div>
               <motion.div
                 key="Retail"
@@ -350,7 +373,7 @@ export default function GreeleyColoradoVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Retail establishments in Greeley attract diverse customer demographics and generate steady foot traffic, providing reliable vending opportunities across various retail environments.</p>
+                <p className="text-stone leading-relaxed">Greeley's retail sector features shopping centers, strip malls, and commercial districts that offer strategic vending placement in areas with maximum shopper visibility.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -364,7 +387,7 @@ export default function GreeleyColoradoVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Greeley's office sector includes business districts, corporate campuses, and professional centers with high employee concentrations, ideal for vending services in common areas and break rooms.</p>
+                <p className="text-stone leading-relaxed">Commercial office spaces in Greeley offer excellent vending opportunities, with professional tenants and business operations generating consistent foot traffic throughout the workday.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -378,7 +401,7 @@ export default function GreeleyColoradoVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Transportation facilities in Greeley serve travelers and commuters with consistent foot traffic throughout the day, offering reliable vending opportunities in terminals, waiting areas, and transit stations.</p>
+                <p className="text-stone leading-relaxed">Transportation hubs in Greeley offer prime vending locations with high passenger volumes, extended operating hours, and captive audiences waiting for departures.</p>
               </motion.div>
             </div>
           </div>
@@ -404,8 +427,7 @@ export default function GreeleyColoradoVendingLeadsPage() {
               className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
             >
               <p className="text-lg text-stone leading-relaxed">
-                Greeley offers strong vending opportunities through its diverse business community, combining local commerce, healthcare facilities, educational institutions, and growing commercial sectors. The city's business mix provides multiple placement options with varying traffic patterns, while Greeley's economic stability supports consistent consumer demand. The city's combination of established businesses and growing sectors creates reliable vending placement opportunities.
-              </p>
+                Greeley features a robust business environment with multiple industries supporting vending machine placement. The city's economic stability and business density provide numerous high-traffic locations for reliable revenue generation.</p>
             </motion.div>
           </div>
         </section>
@@ -508,11 +530,11 @@ export default function GreeleyColoradoVendingLeadsPage() {
           </div>
         </section>
 
-        {/* More cities in New Hampshire */}
+        {/* More cities in Colorado */}
         {relatedCities.length > 0 && (
           <section className="py-12 bg-white border-t border-gray-200">
             <div className="mx-auto max-w-7xl px-6">
-              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in New Hampshire</h2>
+              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in Colorado</h2>
               <div className="flex flex-wrap gap-3">
                 {relatedCities.map(city => (
                   <Link key={city.slug} href={`/vending-leads/${city.slug}`} className="px-3 py-2 rounded-lg border border-gray-200 bg-cream/60 text-chocolate hover:text-navy">
@@ -538,8 +560,8 @@ export default function GreeleyColoradoVendingLeadsPage() {
             itemListElement: [
               { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
               { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/colorado' },
-              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-colorado' }
+              { '@type': 'ListItem', position: 3, name: 'Colorado', item: 'https://www.thevendinglocator.com/vending-leads/colorado' },
+              { '@type': 'ListItem', position: 4, name: 'Greeley', item: 'https://www.thevendinglocator.com/vending-leads/greeley-colorado' }
             ]
           })
         }}

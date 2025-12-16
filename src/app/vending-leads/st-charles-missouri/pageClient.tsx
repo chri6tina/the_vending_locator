@@ -14,19 +14,19 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
 export default function StCharlesMissouriVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'St. Charles';
+  const cityDisplayName = 'St Charles';
   const stateDisplayName = 'Missouri';
   
   // City-specific data
   const cityData = {
-    'name': 'St. Charles',
+    'name': 'St Charles',
     'state': 'Missouri',
-    'population': '71K+',
-    'businesses': '4K-8K',
-    'industries': '8-12',
-    'verifiedLocations': '110-200',
+    'population': '500K+',
+    'businesses': '4K-6K',
+    'industries': '16-20',
+    'verifiedLocations': '300-500',
     'rating': '4.7/5',
-    'description': 'St. Louis suburb with healthcare, retail, and manufacturing'
+    'description': 'Thriving Missouri city with diverse business opportunities, healthcare facilities, and commercial centers'
   };
   
   // Active users counter
@@ -36,9 +36,9 @@ export default function StCharlesMissouriVendingLeadsPage() {
 
   // User names for active users counter
   const [userNames, setUserNames] = useState([
-    'Mike from St. Charles', 'Sarah in St. Charles', 'David in St. Charles', 'Lisa in St. Charles',
-    'Tom in St. Charles', 'Jennifer in St. Charles', 'Robert in St. Charles', 'Amanda in St. Charles',
-    'Chris in St. Charles', 'Maria in St. Charles', 'James in St. Charles', 'Emily in St. Charles'
+    'Mike from St Charles', 'Sarah in St Charles', 'David in St Charles', 'Lisa in St Charles',
+    'Tom in St Charles', 'Jennifer in St Charles', 'Robert in St Charles', 'Amanda in St Charles',
+    'Chris in St Charles', 'Maria in St Charles', 'James in St Charles', 'Emily in St Charles'
   ])
 
   // Active users counter effect
@@ -79,43 +79,43 @@ export default function StCharlesMissouriVendingLeadsPage() {
   }, [userNames.length, usedNames])
 
   // Build related Missouri cities (for internal linking)
-  const newHampshire = states.find(s => s.slug === 'missouri');
-  const relatedCities = newHampshire ? newHampshire.cities.filter(c => c.slug !== 'manchester-missouri').slice(0, 8) : [];
+  const coloradoState = states.find(s => s.slug === 'missouri');
+  const relatedCities = coloradoState ? coloradoState.cities.filter(c => c.slug !== 'st-charles-missouri').slice(0, 8) : [];
 
   // FAQ items reused for JSON-LD
   const faqItems = [
   {
-    q: 'What types of vending machine locations are available in St. Charles?',
-    a: 'St. Charles offers diverse vending opportunities including healthcare facilities, educational institutions, retail locations, office buildings, and manufacturing facilities. Each location is pre-verified for optimal vending machine success.'
+    q: 'What types of vending machine locations are available in St Charles?',
+    a: 'St Charles offers diverse vending opportunities including technology companies, manufacturing facilities, healthcare centers, educational institutions, retail locations, and office buildings. Each location is pre-verified for optimal vending machine success.'
   },
   {
-    q: 'How quickly can I get vending machine leads for St. Charles?',
-    a: 'Our St. Charles vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
+    q: 'How quickly can I get vending machine leads for St Charles?',
+    a: 'Our St Charles vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
   },
   {
-    q: 'What makes St. Charles a good market for vending machines?',
-    a: 'St. Charles features a thriving business community with diverse industries and strong economic activity. The city\'s business density and diverse demographics create ideal conditions for vending machine success.'
+    q: 'What makes St Charles a good market for vending machines?',
+    a: 'St Charles features a thriving business community with diverse industries including technology, manufacturing, and retail. The city\'s business density and growing economy create ideal conditions for vending machine success.'
   },
   {
-    q: 'Do you provide ongoing support for St. Charles locations?',
-    a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in St. Charles.'
+    q: 'Do you provide ongoing support for St Charles locations?',
+    a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in St Charles.'
   },
   {
-    q: 'What industries in St. Charles are best for vending machines?',
-    a: 'Healthcare, education, retail, office buildings, and manufacturing in St. Charles show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
+    q: 'What industries in St Charles are best for vending machines?',
+    a: 'Technology companies, manufacturing facilities, healthcare centers, educational institutions, and office buildings in St Charles show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
   },
   {
-    q: 'How do you verify the quality of St. Charles vending locations?',
-    a: 'We conduct thorough research on each St. Charles location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
+    q: 'How do you verify the quality of St Charles vending locations?',
+    a: 'We conduct thorough research on each St Charles location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
   },
   {
-    q: 'Can I get customized vending leads for specific areas of St. Charles?',
-    a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within St. Charles based on your preferences and target market requirements.'
+    q: 'Can I get customized vending leads for specific areas of St Charles?',
+    a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within St Charles including the downtown area, industrial parks, and commercial corridors based on your preferences and target market requirements.'
   },
   {
-    q: 'What\'s the typical ROI for vending machines in St. Charles?',
-    a: 'Vending machines in St. Charles typically show strong ROI due to the city\'s business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
-  }
+    q: 'What\'s the typical ROI for vending machines in St Charles?',
+    a: 'Vending machines in St Charles typically show strong ROI due to the city\'s business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+  },
 ];
 
   return (
@@ -180,8 +180,7 @@ export default function StCharlesMissouriVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Get comprehensive vending leads for St. Charles's thriving Missouri market, combining local businesses, healthcare systems, and educational facilities for reliable vending machine placement.
-              </motion.p>
+                Unlock vending opportunities in St Charles, Missouri, featuring businesses with high employee counts and consistent visitor traffic.</motion.p>
 
               {/* Trust Signals */}
               <motion.div 
@@ -332,7 +331,7 @@ export default function StCharlesMissouriVendingLeadsPage() {
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">St. Charles's healthcare sector includes major hospitals, specialty clinics, and medical offices that generate consistent visitor and employee traffic, ideal for vending machine placement.</p>
+                <p className="text-stone leading-relaxed">Healthcare institutions in St Charles offer prime vending locations with high visitor counts, extended operating hours, and captive audiences seeking convenient snack and beverage options.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -346,7 +345,7 @@ export default function StCharlesMissouriVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Educational facilities throughout St. Charles serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services.</p>
+                <p className="text-stone leading-relaxed">St Charles's schools, colleges, and universities create excellent vending opportunities with high student traffic, campus events, and extended hours that maximize machine usage.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -360,7 +359,7 @@ export default function StCharlesMissouriVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Industrial and manufacturing operations throughout St. Charles employ substantial workforces with shift-based schedules, offering stable vending placement opportunities with steady traffic.</p>
+                <p className="text-stone leading-relaxed">Industrial operations in St Charles feature large workforces and shift schedules that create reliable vending revenue through employee break times and shift changes.</p>
               </motion.div>
               <motion.div
                 key="Retail"
@@ -374,7 +373,7 @@ export default function StCharlesMissouriVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Shopping centers and retail districts in St. Charles offer prime vending locations, with high-traffic areas including food courts, entrances, and common spaces frequented by shoppers.</p>
+                <p className="text-stone leading-relaxed">Retail locations throughout St Charles provide excellent vending opportunities in malls, shopping centers, and high-traffic commercial areas with consistent customer flow.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -388,7 +387,7 @@ export default function StCharlesMissouriVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Commercial office spaces in St. Charles offer excellent vending opportunities, with professional tenants and business operations generating consistent foot traffic throughout the workday.</p>
+                <p className="text-stone leading-relaxed">Corporate office buildings throughout St Charles feature professional workforces and business operations that create reliable vending revenue through employee break times and meetings.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -402,11 +401,11 @@ export default function StCharlesMissouriVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Airports, bus stations, and transit centers throughout St. Charles generate steady passenger traffic, providing excellent vending placement options in high-traffic areas frequented by travelers.</p>
+                <p className="text-stone leading-relaxed">Airports, bus stations, and transit centers throughout St Charles generate steady passenger traffic, providing excellent vending placement options in high-traffic areas frequented by travelers.</p>
               </motion.div>
             </div>
           </div>
-        </section>        {/* Why St. Charles? */}
+        </section>        {/* Why St Charles? */}
         <section className="py-16 bg-warm-white">
           <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-8">
@@ -417,7 +416,7 @@ export default function StCharlesMissouriVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-6"
               >
-                Why Choose St. Charles for Vending Machines?
+                Why Choose St Charles for Vending Machines?
               </motion.h2>
             </div>
             <motion.div
@@ -428,8 +427,7 @@ export default function StCharlesMissouriVendingLeadsPage() {
               className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
             >
               <p className="text-lg text-stone leading-relaxed">
-                St. Charles offers reliable vending opportunities through its thriving business community, featuring diverse industries, commercial centers, and growing economic sectors. The city's business mix provides stable placement locations with consistent traffic patterns, while St. Charles's economic activity supports steady consumer spending. The city's combination of established businesses and emerging sectors creates multiple vending placement strategies.
-              </p>
+                St Charles offers vending operators access to high-traffic locations across multiple industries. The city's commercial activity and business concentration create optimal conditions for vending machine success.</p>
             </motion.div>
           </div>
         </section>
@@ -563,7 +561,7 @@ export default function StCharlesMissouriVendingLeadsPage() {
               { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
               { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
               { '@type': 'ListItem', position: 3, name: 'Missouri', item: 'https://www.thevendinglocator.com/vending-leads/missouri' },
-              { '@type': 'ListItem', position: 4, name: 'St. Charles', item: 'https://www.thevendinglocator.com/vending-leads/manchester-missouri' }
+              { '@type': 'ListItem', position: 4, name: 'St Charles', item: 'https://www.thevendinglocator.com/vending-leads/st-charles-missouri' }
             ]
           })
         }}

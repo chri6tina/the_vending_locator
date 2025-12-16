@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in High Point North, Carolina - The Vending Locator",
   "description": "Get verified vending machine leads and locations in High Point North, Carolina. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines high point north carolina, vending leads high point north carolina, vending locations high point north carolina, vending opportunities high point north carolina",
+  "keywords": "vending machines High Point North Carolina, vending leads High Point North Carolina, vending locations High Point North Carolina, vending opportunities High Point North Carolina",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/high-point-north-carolina"
   },
@@ -33,7 +33,6 @@ export const metadata: Metadata = {
   }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;

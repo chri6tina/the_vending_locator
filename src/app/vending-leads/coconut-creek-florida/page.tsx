@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Coconut Creek, Florida - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Coconut Creek, Florida. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines coconut creek florida, vending leads coconut creek florida, vending locations coconut creek florida, vending opportunities coconut creek florida",
+  "keywords": "vending machines Coconut Creek Florida, vending leads Coconut Creek Florida, vending locations Coconut Creek Florida, vending opportunities Coconut Creek Florida",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/coconut-creek-florida"
   },

@@ -92,8 +92,7 @@ export default function RoswellGeorgiaVendingLeadsPage() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto"
             >
-              Access verified vending machine locations across Roswell's diverse business community, where local commerce, healthcare facilities, and educational institutions create steady opportunities for vending placement.
-            </motion.p>
+              Unlock vending opportunities in Roswell, Georgia, featuring businesses with high employee counts and consistent visitor traffic.</motion.p>
             <motion.div 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}

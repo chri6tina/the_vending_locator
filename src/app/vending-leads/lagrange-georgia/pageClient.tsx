@@ -12,21 +12,21 @@ import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function LaGrangeGeorgiaVendingLeadsPage() {
+export default function LagrangeGeorgiaVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'LaGrange';
+  const cityDisplayName = 'Lagrange';
   const stateDisplayName = 'Georgia';
   
   // City-specific data
   const cityData = {
-    'name': 'LaGrange',
+    'name': 'Lagrange',
     'state': 'Georgia',
-    'population': '50K-100K',
-    'businesses': '5K-10K',
-    'industries': '8-12',
-    'verifiedLocations': '100-200',
+    'population': '200K+',
+    'businesses': '8K-12K',
+    'industries': '18-24',
+    'verifiedLocations': '400-700',
     'rating': '4.7/5',
-    'description': 'Thriving business community in Georgia'
+    'description': 'Thriving Georgia city with diverse business opportunities, healthcare facilities, and commercial centers'
   };
   
   // Active users counter
@@ -36,7 +36,9 @@ export default function LaGrangeGeorgiaVendingLeadsPage() {
 
   // User names for active users counter
   const [userNames, setUserNames] = useState([
-    'Mike from LaGrange', 'Sarah in Downtown', 'David in LaGrange', 'Lisa in LaGrange', 'Tom in LaGrange', 'Jennifer in LaGrange', 'Robert in LaGrange', 'Amanda in LaGrange', 'Chris in LaGrange', 'Maria in LaGrange', 'James in LaGrange', 'Emily in LaGrange'
+    'Mike from Lagrange', 'Sarah in Lagrange', 'David in Lagrange', 'Lisa in Lagrange',
+    'Tom in Lagrange', 'Jennifer in Lagrange', 'Robert in Lagrange', 'Amanda in Lagrange',
+    'Chris in Lagrange', 'Maria in Lagrange', 'James in Lagrange', 'Emily in Lagrange'
   ])
 
   // Active users counter effect
@@ -76,21 +78,45 @@ export default function LaGrangeGeorgiaVendingLeadsPage() {
     return () => clearInterval(interval)
   }, [userNames.length, usedNames])
 
-  // Build related cities (for internal linking)
-  const state = states.find(s => s.slug === 'georgia');
-  const relatedCities = state ? state.cities.filter(c => c.slug !== 'lagrange-georgia').slice(0, 8) : [];
+  // Build related Georgia cities (for internal linking)
+  const coloradoState = states.find(s => s.slug === 'georgia');
+  const relatedCities = coloradoState ? coloradoState.cities.filter(c => c.slug !== 'lagrange-georgia').slice(0, 8) : [];
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in LaGrange?', a: 'LaGrange offers diverse vending opportunities including healthcare facilities, educational institutions, retail locations, office buildings, and manufacturing facilities. Each location is pre-verified for optimal vending machine success.' },
-    { q: 'How quickly can I get vending machine leads for LaGrange?', a: 'Our LaGrange vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.' },
-    { q: 'What makes LaGrange a good market for vending machines?', a: "LaGrange features a thriving business community with diverse industries and strong economic activity. The city's business density and diverse demographics create ideal conditions for vending machine success." },
-    { q: 'Do you provide ongoing support for LaGrange locations?', a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in LaGrange.' },
-    { q: 'What industries in LaGrange are best for vending machines?', a: 'Healthcare, education, retail, office buildings, and manufacturing in LaGrange show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.' },
-    { q: 'How do you verify the quality of LaGrange vending locations?', a: 'We conduct thorough research on each LaGrange location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.' },
-    { q: 'Can I get customized vending leads for specific areas of LaGrange?', a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within LaGrange based on your preferences and target market requirements.' },
-    { q: "What's the typical ROI for vending machines in LaGrange?", a: "Vending machines in LaGrange typically show strong ROI due to the city's business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines." }
-  ];
+  {
+    q: 'What types of vending machine locations are available in Lagrange?',
+    a: 'Lagrange offers diverse vending opportunities including technology companies, manufacturing facilities, healthcare centers, educational institutions, retail locations, and office buildings. Each location is pre-verified for optimal vending machine success.'
+  },
+  {
+    q: 'How quickly can I get vending machine leads for Lagrange?',
+    a: 'Our Lagrange vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
+  },
+  {
+    q: 'What makes Lagrange a good market for vending machines?',
+    a: 'Lagrange features a thriving business community with diverse industries including technology, manufacturing, and retail. The city\'s business density and growing economy create ideal conditions for vending machine success.'
+  },
+  {
+    q: 'Do you provide ongoing support for Lagrange locations?',
+    a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Lagrange.'
+  },
+  {
+    q: 'What industries in Lagrange are best for vending machines?',
+    a: 'Technology companies, manufacturing facilities, healthcare centers, educational institutions, and office buildings in Lagrange show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
+  },
+  {
+    q: 'How do you verify the quality of Lagrange vending locations?',
+    a: 'We conduct thorough research on each Lagrange location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
+  },
+  {
+    q: 'Can I get customized vending leads for specific areas of Lagrange?',
+    a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Lagrange including the downtown area, industrial parks, and commercial corridors based on your preferences and target market requirements.'
+  },
+  {
+    q: 'What\'s the typical ROI for vending machines in Lagrange?',
+    a: 'Vending machines in Lagrange typically show strong ROI due to the city\'s business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+  },
+];
 
   return (
     <>
@@ -154,8 +180,7 @@ export default function LaGrangeGeorgiaVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Discover pre-qualified vending opportunities in LaGrange's growing economy, featuring business districts, commercial centers, and community facilities with consistent foot traffic.
-              </motion.p>
+                Get access to curated vending leads in Lagrange, Georgia, including manufacturing facilities, corporate offices, and community centers.</motion.p>
 
               {/* Trust Signals */}
               <motion.div 
@@ -306,7 +331,7 @@ export default function LaGrangeGeorgiaVendingLeadsPage() {
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Medical centers and healthcare facilities throughout LaGrange offer excellent vending placement opportunities, with high-traffic areas including waiting rooms, cafeterias, and employee break areas.</p>
+                <p className="text-stone leading-relaxed">Lagrange's healthcare sector includes major medical centers, specialty clinics, and outpatient facilities that generate consistent patient and visitor traffic, creating ideal vending placement opportunities.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -320,7 +345,7 @@ export default function LaGrangeGeorgiaVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">LaGrange's education sector features schools, universities, and training facilities with captive audiences during academic hours, creating reliable vending machine placement opportunities.</p>
+                <p className="text-stone leading-relaxed">Academic institutions in Lagrange feature student centers, libraries, and common areas with consistent foot traffic, making them ideal locations for vending machine placement.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -334,7 +359,7 @@ export default function LaGrangeGeorgiaVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Manufacturing facilities in LaGrange operate around the clock with significant employee populations, providing consistent vending opportunities in break rooms and common areas.</p>
+                <p className="text-stone leading-relaxed">Industrial and manufacturing operations throughout Lagrange employ substantial workforces with shift-based schedules, offering stable vending placement opportunities with steady traffic.</p>
               </motion.div>
               <motion.div
                 key="Retail"
@@ -348,7 +373,7 @@ export default function LaGrangeGeorgiaVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Retail establishments in LaGrange attract diverse customer demographics and generate steady foot traffic, providing reliable vending opportunities across various retail environments.</p>
+                <p className="text-stone leading-relaxed">Lagrange's retail sector features shopping centers, strip malls, and commercial districts that offer strategic vending placement in areas with maximum shopper visibility.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -362,7 +387,7 @@ export default function LaGrangeGeorgiaVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">LaGrange's office sector includes business districts, corporate campuses, and professional centers with high employee concentrations, ideal for vending services in common areas and break rooms.</p>
+                <p className="text-stone leading-relaxed">Commercial office spaces in Lagrange offer excellent vending opportunities, with professional tenants and business operations generating consistent foot traffic throughout the workday.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -376,11 +401,11 @@ export default function LaGrangeGeorgiaVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Transportation facilities in LaGrange serve travelers and commuters with consistent foot traffic throughout the day, offering reliable vending opportunities in terminals, waiting areas, and transit stations.</p>
+                <p className="text-stone leading-relaxed">Transportation hubs in Lagrange offer prime vending locations with high passenger volumes, extended operating hours, and captive audiences waiting for departures.</p>
               </motion.div>
             </div>
           </div>
-        </section>        {/* Why LaGrange? */}
+        </section>        {/* Why Lagrange? */}
         <section className="py-16 bg-warm-white">
           <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-8">
@@ -391,7 +416,7 @@ export default function LaGrangeGeorgiaVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-6"
               >
-                Why Choose LaGrange for Vending Machines?
+                Why Choose Lagrange for Vending Machines?
               </motion.h2>
             </div>
             <motion.div
@@ -402,8 +427,7 @@ export default function LaGrangeGeorgiaVendingLeadsPage() {
               className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
             >
               <p className="text-lg text-stone leading-relaxed">
-                The LaGrange market presents excellent vending potential through its combination of local businesses, healthcare systems, educational facilities, and commercial districts. The city's diverse economy ensures multiple traffic sources, while LaGrange's business density creates numerous placement options. The city's economic growth and business-friendly environment support long-term vending success with steady consumer demand.
-              </p>
+                With its thriving commercial districts and diverse business landscape, Lagrange offers multiple vending placement strategies. The city's combination of office complexes, retail centers, and community facilities ensures steady customer traffic.</p>
             </motion.div>
           </div>
         </section>
@@ -506,11 +530,11 @@ export default function LaGrangeGeorgiaVendingLeadsPage() {
           </div>
         </section>
 
-        {/* More cities in state */}
+        {/* More cities in Georgia */}
         {relatedCities.length > 0 && (
           <section className="py-12 bg-white border-t border-gray-200">
             <div className="mx-auto max-w-7xl px-6">
-              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in {stateDisplayName}</h2>
+              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in Georgia</h2>
               <div className="flex flex-wrap gap-3">
                 {relatedCities.map(city => (
                   <Link key={city.slug} href={`/vending-leads/${city.slug}`} className="px-3 py-2 rounded-lg border border-gray-200 bg-cream/60 text-chocolate hover:text-navy">
@@ -537,7 +561,7 @@ export default function LaGrangeGeorgiaVendingLeadsPage() {
               { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
               { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
               { '@type': 'ListItem', position: 3, name: 'Georgia', item: 'https://www.thevendinglocator.com/vending-leads/georgia' },
-              { '@type': 'ListItem', position: 4, name: 'LaGrange', item: 'https://www.thevendinglocator.com/vending-leads/lagrange-georgia' }
+              { '@type': 'ListItem', position: 4, name: 'Lagrange', item: 'https://www.thevendinglocator.com/vending-leads/lagrange-georgia' }
             ]
           })
         }}

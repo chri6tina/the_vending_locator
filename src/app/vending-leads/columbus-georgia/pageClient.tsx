@@ -139,8 +139,7 @@ export default function ColumbusGeorgiaVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Get comprehensive vending leads for Columbus's thriving Georgia market, combining local businesses, healthcare systems, and educational facilities for reliable vending machine placement.
-              </motion.p>
+                Unlock vending opportunities in Columbus, Georgia, featuring businesses with high employee counts and consistent visitor traffic.</motion.p>
 
               {/* Trust Signals */}
               <motion.div 
@@ -392,8 +391,7 @@ export default function ColumbusGeorgiaVendingLeadsPage() {
               className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
             >
               <p className="text-lg text-stone leading-relaxed">
-                Columbus offers reliable vending opportunities through its thriving business community, featuring diverse industries, commercial centers, and growing economic sectors. The city's business mix provides stable placement locations with consistent traffic patterns, while Columbus's economic activity supports steady consumer spending. The city's combination of established businesses and emerging sectors creates multiple vending placement strategies.
-              </p>
+                Columbus offers vending operators access to high-traffic locations across multiple industries. The city's commercial activity and business concentration create optimal conditions for vending machine success.</p>
             </motion.div>
           </div>
         </section>

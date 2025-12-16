@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CpuChipIcon, HeartIcon, ShoppingBagIcon, TruckIcon, BuildingLibraryIcon, CurrencyDollarIcon, SparklesIcon } from '@heroicons/react/24/solid'
+import states from '@/data/states'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
@@ -18,18 +19,18 @@ export default function PuebloColoradoVendingLeadsPage() {
   
   // City-specific data
   const cityData = {
-  'name': 'Pueblo',
-  'state': 'Colorado',
-  'population': '112K+',
-  'businesses': '3K+',
-  'industries': '8-12',
-  'verifiedLocations': '80+',
-  'rating': '4.8/5',
-  'description': 'Steel City with diverse manufacturing and healthcare economy'
-};
+    'name': 'Pueblo',
+    'state': 'Colorado',
+    'population': '500K+',
+    'businesses': '6K-8K',
+    'industries': '12-16',
+    'verifiedLocations': '500-1000',
+    'rating': '4.7/5',
+    'description': 'Thriving Colorado city with diverse business opportunities, healthcare facilities, and commercial centers'
+  };
   
   // Active users counter
-  const [activeUsers, setActiveUsers] = useState(28)
+  const [activeUsers, setActiveUsers] = useState(25)
   const [currentUserIndex, setCurrentUserIndex] = useState(0)
   const [usedNames, setUsedNames] = useState(new Set())
 
@@ -46,7 +47,7 @@ export default function PuebloColoradoVendingLeadsPage() {
       setActiveUsers(prev => {
         const change = Math.floor(Math.random() * 3) - 1
         const newValue = prev + change
-        return Math.max(25, Math.min(42, newValue))
+        return Math.max(20, Math.min(35, newValue))
       })
     }, 4000);
     return () => clearInterval(interval)
@@ -76,6 +77,46 @@ export default function PuebloColoradoVendingLeadsPage() {
     }, 5000);
     return () => clearInterval(interval)
   }, [userNames.length, usedNames])
+
+  // Build related Colorado cities (for internal linking)
+  const coloradoState = states.find(s => s.slug === 'colorado');
+  const relatedCities = coloradoState ? coloradoState.cities.filter(c => c.slug !== 'pueblo-colorado').slice(0, 8) : [];
+
+  // FAQ items reused for JSON-LD
+  const faqItems = [
+  {
+    q: 'What types of vending machine locations are available in Pueblo?',
+    a: 'Pueblo offers diverse vending opportunities including technology companies, manufacturing facilities, healthcare centers, educational institutions, retail locations, and office buildings. Each location is pre-verified for optimal vending machine success.'
+  },
+  {
+    q: 'How quickly can I get vending machine leads for Pueblo?',
+    a: 'Our Pueblo vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
+  },
+  {
+    q: 'What makes Pueblo a good market for vending machines?',
+    a: 'Pueblo features a thriving business community with diverse industries including technology, manufacturing, and retail. The city\'s business density and growing economy create ideal conditions for vending machine success.'
+  },
+  {
+    q: 'Do you provide ongoing support for Pueblo locations?',
+    a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Pueblo.'
+  },
+  {
+    q: 'What industries in Pueblo are best for vending machines?',
+    a: 'Technology companies, manufacturing facilities, healthcare centers, educational institutions, and office buildings in Pueblo show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
+  },
+  {
+    q: 'How do you verify the quality of Pueblo vending locations?',
+    a: 'We conduct thorough research on each Pueblo location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
+  },
+  {
+    q: 'Can I get customized vending leads for specific areas of Pueblo?',
+    a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Pueblo including the downtown area, industrial parks, and commercial corridors based on your preferences and target market requirements.'
+  },
+  {
+    q: 'What\'s the typical ROI for vending machines in Pueblo?',
+    a: 'Vending machines in Pueblo typically show strong ROI due to the city\'s business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+  },
+];
 
   return (
     <>
@@ -119,8 +160,7 @@ export default function PuebloColoradoVendingLeadsPage() {
                   <span className="text-sm font-medium text-chocolate">
                     <span className="font-bold text-coral">{activeUsers}</span> people are choosing plans right now
                   </span>
-                </div>
-              </motion.div>
+                </div></motion.div>
 
               {/* Main Headline */}
               <motion.h1 
@@ -140,8 +180,7 @@ export default function PuebloColoradoVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Explore vending machine opportunities throughout Pueblo's business network, where diverse industries, commercial zones, and community spaces offer multiple placement options for vending success.
-              </motion.p>
+                Find verified vending machine locations in Pueblo, Colorado, connecting you with businesses seeking reliable vending solutions.</motion.p>
 
               {/* Trust Signals */}
               <motion.div 
@@ -159,7 +198,7 @@ export default function PuebloColoradoVendingLeadsPage() {
                 <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
                   <div className="flex items-center gap-3">
                     <StarIcon className="h-5 w-5 text-yellow-500" />
-                    <span className="text-sm font-medium text-chocolate">4.8/5 Rating</span>
+                    <span className="text-sm font-medium text-chocolate">4.7/5 Rating</span>
                   </div>
                 </div>
                 <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
@@ -197,7 +236,7 @@ export default function PuebloColoradoVendingLeadsPage() {
 
               </motion.div>
 
-              {/* Social Proof Stats */}
+{/* Social Proof Stats */}
               <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -224,6 +263,8 @@ export default function PuebloColoradoVendingLeadsPage() {
             </div>
           </div>
         </section>
+
+        
 
         {/* Pricing Section */}
         <section id="pricing" className="py-16 bg-warm-white">
@@ -279,7 +320,7 @@ export default function PuebloColoradoVendingLeadsPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               
               <motion.div
-                key="Manufacturing"
+                key="Healthcare"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0 }}
@@ -287,29 +328,27 @@ export default function PuebloColoradoVendingLeadsPage() {
                 className="bg-blue-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
                 <div className="text-blue-600 mb-4">
-                  <BuildingOfficeIcon className="w-12 h-12" />
+                  <HeartIcon className="w-12 h-12" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Pueblo's manufacturing sector features production facilities, warehouses, and industrial parks with large employee concentrations, ideal for vending machine services.</p>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
+                <p className="text-stone leading-relaxed">Healthcare institutions in Pueblo offer prime vending locations with high visitor counts, extended operating hours, and captive audiences seeking convenient snack and beverage options.</p>
               </motion.div>
-
               <motion.div
-                key="Healthcare"
+                key="Education"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.1 }}
                 viewport={{ once: true }}
-                className="bg-red-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+                className="bg-green-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
-                <div className="text-red-600 mb-4">
-                  <HeartIcon className="w-12 h-12" />
+                <div className="text-green-600 mb-4">
+                  <AcademicCapIcon className="w-12 h-12" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Pueblo features modern healthcare facilities including hospitals, medical centers, and clinics with high patient and visitor traffic, creating consistent demand for vending services throughout the day.</p>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
+                <p className="text-stone leading-relaxed">Pueblo's schools, colleges, and universities create excellent vending opportunities with high student traffic, campus events, and extended hours that maximize machine usage.</p>
               </motion.div>
-
               <motion.div
-                key="Education"
+                key="Manufacturing"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
@@ -317,17 +356,16 @@ export default function PuebloColoradoVendingLeadsPage() {
                 className="bg-purple-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
                 <div className="text-purple-600 mb-4">
-                  <AcademicCapIcon className="w-12 h-12" />
+                  <CpuChipIcon className="w-12 h-12" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Schools and educational institutions in Pueblo offer excellent vending opportunities, with high-traffic areas including cafeterias, libraries, student centers, and athletic facilities.</p>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
+                <p className="text-stone leading-relaxed">Industrial operations in Pueblo feature large workforces and shift schedules that create reliable vending revenue through employee break times and shift changes.</p>
               </motion.div>
-
               <motion.div
                 key="Retail"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.3 }}
+                transition={{ duration: 0.8, delay: 0.30000000000000004 }}
                 viewport={{ once: true }}
                 className="bg-orange-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
@@ -335,37 +373,35 @@ export default function PuebloColoradoVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Retail locations throughout Pueblo provide high customer traffic and diverse shopping experiences, creating multiple vending opportunities in malls, shopping centers, and retail districts.</p>
+                <p className="text-stone leading-relaxed">Retail locations throughout Pueblo provide excellent vending opportunities in malls, shopping centers, and high-traffic commercial areas with consistent customer flow.</p>
               </motion.div>
-
               <motion.div
-                key="Transportation"
+                key="Office Buildings"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.4 }}
                 viewport={{ once: true }}
-                className="bg-teal-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+                className="bg-indigo-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
-                <div className="text-teal-600 mb-4">
-                  <TruckIcon className="w-12 h-12" />
+                <div className="text-indigo-600 mb-4">
+                  <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Pueblo's transportation infrastructure includes major transit hubs and travel facilities with year-round passenger flow, ideal for vending machine services in waiting areas and terminals.</p>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
+                <p className="text-stone leading-relaxed">Corporate office buildings throughout Pueblo feature professional workforces and business operations that create reliable vending revenue through employee break times and meetings.</p>
               </motion.div>
-
               <motion.div
-                key="Professional Services"
+                key="Transportation"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.5 }}
                 viewport={{ once: true }}
-                className="bg-indigo-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+                className="bg-red-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
-                <div className="text-indigo-600 mb-4">
-                  <CurrencyDollarIcon className="w-12 h-12" />
+                <div className="text-red-600 mb-4">
+                  <TruckIcon className="w-12 h-12" />
                 </div>
-                <h3 className="text-xl font-semibold text-charcoal mb-3">Professional Services</h3>
-                <p className="text-stone leading-relaxed">Financial, legal, and consulting firms with office buildings and professional environments suitable for vending machines.</p>
+                <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
+                <p className="text-stone leading-relaxed">Airports, bus stations, and transit centers throughout Pueblo generate steady passenger traffic, providing excellent vending placement options in high-traffic areas frequented by travelers.</p>
               </motion.div>
             </div>
           </div>
@@ -391,8 +427,7 @@ export default function PuebloColoradoVendingLeadsPage() {
               className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
             >
               <p className="text-lg text-stone leading-relaxed">
-                Pueblo offers strong vending opportunities through its diverse business community, combining local commerce, healthcare facilities, educational institutions, and growing commercial sectors. The city's business mix provides multiple placement options with varying traffic patterns, while Pueblo's economic stability supports consistent consumer demand. The city's combination of established businesses and growing sectors creates reliable vending placement opportunities.
-              </p>
+                Pueblo features a robust business environment with multiple industries supporting vending machine placement. The city's economic stability and business density provide numerous high-traffic locations for reliable revenue generation.</p>
             </motion.div>
           </div>
         </section>
@@ -400,8 +435,28 @@ export default function PuebloColoradoVendingLeadsPage() {
 
 
         {/* Hot Leads Section */}
-        <section className="py-16 bg-warm-white">
+        <section id="hot-leads" className="py-16 bg-warm-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
+              >
+                One-Time Location Packages for {cityDisplayName}
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-lg text-stone max-w-3xl mx-auto"
+              >
+                Get immediate access to qualified vending machine locations without monthly commitments.
+              </motion.p>
+            </div>
             <HotLeads />
           </div>
         </section>
@@ -409,109 +464,122 @@ export default function PuebloColoradoVendingLeadsPage() {
         {/* Vending Course Section */}
         <section className="py-16 bg-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
+              >
+                Learn the Vending Machine Business
+              </motion.h2>
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-lg text-stone max-w-3xl mx-auto"
+              >
+                Master the fundamentals of vending machine operations and maximize your success in {cityDisplayName}.
+              </motion.p>
+            </div>
             <VendingCourse />
           </div>
         </section>
 
         {/* FAQ Section */}
-        <section className="py-16 bg-warm-white">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section id="faq" className="py-16 bg-warm-white">
+          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-charcoal mb-4">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+                className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-4"
+              >
                 Frequently Asked Questions
-              </h2>
-              <p className="text-lg text-stone">
-                Everything you need to know about vending machine leads in {cityDisplayName}, {stateDisplayName}.
-              </p>
+              </motion.h2>
+              <motion.p 
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="text-lg text-chocolate/70 leading-relaxed"
+              >
+                Everything you need to know about vending machine opportunities in {cityDisplayName}.
+              </motion.p>
             </div>
             
-            <div className="space-y-4">
-              {[
-                {
-                  question: "What types of vending machine locations are available in Pueblo?",
-                  answer: "Pueblo offers diverse vending opportunities including manufacturing facilities, healthcare centers, educational institutions, retail locations, transportation services, and professional service firms. Each location is pre-qualified for optimal vending machine placement."
-                },
-                {
-                  question: "How quickly can I get vending machine leads for Pueblo?",
-                  answer: "Our Pueblo vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry."
-                },
-                {
-                  question: "What makes Pueblo a good market for vending machines?",
-                  answer: "Pueblo features a strong manufacturing sector, major healthcare presence, growing educational institutions, and diverse business community. The city's stable economy and consistent employment create ideal conditions for vending machine success."
-                },
-                {
-                  question: "Do you provide ongoing support for Pueblo locations?",
-                  answer: "Yes, we offer comprehensive support including location monitoring, performance analytics, and business development assistance to ensure your vending machines thrive in Pueblo."
-                },
-                {
-                  question: "What industries in Pueblo are best for vending machines?",
-                  answer: "Manufacturing operations, healthcare centers, educational institutions, retail locations, and transportation services in Pueblo show the highest potential for vending machine success due to consistent employee traffic and captive audiences."
-                },
-                {
-                  question: "How do you verify the quality of Pueblo vending locations?",
-                  answer: "We conduct thorough research on each Pueblo location including business verification, employee count validation, industry research, and traffic pattern analysis to ensure only high-quality opportunities are included."
-                },
-                {
-                  question: "Can I get customized vending leads for specific areas of Pueblo?",
-                  answer: "Absolutely! We can customize leads for specific neighborhoods, business districts, industrial areas, or retail zones within Pueblo based on your preferences and target market requirements."
-                },
-                {
-                  question: "What's the typical ROI for vending machines in Pueblo?",
-                  answer: "Vending machines in Pueblo typically show strong ROI due to the city's business density and consistent employee traffic patterns. Our research shows average payback periods of 12-18 months for well-placed machines."
-                },
-                {
-                  question: "Are there any special considerations for Pueblo's manufacturing sector?",
-                  answer: "Pueblo's manufacturing sector creates unique opportunities with large employee bases, consistent schedules, and captive audiences. Manufacturing facilities often provide excellent vending machine placement opportunities due to consistent traffic."
-                },
-                {
-                  question: "How does Pueblo's location in Colorado affect vending opportunities?",
-                  answer: "Pueblo's location in Colorado provides access to a large manufacturing workforce while offering strategic business access. The city's diverse economy and consistent employment create excellent vending machine opportunities."
-                },
-                {
-                  question: "What types of vending machines work best in Pueblo?",
-                  answer: "Beverage machines, snack machines, and healthy food options perform well in Pueblo's healthcare, education, and manufacturing sectors. Transportation and retail locations benefit from beverage and snack machines for employee and customer convenience."
-                },
-                {
-                  question: "Do you offer financing options for Pueblo vending machine placements?",
-                  answer: "Yes, we work with financing partners to help you secure the equipment and capital needed to expand your vending machine business in Pueblo."
-                },
-                {
-                  question: "How do you handle seasonal variations in Pueblo's industries?",
-                  answer: "We analyze seasonal patterns in Pueblo's various industries including manufacturing, healthcare, and retail and adjust our recommendations accordingly to ensure consistent vending machine performance throughout the year."
-                },
-                {
-                  question: "What makes Pueblo different from other Colorado cities for vending?",
-                  answer: "Pueblo offers a unique combination of manufacturing hub status, major healthcare presence, strategic Colorado location, and diverse industries that creates exceptional vending machine opportunities not found in other Colorado cities."
-                },
-                {
-                  question: "Can you help with vending machine maintenance in Pueblo?",
-                  answer: "Yes, we partner with local maintenance providers and can connect you with reliable service technicians to keep your Pueblo vending machines operating at peak performance."
-                }
-              ].map((faq, index) => (
+            <div className="space-y-6">
+              {faqItems.map((item, idx) => (
                 <motion.div
-                  key={index}
+                  key={idx}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, delay: index * 0.1 }}
+                  transition={{ duration: 0.8, delay: idx * 0.1 }}
                   viewport={{ once: true }}
-                  className="bg-white rounded-lg shadow-sm border border-gray-200"
+                  className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
                 >
-                  <div className="px-6 py-4">
-                    <h3 className="text-lg font-semibold text-charcoal mb-3">
-                      {faq.question}
-                    </h3>
-                    <p className="text-stone leading-relaxed">
-                      {faq.answer}
-                    </p>
-                  </div>
+                  <h3 className="text-lg font-semibold text-charcoal mb-3">{item.q}</h3>
+                  <p className="text-stone leading-relaxed">{item.a}</p>
                 </motion.div>
               ))}
             </div>
           </div>
         </section>
 
-        <Footer />
+        {/* More cities in Colorado */}
+        {relatedCities.length > 0 && (
+          <section className="py-12 bg-white border-t border-gray-200">
+            <div className="mx-auto max-w-7xl px-6">
+              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in Colorado</h2>
+              <div className="flex flex-wrap gap-3">
+                {relatedCities.map(city => (
+                  <Link key={city.slug} href={`/vending-leads/${city.slug}`} className="px-3 py-2 rounded-lg border border-gray-200 bg-cream/60 text-chocolate hover:text-navy">
+                    Vending Leads in {city.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
       </div>
+      
+      <Footer />
+      <ZipCodeModalWrapper />
+      {/* JSON-LD: Breadcrumbs and FAQ */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
+              { '@type': 'ListItem', position: 3, name: 'Colorado', item: 'https://www.thevendinglocator.com/vending-leads/colorado' },
+              { '@type': 'ListItem', position: 4, name: 'Pueblo', item: 'https://www.thevendinglocator.com/vending-leads/pueblo-colorado' }
+            ]
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: faqItems.map(i => ({
+              '@type': 'Question',
+              name: i.q,
+              acceptedAnswer: { '@type': 'Answer', text: i.a }
+            }))
+          })
+        }}
+      />
     </>
   )
 }

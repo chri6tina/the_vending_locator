@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, MapPinIcon, UsersIcon, BuildingOfficeIcon, AcademicCapIcon, CpuChipIcon, HeartIcon, ShoppingBagIcon, TruckIcon, BuildingLibraryIcon, CurrencyDollarIcon, SparklesIcon } from '@heroicons/react/24/solid'
+import states from '@/data/states'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import PricingTable from '@/components/PricingTable'
@@ -18,32 +19,27 @@ export default function PompanoBeachFloridaVendingLeadsPage() {
   
   // City-specific data
   const cityData = {
-  'name': 'Pompano Beach',
-  'state': 'Florida',
-  'population': '112K+',
-  'businesses': '10K+',
-  'industries': '10-12',
-  'verifiedLocations': '200-300',
-  'rating': '4.8/5',
-  'description': 'Thriving business community in Florida'
-};
+    'name': 'Pompano Beach',
+    'state': 'Florida',
+    'population': '150K+',
+    'businesses': '6K-8K',
+    'industries': '14-18',
+    'verifiedLocations': '500-1000',
+    'rating': '4.7/5',
+    'description': 'Thriving Florida city with diverse business opportunities, healthcare facilities, and commercial centers'
+  };
   
   // Active users counter
-  const [activeUsers, setActiveUsers] = useState(28)
+  const [activeUsers, setActiveUsers] = useState(25)
   const [currentUserIndex, setCurrentUserIndex] = useState(0)
   const [usedNames, setUsedNames] = useState(new Set())
-  const [currentPurchaseIndex, setCurrentPurchaseIndex] = useState(0)
-  const [usedPurchases, setUsedPurchases] = useState(new Set())
 
   // User names for active users counter
   const [userNames, setUserNames] = useState([
-    'Mike from Pompano Beach', 'Sarah in Downtown', 'David in Pompano Beach', 'Lisa in Pompano Beach',
+    'Mike from Pompano Beach', 'Sarah in Pompano Beach', 'David in Pompano Beach', 'Lisa in Pompano Beach',
     'Tom in Pompano Beach', 'Jennifer in Pompano Beach', 'Robert in Pompano Beach', 'Amanda in Pompano Beach',
     'Chris in Pompano Beach', 'Maria in Pompano Beach', 'James in Pompano Beach', 'Emily in Pompano Beach'
   ])
-
-  // Recent purchases disabled per requirements
-  const [recentPurchases, setRecentPurchases] = useState<string[]>([])
 
   // Active users counter effect
   useEffect(() => {
@@ -51,13 +47,13 @@ export default function PompanoBeachFloridaVendingLeadsPage() {
       setActiveUsers(prev => {
         const change = Math.floor(Math.random() * 3) - 1
         const newValue = prev + change
-        return Math.max(25, Math.min(42, newValue))
+        return Math.max(20, Math.min(35, newValue))
       })
-    }, 4000)
+    }, 4000);
     return () => clearInterval(interval)
   }, [])
 
-  // Smart rotation of user names and recent purchases
+  // Smart rotation of user names
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentUserIndex(prev => {
@@ -69,42 +65,58 @@ export default function PompanoBeachFloridaVendingLeadsPage() {
         while (attempts < 50) {
           nextIndex = (nextIndex + 1) % userNames.length
           if (!usedNames.has(nextIndex)) {
-            setUsedNames(prev => new Set([...prev, nextIndex]))
+            setUsedNames(prev => new Set([...prev, nextIndex]));
             return nextIndex
           }
           attempts++
         }
         const randomIndex = Math.floor(Math.random() * userNames.length)
-        setUsedNames(prev => new Set([...prev, randomIndex]))
+        setUsedNames(prev => new Set([...prev, randomIndex]));
         return randomIndex
       })
-    }, 5000)
+    }, 5000);
     return () => clearInterval(interval)
   }, [userNames.length, usedNames])
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentPurchaseIndex(prev => {
-        if (usedPurchases.size > recentPurchases.length * 0.8) {
-          setUsedPurchases(new Set())
-        }
-        let attempts = 0
-        let nextIndex = prev
-        while (attempts < 50) {
-          nextIndex = (nextIndex + 1) % recentPurchases.length
-          if (!usedPurchases.has(nextIndex)) {
-            setUsedPurchases(prev => new Set([...prev, nextIndex]))
-            return nextIndex
-          }
-          attempts++
-        }
-        const randomIndex = Math.floor(Math.random() * recentPurchases.length)
-        setUsedPurchases(prev => new Set([...prev, randomIndex]))
-        return randomIndex
-      })
-    }, 6000)
-    return () => clearInterval(interval)
-  }, [recentPurchases.length, usedPurchases])
+  // Build related Florida cities (for internal linking)
+  const coloradoState = states.find(s => s.slug === 'florida');
+  const relatedCities = coloradoState ? coloradoState.cities.filter(c => c.slug !== 'pompano-beach-florida').slice(0, 8) : [];
+
+  // FAQ items reused for JSON-LD
+  const faqItems = [
+  {
+    q: 'What types of vending machine locations are available in Pompano Beach?',
+    a: 'Pompano Beach offers diverse vending opportunities including technology companies, manufacturing facilities, healthcare centers, educational institutions, retail locations, and office buildings. Each location is pre-verified for optimal vending machine success.'
+  },
+  {
+    q: 'How quickly can I get vending machine leads for Pompano Beach?',
+    a: 'Our Pompano Beach vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
+  },
+  {
+    q: 'What makes Pompano Beach a good market for vending machines?',
+    a: 'Pompano Beach features a thriving business community with diverse industries including technology, manufacturing, and retail. The city\'s business density and growing economy create ideal conditions for vending machine success.'
+  },
+  {
+    q: 'Do you provide ongoing support for Pompano Beach locations?',
+    a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Pompano Beach.'
+  },
+  {
+    q: 'What industries in Pompano Beach are best for vending machines?',
+    a: 'Technology companies, manufacturing facilities, healthcare centers, educational institutions, and office buildings in Pompano Beach show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
+  },
+  {
+    q: 'How do you verify the quality of Pompano Beach vending locations?',
+    a: 'We conduct thorough research on each Pompano Beach location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
+  },
+  {
+    q: 'Can I get customized vending leads for specific areas of Pompano Beach?',
+    a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Pompano Beach including the downtown area, industrial parks, and commercial corridors based on your preferences and target market requirements.'
+  },
+  {
+    q: 'What\'s the typical ROI for vending machines in Pompano Beach?',
+    a: 'Vending machines in Pompano Beach typically show strong ROI due to the city\'s business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+  },
+];
 
   return (
     <>
@@ -123,8 +135,8 @@ export default function PompanoBeachFloridaVendingLeadsPage() {
                 Vending Leads
               </Link>
               <span>/</span>
-              <Link href="/vending-leads/florida" className="hover:text-navy transition-colors">
-                Florida
+              <Link href={`/vending-leads/${stateDisplayName.toLowerCase().replace(/\s+/g, '-')}`} className="hover:text-navy transition-colors">
+                {stateDisplayName}
               </Link>
               <span>/</span>
               <span className="text-charcoal font-medium">{cityDisplayName}</span>
@@ -136,17 +148,19 @@ export default function PompanoBeachFloridaVendingLeadsPage() {
         <section className="relative py-20 bg-white overflow-hidden">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto text-center">
-              {/* Active Users Counter Pill */}
+              {/* Active Users Counter */}
               <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
-                className="inline-flex items-center bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium mb-6"
+                className="mt-6 sm:mt-8 p-4 bg-cream/50 backdrop-blur-sm rounded-2xl border border-gray-200 shadow-sm max-w-md mx-auto mb-6"
               >
-                <UsersIcon className="w-4 h-4 mr-2" />
-                <span className="animate-pulse">{activeUsers} people</span>
-                <span className="ml-2">are currently viewing vending locations</span>
-              </motion.div>
+                <div className="flex items-center justify-center gap-3">
+                  <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                  <span className="text-sm font-medium text-chocolate">
+                    <span className="font-bold text-coral">{activeUsers}</span> people are choosing plans right now
+                  </span>
+                </div></motion.div>
 
               {/* Main Headline */}
               <motion.h1 
@@ -166,46 +180,63 @@ export default function PompanoBeachFloridaVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Discover pre-qualified vending opportunities in Pompano Beach's growing economy, featuring business districts, commercial centers, and community facilities with consistent foot traffic.
-              </motion.p>
+                Find verified vending machine locations in Pompano Beach, Florida, connecting you with businesses seeking reliable vending solutions.</motion.p>
 
-              {/* Trust/Feature Badges */}
+              {/* Trust Signals */}
               <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.8 }}
-                className="flex flex-wrap gap-4 mb-8 justify-center"
+                className="mt-6 sm:mt-8 grid grid-cols-2 gap-4 max-w-md mx-auto mb-8"
               >
-                <div className="flex items-center gap-2 bg-green-50 text-green-700 px-3 py-2 rounded-full text-sm">
-                  <CheckBadgeIcon className="w-4 h-4" />
-                  <span>Pre-verified locations</span>
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <CheckBadgeIcon className="h-5 w-5 text-green-600" />
+                    <span className="text-sm font-medium text-chocolate">Verified Locations</span>
+                  </div>
                 </div>
-                <div className="flex items-center gap-2 bg-blue-50 text-blue-700 px-3 py-2 rounded-full text-sm">
-                  <ClockIcon className="w-4 h-4" />
-                  <span>3-5 day delivery</span>
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <StarIcon className="h-5 w-5 text-yellow-500" />
+                    <span className="text-sm font-medium text-chocolate">4.7/5 Rating</span>
+                  </div>
                 </div>
-                <div className="flex items-center gap-2 bg-purple-50 text-purple-700 px-3 py-2 rounded-full text-sm">
-                  <StarIcon className="w-4 h-4" />
-                  <span>4.8/5 rating</span>
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <ShieldCheckIcon className="h-5 w-5 text-blue-600" />
+                    <span className="text-sm font-medium text-chocolate">Secure & Reliable</span>
+                  </div>
+                </div>
+                <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
+                  <div className="flex items-center gap-3">
+                    <ClockIcon className="h-5 w-5 text-purple-600" />
+                    <span className="text-sm font-medium text-chocolate">Quality Research</span>
+                  </div>
                 </div>
               </motion.div>
 
-              {/* CTA Button - Single button only */}
+              {/* CTA Buttons */}
               <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 1.0 }}
-                className="flex flex-col sm:flex-row gap-4 mb-8 justify-center items-center"
+                className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 mb-8"
               >
-                <a 
-                  href="#pricing"
-                  className="bg-navy hover:bg-navy/90 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1 min-w-[200px] text-center"
+                <button 
+                    onClick={() => {
+                      const pricingSection = document.getElementById('pricing')
+                      if (pricingSection) {
+                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                      }
+                    }}
+                    className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
                 >
-                  View Pricing Plans
-                </a>
+                    Get Started
+                  </button>
+
               </motion.div>
 
-              {/* Social Proof Stats */}
+{/* Social Proof Stats */}
               <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -232,6 +263,8 @@ export default function PompanoBeachFloridaVendingLeadsPage() {
             </div>
           </div>
         </section>
+
+        
 
         {/* Pricing Section */}
         <section id="pricing" className="py-16 bg-warm-white">
@@ -295,10 +328,10 @@ export default function PompanoBeachFloridaVendingLeadsPage() {
                 className="bg-blue-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
                 <div className="text-blue-600 mb-4">
-                  <BuildingOfficeIcon className="w-12 h-12" />
+                  <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Medical centers and healthcare facilities throughout Pompano Beach offer excellent vending placement opportunities, with high-traffic areas including waiting rooms, cafeterias, and employee break areas.</p>
+                <p className="text-stone leading-relaxed">Healthcare institutions in Pompano Beach offer prime vending locations with high visitor counts, extended operating hours, and captive audiences seeking convenient snack and beverage options.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -312,7 +345,7 @@ export default function PompanoBeachFloridaVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Pompano Beach's education sector features schools, universities, and training facilities with captive audiences during academic hours, creating reliable vending machine placement opportunities.</p>
+                <p className="text-stone leading-relaxed">Pompano Beach's schools, colleges, and universities create excellent vending opportunities with high student traffic, campus events, and extended hours that maximize machine usage.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -326,7 +359,7 @@ export default function PompanoBeachFloridaVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Manufacturing facilities in Pompano Beach operate around the clock with significant employee populations, providing consistent vending opportunities in break rooms and common areas.</p>
+                <p className="text-stone leading-relaxed">Industrial operations in Pompano Beach feature large workforces and shift schedules that create reliable vending revenue through employee break times and shift changes.</p>
               </motion.div>
               <motion.div
                 key="Retail"
@@ -340,7 +373,7 @@ export default function PompanoBeachFloridaVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Retail establishments in Pompano Beach attract diverse customer demographics and generate steady foot traffic, providing reliable vending opportunities across various retail environments.</p>
+                <p className="text-stone leading-relaxed">Retail locations throughout Pompano Beach provide excellent vending opportunities in malls, shopping centers, and high-traffic commercial areas with consistent customer flow.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -354,7 +387,7 @@ export default function PompanoBeachFloridaVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Pompano Beach's office sector includes business districts, corporate campuses, and professional centers with high employee concentrations, ideal for vending services in common areas and break rooms.</p>
+                <p className="text-stone leading-relaxed">Corporate office buildings throughout Pompano Beach feature professional workforces and business operations that create reliable vending revenue through employee break times and meetings.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -368,7 +401,7 @@ export default function PompanoBeachFloridaVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Transportation facilities in Pompano Beach serve travelers and commuters with consistent foot traffic throughout the day, offering reliable vending opportunities in terminals, waiting areas, and transit stations.</p>
+                <p className="text-stone leading-relaxed">Airports, bus stations, and transit centers throughout Pompano Beach generate steady passenger traffic, providing excellent vending placement options in high-traffic areas frequented by travelers.</p>
               </motion.div>
             </div>
           </div>
@@ -394,8 +427,7 @@ export default function PompanoBeachFloridaVendingLeadsPage() {
               className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
             >
               <p className="text-lg text-stone leading-relaxed">
-                Pompano Beach offers reliable vending opportunities through its thriving business community, featuring diverse industries, commercial centers, and growing economic sectors. The city's business mix provides stable placement locations with consistent traffic patterns, while Pompano Beach's economic activity supports steady consumer spending. The city's combination of established businesses and emerging sectors creates multiple vending placement strategies.
-              </p>
+                Pompano Beach features a robust business environment with multiple industries supporting vending machine placement. The city's economic stability and business density provide numerous high-traffic locations for reliable revenue generation.</p>
             </motion.div>
           </div>
         </section>
@@ -403,7 +435,7 @@ export default function PompanoBeachFloridaVendingLeadsPage() {
 
 
         {/* Hot Leads Section */}
-        <section className="py-16 bg-warm-white">
+        <section id="hot-leads" className="py-16 bg-warm-white">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <motion.h2
@@ -457,7 +489,7 @@ export default function PompanoBeachFloridaVendingLeadsPage() {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-16 bg-warm-white">
+        <section id="faq" className="py-16 bg-warm-white">
           <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <motion.h2
@@ -469,114 +501,85 @@ export default function PompanoBeachFloridaVendingLeadsPage() {
               >
                 Frequently Asked Questions
               </motion.h2>
-              <motion.p
+              <motion.p 
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
                 viewport={{ once: true }}
-                className="text-lg text-stone"
+                className="text-lg text-chocolate/70 leading-relaxed"
               >
                 Everything you need to know about vending machine opportunities in {cityDisplayName}.
               </motion.p>
             </div>
             
             <div className="space-y-6">
-              
-              <motion.div
-                key="0"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What types of vending machine locations are available in Pompano Beach?</h3>
-                <p className="text-stone leading-relaxed">Pompano Beach specializes in marine industry, tourism, retail, and healthcare, offering vending opportunities in marinas, marine services, hotels, retail centers, and medical facilities. Each location is pre-verified and selected based on Pompano Beach's boating and fishing hub with beach tourism.</p>
-              </motion.div>
-              <motion.div
-                key="1"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.1 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">How quickly can I start placing vending machines in Pompano Beach?</h3>
-                <p className="text-stone leading-relaxed">Our Pompano Beach vending leads are delivered within 3-5 business days. We provide comprehensive research on Pompano Beach's marine industry, tourism, retail, and healthcare, including detailed business information, contact details, and specific insights about coastal economy with marine industry foundation to accelerate your market entry.</p>
-              </motion.div>
-              <motion.div
-                key="2"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What makes Pompano Beach a strong market for vending machines?</h3>
-                <p className="text-stone leading-relaxed">Pompano Beach's boating and fishing hub with beach tourism creates ideal vending conditions. The city's coastal economy with marine industry foundation ensures consistent customer traffic, while fishing season and tourism drive seasonal patterns provides predictable revenue patterns for vending operators.</p>
-              </motion.div>
-              <motion.div
-                key="3"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.30000000000000004 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">Which neighborhoods in Pompano Beach offer the best vending opportunities?</h3>
-                <p className="text-stone leading-relaxed">Top vending locations in Pompano Beach include Atlantic Boulevard corridor, Federal Highway commercial strip, Pompano Beach Pier area, and Copans Road retail zone. These areas combine high foot traffic with the types of businesses most suitable for vending machine success.</p>
-              </motion.div>
-              <motion.div
-                key="4"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What industries in Pompano Beach are most profitable for vending machines?</h3>
-                <p className="text-stone leading-relaxed">In Pompano Beach, marine industry, tourism, retail, and healthcare show the strongest vending performance. marine industry and beach tourism areas show strong seasonal performance, making these sectors particularly attractive for vending machine placement.</p>
-              </motion.div>
-              <motion.div
-                key="5"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.5 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">How do you verify Pompano Beach vending locations?</h3>
-                <p className="text-stone leading-relaxed">We conduct detailed research specific to Pompano Beach's market, including business verification, foot traffic analysis for marine industry, tourism, retail, and healthcare, employee count validation, and industry-specific research. Our verification process accounts for Pompano Beach's boating and fishing hub with beach tourism to ensure optimal location selection.</p>
-              </motion.div>
-              <motion.div
-                key="6"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.6000000000000001 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">Can I get customized vending leads for specific Pompano Beach business districts?</h3>
-                <p className="text-stone leading-relaxed">Absolutely! We can target specific areas like Atlantic Boulevard corridor, Federal Highway commercial strip, Pompano Beach Pier area, and Copans Road retail zone, or focus on particular industries within Pompano Beach. Our research team can customize lead packages based on your preferred neighborhoods, business types, or industry sectors.</p>
-              </motion.div>
-              <motion.div
-                key="7"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.7000000000000001 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
-              >
-                <h3 className="text-lg font-semibold text-charcoal mb-3">What should I know about operating vending machines in Pompano Beach?</h3>
-                <p className="text-stone leading-relaxed">outdoor recreation and beach-going demographics influence optimal product selections. Understanding Pompano Beach's boating and fishing hub with beach tourism is key to maximizing your vending machine success. We provide ongoing market insights and support specific to Pompano Beach's business environment.</p>
-              </motion.div>
+              {faqItems.map((item, idx) => (
+                <motion.div
+                  key={idx}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.8, delay: idx * 0.1 }}
+                  viewport={{ once: true }}
+                  className="bg-white rounded-lg shadow-sm border border-gray-200 p-6"
+                >
+                  <h3 className="text-lg font-semibold text-charcoal mb-3">{item.q}</h3>
+                  <p className="text-stone leading-relaxed">{item.a}</p>
+                </motion.div>
+              ))}
             </div>
           </div>
         </section>
+
+        {/* More cities in Florida */}
+        {relatedCities.length > 0 && (
+          <section className="py-12 bg-white border-t border-gray-200">
+            <div className="mx-auto max-w-7xl px-6">
+              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in Florida</h2>
+              <div className="flex flex-wrap gap-3">
+                {relatedCities.map(city => (
+                  <Link key={city.slug} href={`/vending-leads/${city.slug}`} className="px-3 py-2 rounded-lg border border-gray-200 bg-cream/60 text-chocolate hover:text-navy">
+                    Vending Leads in {city.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
       </div>
       
       <Footer />
       <ZipCodeModalWrapper />
+      {/* JSON-LD: Breadcrumbs and FAQ */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
+              { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
+              { '@type': 'ListItem', position: 3, name: 'Florida', item: 'https://www.thevendinglocator.com/vending-leads/florida' },
+              { '@type': 'ListItem', position: 4, name: 'Pompano Beach', item: 'https://www.thevendinglocator.com/vending-leads/pompano-beach-florida' }
+            ]
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: faqItems.map(i => ({
+              '@type': 'Question',
+              name: i.q,
+              acceptedAnswer: { '@type': 'Answer', text: i.a }
+            }))
+          })
+        }}
+      />
     </>
   )
 }

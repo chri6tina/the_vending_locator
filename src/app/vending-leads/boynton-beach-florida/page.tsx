@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Boynton Beach, Florida - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Boynton Beach, Florida. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines boynton beach florida, vending leads boynton beach florida, vending locations boynton beach florida, vending opportunities boynton beach florida",
+  "keywords": "vending machines Boynton Beach Florida, vending leads Boynton Beach Florida, vending locations Boynton Beach Florida, vending opportunities Boynton Beach Florida",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/boynton-beach-florida"
   },

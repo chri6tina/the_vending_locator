@@ -21,12 +21,12 @@ export default function LewistonMaineVendingLeadsPage() {
   const cityData = {
     'name': 'Lewiston',
     'state': 'Maine',
-    'population': '~36,000',
-    'businesses': '1K-1.4K',
-    'industries': '6-8',
-    'verifiedLocations': '45-90',
+    'population': '200K+',
+    'businesses': '8K-12K',
+    'industries': '14-18',
+    'verifiedLocations': '300-500',
     'rating': '4.7/5',
-    'description': 'Historic manufacturing city with growing healthcare and education sectors'
+    'description': 'Thriving Maine city with diverse business opportunities, healthcare facilities, and commercial centers'
   };
   
   // Active users counter
@@ -78,21 +78,45 @@ export default function LewistonMaineVendingLeadsPage() {
     return () => clearInterval(interval)
   }, [userNames.length, usedNames])
 
-  // Build related New Hampshire cities (for internal linking)
-  const newHampshire = states.find(s => s.slug === 'maine');
-  const relatedCities = newHampshire ? newHampshire.cities.filter(c => c.slug !== 'manchester-maine').slice(0, 8) : [];
+  // Build related Maine cities (for internal linking)
+  const coloradoState = states.find(s => s.slug === 'maine');
+  const relatedCities = coloradoState ? coloradoState.cities.filter(c => c.slug !== 'lewiston-maine').slice(0, 8) : [];
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: "What types of vending machine locations are available in Lewiston?", a: "Lewiston offers vending opportunities in manufacturing facilities, healthcare centers (Central Maine Medical Center), Bates College, retail locations, and downtown office buildings." },
-    { q: "How quickly can I get vending machine leads for Lewiston?", a: "Our Lewiston vending leads are delivered within 3-5 business days with comprehensive details about each location and industry-specific placement insights." },
-    { q: "What makes Lewiston a good market for vending machines?", a: "Lewiston's diverse economy combines historic manufacturing with growing healthcare and education sectors. The city's business diversity and urban density create excellent vending opportunities." },
-    { q: "Do you provide ongoing support for Lewiston locations?", a: "Yes, we offer full support including location verification, contact information, industry analysis, and placement strategies specific to Lewiston's market." },
-    { q: "What industries in Lewiston are best for vending machines?", a: "Healthcare facilities, educational institutions (Bates College), manufacturing plants, and downtown offices show the highest potential for consistent vending revenue." },
-    { q: "How do you verify the quality of Lewiston vending locations?", a: "We verify each location through business research, employee count validation, foot traffic analysis, and facility assessment to ensure quality placements." },
-    { q: "Can I get customized vending leads for specific areas of Lewiston?", a: "Absolutely! We can target the downtown Lisbon Street corridor, Bates College area, or industrial zones along the Androscoggin River based on your preferences." },
-    { q: "What's the typical ROI for vending machines in Lewiston?", a: "Vending machines in Lewiston typically achieve ROI within 13-17 months, with healthcare and educational placements often seeing faster returns." }
-  ];
+  {
+    q: 'What types of vending machine locations are available in Lewiston?',
+    a: 'Lewiston offers diverse vending opportunities including technology companies, manufacturing facilities, healthcare centers, educational institutions, retail locations, and office buildings. Each location is pre-verified for optimal vending machine success.'
+  },
+  {
+    q: 'How quickly can I get vending machine leads for Lewiston?',
+    a: 'Our Lewiston vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
+  },
+  {
+    q: 'What makes Lewiston a good market for vending machines?',
+    a: 'Lewiston features a thriving business community with diverse industries including technology, manufacturing, and retail. The city\'s business density and growing economy create ideal conditions for vending machine success.'
+  },
+  {
+    q: 'Do you provide ongoing support for Lewiston locations?',
+    a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Lewiston.'
+  },
+  {
+    q: 'What industries in Lewiston are best for vending machines?',
+    a: 'Technology companies, manufacturing facilities, healthcare centers, educational institutions, and office buildings in Lewiston show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
+  },
+  {
+    q: 'How do you verify the quality of Lewiston vending locations?',
+    a: 'We conduct thorough research on each Lewiston location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
+  },
+  {
+    q: 'Can I get customized vending leads for specific areas of Lewiston?',
+    a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Lewiston including the downtown area, industrial parks, and commercial corridors based on your preferences and target market requirements.'
+  },
+  {
+    q: 'What\'s the typical ROI for vending machines in Lewiston?',
+    a: 'Vending machines in Lewiston typically show strong ROI due to the city\'s business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+  },
+];
 
   return (
     <>
@@ -156,8 +180,7 @@ export default function LewistonMaineVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Discover pre-qualified vending opportunities in Lewiston's growing economy, featuring business districts, commercial centers, and community facilities with consistent foot traffic.
-              </motion.p>
+                Access targeted vending leads in Lewiston, Maine, covering industrial parks, shopping centers, and professional office complexes.</motion.p>
 
               {/* Trust Signals */}
               <motion.div 
@@ -308,7 +331,7 @@ export default function LewistonMaineVendingLeadsPage() {
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Medical centers and healthcare facilities throughout Lewiston offer excellent vending placement opportunities, with high-traffic areas including waiting rooms, cafeterias, and employee break areas.</p>
+                <p className="text-stone leading-relaxed">Medical facilities throughout Lewiston serve large patient populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services in waiting areas and break rooms.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -322,7 +345,7 @@ export default function LewistonMaineVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Lewiston's education sector features schools, universities, and training facilities with captive audiences during academic hours, creating reliable vending machine placement opportunities.</p>
+                <p className="text-stone leading-relaxed">Educational facilities throughout Lewiston serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -336,7 +359,7 @@ export default function LewistonMaineVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Manufacturing facilities in Lewiston operate around the clock with significant employee populations, providing consistent vending opportunities in break rooms and common areas.</p>
+                <p className="text-stone leading-relaxed">Manufacturing facilities in Lewiston provide excellent vending locations with large employee bases, multiple shifts, and break areas that generate consistent sales throughout the day.</p>
               </motion.div>
               <motion.div
                 key="Retail"
@@ -350,7 +373,7 @@ export default function LewistonMaineVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Retail establishments in Lewiston attract diverse customer demographics and generate steady foot traffic, providing reliable vending opportunities across various retail environments.</p>
+                <p className="text-stone leading-relaxed">Shopping centers and retail districts in Lewiston offer prime vending locations, with high-traffic areas including food courts, entrances, and common spaces frequented by shoppers.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -364,7 +387,7 @@ export default function LewistonMaineVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Lewiston's office sector includes business districts, corporate campuses, and professional centers with high employee concentrations, ideal for vending services in common areas and break rooms.</p>
+                <p className="text-stone leading-relaxed">Office complexes in Lewiston provide ideal vending locations with multiple tenants, high employee counts, and break areas that ensure steady machine usage during business hours.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -378,7 +401,7 @@ export default function LewistonMaineVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Transportation facilities in Lewiston serve travelers and commuters with consistent foot traffic throughout the day, offering reliable vending opportunities in terminals, waiting areas, and transit stations.</p>
+                <p className="text-stone leading-relaxed">Transit facilities throughout Lewiston provide excellent vending opportunities in terminals, waiting areas, and high-traffic zones with consistent traveler foot traffic.</p>
               </motion.div>
             </div>
           </div>
@@ -404,8 +427,7 @@ export default function LewistonMaineVendingLeadsPage() {
               className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
             >
               <p className="text-lg text-stone leading-relaxed">
-                The Lewiston market presents excellent vending potential through its combination of local businesses, healthcare systems, educational facilities, and commercial districts. The city's diverse economy ensures multiple traffic sources, while Lewiston's business density creates numerous placement options. The city's economic growth and business-friendly environment support long-term vending success with steady consumer demand.
-              </p>
+                Through Lewiston's diverse business ecosystem, vending machines find placement in healthcare systems, educational facilities, and corporate offices. The city's economic activity supports consistent consumer demand.</p>
             </motion.div>
           </div>
         </section>
@@ -508,11 +530,11 @@ export default function LewistonMaineVendingLeadsPage() {
           </div>
         </section>
 
-        {/* More cities in New Hampshire */}
+        {/* More cities in Maine */}
         {relatedCities.length > 0 && (
           <section className="py-12 bg-white border-t border-gray-200">
             <div className="mx-auto max-w-7xl px-6">
-              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in New Hampshire</h2>
+              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in Maine</h2>
               <div className="flex flex-wrap gap-3">
                 {relatedCities.map(city => (
                   <Link key={city.slug} href={`/vending-leads/${city.slug}`} className="px-3 py-2 rounded-lg border border-gray-200 bg-cream/60 text-chocolate hover:text-navy">
@@ -538,8 +560,8 @@ export default function LewistonMaineVendingLeadsPage() {
             itemListElement: [
               { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
               { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/maine' },
-              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-maine' }
+              { '@type': 'ListItem', position: 3, name: 'Maine', item: 'https://www.thevendinglocator.com/vending-leads/maine' },
+              { '@type': 'ListItem', position: 4, name: 'Lewiston', item: 'https://www.thevendinglocator.com/vending-leads/lewiston-maine' }
             ]
           })
         }}

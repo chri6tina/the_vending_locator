@@ -19,15 +19,14 @@ export default function EvanstonIllinoisVendingLeadsPage() {
   
   // City-specific data
   const cityData = {
-    name: 'Evanston',
-    state: 'Illinois',
-    population: '78,000+',
-    businesses: '12,000+',
-    description: 'Northwestern University and business hub',
-    majorIndustries: ['Education', 'Healthcare', 'Technology', 'Professional Services', 'Retail', 'Manufacturing', 'Research'],
-    topBusinesses: ['Northwestern University', 'NorthShore University HealthSystem', 'Technology Companies', 'Professional Service Firms', 'Research Institutes', 'Manufacturing Companies', 'Retail Centers'],
-    vendingOpportunities: '120+',
-    businessCount: '170+'
+    'name': 'Evanston',
+    'state': 'Illinois',
+    'population': '150K+',
+    'businesses': '12K-20K',
+    'industries': '14-18',
+    'verifiedLocations': '200-350',
+    'rating': '4.7/5',
+    'description': 'Thriving Illinois city with diverse business opportunities, healthcare facilities, and commercial centers'
   };
   
   // Active users counter
@@ -79,21 +78,45 @@ export default function EvanstonIllinoisVendingLeadsPage() {
     return () => clearInterval(interval)
   }, [userNames.length, usedNames])
 
-  // Build related state cities (for internal linking)
-  const currentState = states.find(s => s.slug === 'illinois')
-  const relatedCities = currentState ? currentState.cities.filter(c => c.slug !== 'evanston-illinois').slice(0, 8) : [];
+  // Build related Illinois cities (for internal linking)
+  const coloradoState = states.find(s => s.slug === 'illinois');
+  const relatedCities = coloradoState ? coloradoState.cities.filter(c => c.slug !== 'evanston-illinois').slice(0, 8) : [];
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: "What types of vending machine locations are available in Evanston?", a: "Evanston provides vending opportunities in healthcare facilities, educational institutions, retail centers, office buildings, and manufacturing facilities serving the local market." },
-    { q: "How quickly can I get vending machine leads for Evanston?", a: "Our Evanston vending leads are delivered within 3-5 business days with detailed information about each verified business and placement opportunity." },
-    { q: "What makes Evanston a good market for vending machines?", a: "Evanston features a strong business community with diverse industries and consistent foot traffic. The city's economic activity creates ideal conditions for vending machine success." },
-    { q: "Do you provide ongoing support for Evanston locations?", a: "Yes, we provide comprehensive support including location research, business verification, contact information, and market-specific placement strategies for Evanston." },
-    { q: "What industries in Evanston are best for vending machines?", a: "Healthcare, education, manufacturing, retail, and office buildings in Evanston show strong vending potential with reliable traffic and captive audiences." },
-    { q: "How do you verify the quality of Evanston vending locations?", a: "We conduct thorough verification including business validation, employee assessment, facility research, and local market analysis for each Evanston location." },
-    { q: "Can I get customized vending leads for specific areas of Evanston?", a: "Absolutely! We can focus on specific neighborhoods, business districts, or industrial areas within Evanston based on your target market." },
-    { q: "What's the typical ROI for vending machines in Evanston?", a: "Machines in Evanston typically see ROI within 12-18 months, with healthcare and educational facilities often providing the most consistent returns." }
-  ];
+  {
+    q: 'What types of vending machine locations are available in Evanston?',
+    a: 'Evanston offers diverse vending opportunities including technology companies, manufacturing facilities, healthcare centers, educational institutions, retail locations, and office buildings. Each location is pre-verified for optimal vending machine success.'
+  },
+  {
+    q: 'How quickly can I get vending machine leads for Evanston?',
+    a: 'Our Evanston vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
+  },
+  {
+    q: 'What makes Evanston a good market for vending machines?',
+    a: 'Evanston features a thriving business community with diverse industries including technology, manufacturing, and retail. The city\'s business density and growing economy create ideal conditions for vending machine success.'
+  },
+  {
+    q: 'Do you provide ongoing support for Evanston locations?',
+    a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Evanston.'
+  },
+  {
+    q: 'What industries in Evanston are best for vending machines?',
+    a: 'Technology companies, manufacturing facilities, healthcare centers, educational institutions, and office buildings in Evanston show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
+  },
+  {
+    q: 'How do you verify the quality of Evanston vending locations?',
+    a: 'We conduct thorough research on each Evanston location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
+  },
+  {
+    q: 'Can I get customized vending leads for specific areas of Evanston?',
+    a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Evanston including the downtown area, industrial parks, and commercial corridors based on your preferences and target market requirements.'
+  },
+  {
+    q: 'What\'s the typical ROI for vending machines in Evanston?',
+    a: 'Vending machines in Evanston typically show strong ROI due to the city\'s business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+  },
+];
 
   return (
     <>
@@ -157,8 +180,7 @@ export default function EvanstonIllinoisVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Get comprehensive vending leads for Evanston's thriving Illinois market, combining local businesses, healthcare systems, and educational facilities for reliable vending machine placement.
-              </motion.p>
+                Access targeted vending leads in Evanston, Illinois, covering industrial parks, shopping centers, and professional office complexes.</motion.p>
 
               {/* Trust Signals */}
               <motion.div 
@@ -201,19 +223,20 @@ export default function EvanstonIllinoisVendingLeadsPage() {
                 className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 mb-8"
               >
                 <button 
-                  onClick={() => {
-                    const pricingSection = document.getElementById('pricing')
-                    if (pricingSection) {
-                      pricingSection.scrollIntoView({ behavior: 'smooth' })
-                    }
-                  }}
-                  className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
+                    onClick={() => {
+                      const pricingSection = document.getElementById('pricing')
+                      if (pricingSection) {
+                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                      }
+                    }}
+                    className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
                 >
-                  Get Started
-                </button>
+                    Get Started
+                  </button>
+
               </motion.div>
 
-              {/* Social Proof Stats */}
+{/* Social Proof Stats */}
               <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -240,6 +263,8 @@ export default function EvanstonIllinoisVendingLeadsPage() {
             </div>
           </div>
         </section>
+
+        
 
         {/* Pricing Section */}
         <section id="pricing" className="py-16 bg-warm-white">
@@ -306,7 +331,7 @@ export default function EvanstonIllinoisVendingLeadsPage() {
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Evanston's healthcare sector includes major hospitals, specialty clinics, and medical offices that generate consistent visitor and employee traffic, ideal for vending machine placement.</p>
+                <p className="text-stone leading-relaxed">Healthcare institutions in Evanston offer prime vending locations with high visitor counts, extended operating hours, and captive audiences seeking convenient snack and beverage options.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -320,7 +345,7 @@ export default function EvanstonIllinoisVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Educational facilities throughout Evanston serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services.</p>
+                <p className="text-stone leading-relaxed">Evanston's schools, colleges, and universities create excellent vending opportunities with high student traffic, campus events, and extended hours that maximize machine usage.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -334,13 +359,13 @@ export default function EvanstonIllinoisVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Industrial and manufacturing operations throughout Evanston employ substantial workforces with shift-based schedules, offering stable vending placement opportunities with steady traffic.</p>
+                <p className="text-stone leading-relaxed">Industrial operations in Evanston feature large workforces and shift schedules that create reliable vending revenue through employee break times and shift changes.</p>
               </motion.div>
               <motion.div
                 key="Retail"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.3 }}
+                transition={{ duration: 0.8, delay: 0.30000000000000004 }}
                 viewport={{ once: true }}
                 className="bg-orange-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
@@ -348,7 +373,7 @@ export default function EvanstonIllinoisVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Shopping centers and retail districts in Evanston offer prime vending locations, with high-traffic areas including food courts, entrances, and common spaces frequented by shoppers.</p>
+                <p className="text-stone leading-relaxed">Retail locations throughout Evanston provide excellent vending opportunities in malls, shopping centers, and high-traffic commercial areas with consistent customer flow.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -362,7 +387,7 @@ export default function EvanstonIllinoisVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Commercial office spaces in Evanston offer excellent vending opportunities, with professional tenants and business operations generating consistent foot traffic throughout the workday.</p>
+                <p className="text-stone leading-relaxed">Corporate office buildings throughout Evanston feature professional workforces and business operations that create reliable vending revenue through employee break times and meetings.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -402,8 +427,7 @@ export default function EvanstonIllinoisVendingLeadsPage() {
               className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
             >
               <p className="text-lg text-stone leading-relaxed">
-                Evanston offers strong vending opportunities through its diverse business community, combining local commerce, healthcare facilities, educational institutions, and growing commercial sectors. The city's business mix provides multiple placement options with varying traffic patterns, while Evanston's economic stability supports consistent consumer demand. The city's combination of established businesses and growing sectors creates reliable vending placement opportunities.
-              </p>
+                Through Evanston's diverse business ecosystem, vending machines find placement in healthcare systems, educational facilities, and corporate offices. The city's economic activity supports consistent consumer demand.</p>
             </motion.div>
           </div>
         </section>
@@ -506,11 +530,11 @@ export default function EvanstonIllinoisVendingLeadsPage() {
           </div>
         </section>
 
-        {/* More cities in State */}
+        {/* More cities in Illinois */}
         {relatedCities.length > 0 && (
           <section className="py-12 bg-white border-t border-gray-200">
             <div className="mx-auto max-w-7xl px-6">
-              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in {stateDisplayName}</h2>
+              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in Illinois</h2>
               <div className="flex flex-wrap gap-3">
                 {relatedCities.map(city => (
                   <Link key={city.slug} href={`/vending-leads/${city.slug}`} className="px-3 py-2 rounded-lg border border-gray-200 bg-cream/60 text-chocolate hover:text-navy">
@@ -536,8 +560,8 @@ export default function EvanstonIllinoisVendingLeadsPage() {
             itemListElement: [
               { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
               { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'Illinois', item: `https://www.thevendinglocator.com/vending-leads/illinois` },
-              { '@type': 'ListItem', position: 4, name: 'Evanston', item: `https://www.thevendinglocator.com/vending-leads/evanston-illinois` }
+              { '@type': 'ListItem', position: 3, name: 'Illinois', item: 'https://www.thevendinglocator.com/vending-leads/illinois' },
+              { '@type': 'ListItem', position: 4, name: 'Evanston', item: 'https://www.thevendinglocator.com/vending-leads/evanston-illinois' }
             ]
           })
         }}

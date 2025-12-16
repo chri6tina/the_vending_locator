@@ -1,28 +1,42 @@
-import { Metadata } from 'next';
-import PageClient from './pageClient';
+import { Metadata } from 'next'
+import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  title: 'Vending Machine Locations in Hopkinsville, Kentucky | Premium Lead Database',
-  description: 'Access verified vending machine locations in Hopkinsville, Kentucky. Connect with high-traffic venues actively seeking vending services. Start growing your vending business today.',
-  keywords: 'vending machine locations Hopkinsville, vending leads Kentucky, Hopkinsville vending opportunities, vending machine business KY',
-  openGraph: {
-    title: 'Vending Machine Locations in Hopkinsville, Kentucky | Premium Lead Database',
-    description: 'Access verified vending machine locations in Hopkinsville, Kentucky. Connect with high-traffic venues actively seeking vending services.',
-    url: 'https://www.thevendinglocator.com/vending-leads/hopkinsville-kentucky',
-    siteName: 'The Vending Locator',
-    locale: 'en_US',
-    type: 'website',
+  "title": "Vending Machine Leads in Hopkinsville, Kentucky - The Vending Locator",
+  "description": "Get verified vending machine leads and locations in Hopkinsville, Kentucky. Find qualified businesses for vending machine placement.",
+  "keywords": "vending machines Hopkinsville Kentucky, vending leads Hopkinsville Kentucky, vending locations Hopkinsville Kentucky, vending opportunities Hopkinsville Kentucky",
+  "alternates": {
+    "canonical": "https://www.thevendinglocator.com/vending-leads/hopkinsville-kentucky"
   },
-  alternates: {
-    canonical: 'https://www.thevendinglocator.com/vending-leads/hopkinsville-kentucky',
+  "openGraph": {
+    "title": "Vending Machine Leads in Hopkinsville, Kentucky - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Hopkinsville, Kentucky. Find qualified businesses for vending machine placement.",
+    "url": "https://www.thevendinglocator.com/vending-leads/hopkinsville-kentucky",
+    "siteName": "The Vending Locator",
+    "type": "website"
   },
-};
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Vending Machine Leads in Hopkinsville, Kentucky - The Vending Locator",
+    "description": "Get verified vending machine leads and locations in Hopkinsville, Kentucky. Find qualified businesses for vending machine placement."
+  },
+  "robots": {
+    "index": true,
+    "follow": true,
+    "googleBot": {
+      "index": true,
+      "follow": true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1
+    }
+  }
+}
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;
 
-export default function HopkinsvillePage() {
-  return <PageClient />;
+export default function CityPage() {
+  return <PageClient />
 }

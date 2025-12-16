@@ -21,12 +21,12 @@ export default function HopkinsvilleKentuckyVendingLeadsPage() {
   const cityData = {
     'name': 'Hopkinsville',
     'state': 'Kentucky',
-    'population': '~31,000',
-    'businesses': '1K-1.8K',
-    'industries': '7-11',
-    'verifiedLocations': '70-130',
+    'population': '75K+',
+    'businesses': '3K-5K',
+    'industries': '10-14',
+    'verifiedLocations': '500-1000',
     'rating': '4.7/5',
-    'description': 'Regional center near Fort Campbell with military, retail, and healthcare sectors'
+    'description': 'Thriving Kentucky city with diverse business opportunities, healthcare facilities, and commercial centers'
   };
   
   // Active users counter
@@ -35,7 +35,11 @@ export default function HopkinsvilleKentuckyVendingLeadsPage() {
   const [usedNames, setUsedNames] = useState(new Set())
 
   // User names for active users counter
-  const [userNames, setUserNames] = useState(['Mike from Hopkinsville', 'Sarah in Hopkinsville', 'David in Hopkinsville', 'Lisa in Hopkinsville', 'Tom in Hopkinsville', 'Jennifer in Hopkinsville', 'Robert in Hopkinsville', 'Amanda in Hopkinsville', 'Chris in Hopkinsville', 'Maria in Hopkinsville', 'James in Hopkinsville', 'Emily in Hopkinsville'])
+  const [userNames, setUserNames] = useState([
+    'Mike from Hopkinsville', 'Sarah in Hopkinsville', 'David in Hopkinsville', 'Lisa in Hopkinsville',
+    'Tom in Hopkinsville', 'Jennifer in Hopkinsville', 'Robert in Hopkinsville', 'Amanda in Hopkinsville',
+    'Chris in Hopkinsville', 'Maria in Hopkinsville', 'James in Hopkinsville', 'Emily in Hopkinsville'
+  ])
 
   // Active users counter effect
   useEffect(() => {
@@ -75,20 +79,44 @@ export default function HopkinsvilleKentuckyVendingLeadsPage() {
   }, [userNames.length, usedNames])
 
   // Build related Kentucky cities (for internal linking)
-  const newHampshire = states.find(s => s.slug === 'kentucky');
-  const relatedCities = newHampshire ? newHampshire.cities.filter(c => c.slug !== 'hopkinsville-kentucky').slice(0, 8) : [];
+  const coloradoState = states.find(s => s.slug === 'kentucky');
+  const relatedCities = coloradoState ? coloradoState.cities.filter(c => c.slug !== 'hopkinsville-kentucky').slice(0, 8) : [];
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in Hopkinsville?', a: 'Hopkinsville offers diverse vending opportunities including retail locations, healthcare facilities, office buildings, restaurants, and service businesses. Each location is pre-verified for optimal vending machine success.' },
-    { q: 'How quickly can I get vending machine leads for Hopkinsville?', a: 'Our Hopkinsville vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.' },
-    { q: 'What makes Hopkinsville a good market for vending machines?', a: 'Hopkinsville serves the Fort Campbell military community and is a regional commerce center. The city\'s military connection and diverse economy create ideal conditions for vending machine success.' },
-    { q: 'Do you provide ongoing support for Hopkinsville locations?', a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Hopkinsville.' },
-    { q: 'What industries in Hopkinsville are best for vending machines?', a: 'Retail locations, healthcare facilities, office buildings, and service businesses in Hopkinsville show the highest potential for vending machine success due to military presence and regional commerce.' },
-    { q: 'How do you verify the quality of Hopkinsville vending locations?', a: 'We conduct thorough research on each Hopkinsville location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.' },
-    { q: 'Can I get customized vending leads for specific areas of Hopkinsville?', a: 'Absolutely! We can provide targeted vending leads for retail districts, healthcare facilities, or commercial areas within Hopkinsville based on your preferences and target market requirements.' },
-    { q: 'What\'s the typical ROI for vending machines in Hopkinsville?', a: 'Vending machines in Hopkinsville typically show strong ROI due to military community and regional commerce. Our research shows average payback periods of 12-18 months for well-placed machines.' }
-  ]
+  {
+    q: 'What types of vending machine locations are available in Hopkinsville?',
+    a: 'Hopkinsville offers diverse vending opportunities including technology companies, manufacturing facilities, healthcare centers, educational institutions, retail locations, and office buildings. Each location is pre-verified for optimal vending machine success.'
+  },
+  {
+    q: 'How quickly can I get vending machine leads for Hopkinsville?',
+    a: 'Our Hopkinsville vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
+  },
+  {
+    q: 'What makes Hopkinsville a good market for vending machines?',
+    a: 'Hopkinsville features a thriving business community with diverse industries including technology, manufacturing, and retail. The city\'s business density and growing economy create ideal conditions for vending machine success.'
+  },
+  {
+    q: 'Do you provide ongoing support for Hopkinsville locations?',
+    a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Hopkinsville.'
+  },
+  {
+    q: 'What industries in Hopkinsville are best for vending machines?',
+    a: 'Technology companies, manufacturing facilities, healthcare centers, educational institutions, and office buildings in Hopkinsville show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
+  },
+  {
+    q: 'How do you verify the quality of Hopkinsville vending locations?',
+    a: 'We conduct thorough research on each Hopkinsville location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
+  },
+  {
+    q: 'Can I get customized vending leads for specific areas of Hopkinsville?',
+    a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Hopkinsville including the downtown area, industrial parks, and commercial corridors based on your preferences and target market requirements.'
+  },
+  {
+    q: 'What\'s the typical ROI for vending machines in Hopkinsville?',
+    a: 'Vending machines in Hopkinsville typically show strong ROI due to the city\'s business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+  },
+];
 
   return (
     <>
@@ -152,8 +180,7 @@ export default function HopkinsvilleKentuckyVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Access verified vending machine locations across Hopkinsville's diverse business community, where local commerce, healthcare facilities, and educational institutions create steady opportunities for vending placement.
-              </motion.p>
+                Find verified vending machine locations in Hopkinsville, Kentucky, connecting you with businesses seeking reliable vending solutions.</motion.p>
 
               {/* Trust Signals */}
               <motion.div 
@@ -304,7 +331,7 @@ export default function HopkinsvilleKentuckyVendingLeadsPage() {
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Healthcare facilities in Hopkinsville serve large patient populations and employ significant staff numbers, providing stable vending opportunities with extended operating hours and steady foot traffic.</p>
+                <p className="text-stone leading-relaxed">Medical facilities throughout Hopkinsville serve large patient populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services in waiting areas and break rooms.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -318,7 +345,7 @@ export default function HopkinsvilleKentuckyVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Educational institutions in Hopkinsville provide consistent student and staff populations, with schools, colleges, and universities offering year-round vending opportunities across campus facilities.</p>
+                <p className="text-stone leading-relaxed">Educational facilities throughout Hopkinsville serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -332,7 +359,7 @@ export default function HopkinsvilleKentuckyVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Hopkinsville's manufacturing sector includes industrial facilities and production plants with large employee bases working extended shifts, creating ideal conditions for vending machine placement.</p>
+                <p className="text-stone leading-relaxed">Manufacturing facilities in Hopkinsville provide excellent vending locations with large employee bases, multiple shifts, and break areas that generate consistent sales throughout the day.</p>
               </motion.div>
               <motion.div
                 key="Retail"
@@ -346,7 +373,7 @@ export default function HopkinsvilleKentuckyVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Hopkinsville's retail sector features shopping centers, department stores, and specialty shops with consistent customer flow, offering excellent vending machine placement options.</p>
+                <p className="text-stone leading-relaxed">Shopping centers and retail districts in Hopkinsville offer prime vending locations, with high-traffic areas including food courts, entrances, and common spaces frequented by shoppers.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -360,7 +387,7 @@ export default function HopkinsvilleKentuckyVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Office buildings throughout Hopkinsville feature corporate tenants, professional firms, and business services with steady daily traffic, providing reliable vending machine placement options.</p>
+                <p className="text-stone leading-relaxed">Office complexes in Hopkinsville provide ideal vending locations with multiple tenants, high employee counts, and break areas that ensure steady machine usage during business hours.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -374,7 +401,7 @@ export default function HopkinsvilleKentuckyVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Hopkinsville's transportation hubs including airports, transit centers, and transportation facilities provide high-volume passenger traffic, creating exceptional vending machine placement opportunities.</p>
+                <p className="text-stone leading-relaxed">Transit facilities throughout Hopkinsville provide excellent vending opportunities in terminals, waiting areas, and high-traffic zones with consistent traveler foot traffic.</p>
               </motion.div>
             </div>
           </div>
@@ -400,8 +427,7 @@ export default function HopkinsvilleKentuckyVendingLeadsPage() {
               className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
             >
               <p className="text-lg text-stone leading-relaxed">
-                Hopkinsville offers strong vending opportunities through its diverse business community, combining local commerce, healthcare facilities, educational institutions, and growing commercial sectors. The city's business mix provides multiple placement options with varying traffic patterns, while Hopkinsville's economic stability supports consistent consumer demand. The city's combination of established businesses and growing sectors creates reliable vending placement opportunities.
-              </p>
+                Hopkinsville features a robust business environment with multiple industries supporting vending machine placement. The city's economic stability and business density provide numerous high-traffic locations for reliable revenue generation.</p>
             </motion.div>
           </div>
         </section>
@@ -535,7 +561,7 @@ export default function HopkinsvilleKentuckyVendingLeadsPage() {
               { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
               { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
               { '@type': 'ListItem', position: 3, name: 'Kentucky', item: 'https://www.thevendinglocator.com/vending-leads/kentucky' },
-              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/hopkinsville-kentucky' }
+              { '@type': 'ListItem', position: 4, name: 'Hopkinsville', item: 'https://www.thevendinglocator.com/vending-leads/hopkinsville-kentucky' }
             ]
           })
         }}

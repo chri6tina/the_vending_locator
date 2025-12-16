@@ -21,12 +21,12 @@ export default function ElsmereDelawareVendingLeadsPage() {
   const cityData = {
     'name': 'Elsmere',
     'state': 'Delaware',
-    'population': '~6,000',
-    'businesses': '250-450',
-    'industries': '5-8',
-    'verifiedLocations': '25-55',
+    'population': '300K+',
+    'businesses': '4K-6K',
+    'industries': '14-18',
+    'verifiedLocations': '500-1000',
     'rating': '4.7/5',
-    'description': 'Small suburban community near Wilmington with residential and retail areas'
+    'description': 'Thriving Delaware city with diverse business opportunities, healthcare facilities, and commercial centers'
   };
   
   // Active users counter
@@ -35,7 +35,11 @@ export default function ElsmereDelawareVendingLeadsPage() {
   const [usedNames, setUsedNames] = useState(new Set())
 
   // User names for active users counter
-  const [userNames, setUserNames] = useState(['Mike from Elsmere', 'Sarah in Elsmere', 'David in Elsmere', 'Lisa in Elsmere', 'Tom in Elsmere', 'Jennifer in Elsmere', 'Robert in Elsmere', 'Amanda in Elsmere', 'Chris in Elsmere', 'Maria in Elsmere', 'James in Elsmere', 'Emily in Elsmere'])
+  const [userNames, setUserNames] = useState([
+    'Mike from Elsmere', 'Sarah in Elsmere', 'David in Elsmere', 'Lisa in Elsmere',
+    'Tom in Elsmere', 'Jennifer in Elsmere', 'Robert in Elsmere', 'Amanda in Elsmere',
+    'Chris in Elsmere', 'Maria in Elsmere', 'James in Elsmere', 'Emily in Elsmere'
+  ])
 
   // Active users counter effect
   useEffect(() => {
@@ -75,20 +79,44 @@ export default function ElsmereDelawareVendingLeadsPage() {
   }, [userNames.length, usedNames])
 
   // Build related Delaware cities (for internal linking)
-  const newHampshire = states.find(s => s.slug === 'delaware');
-  const relatedCities = newHampshire ? newHampshire.cities.filter(c => c.slug !== 'elsmere-delaware').slice(0, 8) : [];
+  const coloradoState = states.find(s => s.slug === 'delaware');
+  const relatedCities = coloradoState ? coloradoState.cities.filter(c => c.slug !== 'elsmere-delaware').slice(0, 8) : [];
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in Elsmere?', a: 'Elsmere offers suburban vending opportunities including retail shops, small office buildings, healthcare services, residential complexes, and local businesses. Each location is pre-verified for optimal vending machine success.' },
-    { q: 'How quickly can I get vending machine leads for Elsmere?', a: 'Our Elsmere vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.' },
-    { q: 'What makes Elsmere a good market for vending machines?', a: 'Elsmere is a tight-knit suburban community near Wilmington with strong local business presence. The town\'s residential density and proximity to major markets create ideal conditions for vending machine success.' },
-    { q: 'Do you provide ongoing support for Elsmere locations?', a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Elsmere.' },
-    { q: 'What industries in Elsmere are best for vending machines?', a: 'Retail shops, healthcare services, small offices, and residential complexes in Elsmere show the highest potential for vending machine success due to suburban density and local commerce.' },
-    { q: 'How do you verify the quality of Elsmere vending locations?', a: 'We conduct thorough research on each Elsmere location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.' },
-    { q: 'Can I get customized vending leads for specific areas of Elsmere?', a: 'Absolutely! We can provide targeted vending leads for retail districts, residential areas, or small business zones within Elsmere based on your preferences and target market requirements.' },
-    { q: 'What\'s the typical ROI for vending machines in Elsmere?', a: 'Vending machines in Elsmere typically show strong ROI due to suburban density and local business activity. Our research shows average payback periods of 12-18 months for well-placed machines.' }
-  ]
+  {
+    q: 'What types of vending machine locations are available in Elsmere?',
+    a: 'Elsmere offers diverse vending opportunities including technology companies, manufacturing facilities, healthcare centers, educational institutions, retail locations, and office buildings. Each location is pre-verified for optimal vending machine success.'
+  },
+  {
+    q: 'How quickly can I get vending machine leads for Elsmere?',
+    a: 'Our Elsmere vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
+  },
+  {
+    q: 'What makes Elsmere a good market for vending machines?',
+    a: 'Elsmere features a thriving business community with diverse industries including technology, manufacturing, and retail. The city\'s business density and growing economy create ideal conditions for vending machine success.'
+  },
+  {
+    q: 'Do you provide ongoing support for Elsmere locations?',
+    a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Elsmere.'
+  },
+  {
+    q: 'What industries in Elsmere are best for vending machines?',
+    a: 'Technology companies, manufacturing facilities, healthcare centers, educational institutions, and office buildings in Elsmere show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
+  },
+  {
+    q: 'How do you verify the quality of Elsmere vending locations?',
+    a: 'We conduct thorough research on each Elsmere location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
+  },
+  {
+    q: 'Can I get customized vending leads for specific areas of Elsmere?',
+    a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Elsmere including the downtown area, industrial parks, and commercial corridors based on your preferences and target market requirements.'
+  },
+  {
+    q: 'What\'s the typical ROI for vending machines in Elsmere?',
+    a: 'Vending machines in Elsmere typically show strong ROI due to the city\'s business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+  },
+];
 
   return (
     <>
@@ -152,8 +180,7 @@ export default function ElsmereDelawareVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Discover pre-qualified vending opportunities in Elsmere's growing economy, featuring business districts, commercial centers, and community facilities with consistent foot traffic.
-              </motion.p>
+                Find verified vending machine locations in Elsmere, Delaware, connecting you with businesses seeking reliable vending solutions.</motion.p>
 
               {/* Trust Signals */}
               <motion.div 
@@ -304,7 +331,7 @@ export default function ElsmereDelawareVendingLeadsPage() {
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Medical centers and healthcare facilities throughout Elsmere offer excellent vending placement opportunities, with high-traffic areas including waiting rooms, cafeterias, and employee break areas.</p>
+                <p className="text-stone leading-relaxed">Elsmere's healthcare sector includes major medical centers, specialty clinics, and outpatient facilities that generate consistent patient and visitor traffic, creating ideal vending placement opportunities.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -318,7 +345,7 @@ export default function ElsmereDelawareVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Elsmere's education sector features schools, universities, and training facilities with captive audiences during academic hours, creating reliable vending machine placement opportunities.</p>
+                <p className="text-stone leading-relaxed">Academic institutions in Elsmere feature student centers, libraries, and common areas with consistent foot traffic, making them ideal locations for vending machine placement.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -332,7 +359,7 @@ export default function ElsmereDelawareVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Manufacturing facilities in Elsmere operate around the clock with significant employee populations, providing consistent vending opportunities in break rooms and common areas.</p>
+                <p className="text-stone leading-relaxed">Industrial and manufacturing operations throughout Elsmere employ substantial workforces with shift-based schedules, offering stable vending placement opportunities with steady traffic.</p>
               </motion.div>
               <motion.div
                 key="Retail"
@@ -346,7 +373,7 @@ export default function ElsmereDelawareVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Retail establishments in Elsmere attract diverse customer demographics and generate steady foot traffic, providing reliable vending opportunities across various retail environments.</p>
+                <p className="text-stone leading-relaxed">Elsmere's retail sector features shopping centers, strip malls, and commercial districts that offer strategic vending placement in areas with maximum shopper visibility.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -360,7 +387,7 @@ export default function ElsmereDelawareVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Elsmere's office sector includes business districts, corporate campuses, and professional centers with high employee concentrations, ideal for vending services in common areas and break rooms.</p>
+                <p className="text-stone leading-relaxed">Commercial office spaces in Elsmere offer excellent vending opportunities, with professional tenants and business operations generating consistent foot traffic throughout the workday.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -374,7 +401,7 @@ export default function ElsmereDelawareVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Transportation facilities in Elsmere serve travelers and commuters with consistent foot traffic throughout the day, offering reliable vending opportunities in terminals, waiting areas, and transit stations.</p>
+                <p className="text-stone leading-relaxed">Transportation hubs in Elsmere offer prime vending locations with high passenger volumes, extended operating hours, and captive audiences waiting for departures.</p>
               </motion.div>
             </div>
           </div>
@@ -400,8 +427,7 @@ export default function ElsmereDelawareVendingLeadsPage() {
               className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
             >
               <p className="text-lg text-stone leading-relaxed">
-                Elsmere offers strong vending opportunities through its diverse business community, combining local commerce, healthcare facilities, educational institutions, and growing commercial sectors. The city's business mix provides multiple placement options with varying traffic patterns, while Elsmere's economic stability supports consistent consumer demand. The city's combination of established businesses and growing sectors creates reliable vending placement opportunities.
-              </p>
+                Elsmere features a robust business environment with multiple industries supporting vending machine placement. The city's economic stability and business density provide numerous high-traffic locations for reliable revenue generation.</p>
             </motion.div>
           </div>
         </section>
@@ -535,7 +561,7 @@ export default function ElsmereDelawareVendingLeadsPage() {
               { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
               { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
               { '@type': 'ListItem', position: 3, name: 'Delaware', item: 'https://www.thevendinglocator.com/vending-leads/delaware' },
-              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/elsmere-delaware' }
+              { '@type': 'ListItem', position: 4, name: 'Elsmere', item: 'https://www.thevendinglocator.com/vending-leads/elsmere-delaware' }
             ]
           })
         }}

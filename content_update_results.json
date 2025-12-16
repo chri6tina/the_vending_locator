@@ -1,0 +1,6290 @@
+[
+  {
+    "file": "src\\app\\vending-leads\\aberdeen-south-dakota\\pageClient.tsx",
+    "status": "updated",
+    "city": "Aberdeen",
+    "state": "South Dakota"
+  },
+  {
+    "file": "src\\app\\vending-leads\\abilene-texas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Abilene",
+    "state": "Texas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\adams-morgan-washington-dc\\pageClient.tsx",
+    "status": "updated",
+    "city": "Adams Morgan",
+    "state": "Washington DC"
+  },
+  {
+    "file": "src\\app\\vending-leads\\addison-illinois\\pageClient.tsx",
+    "status": "updated",
+    "city": "Addison",
+    "state": "Illinois"
+  },
+  {
+    "file": "src\\app\\vending-leads\\aiken-south-carolina\\pageClient.tsx",
+    "status": "updated",
+    "city": "Aiken",
+    "state": "South Carolina"
+  },
+  {
+    "file": "src\\app\\vending-leads\\alameda-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Alameda",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\albany-georgia\\pageClient.tsx",
+    "status": "updated",
+    "city": "Albany",
+    "state": "Georgia"
+  },
+  {
+    "file": "src\\app\\vending-leads\\albany-new-york\\pageClient.tsx",
+    "status": "updated",
+    "city": "Albany",
+    "state": "New York"
+  },
+  {
+    "file": "src\\app\\vending-leads\\albany-oregon\\pageClient.tsx",
+    "status": "updated",
+    "city": "Albany",
+    "state": "Oregon"
+  },
+  {
+    "file": "src\\app\\vending-leads\\albuquerque-new-mexico\\pageClient.tsx",
+    "status": "updated",
+    "city": "Albuquerque",
+    "state": "New Mexico"
+  },
+  {
+    "file": "src\\app\\vending-leads\\alexandria-louisiana\\pageClient.tsx",
+    "status": "updated",
+    "city": "Alexandria",
+    "state": "Louisiana"
+  },
+  {
+    "file": "src\\app\\vending-leads\\alexandria-virginia\\pageClient.tsx",
+    "status": "updated",
+    "city": "Alexandria",
+    "state": "Virginia"
+  },
+  {
+    "file": "src\\app\\vending-leads\\alhambra-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Alhambra",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\allen-texas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Allen",
+    "state": "Texas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\allentown-pennsylvania\\pageClient.tsx",
+    "status": "updated",
+    "city": "Allentown",
+    "state": "Pennsylvania"
+  },
+  {
+    "file": "src\\app\\vending-leads\\alpharetta-georgia\\pageClient.tsx",
+    "status": "updated",
+    "city": "Alpharetta",
+    "state": "Georgia"
+  },
+  {
+    "file": "src\\app\\vending-leads\\altamonte-springs-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Altamonte Springs",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\amarillo-texas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Amarillo",
+    "state": "Texas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\americus-georgia\\pageClient.tsx",
+    "status": "updated",
+    "city": "Americus",
+    "state": "Georgia"
+  },
+  {
+    "file": "src\\app\\vending-leads\\ames-iowa\\pageClient.tsx",
+    "status": "updated",
+    "city": "Ames",
+    "state": "Iowa"
+  },
+  {
+    "file": "src\\app\\vending-leads\\amherst-new-york\\pageClient.tsx",
+    "status": "updated",
+    "city": "Amherst New",
+    "state": "York"
+  },
+  {
+    "file": "src\\app\\vending-leads\\anaheim-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Anaheim",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\anchorage-alaska\\pageClient.tsx",
+    "status": "updated",
+    "city": "Anchorage",
+    "state": "Alaska"
+  },
+  {
+    "file": "src\\app\\vending-leads\\anderson-indiana\\pageClient.tsx",
+    "status": "updated",
+    "city": "Anderson",
+    "state": "Indiana"
+  },
+  {
+    "file": "src\\app\\vending-leads\\anderson-south-carolina\\pageClient.tsx",
+    "status": "updated",
+    "city": "Anderson",
+    "state": "South Carolina"
+  },
+  {
+    "file": "src\\app\\vending-leads\\ann-arbor-michigan\\pageClient.tsx",
+    "status": "updated",
+    "city": "Ann Arbor",
+    "state": "Michigan"
+  },
+  {
+    "file": "src\\app\\vending-leads\\annapolis-maryland\\pageClient.tsx",
+    "status": "updated",
+    "city": "Annapolis",
+    "state": "Maryland"
+  },
+  {
+    "file": "src\\app\\vending-leads\\antioch-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Antioch",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\apache-junction-arizona\\pageClient.tsx",
+    "status": "updated",
+    "city": "Apache Junction",
+    "state": "Arizona"
+  },
+  {
+    "file": "src\\app\\vending-leads\\apopka-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Apopka",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\appleton-wisconsin\\pageClient.tsx",
+    "status": "updated",
+    "city": "Appleton",
+    "state": "Wisconsin"
+  },
+  {
+    "file": "src\\app\\vending-leads\\arcadia-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Arcadia",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\arizona\\pageClient.tsx",
+    "status": "updated",
+    "city": "Arizona",
+    "state": "Arizona"
+  },
+  {
+    "file": "src\\app\\vending-leads\\arkansas-city-kansas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Arkansas City",
+    "state": "Kansas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\arlington-heights-illinois\\pageClient.tsx",
+    "status": "updated",
+    "city": "Arlington Heights",
+    "state": "Illinois"
+  },
+  {
+    "file": "src\\app\\vending-leads\\arlington-texas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Arlington",
+    "state": "Texas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\arlington-virginia\\pageClient.tsx",
+    "status": "updated",
+    "city": "Arlington",
+    "state": "Virginia"
+  },
+  {
+    "file": "src\\app\\vending-leads\\arvada-colorado\\pageClient.tsx",
+    "status": "updated",
+    "city": "Arvada",
+    "state": "Colorado"
+  },
+  {
+    "file": "src\\app\\vending-leads\\arvin-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Arvin",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\asheville-north-carolina\\pageClient.tsx",
+    "status": "updated",
+    "city": "Asheville North",
+    "state": "Carolina"
+  },
+  {
+    "file": "src\\app\\vending-leads\\ashland-kentucky\\pageClient.tsx",
+    "status": "updated",
+    "city": "Ashland",
+    "state": "Kentucky"
+  },
+  {
+    "file": "src\\app\\vending-leads\\atascadero-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Atascadero",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\atchison-kansas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Atchison",
+    "state": "Kansas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\athens-georgia\\pageClient.tsx",
+    "status": "updated",
+    "city": "Athens",
+    "state": "Georgia"
+  },
+  {
+    "file": "src\\app\\vending-leads\\atlanta-georgia\\pageClient.tsx",
+    "status": "updated",
+    "city": "Atlanta",
+    "state": "Georgia"
+  },
+  {
+    "file": "src\\app\\vending-leads\\auburn-alabama\\pageClient.tsx",
+    "status": "updated",
+    "city": "Auburn",
+    "state": "Alabama"
+  },
+  {
+    "file": "src\\app\\vending-leads\\auburn-maine\\pageClient.tsx",
+    "status": "updated",
+    "city": "Auburn",
+    "state": "Maine"
+  },
+  {
+    "file": "src\\app\\vending-leads\\auburn-washington\\pageClient.tsx",
+    "status": "updated",
+    "city": "Auburn",
+    "state": "Washington"
+  },
+  {
+    "file": "src\\app\\vending-leads\\augusta-georgia\\pageClient.tsx",
+    "status": "updated",
+    "city": "Augusta",
+    "state": "Georgia"
+  },
+  {
+    "file": "src\\app\\vending-leads\\augusta-maine\\pageClient.tsx",
+    "status": "updated",
+    "city": "Augusta",
+    "state": "Maine"
+  },
+  {
+    "file": "src\\app\\vending-leads\\aurora-illinois\\pageClient.tsx",
+    "status": "updated",
+    "city": "Aurora",
+    "state": "Illinois"
+  },
+  {
+    "file": "src\\app\\vending-leads\\austin-texas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Austin",
+    "state": "Texas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\aventura-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Aventura",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\avondale-arizona\\pageClient.tsx",
+    "status": "updated",
+    "city": "Avondale",
+    "state": "Arizona"
+  },
+  {
+    "file": "src\\app\\vending-leads\\azusa-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Azusa",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\bakersfield-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Bakersfield",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\baldwin-park-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Baldwin Park",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\baltimore-maryland\\pageClient.tsx",
+    "status": "updated",
+    "city": "Baltimore",
+    "state": "Maryland"
+  },
+  {
+    "file": "src\\app\\vending-leads\\bangor-maine\\pageClient.tsx",
+    "status": "updated",
+    "city": "Bangor",
+    "state": "Maine"
+  },
+  {
+    "file": "src\\app\\vending-leads\\banning-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Banning",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\barnstable-massachusetts\\pageClient.tsx",
+    "status": "updated",
+    "city": "Barnstable",
+    "state": "Massachusetts"
+  },
+  {
+    "file": "src\\app\\vending-leads\\barre-vermont\\pageClient.tsx",
+    "status": "updated",
+    "city": "Barre",
+    "state": "Vermont"
+  },
+  {
+    "file": "src\\app\\vending-leads\\barstow-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Barstow",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\bartlett-illinois\\pageClient.tsx",
+    "status": "updated",
+    "city": "Bartlett",
+    "state": "Illinois"
+  },
+  {
+    "file": "src\\app\\vending-leads\\bartlett-tennessee\\pageClient.tsx",
+    "status": "updated",
+    "city": "Bartlett",
+    "state": "Tennessee"
+  },
+  {
+    "file": "src\\app\\vending-leads\\baton-rouge-louisiana\\pageClient.tsx",
+    "status": "updated",
+    "city": "Baton Rouge",
+    "state": "Louisiana"
+  },
+  {
+    "file": "src\\app\\vending-leads\\battle-creek-michigan\\pageClient.tsx",
+    "status": "updated",
+    "city": "Battle Creek",
+    "state": "Michigan"
+  },
+  {
+    "file": "src\\app\\vending-leads\\bayonne-new-jersey\\pageClient.tsx",
+    "status": "updated",
+    "city": "Bayonne New",
+    "state": "Jersey"
+  },
+  {
+    "file": "src\\app\\vending-leads\\bear-delaware\\pageClient.tsx",
+    "status": "updated",
+    "city": "Bear",
+    "state": "Delaware"
+  },
+  {
+    "file": "src\\app\\vending-leads\\beaumont-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Beaumont",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\beaumont-texas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Beaumont",
+    "state": "Texas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\beaverton-oregon\\pageClient.tsx",
+    "status": "updated",
+    "city": "Beaverton",
+    "state": "Oregon"
+  },
+  {
+    "file": "src\\app\\vending-leads\\bell-gardens-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Bell Gardens",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\bellevue-nebraska\\pageClient.tsx",
+    "status": "updated",
+    "city": "Bellevue",
+    "state": "Nebraska"
+  },
+  {
+    "file": "src\\app\\vending-leads\\bellevue-washington\\pageClient.tsx",
+    "status": "updated",
+    "city": "Bellevue",
+    "state": "Washington"
+  },
+  {
+    "file": "src\\app\\vending-leads\\bellflower-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Bellflower",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\bellingham-washington\\pageClient.tsx",
+    "status": "updated",
+    "city": "Bellingham",
+    "state": "Washington"
+  },
+  {
+    "file": "src\\app\\vending-leads\\bend-oregon\\pageClient.tsx",
+    "status": "updated",
+    "city": "Bend",
+    "state": "Oregon"
+  },
+  {
+    "file": "src\\app\\vending-leads\\bentonville-arkansas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Bentonville",
+    "state": "Arkansas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\berkeley-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Berkeley",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\berwyn-illinois\\pageClient.tsx",
+    "status": "updated",
+    "city": "Berwyn",
+    "state": "Illinois"
+  },
+  {
+    "file": "src\\app\\vending-leads\\bessemer-alabama\\pageClient.tsx",
+    "status": "updated",
+    "city": "Bessemer",
+    "state": "Alabama"
+  },
+  {
+    "file": "src\\app\\vending-leads\\bethesda-maryland\\pageClient.tsx",
+    "status": "updated",
+    "city": "Bethesda",
+    "state": "Maryland"
+  },
+  {
+    "file": "src\\app\\vending-leads\\bethlehem-pennsylvania\\pageClient.tsx",
+    "status": "updated",
+    "city": "Bethlehem",
+    "state": "Pennsylvania"
+  },
+  {
+    "file": "src\\app\\vending-leads\\biddeford-maine\\pageClient.tsx",
+    "status": "updated",
+    "city": "Biddeford",
+    "state": "Maine"
+  },
+  {
+    "file": "src\\app\\vending-leads\\billings-montana\\pageClient.tsx",
+    "status": "updated",
+    "city": "Billings",
+    "state": "Montana"
+  },
+  {
+    "file": "src\\app\\vending-leads\\biloxi-mississippi\\pageClient.tsx",
+    "status": "updated",
+    "city": "Biloxi",
+    "state": "Mississippi"
+  },
+  {
+    "file": "src\\app\\vending-leads\\binghamton-new-york\\pageClient.tsx",
+    "status": "updated",
+    "city": "Binghamton",
+    "state": "New York"
+  },
+  {
+    "file": "src\\app\\vending-leads\\birmingham-alabama\\pageClient.tsx",
+    "status": "updated",
+    "city": "Birmingham",
+    "state": "Alabama"
+  },
+  {
+    "file": "src\\app\\vending-leads\\birmingham-michigan\\pageClient.tsx",
+    "status": "updated",
+    "city": "Birmingham",
+    "state": "Michigan"
+  },
+  {
+    "file": "src\\app\\vending-leads\\bismarck-north-dakota\\pageClient.tsx",
+    "status": "updated",
+    "city": "Bismarck",
+    "state": "North Dakota"
+  },
+  {
+    "file": "src\\app\\vending-leads\\bloomington-illinois\\pageClient.tsx",
+    "status": "updated",
+    "city": "Bloomington",
+    "state": "Illinois"
+  },
+  {
+    "file": "src\\app\\vending-leads\\bloomington-minnesota\\pageClient.tsx",
+    "status": "updated",
+    "city": "Bloomington",
+    "state": "Minnesota"
+  },
+  {
+    "file": "src\\app\\vending-leads\\blue-springs-missouri\\pageClient.tsx",
+    "status": "updated",
+    "city": "Blue Springs",
+    "state": "Missouri"
+  },
+  {
+    "file": "src\\app\\vending-leads\\boca-raton-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Boca Raton",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\boise-idaho\\pageClient.tsx",
+    "status": "updated",
+    "city": "Boise",
+    "state": "Idaho"
+  },
+  {
+    "file": "src\\app\\vending-leads\\bolingbrook-illinois\\pageClient.tsx",
+    "status": "updated",
+    "city": "Bolingbrook",
+    "state": "Illinois"
+  },
+  {
+    "file": "src\\app\\vending-leads\\bossier-city-louisiana\\pageClient.tsx",
+    "status": "updated",
+    "city": "Bossier City",
+    "state": "Louisiana"
+  },
+  {
+    "file": "src\\app\\vending-leads\\boston-massachusetts\\pageClient.tsx",
+    "status": "updated",
+    "city": "Boston",
+    "state": "Massachusetts"
+  },
+  {
+    "file": "src\\app\\vending-leads\\bothell-washington\\pageClient.tsx",
+    "status": "updated",
+    "city": "Bothell",
+    "state": "Washington"
+  },
+  {
+    "file": "src\\app\\vending-leads\\boulder-city-nevada\\pageClient.tsx",
+    "status": "updated",
+    "city": "Boulder City",
+    "state": "Nevada"
+  },
+  {
+    "file": "src\\app\\vending-leads\\boulder-colorado\\pageClient.tsx",
+    "status": "updated",
+    "city": "Boulder",
+    "state": "Colorado"
+  },
+  {
+    "file": "src\\app\\vending-leads\\bowie-maryland\\pageClient.tsx",
+    "status": "updated",
+    "city": "Bowie",
+    "state": "Maryland"
+  },
+  {
+    "file": "src\\app\\vending-leads\\bowling-green-kentucky\\pageClient.tsx",
+    "status": "updated",
+    "city": "Bowling Green",
+    "state": "Kentucky"
+  },
+  {
+    "file": "src\\app\\vending-leads\\boynton-beach-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Boynton Beach",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\bozeman-montana\\pageClient.tsx",
+    "status": "updated",
+    "city": "Bozeman",
+    "state": "Montana"
+  },
+  {
+    "file": "src\\app\\vending-leads\\bradenton-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Bradenton",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\brawley-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Brawley",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\brentwood-tennessee\\pageClient.tsx",
+    "status": "updated",
+    "city": "Brentwood",
+    "state": "Tennessee"
+  },
+  {
+    "file": "src\\app\\vending-leads\\bridgeport-connecticut\\pageClient.tsx",
+    "status": "updated",
+    "city": "Bridgeport",
+    "state": "Connecticut"
+  },
+  {
+    "file": "src\\app\\vending-leads\\bristol-connecticut\\pageClient.tsx",
+    "status": "updated",
+    "city": "Bristol",
+    "state": "Connecticut"
+  },
+  {
+    "file": "src\\app\\vending-leads\\brockton-massachusetts\\pageClient.tsx",
+    "status": "updated",
+    "city": "Brockton",
+    "state": "Massachusetts"
+  },
+  {
+    "file": "src\\app\\vending-leads\\broken-arrow-oklahoma\\pageClient.tsx",
+    "status": "updated",
+    "city": "Broken Arrow",
+    "state": "Oklahoma"
+  },
+  {
+    "file": "src\\app\\vending-leads\\brookline-massachusetts\\pageClient.tsx",
+    "status": "updated",
+    "city": "Brookline",
+    "state": "Massachusetts"
+  },
+  {
+    "file": "src\\app\\vending-leads\\brooklyn-park-minnesota\\pageClient.tsx",
+    "status": "updated",
+    "city": "Brooklyn Park",
+    "state": "Minnesota"
+  },
+  {
+    "file": "src\\app\\vending-leads\\broomfield-colorado\\pageClient.tsx",
+    "status": "updated",
+    "city": "Broomfield",
+    "state": "Colorado"
+  },
+  {
+    "file": "src\\app\\vending-leads\\brownsville-texas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Brownsville",
+    "state": "Texas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\brunswick-georgia\\pageClient.tsx",
+    "status": "updated",
+    "city": "Brunswick",
+    "state": "Georgia"
+  },
+  {
+    "file": "src\\app\\vending-leads\\buckeye-arizona\\pageClient.tsx",
+    "status": "updated",
+    "city": "Buckeye",
+    "state": "Arizona"
+  },
+  {
+    "file": "src\\app\\vending-leads\\buena-park-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Buena Park",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\buffalo-grove-illinois\\pageClient.tsx",
+    "status": "updated",
+    "city": "Buffalo Grove",
+    "state": "Illinois"
+  },
+  {
+    "file": "src\\app\\vending-leads\\buffalo-new-york\\pageClient.tsx",
+    "status": "updated",
+    "city": "Buffalo",
+    "state": "New York"
+  },
+  {
+    "file": "src\\app\\vending-leads\\bullhead-city-arizona\\pageClient.tsx",
+    "status": "updated",
+    "city": "Bullhead City",
+    "state": "Arizona"
+  },
+  {
+    "file": "src\\app\\vending-leads\\burbank-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Burbank",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\burien-washington\\pageClient.tsx",
+    "status": "updated",
+    "city": "Burien",
+    "state": "Washington"
+  },
+  {
+    "file": "src\\app\\vending-leads\\burlington-north-carolina\\pageClient.tsx",
+    "status": "updated",
+    "city": "Burlington",
+    "state": "North Carolina"
+  },
+  {
+    "file": "src\\app\\vending-leads\\burlington-vermont\\pageClient.tsx",
+    "status": "updated",
+    "city": "Burlington",
+    "state": "Vermont"
+  },
+  {
+    "file": "src\\app\\vending-leads\\burnsville-minnesota\\pageClient.tsx",
+    "status": "updated",
+    "city": "Burnsville",
+    "state": "Minnesota"
+  },
+  {
+    "file": "src\\app\\vending-leads\\butte-montana\\pageClient.tsx",
+    "status": "updated",
+    "city": "Butte",
+    "state": "Montana"
+  },
+  {
+    "file": "src\\app\\vending-leads\\cabot-arkansas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Cabot",
+    "state": "Arkansas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\caldwell-idaho\\pageClient.tsx",
+    "status": "updated",
+    "city": "Caldwell",
+    "state": "Idaho"
+  },
+  {
+    "file": "src\\app\\vending-leads\\calexico-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Calexico",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\calimesa-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Calimesa",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\camarillo-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Camarillo",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\cambridge-massachusetts\\pageClient.tsx",
+    "status": "updated",
+    "city": "Cambridge",
+    "state": "Massachusetts"
+  },
+  {
+    "file": "src\\app\\vending-leads\\camden-new-jersey\\pageClient.tsx",
+    "status": "updated",
+    "city": "Camden New",
+    "state": "Jersey"
+  },
+  {
+    "file": "src\\app\\vending-leads\\canton-ohio\\pageClient.tsx",
+    "status": "updated",
+    "city": "Canton",
+    "state": "Ohio"
+  },
+  {
+    "file": "src\\app\\vending-leads\\cape-coral-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Cape",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\cape-girardeau-missouri\\pageClient.tsx",
+    "status": "updated",
+    "city": "Cape Girardeau",
+    "state": "Missouri"
+  },
+  {
+    "file": "src\\app\\vending-leads\\capitol-hill-washington-dc\\pageClient.tsx",
+    "status": "updated",
+    "city": "Capitol Hill",
+    "state": "Washington DC"
+  },
+  {
+    "file": "src\\app\\vending-leads\\carlsbad-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Carlsbad",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\carlsbad-new-mexico\\pageClient.tsx",
+    "status": "updated",
+    "city": "Carlsbad New",
+    "state": "Mexico"
+  },
+  {
+    "file": "src\\app\\vending-leads\\carpentersville-illinois\\pageClient.tsx",
+    "status": "updated",
+    "city": "Carpentersville",
+    "state": "Illinois"
+  },
+  {
+    "file": "src\\app\\vending-leads\\carrollton-texas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Carrollton",
+    "state": "Texas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\carson-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Carson",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\carson-city-nevada\\pageClient.tsx",
+    "status": "updated",
+    "city": "Carson City",
+    "state": "Nevada"
+  },
+  {
+    "file": "src\\app\\vending-leads\\cary-north-carolina\\pageClient.tsx",
+    "status": "updated",
+    "city": "Cary",
+    "state": "North Carolina"
+  },
+  {
+    "file": "src\\app\\vending-leads\\casa-grande-arizona\\pageClient.tsx",
+    "status": "updated",
+    "city": "Casa Grande",
+    "state": "Arizona"
+  },
+  {
+    "file": "src\\app\\vending-leads\\casper-wyoming\\pageClient.tsx",
+    "status": "updated",
+    "city": "Casper",
+    "state": "Wyoming"
+  },
+  {
+    "file": "src\\app\\vending-leads\\casselberry-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Casselberry",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\castle-rock-colorado\\pageClient.tsx",
+    "status": "updated",
+    "city": "Castle Rock",
+    "state": "Colorado"
+  },
+  {
+    "file": "src\\app\\vending-leads\\cedar-rapids-iowa\\pageClient.tsx",
+    "status": "updated",
+    "city": "Cedar",
+    "state": "Iowa"
+  },
+  {
+    "file": "src\\app\\vending-leads\\centennial-colorado\\pageClient.tsx",
+    "status": "updated",
+    "city": "Centennial",
+    "state": "Colorado"
+  },
+  {
+    "file": "src\\app\\vending-leads\\central-falls-rhode-island\\pageClient.tsx",
+    "status": "updated",
+    "city": "Central Falls Rhode",
+    "state": "Island"
+  },
+  {
+    "file": "src\\app\\vending-leads\\ceres-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Ceres",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\champaign-urbana-illinois\\pageClient.tsx",
+    "status": "updated",
+    "city": "Champaign Urbana",
+    "state": "Illinois"
+  },
+  {
+    "file": "src\\app\\vending-leads\\chandler-arizona\\pageClient.tsx",
+    "status": "updated",
+    "city": "Chandler",
+    "state": "Arizona"
+  },
+  {
+    "file": "src\\app\\vending-leads\\chanute-kansas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Chanute",
+    "state": "Kansas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\chapel-hill-north-carolina\\pageClient.tsx",
+    "status": "updated",
+    "city": "Chapel Hill",
+    "state": "North Carolina"
+  },
+  {
+    "file": "src\\app\\vending-leads\\charleston-west-virginia\\pageClient.tsx",
+    "status": "updated",
+    "city": "Charleston",
+    "state": "West Virginia"
+  },
+  {
+    "file": "src\\app\\vending-leads\\charlotte-north-carolina\\pageClient.tsx",
+    "status": "updated",
+    "city": "Charlotte",
+    "state": "North Carolina"
+  },
+  {
+    "file": "src\\app\\vending-leads\\charlottesville-virginia\\pageClient.tsx",
+    "status": "updated",
+    "city": "Charlottesville",
+    "state": "Virginia"
+  },
+  {
+    "file": "src\\app\\vending-leads\\cherry-hill-new-jersey\\pageClient.tsx",
+    "status": "updated",
+    "city": "Cherry Hill New",
+    "state": "Jersey"
+  },
+  {
+    "file": "src\\app\\vending-leads\\chesapeake-virginia\\pageClient.tsx",
+    "status": "updated",
+    "city": "Chesapeake",
+    "state": "Virginia"
+  },
+  {
+    "file": "src\\app\\vending-leads\\cheyenne-wyoming\\pageClient.tsx",
+    "status": "updated",
+    "city": "Cheyenne",
+    "state": "Wyoming"
+  },
+  {
+    "file": "src\\app\\vending-leads\\chicago-illinois\\pageClient.tsx",
+    "status": "updated",
+    "city": "Chicago",
+    "state": "Illinois"
+  },
+  {
+    "file": "src\\app\\vending-leads\\chico-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Chico",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\chicopee-massachusetts\\pageClient.tsx",
+    "status": "updated",
+    "city": "Chicopee",
+    "state": "Massachusetts"
+  },
+  {
+    "file": "src\\app\\vending-leads\\chino-hills-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Chino Hills",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\chula-vista-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Chula Vista",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\cicero-illinois\\pageClient.tsx",
+    "status": "updated",
+    "city": "Cicero",
+    "state": "Illinois"
+  },
+  {
+    "file": "src\\app\\vending-leads\\citrus-heights-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Citrus Heights",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\clearwater-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Clearwater",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\clifton-new-jersey\\pageClient.tsx",
+    "status": "updated",
+    "city": "Clifton New",
+    "state": "Jersey"
+  },
+  {
+    "file": "src\\app\\vending-leads\\clovis-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Clovis",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\clovis-new-mexico\\pageClient.tsx",
+    "status": "updated",
+    "city": "Clovis New",
+    "state": "Mexico"
+  },
+  {
+    "file": "src\\app\\vending-leads\\coachella-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Coachella",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\coconut-creek-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Coconut Creek",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\coeur-dalene-idaho\\pageClient.tsx",
+    "status": "updated",
+    "city": "Coeur",
+    "state": "Idaho"
+  },
+  {
+    "file": "src\\app\\vending-leads\\coffeyville-kansas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Coffeyville",
+    "state": "Kansas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\college-park-maryland\\pageClient.tsx",
+    "status": "updated",
+    "city": "College Park",
+    "state": "Maryland"
+  },
+  {
+    "file": "src\\app\\vending-leads\\college-station-texas\\pageClient.tsx",
+    "status": "updated",
+    "city": "College Station",
+    "state": "Texas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\collierville-tennessee\\pageClient.tsx",
+    "status": "updated",
+    "city": "Collierville",
+    "state": "Tennessee"
+  },
+  {
+    "file": "src\\app\\vending-leads\\columbia-maryland\\pageClient.tsx",
+    "status": "updated",
+    "city": "Columbia",
+    "state": "Maryland"
+  },
+  {
+    "file": "src\\app\\vending-leads\\columbia-missouri\\pageClient.tsx",
+    "status": "updated",
+    "city": "Columbia",
+    "state": "Missouri"
+  },
+  {
+    "file": "src\\app\\vending-leads\\columbus-georgia\\pageClient.tsx",
+    "status": "updated",
+    "city": "Columbus",
+    "state": "Georgia"
+  },
+  {
+    "file": "src\\app\\vending-leads\\columbus-mississippi\\pageClient.tsx",
+    "status": "updated",
+    "city": "Columbus",
+    "state": "Mississippi"
+  },
+  {
+    "file": "src\\app\\vending-leads\\commerce-city-colorado\\pageClient.tsx",
+    "status": "updated",
+    "city": "Commerce City",
+    "state": "Colorado"
+  },
+  {
+    "file": "src\\app\\vending-leads\\compton-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Compton",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\concord-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Concord",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\concord-new-hampshire\\pageClient.tsx",
+    "status": "updated",
+    "city": "Concord",
+    "state": "New Hampshire"
+  },
+  {
+    "file": "src\\app\\vending-leads\\concord-north-carolina\\pageClient.tsx",
+    "status": "updated",
+    "city": "Concord North",
+    "state": "Carolina"
+  },
+  {
+    "file": "src\\app\\vending-leads\\conroe-texas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Conroe",
+    "state": "Texas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\conway-arkansas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Conway",
+    "state": "Arkansas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\conway-south-carolina\\pageClient.tsx",
+    "status": "updated",
+    "city": "Conway",
+    "state": "South Carolina"
+  },
+  {
+    "file": "src\\app\\vending-leads\\coon-rapids-minnesota\\pageClient.tsx",
+    "status": "updated",
+    "city": "Coon Rapids",
+    "state": "Minnesota"
+  },
+  {
+    "file": "src\\app\\vending-leads\\coral-gables-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Coral Gables",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\coral-springs-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Coral Springs",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\corona-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Corona",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\coronado-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Coronado",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\corpus-christi-texas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Corpus",
+    "state": "Texas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\corvallis-oregon\\pageClient.tsx",
+    "status": "updated",
+    "city": "Corvallis",
+    "state": "Oregon"
+  },
+  {
+    "file": "src\\app\\vending-leads\\costa-mesa-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Costa Mesa",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\council-bluffs-iowa\\pageClient.tsx",
+    "status": "updated",
+    "city": "Council Bluffs",
+    "state": "Iowa"
+  },
+  {
+    "file": "src\\app\\vending-leads\\covington-kentucky\\pageClient.tsx",
+    "status": "updated",
+    "city": "Covington",
+    "state": "Kentucky"
+  },
+  {
+    "file": "src\\app\\vending-leads\\cranston-rhode-island\\pageClient.tsx",
+    "status": "updated",
+    "city": "Cranston",
+    "state": "Rhode Island"
+  },
+  {
+    "file": "src\\app\\vending-leads\\crystal-lake-illinois\\pageClient.tsx",
+    "status": "updated",
+    "city": "Crystal Lake",
+    "state": "Illinois"
+  },
+  {
+    "file": "src\\app\\vending-leads\\cudahy-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Cudahy",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\culver-city-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Culver City",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\cutler-bay-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Cutler Bay",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\cypress-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Cypress",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\dakota\\pageClient.tsx",
+    "status": "updated",
+    "city": "Dakota",
+    "state": "Unknown"
+  },
+  {
+    "file": "src\\app\\vending-leads\\dallas-texas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Dallas",
+    "state": "Texas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\dalton-georgia\\pageClient.tsx",
+    "status": "updated",
+    "city": "Dalton",
+    "state": "Georgia"
+  },
+  {
+    "file": "src\\app\\vending-leads\\daly-city-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Daly City",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\danbury-connecticut\\pageClient.tsx",
+    "status": "updated",
+    "city": "Danbury",
+    "state": "Connecticut"
+  },
+  {
+    "file": "src\\app\\vending-leads\\davenport-iowa\\pageClient.tsx",
+    "status": "updated",
+    "city": "Davenport",
+    "state": "Iowa"
+  },
+  {
+    "file": "src\\app\\vending-leads\\davie-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Davie",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\daytona-beach-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Daytona Beach",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\dearborn-michigan\\pageClient.tsx",
+    "status": "updated",
+    "city": "Dearborn",
+    "state": "Michigan"
+  },
+  {
+    "file": "src\\app\\vending-leads\\decatur-alabama\\pageClient.tsx",
+    "status": "updated",
+    "city": "Decatur",
+    "state": "Alabama"
+  },
+  {
+    "file": "src\\app\\vending-leads\\decatur-illinois\\pageClient.tsx",
+    "status": "updated",
+    "city": "Decatur",
+    "state": "Illinois"
+  },
+  {
+    "file": "src\\app\\vending-leads\\deerfield-beach-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Deerfield Beach",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\delano-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Delano",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\deltona-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Deltona",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\denton-texas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Denton",
+    "state": "Texas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\denver-colorado\\pageClient.tsx",
+    "status": "updated",
+    "city": "Denver",
+    "state": "Colorado"
+  },
+  {
+    "file": "src\\app\\vending-leads\\derry-new-hampshire\\pageClient.tsx",
+    "status": "updated",
+    "city": "Derry",
+    "state": "New Hampshire"
+  },
+  {
+    "file": "src\\app\\vending-leads\\des-moines-iowa\\pageClient.tsx",
+    "status": "updated",
+    "city": "Des",
+    "state": "Iowa"
+  },
+  {
+    "file": "src\\app\\vending-leads\\des-plaines-illinois\\pageClient.tsx",
+    "status": "updated",
+    "city": "Des Plaines",
+    "state": "Illinois"
+  },
+  {
+    "file": "src\\app\\vending-leads\\detroit-michigan\\pageClient.tsx",
+    "status": "updated",
+    "city": "Detroit",
+    "state": "Michigan"
+  },
+  {
+    "file": "src\\app\\vending-leads\\diamond-bar-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Diamond Bar",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\dickinson-north-dakota\\pageClient.tsx",
+    "status": "updated",
+    "city": "Dickinson North",
+    "state": "Dakota"
+  },
+  {
+    "file": "src\\app\\vending-leads\\dinuba-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Dinuba",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\dodge-city-kansas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Dodge City",
+    "state": "Kansas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\doral-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Doral",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\dothan-alabama\\pageClient.tsx",
+    "status": "updated",
+    "city": "Dothan",
+    "state": "Alabama"
+  },
+  {
+    "file": "src\\app\\vending-leads\\douglas-georgia\\pageClient.tsx",
+    "status": "updated",
+    "city": "Douglas",
+    "state": "Georgia"
+  },
+  {
+    "file": "src\\app\\vending-leads\\douglasville-georgia\\pageClient.tsx",
+    "status": "updated",
+    "city": "Douglasville",
+    "state": "Georgia"
+  },
+  {
+    "file": "src\\app\\vending-leads\\dover-delaware\\pageClient.tsx",
+    "status": "updated",
+    "city": "Dover",
+    "state": "Delaware"
+  },
+  {
+    "file": "src\\app\\vending-leads\\dover-new-hampshire\\pageClient.tsx",
+    "status": "updated",
+    "city": "Dover",
+    "state": "New Hampshire"
+  },
+  {
+    "file": "src\\app\\vending-leads\\downers-grove-illinois\\pageClient.tsx",
+    "status": "updated",
+    "city": "Downers Grove",
+    "state": "Illinois"
+  },
+  {
+    "file": "src\\app\\vending-leads\\downey-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Downey",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\downtown-washington-dc\\pageClient.tsx",
+    "status": "updated",
+    "city": "Downtown DC",
+    "state": "Washington DC"
+  },
+  {
+    "file": "src\\app\\vending-leads\\dublin-georgia\\pageClient.tsx",
+    "status": "updated",
+    "city": "Dublin",
+    "state": "Georgia"
+  },
+  {
+    "file": "src\\app\\vending-leads\\dubuque-iowa\\pageClient.tsx",
+    "status": "updated",
+    "city": "Dubuque",
+    "state": "Iowa"
+  },
+  {
+    "file": "src\\app\\vending-leads\\duluth-minnesota\\pageClient.tsx",
+    "status": "updated",
+    "city": "Duluth",
+    "state": "Minnesota"
+  },
+  {
+    "file": "src\\app\\vending-leads\\dunedin-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Dunedin",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\dupont-circle-washington-dc\\pageClient.tsx",
+    "status": "updated",
+    "city": "Dupont Circle",
+    "state": "Washington DC"
+  },
+  {
+    "file": "src\\app\\vending-leads\\durham-north-carolina\\pageClient.tsx",
+    "status": "updated",
+    "city": "Durham",
+    "state": "North Carolina"
+  },
+  {
+    "file": "src\\app\\vending-leads\\eagan-minnesota\\pageClient.tsx",
+    "status": "updated",
+    "city": "Eagan",
+    "state": "Minnesota"
+  },
+  {
+    "file": "src\\app\\vending-leads\\east-greenwich-rhode-island\\pageClient.tsx",
+    "status": "updated",
+    "city": "East Greenwich Rhode",
+    "state": "Island"
+  },
+  {
+    "file": "src\\app\\vending-leads\\east-los-angeles-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "East Los Angeles",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\east-orange-new-jersey\\pageClient.tsx",
+    "status": "updated",
+    "city": "East Orange",
+    "state": "New Jersey"
+  },
+  {
+    "file": "src\\app\\vending-leads\\east-providence-rhode-island\\pageClient.tsx",
+    "status": "updated",
+    "city": "East Providence Rhode",
+    "state": "Island"
+  },
+  {
+    "file": "src\\app\\vending-leads\\eau-claire-wisconsin\\pageClient.tsx",
+    "status": "updated",
+    "city": "Eau Claire",
+    "state": "Wisconsin"
+  },
+  {
+    "file": "src\\app\\vending-leads\\eden-prairie-minnesota\\pageClient.tsx",
+    "status": "updated",
+    "city": "Eden Prairie",
+    "state": "Minnesota"
+  },
+  {
+    "file": "src\\app\\vending-leads\\edgewater-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Edgewater",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\edinburg-texas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Edinburg",
+    "state": "Texas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\edmond-oklahoma\\pageClient.tsx",
+    "status": "updated",
+    "city": "Edmond",
+    "state": "Oklahoma"
+  },
+  {
+    "file": "src\\app\\vending-leads\\edmonds-washington\\pageClient.tsx",
+    "status": "updated",
+    "city": "Edmonds",
+    "state": "Washington"
+  },
+  {
+    "file": "src\\app\\vending-leads\\el-cajon-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "El Cajon",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\el-centro-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "El Centro",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\el-cerrito-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "El Cerrito",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\el-monte-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "El Monte",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\el-paso-texas\\pageClient.tsx",
+    "status": "updated",
+    "city": "El Paso",
+    "state": "Texas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\el-segundo-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "El Segundo",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\elgin-illinois\\pageClient.tsx",
+    "status": "updated",
+    "city": "Elgin",
+    "state": "Illinois"
+  },
+  {
+    "file": "src\\app\\vending-leads\\elizabethtown-kentucky\\pageClient.tsx",
+    "status": "updated",
+    "city": "Elizabethtown",
+    "state": "Kentucky"
+  },
+  {
+    "file": "src\\app\\vending-leads\\elk-grove-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Elk Grove",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\elkhart-indiana\\pageClient.tsx",
+    "status": "updated",
+    "city": "Elkhart",
+    "state": "Indiana"
+  },
+  {
+    "file": "src\\app\\vending-leads\\elko-nevada\\pageClient.tsx",
+    "status": "updated",
+    "city": "Elko",
+    "state": "Nevada"
+  },
+  {
+    "file": "src\\app\\vending-leads\\elmhurst-illinois\\pageClient.tsx",
+    "status": "updated",
+    "city": "Elmhurst",
+    "state": "Illinois"
+  },
+  {
+    "file": "src\\app\\vending-leads\\elsmere-delaware\\pageClient.tsx",
+    "status": "updated",
+    "city": "Elsmere",
+    "state": "Delaware"
+  },
+  {
+    "file": "src\\app\\vending-leads\\elyria-ohio\\pageClient.tsx",
+    "status": "updated",
+    "city": "Elyria",
+    "state": "Ohio"
+  },
+  {
+    "file": "src\\app\\vending-leads\\emeryville-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Emeryville",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\encinitas-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Encinitas",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\enfield-connecticut\\pageClient.tsx",
+    "status": "updated",
+    "city": "Enfield",
+    "state": "Connecticut"
+  },
+  {
+    "file": "src\\app\\vending-leads\\enid-oklahoma\\pageClient.tsx",
+    "status": "updated",
+    "city": "Enid",
+    "state": "Oklahoma"
+  },
+  {
+    "file": "src\\app\\vending-leads\\enterprise-nevada\\pageClient.tsx",
+    "status": "updated",
+    "city": "Enterprise",
+    "state": "Nevada"
+  },
+  {
+    "file": "src\\app\\vending-leads\\erie-pennsylvania\\pageClient.tsx",
+    "status": "updated",
+    "city": "Erie",
+    "state": "Pennsylvania"
+  },
+  {
+    "file": "src\\app\\vending-leads\\escondido-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Escondido",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\essex-junction-vermont\\pageClient.tsx",
+    "status": "updated",
+    "city": "Essex Junction",
+    "state": "Vermont"
+  },
+  {
+    "file": "src\\app\\vending-leads\\eugene-oregon\\pageClient.tsx",
+    "status": "updated",
+    "city": "Eugene",
+    "state": "Oregon"
+  },
+  {
+    "file": "src\\app\\vending-leads\\evanston-illinois\\pageClient.tsx",
+    "status": "updated",
+    "city": "Evanston",
+    "state": "Illinois"
+  },
+  {
+    "file": "src\\app\\vending-leads\\evanston-wyoming\\pageClient.tsx",
+    "status": "updated",
+    "city": "Evanston",
+    "state": "Wyoming"
+  },
+  {
+    "file": "src\\app\\vending-leads\\everett-washington\\pageClient.tsx",
+    "status": "updated",
+    "city": "Everett",
+    "state": "Washington"
+  },
+  {
+    "file": "src\\app\\vending-leads\\ewa-beach-hawaii\\pageClient.tsx",
+    "status": "updated",
+    "city": "Ewa Beach",
+    "state": "Hawaii"
+  },
+  {
+    "file": "src\\app\\vending-leads\\fairbanks-alaska\\pageClient.tsx",
+    "status": "updated",
+    "city": "Fairbanks",
+    "state": "Alaska"
+  },
+  {
+    "file": "src\\app\\vending-leads\\fairfield-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Fairfield",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\fairmont-west-virginia\\pageClient.tsx",
+    "status": "updated",
+    "city": "Fairmont West",
+    "state": "Virginia"
+  },
+  {
+    "file": "src\\app\\vending-leads\\fall-river-massachusetts\\pageClient.tsx",
+    "status": "updated",
+    "city": "Fall River",
+    "state": "Massachusetts"
+  },
+  {
+    "file": "src\\app\\vending-leads\\fallon-nevada\\pageClient.tsx",
+    "status": "updated",
+    "city": "Fallon",
+    "state": "Nevada"
+  },
+  {
+    "file": "src\\app\\vending-leads\\fargo-north-dakota\\pageClient.tsx",
+    "status": "updated",
+    "city": "Fargo",
+    "state": "North Dakota"
+  },
+  {
+    "file": "src\\app\\vending-leads\\farmington-hills-michigan\\pageClient.tsx",
+    "status": "updated",
+    "city": "Farmington Hills",
+    "state": "Michigan"
+  },
+  {
+    "file": "src\\app\\vending-leads\\farmington-new-mexico\\pageClient.tsx",
+    "status": "updated",
+    "city": "Farmington",
+    "state": "New Mexico"
+  },
+  {
+    "file": "src\\app\\vending-leads\\fayetteville-arkansas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Fayetteville",
+    "state": "Arkansas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\fayetteville-north-carolina\\pageClient.tsx",
+    "status": "updated",
+    "city": "Fayetteville",
+    "state": "North Carolina"
+  },
+  {
+    "file": "src\\app\\vending-leads\\federal-way-washington\\pageClient.tsx",
+    "status": "updated",
+    "city": "Federal Way",
+    "state": "Washington"
+  },
+  {
+    "file": "src\\app\\vending-leads\\fernley-nevada\\pageClient.tsx",
+    "status": "updated",
+    "city": "Fernley",
+    "state": "Nevada"
+  },
+  {
+    "file": "src\\app\\vending-leads\\flagstaff-arizona\\pageClient.tsx",
+    "status": "updated",
+    "city": "Flagstaff",
+    "state": "Arizona"
+  },
+  {
+    "file": "src\\app\\vending-leads\\flint-michigan\\pageClient.tsx",
+    "status": "updated",
+    "city": "Flint",
+    "state": "Michigan"
+  },
+  {
+    "file": "src\\app\\vending-leads\\florence-kentucky\\pageClient.tsx",
+    "status": "updated",
+    "city": "Florence",
+    "state": "Kentucky"
+  },
+  {
+    "file": "src\\app\\vending-leads\\florence-south-carolina\\pageClient.tsx",
+    "status": "updated",
+    "city": "Florence",
+    "state": "South Carolina"
+  },
+  {
+    "file": "src\\app\\vending-leads\\florissant-missouri\\pageClient.tsx",
+    "status": "updated",
+    "city": "Florissant",
+    "state": "Missouri"
+  },
+  {
+    "file": "src\\app\\vending-leads\\folsom-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Folsom",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\fontana-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Fontana",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\fort-collins-colorado\\pageClient.tsx",
+    "status": "updated",
+    "city": "Fort Collins",
+    "state": "Colorado"
+  },
+  {
+    "file": "src\\app\\vending-leads\\fort-lauderdale-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Fort Lauderdale",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\fort-myers-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Fort Myers",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\fort-pierce-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Fort Pierce",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\fort-scott-kansas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Fort Scott",
+    "state": "Kansas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\fort-smith-arkansas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Fort Smith",
+    "state": "Arkansas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\fort-worth-texas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Fort",
+    "state": "Texas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\fountain-valley-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Fountain Valley",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\framingham-massachusetts\\pageClient.tsx",
+    "status": "updated",
+    "city": "Framingham",
+    "state": "Massachusetts"
+  },
+  {
+    "file": "src\\app\\vending-leads\\frankfort-kentucky\\pageClient.tsx",
+    "status": "updated",
+    "city": "Frankfort",
+    "state": "Kentucky"
+  },
+  {
+    "file": "src\\app\\vending-leads\\frederick-maryland\\pageClient.tsx",
+    "status": "updated",
+    "city": "Frederick",
+    "state": "Maryland"
+  },
+  {
+    "file": "src\\app\\vending-leads\\fremont-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Fremont",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\fremont-nebraska\\pageClient.tsx",
+    "status": "updated",
+    "city": "Fremont",
+    "state": "Nebraska"
+  },
+  {
+    "file": "src\\app\\vending-leads\\fresno-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Fresno",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\frisco-texas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Frisco",
+    "state": "Texas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\fullerton-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Fullerton",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\gadsden-alabama\\pageClient.tsx",
+    "status": "updated",
+    "city": "Gadsden",
+    "state": "Alabama"
+  },
+  {
+    "file": "src\\app\\vending-leads\\gainesville-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Gainesville",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\gainesville-georgia\\pageClient.tsx",
+    "status": "updated",
+    "city": "Gainesville",
+    "state": "Georgia"
+  },
+  {
+    "file": "src\\app\\vending-leads\\gaithersburg-maryland\\pageClient.tsx",
+    "status": "updated",
+    "city": "Gaithersburg",
+    "state": "Maryland"
+  },
+  {
+    "file": "src\\app\\vending-leads\\gallup-new-mexico\\pageClient.tsx",
+    "status": "updated",
+    "city": "Gallup New",
+    "state": "Mexico"
+  },
+  {
+    "file": "src\\app\\vending-leads\\garden-city-kansas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Garden City",
+    "state": "Kansas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\garden-grove-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Garden Grove",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\garland-texas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Garland",
+    "state": "Texas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\gary-indiana\\pageClient.tsx",
+    "status": "updated",
+    "city": "Gary",
+    "state": "Indiana"
+  },
+  {
+    "file": "src\\app\\vending-leads\\gastonia-north-carolina\\pageClient.tsx",
+    "status": "updated",
+    "city": "Gastonia North",
+    "state": "Carolina"
+  },
+  {
+    "file": "src\\app\\vending-leads\\georgetown-delaware\\pageClient.tsx",
+    "status": "updated",
+    "city": "Georgetown",
+    "state": "Delaware"
+  },
+  {
+    "file": "src\\app\\vending-leads\\georgetown-kentucky\\pageClient.tsx",
+    "status": "updated",
+    "city": "Georgetown",
+    "state": "Kentucky"
+  },
+  {
+    "file": "src\\app\\vending-leads\\georgetown-washington-dc\\pageClient.tsx",
+    "status": "updated",
+    "city": "Georgetown",
+    "state": "Washington DC"
+  },
+  {
+    "file": "src\\app\\vending-leads\\georgia\\pageClient.tsx",
+    "status": "updated",
+    "city": "Georgia",
+    "state": "Georgia"
+  },
+  {
+    "file": "src\\app\\vending-leads\\germantown-maryland\\pageClient.tsx",
+    "status": "updated",
+    "city": "Germantown",
+    "state": "Maryland"
+  },
+  {
+    "file": "src\\app\\vending-leads\\gilbert-arizona\\pageClient.tsx",
+    "status": "updated",
+    "city": "Gilbert",
+    "state": "Arizona"
+  },
+  {
+    "file": "src\\app\\vending-leads\\gillette-wyoming\\pageClient.tsx",
+    "status": "updated",
+    "city": "Gillette",
+    "state": "Wyoming"
+  },
+  {
+    "file": "src\\app\\vending-leads\\glendale-arizona\\pageClient.tsx",
+    "status": "updated",
+    "city": "Glendale",
+    "state": "Arizona"
+  },
+  {
+    "file": "src\\app\\vending-leads\\glendale-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Glendale",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\glendora-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Glendora",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\goleta-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Goleta",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\goodyear-arizona\\pageClient.tsx",
+    "status": "updated",
+    "city": "Goodyear",
+    "state": "Arizona"
+  },
+  {
+    "file": "src\\app\\vending-leads\\goose-creek-south-carolina\\pageClient.tsx",
+    "status": "updated",
+    "city": "Goose Creek",
+    "state": "South Carolina"
+  },
+  {
+    "file": "src\\app\\vending-leads\\grand-forks-north-dakota\\pageClient.tsx",
+    "status": "updated",
+    "city": "Grand Forks",
+    "state": "North Dakota"
+  },
+  {
+    "file": "src\\app\\vending-leads\\grand-island-nebraska\\pageClient.tsx",
+    "status": "updated",
+    "city": "Grand Island",
+    "state": "Nebraska"
+  },
+  {
+    "file": "src\\app\\vending-leads\\grand-junction-colorado\\pageClient.tsx",
+    "status": "updated",
+    "city": "Grand Junction",
+    "state": "Colorado"
+  },
+  {
+    "file": "src\\app\\vending-leads\\grand-prairie-texas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Grand",
+    "state": "Texas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\grand-rapids-michigan\\pageClient.tsx",
+    "status": "updated",
+    "city": "Grand",
+    "state": "Michigan"
+  },
+  {
+    "file": "src\\app\\vending-leads\\great-bend-kansas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Great Bend",
+    "state": "Kansas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\great-falls-montana\\pageClient.tsx",
+    "status": "updated",
+    "city": "Great Falls",
+    "state": "Montana"
+  },
+  {
+    "file": "src\\app\\vending-leads\\greeley-colorado\\pageClient.tsx",
+    "status": "updated",
+    "city": "Greeley",
+    "state": "Colorado"
+  },
+  {
+    "file": "src\\app\\vending-leads\\green-bay-wisconsin\\pageClient.tsx",
+    "status": "updated",
+    "city": "Green Bay",
+    "state": "Wisconsin"
+  },
+  {
+    "file": "src\\app\\vending-leads\\greenacres-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Greenacres",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\greensboro-north-carolina\\pageClient.tsx",
+    "status": "updated",
+    "city": "Greensboro",
+    "state": "North Carolina"
+  },
+  {
+    "file": "src\\app\\vending-leads\\greenville-mississippi\\pageClient.tsx",
+    "status": "updated",
+    "city": "Greenville",
+    "state": "Mississippi"
+  },
+  {
+    "file": "src\\app\\vending-leads\\greenville-north-carolina\\pageClient.tsx",
+    "status": "updated",
+    "city": "Greenville",
+    "state": "North Carolina"
+  },
+  {
+    "file": "src\\app\\vending-leads\\gresham-oregon\\pageClient.tsx",
+    "status": "updated",
+    "city": "Gresham",
+    "state": "Oregon"
+  },
+  {
+    "file": "src\\app\\vending-leads\\gretna-louisiana\\pageClient.tsx",
+    "status": "updated",
+    "city": "Gretna",
+    "state": "Louisiana"
+  },
+  {
+    "file": "src\\app\\vending-leads\\griffin-georgia\\pageClient.tsx",
+    "status": "updated",
+    "city": "Griffin",
+    "state": "Georgia"
+  },
+  {
+    "file": "src\\app\\vending-leads\\gulfport-mississippi\\pageClient.tsx",
+    "status": "updated",
+    "city": "Gulfport",
+    "state": "Mississippi"
+  },
+  {
+    "file": "src\\app\\vending-leads\\hackensack-new-jersey\\pageClient.tsx",
+    "status": "updated",
+    "city": "Hackensack New",
+    "state": "Jersey"
+  },
+  {
+    "file": "src\\app\\vending-leads\\hagerstown-maryland\\pageClient.tsx",
+    "status": "updated",
+    "city": "Hagerstown",
+    "state": "Maryland"
+  },
+  {
+    "file": "src\\app\\vending-leads\\hamden-connecticut\\pageClient.tsx",
+    "status": "updated",
+    "city": "Hamden",
+    "state": "Connecticut"
+  },
+  {
+    "file": "src\\app\\vending-leads\\hamilton-ohio\\pageClient.tsx",
+    "status": "updated",
+    "city": "Hamilton",
+    "state": "Ohio"
+  },
+  {
+    "file": "src\\app\\vending-leads\\hammond-louisiana\\pageClient.tsx",
+    "status": "updated",
+    "city": "Hammond",
+    "state": "Louisiana"
+  },
+  {
+    "file": "src\\app\\vending-leads\\hampshire\\pageClient.tsx",
+    "status": "updated",
+    "city": "Hampshire",
+    "state": "Unknown"
+  },
+  {
+    "file": "src\\app\\vending-leads\\hampton-virginia\\pageClient.tsx",
+    "status": "updated",
+    "city": "Hampton",
+    "state": "Virginia"
+  },
+  {
+    "file": "src\\app\\vending-leads\\hanford-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Hanford",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\harrisburg-pennsylvania\\pageClient.tsx",
+    "status": "updated",
+    "city": "Harrisburg",
+    "state": "Pennsylvania"
+  },
+  {
+    "file": "src\\app\\vending-leads\\hartford-connecticut\\pageClient.tsx",
+    "status": "updated",
+    "city": "Hartford",
+    "state": "Connecticut"
+  },
+  {
+    "file": "src\\app\\vending-leads\\hastings-nebraska\\pageClient.tsx",
+    "status": "updated",
+    "city": "Hastings",
+    "state": "Nebraska"
+  },
+  {
+    "file": "src\\app\\vending-leads\\hattiesburg-mississippi\\pageClient.tsx",
+    "status": "updated",
+    "city": "Hattiesburg",
+    "state": "Mississippi"
+  },
+  {
+    "file": "src\\app\\vending-leads\\haverhill-massachusetts\\pageClient.tsx",
+    "status": "updated",
+    "city": "Haverhill",
+    "state": "Massachusetts"
+  },
+  {
+    "file": "src\\app\\vending-leads\\havre-montana\\pageClient.tsx",
+    "status": "updated",
+    "city": "Havre",
+    "state": "Montana"
+  },
+  {
+    "file": "src\\app\\vending-leads\\hawaiian-gardens-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Hawaiian Gardens",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\hawthorne-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Hawthorne",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\hayward-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Hayward",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\helena-montana\\pageClient.tsx",
+    "status": "updated",
+    "city": "Helena",
+    "state": "Montana"
+  },
+  {
+    "file": "src\\app\\vending-leads\\hemet-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Hemet",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\henderson-nevada\\pageClient.tsx",
+    "status": "updated",
+    "city": "Henderson",
+    "state": "Nevada"
+  },
+  {
+    "file": "src\\app\\vending-leads\\hercules-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Hercules",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\hesperia-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Hesperia",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\hialeah-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Hialeah",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\hialeah-gardens-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Hialeah Gardens",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\hickory-north-carolina\\pageClient.tsx",
+    "status": "updated",
+    "city": "Hickory",
+    "state": "North Carolina"
+  },
+  {
+    "file": "src\\app\\vending-leads\\high-point-north-carolina\\pageClient.tsx",
+    "status": "updated",
+    "city": "High Point North",
+    "state": "Carolina"
+  },
+  {
+    "file": "src\\app\\vending-leads\\hillsboro-oregon\\pageClient.tsx",
+    "status": "updated",
+    "city": "Hillsboro",
+    "state": "Oregon"
+  },
+  {
+    "file": "src\\app\\vending-leads\\hilo-hawaii\\pageClient.tsx",
+    "status": "updated",
+    "city": "Hilo",
+    "state": "Hawaii"
+  },
+  {
+    "file": "src\\app\\vending-leads\\hilton-head-island-south-carolina\\pageClient.tsx",
+    "status": "updated",
+    "city": "Hilton Head Island",
+    "state": "South Carolina"
+  },
+  {
+    "file": "src\\app\\vending-leads\\hobbs-new-mexico\\pageClient.tsx",
+    "status": "updated",
+    "city": "Hobbs New",
+    "state": "Mexico"
+  },
+  {
+    "file": "src\\app\\vending-leads\\hoboken-new-jersey\\pageClient.tsx",
+    "status": "updated",
+    "city": "Hoboken New",
+    "state": "Jersey"
+  },
+  {
+    "file": "src\\app\\vending-leads\\hoffman-estates-illinois\\pageClient.tsx",
+    "status": "updated",
+    "city": "Hoffman Estates",
+    "state": "Illinois"
+  },
+  {
+    "file": "src\\app\\vending-leads\\hollywood-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Hollywood",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\homer-alaska\\pageClient.tsx",
+    "status": "updated",
+    "city": "Homer",
+    "state": "Alaska"
+  },
+  {
+    "file": "src\\app\\vending-leads\\honolulu-hawaii\\pageClient.tsx",
+    "status": "updated",
+    "city": "Honolulu",
+    "state": "Hawaii"
+  },
+  {
+    "file": "src\\app\\vending-leads\\hoover-alabama\\pageClient.tsx",
+    "status": "updated",
+    "city": "Hoover",
+    "state": "Alabama"
+  },
+  {
+    "file": "src\\app\\vending-leads\\hopkinsville-kentucky\\pageClient.tsx",
+    "status": "updated",
+    "city": "Hopkinsville",
+    "state": "Kentucky"
+  },
+  {
+    "file": "src\\app\\vending-leads\\hot-springs-arkansas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Hot Springs",
+    "state": "Arkansas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\houma-louisiana\\pageClient.tsx",
+    "status": "updated",
+    "city": "Houma",
+    "state": "Louisiana"
+  },
+  {
+    "file": "src\\app\\vending-leads\\houston-texas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Houston",
+    "state": "Texas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\huntington-beach-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Huntington Beach",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\huntington-park-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Huntington Park",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\huntington-west-virginia\\pageClient.tsx",
+    "status": "updated",
+    "city": "Huntington",
+    "state": "West Virginia"
+  },
+  {
+    "file": "src\\app\\vending-leads\\huntsville-alabama\\pageClient.tsx",
+    "status": "updated",
+    "city": "Huntsville",
+    "state": "Alabama"
+  },
+  {
+    "file": "src\\app\\vending-leads\\hutchinson-kansas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Hutchinson",
+    "state": "Kansas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\idaho-falls-idaho\\pageClient.tsx",
+    "status": "updated",
+    "city": "Idaho Falls",
+    "state": "Idaho"
+  },
+  {
+    "file": "src\\app\\vending-leads\\imperial-beach-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Imperial Beach",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\independence-missouri\\pageClient.tsx",
+    "status": "updated",
+    "city": "Independence",
+    "state": "Missouri"
+  },
+  {
+    "file": "src\\app\\vending-leads\\indianapolis-indiana\\pageClient.tsx",
+    "status": "updated",
+    "city": "Indianapolis",
+    "state": "Indiana"
+  },
+  {
+    "file": "src\\app\\vending-leads\\indio-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Indio",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\inglewood-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Inglewood",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\iola-kansas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Iola",
+    "state": "Kansas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\iowa-city-iowa\\pageClient.tsx",
+    "status": "updated",
+    "city": "Iowa City",
+    "state": "Iowa"
+  },
+  {
+    "file": "src\\app\\vending-leads\\irvine-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Irvine",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\irving-texas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Irving",
+    "state": "Texas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\island\\pageClient.tsx",
+    "status": "updated",
+    "city": "Island",
+    "state": "Unknown"
+  },
+  {
+    "file": "src\\app\\vending-leads\\ithaca-new-york\\pageClient.tsx",
+    "status": "updated",
+    "city": "Ithaca",
+    "state": "New York"
+  },
+  {
+    "file": "src\\app\\vending-leads\\jackson-michigan\\pageClient.tsx",
+    "status": "updated",
+    "city": "Jackson",
+    "state": "Michigan"
+  },
+  {
+    "file": "src\\app\\vending-leads\\jackson-mississippi\\pageClient.tsx",
+    "status": "updated",
+    "city": "Jackson",
+    "state": "Mississippi"
+  },
+  {
+    "file": "src\\app\\vending-leads\\jacksonville-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Jacksonville",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\jacksonville-north-carolina\\pageClient.tsx",
+    "status": "updated",
+    "city": "Jacksonville",
+    "state": "North Carolina"
+  },
+  {
+    "file": "src\\app\\vending-leads\\jamestown-north-dakota\\pageClient.tsx",
+    "status": "updated",
+    "city": "Jamestown North",
+    "state": "Dakota"
+  },
+  {
+    "file": "src\\app\\vending-leads\\janesville-wisconsin\\pageClient.tsx",
+    "status": "updated",
+    "city": "Janesville",
+    "state": "Wisconsin"
+  },
+  {
+    "file": "src\\app\\vending-leads\\jefferson-city-missouri\\pageClient.tsx",
+    "status": "updated",
+    "city": "Jefferson City",
+    "state": "Missouri"
+  },
+  {
+    "file": "src\\app\\vending-leads\\jersey\\pageClient.tsx",
+    "status": "updated",
+    "city": "Jersey",
+    "state": "Unknown"
+  },
+  {
+    "file": "src\\app\\vending-leads\\jersey-city-new-jersey\\pageClient.tsx",
+    "status": "updated",
+    "city": "Jersey City",
+    "state": "New Jersey"
+  },
+  {
+    "file": "src\\app\\vending-leads\\joliet-illinois\\pageClient.tsx",
+    "status": "updated",
+    "city": "Joliet",
+    "state": "Illinois"
+  },
+  {
+    "file": "src\\app\\vending-leads\\jonesboro-arkansas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Jonesboro",
+    "state": "Arkansas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\joplin-missouri\\pageClient.tsx",
+    "status": "updated",
+    "city": "Joplin",
+    "state": "Missouri"
+  },
+  {
+    "file": "src\\app\\vending-leads\\juneau-alaska\\pageClient.tsx",
+    "status": "updated",
+    "city": "Juneau",
+    "state": "Alaska"
+  },
+  {
+    "file": "src\\app\\vending-leads\\jupiter-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Jupiter",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\jurupa-valley-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Jurupa Valley",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\kahului-hawaii\\pageClient.tsx",
+    "status": "updated",
+    "city": "Kahului",
+    "state": "Hawaii"
+  },
+  {
+    "file": "src\\app\\vending-leads\\kailua-hawaii\\pageClient.tsx",
+    "status": "updated",
+    "city": "Kailua",
+    "state": "Hawaii"
+  },
+  {
+    "file": "src\\app\\vending-leads\\kalamazoo-michigan\\pageClient.tsx",
+    "status": "updated",
+    "city": "Kalamazoo",
+    "state": "Michigan"
+  },
+  {
+    "file": "src\\app\\vending-leads\\kalispell-montana\\pageClient.tsx",
+    "status": "updated",
+    "city": "Kalispell",
+    "state": "Montana"
+  },
+  {
+    "file": "src\\app\\vending-leads\\kaneohe-hawaii\\pageClient.tsx",
+    "status": "updated",
+    "city": "Kaneohe",
+    "state": "Hawaii"
+  },
+  {
+    "file": "src\\app\\vending-leads\\kannapolis-north-carolina\\pageClient.tsx",
+    "status": "updated",
+    "city": "Kannapolis",
+    "state": "North Carolina"
+  },
+  {
+    "file": "src\\app\\vending-leads\\kansas-city-kansas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Kansas City",
+    "state": "Kansas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\kansas-city-missouri\\pageClient.tsx",
+    "status": "updated",
+    "city": "Kansas City",
+    "state": "Missouri"
+  },
+  {
+    "file": "src\\app\\vending-leads\\kearney-nebraska\\pageClient.tsx",
+    "status": "updated",
+    "city": "Kearney",
+    "state": "Nebraska"
+  },
+  {
+    "file": "src\\app\\vending-leads\\kearny-new-jersey\\pageClient.tsx",
+    "status": "updated",
+    "city": "Kearny New",
+    "state": "Jersey"
+  },
+  {
+    "file": "src\\app\\vending-leads\\keizer-oregon\\pageClient.tsx",
+    "status": "updated",
+    "city": "Keizer",
+    "state": "Oregon"
+  },
+  {
+    "file": "src\\app\\vending-leads\\kenai-alaska\\pageClient.tsx",
+    "status": "updated",
+    "city": "Kenai",
+    "state": "Alaska"
+  },
+  {
+    "file": "src\\app\\vending-leads\\kenner-louisiana\\pageClient.tsx",
+    "status": "updated",
+    "city": "Kenner",
+    "state": "Louisiana"
+  },
+  {
+    "file": "src\\app\\vending-leads\\kennesaw-georgia\\pageClient.tsx",
+    "status": "updated",
+    "city": "Kennesaw",
+    "state": "Georgia"
+  },
+  {
+    "file": "src\\app\\vending-leads\\kennewick-washington\\pageClient.tsx",
+    "status": "updated",
+    "city": "Kennewick",
+    "state": "Washington"
+  },
+  {
+    "file": "src\\app\\vending-leads\\kenosha-wisconsin\\pageClient.tsx",
+    "status": "updated",
+    "city": "Kenosha",
+    "state": "Wisconsin"
+  },
+  {
+    "file": "src\\app\\vending-leads\\kentwood-michigan\\pageClient.tsx",
+    "status": "updated",
+    "city": "Kentwood",
+    "state": "Michigan"
+  },
+  {
+    "file": "src\\app\\vending-leads\\ketchikan-alaska\\pageClient.tsx",
+    "status": "updated",
+    "city": "Ketchikan",
+    "state": "Alaska"
+  },
+  {
+    "file": "src\\app\\vending-leads\\key-west-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Key West",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\kihei-hawaii\\pageClient.tsx",
+    "status": "updated",
+    "city": "Kihei",
+    "state": "Hawaii"
+  },
+  {
+    "file": "src\\app\\vending-leads\\killeen-texas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Killeen",
+    "state": "Texas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\kingsport-tennessee\\pageClient.tsx",
+    "status": "updated",
+    "city": "Kingsport",
+    "state": "Tennessee"
+  },
+  {
+    "file": "src\\app\\vending-leads\\kissimmee-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Kissimmee",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\knoxville-tennessee\\pageClient.tsx",
+    "status": "updated",
+    "city": "Knoxville",
+    "state": "Tennessee"
+  },
+  {
+    "file": "src\\app\\vending-leads\\kodiak-alaska\\pageClient.tsx",
+    "status": "updated",
+    "city": "Kodiak",
+    "state": "Alaska"
+  },
+  {
+    "file": "src\\app\\vending-leads\\kokomo-indiana\\pageClient.tsx",
+    "status": "updated",
+    "city": "Kokomo",
+    "state": "Indiana"
+  },
+  {
+    "file": "src\\app\\vending-leads\\la-canada-flintridge-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "La Canada Flintridge",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\la-crosse-wisconsin\\pageClient.tsx",
+    "status": "updated",
+    "city": "La Crosse",
+    "state": "Wisconsin"
+  },
+  {
+    "file": "src\\app\\vending-leads\\la-habra-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "La Habra",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\la-mesa-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "La Mesa",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\la-mirada-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "La Mirada",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\la-puente-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "La Puente",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\la-quinta-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "La Quinta",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\lafayette-indiana\\pageClient.tsx",
+    "status": "updated",
+    "city": "Lafayette",
+    "state": "Indiana"
+  },
+  {
+    "file": "src\\app\\vending-leads\\lafayette-louisiana\\pageClient.tsx",
+    "status": "updated",
+    "city": "Lafayette",
+    "state": "Louisiana"
+  },
+  {
+    "file": "src\\app\\vending-leads\\lagrange-georgia\\pageClient.tsx",
+    "status": "updated",
+    "city": "Lagrange",
+    "state": "Georgia"
+  },
+  {
+    "file": "src\\app\\vending-leads\\laguna-beach-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Laguna Beach",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\laguna-hills-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Laguna Hills",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\laguna-niguel-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Laguna Niguel",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\lake-charles-louisiana\\pageClient.tsx",
+    "status": "updated",
+    "city": "Lake Charles",
+    "state": "Louisiana"
+  },
+  {
+    "file": "src\\app\\vending-leads\\lake-elsinore-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Lake Elsinore",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\lake-havasu-city-arizona\\pageClient.tsx",
+    "status": "updated",
+    "city": "Lake Havasu City",
+    "state": "Arizona"
+  },
+  {
+    "file": "src\\app\\vending-leads\\lake-worth-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Lake Worth",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\lakeland-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Lakeland",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\lakeville-minnesota\\pageClient.tsx",
+    "status": "updated",
+    "city": "Lakeville",
+    "state": "Minnesota"
+  },
+  {
+    "file": "src\\app\\vending-leads\\lakewood-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Lakewood",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\lakewood-colorado\\pageClient.tsx",
+    "status": "updated",
+    "city": "Lakewood",
+    "state": "Colorado"
+  },
+  {
+    "file": "src\\app\\vending-leads\\lakewood-washington\\pageClient.tsx",
+    "status": "updated",
+    "city": "Lakewood",
+    "state": "Washington"
+  },
+  {
+    "file": "src\\app\\vending-leads\\lancaster-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Lancaster",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\lancaster-pennsylvania\\pageClient.tsx",
+    "status": "updated",
+    "city": "Lancaster",
+    "state": "Pennsylvania"
+  },
+  {
+    "file": "src\\app\\vending-leads\\lansing-michigan\\pageClient.tsx",
+    "status": "updated",
+    "city": "Lansing",
+    "state": "Michigan"
+  },
+  {
+    "file": "src\\app\\vending-leads\\laplace-louisiana\\pageClient.tsx",
+    "status": "updated",
+    "city": "Laplace",
+    "state": "Louisiana"
+  },
+  {
+    "file": "src\\app\\vending-leads\\laramie-wyoming\\pageClient.tsx",
+    "status": "updated",
+    "city": "Laramie",
+    "state": "Wyoming"
+  },
+  {
+    "file": "src\\app\\vending-leads\\laredo-texas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Laredo",
+    "state": "Texas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\largo-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Largo",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\larkspur-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Larkspur",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\las-cruces-new-mexico\\pageClient.tsx",
+    "status": "updated",
+    "city": "Las Cruces New",
+    "state": "New Mexico"
+  },
+  {
+    "file": "src\\app\\vending-leads\\las-vegas-nevada\\pageClient.tsx",
+    "status": "updated",
+    "city": "Las",
+    "state": "Nevada"
+  },
+  {
+    "file": "src\\app\\vending-leads\\laurel-maryland\\pageClient.tsx",
+    "status": "updated",
+    "city": "Laurel",
+    "state": "Maryland"
+  },
+  {
+    "file": "src\\app\\vending-leads\\lawrence-kansas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Lawrence",
+    "state": "Kansas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\lawrence-massachusetts\\pageClient.tsx",
+    "status": "updated",
+    "city": "Lawrence",
+    "state": "Massachusetts"
+  },
+  {
+    "file": "src\\app\\vending-leads\\lawton-oklahoma\\pageClient.tsx",
+    "status": "updated",
+    "city": "Lawton",
+    "state": "Oklahoma"
+  },
+  {
+    "file": "src\\app\\vending-leads\\layton-utah\\pageClient.tsx",
+    "status": "updated",
+    "city": "Layton",
+    "state": "Utah"
+  },
+  {
+    "file": "src\\app\\vending-leads\\league-city-texas\\pageClient.tsx",
+    "status": "updated",
+    "city": "League City",
+    "state": "Texas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\leavenworth-kansas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Leavenworth",
+    "state": "Kansas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\lees-summit-missouri\\pageClient.tsx",
+    "status": "updated",
+    "city": "Lee\\",
+    "state": "Missouri"
+  },
+  {
+    "file": "src\\app\\vending-leads\\lehigh-acres-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Lehigh Acres",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\lemon-grove-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Lemon Grove",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\lenexa-kansas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Lenexa",
+    "state": "Kansas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\lewiston-maine\\pageClient.tsx",
+    "status": "updated",
+    "city": "Lewiston",
+    "state": "Maine"
+  },
+  {
+    "file": "src\\app\\vending-leads\\lewisville-texas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Lewisville",
+    "state": "Texas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\lexington-kentucky\\pageClient.tsx",
+    "status": "updated",
+    "city": "Lexington",
+    "state": "Kentucky"
+  },
+  {
+    "file": "src\\app\\vending-leads\\lima-ohio\\pageClient.tsx",
+    "status": "updated",
+    "city": "Lima",
+    "state": "Ohio"
+  },
+  {
+    "file": "src\\app\\vending-leads\\lincoln-nebraska\\pageClient.tsx",
+    "status": "updated",
+    "city": "Lincoln",
+    "state": "Nebraska"
+  },
+  {
+    "file": "src\\app\\vending-leads\\little-rock-arkansas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Little Rock",
+    "state": "Arkansas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\livonia-michigan\\pageClient.tsx",
+    "status": "updated",
+    "city": "Livonia",
+    "state": "Michigan"
+  },
+  {
+    "file": "src\\app\\vending-leads\\lodi-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Lodi",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\logan-circle-washington-dc\\pageClient.tsx",
+    "status": "updated",
+    "city": "Logan Circle",
+    "state": "Washington DC"
+  },
+  {
+    "file": "src\\app\\vending-leads\\lomita-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Lomita",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\long-beach-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Long Beach",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\longmont-colorado\\pageClient.tsx",
+    "status": "updated",
+    "city": "Longmont",
+    "state": "Colorado"
+  },
+  {
+    "file": "src\\app\\vending-leads\\longview-texas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Longview",
+    "state": "Texas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\lorain-ohio\\pageClient.tsx",
+    "status": "updated",
+    "city": "Lorain",
+    "state": "Ohio"
+  },
+  {
+    "file": "src\\app\\vending-leads\\los-angeles-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Los",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\los-gatos-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Los Gatos",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\louisville-kentucky\\pageClient.tsx",
+    "status": "updated",
+    "city": "Louisville",
+    "state": "Kentucky"
+  },
+  {
+    "file": "src\\app\\vending-leads\\loveland-colorado\\pageClient.tsx",
+    "status": "updated",
+    "city": "Loveland",
+    "state": "Colorado"
+  },
+  {
+    "file": "src\\app\\vending-leads\\lowell-massachusetts\\pageClient.tsx",
+    "status": "updated",
+    "city": "Lowell",
+    "state": "Massachusetts"
+  },
+  {
+    "file": "src\\app\\vending-leads\\lubbock-texas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Lubbock",
+    "state": "Texas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\lynchburg-virginia\\pageClient.tsx",
+    "status": "updated",
+    "city": "Lynchburg",
+    "state": "Virginia"
+  },
+  {
+    "file": "src\\app\\vending-leads\\lynn-massachusetts\\pageClient.tsx",
+    "status": "updated",
+    "city": "Lynn",
+    "state": "Massachusetts"
+  },
+  {
+    "file": "src\\app\\vending-leads\\lynnwood-washington\\pageClient.tsx",
+    "status": "updated",
+    "city": "Lynnwood",
+    "state": "Washington"
+  },
+  {
+    "file": "src\\app\\vending-leads\\lynwood-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Lynwood",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\macon-georgia\\pageClient.tsx",
+    "status": "updated",
+    "city": "Macon",
+    "state": "Georgia"
+  },
+  {
+    "file": "src\\app\\vending-leads\\madera-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Madera",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\madison-wisconsin\\pageClient.tsx",
+    "status": "updated",
+    "city": "Madison",
+    "state": "Wisconsin"
+  },
+  {
+    "file": "src\\app\\vending-leads\\madisonville-kentucky\\pageClient.tsx",
+    "status": "updated",
+    "city": "Madisonville",
+    "state": "Kentucky"
+  },
+  {
+    "file": "src\\app\\vending-leads\\malden-massachusetts\\pageClient.tsx",
+    "status": "updated",
+    "city": "Malden",
+    "state": "Massachusetts"
+  },
+  {
+    "file": "src\\app\\vending-leads\\manchester-new-hampshire\\pageClient.tsx",
+    "status": "updated",
+    "city": "Manchester",
+    "state": "New Hampshire"
+  },
+  {
+    "file": "src\\app\\vending-leads\\manhattan-beach-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Manhattan Beach",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\manhattan-kansas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Manhattan",
+    "state": "Kansas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\mankato-minnesota\\pageClient.tsx",
+    "status": "updated",
+    "city": "Mankato",
+    "state": "Minnesota"
+  },
+  {
+    "file": "src\\app\\vending-leads\\mansfield-ohio\\pageClient.tsx",
+    "status": "updated",
+    "city": "Mansfield",
+    "state": "Ohio"
+  },
+  {
+    "file": "src\\app\\vending-leads\\mansfield-texas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Mansfield",
+    "state": "Texas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\maple-grove-minnesota\\pageClient.tsx",
+    "status": "updated",
+    "city": "Maple Grove",
+    "state": "Minnesota"
+  },
+  {
+    "file": "src\\app\\vending-leads\\margate-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Margate",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\maricopa-arizona\\pageClient.tsx",
+    "status": "updated",
+    "city": "Maricopa",
+    "state": "Arizona"
+  },
+  {
+    "file": "src\\app\\vending-leads\\marietta-georgia\\pageClient.tsx",
+    "status": "updated",
+    "city": "Marietta",
+    "state": "Georgia"
+  },
+  {
+    "file": "src\\app\\vending-leads\\marrero-louisiana\\pageClient.tsx",
+    "status": "updated",
+    "city": "Marrero",
+    "state": "Louisiana"
+  },
+  {
+    "file": "src\\app\\vending-leads\\martinsburg-west-virginia\\pageClient.tsx",
+    "status": "updated",
+    "city": "Martinsburg West",
+    "state": "Virginia"
+  },
+  {
+    "file": "src\\app\\vending-leads\\marysville-washington\\pageClient.tsx",
+    "status": "updated",
+    "city": "Marysville",
+    "state": "Washington"
+  },
+  {
+    "file": "src\\app\\vending-leads\\mcallen-texas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Mcallen",
+    "state": "Texas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\mckinney-texas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Mckinney",
+    "state": "Texas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\mcpherson-kansas\\pageClient.tsx",
+    "status": "updated",
+    "city": "McPherson",
+    "state": "Kansas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\medford-massachusetts\\pageClient.tsx",
+    "status": "updated",
+    "city": "Medford",
+    "state": "Massachusetts"
+  },
+  {
+    "file": "src\\app\\vending-leads\\medford-oregon\\pageClient.tsx",
+    "status": "updated",
+    "city": "Medford",
+    "state": "Oregon"
+  },
+  {
+    "file": "src\\app\\vending-leads\\melbourne-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Melbourne",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\memphis-tennessee\\pageClient.tsx",
+    "status": "updated",
+    "city": "Memphis",
+    "state": "Tennessee"
+  },
+  {
+    "file": "src\\app\\vending-leads\\menifee-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Menifee",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\meriden-connecticut\\pageClient.tsx",
+    "status": "updated",
+    "city": "Meriden",
+    "state": "Connecticut"
+  },
+  {
+    "file": "src\\app\\vending-leads\\meridian-idaho\\pageClient.tsx",
+    "status": "updated",
+    "city": "Meridian",
+    "state": "Idaho"
+  },
+  {
+    "file": "src\\app\\vending-leads\\meridian-mississippi\\pageClient.tsx",
+    "status": "updated",
+    "city": "Meridian",
+    "state": "Mississippi"
+  },
+  {
+    "file": "src\\app\\vending-leads\\merrimack-new-hampshire\\pageClient.tsx",
+    "status": "updated",
+    "city": "Merrimack New",
+    "state": "Hampshire"
+  },
+  {
+    "file": "src\\app\\vending-leads\\mesa-arizona\\pageClient.tsx",
+    "status": "updated",
+    "city": "Mesa",
+    "state": "Arizona"
+  },
+  {
+    "file": "src\\app\\vending-leads\\mesquite-nevada\\pageClient.tsx",
+    "status": "updated",
+    "city": "Mesquite",
+    "state": "Nevada"
+  },
+  {
+    "file": "src\\app\\vending-leads\\mesquite-texas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Mesquite",
+    "state": "Texas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\metairie-louisiana\\pageClient.tsx",
+    "status": "updated",
+    "city": "Metairie",
+    "state": "Louisiana"
+  },
+  {
+    "file": "src\\app\\vending-leads\\methuen-massachusetts\\pageClient.tsx",
+    "status": "updated",
+    "city": "Methuen",
+    "state": "Massachusetts"
+  },
+  {
+    "file": "src\\app\\vending-leads\\miami-beach-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Miami Beach",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\miami-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Miami",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\miami-gardens-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Miami Gardens",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\middletown-delaware\\pageClient.tsx",
+    "status": "updated",
+    "city": "Middletown",
+    "state": "Delaware"
+  },
+  {
+    "file": "src\\app\\vending-leads\\middletown-ohio\\pageClient.tsx",
+    "status": "updated",
+    "city": "Middletown",
+    "state": "Ohio"
+  },
+  {
+    "file": "src\\app\\vending-leads\\midland-texas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Midland",
+    "state": "Texas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\midwest-city-oklahoma\\pageClient.tsx",
+    "status": "updated",
+    "city": "Midwest City",
+    "state": "Oklahoma"
+  },
+  {
+    "file": "src\\app\\vending-leads\\milford-delaware\\pageClient.tsx",
+    "status": "updated",
+    "city": "Milford",
+    "state": "Delaware"
+  },
+  {
+    "file": "src\\app\\vending-leads\\mililani-hawaii\\pageClient.tsx",
+    "status": "updated",
+    "city": "Mililani",
+    "state": "Hawaii"
+  },
+  {
+    "file": "src\\app\\vending-leads\\mill-valley-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Mill Valley",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\millbrae-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Millbrae",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\milledgeville-georgia\\pageClient.tsx",
+    "status": "updated",
+    "city": "Milledgeville",
+    "state": "Georgia"
+  },
+  {
+    "file": "src\\app\\vending-leads\\milwaukee-wisconsin\\pageClient.tsx",
+    "status": "updated",
+    "city": "Milwaukee",
+    "state": "Wisconsin"
+  },
+  {
+    "file": "src\\app\\vending-leads\\minneapolis-minnesota\\pageClient.tsx",
+    "status": "updated",
+    "city": "Minneapolis",
+    "state": "Minnesota"
+  },
+  {
+    "file": "src\\app\\vending-leads\\minot-north-dakota\\pageClient.tsx",
+    "status": "updated",
+    "city": "Minot",
+    "state": "North Dakota"
+  },
+  {
+    "file": "src\\app\\vending-leads\\miramar-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Miramar",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\mission-viejo-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Mission Viejo",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\missoula-montana\\pageClient.tsx",
+    "status": "updated",
+    "city": "Missoula",
+    "state": "Montana"
+  },
+  {
+    "file": "src\\app\\vending-leads\\mitchell-south-dakota\\pageClient.tsx",
+    "status": "updated",
+    "city": "Mitchell South",
+    "state": "Dakota"
+  },
+  {
+    "file": "src\\app\\vending-leads\\mobile-alabama\\pageClient.tsx",
+    "status": "updated",
+    "city": "Mobile",
+    "state": "Alabama"
+  },
+  {
+    "file": "src\\app\\vending-leads\\modesto-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Modesto",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\moline-illinois\\pageClient.tsx",
+    "status": "updated",
+    "city": "Moline",
+    "state": "Illinois"
+  },
+  {
+    "file": "src\\app\\vending-leads\\monroe-louisiana\\pageClient.tsx",
+    "status": "updated",
+    "city": "Monroe",
+    "state": "Louisiana"
+  },
+  {
+    "file": "src\\app\\vending-leads\\monrovia-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Monrovia",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\montclair-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Montclair",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\monterey-park-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Monterey Park",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\montgomery-alabama\\pageClient.tsx",
+    "status": "updated",
+    "city": "Montgomery",
+    "state": "Alabama"
+  },
+  {
+    "file": "src\\app\\vending-leads\\montpelier-vermont\\pageClient.tsx",
+    "status": "updated",
+    "city": "Montpelier",
+    "state": "Vermont"
+  },
+  {
+    "file": "src\\app\\vending-leads\\moore-oklahoma\\pageClient.tsx",
+    "status": "updated",
+    "city": "Moore",
+    "state": "Oklahoma"
+  },
+  {
+    "file": "src\\app\\vending-leads\\moorhead-minnesota\\pageClient.tsx",
+    "status": "updated",
+    "city": "Moorhead",
+    "state": "Minnesota"
+  },
+  {
+    "file": "src\\app\\vending-leads\\moreno-valley-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Moreno Valley",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\morgan-hill-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Morgan Hill",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\morgantown-west-virginia\\pageClient.tsx",
+    "status": "updated",
+    "city": "Morgantown West",
+    "state": "Virginia"
+  },
+  {
+    "file": "src\\app\\vending-leads\\mount-prospect-illinois\\pageClient.tsx",
+    "status": "updated",
+    "city": "Mount Prospect",
+    "state": "Illinois"
+  },
+  {
+    "file": "src\\app\\vending-leads\\mount-vernon-new-york\\pageClient.tsx",
+    "status": "updated",
+    "city": "Mount Vernon New",
+    "state": "York"
+  },
+  {
+    "file": "src\\app\\vending-leads\\mount-vernon-washington\\pageClient.tsx",
+    "status": "updated",
+    "city": "Mount Vernon",
+    "state": "Washington"
+  },
+  {
+    "file": "src\\app\\vending-leads\\mountain-view-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Mountain View",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\muncie-indiana\\pageClient.tsx",
+    "status": "updated",
+    "city": "Muncie",
+    "state": "Indiana"
+  },
+  {
+    "file": "src\\app\\vending-leads\\murray-kentucky\\pageClient.tsx",
+    "status": "updated",
+    "city": "Murray",
+    "state": "Kentucky"
+  },
+  {
+    "file": "src\\app\\vending-leads\\murrieta-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Murrieta",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\myrtle-beach-south-carolina\\pageClient.tsx",
+    "status": "updated",
+    "city": "Myrtle Beach",
+    "state": "South Carolina"
+  },
+  {
+    "file": "src\\app\\vending-leads\\nampa-idaho\\pageClient.tsx",
+    "status": "updated",
+    "city": "Nampa",
+    "state": "Idaho"
+  },
+  {
+    "file": "src\\app\\vending-leads\\napa-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Napa",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\naperville-illinois\\pageClient.tsx",
+    "status": "updated",
+    "city": "Naperville",
+    "state": "Illinois"
+  },
+  {
+    "file": "src\\app\\vending-leads\\naples-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Naples",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\nashua-new-hampshire\\pageClient.tsx",
+    "status": "updated",
+    "city": "Nashua",
+    "state": "New Hampshire"
+  },
+  {
+    "file": "src\\app\\vending-leads\\nashville-tennessee\\pageClient.tsx",
+    "status": "updated",
+    "city": "Nashville",
+    "state": "Tennessee"
+  },
+  {
+    "file": "src\\app\\vending-leads\\natchez-mississippi\\pageClient.tsx",
+    "status": "updated",
+    "city": "Natchez",
+    "state": "Mississippi"
+  },
+  {
+    "file": "src\\app\\vending-leads\\national-city-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "National City",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\navy-yard-washington-dc\\pageClient.tsx",
+    "status": "updated",
+    "city": "Navy Yard",
+    "state": "Washington DC"
+  },
+  {
+    "file": "src\\app\\vending-leads\\nevada\\pageClient.tsx",
+    "status": "updated",
+    "city": "Nevada",
+    "state": "Nevada"
+  },
+  {
+    "file": "src\\app\\vending-leads\\new-bedford-massachusetts\\pageClient.tsx",
+    "status": "updated",
+    "city": "New Bedford",
+    "state": "Massachusetts"
+  },
+  {
+    "file": "src\\app\\vending-leads\\new-britain-connecticut\\pageClient.tsx",
+    "status": "updated",
+    "city": "New Britain",
+    "state": "Connecticut"
+  },
+  {
+    "file": "src\\app\\vending-leads\\new-brunswick-new-jersey\\pageClient.tsx",
+    "status": "updated",
+    "city": "New Brunswick New",
+    "state": "Jersey"
+  },
+  {
+    "file": "src\\app\\vending-leads\\new-castle-delaware\\pageClient.tsx",
+    "status": "updated",
+    "city": "New Castle",
+    "state": "Delaware"
+  },
+  {
+    "file": "src\\app\\vending-leads\\new-haven-connecticut\\pageClient.tsx",
+    "status": "updated",
+    "city": "New",
+    "state": "Connecticut"
+  },
+  {
+    "file": "src\\app\\vending-leads\\new-orleans-louisiana\\pageClient.tsx",
+    "status": "updated",
+    "city": "New Orleans",
+    "state": "Louisiana"
+  },
+  {
+    "file": "src\\app\\vending-leads\\new-rochelle-new-york\\pageClient.tsx",
+    "status": "updated",
+    "city": "New Rochelle New",
+    "state": "York"
+  },
+  {
+    "file": "src\\app\\vending-leads\\new-york\\pageClient.tsx",
+    "status": "updated",
+    "city": "New York",
+    "state": "York"
+  },
+  {
+    "file": "src\\app\\vending-leads\\new-york-new-york\\pageClient.tsx",
+    "status": "updated",
+    "city": "New",
+    "state": "York"
+  },
+  {
+    "file": "src\\app\\vending-leads\\newark-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Newark",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\newark-delaware\\pageClient.tsx",
+    "status": "updated",
+    "city": "Newark",
+    "state": "Delaware"
+  },
+  {
+    "file": "src\\app\\vending-leads\\newark-new-jersey\\pageClient.tsx",
+    "status": "updated",
+    "city": "Newark",
+    "state": "New Jersey"
+  },
+  {
+    "file": "src\\app\\vending-leads\\newark-ohio\\pageClient.tsx",
+    "status": "updated",
+    "city": "Newark",
+    "state": "Ohio"
+  },
+  {
+    "file": "src\\app\\vending-leads\\newnan-georgia\\pageClient.tsx",
+    "status": "updated",
+    "city": "Newnan",
+    "state": "Georgia"
+  },
+  {
+    "file": "src\\app\\vending-leads\\newport-beach-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Newport Beach",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\newport-kentucky\\pageClient.tsx",
+    "status": "updated",
+    "city": "Newport",
+    "state": "Kentucky"
+  },
+  {
+    "file": "src\\app\\vending-leads\\newport-news-virginia\\pageClient.tsx",
+    "status": "updated",
+    "city": "Newport News",
+    "state": "Virginia"
+  },
+  {
+    "file": "src\\app\\vending-leads\\newport-rhode-island\\pageClient.tsx",
+    "status": "updated",
+    "city": "Newport Rhode",
+    "state": "Island"
+  },
+  {
+    "file": "src\\app\\vending-leads\\newton-kansas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Newton",
+    "state": "Kansas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\newton-massachusetts\\pageClient.tsx",
+    "status": "updated",
+    "city": "Newton",
+    "state": "Massachusetts"
+  },
+  {
+    "file": "src\\app\\vending-leads\\niagara-falls-new-york\\pageClient.tsx",
+    "status": "updated",
+    "city": "Niagara Falls",
+    "state": "New York"
+  },
+  {
+    "file": "src\\app\\vending-leads\\nogales-arizona\\pageClient.tsx",
+    "status": "updated",
+    "city": "Nogales",
+    "state": "Arizona"
+  },
+  {
+    "file": "src\\app\\vending-leads\\norfolk-nebraska\\pageClient.tsx",
+    "status": "updated",
+    "city": "Norfolk",
+    "state": "Nebraska"
+  },
+  {
+    "file": "src\\app\\vending-leads\\norfolk-virginia\\pageClient.tsx",
+    "status": "updated",
+    "city": "Norfolk",
+    "state": "Virginia"
+  },
+  {
+    "file": "src\\app\\vending-leads\\normal-illinois\\pageClient.tsx",
+    "status": "updated",
+    "city": "Normal",
+    "state": "Illinois"
+  },
+  {
+    "file": "src\\app\\vending-leads\\norman-oklahoma\\pageClient.tsx",
+    "status": "updated",
+    "city": "Norman",
+    "state": "Oklahoma"
+  },
+  {
+    "file": "src\\app\\vending-leads\\north-dakota\\pageClient.tsx",
+    "status": "updated",
+    "city": "North",
+    "state": "North Dakota"
+  },
+  {
+    "file": "src\\app\\vending-leads\\north-las-vegas-nevada\\pageClient.tsx",
+    "status": "updated",
+    "city": "North Las Vegas",
+    "state": "Nevada"
+  },
+  {
+    "file": "src\\app\\vending-leads\\north-little-rock-arkansas\\pageClient.tsx",
+    "status": "updated",
+    "city": "North Little Rock",
+    "state": "Arkansas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\north-miami-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "North Miami",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\north-platte-nebraska\\pageClient.tsx",
+    "status": "updated",
+    "city": "North Platte",
+    "state": "Nebraska"
+  },
+  {
+    "file": "src\\app\\vending-leads\\norwalk-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Norwalk",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\norwalk-connecticut\\pageClient.tsx",
+    "status": "updated",
+    "city": "Norwalk",
+    "state": "Connecticut"
+  },
+  {
+    "file": "src\\app\\vending-leads\\novi-michigan\\pageClient.tsx",
+    "status": "updated",
+    "city": "Novi",
+    "state": "Michigan"
+  },
+  {
+    "file": "src\\app\\vending-leads\\oak-lawn-illinois\\pageClient.tsx",
+    "status": "updated",
+    "city": "Oak Lawn",
+    "state": "Illinois"
+  },
+  {
+    "file": "src\\app\\vending-leads\\oak-park-illinois\\pageClient.tsx",
+    "status": "updated",
+    "city": "Oak Park",
+    "state": "Illinois"
+  },
+  {
+    "file": "src\\app\\vending-leads\\oakdale-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Oakdale",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\oakland-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Oakland",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\ocala-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Ocala",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\oceanside-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Oceanside",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\odessa-texas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Odessa",
+    "state": "Texas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\ofallon-missouri\\pageClient.tsx",
+    "status": "updated",
+    "city": "O\\",
+    "state": "Missouri"
+  },
+  {
+    "file": "src\\app\\vending-leads\\ogden-utah\\pageClient.tsx",
+    "status": "updated",
+    "city": "Ogden",
+    "state": "Utah"
+  },
+  {
+    "file": "src\\app\\vending-leads\\oklahoma-city-oklahoma\\pageClient.tsx",
+    "status": "updated",
+    "city": "Oklahoma City",
+    "state": "Oklahoma"
+  },
+  {
+    "file": "src\\app\\vending-leads\\olathe-kansas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Olathe",
+    "state": "Kansas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\olympia-washington\\pageClient.tsx",
+    "status": "updated",
+    "city": "Olympia",
+    "state": "Washington"
+  },
+  {
+    "file": "src\\app\\vending-leads\\omaha-nebraska\\pageClient.tsx",
+    "status": "updated",
+    "city": "Omaha",
+    "state": "Nebraska"
+  },
+  {
+    "file": "src\\app\\vending-leads\\ontario-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Ontario",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\opelika-alabama\\pageClient.tsx",
+    "status": "updated",
+    "city": "Opelika",
+    "state": "Alabama"
+  },
+  {
+    "file": "src\\app\\vending-leads\\opelousas-louisiana\\pageClient.tsx",
+    "status": "updated",
+    "city": "Opelousas",
+    "state": "Louisiana"
+  },
+  {
+    "file": "src\\app\\vending-leads\\orange-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Orange",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\orange-park-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Orange Park",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\oregon\\pageClient.tsx",
+    "status": "updated",
+    "city": "Oregon",
+    "state": "Oregon"
+  },
+  {
+    "file": "src\\app\\vending-leads\\orem-utah\\pageClient.tsx",
+    "status": "updated",
+    "city": "Orem",
+    "state": "Utah"
+  },
+  {
+    "file": "src\\app\\vending-leads\\orland-park-illinois\\pageClient.tsx",
+    "status": "updated",
+    "city": "Orland Park",
+    "state": "Illinois"
+  },
+  {
+    "file": "src\\app\\vending-leads\\orlando-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Orlando",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\oshkosh-wisconsin\\pageClient.tsx",
+    "status": "updated",
+    "city": "Oshkosh",
+    "state": "Wisconsin"
+  },
+  {
+    "file": "src\\app\\vending-leads\\overland-park-kansas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Overland Park",
+    "state": "Kansas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\owensboro-kentucky\\pageClient.tsx",
+    "status": "updated",
+    "city": "Owensboro",
+    "state": "Kentucky"
+  },
+  {
+    "file": "src\\app\\vending-leads\\oxford-mississippi\\pageClient.tsx",
+    "status": "updated",
+    "city": "Oxford",
+    "state": "Mississippi"
+  },
+  {
+    "file": "src\\app\\vending-leads\\oxnard-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Oxnard",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\pacifica-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Pacifica",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\paducah-kentucky\\pageClient.tsx",
+    "status": "updated",
+    "city": "Paducah",
+    "state": "Kentucky"
+  },
+  {
+    "file": "src\\app\\vending-leads\\pahrump-nevada\\pageClient.tsx",
+    "status": "updated",
+    "city": "Pahrump",
+    "state": "Nevada"
+  },
+  {
+    "file": "src\\app\\vending-leads\\palatine-illinois\\pageClient.tsx",
+    "status": "updated",
+    "city": "Palatine",
+    "state": "Illinois"
+  },
+  {
+    "file": "src\\app\\vending-leads\\palm-bay-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Palm Bay",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\palm-beach-gardens-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Palm Beach Gardens",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\palm-coast-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Palm Coast",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\palm-desert-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Palm Desert",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\palm-harbor-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Palm Harbor",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\palm-springs-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Palm Springs",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\palmdale-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Palmdale",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\palmer-alaska\\pageClient.tsx",
+    "status": "updated",
+    "city": "Palmer",
+    "state": "Alaska"
+  },
+  {
+    "file": "src\\app\\vending-leads\\palo-alto-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Palo Alto",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\panama-city-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Panama City",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\paragould-arkansas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Paragould",
+    "state": "Arkansas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\paramount-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Paramount",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\park-ridge-illinois\\pageClient.tsx",
+    "status": "updated",
+    "city": "Park Ridge",
+    "state": "Illinois"
+  },
+  {
+    "file": "src\\app\\vending-leads\\parker-colorado\\pageClient.tsx",
+    "status": "updated",
+    "city": "Parker",
+    "state": "Colorado"
+  },
+  {
+    "file": "src\\app\\vending-leads\\parkersburg-west-virginia\\pageClient.tsx",
+    "status": "updated",
+    "city": "Parkersburg West",
+    "state": "Virginia"
+  },
+  {
+    "file": "src\\app\\vending-leads\\parma-ohio\\pageClient.tsx",
+    "status": "updated",
+    "city": "Parma",
+    "state": "Ohio"
+  },
+  {
+    "file": "src\\app\\vending-leads\\parsons-kansas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Parsons",
+    "state": "Kansas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\pasadena-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Pasadena",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\pasadena-texas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Pasadena",
+    "state": "Texas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\pasco-washington\\pageClient.tsx",
+    "status": "updated",
+    "city": "Pasco",
+    "state": "Washington"
+  },
+  {
+    "file": "src\\app\\vending-leads\\passaic-new-jersey\\pageClient.tsx",
+    "status": "updated",
+    "city": "Passaic New",
+    "state": "Jersey"
+  },
+  {
+    "file": "src\\app\\vending-leads\\paterson-new-jersey\\pageClient.tsx",
+    "status": "updated",
+    "city": "Paterson",
+    "state": "New Jersey"
+  },
+  {
+    "file": "src\\app\\vending-leads\\pawtucket-rhode-island\\pageClient.tsx",
+    "status": "updated",
+    "city": "Pawtucket",
+    "state": "Rhode Island"
+  },
+  {
+    "file": "src\\app\\vending-leads\\peabody-massachusetts\\pageClient.tsx",
+    "status": "updated",
+    "city": "Peabody",
+    "state": "Massachusetts"
+  },
+  {
+    "file": "src\\app\\vending-leads\\pearl-city-hawaii\\pageClient.tsx",
+    "status": "updated",
+    "city": "Pearl City",
+    "state": "Hawaii"
+  },
+  {
+    "file": "src\\app\\vending-leads\\pearland-texas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Pearland",
+    "state": "Texas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\pembroke-pines-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Pembroke Pines",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\pensacola-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Pensacola",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\peoria-arizona\\pageClient.tsx",
+    "status": "updated",
+    "city": "Peoria",
+    "state": "Arizona"
+  },
+  {
+    "file": "src\\app\\vending-leads\\peoria-illinois\\pageClient.tsx",
+    "status": "updated",
+    "city": "Peoria",
+    "state": "Illinois"
+  },
+  {
+    "file": "src\\app\\vending-leads\\perth-amboy-new-jersey\\pageClient.tsx",
+    "status": "updated",
+    "city": "Perth Amboy New",
+    "state": "Jersey"
+  },
+  {
+    "file": "src\\app\\vending-leads\\petaluma-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Petaluma",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\philadelphia-pennsylvania\\pageClient.tsx",
+    "status": "updated",
+    "city": "Philadelphia",
+    "state": "Pennsylvania"
+  },
+  {
+    "file": "src\\app\\vending-leads\\phoenix-arizona\\pageClient.tsx",
+    "status": "updated",
+    "city": "Phoenix",
+    "state": "Arizona"
+  },
+  {
+    "file": "src\\app\\vending-leads\\pico-rivera-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Pico Rivera",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\pierre-south-dakota\\pageClient.tsx",
+    "status": "updated",
+    "city": "Pierre South",
+    "state": "Dakota"
+  },
+  {
+    "file": "src\\app\\vending-leads\\pine-bluff-arkansas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Pine Bluff",
+    "state": "Arkansas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\pittsburg-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Pittsburg",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\pittsburg-kansas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Pittsburg",
+    "state": "Kansas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\pittsburgh-pennsylvania\\pageClient.tsx",
+    "status": "updated",
+    "city": "Pittsburgh",
+    "state": "Pennsylvania"
+  },
+  {
+    "file": "src\\app\\vending-leads\\pittsfield-massachusetts\\pageClient.tsx",
+    "status": "updated",
+    "city": "Pittsfield",
+    "state": "Massachusetts"
+  },
+  {
+    "file": "src\\app\\vending-leads\\placentia-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Placentia",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\plainfield-new-jersey\\pageClient.tsx",
+    "status": "updated",
+    "city": "Plainfield New",
+    "state": "Jersey"
+  },
+  {
+    "file": "src\\app\\vending-leads\\plano-texas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Plano",
+    "state": "Texas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\plant-city-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Plant City",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\plantation-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Plantation",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\pleasanton-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Pleasanton",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\plymouth-minnesota\\pageClient.tsx",
+    "status": "updated",
+    "city": "Plymouth",
+    "state": "Minnesota"
+  },
+  {
+    "file": "src\\app\\vending-leads\\pocatello-idaho\\pageClient.tsx",
+    "status": "updated",
+    "city": "Pocatello",
+    "state": "Idaho"
+  },
+  {
+    "file": "src\\app\\vending-leads\\pomona-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Pomona",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\pompano-beach-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Pompano Beach",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\pontiac-michigan\\pageClient.tsx",
+    "status": "updated",
+    "city": "Pontiac",
+    "state": "Michigan"
+  },
+  {
+    "file": "src\\app\\vending-leads\\port-huron-michigan\\pageClient.tsx",
+    "status": "updated",
+    "city": "Port Huron",
+    "state": "Michigan"
+  },
+  {
+    "file": "src\\app\\vending-leads\\port-orange-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Port Orange",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\port-st-lucie-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Port St. Lucie",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\port-st.-lucie-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Port St. Lucie",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\portland-maine\\pageClient.tsx",
+    "status": "updated",
+    "city": "Portland",
+    "state": "Maine"
+  },
+  {
+    "file": "src\\app\\vending-leads\\portland-oregon\\pageClient.tsx",
+    "status": "updated",
+    "city": "Portland",
+    "state": "Oregon"
+  },
+  {
+    "file": "src\\app\\vending-leads\\portsmouth-new-hampshire\\pageClient.tsx",
+    "status": "updated",
+    "city": "Portsmouth",
+    "state": "New Hampshire"
+  },
+  {
+    "file": "src\\app\\vending-leads\\portsmouth-virginia\\pageClient.tsx",
+    "status": "updated",
+    "city": "Portsmouth",
+    "state": "Virginia"
+  },
+  {
+    "file": "src\\app\\vending-leads\\poughkeepsie-new-york\\pageClient.tsx",
+    "status": "updated",
+    "city": "Poughkeepsie",
+    "state": "New York"
+  },
+  {
+    "file": "src\\app\\vending-leads\\poway-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Poway",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\prattville-alabama\\pageClient.tsx",
+    "status": "updated",
+    "city": "Prattville",
+    "state": "Alabama"
+  },
+  {
+    "file": "src\\app\\vending-leads\\prescott-arizona\\pageClient.tsx",
+    "status": "updated",
+    "city": "Prescott",
+    "state": "Arizona"
+  },
+  {
+    "file": "src\\app\\vending-leads\\prescott-valley-arizona\\pageClient.tsx",
+    "status": "updated",
+    "city": "Prescott Valley",
+    "state": "Arizona"
+  },
+  {
+    "file": "src\\app\\vending-leads\\prichard-alabama\\pageClient.tsx",
+    "status": "updated",
+    "city": "Prichard",
+    "state": "Alabama"
+  },
+  {
+    "file": "src\\app\\vending-leads\\providence-rhode-island\\pageClient.tsx",
+    "status": "updated",
+    "city": "Providence",
+    "state": "Rhode Island"
+  },
+  {
+    "file": "src\\app\\vending-leads\\provo-utah\\pageClient.tsx",
+    "status": "updated",
+    "city": "Provo",
+    "state": "Utah"
+  },
+  {
+    "file": "src\\app\\vending-leads\\pueblo-colorado\\pageClient.tsx",
+    "status": "updated",
+    "city": "Pueblo",
+    "state": "Colorado"
+  },
+  {
+    "file": "src\\app\\vending-leads\\pullman-washington\\pageClient.tsx",
+    "status": "updated",
+    "city": "Pullman",
+    "state": "Washington"
+  },
+  {
+    "file": "src\\app\\vending-leads\\quincy-illinois\\pageClient.tsx",
+    "status": "updated",
+    "city": "Quincy",
+    "state": "Illinois"
+  },
+  {
+    "file": "src\\app\\vending-leads\\quincy-massachusetts\\pageClient.tsx",
+    "status": "updated",
+    "city": "Quincy",
+    "state": "Massachusetts"
+  },
+  {
+    "file": "src\\app\\vending-leads\\racine-wisconsin\\pageClient.tsx",
+    "status": "updated",
+    "city": "Racine",
+    "state": "Wisconsin"
+  },
+  {
+    "file": "src\\app\\vending-leads\\raleigh-north-carolina\\pageClient.tsx",
+    "status": "updated",
+    "city": "Raleigh",
+    "state": "North Carolina"
+  },
+  {
+    "file": "src\\app\\vending-leads\\rancho-cucamonga-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Rancho Cucamonga",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\rancho-palos-verdes-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Rancho Palos Verdes",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\rapid-city-south-dakota\\pageClient.tsx",
+    "status": "updated",
+    "city": "Rapid City",
+    "state": "South Dakota"
+  },
+  {
+    "file": "src\\app\\vending-leads\\reading-pennsylvania\\pageClient.tsx",
+    "status": "updated",
+    "city": "Reading",
+    "state": "Pennsylvania"
+  },
+  {
+    "file": "src\\app\\vending-leads\\redding-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Redding",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\redmond-washington\\pageClient.tsx",
+    "status": "updated",
+    "city": "Redmond",
+    "state": "Washington"
+  },
+  {
+    "file": "src\\app\\vending-leads\\redondo-beach-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Redondo Beach",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\redwood-city-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Redwood City",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\reedley-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Reedley",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\reno-nevada\\pageClient.tsx",
+    "status": "updated",
+    "city": "Reno",
+    "state": "Nevada"
+  },
+  {
+    "file": "src\\app\\vending-leads\\renton-washington\\pageClient.tsx",
+    "status": "updated",
+    "city": "Renton",
+    "state": "Washington"
+  },
+  {
+    "file": "src\\app\\vending-leads\\revere-massachusetts\\pageClient.tsx",
+    "status": "updated",
+    "city": "Revere",
+    "state": "Massachusetts"
+  },
+  {
+    "file": "src\\app\\vending-leads\\rexburg-idaho\\pageClient.tsx",
+    "status": "updated",
+    "city": "Rexburg",
+    "state": "Idaho"
+  },
+  {
+    "file": "src\\app\\vending-leads\\rialto-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Rialto",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\richardson-texas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Richardson",
+    "state": "Texas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\richland-washington\\pageClient.tsx",
+    "status": "updated",
+    "city": "Richland",
+    "state": "Washington"
+  },
+  {
+    "file": "src\\app\\vending-leads\\richmond-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Richmond",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\richmond-kentucky\\pageClient.tsx",
+    "status": "updated",
+    "city": "Richmond",
+    "state": "Kentucky"
+  },
+  {
+    "file": "src\\app\\vending-leads\\richmond-virginia\\pageClient.tsx",
+    "status": "updated",
+    "city": "Richmond",
+    "state": "Virginia"
+  },
+  {
+    "file": "src\\app\\vending-leads\\ridgecrest-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Ridgecrest",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\rio-rancho-new-mexico\\pageClient.tsx",
+    "status": "updated",
+    "city": "Rio Rancho",
+    "state": "New Mexico"
+  },
+  {
+    "file": "src\\app\\vending-leads\\rio-vista-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Rio Vista",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\riverside-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Riverside",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\roanoke-virginia\\pageClient.tsx",
+    "status": "updated",
+    "city": "Roanoke",
+    "state": "Virginia"
+  },
+  {
+    "file": "src\\app\\vending-leads\\rochester-hills-michigan\\pageClient.tsx",
+    "status": "updated",
+    "city": "Rochester Hills",
+    "state": "Michigan"
+  },
+  {
+    "file": "src\\app\\vending-leads\\rochester-minnesota\\pageClient.tsx",
+    "status": "updated",
+    "city": "Rochester",
+    "state": "Minnesota"
+  },
+  {
+    "file": "src\\app\\vending-leads\\rochester-new-hampshire\\pageClient.tsx",
+    "status": "updated",
+    "city": "Rochester",
+    "state": "New Hampshire"
+  },
+  {
+    "file": "src\\app\\vending-leads\\rochester-new-york\\pageClient.tsx",
+    "status": "updated",
+    "city": "Rochester New",
+    "state": "York"
+  },
+  {
+    "file": "src\\app\\vending-leads\\rock-springs-wyoming\\pageClient.tsx",
+    "status": "updated",
+    "city": "Rock Springs",
+    "state": "Wyoming"
+  },
+  {
+    "file": "src\\app\\vending-leads\\rockford-illinois\\pageClient.tsx",
+    "status": "updated",
+    "city": "Rockford",
+    "state": "Illinois"
+  },
+  {
+    "file": "src\\app\\vending-leads\\rockville-maryland\\pageClient.tsx",
+    "status": "updated",
+    "city": "Rockville",
+    "state": "Maryland"
+  },
+  {
+    "file": "src\\app\\vending-leads\\rocky-mount-north-carolina\\pageClient.tsx",
+    "status": "updated",
+    "city": "Rocky Mount",
+    "state": "North Carolina"
+  },
+  {
+    "file": "src\\app\\vending-leads\\rogers-arkansas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Rogers",
+    "state": "Arkansas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\rohnert-park-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Rohnert Park",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\rolling-meadows-illinois\\pageClient.tsx",
+    "status": "updated",
+    "city": "Rolling Meadows",
+    "state": "Illinois"
+  },
+  {
+    "file": "src\\app\\vending-leads\\rome-georgia\\pageClient.tsx",
+    "status": "updated",
+    "city": "Rome",
+    "state": "Georgia"
+  },
+  {
+    "file": "src\\app\\vending-leads\\rome-new-york\\pageClient.tsx",
+    "status": "updated",
+    "city": "Rome",
+    "state": "New York"
+  },
+  {
+    "file": "src\\app\\vending-leads\\rosemead-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Rosemead",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\roseville-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Roseville",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\roswell-georgia\\pageClient.tsx",
+    "status": "updated",
+    "city": "Roswell",
+    "state": "Georgia"
+  },
+  {
+    "file": "src\\app\\vending-leads\\roswell-new-mexico\\pageClient.tsx",
+    "status": "updated",
+    "city": "Roswell New",
+    "state": "Mexico"
+  },
+  {
+    "file": "src\\app\\vending-leads\\round-rock-texas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Round Rock",
+    "state": "Texas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\royal-palm-beach-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Royal Palm Beach",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\ruston-louisiana\\pageClient.tsx",
+    "status": "updated",
+    "city": "Ruston",
+    "state": "Louisiana"
+  },
+  {
+    "file": "src\\app\\vending-leads\\rutland-vermont\\pageClient.tsx",
+    "status": "updated",
+    "city": "Rutland",
+    "state": "Vermont"
+  },
+  {
+    "file": "src\\app\\vending-leads\\saco-maine\\pageClient.tsx",
+    "status": "updated",
+    "city": "Saco",
+    "state": "Maine"
+  },
+  {
+    "file": "src\\app\\vending-leads\\sacramento-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Sacramento",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\saginaw-michigan\\pageClient.tsx",
+    "status": "updated",
+    "city": "Saginaw",
+    "state": "Michigan"
+  },
+  {
+    "file": "src\\app\\vending-leads\\sahuarita-arizona\\pageClient.tsx",
+    "status": "updated",
+    "city": "Sahuarita",
+    "state": "Arizona"
+  },
+  {
+    "file": "src\\app\\vending-leads\\saint-charles-missouri\\pageClient.tsx",
+    "status": "updated",
+    "city": "Saint Charles",
+    "state": "Missouri"
+  },
+  {
+    "file": "src\\app\\vending-leads\\saint-cloud-minnesota\\pageClient.tsx",
+    "status": "updated",
+    "city": "Saint Cloud",
+    "state": "Minnesota"
+  },
+  {
+    "file": "src\\app\\vending-leads\\saint-joseph-missouri\\pageClient.tsx",
+    "status": "updated",
+    "city": "Saint Joseph",
+    "state": "Missouri"
+  },
+  {
+    "file": "src\\app\\vending-leads\\saint-louis-missouri\\pageClient.tsx",
+    "status": "updated",
+    "city": "Saint Louis",
+    "state": "Missouri"
+  },
+  {
+    "file": "src\\app\\vending-leads\\saint-paul-minnesota\\pageClient.tsx",
+    "status": "updated",
+    "city": "Saint Paul",
+    "state": "Minnesota"
+  },
+  {
+    "file": "src\\app\\vending-leads\\saint-peters-missouri\\pageClient.tsx",
+    "status": "updated",
+    "city": "Saint Peters",
+    "state": "Missouri"
+  },
+  {
+    "file": "src\\app\\vending-leads\\salem-new-hampshire\\pageClient.tsx",
+    "status": "updated",
+    "city": "Salem",
+    "state": "New Hampshire"
+  },
+  {
+    "file": "src\\app\\vending-leads\\salem-oregon\\pageClient.tsx",
+    "status": "updated",
+    "city": "Salem",
+    "state": "Oregon"
+  },
+  {
+    "file": "src\\app\\vending-leads\\salina-kansas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Salina",
+    "state": "Kansas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\salinas-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Salinas",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\salisbury-maryland\\pageClient.tsx",
+    "status": "updated",
+    "city": "Salisbury",
+    "state": "Maryland"
+  },
+  {
+    "file": "src\\app\\vending-leads\\salisbury-north-carolina\\pageClient.tsx",
+    "status": "updated",
+    "city": "Salisbury",
+    "state": "North Carolina"
+  },
+  {
+    "file": "src\\app\\vending-leads\\salt-lake-city-utah\\pageClient.tsx",
+    "status": "updated",
+    "city": "Salt",
+    "state": "Utah"
+  },
+  {
+    "file": "src\\app\\vending-leads\\san-angelo-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "San Angelo",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\san-angelo-texas\\pageClient.tsx",
+    "status": "updated",
+    "city": "San Angelo",
+    "state": "Texas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\san-antonio-texas\\pageClient.tsx",
+    "status": "updated",
+    "city": "San",
+    "state": "Texas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\san-bernardino-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "San Bernardino",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\san-bruno-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "San Bruno",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\san-carlos-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "San Carlos",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\san-diego-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "San",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\san-fernando-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "San Fernando",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\san-francisco-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "San",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\san-gabriel-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "San Gabriel",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\san-jacinto-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "San Jacinto",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\san-jose-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "San Jose",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\san-leandro-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "San Leandro",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\san-luis-obispo-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "San Luis Obispo",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\san-mateo-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "San Mateo",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\san-pablo-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "San Pablo",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\san-rafael-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "San Rafael",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\san-ramon-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "San Ramon",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\sandy-springs-georgia\\pageClient.tsx",
+    "status": "updated",
+    "city": "Sandy Springs",
+    "state": "Georgia"
+  },
+  {
+    "file": "src\\app\\vending-leads\\sandy-utah\\pageClient.tsx",
+    "status": "updated",
+    "city": "Sandy",
+    "state": "Utah"
+  },
+  {
+    "file": "src\\app\\vending-leads\\sanford-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Sanford",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\sanford-maine\\pageClient.tsx",
+    "status": "updated",
+    "city": "Sanford",
+    "state": "Maine"
+  },
+  {
+    "file": "src\\app\\vending-leads\\sanger-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Sanger",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\santa-ana-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Santa Ana",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\santa-barbara-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Santa Barbara",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\santa-clara-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Santa Clara",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\santa-clarita-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Santa Clarita",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\santa-cruz-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Santa Cruz",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\santa-fe-new-mexico\\pageClient.tsx",
+    "status": "updated",
+    "city": "Santa Fe New",
+    "state": "New Mexico"
+  },
+  {
+    "file": "src\\app\\vending-leads\\santa-maria-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Santa Maria",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\santa-monica-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Santa Monica",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\santa-paula-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Santa Paula",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\santa-rosa-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Santa Rosa",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\sarasota-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Sarasota",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\saratoga-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Saratoga",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\savannah-georgia\\pageClient.tsx",
+    "status": "updated",
+    "city": "Savannah",
+    "state": "Georgia"
+  },
+  {
+    "file": "src\\app\\vending-leads\\sayreville-new-jersey\\pageClient.tsx",
+    "status": "updated",
+    "city": "Sayreville New",
+    "state": "Jersey"
+  },
+  {
+    "file": "src\\app\\vending-leads\\schaumburg-illinois\\pageClient.tsx",
+    "status": "updated",
+    "city": "Schaumburg",
+    "state": "Illinois"
+  },
+  {
+    "file": "src\\app\\vending-leads\\schenectady-new-york\\pageClient.tsx",
+    "status": "updated",
+    "city": "Schenectady",
+    "state": "New York"
+  },
+  {
+    "file": "src\\app\\vending-leads\\scottsdale-arizona\\pageClient.tsx",
+    "status": "updated",
+    "city": "Scottsdale",
+    "state": "Arizona"
+  },
+  {
+    "file": "src\\app\\vending-leads\\scranton-pennsylvania\\pageClient.tsx",
+    "status": "updated",
+    "city": "Scranton",
+    "state": "Pennsylvania"
+  },
+  {
+    "file": "src\\app\\vending-leads\\seaford-delaware\\pageClient.tsx",
+    "status": "updated",
+    "city": "Seaford",
+    "state": "Delaware"
+  },
+  {
+    "file": "src\\app\\vending-leads\\seal-beach-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Seal Beach",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\searcy-arkansas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Searcy",
+    "state": "Arkansas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\seattle-washington\\pageClient.tsx",
+    "status": "updated",
+    "city": "Seattle",
+    "state": "Washington"
+  },
+  {
+    "file": "src\\app\\vending-leads\\sebastian-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Sebastian",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\selma-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Selma",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\shaw-washington-dc\\pageClient.tsx",
+    "status": "updated",
+    "city": "Shaw",
+    "state": "Washington DC"
+  },
+  {
+    "file": "src\\app\\vending-leads\\sheboygan-wisconsin\\pageClient.tsx",
+    "status": "updated",
+    "city": "Sheboygan",
+    "state": "Wisconsin"
+  },
+  {
+    "file": "src\\app\\vending-leads\\sheridan-wyoming\\pageClient.tsx",
+    "status": "updated",
+    "city": "Sheridan",
+    "state": "Wyoming"
+  },
+  {
+    "file": "src\\app\\vending-leads\\shoreline-washington\\pageClient.tsx",
+    "status": "updated",
+    "city": "Shoreline",
+    "state": "Washington"
+  },
+  {
+    "file": "src\\app\\vending-leads\\shreveport-louisiana\\pageClient.tsx",
+    "status": "updated",
+    "city": "Shreveport",
+    "state": "Louisiana"
+  },
+  {
+    "file": "src\\app\\vending-leads\\sierra-vista-arizona\\pageClient.tsx",
+    "status": "updated",
+    "city": "Sierra Vista",
+    "state": "Arizona"
+  },
+  {
+    "file": "src\\app\\vending-leads\\signal-hill-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Signal Hill",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\silver-spring-maryland\\pageClient.tsx",
+    "status": "updated",
+    "city": "Silver",
+    "state": "Maryland"
+  },
+  {
+    "file": "src\\app\\vending-leads\\simi-valley-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Simi Valley",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\sioux-city-iowa\\pageClient.tsx",
+    "status": "updated",
+    "city": "Sioux City",
+    "state": "Iowa"
+  },
+  {
+    "file": "src\\app\\vending-leads\\sioux-falls-south-dakota\\pageClient.tsx",
+    "status": "updated",
+    "city": "Sioux Falls",
+    "state": "South Dakota"
+  },
+  {
+    "file": "src\\app\\vending-leads\\sitka-alaska\\pageClient.tsx",
+    "status": "updated",
+    "city": "Sitka",
+    "state": "Alaska"
+  },
+  {
+    "file": "src\\app\\vending-leads\\skokie-illinois\\pageClient.tsx",
+    "status": "updated",
+    "city": "Skokie",
+    "state": "Illinois"
+  },
+  {
+    "file": "src\\app\\vending-leads\\slidell-louisiana\\pageClient.tsx",
+    "status": "updated",
+    "city": "Slidell",
+    "state": "Louisiana"
+  },
+  {
+    "file": "src\\app\\vending-leads\\smyrna-delaware\\pageClient.tsx",
+    "status": "updated",
+    "city": "Smyrna",
+    "state": "Delaware"
+  },
+  {
+    "file": "src\\app\\vending-leads\\smyrna-georgia\\pageClient.tsx",
+    "status": "updated",
+    "city": "Smyrna",
+    "state": "Georgia"
+  },
+  {
+    "file": "src\\app\\vending-leads\\solana-beach-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Solana Beach",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\soldotna-alaska\\pageClient.tsx",
+    "status": "updated",
+    "city": "Soldotna",
+    "state": "Alaska"
+  },
+  {
+    "file": "src\\app\\vending-leads\\soledad-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Soledad",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\somerville-massachusetts\\pageClient.tsx",
+    "status": "updated",
+    "city": "Somerville",
+    "state": "Massachusetts"
+  },
+  {
+    "file": "src\\app\\vending-leads\\sonoma-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Sonoma",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\south-burlington-vermont\\pageClient.tsx",
+    "status": "updated",
+    "city": "South Burlington",
+    "state": "Vermont"
+  },
+  {
+    "file": "src\\app\\vending-leads\\south-el-monte-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "South El Monte",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\south-gate-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "South Gate",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\south-pasadena-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "South Pasadena",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\south-san-francisco-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "South San Francisco",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\southaven-mississippi\\pageClient.tsx",
+    "status": "updated",
+    "city": "Southaven",
+    "state": "Mississippi"
+  },
+  {
+    "file": "src\\app\\vending-leads\\sparks-nevada\\pageClient.tsx",
+    "status": "updated",
+    "city": "Sparks",
+    "state": "Nevada"
+  },
+  {
+    "file": "src\\app\\vending-leads\\spartanburg-south-carolina\\pageClient.tsx",
+    "status": "updated",
+    "city": "Spartanburg",
+    "state": "South Carolina"
+  },
+  {
+    "file": "src\\app\\vending-leads\\spokane-valley-washington\\pageClient.tsx",
+    "status": "updated",
+    "city": "Spokane Valley",
+    "state": "Washington"
+  },
+  {
+    "file": "src\\app\\vending-leads\\spokane-washington\\pageClient.tsx",
+    "status": "updated",
+    "city": "Spokane",
+    "state": "Washington"
+  },
+  {
+    "file": "src\\app\\vending-leads\\springdale-arkansas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Springdale",
+    "state": "Arkansas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\springfield-illinois\\pageClient.tsx",
+    "status": "updated",
+    "city": "Springfield",
+    "state": "Illinois"
+  },
+  {
+    "file": "src\\app\\vending-leads\\springfield-massachusetts\\pageClient.tsx",
+    "status": "updated",
+    "city": "Springfield",
+    "state": "Massachusetts"
+  },
+  {
+    "file": "src\\app\\vending-leads\\springfield-ohio\\pageClient.tsx",
+    "status": "updated",
+    "city": "Springfield",
+    "state": "Ohio"
+  },
+  {
+    "file": "src\\app\\vending-leads\\springfield-oregon\\pageClient.tsx",
+    "status": "updated",
+    "city": "Springfield",
+    "state": "Oregon"
+  },
+  {
+    "file": "src\\app\\vending-leads\\st-albans-vermont\\pageClient.tsx",
+    "status": "updated",
+    "city": "St Albans",
+    "state": "Vermont"
+  },
+  {
+    "file": "src\\app\\vending-leads\\st-charles-missouri\\pageClient.tsx",
+    "status": "updated",
+    "city": "St Charles",
+    "state": "Missouri"
+  },
+  {
+    "file": "src\\app\\vending-leads\\st-cloud-minnesota\\pageClient.tsx",
+    "status": "updated",
+    "city": "St. Cloud",
+    "state": "Minnesota"
+  },
+  {
+    "file": "src\\app\\vending-leads\\st-george-utah\\pageClient.tsx",
+    "status": "updated",
+    "city": "St. George",
+    "state": "Utah"
+  },
+  {
+    "file": "src\\app\\vending-leads\\st-joseph-missouri\\pageClient.tsx",
+    "status": "updated",
+    "city": "St. Joseph",
+    "state": "Missouri"
+  },
+  {
+    "file": "src\\app\\vending-leads\\st-paul-minnesota\\pageClient.tsx",
+    "status": "updated",
+    "city": "St. Paul",
+    "state": "Minnesota"
+  },
+  {
+    "file": "src\\app\\vending-leads\\st-peters-missouri\\pageClient.tsx",
+    "status": "updated",
+    "city": "St. Peters",
+    "state": "Missouri"
+  },
+  {
+    "file": "src\\app\\vending-leads\\st-petersburg-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "St Petersburg",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\st.-albans-vermont\\pageClient.tsx",
+    "status": "updated",
+    "city": "St. Albans",
+    "state": "Vermont"
+  },
+  {
+    "file": "src\\app\\vending-leads\\st.-george-utah\\pageClient.tsx",
+    "status": "updated",
+    "city": "St. George",
+    "state": "Utah"
+  },
+  {
+    "file": "src\\app\\vending-leads\\st.-petersburg-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "St. Petersburg",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\stamford-connecticut\\pageClient.tsx",
+    "status": "updated",
+    "city": "Stamford",
+    "state": "Connecticut"
+  },
+  {
+    "file": "src\\app\\vending-leads\\starkville-mississippi\\pageClient.tsx",
+    "status": "updated",
+    "city": "Starkville",
+    "state": "Mississippi"
+  },
+  {
+    "file": "src\\app\\vending-leads\\statesboro-georgia\\pageClient.tsx",
+    "status": "updated",
+    "city": "Statesboro",
+    "state": "Georgia"
+  },
+  {
+    "file": "src\\app\\vending-leads\\sterling-heights-michigan\\pageClient.tsx",
+    "status": "updated",
+    "city": "Sterling Heights",
+    "state": "Michigan"
+  },
+  {
+    "file": "src\\app\\vending-leads\\stillwater-oklahoma\\pageClient.tsx",
+    "status": "updated",
+    "city": "Stillwater",
+    "state": "Oklahoma"
+  },
+  {
+    "file": "src\\app\\vending-leads\\stockton-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Stockton",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\stuart-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Stuart",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\suffolk-virginia\\pageClient.tsx",
+    "status": "updated",
+    "city": "Suffolk",
+    "state": "Virginia"
+  },
+  {
+    "file": "src\\app\\vending-leads\\sugar-land-texas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Sugar Land",
+    "state": "Texas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\suisun-city-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Suisun City",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\sulphur-louisiana\\pageClient.tsx",
+    "status": "updated",
+    "city": "Sulphur",
+    "state": "Louisiana"
+  },
+  {
+    "file": "src\\app\\vending-leads\\summerville-south-carolina\\pageClient.tsx",
+    "status": "updated",
+    "city": "Summerville",
+    "state": "South Carolina"
+  },
+  {
+    "file": "src\\app\\vending-leads\\sunnyvale-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Sunnyvale",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\sunrise-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Sunrise",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\surprise-arizona\\pageClient.tsx",
+    "status": "updated",
+    "city": "Surprise",
+    "state": "Arizona"
+  },
+  {
+    "file": "src\\app\\vending-leads\\syracuse-new-york\\pageClient.tsx",
+    "status": "updated",
+    "city": "Syracuse",
+    "state": "New York"
+  },
+  {
+    "file": "src\\app\\vending-leads\\tacoma-washington\\pageClient.tsx",
+    "status": "updated",
+    "city": "Tacoma",
+    "state": "Washington"
+  },
+  {
+    "file": "src\\app\\vending-leads\\tallahassee-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Tallahassee",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\tampa-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Tampa",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\tarpon-springs-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Tarpon Springs",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\taunton-massachusetts\\pageClient.tsx",
+    "status": "updated",
+    "city": "Taunton",
+    "state": "Massachusetts"
+  },
+  {
+    "file": "src\\app\\vending-leads\\taylor-michigan\\pageClient.tsx",
+    "status": "updated",
+    "city": "Taylor",
+    "state": "Michigan"
+  },
+  {
+    "file": "src\\app\\vending-leads\\taylorsville-utah\\pageClient.tsx",
+    "status": "updated",
+    "city": "Taylorsville",
+    "state": "Utah"
+  },
+  {
+    "file": "src\\app\\vending-leads\\temecula-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Temecula",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\tempe-arizona\\pageClient.tsx",
+    "status": "updated",
+    "city": "Tempe",
+    "state": "Arizona"
+  },
+  {
+    "file": "src\\app\\vending-leads\\temple-city-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Temple City",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\temple-texas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Temple",
+    "state": "Texas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\tennessee\\pageClient.tsx",
+    "status": "updated",
+    "city": "Tennessee",
+    "state": "Tennessee"
+  },
+  {
+    "file": "src\\app\\vending-leads\\terre-haute-indiana\\pageClient.tsx",
+    "status": "updated",
+    "city": "Terre Haute",
+    "state": "Indiana"
+  },
+  {
+    "file": "src\\app\\vending-leads\\texarkana-arkansas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Texarkana",
+    "state": "Arkansas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\thomasville-georgia\\pageClient.tsx",
+    "status": "updated",
+    "city": "Thomasville",
+    "state": "Georgia"
+  },
+  {
+    "file": "src\\app\\vending-leads\\thornton-colorado\\pageClient.tsx",
+    "status": "updated",
+    "city": "Thornton",
+    "state": "Colorado"
+  },
+  {
+    "file": "src\\app\\vending-leads\\thousand-oaks-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Thousand Oaks",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\tiburon-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Tiburon",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\tigard-oregon\\pageClient.tsx",
+    "status": "updated",
+    "city": "Tigard",
+    "state": "Oregon"
+  },
+  {
+    "file": "src\\app\\vending-leads\\tinley-park-illinois\\pageClient.tsx",
+    "status": "updated",
+    "city": "Tinley Park",
+    "state": "Illinois"
+  },
+  {
+    "file": "src\\app\\vending-leads\\titusville-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Titusville",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\toledo-ohio\\pageClient.tsx",
+    "status": "updated",
+    "city": "Toledo",
+    "state": "Ohio"
+  },
+  {
+    "file": "src\\app\\vending-leads\\topeka-kansas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Topeka",
+    "state": "Kansas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\torrance-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Torrance",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\towson-maryland\\pageClient.tsx",
+    "status": "updated",
+    "city": "Towson",
+    "state": "Maryland"
+  },
+  {
+    "file": "src\\app\\vending-leads\\tracy-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Tracy",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\trenton-new-jersey\\pageClient.tsx",
+    "status": "updated",
+    "city": "Trenton",
+    "state": "New Jersey"
+  },
+  {
+    "file": "src\\app\\vending-leads\\troy-michigan\\pageClient.tsx",
+    "status": "updated",
+    "city": "Troy",
+    "state": "Michigan"
+  },
+  {
+    "file": "src\\app\\vending-leads\\troy-new-york\\pageClient.tsx",
+    "status": "updated",
+    "city": "Troy",
+    "state": "New York"
+  },
+  {
+    "file": "src\\app\\vending-leads\\tucson-arizona\\pageClient.tsx",
+    "status": "updated",
+    "city": "Tucson",
+    "state": "Arizona"
+  },
+  {
+    "file": "src\\app\\vending-leads\\tulare-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Tulare",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\tulsa-oklahoma\\pageClient.tsx",
+    "status": "updated",
+    "city": "Tulsa",
+    "state": "Oklahoma"
+  },
+  {
+    "file": "src\\app\\vending-leads\\tupelo-mississippi\\pageClient.tsx",
+    "status": "updated",
+    "city": "Tupelo",
+    "state": "Mississippi"
+  },
+  {
+    "file": "src\\app\\vending-leads\\turlock-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Turlock",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\tuscaloosa-alabama\\pageClient.tsx",
+    "status": "updated",
+    "city": "Tuscaloosa",
+    "state": "Alabama"
+  },
+  {
+    "file": "src\\app\\vending-leads\\tustin-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Tustin",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\twin-falls-idaho\\pageClient.tsx",
+    "status": "updated",
+    "city": "Twin",
+    "state": "Idaho"
+  },
+  {
+    "file": "src\\app\\vending-leads\\tyler-texas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Tyler",
+    "state": "Texas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\ukiah-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Ukiah",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\union-city-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Union City",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\union-city-new-jersey\\pageClient.tsx",
+    "status": "updated",
+    "city": "Union City New",
+    "state": "Jersey"
+  },
+  {
+    "file": "src\\app\\vending-leads\\upland-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Upland",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\utica-new-york\\pageClient.tsx",
+    "status": "updated",
+    "city": "Utica",
+    "state": "New York"
+  },
+  {
+    "file": "src\\app\\vending-leads\\vacaville-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Vacaville",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\valdosta-georgia\\pageClient.tsx",
+    "status": "updated",
+    "city": "Valdosta",
+    "state": "Georgia"
+  },
+  {
+    "file": "src\\app\\vending-leads\\vallejo-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Vallejo",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\vancouver-washington\\pageClient.tsx",
+    "status": "updated",
+    "city": "Vancouver",
+    "state": "Washington"
+  },
+  {
+    "file": "src\\app\\vending-leads\\venice-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Venice",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\ventura-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Ventura",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\vicksburg-mississippi\\pageClient.tsx",
+    "status": "updated",
+    "city": "Vicksburg",
+    "state": "Mississippi"
+  },
+  {
+    "file": "src\\app\\vending-leads\\victorville-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Victorville",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\vineland-new-jersey\\pageClient.tsx",
+    "status": "updated",
+    "city": "Vineland New",
+    "state": "Jersey"
+  },
+  {
+    "file": "src\\app\\vending-leads\\visalia-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Visalia",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\vista-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Vista",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\waco-texas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Waco",
+    "state": "Texas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\wahpeton-north-dakota\\pageClient.tsx",
+    "status": "updated",
+    "city": "Wahpeton North",
+    "state": "Dakota"
+  },
+  {
+    "file": "src\\app\\vending-leads\\waldorf-maryland\\pageClient.tsx",
+    "status": "updated",
+    "city": "Waldorf",
+    "state": "Maryland"
+  },
+  {
+    "file": "src\\app\\vending-leads\\walnut-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Walnut",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\walnut-creek-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Walnut Creek",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\waltham-massachusetts\\pageClient.tsx",
+    "status": "updated",
+    "city": "Waltham",
+    "state": "Massachusetts"
+  },
+  {
+    "file": "src\\app\\vending-leads\\warner-robins-georgia\\pageClient.tsx",
+    "status": "updated",
+    "city": "Warner Robins",
+    "state": "Georgia"
+  },
+  {
+    "file": "src\\app\\vending-leads\\warren-michigan\\pageClient.tsx",
+    "status": "updated",
+    "city": "Warren",
+    "state": "Michigan"
+  },
+  {
+    "file": "src\\app\\vending-leads\\warwick-rhode-island\\pageClient.tsx",
+    "status": "updated",
+    "city": "Warwick",
+    "state": "Rhode Island"
+  },
+  {
+    "file": "src\\app\\vending-leads\\wasco-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Wasco",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\washington\\pageClient.tsx",
+    "status": "updated",
+    "city": "Washington",
+    "state": "Washington"
+  },
+  {
+    "file": "src\\app\\vending-leads\\washington-dc\\pageClient.tsx",
+    "status": "updated",
+    "city": "Washington Dc",
+    "state": "Dc"
+  },
+  {
+    "file": "src\\app\\vending-leads\\washington-washington-dc\\pageClient.tsx",
+    "status": "updated",
+    "city": "Washington Washington",
+    "state": "Washington DC"
+  },
+  {
+    "file": "src\\app\\vending-leads\\wasilla-alaska\\pageClient.tsx",
+    "status": "updated",
+    "city": "Wasilla",
+    "state": "Alaska"
+  },
+  {
+    "file": "src\\app\\vending-leads\\waterbury-connecticut\\pageClient.tsx",
+    "status": "updated",
+    "city": "Waterbury",
+    "state": "Connecticut"
+  },
+  {
+    "file": "src\\app\\vending-leads\\waterloo-iowa\\pageClient.tsx",
+    "status": "updated",
+    "city": "Waterloo",
+    "state": "Iowa"
+  },
+  {
+    "file": "src\\app\\vending-leads\\watertown-new-york\\pageClient.tsx",
+    "status": "updated",
+    "city": "Watertown New",
+    "state": "York"
+  },
+  {
+    "file": "src\\app\\vending-leads\\watertown-south-dakota\\pageClient.tsx",
+    "status": "updated",
+    "city": "Watertown South",
+    "state": "Dakota"
+  },
+  {
+    "file": "src\\app\\vending-leads\\waterville-maine\\pageClient.tsx",
+    "status": "updated",
+    "city": "Waterville",
+    "state": "Maine"
+  },
+  {
+    "file": "src\\app\\vending-leads\\watsonville-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Watsonville",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\waukegan-illinois\\pageClient.tsx",
+    "status": "updated",
+    "city": "Waukegan",
+    "state": "Illinois"
+  },
+  {
+    "file": "src\\app\\vending-leads\\waukesha-wisconsin\\pageClient.tsx",
+    "status": "updated",
+    "city": "Waukesha",
+    "state": "Wisconsin"
+  },
+  {
+    "file": "src\\app\\vending-leads\\waycross-georgia\\pageClient.tsx",
+    "status": "updated",
+    "city": "Waycross",
+    "state": "Georgia"
+  },
+  {
+    "file": "src\\app\\vending-leads\\wellington-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Wellington",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\wenatchee-washington\\pageClient.tsx",
+    "status": "updated",
+    "city": "Wenatchee",
+    "state": "Washington"
+  },
+  {
+    "file": "src\\app\\vending-leads\\west-covina-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "West Covina",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\west-des-moines-iowa\\pageClient.tsx",
+    "status": "updated",
+    "city": "West Des Moines",
+    "state": "Iowa"
+  },
+  {
+    "file": "src\\app\\vending-leads\\west-haven-connecticut\\pageClient.tsx",
+    "status": "updated",
+    "city": "West Haven",
+    "state": "Connecticut"
+  },
+  {
+    "file": "src\\app\\vending-leads\\west-hollywood-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "West Hollywood",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\west-jordan-utah\\pageClient.tsx",
+    "status": "updated",
+    "city": "West Jordan",
+    "state": "Utah"
+  },
+  {
+    "file": "src\\app\\vending-leads\\west-memphis-arkansas\\pageClient.tsx",
+    "status": "updated",
+    "city": "West Memphis",
+    "state": "Arkansas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\west-new-york-new-jersey\\pageClient.tsx",
+    "status": "updated",
+    "city": "West New York New",
+    "state": "Jersey"
+  },
+  {
+    "file": "src\\app\\vending-leads\\west-palm-beach-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "West Palm Beach",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\west-valley-city-utah\\pageClient.tsx",
+    "status": "updated",
+    "city": "West Valley City",
+    "state": "Utah"
+  },
+  {
+    "file": "src\\app\\vending-leads\\westland-michigan\\pageClient.tsx",
+    "status": "updated",
+    "city": "Westland",
+    "state": "Michigan"
+  },
+  {
+    "file": "src\\app\\vending-leads\\westminster-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Westminster",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\westminster-colorado\\pageClient.tsx",
+    "status": "updated",
+    "city": "Westminster",
+    "state": "Colorado"
+  },
+  {
+    "file": "src\\app\\vending-leads\\wheatland-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Wheatland",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\wheaton-illinois\\pageClient.tsx",
+    "status": "updated",
+    "city": "Wheaton",
+    "state": "Illinois"
+  },
+  {
+    "file": "src\\app\\vending-leads\\wheeling-illinois\\pageClient.tsx",
+    "status": "updated",
+    "city": "Wheeling",
+    "state": "Illinois"
+  },
+  {
+    "file": "src\\app\\vending-leads\\wheeling-west-virginia\\pageClient.tsx",
+    "status": "updated",
+    "city": "Wheeling West",
+    "state": "Virginia"
+  },
+  {
+    "file": "src\\app\\vending-leads\\white-plains-new-york\\pageClient.tsx",
+    "status": "updated",
+    "city": "White Plains New",
+    "state": "York"
+  },
+  {
+    "file": "src\\app\\vending-leads\\whittier-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Whittier",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\wichita-kansas\\pageClient.tsx",
+    "status": "updated",
+    "city": "Wichita",
+    "state": "Kansas"
+  },
+  {
+    "file": "src\\app\\vending-leads\\wilkes-barre-pennsylvania\\pageClient.tsx",
+    "status": "updated",
+    "city": "Wilkes-Barre",
+    "state": "Pennsylvania"
+  },
+  {
+    "file": "src\\app\\vending-leads\\williston-north-dakota\\pageClient.tsx",
+    "status": "updated",
+    "city": "Williston North",
+    "state": "Dakota"
+  },
+  {
+    "file": "src\\app\\vending-leads\\willows-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Willows",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\wilmington-delaware\\pageClient.tsx",
+    "status": "updated",
+    "city": "Wilmington",
+    "state": "Delaware"
+  },
+  {
+    "file": "src\\app\\vending-leads\\wilmington-north-carolina\\pageClient.tsx",
+    "status": "updated",
+    "city": "Wilmington North",
+    "state": "Carolina"
+  },
+  {
+    "file": "src\\app\\vending-leads\\wilson-north-carolina\\pageClient.tsx",
+    "status": "updated",
+    "city": "Wilson",
+    "state": "North Carolina"
+  },
+  {
+    "file": "src\\app\\vending-leads\\windsor-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Windsor",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\winston-salem-north-carolina\\pageClient.tsx",
+    "status": "updated",
+    "city": "Winston Salem",
+    "state": "North Carolina"
+  },
+  {
+    "file": "src\\app\\vending-leads\\winter-haven-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Winter Haven",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\winter-park-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Winter Park",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\winter-springs-florida\\pageClient.tsx",
+    "status": "updated",
+    "city": "Winter Springs",
+    "state": "Florida"
+  },
+  {
+    "file": "src\\app\\vending-leads\\woodbury-minnesota\\pageClient.tsx",
+    "status": "updated",
+    "city": "Woodbury",
+    "state": "Minnesota"
+  },
+  {
+    "file": "src\\app\\vending-leads\\woodland-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Woodland",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\woonsocket-rhode-island\\pageClient.tsx",
+    "status": "updated",
+    "city": "Woonsocket",
+    "state": "Rhode Island"
+  },
+  {
+    "file": "src\\app\\vending-leads\\worcester-massachusetts\\pageClient.tsx",
+    "status": "updated",
+    "city": "Worcester",
+    "state": "Massachusetts"
+  },
+  {
+    "file": "src\\app\\vending-leads\\wyoming-michigan\\pageClient.tsx",
+    "status": "updated",
+    "city": "Wyoming",
+    "state": "Michigan"
+  },
+  {
+    "file": "src\\app\\vending-leads\\yakima-washington\\pageClient.tsx",
+    "status": "updated",
+    "city": "Yakima",
+    "state": "Washington"
+  },
+  {
+    "file": "src\\app\\vending-leads\\yankton-south-dakota\\pageClient.tsx",
+    "status": "updated",
+    "city": "Yankton South",
+    "state": "Dakota"
+  },
+  {
+    "file": "src\\app\\vending-leads\\yonkers-new-york\\pageClient.tsx",
+    "status": "updated",
+    "city": "Yonkers",
+    "state": "New York"
+  },
+  {
+    "file": "src\\app\\vending-leads\\yorba-linda-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Yorba Linda",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\york-pennsylvania\\pageClient.tsx",
+    "status": "updated",
+    "city": "York",
+    "state": "Pennsylvania"
+  },
+  {
+    "file": "src\\app\\vending-leads\\yuba-city-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Yuba City",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\yucaipa-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Yucaipa",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\yucca-valley-california\\pageClient.tsx",
+    "status": "updated",
+    "city": "Yucca Valley",
+    "state": "California"
+  },
+  {
+    "file": "src\\app\\vending-leads\\yuma-arizona\\pageClient.tsx",
+    "status": "updated",
+    "city": "Yuma",
+    "state": "Arizona"
+  }
+]

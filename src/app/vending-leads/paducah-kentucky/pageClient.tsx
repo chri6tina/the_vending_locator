@@ -21,12 +21,12 @@ export default function PaducahKentuckyVendingLeadsPage() {
   const cityData = {
     'name': 'Paducah',
     'state': 'Kentucky',
-    'population': '~26,000',
-    'businesses': '900-1.2K',
-    'industries': '5-7',
-    'verifiedLocations': '35-70',
+    'population': '200K+',
+    'businesses': '8K-12K',
+    'industries': '14-18',
+    'verifiedLocations': '150-280',
     'rating': '4.7/5',
-    'description': 'River city with arts scene, healthcare, and manufacturing'
+    'description': 'Thriving Kentucky city with diverse business opportunities, healthcare facilities, and commercial centers'
   };
   
   // Active users counter
@@ -78,21 +78,45 @@ export default function PaducahKentuckyVendingLeadsPage() {
     return () => clearInterval(interval)
   }, [userNames.length, usedNames])
 
-  // Build related New Hampshire cities (for internal linking)
-  const newHampshire = states.find(s => s.slug === 'kentucky');
-  const relatedCities = newHampshire ? newHampshire.cities.filter(c => c.slug !== 'manchester-kentucky').slice(0, 8) : [];
+  // Build related Kentucky cities (for internal linking)
+  const coloradoState = states.find(s => s.slug === 'kentucky');
+  const relatedCities = coloradoState ? coloradoState.cities.filter(c => c.slug !== 'paducah-kentucky').slice(0, 8) : [];
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: "What types of vending machine locations are available in Paducah?", a: "Paducah offers vending opportunities in healthcare facilities (Baptist Health Paducah), manufacturing plants, arts and cultural venues, retail locations, and educational institutions." },
-    { q: "How quickly can I get vending machine leads for Paducah?", a: "Our Paducah vending leads are delivered within 3-5 business days with comprehensive details about each location and western Kentucky market insights." },
-    { q: "What makes Paducah a good market for vending machines?", a: "Paducah's unique combination of arts culture, healthcare, and manufacturing creates diverse vending opportunities. The city's designation as a UNESCO Creative City and river location ensure consistent business activity." },
-    { q: "Do you provide ongoing support for Paducah locations?", a: "Yes, we provide comprehensive support including location research, healthcare and cultural sector insights, contact information, and placement strategies tailored to Paducah's economy." },
-    { q: "What industries in Paducah are best for vending machines?", a: "Healthcare facilities, manufacturing plants, arts venues, and retail centers show strong potential due to employee bases, visitor traffic, and consistent operations." },
-    { q: "How do you verify the quality of Paducah vending locations?", a: "We conduct thorough verification including business validation, visitor traffic analysis, employee count assessment, and facility research for each Paducah location." },
-    { q: "Can I get customized vending leads for specific areas of Paducah?", a: "Absolutely! We can target the historic downtown arts district, Broadway corridor, or industrial zones based on your preferences." },
-    { q: "What's the typical ROI for vending machines in Paducah?", a: "Machines in Paducah typically see ROI within 14-18 months, with healthcare and cultural venue locations often achieving faster returns during events and peak seasons." }
-  ];
+  {
+    q: 'What types of vending machine locations are available in Paducah?',
+    a: 'Paducah offers diverse vending opportunities including technology companies, manufacturing facilities, healthcare centers, educational institutions, retail locations, and office buildings. Each location is pre-verified for optimal vending machine success.'
+  },
+  {
+    q: 'How quickly can I get vending machine leads for Paducah?',
+    a: 'Our Paducah vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
+  },
+  {
+    q: 'What makes Paducah a good market for vending machines?',
+    a: 'Paducah features a thriving business community with diverse industries including technology, manufacturing, and retail. The city\'s business density and growing economy create ideal conditions for vending machine success.'
+  },
+  {
+    q: 'Do you provide ongoing support for Paducah locations?',
+    a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Paducah.'
+  },
+  {
+    q: 'What industries in Paducah are best for vending machines?',
+    a: 'Technology companies, manufacturing facilities, healthcare centers, educational institutions, and office buildings in Paducah show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
+  },
+  {
+    q: 'How do you verify the quality of Paducah vending locations?',
+    a: 'We conduct thorough research on each Paducah location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
+  },
+  {
+    q: 'Can I get customized vending leads for specific areas of Paducah?',
+    a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Paducah including the downtown area, industrial parks, and commercial corridors based on your preferences and target market requirements.'
+  },
+  {
+    q: 'What\'s the typical ROI for vending machines in Paducah?',
+    a: 'Vending machines in Paducah typically show strong ROI due to the city\'s business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+  },
+];
 
   return (
     <>
@@ -156,8 +180,7 @@ export default function PaducahKentuckyVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Get comprehensive vending leads for Paducah's thriving Kentucky market, combining local businesses, healthcare systems, and educational facilities for reliable vending machine placement.
-              </motion.p>
+                Explore vending machine placement opportunities in Paducah, Kentucky, with locations verified for optimal foot traffic and revenue potential.</motion.p>
 
               {/* Trust Signals */}
               <motion.div 
@@ -308,7 +331,7 @@ export default function PaducahKentuckyVendingLeadsPage() {
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Paducah's healthcare sector includes major hospitals, specialty clinics, and medical offices that generate consistent visitor and employee traffic, ideal for vending machine placement.</p>
+                <p className="text-stone leading-relaxed">Healthcare institutions in Paducah offer prime vending locations with high visitor counts, extended operating hours, and captive audiences seeking convenient snack and beverage options.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -322,7 +345,7 @@ export default function PaducahKentuckyVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Educational facilities throughout Paducah serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services.</p>
+                <p className="text-stone leading-relaxed">Paducah's schools, colleges, and universities create excellent vending opportunities with high student traffic, campus events, and extended hours that maximize machine usage.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -336,7 +359,7 @@ export default function PaducahKentuckyVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Industrial and manufacturing operations throughout Paducah employ substantial workforces with shift-based schedules, offering stable vending placement opportunities with steady traffic.</p>
+                <p className="text-stone leading-relaxed">Industrial operations in Paducah feature large workforces and shift schedules that create reliable vending revenue through employee break times and shift changes.</p>
               </motion.div>
               <motion.div
                 key="Retail"
@@ -350,7 +373,7 @@ export default function PaducahKentuckyVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Shopping centers and retail districts in Paducah offer prime vending locations, with high-traffic areas including food courts, entrances, and common spaces frequented by shoppers.</p>
+                <p className="text-stone leading-relaxed">Retail locations throughout Paducah provide excellent vending opportunities in malls, shopping centers, and high-traffic commercial areas with consistent customer flow.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -364,7 +387,7 @@ export default function PaducahKentuckyVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Commercial office spaces in Paducah offer excellent vending opportunities, with professional tenants and business operations generating consistent foot traffic throughout the workday.</p>
+                <p className="text-stone leading-relaxed">Corporate office buildings throughout Paducah feature professional workforces and business operations that create reliable vending revenue through employee break times and meetings.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -404,8 +427,7 @@ export default function PaducahKentuckyVendingLeadsPage() {
               className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
             >
               <p className="text-lg text-stone leading-relaxed">
-                The Paducah market presents excellent vending potential through its combination of local businesses, healthcare systems, educational facilities, and commercial districts. The city's diverse economy ensures multiple traffic sources, while Paducah's business density creates numerous placement options. The city's economic growth and business-friendly environment support long-term vending success with steady consumer demand.
-              </p>
+                Paducah's business community creates ideal vending conditions through consistent employee populations, visitor traffic, and strategic commercial locations. The city's economic growth supports long-term vending machine profitability.</p>
             </motion.div>
           </div>
         </section>
@@ -508,11 +530,11 @@ export default function PaducahKentuckyVendingLeadsPage() {
           </div>
         </section>
 
-        {/* More cities in New Hampshire */}
+        {/* More cities in Kentucky */}
         {relatedCities.length > 0 && (
           <section className="py-12 bg-white border-t border-gray-200">
             <div className="mx-auto max-w-7xl px-6">
-              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in New Hampshire</h2>
+              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in Kentucky</h2>
               <div className="flex flex-wrap gap-3">
                 {relatedCities.map(city => (
                   <Link key={city.slug} href={`/vending-leads/${city.slug}`} className="px-3 py-2 rounded-lg border border-gray-200 bg-cream/60 text-chocolate hover:text-navy">
@@ -538,8 +560,8 @@ export default function PaducahKentuckyVendingLeadsPage() {
             itemListElement: [
               { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
               { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'New Hampshire', item: 'https://www.thevendinglocator.com/vending-leads/kentucky' },
-              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/manchester-kentucky' }
+              { '@type': 'ListItem', position: 3, name: 'Kentucky', item: 'https://www.thevendinglocator.com/vending-leads/kentucky' },
+              { '@type': 'ListItem', position: 4, name: 'Paducah', item: 'https://www.thevendinglocator.com/vending-leads/paducah-kentucky' }
             ]
           })
         }}

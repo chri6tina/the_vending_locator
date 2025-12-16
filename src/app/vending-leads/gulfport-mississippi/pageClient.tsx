@@ -19,16 +19,15 @@ export default function GulfportMississippiVendingLeadsPage() {
   
   // City-specific data
   const cityData = {
-  name: 'Gulfport',
-  state: 'Mississippi',
-  population: '72,926',
-  businesses: '4,500+',
-  industries: '5',
-  verifiedLocations: '100-150',
-  rating: '4.8/5',
-  description: 'Gulf Coast hub with port, shipbuilding, and tourism',
-  majorEmployers: ['Memorial Hospital at Gulfport', 'Port of Gulfport', 'Gulfport School District', 'Island View Casino Resort', 'U.S. Navy Seabee Museum']
-};
+    'name': 'Gulfport',
+    'state': 'Mississippi',
+    'population': '75K+',
+    'businesses': '2K-4K',
+    'industries': '16-20',
+    'verifiedLocations': '150-280',
+    'rating': '4.7/5',
+    'description': 'Thriving Mississippi city with diverse business opportunities, healthcare facilities, and commercial centers'
+  };
   
   // Active users counter
   const [activeUsers, setActiveUsers] = useState(25)
@@ -79,21 +78,45 @@ export default function GulfportMississippiVendingLeadsPage() {
     return () => clearInterval(interval)
   }, [userNames.length, usedNames])
 
-  // Build related state cities (for internal linking)
-  const currentState = states.find(s => s.slug === 'mississippi')
-  const relatedCities = currentState ? currentState.cities.filter(c => c.slug !== 'gulfport-mississippi').slice(0, 8) : [];
+  // Build related Mississippi cities (for internal linking)
+  const coloradoState = states.find(s => s.slug === 'mississippi');
+  const relatedCities = coloradoState ? coloradoState.cities.filter(c => c.slug !== 'gulfport-mississippi').slice(0, 8) : [];
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: "What types of vending machine locations are available in Gulfport?", a: "Gulfport provides vending opportunities in healthcare facilities, educational institutions, retail centers, office buildings, and manufacturing facilities serving the local market." },
-    { q: "How quickly can I get vending machine leads for Gulfport?", a: "Our Gulfport vending leads are delivered within 3-5 business days with detailed information about each verified business and placement opportunity." },
-    { q: "What makes Gulfport a good market for vending machines?", a: "Gulfport features a strong business community with diverse industries and consistent foot traffic. The city's economic activity creates ideal conditions for vending machine success." },
-    { q: "Do you provide ongoing support for Gulfport locations?", a: "Yes, we provide comprehensive support including location research, business verification, contact information, and market-specific placement strategies for Gulfport." },
-    { q: "What industries in Gulfport are best for vending machines?", a: "Healthcare, education, manufacturing, retail, and office buildings in Gulfport show strong vending potential with reliable traffic and captive audiences." },
-    { q: "How do you verify the quality of Gulfport vending locations?", a: "We conduct thorough verification including business validation, employee assessment, facility research, and local market analysis for each Gulfport location." },
-    { q: "Can I get customized vending leads for specific areas of Gulfport?", a: "Absolutely! We can focus on specific neighborhoods, business districts, or industrial areas within Gulfport based on your target market." },
-    { q: "What's the typical ROI for vending machines in Gulfport?", a: "Machines in Gulfport typically see ROI within 12-18 months, with healthcare and educational facilities often providing the most consistent returns." }
-  ];
+  {
+    q: 'What types of vending machine locations are available in Gulfport?',
+    a: 'Gulfport offers diverse vending opportunities including technology companies, manufacturing facilities, healthcare centers, educational institutions, retail locations, and office buildings. Each location is pre-verified for optimal vending machine success.'
+  },
+  {
+    q: 'How quickly can I get vending machine leads for Gulfport?',
+    a: 'Our Gulfport vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
+  },
+  {
+    q: 'What makes Gulfport a good market for vending machines?',
+    a: 'Gulfport features a thriving business community with diverse industries including technology, manufacturing, and retail. The city\'s business density and growing economy create ideal conditions for vending machine success.'
+  },
+  {
+    q: 'Do you provide ongoing support for Gulfport locations?',
+    a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Gulfport.'
+  },
+  {
+    q: 'What industries in Gulfport are best for vending machines?',
+    a: 'Technology companies, manufacturing facilities, healthcare centers, educational institutions, and office buildings in Gulfport show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
+  },
+  {
+    q: 'How do you verify the quality of Gulfport vending locations?',
+    a: 'We conduct thorough research on each Gulfport location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
+  },
+  {
+    q: 'Can I get customized vending leads for specific areas of Gulfport?',
+    a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Gulfport including the downtown area, industrial parks, and commercial corridors based on your preferences and target market requirements.'
+  },
+  {
+    q: 'What\'s the typical ROI for vending machines in Gulfport?',
+    a: 'Vending machines in Gulfport typically show strong ROI due to the city\'s business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+  },
+];
 
   return (
     <>
@@ -157,8 +180,7 @@ export default function GulfportMississippiVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Explore vending machine opportunities throughout Gulfport's business network, where diverse industries, commercial zones, and community spaces offer multiple placement options for vending success.
-              </motion.p>
+                Explore vending machine placement opportunities in Gulfport, Mississippi, with locations verified for optimal foot traffic and revenue potential.</motion.p>
 
               {/* Trust Signals */}
               <motion.div 
@@ -201,19 +223,20 @@ export default function GulfportMississippiVendingLeadsPage() {
                 className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 mb-8"
               >
                 <button 
-                  onClick={() => {
-                    const pricingSection = document.getElementById('pricing')
-                    if (pricingSection) {
-                      pricingSection.scrollIntoView({ behavior: 'smooth' })
-                    }
-                  }}
-                  className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
+                    onClick={() => {
+                      const pricingSection = document.getElementById('pricing')
+                      if (pricingSection) {
+                        pricingSection.scrollIntoView({ behavior: 'smooth' })
+                      }
+                    }}
+                    className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
                 >
-                  Get Started
-                </button>
+                    Get Started
+                  </button>
+
               </motion.div>
 
-              {/* Social Proof Stats */}
+{/* Social Proof Stats */}
               <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -240,6 +263,8 @@ export default function GulfportMississippiVendingLeadsPage() {
             </div>
           </div>
         </section>
+
+        
 
         {/* Pricing Section */}
         <section id="pricing" className="py-16 bg-warm-white">
@@ -306,7 +331,7 @@ export default function GulfportMississippiVendingLeadsPage() {
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Gulfport features modern healthcare facilities including hospitals, medical centers, and clinics with high patient and visitor traffic, creating consistent demand for vending services throughout the day.</p>
+                <p className="text-stone leading-relaxed">Medical facilities throughout Gulfport serve large patient populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services in waiting areas and break rooms.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -320,7 +345,7 @@ export default function GulfportMississippiVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Schools and educational institutions in Gulfport offer excellent vending opportunities, with high-traffic areas including cafeterias, libraries, student centers, and athletic facilities.</p>
+                <p className="text-stone leading-relaxed">Educational facilities throughout Gulfport serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -334,13 +359,13 @@ export default function GulfportMississippiVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Gulfport's manufacturing sector features production facilities, warehouses, and industrial parks with large employee concentrations, ideal for vending machine services.</p>
+                <p className="text-stone leading-relaxed">Manufacturing facilities in Gulfport provide excellent vending locations with large employee bases, multiple shifts, and break areas that generate consistent sales throughout the day.</p>
               </motion.div>
               <motion.div
                 key="Retail"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.3 }}
+                transition={{ duration: 0.8, delay: 0.30000000000000004 }}
                 viewport={{ once: true }}
                 className="bg-orange-50 p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
               >
@@ -348,7 +373,7 @@ export default function GulfportMississippiVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Retail locations throughout Gulfport provide high customer traffic and diverse shopping experiences, creating multiple vending opportunities in malls, shopping centers, and retail districts.</p>
+                <p className="text-stone leading-relaxed">Shopping centers and retail districts in Gulfport offer prime vending locations, with high-traffic areas including food courts, entrances, and common spaces frequented by shoppers.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -362,7 +387,7 @@ export default function GulfportMississippiVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Professional office spaces in Gulfport house corporate headquarters, business centers, and professional services with captive employee audiences during business hours, creating consistent vending opportunities.</p>
+                <p className="text-stone leading-relaxed">Office complexes in Gulfport provide ideal vending locations with multiple tenants, high employee counts, and break areas that ensure steady machine usage during business hours.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -376,7 +401,7 @@ export default function GulfportMississippiVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Gulfport's transportation infrastructure includes major transit hubs and travel facilities with year-round passenger flow, ideal for vending machine services in waiting areas and terminals.</p>
+                <p className="text-stone leading-relaxed">Transit facilities throughout Gulfport provide excellent vending opportunities in terminals, waiting areas, and high-traffic zones with consistent traveler foot traffic.</p>
               </motion.div>
             </div>
           </div>
@@ -402,8 +427,7 @@ export default function GulfportMississippiVendingLeadsPage() {
               className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
             >
               <p className="text-lg text-stone leading-relaxed">
-                Gulfport offers reliable vending opportunities through its thriving business community, featuring diverse industries, commercial centers, and growing economic sectors. The city's business mix provides stable placement locations with consistent traffic patterns, while Gulfport's economic activity supports steady consumer spending. The city's combination of established businesses and emerging sectors creates multiple vending placement strategies.
-              </p>
+                Gulfport's business community creates ideal vending conditions through consistent employee populations, visitor traffic, and strategic commercial locations. The city's economic growth supports long-term vending machine profitability.</p>
             </motion.div>
           </div>
         </section>
@@ -506,11 +530,11 @@ export default function GulfportMississippiVendingLeadsPage() {
           </div>
         </section>
 
-        {/* More cities in State */}
+        {/* More cities in Mississippi */}
         {relatedCities.length > 0 && (
           <section className="py-12 bg-white border-t border-gray-200">
             <div className="mx-auto max-w-7xl px-6">
-              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in {stateDisplayName}</h2>
+              <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">More cities in Mississippi</h2>
               <div className="flex flex-wrap gap-3">
                 {relatedCities.map(city => (
                   <Link key={city.slug} href={`/vending-leads/${city.slug}`} className="px-3 py-2 rounded-lg border border-gray-200 bg-cream/60 text-chocolate hover:text-navy">
@@ -536,8 +560,8 @@ export default function GulfportMississippiVendingLeadsPage() {
             itemListElement: [
               { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
               { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
-              { '@type': 'ListItem', position: 3, name: 'Mississippi', item: `https://www.thevendinglocator.com/vending-leads/mississippi` },
-              { '@type': 'ListItem', position: 4, name: 'Gulfport', item: `https://www.thevendinglocator.com/vending-leads/gulfport-mississippi` }
+              { '@type': 'ListItem', position: 3, name: 'Mississippi', item: 'https://www.thevendinglocator.com/vending-leads/mississippi' },
+              { '@type': 'ListItem', position: 4, name: 'Gulfport', item: 'https://www.thevendinglocator.com/vending-leads/gulfport-mississippi' }
             ]
           })
         }}

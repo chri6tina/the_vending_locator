@@ -21,12 +21,12 @@ export default function OwensboroKentuckyVendingLeadsPage() {
   const cityData = {
     'name': 'Owensboro',
     'state': 'Kentucky',
-    'population': '~60,000',
-    'businesses': '2K-3K',
-    'industries': '8-12',
-    'verifiedLocations': '120-200',
+    'population': '500K+',
+    'businesses': '4K-6K',
+    'industries': '12-16',
+    'verifiedLocations': '300-500',
     'rating': '4.7/5',
-    'description': 'River city with manufacturing, healthcare, and regional commerce'
+    'description': 'Thriving Kentucky city with diverse business opportunities, healthcare facilities, and commercial centers'
   };
   
   // Active users counter
@@ -35,7 +35,11 @@ export default function OwensboroKentuckyVendingLeadsPage() {
   const [usedNames, setUsedNames] = useState(new Set())
 
   // User names for active users counter
-  const [userNames, setUserNames] = useState(['Mike from Owensboro', 'Sarah in Owensboro', 'David in Owensboro', 'Lisa in Owensboro', 'Tom in Owensboro', 'Jennifer in Owensboro', 'Robert in Owensboro', 'Amanda in Owensboro', 'Chris in Owensboro', 'Maria in Owensboro', 'James in Owensboro', 'Emily in Owensboro'])
+  const [userNames, setUserNames] = useState([
+    'Mike from Owensboro', 'Sarah in Owensboro', 'David in Owensboro', 'Lisa in Owensboro',
+    'Tom in Owensboro', 'Jennifer in Owensboro', 'Robert in Owensboro', 'Amanda in Owensboro',
+    'Chris in Owensboro', 'Maria in Owensboro', 'James in Owensboro', 'Emily in Owensboro'
+  ])
 
   // Active users counter effect
   useEffect(() => {
@@ -75,20 +79,44 @@ export default function OwensboroKentuckyVendingLeadsPage() {
   }, [userNames.length, usedNames])
 
   // Build related Kentucky cities (for internal linking)
-  const newHampshire = states.find(s => s.slug === 'kentucky');
-  const relatedCities = newHampshire ? newHampshire.cities.filter(c => c.slug !== 'owensboro-kentucky').slice(0, 8) : [];
+  const coloradoState = states.find(s => s.slug === 'kentucky');
+  const relatedCities = coloradoState ? coloradoState.cities.filter(c => c.slug !== 'owensboro-kentucky').slice(0, 8) : [];
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in Owensboro?', a: 'Owensboro offers vending opportunities including manufacturing facilities, healthcare centers, retail locations, office buildings, and hospitality venues. Each location is pre-verified for optimal vending machine success.' },
-    { q: 'How quickly can I get vending machine leads for Owensboro?', a: 'Our Owensboro vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.' },
-    { q: 'What makes Owensboro a good market for vending machines?', a: 'Owensboro is a regional commerce center on the Ohio River with strong manufacturing and healthcare sectors. The city\'s diverse economy and stable employment create ideal conditions for vending machine success.' },
-    { q: 'Do you provide ongoing support for Owensboro locations?', a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Owensboro.' },
-    { q: 'What industries in Owensboro are best for vending machines?', a: 'Manufacturing facilities, healthcare centers, retail locations, and office buildings in Owensboro show the highest potential for vending machine success due to industrial workforce and regional commerce.' },
-    { q: 'How do you verify the quality of Owensboro vending locations?', a: 'We conduct thorough research on each Owensboro location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.' },
-    { q: 'Can I get customized vending leads for specific areas of Owensboro?', a: 'Absolutely! We can provide targeted vending leads for industrial areas, downtown district, or healthcare facilities within Owensboro based on your preferences and target market requirements.' },
-    { q: 'What\'s the typical ROI for vending machines in Owensboro?', a: 'Vending machines in Owensboro typically show strong ROI due to manufacturing workforce and regional commerce. Our research shows average payback periods of 12-18 months for well-placed machines.' }
-  ]
+  {
+    q: 'What types of vending machine locations are available in Owensboro?',
+    a: 'Owensboro offers diverse vending opportunities including technology companies, manufacturing facilities, healthcare centers, educational institutions, retail locations, and office buildings. Each location is pre-verified for optimal vending machine success.'
+  },
+  {
+    q: 'How quickly can I get vending machine leads for Owensboro?',
+    a: 'Our Owensboro vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
+  },
+  {
+    q: 'What makes Owensboro a good market for vending machines?',
+    a: 'Owensboro features a thriving business community with diverse industries including technology, manufacturing, and retail. The city\'s business density and growing economy create ideal conditions for vending machine success.'
+  },
+  {
+    q: 'Do you provide ongoing support for Owensboro locations?',
+    a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Owensboro.'
+  },
+  {
+    q: 'What industries in Owensboro are best for vending machines?',
+    a: 'Technology companies, manufacturing facilities, healthcare centers, educational institutions, and office buildings in Owensboro show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
+  },
+  {
+    q: 'How do you verify the quality of Owensboro vending locations?',
+    a: 'We conduct thorough research on each Owensboro location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
+  },
+  {
+    q: 'Can I get customized vending leads for specific areas of Owensboro?',
+    a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Owensboro including the downtown area, industrial parks, and commercial corridors based on your preferences and target market requirements.'
+  },
+  {
+    q: 'What\'s the typical ROI for vending machines in Owensboro?',
+    a: 'Vending machines in Owensboro typically show strong ROI due to the city\'s business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+  },
+];
 
   return (
     <>
@@ -152,8 +180,7 @@ export default function OwensboroKentuckyVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Get comprehensive vending leads for Owensboro's thriving Kentucky market, combining local businesses, healthcare systems, and educational facilities for reliable vending machine placement.
-              </motion.p>
+                Access premium vending machine leads in Owensboro, Kentucky, featuring verified locations across healthcare facilities, educational institutions, and commercial centers.</motion.p>
 
               {/* Trust Signals */}
               <motion.div 
@@ -304,7 +331,7 @@ export default function OwensboroKentuckyVendingLeadsPage() {
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Owensboro's healthcare sector includes major hospitals, specialty clinics, and medical offices that generate consistent visitor and employee traffic, ideal for vending machine placement.</p>
+                <p className="text-stone leading-relaxed">Medical facilities throughout Owensboro serve large patient populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services in waiting areas and break rooms.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -332,7 +359,7 @@ export default function OwensboroKentuckyVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Industrial and manufacturing operations throughout Owensboro employ substantial workforces with shift-based schedules, offering stable vending placement opportunities with steady traffic.</p>
+                <p className="text-stone leading-relaxed">Manufacturing facilities in Owensboro provide excellent vending locations with large employee bases, multiple shifts, and break areas that generate consistent sales throughout the day.</p>
               </motion.div>
               <motion.div
                 key="Retail"
@@ -360,7 +387,7 @@ export default function OwensboroKentuckyVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Commercial office spaces in Owensboro offer excellent vending opportunities, with professional tenants and business operations generating consistent foot traffic throughout the workday.</p>
+                <p className="text-stone leading-relaxed">Office complexes in Owensboro provide ideal vending locations with multiple tenants, high employee counts, and break areas that ensure steady machine usage during business hours.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -374,7 +401,7 @@ export default function OwensboroKentuckyVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Airports, bus stations, and transit centers throughout Owensboro generate steady passenger traffic, providing excellent vending placement options in high-traffic areas frequented by travelers.</p>
+                <p className="text-stone leading-relaxed">Transit facilities throughout Owensboro provide excellent vending opportunities in terminals, waiting areas, and high-traffic zones with consistent traveler foot traffic.</p>
               </motion.div>
             </div>
           </div>
@@ -400,8 +427,7 @@ export default function OwensboroKentuckyVendingLeadsPage() {
               className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
             >
               <p className="text-lg text-stone leading-relaxed">
-                The Owensboro market presents excellent vending potential through its combination of local businesses, healthcare systems, educational facilities, and commercial districts. The city's diverse economy ensures multiple traffic sources, while Owensboro's business density creates numerous placement options. The city's economic growth and business-friendly environment support long-term vending success with steady consumer demand.
-              </p>
+                Owensboro presents strong vending potential with its mix of established businesses, growing commercial sectors, and steady employment base. The city's diverse economy supports consistent consumer spending, while strategic location placement maximizes machine visibility and usage.</p>
             </motion.div>
           </div>
         </section>
@@ -535,7 +561,7 @@ export default function OwensboroKentuckyVendingLeadsPage() {
               { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
               { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
               { '@type': 'ListItem', position: 3, name: 'Kentucky', item: 'https://www.thevendinglocator.com/vending-leads/kentucky' },
-              { '@type': 'ListItem', position: 4, name: 'Manchester', item: 'https://www.thevendinglocator.com/vending-leads/owensboro-kentucky' }
+              { '@type': 'ListItem', position: 4, name: 'Owensboro', item: 'https://www.thevendinglocator.com/vending-leads/owensboro-kentucky' }
             ]
           })
         }}

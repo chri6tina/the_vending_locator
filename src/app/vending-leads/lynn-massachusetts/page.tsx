@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   "title": "Vending Machine Leads in Lynn, Massachusetts - The Vending Locator",
   "description": "Get verified vending machine leads and locations in Lynn, Massachusetts. Find qualified businesses for vending machine placement.",
-  "keywords": "vending machines lynn massachusetts, vending leads lynn massachusetts, vending locations lynn massachusetts, vending opportunities lynn massachusetts",
+  "keywords": "vending machines Lynn Massachusetts, vending leads Lynn Massachusetts, vending locations Lynn Massachusetts, vending opportunities Lynn Massachusetts",
   "alternates": {
     "canonical": "https://www.thevendinglocator.com/vending-leads/lynn-massachusetts"
   },
