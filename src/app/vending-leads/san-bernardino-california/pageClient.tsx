@@ -85,36 +85,36 @@ export default function SanBernardinoCaliforniaVendingLeadsPage() {
   // FAQ items reused for JSON-LD
   const faqItems = [
   {
-    q: 'What types of vending machine locations are available in San Bernardino?',
+    q: 'What types of vending machine locations are available in San Bernardino?\',
     a: 'San Bernardino offers diverse vending opportunities including logistics facilities, government offices, healthcare centers, educational institutions, retail locations, and office buildings. Each location is pre-verified for optimal vending machine success.'
   },
   {
-    q: 'How quickly can I get vending machine leads for San Bernardino?',
+    q: 'How quickly can I get vending machine leads for San Bernardino?\',
     a: 'Our San Bernardino vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
   },
   {
-    q: 'What makes San Bernardino a good market for vending machines?',
-    a: 'San Bernardino features a thriving business community with diverse industries including logistics, government, and healthcare. The city's business density and central location create ideal conditions for vending machine success.'
+    q: 'What makes San Bernardino a good market for vending machines?\',
+    a: 'San Bernardino features a thriving business community with diverse industries including logistics, government, and healthcare. The city\'s business density and central location create ideal conditions for vending machine success.'
   },
   {
-    q: 'Do you provide ongoing support for San Bernardino locations?',
+    q: 'Do you provide ongoing support for San Bernardino locations?\',
     a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in San Bernardino.'
   },
   {
-    q: 'What industries in San Bernardino are best for vending machines?',
+    q: 'What industries in San Bernardino are best for vending machines?\',
     a: 'Logistics facilities, government offices, healthcare centers, educational institutions, and office buildings in San Bernardino show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
   },
   {
-    q: 'How do you verify the quality of San Bernardino vending locations?',
+    q: 'How do you verify the quality of San Bernardino vending locations?\',
     a: 'We conduct thorough research on each San Bernardino location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
   },
   {
-    q: 'Can I get customized vending leads for specific areas of San Bernardino?',
+    q: 'Can I get customized vending leads for specific areas of San Bernardino?\',
     a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within San Bernardino including downtown, logistics corridors, and university area based on your preferences and target market requirements.'
   },
   {
-    q: 'What's the typical ROI for vending machines in San Bernardino?',
-    a: 'Vending machines in San Bernardino typically show strong ROI due to the city's business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+    q: 'What\'s the typical ROI for vending machines in San Bernardino?',
+    a: 'Vending machines in San Bernardino typically show strong ROI due to the city\'s business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
   }
 ];
 

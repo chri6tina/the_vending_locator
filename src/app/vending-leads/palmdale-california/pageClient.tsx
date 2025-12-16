@@ -85,36 +85,36 @@ export default function PalmdaleCaliforniaVendingLeadsPage() {
   // FAQ items reused for JSON-LD
   const faqItems = [
   {
-    q: 'What types of vending machine locations are available in Palmdale?',
+    q: 'What types of vending machine locations are available in Palmdale?\',
     a: 'Palmdale offers diverse vending opportunities including healthcare facilities, educational institutions, retail locations, office buildings, and manufacturing facilities. Each location is pre-verified for optimal vending machine success.'
   },
   {
-    q: 'How quickly can I get vending machine leads for Palmdale?',
+    q: 'How quickly can I get vending machine leads for Palmdale?\',
     a: 'Our Palmdale vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
   },
   {
-    q: 'What makes Palmdale a good market for vending machines?',
-    a: 'Palmdale features a thriving business community with diverse industries and strong economic activity. The city's business density and diverse demographics create ideal conditions for vending machine success.'
+    q: 'What makes Palmdale a good market for vending machines?\',
+    a: 'Palmdale features a thriving business community with diverse industries and strong economic activity. The city\'s business density and diverse demographics create ideal conditions for vending machine success.'
   },
   {
-    q: 'Do you provide ongoing support for Palmdale locations?',
+    q: 'Do you provide ongoing support for Palmdale locations?\',
     a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Palmdale.'
   },
   {
-    q: 'What industries in Palmdale are best for vending machines?',
+    q: 'What industries in Palmdale are best for vending machines?\',
     a: 'Healthcare, education, retail, office buildings, and manufacturing in Palmdale show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
   },
   {
-    q: 'How do you verify the quality of Palmdale vending locations?',
+    q: 'How do you verify the quality of Palmdale vending locations?\',
     a: 'We conduct thorough research on each Palmdale location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
   },
   {
-    q: 'Can I get customized vending leads for specific areas of Palmdale?',
+    q: 'Can I get customized vending leads for specific areas of Palmdale?\',
     a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Palmdale based on your preferences and target market requirements.'
   },
   {
-    q: 'What's the typical ROI for vending machines in Palmdale?',
-    a: 'Vending machines in Palmdale typically show strong ROI due to the city's business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+    q: 'What\'s the typical ROI for vending machines in Palmdale?',
+    a: 'Vending machines in Palmdale typically show strong ROI due to the city\'s business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
   }
 ];
 

@@ -225,10 +225,10 @@ export default function GilbertArizonaVendingLeadsPage() {
             </div>
             <div className="space-y-6">
               {[
-                { q: 'What makes Gilbert good for vending machines?', a: 'Healthcare, education, technology and family retail sectors create consistent traffic and stable operations.' },
-                { q: 'How fast are Gilbert leads delivered?', a: 'We typically deliver within 3-5 business days with business details and contact info.' },
-                { q: 'Best Gilbert locations?', a: 'Hospitals, schools, tech offices and retail centers are top targets.' },
-                { q: 'Customized Gilbert leads?', a: 'Yes, we can target specific neighborhoods, school districts or tech corridors.' }
+                { q: 'What makes Gilbert good for vending machines?\', a: 'Healthcare, education, technology and family retail sectors create consistent traffic and stable operations.' },
+                { q: 'How fast are Gilbert leads delivered?\', a: 'We typically deliver within 3-5 business days with business details and contact info.' },
+                { q: 'Best Gilbert locations?\', a: 'Hospitals, schools, tech offices and retail centers are top targets.' },
+                { q: 'Customized Gilbert leads?\', a: 'Yes, we can target specific neighborhoods, school districts or tech corridors.' }
               ].map((item, i) => (
                 <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: i * 0.1 }} viewport={{ once: true }} className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
                   <h3 className="text-lg font-semibold text-charcoal mb-3">{item.q}</h3>

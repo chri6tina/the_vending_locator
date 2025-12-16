@@ -85,36 +85,36 @@ export default function LakeCharlesLouisianaVendingLeadsPage() {
   // FAQ items reused for JSON-LD
   const faqItems = [
   {
-    q: 'What types of vending machine locations are available in Lake Charles?',
+    q: 'What types of vending machine locations are available in Lake Charles?\',
     a: 'Lake Charles offers diverse vending opportunities including petrochemical facilities, gaming resorts, port operations, healthcare centers, educational institutions, and retail locations. Each location is pre-verified for optimal vending machine success.'
   },
   {
-    q: 'How quickly can I get vending machine leads for Lake Charles?',
+    q: 'How quickly can I get vending machine leads for Lake Charles?\',
     a: 'Our Lake Charles vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
   },
   {
-    q: 'What makes Lake Charles a good market for vending machines?',
-    a: 'Lake Charles features a thriving business community with diverse industries including petrochemical, gaming, and port operations. The city's business density and strategic location create ideal conditions for vending machine success.'
+    q: 'What makes Lake Charles a good market for vending machines?\',
+    a: 'Lake Charles features a thriving business community with diverse industries including petrochemical, gaming, and port operations. The city\'s business density and strategic location create ideal conditions for vending machine success.'
   },
   {
-    q: 'Do you provide ongoing support for Lake Charles locations?',
+    q: 'Do you provide ongoing support for Lake Charles locations?\',
     a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Lake Charles.'
   },
   {
-    q: 'What industries in Lake Charles are best for vending machines?',
+    q: 'What industries in Lake Charles are best for vending machines?\',
     a: 'Petrochemical facilities, gaming resorts, port operations, healthcare centers, and educational institutions in Lake Charles show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
   },
   {
-    q: 'How do you verify the quality of Lake Charles vending locations?',
+    q: 'How do you verify the quality of Lake Charles vending locations?\',
     a: 'We conduct thorough research on each Lake Charles location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
   },
   {
-    q: 'Can I get customized vending leads for specific areas of Lake Charles?',
+    q: 'Can I get customized vending leads for specific areas of Lake Charles?\',
     a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Lake Charles including downtown, gaming district, and petrochemical corridor based on your preferences and target market requirements.'
   },
   {
-    q: 'What's the typical ROI for vending machines in Lake Charles?',
-    a: 'Vending machines in Lake Charles typically show strong ROI due to the city's business density and entertainment economy. Our research shows average payback periods of 10-15 months for well-placed machines.'
+    q: 'What\'s the typical ROI for vending machines in Lake Charles?',
+    a: 'Vending machines in Lake Charles typically show strong ROI due to the city\'s business density and entertainment economy. Our research shows average payback periods of 10-15 months for well-placed machines.'
   }
 ];
 

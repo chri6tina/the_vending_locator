@@ -85,36 +85,36 @@ export default function IrvineCaliforniaVendingLeadsPage() {
   // FAQ items reused for JSON-LD
   const faqItems = [
   {
-    q: 'What types of vending machine locations are available in Irvine?',
+    q: 'What types of vending machine locations are available in Irvine?\',
     a: 'Irvine offers diverse vending opportunities including technology companies, financial services, healthcare centers, educational institutions, retail locations, and office buildings. Each location is pre-verified for optimal vending machine success.'
   },
   {
-    q: 'How quickly can I get vending machine leads for Irvine?',
+    q: 'How quickly can I get vending machine leads for Irvine?\',
     a: 'Our Irvine vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
   },
   {
-    q: 'What makes Irvine a good market for vending machines?',
-    a: 'Irvine features a thriving business community with diverse industries including technology, finance, and education. The city's business density and planned development create ideal conditions for vending machine success.'
+    q: 'What makes Irvine a good market for vending machines?\',
+    a: 'Irvine features a thriving business community with diverse industries including technology, finance, and education. The city\'s business density and planned development create ideal conditions for vending machine success.'
   },
   {
-    q: 'Do you provide ongoing support for Irvine locations?',
+    q: 'Do you provide ongoing support for Irvine locations?\',
     a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Irvine.'
   },
   {
-    q: 'What industries in Irvine are best for vending machines?',
+    q: 'What industries in Irvine are best for vending machines?\',
     a: 'Technology companies, financial services, healthcare centers, educational institutions, and office buildings in Irvine show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
   },
   {
-    q: 'How do you verify the quality of Irvine vending locations?',
+    q: 'How do you verify the quality of Irvine vending locations?\',
     a: 'We conduct thorough research on each Irvine location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
   },
   {
-    q: 'Can I get customized vending leads for specific areas of Irvine?',
+    q: 'Can I get customized vending leads for specific areas of Irvine?\',
     a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or corporate campuses within Irvine including Irvine Spectrum, University area, and business parks based on your preferences and target market requirements.'
   },
   {
-    q: 'What's the typical ROI for vending machines in Irvine?',
-    a: 'Vending machines in Irvine typically show strong ROI due to the city's business density and affluent economy. Our research shows average payback periods of 10-15 months for well-placed machines.'
+    q: 'What\'s the typical ROI for vending machines in Irvine?',
+    a: 'Vending machines in Irvine typically show strong ROI due to the city\'s business density and affluent economy. Our research shows average payback periods of 10-15 months for well-placed machines.'
   }
 ];
 

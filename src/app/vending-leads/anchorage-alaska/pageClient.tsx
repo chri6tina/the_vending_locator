@@ -85,36 +85,36 @@ export default function AnchorageAlaskaVendingLeadsPage() {
   // FAQ items reused for JSON-LD
   const faqItems = [
   {
-    q: 'What types of vending machine locations are available in Anchorage?',
+    q: 'What types of vending machine locations are available in Anchorage?\',
     a: 'Anchorage offers diverse vending opportunities including oil facilities, tourism businesses, government offices, healthcare centers, educational institutions, and retail locations. Each location is pre-verified for optimal vending machine success.'
   },
   {
-    q: 'How quickly can I get vending machine leads for Anchorage?',
+    q: 'How quickly can I get vending machine leads for Anchorage?\',
     a: 'Our Anchorage vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
   },
   {
-    q: 'What makes Anchorage a good market for vending machines?',
-    a: 'Anchorage features a thriving business community with diverse industries including oil, tourism, and government. The city's business density and unique location create ideal conditions for vending machine success.'
+    q: 'What makes Anchorage a good market for vending machines?\',
+    a: 'Anchorage features a thriving business community with diverse industries including oil, tourism, and government. The city\'s business density and unique location create ideal conditions for vending machine success.'
   },
   {
-    q: 'Do you provide ongoing support for Anchorage locations?',
+    q: 'Do you provide ongoing support for Anchorage locations?\',
     a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Anchorage.'
   },
   {
-    q: 'What industries in Anchorage are best for vending machines?',
+    q: 'What industries in Anchorage are best for vending machines?\',
     a: 'Oil facilities, tourism businesses, government offices, healthcare centers, and educational institutions in Anchorage show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
   },
   {
-    q: 'How do you verify the quality of Anchorage vending locations?',
+    q: 'How do you verify the quality of Anchorage vending locations?\',
     a: 'We conduct thorough research on each Anchorage location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
   },
   {
-    q: 'Can I get customized vending leads for specific areas of Anchorage?',
+    q: 'Can I get customized vending leads for specific areas of Anchorage?\',
     a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Anchorage including downtown, airport area, and port district based on your preferences and target market requirements.'
   },
   {
-    q: 'What's the typical ROI for vending machines in Anchorage?',
-    a: 'Vending machines in Anchorage typically show strong ROI due to the city's business density and unique market. Our research shows average payback periods of 12-18 months for well-placed machines.'
+    q: 'What\'s the typical ROI for vending machines in Anchorage?',
+    a: 'Vending machines in Anchorage typically show strong ROI due to the city\'s business density and unique market. Our research shows average payback periods of 12-18 months for well-placed machines.'
   }
 ];
 

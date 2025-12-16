@@ -85,36 +85,36 @@ export default function TacomaWashingtonVendingLeadsPage() {
   // FAQ items reused for JSON-LD
   const faqItems = [
   {
-    q: 'What types of vending machine locations are available in Tacoma?',
+    q: 'What types of vending machine locations are available in Tacoma?\',
     a: 'Tacoma offers diverse vending opportunities including port facilities, logistics operations, manufacturing plants, healthcare centers, educational institutions, and retail locations. Each location is pre-verified for optimal vending machine success.'
   },
   {
-    q: 'How quickly can I get vending machine leads for Tacoma?',
+    q: 'How quickly can I get vending machine leads for Tacoma?\',
     a: 'Our Tacoma vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
   },
   {
-    q: 'What makes Tacoma a good market for vending machines?',
-    a: 'Tacoma features a thriving business community with diverse industries including port operations, logistics, and manufacturing. The city's business density and strategic location create ideal conditions for vending machine success.'
+    q: 'What makes Tacoma a good market for vending machines?\',
+    a: 'Tacoma features a thriving business community with diverse industries including port operations, logistics, and manufacturing. The city\'s business density and strategic location create ideal conditions for vending machine success.'
   },
   {
-    q: 'Do you provide ongoing support for Tacoma locations?',
+    q: 'Do you provide ongoing support for Tacoma locations?\',
     a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Tacoma.'
   },
   {
-    q: 'What industries in Tacoma are best for vending machines?',
+    q: 'What industries in Tacoma are best for vending machines?\',
     a: 'Port facilities, logistics operations, manufacturing plants, healthcare centers, and educational institutions in Tacoma show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
   },
   {
-    q: 'How do you verify the quality of Tacoma vending locations?',
+    q: 'How do you verify the quality of Tacoma vending locations?\',
     a: 'We conduct thorough research on each Tacoma location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
   },
   {
-    q: 'Can I get customized vending leads for specific areas of Tacoma?',
+    q: 'Can I get customized vending leads for specific areas of Tacoma?\',
     a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or port areas within Tacoma including downtown, port district, and industrial parks based on your preferences and target market requirements.'
   },
   {
-    q: 'What's the typical ROI for vending machines in Tacoma?',
-    a: 'Vending machines in Tacoma typically show strong ROI due to the city's business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+    q: 'What\'s the typical ROI for vending machines in Tacoma?',
+    a: 'Vending machines in Tacoma typically show strong ROI due to the city\'s business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
   }
 ];
 

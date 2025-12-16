@@ -85,36 +85,36 @@ export default function GlendaleCaliforniaVendingLeadsPage() {
   // FAQ items reused for JSON-LD
   const faqItems = [
   {
-    q: 'What types of vending machine locations are available in Glendale?',
+    q: 'What types of vending machine locations are available in Glendale?\',
     a: 'Glendale offers diverse vending opportunities including entertainment businesses, retail centers, healthcare facilities, educational institutions, office buildings, and manufacturing facilities. Each location is pre-verified for optimal vending machine success.'
   },
   {
-    q: 'How quickly can I get vending machine leads for Glendale?',
+    q: 'How quickly can I get vending machine leads for Glendale?\',
     a: 'Our Glendale vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
   },
   {
-    q: 'What makes Glendale a good market for vending machines?',
-    a: 'Glendale features a thriving business community with diverse industries including entertainment, retail, and healthcare. The city's business density and Los Angeles metro location create ideal conditions for vending machine success.'
+    q: 'What makes Glendale a good market for vending machines?\',
+    a: 'Glendale features a thriving business community with diverse industries including entertainment, retail, and healthcare. The city\'s business density and Los Angeles metro location create ideal conditions for vending machine success.'
   },
   {
-    q: 'Do you provide ongoing support for Glendale locations?',
+    q: 'Do you provide ongoing support for Glendale locations?\',
     a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Glendale.'
   },
   {
-    q: 'What industries in Glendale are best for vending machines?',
+    q: 'What industries in Glendale are best for vending machines?\',
     a: 'Entertainment businesses, retail centers, healthcare facilities, educational institutions, and office buildings in Glendale show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
   },
   {
-    q: 'How do you verify the quality of Glendale vending locations?',
+    q: 'How do you verify the quality of Glendale vending locations?\',
     a: 'We conduct thorough research on each Glendale location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
   },
   {
-    q: 'Can I get customized vending leads for specific areas of Glendale?',
+    q: 'Can I get customized vending leads for specific areas of Glendale?\',
     a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or retail areas within Glendale including downtown, Americana at Brand, and business parks based on your preferences and target market requirements.'
   },
   {
-    q: 'What's the typical ROI for vending machines in Glendale?',
-    a: 'Vending machines in Glendale typically show strong ROI due to the city's business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+    q: 'What\'s the typical ROI for vending machines in Glendale?',
+    a: 'Vending machines in Glendale typically show strong ROI due to the city\'s business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
   }
 ];
 

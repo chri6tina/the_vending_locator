@@ -85,36 +85,36 @@ export default function DalyCityCaliforniaVendingLeadsPage() {
   // FAQ items reused for JSON-LD
   const faqItems = [
   {
-    q: 'What types of vending machine locations are available in Daly City?',
+    q: 'What types of vending machine locations are available in Daly City?\',
     a: 'Daly City offers diverse vending opportunities including healthcare facilities, educational institutions, retail locations, office buildings, and manufacturing facilities. Each location is pre-verified for optimal vending machine success.'
   },
   {
-    q: 'How quickly can I get vending machine leads for Daly City?',
+    q: 'How quickly can I get vending machine leads for Daly City?\',
     a: 'Our Daly City vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
   },
   {
-    q: 'What makes Daly City a good market for vending machines?',
-    a: 'Daly City features a thriving business community with diverse industries and strong economic activity. The city's business density and diverse demographics create ideal conditions for vending machine success.'
+    q: 'What makes Daly City a good market for vending machines?\',
+    a: 'Daly City features a thriving business community with diverse industries and strong economic activity. The city\'s business density and diverse demographics create ideal conditions for vending machine success.'
   },
   {
-    q: 'Do you provide ongoing support for Daly City locations?',
+    q: 'Do you provide ongoing support for Daly City locations?\',
     a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Daly City.'
   },
   {
-    q: 'What industries in Daly City are best for vending machines?',
+    q: 'What industries in Daly City are best for vending machines?\',
     a: 'Healthcare, education, retail, office buildings, and manufacturing in Daly City show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
   },
   {
-    q: 'How do you verify the quality of Daly City vending locations?',
+    q: 'How do you verify the quality of Daly City vending locations?\',
     a: 'We conduct thorough research on each Daly City location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
   },
   {
-    q: 'Can I get customized vending leads for specific areas of Daly City?',
+    q: 'Can I get customized vending leads for specific areas of Daly City?\',
     a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Daly City based on your preferences and target market requirements.'
   },
   {
-    q: 'What's the typical ROI for vending machines in Daly City?',
-    a: 'Vending machines in Daly City typically show strong ROI due to the city's business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+    q: 'What\'s the typical ROI for vending machines in Daly City?',
+    a: 'Vending machines in Daly City typically show strong ROI due to the city\'s business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
   }
 ];
 

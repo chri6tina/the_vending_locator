@@ -85,36 +85,36 @@ export default function SpokaneWashingtonVendingLeadsPage() {
   // FAQ items reused for JSON-LD
   const faqItems = [
   {
-    q: 'What types of vending machine locations are available in Spokane?',
+    q: 'What types of vending machine locations are available in Spokane?\',
     a: 'Spokane offers diverse vending opportunities including healthcare facilities, educational institutions, manufacturing plants, retail locations, office buildings, and government facilities. Each location is pre-verified for optimal vending machine success.'
   },
   {
-    q: 'How quickly can I get vending machine leads for Spokane?',
+    q: 'How quickly can I get vending machine leads for Spokane?\',
     a: 'Our Spokane vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
   },
   {
-    q: 'What makes Spokane a good market for vending machines?',
-    a: 'Spokane features a thriving business community with diverse industries including healthcare, education, and manufacturing. The city's business density and regional hub status create ideal conditions for vending machine success.'
+    q: 'What makes Spokane a good market for vending machines?\',
+    a: 'Spokane features a thriving business community with diverse industries including healthcare, education, and manufacturing. The city\'s business density and regional hub status create ideal conditions for vending machine success.'
   },
   {
-    q: 'Do you provide ongoing support for Spokane locations?',
+    q: 'Do you provide ongoing support for Spokane locations?\',
     a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Spokane.'
   },
   {
-    q: 'What industries in Spokane are best for vending machines?',
+    q: 'What industries in Spokane are best for vending machines?\',
     a: 'Healthcare facilities, educational institutions, manufacturing plants, retail locations, and office buildings in Spokane show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
   },
   {
-    q: 'How do you verify the quality of Spokane vending locations?',
+    q: 'How do you verify the quality of Spokane vending locations?\',
     a: 'We conduct thorough research on each Spokane location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
   },
   {
-    q: 'Can I get customized vending leads for specific areas of Spokane?',
+    q: 'Can I get customized vending leads for specific areas of Spokane?\',
     a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or campus areas within Spokane including downtown, university area, and medical district based on your preferences and target market requirements.'
   },
   {
-    q: 'What's the typical ROI for vending machines in Spokane?',
-    a: 'Vending machines in Spokane typically show strong ROI due to the city's business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+    q: 'What\'s the typical ROI for vending machines in Spokane?',
+    a: 'Vending machines in Spokane typically show strong ROI due to the city\'s business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
   }
 ];
 

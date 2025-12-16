@@ -85,36 +85,36 @@ export default function WestCovinaCaliforniaVendingLeadsPage() {
   // FAQ items reused for JSON-LD
   const faqItems = [
   {
-    q: 'What types of vending machine locations are available in West Covina?',
+    q: 'What types of vending machine locations are available in West Covina?\',
     a: 'West Covina offers diverse vending opportunities including healthcare facilities, educational institutions, retail locations, office buildings, and manufacturing facilities. Each location is pre-verified for optimal vending machine success.'
   },
   {
-    q: 'How quickly can I get vending machine leads for West Covina?',
+    q: 'How quickly can I get vending machine leads for West Covina?\',
     a: 'Our West Covina vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
   },
   {
-    q: 'What makes West Covina a good market for vending machines?',
-    a: 'West Covina features a thriving business community with diverse industries and strong economic activity. The city's business density and diverse demographics create ideal conditions for vending machine success.'
+    q: 'What makes West Covina a good market for vending machines?\',
+    a: 'West Covina features a thriving business community with diverse industries and strong economic activity. The city\'s business density and diverse demographics create ideal conditions for vending machine success.'
   },
   {
-    q: 'Do you provide ongoing support for West Covina locations?',
+    q: 'Do you provide ongoing support for West Covina locations?\',
     a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in West Covina.'
   },
   {
-    q: 'What industries in West Covina are best for vending machines?',
+    q: 'What industries in West Covina are best for vending machines?\',
     a: 'Healthcare, education, retail, office buildings, and manufacturing in West Covina show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
   },
   {
-    q: 'How do you verify the quality of West Covina vending locations?',
+    q: 'How do you verify the quality of West Covina vending locations?\',
     a: 'We conduct thorough research on each West Covina location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
   },
   {
-    q: 'Can I get customized vending leads for specific areas of West Covina?',
+    q: 'Can I get customized vending leads for specific areas of West Covina?\',
     a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within West Covina based on your preferences and target market requirements.'
   },
   {
-    q: 'What's the typical ROI for vending machines in West Covina?',
-    a: 'Vending machines in West Covina typically show strong ROI due to the city's business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+    q: 'What\'s the typical ROI for vending machines in West Covina?',
+    a: 'Vending machines in West Covina typically show strong ROI due to the city\'s business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
   }
 ];
 

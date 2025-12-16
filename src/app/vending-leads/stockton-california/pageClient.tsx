@@ -85,36 +85,36 @@ export default function StocktonCaliforniaVendingLeadsPage() {
   // FAQ items reused for JSON-LD
   const faqItems = [
   {
-    q: 'What types of vending machine locations are available in Stockton?',
+    q: 'What types of vending machine locations are available in Stockton?\',
     a: 'Stockton offers diverse vending opportunities including port facilities, agricultural businesses, logistics centers, healthcare facilities, educational institutions, and retail locations. Each location is pre-verified for optimal vending machine success.'
   },
   {
-    q: 'How quickly can I get vending machine leads for Stockton?',
+    q: 'How quickly can I get vending machine leads for Stockton?\',
     a: 'Our Stockton vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
   },
   {
-    q: 'What makes Stockton a good market for vending machines?',
-    a: 'Stockton features a thriving business community with diverse industries including agriculture, logistics, and healthcare. The city's business density and port location create ideal conditions for vending machine success.'
+    q: 'What makes Stockton a good market for vending machines?\',
+    a: 'Stockton features a thriving business community with diverse industries including agriculture, logistics, and healthcare. The city\'s business density and port location create ideal conditions for vending machine success.'
   },
   {
-    q: 'Do you provide ongoing support for Stockton locations?',
+    q: 'Do you provide ongoing support for Stockton locations?\',
     a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Stockton.'
   },
   {
-    q: 'What industries in Stockton are best for vending machines?',
+    q: 'What industries in Stockton are best for vending machines?\',
     a: 'Port facilities, agricultural businesses, logistics centers, healthcare facilities, and educational institutions in Stockton show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
   },
   {
-    q: 'How do you verify the quality of Stockton vending locations?',
+    q: 'How do you verify the quality of Stockton vending locations?\',
     a: 'We conduct thorough research on each Stockton location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
   },
   {
-    q: 'Can I get customized vending leads for specific areas of Stockton?',
+    q: 'Can I get customized vending leads for specific areas of Stockton?\',
     a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Stockton including downtown, port area, and university district based on your preferences and target market requirements.'
   },
   {
-    q: 'What's the typical ROI for vending machines in Stockton?',
-    a: 'Vending machines in Stockton typically show strong ROI due to the city's business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+    q: 'What\'s the typical ROI for vending machines in Stockton?',
+    a: 'Vending machines in Stockton typically show strong ROI due to the city\'s business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
   }
 ];
 

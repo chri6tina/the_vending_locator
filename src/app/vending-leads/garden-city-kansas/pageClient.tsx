@@ -85,36 +85,36 @@ export default function GardenCityKansasVendingLeadsPage() {
   // FAQ items reused for JSON-LD
   const faqItems = [
   {
-    q: 'What types of vending machine locations are available in Garden City?',
+    q: 'What types of vending machine locations are available in Garden City?\',
     a: 'Garden City offers diverse vending opportunities including healthcare facilities, educational institutions, retail locations, office buildings, and manufacturing facilities. Each location is pre-verified for optimal vending machine success.'
   },
   {
-    q: 'How quickly can I get vending machine leads for Garden City?',
+    q: 'How quickly can I get vending machine leads for Garden City?\',
     a: 'Our Garden City vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
   },
   {
-    q: 'What makes Garden City a good market for vending machines?',
-    a: 'Garden City features a thriving business community with diverse industries and strong economic activity. The city's business density and diverse demographics create ideal conditions for vending machine success.'
+    q: 'What makes Garden City a good market for vending machines?\',
+    a: 'Garden City features a thriving business community with diverse industries and strong economic activity. The city\'s business density and diverse demographics create ideal conditions for vending machine success.'
   },
   {
-    q: 'Do you provide ongoing support for Garden City locations?',
+    q: 'Do you provide ongoing support for Garden City locations?\',
     a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Garden City.'
   },
   {
-    q: 'What industries in Garden City are best for vending machines?',
+    q: 'What industries in Garden City are best for vending machines?\',
     a: 'Healthcare, education, retail, office buildings, and manufacturing in Garden City show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
   },
   {
-    q: 'How do you verify the quality of Garden City vending locations?',
+    q: 'How do you verify the quality of Garden City vending locations?\',
     a: 'We conduct thorough research on each Garden City location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
   },
   {
-    q: 'Can I get customized vending leads for specific areas of Garden City?',
+    q: 'Can I get customized vending leads for specific areas of Garden City?\',
     a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Garden City based on your preferences and target market requirements.'
   },
   {
-    q: 'What's the typical ROI for vending machines in Garden City?',
-    a: 'Vending machines in Garden City typically show strong ROI due to the city's business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+    q: 'What\'s the typical ROI for vending machines in Garden City?',
+    a: 'Vending machines in Garden City typically show strong ROI due to the city\'s business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
   }
 ];
 

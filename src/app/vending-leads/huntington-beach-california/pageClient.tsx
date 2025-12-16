@@ -85,36 +85,36 @@ export default function HuntingtonBeachCaliforniaVendingLeadsPage() {
   // FAQ items reused for JSON-LD
   const faqItems = [
   {
-    q: 'What types of vending machine locations are available in Huntington Beach?',
+    q: 'What types of vending machine locations are available in Huntington Beach?\',
     a: 'Huntington Beach offers diverse vending opportunities including tourism businesses, aerospace companies, retail centers, healthcare facilities, educational institutions, and office buildings. Each location is pre-verified for optimal vending machine success.'
   },
   {
-    q: 'How quickly can I get vending machine leads for Huntington Beach?',
+    q: 'How quickly can I get vending machine leads for Huntington Beach?\',
     a: 'Our Huntington Beach vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
   },
   {
-    q: 'What makes Huntington Beach a good market for vending machines?',
-    a: 'Huntington Beach features a thriving business community with diverse industries including tourism, aerospace, and retail. The city's business density and beach location create ideal conditions for vending machine success.'
+    q: 'What makes Huntington Beach a good market for vending machines?\',
+    a: 'Huntington Beach features a thriving business community with diverse industries including tourism, aerospace, and retail. The city\'s business density and beach location create ideal conditions for vending machine success.'
   },
   {
-    q: 'Do you provide ongoing support for Huntington Beach locations?',
+    q: 'Do you provide ongoing support for Huntington Beach locations?\',
     a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Huntington Beach.'
   },
   {
-    q: 'What industries in Huntington Beach are best for vending machines?',
+    q: 'What industries in Huntington Beach are best for vending machines?\',
     a: 'Tourism businesses, aerospace companies, retail centers, healthcare facilities, and educational institutions in Huntington Beach show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
   },
   {
-    q: 'How do you verify the quality of Huntington Beach vending locations?',
+    q: 'How do you verify the quality of Huntington Beach vending locations?\',
     a: 'We conduct thorough research on each Huntington Beach location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
   },
   {
-    q: 'Can I get customized vending leads for specific areas of Huntington Beach?',
+    q: 'Can I get customized vending leads for specific areas of Huntington Beach?\',
     a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or beach areas within Huntington Beach including downtown, beachfront, and business parks based on your preferences and target market requirements.'
   },
   {
-    q: 'What's the typical ROI for vending machines in Huntington Beach?',
-    a: 'Vending machines in Huntington Beach typically show strong ROI due to the city's business density and tourism economy. Our research shows average payback periods of 10-15 months for well-placed machines.'
+    q: 'What\'s the typical ROI for vending machines in Huntington Beach?',
+    a: 'Vending machines in Huntington Beach typically show strong ROI due to the city\'s business density and tourism economy. Our research shows average payback periods of 10-15 months for well-placed machines.'
   }
 ];
 

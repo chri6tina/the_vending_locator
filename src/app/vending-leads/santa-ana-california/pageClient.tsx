@@ -85,36 +85,36 @@ export default function SantaAnaCaliforniaVendingLeadsPage() {
   // FAQ items reused for JSON-LD
   const faqItems = [
   {
-    q: 'What types of vending machine locations are available in Santa Ana?',
+    q: 'What types of vending machine locations are available in Santa Ana?\',
     a: 'Santa Ana offers diverse vending opportunities including government facilities, healthcare centers, educational institutions, retail locations, office buildings, and manufacturing facilities. Each location is pre-verified for optimal vending machine success.'
   },
   {
-    q: 'How quickly can I get vending machine leads for Santa Ana?',
+    q: 'How quickly can I get vending machine leads for Santa Ana?\',
     a: 'Our Santa Ana vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
   },
   {
-    q: 'What makes Santa Ana a good market for vending machines?',
-    a: 'Santa Ana features a thriving business community with diverse industries including government, healthcare, and retail. The city's business density and central Orange County location create ideal conditions for vending machine success.'
+    q: 'What makes Santa Ana a good market for vending machines?\',
+    a: 'Santa Ana features a thriving business community with diverse industries including government, healthcare, and retail. The city\'s business density and central Orange County location create ideal conditions for vending machine success.'
   },
   {
-    q: 'Do you provide ongoing support for Santa Ana locations?',
+    q: 'Do you provide ongoing support for Santa Ana locations?\',
     a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Santa Ana.'
   },
   {
-    q: 'What industries in Santa Ana are best for vending machines?',
+    q: 'What industries in Santa Ana are best for vending machines?\',
     a: 'Government facilities, healthcare centers, educational institutions, retail locations, and office buildings in Santa Ana show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
   },
   {
-    q: 'How do you verify the quality of Santa Ana vending locations?',
+    q: 'How do you verify the quality of Santa Ana vending locations?\',
     a: 'We conduct thorough research on each Santa Ana location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
   },
   {
-    q: 'Can I get customized vending leads for specific areas of Santa Ana?',
+    q: 'Can I get customized vending leads for specific areas of Santa Ana?\',
     a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Santa Ana including downtown, civic center, and retail corridors based on your preferences and target market requirements.'
   },
   {
-    q: 'What's the typical ROI for vending machines in Santa Ana?',
-    a: 'Vending machines in Santa Ana typically show strong ROI due to the city's business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+    q: 'What\'s the typical ROI for vending machines in Santa Ana?',
+    a: 'Vending machines in Santa Ana typically show strong ROI due to the city\'s business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
   }
 ];
 

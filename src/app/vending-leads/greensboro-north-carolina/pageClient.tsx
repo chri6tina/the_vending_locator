@@ -85,36 +85,36 @@ export default function GreensboroNorthCarolinaVendingLeadsPage() {
   // FAQ items reused for JSON-LD
   const faqItems = [
   {
-    q: 'What types of vending machine locations are available in Greensboro?',
+    q: 'What types of vending machine locations are available in Greensboro?\',
     a: 'Greensboro offers diverse vending opportunities including textile facilities, logistics centers, healthcare facilities, educational institutions, retail locations, and office buildings. Each location is pre-verified for optimal vending machine success.'
   },
   {
-    q: 'How quickly can I get vending machine leads for Greensboro?',
+    q: 'How quickly can I get vending machine leads for Greensboro?\',
     a: 'Our Greensboro vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
   },
   {
-    q: 'What makes Greensboro a good market for vending machines?',
-    a: 'Greensboro features a thriving business community with diverse industries including textiles, logistics, and healthcare. The city's business density and central location create ideal conditions for vending machine success.'
+    q: 'What makes Greensboro a good market for vending machines?\',
+    a: 'Greensboro features a thriving business community with diverse industries including textiles, logistics, and healthcare. The city\'s business density and central location create ideal conditions for vending machine success.'
   },
   {
-    q: 'Do you provide ongoing support for Greensboro locations?',
+    q: 'Do you provide ongoing support for Greensboro locations?\',
     a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Greensboro.'
   },
   {
-    q: 'What industries in Greensboro are best for vending machines?',
+    q: 'What industries in Greensboro are best for vending machines?\',
     a: 'Textile facilities, logistics centers, healthcare facilities, educational institutions, and office buildings in Greensboro show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
   },
   {
-    q: 'How do you verify the quality of Greensboro vending locations?',
+    q: 'How do you verify the quality of Greensboro vending locations?\',
     a: 'We conduct thorough research on each Greensboro location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
   },
   {
-    q: 'Can I get customized vending leads for specific areas of Greensboro?',
+    q: 'Can I get customized vending leads for specific areas of Greensboro?\',
     a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Greensboro including downtown, textile district, and university area based on your preferences and target market requirements.'
   },
   {
-    q: 'What's the typical ROI for vending machines in Greensboro?',
-    a: 'Vending machines in Greensboro typically show strong ROI due to the city's business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+    q: 'What\'s the typical ROI for vending machines in Greensboro?',
+    a: 'Vending machines in Greensboro typically show strong ROI due to the city\'s business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
   }
 ];
 

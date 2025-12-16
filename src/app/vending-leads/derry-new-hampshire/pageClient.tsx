@@ -80,14 +80,14 @@ export default function DerryNewHampshireVendingLeadsPage() {
 
   // FAQ items reused for JSON-LD
   const faqItems = [
-    { q: 'What types of vending machine locations are available in Derry?', a: 'Derry offers vending opportunities including retail centers, healthcare facilities, educational institutions, office buildings, and service businesses. Each location is pre-verified for optimal vending machine success.' },
-    { q: 'How quickly can I get vending machine leads for Derry?', a: 'Our Derry vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.' },
-    { q: 'What makes Derry a good market for vending machines?', a: 'Derry features a growing suburban community with increasing retail and service sectors. The town\'s family-oriented demographics create ideal conditions for vending machine success.' },
-    { q: 'Do you provide ongoing support for Derry locations?', a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Derry.' },
-    { q: 'What industries in Derry are best for vending machines?', a: 'Retail centers, healthcare facilities, educational institutions, and service businesses in Derry show the highest potential for vending machine success due to consistent customer traffic.' },
-    { q: 'How do you verify the quality of Derry vending locations?', a: 'We conduct thorough research on each Derry location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.' },
-    { q: 'Can I get customized vending leads for specific areas of Derry?', a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, retail districts, or commercial areas within Derry based on your preferences and target market requirements.' },
-    { q: 'What\'s the typical ROI for vending machines in Derry?', a: 'Vending machines in Derry typically show strong ROI due to growing retail activity and suburban development. Our research shows average payback periods of 12-18 months for well-placed machines.' }
+    { q: 'What types of vending machine locations are available in Derry?\', a: 'Derry offers vending opportunities including retail centers, healthcare facilities, educational institutions, office buildings, and service businesses. Each location is pre-verified for optimal vending machine success.' },
+    { q: 'How quickly can I get vending machine leads for Derry?\', a: 'Our Derry vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.' },
+    { q: 'What makes Derry a good market for vending machines?\', a: 'Derry features a growing suburban community with increasing retail and service sectors. The town\'s family-oriented demographics create ideal conditions for vending machine success.' },
+    { q: 'Do you provide ongoing support for Derry locations?\', a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Derry.' },
+    { q: 'What industries in Derry are best for vending machines?\', a: 'Retail centers, healthcare facilities, educational institutions, and service businesses in Derry show the highest potential for vending machine success due to consistent customer traffic.' },
+    { q: 'How do you verify the quality of Derry vending locations?\', a: 'We conduct thorough research on each Derry location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.' },
+    { q: 'Can I get customized vending leads for specific areas of Derry?\', a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, retail districts, or commercial areas within Derry based on your preferences and target market requirements.' },
+    { q: 'What\'s the typical ROI for vending machines in Derry?', a: 'Vending machines in Derry typically show strong ROI due to growing retail activity and suburban development. Our research shows average payback periods of 12-18 months for well-placed machines.\' }
   ]
 
   return (

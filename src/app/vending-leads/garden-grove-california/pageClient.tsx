@@ -85,36 +85,36 @@ export default function GardenGroveCaliforniaVendingLeadsPage() {
   // FAQ items reused for JSON-LD
   const faqItems = [
   {
-    q: 'What types of vending machine locations are available in Garden Grove?',
+    q: 'What types of vending machine locations are available in Garden Grove?\',
     a: 'Garden Grove offers diverse vending opportunities including retail centers, healthcare facilities, manufacturing plants, educational institutions, office buildings, and entertainment venues. Each location is pre-verified for optimal vending machine success.'
   },
   {
-    q: 'How quickly can I get vending machine leads for Garden Grove?',
+    q: 'How quickly can I get vending machine leads for Garden Grove?\',
     a: 'Our Garden Grove vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
   },
   {
-    q: 'What makes Garden Grove a good market for vending machines?',
-    a: 'Garden Grove features a thriving business community with diverse industries including retail, healthcare, and manufacturing. The city's business density and Orange County location create ideal conditions for vending machine success.'
+    q: 'What makes Garden Grove a good market for vending machines?\',
+    a: 'Garden Grove features a thriving business community with diverse industries including retail, healthcare, and manufacturing. The city\'s business density and Orange County location create ideal conditions for vending machine success.'
   },
   {
-    q: 'Do you provide ongoing support for Garden Grove locations?',
+    q: 'Do you provide ongoing support for Garden Grove locations?\',
     a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Garden Grove.'
   },
   {
-    q: 'What industries in Garden Grove are best for vending machines?',
+    q: 'What industries in Garden Grove are best for vending machines?\',
     a: 'Retail centers, healthcare facilities, manufacturing plants, educational institutions, and office buildings in Garden Grove show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
   },
   {
-    q: 'How do you verify the quality of Garden Grove vending locations?',
+    q: 'How do you verify the quality of Garden Grove vending locations?\',
     a: 'We conduct thorough research on each Garden Grove location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
   },
   {
-    q: 'Can I get customized vending leads for specific areas of Garden Grove?',
+    q: 'Can I get customized vending leads for specific areas of Garden Grove?\',
     a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or retail areas within Garden Grove including downtown, retail corridors, and industrial parks based on your preferences and target market requirements.'
   },
   {
-    q: 'What's the typical ROI for vending machines in Garden Grove?',
-    a: 'Vending machines in Garden Grove typically show strong ROI due to the city's business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+    q: 'What\'s the typical ROI for vending machines in Garden Grove?',
+    a: 'Vending machines in Garden Grove typically show strong ROI due to the city\'s business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
   }
 ];
 

@@ -85,36 +85,36 @@ export default function CarsonCaliforniaVendingLeadsPage() {
   // FAQ items reused for JSON-LD
   const faqItems = [
   {
-    q: 'What types of vending machine locations are available in Carson?',
+    q: 'What types of vending machine locations are available in Carson?\',
     a: 'Carson offers diverse vending opportunities including healthcare facilities, educational institutions, retail locations, office buildings, and manufacturing facilities. Each location is pre-verified for optimal vending machine success.'
   },
   {
-    q: 'How quickly can I get vending machine leads for Carson?',
+    q: 'How quickly can I get vending machine leads for Carson?\',
     a: 'Our Carson vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
   },
   {
-    q: 'What makes Carson a good market for vending machines?',
-    a: 'Carson features a thriving business community with diverse industries and strong economic activity. The city's business density and diverse demographics create ideal conditions for vending machine success.'
+    q: 'What makes Carson a good market for vending machines?\',
+    a: 'Carson features a thriving business community with diverse industries and strong economic activity. The city\'s business density and diverse demographics create ideal conditions for vending machine success.'
   },
   {
-    q: 'Do you provide ongoing support for Carson locations?',
+    q: 'Do you provide ongoing support for Carson locations?\',
     a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Carson.'
   },
   {
-    q: 'What industries in Carson are best for vending machines?',
+    q: 'What industries in Carson are best for vending machines?\',
     a: 'Healthcare, education, retail, office buildings, and manufacturing in Carson show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
   },
   {
-    q: 'How do you verify the quality of Carson vending locations?',
+    q: 'How do you verify the quality of Carson vending locations?\',
     a: 'We conduct thorough research on each Carson location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
   },
   {
-    q: 'Can I get customized vending leads for specific areas of Carson?',
+    q: 'Can I get customized vending leads for specific areas of Carson?\',
     a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Carson based on your preferences and target market requirements.'
   },
   {
-    q: 'What's the typical ROI for vending machines in Carson?',
-    a: 'Vending machines in Carson typically show strong ROI due to the city's business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+    q: 'What\'s the typical ROI for vending machines in Carson?',
+    a: 'Vending machines in Carson typically show strong ROI due to the city\'s business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
   }
 ];
 

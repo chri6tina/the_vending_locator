@@ -85,36 +85,36 @@ export default function BatonRougeLouisianaVendingLeadsPage() {
   // FAQ items reused for JSON-LD
   const faqItems = [
   {
-    q: 'What types of vending machine locations are available in Baton Rouge?',
+    q: 'What types of vending machine locations are available in Baton Rouge?\',
     a: 'Baton Rouge offers diverse vending opportunities including petrochemical facilities, government offices, educational institutions, healthcare centers, retail locations, and office buildings. Each location is pre-verified for optimal vending machine success.'
   },
   {
-    q: 'How quickly can I get vending machine leads for Baton Rouge?',
+    q: 'How quickly can I get vending machine leads for Baton Rouge?\',
     a: 'Our Baton Rouge vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
   },
   {
-    q: 'What makes Baton Rouge a good market for vending machines?',
-    a: 'Baton Rouge features a thriving business community with diverse industries including petrochemical, government, and education. The city's business density and state capital status create ideal conditions for vending machine success.'
+    q: 'What makes Baton Rouge a good market for vending machines?\',
+    a: 'Baton Rouge features a thriving business community with diverse industries including petrochemical, government, and education. The city\'s business density and state capital status create ideal conditions for vending machine success.'
   },
   {
-    q: 'Do you provide ongoing support for Baton Rouge locations?',
+    q: 'Do you provide ongoing support for Baton Rouge locations?\',
     a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Baton Rouge.'
   },
   {
-    q: 'What industries in Baton Rouge are best for vending machines?',
+    q: 'What industries in Baton Rouge are best for vending machines?\',
     a: 'Petrochemical facilities, government offices, educational institutions, healthcare centers, and office buildings in Baton Rouge show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
   },
   {
-    q: 'How do you verify the quality of Baton Rouge vending locations?',
+    q: 'How do you verify the quality of Baton Rouge vending locations?\',
     a: 'We conduct thorough research on each Baton Rouge location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
   },
   {
-    q: 'Can I get customized vending leads for specific areas of Baton Rouge?',
+    q: 'Can I get customized vending leads for specific areas of Baton Rouge?\',
     a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Baton Rouge including downtown, LSU area, and petrochemical corridor based on your preferences and target market requirements.'
   },
   {
-    q: 'What's the typical ROI for vending machines in Baton Rouge?',
-    a: 'Vending machines in Baton Rouge typically show strong ROI due to the city's business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+    q: 'What\'s the typical ROI for vending machines in Baton Rouge?',
+    a: 'Vending machines in Baton Rouge typically show strong ROI due to the city\'s business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
   }
 ];
 

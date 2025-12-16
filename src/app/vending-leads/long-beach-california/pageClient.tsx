@@ -85,36 +85,36 @@ export default function LongBeachCaliforniaVendingLeadsPage() {
   // FAQ items reused for JSON-LD
   const faqItems = [
   {
-    q: 'What types of vending machine locations are available in Long Beach?',
+    q: 'What types of vending machine locations are available in Long Beach?\',
     a: 'Long Beach offers diverse vending opportunities including port facilities, aerospace companies, healthcare centers, educational institutions, retail locations, and office buildings. Each location is pre-verified for optimal vending machine success.'
   },
   {
-    q: 'How quickly can I get vending machine leads for Long Beach?',
+    q: 'How quickly can I get vending machine leads for Long Beach?\',
     a: 'Our Long Beach vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
   },
   {
-    q: 'What makes Long Beach a good market for vending machines?',
-    a: 'Long Beach features a thriving business community with diverse industries including port operations, aerospace, and tourism. The city's business density and coastal location create ideal conditions for vending machine success.'
+    q: 'What makes Long Beach a good market for vending machines?\',
+    a: 'Long Beach features a thriving business community with diverse industries including port operations, aerospace, and tourism. The city\'s business density and coastal location create ideal conditions for vending machine success.'
   },
   {
-    q: 'Do you provide ongoing support for Long Beach locations?',
+    q: 'Do you provide ongoing support for Long Beach locations?\',
     a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Long Beach.'
   },
   {
-    q: 'What industries in Long Beach are best for vending machines?',
+    q: 'What industries in Long Beach are best for vending machines?\',
     a: 'Port facilities, aerospace companies, healthcare centers, educational institutions, and office buildings in Long Beach show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
   },
   {
-    q: 'How do you verify the quality of Long Beach vending locations?',
+    q: 'How do you verify the quality of Long Beach vending locations?\',
     a: 'We conduct thorough research on each Long Beach location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
   },
   {
-    q: 'Can I get customized vending leads for specific areas of Long Beach?',
+    q: 'Can I get customized vending leads for specific areas of Long Beach?\',
     a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Long Beach including downtown, the port area, and aerospace corridors based on your preferences and target market requirements.'
   },
   {
-    q: 'What's the typical ROI for vending machines in Long Beach?',
-    a: 'Vending machines in Long Beach typically show strong ROI due to the city's business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+    q: 'What\'s the typical ROI for vending machines in Long Beach?',
+    a: 'Vending machines in Long Beach typically show strong ROI due to the city\'s business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
   }
 ];
 

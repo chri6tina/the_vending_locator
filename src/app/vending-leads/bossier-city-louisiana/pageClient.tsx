@@ -85,36 +85,36 @@ export default function BossierCityLouisianaVendingLeadsPage() {
   // FAQ items reused for JSON-LD
   const faqItems = [
   {
-    q: 'What types of vending machine locations are available in Bossier City?',
+    q: 'What types of vending machine locations are available in Bossier City?\',
     a: 'Bossier City offers diverse vending opportunities including gaming facilities, military installations, retail centers, healthcare facilities, educational institutions, and office buildings. Each location is pre-verified for optimal vending machine success.'
   },
   {
-    q: 'How quickly can I get vending machine leads for Bossier City?',
+    q: 'How quickly can I get vending machine leads for Bossier City?\',
     a: 'Our Bossier City vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
   },
   {
-    q: 'What makes Bossier City a good market for vending machines?',
-    a: 'Bossier City features a thriving business community with diverse industries including gaming, military, and retail. The city's business density and entertainment sector create ideal conditions for vending machine success.'
+    q: 'What makes Bossier City a good market for vending machines?\',
+    a: 'Bossier City features a thriving business community with diverse industries including gaming, military, and retail. The city\'s business density and entertainment sector create ideal conditions for vending machine success.'
   },
   {
-    q: 'Do you provide ongoing support for Bossier City locations?',
+    q: 'Do you provide ongoing support for Bossier City locations?\',
     a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Bossier City.'
   },
   {
-    q: 'What industries in Bossier City are best for vending machines?',
+    q: 'What industries in Bossier City are best for vending machines?\',
     a: 'Gaming facilities, military installations, retail centers, healthcare facilities, and educational institutions in Bossier City show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
   },
   {
-    q: 'How do you verify the quality of Bossier City vending locations?',
+    q: 'How do you verify the quality of Bossier City vending locations?\',
     a: 'We conduct thorough research on each Bossier City location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
   },
   {
-    q: 'Can I get customized vending leads for specific areas of Bossier City?',
+    q: 'Can I get customized vending leads for specific areas of Bossier City?\',
     a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or entertainment areas within Bossier City including casino district, military base area, and retail corridors based on your preferences and target market requirements.'
   },
   {
-    q: 'What's the typical ROI for vending machines in Bossier City?',
-    a: 'Vending machines in Bossier City typically show strong ROI due to the city's business density and entertainment economy. Our research shows average payback periods of 10-15 months for well-placed machines.'
+    q: 'What\'s the typical ROI for vending machines in Bossier City?',
+    a: 'Vending machines in Bossier City typically show strong ROI due to the city\'s business density and entertainment economy. Our research shows average payback periods of 10-15 months for well-placed machines.'
   }
 ];
 

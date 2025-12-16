@@ -85,36 +85,36 @@ export default function NewportNewsVirginiaVendingLeadsPage() {
   // FAQ items reused for JSON-LD
   const faqItems = [
   {
-    q: 'What types of vending machine locations are available in Newport News?',
+    q: 'What types of vending machine locations are available in Newport News?\',
     a: 'Newport News offers diverse vending opportunities including shipbuilding facilities, military installations, aerospace companies, healthcare centers, educational institutions, and retail locations. Each location is pre-verified for optimal vending machine success.'
   },
   {
-    q: 'How quickly can I get vending machine leads for Newport News?',
+    q: 'How quickly can I get vending machine leads for Newport News?\',
     a: 'Our Newport News vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
   },
   {
-    q: 'What makes Newport News a good market for vending machines?',
-    a: 'Newport News features a thriving business community with diverse industries including shipbuilding, military, and aerospace. The city's business density and industrial base create ideal conditions for vending machine success.'
+    q: 'What makes Newport News a good market for vending machines?\',
+    a: 'Newport News features a thriving business community with diverse industries including shipbuilding, military, and aerospace. The city\'s business density and industrial base create ideal conditions for vending machine success.'
   },
   {
-    q: 'Do you provide ongoing support for Newport News locations?',
+    q: 'Do you provide ongoing support for Newport News locations?\',
     a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Newport News.'
   },
   {
-    q: 'What industries in Newport News are best for vending machines?',
+    q: 'What industries in Newport News are best for vending machines?\',
     a: 'Shipbuilding facilities, military installations, aerospace companies, healthcare centers, and educational institutions in Newport News show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
   },
   {
-    q: 'How do you verify the quality of Newport News vending locations?',
+    q: 'How do you verify the quality of Newport News vending locations?\',
     a: 'We conduct thorough research on each Newport News location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
   },
   {
-    q: 'Can I get customized vending leads for specific areas of Newport News?',
+    q: 'Can I get customized vending leads for specific areas of Newport News?\',
     a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Newport News including shipyard area, military base vicinity, and retail corridors based on your preferences and target market requirements.'
   },
   {
-    q: 'What's the typical ROI for vending machines in Newport News?',
-    a: 'Vending machines in Newport News typically show strong ROI due to the city's business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+    q: 'What\'s the typical ROI for vending machines in Newport News?',
+    a: 'Vending machines in Newport News typically show strong ROI due to the city\'s business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
   }
 ];
 

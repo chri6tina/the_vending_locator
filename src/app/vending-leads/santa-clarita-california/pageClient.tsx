@@ -85,36 +85,36 @@ export default function SantaClaritaCaliforniaVendingLeadsPage() {
   // FAQ items reused for JSON-LD
   const faqItems = [
   {
-    q: 'What types of vending machine locations are available in Santa Clarita?',
+    q: 'What types of vending machine locations are available in Santa Clarita?\',
     a: 'Santa Clarita offers diverse vending opportunities including entertainment businesses, aerospace companies, retail centers, healthcare facilities, educational institutions, and office buildings. Each location is pre-verified for optimal vending machine success.'
   },
   {
-    q: 'How quickly can I get vending machine leads for Santa Clarita?',
+    q: 'How quickly can I get vending machine leads for Santa Clarita?\',
     a: 'Our Santa Clarita vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
   },
   {
-    q: 'What makes Santa Clarita a good market for vending machines?',
-    a: 'Santa Clarita features a thriving business community with diverse industries including entertainment, aerospace, and retail. The city's business density and Los Angeles metro location create ideal conditions for vending machine success.'
+    q: 'What makes Santa Clarita a good market for vending machines?\',
+    a: 'Santa Clarita features a thriving business community with diverse industries including entertainment, aerospace, and retail. The city\'s business density and Los Angeles metro location create ideal conditions for vending machine success.'
   },
   {
-    q: 'Do you provide ongoing support for Santa Clarita locations?',
+    q: 'Do you provide ongoing support for Santa Clarita locations?\',
     a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Santa Clarita.'
   },
   {
-    q: 'What industries in Santa Clarita are best for vending machines?',
+    q: 'What industries in Santa Clarita are best for vending machines?\',
     a: 'Entertainment businesses, aerospace companies, retail centers, healthcare facilities, and educational institutions in Santa Clarita show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
   },
   {
-    q: 'How do you verify the quality of Santa Clarita vending locations?',
+    q: 'How do you verify the quality of Santa Clarita vending locations?\',
     a: 'We conduct thorough research on each Santa Clarita location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
   },
   {
-    q: 'Can I get customized vending leads for specific areas of Santa Clarita?',
+    q: 'Can I get customized vending leads for specific areas of Santa Clarita?\',
     a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or entertainment areas within Santa Clarita including Valencia, Newhall, and business parks based on your preferences and target market requirements.'
   },
   {
-    q: 'What's the typical ROI for vending machines in Santa Clarita?',
-    a: 'Vending machines in Santa Clarita typically show strong ROI due to the city's business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+    q: 'What\'s the typical ROI for vending machines in Santa Clarita?',
+    a: 'Vending machines in Santa Clarita typically show strong ROI due to the city\'s business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
   }
 ];
 
