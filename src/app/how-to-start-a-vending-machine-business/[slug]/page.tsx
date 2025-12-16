@@ -18,7 +18,7 @@ const cityInfo: Record<string, {
 }> = {
   'anchorage-alaska': {
     permitNotes:
-      'Anchorage generally does not levy a broad sales tax; confirm any site-specific or product-specific taxes and follow county health guidance for food/beverage vending. Register your business with the State of Alaska and verify local licensing where machines are placed.\',
+      'Anchorage generally does not levy a broad sales tax; confirm any site-specific or product-specific taxes and follow county health guidance for food/beverage vending. Register your business with the State of Alaska and verify local licensing where machines are placed.',
     demandDrivers: [
       'Healthcare and clinics in the U‑Med District',
       'Logistics, aviation, and airport corridor traffic',
@@ -50,7 +50,7 @@ const cityInfo: Record<string, {
   ,
   'little-rock-arkansas': {
     permitNotes:
-      'Arkansas generally requires a sales and use tax permit through the Department of Finance & Administration (DFA). Register your business, collect tax where applicable, and verify any county health requirements for food and beverage vending in Little Rock.\',
+      'Arkansas generally requires a sales and use tax permit through the Department of Finance & Administration (DFA). Register your business, collect tax where applicable, and verify any county health requirements for food and beverage vending in Little Rock.',
     demandDrivers: [
       'State government buildings and downtown offices',
       'Healthcare campuses and clinics around UAMS',
@@ -81,7 +81,7 @@ const cityInfo: Record<string, {
   ,
   'billings-montana': {
     permitNotes:
-      'Montana has no statewide sales tax. Verify any local resort/option taxes and follow Yellowstone County and City of Billings health guidance for vending machines that sell food or beverages.\',
+      'Montana has no statewide sales tax. Verify any local resort/option taxes and follow Yellowstone County and City of Billings health guidance for vending machines that sell food or beverages.',
     demandDrivers: [
       'Healthcare campuses and clinics around Billings medical corridor',
       'Energy, logistics, and industrial sites along I‑90/I‑94',
@@ -111,7 +111,7 @@ const cityInfo: Record<string, {
   ,
   'fairbanks-alaska': {
     permitNotes:
-      'Alaska requires state business registration. Fairbanks has no broad sales tax; confirm any local option or site policies and follow borough health guidance for food vending.\',
+      'Alaska requires state business registration. Fairbanks has no broad sales tax; confirm any local option or site policies and follow borough health guidance for food vending.',
     demandDrivers: [
       'University of Alaska Fairbanks and adjacent housing',
       'Healthcare facilities and clinics',
@@ -128,7 +128,7 @@ const cityInfo: Record<string, {
   ,
   'juneau-alaska': {
     permitNotes:
-      'Register with the State of Alaska. Juneau (CBJ) may have local rules for food handling in public buildings—confirm with city/borough guidance.\',
+      'Register with the State of Alaska. Juneau (CBJ) may have local rules for food handling in public buildings—confirm with city/borough guidance.',
     demandDrivers: [
       'State government buildings and offices',
       'Tourism and cruise season sites',
@@ -144,7 +144,7 @@ const cityInfo: Record<string, {
   ,
   'fayetteville-arkansas': {
     permitNotes:
-      'Obtain an Arkansas sales and use tax permit (DFA) and verify city/county health requirements for food vending in Fayetteville.\',
+      'Obtain an Arkansas sales and use tax permit (DFA) and verify city/county health requirements for food vending in Fayetteville.',
     demandDrivers: [
       'University of Arkansas and student housing',
       'Healthcare campuses and medical offices',
@@ -160,7 +160,7 @@ const cityInfo: Record<string, {
   ,
   'missoula-montana': {
     permitNotes:
-      'Montana has no general statewide sales tax; confirm any local option taxes. Follow Missoula County health rules for food/beverage vending where applicable.\',
+      'Montana has no general statewide sales tax; confirm any local option taxes. Follow Missoula County health rules for food/beverage vending where applicable.',
     demandDrivers: [
       'University of Montana and nearby housing',
       'Healthcare systems and outpatient clinics',
@@ -176,7 +176,7 @@ const cityInfo: Record<string, {
   ,
   'wasilla-alaska': {
     permitNotes:
-      'Register your business with the State of Alaska. Confirm any Matanuska‑Susitna Borough health requirements for food vending and site policies for machine placement.\',
+      'Register your business with the State of Alaska. Confirm any Matanuska‑Susitna Borough health requirements for food vending and site policies for machine placement.',
     demandDrivers: [
       'Retail corridors and big-box stores',
       'Healthcare clinics and offices',
@@ -192,7 +192,7 @@ const cityInfo: Record<string, {
   ,
   'sitka-alaska': {
     permitNotes:
-      'State business registration is required. Check Sitka Borough and facility policies for food vending in public buildings and private sites.\',
+      'State business registration is required. Check Sitka Borough and facility policies for food vending in public buildings and private sites.',
     demandDrivers: [
       'Healthcare and city offices',
       'Tourism/harbor activity (seasonal)',
@@ -208,7 +208,7 @@ const cityInfo: Record<string, {
   ,
   'fort-smith-arkansas': {
     permitNotes:
-      'Obtain an Arkansas DFA sales and use tax permit and confirm Sebastian County/city health rules for food vending where applicable.\',
+      'Obtain an Arkansas DFA sales and use tax permit and confirm Sebastian County/city health rules for food vending where applicable.',
     demandDrivers: [
       'Manufacturing and logistics along I‑40/I‑540',
       'Healthcare facilities and clinics',
@@ -224,7 +224,7 @@ const cityInfo: Record<string, {
   ,
   'bozeman-montana': {
     permitNotes:
-      'No statewide sales tax in Montana. Confirm any local option taxes and Gallatin County health requirements for food vending.\',
+      'No statewide sales tax in Montana. Confirm any local option taxes and Gallatin County health requirements for food vending.',
     demandDrivers: [
       'Montana State University and student housing',
       'Tech/startup offices and co‑working spaces',
@@ -240,7 +240,7 @@ const cityInfo: Record<string, {
   ,
   'kenai-alaska': {
     permitNotes:
-      'Register with the State of Alaska and confirm Kenai Peninsula Borough health guidance for food vending. Check individual site policies for placement and power access.\',
+      'Register with the State of Alaska and confirm Kenai Peninsula Borough health guidance for food vending. Check individual site policies for placement and power access.',
     demandDrivers: [
       'Healthcare clinics and offices',
       'Energy and industrial sites',
@@ -256,7 +256,7 @@ const cityInfo: Record<string, {
   ,
   'ketchikan-alaska': {
     permitNotes:
-      'State business registration is required. Confirm Ketchikan Gateway Borough and facility policies for vending in public buildings and near docks.\',
+      'State business registration is required. Confirm Ketchikan Gateway Borough and facility policies for vending in public buildings and near docks.',
     demandDrivers: [
       'Cruise/tourism traffic (seasonal)',
       'Healthcare and city offices',
@@ -272,7 +272,7 @@ const cityInfo: Record<string, {
   ,
   'rogers-arkansas': {
     permitNotes:
-      'Obtain an Arkansas DFA sales and use tax permit and confirm Benton County/city rules for food vending.\',
+      'Obtain an Arkansas DFA sales and use tax permit and confirm Benton County/city rules for food vending.',
     demandDrivers: [
       'Corporate offices and suppliers (NWA hub)',
       'Retail corridors and gyms',
@@ -288,7 +288,7 @@ const cityInfo: Record<string, {
   ,
   'helena-montana': {
     permitNotes:
-      'No statewide sales tax in Montana. Confirm any local option taxes and Lewis & Clark County health rules for food vending.\',
+      'No statewide sales tax in Montana. Confirm any local option taxes and Lewis & Clark County health rules for food vending.',
     demandDrivers: [
       'State government buildings',
       'Healthcare campuses and clinics',
@@ -304,7 +304,7 @@ const cityInfo: Record<string, {
   ,
   'kodiak-alaska': {
     permitNotes:
-      'Register with the State of Alaska. Confirm borough and facility policies for vending in public buildings; coordinate with port/harbor management as needed.\',
+      'Register with the State of Alaska. Confirm borough and facility policies for vending in public buildings; coordinate with port/harbor management as needed.',
     demandDrivers: [
       'Harbor/port activity and seafood industry',
       'Healthcare and municipal buildings',
@@ -320,7 +320,7 @@ const cityInfo: Record<string, {
   ,
   'palmer-alaska': {
     permitNotes:
-      'State business registration is required. Confirm Matanuska‑Susitna Borough health guidance and site policies for vending.\',
+      'State business registration is required. Confirm Matanuska‑Susitna Borough health guidance and site policies for vending.',
     demandDrivers: [
       'Healthcare clinics, schools, and municipal buildings',
       'Retail and local offices'
@@ -335,7 +335,7 @@ const cityInfo: Record<string, {
   ,
   'bentonville-arkansas': {
     permitNotes:
-      'Obtain an Arkansas DFA sales and use tax permit and confirm Benton County and city requirements for food vending in private/public facilities.\',
+      'Obtain an Arkansas DFA sales and use tax permit and confirm Benton County and city requirements for food vending in private/public facilities.',
     demandDrivers: [
       'Corporate HQs and supplier offices',
       'Gyms and retail back‑of‑house areas',
@@ -351,7 +351,7 @@ const cityInfo: Record<string, {
   ,
   'great-falls-montana': {
     permitNotes:
-      'No statewide sales tax in Montana. Confirm any local option taxes and Cascade County health guidance for food vending.\',
+      'No statewide sales tax in Montana. Confirm any local option taxes and Cascade County health guidance for food vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Air Force base vicinity (access rules apply)',
@@ -367,7 +367,7 @@ const cityInfo: Record<string, {
   ,
   'homer-alaska': {
     permitNotes:
-      'Register with the State of Alaska. Check Kenai Peninsula Borough guidance and property policies for vending at marinas, clinics, and municipal buildings.\',
+      'Register with the State of Alaska. Check Kenai Peninsula Borough guidance and property policies for vending at marinas, clinics, and municipal buildings.',
     demandDrivers: [
       'Harbor/marina and tourism',
       'Clinics and municipal facilities',
@@ -383,7 +383,7 @@ const cityInfo: Record<string, {
   ,
   'soldotna-alaska': {
     permitNotes:
-      'Alaska business registration required. Confirm borough and property rules for food/beverage vending in indoor public spaces.\',
+      'Alaska business registration required. Confirm borough and property rules for food/beverage vending in indoor public spaces.',
     demandDrivers: [
       'Clinics and medical offices',
       'Retail and gyms',
@@ -399,7 +399,7 @@ const cityInfo: Record<string, {
   ,
   'conway-arkansas': {
     permitNotes:
-      'Apply for an Arkansas DFA sales/use tax permit and confirm city/county rules for food vending where applicable.\',
+      'Apply for an Arkansas DFA sales/use tax permit and confirm city/county rules for food vending where applicable.',
     demandDrivers: [
       'Universities (UCA, Hendrix)',
       'Healthcare campuses',
@@ -415,7 +415,7 @@ const cityInfo: Record<string, {
   ,
   'butte-montana': {
     permitNotes:
-      'Montana has no general statewide sales tax; verify local option taxes and Silver Bow County health rules for food vending.\',
+      'Montana has no general statewide sales tax; verify local option taxes and Silver Bow County health rules for food vending.',
     demandDrivers: [
       'Healthcare facilities and clinics',
       'Industrial/logistics sites',
@@ -431,7 +431,7 @@ const cityInfo: Record<string, {
   ,
   'springdale-arkansas': {
     permitNotes:
-      'Obtain an Arkansas DFA sales/use tax permit. Confirm city/county rules for food vending in private/public facilities.\',
+      'Obtain an Arkansas DFA sales/use tax permit. Confirm city/county rules for food vending in private/public facilities.',
     demandDrivers: [
       'Manufacturing and supplier facilities (NWA)',
       'Healthcare clinics',
@@ -447,7 +447,7 @@ const cityInfo: Record<string, {
   ,
   'jonesboro-arkansas': {
     permitNotes:
-      'Register for Arkansas sales/use tax (DFA) and confirm any Craighead County health rules for vending machines handling food/beverage.\',
+      'Register for Arkansas sales/use tax (DFA) and confirm any Craighead County health rules for vending machines handling food/beverage.',
     demandDrivers: [
       'Arkansas State University and housing',
       'Healthcare campuses and clinics',
@@ -463,7 +463,7 @@ const cityInfo: Record<string, {
   ,
   'north-little-rock-arkansas': {
     permitNotes:
-      'Apply for an Arkansas DFA sales/use tax permit; confirm Pulaski County and city policies for food vending where applicable.\',
+      'Apply for an Arkansas DFA sales/use tax permit; confirm Pulaski County and city policies for food vending where applicable.',
     demandDrivers: [
       'Logistics and industrial along I‑40',
       'Healthcare facilities and clinics',
@@ -479,7 +479,7 @@ const cityInfo: Record<string, {
   ,
   'pine-bluff-arkansas': {
     permitNotes:
-      'Arkansas DFA sales/use tax permit required. Verify Jefferson County health guidance for vending machines selling food/beverage.\',
+      'Arkansas DFA sales/use tax permit required. Verify Jefferson County health guidance for vending machines selling food/beverage.',
     demandDrivers: [
       'Healthcare campuses',
       'Manufacturing/logistics sites',
@@ -495,7 +495,7 @@ const cityInfo: Record<string, {
   ,
   'birmingham-alabama': {
     permitNotes:
-      'Alabama requires a state sales/use tax account. Register your business, collect/remit tax where applicable, and confirm county/city rules for food/beverage vending.\',
+      'Alabama requires a state sales/use tax account. Register your business, collect/remit tax where applicable, and confirm county/city rules for food/beverage vending.',
     demandDrivers: [
       'UAB Medical District and hospital campuses',
       'Downtown offices and multi-tenant buildings',
@@ -512,7 +512,7 @@ const cityInfo: Record<string, {
   ,
   'huntsville-alabama': {
     permitNotes:
-      'Register for Alabama sales/use tax and verify Madison County/city rules. Follow site policies for machines on secured campuses.\',
+      'Register for Alabama sales/use tax and verify Madison County/city rules. Follow site policies for machines on secured campuses.',
     demandDrivers: [
       'Cummings Research Park tech corridor',
       'Redstone Arsenal vicinity (access rules apply)',
@@ -529,7 +529,7 @@ const cityInfo: Record<string, {
   ,
   'mobile-alabama': {
     permitNotes:
-      'Obtain Alabama sales/use tax registration; confirm Mobile County/city rules and port/terminal policies for placements near the waterfront.\',
+      'Obtain Alabama sales/use tax registration; confirm Mobile County/city rules and port/terminal policies for placements near the waterfront.',
     demandDrivers: [
       'Port of Mobile and shipbuilding/logistics',
       'Healthcare campuses and clinics',
@@ -545,7 +545,7 @@ const cityInfo: Record<string, {
   ,
   'montgomery-alabama': {
     permitNotes:
-      'Register for Alabama sales/use tax and confirm Montgomery County/city rules. Follow procurement policies for government buildings.\',
+      'Register for Alabama sales/use tax and confirm Montgomery County/city rules. Follow procurement policies for government buildings.',
     demandDrivers: [
       'State government offices and agencies',
       'Maxwell–Gunter AFB vicinity (access rules apply)',
@@ -561,7 +561,7 @@ const cityInfo: Record<string, {
   ,
   'tuscaloosa-alabama': {
     permitNotes:
-      'Alabama sales/use tax account required; verify Tuscaloosa County/city rules and campus facility policies.\',
+      'Alabama sales/use tax account required; verify Tuscaloosa County/city rules and campus facility policies.',
     demandDrivers: [
       'University of Alabama and student housing',
       'Healthcare facilities and clinics',
@@ -577,7 +577,7 @@ const cityInfo: Record<string, {
   ,
   'auburn-alabama': {
     permitNotes:
-      'Register for Alabama sales/use tax and verify city/county rules; coordinate with campus facilities for placements near AU.\',
+      'Register for Alabama sales/use tax and verify city/county rules; coordinate with campus facilities for placements near AU.',
     demandDrivers: [
       'Auburn University and campus housing',
       'Clinics and medical offices',
@@ -593,7 +593,7 @@ const cityInfo: Record<string, {
   ,
   'dothan-alabama': {
     permitNotes:
-      'Alabama sales/use tax registration required; confirm Houston County/city guidance for food vending machines.\',
+      'Alabama sales/use tax registration required; confirm Houston County/city guidance for food vending machines.',
     demandDrivers: [
       'Healthcare hubs and clinics',
       'Distribution/agriculture processing',
@@ -609,7 +609,7 @@ const cityInfo: Record<string, {
   ,
   'hartford-connecticut': {
     permitNotes:
-      'Register for Connecticut sales/use tax (DRS) and confirm City of Hartford requirements for vending machines in public/private facilities.\',
+      'Register for Connecticut sales/use tax (DRS) and confirm City of Hartford requirements for vending machines in public/private facilities.',
     demandDrivers: [
       'State government and downtown offices',
       'Healthcare campuses and clinics',
@@ -625,7 +625,7 @@ const cityInfo: Record<string, {
   ,
   'stamford-connecticut': {
     permitNotes:
-      'CT DRS sales/use tax registration required; confirm City of Stamford policies and building management rules for machine placement.\',
+      'CT DRS sales/use tax registration required; confirm City of Stamford policies and building management rules for machine placement.',
     demandDrivers: [
       'Corporate HQs and commuter offices',
       'Downtown residential towers and gyms',
@@ -641,7 +641,7 @@ const cityInfo: Record<string, {
   ,
   'waterbury-connecticut': {
     permitNotes:
-      'Register with CT DRS for sales/use tax. Verify city and property rules for food/beverage vending in offices, clinics, and schools.\',
+      'Register with CT DRS for sales/use tax. Verify city and property rules for food/beverage vending in offices, clinics, and schools.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Education and municipal buildings',
@@ -657,7 +657,7 @@ const cityInfo: Record<string, {
   ,
   'norwalk-connecticut': {
     permitNotes:
-      'CT DRS sales/use tax registration required. Confirm City of Norwalk policies and building management rules for placements.\',
+      'CT DRS sales/use tax registration required. Confirm City of Norwalk policies and building management rules for placements.',
     demandDrivers: [
       'Commuter offices and media/tech firms',
       'Residential towers and gyms',
@@ -673,7 +673,7 @@ const cityInfo: Record<string, {
   ,
   'bridgeport-connecticut': {
     permitNotes:
-      'Register with CT DRS for sales/use tax. Confirm Bridgeport city policies and building rules for vending placements in offices, schools, and clinics.\',
+      'Register with CT DRS for sales/use tax. Confirm Bridgeport city policies and building rules for vending placements in offices, schools, and clinics.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and education buildings',
@@ -689,7 +689,7 @@ const cityInfo: Record<string, {
   ,
   'new-haven-connecticut': {
     permitNotes:
-      'CT DRS sales/use tax registration required. Follow city/property rules; Yale facilities and hospitals have specific placement processes.\',
+      'CT DRS sales/use tax registration required. Follow city/property rules; Yale facilities and hospitals have specific placement processes.',
     demandDrivers: [
       'Yale University and Yale New Haven Health',
       'Downtown offices and residential towers',
@@ -705,7 +705,7 @@ const cityInfo: Record<string, {
   ,
   'elizabeth-new-jersey': {
     permitNotes:
-      'Register with NJ Division of Taxation for sales/use tax. Confirm City of Elizabeth and property management rules for vending placements, especially near port facilities.\',
+      'Register with NJ Division of Taxation for sales/use tax. Confirm City of Elizabeth and property management rules for vending placements, especially near port facilities.',
     demandDrivers: [
       'Port Newark–Elizabeth logistics and warehouses',
       'Newark Airport vicinity workforce',
@@ -721,7 +721,7 @@ const cityInfo: Record<string, {
   ,
   'edison-new-jersey': {
     permitNotes:
-      'Obtain NJ sales/use tax registration. Confirm Middlesex County/City of Edison rules and individual building policies for vending machines.\',
+      'Obtain NJ sales/use tax registration. Confirm Middlesex County/City of Edison rules and individual building policies for vending machines.',
     demandDrivers: [
       'Raritan Center business park and industrial sites',
       'Healthcare campuses and outpatient clinics',
@@ -737,7 +737,7 @@ const cityInfo: Record<string, {
   ,
   'jersey-city-new-jersey': {
     permitNotes:
-      'NJ sales/use tax registration required. Follow City of Jersey City guidelines and building/HOA rules for lobby and office placements.\',
+      'NJ sales/use tax registration required. Follow City of Jersey City guidelines and building/HOA rules for lobby and office placements.',
     demandDrivers: [
       'Hudson waterfront offices (Exchange Place/Harborside)',
       'PATH commuter hubs and residential towers',
@@ -753,7 +753,7 @@ const cityInfo: Record<string, {
   ,
   'newark-new-jersey': {
     permitNotes:
-      'Register with NJ Division of Taxation. Confirm City of Newark rules and property approvals, especially for hospitals, university, and transit-adjacent sites.\',
+      'Register with NJ Division of Taxation. Confirm City of Newark rules and property approvals, especially for hospitals, university, and transit-adjacent sites.',
     demandDrivers: [
       'University Hospital and healthcare corridors',
       'NJIT/Rutgers Newark campuses',
@@ -769,7 +769,7 @@ const cityInfo: Record<string, {
   ,
   'paterson-new-jersey': {
     permitNotes:
-      'NJ sales/use tax registration required. Confirm City of Paterson and property rules for machines in clinics, schools, and industrial sites.\',
+      'NJ sales/use tax registration required. Confirm City of Paterson and property rules for machines in clinics, schools, and industrial sites.',
     demandDrivers: [
       'Healthcare and education buildings',
       'Industrial and distribution corridors',
@@ -785,7 +785,7 @@ const cityInfo: Record<string, {
   ,
   'woodbridge-new-jersey': {
     permitNotes:
-      'Register with NJ Division of Taxation. Follow Woodbridge Township policies and building rules, especially near Metropark offices.\',
+      'Register with NJ Division of Taxation. Follow Woodbridge Township policies and building rules, especially near Metropark offices.',
     demandDrivers: [
       'Metropark office complexes and commuters',
       'Healthcare clinics and fitness centers',
@@ -801,7 +801,7 @@ const cityInfo: Record<string, {
   ,
   'boston-massachusetts': {
     permitNotes:
-      'Register with MA DOR for sales/use tax. Follow City of Boston and building/HOA rules for vending machines in offices, campuses, and residential lobbies.\',
+      'Register with MA DOR for sales/use tax. Follow City of Boston and building/HOA rules for vending machines in offices, campuses, and residential lobbies.',
     demandDrivers: [
       'Hospital/biotech clusters (Longwood, Seaport, Kendall proximity)',
       'Downtown offices and universities',
@@ -817,7 +817,7 @@ const cityInfo: Record<string, {
   ,
   'worcester-massachusetts': {
     permitNotes:
-      'MA sales/use tax registration required. Confirm City of Worcester and property rules for vending in hospitals, schools, and office buildings.\',
+      'MA sales/use tax registration required. Confirm City of Worcester and property rules for vending in hospitals, schools, and office buildings.',
     demandDrivers: [
       'Healthcare campuses and colleges',
       'Downtown offices and municipal buildings',
@@ -833,7 +833,7 @@ const cityInfo: Record<string, {
   ,
   'springfield-massachusetts': {
     permitNotes:
-      'Register with MA DOR for sales/use tax. Verify city and property policies for machines in clinics, schools, and offices.\',
+      'Register with MA DOR for sales/use tax. Verify city and property policies for machines in clinics, schools, and offices.',
     demandDrivers: [
       'Healthcare and education hubs',
       'Downtown offices and municipal buildings',
@@ -849,7 +849,7 @@ const cityInfo: Record<string, {
   ,
   'cambridge-massachusetts': {
     permitNotes:
-      'MA sales/use tax registration required. Follow City of Cambridge and building/HOA rules; university and lab buildings have specific processes.\',
+      'MA sales/use tax registration required. Follow City of Cambridge and building/HOA rules; university and lab buildings have specific processes.',
     demandDrivers: [
       'Harvard/MIT campus and lab buildings',
       'Kendall Square tech/biotech offices',
@@ -865,7 +865,7 @@ const cityInfo: Record<string, {
   ,
   'fall-river-massachusetts': {
     permitNotes:
-      'Register with MA DOR for sales/use tax. Confirm City of Fall River and property rules for vending machines in clinics, schools, and offices.\',
+      'Register with MA DOR for sales/use tax. Confirm City of Fall River and property rules for vending machines in clinics, schools, and offices.',
     demandDrivers: [
       'Healthcare and municipal buildings',
       'Industrial and logistics corridors',
@@ -881,7 +881,7 @@ const cityInfo: Record<string, {
   ,
   'new-york-new-york': {
     permitNotes:
-      'Register with NYS Department of Taxation and Finance for sales tax. Follow NYC Department of Consumer and Worker Protection and building/HOA rules for vending in offices and residential lobbies.\',
+      'Register with NYS Department of Taxation and Finance for sales tax. Follow NYC Department of Consumer and Worker Protection and building/HOA rules for vending in offices and residential lobbies.',
     demandDrivers: [
       'Midtown/Downtown office towers and co‑working',
       'Hospital systems and university buildings',
@@ -897,7 +897,7 @@ const cityInfo: Record<string, {
   ,
   'buffalo-new-york': {
     permitNotes:
-      'NYS sales tax registration required. Confirm City of Buffalo/property policies for vending in hospitals, schools, and office buildings.\',
+      'NYS sales tax registration required. Confirm City of Buffalo/property policies for vending in hospitals, schools, and office buildings.',
     demandDrivers: [
       'Healthcare campuses and university facilities',
       'Downtown offices and municipal buildings',
@@ -913,7 +913,7 @@ const cityInfo: Record<string, {
   ,
   'rochester-new-york': {
     permitNotes:
-      'Register for NYS sales tax. Follow city/property rules for vending in medical, university, and office buildings.\',
+      'Register for NYS sales tax. Follow city/property rules for vending in medical, university, and office buildings.',
     demandDrivers: [
       'University of Rochester/RIT and medical centers',
       'Downtown offices and municipal buildings',
@@ -929,7 +929,7 @@ const cityInfo: Record<string, {
   ,
   'albany-new-york': {
     permitNotes:
-      'NYS sales tax registration required. Confirm State/City building policies for vending in government offices, hospitals, and campuses.\',
+      'NYS sales tax registration required. Confirm State/City building policies for vending in government offices, hospitals, and campuses.',
     demandDrivers: [
       'State government complexes',
       'Healthcare campuses and colleges',
@@ -945,7 +945,7 @@ const cityInfo: Record<string, {
   ,
   'syracuse-new-york': {
     permitNotes:
-      'Register with NYS for sales tax. Follow city/property rules for medical, university, and office placements.\',
+      'Register with NYS for sales tax. Follow city/property rules for medical, university, and office placements.',
     demandDrivers: [
       'Syracuse University and hospital systems',
       'Downtown offices and municipal buildings',
@@ -961,7 +961,7 @@ const cityInfo: Record<string, {
 ,
   'decatur-alabama': {
     permitNotes:
-      'Alabama requires a state sales/use tax account. Register your business, collect/remit tax where applicable, and confirm county/city rules for food/beverage vending.\',
+      'Alabama requires a state sales/use tax account. Register your business, collect/remit tax where applicable, and confirm county/city rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -991,7 +991,7 @@ const cityInfo: Record<string, {
   },
   'gadsden-alabama': {
     permitNotes:
-      'Alabama requires a state sales/use tax account. Register your business, collect/remit tax where applicable, and confirm county/city rules for food/beverage vending.\',
+      'Alabama requires a state sales/use tax account. Register your business, collect/remit tax where applicable, and confirm county/city rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -1021,7 +1021,7 @@ const cityInfo: Record<string, {
   },
   'hoover-alabama': {
     permitNotes:
-      'Alabama requires a state sales/use tax account. Register your business, collect/remit tax where applicable, and confirm county/city rules for food/beverage vending.\',
+      'Alabama requires a state sales/use tax account. Register your business, collect/remit tax where applicable, and confirm county/city rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -1051,7 +1051,7 @@ const cityInfo: Record<string, {
   },
   'prattville-alabama': {
     permitNotes:
-      'Alabama requires a state sales/use tax account. Register your business, collect/remit tax where applicable, and confirm county/city rules for food/beverage vending.\',
+      'Alabama requires a state sales/use tax account. Register your business, collect/remit tax where applicable, and confirm county/city rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -1081,7 +1081,7 @@ const cityInfo: Record<string, {
   },
   'opelika-alabama': {
     permitNotes:
-      'Alabama requires a state sales/use tax account. Register your business, collect/remit tax where applicable, and confirm county/city rules for food/beverage vending.\',
+      'Alabama requires a state sales/use tax account. Register your business, collect/remit tax where applicable, and confirm county/city rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -1111,7 +1111,7 @@ const cityInfo: Record<string, {
   },
   'bessemer-alabama': {
     permitNotes:
-      'Alabama requires a state sales/use tax account. Register your business, collect/remit tax where applicable, and confirm county/city rules for food/beverage vending.\',
+      'Alabama requires a state sales/use tax account. Register your business, collect/remit tax where applicable, and confirm county/city rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -1141,7 +1141,7 @@ const cityInfo: Record<string, {
   },
   'prichard-alabama': {
     permitNotes:
-      'Alabama requires a state sales/use tax account. Register your business, collect/remit tax where applicable, and confirm county/city rules for food/beverage vending.\',
+      'Alabama requires a state sales/use tax account. Register your business, collect/remit tax where applicable, and confirm county/city rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -1171,7 +1171,7 @@ const cityInfo: Record<string, {
   },
   'avondale-arizona': {
     permitNotes:
-      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.\',
+      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -1201,7 +1201,7 @@ const cityInfo: Record<string, {
   },
   'buckeye-arizona': {
     permitNotes:
-      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.\',
+      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -1231,7 +1231,7 @@ const cityInfo: Record<string, {
   },
   'casa-grande-arizona': {
     permitNotes:
-      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.\',
+      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -1261,7 +1261,7 @@ const cityInfo: Record<string, {
   },
   'chandler-arizona': {
     permitNotes:
-      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.\',
+      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -1291,7 +1291,7 @@ const cityInfo: Record<string, {
   },
   'gilbert-arizona': {
     permitNotes:
-      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.\',
+      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -1321,7 +1321,7 @@ const cityInfo: Record<string, {
   },
   'glendale-arizona': {
     permitNotes:
-      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.\',
+      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -1351,7 +1351,7 @@ const cityInfo: Record<string, {
   },
   'goodyear-arizona': {
     permitNotes:
-      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.\',
+      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -1381,7 +1381,7 @@ const cityInfo: Record<string, {
   },
   'maricopa-arizona': {
     permitNotes:
-      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.\',
+      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -1411,7 +1411,7 @@ const cityInfo: Record<string, {
   },
   'mesa-arizona': {
     permitNotes:
-      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.\',
+      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -1441,7 +1441,7 @@ const cityInfo: Record<string, {
   },
   'peoria-arizona': {
     permitNotes:
-      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.\',
+      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -1471,7 +1471,7 @@ const cityInfo: Record<string, {
   },
   'phoenix-arizona': {
     permitNotes:
-      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.\',
+      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -1501,7 +1501,7 @@ const cityInfo: Record<string, {
   },
   'prescott-arizona': {
     permitNotes:
-      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.\',
+      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -1531,7 +1531,7 @@ const cityInfo: Record<string, {
   },
   'prescott-valley-arizona': {
     permitNotes:
-      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.\',
+      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -1561,7 +1561,7 @@ const cityInfo: Record<string, {
   },
   'scottsdale-arizona': {
     permitNotes:
-      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.\',
+      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -1591,7 +1591,7 @@ const cityInfo: Record<string, {
   },
   'sierra-vista-arizona': {
     permitNotes:
-      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.\',
+      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -1621,7 +1621,7 @@ const cityInfo: Record<string, {
   },
   'surprise-arizona': {
     permitNotes:
-      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.\',
+      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -1651,7 +1651,7 @@ const cityInfo: Record<string, {
   },
   'tempe-arizona': {
     permitNotes:
-      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.\',
+      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -1681,7 +1681,7 @@ const cityInfo: Record<string, {
   },
   'tucson-arizona': {
     permitNotes:
-      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.\',
+      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -1711,7 +1711,7 @@ const cityInfo: Record<string, {
   },
   'flagstaff-arizona': {
     permitNotes:
-      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.\',
+      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -1741,7 +1741,7 @@ const cityInfo: Record<string, {
   },
   'yuma-arizona': {
     permitNotes:
-      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.\',
+      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -1771,7 +1771,7 @@ const cityInfo: Record<string, {
   },
   'apache-junction-arizona': {
     permitNotes:
-      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.\',
+      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -1801,7 +1801,7 @@ const cityInfo: Record<string, {
   },
   'bullhead-city-arizona': {
     permitNotes:
-      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.\',
+      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -1831,7 +1831,7 @@ const cityInfo: Record<string, {
   },
   'lake-havasu-city-arizona': {
     permitNotes:
-      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.\',
+      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -1861,7 +1861,7 @@ const cityInfo: Record<string, {
   },
   'nogales-arizona': {
     permitNotes:
-      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.\',
+      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -1891,7 +1891,7 @@ const cityInfo: Record<string, {
   },
   'sahuarita-arizona': {
     permitNotes:
-      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.\',
+      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -1921,7 +1921,7 @@ const cityInfo: Record<string, {
   },
   'hot-springs-arkansas': {
     permitNotes:
-      'Arkansas generally requires a sales and use tax permit through the Department of Finance & Administration (DFA). Register your business, collect tax where applicable, and verify any county health requirements for food and beverage vending.\',
+      'Arkansas generally requires a sales and use tax permit through the Department of Finance & Administration (DFA). Register your business, collect tax where applicable, and verify any county health requirements for food and beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -1951,7 +1951,7 @@ const cityInfo: Record<string, {
   },
   'texarkana-arkansas': {
     permitNotes:
-      'Arkansas generally requires a sales and use tax permit through the Department of Finance & Administration (DFA). Register your business, collect tax where applicable, and verify any county health requirements for food and beverage vending.\',
+      'Arkansas generally requires a sales and use tax permit through the Department of Finance & Administration (DFA). Register your business, collect tax where applicable, and verify any county health requirements for food and beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -1981,7 +1981,7 @@ const cityInfo: Record<string, {
   },
   'west-memphis-arkansas': {
     permitNotes:
-      'Arkansas generally requires a sales and use tax permit through the Department of Finance & Administration (DFA). Register your business, collect tax where applicable, and verify any county health requirements for food and beverage vending.\',
+      'Arkansas generally requires a sales and use tax permit through the Department of Finance & Administration (DFA). Register your business, collect tax where applicable, and verify any county health requirements for food and beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -2011,7 +2011,7 @@ const cityInfo: Record<string, {
   },
   'paragould-arkansas': {
     permitNotes:
-      'Arkansas generally requires a sales and use tax permit through the Department of Finance & Administration (DFA). Register your business, collect tax where applicable, and verify any county health requirements for food and beverage vending.\',
+      'Arkansas generally requires a sales and use tax permit through the Department of Finance & Administration (DFA). Register your business, collect tax where applicable, and verify any county health requirements for food and beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -2041,7 +2041,7 @@ const cityInfo: Record<string, {
   },
   'cabot-arkansas': {
     permitNotes:
-      'Arkansas generally requires a sales and use tax permit through the Department of Finance & Administration (DFA). Register your business, collect tax where applicable, and verify any county health requirements for food and beverage vending.\',
+      'Arkansas generally requires a sales and use tax permit through the Department of Finance & Administration (DFA). Register your business, collect tax where applicable, and verify any county health requirements for food and beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -2071,7 +2071,7 @@ const cityInfo: Record<string, {
   },
   'searcy-arkansas': {
     permitNotes:
-      'Arkansas generally requires a sales and use tax permit through the Department of Finance & Administration (DFA). Register your business, collect tax where applicable, and verify any county health requirements for food and beverage vending.\',
+      'Arkansas generally requires a sales and use tax permit through the Department of Finance & Administration (DFA). Register your business, collect tax where applicable, and verify any county health requirements for food and beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -8971,7 +8971,7 @@ const cityInfo: Record<string, {
   },
   'arvada-colorado': {
     permitNotes:
-      'Colorado requires a sales tax license through the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Colorado requires a sales tax license through the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -9001,7 +9001,7 @@ const cityInfo: Record<string, {
   },
   'aurora-colorado': {
     permitNotes:
-      'Colorado requires a sales tax license through the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Colorado requires a sales tax license through the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -9031,7 +9031,7 @@ const cityInfo: Record<string, {
   },
   'boulder-colorado': {
     permitNotes:
-      'Colorado requires a sales tax license through the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Colorado requires a sales tax license through the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -9061,7 +9061,7 @@ const cityInfo: Record<string, {
   },
   'centennial-colorado': {
     permitNotes:
-      'Colorado requires a sales tax license through the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Colorado requires a sales tax license through the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -9091,7 +9091,7 @@ const cityInfo: Record<string, {
   },
   'colorado-springs-colorado': {
     permitNotes:
-      'Colorado requires a sales tax license through the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Colorado requires a sales tax license through the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -9121,7 +9121,7 @@ const cityInfo: Record<string, {
   },
   'denver-colorado': {
     permitNotes:
-      'Colorado requires a sales tax license through the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Colorado requires a sales tax license through the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -9151,7 +9151,7 @@ const cityInfo: Record<string, {
   },
   'fort-collins-colorado': {
     permitNotes:
-      'Colorado requires a sales tax license through the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Colorado requires a sales tax license through the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -9181,7 +9181,7 @@ const cityInfo: Record<string, {
   },
   'grand-junction-colorado': {
     permitNotes:
-      'Colorado requires a sales tax license through the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Colorado requires a sales tax license through the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -9211,7 +9211,7 @@ const cityInfo: Record<string, {
   },
   'greeley-colorado': {
     permitNotes:
-      'Colorado requires a sales tax license through the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Colorado requires a sales tax license through the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -9241,7 +9241,7 @@ const cityInfo: Record<string, {
   },
   'lakewood-colorado': {
     permitNotes:
-      'Colorado requires a sales tax license through the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Colorado requires a sales tax license through the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -9271,7 +9271,7 @@ const cityInfo: Record<string, {
   },
   'longmont-colorado': {
     permitNotes:
-      'Colorado requires a sales tax license through the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Colorado requires a sales tax license through the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -9301,7 +9301,7 @@ const cityInfo: Record<string, {
   },
   'pueblo-colorado': {
     permitNotes:
-      'Colorado requires a sales tax license through the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Colorado requires a sales tax license through the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -9331,7 +9331,7 @@ const cityInfo: Record<string, {
   },
   'thornton-colorado': {
     permitNotes:
-      'Colorado requires a sales tax license through the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Colorado requires a sales tax license through the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -9361,7 +9361,7 @@ const cityInfo: Record<string, {
   },
   'westminster-colorado': {
     permitNotes:
-      'Colorado requires a sales tax license through the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Colorado requires a sales tax license through the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -9391,7 +9391,7 @@ const cityInfo: Record<string, {
   },
   'broomfield-colorado': {
     permitNotes:
-      'Colorado requires a sales tax license through the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Colorado requires a sales tax license through the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -9421,7 +9421,7 @@ const cityInfo: Record<string, {
   },
   'castle-rock-colorado': {
     permitNotes:
-      'Colorado requires a sales tax license through the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Colorado requires a sales tax license through the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -9451,7 +9451,7 @@ const cityInfo: Record<string, {
   },
   'commerce-city-colorado': {
     permitNotes:
-      'Colorado requires a sales tax license through the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Colorado requires a sales tax license through the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -9481,7 +9481,7 @@ const cityInfo: Record<string, {
   },
   'loveland-colorado': {
     permitNotes:
-      'Colorado requires a sales tax license through the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Colorado requires a sales tax license through the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -9511,7 +9511,7 @@ const cityInfo: Record<string, {
   },
   'parker-colorado': {
     permitNotes:
-      'Colorado requires a sales tax license through the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Colorado requires a sales tax license through the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -9541,7 +9541,7 @@ const cityInfo: Record<string, {
   },
   'danbury-connecticut': {
     permitNotes:
-      'Connecticut requires sales/use tax registration (DRS). Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Connecticut requires sales/use tax registration (DRS). Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -9571,7 +9571,7 @@ const cityInfo: Record<string, {
   },
   'new-britain-connecticut': {
     permitNotes:
-      'Connecticut requires sales/use tax registration (DRS). Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Connecticut requires sales/use tax registration (DRS). Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -9601,7 +9601,7 @@ const cityInfo: Record<string, {
   },
   'bristol-connecticut': {
     permitNotes:
-      'Connecticut requires sales/use tax registration (DRS). Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Connecticut requires sales/use tax registration (DRS). Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -9631,7 +9631,7 @@ const cityInfo: Record<string, {
   },
   'enfield-connecticut': {
     permitNotes:
-      'Connecticut requires sales/use tax registration (DRS). Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Connecticut requires sales/use tax registration (DRS). Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -9661,7 +9661,7 @@ const cityInfo: Record<string, {
   },
   'hamden-connecticut': {
     permitNotes:
-      'Connecticut requires sales/use tax registration (DRS). Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Connecticut requires sales/use tax registration (DRS). Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -9691,7 +9691,7 @@ const cityInfo: Record<string, {
   },
   'meriden-connecticut': {
     permitNotes:
-      'Connecticut requires sales/use tax registration (DRS). Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Connecticut requires sales/use tax registration (DRS). Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -9721,7 +9721,7 @@ const cityInfo: Record<string, {
   },
   'west-haven-connecticut': {
     permitNotes:
-      'Connecticut requires sales/use tax registration (DRS). Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Connecticut requires sales/use tax registration (DRS). Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -9751,7 +9751,7 @@ const cityInfo: Record<string, {
   },
   'bear-delaware': {
     permitNotes:
-      'Delaware has no state sales tax. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Delaware has no state sales tax. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -9781,7 +9781,7 @@ const cityInfo: Record<string, {
   },
   'dover-delaware': {
     permitNotes:
-      'Delaware has no state sales tax. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Delaware has no state sales tax. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -9811,7 +9811,7 @@ const cityInfo: Record<string, {
   },
   'elsmere-delaware': {
     permitNotes:
-      'Delaware has no state sales tax. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Delaware has no state sales tax. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -9841,7 +9841,7 @@ const cityInfo: Record<string, {
   },
   'georgetown-delaware': {
     permitNotes:
-      'Delaware has no state sales tax. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Delaware has no state sales tax. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -9871,7 +9871,7 @@ const cityInfo: Record<string, {
   },
   'middletown-delaware': {
     permitNotes:
-      'Delaware has no state sales tax. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Delaware has no state sales tax. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -9901,7 +9901,7 @@ const cityInfo: Record<string, {
   },
   'milford-delaware': {
     permitNotes:
-      'Delaware has no state sales tax. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Delaware has no state sales tax. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -9931,7 +9931,7 @@ const cityInfo: Record<string, {
   },
   'newark-delaware': {
     permitNotes:
-      'Delaware has no state sales tax. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Delaware has no state sales tax. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -9961,7 +9961,7 @@ const cityInfo: Record<string, {
   },
   'new-castle-delaware': {
     permitNotes:
-      'Delaware has no state sales tax. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Delaware has no state sales tax. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -9991,7 +9991,7 @@ const cityInfo: Record<string, {
   },
   'seaford-delaware': {
     permitNotes:
-      'Delaware has no state sales tax. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Delaware has no state sales tax. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -10021,7 +10021,7 @@ const cityInfo: Record<string, {
   },
   'smyrna-delaware': {
     permitNotes:
-      'Delaware has no state sales tax. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Delaware has no state sales tax. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -10051,7 +10051,7 @@ const cityInfo: Record<string, {
   },
   'wilmington-delaware': {
     permitNotes:
-      'Delaware has no state sales tax. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Delaware has no state sales tax. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -10081,7 +10081,7 @@ const cityInfo: Record<string, {
   },
   'altamonte-springs-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -10111,7 +10111,7 @@ const cityInfo: Record<string, {
   },
   'apopka-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -10141,7 +10141,7 @@ const cityInfo: Record<string, {
   },
   'boca-raton-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -10171,7 +10171,7 @@ const cityInfo: Record<string, {
   },
   'boynton-beach-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -10201,7 +10201,7 @@ const cityInfo: Record<string, {
   },
   'bradenton-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -10231,7 +10231,7 @@ const cityInfo: Record<string, {
   },
   'cape-coral-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -10261,7 +10261,7 @@ const cityInfo: Record<string, {
   },
   'clearwater-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -10291,7 +10291,7 @@ const cityInfo: Record<string, {
   },
   'coconut-creek-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -10321,7 +10321,7 @@ const cityInfo: Record<string, {
   },
   'coral-springs-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -10351,7 +10351,7 @@ const cityInfo: Record<string, {
   },
   'cutler-bay-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -10381,7 +10381,7 @@ const cityInfo: Record<string, {
   },
   'daytona-beach-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -10411,7 +10411,7 @@ const cityInfo: Record<string, {
   },
   'davie-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -10441,7 +10441,7 @@ const cityInfo: Record<string, {
   },
   'deltona-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -10471,7 +10471,7 @@ const cityInfo: Record<string, {
   },
   'doral-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -10501,7 +10501,7 @@ const cityInfo: Record<string, {
   },
   'fort-lauderdale-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -10531,7 +10531,7 @@ const cityInfo: Record<string, {
   },
   'fort-myers-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -10561,7 +10561,7 @@ const cityInfo: Record<string, {
   },
   'gainesville-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -10591,7 +10591,7 @@ const cityInfo: Record<string, {
   },
   'greenacres-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -10621,7 +10621,7 @@ const cityInfo: Record<string, {
   },
   'hialeah-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -10651,7 +10651,7 @@ const cityInfo: Record<string, {
   },
   'hollywood-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -10681,7 +10681,7 @@ const cityInfo: Record<string, {
   },
   'jacksonville-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -10711,7 +10711,7 @@ const cityInfo: Record<string, {
   },
   'jupiter-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -10741,7 +10741,7 @@ const cityInfo: Record<string, {
   },
   'kissimmee-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -10771,7 +10771,7 @@ const cityInfo: Record<string, {
   },
   'lakeland-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -10801,7 +10801,7 @@ const cityInfo: Record<string, {
   },
   'largo-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -10831,7 +10831,7 @@ const cityInfo: Record<string, {
   },
   'margate-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -10861,7 +10861,7 @@ const cityInfo: Record<string, {
   },
   'miami-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -10891,7 +10891,7 @@ const cityInfo: Record<string, {
   },
   'melbourne-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -10921,7 +10921,7 @@ const cityInfo: Record<string, {
   },
   'miramar-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -10951,7 +10951,7 @@ const cityInfo: Record<string, {
   },
   'naples-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -10981,7 +10981,7 @@ const cityInfo: Record<string, {
   },
   'north-miami-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -11011,7 +11011,7 @@ const cityInfo: Record<string, {
   },
   'orlando-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -11041,7 +11041,7 @@ const cityInfo: Record<string, {
   },
   'ocala-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -11071,7 +11071,7 @@ const cityInfo: Record<string, {
   },
   'palm-bay-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -11101,7 +11101,7 @@ const cityInfo: Record<string, {
   },
   'palm-coast-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -11131,7 +11131,7 @@ const cityInfo: Record<string, {
   },
   'palm-beach-gardens-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -11161,7 +11161,7 @@ const cityInfo: Record<string, {
   },
   'palm-harbor-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -11191,7 +11191,7 @@ const cityInfo: Record<string, {
   },
   'pembroke-pines-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -11221,7 +11221,7 @@ const cityInfo: Record<string, {
   },
   'pensacola-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -11251,7 +11251,7 @@ const cityInfo: Record<string, {
   },
   'plant-city-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -11281,7 +11281,7 @@ const cityInfo: Record<string, {
   },
   'plantation-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -11311,7 +11311,7 @@ const cityInfo: Record<string, {
   },
   'pompano-beach-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -11341,7 +11341,7 @@ const cityInfo: Record<string, {
   },
   'port-orange-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -11371,7 +11371,7 @@ const cityInfo: Record<string, {
   },
   'port-st-lucie-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -11401,7 +11401,7 @@ const cityInfo: Record<string, {
   },
   'royal-palm-beach-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -11431,7 +11431,7 @@ const cityInfo: Record<string, {
   },
   'sanford-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -11461,7 +11461,7 @@ const cityInfo: Record<string, {
   },
   'sarasota-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -11491,7 +11491,7 @@ const cityInfo: Record<string, {
   },
   'st-petersburg-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -11521,7 +11521,7 @@ const cityInfo: Record<string, {
   },
   'stuart-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -11551,7 +11551,7 @@ const cityInfo: Record<string, {
   },
   'sunrise-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -11581,7 +11581,7 @@ const cityInfo: Record<string, {
   },
   'tallahassee-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -11611,7 +11611,7 @@ const cityInfo: Record<string, {
   },
   'tampa-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -11641,7 +11641,7 @@ const cityInfo: Record<string, {
   },
   'wellington-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -11671,7 +11671,7 @@ const cityInfo: Record<string, {
   },
   'west-palm-beach-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -11701,7 +11701,7 @@ const cityInfo: Record<string, {
   },
   'aventura-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -11731,7 +11731,7 @@ const cityInfo: Record<string, {
   },
   'casselberry-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -11761,7 +11761,7 @@ const cityInfo: Record<string, {
   },
   'coral-gables-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -11791,7 +11791,7 @@ const cityInfo: Record<string, {
   },
   'deerfield-beach-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -11821,7 +11821,7 @@ const cityInfo: Record<string, {
   },
   'dunedin-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -11851,7 +11851,7 @@ const cityInfo: Record<string, {
   },
   'edgewater-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -11881,7 +11881,7 @@ const cityInfo: Record<string, {
   },
   'fort-pierce-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -11911,7 +11911,7 @@ const cityInfo: Record<string, {
   },
   'hialeah-gardens-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -11941,7 +11941,7 @@ const cityInfo: Record<string, {
   },
   'key-west-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -11971,7 +11971,7 @@ const cityInfo: Record<string, {
   },
   'lake-worth-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -12001,7 +12001,7 @@ const cityInfo: Record<string, {
   },
   'lehigh-acres-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -12031,7 +12031,7 @@ const cityInfo: Record<string, {
   },
   'miami-beach-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -12061,7 +12061,7 @@ const cityInfo: Record<string, {
   },
   'miami-gardens-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -12091,7 +12091,7 @@ const cityInfo: Record<string, {
   },
   'orange-park-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -12121,7 +12121,7 @@ const cityInfo: Record<string, {
   },
   'panama-city-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -12151,7 +12151,7 @@ const cityInfo: Record<string, {
   },
   'port-st.-lucie-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -12181,7 +12181,7 @@ const cityInfo: Record<string, {
   },
   'sebastian-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -12211,7 +12211,7 @@ const cityInfo: Record<string, {
   },
   'st.-petersburg-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -12241,7 +12241,7 @@ const cityInfo: Record<string, {
   },
   'tarpon-springs-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -12271,7 +12271,7 @@ const cityInfo: Record<string, {
   },
   'titusville-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -12301,7 +12301,7 @@ const cityInfo: Record<string, {
   },
   'venice-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -12331,7 +12331,7 @@ const cityInfo: Record<string, {
   },
   'winter-haven-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -12361,7 +12361,7 @@ const cityInfo: Record<string, {
   },
   'winter-park-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -12391,7 +12391,7 @@ const cityInfo: Record<string, {
   },
   'winter-springs-florida': {
     permitNotes:
-      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -12421,7 +12421,7 @@ const cityInfo: Record<string, {
   },
   'albany-georgia': {
     permitNotes:
-      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -12451,7 +12451,7 @@ const cityInfo: Record<string, {
   },
   'athens-georgia': {
     permitNotes:
-      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -12481,7 +12481,7 @@ const cityInfo: Record<string, {
   },
   'atlanta-georgia': {
     permitNotes:
-      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -12511,7 +12511,7 @@ const cityInfo: Record<string, {
   },
   'augusta-georgia': {
     permitNotes:
-      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -12541,7 +12541,7 @@ const cityInfo: Record<string, {
   },
   'columbus-georgia': {
     permitNotes:
-      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -12571,7 +12571,7 @@ const cityInfo: Record<string, {
   },
   'macon-georgia': {
     permitNotes:
-      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -12601,7 +12601,7 @@ const cityInfo: Record<string, {
   },
   'marietta-georgia': {
     permitNotes:
-      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -12631,7 +12631,7 @@ const cityInfo: Record<string, {
   },
   'roswell-georgia': {
     permitNotes:
-      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -12661,7 +12661,7 @@ const cityInfo: Record<string, {
   },
   'sandy-springs-georgia': {
     permitNotes:
-      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -12691,7 +12691,7 @@ const cityInfo: Record<string, {
   },
   'savannah-georgia': {
     permitNotes:
-      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -12721,7 +12721,7 @@ const cityInfo: Record<string, {
   },
   'valdosta-georgia': {
     permitNotes:
-      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -12751,7 +12751,7 @@ const cityInfo: Record<string, {
   },
   'warner-robins-georgia': {
     permitNotes:
-      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -12781,7 +12781,7 @@ const cityInfo: Record<string, {
   },
   'alpharetta-georgia': {
     permitNotes:
-      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -12811,7 +12811,7 @@ const cityInfo: Record<string, {
   },
   'americus-georgia': {
     permitNotes:
-      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -12841,7 +12841,7 @@ const cityInfo: Record<string, {
   },
   'brunswick-georgia': {
     permitNotes:
-      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -12871,7 +12871,7 @@ const cityInfo: Record<string, {
   },
   'dalton-georgia': {
     permitNotes:
-      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -12901,7 +12901,7 @@ const cityInfo: Record<string, {
   },
   'douglas-georgia': {
     permitNotes:
-      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -12931,7 +12931,7 @@ const cityInfo: Record<string, {
   },
   'douglasville-georgia': {
     permitNotes:
-      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -12961,7 +12961,7 @@ const cityInfo: Record<string, {
   },
   'dublin-georgia': {
     permitNotes:
-      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -12991,7 +12991,7 @@ const cityInfo: Record<string, {
   },
   'gainesville-georgia': {
     permitNotes:
-      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -13021,7 +13021,7 @@ const cityInfo: Record<string, {
   },
   'griffin-georgia': {
     permitNotes:
-      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -13051,7 +13051,7 @@ const cityInfo: Record<string, {
   },
   'kennesaw-georgia': {
     permitNotes:
-      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -13081,7 +13081,7 @@ const cityInfo: Record<string, {
   },
   'lagrange-georgia': {
     permitNotes:
-      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -13111,7 +13111,7 @@ const cityInfo: Record<string, {
   },
   'milledgeville-georgia': {
     permitNotes:
-      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -13141,7 +13141,7 @@ const cityInfo: Record<string, {
   },
   'newnan-georgia': {
     permitNotes:
-      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -13171,7 +13171,7 @@ const cityInfo: Record<string, {
   },
   'rome-georgia': {
     permitNotes:
-      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -13201,7 +13201,7 @@ const cityInfo: Record<string, {
   },
   'smyrna-georgia': {
     permitNotes:
-      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -13231,7 +13231,7 @@ const cityInfo: Record<string, {
   },
   'statesboro-georgia': {
     permitNotes:
-      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -13261,7 +13261,7 @@ const cityInfo: Record<string, {
   },
   'thomasville-georgia': {
     permitNotes:
-      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -13291,7 +13291,7 @@ const cityInfo: Record<string, {
   },
   'waycross-georgia': {
     permitNotes:
-      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Georgia requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -13321,7 +13321,7 @@ const cityInfo: Record<string, {
   },
   'hilo-hawaii': {
     permitNotes:
-      'Hawaii requires a general excise tax license. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Hawaii requires a general excise tax license. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -13351,7 +13351,7 @@ const cityInfo: Record<string, {
   },
   'honolulu-hawaii': {
     permitNotes:
-      'Hawaii requires a general excise tax license. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Hawaii requires a general excise tax license. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -13381,7 +13381,7 @@ const cityInfo: Record<string, {
   },
   'kailua-hawaii': {
     permitNotes:
-      'Hawaii requires a general excise tax license. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Hawaii requires a general excise tax license. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -13411,7 +13411,7 @@ const cityInfo: Record<string, {
   },
   'pearl-city-hawaii': {
     permitNotes:
-      'Hawaii requires a general excise tax license. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Hawaii requires a general excise tax license. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -13441,7 +13441,7 @@ const cityInfo: Record<string, {
   },
   'ewa-beach-hawaii': {
     permitNotes:
-      'Hawaii requires a general excise tax license. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Hawaii requires a general excise tax license. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -13471,7 +13471,7 @@ const cityInfo: Record<string, {
   },
   'kahului-hawaii': {
     permitNotes:
-      'Hawaii requires a general excise tax license. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Hawaii requires a general excise tax license. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -13501,7 +13501,7 @@ const cityInfo: Record<string, {
   },
   'kaneohe-hawaii': {
     permitNotes:
-      'Hawaii requires a general excise tax license. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Hawaii requires a general excise tax license. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -13531,7 +13531,7 @@ const cityInfo: Record<string, {
   },
   'kihei-hawaii': {
     permitNotes:
-      'Hawaii requires a general excise tax license. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Hawaii requires a general excise tax license. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -13561,7 +13561,7 @@ const cityInfo: Record<string, {
   },
   'mililani-hawaii': {
     permitNotes:
-      'Hawaii requires a general excise tax license. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Hawaii requires a general excise tax license. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -13591,7 +13591,7 @@ const cityInfo: Record<string, {
   },
   'boise-idaho': {
     permitNotes:
-      'Idaho requires a sales tax permit from the State Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Idaho requires a sales tax permit from the State Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -13621,7 +13621,7 @@ const cityInfo: Record<string, {
   },
   'caldwell-idaho': {
     permitNotes:
-      'Idaho requires a sales tax permit from the State Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Idaho requires a sales tax permit from the State Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -13651,7 +13651,7 @@ const cityInfo: Record<string, {
   },
   'idaho-falls-idaho': {
     permitNotes:
-      'Idaho requires a sales tax permit from the State Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Idaho requires a sales tax permit from the State Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -13681,7 +13681,7 @@ const cityInfo: Record<string, {
   },
   'meridian-idaho': {
     permitNotes:
-      'Idaho requires a sales tax permit from the State Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Idaho requires a sales tax permit from the State Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -13711,7 +13711,7 @@ const cityInfo: Record<string, {
   },
   'nampa-idaho': {
     permitNotes:
-      'Idaho requires a sales tax permit from the State Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Idaho requires a sales tax permit from the State Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -13741,7 +13741,7 @@ const cityInfo: Record<string, {
   },
   'pocatello-idaho': {
     permitNotes:
-      'Idaho requires a sales tax permit from the State Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Idaho requires a sales tax permit from the State Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -13771,7 +13771,7 @@ const cityInfo: Record<string, {
   },
   'rexburg-idaho': {
     permitNotes:
-      'Idaho requires a sales tax permit from the State Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Idaho requires a sales tax permit from the State Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -13801,7 +13801,7 @@ const cityInfo: Record<string, {
   },
   'twin-falls-idaho': {
     permitNotes:
-      'Idaho requires a sales tax permit from the State Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Idaho requires a sales tax permit from the State Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -13831,7 +13831,7 @@ const cityInfo: Record<string, {
   },
   'arlington-heights-illinois': {
     permitNotes:
-      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -13861,7 +13861,7 @@ const cityInfo: Record<string, {
   },
   'aurora-illinois': {
     permitNotes:
-      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -13891,7 +13891,7 @@ const cityInfo: Record<string, {
   },
   'berwyn-illinois': {
     permitNotes:
-      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -13921,7 +13921,7 @@ const cityInfo: Record<string, {
   },
   'bloomington-illinois': {
     permitNotes:
-      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -13951,7 +13951,7 @@ const cityInfo: Record<string, {
   },
   'bolingbrook-illinois': {
     permitNotes:
-      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -13981,7 +13981,7 @@ const cityInfo: Record<string, {
   },
   'champaign-urbana-illinois': {
     permitNotes:
-      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -14011,7 +14011,7 @@ const cityInfo: Record<string, {
   },
   'chicago-illinois': {
     permitNotes:
-      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -14041,7 +14041,7 @@ const cityInfo: Record<string, {
   },
   'cicero-illinois': {
     permitNotes:
-      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -14071,7 +14071,7 @@ const cityInfo: Record<string, {
   },
   'decatur-illinois': {
     permitNotes:
-      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -14101,7 +14101,7 @@ const cityInfo: Record<string, {
   },
   'des-plaines-illinois': {
     permitNotes:
-      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -14131,7 +14131,7 @@ const cityInfo: Record<string, {
   },
   'downers-grove-illinois': {
     permitNotes:
-      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -14161,7 +14161,7 @@ const cityInfo: Record<string, {
   },
   'elgin-illinois': {
     permitNotes:
-      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -14191,7 +14191,7 @@ const cityInfo: Record<string, {
   },
   'evanston-illinois': {
     permitNotes:
-      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -14221,7 +14221,7 @@ const cityInfo: Record<string, {
   },
   'joliet-illinois': {
     permitNotes:
-      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -14251,7 +14251,7 @@ const cityInfo: Record<string, {
   },
   'moline-illinois': {
     permitNotes:
-      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -14281,7 +14281,7 @@ const cityInfo: Record<string, {
   },
   'mount-prospect-illinois': {
     permitNotes:
-      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -14311,7 +14311,7 @@ const cityInfo: Record<string, {
   },
   'naperville-illinois': {
     permitNotes:
-      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -14341,7 +14341,7 @@ const cityInfo: Record<string, {
   },
   'oak-lawn-illinois': {
     permitNotes:
-      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -14371,7 +14371,7 @@ const cityInfo: Record<string, {
   },
   'oak-park-illinois': {
     permitNotes:
-      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -14401,7 +14401,7 @@ const cityInfo: Record<string, {
   },
   'orland-park-illinois': {
     permitNotes:
-      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -14431,7 +14431,7 @@ const cityInfo: Record<string, {
   },
   'palatine-illinois': {
     permitNotes:
-      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -14461,7 +14461,7 @@ const cityInfo: Record<string, {
   },
   'peoria-illinois': {
     permitNotes:
-      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -14491,7 +14491,7 @@ const cityInfo: Record<string, {
   },
   'quincy-illinois': {
     permitNotes:
-      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -14521,7 +14521,7 @@ const cityInfo: Record<string, {
   },
   'rockford-illinois': {
     permitNotes:
-      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -14551,7 +14551,7 @@ const cityInfo: Record<string, {
   },
   'schaumburg-illinois': {
     permitNotes:
-      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -14581,7 +14581,7 @@ const cityInfo: Record<string, {
   },
   'skokie-illinois': {
     permitNotes:
-      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -14611,7 +14611,7 @@ const cityInfo: Record<string, {
   },
   'springfield-illinois': {
     permitNotes:
-      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -14641,7 +14641,7 @@ const cityInfo: Record<string, {
   },
   'tinley-park-illinois': {
     permitNotes:
-      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -14671,7 +14671,7 @@ const cityInfo: Record<string, {
   },
   'waukegan-illinois': {
     permitNotes:
-      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -14701,7 +14701,7 @@ const cityInfo: Record<string, {
   },
   'wheaton-illinois': {
     permitNotes:
-      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -14731,7 +14731,7 @@ const cityInfo: Record<string, {
   },
   'addison-illinois': {
     permitNotes:
-      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -14761,7 +14761,7 @@ const cityInfo: Record<string, {
   },
   'bartlett-illinois': {
     permitNotes:
-      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -14791,7 +14791,7 @@ const cityInfo: Record<string, {
   },
   'buffalo-grove-illinois': {
     permitNotes:
-      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -14821,7 +14821,7 @@ const cityInfo: Record<string, {
   },
   'carpentersville-illinois': {
     permitNotes:
-      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -14851,7 +14851,7 @@ const cityInfo: Record<string, {
   },
   'crystal-lake-illinois': {
     permitNotes:
-      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -14881,7 +14881,7 @@ const cityInfo: Record<string, {
   },
   'elmhurst-illinois': {
     permitNotes:
-      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -14911,7 +14911,7 @@ const cityInfo: Record<string, {
   },
   'hoffman-estates-illinois': {
     permitNotes:
-      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -14941,7 +14941,7 @@ const cityInfo: Record<string, {
   },
   'normal-illinois': {
     permitNotes:
-      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -14971,7 +14971,7 @@ const cityInfo: Record<string, {
   },
   'park-ridge-illinois': {
     permitNotes:
-      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -15001,7 +15001,7 @@ const cityInfo: Record<string, {
   },
   'rolling-meadows-illinois': {
     permitNotes:
-      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -15031,7 +15031,7 @@ const cityInfo: Record<string, {
   },
   'wheeling-illinois': {
     permitNotes:
-      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Illinois requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -15061,7 +15061,7 @@ const cityInfo: Record<string, {
   },
   'anderson-indiana': {
     permitNotes:
-      'Indiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Indiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -15091,7 +15091,7 @@ const cityInfo: Record<string, {
   },
   'bloomington-indiana': {
     permitNotes:
-      'Indiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Indiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -15121,7 +15121,7 @@ const cityInfo: Record<string, {
   },
   'carmel-indiana': {
     permitNotes:
-      'Indiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Indiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -15151,7 +15151,7 @@ const cityInfo: Record<string, {
   },
   'evansville-indiana': {
     permitNotes:
-      'Indiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Indiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -15181,7 +15181,7 @@ const cityInfo: Record<string, {
   },
   'fort-wayne-indiana': {
     permitNotes:
-      'Indiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Indiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -15211,7 +15211,7 @@ const cityInfo: Record<string, {
   },
   'gary-indiana': {
     permitNotes:
-      'Indiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Indiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -15241,7 +15241,7 @@ const cityInfo: Record<string, {
   },
   'hammond-indiana': {
     permitNotes:
-      'Indiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Indiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -15271,7 +15271,7 @@ const cityInfo: Record<string, {
   },
   'indianapolis-indiana': {
     permitNotes:
-      'Indiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Indiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -15301,7 +15301,7 @@ const cityInfo: Record<string, {
   },
   'kokomo-indiana': {
     permitNotes:
-      'Indiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Indiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -15331,7 +15331,7 @@ const cityInfo: Record<string, {
   },
   'muncie-indiana': {
     permitNotes:
-      'Indiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Indiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -15361,7 +15361,7 @@ const cityInfo: Record<string, {
   },
   'south-bend-indiana': {
     permitNotes:
-      'Indiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Indiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -15391,7 +15391,7 @@ const cityInfo: Record<string, {
   },
   'terre-haute-indiana': {
     permitNotes:
-      'Indiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Indiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -15421,7 +15421,7 @@ const cityInfo: Record<string, {
   },
   'elkhart-indiana': {
     permitNotes:
-      'Indiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Indiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -15451,7 +15451,7 @@ const cityInfo: Record<string, {
   },
   'lafayette-indiana': {
     permitNotes:
-      'Indiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Indiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -15481,7 +15481,7 @@ const cityInfo: Record<string, {
   },
   'ames-iowa': {
     permitNotes:
-      'Iowa requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Iowa requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -15511,7 +15511,7 @@ const cityInfo: Record<string, {
   },
   'cedar-rapids-iowa': {
     permitNotes:
-      'Iowa requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Iowa requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -15541,7 +15541,7 @@ const cityInfo: Record<string, {
   },
   'davenport-iowa': {
     permitNotes:
-      'Iowa requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Iowa requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -15571,7 +15571,7 @@ const cityInfo: Record<string, {
   },
   'des-moines-iowa': {
     permitNotes:
-      'Iowa requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Iowa requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -15601,7 +15601,7 @@ const cityInfo: Record<string, {
   },
   'dubuque-iowa': {
     permitNotes:
-      'Iowa requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Iowa requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -15631,7 +15631,7 @@ const cityInfo: Record<string, {
   },
   'iowa-city-iowa': {
     permitNotes:
-      'Iowa requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Iowa requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -15661,7 +15661,7 @@ const cityInfo: Record<string, {
   },
   'sioux-city-iowa': {
     permitNotes:
-      'Iowa requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Iowa requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -15691,7 +15691,7 @@ const cityInfo: Record<string, {
   },
   'waterloo-iowa': {
     permitNotes:
-      'Iowa requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Iowa requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -15721,7 +15721,7 @@ const cityInfo: Record<string, {
   },
   'council-bluffs-iowa': {
     permitNotes:
-      'Iowa requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Iowa requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -15751,7 +15751,7 @@ const cityInfo: Record<string, {
   },
   'west-des-moines-iowa': {
     permitNotes:
-      'Iowa requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Iowa requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -15781,7 +15781,7 @@ const cityInfo: Record<string, {
   },
   'kansas-city-kansas': {
     permitNotes:
-      'Kansas requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Kansas requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -15811,7 +15811,7 @@ const cityInfo: Record<string, {
   },
   'lawrence-kansas': {
     permitNotes:
-      'Kansas requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Kansas requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -15841,7 +15841,7 @@ const cityInfo: Record<string, {
   },
   'manhattan-kansas': {
     permitNotes:
-      'Kansas requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Kansas requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -15871,7 +15871,7 @@ const cityInfo: Record<string, {
   },
   'olathe-kansas': {
     permitNotes:
-      'Kansas requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Kansas requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -15901,7 +15901,7 @@ const cityInfo: Record<string, {
   },
   'overland-park-kansas': {
     permitNotes:
-      'Kansas requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Kansas requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -15931,7 +15931,7 @@ const cityInfo: Record<string, {
   },
   'topeka-kansas': {
     permitNotes:
-      'Kansas requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Kansas requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -15961,7 +15961,7 @@ const cityInfo: Record<string, {
   },
   'wichita-kansas': {
     permitNotes:
-      'Kansas requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Kansas requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -15991,7 +15991,7 @@ const cityInfo: Record<string, {
   },
   'dodge-city-kansas': {
     permitNotes:
-      'Kansas requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Kansas requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -16021,7 +16021,7 @@ const cityInfo: Record<string, {
   },
   'hutchinson-kansas': {
     permitNotes:
-      'Kansas requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Kansas requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -16051,7 +16051,7 @@ const cityInfo: Record<string, {
   },
   'leavenworth-kansas': {
     permitNotes:
-      'Kansas requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Kansas requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -16081,7 +16081,7 @@ const cityInfo: Record<string, {
   },
   'salina-kansas': {
     permitNotes:
-      'Kansas requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Kansas requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -16111,7 +16111,7 @@ const cityInfo: Record<string, {
   },
   'lenexa-kansas': {
     permitNotes:
-      'Kansas requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Kansas requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -16141,7 +16141,7 @@ const cityInfo: Record<string, {
   },
   'bowling-green-kentucky': {
     permitNotes:
-      'Kentucky requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Kentucky requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -16171,7 +16171,7 @@ const cityInfo: Record<string, {
   },
   'covington-kentucky': {
     permitNotes:
-      'Kentucky requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Kentucky requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -16201,7 +16201,7 @@ const cityInfo: Record<string, {
   },
   'florence-kentucky': {
     permitNotes:
-      'Kentucky requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Kentucky requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -16231,7 +16231,7 @@ const cityInfo: Record<string, {
   },
   'frankfort-kentucky': {
     permitNotes:
-      'Kentucky requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Kentucky requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -16261,7 +16261,7 @@ const cityInfo: Record<string, {
   },
   'georgetown-kentucky': {
     permitNotes:
-      'Kentucky requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Kentucky requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -16291,7 +16291,7 @@ const cityInfo: Record<string, {
   },
   'hopkinsville-kentucky': {
     permitNotes:
-      'Kentucky requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Kentucky requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -16321,7 +16321,7 @@ const cityInfo: Record<string, {
   },
   'lexington-kentucky': {
     permitNotes:
-      'Kentucky requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Kentucky requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -16351,7 +16351,7 @@ const cityInfo: Record<string, {
   },
   'louisville-kentucky': {
     permitNotes:
-      'Kentucky requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Kentucky requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -16381,7 +16381,7 @@ const cityInfo: Record<string, {
   },
   'owensboro-kentucky': {
     permitNotes:
-      'Kentucky requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Kentucky requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -16411,7 +16411,7 @@ const cityInfo: Record<string, {
   },
   'paducah-kentucky': {
     permitNotes:
-      'Kentucky requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Kentucky requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -16441,7 +16441,7 @@ const cityInfo: Record<string, {
   },
   'richmond-kentucky': {
     permitNotes:
-      'Kentucky requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Kentucky requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -16471,7 +16471,7 @@ const cityInfo: Record<string, {
   },
   'ashland-kentucky': {
     permitNotes:
-      'Kentucky requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Kentucky requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -16501,7 +16501,7 @@ const cityInfo: Record<string, {
   },
   'elizabethtown-kentucky': {
     permitNotes:
-      'Kentucky requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Kentucky requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -16531,7 +16531,7 @@ const cityInfo: Record<string, {
   },
   'madisonville-kentucky': {
     permitNotes:
-      'Kentucky requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Kentucky requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -16561,7 +16561,7 @@ const cityInfo: Record<string, {
   },
   'murray-kentucky': {
     permitNotes:
-      'Kentucky requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Kentucky requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -16591,7 +16591,7 @@ const cityInfo: Record<string, {
   },
   'newport-kentucky': {
     permitNotes:
-      'Kentucky requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Kentucky requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -16621,7 +16621,7 @@ const cityInfo: Record<string, {
   },
   'alexandria-louisiana': {
     permitNotes:
-      'Louisiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Louisiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -16651,7 +16651,7 @@ const cityInfo: Record<string, {
   },
   'baton-rouge-louisiana': {
     permitNotes:
-      'Louisiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Louisiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -16681,7 +16681,7 @@ const cityInfo: Record<string, {
   },
   'bossier-city-louisiana': {
     permitNotes:
-      'Louisiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Louisiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -16711,7 +16711,7 @@ const cityInfo: Record<string, {
   },
   'houma-louisiana': {
     permitNotes:
-      'Louisiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Louisiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -16741,7 +16741,7 @@ const cityInfo: Record<string, {
   },
   'kenner-louisiana': {
     permitNotes:
-      'Louisiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Louisiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -16771,7 +16771,7 @@ const cityInfo: Record<string, {
   },
   'lafayette-louisiana': {
     permitNotes:
-      'Louisiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Louisiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -16801,7 +16801,7 @@ const cityInfo: Record<string, {
   },
   'lake-charles-louisiana': {
     permitNotes:
-      'Louisiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Louisiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -16831,7 +16831,7 @@ const cityInfo: Record<string, {
   },
   'metairie-louisiana': {
     permitNotes:
-      'Louisiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Louisiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -16861,7 +16861,7 @@ const cityInfo: Record<string, {
   },
   'monroe-louisiana': {
     permitNotes:
-      'Louisiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Louisiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -16891,7 +16891,7 @@ const cityInfo: Record<string, {
   },
   'new-orleans-louisiana': {
     permitNotes:
-      'Louisiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Louisiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -16921,7 +16921,7 @@ const cityInfo: Record<string, {
   },
   'shreveport-louisiana': {
     permitNotes:
-      'Louisiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Louisiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -16951,7 +16951,7 @@ const cityInfo: Record<string, {
   },
   'slidell-louisiana': {
     permitNotes:
-      'Louisiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Louisiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -16981,7 +16981,7 @@ const cityInfo: Record<string, {
   },
   'gretna-louisiana': {
     permitNotes:
-      'Louisiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Louisiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -17011,7 +17011,7 @@ const cityInfo: Record<string, {
   },
   'hammond-louisiana': {
     permitNotes:
-      'Louisiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Louisiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -17041,7 +17041,7 @@ const cityInfo: Record<string, {
   },
   'laplace-louisiana': {
     permitNotes:
-      'Louisiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Louisiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -17071,7 +17071,7 @@ const cityInfo: Record<string, {
   },
   'marrero-louisiana': {
     permitNotes:
-      'Louisiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Louisiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -17101,7 +17101,7 @@ const cityInfo: Record<string, {
   },
   'opelousas-louisiana': {
     permitNotes:
-      'Louisiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Louisiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -17131,7 +17131,7 @@ const cityInfo: Record<string, {
   },
   'ruston-louisiana': {
     permitNotes:
-      'Louisiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Louisiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -17161,7 +17161,7 @@ const cityInfo: Record<string, {
   },
   'sulphur-louisiana': {
     permitNotes:
-      'Louisiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Louisiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -17191,7 +17191,7 @@ const cityInfo: Record<string, {
   },
   'augusta-maine': {
     permitNotes:
-      'Maine requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Maine requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -17221,7 +17221,7 @@ const cityInfo: Record<string, {
   },
   'bangor-maine': {
     permitNotes:
-      'Maine requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Maine requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -17251,7 +17251,7 @@ const cityInfo: Record<string, {
   },
   'lewiston-maine': {
     permitNotes:
-      'Maine requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Maine requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -17281,7 +17281,7 @@ const cityInfo: Record<string, {
   },
   'portland-maine': {
     permitNotes:
-      'Maine requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Maine requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -17311,7 +17311,7 @@ const cityInfo: Record<string, {
   },
   'auburn-maine': {
     permitNotes:
-      'Maine requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Maine requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -17341,7 +17341,7 @@ const cityInfo: Record<string, {
   },
   'biddeford-maine': {
     permitNotes:
-      'Maine requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Maine requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -17371,7 +17371,7 @@ const cityInfo: Record<string, {
   },
   'saco-maine': {
     permitNotes:
-      'Maine requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Maine requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -17401,7 +17401,7 @@ const cityInfo: Record<string, {
   },
   'sanford-maine': {
     permitNotes:
-      'Maine requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Maine requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -17431,7 +17431,7 @@ const cityInfo: Record<string, {
   },
   'waterville-maine': {
     permitNotes:
-      'Maine requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Maine requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -17461,7 +17461,7 @@ const cityInfo: Record<string, {
   },
   'arkansas-city-kansas': {
     permitNotes:
-      'Kansas requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Kansas requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -17491,7 +17491,7 @@ const cityInfo: Record<string, {
   },
   'atchison-kansas': {
     permitNotes:
-      'Kansas requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Kansas requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -17521,7 +17521,7 @@ const cityInfo: Record<string, {
   },
   'chanute-kansas': {
     permitNotes:
-      'Kansas requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Kansas requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -17551,7 +17551,7 @@ const cityInfo: Record<string, {
   },
   'coffeyville-kansas': {
     permitNotes:
-      'Kansas requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Kansas requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -17581,7 +17581,7 @@ const cityInfo: Record<string, {
   },
   'fort-scott-kansas': {
     permitNotes:
-      'Kansas requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Kansas requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -17611,7 +17611,7 @@ const cityInfo: Record<string, {
   },
   'garden-city-kansas': {
     permitNotes:
-      'Kansas requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Kansas requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -17641,7 +17641,7 @@ const cityInfo: Record<string, {
   },
   'great-bend-kansas': {
     permitNotes:
-      'Kansas requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Kansas requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -17671,7 +17671,7 @@ const cityInfo: Record<string, {
   },
   'iola-kansas': {
     permitNotes:
-      'Kansas requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Kansas requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -17701,7 +17701,7 @@ const cityInfo: Record<string, {
   },
   'mcpherson-kansas': {
     permitNotes:
-      'Kansas requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Kansas requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -17731,7 +17731,7 @@ const cityInfo: Record<string, {
   },
   'newton-kansas': {
     permitNotes:
-      'Kansas requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Kansas requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -17761,7 +17761,7 @@ const cityInfo: Record<string, {
   },
   'parsons-kansas': {
     permitNotes:
-      'Kansas requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Kansas requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -17791,7 +17791,7 @@ const cityInfo: Record<string, {
   },
   'pittsburg-kansas': {
     permitNotes:
-      'Kansas requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Kansas requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -17821,7 +17821,7 @@ const cityInfo: Record<string, {
   },
   'annapolis-maryland': {
     permitNotes:
-      'Maryland requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Maryland requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -17851,7 +17851,7 @@ const cityInfo: Record<string, {
   },
   'baltimore-maryland': {
     permitNotes:
-      'Maryland requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Maryland requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -17881,7 +17881,7 @@ const cityInfo: Record<string, {
   },
   'columbia-maryland': {
     permitNotes:
-      'Maryland requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Maryland requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -17911,7 +17911,7 @@ const cityInfo: Record<string, {
   },
   'frederick-maryland': {
     permitNotes:
-      'Maryland requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Maryland requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -17941,7 +17941,7 @@ const cityInfo: Record<string, {
   },
   'gaithersburg-maryland': {
     permitNotes:
-      'Maryland requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Maryland requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -17971,7 +17971,7 @@ const cityInfo: Record<string, {
   },
   'hagerstown-maryland': {
     permitNotes:
-      'Maryland requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Maryland requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -18001,7 +18001,7 @@ const cityInfo: Record<string, {
   },
   'rockville-maryland': {
     permitNotes:
-      'Maryland requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Maryland requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -18031,7 +18031,7 @@ const cityInfo: Record<string, {
   },
   'silver-spring-maryland': {
     permitNotes:
-      'Maryland requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Maryland requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -18061,7 +18061,7 @@ const cityInfo: Record<string, {
   },
   'bethesda-maryland': {
     permitNotes:
-      'Maryland requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Maryland requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -18091,7 +18091,7 @@ const cityInfo: Record<string, {
   },
   'bowie-maryland': {
     permitNotes:
-      'Maryland requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Maryland requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -18121,7 +18121,7 @@ const cityInfo: Record<string, {
   },
   'college-park-maryland': {
     permitNotes:
-      'Maryland requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Maryland requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -18151,7 +18151,7 @@ const cityInfo: Record<string, {
   },
   'germantown-maryland': {
     permitNotes:
-      'Maryland requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Maryland requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -18181,7 +18181,7 @@ const cityInfo: Record<string, {
   },
   'laurel-maryland': {
     permitNotes:
-      'Maryland requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Maryland requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -18211,7 +18211,7 @@ const cityInfo: Record<string, {
   },
   'salisbury-maryland': {
     permitNotes:
-      'Maryland requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Maryland requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -18241,7 +18241,7 @@ const cityInfo: Record<string, {
   },
   'towson-maryland': {
     permitNotes:
-      'Maryland requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Maryland requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -18271,7 +18271,7 @@ const cityInfo: Record<string, {
   },
   'waldorf-maryland': {
     permitNotes:
-      'Maryland requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Maryland requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -18301,7 +18301,7 @@ const cityInfo: Record<string, {
   },
   'lawrence-massachusetts': {
     permitNotes:
-      'Massachusetts requires sales/use tax registration (DOR). Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Massachusetts requires sales/use tax registration (DOR). Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -18331,7 +18331,7 @@ const cityInfo: Record<string, {
   },
   'lowell-massachusetts': {
     permitNotes:
-      'Massachusetts requires sales/use tax registration (DOR). Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Massachusetts requires sales/use tax registration (DOR). Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -18361,7 +18361,7 @@ const cityInfo: Record<string, {
   },
   'lynn-massachusetts': {
     permitNotes:
-      'Massachusetts requires sales/use tax registration (DOR). Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Massachusetts requires sales/use tax registration (DOR). Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -18391,7 +18391,7 @@ const cityInfo: Record<string, {
   },
   'new-bedford-massachusetts': {
     permitNotes:
-      'Massachusetts requires sales/use tax registration (DOR). Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Massachusetts requires sales/use tax registration (DOR). Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -18421,7 +18421,7 @@ const cityInfo: Record<string, {
   },
   'newton-massachusetts': {
     permitNotes:
-      'Massachusetts requires sales/use tax registration (DOR). Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Massachusetts requires sales/use tax registration (DOR). Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -18451,7 +18451,7 @@ const cityInfo: Record<string, {
   },
   'quincy-massachusetts': {
     permitNotes:
-      'Massachusetts requires sales/use tax registration (DOR). Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Massachusetts requires sales/use tax registration (DOR). Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -18481,7 +18481,7 @@ const cityInfo: Record<string, {
   },
   'barnstable-massachusetts': {
     permitNotes:
-      'Massachusetts requires sales/use tax registration (DOR). Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Massachusetts requires sales/use tax registration (DOR). Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -18511,7 +18511,7 @@ const cityInfo: Record<string, {
   },
   'brockton-massachusetts': {
     permitNotes:
-      'Massachusetts requires sales/use tax registration (DOR). Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Massachusetts requires sales/use tax registration (DOR). Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -18541,7 +18541,7 @@ const cityInfo: Record<string, {
   },
   'brookline-massachusetts': {
     permitNotes:
-      'Massachusetts requires sales/use tax registration (DOR). Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Massachusetts requires sales/use tax registration (DOR). Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -18571,7 +18571,7 @@ const cityInfo: Record<string, {
   },
   'chicopee-massachusetts': {
     permitNotes:
-      'Massachusetts requires sales/use tax registration (DOR). Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Massachusetts requires sales/use tax registration (DOR). Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -18601,7 +18601,7 @@ const cityInfo: Record<string, {
   },
   'framingham-massachusetts': {
     permitNotes:
-      'Massachusetts requires sales/use tax registration (DOR). Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Massachusetts requires sales/use tax registration (DOR). Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -18631,7 +18631,7 @@ const cityInfo: Record<string, {
   },
   'malden-massachusetts': {
     permitNotes:
-      'Massachusetts requires sales/use tax registration (DOR). Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Massachusetts requires sales/use tax registration (DOR). Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -18661,7 +18661,7 @@ const cityInfo: Record<string, {
   },
   'medford-massachusetts': {
     permitNotes:
-      'Massachusetts requires sales/use tax registration (DOR). Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Massachusetts requires sales/use tax registration (DOR). Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -18691,7 +18691,7 @@ const cityInfo: Record<string, {
   },
   'methuen-massachusetts': {
     permitNotes:
-      'Massachusetts requires sales/use tax registration (DOR). Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Massachusetts requires sales/use tax registration (DOR). Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -18721,7 +18721,7 @@ const cityInfo: Record<string, {
   },
   'peabody-massachusetts': {
     permitNotes:
-      'Massachusetts requires sales/use tax registration (DOR). Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Massachusetts requires sales/use tax registration (DOR). Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -18751,7 +18751,7 @@ const cityInfo: Record<string, {
   },
   'revere-massachusetts': {
     permitNotes:
-      'Massachusetts requires sales/use tax registration (DOR). Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Massachusetts requires sales/use tax registration (DOR). Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -18781,7 +18781,7 @@ const cityInfo: Record<string, {
   },
   'somerville-massachusetts': {
     permitNotes:
-      'Massachusetts requires sales/use tax registration (DOR). Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Massachusetts requires sales/use tax registration (DOR). Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -18811,7 +18811,7 @@ const cityInfo: Record<string, {
   },
   'taunton-massachusetts': {
     permitNotes:
-      'Massachusetts requires sales/use tax registration (DOR). Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Massachusetts requires sales/use tax registration (DOR). Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -18841,7 +18841,7 @@ const cityInfo: Record<string, {
   },
   'waltham-massachusetts': {
     permitNotes:
-      'Massachusetts requires sales/use tax registration (DOR). Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Massachusetts requires sales/use tax registration (DOR). Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -18871,7 +18871,7 @@ const cityInfo: Record<string, {
   },
   'haverhill-massachusetts': {
     permitNotes:
-      'Massachusetts requires sales/use tax registration (DOR). Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Massachusetts requires sales/use tax registration (DOR). Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -18901,7 +18901,7 @@ const cityInfo: Record<string, {
   },
   'pittsfield-massachusetts': {
     permitNotes:
-      'Massachusetts requires sales/use tax registration (DOR). Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Massachusetts requires sales/use tax registration (DOR). Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -18931,7 +18931,7 @@ const cityInfo: Record<string, {
   },
   'ann-arbor-michigan': {
     permitNotes:
-      'Michigan requires a sales tax permit from the Department of Treasury. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Michigan requires a sales tax permit from the Department of Treasury. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -18961,7 +18961,7 @@ const cityInfo: Record<string, {
   },
   'dearborn-michigan': {
     permitNotes:
-      'Michigan requires a sales tax permit from the Department of Treasury. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Michigan requires a sales tax permit from the Department of Treasury. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -18991,7 +18991,7 @@ const cityInfo: Record<string, {
   },
   'detroit-michigan': {
     permitNotes:
-      'Michigan requires a sales tax permit from the Department of Treasury. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Michigan requires a sales tax permit from the Department of Treasury. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -19021,7 +19021,7 @@ const cityInfo: Record<string, {
   },
   'farmington-hills-michigan': {
     permitNotes:
-      'Michigan requires a sales tax permit from the Department of Treasury. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Michigan requires a sales tax permit from the Department of Treasury. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -19051,7 +19051,7 @@ const cityInfo: Record<string, {
   },
   'flint-michigan': {
     permitNotes:
-      'Michigan requires a sales tax permit from the Department of Treasury. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Michigan requires a sales tax permit from the Department of Treasury. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -19081,7 +19081,7 @@ const cityInfo: Record<string, {
   },
   'grand-rapids-michigan': {
     permitNotes:
-      'Michigan requires a sales tax permit from the Department of Treasury. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Michigan requires a sales tax permit from the Department of Treasury. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -19111,7 +19111,7 @@ const cityInfo: Record<string, {
   },
   'jackson-michigan': {
     permitNotes:
-      'Michigan requires a sales tax permit from the Department of Treasury. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Michigan requires a sales tax permit from the Department of Treasury. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -19141,7 +19141,7 @@ const cityInfo: Record<string, {
   },
   'kalamazoo-michigan': {
     permitNotes:
-      'Michigan requires a sales tax permit from the Department of Treasury. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Michigan requires a sales tax permit from the Department of Treasury. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -19171,7 +19171,7 @@ const cityInfo: Record<string, {
   },
   'lansing-michigan': {
     permitNotes:
-      'Michigan requires a sales tax permit from the Department of Treasury. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Michigan requires a sales tax permit from the Department of Treasury. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -19201,7 +19201,7 @@ const cityInfo: Record<string, {
   },
   'livonia-michigan': {
     permitNotes:
-      'Michigan requires a sales tax permit from the Department of Treasury. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Michigan requires a sales tax permit from the Department of Treasury. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -19231,7 +19231,7 @@ const cityInfo: Record<string, {
   },
   'port-huron-michigan': {
     permitNotes:
-      'Michigan requires a sales tax permit from the Department of Treasury. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Michigan requires a sales tax permit from the Department of Treasury. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -19261,7 +19261,7 @@ const cityInfo: Record<string, {
   },
   'rochester-hills-michigan': {
     permitNotes:
-      'Michigan requires a sales tax permit from the Department of Treasury. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Michigan requires a sales tax permit from the Department of Treasury. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -19291,7 +19291,7 @@ const cityInfo: Record<string, {
   },
   'saginaw-michigan': {
     permitNotes:
-      'Michigan requires a sales tax permit from the Department of Treasury. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Michigan requires a sales tax permit from the Department of Treasury. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -19321,7 +19321,7 @@ const cityInfo: Record<string, {
   },
   'sterling-heights-michigan': {
     permitNotes:
-      'Michigan requires a sales tax permit from the Department of Treasury. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Michigan requires a sales tax permit from the Department of Treasury. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -19351,7 +19351,7 @@ const cityInfo: Record<string, {
   },
   'troy-michigan': {
     permitNotes:
-      'Michigan requires a sales tax permit from the Department of Treasury. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Michigan requires a sales tax permit from the Department of Treasury. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -19381,7 +19381,7 @@ const cityInfo: Record<string, {
   },
   'warren-michigan': {
     permitNotes:
-      'Michigan requires a sales tax permit from the Department of Treasury. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Michigan requires a sales tax permit from the Department of Treasury. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -19411,7 +19411,7 @@ const cityInfo: Record<string, {
   },
   'westland-michigan': {
     permitNotes:
-      'Michigan requires a sales tax permit from the Department of Treasury. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Michigan requires a sales tax permit from the Department of Treasury. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -19441,7 +19441,7 @@ const cityInfo: Record<string, {
   },
   'birmingham-michigan': {
     permitNotes:
-      'Michigan requires a sales tax permit from the Department of Treasury. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Michigan requires a sales tax permit from the Department of Treasury. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -19471,7 +19471,7 @@ const cityInfo: Record<string, {
   },
   'kentwood-michigan': {
     permitNotes:
-      'Michigan requires a sales tax permit from the Department of Treasury. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Michigan requires a sales tax permit from the Department of Treasury. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -19501,7 +19501,7 @@ const cityInfo: Record<string, {
   },
   'novi-michigan': {
     permitNotes:
-      'Michigan requires a sales tax permit from the Department of Treasury. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Michigan requires a sales tax permit from the Department of Treasury. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -19531,7 +19531,7 @@ const cityInfo: Record<string, {
   },
   'pontiac-michigan': {
     permitNotes:
-      'Michigan requires a sales tax permit from the Department of Treasury. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Michigan requires a sales tax permit from the Department of Treasury. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -19561,7 +19561,7 @@ const cityInfo: Record<string, {
   },
   'taylor-michigan': {
     permitNotes:
-      'Michigan requires a sales tax permit from the Department of Treasury. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Michigan requires a sales tax permit from the Department of Treasury. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -19591,7 +19591,7 @@ const cityInfo: Record<string, {
   },
   'wyoming-michigan': {
     permitNotes:
-      'Michigan requires a sales tax permit from the Department of Treasury. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Michigan requires a sales tax permit from the Department of Treasury. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -19621,7 +19621,7 @@ const cityInfo: Record<string, {
   },
   'battle-creek-michigan': {
     permitNotes:
-      'Michigan requires a sales tax permit from the Department of Treasury. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Michigan requires a sales tax permit from the Department of Treasury. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -19651,7 +19651,7 @@ const cityInfo: Record<string, {
   },
   'bloomington-minnesota': {
     permitNotes:
-      'Minnesota requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Minnesota requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -19681,7 +19681,7 @@ const cityInfo: Record<string, {
   },
   'brooklyn-park-minnesota': {
     permitNotes:
-      'Minnesota requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Minnesota requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -19711,7 +19711,7 @@ const cityInfo: Record<string, {
   },
   'duluth-minnesota': {
     permitNotes:
-      'Minnesota requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Minnesota requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -19741,7 +19741,7 @@ const cityInfo: Record<string, {
   },
   'eagan-minnesota': {
     permitNotes:
-      'Minnesota requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Minnesota requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -19771,7 +19771,7 @@ const cityInfo: Record<string, {
   },
   'lakeville-minnesota': {
     permitNotes:
-      'Minnesota requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Minnesota requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -19801,7 +19801,7 @@ const cityInfo: Record<string, {
   },
   'mankato-minnesota': {
     permitNotes:
-      'Minnesota requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Minnesota requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -19831,7 +19831,7 @@ const cityInfo: Record<string, {
   },
   'maple-grove-minnesota': {
     permitNotes:
-      'Minnesota requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Minnesota requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -19861,7 +19861,7 @@ const cityInfo: Record<string, {
   },
   'minneapolis-minnesota': {
     permitNotes:
-      'Minnesota requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Minnesota requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -19891,7 +19891,7 @@ const cityInfo: Record<string, {
   },
   'plymouth-minnesota': {
     permitNotes:
-      'Minnesota requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Minnesota requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -19921,7 +19921,7 @@ const cityInfo: Record<string, {
   },
   'rochester-minnesota': {
     permitNotes:
-      'Minnesota requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Minnesota requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -19951,7 +19951,7 @@ const cityInfo: Record<string, {
   },
   'saint-paul-minnesota': {
     permitNotes:
-      'Minnesota requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Minnesota requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -19981,7 +19981,7 @@ const cityInfo: Record<string, {
   },
   'st-paul-minnesota': {
     permitNotes:
-      'Minnesota requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Minnesota requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -20011,7 +20011,7 @@ const cityInfo: Record<string, {
   },
   'st-cloud-minnesota': {
     permitNotes:
-      'Minnesota requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Minnesota requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -20041,7 +20041,7 @@ const cityInfo: Record<string, {
   },
   'woodbury-minnesota': {
     permitNotes:
-      'Minnesota requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Minnesota requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -20071,7 +20071,7 @@ const cityInfo: Record<string, {
   },
   'burnsville-minnesota': {
     permitNotes:
-      'Minnesota requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Minnesota requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -20101,7 +20101,7 @@ const cityInfo: Record<string, {
   },
   'coon-rapids-minnesota': {
     permitNotes:
-      'Minnesota requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Minnesota requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -20131,7 +20131,7 @@ const cityInfo: Record<string, {
   },
   'eden-prairie-minnesota': {
     permitNotes:
-      'Minnesota requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Minnesota requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -20161,7 +20161,7 @@ const cityInfo: Record<string, {
   },
   'moorhead-minnesota': {
     permitNotes:
-      'Minnesota requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Minnesota requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -20191,7 +20191,7 @@ const cityInfo: Record<string, {
   },
   'saint-cloud-minnesota': {
     permitNotes:
-      'Minnesota requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Minnesota requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -20221,7 +20221,7 @@ const cityInfo: Record<string, {
   },
   'biloxi-mississippi': {
     permitNotes:
-      'Mississippi requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Mississippi requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -20251,7 +20251,7 @@ const cityInfo: Record<string, {
   },
   'gulfport-mississippi': {
     permitNotes:
-      'Mississippi requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Mississippi requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -20281,7 +20281,7 @@ const cityInfo: Record<string, {
   },
   'hattiesburg-mississippi': {
     permitNotes:
-      'Mississippi requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Mississippi requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -20311,7 +20311,7 @@ const cityInfo: Record<string, {
   },
   'jackson-mississippi': {
     permitNotes:
-      'Mississippi requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Mississippi requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -20341,7 +20341,7 @@ const cityInfo: Record<string, {
   },
   'southaven-mississippi': {
     permitNotes:
-      'Mississippi requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Mississippi requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -20371,7 +20371,7 @@ const cityInfo: Record<string, {
   },
   'tupelo-mississippi': {
     permitNotes:
-      'Mississippi requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Mississippi requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -20401,7 +20401,7 @@ const cityInfo: Record<string, {
   },
   'columbus-mississippi': {
     permitNotes:
-      'Mississippi requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Mississippi requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -20431,7 +20431,7 @@ const cityInfo: Record<string, {
   },
   'greenville-mississippi': {
     permitNotes:
-      'Mississippi requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Mississippi requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -20461,7 +20461,7 @@ const cityInfo: Record<string, {
   },
   'meridian-mississippi': {
     permitNotes:
-      'Mississippi requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Mississippi requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -20491,7 +20491,7 @@ const cityInfo: Record<string, {
   },
   'oxford-mississippi': {
     permitNotes:
-      'Mississippi requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Mississippi requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -20521,7 +20521,7 @@ const cityInfo: Record<string, {
   },
   'starkville-mississippi': {
     permitNotes:
-      'Mississippi requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Mississippi requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -20551,7 +20551,7 @@ const cityInfo: Record<string, {
   },
   'natchez-mississippi': {
     permitNotes:
-      'Mississippi requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Mississippi requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -20581,7 +20581,7 @@ const cityInfo: Record<string, {
   },
   'vicksburg-mississippi': {
     permitNotes:
-      'Mississippi requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Mississippi requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -20611,7 +20611,7 @@ const cityInfo: Record<string, {
   },
   'columbia-missouri': {
     permitNotes:
-      'Missouri requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Missouri requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -20641,7 +20641,7 @@ const cityInfo: Record<string, {
   },
   'independence-missouri': {
     permitNotes:
-      'Missouri requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Missouri requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -20671,7 +20671,7 @@ const cityInfo: Record<string, {
   },
   'joplin-missouri': {
     permitNotes:
-      'Missouri requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Missouri requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -20701,7 +20701,7 @@ const cityInfo: Record<string, {
   },
   'kansas-city-missouri': {
     permitNotes:
-      'Missouri requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Missouri requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -20731,7 +20731,7 @@ const cityInfo: Record<string, {
   },
   'springfield-missouri': {
     permitNotes:
-      'Missouri requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Missouri requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -20761,7 +20761,7 @@ const cityInfo: Record<string, {
   },
   'st-louis-missouri': {
     permitNotes:
-      'Missouri requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Missouri requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -20791,7 +20791,7 @@ const cityInfo: Record<string, {
   },
   'blue-springs-missouri': {
     permitNotes:
-      'Missouri requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Missouri requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -20821,7 +20821,7 @@ const cityInfo: Record<string, {
   },
   'cape-girardeau-missouri': {
     permitNotes:
-      'Missouri requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Missouri requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -20851,7 +20851,7 @@ const cityInfo: Record<string, {
   },
   'florissant-missouri': {
     permitNotes:
-      'Missouri requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Missouri requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -20881,7 +20881,7 @@ const cityInfo: Record<string, {
   },
   'saint-charles-missouri': {
     permitNotes:
-      'Missouri requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Missouri requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -20911,7 +20911,7 @@ const cityInfo: Record<string, {
   },
   'saint-joseph-missouri': {
     permitNotes:
-      'Missouri requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Missouri requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -20941,7 +20941,7 @@ const cityInfo: Record<string, {
   },
   'saint-louis-missouri': {
     permitNotes:
-      'Missouri requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Missouri requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -20971,7 +20971,7 @@ const cityInfo: Record<string, {
   },
   'saint-peters-missouri': {
     permitNotes:
-      'Missouri requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Missouri requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -21001,7 +21001,7 @@ const cityInfo: Record<string, {
   },
   'kalispell-montana': {
     permitNotes:
-      'Montana has no statewide sales tax. Verify any local resort/option taxes and follow county health guidance for vending machines that sell food or beverages.\',
+      'Montana has no statewide sales tax. Verify any local resort/option taxes and follow county health guidance for vending machines that sell food or beverages.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -21031,7 +21031,7 @@ const cityInfo: Record<string, {
   },
   'havre-montana': {
     permitNotes:
-      'Montana has no statewide sales tax. Verify any local resort/option taxes and follow county health guidance for vending machines that sell food or beverages.\',
+      'Montana has no statewide sales tax. Verify any local resort/option taxes and follow county health guidance for vending machines that sell food or beverages.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -21061,7 +21061,7 @@ const cityInfo: Record<string, {
   },
   'jefferson-city-missouri': {
     permitNotes:
-      'Missouri requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Missouri requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -21091,7 +21091,7 @@ const cityInfo: Record<string, {
   },
   'st-charles-missouri': {
     permitNotes:
-      'Missouri requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Missouri requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -21121,7 +21121,7 @@ const cityInfo: Record<string, {
   },
   'st-joseph-missouri': {
     permitNotes:
-      'Missouri requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Missouri requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -21151,7 +21151,7 @@ const cityInfo: Record<string, {
   },
   'st-peters-missouri': {
     permitNotes:
-      'Missouri requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Missouri requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -21181,7 +21181,7 @@ const cityInfo: Record<string, {
   },
   'bellevue-nebraska': {
     permitNotes:
-      'Nebraska requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Nebraska requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -21211,7 +21211,7 @@ const cityInfo: Record<string, {
   },
   'grand-island-nebraska': {
     permitNotes:
-      'Nebraska requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Nebraska requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -21241,7 +21241,7 @@ const cityInfo: Record<string, {
   },
   'lincoln-nebraska': {
     permitNotes:
-      'Nebraska requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Nebraska requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -21271,7 +21271,7 @@ const cityInfo: Record<string, {
   },
   'omaha-nebraska': {
     permitNotes:
-      'Nebraska requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Nebraska requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -21301,7 +21301,7 @@ const cityInfo: Record<string, {
   },
   'fremont-nebraska': {
     permitNotes:
-      'Nebraska requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Nebraska requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -21331,7 +21331,7 @@ const cityInfo: Record<string, {
   },
   'hastings-nebraska': {
     permitNotes:
-      'Nebraska requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Nebraska requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -21361,7 +21361,7 @@ const cityInfo: Record<string, {
   },
   'kearney-nebraska': {
     permitNotes:
-      'Nebraska requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Nebraska requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -21391,7 +21391,7 @@ const cityInfo: Record<string, {
   },
   'norfolk-nebraska': {
     permitNotes:
-      'Nebraska requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Nebraska requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -21421,7 +21421,7 @@ const cityInfo: Record<string, {
   },
   'north-platte-nebraska': {
     permitNotes:
-      'Nebraska requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Nebraska requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -21451,7 +21451,7 @@ const cityInfo: Record<string, {
   },
   'boulder-city-nevada': {
     permitNotes:
-      'Nevada requires a sales tax permit from the Department of Taxation. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Nevada requires a sales tax permit from the Department of Taxation. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -21481,7 +21481,7 @@ const cityInfo: Record<string, {
   },
   'carson-city-nevada': {
     permitNotes:
-      'Nevada requires a sales tax permit from the Department of Taxation. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Nevada requires a sales tax permit from the Department of Taxation. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -21511,7 +21511,7 @@ const cityInfo: Record<string, {
   },
   'elko-nevada': {
     permitNotes:
-      'Nevada requires a sales tax permit from the Department of Taxation. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Nevada requires a sales tax permit from the Department of Taxation. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -21541,7 +21541,7 @@ const cityInfo: Record<string, {
   },
   'enterprise-nevada': {
     permitNotes:
-      'Nevada requires a sales tax permit from the Department of Taxation. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Nevada requires a sales tax permit from the Department of Taxation. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -21571,7 +21571,7 @@ const cityInfo: Record<string, {
   },
   'fallon-nevada': {
     permitNotes:
-      'Nevada requires a sales tax permit from the Department of Taxation. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Nevada requires a sales tax permit from the Department of Taxation. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -21601,7 +21601,7 @@ const cityInfo: Record<string, {
   },
   'fernley-nevada': {
     permitNotes:
-      'Nevada requires a sales tax permit from the Department of Taxation. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Nevada requires a sales tax permit from the Department of Taxation. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -21631,7 +21631,7 @@ const cityInfo: Record<string, {
   },
   'henderson-nevada': {
     permitNotes:
-      'Nevada requires a sales tax permit from the Department of Taxation. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Nevada requires a sales tax permit from the Department of Taxation. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -21661,7 +21661,7 @@ const cityInfo: Record<string, {
   },
   'las-vegas-nevada': {
     permitNotes:
-      'Nevada requires a sales tax permit from the Department of Taxation. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Nevada requires a sales tax permit from the Department of Taxation. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -21691,7 +21691,7 @@ const cityInfo: Record<string, {
   },
   'mesquite-nevada': {
     permitNotes:
-      'Nevada requires a sales tax permit from the Department of Taxation. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Nevada requires a sales tax permit from the Department of Taxation. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -21721,7 +21721,7 @@ const cityInfo: Record<string, {
   },
   'north-las-vegas-nevada': {
     permitNotes:
-      'Nevada requires a sales tax permit from the Department of Taxation. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Nevada requires a sales tax permit from the Department of Taxation. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -21751,7 +21751,7 @@ const cityInfo: Record<string, {
   },
   'pahrump-nevada': {
     permitNotes:
-      'Nevada requires a sales tax permit from the Department of Taxation. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Nevada requires a sales tax permit from the Department of Taxation. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -21781,7 +21781,7 @@ const cityInfo: Record<string, {
   },
   'reno-nevada': {
     permitNotes:
-      'Nevada requires a sales tax permit from the Department of Taxation. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Nevada requires a sales tax permit from the Department of Taxation. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -21811,7 +21811,7 @@ const cityInfo: Record<string, {
   },
   'sparks-nevada': {
     permitNotes:
-      'Nevada requires a sales tax permit from the Department of Taxation. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Nevada requires a sales tax permit from the Department of Taxation. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -21841,7 +21841,7 @@ const cityInfo: Record<string, {
   },
   'concord-new-hampshire': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -21871,7 +21871,7 @@ const cityInfo: Record<string, {
   },
   'derry-new-hampshire': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -21901,7 +21901,7 @@ const cityInfo: Record<string, {
   },
   'dover-new-hampshire': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -21931,7 +21931,7 @@ const cityInfo: Record<string, {
   },
   'manchester-new-hampshire': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -21961,7 +21961,7 @@ const cityInfo: Record<string, {
   },
   'merrimack-new-hampshire': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -21991,7 +21991,7 @@ const cityInfo: Record<string, {
   },
   'nashua-new-hampshire': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -22021,7 +22021,7 @@ const cityInfo: Record<string, {
   },
   'portsmouth-new-hampshire': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -22051,7 +22051,7 @@ const cityInfo: Record<string, {
   },
   'rochester-new-hampshire': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -22081,7 +22081,7 @@ const cityInfo: Record<string, {
   },
   'salem-new-hampshire': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -22111,7 +22111,7 @@ const cityInfo: Record<string, {
   },
   'trenton-new-jersey': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -22141,7 +22141,7 @@ const cityInfo: Record<string, {
   },
   'bayonne-new-jersey': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -22171,7 +22171,7 @@ const cityInfo: Record<string, {
   },
   'camden-new-jersey': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -22201,7 +22201,7 @@ const cityInfo: Record<string, {
   },
   'cherry-hill-new-jersey': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -22231,7 +22231,7 @@ const cityInfo: Record<string, {
   },
   'clifton-new-jersey': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -22261,7 +22261,7 @@ const cityInfo: Record<string, {
   },
   'hackensack-new-jersey': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -22291,7 +22291,7 @@ const cityInfo: Record<string, {
   },
   'hoboken-new-jersey': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -22321,7 +22321,7 @@ const cityInfo: Record<string, {
   },
   'kearny-new-jersey': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -22351,7 +22351,7 @@ const cityInfo: Record<string, {
   },
   'new-brunswick-new-jersey': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -22381,7 +22381,7 @@ const cityInfo: Record<string, {
   },
   'passaic-new-jersey': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -22411,7 +22411,7 @@ const cityInfo: Record<string, {
   },
   'perth-amboy-new-jersey': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -22441,7 +22441,7 @@ const cityInfo: Record<string, {
   },
   'plainfield-new-jersey': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -22471,7 +22471,7 @@ const cityInfo: Record<string, {
   },
   'sayreville-new-jersey': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -22501,7 +22501,7 @@ const cityInfo: Record<string, {
   },
   'union-city-new-jersey': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -22531,7 +22531,7 @@ const cityInfo: Record<string, {
   },
   'vineland-new-jersey': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -22561,7 +22561,7 @@ const cityInfo: Record<string, {
   },
   'west-new-york-new-jersey': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -22591,7 +22591,7 @@ const cityInfo: Record<string, {
   },
   'east-orange-new-jersey': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -22621,7 +22621,7 @@ const cityInfo: Record<string, {
   },
   'albuquerque-new-mexico': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -22651,7 +22651,7 @@ const cityInfo: Record<string, {
   },
   'farmington-new-mexico': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -22681,7 +22681,7 @@ const cityInfo: Record<string, {
   },
   'las-cruces-new-mexico': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -22711,7 +22711,7 @@ const cityInfo: Record<string, {
   },
   'rio-rancho-new-mexico': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -22741,7 +22741,7 @@ const cityInfo: Record<string, {
   },
   'santa-fe-new-mexico': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -22771,7 +22771,7 @@ const cityInfo: Record<string, {
   },
   'carlsbad-new-mexico': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -22801,7 +22801,7 @@ const cityInfo: Record<string, {
   },
   'clovis-new-mexico': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -22831,7 +22831,7 @@ const cityInfo: Record<string, {
   },
   'gallup-new-mexico': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -22861,7 +22861,7 @@ const cityInfo: Record<string, {
   },
   'hobbs-new-mexico': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -22891,7 +22891,7 @@ const cityInfo: Record<string, {
   },
   'roswell-new-mexico': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -22921,7 +22921,7 @@ const cityInfo: Record<string, {
   },
   'binghamton-new-york': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -22951,7 +22951,7 @@ const cityInfo: Record<string, {
   },
   'ithaca-new-york': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -22981,7 +22981,7 @@ const cityInfo: Record<string, {
   },
   'mount-vernon-new-york': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -23011,7 +23011,7 @@ const cityInfo: Record<string, {
   },
   'new-rochelle-new-york': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -23041,7 +23041,7 @@ const cityInfo: Record<string, {
   },
   'schenectady-new-york': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -23071,7 +23071,7 @@ const cityInfo: Record<string, {
   },
   'troy-new-york': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -23101,7 +23101,7 @@ const cityInfo: Record<string, {
   },
   'utica-new-york': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -23131,7 +23131,7 @@ const cityInfo: Record<string, {
   },
   'white-plains-new-york': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -23161,7 +23161,7 @@ const cityInfo: Record<string, {
   },
   'yonkers-new-york': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -23191,7 +23191,7 @@ const cityInfo: Record<string, {
   },
   'amherst-new-york': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -23221,7 +23221,7 @@ const cityInfo: Record<string, {
   },
   'niagara-falls-new-york': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -23251,7 +23251,7 @@ const cityInfo: Record<string, {
   },
   'poughkeepsie-new-york': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -23281,7 +23281,7 @@ const cityInfo: Record<string, {
   },
   'rome-new-york': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -23311,7 +23311,7 @@ const cityInfo: Record<string, {
   },
   'watertown-new-york': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -23341,7 +23341,7 @@ const cityInfo: Record<string, {
   },
   'asheville-north-carolina': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -23371,7 +23371,7 @@ const cityInfo: Record<string, {
   },
   'cary-north-carolina': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -23401,7 +23401,7 @@ const cityInfo: Record<string, {
   },
   'charlotte-north-carolina': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -23431,7 +23431,7 @@ const cityInfo: Record<string, {
   },
   'concord-north-carolina': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -23461,7 +23461,7 @@ const cityInfo: Record<string, {
   },
   'durham-north-carolina': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -23491,7 +23491,7 @@ const cityInfo: Record<string, {
   },
   'fayetteville-north-carolina': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -23521,7 +23521,7 @@ const cityInfo: Record<string, {
   },
   'gastonia-north-carolina': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -23551,7 +23551,7 @@ const cityInfo: Record<string, {
   },
   'greensboro-north-carolina': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -23581,7 +23581,7 @@ const cityInfo: Record<string, {
   },
   'hickory-north-carolina': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -23611,7 +23611,7 @@ const cityInfo: Record<string, {
   },
   'high-point-north-carolina': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -23641,7 +23641,7 @@ const cityInfo: Record<string, {
   },
   'raleigh-north-carolina': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -23671,7 +23671,7 @@ const cityInfo: Record<string, {
   },
   'wilmington-north-carolina': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -23701,7 +23701,7 @@ const cityInfo: Record<string, {
   },
   'winston-salem-north-carolina': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -23731,7 +23731,7 @@ const cityInfo: Record<string, {
   },
   'burlington-north-carolina': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -23761,7 +23761,7 @@ const cityInfo: Record<string, {
   },
   'chapel-hill-north-carolina': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -23791,7 +23791,7 @@ const cityInfo: Record<string, {
   },
   'greenville-north-carolina': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -23821,7 +23821,7 @@ const cityInfo: Record<string, {
   },
   'jacksonville-north-carolina': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -23851,7 +23851,7 @@ const cityInfo: Record<string, {
   },
   'kannapolis-north-carolina': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -23881,7 +23881,7 @@ const cityInfo: Record<string, {
   },
   'rocky-mount-north-carolina': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -23911,7 +23911,7 @@ const cityInfo: Record<string, {
   },
   'salisbury-north-carolina': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -23941,7 +23941,7 @@ const cityInfo: Record<string, {
   },
   'wilson-north-carolina': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -23971,7 +23971,7 @@ const cityInfo: Record<string, {
   },
   'bismarck-north-dakota': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -24001,7 +24001,7 @@ const cityInfo: Record<string, {
   },
   'fargo-north-dakota': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -24031,7 +24031,7 @@ const cityInfo: Record<string, {
   },
   'grand-forks-north-dakota': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -24061,7 +24061,7 @@ const cityInfo: Record<string, {
   },
   'minot-north-dakota': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -24091,7 +24091,7 @@ const cityInfo: Record<string, {
   },
   'dickinson-north-dakota': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -24121,7 +24121,7 @@ const cityInfo: Record<string, {
   },
   'jamestown-north-dakota': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -24151,7 +24151,7 @@ const cityInfo: Record<string, {
   },
   'wahpeton-north-dakota': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -24181,7 +24181,7 @@ const cityInfo: Record<string, {
   },
   'williston-north-dakota': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -24721,7 +24721,7 @@ const cityInfo: Record<string, {
   },
   'broken-arrow-oklahoma': {
     permitNotes:
-      'Oklahoma requires a sales tax permit from the Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Oklahoma requires a sales tax permit from the Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -24751,7 +24751,7 @@ const cityInfo: Record<string, {
   },
   'lawton-oklahoma': {
     permitNotes:
-      'Oklahoma requires a sales tax permit from the Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Oklahoma requires a sales tax permit from the Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -24781,7 +24781,7 @@ const cityInfo: Record<string, {
   },
   'norman-oklahoma': {
     permitNotes:
-      'Oklahoma requires a sales tax permit from the Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Oklahoma requires a sales tax permit from the Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -24811,7 +24811,7 @@ const cityInfo: Record<string, {
   },
   'oklahoma-city-oklahoma': {
     permitNotes:
-      'Oklahoma requires a sales tax permit from the Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Oklahoma requires a sales tax permit from the Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -24841,7 +24841,7 @@ const cityInfo: Record<string, {
   },
   'tulsa-oklahoma': {
     permitNotes:
-      'Oklahoma requires a sales tax permit from the Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Oklahoma requires a sales tax permit from the Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -24871,7 +24871,7 @@ const cityInfo: Record<string, {
   },
   'edmond-oklahoma': {
     permitNotes:
-      'Oklahoma requires a sales tax permit from the Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Oklahoma requires a sales tax permit from the Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -24901,7 +24901,7 @@ const cityInfo: Record<string, {
   },
   'enid-oklahoma': {
     permitNotes:
-      'Oklahoma requires a sales tax permit from the Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Oklahoma requires a sales tax permit from the Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -24931,7 +24931,7 @@ const cityInfo: Record<string, {
   },
   'midwest-city-oklahoma': {
     permitNotes:
-      'Oklahoma requires a sales tax permit from the Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Oklahoma requires a sales tax permit from the Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -24961,7 +24961,7 @@ const cityInfo: Record<string, {
   },
   'moore-oklahoma': {
     permitNotes:
-      'Oklahoma requires a sales tax permit from the Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Oklahoma requires a sales tax permit from the Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -24991,7 +24991,7 @@ const cityInfo: Record<string, {
   },
   'stillwater-oklahoma': {
     permitNotes:
-      'Oklahoma requires a sales tax permit from the Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Oklahoma requires a sales tax permit from the Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -25021,7 +25021,7 @@ const cityInfo: Record<string, {
   },
   'albany-oregon': {
     permitNotes:
-      'Oregon has no state sales tax. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Oregon has no state sales tax. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -25051,7 +25051,7 @@ const cityInfo: Record<string, {
   },
   'beaverton-oregon': {
     permitNotes:
-      'Oregon has no state sales tax. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Oregon has no state sales tax. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -25081,7 +25081,7 @@ const cityInfo: Record<string, {
   },
   'bend-oregon': {
     permitNotes:
-      'Oregon has no state sales tax. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Oregon has no state sales tax. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -25111,7 +25111,7 @@ const cityInfo: Record<string, {
   },
   'corvallis-oregon': {
     permitNotes:
-      'Oregon has no state sales tax. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Oregon has no state sales tax. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -25141,7 +25141,7 @@ const cityInfo: Record<string, {
   },
   'eugene-oregon': {
     permitNotes:
-      'Oregon has no state sales tax. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Oregon has no state sales tax. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -25171,7 +25171,7 @@ const cityInfo: Record<string, {
   },
   'gresham-oregon': {
     permitNotes:
-      'Oregon has no state sales tax. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Oregon has no state sales tax. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -25201,7 +25201,7 @@ const cityInfo: Record<string, {
   },
   'hillsboro-oregon': {
     permitNotes:
-      'Oregon has no state sales tax. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Oregon has no state sales tax. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -25231,7 +25231,7 @@ const cityInfo: Record<string, {
   },
   'keizer-oregon': {
     permitNotes:
-      'Oregon has no state sales tax. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Oregon has no state sales tax. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -25261,7 +25261,7 @@ const cityInfo: Record<string, {
   },
   'medford-oregon': {
     permitNotes:
-      'Oregon has no state sales tax. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Oregon has no state sales tax. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -25291,7 +25291,7 @@ const cityInfo: Record<string, {
   },
   'portland-oregon': {
     permitNotes:
-      'Oregon has no state sales tax. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Oregon has no state sales tax. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -25321,7 +25321,7 @@ const cityInfo: Record<string, {
   },
   'salem-oregon': {
     permitNotes:
-      'Oregon has no state sales tax. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Oregon has no state sales tax. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -25351,7 +25351,7 @@ const cityInfo: Record<string, {
   },
   'springfield-oregon': {
     permitNotes:
-      'Oregon has no state sales tax. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Oregon has no state sales tax. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -25381,7 +25381,7 @@ const cityInfo: Record<string, {
   },
   'tigard-oregon': {
     permitNotes:
-      'Oregon has no state sales tax. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Oregon has no state sales tax. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -25411,7 +25411,7 @@ const cityInfo: Record<string, {
   },
   'allentown-pennsylvania': {
     permitNotes:
-      'Pennsylvania requires a sales tax license from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Pennsylvania requires a sales tax license from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -25441,7 +25441,7 @@ const cityInfo: Record<string, {
   },
   'bethlehem-pennsylvania': {
     permitNotes:
-      'Pennsylvania requires a sales tax license from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Pennsylvania requires a sales tax license from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -25471,7 +25471,7 @@ const cityInfo: Record<string, {
   },
   'erie-pennsylvania': {
     permitNotes:
-      'Pennsylvania requires a sales tax license from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Pennsylvania requires a sales tax license from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -25501,7 +25501,7 @@ const cityInfo: Record<string, {
   },
   'harrisburg-pennsylvania': {
     permitNotes:
-      'Pennsylvania requires a sales tax license from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Pennsylvania requires a sales tax license from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -25531,7 +25531,7 @@ const cityInfo: Record<string, {
   },
   'lancaster-pennsylvania': {
     permitNotes:
-      'Pennsylvania requires a sales tax license from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Pennsylvania requires a sales tax license from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -25561,7 +25561,7 @@ const cityInfo: Record<string, {
   },
   'philadelphia-pennsylvania': {
     permitNotes:
-      'Pennsylvania requires a sales tax license from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Pennsylvania requires a sales tax license from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -25591,7 +25591,7 @@ const cityInfo: Record<string, {
   },
   'pittsburgh-pennsylvania': {
     permitNotes:
-      'Pennsylvania requires a sales tax license from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Pennsylvania requires a sales tax license from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -25621,7 +25621,7 @@ const cityInfo: Record<string, {
   },
   'reading-pennsylvania': {
     permitNotes:
-      'Pennsylvania requires a sales tax license from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Pennsylvania requires a sales tax license from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -25651,7 +25651,7 @@ const cityInfo: Record<string, {
   },
   'scranton-pennsylvania': {
     permitNotes:
-      'Pennsylvania requires a sales tax license from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Pennsylvania requires a sales tax license from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -25681,7 +25681,7 @@ const cityInfo: Record<string, {
   },
   'york-pennsylvania': {
     permitNotes:
-      'Pennsylvania requires a sales tax license from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Pennsylvania requires a sales tax license from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -25711,7 +25711,7 @@ const cityInfo: Record<string, {
   },
   'wilkes-barre-pennsylvania': {
     permitNotes:
-      'Pennsylvania requires a sales tax license from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Pennsylvania requires a sales tax license from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -25741,7 +25741,7 @@ const cityInfo: Record<string, {
   },
   'cranston-rhode-island': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -25771,7 +25771,7 @@ const cityInfo: Record<string, {
   },
   'pawtucket-rhode-island': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -25801,7 +25801,7 @@ const cityInfo: Record<string, {
   },
   'providence-rhode-island': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -25831,7 +25831,7 @@ const cityInfo: Record<string, {
   },
   'warwick-rhode-island': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -25861,7 +25861,7 @@ const cityInfo: Record<string, {
   },
   'woonsocket-rhode-island': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -25891,7 +25891,7 @@ const cityInfo: Record<string, {
   },
   'central-falls-rhode-island': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -25921,7 +25921,7 @@ const cityInfo: Record<string, {
   },
   'east-greenwich-rhode-island': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -25951,7 +25951,7 @@ const cityInfo: Record<string, {
   },
   'east-providence-rhode-island': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -25981,7 +25981,7 @@ const cityInfo: Record<string, {
   },
   'newport-rhode-island': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -26011,7 +26011,7 @@ const cityInfo: Record<string, {
   },
   'aiken-south-carolina': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -26041,7 +26041,7 @@ const cityInfo: Record<string, {
   },
   'anderson-south-carolina': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -26071,7 +26071,7 @@ const cityInfo: Record<string, {
   },
   'charleston-south-carolina': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -26101,7 +26101,7 @@ const cityInfo: Record<string, {
   },
   'columbia-south-carolina': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -26131,7 +26131,7 @@ const cityInfo: Record<string, {
   },
   'conway-south-carolina': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -26161,7 +26161,7 @@ const cityInfo: Record<string, {
   },
   'florence-south-carolina': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -26191,7 +26191,7 @@ const cityInfo: Record<string, {
   },
   'goose-creek-south-carolina': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -26221,7 +26221,7 @@ const cityInfo: Record<string, {
   },
   'greenville-south-carolina': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -26251,7 +26251,7 @@ const cityInfo: Record<string, {
   },
   'hilton-head-island-south-carolina': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -26281,7 +26281,7 @@ const cityInfo: Record<string, {
   },
   'mount-pleasant-south-carolina': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -26311,7 +26311,7 @@ const cityInfo: Record<string, {
   },
   'myrtle-beach-south-carolina': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -26341,7 +26341,7 @@ const cityInfo: Record<string, {
   },
   'north-charleston-south-carolina': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -26371,7 +26371,7 @@ const cityInfo: Record<string, {
   },
   'rock-hill-south-carolina': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -26401,7 +26401,7 @@ const cityInfo: Record<string, {
   },
   'spartanburg-south-carolina': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -26431,7 +26431,7 @@ const cityInfo: Record<string, {
   },
   'summerville-south-carolina': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -26461,7 +26461,7 @@ const cityInfo: Record<string, {
   },
   'aberdeen-south-dakota': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -26491,7 +26491,7 @@ const cityInfo: Record<string, {
   },
   'rapid-city-south-dakota': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -26521,7 +26521,7 @@ const cityInfo: Record<string, {
   },
   'sioux-falls-south-dakota': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -26551,7 +26551,7 @@ const cityInfo: Record<string, {
   },
   'mitchell-south-dakota': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -26581,7 +26581,7 @@ const cityInfo: Record<string, {
   },
   'pierre-south-dakota': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -26611,7 +26611,7 @@ const cityInfo: Record<string, {
   },
   'watertown-south-dakota': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -26641,7 +26641,7 @@ const cityInfo: Record<string, {
   },
   'yankton-south-dakota': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.\',
+      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -26671,7 +26671,7 @@ const cityInfo: Record<string, {
   },
   'chattanooga-tennessee': {
     permitNotes:
-      'Tennessee requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Tennessee requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -26701,7 +26701,7 @@ const cityInfo: Record<string, {
   },
   'clarksville-tennessee': {
     permitNotes:
-      'Tennessee requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Tennessee requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -26731,7 +26731,7 @@ const cityInfo: Record<string, {
   },
   'franklin-tennessee': {
     permitNotes:
-      'Tennessee requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Tennessee requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -26761,7 +26761,7 @@ const cityInfo: Record<string, {
   },
   'jackson-tennessee': {
     permitNotes:
-      'Tennessee requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Tennessee requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -26791,7 +26791,7 @@ const cityInfo: Record<string, {
   },
   'johnson-city-tennessee': {
     permitNotes:
-      'Tennessee requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Tennessee requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -26821,7 +26821,7 @@ const cityInfo: Record<string, {
   },
   'kingsport-tennessee': {
     permitNotes:
-      'Tennessee requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Tennessee requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -26851,7 +26851,7 @@ const cityInfo: Record<string, {
   },
   'knoxville-tennessee': {
     permitNotes:
-      'Tennessee requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Tennessee requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -26881,7 +26881,7 @@ const cityInfo: Record<string, {
   },
   'memphis-tennessee': {
     permitNotes:
-      'Tennessee requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Tennessee requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -26911,7 +26911,7 @@ const cityInfo: Record<string, {
   },
   'murfreesboro-tennessee': {
     permitNotes:
-      'Tennessee requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Tennessee requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -26941,7 +26941,7 @@ const cityInfo: Record<string, {
   },
   'nashville-tennessee': {
     permitNotes:
-      'Tennessee requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Tennessee requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -26971,7 +26971,7 @@ const cityInfo: Record<string, {
   },
   'bartlett-tennessee': {
     permitNotes:
-      'Tennessee requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Tennessee requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -27001,7 +27001,7 @@ const cityInfo: Record<string, {
   },
   'brentwood-tennessee': {
     permitNotes:
-      'Tennessee requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Tennessee requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -27031,7 +27031,7 @@ const cityInfo: Record<string, {
   },
   'collierville-tennessee': {
     permitNotes:
-      'Tennessee requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Tennessee requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -27061,7 +27061,7 @@ const cityInfo: Record<string, {
   },
   'abilene-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -27091,7 +27091,7 @@ const cityInfo: Record<string, {
   },
   'allen-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -27121,7 +27121,7 @@ const cityInfo: Record<string, {
   },
   'amarillo-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -27151,7 +27151,7 @@ const cityInfo: Record<string, {
   },
   'arlington-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -27181,7 +27181,7 @@ const cityInfo: Record<string, {
   },
   'austin-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -27211,7 +27211,7 @@ const cityInfo: Record<string, {
   },
   'beaumont-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -27241,7 +27241,7 @@ const cityInfo: Record<string, {
   },
   'brownsville-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -27271,7 +27271,7 @@ const cityInfo: Record<string, {
   },
   'college-station-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -27301,7 +27301,7 @@ const cityInfo: Record<string, {
   },
   'conroe-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -27331,7 +27331,7 @@ const cityInfo: Record<string, {
   },
   'corpus-christi-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -27361,7 +27361,7 @@ const cityInfo: Record<string, {
   },
   'dallas-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -27391,7 +27391,7 @@ const cityInfo: Record<string, {
   },
   'edinburg-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -27421,7 +27421,7 @@ const cityInfo: Record<string, {
   },
   'el-paso-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -27451,7 +27451,7 @@ const cityInfo: Record<string, {
   },
   'fort-worth-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -27481,7 +27481,7 @@ const cityInfo: Record<string, {
   },
   'garland-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -27511,7 +27511,7 @@ const cityInfo: Record<string, {
   },
   'grand-prairie-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -27541,7 +27541,7 @@ const cityInfo: Record<string, {
   },
   'frisco-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -27571,7 +27571,7 @@ const cityInfo: Record<string, {
   },
   'mckinney-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -27601,7 +27601,7 @@ const cityInfo: Record<string, {
   },
   'denton-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -27631,7 +27631,7 @@ const cityInfo: Record<string, {
   },
   'carrollton-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -27661,7 +27661,7 @@ const cityInfo: Record<string, {
   },
   'richardson-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -27691,7 +27691,7 @@ const cityInfo: Record<string, {
   },
   'lewisville-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -27721,7 +27721,7 @@ const cityInfo: Record<string, {
   },
   'round-rock-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -27751,7 +27751,7 @@ const cityInfo: Record<string, {
   },
   'league-city-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -27781,7 +27781,7 @@ const cityInfo: Record<string, {
   },
   'sugar-land-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -27811,7 +27811,7 @@ const cityInfo: Record<string, {
   },
   'temple-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -27841,7 +27841,7 @@ const cityInfo: Record<string, {
   },
   'tyler-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -27871,7 +27871,7 @@ const cityInfo: Record<string, {
   },
   'waco-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -27901,7 +27901,7 @@ const cityInfo: Record<string, {
   },
   'pearland-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -27931,7 +27931,7 @@ const cityInfo: Record<string, {
   },
   'houston-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -27961,7 +27961,7 @@ const cityInfo: Record<string, {
   },
   'irving-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -27991,7 +27991,7 @@ const cityInfo: Record<string, {
   },
   'killeen-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -28021,7 +28021,7 @@ const cityInfo: Record<string, {
   },
   'laredo-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -28051,7 +28051,7 @@ const cityInfo: Record<string, {
   },
   'lubbock-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -28081,7 +28081,7 @@ const cityInfo: Record<string, {
   },
   'mcallen-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -28111,7 +28111,7 @@ const cityInfo: Record<string, {
   },
   'mesquite-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -28141,7 +28141,7 @@ const cityInfo: Record<string, {
   },
   'midland-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -28171,7 +28171,7 @@ const cityInfo: Record<string, {
   },
   'odessa-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -28201,7 +28201,7 @@ const cityInfo: Record<string, {
   },
   'pasadena-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -28231,7 +28231,7 @@ const cityInfo: Record<string, {
   },
   'plano-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -28261,7 +28261,7 @@ const cityInfo: Record<string, {
   },
   'san-antonio-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -28291,7 +28291,7 @@ const cityInfo: Record<string, {
   },
   'san-angelo-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -28327,7 +28327,7 @@ const cityInfo: Record<string, {
   },
   'longview-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -28357,7 +28357,7 @@ const cityInfo: Record<string, {
   },
   'layton-utah': {
     permitNotes:
-      'Utah requires a sales tax permit from the State Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Utah requires a sales tax permit from the State Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -28387,7 +28387,7 @@ const cityInfo: Record<string, {
   },
   'ogden-utah': {
     permitNotes:
-      'Utah requires a sales tax permit from the State Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Utah requires a sales tax permit from the State Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -28417,7 +28417,7 @@ const cityInfo: Record<string, {
   },
   'orem-utah': {
     permitNotes:
-      'Utah requires a sales tax permit from the State Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Utah requires a sales tax permit from the State Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -28447,7 +28447,7 @@ const cityInfo: Record<string, {
   },
   'provo-utah': {
     permitNotes:
-      'Utah requires a sales tax permit from the State Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Utah requires a sales tax permit from the State Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -28477,7 +28477,7 @@ const cityInfo: Record<string, {
   },
   'salt-lake-city-utah': {
     permitNotes:
-      'Utah requires a sales tax permit from the State Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Utah requires a sales tax permit from the State Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -28507,7 +28507,7 @@ const cityInfo: Record<string, {
   },
   'sandy-utah': {
     permitNotes:
-      'Utah requires a sales tax permit from the State Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Utah requires a sales tax permit from the State Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -28537,7 +28537,7 @@ const cityInfo: Record<string, {
   },
   'st-george-utah': {
     permitNotes:
-      'Utah requires a sales tax permit from the State Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Utah requires a sales tax permit from the State Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -28567,7 +28567,7 @@ const cityInfo: Record<string, {
   },
   'taylorsville-utah': {
     permitNotes:
-      'Utah requires a sales tax permit from the State Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Utah requires a sales tax permit from the State Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -28597,7 +28597,7 @@ const cityInfo: Record<string, {
   },
   'west-jordan-utah': {
     permitNotes:
-      'Utah requires a sales tax permit from the State Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Utah requires a sales tax permit from the State Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -28627,7 +28627,7 @@ const cityInfo: Record<string, {
   },
   'west-valley-city-utah': {
     permitNotes:
-      'Utah requires a sales tax permit from the State Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Utah requires a sales tax permit from the State Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -28657,7 +28657,7 @@ const cityInfo: Record<string, {
   },
   'st.-george-utah': {
     permitNotes:
-      'Utah requires a sales tax permit from the State Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Utah requires a sales tax permit from the State Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -28687,7 +28687,7 @@ const cityInfo: Record<string, {
   },
   'burlington-vermont': {
     permitNotes:
-      'Vermont requires a sales tax permit from the Department of Taxes. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Vermont requires a sales tax permit from the Department of Taxes. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -28717,7 +28717,7 @@ const cityInfo: Record<string, {
   },
   'essex-junction-vermont': {
     permitNotes:
-      'Vermont requires a sales tax permit from the Department of Taxes. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Vermont requires a sales tax permit from the Department of Taxes. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -28747,7 +28747,7 @@ const cityInfo: Record<string, {
   },
   'south-burlington-vermont': {
     permitNotes:
-      'Vermont requires a sales tax permit from the Department of Taxes. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Vermont requires a sales tax permit from the Department of Taxes. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -28777,7 +28777,7 @@ const cityInfo: Record<string, {
   },
   'barre-vermont': {
     permitNotes:
-      'Vermont requires a sales tax permit from the Department of Taxes. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Vermont requires a sales tax permit from the Department of Taxes. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -28807,7 +28807,7 @@ const cityInfo: Record<string, {
   },
   'montpelier-vermont': {
     permitNotes:
-      'Vermont requires a sales tax permit from the Department of Taxes. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Vermont requires a sales tax permit from the Department of Taxes. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -28837,7 +28837,7 @@ const cityInfo: Record<string, {
   },
   'rutland-vermont': {
     permitNotes:
-      'Vermont requires a sales tax permit from the Department of Taxes. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Vermont requires a sales tax permit from the Department of Taxes. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -28867,7 +28867,7 @@ const cityInfo: Record<string, {
   },
   'st-albans-vermont': {
     permitNotes:
-      'Vermont requires a sales tax permit from the Department of Taxes. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Vermont requires a sales tax permit from the Department of Taxes. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -28897,7 +28897,7 @@ const cityInfo: Record<string, {
   },
   'st.-albans-vermont': {
     permitNotes:
-      'Vermont requires a sales tax permit from the Department of Taxes. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Vermont requires a sales tax permit from the Department of Taxes. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -28927,7 +28927,7 @@ const cityInfo: Record<string, {
   },
   'alexandria-virginia': {
     permitNotes:
-      'Virginia requires a sales tax certificate from the Department of Taxation. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Virginia requires a sales tax certificate from the Department of Taxation. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -28957,7 +28957,7 @@ const cityInfo: Record<string, {
   },
   'arlington-virginia': {
     permitNotes:
-      'Virginia requires a sales tax certificate from the Department of Taxation. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Virginia requires a sales tax certificate from the Department of Taxation. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -28987,7 +28987,7 @@ const cityInfo: Record<string, {
   },
   'charlottesville-virginia': {
     permitNotes:
-      'Virginia requires a sales tax certificate from the Department of Taxation. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Virginia requires a sales tax certificate from the Department of Taxation. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -29017,7 +29017,7 @@ const cityInfo: Record<string, {
   },
   'chesapeake-virginia': {
     permitNotes:
-      'Virginia requires a sales tax certificate from the Department of Taxation. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Virginia requires a sales tax certificate from the Department of Taxation. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -29047,7 +29047,7 @@ const cityInfo: Record<string, {
   },
   'hampton-virginia': {
     permitNotes:
-      'Virginia requires a sales tax certificate from the Department of Taxation. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Virginia requires a sales tax certificate from the Department of Taxation. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -29077,7 +29077,7 @@ const cityInfo: Record<string, {
   },
   'lynchburg-virginia': {
     permitNotes:
-      'Virginia requires a sales tax certificate from the Department of Taxation. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Virginia requires a sales tax certificate from the Department of Taxation. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -29107,7 +29107,7 @@ const cityInfo: Record<string, {
   },
   'newport-news-virginia': {
     permitNotes:
-      'Virginia requires a sales tax certificate from the Department of Taxation. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Virginia requires a sales tax certificate from the Department of Taxation. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -29137,7 +29137,7 @@ const cityInfo: Record<string, {
   },
   'norfolk-virginia': {
     permitNotes:
-      'Virginia requires a sales tax certificate from the Department of Taxation. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Virginia requires a sales tax certificate from the Department of Taxation. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -29167,7 +29167,7 @@ const cityInfo: Record<string, {
   },
   'portsmouth-virginia': {
     permitNotes:
-      'Virginia requires a sales tax certificate from the Department of Taxation. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Virginia requires a sales tax certificate from the Department of Taxation. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -29197,7 +29197,7 @@ const cityInfo: Record<string, {
   },
   'richmond-virginia': {
     permitNotes:
-      'Virginia requires a sales tax certificate from the Department of Taxation. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Virginia requires a sales tax certificate from the Department of Taxation. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -29227,7 +29227,7 @@ const cityInfo: Record<string, {
   },
   'roanoke-virginia': {
     permitNotes:
-      'Virginia requires a sales tax certificate from the Department of Taxation. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Virginia requires a sales tax certificate from the Department of Taxation. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
@@ -29282,7 +29282,7 @@ const cityInfo: Record<string, {
 ,
   'suffolk-virginia': {
     permitNotes:
-      'Virginia requires a sales tax certificate from the Department of Taxation. Register your business and confirm city/county health requirements for food/beverage vending.\',
+      'Virginia requires a sales tax certificate from the Department of Taxation. Register your business and confirm city/county health requirements for food/beverage vending.',
     demandDrivers: [
       'Healthcare campuses and clinics',
       'Downtown offices and corporate buildings',
