@@ -29248,32 +29248,7 @@ const cityInfo: Record<string, {
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
       }
     ]
-  }
-      {
-        q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
   },
-      {
-        q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
-  },
-      {
-        q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
-  },
-      {
-        q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
-  }
-,
   'suffolk-virginia': {
     permitNotes:
       'Virginia requires a sales tax certificate from the Department of Taxation. Register your business and confirm city/county health requirements for food/beverage vending.',
