@@ -113,8 +113,8 @@ export default function OFallonMissouriVendingLeadsPage() {
     a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within O\'Fallon based on your preferences and target market requirements.'
   },
   {
-    q: 'What\'s the typical ROI for vending machines in O'Fallon?',
-    a: 'Vending machines in O\'Fallon typically show strong ROI due to the city's business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+    q: 'What\'s the typical ROI for vending machines in O\'Fallon?',
+    a: 'Vending machines in O\'Fallon typically show strong ROI due to the city\'s business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
   }
 ];
 
