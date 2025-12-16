@@ -29278,7 +29278,7 @@ const cityInfo: Record<string, {
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
       }
     ]
-  },
+  }
 };
 
 
