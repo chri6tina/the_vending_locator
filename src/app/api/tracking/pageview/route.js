@@ -12,7 +12,38 @@ export async function POST(request) {
   try {
     console.log('🚀 POST request received to /api/tracking/pageview')
     
-    const data = await request.json()
+    // Check if request has a body
+    const contentType = request.headers.get('content-type')
+    if (!contentType || !contentType.includes('application/json')) {
+      console.warn('⚠️ Request missing JSON content-type, returning empty data')
+      return NextResponse.json({ 
+        success: true, 
+        message: 'No data to process',
+        timestamp: new Date().toISOString()
+      })
+    }
+
+    // Safely parse JSON with error handling
+    let data
+    try {
+      const text = await request.text()
+      if (!text || text.trim() === '') {
+        console.warn('⚠️ Empty request body, returning success')
+        return NextResponse.json({ 
+          success: true, 
+          message: 'Empty request body',
+          timestamp: new Date().toISOString()
+        })
+      }
+      data = JSON.parse(text)
+    } catch (parseError) {
+      console.error('❌ JSON parse error:', parseError.message)
+      return NextResponse.json(
+        { error: 'Invalid JSON in request body' },
+        { status: 400 }
+      )
+    }
+    
     console.log('📥 Raw request data:', data)
     
     // Add timestamp if not provided
