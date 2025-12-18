@@ -40,8 +40,8 @@ export const cityInfo: Record<string, CityInfo> = {
         a: 'Start with office parks in Midtown, clinics in the U‑Med District, and logistics/aviation businesses near the airport corridor. Evaluate employee counts and hours to match product mix.'
       }
     ]
-  }
-  ,
+  },
+
   'little-rock-arkansas': {
     permitNotes:
       'Arkansas generally requires a sales and use tax permit through the Department of Finance & Administration (DFA). Register your business, collect tax where applicable, and verify any county health requirements for food and beverage vending in Little Rock.',
@@ -71,8 +71,8 @@ export const cityInfo: Record<string, CityInfo> = {
         a: 'Start with government buildings and downtown offices, UAMS medical facilities, and logistics hubs. Validate sales, then expand to campuses and gyms.'
       }
     ]
-  }
-  ,
+  },
+
   'billings-montana': {
     permitNotes:
       'Montana has no statewide sales tax. Verify any local resort/option taxes and follow Yellowstone County and City of Billings health guidance for vending machines that sell food or beverages.',
@@ -101,8 +101,8 @@ export const cityInfo: Record<string, CityInfo> = {
         a: 'Begin with healthcare and logistics/industrial sites, then expand to offices, hotels, and campus-adjacent buildings. Validate volume and optimize product mix.'
       }
     ]
-  }
-  ,
+  },
+
   'fairbanks-alaska': {
     permitNotes:
       'Alaska requires state business registration. Fairbanks has no broad sales tax; confirm any local option or site policies and follow borough health guidance for food vending.',
@@ -118,8 +118,8 @@ export const cityInfo: Record<string, CityInfo> = {
     extraFaqs: [
       { q: 'Any winter prep tips?', a: 'Plan routes for weather, keep machines indoors when possible, and monitor heaters/insulation for equipment where relevant.' }
     ]
-  }
-  ,
+  },
+
   'juneau-alaska': {
     permitNotes:
       'Register with the State of Alaska. Juneau (CBJ) may have local rules for food handling in public buildings—confirm with city/borough guidance.',
@@ -134,8 +134,8 @@ export const cityInfo: Record<string, CityInfo> = {
     extraFaqs: [
       { q: 'Do cruise seasons matter?', a: 'Yes. Stock popular grab‑and‑go items and monitor restock frequency during peak months.' }
     ]
-  }
-  ,
+  },
+
   'fayetteville-arkansas': {
     permitNotes:
       'Obtain an Arkansas sales and use tax permit (DFA) and verify city/county health requirements for food vending in Fayetteville.',
@@ -150,8 +150,8 @@ export const cityInfo: Record<string, CityInfo> = {
     extraFaqs: [
       { q: 'Where to start?', a: 'Begin with campus‑adjacent housing, clinics, and offices. Validate demand on game weekends and adjust inventory accordingly.' }
     ]
-  }
-  ,
+  },
+
   'missoula-montana': {
     permitNotes:
       'Montana has no general statewide sales tax; confirm any local option taxes. Follow Missoula County health rules for food/beverage vending where applicable.',
@@ -166,8 +166,8 @@ export const cityInfo: Record<string, CityInfo> = {
     extraFaqs: [
       { q: 'Do I need special permits?', a: 'Confirm business licensing and any food handling rules with the county; verify site policies for machine placement.' }
     ]
-  }
-  ,
+  },
+
   'wasilla-alaska': {
     permitNotes:
       'Register your business with the State of Alaska. Confirm any Matanuska‑Susitna Borough health requirements for food vending and site policies for machine placement.',
@@ -182,8 +182,8 @@ export const cityInfo: Record<string, CityInfo> = {
     extraFaqs: [
       { q: 'Any product tips?', a: 'Carry dependable grab‑and‑go snacks and hot beverages where allowed; test card‑reader upsell prompts for higher AOV.' }
     ]
-  }
-  ,
+  },
+
   'sitka-alaska': {
     permitNotes:
       'State business registration is required. Check Sitka Borough and facility policies for food vending in public buildings and private sites.',
@@ -198,8 +198,8 @@ export const cityInfo: Record<string, CityInfo> = {
     extraFaqs: [
       { q: 'Do small footprints work here?', a: 'Yes—prioritize compact machines and proven SKUs where space is limited.' }
     ]
-  }
-  ,
+  },
+
   'fort-smith-arkansas': {
     permitNotes:
       'Obtain an Arkansas DFA sales and use tax permit and confirm Sebastian County/city health rules for food vending where applicable.',
@@ -214,8 +214,8 @@ export const cityInfo: Record<string, CityInfo> = {
     extraFaqs: [
       { q: 'First placements to try?', a: 'Target logistics and manufacturing sites with steady shifts, then expand to clinics, offices, and gyms.' }
     ]
-  }
-  ,
+  },
+
   'bozeman-montana': {
     permitNotes:
       'No statewide sales tax in Montana. Confirm any local option taxes and Gallatin County health requirements for food vending.',
@@ -230,8 +230,8 @@ export const cityInfo: Record<string, CityInfo> = {
     extraFaqs: [
       { q: 'Campus considerations?', a: 'Coordinate with facility managers; smaller machines and cashless are preferred near study spaces and housing.' }
     ]
-  }
-  ,
+  },
+
   'kenai-alaska': {
     permitNotes:
       'Register with the State of Alaska and confirm Kenai Peninsula Borough health guidance for food vending. Check individual site policies for placement and power access.',
@@ -246,8 +246,8 @@ export const cityInfo: Record<string, CityInfo> = {
     extraFaqs: [
       { q: 'What machines work best?', a: 'Reliable snack/soda combos with card readers. Consider compact machines where space is limited.' }
     ]
-  }
-  ,
+  },
+
   'ketchikan-alaska': {
     permitNotes:
       'State business registration is required. Confirm Ketchikan Gateway Borough and facility policies for vending in public buildings and near docks.',
@@ -262,8 +262,8 @@ export const cityInfo: Record<string, CityInfo> = {
     extraFaqs: [
       { q: 'Placement near docks?', a: 'Coordinate with property management and follow any port authority rules.' }
     ]
-  }
-  ,
+  },
+
   'rogers-arkansas': {
     permitNotes:
       'Obtain an Arkansas DFA sales and use tax permit and confirm Benton County/city rules for food vending.',
@@ -278,8 +278,8 @@ export const cityInfo: Record<string, CityInfo> = {
     extraFaqs: [
       { q: 'Best first sites?', a: 'Start with offices and clinics near the Pinnacle area; expand to gyms and retail backrooms with manager approval.' }
     ]
-  }
-  ,
+  },
+
   'helena-montana': {
     permitNotes:
       'No statewide sales tax in Montana. Confirm any local option taxes and Lewis & Clark County health rules for food vending.',
@@ -294,8 +294,8 @@ export const cityInfo: Record<string, CityInfo> = {
     extraFaqs: [
       { q: 'How to approach government buildings?', a: 'Contact facility management, follow procurement policies, and offer clear service-level terms.' }
     ]
-  }
-  ,
+  },
+
   'kodiak-alaska': {
     permitNotes:
       'Register with the State of Alaska. Confirm borough and facility policies for vending in public buildings; coordinate with port/harbor management as needed.',
@@ -310,8 +310,8 @@ export const cityInfo: Record<string, CityInfo> = {
     extraFaqs: [
       { q: 'Power and access considerations?', a: 'Verify indoor placement, power outlets, and permissions with facility management ahead of install.' }
     ]
-  }
-  ,
+  },
+
   'palmer-alaska': {
     permitNotes:
       'State business registration is required. Confirm Matanuska‑Susitna Borough health guidance and site policies for vending.',
@@ -325,8 +325,8 @@ export const cityInfo: Record<string, CityInfo> = {
     extraFaqs: [
       { q: 'Which payment setup?', a: 'Cashless readers recommended. Telemetry simplifies inventory and reduces service trips.' }
     ]
-  }
-  ,
+  },
+
   'bentonville-arkansas': {
     permitNotes:
       'Obtain an Arkansas DFA sales and use tax permit and confirm Benton County and city requirements for food vending in private/public facilities.',
@@ -341,8 +341,8 @@ export const cityInfo: Record<string, CityInfo> = {
     extraFaqs: [
       { q: 'Office placements tips?', a: 'Lead with reliability and cashless. Offer a short list of best‑sellers and adjust based on telemetry.' }
     ]
-  }
-  ,
+  },
+
   'great-falls-montana': {
     permitNotes:
       'No statewide sales tax in Montana. Confirm any local option taxes and Cascade County health guidance for food vending.',
@@ -357,8 +357,8 @@ export const cityInfo: Record<string, CityInfo> = {
     extraFaqs: [
       { q: 'First placements?', a: 'Start with clinics and logistics sites; expand to offices and gyms after validating weekly volume.' }
     ]
-  }
-  ,
+  },
+
   'homer-alaska': {
     permitNotes:
       'Register with the State of Alaska. Check Kenai Peninsula Borough guidance and property policies for vending at marinas, clinics, and municipal buildings.',
@@ -373,8 +373,8 @@ export const cityInfo: Record<string, CityInfo> = {
     extraFaqs: [
       { q: 'Outdoor placements?', a: 'Prioritize indoor alcoves or protected entries; confirm power and permissions with property owners.' }
     ]
-  }
-  ,
+  },
+
   'soldotna-alaska': {
     permitNotes:
       'Alaska business registration required. Confirm borough and property rules for food/beverage vending in indoor public spaces.',
@@ -389,8 +389,8 @@ export const cityInfo: Record<string, CityInfo> = {
     extraFaqs: [
       { q: 'What to stock first?', a: 'Start with top‑seller snacks, bottled drinks, and add local favorites based on feedback.' }
     ]
-  }
-  ,
+  },
+
   'conway-arkansas': {
     permitNotes:
       'Apply for an Arkansas DFA sales/use tax permit and confirm city/county rules for food vending where applicable.',
@@ -405,8 +405,8 @@ export const cityInfo: Record<string, CityInfo> = {
     extraFaqs: [
       { q: 'Campus placements?', a: 'Coordinate with campus facilities; compact, cashless machines perform best near study areas.' }
     ]
-  }
-  ,
+  },
+
   'butte-montana': {
     permitNotes:
       'Montana has no general statewide sales tax; verify local option taxes and Silver Bow County health rules for food vending.',
@@ -421,8 +421,8 @@ export const cityInfo: Record<string, CityInfo> = {
     extraFaqs: [
       { q: 'Where to start?', a: 'Begin with clinics and logistics; expand to offices/gyms after validating weekly volume.' }
     ]
-  }
-  ,
+  },
+
   'springdale-arkansas': {
     permitNotes:
       'Obtain an Arkansas DFA sales/use tax permit. Confirm city/county rules for food vending in private/public facilities.',
@@ -437,8 +437,8 @@ export const cityInfo: Record<string, CityInfo> = {
     extraFaqs: [
       { q: 'Best starting placements?', a: 'Target manufacturing/logistics sites first, then expand to clinics and gyms.' }
     ]
-  }
-  ,
+  },
+
   'jonesboro-arkansas': {
     permitNotes:
       'Register for Arkansas sales/use tax (DFA) and confirm any Craighead County health rules for vending machines handling food/beverage.',
@@ -453,8 +453,8 @@ export const cityInfo: Record<string, CityInfo> = {
     extraFaqs: [
       { q: 'Campus areas?', a: 'Coordinate with facilities; compact, cashless machines perform best near study spaces.' }
     ]
-  }
-  ,
+  },
+
   'north-little-rock-arkansas': {
     permitNotes:
       'Apply for an Arkansas DFA sales/use tax permit; confirm Pulaski County and city policies for food vending where applicable.',
@@ -469,8 +469,8 @@ export const cityInfo: Record<string, CityInfo> = {
     extraFaqs: [
       { q: 'Riverfront placements?', a: 'Coordinate with venue management; prioritize cashless and quick‑sell items.' }
     ]
-  }
-  ,
+  },
+
   'pine-bluff-arkansas': {
     permitNotes:
       'Arkansas DFA sales/use tax permit required. Verify Jefferson County health guidance for vending machines selling food/beverage.',
@@ -485,8 +485,8 @@ export const cityInfo: Record<string, CityInfo> = {
     extraFaqs: [
       { q: 'What inventory mix works?', a: 'Start with top‑selling snacks and beverages, then add local favorites based on sales data.' }
     ]
-  }
-  ,
+  },
+
   'birmingham-alabama': {
     permitNotes:
       'Alabama requires a state sales/use tax account. Register your business, collect/remit tax where applicable, and confirm county/city rules for food/beverage vending.',
@@ -502,8 +502,8 @@ export const cityInfo: Record<string, CityInfo> = {
     extraFaqs: [
       { q: 'Best early placements?', a: 'Start with hospital admin areas and large offices; expand to logistics and hotels after validating demand.' }
     ]
-  }
-  ,
+  },
+
   'huntsville-alabama': {
     permitNotes:
       'Register for Alabama sales/use tax and verify Madison County/city rules. Follow site policies for machines on secured campuses.',
@@ -519,8 +519,8 @@ export const cityInfo: Record<string, CityInfo> = {
     extraFaqs: [
       { q: 'Can I place near Redstone?', a: 'Coordinate with base facilities; approvals and background checks may be required for on-base placements.' }
     ]
-  }
-  ,
+  },
+
   'mobile-alabama': {
     permitNotes:
       'Obtain Alabama sales/use tax registration; confirm Mobile County/city rules and port/terminal policies for placements near the waterfront.',
@@ -535,8 +535,8 @@ export const cityInfo: Record<string, CityInfo> = {
     extraFaqs: [
       { q: 'Where to start?', a: 'Target port-adjacent offices and clinics first; expand to hotels and airport-area offices.' }
     ]
-  }
-  ,
+  },
+
   'montgomery-alabama': {
     permitNotes:
       'Register for Alabama sales/use tax and confirm Montgomery County/city rules. Follow procurement policies for government buildings.',
@@ -551,8 +551,8 @@ export const cityInfo: Record<string, CityInfo> = {
     extraFaqs: [
       { q: 'Government placements?', a: 'Contact facility management and follow vendor onboarding; present SLAs and insurance.' }
     ]
-  }
-  ,
+  },
+
   'tuscaloosa-alabama': {
     permitNotes:
       'Alabama sales/use tax account required; verify Tuscaloosa County/city rules and campus facility policies.',
@@ -567,8 +567,8 @@ export const cityInfo: Record<string, CityInfo> = {
     extraFaqs: [
       { q: 'Game day strategy?', a: 'Boost cold drinks and quick snacks near high-traffic corridors; restock ahead of events.' }
     ]
-  }
-  ,
+  },
+
   'auburn-alabama': {
     permitNotes:
       'Register for Alabama sales/use tax and verify city/county rules; coordinate with campus facilities for placements near AU.',
@@ -583,8 +583,8 @@ export const cityInfo: Record<string, CityInfo> = {
     extraFaqs: [
       { q: 'First placements?', a: 'Campus‑adjacent housing, clinics, and large offices. Validate sales, then expand.' }
     ]
-  }
-  ,
+  },
+
   'dothan-alabama': {
     permitNotes:
       'Alabama sales/use tax registration required; confirm Houston County/city guidance for food vending machines.',
@@ -599,8 +599,8 @@ export const cityInfo: Record<string, CityInfo> = {
     extraFaqs: [
       { q: 'What to stock?', a: 'Start with top‑selling snacks and bottled drinks; add local favorites after two service cycles.' }
     ]
-  }
-  ,
+  },
+
   'hartford-connecticut': {
     permitNotes:
       'Register for Connecticut sales/use tax (DRS) and confirm City of Hartford requirements for vending machines in public/private facilities.',
@@ -615,8 +615,8 @@ export const cityInfo: Record<string, CityInfo> = {
     extraFaqs: [
       { q: 'Government placements?', a: 'Coordinate with facility management and procurement; present SLAs and insurance.' }
     ]
-  }
-  ,
+  },
+
   'stamford-connecticut': {
     permitNotes:
       'CT DRS sales/use tax registration required; confirm City of Stamford policies and building management rules for machine placement.',
@@ -631,8 +631,8 @@ export const cityInfo: Record<string, CityInfo> = {
     extraFaqs: [
       { q: 'Office placements tips?', a: 'Lead with reliability, card readers, and proven SKUs. Adjust based on telemetry.' }
     ]
-  }
-  ,
+  },
+
   'waterbury-connecticut': {
     permitNotes:
       'Register with CT DRS for sales/use tax. Verify city and property rules for food/beverage vending in offices, clinics, and schools.',
@@ -647,8 +647,8 @@ export const cityInfo: Record<string, CityInfo> = {
     extraFaqs: [
       { q: 'What to stock first?', a: 'Start with best‑seller snacks and bottled drinks; add local favorites after two cycles.' }
     ]
-  }
-  ,
+  },
+
   'norwalk-connecticut': {
     permitNotes:
       'CT DRS sales/use tax registration required. Confirm City of Norwalk policies and building management rules for placements.',
@@ -663,8 +663,8 @@ export const cityInfo: Record<string, CityInfo> = {
     extraFaqs: [
       { q: 'SoNo placements?', a: 'Coordinate with property managers; compact, cashless machines fit best in lobby spaces.' }
     ]
-  }
-  ,
+  },
+
   'bridgeport-connecticut': {
     permitNotes:
       'Register with CT DRS for sales/use tax. Confirm Bridgeport city policies and building rules for vending placements in offices, schools, and clinics.',
@@ -679,8 +679,8 @@ export const cityInfo: Record<string, CityInfo> = {
     extraFaqs: [
       { q: 'First placements?', a: 'Start with clinics and larger offices; expand to schools and logistics after validating demand.' }
     ]
-  }
-  ,
+  },
+
   'new-haven-connecticut': {
     permitNotes:
       'CT DRS sales/use tax registration required. Follow city/property rules; Yale facilities and hospitals have specific placement processes.',
@@ -695,8 +695,8 @@ export const cityInfo: Record<string, CityInfo> = {
     extraFaqs: [
       { q: 'Campus placements?', a: 'Coordinate with campus facilities; present reliability, card readers, and a tight SKU list. Adjust with telemetry.' }
     ]
-  }
-  ,
+  },
+
   'elizabeth-new-jersey': {
     permitNotes:
       'Register with NJ Division of Taxation for sales/use tax. Confirm City of Elizabeth and property management rules for vending placements, especially near port facilities.',
@@ -711,8 +711,8 @@ export const cityInfo: Record<string, CityInfo> = {
     extraFaqs: [
       { q: 'Best first placements?', a: 'Target warehouses and port-adjacent offices; expand to clinics and municipal facilities after validating demand.' }
     ]
-  }
-  ,
+  },
+
   'edison-new-jersey': {
     permitNotes:
       'Obtain NJ sales/use tax registration. Confirm Middlesex County/City of Edison rules and individual building policies for vending machines.',
@@ -727,8 +727,8 @@ export const cityInfo: Record<string, CityInfo> = {
     extraFaqs: [
       { q: 'What to stock first?', a: 'Start with top-seller snacks and bottled drinks; add hot items only where permitted and in demand.' }
     ]
-  }
-  ,
+  },
+
   'jersey-city-new-jersey': {
     permitNotes:
       'NJ sales/use tax registration required. Follow City of Jersey City guidelines and building/HOA rules for lobby and office placements.',
@@ -743,8 +743,8 @@ export const cityInfo: Record<string, CityInfo> = {
     extraFaqs: [
       { q: 'Lobby placements?', a: 'Coordinate with building management; compact, cashless machines fit best and require proof of insurance.' }
     ]
-  }
-  ,
+  },
+
   'newark-new-jersey': {
     permitNotes:
       'Register with NJ Division of Taxation. Confirm City of Newark rules and property approvals, especially for hospitals, university, and transit-adjacent sites.',
@@ -759,8 +759,8 @@ export const cityInfo: Record<string, CityInfo> = {
     extraFaqs: [
       { q: 'Campus/health placements?', a: 'Engage facilities early; present service SLAs, cashless capability, and a concise SKU plan.' }
     ]
-  }
-  ,
+  },
+
   'paterson-new-jersey': {
     permitNotes:
       'NJ sales/use tax registration required. Confirm City of Paterson and property rules for machines in clinics, schools, and industrial sites.',
@@ -775,8 +775,8 @@ export const cityInfo: Record<string, CityInfo> = {
     extraFaqs: [
       { q: 'Where to start?', a: 'Clinics and industrial sites first; expand to schools and offices after measuring weekly sales.' }
     ]
-  }
-  ,
+  },
+
   'woodbridge-new-jersey': {
     permitNotes:
       'Register with NJ Division of Taxation. Follow Woodbridge Township policies and building rules, especially near Metropark offices.',
@@ -791,8 +791,8 @@ export const cityInfo: Record<string, CityInfo> = {
     extraFaqs: [
       { q: 'Commuter hub tips?', a: 'Prioritize fast-selling snacks and cold beverages; ensure cashless for speed and uptime.' }
     ]
-  }
-  ,
+  },
+
   'boston-massachusetts': {
     permitNotes:
       'Register with MA DOR for sales/use tax. Follow City of Boston and building/HOA rules for vending machines in offices, campuses, and residential lobbies.',
@@ -807,8 +807,8 @@ export const cityInfo: Record<string, CityInfo> = {
     extraFaqs: [
       { q: 'Campus/health placements?', a: 'Engage facilities early; present SLAs, cashless capability, and a concise SKU plan.' }
     ]
-  }
-  ,
+  },
+
   'worcester-massachusetts': {
     permitNotes:
       'MA sales/use tax registration required. Confirm City of Worcester and property rules for vending in hospitals, schools, and office buildings.',
@@ -823,8 +823,8 @@ export const cityInfo: Record<string, CityInfo> = {
     extraFaqs: [
       { q: 'What to stock first?', a: 'Start with top‑selling snacks and bottled drinks; adjust based on telemetry after two cycles.' }
     ]
-  }
-  ,
+  },
+
   'springfield-massachusetts': {
     permitNotes:
       'Register with MA DOR for sales/use tax. Verify city and property policies for machines in clinics, schools, and offices.',
@@ -839,8 +839,8 @@ export const cityInfo: Record<string, CityInfo> = {
     extraFaqs: [
       { q: 'First placements?', a: 'Begin with clinics and offices; expand to schools and logistics after measuring demand.' }
     ]
-  }
-  ,
+  },
+
   'cambridge-massachusetts': {
     permitNotes:
       'MA sales/use tax registration required. Follow City of Cambridge and building/HOA rules; university and lab buildings have specific processes.',
@@ -855,8 +855,8 @@ export const cityInfo: Record<string, CityInfo> = {
     extraFaqs: [
       { q: 'Lab/campus approvals?', a: 'Contact facilities; present SLAs, safety/cleaning protocols, and a tight SKU set.' }
     ]
-  }
-  ,
+  },
+
   'fall-river-massachusetts': {
     permitNotes:
       'Register with MA DOR for sales/use tax. Confirm City of Fall River and property rules for vending machines in clinics, schools, and offices.',
@@ -871,8 +871,8 @@ export const cityInfo: Record<string, CityInfo> = {
     extraFaqs: [
       { q: 'Inventory tips?', a: 'Lead with best‑sellers; add local favorites after reviewing two service cycles of telemetry.' }
     ]
-  }
-  ,
+  },
+
   'new-york-new-york': {
     permitNotes:
       'Register with NYS Department of Taxation and Finance for sales tax. Follow NYC Department of Consumer and Worker Protection and building/HOA rules for vending in offices and residential lobbies.',
@@ -887,8 +887,8 @@ export const cityInfo: Record<string, CityInfo> = {
     extraFaqs: [
       { q: 'Lobby placements?', a: 'Coordinate with building management; compact, cashless machines and proof of insurance are typically required.' }
     ]
-  }
-  ,
+  },
+
   'buffalo-new-york': {
     permitNotes:
       'NYS sales tax registration required. Confirm City of Buffalo/property policies for vending in hospitals, schools, and office buildings.',
@@ -903,8 +903,8 @@ export const cityInfo: Record<string, CityInfo> = {
     extraFaqs: [
       { q: 'First placements?', a: 'Start with clinics and offices; expand to industrial sites and gyms after validating demand.' }
     ]
-  }
-  ,
+  },
+
   'rochester-new-york': {
     permitNotes:
       'Register for NYS sales tax. Follow city/property rules for vending in medical, university, and office buildings.',
@@ -919,8 +919,8 @@ export const cityInfo: Record<string, CityInfo> = {
     extraFaqs: [
       { q: 'Campus considerations?', a: 'Coordinate with facilities; present SLAs and a focused SKU plan; adjust via telemetry.' }
     ]
-  }
-  ,
+  },
+
   'albany-new-york': {
     permitNotes:
       'NYS sales tax registration required. Confirm State/City building policies for vending in government offices, hospitals, and campuses.',
@@ -935,8 +935,8 @@ export const cityInfo: Record<string, CityInfo> = {
     extraFaqs: [
       { q: 'Government placements?', a: 'Engage facility management and procurement; provide SLAs and insurance certificates.' }
     ]
-  }
-  ,
+  },
+
   'syracuse-new-york': {
     permitNotes:
       'Register with NYS for sales tax. Follow city/property rules for medical, university, and office placements.',
@@ -951,8 +951,8 @@ export const cityInfo: Record<string, CityInfo> = {
     extraFaqs: [
       { q: 'Where to start?', a: 'Begin with hospitals and university‑adjacent sites; expand to offices and gyms after two service cycles.' }
     ]
-  }
-,
+  },
+
   'decatur-alabama': {
     permitNotes:
       'Alabama requires a state sales/use tax account. Register your business, collect/remit tax where applicable, and confirm county/city rules for food/beverage vending.',
