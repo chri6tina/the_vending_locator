@@ -12084,6 +12084,7 @@ export const cityInfo: Record<string, CityInfo> = {
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
       },
     ],
+  },
   'port-st.-lucie-florida': {
     permitNotes:
       'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
@@ -28582,6 +28583,7 @@ export const cityInfo: Record<string, CityInfo> = {
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
       },
     ],
+  },
   'st.-george-utah': {
     permitNotes:
       'Utah requires a sales tax permit from the State Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.',
