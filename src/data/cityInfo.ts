@@ -1,6 +1,5 @@
 // City-specific enrichment data for how-to-start guides
 // This file is extracted from the page.tsx to avoid webpack parser issues with large files
-
 export type CityInfo = {
   permitNotes?: string
   demandDrivers?: string[]
@@ -8,7 +7,6 @@ export type CityInfo = {
   seasonalNote?: string
   extraFaqs?: { q: string; a: string }[]
 }
-
 export const cityInfo: Record<string, CityInfo> = {
   'anchorage-alaska': {
     permitNotes:
@@ -38,10 +36,9 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Where should I focus first?',
         a: 'Start with office parks in Midtown, clinics in the U‑Med District, and logistics/aviation businesses near the airport corridor. Evaluate employee counts and hours to match product mix.'
-      }
-    ]
+      },
+    ],
   },
-
   'little-rock-arkansas': {
     permitNotes:
       'Arkansas generally requires a sales and use tax permit through the Department of Finance & Administration (DFA). Register your business, collect tax where applicable, and verify any county health requirements for food and beverage vending in Little Rock.',
@@ -69,10 +66,9 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Best first targets in Little Rock?',
         a: 'Start with government buildings and downtown offices, UAMS medical facilities, and logistics hubs. Validate sales, then expand to campuses and gyms.'
-      }
-    ]
+      },
+    ],
   },
-
   'billings-montana': {
     permitNotes:
       'Montana has no statewide sales tax. Verify any local resort/option taxes and follow Yellowstone County and City of Billings health guidance for vending machines that sell food or beverages.',
@@ -99,10 +95,9 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'What locations work best to start?',
         a: 'Begin with healthcare and logistics/industrial sites, then expand to offices, hotels, and campus-adjacent buildings. Validate volume and optimize product mix.'
-      }
-    ]
+      },
+    ],
   },
-
   'fairbanks-alaska': {
     permitNotes:
       'Alaska requires state business registration. Fairbanks has no broad sales tax; confirm any local option or site policies and follow borough health guidance for food vending.',
@@ -116,10 +111,9 @@ export const cityInfo: Record<string, CityInfo> = {
     seasonalNote:
       'Winters impact routes—prioritize indoor sites, ensure card readers work reliably in cold, and stock proven best‑sellers.',
     extraFaqs: [
-      { q: 'Any winter prep tips?', a: 'Plan routes for weather, keep machines indoors when possible, and monitor heaters/insulation for equipment where relevant.' }
-    ]
+      { q: 'Any winter prep tips?', a: 'Plan routes for weather, keep machines indoors when possible, and monitor heaters/insulation for equipment where relevant.' },
+    ],
   },
-
   'juneau-alaska': {
     permitNotes:
       'Register with the State of Alaska. Juneau (CBJ) may have local rules for food handling in public buildings—confirm with city/borough guidance.',
@@ -132,10 +126,9 @@ export const cityInfo: Record<string, CityInfo> = {
     seasonalNote:
       'Cruise/tourism season boosts traffic; adapt product mix to high footfall and quick purchases.',
     extraFaqs: [
-      { q: 'Do cruise seasons matter?', a: 'Yes. Stock popular grab‑and‑go items and monitor restock frequency during peak months.' }
-    ]
+      { q: 'Do cruise seasons matter?', a: 'Yes. Stock popular grab‑and‑go items and monitor restock frequency during peak months.' },
+    ],
   },
-
   'fayetteville-arkansas': {
     permitNotes:
       'Obtain an Arkansas sales and use tax permit (DFA) and verify city/county health requirements for food vending in Fayetteville.',
@@ -148,10 +141,9 @@ export const cityInfo: Record<string, CityInfo> = {
     seasonalNote:
       'Align service cadence with academic calendar and football weekends.',
     extraFaqs: [
-      { q: 'Where to start?', a: 'Begin with campus‑adjacent housing, clinics, and offices. Validate demand on game weekends and adjust inventory accordingly.' }
-    ]
+      { q: 'Where to start?', a: 'Begin with campus‑adjacent housing, clinics, and offices. Validate demand on game weekends and adjust inventory accordingly.' },
+    ],
   },
-
   'missoula-montana': {
     permitNotes:
       'Montana has no general statewide sales tax; confirm any local option taxes. Follow Missoula County health rules for food/beverage vending where applicable.',
@@ -164,10 +156,9 @@ export const cityInfo: Record<string, CityInfo> = {
     seasonalNote:
       'Plan for winter routes and summer event spikes; keep card readers active and inventory nimble.',
     extraFaqs: [
-      { q: 'Do I need special permits?', a: 'Confirm business licensing and any food handling rules with the county; verify site policies for machine placement.' }
-    ]
+      { q: 'Do I need special permits?', a: 'Confirm business licensing and any food handling rules with the county; verify site policies for machine placement.' },
+    ],
   },
-
   'wasilla-alaska': {
     permitNotes:
       'Register your business with the State of Alaska. Confirm any Matanuska‑Susitna Borough health requirements for food vending and site policies for machine placement.',
@@ -180,10 +171,9 @@ export const cityInfo: Record<string, CityInfo> = {
     seasonalNote:
       'Cold weather affects routes—keep indoor sites prioritized and stock best‑sellers with card readers enabled.',
     extraFaqs: [
-      { q: 'Any product tips?', a: 'Carry dependable grab‑and‑go snacks and hot beverages where allowed; test card‑reader upsell prompts for higher AOV.' }
-    ]
+      { q: 'Any product tips?', a: 'Carry dependable grab‑and‑go snacks and hot beverages where allowed; test card‑reader upsell prompts for higher AOV.' },
+    ],
   },
-
   'sitka-alaska': {
     permitNotes:
       'State business registration is required. Check Sitka Borough and facility policies for food vending in public buildings and private sites.',
@@ -196,10 +186,9 @@ export const cityInfo: Record<string, CityInfo> = {
     seasonalNote:
       'Tourism season can lift demand—plan faster restocks near harbor/city venues.',
     extraFaqs: [
-      { q: 'Do small footprints work here?', a: 'Yes—prioritize compact machines and proven SKUs where space is limited.' }
-    ]
+      { q: 'Do small footprints work here?', a: 'Yes—prioritize compact machines and proven SKUs where space is limited.' },
+    ],
   },
-
   'fort-smith-arkansas': {
     permitNotes:
       'Obtain an Arkansas DFA sales and use tax permit and confirm Sebastian County/city health rules for food vending where applicable.',
@@ -212,10 +201,9 @@ export const cityInfo: Record<string, CityInfo> = {
     seasonalNote:
       'Balance cold drinks in summer with reliable snack assortment for shift workers.',
     extraFaqs: [
-      { q: 'First placements to try?', a: 'Target logistics and manufacturing sites with steady shifts, then expand to clinics, offices, and gyms.' }
-    ]
+      { q: 'First placements to try?', a: 'Target logistics and manufacturing sites with steady shifts, then expand to clinics, offices, and gyms.' },
+    ],
   },
-
   'bozeman-montana': {
     permitNotes:
       'No statewide sales tax in Montana. Confirm any local option taxes and Gallatin County health requirements for food vending.',
@@ -228,10 +216,9 @@ export const cityInfo: Record<string, CityInfo> = {
     seasonalNote:
       'Winter service routing and summer tourism both affect demand—watch SKU velocity and restock more frequently in peak months.',
     extraFaqs: [
-      { q: 'Campus considerations?', a: 'Coordinate with facility managers; smaller machines and cashless are preferred near study spaces and housing.' }
-    ]
+      { q: 'Campus considerations?', a: 'Coordinate with facility managers; smaller machines and cashless are preferred near study spaces and housing.' },
+    ],
   },
-
   'kenai-alaska': {
     permitNotes:
       'Register with the State of Alaska and confirm Kenai Peninsula Borough health guidance for food vending. Check individual site policies for placement and power access.',
@@ -244,10 +231,9 @@ export const cityInfo: Record<string, CityInfo> = {
     seasonalNote:
       'Tourism and fishing seasons can shift traffic patterns—plan inventory around peak months.',
     extraFaqs: [
-      { q: 'What machines work best?', a: 'Reliable snack/soda combos with card readers. Consider compact machines where space is limited.' }
-    ]
+      { q: 'What machines work best?', a: 'Reliable snack/soda combos with card readers. Consider compact machines where space is limited.' },
+    ],
   },
-
   'ketchikan-alaska': {
     permitNotes:
       'State business registration is required. Confirm Ketchikan Gateway Borough and facility policies for vending in public buildings and near docks.',
@@ -260,10 +246,9 @@ export const cityInfo: Record<string, CityInfo> = {
     seasonalNote:
       'During cruise season, restock frequently with grab‑and‑go items; ensure cashless is enabled for speed.',
     extraFaqs: [
-      { q: 'Placement near docks?', a: 'Coordinate with property management and follow any port authority rules.' }
-    ]
+      { q: 'Placement near docks?', a: 'Coordinate with property management and follow any port authority rules.' },
+    ],
   },
-
   'rogers-arkansas': {
     permitNotes:
       'Obtain an Arkansas DFA sales and use tax permit and confirm Benton County/city rules for food vending.',
@@ -276,10 +261,9 @@ export const cityInfo: Record<string, CityInfo> = {
     seasonalNote:
       'Office traffic patterns influence demand—monitor weekday sales vs. weekends.',
     extraFaqs: [
-      { q: 'Best first sites?', a: 'Start with offices and clinics near the Pinnacle area; expand to gyms and retail backrooms with manager approval.' }
-    ]
+      { q: 'Best first sites?', a: 'Start with offices and clinics near the Pinnacle area; expand to gyms and retail backrooms with manager approval.' },
+    ],
   },
-
   'helena-montana': {
     permitNotes:
       'No statewide sales tax in Montana. Confirm any local option taxes and Lewis & Clark County health rules for food vending.',
@@ -292,10 +276,9 @@ export const cityInfo: Record<string, CityInfo> = {
     seasonalNote:
       'Winter can impact service windows—prioritize indoor government and healthcare placements for steady volume.',
     extraFaqs: [
-      { q: 'How to approach government buildings?', a: 'Contact facility management, follow procurement policies, and offer clear service-level terms.' }
-    ]
+      { q: 'How to approach government buildings?', a: 'Contact facility management, follow procurement policies, and offer clear service-level terms.' },
+    ],
   },
-
   'kodiak-alaska': {
     permitNotes:
       'Register with the State of Alaska. Confirm borough and facility policies for vending in public buildings; coordinate with port/harbor management as needed.',
@@ -308,10 +291,9 @@ export const cityInfo: Record<string, CityInfo> = {
     seasonalNote:
       'Tourism and fishing seasons raise demand near the harbor—use cashless and restock popular items more frequently.',
     extraFaqs: [
-      { q: 'Power and access considerations?', a: 'Verify indoor placement, power outlets, and permissions with facility management ahead of install.' }
-    ]
+      { q: 'Power and access considerations?', a: 'Verify indoor placement, power outlets, and permissions with facility management ahead of install.' },
+    ],
   },
-
   'palmer-alaska': {
     permitNotes:
       'State business registration is required. Confirm Matanuska‑Susitna Borough health guidance and site policies for vending.',
@@ -323,10 +305,9 @@ export const cityInfo: Record<string, CityInfo> = {
     seasonalNote:
       'Weather affects routes—prioritize indoor sites and proven snack/beverage SKUs.',
     extraFaqs: [
-      { q: 'Which payment setup?', a: 'Cashless readers recommended. Telemetry simplifies inventory and reduces service trips.' }
-    ]
+      { q: 'Which payment setup?', a: 'Cashless readers recommended. Telemetry simplifies inventory and reduces service trips.' },
+    ],
   },
-
   'bentonville-arkansas': {
     permitNotes:
       'Obtain an Arkansas DFA sales and use tax permit and confirm Benton County and city requirements for food vending in private/public facilities.',
@@ -339,10 +320,9 @@ export const cityInfo: Record<string, CityInfo> = {
     seasonalNote:
       'Weekday corporate traffic drives demand—monitor SKUs favored by office staff and cyclists on trail corridors.',
     extraFaqs: [
-      { q: 'Office placements tips?', a: 'Lead with reliability and cashless. Offer a short list of best‑sellers and adjust based on telemetry.' }
-    ]
+      { q: 'Office placements tips?', a: 'Lead with reliability and cashless. Offer a short list of best‑sellers and adjust based on telemetry.' },
+    ],
   },
-
   'great-falls-montana': {
     permitNotes:
       'No statewide sales tax in Montana. Confirm any local option taxes and Cascade County health guidance for food vending.',
@@ -355,10 +335,9 @@ export const cityInfo: Record<string, CityInfo> = {
     seasonalNote:
       'Cold weather affects machines and routes—focus on indoor, high‑footfall sites with reliable access.',
     extraFaqs: [
-      { q: 'First placements?', a: 'Start with clinics and logistics sites; expand to offices and gyms after validating weekly volume.' }
-    ]
+      { q: 'First placements?', a: 'Start with clinics and logistics sites; expand to offices and gyms after validating weekly volume.' },
+    ],
   },
-
   'homer-alaska': {
     permitNotes:
       'Register with the State of Alaska. Check Kenai Peninsula Borough guidance and property policies for vending at marinas, clinics, and municipal buildings.',
@@ -371,10 +350,9 @@ export const cityInfo: Record<string, CityInfo> = {
     seasonalNote:
       'Tourism season lifts demand along the Spit—restock grab‑and‑go items and ensure cashless acceptance.',
     extraFaqs: [
-      { q: 'Outdoor placements?', a: 'Prioritize indoor alcoves or protected entries; confirm power and permissions with property owners.' }
-    ]
+      { q: 'Outdoor placements?', a: 'Prioritize indoor alcoves or protected entries; confirm power and permissions with property owners.' },
+    ],
   },
-
   'soldotna-alaska': {
     permitNotes:
       'Alaska business registration required. Confirm borough and property rules for food/beverage vending in indoor public spaces.',
@@ -387,10 +365,9 @@ export const cityInfo: Record<string, CityInfo> = {
     seasonalNote:
       'Fishing/tourism can add seasonal volume—monitor SKU velocity and adjust restocks.',
     extraFaqs: [
-      { q: 'What to stock first?', a: 'Start with top‑seller snacks, bottled drinks, and add local favorites based on feedback.' }
-    ]
+      { q: 'What to stock first?', a: 'Start with top‑seller snacks, bottled drinks, and add local favorites based on feedback.' },
+    ],
   },
-
   'conway-arkansas': {
     permitNotes:
       'Apply for an Arkansas DFA sales/use tax permit and confirm city/county rules for food vending where applicable.',
@@ -403,10 +380,9 @@ export const cityInfo: Record<string, CityInfo> = {
     seasonalNote:
       'Align cadence with academic calendar; weekdays drive office demand.',
     extraFaqs: [
-      { q: 'Campus placements?', a: 'Coordinate with campus facilities; compact, cashless machines perform best near study areas.' }
-    ]
+      { q: 'Campus placements?', a: 'Coordinate with campus facilities; compact, cashless machines perform best near study areas.' },
+    ],
   },
-
   'butte-montana': {
     permitNotes:
       'Montana has no general statewide sales tax; verify local option taxes and Silver Bow County health rules for food vending.',
@@ -419,10 +395,9 @@ export const cityInfo: Record<string, CityInfo> = {
     seasonalNote:
       'Plan for winter service routes; prioritize indoor sites with steady staff traffic.',
     extraFaqs: [
-      { q: 'Where to start?', a: 'Begin with clinics and logistics; expand to offices/gyms after validating weekly volume.' }
-    ]
+      { q: 'Where to start?', a: 'Begin with clinics and logistics; expand to offices/gyms after validating weekly volume.' },
+    ],
   },
-
   'springdale-arkansas': {
     permitNotes:
       'Obtain an Arkansas DFA sales/use tax permit. Confirm city/county rules for food vending in private/public facilities.',
@@ -435,10 +410,9 @@ export const cityInfo: Record<string, CityInfo> = {
     seasonalNote:
       'Shift‑based sites drive evening demand—monitor SKUs for late hours.',
     extraFaqs: [
-      { q: 'Best starting placements?', a: 'Target manufacturing/logistics sites first, then expand to clinics and gyms.' }
-    ]
+      { q: 'Best starting placements?', a: 'Target manufacturing/logistics sites first, then expand to clinics and gyms.' },
+    ],
   },
-
   'jonesboro-arkansas': {
     permitNotes:
       'Register for Arkansas sales/use tax (DFA) and confirm any Craighead County health rules for vending machines handling food/beverage.',
@@ -451,10 +425,9 @@ export const cityInfo: Record<string, CityInfo> = {
     seasonalNote:
       'Academic calendar and hospital traffic shape demand—ensure cashless across machines.',
     extraFaqs: [
-      { q: 'Campus areas?', a: 'Coordinate with facilities; compact, cashless machines perform best near study spaces.' }
-    ]
+      { q: 'Campus areas?', a: 'Coordinate with facilities; compact, cashless machines perform best near study spaces.' },
+    ],
   },
-
   'north-little-rock-arkansas': {
     permitNotes:
       'Apply for an Arkansas DFA sales/use tax permit; confirm Pulaski County and city policies for food vending where applicable.',
@@ -467,10 +440,9 @@ export const cityInfo: Record<string, CityInfo> = {
     seasonalNote:
       'Event days near the riverfront increase volume—plan restocks after large events.',
     extraFaqs: [
-      { q: 'Riverfront placements?', a: 'Coordinate with venue management; prioritize cashless and quick‑sell items.' }
-    ]
+      { q: 'Riverfront placements?', a: 'Coordinate with venue management; prioritize cashless and quick‑sell items.' },
+    ],
   },
-
   'pine-bluff-arkansas': {
     permitNotes:
       'Arkansas DFA sales/use tax permit required. Verify Jefferson County health guidance for vending machines selling food/beverage.',
@@ -483,10 +455,9 @@ export const cityInfo: Record<string, CityInfo> = {
     seasonalNote:
       'Focus on steady workforce sites; build routes that minimize travel time.',
     extraFaqs: [
-      { q: 'What inventory mix works?', a: 'Start with top‑selling snacks and beverages, then add local favorites based on sales data.' }
-    ]
+      { q: 'What inventory mix works?', a: 'Start with top‑selling snacks and beverages, then add local favorites based on sales data.' },
+    ],
   },
-
   'birmingham-alabama': {
     permitNotes:
       'Alabama requires a state sales/use tax account. Register your business, collect/remit tax where applicable, and confirm county/city rules for food/beverage vending.',
@@ -500,10 +471,9 @@ export const cityInfo: Record<string, CityInfo> = {
     seasonalNote:
       'Weekday daytime peaks around medical/office hubs; keep cashless on and monitor top SKUs for frequent restocks.',
     extraFaqs: [
-      { q: 'Best early placements?', a: 'Start with hospital admin areas and large offices; expand to logistics and hotels after validating demand.' }
-    ]
+      { q: 'Best early placements?', a: 'Start with hospital admin areas and large offices; expand to logistics and hotels after validating demand.' },
+    ],
   },
-
   'huntsville-alabama': {
     permitNotes:
       'Register for Alabama sales/use tax and verify Madison County/city rules. Follow site policies for machines on secured campuses.',
@@ -517,10 +487,9 @@ export const cityInfo: Record<string, CityInfo> = {
     seasonalNote:
       'Tech and defense shifts can drive evening demand—stock quick, high-margin items and keep readers online.',
     extraFaqs: [
-      { q: 'Can I place near Redstone?', a: 'Coordinate with base facilities; approvals and background checks may be required for on-base placements.' }
-    ]
+      { q: 'Can I place near Redstone?', a: 'Coordinate with base facilities; approvals and background checks may be required for on-base placements.' },
+    ],
   },
-
   'mobile-alabama': {
     permitNotes:
       'Obtain Alabama sales/use tax registration; confirm Mobile County/city rules and port/terminal policies for placements near the waterfront.',
@@ -533,10 +502,9 @@ export const cityInfo: Record<string, CityInfo> = {
     seasonalNote:
       'Humidity and heat increase cold drink velocity—plan more frequent beverage restocks in summer.',
     extraFaqs: [
-      { q: 'Where to start?', a: 'Target port-adjacent offices and clinics first; expand to hotels and airport-area offices.' }
-    ]
+      { q: 'Where to start?', a: 'Target port-adjacent offices and clinics first; expand to hotels and airport-area offices.' },
+    ],
   },
-
   'montgomery-alabama': {
     permitNotes:
       'Register for Alabama sales/use tax and confirm Montgomery County/city rules. Follow procurement policies for government buildings.',
@@ -549,10 +517,9 @@ export const cityInfo: Record<string, CityInfo> = {
     seasonalNote:
       'Government schedules concentrate weekday demand—stock quick-sell items and ensure uptime during business hours.',
     extraFaqs: [
-      { q: 'Government placements?', a: 'Contact facility management and follow vendor onboarding; present SLAs and insurance.' }
-    ]
+      { q: 'Government placements?', a: 'Contact facility management and follow vendor onboarding; present SLAs and insurance.' },
+    ],
   },
-
   'tuscaloosa-alabama': {
     permitNotes:
       'Alabama sales/use tax account required; verify Tuscaloosa County/city rules and campus facility policies.',
@@ -565,10 +532,9 @@ export const cityInfo: Record<string, CityInfo> = {
     seasonalNote:
       'Football weekends and semester timing affect volume—adjust service cadence and stock grab‑and‑go favorites.',
     extraFaqs: [
-      { q: 'Game day strategy?', a: 'Boost cold drinks and quick snacks near high-traffic corridors; restock ahead of events.' }
-    ]
+      { q: 'Game day strategy?', a: 'Boost cold drinks and quick snacks near high-traffic corridors; restock ahead of events.' },
+    ],
   },
-
   'auburn-alabama': {
     permitNotes:
       'Register for Alabama sales/use tax and verify city/county rules; coordinate with campus facilities for placements near AU.',
@@ -581,10 +547,9 @@ export const cityInfo: Record<string, CityInfo> = {
     seasonalNote:
       'Align with academic calendar; smaller, cashless machines perform well near study hubs.',
     extraFaqs: [
-      { q: 'First placements?', a: 'Campus‑adjacent housing, clinics, and large offices. Validate sales, then expand.' }
-    ]
+      { q: 'First placements?', a: 'Campus‑adjacent housing, clinics, and large offices. Validate sales, then expand.' },
+    ],
   },
-
   'dothan-alabama': {
     permitNotes:
       'Alabama sales/use tax registration required; confirm Houston County/city guidance for food vending machines.',
@@ -597,10 +562,9 @@ export const cityInfo: Record<string, CityInfo> = {
     seasonalNote:
       'Focus on steady workforce sites; track SKU velocity to optimize restocks.',
     extraFaqs: [
-      { q: 'What to stock?', a: 'Start with top‑selling snacks and bottled drinks; add local favorites after two service cycles.' }
-    ]
+      { q: 'What to stock?', a: 'Start with top‑selling snacks and bottled drinks; add local favorites after two service cycles.' },
+    ],
   },
-
   'hartford-connecticut': {
     permitNotes:
       'Register for Connecticut sales/use tax (DRS) and confirm City of Hartford requirements for vending machines in public/private facilities.',
@@ -613,10 +577,9 @@ export const cityInfo: Record<string, CityInfo> = {
     seasonalNote:
       'Weekday daytime peaks near government/office hubs—ensure cashless and quick restock cadence.',
     extraFaqs: [
-      { q: 'Government placements?', a: 'Coordinate with facility management and procurement; present SLAs and insurance.' }
-    ]
+      { q: 'Government placements?', a: 'Coordinate with facility management and procurement; present SLAs and insurance.' },
+    ],
   },
-
   'stamford-connecticut': {
     permitNotes:
       'CT DRS sales/use tax registration required; confirm City of Stamford policies and building management rules for machine placement.',
@@ -629,10 +592,9 @@ export const cityInfo: Record<string, CityInfo> = {
     seasonalNote:
       'Office commuter flow drives weekday demand—stock quick snacks and cold drinks; keep readers online.',
     extraFaqs: [
-      { q: 'Office placements tips?', a: 'Lead with reliability, card readers, and proven SKUs. Adjust based on telemetry.' }
-    ]
+      { q: 'Office placements tips?', a: 'Lead with reliability, card readers, and proven SKUs. Adjust based on telemetry.' },
+    ],
   },
-
   'waterbury-connecticut': {
     permitNotes:
       'Register with CT DRS for sales/use tax. Verify city and property rules for food/beverage vending in offices, clinics, and schools.',
@@ -645,10 +607,9 @@ export const cityInfo: Record<string, CityInfo> = {
     seasonalNote:
       'Focus on steady workforce/clinic sites; monitor SKU velocity for weekly routes.',
     extraFaqs: [
-      { q: 'What to stock first?', a: 'Start with best‑seller snacks and bottled drinks; add local favorites after two cycles.' }
-    ]
+      { q: 'What to stock first?', a: 'Start with best‑seller snacks and bottled drinks; add local favorites after two cycles.' },
+    ],
   },
-
   'norwalk-connecticut': {
     permitNotes:
       'CT DRS sales/use tax registration required. Confirm City of Norwalk policies and building management rules for placements.',
@@ -661,10 +622,9 @@ export const cityInfo: Record<string, CityInfo> = {
     seasonalNote:
       'Weekday office peaks; evenings/weekends in residential/fitness sites—tune inventory accordingly.',
     extraFaqs: [
-      { q: 'SoNo placements?', a: 'Coordinate with property managers; compact, cashless machines fit best in lobby spaces.' }
-    ]
+      { q: 'SoNo placements?', a: 'Coordinate with property managers; compact, cashless machines fit best in lobby spaces.' },
+    ],
   },
-
   'bridgeport-connecticut': {
     permitNotes:
       'Register with CT DRS for sales/use tax. Confirm Bridgeport city policies and building rules for vending placements in offices, schools, and clinics.',
@@ -677,10 +637,9 @@ export const cityInfo: Record<string, CityInfo> = {
     seasonalNote:
       'Weekday peaks in offices and clinics—ensure cashless, track SKU velocity, and restock weekly.',
     extraFaqs: [
-      { q: 'First placements?', a: 'Start with clinics and larger offices; expand to schools and logistics after validating demand.' }
-    ]
+      { q: 'First placements?', a: 'Start with clinics and larger offices; expand to schools and logistics after validating demand.' },
+    ],
   },
-
   'new-haven-connecticut': {
     permitNotes:
       'CT DRS sales/use tax registration required. Follow city/property rules; Yale facilities and hospitals have specific placement processes.',
@@ -693,10 +652,9 @@ export const cityInfo: Record<string, CityInfo> = {
     seasonalNote:
       'Academic calendar influences flow—smaller, cashless machines perform well near study and admin areas.',
     extraFaqs: [
-      { q: 'Campus placements?', a: 'Coordinate with campus facilities; present reliability, card readers, and a tight SKU list. Adjust with telemetry.' }
-    ]
+      { q: 'Campus placements?', a: 'Coordinate with campus facilities; present reliability, card readers, and a tight SKU list. Adjust with telemetry.' },
+    ],
   },
-
   'elizabeth-new-jersey': {
     permitNotes:
       'Register with NJ Division of Taxation for sales/use tax. Confirm City of Elizabeth and property management rules for vending placements, especially near port facilities.',
@@ -709,10 +667,9 @@ export const cityInfo: Record<string, CityInfo> = {
     seasonalNote:
       'Shift-based logistics sites drive evening demand—stock quick, high-velocity items and ensure cashless uptime.',
     extraFaqs: [
-      { q: 'Best first placements?', a: 'Target warehouses and port-adjacent offices; expand to clinics and municipal facilities after validating demand.' }
-    ]
+      { q: 'Best first placements?', a: 'Target warehouses and port-adjacent offices; expand to clinics and municipal facilities after validating demand.' },
+    ],
   },
-
   'edison-new-jersey': {
     permitNotes:
       'Obtain NJ sales/use tax registration. Confirm Middlesex County/City of Edison rules and individual building policies for vending machines.',
@@ -725,10 +682,9 @@ export const cityInfo: Record<string, CityInfo> = {
     seasonalNote:
       'Weekday office/industrial peaks—plan weekly restocks and keep card readers active.',
     extraFaqs: [
-      { q: 'What to stock first?', a: 'Start with top-seller snacks and bottled drinks; add hot items only where permitted and in demand.' }
-    ]
+      { q: 'What to stock first?', a: 'Start with top-seller snacks and bottled drinks; add hot items only where permitted and in demand.' },
+    ],
   },
-
   'jersey-city-new-jersey': {
     permitNotes:
       'NJ sales/use tax registration required. Follow City of Jersey City guidelines and building/HOA rules for lobby and office placements.',
@@ -741,10 +697,9 @@ export const cityInfo: Record<string, CityInfo> = {
     seasonalNote:
       'Commuter peaks on weekdays—stock quick grab‑and‑go and cold drinks; evenings/weekends favor residential/fitness sites.',
     extraFaqs: [
-      { q: 'Lobby placements?', a: 'Coordinate with building management; compact, cashless machines fit best and require proof of insurance.' }
-    ]
+      { q: 'Lobby placements?', a: 'Coordinate with building management; compact, cashless machines fit best and require proof of insurance.' },
+    ],
   },
-
   'newark-new-jersey': {
     permitNotes:
       'Register with NJ Division of Taxation. Confirm City of Newark rules and property approvals, especially for hospitals, university, and transit-adjacent sites.',
@@ -757,10 +712,9 @@ export const cityInfo: Record<string, CityInfo> = {
     seasonalNote:
       'Transit hubs and campuses create weekday peaks; tailor restocks to class schedules and commuter flow.',
     extraFaqs: [
-      { q: 'Campus/health placements?', a: 'Engage facilities early; present service SLAs, cashless capability, and a concise SKU plan.' }
-    ]
+      { q: 'Campus/health placements?', a: 'Engage facilities early; present service SLAs, cashless capability, and a concise SKU plan.' },
+    ],
   },
-
   'paterson-new-jersey': {
     permitNotes:
       'NJ sales/use tax registration required. Confirm City of Paterson and property rules for machines in clinics, schools, and industrial sites.',
@@ -773,10 +727,9 @@ export const cityInfo: Record<string, CityInfo> = {
     seasonalNote:
       'Focus on steady workforce sites; track SKU velocity to optimize weekly service routes.',
     extraFaqs: [
-      { q: 'Where to start?', a: 'Clinics and industrial sites first; expand to schools and offices after measuring weekly sales.' }
-    ]
+      { q: 'Where to start?', a: 'Clinics and industrial sites first; expand to schools and offices after measuring weekly sales.' },
+    ],
   },
-
   'woodbridge-new-jersey': {
     permitNotes:
       'Register with NJ Division of Taxation. Follow Woodbridge Township policies and building rules, especially near Metropark offices.',
@@ -789,10 +742,9 @@ export const cityInfo: Record<string, CityInfo> = {
     seasonalNote:
       'Weekday daytime peaks from commuters; evenings in gyms/residential—adjust inventory cadence accordingly.',
     extraFaqs: [
-      { q: 'Commuter hub tips?', a: 'Prioritize fast-selling snacks and cold beverages; ensure cashless for speed and uptime.' }
-    ]
+      { q: 'Commuter hub tips?', a: 'Prioritize fast-selling snacks and cold beverages; ensure cashless for speed and uptime.' },
+    ],
   },
-
   'boston-massachusetts': {
     permitNotes:
       'Register with MA DOR for sales/use tax. Follow City of Boston and building/HOA rules for vending machines in offices, campuses, and residential lobbies.',
@@ -805,10 +757,9 @@ export const cityInfo: Record<string, CityInfo> = {
     seasonalNote:
       'Weekday office peaks and semester cycles—keep cashless active and monitor SKU velocity for frequent restocks.',
     extraFaqs: [
-      { q: 'Campus/health placements?', a: 'Engage facilities early; present SLAs, cashless capability, and a concise SKU plan.' }
-    ]
+      { q: 'Campus/health placements?', a: 'Engage facilities early; present SLAs, cashless capability, and a concise SKU plan.' },
+    ],
   },
-
   'worcester-massachusetts': {
     permitNotes:
       'MA sales/use tax registration required. Confirm City of Worcester and property rules for vending in hospitals, schools, and office buildings.',
@@ -821,10 +772,9 @@ export const cityInfo: Record<string, CityInfo> = {
     seasonalNote:
       'Align service with semester and clinic schedules; focus on reliable indoor placements.',
     extraFaqs: [
-      { q: 'What to stock first?', a: 'Start with top‑selling snacks and bottled drinks; adjust based on telemetry after two cycles.' }
-    ]
+      { q: 'What to stock first?', a: 'Start with top‑selling snacks and bottled drinks; adjust based on telemetry after two cycles.' },
+    ],
   },
-
   'springfield-massachusetts': {
     permitNotes:
       'Register with MA DOR for sales/use tax. Verify city and property policies for machines in clinics, schools, and offices.',
@@ -837,10 +787,9 @@ export const cityInfo: Record<string, CityInfo> = {
     seasonalNote:
       'Focus on steady workforce sites; ensure card readers and consistent restock cadence.',
     extraFaqs: [
-      { q: 'First placements?', a: 'Begin with clinics and offices; expand to schools and logistics after measuring demand.' }
-    ]
+      { q: 'First placements?', a: 'Begin with clinics and offices; expand to schools and logistics after measuring demand.' },
+    ],
   },
-
   'cambridge-massachusetts': {
     permitNotes:
       'MA sales/use tax registration required. Follow City of Cambridge and building/HOA rules; university and lab buildings have specific processes.',
@@ -853,10 +802,9 @@ export const cityInfo: Record<string, CityInfo> = {
     seasonalNote:
       'Semester and lab schedules shape demand—small, cashless machines perform best in lobbies and study areas.',
     extraFaqs: [
-      { q: 'Lab/campus approvals?', a: 'Contact facilities; present SLAs, safety/cleaning protocols, and a tight SKU set.' }
-    ]
+      { q: 'Lab/campus approvals?', a: 'Contact facilities; present SLAs, safety/cleaning protocols, and a tight SKU set.' },
+    ],
   },
-
   'fall-river-massachusetts': {
     permitNotes:
       'Register with MA DOR for sales/use tax. Confirm City of Fall River and property rules for vending machines in clinics, schools, and offices.',
@@ -869,10 +817,9 @@ export const cityInfo: Record<string, CityInfo> = {
     seasonalNote:
       'Prioritize reliable indoor sites; align restocks to clinic and shift schedules.',
     extraFaqs: [
-      { q: 'Inventory tips?', a: 'Lead with best‑sellers; add local favorites after reviewing two service cycles of telemetry.' }
-    ]
+      { q: 'Inventory tips?', a: 'Lead with best‑sellers; add local favorites after reviewing two service cycles of telemetry.' },
+    ],
   },
-
   'new-york-new-york': {
     permitNotes:
       'Register with NYS Department of Taxation and Finance for sales tax. Follow NYC Department of Consumer and Worker Protection and building/HOA rules for vending in offices and residential lobbies.',
@@ -885,10 +832,9 @@ export const cityInfo: Record<string, CityInfo> = {
     seasonalNote:
       'Office patterns drive weekday peaks; evenings/weekends see residential/fitness demand—keep cashless uptime high.',
     extraFaqs: [
-      { q: 'Lobby placements?', a: 'Coordinate with building management; compact, cashless machines and proof of insurance are typically required.' }
-    ]
+      { q: 'Lobby placements?', a: 'Coordinate with building management; compact, cashless machines and proof of insurance are typically required.' },
+    ],
   },
-
   'buffalo-new-york': {
     permitNotes:
       'NYS sales tax registration required. Confirm City of Buffalo/property policies for vending in hospitals, schools, and office buildings.',
@@ -901,10 +847,9 @@ export const cityInfo: Record<string, CityInfo> = {
     seasonalNote:
       'Winter affects routes—prioritize indoor placements and monitor beverage/snack mix for colder months.',
     extraFaqs: [
-      { q: 'First placements?', a: 'Start with clinics and offices; expand to industrial sites and gyms after validating demand.' }
-    ]
+      { q: 'First placements?', a: 'Start with clinics and offices; expand to industrial sites and gyms after validating demand.' },
+    ],
   },
-
   'rochester-new-york': {
     permitNotes:
       'Register for NYS sales tax. Follow city/property rules for vending in medical, university, and office buildings.',
@@ -917,10 +862,9 @@ export const cityInfo: Record<string, CityInfo> = {
     seasonalNote:
       'Semester cycles and winter weather drive service cadence—keep cashless and telemetry online to optimize routes.',
     extraFaqs: [
-      { q: 'Campus considerations?', a: 'Coordinate with facilities; present SLAs and a focused SKU plan; adjust via telemetry.' }
-    ]
+      { q: 'Campus considerations?', a: 'Coordinate with facilities; present SLAs and a focused SKU plan; adjust via telemetry.' },
+    ],
   },
-
   'albany-new-york': {
     permitNotes:
       'NYS sales tax registration required. Confirm State/City building policies for vending in government offices, hospitals, and campuses.',
@@ -933,10 +877,9 @@ export const cityInfo: Record<string, CityInfo> = {
     seasonalNote:
       'Weekday peaks near government/office hubs—maintain quick restock cycles and cashless acceptance.',
     extraFaqs: [
-      { q: 'Government placements?', a: 'Engage facility management and procurement; provide SLAs and insurance certificates.' }
-    ]
+      { q: 'Government placements?', a: 'Engage facility management and procurement; provide SLAs and insurance certificates.' },
+    ],
   },
-
   'syracuse-new-york': {
     permitNotes:
       'Register with NYS for sales tax. Follow city/property rules for medical, university, and office placements.',
@@ -949,10 +892,9 @@ export const cityInfo: Record<string, CityInfo> = {
     seasonalNote:
       'Winter service windows favor reliable indoor placements; align inventory with campus and clinic schedules.',
     extraFaqs: [
-      { q: 'Where to start?', a: 'Begin with hospitals and university‑adjacent sites; expand to offices and gyms after two service cycles.' }
-    ]
+      { q: 'Where to start?', a: 'Begin with hospitals and university‑adjacent sites; expand to offices and gyms after two service cycles.' },
+    ],
   },
-
   'decatur-alabama': {
     permitNotes:
       'Alabama requires a state sales/use tax account. Register your business, collect/remit tax where applicable, and confirm county/city rules for food/beverage vending.',
@@ -980,8 +922,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'gadsden-alabama': {
     permitNotes:
@@ -1010,8 +952,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'hoover-alabama': {
     permitNotes:
@@ -1040,8 +982,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'prattville-alabama': {
     permitNotes:
@@ -1070,8 +1012,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'opelika-alabama': {
     permitNotes:
@@ -1100,8 +1042,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'bessemer-alabama': {
     permitNotes:
@@ -1130,8 +1072,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'prichard-alabama': {
     permitNotes:
@@ -1160,8 +1102,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'avondale-arizona': {
     permitNotes:
@@ -1190,8 +1132,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'buckeye-arizona': {
     permitNotes:
@@ -1220,8 +1162,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'casa-grande-arizona': {
     permitNotes:
@@ -1250,8 +1192,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'chandler-arizona': {
     permitNotes:
@@ -1280,8 +1222,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'gilbert-arizona': {
     permitNotes:
@@ -1310,8 +1252,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'glendale-arizona': {
     permitNotes:
@@ -1340,8 +1282,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'goodyear-arizona': {
     permitNotes:
@@ -1370,8 +1312,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'maricopa-arizona': {
     permitNotes:
@@ -1400,8 +1342,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'mesa-arizona': {
     permitNotes:
@@ -1430,8 +1372,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'peoria-arizona': {
     permitNotes:
@@ -1460,8 +1402,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'phoenix-arizona': {
     permitNotes:
@@ -1490,8 +1432,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'prescott-arizona': {
     permitNotes:
@@ -1520,8 +1462,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'prescott-valley-arizona': {
     permitNotes:
@@ -1550,8 +1492,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'scottsdale-arizona': {
     permitNotes:
@@ -1580,8 +1522,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'sierra-vista-arizona': {
     permitNotes:
@@ -1610,8 +1552,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'surprise-arizona': {
     permitNotes:
@@ -1640,8 +1582,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'tempe-arizona': {
     permitNotes:
@@ -1670,8 +1612,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'tucson-arizona': {
     permitNotes:
@@ -1700,8 +1642,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'flagstaff-arizona': {
     permitNotes:
@@ -1730,8 +1672,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'yuma-arizona': {
     permitNotes:
@@ -1760,8 +1702,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'apache-junction-arizona': {
     permitNotes:
@@ -1790,8 +1732,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'bullhead-city-arizona': {
     permitNotes:
@@ -1820,8 +1762,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'lake-havasu-city-arizona': {
     permitNotes:
@@ -1850,8 +1792,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'nogales-arizona': {
     permitNotes:
@@ -1880,8 +1822,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'sahuarita-arizona': {
     permitNotes:
@@ -1910,8 +1852,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'hot-springs-arkansas': {
     permitNotes:
@@ -1940,8 +1882,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'texarkana-arkansas': {
     permitNotes:
@@ -1970,8 +1912,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'west-memphis-arkansas': {
     permitNotes:
@@ -2000,8 +1942,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'paragould-arkansas': {
     permitNotes:
@@ -2030,8 +1972,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'cabot-arkansas': {
     permitNotes:
@@ -2060,8 +2002,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'searcy-arkansas': {
     permitNotes:
@@ -2090,8 +2032,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'anaheim-california': {
     permitNotes:
@@ -2120,8 +2062,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'antioch-california': {
     permitNotes:
@@ -2150,8 +2092,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'bakersfield-california': {
     permitNotes:
@@ -2180,8 +2122,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'berkeley-california': {
     permitNotes:
@@ -2210,8 +2152,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'burbank-california': {
     permitNotes:
@@ -2240,8 +2182,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'carlsbad-california': {
     permitNotes:
@@ -2270,8 +2212,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'chula-vista-california': {
     permitNotes:
@@ -2300,8 +2242,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'clovis-california': {
     permitNotes:
@@ -2330,8 +2272,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'compton-california': {
     permitNotes:
@@ -2360,8 +2302,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'concord-california': {
     permitNotes:
@@ -2390,8 +2332,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'corona-california': {
     permitNotes:
@@ -2420,8 +2362,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'costa-mesa-california': {
     permitNotes:
@@ -2450,8 +2392,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'daly-city-california': {
     permitNotes:
@@ -2480,8 +2422,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'downey-california': {
     permitNotes:
@@ -2510,8 +2452,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'el-monte-california': {
     permitNotes:
@@ -2540,8 +2482,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'elk-grove-california': {
     permitNotes:
@@ -2570,8 +2512,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'escondido-california': {
     permitNotes:
@@ -2600,8 +2542,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'fairfield-california': {
     permitNotes:
@@ -2630,8 +2572,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'fontana-california': {
     permitNotes:
@@ -2660,8 +2602,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'fremont-california': {
     permitNotes:
@@ -2690,8 +2632,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'fresno-california': {
     permitNotes:
@@ -2720,8 +2662,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'fullerton-california': {
     permitNotes:
@@ -2750,8 +2692,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'garden-grove-california': {
     permitNotes:
@@ -2780,8 +2722,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'glendale-california': {
     permitNotes:
@@ -2810,8 +2752,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'hayward-california': {
     permitNotes:
@@ -2840,8 +2782,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'huntington-beach-california': {
     permitNotes:
@@ -2870,8 +2812,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'inglewood-california': {
     permitNotes:
@@ -2900,8 +2842,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'irvine-california': {
     permitNotes:
@@ -2930,8 +2872,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'lancaster-california': {
     permitNotes:
@@ -2960,8 +2902,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'jurupa-valley-california': {
     permitNotes:
@@ -2990,8 +2932,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'lakewood-california': {
     permitNotes:
@@ -3020,8 +2962,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'long-beach-california': {
     permitNotes:
@@ -3050,8 +2992,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'los-angeles-california': {
     permitNotes:
@@ -3080,8 +3022,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'modesto-california': {
     permitNotes:
@@ -3110,8 +3052,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'moreno-valley-california': {
     permitNotes:
@@ -3140,8 +3082,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'mountain-view-california': {
     permitNotes:
@@ -3170,8 +3112,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'murrieta-california': {
     permitNotes:
@@ -3200,8 +3142,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'napa-california': {
     permitNotes:
@@ -3230,8 +3172,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'newport-beach-california': {
     permitNotes:
@@ -3260,8 +3202,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'norwalk-california': {
     permitNotes:
@@ -3290,8 +3232,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'oakland-california': {
     permitNotes:
@@ -3320,8 +3262,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'oceanside-california': {
     permitNotes:
@@ -3350,8 +3292,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'ontario-california': {
     permitNotes:
@@ -3380,8 +3322,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'orange-california': {
     permitNotes:
@@ -3410,8 +3352,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'oxnard-california': {
     permitNotes:
@@ -3440,8 +3382,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'palm-desert-california': {
     permitNotes:
@@ -3470,8 +3412,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'palm-springs-california': {
     permitNotes:
@@ -3500,8 +3442,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'palmdale-california': {
     permitNotes:
@@ -3530,8 +3472,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'pasadena-california': {
     permitNotes:
@@ -3560,8 +3502,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'pomona-california': {
     permitNotes:
@@ -3590,8 +3532,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'rancho-cucamonga-california': {
     permitNotes:
@@ -3620,8 +3562,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'rialto-california': {
     permitNotes:
@@ -3650,8 +3592,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'richmond-california': {
     permitNotes:
@@ -3680,8 +3622,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'riverside-california': {
     permitNotes:
@@ -3710,8 +3652,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'roseville-california': {
     permitNotes:
@@ -3740,8 +3682,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'sacramento-california': {
     permitNotes:
@@ -3770,8 +3712,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'salinas-california': {
     permitNotes:
@@ -3800,8 +3742,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'san-bernardino-california': {
     permitNotes:
@@ -3830,8 +3772,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'san-diego-california': {
     permitNotes:
@@ -3860,8 +3802,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'santa-clara-california': {
     permitNotes:
@@ -3890,8 +3832,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'san-francisco-california': {
     permitNotes:
@@ -3920,8 +3862,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'san-jose-california': {
     permitNotes:
@@ -3950,9 +3892,9 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
-,
+      },
+    ],
+  },
   'santa-ana-california': {
     permitNotes:
       'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
@@ -3980,8 +3922,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'santa-clarita-california': {
     permitNotes:
@@ -4010,8 +3952,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'santa-maria-california': {
     permitNotes:
@@ -4040,8 +3982,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'simi-valley-california': {
     permitNotes:
@@ -4070,8 +4012,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'stockton-california': {
     permitNotes:
@@ -4100,8 +4042,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'sunnyvale-california': {
     permitNotes:
@@ -4130,8 +4072,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'temecula-california': {
     permitNotes:
@@ -4160,8 +4102,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'thousand-oaks-california': {
     permitNotes:
@@ -4190,8 +4132,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'torrance-california': {
     permitNotes:
@@ -4220,8 +4162,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'vallejo-california': {
     permitNotes:
@@ -4250,8 +4192,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'ventura-california': {
     permitNotes:
@@ -4280,8 +4222,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'victorville-california': {
     permitNotes:
@@ -4310,8 +4252,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'visalia-california': {
     permitNotes:
@@ -4340,8 +4282,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'west-covina-california': {
     permitNotes:
@@ -4370,8 +4312,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'alhambra-california': {
     permitNotes:
@@ -4400,8 +4342,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'carson-california': {
     permitNotes:
@@ -4430,8 +4372,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'chico-california': {
     permitNotes:
@@ -4460,8 +4402,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'hawthorne-california': {
     permitNotes:
@@ -4490,8 +4432,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'redding-california': {
     permitNotes:
@@ -4520,8 +4462,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'san-mateo-california': {
     permitNotes:
@@ -4550,8 +4492,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'santa-barbara-california': {
     permitNotes:
@@ -4580,8 +4522,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'santa-rosa-california': {
     permitNotes:
@@ -4610,8 +4552,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'vacaville-california': {
     permitNotes:
@@ -4640,8 +4582,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'whittier-california': {
     permitNotes:
@@ -4670,8 +4612,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'el-cajon-california': {
     permitNotes:
@@ -4700,8 +4642,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'mission-viejo-california': {
     permitNotes:
@@ -4730,8 +4672,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'san-angelo-california': {
     permitNotes:
@@ -4760,8 +4702,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'south-gate-california': {
     permitNotes:
@@ -4790,8 +4732,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'vista-california': {
     permitNotes:
@@ -4820,8 +4762,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'baldwin-park-california': {
     permitNotes:
@@ -4850,8 +4792,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'bellflower-california': {
     permitNotes:
@@ -4880,8 +4822,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'citrus-heights-california': {
     permitNotes:
@@ -4910,8 +4852,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'cypress-california': {
     permitNotes:
@@ -4940,8 +4882,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'diamond-bar-california': {
     permitNotes:
@@ -4970,8 +4912,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'east-los-angeles-california': {
     permitNotes:
@@ -5000,8 +4942,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'el-centro-california': {
     permitNotes:
@@ -5030,8 +4972,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'hanford-california': {
     permitNotes:
@@ -5060,8 +5002,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'hemet-california': {
     permitNotes:
@@ -5090,8 +5032,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'hesperia-california': {
     permitNotes:
@@ -5120,8 +5062,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'indio-california': {
     permitNotes:
@@ -5150,8 +5092,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'la-habra-california': {
     permitNotes:
@@ -5180,8 +5122,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'la-mesa-california': {
     permitNotes:
@@ -5210,8 +5152,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'la-puente-california': {
     permitNotes:
@@ -5240,8 +5182,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'lodi-california': {
     permitNotes:
@@ -5270,8 +5212,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'madera-california': {
     permitNotes:
@@ -5300,8 +5242,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'menifee-california': {
     permitNotes:
@@ -5330,8 +5272,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'monterey-park-california': {
     permitNotes:
@@ -5360,8 +5302,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'national-city-california': {
     permitNotes:
@@ -5390,8 +5332,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'petaluma-california': {
     permitNotes:
@@ -5420,8 +5362,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'redwood-city-california': {
     permitNotes:
@@ -5450,8 +5392,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'san-leandro-california': {
     permitNotes:
@@ -5480,8 +5422,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'san-rafael-california': {
     permitNotes:
@@ -5510,8 +5452,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'santa-monica-california': {
     permitNotes:
@@ -5540,8 +5482,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'tulare-california': {
     permitNotes:
@@ -5570,8 +5512,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'turlock-california': {
     permitNotes:
@@ -5600,8 +5542,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'union-city-california': {
     permitNotes:
@@ -5630,8 +5572,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'watsonville-california': {
     permitNotes:
@@ -5660,8 +5602,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'westminster-california': {
     permitNotes:
@@ -5690,8 +5632,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'alameda-california': {
     permitNotes:
@@ -5720,8 +5662,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'arcadia-california': {
     permitNotes:
@@ -5750,8 +5692,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'arvin-california': {
     permitNotes:
@@ -5780,8 +5722,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'atascadero-california': {
     permitNotes:
@@ -5810,8 +5752,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'azusa-california': {
     permitNotes:
@@ -5840,8 +5782,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'banning-california': {
     permitNotes:
@@ -5870,8 +5812,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'barstow-california': {
     permitNotes:
@@ -5900,8 +5842,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'beaumont-california': {
     permitNotes:
@@ -5930,8 +5872,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'bell-gardens-california': {
     permitNotes:
@@ -5960,8 +5902,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'brawley-california': {
     permitNotes:
@@ -5990,8 +5932,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'buena-park-california': {
     permitNotes:
@@ -6020,8 +5962,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'calexico-california': {
     permitNotes:
@@ -6050,8 +5992,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'calimesa-california': {
     permitNotes:
@@ -6080,8 +6022,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'camarillo-california': {
     permitNotes:
@@ -6110,8 +6052,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'ceres-california': {
     permitNotes:
@@ -6140,8 +6082,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'chino-hills-california': {
     permitNotes:
@@ -6170,8 +6112,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'coachella-california': {
     permitNotes:
@@ -6200,8 +6142,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'coronado-california': {
     permitNotes:
@@ -6230,8 +6172,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'cudahy-california': {
     permitNotes:
@@ -6260,8 +6202,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'culver-city-california': {
     permitNotes:
@@ -6290,8 +6232,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'delano-california': {
     permitNotes:
@@ -6320,8 +6262,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'dinuba-california': {
     permitNotes:
@@ -6350,8 +6292,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'el-cerrito-california': {
     permitNotes:
@@ -6380,8 +6322,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'el-segundo-california': {
     permitNotes:
@@ -6410,8 +6352,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'emeryville-california': {
     permitNotes:
@@ -6440,8 +6382,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'encinitas-california': {
     permitNotes:
@@ -6470,8 +6412,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'folsom-california': {
     permitNotes:
@@ -6500,8 +6442,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'fountain-valley-california': {
     permitNotes:
@@ -6530,8 +6472,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'glendora-california': {
     permitNotes:
@@ -6560,8 +6502,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'goleta-california': {
     permitNotes:
@@ -6590,8 +6532,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'hawaiian-gardens-california': {
     permitNotes:
@@ -6620,8 +6562,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'hercules-california': {
     permitNotes:
@@ -6650,8 +6592,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'huntington-park-california': {
     permitNotes:
@@ -6680,8 +6622,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'imperial-beach-california': {
     permitNotes:
@@ -6710,8 +6652,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'la-canada-flintridge-california': {
     permitNotes:
@@ -6740,8 +6682,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'la-mirada-california': {
     permitNotes:
@@ -6770,8 +6712,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'la-quinta-california': {
     permitNotes:
@@ -6800,8 +6742,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'laguna-beach-california': {
     permitNotes:
@@ -6830,8 +6772,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'laguna-hills-california': {
     permitNotes:
@@ -6860,8 +6802,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'laguna-niguel-california': {
     permitNotes:
@@ -6890,8 +6832,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'lake-elsinore-california': {
     permitNotes:
@@ -6920,8 +6862,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'larkspur-california': {
     permitNotes:
@@ -6950,8 +6892,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'lemon-grove-california': {
     permitNotes:
@@ -6980,8 +6922,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'lomita-california': {
     permitNotes:
@@ -7010,8 +6952,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'los-gatos-california': {
     permitNotes:
@@ -7040,8 +6982,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'lynwood-california': {
     permitNotes:
@@ -7070,8 +7012,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'manhattan-beach-california': {
     permitNotes:
@@ -7100,8 +7042,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'millbrae-california': {
     permitNotes:
@@ -7130,8 +7072,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'mill-valley-california': {
     permitNotes:
@@ -7160,8 +7102,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'monrovia-california': {
     permitNotes:
@@ -7190,8 +7132,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'montclair-california': {
     permitNotes:
@@ -7220,8 +7162,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'morgan-hill-california': {
     permitNotes:
@@ -7250,8 +7192,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'newark-california': {
     permitNotes:
@@ -7280,8 +7222,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'oakdale-california': {
     permitNotes:
@@ -7310,8 +7252,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'pacifica-california': {
     permitNotes:
@@ -7340,8 +7282,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'palo-alto-california': {
     permitNotes:
@@ -7370,8 +7312,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'paramount-california': {
     permitNotes:
@@ -7400,8 +7342,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'pico-rivera-california': {
     permitNotes:
@@ -7430,8 +7372,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'pittsburg-california': {
     permitNotes:
@@ -7460,8 +7402,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'placentia-california': {
     permitNotes:
@@ -7490,8 +7432,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'pleasanton-california': {
     permitNotes:
@@ -7520,8 +7462,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'poway-california': {
     permitNotes:
@@ -7550,8 +7492,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'rancho-palos-verdes-california': {
     permitNotes:
@@ -7580,8 +7522,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'redondo-beach-california': {
     permitNotes:
@@ -7610,8 +7552,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'reedley-california': {
     permitNotes:
@@ -7640,8 +7582,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'ridgecrest-california': {
     permitNotes:
@@ -7670,8 +7612,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'rio-vista-california': {
     permitNotes:
@@ -7700,8 +7642,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'rohnert-park-california': {
     permitNotes:
@@ -7730,8 +7672,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'rosemead-california': {
     permitNotes:
@@ -7760,8 +7702,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'san-bruno-california': {
     permitNotes:
@@ -7790,8 +7732,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'san-carlos-california': {
     permitNotes:
@@ -7820,8 +7762,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'san-fernando-california': {
     permitNotes:
@@ -7850,8 +7792,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'san-gabriel-california': {
     permitNotes:
@@ -7880,8 +7822,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'san-jacinto-california': {
     permitNotes:
@@ -7910,8 +7852,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'san-luis-obispo-california': {
     permitNotes:
@@ -7940,8 +7882,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'san-pablo-california': {
     permitNotes:
@@ -7970,8 +7912,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'san-ramon-california': {
     permitNotes:
@@ -8000,8 +7942,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'sanger-california': {
     permitNotes:
@@ -8030,8 +7972,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'santa-cruz-california': {
     permitNotes:
@@ -8060,8 +8002,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'santa-paula-california': {
     permitNotes:
@@ -8090,8 +8032,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'saratoga-california': {
     permitNotes:
@@ -8120,8 +8062,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'seal-beach-california': {
     permitNotes:
@@ -8150,8 +8092,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'selma-california': {
     permitNotes:
@@ -8180,8 +8122,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'signal-hill-california': {
     permitNotes:
@@ -8210,8 +8152,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'solana-beach-california': {
     permitNotes:
@@ -8240,8 +8182,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'soledad-california': {
     permitNotes:
@@ -8270,8 +8212,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'sonoma-california': {
     permitNotes:
@@ -8300,8 +8242,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'south-el-monte-california': {
     permitNotes:
@@ -8330,8 +8272,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'south-pasadena-california': {
     permitNotes:
@@ -8360,8 +8302,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'south-san-francisco-california': {
     permitNotes:
@@ -8390,8 +8332,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'suisun-city-california': {
     permitNotes:
@@ -8420,8 +8362,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'temple-city-california': {
     permitNotes:
@@ -8450,8 +8392,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'tiburon-california': {
     permitNotes:
@@ -8480,8 +8422,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'tracy-california': {
     permitNotes:
@@ -8510,8 +8452,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'tustin-california': {
     permitNotes:
@@ -8540,8 +8482,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'ukiah-california': {
     permitNotes:
@@ -8570,8 +8512,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'upland-california': {
     permitNotes:
@@ -8600,8 +8542,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'walnut-california': {
     permitNotes:
@@ -8630,8 +8572,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'walnut-creek-california': {
     permitNotes:
@@ -8660,8 +8602,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'wasco-california': {
     permitNotes:
@@ -8690,8 +8632,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'west-hollywood-california': {
     permitNotes:
@@ -8720,8 +8662,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'wheatland-california': {
     permitNotes:
@@ -8750,8 +8692,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'willows-california': {
     permitNotes:
@@ -8780,8 +8722,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'windsor-california': {
     permitNotes:
@@ -8810,8 +8752,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'woodland-california': {
     permitNotes:
@@ -8840,8 +8782,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'yorba-linda-california': {
     permitNotes:
@@ -8870,8 +8812,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'yuba-city-california': {
     permitNotes:
@@ -8900,8 +8842,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'yucaipa-california': {
     permitNotes:
@@ -8930,8 +8872,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'yucca-valley-california': {
     permitNotes:
@@ -8960,8 +8902,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'arvada-colorado': {
     permitNotes:
@@ -8990,8 +8932,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'aurora-colorado': {
     permitNotes:
@@ -9020,8 +8962,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'boulder-colorado': {
     permitNotes:
@@ -9050,8 +8992,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'centennial-colorado': {
     permitNotes:
@@ -9080,8 +9022,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'colorado-springs-colorado': {
     permitNotes:
@@ -9110,8 +9052,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'denver-colorado': {
     permitNotes:
@@ -9140,8 +9082,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'fort-collins-colorado': {
     permitNotes:
@@ -9170,8 +9112,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'grand-junction-colorado': {
     permitNotes:
@@ -9200,8 +9142,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'greeley-colorado': {
     permitNotes:
@@ -9230,8 +9172,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'lakewood-colorado': {
     permitNotes:
@@ -9260,8 +9202,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'longmont-colorado': {
     permitNotes:
@@ -9290,8 +9232,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'pueblo-colorado': {
     permitNotes:
@@ -9320,8 +9262,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'thornton-colorado': {
     permitNotes:
@@ -9350,8 +9292,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'westminster-colorado': {
     permitNotes:
@@ -9380,8 +9322,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'broomfield-colorado': {
     permitNotes:
@@ -9410,8 +9352,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'castle-rock-colorado': {
     permitNotes:
@@ -9440,8 +9382,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'commerce-city-colorado': {
     permitNotes:
@@ -9470,8 +9412,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'loveland-colorado': {
     permitNotes:
@@ -9500,8 +9442,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'parker-colorado': {
     permitNotes:
@@ -9530,8 +9472,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'danbury-connecticut': {
     permitNotes:
@@ -9560,8 +9502,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'new-britain-connecticut': {
     permitNotes:
@@ -9590,8 +9532,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'bristol-connecticut': {
     permitNotes:
@@ -9620,8 +9562,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'enfield-connecticut': {
     permitNotes:
@@ -9650,8 +9592,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'hamden-connecticut': {
     permitNotes:
@@ -9680,8 +9622,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'meriden-connecticut': {
     permitNotes:
@@ -9710,8 +9652,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'west-haven-connecticut': {
     permitNotes:
@@ -9740,8 +9682,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'bear-delaware': {
     permitNotes:
@@ -9770,8 +9712,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'dover-delaware': {
     permitNotes:
@@ -9800,8 +9742,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'elsmere-delaware': {
     permitNotes:
@@ -9830,8 +9772,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'georgetown-delaware': {
     permitNotes:
@@ -9860,8 +9802,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'middletown-delaware': {
     permitNotes:
@@ -9890,8 +9832,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'milford-delaware': {
     permitNotes:
@@ -9920,8 +9862,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'newark-delaware': {
     permitNotes:
@@ -9950,8 +9892,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'new-castle-delaware': {
     permitNotes:
@@ -9980,8 +9922,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'seaford-delaware': {
     permitNotes:
@@ -10010,8 +9952,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'smyrna-delaware': {
     permitNotes:
@@ -10040,8 +9982,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'wilmington-delaware': {
     permitNotes:
@@ -10070,8 +10012,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'altamonte-springs-florida': {
     permitNotes:
@@ -10100,8 +10042,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'apopka-florida': {
     permitNotes:
@@ -10130,8 +10072,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'boca-raton-florida': {
     permitNotes:
@@ -10160,8 +10102,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'boynton-beach-florida': {
     permitNotes:
@@ -10190,8 +10132,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'bradenton-florida': {
     permitNotes:
@@ -10220,8 +10162,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'cape-coral-florida': {
     permitNotes:
@@ -10250,8 +10192,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'clearwater-florida': {
     permitNotes:
@@ -10280,8 +10222,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'coconut-creek-florida': {
     permitNotes:
@@ -10310,8 +10252,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'coral-springs-florida': {
     permitNotes:
@@ -10340,8 +10282,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'cutler-bay-florida': {
     permitNotes:
@@ -10370,8 +10312,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'daytona-beach-florida': {
     permitNotes:
@@ -10400,8 +10342,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'davie-florida': {
     permitNotes:
@@ -10430,8 +10372,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'deltona-florida': {
     permitNotes:
@@ -10460,8 +10402,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'doral-florida': {
     permitNotes:
@@ -10490,8 +10432,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'fort-lauderdale-florida': {
     permitNotes:
@@ -10520,8 +10462,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'fort-myers-florida': {
     permitNotes:
@@ -10550,8 +10492,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'gainesville-florida': {
     permitNotes:
@@ -10580,8 +10522,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'greenacres-florida': {
     permitNotes:
@@ -10610,8 +10552,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'hialeah-florida': {
     permitNotes:
@@ -10640,8 +10582,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'hollywood-florida': {
     permitNotes:
@@ -10670,8 +10612,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'jacksonville-florida': {
     permitNotes:
@@ -10700,8 +10642,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'jupiter-florida': {
     permitNotes:
@@ -10730,8 +10672,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'kissimmee-florida': {
     permitNotes:
@@ -10760,8 +10702,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'lakeland-florida': {
     permitNotes:
@@ -10790,8 +10732,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'largo-florida': {
     permitNotes:
@@ -10820,8 +10762,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'margate-florida': {
     permitNotes:
@@ -10850,8 +10792,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'miami-florida': {
     permitNotes:
@@ -10880,8 +10822,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'melbourne-florida': {
     permitNotes:
@@ -10910,8 +10852,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'miramar-florida': {
     permitNotes:
@@ -10940,8 +10882,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'naples-florida': {
     permitNotes:
@@ -10970,8 +10912,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'north-miami-florida': {
     permitNotes:
@@ -11000,8 +10942,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'orlando-florida': {
     permitNotes:
@@ -11030,8 +10972,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'ocala-florida': {
     permitNotes:
@@ -11060,8 +11002,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'palm-bay-florida': {
     permitNotes:
@@ -11090,8 +11032,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'palm-coast-florida': {
     permitNotes:
@@ -11120,8 +11062,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'palm-beach-gardens-florida': {
     permitNotes:
@@ -11150,8 +11092,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'palm-harbor-florida': {
     permitNotes:
@@ -11180,8 +11122,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'pembroke-pines-florida': {
     permitNotes:
@@ -11210,8 +11152,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'pensacola-florida': {
     permitNotes:
@@ -11240,8 +11182,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'plant-city-florida': {
     permitNotes:
@@ -11270,8 +11212,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'plantation-florida': {
     permitNotes:
@@ -11300,8 +11242,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'pompano-beach-florida': {
     permitNotes:
@@ -11330,8 +11272,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'port-orange-florida': {
     permitNotes:
@@ -11360,8 +11302,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'port-st-lucie-florida': {
     permitNotes:
@@ -11390,8 +11332,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'royal-palm-beach-florida': {
     permitNotes:
@@ -11420,8 +11362,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'sanford-florida': {
     permitNotes:
@@ -11450,8 +11392,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'sarasota-florida': {
     permitNotes:
@@ -11480,8 +11422,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'st-petersburg-florida': {
     permitNotes:
@@ -11510,8 +11452,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'stuart-florida': {
     permitNotes:
@@ -11540,8 +11482,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'sunrise-florida': {
     permitNotes:
@@ -11570,8 +11512,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'tallahassee-florida': {
     permitNotes:
@@ -11600,8 +11542,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'tampa-florida': {
     permitNotes:
@@ -11630,8 +11572,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'wellington-florida': {
     permitNotes:
@@ -11660,8 +11602,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'west-palm-beach-florida': {
     permitNotes:
@@ -11690,8 +11632,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'aventura-florida': {
     permitNotes:
@@ -11720,8 +11662,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'casselberry-florida': {
     permitNotes:
@@ -11750,8 +11692,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'coral-gables-florida': {
     permitNotes:
@@ -11780,8 +11722,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'deerfield-beach-florida': {
     permitNotes:
@@ -11810,8 +11752,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'dunedin-florida': {
     permitNotes:
@@ -11840,8 +11782,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'edgewater-florida': {
     permitNotes:
@@ -11870,8 +11812,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'fort-pierce-florida': {
     permitNotes:
@@ -11900,8 +11842,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'hialeah-gardens-florida': {
     permitNotes:
@@ -11930,8 +11872,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'key-west-florida': {
     permitNotes:
@@ -11960,8 +11902,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'lake-worth-florida': {
     permitNotes:
@@ -11990,8 +11932,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'lehigh-acres-florida': {
     permitNotes:
@@ -12020,8 +11962,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'miami-beach-florida': {
     permitNotes:
@@ -12050,8 +11992,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'miami-gardens-florida': {
     permitNotes:
@@ -12080,8 +12022,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'orange-park-florida': {
     permitNotes:
@@ -12110,8 +12052,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'panama-city-florida': {
     permitNotes:
@@ -12140,9 +12082,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
-  },
+      },
+    ],
   'port-st.-lucie-florida': {
     permitNotes:
       'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
@@ -12170,8 +12111,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'sebastian-florida': {
     permitNotes:
@@ -12200,9 +12141,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
-  },
+      },
+    ],
   'st.-petersburg-florida': {
     permitNotes:
       'Florida requires a sales tax certificate from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
@@ -12230,8 +12170,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'tarpon-springs-florida': {
     permitNotes:
@@ -12260,8 +12200,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'titusville-florida': {
     permitNotes:
@@ -12290,8 +12230,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'venice-florida': {
     permitNotes:
@@ -12320,8 +12260,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'winter-haven-florida': {
     permitNotes:
@@ -12350,8 +12290,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'winter-park-florida': {
     permitNotes:
@@ -12380,8 +12320,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'winter-springs-florida': {
     permitNotes:
@@ -12410,8 +12350,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'albany-georgia': {
     permitNotes:
@@ -12440,8 +12380,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'athens-georgia': {
     permitNotes:
@@ -12470,8 +12410,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'atlanta-georgia': {
     permitNotes:
@@ -12500,8 +12440,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'augusta-georgia': {
     permitNotes:
@@ -12530,8 +12470,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'columbus-georgia': {
     permitNotes:
@@ -12560,8 +12500,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'macon-georgia': {
     permitNotes:
@@ -12590,8 +12530,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'marietta-georgia': {
     permitNotes:
@@ -12620,8 +12560,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'roswell-georgia': {
     permitNotes:
@@ -12650,8 +12590,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'sandy-springs-georgia': {
     permitNotes:
@@ -12680,8 +12620,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'savannah-georgia': {
     permitNotes:
@@ -12710,8 +12650,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'valdosta-georgia': {
     permitNotes:
@@ -12740,8 +12680,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'warner-robins-georgia': {
     permitNotes:
@@ -12770,8 +12710,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'alpharetta-georgia': {
     permitNotes:
@@ -12800,8 +12740,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'americus-georgia': {
     permitNotes:
@@ -12830,8 +12770,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'brunswick-georgia': {
     permitNotes:
@@ -12860,8 +12800,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'dalton-georgia': {
     permitNotes:
@@ -12890,8 +12830,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'douglas-georgia': {
     permitNotes:
@@ -12920,8 +12860,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'douglasville-georgia': {
     permitNotes:
@@ -12950,8 +12890,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'dublin-georgia': {
     permitNotes:
@@ -12980,8 +12920,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'gainesville-georgia': {
     permitNotes:
@@ -13010,8 +12950,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'griffin-georgia': {
     permitNotes:
@@ -13040,8 +12980,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'kennesaw-georgia': {
     permitNotes:
@@ -13070,8 +13010,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'lagrange-georgia': {
     permitNotes:
@@ -13100,8 +13040,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'milledgeville-georgia': {
     permitNotes:
@@ -13130,8 +13070,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'newnan-georgia': {
     permitNotes:
@@ -13160,8 +13100,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'rome-georgia': {
     permitNotes:
@@ -13190,8 +13130,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'smyrna-georgia': {
     permitNotes:
@@ -13220,8 +13160,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'statesboro-georgia': {
     permitNotes:
@@ -13250,8 +13190,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'thomasville-georgia': {
     permitNotes:
@@ -13280,8 +13220,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'waycross-georgia': {
     permitNotes:
@@ -13310,8 +13250,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'hilo-hawaii': {
     permitNotes:
@@ -13340,8 +13280,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'honolulu-hawaii': {
     permitNotes:
@@ -13370,8 +13310,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'kailua-hawaii': {
     permitNotes:
@@ -13400,8 +13340,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'pearl-city-hawaii': {
     permitNotes:
@@ -13430,8 +13370,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'ewa-beach-hawaii': {
     permitNotes:
@@ -13460,8 +13400,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'kahului-hawaii': {
     permitNotes:
@@ -13490,8 +13430,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'kaneohe-hawaii': {
     permitNotes:
@@ -13520,8 +13460,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'kihei-hawaii': {
     permitNotes:
@@ -13550,8 +13490,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'mililani-hawaii': {
     permitNotes:
@@ -13580,8 +13520,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'boise-idaho': {
     permitNotes:
@@ -13610,8 +13550,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'caldwell-idaho': {
     permitNotes:
@@ -13640,8 +13580,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'idaho-falls-idaho': {
     permitNotes:
@@ -13670,8 +13610,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'meridian-idaho': {
     permitNotes:
@@ -13700,8 +13640,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'nampa-idaho': {
     permitNotes:
@@ -13730,8 +13670,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'pocatello-idaho': {
     permitNotes:
@@ -13760,8 +13700,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'rexburg-idaho': {
     permitNotes:
@@ -13790,8 +13730,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'twin-falls-idaho': {
     permitNotes:
@@ -13820,8 +13760,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'arlington-heights-illinois': {
     permitNotes:
@@ -13850,8 +13790,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'aurora-illinois': {
     permitNotes:
@@ -13880,8 +13820,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'berwyn-illinois': {
     permitNotes:
@@ -13910,8 +13850,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'bloomington-illinois': {
     permitNotes:
@@ -13940,8 +13880,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'bolingbrook-illinois': {
     permitNotes:
@@ -13970,8 +13910,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'champaign-urbana-illinois': {
     permitNotes:
@@ -14000,8 +13940,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'chicago-illinois': {
     permitNotes:
@@ -14030,8 +13970,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'cicero-illinois': {
     permitNotes:
@@ -14060,8 +14000,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'decatur-illinois': {
     permitNotes:
@@ -14090,8 +14030,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'des-plaines-illinois': {
     permitNotes:
@@ -14120,8 +14060,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'downers-grove-illinois': {
     permitNotes:
@@ -14150,8 +14090,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'elgin-illinois': {
     permitNotes:
@@ -14180,8 +14120,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'evanston-illinois': {
     permitNotes:
@@ -14210,8 +14150,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'joliet-illinois': {
     permitNotes:
@@ -14240,8 +14180,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'moline-illinois': {
     permitNotes:
@@ -14270,8 +14210,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'mount-prospect-illinois': {
     permitNotes:
@@ -14300,8 +14240,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'naperville-illinois': {
     permitNotes:
@@ -14330,8 +14270,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'oak-lawn-illinois': {
     permitNotes:
@@ -14360,8 +14300,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'oak-park-illinois': {
     permitNotes:
@@ -14390,8 +14330,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'orland-park-illinois': {
     permitNotes:
@@ -14420,8 +14360,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'palatine-illinois': {
     permitNotes:
@@ -14450,8 +14390,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'peoria-illinois': {
     permitNotes:
@@ -14480,8 +14420,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'quincy-illinois': {
     permitNotes:
@@ -14510,8 +14450,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'rockford-illinois': {
     permitNotes:
@@ -14540,8 +14480,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'schaumburg-illinois': {
     permitNotes:
@@ -14570,8 +14510,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'skokie-illinois': {
     permitNotes:
@@ -14600,8 +14540,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'springfield-illinois': {
     permitNotes:
@@ -14630,8 +14570,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'tinley-park-illinois': {
     permitNotes:
@@ -14660,8 +14600,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'waukegan-illinois': {
     permitNotes:
@@ -14690,8 +14630,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'wheaton-illinois': {
     permitNotes:
@@ -14720,8 +14660,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'addison-illinois': {
     permitNotes:
@@ -14750,8 +14690,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'bartlett-illinois': {
     permitNotes:
@@ -14780,8 +14720,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'buffalo-grove-illinois': {
     permitNotes:
@@ -14810,8 +14750,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'carpentersville-illinois': {
     permitNotes:
@@ -14840,8 +14780,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'crystal-lake-illinois': {
     permitNotes:
@@ -14870,8 +14810,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'elmhurst-illinois': {
     permitNotes:
@@ -14900,8 +14840,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'hoffman-estates-illinois': {
     permitNotes:
@@ -14930,8 +14870,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'normal-illinois': {
     permitNotes:
@@ -14960,8 +14900,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'park-ridge-illinois': {
     permitNotes:
@@ -14990,8 +14930,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'rolling-meadows-illinois': {
     permitNotes:
@@ -15020,8 +14960,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'wheeling-illinois': {
     permitNotes:
@@ -15050,8 +14990,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'anderson-indiana': {
     permitNotes:
@@ -15080,8 +15020,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'bloomington-indiana': {
     permitNotes:
@@ -15110,8 +15050,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'carmel-indiana': {
     permitNotes:
@@ -15140,8 +15080,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'evansville-indiana': {
     permitNotes:
@@ -15170,8 +15110,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'fort-wayne-indiana': {
     permitNotes:
@@ -15200,8 +15140,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'gary-indiana': {
     permitNotes:
@@ -15230,8 +15170,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'hammond-indiana': {
     permitNotes:
@@ -15260,8 +15200,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'indianapolis-indiana': {
     permitNotes:
@@ -15290,8 +15230,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'kokomo-indiana': {
     permitNotes:
@@ -15320,8 +15260,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'muncie-indiana': {
     permitNotes:
@@ -15350,8 +15290,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'south-bend-indiana': {
     permitNotes:
@@ -15380,8 +15320,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'terre-haute-indiana': {
     permitNotes:
@@ -15410,8 +15350,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'elkhart-indiana': {
     permitNotes:
@@ -15440,8 +15380,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'lafayette-indiana': {
     permitNotes:
@@ -15470,8 +15410,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'ames-iowa': {
     permitNotes:
@@ -15500,8 +15440,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'cedar-rapids-iowa': {
     permitNotes:
@@ -15530,8 +15470,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'davenport-iowa': {
     permitNotes:
@@ -15560,8 +15500,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'des-moines-iowa': {
     permitNotes:
@@ -15590,8 +15530,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'dubuque-iowa': {
     permitNotes:
@@ -15620,8 +15560,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'iowa-city-iowa': {
     permitNotes:
@@ -15650,8 +15590,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'sioux-city-iowa': {
     permitNotes:
@@ -15680,8 +15620,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'waterloo-iowa': {
     permitNotes:
@@ -15710,8 +15650,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'council-bluffs-iowa': {
     permitNotes:
@@ -15740,8 +15680,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'west-des-moines-iowa': {
     permitNotes:
@@ -15770,8 +15710,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'kansas-city-kansas': {
     permitNotes:
@@ -15800,8 +15740,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'lawrence-kansas': {
     permitNotes:
@@ -15830,8 +15770,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'manhattan-kansas': {
     permitNotes:
@@ -15860,8 +15800,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'olathe-kansas': {
     permitNotes:
@@ -15890,8 +15830,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'overland-park-kansas': {
     permitNotes:
@@ -15920,8 +15860,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'topeka-kansas': {
     permitNotes:
@@ -15950,8 +15890,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'wichita-kansas': {
     permitNotes:
@@ -15980,8 +15920,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'dodge-city-kansas': {
     permitNotes:
@@ -16010,8 +15950,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'hutchinson-kansas': {
     permitNotes:
@@ -16040,8 +15980,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'leavenworth-kansas': {
     permitNotes:
@@ -16070,8 +16010,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'salina-kansas': {
     permitNotes:
@@ -16100,8 +16040,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'lenexa-kansas': {
     permitNotes:
@@ -16130,8 +16070,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'bowling-green-kentucky': {
     permitNotes:
@@ -16160,8 +16100,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'covington-kentucky': {
     permitNotes:
@@ -16190,8 +16130,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'florence-kentucky': {
     permitNotes:
@@ -16220,8 +16160,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'frankfort-kentucky': {
     permitNotes:
@@ -16250,8 +16190,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'georgetown-kentucky': {
     permitNotes:
@@ -16280,8 +16220,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'hopkinsville-kentucky': {
     permitNotes:
@@ -16310,8 +16250,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'lexington-kentucky': {
     permitNotes:
@@ -16340,8 +16280,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'louisville-kentucky': {
     permitNotes:
@@ -16370,8 +16310,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'owensboro-kentucky': {
     permitNotes:
@@ -16400,8 +16340,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'paducah-kentucky': {
     permitNotes:
@@ -16430,8 +16370,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'richmond-kentucky': {
     permitNotes:
@@ -16460,8 +16400,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'ashland-kentucky': {
     permitNotes:
@@ -16490,8 +16430,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'elizabethtown-kentucky': {
     permitNotes:
@@ -16520,8 +16460,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'madisonville-kentucky': {
     permitNotes:
@@ -16550,8 +16490,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'murray-kentucky': {
     permitNotes:
@@ -16580,8 +16520,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'newport-kentucky': {
     permitNotes:
@@ -16610,8 +16550,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'alexandria-louisiana': {
     permitNotes:
@@ -16640,8 +16580,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'baton-rouge-louisiana': {
     permitNotes:
@@ -16670,8 +16610,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'bossier-city-louisiana': {
     permitNotes:
@@ -16700,8 +16640,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'houma-louisiana': {
     permitNotes:
@@ -16730,8 +16670,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'kenner-louisiana': {
     permitNotes:
@@ -16760,8 +16700,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'lafayette-louisiana': {
     permitNotes:
@@ -16790,8 +16730,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'lake-charles-louisiana': {
     permitNotes:
@@ -16820,8 +16760,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'metairie-louisiana': {
     permitNotes:
@@ -16850,8 +16790,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'monroe-louisiana': {
     permitNotes:
@@ -16880,8 +16820,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'new-orleans-louisiana': {
     permitNotes:
@@ -16910,8 +16850,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'shreveport-louisiana': {
     permitNotes:
@@ -16940,8 +16880,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'slidell-louisiana': {
     permitNotes:
@@ -16970,8 +16910,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'gretna-louisiana': {
     permitNotes:
@@ -17000,8 +16940,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'hammond-louisiana': {
     permitNotes:
@@ -17030,8 +16970,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'laplace-louisiana': {
     permitNotes:
@@ -17060,8 +17000,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'marrero-louisiana': {
     permitNotes:
@@ -17090,8 +17030,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'opelousas-louisiana': {
     permitNotes:
@@ -17120,8 +17060,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'ruston-louisiana': {
     permitNotes:
@@ -17150,8 +17090,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'sulphur-louisiana': {
     permitNotes:
@@ -17180,8 +17120,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'augusta-maine': {
     permitNotes:
@@ -17210,8 +17150,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'bangor-maine': {
     permitNotes:
@@ -17240,8 +17180,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'lewiston-maine': {
     permitNotes:
@@ -17270,8 +17210,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'portland-maine': {
     permitNotes:
@@ -17300,8 +17240,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'auburn-maine': {
     permitNotes:
@@ -17330,8 +17270,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'biddeford-maine': {
     permitNotes:
@@ -17360,8 +17300,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'saco-maine': {
     permitNotes:
@@ -17390,8 +17330,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'sanford-maine': {
     permitNotes:
@@ -17420,8 +17360,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'waterville-maine': {
     permitNotes:
@@ -17450,8 +17390,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'arkansas-city-kansas': {
     permitNotes:
@@ -17480,8 +17420,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'atchison-kansas': {
     permitNotes:
@@ -17510,8 +17450,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'chanute-kansas': {
     permitNotes:
@@ -17540,8 +17480,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'coffeyville-kansas': {
     permitNotes:
@@ -17570,8 +17510,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'fort-scott-kansas': {
     permitNotes:
@@ -17600,8 +17540,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'garden-city-kansas': {
     permitNotes:
@@ -17630,8 +17570,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'great-bend-kansas': {
     permitNotes:
@@ -17660,8 +17600,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'iola-kansas': {
     permitNotes:
@@ -17690,8 +17630,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'mcpherson-kansas': {
     permitNotes:
@@ -17720,8 +17660,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'newton-kansas': {
     permitNotes:
@@ -17750,8 +17690,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'parsons-kansas': {
     permitNotes:
@@ -17780,8 +17720,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'pittsburg-kansas': {
     permitNotes:
@@ -17810,8 +17750,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'annapolis-maryland': {
     permitNotes:
@@ -17840,8 +17780,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'baltimore-maryland': {
     permitNotes:
@@ -17870,8 +17810,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'columbia-maryland': {
     permitNotes:
@@ -17900,8 +17840,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'frederick-maryland': {
     permitNotes:
@@ -17930,8 +17870,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'gaithersburg-maryland': {
     permitNotes:
@@ -17960,8 +17900,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'hagerstown-maryland': {
     permitNotes:
@@ -17990,8 +17930,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'rockville-maryland': {
     permitNotes:
@@ -18020,8 +17960,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'silver-spring-maryland': {
     permitNotes:
@@ -18050,8 +17990,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'bethesda-maryland': {
     permitNotes:
@@ -18080,8 +18020,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'bowie-maryland': {
     permitNotes:
@@ -18110,8 +18050,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'college-park-maryland': {
     permitNotes:
@@ -18140,8 +18080,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'germantown-maryland': {
     permitNotes:
@@ -18170,8 +18110,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'laurel-maryland': {
     permitNotes:
@@ -18200,8 +18140,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'salisbury-maryland': {
     permitNotes:
@@ -18230,8 +18170,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'towson-maryland': {
     permitNotes:
@@ -18260,8 +18200,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'waldorf-maryland': {
     permitNotes:
@@ -18290,8 +18230,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'lawrence-massachusetts': {
     permitNotes:
@@ -18320,8 +18260,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'lowell-massachusetts': {
     permitNotes:
@@ -18350,8 +18290,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'lynn-massachusetts': {
     permitNotes:
@@ -18380,8 +18320,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'new-bedford-massachusetts': {
     permitNotes:
@@ -18410,8 +18350,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'newton-massachusetts': {
     permitNotes:
@@ -18440,8 +18380,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'quincy-massachusetts': {
     permitNotes:
@@ -18470,8 +18410,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'barnstable-massachusetts': {
     permitNotes:
@@ -18500,8 +18440,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'brockton-massachusetts': {
     permitNotes:
@@ -18530,8 +18470,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'brookline-massachusetts': {
     permitNotes:
@@ -18560,8 +18500,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'chicopee-massachusetts': {
     permitNotes:
@@ -18590,8 +18530,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'framingham-massachusetts': {
     permitNotes:
@@ -18620,8 +18560,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'malden-massachusetts': {
     permitNotes:
@@ -18650,8 +18590,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'medford-massachusetts': {
     permitNotes:
@@ -18680,8 +18620,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'methuen-massachusetts': {
     permitNotes:
@@ -18710,8 +18650,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'peabody-massachusetts': {
     permitNotes:
@@ -18740,8 +18680,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'revere-massachusetts': {
     permitNotes:
@@ -18770,8 +18710,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'somerville-massachusetts': {
     permitNotes:
@@ -18800,8 +18740,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'taunton-massachusetts': {
     permitNotes:
@@ -18830,8 +18770,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'waltham-massachusetts': {
     permitNotes:
@@ -18860,8 +18800,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'haverhill-massachusetts': {
     permitNotes:
@@ -18890,8 +18830,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'pittsfield-massachusetts': {
     permitNotes:
@@ -18920,8 +18860,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'ann-arbor-michigan': {
     permitNotes:
@@ -18950,8 +18890,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'dearborn-michigan': {
     permitNotes:
@@ -18980,8 +18920,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'detroit-michigan': {
     permitNotes:
@@ -19010,8 +18950,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'farmington-hills-michigan': {
     permitNotes:
@@ -19040,8 +18980,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'flint-michigan': {
     permitNotes:
@@ -19070,8 +19010,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'grand-rapids-michigan': {
     permitNotes:
@@ -19100,8 +19040,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'jackson-michigan': {
     permitNotes:
@@ -19130,8 +19070,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'kalamazoo-michigan': {
     permitNotes:
@@ -19160,8 +19100,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'lansing-michigan': {
     permitNotes:
@@ -19190,8 +19130,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'livonia-michigan': {
     permitNotes:
@@ -19220,8 +19160,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'port-huron-michigan': {
     permitNotes:
@@ -19250,8 +19190,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'rochester-hills-michigan': {
     permitNotes:
@@ -19280,8 +19220,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'saginaw-michigan': {
     permitNotes:
@@ -19310,8 +19250,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'sterling-heights-michigan': {
     permitNotes:
@@ -19340,8 +19280,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'troy-michigan': {
     permitNotes:
@@ -19370,8 +19310,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'warren-michigan': {
     permitNotes:
@@ -19400,8 +19340,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'westland-michigan': {
     permitNotes:
@@ -19430,8 +19370,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'birmingham-michigan': {
     permitNotes:
@@ -19460,8 +19400,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'kentwood-michigan': {
     permitNotes:
@@ -19490,8 +19430,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'novi-michigan': {
     permitNotes:
@@ -19520,8 +19460,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'pontiac-michigan': {
     permitNotes:
@@ -19550,8 +19490,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'taylor-michigan': {
     permitNotes:
@@ -19580,8 +19520,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'wyoming-michigan': {
     permitNotes:
@@ -19610,8 +19550,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'battle-creek-michigan': {
     permitNotes:
@@ -19640,8 +19580,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'bloomington-minnesota': {
     permitNotes:
@@ -19670,8 +19610,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'brooklyn-park-minnesota': {
     permitNotes:
@@ -19700,8 +19640,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'duluth-minnesota': {
     permitNotes:
@@ -19730,8 +19670,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'eagan-minnesota': {
     permitNotes:
@@ -19760,8 +19700,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'lakeville-minnesota': {
     permitNotes:
@@ -19790,8 +19730,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'mankato-minnesota': {
     permitNotes:
@@ -19820,8 +19760,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'maple-grove-minnesota': {
     permitNotes:
@@ -19850,8 +19790,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'minneapolis-minnesota': {
     permitNotes:
@@ -19880,8 +19820,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'plymouth-minnesota': {
     permitNotes:
@@ -19910,8 +19850,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'rochester-minnesota': {
     permitNotes:
@@ -19940,8 +19880,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'saint-paul-minnesota': {
     permitNotes:
@@ -19970,8 +19910,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'st-paul-minnesota': {
     permitNotes:
@@ -20000,8 +19940,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'st-cloud-minnesota': {
     permitNotes:
@@ -20030,8 +19970,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'woodbury-minnesota': {
     permitNotes:
@@ -20060,8 +20000,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'burnsville-minnesota': {
     permitNotes:
@@ -20090,8 +20030,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'coon-rapids-minnesota': {
     permitNotes:
@@ -20120,8 +20060,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'eden-prairie-minnesota': {
     permitNotes:
@@ -20150,8 +20090,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'moorhead-minnesota': {
     permitNotes:
@@ -20180,8 +20120,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'saint-cloud-minnesota': {
     permitNotes:
@@ -20210,8 +20150,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'biloxi-mississippi': {
     permitNotes:
@@ -20240,8 +20180,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'gulfport-mississippi': {
     permitNotes:
@@ -20270,8 +20210,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'hattiesburg-mississippi': {
     permitNotes:
@@ -20300,8 +20240,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'jackson-mississippi': {
     permitNotes:
@@ -20330,8 +20270,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'southaven-mississippi': {
     permitNotes:
@@ -20360,8 +20300,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'tupelo-mississippi': {
     permitNotes:
@@ -20390,8 +20330,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'columbus-mississippi': {
     permitNotes:
@@ -20420,8 +20360,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'greenville-mississippi': {
     permitNotes:
@@ -20450,8 +20390,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'meridian-mississippi': {
     permitNotes:
@@ -20480,8 +20420,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'oxford-mississippi': {
     permitNotes:
@@ -20510,8 +20450,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'starkville-mississippi': {
     permitNotes:
@@ -20540,8 +20480,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'natchez-mississippi': {
     permitNotes:
@@ -20570,8 +20510,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'vicksburg-mississippi': {
     permitNotes:
@@ -20600,8 +20540,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'columbia-missouri': {
     permitNotes:
@@ -20630,8 +20570,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'independence-missouri': {
     permitNotes:
@@ -20660,8 +20600,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'joplin-missouri': {
     permitNotes:
@@ -20690,8 +20630,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'kansas-city-missouri': {
     permitNotes:
@@ -20720,8 +20660,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'springfield-missouri': {
     permitNotes:
@@ -20750,8 +20690,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'st-louis-missouri': {
     permitNotes:
@@ -20780,8 +20720,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'blue-springs-missouri': {
     permitNotes:
@@ -20810,8 +20750,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'cape-girardeau-missouri': {
     permitNotes:
@@ -20840,8 +20780,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'florissant-missouri': {
     permitNotes:
@@ -20870,8 +20810,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'saint-charles-missouri': {
     permitNotes:
@@ -20900,8 +20840,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'saint-joseph-missouri': {
     permitNotes:
@@ -20930,8 +20870,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'saint-louis-missouri': {
     permitNotes:
@@ -20960,8 +20900,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'saint-peters-missouri': {
     permitNotes:
@@ -20990,8 +20930,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'kalispell-montana': {
     permitNotes:
@@ -21020,8 +20960,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'havre-montana': {
     permitNotes:
@@ -21050,8 +20990,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'jefferson-city-missouri': {
     permitNotes:
@@ -21080,8 +21020,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'st-charles-missouri': {
     permitNotes:
@@ -21110,8 +21050,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'st-joseph-missouri': {
     permitNotes:
@@ -21140,8 +21080,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'st-peters-missouri': {
     permitNotes:
@@ -21170,8 +21110,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'bellevue-nebraska': {
     permitNotes:
@@ -21200,8 +21140,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'grand-island-nebraska': {
     permitNotes:
@@ -21230,8 +21170,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'lincoln-nebraska': {
     permitNotes:
@@ -21260,8 +21200,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'omaha-nebraska': {
     permitNotes:
@@ -21290,8 +21230,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'fremont-nebraska': {
     permitNotes:
@@ -21320,8 +21260,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'hastings-nebraska': {
     permitNotes:
@@ -21350,8 +21290,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'kearney-nebraska': {
     permitNotes:
@@ -21380,8 +21320,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'norfolk-nebraska': {
     permitNotes:
@@ -21410,8 +21350,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'north-platte-nebraska': {
     permitNotes:
@@ -21440,8 +21380,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'boulder-city-nevada': {
     permitNotes:
@@ -21470,8 +21410,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'carson-city-nevada': {
     permitNotes:
@@ -21500,8 +21440,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'elko-nevada': {
     permitNotes:
@@ -21530,8 +21470,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'enterprise-nevada': {
     permitNotes:
@@ -21560,8 +21500,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'fallon-nevada': {
     permitNotes:
@@ -21590,8 +21530,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'fernley-nevada': {
     permitNotes:
@@ -21620,8 +21560,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'henderson-nevada': {
     permitNotes:
@@ -21650,8 +21590,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'las-vegas-nevada': {
     permitNotes:
@@ -21680,8 +21620,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'mesquite-nevada': {
     permitNotes:
@@ -21710,8 +21650,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'north-las-vegas-nevada': {
     permitNotes:
@@ -21740,8 +21680,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'pahrump-nevada': {
     permitNotes:
@@ -21770,8 +21710,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'reno-nevada': {
     permitNotes:
@@ -21800,8 +21740,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'sparks-nevada': {
     permitNotes:
@@ -21830,8 +21770,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'concord-new-hampshire': {
     permitNotes:
@@ -21860,8 +21800,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'derry-new-hampshire': {
     permitNotes:
@@ -21890,8 +21830,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'dover-new-hampshire': {
     permitNotes:
@@ -21920,8 +21860,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'manchester-new-hampshire': {
     permitNotes:
@@ -21950,8 +21890,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'merrimack-new-hampshire': {
     permitNotes:
@@ -21980,8 +21920,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'nashua-new-hampshire': {
     permitNotes:
@@ -22010,8 +21950,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'portsmouth-new-hampshire': {
     permitNotes:
@@ -22040,8 +21980,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'rochester-new-hampshire': {
     permitNotes:
@@ -22070,8 +22010,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'salem-new-hampshire': {
     permitNotes:
@@ -22100,8 +22040,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'trenton-new-jersey': {
     permitNotes:
@@ -22130,8 +22070,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'bayonne-new-jersey': {
     permitNotes:
@@ -22160,8 +22100,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'camden-new-jersey': {
     permitNotes:
@@ -22190,8 +22130,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'cherry-hill-new-jersey': {
     permitNotes:
@@ -22220,8 +22160,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'clifton-new-jersey': {
     permitNotes:
@@ -22250,8 +22190,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'hackensack-new-jersey': {
     permitNotes:
@@ -22280,8 +22220,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'hoboken-new-jersey': {
     permitNotes:
@@ -22310,8 +22250,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'kearny-new-jersey': {
     permitNotes:
@@ -22340,8 +22280,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'new-brunswick-new-jersey': {
     permitNotes:
@@ -22370,8 +22310,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'passaic-new-jersey': {
     permitNotes:
@@ -22400,8 +22340,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'perth-amboy-new-jersey': {
     permitNotes:
@@ -22430,8 +22370,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'plainfield-new-jersey': {
     permitNotes:
@@ -22460,8 +22400,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'sayreville-new-jersey': {
     permitNotes:
@@ -22490,8 +22430,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'union-city-new-jersey': {
     permitNotes:
@@ -22520,8 +22460,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'vineland-new-jersey': {
     permitNotes:
@@ -22550,8 +22490,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'west-new-york-new-jersey': {
     permitNotes:
@@ -22580,8 +22520,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'east-orange-new-jersey': {
     permitNotes:
@@ -22610,8 +22550,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'albuquerque-new-mexico': {
     permitNotes:
@@ -22640,8 +22580,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'farmington-new-mexico': {
     permitNotes:
@@ -22670,8 +22610,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'las-cruces-new-mexico': {
     permitNotes:
@@ -22700,8 +22640,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'rio-rancho-new-mexico': {
     permitNotes:
@@ -22730,8 +22670,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'santa-fe-new-mexico': {
     permitNotes:
@@ -22760,8 +22700,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'carlsbad-new-mexico': {
     permitNotes:
@@ -22790,8 +22730,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'clovis-new-mexico': {
     permitNotes:
@@ -22820,8 +22760,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'gallup-new-mexico': {
     permitNotes:
@@ -22850,8 +22790,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'hobbs-new-mexico': {
     permitNotes:
@@ -22880,8 +22820,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'roswell-new-mexico': {
     permitNotes:
@@ -22910,8 +22850,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'binghamton-new-york': {
     permitNotes:
@@ -22940,8 +22880,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'ithaca-new-york': {
     permitNotes:
@@ -22970,8 +22910,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'mount-vernon-new-york': {
     permitNotes:
@@ -23000,8 +22940,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'new-rochelle-new-york': {
     permitNotes:
@@ -23030,8 +22970,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'schenectady-new-york': {
     permitNotes:
@@ -23060,8 +23000,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'troy-new-york': {
     permitNotes:
@@ -23090,8 +23030,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'utica-new-york': {
     permitNotes:
@@ -23120,8 +23060,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'white-plains-new-york': {
     permitNotes:
@@ -23150,8 +23090,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'yonkers-new-york': {
     permitNotes:
@@ -23180,8 +23120,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'amherst-new-york': {
     permitNotes:
@@ -23210,8 +23150,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'niagara-falls-new-york': {
     permitNotes:
@@ -23240,8 +23180,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'poughkeepsie-new-york': {
     permitNotes:
@@ -23270,8 +23210,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'rome-new-york': {
     permitNotes:
@@ -23300,8 +23240,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'watertown-new-york': {
     permitNotes:
@@ -23330,8 +23270,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'asheville-north-carolina': {
     permitNotes:
@@ -23360,8 +23300,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'cary-north-carolina': {
     permitNotes:
@@ -23390,8 +23330,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'charlotte-north-carolina': {
     permitNotes:
@@ -23420,8 +23360,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'concord-north-carolina': {
     permitNotes:
@@ -23450,8 +23390,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'durham-north-carolina': {
     permitNotes:
@@ -23480,8 +23420,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'fayetteville-north-carolina': {
     permitNotes:
@@ -23510,8 +23450,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'gastonia-north-carolina': {
     permitNotes:
@@ -23540,8 +23480,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'greensboro-north-carolina': {
     permitNotes:
@@ -23570,8 +23510,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'hickory-north-carolina': {
     permitNotes:
@@ -23600,8 +23540,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'high-point-north-carolina': {
     permitNotes:
@@ -23630,8 +23570,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'raleigh-north-carolina': {
     permitNotes:
@@ -23660,8 +23600,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'wilmington-north-carolina': {
     permitNotes:
@@ -23690,8 +23630,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'winston-salem-north-carolina': {
     permitNotes:
@@ -23720,8 +23660,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'burlington-north-carolina': {
     permitNotes:
@@ -23750,8 +23690,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'chapel-hill-north-carolina': {
     permitNotes:
@@ -23780,8 +23720,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'greenville-north-carolina': {
     permitNotes:
@@ -23810,8 +23750,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'jacksonville-north-carolina': {
     permitNotes:
@@ -23840,8 +23780,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'kannapolis-north-carolina': {
     permitNotes:
@@ -23870,8 +23810,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'rocky-mount-north-carolina': {
     permitNotes:
@@ -23900,8 +23840,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'salisbury-north-carolina': {
     permitNotes:
@@ -23930,8 +23870,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'wilson-north-carolina': {
     permitNotes:
@@ -23960,8 +23900,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'bismarck-north-dakota': {
     permitNotes:
@@ -23990,8 +23930,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'fargo-north-dakota': {
     permitNotes:
@@ -24020,8 +23960,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'grand-forks-north-dakota': {
     permitNotes:
@@ -24050,8 +23990,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'minot-north-dakota': {
     permitNotes:
@@ -24080,8 +24020,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'dickinson-north-dakota': {
     permitNotes:
@@ -24110,8 +24050,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'jamestown-north-dakota': {
     permitNotes:
@@ -24140,8 +24080,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'wahpeton-north-dakota': {
     permitNotes:
@@ -24170,8 +24110,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'williston-north-dakota': {
     permitNotes:
@@ -24200,8 +24140,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'akron-ohio': {
     permitNotes:
@@ -24230,8 +24170,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'canton-ohio': {
     permitNotes:
@@ -24260,8 +24200,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'cincinnati-ohio': {
     permitNotes:
@@ -24290,8 +24230,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'cleveland-ohio': {
     permitNotes:
@@ -24320,8 +24260,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'columbus-ohio': {
     permitNotes:
@@ -24350,8 +24290,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'dayton-ohio': {
     permitNotes:
@@ -24380,8 +24320,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'elyria-ohio': {
     permitNotes:
@@ -24410,8 +24350,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'hamilton-ohio': {
     permitNotes:
@@ -24440,8 +24380,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'lima-ohio': {
     permitNotes:
@@ -24470,8 +24410,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'lorain-ohio': {
     permitNotes:
@@ -24500,8 +24440,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'mansfield-ohio': {
     permitNotes:
@@ -24530,8 +24470,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'middletown-ohio': {
     permitNotes:
@@ -24560,8 +24500,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'newark-ohio': {
     permitNotes:
@@ -24590,8 +24530,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'parma-ohio': {
     permitNotes:
@@ -24620,8 +24560,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'springfield-ohio': {
     permitNotes:
@@ -24650,8 +24590,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'toledo-ohio': {
     permitNotes:
@@ -24680,8 +24620,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'youngstown-ohio': {
     permitNotes:
@@ -24710,8 +24650,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'broken-arrow-oklahoma': {
     permitNotes:
@@ -24740,8 +24680,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'lawton-oklahoma': {
     permitNotes:
@@ -24770,8 +24710,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'norman-oklahoma': {
     permitNotes:
@@ -24800,8 +24740,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'oklahoma-city-oklahoma': {
     permitNotes:
@@ -24830,8 +24770,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'tulsa-oklahoma': {
     permitNotes:
@@ -24860,8 +24800,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'edmond-oklahoma': {
     permitNotes:
@@ -24890,8 +24830,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'enid-oklahoma': {
     permitNotes:
@@ -24920,8 +24860,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'midwest-city-oklahoma': {
     permitNotes:
@@ -24950,8 +24890,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'moore-oklahoma': {
     permitNotes:
@@ -24980,8 +24920,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'stillwater-oklahoma': {
     permitNotes:
@@ -25010,8 +24950,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'albany-oregon': {
     permitNotes:
@@ -25040,8 +24980,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'beaverton-oregon': {
     permitNotes:
@@ -25070,8 +25010,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'bend-oregon': {
     permitNotes:
@@ -25100,8 +25040,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'corvallis-oregon': {
     permitNotes:
@@ -25130,8 +25070,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'eugene-oregon': {
     permitNotes:
@@ -25160,8 +25100,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'gresham-oregon': {
     permitNotes:
@@ -25190,8 +25130,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'hillsboro-oregon': {
     permitNotes:
@@ -25220,8 +25160,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'keizer-oregon': {
     permitNotes:
@@ -25250,8 +25190,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'medford-oregon': {
     permitNotes:
@@ -25280,8 +25220,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'portland-oregon': {
     permitNotes:
@@ -25310,8 +25250,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'salem-oregon': {
     permitNotes:
@@ -25340,8 +25280,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'springfield-oregon': {
     permitNotes:
@@ -25370,8 +25310,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'tigard-oregon': {
     permitNotes:
@@ -25400,8 +25340,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'allentown-pennsylvania': {
     permitNotes:
@@ -25430,8 +25370,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'bethlehem-pennsylvania': {
     permitNotes:
@@ -25460,8 +25400,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'erie-pennsylvania': {
     permitNotes:
@@ -25490,8 +25430,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'harrisburg-pennsylvania': {
     permitNotes:
@@ -25520,8 +25460,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'lancaster-pennsylvania': {
     permitNotes:
@@ -25550,8 +25490,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'philadelphia-pennsylvania': {
     permitNotes:
@@ -25580,8 +25520,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'pittsburgh-pennsylvania': {
     permitNotes:
@@ -25610,8 +25550,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'reading-pennsylvania': {
     permitNotes:
@@ -25640,8 +25580,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'scranton-pennsylvania': {
     permitNotes:
@@ -25670,8 +25610,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'york-pennsylvania': {
     permitNotes:
@@ -25700,8 +25640,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'wilkes-barre-pennsylvania': {
     permitNotes:
@@ -25730,8 +25670,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'cranston-rhode-island': {
     permitNotes:
@@ -25760,8 +25700,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'pawtucket-rhode-island': {
     permitNotes:
@@ -25790,8 +25730,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'providence-rhode-island': {
     permitNotes:
@@ -25820,8 +25760,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'warwick-rhode-island': {
     permitNotes:
@@ -25850,8 +25790,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'woonsocket-rhode-island': {
     permitNotes:
@@ -25880,8 +25820,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'central-falls-rhode-island': {
     permitNotes:
@@ -25910,8 +25850,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'east-greenwich-rhode-island': {
     permitNotes:
@@ -25940,8 +25880,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'east-providence-rhode-island': {
     permitNotes:
@@ -25970,8 +25910,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'newport-rhode-island': {
     permitNotes:
@@ -26000,8 +25940,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'aiken-south-carolina': {
     permitNotes:
@@ -26030,8 +25970,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'anderson-south-carolina': {
     permitNotes:
@@ -26060,8 +26000,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'charleston-south-carolina': {
     permitNotes:
@@ -26090,8 +26030,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'columbia-south-carolina': {
     permitNotes:
@@ -26120,8 +26060,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'conway-south-carolina': {
     permitNotes:
@@ -26150,8 +26090,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'florence-south-carolina': {
     permitNotes:
@@ -26180,8 +26120,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'goose-creek-south-carolina': {
     permitNotes:
@@ -26210,8 +26150,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'greenville-south-carolina': {
     permitNotes:
@@ -26240,8 +26180,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'hilton-head-island-south-carolina': {
     permitNotes:
@@ -26270,8 +26210,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'mount-pleasant-south-carolina': {
     permitNotes:
@@ -26300,8 +26240,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'myrtle-beach-south-carolina': {
     permitNotes:
@@ -26330,8 +26270,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'north-charleston-south-carolina': {
     permitNotes:
@@ -26360,8 +26300,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'rock-hill-south-carolina': {
     permitNotes:
@@ -26390,8 +26330,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'spartanburg-south-carolina': {
     permitNotes:
@@ -26420,8 +26360,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'summerville-south-carolina': {
     permitNotes:
@@ -26450,8 +26390,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'aberdeen-south-dakota': {
     permitNotes:
@@ -26480,8 +26420,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'rapid-city-south-dakota': {
     permitNotes:
@@ -26510,8 +26450,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'sioux-falls-south-dakota': {
     permitNotes:
@@ -26540,8 +26480,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'mitchell-south-dakota': {
     permitNotes:
@@ -26570,8 +26510,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'pierre-south-dakota': {
     permitNotes:
@@ -26600,8 +26540,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'watertown-south-dakota': {
     permitNotes:
@@ -26630,8 +26570,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'yankton-south-dakota': {
     permitNotes:
@@ -26660,8 +26600,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'chattanooga-tennessee': {
     permitNotes:
@@ -26690,8 +26630,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'clarksville-tennessee': {
     permitNotes:
@@ -26720,8 +26660,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'franklin-tennessee': {
     permitNotes:
@@ -26750,8 +26690,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'jackson-tennessee': {
     permitNotes:
@@ -26780,8 +26720,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'johnson-city-tennessee': {
     permitNotes:
@@ -26810,8 +26750,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'kingsport-tennessee': {
     permitNotes:
@@ -26840,8 +26780,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'knoxville-tennessee': {
     permitNotes:
@@ -26870,8 +26810,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'memphis-tennessee': {
     permitNotes:
@@ -26900,8 +26840,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'murfreesboro-tennessee': {
     permitNotes:
@@ -26930,8 +26870,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'nashville-tennessee': {
     permitNotes:
@@ -26960,8 +26900,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'bartlett-tennessee': {
     permitNotes:
@@ -26990,8 +26930,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'brentwood-tennessee': {
     permitNotes:
@@ -27020,8 +26960,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'collierville-tennessee': {
     permitNotes:
@@ -27050,8 +26990,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'abilene-texas': {
     permitNotes:
@@ -27080,8 +27020,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'allen-texas': {
     permitNotes:
@@ -27110,8 +27050,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'amarillo-texas': {
     permitNotes:
@@ -27140,8 +27080,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'arlington-texas': {
     permitNotes:
@@ -27170,8 +27110,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'austin-texas': {
     permitNotes:
@@ -27200,8 +27140,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'beaumont-texas': {
     permitNotes:
@@ -27230,8 +27170,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'brownsville-texas': {
     permitNotes:
@@ -27260,8 +27200,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'college-station-texas': {
     permitNotes:
@@ -27290,8 +27230,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'conroe-texas': {
     permitNotes:
@@ -27320,8 +27260,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'corpus-christi-texas': {
     permitNotes:
@@ -27350,8 +27290,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'dallas-texas': {
     permitNotes:
@@ -27380,8 +27320,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'edinburg-texas': {
     permitNotes:
@@ -27410,8 +27350,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'el-paso-texas': {
     permitNotes:
@@ -27440,8 +27380,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'fort-worth-texas': {
     permitNotes:
@@ -27470,8 +27410,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'garland-texas': {
     permitNotes:
@@ -27500,8 +27440,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'grand-prairie-texas': {
     permitNotes:
@@ -27530,8 +27470,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'frisco-texas': {
     permitNotes:
@@ -27560,8 +27500,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'mckinney-texas': {
     permitNotes:
@@ -27590,8 +27530,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'denton-texas': {
     permitNotes:
@@ -27620,8 +27560,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'carrollton-texas': {
     permitNotes:
@@ -27650,8 +27590,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'richardson-texas': {
     permitNotes:
@@ -27680,8 +27620,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'lewisville-texas': {
     permitNotes:
@@ -27710,8 +27650,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'round-rock-texas': {
     permitNotes:
@@ -27740,8 +27680,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'league-city-texas': {
     permitNotes:
@@ -27770,8 +27710,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'sugar-land-texas': {
     permitNotes:
@@ -27800,8 +27740,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'temple-texas': {
     permitNotes:
@@ -27830,8 +27770,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'tyler-texas': {
     permitNotes:
@@ -27860,8 +27800,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'waco-texas': {
     permitNotes:
@@ -27890,8 +27830,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'pearland-texas': {
     permitNotes:
@@ -27920,8 +27860,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'houston-texas': {
     permitNotes:
@@ -27950,8 +27890,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'irving-texas': {
     permitNotes:
@@ -27980,8 +27920,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'killeen-texas': {
     permitNotes:
@@ -28010,8 +27950,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'laredo-texas': {
     permitNotes:
@@ -28040,8 +27980,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'lubbock-texas': {
     permitNotes:
@@ -28070,8 +28010,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'mcallen-texas': {
     permitNotes:
@@ -28100,8 +28040,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'mesquite-texas': {
     permitNotes:
@@ -28130,8 +28070,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'midland-texas': {
     permitNotes:
@@ -28160,8 +28100,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'odessa-texas': {
     permitNotes:
@@ -28190,8 +28130,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'pasadena-texas': {
     permitNotes:
@@ -28220,8 +28160,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'plano-texas': {
     permitNotes:
@@ -28250,8 +28190,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'san-antonio-texas': {
     permitNotes:
@@ -28280,8 +28220,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'san-angelo-texas': {
     permitNotes:
@@ -28310,8 +28250,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'longview-texas': {
     permitNotes:
@@ -28340,8 +28280,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'layton-utah': {
     permitNotes:
@@ -28370,8 +28310,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'ogden-utah': {
     permitNotes:
@@ -28400,8 +28340,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'orem-utah': {
     permitNotes:
@@ -28430,8 +28370,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'provo-utah': {
     permitNotes:
@@ -28460,8 +28400,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'salt-lake-city-utah': {
     permitNotes:
@@ -28490,8 +28430,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'sandy-utah': {
     permitNotes:
@@ -28520,8 +28460,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'st-george-utah': {
     permitNotes:
@@ -28550,8 +28490,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'taylorsville-utah': {
     permitNotes:
@@ -28580,8 +28520,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'west-jordan-utah': {
     permitNotes:
@@ -28610,8 +28550,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'west-valley-city-utah': {
     permitNotes:
@@ -28640,9 +28580,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
-  },
+      },
+    ],
   'st.-george-utah': {
     permitNotes:
       'Utah requires a sales tax permit from the State Tax Commission. Register your business and confirm city/county health requirements for food/beverage vending.',
@@ -28670,8 +28609,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'burlington-vermont': {
     permitNotes:
@@ -28700,8 +28639,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'essex-junction-vermont': {
     permitNotes:
@@ -28730,8 +28669,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'south-burlington-vermont': {
     permitNotes:
@@ -28760,8 +28699,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'barre-vermont': {
     permitNotes:
@@ -28790,8 +28729,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'montpelier-vermont': {
     permitNotes:
@@ -28820,8 +28759,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'rutland-vermont': {
     permitNotes:
@@ -28850,8 +28789,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'st-albans-vermont': {
     permitNotes:
@@ -28880,9 +28819,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
-  },
+      },
+    ],
   'st.-albans-vermont': {
     permitNotes:
       'Vermont requires a sales tax permit from the Department of Taxes. Register your business and confirm city/county health requirements for food/beverage vending.',
@@ -28910,8 +28848,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'alexandria-virginia': {
     permitNotes:
@@ -28940,8 +28878,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'arlington-virginia': {
     permitNotes:
@@ -28970,8 +28908,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'charlottesville-virginia': {
     permitNotes:
@@ -29000,8 +28938,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'chesapeake-virginia': {
     permitNotes:
@@ -29030,8 +28968,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'hampton-virginia': {
     permitNotes:
@@ -29060,8 +28998,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'lynchburg-virginia': {
     permitNotes:
@@ -29090,8 +29028,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'newport-news-virginia': {
     permitNotes:
@@ -29120,8 +29058,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'norfolk-virginia': {
     permitNotes:
@@ -29150,8 +29088,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'portsmouth-virginia': {
     permitNotes:
@@ -29180,8 +29118,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'richmond-virginia': {
     permitNotes:
@@ -29210,8 +29148,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'roanoke-virginia': {
     permitNotes:
@@ -29240,8 +29178,8 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
-    ]
+      },
+    ],
   },
   'suffolk-virginia': {
     permitNotes:
@@ -29270,8 +29208,7 @@ export const cityInfo: Record<string, CityInfo> = {
       {
         q: 'Do I need special permits?',
         a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
-      }
+      },
     ]
   }
 };
-
