@@ -1,74 +1,15 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { supabase } from '@/lib/supabase'
 
-// In-memory storage for development (when Supabase not configured)
-let devLeads: any[] = [
-  // Sample demo leads for testing (only in dev mode)
-  {
-    id: 'demo-1',
-    title: 'Premium Office Complex - Downtown Austin',
-    slug: 'hot-vending-lead-in-austin-texas',
-    city: 'Austin',
-    state: 'Texas',
-    business_type: 'Office Building',
-    employee_count: '750',
-    zip_code: '78701',
-    description: 'High-growth tech campus in downtown Austin with 750+ employees. Perfect foot traffic, young demographic, premium vending opportunity. Decision maker is ready to move forward.',
-    price: 750,
-    status: 'available',
-    created_at: new Date().toISOString(),
-    contact_name: 'Sarah Johnson',
-    contact_email: 'facilities@techcompany.com',
-    contact_phone: '(512) 555-0123',
-    full_address: '500 Congress Avenue, Austin, TX 78701'
-  },
-  {
-    id: 'demo-2',
-    title: 'Manufacturing Facility - Ann Arbor',
-    slug: 'hot-vending-lead-in-ann-arbor-michigan',
-    city: 'Ann Arbor',
-    state: 'Michigan',
-    business_type: 'Manufacturing',
-    employee_count: '350',
-    zip_code: '48104',
-    description: 'Large manufacturing facility with 350+ employees working multiple shifts. High demand for snacks and beverages. Existing contract ending soon.',
-    price: 500,
-    status: 'available',
-    created_at: new Date(Date.now() - 86400000).toISOString(), // 1 day ago
-    contact_name: 'Mike Stevens',
-    contact_email: 'mike@manufacturing.com',
-    contact_phone: '(734) 555-4567',
-    full_address: '123 Industrial Drive, Ann Arbor, MI 48104'
-  },
-  {
-    id: 'demo-3',
-    title: 'Hospital Campus - Miami',
-    slug: 'hot-vending-lead-in-miami-florida',
-    city: 'Miami',
-    state: 'Florida',
-    business_type: 'Healthcare',
-    employee_count: '1200',
-    zip_code: '33101',
-    description: 'Major hospital campus with over 1,200 employees and high visitor traffic. Multiple break rooms, 24/7 operation. Excellent opportunity for healthy snacks and beverages.',
-    price: 1000,
-    status: 'available',
-    created_at: new Date(Date.now() - 172800000).toISOString(), // 2 days ago
-    contact_name: 'Dr. Patricia Martinez',
-    contact_email: 'patricia.martinez@hospital.com',
-    contact_phone: '(305) 555-8901',
-    full_address: '1500 NW 12th Avenue, Miami, FL 33101'
-  }
-]
-
 // GET - Retrieve all leads
 export async function GET() {
   try {
-    // Check if Supabase is configured
+    // Always use Supabase - return empty array if not configured
     if (!process.env.NEXT_PUBLIC_SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL === 'https://placeholder.supabase.co') {
-      console.log('Using dev mode - returning in-memory leads')
+      console.log('Supabase not configured - returning empty leads array')
       return NextResponse.json({ 
         success: true, 
-        leads: devLeads 
+        leads: [] 
       })
     }
 
@@ -139,33 +80,10 @@ export async function POST(request: NextRequest) {
     
     // Check if Supabase is configured
     if (!process.env.NEXT_PUBLIC_SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL === 'https://placeholder.supabase.co') {
-      console.log('Using dev mode - storing in memory')
-      
-      const newLead = {
-        id: `dev-${Date.now()}`,
-        title: title.trim(),
-        slug: slug,
-        city: body.city.trim(),
-        state: body.state.trim(),
-        business_type: body.businessType.trim(),
-        employee_count: body.employeeCount,
-        zip_code: body.zipCode.trim(),
-        description: body.description.trim(),
-        price: price,
-        status: 'available',
-        created_at: new Date().toISOString(),
-        contact_name: body.contactName?.trim() || null,
-        contact_email: body.contactEmail?.trim() || null,
-        contact_phone: body.contactPhone?.trim() || null,
-        full_address: body.fullAddress?.trim() || null
-      }
-      
-      devLeads.unshift(newLead)
-      
       return NextResponse.json({ 
-        success: true, 
-        lead: newLead 
-      })
+        success: false, 
+        error: 'Supabase is not configured. Please configure your database to create leads.' 
+      }, { status: 500 })
     }
     
     const { data: newLead, error } = await supabase
@@ -218,34 +136,10 @@ export async function PUT(request: NextRequest) {
     
     // Check if Supabase is configured
     if (!process.env.NEXT_PUBLIC_SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL === 'https://placeholder.supabase.co') {
-      console.log('Using dev mode - updating in memory')
-      
-      const leadIndex = devLeads.findIndex(l => l.id === id)
-      
-      if (leadIndex === -1) {
-        return NextResponse.json({ 
-          success: false, 
-          error: 'Lead not found' 
-        }, { status: 404 })
-      }
-
-      // Convert camelCase to snake_case for consistency
-      const updateData: any = { ...devLeads[leadIndex] }
-      if (updates.title) updateData.title = updates.title
-      if (updates.businessType) updateData.business_type = updates.businessType
-      if (updates.employeeCount) updateData.employee_count = updates.employeeCount
-      if (updates.zipCode) updateData.zip_code = updates.zipCode
-      if (updates.description) updateData.description = updates.description
-      if (updates.price) updateData.price = updates.price
-      if (updates.status) updateData.status = updates.status
-      if (updates.status === 'sold') updateData.sold_at = new Date().toISOString()
-      
-      devLeads[leadIndex] = updateData
-      
       return NextResponse.json({ 
-        success: true, 
-        lead: updateData 
-      })
+        success: false, 
+        error: 'Supabase is not configured. Please configure your database to update leads.' 
+      }, { status: 500 })
     }
     
     // Convert camelCase to snake_case for database
@@ -309,23 +203,10 @@ export async function DELETE(request: NextRequest) {
     
     // Check if Supabase is configured
     if (!process.env.NEXT_PUBLIC_SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL === 'https://placeholder.supabase.co') {
-      console.log('Using dev mode - deleting from memory')
-      
-      const leadIndex = devLeads.findIndex(l => l.id === id)
-      
-      if (leadIndex === -1) {
-        return NextResponse.json({ 
-          success: false, 
-          error: 'Lead not found' 
-        }, { status: 404 })
-      }
-      
-      devLeads.splice(leadIndex, 1)
-      
       return NextResponse.json({ 
-        success: true, 
-        message: 'Lead deleted successfully' 
-      })
+        success: false, 
+        error: 'Supabase is not configured. Please configure your database to delete leads.' 
+      }, { status: 500 })
     }
     
     const { error } = await supabase
