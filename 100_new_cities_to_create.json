@@ -1,0 +1,262 @@
+[
+  {
+    "name": "Brea",
+    "state": "California",
+    "slug": "brea-california"
+  },
+  {
+    "name": "Capitola",
+    "state": "California",
+    "slug": "capitola-california"
+  },
+  {
+    "name": "Claremont",
+    "state": "California",
+    "slug": "claremont-california"
+  },
+  {
+    "name": "Clayton",
+    "state": "California",
+    "slug": "clayton-california"
+  },
+  {
+    "name": "Colton",
+    "state": "California",
+    "slug": "colton-california"
+  },
+  {
+    "name": "Corte Madera",
+    "state": "California",
+    "slug": "corte-madera-california"
+  },
+  {
+    "name": "Covina",
+    "state": "California",
+    "slug": "covina-california"
+  },
+  {
+    "name": "Cupertino",
+    "state": "California",
+    "slug": "cupertino-california"
+  },
+  {
+    "name": "Danville",
+    "state": "California",
+    "slug": "danville-california"
+  },
+  {
+    "name": "Davis",
+    "state": "California",
+    "slug": "davis-california"
+  },
+  {
+    "name": "Baytown",
+    "state": "Texas",
+    "slug": "baytown-texas"
+  },
+  {
+    "name": "Bedford",
+    "state": "Texas",
+    "slug": "bedford-texas"
+  },
+  {
+    "name": "Bryan",
+    "state": "Texas",
+    "slug": "bryan-texas"
+  },
+  {
+    "name": "Burleson",
+    "state": "Texas",
+    "slug": "burleson-texas"
+  },
+  {
+    "name": "Cedar Park",
+    "state": "Texas",
+    "slug": "cedar-park-texas"
+  },
+  {
+    "name": "Cleburne",
+    "state": "Texas",
+    "slug": "cleburne-texas"
+  },
+  {
+    "name": "Coppell",
+    "state": "Texas",
+    "slug": "coppell-texas"
+  },
+  {
+    "name": "Corsicana",
+    "state": "Texas",
+    "slug": "corsicana-texas"
+  },
+  {
+    "name": "DeSoto",
+    "state": "Texas",
+    "slug": "desoto-texas"
+  },
+  {
+    "name": "Duncanville",
+    "state": "Texas",
+    "slug": "duncanville-texas"
+  },
+  {
+    "name": "Clermont",
+    "state": "Florida",
+    "slug": "clermont-florida"
+  },
+  {
+    "name": "Cocoa",
+    "state": "Florida",
+    "slug": "cocoa-florida"
+  },
+  {
+    "name": "Crestview",
+    "state": "Florida",
+    "slug": "crestview-florida"
+  },
+  {
+    "name": "Dania Beach",
+    "state": "Florida",
+    "slug": "dania-beach-florida"
+  },
+  {
+    "name": "Deland",
+    "state": "Florida",
+    "slug": "deland-florida"
+  },
+  {
+    "name": "Delray Beach",
+    "state": "Florida",
+    "slug": "delray-beach-florida"
+  },
+  {
+    "name": "Auburn",
+    "state": "New York",
+    "slug": "auburn-new-york"
+  },
+  {
+    "name": "Batavia",
+    "state": "New York",
+    "slug": "batavia-new-york"
+  },
+  {
+    "name": "Canandaigua",
+    "state": "New York",
+    "slug": "canandaigua-new-york"
+  },
+  {
+    "name": "Canton",
+    "state": "New York",
+    "slug": "canton-new-york"
+  },
+  {
+    "name": "Cortland",
+    "state": "New York",
+    "slug": "cortland-new-york"
+  },
+  {
+    "name": "Elmira",
+    "state": "New York",
+    "slug": "elmira-new-york"
+  },
+  {
+    "name": "Belleville",
+    "state": "Illinois",
+    "slug": "belleville-illinois"
+  },
+  {
+    "name": "Canton",
+    "state": "Illinois",
+    "slug": "canton-illinois"
+  },
+  {
+    "name": "Carbondale",
+    "state": "Illinois",
+    "slug": "carbondale-illinois"
+  },
+  {
+    "name": "Carol Stream",
+    "state": "Illinois",
+    "slug": "carol-stream-illinois"
+  },
+  {
+    "name": "Altoona",
+    "state": "Pennsylvania",
+    "slug": "altoona-pennsylvania"
+  },
+  {
+    "name": "Butler",
+    "state": "Pennsylvania",
+    "slug": "butler-pennsylvania"
+  },
+  {
+    "name": "Chambersburg",
+    "state": "Pennsylvania",
+    "slug": "chambersburg-pennsylvania"
+  },
+  {
+    "name": "Chester",
+    "state": "Pennsylvania",
+    "slug": "chester-pennsylvania"
+  },
+  {
+    "name": "Coatesville",
+    "state": "Pennsylvania",
+    "slug": "coatesville-pennsylvania"
+  },
+  {
+    "name": "Columbia",
+    "state": "Pennsylvania",
+    "slug": "columbia-pennsylvania"
+  },
+  {
+    "name": "Corry",
+    "state": "Pennsylvania",
+    "slug": "corry-pennsylvania"
+  },
+  {
+    "name": "DuBois",
+    "state": "Pennsylvania",
+    "slug": "dubois-pennsylvania"
+  },
+  {
+    "name": "Alliance",
+    "state": "Ohio",
+    "slug": "alliance-ohio"
+  },
+  {
+    "name": "Ashtabula",
+    "state": "Ohio",
+    "slug": "ashtabula-ohio"
+  },
+  {
+    "name": "Athens",
+    "state": "Ohio",
+    "slug": "athens-ohio"
+  },
+  {
+    "name": "Barberton",
+    "state": "Ohio",
+    "slug": "barberton-ohio"
+  },
+  {
+    "name": "Beavercreek",
+    "state": "Ohio",
+    "slug": "beavercreek-ohio"
+  },
+  {
+    "name": "Bellefontaine",
+    "state": "Ohio",
+    "slug": "bellefontaine-ohio"
+  },
+  {
+    "name": "Bowling Green",
+    "state": "Ohio",
+    "slug": "bowling-green-ohio"
+  },
+  {
+    "name": "Centerville",
+    "state": "Ohio",
+    "slug": "centerville-ohio"
+  }
+]

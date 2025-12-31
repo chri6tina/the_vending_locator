@@ -1,0 +1,502 @@
+[
+  {
+    "name": "Greenfield",
+    "state": "California",
+    "slug": "greenfield-california"
+  },
+  {
+    "name": "Humble",
+    "state": "Texas",
+    "slug": "humble-texas"
+  },
+  {
+    "name": "Huntsville",
+    "state": "Texas",
+    "slug": "huntsville-texas"
+  },
+  {
+    "name": "Hurst",
+    "state": "Texas",
+    "slug": "hurst-texas"
+  },
+  {
+    "name": "Jacksonville",
+    "state": "Texas",
+    "slug": "jacksonville-texas"
+  },
+  {
+    "name": "Katy",
+    "state": "Texas",
+    "slug": "katy-texas"
+  },
+  {
+    "name": "Keller",
+    "state": "Texas",
+    "slug": "keller-texas"
+  },
+  {
+    "name": "Kingsville",
+    "state": "Texas",
+    "slug": "kingsville-texas"
+  },
+  {
+    "name": "Kyle",
+    "state": "Texas",
+    "slug": "kyle-texas"
+  },
+  {
+    "name": "Lake Jackson",
+    "state": "Texas",
+    "slug": "lake-jackson-texas"
+  },
+  {
+    "name": "Little Elm",
+    "state": "Texas",
+    "slug": "little-elm-texas"
+  },
+  {
+    "name": "Lufkin",
+    "state": "Texas",
+    "slug": "lufkin-texas"
+  },
+  {
+    "name": "Mission",
+    "state": "Texas",
+    "slug": "mission-texas"
+  },
+  {
+    "name": "Gulf Breeze",
+    "state": "Florida",
+    "slug": "gulf-breeze-florida"
+  },
+  {
+    "name": "Haines City",
+    "state": "Florida",
+    "slug": "haines-city-florida"
+  },
+  {
+    "name": "Hallandale Beach",
+    "state": "Florida",
+    "slug": "hallandale-beach-florida"
+  },
+  {
+    "name": "Homestead",
+    "state": "Florida",
+    "slug": "homestead-florida"
+  },
+  {
+    "name": "Hudson",
+    "state": "Florida",
+    "slug": "hudson-florida"
+  },
+  {
+    "name": "Immokalee",
+    "state": "Florida",
+    "slug": "immokalee-florida"
+  },
+  {
+    "name": "Jacksonville Beach",
+    "state": "Florida",
+    "slug": "jacksonville-beach-florida"
+  },
+  {
+    "name": "Lady Lake",
+    "state": "Florida",
+    "slug": "lady-lake-florida"
+  },
+  {
+    "name": "Lake City",
+    "state": "Florida",
+    "slug": "lake-city-florida"
+  },
+  {
+    "name": "Lake Mary",
+    "state": "Florida",
+    "slug": "lake-mary-florida"
+  },
+  {
+    "name": "Lauderhill",
+    "state": "Florida",
+    "slug": "lauderhill-florida"
+  },
+  {
+    "name": "Leesburg",
+    "state": "Florida",
+    "slug": "leesburg-florida"
+  },
+  {
+    "name": "Lighthouse Point",
+    "state": "Florida",
+    "slug": "lighthouse-point-florida"
+  },
+  {
+    "name": "Live Oak",
+    "state": "Florida",
+    "slug": "live-oak-florida"
+  },
+  {
+    "name": "Longwood",
+    "state": "Florida",
+    "slug": "longwood-florida"
+  },
+  {
+    "name": "Lutz",
+    "state": "Florida",
+    "slug": "lutz-florida"
+  },
+  {
+    "name": "Lynn Haven",
+    "state": "Florida",
+    "slug": "lynn-haven-florida"
+  },
+  {
+    "name": "Macclenny",
+    "state": "Florida",
+    "slug": "macclenny-florida"
+  },
+  {
+    "name": "Madeira Beach",
+    "state": "Florida",
+    "slug": "madeira-beach-florida"
+  },
+  {
+    "name": "Maitland",
+    "state": "Florida",
+    "slug": "maitland-florida"
+  },
+  {
+    "name": "Marco Island",
+    "state": "Florida",
+    "slug": "marco-island-florida"
+  },
+  {
+    "name": "Bay City",
+    "state": "Michigan",
+    "slug": "bay-city-michigan"
+  },
+  {
+    "name": "Benton Harbor",
+    "state": "Michigan",
+    "slug": "benton-harbor-michigan"
+  },
+  {
+    "name": "Bloomfield Hills",
+    "state": "Michigan",
+    "slug": "bloomfield-hills-michigan"
+  },
+  {
+    "name": "Canton",
+    "state": "Michigan",
+    "slug": "canton-michigan"
+  },
+  {
+    "name": "East Lansing",
+    "state": "Michigan",
+    "slug": "east-lansing-michigan"
+  },
+  {
+    "name": "Macomb",
+    "state": "Michigan",
+    "slug": "macomb-michigan"
+  },
+  {
+    "name": "Madison Heights",
+    "state": "Michigan",
+    "slug": "madison-heights-michigan"
+  },
+  {
+    "name": "Marquette",
+    "state": "Michigan",
+    "slug": "marquette-michigan"
+  },
+  {
+    "name": "Midland",
+    "state": "Michigan",
+    "slug": "midland-michigan"
+  },
+  {
+    "name": "Muskegon",
+    "state": "Michigan",
+    "slug": "muskegon-michigan"
+  },
+  {
+    "name": "Oak Park",
+    "state": "Michigan",
+    "slug": "oak-park-michigan"
+  },
+  {
+    "name": "Portage",
+    "state": "Michigan",
+    "slug": "portage-michigan"
+  },
+  {
+    "name": "Royal Oak",
+    "state": "Michigan",
+    "slug": "royal-oak-michigan"
+  },
+  {
+    "name": "Southfield",
+    "state": "Michigan",
+    "slug": "southfield-michigan"
+  },
+  {
+    "name": "St. Clair Shores",
+    "state": "Michigan",
+    "slug": "st-clair-shores-michigan"
+  },
+  {
+    "name": "Danville",
+    "state": "Illinois",
+    "slug": "danville-illinois"
+  },
+  {
+    "name": "DeKalb",
+    "state": "Illinois",
+    "slug": "dekalb-illinois"
+  },
+  {
+    "name": "Freeport",
+    "state": "Illinois",
+    "slug": "freeport-illinois"
+  },
+  {
+    "name": "Galesburg",
+    "state": "Illinois",
+    "slug": "galesburg-illinois"
+  },
+  {
+    "name": "Glenview",
+    "state": "Illinois",
+    "slug": "glenview-illinois"
+  },
+  {
+    "name": "Gurnee",
+    "state": "Illinois",
+    "slug": "gurnee-illinois"
+  },
+  {
+    "name": "Hanover Park",
+    "state": "Illinois",
+    "slug": "hanover-park-illinois"
+  },
+  {
+    "name": "Harvey",
+    "state": "Illinois",
+    "slug": "harvey-illinois"
+  },
+  {
+    "name": "Highland Park",
+    "state": "Illinois",
+    "slug": "highland-park-illinois"
+  },
+  {
+    "name": "Kankakee",
+    "state": "Illinois",
+    "slug": "kankakee-illinois"
+  },
+  {
+    "name": "Easton",
+    "state": "Pennsylvania",
+    "slug": "easton-pennsylvania"
+  },
+  {
+    "name": "Gettysburg",
+    "state": "Pennsylvania",
+    "slug": "gettysburg-pennsylvania"
+  },
+  {
+    "name": "Greensburg",
+    "state": "Pennsylvania",
+    "slug": "greensburg-pennsylvania"
+  },
+  {
+    "name": "Hazleton",
+    "state": "Pennsylvania",
+    "slug": "hazleton-pennsylvania"
+  },
+  {
+    "name": "Johnstown",
+    "state": "Pennsylvania",
+    "slug": "johnstown-pennsylvania"
+  },
+  {
+    "name": "Lebanon",
+    "state": "Pennsylvania",
+    "slug": "lebanon-pennsylvania"
+  },
+  {
+    "name": "Lewisburg",
+    "state": "Pennsylvania",
+    "slug": "lewisburg-pennsylvania"
+  },
+  {
+    "name": "McKeesport",
+    "state": "Pennsylvania",
+    "slug": "mckeesport-pennsylvania"
+  },
+  {
+    "name": "Monroeville",
+    "state": "Pennsylvania",
+    "slug": "monroeville-pennsylvania"
+  },
+  {
+    "name": "New Castle",
+    "state": "Pennsylvania",
+    "slug": "new-castle-pennsylvania"
+  },
+  {
+    "name": "Norristown",
+    "state": "Pennsylvania",
+    "slug": "norristown-pennsylvania"
+  },
+  {
+    "name": "Oil City",
+    "state": "Pennsylvania",
+    "slug": "oil-city-pennsylvania"
+  },
+  {
+    "name": "Pottstown",
+    "state": "Pennsylvania",
+    "slug": "pottstown-pennsylvania"
+  },
+  {
+    "name": "Chillicothe",
+    "state": "Ohio",
+    "slug": "chillicothe-ohio"
+  },
+  {
+    "name": "Cuyahoga Falls",
+    "state": "Ohio",
+    "slug": "cuyahoga-falls-ohio"
+  },
+  {
+    "name": "Delaware",
+    "state": "Ohio",
+    "slug": "delaware-ohio"
+  },
+  {
+    "name": "Fairborn",
+    "state": "Ohio",
+    "slug": "fairborn-ohio"
+  },
+  {
+    "name": "Findlay",
+    "state": "Ohio",
+    "slug": "findlay-ohio"
+  },
+  {
+    "name": "Gahanna",
+    "state": "Ohio",
+    "slug": "gahanna-ohio"
+  },
+  {
+    "name": "Grove City",
+    "state": "Ohio",
+    "slug": "grove-city-ohio"
+  },
+  {
+    "name": "Hilliard",
+    "state": "Ohio",
+    "slug": "hilliard-ohio"
+  },
+  {
+    "name": "Huber Heights",
+    "state": "Ohio",
+    "slug": "huber-heights-ohio"
+  },
+  {
+    "name": "Kettering",
+    "state": "Ohio",
+    "slug": "kettering-ohio"
+  },
+  {
+    "name": "Lancaster",
+    "state": "Ohio",
+    "slug": "lancaster-ohio"
+  },
+  {
+    "name": "Marion",
+    "state": "Ohio",
+    "slug": "marion-ohio"
+  },
+  {
+    "name": "Massillon",
+    "state": "Ohio",
+    "slug": "massillon-ohio"
+  },
+  {
+    "name": "Mentor",
+    "state": "Ohio",
+    "slug": "mentor-ohio"
+  },
+  {
+    "name": "Niles",
+    "state": "Ohio",
+    "slug": "niles-ohio"
+  },
+  {
+    "name": "Norwood",
+    "state": "Ohio",
+    "slug": "norwood-ohio"
+  },
+  {
+    "name": "Piqua",
+    "state": "Ohio",
+    "slug": "piqua-ohio"
+  },
+  {
+    "name": "Reynoldsburg",
+    "state": "Ohio",
+    "slug": "reynoldsburg-ohio"
+  },
+  {
+    "name": "Sandusky",
+    "state": "Ohio",
+    "slug": "sandusky-ohio"
+  },
+  {
+    "name": "Steubenville",
+    "state": "Ohio",
+    "slug": "steubenville-ohio"
+  },
+  {
+    "name": "Stow",
+    "state": "Ohio",
+    "slug": "stow-ohio"
+  },
+  {
+    "name": "Strongsville",
+    "state": "Ohio",
+    "slug": "strongsville-ohio"
+  },
+  {
+    "name": "Troy",
+    "state": "Ohio",
+    "slug": "troy-ohio"
+  },
+  {
+    "name": "Upper Arlington",
+    "state": "Ohio",
+    "slug": "upper-arlington-ohio"
+  },
+  {
+    "name": "Wadsworth",
+    "state": "Ohio",
+    "slug": "wadsworth-ohio"
+  },
+  {
+    "name": "Westerville",
+    "state": "Ohio",
+    "slug": "westerville-ohio"
+  },
+  {
+    "name": "Westlake",
+    "state": "Ohio",
+    "slug": "westlake-ohio"
+  },
+  {
+    "name": "Worthington",
+    "state": "Ohio",
+    "slug": "worthington-ohio"
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Aliso Viejo",
+    "state": "California",
+    "slug": "aliso-viejo-california"
+  },
+  {
+    "name": "Apple Valley",
+    "state": "California",
+    "slug": "apple-valley-california"
+  },
+  {
+    "name": "Beverly Hills",
+    "state": "California",
+    "slug": "beverly-hills-california"
+  },
+  {
+    "name": "Castro Valley",
+    "state": "California",
+    "slug": "castro-valley-california"
+  },
+  {
+    "name": "Cathedral City",
+    "state": "California",
+    "slug": "cathedral-city-california"
+  },
+  {
+    "name": "Cerritos",
+    "state": "California",
+    "slug": "cerritos-california"
+  },
+  {
+    "name": "Chino",
+    "state": "California",
+    "slug": "chino-california"
+  },
+  {
+    "name": "Fort Walton Beach",
+    "state": "Florida",
+    "slug": "fort-walton-beach-florida"
+  },
+  {
+    "name": "Bremerton",
+    "state": "Washington",
+    "slug": "bremerton-washington"
+  },
+  {
+    "name": "Kirkland",
+    "state": "Washington",
+    "slug": "kirkland-washington"
+  },
+  {
+    "name": "Lacey",
+    "state": "Washington",
+    "slug": "lacey-washington"
+  },
+  {
+    "name": "Longview",
+    "state": "Washington",
+    "slug": "longview-washington"
+  },
+  {
+    "name": "Sammamish",
+    "state": "Washington",
+    "slug": "sammamish-washington"
+  },
+  {
+    "name": "Tukwila",
+    "state": "Washington",
+    "slug": "tukwila-washington"
+  },
+  {
+    "name": "Tumwater",
+    "state": "Washington",
+    "slug": "tumwater-washington"
+  },
+  {
+    "name": "University Place",
+    "state": "Washington",
+    "slug": "university-place-washington"
+  }
+]
