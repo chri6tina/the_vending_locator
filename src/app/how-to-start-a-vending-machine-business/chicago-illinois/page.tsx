@@ -2,7 +2,7 @@ import ChicagoIllinoisHowToStartPage from './pageClient'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'How to Start a Vending Machine Business in Chicago, Illinois (2025 Guide)',
+  title: 'How to Start a Vending Machine Business in Chicago, Illinois (2026 Guide)',
   description: 'Complete guide to starting a vending machine business in Chicago, Illinois. Learn about licensing, permits, startup costs, finding locations, and our comprehensive vending course to get started.',
   keywords: [
     'vending machine business Chicago',

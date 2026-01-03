@@ -2,7 +2,7 @@ import ProvoUtahHowToStartPage from './pageClient'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'How to Start a Vending Machine Business in Provo, Utah (2025 Guide)',
+  title: 'How to Start a Vending Machine Business in Provo, Utah (2026 Guide)',
   description: 'Complete guide to starting a vending machine business in Provo, Utah. Learn about licensing, permits, startup costs, finding locations, and our comprehensive vending course to get started.',
   keywords: [
     'vending machine business Provo',

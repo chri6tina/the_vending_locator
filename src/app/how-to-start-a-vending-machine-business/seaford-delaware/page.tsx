@@ -2,7 +2,7 @@ import SeafordDelawareHowToStartPage from './pageClient'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'How to Start a Vending Machine Business in Seaford, Delaware (2025 Guide)',
+  title: 'How to Start a Vending Machine Business in Seaford, Delaware (2026 Guide)',
   description: 'Complete guide to starting a vending machine business in Seaford, Delaware. Learn about licensing, permits, startup costs, finding locations, and our comprehensive vending course to get started.',
   keywords: [
     'vending machine business Seaford',

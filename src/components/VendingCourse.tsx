@@ -21,11 +21,11 @@ export default function VendingCourse({ compact = false }: { compact?: boolean }
               </div>
               
               <h2 className={`text-2xl sm:text-3xl font-playfair font-bold text-charcoal ${compact ? 'mb-4' : 'mb-6'}`}>
-                Master Vending Machine Success in 2025
+                Master Vending Machine Success in 2026
               </h2>
               
               <p className={`text-lg text-stone ${compact ? 'mb-6' : 'mb-8'} leading-relaxed max-w-2xl mx-auto`}>
-                Get our comprehensive guide: <span className="font-semibold">"How to Start a Vending Machine Company in 2025"</span> with scripts, legal templates, and supplier discounts.
+                Get our comprehensive guide: <span className="font-semibold">"How to Start a Vending Machine Company in 2026"</span> with scripts, legal templates, and supplier discounts.
               </p>
               
               {/* Enhanced CTA Button */}

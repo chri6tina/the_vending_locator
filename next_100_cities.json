@@ -1,502 +1,82 @@
 [
   {
-    "name": "Missouri City",
-    "state": "Texas",
-    "slug": "missouri-city-texas"
+    "name": "Ashland",
+    "state": "Oregon",
+    "slug": "ashland-oregon"
   },
   {
-    "name": "Mount Pleasant",
-    "state": "Texas",
-    "slug": "mount-pleasant-texas"
+    "name": "Klamath Falls",
+    "state": "Oregon",
+    "slug": "klamath-falls-oregon"
   },
   {
-    "name": "Nacogdoches",
-    "state": "Texas",
-    "slug": "nacogdoches-texas"
+    "name": "Oregon City",
+    "state": "Oregon",
+    "slug": "oregon-city-oregon"
   },
   {
-    "name": "New Braunfels",
-    "state": "Texas",
-    "slug": "new-braunfels-texas"
+    "name": "Roseburg",
+    "state": "Oregon",
+    "slug": "roseburg-oregon"
   },
   {
-    "name": "North Richland Hills",
-    "state": "Texas",
-    "slug": "north-richland-hills-texas"
+    "name": "The Dalles",
+    "state": "Oregon",
+    "slug": "the-dalles-oregon"
   },
   {
-    "name": "Orange",
-    "state": "Texas",
-    "slug": "orange-texas"
+    "name": "Aberdeen",
+    "state": "Washington",
+    "slug": "aberdeen-washington"
   },
   {
-    "name": "Palestine",
-    "state": "Texas",
-    "slug": "palestine-texas"
+    "name": "Anacortes",
+    "state": "Washington",
+    "slug": "anacortes-washington"
   },
   {
-    "name": "Pflugerville",
-    "state": "Texas",
-    "slug": "pflugerville-texas"
+    "name": "Centralia",
+    "state": "Washington",
+    "slug": "centralia-washington"
   },
   {
-    "name": "Pharr",
-    "state": "Texas",
-    "slug": "pharr-texas"
+    "name": "Cheney",
+    "state": "Washington",
+    "slug": "cheney-washington"
   },
   {
-    "name": "Plainview",
-    "state": "Texas",
-    "slug": "plainview-texas"
+    "name": "Des Moines",
+    "state": "Washington",
+    "slug": "des-moines-washington"
   },
   {
-    "name": "Port Arthur",
-    "state": "Texas",
-    "slug": "port-arthur-texas"
+    "name": "Ellensburg",
+    "state": "Washington",
+    "slug": "ellensburg-washington"
   },
   {
-    "name": "Port Lavaca",
-    "state": "Texas",
-    "slug": "port-lavaca-texas"
+    "name": "Enumclaw",
+    "state": "Washington",
+    "slug": "enumclaw-washington"
   },
   {
-    "name": "Rockwall",
-    "state": "Texas",
-    "slug": "rockwall-texas"
+    "name": "Issaquah",
+    "state": "Washington",
+    "slug": "issaquah-washington"
   },
   {
-    "name": "Rosenberg",
-    "state": "Texas",
-    "slug": "rosenberg-texas"
+    "name": "Mukilteo",
+    "state": "Washington",
+    "slug": "mukilteo-washington"
   },
   {
-    "name": "Rowlett",
-    "state": "Texas",
-    "slug": "rowlett-texas"
+    "name": "Oak Harbor",
+    "state": "Washington",
+    "slug": "oak-harbor-washington"
   },
   {
-    "name": "San Marcos",
-    "state": "Texas",
-    "slug": "san-marcos-texas"
-  },
-  {
-    "name": "Schertz",
-    "state": "Texas",
-    "slug": "schertz-texas"
-  },
-  {
-    "name": "Seagoville",
-    "state": "Texas",
-    "slug": "seagoville-texas"
-  },
-  {
-    "name": "Seguin",
-    "state": "Texas",
-    "slug": "seguin-texas"
-  },
-  {
-    "name": "Sherman",
-    "state": "Texas",
-    "slug": "sherman-texas"
-  },
-  {
-    "name": "Snyder",
-    "state": "Texas",
-    "slug": "snyder-texas"
-  },
-  {
-    "name": "Southlake",
-    "state": "Texas",
-    "slug": "southlake-texas"
-  },
-  {
-    "name": "Terrell",
-    "state": "Texas",
-    "slug": "terrell-texas"
-  },
-  {
-    "name": "Texarkana",
-    "state": "Texas",
-    "slug": "texarkana-texas"
-  },
-  {
-    "name": "Texas City",
-    "state": "Texas",
-    "slug": "texas-city-texas"
-  },
-  {
-    "name": "The Colony",
-    "state": "Texas",
-    "slug": "the-colony-texas"
-  },
-  {
-    "name": "Tomball",
-    "state": "Texas",
-    "slug": "tomball-texas"
-  },
-  {
-    "name": "Universal City",
-    "state": "Texas",
-    "slug": "universal-city-texas"
-  },
-  {
-    "name": "Victoria",
-    "state": "Texas",
-    "slug": "victoria-texas"
-  },
-  {
-    "name": "Waxahachie",
-    "state": "Texas",
-    "slug": "waxahachie-texas"
-  },
-  {
-    "name": "Weatherford",
-    "state": "Texas",
-    "slug": "weatherford-texas"
-  },
-  {
-    "name": "Weslaco",
-    "state": "Texas",
-    "slug": "weslaco-texas"
-  },
-  {
-    "name": "Willis",
-    "state": "Texas",
-    "slug": "willis-texas"
-  },
-  {
-    "name": "Woodway",
-    "state": "Texas",
-    "slug": "woodway-texas"
-  },
-  {
-    "name": "Merritt Island",
-    "state": "Florida",
-    "slug": "merritt-island-florida"
-  },
-  {
-    "name": "Milton",
-    "state": "Florida",
-    "slug": "milton-florida"
-  },
-  {
-    "name": "Minneola",
-    "state": "Florida",
-    "slug": "minneola-florida"
-  },
-  {
-    "name": "Mount Dora",
-    "state": "Florida",
-    "slug": "mount-dora-florida"
-  },
-  {
-    "name": "New Port Richey",
-    "state": "Florida",
-    "slug": "new-port-richey-florida"
-  },
-  {
-    "name": "New Smyrna Beach",
-    "state": "Florida",
-    "slug": "new-smyrna-beach-florida"
-  },
-  {
-    "name": "Niceville",
-    "state": "Florida",
-    "slug": "niceville-florida"
-  },
-  {
-    "name": "North Port",
-    "state": "Florida",
-    "slug": "north-port-florida"
-  },
-  {
-    "name": "Ocoee",
-    "state": "Florida",
-    "slug": "ocoee-florida"
-  },
-  {
-    "name": "Ormond Beach",
-    "state": "Florida",
-    "slug": "ormond-beach-florida"
-  },
-  {
-    "name": "Oviedo",
-    "state": "Florida",
-    "slug": "oviedo-florida"
-  },
-  {
-    "name": "Palmetto Bay",
-    "state": "Florida",
-    "slug": "palmetto-bay-florida"
-  },
-  {
-    "name": "Panama City Beach",
-    "state": "Florida",
-    "slug": "panama-city-beach-florida"
-  },
-  {
-    "name": "Port Charlotte",
-    "state": "Florida",
-    "slug": "port-charlotte-florida"
-  },
-  {
-    "name": "Punta Gorda",
-    "state": "Florida",
-    "slug": "punta-gorda-florida"
-  },
-  {
-    "name": "Riviera Beach",
-    "state": "Florida",
-    "slug": "riviera-beach-florida"
-  },
-  {
-    "name": "Rockledge",
-    "state": "Florida",
-    "slug": "rockledge-florida"
-  },
-  {
-    "name": "Satellite Beach",
-    "state": "Florida",
-    "slug": "satellite-beach-florida"
-  },
-  {
-    "name": "Sebring",
-    "state": "Florida",
-    "slug": "sebring-florida"
-  },
-  {
-    "name": "Seminole",
-    "state": "Florida",
-    "slug": "seminole-florida"
-  },
-  {
-    "name": "St. Augustine",
-    "state": "Florida",
-    "slug": "st-augustine-florida"
-  },
-  {
-    "name": "St. Cloud",
-    "state": "Florida",
-    "slug": "st-cloud-florida"
-  },
-  {
-    "name": "Tavares",
-    "state": "Florida",
-    "slug": "tavares-florida"
-  },
-  {
-    "name": "Winter Garden",
-    "state": "Florida",
-    "slug": "winter-garden-florida"
-  },
-  {
-    "name": "Geneva",
-    "state": "New York",
-    "slug": "geneva-new-york"
-  },
-  {
-    "name": "Glens Falls",
-    "state": "New York",
-    "slug": "glens-falls-new-york"
-  },
-  {
-    "name": "Gloversville",
-    "state": "New York",
-    "slug": "gloversville-new-york"
-  },
-  {
-    "name": "Hornell",
-    "state": "New York",
-    "slug": "hornell-new-york"
-  },
-  {
-    "name": "Jamestown",
-    "state": "New York",
-    "slug": "jamestown-new-york"
-  },
-  {
-    "name": "Kingston",
-    "state": "New York",
-    "slug": "kingston-new-york"
-  },
-  {
-    "name": "Lockport",
-    "state": "New York",
-    "slug": "lockport-new-york"
-  },
-  {
-    "name": "Newburgh",
-    "state": "New York",
-    "slug": "newburgh-new-york"
-  },
-  {
-    "name": "Ogdensburg",
-    "state": "New York",
-    "slug": "ogdensburg-new-york"
-  },
-  {
-    "name": "Olean",
-    "state": "New York",
-    "slug": "olean-new-york"
-  },
-  {
-    "name": "Oneonta",
-    "state": "New York",
-    "slug": "oneonta-new-york"
-  },
-  {
-    "name": "Oswego",
-    "state": "New York",
-    "slug": "oswego-new-york"
-  },
-  {
-    "name": "Peekskill",
-    "state": "New York",
-    "slug": "peekskill-new-york"
-  },
-  {
-    "name": "Plattsburgh",
-    "state": "New York",
-    "slug": "plattsburgh-new-york"
-  },
-  {
-    "name": "Saratoga Springs",
-    "state": "New York",
-    "slug": "saratoga-springs-new-york"
-  },
-  {
-    "name": "Tonawanda",
-    "state": "New York",
-    "slug": "tonawanda-new-york"
-  },
-  {
-    "name": "Goldsboro",
-    "state": "North Carolina",
-    "slug": "goldsboro-north-carolina"
-  },
-  {
-    "name": "Lumberton",
-    "state": "North Carolina",
-    "slug": "lumberton-north-carolina"
-  },
-  {
-    "name": "Monroe",
-    "state": "North Carolina",
-    "slug": "monroe-north-carolina"
-  },
-  {
-    "name": "Shelby",
-    "state": "North Carolina",
-    "slug": "shelby-north-carolina"
-  },
-  {
-    "name": "Statesville",
-    "state": "North Carolina",
-    "slug": "statesville-north-carolina"
-  },
-  {
-    "name": "Thomasville",
-    "state": "North Carolina",
-    "slug": "thomasville-north-carolina"
-  },
-  {
-    "name": "Carrollton",
-    "state": "Georgia",
-    "slug": "carrollton-georgia"
-  },
-  {
-    "name": "Decatur",
-    "state": "Georgia",
-    "slug": "decatur-georgia"
-  },
-  {
-    "name": "Chino Valley",
-    "state": "Arizona",
-    "slug": "chino-valley-arizona"
-  },
-  {
-    "name": "Coolidge",
-    "state": "Arizona",
-    "slug": "coolidge-arizona"
-  },
-  {
-    "name": "Cottonwood",
-    "state": "Arizona",
-    "slug": "cottonwood-arizona"
-  },
-  {
-    "name": "Douglas",
-    "state": "Arizona",
-    "slug": "douglas-arizona"
-  },
-  {
-    "name": "Florence",
-    "state": "Arizona",
-    "slug": "florence-arizona"
-  },
-  {
-    "name": "Kingman",
-    "state": "Arizona",
-    "slug": "kingman-arizona"
-  },
-  {
-    "name": "Oro Valley",
-    "state": "Arizona",
-    "slug": "oro-valley-arizona"
-  },
-  {
-    "name": "Payson",
-    "state": "Arizona",
-    "slug": "payson-arizona"
-  },
-  {
-    "name": "Queen Creek",
-    "state": "Arizona",
-    "slug": "queen-creek-arizona"
-  },
-  {
-    "name": "Safford",
-    "state": "Arizona",
-    "slug": "safford-arizona"
-  },
-  {
-    "name": "San Luis",
-    "state": "Arizona",
-    "slug": "san-luis-arizona"
-  },
-  {
-    "name": "Aspen",
-    "state": "Colorado",
-    "slug": "aspen-colorado"
-  },
-  {
-    "name": "Durango",
-    "state": "Colorado",
-    "slug": "durango-colorado"
-  },
-  {
-    "name": "Englewood",
-    "state": "Colorado",
-    "slug": "englewood-colorado"
-  },
-  {
-    "name": "Glenwood Springs",
-    "state": "Colorado",
-    "slug": "glenwood-springs-colorado"
-  },
-  {
-    "name": "Littleton",
-    "state": "Colorado",
-    "slug": "littleton-colorado"
-  },
-  {
-    "name": "Montrose",
-    "state": "Colorado",
-    "slug": "montrose-colorado"
-  },
-  {
-    "name": "Winnemucca",
-    "state": "Nevada",
-    "slug": "winnemucca-nevada"
+    "name": "Puyallup",
+    "state": "Washington",
+    "slug": "puyallup-washington"
   }
 ]

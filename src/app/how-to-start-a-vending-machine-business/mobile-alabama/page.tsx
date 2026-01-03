@@ -2,7 +2,7 @@ import MobileAlabamaHowToStartPage from './pageClient'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'How to Start a Vending Machine Business in Mobile, Alabama (2025 Guide)',
+  title: 'How to Start a Vending Machine Business in Mobile, Alabama (2026 Guide)',
   description: 'Complete guide to starting a vending machine business in Mobile, Alabama. Learn about licensing, permits, startup costs, finding locations, and our comprehensive vending course to get started.',
   keywords: [
     'vending machine business Mobile',

@@ -169,7 +169,7 @@ export default function RiversideCaliforniaHowToStartPage() {
               >
                 <div className="inline-block mb-4">
                   <span className="bg-coral/20 text-coral px-4 py-2 rounded-full text-sm font-medium border border-coral/30">
-                    2025 Complete Guide
+                    2026 Complete Guide
                   </span>
                 </div>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-playfair font-bold mb-6 leading-tight">

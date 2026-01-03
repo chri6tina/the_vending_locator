@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const citySlug = params.slug.replace(/-/g, ' ')
   const titleCity = citySlug.split(' ').map(s => s.charAt(0).toUpperCase() + s.slice(1)).join(' ')
   return {
-    title: `How to Start a Vending Machine Business in ${titleCity} (Step-by-Step Guide)`,
+    title: `How to Start a Vending Machine Business in ${titleCity} (2026 Guide)`,
     description: `Learn how to start a vending machine business in ${titleCity}: licensing, permits, startup costs, best locations, contracts, outreach scripts, and FAQs.`,
     keywords: [`vending machine business ${titleCity}`, `how to start vending machines ${titleCity}`, `${titleCity} vending permits`, `${titleCity} vending locations`],
     alternates: { canonical: `https://www.thevendinglocator.com/how-to-start-a-vending-machine-business/${params.slug}` },

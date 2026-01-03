@@ -2,7 +2,7 @@ import RapidCitySouthDakotaHowToStartPage from './pageClient'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'How to Start a Vending Machine Business in Rapid City, South Dakota (2025 Guide)',
+  title: 'How to Start a Vending Machine Business in Rapid City, South Dakota (2026 Guide)',
   description: 'Complete guide to starting a vending machine business in Rapid City, South Dakota. Learn about licensing, permits, startup costs, finding locations, and our comprehensive vending course to get started.',
   keywords: [
     'vending machine business Rapid City',

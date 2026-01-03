@@ -2,7 +2,7 @@ import AtlantaGeorgiaHowToStartPage from './pageClient'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'How to Start a Vending Machine Business in Atlanta, Georgia (2025 Guide)',
+  title: 'How to Start a Vending Machine Business in Atlanta, Georgia (2026 Guide)',
   description: 'Complete guide to starting a vending machine business in Atlanta, Georgia. Learn about licensing, permits, startup costs, finding locations, and our comprehensive vending course to get started.',
   keywords: [
     'vending machine business Atlanta',
