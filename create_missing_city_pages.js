@@ -4,6 +4,7 @@ const path = require('path');
 // Read cities to create - try multiple files
 let citiesToCreate = [];
 const filesToCheck = [
+  'next_500_cities.json',
   '500_cities_to_create.json',
   'next_100_cities.json',
   'additional_cities_to_create.json',
@@ -101,11 +102,42 @@ function generateFunctionName(city, state) {
   return `${cityPart}${statePart}VendingLeadsPage`;
 }
 
+// Check existing pages first to avoid duplicates
+const existingPages = new Set();
+function findExistingPages(dir) {
+  try {
+    const files = fs.readdirSync(dir);
+    for (const file of files) {
+      const fullPath = path.join(dir, file);
+      const stat = fs.statSync(fullPath);
+      if (stat.isDirectory()) {
+        findExistingPages(fullPath);
+      } else if (file === 'pageClient.tsx') {
+        const match = fullPath.match(/vending-leads[\/\\]([^\/\\]+)/);
+        if (match) {
+          existingPages.add(match[1]);
+        }
+      }
+    }
+  } catch (error) {}
+}
+findExistingPages('src/app/vending-leads');
+
+// Filter out cities that already have pages
+const citiesToCreateFiltered = citiesToCreate.filter(city => !existingPages.has(city.slug));
+console.log(`Filtered to ${citiesToCreateFiltered.length} cities that don't have pages yet (from ${citiesToCreate.length} total)`);
+
 let created = 0;
 let errors = 0;
 
-for (const city of citiesToCreate) {
+for (const city of citiesToCreateFiltered) {
   try {
+    // Double-check it doesn't exist
+    const checkPath = path.join('src/app/vending-leads', city.slug);
+    if (fs.existsSync(path.join(checkPath, 'pageClient.tsx'))) {
+      continue; // Skip if already exists
+    }
+    
     const hash = hashString(city.name + city.state);
     const heroDesc = heroVariations[hash % heroVariations.length](city.name, city.state);
     const whyChoose = whyChooseVariations[hash % whyChooseVariations.length](city.name, city.state);
