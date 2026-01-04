@@ -14,12 +14,12 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
 export default function LeesSummitMissouriVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Lee's Summit';
+  const cityDisplayName = 'Lee\'s Summit';
   const stateDisplayName = 'Missouri';
   
   // City-specific data
   const cityData = {
-    'name': 'Lee's Summit',
+    'name': 'Lee\'s Summit',
     'state': 'Missouri',
     'population': '25K-50K',
     'businesses': '1K-2K',
@@ -36,9 +36,9 @@ export default function LeesSummitMissouriVendingLeadsPage() {
 
   // User names for active users counter
   const [userNames, setUserNames] = useState([
-    'Mike from Lee's Summit', 'Sarah in Lee's Summit', 'David in Lee's Summit', 'Lisa in Lee's Summit',
-    'Tom in Lee's Summit', 'Jennifer in Lee's Summit', 'Robert in Lee's Summit', 'Amanda in Lee's Summit',
-    'Chris in Lee's Summit', 'Maria in Lee's Summit', 'James in Lee's Summit', 'Emily in Lee's Summit'
+    'Mike from Lee\'s Summit', 'Sarah in Lee\'s Summit', 'David in Lee\'s Summit', 'Lisa in Lee\'s Summit',
+    'Tom in Lee\'s Summit', 'Jennifer in Lee\'s Summit', 'Robert in Lee\'s Summit', 'Amanda in Lee\'s Summit',
+    'Chris in Lee\'s Summit', 'Maria in Lee\'s Summit', 'James in Lee\'s Summit', 'Emily in Lee\'s Summit'
   ])
 
   // Active users counter effect
@@ -85,36 +85,36 @@ export default function LeesSummitMissouriVendingLeadsPage() {
   // FAQ items reused for JSON-LD
   const faqItems = [
   {
-    q: 'What types of vending machine locations are available in Lee's Summit?',
-    a: 'Lee's Summit offers diverse vending opportunities including technology companies, manufacturing facilities, healthcare centers, educational institutions, retail locations, and office buildings. Each location is pre-verified for optimal vending machine success.'
+    q: 'What types of vending machine locations are available in Lee\'s Summit?',
+    a: 'Lee\'s Summit offers diverse vending opportunities including technology companies, manufacturing facilities, healthcare centers, educational institutions, retail locations, and office buildings. Each location is pre-verified for optimal vending machine success.'
   },
   {
-    q: 'How quickly can I get vending machine leads for Lee's Summit?',
-    a: 'Our Lee's Summit vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
+    q: 'How quickly can I get vending machine leads for Lee\'s Summit?',
+    a: 'Our Lee\'s Summit vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
   },
   {
-    q: 'What makes Lee's Summit a good market for vending machines?',
-    a: 'Lee's Summit features a thriving business community with diverse industries including technology, manufacturing, and agriculture. The city\'s business density and growing economy create ideal conditions for vending machine success.'
+    q: 'What makes Lee\'s Summit a good market for vending machines?',
+    a: 'Lee\'s Summit features a thriving business community with diverse industries including technology, manufacturing, and agriculture. The city\'s business density and growing economy create ideal conditions for vending machine success.'
   },
   {
-    q: 'Do you provide ongoing support for Lee's Summit locations?',
-    a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Lee's Summit.'
+    q: 'Do you provide ongoing support for Lee\'s Summit locations?',
+    a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Lee\'s Summit.'
   },
   {
-    q: 'What industries in Lee's Summit are best for vending machines?',
-    a: 'Technology companies, manufacturing facilities, healthcare centers, educational institutions, and office buildings in Lee's Summit show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
+    q: 'What industries in Lee\'s Summit are best for vending machines?',
+    a: 'Technology companies, manufacturing facilities, healthcare centers, educational institutions, and office buildings in Lee\'s Summit show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
   },
   {
-    q: 'How do you verify the quality of Lee's Summit vending locations?',
-    a: 'We conduct thorough research on each Lee's Summit location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
+    q: 'How do you verify the quality of Lee\'s Summit vending locations?',
+    a: 'We conduct thorough research on each Lee\'s Summit location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
   },
   {
-    q: 'Can I get customized vending leads for specific areas of Lee's Summit?',
-    a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Lee's Summit including the downtown area, industrial parks, and technology corridors based on your preferences and target market requirements.'
+    q: 'Can I get customized vending leads for specific areas of Lee\'s Summit?',
+    a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Lee\'s Summit including the downtown area, industrial parks, and technology corridors based on your preferences and target market requirements.'
   },
   {
-    q: 'What\'s the typical ROI for vending machines in Lee's Summit?',
-    a: 'Vending machines in Lee's Summit typically show strong ROI due to the city\'s business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+    q: 'What\'s the typical ROI for vending machines in Lee\'s Summit?',
+    a: 'Vending machines in Lee\'s Summit typically show strong ROI due to the city\'s business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
   }
 ];
 
@@ -180,7 +180,7 @@ export default function LeesSummitMissouriVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Unlock vending opportunities in Lee's Summit, Missouri, featuring businesses with high employee counts and consistent visitor traffic.</motion.p>
+                Unlock vending opportunities in Lee\'s Summit, Missouri, featuring businesses with high employee counts and consistent visitor traffic.</motion.p>
 
               {/* Trust Signals */}
               <motion.div 
@@ -331,7 +331,7 @@ export default function LeesSummitMissouriVendingLeadsPage() {
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Medical facilities throughout Lee's Summit serve large patient populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services in waiting areas and break rooms.</p>
+                <p className="text-stone leading-relaxed">Medical facilities throughout Lee\'s Summit serve large patient populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services in waiting areas and break rooms.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -345,7 +345,7 @@ export default function LeesSummitMissouriVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Educational facilities throughout Lee's Summit serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services.</p>
+                <p className="text-stone leading-relaxed">Educational facilities throughout Lee\'s Summit serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -359,7 +359,7 @@ export default function LeesSummitMissouriVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Industrial operations in Lee's Summit feature large workforces and shift schedules that create reliable vending revenue through employee break times and shift changes.</p>
+                <p className="text-stone leading-relaxed">Industrial operations in Lee\'s Summit feature large workforces and shift schedules that create reliable vending revenue through employee break times and shift changes.</p>
               </motion.div>
               <motion.div
                 key="Retail"
@@ -373,7 +373,7 @@ export default function LeesSummitMissouriVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Shopping centers and retail districts in Lee's Summit offer prime vending locations, with high-traffic areas including food courts, entrances, and common spaces frequented by shoppers.</p>
+                <p className="text-stone leading-relaxed">Shopping centers and retail districts in Lee\'s Summit offer prime vending locations, with high-traffic areas including food courts, entrances, and common spaces frequented by shoppers.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -387,7 +387,7 @@ export default function LeesSummitMissouriVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Commercial office spaces in Lee's Summit offer excellent vending opportunities, with professional tenants and business operations generating consistent foot traffic throughout the workday.</p>
+                <p className="text-stone leading-relaxed">Commercial office spaces in Lee\'s Summit offer excellent vending opportunities, with professional tenants and business operations generating consistent foot traffic throughout the workday.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -401,11 +401,11 @@ export default function LeesSummitMissouriVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Transportation hubs in Lee's Summit offer prime vending locations with high passenger volumes, extended operating hours, and captive audiences waiting for departures.</p>
+                <p className="text-stone leading-relaxed">Transportation hubs in Lee\'s Summit offer prime vending locations with high passenger volumes, extended operating hours, and captive audiences waiting for departures.</p>
               </motion.div>
             </div>
           </div>
-        </section>        {/* Why Lee's Summit? */}
+        </section>        {/* Why Lee\'s Summit? */}
         <section className="py-16 bg-warm-white">
           <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-8">
@@ -416,7 +416,7 @@ export default function LeesSummitMissouriVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-6"
               >
-                Why Choose Lee's Summit for Vending Machines?
+                Why Choose Lee\'s Summit for Vending Machines?
               </motion.h2>
             </div>
             <motion.div
@@ -427,7 +427,7 @@ export default function LeesSummitMissouriVendingLeadsPage() {
               className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
             >
               <p className="text-lg text-stone leading-relaxed">
-                Lee's Summit offers vending operators access to high-traffic locations across multiple industries. The city's commercial activity and business concentration create optimal conditions for vending machine success.</p>
+                Lee\'s Summit offers vending operators access to high-traffic locations across multiple industries. The city's commercial activity and business concentration create optimal conditions for vending machine success.</p>
             </motion.div>
           </div>
         </section>
@@ -561,7 +561,7 @@ export default function LeesSummitMissouriVendingLeadsPage() {
               { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
               { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
               { '@type': 'ListItem', position: 3, name: 'Missouri', item: 'https://www.thevendinglocator.com/vending-leads/missouri' },
-              { '@type': 'ListItem', position: 4, name: 'Lee's Summit', item: 'https://www.thevendinglocator.com/vending-leads/manchester-missouri' }
+              { '@type': 'ListItem', position: 4, name: 'Lee\'s Summit', item: 'https://www.thevendinglocator.com/vending-leads/manchester-missouri' }
             ]
           })
         }}

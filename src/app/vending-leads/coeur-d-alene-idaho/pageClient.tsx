@@ -14,12 +14,12 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
 export default function CoeurdAleneIdahoVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Coeur d'Alene';
+  const cityDisplayName = 'Coeur d\'Alene';
   const stateDisplayName = 'Idaho';
   
   // City-specific data
   const cityData = {
-    'name': 'Coeur d'Alene',
+    'name': 'Coeur d\'Alene',
     'state': 'Idaho',
     'population': '100K+',
     'businesses': '6K-10K',
@@ -36,9 +36,9 @@ export default function CoeurdAleneIdahoVendingLeadsPage() {
 
   // User names for active users counter
   const [userNames, setUserNames] = useState([
-    'Mike from Coeur d'Alene', 'Sarah in Coeur d'Alene', 'David in Coeur d'Alene', 'Lisa in Coeur d'Alene',
-    'Tom in Coeur d'Alene', 'Jennifer in Coeur d'Alene', 'Robert in Coeur d'Alene', 'Amanda in Coeur d'Alene',
-    'Chris in Coeur d'Alene', 'Maria in Coeur d'Alene', 'James in Coeur d'Alene', 'Emily in Coeur d'Alene'
+    'Mike from Coeur d\'Alene', 'Sarah in Coeur d\'Alene', 'David in Coeur d\'Alene', 'Lisa in Coeur d\'Alene',
+    'Tom in Coeur d\'Alene', 'Jennifer in Coeur d\'Alene', 'Robert in Coeur d\'Alene', 'Amanda in Coeur d\'Alene',
+    'Chris in Coeur d\'Alene', 'Maria in Coeur d\'Alene', 'James in Coeur d\'Alene', 'Emily in Coeur d\'Alene'
   ])
 
   // Active users counter effect
@@ -85,36 +85,36 @@ export default function CoeurdAleneIdahoVendingLeadsPage() {
   // FAQ items reused for JSON-LD
   const faqItems = [
   {
-    q: 'What types of vending machine locations are available in Coeur d'Alene?',
-    a: 'Coeur d'Alene offers diverse vending opportunities including technology companies, manufacturing facilities, healthcare centers, educational institutions, retail locations, and office buildings. Each location is pre-verified for optimal vending machine success.'
+    q: 'What types of vending machine locations are available in Coeur d\'Alene?',
+    a: 'Coeur d\'Alene offers diverse vending opportunities including technology companies, manufacturing facilities, healthcare centers, educational institutions, retail locations, and office buildings. Each location is pre-verified for optimal vending machine success.'
   },
   {
-    q: 'How quickly can I get vending machine leads for Coeur d'Alene?',
-    a: 'Our Coeur d'Alene vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
+    q: 'How quickly can I get vending machine leads for Coeur d\'Alene?',
+    a: 'Our Coeur d\'Alene vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.'
   },
   {
-    q: 'What makes Coeur d'Alene a good market for vending machines?',
-    a: 'Coeur d'Alene features a thriving business community with diverse industries including technology, manufacturing, and agriculture. The city\'s business density and growing economy create ideal conditions for vending machine success.'
+    q: 'What makes Coeur d\'Alene a good market for vending machines?',
+    a: 'Coeur d\'Alene features a thriving business community with diverse industries including technology, manufacturing, and agriculture. The city\'s business density and growing economy create ideal conditions for vending machine success.'
   },
   {
-    q: 'Do you provide ongoing support for Coeur d'Alene locations?',
-    a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Coeur d'Alene.'
+    q: 'Do you provide ongoing support for Coeur d\'Alene locations?',
+    a: 'Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Coeur d\'Alene.'
   },
   {
-    q: 'What industries in Coeur d'Alene are best for vending machines?',
-    a: 'Technology companies, manufacturing facilities, healthcare centers, educational institutions, and office buildings in Coeur d'Alene show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
+    q: 'What industries in Coeur d\'Alene are best for vending machines?',
+    a: 'Technology companies, manufacturing facilities, healthcare centers, educational institutions, and office buildings in Coeur d\'Alene show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.'
   },
   {
-    q: 'How do you verify the quality of Coeur d'Alene vending locations?',
-    a: 'We conduct thorough research on each Coeur d'Alene location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
+    q: 'How do you verify the quality of Coeur d\'Alene vending locations?',
+    a: 'We conduct thorough research on each Coeur d\'Alene location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.'
   },
   {
-    q: 'Can I get customized vending leads for specific areas of Coeur d'Alene?',
-    a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Coeur d'Alene including the downtown area, industrial parks, and technology corridors based on your preferences and target market requirements.'
+    q: 'Can I get customized vending leads for specific areas of Coeur d\'Alene?',
+    a: 'Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Coeur d\'Alene including the downtown area, industrial parks, and technology corridors based on your preferences and target market requirements.'
   },
   {
-    q: 'What\'s the typical ROI for vending machines in Coeur d'Alene?',
-    a: 'Vending machines in Coeur d'Alene typically show strong ROI due to the city\'s business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
+    q: 'What\'s the typical ROI for vending machines in Coeur d\'Alene?',
+    a: 'Vending machines in Coeur d\'Alene typically show strong ROI due to the city\'s business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.'
   }
 ];
 
@@ -180,7 +180,7 @@ export default function CoeurdAleneIdahoVendingLeadsPage() {
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                Access targeted vending leads in Coeur d'Alene, Idaho, covering industrial parks, shopping centers, and professional office complexes.</motion.p>
+                Access targeted vending leads in Coeur d\'Alene, Idaho, covering industrial parks, shopping centers, and professional office complexes.</motion.p>
 
               {/* Trust Signals */}
               <motion.div 
@@ -331,7 +331,7 @@ export default function CoeurdAleneIdahoVendingLeadsPage() {
                   <HeartIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Healthcare</h3>
-                <p className="text-stone leading-relaxed">Healthcare institutions in Coeur d'Alene offer prime vending locations with high visitor counts, extended operating hours, and captive audiences seeking convenient snack and beverage options.</p>
+                <p className="text-stone leading-relaxed">Healthcare institutions in Coeur d\'Alene offer prime vending locations with high visitor counts, extended operating hours, and captive audiences seeking convenient snack and beverage options.</p>
               </motion.div>
               <motion.div
                 key="Education"
@@ -345,7 +345,7 @@ export default function CoeurdAleneIdahoVendingLeadsPage() {
                   <AcademicCapIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Education</h3>
-                <p className="text-stone leading-relaxed">Educational facilities throughout Coeur d'Alene serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services.</p>
+                <p className="text-stone leading-relaxed">Educational facilities throughout Coeur d\'Alene serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services.</p>
               </motion.div>
               <motion.div
                 key="Manufacturing"
@@ -359,7 +359,7 @@ export default function CoeurdAleneIdahoVendingLeadsPage() {
                   <CpuChipIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Manufacturing</h3>
-                <p className="text-stone leading-relaxed">Industrial and manufacturing operations throughout Coeur d'Alene employ substantial workforces with shift-based schedules, offering stable vending placement opportunities with steady traffic.</p>
+                <p className="text-stone leading-relaxed">Industrial and manufacturing operations throughout Coeur d\'Alene employ substantial workforces with shift-based schedules, offering stable vending placement opportunities with steady traffic.</p>
               </motion.div>
               <motion.div
                 key="Retail"
@@ -373,7 +373,7 @@ export default function CoeurdAleneIdahoVendingLeadsPage() {
                   <ShoppingBagIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Retail</h3>
-                <p className="text-stone leading-relaxed">Shopping centers and retail districts in Coeur d'Alene offer prime vending locations, with high-traffic areas including food courts, entrances, and common spaces frequented by shoppers.</p>
+                <p className="text-stone leading-relaxed">Shopping centers and retail districts in Coeur d\'Alene offer prime vending locations, with high-traffic areas including food courts, entrances, and common spaces frequented by shoppers.</p>
               </motion.div>
               <motion.div
                 key="Office Buildings"
@@ -387,7 +387,7 @@ export default function CoeurdAleneIdahoVendingLeadsPage() {
                   <BuildingOfficeIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Office Buildings</h3>
-                <p className="text-stone leading-relaxed">Office complexes in Coeur d'Alene provide ideal vending locations with multiple tenants, high employee counts, and break areas that ensure steady machine usage during business hours.</p>
+                <p className="text-stone leading-relaxed">Office complexes in Coeur d\'Alene provide ideal vending locations with multiple tenants, high employee counts, and break areas that ensure steady machine usage during business hours.</p>
               </motion.div>
               <motion.div
                 key="Transportation"
@@ -401,11 +401,11 @@ export default function CoeurdAleneIdahoVendingLeadsPage() {
                   <TruckIcon className="w-12 h-12" />
                 </div>
                 <h3 className="text-xl font-semibold text-charcoal mb-3">Transportation</h3>
-                <p className="text-stone leading-relaxed">Airports, bus stations, and transit centers throughout Coeur d'Alene generate steady passenger traffic, providing excellent vending placement options in high-traffic areas frequented by travelers.</p>
+                <p className="text-stone leading-relaxed">Airports, bus stations, and transit centers throughout Coeur d\'Alene generate steady passenger traffic, providing excellent vending placement options in high-traffic areas frequented by travelers.</p>
               </motion.div>
             </div>
           </div>
-        </section>        {/* Why Coeur d'Alene? */}
+        </section>        {/* Why Coeur d\'Alene? */}
         <section className="py-16 bg-warm-white">
           <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-8">
@@ -416,7 +416,7 @@ export default function CoeurdAleneIdahoVendingLeadsPage() {
                 viewport={{ once: true }}
                 className="text-3xl sm:text-4xl font-playfair font-bold text-charcoal mb-6"
               >
-                Why Choose Coeur d'Alene for Vending Machines?
+                Why Choose Coeur d\'Alene for Vending Machines?
               </motion.h2>
             </div>
             <motion.div
@@ -427,7 +427,7 @@ export default function CoeurdAleneIdahoVendingLeadsPage() {
               className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
             >
               <p className="text-lg text-stone leading-relaxed">
-                Through Coeur d'Alene's diverse business ecosystem, vending machines find placement in healthcare systems, educational facilities, and corporate offices. The city's economic activity supports consistent consumer demand.</p>
+                Through Coeur d\'Alene's diverse business ecosystem, vending machines find placement in healthcare systems, educational facilities, and corporate offices. The city's economic activity supports consistent consumer demand.</p>
             </motion.div>
           </div>
         </section>
@@ -561,7 +561,7 @@ export default function CoeurdAleneIdahoVendingLeadsPage() {
               { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
               { '@type': 'ListItem', position: 2, name: 'Vending Leads', item: 'https://www.thevendinglocator.com/vending-leads' },
               { '@type': 'ListItem', position: 3, name: 'Idaho', item: 'https://www.thevendinglocator.com/vending-leads/idaho' },
-              { '@type': 'ListItem', position: 4, name: 'Coeur d'Alene', item: 'https://www.thevendinglocator.com/vending-leads/manchester-idaho' }
+              { '@type': 'ListItem', position: 4, name: 'Coeur d\'Alene', item: 'https://www.thevendinglocator.com/vending-leads/manchester-idaho' }
             ]
           })
         }}
