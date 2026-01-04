@@ -838,10 +838,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }).filter(Boolean) as MetadataRoute.Sitemap
   )
 
-  // Skip filesystem checks during build to reduce memory usage
-  // Rely on states.ts and generatedCityPages instead
-  // Filesystem checks can be done at runtime if needed
-  const filesystemCityPages: MetadataRoute.Sitemap = []
+  // Filesystem discovery for all vending-leads pages (includes pages not in states.ts)
+  const filesystemCityPages: MetadataRoute.Sitemap = (() => {
+    try {
+      const cities: MetadataRoute.Sitemap = []
+      const entries = fs.readdirSync(leadsDir, { withFileTypes: true })
+      for (const entry of entries) {
+        if (entry.isDirectory()) {
+          const pagePath = path.join(leadsDir, entry.name, 'page.tsx')
+          if (fs.existsSync(pagePath)) {
+            cities.push({
+              url: `https://www.thevendinglocator.com/vending-leads/${entry.name}`,
+              lastModified: new Date(),
+              changeFrequency: 'weekly' as const,
+              priority: 0.8,
+            })
+          }
+        }
+      }
+      return cities
+    } catch (error) {
+      console.error('Error reading filesystem for sitemap:', error)
+      return []
+    }
+  })()
 
   // Generate haha-coolers city pages dynamically from states
   // Only include URLs where a matching page file actually exists
