@@ -1859,7 +1859,7 @@ const states: State[] = [
       { name: 'Moberly', slug: 'moberly-missouri' },
       { name: 'Nevada', slug: 'nevada-missouri' },
       { name: 'North Kansas City', slug: 'north-kansas-city-missouri' },
-      { name: 'O'Fallon', slug: 'ofallon-missouri' },
+      { name: "O'Fallon", slug: 'ofallon-missouri' },
       { name: 'Poplar Bluff', slug: 'poplar-bluff-missouri' },
       { name: 'Raytown', slug: 'raytown-missouri' },
       { name: 'Rolla', slug: 'rolla-missouri' },
