@@ -1125,7 +1125,7 @@ const states: State[] = [
       { name: 'Kailua-Kona', slug: 'kailua-kona-hawaii' },
       { name: 'Kapaa', slug: 'kapaa-hawaii' },
       { name: 'Lahaina', slug: 'lahaina-hawaii' },
-      { name: 'Wailuku', slug: 'wailuku-hawaii' } slug: 'mililani-hawaii' }
+      { name: 'Wailuku', slug: 'wailuku-hawaii' }
     ]
   },
   {
@@ -1152,7 +1152,7 @@ const states: State[] = [
       { name: 'Moscow', slug: 'moscow-idaho' },
       { name: 'Post Falls', slug: 'post-falls-idaho' },
       { name: 'Sandpoint', slug: 'sandpoint-idaho' },
-      { name: 'Weiser', slug: 'weiser-idaho' } slug: 'twin-falls-idaho' }
+      { name: 'Weiser', slug: 'weiser-idaho' }
     ]
   },
   {
@@ -1923,7 +1923,7 @@ const states: State[] = [
       { name: 'Papillion', slug: 'papillion-nebraska' },
       { name: 'Scottsbluff', slug: 'scottsbluff-nebraska' },
       { name: 'South Sioux City', slug: 'south-sioux-city-nebraska' },
-      { name: 'York', slug: 'york-nebraska' } slug: 'north-platte-nebraska' }
+      { name: 'York', slug: 'york-nebraska' }
     ]
   },
   {
@@ -1946,7 +1946,7 @@ const states: State[] = [
       { name: 'Ely', slug: 'ely-nevada' },
       { name: 'Laughlin', slug: 'laughlin-nevada' },
       { name: 'Winnemucca', slug: 'winnemucca-nevada' },
-      { name: 'Yerington', slug: 'yerington-nevada' } slug: 'sparks-nevada' }
+      { name: 'Yerington', slug: 'yerington-nevada' }
     ]
   },
   {
@@ -1976,7 +1976,7 @@ const states: State[] = [
       { name: 'Newport', slug: 'newport-new-hampshire' },
       { name: 'Pelham', slug: 'pelham-new-hampshire' },
       { name: 'Somersworth', slug: 'somersworth-new-hampshire' },
-      { name: 'Windham', slug: 'windham-new-hampshire' } slug: 'salem-new-hampshire' }
+      { name: 'Windham', slug: 'windham-new-hampshire' }
     ]
   },
   {
@@ -2082,7 +2082,7 @@ const states: State[] = [
       { name: 'Socorro', slug: 'socorro-new-mexico' },
       { name: 'Sunland Park', slug: 'sunland-park-new-mexico' },
       { name: 'Taos', slug: 'taos-new-mexico' },
-      { name: 'Truth or Consequences', slug: 'truth-or-consequences-new-mexico' } slug: 'roswell-new-mexico' }
+      { name: 'Truth or Consequences', slug: 'truth-or-consequences-new-mexico' }
     ]
   },
   {
@@ -2222,7 +2222,7 @@ const states: State[] = [
       { name: 'Devils Lake', slug: 'devils-lake-north-dakota' },
       { name: 'Mandan', slug: 'mandan-north-dakota' },
       { name: 'Valley City', slug: 'valley-city-north-dakota' },
-      { name: 'West Fargo', slug: 'west-fargo-north-dakota' } slug: 'williston-north-dakota' }
+      { name: 'West Fargo', slug: 'west-fargo-north-dakota' }
     ]
   },
   {
@@ -2294,7 +2294,7 @@ const states: State[] = [
       { name: 'Westlake', slug: 'westlake-ohio' },
       { name: 'Wickliffe', slug: 'wickliffe-ohio' },
       { name: 'Wooster', slug: 'wooster-ohio' },
-      { name: 'Zanesville', slug: 'zanesville-ohio' } slug: 'youngstown-ohio' }
+      { name: 'Zanesville', slug: 'zanesville-ohio' }
     ]
   },
   {
@@ -2332,7 +2332,7 @@ const states: State[] = [
       { name: 'Shawnee', slug: 'shawnee-oklahoma' },
       { name: 'Tahlequah', slug: 'tahlequah-oklahoma' },
       { name: 'Weatherford', slug: 'weatherford-oklahoma' },
-      { name: 'Woodward', slug: 'woodward-oklahoma' } slug: 'stillwater-oklahoma' }
+      { name: 'Woodward', slug: 'woodward-oklahoma' }
     ]
   },
   {
@@ -2383,7 +2383,7 @@ const states: State[] = [
       { name: 'Tualatin', slug: 'tualatin-oregon' },
       { name: 'West Linn', slug: 'west-linn-oregon' },
       { name: 'Wilsonville', slug: 'wilsonville-oregon' },
-      { name: 'Woodburn', slug: 'woodburn-oregon' } slug: 'tigard-oregon' }
+      { name: 'Woodburn', slug: 'woodburn-oregon' }
     ]
   },
   {
@@ -2468,7 +2468,7 @@ const states: State[] = [
       { name: 'Tiverton', slug: 'tiverton-rhode-island' },
       { name: 'Warren', slug: 'warren-rhode-island' },
       { name: 'Westerly', slug: 'westerly-rhode-island' },
-      { name: 'West Warwick', slug: 'west-warwick-rhode-island' } slug: 'newport-rhode-island' }
+      { name: 'West Warwick', slug: 'west-warwick-rhode-island' }
     ]
   },
   {
@@ -2518,7 +2518,7 @@ const states: State[] = [
       { name: 'Union', slug: 'union-south-carolina' },
       { name: 'Walterboro', slug: 'walterboro-south-carolina' },
       { name: 'West Columbia', slug: 'west-columbia-south-carolina' },
-      { name: 'York', slug: 'york-south-carolina' } slug: 'summerville-south-carolina' }
+      { name: 'York', slug: 'york-south-carolina' }
     ]
   },
   {
@@ -2536,7 +2536,7 @@ const states: State[] = [
       { name: 'Huron', slug: 'huron-south-dakota' },
       { name: 'Spearfish', slug: 'spearfish-south-dakota' },
       { name: 'Sturgis', slug: 'sturgis-south-dakota' },
-      { name: 'Vermillion', slug: 'vermillion-south-dakota' } slug: 'yankton-south-dakota' }
+      { name: 'Vermillion', slug: 'vermillion-south-dakota' }
     ]
   },
   {
@@ -2862,7 +2862,7 @@ const states: State[] = [
       { name: 'Waynesboro', slug: 'waynesboro-virginia' },
       { name: 'Williamsburg', slug: 'williamsburg-virginia' },
       { name: 'Winchester', slug: 'winchester-virginia' },
-      { name: 'Wytheville', slug: 'wytheville-virginia' } slug: 'virginia-beach-virginia' }
+      { name: 'Wytheville', slug: 'wytheville-virginia' }
     ]
   },
   {
@@ -2928,7 +2928,7 @@ const states: State[] = [
       { name: 'Tukwila', slug: 'tukwila-washington' },
       { name: 'Tumwater', slug: 'tumwater-washington' },
       { name: 'University Place', slug: 'university-place-washington' },
-      { name: 'Walla Walla', slug: 'walla-walla-washington' } slug: 'yakima-washington' }
+      { name: 'Walla Walla', slug: 'walla-walla-washington' }
     ]
   },
   {
@@ -2944,7 +2944,7 @@ const states: State[] = [
       { name: 'Navy Yard', slug: 'navy-yard-washington-dc' },
       { name: 'Shaw', slug: 'shaw-washington-dc' },
       { name: 'Washington', slug: 'washington' },
-      { name: 'Downtown DC', slug: 'downtown-dc-washington-dc' } slug: 'washington-washington-dc' }
+      { name: 'Downtown DC', slug: 'downtown-dc-washington-dc' }
     ]
   },
   {
@@ -2988,7 +2988,7 @@ const states: State[] = [
       { name: 'Wellsburg', slug: 'wellsburg-west-virginia' },
       { name: 'Weston', slug: 'weston-west-virginia' },
       { name: 'White Sulphur Springs', slug: 'white-sulphur-springs-west-virginia' },
-      { name: 'Williamson', slug: 'williamson-west-virginia' } slug: 'wheeling-west-virginia' }
+      { name: 'Williamson', slug: 'williamson-west-virginia' }
     ]
   },
   {
@@ -3047,7 +3047,7 @@ const states: State[] = [
       { name: 'West Allis', slug: 'west-allis-wisconsin' },
       { name: 'West Bend', slug: 'west-bend-wisconsin' },
       { name: 'Whitewater', slug: 'whitewater-wisconsin' },
-      { name: 'Wisconsin Rapids', slug: 'wisconsin-rapids-wisconsin' } slug: 'waukesha-wisconsin' }
+      { name: 'Wisconsin Rapids', slug: 'wisconsin-rapids-wisconsin' }
     ]
   },
   {
@@ -3072,7 +3072,7 @@ const states: State[] = [
       { name: 'Riverton', slug: 'riverton-wyoming' },
       { name: 'Torrington', slug: 'torrington-wyoming' },
       { name: 'Wheatland', slug: 'wheatland-wyoming' },
-      { name: 'Worland', slug: 'worland-wyoming' } slug: 'evanston-wyoming' }
+      { name: 'Worland', slug: 'worland-wyoming' }
     ]
   }
 ]
