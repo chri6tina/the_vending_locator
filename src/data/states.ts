@@ -115,7 +115,7 @@ const states: State[] = [
       { name: 'West Memphis', slug: 'west-memphis-arkansas' },
       { name: 'Paragould', slug: 'paragould-arkansas' },
       { name: 'Cabot', slug: 'cabot-arkansas' },
-      { name: 'Searcy',,
+      { name: 'Searcy', slug: 'searcy-arkansas' },
       { name: 'Batesville', slug: 'batesville-arkansas' },
       { name: 'Blytheville', slug: 'blytheville-arkansas' },
       { name: 'Camden', slug: 'camden-arkansas' },
@@ -132,7 +132,7 @@ const states: State[] = [
       { name: 'Russellville', slug: 'russellville-arkansas' },
       { name: 'Stuttgart', slug: 'stuttgart-arkansas' },
       { name: 'Van Buren', slug: 'van-buren-arkansas' },
-      { name: 'Warren', slug: 'warren-arkansas' } slug: 'searcy-arkansas' }]
+      { name: 'Warren', slug: 'warren-arkansas' }]
   },
   {
     name: 'California',
