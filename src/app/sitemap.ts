@@ -1596,13 +1596,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
   })
 
   // Dynamic city guides (how-to-start-a-vending-machine-business/[slug])
-  // Generate from cityInfo.ts to ensure all 996 cities are included
-  const cityGuidePages: MetadataRoute.Sitemap = Object.keys(cityInfo).map((citySlug) => ({
-    url: `https://www.thevendinglocator.com/how-to-start-a-vending-machine-business/${citySlug}`,
-    lastModified: new Date(),
-    changeFrequency: 'weekly' as const,
-    priority: 0.8,
-  }))
+  // Generate from states.ts to include all cities with how-to-start pages
+  const howToStartDir = path.join(process.cwd(), 'src', 'app', 'how-to-start-a-vending-machine-business')
+  const cityGuidePages: MetadataRoute.Sitemap = states.flatMap((state) =>
+    state.cities
+      .filter((city) => {
+        // Only include cities that have actual page files
+        const cityDir = path.join(howToStartDir, city.slug)
+        return fs.existsSync(path.join(cityDir, 'page.tsx'))
+      })
+      .map((city) => ({
+        url: `https://www.thevendinglocator.com/how-to-start-a-vending-machine-business/${city.slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'weekly' as const,
+        priority: 0.8,
+      }))
+  )
 
   // Legacy manual entries removed - now using dynamic generation from cityInfo.ts above
   
