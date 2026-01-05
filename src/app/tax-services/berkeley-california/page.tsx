@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Berkeley, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Berkeley, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Berkeley California, vending business bookkeeping Berkeley, tax services vending machines Berkeley California, vending machine accounting Berkeley, tax preparation vending business Berkeley",
+  keywords: "vending machine taxes Berkeley California, vending business bookkeeping Berkeley, tax services vending machines Berkeley CALIFORNIA, vending machine accounting Berkeley, tax preparation vending business Berkeley",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/berkeley-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

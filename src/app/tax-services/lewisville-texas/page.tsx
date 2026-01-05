@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Lewisville, Texas - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Lewisville, Texas. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Lewisville Texas, vending business bookkeeping Lewisville, tax services vending machines Lewisville Texas, vending machine accounting Lewisville, tax preparation vending business Lewisville",
+  keywords: "vending machine taxes Lewisville Texas, vending business bookkeeping Lewisville, tax services vending machines Lewisville TEXAS, vending machine accounting Lewisville, tax preparation vending business Lewisville",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/lewisville-texas"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

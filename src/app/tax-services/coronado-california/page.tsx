@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Coronado, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Coronado, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Coronado California, vending business bookkeeping Coronado, tax services vending machines Coronado California, vending machine accounting Coronado, tax preparation vending business Coronado",
+  keywords: "vending machine taxes Coronado California, vending business bookkeeping Coronado, tax services vending machines Coronado CALIFORNIA, vending machine accounting Coronado, tax preparation vending business Coronado",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/coronado-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

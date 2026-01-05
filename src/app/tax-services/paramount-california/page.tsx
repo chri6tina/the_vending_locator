@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Paramount, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Paramount, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Paramount California, vending business bookkeeping Paramount, tax services vending machines Paramount California, vending machine accounting Paramount, tax preparation vending business Paramount",
+  keywords: "vending machine taxes Paramount California, vending business bookkeeping Paramount, tax services vending machines Paramount CALIFORNIA, vending machine accounting Paramount, tax preparation vending business Paramount",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/paramount-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

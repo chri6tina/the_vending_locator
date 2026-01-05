@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Hialeah Gardens, Florida - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Hialeah Gardens, Florida. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Hialeah Gardens Florida, vending business bookkeeping Hialeah Gardens, tax services vending machines Hialeah Gardens Florida, vending machine accounting Hialeah Gardens, tax preparation vending business Hialeah Gardens",
+  keywords: "vending machine taxes Hialeah Gardens Florida, vending business bookkeeping Hialeah Gardens, tax services vending machines Hialeah Gardens FLORIDA, vending machine accounting Hialeah Gardens, tax preparation vending business Hialeah Gardens",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/hialeah-gardens-florida"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

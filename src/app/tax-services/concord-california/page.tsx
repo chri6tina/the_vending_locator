@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Concord, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Concord, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Concord California, vending business bookkeeping Concord, tax services vending machines Concord California, vending machine accounting Concord, tax preparation vending business Concord",
+  keywords: "vending machine taxes Concord California, vending business bookkeeping Concord, tax services vending machines Concord CALIFORNIA, vending machine accounting Concord, tax preparation vending business Concord",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/concord-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in South Pasadena, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in South Pasadena, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes South Pasadena California, vending business bookkeeping South Pasadena, tax services vending machines South Pasadena California, vending machine accounting South Pasadena, tax preparation vending business South Pasadena",
+  keywords: "vending machine taxes South Pasadena California, vending business bookkeeping South Pasadena, tax services vending machines South Pasadena CALIFORNIA, vending machine accounting South Pasadena, tax preparation vending business South Pasadena",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/south-pasadena-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

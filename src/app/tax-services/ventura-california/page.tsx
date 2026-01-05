@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Ventura, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Ventura, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Ventura California, vending business bookkeeping Ventura, tax services vending machines Ventura California, vending machine accounting Ventura, tax preparation vending business Ventura",
+  keywords: "vending machine taxes Ventura California, vending business bookkeeping Ventura, tax services vending machines Ventura CALIFORNIA, vending machine accounting Ventura, tax preparation vending business Ventura",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/ventura-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

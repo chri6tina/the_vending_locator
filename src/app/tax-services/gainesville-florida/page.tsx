@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Gainesville, Florida - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Gainesville, Florida. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Gainesville Florida, vending business bookkeeping Gainesville, tax services vending machines Gainesville Florida, vending machine accounting Gainesville, tax preparation vending business Gainesville",
+  keywords: "vending machine taxes Gainesville Florida, vending business bookkeeping Gainesville, tax services vending machines Gainesville FLORIDA, vending machine accounting Gainesville, tax preparation vending business Gainesville",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/gainesville-florida"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

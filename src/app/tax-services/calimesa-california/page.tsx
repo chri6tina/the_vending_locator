@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Calimesa, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Calimesa, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Calimesa California, vending business bookkeeping Calimesa, tax services vending machines Calimesa California, vending machine accounting Calimesa, tax preparation vending business Calimesa",
+  keywords: "vending machine taxes Calimesa California, vending business bookkeeping Calimesa, tax services vending machines Calimesa CALIFORNIA, vending machine accounting Calimesa, tax preparation vending business Calimesa",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/calimesa-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

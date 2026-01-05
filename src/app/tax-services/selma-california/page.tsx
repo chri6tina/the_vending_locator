@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Selma, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Selma, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Selma California, vending business bookkeeping Selma, tax services vending machines Selma California, vending machine accounting Selma, tax preparation vending business Selma",
+  keywords: "vending machine taxes Selma California, vending business bookkeeping Selma, tax services vending machines Selma CALIFORNIA, vending machine accounting Selma, tax preparation vending business Selma",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/selma-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

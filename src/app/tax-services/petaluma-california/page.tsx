@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Petaluma, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Petaluma, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Petaluma California, vending business bookkeeping Petaluma, tax services vending machines Petaluma California, vending machine accounting Petaluma, tax preparation vending business Petaluma",
+  keywords: "vending machine taxes Petaluma California, vending business bookkeeping Petaluma, tax services vending machines Petaluma CALIFORNIA, vending machine accounting Petaluma, tax preparation vending business Petaluma",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/petaluma-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

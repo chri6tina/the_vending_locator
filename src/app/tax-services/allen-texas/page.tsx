@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Allen, Texas - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Allen, Texas. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Allen Texas, vending business bookkeeping Allen, tax services vending machines Allen Texas, vending machine accounting Allen, tax preparation vending business Allen",
+  keywords: "vending machine taxes Allen Texas, vending business bookkeeping Allen, tax services vending machines Allen TEXAS, vending machine accounting Allen, tax preparation vending business Allen",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/allen-texas"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Chula Vista, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Chula Vista, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Chula Vista California, vending business bookkeeping Chula Vista, tax services vending machines Chula Vista California, vending machine accounting Chula Vista, tax preparation vending business Chula Vista",
+  keywords: "vending machine taxes Chula Vista California, vending business bookkeeping Chula Vista, tax services vending machines Chula Vista CALIFORNIA, vending machine accounting Chula Vista, tax preparation vending business Chula Vista",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/chula-vista-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

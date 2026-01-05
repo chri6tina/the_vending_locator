@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Roseville, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Roseville, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Roseville California, vending business bookkeeping Roseville, tax services vending machines Roseville California, vending machine accounting Roseville, tax preparation vending business Roseville",
+  keywords: "vending machine taxes Roseville California, vending business bookkeeping Roseville, tax services vending machines Roseville CALIFORNIA, vending machine accounting Roseville, tax preparation vending business Roseville",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/roseville-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

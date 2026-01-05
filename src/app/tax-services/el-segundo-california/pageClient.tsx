@@ -8,108 +8,9 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function El SegundoFloridaTaxServicesPage() {
+export default function El SegundoCaliforniaTaxServicesPage() {
   const cityDisplayName = 'El Segundo';
-  const stateDisplayName = 'Florida'
-  const [formSubmitted, setFormSubmitted] = useState(false)
-  const [isSubmitting, setIsSubmitting] = useState(false)
-  const [showSuccessModal, setShowSuccessModal] = useState(false)
-
-  // City pages don't show sub-cities
-  const subCities: { name: string; slug: string }[] = []
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    setIsSubmitting(true)
-
-    const form = e.currentTarget
-    const formData = new FormData(form)
-    
-    // Add state information to form submission
-    formData.append('state', stateDisplayName)
-    formData.append('city', cityDisplayName)
-    formData.append('service_type', 'tax_bookkeeping')
-
-    try {
-      const response = await fetch('https://formspree.io/f/xjgkdgpo', {
-        method: 'POST',
-        body: formData,
-        headers: {
-          'Accept': 'application/json'
-        }
-      })
-
-      if (response.ok) {
-        setFormSubmitted(true)
-        setShowSuccessModal(true)
-        form.reset()
-      }
-    } catch (error) {
-      console.error('Form submission error:', error)
-    } finally {
-      setIsSubmitting(false)
-    }
-  }
-
-  const closeModal = () => {
-    setShowSuccessModal(false)
-  }
-
-  // FAQ items for JSON-LD
-    const faqItems = [
-    {
-      q: "Why do vending machine owners in El Segundo need specialized tax help?",
-      a: "Vending machine businesses in El Segundo have unique tax considerations including equipment depreciation, route expenses, location fees across San Bernardino County, product inventory, multi-location operations, and California-specific tax requirements. Specialized tax professionals understand these nuances and can help maximize deductions while ensuring compliance with state and federal regulations."
-    },
-    {
-      q: "What tax deductions are available for vending machine businesses in El Segundo?",
-      a: "El Segundo vending businesses can deduct equipment depreciation, vehicle expenses for route operations, product inventory costs, location fees throughout the El Segundo area, maintenance and repairs, insurance, business licenses, professional fees, home office expenses if applicable, and mileage for servicing machines across El Segundo's business districts and surrounding areas."
-    },
-    {
-      q: "How much do tax and bookkeeping services cost for vending businesses in El Segundo?",
-      a: "Costs vary based on the size of your El Segundo vending business, number of locations, machines operated, and services needed. Most professionals offer free consultations to discuss your needs. Monthly bookkeeping typically ranges from $200-$1,000+ depending on complexity, while tax preparation for vending businesses in El Segundo generally costs $500-$3,000+ annually."
-    },
-    {
-      q: "What bookkeeping services do El Segundo vending businesses need?",
-      a: "El Segundo vending businesses benefit from monthly bookkeeping that tracks revenue by location throughout the city, product costs, route expenses across San Bernardino County, equipment maintenance, location fees, profitability analysis by machine or location, and preparation of financial statements. This helps owners make informed business decisions and simplifies tax preparation."
-    },
-    {
-      q: "When should El Segundo vending business owners contact a tax professional?",
-      a: "It's best to connect with a tax professional year-round, not just during tax season. Early engagement allows for tax planning, quarterly estimate optimization, business structure review for California requirements, and proactive financial management that can save money throughout the year. El Segundo tax professionals can help plan for busy seasons and seasonal fluctuations in the San Francisco Bay Area market."
-    },
-    {
-      q: "Do El Segundo tax professionals understand vending machine business operations?",
-      a: "Yes, qualified tax and bookkeeping professionals specializing in vending businesses understand route operations, cash handling, inventory management, equipment depreciation schedules, location agreements, seasonal revenue patterns, and the unique challenges of operating multiple machines across El Segundo's diverse neighborhoods and business districts."
-    },
-    {
-      q: "What business records should El Segundo vending owners bring to tax consultations?",
-      a: "Bring previous tax returns, financial statements, bank statements, expense receipts for route operations and equipment, equipment purchase records, location agreements throughout El Segundo, vehicle mileage logs, inventory records, and any questions about your business structure or operations. The more information you provide, the better the professional can assist you."
-    },
-    {
-      q: "Are there California-specific tax considerations for El Segundo vending businesses?",
-      a: "Yes, El Segundo vending businesses must consider California sales tax on vending machine sales, state income tax, franchise tax board requirements, business licenses in San Bernardino County, and potential property tax on equipment. A qualified tax professional can ensure compliance with all California and El Segundo-specific tax requirements."
-    },
-    {
-      q: "How can bookkeeping help El Segundo vending businesses grow?",
-      a: "Professional bookkeeping provides accurate financial insights that help El Segundo vending owners identify most profitable locations, optimize route efficiency, manage cash flow during slow seasons, make informed equipment purchase decisions, negotiate better location agreements, and plan for expansion throughout the San Francisco Bay Area region."
-    },
-    {
-      q: "What's the typical turnaround time for tax preparation for El Segundo vending businesses?",
-      a: "Turnaround time varies by complexity, but most tax professionals can complete returns for El Segundo vending businesses within 2-4 weeks after receiving all necessary documents. Starting early in tax season and maintaining organized records throughout the year helps expedite the process and allows time for tax planning strategies specific to California requirements."
-    }
-  ]
-
-import { useState } from 'react'
-import Link from 'next/link'
-import { motion } from 'framer-motion'
-import { MapPinIcon, BuildingOffice2Icon, CheckCircleIcon, UserIcon, PhoneIcon, EnvelopeIcon, UsersIcon, ClockIcon, ShieldCheckIcon, CalculatorIcon, DocumentTextIcon, CurrencyDollarIcon } from '@heroicons/react/24/outline'
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
-import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
-
-export default function El SegundoFloridaTaxServicesPage() {
-  const cityDisplayName = 'El Segundo';
-  const stateDisplayName = 'Florida'
+  const stateDisplayName = 'California'
   const [formSubmitted, setFormSubmitted] = useState(false)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
@@ -157,44 +58,44 @@ export default function El SegundoFloridaTaxServicesPage() {
   // FAQ items for JSON-LD
   const faqItems = [
     {
-      q: 'Why do vending machine owners in El Segundo need specialized tax help?',
-      a: 'Vending machine businesses in El Segundo have unique tax considerations including equipment depreciation, route expenses, location fees across San Bernardino County, product inventory, multi-location operations, and Florida-specific tax requirements. Specialized tax professionals understand these nuances and can help maximize deductions while ensuring compliance with state and federal regulations.'
+      q: "Why do vending machine owners in El Segundo need specialized tax help?",
+      a: "Vending machine businesses in El Segundo have unique tax considerations including equipment depreciation, route expenses, location fees across San Bernardino County, product inventory, multi-location operations, and California-specific tax requirements. Specialized tax professionals understand these nuances and can help maximize deductions while ensuring compliance with state and federal regulations."
     },
     {
-      q: 'What tax deductions are available for vending machine businesses in El Segundo?',
-      a: 'El Segundo vending businesses can deduct equipment depreciation, vehicle expenses for route operations, product inventory costs, location fees throughout the El Segundo area, maintenance and repairs, insurance, business licenses, professional fees, home office expenses if applicable, and mileage for servicing machines across the city\'s extensive geographic area.'
+      q: "What tax deductions are available for vending machine businesses in El Segundo?",
+      a: "El Segundo vending businesses can deduct equipment depreciation, vehicle expenses for route operations, product inventory costs, location fees throughout the El Segundo area, maintenance and repairs, insurance, business licenses, professional fees, home office expenses if applicable, and mileage for servicing machines across El Segundo's business districts and surrounding areas."
     },
     {
-      q: 'How much do tax and bookkeeping services cost for vending businesses in El Segundo?',
-      a: 'Costs vary based on the size of your El Segundo vending business, number of locations, machines operated, and services needed. Most professionals offer free consultations to discuss your needs. Monthly bookkeeping typically ranges from $200-$1,000+ depending on complexity, while tax preparation for vending businesses in El Segundo generally costs $500-$3,000+ annually.'
+      q: "How much do tax and bookkeeping services cost for vending businesses in El Segundo?",
+      a: "Costs vary based on the size of your El Segundo vending business, number of locations, machines operated, and services needed. Most professionals offer free consultations to discuss your needs. Monthly bookkeeping typically ranges from $200-$1,000+ depending on complexity, while tax preparation for vending businesses in El Segundo generally costs $500-$3,000+ annually."
     },
     {
-      q: 'What bookkeeping services do El Segundo vending businesses need?',
-      a: 'El Segundo vending businesses benefit from monthly bookkeeping that tracks revenue by location throughout the city, product costs, route expenses across San Bernardino County, equipment maintenance, location fees, profitability analysis by machine or location, and preparation of financial statements. This helps owners make informed business decisions and simplifies tax preparation.'
+      q: "What bookkeeping services do El Segundo vending businesses need?",
+      a: "El Segundo vending businesses benefit from monthly bookkeeping that tracks revenue by location throughout the city, product costs, route expenses across San Bernardino County, equipment maintenance, location fees, profitability analysis by machine or location, and preparation of financial statements. This helps owners make informed business decisions and simplifies tax preparation."
     },
     {
-      q: 'When should El Segundo vending business owners contact a tax professional?',
-      a: 'It\'s best to connect with a tax professional year-round, not just during tax season. Early engagement allows for tax planning, quarterly estimate optimization, business structure review for Florida requirements, and proactive financial management that can save money throughout the year. El Segundo tax professionals can help plan for busy seasons and seasonal fluctuations.'
+      q: "When should El Segundo vending business owners contact a tax professional?",
+      a: "It's best to connect with a tax professional year-round, not just during tax season. Early engagement allows for tax planning, quarterly estimate optimization, business structure review for California requirements, and proactive financial management that can save money throughout the year. El Segundo tax professionals can help plan for busy seasons and seasonal fluctuations in the San Francisco Bay Area market."
     },
     {
-      q: 'Do El Segundo tax professionals understand vending machine business operations?',
-      a: 'Yes, qualified tax and bookkeeping professionals specializing in vending businesses understand route operations, cash handling, inventory management, equipment depreciation schedules, location agreements, seasonal revenue patterns, and the unique challenges of operating multiple machines across El Segundo\'s diverse neighborhoods and business districts.'
+      q: "Do El Segundo tax professionals understand vending machine business operations?",
+      a: "Yes, qualified tax and bookkeeping professionals specializing in vending businesses understand route operations, cash handling, inventory management, equipment depreciation schedules, location agreements, seasonal revenue patterns, and the unique challenges of operating multiple machines across El Segundo's diverse neighborhoods and business districts."
     },
     {
-      q: 'What business records should El Segundo vending owners bring to tax consultations?',
-      a: 'Bring previous tax returns, financial statements, bank statements, expense receipts for route operations and equipment, equipment purchase records, location agreements throughout El Segundo, vehicle mileage logs, inventory records, and any questions about your business structure or operations. The more information you provide, the better the professional can assist you.'
+      q: "What business records should El Segundo vending owners bring to tax consultations?",
+      a: "Bring previous tax returns, financial statements, bank statements, expense receipts for route operations and equipment, equipment purchase records, location agreements throughout El Segundo, vehicle mileage logs, inventory records, and any questions about your business structure or operations. The more information you provide, the better the professional can assist you."
     },
     {
-      q: 'Are there Florida-specific tax considerations for El Segundo vending businesses?',
-      a: 'Yes, El Segundo vending businesses must consider Florida sales tax on vending machine sales, no state income tax (but federal tax still applies), business tax receipts required in San Bernardino County, and potential property tax on equipment. A qualified tax professional can ensure compliance with all Florida and El Segundo-specific tax requirements.'
+      q: "Are there California-specific tax considerations for El Segundo vending businesses?",
+      a: "Yes, El Segundo vending businesses must consider California sales tax on vending machine sales, state income tax, franchise tax board requirements, business licenses in San Bernardino County, and potential property tax on equipment. A qualified tax professional can ensure compliance with all California and El Segundo-specific tax requirements."
     },
     {
-      q: 'How can bookkeeping help El Segundo vending businesses grow?',
-      a: 'Professional bookkeeping provides accurate financial insights that help El Segundo vending owners identify most profitable locations, optimize route efficiency, manage cash flow during slow seasons, make informed equipment purchase decisions, negotiate better location agreements, and plan for expansion throughout San Francisco Bay Area.'
+      q: "How can bookkeeping help El Segundo vending businesses grow?",
+      a: "Professional bookkeeping provides accurate financial insights that help El Segundo vending owners identify most profitable locations, optimize route efficiency, manage cash flow during slow seasons, make informed equipment purchase decisions, negotiate better location agreements, and plan for expansion throughout the San Francisco Bay Area region."
     },
     {
-      q: 'What\'s the typical turnaround time for tax preparation for El Segundo vending businesses?',
-      a: 'Turnaround time varies by complexity, but most tax professionals can complete returns for El Segundo vending businesses within 2-4 weeks after receiving all necessary documents. Starting early in tax season and maintaining organized records throughout the year helps expedite the process and allows time for tax planning strategies.'
+      q: "What's the typical turnaround time for tax preparation for El Segundo vending businesses?",
+      a: "Turnaround time varies by complexity, but most tax professionals can complete returns for El Segundo vending businesses within 2-4 weeks after receiving all necessary documents. Starting early in tax season and maintaining organized records throughout the year helps expedite the process and allows time for tax planning strategies specific to California requirements."
     }
   ]
 
@@ -215,8 +116,8 @@ export default function El SegundoFloridaTaxServicesPage() {
                 Tax Services
               </Link>
               <span>/</span>
-              <Link href="/tax-services/florida" className="hover:text-navy transition-colors">
-                Florida
+              <Link href="/tax-services/california" className="hover:text-navy transition-colors">
+                California
               </Link>
               <span>/</span>
               <span className="text-charcoal font-medium">{cityDisplayName}</span>
@@ -239,7 +140,7 @@ export default function El SegundoFloridaTaxServicesPage() {
                     className="text-4xl md:text-5xl font-playfair font-bold text-charcoal mb-6 leading-tight"
                   >
                     Tax & Bookkeeping Services for Vending Machine Owners in{' '}
-                    <span className="text-navy">{cityDisplayName}, Florida</span>
+                    <span className="text-navy">{cityDisplayName}, California</span>
                   </motion.h1>
 
                   <motion.p 
@@ -305,7 +206,7 @@ export default function El SegundoFloridaTaxServicesPage() {
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircleIcon className="h-6 w-6 text-coral flex-shrink-0 mt-0.5" />
-                      <span className="text-charcoal/80">Florida and El Segundo-specific tax expertise</span>
+                      <span className="text-charcoal/80">California and El Segundo-specific tax expertise</span>
                     </li>
                   </motion.ul>
                 </div>
@@ -618,7 +519,7 @@ export default function El SegundoFloridaTaxServicesPage() {
                     <div>
                       <h3 className="text-xl font-semibold text-navy mb-2">Comprehensive Tax Preparation</h3>
                       <p className="text-charcoal/80 text-sm leading-relaxed">
-                        Professional tax preparation for your El Segundo vending business, including federal and Florida state returns, 
+                        Professional tax preparation for your El Segundo vending business, including federal and California state returns, 
                         maximizing all eligible deductions for equipment, vehicles, locations, and operational expenses specific to vending operations.
                       </p>
                     </div>
@@ -706,7 +607,7 @@ export default function El SegundoFloridaTaxServicesPage() {
                     <div>
                       <h3 className="text-xl font-semibold text-navy mb-2">Compliance & Support</h3>
                       <p className="text-charcoal/80 text-sm leading-relaxed">
-                        Ensure compliance with federal, Florida state, and San Bernardino County tax requirements. Professional support for audits, 
+                        Ensure compliance with federal, California state, and San Bernardino County tax requirements. Professional support for audits, 
                         tax notices, and ongoing questions about your vending business tax obligations throughout the year.
                       </p>
                     </div>
@@ -782,7 +683,7 @@ export default function El SegundoFloridaTaxServicesPage() {
                   </div>
                   <h3 className="text-xl font-semibold text-navy mb-3">El Segundo Knowledge</h3>
                   <p className="text-charcoal/80">
-                    Local professionals familiar with El Segundo and Florida tax requirements, business regulations, and economic landscape.
+                    Local professionals familiar with El Segundo and California tax requirements, business regulations, and economic landscape.
                   </p>
                 </motion.div>
 
@@ -929,7 +830,7 @@ export default function El SegundoFloridaTaxServicesPage() {
             itemListElement: [
               { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
               { '@type': 'ListItem', position: 2, name: 'Tax Services', item: 'https://www.thevendinglocator.com/tax-services' },
-              { '@type': 'ListItem', position: 3, name: 'Florida', item: 'https://www.thevendinglocator.com/tax-services/florida' },
+              { '@type': 'ListItem', position: 3, name: 'California', item: 'https://www.thevendinglocator.com/tax-services/california' },
               { '@type': 'ListItem', position: 4, name: 'El Segundo', item: 'https://www.thevendinglocator.com/tax-services/el-segundo-california' }
             ]
           })

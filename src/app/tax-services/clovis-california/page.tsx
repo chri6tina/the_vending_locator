@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Clovis, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Clovis, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Clovis California, vending business bookkeeping Clovis, tax services vending machines Clovis California, vending machine accounting Clovis, tax preparation vending business Clovis",
+  keywords: "vending machine taxes Clovis California, vending business bookkeeping Clovis, tax services vending machines Clovis CALIFORNIA, vending machine accounting Clovis, tax preparation vending business Clovis",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/clovis-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

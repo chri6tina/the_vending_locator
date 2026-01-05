@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Orange, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Orange, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Orange California, vending business bookkeeping Orange, tax services vending machines Orange California, vending machine accounting Orange, tax preparation vending business Orange",
+  keywords: "vending machine taxes Orange California, vending business bookkeeping Orange, tax services vending machines Orange CALIFORNIA, vending machine accounting Orange, tax preparation vending business Orange",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/orange-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in San Francisco, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in San Francisco, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes San Francisco California, vending business bookkeeping San Francisco, tax services vending machines San Francisco California, vending machine accounting San Francisco, tax preparation vending business San Francisco",
+  keywords: "vending machine taxes San Francisco California, vending business bookkeeping San Francisco, tax services vending machines San Francisco CALIFORNIA, vending machine accounting San Francisco, tax preparation vending business San Francisco",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/san-francisco-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

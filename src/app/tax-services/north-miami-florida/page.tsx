@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in North Miami, Florida - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in North Miami, Florida. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes North Miami Florida, vending business bookkeeping North Miami, tax services vending machines North Miami Florida, vending machine accounting North Miami, tax preparation vending business North Miami",
+  keywords: "vending machine taxes North Miami Florida, vending business bookkeeping North Miami, tax services vending machines North Miami FLORIDA, vending machine accounting North Miami, tax preparation vending business North Miami",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/north-miami-florida"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

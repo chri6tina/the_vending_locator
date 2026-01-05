@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Citrus Heights, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Citrus Heights, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Citrus Heights California, vending business bookkeeping Citrus Heights, tax services vending machines Citrus Heights California, vending machine accounting Citrus Heights, tax preparation vending business Citrus Heights",
+  keywords: "vending machine taxes Citrus Heights California, vending business bookkeeping Citrus Heights, tax services vending machines Citrus Heights CALIFORNIA, vending machine accounting Citrus Heights, tax preparation vending business Citrus Heights",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/citrus-heights-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

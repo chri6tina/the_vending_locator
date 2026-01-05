@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in El Segundo, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in El Segundo, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes El Segundo California, vending business bookkeeping El Segundo, tax services vending machines El Segundo California, vending machine accounting El Segundo, tax preparation vending business El Segundo",
+  keywords: "vending machine taxes El Segundo California, vending business bookkeeping El Segundo, tax services vending machines El Segundo CALIFORNIA, vending machine accounting El Segundo, tax preparation vending business El Segundo",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/el-segundo-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

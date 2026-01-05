@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in San Diego, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in San Diego, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes San Diego California, vending business bookkeeping San Diego, tax services vending machines San Diego California, vending machine accounting San Diego, tax preparation vending business San Diego",
+  keywords: "vending machine taxes San Diego California, vending business bookkeeping San Diego, tax services vending machines San Diego CALIFORNIA, vending machine accounting San Diego, tax preparation vending business San Diego",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/san-diego-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

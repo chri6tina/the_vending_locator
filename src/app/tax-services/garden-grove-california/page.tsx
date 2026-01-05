@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Garden Grove, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Garden Grove, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Garden Grove California, vending business bookkeeping Garden Grove, tax services vending machines Garden Grove California, vending machine accounting Garden Grove, tax preparation vending business Garden Grove",
+  keywords: "vending machine taxes Garden Grove California, vending business bookkeeping Garden Grove, tax services vending machines Garden Grove CALIFORNIA, vending machine accounting Garden Grove, tax preparation vending business Garden Grove",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/garden-grove-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

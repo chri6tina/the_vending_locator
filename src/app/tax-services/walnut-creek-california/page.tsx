@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Walnut Creek, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Walnut Creek, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Walnut Creek California, vending business bookkeeping Walnut Creek, tax services vending machines Walnut Creek California, vending machine accounting Walnut Creek, tax preparation vending business Walnut Creek",
+  keywords: "vending machine taxes Walnut Creek California, vending business bookkeeping Walnut Creek, tax services vending machines Walnut Creek CALIFORNIA, vending machine accounting Walnut Creek, tax preparation vending business Walnut Creek",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/walnut-creek-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

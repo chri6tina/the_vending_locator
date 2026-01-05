@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Pasadena, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Pasadena, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Pasadena California, vending business bookkeeping Pasadena, tax services vending machines Pasadena California, vending machine accounting Pasadena, tax preparation vending business Pasadena",
+  keywords: "vending machine taxes Pasadena California, vending business bookkeeping Pasadena, tax services vending machines Pasadena CALIFORNIA, vending machine accounting Pasadena, tax preparation vending business Pasadena",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/pasadena-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

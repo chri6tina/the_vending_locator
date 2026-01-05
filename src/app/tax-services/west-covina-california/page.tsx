@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in West Covina, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in West Covina, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes West Covina California, vending business bookkeeping West Covina, tax services vending machines West Covina California, vending machine accounting West Covina, tax preparation vending business West Covina",
+  keywords: "vending machine taxes West Covina California, vending business bookkeeping West Covina, tax services vending machines West Covina CALIFORNIA, vending machine accounting West Covina, tax preparation vending business West Covina",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/west-covina-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

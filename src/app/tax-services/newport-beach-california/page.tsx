@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Newport Beach, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Newport Beach, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Newport Beach California, vending business bookkeeping Newport Beach, tax services vending machines Newport Beach California, vending machine accounting Newport Beach, tax preparation vending business Newport Beach",
+  keywords: "vending machine taxes Newport Beach California, vending business bookkeeping Newport Beach, tax services vending machines Newport Beach CALIFORNIA, vending machine accounting Newport Beach, tax preparation vending business Newport Beach",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/newport-beach-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

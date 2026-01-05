@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Goleta, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Goleta, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Goleta California, vending business bookkeeping Goleta, tax services vending machines Goleta California, vending machine accounting Goleta, tax preparation vending business Goleta",
+  keywords: "vending machine taxes Goleta California, vending business bookkeeping Goleta, tax services vending machines Goleta CALIFORNIA, vending machine accounting Goleta, tax preparation vending business Goleta",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/goleta-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

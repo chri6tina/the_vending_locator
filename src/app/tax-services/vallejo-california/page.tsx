@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Vallejo, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Vallejo, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Vallejo California, vending business bookkeeping Vallejo, tax services vending machines Vallejo California, vending machine accounting Vallejo, tax preparation vending business Vallejo",
+  keywords: "vending machine taxes Vallejo California, vending business bookkeeping Vallejo, tax services vending machines Vallejo CALIFORNIA, vending machine accounting Vallejo, tax preparation vending business Vallejo",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/vallejo-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

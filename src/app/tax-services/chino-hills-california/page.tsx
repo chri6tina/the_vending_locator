@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Chino Hills, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Chino Hills, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Chino Hills California, vending business bookkeeping Chino Hills, tax services vending machines Chino Hills California, vending machine accounting Chino Hills, tax preparation vending business Chino Hills",
+  keywords: "vending machine taxes Chino Hills California, vending business bookkeeping Chino Hills, tax services vending machines Chino Hills CALIFORNIA, vending machine accounting Chino Hills, tax preparation vending business Chino Hills",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/chino-hills-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

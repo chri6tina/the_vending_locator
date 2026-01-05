@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Palmdale, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Palmdale, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Palmdale California, vending business bookkeeping Palmdale, tax services vending machines Palmdale California, vending machine accounting Palmdale, tax preparation vending business Palmdale",
+  keywords: "vending machine taxes Palmdale California, vending business bookkeeping Palmdale, tax services vending machines Palmdale CALIFORNIA, vending machine accounting Palmdale, tax preparation vending business Palmdale",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/palmdale-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

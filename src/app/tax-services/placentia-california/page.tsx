@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Placentia, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Placentia, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Placentia California, vending business bookkeeping Placentia, tax services vending machines Placentia California, vending machine accounting Placentia, tax preparation vending business Placentia",
+  keywords: "vending machine taxes Placentia California, vending business bookkeeping Placentia, tax services vending machines Placentia CALIFORNIA, vending machine accounting Placentia, tax preparation vending business Placentia",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/placentia-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

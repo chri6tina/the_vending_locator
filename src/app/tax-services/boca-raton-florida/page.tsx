@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Boca Raton, Florida - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Boca Raton, Florida. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Boca Raton Florida, vending business bookkeeping Boca Raton, tax services vending machines Boca Raton Florida, vending machine accounting Boca Raton, tax preparation vending business Boca Raton",
+  keywords: "vending machine taxes Boca Raton Florida, vending business bookkeeping Boca Raton, tax services vending machines Boca Raton FLORIDA, vending machine accounting Boca Raton, tax preparation vending business Boca Raton",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/boca-raton-florida"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

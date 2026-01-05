@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in San Antonio, Texas - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in San Antonio, Texas. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes San Antonio Texas, vending business bookkeeping San Antonio, tax services vending machines San Antonio Texas, vending machine accounting San Antonio, tax preparation vending business San Antonio",
+  keywords: "vending machine taxes San Antonio Texas, vending business bookkeeping San Antonio, tax services vending machines San Antonio TEXAS, vending machine accounting San Antonio, tax preparation vending business San Antonio",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/san-antonio-texas"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

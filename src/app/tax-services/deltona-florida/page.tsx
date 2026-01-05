@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Deltona, Florida - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Deltona, Florida. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Deltona Florida, vending business bookkeeping Deltona, tax services vending machines Deltona Florida, vending machine accounting Deltona, tax preparation vending business Deltona",
+  keywords: "vending machine taxes Deltona Florida, vending business bookkeeping Deltona, tax services vending machines Deltona FLORIDA, vending machine accounting Deltona, tax preparation vending business Deltona",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/deltona-florida"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

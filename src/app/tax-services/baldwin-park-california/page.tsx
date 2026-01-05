@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Baldwin Park, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Baldwin Park, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Baldwin Park California, vending business bookkeeping Baldwin Park, tax services vending machines Baldwin Park California, vending machine accounting Baldwin Park, tax preparation vending business Baldwin Park",
+  keywords: "vending machine taxes Baldwin Park California, vending business bookkeeping Baldwin Park, tax services vending machines Baldwin Park CALIFORNIA, vending machine accounting Baldwin Park, tax preparation vending business Baldwin Park",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/baldwin-park-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

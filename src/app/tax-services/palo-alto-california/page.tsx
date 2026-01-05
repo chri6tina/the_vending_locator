@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Palo Alto, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Palo Alto, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Palo Alto California, vending business bookkeeping Palo Alto, tax services vending machines Palo Alto California, vending machine accounting Palo Alto, tax preparation vending business Palo Alto",
+  keywords: "vending machine taxes Palo Alto California, vending business bookkeeping Palo Alto, tax services vending machines Palo Alto CALIFORNIA, vending machine accounting Palo Alto, tax preparation vending business Palo Alto",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/palo-alto-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

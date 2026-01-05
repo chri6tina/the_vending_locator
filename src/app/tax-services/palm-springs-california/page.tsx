@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Palm Springs, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Palm Springs, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Palm Springs California, vending business bookkeeping Palm Springs, tax services vending machines Palm Springs California, vending machine accounting Palm Springs, tax preparation vending business Palm Springs",
+  keywords: "vending machine taxes Palm Springs California, vending business bookkeeping Palm Springs, tax services vending machines Palm Springs CALIFORNIA, vending machine accounting Palm Springs, tax preparation vending business Palm Springs",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/palm-springs-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Dinuba, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Dinuba, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Dinuba California, vending business bookkeeping Dinuba, tax services vending machines Dinuba California, vending machine accounting Dinuba, tax preparation vending business Dinuba",
+  keywords: "vending machine taxes Dinuba California, vending business bookkeeping Dinuba, tax services vending machines Dinuba CALIFORNIA, vending machine accounting Dinuba, tax preparation vending business Dinuba",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/dinuba-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

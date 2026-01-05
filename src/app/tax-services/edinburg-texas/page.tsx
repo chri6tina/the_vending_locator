@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Edinburg, Texas - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Edinburg, Texas. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Edinburg Texas, vending business bookkeeping Edinburg, tax services vending machines Edinburg Texas, vending machine accounting Edinburg, tax preparation vending business Edinburg",
+  keywords: "vending machine taxes Edinburg Texas, vending business bookkeeping Edinburg, tax services vending machines Edinburg TEXAS, vending machine accounting Edinburg, tax preparation vending business Edinburg",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/edinburg-texas"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

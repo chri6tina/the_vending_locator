@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in El Centro, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in El Centro, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes El Centro California, vending business bookkeeping El Centro, tax services vending machines El Centro California, vending machine accounting El Centro, tax preparation vending business El Centro",
+  keywords: "vending machine taxes El Centro California, vending business bookkeeping El Centro, tax services vending machines El Centro CALIFORNIA, vending machine accounting El Centro, tax preparation vending business El Centro",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/el-centro-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

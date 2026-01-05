@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Elk Grove, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Elk Grove, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Elk Grove California, vending business bookkeeping Elk Grove, tax services vending machines Elk Grove California, vending machine accounting Elk Grove, tax preparation vending business Elk Grove",
+  keywords: "vending machine taxes Elk Grove California, vending business bookkeeping Elk Grove, tax services vending machines Elk Grove CALIFORNIA, vending machine accounting Elk Grove, tax preparation vending business Elk Grove",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/elk-grove-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

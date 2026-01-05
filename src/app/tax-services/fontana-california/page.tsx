@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Fontana, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Fontana, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Fontana California, vending business bookkeeping Fontana, tax services vending machines Fontana California, vending machine accounting Fontana, tax preparation vending business Fontana",
+  keywords: "vending machine taxes Fontana California, vending business bookkeeping Fontana, tax services vending machines Fontana CALIFORNIA, vending machine accounting Fontana, tax preparation vending business Fontana",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/fontana-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

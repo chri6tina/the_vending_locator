@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Santa Clarita, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Santa Clarita, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Santa Clarita California, vending business bookkeeping Santa Clarita, tax services vending machines Santa Clarita California, vending machine accounting Santa Clarita, tax preparation vending business Santa Clarita",
+  keywords: "vending machine taxes Santa Clarita California, vending business bookkeeping Santa Clarita, tax services vending machines Santa Clarita CALIFORNIA, vending machine accounting Santa Clarita, tax preparation vending business Santa Clarita",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/santa-clarita-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

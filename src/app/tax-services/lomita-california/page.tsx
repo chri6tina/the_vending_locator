@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Lomita, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Lomita, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Lomita California, vending business bookkeeping Lomita, tax services vending machines Lomita California, vending machine accounting Lomita, tax preparation vending business Lomita",
+  keywords: "vending machine taxes Lomita California, vending business bookkeeping Lomita, tax services vending machines Lomita CALIFORNIA, vending machine accounting Lomita, tax preparation vending business Lomita",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/lomita-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

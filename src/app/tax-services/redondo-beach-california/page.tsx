@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Redondo Beach, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Redondo Beach, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Redondo Beach California, vending business bookkeeping Redondo Beach, tax services vending machines Redondo Beach California, vending machine accounting Redondo Beach, tax preparation vending business Redondo Beach",
+  keywords: "vending machine taxes Redondo Beach California, vending business bookkeeping Redondo Beach, tax services vending machines Redondo Beach CALIFORNIA, vending machine accounting Redondo Beach, tax preparation vending business Redondo Beach",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/redondo-beach-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

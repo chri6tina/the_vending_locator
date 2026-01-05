@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Santa Cruz, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Santa Cruz, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Santa Cruz California, vending business bookkeeping Santa Cruz, tax services vending machines Santa Cruz California, vending machine accounting Santa Cruz, tax preparation vending business Santa Cruz",
+  keywords: "vending machine taxes Santa Cruz California, vending business bookkeeping Santa Cruz, tax services vending machines Santa Cruz CALIFORNIA, vending machine accounting Santa Cruz, tax preparation vending business Santa Cruz",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/santa-cruz-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in League City, Texas - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in League City, Texas. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes League City Texas, vending business bookkeeping League City, tax services vending machines League City Texas, vending machine accounting League City, tax preparation vending business League City",
+  keywords: "vending machine taxes League City Texas, vending business bookkeeping League City, tax services vending machines League City TEXAS, vending machine accounting League City, tax preparation vending business League City",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/league-city-texas"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

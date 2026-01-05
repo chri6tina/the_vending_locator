@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Plant City, Florida - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Plant City, Florida. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Plant City Florida, vending business bookkeeping Plant City, tax services vending machines Plant City Florida, vending machine accounting Plant City, tax preparation vending business Plant City",
+  keywords: "vending machine taxes Plant City Florida, vending business bookkeeping Plant City, tax services vending machines Plant City FLORIDA, vending machine accounting Plant City, tax preparation vending business Plant City",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/plant-city-florida"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

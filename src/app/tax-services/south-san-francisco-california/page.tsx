@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in South San Francisco, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in South San Francisco, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes South San Francisco California, vending business bookkeeping South San Francisco, tax services vending machines South San Francisco California, vending machine accounting South San Francisco, tax preparation vending business South San Francisco",
+  keywords: "vending machine taxes South San Francisco California, vending business bookkeeping South San Francisco, tax services vending machines South San Francisco CALIFORNIA, vending machine accounting South San Francisco, tax preparation vending business South San Francisco",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/south-san-francisco-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Oceanside, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Oceanside, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Oceanside California, vending business bookkeeping Oceanside, tax services vending machines Oceanside California, vending machine accounting Oceanside, tax preparation vending business Oceanside",
+  keywords: "vending machine taxes Oceanside California, vending business bookkeeping Oceanside, tax services vending machines Oceanside CALIFORNIA, vending machine accounting Oceanside, tax preparation vending business Oceanside",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/oceanside-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

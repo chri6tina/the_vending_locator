@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Pensacola, Florida - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Pensacola, Florida. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Pensacola Florida, vending business bookkeeping Pensacola, tax services vending machines Pensacola Florida, vending machine accounting Pensacola, tax preparation vending business Pensacola",
+  keywords: "vending machine taxes Pensacola Florida, vending business bookkeeping Pensacola, tax services vending machines Pensacola FLORIDA, vending machine accounting Pensacola, tax preparation vending business Pensacola",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/pensacola-florida"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

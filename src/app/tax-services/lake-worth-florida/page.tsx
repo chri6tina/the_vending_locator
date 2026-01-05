@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Lake Worth, Florida - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Lake Worth, Florida. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Lake Worth Florida, vending business bookkeeping Lake Worth, tax services vending machines Lake Worth Florida, vending machine accounting Lake Worth, tax preparation vending business Lake Worth",
+  keywords: "vending machine taxes Lake Worth Florida, vending business bookkeeping Lake Worth, tax services vending machines Lake Worth FLORIDA, vending machine accounting Lake Worth, tax preparation vending business Lake Worth",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/lake-worth-florida"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

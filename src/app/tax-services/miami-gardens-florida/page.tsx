@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Miami Gardens, Florida - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Miami Gardens, Florida. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Miami Gardens Florida, vending business bookkeeping Miami Gardens, tax services vending machines Miami Gardens Florida, vending machine accounting Miami Gardens, tax preparation vending business Miami Gardens",
+  keywords: "vending machine taxes Miami Gardens Florida, vending business bookkeeping Miami Gardens, tax services vending machines Miami Gardens FLORIDA, vending machine accounting Miami Gardens, tax preparation vending business Miami Gardens",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/miami-gardens-florida"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

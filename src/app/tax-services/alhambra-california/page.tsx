@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Alhambra, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Alhambra, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Alhambra California, vending business bookkeeping Alhambra, tax services vending machines Alhambra California, vending machine accounting Alhambra, tax preparation vending business Alhambra",
+  keywords: "vending machine taxes Alhambra California, vending business bookkeeping Alhambra, tax services vending machines Alhambra CALIFORNIA, vending machine accounting Alhambra, tax preparation vending business Alhambra",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/alhambra-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

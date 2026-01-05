@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Killeen, Texas - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Killeen, Texas. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Killeen Texas, vending business bookkeeping Killeen, tax services vending machines Killeen Texas, vending machine accounting Killeen, tax preparation vending business Killeen",
+  keywords: "vending machine taxes Killeen Texas, vending business bookkeeping Killeen, tax services vending machines Killeen TEXAS, vending machine accounting Killeen, tax preparation vending business Killeen",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/killeen-texas"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

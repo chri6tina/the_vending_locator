@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Boynton Beach, Florida - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Boynton Beach, Florida. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Boynton Beach Florida, vending business bookkeeping Boynton Beach, tax services vending machines Boynton Beach Florida, vending machine accounting Boynton Beach, tax preparation vending business Boynton Beach",
+  keywords: "vending machine taxes Boynton Beach Florida, vending business bookkeeping Boynton Beach, tax services vending machines Boynton Beach FLORIDA, vending machine accounting Boynton Beach, tax preparation vending business Boynton Beach",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/boynton-beach-florida"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

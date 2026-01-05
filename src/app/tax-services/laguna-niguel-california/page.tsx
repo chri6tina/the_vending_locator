@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Laguna Niguel, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Laguna Niguel, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Laguna Niguel California, vending business bookkeeping Laguna Niguel, tax services vending machines Laguna Niguel California, vending machine accounting Laguna Niguel, tax preparation vending business Laguna Niguel",
+  keywords: "vending machine taxes Laguna Niguel California, vending business bookkeeping Laguna Niguel, tax services vending machines Laguna Niguel CALIFORNIA, vending machine accounting Laguna Niguel, tax preparation vending business Laguna Niguel",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/laguna-niguel-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

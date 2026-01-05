@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Ontario, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Ontario, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Ontario California, vending business bookkeeping Ontario, tax services vending machines Ontario California, vending machine accounting Ontario, tax preparation vending business Ontario",
+  keywords: "vending machine taxes Ontario California, vending business bookkeeping Ontario, tax services vending machines Ontario CALIFORNIA, vending machine accounting Ontario, tax preparation vending business Ontario",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/ontario-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

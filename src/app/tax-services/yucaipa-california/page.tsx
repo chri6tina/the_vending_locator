@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Yucaipa, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Yucaipa, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Yucaipa California, vending business bookkeeping Yucaipa, tax services vending machines Yucaipa California, vending machine accounting Yucaipa, tax preparation vending business Yucaipa",
+  keywords: "vending machine taxes Yucaipa California, vending business bookkeeping Yucaipa, tax services vending machines Yucaipa CALIFORNIA, vending machine accounting Yucaipa, tax preparation vending business Yucaipa",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/yucaipa-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

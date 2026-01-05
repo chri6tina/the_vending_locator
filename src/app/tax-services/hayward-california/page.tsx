@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Hayward, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Hayward, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Hayward California, vending business bookkeeping Hayward, tax services vending machines Hayward California, vending machine accounting Hayward, tax preparation vending business Hayward",
+  keywords: "vending machine taxes Hayward California, vending business bookkeeping Hayward, tax services vending machines Hayward CALIFORNIA, vending machine accounting Hayward, tax preparation vending business Hayward",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/hayward-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

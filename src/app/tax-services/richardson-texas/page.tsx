@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Richardson, Texas - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Richardson, Texas. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Richardson Texas, vending business bookkeeping Richardson, tax services vending machines Richardson Texas, vending machine accounting Richardson, tax preparation vending business Richardson",
+  keywords: "vending machine taxes Richardson Texas, vending business bookkeeping Richardson, tax services vending machines Richardson TEXAS, vending machine accounting Richardson, tax preparation vending business Richardson",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/richardson-texas"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

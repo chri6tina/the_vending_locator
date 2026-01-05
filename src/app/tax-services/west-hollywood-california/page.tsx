@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in West Hollywood, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in West Hollywood, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes West Hollywood California, vending business bookkeeping West Hollywood, tax services vending machines West Hollywood California, vending machine accounting West Hollywood, tax preparation vending business West Hollywood",
+  keywords: "vending machine taxes West Hollywood California, vending business bookkeeping West Hollywood, tax services vending machines West Hollywood CALIFORNIA, vending machine accounting West Hollywood, tax preparation vending business West Hollywood",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/west-hollywood-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

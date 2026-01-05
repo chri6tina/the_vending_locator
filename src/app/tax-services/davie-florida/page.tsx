@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Davie, Florida - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Davie, Florida. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Davie Florida, vending business bookkeeping Davie, tax services vending machines Davie Florida, vending machine accounting Davie, tax preparation vending business Davie",
+  keywords: "vending machine taxes Davie Florida, vending business bookkeeping Davie, tax services vending machines Davie FLORIDA, vending machine accounting Davie, tax preparation vending business Davie",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/davie-florida"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

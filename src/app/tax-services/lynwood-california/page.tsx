@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Lynwood, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Lynwood, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Lynwood California, vending business bookkeeping Lynwood, tax services vending machines Lynwood California, vending machine accounting Lynwood, tax preparation vending business Lynwood",
+  keywords: "vending machine taxes Lynwood California, vending business bookkeeping Lynwood, tax services vending machines Lynwood CALIFORNIA, vending machine accounting Lynwood, tax preparation vending business Lynwood",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/lynwood-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

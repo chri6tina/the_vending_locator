@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Santa Ana, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Santa Ana, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Santa Ana California, vending business bookkeeping Santa Ana, tax services vending machines Santa Ana California, vending machine accounting Santa Ana, tax preparation vending business Santa Ana",
+  keywords: "vending machine taxes Santa Ana California, vending business bookkeeping Santa Ana, tax services vending machines Santa Ana CALIFORNIA, vending machine accounting Santa Ana, tax preparation vending business Santa Ana",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/santa-ana-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

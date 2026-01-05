@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Coral Springs, Florida - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Coral Springs, Florida. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Coral Springs Florida, vending business bookkeeping Coral Springs, tax services vending machines Coral Springs Florida, vending machine accounting Coral Springs, tax preparation vending business Coral Springs",
+  keywords: "vending machine taxes Coral Springs Florida, vending business bookkeeping Coral Springs, tax services vending machines Coral Springs FLORIDA, vending machine accounting Coral Springs, tax preparation vending business Coral Springs",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/coral-springs-florida"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

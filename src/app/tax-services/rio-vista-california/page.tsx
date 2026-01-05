@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Rio Vista, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Rio Vista, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Rio Vista California, vending business bookkeeping Rio Vista, tax services vending machines Rio Vista California, vending machine accounting Rio Vista, tax preparation vending business Rio Vista",
+  keywords: "vending machine taxes Rio Vista California, vending business bookkeeping Rio Vista, tax services vending machines Rio Vista CALIFORNIA, vending machine accounting Rio Vista, tax preparation vending business Rio Vista",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/rio-vista-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

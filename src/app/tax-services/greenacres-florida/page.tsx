@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Greenacres, Florida - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Greenacres, Florida. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Greenacres Florida, vending business bookkeeping Greenacres, tax services vending machines Greenacres Florida, vending machine accounting Greenacres, tax preparation vending business Greenacres",
+  keywords: "vending machine taxes Greenacres Florida, vending business bookkeeping Greenacres, tax services vending machines Greenacres FLORIDA, vending machine accounting Greenacres, tax preparation vending business Greenacres",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/greenacres-florida"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

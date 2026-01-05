@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Redding, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Redding, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Redding California, vending business bookkeeping Redding, tax services vending machines Redding California, vending machine accounting Redding, tax preparation vending business Redding",
+  keywords: "vending machine taxes Redding California, vending business bookkeeping Redding, tax services vending machines Redding CALIFORNIA, vending machine accounting Redding, tax preparation vending business Redding",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/redding-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Royal Palm Beach, Florida - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Royal Palm Beach, Florida. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Royal Palm Beach Florida, vending business bookkeeping Royal Palm Beach, tax services vending machines Royal Palm Beach Florida, vending machine accounting Royal Palm Beach, tax preparation vending business Royal Palm Beach",
+  keywords: "vending machine taxes Royal Palm Beach Florida, vending business bookkeeping Royal Palm Beach, tax services vending machines Royal Palm Beach FLORIDA, vending machine accounting Royal Palm Beach, tax preparation vending business Royal Palm Beach",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/royal-palm-beach-florida"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

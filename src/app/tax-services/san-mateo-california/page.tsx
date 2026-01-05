@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in San Mateo, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in San Mateo, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes San Mateo California, vending business bookkeeping San Mateo, tax services vending machines San Mateo California, vending machine accounting San Mateo, tax preparation vending business San Mateo",
+  keywords: "vending machine taxes San Mateo California, vending business bookkeeping San Mateo, tax services vending machines San Mateo CALIFORNIA, vending machine accounting San Mateo, tax preparation vending business San Mateo",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/san-mateo-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

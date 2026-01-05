@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Port St. Lucie, Florida - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Port St. Lucie, Florida. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Port St. Lucie Florida, vending business bookkeeping Port St. Lucie, tax services vending machines Port St. Lucie Florida, vending machine accounting Port St. Lucie, tax preparation vending business Port St. Lucie",
+  keywords: "vending machine taxes Port St. Lucie Florida, vending business bookkeeping Port St. Lucie, tax services vending machines Port St. Lucie FLORIDA, vending machine accounting Port St. Lucie, tax preparation vending business Port St. Lucie",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/port-st-lucie-florida"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

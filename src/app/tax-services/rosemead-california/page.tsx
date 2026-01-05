@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Rosemead, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Rosemead, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Rosemead California, vending business bookkeeping Rosemead, tax services vending machines Rosemead California, vending machine accounting Rosemead, tax preparation vending business Rosemead",
+  keywords: "vending machine taxes Rosemead California, vending business bookkeeping Rosemead, tax services vending machines Rosemead CALIFORNIA, vending machine accounting Rosemead, tax preparation vending business Rosemead",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/rosemead-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

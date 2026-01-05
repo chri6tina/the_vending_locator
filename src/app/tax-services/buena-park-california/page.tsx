@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Buena Park, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Buena Park, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Buena Park California, vending business bookkeeping Buena Park, tax services vending machines Buena Park California, vending machine accounting Buena Park, tax preparation vending business Buena Park",
+  keywords: "vending machine taxes Buena Park California, vending business bookkeeping Buena Park, tax services vending machines Buena Park CALIFORNIA, vending machine accounting Buena Park, tax preparation vending business Buena Park",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/buena-park-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

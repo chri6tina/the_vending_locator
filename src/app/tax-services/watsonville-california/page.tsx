@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Watsonville, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Watsonville, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Watsonville California, vending business bookkeeping Watsonville, tax services vending machines Watsonville California, vending machine accounting Watsonville, tax preparation vending business Watsonville",
+  keywords: "vending machine taxes Watsonville California, vending business bookkeeping Watsonville, tax services vending machines Watsonville CALIFORNIA, vending machine accounting Watsonville, tax preparation vending business Watsonville",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/watsonville-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

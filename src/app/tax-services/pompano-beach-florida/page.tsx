@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Pompano Beach, Florida - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Pompano Beach, Florida. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Pompano Beach Florida, vending business bookkeeping Pompano Beach, tax services vending machines Pompano Beach Florida, vending machine accounting Pompano Beach, tax preparation vending business Pompano Beach",
+  keywords: "vending machine taxes Pompano Beach Florida, vending business bookkeeping Pompano Beach, tax services vending machines Pompano Beach FLORIDA, vending machine accounting Pompano Beach, tax preparation vending business Pompano Beach",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/pompano-beach-florida"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

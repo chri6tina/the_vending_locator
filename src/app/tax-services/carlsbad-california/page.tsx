@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Carlsbad, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Carlsbad, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Carlsbad California, vending business bookkeeping Carlsbad, tax services vending machines Carlsbad California, vending machine accounting Carlsbad, tax preparation vending business Carlsbad",
+  keywords: "vending machine taxes Carlsbad California, vending business bookkeeping Carlsbad, tax services vending machines Carlsbad CALIFORNIA, vending machine accounting Carlsbad, tax preparation vending business Carlsbad",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/carlsbad-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Bakersfield, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Bakersfield, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Bakersfield California, vending business bookkeeping Bakersfield, tax services vending machines Bakersfield California, vending machine accounting Bakersfield, tax preparation vending business Bakersfield",
+  keywords: "vending machine taxes Bakersfield California, vending business bookkeeping Bakersfield, tax services vending machines Bakersfield CALIFORNIA, vending machine accounting Bakersfield, tax preparation vending business Bakersfield",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/bakersfield-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

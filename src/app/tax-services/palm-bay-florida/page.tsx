@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Palm Bay, Florida - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Palm Bay, Florida. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Palm Bay Florida, vending business bookkeeping Palm Bay, tax services vending machines Palm Bay Florida, vending machine accounting Palm Bay, tax preparation vending business Palm Bay",
+  keywords: "vending machine taxes Palm Bay Florida, vending business bookkeeping Palm Bay, tax services vending machines Palm Bay FLORIDA, vending machine accounting Palm Bay, tax preparation vending business Palm Bay",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/palm-bay-florida"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

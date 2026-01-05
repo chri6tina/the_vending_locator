@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Camarillo, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Camarillo, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Camarillo California, vending business bookkeeping Camarillo, tax services vending machines Camarillo California, vending machine accounting Camarillo, tax preparation vending business Camarillo",
+  keywords: "vending machine taxes Camarillo California, vending business bookkeeping Camarillo, tax services vending machines Camarillo CALIFORNIA, vending machine accounting Camarillo, tax preparation vending business Camarillo",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/camarillo-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

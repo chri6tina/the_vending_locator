@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Chico, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Chico, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Chico California, vending business bookkeeping Chico, tax services vending machines Chico California, vending machine accounting Chico, tax preparation vending business Chico",
+  keywords: "vending machine taxes Chico California, vending business bookkeeping Chico, tax services vending machines Chico CALIFORNIA, vending machine accounting Chico, tax preparation vending business Chico",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/chico-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

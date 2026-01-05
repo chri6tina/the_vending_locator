@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Thousand Oaks, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Thousand Oaks, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Thousand Oaks California, vending business bookkeeping Thousand Oaks, tax services vending machines Thousand Oaks California, vending machine accounting Thousand Oaks, tax preparation vending business Thousand Oaks",
+  keywords: "vending machine taxes Thousand Oaks California, vending business bookkeeping Thousand Oaks, tax services vending machines Thousand Oaks CALIFORNIA, vending machine accounting Thousand Oaks, tax preparation vending business Thousand Oaks",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/thousand-oaks-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

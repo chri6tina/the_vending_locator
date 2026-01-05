@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Poway, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Poway, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Poway California, vending business bookkeeping Poway, tax services vending machines Poway California, vending machine accounting Poway, tax preparation vending business Poway",
+  keywords: "vending machine taxes Poway California, vending business bookkeeping Poway, tax services vending machines Poway CALIFORNIA, vending machine accounting Poway, tax preparation vending business Poway",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/poway-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }

@@ -4,7 +4,7 @@ import PageClient from './pageClient'
 export const metadata: Metadata = {
   title: "Tax & Bookkeeping Services for Vending Machine Owners in Yorba Linda, California - The Vending Locator",
   description: "Expert tax preparation and bookkeeping services for vending machine business owners in Yorba Linda, California. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Yorba Linda California, vending business bookkeeping Yorba Linda, tax services vending machines Yorba Linda California, vending machine accounting Yorba Linda, tax preparation vending business Yorba Linda",
+  keywords: "vending machine taxes Yorba Linda California, vending business bookkeeping Yorba Linda, tax services vending machines Yorba Linda CALIFORNIA, vending machine accounting Yorba Linda, tax preparation vending business Yorba Linda",
   alternates: {
     canonical: "https://www.thevendinglocator.com/tax-services/yorba-linda-california"
   },
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      maxVideoPreview: -1,
-      maxImagePreview: 'large',
-      maxSnippet: -1
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
   }
 }
