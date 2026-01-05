@@ -292,30 +292,6 @@ export default function FloridaTaxServicesPage() {
                           </div>
                         </div>
 
-                        {/* Number of Employees Field */}
-                        <div>
-                          <label htmlFor="employees" className="block text-sm font-medium text-charcoal mb-1.5">
-                            Number of Employees *
-                          </label>
-                          <div className="relative">
-                            <UsersIcon className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-stone/50" />
-                            <select
-                              id="employees"
-                              name="employees"
-                              required
-                              className="w-full pl-10 pr-4 py-2.5 border border-stone/30 rounded-lg focus:ring-2 focus:ring-coral focus:border-coral transition-all appearance-none bg-white text-sm"
-                            >
-                              <option value="">Select range...</option>
-                              <option value="1-25">1-25 employees</option>
-                              <option value="26-50">26-50 employees</option>
-                              <option value="51-100">51-100 employees</option>
-                              <option value="101-250">101-250 employees</option>
-                              <option value="251-500">251-500 employees</option>
-                              <option value="500+">500+ employees</option>
-                            </select>
-                          </div>
-                        </div>
-
                         {/* Zip Code Field */}
                         <div>
                           <label htmlFor="zipcode" className="block text-sm font-medium text-charcoal mb-1.5">
