@@ -71,7 +71,7 @@ export default function RootLayout({
         />
         <Script
           id="tidio-chat"
-          src="https://code.tidio.co/is3vwk6saiczz47wysokybcphdjtmlxq.js"
+          src="//code.tidio.co/is3vwk6saiczz47vysokybcphdjtmlxq.js"
           strategy="afterInteractive"
         />
       </body>
