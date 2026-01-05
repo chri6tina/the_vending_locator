@@ -673,7 +673,7 @@ const states: State[] = [
       { name: 'Laurel', slug: 'laurel-delaware' },
       { name: 'Lewes', slug: 'lewes-delaware' },
       { name: 'Milton', slug: 'milton-delaware' },
-      { name: 'Rehoboth Beach', slug: 'rehoboth-beach-delaware' } slug: 'wilmington-delaware' }
+      { name: 'Rehoboth Beach', slug: 'rehoboth-beach-delaware' }
     ]
   },
   {
