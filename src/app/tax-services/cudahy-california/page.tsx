@@ -1,0 +1,41 @@
+import { Metadata } from 'next'
+import PageClient from './pageClient'
+
+export const metadata: Metadata = {
+  title: "Tax & Bookkeeping Services for Vending Machine Owners in Cudahy, California - The Vending Locator",
+  description: "Expert tax preparation and bookkeeping services for vending machine business owners in Cudahy, California. Get professional help with taxes, accounting, and financial management.",
+  keywords: "vending machine taxes Cudahy California, vending business bookkeeping Cudahy, tax services vending machines Cudahy California, vending machine accounting Cudahy, tax preparation vending business Cudahy",
+  alternates: {
+    canonical: "https://www.thevendinglocator.com/tax-services/cudahy-california"
+  },
+  openGraph: {
+    title: "Tax & Bookkeeping Services for Vending Machine Owners in Cudahy, California - The Vending Locator",
+    description: "Expert tax preparation and bookkeeping services for vending machine business owners in Cudahy, California. Get professional help with taxes, accounting, and financial management.",
+    url: "https://www.thevendinglocator.com/tax-services/cudahy-california",
+    siteName: "The Vending Locator",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Tax & Bookkeeping Services for Vending Machine Owners in Cudahy, California - The Vending Locator",
+    description: "Expert tax preparation and bookkeeping services for vending machine business owners in Cudahy, California. Get professional help with taxes, accounting, and financial management."
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
+    }
+  }
+}
+
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
+export default function CityPage() {
+  return <PageClient />
+}

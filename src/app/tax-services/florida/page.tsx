@@ -1,0 +1,41 @@
+import { Metadata } from 'next'
+import PageClient from './pageClient'
+
+export const metadata: Metadata = {
+  title: "Tax & Bookkeeping Services for Vending Machine Owners in Florida - The Vending Locator",
+  description: "Expert tax preparation and bookkeeping services for vending machine business owners throughout Florida. Get professional help with taxes, accounting, and financial management.",
+  keywords: "vending machine taxes Florida, vending business bookkeeping Florida, tax services vending machines Florida, vending machine accounting Florida, tax preparation vending business Florida",
+  alternates: {
+    canonical: "https://www.thevendinglocator.com/tax-services/florida"
+  },
+  openGraph: {
+    title: "Tax & Bookkeeping Services for Vending Machine Owners in Florida - The Vending Locator",
+    description: "Expert tax preparation and bookkeeping services for vending machine business owners throughout Florida. Get professional help with taxes, accounting, and financial management.",
+    url: "https://www.thevendinglocator.com/tax-services/florida",
+    siteName: "The Vending Locator",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Tax & Bookkeeping Services for Vending Machine Owners in Florida - The Vending Locator",
+    description: "Expert tax preparation and bookkeeping services for vending machine business owners throughout Florida. Get professional help with taxes, accounting, and financial management."
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
+    }
+  }
+}
+
+export const revalidate = 3600;
+
+export default function FloridaTaxServicesPage() {
+  return <PageClient />
+}
+
