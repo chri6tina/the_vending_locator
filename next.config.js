@@ -23,8 +23,6 @@ const nextConfig = {
     // Reduce memory by limiting concurrency
     serverMinification: false,
   },
-  // Use standalone output for better memory efficiency
-  output: 'standalone',
   // Optimize static generation to reduce memory usage
   // Use on-demand ISR for city pages to avoid building all at once
   // This reduces memory pressure during build
