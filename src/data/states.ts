@@ -1852,7 +1852,7 @@ const states: State[] = [
       { name: 'Hannibal', slug: 'hannibal-missouri' },
       { name: 'Jefferson City', slug: 'jefferson-city-missouri' },
       { name: 'Kirksville', slug: 'kirksville-missouri' },
-      { name: 'Lee's Summit', slug: 'lees-summit-missouri' },
+      { name: "Lee's Summit", slug: 'lees-summit-missouri' },
       { name: 'Liberty', slug: 'liberty-missouri' },
       { name: 'Maryville', slug: 'maryville-missouri' },
       { name: 'Mexico', slug: 'mexico-missouri' },

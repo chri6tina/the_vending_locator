@@ -8,8 +8,8 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function Jacksonville Beach BeachBeachFloridaTaxServicesPage() {
-  const cityDisplayName = 'Jacksonville Beach Beach Beach';
+export default function JacksonvilleBeachFloridaTaxServicesPage() {
+  const cityDisplayName = 'Jacksonville Beach';
   const stateDisplayName = 'Florida'
   const [formSubmitted, setFormSubmitted] = useState(false)
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -58,44 +58,44 @@ export default function Jacksonville Beach BeachBeachFloridaTaxServicesPage() {
   // FAQ items for JSON-LD
   const faqItems = [
     {
-      q: 'Why do vending machine owners in Jacksonville Beach Beach need specialized tax help?',
-      a: 'Vending machine businesses in Jacksonville Beach Beach have unique tax considerations including equipment depreciation, route expenses, location fees across Polk County, product inventory, multi-location operations, and Florida-specific tax requirements. Specialized tax professionals understand these nuances and can help maximize deductions while ensuring compliance with state and federal regulations.'
+      q: 'Why do vending machine owners in Jacksonville Beach need specialized tax help?',
+      a: 'Vending machine businesses in Jacksonville Beach have unique tax considerations including equipment depreciation, route expenses, location fees across Duval County, product inventory, multi-location operations, and Florida-specific tax requirements. Specialized tax professionals understand these nuances and can help maximize deductions while ensuring compliance with state and federal regulations.'
     },
     {
-      q: 'What tax deductions are available for vending machine businesses in Jacksonville Beach Beach?',
-      a: 'Jacksonville Beach Beach vending businesses can deduct equipment depreciation, vehicle expenses for route operations, product inventory costs, location fees throughout the Jacksonville Beach Beach area, maintenance and repairs, insurance, business licenses, professional fees, home office expenses if applicable, and mileage for servicing machines across the city\'s extensive geographic area.'
+      q: 'What tax deductions are available for vending machine businesses in Jacksonville Beach?',
+      a: 'Jacksonville Beach vending businesses can deduct equipment depreciation, vehicle expenses for route operations, product inventory costs, location fees throughout the Jacksonville Beach area, maintenance and repairs, insurance, business licenses, professional fees, home office expenses if applicable, and mileage for servicing machines across the city\'s extensive geographic area.'
     },
     {
-      q: 'How much do tax and bookkeeping services cost for vending businesses in Jacksonville Beach Beach?',
-      a: 'Costs vary based on the size of your Jacksonville Beach Beach vending business, number of locations, machines operated, and services needed. Most professionals offer free consultations to discuss your needs. Monthly bookkeeping typically ranges from $200-$1,000+ depending on complexity, while tax preparation for vending businesses in Jacksonville Beach Beach generally costs $500-$3,000+ annually.'
+      q: 'How much do tax and bookkeeping services cost for vending businesses in Jacksonville Beach?',
+      a: 'Costs vary based on the size of your Jacksonville Beach vending business, number of locations, machines operated, and services needed. Most professionals offer free consultations to discuss your needs. Monthly bookkeeping typically ranges from $200-$1,000+ depending on complexity, while tax preparation for vending businesses in Jacksonville Beach generally costs $500-$3,000+ annually.'
     },
     {
-      q: 'What bookkeeping services do Jacksonville Beach Beach vending businesses need?',
-      a: 'Jacksonville Beach Beach vending businesses benefit from monthly bookkeeping that tracks revenue by location throughout the city, product costs, route expenses across Polk County, equipment maintenance, location fees, profitability analysis by machine or location, and preparation of financial statements. This helps owners make informed business decisions and simplifies tax preparation.'
+      q: 'What bookkeeping services do Jacksonville Beach vending businesses need?',
+      a: 'Jacksonville Beach vending businesses benefit from monthly bookkeeping that tracks revenue by location throughout the city, product costs, route expenses across Duval County, equipment maintenance, location fees, profitability analysis by machine or location, and preparation of financial statements. This helps owners make informed business decisions and simplifies tax preparation.'
     },
     {
-      q: 'When should Jacksonville Beach Beach vending business owners contact a tax professional?',
-      a: 'It\'s best to connect with a tax professional year-round, not just during tax season. Early engagement allows for tax planning, quarterly estimate optimization, business structure review for Florida requirements, and proactive financial management that can save money throughout the year. Jacksonville Beach Beach tax professionals can help plan for busy seasons and seasonal fluctuations.'
+      q: 'When should Jacksonville Beach vending business owners contact a tax professional?',
+      a: 'It\'s best to connect with a tax professional year-round, not just during tax season. Early engagement allows for tax planning, quarterly estimate optimization, business structure review for Florida requirements, and proactive financial management that can save money throughout the year. Jacksonville Beach tax professionals can help plan for busy seasons and seasonal fluctuations.'
     },
     {
-      q: 'Do Jacksonville Beach Beach tax professionals understand vending machine business operations?',
-      a: 'Yes, qualified tax and bookkeeping professionals specializing in vending businesses understand route operations, cash handling, inventory management, equipment depreciation schedules, location agreements, seasonal revenue patterns, and the unique challenges of operating multiple machines across Jacksonville Beach Beach\'s diverse neighborhoods and business districts.'
+      q: 'Do Jacksonville Beach tax professionals understand vending machine business operations?',
+      a: 'Yes, qualified tax and bookkeeping professionals specializing in vending businesses understand route operations, cash handling, inventory management, equipment depreciation schedules, location agreements, seasonal revenue patterns, and the unique challenges of operating multiple machines across Jacksonville Beach\'s diverse neighborhoods and business districts.'
     },
     {
-      q: 'What business records should Jacksonville Beach Beach vending owners bring to tax consultations?',
-      a: 'Bring previous tax returns, financial statements, bank statements, expense receipts for route operations and equipment, equipment purchase records, location agreements throughout Jacksonville Beach Beach, vehicle mileage logs, inventory records, and any questions about your business structure or operations. The more information you provide, the better the professional can assist you.'
+      q: 'What business records should Jacksonville Beach vending owners bring to tax consultations?',
+      a: 'Bring previous tax returns, financial statements, bank statements, expense receipts for route operations and equipment, equipment purchase records, location agreements throughout Jacksonville Beach, vehicle mileage logs, inventory records, and any questions about your business structure or operations. The more information you provide, the better the professional can assist you.'
     },
     {
-      q: 'Are there Florida-specific tax considerations for Jacksonville Beach Beach vending businesses?',
-      a: 'Yes, Jacksonville Beach Beach vending businesses must consider Florida sales tax on vending machine sales, no state income tax (but federal tax still applies), business tax receipts required in Polk County, and potential property tax on equipment. A qualified tax professional can ensure compliance with all Florida and Jacksonville Beach Beach-specific tax requirements.'
+      q: 'Are there Florida-specific tax considerations for Jacksonville Beach vending businesses?',
+      a: 'Yes, Jacksonville Beach vending businesses must consider Florida sales tax on vending machine sales, no state income tax (but federal tax still applies), business tax receipts required in Duval County, and potential property tax on equipment. A qualified tax professional can ensure compliance with all Florida and Jacksonville Beach-specific tax requirements.'
     },
     {
-      q: 'How can bookkeeping help Jacksonville Beach Beach vending businesses grow?',
-      a: 'Professional bookkeeping provides accurate financial insights that help Jacksonville Beach Beach vending owners identify most profitable locations, optimize route efficiency, manage cash flow during slow seasons, make informed equipment purchase decisions, negotiate better location agreements, and plan for expansion throughout South Florida.'
+      q: 'How can bookkeeping help Jacksonville Beach vending businesses grow?',
+      a: 'Professional bookkeeping provides accurate financial insights that help Jacksonville Beach vending owners identify most profitable locations, optimize route efficiency, manage cash flow during slow seasons, make informed equipment purchase decisions, negotiate better location agreements, and plan for expansion throughout Northeast Florida.'
     },
     {
-      q: 'What\'s the typical turnaround time for tax preparation for Jacksonville Beach Beach vending businesses?',
-      a: 'Turnaround time varies by complexity, but most tax professionals can complete returns for Jacksonville Beach Beach vending businesses within 2-4 weeks after receiving all necessary documents. Starting early in tax season and maintaining organized records throughout the year helps expedite the process and allows time for tax planning strategies.'
+      q: 'What\'s the typical turnaround time for tax preparation for Jacksonville Beach vending businesses?',
+      a: 'Turnaround time varies by complexity, but most tax professionals can complete returns for Jacksonville Beach vending businesses within 2-4 weeks after receiving all necessary documents. Starting early in tax season and maintaining organized records throughout the year helps expedite the process and allows time for tax planning strategies.'
     }
   ]
 
@@ -149,7 +149,7 @@ export default function Jacksonville Beach BeachBeachFloridaTaxServicesPage() {
                     transition={{ duration: 0.8, delay: 0.2 }}
                     className="text-xl text-stone mb-8 leading-relaxed"
                   >
-                    Expert tax preparation and bookkeeping services designed specifically for vending machine business owners in Jacksonville Beach Beach. Get professional help with taxes, accounting, and financial management from professionals who understand your business.
+                    Expert tax preparation and bookkeeping services designed specifically for vending machine business owners in Jacksonville Beach. Get professional help with taxes, accounting, and financial management from professionals who understand your business.
                   </motion.p>
 
                   {/* Trust Signals */}
@@ -180,7 +180,7 @@ export default function Jacksonville Beach BeachBeachFloridaTaxServicesPage() {
                     <div className="bg-warm-white rounded-lg p-4 border border-gray-200">
                       <div className="flex items-center gap-3">
                         <MapPinIcon className="h-5 w-5 text-coral" />
-                        <span className="text-sm font-medium text-chocolate">Jacksonville Beach Beach Experts</span>
+                        <span className="text-sm font-medium text-chocolate">Jacksonville Beach Experts</span>
                       </div>
                     </div>
                   </motion.div>
@@ -206,7 +206,7 @@ export default function Jacksonville Beach BeachBeachFloridaTaxServicesPage() {
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircleIcon className="h-6 w-6 text-coral flex-shrink-0 mt-0.5" />
-                      <span className="text-charcoal/80">Florida and Jacksonville Beach Beach-specific tax expertise</span>
+                      <span className="text-charcoal/80">Florida and Jacksonville Beach-specific tax expertise</span>
                     </li>
                   </motion.ul>
                 </div>
@@ -369,7 +369,7 @@ export default function Jacksonville Beach BeachBeachFloridaTaxServicesPage() {
                 className="text-center mb-12"
               >
                 <h2 className="text-3xl font-playfair font-bold text-chocolate mb-4">
-                  How We Help Jacksonville Beach Beach Vending Business Owners Find Tax & Bookkeeping Professionals
+                  How We Help Jacksonville Beach Vending Business Owners Find Tax & Bookkeeping Professionals
                 </h2>
                 <p className="text-lg text-chocolate/70 max-w-3xl mx-auto">
                   Our proven process connects you with qualified, professional tax and bookkeeping experts who understand vending machine businesses
@@ -391,7 +391,7 @@ export default function Jacksonville Beach BeachBeachFloridaTaxServicesPage() {
                     </div>
                     <h3 className="text-lg font-semibold text-navy mb-3">Submit Your Info</h3>
                     <p className="text-charcoal/80 text-sm">
-                      Tell us about your Jacksonville Beach Beach vending business, number of locations, and tax/bookkeeping needs.
+                      Tell us about your Jacksonville Beach vending business, number of locations, and tax/bookkeeping needs.
                     </p>
                   </div>
                   <div className="hidden md:block absolute top-8 left-full w-full h-0.5 bg-coral/30 -translate-x-1/2" style={{ width: 'calc(100% - 4rem)' }}></div>
@@ -411,7 +411,7 @@ export default function Jacksonville Beach BeachBeachFloridaTaxServicesPage() {
                     </div>
                     <h3 className="text-lg font-semibold text-navy mb-3">We Match You</h3>
                     <p className="text-charcoal/80 text-sm">
-                      We connect you with 2-3 pre-screened tax and bookkeeping professionals who serve Jacksonville Beach Beach and understand vending businesses.
+                      We connect you with 2-3 pre-screened tax and bookkeeping professionals who serve Jacksonville Beach and understand vending businesses.
                     </p>
                   </div>
                   <div className="hidden md:block absolute top-8 left-full w-full h-0.5 bg-coral/30 -translate-x-1/2" style={{ width: 'calc(100% - 4rem)' }}></div>
@@ -499,7 +499,7 @@ export default function Jacksonville Beach BeachBeachFloridaTaxServicesPage() {
                   What to Expect from Tax & Bookkeeping Services in {cityDisplayName}
                 </h2>
                 <p className="text-lg text-chocolate/70 max-w-3xl mx-auto">
-                  Understanding the complete tax and bookkeeping process for Jacksonville Beach Beach vending machine businesses
+                  Understanding the complete tax and bookkeeping process for Jacksonville Beach vending machine businesses
                 </p>
               </motion.div>
 
@@ -519,7 +519,7 @@ export default function Jacksonville Beach BeachBeachFloridaTaxServicesPage() {
                     <div>
                       <h3 className="text-xl font-semibold text-navy mb-2">Comprehensive Tax Preparation</h3>
                       <p className="text-charcoal/80 text-sm leading-relaxed">
-                        Professional tax preparation for your Jacksonville Beach Beach vending business, including federal and Florida state returns, 
+                        Professional tax preparation for your Jacksonville Beach vending business, including federal and Florida state returns, 
                         maximizing all eligible deductions for equipment, vehicles, locations, and operational expenses specific to vending operations.
                       </p>
                     </div>
@@ -541,7 +541,7 @@ export default function Jacksonville Beach BeachBeachFloridaTaxServicesPage() {
                     <div>
                       <h3 className="text-xl font-semibold text-navy mb-2">Monthly Bookkeeping Services</h3>
                       <p className="text-charcoal/80 text-sm leading-relaxed">
-                        Regular financial tracking including revenue by location throughout Jacksonville Beach Beach, expense categorization, 
+                        Regular financial tracking including revenue by location throughout Jacksonville Beach, expense categorization, 
                         profit and loss statements, balance sheets, and cash flow analysis to help you understand your business performance.
                       </p>
                     </div>
@@ -564,7 +564,7 @@ export default function Jacksonville Beach BeachBeachFloridaTaxServicesPage() {
                       <h3 className="text-xl font-semibold text-navy mb-2">Year-Round Tax Planning</h3>
                       <p className="text-charcoal/80 text-sm leading-relaxed">
                         Strategic tax planning throughout the year, quarterly estimate guidance, business structure optimization, 
-                        and proactive strategies to minimize your tax burden while maximizing deductions for your Jacksonville Beach Beach vending operations.
+                        and proactive strategies to minimize your tax burden while maximizing deductions for your Jacksonville Beach vending operations.
                       </p>
                     </div>
                   </div>
@@ -586,7 +586,7 @@ export default function Jacksonville Beach BeachBeachFloridaTaxServicesPage() {
                       <h3 className="text-xl font-semibold text-navy mb-2">Financial Reporting & Analysis</h3>
                       <p className="text-charcoal/80 text-sm leading-relaxed">
                         Detailed financial reports including profitability by location, equipment ROI analysis, expense trends, 
-                        and custom reports tailored to your Jacksonville Beach Beach vending business needs to support informed decision-making.
+                        and custom reports tailored to your Jacksonville Beach vending business needs to support informed decision-making.
                       </p>
                     </div>
                   </div>
@@ -607,7 +607,7 @@ export default function Jacksonville Beach BeachBeachFloridaTaxServicesPage() {
                     <div>
                       <h3 className="text-xl font-semibold text-navy mb-2">Compliance & Support</h3>
                       <p className="text-charcoal/80 text-sm leading-relaxed">
-                        Ensure compliance with federal, Florida state, and Polk County tax requirements. Professional support for audits, 
+                        Ensure compliance with federal, Florida state, and Duval County tax requirements. Professional support for audits, 
                         tax notices, and ongoing questions about your vending business tax obligations throughout the year.
                       </p>
                     </div>
@@ -630,7 +630,7 @@ export default function Jacksonville Beach BeachBeachFloridaTaxServicesPage() {
                       <h3 className="text-xl font-semibold text-navy mb-2">Ongoing Consultation</h3>
                       <p className="text-charcoal/80 text-sm leading-relaxed">
                         Access to tax and financial professionals for questions, guidance on business decisions, 
-                        advice on equipment purchases, expansion planning, and strategic financial management for your Jacksonville Beach Beach vending operations.
+                        advice on equipment purchases, expansion planning, and strategic financial management for your Jacksonville Beach vending operations.
                       </p>
                     </div>
                   </div>
@@ -651,7 +651,7 @@ export default function Jacksonville Beach BeachBeachFloridaTaxServicesPage() {
                 transition={{ duration: 0.8 }}
                 className="text-3xl font-playfair font-bold text-chocolate mb-12 text-center"
               >
-                Why Jacksonville Beach Beach Vending Business Owners Choose Our Tax & Bookkeeping Partners
+                Why Jacksonville Beach Vending Business Owners Choose Our Tax & Bookkeeping Partners
               </motion.h2>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -681,9 +681,9 @@ export default function Jacksonville Beach BeachBeachFloridaTaxServicesPage() {
                   <div className="w-16 h-16 bg-coral/10 rounded-full flex items-center justify-center mx-auto mb-4">
                     <MapPinIcon className="h-8 w-8 text-coral" />
                   </div>
-                  <h3 className="text-xl font-semibold text-navy mb-3">Jacksonville Beach Beach Knowledge</h3>
+                  <h3 className="text-xl font-semibold text-navy mb-3">Jacksonville Beach Knowledge</h3>
                   <p className="text-charcoal/80">
-                    Local professionals familiar with Jacksonville Beach Beach and Florida tax requirements, business regulations, and economic landscape.
+                    Local professionals familiar with Jacksonville Beach and Florida tax requirements, business regulations, and economic landscape.
                   </p>
                 </motion.div>
 
@@ -752,7 +752,7 @@ export default function Jacksonville Beach BeachBeachFloridaTaxServicesPage() {
                 Ready to Get Your Taxes in Order?
               </h2>
               <p className="text-xl text-white/90 mb-8">
-                Join Jacksonville Beach Beach vending business owners who trust professional tax and bookkeeping services.
+                Join Jacksonville Beach vending business owners who trust professional tax and bookkeeping services.
               </p>
               <a
                 href="#hero-form"
@@ -831,7 +831,7 @@ export default function Jacksonville Beach BeachBeachFloridaTaxServicesPage() {
               { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.thevendinglocator.com/' },
               { '@type': 'ListItem', position: 2, name: 'Tax Services', item: 'https://www.thevendinglocator.com/tax-services' },
               { '@type': 'ListItem', position: 3, name: 'Florida', item: 'https://www.thevendinglocator.com/tax-services/florida' },
-              { '@type': 'ListItem', position: 4, name: 'Jacksonville Beach Beach', item: 'https://www.thevendinglocator.com/tax-services/jacksonville beach-beach-florida' }
+              { '@type': 'ListItem', position: 4, name: 'Jacksonville Beach', item: 'https://www.thevendinglocator.com/tax-services/jacksonville-beach-florida' }
             ]
           })
         }}
