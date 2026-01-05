@@ -21,7 +21,7 @@ const states: State[] = [
       { name: 'Prattville', slug: 'prattville-alabama' },
       { name: 'Opelika', slug: 'opelika-alabama' },
       { name: 'Bessemer', slug: 'bessemer-alabama' },
-      { name: 'Prichard',,
+      { name: 'Prichard', slug: 'prichard-alabama' },
       { name: 'Athens', slug: 'athens-alabama' },
       { name: 'Cullman', slug: 'cullman-alabama' },
       { name: 'Enterprise', slug: 'enterprise-alabama' },
@@ -34,7 +34,7 @@ const states: State[] = [
       { name: 'Sheffield', slug: 'sheffield-alabama' },
       { name: 'Sylacauga', slug: 'sylacauga-alabama' },
       { name: 'Talladega', slug: 'talladega-alabama' },
-      { name: 'Troy', slug: 'troy-alabama' } slug: 'prichard-alabama' }]
+      { name: 'Troy', slug: 'troy-alabama' }]
   },
   {
     name: 'Alaska',
@@ -50,12 +50,12 @@ const states: State[] = [
       { name: 'Kodiak', slug: 'kodiak-alaska' },
       { name: 'Palmer', slug: 'palmer-alaska' },
       { name: 'Homer', slug: 'homer-alaska' },
-      { name: 'Soldotna',,
+      { name: 'Soldotna', slug: 'soldotna-alaska' },
       { name: 'Bethel', slug: 'bethel-alaska' },
       { name: 'Dillingham', slug: 'dillingham-alaska' },
       { name: 'Nome', slug: 'nome-alaska' },
       { name: 'Unalaska', slug: 'unalaska-alaska' },
-      { name: 'Valdez', slug: 'valdez-alaska' } slug: 'soldotna-alaska' }
+      { name: 'Valdez', slug: 'valdez-alaska' }
     ]
   },
   {
@@ -87,13 +87,13 @@ const states: State[] = [
       { name: 'Bullhead City', slug: 'bullhead-city-arizona' },
       { name: 'Lake Havasu City', slug: 'lake-havasu-city-arizona' },
       { name: 'Nogales', slug: 'nogales-arizona' },
-      { name: 'Sahuarita',,
+      { name: 'Sahuarita', slug: 'sahuarita-arizona' },
       { name: 'Douglas', slug: 'douglas-arizona' },
       { name: 'Kingman', slug: 'kingman-arizona' },
       { name: 'Page', slug: 'page-arizona' },
       { name: 'Sedona', slug: 'sedona-arizona' },
       { name: 'Show Low', slug: 'show-low-arizona' },
-      { name: 'Winslow', slug: 'winslow-arizona' } slug: 'sahuarita-arizona' }]
+      { name: 'Winslow', slug: 'winslow-arizona' }]
   },
   {
     name: 'Arkansas',

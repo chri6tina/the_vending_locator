@@ -97,7 +97,7 @@ export default function Fort LauderdaleFloridaTaxServicesPage() {
       q: "What's the typical turnaround time for tax preparation for Fort Lauderdale vending businesses?",
       a: "Turnaround time varies by complexity, but most tax professionals can complete returns for Fort Lauderdale vending businesses within 2-4 weeks after receiving all necessary documents. Starting early in tax season and maintaining organized records throughout the year helps expedite the process and allows time for tax planning strategies specific to Florida requirements."
     }
-  ]
+  ]use client'
 
 import { useState } from 'react'
 import Link from 'next/link'
