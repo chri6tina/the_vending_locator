@@ -8,7 +8,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function North MiamiFloridaTaxServicesPage() {
+export default function NorthMiamiFloridaTaxServicesPage() {
   const cityDisplayName = 'North Miami';
   const stateDisplayName = 'Florida'
   const [formSubmitted, setFormSubmitted] = useState(false)

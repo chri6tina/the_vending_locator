@@ -8,7 +8,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function Grand PrairieTexasTaxServicesPage() {
+export default function GrandPrairieTexasTaxServicesPage() {
   const cityDisplayName = 'Grand Prairie';
   const stateDisplayName = 'Texas'
   const [formSubmitted, setFormSubmitted] = useState(false)

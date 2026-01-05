@@ -8,7 +8,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function Hawaiian GardensCaliforniaTaxServicesPage() {
+export default function HawaiianGardensCaliforniaTaxServicesPage() {
   const cityDisplayName = 'Hawaiian Gardens';
   const stateDisplayName = 'California'
   const [formSubmitted, setFormSubmitted] = useState(false)

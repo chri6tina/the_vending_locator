@@ -8,7 +8,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function Yuba CityCaliforniaTaxServicesPage() {
+export default function YubaCityCaliforniaTaxServicesPage() {
   const cityDisplayName = 'Yuba City';
   const stateDisplayName = 'California'
   const [formSubmitted, setFormSubmitted] = useState(false)

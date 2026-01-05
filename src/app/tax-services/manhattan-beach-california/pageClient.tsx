@@ -8,7 +8,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function Manhattan BeachCaliforniaTaxServicesPage() {
+export default function ManhattanBeachCaliforniaTaxServicesPage() {
   const cityDisplayName = 'Manhattan Beach';
   const stateDisplayName = 'California'
   const [formSubmitted, setFormSubmitted] = useState(false)

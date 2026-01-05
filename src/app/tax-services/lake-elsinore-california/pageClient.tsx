@@ -8,7 +8,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function Lake ElsinoreCaliforniaTaxServicesPage() {
+export default function LakeElsinoreCaliforniaTaxServicesPage() {
   const cityDisplayName = 'Lake Elsinore';
   const stateDisplayName = 'California'
   const [formSubmitted, setFormSubmitted] = useState(false)

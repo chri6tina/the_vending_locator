@@ -8,7 +8,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function Jurupa ValleyCaliforniaTaxServicesPage() {
+export default function JurupaValleyCaliforniaTaxServicesPage() {
   const cityDisplayName = 'Jurupa Valley';
   const stateDisplayName = 'California'
   const [formSubmitted, setFormSubmitted] = useState(false)

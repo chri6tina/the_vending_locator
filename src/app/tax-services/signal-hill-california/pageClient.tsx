@@ -8,7 +8,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function Signal HillCaliforniaTaxServicesPage() {
+export default function SignalHillCaliforniaTaxServicesPage() {
   const cityDisplayName = 'Signal Hill';
   const stateDisplayName = 'California'
   const [formSubmitted, setFormSubmitted] = useState(false)

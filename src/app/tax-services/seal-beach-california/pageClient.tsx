@@ -8,7 +8,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function Seal BeachCaliforniaTaxServicesPage() {
+export default function SealBeachCaliforniaTaxServicesPage() {
   const cityDisplayName = 'Seal Beach';
   const stateDisplayName = 'California'
   const [formSubmitted, setFormSubmitted] = useState(false)

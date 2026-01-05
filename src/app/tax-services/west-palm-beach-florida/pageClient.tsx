@@ -8,7 +8,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function West Palm BeachFloridaTaxServicesPage() {
+export default function WestPalmBeachFloridaTaxServicesPage() {
   const cityDisplayName = 'West Palm Beach';
   const stateDisplayName = 'Florida'
   const [formSubmitted, setFormSubmitted] = useState(false)

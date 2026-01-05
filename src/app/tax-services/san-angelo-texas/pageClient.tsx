@@ -8,7 +8,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function San AngeloTexasTaxServicesPage() {
+export default function SanAngeloTexasTaxServicesPage() {
   const cityDisplayName = 'San Angelo';
   const stateDisplayName = 'Texas'
   const [formSubmitted, setFormSubmitted] = useState(false)

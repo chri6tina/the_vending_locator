@@ -8,7 +8,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function Deerfield BeachFloridaTaxServicesPage() {
+export default function DeerfieldBeachFloridaTaxServicesPage() {
   const cityDisplayName = 'Deerfield Beach';
   const stateDisplayName = 'Florida'
   const [formSubmitted, setFormSubmitted] = useState(false)

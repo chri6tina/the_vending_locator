@@ -8,7 +8,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function Rancho Palos VerdesCaliforniaTaxServicesPage() {
+export default function RanchoPalosVerdesCaliforniaTaxServicesPage() {
   const cityDisplayName = 'Rancho Palos Verdes';
   const stateDisplayName = 'California'
   const [formSubmitted, setFormSubmitted] = useState(false)

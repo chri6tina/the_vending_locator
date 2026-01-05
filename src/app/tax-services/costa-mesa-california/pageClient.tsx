@@ -8,7 +8,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function Costa MesaCaliforniaTaxServicesPage() {
+export default function CostaMesaCaliforniaTaxServicesPage() {
   const cityDisplayName = 'Costa Mesa';
   const stateDisplayName = 'California'
   const [formSubmitted, setFormSubmitted] = useState(false)

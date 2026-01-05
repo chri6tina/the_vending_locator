@@ -8,7 +8,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function Fountain ValleyCaliforniaTaxServicesPage() {
+export default function FountainValleyCaliforniaTaxServicesPage() {
   const cityDisplayName = 'Fountain Valley';
   const stateDisplayName = 'California'
   const [formSubmitted, setFormSubmitted] = useState(false)

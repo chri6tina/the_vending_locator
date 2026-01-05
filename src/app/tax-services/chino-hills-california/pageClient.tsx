@@ -8,7 +8,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function Chino HillsCaliforniaTaxServicesPage() {
+export default function ChinoHillsCaliforniaTaxServicesPage() {
   const cityDisplayName = 'Chino Hills';
   const stateDisplayName = 'California'
   const [formSubmitted, setFormSubmitted] = useState(false)

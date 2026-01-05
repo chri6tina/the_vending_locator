@@ -8,7 +8,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function Los GatosCaliforniaTaxServicesPage() {
+export default function LosGatosCaliforniaTaxServicesPage() {
   const cityDisplayName = 'Los Gatos';
   const stateDisplayName = 'California'
   const [formSubmitted, setFormSubmitted] = useState(false)

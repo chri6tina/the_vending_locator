@@ -8,7 +8,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function Laguna HillsCaliforniaTaxServicesPage() {
+export default function LagunaHillsCaliforniaTaxServicesPage() {
   const cityDisplayName = 'Laguna Hills';
   const stateDisplayName = 'California'
   const [formSubmitted, setFormSubmitted] = useState(false)

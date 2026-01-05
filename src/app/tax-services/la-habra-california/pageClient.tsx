@@ -8,7 +8,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function La HabraCaliforniaTaxServicesPage() {
+export default function LaHabraCaliforniaTaxServicesPage() {
   const cityDisplayName = 'La Habra';
   const stateDisplayName = 'California'
   const [formSubmitted, setFormSubmitted] = useState(false)

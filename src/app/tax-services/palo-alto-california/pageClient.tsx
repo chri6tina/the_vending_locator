@@ -8,7 +8,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function Palo AltoCaliforniaTaxServicesPage() {
+export default function PaloAltoCaliforniaTaxServicesPage() {
   const cityDisplayName = 'Palo Alto';
   const stateDisplayName = 'California'
   const [formSubmitted, setFormSubmitted] = useState(false)

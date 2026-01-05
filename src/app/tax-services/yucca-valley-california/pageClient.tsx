@@ -8,7 +8,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function Yucca ValleyCaliforniaTaxServicesPage() {
+export default function YuccaValleyCaliforniaTaxServicesPage() {
   const cityDisplayName = 'Yucca Valley';
   const stateDisplayName = 'California'
   const [formSubmitted, setFormSubmitted] = useState(false)

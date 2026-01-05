@@ -8,7 +8,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function Pompano BeachFloridaTaxServicesPage() {
+export default function PompanoBeachFloridaTaxServicesPage() {
   const cityDisplayName = 'Pompano Beach';
   const stateDisplayName = 'Florida'
   const [formSubmitted, setFormSubmitted] = useState(false)

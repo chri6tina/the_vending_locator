@@ -8,7 +8,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function Panama CityFloridaTaxServicesPage() {
+export default function PanamaCityFloridaTaxServicesPage() {
   const cityDisplayName = 'Panama City';
   const stateDisplayName = 'Florida'
   const [formSubmitted, setFormSubmitted] = useState(false)

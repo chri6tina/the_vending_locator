@@ -8,7 +8,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function San BrunoCaliforniaTaxServicesPage() {
+export default function SanBrunoCaliforniaTaxServicesPage() {
   const cityDisplayName = 'San Bruno';
   const stateDisplayName = 'California'
   const [formSubmitted, setFormSubmitted] = useState(false)

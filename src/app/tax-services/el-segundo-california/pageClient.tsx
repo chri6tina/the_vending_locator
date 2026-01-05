@@ -8,7 +8,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function El SegundoCaliforniaTaxServicesPage() {
+export default function ElSegundoCaliforniaTaxServicesPage() {
   const cityDisplayName = 'El Segundo';
   const stateDisplayName = 'California'
   const [formSubmitted, setFormSubmitted] = useState(false)

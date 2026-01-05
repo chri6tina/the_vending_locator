@@ -8,7 +8,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function Pembroke PinesFloridaTaxServicesPage() {
+export default function PembrokePinesFloridaTaxServicesPage() {
   const cityDisplayName = 'Pembroke Pines';
   const stateDisplayName = 'Florida'
   const [formSubmitted, setFormSubmitted] = useState(false)

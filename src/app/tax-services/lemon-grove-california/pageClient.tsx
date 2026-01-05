@@ -8,7 +8,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function Lemon GroveCaliforniaTaxServicesPage() {
+export default function LemonGroveCaliforniaTaxServicesPage() {
   const cityDisplayName = 'Lemon Grove';
   const stateDisplayName = 'California'
   const [formSubmitted, setFormSubmitted] = useState(false)

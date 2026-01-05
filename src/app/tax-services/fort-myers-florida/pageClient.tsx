@@ -8,7 +8,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function Fort MyersFloridaTaxServicesPage() {
+export default function FortMyersFloridaTaxServicesPage() {
   const cityDisplayName = 'Fort Myers';
   const stateDisplayName = 'Florida'
   const [formSubmitted, setFormSubmitted] = useState(false)

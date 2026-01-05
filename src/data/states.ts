@@ -1144,7 +1144,7 @@ const states: State[] = [
       { name: 'Blackfoot', slug: 'blackfoot-idaho' },
       { name: 'Burley', slug: 'burley-idaho' },
       { name: 'Chubbuck', slug: 'chubbuck-idaho' },
-      { name: 'Coeur d'Alene', slug: 'coeur-dalene-idaho' },
+      { name: "Coeur d'Alene", slug: 'coeur-dalene-idaho' },
       { name: 'Eagle', slug: 'eagle-idaho' },
       { name: 'Garden City', slug: 'garden-city-idaho' },
       { name: 'Jerome', slug: 'jerome-idaho' },
