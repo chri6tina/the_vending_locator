@@ -83,6 +83,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   { url: 'https://www.thevendinglocator.com/vending-machines-for-sale-in-round-rock-texas', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.85 },
    { url: 'https://www.thevendinglocator.com/vending-leads', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.9 },
    { url: 'https://www.thevendinglocator.com/tax-services', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.9 },
+   { url: 'https://www.thevendinglocator.com/ein-llc', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.9 },
   
   // Vending Services State Pages
   { url: 'https://www.thevendinglocator.com/vending-services/alabama', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
@@ -839,30 +840,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }).filter(Boolean) as MetadataRoute.Sitemap
   )
 
-  // Filesystem discovery for all vending-leads pages (includes pages not in states.ts)
-  const filesystemCityPages: MetadataRoute.Sitemap = (() => {
-    try {
-      const cities: MetadataRoute.Sitemap = []
-      const entries = fs.readdirSync(leadsDir, { withFileTypes: true })
-      for (const entry of entries) {
-        if (entry.isDirectory()) {
-          const pagePath = path.join(leadsDir, entry.name, 'page.tsx')
-          if (fs.existsSync(pagePath)) {
-            cities.push({
-              url: `https://www.thevendinglocator.com/vending-leads/${entry.name}`,
-              lastModified: new Date(),
-              changeFrequency: 'weekly' as const,
-              priority: 0.8,
-            })
-          }
-        }
-      }
-      return cities
-    } catch (error) {
-      console.error('Error reading filesystem for sitemap:', error)
-      return []
-    }
-  })()
+  // Skip filesystem checks during build to reduce memory usage
+  // Rely on states.ts and generatedCityPages instead
+  // Filesystem checks can be done at runtime if needed
+  const filesystemCityPages: MetadataRoute.Sitemap = []
 
   // Generate haha-coolers city pages dynamically from states
   // Only include URLs where a matching page file actually exists
@@ -885,38 +866,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Filesystem checks can be done at runtime if needed
   const filesystemCoolerCityPages: MetadataRoute.Sitemap = []
 
-  // Generate tax-services city pages dynamically from filesystem
-  // Only include URLs where a matching page file actually exists
-  const taxServicesDir = path.join(process.cwd(), 'src', 'app', 'tax-services')
-  const filesystemTaxServicesCityPages: MetadataRoute.Sitemap = (() => {
-    try {
-      const cities: MetadataRoute.Sitemap = []
-      const entries = fs.readdirSync(taxServicesDir, { withFileTypes: true })
-      for (const entry of entries) {
-        if (entry.isDirectory()) {
-          // Skip state directories (only include city directories)
-          const statesWithTaxServices = ['florida', 'texas', 'california']
-          if (statesWithTaxServices.includes(entry.name)) {
-            // This is a state directory, skip it
-            continue
-          }
-          const pagePath = path.join(taxServicesDir, entry.name, 'page.tsx')
-          if (fs.existsSync(pagePath)) {
-            cities.push({
-              url: `https://www.thevendinglocator.com/tax-services/${entry.name}`,
-              lastModified: new Date(),
-              changeFrequency: 'weekly' as const,
-              priority: 0.8,
-            })
-          }
-        }
-      }
-      return cities
-    } catch (error) {
-      console.error('Error reading tax-services directory for sitemap:', error)
-      return []
-    }
-  })()
+  // Skip filesystem checks during build to reduce memory usage
+  // Tax-services city pages are generated dynamically at runtime
+  // Filesystem checks can be done at runtime if needed
+  const filesystemTaxServicesCityPages: MetadataRoute.Sitemap = []
+
+  // Skip filesystem checks during build to reduce memory usage
+  // EIN/LLC state pages are generated dynamically at runtime
+  // Filesystem checks can be done at runtime if needed
+  const filesystemEinLLCStatePages: MetadataRoute.Sitemap = []
 
   // State pages - All 50 states
   const statePages = [
@@ -1653,6 +1611,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...filesystemCoolerCityPages,
     // Tax-services city pages
     ...filesystemTaxServicesCityPages,
+    // EIN/LLC state pages
+    ...filesystemEinLLCStatePages,
     ...guidePages,
     ...cityGuidePages,
     ...blogPosts,
