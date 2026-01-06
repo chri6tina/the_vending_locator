@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;
 
-export default function New MexicoEinLLCPage() {
+export default function NewMexicoEinLLCPage() {
   return <PageClient />
 }
 

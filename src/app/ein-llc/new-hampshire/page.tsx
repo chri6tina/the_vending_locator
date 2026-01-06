@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;
 
-export default function New HampshireEinLLCPage() {
+export default function NewHampshireEinLLCPage() {
   return <PageClient />
 }
 
