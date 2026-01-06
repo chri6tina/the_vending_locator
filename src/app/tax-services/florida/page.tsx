@@ -30,6 +30,7 @@ export const metadata: Metadata = {
       'max-image-preview': 'large',
       'max-snippet': -1
     }
+  }
 }
 
 // Generate on-demand to reduce build memory usage

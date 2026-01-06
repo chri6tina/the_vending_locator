@@ -20,9 +20,7 @@ export const metadata: Metadata = {
         height: 630,
         alt: "Vending Machine Locations in Utica, New York"
       }
-
-// Generate on-demand to reduce build memory usage
-],
+    ],
     locale: "en_US",
     type: "website"
   },
@@ -42,14 +40,13 @@ export const metadata: Metadata = {
       'max-image-preview': 'large',
       'max-snippet': -1
     }
+  }
 }
 
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;
 
-
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export default function Page() {
   return <PageClient />

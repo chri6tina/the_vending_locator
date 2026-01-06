@@ -39,7 +39,6 @@ export const revalidate = 0;
 
 import PageClient from './pageClient'
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export default function KentWashingtonVendingLeadsPage() {
   return <PageClient />

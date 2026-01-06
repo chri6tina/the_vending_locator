@@ -37,8 +37,6 @@ export const metadata: Metadata = {
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;
 
-
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export default function GlendaleArizonaPage() {
   return <PageClient />
