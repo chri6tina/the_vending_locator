@@ -22,8 +22,6 @@ const nextConfig = {
     cpus: 1,
     // Reduce memory by limiting concurrency
     serverMinification: false,
-    // Disable static optimization for tax-services routes
-    isrMemoryCacheSize: 0,
   },
   // Optimize webpack to reduce memory usage during build
   webpack: (config, { isServer }) => {

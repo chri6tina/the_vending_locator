@@ -1,43 +1,50 @@
 import { Metadata } from 'next'
 import PageClient from './pageClient'
 
-export const metadata: Metadata = {
-  title: "Tax & Bookkeeping Services for Vending Machine Owners in Lake Helen, Florida - The Vending Locator",
-  description: "Expert tax preparation and bookkeeping services for vending machine business owners in Lake Helen, Florida. Get professional help with taxes, accounting, and financial management.",
-  keywords: "vending machine taxes Lake Helen Florida, vending business bookkeeping Lake Helen, tax services vending machines Lake Helen FL, vending machine accounting Lake Helen, tax preparation vending business Lake Helen",
-  alternates: {
-    canonical: "https://www.thevendinglocator.com/tax-services/lake-helen-florida"
-  },
-  openGraph: {
-    title: "Tax & Bookkeeping Services for Vending Machine Owners in Lake Helen, Florida - The Vending Locator",
-    description: "Expert tax preparation and bookkeeping services for vending machine business owners in Lake Helen, Florida. Get professional help with taxes, accounting, and financial management.",
-    url: "https://www.thevendinglocator.com/tax-services/lake-helen-florida",
-    siteName: "The Vending Locator",
-    type: "website"
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Tax & Bookkeeping Services for Vending Machine Owners in Lake Helen, Florida - The Vending Locator",
-    description: "Expert tax preparation and bookkeeping services for vending machine business owners in Lake Helen, Florida. Get professional help with taxes, accounting, and financial management."
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
+// Dynamically generate metadata to prevent build-time processing
+export async function generateMetadata(): Promise<Metadata> {
+  const slug = 'lake-helen-florida';
+  const city = 'Lake Helen';
+  const state = 'Florida';
+  
+  const title = `Tax & Bookkeeping Services for Vending Machine Owners in ${city}, ${state} - The Vending Locator`;
+  const description = `Expert tax preparation and bookkeeping services for vending machine business owners in ${city}, ${state}. Get professional help with taxes, accounting, and financial management.`;
+  
+  return {
+    title,
+    description,
+    keywords: `vending machine taxes ${city} ${state}, vending business bookkeeping ${city}, tax services vending machines ${city} ${state}, vending machine accounting ${city}, tax preparation vending business ${city}`,
+    alternates: {
+      canonical: `https://www.thevendinglocator.com/tax-services/${slug}`
+    },
+    openGraph: {
+      title,
+      description,
+      url: `https://www.thevendinglocator.com/tax-services/${slug}`,
+      siteName: 'The Vending Locator',
+      type: 'website'
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description
+    },
+    robots: {
       index: true,
       follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1
+      }
     }
-    }
-}
+  };
 
-// Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;
 // Skip page data collection during build to prevent memory issues
-export const dynamicParams = false;
 export const fetchCache = 'force-no-store';
 
 
