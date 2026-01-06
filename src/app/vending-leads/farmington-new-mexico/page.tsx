@@ -15,13 +15,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.thevendinglocator.com/vending-leads/farmington-new-mexico'
   }
+
+// Generate on-demand to reduce build memory usage
 }
 
 // Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;
-
 export default function FarmingtonNewMexicoVendingLeadsPage() {
   return <PageClient />
 }

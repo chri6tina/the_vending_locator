@@ -32,11 +32,12 @@ export const metadata: Metadata = {
   },
 }
 
+
+// Generate on-demand to reduce build memory usage
 // Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;
-
 export default function HammondIndianaPage() {
   return <PageClient />
 }

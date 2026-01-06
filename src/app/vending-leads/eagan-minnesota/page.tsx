@@ -20,7 +20,6 @@ export const metadata: Metadata = {
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;
-
 export default function EaganMinnesotaVendingLeadsPage() {
   return <PageClient />;
 }

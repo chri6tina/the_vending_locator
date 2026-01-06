@@ -30,12 +30,17 @@ export const metadata: Metadata = {
       "max-image-preview": "large",
       "max-snippet": -1
     }
-  }
+    }
 }
 
-// Enable ISR - regenerate page every hour
-export const revalidate = 3600;
+// Generate on-demand to reduce build memory usage
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
 
+
+
+// Generate on-demand to reduce build memory usage
+// Enable ISR - regenerate page every hour
 export default function CityPage() {
   return <PageClient />
 }

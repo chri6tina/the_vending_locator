@@ -30,13 +30,15 @@ export const metadata: Metadata = {
       "max-image-preview": "large",
       "max-snippet": -1
     }
-  }
+    }
 }
 
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;
 
+
+// Generate on-demand to reduce build memory usage
 export default function CityPage() {
   return <PageClient />
 }

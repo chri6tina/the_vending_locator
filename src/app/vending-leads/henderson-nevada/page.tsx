@@ -22,14 +22,16 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
     googleBot: { index: true, follow: true, 'max-video-preview': -1, 'max-image-preview': 'large', 'max-snippet': -1 }
-  }
+    }
 }
 
-// Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;
 
+
+// Enable ISR - regenerate page every hour
+// Generate on-demand to reduce build memory usage
 export default function CityPage() {
   return <PageClient />
 }

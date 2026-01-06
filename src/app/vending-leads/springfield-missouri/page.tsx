@@ -29,16 +29,18 @@ export const metadata: Metadata = {
       'max-image-preview': "large",
       'max-snippet': -1
     }
-  }
+    }
 }
+
+// Generate on-demand to reduce build memory usage
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+
 
 import PageClient from './pageClient'
 
 // Enable ISR - regenerate page every hour
 // Generate on-demand to reduce build memory usage
-export const dynamic = 'force-dynamic';
-export const revalidate = 0;
-
 export default function SpringfieldMissouriVendingLeadsPage() {
   return <PageClient />
 }
