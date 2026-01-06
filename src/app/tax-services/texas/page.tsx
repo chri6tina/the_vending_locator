@@ -36,6 +36,9 @@ export const metadata: Metadata = {
 // Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;
+// Skip page data collection during build to prevent memory issues
+export const dynamicParams = false;
+export const fetchCache = 'force-no-store';
 
 
 export default function TexasTaxServicesPage() {

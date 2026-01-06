@@ -22,6 +22,20 @@ const nextConfig = {
     cpus: 1,
     // Reduce memory by limiting concurrency
     serverMinification: false,
+    // Skip page data collection for dynamic routes during build
+    skipTrailingSlashRedirect: true,
+  },
+  // Optimize webpack to reduce memory usage during build
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      // Reduce memory usage for client-side builds
+      config.optimization = {
+        ...config.optimization,
+        moduleIds: 'deterministic',
+        runtimeChunk: 'single',
+      };
+    }
+    return config;
   },
   // Optimize static generation to reduce memory usage
   // Use on-demand ISR for city pages to avoid building all at once
