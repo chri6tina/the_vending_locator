@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/pre-build.js",
     "build": "cross-env NODE_OPTIONS=--max-old-space-size=12288 next build",
+    "postbuild": "node scripts/post-build.js",
     "start": "next start",
     "lint": "next lint"
   },

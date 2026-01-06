@@ -28,6 +28,15 @@ const nextConfig = {
   // This reduces memory pressure during build
   // Ensure proper handling of dynamic routes
   trailingSlash: false,
+  // Exclude large page directories from build analysis to prevent memory issues
+  // These pages are dynamic (force-dynamic) and don't need to be analyzed during build
+  outputFileTracingExcludes: {
+    '*': [
+      'node_modules/@swc/core-linux-x64-gnu/**/*',
+      'node_modules/@swc/core-linux-x64-musl/**/*',
+      'node_modules/@esbuild/linux-x64/**/*',
+    ],
+  },
   // Redirects for SEO preservation and 404 fixes
   async redirects() {
     return [
