@@ -22,6 +22,8 @@ const nextConfig = {
     cpus: 1,
     // Reduce memory by limiting concurrency
     serverMinification: false,
+    // Disable static optimization for tax-services routes
+    isrMemoryCacheSize: 0,
   },
   // Optimize webpack to reduce memory usage during build
   webpack: (config, { isServer }) => {
@@ -35,8 +37,6 @@ const nextConfig = {
     }
     return config;
   },
-  // Use standalone output to reduce memory usage
-  output: 'standalone',
   // Optimize static generation to reduce memory usage
   // Use on-demand ISR for city pages to avoid building all at once
   // This reduces memory pressure during build
