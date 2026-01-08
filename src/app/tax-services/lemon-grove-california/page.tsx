@@ -41,7 +41,9 @@ export async function generateMetadata(): Promise<Metadata> {
       }
     }
   };
+}
 
+// Generate on-demand to reduce build memory usage
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;
 // Skip page data collection during build to prevent memory issues
