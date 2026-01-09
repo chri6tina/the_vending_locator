@@ -6,9 +6,20 @@ import { notFound } from 'next/navigation'
 export const revalidate = 86400 // 24 hours in seconds
 
 // Dynamically generate metadata based on slug
-export async function generateMetadata({ params }: { params: { slug: string[] } }): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<{ slug: string[] }> | { slug: string[] } }): Promise<Metadata> {
+  // Handle Next.js 15 params as Promise or Next.js 14 params as object
+  const resolvedParams = params instanceof Promise ? await params : params
+  
   // For catch-all routes, slug is an array: ['phoenix-arizona'] for URL /vending-machines-for-sale-in-phoenix-arizona
-  const citySlug = params.slug.join('-') // Join segments if multiple
+  // Handle case where slug might be undefined during static generation
+  if (!resolvedParams.slug || !Array.isArray(resolvedParams.slug) || resolvedParams.slug.length === 0) {
+    return {
+      title: 'Vending Machines for Sale - The Vending Locator',
+      description: 'Smart vending machines and AI-powered coolers'
+    }
+  }
+  
+  const citySlug = resolvedParams.slug.join('-') // Join segments if multiple
   const cityParts = citySlug.split('-')
   
   if (cityParts.length < 2) {
@@ -95,16 +106,28 @@ export async function generateMetadata({ params }: { params: { slug: string[] } 
 }
 
 // Generate static params - return empty array to prevent build-time generation
+// Catch-all routes will use ISR on-demand
 export async function generateStaticParams() {
   return []
 }
 
-export default async function VendingMachinesForSalePage({ params }: { params: { slug: string[] } }) {
+export const dynamicParams = true // Allow dynamic generation for non-pre-generated routes
+
+export default async function VendingMachinesForSalePage({ params }: { params: Promise<{ slug: string[] }> | { slug: string[] } }) {
+  // Handle Next.js 15 params as Promise or Next.js 14 params as object
+  const resolvedParams = params instanceof Promise ? await params : params
+  
   // For catch-all routes, slug is an array of path segments
   // URL: /vending-machines-for-sale-in-phoenix-arizona
   // Route: vending-machines-for-sale-in-[...slug]
   // params.slug will be ['phoenix-arizona'] (single element, no slashes in URL)
-  const citySlug = params.slug.join('-') // Join in case there are multiple segments
+  
+  // Handle case where slug might be undefined or empty
+  if (!resolvedParams.slug || !Array.isArray(resolvedParams.slug) || resolvedParams.slug.length === 0) {
+    notFound()
+  }
+  
+  const citySlug = resolvedParams.slug.join('-') // Join in case there are multiple segments
   const dirName = `vending-machines-for-sale-in-${citySlug}`
   
   // Extract city and state for structured data
