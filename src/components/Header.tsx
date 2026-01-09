@@ -2,21 +2,26 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Bars3Icon, XMarkIcon, ChevronDownIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: 'Home', href: '/' },
   { name: 'Vending Leads', href: '/vending-leads' },
-  { name: 'Marketplace', href: '/marketplace' },
-  { name: 'Products', href: '/vending-machine-products' },
   { name: 'Pricing', href: '/pricing' },
   { name: 'Guide', href: '/guide' },
   { name: 'Hot Leads', href: '/hot-leads' },
   { name: 'About', href: '/about-us' },
 ]
 
+const taxServicesMenu = [
+  { name: 'Tax Services', href: '/tax-services' },
+  { name: 'California', href: '/tax-services/california' },
+  { name: 'Florida', href: '/tax-services/florida' },
+  { name: 'Texas', href: '/tax-services/texas' },
+]
+
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [taxServicesOpen, setTaxServicesOpen] = useState(false)
 
   return (
     <header className="bg-white shadow-sm border-b border-gray-200">
@@ -39,7 +44,7 @@ export default function Header() {
             <Bars3Icon className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
-        <div className="hidden lg:flex lg:gap-x-12">
+        <div className="hidden lg:flex lg:gap-x-8">
           {navigation.map((item) => (
             <Link
               key={item.name}
@@ -49,6 +54,37 @@ export default function Header() {
               {item.name}
             </Link>
           ))}
+          {/* Tax Services Dropdown */}
+          <div className="relative">
+            <button
+              type="button"
+              className="text-sm font-semibold leading-6 text-chocolate hover:text-coral transition-colors flex items-center gap-1"
+              onMouseEnter={() => setTaxServicesOpen(true)}
+              onMouseLeave={() => setTaxServicesOpen(false)}
+            >
+              Tax Services
+              <ChevronDownIcon className="h-4 w-4" aria-hidden="true" />
+            </button>
+            {taxServicesOpen && (
+              <div
+                className="absolute left-0 top-full z-10 mt-2 w-48 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5"
+                onMouseEnter={() => setTaxServicesOpen(true)}
+                onMouseLeave={() => setTaxServicesOpen(false)}
+              >
+                <div className="py-1">
+                  {taxServicesMenu.map((item) => (
+                    <Link
+                      key={item.name}
+                      href={item.href}
+                      className="block px-4 py-2 text-sm text-chocolate hover:bg-gray-50 hover:text-coral transition-colors"
+                    >
+                      {item.name}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <div className="flex items-center gap-4">
@@ -96,6 +132,24 @@ export default function Header() {
                       {item.name}
                     </Link>
                   ))}
+                  {/* Tax Services in Mobile Menu */}
+                  <div className="-mx-3">
+                    <div className="px-3 py-2 text-base font-semibold leading-7 text-chocolate">
+                      Tax Services
+                    </div>
+                    <div className="pl-6 space-y-1">
+                      {taxServicesMenu.map((item) => (
+                        <Link
+                          key={item.name}
+                          href={item.href}
+                          className="block rounded-lg px-3 py-2 text-sm leading-7 text-chocolate/80 hover:bg-gray-50"
+                          onClick={() => setMobileMenuOpen(false)}
+                        >
+                          {item.name}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
                 </div>
                 <div className="py-6">
                   <Link

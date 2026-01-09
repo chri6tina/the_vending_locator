@@ -3,10 +3,13 @@ import Link from 'next/link'
 const navigation = {
   main: [
     { name: 'Home', href: '/' },
+    { name: 'Marketplace', href: '/marketplace' },
+    { name: 'Products', href: '/vending-machine-products' },
     { name: 'Services', href: '/services' },
     { name: 'Locations', href: '/vending-locations' },
     { name: 'Vending Leads', href: '/vending-leads' },
     { name: 'Vending Services', href: '/vending-services' },
+    { name: 'Tax Services', href: '/tax-services' },
     { name: 'How It Works', href: '/how-it-works' },
     { name: 'Find Vendors', href: '/vending-companies/austin-texas' },
     { name: 'Pricing', href: '/pricing' },
