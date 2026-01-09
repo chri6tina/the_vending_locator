@@ -99,7 +99,11 @@ export default function BellflowerCaliforniaHowToStartPage() {
   const faqs = [
     {
       q: `What permits do I need to start a vending machine business in ${cityDisplayName}?`,
-      a: `You'll need a California sales tax permit, a ${cityDisplayName} business tax receipt, and if selling food/beverages, a local county health permit for each machine. Also register your LLC with the state.`
+      a: (
+          <>
+            You'll need a <Link href="/tax-services" className="text-coral hover:text-navy underline font-semibold">sales tax permit</Link>, a {cityDisplayName} business tax receipt, and if selling food/beverages, a county health permit for each machine. Also <Link href="/ein-llc" className="text-coral hover:text-navy underline font-semibold">register your LLC</Link> with the state.
+          </>
+        )
     },
     {
       q: 'How much does it cost to start a vending machine business?',
@@ -115,7 +119,11 @@ export default function BellflowerCaliforniaHowToStartPage() {
     },
     {
       q: 'Do I need a special license to operate vending machines?',
-      a: `You need a business tax receipt from ${cityDisplayName}, a California sales tax permit, and health permits if selling food. No special vending-specific license is required beyond standard business registration.`
+      a: (
+          <>
+            You need a business tax receipt from {cityDisplayName}, a <Link href="/tax-services" className="text-coral hover:text-navy underline font-semibold">sales tax permit</Link>, and health permits if selling food. No special vending-specific license is required beyond standard <Link href="/ein-llc" className="text-coral hover:text-navy underline font-semibold">business registration</Link>.
+          </>
+        )
     },
     {
       q: 'Can I run a vending machine business part-time?',
@@ -292,7 +300,7 @@ export default function BellflowerCaliforniaHowToStartPage() {
                         </div>
                         <div className="flex-1">
                           <h3 className="text-xl font-semibold text-navy mb-3">{step.title}</h3>
-                          <p className="text-charcoal/80 leading-relaxed">{step.description}</p>
+                          <div className="text-charcoal/80 leading-relaxed">{step.description}</div>
                         </div>
                       </div>
                     </motion.div>
@@ -561,7 +569,7 @@ export default function BellflowerCaliforniaHowToStartPage() {
                     className="bg-cream p-6 rounded-xl border border-stone/20"
                   >
                     <h3 className="text-lg font-semibold text-navy mb-3">{faq.q}</h3>
-                    <p className="text-charcoal/80 leading-relaxed">{faq.a}</p>
+                    <div className="text-charcoal/80 leading-relaxed">{faq.a}</div>
                   </motion.div>
                 ))}
               </div>

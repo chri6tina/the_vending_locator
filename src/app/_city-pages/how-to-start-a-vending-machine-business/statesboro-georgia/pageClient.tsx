@@ -62,12 +62,20 @@ export default function StatesboroGeorgiaHowToStartPage() {
   const steps = [
     {
       title: '1. Business Setup & Registration',
-      description: `Register your LLC with the ${stateDisplayName} Secretary of State, obtain an EIN from the IRS, and get your sales tax permit. Register for local business licenses in ${cityDisplayName}.`,
+      description: (
+          <>
+            Register your <Link href="/ein-llc" className="text-coral hover:text-navy underline font-semibold">LLC</Link> with the {stateDisplayName} Secretary of State, obtain an <Link href="/ein-llc" className="text-coral hover:text-navy underline font-semibold">EIN</Link> from the IRS, and get your <Link href="/tax-services" className="text-coral hover:text-navy underline font-semibold">sales tax permit</Link>. Register for local business licenses in {cityDisplayName}.
+          </>
+        ),
       icon: BuildingOffice2Icon
     },
     {
       title: '2. Permits & Licensing',
-      description: 'Apply for food vending permits through your local health department if selling food/beverages. Confirm all requirements for your specific locations.',
+        description: (
+          <>
+            Apply for food vending permits through your local health department if selling food/beverages. For <Link href="/tax-services" className="text-coral hover:text-navy underline font-semibold">tax permits and licensing</Link>, confirm all requirements for your specific locations.
+          </>
+        ),
       icon: DocumentTextIcon
     },
     {
@@ -95,7 +103,11 @@ export default function StatesboroGeorgiaHowToStartPage() {
   const faqs = [
     {
       q: `What permits do I need to start a vending machine business in ${cityDisplayName}?`,
-      a: `You'll need a ${stateDisplayName} sales tax permit, local business license, and if selling food/beverages, health permits for each machine. Also register your LLC with the state.`
+      a: (
+          <>
+            You'll need a <Link href="/tax-services" className="text-coral hover:text-navy underline font-semibold">sales tax permit</Link>, a {cityDisplayName} business tax receipt, and if selling food/beverages, a county health permit for each machine. Also <Link href="/ein-llc" className="text-coral hover:text-navy underline font-semibold">register your LLC</Link> with the state.
+          </>
+        )
     },
     {
       q: 'How much does it cost to start a vending machine business?',
@@ -288,7 +300,7 @@ export default function StatesboroGeorgiaHowToStartPage() {
                         </div>
                         <div className="flex-1">
                           <h3 className="text-xl font-semibold text-navy mb-3">{step.title}</h3>
-                          <p className="text-charcoal/80 leading-relaxed">{step.description}</p>
+                          <div className="text-charcoal/80 leading-relaxed">{step.description}</div>
                         </div>
                       </div>
                     </motion.div>
@@ -557,7 +569,7 @@ export default function StatesboroGeorgiaHowToStartPage() {
                     className="bg-cream p-6 rounded-xl border border-stone/20"
                   >
                     <h3 className="text-lg font-semibold text-navy mb-3">{faq.q}</h3>
-                    <p className="text-charcoal/80 leading-relaxed">{faq.a}</p>
+                    <div className="text-charcoal/80 leading-relaxed">{faq.a}</div>
                   </motion.div>
                 ))}
               </div>
