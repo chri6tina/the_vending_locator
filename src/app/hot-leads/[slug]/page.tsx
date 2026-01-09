@@ -10,9 +10,19 @@ interface PageProps {
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  // Handle Next.js 15 params as Promise or Next.js 14 params as object
+  const resolvedParams = params instanceof Promise ? await params : params
+  
+  if (!resolvedParams.slug) {
+    return {
+      title: 'Hot Lead | The Vending Locator',
+      description: 'Premium vending machine location opportunity'
+    }
+  }
+  
   try {
     const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.thevendinglocator.com'
-    const response = await fetch(`${baseUrl}/api/hot-leads/${params.slug}`, {
+    const response = await fetch(`${baseUrl}/api/hot-leads/${resolvedParams.slug}`, {
       next: { revalidate: 0 }
     })
     
@@ -33,10 +43,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         title: `${lead.title} | Hot Vending Lead`,
         description: lead.description,
         type: 'website',
-        url: `https://www.thevendinglocator.com/hot-leads/${params.slug}`,
+        url: `https://www.thevendinglocator.com/hot-leads/${resolvedParams.slug}`,
       },
       alternates: {
-        canonical: `https://www.thevendinglocator.com/hot-leads/${params.slug}`,
+        canonical: `https://www.thevendinglocator.com/hot-leads/${resolvedParams.slug}`,
       },
       robots: {
         index: lead.status === 'available',
@@ -51,7 +61,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 }
 
-export default function HotLeadPage({ params }: PageProps) {
-  return <PageClient slug={params.slug} />
+export default async function HotLeadPage({ params }: PageProps) {
+  // Handle Next.js 15 params as Promise or Next.js 14 params as object
+  const resolvedParams = params instanceof Promise ? await params : params
+  
+  if (!resolvedParams.slug) {
+    return <PageClient slug="" />
+  }
+  
+  return <PageClient slug={resolvedParams.slug} />
 }
 

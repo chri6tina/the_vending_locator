@@ -14,17 +14,27 @@ type Params = { params: { slug: string } }
 
 
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
-  const citySlug = params.slug.replace(/-/g, ' ')
+  // Handle Next.js 15 params as Promise or Next.js 14 params as object
+  const resolvedParams = params instanceof Promise ? await params : params
+  
+  if (!resolvedParams.slug) {
+    return {
+      title: 'How to Start a Vending Machine Business - The Vending Locator',
+      description: 'Learn how to start a vending machine business: licensing, permits, startup costs, and locations.'
+    }
+  }
+  
+  const citySlug = resolvedParams.slug.replace(/-/g, ' ')
   const titleCity = citySlug.split(' ').map(s => s.charAt(0).toUpperCase() + s.slice(1)).join(' ')
   return {
     title: `How to Start a Vending Machine Business in ${titleCity} (2026 Guide)`,
     description: `Learn how to start a vending machine business in ${titleCity}: licensing, permits, startup costs, best locations, contracts, outreach scripts, and FAQs.`,
     keywords: [`vending machine business ${titleCity}`, `how to start vending machines ${titleCity}`, `${titleCity} vending permits`, `${titleCity} vending locations`],
-    alternates: { canonical: `https://www.thevendinglocator.com/how-to-start-a-vending-machine-business/${params.slug}` },
+    alternates: { canonical: `https://www.thevendinglocator.com/how-to-start-a-vending-machine-business/${resolvedParams.slug}` },
     openGraph: {
       title: `How to Start a Vending Machine Business in ${titleCity}`,
       description: `Permits, costs, locations, and contracts to launch in ${titleCity}.`,
-      url: `https://www.thevendinglocator.com/how-to-start-a-vending-machine-business/${params.slug}`,
+      url: `https://www.thevendinglocator.com/how-to-start-a-vending-machine-business/${resolvedParams.slug}`,
       siteName: 'The Vending Locator',
       type: 'article'
     },
@@ -41,8 +51,11 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
 // Pages will be generated on-demand and cached, revalidating every 24 hours
 export const revalidate = 86400 // 24 hours in seconds
 
-export default function GuideCityPage({ params }: Params) {
-  const { slug } = params
+export default async function GuideCityPage({ params }: Params) {
+  // Handle Next.js 15 params as Promise or Next.js 14 params as object
+  const resolvedParams = params instanceof Promise ? await params : params
+  const { slug } = resolvedParams
+  
   if (!slug) return notFound()
 
   const citySlug = slug

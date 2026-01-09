@@ -4,12 +4,22 @@ import { notFound } from 'next/navigation'
 type Params = { params: { slug: string } }
 
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
-  const citySlug = params.slug.replace(/-/g, ' ')
+  // Handle Next.js 15 params as Promise or Next.js 14 params as object
+  const resolvedParams = params instanceof Promise ? await params : params
+  
+  if (!resolvedParams.slug) {
+    return {
+      title: 'Guide - The Vending Locator',
+      description: 'Vending machine location guide information'
+    }
+  }
+  
+  const citySlug = resolvedParams.slug.replace(/-/g, ' ')
   const titleCity = citySlug.split(' ').map(s => s.charAt(0).toUpperCase() + s.slice(1)).join(' ')
   return {
     title: `Guide: ${titleCity} - The Vending Locator`,
     description: `Vending machine location guide information for ${titleCity}. Purchase the full guide to access contracts, scripts, and templates.`,
-    alternates: { canonical: `https://www.thevendinglocator.com/guide/${params.slug}` },
+    alternates: { canonical: `https://www.thevendinglocator.com/guide/${resolvedParams.slug}` },
     robots: { index: true, follow: true }
   }
 }
@@ -17,8 +27,11 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
 // Use ISR for SEO stability
 export const revalidate = 86400 // 24 hours
 
-export default function GuideCityPage({ params }: Params) {
-  const { slug } = params
+export default async function GuideCityPage({ params }: Params) {
+  // Handle Next.js 15 params as Promise or Next.js 14 params as object
+  const resolvedParams = params instanceof Promise ? await params : params
+  const { slug } = resolvedParams
+  
   if (!slug) return notFound()
 
   const citySlug = slug.replace(/-/g, ' ')

@@ -9,8 +9,18 @@ import { getPrioritySlugs } from '@/lib/seo-priority-pages'
 export const revalidate = 86400 // 24 hours in seconds
 
 // Dynamically generate metadata based on slug
-export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
-  const cityInfo = getCityInfo(params.slug)
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> | { slug: string } }): Promise<Metadata> {
+  // Handle Next.js 15 params as Promise or Next.js 14 params as object
+  const resolvedParams = params instanceof Promise ? await params : params
+  
+  if (!resolvedParams.slug) {
+    return {
+      title: 'Tax Services - The Vending Locator',
+      description: 'Tax and bookkeeping services for vending machine businesses'
+    }
+  }
+  
+  const cityInfo = getCityInfo(resolvedParams.slug)
   
   if (!cityInfo) {
     return {
@@ -29,12 +39,12 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     description,
     keywords: `vending machine taxes ${city} ${state}, vending business bookkeeping ${city}, tax services vending machines ${city} ${state}, vending machine accounting ${city}, tax preparation vending business ${city}`,
     alternates: {
-      canonical: `https://www.thevendinglocator.com/tax-services/${slug}`
+      canonical: `https://www.thevendinglocator.com/tax-services/${resolvedParams.slug}`
     },
     openGraph: {
       title,
       description,
-      url: `https://www.thevendinglocator.com/tax-services/${slug}`,
+      url: `https://www.thevendinglocator.com/tax-services/${resolvedParams.slug}`,
       siteName: 'The Vending Locator',
       type: 'website'
     },
@@ -72,8 +82,15 @@ export async function generateStaticParams() {
   return staticParams
 }
 
-export default async function TaxServicesCityPage({ params }: { params: { slug: string } }) {
-  const cityInfo = getCityInfo(params.slug)
+export default async function TaxServicesCityPage({ params }: { params: Promise<{ slug: string }> | { slug: string } }) {
+  // Handle Next.js 15 params as Promise or Next.js 14 params as object
+  const resolvedParams = params instanceof Promise ? await params : params
+  
+  if (!resolvedParams.slug) {
+    notFound()
+  }
+  
+  const cityInfo = getCityInfo(resolvedParams.slug)
   
   if (!cityInfo) {
     notFound()
@@ -135,15 +152,15 @@ export default async function TaxServicesCityPage({ params }: { params: { slug: 
   let PageClient
   try {
     // Try to import the specific pageClient
-    const module = await import(`@/app/_city-pages/tax-services/${params.slug}/pageClient`)
+    const module = await import(`@/app/_city-pages/tax-services/${resolvedParams.slug}/pageClient`)
     PageClient = module.default
     
     if (!PageClient) {
-      throw new Error(`PageClient component not found for ${params.slug}`)
+      throw new Error(`PageClient component not found for ${resolvedParams.slug}`)
     }
   } catch (error) {
     // Enhanced error handling: Log but don't expose error details to users
-    console.error(`[Tax Services] Failed to load pageClient for ${params.slug}:`, error)
+    console.error(`[Tax Services] Failed to load pageClient for ${resolvedParams.slug}:`, error)
     
     // For SEO: Return 404 instead of broken page
     // This ensures search engines don't index broken content
