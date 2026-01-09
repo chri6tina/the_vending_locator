@@ -1,0 +1,2002 @@
+[
+  {
+    "name": "Bethel",
+    "slug": "bethel-alaska"
+  },
+  {
+    "name": "Dillingham",
+    "slug": "dillingham-alaska"
+  },
+  {
+    "name": "Nome",
+    "slug": "nome-alaska"
+  },
+  {
+    "name": "Unalaska",
+    "slug": "unalaska-alaska"
+  },
+  {
+    "name": "Valdez",
+    "slug": "valdez-alaska"
+  },
+  {
+    "name": "Malvern",
+    "slug": "malvern-arkansas"
+  },
+  {
+    "name": "Newport",
+    "slug": "newport-arkansas"
+  },
+  {
+    "name": "Osceola",
+    "slug": "osceola-arkansas"
+  },
+  {
+    "name": "Stuttgart",
+    "slug": "stuttgart-arkansas"
+  },
+  {
+    "name": "Warren",
+    "slug": "warren-arkansas"
+  },
+  {
+    "name": "Artesia",
+    "slug": "artesia-california"
+  },
+  {
+    "name": "Avalon",
+    "slug": "avalon-california"
+  },
+  {
+    "name": "Avenal",
+    "slug": "avenal-california"
+  },
+  {
+    "name": "Big Bear Lake",
+    "slug": "big-bear-lake-california"
+  },
+  {
+    "name": "Blythe",
+    "slug": "blythe-california"
+  },
+  {
+    "name": "Brentwood",
+    "slug": "brentwood-california"
+  },
+  {
+    "name": "Calabasas",
+    "slug": "calabasas-california"
+  },
+  {
+    "name": "Canoga Park",
+    "slug": "canoga-park-california"
+  },
+  {
+    "name": "Carmel-by-the-Sea",
+    "slug": "carmel-by-the-sea-california"
+  },
+  {
+    "name": "Commerce",
+    "slug": "commerce-california"
+  },
+  {
+    "name": "Cotati",
+    "slug": "cotati-california"
+  },
+  {
+    "name": "Crescent City",
+    "slug": "crescent-city-california"
+  },
+  {
+    "name": "Del Mar",
+    "slug": "del-mar-california"
+  },
+  {
+    "name": "Escalon",
+    "slug": "escalon-california"
+  },
+  {
+    "name": "Fairfax",
+    "slug": "fairfax-california"
+  },
+  {
+    "name": "Fallbrook",
+    "slug": "fallbrook-california"
+  },
+  {
+    "name": "Fortuna",
+    "slug": "fortuna-california"
+  },
+  {
+    "name": "Fowler",
+    "slug": "fowler-california"
+  },
+  {
+    "name": "Imperial",
+    "slug": "imperial-california"
+  },
+  {
+    "name": "La Palma",
+    "slug": "la-palma-california"
+  },
+  {
+    "name": "Laguna Woods",
+    "slug": "laguna-woods-california"
+  },
+  {
+    "name": "Los Alamitos",
+    "slug": "los-alamitos-california"
+  },
+  {
+    "name": "Malibu",
+    "slug": "malibu-california"
+  },
+  {
+    "name": "Mammoth Lakes",
+    "slug": "mammoth-lakes-california"
+  },
+  {
+    "name": "Maywood",
+    "slug": "maywood-california"
+  },
+  {
+    "name": "Moraga",
+    "slug": "moraga-california"
+  },
+  {
+    "name": "Pismo Beach",
+    "slug": "pismo-beach-california"
+  },
+  {
+    "name": "Portola",
+    "slug": "portola-california"
+  },
+  {
+    "name": "Rancho Santa Margarita",
+    "slug": "rancho-santa-margarita-california"
+  },
+  {
+    "name": "Rolling Hills",
+    "slug": "rolling-hills-california"
+  },
+  {
+    "name": "Rolling Hills Estates",
+    "slug": "rolling-hills-estates-california"
+  },
+  {
+    "name": "Ross",
+    "slug": "ross-california"
+  },
+  {
+    "name": "San Marino",
+    "slug": "san-marino-california"
+  },
+  {
+    "name": "Santa Fe Springs",
+    "slug": "santa-fe-springs-california"
+  },
+  {
+    "name": "Seaside",
+    "slug": "seaside-california"
+  },
+  {
+    "name": "Shasta Lake",
+    "slug": "shasta-lake-california"
+  },
+  {
+    "name": "Sierra Madre",
+    "slug": "sierra-madre-california"
+  },
+  {
+    "name": "Vernon",
+    "slug": "vernon-california"
+  },
+  {
+    "name": "Villa Park",
+    "slug": "villa-park-california"
+  },
+  {
+    "name": "Westlake Village",
+    "slug": "westlake-village-california"
+  },
+  {
+    "name": "Woodlake",
+    "slug": "woodlake-california"
+  },
+  {
+    "name": "Woodside",
+    "slug": "woodside-california"
+  },
+  {
+    "name": "Yountville",
+    "slug": "yountville-california"
+  },
+  {
+    "name": "Alamosa",
+    "slug": "alamosa-colorado"
+  },
+  {
+    "name": "Brighton",
+    "slug": "brighton-colorado"
+  },
+  {
+    "name": "Canon City",
+    "slug": "canon-city-colorado"
+  },
+  {
+    "name": "Cortez",
+    "slug": "cortez-colorado"
+  },
+  {
+    "name": "Craig",
+    "slug": "craig-colorado"
+  },
+  {
+    "name": "Delta",
+    "slug": "delta-colorado"
+  },
+  {
+    "name": "Estes Park",
+    "slug": "estes-park-colorado"
+  },
+  {
+    "name": "Fort Morgan",
+    "slug": "fort-morgan-colorado"
+  },
+  {
+    "name": "Golden",
+    "slug": "golden-colorado"
+  },
+  {
+    "name": "Gunnison",
+    "slug": "gunnison-colorado"
+  },
+  {
+    "name": "La Junta",
+    "slug": "la-junta-colorado"
+  },
+  {
+    "name": "Lafayette",
+    "slug": "lafayette-colorado"
+  },
+  {
+    "name": "Lamar",
+    "slug": "lamar-colorado"
+  },
+  {
+    "name": "Leadville",
+    "slug": "leadville-colorado"
+  },
+  {
+    "name": "Louisville",
+    "slug": "louisville-colorado"
+  },
+  {
+    "name": "Northglenn",
+    "slug": "northglenn-colorado"
+  },
+  {
+    "name": "Rifle",
+    "slug": "rifle-colorado"
+  },
+  {
+    "name": "Salida",
+    "slug": "salida-colorado"
+  },
+  {
+    "name": "Steamboat Springs",
+    "slug": "steamboat-springs-colorado"
+  },
+  {
+    "name": "Sterling",
+    "slug": "sterling-colorado"
+  },
+  {
+    "name": "Trinidad",
+    "slug": "trinidad-colorado"
+  },
+  {
+    "name": "Vail",
+    "slug": "vail-colorado"
+  },
+  {
+    "name": "Wheat Ridge",
+    "slug": "wheat-ridge-colorado"
+  },
+  {
+    "name": "Ansonia",
+    "slug": "ansonia-connecticut"
+  },
+  {
+    "name": "Berlin",
+    "slug": "berlin-connecticut"
+  },
+  {
+    "name": "Bloomfield",
+    "slug": "bloomfield-connecticut"
+  },
+  {
+    "name": "Branford",
+    "slug": "branford-connecticut"
+  },
+  {
+    "name": "Derby",
+    "slug": "derby-connecticut"
+  },
+  {
+    "name": "East Hartford",
+    "slug": "east-hartford-connecticut"
+  },
+  {
+    "name": "East Haven",
+    "slug": "east-haven-connecticut"
+  },
+  {
+    "name": "Fairfield",
+    "slug": "fairfield-connecticut"
+  },
+  {
+    "name": "Glastonbury",
+    "slug": "glastonbury-connecticut"
+  },
+  {
+    "name": "Groton",
+    "slug": "groton-connecticut"
+  },
+  {
+    "name": "Guilford",
+    "slug": "guilford-connecticut"
+  },
+  {
+    "name": "Naugatuck",
+    "slug": "naugatuck-connecticut"
+  },
+  {
+    "name": "New London",
+    "slug": "new-london-connecticut"
+  },
+  {
+    "name": "New Milford",
+    "slug": "new-milford-connecticut"
+  },
+  {
+    "name": "Newington",
+    "slug": "newington-connecticut"
+  },
+  {
+    "name": "North Haven",
+    "slug": "north-haven-connecticut"
+  },
+  {
+    "name": "Orange",
+    "slug": "orange-connecticut"
+  },
+  {
+    "name": "Plainville",
+    "slug": "plainville-connecticut"
+  },
+  {
+    "name": "Shelton",
+    "slug": "shelton-connecticut"
+  },
+  {
+    "name": "Southington",
+    "slug": "southington-connecticut"
+  },
+  {
+    "name": "Stratford",
+    "slug": "stratford-connecticut"
+  },
+  {
+    "name": "Torrington",
+    "slug": "torrington-connecticut"
+  },
+  {
+    "name": "Trumbull",
+    "slug": "trumbull-connecticut"
+  },
+  {
+    "name": "Vernon",
+    "slug": "vernon-connecticut"
+  },
+  {
+    "name": "Wallingford",
+    "slug": "wallingford-connecticut"
+  },
+  {
+    "name": "West Hartford",
+    "slug": "west-hartford-connecticut"
+  },
+  {
+    "name": "Westport",
+    "slug": "westport-connecticut"
+  },
+  {
+    "name": "Wethersfield",
+    "slug": "wethersfield-connecticut"
+  },
+  {
+    "name": "Willimantic",
+    "slug": "willimantic-connecticut"
+  },
+  {
+    "name": "Windsor",
+    "slug": "windsor-connecticut"
+  },
+  {
+    "name": "Windsor Locks",
+    "slug": "windsor-locks-connecticut"
+  },
+  {
+    "name": "Winsted",
+    "slug": "winsted-connecticut"
+  },
+  {
+    "name": "Harrington",
+    "slug": "harrington-delaware"
+  },
+  {
+    "name": "Laurel",
+    "slug": "laurel-delaware"
+  },
+  {
+    "name": "Lewes",
+    "slug": "lewes-delaware"
+  },
+  {
+    "name": "Milton",
+    "slug": "milton-delaware"
+  },
+  {
+    "name": "Rehoboth Beach",
+    "slug": "rehoboth-beach-delaware"
+  },
+  {
+    "name": "Winter Springs",
+    "slug": "winter-springs"
+  },
+  {
+    "name": "Apalachicola",
+    "slug": "apalachicola-florida"
+  },
+  {
+    "name": "Arcadia",
+    "slug": "arcadia-florida"
+  },
+  {
+    "name": "Atlantic Beach",
+    "slug": "atlantic-beach-florida"
+  },
+  {
+    "name": "Auburndale",
+    "slug": "auburndale-florida"
+  },
+  {
+    "name": "Avon Park",
+    "slug": "avon-park-florida"
+  },
+  {
+    "name": "Bartow",
+    "slug": "bartow-florida"
+  },
+  {
+    "name": "Belle Glade",
+    "slug": "belle-glade-florida"
+  },
+  {
+    "name": "Belleair",
+    "slug": "belleair-florida"
+  },
+  {
+    "name": "Belleview",
+    "slug": "belleview-florida"
+  },
+  {
+    "name": "Bonita Springs",
+    "slug": "bonita-springs-florida"
+  },
+  {
+    "name": "Brooksville",
+    "slug": "brooksville-florida"
+  },
+  {
+    "name": "Bunnell",
+    "slug": "bunnell-florida"
+  },
+  {
+    "name": "Bushnell",
+    "slug": "bushnell-florida"
+  },
+  {
+    "name": "Callaway",
+    "slug": "callaway-florida"
+  },
+  {
+    "name": "Cape Canaveral",
+    "slug": "cape-canaveral-florida"
+  },
+  {
+    "name": "Cedar Key",
+    "slug": "cedar-key-florida"
+  },
+  {
+    "name": "Celebration",
+    "slug": "celebration-florida"
+  },
+  {
+    "name": "Chipley",
+    "slug": "chipley-florida"
+  },
+  {
+    "name": "Clewiston",
+    "slug": "clewiston-florida"
+  },
+  {
+    "name": "Cocoa Beach",
+    "slug": "cocoa-beach-florida"
+  },
+  {
+    "name": "Crystal River",
+    "slug": "crystal-river-florida"
+  },
+  {
+    "name": "Dade City",
+    "slug": "dade-city-florida"
+  },
+  {
+    "name": "Davenport",
+    "slug": "davenport-florida"
+  },
+  {
+    "name": "DeBary",
+    "slug": "debary-florida"
+  },
+  {
+    "name": "DeFuniak Springs",
+    "slug": "defuniak-springs-florida"
+  },
+  {
+    "name": "Destin",
+    "slug": "destin-florida"
+  },
+  {
+    "name": "Eagle Lake",
+    "slug": "eagle-lake-florida"
+  },
+  {
+    "name": "Everglades City",
+    "slug": "everglades-city-florida"
+  },
+  {
+    "name": "Flagler Beach",
+    "slug": "flagler-beach-florida"
+  },
+  {
+    "name": "Florida City",
+    "slug": "florida-city-florida"
+  },
+  {
+    "name": "Fort Meade",
+    "slug": "fort-meade-florida"
+  },
+  {
+    "name": "Fort Myers Beach",
+    "slug": "fort-myers-beach-florida"
+  },
+  {
+    "name": "Frostproof",
+    "slug": "frostproof-florida"
+  },
+  {
+    "name": "Glen Ridge",
+    "slug": "glen-ridge-florida"
+  },
+  {
+    "name": "Graceville",
+    "slug": "graceville-florida"
+  },
+  {
+    "name": "Green Cove Springs",
+    "slug": "green-cove-springs-florida"
+  },
+  {
+    "name": "Gulfport",
+    "slug": "gulfport-florida"
+  },
+  {
+    "name": "Havana",
+    "slug": "havana-florida"
+  },
+  {
+    "name": "High Springs",
+    "slug": "high-springs-florida"
+  },
+  {
+    "name": "Holly Hill",
+    "slug": "holly-hill-florida"
+  },
+  {
+    "name": "Hypoluxo",
+    "slug": "hypoluxo-florida"
+  },
+  {
+    "name": "Indian Harbour Beach",
+    "slug": "indian-harbour-beach-florida"
+  },
+  {
+    "name": "Indian Rocks Beach",
+    "slug": "indian-rocks-beach-florida"
+  },
+  {
+    "name": "Indialantic",
+    "slug": "indialantic-florida"
+  },
+  {
+    "name": "Inverness",
+    "slug": "inverness-florida"
+  },
+  {
+    "name": "Jasper",
+    "slug": "jasper-florida"
+  },
+  {
+    "name": "Jupiter Inlet Colony",
+    "slug": "jupiter-inlet-colony-florida"
+  },
+  {
+    "name": "Key Biscayne",
+    "slug": "key-biscayne-florida"
+  },
+  {
+    "name": "Key Largo",
+    "slug": "key-largo-florida"
+  },
+  {
+    "name": "La Belle",
+    "slug": "la-belle-florida"
+  },
+  {
+    "name": "Lake Alfred",
+    "slug": "lake-alfred-florida"
+  },
+  {
+    "name": "Lake Buena Vista",
+    "slug": "lake-buena-vista-florida"
+  },
+  {
+    "name": "Lake Clarke Shores",
+    "slug": "lake-clarke-shores-florida"
+  },
+  {
+    "name": "Lake Helen",
+    "slug": "lake-helen-florida"
+  },
+  {
+    "name": "Lake Park",
+    "slug": "lake-park-florida"
+  },
+  {
+    "name": "Lake Placid",
+    "slug": "lake-placid-florida"
+  },
+  {
+    "name": "Lake Wales",
+    "slug": "lake-wales-florida"
+  },
+  {
+    "name": "Lantana",
+    "slug": "lantana-florida"
+  },
+  {
+    "name": "Lauderdale Lakes",
+    "slug": "lauderdale-lakes-florida"
+  },
+  {
+    "name": "Lauderdale-by-the-Sea",
+    "slug": "lauderdale-by-the-sea-florida"
+  },
+  {
+    "name": "Longboat Key",
+    "slug": "longboat-key-florida"
+  },
+  {
+    "name": "Marathon",
+    "slug": "marathon-florida"
+  },
+  {
+    "name": "Mary Esther",
+    "slug": "mary-esther-florida"
+  },
+  {
+    "name": "Melbourne Beach",
+    "slug": "melbourne-beach-florida"
+  },
+  {
+    "name": "Mexico Beach",
+    "slug": "mexico-beach-florida"
+  },
+  {
+    "name": "Miami Lakes",
+    "slug": "miami-lakes-florida"
+  },
+  {
+    "name": "Miami Shores",
+    "slug": "miami-shores-florida"
+  },
+  {
+    "name": "Miami Springs",
+    "slug": "miami-springs-florida"
+  },
+  {
+    "name": "Miccosukee",
+    "slug": "miccosukee-florida"
+  },
+  {
+    "name": "Middleburg",
+    "slug": "middleburg-florida"
+  },
+  {
+    "name": "Monticello",
+    "slug": "monticello-florida"
+  },
+  {
+    "name": "Moore Haven",
+    "slug": "moore-haven-florida"
+  },
+  {
+    "name": "Mulberry",
+    "slug": "mulberry-florida"
+  },
+  {
+    "name": "Neptune Beach",
+    "slug": "neptune-beach-florida"
+  },
+  {
+    "name": "North Bay Village",
+    "slug": "north-bay-village-florida"
+  },
+  {
+    "name": "North Lauderdale",
+    "slug": "north-lauderdale-florida"
+  },
+  {
+    "name": "North Miami Beach",
+    "slug": "north-miami-beach-florida"
+  },
+  {
+    "name": "North Palm Beach",
+    "slug": "north-palm-beach-florida"
+  },
+  {
+    "name": "Oak Hill",
+    "slug": "oak-hill-florida"
+  },
+  {
+    "name": "Oakland Park",
+    "slug": "oakland-park-florida"
+  },
+  {
+    "name": "Ocean Ridge",
+    "slug": "ocean-ridge-florida"
+  },
+  {
+    "name": "Okeechobee",
+    "slug": "okeechobee-florida"
+  },
+  {
+    "name": "Oldsmar",
+    "slug": "oldsmar-florida"
+  },
+  {
+    "name": "Opa-locka",
+    "slug": "opa-locka-florida"
+  },
+  {
+    "name": "Orange City",
+    "slug": "orange-city-florida"
+  },
+  {
+    "name": "Pahokee",
+    "slug": "pahokee-florida"
+  },
+  {
+    "name": "Palatka",
+    "slug": "palatka-florida"
+  },
+  {
+    "name": "Palm Beach",
+    "slug": "palm-beach-florida"
+  },
+  {
+    "name": "Palm Shores",
+    "slug": "palm-shores-florida"
+  },
+  {
+    "name": "Palm Springs",
+    "slug": "palm-springs-florida"
+  },
+  {
+    "name": "Palmetto",
+    "slug": "palmetto-florida"
+  },
+  {
+    "name": "Parker",
+    "slug": "parker-florida"
+  },
+  {
+    "name": "Parkland",
+    "slug": "parkland-florida"
+  },
+  {
+    "name": "Perry",
+    "slug": "perry-florida"
+  },
+  {
+    "name": "Pinellas Park",
+    "slug": "pinellas-park-florida"
+  },
+  {
+    "name": "Ponce Inlet",
+    "slug": "ponce-inlet-florida"
+  },
+  {
+    "name": "Port Richey",
+    "slug": "port-richey-florida"
+  },
+  {
+    "name": "Port St. Joe",
+    "slug": "port-st-joe-florida"
+  },
+  {
+    "name": "Quincy",
+    "slug": "quincy-florida"
+  },
+  {
+    "name": "Safety Harbor",
+    "slug": "safety-harbor-florida"
+  },
+  {
+    "name": "San Antonio",
+    "slug": "san-antonio-florida"
+  },
+  {
+    "name": "Sanibel",
+    "slug": "sanibel-florida"
+  },
+  {
+    "name": "Shalimar",
+    "slug": "shalimar-florida"
+  },
+  {
+    "name": "Sopchoppy",
+    "slug": "sopchoppy-florida"
+  },
+  {
+    "name": "South Bay",
+    "slug": "south-bay-florida"
+  },
+  {
+    "name": "South Daytona",
+    "slug": "south-daytona-florida"
+  },
+  {
+    "name": "South Miami",
+    "slug": "south-miami-florida"
+  },
+  {
+    "name": "South Pasadena",
+    "slug": "south-pasadena-florida"
+  },
+  {
+    "name": "Southwest Ranches",
+    "slug": "southwest-ranches-florida"
+  },
+  {
+    "name": "Springfield",
+    "slug": "springfield-florida"
+  },
+  {
+    "name": "St. Augustine Beach",
+    "slug": "st-augustine-beach-florida"
+  },
+  {
+    "name": "St. Pete Beach",
+    "slug": "st-pete-beach-florida"
+  },
+  {
+    "name": "Starke",
+    "slug": "starke-florida"
+  },
+  {
+    "name": "Sunny Isles Beach",
+    "slug": "sunny-isles-beach-florida"
+  },
+  {
+    "name": "Surfside",
+    "slug": "surfside-florida"
+  },
+  {
+    "name": "Sweetwater",
+    "slug": "sweetwater-florida"
+  },
+  {
+    "name": "Tamarac",
+    "slug": "tamarac-florida"
+  },
+  {
+    "name": "Temple Terrace",
+    "slug": "temple-terrace-florida"
+  },
+  {
+    "name": "Tequesta",
+    "slug": "tequesta-florida"
+  },
+  {
+    "name": "Treasure Island",
+    "slug": "treasure-island-florida"
+  },
+  {
+    "name": "Trenton",
+    "slug": "trenton-florida"
+  },
+  {
+    "name": "Umatilla",
+    "slug": "umatilla-florida"
+  },
+  {
+    "name": "Valparaiso",
+    "slug": "valparaiso-florida"
+  },
+  {
+    "name": "Viera",
+    "slug": "viera-florida"
+  },
+  {
+    "name": "Village of Golf",
+    "slug": "village-of-golf-florida"
+  },
+  {
+    "name": "Wauchula",
+    "slug": "wauchula-florida"
+  },
+  {
+    "name": "Wausau",
+    "slug": "wausau-florida"
+  },
+  {
+    "name": "Webster",
+    "slug": "webster-florida"
+  },
+  {
+    "name": "Weeki Wachee",
+    "slug": "weeki-wachee-florida"
+  },
+  {
+    "name": "Welaka",
+    "slug": "welaka-florida"
+  },
+  {
+    "name": "West Melbourne",
+    "slug": "west-melbourne-florida"
+  },
+  {
+    "name": "West Park",
+    "slug": "west-park-florida"
+  },
+  {
+    "name": "Weston",
+    "slug": "weston-florida"
+  },
+  {
+    "name": "Wewahitchka",
+    "slug": "wewahitchka-florida"
+  },
+  {
+    "name": "White Springs",
+    "slug": "white-springs-florida"
+  },
+  {
+    "name": "Wildwood",
+    "slug": "wildwood-florida"
+  },
+  {
+    "name": "Williston",
+    "slug": "williston-florida"
+  },
+  {
+    "name": "Wilmington Island",
+    "slug": "wilmington-island-florida"
+  },
+  {
+    "name": "Yankeetown",
+    "slug": "yankeetown-florida"
+  },
+  {
+    "name": "Waycross",
+    "slug": "waycross"
+  },
+  {
+    "name": "Acworth",
+    "slug": "acworth-georgia"
+  },
+  {
+    "name": "Adel",
+    "slug": "adel-georgia"
+  },
+  {
+    "name": "Austell",
+    "slug": "austell-georgia"
+  },
+  {
+    "name": "Bainbridge",
+    "slug": "bainbridge-georgia"
+  },
+  {
+    "name": "Barnesville",
+    "slug": "barnesville-georgia"
+  },
+  {
+    "name": "Blairsville",
+    "slug": "blairsville-georgia"
+  },
+  {
+    "name": "Blakely",
+    "slug": "blakely-georgia"
+  },
+  {
+    "name": "Buford",
+    "slug": "buford-georgia"
+  },
+  {
+    "name": "Byron",
+    "slug": "byron-georgia"
+  },
+  {
+    "name": "Calhoun",
+    "slug": "calhoun-georgia"
+  },
+  {
+    "name": "Canton",
+    "slug": "canton-georgia"
+  },
+  {
+    "name": "Cartersville",
+    "slug": "cartersville-georgia"
+  },
+  {
+    "name": "Cedartown",
+    "slug": "cedartown-georgia"
+  },
+  {
+    "name": "Centerville",
+    "slug": "centerville-georgia"
+  },
+  {
+    "name": "Chamblee",
+    "slug": "chamblee-georgia"
+  },
+  {
+    "name": "Chatsworth",
+    "slug": "chatsworth-georgia"
+  },
+  {
+    "name": "Clarkesville",
+    "slug": "clarkesville-georgia"
+  },
+  {
+    "name": "Clarksville",
+    "slug": "clarksville-georgia"
+  },
+  {
+    "name": "Cleveland",
+    "slug": "cleveland-georgia"
+  },
+  {
+    "name": "Cochran",
+    "slug": "cochran-georgia"
+  },
+  {
+    "name": "College Park",
+    "slug": "college-park-georgia"
+  },
+  {
+    "name": "Commerce",
+    "slug": "commerce-georgia"
+  },
+  {
+    "name": "Conyers",
+    "slug": "conyers-georgia"
+  },
+  {
+    "name": "Cordele",
+    "slug": "cordele-georgia"
+  },
+  {
+    "name": "Cornelia",
+    "slug": "cornelia-georgia"
+  },
+  {
+    "name": "Covington",
+    "slug": "covington-georgia"
+  },
+  {
+    "name": "Cumming",
+    "slug": "cumming-georgia"
+  },
+  {
+    "name": "Dahlonega",
+    "slug": "dahlonega-georgia"
+  },
+  {
+    "name": "Danielsville",
+    "slug": "danielsville-georgia"
+  },
+  {
+    "name": "Darien",
+    "slug": "darien-georgia"
+  },
+  {
+    "name": "Dawson",
+    "slug": "dawson-georgia"
+  },
+  {
+    "name": "Dawsonville",
+    "slug": "dawsonville-georgia"
+  },
+  {
+    "name": "Duluth",
+    "slug": "duluth-georgia"
+  },
+  {
+    "name": "East Point",
+    "slug": "east-point-georgia"
+  },
+  {
+    "name": "Eatonton",
+    "slug": "eatonton-georgia"
+  },
+  {
+    "name": "Elberton",
+    "slug": "elberton-georgia"
+  },
+  {
+    "name": "Ellijay",
+    "slug": "ellijay-georgia"
+  },
+  {
+    "name": "Evans",
+    "slug": "evans-georgia"
+  },
+  {
+    "name": "Fairburn",
+    "slug": "fairburn-georgia"
+  },
+  {
+    "name": "Fayetteville",
+    "slug": "fayetteville-georgia"
+  },
+  {
+    "name": "Fitzgerald",
+    "slug": "fitzgerald-georgia"
+  },
+  {
+    "name": "Forsyth",
+    "slug": "forsyth-georgia"
+  },
+  {
+    "name": "Fort Oglethorpe",
+    "slug": "fort-oglethorpe-georgia"
+  },
+  {
+    "name": "Fort Valley",
+    "slug": "fort-valley-georgia"
+  },
+  {
+    "name": "Garden City",
+    "slug": "garden-city-georgia"
+  },
+  {
+    "name": "Georgetown",
+    "slug": "georgetown-georgia"
+  },
+  {
+    "name": "Grovetown",
+    "slug": "grovetown-georgia"
+  },
+  {
+    "name": "Hahira",
+    "slug": "hahira-georgia"
+  },
+  {
+    "name": "Hampton",
+    "slug": "hampton-georgia"
+  },
+  {
+    "name": "Hartwell",
+    "slug": "hartwell-georgia"
+  },
+  {
+    "name": "Hawkinsville",
+    "slug": "hawkinsville-georgia"
+  },
+  {
+    "name": "Hazlehurst",
+    "slug": "hazlehurst-georgia"
+  },
+  {
+    "name": "Helen",
+    "slug": "helen-georgia"
+  },
+  {
+    "name": "Hinesville",
+    "slug": "hinesville-georgia"
+  },
+  {
+    "name": "Hogansville",
+    "slug": "hogansville-georgia"
+  },
+  {
+    "name": "Homerville",
+    "slug": "homerville-georgia"
+  },
+  {
+    "name": "Jackson",
+    "slug": "jackson-georgia"
+  },
+  {
+    "name": "Jasper",
+    "slug": "jasper-georgia"
+  },
+  {
+    "name": "Jefferson",
+    "slug": "jefferson-georgia"
+  },
+  {
+    "name": "Jesup",
+    "slug": "jesup-georgia"
+  },
+  {
+    "name": "Jonesboro",
+    "slug": "jonesboro-georgia"
+  },
+  {
+    "name": "Kingsland",
+    "slug": "kingsland-georgia"
+  },
+  {
+    "name": "Lawrenceville",
+    "slug": "lawrenceville-georgia"
+  },
+  {
+    "name": "Lilburn",
+    "slug": "lilburn-georgia"
+  },
+  {
+    "name": "Lithonia",
+    "slug": "lithonia-georgia"
+  },
+  {
+    "name": "Locust Grove",
+    "slug": "locust-grove-georgia"
+  },
+  {
+    "name": "Loganville",
+    "slug": "loganville-georgia"
+  },
+  {
+    "name": "Louisville",
+    "slug": "louisville-georgia"
+  },
+  {
+    "name": "Mableton",
+    "slug": "mableton-georgia"
+  },
+  {
+    "name": "Madison",
+    "slug": "madison-georgia"
+  },
+  {
+    "name": "McDonough",
+    "slug": "mcdonough-georgia"
+  },
+  {
+    "name": "McRae",
+    "slug": "mcrae-georgia"
+  },
+  {
+    "name": "Monroe",
+    "slug": "monroe-georgia"
+  },
+  {
+    "name": "Monticello",
+    "slug": "monticello-georgia"
+  },
+  {
+    "name": "Morrow",
+    "slug": "morrow-georgia"
+  },
+  {
+    "name": "Moultrie",
+    "slug": "moultrie-georgia"
+  },
+  {
+    "name": "Mount Vernon",
+    "slug": "mount-vernon-georgia"
+  },
+  {
+    "name": "Nashville",
+    "slug": "nashville-georgia"
+  },
+  {
+    "name": "Norcross",
+    "slug": "norcross-georgia"
+  },
+  {
+    "name": "Oakwood",
+    "slug": "oakwood-georgia"
+  },
+  {
+    "name": "Ocilla",
+    "slug": "ocilla-georgia"
+  },
+  {
+    "name": "Oglethorpe",
+    "slug": "oglethorpe-georgia"
+  },
+  {
+    "name": "Peachtree City",
+    "slug": "peachtree-city-georgia"
+  },
+  {
+    "name": "Peachtree Corners",
+    "slug": "peachtree-corners-georgia"
+  },
+  {
+    "name": "Perry",
+    "slug": "perry-georgia"
+  },
+  {
+    "name": "Pooler",
+    "slug": "pooler-georgia"
+  },
+  {
+    "name": "Powder Springs",
+    "slug": "powder-springs-georgia"
+  },
+  {
+    "name": "Quitman",
+    "slug": "quitman-georgia"
+  },
+  {
+    "name": "Reidsville",
+    "slug": "reidsville-georgia"
+  },
+  {
+    "name": "Rincon",
+    "slug": "rincon-georgia"
+  },
+  {
+    "name": "Riverdale",
+    "slug": "riverdale-georgia"
+  },
+  {
+    "name": "Rutledge",
+    "slug": "rutledge-georgia"
+  },
+  {
+    "name": "Sandersville",
+    "slug": "sandersville-georgia"
+  },
+  {
+    "name": "Snellville",
+    "slug": "snellville-georgia"
+  },
+  {
+    "name": "Soperton",
+    "slug": "soperton-georgia"
+  },
+  {
+    "name": "Statham",
+    "slug": "statham-georgia"
+  },
+  {
+    "name": "Stockbridge",
+    "slug": "stockbridge-georgia"
+  },
+  {
+    "name": "Stone Mountain",
+    "slug": "stone-mountain-georgia"
+  },
+  {
+    "name": "Suwanee",
+    "slug": "suwanee-georgia"
+  },
+  {
+    "name": "Swainsboro",
+    "slug": "swainsboro-georgia"
+  },
+  {
+    "name": "Sylvania",
+    "slug": "sylvania-georgia"
+  },
+  {
+    "name": "Sylvester",
+    "slug": "sylvester-georgia"
+  },
+  {
+    "name": "Talbotton",
+    "slug": "talbotton-georgia"
+  },
+  {
+    "name": "Thomson",
+    "slug": "thomson-georgia"
+  },
+  {
+    "name": "Tifton",
+    "slug": "tifton-georgia"
+  },
+  {
+    "name": "Toccoa",
+    "slug": "toccoa-georgia"
+  },
+  {
+    "name": "Trenton",
+    "slug": "trenton-georgia"
+  },
+  {
+    "name": "Tucker",
+    "slug": "tucker-georgia"
+  },
+  {
+    "name": "Tunnel Hill",
+    "slug": "tunnel-hill-georgia"
+  },
+  {
+    "name": "Tyrone",
+    "slug": "tyrone-georgia"
+  },
+  {
+    "name": "Union City",
+    "slug": "union-city-georgia"
+  },
+  {
+    "name": "Vidalia",
+    "slug": "vidalia-georgia"
+  },
+  {
+    "name": "Villa Rica",
+    "slug": "villa-rica-georgia"
+  },
+  {
+    "name": "Wadley",
+    "slug": "wadley-georgia"
+  },
+  {
+    "name": "Washington",
+    "slug": "washington-georgia"
+  },
+  {
+    "name": "Watkinsville",
+    "slug": "watkinsville-georgia"
+  },
+  {
+    "name": "Waynesboro",
+    "slug": "waynesboro-georgia"
+  },
+  {
+    "name": "West Point",
+    "slug": "west-point-georgia"
+  },
+  {
+    "name": "Winder",
+    "slug": "winder-georgia"
+  },
+  {
+    "name": "Woodstock",
+    "slug": "woodstock-georgia"
+  },
+  {
+    "name": "Wrightsville",
+    "slug": "wrightsville-georgia"
+  },
+  {
+    "name": "Mililani",
+    "slug": "mililani"
+  },
+  {
+    "name": "Kailua-Kona",
+    "slug": "kailua-kona-hawaii"
+  },
+  {
+    "name": "Kapaa",
+    "slug": "kapaa-hawaii"
+  },
+  {
+    "name": "Lahaina",
+    "slug": "lahaina-hawaii"
+  },
+  {
+    "name": "Wailuku",
+    "slug": "wailuku-hawaii"
+  },
+  {
+    "name": "Twin Falls",
+    "slug": "twin-falls"
+  },
+  {
+    "name": "Blackfoot",
+    "slug": "blackfoot-idaho"
+  },
+  {
+    "name": "Burley",
+    "slug": "burley-idaho"
+  },
+  {
+    "name": "Chubbuck",
+    "slug": "chubbuck-idaho"
+  },
+  {
+    "name": "Eagle",
+    "slug": "eagle-idaho"
+  },
+  {
+    "name": "Garden City",
+    "slug": "garden-city-idaho"
+  },
+  {
+    "name": "Jerome",
+    "slug": "jerome-idaho"
+  },
+  {
+    "name": "Moscow",
+    "slug": "moscow-idaho"
+  },
+  {
+    "name": "Post Falls",
+    "slug": "post-falls-idaho"
+  },
+  {
+    "name": "Sandpoint",
+    "slug": "sandpoint-idaho"
+  },
+  {
+    "name": "Weiser",
+    "slug": "weiser-idaho"
+  },
+  {
+    "name": "Wheeling",
+    "slug": "wheeling"
+  },
+  {
+    "name": "Algonquin",
+    "slug": "algonquin-illinois"
+  },
+  {
+    "name": "Barrington",
+    "slug": "barrington-illinois"
+  },
+  {
+    "name": "Batavia",
+    "slug": "batavia-illinois"
+  },
+  {
+    "name": "Belvidere",
+    "slug": "belvidere-illinois"
+  },
+  {
+    "name": "Burbank",
+    "slug": "burbank-illinois"
+  },
+  {
+    "name": "Chicago Heights",
+    "slug": "chicago-heights-illinois"
+  },
+  {
+    "name": "Dixon",
+    "slug": "dixon-illinois"
+  },
+  {
+    "name": "East Moline",
+    "slug": "east-moline-illinois"
+  },
+  {
+    "name": "Elk Grove Village",
+    "slug": "elk-grove-village-illinois"
+  },
+  {
+    "name": "Glen Ellyn",
+    "slug": "glen-ellyn-illinois"
+  },
+  {
+    "name": "LaGrange",
+    "slug": "lagrange-illinois"
+  },
+  {
+    "name": "Lake Forest",
+    "slug": "lake-forest-illinois"
+  },
+  {
+    "name": "Lansing",
+    "slug": "lansing-illinois"
+  },
+  {
+    "name": "Libertyville",
+    "slug": "libertyville-illinois"
+  },
+  {
+    "name": "Lombard",
+    "slug": "lombard-illinois"
+  },
+  {
+    "name": "Macomb",
+    "slug": "macomb-illinois"
+  },
+  {
+    "name": "Mattoon",
+    "slug": "mattoon-illinois"
+  },
+  {
+    "name": "McHenry",
+    "slug": "mchenry-illinois"
+  },
+  {
+    "name": "Melrose Park",
+    "slug": "melrose-park-illinois"
+  },
+  {
+    "name": "Mokena",
+    "slug": "mokena-illinois"
+  },
+  {
+    "name": "Mundelein",
+    "slug": "mundelein-illinois"
+  },
+  {
+    "name": "Northbrook",
+    "slug": "northbrook-illinois"
+  },
+  {
+    "name": "Oak Forest",
+    "slug": "oak-forest-illinois"
+  },
+  {
+    "name": "Oswego",
+    "slug": "oswego-illinois"
+  },
+  {
+    "name": "Ottawa",
+    "slug": "ottawa-illinois"
+  },
+  {
+    "name": "Plainfield",
+    "slug": "plainfield-illinois"
+  },
+  {
+    "name": "Rock Island",
+    "slug": "rock-island-illinois"
+  },
+  {
+    "name": "Romeoville",
+    "slug": "romeoville-illinois"
+  },
+  {
+    "name": "Roselle",
+    "slug": "roselle-illinois"
+  },
+  {
+    "name": "Round Lake Beach",
+    "slug": "round-lake-beach-illinois"
+  },
+  {
+    "name": "South Elgin",
+    "slug": "south-elgin-illinois"
+  },
+  {
+    "name": "St. Charles",
+    "slug": "st-charles-illinois"
+  },
+  {
+    "name": "Streamwood",
+    "slug": "streamwood-illinois"
+  },
+  {
+    "name": "Sycamore",
+    "slug": "sycamore-illinois"
+  },
+  {
+    "name": "Urbana",
+    "slug": "urbana-illinois"
+  },
+  {
+    "name": "Vernon Hills",
+    "slug": "vernon-hills-illinois"
+  },
+  {
+    "name": "Wilmette",
+    "slug": "wilmette-illinois"
+  },
+  {
+    "name": "Woodridge",
+    "slug": "woodridge-illinois"
+  },
+  {
+    "name": "Woodstock",
+    "slug": "woodstock-illinois"
+  },
+  {
+    "name": "Zion",
+    "slug": "zion-illinois"
+  },
+  {
+    "name": "Lafayette",
+    "slug": "lafayette"
+  },
+  {
+    "name": "Angola",
+    "slug": "angola-indiana"
+  },
+  {
+    "name": "Auburn",
+    "slug": "auburn-indiana"
+  },
+  {
+    "name": "Bedford",
+    "slug": "bedford-indiana"
+  },
+  {
+    "name": "Bluffton",
+    "slug": "bluffton-indiana"
+  },
+  {
+    "name": "Brazil",
+    "slug": "brazil-indiana"
+  },
+  {
+    "name": "Chesterton",
+    "slug": "chesterton-indiana"
+  },
+  {
+    "name": "Clarksville",
+    "slug": "clarksville-indiana"
+  },
+  {
+    "name": "Columbia City",
+    "slug": "columbia-city-indiana"
+  },
+  {
+    "name": "Columbus",
+    "slug": "columbus-indiana"
+  },
+  {
+    "name": "Crawfordsville",
+    "slug": "crawfordsville-indiana"
+  },
+  {
+    "name": "Crown Point",
+    "slug": "crown-point-indiana"
+  },
+  {
+    "name": "East Chicago",
+    "slug": "east-chicago-indiana"
+  },
+  {
+    "name": "Fishers",
+    "slug": "fishers-indiana"
+  },
+  {
+    "name": "Frankfort",
+    "slug": "frankfort-indiana"
+  },
+  {
+    "name": "Franklin",
+    "slug": "franklin-indiana"
+  },
+  {
+    "name": "Goshen",
+    "slug": "goshen-indiana"
+  },
+  {
+    "name": "Greenfield",
+    "slug": "greenfield-indiana"
+  },
+  {
+    "name": "Greenwood",
+    "slug": "greenwood-indiana"
+  },
+  {
+    "name": "Griffith",
+    "slug": "griffith-indiana"
+  },
+  {
+    "name": "Hobart",
+    "slug": "hobart-indiana"
+  },
+  {
+    "name": "Huntington",
+    "slug": "huntington-indiana"
+  },
+  {
+    "name": "Jasper",
+    "slug": "jasper-indiana"
+  },
+  {
+    "name": "Jeffersonville",
+    "slug": "jeffersonville-indiana"
+  },
+  {
+    "name": "La Porte",
+    "slug": "la-porte-indiana"
+  },
+  {
+    "name": "Lawrence",
+    "slug": "lawrence-indiana"
+  },
+  {
+    "name": "Lebanon",
+    "slug": "lebanon-indiana"
+  },
+  {
+    "name": "Logansport",
+    "slug": "logansport-indiana"
+  },
+  {
+    "name": "Madison",
+    "slug": "madison-indiana"
+  },
+  {
+    "name": "Marion",
+    "slug": "marion-indiana"
+  },
+  {
+    "name": "Martinsville",
+    "slug": "martinsville-indiana"
+  },
+  {
+    "name": "Merrillville",
+    "slug": "merrillville-indiana"
+  },
+  {
+    "name": "Michigan City",
+    "slug": "michigan-city-indiana"
+  },
+  {
+    "name": "Mishawaka",
+    "slug": "mishawaka-indiana"
+  },
+  {
+    "name": "Munster",
+    "slug": "munster-indiana"
+  },
+  {
+    "name": "New Albany",
+    "slug": "new-albany-indiana"
+  },
+  {
+    "name": "New Castle",
+    "slug": "new-castle-indiana"
+  },
+  {
+    "name": "Noblesville",
+    "slug": "noblesville-indiana"
+  },
+  {
+    "name": "North Vernon",
+    "slug": "north-vernon-indiana"
+  },
+  {
+    "name": "Peru",
+    "slug": "peru-indiana"
+  },
+  {
+    "name": "Plainfield",
+    "slug": "plainfield-indiana"
+  },
+  {
+    "name": "Portage",
+    "slug": "portage-indiana"
+  },
+  {
+    "name": "Richmond",
+    "slug": "richmond-indiana"
+  },
+  {
+    "name": "Rushville",
+    "slug": "rushville-indiana"
+  },
+  {
+    "name": "Schererville",
+    "slug": "schererville-indiana"
+  },
+  {
+    "name": "Seymour",
+    "slug": "seymour-indiana"
+  },
+  {
+    "name": "Shelbyville",
+    "slug": "shelbyville-indiana"
+  },
+  {
+    "name": "Valparaiso",
+    "slug": "valparaiso-indiana"
+  },
+  {
+    "name": "Vincennes",
+    "slug": "vincennes-indiana"
+  },
+  {
+    "name": "Wabash",
+    "slug": "wabash-indiana"
+  },
+  {
+    "name": "Warsaw",
+    "slug": "warsaw-indiana"
+  },
+  {
+    "name": "Washington",
+    "slug": "washington-indiana"
+  },
+  {
+    "name": "Westfield",
+    "slug": "westfield-indiana"
+  },
+  {
+    "name": "Zionsville",
+    "slug": "zionsville-indiana"
+  },
+  {
+    "name": "West Des Moines",
+    "slug": "west-des-moines"
+  },
+  {
+    "name": "Ankeny",
+    "slug": "ankeny-iowa"
+  },
+  {
+    "name": "Bettendorf",
+    "slug": "bettendorf-iowa"
+  },
+  {
+    "name": "Burlington",
+    "slug": "burlington-iowa"
+  },
+  {
+    "name": "Clinton",
+    "slug": "clinton-iowa"
+  },
+  {
+    "name": "Fort Dodge",
+    "slug": "fort-dodge-iowa"
+  },
+  {
+    "name": "Marion",
+    "slug": "marion-iowa"
+  },
+  {
+    "name": "Mason City",
+    "slug": "mason-city-iowa"
+  },
+  {
+    "name": "Muscatine",
+    "slug": "muscatine-iowa"
+  },
+  {
+    "name": "Newton",
+    "slug": "newton-iowa"
+  },
+  {
+    "name": "Ottumwa",
+    "slug": "ottumwa-iowa"
+  },
+  {
+    "name": "Urbandale",
+    "slug": "urbandale-iowa"
+  },
+  {
+    "name": "Lenexa",
+    "slug": "lenexa"
+  },
+  {
+    "name": "Emporia",
+    "slug": "emporia-kansas"
+  }
+]
