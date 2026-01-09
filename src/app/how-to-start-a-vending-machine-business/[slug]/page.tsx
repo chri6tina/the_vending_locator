@@ -61,6 +61,21 @@ export default async function GuideCityPage({ params }: Params) {
   const citySlug = slug
   const cityTitle = citySlug.split('-').map(s => s.charAt(0).toUpperCase() + s.slice(1)).join(' ')
 
+  // Try to import from _city-pages first (for enhanced pages with service links)
+  let PageClient
+  try {
+    const module = await import(`@/app/_city-pages/how-to-start-a-vending-machine-business/${citySlug}/pageClient`)
+    PageClient = module.default
+    
+    if (PageClient) {
+      // Render the enhanced pageClient component
+      return <PageClient />
+    }
+  } catch (error) {
+    // PageClient not found in _city-pages, fall back to default content
+    // This is expected for cities without enhanced pages
+  }
+
   // Related guides (same state)
   const stateEntry = states.find(st => st.cities.some(c => c.slug === citySlug))
   const stateName = stateEntry ? stateEntry.name : 'Your State'
