@@ -2,6 +2,7 @@ import { MetadataRoute } from 'next'
 import { getAllTaxServicesSlugs } from '@/data/tax-services-cities'
 import { getAllVendingLeadsSlugs } from '@/data/vending-leads-cities'
 import { getAllVendingServicesSlugs } from '@/data/vending-services-cities'
+import states from '@/data/states'
 
 // Use ISR - regenerate sitemap index every 6 hours
 export const revalidate = 21600 // 6 hours in seconds
@@ -76,6 +77,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: 'https://www.thevendinglocator.com/ein-llc', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.9 },
     { url: 'https://www.thevendinglocator.com/vending-locations', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/vending-services', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.9 },
+    { url: 'https://www.thevendinglocator.com/vending-companies', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.9 },
+    { url: 'https://www.thevendinglocator.com/vending-companies/jacksonville-florida', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-companies/orlando-florida', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-services-contact', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
+    { url: 'https://www.thevendinglocator.com/vending-companies-contact', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/guide', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.9 },
     { url: 'https://www.thevendinglocator.com/faq', lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/terms-of-service', lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.6 },
@@ -88,11 +94,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const taxServicesSlugs = getAllTaxServicesSlugs()
   const vendingLeadsSlugs = getAllVendingLeadsSlugs()
   const vendingServicesSlugs = getAllVendingServicesSlugs()
+  
+  // Get all city slugs from states.ts for how-to-start pages
+  const howToStartSlugs = states.flatMap(state => state.cities.map(city => city.slug))
 
   // Generate URLs for each category
   const taxServicesUrls = generateCategoryUrls('tax-services', taxServicesSlugs)
   const vendingLeadsUrls = generateCategoryUrls('vending-leads', vendingLeadsSlugs)
   const vendingServicesUrls = generateCategoryUrls('vending-services', vendingServicesSlugs)
+  const howToStartUrls = generateCategoryUrls('how-to-start-a-vending-machine-business', howToStartSlugs)
 
   // Combine all URLs
   const allUrls = [
@@ -100,7 +110,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...statePages,
     ...taxServicesUrls,
     ...vendingLeadsUrls,
-    ...vendingServicesUrls
+    ...vendingServicesUrls,
+    ...howToStartUrls
   ]
 
   // If total URLs exceed MAX_URLS_PER_SITEMAP, we would need chunked sitemaps
