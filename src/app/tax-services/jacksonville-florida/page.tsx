@@ -14,32 +14,32 @@ export async function generateMetadata(): Promise<Metadata> {
     title,
     description,
     keywords: `vending machine taxes ${city} ${state}, vending business bookkeeping ${city}, tax services vending machines ${city} ${state}, vending machine accounting ${city}, tax preparation vending business ${city}`,
-    alternates: {
+  alternates: {
       canonical: `https://www.thevendinglocator.com/tax-services/${slug}`
-    },
-    openGraph: {
+  },
+  openGraph: {
       title,
       description,
       url: `https://www.thevendinglocator.com/tax-services/${slug}`,
       siteName: 'The Vending Locator',
       type: 'website'
-    },
-    twitter: {
+  },
+  twitter: {
       card: 'summary_large_image',
       title,
       description
-    },
-    robots: {
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
       index: true,
       follow: true,
-      googleBot: {
-        index: true,
-        follow: true,
-        'max-video-preview': -1,
-        'max-image-preview': 'large',
-        'max-snippet': -1
-      }
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
     }
+  }
   };
 }
 

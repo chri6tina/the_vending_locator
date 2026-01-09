@@ -19,7 +19,8 @@ const nextConfig = {
     optimizePackageImports: ['@heroicons/react', 'framer-motion'],
     // Reduce memory usage during static generation
     workerThreads: false,
-    cpus: 4, // Limit to 4 CPUs to reduce peak memory usage
+    // Limit CPU parallelism to 4 cores to prevent memory spikes on 30-core Vercel builders
+    cpus: 4,
     // Reduce memory by limiting concurrency
     serverMinification: false,
   },
