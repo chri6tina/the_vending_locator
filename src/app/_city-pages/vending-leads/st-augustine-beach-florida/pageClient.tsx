@@ -12,7 +12,7 @@ import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function St.AugustineBeachFloridaVendingLeadsPage() {
+export default function StAugustineBeachFloridaVendingLeadsPage() {
   // City and state display names
   const cityDisplayName = 'St. Augustine Beach';
   const stateDisplayName = 'Florida';

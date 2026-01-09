@@ -12,7 +12,7 @@ import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function Carmel-by-the-SeaCaliforniaVendingLeadsPage() {
+export default function CarmelByTheSeaCaliforniaVendingLeadsPage() {
   // City and state display names
   const cityDisplayName = 'Carmel-by-the-Sea';
   const stateDisplayName = 'California';

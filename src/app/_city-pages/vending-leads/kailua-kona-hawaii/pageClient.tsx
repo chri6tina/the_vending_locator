@@ -12,7 +12,7 @@ import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function Kailua-KonaHawaiiVendingLeadsPage() {
+export default function KailuaKonaHawaiiVendingLeadsPage() {
   // City and state display names
   const cityDisplayName = 'Kailua-Kona';
   const stateDisplayName = 'Hawaii';
