@@ -11,6 +11,7 @@ const navigation = {
     { name: 'Find Vendors', href: '/vending-companies/austin-texas' },
     { name: 'Pricing', href: '/pricing' },
     { name: 'Hot Leads', href: '/hot-leads' },
+    { name: 'About Us', href: '/about-us' },
     { name: 'Blog', href: '/blog' },
     { name: 'Contact', href: '/contact' },
     { name: 'Terms of Service', href: '/terms-of-service' },
