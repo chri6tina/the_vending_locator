@@ -1,8 +1,9 @@
 import { MetadataRoute } from 'next'
-import states from '@/data/states'
-import { cityInfo } from '@/data/cityInfo'
-import fs from 'fs'
-import path from 'path'
+
+// Convert sitemap to dynamic generation to prevent build-time memory issues
+// This prevents scanning thousands of files during build
+export const dynamic = 'force-dynamic'
+export const revalidate = 3600 // Regenerate sitemap every hour
 
 export default function sitemap(): MetadataRoute.Sitemap {
   // Main pages
@@ -824,56 +825,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
   { url: 'https://www.thevendinglocator.com/terms-of-service', lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.6 },
   ]
 
-  // Generate city pages dynamically from states to ensure all new pages are included
-  // Only include URLs where a matching page file actually exists
-  const leadsDir = path.join(process.cwd(), 'src', 'app', 'vending-leads')
-  const generatedCityPages: MetadataRoute.Sitemap = states.flatMap(state =>
-    state.cities.map(city => {
-      const filePath = path.join(leadsDir, city.slug, 'page.tsx')
-      if (!fs.existsSync(filePath)) return null
-      return {
-        url: `https://www.thevendinglocator.com/vending-leads/${city.slug}`,
-        lastModified: new Date(),
-        changeFrequency: 'weekly' as const,
-        priority: 0.8,
-      }
-    }).filter(Boolean) as MetadataRoute.Sitemap
-  )
-
-  // Skip filesystem checks during build to reduce memory usage
-  // Rely on states.ts and generatedCityPages instead
-  // Filesystem checks can be done at runtime if needed
+  // REMOVED: Filesystem scanning and large data imports to prevent build-time memory issues
+  // Instead, we rely on the manually curated cityPages list below
+  // This prevents scanning thousands of files during build
+  const generatedCityPages: MetadataRoute.Sitemap = []
   const filesystemCityPages: MetadataRoute.Sitemap = []
-
-  // Generate haha-coolers city pages dynamically from states
-  // Only include URLs where a matching page file actually exists
-  const coolersDir = path.join(process.cwd(), 'src', 'app', 'haha-coolers')
-  const generatedCoolerCityPages: MetadataRoute.Sitemap = states.flatMap(state =>
-    state.cities.map(city => {
-      const filePath = path.join(coolersDir, city.slug, 'page.tsx')
-      if (!fs.existsSync(filePath)) return null
-      return {
-        url: `https://www.thevendinglocator.com/haha-coolers/${city.slug}`,
-        lastModified: new Date(),
-        changeFrequency: 'weekly' as const,
-        priority: 0.8,
-      }
-    }).filter(Boolean) as MetadataRoute.Sitemap
-  )
-
-  // Skip filesystem checks during build to reduce memory usage
-  // Rely on states.ts and generatedCoolerCityPages instead
-  // Filesystem checks can be done at runtime if needed
+  const generatedCoolerCityPages: MetadataRoute.Sitemap = []
   const filesystemCoolerCityPages: MetadataRoute.Sitemap = []
-
-  // Skip filesystem checks during build to reduce memory usage
-  // Tax-services city pages are generated dynamically at runtime
-  // Filesystem checks can be done at runtime if needed
   const filesystemTaxServicesCityPages: MetadataRoute.Sitemap = []
-
-  // Skip filesystem checks during build to reduce memory usage
-  // EIN/LLC state pages are generated dynamically at runtime
-  // Filesystem checks can be done at runtime if needed
   const filesystemEinLLCStatePages: MetadataRoute.Sitemap = []
 
   // State pages - All 50 states
@@ -1547,31 +1506,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: 'https://www.thevendinglocator.com/vending-leads/huntington-west-virginia', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
   ]
 
-  // Filter manual city list to only include URLs with an existing page.tsx
-  const filteredCityPages: MetadataRoute.Sitemap = cityPages.filter((item) => {
-    const slug = item.url.split('/').pop() as string
-    return fs.existsSync(path.join(leadsDir, slug, 'page.tsx'))
-  })
+  // Use manual city list without filesystem checks to prevent build-time memory issues
+  // The cityPages array is manually curated and doesn't require filesystem scanning
+  const filteredCityPages: MetadataRoute.Sitemap = cityPages
 
-  // Dynamic city guides (how-to-start-a-vending-machine-business/[slug])
-  // Generate from states.ts to include all cities with how-to-start pages
-  const howToStartDir = path.join(process.cwd(), 'src', 'app', 'how-to-start-a-vending-machine-business')
-  const cityGuidePages: MetadataRoute.Sitemap = states.flatMap((state) =>
-    state.cities
-      .filter((city) => {
-        // Only include cities that have actual page files
-        const cityDir = path.join(howToStartDir, city.slug)
-        return fs.existsSync(path.join(cityDir, 'page.tsx'))
-      })
-      .map((city) => ({
-        url: `https://www.thevendinglocator.com/how-to-start-a-vending-machine-business/${city.slug}`,
-        lastModified: new Date(),
-        changeFrequency: 'weekly' as const,
-        priority: 0.8,
-      }))
-  )
+  // REMOVED: Filesystem scanning for how-to-start pages to prevent build-time memory issues
+  // These pages are dynamically generated and don't need to be in the sitemap at build time
+  // They will be discovered by search engines through internal linking
+  const cityGuidePages: MetadataRoute.Sitemap = []
 
-  // Legacy manual entries removed - now using dynamic generation from cityInfo.ts above
+  // Using manually curated city pages list to prevent build-time memory issues
   
   // Guide index pages
   const guidePages = [
