@@ -37,8 +37,9 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   }
 }
 
-// Enable ISR - regenerate page every hour
-export const revalidate = 3600;
+// Use ISR (Incremental Static Regeneration) for SEO stability and performance
+// Pages will be generated on-demand and cached, revalidating every 24 hours
+export const revalidate = 86400 // 24 hours in seconds
 
 export default function GuideCityPage({ params }: Params) {
   const { slug } = params

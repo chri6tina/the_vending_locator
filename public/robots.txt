@@ -34,12 +34,9 @@ Allow: /blog/
 Allow: /contact/
 Allow: /hot-leads/
 
-# Prevent duplicate content issues
-Disallow: /*.html$
-Disallow: /*?*
-Disallow: /*/$
-Disallow: /index.html
-Disallow: /index.htm
+# Disallow admin and private areas only
+# Note: We allow all public pages including those with query parameters for analytics/tracking
+# Trailing slashes are already handled by Next.js config (trailingSlash: false)
 
 # Sitemap location
 Sitemap: https://www.thevendinglocator.com/sitemap.xml
