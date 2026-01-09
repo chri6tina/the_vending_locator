@@ -6,7 +6,7 @@
     "dev": "next dev",
     "prebuild": "node scripts/pre-build.js",
     "build": "cross-env NODE_OPTIONS=--max-old-space-size=40960 next build",
-    "postbuild": "node scripts/post-build.js",
+    "postbuild": "node scripts/post-build.js || true",
     "start": "next start",
     "lint": "next lint"
   },
