@@ -1,9 +1,11 @@
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { getCityInfo, getAllTaxServicesSlugs } from '@/data/tax-services-cities'
+import { getPrioritySlugs } from '@/lib/seo-priority-pages'
 
 // Use ISR (Incremental Static Regeneration) for SEO stability and performance
-// Pages will be generated on-demand and cached, revalidating every 24 hours
+// Priority pages are pre-generated at build time for instant SEO
+// Other pages are generated on-demand and cached, revalidating every 24 hours
 export const revalidate = 86400 // 24 hours in seconds
 
 // Dynamically generate metadata based on slug
@@ -55,12 +57,19 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   }
 }
 
-// Generate static params - return empty array to prevent build-time generation
-// Pages will be generated on-demand at request time
+// Pre-generate priority pages at build time for optimal SEO
+// Other pages will use ISR on-demand generation
 export async function generateStaticParams() {
-  // Return empty array to prevent Next.js from generating all pages during build
-  // Pages will be rendered dynamically on-demand
-  return []
+  const allSlugs = getAllTaxServicesSlugs()
+  const prioritySlugs = getPrioritySlugs('tax-services')
+  
+  // Only pre-generate priority pages (top cities/states)
+  // This balances SEO optimization with build time
+  const staticParams = prioritySlugs
+    .filter(slug => allSlugs.includes(slug))
+    .map(slug => ({ slug }))
+  
+  return staticParams
 }
 
 export default async function TaxServicesCityPage({ params }: { params: { slug: string } }) {
@@ -122,23 +131,35 @@ export default async function TaxServicesCityPage({ params }: { params: { slug: 
   }
   
   // Dynamically import the pageClient component from _city-pages (Next.js ignores this during route discovery)
-  // This preserves all existing pageClient components and their content
-  // All 540+ tax-services city pages are preserved, just moved to _city-pages/tax-services/
+  // Optimized import with better error handling and SEO fallback
+  let PageClient
   try {
-    // Dynamic import from _city-pages - Next.js won't discover these during build
-    const PageClient = (await import(`@/app/_city-pages/tax-services/${params.slug}/pageClient`)).default
-    return (
-      <>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-        />
-        <PageClient />
-      </>
-    )
+    // Try to import the specific pageClient
+    const module = await import(`@/app/_city-pages/tax-services/${params.slug}/pageClient`)
+    PageClient = module.default
+    
+    if (!PageClient) {
+      throw new Error(`PageClient component not found for ${params.slug}`)
+    }
   } catch (error) {
-    console.error(`Failed to load pageClient for ${params.slug}:`, error)
+    // Enhanced error handling: Log but don't expose error details to users
+    console.error(`[Tax Services] Failed to load pageClient for ${params.slug}:`, error)
+    
+    // For SEO: Return 404 instead of broken page
+    // This ensures search engines don't index broken content
     notFound()
   }
+
+  // Always render JSON-LD and PageClient to ensure SEO content is present
+  // The dynamic import is awaited server-side, so content is in initial HTML
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <PageClient />
+    </>
+  )
 }
 
