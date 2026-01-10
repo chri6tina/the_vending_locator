@@ -66,6 +66,28 @@ export default function AdminDashboardPage() {
             </Link>
 
             <Link
+              href="/admin/visitors"
+              className="bg-white rounded-lg p-6 border border-gray-200 hover:border-navy transition-colors"
+            >
+              <h3 className="text-lg font-semibold text-charcoal mb-2">Visitor Database</h3>
+              <p className="text-sm text-stone mb-4">View and manage all website visitors and leads. Export data to send leads.</p>
+              <div className="text-sm text-navy font-medium">
+                Go to visitors →
+              </div>
+            </Link>
+
+            <Link
+              href="/admin/subscriptions"
+              className="bg-white rounded-lg p-6 border border-gray-200 hover:border-navy transition-colors"
+            >
+              <h3 className="text-lg font-semibold text-charcoal mb-2">View Subscriptions</h3>
+              <p className="text-sm text-stone mb-4">Manage Hot Leads Premium subscription signups and send leads to subscribers</p>
+              <div className="text-sm text-navy font-medium">
+                Go to subscriptions →
+              </div>
+            </Link>
+
+            <Link
               href="/admin/blog/posts"
               className="bg-white rounded-lg p-6 border border-gray-200 hover:border-navy transition-colors"
             >

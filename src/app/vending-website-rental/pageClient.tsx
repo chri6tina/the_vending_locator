@@ -306,30 +306,36 @@ export default function VendingWebsiteRentalPageClient() {
               </div>
             </motion.a>
 
-            {/* Placeholder for future portfolio items - can be uncommented when ready */}
-            {/* 
-            <motion.a
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
+            {/* Portfolio Item - New York City */}
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
               viewport={{ once: true }}
-              className="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-200"
+              className="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-200 opacity-90"
             >
-              <div className="relative aspect-video bg-gray-100">
-                <div className="absolute inset-0 flex items-center justify-center text-gray-400">
-                  Coming Soon
-                </div>
+              <div className="relative aspect-video bg-gray-100 overflow-hidden">
+                <Image
+                  src="/New York City Vending .png"
+                  alt="New York City Vending Machines Website"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-300" />
               </div>
               <div className="p-4 sm:p-5">
                 <h3 className="text-lg font-playfair font-semibold text-chocolate mb-2">
-                  More Examples Coming Soon
+                  New York City Vending Machines
                 </h3>
+                <p className="text-sm text-stone mb-3">
+                  Professional vending website serving New York City, NY
+                </p>
+                <div className="flex items-center text-stone/60 text-sm font-medium">
+                  <span>Website Coming Soon</span>
+                </div>
               </div>
-            </motion.a>
-            */}
+            </motion.div>
           </div>
         </div>
       </div>

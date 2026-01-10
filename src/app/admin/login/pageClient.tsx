@@ -27,6 +27,8 @@ export default function LoginPage() {
       const data = await response.json()
 
       if (data.success) {
+        // Small delay to ensure cookie is set
+        await new Promise(resolve => setTimeout(resolve, 100))
         // Redirect to admin dashboard
         router.push('/admin')
         router.refresh()

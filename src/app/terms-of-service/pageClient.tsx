@@ -49,7 +49,7 @@ export default function TermsOfServicePage() {
                 <section>
                   <h2 className="text-2xl font-bold text-gray-900 mb-4">2. Service Description</h2>
                   <p className="text-gray-700 leading-relaxed mb-4">
-                    The Vending Locator provides two main services:
+                    The Vending Locator provides the following services:
                   </p>
                   <div className="bg-gray-50 p-6 rounded-lg mb-4">
                     <h3 className="text-lg font-semibold text-gray-900 mb-3">A. Vending Location Leads Packages</h3>
@@ -60,7 +60,7 @@ export default function TermsOfServicePage() {
                       <li><strong>Gold ($899):</strong> 300+ qualified locations with full business setup support</li>
                     </ul>
                   </div>
-                  <div className="bg-gray-50 p-6 rounded-lg">
+                  <div className="bg-gray-50 p-6 rounded-lg mb-4">
                     <h3 className="text-lg font-semibold text-gray-900 mb-3">B. Guaranteed Location Placement Service</h3>
                     <ul className="list-disc list-inside space-y-2 text-gray-700">
                       <li><strong>Quick Find Package ($500):</strong> 1 guaranteed location with basic support</li>
@@ -68,6 +68,21 @@ export default function TermsOfServicePage() {
                       <li><strong>Prime Location Package ($1,500):</strong> 1 guaranteed location with account management</li>
                       <li><strong>Elite Placement Package ($2,000):</strong> 1 guaranteed location with VIP support</li>
                     </ul>
+                  </div>
+                  <div className="bg-gray-50 p-6 rounded-lg">
+                    <h3 className="text-lg font-semibold text-gray-900 mb-3">C. Hot Leads Premium Subscription</h3>
+                    <p className="text-gray-700 mb-3">
+                      <strong>Monthly Subscription ($20/month):</strong> A recurring monthly subscription service that provides subscribers with first access to premium vending machine location leads before they are made available to the general public.
+                    </p>
+                    <div className="bg-amber-50 border-l-4 border-amber-400 p-4 mt-4">
+                      <p className="text-amber-800 font-medium mb-2">Important Subscription Terms:</p>
+                      <ul className="list-disc list-inside space-y-1 text-amber-800 text-sm">
+                        <li><strong>Variable Content Availability:</strong> The number and availability of leads may vary from month to month. Some months may have no leads available.</li>
+                        <li><strong>No Guarantee of Leads:</strong> We do not guarantee a minimum number of leads per month or that leads will be available in your specific geographic area.</li>
+                        <li><strong>First Access Priority:</strong> Subscribers receive notification and first access to leads when they become available, but availability is subject to market conditions and lead generation.</li>
+                        <li><strong>Subscription Benefits:</strong> Subscribers receive exclusive pricing on available leads and priority notification when new leads match their preferences.</li>
+                      </ul>
+                    </div>
                   </div>
                 </section>
 
@@ -115,16 +130,29 @@ export default function TermsOfServicePage() {
 
                 {/* Refund Policy */}
                 <section>
-                  <h2 className="text-2xl font-bold text-gray-900 mb-4">5. Refund Policy</h2>
+                  <h2 className="text-2xl font-bold text-gray-900 mb-4">5. Refund Policy & Subscription Cancellation</h2>
                   <div className="bg-amber-50 border-l-4 border-amber-400 p-4 mb-4">
-                    <p className="text-amber-800 font-medium">No Refunds Policy</p>
+                    <p className="text-amber-800 font-medium">No Refunds Policy for One-Time Purchases</p>
                   </div>
                   <p className="text-gray-700 leading-relaxed mb-4">
                     Due to the digital nature of our services and the significant time investment in research and preparation, 
-                    we do not offer refunds. This policy applies to all packages and services.
+                    we do not offer refunds for one-time lead packages or placement services. This policy applies to all packages and services.
                   </p>
+                  
+                  <div className="bg-blue-50 border-l-4 border-blue-400 p-4 mb-4">
+                    <p className="text-blue-800 font-medium mb-2">Subscription Cancellation Policy</p>
+                    <p className="text-blue-800 text-sm mb-2">
+                      <strong>Hot Leads Premium Subscription:</strong> You may cancel your subscription at any time through your account settings or by contacting our support team. 
+                      Cancellation will take effect at the end of your current billing period. You will continue to have access to subscriber benefits until the end of the paid period.
+                    </p>
+                    <p className="text-blue-800 text-sm">
+                      <strong>No Refunds for Past Months:</strong> We do not provide refunds for months where no leads were available or for any portion of a billing period. 
+                      Your subscription payment covers access to the subscriber platform and first-access notifications, regardless of lead availability in any given month.
+                    </p>
+                  </div>
+                  
                   <p className="text-gray-700 leading-relaxed">
-                    We are committed to providing quality leads and services. If you have concerns about your purchase, 
+                    We are committed to providing quality leads and services. If you have concerns about your purchase or subscription, 
                     please contact our support team for assistance.
                   </p>
                 </section>

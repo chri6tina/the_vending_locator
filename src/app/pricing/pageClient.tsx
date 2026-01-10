@@ -7,6 +7,7 @@ import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
+import LeadCaptureForm from '@/components/LeadCaptureForm'
 import { ChevronDownIcon, MapPinIcon } from '@heroicons/react/24/outline'
 import { CheckBadgeIcon, StarIcon } from '@heroicons/react/24/solid'
 import { useState, useEffect } from 'react'
@@ -339,6 +340,18 @@ export default function Pricing() {
 
       {/* FAQ Section */}
       <FAQ />
+
+      {/* Lead Capture Form */}
+      <section className="py-16 bg-warm-white">
+        <div className="mx-auto max-w-4xl px-6 lg:px-8">
+          <LeadCaptureForm
+            title="Get Notified About New Leads"
+            description="Enter your email and location to be notified when new vending machine locations become available in your area."
+            source="pricing-page"
+            showCityState={true}
+          />
+        </div>
+      </section>
 
       <Footer />
       

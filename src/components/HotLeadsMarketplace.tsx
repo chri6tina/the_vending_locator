@@ -10,8 +10,12 @@ import {
   CurrencyDollarIcon,
   MagnifyingGlassIcon,
   FunnelIcon,
-  SparklesIcon
+  SparklesIcon,
+  XMarkIcon,
+  StarIcon,
+  ArrowRightIcon
 } from '@heroicons/react/24/solid'
+import LeadCaptureForm from './LeadCaptureForm'
 
 interface HotLead {
   id: string
@@ -35,6 +39,15 @@ export default function HotLeadsMarketplace() {
   const [selectedState, setSelectedState] = useState('')
   const [selectedCity, setSelectedCity] = useState('')
   const [sortBy, setSortBy] = useState<'newest' | 'price-low' | 'price-high'>('newest')
+  const [showSubscriptionModal, setShowSubscriptionModal] = useState(false)
+  const [subscriptionFormData, setSubscriptionFormData] = useState({ 
+    name: '', 
+    email: '', 
+    city: '', 
+    state: '',
+    agreedToTerms: false 
+  })
+  const [isSubmittingSubscription, setIsSubmittingSubscription] = useState(false)
 
   useEffect(() => {
     fetchLeads()
@@ -240,6 +253,73 @@ export default function HotLeadsMarketplace() {
           </div>
         </motion.div>
 
+        {/* Subscription Offer - Show when no leads available */}
+        {!loading && leads.length === 0 && !searchTerm && !selectedState && !selectedCity && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
+            className="mb-8 bg-gradient-to-br from-coral/10 to-navy/10 rounded-xl border-2 border-coral/30 p-6 sm:p-8"
+          >
+            <div className="max-w-2xl mx-auto text-center">
+              <div className="text-4xl mb-4">⭐</div>
+              <h3 className="text-xl sm:text-2xl font-playfair font-bold text-charcoal mb-3">
+                No Leads Available Right Now
+              </h3>
+              <p className="text-base sm:text-lg text-stone mb-6">
+                New premium leads are added regularly, but <span className="font-semibold text-coral">subscribers get first access</span> before they're listed publicly.
+              </p>
+              
+              {/* Subscription Benefits */}
+              <div className="bg-white rounded-lg p-4 sm:p-6 mb-6 border border-gray-200 shadow-sm">
+                <h4 className="text-lg font-semibold text-navy mb-4">Subscribe for First Access</h4>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 text-left mb-4">
+                  <div className="flex items-start gap-2">
+                    <StarIcon className="h-5 w-5 text-coral flex-shrink-0 mt-0.5" />
+                    <div>
+                      <p className="font-semibold text-charcoal text-sm">First Access</p>
+                      <p className="text-xs text-stone">Get notified before leads go public</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <StarIcon className="h-5 w-5 text-coral flex-shrink-0 mt-0.5" />
+                    <div>
+                      <p className="font-semibold text-charcoal text-sm">Subscriber Discount</p>
+                      <p className="text-xs text-stone">Exclusive pricing on all leads</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <StarIcon className="h-5 w-5 text-coral flex-shrink-0 mt-0.5" />
+                    <div>
+                      <p className="font-semibold text-charcoal text-sm">Priority Support</p>
+                      <p className="text-xs text-stone">Dedicated subscriber assistance</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <StarIcon className="h-5 w-5 text-coral flex-shrink-0 mt-0.5" />
+                    <div>
+                      <p className="font-semibold text-charcoal text-sm">Cancel Anytime</p>
+                      <p className="text-xs text-stone">No long-term commitment</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="bg-coral/10 rounded-lg p-3 mb-4">
+                  <p className="text-xs text-stone text-left">
+                    <span className="font-semibold text-coral">How it works:</span> When new leads come in, subscribers get first notification and exclusive access. Only leads that subscribers don't purchase become available to the public marketplace.
+                  </p>
+                </div>
+                <button
+                  onClick={() => setShowSubscriptionModal(true)}
+                  className="w-full sm:w-auto px-6 sm:px-8 py-2.5 sm:py-3 bg-coral hover:bg-coral/90 text-white rounded-lg font-semibold transition-colors flex items-center justify-center gap-2 mx-auto text-sm sm:text-base"
+                >
+                  Subscribe for $20/month
+                  <ArrowRightIcon className="h-4 w-4 sm:h-5 sm:w-5" />
+                </button>
+              </div>
+            </div>
+          </motion.div>
+        )}
+
         {/* Leads Grid */}
         {loading ? (
           <div className="text-center py-12">
@@ -247,28 +327,25 @@ export default function HotLeadsMarketplace() {
             <p className="mt-4 text-stone">Loading available leads...</p>
           </div>
         ) : filteredLeads.length === 0 ? (
+          // Filters applied but no matches
           <div className="text-center py-16 bg-white rounded-xl shadow-sm border border-gray-200">
             <div className="text-6xl mb-4">🔍</div>
             <h3 className="text-xl font-semibold text-charcoal mb-2">
-              {searchTerm || selectedState || selectedCity ? 'No leads match your filters' : 'No leads available yet'}
+              No leads match your filters
             </h3>
             <p className="text-stone mb-6">
-              {searchTerm || selectedState || selectedCity 
-                ? 'Try adjusting your search or filters to see more results.'
-                : 'New premium leads are added regularly. Check back soon!'}
+              Try adjusting your search or filters to see more results.
             </p>
-            {(searchTerm || selectedState || selectedCity) && (
-              <button
-                onClick={() => {
-                  setSearchTerm('')
-                  setSelectedState('')
-                  setSelectedCity('')
-                }}
-                className="px-6 py-2 bg-navy text-white rounded-lg hover:bg-navy-light transition-colors"
-              >
-                Clear All Filters
-              </button>
-            )}
+            <button
+              onClick={() => {
+                setSearchTerm('')
+                setSelectedState('')
+                setSelectedCity('')
+              }}
+              className="px-6 py-2 bg-navy text-white rounded-lg hover:bg-navy-light transition-colors"
+            >
+              Clear All Filters
+            </button>
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -386,7 +463,304 @@ export default function HotLeadsMarketplace() {
             </div>
           </div>
         </motion.div>
+
+        {/* Lead Capture Form - Always show to capture all visitors */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4 }}
+          className="mt-12"
+        >
+          <LeadCaptureForm
+            title="Get Notified About New Leads"
+            description="Even if you don't subscribe, we'll notify you when new vending machine locations become available in your area."
+            source="hot-leads-page"
+            showCityState={true}
+          />
+        </motion.div>
       </div>
+
+      {/* Subscription Modal */}
+      {showSubscriptionModal && (
+        <div className="fixed inset-0 z-50 overflow-y-auto">
+          <div className="flex min-h-full items-center justify-center p-4">
+            {/* Backdrop */}
+            <div 
+              className="fixed inset-0 bg-black/50 transition-opacity"
+              onClick={() => {
+                setShowSubscriptionModal(false)
+                setSubscriptionFormData({ name: '', email: '', city: '', state: '', agreedToTerms: false })
+              }}
+            />
+            
+            {/* Modal */}
+            <div className="relative bg-white rounded-lg shadow-xl max-w-md w-full p-4 sm:p-6 mx-4">
+              <button
+                onClick={() => {
+                  setShowSubscriptionModal(false)
+                  setSubscriptionFormData({ name: '', email: '', city: '', state: '', agreedToTerms: false })
+                }}
+                className="absolute top-3 right-3 sm:top-4 sm:right-4 text-gray-400 hover:text-gray-600 z-10"
+              >
+                <XMarkIcon className="h-6 w-6" />
+              </button>
+
+              <div className="mb-4 pb-4 border-b border-gray-200 pr-8">
+                <h2 className="text-xl sm:text-2xl font-playfair font-bold text-chocolate mb-1">
+                  Hot Leads Premium Subscription
+                </h2>
+                <div className="flex items-baseline gap-2">
+                  <span className="text-2xl sm:text-3xl font-bold text-navy">
+                    $20
+                  </span>
+                  <span className="text-stone text-sm sm:text-base">/month</span>
+                </div>
+                <p className="text-xs sm:text-sm text-stone mt-2">
+                  Get first access to premium vending leads with subscriber discounts
+                </p>
+              </div>
+              <p className="text-sm sm:text-base text-stone mb-6">
+                Please provide your information to continue to checkout.
+              </p>
+
+              <form onSubmit={async (e) => {
+                e.preventDefault()
+                
+                if (!subscriptionFormData.agreedToTerms) {
+                  alert('Please agree to the Terms of Service to continue.')
+                  return
+                }
+
+                setIsSubmittingSubscription(true)
+
+                try {
+                  // First, submit to Formspree
+                  const formspreeResponse = await fetch('https://formspree.io/f/mjggbwdw', {
+                    method: 'POST',
+                    headers: {
+                      'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                      name: subscriptionFormData.name,
+                      email: subscriptionFormData.email,
+                      city: subscriptionFormData.city,
+                      state: subscriptionFormData.state,
+                      subscription: 'Hot Leads Premium Subscription',
+                      monthlyPrice: '$20/month',
+                      _subject: 'Hot Leads Premium Subscription Signup',
+                      _replyto: subscriptionFormData.email,
+                    }),
+                  })
+
+                  if (!formspreeResponse.ok) {
+                    throw new Error('Formspree submission failed')
+                  }
+
+                  // Store subscription data for dashboard
+                  try {
+                    await fetch('/api/hot-leads-subscriptions', {
+                      method: 'POST',
+                      headers: {
+                        'Content-Type': 'application/json',
+                      },
+                      body: JSON.stringify({
+                        name: subscriptionFormData.name,
+                        email: subscriptionFormData.email,
+                        city: subscriptionFormData.city,
+                        state: subscriptionFormData.state,
+                        subscriptionType: 'hot-leads-premium',
+                        monthlyPrice: 20,
+                        status: 'pending',
+                      }),
+                    })
+                  } catch (apiError) {
+                    console.log('Subscription API submission failed (non-critical):', apiError)
+                  }
+
+                  // Then, create Stripe checkout session
+                  const stripeResponse = await fetch('/api/hot-leads-subscription-checkout', {
+                    method: 'POST',
+                    headers: {
+                      'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                      email: subscriptionFormData.email,
+                    }),
+                  })
+
+                  const data = await stripeResponse.json()
+
+                  if (data.success && data.url) {
+                    window.location.href = data.url
+                  } else {
+                    alert('Error creating checkout session. Please try again.')
+                    setIsSubmittingSubscription(false)
+                  }
+                } catch (error) {
+                  console.error('Checkout error:', error)
+                  alert('Error processing your request. Please try again.')
+                  setIsSubmittingSubscription(false)
+                }
+              }} className="space-y-4">
+                <div>
+                  <label htmlFor="subscription-name" className="block text-sm font-medium text-chocolate mb-2">
+                    Name *
+                  </label>
+                  <input
+                    type="text"
+                    id="subscription-name"
+                    name="name"
+                    required
+                    value={subscriptionFormData.name}
+                    onChange={(e) => setSubscriptionFormData(prev => ({ ...prev, name: e.target.value }))}
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-coral focus:border-coral"
+                    placeholder="Your name"
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="subscription-email" className="block text-sm font-medium text-chocolate mb-2">
+                    Email *
+                  </label>
+                  <input
+                    type="email"
+                    id="subscription-email"
+                    name="email"
+                    required
+                    value={subscriptionFormData.email}
+                    onChange={(e) => setSubscriptionFormData(prev => ({ ...prev, email: e.target.value }))}
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-coral focus:border-coral"
+                    placeholder="your@email.com"
+                  />
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label htmlFor="subscription-city" className="block text-sm font-medium text-chocolate mb-2">
+                      City *
+                    </label>
+                    <input
+                      type="text"
+                      id="subscription-city"
+                      name="city"
+                      required
+                      value={subscriptionFormData.city}
+                      onChange={(e) => setSubscriptionFormData(prev => ({ ...prev, city: e.target.value }))}
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-coral focus:border-coral"
+                      placeholder="Your city"
+                    />
+                  </div>
+
+                  <div>
+                    <label htmlFor="subscription-state" className="block text-sm font-medium text-chocolate mb-2">
+                      State *
+                    </label>
+                    <select
+                      id="subscription-state"
+                      name="state"
+                      required
+                      value={subscriptionFormData.state}
+                      onChange={(e) => setSubscriptionFormData(prev => ({ ...prev, state: e.target.value }))}
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-coral focus:border-coral"
+                    >
+                      <option value="">Select State</option>
+                      <option value="AL">Alabama</option>
+                      <option value="AK">Alaska</option>
+                      <option value="AZ">Arizona</option>
+                      <option value="AR">Arkansas</option>
+                      <option value="CA">California</option>
+                      <option value="CO">Colorado</option>
+                      <option value="CT">Connecticut</option>
+                      <option value="DE">Delaware</option>
+                      <option value="FL">Florida</option>
+                      <option value="GA">Georgia</option>
+                      <option value="HI">Hawaii</option>
+                      <option value="ID">Idaho</option>
+                      <option value="IL">Illinois</option>
+                      <option value="IN">Indiana</option>
+                      <option value="IA">Iowa</option>
+                      <option value="KS">Kansas</option>
+                      <option value="KY">Kentucky</option>
+                      <option value="LA">Louisiana</option>
+                      <option value="ME">Maine</option>
+                      <option value="MD">Maryland</option>
+                      <option value="MA">Massachusetts</option>
+                      <option value="MI">Michigan</option>
+                      <option value="MN">Minnesota</option>
+                      <option value="MS">Mississippi</option>
+                      <option value="MO">Missouri</option>
+                      <option value="MT">Montana</option>
+                      <option value="NE">Nebraska</option>
+                      <option value="NV">Nevada</option>
+                      <option value="NH">New Hampshire</option>
+                      <option value="NJ">New Jersey</option>
+                      <option value="NM">New Mexico</option>
+                      <option value="NY">New York</option>
+                      <option value="NC">North Carolina</option>
+                      <option value="ND">North Dakota</option>
+                      <option value="OH">Ohio</option>
+                      <option value="OK">Oklahoma</option>
+                      <option value="OR">Oregon</option>
+                      <option value="PA">Pennsylvania</option>
+                      <option value="RI">Rhode Island</option>
+                      <option value="SC">South Carolina</option>
+                      <option value="SD">South Dakota</option>
+                      <option value="TN">Tennessee</option>
+                      <option value="TX">Texas</option>
+                      <option value="UT">Utah</option>
+                      <option value="VT">Vermont</option>
+                      <option value="VA">Virginia</option>
+                      <option value="WA">Washington</option>
+                      <option value="WV">West Virginia</option>
+                      <option value="WI">Wisconsin</option>
+                      <option value="WY">Wyoming</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div className="pt-2">
+                  <label className="flex items-start gap-2 cursor-pointer">
+                    <input
+                      type="checkbox"
+                      required
+                      checked={subscriptionFormData.agreedToTerms}
+                      onChange={(e) => setSubscriptionFormData(prev => ({ ...prev, agreedToTerms: e.target.checked }))}
+                      className="mt-1 h-4 w-4 text-coral focus:ring-coral border-gray-300 rounded"
+                    />
+                    <span className="text-sm text-stone">
+                      I agree to the{' '}
+                      <Link href="/terms-of-service" target="_blank" className="text-coral hover:text-coral/80 underline">
+                        Terms of Service
+                      </Link>
+                      {' '}and understand that leads availability may vary by month.
+                    </span>
+                  </label>
+                </div>
+
+                <div className="flex flex-col sm:flex-row gap-3 pt-4">
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setShowSubscriptionModal(false)
+                      setSubscriptionFormData({ name: '', email: '', city: '', state: '', agreedToTerms: false })
+                    }}
+                    className="w-full sm:flex-1 px-4 py-2.5 border-2 border-gray-300 text-chocolate rounded-lg font-semibold hover:bg-gray-50 transition-colors text-sm sm:text-base"
+                  >
+                    Cancel
+                  </button>
+                  <button
+                    type="submit"
+                    disabled={isSubmittingSubscription}
+                    className="w-full sm:flex-1 px-4 py-2.5 bg-coral hover:bg-coral/90 text-white rounded-lg font-semibold transition-colors disabled:opacity-50 disabled:cursor-not-allowed text-sm sm:text-base"
+                  >
+                    {isSubmittingSubscription ? 'Processing...' : 'Continue to Checkout'}
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   )
 }
