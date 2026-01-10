@@ -11,9 +11,8 @@ interface AdminAuthGuardProps {
  * AdminAuthGuard - Simple authentication guard for admin pages
  * Checks for authentication via API endpoint
  * 
- * Login credentials:
- * Email: support@thevendinglocator.com
- * Password: 123
+ * Credentials are stored in environment variables (ADMIN_EMAIL, ADMIN_PASSWORD)
+ * and are never exposed in source code for security.
  */
 export default function AdminAuthGuard({ children }: AdminAuthGuardProps) {
   const router = useRouter()

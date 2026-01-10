@@ -4,11 +4,11 @@ export async function POST(request: NextRequest) {
   try {
     const { email, password } = await request.json()
 
-    // Get credentials from environment variables (more secure)
-    const ADMIN_EMAIL = process.env.ADMIN_EMAIL || 'support@thevendinglocator.com'
-    const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || '123'
+    // Get credentials from environment variables (REQUIRED - no fallbacks for security)
+    const ADMIN_EMAIL = process.env.ADMIN_EMAIL
+    const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD
 
-    // Validate credentials
+    // Validate credentials are configured
     if (!ADMIN_EMAIL || !ADMIN_PASSWORD) {
       console.error('Admin credentials not configured')
       return NextResponse.json(
