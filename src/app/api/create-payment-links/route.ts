@@ -1,9 +1,16 @@
 import { NextRequest, NextResponse } from 'next/server'
 import Stripe from 'stripe'
+import { requireAdminAuth } from '@/lib/api-auth'
 
 export const dynamic = 'force-dynamic'
 
 export async function POST(request: NextRequest) {
+  // Require admin authentication
+  const authError = requireAdminAuth(request)
+  if (authError) {
+    return authError
+  }
+
   try {
     console.log('🚀 POST request received to /api/create-payment-links')
 

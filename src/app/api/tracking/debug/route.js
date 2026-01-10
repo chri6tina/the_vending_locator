@@ -1,7 +1,24 @@
 import { NextResponse } from 'next/server'
 import { trackingData, liveVisitors, pageViews, logTrackingState } from '@/lib/tracking-store'
 
-export async function GET() {
+export async function GET(request) {
+  // Disable in production - security risk
+  if (process.env.NODE_ENV === 'production') {
+    return NextResponse.json(
+      { error: 'Debug endpoint disabled in production' },
+      { status: 403 }
+    )
+  }
+
+  // Require admin authentication even in dev
+  const authCookie = request.cookies.get('admin_auth')
+  if (!authCookie || authCookie.value !== 'authenticated') {
+    return NextResponse.json(
+      { error: 'Unauthorized - Admin access required' },
+      { status: 401 }
+    )
+  }
+
   try {
     // Log the current state
     logTrackingState()

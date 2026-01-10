@@ -1,9 +1,10 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { supabase } from '@/lib/supabase'
+import { requireAdminAuth } from '@/lib/api-auth'
 
 export const dynamic = 'force-dynamic'
 
-// POST - Store visitor information
+// POST - Store visitor information (public - for lead capture forms)
 export async function POST(request: NextRequest) {
   try {
     const payload = await request.json()
@@ -138,8 +139,14 @@ export async function POST(request: NextRequest) {
   }
 }
 
-// GET endpoint to retrieve visitors (for admin dashboard)
+// GET endpoint to retrieve visitors (for admin dashboard) - Admin only
 export async function GET(request: NextRequest) {
+  // Require admin authentication
+  const authError = requireAdminAuth(request)
+  if (authError) {
+    return authError
+  }
+
   try {
     const { searchParams } = new URL(request.url)
     const state = searchParams.get('state')

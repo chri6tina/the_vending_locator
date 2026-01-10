@@ -63,6 +63,30 @@ export async function POST(request: NextRequest) {
       
       const unitAmountCents = Math.round(priceNumber * 100)
       
+      // Validate URLs to prevent SSRF - only allow your domain
+      const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.thevendinglocator.com'
+      const allowedDomains = [
+        'thevendinglocator.com',
+        'www.thevendinglocator.com',
+        'localhost:3000' // For development
+      ]
+      
+      // Validate successUrl
+      let validatedSuccessUrl = successUrl
+      if (successUrl && !allowedDomains.some(domain => successUrl.includes(domain))) {
+        validatedSuccessUrl = `${baseUrl}/hot-leads/purchase-success`
+      } else if (!successUrl) {
+        validatedSuccessUrl = `${baseUrl}/hot-leads/purchase-success`
+      }
+      
+      // Validate cancelUrl
+      let validatedCancelUrl = cancelUrl
+      if (cancelUrl && !allowedDomains.some(domain => cancelUrl.includes(domain))) {
+        validatedCancelUrl = `${baseUrl}/hot-leads`
+      } else if (!cancelUrl) {
+        validatedCancelUrl = `${baseUrl}/hot-leads`
+      }
+      
       // Create Stripe Checkout Session for hot lead
       const session = await stripe.checkout.sessions.create({
         payment_method_types: ['card'],
@@ -80,8 +104,8 @@ export async function POST(request: NextRequest) {
           },
         ],
         mode: 'payment',
-        success_url: successUrl,
-        cancel_url: cancelUrl,
+        success_url: validatedSuccessUrl,
+        cancel_url: validatedCancelUrl,
         metadata: {
           leadId: metadata.leadId,
           leadSlug: metadata.leadSlug,

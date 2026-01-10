@@ -1,9 +1,10 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { supabase } from '@/lib/supabase'
+import { requireAdminAuth } from '@/lib/api-auth'
 
 export const dynamic = 'force-dynamic'
 
-// POST - Store subscription data
+// POST - Store subscription data (public - for subscription signups)
 export async function POST(request: NextRequest) {
   try {
     const payload = await request.json()
@@ -86,8 +87,14 @@ export async function POST(request: NextRequest) {
   }
 }
 
-// GET endpoint to retrieve subscriptions (for dashboard)
+// GET endpoint to retrieve subscriptions (for dashboard) - Admin only
 export async function GET(request: NextRequest) {
+  // Require admin authentication
+  const authError = requireAdminAuth(request)
+  if (authError) {
+    return authError
+  }
+
   try {
     // Check if Supabase is configured
     if (!process.env.NEXT_PUBLIC_SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL === 'https://placeholder.supabase.co') {

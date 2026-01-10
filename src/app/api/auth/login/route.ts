@@ -4,9 +4,18 @@ export async function POST(request: NextRequest) {
   try {
     const { email, password } = await request.json()
 
-    // Simple hardcoded authentication
-    const ADMIN_EMAIL = 'support@thevendinglocator.com'
-    const ADMIN_PASSWORD = '123'
+    // Get credentials from environment variables (more secure)
+    const ADMIN_EMAIL = process.env.ADMIN_EMAIL || 'support@thevendinglocator.com'
+    const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || '123'
+
+    // Validate credentials
+    if (!ADMIN_EMAIL || !ADMIN_PASSWORD) {
+      console.error('Admin credentials not configured')
+      return NextResponse.json(
+        { success: false, error: 'Authentication service unavailable' },
+        { status: 503 }
+      )
+    }
 
     if (email === ADMIN_EMAIL && password === ADMIN_PASSWORD) {
       // Create a response with authentication cookie

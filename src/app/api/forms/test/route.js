@@ -36,7 +36,24 @@ const sampleForms = [
   }
 ]
 
-export async function POST() {
+export async function POST(request) {
+  // Disable in production - security risk
+  if (process.env.NODE_ENV === 'production') {
+    return NextResponse.json(
+      { error: 'Test endpoint disabled in production' },
+      { status: 403 }
+    )
+  }
+
+  // Require admin authentication even in dev
+  const authCookie = request.cookies.get('admin_auth')
+  if (!authCookie || authCookie.value !== 'authenticated') {
+    return NextResponse.json(
+      { error: 'Unauthorized - Admin access required' },
+      { status: 401 }
+    )
+  }
+
   try {
     // Submit sample forms
     const submittedForms = []
@@ -70,7 +87,24 @@ export async function POST() {
   }
 }
 
-export async function GET() {
+export async function GET(request) {
+  // Disable in production - security risk
+  if (process.env.NODE_ENV === 'production') {
+    return NextResponse.json(
+      { error: 'Test endpoint disabled in production' },
+      { status: 403 }
+    )
+  }
+
+  // Require admin authentication even in dev
+  const authCookie = request.cookies.get('admin_auth')
+  if (!authCookie || authCookie.value !== 'authenticated') {
+    return NextResponse.json(
+      { error: 'Unauthorized - Admin access required' },
+      { status: 401 }
+    )
+  }
+
   return NextResponse.json({
     message: 'Test endpoint - use POST to add sample form data',
     timestamp: new Date().toISOString()

@@ -5,8 +5,17 @@ export const dynamic = 'force-dynamic'
 // In-memory storage for forms (import from main forms route)
 let forms = []
 
-// GET: Retrieve a specific form by ID
+// GET: Retrieve a specific form by ID - Admin only
 export async function GET(request, { params }) {
+  // Require admin authentication
+  const authCookie = request.cookies.get('admin_auth')
+  if (!authCookie || authCookie.value !== 'authenticated') {
+    return NextResponse.json(
+      { error: 'Unauthorized - Admin access required' },
+      { status: 401 }
+    )
+  }
+
   try {
     const { id } = params
     
@@ -35,8 +44,17 @@ export async function GET(request, { params }) {
   }
 }
 
-// PUT: Update a form (status, payment, task completion, notes)
+// PUT: Update a form (status, payment, task completion, notes) - Admin only
 export async function PUT(request, { params }) {
+  // Require admin authentication
+  const authCookie = request.cookies.get('admin_auth')
+  if (!authCookie || authCookie.value !== 'authenticated') {
+    return NextResponse.json(
+      { error: 'Unauthorized - Admin access required' },
+      { status: 401 }
+    )
+  }
+
   try {
     const { id } = params
     const updateData = await request.json()
@@ -89,8 +107,17 @@ export async function PUT(request, { params }) {
   }
 }
 
-// DELETE: Delete a form
+// DELETE: Delete a form - Admin only
 export async function DELETE(request, { params }) {
+  // Require admin authentication
+  const authCookie = request.cookies.get('admin_auth')
+  if (!authCookie || authCookie.value !== 'authenticated') {
+    return NextResponse.json(
+      { error: 'Unauthorized - Admin access required' },
+      { status: 401 }
+    )
+  }
+
   try {
     const { id } = params
     

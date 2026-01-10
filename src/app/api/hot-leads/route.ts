@@ -1,7 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { supabase } from '@/lib/supabase'
+import { requireAdminAuth } from '@/lib/api-auth'
 
-// GET - Retrieve all leads
+// GET - Retrieve all leads (public, but only shows available leads)
 export async function GET() {
   try {
     // Always use Supabase - return empty array if not configured
@@ -50,8 +51,14 @@ function generateSlug(city: string, state: string): string {
     .trim()
 }
 
-// POST - Create new lead
+// POST - Create new lead (admin only)
 export async function POST(request: NextRequest) {
+  // Require admin authentication
+  const authError = requireAdminAuth(request)
+  if (authError) {
+    return authError
+  }
+
   try {
     const body = await request.json()
     
@@ -109,9 +116,10 @@ export async function POST(request: NextRequest) {
 
     if (error) {
       console.error('Supabase insert error:', error)
+      // Don't expose database error details to client
       return NextResponse.json({ 
         success: false, 
-        error: 'Failed to save lead to database: ' + error.message 
+        error: 'Failed to save lead to database' 
       }, { status: 500 })
     }
     
@@ -121,15 +129,22 @@ export async function POST(request: NextRequest) {
     })
   } catch (error) {
     console.error('Error creating lead:', error)
+    // Don't expose error details to client
     return NextResponse.json({ 
       success: false, 
-      error: error instanceof Error ? error.message : 'Failed to create lead' 
+      error: 'Failed to create lead' 
     }, { status: 500 })
   }
 }
 
-// PUT - Update lead (for marking as sold, etc.)
+// PUT - Update lead (for marking as sold, etc.) - Admin only
 export async function PUT(request: NextRequest) {
+  // Require admin authentication
+  const authError = requireAdminAuth(request)
+  if (authError) {
+    return authError
+  }
+
   try {
     const body = await request.json()
     const { id, ...updates } = body
@@ -164,7 +179,7 @@ export async function PUT(request: NextRequest) {
       console.error('Supabase update error:', error)
       return NextResponse.json({ 
         success: false, 
-        error: 'Failed to update lead: ' + error.message 
+        error: 'Failed to update lead' 
       }, { status: 500 })
     }
 
@@ -188,8 +203,14 @@ export async function PUT(request: NextRequest) {
   }
 }
 
-// DELETE - Delete a lead
+// DELETE - Delete a lead - Admin only
 export async function DELETE(request: NextRequest) {
+  // Require admin authentication
+  const authError = requireAdminAuth(request)
+  if (authError) {
+    return authError
+  }
+
   try {
     const { searchParams } = new URL(request.url)
     const id = searchParams.get('id')
@@ -218,7 +239,7 @@ export async function DELETE(request: NextRequest) {
       console.error('Supabase delete error:', error)
       return NextResponse.json({ 
         success: false, 
-        error: 'Failed to delete lead: ' + error.message 
+        error: 'Failed to delete lead' 
       }, { status: 500 })
     }
     
