@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { Bars3Icon, XMarkIcon, ChevronDownIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
-  { name: 'Vending Leads', href: '/vending-leads' },
+  { name: 'Website Rental', href: '/vending-website-rental', highlight: true },
   { name: 'Pricing', href: '/pricing' },
   { name: 'Guide', href: '/guide' },
   { name: 'Hot Leads', href: '/hot-leads' },
@@ -37,12 +37,16 @@ export default function Header() {
             <Bars3Icon className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
-        <div className="hidden lg:flex lg:gap-x-8">
+        <div className="hidden lg:flex lg:gap-x-8 lg:items-center">
           {navigation.map((item) => (
             <Link
               key={item.name}
               href={item.href}
-              className="text-sm font-semibold leading-6 text-chocolate hover:text-coral transition-colors"
+              className={`text-sm font-semibold leading-6 transition-colors ${
+                item.highlight 
+                  ? 'text-coral hover:text-coral/80 border-b-2 border-coral pb-1' 
+                  : 'text-chocolate hover:text-coral'
+              }`}
             >
               {item.name}
             </Link>
@@ -134,7 +138,11 @@ export default function Header() {
                     <Link
                       key={item.name}
                       href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-chocolate hover:bg-gray-50"
+                      className={`-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 transition-colors ${
+                        item.highlight 
+                          ? 'bg-coral text-white hover:bg-coral/90' 
+                          : 'text-chocolate hover:bg-gray-50'
+                      }`}
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       {item.name}
