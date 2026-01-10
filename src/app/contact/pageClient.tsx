@@ -1,12 +1,16 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { useSearchParams } from 'next/navigation'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import { motion } from 'framer-motion'
 import { trackFormSubmission, trackContactRequest } from '@/lib/conversion-tracking'
 
 export default function Contact() {
+  const searchParams = useSearchParams()
+  const packageParam = searchParams?.get('package') || ''
+  
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -14,21 +18,33 @@ export default function Contact() {
     company: '',
     message: '',
     vendingExperience: '',
+    websitePackage: packageParam || '',
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
+
+  useEffect(() => {
+    if (packageParam) {
+      setFormData(prev => ({ ...prev, websitePackage: packageParam }))
+    }
+  }, [packageParam])
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
     
     try {
-      const response = await fetch('https://formspree.io/f/xdkgqele', {
+      const response = await fetch('https://formspree.io/f/mjggbwdw', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          ...formData,
+          _subject: formData.websitePackage 
+            ? `Website Rental Inquiry - ${formData.websitePackage.charAt(0).toUpperCase() + formData.websitePackage.slice(1)} Package`
+            : 'Contact Form Submission',
+        }),
       })
       
       if (response.ok) {
@@ -65,6 +81,7 @@ export default function Contact() {
           company: '',
           message: '',
           vendingExperience: '',
+          websitePackage: packageParam || '',
         })
       } else {
         setSubmitStatus('error')
@@ -201,23 +218,43 @@ export default function Contact() {
                   </div>
                 </div>
 
-                <div>
-                  <label htmlFor="vendingExperience" className="block text-sm font-medium text-chocolate mb-2">
-                    Vending Experience
-                  </label>
-                  <select
-                    name="vendingExperience"
-                    id="vendingExperience"
-                    value={formData.vendingExperience}
-                    onChange={handleChange}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-coral focus:border-coral"
-                  >
-                    <option value="">Select your experience level</option>
-                    <option value="new">New to vending</option>
-                    <option value="beginner">Beginner (1-2 years)</option>
-                    <option value="intermediate">Intermediate (3-5 years)</option>
-                    <option value="experienced">Experienced (5+ years)</option>
-                  </select>
+                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+                  <div>
+                    <label htmlFor="websitePackage" className="block text-sm font-medium text-chocolate mb-2">
+                      Website Package
+                    </label>
+                    <select
+                      name="websitePackage"
+                      id="websitePackage"
+                      value={formData.websitePackage}
+                      onChange={handleChange}
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-coral focus:border-coral"
+                    >
+                      <option value="">Select a package (optional)</option>
+                      <option value="starter">Starter - $49/month</option>
+                      <option value="professional">Professional - $99/month</option>
+                      <option value="premium">Premium - $149/month</option>
+                    </select>
+                  </div>
+                  
+                  <div>
+                    <label htmlFor="vendingExperience" className="block text-sm font-medium text-chocolate mb-2">
+                      Vending Experience
+                    </label>
+                    <select
+                      name="vendingExperience"
+                      id="vendingExperience"
+                      value={formData.vendingExperience}
+                      onChange={handleChange}
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-coral focus:border-coral"
+                    >
+                      <option value="">Select your experience level</option>
+                      <option value="new">New to vending</option>
+                      <option value="beginner">Beginner (1-2 years)</option>
+                      <option value="intermediate">Intermediate (3-5 years)</option>
+                      <option value="experienced">Experienced (5+ years)</option>
+                    </select>
+                  </div>
                 </div>
 
                 <div>
@@ -241,7 +278,10 @@ export default function Contact() {
                     type="submit"
                     disabled={isSubmitting}
                     className="w-full btn-primary disabled:opacity-50 disabled:cursor-not-allowed"
-                   aria-label="{isSubmitting ? 'Sending...' : 'Send Message'}">isSubmitting ? 'Sending...' : 'Send Message'</button>
+                    aria-label={isSubmitting ? 'Sending...' : 'Send Message'}
+                  >
+                    {isSubmitting ? 'Sending...' : 'Send Message'}
+                  </button>
                 </div>
               </form>
             </motion.div>

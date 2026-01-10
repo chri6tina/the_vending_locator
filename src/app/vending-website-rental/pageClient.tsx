@@ -1,13 +1,12 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import Link from 'next/link'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import { motion } from 'framer-motion'
 import { 
   ChevronDownIcon, 
-  CheckCircleIcon,
   GlobeAltIcon,
   PhoneIcon,
   EnvelopeIcon,
@@ -20,31 +19,109 @@ import {
   MagnifyingGlassIcon,
   WrenchScrewdriverIcon
 } from '@heroicons/react/24/outline'
-import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon } from '@heroicons/react/24/solid'
+import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, CheckCircleIcon as CheckCircleIconSolid, XMarkIcon, ArrowRightIcon } from '@heroicons/react/24/solid'
+import Image from 'next/image'
 
 export default function VendingWebsiteRentalPageClient() {
   const [openFaq, setOpenFaq] = useState<number | null>(null)
-  const [activeUsers, setActiveUsers] = useState(0)
+  const [showModal, setShowModal] = useState(false)
+  const [selectedPackage, setSelectedPackage] = useState<string | null>(null)
+  const [formData, setFormData] = useState({ name: '', email: '' })
+  const [isSubmitting, setIsSubmitting] = useState(false)
 
   const toggleFaq = (index: number) => {
     setOpenFaq(openFaq === index ? null : index)
   }
 
-  // Active users counter effect
-  useEffect(() => {
-    const updateActiveUsers = () => {
-      const baseUsers = 8
-      const fluctuation = Math.floor(Math.random() * 6) + 1
-      setActiveUsers(baseUsers + fluctuation)
+  const openCheckoutModal = (packageType: string) => {
+    setSelectedPackage(packageType)
+    setShowModal(true)
+  }
+
+  const closeModal = () => {
+    setShowModal(false)
+    setSelectedPackage(null)
+    setFormData({ name: '', email: '' })
+    setIsSubmitting(false)
+  }
+
+  const getPackageInfo = (packageType: string) => {
+    const packages: Record<string, { name: string; price: number; description: string }> = {
+      starter: {
+        name: 'Starter Plan',
+        price: 49,
+        description: 'Multi-page website (3-4 pages) with basic features'
+      },
+      professional: {
+        name: 'Professional Plan',
+        price: 99,
+        description: 'Multi-page website (5-7 pages) with enhanced features'
+      },
+      premium: {
+        name: 'Premium Plan',
+        price: 149,
+        description: 'Multi-page website (8-10 pages) with advanced features'
+      }
     }
+    return packages[packageType] || { name: packageType, price: 0, description: '' }
+  }
 
-    const interval = setInterval(() => {
-      updateActiveUsers()
-    }, Math.random() * 4000 + 3000)
+  const handleFormSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    if (!selectedPackage) return
 
-    updateActiveUsers()
-    return () => clearInterval(interval)
-  }, [])
+    setIsSubmitting(true)
+    const packageInfo = getPackageInfo(selectedPackage)
+
+    try {
+      // First, submit to Formspree with package-specific details
+      const formspreeResponse = await fetch('https://formspree.io/f/mjggbwdw', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          package: selectedPackage,
+          packageName: packageInfo.name,
+          packagePrice: `$${packageInfo.price}/month`,
+          packageDescription: packageInfo.description,
+          _subject: `Website Rental Checkout - ${packageInfo.name} ($${packageInfo.price}/month)`,
+          _replyto: formData.email,
+        }),
+      })
+
+      if (!formspreeResponse.ok) {
+        throw new Error('Formspree submission failed')
+      }
+
+      // Then, create Stripe checkout session
+      const stripeResponse = await fetch('/api/website-rental-checkout', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          packageType: selectedPackage,
+          email: formData.email,
+        }),
+      })
+
+      const data = await stripeResponse.json()
+
+      if (data.success && data.url) {
+        window.location.href = data.url
+      } else {
+        alert('Error creating checkout session. Please try again.')
+        setIsSubmitting(false)
+      }
+    } catch (error) {
+      console.error('Checkout error:', error)
+      alert('Error processing your request. Please try again.')
+      setIsSubmitting(false)
+    }
+  }
 
   const faqs = [
     {
@@ -91,7 +168,7 @@ export default function VendingWebsiteRentalPageClient() {
       
       {/* Hero Section */}
       <div className="bg-warm-white">
-        <div className="mx-auto max-w-2xl px-4 sm:px-6 py-12 sm:py-16 lg:py-24">
+        <div className="mx-auto max-w-2xl px-4 sm:px-6 py-12 sm:py-16 lg:py-20">
           <div className="text-center">
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
@@ -106,7 +183,7 @@ export default function VendingWebsiteRentalPageClient() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.15 }}
-              className="mt-4 sm:mt-6"
+              className="mt-4 sm:mt-5"
             >
               <p className="text-xl sm:text-2xl lg:text-3xl font-playfair font-semibold text-coral italic px-2 sm:px-0">
                 You found us. Now let them find you.
@@ -117,65 +194,47 @@ export default function VendingWebsiteRentalPageClient() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
-              className="mt-4 sm:mt-6 text-base sm:text-lg leading-7 sm:leading-8 text-stone px-2 sm:px-0"
+              className="mt-4 sm:mt-5 text-base sm:text-lg leading-7 sm:leading-8 text-stone px-2 sm:px-0"
             >
               Get a professional vending business website—without building or managing it yourself. 
               We build and host your site, you rent it monthly for a professional online presence.
             </motion.p>
 
-            {/* Active Users Counter */}
+            {/* Trust Signals - Simplified to 2 */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="mt-6 sm:mt-8 p-4 bg-cream/50 backdrop-blur-sm rounded-2xl border border-gray-200 shadow-sm max-w-md mx-auto"
+              className="mt-6 sm:mt-8 flex flex-wrap items-center justify-center gap-3 sm:gap-6 max-w-md mx-auto px-4"
             >
-              <div className="flex items-center justify-center gap-3">
-                <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                <span className="text-sm font-medium text-chocolate">
-                  <span className="font-bold text-coral">{activeUsers}</span> people are viewing website plans right now
-                </span>
+              <div className="flex items-center gap-2">
+                <CheckBadgeIcon className="h-5 w-5 text-green-600 flex-shrink-0" />
+                <span className="text-sm font-medium text-chocolate whitespace-nowrap">Professional Design</span>
               </div>
-            </motion.div>
-
-            {/* Trust Signals */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-              className="mt-6 sm:mt-8 grid grid-cols-2 gap-4 max-w-md mx-auto"
-            >
-              {[
-                { icon: CheckBadgeIcon, text: 'Professional Design', color: 'text-green-600' },
-                { icon: StarIcon, text: 'Easy Setup', color: 'text-yellow-500' },
-                { icon: ShieldCheckIcon, text: 'Secure Hosting', color: 'text-blue-600' },
-                { icon: ClockIcon, text: 'Fast Launch', color: 'text-purple-600' },
-              ].map((signal, index) => {
-                const Icon = signal.icon
-                return (
-                  <div key={index} className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
-                    <div className="flex items-center gap-3">
-                      <Icon className={`h-5 w-5 ${signal.color}`} />
-                      <span className="text-sm font-medium text-chocolate">{signal.text}</span>
-                    </div>
-                  </div>
-                )
-              })}
+              <div className="flex items-center gap-2">
+                <ClockIcon className="h-5 w-5 text-purple-600 flex-shrink-0" />
+                <span className="text-sm font-medium text-chocolate whitespace-nowrap">Fast Launch</span>
+              </div>
             </motion.div>
 
             {/* CTA Buttons */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.8 }}
+              transition={{ duration: 0.8, delay: 0.5 }}
               className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-center justify-center gap-4"
             >
-              <Link
-                href="/pricing"
-                className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors"
+              <button
+                onClick={() => {
+                  const pricingSection = document.getElementById('pricing')
+                  if (pricingSection) {
+                    pricingSection.scrollIntoView({ behavior: 'smooth' })
+                  }
+                }}
+                className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors cursor-pointer"
               >
                 View Website Plans
-              </Link>
+              </button>
               <Link
                 href="/contact"
                 className="w-full sm:w-auto bg-transparent text-chocolate border-2 border-chocolate px-8 py-3 rounded-lg font-semibold hover:bg-chocolate hover:text-white transition-colors"
@@ -183,35 +242,94 @@ export default function VendingWebsiteRentalPageClient() {
                 Talk to Us →
               </Link>
             </motion.div>
+          </div>
+        </div>
+      </div>
 
-            {/* Social Proof */}
-            <motion.div
+      {/* Portfolio Showcase Section */}
+      <div className="bg-white py-12 sm:py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl text-center mb-8 sm:mb-12">
+            <motion.h2
               initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 1 }}
-              className="mt-6 sm:mt-8"
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="text-2xl sm:text-3xl font-playfair font-bold text-charcoal mb-3"
             >
-              <div className="flex items-center justify-center gap-3 mb-3">
-                <div className="flex -space-x-2">
-                  <div className="w-8 h-8 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full border-2 border-white shadow-sm flex items-center justify-center">
-                    <span className="text-white text-xs font-semibold">M</span>
-                  </div>
-                  <div className="w-8 h-8 bg-gradient-to-br from-green-400 to-green-600 rounded-full border-2 border-white shadow-sm flex items-center justify-center">
-                    <span className="text-white text-xs font-semibold">S</span>
-                  </div>
-                  <div className="w-8 h-8 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full border-2 border-white shadow-sm flex items-center justify-center">
-                    <span className="text-white text-xs font-semibold">D</span>
-                  </div>
-                  <div className="w-8 h-8 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full border-2 border-white shadow-sm flex items-center justify-center">
-                    <span className="text-white text-xs font-semibold">L</span>
-                  </div>
-                </div>
-                <span className="text-sm text-chocolate/70">Join 500+ vending operators</span>
+              Our Portfolio
+            </motion.h2>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.1 }}
+              viewport={{ once: true }}
+              className="text-base sm:text-lg text-stone"
+            >
+              See examples of professional vending websites we've built
+            </motion.p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {/* Portfolio Item - Jacksonville */}
+            <motion.a
+              href="https://www.jacksonvillevendingmachines.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-200"
+            >
+              <div className="relative aspect-video bg-gray-100 overflow-hidden">
+                <Image
+                  src="/Jacksonville Vending Machine Website.png"
+                  alt="Jacksonville Vending Machines Website"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-300" />
               </div>
-              <p className="text-sm text-chocolate/60">
-                "Got my website live in 2 weeks!" - <span className="font-semibold">Sarah M., Florida</span>
-              </p>
-            </motion.div>
+              <div className="p-4 sm:p-5">
+                <h3 className="text-lg font-playfair font-semibold text-chocolate mb-2 group-hover:text-coral transition-colors">
+                  Jacksonville Vending Machines
+                </h3>
+                <p className="text-sm text-stone mb-3">
+                  Professional vending website serving Jacksonville, FL
+                </p>
+                <div className="flex items-center text-coral text-sm font-medium">
+                  <span>Visit Website</span>
+                  <ArrowRightIcon className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                </div>
+              </div>
+            </motion.a>
+
+            {/* Placeholder for future portfolio items - can be uncommented when ready */}
+            {/* 
+            <motion.a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              viewport={{ once: true }}
+              className="group block bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-200"
+            >
+              <div className="relative aspect-video bg-gray-100">
+                <div className="absolute inset-0 flex items-center justify-center text-gray-400">
+                  Coming Soon
+                </div>
+              </div>
+              <div className="p-4 sm:p-5">
+                <h3 className="text-lg font-playfair font-semibold text-chocolate mb-2">
+                  More Examples Coming Soon
+                </h3>
+              </div>
+            </motion.a>
+            */}
           </div>
         </div>
       </div>
@@ -236,8 +354,209 @@ export default function VendingWebsiteRentalPageClient() {
         </div>
       </div>
 
+      {/* Pricing Packages Section */}
+      <div id="pricing" className="bg-warm-white py-16">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl text-center mb-8">
+            <motion.h2
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="text-3xl font-playfair font-bold text-charcoal sm:text-4xl mb-3"
+            >
+              Choose Your Website Plan
+            </motion.h2>
+            <p className="text-lg text-stone">
+              Affordable monthly plans that fit your business needs
+            </p>
+          </div>
+          
+          <div className="grid gap-6 md:grid-cols-3 max-w-6xl mx-auto">
+            {/* Starter Plan */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="card hover:shadow-lg transition-shadow"
+            >
+              <div className="text-center">
+                <h3 className="text-2xl font-playfair font-bold text-charcoal mb-2">Starter</h3>
+                <div className="mb-4">
+                  <span className="text-4xl font-bold text-navy">$49</span>
+                  <span className="text-stone">/month</span>
+                </div>
+                <p className="text-stone mb-5 text-sm">Perfect for new operators getting started</p>
+                <ul className="space-y-2.5 mb-6 text-left">
+                  <li className="flex items-start gap-2">
+                    <CheckCircleIconSolid className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-stone text-sm">Multi-page website (3-4 pages)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircleIconSolid className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-stone text-sm">Contact form & phone display</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircleIconSolid className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-stone text-sm">Mobile-friendly design</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircleIconSolid className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-stone text-sm">Basic SEO included</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircleIconSolid className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-stone text-sm">Hosting & security</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircleIconSolid className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-stone text-sm">2 minor updates/month</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircleIconSolid className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-stone text-sm">Email support</span>
+                  </li>
+                </ul>
+                <button
+                  onClick={() => openCheckoutModal('starter')}
+                  className="block w-full text-center bg-navy hover:bg-navy-light text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+                >
+                  Get Started
+                </button>
+              </div>
+            </motion.div>
+
+            {/* Professional Plan */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              viewport={{ once: true }}
+              className="card hover:shadow-lg transition-shadow border-2 border-coral relative"
+            >
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                <span className="bg-coral text-white px-4 py-1 rounded-full text-sm font-semibold">
+                  Most Popular
+                </span>
+              </div>
+              <div className="text-center">
+                <h3 className="text-2xl font-playfair font-bold text-charcoal mb-2">Professional</h3>
+                <div className="mb-4">
+                  <span className="text-4xl font-bold text-navy">$99</span>
+                  <span className="text-stone">/month</span>
+                </div>
+                <p className="text-stone mb-5 text-sm">Best for growing vending businesses</p>
+                <ul className="space-y-2.5 mb-6 text-left">
+                  <li className="flex items-start gap-2">
+                    <CheckCircleIconSolid className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-stone text-sm">Multi-page website (5-7 pages)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircleIconSolid className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-stone text-sm">Contact form & phone display</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircleIconSolid className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-stone text-sm">Mobile-friendly & fast loading</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircleIconSolid className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-stone text-sm">Enhanced SEO optimization</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircleIconSolid className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-stone text-sm">Multiple service areas</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircleIconSolid className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-stone text-sm">Hosting & security</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircleIconSolid className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-stone text-sm">5 minor updates/month</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircleIconSolid className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-stone text-sm">Priority email support</span>
+                  </li>
+                </ul>
+                <button
+                  onClick={() => openCheckoutModal('professional')}
+                  className="block w-full text-center bg-coral hover:bg-coral/90 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+                >
+                  Get Started
+                </button>
+              </div>
+            </motion.div>
+
+            {/* Premium Plan */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="card hover:shadow-lg transition-shadow"
+            >
+              <div className="text-center">
+                <h3 className="text-2xl font-playfair font-bold text-charcoal mb-2">Premium</h3>
+                <div className="mb-4">
+                  <span className="text-4xl font-bold text-navy">$149</span>
+                  <span className="text-stone">/month</span>
+                </div>
+                <p className="text-stone mb-5 text-sm">For established operators with custom needs</p>
+                <ul className="space-y-2.5 mb-6 text-left">
+                  <li className="flex items-start gap-2">
+                    <CheckCircleIconSolid className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-stone text-sm">Multi-page website (8-10 pages)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircleIconSolid className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-stone text-sm">Contact form & phone display</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircleIconSolid className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-stone text-sm">Mobile-friendly & fast loading</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircleIconSolid className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-stone text-sm">Advanced SEO optimization</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircleIconSolid className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-stone text-sm">Custom domain option</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircleIconSolid className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-stone text-sm">Unlimited service areas</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircleIconSolid className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-stone text-sm">Hosting & security</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircleIconSolid className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-stone text-sm">10 minor updates/month</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircleIconSolid className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-stone text-sm">Priority phone & email support</span>
+                  </li>
+                </ul>
+                <button
+                  onClick={() => openCheckoutModal('premium')}
+                  className="block w-full text-center bg-navy hover:bg-navy-light text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+                >
+                  Get Started
+                </button>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </div>
+
       {/* What This Is */}
-      <div className="bg-warm-white py-20">
+      <div className="bg-white py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center mb-12">
             <motion.h2
@@ -282,7 +601,7 @@ export default function VendingWebsiteRentalPageClient() {
       </div>
 
       {/* What This Is Not */}
-      <div className="bg-white py-20">
+      <div className="bg-warm-white py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl">
             <motion.div
@@ -541,6 +860,102 @@ export default function VendingWebsiteRentalPageClient() {
           </div>
         </div>
       </div>
+
+      {/* Checkout Modal */}
+      {showModal && (
+        <div className="fixed inset-0 z-50 overflow-y-auto">
+          <div className="flex min-h-full items-center justify-center p-4">
+            {/* Backdrop */}
+            <div 
+              className="fixed inset-0 bg-black/50 transition-opacity"
+              onClick={closeModal}
+            />
+            
+            {/* Modal */}
+            <div className="relative bg-white rounded-lg shadow-xl max-w-md w-full p-4 sm:p-6 mx-4">
+              <button
+                onClick={closeModal}
+                className="absolute top-3 right-3 sm:top-4 sm:right-4 text-gray-400 hover:text-gray-600 z-10"
+              >
+                <XMarkIcon className="h-6 w-6" />
+              </button>
+
+              {selectedPackage && (
+                <>
+                  <div className="mb-4 pb-4 border-b border-gray-200 pr-8">
+                    <h2 className="text-xl sm:text-2xl font-playfair font-bold text-chocolate mb-1">
+                      {getPackageInfo(selectedPackage).name}
+                    </h2>
+                    <div className="flex items-baseline gap-2">
+                      <span className="text-2xl sm:text-3xl font-bold text-navy">
+                        ${getPackageInfo(selectedPackage).price}
+                      </span>
+                      <span className="text-stone text-sm sm:text-base">/month</span>
+                    </div>
+                    <p className="text-xs sm:text-sm text-stone mt-2">
+                      {getPackageInfo(selectedPackage).description}
+                    </p>
+                  </div>
+                  <p className="text-sm sm:text-base text-stone mb-6">
+                    Please provide your name and email to continue to checkout.
+                  </p>
+                </>
+              )}
+
+              <form onSubmit={handleFormSubmit} className="space-y-4">
+                <div>
+                  <label htmlFor="modal-name" className="block text-sm font-medium text-chocolate mb-2">
+                    Name *
+                  </label>
+                  <input
+                    type="text"
+                    id="modal-name"
+                    name="name"
+                    required
+                    value={formData.name}
+                    onChange={(e) => setFormData(prev => ({ ...prev, name: e.target.value }))}
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-coral focus:border-coral"
+                    placeholder="Your name"
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="modal-email" className="block text-sm font-medium text-chocolate mb-2">
+                    Email *
+                  </label>
+                  <input
+                    type="email"
+                    id="modal-email"
+                    name="email"
+                    required
+                    value={formData.email}
+                    onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-coral focus:border-coral"
+                    placeholder="your@email.com"
+                  />
+                </div>
+
+                <div className="flex flex-col sm:flex-row gap-3 pt-4">
+                  <button
+                    type="button"
+                    onClick={closeModal}
+                    className="w-full sm:flex-1 px-4 py-2.5 border-2 border-gray-300 text-chocolate rounded-lg font-semibold hover:bg-gray-50 transition-colors text-sm sm:text-base"
+                  >
+                    Cancel
+                  </button>
+                  <button
+                    type="submit"
+                    disabled={isSubmitting}
+                    className="w-full sm:flex-1 px-4 py-2.5 bg-navy hover:bg-navy-light text-white rounded-lg font-semibold transition-colors disabled:opacity-50 disabled:cursor-not-allowed text-sm sm:text-base"
+                  >
+                    {isSubmitting ? 'Processing...' : 'Continue to Checkout'}
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      )}
 
       <Footer />
     </main>
