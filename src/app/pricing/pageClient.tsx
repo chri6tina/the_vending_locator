@@ -8,7 +8,7 @@ import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 import { ChevronDownIcon, MapPinIcon } from '@heroicons/react/24/outline'
-import { CheckBadgeIcon, StarIcon, ShieldCheckIcon, ClockIcon, UsersIcon } from '@heroicons/react/24/solid'
+import { CheckBadgeIcon, StarIcon } from '@heroicons/react/24/solid'
 import { useState, useEffect } from 'react'
 
 const faqs = [
@@ -188,7 +188,7 @@ export default function Pricing() {
       
       {/* Hero Section - Original Design with Animations */}
       <div className="bg-white">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 py-12 sm:py-16 lg:py-20 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 py-12 sm:py-16 lg:py-16 lg:px-8">
           <div className="mx-auto max-w-4xl text-center">
             {/* Active Users Counter Pill */}
             <div className="mb-6 p-4 bg-cream/50 backdrop-blur-sm rounded-2xl border border-gray-200 shadow-sm max-w-md mx-auto">
@@ -208,7 +208,7 @@ export default function Pricing() {
             </p>
 
             {/* Trust/Feature Badges */}
-            <div className="mt-6 sm:mt-8 grid grid-cols-2 gap-4 max-w-md mx-auto">
+            <div className="mt-6 sm:mt-8 flex items-center justify-center gap-4 max-w-md mx-auto">
               <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
                 <div className="flex items-center gap-3">
                   <CheckBadgeIcon className="h-5 w-5 text-green-600" />
@@ -221,91 +221,37 @@ export default function Pricing() {
                   <span className="text-sm font-medium text-chocolate">4.9/5 Rating</span>
                 </div>
               </div>
-              <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
-                <div className="flex items-center gap-3">
-                  <ShieldCheckIcon className="h-5 w-5 text-blue-600" />
-                  <span className="text-sm font-medium text-chocolate">Secure & Reliable</span>
-                </div>
-              </div>
-              <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
-                <div className="flex items-center gap-3">
-                  <ClockIcon className="h-5 w-5 text-purple-600" />
-                  <span className="text-sm font-medium text-chocolate">Quality Research</span>
-                </div>
-              </div>
             </div>
 
-            {/* CTA Buttons */}
+            {/* Value Proposition */}
+            <div className="mt-6 sm:mt-8 px-4 sm:px-0">
+              <p className="text-base sm:text-lg text-chocolate/70">
+                Starting at <span className="text-coral font-bold text-lg sm:text-xl">less than $0.30 per lead</span>
+              </p>
+            </div>
+
+            {/* CTA Button */}
             <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 px-4 sm:px-0">
               <Link
-                href="/hot-leads"
-                className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors"
-              >
-                Get Hot Leads
-              </Link>
-              <Link
                 href="#pricing"
-                className="w-full sm:w-auto bg-transparent text-chocolate border-2 border-chocolate px-8 py-3 rounded-lg font-semibold hover:bg-chocolate hover:text-white transition-colors"
+                className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors"
               >
                 View Pricing →
               </Link>
             </div>
-            
-            {/* Internal Links */}
-            <div className="mt-6 sm:mt-8 flex flex-wrap justify-center gap-3 px-4 sm:px-0">
-              <Link
-                href="/vending-leads"
-                className="text-sm text-navy hover:text-navy-light underline"
-              >
-                View All States
-              </Link>
-            </div>
 
-            {/* Social Proof */}
+            {/* Testimonial */}
             <div className="mt-6 sm:mt-8 px-4 sm:px-0">
-              <div className="flex items-center justify-center gap-3 mb-3">
-                <div className="flex -space-x-2">
-                  <div className="w-8 h-8 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full border-2 border-white shadow-sm flex items-center justify-center">
-                    <span className="text-white text-xs font-semibold">M</span>
-                  </div>
-                  <div className="w-8 h-8 bg-gradient-to-br from-green-400 to-green-600 rounded-full border-2 border-white shadow-sm flex items-center justify-center">
-                    <span className="text-white text-xs font-semibold">S</span>
-                  </div>
-                  <div className="w-8 h-8 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full border-2 border-white shadow-sm flex items-center justify-center">
-                    <span className="text-white text-xs font-semibold">D</span>
-                  </div>
-                  <div className="w-8 h-8 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full border-2 border-white shadow-sm flex items-center justify-center">
-                    <span className="text-white text-xs font-semibold">L</span>
-                  </div>
-                </div>
-                <span className="text-sm text-chocolate/70">Join 2,847+ vending operators</span>
-              </div>
-              <p className="text-sm text-chocolate/60">
-                "Found my best location in 3 days!" - <span className="font-semibold">Mike R., Texas</span>
+              <p className="text-sm text-chocolate/60 italic">
+                "Found my best location in 3 days!" - <span className="font-semibold not-italic">Mike R., Texas</span>
               </p>
-            </div>
-
-            {/* Key Statistics */}
-            <div className="mt-6 sm:mt-8 grid grid-cols-3 gap-6 max-w-md mx-auto">
-              <div className="text-center">
-                <div className="text-2xl font-bold text-bronze">500+</div>
-                <div className="text-sm text-chocolate/70">Locations Found</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-bronze">15+</div>
-                <div className="text-sm text-chocolate/70">Deals Closed</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-bronze">4.9★</div>
-                <div className="text-sm text-chocolate/70">Rating</div>
-              </div>
             </div>
           </div>
         </div>
       </div>
 
       {/* Pricing Section */}
-      <div id="pricing" className="bg-cream py-16 sm:py-20 lg:py-24">
+      <div id="pricing" className="bg-cream pt-8 sm:pt-12 lg:pt-16 pb-16 sm:pb-20 lg:pb-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-4xl text-center mb-12 sm:mb-16">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-playfair font-bold tracking-tight text-chocolate mb-6">

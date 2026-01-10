@@ -5,7 +5,7 @@ import Link from 'next/link'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import { motion } from 'framer-motion'
-import { MapPinIcon, CheckCircleIcon, DocumentTextIcon, ShieldCheckIcon, ClockIcon, BuildingOffice2Icon, CurrencyDollarIcon, ArrowRightIcon } from '@heroicons/react/24/outline'
+import { MapPinIcon, CheckCircleIcon, DocumentTextIcon, ShieldCheckIcon, ClockIcon, BuildingOffice2Icon, CurrencyDollarIcon, ArrowRightIcon, MagnifyingGlassIcon } from '@heroicons/react/24/outline'
 import { stateFilingFees, calculateTotalPrice, SERVICE_FEE } from '@/data/stateFilingFees'
 
 // All 50 states + DC
@@ -65,6 +65,7 @@ const allStates = [
 
 export default function EinLLCDirectory() {
   const [expandedStates, setExpandedStates] = useState<string[]>([])
+  const [searchQuery, setSearchQuery] = useState('')
 
   const toggleState = (stateSlug: string) => {
     setExpandedStates(prev => 
@@ -73,6 +74,11 @@ export default function EinLLCDirectory() {
         : [...prev, stateSlug]
     )
   }
+
+  // Filter states based on search query
+  const filteredStates = allStates.filter(state =>
+    state.name.toLowerCase().includes(searchQuery.toLowerCase())
+  )
 
   return (
     <main className="min-h-screen bg-cream">
@@ -203,9 +209,52 @@ export default function EinLLCDirectory() {
             >
               File Your LLC by State
             </motion.h2>
+
+            {/* Search Bar */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.5 }}
+              className="mb-8"
+            >
+              <div className="relative">
+                <MagnifyingGlassIcon className="absolute left-4 top-1/2 transform -translate-y-1/2 h-5 w-5 text-stone/60" />
+                <input
+                  type="text"
+                  placeholder="Search for your state..."
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  className="w-full pl-12 pr-4 py-3 bg-white border border-stone/30 rounded-lg focus:ring-2 focus:ring-coral focus:border-transparent text-chocolate placeholder-stone/50 transition-all"
+                />
+                {searchQuery && (
+                  <button
+                    onClick={() => setSearchQuery('')}
+                    className="absolute right-4 top-1/2 transform -translate-y-1/2 text-stone/60 hover:text-stone transition-colors"
+                  >
+                    <span className="text-xl">×</span>
+                  </button>
+                )}
+              </div>
+              {searchQuery && (
+                <p className="mt-2 text-sm text-stone/70">
+                  {filteredStates.length} {filteredStates.length === 1 ? 'state' : 'states'} found
+                </p>
+              )}
+            </motion.div>
             
             <div className="grid gap-4">
-              {allStates.map((state, index) => {
+              {filteredStates.length === 0 ? (
+                <div className="bg-white rounded-lg shadow-md border border-stone/20 p-8 text-center">
+                  <p className="text-stone/70">No states found matching "{searchQuery}"</p>
+                  <button
+                    onClick={() => setSearchQuery('')}
+                    className="mt-4 text-coral hover:text-coral/80 font-medium"
+                  >
+                    Clear search
+                  </button>
+                </div>
+              ) : (
+                filteredStates.map((state, index) => {
                 const stateFee = stateFilingFees[state.slug] || 0
                 const totalPrice = calculateTotalPrice(state.slug)
                 const isExpanded = expandedStates.includes(state.slug)
@@ -230,15 +279,15 @@ export default function EinLLCDirectory() {
                       </div>
                       <Link
                         href={`/ein-llc/${state.slug}`}
-                        className="ml-4 px-4 py-2 bg-navy text-white rounded-lg hover:bg-navy/90 transition-colors text-sm font-medium flex items-center gap-2"
+                        className="ml-4 px-5 py-2.5 bg-navy text-white rounded-lg hover:bg-navy/90 transition-colors text-sm font-medium flex items-center gap-2 whitespace-nowrap min-w-[160px] justify-center"
                       >
-                        File LLC in {state.name.split(' ')[0]}
+                        File LLC
                         <ArrowRightIcon className="h-4 w-4" />
                       </Link>
                     </div>
                   </motion.div>
                 )
-              })}
+              }))}
             </div>
 
             {/* Call to Action */}
@@ -431,4 +480,5 @@ export default function EinLLCDirectory() {
     </main>
   )
 }
+
 

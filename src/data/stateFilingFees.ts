@@ -69,3 +69,4 @@ export function getStateFee(stateSlug: string): number {
   return stateFilingFees[stateSlug.toLowerCase()] || 0
 }
 
+

@@ -144,7 +144,19 @@ export default function MountPleasantSouthCarolinaVendingLeadsPage() {
               </div>
             </motion.div>
 
-            {/* CTA Buttons */}
+            
+{/* Value Proposition */}
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.9 }}
+                className="mb-6"
+              >
+                <p className="text-base sm:text-lg text-stone">
+                  Starting at <span className="text-coral font-bold text-lg sm:text-xl">less than $0.30 per lead</span>
+                </p>
+              </motion.div>
+{/* CTA Buttons */}
             <motion.div 
               className="flex flex-col sm:flex-row gap-4 justify-center"
               initial={{ opacity: 0, y: 20 }}

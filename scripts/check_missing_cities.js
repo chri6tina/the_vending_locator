@@ -45,3 +45,4 @@ console.log(`\nFirst 20 missing cities:`);
 missing.slice(0, 20).forEach(slug => console.log(`  - ${slug}`));
 
 
+

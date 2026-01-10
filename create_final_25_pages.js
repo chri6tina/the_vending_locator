@@ -226,3 +226,4 @@ for (const city of citiesToCreate) {
 console.log(`\n=== SUMMARY ===`);
 console.log(`Created: ${created} pages`);
 
+

@@ -102,10 +102,21 @@ export default function VendingWebsiteRentalPageClient() {
               Vending Website Rental
             </motion.h1>
             
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.15 }}
+              className="mt-4 sm:mt-6"
+            >
+              <p className="text-xl sm:text-2xl lg:text-3xl font-playfair font-semibold text-coral italic px-2 sm:px-0">
+                You found us. Now let them find you.
+              </p>
+            </motion.div>
+            
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
               className="mt-4 sm:mt-6 text-base sm:text-lg leading-7 sm:leading-8 text-stone px-2 sm:px-0"
             >
               Get a professional vending business website—without building or managing it yourself. 
@@ -217,7 +228,8 @@ export default function VendingWebsiteRentalPageClient() {
               className="bg-gradient-to-br from-warm-white to-white rounded-xl p-8 border border-gray-200 shadow-sm"
             >
               <p className="text-lg text-stone leading-relaxed">
-                We build and host your website, and you rent it monthly for a professional online presence that helps customers contact you. Your website displays your phone number, email address, and contact form prominently, making it easy for potential customers to reach you. This is an advertising and lead-capture website designed to help you get more inquiries and grow your vending business.
+                We build and host your website—you rent it monthly. Your phone number, email, and contact form are front and center, making it easy for customers to reach you. It's a professional lead-capture site that helps you get more inquiries and grow your vending business.{' '}
+                <span className="text-coral font-semibold">No cold calling.</span>
               </p>
             </motion.div>
           </div>

@@ -146,7 +146,7 @@ export default function SanAntonioTexasVendingLeadsPage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.8 }}
-                className="mt-6 sm:mt-8 grid grid-cols-2 gap-4 max-w-md mx-auto mb-8"
+                className="mt-6 sm:mt-8 grid grid-cols-2 gap-4 max-w-md mx-auto mb-6"
               >
                 <div className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
                   <div className="flex items-center gap-3">
@@ -174,7 +174,19 @@ export default function SanAntonioTexasVendingLeadsPage() {
                 </div>
               </motion.div>
 
-              {/* CTA Buttons */}
+              
+{/* Value Proposition */}
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.9 }}
+                className="mb-6"
+              >
+                <p className="text-base sm:text-lg text-stone">
+                  Starting at <span className="text-coral font-bold text-lg sm:text-xl">less than $0.30 per lead</span>
+                </p>
+              </motion.div>
+{/* CTA Buttons */}
               <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}

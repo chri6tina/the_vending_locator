@@ -192,3 +192,4 @@ export default function EinLLCCheckoutButton({ stateSlug, citySlug, cityName, st
 4. Do you need webhooks to handle post-payment processing?
 5. Should you collect additional information (business name, type, etc.) before checkout?
 
+

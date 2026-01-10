@@ -439,3 +439,4 @@ finalCities.forEach((city, idx) => {
 fs.writeFileSync('next_100_cities.json', JSON.stringify(finalCities, null, 2));
 console.log(`\nSaved ${finalCities.length} cities to next_100_cities.json`);
 
+

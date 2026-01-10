@@ -42,9 +42,9 @@ export default function Header() {
             <Link
               key={item.name}
               href={item.href}
-              className={`text-sm font-semibold leading-6 transition-colors ${
+              className={`text-sm font-semibold leading-6 transition-colors flex items-center ${
                 item.highlight 
-                  ? 'text-coral hover:text-coral/80 border-b-2 border-coral pb-1' 
+                  ? 'text-coral hover:text-coral/80 border-b-2 border-coral pb-0.5' 
                   : 'text-chocolate hover:text-coral'
               }`}
             >

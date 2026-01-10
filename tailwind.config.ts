@@ -18,6 +18,7 @@ const config: Config = {
         'bronze': '#92400e',      // Rich bronze accent
         'bronze-light': '#a16207', // Lighter bronze
         'coral': '#f97360',       // CTA coral color
+        'cream': '#fef9f3',       // Light cream for cards
       },
       fontFamily: {
         'playfair': ['Playfair Display', 'serif'],

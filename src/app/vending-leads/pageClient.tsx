@@ -48,6 +48,18 @@ export default function VendingLeadsDirectory() {
               Comprehensive directory of vending machine leads and locations across all 50 states. 
               Find qualified businesses for vending machine placement.
             </motion.p>
+            
+            {/* Value Proposition */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              className="mt-6"
+            >
+              <p className="text-base sm:text-lg text-chocolate/70">
+                Starting at <span className="text-coral font-bold text-lg sm:text-xl">less than $0.30 per lead</span>
+              </p>
+            </motion.div>
           </div>
         </div>
       </div>

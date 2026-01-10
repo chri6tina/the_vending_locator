@@ -175,3 +175,4 @@ citiesToCreate.slice(0, 20).forEach((city, idx) => {
   console.log(`${idx + 1}. ${city.name}, ${city.state} (${city.slug})`);
 });
 
+
