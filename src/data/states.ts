@@ -16,8 +16,7 @@ const states: State[] = [
       { name: 'Huntsville', slug: 'huntsville-alabama' },
       { name: 'Mobile', slug: 'mobile-alabama' },
       { name: 'Montgomery', slug: 'montgomery-alabama' },
-      { name: 'Tuscaloosa', slug: 'tuscaloosa-alabama' }
-    ,
+      { name: 'Tuscaloosa', slug: 'tuscaloosa-alabama' },
       { name: 'Prattville', slug: 'prattville-alabama' },
       { name: 'Opelika', slug: 'opelika-alabama' },
       { name: 'Bessemer', slug: 'bessemer-alabama' },
@@ -81,8 +80,7 @@ const states: State[] = [
       { name: 'Tempe', slug: 'tempe-arizona' },
       { name: 'Tucson', slug: 'tucson-arizona' },
       { name: 'Flagstaff', slug: 'flagstaff-arizona' },
-      { name: 'Yuma', slug: 'yuma-arizona' }
-    ,
+      { name: 'Yuma', slug: 'yuma-arizona' },
       { name: 'Apache Junction', slug: 'apache-junction-arizona' },
       { name: 'Bullhead City', slug: 'bullhead-city-arizona' },
       { name: 'Lake Havasu City', slug: 'lake-havasu-city-arizona' },
@@ -109,8 +107,7 @@ const states: State[] = [
       { name: 'North Little Rock', slug: 'north-little-rock-arkansas' },
       { name: 'Pine Bluff', slug: 'pine-bluff-arkansas' },
       { name: 'Rogers', slug: 'rogers-arkansas' },
-      { name: 'Springdale', slug: 'springdale-arkansas' }
-    ,
+      { name: 'Springdale', slug: 'springdale-arkansas' },
       { name: 'Texarkana', slug: 'texarkana-arkansas' },
       { name: 'West Memphis', slug: 'west-memphis-arkansas' },
       { name: 'Paragould', slug: 'paragould-arkansas' },
@@ -228,8 +225,7 @@ const states: State[] = [
       { name: 'Mission Viejo', slug: 'mission-viejo-california' },
       { name: 'San Angelo', slug: 'san-angelo-california' },
       { name: 'South Gate', slug: 'south-gate-california' },
-      { name: 'Vista', slug: 'vista-california' }
-    ,
+      { name: 'Vista', slug: 'vista-california' },
       { name: 'Baldwin Park', slug: 'baldwin-park-california' },
       { name: 'Bellflower', slug: 'bellflower-california' },
       { name: 'Citrus Heights', slug: 'citrus-heights-california' },
@@ -562,8 +558,7 @@ const states: State[] = [
       { name: 'Longmont', slug: 'longmont-colorado' },
       { name: 'Pueblo', slug: 'pueblo-colorado' },
       { name: 'Thornton', slug: 'thornton-colorado' },
-      { name: 'Westminster', slug: 'westminster-colorado' }
-    ,
+      { name: 'Westminster', slug: 'westminster-colorado' },
       { name: 'Broomfield', slug: 'broomfield-colorado' },
       { name: 'Castle Rock', slug: 'castle-rock-colorado' },
       { name: 'Commerce City', slug: 'commerce-city-colorado' },
@@ -610,8 +605,7 @@ const states: State[] = [
       { name: 'New Haven', slug: 'new-haven-connecticut' },
       { name: 'Norwalk', slug: 'norwalk-connecticut' },
       { name: 'Stamford', slug: 'stamford-connecticut' },
-      { name: 'Waterbury', slug: 'waterbury-connecticut' }
-    ,
+      { name: 'Waterbury', slug: 'waterbury-connecticut' },
       { name: 'Bristol', slug: 'bristol-connecticut' },
       { name: 'Enfield', slug: 'enfield-connecticut' },
       { name: 'Hamden', slug: 'hamden-connecticut' },
@@ -733,8 +727,7 @@ const states: State[] = [
       { name: 'Tallahassee', slug: 'tallahassee-florida' },
       { name: 'Tampa', slug: 'tampa-florida' },
       { name: 'Wellington', slug: 'wellington-florida' },
-      { name: 'West Palm Beach', slug: 'west-palm-beach-florida' }
-    ,
+      { name: 'West Palm Beach', slug: 'west-palm-beach-florida' },
       { name: 'Aventura', slug: 'aventura-florida' },
       { name: 'Casselberry', slug: 'casselberry-florida' },
       { name: 'Coral Gables', slug: 'coral-gables-florida' },
@@ -965,8 +958,7 @@ const states: State[] = [
       { name: 'Sandy Springs', slug: 'sandy-springs-georgia' },
       { name: 'Savannah', slug: 'savannah-georgia' },
       { name: 'Valdosta', slug: 'valdosta-georgia' },
-      { name: 'Warner Robins', slug: 'warner-robins-georgia' }
-    ,
+      { name: 'Warner Robins', slug: 'warner-robins-georgia' },
       { name: 'Alpharetta', slug: 'alpharetta-georgia' },
       { name: 'Americus', slug: 'americus-georgia' },
       { name: 'Brunswick', slug: 'brunswick-georgia' },
@@ -1188,8 +1180,7 @@ const states: State[] = [
       { name: 'Springfield', slug: 'springfield-illinois' },
       { name: 'Tinley Park', slug: 'tinley-park-illinois' },
       { name: 'Waukegan', slug: 'waukegan-illinois' },
-      { name: 'Wheaton', slug: 'wheaton-illinois' }
-    ,
+      { name: 'Wheaton', slug: 'wheaton-illinois' },
       { name: 'Addison', slug: 'addison-illinois' },
       { name: 'Bartlett', slug: 'bartlett-illinois' },
       { name: 'Buffalo Grove', slug: 'buffalo-grove-illinois' },
@@ -1272,8 +1263,7 @@ const states: State[] = [
       { name: 'Kokomo', slug: 'kokomo-indiana' },
       { name: 'Muncie', slug: 'muncie-indiana' },
       { name: 'South Bend', slug: 'south-bend-indiana' },
-      { name: 'Terre Haute', slug: 'terre-haute-indiana' }
-    ,
+      { name: 'Terre Haute', slug: 'terre-haute-indiana' },
       { name: 'Elkhart', slug: 'elkhart-indiana' },
       { name: 'Lafayette', slug: 'lafayette' },
       { name: 'Angola', slug: 'angola-indiana' },
@@ -1341,8 +1331,7 @@ const states: State[] = [
       { name: 'Dubuque', slug: 'dubuque-iowa' },
       { name: 'Iowa City', slug: 'iowa-city-iowa' },
       { name: 'Sioux City', slug: 'sioux-city-iowa' },
-      { name: 'Waterloo', slug: 'waterloo-iowa' }
-    ,
+      { name: 'Waterloo', slug: 'waterloo-iowa' },
       { name: 'Council Bluffs', slug: 'council-bluffs-iowa' },
       { name: 'West Des Moines', slug: 'west-des-moines' },
       { name: 'Ankeny', slug: 'ankeny-iowa' },
@@ -1372,8 +1361,7 @@ const states: State[] = [
       { name: 'Dodge City', slug: 'dodge-city-kansas' },
       { name: 'Hutchinson', slug: 'hutchinson-kansas' },
       { name: 'Leavenworth', slug: 'leavenworth-kansas' },
-      { name: 'Salina', slug: 'salina-kansas' }
-    ,
+      { name: 'Salina', slug: 'salina-kansas' },
       { name: 'Lenexa', slug: 'lenexa' },
       { name: 'Arkansas City', slug: 'arkansas-city-kansas' },
       { name: 'Atchison', slug: 'atchison-kansas' },
@@ -1407,8 +1395,7 @@ const states: State[] = [
       { name: 'Louisville', slug: 'louisville-kentucky' },
       { name: 'Owensboro', slug: 'owensboro-kentucky' },
       { name: 'Paducah', slug: 'paducah-kentucky' },
-      { name: 'Richmond', slug: 'richmond-kentucky' }
-    ,
+      { name: 'Richmond', slug: 'richmond-kentucky' },
       { name: 'Ashland', slug: 'ashland-kentucky' },
       { name: 'Elizabethtown', slug: 'elizabethtown-kentucky' },
       { name: 'Madisonville', slug: 'madisonville-kentucky' },
@@ -1451,8 +1438,7 @@ const states: State[] = [
       { name: 'Monroe', slug: 'monroe-louisiana' },
       { name: 'New Orleans', slug: 'new-orleans-louisiana' },
       { name: 'Shreveport', slug: 'shreveport-louisiana' },
-      { name: 'Slidell', slug: 'slidell-louisiana' }
-    ,
+      { name: 'Slidell', slug: 'slidell-louisiana' },
       { name: 'Gretna', slug: 'gretna-louisiana' },
       { name: 'Hammond', slug: 'hammond-louisiana' },
       { name: 'Laplace', slug: 'laplace-louisiana' },
@@ -1493,8 +1479,7 @@ const states: State[] = [
       { name: 'Biddeford', slug: 'biddeford-maine' },
       { name: 'Saco', slug: 'saco-maine' },
       { name: 'Sanford', slug: 'sanford-maine' },
-      { name: 'Waterville', slug: 'waterville-maine' }
-    ,
+      { name: 'Waterville', slug: 'waterville-maine' },
       { name: 'Arkansas City', slug: 'arkansas-city-kansas' },
       { name: 'Atchison', slug: 'atchison-kansas' },
       { name: 'Chanute', slug: 'chanute-kansas' },
@@ -1535,8 +1520,7 @@ const states: State[] = [
       { name: 'Gaithersburg', slug: 'gaithersburg-maryland' },
       { name: 'Hagerstown', slug: 'hagerstown-maryland' },
       { name: 'Rockville', slug: 'rockville-maryland' },
-      { name: 'Silver Spring', slug: 'silver-spring-maryland' }
-    ,
+      { name: 'Silver Spring', slug: 'silver-spring-maryland' },
       { name: 'Bethesda', slug: 'bethesda-maryland' },
       { name: 'Bowie', slug: 'bowie-maryland' },
       { name: 'College Park', slug: 'college-park-maryland' },
@@ -1587,8 +1571,7 @@ const states: State[] = [
       { name: 'Revere', slug: 'revere-massachusetts' },
       { name: 'Somerville', slug: 'somerville-massachusetts' },
       { name: 'Taunton', slug: 'taunton-massachusetts' },
-      { name: 'Waltham', slug: 'waltham-massachusetts' }
-    ,
+      { name: 'Waltham', slug: 'waltham-massachusetts' },
       { name: 'Haverhill', slug: 'haverhill-massachusetts' },
       { name: 'Pittsfield', slug: 'pittsfield' },
       { name: 'Adams', slug: 'adams-massachusetts' },
@@ -1667,8 +1650,7 @@ const states: State[] = [
       { name: 'Novi', slug: 'novi-michigan' },
       { name: 'Pontiac', slug: 'pontiac-michigan' },
       { name: 'Taylor', slug: 'taylor-michigan' },
-      { name: 'Wyoming', slug: 'wyoming-michigan' }
-    ,
+      { name: 'Wyoming', slug: 'wyoming-michigan' },
       { name: 'Battle Creek', slug: 'battle-creek' },
       { name: 'Adrian', slug: 'adrian-michigan' },
       { name: 'Albion', slug: 'albion-michigan' },
@@ -1725,8 +1707,7 @@ const states: State[] = [
       { name: 'Saint Paul', slug: 'saint-paul-minnesota' },
       { name: 'St. Paul', slug: 'st-paul-minnesota' },
       { name: 'St. Cloud', slug: 'st-cloud-minnesota' },
-      { name: 'Woodbury', slug: 'woodbury-minnesota' }
-    ,
+      { name: 'Woodbury', slug: 'woodbury-minnesota' },
       { name: 'Burnsville', slug: 'burnsville-minnesota' },
       { name: 'Coon Rapids', slug: 'coon-rapids-minnesota' },
       { name: 'Eden Prairie', slug: 'eden-prairie-minnesota' },
@@ -1791,8 +1772,7 @@ const states: State[] = [
       { name: 'Greenville', slug: 'greenville-mississippi' },
       { name: 'Meridian', slug: 'meridian-mississippi' },
       { name: 'Oxford', slug: 'oxford-mississippi' },
-      { name: 'Starkville', slug: 'starkville-mississippi' }
-    ,
+      { name: 'Starkville', slug: 'starkville-mississippi' },
       { name: 'Natchez', slug: 'natchez-mississippi' },
       { name: 'Vicksburg', slug: 'vicksburg' },
       { name: 'Booneville', slug: 'booneville-mississippi' },
@@ -1829,8 +1809,7 @@ const states: State[] = [
       { name: "Lee's Summit", slug: 'lees-summit-missouri' },
       { name: "O'Fallon", slug: 'ofallon-missouri' },
       { name: 'Springfield', slug: 'springfield-missouri' },
-      { name: 'St. Louis', slug: 'st-louis-missouri' }
-    ,
+      { name: 'St. Louis', slug: 'st-louis-missouri' },
       { name: 'Blue Springs', slug: 'blue-springs-missouri' },
       { name: 'Cape Girardeau', slug: 'cape-girardeau-missouri' },
       { name: 'Florissant', slug: 'florissant-missouri' },
@@ -1883,8 +1862,7 @@ const states: State[] = [
       { name: 'Helena', slug: 'helena-montana' },
       { name: 'Kalispell', slug: 'kalispell-montana' },
       { name: 'Missoula', slug: 'missoula-montana' },
-      { name: 'Havre', slug: 'havre-montana' }
-    ,
+      { name: 'Havre', slug: 'havre-montana' },
       { name: 'Jefferson City', slug: 'jefferson-city-missouri' },
       { name: 'St. Charles', slug: 'st-charles-missouri' },
       { name: 'St. Joseph', slug: 'st-joseph-missouri' },
@@ -2004,8 +1982,7 @@ const states: State[] = [
       { name: 'Sayreville', slug: 'sayreville-new-jersey' },
       { name: 'Union City', slug: 'union-city-new-jersey' },
       { name: 'Vineland', slug: 'vineland-new-jersey' },
-      { name: 'West New York', slug: 'west-new-york-new-jersey' }
-    ,
+      { name: 'West New York', slug: 'west-new-york-new-jersey' },
       { name: 'East Orange', slug: 'east-orange' },
       { name: 'Asbury Park', slug: 'asbury-park-new-jersey' },
       { name: 'Atlantic City', slug: 'atlantic-city-new-jersey' },
@@ -2102,8 +2079,7 @@ const states: State[] = [
       { name: 'Troy', slug: 'troy-new-york' },
       { name: 'Utica', slug: 'utica-new-york' },
       { name: 'White Plains', slug: 'white-plains-new-york' },
-      { name: 'Yonkers', slug: 'yonkers-new-york' }
-    ,
+      { name: 'Yonkers', slug: 'yonkers-new-york' },
       { name: 'Amherst', slug: 'amherst-new-york' },
       { name: 'Niagara Falls', slug: 'niagara-falls-new-york' },
       { name: 'Poughkeepsie', slug: 'poughkeepsie-new-york' },
@@ -2165,8 +2141,7 @@ const states: State[] = [
       { name: 'High Point', slug: 'high-point-north-carolina' },
       { name: 'Raleigh', slug: 'raleigh-north-carolina' },
       { name: 'Wilmington', slug: 'wilmington-north-carolina' },
-      { name: 'Winston-Salem', slug: 'winston-salem-north-carolina' }
-    ,
+      { name: 'Winston-Salem', slug: 'winston-salem-north-carolina' },
       { name: 'Burlington', slug: 'burlington-north-carolina' },
       { name: 'Chapel Hill', slug: 'chapel-hill-north-carolina' },
       { name: 'Greenville', slug: 'greenville-north-carolina' },
@@ -2399,8 +2374,7 @@ const states: State[] = [
       { name: 'Pittsburgh', slug: 'pittsburgh-pennsylvania' },
       { name: 'Reading', slug: 'reading-pennsylvania' },
       { name: 'Scranton', slug: 'scranton-pennsylvania' },
-      { name: 'York', slug: 'york-pennsylvania' }
-    ,
+      { name: 'York', slug: 'york-pennsylvania' },
       { name: 'Wilkes-Barre', slug: 'wilkes-barre' },
       { name: 'Altoona', slug: 'altoona-pennsylvania' },
       { name: 'Beaver Falls', slug: 'beaver-falls-pennsylvania' },
@@ -2552,8 +2526,7 @@ const states: State[] = [
       { name: 'Knoxville', slug: 'knoxville-tennessee' },
       { name: 'Memphis', slug: 'memphis-tennessee' },
       { name: 'Murfreesboro', slug: 'murfreesboro-tennessee' },
-      { name: 'Nashville', slug: 'nashville-tennessee' }
-    ,
+      { name: 'Nashville', slug: 'nashville-tennessee' },
       { name: 'Bartlett', slug: 'bartlett-tennessee' },
       { name: 'Brentwood', slug: 'brentwood-tennessee' },
       { name: 'Collierville', slug: 'collierville' },
@@ -2639,9 +2612,7 @@ const states: State[] = [
       { name: 'Plano', slug: 'plano-texas' },
       { name: 'San Antonio', slug: 'san-antonio-texas' },
       { name: 'San Angelo', slug: 'san-angelo-texas' },
-      { name: 'Sugar Land', slug: 'sugar-land-texas' }
-    ,
-      { name: 'Longview', slug: 'longview' },
+      { name: 'Longview', slug: 'longview-texas' },
       { name: 'Alamo', slug: 'alamo-texas' },
       { name: 'Alvin', slug: 'alvin-texas' },
       { name: 'Angleton', slug: 'angleton-texas' },
@@ -2763,8 +2734,7 @@ const states: State[] = [
       { name: 'St. George', slug: 'st-george-utah' },
       { name: 'Taylorsville', slug: 'taylorsville-utah' },
       { name: 'West Jordan', slug: 'west-jordan-utah' },
-      { name: 'West Valley City', slug: 'west-valley-city-utah' }
-    ,
+      { name: 'West Valley City', slug: 'west-valley-city-utah' },
       { name: 'St. George', slug: 'st.-george' },
       { name: 'American Fork', slug: 'american-fork-utah' },
       { name: 'Bountiful', slug: 'bountiful-utah' },
@@ -2802,8 +2772,7 @@ const states: State[] = [
       { name: 'Barre', slug: 'barre-vermont' },
       { name: 'Montpelier', slug: 'montpelier-vermont' },
       { name: 'Rutland', slug: 'rutland-vermont' },
-      { name: 'St. Albans', slug: 'st-albans-vermont' }
-    ,
+      { name: 'St. Albans', slug: 'st-albans-vermont' },
       { name: 'St. Albans', slug: 'st.-albans' },
       { name: 'Bennington', slug: 'bennington-vermont' },
       { name: 'Brattleboro', slug: 'brattleboro-vermont' },

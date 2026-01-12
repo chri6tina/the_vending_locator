@@ -12,7 +12,7 @@ import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function Lauderdale-by-the-SeaFloridaVendingLeadsPage() {
+export default function LauderdaleByTheSeaFloridaVendingLeadsPage() {
   // City and state display names
   const cityDisplayName = 'Lauderdale-by-the-Sea';
   const stateDisplayName = 'Florida';

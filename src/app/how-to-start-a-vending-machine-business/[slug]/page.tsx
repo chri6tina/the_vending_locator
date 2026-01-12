@@ -2,7 +2,6 @@ import { Metadata } from 'next'
 import Link from 'next/link'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import states from '@/data/states'
 import { notFound } from 'next/navigation'
 import { cityInfo } from '@/data/cityInfo'
 
@@ -61,37 +60,34 @@ export default async function GuideCityPage({ params }: Params) {
   const citySlug = slug
   const cityTitle = citySlug.split('-').map(s => s.charAt(0).toUpperCase() + s.slice(1)).join(' ')
 
-  // Try to import from _city-pages first (for enhanced pages with service links)
-  let PageClient
-  try {
-    const module = await import(`@/app/_city-pages/how-to-start-a-vending-machine-business/${citySlug}/pageClient`)
-    PageClient = module.default
-    
-    if (PageClient) {
-      // Render the enhanced pageClient component
-      return <PageClient />
-    }
-  } catch (error) {
-    // PageClient not found in _city-pages, fall back to default content
-    // This is expected for cities without enhanced pages
-  }
+  // Dynamic import temporarily disabled to fix performance issues
+  // Enhanced city pages can be re-enabled later with better optimization
 
-  // Related guides (same state)
-  const stateEntry = states.find(st => st.cities.some(c => c.slug === citySlug))
-  const stateName = stateEntry ? stateEntry.name : 'Your State'
-  const relatedCities = stateEntry
-    ? stateEntry.cities.filter(c => c.slug !== citySlug).slice(0, 8)
-    : []
-  const cityEntry = stateEntry ? stateEntry.cities.find(c => c.slug === citySlug) : undefined
-  const cityDisplayName = cityEntry
-    ? cityEntry.name
-    : (() => {
-        const parts = cityTitle.split(' ')
-        if (parts.length > 1 && parts[parts.length - 1].toLowerCase() === stateName.toLowerCase()) {
-          return parts.slice(0, -1).join(' ')
-        }
-        return cityTitle
-      })()
+  // Extract city and state from slug (optimized - no need to load full states array)
+  const slugParts = citySlug.split('-')
+  const stateSlug = slugParts[slugParts.length - 1] // Last part is state
+  const cityNameParts = slugParts.slice(0, -1) // Everything before last part is city
+  
+  // Simple state name mapping (only for display)
+  const stateNameMap: Record<string, string> = {
+    'texas': 'Texas',
+    'california': 'California',
+    'florida': 'Florida',
+    'new-york': 'New York',
+    'pennsylvania': 'Pennsylvania',
+    'illinois': 'Illinois',
+    'ohio': 'Ohio',
+    'georgia': 'Georgia',
+    'north-carolina': 'North Carolina',
+    'michigan': 'Michigan'
+  }
+  
+  // Capitalize state name properly
+  const stateName = stateNameMap[stateSlug] || stateSlug.split('-').map(s => s.charAt(0).toUpperCase() + s.slice(1)).join(' ')
+  const cityDisplayName = cityNameParts.map(part => part.charAt(0).toUpperCase() + part.slice(1)).join(' ')
+  
+  // Related cities - simplified (can be enhanced later if needed)
+  const relatedCities: Array<{ name: string; slug: string }> = []
 
   return (
     <>
@@ -369,30 +365,22 @@ export default async function GuideCityPage({ params }: Params) {
       <section className="py-12 bg-white border-t border-gray-200">
         <div className="mx-auto max-w-7xl px-6">
           <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">
-            {stateEntry ? `More guides in ${stateEntry.name}` : 'Explore more markets'}
+            Explore more markets
           </h2>
-          {stateEntry && relatedCities.length > 0 ? (
-            <div className="flex flex-wrap gap-3">
-              {relatedCities.map(city => (
-                <Link
-                  key={city.slug}
-                  href={`/how-to-start-a-vending-machine-business/${city.slug}`}
-                  className="px-3 py-2 rounded-lg border border-gray-200 bg-cream/60 text-chocolate hover:text-navy"
-                >
-                  How to Start in {city.name}
-                </Link>
-              ))}
-            </div>
-          ) : (
-            <div className="flex flex-wrap gap-3">
-              <Link
-                href="/guide"
-                className="px-3 py-2 rounded-lg border border-gray-200 bg-cream/60 text-chocolate hover:text-navy"
-              >
-                Browse all city guides
-              </Link>
-            </div>
-          )}
+          <div className="flex flex-wrap gap-3">
+            <Link
+              href="/guide"
+              className="px-3 py-2 rounded-lg border border-gray-200 bg-cream/60 text-chocolate hover:text-navy"
+            >
+              Browse all city guides
+            </Link>
+            <Link
+              href="/how-to-start-a-vending-machine-business"
+              className="px-3 py-2 rounded-lg border border-gray-200 bg-cream/60 text-chocolate hover:text-navy"
+            >
+              View all guides
+            </Link>
+          </div>
         </div>
       </section>
       {/* JSON-LD structured data */}

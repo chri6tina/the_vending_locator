@@ -19,6 +19,7 @@ const config: Config = {
         'bronze-light': '#a16207', // Lighter bronze
         'coral': '#f97360',       // CTA coral color
         'cream': '#fef9f3',       // Light cream for cards
+        'chocolate': '#7c2d12',   // Chocolate brown
       },
       fontFamily: {
         'playfair': ['Playfair Display', 'serif'],
