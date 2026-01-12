@@ -15,15 +15,25 @@ export const vendingLeadsCities = {
     "state": "Texas",
     "slug": "abilene-texas"
   },
+  "acworth-georgia": {
+    "city": "Acworth",
+    "state": "Georgia",
+    "slug": "acworth-georgia"
+  },
   "adams-morgan-washington-dc": {
     "city": "Adams Morgan",
-    "state": "Washington DC",
+    "state": "Washington Dc",
     "slug": "adams-morgan-washington-dc"
   },
   "addison-illinois": {
     "city": "Addison",
     "state": "Illinois",
     "slug": "addison-illinois"
+  },
+  "adel-georgia": {
+    "city": "Adel",
+    "state": "Georgia",
+    "slug": "adel-georgia"
   },
   "adelanto-california": {
     "city": "Adelanto",
@@ -49,6 +59,11 @@ export const vendingLeadsCities = {
     "city": "Alameda",
     "state": "California",
     "slug": "alameda-california"
+  },
+  "alamosa-colorado": {
+    "city": "Alamosa",
+    "state": "Colorado",
+    "slug": "alamosa-colorado"
   },
   "albany-california": {
     "city": "Albany",
@@ -94,6 +109,11 @@ export const vendingLeadsCities = {
     "city": "Alexandria",
     "state": "Virginia",
     "slug": "alexandria-virginia"
+  },
+  "algonquin-illinois": {
+    "city": "Algonquin",
+    "state": "Illinois",
+    "slug": "algonquin-illinois"
   },
   "alhambra-california": {
     "city": "Alhambra",
@@ -190,6 +210,16 @@ export const vendingLeadsCities = {
     "state": "South Carolina",
     "slug": "anderson-south-carolina"
   },
+  "angola-indiana": {
+    "city": "Angola",
+    "state": "Indiana",
+    "slug": "angola-indiana"
+  },
+  "ankeny-iowa": {
+    "city": "Ankeny",
+    "state": "Iowa",
+    "slug": "ankeny-iowa"
+  },
   "ann-arbor-michigan": {
     "city": "Ann Arbor",
     "state": "Michigan",
@@ -205,6 +235,11 @@ export const vendingLeadsCities = {
     "state": "Alabama",
     "slug": "anniston-alabama"
   },
+  "ansonia-connecticut": {
+    "city": "Ansonia",
+    "state": "Connecticut",
+    "slug": "ansonia-connecticut"
+  },
   "antioch-california": {
     "city": "Antioch",
     "state": "California",
@@ -214,6 +249,11 @@ export const vendingLeadsCities = {
     "city": "Apache Junction",
     "state": "Arizona",
     "slug": "apache-junction-arizona"
+  },
+  "apalachicola-florida": {
+    "city": "Apalachicola",
+    "state": "Florida",
+    "slug": "apalachicola-florida"
   },
   "apopka-florida": {
     "city": "Apopka",
@@ -240,6 +280,11 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "arcadia-california"
   },
+  "arcadia-florida": {
+    "city": "Arcadia",
+    "state": "Florida",
+    "slug": "arcadia-florida"
+  },
   "arkansas-city-kansas": {
     "city": "Arkansas City",
     "state": "Kansas",
@@ -264,6 +309,11 @@ export const vendingLeadsCities = {
     "city": "Arroyo Grande",
     "state": "California",
     "slug": "arroyo-grande-california"
+  },
+  "artesia-california": {
+    "city": "Artesia",
+    "state": "California",
+    "slug": "artesia-california"
   },
   "arvada-colorado": {
     "city": "Arvada",
@@ -335,6 +385,11 @@ export const vendingLeadsCities = {
     "state": "Georgia",
     "slug": "atlanta-georgia"
   },
+  "atlantic-beach-florida": {
+    "city": "Atlantic Beach",
+    "state": "Florida",
+    "slug": "atlantic-beach-florida"
+  },
   "atmore-alabama": {
     "city": "Atmore",
     "state": "Alabama",
@@ -355,6 +410,11 @@ export const vendingLeadsCities = {
     "state": "Alabama",
     "slug": "auburn-alabama"
   },
+  "auburn-indiana": {
+    "city": "Auburn",
+    "state": "Indiana",
+    "slug": "auburn-indiana"
+  },
   "auburn-maine": {
     "city": "Auburn",
     "state": "Maine",
@@ -369,6 +429,11 @@ export const vendingLeadsCities = {
     "city": "Auburn",
     "state": "Washington",
     "slug": "auburn-washington"
+  },
+  "auburndale-florida": {
+    "city": "Auburndale",
+    "state": "Florida",
+    "slug": "auburndale-florida"
   },
   "augusta-georgia": {
     "city": "Augusta",
@@ -390,15 +455,35 @@ export const vendingLeadsCities = {
     "state": "Illinois",
     "slug": "aurora-illinois"
   },
+  "austell-georgia": {
+    "city": "Austell",
+    "state": "Georgia",
+    "slug": "austell-georgia"
+  },
   "austin-texas": {
     "city": "Austin",
     "state": "Texas",
     "slug": "austin-texas"
   },
+  "avalon-california": {
+    "city": "Avalon",
+    "state": "California",
+    "slug": "avalon-california"
+  },
+  "avenal-california": {
+    "city": "Avenal",
+    "state": "California",
+    "slug": "avenal-california"
+  },
   "aventura-florida": {
     "city": "Aventura",
     "state": "Florida",
     "slug": "aventura-florida"
+  },
+  "avon-park-florida": {
+    "city": "Avon Park",
+    "state": "Florida",
+    "slug": "avon-park-florida"
   },
   "avondale-arizona": {
     "city": "Avondale",
@@ -409,6 +494,11 @@ export const vendingLeadsCities = {
     "city": "Azusa",
     "state": "California",
     "slug": "azusa-california"
+  },
+  "bainbridge-georgia": {
+    "city": "Bainbridge",
+    "state": "Georgia",
+    "slug": "bainbridge-georgia"
   },
   "bakersfield-california": {
     "city": "Bakersfield",
@@ -440,6 +530,11 @@ export const vendingLeadsCities = {
     "state": "Ohio",
     "slug": "barberton-ohio"
   },
+  "barnesville-georgia": {
+    "city": "Barnesville",
+    "state": "Georgia",
+    "slug": "barnesville-georgia"
+  },
   "barnstable-massachusetts": {
     "city": "Barnstable",
     "state": "Massachusetts",
@@ -449,6 +544,11 @@ export const vendingLeadsCities = {
     "city": "Barre",
     "state": "Vermont",
     "slug": "barre-vermont"
+  },
+  "barrington-illinois": {
+    "city": "Barrington",
+    "state": "Illinois",
+    "slug": "barrington-illinois"
   },
   "barstow-california": {
     "city": "Barstow",
@@ -464,6 +564,16 @@ export const vendingLeadsCities = {
     "city": "Bartlett",
     "state": "Tennessee",
     "slug": "bartlett-tennessee"
+  },
+  "bartow-florida": {
+    "city": "Bartow",
+    "state": "Florida",
+    "slug": "bartow-florida"
+  },
+  "batavia-illinois": {
+    "city": "Batavia",
+    "state": "Illinois",
+    "slug": "batavia-illinois"
   },
   "batavia-new-york": {
     "city": "Batavia",
@@ -530,6 +640,11 @@ export const vendingLeadsCities = {
     "state": "Oregon",
     "slug": "beaverton-oregon"
   },
+  "bedford-indiana": {
+    "city": "Bedford",
+    "state": "Indiana",
+    "slug": "bedford-indiana"
+  },
   "bedford-texas": {
     "city": "Bedford",
     "state": "Texas",
@@ -545,10 +660,25 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "bell-gardens-california"
   },
+  "belle-glade-florida": {
+    "city": "Belle Glade",
+    "state": "Florida",
+    "slug": "belle-glade-florida"
+  },
+  "belleair-florida": {
+    "city": "Belleair",
+    "state": "Florida",
+    "slug": "belleair-florida"
+  },
   "bellefontaine-ohio": {
     "city": "Bellefontaine",
     "state": "Ohio",
     "slug": "bellefontaine-ohio"
+  },
+  "belleview-florida": {
+    "city": "Belleview",
+    "state": "Florida",
+    "slug": "belleview-florida"
   },
   "belleville-illinois": {
     "city": "Belleville",
@@ -580,6 +710,11 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "belmont-california"
   },
+  "belvidere-illinois": {
+    "city": "Belvidere",
+    "state": "Illinois",
+    "slug": "belvidere-illinois"
+  },
   "bend-oregon": {
     "city": "Bend",
     "state": "Oregon",
@@ -610,6 +745,11 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "berkeley-california"
   },
+  "berlin-connecticut": {
+    "city": "Berlin",
+    "state": "Connecticut",
+    "slug": "berlin-connecticut"
+  },
   "berwyn-illinois": {
     "city": "Berwyn",
     "state": "Illinois",
@@ -619,6 +759,11 @@ export const vendingLeadsCities = {
     "city": "Bessemer",
     "state": "Alabama",
     "slug": "bessemer-alabama"
+  },
+  "bethel-alaska": {
+    "city": "Bethel",
+    "state": "Alaska",
+    "slug": "bethel-alaska"
   },
   "bethesda-maryland": {
     "city": "Bethesda",
@@ -630,6 +775,11 @@ export const vendingLeadsCities = {
     "state": "Pennsylvania",
     "slug": "bethlehem-pennsylvania"
   },
+  "bettendorf-iowa": {
+    "city": "Bettendorf",
+    "state": "Iowa",
+    "slug": "bettendorf-iowa"
+  },
   "beverly-hills-california": {
     "city": "Beverly Hills",
     "state": "California",
@@ -639,6 +789,11 @@ export const vendingLeadsCities = {
     "city": "Biddeford",
     "state": "Maine",
     "slug": "biddeford-maine"
+  },
+  "big-bear-lake-california": {
+    "city": "Big Bear Lake",
+    "state": "California",
+    "slug": "big-bear-lake-california"
   },
   "billings-montana": {
     "city": "Billings",
@@ -680,6 +835,26 @@ export const vendingLeadsCities = {
     "state": "North Dakota",
     "slug": "bismarck-north-dakota"
   },
+  "blackfoot-idaho": {
+    "city": "Blackfoot",
+    "state": "Idaho",
+    "slug": "blackfoot-idaho"
+  },
+  "blairsville-georgia": {
+    "city": "Blairsville",
+    "state": "Georgia",
+    "slug": "blairsville-georgia"
+  },
+  "blakely-georgia": {
+    "city": "Blakely",
+    "state": "Georgia",
+    "slug": "blakely-georgia"
+  },
+  "bloomfield-connecticut": {
+    "city": "Bloomfield",
+    "state": "Connecticut",
+    "slug": "bloomfield-connecticut"
+  },
   "bloomfield-hills-michigan": {
     "city": "Bloomfield Hills",
     "state": "Michigan",
@@ -705,6 +880,16 @@ export const vendingLeadsCities = {
     "state": "Missouri",
     "slug": "blue-springs-missouri"
   },
+  "bluffton-indiana": {
+    "city": "Bluffton",
+    "state": "Indiana",
+    "slug": "bluffton-indiana"
+  },
+  "blythe-california": {
+    "city": "Blythe",
+    "state": "California",
+    "slug": "blythe-california"
+  },
   "blytheville-arkansas": {
     "city": "Blytheville",
     "state": "Arkansas",
@@ -729,6 +914,11 @@ export const vendingLeadsCities = {
     "city": "Bolingbrook",
     "state": "Illinois",
     "slug": "bolingbrook-illinois"
+  },
+  "bonita-springs-florida": {
+    "city": "Bonita Springs",
+    "state": "Florida",
+    "slug": "bonita-springs-florida"
   },
   "bossier-city-louisiana": {
     "city": "Bossier City",
@@ -785,10 +975,20 @@ export const vendingLeadsCities = {
     "state": "Florida",
     "slug": "bradenton-florida"
   },
+  "branford-connecticut": {
+    "city": "Branford",
+    "state": "Connecticut",
+    "slug": "branford-connecticut"
+  },
   "brawley-california": {
     "city": "Brawley",
     "state": "California",
     "slug": "brawley-california"
+  },
+  "brazil-indiana": {
+    "city": "Brazil",
+    "state": "Indiana",
+    "slug": "brazil-indiana"
   },
   "brea-california": {
     "city": "Brea",
@@ -799,6 +999,11 @@ export const vendingLeadsCities = {
     "city": "Bremerton",
     "state": "Washington",
     "slug": "bremerton-washington"
+  },
+  "brentwood-california": {
+    "city": "Brentwood",
+    "state": "California",
+    "slug": "brentwood-california"
   },
   "brentwood-tennessee": {
     "city": "Brentwood",
@@ -814,6 +1019,11 @@ export const vendingLeadsCities = {
     "city": "Bridgeport",
     "state": "Connecticut",
     "slug": "bridgeport-connecticut"
+  },
+  "brighton-colorado": {
+    "city": "Brighton",
+    "state": "Colorado",
+    "slug": "brighton-colorado"
   },
   "bristol-connecticut": {
     "city": "Bristol",
@@ -839,6 +1049,11 @@ export const vendingLeadsCities = {
     "city": "Brooklyn Park",
     "state": "Minnesota",
     "slug": "brooklyn-park-minnesota"
+  },
+  "brooksville-florida": {
+    "city": "Brooksville",
+    "state": "Florida",
+    "slug": "brooksville-florida"
   },
   "broomfield-colorado": {
     "city": "Broomfield",
@@ -880,15 +1095,30 @@ export const vendingLeadsCities = {
     "state": "New York",
     "slug": "buffalo-new-york"
   },
+  "buford-georgia": {
+    "city": "Buford",
+    "state": "Georgia",
+    "slug": "buford-georgia"
+  },
   "bullhead-city-arizona": {
     "city": "Bullhead City",
     "state": "Arizona",
     "slug": "bullhead-city-arizona"
   },
+  "bunnell-florida": {
+    "city": "Bunnell",
+    "state": "Florida",
+    "slug": "bunnell-florida"
+  },
   "burbank-california": {
     "city": "Burbank",
     "state": "California",
     "slug": "burbank-california"
+  },
+  "burbank-illinois": {
+    "city": "Burbank",
+    "state": "Illinois",
+    "slug": "burbank-illinois"
   },
   "burien-washington": {
     "city": "Burien",
@@ -900,10 +1130,20 @@ export const vendingLeadsCities = {
     "state": "Texas",
     "slug": "burleson-texas"
   },
+  "burley-idaho": {
+    "city": "Burley",
+    "state": "Idaho",
+    "slug": "burley-idaho"
+  },
   "burlingame-california": {
     "city": "Burlingame",
     "state": "California",
     "slug": "burlingame-california"
+  },
+  "burlington-iowa": {
+    "city": "Burlington",
+    "state": "Iowa",
+    "slug": "burlington-iowa"
   },
   "burlington-north-carolina": {
     "city": "Burlington",
@@ -920,6 +1160,11 @@ export const vendingLeadsCities = {
     "state": "Minnesota",
     "slug": "burnsville-minnesota"
   },
+  "bushnell-florida": {
+    "city": "Bushnell",
+    "state": "Florida",
+    "slug": "bushnell-florida"
+  },
   "butler-pennsylvania": {
     "city": "Butler",
     "state": "Pennsylvania",
@@ -930,10 +1175,20 @@ export const vendingLeadsCities = {
     "state": "Montana",
     "slug": "butte-montana"
   },
+  "byron-georgia": {
+    "city": "Byron",
+    "state": "Georgia",
+    "slug": "byron-georgia"
+  },
   "cabot-arkansas": {
     "city": "Cabot",
     "state": "Arkansas",
     "slug": "cabot-arkansas"
+  },
+  "calabasas-california": {
+    "city": "Calabasas",
+    "state": "California",
+    "slug": "calabasas-california"
   },
   "caldwell-idaho": {
     "city": "Caldwell",
@@ -945,10 +1200,20 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "calexico-california"
   },
+  "calhoun-georgia": {
+    "city": "Calhoun",
+    "state": "Georgia",
+    "slug": "calhoun-georgia"
+  },
   "calimesa-california": {
     "city": "Calimesa",
     "state": "California",
     "slug": "calimesa-california"
+  },
+  "callaway-florida": {
+    "city": "Callaway",
+    "state": "Florida",
+    "slug": "callaway-florida"
   },
   "camarillo-california": {
     "city": "Camarillo",
@@ -985,6 +1250,21 @@ export const vendingLeadsCities = {
     "state": "New York",
     "slug": "canandaigua-new-york"
   },
+  "canoga-park-california": {
+    "city": "Canoga Park",
+    "state": "California",
+    "slug": "canoga-park-california"
+  },
+  "canon-city-colorado": {
+    "city": "Canon City",
+    "state": "Colorado",
+    "slug": "canon-city-colorado"
+  },
+  "canton-georgia": {
+    "city": "Canton",
+    "state": "Georgia",
+    "slug": "canton-georgia"
+  },
   "canton-illinois": {
     "city": "Canton",
     "state": "Illinois",
@@ -1005,6 +1285,11 @@ export const vendingLeadsCities = {
     "state": "Ohio",
     "slug": "canton-ohio"
   },
+  "cape-canaveral-florida": {
+    "city": "Cape Canaveral",
+    "state": "Florida",
+    "slug": "cape-canaveral-florida"
+  },
   "cape-coral-florida": {
     "city": "Cape Coral",
     "state": "Florida",
@@ -1017,7 +1302,7 @@ export const vendingLeadsCities = {
   },
   "capitol-hill-washington-dc": {
     "city": "Capitol Hill",
-    "state": "Washington DC",
+    "state": "Washington Dc",
     "slug": "capitol-hill-washington-dc"
   },
   "capitola-california": {
@@ -1039,6 +1324,11 @@ export const vendingLeadsCities = {
     "city": "Carlsbad",
     "state": "New Mexico",
     "slug": "carlsbad-new-mexico"
+  },
+  "carmel-by-the-sea-california": {
+    "city": "Carmel By The Sea",
+    "state": "California",
+    "slug": "carmel-by-the-sea-california"
   },
   "carmel-california": {
     "city": "Carmel",
@@ -1085,6 +1375,11 @@ export const vendingLeadsCities = {
     "state": "Nevada",
     "slug": "carson-city-nevada"
   },
+  "cartersville-georgia": {
+    "city": "Cartersville",
+    "state": "Georgia",
+    "slug": "cartersville-georgia"
+  },
   "cary-north-carolina": {
     "city": "Cary",
     "state": "North Carolina",
@@ -1125,6 +1420,11 @@ export const vendingLeadsCities = {
     "state": "Iowa",
     "slug": "cedar-falls-iowa"
   },
+  "cedar-key-florida": {
+    "city": "Cedar Key",
+    "state": "Florida",
+    "slug": "cedar-key-florida"
+  },
   "cedar-park-texas": {
     "city": "Cedar Park",
     "state": "Texas",
@@ -1135,10 +1435,25 @@ export const vendingLeadsCities = {
     "state": "Iowa",
     "slug": "cedar-rapids-iowa"
   },
+  "cedartown-georgia": {
+    "city": "Cedartown",
+    "state": "Georgia",
+    "slug": "cedartown-georgia"
+  },
+  "celebration-florida": {
+    "city": "Celebration",
+    "state": "Florida",
+    "slug": "celebration-florida"
+  },
   "centennial-colorado": {
     "city": "Centennial",
     "state": "Colorado",
     "slug": "centennial-colorado"
+  },
+  "centerville-georgia": {
+    "city": "Centerville",
+    "state": "Georgia",
+    "slug": "centerville-georgia"
   },
   "centerville-ohio": {
     "city": "Centerville",
@@ -1174,6 +1489,11 @@ export const vendingLeadsCities = {
     "city": "Chambersburg",
     "state": "Pennsylvania",
     "slug": "chambersburg-pennsylvania"
+  },
+  "chamblee-georgia": {
+    "city": "Chamblee",
+    "state": "Georgia",
+    "slug": "chamblee-georgia"
   },
   "champaign-illinois": {
     "city": "Champaign",
@@ -1220,6 +1540,11 @@ export const vendingLeadsCities = {
     "state": "Virginia",
     "slug": "charlottesville-virginia"
   },
+  "chatsworth-georgia": {
+    "city": "Chatsworth",
+    "state": "Georgia",
+    "slug": "chatsworth-georgia"
+  },
   "chattanooga-tennessee": {
     "city": "Chattanooga",
     "state": "Tennessee",
@@ -1245,10 +1570,20 @@ export const vendingLeadsCities = {
     "state": "Pennsylvania",
     "slug": "chester-pennsylvania"
   },
+  "chesterton-indiana": {
+    "city": "Chesterton",
+    "state": "Indiana",
+    "slug": "chesterton-indiana"
+  },
   "cheyenne-wyoming": {
     "city": "Cheyenne",
     "state": "Wyoming",
     "slug": "cheyenne-wyoming"
+  },
+  "chicago-heights-illinois": {
+    "city": "Chicago Heights",
+    "state": "Illinois",
+    "slug": "chicago-heights-illinois"
   },
   "chicago-illinois": {
     "city": "Chicago",
@@ -1285,6 +1620,16 @@ export const vendingLeadsCities = {
     "state": "Arizona",
     "slug": "chino-valley-arizona"
   },
+  "chipley-florida": {
+    "city": "Chipley",
+    "state": "Florida",
+    "slug": "chipley-florida"
+  },
+  "chubbuck-idaho": {
+    "city": "Chubbuck",
+    "state": "Idaho",
+    "slug": "chubbuck-idaho"
+  },
   "chula-vista-california": {
     "city": "Chula Vista",
     "state": "California",
@@ -1314,6 +1659,21 @@ export const vendingLeadsCities = {
     "city": "Claremont",
     "state": "California",
     "slug": "claremont-california"
+  },
+  "clarkesville-georgia": {
+    "city": "Clarkesville",
+    "state": "Georgia",
+    "slug": "clarkesville-georgia"
+  },
+  "clarksville-georgia": {
+    "city": "Clarksville",
+    "state": "Georgia",
+    "slug": "clarksville-georgia"
+  },
+  "clarksville-indiana": {
+    "city": "Clarksville",
+    "state": "Indiana",
+    "slug": "clarksville-indiana"
   },
   "clarksville-tennessee": {
     "city": "Clarksville",
@@ -1345,15 +1705,30 @@ export const vendingLeadsCities = {
     "state": "Florida",
     "slug": "clermont-florida"
   },
+  "cleveland-georgia": {
+    "city": "Cleveland",
+    "state": "Georgia",
+    "slug": "cleveland-georgia"
+  },
   "cleveland-ohio": {
     "city": "Cleveland",
     "state": "Ohio",
     "slug": "cleveland-ohio"
   },
+  "clewiston-florida": {
+    "city": "Clewiston",
+    "state": "Florida",
+    "slug": "clewiston-florida"
+  },
   "clifton-new-jersey": {
     "city": "Clifton",
     "state": "New Jersey",
     "slug": "clifton-new-jersey"
+  },
+  "clinton-iowa": {
+    "city": "Clinton",
+    "state": "Iowa",
+    "slug": "clinton-iowa"
   },
   "cloverdale-california": {
     "city": "Cloverdale",
@@ -1380,6 +1755,16 @@ export const vendingLeadsCities = {
     "state": "Pennsylvania",
     "slug": "coatesville-pennsylvania"
   },
+  "cochran-georgia": {
+    "city": "Cochran",
+    "state": "Georgia",
+    "slug": "cochran-georgia"
+  },
+  "cocoa-beach-florida": {
+    "city": "Cocoa Beach",
+    "state": "Florida",
+    "slug": "cocoa-beach-florida"
+  },
   "cocoa-florida": {
     "city": "Cocoa",
     "state": "Florida",
@@ -1404,6 +1789,11 @@ export const vendingLeadsCities = {
     "city": "Coffeyville",
     "state": "Kansas",
     "slug": "coffeyville-kansas"
+  },
+  "college-park-georgia": {
+    "city": "College Park",
+    "state": "Georgia",
+    "slug": "college-park-georgia"
   },
   "college-park-maryland": {
     "city": "College Park",
@@ -1430,6 +1820,11 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "colton-california"
   },
+  "columbia-city-indiana": {
+    "city": "Columbia City",
+    "state": "Indiana",
+    "slug": "columbia-city-indiana"
+  },
   "columbia-maryland": {
     "city": "Columbia",
     "state": "Maryland",
@@ -1455,6 +1850,11 @@ export const vendingLeadsCities = {
     "state": "Georgia",
     "slug": "columbus-georgia"
   },
+  "columbus-indiana": {
+    "city": "Columbus",
+    "state": "Indiana",
+    "slug": "columbus-indiana"
+  },
   "columbus-mississippi": {
     "city": "Columbus",
     "state": "Mississippi",
@@ -1470,10 +1870,20 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "colusa-california"
   },
+  "commerce-california": {
+    "city": "Commerce",
+    "state": "California",
+    "slug": "commerce-california"
+  },
   "commerce-city-colorado": {
     "city": "Commerce City",
     "state": "Colorado",
     "slug": "commerce-city-colorado"
+  },
+  "commerce-georgia": {
+    "city": "Commerce",
+    "state": "Georgia",
+    "slug": "commerce-georgia"
   },
   "compton-california": {
     "city": "Compton",
@@ -1510,6 +1920,11 @@ export const vendingLeadsCities = {
     "state": "South Carolina",
     "slug": "conway-south-carolina"
   },
+  "conyers-georgia": {
+    "city": "Conyers",
+    "state": "Georgia",
+    "slug": "conyers-georgia"
+  },
   "coolidge-arizona": {
     "city": "Coolidge",
     "state": "Arizona",
@@ -1539,6 +1954,16 @@ export const vendingLeadsCities = {
     "city": "Corcoran",
     "state": "California",
     "slug": "corcoran-california"
+  },
+  "cordele-georgia": {
+    "city": "Cordele",
+    "state": "Georgia",
+    "slug": "cordele-georgia"
+  },
+  "cornelia-georgia": {
+    "city": "Cornelia",
+    "state": "Georgia",
+    "slug": "cornelia-georgia"
   },
   "corona-california": {
     "city": "Corona",
@@ -1570,6 +1995,11 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "corte-madera-california"
   },
+  "cortez-colorado": {
+    "city": "Cortez",
+    "state": "Colorado",
+    "slug": "cortez-colorado"
+  },
   "cortland-new-york": {
     "city": "Cortland",
     "state": "New York",
@@ -1584,6 +2014,11 @@ export const vendingLeadsCities = {
     "city": "Costa Mesa",
     "state": "California",
     "slug": "costa-mesa-california"
+  },
+  "cotati-california": {
+    "city": "Cotati",
+    "state": "California",
+    "slug": "cotati-california"
   },
   "cottonwood-arizona": {
     "city": "Cottonwood",
@@ -1600,25 +2035,55 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "covina-california"
   },
+  "covington-georgia": {
+    "city": "Covington",
+    "state": "Georgia",
+    "slug": "covington-georgia"
+  },
   "covington-kentucky": {
     "city": "Covington",
     "state": "Kentucky",
     "slug": "covington-kentucky"
+  },
+  "craig-colorado": {
+    "city": "Craig",
+    "state": "Colorado",
+    "slug": "craig-colorado"
   },
   "cranston-rhode-island": {
     "city": "Cranston",
     "state": "Rhode Island",
     "slug": "cranston-rhode-island"
   },
+  "crawfordsville-indiana": {
+    "city": "Crawfordsville",
+    "state": "Indiana",
+    "slug": "crawfordsville-indiana"
+  },
+  "crescent-city-california": {
+    "city": "Crescent City",
+    "state": "California",
+    "slug": "crescent-city-california"
+  },
   "crestview-florida": {
     "city": "Crestview",
     "state": "Florida",
     "slug": "crestview-florida"
   },
+  "crown-point-indiana": {
+    "city": "Crown Point",
+    "state": "Indiana",
+    "slug": "crown-point-indiana"
+  },
   "crystal-lake-illinois": {
     "city": "Crystal Lake",
     "state": "Illinois",
     "slug": "crystal-lake-illinois"
+  },
+  "crystal-river-florida": {
+    "city": "Crystal River",
+    "state": "Florida",
+    "slug": "crystal-river-florida"
   },
   "cudahy-california": {
     "city": "Cudahy",
@@ -1634,6 +2099,11 @@ export const vendingLeadsCities = {
     "city": "Culver City",
     "state": "California",
     "slug": "culver-city-california"
+  },
+  "cumming-georgia": {
+    "city": "Cumming",
+    "state": "Georgia",
+    "slug": "cumming-georgia"
   },
   "cupertino-california": {
     "city": "Cupertino",
@@ -1654,6 +2124,21 @@ export const vendingLeadsCities = {
     "city": "Cypress",
     "state": "California",
     "slug": "cypress-california"
+  },
+  "dade-city-florida": {
+    "city": "Dade City",
+    "state": "Florida",
+    "slug": "dade-city-florida"
+  },
+  "dahlonega-georgia": {
+    "city": "Dahlonega",
+    "state": "Georgia",
+    "slug": "dahlonega-georgia"
+  },
+  "dakota": {
+    "city": "",
+    "state": "Dakota",
+    "slug": "dakota"
   },
   "dallas-texas": {
     "city": "Dallas",
@@ -1680,6 +2165,11 @@ export const vendingLeadsCities = {
     "state": "Florida",
     "slug": "dania-beach-florida"
   },
+  "danielsville-georgia": {
+    "city": "Danielsville",
+    "state": "Georgia",
+    "slug": "danielsville-georgia"
+  },
   "danville-california": {
     "city": "Danville",
     "state": "California",
@@ -1689,6 +2179,16 @@ export const vendingLeadsCities = {
     "city": "Danville",
     "state": "Illinois",
     "slug": "danville-illinois"
+  },
+  "darien-georgia": {
+    "city": "Darien",
+    "state": "Georgia",
+    "slug": "darien-georgia"
+  },
+  "davenport-florida": {
+    "city": "Davenport",
+    "state": "Florida",
+    "slug": "davenport-florida"
   },
   "davenport-iowa": {
     "city": "Davenport",
@@ -1705,6 +2205,16 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "davis-california"
   },
+  "dawson-georgia": {
+    "city": "Dawson",
+    "state": "Georgia",
+    "slug": "dawson-georgia"
+  },
+  "dawsonville-georgia": {
+    "city": "Dawsonville",
+    "state": "Georgia",
+    "slug": "dawsonville-georgia"
+  },
   "dayton-ohio": {
     "city": "Dayton",
     "state": "Ohio",
@@ -1719,6 +2229,11 @@ export const vendingLeadsCities = {
     "city": "Dearborn",
     "state": "Michigan",
     "slug": "dearborn-michigan"
+  },
+  "debary-florida": {
+    "city": "Debary",
+    "state": "Florida",
+    "slug": "debary-florida"
   },
   "decatur-alabama": {
     "city": "Decatur",
@@ -1740,10 +2255,20 @@ export const vendingLeadsCities = {
     "state": "Florida",
     "slug": "deerfield-beach-florida"
   },
+  "defuniak-springs-florida": {
+    "city": "Defuniak Springs",
+    "state": "Florida",
+    "slug": "defuniak-springs-florida"
+  },
   "dekalb-illinois": {
     "city": "Dekalb",
     "state": "Illinois",
     "slug": "dekalb-illinois"
+  },
+  "del-mar-california": {
+    "city": "Del Mar",
+    "state": "California",
+    "slug": "del-mar-california"
   },
   "deland-florida": {
     "city": "Deland",
@@ -1765,6 +2290,11 @@ export const vendingLeadsCities = {
     "state": "Florida",
     "slug": "delray-beach-florida"
   },
+  "delta-colorado": {
+    "city": "Delta",
+    "state": "Colorado",
+    "slug": "delta-colorado"
+  },
   "deltona-florida": {
     "city": "Deltona",
     "state": "Florida",
@@ -1784,6 +2314,11 @@ export const vendingLeadsCities = {
     "city": "Denver",
     "state": "Colorado",
     "slug": "denver-colorado"
+  },
+  "derby-connecticut": {
+    "city": "Derby",
+    "state": "Connecticut",
+    "slug": "derby-connecticut"
   },
   "derry-new-hampshire": {
     "city": "Derry",
@@ -1815,6 +2350,11 @@ export const vendingLeadsCities = {
     "state": "Texas",
     "slug": "desoto-texas"
   },
+  "destin-florida": {
+    "city": "Destin",
+    "state": "Florida",
+    "slug": "destin-florida"
+  },
   "detroit-michigan": {
     "city": "Detroit",
     "state": "Michigan",
@@ -1830,6 +2370,11 @@ export const vendingLeadsCities = {
     "state": "North Dakota",
     "slug": "dickinson-north-dakota"
   },
+  "dillingham-alaska": {
+    "city": "Dillingham",
+    "state": "Alaska",
+    "slug": "dillingham-alaska"
+  },
   "dinuba-california": {
     "city": "Dinuba",
     "state": "California",
@@ -1839,6 +2384,11 @@ export const vendingLeadsCities = {
     "city": "Dixon",
     "state": "California",
     "slug": "dixon-california"
+  },
+  "dixon-illinois": {
+    "city": "Dixon",
+    "state": "Illinois",
+    "slug": "dixon-illinois"
   },
   "dodge-city-kansas": {
     "city": "Dodge City",
@@ -1892,7 +2442,7 @@ export const vendingLeadsCities = {
   },
   "downtown-washington-dc": {
     "city": "Downtown",
-    "state": "Washington DC",
+    "state": "Washington Dc",
     "slug": "downtown-washington-dc"
   },
   "duarte-california": {
@@ -1920,6 +2470,11 @@ export const vendingLeadsCities = {
     "state": "Iowa",
     "slug": "dubuque-iowa"
   },
+  "duluth-georgia": {
+    "city": "Duluth",
+    "state": "Georgia",
+    "slug": "duluth-georgia"
+  },
   "duluth-minnesota": {
     "city": "Duluth",
     "state": "Minnesota",
@@ -1937,7 +2492,7 @@ export const vendingLeadsCities = {
   },
   "dupont-circle-washington-dc": {
     "city": "Dupont Circle",
-    "state": "Washington DC",
+    "state": "Washington Dc",
     "slug": "dupont-circle-washington-dc"
   },
   "durango-colorado": {
@@ -1955,10 +2510,35 @@ export const vendingLeadsCities = {
     "state": "Minnesota",
     "slug": "eagan-minnesota"
   },
+  "eagle-idaho": {
+    "city": "Eagle",
+    "state": "Idaho",
+    "slug": "eagle-idaho"
+  },
+  "eagle-lake-florida": {
+    "city": "Eagle Lake",
+    "state": "Florida",
+    "slug": "eagle-lake-florida"
+  },
+  "east-chicago-indiana": {
+    "city": "East Chicago",
+    "state": "Indiana",
+    "slug": "east-chicago-indiana"
+  },
   "east-greenwich-rhode-island": {
     "city": "East Greenwich",
     "state": "Rhode Island",
     "slug": "east-greenwich-rhode-island"
+  },
+  "east-hartford-connecticut": {
+    "city": "East Hartford",
+    "state": "Connecticut",
+    "slug": "east-hartford-connecticut"
+  },
+  "east-haven-connecticut": {
+    "city": "East Haven",
+    "state": "Connecticut",
+    "slug": "east-haven-connecticut"
   },
   "east-lansing-michigan": {
     "city": "East Lansing",
@@ -1970,6 +2550,11 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "east-los-angeles-california"
   },
+  "east-moline-illinois": {
+    "city": "East Moline",
+    "state": "Illinois",
+    "slug": "east-moline-illinois"
+  },
   "east-orange-new-jersey": {
     "city": "East Orange",
     "state": "New Jersey",
@@ -1980,6 +2565,11 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "east-palo-alto-california"
   },
+  "east-point-georgia": {
+    "city": "East Point",
+    "state": "Georgia",
+    "slug": "east-point-georgia"
+  },
   "east-providence-rhode-island": {
     "city": "East Providence",
     "state": "Rhode Island",
@@ -1989,6 +2579,11 @@ export const vendingLeadsCities = {
     "city": "Easton",
     "state": "Pennsylvania",
     "slug": "easton-pennsylvania"
+  },
+  "eatonton-georgia": {
+    "city": "Eatonton",
+    "state": "Georgia",
+    "slug": "eatonton-georgia"
   },
   "eau-claire-wisconsin": {
     "city": "Eau Claire",
@@ -2065,6 +2660,11 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "el-segundo-california"
   },
+  "elberton-georgia": {
+    "city": "Elberton",
+    "state": "Georgia",
+    "slug": "elberton-georgia"
+  },
   "elgin-illinois": {
     "city": "Elgin",
     "state": "Illinois",
@@ -2085,6 +2685,11 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "elk-grove-california"
   },
+  "elk-grove-village-illinois": {
+    "city": "Elk Grove Village",
+    "state": "Illinois",
+    "slug": "elk-grove-village-illinois"
+  },
   "elkhart-indiana": {
     "city": "Elkhart",
     "state": "Indiana",
@@ -2099,6 +2704,11 @@ export const vendingLeadsCities = {
     "city": "Ellensburg",
     "state": "Washington",
     "slug": "ellensburg-washington"
+  },
+  "ellijay-georgia": {
+    "city": "Ellijay",
+    "state": "Georgia",
+    "slug": "ellijay-georgia"
   },
   "elmhurst-illinois": {
     "city": "Elmhurst",
@@ -2124,6 +2734,11 @@ export const vendingLeadsCities = {
     "city": "Emeryville",
     "state": "California",
     "slug": "emeryville-california"
+  },
+  "emporia-kansas": {
+    "city": "Emporia",
+    "state": "Kansas",
+    "slug": "emporia-kansas"
   },
   "encinitas-california": {
     "city": "Encinitas",
@@ -2170,6 +2785,11 @@ export const vendingLeadsCities = {
     "state": "Pennsylvania",
     "slug": "erie-pennsylvania"
   },
+  "escalon-california": {
+    "city": "Escalon",
+    "state": "California",
+    "slug": "escalon-california"
+  },
   "escondido-california": {
     "city": "Escondido",
     "state": "California",
@@ -2184,6 +2804,11 @@ export const vendingLeadsCities = {
     "city": "Essex",
     "state": "Vermont",
     "slug": "essex-vermont"
+  },
+  "estes-park-colorado": {
+    "city": "Estes Park",
+    "state": "Colorado",
+    "slug": "estes-park-colorado"
   },
   "eufaula-alabama": {
     "city": "Eufaula",
@@ -2210,6 +2835,11 @@ export const vendingLeadsCities = {
     "state": "Florida",
     "slug": "eustis-florida"
   },
+  "evans-georgia": {
+    "city": "Evans",
+    "state": "Georgia",
+    "slug": "evans-georgia"
+  },
   "evanston-illinois": {
     "city": "Evanston",
     "state": "Illinois",
@@ -2229,6 +2859,11 @@ export const vendingLeadsCities = {
     "city": "Everett",
     "state": "Washington",
     "slug": "everett-washington"
+  },
+  "everglades-city-florida": {
+    "city": "Everglades City",
+    "state": "Florida",
+    "slug": "everglades-city-florida"
   },
   "ewa-beach-hawaii": {
     "city": "Ewa Beach",
@@ -2250,10 +2885,25 @@ export const vendingLeadsCities = {
     "state": "Ohio",
     "slug": "fairborn-ohio"
   },
+  "fairburn-georgia": {
+    "city": "Fairburn",
+    "state": "Georgia",
+    "slug": "fairburn-georgia"
+  },
+  "fairfax-california": {
+    "city": "Fairfax",
+    "state": "California",
+    "slug": "fairfax-california"
+  },
   "fairfield-california": {
     "city": "Fairfield",
     "state": "California",
     "slug": "fairfield-california"
+  },
+  "fairfield-connecticut": {
+    "city": "Fairfield",
+    "state": "Connecticut",
+    "slug": "fairfield-connecticut"
   },
   "fairhope-alabama": {
     "city": "Fairhope",
@@ -2269,6 +2919,11 @@ export const vendingLeadsCities = {
     "city": "Fall River",
     "state": "Massachusetts",
     "slug": "fall-river-massachusetts"
+  },
+  "fallbrook-california": {
+    "city": "Fallbrook",
+    "state": "California",
+    "slug": "fallbrook-california"
   },
   "fallon-nevada": {
     "city": "Fallon",
@@ -2305,6 +2960,11 @@ export const vendingLeadsCities = {
     "state": "Arkansas",
     "slug": "fayetteville-arkansas"
   },
+  "fayetteville-georgia": {
+    "city": "Fayetteville",
+    "state": "Georgia",
+    "slug": "fayetteville-georgia"
+  },
   "fayetteville-north-carolina": {
     "city": "Fayetteville",
     "state": "North Carolina",
@@ -2329,6 +2989,21 @@ export const vendingLeadsCities = {
     "city": "Findlay",
     "state": "Ohio",
     "slug": "findlay-ohio"
+  },
+  "fishers-indiana": {
+    "city": "Fishers",
+    "state": "Indiana",
+    "slug": "fishers-indiana"
+  },
+  "fitzgerald-georgia": {
+    "city": "Fitzgerald",
+    "state": "Georgia",
+    "slug": "fitzgerald-georgia"
+  },
+  "flagler-beach-florida": {
+    "city": "Flagler Beach",
+    "state": "Florida",
+    "slug": "flagler-beach-florida"
   },
   "flagstaff-arizona": {
     "city": "Flagstaff",
@@ -2359,6 +3034,11 @@ export const vendingLeadsCities = {
     "city": "Florence",
     "state": "South Carolina",
     "slug": "florence-south-carolina"
+  },
+  "florida-city-florida": {
+    "city": "Florida City",
+    "state": "Florida",
+    "slug": "florida-city-florida"
   },
   "florissant-missouri": {
     "city": "Florissant",
@@ -2395,6 +3075,11 @@ export const vendingLeadsCities = {
     "state": "Arkansas",
     "slug": "forrest-city-arkansas"
   },
+  "forsyth-georgia": {
+    "city": "Forsyth",
+    "state": "Georgia",
+    "slug": "forsyth-georgia"
+  },
   "fort-bragg-california": {
     "city": "Fort Bragg",
     "state": "California",
@@ -2405,15 +3090,40 @@ export const vendingLeadsCities = {
     "state": "Colorado",
     "slug": "fort-collins-colorado"
   },
+  "fort-dodge-iowa": {
+    "city": "Fort Dodge",
+    "state": "Iowa",
+    "slug": "fort-dodge-iowa"
+  },
   "fort-lauderdale-florida": {
     "city": "Fort Lauderdale",
     "state": "Florida",
     "slug": "fort-lauderdale-florida"
   },
+  "fort-meade-florida": {
+    "city": "Fort Meade",
+    "state": "Florida",
+    "slug": "fort-meade-florida"
+  },
+  "fort-morgan-colorado": {
+    "city": "Fort Morgan",
+    "state": "Colorado",
+    "slug": "fort-morgan-colorado"
+  },
+  "fort-myers-beach-florida": {
+    "city": "Fort Myers Beach",
+    "state": "Florida",
+    "slug": "fort-myers-beach-florida"
+  },
   "fort-myers-florida": {
     "city": "Fort Myers",
     "state": "Florida",
     "slug": "fort-myers-florida"
+  },
+  "fort-oglethorpe-georgia": {
+    "city": "Fort Oglethorpe",
+    "state": "Georgia",
+    "slug": "fort-oglethorpe-georgia"
   },
   "fort-payne-alabama": {
     "city": "Fort Payne",
@@ -2435,6 +3145,11 @@ export const vendingLeadsCities = {
     "state": "Arkansas",
     "slug": "fort-smith-arkansas"
   },
+  "fort-valley-georgia": {
+    "city": "Fort Valley",
+    "state": "Georgia",
+    "slug": "fort-valley-georgia"
+  },
   "fort-walton-beach-florida": {
     "city": "Fort Walton Beach",
     "state": "Florida",
@@ -2450,6 +3165,11 @@ export const vendingLeadsCities = {
     "state": "Texas",
     "slug": "fort-worth-texas"
   },
+  "fortuna-california": {
+    "city": "Fortuna",
+    "state": "California",
+    "slug": "fortuna-california"
+  },
   "foster-city-california": {
     "city": "Foster City",
     "state": "California",
@@ -2460,15 +3180,30 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "fountain-valley-california"
   },
+  "fowler-california": {
+    "city": "Fowler",
+    "state": "California",
+    "slug": "fowler-california"
+  },
   "framingham-massachusetts": {
     "city": "Framingham",
     "state": "Massachusetts",
     "slug": "framingham-massachusetts"
   },
+  "frankfort-indiana": {
+    "city": "Frankfort",
+    "state": "Indiana",
+    "slug": "frankfort-indiana"
+  },
   "frankfort-kentucky": {
     "city": "Frankfort",
     "state": "Kentucky",
     "slug": "frankfort-kentucky"
+  },
+  "franklin-indiana": {
+    "city": "Franklin",
+    "state": "Indiana",
+    "slug": "franklin-indiana"
   },
   "franklin-tennessee": {
     "city": "Franklin",
@@ -2509,6 +3244,11 @@ export const vendingLeadsCities = {
     "city": "Frisco",
     "state": "Texas",
     "slug": "frisco-texas"
+  },
+  "frostproof-florida": {
+    "city": "Frostproof",
+    "state": "Florida",
+    "slug": "frostproof-florida"
   },
   "fullerton-california": {
     "city": "Fullerton",
@@ -2560,6 +3300,16 @@ export const vendingLeadsCities = {
     "state": "Texas",
     "slug": "galveston-texas"
   },
+  "garden-city-georgia": {
+    "city": "Garden City",
+    "state": "Georgia",
+    "slug": "garden-city-georgia"
+  },
+  "garden-city-idaho": {
+    "city": "Garden City",
+    "state": "Idaho",
+    "slug": "garden-city-idaho"
+  },
   "garden-city-kansas": {
     "city": "Garden City",
     "state": "Kansas",
@@ -2600,6 +3350,11 @@ export const vendingLeadsCities = {
     "state": "Delaware",
     "slug": "georgetown-delaware"
   },
+  "georgetown-georgia": {
+    "city": "Georgetown",
+    "state": "Georgia",
+    "slug": "georgetown-georgia"
+  },
   "georgetown-kentucky": {
     "city": "Georgetown",
     "state": "Kentucky",
@@ -2612,7 +3367,7 @@ export const vendingLeadsCities = {
   },
   "georgetown-washington-dc": {
     "city": "Georgetown",
-    "state": "Washington DC",
+    "state": "Washington Dc",
     "slug": "georgetown-washington-dc"
   },
   "germantown-maryland": {
@@ -2644,6 +3399,21 @@ export const vendingLeadsCities = {
     "city": "Gilroy",
     "state": "California",
     "slug": "gilroy-california"
+  },
+  "glastonbury-connecticut": {
+    "city": "Glastonbury",
+    "state": "Connecticut",
+    "slug": "glastonbury-connecticut"
+  },
+  "glen-ellyn-illinois": {
+    "city": "Glen Ellyn",
+    "state": "Illinois",
+    "slug": "glen-ellyn-illinois"
+  },
+  "glen-ridge-florida": {
+    "city": "Glen Ridge",
+    "state": "Florida",
+    "slug": "glen-ridge-florida"
   },
   "glendale-arizona": {
     "city": "Glendale",
@@ -2685,6 +3455,11 @@ export const vendingLeadsCities = {
     "state": "New York",
     "slug": "gloversville-new-york"
   },
+  "golden-colorado": {
+    "city": "Golden",
+    "state": "Colorado",
+    "slug": "golden-colorado"
+  },
   "goldsboro-north-carolina": {
     "city": "Goldsboro",
     "state": "North Carolina",
@@ -2709,6 +3484,16 @@ export const vendingLeadsCities = {
     "city": "Goose Creek",
     "state": "South Carolina",
     "slug": "goose-creek-south-carolina"
+  },
+  "goshen-indiana": {
+    "city": "Goshen",
+    "state": "Indiana",
+    "slug": "goshen-indiana"
+  },
+  "graceville-florida": {
+    "city": "Graceville",
+    "state": "Florida",
+    "slug": "graceville-florida"
   },
   "grand-forks-north-dakota": {
     "city": "Grand Forks",
@@ -2770,6 +3555,11 @@ export const vendingLeadsCities = {
     "state": "Wisconsin",
     "slug": "green-bay-wisconsin"
   },
+  "green-cove-springs-florida": {
+    "city": "Green Cove Springs",
+    "state": "Florida",
+    "slug": "green-cove-springs-florida"
+  },
   "greenacres-florida": {
     "city": "Greenacres",
     "state": "Florida",
@@ -2779,6 +3569,11 @@ export const vendingLeadsCities = {
     "city": "Greenfield",
     "state": "California",
     "slug": "greenfield-california"
+  },
+  "greenfield-indiana": {
+    "city": "Greenfield",
+    "state": "Indiana",
+    "slug": "greenfield-indiana"
   },
   "greensboro-north-carolina": {
     "city": "Greensboro",
@@ -2815,6 +3610,11 @@ export const vendingLeadsCities = {
     "state": "Texas",
     "slug": "greenville-texas"
   },
+  "greenwood-indiana": {
+    "city": "Greenwood",
+    "state": "Indiana",
+    "slug": "greenwood-indiana"
+  },
   "gresham-oregon": {
     "city": "Gresham",
     "state": "Oregon",
@@ -2829,6 +3629,16 @@ export const vendingLeadsCities = {
     "city": "Griffin",
     "state": "Georgia",
     "slug": "griffin-georgia"
+  },
+  "griffith-indiana": {
+    "city": "Griffith",
+    "state": "Indiana",
+    "slug": "griffith-indiana"
+  },
+  "groton-connecticut": {
+    "city": "Groton",
+    "state": "Connecticut",
+    "slug": "groton-connecticut"
   },
   "grove-city-ohio": {
     "city": "Grove City",
@@ -2845,15 +3655,35 @@ export const vendingLeadsCities = {
     "state": "Texas",
     "slug": "groves-texas"
   },
+  "grovetown-georgia": {
+    "city": "Grovetown",
+    "state": "Georgia",
+    "slug": "grovetown-georgia"
+  },
+  "guilford-connecticut": {
+    "city": "Guilford",
+    "state": "Connecticut",
+    "slug": "guilford-connecticut"
+  },
   "gulf-breeze-florida": {
     "city": "Gulf Breeze",
     "state": "Florida",
     "slug": "gulf-breeze-florida"
   },
+  "gulfport-florida": {
+    "city": "Gulfport",
+    "state": "Florida",
+    "slug": "gulfport-florida"
+  },
   "gulfport-mississippi": {
     "city": "Gulfport",
     "state": "Mississippi",
     "slug": "gulfport-mississippi"
+  },
+  "gunnison-colorado": {
+    "city": "Gunnison",
+    "state": "Colorado",
+    "slug": "gunnison-colorado"
   },
   "guntersville-alabama": {
     "city": "Guntersville",
@@ -2874,6 +3704,11 @@ export const vendingLeadsCities = {
     "city": "Hagerstown",
     "state": "Maryland",
     "slug": "hagerstown-maryland"
+  },
+  "hahira-georgia": {
+    "city": "Hahira",
+    "state": "Georgia",
+    "slug": "hahira-georgia"
   },
   "haines-city-florida": {
     "city": "Haines City",
@@ -2915,6 +3750,16 @@ export const vendingLeadsCities = {
     "state": "Louisiana",
     "slug": "hammond-louisiana"
   },
+  "hampshire": {
+    "city": "",
+    "state": "Hampshire",
+    "slug": "hampshire"
+  },
+  "hampton-georgia": {
+    "city": "Hampton",
+    "state": "Georgia",
+    "slug": "hampton-georgia"
+  },
   "hampton-virginia": {
     "city": "Hampton",
     "state": "Virginia",
@@ -2934,6 +3779,11 @@ export const vendingLeadsCities = {
     "city": "Harlingen",
     "state": "Texas",
     "slug": "harlingen-texas"
+  },
+  "harrington-delaware": {
+    "city": "Harrington",
+    "state": "Delaware",
+    "slug": "harrington-delaware"
   },
   "harrisburg-pennsylvania": {
     "city": "Harrisburg",
@@ -2955,6 +3805,11 @@ export const vendingLeadsCities = {
     "state": "Alabama",
     "slug": "hartselle-alabama"
   },
+  "hartwell-georgia": {
+    "city": "Hartwell",
+    "state": "Georgia",
+    "slug": "hartwell-georgia"
+  },
   "harvey-illinois": {
     "city": "Harvey",
     "state": "Illinois",
@@ -2969,6 +3824,11 @@ export const vendingLeadsCities = {
     "city": "Hattiesburg",
     "state": "Mississippi",
     "slug": "hattiesburg-mississippi"
+  },
+  "havana-florida": {
+    "city": "Havana",
+    "state": "Florida",
+    "slug": "havana-florida"
   },
   "haverhill-massachusetts": {
     "city": "Haverhill",
@@ -2985,6 +3845,11 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "hawaiian-gardens-california"
   },
+  "hawkinsville-georgia": {
+    "city": "Hawkinsville",
+    "state": "Georgia",
+    "slug": "hawkinsville-georgia"
+  },
   "hawthorne-california": {
     "city": "Hawthorne",
     "state": "California",
@@ -2995,6 +3860,11 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "hayward-california"
   },
+  "hazlehurst-georgia": {
+    "city": "Hazlehurst",
+    "state": "Georgia",
+    "slug": "hazlehurst-georgia"
+  },
   "hazleton-pennsylvania": {
     "city": "Hazleton",
     "state": "Pennsylvania",
@@ -3004,6 +3874,11 @@ export const vendingLeadsCities = {
     "city": "Healdsburg",
     "state": "California",
     "slug": "healdsburg-california"
+  },
+  "helen-georgia": {
+    "city": "Helen",
+    "state": "Georgia",
+    "slug": "helen-georgia"
   },
   "helena-arkansas": {
     "city": "Helena",
@@ -3075,6 +3950,11 @@ export const vendingLeadsCities = {
     "state": "North Carolina",
     "slug": "high-point-north-carolina"
   },
+  "high-springs-florida": {
+    "city": "High Springs",
+    "state": "Florida",
+    "slug": "high-springs-florida"
+  },
   "highland-california": {
     "city": "Highland",
     "state": "California",
@@ -3115,6 +3995,16 @@ export const vendingLeadsCities = {
     "state": "South Carolina",
     "slug": "hilton-head-island-south-carolina"
   },
+  "hinesville-georgia": {
+    "city": "Hinesville",
+    "state": "Georgia",
+    "slug": "hinesville-georgia"
+  },
+  "hobart-indiana": {
+    "city": "Hobart",
+    "state": "Indiana",
+    "slug": "hobart-indiana"
+  },
   "hobbs-new-mexico": {
     "city": "Hobbs",
     "state": "New Mexico",
@@ -3130,10 +4020,20 @@ export const vendingLeadsCities = {
     "state": "Illinois",
     "slug": "hoffman-estates-illinois"
   },
+  "hogansville-georgia": {
+    "city": "Hogansville",
+    "state": "Georgia",
+    "slug": "hogansville-georgia"
+  },
   "hollister-california": {
     "city": "Hollister",
     "state": "California",
     "slug": "hollister-california"
+  },
+  "holly-hill-florida": {
+    "city": "Holly Hill",
+    "state": "Florida",
+    "slug": "holly-hill-florida"
   },
   "hollywood-florida": {
     "city": "Hollywood",
@@ -3144,6 +4044,11 @@ export const vendingLeadsCities = {
     "city": "Homer",
     "state": "Alaska",
     "slug": "homer-alaska"
+  },
+  "homerville-georgia": {
+    "city": "Homerville",
+    "state": "Georgia",
+    "slug": "homerville-georgia"
   },
   "homestead-florida": {
     "city": "Homestead",
@@ -3215,6 +4120,11 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "huntington-beach-california"
   },
+  "huntington-indiana": {
+    "city": "Huntington",
+    "state": "Indiana",
+    "slug": "huntington-indiana"
+  },
   "huntington-park-california": {
     "city": "Huntington Park",
     "state": "California",
@@ -3245,6 +4155,11 @@ export const vendingLeadsCities = {
     "state": "Kansas",
     "slug": "hutchinson-kansas"
   },
+  "hypoluxo-florida": {
+    "city": "Hypoluxo",
+    "state": "Florida",
+    "slug": "hypoluxo-florida"
+  },
   "idaho-falls-idaho": {
     "city": "Idaho Falls",
     "state": "Idaho",
@@ -3265,10 +4180,30 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "imperial-beach-california"
   },
+  "imperial-california": {
+    "city": "Imperial",
+    "state": "California",
+    "slug": "imperial-california"
+  },
   "independence-missouri": {
     "city": "Independence",
     "state": "Missouri",
     "slug": "independence-missouri"
+  },
+  "indialantic-florida": {
+    "city": "Indialantic",
+    "state": "Florida",
+    "slug": "indialantic-florida"
+  },
+  "indian-harbour-beach-florida": {
+    "city": "Indian Harbour Beach",
+    "state": "Florida",
+    "slug": "indian-harbour-beach-florida"
+  },
+  "indian-rocks-beach-florida": {
+    "city": "Indian Rocks Beach",
+    "state": "Florida",
+    "slug": "indian-rocks-beach-florida"
   },
   "indianapolis-indiana": {
     "city": "Indianapolis",
@@ -3284,6 +4219,11 @@ export const vendingLeadsCities = {
     "city": "Inglewood",
     "state": "California",
     "slug": "inglewood-california"
+  },
+  "inverness-florida": {
+    "city": "Inverness",
+    "state": "Florida",
+    "slug": "inverness-florida"
   },
   "iola-kansas": {
     "city": "Iola",
@@ -3304,6 +4244,11 @@ export const vendingLeadsCities = {
     "city": "Irving",
     "state": "Texas",
     "slug": "irving-texas"
+  },
+  "island": {
+    "city": "",
+    "state": "Island",
+    "slug": "island"
   },
   "isleton-california": {
     "city": "Isleton",
@@ -3329,6 +4274,11 @@ export const vendingLeadsCities = {
     "city": "Jackson",
     "state": "California",
     "slug": "jackson-california"
+  },
+  "jackson-georgia": {
+    "city": "Jackson",
+    "state": "Georgia",
+    "slug": "jackson-georgia"
   },
   "jackson-michigan": {
     "city": "Jackson",
@@ -3385,15 +4335,55 @@ export const vendingLeadsCities = {
     "state": "Alabama",
     "slug": "jasper-alabama"
   },
+  "jasper-florida": {
+    "city": "Jasper",
+    "state": "Florida",
+    "slug": "jasper-florida"
+  },
+  "jasper-georgia": {
+    "city": "Jasper",
+    "state": "Georgia",
+    "slug": "jasper-georgia"
+  },
+  "jasper-indiana": {
+    "city": "Jasper",
+    "state": "Indiana",
+    "slug": "jasper-indiana"
+  },
   "jefferson-city-missouri": {
     "city": "Jefferson City",
     "state": "Missouri",
     "slug": "jefferson-city-missouri"
   },
+  "jefferson-georgia": {
+    "city": "Jefferson",
+    "state": "Georgia",
+    "slug": "jefferson-georgia"
+  },
+  "jeffersonville-indiana": {
+    "city": "Jeffersonville",
+    "state": "Indiana",
+    "slug": "jeffersonville-indiana"
+  },
+  "jerome-idaho": {
+    "city": "Jerome",
+    "state": "Idaho",
+    "slug": "jerome-idaho"
+  },
+  "jersey": {
+    "city": "",
+    "state": "Jersey",
+    "slug": "jersey"
+  },
   "jersey-city-new-jersey": {
     "city": "Jersey City",
     "state": "New Jersey",
     "slug": "jersey-city-new-jersey"
+  },
+  "jesup-georgia": {
+    "city": "Jesup",
+    "state": "Georgia",
+    "slug": "jesup-georgia"
   },
   "johnson-city-tennessee": {
     "city": "Johnson City",
@@ -3415,6 +4405,11 @@ export const vendingLeadsCities = {
     "state": "Arkansas",
     "slug": "jonesboro-arkansas"
   },
+  "jonesboro-georgia": {
+    "city": "Jonesboro",
+    "state": "Georgia",
+    "slug": "jonesboro-georgia"
+  },
   "joplin-missouri": {
     "city": "Joplin",
     "state": "Missouri",
@@ -3430,6 +4425,11 @@ export const vendingLeadsCities = {
     "state": "Florida",
     "slug": "jupiter-florida"
   },
+  "jupiter-inlet-colony-florida": {
+    "city": "Jupiter Inlet Colony",
+    "state": "Florida",
+    "slug": "jupiter-inlet-colony-florida"
+  },
   "jurupa-valley-california": {
     "city": "Jurupa Valley",
     "state": "California",
@@ -3444,6 +4444,11 @@ export const vendingLeadsCities = {
     "city": "Kailua",
     "state": "Hawaii",
     "slug": "kailua-hawaii"
+  },
+  "kailua-kona-hawaii": {
+    "city": "Kailua Kona",
+    "state": "Hawaii",
+    "slug": "kailua-kona-hawaii"
   },
   "kalamazoo-michigan": {
     "city": "Kalamazoo",
@@ -3479,6 +4484,11 @@ export const vendingLeadsCities = {
     "city": "Kansas City",
     "state": "Missouri",
     "slug": "kansas-city-missouri"
+  },
+  "kapaa-hawaii": {
+    "city": "Kapaa",
+    "state": "Hawaii",
+    "slug": "kapaa-hawaii"
   },
   "katy-texas": {
     "city": "Katy",
@@ -3555,6 +4565,16 @@ export const vendingLeadsCities = {
     "state": "Ohio",
     "slug": "kettering-ohio"
   },
+  "key-biscayne-florida": {
+    "city": "Key Biscayne",
+    "state": "Florida",
+    "slug": "key-biscayne-florida"
+  },
+  "key-largo-florida": {
+    "city": "Key Largo",
+    "state": "Florida",
+    "slug": "key-largo-florida"
+  },
   "key-west-florida": {
     "city": "Key West",
     "state": "Florida",
@@ -3574,6 +4594,11 @@ export const vendingLeadsCities = {
     "city": "Kingman",
     "state": "Arizona",
     "slug": "kingman-arizona"
+  },
+  "kingsland-georgia": {
+    "city": "Kingsland",
+    "state": "Georgia",
+    "slug": "kingsland-georgia"
   },
   "kingsport-tennessee": {
     "city": "Kingsport",
@@ -3625,6 +4650,11 @@ export const vendingLeadsCities = {
     "state": "Texas",
     "slug": "kyle-texas"
   },
+  "la-belle-florida": {
+    "city": "La Belle",
+    "state": "Florida",
+    "slug": "la-belle-florida"
+  },
   "la-canada-flintridge-california": {
     "city": "La Canada Flintridge",
     "state": "California",
@@ -3640,6 +4670,11 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "la-habra-california"
   },
+  "la-junta-colorado": {
+    "city": "La Junta",
+    "state": "Colorado",
+    "slug": "la-junta-colorado"
+  },
   "la-mesa-california": {
     "city": "La Mesa",
     "state": "California",
@@ -3649,6 +4684,16 @@ export const vendingLeadsCities = {
     "city": "La Mirada",
     "state": "California",
     "slug": "la-mirada-california"
+  },
+  "la-palma-california": {
+    "city": "La Palma",
+    "state": "California",
+    "slug": "la-palma-california"
+  },
+  "la-porte-indiana": {
+    "city": "La Porte",
+    "state": "Indiana",
+    "slug": "la-porte-indiana"
   },
   "la-puente-california": {
     "city": "La Puente",
@@ -3675,10 +4720,20 @@ export const vendingLeadsCities = {
     "state": "Florida",
     "slug": "lady-lake-florida"
   },
+  "lafayette": {
+    "city": "",
+    "state": "Lafayette",
+    "slug": "lafayette"
+  },
   "lafayette-california": {
     "city": "Lafayette",
     "state": "California",
     "slug": "lafayette-california"
+  },
+  "lafayette-colorado": {
+    "city": "Lafayette",
+    "state": "Colorado",
+    "slug": "lafayette-colorado"
   },
   "lafayette-indiana": {
     "city": "Lafayette",
@@ -3695,6 +4750,11 @@ export const vendingLeadsCities = {
     "state": "Georgia",
     "slug": "lagrange-georgia"
   },
+  "lagrange-illinois": {
+    "city": "Lagrange",
+    "state": "Illinois",
+    "slug": "lagrange-illinois"
+  },
   "laguna-beach-california": {
     "city": "Laguna Beach",
     "state": "California",
@@ -3710,6 +4770,26 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "laguna-niguel-california"
   },
+  "laguna-woods-california": {
+    "city": "Laguna Woods",
+    "state": "California",
+    "slug": "laguna-woods-california"
+  },
+  "lahaina-hawaii": {
+    "city": "Lahaina",
+    "state": "Hawaii",
+    "slug": "lahaina-hawaii"
+  },
+  "lake-alfred-florida": {
+    "city": "Lake Alfred",
+    "state": "Florida",
+    "slug": "lake-alfred-florida"
+  },
+  "lake-buena-vista-florida": {
+    "city": "Lake Buena Vista",
+    "state": "Florida",
+    "slug": "lake-buena-vista-florida"
+  },
   "lake-charles-louisiana": {
     "city": "Lake Charles",
     "state": "Louisiana",
@@ -3719,6 +4799,11 @@ export const vendingLeadsCities = {
     "city": "Lake City",
     "state": "Florida",
     "slug": "lake-city-florida"
+  },
+  "lake-clarke-shores-florida": {
+    "city": "Lake Clarke Shores",
+    "state": "Florida",
+    "slug": "lake-clarke-shores-florida"
   },
   "lake-elsinore-california": {
     "city": "Lake Elsinore",
@@ -3730,10 +4815,20 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "lake-forest-california"
   },
+  "lake-forest-illinois": {
+    "city": "Lake Forest",
+    "state": "Illinois",
+    "slug": "lake-forest-illinois"
+  },
   "lake-havasu-city-arizona": {
     "city": "Lake Havasu City",
     "state": "Arizona",
     "slug": "lake-havasu-city-arizona"
+  },
+  "lake-helen-florida": {
+    "city": "Lake Helen",
+    "state": "Florida",
+    "slug": "lake-helen-florida"
   },
   "lake-jackson-texas": {
     "city": "Lake Jackson",
@@ -3744,6 +4839,21 @@ export const vendingLeadsCities = {
     "city": "Lake Mary",
     "state": "Florida",
     "slug": "lake-mary-florida"
+  },
+  "lake-park-florida": {
+    "city": "Lake Park",
+    "state": "Florida",
+    "slug": "lake-park-florida"
+  },
+  "lake-placid-florida": {
+    "city": "Lake Placid",
+    "state": "Florida",
+    "slug": "lake-placid-florida"
+  },
+  "lake-wales-florida": {
+    "city": "Lake Wales",
+    "state": "Florida",
+    "slug": "lake-wales-florida"
   },
   "lake-worth-florida": {
     "city": "Lake Worth",
@@ -3780,6 +4890,11 @@ export const vendingLeadsCities = {
     "state": "Washington",
     "slug": "lakewood-washington"
   },
+  "lamar-colorado": {
+    "city": "Lamar",
+    "state": "Colorado",
+    "slug": "lamar-colorado"
+  },
   "lancaster-california": {
     "city": "Lancaster",
     "state": "California",
@@ -3800,10 +4915,20 @@ export const vendingLeadsCities = {
     "state": "Alabama",
     "slug": "lanett-alabama"
   },
+  "lansing-illinois": {
+    "city": "Lansing",
+    "state": "Illinois",
+    "slug": "lansing-illinois"
+  },
   "lansing-michigan": {
     "city": "Lansing",
     "state": "Michigan",
     "slug": "lansing-michigan"
+  },
+  "lantana-florida": {
+    "city": "Lantana",
+    "state": "Florida",
+    "slug": "lantana-florida"
   },
   "laplace-louisiana": {
     "city": "Laplace",
@@ -3845,10 +4970,25 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "lathrop-california"
   },
+  "lauderdale-by-the-sea-florida": {
+    "city": "Lauderdale By The Sea",
+    "state": "Florida",
+    "slug": "lauderdale-by-the-sea-florida"
+  },
+  "lauderdale-lakes-florida": {
+    "city": "Lauderdale Lakes",
+    "state": "Florida",
+    "slug": "lauderdale-lakes-florida"
+  },
   "lauderhill-florida": {
     "city": "Lauderhill",
     "state": "Florida",
     "slug": "lauderhill-florida"
+  },
+  "laurel-delaware": {
+    "city": "Laurel",
+    "state": "Delaware",
+    "slug": "laurel-delaware"
   },
   "laurel-maryland": {
     "city": "Laurel",
@@ -3860,6 +5000,11 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "lawndale-california"
   },
+  "lawrence-indiana": {
+    "city": "Lawrence",
+    "state": "Indiana",
+    "slug": "lawrence-indiana"
+  },
   "lawrence-kansas": {
     "city": "Lawrence",
     "state": "Kansas",
@@ -3869,6 +5014,11 @@ export const vendingLeadsCities = {
     "city": "Lawrence",
     "state": "Massachusetts",
     "slug": "lawrence-massachusetts"
+  },
+  "lawrenceville-georgia": {
+    "city": "Lawrenceville",
+    "state": "Georgia",
+    "slug": "lawrenceville-georgia"
   },
   "lawton-oklahoma": {
     "city": "Lawton",
@@ -3880,6 +5030,11 @@ export const vendingLeadsCities = {
     "state": "Utah",
     "slug": "layton-utah"
   },
+  "leadville-colorado": {
+    "city": "Leadville",
+    "state": "Colorado",
+    "slug": "leadville-colorado"
+  },
   "league-city-texas": {
     "city": "League City",
     "state": "Texas",
@@ -3889,6 +5044,11 @@ export const vendingLeadsCities = {
     "city": "Leavenworth",
     "state": "Kansas",
     "slug": "leavenworth-kansas"
+  },
+  "lebanon-indiana": {
+    "city": "Lebanon",
+    "state": "Indiana",
+    "slug": "lebanon-indiana"
   },
   "lebanon-pennsylvania": {
     "city": "Lebanon",
@@ -3925,10 +5085,20 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "lemoore-california"
   },
+  "lenexa": {
+    "city": "",
+    "state": "Lenexa",
+    "slug": "lenexa"
+  },
   "lenexa-kansas": {
     "city": "Lenexa",
     "state": "Kansas",
     "slug": "lenexa-kansas"
+  },
+  "lewes-delaware": {
+    "city": "Lewes",
+    "state": "Delaware",
+    "slug": "lewes-delaware"
   },
   "lewisburg-pennsylvania": {
     "city": "Lewisburg",
@@ -3955,10 +5125,20 @@ export const vendingLeadsCities = {
     "state": "Kentucky",
     "slug": "lexington-kentucky"
   },
+  "libertyville-illinois": {
+    "city": "Libertyville",
+    "state": "Illinois",
+    "slug": "libertyville-illinois"
+  },
   "lighthouse-point-florida": {
     "city": "Lighthouse Point",
     "state": "Florida",
     "slug": "lighthouse-point-florida"
+  },
+  "lilburn-georgia": {
+    "city": "Lilburn",
+    "state": "Georgia",
+    "slug": "lilburn-georgia"
   },
   "lima-ohio": {
     "city": "Lima",
@@ -3979,6 +5159,11 @@ export const vendingLeadsCities = {
     "city": "Lindsay",
     "state": "California",
     "slug": "lindsay-california"
+  },
+  "lithonia-georgia": {
+    "city": "Lithonia",
+    "state": "Georgia",
+    "slug": "lithonia-georgia"
   },
   "little-elm-texas": {
     "city": "Little Elm",
@@ -4020,6 +5205,11 @@ export const vendingLeadsCities = {
     "state": "New York",
     "slug": "lockport-new-york"
   },
+  "locust-grove-georgia": {
+    "city": "Locust Grove",
+    "state": "Georgia",
+    "slug": "locust-grove-georgia"
+  },
   "lodi-california": {
     "city": "Lodi",
     "state": "California",
@@ -4027,8 +5217,23 @@ export const vendingLeadsCities = {
   },
   "logan-circle-washington-dc": {
     "city": "Logan Circle",
-    "state": "Washington DC",
+    "state": "Washington Dc",
     "slug": "logan-circle-washington-dc"
+  },
+  "logansport-indiana": {
+    "city": "Logansport",
+    "state": "Indiana",
+    "slug": "logansport-indiana"
+  },
+  "loganville-georgia": {
+    "city": "Loganville",
+    "state": "Georgia",
+    "slug": "loganville-georgia"
+  },
+  "lombard-illinois": {
+    "city": "Lombard",
+    "state": "Illinois",
+    "slug": "lombard-illinois"
   },
   "lomita-california": {
     "city": "Lomita",
@@ -4044,6 +5249,11 @@ export const vendingLeadsCities = {
     "city": "Long Beach",
     "state": "California",
     "slug": "long-beach-california"
+  },
+  "longboat-key-florida": {
+    "city": "Longboat Key",
+    "state": "Florida",
+    "slug": "longboat-key-florida"
   },
   "longmont-colorado": {
     "city": "Longmont",
@@ -4070,6 +5280,11 @@ export const vendingLeadsCities = {
     "state": "Ohio",
     "slug": "lorain-ohio"
   },
+  "los-alamitos-california": {
+    "city": "Los Alamitos",
+    "state": "California",
+    "slug": "los-alamitos-california"
+  },
   "los-altos-california": {
     "city": "Los Altos",
     "state": "California",
@@ -4094,6 +5309,16 @@ export const vendingLeadsCities = {
     "city": "Los Gatos",
     "state": "California",
     "slug": "los-gatos-california"
+  },
+  "louisville-colorado": {
+    "city": "Louisville",
+    "state": "Colorado",
+    "slug": "louisville-colorado"
+  },
+  "louisville-georgia": {
+    "city": "Louisville",
+    "state": "Georgia",
+    "slug": "louisville-georgia"
   },
   "louisville-kentucky": {
     "city": "Louisville",
@@ -4155,10 +5380,20 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "lynwood-california"
   },
+  "mableton-georgia": {
+    "city": "Mableton",
+    "state": "Georgia",
+    "slug": "mableton-georgia"
+  },
   "macclenny-florida": {
     "city": "Macclenny",
     "state": "Florida",
     "slug": "macclenny-florida"
+  },
+  "macomb-illinois": {
+    "city": "Macomb",
+    "state": "Illinois",
+    "slug": "macomb-illinois"
   },
   "macomb-michigan": {
     "city": "Macomb",
@@ -4185,10 +5420,20 @@ export const vendingLeadsCities = {
     "state": "Alabama",
     "slug": "madison-alabama"
   },
+  "madison-georgia": {
+    "city": "Madison",
+    "state": "Georgia",
+    "slug": "madison-georgia"
+  },
   "madison-heights-michigan": {
     "city": "Madison Heights",
     "state": "Michigan",
     "slug": "madison-heights-michigan"
+  },
+  "madison-indiana": {
+    "city": "Madison",
+    "state": "Indiana",
+    "slug": "madison-indiana"
   },
   "madison-wisconsin": {
     "city": "Madison",
@@ -4214,6 +5459,21 @@ export const vendingLeadsCities = {
     "city": "Malden",
     "state": "Massachusetts",
     "slug": "malden-massachusetts"
+  },
+  "malibu-california": {
+    "city": "Malibu",
+    "state": "California",
+    "slug": "malibu-california"
+  },
+  "malvern-arkansas": {
+    "city": "Malvern",
+    "state": "Arkansas",
+    "slug": "malvern-arkansas"
+  },
+  "mammoth-lakes-california": {
+    "city": "Mammoth Lakes",
+    "state": "California",
+    "slug": "mammoth-lakes-california"
   },
   "manchester-connecticut": {
     "city": "Manchester",
@@ -4260,6 +5520,11 @@ export const vendingLeadsCities = {
     "state": "Minnesota",
     "slug": "maple-grove-minnesota"
   },
+  "marathon-florida": {
+    "city": "Marathon",
+    "state": "Florida",
+    "slug": "marathon-florida"
+  },
   "marco-island-florida": {
     "city": "Marco Island",
     "state": "Florida",
@@ -4284,6 +5549,16 @@ export const vendingLeadsCities = {
     "city": "Marina",
     "state": "California",
     "slug": "marina-california"
+  },
+  "marion-indiana": {
+    "city": "Marion",
+    "state": "Indiana",
+    "slug": "marion-indiana"
+  },
+  "marion-iowa": {
+    "city": "Marion",
+    "state": "Iowa",
+    "slug": "marion-iowa"
   },
   "marion-ohio": {
     "city": "Marion",
@@ -4310,6 +5585,16 @@ export const vendingLeadsCities = {
     "state": "West Virginia",
     "slug": "martinsburg-west-virginia"
   },
+  "martinsville-indiana": {
+    "city": "Martinsville",
+    "state": "Indiana",
+    "slug": "martinsville-indiana"
+  },
+  "mary-esther-florida": {
+    "city": "Mary Esther",
+    "state": "Florida",
+    "slug": "mary-esther-florida"
+  },
   "marysville-california": {
     "city": "Marysville",
     "state": "California",
@@ -4320,20 +5605,45 @@ export const vendingLeadsCities = {
     "state": "Washington",
     "slug": "marysville-washington"
   },
+  "mason-city-iowa": {
+    "city": "Mason City",
+    "state": "Iowa",
+    "slug": "mason-city-iowa"
+  },
   "massillon-ohio": {
     "city": "Massillon",
     "state": "Ohio",
     "slug": "massillon-ohio"
+  },
+  "mattoon-illinois": {
+    "city": "Mattoon",
+    "state": "Illinois",
+    "slug": "mattoon-illinois"
+  },
+  "maywood-california": {
+    "city": "Maywood",
+    "state": "California",
+    "slug": "maywood-california"
   },
   "mcallen-texas": {
     "city": "Mcallen",
     "state": "Texas",
     "slug": "mcallen-texas"
   },
+  "mcdonough-georgia": {
+    "city": "Mcdonough",
+    "state": "Georgia",
+    "slug": "mcdonough-georgia"
+  },
   "mcfarland-california": {
     "city": "Mcfarland",
     "state": "California",
     "slug": "mcfarland-california"
+  },
+  "mchenry-illinois": {
+    "city": "Mchenry",
+    "state": "Illinois",
+    "slug": "mchenry-illinois"
   },
   "mckeesport-pennsylvania": {
     "city": "Mckeesport",
@@ -4350,6 +5660,11 @@ export const vendingLeadsCities = {
     "state": "Kansas",
     "slug": "mcpherson-kansas"
   },
+  "mcrae-georgia": {
+    "city": "Mcrae",
+    "state": "Georgia",
+    "slug": "mcrae-georgia"
+  },
   "medford-massachusetts": {
     "city": "Medford",
     "state": "Massachusetts",
@@ -4360,10 +5675,20 @@ export const vendingLeadsCities = {
     "state": "Oregon",
     "slug": "medford-oregon"
   },
+  "melbourne-beach-florida": {
+    "city": "Melbourne Beach",
+    "state": "Florida",
+    "slug": "melbourne-beach-florida"
+  },
   "melbourne-florida": {
     "city": "Melbourne",
     "state": "Florida",
     "slug": "melbourne-florida"
+  },
+  "melrose-park-illinois": {
+    "city": "Melrose Park",
+    "state": "Illinois",
+    "slug": "melrose-park-illinois"
   },
   "memphis-tennessee": {
     "city": "Memphis",
@@ -4405,6 +5730,11 @@ export const vendingLeadsCities = {
     "state": "Mississippi",
     "slug": "meridian-mississippi"
   },
+  "merrillville-indiana": {
+    "city": "Merrillville",
+    "state": "Indiana",
+    "slug": "merrillville-indiana"
+  },
   "merrimack-new-hampshire": {
     "city": "Merrimack",
     "state": "New Hampshire",
@@ -4440,6 +5770,11 @@ export const vendingLeadsCities = {
     "state": "Massachusetts",
     "slug": "methuen-massachusetts"
   },
+  "mexico-beach-florida": {
+    "city": "Mexico Beach",
+    "state": "Florida",
+    "slug": "mexico-beach-florida"
+  },
   "miami-beach-florida": {
     "city": "Miami Beach",
     "state": "Florida",
@@ -4454,6 +5789,36 @@ export const vendingLeadsCities = {
     "city": "Miami Gardens",
     "state": "Florida",
     "slug": "miami-gardens-florida"
+  },
+  "miami-lakes-florida": {
+    "city": "Miami Lakes",
+    "state": "Florida",
+    "slug": "miami-lakes-florida"
+  },
+  "miami-shores-florida": {
+    "city": "Miami Shores",
+    "state": "Florida",
+    "slug": "miami-shores-florida"
+  },
+  "miami-springs-florida": {
+    "city": "Miami Springs",
+    "state": "Florida",
+    "slug": "miami-springs-florida"
+  },
+  "miccosukee-florida": {
+    "city": "Miccosukee",
+    "state": "Florida",
+    "slug": "miccosukee-florida"
+  },
+  "michigan-city-indiana": {
+    "city": "Michigan City",
+    "state": "Indiana",
+    "slug": "michigan-city-indiana"
+  },
+  "middleburg-florida": {
+    "city": "Middleburg",
+    "state": "Florida",
+    "slug": "middleburg-florida"
   },
   "middletown-connecticut": {
     "city": "Middletown",
@@ -4495,6 +5860,11 @@ export const vendingLeadsCities = {
     "state": "Delaware",
     "slug": "milford-delaware"
   },
+  "mililani": {
+    "city": "",
+    "state": "Mililani",
+    "slug": "mililani"
+  },
   "mililani-hawaii": {
     "city": "Mililani",
     "state": "Hawaii",
@@ -4524,6 +5894,11 @@ export const vendingLeadsCities = {
     "city": "Milpitas",
     "state": "California",
     "slug": "milpitas-california"
+  },
+  "milton-delaware": {
+    "city": "Milton",
+    "state": "Delaware",
+    "slug": "milton-delaware"
   },
   "milton-florida": {
     "city": "Milton",
@@ -4560,6 +5935,11 @@ export const vendingLeadsCities = {
     "state": "Florida",
     "slug": "miramar-florida"
   },
+  "mishawaka-indiana": {
+    "city": "Mishawaka",
+    "state": "Indiana",
+    "slug": "mishawaka-indiana"
+  },
   "mission-texas": {
     "city": "Mission",
     "state": "Texas",
@@ -4595,10 +5975,20 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "modesto-california"
   },
+  "mokena-illinois": {
+    "city": "Mokena",
+    "state": "Illinois",
+    "slug": "mokena-illinois"
+  },
   "moline-illinois": {
     "city": "Moline",
     "state": "Illinois",
     "slug": "moline-illinois"
+  },
+  "monroe-georgia": {
+    "city": "Monroe",
+    "state": "Georgia",
+    "slug": "monroe-georgia"
   },
   "monroe-louisiana": {
     "city": "Monroe",
@@ -4655,6 +6045,16 @@ export const vendingLeadsCities = {
     "state": "Arkansas",
     "slug": "monticello-arkansas"
   },
+  "monticello-florida": {
+    "city": "Monticello",
+    "state": "Florida",
+    "slug": "monticello-florida"
+  },
+  "monticello-georgia": {
+    "city": "Monticello",
+    "state": "Georgia",
+    "slug": "monticello-georgia"
+  },
   "montpelier-vermont": {
     "city": "Montpelier",
     "state": "Vermont",
@@ -4664,6 +6064,11 @@ export const vendingLeadsCities = {
     "city": "Montrose",
     "state": "Colorado",
     "slug": "montrose-colorado"
+  },
+  "moore-haven-florida": {
+    "city": "Moore Haven",
+    "state": "Florida",
+    "slug": "moore-haven-florida"
   },
   "moore-oklahoma": {
     "city": "Moore",
@@ -4679,6 +6084,11 @@ export const vendingLeadsCities = {
     "city": "Moorpark",
     "state": "California",
     "slug": "moorpark-california"
+  },
+  "moraga-california": {
+    "city": "Moraga",
+    "state": "California",
+    "slug": "moraga-california"
   },
   "moreno-valley-california": {
     "city": "Moreno Valley",
@@ -4699,6 +6109,21 @@ export const vendingLeadsCities = {
     "city": "Morro Bay",
     "state": "California",
     "slug": "morro-bay-california"
+  },
+  "morrow-georgia": {
+    "city": "Morrow",
+    "state": "Georgia",
+    "slug": "morrow-georgia"
+  },
+  "moscow-idaho": {
+    "city": "Moscow",
+    "state": "Idaho",
+    "slug": "moscow-idaho"
+  },
+  "moultrie-georgia": {
+    "city": "Moultrie",
+    "state": "Georgia",
+    "slug": "moultrie-georgia"
   },
   "mount-dora-florida": {
     "city": "Mount Dora",
@@ -4725,6 +6150,11 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "mount-shasta-california"
   },
+  "mount-vernon-georgia": {
+    "city": "Mount Vernon",
+    "state": "Georgia",
+    "slug": "mount-vernon-georgia"
+  },
   "mount-vernon-new-york": {
     "city": "Mount Vernon",
     "state": "New York",
@@ -4750,10 +6180,25 @@ export const vendingLeadsCities = {
     "state": "Washington",
     "slug": "mukilteo-washington"
   },
+  "mulberry-florida": {
+    "city": "Mulberry",
+    "state": "Florida",
+    "slug": "mulberry-florida"
+  },
   "muncie-indiana": {
     "city": "Muncie",
     "state": "Indiana",
     "slug": "muncie-indiana"
+  },
+  "mundelein-illinois": {
+    "city": "Mundelein",
+    "state": "Illinois",
+    "slug": "mundelein-illinois"
+  },
+  "munster-indiana": {
+    "city": "Munster",
+    "state": "Indiana",
+    "slug": "munster-indiana"
   },
   "murfreesboro-tennessee": {
     "city": "Murfreesboro",
@@ -4769,6 +6214,11 @@ export const vendingLeadsCities = {
     "city": "Murrieta",
     "state": "California",
     "slug": "murrieta-california"
+  },
+  "muscatine-iowa": {
+    "city": "Muscatine",
+    "state": "Iowa",
+    "slug": "muscatine-iowa"
   },
   "muscle-shoals-alabama": {
     "city": "Muscle Shoals",
@@ -4815,6 +6265,11 @@ export const vendingLeadsCities = {
     "state": "New Hampshire",
     "slug": "nashua-new-hampshire"
   },
+  "nashville-georgia": {
+    "city": "Nashville",
+    "state": "Georgia",
+    "slug": "nashville-georgia"
+  },
   "nashville-tennessee": {
     "city": "Nashville",
     "state": "Tennessee",
@@ -4830,15 +6285,30 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "national-city-california"
   },
+  "naugatuck-connecticut": {
+    "city": "Naugatuck",
+    "state": "Connecticut",
+    "slug": "naugatuck-connecticut"
+  },
   "navy-yard-washington-dc": {
     "city": "Navy Yard",
-    "state": "Washington DC",
+    "state": "Washington Dc",
     "slug": "navy-yard-washington-dc"
   },
   "needles-california": {
     "city": "Needles",
     "state": "California",
     "slug": "needles-california"
+  },
+  "neptune-beach-florida": {
+    "city": "Neptune Beach",
+    "state": "Florida",
+    "slug": "neptune-beach-florida"
+  },
+  "new-albany-indiana": {
+    "city": "New Albany",
+    "state": "Indiana",
+    "slug": "new-albany-indiana"
   },
   "new-bedford-massachusetts": {
     "city": "New Bedford",
@@ -4865,6 +6335,11 @@ export const vendingLeadsCities = {
     "state": "Delaware",
     "slug": "new-castle-delaware"
   },
+  "new-castle-indiana": {
+    "city": "New Castle",
+    "state": "Indiana",
+    "slug": "new-castle-indiana"
+  },
   "new-castle-pennsylvania": {
     "city": "New Castle",
     "state": "Pennsylvania",
@@ -4874,6 +6349,16 @@ export const vendingLeadsCities = {
     "city": "New Haven",
     "state": "Connecticut",
     "slug": "new-haven-connecticut"
+  },
+  "new-london-connecticut": {
+    "city": "New London",
+    "state": "Connecticut",
+    "slug": "new-london-connecticut"
+  },
+  "new-milford-connecticut": {
+    "city": "New Milford",
+    "state": "Connecticut",
+    "slug": "new-milford-connecticut"
   },
   "new-orleans-louisiana": {
     "city": "New Orleans",
@@ -4925,6 +6410,11 @@ export const vendingLeadsCities = {
     "state": "New York",
     "slug": "newburgh-new-york"
   },
+  "newington-connecticut": {
+    "city": "Newington",
+    "state": "Connecticut",
+    "slug": "newington-connecticut"
+  },
   "newman-california": {
     "city": "Newman",
     "state": "California",
@@ -4934,6 +6424,11 @@ export const vendingLeadsCities = {
     "city": "Newnan",
     "state": "Georgia",
     "slug": "newnan-georgia"
+  },
+  "newport-arkansas": {
+    "city": "Newport",
+    "state": "Arkansas",
+    "slug": "newport-arkansas"
   },
   "newport-beach-california": {
     "city": "Newport Beach",
@@ -4954,6 +6449,11 @@ export const vendingLeadsCities = {
     "city": "Newport",
     "state": "Rhode Island",
     "slug": "newport-rhode-island"
+  },
+  "newton-iowa": {
+    "city": "Newton",
+    "state": "Iowa",
+    "slug": "newton-iowa"
   },
   "newton-kansas": {
     "city": "Newton",
@@ -4980,15 +6480,30 @@ export const vendingLeadsCities = {
     "state": "Ohio",
     "slug": "niles-ohio"
   },
+  "noblesville-indiana": {
+    "city": "Noblesville",
+    "state": "Indiana",
+    "slug": "noblesville-indiana"
+  },
   "nogales-arizona": {
     "city": "Nogales",
     "state": "Arizona",
     "slug": "nogales-arizona"
   },
+  "nome-alaska": {
+    "city": "Nome",
+    "state": "Alaska",
+    "slug": "nome-alaska"
+  },
   "norco-california": {
     "city": "Norco",
     "state": "California",
     "slug": "norco-california"
+  },
+  "norcross-georgia": {
+    "city": "Norcross",
+    "state": "Georgia",
+    "slug": "norcross-georgia"
   },
   "norfolk-nebraska": {
     "city": "Norfolk",
@@ -5015,25 +6530,50 @@ export const vendingLeadsCities = {
     "state": "Pennsylvania",
     "slug": "norristown-pennsylvania"
   },
+  "north-bay-village-florida": {
+    "city": "North Bay Village",
+    "state": "Florida",
+    "slug": "north-bay-village-florida"
+  },
   "north-charleston-south-carolina": {
     "city": "North Charleston",
     "state": "South Carolina",
     "slug": "north-charleston-south-carolina"
+  },
+  "north-haven-connecticut": {
+    "city": "North Haven",
+    "state": "Connecticut",
+    "slug": "north-haven-connecticut"
   },
   "north-las-vegas-nevada": {
     "city": "North Las Vegas",
     "state": "Nevada",
     "slug": "north-las-vegas-nevada"
   },
+  "north-lauderdale-florida": {
+    "city": "North Lauderdale",
+    "state": "Florida",
+    "slug": "north-lauderdale-florida"
+  },
   "north-little-rock-arkansas": {
     "city": "North Little Rock",
     "state": "Arkansas",
     "slug": "north-little-rock-arkansas"
   },
+  "north-miami-beach-florida": {
+    "city": "North Miami Beach",
+    "state": "Florida",
+    "slug": "north-miami-beach-florida"
+  },
   "north-miami-florida": {
     "city": "North Miami",
     "state": "Florida",
     "slug": "north-miami-florida"
+  },
+  "north-palm-beach-florida": {
+    "city": "North Palm Beach",
+    "state": "Florida",
+    "slug": "north-palm-beach-florida"
   },
   "north-platte-nebraska": {
     "city": "North Platte",
@@ -5049,6 +6589,21 @@ export const vendingLeadsCities = {
     "city": "North Richland Hills",
     "state": "Texas",
     "slug": "north-richland-hills-texas"
+  },
+  "north-vernon-indiana": {
+    "city": "North Vernon",
+    "state": "Indiana",
+    "slug": "north-vernon-indiana"
+  },
+  "northbrook-illinois": {
+    "city": "Northbrook",
+    "state": "Illinois",
+    "slug": "northbrook-illinois"
+  },
+  "northglenn-colorado": {
+    "city": "Northglenn",
+    "state": "Colorado",
+    "slug": "northglenn-colorado"
   },
   "northport-alabama": {
     "city": "Northport",
@@ -5090,10 +6645,20 @@ export const vendingLeadsCities = {
     "state": "Missouri",
     "slug": "o-fallon-missouri"
   },
+  "oak-forest-illinois": {
+    "city": "Oak Forest",
+    "state": "Illinois",
+    "slug": "oak-forest-illinois"
+  },
   "oak-harbor-washington": {
     "city": "Oak Harbor",
     "state": "Washington",
     "slug": "oak-harbor-washington"
+  },
+  "oak-hill-florida": {
+    "city": "Oak Hill",
+    "state": "Florida",
+    "slug": "oak-hill-florida"
   },
   "oak-lawn-illinois": {
     "city": "Oak Lawn",
@@ -5120,20 +6685,40 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "oakland-california"
   },
+  "oakland-park-florida": {
+    "city": "Oakland Park",
+    "state": "Florida",
+    "slug": "oakland-park-florida"
+  },
   "oakley-california": {
     "city": "Oakley",
     "state": "California",
     "slug": "oakley-california"
+  },
+  "oakwood-georgia": {
+    "city": "Oakwood",
+    "state": "Georgia",
+    "slug": "oakwood-georgia"
   },
   "ocala-florida": {
     "city": "Ocala",
     "state": "Florida",
     "slug": "ocala-florida"
   },
+  "ocean-ridge-florida": {
+    "city": "Ocean Ridge",
+    "state": "Florida",
+    "slug": "ocean-ridge-florida"
+  },
   "oceanside-california": {
     "city": "Oceanside",
     "state": "California",
     "slug": "oceanside-california"
+  },
+  "ocilla-georgia": {
+    "city": "Ocilla",
+    "state": "Georgia",
+    "slug": "ocilla-georgia"
   },
   "ocoee-florida": {
     "city": "Ocoee",
@@ -5160,6 +6745,11 @@ export const vendingLeadsCities = {
     "state": "New York",
     "slug": "ogdensburg-new-york"
   },
+  "oglethorpe-georgia": {
+    "city": "Oglethorpe",
+    "state": "Georgia",
+    "slug": "oglethorpe-georgia"
+  },
   "oil-city-pennsylvania": {
     "city": "Oil City",
     "state": "Pennsylvania",
@@ -5170,6 +6760,11 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "ojai-california"
   },
+  "okeechobee-florida": {
+    "city": "Okeechobee",
+    "state": "Florida",
+    "slug": "okeechobee-florida"
+  },
   "oklahoma-city-oklahoma": {
     "city": "Oklahoma City",
     "state": "Oklahoma",
@@ -5179,6 +6774,11 @@ export const vendingLeadsCities = {
     "city": "Olathe",
     "state": "Kansas",
     "slug": "olathe-kansas"
+  },
+  "oldsmar-florida": {
+    "city": "Oldsmar",
+    "state": "Florida",
+    "slug": "oldsmar-florida"
   },
   "olean-new-york": {
     "city": "Olean",
@@ -5210,6 +6810,11 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "ontario-california"
   },
+  "opa-locka-florida": {
+    "city": "Opa Locka",
+    "state": "Florida",
+    "slug": "opa-locka-florida"
+  },
   "opelika-alabama": {
     "city": "Opelika",
     "state": "Alabama",
@@ -5229,6 +6834,16 @@ export const vendingLeadsCities = {
     "city": "Orange",
     "state": "California",
     "slug": "orange-california"
+  },
+  "orange-city-florida": {
+    "city": "Orange City",
+    "state": "Florida",
+    "slug": "orange-city-florida"
+  },
+  "orange-connecticut": {
+    "city": "Orange",
+    "state": "Connecticut",
+    "slug": "orange-connecticut"
   },
   "orange-cove-california": {
     "city": "Orange Cove",
@@ -5290,15 +6905,35 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "oroville-california"
   },
+  "osceola-arkansas": {
+    "city": "Osceola",
+    "state": "Arkansas",
+    "slug": "osceola-arkansas"
+  },
   "oshkosh-wisconsin": {
     "city": "Oshkosh",
     "state": "Wisconsin",
     "slug": "oshkosh-wisconsin"
   },
+  "oswego-illinois": {
+    "city": "Oswego",
+    "state": "Illinois",
+    "slug": "oswego-illinois"
+  },
   "oswego-new-york": {
     "city": "Oswego",
     "state": "New York",
     "slug": "oswego-new-york"
+  },
+  "ottawa-illinois": {
+    "city": "Ottawa",
+    "state": "Illinois",
+    "slug": "ottawa-illinois"
+  },
+  "ottumwa-iowa": {
+    "city": "Ottumwa",
+    "state": "Iowa",
+    "slug": "ottumwa-iowa"
   },
   "overland-park-kansas": {
     "city": "Overland Park",
@@ -5355,6 +6990,11 @@ export const vendingLeadsCities = {
     "state": "Arizona",
     "slug": "page-arizona"
   },
+  "pahokee-florida": {
+    "city": "Pahokee",
+    "state": "Florida",
+    "slug": "pahokee-florida"
+  },
   "pahrump-nevada": {
     "city": "Pahrump",
     "state": "Nevada",
@@ -5365,6 +7005,11 @@ export const vendingLeadsCities = {
     "state": "Illinois",
     "slug": "palatine-illinois"
   },
+  "palatka-florida": {
+    "city": "Palatka",
+    "state": "Florida",
+    "slug": "palatka-florida"
+  },
   "palestine-texas": {
     "city": "Palestine",
     "state": "Texas",
@@ -5374,6 +7019,11 @@ export const vendingLeadsCities = {
     "city": "Palm Bay",
     "state": "Florida",
     "slug": "palm-bay-florida"
+  },
+  "palm-beach-florida": {
+    "city": "Palm Beach",
+    "state": "Florida",
+    "slug": "palm-beach-florida"
   },
   "palm-beach-gardens-florida": {
     "city": "Palm Beach Gardens",
@@ -5395,10 +7045,20 @@ export const vendingLeadsCities = {
     "state": "Florida",
     "slug": "palm-harbor-florida"
   },
+  "palm-shores-florida": {
+    "city": "Palm Shores",
+    "state": "Florida",
+    "slug": "palm-shores-florida"
+  },
   "palm-springs-california": {
     "city": "Palm Springs",
     "state": "California",
     "slug": "palm-springs-california"
+  },
+  "palm-springs-florida": {
+    "city": "Palm Springs",
+    "state": "Florida",
+    "slug": "palm-springs-florida"
   },
   "palmdale-california": {
     "city": "Palmdale",
@@ -5414,6 +7074,11 @@ export const vendingLeadsCities = {
     "city": "Palmetto Bay",
     "state": "Florida",
     "slug": "palmetto-bay-florida"
+  },
+  "palmetto-florida": {
+    "city": "Palmetto",
+    "state": "Florida",
+    "slug": "palmetto-florida"
   },
   "palo-alto-california": {
     "city": "Palo Alto",
@@ -5465,10 +7130,20 @@ export const vendingLeadsCities = {
     "state": "Colorado",
     "slug": "parker-colorado"
   },
+  "parker-florida": {
+    "city": "Parker",
+    "state": "Florida",
+    "slug": "parker-florida"
+  },
   "parkersburg-west-virginia": {
     "city": "Parkersburg",
     "state": "West Virginia",
     "slug": "parkersburg-west-virginia"
+  },
+  "parkland-florida": {
+    "city": "Parkland",
+    "state": "Florida",
+    "slug": "parkland-florida"
   },
   "parma-ohio": {
     "city": "Parma",
@@ -5530,6 +7205,16 @@ export const vendingLeadsCities = {
     "state": "Massachusetts",
     "slug": "peabody-massachusetts"
   },
+  "peachtree-city-georgia": {
+    "city": "Peachtree City",
+    "state": "Georgia",
+    "slug": "peachtree-city-georgia"
+  },
+  "peachtree-corners-georgia": {
+    "city": "Peachtree Corners",
+    "state": "Georgia",
+    "slug": "peachtree-corners-georgia"
+  },
   "pearl-city-hawaii": {
     "city": "Pearl City",
     "state": "Hawaii",
@@ -5575,10 +7260,25 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "perris-california"
   },
+  "perry-florida": {
+    "city": "Perry",
+    "state": "Florida",
+    "slug": "perry-florida"
+  },
+  "perry-georgia": {
+    "city": "Perry",
+    "state": "Georgia",
+    "slug": "perry-georgia"
+  },
   "perth-amboy-new-jersey": {
     "city": "Perth Amboy",
     "state": "New Jersey",
     "slug": "perth-amboy-new-jersey"
+  },
+  "peru-indiana": {
+    "city": "Peru",
+    "state": "Indiana",
+    "slug": "peru-indiana"
   },
   "petaluma-california": {
     "city": "Petaluma",
@@ -5630,6 +7330,11 @@ export const vendingLeadsCities = {
     "state": "Arkansas",
     "slug": "pine-bluff-arkansas"
   },
+  "pinellas-park-florida": {
+    "city": "Pinellas Park",
+    "state": "Florida",
+    "slug": "pinellas-park-florida"
+  },
   "pinole-california": {
     "city": "Pinole",
     "state": "California",
@@ -5639,6 +7344,11 @@ export const vendingLeadsCities = {
     "city": "Piqua",
     "state": "Ohio",
     "slug": "piqua-ohio"
+  },
+  "pismo-beach-california": {
+    "city": "Pismo Beach",
+    "state": "California",
+    "slug": "pismo-beach-california"
   },
   "pittsburg-california": {
     "city": "Pittsburg",
@@ -5670,6 +7380,16 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "placerville-california"
   },
+  "plainfield-illinois": {
+    "city": "Plainfield",
+    "state": "Illinois",
+    "slug": "plainfield-illinois"
+  },
+  "plainfield-indiana": {
+    "city": "Plainfield",
+    "state": "Indiana",
+    "slug": "plainfield-indiana"
+  },
   "plainfield-new-jersey": {
     "city": "Plainfield",
     "state": "New Jersey",
@@ -5679,6 +7399,11 @@ export const vendingLeadsCities = {
     "city": "Plainview",
     "state": "Texas",
     "slug": "plainview-texas"
+  },
+  "plainville-connecticut": {
+    "city": "Plainville",
+    "state": "Connecticut",
+    "slug": "plainville-connecticut"
   },
   "plano-texas": {
     "city": "Plano",
@@ -5730,10 +7455,20 @@ export const vendingLeadsCities = {
     "state": "Florida",
     "slug": "pompano-beach-florida"
   },
+  "ponce-inlet-florida": {
+    "city": "Ponce Inlet",
+    "state": "Florida",
+    "slug": "ponce-inlet-florida"
+  },
   "pontiac-michigan": {
     "city": "Pontiac",
     "state": "Michigan",
     "slug": "pontiac-michigan"
+  },
+  "pooler-georgia": {
+    "city": "Pooler",
+    "state": "Georgia",
+    "slug": "pooler-georgia"
   },
   "port-arthur-texas": {
     "city": "Port Arthur",
@@ -5765,6 +7500,16 @@ export const vendingLeadsCities = {
     "state": "Florida",
     "slug": "port-orange-florida"
   },
+  "port-richey-florida": {
+    "city": "Port Richey",
+    "state": "Florida",
+    "slug": "port-richey-florida"
+  },
+  "port-st-joe-florida": {
+    "city": "Port St Joe",
+    "state": "Florida",
+    "slug": "port-st-joe-florida"
+  },
   "port-st-lucie-florida": {
     "city": "Port St Lucie",
     "state": "Florida",
@@ -5774,6 +7519,11 @@ export const vendingLeadsCities = {
     "city": "Port St. Lucie",
     "state": "Florida",
     "slug": "port-st.-lucie-florida"
+  },
+  "portage-indiana": {
+    "city": "Portage",
+    "state": "Indiana",
+    "slug": "portage-indiana"
   },
   "portage-michigan": {
     "city": "Portage",
@@ -5795,6 +7545,11 @@ export const vendingLeadsCities = {
     "state": "Oregon",
     "slug": "portland-oregon"
   },
+  "portola-california": {
+    "city": "Portola",
+    "state": "California",
+    "slug": "portola-california"
+  },
   "portsmouth-new-hampshire": {
     "city": "Portsmouth",
     "state": "New Hampshire",
@@ -5804,6 +7559,11 @@ export const vendingLeadsCities = {
     "city": "Portsmouth",
     "state": "Virginia",
     "slug": "portsmouth-virginia"
+  },
+  "post-falls-idaho": {
+    "city": "Post Falls",
+    "state": "Idaho",
+    "slug": "post-falls-idaho"
   },
   "pottstown-pennsylvania": {
     "city": "Pottstown",
@@ -5819,6 +7579,11 @@ export const vendingLeadsCities = {
     "city": "Poway",
     "state": "California",
     "slug": "poway-california"
+  },
+  "powder-springs-georgia": {
+    "city": "Powder Springs",
+    "state": "Georgia",
+    "slug": "powder-springs-georgia"
   },
   "prattville-alabama": {
     "city": "Prattville",
@@ -5875,6 +7640,11 @@ export const vendingLeadsCities = {
     "state": "Arizona",
     "slug": "queen-creek-arizona"
   },
+  "quincy-florida": {
+    "city": "Quincy",
+    "state": "Florida",
+    "slug": "quincy-florida"
+  },
   "quincy-illinois": {
     "city": "Quincy",
     "state": "Illinois",
@@ -5884,6 +7654,11 @@ export const vendingLeadsCities = {
     "city": "Quincy",
     "state": "Massachusetts",
     "slug": "quincy-massachusetts"
+  },
+  "quitman-georgia": {
+    "city": "Quitman",
+    "state": "Georgia",
+    "slug": "quitman-georgia"
   },
   "racine-wisconsin": {
     "city": "Racine",
@@ -5914,6 +7689,11 @@ export const vendingLeadsCities = {
     "city": "Rancho Palos Verdes",
     "state": "California",
     "slug": "rancho-palos-verdes-california"
+  },
+  "rancho-santa-margarita-california": {
+    "city": "Rancho Santa Margarita",
+    "state": "California",
+    "slug": "rancho-santa-margarita-california"
   },
   "rapid-city-south-dakota": {
     "city": "Rapid City",
@@ -5960,6 +7740,16 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "reedley-california"
   },
+  "rehoboth-beach-delaware": {
+    "city": "Rehoboth Beach",
+    "state": "Delaware",
+    "slug": "rehoboth-beach-delaware"
+  },
+  "reidsville-georgia": {
+    "city": "Reidsville",
+    "state": "Georgia",
+    "slug": "reidsville-georgia"
+  },
   "reno-nevada": {
     "city": "Reno",
     "state": "Nevada",
@@ -6005,6 +7795,11 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "richmond-california"
   },
+  "richmond-indiana": {
+    "city": "Richmond",
+    "state": "Indiana",
+    "slug": "richmond-indiana"
+  },
   "richmond-kentucky": {
     "city": "Richmond",
     "state": "Kentucky",
@@ -6019,6 +7814,16 @@ export const vendingLeadsCities = {
     "city": "Ridgecrest",
     "state": "California",
     "slug": "ridgecrest-california"
+  },
+  "rifle-colorado": {
+    "city": "Rifle",
+    "state": "Colorado",
+    "slug": "rifle-colorado"
+  },
+  "rincon-georgia": {
+    "city": "Rincon",
+    "state": "Georgia",
+    "slug": "rincon-georgia"
   },
   "rio-rancho-new-mexico": {
     "city": "Rio Rancho",
@@ -6039,6 +7844,11 @@ export const vendingLeadsCities = {
     "city": "Riverbank",
     "state": "California",
     "slug": "riverbank-california"
+  },
+  "riverdale-georgia": {
+    "city": "Riverdale",
+    "state": "Georgia",
+    "slug": "riverdale-georgia"
   },
   "riverside-california": {
     "city": "Riverside",
@@ -6079,6 +7889,11 @@ export const vendingLeadsCities = {
     "city": "Rock Hill",
     "state": "South Carolina",
     "slug": "rock-hill-south-carolina"
+  },
+  "rock-island-illinois": {
+    "city": "Rock Island",
+    "state": "Illinois",
+    "slug": "rock-island-illinois"
   },
   "rock-springs-wyoming": {
     "city": "Rock Springs",
@@ -6125,6 +7940,16 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "rohnert-park-california"
   },
+  "rolling-hills-california": {
+    "city": "Rolling Hills",
+    "state": "California",
+    "slug": "rolling-hills-california"
+  },
+  "rolling-hills-estates-california": {
+    "city": "Rolling Hills Estates",
+    "state": "California",
+    "slug": "rolling-hills-estates-california"
+  },
   "rolling-meadows-illinois": {
     "city": "Rolling Meadows",
     "state": "Illinois",
@@ -6140,10 +7965,20 @@ export const vendingLeadsCities = {
     "state": "New York",
     "slug": "rome-new-york"
   },
+  "romeoville-illinois": {
+    "city": "Romeoville",
+    "state": "Illinois",
+    "slug": "romeoville-illinois"
+  },
   "roseburg-oregon": {
     "city": "Roseburg",
     "state": "Oregon",
     "slug": "roseburg-oregon"
+  },
+  "roselle-illinois": {
+    "city": "Roselle",
+    "state": "Illinois",
+    "slug": "roselle-illinois"
   },
   "rosemead-california": {
     "city": "Rosemead",
@@ -6160,6 +7995,11 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "roseville-california"
   },
+  "ross-california": {
+    "city": "Ross",
+    "state": "California",
+    "slug": "ross-california"
+  },
   "roswell-georgia": {
     "city": "Roswell",
     "state": "Georgia",
@@ -6169,6 +8009,11 @@ export const vendingLeadsCities = {
     "city": "Roswell",
     "state": "New Mexico",
     "slug": "roswell-new-mexico"
+  },
+  "round-lake-beach-illinois": {
+    "city": "Round Lake Beach",
+    "state": "Illinois",
+    "slug": "round-lake-beach-illinois"
   },
   "round-rock-texas": {
     "city": "Round Rock",
@@ -6190,6 +8035,11 @@ export const vendingLeadsCities = {
     "state": "Florida",
     "slug": "royal-palm-beach-florida"
   },
+  "rushville-indiana": {
+    "city": "Rushville",
+    "state": "Indiana",
+    "slug": "rushville-indiana"
+  },
   "russellville-alabama": {
     "city": "Russellville",
     "state": "Alabama",
@@ -6210,6 +8060,11 @@ export const vendingLeadsCities = {
     "state": "Vermont",
     "slug": "rutland-vermont"
   },
+  "rutledge-georgia": {
+    "city": "Rutledge",
+    "state": "Georgia",
+    "slug": "rutledge-georgia"
+  },
   "saco-maine": {
     "city": "Saco",
     "state": "Maine",
@@ -6219,6 +8074,11 @@ export const vendingLeadsCities = {
     "city": "Sacramento",
     "state": "California",
     "slug": "sacramento-california"
+  },
+  "safety-harbor-florida": {
+    "city": "Safety Harbor",
+    "state": "Florida",
+    "slug": "safety-harbor-florida"
   },
   "safford-arizona": {
     "city": "Safford",
@@ -6275,6 +8135,11 @@ export const vendingLeadsCities = {
     "state": "Oregon",
     "slug": "salem-oregon"
   },
+  "salida-colorado": {
+    "city": "Salida",
+    "state": "Colorado",
+    "slug": "salida-colorado"
+  },
   "salina-kansas": {
     "city": "Salina",
     "state": "Kansas",
@@ -6319,6 +8184,11 @@ export const vendingLeadsCities = {
     "city": "San Anselmo",
     "state": "California",
     "slug": "san-anselmo-california"
+  },
+  "san-antonio-florida": {
+    "city": "San Antonio",
+    "state": "Florida",
+    "slug": "san-antonio-florida"
   },
   "san-antonio-texas": {
     "city": "San Antonio",
@@ -6410,6 +8280,11 @@ export const vendingLeadsCities = {
     "state": "Texas",
     "slug": "san-marcos-texas"
   },
+  "san-marino-california": {
+    "city": "San Marino",
+    "state": "California",
+    "slug": "san-marino-california"
+  },
   "san-mateo-california": {
     "city": "San Mateo",
     "state": "California",
@@ -6429,6 +8304,16 @@ export const vendingLeadsCities = {
     "city": "San Ramon",
     "state": "California",
     "slug": "san-ramon-california"
+  },
+  "sandersville-georgia": {
+    "city": "Sandersville",
+    "state": "Georgia",
+    "slug": "sandersville-georgia"
+  },
+  "sandpoint-idaho": {
+    "city": "Sandpoint",
+    "state": "Idaho",
+    "slug": "sandpoint-idaho"
   },
   "sandusky-ohio": {
     "city": "Sandusky",
@@ -6460,6 +8345,11 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "sanger-california"
   },
+  "sanibel-florida": {
+    "city": "Sanibel",
+    "state": "Florida",
+    "slug": "sanibel-florida"
+  },
   "santa-ana-california": {
     "city": "Santa Ana",
     "state": "California",
@@ -6489,6 +8379,11 @@ export const vendingLeadsCities = {
     "city": "Santa Fe",
     "state": "New Mexico",
     "slug": "santa-fe-new-mexico"
+  },
+  "santa-fe-springs-california": {
+    "city": "Santa Fe Springs",
+    "state": "California",
+    "slug": "santa-fe-springs-california"
   },
   "santa-maria-california": {
     "city": "Santa Maria",
@@ -6560,6 +8455,11 @@ export const vendingLeadsCities = {
     "state": "New York",
     "slug": "schenectady-new-york"
   },
+  "schererville-indiana": {
+    "city": "Schererville",
+    "state": "Indiana",
+    "slug": "schererville-indiana"
+  },
   "schertz-texas": {
     "city": "Schertz",
     "state": "Texas",
@@ -6604,6 +8504,11 @@ export const vendingLeadsCities = {
     "city": "Searcy",
     "state": "Arkansas",
     "slug": "searcy-arkansas"
+  },
+  "seaside-california": {
+    "city": "Seaside",
+    "state": "California",
+    "slug": "seaside-california"
   },
   "seattle-washington": {
     "city": "Seattle",
@@ -6650,14 +8555,29 @@ export const vendingLeadsCities = {
     "state": "Florida",
     "slug": "seminole-florida"
   },
+  "seymour-indiana": {
+    "city": "Seymour",
+    "state": "Indiana",
+    "slug": "seymour-indiana"
+  },
   "shafter-california": {
     "city": "Shafter",
     "state": "California",
     "slug": "shafter-california"
   },
+  "shalimar-florida": {
+    "city": "Shalimar",
+    "state": "Florida",
+    "slug": "shalimar-florida"
+  },
+  "shasta-lake-california": {
+    "city": "Shasta Lake",
+    "state": "California",
+    "slug": "shasta-lake-california"
+  },
   "shaw-washington-dc": {
     "city": "Shaw",
-    "state": "Washington DC",
+    "state": "Washington Dc",
     "slug": "shaw-washington-dc"
   },
   "shawnee-kansas": {
@@ -6679,6 +8599,16 @@ export const vendingLeadsCities = {
     "city": "Shelby",
     "state": "North Carolina",
     "slug": "shelby-north-carolina"
+  },
+  "shelbyville-indiana": {
+    "city": "Shelbyville",
+    "state": "Indiana",
+    "slug": "shelbyville-indiana"
+  },
+  "shelton-connecticut": {
+    "city": "Shelton",
+    "state": "Connecticut",
+    "slug": "shelton-connecticut"
   },
   "sheridan-wyoming": {
     "city": "Sheridan",
@@ -6704,6 +8634,11 @@ export const vendingLeadsCities = {
     "city": "Shreveport",
     "state": "Louisiana",
     "slug": "shreveport-louisiana"
+  },
+  "sierra-madre-california": {
+    "city": "Sierra Madre",
+    "state": "California",
+    "slug": "sierra-madre-california"
   },
   "sierra-vista-arizona": {
     "city": "Sierra Vista",
@@ -6770,6 +8705,11 @@ export const vendingLeadsCities = {
     "state": "Tennessee",
     "slug": "smyrna-tennessee"
   },
+  "snellville-georgia": {
+    "city": "Snellville",
+    "state": "Georgia",
+    "slug": "snellville-georgia"
+  },
   "snyder-texas": {
     "city": "Snyder",
     "state": "Texas",
@@ -6815,6 +8755,21 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "sonora-california"
   },
+  "sopchoppy-florida": {
+    "city": "Sopchoppy",
+    "state": "Florida",
+    "slug": "sopchoppy-florida"
+  },
+  "soperton-georgia": {
+    "city": "Soperton",
+    "state": "Georgia",
+    "slug": "soperton-georgia"
+  },
+  "south-bay-florida": {
+    "city": "South Bay",
+    "state": "Florida",
+    "slug": "south-bay-florida"
+  },
   "south-bend-indiana": {
     "city": "South Bend",
     "state": "Indiana",
@@ -6825,10 +8780,20 @@ export const vendingLeadsCities = {
     "state": "Vermont",
     "slug": "south-burlington-vermont"
   },
+  "south-daytona-florida": {
+    "city": "South Daytona",
+    "state": "Florida",
+    "slug": "south-daytona-florida"
+  },
   "south-el-monte-california": {
     "city": "South El Monte",
     "state": "California",
     "slug": "south-el-monte-california"
+  },
+  "south-elgin-illinois": {
+    "city": "South Elgin",
+    "state": "Illinois",
+    "slug": "south-elgin-illinois"
   },
   "south-gate-california": {
     "city": "South Gate",
@@ -6840,10 +8805,20 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "south-lake-tahoe-california"
   },
+  "south-miami-florida": {
+    "city": "South Miami",
+    "state": "Florida",
+    "slug": "south-miami-florida"
+  },
   "south-pasadena-california": {
     "city": "South Pasadena",
     "state": "California",
     "slug": "south-pasadena-california"
+  },
+  "south-pasadena-florida": {
+    "city": "South Pasadena",
+    "state": "Florida",
+    "slug": "south-pasadena-florida"
   },
   "south-portland-maine": {
     "city": "South Portland",
@@ -6865,10 +8840,20 @@ export const vendingLeadsCities = {
     "state": "Michigan",
     "slug": "southfield-michigan"
   },
+  "southington-connecticut": {
+    "city": "Southington",
+    "state": "Connecticut",
+    "slug": "southington-connecticut"
+  },
   "southlake-texas": {
     "city": "Southlake",
     "state": "Texas",
     "slug": "southlake-texas"
+  },
+  "southwest-ranches-florida": {
+    "city": "Southwest Ranches",
+    "state": "Florida",
+    "slug": "southwest-ranches-florida"
   },
   "sparks-nevada": {
     "city": "Sparks",
@@ -6894,6 +8879,11 @@ export const vendingLeadsCities = {
     "city": "Springdale",
     "state": "Arkansas",
     "slug": "springdale-arkansas"
+  },
+  "springfield-florida": {
+    "city": "Springfield",
+    "state": "Florida",
+    "slug": "springfield-florida"
   },
   "springfield-illinois": {
     "city": "Springfield",
@@ -6925,10 +8915,20 @@ export const vendingLeadsCities = {
     "state": "Vermont",
     "slug": "st-albans-vermont"
   },
+  "st-augustine-beach-florida": {
+    "city": "St Augustine Beach",
+    "state": "Florida",
+    "slug": "st-augustine-beach-florida"
+  },
   "st-augustine-florida": {
     "city": "St Augustine",
     "state": "Florida",
     "slug": "st-augustine-florida"
+  },
+  "st-charles-illinois": {
+    "city": "St Charles",
+    "state": "Illinois",
+    "slug": "st-charles-illinois"
   },
   "st-charles-missouri": {
     "city": "St Charles",
@@ -6975,6 +8975,11 @@ export const vendingLeadsCities = {
     "state": "Minnesota",
     "slug": "st-paul-minnesota"
   },
+  "st-pete-beach-florida": {
+    "city": "St Pete Beach",
+    "state": "Florida",
+    "slug": "st-pete-beach-florida"
+  },
   "st-peters-missouri": {
     "city": "St Peters",
     "state": "Missouri",
@@ -7010,6 +9015,11 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "stanton-california"
   },
+  "starke-florida": {
+    "city": "Starke",
+    "state": "Florida",
+    "slug": "starke-florida"
+  },
   "starkville-mississippi": {
     "city": "Starkville",
     "state": "Mississippi",
@@ -7030,6 +9040,21 @@ export const vendingLeadsCities = {
     "state": "North Carolina",
     "slug": "statesville-north-carolina"
   },
+  "statham-georgia": {
+    "city": "Statham",
+    "state": "Georgia",
+    "slug": "statham-georgia"
+  },
+  "steamboat-springs-colorado": {
+    "city": "Steamboat Springs",
+    "state": "Colorado",
+    "slug": "steamboat-springs-colorado"
+  },
+  "sterling-colorado": {
+    "city": "Sterling",
+    "state": "Colorado",
+    "slug": "sterling-colorado"
+  },
   "sterling-heights-michigan": {
     "city": "Sterling Heights",
     "state": "Michigan",
@@ -7045,15 +9070,35 @@ export const vendingLeadsCities = {
     "state": "Oklahoma",
     "slug": "stillwater-oklahoma"
   },
+  "stockbridge-georgia": {
+    "city": "Stockbridge",
+    "state": "Georgia",
+    "slug": "stockbridge-georgia"
+  },
   "stockton-california": {
     "city": "Stockton",
     "state": "California",
     "slug": "stockton-california"
   },
+  "stone-mountain-georgia": {
+    "city": "Stone Mountain",
+    "state": "Georgia",
+    "slug": "stone-mountain-georgia"
+  },
   "stow-ohio": {
     "city": "Stow",
     "state": "Ohio",
     "slug": "stow-ohio"
+  },
+  "stratford-connecticut": {
+    "city": "Stratford",
+    "state": "Connecticut",
+    "slug": "stratford-connecticut"
+  },
+  "streamwood-illinois": {
+    "city": "Streamwood",
+    "state": "Illinois",
+    "slug": "streamwood-illinois"
   },
   "strongsville-ohio": {
     "city": "Strongsville",
@@ -7064,6 +9109,11 @@ export const vendingLeadsCities = {
     "city": "Stuart",
     "state": "Florida",
     "slug": "stuart-florida"
+  },
+  "stuttgart-arkansas": {
+    "city": "Stuttgart",
+    "state": "Arkansas",
+    "slug": "stuttgart-arkansas"
   },
   "suffolk-virginia": {
     "city": "Suffolk",
@@ -7095,6 +9145,11 @@ export const vendingLeadsCities = {
     "state": "South Carolina",
     "slug": "sumter-south-carolina"
   },
+  "sunny-isles-beach-florida": {
+    "city": "Sunny Isles Beach",
+    "state": "Florida",
+    "slug": "sunny-isles-beach-florida"
+  },
   "sunnyvale-california": {
     "city": "Sunnyvale",
     "state": "California",
@@ -7104,6 +9159,11 @@ export const vendingLeadsCities = {
     "city": "Sunrise",
     "state": "Florida",
     "slug": "sunrise-florida"
+  },
+  "surfside-florida": {
+    "city": "Surfside",
+    "state": "Florida",
+    "slug": "surfside-florida"
   },
   "surprise-arizona": {
     "city": "Surprise",
@@ -7115,10 +9175,40 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "susanville-california"
   },
+  "suwanee-georgia": {
+    "city": "Suwanee",
+    "state": "Georgia",
+    "slug": "suwanee-georgia"
+  },
+  "swainsboro-georgia": {
+    "city": "Swainsboro",
+    "state": "Georgia",
+    "slug": "swainsboro-georgia"
+  },
+  "sweetwater-florida": {
+    "city": "Sweetwater",
+    "state": "Florida",
+    "slug": "sweetwater-florida"
+  },
+  "sycamore-illinois": {
+    "city": "Sycamore",
+    "state": "Illinois",
+    "slug": "sycamore-illinois"
+  },
   "sylacauga-alabama": {
     "city": "Sylacauga",
     "state": "Alabama",
     "slug": "sylacauga-alabama"
+  },
+  "sylvania-georgia": {
+    "city": "Sylvania",
+    "state": "Georgia",
+    "slug": "sylvania-georgia"
+  },
+  "sylvester-georgia": {
+    "city": "Sylvester",
+    "state": "Georgia",
+    "slug": "sylvester-georgia"
   },
   "syracuse-new-york": {
     "city": "Syracuse",
@@ -7135,6 +9225,11 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "taft-california"
   },
+  "talbotton-georgia": {
+    "city": "Talbotton",
+    "state": "Georgia",
+    "slug": "talbotton-georgia"
+  },
   "talladega-alabama": {
     "city": "Talladega",
     "state": "Alabama",
@@ -7144,6 +9239,11 @@ export const vendingLeadsCities = {
     "city": "Tallahassee",
     "state": "Florida",
     "slug": "tallahassee-florida"
+  },
+  "tamarac-florida": {
+    "city": "Tamarac",
+    "state": "Florida",
+    "slug": "tamarac-florida"
   },
   "tampa-florida": {
     "city": "Tampa",
@@ -7195,10 +9295,20 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "temple-city-california"
   },
+  "temple-terrace-florida": {
+    "city": "Temple Terrace",
+    "state": "Florida",
+    "slug": "temple-terrace-florida"
+  },
   "temple-texas": {
     "city": "Temple",
     "state": "Texas",
     "slug": "temple-texas"
+  },
+  "tequesta-florida": {
+    "city": "Tequesta",
+    "state": "Florida",
+    "slug": "tequesta-florida"
   },
   "terre-haute-indiana": {
     "city": "Terre Haute",
@@ -7255,6 +9365,11 @@ export const vendingLeadsCities = {
     "state": "North Carolina",
     "slug": "thomasville-north-carolina"
   },
+  "thomson-georgia": {
+    "city": "Thomson",
+    "state": "Georgia",
+    "slug": "thomson-georgia"
+  },
   "thornton-colorado": {
     "city": "Thornton",
     "state": "Colorado",
@@ -7270,6 +9385,11 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "tiburon-california"
   },
+  "tifton-georgia": {
+    "city": "Tifton",
+    "state": "Georgia",
+    "slug": "tifton-georgia"
+  },
   "tigard-oregon": {
     "city": "Tigard",
     "state": "Oregon",
@@ -7284,6 +9404,11 @@ export const vendingLeadsCities = {
     "city": "Titusville",
     "state": "Florida",
     "slug": "titusville-florida"
+  },
+  "toccoa-georgia": {
+    "city": "Toccoa",
+    "state": "Georgia",
+    "slug": "toccoa-georgia"
   },
   "toledo-ohio": {
     "city": "Toledo",
@@ -7310,6 +9435,11 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "torrance-california"
   },
+  "torrington-connecticut": {
+    "city": "Torrington",
+    "state": "Connecticut",
+    "slug": "torrington-connecticut"
+  },
   "towson-maryland": {
     "city": "Towson",
     "state": "Maryland",
@@ -7320,10 +9450,30 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "tracy-california"
   },
+  "treasure-island-florida": {
+    "city": "Treasure Island",
+    "state": "Florida",
+    "slug": "treasure-island-florida"
+  },
+  "trenton-florida": {
+    "city": "Trenton",
+    "state": "Florida",
+    "slug": "trenton-florida"
+  },
+  "trenton-georgia": {
+    "city": "Trenton",
+    "state": "Georgia",
+    "slug": "trenton-georgia"
+  },
   "trenton-new-jersey": {
     "city": "Trenton",
     "state": "New Jersey",
     "slug": "trenton-new-jersey"
+  },
+  "trinidad-colorado": {
+    "city": "Trinidad",
+    "state": "Colorado",
+    "slug": "trinidad-colorado"
   },
   "troy-alabama": {
     "city": "Troy",
@@ -7350,10 +9500,20 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "truckee-california"
   },
+  "trumbull-connecticut": {
+    "city": "Trumbull",
+    "state": "Connecticut",
+    "slug": "trumbull-connecticut"
+  },
   "trussville-alabama": {
     "city": "Trussville",
     "state": "Alabama",
     "slug": "trussville-alabama"
+  },
+  "tucker-georgia": {
+    "city": "Tucker",
+    "state": "Georgia",
+    "slug": "tucker-georgia"
   },
   "tucson-arizona": {
     "city": "Tucson",
@@ -7379,6 +9539,11 @@ export const vendingLeadsCities = {
     "city": "Tumwater",
     "state": "Washington",
     "slug": "tumwater-washington"
+  },
+  "tunnel-hill-georgia": {
+    "city": "Tunnel Hill",
+    "state": "Georgia",
+    "slug": "tunnel-hill-georgia"
   },
   "tupelo-mississippi": {
     "city": "Tupelo",
@@ -7415,6 +9580,11 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "twentynine-palms-california"
   },
+  "twin-falls": {
+    "city": "Twin",
+    "state": "Falls",
+    "slug": "twin-falls"
+  },
   "twin-falls-idaho": {
     "city": "Twin Falls",
     "state": "Idaho",
@@ -7425,15 +9595,35 @@ export const vendingLeadsCities = {
     "state": "Texas",
     "slug": "tyler-texas"
   },
+  "tyrone-georgia": {
+    "city": "Tyrone",
+    "state": "Georgia",
+    "slug": "tyrone-georgia"
+  },
   "ukiah-california": {
     "city": "Ukiah",
     "state": "California",
     "slug": "ukiah-california"
   },
+  "umatilla-florida": {
+    "city": "Umatilla",
+    "state": "Florida",
+    "slug": "umatilla-florida"
+  },
+  "unalaska-alaska": {
+    "city": "Unalaska",
+    "state": "Alaska",
+    "slug": "unalaska-alaska"
+  },
   "union-city-california": {
     "city": "Union City",
     "state": "California",
     "slug": "union-city-california"
+  },
+  "union-city-georgia": {
+    "city": "Union City",
+    "state": "Georgia",
+    "slug": "union-city-georgia"
   },
   "union-city-new-jersey": {
     "city": "Union City",
@@ -7460,6 +9650,16 @@ export const vendingLeadsCities = {
     "state": "Ohio",
     "slug": "upper-arlington-ohio"
   },
+  "urbana-illinois": {
+    "city": "Urbana",
+    "state": "Illinois",
+    "slug": "urbana-illinois"
+  },
+  "urbandale-iowa": {
+    "city": "Urbandale",
+    "state": "Iowa",
+    "slug": "urbandale-iowa"
+  },
   "utica-new-york": {
     "city": "Utica",
     "state": "New York",
@@ -7470,6 +9670,16 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "vacaville-california"
   },
+  "vail-colorado": {
+    "city": "Vail",
+    "state": "Colorado",
+    "slug": "vail-colorado"
+  },
+  "valdez-alaska": {
+    "city": "Valdez",
+    "state": "Alaska",
+    "slug": "valdez-alaska"
+  },
   "valdosta-georgia": {
     "city": "Valdosta",
     "state": "Georgia",
@@ -7479,6 +9689,16 @@ export const vendingLeadsCities = {
     "city": "Vallejo",
     "state": "California",
     "slug": "vallejo-california"
+  },
+  "valparaiso-florida": {
+    "city": "Valparaiso",
+    "state": "Florida",
+    "slug": "valparaiso-florida"
+  },
+  "valparaiso-indiana": {
+    "city": "Valparaiso",
+    "state": "Indiana",
+    "slug": "valparaiso-indiana"
   },
   "van-buren-arkansas": {
     "city": "Van Buren",
@@ -7499,6 +9719,21 @@ export const vendingLeadsCities = {
     "city": "Ventura",
     "state": "California",
     "slug": "ventura-california"
+  },
+  "vernon-california": {
+    "city": "Vernon",
+    "state": "California",
+    "slug": "vernon-california"
+  },
+  "vernon-connecticut": {
+    "city": "Vernon",
+    "state": "Connecticut",
+    "slug": "vernon-connecticut"
+  },
+  "vernon-hills-illinois": {
+    "city": "Vernon Hills",
+    "state": "Illinois",
+    "slug": "vernon-hills-illinois"
   },
   "vero-beach-florida": {
     "city": "Vero Beach",
@@ -7525,6 +9760,36 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "victorville-california"
   },
+  "vidalia-georgia": {
+    "city": "Vidalia",
+    "state": "Georgia",
+    "slug": "vidalia-georgia"
+  },
+  "viera-florida": {
+    "city": "Viera",
+    "state": "Florida",
+    "slug": "viera-florida"
+  },
+  "villa-park-california": {
+    "city": "Villa Park",
+    "state": "California",
+    "slug": "villa-park-california"
+  },
+  "villa-rica-georgia": {
+    "city": "Villa Rica",
+    "state": "Georgia",
+    "slug": "villa-rica-georgia"
+  },
+  "village-of-golf-florida": {
+    "city": "Village Of Golf",
+    "state": "Florida",
+    "slug": "village-of-golf-florida"
+  },
+  "vincennes-indiana": {
+    "city": "Vincennes",
+    "state": "Indiana",
+    "slug": "vincennes-indiana"
+  },
   "vineland-new-jersey": {
     "city": "Vineland",
     "state": "New Jersey",
@@ -7545,10 +9810,20 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "vista-california"
   },
+  "wabash-indiana": {
+    "city": "Wabash",
+    "state": "Indiana",
+    "slug": "wabash-indiana"
+  },
   "waco-texas": {
     "city": "Waco",
     "state": "Texas",
     "slug": "waco-texas"
+  },
+  "wadley-georgia": {
+    "city": "Wadley",
+    "state": "Georgia",
+    "slug": "wadley-georgia"
   },
   "wadsworth-ohio": {
     "city": "Wadsworth",
@@ -7559,6 +9834,11 @@ export const vendingLeadsCities = {
     "city": "Wahpeton",
     "state": "North Dakota",
     "slug": "wahpeton-north-dakota"
+  },
+  "wailuku-hawaii": {
+    "city": "Wailuku",
+    "state": "Hawaii",
+    "slug": "wailuku-hawaii"
   },
   "wakefield-massachusetts": {
     "city": "Wakefield",
@@ -7574,6 +9854,11 @@ export const vendingLeadsCities = {
     "city": "Walla Walla",
     "state": "Washington",
     "slug": "walla-walla-washington"
+  },
+  "wallingford-connecticut": {
+    "city": "Wallingford",
+    "state": "Connecticut",
+    "slug": "wallingford-connecticut"
   },
   "walnut-california": {
     "city": "Walnut",
@@ -7595,6 +9880,11 @@ export const vendingLeadsCities = {
     "state": "Georgia",
     "slug": "warner-robins-georgia"
   },
+  "warren-arkansas": {
+    "city": "Warren",
+    "state": "Arkansas",
+    "slug": "warren-arkansas"
+  },
   "warren-michigan": {
     "city": "Warren",
     "state": "Michigan",
@@ -7609,6 +9899,11 @@ export const vendingLeadsCities = {
     "city": "Warrensburg",
     "state": "Missouri",
     "slug": "warrensburg-missouri"
+  },
+  "warsaw-indiana": {
+    "city": "Warsaw",
+    "state": "Indiana",
+    "slug": "warsaw-indiana"
   },
   "warwick-rhode-island": {
     "city": "Warwick",
@@ -7625,9 +9920,19 @@ export const vendingLeadsCities = {
     "state": "Columbia",
     "slug": "washington-district-of-columbia"
   },
+  "washington-georgia": {
+    "city": "Washington",
+    "state": "Georgia",
+    "slug": "washington-georgia"
+  },
+  "washington-indiana": {
+    "city": "Washington",
+    "state": "Indiana",
+    "slug": "washington-indiana"
+  },
   "washington-washington-dc": {
     "city": "Washington",
-    "state": "Washington DC",
+    "state": "Washington Dc",
     "slug": "washington-washington-dc"
   },
   "wasilla-alaska": {
@@ -7670,10 +9975,20 @@ export const vendingLeadsCities = {
     "state": "Maine",
     "slug": "waterville-maine"
   },
+  "watkinsville-georgia": {
+    "city": "Watkinsville",
+    "state": "Georgia",
+    "slug": "watkinsville-georgia"
+  },
   "watsonville-california": {
     "city": "Watsonville",
     "state": "California",
     "slug": "watsonville-california"
+  },
+  "wauchula-florida": {
+    "city": "Wauchula",
+    "state": "Florida",
+    "slug": "wauchula-florida"
   },
   "waukegan-illinois": {
     "city": "Waukegan",
@@ -7685,6 +10000,11 @@ export const vendingLeadsCities = {
     "state": "Wisconsin",
     "slug": "waukesha-wisconsin"
   },
+  "wausau-florida": {
+    "city": "Wausau",
+    "state": "Florida",
+    "slug": "wausau-florida"
+  },
   "wausau-wisconsin": {
     "city": "Wausau",
     "state": "Wisconsin",
@@ -7695,25 +10015,55 @@ export const vendingLeadsCities = {
     "state": "Texas",
     "slug": "waxahachie-texas"
   },
+  "waycross": {
+    "city": "",
+    "state": "Waycross",
+    "slug": "waycross"
+  },
   "waycross-georgia": {
     "city": "Waycross",
     "state": "Georgia",
     "slug": "waycross-georgia"
+  },
+  "waynesboro-georgia": {
+    "city": "Waynesboro",
+    "state": "Georgia",
+    "slug": "waynesboro-georgia"
   },
   "weatherford-texas": {
     "city": "Weatherford",
     "state": "Texas",
     "slug": "weatherford-texas"
   },
+  "webster-florida": {
+    "city": "Webster",
+    "state": "Florida",
+    "slug": "webster-florida"
+  },
   "weed-california": {
     "city": "Weed",
     "state": "California",
     "slug": "weed-california"
   },
+  "weeki-wachee-florida": {
+    "city": "Weeki Wachee",
+    "state": "Florida",
+    "slug": "weeki-wachee-florida"
+  },
   "weirton-west-virginia": {
     "city": "Weirton",
     "state": "West Virginia",
     "slug": "weirton-west-virginia"
+  },
+  "weiser-idaho": {
+    "city": "Weiser",
+    "state": "Idaho",
+    "slug": "weiser-idaho"
+  },
+  "welaka-florida": {
+    "city": "Welaka",
+    "state": "Florida",
+    "slug": "welaka-florida"
   },
   "wellesley-massachusetts": {
     "city": "Wellesley",
@@ -7750,10 +10100,20 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "west-covina-california"
   },
+  "west-des-moines": {
+    "city": "West Des",
+    "state": "Moines",
+    "slug": "west-des-moines"
+  },
   "west-des-moines-iowa": {
     "city": "West Des Moines",
     "state": "Iowa",
     "slug": "west-des-moines-iowa"
+  },
+  "west-hartford-connecticut": {
+    "city": "West Hartford",
+    "state": "Connecticut",
+    "slug": "west-hartford-connecticut"
   },
   "west-haven-connecticut": {
     "city": "West Haven",
@@ -7770,6 +10130,11 @@ export const vendingLeadsCities = {
     "state": "Utah",
     "slug": "west-jordan-utah"
   },
+  "west-melbourne-florida": {
+    "city": "West Melbourne",
+    "state": "Florida",
+    "slug": "west-melbourne-florida"
+  },
   "west-memphis-arkansas": {
     "city": "West Memphis",
     "state": "Arkansas",
@@ -7784,6 +10149,16 @@ export const vendingLeadsCities = {
     "city": "West Palm Beach",
     "state": "Florida",
     "slug": "west-palm-beach-florida"
+  },
+  "west-park-florida": {
+    "city": "West Park",
+    "state": "Florida",
+    "slug": "west-park-florida"
+  },
+  "west-point-georgia": {
+    "city": "West Point",
+    "state": "Georgia",
+    "slug": "west-point-georgia"
   },
   "west-sacramento-california": {
     "city": "West Sacramento",
@@ -7800,6 +10175,11 @@ export const vendingLeadsCities = {
     "state": "Ohio",
     "slug": "westerville-ohio"
   },
+  "westfield-indiana": {
+    "city": "Westfield",
+    "state": "Indiana",
+    "slug": "westfield-indiana"
+  },
   "westfield-massachusetts": {
     "city": "Westfield",
     "state": "Massachusetts",
@@ -7809,6 +10189,11 @@ export const vendingLeadsCities = {
     "city": "Westlake",
     "state": "Ohio",
     "slug": "westlake-ohio"
+  },
+  "westlake-village-california": {
+    "city": "Westlake Village",
+    "state": "California",
+    "slug": "westlake-village-california"
   },
   "westland-michigan": {
     "city": "Westland",
@@ -7830,6 +10215,31 @@ export const vendingLeadsCities = {
     "state": "Maryland",
     "slug": "westminster-maryland"
   },
+  "weston-florida": {
+    "city": "Weston",
+    "state": "Florida",
+    "slug": "weston-florida"
+  },
+  "westport-connecticut": {
+    "city": "Westport",
+    "state": "Connecticut",
+    "slug": "westport-connecticut"
+  },
+  "wethersfield-connecticut": {
+    "city": "Wethersfield",
+    "state": "Connecticut",
+    "slug": "wethersfield-connecticut"
+  },
+  "wewahitchka-florida": {
+    "city": "Wewahitchka",
+    "state": "Florida",
+    "slug": "wewahitchka-florida"
+  },
+  "wheat-ridge-colorado": {
+    "city": "Wheat Ridge",
+    "state": "Colorado",
+    "slug": "wheat-ridge-colorado"
+  },
   "wheatland-california": {
     "city": "Wheatland",
     "state": "California",
@@ -7839,6 +10249,11 @@ export const vendingLeadsCities = {
     "city": "Wheaton",
     "state": "Illinois",
     "slug": "wheaton-illinois"
+  },
+  "wheeling": {
+    "city": "",
+    "state": "Wheeling",
+    "slug": "wheeling"
   },
   "wheeling-illinois": {
     "city": "Wheeling",
@@ -7854,6 +10269,11 @@ export const vendingLeadsCities = {
     "city": "White Plains",
     "state": "New York",
     "slug": "white-plains-new-york"
+  },
+  "white-springs-florida": {
+    "city": "White Springs",
+    "state": "Florida",
+    "slug": "white-springs-florida"
   },
   "whittier-california": {
     "city": "Whittier",
@@ -7875,6 +10295,11 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "wildomar-california"
   },
+  "wildwood-florida": {
+    "city": "Wildwood",
+    "state": "Florida",
+    "slug": "wildwood-florida"
+  },
   "wilkes-barre-pennsylvania": {
     "city": "Wilkes Barre",
     "state": "Pennsylvania",
@@ -7890,10 +10315,20 @@ export const vendingLeadsCities = {
     "state": "Pennsylvania",
     "slug": "williamsport-pennsylvania"
   },
+  "willimantic-connecticut": {
+    "city": "Willimantic",
+    "state": "Connecticut",
+    "slug": "willimantic-connecticut"
+  },
   "willis-texas": {
     "city": "Willis",
     "state": "Texas",
     "slug": "willis-texas"
+  },
+  "williston-florida": {
+    "city": "Williston",
+    "state": "Florida",
+    "slug": "williston-florida"
   },
   "williston-north-dakota": {
     "city": "Williston",
@@ -7905,10 +10340,20 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "willows-california"
   },
+  "wilmette-illinois": {
+    "city": "Wilmette",
+    "state": "Illinois",
+    "slug": "wilmette-illinois"
+  },
   "wilmington-delaware": {
     "city": "Wilmington",
     "state": "Delaware",
     "slug": "wilmington-delaware"
+  },
+  "wilmington-island-florida": {
+    "city": "Wilmington Island",
+    "state": "Florida",
+    "slug": "wilmington-island-florida"
   },
   "wilmington-north-carolina": {
     "city": "Wilmington",
@@ -7920,6 +10365,11 @@ export const vendingLeadsCities = {
     "state": "North Carolina",
     "slug": "wilson-north-carolina"
   },
+  "winder-georgia": {
+    "city": "Winder",
+    "state": "Georgia",
+    "slug": "winder-georgia"
+  },
   "window-rock-arizona": {
     "city": "Window Rock",
     "state": "Arizona",
@@ -7930,6 +10380,16 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "windsor-california"
   },
+  "windsor-connecticut": {
+    "city": "Windsor",
+    "state": "Connecticut",
+    "slug": "windsor-connecticut"
+  },
+  "windsor-locks-connecticut": {
+    "city": "Windsor Locks",
+    "state": "Connecticut",
+    "slug": "windsor-locks-connecticut"
+  },
   "winnemucca-nevada": {
     "city": "Winnemucca",
     "state": "Nevada",
@@ -7939,6 +10399,11 @@ export const vendingLeadsCities = {
     "city": "Winslow",
     "state": "Arizona",
     "slug": "winslow-arizona"
+  },
+  "winsted-connecticut": {
+    "city": "Winsted",
+    "state": "Connecticut",
+    "slug": "winsted-connecticut"
   },
   "winston-salem-north-carolina": {
     "city": "Winston Salem",
@@ -7959,6 +10424,11 @@ export const vendingLeadsCities = {
     "city": "Winter Park",
     "state": "Florida",
     "slug": "winter-park-florida"
+  },
+  "winter-springs": {
+    "city": "Winter",
+    "state": "Springs",
+    "slug": "winter-springs"
   },
   "winter-springs-florida": {
     "city": "Winter Springs",
@@ -7985,10 +10455,35 @@ export const vendingLeadsCities = {
     "state": "Minnesota",
     "slug": "woodbury-minnesota"
   },
+  "woodlake-california": {
+    "city": "Woodlake",
+    "state": "California",
+    "slug": "woodlake-california"
+  },
   "woodland-california": {
     "city": "Woodland",
     "state": "California",
     "slug": "woodland-california"
+  },
+  "woodridge-illinois": {
+    "city": "Woodridge",
+    "state": "Illinois",
+    "slug": "woodridge-illinois"
+  },
+  "woodside-california": {
+    "city": "Woodside",
+    "state": "California",
+    "slug": "woodside-california"
+  },
+  "woodstock-georgia": {
+    "city": "Woodstock",
+    "state": "Georgia",
+    "slug": "woodstock-georgia"
+  },
+  "woodstock-illinois": {
+    "city": "Woodstock",
+    "state": "Illinois",
+    "slug": "woodstock-illinois"
   },
   "woodway-texas": {
     "city": "Woodway",
@@ -8010,6 +10505,11 @@ export const vendingLeadsCities = {
     "state": "Ohio",
     "slug": "worthington-ohio"
   },
+  "wrightsville-georgia": {
+    "city": "Wrightsville",
+    "state": "Georgia",
+    "slug": "wrightsville-georgia"
+  },
   "wyoming-michigan": {
     "city": "Wyoming",
     "state": "Michigan",
@@ -8019,6 +10519,11 @@ export const vendingLeadsCities = {
     "city": "Yakima",
     "state": "Washington",
     "slug": "yakima-washington"
+  },
+  "yankeetown-florida": {
+    "city": "Yankeetown",
+    "state": "Florida",
+    "slug": "yankeetown-florida"
   },
   "yankton-south-dakota": {
     "city": "Yankton",
@@ -8035,6 +10540,11 @@ export const vendingLeadsCities = {
     "state": "California",
     "slug": "yorba-linda-california"
   },
+  "york": {
+    "city": "",
+    "state": "York",
+    "slug": "york"
+  },
   "york-pennsylvania": {
     "city": "York",
     "state": "Pennsylvania",
@@ -8044,6 +10554,11 @@ export const vendingLeadsCities = {
     "city": "Youngstown",
     "state": "Ohio",
     "slug": "youngstown-ohio"
+  },
+  "yountville-california": {
+    "city": "Yountville",
+    "state": "California",
+    "slug": "yountville-california"
   },
   "yreka-california": {
     "city": "Yreka",
@@ -8079,6 +10594,16 @@ export const vendingLeadsCities = {
     "city": "Zephyrhills",
     "state": "Florida",
     "slug": "zephyrhills-florida"
+  },
+  "zion-illinois": {
+    "city": "Zion",
+    "state": "Illinois",
+    "slug": "zion-illinois"
+  },
+  "zionsville-indiana": {
+    "city": "Zionsville",
+    "state": "Indiana",
+    "slug": "zionsville-indiana"
   }
 } as const;
 

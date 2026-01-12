@@ -1,48 +1,56 @@
 const fs = require('fs');
 const path = require('path');
 
-// Read states.ts
-const statesContent = fs.readFileSync(
-  path.join(__dirname, '..', 'src', 'data', 'states.ts'),
-  'utf8'
-);
+// Read cities to create
+const citiesToCreate = JSON.parse(fs.readFileSync('500_cities_to_create.json', 'utf8'));
 
-// Extract all cities
-const citySlugRegex = /slug: '([^']+)'/g;
-const allCitySlugs = [];
-let match;
-while ((match = citySlugRegex.exec(statesContent)) !== null) {
-  const slug = match[1];
-  if (slug.includes('-')) {
-    allCitySlugs.push(slug);
+// Get existing city directories
+const vendingLeadsDir = 'src/app/_city-pages/vending-leads';
+const existingDirs = fs.readdirSync(vendingLeadsDir, { withFileTypes: true })
+  .filter(d => d.isDirectory())
+  .map(d => d.name);
+
+const existingSlugs = new Set(existingDirs);
+
+// Find missing cities
+const missing = citiesToCreate.filter(c => !existingSlugs.has(c.slug));
+const existing = citiesToCreate.filter(c => existingSlugs.has(c.slug));
+
+console.log('='.repeat(60));
+console.log('CITY CREATION ANALYSIS');
+console.log('='.repeat(60));
+console.log(`Total cities in 500_cities_to_create.json: ${citiesToCreate.length}`);
+console.log(`Already exist: ${existing.length}`);
+console.log(`Need to create: ${missing.length}`);
+console.log('='.repeat(60));
+
+if (missing.length > 0) {
+  console.log('\nFirst 20 missing cities:');
+  missing.slice(0, 20).forEach((c, i) => {
+    console.log(`  ${i + 1}. ${c.name}, ${c.state} (${c.slug})`);
+  });
+  
+  if (missing.length > 20) {
+    console.log(`  ... and ${missing.length - 20} more`);
   }
+  
+  // Save missing cities to file
+  fs.writeFileSync('missing_cities_to_create.json', JSON.stringify(missing, null, 2));
+  console.log(`\n✅ Saved ${missing.length} missing cities to missing_cities_to_create.json`);
+} else {
+  console.log('\n✅ All cities from the list already exist!');
 }
 
-// Get existing directories
-const vendingLeadsDir = path.join(__dirname, '..', 'src', 'app', 'vending-leads');
-const existing = fs.readdirSync(vendingLeadsDir, { withFileTypes: true })
-  .filter(dirent => dirent.isDirectory())
-  .map(dirent => dirent.name)
-  .filter(name => name.includes('-'));
+// Group by state
+const byState = {};
+missing.forEach(city => {
+  if (!byState[city.state]) {
+    byState[city.state] = [];
+  }
+  byState[city.state].push(city);
+});
 
-// Filter out state directories
-const stateDirs = ['alabama', 'alaska', 'arizona', 'arkansas', 'california', 'colorado', 
-  'connecticut', 'delaware', 'florida', 'georgia', 'hawaii', 'idaho', 'illinois', 'indiana',
-  'iowa', 'kansas', 'kentucky', 'louisiana', 'maine', 'maryland', 'massachusetts', 'michigan',
-  'minnesota', 'mississippi', 'missouri', 'montana', 'nebraska', 'nevada', 'new-hampshire',
-  'new-jersey', 'new-mexico', 'new-york', 'north-carolina', 'north-dakota', 'ohio', 'oklahoma',
-  'oregon', 'pennsylvania', 'rhode-island', 'south-carolina', 'south-dakota', 'tennessee',
-  'texas', 'utah', 'vermont', 'virginia', 'washington', 'west-virginia', 'wisconsin', 'wyoming'];
-
-const existingCities = existing.filter(dir => !stateDirs.includes(dir.toLowerCase()));
-
-const missing = allCitySlugs.filter(slug => !existingCities.includes(slug));
-
-console.log(`Total cities in states.ts: ${allCitySlugs.length}`);
-console.log(`Existing city pages: ${existingCities.length}`);
-console.log(`Missing cities: ${missing.length}`);
-console.log(`\nFirst 20 missing cities:`);
-missing.slice(0, 20).forEach(slug => console.log(`  - ${slug}`));
-
-
-
+console.log('\nMissing cities by state:');
+Object.keys(byState).sort().forEach(state => {
+  console.log(`  ${state}: ${byState[state].length} cities`);
+});

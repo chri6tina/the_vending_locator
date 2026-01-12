@@ -141,7 +141,8 @@ export default async function VendingLeadsCityPage({ params }: { params: Promise
     }
   }
   
-  // Optimized dynamic import with better error handling and SEO fallback
+  // Dynamically import the pageClient component from _city-pages (Next.js ignores this during route discovery)
+  // Optimized import with better error handling and SEO fallback
   let PageClient
   try {
     // Try to import the specific pageClient

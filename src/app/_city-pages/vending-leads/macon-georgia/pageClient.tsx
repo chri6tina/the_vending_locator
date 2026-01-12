@@ -166,19 +166,7 @@ export default function MaconGeorgiaVendingLeadsPage() {
                 </div>
               </motion.div>
 
-              
-{/* Value Proposition */}
-              <motion.div 
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.9 }}
-                className="mb-6"
-              >
-                <p className="text-base sm:text-lg text-stone">
-                  Starting at <span className="text-coral font-bold text-lg sm:text-xl">less than $0.30 per lead</span>
-                </p>
-              </motion.div>
-{/* CTA Buttons */}
+              {/* CTA Buttons */}
               <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
