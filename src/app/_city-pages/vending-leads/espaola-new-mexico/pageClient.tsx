@@ -11,11 +11,11 @@ import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
+import CityPageSEO from '@/components/CityPageSEO'
 
 export default function EspaolaNewMexicoVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Espaola';
-  const stateDisplayName = 'New Mexico';
+  const cityDisplayName = 'Espaola';const stateDisplayName = 'New Mexico';
   
   // City-specific data
   const cityData = {
@@ -547,6 +547,60 @@ export default function EspaolaNewMexicoVendingLeadsPage() {
         )}
 
       </div>
+      
+      {/* SEO Structured Data */}
+
+      
+      <CityPageSEO
+
+      
+        city="Espaola"
+
+      
+        state="New Mexico"
+
+      
+        stateAbbr="MEXICO"
+
+      
+        description="Get verified vending machine leads and locations in Espaola, New Mexico. Find qualified businesses for vending machine placement."
+        faqs={[
+          {
+            question: "Healthcare",
+            answer: "Healthcare institutions in Espaola offer prime vending locations with high visitor counts, extended operating hours, and captive audiences seeking convenient snack and beverage options."
+          },
+          {
+            question: "Education",
+            answer: "Espaola's schools, colleges, and universities create excellent vending opportunities with high student traffic, campus events, and extended hours that maximize machine usage."
+          },
+          {
+            question: "Manufacturing",
+            answer: "Industrial operations in Espaola feature large workforces and shift schedules that create reliable vending revenue through employee break times and shift changes."
+          },
+          {
+            question: "Retail",
+            answer: "Retail locations throughout Espaola provide excellent vending opportunities in malls, shopping centers, and high-traffic commercial areas with consistent customer flow."
+          },
+          {
+            question: "Office Buildings",
+            answer: "Corporate office buildings throughout Espaola feature professional workforces and business operations that create reliable vending revenue through employee break times and meetings."
+          },
+          {
+            question: "Transportation",
+            answer: "Airports, bus stations, and transit centers throughout Espaola generate steady passenger traffic, providing excellent vending placement options in high-traffic areas frequented by travelers."
+          },
+          {
+            question: "{item.q}",
+            answer: "{item.a}"
+          }
+        ]}
+
+      
+      />
+
+      
+      
+
       
       <Footer />
       <ZipCodeModalWrapper />

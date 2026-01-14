@@ -10,11 +10,11 @@ import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
+import CityPageSEO from '@/components/CityPageSEO'
 
 export default function PortStLucieFloridaVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Port St. Lucie';
-  const stateDisplayName = 'Florida';
+  const cityDisplayName = 'Port St. Lucie';const stateDisplayName = 'Florida';
   
   // City-specific data
   const cityData = {
@@ -572,6 +572,88 @@ export default function PortStLucieFloridaVendingLeadsPage() {
           </div>
         </section>
       </div>
+      
+      {/* SEO Structured Data */}
+
+      
+      <CityPageSEO
+
+      
+        city="Port St. Lucie"
+
+      
+        state="Florida"
+
+      
+        stateAbbr="FL"
+
+      
+        description="Get verified vending machine leads and locations in Port St. Lucie, Florida. Find qualified businesses for vending machine placement."
+        faqs={[
+          {
+            question: "Healthcare",
+            answer: "Port St. Lucie's healthcare sector includes major medical centers, specialty clinics, and outpatient facilities that generate consistent patient and visitor traffic, creating ideal vending placement opportunities."
+          },
+          {
+            question: "Education",
+            answer: "Academic institutions in Port St. Lucie feature student centers, libraries, and common areas with consistent foot traffic, making them ideal locations for vending machine placement."
+          },
+          {
+            question: "Manufacturing",
+            answer: "Industrial and manufacturing operations throughout Port St. Lucie employ substantial workforces with shift-based schedules, offering stable vending placement opportunities with steady traffic."
+          },
+          {
+            question: "Retail",
+            answer: "Port St. Lucie's retail sector features shopping centers, strip malls, and commercial districts that offer strategic vending placement in areas with maximum shopper visibility."
+          },
+          {
+            question: "Office Buildings",
+            answer: "Commercial office spaces in Port St. Lucie offer excellent vending opportunities, with professional tenants and business operations generating consistent foot traffic throughout the workday."
+          },
+          {
+            question: "Transportation",
+            answer: "Transportation hubs in Port St. Lucie offer prime vending locations with high passenger volumes, extended operating hours, and captive audiences waiting for departures."
+          },
+          {
+            question: "What types of vending machine locations are available in Port St. Lucie?",
+            answer: "Port St. Lucie specializes in healthcare, retail, education, and professional services, offering vending opportunities in medical centers, shopping plazas, schools, office parks, and service businesses. Each location is pre-verified and selected based on Port St. Lucie's one of Florida's fastest-growing cities with newer infrastructure."
+          },
+          {
+            question: "How quickly can I start placing vending machines in Port St. Lucie?",
+            answer: "Our Port St. Lucie vending leads are delivered within 3-5 business days. We provide comprehensive research on Port St. Lucie's healthcare, retail, education, and professional services, including detailed business information, contact details, and specific insights about rapid population growth with expanding commercial development to accelerate your market entry."
+          },
+          {
+            question: "What makes Port St. Lucie a strong market for vending machines?",
+            answer: "Port St. Lucie's one of Florida's fastest-growing cities with newer infrastructure creates ideal vending conditions. The city's rapid population growth with expanding commercial development ensures consistent customer traffic, while consistent growth trajectory with increasing business density provides predictable revenue patterns for vending operators."
+          },
+          {
+            question: "Which neighborhoods in Port St. Lucie offer the best vending opportunities?",
+            answer: "Top vending locations in Port St. Lucie include Gatlin Boulevard area, St. Lucie West, Port St. Lucie Boulevard corridor, and Tradition development. These areas combine high foot traffic with the types of businesses most suitable for vending machine success."
+          },
+          {
+            question: "What industries in Port St. Lucie are most profitable for vending machines?",
+            answer: "In Port St. Lucie, healthcare, retail, education, and professional services show the strongest vending performance. growing market with opportunities in newly developing commercial areas, making these sectors particularly attractive for vending machine placement."
+          },
+          {
+            question: "How do you verify Port St. Lucie vending locations?",
+            answer: "We conduct detailed research specific to Port St. Lucie's market, including business verification, foot traffic analysis for healthcare, retail, education, and professional services, employee count validation, and industry-specific research. Our verification process accounts for Port St. Lucie's one of Florida's fastest-growing cities with newer infrastructure to ensure optimal location selection."
+          },
+          {
+            question: "Can I get customized vending leads for specific Port St. Lucie business districts?",
+            answer: "Absolutely! We can target specific areas like Gatlin Boulevard area, St. Lucie West, Port St. Lucie Boulevard corridor, and Tradition development, or focus on particular industries within Port St. Lucie. Our research team can customize lead packages based on your preferred neighborhoods, business types, or industry sectors."
+          },
+          {
+            question: "What should I know about operating vending machines in Port St. Lucie?",
+            answer: "newer developments and growing population create expanding vending opportunities. Understanding Port St. Lucie's one of Florida's fastest-growing cities with newer infrastructure is key to maximizing your vending machine success. We provide ongoing market insights and support specific to Port St. Lucie's business environment."
+          }
+        ]}
+
+      
+      />
+
+      
+      
+
       
       <Footer />
       <ZipCodeModalWrapper />

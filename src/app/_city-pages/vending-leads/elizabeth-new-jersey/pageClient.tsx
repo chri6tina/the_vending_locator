@@ -10,11 +10,11 @@ import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
+import CityPageSEO from '@/components/CityPageSEO'
 
 export default function ElizabethNewJerseyVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Elizabeth';
-  const stateDisplayName = 'New Jersey';
+  const cityDisplayName = 'Elizabeth';const stateDisplayName = 'New Jersey';
   
   // City-specific data
   const cityData = {
@@ -359,6 +359,80 @@ export default function ElizabethNewJerseyVendingLeadsPage() {
           </div>
         </div>
       </section>
+
+      {/* SEO Structured Data */}
+
+
+      <CityPageSEO
+
+
+        city="Elizabeth"
+
+
+        state="New Jersey"
+
+
+        stateAbbr="JERSEY"
+
+
+        description="Get verified vending machine leads and locations in Elizabeth, New Jersey. Find qualified businesses for vending machine placement."
+        faqs={[
+          {
+            question: "Corporate Centers",
+            answer: "Major corporate headquarters and office buildings in downtown {cityDisplayName} provide excellent opportunities for vending machine placement."
+          },
+          {
+            question: "Transportation Hub",
+            answer: "{cityDisplayName} is a major transportation hub with airports, train stations, and bus terminals offering high-traffic vending opportunities."
+          },
+          {
+            question: "Retail Districts",
+            answer: "Shopping centers, malls, and retail districts throughout {cityDisplayName} provide diverse vending machine placement opportunities."
+          },
+          {
+            question: "Educational Institutions",
+            answer: "Schools, colleges, and universities in {cityDisplayName} offer consistent foot traffic and reliable vending machine revenue."
+          },
+          {
+            question: "Healthcare Facilities",
+            answer: "Hospitals, medical centers, and healthcare facilities in {cityDisplayName} provide steady vending machine traffic throughout the day."
+          },
+          {
+            question: "Government Buildings",
+            answer: "City offices, courthouses, and government facilities in {cityDisplayName} offer stable, long-term vending machine partnerships."
+          },
+          {
+            question: "What types of businesses in {cityDisplayName} are best for vending machines?",
+            answer: "{cityDisplayName} offers excellent opportunities in corporate offices, transportation hubs, retail centers, schools, and healthcare facilities. The city's diverse business landscape provides multiple high-traffic locations for vending machine placement."
+          },
+          {
+            question: "How many verified vending locations are available in {cityDisplayName}?",
+            answer: "We currently have {cityData.verifiedLocations}+ verified locations in {cityDisplayName} that are ready for vending machine placement. These locations have been pre-qualified and are actively seeking vending machine partnerships."
+          },
+          {
+            question: "What is the average revenue potential for vending machines in {cityDisplayName}?",
+            answer: "Vending machine revenue in {cityDisplayName} varies by location type, but our verified locations typically generate $200-800+ per month per machine. Transportation hubs and corporate centers tend to perform best due to high foot traffic."
+          },
+          {
+            question: "Are there any specific regulations for vending machines in {cityDisplayName}?",
+            answer: "{cityDisplayName} follows New Jersey state regulations for vending machines. Our leads include businesses that are already compliant with local requirements, making the setup process smoother for vending machine operators."
+          },
+          {
+            question: "How quickly can I start placing vending machines in {cityDisplayName}?",
+            answer: "With our verified leads, you can typically start placing vending machines in {cityDisplayName} within 1-2 weeks of purchasing our leads. The businesses are pre-qualified and ready to partner with vending machine operators."
+          },
+          {
+            question: "What support do you provide for vending machine operators in {cityDisplayName}?",
+            answer: "We provide comprehensive support including location verification, business contact information, placement guidelines, and ongoing assistance to help you succeed in the {cityDisplayName} vending machine market."
+          }
+        ]}
+
+
+      />
+
+
+      
+
 
       <Footer />
       <ZipCodeModalWrapper />

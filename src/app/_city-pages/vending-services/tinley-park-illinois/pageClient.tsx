@@ -8,7 +8,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function TinleyParkILVendingServicesPage() {
+export default function TinleyParkIllinoisVendingServicesPage() {
   const cityDisplayName = 'Tinley Park';
   const stateDisplayName = 'Illinois'
   const [formSubmitted, setFormSubmitted] = useState(false)

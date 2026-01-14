@@ -10,11 +10,11 @@ import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
+import CityPageSEO from '@/components/CityPageSEO'
 
 export default function ThorntonColoradoVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Thornton';
-  const stateDisplayName = 'Colorado';
+  const cityDisplayName = 'Thornton';const stateDisplayName = 'Colorado';
   
   // City-specific data
   const cityData = {
@@ -507,6 +507,60 @@ export default function ThorntonColoradoVendingLeadsPage() {
             </div>
           </div>
         </section>
+
+        {/* SEO Structured Data */}
+
+
+        <CityPageSEO
+
+
+          city="Thornton"
+
+
+          state="Colorado"
+
+
+          stateAbbr="CO"
+
+
+          description="Get verified vending machine leads and locations in Thornton, Colorado. Find qualified businesses for vending machine placement."
+        faqs={[
+          {
+            question: "Healthcare",
+            answer: "Medical facilities throughout Thornton serve large patient populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services in waiting areas and break rooms."
+          },
+          {
+            question: "Education",
+            answer: "Educational facilities throughout Thornton serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services."
+          },
+          {
+            question: "Retail",
+            answer: "Shopping centers and retail districts in Thornton offer prime vending locations, with high-traffic areas including food courts, entrances, and common spaces frequented by shoppers."
+          },
+          {
+            question: "Professional Services",
+            answer: "Financial, legal, and consulting firms with office buildings and professional environments suitable for vending machines."
+          },
+          {
+            question: "Manufacturing",
+            answer: "Manufacturing facilities in Thornton provide excellent vending locations with large employee bases, multiple shifts, and break areas that generate consistent sales throughout the day."
+          },
+          {
+            question: "Transportation",
+            answer: "Transit facilities throughout Thornton provide excellent vending opportunities in terminals, waiting areas, and high-traffic zones with consistent traveler foot traffic."
+          },
+          {
+            question: "{faq.question}",
+            answer: "{faq.answer}"
+          }
+        ]}
+
+
+        />
+
+
+        
+
 
         <Footer />
       </div>

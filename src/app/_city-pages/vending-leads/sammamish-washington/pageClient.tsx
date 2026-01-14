@@ -11,11 +11,11 @@ import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
+import CityPageSEO from '@/components/CityPageSEO'
 
 export default function SammamishWashingtonVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Sammamish';
-  const stateDisplayName = 'Washington';
+  const cityDisplayName = 'Sammamish';const stateDisplayName = 'Washington';
   
   // City-specific data
   const cityData = {
@@ -547,6 +547,60 @@ export default function SammamishWashingtonVendingLeadsPage() {
         )}
 
       </div>
+      
+      {/* SEO Structured Data */}
+
+      
+      <CityPageSEO
+
+      
+        city="Sammamish"
+
+      
+        state="Washington"
+
+      
+        stateAbbr="WA"
+
+      
+        description="Get verified vending machine leads and locations in Sammamish, Washington. Find qualified businesses for vending machine placement."
+        faqs={[
+          {
+            question: "Healthcare",
+            answer: "Sammamish's healthcare sector includes major medical centers, specialty clinics, and outpatient facilities that generate consistent patient and visitor traffic, creating ideal vending placement opportunities."
+          },
+          {
+            question: "Education",
+            answer: "Educational facilities throughout Sammamish serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services."
+          },
+          {
+            question: "Manufacturing",
+            answer: "Manufacturing facilities in Sammamish provide excellent vending locations with large employee bases, multiple shifts, and break areas that generate consistent sales throughout the day."
+          },
+          {
+            question: "Retail",
+            answer: "Shopping centers and retail districts in Sammamish offer prime vending locations, with high-traffic areas including food courts, entrances, and common spaces frequented by shoppers."
+          },
+          {
+            question: "Office Buildings",
+            answer: "Corporate office buildings throughout Sammamish feature professional workforces and business operations that create reliable vending revenue through employee break times and meetings."
+          },
+          {
+            question: "Transportation",
+            answer: "Transit facilities throughout Sammamish provide excellent vending opportunities in terminals, waiting areas, and high-traffic zones with consistent traveler foot traffic."
+          },
+          {
+            question: "{item.q}",
+            answer: "{item.a}"
+          }
+        ]}
+
+      
+      />
+
+      
+      
+
       
       <Footer />
       <ZipCodeModalWrapper />

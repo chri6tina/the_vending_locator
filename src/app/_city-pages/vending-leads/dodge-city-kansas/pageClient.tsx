@@ -11,11 +11,11 @@ import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
+import CityPageSEO from '@/components/CityPageSEO'
 
 export default function DodgeCityKansasVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Dodge City';
-  const stateDisplayName = 'Kansas';
+  const cityDisplayName = 'Dodge City';const stateDisplayName = 'Kansas';
   
   // City-specific data
   const cityData = {
@@ -547,6 +547,60 @@ export default function DodgeCityKansasVendingLeadsPage() {
         )}
 
       </div>
+      
+      {/* SEO Structured Data */}
+
+      
+      <CityPageSEO
+
+      
+        city="Dodge City"
+
+      
+        state="Kansas"
+
+      
+        stateAbbr="KS"
+
+      
+        description="Get verified vending machine leads and locations in Dodge City, Kansas. Find qualified businesses for vending machine placement."
+        faqs={[
+          {
+            question: "Healthcare",
+            answer: "Dodge City's healthcare sector includes major medical centers, specialty clinics, and outpatient facilities that generate consistent patient and visitor traffic, creating ideal vending placement opportunities."
+          },
+          {
+            question: "Education",
+            answer: "Academic institutions in Dodge City feature student centers, libraries, and common areas with consistent foot traffic, making them ideal locations for vending machine placement."
+          },
+          {
+            question: "Manufacturing",
+            answer: "Industrial and manufacturing operations throughout Dodge City employ substantial workforces with shift-based schedules, offering stable vending placement opportunities with steady traffic."
+          },
+          {
+            question: "Retail",
+            answer: "Dodge City's retail sector features shopping centers, strip malls, and commercial districts that offer strategic vending placement in areas with maximum shopper visibility."
+          },
+          {
+            question: "Office Buildings",
+            answer: "Commercial office spaces in Dodge City offer excellent vending opportunities, with professional tenants and business operations generating consistent foot traffic throughout the workday."
+          },
+          {
+            question: "Transportation",
+            answer: "Transportation hubs in Dodge City offer prime vending locations with high passenger volumes, extended operating hours, and captive audiences waiting for departures."
+          },
+          {
+            question: "{item.q}",
+            answer: "{item.a}"
+          }
+        ]}
+
+      
+      />
+
+      
+      
+
       
       <Footer />
       <ZipCodeModalWrapper />

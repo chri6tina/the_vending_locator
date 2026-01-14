@@ -11,11 +11,11 @@ import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
+import CityPageSEO from '@/components/CityPageSEO'
 
 export default function HonoluluHawaiiVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Honolulu';
-  const stateDisplayName = 'Hawaii';
+  const cityDisplayName = 'Honolulu';const stateDisplayName = 'Hawaii';
   
   // City-specific data
   const cityData = {
@@ -525,6 +525,60 @@ export default function HonoluluHawaiiVendingLeadsPage() {
         )}
 
       </div>
+      
+      {/* SEO Structured Data */}
+
+      
+      <CityPageSEO
+
+      
+        city="Honolulu"
+
+      
+        state="Hawaii"
+
+      
+        stateAbbr="HI"
+
+      
+        description="Get verified vending machine leads and locations in Honolulu, Hawaii. Find qualified businesses for vending machine placement."
+        faqs={[
+          {
+            question: "Tourism & Hospitality",
+            answer: "Honolulu's hotels, resorts, and tourism facilities provide high foot traffic and diverse customer demographics for vending machines."
+          },
+          {
+            question: "Healthcare",
+            answer: "Healthcare institutions in Honolulu offer prime vending locations with high visitor counts, extended operating hours, and captive audiences seeking convenient snack and beverage options."
+          },
+          {
+            question: "Education",
+            answer: "Honolulu's schools, colleges, and universities create excellent vending opportunities with high student traffic, campus events, and extended hours that maximize machine usage."
+          },
+          {
+            question: "Retail",
+            answer: "Retail locations throughout Honolulu provide excellent vending opportunities in malls, shopping centers, and high-traffic commercial areas with consistent customer flow."
+          },
+          {
+            question: "Office Buildings",
+            answer: "Corporate office buildings throughout Honolulu feature professional workforces and business operations that create reliable vending revenue through employee break times and meetings."
+          },
+          {
+            question: "Transportation",
+            answer: "Airports, bus stations, and transit centers throughout Honolulu generate steady passenger traffic, providing excellent vending placement options in high-traffic areas frequented by travelers."
+          },
+          {
+            question: "{item.q}",
+            answer: "{item.a}"
+          }
+        ]}
+
+      
+      />
+
+      
+      
+
       
       <Footer />
       <ZipCodeModalWrapper />

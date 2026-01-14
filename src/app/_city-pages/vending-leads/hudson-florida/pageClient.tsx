@@ -11,11 +11,11 @@ import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
+import CityPageSEO from '@/components/CityPageSEO'
 
 export default function HudsonFloridaVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Hudson';
-  const stateDisplayName = 'Florida';
+  const cityDisplayName = 'Hudson';const stateDisplayName = 'Florida';
   
   // City-specific data
   const cityData = {
@@ -547,6 +547,60 @@ export default function HudsonFloridaVendingLeadsPage() {
         )}
 
       </div>
+      
+      {/* SEO Structured Data */}
+
+      
+      <CityPageSEO
+
+      
+        city="Hudson"
+
+      
+        state="Florida"
+
+      
+        stateAbbr="FL"
+
+      
+        description="Get verified vending machine leads and locations in Hudson, Florida. Find qualified businesses for vending machine placement."
+        faqs={[
+          {
+            question: "Healthcare",
+            answer: "Medical facilities throughout Hudson serve large patient populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services in waiting areas and break rooms."
+          },
+          {
+            question: "Education",
+            answer: "Educational facilities throughout Hudson serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services."
+          },
+          {
+            question: "Manufacturing",
+            answer: "Industrial operations in Hudson feature large workforces and shift schedules that create reliable vending revenue through employee break times and shift changes."
+          },
+          {
+            question: "Retail",
+            answer: "Shopping centers and retail districts in Hudson offer prime vending locations, with high-traffic areas including food courts, entrances, and common spaces frequented by shoppers."
+          },
+          {
+            question: "Office Buildings",
+            answer: "Commercial office spaces in Hudson offer excellent vending opportunities, with professional tenants and business operations generating consistent foot traffic throughout the workday."
+          },
+          {
+            question: "Transportation",
+            answer: "Transportation hubs in Hudson offer prime vending locations with high passenger volumes, extended operating hours, and captive audiences waiting for departures."
+          },
+          {
+            question: "{item.q}",
+            answer: "{item.a}"
+          }
+        ]}
+
+      
+      />
+
+      
+      
+
       
       <Footer />
       <ZipCodeModalWrapper />

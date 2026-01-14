@@ -10,11 +10,11 @@ import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
+import CityPageSEO from '@/components/CityPageSEO'
 
 export default function YorkPennsylvaniaVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'York';
-  const stateDisplayName = 'Pennsylvania';
+  const cityDisplayName = 'York';const stateDisplayName = 'Pennsylvania';
   
   // City-specific data
   const cityData = {
@@ -254,6 +254,30 @@ export default function YorkPennsylvaniaVendingLeadsPage() {
         {/* Zip Code Modal Wrapper */}
         <ZipCodeModalWrapper />
       </div>
+      
+      {/* SEO Structured Data */}
+
+      
+      <CityPageSEO
+
+      
+        city="York"
+
+      
+        state="Pennsylvania"
+
+      
+        stateAbbr="PA"
+
+      
+        description="Get verified vending machine leads and locations in York, Pennsylvania. Find qualified businesses for vending machine placement."
+
+      
+      />
+
+      
+      
+
       
       <Footer />
     </>

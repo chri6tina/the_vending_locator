@@ -11,11 +11,11 @@ import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
+import CityPageSEO from '@/components/CityPageSEO'
 
 export default function PortLavacaTexasVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Port Lavaca';
-  const stateDisplayName = 'Texas';
+  const cityDisplayName = 'Port Lavaca';const stateDisplayName = 'Texas';
   
   // City-specific data
   const cityData = {
@@ -547,6 +547,60 @@ export default function PortLavacaTexasVendingLeadsPage() {
         )}
 
       </div>
+      
+      {/* SEO Structured Data */}
+
+      
+      <CityPageSEO
+
+      
+        city="Port Lavaca"
+
+      
+        state="Texas"
+
+      
+        stateAbbr="TX"
+
+      
+        description="Get verified vending machine leads and locations in Port Lavaca, Texas. Find qualified businesses for vending machine placement."
+        faqs={[
+          {
+            question: "Healthcare",
+            answer: "Healthcare institutions in Port Lavaca offer prime vending locations with high visitor counts, extended operating hours, and captive audiences seeking convenient snack and beverage options."
+          },
+          {
+            question: "Education",
+            answer: "Educational facilities throughout Port Lavaca serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services."
+          },
+          {
+            question: "Manufacturing",
+            answer: "Industrial and manufacturing operations throughout Port Lavaca employ substantial workforces with shift-based schedules, offering stable vending placement opportunities with steady traffic."
+          },
+          {
+            question: "Retail",
+            answer: "Shopping centers and retail districts in Port Lavaca offer prime vending locations, with high-traffic areas including food courts, entrances, and common spaces frequented by shoppers."
+          },
+          {
+            question: "Office Buildings",
+            answer: "Office complexes in Port Lavaca provide ideal vending locations with multiple tenants, high employee counts, and break areas that ensure steady machine usage during business hours."
+          },
+          {
+            question: "Transportation",
+            answer: "Airports, bus stations, and transit centers throughout Port Lavaca generate steady passenger traffic, providing excellent vending placement options in high-traffic areas frequented by travelers."
+          },
+          {
+            question: "{item.q}",
+            answer: "{item.a}"
+          }
+        ]}
+
+      
+      />
+
+      
+      
+
       
       <Footer />
       <ZipCodeModalWrapper />

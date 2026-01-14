@@ -11,11 +11,11 @@ import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
+import CityPageSEO from '@/components/CityPageSEO'
 
 export default function QueenCreekArizonaVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Queen Creek';
-  const stateDisplayName = 'Arizona';
+  const cityDisplayName = 'Queen Creek';const stateDisplayName = 'Arizona';
   
   // City-specific data
   const cityData = {
@@ -547,6 +547,60 @@ export default function QueenCreekArizonaVendingLeadsPage() {
         )}
 
       </div>
+      
+      {/* SEO Structured Data */}
+
+      
+      <CityPageSEO
+
+      
+        city="Queen Creek"
+
+      
+        state="Arizona"
+
+      
+        stateAbbr="AZ"
+
+      
+        description="Get verified vending machine leads and locations in Queen Creek, Arizona. Find qualified businesses for vending machine placement."
+        faqs={[
+          {
+            question: "Healthcare",
+            answer: "Queen Creek's healthcare sector includes major medical centers, specialty clinics, and outpatient facilities that generate consistent patient and visitor traffic, creating ideal vending placement opportunities."
+          },
+          {
+            question: "Education",
+            answer: "Educational facilities throughout Queen Creek serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services."
+          },
+          {
+            question: "Manufacturing",
+            answer: "Manufacturing facilities in Queen Creek provide excellent vending locations with large employee bases, multiple shifts, and break areas that generate consistent sales throughout the day."
+          },
+          {
+            question: "Retail",
+            answer: "Shopping centers and retail districts in Queen Creek offer prime vending locations, with high-traffic areas including food courts, entrances, and common spaces frequented by shoppers."
+          },
+          {
+            question: "Office Buildings",
+            answer: "Corporate office buildings throughout Queen Creek feature professional workforces and business operations that create reliable vending revenue through employee break times and meetings."
+          },
+          {
+            question: "Transportation",
+            answer: "Transit facilities throughout Queen Creek provide excellent vending opportunities in terminals, waiting areas, and high-traffic zones with consistent traveler foot traffic."
+          },
+          {
+            question: "{item.q}",
+            answer: "{item.a}"
+          }
+        ]}
+
+      
+      />
+
+      
+      
+
       
       <Footer />
       <ZipCodeModalWrapper />

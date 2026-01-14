@@ -11,11 +11,11 @@ import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
+import CityPageSEO from '@/components/CityPageSEO'
 
 export default function AppleValleyCaliforniaVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Apple Valley';
-  const stateDisplayName = 'California';
+  const cityDisplayName = 'Apple Valley';const stateDisplayName = 'California';
   
   // City-specific data
   const cityData = {
@@ -547,6 +547,60 @@ export default function AppleValleyCaliforniaVendingLeadsPage() {
         )}
 
       </div>
+      
+      {/* SEO Structured Data */}
+
+      
+      <CityPageSEO
+
+      
+        city="Apple Valley"
+
+      
+        state="California"
+
+      
+        stateAbbr="CA"
+
+      
+        description="Get verified vending machine leads and locations in Apple Valley, California. Find qualified businesses for vending machine placement."
+        faqs={[
+          {
+            question: "Healthcare",
+            answer: "Apple Valley's healthcare sector includes major medical centers, specialty clinics, and outpatient facilities that generate consistent patient and visitor traffic, creating ideal vending placement opportunities."
+          },
+          {
+            question: "Education",
+            answer: "Educational facilities throughout Apple Valley serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services."
+          },
+          {
+            question: "Manufacturing",
+            answer: "Manufacturing facilities in Apple Valley provide excellent vending locations with large employee bases, multiple shifts, and break areas that generate consistent sales throughout the day."
+          },
+          {
+            question: "Retail",
+            answer: "Shopping centers and retail districts in Apple Valley offer prime vending locations, with high-traffic areas including food courts, entrances, and common spaces frequented by shoppers."
+          },
+          {
+            question: "Office Buildings",
+            answer: "Corporate office buildings throughout Apple Valley feature professional workforces and business operations that create reliable vending revenue through employee break times and meetings."
+          },
+          {
+            question: "Transportation",
+            answer: "Transit facilities throughout Apple Valley provide excellent vending opportunities in terminals, waiting areas, and high-traffic zones with consistent traveler foot traffic."
+          },
+          {
+            question: "{item.q}",
+            answer: "{item.a}"
+          }
+        ]}
+
+      
+      />
+
+      
+      
+
       
       <Footer />
       <ZipCodeModalWrapper />

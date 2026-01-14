@@ -11,11 +11,11 @@ import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
+import CityPageSEO from '@/components/CityPageSEO'
 
 export default function NorthLittleRockArkansasVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'North Little Rock';
-  const stateDisplayName = 'Arkansas';
+  const cityDisplayName = 'North Little Rock';const stateDisplayName = 'Arkansas';
   
   // City-specific data
   const cityData = {
@@ -522,6 +522,60 @@ export default function NorthLittleRockArkansasVendingLeadsPage() {
         )}
 
       </div>
+      
+      {/* SEO Structured Data */}
+
+      
+      <CityPageSEO
+
+      
+        city="North Little Rock"
+
+      
+        state="Arkansas"
+
+      
+        stateAbbr="AR"
+
+      
+        description="Twin city to Little Rock with diverse industries"
+        faqs={[
+          {
+            question: "Healthcare",
+            answer: "North Little Rock's healthcare sector includes major medical centers, specialty clinics, and outpatient facilities that generate consistent patient and visitor traffic, creating ideal vending placement opportunities."
+          },
+          {
+            question: "Education",
+            answer: "Academic institutions in North Little Rock feature student centers, libraries, and common areas with consistent foot traffic, making them ideal locations for vending machine placement."
+          },
+          {
+            question: "Manufacturing",
+            answer: "Industrial and manufacturing operations throughout North Little Rock employ substantial workforces with shift-based schedules, offering stable vending placement opportunities with steady traffic."
+          },
+          {
+            question: "Retail",
+            answer: "North Little Rock's retail sector features shopping centers, strip malls, and commercial districts that offer strategic vending placement in areas with maximum shopper visibility."
+          },
+          {
+            question: "Office Buildings",
+            answer: "Commercial office spaces in North Little Rock offer excellent vending opportunities, with professional tenants and business operations generating consistent foot traffic throughout the workday."
+          },
+          {
+            question: "Transportation",
+            answer: "Transportation hubs in North Little Rock offer prime vending locations with high passenger volumes, extended operating hours, and captive audiences waiting for departures."
+          },
+          {
+            question: "{item.q}",
+            answer: "{item.a}"
+          }
+        ]}
+
+      
+      />
+
+      
+      
+
       
       <Footer />
       <ZipCodeModalWrapper />

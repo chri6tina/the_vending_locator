@@ -8,7 +8,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function PahrumpNVVendingServicesPage() {
+export default function PahrumpNevadaVendingServicesPage() {
   const cityDisplayName = 'Pahrump';
   const stateDisplayName = 'Nevada'
   const [formSubmitted, setFormSubmitted] = useState(false)

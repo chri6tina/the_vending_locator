@@ -5,6 +5,8 @@ import { useParams } from 'next/navigation'
 import Image from 'next/image'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import StructuredData from '@/components/StructuredData'
+import { generateArticleSchema } from '@/lib/structured-data'
 import { motion } from 'framer-motion'
 
 interface BlogPost {
@@ -436,6 +438,18 @@ export default function BlogPost() {
           </motion.div>
         </div>
       </div>
+
+      {/* Structured Data */}
+      {post && (
+        <StructuredData data={generateArticleSchema({
+          headline: post.title,
+          description: post.excerpt,
+          image: post.image,
+          datePublished: post.date,
+          dateModified: post.date,
+          authorName: post.author || 'The Vending Locator'
+        })} />
+      )}
 
       <Footer />
     </main>

@@ -11,11 +11,11 @@ import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
+import CityPageSEO from '@/components/CityPageSEO'
 
 export default function DothanAlabamaVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Dothan';
-  const stateDisplayName = 'Alabama';
+  const cityDisplayName = 'Dothan';const stateDisplayName = 'Alabama';
   
   // City-specific data
   const cityData = {
@@ -547,6 +547,60 @@ export default function DothanAlabamaVendingLeadsPage() {
         )}
 
       </div>
+      
+      {/* SEO Structured Data */}
+
+      
+      <CityPageSEO
+
+      
+        city="Dothan"
+
+      
+        state="Alabama"
+
+      
+        stateAbbr="AL"
+
+      
+        description="Get verified vending machine leads and locations in Dothan, Alabama. Find qualified businesses for vending machine placement."
+        faqs={[
+          {
+            question: "Healthcare",
+            answer: "Medical facilities throughout Dothan serve large patient populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services in waiting areas and break rooms."
+          },
+          {
+            question: "Education",
+            answer: "Educational facilities throughout Dothan serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services."
+          },
+          {
+            question: "Manufacturing",
+            answer: "Manufacturing facilities in Dothan provide excellent vending locations with large employee bases, multiple shifts, and break areas that generate consistent sales throughout the day."
+          },
+          {
+            question: "Retail",
+            answer: "Shopping centers and retail districts in Dothan offer prime vending locations, with high-traffic areas including food courts, entrances, and common spaces frequented by shoppers."
+          },
+          {
+            question: "Office Buildings",
+            answer: "Office complexes in Dothan provide ideal vending locations with multiple tenants, high employee counts, and break areas that ensure steady machine usage during business hours."
+          },
+          {
+            question: "Transportation",
+            answer: "Transit facilities throughout Dothan provide excellent vending opportunities in terminals, waiting areas, and high-traffic zones with consistent traveler foot traffic."
+          },
+          {
+            question: "{item.q}",
+            answer: "{item.a}"
+          }
+        ]}
+
+      
+      />
+
+      
+      
+
       
       <Footer />
       <ZipCodeModalWrapper />

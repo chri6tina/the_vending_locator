@@ -11,11 +11,11 @@ import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
+import CityPageSEO from '@/components/CityPageSEO'
 
 export default function ElkhartIndianaVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Elkhart';
-  const stateDisplayName = 'Indiana';
+  const cityDisplayName = 'Elkhart';const stateDisplayName = 'Indiana';
   
   // City-specific data
   const cityData = {
@@ -521,6 +521,60 @@ export default function ElkhartIndianaVendingLeadsPage() {
         )}
 
       </div>
+      
+      {/* SEO Structured Data */}
+
+      
+      <CityPageSEO
+
+      
+        city="Elkhart"
+
+      
+        state="Indiana"
+
+      
+        stateAbbr="IN"
+
+      
+        description="Get verified vending machine leads and locations in Elkhart, Indiana. Find qualified businesses for vending machine placement."
+        faqs={[
+          {
+            question: "Healthcare",
+            answer: "Medical facilities throughout Elkhart serve large patient populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services in waiting areas and break rooms."
+          },
+          {
+            question: "Education",
+            answer: "Educational facilities throughout Elkhart serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services."
+          },
+          {
+            question: "Manufacturing",
+            answer: "Manufacturing facilities in Elkhart provide excellent vending locations with large employee bases, multiple shifts, and break areas that generate consistent sales throughout the day."
+          },
+          {
+            question: "Retail",
+            answer: "Shopping centers and retail districts in Elkhart offer prime vending locations, with high-traffic areas including food courts, entrances, and common spaces frequented by shoppers."
+          },
+          {
+            question: "Office Buildings",
+            answer: "Office complexes in Elkhart provide ideal vending locations with multiple tenants, high employee counts, and break areas that ensure steady machine usage during business hours."
+          },
+          {
+            question: "Transportation",
+            answer: "Transit facilities throughout Elkhart provide excellent vending opportunities in terminals, waiting areas, and high-traffic zones with consistent traveler foot traffic."
+          },
+          {
+            question: "{item.q}",
+            answer: "{item.a}"
+          }
+        ]}
+
+      
+      />
+
+      
+      
+
       
       <Footer />
       <ZipCodeModalWrapper />

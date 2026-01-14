@@ -1,0 +1,41 @@
+import { Metadata } from 'next'
+import PageClient from './pageClient'
+
+export const metadata: Metadata = {
+  title: "Vending Machine Services in Tarpon Springs, FL - Get Free Installation & Service",
+  description: "Get professional vending machine services for your Tarpon Springs, Florida business. Free installation, stocking, and maintenance. Connect with local operators today.",
+  keywords: "vending services Tarpon Springs, vending machines Tarpon Springs FL, vending operators Tarpon Springs, break room vending Tarpon Springs",
+  alternates: {
+    canonical: "https://www.thevendinglocator.com/vending-services/tarpon-springs-florida"
+  },
+  openGraph: {
+    title: "Vending Machine Services in Tarpon Springs, FL - Get Free Installation & Service",
+    description: "Get professional vending machine services for your Tarpon Springs, Florida business. Free installation, stocking, and maintenance.",
+    url: "https://www.thevendinglocator.com/vending-services/tarpon-springs-florida",
+    siteName: "The Vending Locator",
+    type: "website"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Vending Machine Services in Tarpon Springs, FL - Get Free Installation & Service",
+    description: "Get professional vending machine services for your Tarpon Springs, Florida business."
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1
+    }
+  }
+}
+
+// Enable ISR - regenerate page every hour
+export const revalidate = 3600;
+
+export default function TarponSpringsFloridaServicesPage() {
+  return <PageClient />
+}

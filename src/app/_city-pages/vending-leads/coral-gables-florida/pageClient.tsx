@@ -11,11 +11,11 @@ import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
+import CityPageSEO from '@/components/CityPageSEO'
 
 export default function CoralGablesFloridaVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Coral Gables';
-  const stateDisplayName = 'Florida';
+  const cityDisplayName = 'Coral Gables';const stateDisplayName = 'Florida';
   
   // City-specific data
   const cityData = {
@@ -522,6 +522,60 @@ export default function CoralGablesFloridaVendingLeadsPage() {
         )}
 
       </div>
+      
+      {/* SEO Structured Data */}
+
+      
+      <CityPageSEO
+
+      
+        city="Coral Gables"
+
+      
+        state="Florida"
+
+      
+        stateAbbr="FL"
+
+      
+        description="Get verified vending machine leads and locations in Coral Gables, Florida. Find qualified businesses for vending machine placement."
+        faqs={[
+          {
+            question: "Healthcare",
+            answer: "Medical facilities throughout Coral Gables serve large patient populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services in waiting areas and break rooms."
+          },
+          {
+            question: "Education",
+            answer: "Educational facilities throughout Coral Gables serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services."
+          },
+          {
+            question: "Manufacturing",
+            answer: "Manufacturing facilities in Coral Gables provide excellent vending locations with large employee bases, multiple shifts, and break areas that generate consistent sales throughout the day."
+          },
+          {
+            question: "Retail",
+            answer: "Shopping centers and retail districts in Coral Gables offer prime vending locations, with high-traffic areas including food courts, entrances, and common spaces frequented by shoppers."
+          },
+          {
+            question: "Office Buildings",
+            answer: "Office complexes in Coral Gables provide ideal vending locations with multiple tenants, high employee counts, and break areas that ensure steady machine usage during business hours."
+          },
+          {
+            question: "Transportation",
+            answer: "Transit facilities throughout Coral Gables provide excellent vending opportunities in terminals, waiting areas, and high-traffic zones with consistent traveler foot traffic."
+          },
+          {
+            question: "{item.q}",
+            answer: "{item.a}"
+          }
+        ]}
+
+      
+      />
+
+      
+      
+
       
       <Footer />
       <ZipCodeModalWrapper />

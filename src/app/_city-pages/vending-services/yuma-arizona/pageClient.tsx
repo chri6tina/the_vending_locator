@@ -8,7 +8,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function YumaAZVendingServicesPage() {
+export default function YumaArizonaVendingServicesPage() {
   const cityDisplayName = 'Yuma';
   const stateDisplayName = 'Arizona'
   const [formSubmitted, setFormSubmitted] = useState(false)

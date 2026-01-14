@@ -8,7 +8,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function MountainViewCAVendingServicesPage() {
+export default function MountainViewCaliforniaVendingServicesPage() {
   const cityDisplayName = 'Mountain View';
   const stateDisplayName = 'California'
   const [formSubmitted, setFormSubmitted] = useState(false)

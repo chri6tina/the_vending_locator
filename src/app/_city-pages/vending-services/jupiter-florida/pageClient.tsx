@@ -8,7 +8,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function JupiterFLVendingServicesPage() {
+export default function JupiterFloridaVendingServicesPage() {
   const cityDisplayName = 'Jupiter';
   const stateDisplayName = 'Florida'
   const [formSubmitted, setFormSubmitted] = useState(false)

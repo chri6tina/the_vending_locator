@@ -11,11 +11,11 @@ import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
+import CityPageSEO from '@/components/CityPageSEO'
 
 export default function HarrisonArkansasVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Harrison';
-  const stateDisplayName = 'Arkansas';
+  const cityDisplayName = 'Harrison';const stateDisplayName = 'Arkansas';
   
   // City-specific data
   const cityData = {
@@ -547,6 +547,60 @@ export default function HarrisonArkansasVendingLeadsPage() {
         )}
 
       </div>
+      
+      {/* SEO Structured Data */}
+
+      
+      <CityPageSEO
+
+      
+        city="Harrison"
+
+      
+        state="Arkansas"
+
+      
+        stateAbbr="AR"
+
+      
+        description="Get verified vending machine leads and locations in Harrison, Arkansas. Find qualified businesses for vending machine placement."
+        faqs={[
+          {
+            question: "Healthcare",
+            answer: "Medical facilities throughout Harrison serve large patient populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services in waiting areas and break rooms."
+          },
+          {
+            question: "Education",
+            answer: "Educational facilities throughout Harrison serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services."
+          },
+          {
+            question: "Manufacturing",
+            answer: "Industrial operations in Harrison feature large workforces and shift schedules that create reliable vending revenue through employee break times and shift changes."
+          },
+          {
+            question: "Retail",
+            answer: "Shopping centers and retail districts in Harrison offer prime vending locations, with high-traffic areas including food courts, entrances, and common spaces frequented by shoppers."
+          },
+          {
+            question: "Office Buildings",
+            answer: "Commercial office spaces in Harrison offer excellent vending opportunities, with professional tenants and business operations generating consistent foot traffic throughout the workday."
+          },
+          {
+            question: "Transportation",
+            answer: "Transportation hubs in Harrison offer prime vending locations with high passenger volumes, extended operating hours, and captive audiences waiting for departures."
+          },
+          {
+            question: "{item.q}",
+            answer: "{item.a}"
+          }
+        ]}
+
+      
+      />
+
+      
+      
+
       
       <Footer />
       <ZipCodeModalWrapper />

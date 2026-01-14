@@ -8,7 +8,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function SkokieILVendingServicesPage() {
+export default function SkokieIllinoisVendingServicesPage() {
   const cityDisplayName = 'Skokie';
   const stateDisplayName = 'Illinois'
   const [formSubmitted, setFormSubmitted] = useState(false)

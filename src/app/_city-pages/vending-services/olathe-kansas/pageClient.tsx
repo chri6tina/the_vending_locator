@@ -8,7 +8,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function BocaRatonFloridaVendingServicesPage() {
+export default function OlatheKansasVendingServicesPage() {
   const cityDisplayName = 'Olathe';
   const stateDisplayName = 'Kansas'
   const [formSubmitted, setFormSubmitted] = useState(false)

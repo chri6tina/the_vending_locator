@@ -8,7 +8,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function TerreHauteINVendingServicesPage() {
+export default function TerreHauteIndianaVendingServicesPage() {
   const cityDisplayName = 'Terre Haute';
   const stateDisplayName = 'Indiana'
   const [formSubmitted, setFormSubmitted] = useState(false)

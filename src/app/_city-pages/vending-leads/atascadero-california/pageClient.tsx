@@ -11,11 +11,11 @@ import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
+import CityPageSEO from '@/components/CityPageSEO'
 
 export default function AtascaderoCaliforniaVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Atascadero';
-  const stateDisplayName = 'California';
+  const cityDisplayName = 'Atascadero';const stateDisplayName = 'California';
   
   // City-specific data
   const cityData = {
@@ -521,6 +521,60 @@ export default function AtascaderoCaliforniaVendingLeadsPage() {
         )}
 
       </div>
+      
+      {/* SEO Structured Data */}
+
+      
+      <CityPageSEO
+
+      
+        city="Atascadero"
+
+      
+        state="California"
+
+      
+        stateAbbr="CA"
+
+      
+        description="Get verified vending machine leads and locations in Atascadero, California. Find qualified businesses for vending machine placement."
+        faqs={[
+          {
+            question: "Healthcare",
+            answer: "Medical facilities throughout Atascadero serve large patient populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services in waiting areas and break rooms."
+          },
+          {
+            question: "Education",
+            answer: "Educational facilities throughout Atascadero serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services."
+          },
+          {
+            question: "Manufacturing",
+            answer: "Manufacturing facilities in Atascadero provide excellent vending locations with large employee bases, multiple shifts, and break areas that generate consistent sales throughout the day."
+          },
+          {
+            question: "Retail",
+            answer: "Shopping centers and retail districts in Atascadero offer prime vending locations, with high-traffic areas including food courts, entrances, and common spaces frequented by shoppers."
+          },
+          {
+            question: "Office Buildings",
+            answer: "Office complexes in Atascadero provide ideal vending locations with multiple tenants, high employee counts, and break areas that ensure steady machine usage during business hours."
+          },
+          {
+            question: "Transportation",
+            answer: "Transit facilities throughout Atascadero provide excellent vending opportunities in terminals, waiting areas, and high-traffic zones with consistent traveler foot traffic."
+          },
+          {
+            question: "{item.q}",
+            answer: "{item.a}"
+          }
+        ]}
+
+      
+      />
+
+      
+      
+
       
       <Footer />
       <ZipCodeModalWrapper />

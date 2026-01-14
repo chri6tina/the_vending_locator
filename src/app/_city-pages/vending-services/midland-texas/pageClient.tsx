@@ -8,7 +8,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function MidlandTXVendingServicesPage() {
+export default function MidlandTexasVendingServicesPage() {
   const cityDisplayName = 'Midland';
   const stateDisplayName = 'Texas'
   const [formSubmitted, setFormSubmitted] = useState(false)

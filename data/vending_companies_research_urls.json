@@ -1,0 +1,842 @@
+[
+  {
+    "city": "Austin",
+    "state": "Texas",
+    "stateAbbr": "TX",
+    "searchUrls": {
+      "googleMaps": [
+        {
+          "query": "vending machine companies Austin TX",
+          "url": "https://www.google.com/maps/search/vending%20machine%20companies%20Austin%20TX",
+          "method": "google_maps"
+        },
+        {
+          "query": "vending services Austin TX",
+          "url": "https://www.google.com/maps/search/vending%20services%20Austin%20TX",
+          "method": "google_maps"
+        },
+        {
+          "query": "office vending Austin TX",
+          "url": "https://www.google.com/maps/search/office%20vending%20Austin%20TX",
+          "method": "google_maps"
+        }
+      ],
+      "yelp": "https://www.yelp.com/search?find_desc=vending+machine+companies&find_loc=Austin%2C%20Texas",
+      "yellowPages": "https://www.yellowpages.com/austin-tx/vending-machine-companies",
+      "bbb": "https://www.bbb.org/search?find_country=USA&find_loc=Austin%2C%20TX&find_text=vending+machine+companies"
+    },
+    "companies": []
+  },
+  {
+    "city": "Houston",
+    "state": "Texas",
+    "stateAbbr": "TX",
+    "searchUrls": {
+      "googleMaps": [
+        {
+          "query": "vending machine companies Houston TX",
+          "url": "https://www.google.com/maps/search/vending%20machine%20companies%20Houston%20TX",
+          "method": "google_maps"
+        },
+        {
+          "query": "vending services Houston TX",
+          "url": "https://www.google.com/maps/search/vending%20services%20Houston%20TX",
+          "method": "google_maps"
+        },
+        {
+          "query": "office vending Houston TX",
+          "url": "https://www.google.com/maps/search/office%20vending%20Houston%20TX",
+          "method": "google_maps"
+        }
+      ],
+      "yelp": "https://www.yelp.com/search?find_desc=vending+machine+companies&find_loc=Houston%2C%20Texas",
+      "yellowPages": "https://www.yellowpages.com/houston-tx/vending-machine-companies",
+      "bbb": "https://www.bbb.org/search?find_country=USA&find_loc=Houston%2C%20TX&find_text=vending+machine+companies"
+    },
+    "companies": []
+  },
+  {
+    "city": "Dallas",
+    "state": "Texas",
+    "stateAbbr": "TX",
+    "searchUrls": {
+      "googleMaps": [
+        {
+          "query": "vending machine companies Dallas TX",
+          "url": "https://www.google.com/maps/search/vending%20machine%20companies%20Dallas%20TX",
+          "method": "google_maps"
+        },
+        {
+          "query": "vending services Dallas TX",
+          "url": "https://www.google.com/maps/search/vending%20services%20Dallas%20TX",
+          "method": "google_maps"
+        },
+        {
+          "query": "office vending Dallas TX",
+          "url": "https://www.google.com/maps/search/office%20vending%20Dallas%20TX",
+          "method": "google_maps"
+        }
+      ],
+      "yelp": "https://www.yelp.com/search?find_desc=vending+machine+companies&find_loc=Dallas%2C%20Texas",
+      "yellowPages": "https://www.yellowpages.com/dallas-tx/vending-machine-companies",
+      "bbb": "https://www.bbb.org/search?find_country=USA&find_loc=Dallas%2C%20TX&find_text=vending+machine+companies"
+    },
+    "companies": []
+  },
+  {
+    "city": "San Antonio",
+    "state": "Texas",
+    "stateAbbr": "TX",
+    "searchUrls": {
+      "googleMaps": [
+        {
+          "query": "vending machine companies San Antonio TX",
+          "url": "https://www.google.com/maps/search/vending%20machine%20companies%20San%20Antonio%20TX",
+          "method": "google_maps"
+        },
+        {
+          "query": "vending services San Antonio TX",
+          "url": "https://www.google.com/maps/search/vending%20services%20San%20Antonio%20TX",
+          "method": "google_maps"
+        },
+        {
+          "query": "office vending San Antonio TX",
+          "url": "https://www.google.com/maps/search/office%20vending%20San%20Antonio%20TX",
+          "method": "google_maps"
+        }
+      ],
+      "yelp": "https://www.yelp.com/search?find_desc=vending+machine+companies&find_loc=San%20Antonio%2C%20Texas",
+      "yellowPages": "https://www.yellowpages.com/san-antonio-tx/vending-machine-companies",
+      "bbb": "https://www.bbb.org/search?find_country=USA&find_loc=San%20Antonio%2C%20TX&find_text=vending+machine+companies"
+    },
+    "companies": []
+  },
+  {
+    "city": "Phoenix",
+    "state": "Arizona",
+    "stateAbbr": "AZ",
+    "searchUrls": {
+      "googleMaps": [
+        {
+          "query": "vending machine companies Phoenix AZ",
+          "url": "https://www.google.com/maps/search/vending%20machine%20companies%20Phoenix%20AZ",
+          "method": "google_maps"
+        },
+        {
+          "query": "vending services Phoenix AZ",
+          "url": "https://www.google.com/maps/search/vending%20services%20Phoenix%20AZ",
+          "method": "google_maps"
+        },
+        {
+          "query": "office vending Phoenix AZ",
+          "url": "https://www.google.com/maps/search/office%20vending%20Phoenix%20AZ",
+          "method": "google_maps"
+        }
+      ],
+      "yelp": "https://www.yelp.com/search?find_desc=vending+machine+companies&find_loc=Phoenix%2C%20Arizona",
+      "yellowPages": "https://www.yellowpages.com/phoenix-az/vending-machine-companies",
+      "bbb": "https://www.bbb.org/search?find_country=USA&find_loc=Phoenix%2C%20AZ&find_text=vending+machine+companies"
+    },
+    "companies": []
+  },
+  {
+    "city": "Los Angeles",
+    "state": "California",
+    "stateAbbr": "CA",
+    "searchUrls": {
+      "googleMaps": [
+        {
+          "query": "vending machine companies Los Angeles CA",
+          "url": "https://www.google.com/maps/search/vending%20machine%20companies%20Los%20Angeles%20CA",
+          "method": "google_maps"
+        },
+        {
+          "query": "vending services Los Angeles CA",
+          "url": "https://www.google.com/maps/search/vending%20services%20Los%20Angeles%20CA",
+          "method": "google_maps"
+        },
+        {
+          "query": "office vending Los Angeles CA",
+          "url": "https://www.google.com/maps/search/office%20vending%20Los%20Angeles%20CA",
+          "method": "google_maps"
+        }
+      ],
+      "yelp": "https://www.yelp.com/search?find_desc=vending+machine+companies&find_loc=Los%20Angeles%2C%20California",
+      "yellowPages": "https://www.yellowpages.com/los-angeles-ca/vending-machine-companies",
+      "bbb": "https://www.bbb.org/search?find_country=USA&find_loc=Los%20Angeles%2C%20CA&find_text=vending+machine+companies"
+    },
+    "companies": []
+  },
+  {
+    "city": "San Diego",
+    "state": "California",
+    "stateAbbr": "CA",
+    "searchUrls": {
+      "googleMaps": [
+        {
+          "query": "vending machine companies San Diego CA",
+          "url": "https://www.google.com/maps/search/vending%20machine%20companies%20San%20Diego%20CA",
+          "method": "google_maps"
+        },
+        {
+          "query": "vending services San Diego CA",
+          "url": "https://www.google.com/maps/search/vending%20services%20San%20Diego%20CA",
+          "method": "google_maps"
+        },
+        {
+          "query": "office vending San Diego CA",
+          "url": "https://www.google.com/maps/search/office%20vending%20San%20Diego%20CA",
+          "method": "google_maps"
+        }
+      ],
+      "yelp": "https://www.yelp.com/search?find_desc=vending+machine+companies&find_loc=San%20Diego%2C%20California",
+      "yellowPages": "https://www.yellowpages.com/san-diego-ca/vending-machine-companies",
+      "bbb": "https://www.bbb.org/search?find_country=USA&find_loc=San%20Diego%2C%20CA&find_text=vending+machine+companies"
+    },
+    "companies": []
+  },
+  {
+    "city": "San Francisco",
+    "state": "California",
+    "stateAbbr": "CA",
+    "searchUrls": {
+      "googleMaps": [
+        {
+          "query": "vending machine companies San Francisco CA",
+          "url": "https://www.google.com/maps/search/vending%20machine%20companies%20San%20Francisco%20CA",
+          "method": "google_maps"
+        },
+        {
+          "query": "vending services San Francisco CA",
+          "url": "https://www.google.com/maps/search/vending%20services%20San%20Francisco%20CA",
+          "method": "google_maps"
+        },
+        {
+          "query": "office vending San Francisco CA",
+          "url": "https://www.google.com/maps/search/office%20vending%20San%20Francisco%20CA",
+          "method": "google_maps"
+        }
+      ],
+      "yelp": "https://www.yelp.com/search?find_desc=vending+machine+companies&find_loc=San%20Francisco%2C%20California",
+      "yellowPages": "https://www.yellowpages.com/san-francisco-ca/vending-machine-companies",
+      "bbb": "https://www.bbb.org/search?find_country=USA&find_loc=San%20Francisco%2C%20CA&find_text=vending+machine+companies"
+    },
+    "companies": []
+  },
+  {
+    "city": "Chicago",
+    "state": "Illinois",
+    "stateAbbr": "IL",
+    "searchUrls": {
+      "googleMaps": [
+        {
+          "query": "vending machine companies Chicago IL",
+          "url": "https://www.google.com/maps/search/vending%20machine%20companies%20Chicago%20IL",
+          "method": "google_maps"
+        },
+        {
+          "query": "vending services Chicago IL",
+          "url": "https://www.google.com/maps/search/vending%20services%20Chicago%20IL",
+          "method": "google_maps"
+        },
+        {
+          "query": "office vending Chicago IL",
+          "url": "https://www.google.com/maps/search/office%20vending%20Chicago%20IL",
+          "method": "google_maps"
+        }
+      ],
+      "yelp": "https://www.yelp.com/search?find_desc=vending+machine+companies&find_loc=Chicago%2C%20Illinois",
+      "yellowPages": "https://www.yellowpages.com/chicago-il/vending-machine-companies",
+      "bbb": "https://www.bbb.org/search?find_country=USA&find_loc=Chicago%2C%20IL&find_text=vending+machine+companies"
+    },
+    "companies": []
+  },
+  {
+    "city": "New York",
+    "state": "New York",
+    "stateAbbr": "NY",
+    "searchUrls": {
+      "googleMaps": [
+        {
+          "query": "vending machine companies New York NY",
+          "url": "https://www.google.com/maps/search/vending%20machine%20companies%20New%20York%20NY",
+          "method": "google_maps"
+        },
+        {
+          "query": "vending services New York NY",
+          "url": "https://www.google.com/maps/search/vending%20services%20New%20York%20NY",
+          "method": "google_maps"
+        },
+        {
+          "query": "office vending New York NY",
+          "url": "https://www.google.com/maps/search/office%20vending%20New%20York%20NY",
+          "method": "google_maps"
+        }
+      ],
+      "yelp": "https://www.yelp.com/search?find_desc=vending+machine+companies&find_loc=New%20York%2C%20New%20York",
+      "yellowPages": "https://www.yellowpages.com/new-york-ny/vending-machine-companies",
+      "bbb": "https://www.bbb.org/search?find_country=USA&find_loc=New%20York%2C%20NY&find_text=vending+machine+companies"
+    },
+    "companies": []
+  },
+  {
+    "city": "Miami",
+    "state": "Florida",
+    "stateAbbr": "FL",
+    "searchUrls": {
+      "googleMaps": [
+        {
+          "query": "vending machine companies Miami FL",
+          "url": "https://www.google.com/maps/search/vending%20machine%20companies%20Miami%20FL",
+          "method": "google_maps"
+        },
+        {
+          "query": "vending services Miami FL",
+          "url": "https://www.google.com/maps/search/vending%20services%20Miami%20FL",
+          "method": "google_maps"
+        },
+        {
+          "query": "office vending Miami FL",
+          "url": "https://www.google.com/maps/search/office%20vending%20Miami%20FL",
+          "method": "google_maps"
+        }
+      ],
+      "yelp": "https://www.yelp.com/search?find_desc=vending+machine+companies&find_loc=Miami%2C%20Florida",
+      "yellowPages": "https://www.yellowpages.com/miami-fl/vending-machine-companies",
+      "bbb": "https://www.bbb.org/search?find_country=USA&find_loc=Miami%2C%20FL&find_text=vending+machine+companies"
+    },
+    "companies": []
+  },
+  {
+    "city": "Orlando",
+    "state": "Florida",
+    "stateAbbr": "FL",
+    "searchUrls": {
+      "googleMaps": [
+        {
+          "query": "vending machine companies Orlando FL",
+          "url": "https://www.google.com/maps/search/vending%20machine%20companies%20Orlando%20FL",
+          "method": "google_maps"
+        },
+        {
+          "query": "vending services Orlando FL",
+          "url": "https://www.google.com/maps/search/vending%20services%20Orlando%20FL",
+          "method": "google_maps"
+        },
+        {
+          "query": "office vending Orlando FL",
+          "url": "https://www.google.com/maps/search/office%20vending%20Orlando%20FL",
+          "method": "google_maps"
+        }
+      ],
+      "yelp": "https://www.yelp.com/search?find_desc=vending+machine+companies&find_loc=Orlando%2C%20Florida",
+      "yellowPages": "https://www.yellowpages.com/orlando-fl/vending-machine-companies",
+      "bbb": "https://www.bbb.org/search?find_country=USA&find_loc=Orlando%2C%20FL&find_text=vending+machine+companies"
+    },
+    "companies": []
+  },
+  {
+    "city": "Jacksonville",
+    "state": "Florida",
+    "stateAbbr": "FL",
+    "searchUrls": {
+      "googleMaps": [
+        {
+          "query": "vending machine companies Jacksonville FL",
+          "url": "https://www.google.com/maps/search/vending%20machine%20companies%20Jacksonville%20FL",
+          "method": "google_maps"
+        },
+        {
+          "query": "vending services Jacksonville FL",
+          "url": "https://www.google.com/maps/search/vending%20services%20Jacksonville%20FL",
+          "method": "google_maps"
+        },
+        {
+          "query": "office vending Jacksonville FL",
+          "url": "https://www.google.com/maps/search/office%20vending%20Jacksonville%20FL",
+          "method": "google_maps"
+        }
+      ],
+      "yelp": "https://www.yelp.com/search?find_desc=vending+machine+companies&find_loc=Jacksonville%2C%20Florida",
+      "yellowPages": "https://www.yellowpages.com/jacksonville-fl/vending-machine-companies",
+      "bbb": "https://www.bbb.org/search?find_country=USA&find_loc=Jacksonville%2C%20FL&find_text=vending+machine+companies"
+    },
+    "companies": []
+  },
+  {
+    "city": "Atlanta",
+    "state": "Georgia",
+    "stateAbbr": "GA",
+    "searchUrls": {
+      "googleMaps": [
+        {
+          "query": "vending machine companies Atlanta GA",
+          "url": "https://www.google.com/maps/search/vending%20machine%20companies%20Atlanta%20GA",
+          "method": "google_maps"
+        },
+        {
+          "query": "vending services Atlanta GA",
+          "url": "https://www.google.com/maps/search/vending%20services%20Atlanta%20GA",
+          "method": "google_maps"
+        },
+        {
+          "query": "office vending Atlanta GA",
+          "url": "https://www.google.com/maps/search/office%20vending%20Atlanta%20GA",
+          "method": "google_maps"
+        }
+      ],
+      "yelp": "https://www.yelp.com/search?find_desc=vending+machine+companies&find_loc=Atlanta%2C%20Georgia",
+      "yellowPages": "https://www.yellowpages.com/atlanta-ga/vending-machine-companies",
+      "bbb": "https://www.bbb.org/search?find_country=USA&find_loc=Atlanta%2C%20GA&find_text=vending+machine+companies"
+    },
+    "companies": []
+  },
+  {
+    "city": "Seattle",
+    "state": "Washington",
+    "stateAbbr": "WA",
+    "searchUrls": {
+      "googleMaps": [
+        {
+          "query": "vending machine companies Seattle WA",
+          "url": "https://www.google.com/maps/search/vending%20machine%20companies%20Seattle%20WA",
+          "method": "google_maps"
+        },
+        {
+          "query": "vending services Seattle WA",
+          "url": "https://www.google.com/maps/search/vending%20services%20Seattle%20WA",
+          "method": "google_maps"
+        },
+        {
+          "query": "office vending Seattle WA",
+          "url": "https://www.google.com/maps/search/office%20vending%20Seattle%20WA",
+          "method": "google_maps"
+        }
+      ],
+      "yelp": "https://www.yelp.com/search?find_desc=vending+machine+companies&find_loc=Seattle%2C%20Washington",
+      "yellowPages": "https://www.yellowpages.com/seattle-wa/vending-machine-companies",
+      "bbb": "https://www.bbb.org/search?find_country=USA&find_loc=Seattle%2C%20WA&find_text=vending+machine+companies"
+    },
+    "companies": []
+  },
+  {
+    "city": "Denver",
+    "state": "Colorado",
+    "stateAbbr": "CO",
+    "searchUrls": {
+      "googleMaps": [
+        {
+          "query": "vending machine companies Denver CO",
+          "url": "https://www.google.com/maps/search/vending%20machine%20companies%20Denver%20CO",
+          "method": "google_maps"
+        },
+        {
+          "query": "vending services Denver CO",
+          "url": "https://www.google.com/maps/search/vending%20services%20Denver%20CO",
+          "method": "google_maps"
+        },
+        {
+          "query": "office vending Denver CO",
+          "url": "https://www.google.com/maps/search/office%20vending%20Denver%20CO",
+          "method": "google_maps"
+        }
+      ],
+      "yelp": "https://www.yelp.com/search?find_desc=vending+machine+companies&find_loc=Denver%2C%20Colorado",
+      "yellowPages": "https://www.yellowpages.com/denver-co/vending-machine-companies",
+      "bbb": "https://www.bbb.org/search?find_country=USA&find_loc=Denver%2C%20CO&find_text=vending+machine+companies"
+    },
+    "companies": []
+  },
+  {
+    "city": "Boston",
+    "state": "Massachusetts",
+    "stateAbbr": "MA",
+    "searchUrls": {
+      "googleMaps": [
+        {
+          "query": "vending machine companies Boston MA",
+          "url": "https://www.google.com/maps/search/vending%20machine%20companies%20Boston%20MA",
+          "method": "google_maps"
+        },
+        {
+          "query": "vending services Boston MA",
+          "url": "https://www.google.com/maps/search/vending%20services%20Boston%20MA",
+          "method": "google_maps"
+        },
+        {
+          "query": "office vending Boston MA",
+          "url": "https://www.google.com/maps/search/office%20vending%20Boston%20MA",
+          "method": "google_maps"
+        }
+      ],
+      "yelp": "https://www.yelp.com/search?find_desc=vending+machine+companies&find_loc=Boston%2C%20Massachusetts",
+      "yellowPages": "https://www.yellowpages.com/boston-ma/vending-machine-companies",
+      "bbb": "https://www.bbb.org/search?find_country=USA&find_loc=Boston%2C%20MA&find_text=vending+machine+companies"
+    },
+    "companies": []
+  },
+  {
+    "city": "Philadelphia",
+    "state": "Pennsylvania",
+    "stateAbbr": "PA",
+    "searchUrls": {
+      "googleMaps": [
+        {
+          "query": "vending machine companies Philadelphia PA",
+          "url": "https://www.google.com/maps/search/vending%20machine%20companies%20Philadelphia%20PA",
+          "method": "google_maps"
+        },
+        {
+          "query": "vending services Philadelphia PA",
+          "url": "https://www.google.com/maps/search/vending%20services%20Philadelphia%20PA",
+          "method": "google_maps"
+        },
+        {
+          "query": "office vending Philadelphia PA",
+          "url": "https://www.google.com/maps/search/office%20vending%20Philadelphia%20PA",
+          "method": "google_maps"
+        }
+      ],
+      "yelp": "https://www.yelp.com/search?find_desc=vending+machine+companies&find_loc=Philadelphia%2C%20Pennsylvania",
+      "yellowPages": "https://www.yellowpages.com/philadelphia-pa/vending-machine-companies",
+      "bbb": "https://www.bbb.org/search?find_country=USA&find_loc=Philadelphia%2C%20PA&find_text=vending+machine+companies"
+    },
+    "companies": []
+  },
+  {
+    "city": "Las Vegas",
+    "state": "Nevada",
+    "stateAbbr": "NV",
+    "searchUrls": {
+      "googleMaps": [
+        {
+          "query": "vending machine companies Las Vegas NV",
+          "url": "https://www.google.com/maps/search/vending%20machine%20companies%20Las%20Vegas%20NV",
+          "method": "google_maps"
+        },
+        {
+          "query": "vending services Las Vegas NV",
+          "url": "https://www.google.com/maps/search/vending%20services%20Las%20Vegas%20NV",
+          "method": "google_maps"
+        },
+        {
+          "query": "office vending Las Vegas NV",
+          "url": "https://www.google.com/maps/search/office%20vending%20Las%20Vegas%20NV",
+          "method": "google_maps"
+        }
+      ],
+      "yelp": "https://www.yelp.com/search?find_desc=vending+machine+companies&find_loc=Las%20Vegas%2C%20Nevada",
+      "yellowPages": "https://www.yellowpages.com/las-vegas-nv/vending-machine-companies",
+      "bbb": "https://www.bbb.org/search?find_country=USA&find_loc=Las%20Vegas%2C%20NV&find_text=vending+machine+companies"
+    },
+    "companies": []
+  },
+  {
+    "city": "Portland",
+    "state": "Oregon",
+    "stateAbbr": "OR",
+    "searchUrls": {
+      "googleMaps": [
+        {
+          "query": "vending machine companies Portland OR",
+          "url": "https://www.google.com/maps/search/vending%20machine%20companies%20Portland%20OR",
+          "method": "google_maps"
+        },
+        {
+          "query": "vending services Portland OR",
+          "url": "https://www.google.com/maps/search/vending%20services%20Portland%20OR",
+          "method": "google_maps"
+        },
+        {
+          "query": "office vending Portland OR",
+          "url": "https://www.google.com/maps/search/office%20vending%20Portland%20OR",
+          "method": "google_maps"
+        }
+      ],
+      "yelp": "https://www.yelp.com/search?find_desc=vending+machine+companies&find_loc=Portland%2C%20Oregon",
+      "yellowPages": "https://www.yellowpages.com/portland-or/vending-machine-companies",
+      "bbb": "https://www.bbb.org/search?find_country=USA&find_loc=Portland%2C%20OR&find_text=vending+machine+companies"
+    },
+    "companies": []
+  },
+  {
+    "city": "Detroit",
+    "state": "Michigan",
+    "stateAbbr": "MI",
+    "searchUrls": {
+      "googleMaps": [
+        {
+          "query": "vending machine companies Detroit MI",
+          "url": "https://www.google.com/maps/search/vending%20machine%20companies%20Detroit%20MI",
+          "method": "google_maps"
+        },
+        {
+          "query": "vending services Detroit MI",
+          "url": "https://www.google.com/maps/search/vending%20services%20Detroit%20MI",
+          "method": "google_maps"
+        },
+        {
+          "query": "office vending Detroit MI",
+          "url": "https://www.google.com/maps/search/office%20vending%20Detroit%20MI",
+          "method": "google_maps"
+        }
+      ],
+      "yelp": "https://www.yelp.com/search?find_desc=vending+machine+companies&find_loc=Detroit%2C%20Michigan",
+      "yellowPages": "https://www.yellowpages.com/detroit-mi/vending-machine-companies",
+      "bbb": "https://www.bbb.org/search?find_country=USA&find_loc=Detroit%2C%20MI&find_text=vending+machine+companies"
+    },
+    "companies": []
+  },
+  {
+    "city": "Minneapolis",
+    "state": "Minnesota",
+    "stateAbbr": "MN",
+    "searchUrls": {
+      "googleMaps": [
+        {
+          "query": "vending machine companies Minneapolis MN",
+          "url": "https://www.google.com/maps/search/vending%20machine%20companies%20Minneapolis%20MN",
+          "method": "google_maps"
+        },
+        {
+          "query": "vending services Minneapolis MN",
+          "url": "https://www.google.com/maps/search/vending%20services%20Minneapolis%20MN",
+          "method": "google_maps"
+        },
+        {
+          "query": "office vending Minneapolis MN",
+          "url": "https://www.google.com/maps/search/office%20vending%20Minneapolis%20MN",
+          "method": "google_maps"
+        }
+      ],
+      "yelp": "https://www.yelp.com/search?find_desc=vending+machine+companies&find_loc=Minneapolis%2C%20Minnesota",
+      "yellowPages": "https://www.yellowpages.com/minneapolis-mn/vending-machine-companies",
+      "bbb": "https://www.bbb.org/search?find_country=USA&find_loc=Minneapolis%2C%20MN&find_text=vending+machine+companies"
+    },
+    "companies": []
+  },
+  {
+    "city": "Tampa",
+    "state": "Florida",
+    "stateAbbr": "FL",
+    "searchUrls": {
+      "googleMaps": [
+        {
+          "query": "vending machine companies Tampa FL",
+          "url": "https://www.google.com/maps/search/vending%20machine%20companies%20Tampa%20FL",
+          "method": "google_maps"
+        },
+        {
+          "query": "vending services Tampa FL",
+          "url": "https://www.google.com/maps/search/vending%20services%20Tampa%20FL",
+          "method": "google_maps"
+        },
+        {
+          "query": "office vending Tampa FL",
+          "url": "https://www.google.com/maps/search/office%20vending%20Tampa%20FL",
+          "method": "google_maps"
+        }
+      ],
+      "yelp": "https://www.yelp.com/search?find_desc=vending+machine+companies&find_loc=Tampa%2C%20Florida",
+      "yellowPages": "https://www.yellowpages.com/tampa-fl/vending-machine-companies",
+      "bbb": "https://www.bbb.org/search?find_country=USA&find_loc=Tampa%2C%20FL&find_text=vending+machine+companies"
+    },
+    "companies": []
+  },
+  {
+    "city": "Nashville",
+    "state": "Tennessee",
+    "stateAbbr": "TN",
+    "searchUrls": {
+      "googleMaps": [
+        {
+          "query": "vending machine companies Nashville TN",
+          "url": "https://www.google.com/maps/search/vending%20machine%20companies%20Nashville%20TN",
+          "method": "google_maps"
+        },
+        {
+          "query": "vending services Nashville TN",
+          "url": "https://www.google.com/maps/search/vending%20services%20Nashville%20TN",
+          "method": "google_maps"
+        },
+        {
+          "query": "office vending Nashville TN",
+          "url": "https://www.google.com/maps/search/office%20vending%20Nashville%20TN",
+          "method": "google_maps"
+        }
+      ],
+      "yelp": "https://www.yelp.com/search?find_desc=vending+machine+companies&find_loc=Nashville%2C%20Tennessee",
+      "yellowPages": "https://www.yellowpages.com/nashville-tn/vending-machine-companies",
+      "bbb": "https://www.bbb.org/search?find_country=USA&find_loc=Nashville%2C%20TN&find_text=vending+machine+companies"
+    },
+    "companies": []
+  },
+  {
+    "city": "Baltimore",
+    "state": "Maryland",
+    "stateAbbr": "MD",
+    "searchUrls": {
+      "googleMaps": [
+        {
+          "query": "vending machine companies Baltimore MD",
+          "url": "https://www.google.com/maps/search/vending%20machine%20companies%20Baltimore%20MD",
+          "method": "google_maps"
+        },
+        {
+          "query": "vending services Baltimore MD",
+          "url": "https://www.google.com/maps/search/vending%20services%20Baltimore%20MD",
+          "method": "google_maps"
+        },
+        {
+          "query": "office vending Baltimore MD",
+          "url": "https://www.google.com/maps/search/office%20vending%20Baltimore%20MD",
+          "method": "google_maps"
+        }
+      ],
+      "yelp": "https://www.yelp.com/search?find_desc=vending+machine+companies&find_loc=Baltimore%2C%20Maryland",
+      "yellowPages": "https://www.yellowpages.com/baltimore-md/vending-machine-companies",
+      "bbb": "https://www.bbb.org/search?find_country=USA&find_loc=Baltimore%2C%20MD&find_text=vending+machine+companies"
+    },
+    "companies": []
+  },
+  {
+    "city": "Kansas City",
+    "state": "Missouri",
+    "stateAbbr": "MO",
+    "searchUrls": {
+      "googleMaps": [
+        {
+          "query": "vending machine companies Kansas City MO",
+          "url": "https://www.google.com/maps/search/vending%20machine%20companies%20Kansas%20City%20MO",
+          "method": "google_maps"
+        },
+        {
+          "query": "vending services Kansas City MO",
+          "url": "https://www.google.com/maps/search/vending%20services%20Kansas%20City%20MO",
+          "method": "google_maps"
+        },
+        {
+          "query": "office vending Kansas City MO",
+          "url": "https://www.google.com/maps/search/office%20vending%20Kansas%20City%20MO",
+          "method": "google_maps"
+        }
+      ],
+      "yelp": "https://www.yelp.com/search?find_desc=vending+machine+companies&find_loc=Kansas%20City%2C%20Missouri",
+      "yellowPages": "https://www.yellowpages.com/kansas-city-mo/vending-machine-companies",
+      "bbb": "https://www.bbb.org/search?find_country=USA&find_loc=Kansas%20City%2C%20MO&find_text=vending+machine+companies"
+    },
+    "companies": []
+  },
+  {
+    "city": "Columbus",
+    "state": "Ohio",
+    "stateAbbr": "OH",
+    "searchUrls": {
+      "googleMaps": [
+        {
+          "query": "vending machine companies Columbus OH",
+          "url": "https://www.google.com/maps/search/vending%20machine%20companies%20Columbus%20OH",
+          "method": "google_maps"
+        },
+        {
+          "query": "vending services Columbus OH",
+          "url": "https://www.google.com/maps/search/vending%20services%20Columbus%20OH",
+          "method": "google_maps"
+        },
+        {
+          "query": "office vending Columbus OH",
+          "url": "https://www.google.com/maps/search/office%20vending%20Columbus%20OH",
+          "method": "google_maps"
+        }
+      ],
+      "yelp": "https://www.yelp.com/search?find_desc=vending+machine+companies&find_loc=Columbus%2C%20Ohio",
+      "yellowPages": "https://www.yellowpages.com/columbus-oh/vending-machine-companies",
+      "bbb": "https://www.bbb.org/search?find_country=USA&find_loc=Columbus%2C%20OH&find_text=vending+machine+companies"
+    },
+    "companies": []
+  },
+  {
+    "city": "Charlotte",
+    "state": "North Carolina",
+    "stateAbbr": "NC",
+    "searchUrls": {
+      "googleMaps": [
+        {
+          "query": "vending machine companies Charlotte NC",
+          "url": "https://www.google.com/maps/search/vending%20machine%20companies%20Charlotte%20NC",
+          "method": "google_maps"
+        },
+        {
+          "query": "vending services Charlotte NC",
+          "url": "https://www.google.com/maps/search/vending%20services%20Charlotte%20NC",
+          "method": "google_maps"
+        },
+        {
+          "query": "office vending Charlotte NC",
+          "url": "https://www.google.com/maps/search/office%20vending%20Charlotte%20NC",
+          "method": "google_maps"
+        }
+      ],
+      "yelp": "https://www.yelp.com/search?find_desc=vending+machine+companies&find_loc=Charlotte%2C%20North%20Carolina",
+      "yellowPages": "https://www.yellowpages.com/charlotte-nc/vending-machine-companies",
+      "bbb": "https://www.bbb.org/search?find_country=USA&find_loc=Charlotte%2C%20NC&find_text=vending+machine+companies"
+    },
+    "companies": []
+  },
+  {
+    "city": "Indianapolis",
+    "state": "Indiana",
+    "stateAbbr": "IN",
+    "searchUrls": {
+      "googleMaps": [
+        {
+          "query": "vending machine companies Indianapolis IN",
+          "url": "https://www.google.com/maps/search/vending%20machine%20companies%20Indianapolis%20IN",
+          "method": "google_maps"
+        },
+        {
+          "query": "vending services Indianapolis IN",
+          "url": "https://www.google.com/maps/search/vending%20services%20Indianapolis%20IN",
+          "method": "google_maps"
+        },
+        {
+          "query": "office vending Indianapolis IN",
+          "url": "https://www.google.com/maps/search/office%20vending%20Indianapolis%20IN",
+          "method": "google_maps"
+        }
+      ],
+      "yelp": "https://www.yelp.com/search?find_desc=vending+machine+companies&find_loc=Indianapolis%2C%20Indiana",
+      "yellowPages": "https://www.yellowpages.com/indianapolis-in/vending-machine-companies",
+      "bbb": "https://www.bbb.org/search?find_country=USA&find_loc=Indianapolis%2C%20IN&find_text=vending+machine+companies"
+    },
+    "companies": []
+  },
+  {
+    "city": "San Jose",
+    "state": "California",
+    "stateAbbr": "CA",
+    "searchUrls": {
+      "googleMaps": [
+        {
+          "query": "vending machine companies San Jose CA",
+          "url": "https://www.google.com/maps/search/vending%20machine%20companies%20San%20Jose%20CA",
+          "method": "google_maps"
+        },
+        {
+          "query": "vending services San Jose CA",
+          "url": "https://www.google.com/maps/search/vending%20services%20San%20Jose%20CA",
+          "method": "google_maps"
+        },
+        {
+          "query": "office vending San Jose CA",
+          "url": "https://www.google.com/maps/search/office%20vending%20San%20Jose%20CA",
+          "method": "google_maps"
+        }
+      ],
+      "yelp": "https://www.yelp.com/search?find_desc=vending+machine+companies&find_loc=San%20Jose%2C%20California",
+      "yellowPages": "https://www.yellowpages.com/san-jose-ca/vending-machine-companies",
+      "bbb": "https://www.bbb.org/search?find_country=USA&find_loc=San%20Jose%2C%20CA&find_text=vending+machine+companies"
+    },
+    "companies": []
+  }
+]

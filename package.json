@@ -30,11 +30,13 @@
     "@types/react-dom": "^18",
     "@types/stripe": "^8.0.416",
     "autoprefixer": "^10.4.21",
+    "cheerio": "^1.1.2",
     "cross-env": "^7.0.3",
     "eslint": "^8",
     "eslint-config-next": "14.2.5",
     "linkinator": "^6.1.4",
     "postcss": "^8.5.6",
+    "puppeteer": "^24.35.0",
     "tailwindcss": "^3.4.17",
     "typescript": "^5"
   }

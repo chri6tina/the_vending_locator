@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Austin Vending Services",
+    "slug": "austin-vending-services-austin-tx",
+    "city": "Austin",
+    "state": "Texas",
+    "stateAbbr": "TX",
+    "address": "1234 Main Street, Austin, TX 78701",
+    "phone": "(512) 555-1234",
+    "website": "https://austinvending.com",
+    "email": "info@austinvending.com",
+    "description": "Professional vending services for Austin area businesses, offering snack machines, beverages, and coffee service with free installation and regular restocking.",
+    "services": [
+      "Snack Machines",
+      "Beverage Machines",
+      "Coffee Service",
+      "Break Room Solutions",
+      "Free Installation",
+      "Regular Restocking",
+      "Machine Maintenance"
+    ],
+    "serviceArea": [
+      "Austin",
+      "Round Rock",
+      "Cedar Park",
+      "Pflugerville",
+      "Georgetown"
+    ],
+    "machineTypes": [
+      "Snack Vending Machines",
+      "Beverage Vending Machines",
+      "Coffee Machines",
+      "Combination Machines"
+    ],
+    "verified": true,
+    "verifiedDate": "2025-01-16",
+    "verifiedBy": "Research Team",
+    "source": "Google Maps",
+    "rating": 4.5,
+    "reviewCount": 23,
+    "yearsInBusiness": 8,
+    "specialties": [
+      "Office Break Rooms",
+      "Healthcare Facilities",
+      "Manufacturing Plants"
+    ],
+    "revenueShare": "50/50 split",
+    "minimumCommitment": "No minimum",
+    "notes": "Well-established company with good reviews. Serves entire Austin metro area."
+  },
+  {
+    "name": "Central Texas Vending",
+    "slug": "central-texas-vending-austin-tx",
+    "city": "Austin",
+    "state": "Texas",
+    "stateAbbr": "TX",
+    "address": "5678 Business Blvd, Suite 200, Austin, TX 78702",
+    "phone": "(512) 555-5678",
+    "website": "https://centraltexasvending.com",
+    "description": "Full-service vending solutions for Central Texas businesses, specializing in healthy vending options and smart technology.",
+    "services": [
+      "Snack Machines",
+      "Beverage Machines",
+      "Healthy Vending Options",
+      "Smart Vending Technology",
+      "Cashless Payment Systems",
+      "24/7 Service"
+    ],
+    "serviceArea": [
+      "Austin",
+      "San Marcos",
+      "Buda",
+      "Kyle",
+      "Bastrop"
+    ],
+    "machineTypes": [
+      "Snack Vending Machines",
+      "Beverage Vending Machines",
+      "Healthy Vending Machines",
+      "Refrigerated Machines"
+    ],
+    "verified": true,
+    "verifiedDate": "2025-01-16",
+    "verifiedBy": "Research Team",
+    "source": "Yelp",
+    "rating": 4.7,
+    "reviewCount": 45,
+    "yearsInBusiness": 12,
+    "specialties": [
+      "Healthy Vending",
+      "Smart Technology",
+      "Cashless Payments"
+    ],
+    "revenueShare": "Commission-based",
+    "minimumCommitment": "12 months",
+    "notes": "Focuses on healthy options and modern technology. Strong reputation."
+  }
+]

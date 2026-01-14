@@ -8,7 +8,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function PalmCoastFLVendingServicesPage() {
+export default function PalmCoastFloridaVendingServicesPage() {
   const cityDisplayName = 'Palm Coast';
   const stateDisplayName = 'Florida'
   const [formSubmitted, setFormSubmitted] = useState(false)

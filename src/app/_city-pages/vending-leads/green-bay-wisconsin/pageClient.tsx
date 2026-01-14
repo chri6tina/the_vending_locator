@@ -10,11 +10,11 @@ import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
+import CityPageSEO from '@/components/CityPageSEO'
 
 export default function GreenBayWisconsinVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Green Bay';
-  const stateDisplayName = 'Wisconsin';
+  const cityDisplayName = 'Green Bay';const stateDisplayName = 'Wisconsin';
   
   // City-specific data
   const cityData = {
@@ -564,6 +564,88 @@ export default function GreenBayWisconsinVendingLeadsPage() {
         </section>
 
       </div>
+      
+      {/* SEO Structured Data */}
+
+      
+      <CityPageSEO
+
+      
+        city="Green Bay"
+
+      
+        state="Wisconsin"
+
+      
+        stateAbbr="WI"
+
+      
+        description="Get verified vending machine leads and locations in Green Bay, Wisconsin. Find qualified businesses for vending machine placement."
+        faqs={[
+          {
+            question: "Healthcare",
+            answer: "Green Bay's healthcare sector includes major medical centers, specialty clinics, and outpatient facilities that generate consistent patient and visitor traffic, creating ideal vending placement opportunities."
+          },
+          {
+            question: "Education",
+            answer: "Academic institutions in Green Bay feature student centers, libraries, and common areas with consistent foot traffic, making them ideal locations for vending machine placement."
+          },
+          {
+            question: "Manufacturing",
+            answer: "Industrial and manufacturing operations throughout Green Bay employ substantial workforces with shift-based schedules, offering stable vending placement opportunities with steady traffic."
+          },
+          {
+            question: "Retail",
+            answer: "Green Bay's retail sector features shopping centers, strip malls, and commercial districts that offer strategic vending placement in areas with maximum shopper visibility."
+          },
+          {
+            question: "Office Buildings",
+            answer: "Commercial office spaces in Green Bay offer excellent vending opportunities, with professional tenants and business operations generating consistent foot traffic throughout the workday."
+          },
+          {
+            question: "Transportation",
+            answer: "Transportation hubs in Green Bay offer prime vending locations with high passenger volumes, extended operating hours, and captive audiences waiting for departures."
+          },
+          {
+            question: "What types of vending machine locations are available in Green Bay?",
+            answer: "Green Bay offers diverse vending opportunities including healthcare facilities, educational institutions, manufacturing plants, retail locations, office buildings, and transportation hubs. Each location is pre-verified for optimal vending machine success."
+          },
+          {
+            question: "How quickly can I get vending machine leads for Green Bay?",
+            answer: "Our Green Bay vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry."
+          },
+          {
+            question: "What makes Green Bay a good market for vending machines?",
+            answer: "Green Bay features a strong business community with diverse industries, stable employment, and consistent foot traffic. The city's economic growth and business-friendly environment create ideal conditions for vending machine success."
+          },
+          {
+            question: "Do you provide ongoing support for Green Bay locations?",
+            answer: "Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Green Bay."
+          },
+          {
+            question: "What industries in Green Bay are best for vending machines?",
+            answer: "Healthcare, education, manufacturing, retail, office buildings, and transportation sectors in Green Bay show the highest potential for vending machine success due to consistent foot traffic and captive audiences."
+          },
+          {
+            question: "How do you verify the quality of Green Bay vending locations?",
+            answer: "We conduct thorough research on each Green Bay location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included."
+          },
+          {
+            question: "Can I get customized vending leads for specific areas of Green Bay?",
+            answer: "Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Green Bay based on your preferences and target market requirements."
+          },
+          {
+            question: "What's the typical ROI for vending machines in Green Bay?",
+            answer: "Vending machines in Green Bay typically show strong ROI due to the city's business density and consistent traffic patterns. Our research shows average payback periods of 12-18 months for well-placed machines."
+          }
+        ]}
+
+      
+      />
+
+      
+      
+
       
       <Footer />
       <ZipCodeModalWrapper />

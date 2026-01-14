@@ -11,11 +11,11 @@ import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
+import CityPageSEO from '@/components/CityPageSEO'
 
 export default function OzarkAlabamaVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Ozark';
-  const stateDisplayName = 'Alabama';
+  const cityDisplayName = 'Ozark';const stateDisplayName = 'Alabama';
   
   // City-specific data
   const cityData = {
@@ -547,6 +547,60 @@ export default function OzarkAlabamaVendingLeadsPage() {
         )}
 
       </div>
+      
+      {/* SEO Structured Data */}
+
+      
+      <CityPageSEO
+
+      
+        city="Ozark"
+
+      
+        state="Alabama"
+
+      
+        stateAbbr="AL"
+
+      
+        description="Get verified vending machine leads and locations in Ozark, Alabama. Find qualified businesses for vending machine placement."
+        faqs={[
+          {
+            question: "Healthcare",
+            answer: "Medical facilities throughout Ozark serve large patient populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services in waiting areas and break rooms."
+          },
+          {
+            question: "Education",
+            answer: "Educational facilities throughout Ozark serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services."
+          },
+          {
+            question: "Manufacturing",
+            answer: "Industrial operations in Ozark feature large workforces and shift schedules that create reliable vending revenue through employee break times and shift changes."
+          },
+          {
+            question: "Retail",
+            answer: "Shopping centers and retail districts in Ozark offer prime vending locations, with high-traffic areas including food courts, entrances, and common spaces frequented by shoppers."
+          },
+          {
+            question: "Office Buildings",
+            answer: "Commercial office spaces in Ozark offer excellent vending opportunities, with professional tenants and business operations generating consistent foot traffic throughout the workday."
+          },
+          {
+            question: "Transportation",
+            answer: "Transportation hubs in Ozark offer prime vending locations with high passenger volumes, extended operating hours, and captive audiences waiting for departures."
+          },
+          {
+            question: "{item.q}",
+            answer: "{item.a}"
+          }
+        ]}
+
+      
+      />
+
+      
+      
+
       
       <Footer />
       <ZipCodeModalWrapper />

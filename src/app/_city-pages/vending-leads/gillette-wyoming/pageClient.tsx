@@ -10,11 +10,11 @@ import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
+import CityPageSEO from '@/components/CityPageSEO'
 
 export default function GilletteWyomingVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Gillette';
-  const stateDisplayName = 'Wyoming';
+  const cityDisplayName = 'Gillette';const stateDisplayName = 'Wyoming';
   
   // City-specific data
   const cityData = {
@@ -507,6 +507,60 @@ export default function GilletteWyomingVendingLeadsPage() {
             </div>
           </div>
         </section>
+
+        {/* SEO Structured Data */}
+
+
+        <CityPageSEO
+
+
+          city="Gillette"
+
+
+          state="Wyoming"
+
+
+          stateAbbr="WY"
+
+
+          description="Get verified vending machine leads and locations in Gillette, Wyoming. Find qualified businesses for vending machine placement."
+        faqs={[
+          {
+            question: "Energy",
+            answer: "Coal mining operations, power plants, and energy companies providing large employee bases and excellent vending opportunities."
+          },
+          {
+            question: "Mining",
+            answer: "Surface coal mining operations and related industries providing consistent employee traffic and excellent vending opportunities."
+          },
+          {
+            question: "Transportation",
+            answer: "Transit facilities throughout Gillette provide excellent vending opportunities in terminals, waiting areas, and high-traffic zones with consistent traveler foot traffic."
+          },
+          {
+            question: "Healthcare",
+            answer: "Medical facilities throughout Gillette serve large patient populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services in waiting areas and break rooms."
+          },
+          {
+            question: "Education",
+            answer: "Educational facilities throughout Gillette serve large student populations and employ substantial staff, providing steady foot traffic and consistent demand for vending services."
+          },
+          {
+            question: "Retail",
+            answer: "Shopping centers and retail districts in Gillette offer prime vending locations, with high-traffic areas including food courts, entrances, and common spaces frequented by shoppers."
+          },
+          {
+            question: "{faq.question}",
+            answer: "{faq.answer}"
+          }
+        ]}
+
+
+        />
+
+
+        
+
 
         <Footer />
       </div>

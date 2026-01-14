@@ -11,11 +11,11 @@ import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
+import CityPageSEO from '@/components/CityPageSEO'
 
 export default function BentonvilleArkansasVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Bentonville';
-  const stateDisplayName = 'Arkansas';
+  const cityDisplayName = 'Bentonville';const stateDisplayName = 'Arkansas';
   
   // City-specific data
   const cityData = {
@@ -521,6 +521,60 @@ export default function BentonvilleArkansasVendingLeadsPage() {
         )}
 
       </div>
+      
+      {/* SEO Structured Data */}
+
+      
+      <CityPageSEO
+
+      
+        city="Bentonville"
+
+      
+        state="Arkansas"
+
+      
+        stateAbbr="AR"
+
+      
+        description="Home of Walmart headquarters with strong retail presence"
+        faqs={[
+          {
+            question: "Healthcare",
+            answer: "Bentonville's healthcare sector includes major medical centers, specialty clinics, and outpatient facilities that generate consistent patient and visitor traffic, creating ideal vending placement opportunities."
+          },
+          {
+            question: "Education",
+            answer: "Academic institutions in Bentonville feature student centers, libraries, and common areas with consistent foot traffic, making them ideal locations for vending machine placement."
+          },
+          {
+            question: "Manufacturing",
+            answer: "Industrial and manufacturing operations throughout Bentonville employ substantial workforces with shift-based schedules, offering stable vending placement opportunities with steady traffic."
+          },
+          {
+            question: "Retail",
+            answer: "Bentonville's retail sector features shopping centers, strip malls, and commercial districts that offer strategic vending placement in areas with maximum shopper visibility."
+          },
+          {
+            question: "Office Buildings",
+            answer: "Commercial office spaces in Bentonville offer excellent vending opportunities, with professional tenants and business operations generating consistent foot traffic throughout the workday."
+          },
+          {
+            question: "Transportation",
+            answer: "Transportation hubs in Bentonville offer prime vending locations with high passenger volumes, extended operating hours, and captive audiences waiting for departures."
+          },
+          {
+            question: "{item.q}",
+            answer: "{item.a}"
+          }
+        ]}
+
+      
+      />
+
+      
+      
+
       
       <Footer />
       <ZipCodeModalWrapper />

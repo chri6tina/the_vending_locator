@@ -10,11 +10,11 @@ import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
+import CityPageSEO from '@/components/CityPageSEO'
 
 export default function ColumbusOhioVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Columbus';
-  const stateDisplayName = 'Ohio';
+  const cityDisplayName = 'Columbus';const stateDisplayName = 'Ohio';
   
   // City-specific data
   const cityData = {
@@ -359,6 +359,82 @@ export default function ColumbusOhioVendingLeadsPage() {
           </div>
         </div>
       </section>
+
+      {/* SEO Structured Data */}
+
+
+      <CityPageSEO
+
+
+        city="Columbus"
+
+
+        state="Ohio"
+
+
+        stateAbbr="OH"
+
+
+        description="Get verified vending machine leads and locations in Columbus, Ohio. Find qualified businesses for vending machine placement."
+        faqs={[
+          {
+            question: "Government & State Offices",
+            answer: "As Ohio's capital, {cityDisplayName} is home to numerous government buildings, state agencies, and federal offices providing excellent vending opportunities."
+          },
+          {
+            question: "Corporate Headquarters",
+            answer: "Major corporations and Fortune 500 companies have headquarters in {cityDisplayName}, offering high-traffic office vending machine opportunities."
+          },
+          {
+            question: "Educational Institutions",
+            answer: "{cityDisplayName} is home to The Ohio State University and numerous colleges, providing consistent student and faculty traffic for vending machines."
+          },
+          {
+            question: "Healthcare Facilities",
+            answer: "Major hospitals, medical centers, and healthcare facilities throughout {cityDisplayName} offer steady vending machine traffic throughout the day."
+          },
+          {
+            question: "Retail & Shopping Centers",
+            answer: "Shopping malls, retail districts, and entertainment venues in {cityDisplayName} provide diverse vending machine placement opportunities."
+          },
+          {
+            question: "Transportation Hubs",
+            answer: "{cityDisplayName} International Airport and major transportation centers offer high-traffic vending machine opportunities for travelers."
+          },
+          {
+            question: "What types of businesses in {cityDisplayName} are best for vending machines?",
+            answer: "{cityDisplayName} offers excellent opportunities in government buildings, corporate offices, universities, hospitals, shopping centers, and transportation hubs. As Ohio's capital, the city has diverse business environments perfect for vending machine placement."
+          },
+          {
+            question: "How many verified vending locations are available in {cityDisplayName}?",
+            answer: "We currently have {cityData.verifiedLocations}+ verified locations in {cityDisplayName} that are ready for vending machine placement. These locations have been pre-qualified and are actively seeking vending machine partnerships."
+          },
+          {
+            question: "What is the average revenue potential for vending machines in {cityDisplayName}?",
+            answer: "Vending machine revenue in {cityDisplayName} varies by location type, but our verified locations typically generate $250-800+ per month per machine. Government buildings and corporate offices tend to perform best due to consistent foot traffic."
+          },
+          {
+            question: "Are there any specific regulations for vending machines in {cityDisplayName}?",
+            answer: "{cityDisplayName} follows Ohio state regulations for vending machines. Our leads include businesses that are already compliant with local requirements, making the setup process smoother for vending machine operators."
+          },
+          {
+            question: "How quickly can I start placing vending machines in {cityDisplayName}?",
+            answer: "With our verified leads, you can typically start placing vending machines in {cityDisplayName} within 1-2 weeks of purchasing our leads. The businesses are pre-qualified and ready to partner with vending machine operators."
+          },
+          {
+            question: "What support do you provide for vending machine operators in {cityDisplayName}?",
+            answer: "We provide comprehensive support including location verification, business contact information, placement guidelines, and ongoing assistance to help you succeed in the {cityDisplayName} vending machine market."
+          }
+        ]}
+        latitude={39.9612}
+        longitude={-82.9988}
+
+
+      />
+
+
+      
+
 
       <Footer />
       <ZipCodeModalWrapper />

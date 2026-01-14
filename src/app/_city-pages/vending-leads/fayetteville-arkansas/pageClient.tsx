@@ -11,11 +11,11 @@ import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
+import CityPageSEO from '@/components/CityPageSEO'
 
 export default function FayettevilleArkansasVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Fayetteville';
-  const stateDisplayName = 'Arkansas';
+  const cityDisplayName = 'Fayetteville';const stateDisplayName = 'Arkansas';
   
   // City-specific data
   const cityData = {
@@ -521,6 +521,60 @@ export default function FayettevilleArkansasVendingLeadsPage() {
         )}
 
       </div>
+      
+      {/* SEO Structured Data */}
+
+      
+      <CityPageSEO
+
+      
+        city="Fayetteville"
+
+      
+        state="Arkansas"
+
+      
+        stateAbbr="AR"
+
+      
+        description="University city with education, healthcare, and retail"
+        faqs={[
+          {
+            question: "Healthcare",
+            answer: "Healthcare institutions in Fayetteville offer prime vending locations with high visitor counts, extended operating hours, and captive audiences seeking convenient snack and beverage options."
+          },
+          {
+            question: "Education",
+            answer: "Fayetteville's schools, colleges, and universities create excellent vending opportunities with high student traffic, campus events, and extended hours that maximize machine usage."
+          },
+          {
+            question: "Manufacturing",
+            answer: "Industrial operations in Fayetteville feature large workforces and shift schedules that create reliable vending revenue through employee break times and shift changes."
+          },
+          {
+            question: "Retail",
+            answer: "Retail locations throughout Fayetteville provide excellent vending opportunities in malls, shopping centers, and high-traffic commercial areas with consistent customer flow."
+          },
+          {
+            question: "Office Buildings",
+            answer: "Corporate office buildings throughout Fayetteville feature professional workforces and business operations that create reliable vending revenue through employee break times and meetings."
+          },
+          {
+            question: "Transportation",
+            answer: "Airports, bus stations, and transit centers throughout Fayetteville generate steady passenger traffic, providing excellent vending placement options in high-traffic areas frequented by travelers."
+          },
+          {
+            question: "{item.q}",
+            answer: "{item.a}"
+          }
+        ]}
+
+      
+      />
+
+      
+      
+
       
       <Footer />
       <ZipCodeModalWrapper />

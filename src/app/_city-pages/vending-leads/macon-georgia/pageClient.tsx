@@ -10,11 +10,11 @@ import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
+import CityPageSEO from '@/components/CityPageSEO'
 
 export default function MaconGeorgiaVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Macon';
-  const stateDisplayName = 'Georgia';
+  const cityDisplayName = 'Macon';const stateDisplayName = 'Georgia';
   
   // City-specific data
   const cityData = {
@@ -571,6 +571,88 @@ export default function MaconGeorgiaVendingLeadsPage() {
         </section>
 
       </div>
+      
+      {/* SEO Structured Data */}
+
+      
+      <CityPageSEO
+
+      
+        city="Macon"
+
+      
+        state="Georgia"
+
+      
+        stateAbbr="GA"
+
+      
+        description="Get verified vending machine leads and locations in Macon, Georgia. Find qualified businesses for vending machine placement."
+        faqs={[
+          {
+            question: "Healthcare",
+            answer: "Macon features modern healthcare facilities including hospitals, clinics, and medical offices with high foot traffic and stable operations."
+          },
+          {
+            question: "Education",
+            answer: "Educational institutions in Macon provide consistent student populations and staff, creating ideal vending machine opportunities."
+          },
+          {
+            question: "Manufacturing",
+            answer: "Macon's manufacturing sector offers large employee bases and extended operating hours, perfect for vending machine placement."
+          },
+          {
+            question: "Retail",
+            answer: "Retail locations throughout Macon provide high customer traffic and diverse demographics for vending machine success."
+          },
+          {
+            question: "Office Buildings",
+            answer: "Professional office spaces in Macon offer captive audiences during business hours with consistent daily traffic."
+          },
+          {
+            question: "Transportation",
+            answer: "Macon's transportation hubs including airports, bus stations, and transit centers provide high-volume foot traffic."
+          },
+          {
+            question: "What types of vending machine locations are available in Macon?",
+            answer: "Macon offers diverse vending opportunities including healthcare facilities, educational institutions, manufacturing plants, retail locations, office buildings, and transportation hubs. Each location is pre-verified for optimal vending machine success."
+          },
+          {
+            question: "How quickly can I get vending machine leads for Macon?",
+            answer: "Our Macon vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry."
+          },
+          {
+            question: "What makes Macon a good market for vending machines?",
+            answer: "Macon features a strong business community with diverse industries, stable employment, and consistent foot traffic. The city's economic growth and business-friendly environment create ideal conditions for vending machine success."
+          },
+          {
+            question: "Do you provide ongoing support for Macon locations?",
+            answer: "Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Macon."
+          },
+          {
+            question: "What industries in Macon are best for vending machines?",
+            answer: "Healthcare, education, manufacturing, retail, office buildings, and transportation sectors in Macon show the highest potential for vending machine success due to consistent foot traffic and captive audiences."
+          },
+          {
+            question: "How do you verify the quality of Macon vending locations?",
+            answer: "We conduct thorough research on each Macon location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included."
+          },
+          {
+            question: "Can I get customized vending leads for specific areas of Macon?",
+            answer: "Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Macon based on your preferences and target market requirements."
+          },
+          {
+            question: "What's the typical ROI for vending machines in Macon?",
+            answer: "Vending machines in Macon typically show strong ROI due to the city's business density and consistent traffic patterns. Our research shows average payback periods of 12-18 months for well-placed machines."
+          }
+        ]}
+
+      
+      />
+
+      
+      
+
       
       <Footer />
       <ZipCodeModalWrapper />

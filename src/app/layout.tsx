@@ -3,6 +3,8 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import { ZipCodeModalProvider } from '@/contexts/ZipCodeModalContext'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
+import StructuredData from '@/components/StructuredData'
+import { generateOrganizationSchema } from '@/lib/structured-data'
 import Script from 'next/script'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -54,6 +56,7 @@ export default function RootLayout({
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/site.webmanifest" />
+        <StructuredData data={generateOrganizationSchema()} />
       </head>
       <body className={inter.className}>
         <ZipCodeModalProvider>

@@ -11,11 +11,11 @@ import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
+import CityPageSEO from '@/components/CityPageSEO'
 
 export default function SouthBurlingtonVermontVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'South Burlington';
-  const stateDisplayName = 'Vermont';
+  const cityDisplayName = 'South Burlington';const stateDisplayName = 'Vermont';
   
   // City-specific data
   const cityData = {
@@ -524,6 +524,60 @@ export default function SouthBurlingtonVermontVendingLeadsPage() {
         )}
 
       </div>
+      
+      {/* SEO Structured Data */}
+
+      
+      <CityPageSEO
+
+      
+        city="South Burlington"
+
+      
+        state="Vermont"
+
+      
+        stateAbbr="VT"
+
+      
+        description="Get verified vending machine leads and locations in South Burlington, Vermont. Find qualified businesses for vending machine placement."
+        faqs={[
+          {
+            question: "Healthcare",
+            answer: "Healthcare institutions in South Burlington offer prime vending locations with high visitor counts, extended operating hours, and captive audiences seeking convenient snack and beverage options."
+          },
+          {
+            question: "Retail",
+            answer: "Retail locations throughout South Burlington provide excellent vending opportunities in malls, shopping centers, and high-traffic commercial areas with consistent customer flow."
+          },
+          {
+            question: "Office Buildings",
+            answer: "Corporate office buildings throughout South Burlington feature professional workforces and business operations that create reliable vending revenue through employee break times and meetings."
+          },
+          {
+            question: "Residential Areas",
+            answer: "Residential areas in South Burlington provide high-traffic locations with consistent customer base from local residents."
+          },
+          {
+            question: "Transportation",
+            answer: "Airports, bus stations, and transit centers throughout South Burlington generate steady passenger traffic, providing excellent vending placement options in high-traffic areas frequented by travelers."
+          },
+          {
+            question: "Education",
+            answer: "South Burlington's schools, colleges, and universities create excellent vending opportunities with high student traffic, campus events, and extended hours that maximize machine usage."
+          },
+          {
+            question: "{item.q}",
+            answer: "{item.a}"
+          }
+        ]}
+
+      
+      />
+
+      
+      
+
       
       <Footer />
       <ZipCodeModalWrapper />

@@ -8,7 +8,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function DesPlainesILVendingServicesPage() {
+export default function DesPlainesIllinoisVendingServicesPage() {
   const cityDisplayName = 'Des Plaines';
   const stateDisplayName = 'Illinois'
   const [formSubmitted, setFormSubmitted] = useState(false)

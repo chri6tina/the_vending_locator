@@ -8,7 +8,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function PalatineILVendingServicesPage() {
+export default function PalatineIllinoisVendingServicesPage() {
   const cityDisplayName = 'Palatine';
   const stateDisplayName = 'Illinois'
   const [formSubmitted, setFormSubmitted] = useState(false)

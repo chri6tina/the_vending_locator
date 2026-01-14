@@ -10,11 +10,11 @@ import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
+import CityPageSEO from '@/components/CityPageSEO'
 
 export default function CheyenneWyomingVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Cheyenne';
-  const stateDisplayName = 'Wyoming';
+  const cityDisplayName = 'Cheyenne';const stateDisplayName = 'Wyoming';
   
   // City-specific data
   const cityData = {
@@ -507,6 +507,60 @@ export default function CheyenneWyomingVendingLeadsPage() {
             </div>
           </div>
         </section>
+
+        {/* SEO Structured Data */}
+
+
+        <CityPageSEO
+
+
+          city="Cheyenne"
+
+
+          state="Wyoming"
+
+
+          stateAbbr="WY"
+
+
+          description="Get verified vending machine leads and locations in Cheyenne, Wyoming. Find qualified businesses for vending machine placement."
+        faqs={[
+          {
+            question: "Government",
+            answer: "State capital with government offices, agencies, and administrative facilities providing large employee bases and excellent vending opportunities."
+          },
+          {
+            question: "Military",
+            answer: "F.E. Warren Air Force Base and military facilities providing consistent employee traffic and excellent vending opportunities."
+          },
+          {
+            question: "Transportation",
+            answer: "Transportation hubs in Cheyenne offer prime vending locations with high passenger volumes, extended operating hours, and captive audiences waiting for departures."
+          },
+          {
+            question: "Healthcare",
+            answer: "Cheyenne's healthcare sector includes major medical centers, specialty clinics, and outpatient facilities that generate consistent patient and visitor traffic, creating ideal vending placement opportunities."
+          },
+          {
+            question: "Retail",
+            answer: "Cheyenne's retail sector features shopping centers, strip malls, and commercial districts that offer strategic vending placement in areas with maximum shopper visibility."
+          },
+          {
+            question: "Education",
+            answer: "Academic institutions in Cheyenne feature student centers, libraries, and common areas with consistent foot traffic, making them ideal locations for vending machine placement."
+          },
+          {
+            question: "{faq.question}",
+            answer: "{faq.answer}"
+          }
+        ]}
+
+
+        />
+
+
+        
+
 
         <Footer />
       </div>

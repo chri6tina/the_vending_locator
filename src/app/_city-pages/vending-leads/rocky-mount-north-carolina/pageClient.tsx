@@ -11,11 +11,11 @@ import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
+import CityPageSEO from '@/components/CityPageSEO'
 
 export default function RockyMountNorthCarolinaVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Rocky Mount';
-  const stateDisplayName = 'North Carolina';
+  const cityDisplayName = 'Rocky Mount';const stateDisplayName = 'North Carolina';
   
   // City-specific data
   const cityData = {
@@ -522,6 +522,60 @@ export default function RockyMountNorthCarolinaVendingLeadsPage() {
         )}
 
       </div>
+      
+      {/* SEO Structured Data */}
+
+      
+      <CityPageSEO
+
+      
+        city="Rocky Mount"
+
+      
+        state="North Carolina"
+
+      
+        stateAbbr="CAROLINA"
+
+      
+        description="Get verified vending machine leads and locations in Rocky Mount, North Carolina. Find qualified businesses for vending machine placement."
+        faqs={[
+          {
+            question: "Healthcare",
+            answer: "Healthcare institutions in Rocky Mount offer prime vending locations with high visitor counts, extended operating hours, and captive audiences seeking convenient snack and beverage options."
+          },
+          {
+            question: "Education",
+            answer: "Rocky Mount's schools, colleges, and universities create excellent vending opportunities with high student traffic, campus events, and extended hours that maximize machine usage."
+          },
+          {
+            question: "Manufacturing",
+            answer: "Industrial operations in Rocky Mount feature large workforces and shift schedules that create reliable vending revenue through employee break times and shift changes."
+          },
+          {
+            question: "Retail",
+            answer: "Retail locations throughout Rocky Mount provide excellent vending opportunities in malls, shopping centers, and high-traffic commercial areas with consistent customer flow."
+          },
+          {
+            question: "Office Buildings",
+            answer: "Corporate office buildings throughout Rocky Mount feature professional workforces and business operations that create reliable vending revenue through employee break times and meetings."
+          },
+          {
+            question: "Transportation",
+            answer: "Airports, bus stations, and transit centers throughout Rocky Mount generate steady passenger traffic, providing excellent vending placement options in high-traffic areas frequented by travelers."
+          },
+          {
+            question: "{item.q}",
+            answer: "{item.a}"
+          }
+        ]}
+
+      
+      />
+
+      
+      
+
       
       <Footer />
       <ZipCodeModalWrapper />

@@ -10,11 +10,11 @@ import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
+import CityPageSEO from '@/components/CityPageSEO'
 
 export default function DickinsonNorthDakotaVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Dickinson North';
-  const stateDisplayName = 'Dakota';
+  const cityDisplayName = 'Dickinson North';const stateDisplayName = 'Dakota';
   
   // City-specific data
   const cityData = {
@@ -564,6 +564,88 @@ export default function DickinsonNorthDakotaVendingLeadsPage() {
         </section>
 
       </div>
+      
+      {/* SEO Structured Data */}
+
+      
+      <CityPageSEO
+
+      
+        city="Dickinson North"
+
+      
+        state="Dakota"
+
+      
+        stateAbbr="DAKOTA"
+
+      
+        description="Get verified vending machine leads and locations in Dickinson North, Dakota. Find qualified businesses for vending machine placement."
+        faqs={[
+          {
+            question: "Healthcare",
+            answer: "Dickinson North's healthcare sector includes major medical centers, specialty clinics, and outpatient facilities that generate consistent patient and visitor traffic, creating ideal vending placement opportunities."
+          },
+          {
+            question: "Education",
+            answer: "Academic institutions in Dickinson North feature student centers, libraries, and common areas with consistent foot traffic, making them ideal locations for vending machine placement."
+          },
+          {
+            question: "Manufacturing",
+            answer: "Industrial and manufacturing operations throughout Dickinson North employ substantial workforces with shift-based schedules, offering stable vending placement opportunities with steady traffic."
+          },
+          {
+            question: "Retail",
+            answer: "Dickinson North's retail sector features shopping centers, strip malls, and commercial districts that offer strategic vending placement in areas with maximum shopper visibility."
+          },
+          {
+            question: "Office Buildings",
+            answer: "Commercial office spaces in Dickinson North offer excellent vending opportunities, with professional tenants and business operations generating consistent foot traffic throughout the workday."
+          },
+          {
+            question: "Transportation",
+            answer: "Transportation hubs in Dickinson North offer prime vending locations with high passenger volumes, extended operating hours, and captive audiences waiting for departures."
+          },
+          {
+            question: "What types of vending machine locations are available in Dickinson North?",
+            answer: "Dickinson North offers diverse vending opportunities including healthcare facilities, educational institutions, manufacturing plants, retail locations, office buildings, and transportation hubs. Each location is pre-verified for optimal vending machine success."
+          },
+          {
+            question: "How quickly can I get vending machine leads for Dickinson North?",
+            answer: "Our Dickinson North vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry."
+          },
+          {
+            question: "What makes Dickinson North a good market for vending machines?",
+            answer: "Dickinson North features a strong business community with diverse industries, stable employment, and consistent foot traffic. The city's economic growth and business-friendly environment create ideal conditions for vending machine success."
+          },
+          {
+            question: "Do you provide ongoing support for Dickinson North locations?",
+            answer: "Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Dickinson North."
+          },
+          {
+            question: "What industries in Dickinson North are best for vending machines?",
+            answer: "Healthcare, education, manufacturing, retail, office buildings, and transportation sectors in Dickinson North show the highest potential for vending machine success due to consistent foot traffic and captive audiences."
+          },
+          {
+            question: "How do you verify the quality of Dickinson North vending locations?",
+            answer: "We conduct thorough research on each Dickinson North location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included."
+          },
+          {
+            question: "Can I get customized vending leads for specific areas of Dickinson North?",
+            answer: "Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Dickinson North based on your preferences and target market requirements."
+          },
+          {
+            question: "What's the typical ROI for vending machines in Dickinson North?",
+            answer: "Vending machines in Dickinson North typically show strong ROI due to the city's business density and consistent traffic patterns. Our research shows average payback periods of 12-18 months for well-placed machines."
+          }
+        ]}
+
+      
+      />
+
+      
+      
+
       
       <Footer />
       <ZipCodeModalWrapper />

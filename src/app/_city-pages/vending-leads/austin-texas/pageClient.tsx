@@ -10,6 +10,7 @@ import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
+import CityPageSEO from '@/components/CityPageSEO'
 
 export default function AustinTexasVendingLeadsPage() {
   // City and state display names
@@ -654,6 +655,46 @@ export default function AustinTexasVendingLeadsPage() {
         </section>
 
       </div>
+      
+      {/* SEO Structured Data */}
+      <CityPageSEO
+        city={cityDisplayName}
+        state={stateDisplayName}
+        stateAbbr="TX"
+        description="Get verified vending machine leads and locations in Austin, Texas. Find qualified businesses for vending machine placement."
+        faqs={[
+          {
+            question: "How quickly can I get vending machine leads for Austin?",
+            answer: "Our Austin vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry."
+          },
+          {
+            question: "What makes Austin a good market for vending machines?",
+            answer: "Austin features a strong business community with diverse industries, stable employment, and consistent foot traffic. The city's economic growth and business-friendly environment create ideal conditions for vending machine success."
+          },
+          {
+            question: "Do you provide ongoing support for Austin locations?",
+            answer: "Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in Austin."
+          },
+          {
+            question: "What industries in Austin are best for vending machines?",
+            answer: "Healthcare, education, manufacturing, retail, office buildings, and transportation sectors in Austin show the highest potential for vending machine success due to consistent foot traffic and captive audiences."
+          },
+          {
+            question: "How do you verify the quality of Austin vending locations?",
+            answer: "We conduct thorough research on each Austin location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included."
+          },
+          {
+            question: "Can I get customized vending leads for specific areas of Austin?",
+            answer: "Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within Austin based on your preferences and target market requirements."
+          },
+          {
+            question: "What's the typical ROI for vending machines in Austin?",
+            answer: "Vending machines in Austin typically show strong ROI due to the city's business density and consistent traffic patterns. Our research shows average payback periods of 12-18 months for well-placed machines."
+          }
+        ]}
+        latitude={30.2672}
+        longitude={-97.7431}
+      />
       
       <Footer />
       <ZipCodeModalWrapper />

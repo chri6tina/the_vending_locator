@@ -8,7 +8,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function CasaGrandeAZVendingServicesPage() {
+export default function CasaGrandeArizonaVendingServicesPage() {
   const cityDisplayName = 'Casa Grande';
   const stateDisplayName = 'Arizona'
   const [formSubmitted, setFormSubmitted] = useState(false)

@@ -168,6 +168,48 @@ export default function HendersonNevadaVendingLeadsPage() {
           </div>
         </section>
       </div>
+      {/* SEO Structured Data */}
+
+      <CityPageSEO
+
+        city="Henderson"
+
+        state="Nevada"
+
+        stateAbbr="NV"
+
+        description="Get verified vending machine leads and locations in Henderson, Nevada. Find qualified businesses for vending machine placement."
+        faqs={[
+          {
+            question: "Healthcare & Clinics",
+            answer: "Regional healthcare systems and outpatient clinics with steady staff and visitor flow."
+          },
+          {
+            question: "Logistics & Industrial",
+            answer: "Proximity to Las Vegas logistics and distribution corridors drives shift-based demand."
+          },
+          {
+            question: "Education",
+            answer: "Henderson's schools, colleges, and universities create excellent vending opportunities with high student traffic, campus events, and extended hours that maximize machine usage."
+          },
+          {
+            question: "Offices & Professional",
+            answer: "Office clusters and civic buildings provide captive weekday audiences."
+          },
+          {
+            question: "Retail & Hospitality",
+            answer: "Shopping, hotels, and entertainment venues support reliable vending volume."
+          },
+          {
+            question: "{item.q}",
+            answer: "{item.a}"
+          }
+        ]}
+
+      />
+
+      
+
       <Footer />
       <ZipCodeModalWrapper />
     </>

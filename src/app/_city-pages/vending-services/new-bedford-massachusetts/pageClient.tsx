@@ -8,7 +8,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function NewBedfordMAVendingServicesPage() {
+export default function NewBedfordMassachusettsVendingServicesPage() {
   const cityDisplayName = 'New Bedford';
   const stateDisplayName = 'Massachusetts'
   const [formSubmitted, setFormSubmitted] = useState(false)

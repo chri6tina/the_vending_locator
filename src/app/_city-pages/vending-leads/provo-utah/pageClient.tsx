@@ -11,11 +11,11 @@ import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
+import CityPageSEO from '@/components/CityPageSEO'
 
 export default function ProvoUtahVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Provo';
-  const stateDisplayName = 'Utah';
+  const cityDisplayName = 'Provo';const stateDisplayName = 'Utah';
   
   // City-specific data
   const cityData = {
@@ -524,6 +524,60 @@ export default function ProvoUtahVendingLeadsPage() {
         )}
 
       </div>
+      
+      {/* SEO Structured Data */}
+
+      
+      <CityPageSEO
+
+      
+        city="Provo"
+
+      
+        state="Utah"
+
+      
+        stateAbbr="UT"
+
+      
+        description="Get verified vending machine leads and locations in Provo, Utah. Find qualified businesses for vending machine placement."
+        faqs={[
+          {
+            question: "Education",
+            answer: "Provo's schools, colleges, and universities create excellent vending opportunities with high student traffic, campus events, and extended hours that maximize machine usage."
+          },
+          {
+            question: "Healthcare",
+            answer: "Healthcare institutions in Provo offer prime vending locations with high visitor counts, extended operating hours, and captive audiences seeking convenient snack and beverage options."
+          },
+          {
+            question: "Retail",
+            answer: "Retail locations throughout Provo provide excellent vending opportunities in malls, shopping centers, and high-traffic commercial areas with consistent customer flow."
+          },
+          {
+            question: "Office Buildings",
+            answer: "Corporate office buildings throughout Provo feature professional workforces and business operations that create reliable vending revenue through employee break times and meetings."
+          },
+          {
+            question: "Student Housing",
+            answer: "Student housing and residential areas in Provo provide high-traffic locations with consistent customer base."
+          },
+          {
+            question: "Technology",
+            answer: "Provo's growing technology sector offers modern office environments with high employee counts and extended hours."
+          },
+          {
+            question: "{item.q}",
+            answer: "{item.a}"
+          }
+        ]}
+
+      
+      />
+
+      
+      
+
       
       <Footer />
       <ZipCodeModalWrapper />

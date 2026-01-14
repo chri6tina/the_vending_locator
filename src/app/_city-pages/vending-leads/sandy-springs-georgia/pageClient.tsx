@@ -9,11 +9,11 @@ import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
+import CityPageSEO from '@/components/CityPageSEO'
 import SmartBreadcrumbs from '@/components/SmartBreadcrumbs'
 
 export default function SandySpringsGeorgiaVendingLeadsPage() {
-  const cityDisplayName = 'Sandy Springs';
-  const stateDisplayName = 'Georgia';
+  const cityDisplayName = 'Sandy Springs';const stateDisplayName = 'Georgia';
   
   const cityData = {
     'name': 'Sandy Springs',
@@ -415,6 +415,60 @@ export default function SandySpringsGeorgiaVendingLeadsPage() {
             </motion.div>
           </section>
         </main>
+
+        {/* SEO Structured Data */}
+
+
+        <CityPageSEO
+
+
+          city="Sandy Springs"
+
+
+          state="Georgia"
+
+
+          stateAbbr="GA"
+
+
+          description="Get verified vending machine leads and locations in Sandy Springs, Georgia. Find qualified businesses for vending machine placement."
+        faqs={[
+          {
+            question: "Affluent Business District",
+            answer: "Sandy Springs is known for its high-income professionals and corporate headquarters, providing premium vending opportunities with customers who have strong purchasing power."
+          },
+          {
+            question: "What types of businesses in {cityDisplayName} are best for vending machines?",
+            answer: "Sandy Springs offers premium opportunities at corporate headquarters, medical facilities, professional services firms, and upscale retail locations. The affluent customer base provides excellent revenue potential."
+          },
+          {
+            question: "Premium Market",
+            answer: "The city features upscale retail centers, office complexes, and medical facilities where customers expect and are willing to pay for quality vending options."
+          },
+          {
+            question: "How does the affluent market affect vending opportunities in {cityDisplayName}?",
+            answer: "The high-income population expects quality products and is willing to pay premium prices. This creates opportunities for higher-margin vending machines with gourmet snacks, healthy options, and specialty beverages."
+          },
+          {
+            question: "What are the peak hours for vending machine sales in {cityDisplayName}?",
+            answer: "Peak hours align with business hours (8 AM-6 PM) with lunchtime (11 AM-2 PM) being the busiest period. Medical facilities may have extended hours, and corporate locations often have after-hours access for employees."
+          },
+          {
+            question: "Are there any special requirements for vending machines in {cityDisplayName}?",
+            answer: "Standard business licenses and health permits are required. Many locations may require upscale equipment and premium product selections to match the market expectations. We help ensure compliance with all requirements."
+          },
+          {
+            question: "How do I get started with vending machines in {cityDisplayName}?",
+            answer: "Start by accessing our verified location database for Sandy Springs, which includes pre-qualified businesses ready for vending machine placement. Our platform provides contact information, business details, and placement opportunities to help you get started quickly."
+          }
+        ]}
+
+
+        />
+
+
+        
+
 
         <Footer />
       </ZipCodeModalWrapper>

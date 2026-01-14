@@ -8,7 +8,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function SlidellLAVendingServicesPage() {
+export default function SlidellLouisianaVendingServicesPage() {
   const cityDisplayName = 'Slidell';
   const stateDisplayName = 'Louisiana'
   const [formSubmitted, setFormSubmitted] = useState(false)

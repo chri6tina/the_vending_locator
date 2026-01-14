@@ -8,7 +8,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function MinotNDVendingServicesPage() {
+export default function MinotNorthDakotaVendingServicesPage() {
   const cityDisplayName = 'Minot';
   const stateDisplayName = 'North Dakota'
   const [formSubmitted, setFormSubmitted] = useState(false)

@@ -8,6 +8,8 @@ import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 import LeadCaptureForm from '@/components/LeadCaptureForm'
+import StructuredData from '@/components/StructuredData'
+import { generateFAQPageSchema, generateProductSchema } from '@/lib/structured-data'
 import { ChevronDownIcon, MapPinIcon } from '@heroicons/react/24/outline'
 import { CheckBadgeIcon, StarIcon } from '@heroicons/react/24/solid'
 import { useState, useEffect } from 'react'
@@ -340,6 +342,39 @@ export default function Pricing() {
 
       {/* FAQ Section */}
       <FAQ />
+      
+      {/* Structured Data */}
+      <StructuredData data={[
+        generateFAQPageSchema(faqs),
+        generateProductSchema({
+          name: 'Basic Vending Leads Package',
+          description: 'Perfect for getting started with vending location research. Includes 50+ qualified locations with basic lead details.',
+          price: '19',
+          currency: 'USD',
+          url: 'https://www.thevendinglocator.com/pricing'
+        }),
+        generateProductSchema({
+          name: 'Pro Vending Leads Package',
+          description: 'Advanced features for growing vending operations. Includes 100+ qualified locations with enhanced lead details.',
+          price: '29',
+          currency: 'USD',
+          url: 'https://www.thevendinglocator.com/pricing'
+        }),
+        generateProductSchema({
+          name: 'Start Vending Leads Package',
+          description: 'Comprehensive package for serious vending entrepreneurs. Includes 200+ qualified locations with complete lead details and business resources.',
+          price: '129',
+          currency: 'USD',
+          url: 'https://www.thevendinglocator.com/pricing'
+        }),
+        generateProductSchema({
+          name: 'Gold Vending Leads Package',
+          description: 'Ultimate package with full business setup support. Includes 300+ qualified locations with complete business resources and dedicated support.',
+          price: '899',
+          currency: 'USD',
+          url: 'https://www.thevendinglocator.com/pricing'
+        })
+      ]} />
 
       {/* Lead Capture Form */}
       <section className="py-16 bg-warm-white">

@@ -8,7 +8,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function OdessaTXVendingServicesPage() {
+export default function OdessaTexasVendingServicesPage() {
   const cityDisplayName = 'Odessa';
   const stateDisplayName = 'Texas'
   const [formSubmitted, setFormSubmitted] = useState(false)

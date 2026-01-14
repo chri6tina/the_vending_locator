@@ -10,11 +10,11 @@ import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
+import CityPageSEO from '@/components/CityPageSEO'
 
 export default function LaramieWyomingVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Laramie';
-  const stateDisplayName = 'Wyoming';
+  const cityDisplayName = 'Laramie';const stateDisplayName = 'Wyoming';
   
   // City-specific data
   const cityData = {
@@ -508,6 +508,60 @@ export default function LaramieWyomingVendingLeadsPage() {
             </div>
           </div>
         </section>
+
+        {/* SEO Structured Data */}
+
+
+        <CityPageSEO
+
+
+          city="Laramie"
+
+
+          state="Wyoming"
+
+
+          stateAbbr="WY"
+
+
+          description="Get verified vending machine leads and locations in Laramie, Wyoming. Find qualified businesses for vending machine placement."
+        faqs={[
+          {
+            question: "Education",
+            answer: "Academic institutions in Laramie feature student centers, libraries, and common areas with consistent foot traffic, making them ideal locations for vending machine placement."
+          },
+          {
+            question: "Research",
+            answer: "Research facilities and laboratories providing large employee bases and excellent vending opportunities."
+          },
+          {
+            question: "Healthcare",
+            answer: "Laramie's healthcare sector includes major medical centers, specialty clinics, and outpatient facilities that generate consistent patient and visitor traffic, creating ideal vending placement opportunities."
+          },
+          {
+            question: "Retail",
+            answer: "Laramie's retail sector features shopping centers, strip malls, and commercial districts that offer strategic vending placement in areas with maximum shopper visibility."
+          },
+          {
+            question: "Transportation",
+            answer: "Transportation hubs in Laramie offer prime vending locations with high passenger volumes, extended operating hours, and captive audiences waiting for departures."
+          },
+          {
+            question: "Manufacturing",
+            answer: "Industrial and manufacturing operations throughout Laramie employ substantial workforces with shift-based schedules, offering stable vending placement opportunities with steady traffic."
+          },
+          {
+            question: "{faq.question}",
+            answer: "{faq.answer}"
+          }
+        ]}
+
+
+        />
+
+
+        
+
 
         <Footer />
       </div>

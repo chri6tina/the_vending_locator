@@ -11,11 +11,11 @@ import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
+import CityPageSEO from '@/components/CityPageSEO'
 
 export default function BismarckNorthDakotaVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Bismarck';
-  const stateDisplayName = 'North Dakota';
+  const cityDisplayName = 'Bismarck';const stateDisplayName = 'North Dakota';
   
   // City-specific data
   const cityData = {
@@ -523,6 +523,60 @@ export default function BismarckNorthDakotaVendingLeadsPage() {
         )}
 
       </div>
+      
+      {/* SEO Structured Data */}
+
+      
+      <CityPageSEO
+
+      
+        city="Bismarck"
+
+      
+        state="North Dakota"
+
+      
+        stateAbbr="DAKOTA"
+
+      
+        description="Get verified vending machine leads and locations in Bismarck, North Dakota. Find qualified businesses for vending machine placement."
+        faqs={[
+          {
+            question: "Government",
+            answer: "Government facilities in Bismarck offer stable operations with high foot traffic from employees, visitors, and citizens."
+          },
+          {
+            question: "Healthcare",
+            answer: "Healthcare institutions in Bismarck offer prime vending locations with high visitor counts, extended operating hours, and captive audiences seeking convenient snack and beverage options."
+          },
+          {
+            question: "Education",
+            answer: "Bismarck's schools, colleges, and universities create excellent vending opportunities with high student traffic, campus events, and extended hours that maximize machine usage."
+          },
+          {
+            question: "Retail",
+            answer: "Retail locations throughout Bismarck provide excellent vending opportunities in malls, shopping centers, and high-traffic commercial areas with consistent customer flow."
+          },
+          {
+            question: "Office Buildings",
+            answer: "Corporate office buildings throughout Bismarck feature professional workforces and business operations that create reliable vending revenue through employee break times and meetings."
+          },
+          {
+            question: "Transportation",
+            answer: "Airports, bus stations, and transit centers throughout Bismarck generate steady passenger traffic, providing excellent vending placement options in high-traffic areas frequented by travelers."
+          },
+          {
+            question: "{item.q}",
+            answer: "{item.a}"
+          }
+        ]}
+
+      
+      />
+
+      
+      
+
       
       <Footer />
       <ZipCodeModalWrapper />

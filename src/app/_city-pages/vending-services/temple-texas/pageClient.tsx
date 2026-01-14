@@ -8,7 +8,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function TempleTXVendingServicesPage() {
+export default function TempleTexasVendingServicesPage() {
   const cityDisplayName = 'Temple';
   const stateDisplayName = 'Texas'
   const [formSubmitted, setFormSubmitted] = useState(false)

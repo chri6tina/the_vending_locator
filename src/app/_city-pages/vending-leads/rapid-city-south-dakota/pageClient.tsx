@@ -11,11 +11,11 @@ import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
+import CityPageSEO from '@/components/CityPageSEO'
 
 export default function RapidCitySouthDakotaVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Rapid City';
-  const stateDisplayName = 'South Dakota';
+  const cityDisplayName = 'Rapid City';const stateDisplayName = 'South Dakota';
   
   // City-specific data
   const cityData = {
@@ -523,6 +523,60 @@ export default function RapidCitySouthDakotaVendingLeadsPage() {
         )}
 
       </div>
+      
+      {/* SEO Structured Data */}
+
+      
+      <CityPageSEO
+
+      
+        city="Rapid City"
+
+      
+        state="South Dakota"
+
+      
+        stateAbbr="DAKOTA"
+
+      
+        description="Get verified vending machine leads and locations in Rapid City, South Dakota. Find qualified businesses for vending machine placement."
+        faqs={[
+          {
+            question: "Tourism",
+            answer: "Tourism facilities in Rapid City offer high foot traffic from visitors exploring the Black Hills and Mount Rushmore area."
+          },
+          {
+            question: "Healthcare",
+            answer: "Rapid City's healthcare sector includes major medical centers, specialty clinics, and outpatient facilities that generate consistent patient and visitor traffic, creating ideal vending placement opportunities."
+          },
+          {
+            question: "Education",
+            answer: "Academic institutions in Rapid City feature student centers, libraries, and common areas with consistent foot traffic, making them ideal locations for vending machine placement."
+          },
+          {
+            question: "Retail",
+            answer: "Rapid City's retail sector features shopping centers, strip malls, and commercial districts that offer strategic vending placement in areas with maximum shopper visibility."
+          },
+          {
+            question: "Office Buildings",
+            answer: "Commercial office spaces in Rapid City offer excellent vending opportunities, with professional tenants and business operations generating consistent foot traffic throughout the workday."
+          },
+          {
+            question: "Transportation",
+            answer: "Transportation hubs in Rapid City offer prime vending locations with high passenger volumes, extended operating hours, and captive audiences waiting for departures."
+          },
+          {
+            question: "{item.q}",
+            answer: "{item.a}"
+          }
+        ]}
+
+      
+      />
+
+      
+      
+
       
       <Footer />
       <ZipCodeModalWrapper />

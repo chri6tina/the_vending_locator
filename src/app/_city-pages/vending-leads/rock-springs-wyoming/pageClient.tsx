@@ -10,11 +10,11 @@ import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
+import CityPageSEO from '@/components/CityPageSEO'
 
 export default function RockSpringsWyomingVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Rock Springs';
-  const stateDisplayName = 'Wyoming';
+  const cityDisplayName = 'Rock Springs';const stateDisplayName = 'Wyoming';
   
   // City-specific data
   const cityData = {
@@ -510,6 +510,60 @@ export default function RockSpringsWyomingVendingLeadsPage() {
             </div>
           </div>
         </section>
+
+        {/* SEO Structured Data */}
+
+
+        <CityPageSEO
+
+
+          city="Rock Springs"
+
+
+          state="Wyoming"
+
+
+          stateAbbr="WY"
+
+
+          description="Get verified vending machine leads and locations in Rock Springs, Wyoming. Find qualified businesses for vending machine placement."
+        faqs={[
+          {
+            question: "Energy",
+            answer: "Major energy production hub with oil, gas, and coal operations providing large employee bases and excellent vending opportunities."
+          },
+          {
+            question: "Mining",
+            answer: "Mining operations and mineral extraction facilities providing large employee bases and consistent traffic patterns."
+          },
+          {
+            question: "Transportation",
+            answer: "Transportation hubs in Rock Springs offer prime vending locations with high passenger volumes, extended operating hours, and captive audiences waiting for departures."
+          },
+          {
+            question: "Healthcare",
+            answer: "Rock Springs's healthcare sector includes major medical centers, specialty clinics, and outpatient facilities that generate consistent patient and visitor traffic, creating ideal vending placement opportunities."
+          },
+          {
+            question: "Retail",
+            answer: "Rock Springs's retail sector features shopping centers, strip malls, and commercial districts that offer strategic vending placement in areas with maximum shopper visibility."
+          },
+          {
+            question: "Manufacturing",
+            answer: "Industrial and manufacturing operations throughout Rock Springs employ substantial workforces with shift-based schedules, offering stable vending placement opportunities with steady traffic."
+          },
+          {
+            question: "{faq.question}",
+            answer: "{faq.answer}"
+          }
+        ]}
+
+
+        />
+
+
+        
+
 
         <Footer />
       </div>

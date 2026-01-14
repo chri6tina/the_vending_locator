@@ -8,7 +8,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function MountProspectILVendingServicesPage() {
+export default function MountProspectIllinoisVendingServicesPage() {
   const cityDisplayName = 'Mount Prospect';
   const stateDisplayName = 'Illinois'
   const [formSubmitted, setFormSubmitted] = useState(false)

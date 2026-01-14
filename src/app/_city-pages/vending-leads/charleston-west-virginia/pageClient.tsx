@@ -11,11 +11,11 @@ import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
+import CityPageSEO from '@/components/CityPageSEO'
 
 export default function CharlestonWestVirginiaVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Charleston';
-  const stateDisplayName = 'West Virginia';
+  const cityDisplayName = 'Charleston';const stateDisplayName = 'West Virginia';
   
   // City-specific data
   const cityData = {
@@ -523,6 +523,60 @@ export default function CharlestonWestVirginiaVendingLeadsPage() {
         )}
 
       </div>
+      
+      {/* SEO Structured Data */}
+
+      
+      <CityPageSEO
+
+      
+        city="Charleston"
+
+      
+        state="West Virginia"
+
+      
+        stateAbbr="VA"
+
+      
+        description="Get verified vending machine leads and locations in Charleston, West Virginia. Find qualified businesses for vending machine placement."
+        faqs={[
+          {
+            question: "Government",
+            answer: "Government facilities in Charleston offer stable operations with high foot traffic from employees, visitors, and citizens."
+          },
+          {
+            question: "Healthcare",
+            answer: "Charleston's healthcare sector includes major medical centers, specialty clinics, and outpatient facilities that generate consistent patient and visitor traffic, creating ideal vending placement opportunities."
+          },
+          {
+            question: "Education",
+            answer: "Academic institutions in Charleston feature student centers, libraries, and common areas with consistent foot traffic, making them ideal locations for vending machine placement."
+          },
+          {
+            question: "Retail",
+            answer: "Charleston's retail sector features shopping centers, strip malls, and commercial districts that offer strategic vending placement in areas with maximum shopper visibility."
+          },
+          {
+            question: "Office Buildings",
+            answer: "Commercial office spaces in Charleston offer excellent vending opportunities, with professional tenants and business operations generating consistent foot traffic throughout the workday."
+          },
+          {
+            question: "Transportation",
+            answer: "Transportation hubs in Charleston offer prime vending locations with high passenger volumes, extended operating hours, and captive audiences waiting for departures."
+          },
+          {
+            question: "{item.q}",
+            answer: "{item.a}"
+          }
+        ]}
+
+      
+      />
+
+      
+      
+
       
       <Footer />
       <ZipCodeModalWrapper />

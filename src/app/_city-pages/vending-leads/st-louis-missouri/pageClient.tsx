@@ -10,11 +10,11 @@ import PricingTable from '@/components/PricingTable'
 import HotLeads from '@/components/HotLeads'
 import VendingCourse from '@/components/VendingCourse'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
+import CityPageSEO from '@/components/CityPageSEO'
 
 export default function StLouisMissouriVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'St. Louis';
-  const stateDisplayName = 'Missouri';
+  const cityDisplayName = 'St. Louis';const stateDisplayName = 'Missouri';
   
   // City-specific data
   const cityData = {
@@ -359,6 +359,82 @@ export default function StLouisMissouriVendingLeadsPage() {
           </div>
         </div>
       </section>
+
+      {/* SEO Structured Data */}
+
+
+      <CityPageSEO
+
+
+        city="St. Louis"
+
+
+        state="Missouri"
+
+
+        stateAbbr="MO"
+
+
+        description="Get verified vending machine leads and locations in St. Louis, Missouri. Find qualified businesses for vending machine placement."
+        faqs={[
+          {
+            question: "Corporate Headquarters",
+            answer: "{cityDisplayName} is home to major corporations including Anheuser-Busch, Boeing, and Express Scripts, providing excellent opportunities for corporate vending machines."
+          },
+          {
+            question: "Technology & Innovation",
+            answer: "Growing tech sector and innovation districts in {cityDisplayName} offer opportunities for modern office and startup vending machine placement."
+          },
+          {
+            question: "Educational Institutions",
+            answer: "Washington University, Saint Louis University, and other educational facilities provide consistent student and faculty traffic for reliable vending machine revenue."
+          },
+          {
+            question: "Healthcare Facilities",
+            answer: "Major hospitals, medical centers, and healthcare facilities throughout {cityDisplayName} offer steady vending machine traffic throughout the day."
+          },
+          {
+            question: "Retail & Entertainment",
+            answer: "Shopping centers, entertainment districts, and tourist attractions in {cityDisplayName} provide diverse vending machine placement opportunities."
+          },
+          {
+            question: "Government Buildings",
+            answer: "City offices, courthouses, and government facilities in {cityDisplayName} offer stable, long-term vending machine partnerships."
+          },
+          {
+            question: "What types of businesses in {cityDisplayName} are best for vending machines?",
+            answer: "{cityDisplayName} offers excellent opportunities in corporate headquarters, technology companies, universities, hospitals, retail centers, and government buildings. The city's diverse business environment provides numerous vending machine placement opportunities."
+          },
+          {
+            question: "How many verified vending locations are available in {cityDisplayName}?",
+            answer: "We currently have {cityData.verifiedLocations}+ verified locations in {cityDisplayName} that are ready for vending machine placement. These locations have been pre-qualified and are actively seeking vending machine partnerships."
+          },
+          {
+            question: "What is the average revenue potential for vending machines in {cityDisplayName}?",
+            answer: "Vending machine revenue in {cityDisplayName} varies by location type, but our verified locations typically generate 
+
+      80-700+ per month per machine. Corporate offices and universities tend to perform best due to consistent foot traffic."
+          },
+          {
+            question: "Are there any specific regulations for vending machines in {cityDisplayName}?",
+            answer: "{cityDisplayName} follows Missouri state regulations for vending machines. Our leads include businesses that are already compliant with local requirements, making the setup process smoother for vending machine operators."
+          },
+          {
+            question: "How quickly can I start placing vending machines in {cityDisplayName}?",
+            answer: "With our verified leads, you can typically start placing vending machines in {cityDisplayName} within 1-2 weeks of purchasing our leads. The businesses are pre-qualified and ready to partner with vending machine operators."
+          },
+          {
+            question: "What support do you provide for vending machine operators in {cityDisplayName}?",
+            answer: "We provide comprehensive support including location verification, business contact information, placement guidelines, and ongoing assistance to help you succeed in the {cityDisplayName} vending machine market."
+          }
+        ]}
+
+
+      />
+
+
+      
+
 
       <Footer />
       <ZipCodeModalWrapper />

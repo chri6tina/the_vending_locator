@@ -8,7 +8,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function PearlCityHIVendingServicesPage() {
+export default function PearlCityHawaiiVendingServicesPage() {
   const cityDisplayName = 'Pearl City';
   const stateDisplayName = 'Hawaii'
   const [formSubmitted, setFormSubmitted] = useState(false)
