@@ -14,7 +14,7 @@ import CityPageSEO from '@/components/CityPageSEO'
 
 export default function NorthCharlestonSouthCarolinaVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'North Charleston';const stateDisplayName = 'South Carolina';
+  const cityDisplayName = 'North Charleston'; const stateDisplayName = 'South Carolina';
   
   // City-specific data
   const cityData = {
@@ -411,9 +411,7 @@ export default function NorthCharlestonSouthCarolinaVendingLeadsPage() {
           },
           {
             question: "What is the average revenue potential for vending machines in {cityDisplayName}?",
-            answer: "Vending machine revenue in {cityDisplayName} varies by location type, but our verified locations typically generate 
-
-      20-480+ per month per machine. Industrial facilities and corporate offices tend to perform best due to consistent foot traffic."
+            answer: "Vending machine revenue in {cityDisplayName} varies by location type, but our verified locations typically generate $20-480+ per month per machine. Industrial facilities and corporate offices tend to perform best due to consistent foot traffic."
           },
           {
             question: "Are there any specific regulations for vending machines in {cityDisplayName}?",

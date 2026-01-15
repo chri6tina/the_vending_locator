@@ -14,7 +14,7 @@ import CityPageSEO from '@/components/CityPageSEO'
 
 export default function StLouisMissouriVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'St. Louis';const stateDisplayName = 'Missouri';
+  const cityDisplayName = 'St. Louis'; const stateDisplayName = 'Missouri';
   
   // City-specific data
   const cityData = {
@@ -411,9 +411,7 @@ export default function StLouisMissouriVendingLeadsPage() {
           },
           {
             question: "What is the average revenue potential for vending machines in {cityDisplayName}?",
-            answer: "Vending machine revenue in {cityDisplayName} varies by location type, but our verified locations typically generate 
-
-      80-700+ per month per machine. Corporate offices and universities tend to perform best due to consistent foot traffic."
+            answer: "Vending machine revenue in {cityDisplayName} varies by location type, but our verified locations typically generate $80-700+ per month per machine. Corporate offices and universities tend to perform best due to consistent foot traffic."
           },
           {
             question: "Are there any specific regulations for vending machines in {cityDisplayName}?",

@@ -14,7 +14,7 @@ import CityPageSEO from '@/components/CityPageSEO'
 
 export default function EvansvilleIndianaVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Evansville';const stateDisplayName = 'Indiana';
+  const cityDisplayName = 'Evansville'; const stateDisplayName = 'Indiana';
   
   // City-specific data
   const cityData = {
@@ -411,9 +411,7 @@ export default function EvansvilleIndianaVendingLeadsPage() {
           },
           {
             question: "What is the average revenue potential for vending machines in {cityDisplayName}?",
-            answer: "Vending machine revenue in {cityDisplayName} varies by location type, but our verified locations typically generate 
-
-      50-600+ per month per machine. Manufacturing facilities and corporate offices tend to perform best due to consistent foot traffic."
+            answer: "Vending machine revenue in {cityDisplayName} varies by location type, but our verified locations typically generate $50-600+ per month per machine. Manufacturing facilities and corporate offices tend to perform best due to consistent foot traffic."
           },
           {
             question: "Are there any specific regulations for vending machines in {cityDisplayName}?",

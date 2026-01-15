@@ -8,8 +8,8 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 
-export default function Miami GardensGardensFloridaVendingServicesPage() {
-  const cityDisplayName = 'Miami Gardens Gardens';
+export default function MiamiGardensFloridaVendingServicesPage() {
+  const cityDisplayName = 'Miami Gardens';
   const stateDisplayName = 'Florida'
   const [formSubmitted, setFormSubmitted] = useState(false)
   const [isSubmitting, setIsSubmitting] = useState(false)

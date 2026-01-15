@@ -14,7 +14,7 @@ import CityPageSEO from '@/components/CityPageSEO'
 
 export default function KentWashingtonVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Kent';const stateDisplayName = 'Washington';
+  const cityDisplayName = 'Kent'; const stateDisplayName = 'Washington';
   
   // City-specific data
   const cityData = {
@@ -411,9 +411,7 @@ export default function KentWashingtonVendingLeadsPage() {
           },
           {
             question: "What is the average revenue potential for vending machines in {cityDisplayName}?",
-            answer: "Vending machine revenue in {cityDisplayName} varies by location type, but our verified locations typically generate 
-
-      60-640+ per month per machine. Distribution centers and corporate offices tend to perform best due to consistent foot traffic."
+            answer: "Vending machine revenue in {cityDisplayName} varies by location type, but our verified locations typically generate $60-640+ per month per machine. Distribution centers and corporate offices tend to perform best due to consistent foot traffic."
           },
           {
             question: "Are there any specific regulations for vending machines in {cityDisplayName}?",

@@ -14,7 +14,7 @@ import CityPageSEO from '@/components/CityPageSEO'
 
 export default function EdisonNewJerseyVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Edison';const stateDisplayName = 'New Jersey';
+  const cityDisplayName = 'Edison'; const stateDisplayName = 'New Jersey';
   
   // City-specific data
   const cityData = {
@@ -411,9 +411,7 @@ export default function EdisonNewJerseyVendingLeadsPage() {
           },
           {
             question: "What is the average revenue potential for vending machines in {cityDisplayName}?",
-            answer: "Vending machine revenue in {cityDisplayName} varies by location type, but our verified locations typically generate 
-
-      50-600+ per month per machine. Technology companies and corporate offices tend to perform best due to high employee traffic."
+            answer: "Vending machine revenue in {cityDisplayName} varies by location type, but our verified locations typically generate $50-600+ per month per machine. Technology companies and corporate offices tend to perform best due to high employee traffic."
           },
           {
             question: "Are there any specific regulations for vending machines in {cityDisplayName}?",

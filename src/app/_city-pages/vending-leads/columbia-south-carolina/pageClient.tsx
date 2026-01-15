@@ -14,7 +14,7 @@ import CityPageSEO from '@/components/CityPageSEO'
 
 export default function ColumbiaSouthCarolinaVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Columbia';const stateDisplayName = 'South Carolina';
+  const cityDisplayName = 'Columbia'; const stateDisplayName = 'South Carolina';
   
   // City-specific data
   const cityData = {
@@ -411,9 +411,7 @@ export default function ColumbiaSouthCarolinaVendingLeadsPage() {
           },
           {
             question: "What is the average revenue potential for vending machines in {cityDisplayName}?",
-            answer: "Vending machine revenue in {cityDisplayName} varies by location type, but our verified locations typically generate 
-
-      50-600+ per month per machine. Government buildings and educational institutions tend to perform best due to consistent foot traffic."
+            answer: "Vending machine revenue in {cityDisplayName} varies by location type, but our verified locations typically generate $50-600+ per month per machine. Government buildings and educational institutions tend to perform best due to consistent foot traffic."
           },
           {
             question: "Are there any specific regulations for vending machines in {cityDisplayName}?",

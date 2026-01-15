@@ -14,7 +14,7 @@ import CityPageSEO from '@/components/CityPageSEO'
 
 export default function CincinnatiOhioVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'Cincinnati';const stateDisplayName = 'Ohio';
+  const cityDisplayName = 'Cincinnati'; const stateDisplayName = 'Ohio';
   
   // City-specific data
   const cityData = {
@@ -411,9 +411,7 @@ export default function CincinnatiOhioVendingLeadsPage() {
           },
           {
             question: "What is the average revenue potential for vending machines in {cityDisplayName}?",
-            answer: "Vending machine revenue in {cityDisplayName} varies by location type, but our verified locations typically generate 
-
-      80-650+ per month per machine. Corporate offices and healthcare facilities tend to perform best due to consistent foot traffic."
+            answer: "Vending machine revenue in {cityDisplayName} varies by location type, but our verified locations typically generate $80-650+ per month per machine. Corporate offices and healthcare facilities tend to perform best due to consistent foot traffic."
           },
           {
             question: "Are there any specific regulations for vending machines in {cityDisplayName}?",

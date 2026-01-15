@@ -14,7 +14,7 @@ import CityPageSEO from '@/components/CityPageSEO'
 
 export default function SouthBendIndianaVendingLeadsPage() {
   // City and state display names
-  const cityDisplayName = 'South Bend';const stateDisplayName = 'Indiana';
+  const cityDisplayName = 'South Bend'; const stateDisplayName = 'Indiana';
   
   // City-specific data
   const cityData = {
@@ -411,9 +411,7 @@ export default function SouthBendIndianaVendingLeadsPage() {
           },
           {
             question: "What is the average revenue potential for vending machines in {cityDisplayName}?",
-            answer: "Vending machine revenue in {cityDisplayName} varies by location type, but our verified locations typically generate 
-
-      20-480+ per month per machine. Educational institutions and corporate offices tend to perform best due to consistent foot traffic."
+            answer: "Vending machine revenue in {cityDisplayName} varies by location type, but our verified locations typically generate $20-480+ per month per machine. Educational institutions and corporate offices tend to perform best due to consistent foot traffic."
           },
           {
             question: "Are there any specific regulations for vending machines in {cityDisplayName}?",
