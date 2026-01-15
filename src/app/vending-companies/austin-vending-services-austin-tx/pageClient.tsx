@@ -32,7 +32,7 @@ export default function AustinVendingServicesPage() {
     rating: 4.5,
     reviewCount: 23,
     source: "Google Maps"
-  };
+  }
 
   return (
     <div className="min-h-screen bg-cream">
