@@ -32,7 +32,7 @@ export default function CentralTexasVendingPage() {
     rating: 4.7,
     reviewCount: 45,
     source: "Yelp"
-  }
+  };
 
   return (
     <div className="min-h-screen bg-cream">

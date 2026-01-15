@@ -3284,7 +3284,7 @@ export const vendingServicesCities = {
     "city": "Yuma",
     "state": "Arizona",
     "slug": "yuma-arizona"
-  }
+  },
   "prattville-alabama": {
     "city": "Prattville",
     "state": "Alabama",
