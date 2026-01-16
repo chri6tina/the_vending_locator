@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
+import CityLandingPage from '@/components/CityLandingPage'
 
 // Use ISR (Incremental Static Regeneration) for SEO stability and performance
 // Pages will be generated on-demand and cached, revalidating every 24 hours
@@ -15,7 +16,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!resolvedParams.slug || !Array.isArray(resolvedParams.slug) || resolvedParams.slug.length === 0) {
     return {
       title: 'Vending Machines for Sale - The Vending Locator',
-      description: 'Smart vending machines and AI-powered coolers'
+      description: 'Smart vending machines and modern coolers'
     }
   }
   
@@ -25,7 +26,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (cityParts.length < 2) {
     return {
       title: 'Vending Machines for Sale - The Vending Locator',
-      description: 'Smart vending machines and AI-powered coolers'
+      description: 'Smart vending machines and modern coolers'
     }
   }
   
@@ -70,12 +71,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const fullSlug = `vending-machines-for-sale-in-${citySlug}`
   
   const title = `Vending Machines for Sale in ${city}, ${state} | Smart Coolers with 24/7 Support`
-  const description = `Shop smart vending machines and AI-powered coolers in ${city}, ${state}. Get expert guidance, 24/7 operator support, and ready-to-ship Haha vending machines.`
+  const description = `Shop smart vending machines and modern coolers in ${city}, ${state}. Get expert guidance, 24/7 operator support, and ready-to-ship Haha vending machines.`
   
   return {
     title,
     description,
-    keywords: `${city} vending machines for sale, smart vending ${city} ${state}, haha smart coolers ${city}, vending machine business ${city}, AI vending ${state}`,
+    keywords: `${city} vending machines for sale, smart vending ${city} ${state}, haha smart coolers ${city}, vending machine business ${city}`,
     alternates: {
       canonical: `https://www.thevendinglocator.com/${fullSlug}`
     },
@@ -128,7 +129,6 @@ export default async function VendingMachinesForSalePage({ params }: { params: P
   }
   
   const citySlug = resolvedParams.slug.join('-') // Join in case there are multiple segments
-  const dirName = `vending-machines-for-sale-in-${citySlug}`
   
   // Extract city and state for structured data
   const cityParts = citySlug.split('-')
@@ -174,7 +174,7 @@ export default async function VendingMachinesForSalePage({ params }: { params: P
     '@context': 'https://schema.org',
     '@type': 'WebPage',
     name: `Vending Machines for Sale in ${city}, ${state}`,
-    description: `Shop smart vending machines and AI-powered coolers in ${city}, ${state}. Get expert guidance and ready-to-ship Haha vending machines.`,
+    description: `Shop smart vending machines and modern coolers in ${city}, ${state}. Get expert guidance and ready-to-ship Haha vending machines.`,
     url: pageUrl,
     breadcrumb: {
       '@type': 'BreadcrumbList',
@@ -215,21 +215,30 @@ export default async function VendingMachinesForSalePage({ params }: { params: P
     }
   }
   
-  // Dynamically import from _city-pages - Next.js won't discover these during build
-  try {
-    const PageClient = (await import(`@/app/_city-pages/vending-machines-for-sale-in/${dirName}/pageClient`)).default
-    return (
-      <>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-        />
-        <PageClient />
-      </>
-    )
-  } catch (error) {
-    console.error(`Failed to load pageClient for ${dirName}:`, error)
-    notFound()
-  }
+  const benefits = [
+    `New and refurbished vending machines available in ${city}`,
+    `Delivery and setup guidance for ${state} operators`,
+    'Support for choosing the right equipment mix'
+  ]
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <CityLandingPage
+        categoryLabel="Vending Machines for Sale"
+        basePath="/vending-machine-products"
+        city={city}
+        state={state}
+        heroTitle={`Vending Machines for Sale in ${city}, ${state}`}
+        heroDescription={`Shop smart vending machines and modern coolers in ${city}, ${state}. Get guidance on selecting equipment and plan your rollout with confidence.`}
+        benefits={benefits}
+        primaryCtaLabel="Browse Products"
+        primaryCtaHref="/vending-machine-products"
+      />
+    </>
+  )
 }
 

@@ -9,6 +9,9 @@ yarn-error.log*
 out
 dist
 
+# Generated city pages (no longer needed in build)
+src/app/_city-pages
+
 # Environment files
 .env
 .env.local

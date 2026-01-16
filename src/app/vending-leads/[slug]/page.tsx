@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
+import CityLandingPage from '@/components/CityLandingPage'
 import { getCityInfo, getAllVendingLeadsSlugs } from '@/data/vending-leads-cities'
 import { getPrioritySlugs } from '@/lib/seo-priority-pages'
 
@@ -141,35 +142,32 @@ export default async function VendingLeadsCityPage({ params }: { params: Promise
     }
   }
   
-  // Dynamically import the pageClient component from _city-pages (Next.js ignores this during route discovery)
-  // Optimized import with better error handling and SEO fallback
-  let PageClient
-  try {
-    // Try to import the specific pageClient
-    const module = await import(`@/app/_city-pages/vending-leads/${resolvedParams.slug}/pageClient`)
-    PageClient = module.default
-    
-    if (!PageClient) {
-      throw new Error(`PageClient component not found for ${resolvedParams.slug}`)
-    }
-  } catch (error) {
-    // Enhanced error handling: Log but don't expose error details to users
-    console.error(`[Vending Leads] Failed to load pageClient for ${resolvedParams.slug}:`, error)
-    
-    // For SEO: Return 404 instead of broken page
-    // This ensures search engines don't index broken content
-    notFound()
-  }
+  const benefits = [
+    `Verified businesses and decision makers in ${city}`,
+    `Clear outreach details tailored to ${state}`,
+    'Guidance to help you move quickly and confidently'
+  ]
 
-  // Always render JSON-LD and PageClient to ensure SEO content is present
-  // The dynamic import is awaited server-side, so content is in initial HTML
+  // Always render JSON-LD and the city landing layout to ensure SEO content is present
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
-      <PageClient />
+      <CityLandingPage
+        categoryLabel="Vending Leads"
+        basePath="/vending-leads"
+        city={city}
+        state={state}
+        heroTitle={`Vending Machine Leads in ${city}, ${state}`}
+        heroDescription={`Get verified vending machine leads and locations in ${city}, ${state}. Focus on high-quality businesses and move faster with clear, reliable data.`}
+        benefits={benefits}
+        primaryCtaLabel="View Pricing"
+        primaryCtaHref="/pricing"
+        secondaryCtaLabel="See Hot Leads"
+        secondaryCtaHref="/hot-leads"
+      />
     </>
   )
 }

@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
+import CityLandingPage from '@/components/CityLandingPage'
 import { getCityInfo, getAllVendingServicesSlugs } from '@/data/vending-services-cities'
 import { getPrioritySlugs } from '@/lib/seo-priority-pages'
 
@@ -147,34 +148,30 @@ export default async function VendingServicesCityPage({ params }: { params: Prom
     }
   }
   
-  // Optimized dynamic import with better error handling and SEO fallback
-  let PageClient
-  try {
-    // Try to import the specific pageClient
-    const module = await import(`@/app/_city-pages/vending-services/${resolvedParams.slug}/pageClient`)
-    PageClient = module.default
-    
-    if (!PageClient) {
-      throw new Error(`PageClient component not found for ${resolvedParams.slug}`)
-    }
-  } catch (error) {
-    // Enhanced error handling: Log but don't expose error details to users
-    console.error(`[Vending Services] Failed to load pageClient for ${resolvedParams.slug}:`, error)
-    
-    // For SEO: Return 404 instead of broken page
-    // This ensures search engines don't index broken content
-    notFound()
-  }
+  const benefits = [
+    `Reliable operators and service support in ${city}`,
+    `Local coverage options tailored to ${state}`,
+    'Clear next steps to get service in place fast'
+  ]
 
-  // Always render JSON-LD and PageClient to ensure SEO content is present
-  // The dynamic import is awaited server-side, so content is in initial HTML
+  // Always render JSON-LD and the city landing layout to ensure SEO content is present
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
-      <PageClient />
+      <CityLandingPage
+        categoryLabel="Vending Services"
+        basePath="/vending-services"
+        city={city}
+        state={state}
+        heroTitle={`Vending Machine Services in ${city}, ${state}`}
+        heroDescription={`Connect with vending service providers in ${city}, ${state} for installation, maintenance, and stocking. Get dependable support for your location.`}
+        benefits={benefits}
+        primaryCtaLabel="Request Service"
+        primaryCtaHref="/contact"
+      />
     </>
   )
 }

@@ -1,5 +1,6 @@
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
+import CityLandingPage from '@/components/CityLandingPage'
 import { getCityInfo, getAllTaxServicesSlugs } from '@/data/tax-services-cities'
 import { getPrioritySlugs } from '@/lib/seo-priority-pages'
 
@@ -147,35 +148,30 @@ export default async function TaxServicesCityPage({ params }: { params: Promise<
     }
   }
   
-  // Dynamically import the pageClient component from _city-pages (Next.js ignores this during route discovery)
-  // Optimized import with better error handling and SEO fallback
-  let PageClient
-  try {
-    // Try to import the specific pageClient
-    const module = await import(`@/app/_city-pages/tax-services/${resolvedParams.slug}/pageClient`)
-    PageClient = module.default
-    
-    if (!PageClient) {
-      throw new Error(`PageClient component not found for ${resolvedParams.slug}`)
-    }
-  } catch (error) {
-    // Enhanced error handling: Log but don't expose error details to users
-    console.error(`[Tax Services] Failed to load pageClient for ${resolvedParams.slug}:`, error)
-    
-    // For SEO: Return 404 instead of broken page
-    // This ensures search engines don't index broken content
-    notFound()
-  }
+  const benefits = [
+    `Tax preparation tailored to vending businesses in ${city}`,
+    `Bookkeeping support designed for ${state} requirements`,
+    'Year-round guidance to keep your filings on track'
+  ]
 
-  // Always render JSON-LD and PageClient to ensure SEO content is present
-  // The dynamic import is awaited server-side, so content is in initial HTML
+  // Always render JSON-LD and the city landing layout to ensure SEO content is present
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
-      <PageClient />
+      <CityLandingPage
+        categoryLabel="Tax Services"
+        basePath="/tax-services"
+        city={city}
+        state={state}
+        heroTitle={`Tax & Bookkeeping Services in ${city}, ${state}`}
+        heroDescription={`Get expert tax preparation and bookkeeping support for vending machine businesses in ${city}, ${state}. Stay compliant and keep your finances organized.`}
+        benefits={benefits}
+        primaryCtaLabel="Talk to a Specialist"
+        primaryCtaHref="/contact"
+      />
     </>
   )
 }
