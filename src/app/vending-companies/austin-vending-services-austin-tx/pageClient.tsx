@@ -1,6 +1,5 @@
 'use client'
 
-import React from 'react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import Header from '@/components/Header'
@@ -33,7 +32,7 @@ export default function AustinVendingServicesPage() {
     rating: 4.5,
     reviewCount: 23,
     source: "Google Maps"
-  };
+  }
 
   return (
     <div className="min-h-screen bg-cream">
@@ -214,7 +213,7 @@ export default function AustinVendingServicesPage() {
                           rel="noopener noreferrer"
                           className="font-medium hover:underline break-all"
                         >
-                          {company.website.replace(/^https?:///, '')}
+                          {company.website.replace(/^https?:\/\//, '')}
                         </a>
                       </div>
                     </div>
