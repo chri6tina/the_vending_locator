@@ -19,21 +19,54 @@ const nextConfig = {
     optimizePackageImports: ['@heroicons/react', 'framer-motion'],
     // Reduce memory usage during static generation
     workerThreads: false,
-    // Limit CPU parallelism to 4 cores to prevent memory spikes on 30-core Vercel builders
-    cpus: 4,
+    // Limit CPU parallelism to 2 cores to prevent memory spikes (reduced from 4)
+    cpus: 2,
     // Reduce memory by limiting concurrency
     serverMinification: false,
   },
+  // Reduce output file tracing memory usage
+  outputFileTracing: true,
   // Optimize webpack to reduce memory usage during build
-  webpack: (config, { isServer }) => {
+  webpack: (config, { isServer, dev }) => {
+    // Optimize cache to reduce memory usage
+    if (config.cache && !dev) {
+      // Use filesystem cache instead of memory cache in production builds
+      config.cache = {
+        type: 'filesystem',
+        buildDependencies: {
+          config: [__filename],
+        },
+        // Reduce cache memory footprint
+        maxMemoryGenerations: 1,
+      };
+    }
+    
     if (!isServer) {
       // Reduce memory usage for client-side builds
       config.optimization = {
         ...config.optimization,
         moduleIds: 'deterministic',
         runtimeChunk: 'single',
+        // Reduce memory by limiting chunk size
+        splitChunks: {
+          chunks: 'all',
+          maxSize: 200000, // 200KB max chunk size to reduce memory pressure
+          cacheGroups: {
+            default: false,
+            vendors: false,
+            // Create smaller chunks to reduce memory pressure
+            framework: {
+              name: 'framework',
+              chunks: 'all',
+              test: /[\\/]node_modules[\\/](react|react-dom|scheduler|prop-types|use-subscription)[\\/]/,
+              priority: 40,
+              enforce: true,
+            },
+          },
+        },
       };
     }
+    
     return config;
   },
   // Optimize static generation to reduce memory usage
