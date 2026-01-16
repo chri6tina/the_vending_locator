@@ -1,11 +1,11 @@
 {
   "framework": "nextjs",
-  "buildCommand": "NODE_OPTIONS=--max-old-space-size=40960 npm run build",
+  "buildCommand": "NODE_OPTIONS=--max-old-space-size=55296 npm run build",
   "outputDirectory": ".next",
   "build": {
     "env": {
       "CACHE_BUST": "v4",
-      "NODE_OPTIONS": "--max-old-space-size=40960"
+      "NODE_OPTIONS": "--max-old-space-size=55296"
     }
   },
   "functions": {

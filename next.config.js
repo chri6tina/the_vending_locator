@@ -19,8 +19,8 @@ const nextConfig = {
     optimizePackageImports: ['@heroicons/react', 'framer-motion'],
     // Reduce memory usage during static generation
     workerThreads: false,
-    // Limit CPU parallelism to 2 cores to prevent memory spikes (reduced from 4)
-    cpus: 2,
+    // Limit CPU parallelism to 1 core to minimize memory usage (builds sequentially)
+    cpus: 1,
     // Reduce memory by limiting concurrency
     serverMinification: false,
   },
