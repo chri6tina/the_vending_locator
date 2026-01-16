@@ -1,5 +1,6 @@
 'use client'
 
+import React from 'react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import Header from '@/components/Header'
@@ -32,7 +33,7 @@ export default function CentralTexasVendingPage() {
     rating: 4.7,
     reviewCount: 45,
     source: "Yelp"
-  }
+  };
 
   return (
     <div className="min-h-screen bg-cream">
