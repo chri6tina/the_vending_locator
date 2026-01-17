@@ -10604,7 +10604,5008 @@ export const vendingLeadsCities = {
     "city": "Zionsville",
     "state": "Indiana",
     "slug": "zionsville-indiana"
+  },
+  "abbeville-louisiana": {
+    "city": "Abbeville",
+    "state": "Louisiana",
+    "slug": "abbeville-louisiana"
+  },
+  "aberdeen-maryland": {
+    "city": "Aberdeen",
+    "state": "Maryland",
+    "slug": "aberdeen-maryland"
+  },
+  "aberdeen-metro-south-dakota": {
+    "city": "Aberdeen Metro",
+    "state": "South Dakota",
+    "slug": "aberdeen-metro-south-dakota"
+  },
+  "aberdeen-metro-washington": {
+    "city": "Aberdeen Metro",
+    "state": "Washington",
+    "slug": "aberdeen-metro-washington"
+  },
+  "abilene-metro-texas": {
+    "city": "Abilene Metro",
+    "state": "Texas",
+    "slug": "abilene-metro-texas"
+  },
+  "abingdon-virginia": {
+    "city": "Abingdon",
+    "state": "Virginia",
+    "slug": "abingdon-virginia"
+  },
+  "acworth-metro-georgia": {
+    "city": "Acworth Metro",
+    "state": "Georgia",
+    "slug": "acworth-metro-georgia"
+  },
+  "ada-oklahoma": {
+    "city": "Ada",
+    "state": "Oklahoma",
+    "slug": "ada-oklahoma"
+  },
+  "adams-massachusetts": {
+    "city": "Adams",
+    "state": "Massachusetts",
+    "slug": "adams-massachusetts"
+  },
+  "adams-morgan-metro-washington-dc": {
+    "city": "Adams Morgan Metro",
+    "state": "Washington Dc",
+    "slug": "adams-morgan-metro-washington-dc"
+  },
+  "addison-metro-illinois": {
+    "city": "Addison Metro",
+    "state": "Illinois",
+    "slug": "addison-metro-illinois"
+  },
+  "adel-metro-georgia": {
+    "city": "Adel Metro",
+    "state": "Georgia",
+    "slug": "adel-metro-georgia"
+  },
+  "adelanto-metro-california": {
+    "city": "Adelanto Metro",
+    "state": "California",
+    "slug": "adelanto-metro-california"
+  },
+  "adrian-michigan": {
+    "city": "Adrian",
+    "state": "Michigan",
+    "slug": "adrian-michigan"
+  },
+  "agawam-massachusetts": {
+    "city": "Agawam",
+    "state": "Massachusetts",
+    "slug": "agawam-massachusetts"
+  },
+  "agoura-hills-metro-california": {
+    "city": "Agoura Hills Metro",
+    "state": "California",
+    "slug": "agoura-hills-metro-california"
+  },
+  "aiken-metro-south-carolina": {
+    "city": "Aiken Metro",
+    "state": "South Carolina",
+    "slug": "aiken-metro-south-carolina"
+  },
+  "akron-metro-ohio": {
+    "city": "Akron Metro",
+    "state": "Ohio",
+    "slug": "akron-metro-ohio"
+  },
+  "alameda-metro-california": {
+    "city": "Alameda Metro",
+    "state": "California",
+    "slug": "alameda-metro-california"
+  },
+  "alamo-texas": {
+    "city": "Alamo",
+    "state": "Texas",
+    "slug": "alamo-texas"
+  },
+  "alamogordo-new-mexico": {
+    "city": "Alamogordo",
+    "state": "New Mexico",
+    "slug": "alamogordo-new-mexico"
+  },
+  "alamosa-metro-colorado": {
+    "city": "Alamosa Metro",
+    "state": "Colorado",
+    "slug": "alamosa-metro-colorado"
+  },
+  "albany-metro-california": {
+    "city": "Albany Metro",
+    "state": "California",
+    "slug": "albany-metro-california"
+  },
+  "albany-metro-georgia": {
+    "city": "Albany Metro",
+    "state": "Georgia",
+    "slug": "albany-metro-georgia"
+  },
+  "albany-metro-new-york": {
+    "city": "Albany Metro",
+    "state": "New York",
+    "slug": "albany-metro-new-york"
+  },
+  "albany-metro-oregon": {
+    "city": "Albany Metro",
+    "state": "Oregon",
+    "slug": "albany-metro-oregon"
+  },
+  "albemarle-north-carolina": {
+    "city": "Albemarle",
+    "state": "North Carolina",
+    "slug": "albemarle-north-carolina"
+  },
+  "albert-lea-minnesota": {
+    "city": "Albert Lea",
+    "state": "Minnesota",
+    "slug": "albert-lea-minnesota"
+  },
+  "albertville-metro-alabama": {
+    "city": "Albertville Metro",
+    "state": "Alabama",
+    "slug": "albertville-metro-alabama"
+  },
+  "albion-michigan": {
+    "city": "Albion",
+    "state": "Michigan",
+    "slug": "albion-michigan"
+  },
+  "albuquerque-metro-new-mexico": {
+    "city": "Albuquerque Metro",
+    "state": "New Mexico",
+    "slug": "albuquerque-metro-new-mexico"
+  },
+  "alcoa-tennessee": {
+    "city": "Alcoa",
+    "state": "Tennessee",
+    "slug": "alcoa-tennessee"
+  },
+  "alexander-city-metro-alabama": {
+    "city": "Alexander City Metro",
+    "state": "Alabama",
+    "slug": "alexander-city-metro-alabama"
+  },
+  "alexandria-metro-louisiana": {
+    "city": "Alexandria Metro",
+    "state": "Louisiana",
+    "slug": "alexandria-metro-louisiana"
+  },
+  "alexandria-metro-virginia": {
+    "city": "Alexandria Metro",
+    "state": "Virginia",
+    "slug": "alexandria-metro-virginia"
+  },
+  "alexandria-minnesota": {
+    "city": "Alexandria",
+    "state": "Minnesota",
+    "slug": "alexandria-minnesota"
+  },
+  "algonquin-metro-illinois": {
+    "city": "Algonquin Metro",
+    "state": "Illinois",
+    "slug": "algonquin-metro-illinois"
+  },
+  "alhambra-metro-california": {
+    "city": "Alhambra Metro",
+    "state": "California",
+    "slug": "alhambra-metro-california"
+  },
+  "aliso-viejo-metro-california": {
+    "city": "Aliso Viejo Metro",
+    "state": "California",
+    "slug": "aliso-viejo-metro-california"
+  },
+  "allegan-michigan": {
+    "city": "Allegan",
+    "state": "Michigan",
+    "slug": "allegan-michigan"
+  },
+  "allen-metro-texas": {
+    "city": "Allen Metro",
+    "state": "Texas",
+    "slug": "allen-metro-texas"
+  },
+  "allentown-metro-pennsylvania": {
+    "city": "Allentown Metro",
+    "state": "Pennsylvania",
+    "slug": "allentown-metro-pennsylvania"
+  },
+  "alliance-metro-ohio": {
+    "city": "Alliance Metro",
+    "state": "Ohio",
+    "slug": "alliance-metro-ohio"
+  },
+  "alliance-nebraska": {
+    "city": "Alliance",
+    "state": "Nebraska",
+    "slug": "alliance-nebraska"
+  },
+  "alpena-michigan": {
+    "city": "Alpena",
+    "state": "Michigan",
+    "slug": "alpena-michigan"
+  },
+  "alpharetta-metro-georgia": {
+    "city": "Alpharetta Metro",
+    "state": "Georgia",
+    "slug": "alpharetta-metro-georgia"
+  },
+  "altadena-metro-california": {
+    "city": "Altadena Metro",
+    "state": "California",
+    "slug": "altadena-metro-california"
+  },
+  "altamonte-springs-metro-florida": {
+    "city": "Altamonte Springs Metro",
+    "state": "Florida",
+    "slug": "altamonte-springs-metro-florida"
+  },
+  "altoona-metro-pennsylvania": {
+    "city": "Altoona Metro",
+    "state": "Pennsylvania",
+    "slug": "altoona-metro-pennsylvania"
+  },
+  "altus-oklahoma": {
+    "city": "Altus",
+    "state": "Oklahoma",
+    "slug": "altus-oklahoma"
+  },
+  "alvin-texas": {
+    "city": "Alvin",
+    "state": "Texas",
+    "slug": "alvin-texas"
+  },
+  "amarillo-metro-texas": {
+    "city": "Amarillo Metro",
+    "state": "Texas",
+    "slug": "amarillo-metro-texas"
+  },
+  "american-fork-utah": {
+    "city": "American Fork",
+    "state": "Utah",
+    "slug": "american-fork-utah"
+  },
+  "americus-metro-georgia": {
+    "city": "Americus Metro",
+    "state": "Georgia",
+    "slug": "americus-metro-georgia"
+  },
+  "ames-metro-iowa": {
+    "city": "Ames Metro",
+    "state": "Iowa",
+    "slug": "ames-metro-iowa"
+  },
+  "amesbury-massachusetts": {
+    "city": "Amesbury",
+    "state": "Massachusetts",
+    "slug": "amesbury-massachusetts"
+  },
+  "amherst-massachusetts": {
+    "city": "Amherst",
+    "state": "Massachusetts",
+    "slug": "amherst-massachusetts"
+  },
+  "amherst-metro-new-york": {
+    "city": "Amherst Metro",
+    "state": "New York",
+    "slug": "amherst-metro-new-york"
+  },
+  "anaconda-montana": {
+    "city": "Anaconda",
+    "state": "Montana",
+    "slug": "anaconda-montana"
+  },
+  "anacortes-metro-washington": {
+    "city": "Anacortes Metro",
+    "state": "Washington",
+    "slug": "anacortes-metro-washington"
+  },
+  "anaheim-metro-california": {
+    "city": "Anaheim Metro",
+    "state": "California",
+    "slug": "anaheim-metro-california"
+  },
+  "anchorage-metro-alaska": {
+    "city": "Anchorage Metro",
+    "state": "Alaska",
+    "slug": "anchorage-metro-alaska"
+  },
+  "andalusia-metro-alabama": {
+    "city": "Andalusia Metro",
+    "state": "Alabama",
+    "slug": "andalusia-metro-alabama"
+  },
+  "anderson-metro-indiana": {
+    "city": "Anderson Metro",
+    "state": "Indiana",
+    "slug": "anderson-metro-indiana"
+  },
+  "anderson-metro-south-carolina": {
+    "city": "Anderson Metro",
+    "state": "South Carolina",
+    "slug": "anderson-metro-south-carolina"
+  },
+  "andover-massachusetts": {
+    "city": "Andover",
+    "state": "Massachusetts",
+    "slug": "andover-massachusetts"
+  },
+  "andover-minnesota": {
+    "city": "Andover",
+    "state": "Minnesota",
+    "slug": "andover-minnesota"
+  },
+  "angleton-texas": {
+    "city": "Angleton",
+    "state": "Texas",
+    "slug": "angleton-texas"
+  },
+  "angola-metro-indiana": {
+    "city": "Angola Metro",
+    "state": "Indiana",
+    "slug": "angola-metro-indiana"
+  },
+  "ankeny-metro-iowa": {
+    "city": "Ankeny Metro",
+    "state": "Iowa",
+    "slug": "ankeny-metro-iowa"
+  },
+  "ann-arbor-metro-michigan": {
+    "city": "Ann Arbor Metro",
+    "state": "Michigan",
+    "slug": "ann-arbor-metro-michigan"
+  },
+  "annapolis-metro-maryland": {
+    "city": "Annapolis Metro",
+    "state": "Maryland",
+    "slug": "annapolis-metro-maryland"
+  },
+  "anniston-metro-alabama": {
+    "city": "Anniston Metro",
+    "state": "Alabama",
+    "slug": "anniston-metro-alabama"
+  },
+  "anoka-minnesota": {
+    "city": "Anoka",
+    "state": "Minnesota",
+    "slug": "anoka-minnesota"
+  },
+  "ansonia-metro-connecticut": {
+    "city": "Ansonia Metro",
+    "state": "Connecticut",
+    "slug": "ansonia-metro-connecticut"
+  },
+  "antioch-metro-california": {
+    "city": "Antioch Metro",
+    "state": "California",
+    "slug": "antioch-metro-california"
+  },
+  "apache-junction-metro-arizona": {
+    "city": "Apache Junction Metro",
+    "state": "Arizona",
+    "slug": "apache-junction-metro-arizona"
+  },
+  "apalachicola-metro-florida": {
+    "city": "Apalachicola Metro",
+    "state": "Florida",
+    "slug": "apalachicola-metro-florida"
+  },
+  "apopka-metro-florida": {
+    "city": "Apopka Metro",
+    "state": "Florida",
+    "slug": "apopka-metro-florida"
+  },
+  "apple-valley-metro-california": {
+    "city": "Apple Valley Metro",
+    "state": "California",
+    "slug": "apple-valley-metro-california"
+  },
+  "apple-valley-minnesota": {
+    "city": "Apple Valley",
+    "state": "Minnesota",
+    "slug": "apple-valley-minnesota"
+  },
+  "appleton-metro-wisconsin": {
+    "city": "Appleton Metro",
+    "state": "Wisconsin",
+    "slug": "appleton-metro-wisconsin"
+  },
+  "arab-metro-alabama": {
+    "city": "Arab Metro",
+    "state": "Alabama",
+    "slug": "arab-metro-alabama"
+  },
+  "aransas-pass-texas": {
+    "city": "Aransas Pass",
+    "state": "Texas",
+    "slug": "aransas-pass-texas"
+  },
+  "arcadia-metro-california": {
+    "city": "Arcadia Metro",
+    "state": "California",
+    "slug": "arcadia-metro-california"
+  },
+  "arcadia-metro-florida": {
+    "city": "Arcadia Metro",
+    "state": "Florida",
+    "slug": "arcadia-metro-florida"
+  },
+  "ardmore-oklahoma": {
+    "city": "Ardmore",
+    "state": "Oklahoma",
+    "slug": "ardmore-oklahoma"
+  },
+  "arkansas-city-metro-kansas": {
+    "city": "Arkansas City Metro",
+    "state": "Kansas",
+    "slug": "arkansas-city-metro-kansas"
+  },
+  "arlington-heights-metro-illinois": {
+    "city": "Arlington Heights Metro",
+    "state": "Illinois",
+    "slug": "arlington-heights-metro-illinois"
+  },
+  "arlington-massachusetts": {
+    "city": "Arlington",
+    "state": "Massachusetts",
+    "slug": "arlington-massachusetts"
+  },
+  "arlington-metro-texas": {
+    "city": "Arlington Metro",
+    "state": "Texas",
+    "slug": "arlington-metro-texas"
+  },
+  "arlington-metro-virginia": {
+    "city": "Arlington Metro",
+    "state": "Virginia",
+    "slug": "arlington-metro-virginia"
+  },
+  "arnold-missouri": {
+    "city": "Arnold",
+    "state": "Missouri",
+    "slug": "arnold-missouri"
+  },
+  "arroyo-grande-metro-california": {
+    "city": "Arroyo Grande Metro",
+    "state": "California",
+    "slug": "arroyo-grande-metro-california"
+  },
+  "artesia-metro-california": {
+    "city": "Artesia Metro",
+    "state": "California",
+    "slug": "artesia-metro-california"
+  },
+  "artesia-new-mexico": {
+    "city": "Artesia",
+    "state": "New Mexico",
+    "slug": "artesia-new-mexico"
+  },
+  "arvada-metro-colorado": {
+    "city": "Arvada Metro",
+    "state": "Colorado",
+    "slug": "arvada-metro-colorado"
+  },
+  "arvin-metro-california": {
+    "city": "Arvin Metro",
+    "state": "California",
+    "slug": "arvin-metro-california"
+  },
+  "asbury-park-new-jersey": {
+    "city": "Asbury Park",
+    "state": "New Jersey",
+    "slug": "asbury-park-new-jersey"
+  },
+  "asheboro-north-carolina": {
+    "city": "Asheboro",
+    "state": "North Carolina",
+    "slug": "asheboro-north-carolina"
+  },
+  "asheville-metro-north-carolina": {
+    "city": "Asheville Metro",
+    "state": "North Carolina",
+    "slug": "asheville-metro-north-carolina"
+  },
+  "ashland-metro-kentucky": {
+    "city": "Ashland Metro",
+    "state": "Kentucky",
+    "slug": "ashland-metro-kentucky"
+  },
+  "ashland-metro-oregon": {
+    "city": "Ashland Metro",
+    "state": "Oregon",
+    "slug": "ashland-metro-oregon"
+  },
+  "ashland-wisconsin": {
+    "city": "Ashland",
+    "state": "Wisconsin",
+    "slug": "ashland-wisconsin"
+  },
+  "ashtabula-metro-ohio": {
+    "city": "Ashtabula Metro",
+    "state": "Ohio",
+    "slug": "ashtabula-metro-ohio"
+  },
+  "aspen-metro-colorado": {
+    "city": "Aspen Metro",
+    "state": "Colorado",
+    "slug": "aspen-metro-colorado"
+  },
+  "astoria-oregon": {
+    "city": "Astoria",
+    "state": "Oregon",
+    "slug": "astoria-oregon"
+  },
+  "atascadero-metro-california": {
+    "city": "Atascadero Metro",
+    "state": "California",
+    "slug": "atascadero-metro-california"
+  },
+  "atchison-metro-kansas": {
+    "city": "Atchison Metro",
+    "state": "Kansas",
+    "slug": "atchison-metro-kansas"
+  },
+  "athens-metro-alabama": {
+    "city": "Athens Metro",
+    "state": "Alabama",
+    "slug": "athens-metro-alabama"
+  },
+  "athens-metro-georgia": {
+    "city": "Athens Metro",
+    "state": "Georgia",
+    "slug": "athens-metro-georgia"
+  },
+  "athens-metro-ohio": {
+    "city": "Athens Metro",
+    "state": "Ohio",
+    "slug": "athens-metro-ohio"
+  },
+  "athens-tennessee": {
+    "city": "Athens",
+    "state": "Tennessee",
+    "slug": "athens-tennessee"
+  },
+  "athens-texas": {
+    "city": "Athens",
+    "state": "Texas",
+    "slug": "athens-texas"
+  },
+  "atherton-metro-california": {
+    "city": "Atherton Metro",
+    "state": "California",
+    "slug": "atherton-metro-california"
+  },
+  "atlanta-metro-georgia": {
+    "city": "Atlanta Metro",
+    "state": "Georgia",
+    "slug": "atlanta-metro-georgia"
+  },
+  "atlantic-beach-metro-florida": {
+    "city": "Atlantic Beach Metro",
+    "state": "Florida",
+    "slug": "atlantic-beach-metro-florida"
+  },
+  "atlantic-city-new-jersey": {
+    "city": "Atlantic City",
+    "state": "New Jersey",
+    "slug": "atlantic-city-new-jersey"
+  },
+  "atmore-metro-alabama": {
+    "city": "Atmore Metro",
+    "state": "Alabama",
+    "slug": "atmore-metro-alabama"
+  },
+  "attalla-metro-alabama": {
+    "city": "Attalla Metro",
+    "state": "Alabama",
+    "slug": "attalla-metro-alabama"
+  },
+  "attleboro-massachusetts": {
+    "city": "Attleboro",
+    "state": "Massachusetts",
+    "slug": "attleboro-massachusetts"
+  },
+  "atwater-metro-california": {
+    "city": "Atwater Metro",
+    "state": "California",
+    "slug": "atwater-metro-california"
+  },
+  "auburn-metro-alabama": {
+    "city": "Auburn Metro",
+    "state": "Alabama",
+    "slug": "auburn-metro-alabama"
+  },
+  "auburn-metro-indiana": {
+    "city": "Auburn Metro",
+    "state": "Indiana",
+    "slug": "auburn-metro-indiana"
+  },
+  "auburn-metro-maine": {
+    "city": "Auburn Metro",
+    "state": "Maine",
+    "slug": "auburn-metro-maine"
+  },
+  "auburn-metro-new-york": {
+    "city": "Auburn Metro",
+    "state": "New York",
+    "slug": "auburn-metro-new-york"
+  },
+  "auburn-metro-washington": {
+    "city": "Auburn Metro",
+    "state": "Washington",
+    "slug": "auburn-metro-washington"
+  },
+  "auburndale-metro-florida": {
+    "city": "Auburndale Metro",
+    "state": "Florida",
+    "slug": "auburndale-metro-florida"
+  },
+  "augusta-metro-georgia": {
+    "city": "Augusta Metro",
+    "state": "Georgia",
+    "slug": "augusta-metro-georgia"
+  },
+  "augusta-metro-maine": {
+    "city": "Augusta Metro",
+    "state": "Maine",
+    "slug": "augusta-metro-maine"
+  },
+  "aurora-metro-colorado": {
+    "city": "Aurora Metro",
+    "state": "Colorado",
+    "slug": "aurora-metro-colorado"
+  },
+  "aurora-metro-illinois": {
+    "city": "Aurora Metro",
+    "state": "Illinois",
+    "slug": "aurora-metro-illinois"
+  },
+  "austell-metro-georgia": {
+    "city": "Austell Metro",
+    "state": "Georgia",
+    "slug": "austell-metro-georgia"
+  },
+  "austin-metro-texas": {
+    "city": "Austin Metro",
+    "state": "Texas",
+    "slug": "austin-metro-texas"
+  },
+  "austin-minnesota": {
+    "city": "Austin",
+    "state": "Minnesota",
+    "slug": "austin-minnesota"
+  },
+  "avalon-metro-california": {
+    "city": "Avalon Metro",
+    "state": "California",
+    "slug": "avalon-metro-california"
+  },
+  "avenal-metro-california": {
+    "city": "Avenal Metro",
+    "state": "California",
+    "slug": "avenal-metro-california"
+  },
+  "aventura-metro-florida": {
+    "city": "Aventura Metro",
+    "state": "Florida",
+    "slug": "aventura-metro-florida"
+  },
+  "avon-park-metro-florida": {
+    "city": "Avon Park Metro",
+    "state": "Florida",
+    "slug": "avon-park-metro-florida"
+  },
+  "avondale-metro-arizona": {
+    "city": "Avondale Metro",
+    "state": "Arizona",
+    "slug": "avondale-metro-arizona"
+  },
+  "aztec-new-mexico": {
+    "city": "Aztec",
+    "state": "New Mexico",
+    "slug": "aztec-new-mexico"
+  },
+  "azusa-metro-california": {
+    "city": "Azusa Metro",
+    "state": "California",
+    "slug": "azusa-metro-california"
+  },
+  "bainbridge-island-washington": {
+    "city": "Bainbridge Island",
+    "state": "Washington",
+    "slug": "bainbridge-island-washington"
+  },
+  "bainbridge-metro-georgia": {
+    "city": "Bainbridge Metro",
+    "state": "Georgia",
+    "slug": "bainbridge-metro-georgia"
+  },
+  "baker-city-oregon": {
+    "city": "Baker City",
+    "state": "Oregon",
+    "slug": "baker-city-oregon"
+  },
+  "bakersfield-metro-california": {
+    "city": "Bakersfield Metro",
+    "state": "California",
+    "slug": "bakersfield-metro-california"
+  },
+  "baldwin-park-metro-california": {
+    "city": "Baldwin Park Metro",
+    "state": "California",
+    "slug": "baldwin-park-metro-california"
+  },
+  "baltimore-metro-maryland": {
+    "city": "Baltimore Metro",
+    "state": "Maryland",
+    "slug": "baltimore-metro-maryland"
+  },
+  "bangor-metro-maine": {
+    "city": "Bangor Metro",
+    "state": "Maine",
+    "slug": "bangor-metro-maine"
+  },
+  "banning-metro-california": {
+    "city": "Banning Metro",
+    "state": "California",
+    "slug": "banning-metro-california"
+  },
+  "baraboo-wisconsin": {
+    "city": "Baraboo",
+    "state": "Wisconsin",
+    "slug": "baraboo-wisconsin"
+  },
+  "barberton-metro-ohio": {
+    "city": "Barberton Metro",
+    "state": "Ohio",
+    "slug": "barberton-metro-ohio"
+  },
+  "bardstown-kentucky": {
+    "city": "Bardstown",
+    "state": "Kentucky",
+    "slug": "bardstown-kentucky"
+  },
+  "barnesville-metro-georgia": {
+    "city": "Barnesville Metro",
+    "state": "Georgia",
+    "slug": "barnesville-metro-georgia"
+  },
+  "barnstable-metro-massachusetts": {
+    "city": "Barnstable Metro",
+    "state": "Massachusetts",
+    "slug": "barnstable-metro-massachusetts"
+  },
+  "barre-metro-vermont": {
+    "city": "Barre Metro",
+    "state": "Vermont",
+    "slug": "barre-metro-vermont"
+  },
+  "barrington-metro-illinois": {
+    "city": "Barrington Metro",
+    "state": "Illinois",
+    "slug": "barrington-metro-illinois"
+  },
+  "barrington-rhode-island": {
+    "city": "Barrington",
+    "state": "Rhode Island",
+    "slug": "barrington-rhode-island"
+  },
+  "barstow-metro-california": {
+    "city": "Barstow Metro",
+    "state": "California",
+    "slug": "barstow-metro-california"
+  },
+  "bartlesville-oklahoma": {
+    "city": "Bartlesville",
+    "state": "Oklahoma",
+    "slug": "bartlesville-oklahoma"
+  },
+  "bartlett-metro-illinois": {
+    "city": "Bartlett Metro",
+    "state": "Illinois",
+    "slug": "bartlett-metro-illinois"
+  },
+  "bartlett-metro-tennessee": {
+    "city": "Bartlett Metro",
+    "state": "Tennessee",
+    "slug": "bartlett-metro-tennessee"
+  },
+  "bartow-metro-florida": {
+    "city": "Bartow Metro",
+    "state": "Florida",
+    "slug": "bartow-metro-florida"
+  },
+  "bastrop-louisiana": {
+    "city": "Bastrop",
+    "state": "Louisiana",
+    "slug": "bastrop-louisiana"
+  },
+  "batavia-metro-illinois": {
+    "city": "Batavia Metro",
+    "state": "Illinois",
+    "slug": "batavia-metro-illinois"
+  },
+  "batavia-metro-new-york": {
+    "city": "Batavia Metro",
+    "state": "New York",
+    "slug": "batavia-metro-new-york"
+  },
+  "batesville-metro-arkansas": {
+    "city": "Batesville Metro",
+    "state": "Arkansas",
+    "slug": "batesville-metro-arkansas"
+  },
+  "bath-maine": {
+    "city": "Bath",
+    "state": "Maine",
+    "slug": "bath-maine"
+  },
+  "bath-new-york": {
+    "city": "Bath",
+    "state": "New York",
+    "slug": "bath-new-york"
+  },
+  "baton-rouge-metro-louisiana": {
+    "city": "Baton Rouge Metro",
+    "state": "Louisiana",
+    "slug": "baton-rouge-metro-louisiana"
+  },
+  "battle-creek": {
+    "city": "Battle Creek",
+    "state": "Michigan",
+    "slug": "battle-creek"
+  },
+  "battle-creek-metro-michigan": {
+    "city": "Battle Creek Metro",
+    "state": "Michigan",
+    "slug": "battle-creek-metro-michigan"
+  },
+  "bay-city-metro-michigan": {
+    "city": "Bay City Metro",
+    "state": "Michigan",
+    "slug": "bay-city-metro-michigan"
+  },
+  "bay-city-texas": {
+    "city": "Bay City",
+    "state": "Texas",
+    "slug": "bay-city-texas"
+  },
+  "bay-minette-metro-alabama": {
+    "city": "Bay Minette Metro",
+    "state": "Alabama",
+    "slug": "bay-minette-metro-alabama"
+  },
+  "bayonne-metro-new-jersey": {
+    "city": "Bayonne Metro",
+    "state": "New Jersey",
+    "slug": "bayonne-metro-new-jersey"
+  },
+  "baytown-metro-texas": {
+    "city": "Baytown Metro",
+    "state": "Texas",
+    "slug": "baytown-metro-texas"
+  },
+  "beacon-new-york": {
+    "city": "Beacon",
+    "state": "New York",
+    "slug": "beacon-new-york"
+  },
+  "bear-metro-delaware": {
+    "city": "Bear Metro",
+    "state": "Delaware",
+    "slug": "bear-metro-delaware"
+  },
+  "beatrice-nebraska": {
+    "city": "Beatrice",
+    "state": "Nebraska",
+    "slug": "beatrice-nebraska"
+  },
+  "beaufort-south-carolina": {
+    "city": "Beaufort",
+    "state": "South Carolina",
+    "slug": "beaufort-south-carolina"
+  },
+  "beaumont-metro-california": {
+    "city": "Beaumont Metro",
+    "state": "California",
+    "slug": "beaumont-metro-california"
+  },
+  "beaumont-metro-texas": {
+    "city": "Beaumont Metro",
+    "state": "Texas",
+    "slug": "beaumont-metro-texas"
+  },
+  "beaver-dam-wisconsin": {
+    "city": "Beaver Dam",
+    "state": "Wisconsin",
+    "slug": "beaver-dam-wisconsin"
+  },
+  "beaver-falls-pennsylvania": {
+    "city": "Beaver Falls",
+    "state": "Pennsylvania",
+    "slug": "beaver-falls-pennsylvania"
+  },
+  "beavercreek-metro-ohio": {
+    "city": "Beavercreek Metro",
+    "state": "Ohio",
+    "slug": "beavercreek-metro-ohio"
+  },
+  "beaverton-metro-oregon": {
+    "city": "Beaverton Metro",
+    "state": "Oregon",
+    "slug": "beaverton-metro-oregon"
+  },
+  "beckley-west-virginia": {
+    "city": "Beckley",
+    "state": "West Virginia",
+    "slug": "beckley-west-virginia"
+  },
+  "bedford-metro-indiana": {
+    "city": "Bedford Metro",
+    "state": "Indiana",
+    "slug": "bedford-metro-indiana"
+  },
+  "bedford-metro-texas": {
+    "city": "Bedford Metro",
+    "state": "Texas",
+    "slug": "bedford-metro-texas"
+  },
+  "bedford-virginia": {
+    "city": "Bedford",
+    "state": "Virginia",
+    "slug": "bedford-virginia"
+  },
+  "beeville-texas": {
+    "city": "Beeville",
+    "state": "Texas",
+    "slug": "beeville-texas"
+  },
+  "bel-air-maryland": {
+    "city": "Bel Air",
+    "state": "Maryland",
+    "slug": "bel-air-maryland"
+  },
+  "belen-new-mexico": {
+    "city": "Belen",
+    "state": "New Mexico",
+    "slug": "belen-new-mexico"
+  },
+  "belfast-maine": {
+    "city": "Belfast",
+    "state": "Maine",
+    "slug": "belfast-maine"
+  },
+  "bell-gardens-metro-california": {
+    "city": "Bell Gardens Metro",
+    "state": "California",
+    "slug": "bell-gardens-metro-california"
+  },
+  "bell-metro-california": {
+    "city": "Bell Metro",
+    "state": "California",
+    "slug": "bell-metro-california"
+  },
+  "belle-glade-metro-florida": {
+    "city": "Belle Glade Metro",
+    "state": "Florida",
+    "slug": "belle-glade-metro-florida"
+  },
+  "belleair-metro-florida": {
+    "city": "Belleair Metro",
+    "state": "Florida",
+    "slug": "belleair-metro-florida"
+  },
+  "bellefontaine-metro-ohio": {
+    "city": "Bellefontaine Metro",
+    "state": "Ohio",
+    "slug": "bellefontaine-metro-ohio"
+  },
+  "belleview-metro-florida": {
+    "city": "Belleview Metro",
+    "state": "Florida",
+    "slug": "belleview-metro-florida"
+  },
+  "belleville-metro-illinois": {
+    "city": "Belleville Metro",
+    "state": "Illinois",
+    "slug": "belleville-metro-illinois"
+  },
+  "belleville-new-jersey": {
+    "city": "Belleville",
+    "state": "New Jersey",
+    "slug": "belleville-new-jersey"
+  },
+  "bellevue-metro-nebraska": {
+    "city": "Bellevue Metro",
+    "state": "Nebraska",
+    "slug": "bellevue-metro-nebraska"
+  },
+  "bellevue-metro-washington": {
+    "city": "Bellevue Metro",
+    "state": "Washington",
+    "slug": "bellevue-metro-washington"
+  },
+  "bellflower-metro-california": {
+    "city": "Bellflower Metro",
+    "state": "California",
+    "slug": "bellflower-metro-california"
+  },
+  "bellingham-metro-washington": {
+    "city": "Bellingham Metro",
+    "state": "Washington",
+    "slug": "bellingham-metro-washington"
+  },
+  "bellville-texas": {
+    "city": "Bellville",
+    "state": "Texas",
+    "slug": "bellville-texas"
+  },
+  "belmont-metro-california": {
+    "city": "Belmont Metro",
+    "state": "California",
+    "slug": "belmont-metro-california"
+  },
+  "belmont-north-carolina": {
+    "city": "Belmont",
+    "state": "North Carolina",
+    "slug": "belmont-north-carolina"
+  },
+  "beloit-wisconsin": {
+    "city": "Beloit",
+    "state": "Wisconsin",
+    "slug": "beloit-wisconsin"
+  },
+  "belvidere-metro-illinois": {
+    "city": "Belvidere Metro",
+    "state": "Illinois",
+    "slug": "belvidere-metro-illinois"
+  },
+  "bemidji-minnesota": {
+    "city": "Bemidji",
+    "state": "Minnesota",
+    "slug": "bemidji-minnesota"
+  },
+  "bend-metro-oregon": {
+    "city": "Bend Metro",
+    "state": "Oregon",
+    "slug": "bend-metro-oregon"
+  },
+  "benicia-metro-california": {
+    "city": "Benicia Metro",
+    "state": "California",
+    "slug": "benicia-metro-california"
+  },
+  "bennington-vermont": {
+    "city": "Bennington",
+    "state": "Vermont",
+    "slug": "bennington-vermont"
+  },
+  "benton-harbor-metro-michigan": {
+    "city": "Benton Harbor Metro",
+    "state": "Michigan",
+    "slug": "benton-harbor-metro-michigan"
+  },
+  "benton-metro-arkansas": {
+    "city": "Benton Metro",
+    "state": "Arkansas",
+    "slug": "benton-metro-arkansas"
+  },
+  "bentonville-metro-arkansas": {
+    "city": "Bentonville Metro",
+    "state": "Arkansas",
+    "slug": "bentonville-metro-arkansas"
+  },
+  "bergenfield-new-jersey": {
+    "city": "Bergenfield",
+    "state": "New Jersey",
+    "slug": "bergenfield-new-jersey"
+  },
+  "berkeley-metro-california": {
+    "city": "Berkeley Metro",
+    "state": "California",
+    "slug": "berkeley-metro-california"
+  },
+  "berlin-metro-connecticut": {
+    "city": "Berlin Metro",
+    "state": "Connecticut",
+    "slug": "berlin-metro-connecticut"
+  },
+  "berlin-new-hampshire": {
+    "city": "Berlin",
+    "state": "New Hampshire",
+    "slug": "berlin-new-hampshire"
+  },
+  "berwyn-metro-illinois": {
+    "city": "Berwyn Metro",
+    "state": "Illinois",
+    "slug": "berwyn-metro-illinois"
+  },
+  "bessemer-metro-alabama": {
+    "city": "Bessemer Metro",
+    "state": "Alabama",
+    "slug": "bessemer-metro-alabama"
+  },
+  "bethany-oklahoma": {
+    "city": "Bethany",
+    "state": "Oklahoma",
+    "slug": "bethany-oklahoma"
+  },
+  "bethel-metro-alaska": {
+    "city": "Bethel Metro",
+    "state": "Alaska",
+    "slug": "bethel-metro-alaska"
+  },
+  "bethesda-metro-maryland": {
+    "city": "Bethesda Metro",
+    "state": "Maryland",
+    "slug": "bethesda-metro-maryland"
+  },
+  "bethlehem-metro-pennsylvania": {
+    "city": "Bethlehem Metro",
+    "state": "Pennsylvania",
+    "slug": "bethlehem-metro-pennsylvania"
+  },
+  "bettendorf-metro-iowa": {
+    "city": "Bettendorf Metro",
+    "state": "Iowa",
+    "slug": "bettendorf-metro-iowa"
+  },
+  "beverly-hills-metro-california": {
+    "city": "Beverly Hills Metro",
+    "state": "California",
+    "slug": "beverly-hills-metro-california"
+  },
+  "beverly-massachusetts": {
+    "city": "Beverly",
+    "state": "Massachusetts",
+    "slug": "beverly-massachusetts"
+  },
+  "biddeford-metro-maine": {
+    "city": "Biddeford Metro",
+    "state": "Maine",
+    "slug": "biddeford-metro-maine"
+  },
+  "big-bear-lake-metro-california": {
+    "city": "Big Bear Lake Metro",
+    "state": "California",
+    "slug": "big-bear-lake-metro-california"
+  },
+  "big-rapids-michigan": {
+    "city": "Big Rapids",
+    "state": "Michigan",
+    "slug": "big-rapids-michigan"
+  },
+  "big-spring-texas": {
+    "city": "Big Spring",
+    "state": "Texas",
+    "slug": "big-spring-texas"
+  },
+  "billings-metro-montana": {
+    "city": "Billings Metro",
+    "state": "Montana",
+    "slug": "billings-metro-montana"
+  },
+  "biloxi-metro-mississippi": {
+    "city": "Biloxi Metro",
+    "state": "Mississippi",
+    "slug": "biloxi-metro-mississippi"
+  },
+  "binghamton-metro-new-york": {
+    "city": "Binghamton Metro",
+    "state": "New York",
+    "slug": "binghamton-metro-new-york"
+  },
+  "birmingham-metro-alabama": {
+    "city": "Birmingham Metro",
+    "state": "Alabama",
+    "slug": "birmingham-metro-alabama"
+  },
+  "birmingham-metro-michigan": {
+    "city": "Birmingham Metro",
+    "state": "Michigan",
+    "slug": "birmingham-metro-michigan"
+  },
+  "bisbee-metro-arizona": {
+    "city": "Bisbee Metro",
+    "state": "Arizona",
+    "slug": "bisbee-metro-arizona"
+  },
+  "bishop-metro-california": {
+    "city": "Bishop Metro",
+    "state": "California",
+    "slug": "bishop-metro-california"
+  },
+  "bismarck-metro-north-dakota": {
+    "city": "Bismarck Metro",
+    "state": "North Dakota",
+    "slug": "bismarck-metro-north-dakota"
+  },
+  "bixby-oklahoma": {
+    "city": "Bixby",
+    "state": "Oklahoma",
+    "slug": "bixby-oklahoma"
+  },
+  "blackfoot-metro-idaho": {
+    "city": "Blackfoot Metro",
+    "state": "Idaho",
+    "slug": "blackfoot-metro-idaho"
+  },
+  "blacksburg-virginia": {
+    "city": "Blacksburg",
+    "state": "Virginia",
+    "slug": "blacksburg-virginia"
+  },
+  "blair-nebraska": {
+    "city": "Blair",
+    "state": "Nebraska",
+    "slug": "blair-nebraska"
+  },
+  "blairsville-metro-georgia": {
+    "city": "Blairsville Metro",
+    "state": "Georgia",
+    "slug": "blairsville-metro-georgia"
+  },
+  "blakely-metro-georgia": {
+    "city": "Blakely Metro",
+    "state": "Georgia",
+    "slug": "blakely-metro-georgia"
+  },
+  "bloomfield-hills-metro-michigan": {
+    "city": "Bloomfield Hills Metro",
+    "state": "Michigan",
+    "slug": "bloomfield-hills-metro-michigan"
+  },
+  "bloomfield-metro-connecticut": {
+    "city": "Bloomfield Metro",
+    "state": "Connecticut",
+    "slug": "bloomfield-metro-connecticut"
+  },
+  "bloomfield-new-jersey": {
+    "city": "Bloomfield",
+    "state": "New Jersey",
+    "slug": "bloomfield-new-jersey"
+  },
+  "bloomington-metro-illinois": {
+    "city": "Bloomington Metro",
+    "state": "Illinois",
+    "slug": "bloomington-metro-illinois"
+  },
+  "bloomington-metro-indiana": {
+    "city": "Bloomington Metro",
+    "state": "Indiana",
+    "slug": "bloomington-metro-indiana"
+  },
+  "bloomington-metro-minnesota": {
+    "city": "Bloomington Metro",
+    "state": "Minnesota",
+    "slug": "bloomington-metro-minnesota"
+  },
+  "bloomsburg-pennsylvania": {
+    "city": "Bloomsburg",
+    "state": "Pennsylvania",
+    "slug": "bloomsburg-pennsylvania"
+  },
+  "blue-springs-metro-missouri": {
+    "city": "Blue Springs Metro",
+    "state": "Missouri",
+    "slug": "blue-springs-metro-missouri"
+  },
+  "bluefield-west-virginia": {
+    "city": "Bluefield",
+    "state": "West Virginia",
+    "slug": "bluefield-west-virginia"
+  },
+  "bluffton-metro-indiana": {
+    "city": "Bluffton Metro",
+    "state": "Indiana",
+    "slug": "bluffton-metro-indiana"
+  },
+  "blythe-metro-california": {
+    "city": "Blythe Metro",
+    "state": "California",
+    "slug": "blythe-metro-california"
+  },
+  "blytheville-metro-arkansas": {
+    "city": "Blytheville Metro",
+    "state": "Arkansas",
+    "slug": "blytheville-metro-arkansas"
+  },
+  "boaz-metro-alabama": {
+    "city": "Boaz Metro",
+    "state": "Alabama",
+    "slug": "boaz-metro-alabama"
+  },
+  "boca-raton-metro-florida": {
+    "city": "Boca Raton Metro",
+    "state": "Florida",
+    "slug": "boca-raton-metro-florida"
+  },
+  "boerne-texas": {
+    "city": "Boerne",
+    "state": "Texas",
+    "slug": "boerne-texas"
+  },
+  "bogalusa-louisiana": {
+    "city": "Bogalusa",
+    "state": "Louisiana",
+    "slug": "bogalusa-louisiana"
+  },
+  "boise-metro-idaho": {
+    "city": "Boise Metro",
+    "state": "Idaho",
+    "slug": "boise-metro-idaho"
+  },
+  "bolingbrook-metro-illinois": {
+    "city": "Bolingbrook Metro",
+    "state": "Illinois",
+    "slug": "bolingbrook-metro-illinois"
+  },
+  "bonita-springs-metro-florida": {
+    "city": "Bonita Springs Metro",
+    "state": "Florida",
+    "slug": "bonita-springs-metro-florida"
+  },
+  "boone-north-carolina": {
+    "city": "Boone",
+    "state": "North Carolina",
+    "slug": "boone-north-carolina"
+  },
+  "booneville-mississippi": {
+    "city": "Booneville",
+    "state": "Mississippi",
+    "slug": "booneville-mississippi"
+  },
+  "borger-texas": {
+    "city": "Borger",
+    "state": "Texas",
+    "slug": "borger-texas"
+  },
+  "bossier-city-metro-louisiana": {
+    "city": "Bossier City Metro",
+    "state": "Louisiana",
+    "slug": "bossier-city-metro-louisiana"
+  },
+  "boston-metro-massachusetts": {
+    "city": "Boston Metro",
+    "state": "Massachusetts",
+    "slug": "boston-metro-massachusetts"
+  },
+  "bothell-metro-washington": {
+    "city": "Bothell Metro",
+    "state": "Washington",
+    "slug": "bothell-metro-washington"
+  },
+  "boulder-city-metro-nevada": {
+    "city": "Boulder City Metro",
+    "state": "Nevada",
+    "slug": "boulder-city-metro-nevada"
+  },
+  "boulder-metro-colorado": {
+    "city": "Boulder Metro",
+    "state": "Colorado",
+    "slug": "boulder-metro-colorado"
+  },
+  "bountiful-utah": {
+    "city": "Bountiful",
+    "state": "Utah",
+    "slug": "bountiful-utah"
+  },
+  "bowie-metro-maryland": {
+    "city": "Bowie Metro",
+    "state": "Maryland",
+    "slug": "bowie-metro-maryland"
+  },
+  "bowling-green-metro-kentucky": {
+    "city": "Bowling Green Metro",
+    "state": "Kentucky",
+    "slug": "bowling-green-metro-kentucky"
+  },
+  "bowling-green-metro-ohio": {
+    "city": "Bowling Green Metro",
+    "state": "Ohio",
+    "slug": "bowling-green-metro-ohio"
+  },
+  "boynton-beach-metro-florida": {
+    "city": "Boynton Beach Metro",
+    "state": "Florida",
+    "slug": "boynton-beach-metro-florida"
+  },
+  "bozeman-metro-montana": {
+    "city": "Bozeman Metro",
+    "state": "Montana",
+    "slug": "bozeman-metro-montana"
+  },
+  "bradenton-metro-florida": {
+    "city": "Bradenton Metro",
+    "state": "Florida",
+    "slug": "bradenton-metro-florida"
+  },
+  "bradford-pennsylvania": {
+    "city": "Bradford",
+    "state": "Pennsylvania",
+    "slug": "bradford-pennsylvania"
+  },
+  "brainerd-minnesota": {
+    "city": "Brainerd",
+    "state": "Minnesota",
+    "slug": "brainerd-minnesota"
+  },
+  "braintree-massachusetts": {
+    "city": "Braintree",
+    "state": "Massachusetts",
+    "slug": "braintree-massachusetts"
+  },
+  "branford-metro-connecticut": {
+    "city": "Branford Metro",
+    "state": "Connecticut",
+    "slug": "branford-metro-connecticut"
+  },
+  "branson-missouri": {
+    "city": "Branson",
+    "state": "Missouri",
+    "slug": "branson-missouri"
+  },
+  "brattleboro-vermont": {
+    "city": "Brattleboro",
+    "state": "Vermont",
+    "slug": "brattleboro-vermont"
+  },
+  "brawley-metro-california": {
+    "city": "Brawley Metro",
+    "state": "California",
+    "slug": "brawley-metro-california"
+  },
+  "brazil-metro-indiana": {
+    "city": "Brazil Metro",
+    "state": "Indiana",
+    "slug": "brazil-metro-indiana"
+  },
+  "brea-metro-california": {
+    "city": "Brea Metro",
+    "state": "California",
+    "slug": "brea-metro-california"
+  },
+  "bremerton-metro-washington": {
+    "city": "Bremerton Metro",
+    "state": "Washington",
+    "slug": "bremerton-metro-washington"
+  },
+  "brenham-texas": {
+    "city": "Brenham",
+    "state": "Texas",
+    "slug": "brenham-texas"
+  },
+  "brentwood-metro-california": {
+    "city": "Brentwood Metro",
+    "state": "California",
+    "slug": "brentwood-metro-california"
+  },
+  "brentwood-metro-tennessee": {
+    "city": "Brentwood Metro",
+    "state": "Tennessee",
+    "slug": "brentwood-metro-tennessee"
+  },
+  "brewer-maine": {
+    "city": "Brewer",
+    "state": "Maine",
+    "slug": "brewer-maine"
+  },
+  "brewton-metro-alabama": {
+    "city": "Brewton Metro",
+    "state": "Alabama",
+    "slug": "brewton-metro-alabama"
+  },
+  "bridgeport-metro-connecticut": {
+    "city": "Bridgeport Metro",
+    "state": "Connecticut",
+    "slug": "bridgeport-metro-connecticut"
+  },
+  "bridgeport-west-virginia": {
+    "city": "Bridgeport",
+    "state": "West Virginia",
+    "slug": "bridgeport-west-virginia"
+  },
+  "bridgeton-new-jersey": {
+    "city": "Bridgeton",
+    "state": "New Jersey",
+    "slug": "bridgeton-new-jersey"
+  },
+  "brigham-city-utah": {
+    "city": "Brigham City",
+    "state": "Utah",
+    "slug": "brigham-city-utah"
+  },
+  "brighton-metro-colorado": {
+    "city": "Brighton Metro",
+    "state": "Colorado",
+    "slug": "brighton-metro-colorado"
+  },
+  "bristol-rhode-island": {
+    "city": "Bristol",
+    "state": "Rhode Island",
+    "slug": "bristol-rhode-island"
+  },
+  "bristol-tennessee": {
+    "city": "Bristol",
+    "state": "Tennessee",
+    "slug": "bristol-tennessee"
+  },
+  "bristol-virginia": {
+    "city": "Bristol",
+    "state": "Virginia",
+    "slug": "bristol-virginia"
+  },
+  "brookfield-wisconsin": {
+    "city": "Brookfield",
+    "state": "Wisconsin",
+    "slug": "brookfield-wisconsin"
+  },
+  "brookhaven-mississippi": {
+    "city": "Brookhaven",
+    "state": "Mississippi",
+    "slug": "brookhaven-mississippi"
+  },
+  "brookings-south-dakota": {
+    "city": "Brookings",
+    "state": "South Dakota",
+    "slug": "brookings-south-dakota"
+  },
+  "brooklyn-center-minnesota": {
+    "city": "Brooklyn Center",
+    "state": "Minnesota",
+    "slug": "brooklyn-center-minnesota"
+  },
+  "brownsville-tennessee": {
+    "city": "Brownsville",
+    "state": "Tennessee",
+    "slug": "brownsville-tennessee"
+  },
+  "brownwood-texas": {
+    "city": "Brownwood",
+    "state": "Texas",
+    "slug": "brownwood-texas"
+  },
+  "brunswick-maine": {
+    "city": "Brunswick",
+    "state": "Maine",
+    "slug": "brunswick-maine"
+  },
+  "buckhannon-west-virginia": {
+    "city": "Buckhannon",
+    "state": "West Virginia",
+    "slug": "buckhannon-west-virginia"
+  },
+  "buffalo-wyoming": {
+    "city": "Buffalo",
+    "state": "Wyoming",
+    "slug": "buffalo-wyoming"
+  },
+  "burkburnett-texas": {
+    "city": "Burkburnett",
+    "state": "Texas",
+    "slug": "burkburnett-texas"
+  },
+  "cadillac-michigan": {
+    "city": "Cadillac",
+    "state": "Michigan",
+    "slug": "cadillac-michigan"
+  },
+  "calais-maine": {
+    "city": "Calais",
+    "state": "Maine",
+    "slug": "calais-maine"
+  },
+  "cambridge-maryland": {
+    "city": "Cambridge",
+    "state": "Maryland",
+    "slug": "cambridge-maryland"
+  },
+  "camden-south-carolina": {
+    "city": "Camden",
+    "state": "South Carolina",
+    "slug": "camden-south-carolina"
+  },
+  "campbellsville-kentucky": {
+    "city": "Campbellsville",
+    "state": "Kentucky",
+    "slug": "campbellsville-kentucky"
+  },
+  "canby-oregon": {
+    "city": "Canby",
+    "state": "Oregon",
+    "slug": "canby-oregon"
+  },
+  "canyon-texas": {
+    "city": "Canyon",
+    "state": "Texas",
+    "slug": "canyon-texas"
+  },
+  "carbondale-pennsylvania": {
+    "city": "Carbondale",
+    "state": "Pennsylvania",
+    "slug": "carbondale-pennsylvania"
+  },
+  "caribou-maine": {
+    "city": "Caribou",
+    "state": "Maine",
+    "slug": "caribou-maine"
+  },
+  "carlisle-pennsylvania": {
+    "city": "Carlisle",
+    "state": "Pennsylvania",
+    "slug": "carlisle-pennsylvania"
+  },
+  "carrboro-north-carolina": {
+    "city": "Carrboro",
+    "state": "North Carolina",
+    "slug": "carrboro-north-carolina"
+  },
+  "carrollton-missouri": {
+    "city": "Carrollton",
+    "state": "Missouri",
+    "slug": "carrollton-missouri"
+  },
+  "carteret-new-jersey": {
+    "city": "Carteret",
+    "state": "New Jersey",
+    "slug": "carteret-new-jersey"
+  },
+  "carthage-texas": {
+    "city": "Carthage",
+    "state": "Texas",
+    "slug": "carthage-texas"
+  },
+  "catonsville-maryland": {
+    "city": "Catonsville",
+    "state": "Maryland",
+    "slug": "catonsville-maryland"
+  },
+  "catskill-new-york": {
+    "city": "Catskill",
+    "state": "New York",
+    "slug": "catskill-new-york"
+  },
+  "cayce-south-carolina": {
+    "city": "Cayce",
+    "state": "South Carolina",
+    "slug": "cayce-south-carolina"
+  },
+  "cedar-city-utah": {
+    "city": "Cedar City",
+    "state": "Utah",
+    "slug": "cedar-city-utah"
+  },
+  "cedarburg-wisconsin": {
+    "city": "Cedarburg",
+    "state": "Wisconsin",
+    "slug": "cedarburg-wisconsin"
+  },
+  "celina-ohio": {
+    "city": "Celina",
+    "state": "Ohio",
+    "slug": "celina-ohio"
+  },
+  "chalmette-louisiana": {
+    "city": "Chalmette",
+    "state": "Louisiana",
+    "slug": "chalmette-louisiana"
+  },
+  "charles-town-west-virginia": {
+    "city": "Charles Town",
+    "state": "West Virginia",
+    "slug": "charles-town-west-virginia"
+  },
+  "chaska-minnesota": {
+    "city": "Chaska",
+    "state": "Minnesota",
+    "slug": "chaska-minnesota"
+  },
+  "cheboygan-michigan": {
+    "city": "Cheboygan",
+    "state": "Michigan",
+    "slug": "cheboygan-michigan"
+  },
+  "cheraw-south-carolina": {
+    "city": "Cheraw",
+    "state": "South Carolina",
+    "slug": "cheraw-south-carolina"
+  },
+  "chickasha-oklahoma": {
+    "city": "Chickasha",
+    "state": "Oklahoma",
+    "slug": "chickasha-oklahoma"
+  },
+  "chillicothe-missouri": {
+    "city": "Chillicothe",
+    "state": "Missouri",
+    "slug": "chillicothe-missouri"
+  },
+  "chippewa-falls-wisconsin": {
+    "city": "Chippewa Falls",
+    "state": "Wisconsin",
+    "slug": "chippewa-falls-wisconsin"
+  },
+  "christiansburg-virginia": {
+    "city": "Christiansburg",
+    "state": "Virginia",
+    "slug": "christiansburg-virginia"
+  },
+  "claremont-new-hampshire": {
+    "city": "Claremont",
+    "state": "New Hampshire",
+    "slug": "claremont-new-hampshire"
+  },
+  "claremore-oklahoma": {
+    "city": "Claremore",
+    "state": "Oklahoma",
+    "slug": "claremore-oklahoma"
+  },
+  "clarksburg-west-virginia": {
+    "city": "Clarksburg",
+    "state": "West Virginia",
+    "slug": "clarksburg-west-virginia"
+  },
+  "clarksdale-mississippi": {
+    "city": "Clarksdale",
+    "state": "Mississippi",
+    "slug": "clarksdale-mississippi"
+  },
+  "clayton-missouri": {
+    "city": "Clayton",
+    "state": "Missouri",
+    "slug": "clayton-missouri"
+  },
+  "clearfield-utah": {
+    "city": "Clearfield",
+    "state": "Utah",
+    "slug": "clearfield-utah"
+  },
+  "clemson-south-carolina": {
+    "city": "Clemson",
+    "state": "South Carolina",
+    "slug": "clemson-south-carolina"
+  },
+  "cleveland-heights-ohio": {
+    "city": "Cleveland Heights",
+    "state": "Ohio",
+    "slug": "cleveland-heights-ohio"
+  },
+  "cleveland-mississippi": {
+    "city": "Cleveland",
+    "state": "Mississippi",
+    "slug": "cleveland-mississippi"
+  },
+  "cleveland-tennessee": {
+    "city": "Cleveland",
+    "state": "Tennessee",
+    "slug": "cleveland-tennessee"
+  },
+  "cody-wyoming": {
+    "city": "Cody",
+    "state": "Wyoming",
+    "slug": "cody-wyoming"
+  },
+  "coldwater-michigan": {
+    "city": "Coldwater",
+    "state": "Michigan",
+    "slug": "coldwater-michigan"
+  },
+  "collierville": {
+    "city": "Collierville",
+    "state": "Tennessee",
+    "slug": "collierville"
+  },
+  "colonial-heights-virginia": {
+    "city": "Colonial Heights",
+    "state": "Virginia",
+    "slug": "colonial-heights-virginia"
+  },
+  "columbia-heights-washington-dc": {
+    "city": "Columbia Heights",
+    "state": "Washington DC",
+    "slug": "columbia-heights-washington-dc"
+  },
+  "columbia-tennessee": {
+    "city": "Columbia",
+    "state": "Tennessee",
+    "slug": "columbia-tennessee"
+  },
+  "columbus-nebraska": {
+    "city": "Columbus",
+    "state": "Nebraska",
+    "slug": "columbus-nebraska"
+  },
+  "colville-washington": {
+    "city": "Colville",
+    "state": "Washington",
+    "slug": "colville-washington"
+  },
+  "concord-massachusetts": {
+    "city": "Concord",
+    "state": "Massachusetts",
+    "slug": "concord-massachusetts"
+  },
+  "conway-new-hampshire": {
+    "city": "Conway",
+    "state": "New Hampshire",
+    "slug": "conway-new-hampshire"
+  },
+  "cookeville-tennessee": {
+    "city": "Cookeville",
+    "state": "Tennessee",
+    "slug": "cookeville-tennessee"
+  },
+  "coos-bay-oregon": {
+    "city": "Coos Bay",
+    "state": "Oregon",
+    "slug": "coos-bay-oregon"
+  },
+  "corbin-kentucky": {
+    "city": "Corbin",
+    "state": "Kentucky",
+    "slug": "corbin-kentucky"
+  },
+  "corinth-mississippi": {
+    "city": "Corinth",
+    "state": "Mississippi",
+    "slug": "corinth-mississippi"
+  },
+  "cornelius-north-carolina": {
+    "city": "Cornelius",
+    "state": "North Carolina",
+    "slug": "cornelius-north-carolina"
+  },
+  "corning-new-york": {
+    "city": "Corning",
+    "state": "New York",
+    "slug": "corning-new-york"
+  },
+  "cottage-grove-minnesota": {
+    "city": "Cottage Grove",
+    "state": "Minnesota",
+    "slug": "cottage-grove-minnesota"
+  },
+  "cottage-grove-oregon": {
+    "city": "Cottage Grove",
+    "state": "Oregon",
+    "slug": "cottage-grove-oregon"
+  },
+  "covington-louisiana": {
+    "city": "Covington",
+    "state": "Louisiana",
+    "slug": "covington-louisiana"
+  },
+  "covington-virginia": {
+    "city": "Covington",
+    "state": "Virginia",
+    "slug": "covington-virginia"
+  },
+  "cranford-new-jersey": {
+    "city": "Cranford",
+    "state": "New Jersey",
+    "slug": "cranford-new-jersey"
+  },
+  "crookston-minnesota": {
+    "city": "Crookston",
+    "state": "Minnesota",
+    "slug": "crookston-minnesota"
+  },
+  "crossville-tennessee": {
+    "city": "Crossville",
+    "state": "Tennessee",
+    "slug": "crossville-tennessee"
+  },
+  "crowley-louisiana": {
+    "city": "Crowley",
+    "state": "Louisiana",
+    "slug": "crowley-louisiana"
+  },
+  "cudahy-wisconsin": {
+    "city": "Cudahy",
+    "state": "Wisconsin",
+    "slug": "cudahy-wisconsin"
+  },
+  "cuero-texas": {
+    "city": "Cuero",
+    "state": "Texas",
+    "slug": "cuero-texas"
+  },
+  "cumberland-maryland": {
+    "city": "Cumberland",
+    "state": "Maryland",
+    "slug": "cumberland-maryland"
+  },
+  "danvers-massachusetts": {
+    "city": "Danvers",
+    "state": "Massachusetts",
+    "slug": "danvers-massachusetts"
+  },
+  "danville-kentucky": {
+    "city": "Danville",
+    "state": "Kentucky",
+    "slug": "danville-kentucky"
+  },
+  "danville-virginia": {
+    "city": "Danville",
+    "state": "Virginia",
+    "slug": "danville-virginia"
+  },
+  "darlington-south-carolina": {
+    "city": "Darlington",
+    "state": "South Carolina",
+    "slug": "darlington-south-carolina"
+  },
+  "dartmouth-massachusetts": {
+    "city": "Dartmouth",
+    "state": "Massachusetts",
+    "slug": "dartmouth-massachusetts"
+  },
+  "de-pere-wisconsin": {
+    "city": "De Pere",
+    "state": "Wisconsin",
+    "slug": "de-pere-wisconsin"
+  },
+  "dedham-massachusetts": {
+    "city": "Dedham",
+    "state": "Massachusetts",
+    "slug": "dedham-massachusetts"
+  },
+  "defiance-ohio": {
+    "city": "Defiance",
+    "state": "Ohio",
+    "slug": "defiance-ohio"
+  },
+  "del-rio-texas": {
+    "city": "Del Rio",
+    "state": "Texas",
+    "slug": "del-rio-texas"
+  },
+  "deming-new-mexico": {
+    "city": "Deming",
+    "state": "New Mexico",
+    "slug": "deming-new-mexico"
+  },
+  "denison-texas": {
+    "city": "Denison",
+    "state": "Texas",
+    "slug": "denison-texas"
+  },
+  "deridder-louisiana": {
+    "city": "DeRidder",
+    "state": "Louisiana",
+    "slug": "deridder-louisiana"
+  },
+  "devils-lake-north-dakota": {
+    "city": "Devils Lake",
+    "state": "North Dakota",
+    "slug": "devils-lake-north-dakota"
+  },
+  "dickson-tennessee": {
+    "city": "Dickson",
+    "state": "Tennessee",
+    "slug": "dickson-tennessee"
+  },
+  "dillon-montana": {
+    "city": "Dillon",
+    "state": "Montana",
+    "slug": "dillon-montana"
+  },
+  "douglas-wyoming": {
+    "city": "Douglas",
+    "state": "Wyoming",
+    "slug": "douglas-wyoming"
+  },
+  "downtown-dc-washington-dc": {
+    "city": "Downtown DC",
+    "state": "District of Columbia",
+    "slug": "downtown-dc-washington-dc"
+  },
+  "draper-utah": {
+    "city": "Draper",
+    "state": "Utah",
+    "slug": "draper-utah"
+  },
+  "dumas-texas": {
+    "city": "Dumas",
+    "state": "Texas",
+    "slug": "dumas-texas"
+  },
+  "duncan-oklahoma": {
+    "city": "Duncan",
+    "state": "Oklahoma",
+    "slug": "duncan-oklahoma"
+  },
+  "durant-oklahoma": {
+    "city": "Durant",
+    "state": "Oklahoma",
+    "slug": "durant-oklahoma"
+  },
+  "durham-new-hampshire": {
+    "city": "Durham",
+    "state": "New Hampshire",
+    "slug": "durham-new-hampshire"
+  },
+  "dyersburg-tennessee": {
+    "city": "Dyersburg",
+    "state": "Tennessee",
+    "slug": "dyersburg-tennessee"
+  },
+  "eagle-pass-texas": {
+    "city": "Eagle Pass",
+    "state": "Texas",
+    "slug": "eagle-pass-texas"
+  },
+  "east-cleveland-ohio": {
+    "city": "East Cleveland",
+    "state": "Ohio",
+    "slug": "east-cleveland-ohio"
+  },
+  "east-grand-forks-minnesota": {
+    "city": "East Grand Forks",
+    "state": "Minnesota",
+    "slug": "east-grand-forks-minnesota"
+  },
+  "east-orange": {
+    "city": "East Orange",
+    "state": "New Jersey",
+    "slug": "east-orange"
+  },
+  "easthampton-massachusetts": {
+    "city": "Easthampton",
+    "state": "Massachusetts",
+    "slug": "easthampton-massachusetts"
+  },
+  "easton-maryland": {
+    "city": "Easton",
+    "state": "Maryland",
+    "slug": "easton-maryland"
+  },
+  "el-campo-texas": {
+    "city": "El Campo",
+    "state": "Texas",
+    "slug": "el-campo-texas"
+  },
+  "el-reno-oklahoma": {
+    "city": "El Reno",
+    "state": "Oklahoma",
+    "slug": "el-reno-oklahoma"
+  },
+  "elizabeth-city-north-carolina": {
+    "city": "Elizabeth City",
+    "state": "North Carolina",
+    "slug": "elizabeth-city-north-carolina"
+  },
+  "elizabethton-tennessee": {
+    "city": "Elizabethton",
+    "state": "Tennessee",
+    "slug": "elizabethton-tennessee"
+  },
+  "elkins-west-virginia": {
+    "city": "Elkins",
+    "state": "West Virginia",
+    "slug": "elkins-west-virginia"
+  },
+  "elkton-maryland": {
+    "city": "Elkton",
+    "state": "Maryland",
+    "slug": "elkton-maryland"
+  },
+  "ellsworth-maine": {
+    "city": "Ellsworth",
+    "state": "Maine",
+    "slug": "ellsworth-maine"
+  },
+  "ely-nevada": {
+    "city": "Ely",
+    "state": "Nevada",
+    "slug": "ely-nevada"
+  },
+  "emporia-virginia": {
+    "city": "Emporia",
+    "state": "Virginia",
+    "slug": "emporia-virginia"
+  },
+  "englewood-new-jersey": {
+    "city": "Englewood",
+    "state": "New Jersey",
+    "slug": "englewood-new-jersey"
+  },
+  "ennis-texas": {
+    "city": "Ennis",
+    "state": "Texas",
+    "slug": "ennis-texas"
+  },
+  "ephraim-utah": {
+    "city": "Ephraim",
+    "state": "Utah",
+    "slug": "ephraim-utah"
+  },
+  "erlanger-kentucky": {
+    "city": "Erlanger",
+    "state": "Kentucky",
+    "slug": "erlanger-kentucky"
+  },
+  "escanaba-michigan": {
+    "city": "Escanaba",
+    "state": "Michigan",
+    "slug": "escanaba-michigan"
+  },
+  "espaola-new-mexico": {
+    "city": "Española",
+    "state": "New Mexico",
+    "slug": "espaola-new-mexico"
+  },
+  "euclid-ohio": {
+    "city": "Euclid",
+    "state": "Ohio",
+    "slug": "euclid-ohio"
+  },
+  "eunice-louisiana": {
+    "city": "Eunice",
+    "state": "Louisiana",
+    "slug": "eunice-louisiana"
+  },
+  "evanston": {
+    "city": "Evanston",
+    "state": "Illinois",
+    "slug": "evanston"
+  },
+  "everett-massachusetts": {
+    "city": "Everett",
+    "state": "Massachusetts",
+    "slug": "everett-massachusetts"
+  },
+  "ewing-new-jersey": {
+    "city": "Ewing",
+    "state": "New Jersey",
+    "slug": "ewing-new-jersey"
+  },
+  "excelsior-springs-missouri": {
+    "city": "Excelsior Springs",
+    "state": "Missouri",
+    "slug": "excelsior-springs-missouri"
+  },
+  "exeter-new-hampshire": {
+    "city": "Exeter",
+    "state": "New Hampshire",
+    "slug": "exeter-new-hampshire"
+  },
+  "fair-lawn-new-jersey": {
+    "city": "Fair Lawn",
+    "state": "New Jersey",
+    "slug": "fair-lawn-new-jersey"
+  },
+  "fairfax-virginia": {
+    "city": "Fairfax",
+    "state": "Virginia",
+    "slug": "fairfax-virginia"
+  },
+  "falls-church-virginia": {
+    "city": "Falls Church",
+    "state": "Virginia",
+    "slug": "falls-church-virginia"
+  },
+  "falmouth-massachusetts": {
+    "city": "Falmouth",
+    "state": "Massachusetts",
+    "slug": "falmouth-massachusetts"
+  },
+  "faribault-minnesota": {
+    "city": "Faribault",
+    "state": "Minnesota",
+    "slug": "faribault-minnesota"
+  },
+  "farmington-maine": {
+    "city": "Farmington",
+    "state": "Maine",
+    "slug": "farmington-maine"
+  },
+  "farmington-michigan": {
+    "city": "Farmington",
+    "state": "Michigan",
+    "slug": "farmington-michigan"
+  },
+  "farmville-virginia": {
+    "city": "Farmville",
+    "state": "Virginia",
+    "slug": "farmville-virginia"
+  },
+  "fayetteville-tennessee": {
+    "city": "Fayetteville",
+    "state": "Tennessee",
+    "slug": "fayetteville-tennessee"
+  },
+  "fenton-michigan": {
+    "city": "Fenton",
+    "state": "Michigan",
+    "slug": "fenton-michigan"
+  },
+  "fergus-falls-minnesota": {
+    "city": "Fergus Falls",
+    "state": "Minnesota",
+    "slug": "fergus-falls-minnesota"
+  },
+  "ferguson-missouri": {
+    "city": "Ferguson",
+    "state": "Missouri",
+    "slug": "ferguson-missouri"
+  },
+  "ferndale-michigan": {
+    "city": "Ferndale",
+    "state": "Michigan",
+    "slug": "ferndale-michigan"
+  },
+  "ferndale-washington": {
+    "city": "Ferndale",
+    "state": "Washington",
+    "slug": "ferndale-washington"
+  },
+  "fitchburg-massachusetts": {
+    "city": "Fitchburg",
+    "state": "Massachusetts",
+    "slug": "fitchburg-massachusetts"
+  },
+  "foggy-bottom-washington-dc": {
+    "city": "Foggy Bottom",
+    "state": "Washington DC",
+    "slug": "foggy-bottom-washington-dc"
+  },
+  "forest-city-north-carolina": {
+    "city": "Forest City",
+    "state": "North Carolina",
+    "slug": "forest-city-north-carolina"
+  },
+  "forest-grove-oregon": {
+    "city": "Forest Grove",
+    "state": "Oregon",
+    "slug": "forest-grove-oregon"
+  },
+  "fort-atkinson-wisconsin": {
+    "city": "Fort Atkinson",
+    "state": "Wisconsin",
+    "slug": "fort-atkinson-wisconsin"
+  },
+  "fort-lee-new-jersey": {
+    "city": "Fort Lee",
+    "state": "New Jersey",
+    "slug": "fort-lee-new-jersey"
+  },
+  "fort-leonard-wood-missouri": {
+    "city": "Fort Leonard Wood",
+    "state": "Missouri",
+    "slug": "fort-leonard-wood-missouri"
+  },
+  "fort-mill-south-carolina": {
+    "city": "Fort Mill",
+    "state": "South Carolina",
+    "slug": "fort-mill-south-carolina"
+  },
+  "fort-thomas-kentucky": {
+    "city": "Fort Thomas",
+    "state": "Kentucky",
+    "slug": "fort-thomas-kentucky"
+  },
+  "franklin-massachusetts": {
+    "city": "Franklin",
+    "state": "Massachusetts",
+    "slug": "franklin-massachusetts"
+  },
+  "franklin-new-hampshire": {
+    "city": "Franklin",
+    "state": "New Hampshire",
+    "slug": "franklin-new-hampshire"
+  },
+  "franklin-pennsylvania": {
+    "city": "Franklin",
+    "state": "Pennsylvania",
+    "slug": "franklin-pennsylvania"
+  },
+  "fredericksburg-texas": {
+    "city": "Fredericksburg",
+    "state": "Texas",
+    "slug": "fredericksburg-texas"
+  },
+  "fredericksburg-virginia": {
+    "city": "Fredericksburg",
+    "state": "Virginia",
+    "slug": "fredericksburg-virginia"
+  },
+  "freeport-texas": {
+    "city": "Freeport",
+    "state": "Texas",
+    "slug": "freeport-texas"
+  },
+  "fremont-ohio": {
+    "city": "Fremont",
+    "state": "Ohio",
+    "slug": "fremont-ohio"
+  },
+  "fridley-minnesota": {
+    "city": "Fridley",
+    "state": "Minnesota",
+    "slug": "fridley-minnesota"
+  },
+  "front-royal-virginia": {
+    "city": "Front Royal",
+    "state": "Virginia",
+    "slug": "front-royal-virginia"
+  },
+  "fulton-missouri": {
+    "city": "Fulton",
+    "state": "Missouri",
+    "slug": "fulton-missouri"
+  },
+  "fulton-new-york": {
+    "city": "Fulton",
+    "state": "New York",
+    "slug": "fulton-new-york"
+  },
+  "gaffney-south-carolina": {
+    "city": "Gaffney",
+    "state": "South Carolina",
+    "slug": "gaffney-south-carolina"
+  },
+  "gallatin-tennessee": {
+    "city": "Gallatin",
+    "state": "Tennessee",
+    "slug": "gallatin-tennessee"
+  },
+  "gardiner-maine": {
+    "city": "Gardiner",
+    "state": "Maine",
+    "slug": "gardiner-maine"
+  },
+  "gardner-massachusetts": {
+    "city": "Gardner",
+    "state": "Massachusetts",
+    "slug": "gardner-massachusetts"
+  },
+  "garfield-heights-ohio": {
+    "city": "Garfield Heights",
+    "state": "Ohio",
+    "slug": "garfield-heights-ohio"
+  },
+  "garfield-new-jersey": {
+    "city": "Garfield",
+    "state": "New Jersey",
+    "slug": "garfield-new-jersey"
+  },
+  "gatesville-texas": {
+    "city": "Gatesville",
+    "state": "Texas",
+    "slug": "gatesville-texas"
+  },
+  "gautier-mississippi": {
+    "city": "Gautier",
+    "state": "Mississippi",
+    "slug": "gautier-mississippi"
+  },
+  "georgetown-south-carolina": {
+    "city": "Georgetown",
+    "state": "South Carolina",
+    "slug": "georgetown-south-carolina"
+  },
+  "giddings-texas": {
+    "city": "Giddings",
+    "state": "Texas",
+    "slug": "giddings-texas"
+  },
+  "gig-harbor-washington": {
+    "city": "Gig Harbor",
+    "state": "Washington",
+    "slug": "gig-harbor-washington"
+  },
+  "gladstone-missouri": {
+    "city": "Gladstone",
+    "state": "Missouri",
+    "slug": "gladstone-missouri"
+  },
+  "glasgow-kentucky": {
+    "city": "Glasgow",
+    "state": "Kentucky",
+    "slug": "glasgow-kentucky"
+  },
+  "glasgow-montana": {
+    "city": "Glasgow",
+    "state": "Montana",
+    "slug": "glasgow-montana"
+  },
+  "glassboro-new-jersey": {
+    "city": "Glassboro",
+    "state": "New Jersey",
+    "slug": "glassboro-new-jersey"
+  },
+  "glen-burnie-maryland": {
+    "city": "Glen Burnie",
+    "state": "Maryland",
+    "slug": "glen-burnie-maryland"
+  },
+  "glen-cove-new-york": {
+    "city": "Glen Cove",
+    "state": "New York",
+    "slug": "glen-cove-new-york"
+  },
+  "glendive-montana": {
+    "city": "Glendive",
+    "state": "Montana",
+    "slug": "glendive-montana"
+  },
+  "gloucester-massachusetts": {
+    "city": "Gloucester",
+    "state": "Massachusetts",
+    "slug": "gloucester-massachusetts"
+  },
+  "gonzales-texas": {
+    "city": "Gonzales",
+    "state": "Texas",
+    "slug": "gonzales-texas"
+  },
+  "goodlettsville-tennessee": {
+    "city": "Goodlettsville",
+    "state": "Tennessee",
+    "slug": "goodlettsville-tennessee"
+  },
+  "grafton-west-virginia": {
+    "city": "Grafton",
+    "state": "West Virginia",
+    "slug": "grafton-west-virginia"
+  },
+  "graham-texas": {
+    "city": "Graham",
+    "state": "Texas",
+    "slug": "graham-texas"
+  },
+  "grand-haven-michigan": {
+    "city": "Grand Haven",
+    "state": "Michigan",
+    "slug": "grand-haven-michigan"
+  },
+  "grandview-missouri": {
+    "city": "Grandview",
+    "state": "Missouri",
+    "slug": "grandview-missouri"
+  },
+  "grants-new-mexico": {
+    "city": "Grants",
+    "state": "New Mexico",
+    "slug": "grants-new-mexico"
+  },
+  "grants-pass-oregon": {
+    "city": "Grants Pass",
+    "state": "Oregon",
+    "slug": "grants-pass-oregon"
+  },
+  "green-ohio": {
+    "city": "Green",
+    "state": "Ohio",
+    "slug": "green-ohio"
+  },
+  "green-river-wyoming": {
+    "city": "Green River",
+    "state": "Wyoming",
+    "slug": "green-river-wyoming"
+  },
+  "greenbelt-maryland": {
+    "city": "Greenbelt",
+    "state": "Maryland",
+    "slug": "greenbelt-maryland"
+  },
+  "greeneville-tennessee": {
+    "city": "Greeneville",
+    "state": "Tennessee",
+    "slug": "greeneville-tennessee"
+  },
+  "greenfield-massachusetts": {
+    "city": "Greenfield",
+    "state": "Massachusetts",
+    "slug": "greenfield-massachusetts"
+  },
+  "greenfield-wisconsin": {
+    "city": "Greenfield",
+    "state": "Wisconsin",
+    "slug": "greenfield-wisconsin"
+  },
+  "greenwood-mississippi": {
+    "city": "Greenwood",
+    "state": "Mississippi",
+    "slug": "greenwood-mississippi"
+  },
+  "greenwood-south-carolina": {
+    "city": "Greenwood",
+    "state": "South Carolina",
+    "slug": "greenwood-south-carolina"
+  },
+  "greer-south-carolina": {
+    "city": "Greer",
+    "state": "South Carolina",
+    "slug": "greer-south-carolina"
+  },
+  "guthrie-oklahoma": {
+    "city": "Guthrie",
+    "state": "Oklahoma",
+    "slug": "guthrie-oklahoma"
+  },
+  "h-street-corridor-washington-dc": {
+    "city": "H Street Corridor",
+    "state": "Washington DC",
+    "slug": "h-street-corridor-washington-dc"
+  },
+  "hamilton-montana": {
+    "city": "Hamilton",
+    "state": "Montana",
+    "slug": "hamilton-montana"
+  },
+  "hammonton-new-jersey": {
+    "city": "Hammonton",
+    "state": "New Jersey",
+    "slug": "hammonton-new-jersey"
+  },
+  "hannibal-missouri": {
+    "city": "Hannibal",
+    "state": "Missouri",
+    "slug": "hannibal-missouri"
+  },
+  "hanover-new-hampshire": {
+    "city": "Hanover",
+    "state": "New Hampshire",
+    "slug": "hanover-new-hampshire"
+  },
+  "hanover-pennsylvania": {
+    "city": "Hanover",
+    "state": "Pennsylvania",
+    "slug": "hanover-pennsylvania"
+  },
+  "harahan-louisiana": {
+    "city": "Harahan",
+    "state": "Louisiana",
+    "slug": "harahan-louisiana"
+  },
+  "harrisonburg-virginia": {
+    "city": "Harrisonburg",
+    "state": "Virginia",
+    "slug": "harrisonburg-virginia"
+  },
+  "hartsville-south-carolina": {
+    "city": "Hartsville",
+    "state": "South Carolina",
+    "slug": "hartsville-south-carolina"
+  },
+  "hastings-minnesota": {
+    "city": "Hastings",
+    "state": "Minnesota",
+    "slug": "hastings-minnesota"
+  },
+  "hays-kansas": {
+    "city": "Hays",
+    "state": "Kansas",
+    "slug": "hays-kansas"
+  },
+  "heber-city-utah": {
+    "city": "Heber City",
+    "state": "Utah",
+    "slug": "heber-city-utah"
+  },
+  "henderson-kentucky": {
+    "city": "Henderson",
+    "state": "Kentucky",
+    "slug": "henderson-kentucky"
+  },
+  "henderson-north-carolina": {
+    "city": "Henderson",
+    "state": "North Carolina",
+    "slug": "henderson-north-carolina"
+  },
+  "hendersonville-north-carolina": {
+    "city": "Hendersonville",
+    "state": "North Carolina",
+    "slug": "hendersonville-north-carolina"
+  },
+  "hendersonville-tennessee": {
+    "city": "Hendersonville",
+    "state": "Tennessee",
+    "slug": "hendersonville-tennessee"
+  },
+  "hereford-texas": {
+    "city": "Hereford",
+    "state": "Texas",
+    "slug": "hereford-texas"
+  },
+  "hermiston-oregon": {
+    "city": "Hermiston",
+    "state": "Oregon",
+    "slug": "hermiston-oregon"
+  },
+  "hermitage-pennsylvania": {
+    "city": "Hermitage",
+    "state": "Pennsylvania",
+    "slug": "hermitage-pennsylvania"
+  },
+  "hernando-mississippi": {
+    "city": "Hernando",
+    "state": "Mississippi",
+    "slug": "hernando-mississippi"
+  },
+  "herndon-virginia": {
+    "city": "Herndon",
+    "state": "Virginia",
+    "slug": "herndon-virginia"
+  },
+  "hibbing-minnesota": {
+    "city": "Hibbing",
+    "state": "Minnesota",
+    "slug": "hibbing-minnesota"
+  },
+  "holland-michigan": {
+    "city": "Holland",
+    "state": "Michigan",
+    "slug": "holland-michigan"
+  },
+  "hollis-new-hampshire": {
+    "city": "Hollis",
+    "state": "New Hampshire",
+    "slug": "hollis-new-hampshire"
+  },
+  "holly-springs-mississippi": {
+    "city": "Holly Springs",
+    "state": "Mississippi",
+    "slug": "holly-springs-mississippi"
+  },
+  "holyoke-massachusetts": {
+    "city": "Holyoke",
+    "state": "Massachusetts",
+    "slug": "holyoke-massachusetts"
+  },
+  "hondo-texas": {
+    "city": "Hondo",
+    "state": "Texas",
+    "slug": "hondo-texas"
+  },
+  "hood-river-oregon": {
+    "city": "Hood River",
+    "state": "Oregon",
+    "slug": "hood-river-oregon"
+  },
+  "hopewell-virginia": {
+    "city": "Hopewell",
+    "state": "Virginia",
+    "slug": "hopewell-virginia"
+  },
+  "hopkins-minnesota": {
+    "city": "Hopkins",
+    "state": "Minnesota",
+    "slug": "hopkins-minnesota"
+  },
+  "horn-lake-mississippi": {
+    "city": "Horn Lake",
+    "state": "Mississippi",
+    "slug": "horn-lake-mississippi"
+  },
+  "houghton-michigan": {
+    "city": "Houghton",
+    "state": "Michigan",
+    "slug": "houghton-michigan"
+  },
+  "houlton-maine": {
+    "city": "Houlton",
+    "state": "Maine",
+    "slug": "houlton-maine"
+  },
+  "hudson-new-hampshire": {
+    "city": "Hudson",
+    "state": "New Hampshire",
+    "slug": "hudson-new-hampshire"
+  },
+  "hudson-new-york": {
+    "city": "Hudson",
+    "state": "New York",
+    "slug": "hudson-new-york"
+  },
+  "hudson-ohio": {
+    "city": "Hudson",
+    "state": "Ohio",
+    "slug": "hudson-ohio"
+  },
+  "huron-south-dakota": {
+    "city": "Huron",
+    "state": "South Dakota",
+    "slug": "huron-south-dakota"
+  },
+  "hyannis-massachusetts": {
+    "city": "Hyannis",
+    "state": "Massachusetts",
+    "slug": "hyannis-massachusetts"
+  },
+  "hyattsville-maryland": {
+    "city": "Hyattsville",
+    "state": "Maryland",
+    "slug": "hyattsville-maryland"
+  },
+  "independence-kansas": {
+    "city": "Independence",
+    "state": "Kansas",
+    "slug": "independence-kansas"
+  },
+  "indiana-pennsylvania": {
+    "city": "Indiana",
+    "state": "Pennsylvania",
+    "slug": "indiana-pennsylvania"
+  },
+  "indianola-mississippi": {
+    "city": "Indianola",
+    "state": "Mississippi",
+    "slug": "indianola-mississippi"
+  },
+  "inver-grove-heights-minnesota": {
+    "city": "Inver Grove Heights",
+    "state": "Minnesota",
+    "slug": "inver-grove-heights-minnesota"
+  },
+  "irvington-new-jersey": {
+    "city": "Irvington",
+    "state": "New Jersey",
+    "slug": "irvington-new-jersey"
+  },
+  "jackson-wyoming": {
+    "city": "Jackson",
+    "state": "Wyoming",
+    "slug": "jackson-wyoming"
+  },
+  "jasper-texas": {
+    "city": "Jasper",
+    "state": "Texas",
+    "slug": "jasper-texas"
+  },
+  "jefferson-city-tennessee": {
+    "city": "Jefferson City",
+    "state": "Tennessee",
+    "slug": "jefferson-city-tennessee"
+  },
+  "jefferson-wisconsin": {
+    "city": "Jefferson",
+    "state": "Wisconsin",
+    "slug": "jefferson-wisconsin"
+  },
+  "jennings-louisiana": {
+    "city": "Jennings",
+    "state": "Louisiana",
+    "slug": "jennings-louisiana"
+  },
+  "jersey-village-texas": {
+    "city": "Jersey Village",
+    "state": "Texas",
+    "slug": "jersey-village-texas"
+  },
+  "johns-creek-georgia": {
+    "city": "Johns Creek",
+    "state": "Georgia",
+    "slug": "johns-creek-georgia"
+  },
+  "johnston-rhode-island": {
+    "city": "Johnston",
+    "state": "Rhode Island",
+    "slug": "johnston-rhode-island"
+  },
+  "johnstown-new-york": {
+    "city": "Johnstown",
+    "state": "New York",
+    "slug": "johnstown-new-york"
+  },
+  "junction-city-kansas": {
+    "city": "Junction City",
+    "state": "Kansas",
+    "slug": "junction-city-kansas"
+  },
+  "kaufman-texas": {
+    "city": "Kaufman",
+    "state": "Texas",
+    "slug": "kaufman-texas"
+  },
+  "kaysville-utah": {
+    "city": "Kaysville",
+    "state": "Utah",
+    "slug": "kaysville-utah"
+  },
+  "kent-ohio": {
+    "city": "Kent",
+    "state": "Ohio",
+    "slug": "kent-ohio"
+  },
+  "kerrville-texas": {
+    "city": "Kerrville",
+    "state": "Texas",
+    "slug": "kerrville-texas"
+  },
+  "keyser-west-virginia": {
+    "city": "Keyser",
+    "state": "West Virginia",
+    "slug": "keyser-west-virginia"
+  },
+  "kinston-north-carolina": {
+    "city": "Kinston",
+    "state": "North Carolina",
+    "slug": "kinston-north-carolina"
+  },
+  "kirksville-missouri": {
+    "city": "Kirksville",
+    "state": "Missouri",
+    "slug": "kirksville-missouri"
+  },
+  "kosciusko-mississippi": {
+    "city": "Kosciusko",
+    "state": "Mississippi",
+    "slug": "kosciusko-mississippi"
+  },
+  "la-follette-tennessee": {
+    "city": "La Follette",
+    "state": "Tennessee",
+    "slug": "la-follette-tennessee"
+  },
+  "la-grande-oregon": {
+    "city": "La Grande",
+    "state": "Oregon",
+    "slug": "la-grande-oregon"
+  },
+  "la-grange-texas": {
+    "city": "La Grange",
+    "state": "Texas",
+    "slug": "la-grange-texas"
+  },
+  "la-vista-nebraska": {
+    "city": "La Vista",
+    "state": "Nebraska",
+    "slug": "la-vista-nebraska"
+  },
+  "laconia-new-hampshire": {
+    "city": "Laconia",
+    "state": "New Hampshire",
+    "slug": "laconia-new-hampshire"
+  },
+  "lake-geneva-wisconsin": {
+    "city": "Lake Geneva",
+    "state": "Wisconsin",
+    "slug": "lake-geneva-wisconsin"
+  },
+  "lake-oswego-oregon": {
+    "city": "Lake Oswego",
+    "state": "Oregon",
+    "slug": "lake-oswego-oregon"
+  },
+  "lake-stevens-washington": {
+    "city": "Lake Stevens",
+    "state": "Washington",
+    "slug": "lake-stevens-washington"
+  },
+  "lakewood-new-jersey": {
+    "city": "Lakewood",
+    "state": "New Jersey",
+    "slug": "lakewood-new-jersey"
+  },
+  "lakewood-ohio": {
+    "city": "Lakewood",
+    "state": "Ohio",
+    "slug": "lakewood-ohio"
+  },
+  "lancaster-south-carolina": {
+    "city": "Lancaster",
+    "state": "South Carolina",
+    "slug": "lancaster-south-carolina"
+  },
+  "lander-wyoming": {
+    "city": "Lander",
+    "state": "Wyoming",
+    "slug": "lander-wyoming"
+  },
+  "las-vegas-new-mexico": {
+    "city": "Las Vegas",
+    "state": "New Mexico",
+    "slug": "las-vegas-new-mexico"
+  },
+  "laughlin-nevada": {
+    "city": "Laughlin",
+    "state": "Nevada",
+    "slug": "laughlin-nevada"
+  },
+  "laurel-mississippi": {
+    "city": "Laurel",
+    "state": "Mississippi",
+    "slug": "laurel-mississippi"
+  },
+  "laurens-south-carolina": {
+    "city": "Laurens",
+    "state": "South Carolina",
+    "slug": "laurens-south-carolina"
+  },
+  "laurinburg-north-carolina": {
+    "city": "Laurinburg",
+    "state": "North Carolina",
+    "slug": "laurinburg-north-carolina"
+  },
+  "lawrenceburg-tennessee": {
+    "city": "Lawrenceburg",
+    "state": "Tennessee",
+    "slug": "lawrenceburg-tennessee"
+  },
+  "lebanon-new-hampshire": {
+    "city": "Lebanon",
+    "state": "New Hampshire",
+    "slug": "lebanon-new-hampshire"
+  },
+  "lebanon-oregon": {
+    "city": "Lebanon",
+    "state": "Oregon",
+    "slug": "lebanon-oregon"
+  },
+  "lebanon-tennessee": {
+    "city": "Lebanon",
+    "state": "Tennessee",
+    "slug": "lebanon-tennessee"
+  },
+  "leesburg-virginia": {
+    "city": "Leesburg",
+    "state": "Virginia",
+    "slug": "leesburg-virginia"
+  },
+  "leesville-louisiana": {
+    "city": "Leesville",
+    "state": "Louisiana",
+    "slug": "leesville-louisiana"
+  },
+  "lehi-utah": {
+    "city": "Lehi",
+    "state": "Utah",
+    "slug": "lehi-utah"
+  },
+  "lenoir-north-carolina": {
+    "city": "Lenoir",
+    "state": "North Carolina",
+    "slug": "lenoir-north-carolina"
+  },
+  "leominster-massachusetts": {
+    "city": "Leominster",
+    "state": "Massachusetts",
+    "slug": "leominster-massachusetts"
+  },
+  "lewisburg-tennessee": {
+    "city": "Lewisburg",
+    "state": "Tennessee",
+    "slug": "lewisburg-tennessee"
+  },
+  "lewisburg-west-virginia": {
+    "city": "Lewisburg",
+    "state": "West Virginia",
+    "slug": "lewisburg-west-virginia"
+  },
+  "lewistown-montana": {
+    "city": "Lewistown",
+    "state": "Montana",
+    "slug": "lewistown-montana"
+  },
+  "lexington-north-carolina": {
+    "city": "Lexington",
+    "state": "North Carolina",
+    "slug": "lexington-north-carolina"
+  },
+  "lexington-south-carolina": {
+    "city": "Lexington",
+    "state": "South Carolina",
+    "slug": "lexington-south-carolina"
+  },
+  "lexington-virginia": {
+    "city": "Lexington",
+    "state": "Virginia",
+    "slug": "lexington-virginia"
+  },
+  "liberal-kansas": {
+    "city": "Liberal",
+    "state": "Kansas",
+    "slug": "liberal-kansas"
+  },
+  "liberty-missouri": {
+    "city": "Liberty",
+    "state": "Missouri",
+    "slug": "liberty-missouri"
+  },
+  "liberty-texas": {
+    "city": "Liberty",
+    "state": "Texas",
+    "slug": "liberty-texas"
+  },
+  "little-falls-new-york": {
+    "city": "Little Falls",
+    "state": "New York",
+    "slug": "little-falls-new-york"
+  },
+  "littlefield-texas": {
+    "city": "Littlefield",
+    "state": "Texas",
+    "slug": "littlefield-texas"
+  },
+  "livingston-montana": {
+    "city": "Livingston",
+    "state": "Montana",
+    "slug": "livingston-montana"
+  },
+  "livingston-texas": {
+    "city": "Livingston",
+    "state": "Texas",
+    "slug": "livingston-texas"
+  },
+  "lock-haven-pennsylvania": {
+    "city": "Lock Haven",
+    "state": "Pennsylvania",
+    "slug": "lock-haven-pennsylvania"
+  },
+  "logan-utah": {
+    "city": "Logan",
+    "state": "Utah",
+    "slug": "logan-utah"
+  },
+  "logan-west-virginia": {
+    "city": "Logan",
+    "state": "West Virginia",
+    "slug": "logan-west-virginia"
+  },
+  "london-kentucky": {
+    "city": "London",
+    "state": "Kentucky",
+    "slug": "london-kentucky"
+  },
+  "long-beach-mississippi": {
+    "city": "Long Beach",
+    "state": "Mississippi",
+    "slug": "long-beach-mississippi"
+  },
+  "long-beach-new-york": {
+    "city": "Long Beach",
+    "state": "New York",
+    "slug": "long-beach-new-york"
+  },
+  "long-branch-new-jersey": {
+    "city": "Long Branch",
+    "state": "New Jersey",
+    "slug": "long-branch-new-jersey"
+  },
+  "los-alamos-new-mexico": {
+    "city": "Los Alamos",
+    "state": "New Mexico",
+    "slug": "los-alamos-new-mexico"
+  },
+  "louisville-mississippi": {
+    "city": "Louisville",
+    "state": "Mississippi",
+    "slug": "louisville-mississippi"
+  },
+  "lynden-washington": {
+    "city": "Lynden",
+    "state": "Washington",
+    "slug": "lynden-washington"
+  },
+  "madison-new-jersey": {
+    "city": "Madison",
+    "state": "New Jersey",
+    "slug": "madison-new-jersey"
+  },
+  "manassas-virginia": {
+    "city": "Manassas",
+    "state": "Virginia",
+    "slug": "manassas-virginia"
+  },
+  "mandan-north-dakota": {
+    "city": "Mandan",
+    "state": "North Dakota",
+    "slug": "mandan-north-dakota"
+  },
+  "mandeville-louisiana": {
+    "city": "Mandeville",
+    "state": "Louisiana",
+    "slug": "mandeville-louisiana"
+  },
+  "manitowoc-wisconsin": {
+    "city": "Manitowoc",
+    "state": "Wisconsin",
+    "slug": "manitowoc-wisconsin"
+  },
+  "manning-south-carolina": {
+    "city": "Manning",
+    "state": "South Carolina",
+    "slug": "manning-south-carolina"
+  },
+  "maplewood-minnesota": {
+    "city": "Maplewood",
+    "state": "Minnesota",
+    "slug": "maplewood-minnesota"
+  },
+  "maplewood-new-jersey": {
+    "city": "Maplewood",
+    "state": "New Jersey",
+    "slug": "maplewood-new-jersey"
+  },
+  "marinette-wisconsin": {
+    "city": "Marinette",
+    "state": "Wisconsin",
+    "slug": "marinette-wisconsin"
+  },
+  "marlborough-massachusetts": {
+    "city": "Marlborough",
+    "state": "Massachusetts",
+    "slug": "marlborough-massachusetts"
+  },
+  "marshall-minnesota": {
+    "city": "Marshall",
+    "state": "Minnesota",
+    "slug": "marshall-minnesota"
+  },
+  "marshall-texas": {
+    "city": "Marshall",
+    "state": "Texas",
+    "slug": "marshall-texas"
+  },
+  "marshfield-wisconsin": {
+    "city": "Marshfield",
+    "state": "Wisconsin",
+    "slug": "marshfield-wisconsin"
+  },
+  "martinsville-virginia": {
+    "city": "Martinsville",
+    "state": "Virginia",
+    "slug": "martinsville-virginia"
+  },
+  "maryville-missouri": {
+    "city": "Maryville",
+    "state": "Missouri",
+    "slug": "maryville-missouri"
+  },
+  "maryville-tennessee": {
+    "city": "Maryville",
+    "state": "Tennessee",
+    "slug": "maryville-tennessee"
+  },
+  "mauldin-south-carolina": {
+    "city": "Mauldin",
+    "state": "South Carolina",
+    "slug": "mauldin-south-carolina"
+  },
+  "mayfield-kentucky": {
+    "city": "Mayfield",
+    "state": "Kentucky",
+    "slug": "mayfield-kentucky"
+  },
+  "mcalester-oklahoma": {
+    "city": "McAlester",
+    "state": "Oklahoma",
+    "slug": "mcalester-oklahoma"
+  },
+  "mccomb-mississippi": {
+    "city": "McComb",
+    "state": "Mississippi",
+    "slug": "mccomb-mississippi"
+  },
+  "mccook-nebraska": {
+    "city": "McCook",
+    "state": "Nebraska",
+    "slug": "mccook-nebraska"
+  },
+  "mcminnville-oregon": {
+    "city": "McMinnville",
+    "state": "Oregon",
+    "slug": "mcminnville-oregon"
+  },
+  "mcminnville-tennessee": {
+    "city": "McMinnville",
+    "state": "Tennessee",
+    "slug": "mcminnville-tennessee"
+  },
+  "meadville-pennsylvania": {
+    "city": "Meadville",
+    "state": "Pennsylvania",
+    "slug": "meadville-pennsylvania"
+  },
+  "medina-ohio": {
+    "city": "Medina",
+    "state": "Ohio",
+    "slug": "medina-ohio"
+  },
+  "melrose-massachusetts": {
+    "city": "Melrose",
+    "state": "Massachusetts",
+    "slug": "melrose-massachusetts"
+  },
+  "menasha-wisconsin": {
+    "city": "Menasha",
+    "state": "Wisconsin",
+    "slug": "menasha-wisconsin"
+  },
+  "menomonee-falls-wisconsin": {
+    "city": "Menomonee Falls",
+    "state": "Wisconsin",
+    "slug": "menomonee-falls-wisconsin"
+  },
+  "mexico-missouri": {
+    "city": "Mexico",
+    "state": "Missouri",
+    "slug": "mexico-missouri"
+  },
+  "miami-oklahoma": {
+    "city": "Miami",
+    "state": "Oklahoma",
+    "slug": "miami-oklahoma"
+  },
+  "middlebury-vermont": {
+    "city": "Middlebury",
+    "state": "Vermont",
+    "slug": "middlebury-vermont"
+  },
+  "middlesborough-kentucky": {
+    "city": "Middlesborough",
+    "state": "Kentucky",
+    "slug": "middlesborough-kentucky"
+  },
+  "middleton-wisconsin": {
+    "city": "Middleton",
+    "state": "Wisconsin",
+    "slug": "middleton-wisconsin"
+  },
+  "middletown-new-york": {
+    "city": "Middletown",
+    "state": "New York",
+    "slug": "middletown-new-york"
+  },
+  "midvale-utah": {
+    "city": "Midvale",
+    "state": "Utah",
+    "slug": "midvale-utah"
+  },
+  "miles-city-montana": {
+    "city": "Miles City",
+    "state": "Montana",
+    "slug": "miles-city-montana"
+  },
+  "milford-massachusetts": {
+    "city": "Milford",
+    "state": "Massachusetts",
+    "slug": "milford-massachusetts"
+  },
+  "millville-new-jersey": {
+    "city": "Millville",
+    "state": "New Jersey",
+    "slug": "millville-new-jersey"
+  },
+  "milton-massachusetts": {
+    "city": "Milton",
+    "state": "Massachusetts",
+    "slug": "milton-massachusetts"
+  },
+  "milwaukie-oregon": {
+    "city": "Milwaukie",
+    "state": "Oregon",
+    "slug": "milwaukie-oregon"
+  },
+  "mineral-wells-texas": {
+    "city": "Mineral Wells",
+    "state": "Texas",
+    "slug": "mineral-wells-texas"
+  },
+  "moab-utah": {
+    "city": "Moab",
+    "state": "Utah",
+    "slug": "moab-utah"
+  },
+  "moberly-missouri": {
+    "city": "Moberly",
+    "state": "Missouri",
+    "slug": "moberly-missouri"
+  },
+  "monroe-michigan": {
+    "city": "Monroe",
+    "state": "Michigan",
+    "slug": "monroe-michigan"
+  },
+  "monroe-wisconsin": {
+    "city": "Monroe",
+    "state": "Wisconsin",
+    "slug": "monroe-wisconsin"
+  },
+  "montclair-new-jersey": {
+    "city": "Montclair",
+    "state": "New Jersey",
+    "slug": "montclair-new-jersey"
+  },
+  "morehead-city-north-carolina": {
+    "city": "Morehead City",
+    "state": "North Carolina",
+    "slug": "morehead-city-north-carolina"
+  },
+  "morehead-kentucky": {
+    "city": "Morehead",
+    "state": "Kentucky",
+    "slug": "morehead-kentucky"
+  },
+  "morgan-city-louisiana": {
+    "city": "Morgan City",
+    "state": "Louisiana",
+    "slug": "morgan-city-louisiana"
+  },
+  "morganton-north-carolina": {
+    "city": "Morganton",
+    "state": "North Carolina",
+    "slug": "morganton-north-carolina"
+  },
+  "morristown-new-jersey": {
+    "city": "Morristown",
+    "state": "New Jersey",
+    "slug": "morristown-new-jersey"
+  },
+  "morristown-tennessee": {
+    "city": "Morristown",
+    "state": "Tennessee",
+    "slug": "morristown-tennessee"
+  },
+  "moses-lake-washington": {
+    "city": "Moses Lake",
+    "state": "Washington",
+    "slug": "moses-lake-washington"
+  },
+  "mounds-view-minnesota": {
+    "city": "Mounds View",
+    "state": "Minnesota",
+    "slug": "mounds-view-minnesota"
+  },
+  "moundsville-west-virginia": {
+    "city": "Moundsville",
+    "state": "West Virginia",
+    "slug": "moundsville-west-virginia"
+  },
+  "mount-airy-north-carolina": {
+    "city": "Mount Airy",
+    "state": "North Carolina",
+    "slug": "mount-airy-north-carolina"
+  },
+  "mount-juliet-tennessee": {
+    "city": "Mount Juliet",
+    "state": "Tennessee",
+    "slug": "mount-juliet-tennessee"
+  },
+  "mount-pleasant-michigan": {
+    "city": "Mount Pleasant",
+    "state": "Michigan",
+    "slug": "mount-pleasant-michigan"
+  },
+  "mount-sterling-kentucky": {
+    "city": "Mount Sterling",
+    "state": "Kentucky",
+    "slug": "mount-sterling-kentucky"
+  },
+  "mount-vernon-ohio": {
+    "city": "Mount Vernon",
+    "state": "Ohio",
+    "slug": "mount-vernon-ohio"
+  },
+  "murray-utah": {
+    "city": "Murray",
+    "state": "Utah",
+    "slug": "murray-utah"
+  },
+  "muskogee-oklahoma": {
+    "city": "Muskogee",
+    "state": "Oklahoma",
+    "slug": "muskogee-oklahoma"
+  },
+  "nantucket-massachusetts": {
+    "city": "Nantucket",
+    "state": "Massachusetts",
+    "slug": "nantucket-massachusetts"
+  },
+  "narragansett-rhode-island": {
+    "city": "Narragansett",
+    "state": "Rhode Island",
+    "slug": "narragansett-rhode-island"
+  },
+  "natchitoches-louisiana": {
+    "city": "Natchitoches",
+    "state": "Louisiana",
+    "slug": "natchitoches-louisiana"
+  },
+  "natick-massachusetts": {
+    "city": "Natick",
+    "state": "Massachusetts",
+    "slug": "natick-massachusetts"
+  },
+  "neenah-wisconsin": {
+    "city": "Neenah",
+    "state": "Wisconsin",
+    "slug": "neenah-wisconsin"
+  },
+  "nevada-missouri": {
+    "city": "Nevada",
+    "state": "Missouri",
+    "slug": "nevada-missouri"
+  },
+  "new-berlin-wisconsin": {
+    "city": "New Berlin",
+    "state": "Wisconsin",
+    "slug": "new-berlin-wisconsin"
+  },
+  "new-bern-north-carolina": {
+    "city": "New Bern",
+    "state": "North Carolina",
+    "slug": "new-bern-north-carolina"
+  },
+  "new-iberia-louisiana": {
+    "city": "New Iberia",
+    "state": "Louisiana",
+    "slug": "new-iberia-louisiana"
+  },
+  "new-martinsville-west-virginia": {
+    "city": "New Martinsville",
+    "state": "West Virginia",
+    "slug": "new-martinsville-west-virginia"
+  },
+  "new-ulm-minnesota": {
+    "city": "New Ulm",
+    "state": "Minnesota",
+    "slug": "new-ulm-minnesota"
+  },
+  "new-york-city-new-york": {
+    "city": "New York City",
+    "state": "New York",
+    "slug": "new-york-city-new-york"
+  },
+  "newberg-oregon": {
+    "city": "Newberg",
+    "state": "Oregon",
+    "slug": "newberg-oregon"
+  },
+  "newberry-south-carolina": {
+    "city": "Newberry",
+    "state": "South Carolina",
+    "slug": "newberry-south-carolina"
+  },
+  "newburyport-massachusetts": {
+    "city": "Newburyport",
+    "state": "Massachusetts",
+    "slug": "newburyport-massachusetts"
+  },
+  "newport": {
+    "city": "Newport",
+    "state": "Kentucky",
+    "slug": "newport"
+  },
+  "newport-new-hampshire": {
+    "city": "Newport",
+    "state": "New Hampshire",
+    "slug": "newport-new-hampshire"
+  },
+  "newport-oregon": {
+    "city": "Newport",
+    "state": "Oregon",
+    "slug": "newport-oregon"
+  },
+  "newport-vermont": {
+    "city": "Newport",
+    "state": "Vermont",
+    "slug": "newport-vermont"
+  },
+  "newton-north-carolina": {
+    "city": "Newton",
+    "state": "North Carolina",
+    "slug": "newton-north-carolina"
+  },
+  "nicholasville-kentucky": {
+    "city": "Nicholasville",
+    "state": "Kentucky",
+    "slug": "nicholasville-kentucky"
+  },
+  "niles-michigan": {
+    "city": "Niles",
+    "state": "Michigan",
+    "slug": "niles-michigan"
+  },
+  "nitro-west-virginia": {
+    "city": "Nitro",
+    "state": "West Virginia",
+    "slug": "nitro-west-virginia"
+  },
+  "north-adams-massachusetts": {
+    "city": "North Adams",
+    "state": "Massachusetts",
+    "slug": "north-adams-massachusetts"
+  },
+  "north-augusta-south-carolina": {
+    "city": "North Augusta",
+    "state": "South Carolina",
+    "slug": "north-augusta-south-carolina"
+  },
+  "north-bergen-new-jersey": {
+    "city": "North Bergen",
+    "state": "New Jersey",
+    "slug": "north-bergen-new-jersey"
+  },
+  "north-kansas-city-missouri": {
+    "city": "North Kansas City",
+    "state": "Missouri",
+    "slug": "north-kansas-city-missouri"
+  },
+  "north-kingstown-rhode-island": {
+    "city": "North Kingstown",
+    "state": "Rhode Island",
+    "slug": "north-kingstown-rhode-island"
+  },
+  "north-platte": {
+    "city": "North Platte",
+    "state": "Nebraska",
+    "slug": "north-platte"
+  },
+  "north-providence-rhode-island": {
+    "city": "North Providence",
+    "state": "Rhode Island",
+    "slug": "north-providence-rhode-island"
+  },
+  "north-tonawanda-new-york": {
+    "city": "North Tonawanda",
+    "state": "New York",
+    "slug": "north-tonawanda-new-york"
+  },
+  "northampton-massachusetts": {
+    "city": "Northampton",
+    "state": "Massachusetts",
+    "slug": "northampton-massachusetts"
+  },
+  "northfield-minnesota": {
+    "city": "Northfield",
+    "state": "Minnesota",
+    "slug": "northfield-minnesota"
+  },
+  "norton-virginia": {
+    "city": "Norton",
+    "state": "Virginia",
+    "slug": "norton-virginia"
+  },
+  "norwood-massachusetts": {
+    "city": "Norwood",
+    "state": "Massachusetts",
+    "slug": "norwood-massachusetts"
+  },
+  "nutley-new-jersey": {
+    "city": "Nutley",
+    "state": "New Jersey",
+    "slug": "nutley-new-jersey"
+  },
+  "oak-hill-west-virginia": {
+    "city": "Oak Hill",
+    "state": "West Virginia",
+    "slug": "oak-hill-west-virginia"
+  },
+  "oak-ridge-tennessee": {
+    "city": "Oak Ridge",
+    "state": "Tennessee",
+    "slug": "oak-ridge-tennessee"
+  },
+  "ocean-city-maryland": {
+    "city": "Ocean City",
+    "state": "Maryland",
+    "slug": "ocean-city-maryland"
+  },
+  "ocean-city-new-jersey": {
+    "city": "Ocean City",
+    "state": "New Jersey",
+    "slug": "ocean-city-new-jersey"
+  },
+  "ocean-springs-mississippi": {
+    "city": "Ocean Springs",
+    "state": "Mississippi",
+    "slug": "ocean-springs-mississippi"
+  },
+  "oconomowoc-wisconsin": {
+    "city": "Oconomowoc",
+    "state": "Wisconsin",
+    "slug": "oconomowoc-wisconsin"
+  },
+  "old-orchard-beach-maine": {
+    "city": "Old Orchard Beach",
+    "state": "Maine",
+    "slug": "old-orchard-beach-maine"
+  },
+  "omak-washington": {
+    "city": "Omak",
+    "state": "Washington",
+    "slug": "omak-washington"
+  },
+  "oneida-new-york": {
+    "city": "Oneida",
+    "state": "New York",
+    "slug": "oneida-new-york"
+  },
+  "ontario-oregon": {
+    "city": "Ontario",
+    "state": "Oregon",
+    "slug": "ontario-oregon"
+  },
+  "orange-new-jersey": {
+    "city": "Orange",
+    "state": "New Jersey",
+    "slug": "orange-new-jersey"
+  },
+  "orangeburg-south-carolina": {
+    "city": "Orangeburg",
+    "state": "South Carolina",
+    "slug": "orangeburg-south-carolina"
+  },
+  "ottawa-kansas": {
+    "city": "Ottawa",
+    "state": "Kansas",
+    "slug": "ottawa-kansas"
+  },
+  "owasso-oklahoma": {
+    "city": "Owasso",
+    "state": "Oklahoma",
+    "slug": "owasso-oklahoma"
+  },
+  "owatonna-minnesota": {
+    "city": "Owatonna",
+    "state": "Minnesota",
+    "slug": "owatonna-minnesota"
+  },
+  "owings-mills-maryland": {
+    "city": "Owings Mills",
+    "state": "Maryland",
+    "slug": "owings-mills-maryland"
+  },
+  "owosso-michigan": {
+    "city": "Owosso",
+    "state": "Michigan",
+    "slug": "owosso-michigan"
+  },
+  "papillion-nebraska": {
+    "city": "Papillion",
+    "state": "Nebraska",
+    "slug": "papillion-nebraska"
+  },
+  "paris-kentucky": {
+    "city": "Paris",
+    "state": "Kentucky",
+    "slug": "paris-kentucky"
+  },
+  "paris-tennessee": {
+    "city": "Paris",
+    "state": "Tennessee",
+    "slug": "paris-tennessee"
+  },
+  "paris-texas": {
+    "city": "Paris",
+    "state": "Texas",
+    "slug": "paris-texas"
+  },
+  "park-city-utah": {
+    "city": "Park City",
+    "state": "Utah",
+    "slug": "park-city-utah"
+  },
+  "parker-south-carolina": {
+    "city": "Parker",
+    "state": "South Carolina",
+    "slug": "parker-south-carolina"
+  },
+  "parsippany-new-jersey": {
+    "city": "Parsippany",
+    "state": "New Jersey",
+    "slug": "parsippany-new-jersey"
+  },
+  "pascagoula-mississippi": {
+    "city": "Pascagoula",
+    "state": "Mississippi",
+    "slug": "pascagoula-mississippi"
+  },
+  "payson-utah": {
+    "city": "Payson",
+    "state": "Utah",
+    "slug": "payson-utah"
+  },
+  "pecos-texas": {
+    "city": "Pecos",
+    "state": "Texas",
+    "slug": "pecos-texas"
+  },
+  "pelham-new-hampshire": {
+    "city": "Pelham",
+    "state": "New Hampshire",
+    "slug": "pelham-new-hampshire"
+  },
+  "pendleton-oregon": {
+    "city": "Pendleton",
+    "state": "Oregon",
+    "slug": "pendleton-oregon"
+  },
+  "petersburg-virginia": {
+    "city": "Petersburg",
+    "state": "Virginia",
+    "slug": "petersburg-virginia"
+  },
+  "petoskey-michigan": {
+    "city": "Petoskey",
+    "state": "Michigan",
+    "slug": "petoskey-michigan"
+  },
+  "pewaukee-wisconsin": {
+    "city": "Pewaukee",
+    "state": "Wisconsin",
+    "slug": "pewaukee-wisconsin"
+  },
+  "philippi-west-virginia": {
+    "city": "Philippi",
+    "state": "West Virginia",
+    "slug": "philippi-west-virginia"
+  },
+  "picayune-mississippi": {
+    "city": "Picayune",
+    "state": "Mississippi",
+    "slug": "picayune-mississippi"
+  },
+  "pikeville-kentucky": {
+    "city": "Pikeville",
+    "state": "Kentucky",
+    "slug": "pikeville-kentucky"
+  },
+  "pineville-louisiana": {
+    "city": "Pineville",
+    "state": "Louisiana",
+    "slug": "pineville-louisiana"
+  },
+  "pineville-north-carolina": {
+    "city": "Pineville",
+    "state": "North Carolina",
+    "slug": "pineville-north-carolina"
+  },
+  "pittsburg": {
+    "city": "Pittsburg",
+    "state": "Maine",
+    "slug": "pittsburg"
+  },
+  "pittsfield": {
+    "city": "Pittsfield",
+    "state": "Massachusetts",
+    "slug": "pittsfield"
+  },
+  "platteville-wisconsin": {
+    "city": "Platteville",
+    "state": "Wisconsin",
+    "slug": "platteville-wisconsin"
+  },
+  "plymouth-massachusetts": {
+    "city": "Plymouth",
+    "state": "Massachusetts",
+    "slug": "plymouth-massachusetts"
+  },
+  "point-pleasant-west-virginia": {
+    "city": "Point Pleasant",
+    "state": "West Virginia",
+    "slug": "point-pleasant-west-virginia"
+  },
+  "polson-montana": {
+    "city": "Polson",
+    "state": "Montana",
+    "slug": "polson-montana"
+  },
+  "ponca-city-oklahoma": {
+    "city": "Ponca City",
+    "state": "Oklahoma",
+    "slug": "ponca-city-oklahoma"
+  },
+  "poplar-bluff-missouri": {
+    "city": "Poplar Bluff",
+    "state": "Missouri",
+    "slug": "poplar-bluff-missouri"
+  },
+  "port-angeles-washington": {
+    "city": "Port Angeles",
+    "state": "Washington",
+    "slug": "port-angeles-washington"
+  },
+  "port-jervis-new-york": {
+    "city": "Port Jervis",
+    "state": "New York",
+    "slug": "port-jervis-new-york"
+  },
+  "port-orchard-washington": {
+    "city": "Port Orchard",
+    "state": "Washington",
+    "slug": "port-orchard-washington"
+  },
+  "port-washington-wisconsin": {
+    "city": "Port Washington",
+    "state": "Wisconsin",
+    "slug": "port-washington-wisconsin"
+  },
+  "portales-new-mexico": {
+    "city": "Portales",
+    "state": "New Mexico",
+    "slug": "portales-new-mexico"
+  },
+  "portland-texas": {
+    "city": "Portland",
+    "state": "Texas",
+    "slug": "portland-texas"
+  },
+  "portsmouth-ohio": {
+    "city": "Portsmouth",
+    "state": "Ohio",
+    "slug": "portsmouth-ohio"
+  },
+  "portsmouth-rhode-island": {
+    "city": "Portsmouth",
+    "state": "Rhode Island",
+    "slug": "portsmouth-rhode-island"
+  },
+  "pottsville-pennsylvania": {
+    "city": "Pottsville",
+    "state": "Pennsylvania",
+    "slug": "pottsville-pennsylvania"
+  },
+  "powell-wyoming": {
+    "city": "Powell",
+    "state": "Wyoming",
+    "slug": "powell-wyoming"
+  },
+  "prairie-du-chien-wisconsin": {
+    "city": "Prairie du Chien",
+    "state": "Wisconsin",
+    "slug": "prairie-du-chien-wisconsin"
+  },
+  "prairie-village-kansas": {
+    "city": "Prairie Village",
+    "state": "Kansas",
+    "slug": "prairie-village-kansas"
+  },
+  "presque-isle-maine": {
+    "city": "Presque Isle",
+    "state": "Maine",
+    "slug": "presque-isle-maine"
+  },
+  "price-utah": {
+    "city": "Price",
+    "state": "Utah",
+    "slug": "price-utah"
+  },
+  "princeton-new-jersey": {
+    "city": "Princeton",
+    "state": "New Jersey",
+    "slug": "princeton-new-jersey"
+  },
+  "princeton-west-virginia": {
+    "city": "Princeton",
+    "state": "West Virginia",
+    "slug": "princeton-west-virginia"
+  },
+  "prineville-oregon": {
+    "city": "Prineville",
+    "state": "Oregon",
+    "slug": "prineville-oregon"
+  },
+  "prior-lake-minnesota": {
+    "city": "Prior Lake",
+    "state": "Minnesota",
+    "slug": "prior-lake-minnesota"
+  },
+  "pulaski-tennessee": {
+    "city": "Pulaski",
+    "state": "Tennessee",
+    "slug": "pulaski-tennessee"
+  },
+  "pulaski-virginia": {
+    "city": "Pulaski",
+    "state": "Virginia",
+    "slug": "pulaski-virginia"
+  },
+  "radcliff-kentucky": {
+    "city": "Radcliff",
+    "state": "Kentucky",
+    "slug": "radcliff-kentucky"
+  },
+  "radford-virginia": {
+    "city": "Radford",
+    "state": "Virginia",
+    "slug": "radford-virginia"
+  },
+  "rahway-new-jersey": {
+    "city": "Rahway",
+    "state": "New Jersey",
+    "slug": "rahway-new-jersey"
+  },
+  "ramsey-new-jersey": {
+    "city": "Ramsey",
+    "state": "New Jersey",
+    "slug": "ramsey-new-jersey"
+  },
+  "randolph-massachusetts": {
+    "city": "Randolph",
+    "state": "Massachusetts",
+    "slug": "randolph-massachusetts"
+  },
+  "rawlins-wyoming": {
+    "city": "Rawlins",
+    "state": "Wyoming",
+    "slug": "rawlins-wyoming"
+  },
+  "raytown-missouri": {
+    "city": "Raytown",
+    "state": "Missouri",
+    "slug": "raytown-missouri"
+  },
+  "reading-massachusetts": {
+    "city": "Reading",
+    "state": "Massachusetts",
+    "slug": "reading-massachusetts"
+  },
+  "red-wing-minnesota": {
+    "city": "Red Wing",
+    "state": "Minnesota",
+    "slug": "red-wing-minnesota"
+  },
+  "redmond-oregon": {
+    "city": "Redmond",
+    "state": "Oregon",
+    "slug": "redmond-oregon"
+  },
+  "reidsville-north-carolina": {
+    "city": "Reidsville",
+    "state": "North Carolina",
+    "slug": "reidsville-north-carolina"
+  },
+  "rensselaer-new-york": {
+    "city": "Rensselaer",
+    "state": "New York",
+    "slug": "rensselaer-new-york"
+  },
+  "rhinelander-wisconsin": {
+    "city": "Rhinelander",
+    "state": "Wisconsin",
+    "slug": "rhinelander-wisconsin"
+  },
+  "richfield-minnesota": {
+    "city": "Richfield",
+    "state": "Minnesota",
+    "slug": "richfield-minnesota"
+  },
+  "richfield-utah": {
+    "city": "Richfield",
+    "state": "Utah",
+    "slug": "richfield-utah"
+  },
+  "ridgeland-mississippi": {
+    "city": "Ridgeland",
+    "state": "Mississippi",
+    "slug": "ridgeland-mississippi"
+  },
+  "ridgewood-new-jersey": {
+    "city": "Ridgewood",
+    "state": "New Jersey",
+    "slug": "ridgewood-new-jersey"
+  },
+  "ripley-west-virginia": {
+    "city": "Ripley",
+    "state": "West Virginia",
+    "slug": "ripley-west-virginia"
+  },
+  "ripon-wisconsin": {
+    "city": "Ripon",
+    "state": "Wisconsin",
+    "slug": "ripon-wisconsin"
+  },
+  "riverton-wyoming": {
+    "city": "Riverton",
+    "state": "Wyoming",
+    "slug": "riverton-wyoming"
+  },
+  "rochester-michigan": {
+    "city": "Rochester",
+    "state": "Michigan",
+    "slug": "rochester-michigan"
+  },
+  "rockland-maine": {
+    "city": "Rockland",
+    "state": "Maine",
+    "slug": "rockland-maine"
+  },
+  "rolla-missouri": {
+    "city": "Rolla",
+    "state": "Missouri",
+    "slug": "rolla-missouri"
+  },
+  "romney-west-virginia": {
+    "city": "Romney",
+    "state": "West Virginia",
+    "slug": "romney-west-virginia"
+  },
+  "roosevelt-utah": {
+    "city": "Roosevelt",
+    "state": "Utah",
+    "slug": "roosevelt-utah"
+  },
+  "roselle-new-jersey": {
+    "city": "Roselle",
+    "state": "New Jersey",
+    "slug": "roselle-new-jersey"
+  },
+  "rosemount-minnesota": {
+    "city": "Rosemount",
+    "state": "Minnesota",
+    "slug": "rosemount-minnesota"
+  },
+  "roseville-minnesota": {
+    "city": "Roseville",
+    "state": "Minnesota",
+    "slug": "roseville-minnesota"
+  },
+  "roswell": {
+    "city": "Roswell",
+    "state": "Georgia",
+    "slug": "roswell"
+  },
+  "roxboro-north-carolina": {
+    "city": "Roxboro",
+    "state": "North Carolina",
+    "slug": "roxboro-north-carolina"
+  },
+  "rumford-maine": {
+    "city": "Rumford",
+    "state": "Maine",
+    "slug": "rumford-maine"
+  },
+  "rutherford-new-jersey": {
+    "city": "Rutherford",
+    "state": "New Jersey",
+    "slug": "rutherford-new-jersey"
+  },
+  "saint-albans-vermont": {
+    "city": "Saint Albans",
+    "state": "Vermont",
+    "slug": "saint-albans-vermont"
+  },
+  "saint-clair-shores-michigan": {
+    "city": "Saint Clair Shores",
+    "state": "Michigan",
+    "slug": "saint-clair-shores-michigan"
+  },
+  "saint-cloud": {
+    "city": "Saint Cloud",
+    "state": "Minnesota",
+    "slug": "saint-cloud"
+  },
+  "saint-joseph-michigan": {
+    "city": "Saint Joseph",
+    "state": "Michigan",
+    "slug": "saint-joseph-michigan"
+  },
+  "saint-peters": {
+    "city": "Saint Peters",
+    "state": "Missouri",
+    "slug": "saint-peters"
+  },
+  "salamanca-new-york": {
+    "city": "Salamanca",
+    "state": "New York",
+    "slug": "salamanca-new-york"
+  },
+  "salem": {
+    "city": "Salem",
+    "state": "New Hampshire",
+    "slug": "salem"
+  },
+  "salem-massachusetts": {
+    "city": "Salem",
+    "state": "Massachusetts",
+    "slug": "salem-massachusetts"
+  },
+  "salem-virginia": {
+    "city": "Salem",
+    "state": "Virginia",
+    "slug": "salem-virginia"
+  },
+  "sanford-north-carolina": {
+    "city": "Sanford",
+    "state": "North Carolina",
+    "slug": "sanford-north-carolina"
+  },
+  "sapulpa-oklahoma": {
+    "city": "Sapulpa",
+    "state": "Oklahoma",
+    "slug": "sapulpa-oklahoma"
+  },
+  "sartell-minnesota": {
+    "city": "Sartell",
+    "state": "Minnesota",
+    "slug": "sartell-minnesota"
+  },
+  "saugus-massachusetts": {
+    "city": "Saugus",
+    "state": "Massachusetts",
+    "slug": "saugus-massachusetts"
+  },
+  "sault-ste-marie-michigan": {
+    "city": "Sault Ste. Marie",
+    "state": "Michigan",
+    "slug": "sault-ste-marie-michigan"
+  },
+  "savage-minnesota": {
+    "city": "Savage",
+    "state": "Minnesota",
+    "slug": "savage-minnesota"
+  },
+  "scottsbluff-nebraska": {
+    "city": "Scottsbluff",
+    "state": "Nebraska",
+    "slug": "scottsbluff-nebraska"
+  },
+  "seaside-oregon": {
+    "city": "Seaside",
+    "state": "Oregon",
+    "slug": "seaside-oregon"
+  },
+  "secaucus-new-jersey": {
+    "city": "Secaucus",
+    "state": "New Jersey",
+    "slug": "secaucus-new-jersey"
+  },
+  "sedalia-missouri": {
+    "city": "Sedalia",
+    "state": "Missouri",
+    "slug": "sedalia-missouri"
+  },
+  "seneca-south-carolina": {
+    "city": "Seneca",
+    "state": "South Carolina",
+    "slug": "seneca-south-carolina"
+  },
+  "sequim-washington": {
+    "city": "Sequim",
+    "state": "Washington",
+    "slug": "sequim-washington"
+  },
+  "sevierville-tennessee": {
+    "city": "Sevierville",
+    "state": "Tennessee",
+    "slug": "sevierville-tennessee"
+  },
+  "shaker-heights-ohio": {
+    "city": "Shaker Heights",
+    "state": "Ohio",
+    "slug": "shaker-heights-ohio"
+  },
+  "shakopee-minnesota": {
+    "city": "Shakopee",
+    "state": "Minnesota",
+    "slug": "shakopee-minnesota"
+  },
+  "sharon-pennsylvania": {
+    "city": "Sharon",
+    "state": "Pennsylvania",
+    "slug": "sharon-pennsylvania"
+  },
+  "shawnee-oklahoma": {
+    "city": "Shawnee",
+    "state": "Oklahoma",
+    "slug": "shawnee-oklahoma"
+  },
+  "shelbyville-tennessee": {
+    "city": "Shelbyville",
+    "state": "Tennessee",
+    "slug": "shelbyville-tennessee"
+  },
+  "shelton-washington": {
+    "city": "Shelton",
+    "state": "Washington",
+    "slug": "shelton-washington"
+  },
+  "shepherdstown-west-virginia": {
+    "city": "Shepherdstown",
+    "state": "West Virginia",
+    "slug": "shepherdstown-west-virginia"
+  },
+  "sidney-montana": {
+    "city": "Sidney",
+    "state": "Montana",
+    "slug": "sidney-montana"
+  },
+  "sikeston-missouri": {
+    "city": "Sikeston",
+    "state": "Missouri",
+    "slug": "sikeston-missouri"
+  },
+  "silver-city-new-mexico": {
+    "city": "Silver City",
+    "state": "New Mexico",
+    "slug": "silver-city-new-mexico"
+  },
+  "simpsonville-south-carolina": {
+    "city": "Simpsonville",
+    "state": "South Carolina",
+    "slug": "simpsonville-south-carolina"
+  },
+  "smithfield-rhode-island": {
+    "city": "Smithfield",
+    "state": "Rhode Island",
+    "slug": "smithfield-rhode-island"
+  },
+  "socorro-new-mexico": {
+    "city": "Socorro",
+    "state": "New Mexico",
+    "slug": "socorro-new-mexico"
+  },
+  "somerset-kentucky": {
+    "city": "Somerset",
+    "state": "Kentucky",
+    "slug": "somerset-kentucky"
+  },
+  "somersworth-new-hampshire": {
+    "city": "Somersworth",
+    "state": "New Hampshire",
+    "slug": "somersworth-new-hampshire"
+  },
+  "somerville-new-jersey": {
+    "city": "Somerville",
+    "state": "New Jersey",
+    "slug": "somerville-new-jersey"
+  },
+  "south-charleston-west-virginia": {
+    "city": "South Charleston",
+    "state": "West Virginia",
+    "slug": "south-charleston-west-virginia"
+  },
+  "south-jordan-utah": {
+    "city": "South Jordan",
+    "state": "Utah",
+    "slug": "south-jordan-utah"
+  },
+  "south-kingstown-rhode-island": {
+    "city": "South Kingstown",
+    "state": "Rhode Island",
+    "slug": "south-kingstown-rhode-island"
+  },
+  "south-orange-new-jersey": {
+    "city": "South Orange",
+    "state": "New Jersey",
+    "slug": "south-orange-new-jersey"
+  },
+  "south-saint-paul-minnesota": {
+    "city": "South Saint Paul",
+    "state": "Minnesota",
+    "slug": "south-saint-paul-minnesota"
+  },
+  "south-sioux-city-nebraska": {
+    "city": "South Sioux City",
+    "state": "Nebraska",
+    "slug": "south-sioux-city-nebraska"
+  },
+  "southbridge-massachusetts": {
+    "city": "Southbridge",
+    "state": "Massachusetts",
+    "slug": "southbridge-massachusetts"
+  },
+  "spanish-fork-utah": {
+    "city": "Spanish Fork",
+    "state": "Utah",
+    "slug": "spanish-fork-utah"
+  },
+  "sparks": {
+    "city": "Sparks",
+    "state": "Nevada",
+    "slug": "sparks"
+  },
+  "spearfish-south-dakota": {
+    "city": "Spearfish",
+    "state": "South Dakota",
+    "slug": "spearfish-south-dakota"
+  },
+  "spencer-west-virginia": {
+    "city": "Spencer",
+    "state": "West Virginia",
+    "slug": "spencer-west-virginia"
+  },
+  "springfield-tennessee": {
+    "city": "Springfield",
+    "state": "Tennessee",
+    "slug": "springfield-tennessee"
+  },
+  "springfield-vermont": {
+    "city": "Springfield",
+    "state": "Vermont",
+    "slug": "springfield-vermont"
+  },
+  "springville-utah": {
+    "city": "Springville",
+    "state": "Utah",
+    "slug": "springville-utah"
+  },
+  "st-albans-west-virginia": {
+    "city": "St. Albans",
+    "state": "West Virginia",
+    "slug": "st-albans-west-virginia"
+  },
+  "st-helens-oregon": {
+    "city": "St. Helens",
+    "state": "Oregon",
+    "slug": "st-helens-oregon"
+  },
+  "st-johnsbury-vermont": {
+    "city": "St. Johnsbury",
+    "state": "Vermont",
+    "slug": "st-johnsbury-vermont"
+  },
+  "st.-albans": {
+    "city": "St. Albans",
+    "state": "Vermont",
+    "slug": "st.-albans"
+  },
+  "st.-george": {
+    "city": "St. George",
+    "state": "Utah",
+    "slug": "st.-george"
+  },
+  "st.-peters": {
+    "city": "St. Peters",
+    "state": "Missouri",
+    "slug": "st.-peters"
+  },
+  "staunton-virginia": {
+    "city": "Staunton",
+    "state": "Virginia",
+    "slug": "staunton-virginia"
+  },
+  "stephenville-texas": {
+    "city": "Stephenville",
+    "state": "Texas",
+    "slug": "stephenville-texas"
+  },
+  "stevens-point-wisconsin": {
+    "city": "Stevens Point",
+    "state": "Wisconsin",
+    "slug": "stevens-point-wisconsin"
+  },
+  "stillwater": {
+    "city": "Stillwater",
+    "state": "Minnesota",
+    "slug": "stillwater"
+  },
+  "stillwater-minnesota": {
+    "city": "Stillwater",
+    "state": "Minnesota",
+    "slug": "stillwater-minnesota"
+  },
+  "stroudsburg-pennsylvania": {
+    "city": "Stroudsburg",
+    "state": "Pennsylvania",
+    "slug": "stroudsburg-pennsylvania"
+  },
+  "sturgeon-bay-wisconsin": {
+    "city": "Sturgeon Bay",
+    "state": "Wisconsin",
+    "slug": "sturgeon-bay-wisconsin"
+  },
+  "sturgis-michigan": {
+    "city": "Sturgis",
+    "state": "Michigan",
+    "slug": "sturgis-michigan"
+  },
+  "sturgis-south-dakota": {
+    "city": "Sturgis",
+    "state": "South Dakota",
+    "slug": "sturgis-south-dakota"
+  },
+  "sulphur": {
+    "city": "Sulphur",
+    "state": "Louisiana",
+    "slug": "sulphur"
+  },
+  "sulphur-springs-texas": {
+    "city": "Sulphur Springs",
+    "state": "Texas",
+    "slug": "sulphur-springs-texas"
+  },
+  "summersville-west-virginia": {
+    "city": "Summersville",
+    "state": "West Virginia",
+    "slug": "summersville-west-virginia"
+  },
+  "summerville": {
+    "city": "Summerville",
+    "state": "South Carolina",
+    "slug": "summerville"
+  },
+  "summit-new-jersey": {
+    "city": "Summit",
+    "state": "New Jersey",
+    "slug": "summit-new-jersey"
+  },
+  "sumner-washington": {
+    "city": "Sumner",
+    "state": "Washington",
+    "slug": "sumner-washington"
+  },
+  "sun-prairie-wisconsin": {
+    "city": "Sun Prairie",
+    "state": "Wisconsin",
+    "slug": "sun-prairie-wisconsin"
+  },
+  "sunbury-pennsylvania": {
+    "city": "Sunbury",
+    "state": "Pennsylvania",
+    "slug": "sunbury-pennsylvania"
+  },
+  "sunland-park-new-mexico": {
+    "city": "Sunland Park",
+    "state": "New Mexico",
+    "slug": "sunland-park-new-mexico"
+  },
+  "superior-wisconsin": {
+    "city": "Superior",
+    "state": "Wisconsin",
+    "slug": "superior-wisconsin"
+  },
+  "sweetwater-texas": {
+    "city": "Sweetwater",
+    "state": "Texas",
+    "slug": "sweetwater-texas"
+  },
+  "tahlequah-oklahoma": {
+    "city": "Tahlequah",
+    "state": "Oklahoma",
+    "slug": "tahlequah-oklahoma"
+  },
+  "takoma-park-maryland": {
+    "city": "Takoma Park",
+    "state": "Maryland",
+    "slug": "takoma-park-maryland"
+  },
+  "taos-new-mexico": {
+    "city": "Taos",
+    "state": "New Mexico",
+    "slug": "taos-new-mexico"
+  },
+  "taylors-south-carolina": {
+    "city": "Taylors",
+    "state": "South Carolina",
+    "slug": "taylors-south-carolina"
+  },
+  "teaneck-new-jersey": {
+    "city": "Teaneck",
+    "state": "New Jersey",
+    "slug": "teaneck-new-jersey"
+  },
+  "thibodaux-louisiana": {
+    "city": "Thibodaux",
+    "state": "Louisiana",
+    "slug": "thibodaux-louisiana"
+  },
+  "thief-river-falls-minnesota": {
+    "city": "Thief River Falls",
+    "state": "Minnesota",
+    "slug": "thief-river-falls-minnesota"
+  },
+  "tigard": {
+    "city": "Tigard",
+    "state": "Oregon",
+    "slug": "tigard"
+  },
+  "tillamook-oregon": {
+    "city": "Tillamook",
+    "state": "Oregon",
+    "slug": "tillamook-oregon"
+  },
+  "tiverton-rhode-island": {
+    "city": "Tiverton",
+    "state": "Rhode Island",
+    "slug": "tiverton-rhode-island"
+  },
+  "toms-river-new-jersey": {
+    "city": "Toms River",
+    "state": "New Jersey",
+    "slug": "toms-river-new-jersey"
+  },
+  "tooele-utah": {
+    "city": "Tooele",
+    "state": "Utah",
+    "slug": "tooele-utah"
+  },
+  "torrington-wyoming": {
+    "city": "Torrington",
+    "state": "Wyoming",
+    "slug": "torrington-wyoming"
+  },
+  "traverse-city-michigan": {
+    "city": "Traverse City",
+    "state": "Michigan",
+    "slug": "traverse-city-michigan"
+  },
+  "tremonton-utah": {
+    "city": "Tremonton",
+    "state": "Utah",
+    "slug": "tremonton-utah"
+  },
+  "truth-or-consequences-new-mexico": {
+    "city": "Truth or Consequences",
+    "state": "New Mexico",
+    "slug": "truth-or-consequences-new-mexico"
+  },
+  "tualatin-oregon": {
+    "city": "Tualatin",
+    "state": "Oregon",
+    "slug": "tualatin-oregon"
+  },
+  "tullahoma-tennessee": {
+    "city": "Tullahoma",
+    "state": "Tennessee",
+    "slug": "tullahoma-tennessee"
+  },
+  "two-rivers-wisconsin": {
+    "city": "Two Rivers",
+    "state": "Wisconsin",
+    "slug": "two-rivers-wisconsin"
+  },
+  "union-city-tennessee": {
+    "city": "Union City",
+    "state": "Tennessee",
+    "slug": "union-city-tennessee"
+  },
+  "union-new-jersey": {
+    "city": "Union",
+    "state": "New Jersey",
+    "slug": "union-new-jersey"
+  },
+  "union-south-carolina": {
+    "city": "Union",
+    "state": "South Carolina",
+    "slug": "union-south-carolina"
+  },
+  "uniontown-pennsylvania": {
+    "city": "Uniontown",
+    "state": "Pennsylvania",
+    "slug": "uniontown-pennsylvania"
+  },
+  "uvalde-texas": {
+    "city": "Uvalde",
+    "state": "Texas",
+    "slug": "uvalde-texas"
+  },
+  "valley-city-north-dakota": {
+    "city": "Valley City",
+    "state": "North Dakota",
+    "slug": "valley-city-north-dakota"
+  },
+  "vermillion-south-dakota": {
+    "city": "Vermillion",
+    "state": "South Dakota",
+    "slug": "vermillion-south-dakota"
+  },
+  "vernal-utah": {
+    "city": "Vernal",
+    "state": "Utah",
+    "slug": "vernal-utah"
+  },
+  "versailles-kentucky": {
+    "city": "Versailles",
+    "state": "Kentucky",
+    "slug": "versailles-kentucky"
+  },
+  "vicksburg": {
+    "city": "Vicksburg",
+    "state": "Mississippi",
+    "slug": "vicksburg"
+  },
+  "virginia-beach": {
+    "city": "Virginia Beach",
+    "state": "Virginia",
+    "slug": "virginia-beach"
+  },
+  "virginia-minnesota": {
+    "city": "Virginia",
+    "state": "Minnesota",
+    "slug": "virginia-minnesota"
+  },
+  "wadena-minnesota": {
+    "city": "Wadena",
+    "state": "Minnesota",
+    "slug": "wadena-minnesota"
+  },
+  "waldorf": {
+    "city": "Waldorf",
+    "state": "Maryland",
+    "slug": "waldorf"
+  },
+  "walterboro-south-carolina": {
+    "city": "Walterboro",
+    "state": "South Carolina",
+    "slug": "walterboro-south-carolina"
+  },
+  "warren-pennsylvania": {
+    "city": "Warren",
+    "state": "Pennsylvania",
+    "slug": "warren-pennsylvania"
+  },
+  "warren-rhode-island": {
+    "city": "Warren",
+    "state": "Rhode Island",
+    "slug": "warren-rhode-island"
+  },
+  "washington": {
+    "city": "Washington",
+    "state": "Washington DC",
+    "slug": "washington"
+  },
+  "washington-missouri": {
+    "city": "Washington",
+    "state": "Missouri",
+    "slug": "washington-missouri"
+  },
+  "washington-north-carolina": {
+    "city": "Washington",
+    "state": "North Carolina",
+    "slug": "washington-north-carolina"
+  },
+  "washington-pennsylvania": {
+    "city": "Washington",
+    "state": "Pennsylvania",
+    "slug": "washington-pennsylvania"
+  },
+  "watertown": {
+    "city": "Watertown",
+    "state": "New York",
+    "slug": "watertown"
+  },
+  "watervliet-new-york": {
+    "city": "Watervliet",
+    "state": "New York",
+    "slug": "watervliet-new-york"
+  },
+  "waukesha": {
+    "city": "Waukesha",
+    "state": "Wisconsin",
+    "slug": "waukesha"
+  },
+  "waupaca-wisconsin": {
+    "city": "Waupaca",
+    "state": "Wisconsin",
+    "slug": "waupaca-wisconsin"
+  },
+  "waynesboro-virginia": {
+    "city": "Waynesboro",
+    "state": "Virginia",
+    "slug": "waynesboro-virginia"
+  },
+  "waynesburg-pennsylvania": {
+    "city": "Waynesburg",
+    "state": "Pennsylvania",
+    "slug": "waynesburg-pennsylvania"
+  },
+  "waynesville-north-carolina": {
+    "city": "Waynesville",
+    "state": "North Carolina",
+    "slug": "waynesville-north-carolina"
+  },
+  "weatherford-oklahoma": {
+    "city": "Weatherford",
+    "state": "Oklahoma",
+    "slug": "weatherford-oklahoma"
+  },
+  "webb-city-missouri": {
+    "city": "Webb City",
+    "state": "Missouri",
+    "slug": "webb-city-missouri"
+  },
+  "weehawken-new-jersey": {
+    "city": "Weehawken",
+    "state": "New Jersey",
+    "slug": "weehawken-new-jersey"
+  },
+  "welch-west-virginia": {
+    "city": "Welch",
+    "state": "West Virginia",
+    "slug": "welch-west-virginia"
+  },
+  "wellsburg-west-virginia": {
+    "city": "Wellsburg",
+    "state": "West Virginia",
+    "slug": "wellsburg-west-virginia"
+  },
+  "west-allis-wisconsin": {
+    "city": "West Allis",
+    "state": "Wisconsin",
+    "slug": "west-allis-wisconsin"
+  },
+  "west-bend-wisconsin": {
+    "city": "West Bend",
+    "state": "Wisconsin",
+    "slug": "west-bend-wisconsin"
+  },
+  "west-columbia-south-carolina": {
+    "city": "West Columbia",
+    "state": "South Carolina",
+    "slug": "west-columbia-south-carolina"
+  },
+  "west-fargo-north-dakota": {
+    "city": "West Fargo",
+    "state": "North Dakota",
+    "slug": "west-fargo-north-dakota"
+  },
+  "west-linn-oregon": {
+    "city": "West Linn",
+    "state": "Oregon",
+    "slug": "west-linn-oregon"
+  },
+  "west-monroe-louisiana": {
+    "city": "West Monroe",
+    "state": "Louisiana",
+    "slug": "west-monroe-louisiana"
+  },
+  "west-orange-new-jersey": {
+    "city": "West Orange",
+    "state": "New Jersey",
+    "slug": "west-orange-new-jersey"
+  },
+  "west-plains-missouri": {
+    "city": "West Plains",
+    "state": "Missouri",
+    "slug": "west-plains-missouri"
+  },
+  "west-point-mississippi": {
+    "city": "West Point",
+    "state": "Mississippi",
+    "slug": "west-point-mississippi"
+  },
+  "west-warwick-rhode-island": {
+    "city": "West Warwick",
+    "state": "Rhode Island",
+    "slug": "west-warwick-rhode-island"
+  },
+  "westbrook-maine": {
+    "city": "Westbrook",
+    "state": "Maine",
+    "slug": "westbrook-maine"
+  },
+  "westerly-rhode-island": {
+    "city": "Westerly",
+    "state": "Rhode Island",
+    "slug": "westerly-rhode-island"
+  },
+  "westfield-new-jersey": {
+    "city": "Westfield",
+    "state": "New Jersey",
+    "slug": "westfield-new-jersey"
+  },
+  "westford-massachusetts": {
+    "city": "Westford",
+    "state": "Massachusetts",
+    "slug": "westford-massachusetts"
+  },
+  "weston-west-virginia": {
+    "city": "Weston",
+    "state": "West Virginia",
+    "slug": "weston-west-virginia"
+  },
+  "westwego-louisiana": {
+    "city": "Westwego",
+    "state": "Louisiana",
+    "slug": "westwego-louisiana"
+  },
+  "westwood-new-jersey": {
+    "city": "Westwood",
+    "state": "New Jersey",
+    "slug": "westwood-new-jersey"
+  },
+  "weymouth-massachusetts": {
+    "city": "Weymouth",
+    "state": "Massachusetts",
+    "slug": "weymouth-massachusetts"
+  },
+  "wharton-texas": {
+    "city": "Wharton",
+    "state": "Texas",
+    "slug": "wharton-texas"
+  },
+  "wheatland-wyoming": {
+    "city": "Wheatland",
+    "state": "Wyoming",
+    "slug": "wheatland-wyoming"
+  },
+  "white-river-junction-vermont": {
+    "city": "White River Junction",
+    "state": "Vermont",
+    "slug": "white-river-junction-vermont"
+  },
+  "white-settlement-texas": {
+    "city": "White Settlement",
+    "state": "Texas",
+    "slug": "white-settlement-texas"
+  },
+  "white-sulphur-springs-west-virginia": {
+    "city": "White Sulphur Springs",
+    "state": "West Virginia",
+    "slug": "white-sulphur-springs-west-virginia"
+  },
+  "whitefish-montana": {
+    "city": "Whitefish",
+    "state": "Montana",
+    "slug": "whitefish-montana"
+  },
+  "whitewater-wisconsin": {
+    "city": "Whitewater",
+    "state": "Wisconsin",
+    "slug": "whitewater-wisconsin"
+  },
+  "wickliffe-ohio": {
+    "city": "Wickliffe",
+    "state": "Ohio",
+    "slug": "wickliffe-ohio"
+  },
+  "wilkes-barre": {
+    "city": "Wilkes-Barre",
+    "state": "Pennsylvania",
+    "slug": "wilkes-barre"
+  },
+  "williamsburg-kentucky": {
+    "city": "Williamsburg",
+    "state": "Kentucky",
+    "slug": "williamsburg-kentucky"
+  },
+  "williamson-west-virginia": {
+    "city": "Williamson",
+    "state": "West Virginia",
+    "slug": "williamson-west-virginia"
+  },
+  "williston": {
+    "city": "Williston",
+    "state": "Florida",
+    "slug": "williston"
+  },
+  "willmar-minnesota": {
+    "city": "Willmar",
+    "state": "Minnesota",
+    "slug": "willmar-minnesota"
+  },
+  "wilmington-massachusetts": {
+    "city": "Wilmington",
+    "state": "Massachusetts",
+    "slug": "wilmington-massachusetts"
+  },
+  "wilson": {
+    "city": "Wilson",
+    "state": "North Carolina",
+    "slug": "wilson"
+  },
+  "wilsonville-oregon": {
+    "city": "Wilsonville",
+    "state": "Oregon",
+    "slug": "wilsonville-oregon"
+  },
+  "winchester-kentucky": {
+    "city": "Winchester",
+    "state": "Kentucky",
+    "slug": "winchester-kentucky"
+  },
+  "winchester-massachusetts": {
+    "city": "Winchester",
+    "state": "Massachusetts",
+    "slug": "winchester-massachusetts"
+  },
+  "winchester-virginia": {
+    "city": "Winchester",
+    "state": "Virginia",
+    "slug": "winchester-virginia"
+  },
+  "windham-new-hampshire": {
+    "city": "Windham",
+    "state": "New Hampshire",
+    "slug": "windham-new-hampshire"
+  },
+  "winona-minnesota": {
+    "city": "Winona",
+    "state": "Minnesota",
+    "slug": "winona-minnesota"
+  },
+  "winooski-vermont": {
+    "city": "Winooski",
+    "state": "Vermont",
+    "slug": "winooski-vermont"
+  },
+  "wisconsin-rapids-wisconsin": {
+    "city": "Wisconsin Rapids",
+    "state": "Wisconsin",
+    "slug": "wisconsin-rapids-wisconsin"
+  },
+  "woburn-massachusetts": {
+    "city": "Woburn",
+    "state": "Massachusetts",
+    "slug": "woburn-massachusetts"
+  },
+  "woodburn-oregon": {
+    "city": "Woodburn",
+    "state": "Oregon",
+    "slug": "woodburn-oregon"
+  },
+  "woodward-oklahoma": {
+    "city": "Woodward",
+    "state": "Oklahoma",
+    "slug": "woodward-oklahoma"
+  },
+  "wooster-ohio": {
+    "city": "Wooster",
+    "state": "Ohio",
+    "slug": "wooster-ohio"
+  },
+  "worland-wyoming": {
+    "city": "Worland",
+    "state": "Wyoming",
+    "slug": "worland-wyoming"
+  },
+  "worthington-minnesota": {
+    "city": "Worthington",
+    "state": "Minnesota",
+    "slug": "worthington-minnesota"
+  },
+  "wrentham-massachusetts": {
+    "city": "Wrentham",
+    "state": "Massachusetts",
+    "slug": "wrentham-massachusetts"
+  },
+  "wytheville-virginia": {
+    "city": "Wytheville",
+    "state": "Virginia",
+    "slug": "wytheville-virginia"
+  },
+  "yakima": {
+    "city": "Yakima",
+    "state": "Washington",
+    "slug": "yakima"
+  },
+  "yankton": {
+    "city": "Yankton",
+    "state": "South Dakota",
+    "slug": "yankton"
+  },
+  "yazoo-city-mississippi": {
+    "city": "Yazoo City",
+    "state": "Mississippi",
+    "slug": "yazoo-city-mississippi"
+  },
+  "yerington-nevada": {
+    "city": "Yerington",
+    "state": "Nevada",
+    "slug": "yerington-nevada"
+  },
+  "york-nebraska": {
+    "city": "York",
+    "state": "Nebraska",
+    "slug": "york-nebraska"
+  },
+  "york-south-carolina": {
+    "city": "York",
+    "state": "South Carolina",
+    "slug": "york-south-carolina"
+  },
+  "youngstown": {
+    "city": "Youngstown",
+    "state": "Ohio",
+    "slug": "youngstown"
+  },
+  "ypsilanti-michigan": {
+    "city": "Ypsilanti",
+    "state": "Michigan",
+    "slug": "ypsilanti-michigan"
+  },
+  "zachary-louisiana": {
+    "city": "Zachary",
+    "state": "Louisiana",
+    "slug": "zachary-louisiana"
+  },
+  "zeeland-michigan": {
+    "city": "Zeeland",
+    "state": "Michigan",
+    "slug": "zeeland-michigan"
   }
+
 } as const;
 
 export function getCityInfo(slug: string) {
