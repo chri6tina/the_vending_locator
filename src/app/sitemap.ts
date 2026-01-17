@@ -3,6 +3,7 @@ import { getAllTaxServicesSlugs } from '@/data/tax-services-cities'
 import { getAllVendingLeadsSlugs } from '@/data/vending-leads-cities'
 import { getAllVendingServicesSlugs } from '@/data/vending-services-cities'
 import states from '@/data/states'
+import { howToStartSlugs as extraHowToStartSlugs } from '@/data/how-to-start-slugs'
 
 // Use ISR - regenerate sitemap index every 6 hours
 export const revalidate = 21600 // 6 hours in seconds
@@ -99,7 +100,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const vendingServicesSlugs = getAllVendingServicesSlugs()
   
   // Get all city slugs from states.ts for how-to-start pages
-  const howToStartSlugs = states.flatMap(state => state.cities.map(city => city.slug))
+  const howToStartSlugs = Array.from(
+    new Set([
+      ...states.flatMap(state => state.cities.map(city => city.slug)),
+      ...extraHowToStartSlugs
+    ])
+  )
 
   // Generate URLs for each category
   const taxServicesUrls = generateCategoryUrls('tax-services', taxServicesSlugs)
