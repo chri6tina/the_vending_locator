@@ -4,6 +4,8 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import { notFound } from 'next/navigation'
 import { cityInfo } from '@/data/cityInfo'
+import EinLLCCheckoutButton from '@/components/EinLLCCheckoutButton'
+import { calculateTotalPrice, getStateFee, SERVICE_FEE } from '@/data/stateFilingFees'
 
 type Params = { params: { slug: string } }
 
@@ -63,28 +65,44 @@ export default async function GuideCityPage({ params }: Params) {
   // Dynamic import temporarily disabled to fix performance issues
   // Enhanced city pages can be re-enabled later with better optimization
 
-  // Extract city and state from slug (optimized - no need to load full states array)
   const slugParts = citySlug.split('-')
-  const stateSlug = slugParts[slugParts.length - 1] // Last part is state
-  const cityNameParts = slugParts.slice(0, -1) // Everything before last part is city
-  
-  // Simple state name mapping (only for display)
-  const stateNameMap: Record<string, string> = {
-    'texas': 'Texas',
-    'california': 'California',
-    'florida': 'Florida',
-    'new-york': 'New York',
-    'pennsylvania': 'Pennsylvania',
-    'illinois': 'Illinois',
-    'ohio': 'Ohio',
-    'georgia': 'Georgia',
+  const multiWordStates: Record<string, string> = {
+    'south-dakota': 'South Dakota',
+    'north-dakota': 'North Dakota',
+    'south-carolina': 'South Carolina',
     'north-carolina': 'North Carolina',
-    'michigan': 'Michigan'
+    'west-virginia': 'West Virginia',
+    'new-hampshire': 'New Hampshire',
+    'new-jersey': 'New Jersey',
+    'new-mexico': 'New Mexico',
+    'new-york': 'New York',
+    'rhode-island': 'Rhode Island',
+    'washington-dc': 'Washington DC',
+    'district-of-columbia': 'District of Columbia'
   }
-  
-  // Capitalize state name properly
-  const stateName = stateNameMap[stateSlug] || stateSlug.split('-').map(s => s.charAt(0).toUpperCase() + s.slice(1)).join(' ')
+
+  let stateSlug = slugParts[slugParts.length - 1]
+  let cityNameParts = slugParts.slice(0, -1)
+
+  if (slugParts.length >= 2) {
+    const twoWordState = slugParts.slice(-2).join('-')
+    if (multiWordStates[twoWordState]) {
+      stateSlug = twoWordState
+      cityNameParts = slugParts.slice(0, -2)
+    } else if (slugParts.length >= 3) {
+      const threeWordState = slugParts.slice(-3).join('-')
+      if (multiWordStates[threeWordState]) {
+        stateSlug = threeWordState
+        cityNameParts = slugParts.slice(0, -3)
+      }
+    }
+  }
+
+  const stateName = multiWordStates[stateSlug] || stateSlug.split('-').map(s => s.charAt(0).toUpperCase() + s.slice(1)).join(' ')
   const cityDisplayName = cityNameParts.map(part => part.charAt(0).toUpperCase() + part.slice(1)).join(' ')
+  const totalPrice = calculateTotalPrice(stateSlug)
+  const stateFee = getStateFee(stateSlug)
+  const hasStatePricing = stateFee > 0
   
   // Related cities - simplified (can be enhanced later if needed)
   const relatedCities: Array<{ name: string; slug: string }> = []
@@ -186,6 +204,107 @@ export default async function GuideCityPage({ params }: Params) {
                   <p className="text-stone">{cityInfo[citySlug]?.permitNotes}</p>
                 </div>
               )}
+            </div>
+
+            {/* EIN & LLC Filing */}
+            <div id="ein-llc" className="bg-white border border-gray-200 rounded-xl p-6">
+              <h2 className="text-2xl font-playfair font-bold text-charcoal mb-4">EIN & LLC Filing in {stateName}</h2>
+              <p className="text-stone">
+                The fastest way to get compliant in {stateName} is to file your LLC and EIN together.
+                Our service includes the state filing plus your EIN so you can open a business bank account and operate confidently.
+              </p>
+              {hasStatePricing ? (
+                <div className="mt-6 grid gap-6 lg:grid-cols-2">
+                  <div className="bg-cream/60 border border-gray-200 rounded-xl p-5">
+                    <h3 className="text-lg font-semibold text-charcoal mb-3">State costs in {stateName}</h3>
+                    <div className="space-y-2 text-sm text-stone">
+                      <div className="flex justify-between">
+                        <span>State filing fee</span>
+                        <span className="font-semibold text-charcoal">${stateFee.toFixed(2)}</span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span>Service fee (EIN + filing support)</span>
+                        <span className="font-semibold text-charcoal">${SERVICE_FEE.toFixed(2)}</span>
+                      </div>
+                      <div className="flex justify-between pt-2 border-t border-gray-200">
+                        <span className="font-semibold text-charcoal">Total</span>
+                        <span className="font-bold text-navy">${totalPrice.toFixed(2)}</span>
+                      </div>
+                    </div>
+                    <p className="mt-3 text-xs text-stone">
+                      State fees are passed through directly. Pricing reflects current filing fees for {stateName}.
+                    </p>
+                  </div>
+                  <div className="bg-cream/60 border border-gray-200 rounded-xl p-5">
+                    <h3 className="text-lg font-semibold text-charcoal mb-3">Start your filing</h3>
+                    <p className="text-stone mb-4">
+                      You’ll be matched to the {stateName} checkout so your filing and EIN are processed correctly.
+                    </p>
+                    <div className="space-y-3">
+                      <EinLLCCheckoutButton stateSlug={stateSlug} stateName={stateName} variant="inline" />
+                      <Link
+                        href={`/ein-llc/${stateSlug}`}
+                        className="inline-flex items-center justify-center rounded-full border border-charcoal/20 px-4 py-2 text-sm font-semibold text-charcoal transition hover:border-charcoal/40"
+                      >
+                        View {stateName} filing details
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              ) : (
+                <div className="mt-6 bg-cream/60 border border-gray-200 rounded-xl p-5">
+                  <p className="text-stone">
+                    We have EIN & LLC filing options for every state. Select your state to see the exact filing fee and checkout.
+                  </p>
+                  <div className="mt-4">
+                    <Link
+                      href="/ein-llc"
+                      className="inline-flex items-center justify-center rounded-full bg-coral px-5 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-coral/90"
+                    >
+                      View EIN & LLC options
+                    </Link>
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* Tax Services */}
+            <div id="tax-services" className="bg-white border border-gray-200 rounded-xl p-6">
+              <h2 className="text-2xl font-playfair font-bold text-charcoal mb-4">Tax & Bookkeeping Support</h2>
+              <p className="text-stone">
+                Vending businesses move fast, and clean books help you grow faster. We connect operators in {cityTitle}
+                with tax and bookkeeping support that covers sales tax setup, monthly bookkeeping, and year-end filings.
+              </p>
+              <div className="mt-4 grid md:grid-cols-2 gap-6">
+                <div className="bg-cream/60 border border-gray-200 rounded-xl p-5">
+                  <h3 className="text-lg font-semibold text-charcoal mb-2">Why it matters</h3>
+                  <ul className="list-disc pl-5 text-stone space-y-2">
+                    <li>Stay compliant with sales tax and local requirements</li>
+                    <li>Track machine profitability by route and location</li>
+                    <li>Prepare for growth with clean financials</li>
+                  </ul>
+                </div>
+                <div className="bg-cream/60 border border-gray-200 rounded-xl p-5">
+                  <h3 className="text-lg font-semibold text-charcoal mb-2">Get help fast</h3>
+                  <p className="text-stone">
+                    We offer vending-focused tax services in key markets and can help you get started quickly.
+                  </p>
+                  <div className="mt-4 flex flex-wrap gap-3">
+                    <Link
+                      href="/tax-services"
+                      className="inline-flex items-center justify-center rounded-full bg-coral px-5 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-coral/90"
+                    >
+                      Explore Tax Services
+                    </Link>
+                    <Link
+                      href="/contact"
+                      className="inline-flex items-center justify-center rounded-full border border-charcoal/20 px-5 py-2 text-sm font-semibold text-charcoal transition hover:border-charcoal/40"
+                    >
+                      Talk to a Specialist
+                    </Link>
+                  </div>
+                </div>
+              </div>
             </div>
 
             {/* Contracts & Scripts */}
