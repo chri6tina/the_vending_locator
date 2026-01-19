@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation'
 import CityLandingPage from '@/components/CityLandingPage'
 import { getCityInfo, getAllVendingLeadsSlugs } from '@/data/vending-leads-cities'
 import { getPrioritySlugs } from '@/lib/seo-priority-pages'
+import { getCityVariantCopy } from '@/lib/city-variations'
 
 // Use ISR (Incremental Static Regeneration) for SEO stability and performance
 // Priority pages are pre-generated at build time for instant SEO
@@ -142,10 +143,16 @@ export default async function VendingLeadsCityPage({ params }: { params: Promise
     }
   }
   
+  const { heroSuffix, benefit } = getCityVariantCopy({
+    category: 'vending-leads',
+    slug: resolvedParams.slug,
+    city,
+    state
+  })
   const benefits = [
     `Verified businesses and decision makers in ${city}`,
     `Clear outreach details tailored to ${state}`,
-    'Guidance to help you move quickly and confidently'
+    benefit
   ]
 
   // Always render JSON-LD and the city landing layout to ensure SEO content is present
@@ -161,7 +168,7 @@ export default async function VendingLeadsCityPage({ params }: { params: Promise
         city={city}
         state={state}
         heroTitle={`Vending Machine Leads in ${city}, ${state}`}
-        heroDescription={`Get verified vending machine leads and locations in ${city}, ${state}. Focus on high-quality businesses and move faster with clear, reliable data.`}
+        heroDescription={`Get verified vending machine leads and locations in ${city}, ${state}. Focus on high-quality businesses and move faster with clear, reliable data. ${heroSuffix}`}
         benefits={benefits}
         primaryCtaLabel="View Pricing"
         primaryCtaHref="/pricing"

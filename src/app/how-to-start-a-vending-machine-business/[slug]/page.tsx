@@ -6,6 +6,7 @@ import { notFound } from 'next/navigation'
 import { cityInfo } from '@/data/cityInfo'
 import EinLLCCheckoutButton from '@/components/EinLLCCheckoutButton'
 import { calculateTotalPrice, getStateFee, SERVICE_FEE } from '@/data/stateFilingFees'
+import { getCityVariantCopy } from '@/lib/city-variations'
 
 type Params = { params: { slug: string } }
 
@@ -103,6 +104,12 @@ export default async function GuideCityPage({ params }: Params) {
   const totalPrice = calculateTotalPrice(stateSlug)
   const stateFee = getStateFee(stateSlug)
   const hasStatePricing = stateFee > 0
+  const { heroSuffix } = getCityVariantCopy({
+    category: 'how-to-start',
+    slug: citySlug,
+    city: cityDisplayName,
+    state: stateName
+  })
   
   // Related cities - simplified (can be enhanced later if needed)
   const relatedCities: Array<{ name: string; slug: string }> = []
@@ -126,7 +133,7 @@ export default async function GuideCityPage({ params }: Params) {
               How to Start a Vending Machine Business in <span className="text-navy">{cityDisplayName}, {stateName}</span>
             </h1>
             <p className="mt-4 text-lg text-stone max-w-3xl mx-auto">
-              Permits, startup costs, best locations, contracts and outreach scripts tailored to {cityDisplayName}, {stateName}. Use this playbook to launch and scale your vending business with confidence.
+              Permits, startup costs, best locations, contracts and outreach scripts tailored to {cityDisplayName}, {stateName}. Use this playbook to launch and scale your vending business with confidence. {heroSuffix}
             </p>
             <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
               <a href="https://vendflow.gumroad.com/l/rxbzy" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy-light text-white px-6 py-3 rounded-lg font-semibold w-full sm:w-auto">Get the Full Guide ($79)</a>
@@ -295,6 +302,12 @@ export default async function GuideCityPage({ params }: Params) {
                       className="inline-flex items-center justify-center rounded-full bg-coral px-5 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-coral/90"
                     >
                       Explore Tax Services
+                    </Link>
+                    <Link
+                      href={`/bookkeeping-kpis/${citySlug}`}
+                      className="inline-flex items-center justify-center rounded-full border border-charcoal/20 px-5 py-2 text-sm font-semibold text-charcoal transition hover:border-charcoal/40"
+                    >
+                      Bookkeeping + KPI Reporting
                     </Link>
                     <Link
                       href="/contact"

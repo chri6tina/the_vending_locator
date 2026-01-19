@@ -14,6 +14,12 @@ interface CityLandingPageProps {
   primaryCtaHref: string
   secondaryCtaLabel?: string
   secondaryCtaHref?: string
+  heroClassName?: string
+  showHeroAccents?: boolean
+  primaryCtaClassName?: string
+  secondaryCtaClassName?: string
+  heroForm?: React.ReactNode
+  children?: React.ReactNode
 }
 
 export default function CityLandingPage({
@@ -27,7 +33,13 @@ export default function CityLandingPage({
   primaryCtaLabel,
   primaryCtaHref,
   secondaryCtaLabel,
-  secondaryCtaHref
+  secondaryCtaHref,
+  heroClassName = 'bg-white',
+  showHeroAccents = false,
+  primaryCtaClassName = 'bg-coral hover:bg-coral/90 text-white',
+  secondaryCtaClassName = 'border border-charcoal/20 text-charcoal hover:border-charcoal/40',
+  heroForm,
+  children
 }: CityLandingPageProps) {
   return (
     <>
@@ -49,7 +61,13 @@ export default function CityLandingPage({
           </div>
         </nav>
 
-        <section className="relative py-16 bg-white">
+        <section className={`relative py-16 overflow-hidden ${heroClassName}`}>
+          {showHeroAccents ? (
+            <div className="pointer-events-none absolute inset-0">
+              <div className="absolute -top-32 right-0 h-72 w-72 rounded-full bg-navy/20 blur-3xl" />
+              <div className="absolute -bottom-32 left-0 h-72 w-72 rounded-full bg-coral/20 blur-3xl" />
+            </div>
+          ) : null}
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-4xl md:text-5xl font-playfair font-bold text-charcoal mb-5">
@@ -58,17 +76,22 @@ export default function CityLandingPage({
               <p className="text-lg md:text-xl text-stone mb-8">
                 {heroDescription}
               </p>
+              {heroForm ? (
+                <div className="mt-4 mb-6">
+                  {heroForm}
+                </div>
+              ) : null}
               <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
                 <Link
                   href={primaryCtaHref}
-                  className="inline-flex items-center justify-center rounded-full bg-coral px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-coral/90"
+                  className={`inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold shadow-sm transition ${primaryCtaClassName}`}
                 >
                   {primaryCtaLabel}
                 </Link>
                 {secondaryCtaLabel && secondaryCtaHref ? (
                   <Link
                     href={secondaryCtaHref}
-                    className="inline-flex items-center justify-center rounded-full border border-charcoal/20 px-6 py-3 text-sm font-semibold text-charcoal transition hover:border-charcoal/40"
+                    className={`inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold transition ${secondaryCtaClassName}`}
                   >
                     {secondaryCtaLabel}
                   </Link>
@@ -118,6 +141,16 @@ export default function CityLandingPage({
             </div>
           </div>
         </section>
+
+        {children ? (
+          <section className="py-14">
+            <div className="container mx-auto px-4">
+              <div className="max-w-4xl mx-auto space-y-10">
+                {children}
+              </div>
+            </div>
+          </section>
+        ) : null}
 
         <section className="py-14">
           <div className="container mx-auto px-4">

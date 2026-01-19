@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import CityLandingPage from '@/components/CityLandingPage'
+import { getCityVariantCopy } from '@/lib/city-variations'
 
 // Use ISR (Incremental Static Regeneration) for SEO stability and performance
 // Pages will be generated on-demand and cached, revalidating every 24 hours
@@ -215,10 +216,16 @@ export default async function VendingMachinesForSalePage({ params }: { params: P
     }
   }
   
+  const { heroSuffix, benefit } = getCityVariantCopy({
+    category: 'vending-machines',
+    slug: citySlug,
+    city,
+    state
+  })
   const benefits = [
     `New and refurbished vending machines available in ${city}`,
     `Delivery and setup guidance for ${state} operators`,
-    'Support for choosing the right equipment mix'
+    benefit
   ]
 
   return (
@@ -233,7 +240,7 @@ export default async function VendingMachinesForSalePage({ params }: { params: P
         city={city}
         state={state}
         heroTitle={`Vending Machines for Sale in ${city}, ${state}`}
-        heroDescription={`Shop smart vending machines and modern coolers in ${city}, ${state}. Get guidance on selecting equipment and plan your rollout with confidence.`}
+        heroDescription={`Shop smart vending machines and modern coolers in ${city}, ${state}. Get guidance on selecting equipment and plan your rollout with confidence. ${heroSuffix}`}
         benefits={benefits}
         primaryCtaLabel="Browse Products"
         primaryCtaHref="/vending-machine-products"

@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation'
 import CityLandingPage from '@/components/CityLandingPage'
 import { getCityInfo, getAllTaxServicesSlugs } from '@/data/tax-services-cities'
 import { getPrioritySlugs } from '@/lib/seo-priority-pages'
+import { getCityVariantCopy } from '@/lib/city-variations'
 
 // Use ISR (Incremental Static Regeneration) for SEO stability and performance
 // Priority pages are pre-generated at build time for instant SEO
@@ -148,10 +149,16 @@ export default async function TaxServicesCityPage({ params }: { params: Promise<
     }
   }
   
+  const { heroSuffix, benefit } = getCityVariantCopy({
+    category: 'tax-services',
+    slug: resolvedParams.slug,
+    city,
+    state
+  })
   const benefits = [
     `Tax preparation tailored to vending businesses in ${city}`,
     `Bookkeeping support designed for ${state} requirements`,
-    'Year-round guidance to keep your filings on track'
+    benefit
   ]
 
   // Always render JSON-LD and the city landing layout to ensure SEO content is present
@@ -167,7 +174,7 @@ export default async function TaxServicesCityPage({ params }: { params: Promise<
         city={city}
         state={state}
         heroTitle={`Tax & Bookkeeping Services in ${city}, ${state}`}
-        heroDescription={`Get expert tax preparation and bookkeeping support for vending machine businesses in ${city}, ${state}. Stay compliant and keep your finances organized.`}
+        heroDescription={`Get expert tax preparation and bookkeeping support for vending machine businesses in ${city}, ${state}. Stay compliant and keep your finances organized. ${heroSuffix}`}
         benefits={benefits}
         primaryCtaLabel="Talk to a Specialist"
         primaryCtaHref="/contact"

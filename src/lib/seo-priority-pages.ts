@@ -110,6 +110,23 @@ export const PRIORITY_CITY_PAGES: Record<string, string[]> = {
     'nashville-tennessee',
     'portland-oregon',
   ]
+  ,
+  'bookkeeping-kpis': [
+    // Match tax-services priority metros
+    'miami-florida',
+    'orlando-florida',
+    'tampa-florida',
+    'jacksonville-florida',
+    'houston-texas',
+    'dallas-texas',
+    'austin-texas',
+    'san-antonio-texas',
+    'los-angeles-california',
+    'san-diego-california',
+    'san-jose-california',
+    'san-francisco-california',
+    'sacramento-california'
+  ]
 }
 
 // Helper to check if a page should be pre-generated

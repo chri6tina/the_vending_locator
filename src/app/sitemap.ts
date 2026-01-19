@@ -78,6 +78,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: 'https://www.thevendinglocator.com/ein-llc', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.9 },
     { url: 'https://www.thevendinglocator.com/vending-locations', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/vending-services', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.9 },
+    { url: 'https://www.thevendinglocator.com/bookkeeping-kpis', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.9 },
     { url: 'https://www.thevendinglocator.com/vending-companies', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.9 },
     { url: 'https://www.thevendinglocator.com/vending-companies/jacksonville-florida', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/vending-companies/orlando-florida', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
@@ -98,6 +99,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const taxServicesSlugs = getAllTaxServicesSlugs()
   const vendingLeadsSlugs = getAllVendingLeadsSlugs()
   const vendingServicesSlugs = getAllVendingServicesSlugs()
+  const bookkeepingKpisSlugs = vendingLeadsSlugs
   
   // Get all city slugs from states.ts for how-to-start pages
   const howToStartSlugs = Array.from(
@@ -111,6 +113,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const taxServicesUrls = generateCategoryUrls('tax-services', taxServicesSlugs)
   const vendingLeadsUrls = generateCategoryUrls('vending-leads', vendingLeadsSlugs)
   const vendingServicesUrls = generateCategoryUrls('vending-services', vendingServicesSlugs)
+  const bookkeepingKpisUrls = generateCategoryUrls('bookkeeping-kpis', bookkeepingKpisSlugs)
   const howToStartUrls = generateCategoryUrls('how-to-start-a-vending-machine-business', howToStartSlugs)
 
   // Combine all URLs
@@ -120,6 +123,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...taxServicesUrls,
     ...vendingLeadsUrls,
     ...vendingServicesUrls,
+    ...bookkeepingKpisUrls,
     ...howToStartUrls
   ]
 
