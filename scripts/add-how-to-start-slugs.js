@@ -99,7 +99,8 @@ if (preferred.length < 1000) {
   throw new Error(`Only found ${preferred.length} new how-to-start slugs. Need 1000.`)
 }
 
-const selected = preferred.slice(0, 1000)
+const targetCount = Number(process.env.COUNT || '1000')
+const selected = preferred.slice(0, targetCount)
 
 const fileBody = [
   '// Auto-generated list of additional how-to-start slugs',

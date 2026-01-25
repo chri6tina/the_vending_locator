@@ -318,6 +318,9 @@ export default function Hero() {
     <div className="bg-warm-white">
       <div className="mx-auto max-w-2xl px-4 sm:px-6 py-12 sm:py-16 lg:py-24">
         <div className="text-center">
+          <p className="text-xs sm:text-sm font-semibold tracking-wide text-navy uppercase">
+            The #1 marketplace for buying vending locations
+          </p>
           <h1 className="text-3xl sm:text-4xl lg:text-6xl font-playfair font-bold tracking-tight text-charcoal leading-tight">
             Qualified Vending Location Leads
           </h1>

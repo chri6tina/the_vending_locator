@@ -31,6 +31,14 @@ export default function VendingLeadsDirectory() {
       <div className="bg-white">
         <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
           <div className="mx-auto max-w-4xl text-center">
+            <motion.p
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.1 }}
+              className="text-xs sm:text-sm font-semibold tracking-wide text-navy uppercase"
+            >
+              The #1 marketplace for buying vending locations
+            </motion.p>
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
