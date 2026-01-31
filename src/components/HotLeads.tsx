@@ -90,6 +90,7 @@ export default function HotLeads() {
           <p className="text-lg sm:text-xl text-chocolate/70 leading-relaxed max-w-3xl mx-auto mt-4">
             Our expert team does the outreach to find you a location that's ready for placement. 
             Due to the scope of this work, it takes 1-6 months, but you get a guaranteed location.
+            Our criteria is based on your request when you sign up — you tell us what you’re looking for, and we target those locations.
           </p>
         </div>
 

@@ -8,6 +8,35 @@ export type CityInfo = {
   extraFaqs?: { q: string; a: string }[]
 }
 export const cityInfo: Record<string, CityInfo> = {
+  'jacksonville-fl': {
+    permitNotes:
+      'Florida requires a sales tax certificate for vending sales. Register with the Florida Department of Revenue and verify Duval County health or site-specific requirements for food and beverage vending.',
+    demandDrivers: [
+      'Healthcare systems and hospital campuses throughout Jacksonville',
+      'Logistics and distribution corridors along I‑95 and I‑295',
+      'Corporate offices and downtown business centers',
+      'Higher education campuses and student housing'
+    ],
+    neighborhoods: [
+      'Downtown & Riverwalk',
+      'Southside',
+      'Arlington',
+      'Northside',
+      'Mandarin'
+    ],
+    seasonalNote:
+      'Summer heat can increase cold‑beverage demand; maintain reliable refrigeration and plan for higher refresh rates in high‑traffic sites.',
+    extraFaqs: [
+      {
+        q: 'Where should I start in Jacksonville?',
+        a: 'Begin with medical offices, logistics hubs, and larger corporate campuses. These sites typically have consistent employee traffic and predictable hours.'
+      },
+      {
+        q: 'Do I need a sales tax permit in Florida?',
+        a: 'Yes. Apply for a Florida sales tax certificate through the Department of Revenue before placing machines and collecting sales tax.'
+      }
+    ],
+  },
   'anchorage-alaska': {
     permitNotes:
       'Anchorage generally does not levy a broad sales tax; confirm any site-specific or product-specific taxes and follow county health guidance for food/beverage vending. Register your business with the State of Alaska and verify local licensing where machines are placed.',
