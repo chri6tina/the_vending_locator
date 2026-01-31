@@ -144,7 +144,13 @@ export default function VendingServicesDirectory() {
                     Fill out the form below and we'll connect you with providers in your area.
                   </p>
 
-                  <form onSubmit={handleSubmit} className="space-y-5">
+                  <form
+                    onSubmit={handleSubmit}
+                    className="space-y-5"
+                    data-ga-event="lead_form_submit"
+                    data-ga-category="form"
+                    data-ga-label="vending-services"
+                  >
                     {/* Name Field */}
                     <div>
                       <label htmlFor="name" className="block text-sm font-medium text-charcoal mb-1.5">

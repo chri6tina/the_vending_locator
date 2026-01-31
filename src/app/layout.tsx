@@ -6,6 +6,7 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 import StructuredData from '@/components/StructuredData'
 import { generateOrganizationSchema } from '@/lib/structured-data'
 import Script from 'next/script'
+import GaEventTracker from '@/components/GaEventTracker'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -63,6 +64,7 @@ export default function RootLayout({
           {children}
           <ZipCodeModalWrapper />
         </ZipCodeModalProvider>
+        <GaEventTracker />
         <Script
           src="https://analytics.ahrefs.com/analytics.js"
           data-key="AMCfW1dtX8BiEqrjyP7svw"

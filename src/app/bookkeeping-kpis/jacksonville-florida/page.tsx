@@ -83,6 +83,9 @@ export default function JacksonvilleBookkeepingKpisPage() {
               action="https://formspree.io/f/mwvvokpz"
               method="POST"
               className="space-y-3 order-1 lg:order-2"
+              data-ga-event="lead_form_submit"
+              data-ga-category="form"
+              data-ga-label="bookkeeping-kpis jacksonville"
             >
               <input
                 name="name"

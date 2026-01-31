@@ -85,6 +85,9 @@ export default function CityLandingPage({
                 <Link
                   href={primaryCtaHref}
                   className={`inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold shadow-sm transition ${primaryCtaClassName}`}
+                  data-ga-event="cta_click"
+                  data-ga-category="city-landing"
+                  data-ga-label={`${categoryLabel} primary`}
                 >
                   {primaryCtaLabel}
                 </Link>
@@ -92,6 +95,9 @@ export default function CityLandingPage({
                   <Link
                     href={secondaryCtaHref}
                     className={`inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold transition ${secondaryCtaClassName}`}
+                    data-ga-event="cta_click"
+                    data-ga-category="city-landing"
+                    data-ga-label={`${categoryLabel} secondary`}
                   >
                     {secondaryCtaLabel}
                   </Link>

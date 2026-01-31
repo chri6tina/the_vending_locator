@@ -359,12 +359,18 @@ export default function Hero() {
             <Link
               href="/pricing"
               className="w-full sm:w-auto bg-navy hover:bg-navy-light text-white px-8 py-3 rounded-lg font-semibold transition-colors"
+              data-ga-event="cta_click"
+              data-ga-category="home-hero"
+              data-ga-label="get_started"
             >
               Get Started
             </Link>
             <Link
               href="/hot-leads"
               className="w-full sm:w-auto bg-transparent text-chocolate border-2 border-chocolate px-8 py-3 rounded-lg font-semibold hover:bg-chocolate hover:text-white transition-colors"
+              data-ga-event="cta_click"
+              data-ga-category="home-hero"
+              data-ga-label="hot_leads"
             >
               View Hot Leads →
             </Link>
