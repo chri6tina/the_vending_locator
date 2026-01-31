@@ -174,6 +174,9 @@ export default async function VendingLeadsCityPage({ params }: { params: Promise
         primaryCtaHref="/pricing"
         secondaryCtaLabel="See Hot Leads"
         secondaryCtaHref="/hot-leads"
+        primaryCtaClassName="bg-navy hover:bg-navy-light text-white"
+        secondaryCtaClassName="border-2 border-chocolate text-chocolate hover:bg-chocolate hover:text-white"
+        finalCtaClassName="bg-navy hover:bg-navy-light text-white"
       />
     </>
   )

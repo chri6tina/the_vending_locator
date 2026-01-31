@@ -18,6 +18,7 @@ interface CityLandingPageProps {
   showHeroAccents?: boolean
   primaryCtaClassName?: string
   secondaryCtaClassName?: string
+  finalCtaClassName?: string
   heroForm?: React.ReactNode
   children?: React.ReactNode
 }
@@ -38,6 +39,7 @@ export default function CityLandingPage({
   showHeroAccents = false,
   primaryCtaClassName = 'bg-coral hover:bg-coral/90 text-white',
   secondaryCtaClassName = 'border border-charcoal/20 text-charcoal hover:border-charcoal/40',
+  finalCtaClassName = 'bg-coral hover:bg-coral/90 text-white',
   heroForm,
   children
 }: CityLandingPageProps) {
@@ -169,7 +171,7 @@ export default function CityLandingPage({
               </p>
               <Link
                 href={primaryCtaHref}
-                className="inline-flex items-center justify-center rounded-full bg-coral px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-coral/90"
+                className={`inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold shadow-sm transition ${finalCtaClassName}`}
               >
                 {primaryCtaLabel}
               </Link>

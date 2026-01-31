@@ -147,7 +147,7 @@ export default function PricingTable() {
               key={plan.name}
               className={`relative bg-white rounded-2xl shadow-lg border-2 p-6 ${
                 plan.popular 
-                  ? 'border-coral bg-gradient-to-br from-coral/5 to-orange-50 shadow-xl' 
+                  ? 'border-navy/40 bg-gradient-to-br from-navy/5 to-blue-50 shadow-xl' 
                   : 'border-gray-200'
               }`}
             >

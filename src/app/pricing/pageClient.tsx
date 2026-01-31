@@ -198,7 +198,7 @@ export default function Pricing() {
               <div className="flex items-center justify-center gap-3">
                 <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
                 <span className="text-sm font-medium text-chocolate">
-                  <span className="font-bold text-coral">{activeUsers}</span> people are choosing plans right now
+                  <span className="font-bold text-navy">{activeUsers}</span> people are choosing plans right now
                 </span>
               </div>
             </div>
@@ -229,7 +229,7 @@ export default function Pricing() {
             {/* Value Proposition */}
             <div className="mt-6 sm:mt-8 px-4 sm:px-0">
               <p className="text-base sm:text-lg text-chocolate/70">
-                Starting at <span className="text-coral font-bold text-lg sm:text-xl">less than $0.30 per lead</span>
+                Starting at <span className="text-navy font-bold text-lg sm:text-xl">less than $0.30 per lead</span>
               </p>
             </div>
 
@@ -292,7 +292,7 @@ export default function Pricing() {
               href="/blog/how-to-start-a-vending-machine-business"
               className="group block bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden"
             >
-              <div className="h-48 bg-gradient-to-br from-navy/10 to-coral/10 flex items-center justify-center">
+              <div className="h-48 bg-gradient-to-br from-navy/10 to-blue-50 flex items-center justify-center">
                 <div className="text-4xl">🚀</div>
               </div>
               <div className="p-6">
@@ -312,7 +312,7 @@ export default function Pricing() {
               href="/blog/vending-machine-maintenance-tips"
               className="group block bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden"
             >
-              <div className="h-48 bg-gradient-to-br from-coral/10 to-navy/10 flex items-center justify-center">
+              <div className="h-48 bg-gradient-to-br from-blue-50 to-navy/10 flex items-center justify-center">
                 <div className="text-4xl">🔧</div>
               </div>
               <div className="p-6">
