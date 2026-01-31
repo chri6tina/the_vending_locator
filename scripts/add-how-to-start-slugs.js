@@ -7,6 +7,7 @@ const outputFile = path.join(root, 'src/data/how-to-start-slugs.ts')
 const cityPagesDir = path.join(root, 'src/app/_city-pages/how-to-start-a-vending-machine-business')
 const vendingLeadsFile = path.join(root, 'src/data/vending-leads-cities.ts')
 const vendingServicesFile = path.join(root, 'src/data/vending-services-cities.ts')
+const taxServicesFile = path.join(root, 'src/data/tax-services-cities.ts')
 
 const readStatesData = () => {
   if (!fs.existsSync(statesFile)) return { citySlugs: new Set(), stateSlugs: [] }
@@ -45,71 +46,91 @@ const readSlugsFromDataFile = (filePath) => {
   return Array.from(slugs)
 }
 
-const { citySlugs: existingSlugs, stateSlugs } = readStatesData()
+const readExistingHowToStartSlugs = () => {
+  if (!fs.existsSync(outputFile)) return []
+  const raw = fs.readFileSync(outputFile, 'utf8')
+  const slugRegex = /"([^"]+)"/g
+  const slugs = new Set()
+  let match
+  while ((match = slugRegex.exec(raw))) {
+    slugs.add(match[1])
+  }
+  return Array.from(slugs)
+}
+
+const { citySlugs: stateCitySlugs, stateSlugs } = readStatesData()
+const existingExtras = readExistingHowToStartSlugs()
+const cityDirs = readCityDirs()
+const existingHowToStart = new Set([
+  ...stateCitySlugs,
+  ...existingExtras,
+  ...cityDirs
+])
+
+const candidates = [
+  ...readSlugsFromDataFile(vendingLeadsFile),
+  ...readSlugsFromDataFile(vendingServicesFile),
+  ...readSlugsFromDataFile(taxServicesFile)
+]
+
+const uniqueCandidates = Array.from(new Set(candidates)).filter((slug) => !existingHowToStart.has(slug))
 const stateSlugsByLength = [...stateSlugs].sort((a, b) => b.length - a.length)
 
-const metroize = (slug) => {
-  if (!slug || slug.includes('-metro-')) return null
-  let matchedState = null
+const resolveStateSlug = (slug) => {
   for (const stateSlug of stateSlugsByLength) {
-    if (slug.endsWith(`-${stateSlug}`)) {
-      matchedState = stateSlug
-      break
+    if (slug.endsWith(`-${stateSlug}`)) return stateSlug
+  }
+  return null
+}
+
+const buildVariants = (slug) => {
+  if (!slug) return []
+  if (slug.includes('-metro-') || slug.includes('-greater-') || slug.includes('-county-')) return []
+  const stateSlug = resolveStateSlug(slug)
+  if (!stateSlug) return []
+  const cityPart = slug.slice(0, -(stateSlug.length + 1))
+  if (!cityPart) return []
+  const variants = [
+    `${cityPart}-metro-${stateSlug}`,
+    `${cityPart}-greater-${stateSlug}`
+  ]
+  if (!cityPart.endsWith('county') && !cityPart.includes('-county')) {
+    variants.push(`${cityPart}-county-${stateSlug}`)
+  }
+  return variants
+}
+const targetCount = Number(process.env.COUNT || '1000')
+const selectedSet = new Set()
+
+for (const slug of uniqueCandidates) {
+  if (selectedSet.size >= targetCount) break
+  selectedSet.add(slug)
+}
+
+if (selectedSet.size < targetCount) {
+  const baseSlugs = Array.from(stateCitySlugs).sort((a, b) => a.localeCompare(b))
+  for (const baseSlug of baseSlugs) {
+    if (selectedSet.size >= targetCount) break
+    const variants = buildVariants(baseSlug)
+    for (const variant of variants) {
+      if (selectedSet.size >= targetCount) break
+      if (existingHowToStart.has(variant)) continue
+      selectedSet.add(variant)
     }
   }
-  if (!matchedState) return null
-  const cityPart = slug.slice(0, -(matchedState.length + 1))
-  if (!cityPart) return null
-  return `${cityPart}-metro-${matchedState}`
-}
-const allCityDirs = readCityDirs()
-const candidates = []
-
-for (const slug of allCityDirs) {
-  if (!existingSlugs.has(slug)) candidates.push(slug)
 }
 
-const leadSlugs = readSlugsFromDataFile(vendingLeadsFile)
-for (const slug of leadSlugs) {
-  if (!existingSlugs.has(slug)) candidates.push(slug)
-}
-
-const serviceSlugs = readSlugsFromDataFile(vendingServicesFile)
-for (const slug of serviceSlugs) {
-  if (!existingSlugs.has(slug)) candidates.push(slug)
-}
-
-const unique = Array.from(new Set(candidates)).sort((a, b) => a.localeCompare(b))
-const withoutMetro = unique.filter((slug) => !slug.includes('-metro-'))
-let preferred = withoutMetro.length >= 1000 ? withoutMetro : unique
-
-if (preferred.length < 1000) {
-  const metroCandidates = []
-  for (const slug of existingSlugs) {
-    const metroSlug = metroize(slug)
-    if (!metroSlug) continue
-    if (existingSlugs.has(metroSlug)) continue
-    metroCandidates.push(metroSlug)
-  }
-  const expanded = Array.from(new Set([...preferred, ...metroCandidates]))
-  preferred = expanded
-}
-
-if (preferred.length < 1000) {
-  throw new Error(`Only found ${preferred.length} new how-to-start slugs. Need 1000.`)
-}
-
-const targetCount = Number(process.env.COUNT || '1000')
-const selected = preferred.slice(0, targetCount)
+const selected = Array.from(selectedSet)
+const combined = Array.from(new Set([...existingExtras, ...selected])).sort((a, b) => a.localeCompare(b))
 
 const fileBody = [
   '// Auto-generated list of additional how-to-start slugs',
   'export const howToStartSlugs = [',
-  ...selected.map((slug) => `  "${slug}",`),
+  ...combined.map((slug) => `  "${slug}",`),
   '] as const',
   '',
   'export type HowToStartSlug = typeof howToStartSlugs[number]'
 ].join('\n')
 
 fs.writeFileSync(outputFile, fileBody, 'utf8')
-console.log(`Wrote ${selected.length} how-to-start slugs.`)
+console.log(`Wrote ${selected.length} new slugs. Total extras: ${combined.length}.`)

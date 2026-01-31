@@ -4,7 +4,8 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import { notFound } from 'next/navigation'
 import { cityInfo } from '@/data/cityInfo'
-import EinLLCCheckoutButton from '@/components/EinLLCCheckoutButton'
+import states from '@/data/states'
+import { howToStartSlugs } from '@/data/how-to-start-slugs'
 import { calculateTotalPrice, getStateFee, SERVICE_FEE } from '@/data/stateFilingFees'
 import { getCityVariantCopy } from '@/lib/city-variations'
 
@@ -13,60 +14,8 @@ type Params = { params: { slug: string } }
 // City-specific enrichment to avoid thin/duplicate content
 // Add entries here city-by-city as we enrich guides
 
-
-
-export async function generateMetadata({ params }: Params): Promise<Metadata> {
-  // Handle Next.js 15 params as Promise or Next.js 14 params as object
-  const resolvedParams = params instanceof Promise ? await params : params
-  
-  if (!resolvedParams.slug) {
-    return {
-      title: 'How to Start a Vending Machine Business - The Vending Locator',
-      description: 'Learn how to start a vending machine business: licensing, permits, startup costs, and locations.'
-    }
-  }
-  
-  const citySlug = resolvedParams.slug.replace(/-/g, ' ')
-  const titleCity = citySlug.split(' ').map(s => s.charAt(0).toUpperCase() + s.slice(1)).join(' ')
-  return {
-    title: `How to Start a Vending Machine Business in ${titleCity} (2026 Guide)`,
-    description: `Learn how to start a vending machine business in ${titleCity}: licensing, permits, startup costs, best locations, contracts, outreach scripts, and FAQs.`,
-    keywords: [`vending machine business ${titleCity}`, `how to start vending machines ${titleCity}`, `${titleCity} vending permits`, `${titleCity} vending locations`],
-    alternates: { canonical: `https://www.thevendinglocator.com/how-to-start-a-vending-machine-business/${resolvedParams.slug}` },
-    openGraph: {
-      title: `How to Start a Vending Machine Business in ${titleCity}`,
-      description: `Permits, costs, locations, and contracts to launch in ${titleCity}.`,
-      url: `https://www.thevendinglocator.com/how-to-start-a-vending-machine-business/${resolvedParams.slug}`,
-      siteName: 'The Vending Locator',
-      type: 'article'
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: `How to Start a Vending Machine Business in ${titleCity}`,
-      description: `Step-by-step guide for ${titleCity}: legal, locations, costs, and contracts.`
-    },
-    robots: { index: true, follow: true }
-  }
-}
-
-// Use ISR (Incremental Static Regeneration) for SEO stability and performance
-// Pages will be generated on-demand and cached, revalidating every 24 hours
-export const revalidate = 86400 // 24 hours in seconds
-
-export default async function GuideCityPage({ params }: Params) {
-  // Handle Next.js 15 params as Promise or Next.js 14 params as object
-  const resolvedParams = params instanceof Promise ? await params : params
-  const { slug } = resolvedParams
-  
-  if (!slug) return notFound()
-
-  const citySlug = slug
-  const cityTitle = citySlug.split('-').map(s => s.charAt(0).toUpperCase() + s.slice(1)).join(' ')
-
-  // Dynamic import temporarily disabled to fix performance issues
-  // Enhanced city pages can be re-enabled later with better optimization
-
-  const slugParts = citySlug.split('-')
+const parseCityState = (slug: string) => {
+  const slugParts = slug.split('-')
   const multiWordStates: Record<string, string> = {
     'south-dakota': 'South Dakota',
     'north-dakota': 'North Dakota',
@@ -154,6 +103,68 @@ export default async function GuideCityPage({ params }: Params) {
 
   const stateName = stateAbbrMap[stateSlug] || multiWordStates[stateSlug] || stateSlug.split('-').map(s => s.charAt(0).toUpperCase() + s.slice(1)).join(' ')
   const cityDisplayName = cityNameParts.map(part => part.charAt(0).toUpperCase() + part.slice(1)).join(' ')
+  return { stateSlug, stateName, cityDisplayName }
+}
+
+
+
+export async function generateMetadata({ params }: Params): Promise<Metadata> {
+  // Handle Next.js 15 params as Promise or Next.js 14 params as object
+  const resolvedParams = params instanceof Promise ? await params : params
+  
+  if (!resolvedParams.slug) {
+    return {
+      title: 'How to Start a Vending Machine Business - The Vending Locator',
+      description: 'Learn how to start a vending machine business: licensing, permits, startup costs, and locations.'
+    }
+  }
+  
+  const { cityDisplayName, stateName } = parseCityState(resolvedParams.slug)
+  const { heroSuffix } = getCityVariantCopy({
+    category: 'how-to-start',
+    slug: resolvedParams.slug,
+    city: cityDisplayName,
+    state: stateName
+  })
+  const titleCity = cityDisplayName
+  return {
+    title: `How to Start a Vending Machine Business in ${titleCity} (2026 Guide)`,
+    description: `Learn how to start a vending machine business in ${titleCity}: licensing, permits, startup costs, best locations, contracts, outreach scripts, and FAQs. ${heroSuffix}`,
+    keywords: [`vending machine business ${titleCity}`, `how to start vending machines ${titleCity}`, `${titleCity} vending permits`, `${titleCity} vending locations`],
+    alternates: { canonical: `https://www.thevendinglocator.com/how-to-start-a-vending-machine-business/${resolvedParams.slug}` },
+    openGraph: {
+      title: `How to Start a Vending Machine Business in ${titleCity}`,
+      description: `Permits, costs, locations, and contracts to launch in ${titleCity}.`,
+      url: `https://www.thevendinglocator.com/how-to-start-a-vending-machine-business/${resolvedParams.slug}`,
+      siteName: 'The Vending Locator',
+      type: 'article'
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `How to Start a Vending Machine Business in ${titleCity}`,
+      description: `Step-by-step guide for ${titleCity}: legal, locations, costs, and contracts.`
+    },
+    robots: { index: true, follow: true }
+  }
+}
+
+// Use ISR (Incremental Static Regeneration) for SEO stability and performance
+// Pages will be generated on-demand and cached, revalidating every 24 hours
+export const revalidate = 86400 // 24 hours in seconds
+
+export default async function GuideCityPage({ params }: Params) {
+  // Handle Next.js 15 params as Promise or Next.js 14 params as object
+  const resolvedParams = params instanceof Promise ? await params : params
+  const { slug } = resolvedParams
+  
+  if (!slug) return notFound()
+
+  const citySlug = slug
+  const { stateSlug, stateName, cityDisplayName } = parseCityState(citySlug)
+  const cityTitle = cityDisplayName
+
+  // Dynamic import temporarily disabled to fix performance issues
+  // Enhanced city pages can be re-enabled later with better optimization
   const totalPrice = calculateTotalPrice(stateSlug)
   const stateFee = getStateFee(stateSlug)
   const hasStatePricing = stateFee > 0
@@ -163,44 +174,190 @@ export default async function GuideCityPage({ params }: Params) {
     city: cityDisplayName,
     state: stateName
   })
-  
-  // Related cities - simplified (can be enhanced later if needed)
-  const relatedCities: Array<{ name: string; slug: string }> = []
+  const variantIndex = Math.abs([...citySlug].reduce((acc, char) => acc * 31 + char.charCodeAt(0), 7)) % 4
+  const heroLineVariants = [
+    `A focused, local playbook for licensing, location outreach, and ROI planning in ${cityDisplayName}, ${stateName}.`,
+    `A city-specific guide covering permits, placement strategy, and revenue planning in ${cityDisplayName}, ${stateName}.`,
+    `A practical launch guide for compliance, location wins, and cash flow in ${cityDisplayName}, ${stateName}.`,
+    `A step-by-step plan for licensing, placement, and ROI goals in ${cityDisplayName}, ${stateName}.`
+  ]
+  const heroSupportVariants = [
+    'Built for operators starting with 1-2 machines.',
+    'Includes outreach scripts and placement criteria.',
+    'Streamlines compliance steps so you launch faster.',
+    'Covers product mix and service cadence benchmarks.'
+  ]
+  const valueCardVariants = [
+    [
+      { title: 'Permits & licensing', body: 'Exact steps to register, get your EIN, and stay compliant.' },
+      { title: 'Location scouting', body: 'Shortlists, outreach scripts, and closing templates.' },
+      { title: 'ROI & scaling', body: 'Cost ranges, break-even targets, and growth plan.' }
+    ],
+    [
+      { title: 'Compliance & setup', body: 'Business registration, EIN, and local licensing checkpoints.' },
+      { title: 'Placement strategy', body: 'Where to pitch, who to contact, and how to follow up.' },
+      { title: 'Profit planning', body: 'Revenue ranges, margins, and expansion timing.' }
+    ],
+    [
+      { title: 'Start correctly', body: 'Avoid early mistakes with a clean setup checklist.' },
+      { title: 'Win locations', body: 'Outreach scripts and proven placement angles.' },
+      { title: 'Scale smart', body: 'Targets for break-even and adding machines.' }
+    ],
+    [
+      { title: 'Legal essentials', body: 'Permits, EIN, and city-level compliance steps.' },
+      { title: 'Location playbook', body: 'Decision-maker scripts and placement criteria.' },
+      { title: 'ROI roadmap', body: 'Forecasts, break-even, and growth milestones.' }
+    ]
+  ]
+  const quickStartNotes = [
+    `Local operators in ${cityDisplayName} typically start with 1-2 machines and expand after 90 days of data.`,
+    `Focus on high-traffic anchors like offices, clinics, and logistics sites in ${cityDisplayName}.`,
+    `Your first goal: validate sales velocity before adding more locations.`,
+    `Use a simple service cadence (weekly or biweekly) to keep inventory fresh.`
+  ]
+  const costsIntroVariants = [
+    'Understand typical startup costs and what a healthy route can earn.',
+    'Estimate your startup budget and map a realistic payback timeline.',
+    'Plan equipment, inventory, and setup costs before you scale.',
+    'Know the upfront spend and revenue targets for a strong first route.'
+  ]
+  const roiCopyVariants = [
+    `Healthy locations often generate $250–$800+ per machine per month. Well‑placed routes in ${cityTitle} can reach payback within 10–18 months depending on product mix and service quality.`,
+    `In ${cityTitle}, operators commonly see $250–$800+ per machine per month. With smart placement, break‑even can happen in 10–18 months.`,
+    `A solid ${cityTitle} location can generate $250–$800+ monthly per machine. Consistent service and product mix usually drive payback in 10–18 months.`,
+    `Top ${cityTitle} locations can earn $250–$800+ per month per machine. With clean operations, payback often lands in 10–18 months.`
+  ]
+  const contractCopyVariants = [
+    {
+      title: 'Contracts pack',
+      body: 'Placement agreement, service terms, and onboarding checklist tailored for quick sign‑off.'
+    },
+    {
+      title: 'Contracts pack',
+      body: 'Ready-to-use placement terms, service cadence language, and onboarding steps.'
+    },
+    {
+      title: 'Contracts pack',
+      body: 'Simple agreements and checklists to speed up approvals.'
+    },
+    {
+      title: 'Contracts pack',
+      body: 'Clear placement terms and service expectations you can reuse.'
+    }
+  ]
+  const scriptCopyVariants = [
+    {
+      title: 'Outreach scripts',
+      body: 'Cold call, email, and in‑person scripts with follow‑up sequences for decision‑makers.'
+    },
+    {
+      title: 'Outreach scripts',
+      body: 'Proven email and call scripts with follow‑ups that get responses.'
+    },
+    {
+      title: 'Outreach scripts',
+      body: 'Direct scripts for first contact, follow‑up, and close.'
+    },
+    {
+      title: 'Outreach scripts',
+      body: 'Messaging templates to reach facility managers quickly.'
+    }
+  ]
+  const faqIntroVariants = [
+    `Answers to the most common startup questions for ${cityTitle}.`,
+    `Quick answers to common questions from new operators in ${cityTitle}.`,
+    `FAQ for first‑time vending operators in ${cityTitle}.`,
+    `Common questions we hear from ${cityTitle} operators.`
+  ]
+  const primaryCtaLabel = 'Get the Full Guide'
+  const primaryCtaClassName = 'inline-flex min-h-[44px] items-center justify-center rounded-lg bg-navy px-6 py-3 font-semibold text-white transition hover:bg-navy-light'
+
+  const allHowToStartSlugs = Array.from(new Set([
+    ...states.flatMap(state => state.cities.map(city => city.slug)),
+    ...howToStartSlugs
+  ]))
+  const getRelatedCitySlugs = () => {
+    const seed = Math.abs([...citySlug].reduce((acc, char) => acc * 17 + char.charCodeAt(0), 5))
+    const list: string[] = []
+    for (let i = 0; i < allHowToStartSlugs.length && list.length < 6; i += 1) {
+      const idx = (seed + i * 37) % allHowToStartSlugs.length
+      const candidate = allHowToStartSlugs[idx]
+      if (!candidate || candidate === citySlug) continue
+      if (list.includes(candidate)) continue
+      list.push(candidate)
+    }
+    return list
+  }
+  const relatedCities = getRelatedCitySlugs().map((slug) => ({
+    slug,
+    name: slug.split('-').map(part => part.charAt(0).toUpperCase() + part.slice(1)).join(' ')
+  }))
 
   return (
     <>
       <Header />
       <main className="min-h-screen bg-warm-white">
-      {/* Hero */}
-      <section className="bg-white border-b border-gray-200">
-        <div className="mx-auto max-w-7xl px-6 py-16 sm:py-20">
-          <div className="mx-auto max-w-4xl text-center">
-            <nav className="text-sm text-stone mb-4 flex items-center justify-center gap-2">
-              <Link href="/" className="hover:text-navy">Home</Link>
-              <span>/</span>
-              <Link href="/guide" className="hover:text-navy">Guide</Link>
-              <span>/</span>
-              <span className="text-charcoal font-medium">{cityTitle}</span>
-            </nav>
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-playfair font-bold text-charcoal leading-tight">
-              How to Start a Vending Machine Business in <span className="text-navy">{cityDisplayName}, {stateName}</span>
-            </h1>
-            <p className="mt-4 text-lg text-stone max-w-3xl mx-auto">
-              Permits, startup costs, best locations, contracts and outreach scripts tailored to {cityDisplayName}, {stateName}. Use this playbook to launch and scale your vending business with confidence. {heroSuffix}
-            </p>
-            <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
-              <a href="https://vendflow.gumroad.com/l/rxbzy" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy-light text-white px-6 py-3 rounded-lg font-semibold w-full sm:w-auto">Get the Full Guide ($79)</a>
+        {/* Hero */}
+        <section className="border-b border-gray-200 bg-white">
+          <div className="mx-auto max-w-6xl px-6 py-12 sm:py-16">
+            <div className="text-center">
+              <nav className="text-sm text-stone mb-4 flex items-center justify-center gap-2">
+                <Link href="/" className="hover:text-navy">Home</Link>
+                <span>/</span>
+                <Link href="/guide" className="hover:text-navy">Guide</Link>
+                <span>/</span>
+                <span className="text-charcoal font-medium">{cityTitle}</span>
+              </nav>
+              <div className="flex flex-wrap items-center justify-center gap-2 text-xs font-semibold">
+                <span className="inline-flex items-center rounded-full border border-navy/20 bg-navy/5 px-3 py-1 text-navy">
+                  Trusted by 3,000+ vending operators nationwide
+                </span>
+                <span className="inline-flex items-center rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-emerald-700">
+                  Updated for 2026
+                </span>
+              </div>
+              <h1 className="mt-4 text-3xl sm:text-4xl lg:text-5xl font-playfair font-bold text-charcoal leading-tight">
+                Start generating passive income from vending machines in <span className="text-navy">{cityDisplayName}</span>
+              </h1>
+              <p className="mt-3 text-base text-stone mx-auto max-w-2xl">
+                {heroLineVariants[variantIndex]} {heroSupportVariants[variantIndex]} {heroSuffix}
+              </p>
+              <div className="mt-6 flex flex-wrap items-center justify-center gap-4">
+                <a
+                  href="https://vendflow.gumroad.com/l/rxbzy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={primaryCtaClassName}
+                  data-ga-event="cta_click"
+                  data-ga-category="guide"
+                  data-ga-label={`how_to_start_${citySlug}`}
+                >
+                  {primaryCtaLabel}
+                </a>
+                <span className="text-sm font-semibold text-charcoal">$79 one-time</span>
+              </div>
+              <p className="mt-2 text-xs font-semibold text-stone">
+                Instant download • yours forever • printable checklists
+              </p>
+            </div>
+            <div className="mt-8 grid gap-3 sm:grid-cols-3">
+              {valueCardVariants[variantIndex].map((item) => (
+                <div key={item.title} className="rounded-2xl border border-gray-200 bg-white p-4 text-center">
+                  <p className="text-sm font-semibold text-charcoal">{item.title}</p>
+                  <p className="mt-2 text-sm text-stone">{item.body}</p>
+                </div>
+              ))}
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
+        {/* Social proof removed */}
       <section className="py-16">
-        <div className="mx-auto max-w-5xl px-6 space-y-12">
-          {/* Quick start */}
+        <div className="mx-auto max-w-6xl px-6 space-y-12">
+          {/* Quick start cards */}
           <div className="grid gap-6 md:grid-cols-3">
             {[
-              { title: 'Get compliant', body: `Register your business, obtain an EIN, and confirm licensing for ${cityTitle}.` },
+              { title: 'Get compliant fast', body: `Register your business, obtain an EIN, and confirm licensing for ${cityTitle}.` },
               { title: 'Lock in locations', body: `Target offices, healthcare, logistics, and education sites in ${cityTitle}.` },
               { title: 'Install & optimize', body: 'Install with card readers, service weekly, and expand based on sales.' }
             ].map((item) => (
@@ -210,10 +367,29 @@ export default async function GuideCityPage({ params }: Params) {
               </div>
             ))}
           </div>
+          <p className="text-sm text-stone">
+            {quickStartNotes[variantIndex]}
+          </p>
+          {relatedCities.length > 0 && (
+            <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+              <h3 className="text-xl font-playfair font-bold text-charcoal">Explore nearby guides</h3>
+              <div className="mt-4 flex flex-wrap gap-3">
+                {relatedCities.map((city) => (
+                  <Link
+                    key={city.slug}
+                    href={`/how-to-start-a-vending-machine-business/${city.slug}`}
+                    className="rounded-full border border-gray-200 bg-cream/60 px-4 py-2 text-sm font-semibold text-chocolate hover:text-navy"
+                  >
+                    {city.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
 
-          {/* Steps */}
+          {/* Step-by-step */}
           <div id="steps" className="rounded-2xl border border-gray-200 bg-white p-8 shadow-sm">
-            <h2 className="text-2xl sm:text-3xl font-playfair font-bold text-charcoal mb-6">Step-by-step launch plan</h2>
+            <h2 className="text-2xl sm:text-3xl font-playfair font-bold text-charcoal mb-6">Step‑by‑step launch plan</h2>
             <div className="grid gap-4 md:grid-cols-2">
               {[
                 { title: 'Business setup & licensing', body: `Register your business, obtain an EIN, and confirm licensing requirements for ${cityTitle}.` },
@@ -224,7 +400,7 @@ export default async function GuideCityPage({ params }: Params) {
                 { title: 'Install & optimize', body: 'Launch, track sales, and expand once top sellers are clear.' }
               ].map((step, index) => (
                 <div key={step.title} className="flex gap-4 rounded-xl border border-gray-200 p-5">
-                  <div className="flex h-9 w-9 items-center justify-center rounded-full bg-navy text-white font-semibold">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-navy text-sm font-semibold leading-none text-white">
                     {index + 1}
                   </div>
                   <div>
@@ -238,8 +414,24 @@ export default async function GuideCityPage({ params }: Params) {
 
           {/* Costs & ROI */}
           <div id="costs" className="rounded-2xl border border-gray-200 bg-white p-8 shadow-sm">
-            <h2 className="text-2xl font-playfair font-bold text-charcoal mb-6">Costs & ROI</h2>
-            <div className="grid gap-6 md:grid-cols-2">
+            <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+              <div>
+                <h2 className="text-2xl font-playfair font-bold text-charcoal mb-2">Costs & ROI</h2>
+                <p className="text-stone">{costsIntroVariants[variantIndex]}</p>
+              </div>
+              <a
+                href="https://vendflow.gumroad.com/l/rxbzy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={primaryCtaClassName}
+                data-ga-event="cta_click"
+                data-ga-category="guide"
+                data-ga-label={`how_to_start_${citySlug}`}
+              >
+                {primaryCtaLabel}
+              </a>
+            </div>
+            <div className="mt-6 grid gap-6 md:grid-cols-2">
               <div className="rounded-xl border border-gray-200 bg-cream/60 p-6">
                 <h3 className="text-lg font-semibold text-charcoal mb-2">Typical startup costs</h3>
                 <ul className="list-disc pl-5 text-stone space-y-2">
@@ -253,9 +445,11 @@ export default async function GuideCityPage({ params }: Params) {
               <div className="rounded-xl border border-gray-200 bg-white p-6">
                 <h3 className="text-lg font-semibold text-charcoal mb-2">Expected ROI</h3>
                 <p className="text-stone">
-                  Healthy locations often generate $250–$800+ per machine per month. Well‑placed routes in {cityTitle}
-                  can reach payback within 10–18 months depending on product mix and service quality.
+                  {roiCopyVariants[variantIndex]}
                 </p>
+                <div className="mt-4 rounded-lg border border-gray-200 bg-cream/60 p-4 text-sm text-stone">
+                  <strong className="text-charcoal">Case study:</strong> 2 machines × $450/mo avg = $900/mo gross. Break‑even in ~12 months.
+                </div>
               </div>
             </div>
             {cityInfo[citySlug]?.permitNotes && (
@@ -321,9 +515,8 @@ export default async function GuideCityPage({ params }: Params) {
                       <span className="font-bold text-navy">${totalPrice.toFixed(2)}</span>
                     </div>
                   </div>
-                  <div className="space-y-3">
-                    <EinLLCCheckoutButton stateSlug={stateSlug} stateName={stateName} variant="inline" />
-                    <Link href={`/ein-llc/${stateSlug}`} className="inline-flex items-center justify-center rounded-full border border-charcoal/20 px-4 py-2 text-sm font-semibold text-charcoal transition hover:border-charcoal/40">
+                  <div className="mt-4 text-sm">
+                    <Link href={`/ein-llc/${stateSlug}`} className="font-semibold text-navy hover:text-navy-light">
                       View {stateName} filing details
                     </Link>
                   </div>
@@ -332,7 +525,7 @@ export default async function GuideCityPage({ params }: Params) {
                 <div className="mt-5 rounded-xl border border-gray-200 bg-cream/60 p-5">
                   <p className="text-stone">Select your state to see the exact filing fee and checkout.</p>
                   <div className="mt-4">
-                    <Link href="/ein-llc" className="inline-flex items-center justify-center rounded-full bg-coral px-5 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-coral/90">
+                    <Link href="/ein-llc" className="text-sm font-semibold text-navy hover:text-navy-light">
                       View EIN & LLC options
                     </Link>
                   </div>
@@ -353,11 +546,11 @@ export default async function GuideCityPage({ params }: Params) {
                     <li>Prepare for growth with clean books</li>
                   </ul>
                 </div>
-                <div className="flex flex-wrap gap-3">
-                  <Link href="/tax-services" className="inline-flex items-center justify-center rounded-full bg-coral px-5 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-coral/90">
+                <div className="flex flex-wrap gap-4 text-sm font-semibold">
+                  <Link href="/tax-services" className="text-navy hover:text-navy-light">
                     Explore Tax Services
                   </Link>
-                  <Link href={`/bookkeeping-kpis/${citySlug}`} className="inline-flex items-center justify-center rounded-full border border-charcoal/20 px-5 py-2 text-sm font-semibold text-charcoal transition hover:border-charcoal/40">
+                  <Link href={`/bookkeeping-kpis/${citySlug}`} className="text-navy hover:text-navy-light">
                     Bookkeeping + KPI Reporting
                   </Link>
                 </div>
@@ -367,64 +560,60 @@ export default async function GuideCityPage({ params }: Params) {
 
           {/* Contracts & Scripts */}
           <div id="contracts" className="rounded-2xl border border-gray-200 bg-white p-8 shadow-sm">
-            <h2 className="text-2xl font-playfair font-bold text-charcoal mb-6">Contracts & scripts</h2>
-            <div className="grid gap-6 md:grid-cols-2">
+            <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+              <h2 className="text-2xl font-playfair font-bold text-charcoal">Contracts & scripts</h2>
+              <Link href="/vending-leads" className="text-sm font-semibold text-navy hover:text-navy-light">
+                Explore placement services
+              </Link>
+            </div>
+            <div className="mt-6 grid gap-6 md:grid-cols-2">
               <div className="rounded-xl border border-gray-200 p-6">
-                <h3 className="text-lg font-semibold text-charcoal mb-2">Contracts pack</h3>
-                <p className="text-stone">Placement agreement, service terms, and onboarding checklist tailored for quick sign‑off.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-2">{contractCopyVariants[variantIndex].title}</h3>
+                <p className="text-stone">{contractCopyVariants[variantIndex].body}</p>
               </div>
               <div className="rounded-xl border border-gray-200 p-6">
-                <h3 className="text-lg font-semibold text-charcoal mb-2">Outreach scripts</h3>
-                <p className="text-stone">Cold call, email, and in‑person scripts with follow‑up sequences for decision‑makers.</p>
+                <h3 className="text-lg font-semibold text-charcoal mb-2">{scriptCopyVariants[variantIndex].title}</h3>
+                <p className="text-stone">{scriptCopyVariants[variantIndex].body}</p>
               </div>
             </div>
           </div>
 
           {/* FAQ */}
           <div id="faq" className="rounded-2xl border border-gray-200 bg-white p-8 shadow-sm">
-            <h2 className="text-2xl font-playfair font-bold text-charcoal mb-6">FAQ: {cityTitle}</h2>
-            <div className="grid gap-6 md:grid-cols-2">
-              <div className="rounded-xl border border-gray-200 bg-cream/60 p-6">
-                <h3 className="text-lg font-semibold text-charcoal mb-2">Do I need a permit to operate?</h3>
-                <p className="text-stone">Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals.</p>
-              </div>
-              <div className="rounded-xl border border-gray-200 bg-cream/60 p-6">
-                <h3 className="text-lg font-semibold text-charcoal mb-2">Best places to start?</h3>
-                <p className="text-stone">Begin with offices, medical clinics, schools, gyms, logistics facilities, and municipal buildings in {cityTitle}.</p>
-              </div>
-              <div className="rounded-xl border border-gray-200 bg-cream/60 p-6">
-                <h3 className="text-lg font-semibold text-charcoal mb-2">How many machines first?</h3>
-                <p className="text-stone">Start with 1–2 machines, validate sales, then add more on proven sites.</p>
-              </div>
-              <div className="rounded-xl border border-gray-200 bg-cream/60 p-6">
-                <h3 className="text-lg font-semibold text-charcoal mb-2">Card readers needed?</h3>
-                <p className="text-stone">Yes—cashless increases conversion and enables telemetry to track inventory and performance.</p>
-              </div>
+            <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+              <h2 className="text-2xl font-playfair font-bold text-charcoal">FAQ: {cityTitle}</h2>
+              <a
+                href="https://vendflow.gumroad.com/l/rxbzy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={primaryCtaClassName}
+                data-ga-event="cta_click"
+                data-ga-category="guide"
+                data-ga-label={`how_to_start_${citySlug}`}
+              >
+                {primaryCtaLabel}
+              </a>
             </div>
-            {cityInfo[citySlug]?.extraFaqs && (
-              <div className="mt-6 grid gap-6 md:grid-cols-2">
-                {cityInfo[citySlug]!.extraFaqs!.map((f, idx) => (
-                  <div key={idx} className="rounded-xl border border-gray-200 bg-cream/60 p-6">
-                    <h3 className="text-lg font-semibold text-charcoal mb-2">{f.q}</h3>
-                    <p className="text-stone">{f.a}</p>
-                  </div>
-                ))}
-              </div>
-            )}
-          </div>
-        </div>
-      </section>
-
-      <section className="py-12 bg-white border-t border-gray-200">
-        <div className="mx-auto max-w-7xl px-6">
-          <h2 className="text-xl font-playfair font-bold text-charcoal mb-4">Explore more markets</h2>
-          <div className="flex flex-wrap gap-3">
-            <Link href="/guide" className="px-3 py-2 rounded-lg border border-gray-200 bg-cream/60 text-chocolate hover:text-navy">
-              Browse all city guides
-            </Link>
-            <Link href="/how-to-start-a-vending-machine-business" className="px-3 py-2 rounded-lg border border-gray-200 bg-cream/60 text-chocolate hover:text-navy">
-              View all guides
-            </Link>
+            <p className="mt-2 text-sm text-stone">{faqIntroVariants[variantIndex]}</p>
+            <div className="mt-6 grid gap-4">
+              {[
+                { q: 'Do I need a permit to operate?', a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals.' },
+                { q: 'Best places to start?', a: `Begin with offices, medical clinics, schools, gyms, logistics facilities, and municipal buildings in ${cityTitle}.` },
+                { q: 'How many machines first?', a: 'Start with 1–2 machines, validate sales, then add more on proven sites.' },
+                { q: 'Card readers needed?', a: 'Yes—cashless increases conversion and enables telemetry to track inventory and performance.' }
+              ].map((item) => (
+                <details key={item.q} className="rounded-xl border border-gray-200 bg-cream/60 p-5">
+                  <summary className="cursor-pointer font-semibold text-charcoal">{item.q}</summary>
+                  <p className="mt-2 text-stone">{item.a}</p>
+                </details>
+              ))}
+              {cityInfo[citySlug]?.extraFaqs?.map((f, idx) => (
+                <details key={idx} className="rounded-xl border border-gray-200 bg-cream/60 p-5">
+                  <summary className="cursor-pointer font-semibold text-charcoal">{f.q}</summary>
+                  <p className="mt-2 text-stone">{f.a}</p>
+                </details>
+              ))}
+            </div>
           </div>
         </div>
       </section>
