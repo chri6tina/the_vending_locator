@@ -308,53 +308,72 @@ for (const entry of candidates) {
   uniqueNew.set(entry.slug, entry)
 }
 
+const targetCount = Number(process.env.COUNT || '1000')
 const newEntries = Array.from(uniqueNew.values())
 
-if (newEntries.length < 1000) {
-  const needed = 1000 - newEntries.length
+const buildVariants = (entry) => {
+  const slug = entry.slug
+  if (!slug || !slug.includes('-')) return []
+  if (slug.includes('-metro-') || slug.includes('-greater-') || slug.includes('-county-')) return []
   const stateSlugList = Array.from(stateSlugSet).sort((a, b) => b.length - a.length)
+  let matchedStateSlug = null
+  for (const stateSlug of stateSlugList) {
+    if (slug.endsWith(`-${stateSlug}`)) {
+      matchedStateSlug = stateSlug
+      break
+    }
+  }
+  if (!matchedStateSlug) return []
+  const citySlug = slug.slice(0, -(matchedStateSlug.length + 1))
+  if (!citySlug) return []
+  const variants = [
+    {
+      slug: `${citySlug}-metro-${matchedStateSlug}`,
+      city: `${entry.city} Metro`,
+      state: entry.state
+    },
+    {
+      slug: `${citySlug}-greater-${matchedStateSlug}`,
+      city: `Greater ${entry.city}`,
+      state: entry.state
+    }
+  ]
+  if (!citySlug.endsWith('county') && !citySlug.includes('-county')) {
+    variants.push({
+      slug: `${citySlug}-county-${matchedStateSlug}`,
+      city: `${entry.city} County`,
+      state: entry.state
+    })
+  }
+  return variants
+}
+
+if (newEntries.length < targetCount) {
+  const needed = targetCount - newEntries.length
   const leadEntries = readCitiesFromTs(dataFile)
   const generated = []
 
   for (const entry of leadEntries) {
     if (generated.length >= needed) break
-    const slug = entry.slug
-    if (!slug || !slug.includes('-')) continue
-    let matchedStateSlug = null
-    for (const stateSlug of stateSlugList) {
-      if (slug.endsWith(`-${stateSlug}`)) {
-        matchedStateSlug = stateSlug
-        break
-      }
+    const variants = buildVariants(entry)
+    for (const variant of variants) {
+      if (generated.length >= needed) break
+      if (existingSlugs.has(variant.slug) || uniqueNew.has(variant.slug)) continue
+      generated.push(variant)
+      uniqueNew.set(variant.slug, variant)
     }
-    if (!matchedStateSlug) continue
-    const citySlug = slug.slice(0, -(matchedStateSlug.length + 1))
-    if (!citySlug) continue
-    const metroSlug = `${citySlug}-metro-${matchedStateSlug}`
-    if (existingSlugs.has(metroSlug) || uniqueNew.has(metroSlug)) continue
-    const metroCity = `${entry.city} Metro`
-    generated.push({
-      slug: metroSlug,
-      city: metroCity,
-      state: entry.state
-    })
-    uniqueNew.set(metroSlug, {
-      slug: metroSlug,
-      city: metroCity,
-      state: entry.state
-    })
   }
 
   if (generated.length < needed) {
-    throw new Error(`Only found ${newEntries.length + generated.length} new city entries. Need 1000.`)
+    throw new Error(`Only found ${newEntries.length + generated.length} new city entries. Need ${targetCount}.`)
   }
   newEntries.push(...generated)
 }
 
-newEntries.splice(1000)
+newEntries.splice(targetCount)
 
-if (newEntries.length < 1000) {
-  throw new Error(`Only found ${newEntries.length} new city entries. Need 1000.`)
+if (newEntries.length < targetCount) {
+  throw new Error(`Only found ${newEntries.length} new city entries. Need ${targetCount}.`)
 }
 
 newEntries.sort((a, b) => a.slug.localeCompare(b.slug))

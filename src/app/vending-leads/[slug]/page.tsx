@@ -1,9 +1,8 @@
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import CityLandingPage from '@/components/CityLandingPage'
+import VendingLeadsCityTemplate from '@/components/VendingLeadsCityTemplate'
 import { getCityInfo, getAllVendingLeadsSlugs } from '@/data/vending-leads-cities'
 import { getPrioritySlugs } from '@/lib/seo-priority-pages'
-import { getCityVariantCopy } from '@/lib/city-variations'
 
 // Use ISR (Incremental Static Regeneration) for SEO stability and performance
 // Priority pages are pre-generated at build time for instant SEO
@@ -99,86 +98,7 @@ export default async function VendingLeadsCityPage({ params }: { params: Promise
   }
   
   const { city, state, slug } = cityInfo
-  const pageUrl = `https://www.thevendinglocator.com/vending-leads/${slug}`
-  
-  // JSON-LD structured data for SEO
-  const structuredData = {
-    '@context': 'https://schema.org',
-    '@type': 'WebPage',
-    name: `Vending Machine Leads in ${city}, ${state}`,
-    description: `Get verified vending machine leads and locations in ${city}, ${state}. Find qualified businesses for vending machine placement.`,
-    url: pageUrl,
-    breadcrumb: {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        {
-          '@type': 'ListItem',
-          position: 1,
-          name: 'Home',
-          item: 'https://www.thevendinglocator.com'
-        },
-        {
-          '@type': 'ListItem',
-          position: 2,
-          name: 'Vending Leads',
-          item: 'https://www.thevendinglocator.com/vending-leads'
-        },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: `${city}, ${state}`,
-          item: pageUrl
-        }
-      ]
-    },
-    mainEntity: {
-      '@type': 'ItemList',
-      name: `Vending Machine Leads in ${city}, ${state}`,
-      description: `Verified business leads and locations for vending machine placement in ${city}, ${state}`,
-      itemListElement: {
-        '@type': 'ListItem',
-        position: 1,
-        name: `Business locations in ${city}, ${state}`
-      }
-    }
-  }
-  
-  const { heroSuffix, benefit } = getCityVariantCopy({
-    category: 'vending-leads',
-    slug: resolvedParams.slug,
-    city,
-    state
-  })
-  const benefits = [
-    `Verified businesses and decision makers in ${city}`,
-    `Clear outreach details tailored to ${state}`,
-    benefit
-  ]
 
-  // Always render JSON-LD and the city landing layout to ensure SEO content is present
-  return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-      />
-      <CityLandingPage
-        categoryLabel="Vending Leads"
-        basePath="/vending-leads"
-        city={city}
-        state={state}
-        heroTitle={`Vending Machine Leads in ${city}, ${state}`}
-        heroDescription={`Get verified vending machine leads and locations in ${city}, ${state}. Focus on high-quality businesses and move faster with clear, reliable data. ${heroSuffix}`}
-        benefits={benefits}
-        primaryCtaLabel="View Pricing"
-        primaryCtaHref="/pricing"
-        secondaryCtaLabel="See Hot Leads"
-        secondaryCtaHref="/hot-leads"
-        primaryCtaClassName="bg-navy hover:bg-navy-light text-white"
-        secondaryCtaClassName="border-2 border-chocolate text-chocolate hover:bg-chocolate hover:text-white"
-        finalCtaClassName="bg-navy hover:bg-navy-light text-white"
-      />
-    </>
-  )
+  return <VendingLeadsCityTemplate city={city} state={state} slug={slug} />
 }
 
