@@ -346,6 +346,14 @@ export default function MiamiFloridaVendingCompaniesPage() {
                                 <span>{company.coverage}</span>
                               </div>
                             )}
+                            {!company.verified && (
+                              <Link
+                                href="/vending-companies-contact"
+                                className="inline-flex items-center justify-center rounded-lg border border-navy/20 px-3 py-2 text-xs font-semibold text-navy hover:bg-navy/5 transition-colors"
+                              >
+                                Claim this listing
+                              </Link>
+                            )}
                           </div>
                         </div>
                       </div>
@@ -395,10 +403,10 @@ export default function MiamiFloridaVendingCompaniesPage() {
             <div className="flex items-center justify-between flex-col sm:flex-row gap-4">
               <div className="text-center sm:text-left flex-1">
                 <p className="text-base sm:text-lg font-playfair font-semibold text-charcoal mb-1">
-                  Want to be featured on this list?
+                  Own a vending company in Miami?
                 </p>
                 <p className="text-sm text-stone">
-                  Contact us to get your vending company listed and reach more businesses.
+                  Claim your listing or request placement to reach more local businesses.
                 </p>
               </div>
               <Link

@@ -13,6 +13,12 @@ export function middleware(request: NextRequest) {
     return new NextResponse('Access denied', { status: 403 })
   }
 
+  const url = request.nextUrl.clone()
+  if (url.searchParams.has('fbclid')) {
+    url.searchParams.delete('fbclid')
+    return NextResponse.redirect(url, 301)
+  }
+
   return NextResponse.next()
 }
 

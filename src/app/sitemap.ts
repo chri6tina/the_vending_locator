@@ -2,6 +2,7 @@ import { MetadataRoute } from 'next'
 import { getAllTaxServicesSlugs } from '@/data/tax-services-cities'
 import { getAllVendingLeadsSlugs } from '@/data/vending-leads-cities'
 import { getAllVendingServicesSlugs } from '@/data/vending-services-cities'
+import { getAllVendingCompaniesSlugs } from '@/data/vending-companies-cities'
 import states from '@/data/states'
 import { howToStartSlugs as extraHowToStartSlugs } from '@/data/how-to-start-slugs'
 
@@ -99,6 +100,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const taxServicesSlugs = getAllTaxServicesSlugs()
   const vendingLeadsSlugs = getAllVendingLeadsSlugs()
   const vendingServicesSlugs = getAllVendingServicesSlugs()
+  const vendingCompaniesSlugs = getAllVendingCompaniesSlugs()
   const bookkeepingKpisSlugs = vendingLeadsSlugs
   
   // Get all city slugs from states.ts for how-to-start pages
@@ -113,6 +115,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const taxServicesUrls = generateCategoryUrls('tax-services', taxServicesSlugs)
   const vendingLeadsUrls = generateCategoryUrls('vending-leads', vendingLeadsSlugs)
   const vendingServicesUrls = generateCategoryUrls('vending-services', vendingServicesSlugs)
+  const vendingCompaniesUrls = generateCategoryUrls('vending-companies', vendingCompaniesSlugs)
   const bookkeepingKpisUrls = generateCategoryUrls('bookkeeping-kpis', bookkeepingKpisSlugs)
   const howToStartUrls = generateCategoryUrls('how-to-start-a-vending-machine-business', howToStartSlugs)
 
@@ -123,6 +126,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...taxServicesUrls,
     ...vendingLeadsUrls,
     ...vendingServicesUrls,
+    ...vendingCompaniesUrls,
     ...bookkeepingKpisUrls,
     ...howToStartUrls
   ]
