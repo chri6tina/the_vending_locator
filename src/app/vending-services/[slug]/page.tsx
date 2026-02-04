@@ -1,9 +1,8 @@
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import CityLandingPage from '@/components/CityLandingPage'
+import VendingServicesCityTemplate from '@/components/VendingServicesCityTemplate'
 import { getCityInfo, getAllVendingServicesSlugs } from '@/data/vending-services-cities'
 import { getPrioritySlugs } from '@/lib/seo-priority-pages'
-import { getCityVariantCopy } from '@/lib/city-variations'
 
 // Use ISR (Incremental Static Regeneration) for SEO stability and performance
 // Priority pages are pre-generated at build time for instant SEO
@@ -149,36 +148,14 @@ export default async function VendingServicesCityPage({ params }: { params: Prom
     }
   }
   
-  const { heroSuffix, benefit } = getCityVariantCopy({
-    category: 'vending-services',
-    slug: resolvedParams.slug,
-    city,
-    state
-  })
-  const benefits = [
-    `Reliable operators and service support in ${city}`,
-    `Local coverage options tailored to ${state}`,
-    benefit
-  ]
-
-  // Always render JSON-LD and the city landing layout to ensure SEO content is present
+  // Always render JSON-LD and the city layout to ensure SEO content is present
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
-      <CityLandingPage
-        categoryLabel="Vending Services"
-        basePath="/vending-services"
-        city={city}
-        state={state}
-        heroTitle={`Vending Machine Services in ${city}, ${state}`}
-        heroDescription={`Connect with vending service providers in ${city}, ${state} for installation, maintenance, and stocking. Get dependable support for your location. ${heroSuffix}`}
-        benefits={benefits}
-        primaryCtaLabel="Request Service"
-        primaryCtaHref="/contact"
-      />
+      <VendingServicesCityTemplate city={city} state={state} slug={slug} />
     </>
   )
 }

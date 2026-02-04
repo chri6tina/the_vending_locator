@@ -1,27 +1,47 @@
-'use client'
+"use client"
 
-import { useState } from 'react'
+import { useMemo, useState } from 'react'
 import Link from 'next/link'
+import { motion } from 'framer-motion'
+import {
+  MapPinIcon,
+  BuildingOffice2Icon,
+  CheckCircleIcon,
+  UserIcon,
+  PhoneIcon,
+  EnvelopeIcon,
+  UsersIcon
+} from '@heroicons/react/24/outline'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import { motion } from 'framer-motion'
-import { MapPinIcon, ChevronDownIcon, BuildingOffice2Icon, CheckCircleIcon, UserIcon, PhoneIcon, EnvelopeIcon, UsersIcon } from '@heroicons/react/24/outline'
 import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 import states from '@/data/states'
+import { vendingServicesCities } from '@/data/vending-services-cities'
 
-export default function VendingServicesDirectory() {
-  const [expandedStates, setExpandedStates] = useState<string[]>([])
+interface VendingServicesStateTemplateProps {
+  stateSlug: string
+}
+
+const toTitleCase = (value: string) =>
+  value
+    .split('-')
+    .map((part) => (part ? part[0].toUpperCase() + part.slice(1) : part))
+    .join(' ')
+
+export default function VendingServicesStateTemplate({ stateSlug }: VendingServicesStateTemplateProps) {
+  const stateEntry = states.find((entry) => entry.slug === stateSlug)
+  const stateDisplayName = stateEntry?.name ?? toTitleCase(stateSlug)
+
   const [formSubmitted, setFormSubmitted] = useState(false)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [showSuccessModal, setShowSuccessModal] = useState(false)
 
-  const toggleState = (stateSlug: string) => {
-    setExpandedStates(prev => 
-      prev.includes(stateSlug) 
-        ? prev.filter(s => s !== stateSlug)
-        : [...prev, stateSlug]
+  const cities = useMemo(() => {
+    const cityList = Object.values(vendingServicesCities).filter(
+      (entry) => entry.state === stateDisplayName
     )
-  }
+    return cityList.sort((a, b) => a.city.localeCompare(b.city))
+  }, [stateDisplayName])
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
@@ -29,13 +49,14 @@ export default function VendingServicesDirectory() {
 
     const form = e.currentTarget
     const formData = new FormData(form)
+    formData.append('state', stateDisplayName)
 
     try {
       const response = await fetch('https://formspree.io/f/xjkpkrak', {
         method: 'POST',
         body: formData,
         headers: {
-          'Accept': 'application/json'
+          Accept: 'application/json'
         }
       })
 
@@ -58,13 +79,10 @@ export default function VendingServicesDirectory() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-white via-cream/60 to-warm-white">
       <Header />
-      
-      {/* Hero Section with Form */}
+
       <div className="bg-gradient-to-br from-white via-cream/40 to-coral/10">
         <div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            
-            {/* Left Column - Text Content */}
             <div>
               <motion.p
                 initial={{ opacity: 0, y: 10 }}
@@ -72,7 +90,7 @@ export default function VendingServicesDirectory() {
                 transition={{ duration: 0.8, delay: 0.1 }}
                 className="text-xs sm:text-sm font-semibold tracking-wide text-coral uppercase"
               >
-                The #1 marketplace for buying vending locations
+                Vending services across {stateDisplayName}
               </motion.p>
               <motion.h1
                 initial={{ opacity: 0, y: 20 }}
@@ -80,7 +98,7 @@ export default function VendingServicesDirectory() {
                 transition={{ duration: 0.8 }}
                 className="text-3xl font-playfair font-bold tracking-tight text-navy sm:text-4xl lg:text-5xl"
               >
-                Get Vending Machines for Your Business
+                Get Vending Machines for Your {stateDisplayName} Business
               </motion.h1>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
@@ -88,11 +106,10 @@ export default function VendingServicesDirectory() {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="mt-6 text-lg sm:text-xl text-charcoal/80 leading-relaxed"
               >
-                Looking to add vending machines to your break room, office, or facility? 
-                Connect with professional vending service providers in your area—at no cost to you.
+                Connect with professional vending service providers across {stateDisplayName}. We match you
+                with verified operators for free installation, stocking, and maintenance.
               </motion.p>
 
-              {/* Benefits List */}
               <motion.ul
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -113,12 +130,11 @@ export default function VendingServicesDirectory() {
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircleIcon className="h-6 w-6 text-coral flex-shrink-0 mt-0.5" />
-                  <span className="text-charcoal/80">Quick installation (1-2 weeks)</span>
+                  <span className="text-charcoal/80">Installations typically in 1-2 weeks</span>
                 </li>
               </motion.ul>
             </div>
 
-            {/* Right Column - Contact Form */}
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
@@ -132,7 +148,7 @@ export default function VendingServicesDirectory() {
                     Request Received!
                   </h3>
                   <p className="text-charcoal/80">
-                    We'll connect you with local vending providers within 24 hours.
+                    We'll connect you with local {stateDisplayName} providers within 24 hours.
                   </p>
                 </div>
               ) : (
@@ -141,7 +157,7 @@ export default function VendingServicesDirectory() {
                     Get Free Vending Services
                   </h3>
                   <p className="text-charcoal/70 mb-6 text-center">
-                    Fill out the form below and we'll connect you with providers in your area.
+                    Share your location details and we'll match you with providers.
                   </p>
 
                   <form
@@ -149,9 +165,8 @@ export default function VendingServicesDirectory() {
                     className="space-y-5"
                     data-ga-event="lead_form_submit"
                     data-ga-category="form"
-                    data-ga-label="vending-services"
+                    data-ga-label={`vending-services ${stateSlug}`}
                   >
-                    {/* Name Field */}
                     <div>
                       <label htmlFor="name" className="block text-sm font-medium text-charcoal mb-1.5">
                         Full Name *
@@ -169,7 +184,6 @@ export default function VendingServicesDirectory() {
                       </div>
                     </div>
 
-                    {/* Email Field */}
                     <div>
                       <label htmlFor="email" className="block text-sm font-medium text-charcoal mb-1.5">
                         Email Address *
@@ -187,7 +201,6 @@ export default function VendingServicesDirectory() {
                       </div>
                     </div>
 
-                    {/* Phone Field */}
                     <div>
                       <label htmlFor="phone" className="block text-sm font-medium text-charcoal mb-1.5">
                         Phone Number *
@@ -205,7 +218,6 @@ export default function VendingServicesDirectory() {
                       </div>
                     </div>
 
-                    {/* Number of Employees Field */}
                     <div>
                       <label htmlFor="employees" className="block text-sm font-medium text-charcoal mb-1.5">
                         Number of Employees *
@@ -229,7 +241,6 @@ export default function VendingServicesDirectory() {
                       </div>
                     </div>
 
-                    {/* Zip Code Field */}
                     <div>
                       <label htmlFor="zipcode" className="block text-sm font-medium text-charcoal mb-1.5">
                         Zip Code *
@@ -249,7 +260,6 @@ export default function VendingServicesDirectory() {
                       </div>
                     </div>
 
-                    {/* Submit Button */}
                     <button
                       type="submit"
                       disabled={isSubmitting}
@@ -259,7 +269,7 @@ export default function VendingServicesDirectory() {
                     </button>
 
                     <p className="text-xs text-charcoal/60 text-center mt-3">
-                      By submitting, you agree to be contacted by vending service providers in your area.
+                      By submitting, you agree to be contacted by vending service providers in {stateDisplayName}.
                     </p>
                   </form>
                 </>
@@ -269,7 +279,6 @@ export default function VendingServicesDirectory() {
         </div>
       </div>
 
-      {/* Value Proposition Section */}
       <section className="bg-gradient-to-b from-warm-white via-white to-cream/60 border-t border-gray-200 py-16">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center mb-12">
@@ -280,10 +289,10 @@ export default function VendingServicesDirectory() {
               transition={{ duration: 0.8 }}
               className="text-2xl sm:text-3xl font-playfair font-bold text-chocolate"
             >
-              Benefits of Having Vending Machines
+              Benefits of Vending Services in {stateDisplayName}
             </motion.h2>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -295,7 +304,7 @@ export default function VendingServicesDirectory() {
               <BuildingOffice2Icon className="h-10 w-10 text-coral mb-4" />
               <h3 className="text-xl font-semibold text-navy mb-3">No Upfront Costs</h3>
               <p className="text-charcoal/80">
-                Vending operators typically install, stock, and maintain machines at no cost to your business. They handle everything.
+                Operators handle installation, stocking, and maintenance at no cost to your business.
               </p>
             </motion.div>
 
@@ -307,9 +316,9 @@ export default function VendingServicesDirectory() {
               className="bg-white p-6 rounded-lg shadow-lg border border-coral/10"
             >
               <CheckCircleIcon className="h-10 w-10 text-coral mb-4" />
-              <h3 className="text-xl font-semibold text-navy mb-3">Employee Convenience</h3>
+              <h3 className="text-xl font-semibold text-navy mb-3">Convenient for Teams</h3>
               <p className="text-charcoal/80">
-                Keep your staff happy with 24/7 access to snacks, drinks, and healthy options right in your building.
+                Keep employees and visitors happy with quick access to snacks, drinks, and essentials.
               </p>
             </motion.div>
 
@@ -323,125 +332,39 @@ export default function VendingServicesDirectory() {
               <MapPinIcon className="h-10 w-10 text-coral mb-4" />
               <h3 className="text-xl font-semibold text-navy mb-3">Local Providers</h3>
               <p className="text-charcoal/80">
-                Connect with vetted, local vending operators who know your area and can provide responsive service.
+                We match you with vetted operators that serve your city and surrounding areas.
               </p>
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* States Directory */}
-      <div className="bg-gradient-to-b from-cream/60 via-white to-cream/40 py-16 sm:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-4xl">
-            <motion.h2
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-2xl sm:text-3xl font-playfair font-bold text-chocolate mb-8 text-center"
-            >
-              Find Vending Services in Your Area
-            </motion.h2>
-            
-            <div className="grid gap-4">
-              {states.map((state, index) => {
-                // Only show cities for states with vending-services city pages created
-                const statesWithServicesCities = [
-                  'alabama', 'alaska', 'arizona', 'arkansas', 'california', 'colorado', 'connecticut', 
-                  'delaware', 'florida', 'georgia', 'hawaii', 'idaho', 'illinois', 'indiana', 'iowa', 
-                  'kansas', 'kentucky', 'louisiana', 'maine', 'maryland', 'massachusetts', 'michigan', 
-                  'minnesota', 'mississippi', 'missouri', 'montana', 'nebraska', 'nevada', 'new-hampshire',
-                  'new-jersey', 'new-mexico', 'new-york', 'north-carolina', 'north-dakota', 'ohio', 
-                  'oklahoma', 'oregon', 'pennsylvania', 'rhode-island', 'south-carolina', 'south-dakota',
-                  'tennessee', 'texas', 'utah', 'vermont', 'virginia', 'washington', 'washington-dc',
-                  'west-virginia', 'wisconsin', 'wyoming'
-                ]
-                const hasCities = statesWithServicesCities.includes(state.slug) && state.cities && state.cities.length > 0
-                const isExpanded = expandedStates.includes(state.slug)
-                
-                return (
-                  <motion.div
-                    key={state.slug}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: 0.5 + index * 0.05 }}
-                    className="bg-white rounded-lg shadow-lg overflow-hidden border border-coral/10"
-                  >
-                    <div className="px-6 py-4 flex items-center justify-between hover:bg-cream/50 transition-colors">
-                      <div className="flex items-center gap-3">
-                        <MapPinIcon className="h-5 w-5 text-coral flex-shrink-0" />
-                        <div>
-                          <h3 className="font-semibold text-navy">{state.name}</h3>
-                          <p className="text-sm text-stone mt-0.5">
-                            {hasCities ? `${state.cities.length} Cities Available` : 'Statewide Service Coverage'}
-                          </p>
-                        </div>
-                      </div>
-                      <div className="flex items-center gap-3">
-                        {hasCities && (
-                          <button
-                            onClick={() => toggleState(state.slug)}
-                            className="px-4 py-2 border border-navy text-navy rounded-lg hover:bg-navy/10 transition-colors text-sm font-medium"
-                          >
-                            {isExpanded ? 'Hide Cities' : 'Show Cities'}
-                          </button>
-                        )}
-                        <Link
-                          href={`/vending-services/${state.slug}`}
-                          className="px-4 py-2 bg-navy text-white rounded-lg hover:bg-navy-light transition-colors text-sm font-medium"
-                        >
-                          View State
-                        </Link>
-                      </div>
-                    </div>
-                    
-                    {/* Cities Dropdown */}
-                    {hasCities && isExpanded && (
-                      <div className="px-6 pb-4 border-t border-stone/20 bg-cream/40">
-                        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 pt-4">
-                          {state.cities.map((city: { name: string; slug: string }) => (
-                            <Link
-                              key={city.slug}
-                              href={`/vending-services/${city.slug}`}
-                              className="px-3 py-2 text-sm text-navy hover:bg-white hover:shadow-sm rounded-lg transition-all border border-transparent hover:border-coral/10"
-                            >
-                              {city.name}
-                            </Link>
-                          ))}
-                        </div>
-                      </div>
-                    )}
-                  </motion.div>
-                )
-              })}
-            </div>
+      <section className="bg-gradient-to-b from-cream/60 via-white to-cream/40 py-16 border-t border-gray-200">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="text-2xl sm:text-3xl font-playfair font-bold text-chocolate mb-8 text-center"
+          >
+            Find Vending Services in {stateDisplayName}
+          </motion.h2>
 
-            {/* Call to Action for Service Providers */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-              className="mt-12 bg-gradient-to-r from-navy via-navy to-navy-light rounded-lg p-8 text-center shadow-xl"
-            >
-              <h3 className="text-2xl font-playfair font-bold text-white mb-4">
-                Ready to Add Vending to Your Business?
-              </h3>
-              <p className="text-white/90 mb-6 max-w-2xl mx-auto">
-                Browse local vending service providers above or contact us to find the perfect vending partner for your location.
-              </p>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {cities.map((city) => (
               <Link
-                href="/contact"
-                className="inline-flex items-center px-8 py-3 bg-coral text-white font-semibold rounded-lg hover:bg-coral/90 transition-all duration-200 shadow-lg hover:shadow-xl"
+                key={city.slug}
+                href={`/vending-services/${city.slug}`}
+                className="px-4 py-3 rounded-lg bg-white shadow-sm border border-coral/10 text-navy hover:text-coral hover:shadow-md transition-all"
               >
-                Get Started Today
+                {city.city}
               </Link>
-            </motion.div>
+            ))}
           </div>
         </div>
-      </div>
+      </section>
 
-      {/* How It Works Section */}
       <section className="bg-gradient-to-b from-white via-warm-white to-white py-16 border-t border-gray-200">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center mb-12">
@@ -452,7 +375,7 @@ export default function VendingServicesDirectory() {
               transition={{ duration: 0.8 }}
               className="text-2xl sm:text-3xl font-playfair font-bold text-chocolate"
             >
-              How It Works
+              How It Works in {stateDisplayName}
             </motion.h2>
           </div>
 
@@ -467,9 +390,9 @@ export default function VendingServicesDirectory() {
               <div className="w-16 h-16 bg-coral/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-bold text-coral">1</span>
               </div>
-              <h3 className="text-xl font-semibold text-navy mb-3">Find Your Area</h3>
+              <h3 className="text-xl font-semibold text-navy mb-3">Request Service</h3>
               <p className="text-charcoal/80">
-                Browse service providers by state and city to find operators in your location.
+                Tell us about your {stateDisplayName} location and your team size.
               </p>
             </motion.div>
 
@@ -483,9 +406,9 @@ export default function VendingServicesDirectory() {
               <div className="w-16 h-16 bg-coral/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-bold text-coral">2</span>
               </div>
-              <h3 className="text-xl font-semibold text-navy mb-3">Review Providers</h3>
+              <h3 className="text-xl font-semibold text-navy mb-3">Get Matched</h3>
               <p className="text-charcoal/80">
-                Compare verified vending service providers, their offerings, and customer reviews.
+                We connect you with local vending operators that cover your area.
               </p>
             </motion.div>
 
@@ -499,17 +422,16 @@ export default function VendingServicesDirectory() {
               <div className="w-16 h-16 bg-coral/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl font-bold text-coral">3</span>
               </div>
-              <h3 className="text-xl font-semibold text-navy mb-3">Connect & Grow</h3>
+              <h3 className="text-xl font-semibold text-navy mb-3">Install & Support</h3>
               <p className="text-charcoal/80">
-                Contact service providers directly to discuss vending solutions for your business.
+                Choose a provider and get free installation, stocking, and maintenance.
               </p>
             </motion.div>
           </div>
         </div>
       </section>
 
-      {/* FAQ Section */}
-      <section className="bg-gradient-to-b from-cream/60 via-white to-cream/40 py-16">
+      <section className="bg-gradient-to-b from-cream/60 via-white to-cream/40 py-16 border-t border-gray-200">
         <div className="mx-auto max-w-4xl px-6 lg:px-8">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
@@ -518,63 +440,33 @@ export default function VendingServicesDirectory() {
             transition={{ duration: 0.8 }}
             className="text-2xl sm:text-3xl font-playfair font-bold text-chocolate mb-8 text-center"
           >
-            Frequently Asked Questions
+            Vending Services in {stateDisplayName} - FAQ
           </motion.h2>
 
           <div className="space-y-6">
-            <div className="bg-white p-6 rounded-lg shadow-lg border border-coral/10">
-              <h3 className="text-lg font-semibold text-navy mb-2">
-                What does it cost to get vending machines at my business?
-              </h3>
-              <p className="text-charcoal/80">
-                Typically nothing! Most vending operators install, stock, and maintain machines at no cost to you. They earn revenue from sales and often offer commission sharing. There are no upfront fees or equipment costs for your business.
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-lg border border-coral/10">
-              <h3 className="text-lg font-semibold text-navy mb-2">
-                How do I get vending machines installed at my location?
-              </h3>
-              <p className="text-charcoal/80">
-                Simply browse service providers in your state and city, then contact them directly. Most providers offer free site evaluations to assess your location's traffic and recommend the best vending solutions for your needs.
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-lg border border-coral/10">
-              <h3 className="text-lg font-semibold text-navy mb-2">
-                Is there a cost to use this directory?
-              </h3>
-              <p className="text-charcoal/80">
-                Absolutely not! Browsing and contacting vending service providers is completely free for business owners and property managers. This is a free resource to help you find the right vending partner.
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-lg border border-coral/10">
-              <h3 className="text-lg font-semibold text-navy mb-2">
-                How are service providers verified?
-              </h3>
-              <p className="text-charcoal/80">
-                We verify business credentials, licensing, insurance coverage, and operating history for all listed service providers. Only qualified, professional operators are included in our directory.
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-lg border border-coral/10">
-              <h3 className="text-lg font-semibold text-navy mb-2">
-                What types of businesses can get vending machines?
-              </h3>
-              <p className="text-charcoal/80">
-                Almost any business! Offices, schools, hospitals, gyms, manufacturing facilities, warehouses, apartment buildings, hotels, and retail locations all benefit from vending services. If you have employees or regular visitors, you likely qualify.
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-lg border border-coral/10">
-              <h3 className="text-lg font-semibold text-navy mb-2">
-                How quickly can vending machines be installed?
-              </h3>
-              <p className="text-charcoal/80">
-                Most vending operators can install machines within 1-2 weeks after an initial site evaluation. The process is quick: site visit, machine selection, installation, and stocking—all handled by the operator.
-              </p>
-            </div>
+            {[
+              {
+                q: `What does it cost to get vending machines in ${stateDisplayName}?`,
+                a: `Typically nothing. Operators install, stock, and maintain machines at no cost to your business.`
+              },
+              {
+                q: `How quickly can vending machines be installed in ${stateDisplayName}?`,
+                a: `Most providers can install within 1-2 weeks after an initial site evaluation.`
+              },
+              {
+                q: `What types of businesses qualify?`,
+                a: `Most businesses with 25+ employees qualify, including offices, warehouses, healthcare, and schools.`
+              },
+              {
+                q: `What products can I request?`,
+                a: `Operators offer snacks, beverages, healthy options, and can customize selections for your team.`
+              }
+            ].map((item) => (
+              <div key={item.q} className="bg-white p-6 rounded-lg shadow-lg border border-coral/10">
+                <h3 className="text-lg font-semibold text-navy mb-2">{item.q}</h3>
+                <p className="text-charcoal/80">{item.a}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -582,7 +474,6 @@ export default function VendingServicesDirectory() {
       <Footer />
       <ZipCodeModalWrapper />
 
-      {/* Success Modal */}
       {showSuccessModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm px-4">
           <motion.div
@@ -606,19 +497,11 @@ export default function VendingServicesDirectory() {
               <div className="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-green-100 mb-4">
                 <CheckCircleIcon className="h-10 w-10 text-green-600" />
               </div>
-              
-              <h3 className="text-2xl font-playfair font-bold text-navy mb-3">
-                Thank You!
-              </h3>
-              
-              <p className="text-lg text-charcoal/80 mb-2">
-                Your request has been received.
-              </p>
-              
+              <h3 className="text-2xl font-playfair font-bold text-navy mb-3">Thank You!</h3>
+              <p className="text-lg text-charcoal/80 mb-2">Your request has been received.</p>
               <p className="text-charcoal/70 mb-6">
-                We'll be reaching out to you within 24 hours to connect you with the best vending service providers in your area.
+                We'll connect you with the best vending service providers in {stateDisplayName} within 24 hours.
               </p>
-
               <button
                 onClick={closeModal}
                 className="w-full bg-navy hover:bg-navy/90 text-white py-3 px-6 rounded-lg font-semibold transition-all duration-200"
@@ -632,4 +515,3 @@ export default function VendingServicesDirectory() {
     </main>
   )
 }
-
