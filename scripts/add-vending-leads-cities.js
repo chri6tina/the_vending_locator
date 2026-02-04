@@ -326,6 +326,10 @@ const buildVariants = (entry) => {
   if (!matchedStateSlug) return []
   const citySlug = slug.slice(0, -(matchedStateSlug.length + 1))
   if (!citySlug) return []
+  const cityParts = citySlug.split('-')
+  const hasDirectionalToken = ['north', 'south', 'east', 'west', 'central', 'downtown', 'uptown'].some((token) =>
+    cityParts.includes(token)
+  )
   const variants = [
     {
       slug: `${citySlug}-metro-${matchedStateSlug}`,
@@ -338,6 +342,24 @@ const buildVariants = (entry) => {
       state: entry.state
     }
   ]
+  if (!hasDirectionalToken) {
+    const directionalVariants = [
+      { slug: `${citySlug}-north-${matchedStateSlug}`, city: `North ${entry.city}` },
+      { slug: `${citySlug}-south-${matchedStateSlug}`, city: `South ${entry.city}` },
+      { slug: `${citySlug}-east-${matchedStateSlug}`, city: `East ${entry.city}` },
+      { slug: `${citySlug}-west-${matchedStateSlug}`, city: `West ${entry.city}` },
+      { slug: `${citySlug}-central-${matchedStateSlug}`, city: `Central ${entry.city}` },
+      { slug: `${citySlug}-downtown-${matchedStateSlug}`, city: `Downtown ${entry.city}` },
+      { slug: `${citySlug}-uptown-${matchedStateSlug}`, city: `Uptown ${entry.city}` }
+    ]
+    for (const variant of directionalVariants) {
+      variants.push({
+        slug: variant.slug,
+        city: variant.city,
+        state: entry.state
+      })
+    }
+  }
   if (!citySlug.endsWith('county') && !citySlug.includes('-county')) {
     variants.push({
       slug: `${citySlug}-county-${matchedStateSlug}`,

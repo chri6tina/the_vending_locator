@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import VendingLeadsCityTemplate from '@/components/VendingLeadsCityTemplate'
 import { getCityInfo, getAllVendingLeadsSlugs } from '@/data/vending-leads-cities'
+import { getVendingLeadsCityOverride } from '@/data/vending-leads-city-overrides'
 import { getPrioritySlugs } from '@/lib/seo-priority-pages'
 
 // Use ISR (Incremental Static Regeneration) for SEO stability and performance
@@ -31,9 +32,18 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   }
   
   const { city, state, slug } = cityInfo
-  const title = `Vending Machine Leads in ${city}, ${state} - The Vending Locator`
+  const cityOverride = getVendingLeadsCityOverride(slug)
+  const titleVariants = [
+    `Vending Machine Leads in ${city}, ${state} - The Vending Locator`,
+    `Vending Machine Locations in ${city}, ${state} - The Vending Locator`,
+    `Verified Vending Leads for ${city}, ${state} - The Vending Locator`,
+    `Vending Placement Leads in ${city}, ${state} - The Vending Locator`
+  ]
+  const title = titleVariants[Math.abs([...slug].reduce((acc, char) => acc * 31 + char.charCodeAt(0), 7)) % titleVariants.length]
   // Ensure description is 140-160 chars for optimal SEO
-  const description = `Get verified vending machine leads and locations in ${city}, ${state}. Find qualified businesses and prime locations for vending machine placement opportunities.`
+  const description =
+    cityOverride?.seoDescription ??
+    `Get verified vending machine leads and locations in ${city}, ${state}. Find qualified businesses and prime locations for vending machine placement opportunities.`
   
   return {
     title,

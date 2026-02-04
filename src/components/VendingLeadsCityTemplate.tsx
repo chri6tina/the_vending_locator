@@ -29,9 +29,38 @@ import ZipCodeModalWrapper from '@/components/ZipCodeModalWrapper'
 import CityPageSEO from '@/components/CityPageSEO'
 import states from '@/data/states'
 import { getCityVariantCopy } from '@/lib/city-variations'
+import { getVendingLeadsCityOverride } from '@/data/vending-leads-city-overrides'
 
 const getVariantIndex = (slug: string) =>
   Math.abs([...slug].reduce((acc, char) => acc * 31 + char.charCodeAt(0), 7)) % 4
+
+const getSlugAreaLabel = (slug: string) => {
+  if (slug.includes('-metro-')) return 'metro area'
+  if (slug.includes('-county-')) return 'countywide'
+  if (slug.includes('-greater-')) return 'greater area'
+  if (slug.includes('-downtown-')) return 'downtown core'
+  if (slug.includes('-uptown-')) return 'uptown corridor'
+  if (slug.includes('-central-')) return 'central district'
+  if (slug.includes('-north-')) return 'north corridor'
+  if (slug.includes('-south-')) return 'south corridor'
+  if (slug.includes('-east-')) return 'east corridor'
+  if (slug.includes('-west-')) return 'west corridor'
+  return 'local market'
+}
+
+const getSlugAreaPhrase = (slug: string, city: string, state: string) => {
+  if (slug.includes('-metro-')) return `the ${city} metro area`
+  if (slug.includes('-county-')) return `${city} County`
+  if (slug.includes('-greater-')) return `Greater ${city}`
+  if (slug.includes('-downtown-')) return `downtown ${city}`
+  if (slug.includes('-uptown-')) return `uptown ${city}`
+  if (slug.includes('-central-')) return `central ${city}`
+  if (slug.includes('-north-')) return `north ${city}`
+  if (slug.includes('-south-')) return `south ${city}`
+  if (slug.includes('-east-')) return `east ${city}`
+  if (slug.includes('-west-')) return `west ${city}`
+  return `${city}, ${state}`
+}
 
 const stateAbbrMap: Record<string, string> = {
   'Alabama': 'AL',
@@ -97,6 +126,9 @@ export default function VendingLeadsCityTemplate({ city, state, slug }: VendingL
   const cityDisplayName = city
   const stateDisplayName = state
   const variantIndex = getVariantIndex(slug)
+  const cityOverride = getVendingLeadsCityOverride(slug)
+  const areaLabel = getSlugAreaLabel(slug)
+  const areaPhrase = getSlugAreaPhrase(slug, cityDisplayName, stateDisplayName)
   const { heroSuffix, benefit } = getCityVariantCopy({
     category: 'vending-leads',
     slug,
@@ -111,137 +143,165 @@ export default function VendingLeadsCityTemplate({ city, state, slug }: VendingL
     { population: '500K+', businesses: '15K+', industries: '12-18', verifiedLocations: '300-600' }
   ]
 
-  const cityData = statsByVariant[variantIndex]
+  const cityData = cityOverride?.stats ?? statsByVariant[variantIndex]
   const heroLeadVariants = [
-    `Discover high-quality vending opportunities in ${cityDisplayName}, ${stateDisplayName}, with pre-qualified locations in office buildings, retail spaces, and transportation hubs.`,
-    `Access vetted vending machine placements in ${cityDisplayName}, ${stateDisplayName} across offices, healthcare, and high-traffic retail corridors.`,
-    `Get placement-ready vending leads in ${cityDisplayName}, ${stateDisplayName} with locations matched to consistent foot traffic.`,
-    `Find verified vending locations in ${cityDisplayName}, ${stateDisplayName} across business districts and community hubs.`
+    `Discover high-quality vending opportunities in ${areaPhrase} with pre-qualified locations in office buildings, retail spaces, and transportation hubs.`,
+    `Access vetted vending machine placements across ${areaPhrase}, focusing on offices, healthcare, and high-traffic retail corridors.`,
+    `Get placement-ready vending leads in ${areaPhrase} with locations matched to consistent foot traffic patterns.`,
+    `Find verified vending locations in ${areaPhrase} across business districts and community hubs.`,
+    `Secure vetted placement opportunities throughout the ${areaLabel} in ${areaPhrase}, with lead lists organized by location type.`,
+    `Build a placement pipeline in ${areaPhrase} with verified locations and decision-maker contacts.`,
+    `Target consistent foot-traffic zones in ${areaPhrase} with placement-ready vending leads.`,
+    `Reach decision-makers in ${areaPhrase} with vending locations pre-checked for fit and access.`
   ]
   const pricingIntroVariants = [
     `Choose the perfect plan for your vending machine business needs and start accessing qualified locations today.`,
     `Pick a one-time package that fits your goals and start securing location leads.`,
     `Select a lead package built for fast placement and predictable results.`,
-    `Choose a plan and get vetted locations without monthly commitments.`
+    `Choose a plan and get vetted locations without monthly commitments.`,
+    `Start with a one-time package designed for outreach in ${areaPhrase}.`,
+    `Choose a lead list that aligns with your placement goals in ${areaPhrase}.`,
+    `Get a package tailored to the pace and demand of the ${areaLabel}.`,
+    `Secure vetted locations in ${areaPhrase} without long-term contracts.`
   ]
   const landscapeIntroVariants = [
-    `Discover the diverse industries and business opportunities that make ${cityDisplayName} an ideal market for vending machines.`,
-    `Explore the top industries driving vending demand in ${cityDisplayName}.`,
-    `See why ${cityDisplayName} supports strong vending performance across multiple sectors.`,
-    `Learn which industries in ${cityDisplayName} create the best vending opportunities.`
+    `Discover the diverse industries and business opportunities that make ${areaPhrase} an ideal market for vending machines.`,
+    `Explore the top industries driving vending demand in ${areaPhrase}.`,
+    `See why ${areaPhrase} supports strong vending performance across multiple sectors.`,
+    `Learn which industries in ${areaPhrase} create the best vending opportunities.`,
+    `Review the sector mix that sustains vending demand in the ${areaLabel}.`,
+    `Understand the business landscape that keeps vending placements strong in ${areaPhrase}.`,
+    `See how local industry density shapes vending success in ${areaPhrase}.`,
+    `Explore the core industries that fuel steady vending demand in ${areaPhrase}.`
   ]
   const whyChooseVariants = [
-    `The ${cityDisplayName} market offers excellent vending opportunities through its combination of corporate headquarters, healthcare networks, and educational institutions. High foot traffic areas and captive audiences create ideal conditions for vending success.`,
-    `${cityDisplayName} combines steady business traffic with diverse industries, creating dependable vending placement opportunities. Strong daytime footfall and repeat visits support consistent sales.`,
-    `With a mix of offices, clinics, and retail corridors, ${cityDisplayName} offers reliable placement potential for vending operators focused on long-term revenue.`,
-    `Operators choose ${cityDisplayName} for its concentrated business zones, stable demand, and favorable placement conditions across multiple location types.`
+    `The ${areaPhrase} market offers excellent vending opportunities through its combination of corporate headquarters, healthcare networks, and educational institutions. High foot traffic areas and captive audiences create ideal conditions for vending success.`,
+    `${areaPhrase} combines steady business traffic with diverse industries, creating dependable vending placement opportunities. Strong daytime footfall and repeat visits support consistent sales.`,
+    `With a mix of offices, clinics, and retail corridors, ${areaPhrase} offers reliable placement potential for vending operators focused on long-term revenue.`,
+    `Operators choose ${areaPhrase} for its concentrated business zones, stable demand, and favorable placement conditions across multiple location types.`,
+    `${areaPhrase} supports vending growth through consistent weekday traffic and concentrated commercial activity.`,
+    `The ${areaLabel} in ${areaPhrase} blends business density with repeat foot traffic, which keeps placement performance steady.`,
+    `Operators target ${areaPhrase} for its predictable demand across offices, healthcare facilities, and retail centers.`,
+    `Vending placements in ${areaPhrase} benefit from a balanced mix of daytime and after-hours traffic.`
   ]
   const hotLeadsIntroVariants = [
     `Get immediate access to qualified vending machine locations without monthly commitments.`,
     `Purchase one-time location packages and start placing machines faster.`,
     `Unlock vetted location packages and avoid long-term contracts.`,
-    `Access verified locations instantly with a one-time package.`
+    `Access verified locations instantly with a one-time package.`,
+    `Secure placement-ready locations in ${areaPhrase} with a one-time purchase.`,
+    `Move faster in ${areaPhrase} with vetted locations and clear outreach steps.`,
+    `Get verified locations in the ${areaLabel} without recurring fees.`,
+    `Start outreach in ${areaPhrase} with a single, upfront package.`
   ]
   const courseIntroVariants = [
-    `Master the fundamentals of vending machine operations and maximize your success in ${cityDisplayName}.`,
-    `Learn the proven steps to grow a vending route in ${cityDisplayName}.`,
-    `Build confidence with training designed for operators in ${cityDisplayName}.`,
-    `Get the playbook for building a profitable route in ${cityDisplayName}.`
+    `Master the fundamentals of vending machine operations and maximize your success in ${areaPhrase}.`,
+    `Learn the proven steps to grow a vending route in ${areaPhrase}.`,
+    `Build confidence with training designed for operators in ${areaPhrase}.`,
+    `Get the playbook for building a profitable route in ${areaPhrase}.`,
+    `Learn how to structure outreach and placement in the ${areaLabel}.`,
+    `Get a step-by-step playbook built for growth in ${areaPhrase}.`,
+    `Improve placement outcomes with training tailored to ${areaPhrase}.`,
+    `Build a reliable route strategy for ${areaPhrase}.`
   ]
   const faqIntroVariants = [
-    `Answers to common questions about vending leads, placement, and opportunities in ${cityDisplayName}.`,
-    `Quick answers to the most asked vending lead questions in ${cityDisplayName}.`,
-    `FAQs to help you place machines faster in ${cityDisplayName}.`,
-    `Common questions from operators looking to place in ${cityDisplayName}.`
+    `Answers to common questions about vending leads, placement, and opportunities in ${areaPhrase}.`,
+    `Quick answers to the most asked vending lead questions in ${areaPhrase}.`,
+    `FAQs to help you place machines faster in ${areaPhrase}.`,
+    `Common questions from operators looking to place in ${areaPhrase}.`,
+    `What operators ask most before placing machines in the ${areaLabel}.`,
+    `FAQs about lead quality, outreach, and placement in ${areaPhrase}.`,
+    `Questions we hear from operators entering ${areaPhrase}.`,
+    `Key answers for placing vending machines in ${areaPhrase}.`
   ]
   const industryBodyVariants = [
     {
-      Healthcare: `Healthcare institutions in ${cityDisplayName} offer prime vending locations with high visitor counts, extended operating hours, and captive audiences seeking convenient snack and beverage options.`,
-      Education: `${cityDisplayName}'s schools, colleges, and universities create excellent vending opportunities with high student traffic, campus events, and extended hours that maximize machine usage.`,
-      Manufacturing: `Industrial operations in ${cityDisplayName} feature large workforces and shift schedules that create reliable vending revenue through employee break times and shift changes.`,
-      Retail: `Retail locations throughout ${cityDisplayName} provide excellent vending opportunities in malls, shopping centers, and high-traffic commercial areas with consistent customer flow.`,
-      Office: `Corporate office buildings throughout ${cityDisplayName} feature professional workforces and business operations that create reliable vending revenue through employee break times and meetings.`,
-      Transportation: `Airports, bus stations, and transit centers throughout ${cityDisplayName} generate steady passenger traffic, providing excellent vending placement options in high-traffic areas frequented by travelers.`
+      Healthcare: `Healthcare institutions in ${areaPhrase} offer prime vending locations with high visitor counts, extended operating hours, and captive audiences seeking convenient snack and beverage options.`,
+      Education: `${areaPhrase} schools, colleges, and universities create excellent vending opportunities with high student traffic, campus events, and extended hours that maximize machine usage.`,
+      Manufacturing: `Industrial operations in ${areaPhrase} feature large workforces and shift schedules that create reliable vending revenue through employee break times and shift changes.`,
+      Retail: `Retail locations throughout ${areaPhrase} provide excellent vending opportunities in malls, shopping centers, and high-traffic commercial areas with consistent customer flow.`,
+      Office: `Corporate office buildings throughout ${areaPhrase} feature professional workforces and business operations that create reliable vending revenue through employee break times and meetings.`,
+      Transportation: `Airports, bus stations, and transit centers throughout ${areaPhrase} generate steady passenger traffic, providing excellent vending placement options in high-traffic areas frequented by travelers.`
     },
     {
-      Healthcare: `${cityDisplayName} healthcare facilities see steady foot traffic and long operating hours, making them dependable vending locations.`,
-      Education: `Schools and campuses in ${cityDisplayName} create consistent demand with student and staff traffic throughout the day.`,
-      Manufacturing: `Shift-based workforces in ${cityDisplayName} manufacturing sites drive reliable snack and beverage sales.`,
-      Retail: `Retail corridors in ${cityDisplayName} deliver repeat visitors and predictable peak periods for vending demand.`,
-      Office: `Office hubs in ${cityDisplayName} provide steady weekday demand and consistent break-time traffic.`,
-      Transportation: `Transit hubs in ${cityDisplayName} bring repeat travelers and all-day foot traffic.`
+      Healthcare: `${areaPhrase} healthcare facilities see steady foot traffic and long operating hours, making them dependable vending locations.`,
+      Education: `Schools and campuses in ${areaPhrase} create consistent demand with student and staff traffic throughout the day.`,
+      Manufacturing: `Shift-based workforces in ${areaPhrase} manufacturing sites drive reliable snack and beverage sales.`,
+      Retail: `Retail corridors in ${areaPhrase} deliver repeat visitors and predictable peak periods for vending demand.`,
+      Office: `Office hubs in ${areaPhrase} provide steady weekday demand and consistent break-time traffic.`,
+      Transportation: `Transit hubs in ${areaPhrase} bring repeat travelers and all-day foot traffic.`
     },
     {
-      Healthcare: `Hospitals and clinics in ${cityDisplayName} offer long hours and consistent visitor volume for vending placements.`,
-      Education: `${cityDisplayName} education sites deliver dependable traffic during school hours and events.`,
-      Manufacturing: `Industrial parks in ${cityDisplayName} benefit from shift changes that boost vending activity.`,
-      Retail: `Shopping centers in ${cityDisplayName} provide steady customer flow and high visibility placements.`,
-      Office: `Professional office buildings in ${cityDisplayName} support consistent weekday vending sales.`,
-      Transportation: `Airports and stations in ${cityDisplayName} offer high-traffic, quick-purchase environments.`
+      Healthcare: `Hospitals and clinics in ${areaPhrase} offer long hours and consistent visitor volume for vending placements.`,
+      Education: `${areaPhrase} education sites deliver dependable traffic during school hours and events.`,
+      Manufacturing: `Industrial parks in ${areaPhrase} benefit from shift changes that boost vending activity.`,
+      Retail: `Shopping centers in ${areaPhrase} provide steady customer flow and high visibility placements.`,
+      Office: `Professional office buildings in ${areaPhrase} support consistent weekday vending sales.`,
+      Transportation: `Airports and stations in ${areaPhrase} offer high-traffic, quick-purchase environments.`
     },
     {
-      Healthcare: `Healthcare networks in ${cityDisplayName} create steady demand for convenient refreshments.`,
-      Education: `Campus environments in ${cityDisplayName} provide predictable daily demand and event spikes.`,
-      Manufacturing: `Manufacturing facilities in ${cityDisplayName} drive repeat sales from large employee bases.`,
-      Retail: `Retail centers in ${cityDisplayName} support strong vending performance with continuous foot traffic.`,
-      Office: `Office campuses in ${cityDisplayName} deliver reliable weekday sales patterns.`,
-      Transportation: `Transportation hubs in ${cityDisplayName} generate consistent high-volume traffic for vending.`
+      Healthcare: `Healthcare networks in ${areaPhrase} create steady demand for convenient refreshments.`,
+      Education: `Campus environments in ${areaPhrase} provide predictable daily demand and event spikes.`,
+      Manufacturing: `Manufacturing facilities in ${areaPhrase} drive repeat sales from large employee bases.`,
+      Retail: `Retail centers in ${areaPhrase} support strong vending performance with continuous foot traffic.`,
+      Office: `Office campuses in ${areaPhrase} deliver reliable weekday sales patterns.`,
+      Transportation: `Transportation hubs in ${areaPhrase} generate consistent high-volume traffic for vending.`
     }
   ]
   const faqVariantSets = [
     [
       {
-        q: `What types of vending machine locations are available in ${cityDisplayName}?`,
-        a: `${cityDisplayName} offers diverse vending opportunities including healthcare facilities, educational institutions, retail locations, office buildings, and manufacturing facilities. Each location is pre-verified for optimal vending machine success.`
+        q: `What types of vending machine locations are available in ${areaPhrase}?`,
+        a: `${areaPhrase} offers diverse vending opportunities including healthcare facilities, educational institutions, retail locations, office buildings, and manufacturing facilities. Each location is pre-verified for optimal vending machine success.`
       },
       {
-        q: `How quickly can I get vending machine leads for ${cityDisplayName}?`,
-        a: `Our ${cityDisplayName} vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.`
+        q: `How quickly can I get vending machine leads for ${areaPhrase}?`,
+        a: `Our ${areaPhrase} vending leads are delivered within 3-5 business days. We provide comprehensive research including business details, contact information, and placement opportunities to accelerate your market entry.`
       },
       {
-        q: `What makes ${cityDisplayName} a good market for vending machines?`,
-        a: `${cityDisplayName} features a thriving business community with diverse industries and strong economic activity. The city's business density and diverse demographics create ideal conditions for vending machine success.`
+        q: `What makes ${areaPhrase} a good market for vending machines?`,
+        a: `${areaPhrase} features a thriving business community with diverse industries and strong economic activity. The area's business density and diverse demographics create ideal conditions for vending machine success.`
       },
       {
-        q: `Do you provide ongoing support for ${cityDisplayName} locations?`,
-        a: `Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in ${cityDisplayName}.`
+        q: `Do you provide ongoing support for ${areaPhrase} locations?`,
+        a: `Yes, we offer comprehensive support including location research, contact information, placement strategies, and ongoing consultation to ensure your vending machines thrive in ${areaPhrase}.`
       },
       {
-        q: `What industries in ${cityDisplayName} are best for vending machines?`,
-        a: `Healthcare, education, retail, office buildings, and manufacturing in ${cityDisplayName} show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.`
+        q: `What industries in ${areaPhrase} are best for vending machines?`,
+        a: `Healthcare, education, retail, office buildings, and manufacturing in ${areaPhrase} show the highest potential for vending machine success due to consistent foot traffic and diverse demographics.`
       },
       {
-        q: `How do you verify the quality of ${cityDisplayName} vending locations?`,
-        a: `We conduct thorough research on each ${cityDisplayName} location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.`
+        q: `How do you verify the quality of ${areaPhrase} vending locations?`,
+        a: `We conduct thorough research on each ${areaPhrase} location including business verification, foot traffic analysis, employee count validation, and industry research to ensure only high-quality opportunities are included.`
       },
       {
-        q: `Can I get customized vending leads for specific areas of ${cityDisplayName}?`,
-        a: `Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within ${cityDisplayName} based on your preferences and target market requirements.`
+        q: `Can I get customized vending leads for specific areas of ${areaPhrase}?`,
+        a: `Absolutely! We can provide targeted vending leads for specific neighborhoods, business districts, or industrial areas within ${areaPhrase} based on your preferences and target market requirements.`
       },
       {
-        q: `What's the typical ROI for vending machines in ${cityDisplayName}?`,
-        a: `Vending machines in ${cityDisplayName} typically show strong ROI due to the city's business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.`
+        q: `What's the typical ROI for vending machines in ${areaPhrase}?`,
+        a: `Vending machines in ${areaPhrase} typically show strong ROI due to the area's business density and diverse economy. Our research shows average payback periods of 12-18 months for well-placed machines.`
       }
     ],
     [
       {
-        q: `How do I pick the best vending locations in ${cityDisplayName}?`,
-        a: `We focus on foot traffic, employee count, hours of operation, and decision-maker access to identify the best locations in ${cityDisplayName}.`
+        q: `How do I pick the best vending locations in ${areaPhrase}?`,
+        a: `We focus on foot traffic, employee count, hours of operation, and decision-maker access to identify the best locations in ${areaPhrase}.`
       },
       {
-        q: `How soon will I receive leads for ${cityDisplayName}?`,
+        q: `How soon will I receive leads for ${areaPhrase}?`,
         a: `Leads are delivered in 3-5 business days with verified contacts and placement notes.`
       },
       {
-        q: `Are the contacts verified for ${cityDisplayName} locations?`,
+        q: `Are the contacts verified for ${areaPhrase} locations?`,
         a: `Yes. We validate decision-makers and business details before delivery.`
       },
       {
-        q: `Can I target specific industries in ${cityDisplayName}?`,
+        q: `Can I target specific industries in ${areaPhrase}?`,
         a: `Yes, we can prioritize healthcare, offices, logistics, retail, or other sectors depending on your goals.`
       },
       {
-        q: `What’s included with each ${cityDisplayName} lead?`,
+        q: `What’s included with each ${areaPhrase} lead?`,
         a: `Each lead includes business name, address, contact details, and placement context to speed up outreach.`
       },
       {
@@ -249,8 +309,8 @@ export default function VendingLeadsCityTemplate({ city, state, slug }: VendingL
         a: `We provide replacement leads if a location becomes unavailable.`
       },
       {
-        q: `Is ${cityDisplayName} a good market for vending?`,
-        a: `${cityDisplayName} has diverse business clusters and consistent demand that supports vending placements.`
+        q: `Is ${areaPhrase} a good market for vending?`,
+        a: `${areaPhrase} has diverse business clusters and consistent demand that supports vending placements.`
       },
       {
         q: `What support do you provide after delivery?`,
@@ -259,15 +319,15 @@ export default function VendingLeadsCityTemplate({ city, state, slug }: VendingL
     ],
     [
       {
-        q: `How do vending leads work in ${cityDisplayName}?`,
-        a: `We research and verify businesses in ${cityDisplayName}, then deliver placement-ready leads with contact details.`
+        q: `How do vending leads work in ${areaPhrase}?`,
+        a: `We research and verify businesses in ${areaPhrase}, then deliver placement-ready leads with contact details.`
       },
       {
-        q: `What types of locations are common in ${cityDisplayName}?`,
+        q: `What types of locations are common in ${areaPhrase}?`,
         a: `Offices, clinics, logistics facilities, and retail centers are typically strong placement categories.`
       },
       {
-        q: `Do you offer local targeting within ${cityDisplayName}?`,
+        q: `Do you offer local targeting within ${areaPhrase}?`,
         a: `Yes, we can focus on neighborhoods or corridors you specify.`
       },
       {
@@ -283,7 +343,7 @@ export default function VendingLeadsCityTemplate({ city, state, slug }: VendingL
         a: `Leads are verified and updated regularly to ensure accuracy.`
       },
       {
-        q: `What makes your ${cityDisplayName} leads better?`,
+        q: `What makes your ${areaPhrase} leads better?`,
         a: `We focus on verified decision-makers and placement-ready locations, not scraped lists.`
       },
       {
@@ -293,12 +353,12 @@ export default function VendingLeadsCityTemplate({ city, state, slug }: VendingL
     ],
     [
       {
-        q: `How do you qualify ${cityDisplayName} vending locations?`,
+        q: `How do you qualify ${areaPhrase} vending locations?`,
         a: `We assess foot traffic, business type, hours, and decision-maker access before delivering leads.`
       },
       {
-        q: `What industries perform best in ${cityDisplayName}?`,
-        a: `Healthcare, offices, education, and logistics tend to perform well in ${cityDisplayName}.`
+        q: `What industries perform best in ${areaPhrase}?`,
+        a: `Healthcare, offices, education, and logistics tend to perform well in ${areaPhrase}.`
       },
       {
         q: `Can I buy more leads later?`,
@@ -317,7 +377,7 @@ export default function VendingLeadsCityTemplate({ city, state, slug }: VendingL
         a: `We replace leads that become unavailable or inaccurate.`
       },
       {
-        q: `Is ${cityDisplayName} a competitive market?`,
+        q: `Is ${areaPhrase} a competitive market?`,
         a: `We research competition and highlight placement opportunities where demand is strongest.`
       },
       {
@@ -326,6 +386,15 @@ export default function VendingLeadsCityTemplate({ city, state, slug }: VendingL
       }
     ]
   ]
+
+  const heroLead = cityOverride?.heroLead ?? heroLeadVariants[variantIndex]
+  const pricingIntro = cityOverride?.pricingIntro ?? pricingIntroVariants[variantIndex]
+  const landscapeIntro = cityOverride?.landscapeIntro ?? landscapeIntroVariants[variantIndex]
+  const whyChoose = cityOverride?.whyChoose ?? whyChooseVariants[variantIndex]
+  const hotLeadsIntro = cityOverride?.hotLeadsIntro ?? hotLeadsIntroVariants[variantIndex]
+  const courseIntro = cityOverride?.courseIntro ?? courseIntroVariants[variantIndex]
+  const faqIntro = cityOverride?.faqIntro ?? faqIntroVariants[variantIndex]
+  const industryBody = cityOverride?.industryBody ?? industryBodyVariants[variantIndex]
 
   const [activeUsers, setActiveUsers] = useState(25)
   const [currentUserIndex, setCurrentUserIndex] = useState(0)
@@ -389,7 +458,7 @@ export default function VendingLeadsCityTemplate({ city, state, slug }: VendingL
       .slice(0, 8)
   }, [stateDisplayName, slug])
 
-  const faqItems = faqVariantSets[variantIndex]
+  const faqItems = cityOverride?.faqItems ?? faqVariantSets[variantIndex]
 
   return (
     <>
@@ -444,7 +513,7 @@ export default function VendingLeadsCityTemplate({ city, state, slug }: VendingL
                 transition={{ duration: 0.8, delay: 0.6 }}
                 className="text-xl md:text-2xl text-stone mb-8 max-w-4xl mx-auto leading-relaxed"
               >
-                {heroLeadVariants[variantIndex]} {heroSuffix}
+                {heroLead} {heroSuffix}
               </motion.p>
 
               <motion.div
@@ -528,7 +597,7 @@ export default function VendingLeadsCityTemplate({ city, state, slug }: VendingL
                 viewport={{ once: true }}
                 className="text-lg text-stone max-w-3xl mx-auto"
               >
-                {pricingIntroVariants[variantIndex]}
+                {pricingIntro}
               </motion.p>
             </div>
             <PricingTable />
@@ -554,7 +623,7 @@ export default function VendingLeadsCityTemplate({ city, state, slug }: VendingL
                 viewport={{ once: true }}
                 className="text-lg text-stone max-w-3xl mx-auto"
               >
-                {landscapeIntroVariants[variantIndex]}
+                {landscapeIntro}
               </motion.p>
             </div>
 
@@ -565,42 +634,42 @@ export default function VendingLeadsCityTemplate({ city, state, slug }: VendingL
                   icon: HeartIcon,
                   color: 'text-blue-600',
                   bg: 'bg-blue-50',
-                  body: industryBodyVariants[variantIndex].Healthcare
+                  body: industryBody.Healthcare
                 },
                 {
                   key: 'Education',
                   icon: AcademicCapIcon,
                   color: 'text-green-600',
                   bg: 'bg-green-50',
-                  body: industryBodyVariants[variantIndex].Education
+                  body: industryBody.Education
                 },
                 {
                   key: 'Manufacturing',
                   icon: CpuChipIcon,
                   color: 'text-purple-600',
                   bg: 'bg-purple-50',
-                  body: industryBodyVariants[variantIndex].Manufacturing
+                  body: industryBody.Manufacturing
                 },
                 {
                   key: 'Retail',
                   icon: ShoppingBagIcon,
                   color: 'text-orange-600',
                   bg: 'bg-orange-50',
-                  body: industryBodyVariants[variantIndex].Retail
+                  body: industryBody.Retail
                 },
                 {
                   key: 'Office Buildings',
                   icon: BuildingOfficeIcon,
                   color: 'text-indigo-600',
                   bg: 'bg-indigo-50',
-                  body: industryBodyVariants[variantIndex].Office
+                  body: industryBody.Office
                 },
                 {
                   key: 'Transportation',
                   icon: TruckIcon,
                   color: 'text-red-600',
                   bg: 'bg-red-50',
-                  body: industryBodyVariants[variantIndex].Transportation
+                  body: industryBody.Transportation
                 }
               ].map((item, idx) => (
                 <motion.div
@@ -643,7 +712,7 @@ export default function VendingLeadsCityTemplate({ city, state, slug }: VendingL
               className="bg-white rounded-lg shadow-sm border border-gray-200 p-8"
             >
               <p className="text-lg text-stone leading-relaxed">
-                {whyChooseVariants[variantIndex]}
+                {whyChoose}
               </p>
             </motion.div>
           </div>
@@ -668,7 +737,7 @@ export default function VendingLeadsCityTemplate({ city, state, slug }: VendingL
                 viewport={{ once: true }}
                 className="text-lg text-stone max-w-3xl mx-auto"
               >
-                {hotLeadsIntroVariants[variantIndex]}
+                {hotLeadsIntro}
               </motion.p>
             </div>
             <HotLeads />
@@ -694,7 +763,7 @@ export default function VendingLeadsCityTemplate({ city, state, slug }: VendingL
                 viewport={{ once: true }}
                 className="text-lg text-stone max-w-3xl mx-auto"
               >
-                {courseIntroVariants[variantIndex]}
+                {courseIntro}
               </motion.p>
             </div>
             <VendingCourse />
@@ -720,7 +789,7 @@ export default function VendingLeadsCityTemplate({ city, state, slug }: VendingL
                 viewport={{ once: true }}
                 className="text-lg text-stone max-w-3xl mx-auto"
               >
-                {faqIntroVariants[variantIndex]}
+                {faqIntro}
               </motion.p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -761,7 +830,11 @@ export default function VendingLeadsCityTemplate({ city, state, slug }: VendingL
         city={cityDisplayName}
         state={stateDisplayName}
         stateAbbr={stateAbbrMap[stateDisplayName] || stateDisplayName}
-        description={`Get verified vending machine leads and locations in ${cityDisplayName}, ${stateDisplayName}. Find qualified businesses for vending machine placement. ${heroSuffix}`}
+        description={
+          cityOverride?.seoDescription
+            ? `${cityOverride.seoDescription} ${heroSuffix}`
+            : `Get verified vending machine leads and locations in ${cityDisplayName}, ${stateDisplayName}. Find qualified businesses for vending machine placement. ${heroSuffix}`
+        }
         faqs={faqItems.map((item) => ({ question: item.q, answer: item.a }))}
       />
 
