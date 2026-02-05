@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, Suspense } from 'react'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import HotLeadsMarketplace from '@/components/HotLeadsMarketplace'
@@ -125,7 +125,9 @@ export default function HotLeadsPage() {
       </section>
 
       {/* Hot Leads Marketplace */}
-      <HotLeadsMarketplace />
+      <Suspense fallback={<div className="py-16 text-center text-stone">Loading hot leads…</div>}>
+        <HotLeadsMarketplace />
+      </Suspense>
 
       {/* Additional Information */}
       <div className="bg-white py-24 sm:py-32">
