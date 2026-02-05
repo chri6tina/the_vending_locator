@@ -64,7 +64,7 @@ function generateStatePages(): MetadataRoute.Sitemap {
   return [...vendingLeadsStates, ...taxServicesStates]
 }
 
-export default function sitemap(): MetadataRoute.Sitemap {
+function buildAllUrls(): MetadataRoute.Sitemap {
   // Main pages
   const mainPages: MetadataRoute.Sitemap = [
     { url: 'https://www.thevendinglocator.com', lastModified: new Date(), changeFrequency: 'daily' as const, priority: 1.0 },
@@ -81,6 +81,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: 'https://www.thevendinglocator.com/vending-services', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.9 },
     { url: 'https://www.thevendinglocator.com/bookkeeping-kpis', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.9 },
     { url: 'https://www.thevendinglocator.com/vending-companies', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.9 },
+    { url: 'https://www.thevendinglocator.com/vending-machine-business-contract', lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/vending-companies/jacksonville-florida', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/vending-companies/orlando-florida', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
     { url: 'https://www.thevendinglocator.com/vending-companies/miami-florida', lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.8 },
@@ -131,9 +132,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...howToStartUrls
   ]
 
-  // If total URLs exceed MAX_URLS_PER_SITEMAP, we would need chunked sitemaps
-  // For now, Next.js will handle this, but if we have >50k URLs, we'd need a sitemap index
-  // Since we have ~6,000 pages, we can return them all (Next.js handles this efficiently)
-  
   return allUrls
+}
+
+export async function generateSitemaps() {
+  const allUrls = buildAllUrls()
+  const totalSitemaps = Math.max(1, Math.ceil(allUrls.length / MAX_URLS_PER_SITEMAP))
+
+  return Array.from({ length: totalSitemaps }, (_, id) => ({ id }))
+}
+
+export default function sitemap({ id }: { id: number | string }): MetadataRoute.Sitemap {
+  const allUrls = buildAllUrls()
+  const chunks = chunk(allUrls, MAX_URLS_PER_SITEMAP)
+  const index = typeof id === 'string' ? Number.parseInt(id, 10) : id
+  return chunks[index] ?? []
 }
