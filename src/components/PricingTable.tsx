@@ -68,8 +68,7 @@ const plans = [
       'Vending eCourse included',
       'Outreach & sales scripts',
       'Contract templates',
-      'Priority support',
-      'Lifetime access to your leads'
+      'Priority support'
     ]
   },
   {
@@ -181,7 +180,15 @@ export default function PricingTable() {
                   <div key={idx} className="flex items-start space-x-3">
                     <CheckIcon className="h-5 w-5 text-bronze mt-0.5 flex-shrink-0" />
                     <div>
-                      <div className="text-sm font-medium text-charcoal">{feature}</div>
+                      <div
+                        className={`text-sm font-medium ${
+                          plan.name === 'Start' && feature === 'Vending eCourse included'
+                            ? 'text-navy'
+                            : 'text-charcoal'
+                        }`}
+                      >
+                        {feature}
+                      </div>
                     </div>
                   </div>
                 ))}
