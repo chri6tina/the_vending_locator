@@ -2,13 +2,15 @@ import { NextResponse } from 'next/server'
 import { buildAllUrls, chunkSitemaps } from '@/lib/sitemap'
 
 export const revalidate = 21600
+export const dynamic = 'force-dynamic'
 
 type Params = {
-  id: string
+  id?: string
 }
 
-export async function GET(_: Request, { params }: { params: Params }) {
-  const index = Number.parseInt(params.id, 10)
+export async function GET(_: Request, context?: { params?: Params }) {
+  const id = context?.params?.id
+  const index = id ? Number.parseInt(id, 10) : Number.NaN
   const urls = buildAllUrls()
   const chunks = chunkSitemaps(urls)
 
