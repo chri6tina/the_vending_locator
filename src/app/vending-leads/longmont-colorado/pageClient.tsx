@@ -1,7 +1,13 @@
 'use client'
 
-import LongmontColoradoVendingLeadsPage from '@/app/_city-pages/vending-leads/longmont-colorado/pageClient'
+import VendingLeadsCityTemplate from '@/components/VendingLeadsCityTemplate'
 
 export default function PageClient() {
-  return <LongmontColoradoVendingLeadsPage />
+  return (
+    <VendingLeadsCityTemplate
+      city="Longmont"
+      state="Colorado"
+      slug="longmont-colorado"
+    />
+  )
 }
