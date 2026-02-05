@@ -5,21 +5,13 @@ import { getAllVendingCompaniesSlugs } from '@/data/vending-companies-cities'
 import states from '@/data/states'
 import { howToStartSlugs as extraHowToStartSlugs } from '@/data/how-to-start-slugs'
 
-export const MAX_URLS_PER_SITEMAP = 2000
+export const MAX_URLS_PER_SITEMAP = 50000
 
 type SitemapEntry = {
   url: string
   lastModified: Date
   changeFrequency: 'daily' | 'weekly' | 'monthly'
   priority: number
-}
-
-function chunk<T>(array: T[], size: number): T[][] {
-  const chunks: T[][] = []
-  for (let i = 0; i < array.length; i += size) {
-    chunks.push(array.slice(i, i + size))
-  }
-  return chunks
 }
 
 function generateCategoryUrls(category: string, slugs: string[]): SitemapEntry[] {
@@ -124,6 +116,8 @@ export function buildAllUrls(): SitemapEntry[] {
   ]
 }
 
-export function chunkSitemaps(urls: SitemapEntry[]) {
-  return chunk(urls, MAX_URLS_PER_SITEMAP)
+export function splitSitemaps(urls: SitemapEntry[]) {
+  const primary = urls.slice(0, MAX_URLS_PER_SITEMAP)
+  const secondary = urls.slice(MAX_URLS_PER_SITEMAP)
+  return [primary, secondary]
 }
