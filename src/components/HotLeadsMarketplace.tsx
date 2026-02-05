@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useMemo } from 'react'
 import Link from 'next/link'
+import { useSearchParams } from 'next/navigation'
 import { motion } from 'framer-motion'
 import { 
   MapPinIcon, 
@@ -40,6 +41,7 @@ export default function HotLeadsMarketplace() {
   const [selectedCity, setSelectedCity] = useState('')
   const [sortBy, setSortBy] = useState<'newest' | 'price-low' | 'price-high'>('newest')
   const [showSubscriptionModal, setShowSubscriptionModal] = useState(false)
+  const searchParams = useSearchParams()
   const [subscriptionFormData, setSubscriptionFormData] = useState({ 
     name: '', 
     email: '', 
@@ -52,6 +54,12 @@ export default function HotLeadsMarketplace() {
   useEffect(() => {
     fetchLeads()
   }, [])
+
+  useEffect(() => {
+    if (searchParams?.get('subscribe') === '1') {
+      setShowSubscriptionModal(true)
+    }
+  }, [searchParams])
 
   const fetchLeads = async () => {
     try {
