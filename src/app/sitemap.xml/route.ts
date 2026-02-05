@@ -12,7 +12,7 @@ export async function GET() {
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${chunks
   .map((_, idx) => `  <sitemap>
-    <loc>https://www.thevendinglocator.com/sitemap/${idx}</loc>
+    <loc>https://www.thevendinglocator.com/sitemaps/${idx}</loc>
     <lastmod>${now}</lastmod>
   </sitemap>`)
   .join('\n')}
