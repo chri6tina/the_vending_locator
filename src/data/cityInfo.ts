@@ -16719,31 +16719,32 @@ export const cityInfo: Record<string, CityInfo> = {
   },
   'baton-rouge-louisiana': {
     permitNotes:
-      'Louisiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
+      'Louisiana requires a sales tax permit from the Department of Revenue. East Baton Rouge Parish may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'State government offices and agencies',
+      'LSU campus and student housing',
+      'Healthcare campuses (Our Lady of the Lake)',
+      'Petrochemical and industrial corridors',
+      'Downtown offices and civic buildings'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Baton Rouge',
+      'LSU / University area',
+      'Mid City',
+      'Perkins Rd corridor',
+      'Airline Hwy industrial',
+      'South Baton Rouge'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Summer heat drives cold-beverage demand. Prioritize refrigeration uptime and mid-week restocks.',
     extraFaqs: [
       {
-        q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Baton Rouge. Validate sales, then expand to additional sites.'
+        q: 'Where should I start in Baton Rouge?',
+        a: 'Start with LSU buildings, state offices, and hospital campuses for reliable weekday traffic.'
       },
       {
-        q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        q: 'Do I need special permits in East Baton Rouge Parish?',
+        a: 'You need a Louisiana sales tax permit and any required local business registration. Food and beverage vending may require parish health approvals.'
       },
     ],
   },
@@ -16991,31 +16992,32 @@ export const cityInfo: Record<string, CityInfo> = {
   },
   'shreveport-louisiana': {
     permitNotes:
-      'Louisiana requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
+      'Louisiana requires a sales tax permit from the Department of Revenue. Caddo Parish may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Barksdale AFB workforce and contractors',
+      'Healthcare campuses (Ochsner LSU Health)',
+      'Casinos and hospitality on the riverfront',
+      'Industrial/logistics along I-20',
+      'Universities and colleges'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown / Riverfront',
+      'Bossier corridor',
+      'Broadmoor',
+      'Airport area',
+      'Youree Dr corridor',
+      'I-20 industrial'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Event and casino traffic can spike demand. Plan extra service around weekends and peak event weeks.',
     extraFaqs: [
       {
-        q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Shreveport. Validate sales, then expand to additional sites.'
+        q: 'Where should I start in Shreveport?',
+        a: 'Start with hospital campuses, base-adjacent offices, and riverfront hospitality sites.'
       },
       {
-        q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        q: 'Do I need special permits in Caddo Parish?',
+        a: 'You need a Louisiana sales tax permit and any required local business registration. Food and beverage vending may require parish health approvals.'
       },
     ],
   },
