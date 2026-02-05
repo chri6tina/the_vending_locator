@@ -22778,31 +22778,32 @@ export const cityInfo: Record<string, CityInfo> = {
   },
   'las-cruces-new-mexico': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
+      'New Mexico requires a CRS number for gross receipts tax. Dona Ana County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'New Mexico State University and student housing',
+      'Healthcare campuses (Memorial Medical)',
+      'I-10 logistics and warehousing',
+      'Downtown offices and civic buildings',
+      'Retail corridors along US-70'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Las Cruces',
+      'NMSU / University area',
+      'Mesilla',
+      'North Main corridor',
+      'East Mesa',
+      'I-10 / Airport area'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Summer heat drives cold-beverage demand. Prioritize refrigeration uptime and tighter restock cadence.',
     extraFaqs: [
       {
-        q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Las Cruces New. Validate sales, then expand to additional sites.'
+        q: 'Where should I start in Las Cruces?',
+        a: 'Start with NMSU buildings, hospital campuses, and I-10 corridor logistics sites.'
       },
       {
-        q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        q: 'Do I need special permits in Dona Ana County?',
+        a: 'You need a New Mexico CRS number and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
@@ -22838,31 +22839,31 @@ export const cityInfo: Record<string, CityInfo> = {
   },
   'santa-fe-new-mexico': {
     permitNotes:
-      'Register your business and obtain necessary permits. Confirm state and local sales tax requirements, and verify city/county health department rules for food/beverage vending.',
+      'New Mexico requires a CRS number for gross receipts tax. Santa Fe County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'State government offices and agencies',
+      'Tourism and hospitality in the Plaza area',
+      'Healthcare campuses (Christus St. Vincent)',
+      'Santa Fe Community College',
+      'Downtown offices and civic buildings'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown / Plaza',
+      'Railyard',
+      'Southside',
+      'Museum Hill',
+      'Airport / Cerrillos Rd'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Tourism seasons drive spikes. Increase service cadence around events and peak travel weeks.',
     extraFaqs: [
       {
-        q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Santa Fe New. Validate sales, then expand to additional sites.'
+        q: 'Where should I start in Santa Fe?',
+        a: 'Start with state offices, downtown hospitality sites, and hospital campuses.'
       },
       {
-        q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        q: 'Do I need special permits in Santa Fe County?',
+        a: 'You need a New Mexico CRS number and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
