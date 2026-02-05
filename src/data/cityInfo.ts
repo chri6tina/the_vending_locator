@@ -1247,31 +1247,31 @@ export const cityInfo: Record<string, CityInfo> = {
   },
   'casa-grande-arizona': {
     permitNotes:
-      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.',
+      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Pinal County may require health approvals for food and beverage vending; confirm local requirements before placement.',
     demandDrivers: [
+      'Manufacturing and industrial parks along I-10',
       'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Retail corridors on Florence Blvd',
+      'Agriculture processing and distribution',
+      'Tourism around Casa Grande Ruins'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Casa Grande',
+      'Florence Blvd corridor',
+      'I-10 / industrial corridor',
+      'Mission Valley',
+      'North Casa Grande'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Heat drives cold-beverage demand. Prioritize refrigeration uptime and weekly service in peak months.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Casa Grande. Validate sales, then expand to additional sites.'
+        a: 'Start with I-10 industrial sites, medical offices, and Florence Blvd retail centers for steady weekday traffic.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need an Arizona TPT license and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
@@ -1367,61 +1367,61 @@ export const cityInfo: Record<string, CityInfo> = {
   },
   'goodyear-arizona': {
     permitNotes:
-      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.',
+      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Maricopa County may require health approvals for food and beverage vending; confirm local requirements before placement.',
     demandDrivers: [
+      'Distribution centers in the West Valley',
+      'Goodyear Ballpark and event traffic',
       'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Retail corridors on McDowell and Estrella',
+      'Business parks along I-10'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Estrella',
+      'Palm Valley',
+      'Goodyear Ballpark area',
+      'Litchfield Park edge',
+      'I-10 / industrial corridor'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Spring training and summer heat drive spikes. Keep cold beverages stocked and service weekly.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Goodyear. Validate sales, then expand to additional sites.'
+        a: 'Start with business parks, medical offices, and ballpark-adjacent venues for steady weekday traffic.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need an Arizona TPT license and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'maricopa-arizona': {
     permitNotes:
-      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.',
+      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Pinal County may require health approvals for food and beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Growing residential workforce and offices',
+      'Harrah\'s Ak-Chin resort traffic',
+      'Retail corridors on John Wayne Pkwy',
+      'Healthcare clinics and urgent care',
+      'Light industrial and logistics'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Maricopa City Center',
+      'Copper Sky area',
+      'John Wayne Pkwy corridor',
+      'Rancho El Dorado',
+      'Harrah\'s Ak-Chin area'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Heat drives cold-beverage demand. Prioritize refrigeration uptime and mid-week service.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Maricopa. Validate sales, then expand to additional sites.'
+        a: 'Start with retail-adjacent offices, resort-area sites, and medical clinics for steady weekday traffic.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need an Arizona TPT license and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
@@ -1457,31 +1457,31 @@ export const cityInfo: Record<string, CityInfo> = {
   },
   'peoria-arizona': {
     permitNotes:
-      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.',
+      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Maricopa County may require health approvals for food and beverage vending; confirm local requirements before placement.',
     demandDrivers: [
+      'Peoria Sports Complex and event traffic',
       'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Retail corridors (P83 / Arrowhead)',
+      'Business parks and offices',
+      'Lake Pleasant tourism and recreation'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'P83 / Arrowhead',
+      'Old Town Peoria',
+      'Vistancia',
+      'Lake Pleasant area',
+      'Sun City edge'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Spring training and summer heat drive spikes. Keep cold beverages stocked and service weekly.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Peoria. Validate sales, then expand to additional sites.'
+        a: 'Start with P83 retail offices, sports complex venues, and healthcare campuses for steady demand.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need an Arizona TPT license and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
@@ -1520,61 +1520,61 @@ export const cityInfo: Record<string, CityInfo> = {
   },
   'prescott-arizona': {
     permitNotes:
-      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.',
+      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Yavapai County may require health approvals for food and beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Healthcare campuses (Yavapai Regional)',
+      'Downtown offices and civic buildings',
+      'Tourism and hospitality in the square',
+      'Yavapai College and student housing',
+      'Retail corridors on Gurley and Willow Creek'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown / Courthouse Square',
+      'Willow Creek Rd corridor',
+      'Gurley St',
+      'Prescott Lakes',
+      'Thumb Butte area'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Winter weather can slow routes. Prioritize indoor placements and flexible service windows.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Prescott. Validate sales, then expand to additional sites.'
+        a: 'Start with hospital campuses, downtown offices, and college-adjacent buildings for steady weekday traffic.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need an Arizona TPT license and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'prescott-valley-arizona': {
     permitNotes:
-      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.',
+      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Yavapai County may require health approvals for food and beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Town Center offices and municipal buildings',
+      'Healthcare clinics and medical offices',
+      'Retail corridors along Hwy 69',
+      'Industrial parks and logistics sites',
+      'Entertainment and event venues'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Prescott Valley Town Center',
+      'Hwy 69 corridor',
+      'Lynx Lake area',
+      'Granville',
+      'Glassford Hill'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Winter weather can affect routes. Prioritize indoor placements and mid-week service.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Prescott Valley. Validate sales, then expand to additional sites.'
+        a: 'Start with Town Center offices, medical clinics, and Hwy 69 retail corridors.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need an Arizona TPT license and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
@@ -1640,61 +1640,61 @@ export const cityInfo: Record<string, CityInfo> = {
   },
   'surprise-arizona': {
     permitNotes:
-      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.',
+      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Maricopa County may require health approvals for food and beverage vending; confirm local requirements before placement.',
     demandDrivers: [
+      'Surprise Stadium and spring training traffic',
       'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Retail corridors on Bell and Grand',
+      'Business parks and municipal buildings',
+      'Residential growth and service centers'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Surprise Stadium area',
+      'Marley Park',
+      'Ashton Ranch',
+      'Prasada corridor',
+      'Grand Ave'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Spring training and summer heat drive spikes. Keep cold beverages stocked and service weekly.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Surprise. Validate sales, then expand to additional sites.'
+        a: 'Start with stadium-area venues, medical offices, and retail-adjacent offices for steady demand.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need an Arizona TPT license and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'tempe-arizona': {
     permitNotes:
-      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.',
+      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Maricopa County may require health approvals for food and beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Arizona State University and student housing',
+      'Tempe Town Lake offices and events',
+      'Tech and corporate offices along Mill Ave',
+      'Healthcare clinics and medical offices',
+      'Light rail commuter traffic'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Tempe / Mill Ave',
+      'ASU / University area',
+      'Tempe Town Lake',
+      'South Tempe',
+      'Tempe Marketplace'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Semester cycles and heat drive demand. Keep cashless uptime high and restock mid-week.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Tempe. Validate sales, then expand to additional sites.'
+        a: 'Start with ASU buildings, downtown offices, and Tempe Town Lake business parks.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need an Arizona TPT license and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
@@ -1732,61 +1732,61 @@ export const cityInfo: Record<string, CityInfo> = {
   },
   'flagstaff-arizona': {
     permitNotes:
-      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.',
+      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Coconino County may require health approvals for food and beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Northern Arizona University and student housing',
+      'Tourism and hospitality along Route 66',
+      'Healthcare campuses (Flagstaff Medical)',
+      'I-40 logistics and distribution',
+      'Downtown offices and civic buildings'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Flagstaff',
+      'NAU / Southside',
+      'Route 66 corridor',
+      'East Flagstaff',
+      'I-40 / Industrial area'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Winter snow impacts routes. Prioritize indoor placements and flexible service windows.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Flagstaff. Validate sales, then expand to additional sites.'
+        a: 'Start with NAU buildings, hospital campuses, and Route 66 hospitality sites.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need an Arizona TPT license and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'yuma-arizona': {
     permitNotes:
-      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Register your business and confirm city/county health requirements for food and beverage vending.',
+      'Arizona requires a transaction privilege tax (TPT) license through the Department of Revenue. Yuma County may require health approvals for food and beverage vending; confirm local requirements before placement.',
     demandDrivers: [
+      'Agriculture processing and distribution',
+      'Yuma Proving Ground workforce',
+      'Border logistics and warehousing',
       'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Winter tourism and snowbird demand'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Yuma',
+      'Foothills',
+      '4th Ave corridor',
+      'Airport area',
+      'I-8 / Industrial area'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Winter season drives demand from visitors. Plan extra service during peak months.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Yuma. Validate sales, then expand to additional sites.'
+        a: 'Start with agriculture facilities, base-adjacent offices, and medical campuses for steady weekday traffic.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need an Arizona TPT license and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
@@ -2122,301 +2122,304 @@ export const cityInfo: Record<string, CityInfo> = {
   },
   'anaheim-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Orange County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Resort and tourism corridor (Disneyland)',
+      'Convention Center and event venues',
+      'Healthcare campuses (Anaheim Regional)',
+      'Industrial/logistics along I-5',
+      'Office parks and retail corridors'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Anaheim Resort',
+      'Platinum Triangle',
+      'Downtown Anaheim',
+      'West Anaheim',
+      'East Anaheim',
+      'North Anaheim'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Tourism seasons drive demand spikes. Increase service cadence around hotels, venues, and conventions.',
     extraFaqs: [
       {
-        q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Anaheim. Validate sales, then expand to additional sites.'
+        q: 'Where should I start in Anaheim?',
+        a: 'Start with resort-area hotels, convention venues, and office parks near the Platinum Triangle.'
       },
       {
-        q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        q: 'Do I need special permits in Orange County?',
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'antioch-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Contra Costa County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'BART commuter hub and offices',
+      'Healthcare campuses (Kaiser Antioch)',
+      'Retail corridors on Lone Tree Way',
+      'Industrial and logistics along Highway 4',
+      'Downtown offices and civic buildings'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Antioch',
+      'Antioch BART area',
+      'Somersville',
+      'Lone Tree Way corridor',
+      'Highway 4 / Industrial'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Summer heat lifts cold-beverage demand. Prioritize refrigeration uptime and weekly service.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Antioch. Validate sales, then expand to additional sites.'
+        a: 'Start with BART-adjacent offices, hospital campuses, and Highway 4 logistics sites.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'bakersfield-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Kern County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Energy and oilfield services',
+      'Agriculture processing and distribution',
+      'Healthcare campuses (Kern Medical)',
+      'CSU Bakersfield and student housing',
+      'Logistics along CA-99/I-5'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Bakersfield',
+      'Rosedale',
+      'Southwest Bakersfield',
+      'East Bakersfield',
+      'Oildale',
+      'Airport / I-5 corridor'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Summer heat increases cold-beverage demand. Prioritize refrigeration uptime and weekly service.',
     extraFaqs: [
       {
-        q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Bakersfield. Validate sales, then expand to additional sites.'
+        q: 'Where should I start in Bakersfield?',
+        a: 'Start with hospital campuses, oilfield offices, and logistics sites along CA-99.'
       },
       {
-        q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        q: 'Do I need special permits in Kern County?',
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'berkeley-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Alameda County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'UC Berkeley and student housing',
+      'Downtown offices and civic buildings',
+      'Research and lab facilities',
+      'Healthcare campuses (Alta Bates)',
+      'BART commuter traffic'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Berkeley',
+      'UC Berkeley / Southside',
+      'North Berkeley',
+      'West Berkeley',
+      'Shattuck Ave corridor'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Semester cycles drive weekday peaks. Keep cashless uptime high and restock mid-week.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Berkeley. Validate sales, then expand to additional sites.'
+        a: 'Start with campus buildings, downtown offices, and hospital campuses for steady weekday traffic.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'burbank-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Los Angeles County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Studio and media offices',
+      'Downtown Burbank offices and civic buildings',
+      'Healthcare campuses (Providence)',
+      'Burbank Airport corridor',
+      'Retail hubs (Burbank Town Center)'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Burbank',
+      'Media District',
+      'Magnolia Park',
+      'Airport area',
+      'San Fernando Blvd corridor'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Studio schedules can spike demand. Plan flexible service windows for production sites.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Burbank. Validate sales, then expand to additional sites.'
+        a: 'Start with studio offices, hospital campuses, and airport-area business parks.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'carlsbad-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. San Diego County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Tech and biotech business parks',
+      'Tourism and hospitality along the coast',
+      'Healthcare campuses (Scripps, Tri-City)',
+      'Corporate offices in Carlsbad Ranch',
+      'Retail hubs and outlet centers'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Carlsbad Village',
+      'Carlsbad Ranch',
+      'Bressi Ranch',
+      'Business Park area',
+      'Palomar Airport Rd corridor'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Summer tourism spikes demand. Keep cold beverages stocked and service coastal sites weekly.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Carlsbad. Validate sales, then expand to additional sites.'
+        a: 'Start with business parks, hospital campuses, and coastal hospitality sites.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'chula-vista-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. San Diego County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Otay Mesa logistics and warehouses',
+      'Healthcare campuses (Sharp Chula Vista)',
+      'Southwestern College and student housing',
+      'Retail corridors and office parks',
+      'Coastal tourism and hospitality'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown / 3rd Ave',
+      'Eastlake',
+      'Otay Ranch',
+      'Otay Mesa',
+      'Terra Nova',
+      'Marina / Bayfront'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Summer months drive demand. Keep cold beverages stocked and service high-traffic sites weekly.',
     extraFaqs: [
       {
-        q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Chula Vista. Validate sales, then expand to additional sites.'
+        q: 'Where should I start in Chula Vista?',
+        a: 'Start with Otay Mesa logistics sites, hospital campuses, and Eastlake office parks.'
       },
       {
-        q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        q: 'Do I need special permits in San Diego County?',
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'clovis-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Fresno County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Healthcare campuses (Clovis Community, Saint Agnes)',
+      'Retail hubs along Shaw and Herndon',
+      'Agriculture distribution and processing',
+      'Education and school districts',
+      'Logistics along CA-168'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Old Town Clovis',
+      'Sierra Vista area',
+      'Herndon Ave corridor',
+      'North Clovis',
+      'CA-168 / Industrial'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Summer heat boosts cold-beverage demand. Prioritize refrigeration uptime and weekly service.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Clovis. Validate sales, then expand to additional sites.'
+        a: 'Start with hospital campuses, retail-adjacent offices, and CA-168 business parks.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'compton-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Los Angeles County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Industrial and logistics along I-710',
+      'Metro and commuter hubs',
+      'Healthcare clinics and medical offices',
+      'Government and civic buildings',
+      'Retail corridors on Compton Blvd'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Compton',
+      'Compton Blvd corridor',
+      'Alameda industrial area',
+      'West Compton',
+      'I-710 corridor'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Weekday industrial demand is steady. Keep cashless uptime high and service mid-week.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Compton. Validate sales, then expand to additional sites.'
+        a: 'Start with logistics parks, civic buildings, and retail-adjacent offices.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'concord-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Contra Costa County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'BART commuter hubs and offices',
+      'Healthcare campuses (John Muir)',
+      'Retail corridors and malls',
+      'Industrial parks along I-680',
+      'Downtown offices and civic buildings'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown / Todos Santos',
+      'Monument Blvd corridor',
+      'Claycord',
+      'Concord Pavilion area',
+      'I-680 corridor'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Commuter traffic drives weekday peaks. Keep cashless uptime high and service mid-week.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Concord. Validate sales, then expand to additional sites.'
+        a: 'Start with BART-adjacent offices, medical campuses, and I-680 business parks.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
@@ -2452,61 +2455,61 @@ export const cityInfo: Record<string, CityInfo> = {
   },
   'costa-mesa-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Orange County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'South Coast Plaza retail and offices',
+      'Business parks along Bristol and Harbor',
+      'Healthcare clinics and outpatient centers',
+      'Arts and entertainment venues',
+      'John Wayne Airport corridor'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'South Coast Metro',
+      'South Coast Plaza',
+      'Harbor Blvd corridor',
+      'Bristol St corridor',
+      'Eastside Costa Mesa'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Retail traffic drives steady demand. Keep cashless uptime high and service mid-week.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Costa Mesa. Validate sales, then expand to additional sites.'
+        a: 'Start with South Coast offices, medical clinics, and airport-area business parks.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'daly-city-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. San Mateo County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'BART commuter hubs and offices',
+      'Healthcare campuses (Seton)',
+      'Retail corridors on Mission and Serramonte',
+      'Government and civic buildings',
+      'Workforce commuting to SF'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Serramonte',
+      'Westlake',
+      'Crocker',
+      'Mission St corridor',
+      'BART / Colma edge'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Commuter traffic drives weekday peaks. Keep cashless uptime high and service mid-week.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Daly City. Validate sales, then expand to additional sites.'
+        a: 'Start with BART-adjacent offices, hospital campuses, and retail-adjacent business centers.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
@@ -2572,31 +2575,31 @@ export const cityInfo: Record<string, CityInfo> = {
   },
   'elk-grove-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Sacramento County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Retail corridors on Elk Grove Blvd',
+      'Healthcare clinics and medical offices',
+      'City offices and civic buildings',
+      'Logistics along I-5 and CA-99',
+      'Schools and community colleges'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Old Town Elk Grove',
+      'Laguna',
+      'Elk Grove Blvd corridor',
+      'Sheldon',
+      'I-5 / CA-99'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Summer heat lifts cold-beverage demand. Prioritize refrigeration uptime and weekly service.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Elk Grove. Validate sales, then expand to additional sites.'
+        a: 'Start with retail-adjacent offices, medical clinics, and logistics sites along I-5.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
@@ -2632,451 +2635,455 @@ export const cityInfo: Record<string, CityInfo> = {
   },
   'fairfield-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Solano County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Travis AFB workforce and contractors',
+      'I-80 logistics and distribution centers',
+      'Healthcare campuses (NorthBay)',
+      'Retail hubs and outlets',
+      'Downtown offices and civic buildings'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Fairfield',
+      'Travis AFB area',
+      'Cordelia',
+      'I-80 corridor',
+      'Green Valley'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Summer heat increases cold-beverage demand. Prioritize refrigeration uptime and weekly service.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Fairfield. Validate sales, then expand to additional sites.'
+        a: 'Start with base-adjacent offices, hospital campuses, and I-80 logistics sites.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'fontana-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. San Bernardino County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Logistics and warehousing along I-10/I-15',
+      'Healthcare campuses (Kaiser Fontana)',
+      'Auto and manufacturing corridors',
+      'Retail and office centers',
+      'Distribution hubs in the Inland Empire'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'North Fontana',
+      'Southridge',
+      'Sierra Lakes',
+      'Kaiser area',
+      'West Fontana',
+      'I-10/I-15 corridors'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Heat increases cold-beverage demand. Prioritize refrigeration uptime and weekly service.',
     extraFaqs: [
       {
-        q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Fontana. Validate sales, then expand to additional sites.'
+        q: 'Where should I start in Fontana?',
+        a: 'Start with logistics parks, medical campuses, and manufacturing sites along I-10/I-15.'
       },
       {
-        q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        q: 'Do I need special permits in San Bernardino County?',
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'fremont-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Alameda County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Tech and manufacturing campuses',
+      'Industrial parks in Warm Springs',
+      'Healthcare campuses (Washington Hospital)',
+      'BART commuter hubs and offices',
+      'Retail corridors along Fremont Blvd'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Warm Springs',
+      'Centerville',
+      'Irvington',
+      'North Fremont',
+      'Ardenwood'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Weekday office traffic drives peaks. Keep cashless uptime high and service mid-week.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Fremont. Validate sales, then expand to additional sites.'
+        a: 'Start with tech campuses, hospital offices, and Warm Springs industrial parks.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'fresno-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Fresno County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Healthcare campuses (Community Regional)',
+      'Fresno State and student housing',
+      'Agriculture distribution and processing',
+      'Logistics along CA-99',
+      'Downtown offices and civic buildings'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Fresno',
+      'Tower District',
+      'Fresno State area',
+      'North Fresno',
+      'Clovis corridor',
+      'Industrial / CA-99'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Summer heat drives cold-beverage demand. Keep refrigeration reliable and service high-velocity sites weekly.',
     extraFaqs: [
       {
-        q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Fresno. Validate sales, then expand to additional sites.'
+        q: 'Where should I start in Fresno?',
+        a: 'Start with hospital campuses, Fresno State buildings, and CA-99 logistics sites.'
       },
       {
-        q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        q: 'Do I need special permits in Fresno County?',
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'fullerton-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Orange County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Cal State Fullerton and student housing',
+      'Downtown offices and civic buildings',
+      'Healthcare campuses (St. Jude)',
+      'Retail corridors along Harbor Blvd',
+      'Business parks and light industrial'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Fullerton',
+      'CSUF / University area',
+      'Amerige Heights',
+      'Harbor Blvd corridor',
+      'East Fullerton'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Semester cycles drive weekday peaks. Keep cashless uptime high and restock mid-week.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Fullerton. Validate sales, then expand to additional sites.'
+        a: 'Start with CSUF buildings, hospital campuses, and downtown office hubs.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'garden-grove-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Orange County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Healthcare clinics and medical offices',
+      'Retail corridors on Garden Grove Blvd',
+      'Civic Center offices',
+      'Light industrial and warehouses',
+      'Hospitality and entertainment venues'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Civic Center',
+      'West Garden Grove',
+      'Little Saigon area',
+      'Garden Grove Blvd corridor',
+      'Harbor Blvd corridor'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Steady year-round demand. Keep cashless uptime high and service mid-week.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Garden Grove. Validate sales, then expand to additional sites.'
+        a: 'Start with civic offices, medical clinics, and retail-adjacent office complexes.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'glendale-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Los Angeles County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Media and entertainment offices',
+      'Downtown Brand Blvd corporate offices',
+      'Healthcare campuses (Adventist Health)',
+      'Retail hubs (Galleria, Americana)',
+      'Business parks and light industrial'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Glendale / Brand',
+      'Americana area',
+      'Galleria district',
+      'North Glendale',
+      'Verdugo Woodlands'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Weekday office traffic drives peaks. Keep cashless uptime high and service mid-week.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Glendale. Validate sales, then expand to additional sites.'
+        a: 'Start with Brand Blvd offices, hospital campuses, and retail-adjacent business parks.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'hayward-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Alameda County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Industrial parks along I-880',
+      'CSU East Bay and student housing',
+      'Healthcare campuses (St. Rose)',
+      'Downtown offices and civic buildings',
+      'Retail corridors on Foothill and Mission'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Hayward',
+      'Southland',
+      'Tennyson',
+      'I-880 corridor',
+      'Foothill Blvd'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Weekday industrial demand is steady. Keep cashless uptime high and service mid-week.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Hayward. Validate sales, then expand to additional sites.'
+        a: 'Start with industrial parks, CSU East Bay buildings, and hospital campuses.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'huntington-beach-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Orange County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
+      'Tourism and hospitality along the coast',
+      'Downtown and Main St offices',
       'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Retail centers (Bella Terra, Pacific City)',
+      'Light industrial and business parks'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown / Main St',
+      'Pacific City',
+      'Bella Terra area',
+      'Bolsa Chica',
+      'Warner Ave corridor'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Summer tourism spikes demand. Keep cold beverages stocked and service coastal sites weekly.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Huntington Beach. Validate sales, then expand to additional sites.'
+        a: 'Start with coastal hospitality sites, retail-adjacent offices, and medical campuses.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'inglewood-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Los Angeles County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'SoFi Stadium and arena events',
+      'LAX corridor offices and hotels',
+      'Healthcare campuses (Centinela)',
+      'Downtown offices and civic buildings',
+      'Retail corridors on Century and Manchester'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Inglewood',
+      'SoFi / Stadium district',
+      'Century Blvd corridor',
+      'Morningside Park',
+      'North Inglewood'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Event schedules drive spikes. Increase service around stadium and arena events.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Inglewood. Validate sales, then expand to additional sites.'
+        a: 'Start with event venues, hospital campuses, and LAX corridor offices.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'irvine-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Orange County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Irvine business parks and corporate HQs',
+      'UC Irvine and student housing',
+      'Healthcare campuses (Hoag, UCI Health)',
+      'John Wayne Airport corridor',
+      'Retail centers (Spectrum, Fashion Island)'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Irvine Spectrum',
+      'UC Irvine area',
+      'Airport area',
+      'North Irvine',
+      'Westpark',
+      'Turtle Rock'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Weekday office traffic drives peaks. Keep cashless uptime high and service mid-week.',
     extraFaqs: [
       {
-        q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Irvine. Validate sales, then expand to additional sites.'
+        q: 'Where should I start in Irvine?',
+        a: 'Start with business parks, UCI buildings, and airport-adjacent offices.'
       },
       {
-        q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        q: 'Do I need special permits in Orange County?',
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'lancaster-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Los Angeles County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Aerospace and defense contractors',
+      'Antelope Valley Hospital campus',
+      'Antelope Valley College and student housing',
+      'Logistics along SR-14',
+      'Downtown offices and civic buildings'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Lancaster',
+      'Lancaster Blvd corridor',
+      'West Lancaster',
+      'East Lancaster',
+      'Fox Field / Airport area'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Heat and wind can impact routes. Prioritize indoor placements and weekly service.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Lancaster. Validate sales, then expand to additional sites.'
+        a: 'Start with hospital campuses, aerospace offices, and SR-14 business parks.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'jurupa-valley-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Riverside County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Logistics and warehousing along I-15/I-60',
+      'Industrial parks in Mira Loma',
+      'Healthcare clinics and medical offices',
+      'Retail corridors on Mission Blvd',
+      'Distribution centers in the Inland Empire'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Mira Loma',
+      'Pedley',
+      'Rubidoux',
+      'Mission Blvd corridor',
+      'I-15 / I-60'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Heat drives cold-beverage demand. Prioritize refrigeration uptime and weekly service.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Jurupa Valley. Validate sales, then expand to additional sites.'
+        a: 'Start with logistics parks, industrial offices, and Mission Blvd retail centers.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'lakewood-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Los Angeles County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Lakewood Center retail and offices',
+      'Healthcare clinics and outpatient centers',
+      'Municipal buildings and schools',
+      'Industrial corridors along I-605',
+      'Retail and office parks'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Lakewood Center',
+      'Lakewood Village',
+      'Mayfair',
+      'I-605 corridor',
+      'Del Amo Blvd area'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Steady weekday demand. Keep cashless uptime high and service mid-week.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Lakewood. Validate sales, then expand to additional sites.'
+        a: 'Start with Lakewood Center offices, medical clinics, and I-605 business parks.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'long-beach-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Los Angeles County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Port of Long Beach logistics and terminals',
+      'Healthcare campuses (MemorialCare)',
+      'CSU Long Beach and student housing',
+      'Downtown offices and waterfront hospitality',
+      'Industrial corridors along I-710'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown / Waterfront',
+      'Belmont Shore',
+      'Bixby Knolls',
+      'East Long Beach',
+      'Airport area',
+      'West Long Beach / Port'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Port and tourism traffic create steady demand. Keep service cadence consistent and stock cold beverages.',
     extraFaqs: [
       {
-        q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Long Beach. Validate sales, then expand to additional sites.'
+        q: 'Where should I start in Long Beach?',
+        a: 'Start with port-adjacent offices, hospital campuses, and CSULB buildings.'
       },
       {
-        q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        q: 'Do I need special permits in LA County?',
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
@@ -3115,121 +3122,122 @@ export const cityInfo: Record<string, CityInfo> = {
   },
   'modesto-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Stanislaus County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Agriculture processing and distribution',
+      'Healthcare campuses (Memorial Medical)',
+      'Modesto Junior College and student housing',
+      'Logistics along CA-99',
+      'Downtown offices and civic buildings'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Modesto',
+      'McHenry Ave corridor',
+      'North Modesto',
+      'Salida / CA-99',
+      'Airport area',
+      'La Loma'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Summer heat boosts cold-beverage demand. Prioritize refrigeration uptime and weekly service.',
     extraFaqs: [
       {
-        q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Modesto. Validate sales, then expand to additional sites.'
+        q: 'Where should I start in Modesto?',
+        a: 'Start with hospital campuses, CA-99 logistics sites, and downtown offices.'
       },
       {
-        q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        q: 'Do I need special permits in Stanislaus County?',
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'moreno-valley-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Riverside County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Logistics and distribution centers',
+      'March Air Reserve Base workforce',
+      'Healthcare campuses (Kaiser, Riverside Univ Health)',
+      'Retail corridors and business parks',
+      'Industrial sites along I-215'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Moreno Valley',
+      'Sunnymead',
+      'Moreno Valley Mall area',
+      'March Field / I-215',
+      'East Moreno Valley'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Heat increases cold-beverage demand. Prioritize refrigeration uptime and weekly service.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Moreno Valley. Validate sales, then expand to additional sites.'
+        a: 'Start with distribution centers, medical campuses, and March Field-adjacent offices.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'mountain-view-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Santa Clara County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Tech campuses and offices (North Bayshore)',
+      'Downtown Castro St offices and retail',
+      'Healthcare campuses (El Camino)',
+      'Moffett area contractors',
+      'Transit and commuter hubs'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown / Castro St',
+      'North Bayshore',
+      'Whisman',
+      'Shoreline',
+      'Moffett Blvd corridor'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Office-heavy demand peaks on weekdays. Keep cashless uptime high and service mid-week.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Mountain View. Validate sales, then expand to additional sites.'
+        a: 'Start with tech campuses, downtown office clusters, and medical offices.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'murrieta-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Riverside County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Healthcare campuses (Rancho Springs, Loma Linda)',
+      'I-15 corridor offices and logistics',
+      'Retail corridors on Murrieta Hot Springs',
+      'Business parks and municipal buildings',
+      'Education and community colleges'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Murrieta',
+      'Murrieta Hot Springs',
+      'I-15 corridor',
+      'French Valley',
+      'Town Center'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Heat drives cold-beverage demand. Prioritize refrigeration uptime and weekly service.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Murrieta. Validate sales, then expand to additional sites.'
+        a: 'Start with hospital campuses, I-15 business parks, and retail-adjacent offices.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
@@ -3265,241 +3273,244 @@ export const cityInfo: Record<string, CityInfo> = {
   },
   'newport-beach-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Orange County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Finance and professional offices',
+      'Hoag Hospital and medical offices',
+      'Tourism and waterfront hospitality',
+      'Retail hubs (Fashion Island)',
+      'John Wayne Airport corridor'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Fashion Island',
+      'Balboa Peninsula',
+      'Newport Center',
+      'Corona del Mar',
+      'Airport area'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Summer tourism spikes demand. Keep cold beverages stocked and service coastal sites weekly.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Newport Beach. Validate sales, then expand to additional sites.'
+        a: 'Start with Fashion Island offices, hospital campuses, and waterfront hospitality venues.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'norwalk-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Los Angeles County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Government offices and civic center',
+      'Healthcare campuses (PIH, Kaiser)',
+      'Industrial and logistics along I-5/I-605',
+      'Metro commuter hubs',
+      'Retail corridors on Imperial and Firestone'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Civic Center',
+      'Norwalk Blvd corridor',
+      'Imperial Hwy',
+      'South Norwalk',
+      'I-5 / I-605'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Commuter traffic drives weekday peaks. Keep cashless uptime high and service mid-week.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Norwalk. Validate sales, then expand to additional sites.'
+        a: 'Start with civic buildings, hospital campuses, and I-5 business parks.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'oakland-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Alameda County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Port of Oakland logistics and terminals',
+      'Downtown offices and civic buildings',
+      'Healthcare campuses (Kaiser, UCSF Benioff)',
+      'Laney College and community colleges',
+      'Industrial corridors along I-880'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown / Jack London',
+      'Uptown / Lake Merritt',
+      'Fruitvale',
+      'West Oakland / Port',
+      'East Oakland'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Port and office traffic create steady demand. Keep service cadence consistent and stock quick-sell items.',
     extraFaqs: [
       {
-        q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Oakland. Validate sales, then expand to additional sites.'
+        q: 'Where should I start in Oakland?',
+        a: 'Start with port-adjacent logistics sites, hospital campuses, and downtown offices.'
       },
       {
-        q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        q: 'Do I need special permits in Alameda County?',
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'oceanside-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. San Diego County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Camp Pendleton workforce and contractors',
+      'Coastal tourism and hospitality',
+      'Healthcare campuses (Tri-City Medical)',
+      'Downtown offices and civic buildings',
+      'I-5 corridor logistics'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Oceanside',
+      'Harbor / Marina',
+      'Rancho Del Oro',
+      'Tri-City area',
+      'Mission Ave corridor',
+      'Camp Pendleton gates'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Summer tourism spikes demand. Keep cold beverages stocked and service coastal sites weekly.',
     extraFaqs: [
       {
-        q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Oceanside. Validate sales, then expand to additional sites.'
+        q: 'Where should I start in Oceanside?',
+        a: 'Start with Camp Pendleton-adjacent offices, hospital campuses, and coastal hospitality sites.'
       },
       {
-        q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        q: 'Do I need special permits in San Diego County?',
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'ontario-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. San Bernardino County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Ontario International Airport logistics',
+      'Industrial and warehousing along I-10/I-15',
+      'Healthcare campuses (Kaiser Ontario)',
+      'Downtown offices and civic buildings',
+      'Retail corridors (Ontario Mills)'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Airport area',
+      'Ontario Mills',
+      'Downtown Ontario',
+      'East Ontario',
+      'South Ontario',
+      'I-10 / I-15 corridor'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Heat drives cold-beverage demand. Prioritize refrigeration uptime and weekly service in peak months.',
     extraFaqs: [
       {
-        q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Ontario. Validate sales, then expand to additional sites.'
+        q: 'Where should I start in Ontario?',
+        a: 'Start with airport-area warehouses, hospital campuses, and logistics parks along I-10.'
       },
       {
-        q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        q: 'Do I need special permits in San Bernardino County?',
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'orange-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Orange County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
+      'Chapman University and student housing',
+      'Healthcare campuses (CHOC, St. Joseph)',
+      'Old Towne Orange offices and retail',
+      'Business parks along Katella',
       'Retail corridors and shopping centers'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Old Towne Orange',
+      'Chapman / University area',
+      'Katella Ave corridor',
+      'The Outlets at Orange',
+      'North Orange'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Semester cycles and office traffic drive weekday peaks. Keep cashless uptime high.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Orange. Validate sales, then expand to additional sites.'
+        a: 'Start with Chapman buildings, hospital campuses, and Old Towne offices.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'oxnard-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Ventura County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Port of Hueneme logistics',
+      'Agriculture and food processing',
+      'Healthcare campuses (St. John\'s)',
+      'Downtown offices and civic buildings',
+      'Industrial corridors along US-101'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Oxnard',
+      'RiverPark',
+      'South Oxnard',
+      'Port / Industrial area',
+      'Oxnard Airport',
+      'Rose Ave corridor'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Summer tourism and coastal traffic increase demand. Keep cold beverages stocked and service weekly.',
     extraFaqs: [
       {
-        q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Oxnard. Validate sales, then expand to additional sites.'
+        q: 'Where should I start in Oxnard?',
+        a: 'Start with port-adjacent logistics sites, hospital campuses, and industrial corridors.'
       },
       {
-        q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        q: 'Do I need special permits in Ventura County?',
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'palm-desert-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Riverside County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Resort and golf tourism',
+      'Healthcare campuses (Eisenhower Health)',
+      'El Paseo retail and hospitality',
+      'Seasonal residents and events',
+      'Downtown offices and civic buildings'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'El Paseo',
+      'Palm Desert Resort',
+      'Monterey Country Club',
+      'Highway 111 corridor',
+      'Palm Desert North'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Winter tourism spikes demand. Increase service cadence during peak season.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Palm Desert. Validate sales, then expand to additional sites.'
+        a: 'Start with resort properties, hospital campuses, and El Paseo retail-adjacent offices.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
@@ -3565,91 +3576,92 @@ export const cityInfo: Record<string, CityInfo> = {
   },
   'pasadena-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Los Angeles County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Caltech and research campuses',
+      'Healthcare campuses (Huntington)',
+      'Downtown offices and civic buildings',
+      'Rose Bowl events and venues',
+      'Retail corridors on Colorado Blvd'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Old Pasadena',
+      'Caltech / South Lake',
+      'East Pasadena',
+      'Playhouse District',
+      'Rose Bowl area'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Event days and office traffic drive spikes. Increase service around venues and downtown.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Pasadena. Validate sales, then expand to additional sites.'
+        a: 'Start with Caltech buildings, hospital campuses, and Old Pasadena offices.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'pomona-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Los Angeles County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Cal Poly Pomona and student housing',
+      'Pomona Valley Hospital campus',
+      'Fairplex events and venues',
+      'Industrial/logistics along SR-60',
+      'Downtown offices and civic buildings'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Pomona',
+      'Cal Poly / University area',
+      'Fairplex district',
+      'Mission Blvd corridor',
+      'SR-60 / Industrial'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Event schedules can spike demand. Plan extra service around Fairplex events.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Pomona. Validate sales, then expand to additional sites.'
+        a: 'Start with Cal Poly buildings, hospital campuses, and SR-60 logistics sites.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'rancho-cucamonga-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. San Bernardino County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Logistics and warehousing along I-10/210',
+      'Healthcare campuses (Kaiser)',
+      'Retail hubs (Victoria Gardens)',
+      'Corporate offices and business parks',
+      'Distribution centers in the Inland Empire'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Victoria Gardens',
+      'Haven City Market area',
+      'Etiwanda',
+      'Foothill Blvd corridor',
+      'North Rancho',
+      'I-10 / 210 corridors'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Heat drives cold-beverage demand. Prioritize refrigeration uptime and weekly service.',
     extraFaqs: [
       {
-        q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Rancho Cucamonga. Validate sales, then expand to additional sites.'
+        q: 'Where should I start in Rancho Cucamonga?',
+        a: 'Start with logistics parks, retail-adjacent offices, and hospital campuses.'
       },
       {
-        q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        q: 'Do I need special permits in San Bernardino County?',
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
@@ -3747,31 +3759,31 @@ export const cityInfo: Record<string, CityInfo> = {
   },
   'roseville-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Placer County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Retail hubs (Galleria, Fountains)',
+      'Healthcare campuses (Sutter Roseville)',
+      'Business parks along I-80',
+      'Education and community colleges',
+      'Industrial and logistics corridors'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Roseville',
+      'Galleria / Fountains',
+      'East Roseville',
+      'Fiddyment',
+      'I-80 corridor'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Summer heat increases cold-beverage demand. Prioritize refrigeration uptime and weekly service.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Roseville. Validate sales, then expand to additional sites.'
+        a: 'Start with retail-adjacent offices, hospital campuses, and I-80 business parks.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
@@ -3810,61 +3822,62 @@ export const cityInfo: Record<string, CityInfo> = {
   },
   'salinas-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Monterey County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
+      'Agriculture processing and distribution',
+      'Healthcare campuses (Natividad)',
+      'Logistics along US-101',
+      'Downtown offices and civic buildings',
       'Retail corridors and shopping centers'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Salinas',
+      'North Salinas',
+      'Alisal',
+      'Boronda',
+      'US-101 corridor'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Harvest seasons can spike demand. Plan extra service during peak agriculture months.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Salinas. Validate sales, then expand to additional sites.'
+        a: 'Start with agriculture facilities, hospital campuses, and downtown office clusters.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'san-bernardino-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. San Bernardino County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Logistics and warehousing in the Inland Empire',
+      'County government offices and courts',
+      'Healthcare campuses (Arrowhead Regional, St. Bernardine)',
+      'CSU San Bernardino and student housing',
+      'Rail and distribution corridors'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown San Bernardino',
+      'University District',
+      'Hospitality Lane',
+      'Verdemont',
+      'Airport area',
+      'Inland Center'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Heat drives cold-beverage demand. Prioritize refrigeration uptime and weekly service in peak months.',
     extraFaqs: [
       {
-        q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in San Bernardino. Validate sales, then expand to additional sites.'
+        q: 'Where should I start in San Bernardino?',
+        a: 'Start with logistics parks, county offices, and CSUSB-adjacent buildings.'
       },
       {
-        q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        q: 'Do I need special permits in San Bernardino County?',
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
@@ -3902,31 +3915,31 @@ export const cityInfo: Record<string, CityInfo> = {
   },
   'santa-clara-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Santa Clara County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Tech campuses and offices',
+      'Levi\'s Stadium events and venues',
+      'Santa Clara University and student housing',
+      'Healthcare campuses (Kaiser)',
+      'Office parks along Scott Blvd'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'North Santa Clara',
+      'Santa Clara University area',
+      'Rivermark',
+      'Great America',
+      'Scott Blvd corridor'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Event weeks can spike demand. Increase service around stadium and office hubs.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Santa Clara. Validate sales, then expand to additional sites.'
+        a: 'Start with tech campuses, stadium-area offices, and hospital campuses.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
@@ -3998,391 +4011,395 @@ export const cityInfo: Record<string, CityInfo> = {
   },
   'santa-ana-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Orange County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Orange County government offices and courts',
+      'Healthcare clinics and medical offices',
+      'Santa Ana College and student housing',
+      'Logistics along I-5 / SR-55',
+      'Downtown offices and civic buildings'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Santa Ana',
+      'Civic Center',
+      'South Coast Metro',
+      'Santa Ana College area',
+      'South Santa Ana',
+      'I-5 industrial corridor'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Weekday office traffic drives peaks. Keep cashless uptime high and service mid-week.',
     extraFaqs: [
       {
-        q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Santa Ana. Validate sales, then expand to additional sites.'
+        q: 'Where should I start in Santa Ana?',
+        a: 'Start with civic buildings, medical offices, and Santa Ana College-adjacent sites.'
       },
       {
-        q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        q: 'Do I need special permits in Orange County?',
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'santa-clarita-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Los Angeles County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Film and production studios',
+      'Healthcare campuses (Henry Mayo)',
+      'Office parks along I-5',
+      'Retail corridors and civic buildings',
+      'Industrial and logistics facilities'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Valencia',
+      'Newhall',
+      'Canyon Country',
+      'Saugus',
+      'Stevenson Ranch',
+      'I-5 corridor'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Summer heat increases cold-beverage demand. Keep refrigeration reliable and service weekly.',
     extraFaqs: [
       {
-        q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Santa Clarita. Validate sales, then expand to additional sites.'
+        q: 'Where should I start in Santa Clarita?',
+        a: 'Start with studio campuses, hospital facilities, and I-5 business parks.'
       },
       {
-        q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        q: 'Do I need special permits in LA County?',
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'santa-maria-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Santa Barbara County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Agriculture processing and distribution',
+      'Healthcare campuses (Marian Regional)',
+      'Allan Hancock College and student housing',
+      'Retail corridors along Broadway',
+      'Logistics along US-101'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Santa Maria',
+      'Orcutt',
+      'Broadway corridor',
+      'Betteravia',
+      'US-101 / Industrial'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Harvest seasons can spike demand. Keep cold beverages stocked and service weekly.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Santa Maria. Validate sales, then expand to additional sites.'
+        a: 'Start with hospital campuses, college buildings, and US-101 logistics sites.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'simi-valley-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Ventura County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Defense and industrial employers',
+      'Healthcare campuses (Adventist Health)',
+      'Downtown offices and civic buildings',
+      'Retail corridors along Cochran St',
+      'Business parks and light industrial'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Town Center',
+      'East Simi',
+      'West Simi',
+      'Cochran St corridor',
+      'Madera Rd area'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Summer heat boosts cold-beverage demand. Prioritize refrigeration uptime and weekly service.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Simi Valley. Validate sales, then expand to additional sites.'
+        a: 'Start with industrial parks, hospital campuses, and downtown offices.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'stockton-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. San Joaquin County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Port of Stockton logistics',
+      'Warehousing along I-5 / CA-99',
+      'Healthcare campuses (St. Joseph\'s)',
+      'University of the Pacific and student housing',
+      'Downtown offices and civic buildings'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Stockton',
+      'Brookside',
+      'Spanos Park',
+      'Port / West Stockton',
+      'University District',
+      'I-5 / CA-99 corridor'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Summer heat boosts cold-beverage demand. Keep refrigeration reliable and service high-velocity sites weekly.',
     extraFaqs: [
       {
-        q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Stockton. Validate sales, then expand to additional sites.'
+        q: 'Where should I start in Stockton?',
+        a: 'Start with port-adjacent logistics sites, hospital campuses, and UOP buildings.'
       },
       {
-        q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        q: 'Do I need special permits in San Joaquin County?',
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'sunnyvale-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Santa Clara County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Tech campuses and offices (Moffett Park)',
+      'Downtown Sunnyvale offices and retail',
+      'Healthcare campuses (Kaiser)',
+      'Industrial parks and light manufacturing',
+      'Transit and commuter hubs'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Sunnyvale',
+      'Moffett Park',
+      'Lawrence Expressway corridor',
+      'Sunnyvale West',
+      'Cherry Orchard'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Office-heavy demand peaks on weekdays. Keep cashless uptime high and service mid-week.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Sunnyvale. Validate sales, then expand to additional sites.'
+        a: 'Start with tech campuses, downtown offices, and medical clinics for steady weekday traffic.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'temecula-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Riverside County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Wine country tourism and hospitality',
+      'Healthcare campuses (Temecula Valley Hospital)',
+      'Retail corridors on Temecula Pkwy',
+      'I-15 logistics and business parks',
+      'Old Town offices and civic buildings'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Old Town Temecula',
+      'Wine Country',
+      'Temecula Pkwy corridor',
+      'Rancho California',
+      'I-15 / Business Park'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Tourism seasons drive spikes. Increase service cadence on weekends and event weeks.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Temecula. Validate sales, then expand to additional sites.'
+        a: 'Start with hospital campuses, wine country venues, and I-15 business parks.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'thousand-oaks-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Ventura County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Biotech and corporate campuses (Amgen)',
+      'Healthcare campuses (Los Robles)',
+      'Retail hubs (The Oaks, Janss)',
+      'Office parks along 101',
+      'Civic buildings and schools'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Thousand Oaks Blvd corridor',
+      'Westlake Village edge',
+      'North Ranch',
+      'Janss Rd area',
+      'Conejo Valley'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Office-heavy demand peaks on weekdays. Keep cashless uptime high and service mid-week.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Thousand Oaks. Validate sales, then expand to additional sites.'
+        a: 'Start with corporate campuses, hospital offices, and retail-adjacent office parks.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'torrance-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Los Angeles County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Aerospace and manufacturing employers',
+      'Healthcare campuses (Torrance Memorial)',
+      'Del Amo retail and offices',
+      'Port and logistics corridors',
+      'Corporate offices along Hawthorne Blvd'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Del Amo area',
+      'Old Torrance',
+      'North Torrance',
+      'South Bay / Harbor Gateway',
+      'Hawthorne Blvd corridor'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Weekday office traffic drives peaks. Keep cashless uptime high and service mid-week.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Torrance. Validate sales, then expand to additional sites.'
+        a: 'Start with aerospace offices, hospital campuses, and Del Amo area business parks.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'vallejo-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Solano County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Mare Island industrial and maritime sites',
+      'Healthcare campuses (Kaiser Vallejo)',
+      'Downtown offices and civic buildings',
+      'Six Flags and waterfront tourism',
+      'I-80 logistics corridor'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Vallejo',
+      'Mare Island',
+      'Waterfront',
+      'North Vallejo',
+      'I-80 / Benicia Rd'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Tourism and event weekends can spike demand. Plan extra service around waterfront venues.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Vallejo. Validate sales, then expand to additional sites.'
+        a: 'Start with Mare Island offices, hospital campuses, and waterfront venues.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'ventura-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Ventura County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'County government and downtown offices',
+      'Healthcare campuses (Ventura County Medical)',
+      'Harbor and tourism activity',
+      'Industrial parks along US-101',
+      'Retail corridors on Main St'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Ventura',
+      'Harbor / Marina',
+      'Midtown',
+      'East Ventura',
+      'Montalvo',
+      'US-101 corridor'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Summer tourism spikes demand. Keep cold beverages stocked and service coastal sites weekly.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Ventura. Validate sales, then expand to additional sites.'
+        a: 'Start with county offices, hospital campuses, and harbor-area hospitality sites.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'victorville-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. San Bernardino County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Logistics along I-15 and US-395',
+      'Southern California Logistics Airport',
+      'Healthcare campuses (St. Mary Medical)',
+      'Retail corridors and business parks',
+      'Manufacturing and distribution sites'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Old Town Victorville',
+      'Bear Valley Rd corridor',
+      'Desert Knolls',
+      'SCLA / Airport area',
+      'I-15 corridor'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Heat drives cold-beverage demand. Prioritize refrigeration uptime and weekly service.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Victorville. Validate sales, then expand to additional sites.'
+        a: 'Start with logistics parks, airport-adjacent offices, and hospital campuses.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'visalia-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Tulare County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Agriculture processing and distribution',
+      'Healthcare campuses (Kaweah Health)',
+      'College of the Sequoias and student housing',
+      'Retail corridors on Mooney Blvd',
+      'Logistics along CA-99'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Visalia',
+      'Mooney Blvd corridor',
+      'Sequoia Mall area',
+      'North Visalia',
+      'CA-99 / Industrial'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Summer heat boosts cold-beverage demand. Keep refrigeration reliable and service weekly.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Visalia. Validate sales, then expand to additional sites.'
+        a: 'Start with hospital campuses, college buildings, and CA-99 logistics sites.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
@@ -4448,61 +4465,61 @@ export const cityInfo: Record<string, CityInfo> = {
   },
   'carson-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Los Angeles County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Port-related logistics and warehouses',
+      'Industrial parks along I-405 and I-110',
+      'Healthcare clinics and medical offices',
+      'Cal State Dominguez Hills workforce',
+      'Retail corridors on Carson St'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Carson St corridor',
+      'CSUDH area',
+      'I-405 / Industrial',
+      'South Carson',
+      'Avalon Blvd corridor'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Weekday industrial demand is steady. Keep cashless uptime high and service mid-week.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Carson. Validate sales, then expand to additional sites.'
+        a: 'Start with port-adjacent logistics sites, CSUDH buildings, and industrial parks.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'chico-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Butte County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Chico State University and student housing',
+      'Healthcare campuses (Enloe Medical Center)',
+      'Downtown offices and civic buildings',
+      'Agriculture and food processing',
+      'Retail corridors on Mangrove and Esplanade'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Chico',
+      'Chico State / University area',
+      'Mangrove Ave corridor',
+      'Esplanade',
+      'East Chico'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Semester cycles drive peaks. Keep cashless uptime high and restock mid-week.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Chico. Validate sales, then expand to additional sites.'
+        a: 'Start with campus buildings, hospital campuses, and downtown offices.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
@@ -4568,121 +4585,121 @@ export const cityInfo: Record<string, CityInfo> = {
   },
   'san-mateo-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. San Mateo County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Downtown offices and civic buildings',
+      'Biotech and tech offices',
+      'Healthcare campuses (San Mateo Medical)',
+      'Caltrain commuter hubs',
+      'Retail corridors near Hillsdale'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown San Mateo',
+      'Hillsdale',
+      'Bay Meadows',
+      'Beresford Park area',
+      'El Camino Real corridor'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Weekday commuter traffic drives peaks. Keep cashless uptime high and service mid-week.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in San Mateo. Validate sales, then expand to additional sites.'
+        a: 'Start with downtown offices, medical campuses, and Caltrain-adjacent buildings.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'santa-barbara-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Santa Barbara County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Tourism and hospitality along State St',
+      'Healthcare campuses (Cottage Hospital)',
+      'UCSB and Goleta offices',
+      'Downtown offices and civic buildings',
+      'Tech and research employers'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown / State St',
+      'Funk Zone',
+      'Upper State',
+      'UCSB / Goleta edge',
+      'Montecito edge'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Tourism seasons drive demand spikes. Increase service cadence during peak travel weeks.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Santa Barbara. Validate sales, then expand to additional sites.'
+        a: 'Start with downtown hospitality sites, hospital campuses, and UCSB-adjacent offices.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'santa-rosa-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Sonoma County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Healthcare campuses (Sutter, Providence)',
+      'Wine and hospitality industry',
+      'Downtown offices and civic buildings',
+      'Retail corridors and business parks',
+      'Airport and industrial areas'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Santa Rosa',
+      'Roseland',
+      'Rincon Valley',
+      'Airport / Kendall Dr',
+      'Santa Rosa Ave corridor'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Tourism seasons can spike demand. Increase service cadence around hospitality and event corridors.',
     extraFaqs: [
       {
-        q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Santa Rosa. Validate sales, then expand to additional sites.'
+        q: 'Where should I start in Santa Rosa?',
+        a: 'Start with hospital campuses, downtown offices, and airport-area business parks.'
       },
       {
-        q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        q: 'Do I need special permits in Sonoma County?',
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'vacaville-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Solano County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'I-80 logistics and distribution centers',
+      'Vacaville outlets and retail hubs',
+      'Healthcare campuses (NorthBay)',
+      'Manufacturing and industrial parks',
+      'Downtown offices and civic buildings'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Vacaville',
+      'I-80 / Outlet malls',
+      'North Vacaville',
+      'Browns Valley',
+      'Peabody Rd corridor'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Summer heat increases cold-beverage demand. Prioritize refrigeration uptime and weekly service.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Vacaville. Validate sales, then expand to additional sites.'
+        a: 'Start with I-80 logistics sites, outlet-area offices, and medical campuses.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
@@ -4838,31 +4855,31 @@ export const cityInfo: Record<string, CityInfo> = {
   },
   'vista-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. San Diego County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Business parks and light manufacturing',
+      'Healthcare campuses (Tri-City Medical)',
+      'Retail corridors along Vista Way',
+      'Downtown offices and civic buildings',
+      'I-78 logistics corridor'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Vista',
+      'Vista Way corridor',
+      'Shadowridge',
+      'Civic Center area',
+      'I-78 / Business Park'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Steady weekday demand. Keep cashless uptime high and service mid-week.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Vista. Validate sales, then expand to additional sites.'
+        a: 'Start with business parks, hospital campuses, and I-78 logistics sites.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
@@ -5348,31 +5365,31 @@ export const cityInfo: Record<string, CityInfo> = {
   },
   'menifee-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Riverside County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Healthcare campuses (Menifee Valley Medical)',
+      'Retail corridors on Newport Rd',
+      'I-215 business parks and logistics',
+      'Municipal buildings and offices',
+      'Education and community colleges'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Newport Rd corridor',
+      'Menifee Lakes',
+      'Sun City',
+      'Heritage Lake',
+      'I-215 corridor'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Heat drives cold-beverage demand. Prioritize refrigeration uptime and weekly service.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Menifee. Validate sales, then expand to additional sites.'
+        a: 'Start with hospital campuses, retail-adjacent offices, and I-215 business parks.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
@@ -5498,31 +5515,31 @@ export const cityInfo: Record<string, CityInfo> = {
   },
   'san-leandro-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Alameda County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Industrial parks along I-880',
+      'Healthcare campuses (Kaiser San Leandro)',
+      'Downtown offices and civic buildings',
+      'Retail corridors on Davis and E 14th',
+      'Marina and waterfront offices'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown San Leandro',
+      'Marina area',
+      'I-880 corridor',
+      'Davis St corridor',
+      'Bayfair area'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Weekday industrial demand is steady. Keep cashless uptime high and service mid-week.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in San Leandro. Validate sales, then expand to additional sites.'
+        a: 'Start with industrial parks, hospital campuses, and downtown offices.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
@@ -5558,31 +5575,31 @@ export const cityInfo: Record<string, CityInfo> = {
   },
   'santa-monica-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Los Angeles County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Tech and media offices in downtown',
+      'Tourism and hospitality near the pier',
+      'Healthcare campuses (UCLA Santa Monica)',
+      'Retail corridors on 3rd St and Montana',
+      'Office clusters along Wilshire'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown / 3rd St Promenade',
+      'Pier / Ocean Ave',
+      'Wilshire corridor',
+      'Ocean Park',
+      'Bergamot area'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Summer tourism drives demand spikes. Keep cold beverages stocked and service coastal sites weekly.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Santa Monica. Validate sales, then expand to additional sites.'
+        a: 'Start with downtown offices, hospital campuses, and pier-area hospitality venues.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
@@ -8018,31 +8035,31 @@ export const cityInfo: Record<string, CityInfo> = {
   },
   'san-ramon-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Contra Costa County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Bishop Ranch corporate offices',
+      'City Center retail and offices',
+      'Healthcare clinics and outpatient centers',
+      'Corporate campuses along Bollinger',
+      'Education and community centers'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Bishop Ranch',
+      'City Center',
+      'Dougherty Valley',
+      'Bollinger Canyon',
+      'Crow Canyon'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Office-heavy demand peaks on weekdays. Keep cashless uptime high and service mid-week.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in San Ramon. Validate sales, then expand to additional sites.'
+        a: 'Start with Bishop Ranch offices, City Center buildings, and corporate campuses.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
@@ -8528,31 +8545,31 @@ export const cityInfo: Record<string, CityInfo> = {
   },
   'tracy-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. San Joaquin County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
+      'Distribution centers along I-205 and I-580',
       'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Downtown offices and civic buildings',
+      'Retail corridors on Tracy Blvd',
+      'Commuter and warehouse workforce'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Tracy',
+      'I-205 / I-580 corridor',
+      'Tracy Blvd corridor',
+      'West Tracy',
+      'Mountain House edge'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Heat drives cold-beverage demand. Prioritize refrigeration uptime and weekly service.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Tracy. Validate sales, then expand to additional sites.'
+        a: 'Start with distribution centers, downtown offices, and retail-adjacent business parks.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
@@ -8678,31 +8695,31 @@ export const cityInfo: Record<string, CityInfo> = {
   },
   'walnut-creek-california': {
     permitNotes:
-      'California requires a seller\'s permit from the State Board of Equalization (now CDTFA). Register your business, collect sales tax, and confirm city/county health department requirements for food/beverage vending machines.',
+      'California requires a seller\'s permit through CDTFA. Contra Costa County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Downtown offices and financial services',
+      'Healthcare campuses (John Muir)',
+      'Broadway Plaza retail traffic',
+      'BART commuter hubs',
+      'Corporate offices along Ygnacio'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Walnut Creek',
+      'Broadway Plaza',
+      'Pleasant Hill BART area',
+      'Ygnacio Valley',
+      'Northgate'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Weekday office traffic drives peaks. Keep cashless uptime high and service mid-week.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Walnut Creek. Validate sales, then expand to additional sites.'
+        a: 'Start with downtown offices, hospital campuses, and BART-adjacent buildings.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a California seller\'s permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
@@ -9008,31 +9025,31 @@ export const cityInfo: Record<string, CityInfo> = {
   },
   'arvada-colorado': {
     permitNotes:
-      'Colorado requires a sales tax license through the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
+      'Colorado requires a sales tax license through the Department of Revenue. Jefferson County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
+      'Olde Town offices and civic buildings',
+      'Light rail and commuter hubs',
       'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Industrial corridors near I-70',
+      'Retail hubs along Wadsworth'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Olde Town Arvada',
+      'Arvada Ridge',
+      'West Arvada',
+      'Ralston Rd corridor',
+      'I-70 / Ward Rd'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Winter weather can disrupt routes. Prioritize indoor placements and flexible service windows.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Arvada. Validate sales, then expand to additional sites.'
+        a: 'Start with Olde Town offices, medical clinics, and I-70 corridor business parks.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a Colorado sales tax license and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
@@ -9068,61 +9085,61 @@ export const cityInfo: Record<string, CityInfo> = {
   },
   'boulder-colorado': {
     permitNotes:
-      'Colorado requires a sales tax license through the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
+      'Colorado requires a sales tax license through the Department of Revenue. Boulder County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'University of Colorado and student housing',
+      'Tech and research campuses',
+      'Downtown offices and co-working',
+      'Healthcare campuses (Boulder Community)',
+      'Outdoor tourism and retail corridors'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown / Pearl St',
+      'CU / University Hill',
+      'Gunbarrel',
+      'North Boulder',
+      'East Boulder'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Semester cycles drive weekday peaks. Keep cashless uptime high and restock mid-week.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Boulder. Validate sales, then expand to additional sites.'
+        a: 'Start with CU buildings, tech campuses, and downtown office hubs for steady weekday traffic.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a Colorado sales tax license and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'centennial-colorado': {
     permitNotes:
-      'Colorado requires a sales tax license through the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
+      'Colorado requires a sales tax license through the Department of Revenue. Arapahoe County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Denver Tech Center offices and campuses',
+      'Centennial Airport business parks',
+      'Healthcare clinics and outpatient centers',
+      'Retail corridors along Arapahoe Rd',
+      'Corporate campuses in South Metro'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Tech Center',
+      'Centennial Airport area',
+      'Arapahoe Rd corridor',
+      'Piney Creek',
+      'Willow Creek'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Office-heavy demand peaks on weekdays. Keep cashless uptime high and service mid-week.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Centennial. Validate sales, then expand to additional sites.'
+        a: 'Start with Tech Center offices, airport-area business parks, and medical clinics.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a Colorado sales tax license and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
@@ -9222,91 +9239,92 @@ export const cityInfo: Record<string, CityInfo> = {
   },
   'grand-junction-colorado': {
     permitNotes:
-      'Colorado requires a sales tax license through the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
+      'Colorado requires a sales tax license through the Department of Revenue. Mesa County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Healthcare campuses (St. Mary\'s, Community)',
+      'I-70 logistics and distribution',
+      'Colorado Mesa University and student housing',
+      'Energy and industrial services',
+      'Downtown offices and civic buildings'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Grand Junction',
+      'CMU / University area',
+      'Redlands',
+      'Orchard Mesa',
+      'North Ave corridor',
+      'Airport area'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Summer heat lifts cold-beverage demand. Prioritize refrigeration uptime and weekly service.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Grand Junction. Validate sales, then expand to additional sites.'
+        a: 'Start with hospital campuses, CMU buildings, and I-70 logistics sites.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a Colorado sales tax license and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'greeley-colorado': {
     permitNotes:
-      'Colorado requires a sales tax license through the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
+      'Colorado requires a sales tax license through the Department of Revenue. Weld County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Agriculture processing and distribution',
+      'University of Northern Colorado and student housing',
+      'Healthcare campuses (UCHealth Greeley)',
+      'Industrial corridors along Hwy 34',
+      'Downtown offices and civic buildings'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Greeley',
+      'UNC / University area',
+      'West Greeley',
+      'East Greeley',
+      'Hwy 34 corridor'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Winter weather can disrupt routes. Prioritize indoor placements and flexible service windows.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Greeley. Validate sales, then expand to additional sites.'
+        a: 'Start with UNC buildings, hospital campuses, and Hwy 34 business parks.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a Colorado sales tax license and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'lakewood-colorado': {
     permitNotes:
-      'Colorado requires a sales tax license through the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
+      'Colorado requires a sales tax license through the Department of Revenue. Jefferson County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Federal Center and government offices',
+      'St. Anthony Hospital campus',
+      'Belmar retail and offices',
+      'Industrial corridors along I-70',
+      'Light rail commuter hubs'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Belmar',
+      'Federal Center',
+      'Green Mountain',
+      'West Colfax corridor',
+      'Wadsworth Blvd'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Winter weather can impact routes. Prioritize indoor placements and mid-week service.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Lakewood. Validate sales, then expand to additional sites.'
+        a: 'Start with Federal Center buildings, hospital campuses, and Belmar offices.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a Colorado sales tax license and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
@@ -9342,61 +9360,61 @@ export const cityInfo: Record<string, CityInfo> = {
   },
   'pueblo-colorado': {
     permitNotes:
-      'Colorado requires a sales tax license through the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
+      'Colorado requires a sales tax license through the Department of Revenue. Pueblo County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Steel and manufacturing sites',
+      'Healthcare campuses (Parkview, UCHealth)',
+      'CSU Pueblo and student housing',
+      'Downtown offices and civic buildings',
+      'Logistics along I-25'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Pueblo',
+      'CSU Pueblo area',
+      'Belmont',
+      'Pueblo West',
+      'I-25 corridor'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Summer heat boosts cold-beverage demand. Keep refrigeration reliable and service weekly.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Pueblo. Validate sales, then expand to additional sites.'
+        a: 'Start with hospital campuses, CSU Pueblo buildings, and industrial sites along I-25.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a Colorado sales tax license and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'thornton-colorado': {
     permitNotes:
-      'Colorado requires a sales tax license through the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
+      'Colorado requires a sales tax license through the Department of Revenue. Adams County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Thornton Town Center offices and retail',
+      'Healthcare clinics and urgent care',
+      'Distribution and logistics along I-25',
+      'Business parks and municipal buildings',
+      'Retail corridors on 120th and 144th'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Thornton Town Center',
+      'Eastlake',
+      'Larkridge',
+      'Northglenn edge',
+      'I-25 corridor'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Winter weather can impact routes. Prioritize indoor placements and flexible service windows.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Thornton. Validate sales, then expand to additional sites.'
+        a: 'Start with Town Center offices, healthcare clinics, and I-25 business parks.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a Colorado sales tax license and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
@@ -9522,61 +9540,61 @@ export const cityInfo: Record<string, CityInfo> = {
   },
   'loveland-colorado': {
     permitNotes:
-      'Colorado requires a sales tax license through the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
+      'Colorado requires a sales tax license through the Department of Revenue. Larimer County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Healthcare campuses (McKee Medical)',
+      'Downtown offices and civic buildings',
+      'Manufacturing and distribution along I-25',
+      'Retail corridors and shopping centers',
+      'Art and event venues'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Loveland',
+      'Centerra',
+      'I-25 corridor',
+      'West Loveland',
+      'Boyd Lake area'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Winter weather can impact routes. Prioritize indoor placements and flexible service windows.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Loveland. Validate sales, then expand to additional sites.'
+        a: 'Start with hospital campuses, downtown offices, and I-25 business parks.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a Colorado sales tax license and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'parker-colorado': {
     permitNotes:
-      'Colorado requires a sales tax license through the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
+      'Colorado requires a sales tax license through the Department of Revenue. Douglas County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Downtown Parker offices and civic buildings',
+      'Healthcare clinics and outpatient centers',
+      'Retail corridors on Parker Rd',
+      'Business parks along E-470',
+      'Local schools and community centers'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Parker',
+      'Stroh Ranch',
+      'Stonegate',
+      'Parker Rd corridor',
+      'E-470 / Cottonwood'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Weekday demand peaks around offices and clinics. Keep cashless uptime high and service mid-week.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Parker. Validate sales, then expand to additional sites.'
+        a: 'Start with downtown offices, medical clinics, and business parks along E-470.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a Colorado sales tax license and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
@@ -15965,31 +15983,31 @@ export const cityInfo: Record<string, CityInfo> = {
   },
   'overland-park-kansas': {
     permitNotes:
-      'Kansas requires a sales tax permit from the Department of Revenue. Register your business and confirm city/county health requirements for food/beverage vending.',
+      'Kansas requires a sales tax permit from the Department of Revenue. Johnson County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Corporate offices along College Blvd',
+      'Healthcare campuses (Overland Park Regional)',
+      'Business parks and tech campuses',
+      'Retail corridors and mixed-use centers',
+      'Logistics along I-435'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown OP',
+      'Corporate Woods',
+      'College Blvd corridor',
+      'Prairie Village edge',
+      '119th St corridor'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Weekday office traffic drives peaks. Keep cashless uptime high and service mid-week.',
     extraFaqs: [
       {
-        q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Overland Park. Validate sales, then expand to additional sites.'
+        q: 'Where should I start in Overland Park?',
+        a: 'Start with corporate campuses, hospital offices, and College Blvd business parks.'
       },
       {
-        q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        q: 'Do I need special permits in Johnson County?',
+        a: 'You need a Kansas sales tax permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
@@ -27254,31 +27272,32 @@ export const cityInfo: Record<string, CityInfo> = {
   },
   'amarillo-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
+      'Texas requires a sales tax permit from the Comptroller. Potter and Randall counties may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Pantex and defense contractor workforce',
+      'Healthcare campuses (BSA, Northwest Texas)',
+      'Logistics along I-40 and I-27',
+      'West Texas A&M and student housing',
+      'Agriculture and food processing'
     ],
     neighborhoods: [
-      'Downtown',
+      'Downtown Amarillo',
       'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'I-40 corridor',
+      'Canyon / WTAMU area',
+      'Airport corridor',
+      'Wolflin'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Winter weather and wind can impact routes. Prioritize indoor placements and flexible service windows.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Amarillo. Validate sales, then expand to additional sites.'
+        a: 'Start with hospital campuses, logistics sites along I-40, and defense-adjacent offices.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a Texas sales tax permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
@@ -27348,121 +27367,124 @@ export const cityInfo: Record<string, CityInfo> = {
   },
   'beaumont-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
+      'Texas requires a sales tax permit from the Comptroller. Jefferson County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Petrochemical and refinery operations',
+      'Port and rail logistics',
+      'Healthcare campuses (CHRISTUS, Baptist)',
+      'Lamar University and student housing',
+      'Downtown offices and civic buildings'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Beaumont',
+      'Calder / Medical Center',
+      'Lamar University area',
+      'I-10 / US-69 corridor',
+      'Port / Industrial area'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Heat and humidity drive cold-beverage demand. Prioritize refrigeration uptime and weekly service.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Beaumont. Validate sales, then expand to additional sites.'
+        a: 'Start with refinery offices, hospital campuses, and port-adjacent logistics sites.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a Texas sales tax permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'brownsville-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
+      'Texas requires a sales tax permit from the Comptroller. Cameron County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Port of Brownsville logistics and terminals',
+      'Border trade and warehousing',
+      'UTRGV campus and student housing',
+      'Healthcare campuses (Valley Regional, DHR)',
+      'Aerospace activity near Starbase corridor'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Brownsville',
+      'UTRGV area',
+      'Boca Chica corridor',
+      'Port / Industrial area',
+      'North Brownsville',
+      'I-69E corridor'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Heat drives cold-beverage demand. Prioritize refrigeration uptime and weekly service.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Brownsville. Validate sales, then expand to additional sites.'
+        a: 'Start with port-area logistics, hospital campuses, and UTRGV buildings for steady weekday traffic.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a Texas sales tax permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'college-station-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
+      'Texas requires a sales tax permit from the Comptroller. Brazos County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Texas A&M University and student housing',
+      'Research Park offices and labs',
+      'Healthcare campuses (St. Joseph)',
+      'Downtown offices and civic buildings',
+      'Retail corridors on Texas Ave'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Northgate',
+      'TAMU / University area',
+      'Research Park',
+      'South College Station',
+      'Texas Ave corridor',
+      'Wellborn Rd'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Semester cycles and game days drive spikes. Plan extra service during campus events.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in College Station. Validate sales, then expand to additional sites.'
+        a: 'Start with TAMU buildings, Research Park offices, and hospital campuses for steady weekday traffic.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a Texas sales tax permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'conroe-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
+      'Texas requires a sales tax permit from the Comptroller. Montgomery County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
+      'I-45 corridor offices and business parks',
+      'Healthcare campuses (Conroe Regional)',
       'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Retail corridors on 105 and 336',
+      'Lake Conroe tourism and hospitality'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Conroe',
+      'I-45 corridor',
+      'The Woodlands edge',
+      'Lake Conroe area',
+      'West Conroe',
+      'Airport area'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Summer tourism and heat drive demand. Keep cold beverages stocked and service weekly.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Conroe. Validate sales, then expand to additional sites.'
+        a: 'Start with I-45 business parks, hospital campuses, and Lake Conroe hospitality sites.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a Texas sales tax permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
@@ -27532,31 +27554,31 @@ export const cityInfo: Record<string, CityInfo> = {
   },
   'edinburg-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
+      'Texas requires a sales tax permit from the Comptroller. Hidalgo County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'UTRGV campus and student housing',
+      'Healthcare campuses (DHR, Doctors Hospital)',
+      'Retail corridors on University Dr',
+      'Government and civic buildings',
+      'Logistics along I-69C'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'UTRGV / University area',
+      'Downtown Edinburg',
+      'University Dr corridor',
+      'North Edinburg',
+      'I-69C corridor'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Heat drives cold-beverage demand. Prioritize refrigeration uptime and weekly service.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Edinburg. Validate sales, then expand to additional sites.'
+        a: 'Start with UTRGV buildings, hospital campuses, and University Dr office corridors.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a Texas sales tax permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
@@ -27624,151 +27646,151 @@ export const cityInfo: Record<string, CityInfo> = {
   },
   'garland-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
+      'Texas requires a sales tax permit from the Comptroller. Dallas County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Manufacturing and industrial parks',
+      'Healthcare campuses (Baylor Scott and White)',
+      'Downtown offices and civic buildings',
+      'Retail corridors on Garland Ave',
+      'Logistics along I-30 and I-635'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Garland',
+      'Firewheel area',
+      'Garland Ave corridor',
+      'I-30 / Industrial',
+      'North Garland'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Weekday industrial demand is steady. Keep cashless uptime high and service mid-week.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Garland. Validate sales, then expand to additional sites.'
+        a: 'Start with industrial parks, hospital offices, and downtown civic buildings.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a Texas sales tax permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'grand-prairie-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
+      'Texas requires a sales tax permit from the Comptroller. Dallas and Tarrant counties may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Distribution centers along I-20 and I-30',
+      'Entertainment venues (EpicCentral, Lone Star Park)',
+      'Healthcare clinics and offices',
+      'Retail corridors (Arlington GP border)',
+      'Manufacturing and business parks'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Grand Prairie',
+      'EpicCentral / 303',
+      'I-20 corridor',
+      'Great Southwest',
+      'I-30 corridor'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Event weeks can spike demand. Plan extra service around venues and weekends.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Grand Prairie. Validate sales, then expand to additional sites.'
+        a: 'Start with distribution centers, entertainment venues, and business parks near I-20.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a Texas sales tax permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'frisco-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
+      'Texas requires a sales tax permit from the Comptroller. Collin and Denton counties may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Corporate HQs and offices at The Star',
+      'Healthcare campuses (Baylor Scott and White)',
+      'Frisco ISD and community colleges',
+      'Retail hubs (Stonebriar, Legacy West edge)',
+      'Sports and event venues'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'The Star / Frisco',
+      'Frisco Square',
+      'Stonebriar',
+      'West Frisco',
+      'Preston Rd corridor'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Event and game days can spike demand. Increase service around venues.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Frisco. Validate sales, then expand to additional sites.'
+        a: 'Start with The Star offices, hospital campuses, and retail-adjacent business parks.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a Texas sales tax permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'mckinney-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
+      'Texas requires a sales tax permit from the Comptroller. Collin County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Medical City McKinney campus',
+      'Historic downtown offices and civic buildings',
+      'Industrial parks along US-75',
+      'Retail corridors on Eldorado and 380',
+      'Corporate offices and business parks'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown McKinney',
+      'US-75 corridor',
+      'Eldorado Pkwy',
+      'Craig Ranch',
+      'Stonebridge'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Weekday office traffic drives peaks. Keep cashless uptime high and service mid-week.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Mckinney. Validate sales, then expand to additional sites.'
+        a: 'Start with hospital campuses, downtown offices, and US-75 business parks.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a Texas sales tax permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'denton-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
+      'Texas requires a sales tax permit from the Comptroller. Denton County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'University of North Texas and student housing',
+      'Texas Woman\'s University and campuses',
+      'Healthcare campuses (Medical City Denton)',
+      'I-35 business parks and logistics',
+      'Downtown offices and civic buildings'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Denton',
+      'UNT / University area',
+      'TWU area',
+      'I-35 corridor',
+      'Golden Triangle'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Semester cycles drive weekday peaks. Keep cashless uptime high and restock mid-week.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Denton. Validate sales, then expand to additional sites.'
+        a: 'Start with university buildings, hospital campuses, and I-35 business parks.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a Texas sales tax permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
@@ -27804,31 +27826,31 @@ export const cityInfo: Record<string, CityInfo> = {
   },
   'richardson-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
+      'Texas requires a sales tax permit from the Comptroller. Dallas County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Telecom and tech campuses along US-75',
+      'UT Dallas and student housing',
+      'Healthcare clinics and outpatient centers',
+      'Office parks near CityLine',
+      'Corporate offices and business parks'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'CityLine',
+      'UT Dallas area',
+      'Galatyn Park',
+      'Spring Valley Rd corridor',
+      'US-75 / Campbell'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Office-heavy demand peaks on weekdays. Keep cashless uptime high and service mid-week.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Richardson. Validate sales, then expand to additional sites.'
+        a: 'Start with CityLine offices, UT Dallas buildings, and tech campuses along US-75.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a Texas sales tax permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
@@ -27864,31 +27886,31 @@ export const cityInfo: Record<string, CityInfo> = {
   },
   'round-rock-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
+      'Texas requires a sales tax permit from the Comptroller. Williamson County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Dell campus and tech offices',
+      'Healthcare campuses (St. David\'s Round Rock)',
+      'Kalahari and event venues',
+      'I-35 business parks and logistics',
+      'Retail corridors (La Frontera)'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Round Rock',
+      'La Frontera',
+      'I-35 corridor',
+      'Old Settlers area',
+      'Brushy Creek'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Event weeks can spike demand. Increase service around venues and corporate campuses.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Round Rock. Validate sales, then expand to additional sites.'
+        a: 'Start with Dell buildings, hospital campuses, and I-35 business parks.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a Texas sales tax permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
@@ -27984,61 +28006,61 @@ export const cityInfo: Record<string, CityInfo> = {
   },
   'tyler-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
+      'Texas requires a sales tax permit from the Comptroller. Smith County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Healthcare campuses (UT Health, Christus)',
+      'Downtown offices and civic buildings',
+      'Industrial and logistics along I-20',
+      'UT Tyler and student housing',
+      'Retail corridors on Broadway'
     ],
     neighborhoods: [
-      'Downtown',
+      'Downtown Tyler',
       'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'UT Tyler area',
+      'Broadway Ave corridor',
+      'I-20 / Industrial'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Weekday medical and office traffic drives peaks. Keep cashless uptime high and service mid-week.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Tyler. Validate sales, then expand to additional sites.'
+        a: 'Start with hospital campuses, downtown offices, and UT Tyler buildings.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a Texas sales tax permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'waco-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
+      'Texas requires a sales tax permit from the Comptroller. McLennan County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Baylor University and student housing',
+      'Healthcare campuses (Baylor Scott and White)',
+      'Downtown offices and civic buildings',
+      'Tourism around Magnolia Market',
+      'Logistics along I-35'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Waco',
+      'Baylor / University area',
+      'Magnolia / S 8th St',
+      'I-35 corridor',
+      'Hewitt / Woodway'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Event weekends drive spikes. Increase service around campus and tourism areas.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Waco. Validate sales, then expand to additional sites.'
+        a: 'Start with Baylor buildings, hospital campuses, and downtown offices.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a Texas sales tax permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
@@ -28107,271 +28129,272 @@ export const cityInfo: Record<string, CityInfo> = {
   },
   'irving-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
+      'Texas requires a sales tax permit from the Comptroller. Dallas County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Las Colinas corporate offices',
+      'DFW Airport logistics and offices',
+      'Healthcare campuses (Baylor Scott and White)',
+      'Distribution along SH 114 and SH 183',
+      'Hotels and conference centers'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Las Colinas',
+      'Irving Convention Center area',
+      'DFW Airport corridor',
+      'South Irving',
+      'Valley Ranch',
+      'SH 114 corridor'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Airport and office traffic drive weekday peaks. Keep cashless uptime high and service mid-week.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Irving. Validate sales, then expand to additional sites.'
+        a: 'Start with Las Colinas offices, airport-adjacent business parks, and hospital campuses.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a Texas sales tax permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'killeen-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
+      'Texas requires a sales tax permit from the Comptroller. Bell County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Fort Cavazos workforce and contractors',
+      'Healthcare campuses (AdventHealth, Baylor Scott and White)',
+      'Central Texas College and student housing',
+      'Retail corridors along US-190',
+      'Logistics and defense suppliers'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Killeen',
+      'Fort Cavazos area',
+      'US-190 corridor',
+      'Harker Heights edge',
+      'West Killeen'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Shift-based demand is steady. Keep service cadence consistent and stock high-velocity SKUs.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Killeen. Validate sales, then expand to additional sites.'
+        a: 'Start with base-adjacent offices, hospital campuses, and US-190 retail corridors.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a Texas sales tax permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'laredo-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
+      'Texas requires a sales tax permit from the Comptroller. Webb County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Port of entry and border logistics',
+      'Warehousing along I-35',
+      'Healthcare campuses (LMC, Doctors Hospital)',
+      'Laredo College and student housing',
+      'Downtown offices and civic buildings'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Laredo',
+      'I-35 logistics corridor',
+      'North Laredo',
+      'Mines Rd corridor',
+      'Airport area'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Heat drives cold-beverage demand. Prioritize refrigeration uptime and weekly service.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Laredo. Validate sales, then expand to additional sites.'
+        a: 'Start with port logistics sites, hospital campuses, and I-35 business parks.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a Texas sales tax permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'lubbock-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
+      'Texas requires a sales tax permit from the Comptroller. Lubbock County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Texas Tech University and student housing',
+      'Healthcare campuses (UMC, Covenant)',
+      'Agriculture and food processing',
+      'Logistics along I-27',
+      'Downtown offices and civic buildings'
     ],
     neighborhoods: [
-      'Downtown',
+      'Texas Tech area',
+      'Downtown Lubbock',
       'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'South Lubbock',
+      'I-27 corridor'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Wind and heat can impact routes. Prioritize indoor placements and consistent mid-week service.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Lubbock. Validate sales, then expand to additional sites.'
+        a: 'Start with Texas Tech buildings, hospital campuses, and I-27 logistics sites.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a Texas sales tax permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'mcallen-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
+      'Texas requires a sales tax permit from the Comptroller. Hidalgo County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Healthcare campuses (DHR, McAllen Medical)',
+      'Downtown offices and civic buildings',
+      'Retail hubs (La Plaza Mall)',
+      'Cross-border trade and logistics',
+      'McAllen Airport corridor'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown McAllen',
+      'Nolana Ave corridor',
+      'Uptown / 10th St',
+      'Airport area',
+      'Ware Rd corridor'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Heat drives cold-beverage demand. Keep refrigeration reliable and service weekly.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Mcallen. Validate sales, then expand to additional sites.'
+        a: 'Start with hospital campuses, retail-adjacent offices, and airport-area business parks.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a Texas sales tax permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'mesquite-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
+      'Texas requires a sales tax permit from the Comptroller. Dallas County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
+      'Industrial parks along I-30',
       'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Town East retail and offices',
+      'Downtown offices and civic buildings',
+      'Logistics corridors near I-635'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Mesquite',
+      'Town East area',
+      'I-30 corridor',
+      'Oates / Gus Thomasson',
+      'Mesquite Arena area'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Weekday industrial demand is steady. Keep cashless uptime high and service mid-week.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Mesquite. Validate sales, then expand to additional sites.'
+        a: 'Start with industrial parks, medical offices, and retail-adjacent business centers.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a Texas sales tax permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'midland-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
+      'Texas requires a sales tax permit from the Comptroller. Midland County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Permian Basin energy offices',
+      'Midland Memorial and healthcare campuses',
+      'Airport-area logistics and offices',
+      'Downtown offices and civic buildings',
+      'Industrial and service yards'
     ],
     neighborhoods: [
-      'Downtown',
+      'Downtown Midland',
       'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Midland Airpark',
+      'I-20 corridor',
+      'North Midland'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Heat drives cold-beverage demand. Prioritize refrigeration uptime and weekly service.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Midland. Validate sales, then expand to additional sites.'
+        a: 'Start with energy offices, hospital campuses, and airport-area business parks.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a Texas sales tax permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'odessa-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
+      'Texas requires a sales tax permit from the Comptroller. Ector County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Oilfield services and logistics yards',
+      'Medical Center Hospital campuses',
+      'UT Permian Basin and student housing',
+      'Downtown offices and civic buildings',
+      'Industrial corridors along I-20'
     ],
     neighborhoods: [
-      'Downtown',
+      'Downtown Odessa',
+      'UTPB area',
       'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'I-20 corridor',
+      'Northwest Odessa'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Heat increases cold-beverage demand. Keep refrigeration reliable and service weekly.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Odessa. Validate sales, then expand to additional sites.'
+        a: 'Start with hospital campuses, oilfield offices, and I-20 logistics sites.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a Texas sales tax permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
   'pasadena-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
+      'Texas requires a sales tax permit from the Comptroller. Harris County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
+      'Petrochemical and ship channel operations',
+      'Industrial offices along Pasadena Blvd',
       'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Refinery and logistics workforce',
+      'Retail corridors on Fairmont'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown Pasadena',
+      'Pasadena Blvd corridor',
+      'Fairmont Pkwy',
+      'South Pasadena',
+      'Ship Channel / Industrial'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Shift-based industrial demand is steady. Keep service cadence consistent and stock high-velocity SKUs.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in Pasadena. Validate sales, then expand to additional sites.'
+        a: 'Start with ship channel offices, refinery sites, and medical campuses.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a Texas sales tax permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
@@ -28441,31 +28464,31 @@ export const cityInfo: Record<string, CityInfo> = {
   },
   'san-angelo-texas': {
     permitNotes:
-      'Texas requires a sales tax permit from the Comptroller. Register your business and confirm city/county health requirements for food/beverage vending.',
+      'Texas requires a sales tax permit from the Comptroller. Tom Green County may require health approvals for food/beverage vending; confirm local requirements before placement.',
     demandDrivers: [
-      'Healthcare campuses and clinics',
-      'Downtown offices and corporate buildings',
-      'Industrial and logistics facilities',
-      'Education institutions and student housing',
-      'Retail corridors and shopping centers'
+      'Goodfellow AFB workforce and contractors',
+      'Healthcare campuses (Shannon, CHI)',
+      'Angelo State University and student housing',
+      'Agriculture and light manufacturing',
+      'Downtown offices and civic buildings'
     ],
     neighborhoods: [
-      'Downtown',
-      'Medical District',
-      'Industrial corridors',
-      'University area',
-      'Retail corridors'
+      'Downtown San Angelo',
+      'ASU / University area',
+      'Goodfellow AFB area',
+      'Southwest Blvd corridor',
+      'Concho River area'
     ],
     seasonalNote:
-      'Plan service cadence based on local traffic patterns. Keep card readers active and monitor top SKUs for optimal restocking frequency.',
+      'Heat drives cold-beverage demand. Prioritize refrigeration uptime and weekly service.',
     extraFaqs: [
       {
         q: 'What are the best locations to start?',
-        a: 'Begin with offices (50+ employees), medical clinics, schools, gyms, and logistics facilities in San Angelo. Validate sales, then expand to additional sites.'
+        a: 'Start with base-adjacent offices, hospital campuses, and ASU buildings.'
       },
       {
         q: 'Do I need special permits?',
-        a: 'Most jurisdictions require a general business license and sales tax permit. Food vending may need additional health approvals—confirm with your local health department.'
+        a: 'You need a Texas sales tax permit and any required local business registration. Food and beverage vending may require county health approvals.'
       },
     ],
   },
