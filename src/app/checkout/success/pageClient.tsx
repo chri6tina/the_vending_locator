@@ -323,6 +323,22 @@ function CheckoutSuccessContent() {
                 Browse More Plans
               </Link>
             </div>
+
+            {/* EIN/LLC CTA */}
+            <div className="mt-10 rounded-2xl border border-gray-200 bg-white p-6 text-center">
+              <h3 className="text-xl font-semibold text-charcoal mb-2">
+                Need help setting up your LLC or EIN?
+              </h3>
+              <p className="text-sm text-stone mb-4">
+                We can handle the filing so you can focus on placements.
+              </p>
+              <Link
+                href="/ein-llc"
+                className="inline-flex items-center justify-center px-6 py-3 bg-navy text-white rounded-lg font-semibold hover:bg-navy-dark transition-colors"
+              >
+                Set Up LLC + EIN
+              </Link>
+            </div>
           </div>
 
           {/* Support Section */}
