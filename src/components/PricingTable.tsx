@@ -84,6 +84,8 @@ const plans = [
     deliveryTime: '3 Days',
     radius: '25 miles',
     features: [
+      'Guaranteed 1 location placement',
+      '1-year subscription to one of our rental websites',
       '300+ qualified locations',
       'Complete lead details with phone numbers',
       '25-mile radius search',

@@ -325,8 +325,36 @@ Batch 6:
 - how-to: cleveland-ohio — DONE
 - how-to: columbus-ohio — DONE
 
+Batch 7:
+- how-to: raleigh-north-carolina — DONE
+- how-to: richmond-virginia — DONE
+- how-to: pittsburgh-pennsylvania — DONE
+- how-to: sacramento-california — DONE
+- how-to: salt-lake-city-utah — DONE
+
+Batch 8:
+- how-to: cincinnati-ohio — DONE
+- how-to: kansas-city-missouri — DONE
+- how-to: indianapolis-indiana — DONE
+- how-to: buffalo-new-york — DONE
+- how-to: oklahoma-city-oklahoma — DONE
+
+Batch 9:
+- how-to: louisville-kentucky — DONE
+- how-to: memphis-tennessee — DONE
+- how-to: new-orleans-louisiana — DONE
+- how-to: jackson-mississippi — DONE
+- how-to: omaha-nebraska — DONE
+
+Batch 10:
+- how-to: hartford-connecticut — DONE
+- how-to: charleston-south-carolina — DONE
+- how-to: albuquerque-new-mexico — DONE
+- how-to: tucson-arizona — DONE
+- how-to: riverside-california — DONE
+
 ## Latest Progress
-- Deployed: unified How-To template and multi-city enrichment batches 1–6.
+- Deployed: unified How-To template and multi-city enrichment batches 1–10.
 - Updated checkout success copy for support guidance.
 
 ## Notes / Decisions Log
