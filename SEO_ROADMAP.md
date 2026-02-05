@@ -325,6 +325,10 @@ Batch 6:
 - how-to: cleveland-ohio — DONE
 - how-to: columbus-ohio — DONE
 
+## Latest Progress
+- Deployed: unified How-To template and multi-city enrichment batches 1–6.
+- Updated checkout success copy for support guidance.
+
 ## Notes / Decisions Log
 - Keep services separate; do not mix copy between templates.
 - Jacksonville is the baseline for How-To styling and structure.
