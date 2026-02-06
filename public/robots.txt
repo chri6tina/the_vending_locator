@@ -38,8 +38,9 @@ Allow: /hot-leads/
 # Note: We allow all public pages including those with query parameters for analytics/tracking
 # Trailing slashes are already handled by Next.js config (trailingSlash: false)
 
-# Sitemap location
+# Sitemap locations
 Sitemap: https://www.thevendinglocator.com/sitemap.xml
+Sitemap: https://www.thevendinglocator.com/sitemap-2.xml
 
 # Crawl delay (optional - be respectful to servers)
 Crawl-delay: 1
