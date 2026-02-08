@@ -170,8 +170,8 @@ export default function JacksonvilleFloridaVendingCompaniesPage() {
               transition={{ duration: 0.8, delay: 0.1 }}
               className="text-3xl sm:text-4xl lg:text-5xl font-playfair font-bold tracking-tight text-charcoal mb-4"
             >
-              Jacksonville Florida's Best<br />
-              <span className="text-navy">Vending Machine Companies</span>
+              Top Vending Machines in<br />
+              <span className="text-navy">Jacksonville, Florida</span>
             </motion.h1>
             
             <motion.p
@@ -180,7 +180,7 @@ export default function JacksonvilleFloridaVendingCompaniesPage() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-base sm:text-lg text-stone max-w-2xl mx-auto"
             >
-              Connect with verified vending machine companies serving Jacksonville and surrounding areas.
+              Explore top vending machines and connect with trusted providers serving Jacksonville and surrounding areas.
             </motion.p>
 
             {/* Trust Badges - Compact */}
@@ -218,7 +218,7 @@ export default function JacksonvilleFloridaVendingCompaniesPage() {
             className="text-center mb-10"
           >
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-playfair font-bold text-charcoal mb-3">
-              Top Vending Companies
+              Top Vending Machines
             </h2>
             <p className="text-base sm:text-lg text-stone max-w-2xl mx-auto">
               Compare services, features, and find the perfect partner for your business.

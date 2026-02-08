@@ -2,23 +2,27 @@ import { Metadata } from 'next'
 import PageClient from './pageClient'
 
 export const metadata: Metadata = {
-  title: "Jacksonville Florida's Best Vending Machine Companies | The Vending Locator",
-  description: "Discover the top vending machine companies serving Jacksonville, Florida. Find reliable vendors, compare services, and connect with professional operators for your business location.",
-  keywords: "vending machine companies Jacksonville, Jacksonville vending services, vending companies Florida, vending machine operators Jacksonville",
+  title: 'Top Vending Machines in Jacksonville, Florida | The Vending Locator',
+  description:
+    'Explore top vending machines and trusted providers serving Jacksonville, Florida. Compare options and connect with reliable operators for your business.',
+  keywords:
+    'top vending machines Jacksonville, Jacksonville vending machines, vending machine companies Jacksonville, vending services Jacksonville',
   alternates: {
     canonical: "https://www.thevendinglocator.com/vending-companies/jacksonville-florida"
   },
   openGraph: {
-    title: "Jacksonville Florida's Best Vending Machine Companies",
-    description: "Discover the top vending machine companies serving Jacksonville, Florida. Find reliable vendors and connect with professional operators.",
+    title: 'Top Vending Machines in Jacksonville, Florida',
+    description:
+      'Explore top vending machines and trusted providers serving Jacksonville, Florida. Compare options and connect with reliable operators.',
     url: "https://www.thevendinglocator.com/vending-companies/jacksonville-florida",
     siteName: "The Vending Locator",
     type: "website"
   },
   twitter: {
     card: "summary_large_image",
-    title: "Jacksonville Florida's Best Vending Machine Companies",
-    description: "Discover the top vending machine companies serving Jacksonville, Florida."
+    title: 'Top Vending Machines in Jacksonville, Florida',
+    description:
+      'Explore top vending machines and trusted providers serving Jacksonville, Florida.'
   },
     robots: {
       index: true,
