@@ -6,6 +6,7 @@ import states from '@/data/states'
 import { howToStartSlugs as extraHowToStartSlugs } from '@/data/how-to-start-slugs'
 
 export const MAX_URLS_PER_SITEMAP = 50000
+const MAX_SITEMAPS = 2
 
 type SitemapEntry = {
   url: string
@@ -117,7 +118,8 @@ export function buildAllUrls(): SitemapEntry[] {
 }
 
 export function splitSitemaps(urls: SitemapEntry[]) {
-  const primary = urls.slice(0, MAX_URLS_PER_SITEMAP)
-  const secondary = urls.slice(MAX_URLS_PER_SITEMAP)
+  const cappedUrls = urls.slice(0, MAX_URLS_PER_SITEMAP * MAX_SITEMAPS)
+  const primary = cappedUrls.slice(0, MAX_URLS_PER_SITEMAP)
+  const secondary = cappedUrls.slice(MAX_URLS_PER_SITEMAP)
   return [primary, secondary]
 }
